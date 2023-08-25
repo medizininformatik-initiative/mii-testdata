@@ -1,0 +1,8 @@
+version: '3.7'
+services:
+  excel2fhir:
+    # image:TODO - add image to excel2fhir here once available
+    volumes:
+      - "./input:/app/input"
+      - "./outputGlobal:/app/outputGlobal"
+      - "./outputLocal:/app/outputLocal"
