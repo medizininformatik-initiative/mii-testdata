@@ -1,4 +1,5 @@
 import os
+import shutil
 import json
 import csv
 import time
@@ -84,7 +85,7 @@ def update_overview_dict(data_dict, resource_overview):
 def write_processed_bundle_to_file(args, filename, bundle):
     output_path = os.path.join(args.outputdir, filename)
 
-    print(f'writing data to {output_path}')
+    logging.debug(f'Writing data to: {output_path}')
     if args.gzipfiles:
         gzip_json_to_file(json.dumps(bundle), output_path)
     else:
@@ -93,31 +94,43 @@ def write_processed_bundle_to_file(args, filename, bundle):
 
 
 def remove_file_and_dirs(base_dir, file_path):
-    file_dir = os.path.dirname(file_path)
+    # file_dir = os.path.dirname(file_path)
     os.remove(file_path)
 
-    while file_dir != base_dir:
-        logging.debug(f'Removing dir: {file_dir}')
-        os.rmdir(file_dir)
-        file_dir = os.path.dirname(file_dir)
+    # Removing dir does not work as synthea writes into a dir multiple times
+    # while file_dir != base_dir:
+    #     logging.debug(f'Removing dir: {file_dir}')
+    #     os.rmdir(file_dir)
+    #     file_dir = os.path.dirname(file_dir)
 
 
 def process_file(lock, data_dict, file_path, args):
 
     logger = logging.getLogger()
     logger.setLevel(get_numeric_log_level(args.log_level))
+    logging.info(f'Processing file: {file_path}')
 
     filename = os.path.basename(file_path)
     temp_processed_files = data_dict['processedFiles']
     temp_processed_files[file_path] = True
     data_dict['processedFiles'] = temp_processed_files
-
     cur_bundle = {}
+    json_loaded_success = False
+    cur_try = 0
+    n_retries = 5
+    while cur_try < n_retries and json_loaded_success == False:
+        try:
+            with open(file_path, 'r') as json_file:
+                cur_bundle = json.load(json_file)
+            json_loaded_success = True
+        except Exception as e:
+            cur_try = cur_try + 1
+            logging.debug(f"Hit running condition opening half written file, try:{cur_try} of {n_retries}")
+            json_loaded_success = False
+            time.sleep(5)
 
-    with open(file_path, 'r') as json_file:
-        cur_bundle = json.load(json_file)
-        resource_overview = process_bundle(
-            cur_bundle, data_dict['resourceOverview'].keys())
+    resource_overview = process_bundle(
+                    cur_bundle, data_dict['resourceOverview'].keys())
 
     with lock:
         update_overview_dict(data_dict, resource_overview)
@@ -143,7 +156,7 @@ def process_directory(lock, data_dict, args):
                 multiple_results.append(pool.apply_async(
                     process_file, (lock, data_dict, filename, args)))
 
-        print([res.get(timeout=20) for res in multiple_results])
+        logging.debug([res.get(timeout=30) for res in multiple_results])
 
 
 def get_numeric_log_level(log_level):
@@ -176,6 +189,10 @@ def write_info_as_csv(output_dir, resource_overview):
                 writer.writerow(line)
 
 
+def str_to_bool(s):
+    return s.lower() in ["true", "yes", "1"]
+
+
 def main():
 
     parser = argparse.ArgumentParser(
@@ -190,9 +207,9 @@ def main():
                         help="Path to the directory where to save processed data.")
     parser.add_argument("--timeout", type=int, default=5,
                         help="Timeout in minutes for no new files.")
-    parser.add_argument("--gzipfiles", action="store_true",
+    parser.add_argument("--gzipfiles", type=str_to_bool,
                         help="Enable the gzipping of files")
-    parser.add_argument("--removeinputfiles", action="store_true",
+    parser.add_argument("--removeinputfiles", type=str_to_bool,
                         help="Enable the continious removing of input files")
     parser.add_argument("--relevant-resources", default="Patient,Encounter,Observation,Condition,DiagnosticReport,Medication,MedicationAdministration,Procedure",
                         help="Comma separated list of resource types relevant for testdata")
@@ -218,12 +235,15 @@ def main():
 
         time.sleep(10)
 
-    processed_data = dict(data_dict)
+    processed_data_info = dict(data_dict)
+
+    if args.removeinputfiles:
+        shutil.rmtree(args.inputdir)
 
     with open(f'{args.metadatadir}/processed_data_info.json', "w") as json_file:
-        json.dump(processed_data, json_file, indent=4)
+        json.dump(processed_data_info, json_file, indent=4)
 
-    write_info_as_csv(args.metadatadir, processed_data['resourceOverview'])
+    write_info_as_csv(args.metadatadir, processed_data_info['resourceOverview'])
 
 
 if __name__ == "__main__":

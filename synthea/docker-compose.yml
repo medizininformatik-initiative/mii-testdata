@@ -4,7 +4,12 @@ services:
     build: .
     environment:
       N_PATIENTS: ${SYNTHEA_N_PATIENTS:-10}
+      TIMEOUT: ${TIMEOUT:-1}
+      GZIP_OUTPUT_FILES: ${GZIP_OUTPUT_FILES:-"false"}
+      REMOVE_INPUTFILES: ${REMOVE_INPUTFILES:-"false"}
+      RELEVANT_RESOURCES: ${RELEVANT_RESOURCES:-"Patient,Encounter,Observation,Condition,DiagnosticReport,Medication,MedicationAdministration,Procedure"}
     volumes:
       - "./generated-testdata:/gen/output"
       - "./synthea.properties:/gen/synthea.properties"
       - "./docker-entrypoint.sh:/gen/docker-entrypoint.sh"
+      - "./testdata-post-processing.py:/gen/testdata-post-processing.py"
