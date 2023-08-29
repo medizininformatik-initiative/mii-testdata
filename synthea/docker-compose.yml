@@ -3,10 +3,8 @@ services:
   synthea:
     build: .
     environment:
-      N_PATIENTS: ${SYNTHEA_N_PATIENTS:-1}
+      N_PATIENTS: ${SYNTHEA_N_PATIENTS:-10}
     volumes:
       - "./generated-testdata:/gen/output"
       - "./synthea.properties:/gen/synthea.properties"
       - "./docker-entrypoint.sh:/gen/docker-entrypoint.sh"
-      - "./post-process-bundle.jq:/gen/post-process-bundle.jq"
-      - "./generate-testdata-info.py:/gen/generate-testdata-info.py"
