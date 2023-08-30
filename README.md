@@ -37,6 +37,9 @@ For performance testdata one could further distinguish between:
 
 For a real world performance estimate We currently suggest the use of the synthea testdata generator and post processeor in the `synthea` folder of this repository.
 
+It is important to note that the synthea testdata uses specific terminology and makes other assumptions about data, which have to be considered when designing a performance test using this data.
+For example in the case of the MII feasibility in order to run a performance test for the synthea testdata a mapping needs to be generated based on the testdata in order for the feasibility tools to become compatible with the testdata - see also: `synthea-to-feasibility` of this repository.
+
 
 2. Blueprint random generation
 
