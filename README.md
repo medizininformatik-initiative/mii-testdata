@@ -73,3 +73,14 @@ This type of testdata is the most complex testdata to generate and depending on 
 There is currently no general solution in the MII to generate use case specific testdata.
 
 Possible solutions include the use of excel2fhir and fill out input data for a particual use case.
+
+
+
+## Overview of current developments:
+
+- **Synthea**: <https://github.com/medizininformatik-initiative/mii-testdata/tree/parallel-post-processing/synthea> and <https://github.com/synthetichealth/synthea>
+- **excel2fhir**: <https://github.com/medizininformatik-initiative/excel2fhir>
+- **FHIR profile to testdata**: <https://github.com/geloro94/FHIRTestResourceGenerator>
+- **Blueprint random testdata generator**: <https://github.com/juliangruendner/fhir-testdata-generator>
+
+TODO - add further developments
