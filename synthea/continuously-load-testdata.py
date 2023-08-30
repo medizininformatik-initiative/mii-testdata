@@ -1,7 +1,6 @@
 import os
 import shutil
 import json
-import csv
 import time
 import concurrent.futures
 from datetime import datetime, timedelta
@@ -9,6 +8,8 @@ import argparse
 from multiprocessing import Manager, Pool
 import gzip
 import logging
+import requests
+from requests.auth import HTTPBasicAuth
 
 MAX_PROCESSES = 5
 DATA_DICT = {}
@@ -16,134 +17,59 @@ DATA_DICT_LOCK = concurrent.futures.ThreadPoolExecutor(max_workers=1)
 LAST_CHANGE_TIME = datetime.now()
 
 
-def gzip_json_to_file(json_data, output_filename):
-    json_bytes = json_data.encode('utf-8')
+def json_from_gzip_file(input_filepath):
 
-    with gzip.open(f'{output_filename}.gz', 'wb') as f_out:
-        f_out.write(json_bytes)
+    with gzip.open(input_filepath, 'rt', encoding='utf-8') as gzip_file:
+        json_data = gzip_file.read()
 
-
-def process_entry(resource_overview, entry):
-    resource = entry['resource']
-    res_type = resource['resourceType']
-
-    if 'code' in resource:
-        code = resource['code']['coding'][0]['code']
-
-        if code not in resource_overview[res_type]:
-            resource_overview[res_type][code] = {
-                "count": 1,
-                "code": resource['code'],
-                "type": res_type
-            }
-        else:
-            resource_overview[res_type][code]['count'] = resource_overview[res_type][code]['count'] + 1
-
-    return resource_overview
+    return json.loads(json_data)
 
 
-def remove_non_mii_resources(bundle, relevant_resources):
-    for del_index in reversed(range(len(bundle['entry']))):
-        resource = bundle['entry'][del_index]['resource']
-        if resource['resourceType'] not in relevant_resources:
-            logging.debug(
-                f'Removing non MII resource of type: {resource["resourceType"]}')
-            del bundle['entry'][del_index]
+def send_to_fhir_server(bundle, args):
+    logging.debug("Sending bundle to fhir...")
+    headers = {'Content-Type': 'application/json'}
+    response = requests.post(args.fhirurl, json=bundle, headers=headers,
+                             auth=HTTPBasicAuth(args.fhiruser, args.fhirpw))
+
+    logging.debug(f'Response sending bundle: {response.status_code}')
 
 
-def process_bundle(bundle, relevant_resources):
-
-    temp_res_overview = {}
-
-    for relevant_resource in relevant_resources:
-        temp_res_overview[relevant_resource] = {}
-
-    remove_non_mii_resources(bundle, relevant_resources)
-
-    for entry in bundle['entry']:
-        process_entry(temp_res_overview, entry)
-
-    return temp_res_overview
-
-
-def update_overview_dict(data_dict, resource_overview):
-
-    temp_res_overview = data_dict['resourceOverview']
-
-    for res_type in resource_overview.keys():
-        for code in resource_overview[res_type].keys():
-            if code not in data_dict['resourceOverview'][res_type]:
-                temp_res_overview[res_type][code] = resource_overview[res_type][code]
-
-            else:
-                temp_res_overview[res_type][code]['count'] = temp_res_overview[res_type][code]['count'] + \
-                    resource_overview[res_type][code]['count']
-
-    data_dict['resourceOverview'] = temp_res_overview
-
-
-def write_processed_bundle_to_file(args, filename, bundle):
-    output_path = os.path.join(args.outputdir, filename)
-
-    logging.debug(f'Writing data to: {output_path}')
-    if args.gzipfiles:
-        gzip_json_to_file(json.dumps(bundle), output_path)
-    else:
-        with open(output_path, "w") as output_file:
-            json.dump(bundle, output_file)
-
-
-def remove_file_and_dirs(base_dir, file_path):
-    # file_dir = os.path.dirname(file_path)
-    os.remove(file_path)
-
-    # Removing dir does not work as synthea writes into a dir multiple times
-    # while file_dir != base_dir:
-    #     logging.debug(f'Removing dir: {file_dir}')
-    #     os.rmdir(file_dir)
-    #     file_dir = os.path.dirname(file_dir)
-
-
-def process_file(lock, data_dict, file_path, args):
+def process_file(data_dict, file_path, args):
 
     logger = logging.getLogger()
     logger.setLevel(get_numeric_log_level(args.log_level))
-    logging.info(f'Processing file: {file_path}')
+    logging.info(f'SENDING TO FHIR - Processing file: {file_path}')
 
-    filename = os.path.basename(file_path)
-    temp_processed_files = data_dict['processedFiles']
-    temp_processed_files[file_path] = True
-    data_dict['processedFiles'] = temp_processed_files
-    cur_bundle = {}
+    bundle = {}
     json_loaded_success = False
     cur_try = 0
     n_retries = 5
     while cur_try < n_retries and json_loaded_success == False:
         try:
-            with open(file_path, 'r') as json_file:
-                cur_bundle = json.load(json_file)
+
+            if args.gzippedfiles:
+                bundle = json_from_gzip_file(file_path)
+            else:
+                with open(file_path, 'r') as json_file:
+                    bundle = json.load(json_file)
             json_loaded_success = True
         except Exception as e:
             cur_try = cur_try + 1
-            logging.debug(f"Hit running condition opening half written file, try:{cur_try} of {n_retries}")
+            logging.debug(
+                f"Hit running condition opening half written file, try:{cur_try} of {n_retries}")
             json_loaded_success = False
             time.sleep(5)
 
-    resource_overview = process_bundle(
-                    cur_bundle, data_dict['resourceOverview'].keys())
-
-    with lock:
-        update_overview_dict(data_dict, resource_overview)
-
-    write_processed_bundle_to_file(args, filename, cur_bundle)
+    send_to_fhir_server(bundle, args)
 
     if args.removeinputfiles:
-        remove_file_and_dirs(args.inputdir, file_path)
+        os.remove(file_path)
 
+    data_dict[file_path] = True
     return True
 
 
-def process_directory(lock, data_dict, args):
+def process_directory(data_dict, args):
     global LAST_CHANGE_TIME
 
     multiple_results = []
@@ -152,10 +78,10 @@ def process_directory(lock, data_dict, args):
 
     with Pool(processes=4) as pool:
         for filename in all_files:
-            if filename not in data_dict['processedFiles']:
+            if filename not in data_dict:
                 LAST_CHANGE_TIME = datetime.now()
                 multiple_results.append(pool.apply_async(
-                    process_file, (lock, data_dict, filename, args)))
+                    process_file, (data_dict, filename, args)))
 
         logging.debug([res.get(timeout=30) for res in multiple_results])
 
@@ -166,28 +92,6 @@ def get_numeric_log_level(log_level):
         raise ValueError(f"Invalid log level: {log_level}")
 
     return numeric_level
-
-
-def write_info_as_csv(output_dir, resource_overview):
-    csv_file_path = f'{output_dir}/resources-info.csv'
-
-    with open(csv_file_path, mode='w', newline='') as file:
-
-        writer = csv.writer(file)
-        header = ['Resource', 'System', 'Code', 'Count']
-        writer.writerow(header)
-
-        for res_type in resource_overview:
-            resource_overview[res_type] = {k: v for k, v in sorted(
-                resource_overview[res_type].items(), key=lambda item: item[1]['count'], reverse=True)}
-            for code in resource_overview[res_type]:
-
-                resource = resource_overview[res_type][code]
-                code = resource['code']['coding'][0]['code']
-                system = resource['code']['coding'][0]['system']
-                count = resource['count']
-                line = [res_type, system, code, count]
-                writer.writerow(line)
 
 
 def str_to_bool(s):
@@ -202,34 +106,27 @@ def main():
                         help="Set the logging level")
     parser.add_argument("--metadatadir", default="generated-testdata/metadata",
                         help="Path to the directory to be processed.")
-    parser.add_argument("--inputdir", default="generated-testdata/fhir",
+    parser.add_argument("--inputdir", default="generated-testdata/fhir-processed",
                         help="Path to the directory to be processed.")
-    parser.add_argument("--outputdir", default="generated-testdata/fhir-processed",
-                        help="Path to the directory where to save processed data.")
     parser.add_argument("--timeout", type=int, default=5,
                         help="Timeout in minutes for no new files.")
-    parser.add_argument("--gzipfiles", type=str_to_bool,
-                        help="Enable the gzipping of files")
+    parser.add_argument("--gzippedfiles", type=str_to_bool,
+                        help="Enable reading of gzipped files")
     parser.add_argument("--removeinputfiles", type=str_to_bool,
                         help="Enable the continious removing of input files")
-    parser.add_argument("--relevant-resources", default="Patient,Encounter,Observation,Condition,DiagnosticReport,Medication,MedicationAdministration,Procedure",
-                        help="Comma separated list of resource types relevant for testdata")
+    parser.add_argument("--fhirurl", default="http://localhost:8081/fhir",
+                        help="FHIR base url - commonly ends with /fhir")
+    parser.add_argument("--fhiruser", default="",
+                        help="FHIR Basic auth user")
+    parser.add_argument("--fhirpw", default="",
+                        help="FHIR Basic auth password")
 
     args = parser.parse_args()
     manager = Manager()
-    lock = manager.Lock()
     data_dict = manager.dict()
-    data_dict['resourceOverview'] = {}
-
-    temp_res_overview = {}
-    for relevant_resource in args.relevant_resources.split(","):
-        temp_res_overview[relevant_resource] = {}
-
-    data_dict['resourceOverview'] = temp_res_overview
-    data_dict['processedFiles'] = {}
 
     while True:
-        process_directory(lock, data_dict, args)
+        process_directory(data_dict, args)
 
         if (datetime.now() - LAST_CHANGE_TIME) > timedelta(minutes=args.timeout):
             break
@@ -241,10 +138,8 @@ def main():
     if args.removeinputfiles:
         shutil.rmtree(args.inputdir)
 
-    with open(f'{args.metadatadir}/processed_data_info.json', "w") as json_file:
+    with open(f'{args.metadatadir}/loaded_data_info.json', "w") as json_file:
         json.dump(processed_data_info, json_file, indent=4)
-
-    write_info_as_csv(args.metadatadir, processed_data_info['resourceOverview'])
 
 
 if __name__ == "__main__":

@@ -108,12 +108,9 @@ def process_file(lock, data_dict, file_path, args):
 
     logger = logging.getLogger()
     logger.setLevel(get_numeric_log_level(args.log_level))
-    logging.info(f'Processing file: {file_path}')
+    logging.info(f'POSTPROCESSING FILE - Processing file: {file_path}')
 
     filename = os.path.basename(file_path)
-    temp_processed_files = data_dict['processedFiles']
-    temp_processed_files[file_path] = True
-    data_dict['processedFiles'] = temp_processed_files
     cur_bundle = {}
     json_loaded_success = False
     cur_try = 0
@@ -133,6 +130,9 @@ def process_file(lock, data_dict, file_path, args):
                     cur_bundle, data_dict['resourceOverview'].keys())
 
     with lock:
+        temp_processed_files = data_dict['processedFiles']
+        temp_processed_files[file_path] = True
+        data_dict['processedFiles'] = temp_processed_files
         update_overview_dict(data_dict, resource_overview)
 
     write_processed_bundle_to_file(args, filename, cur_bundle)
