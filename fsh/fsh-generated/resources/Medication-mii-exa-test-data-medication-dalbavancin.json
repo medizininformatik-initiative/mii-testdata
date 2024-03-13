@@ -1,0 +1,60 @@
+{
+  "resourceType": "Medication",
+  "id": "mii-exa-test-data-medication-dalbavancin",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "http://fhir.de/CodeSystem/ifa/pzn",
+        "code": "06312077",
+        "display": "ASS 100 - 1a Pharma TAH Tabletten"
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/atc",
+        "code": "J01XA04",
+        "version": "2023",
+        "display": "Dalbavancin"
+      }
+    ]
+  },
+  "form": {
+    "coding": [
+      {
+        "system": "http://standardterms.edqm.eu",
+        "code": "50043000",
+        "display": "Powder for concentrate for solution for infusion"
+      }
+    ]
+  },
+  "ingredient": [
+    {
+      "itemCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://fhir.de/CodeSystem/ask",
+            "code": "33395",
+            "display": "Dalbavancin"
+          },
+          {
+            "system": "http://fdasis.nlm.nih.gov",
+            "code": "808UI9MS5K"
+          },
+          {
+            "system": "urn:oid:2.16.840.1.113883.6.61",
+            "code": "171500-79-1"
+          },
+          {
+            "system": "http://snomed.info/sct",
+            "code": "703917001",
+            "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+            "display": "Dalbavancin (substance)"
+          }
+        ]
+      }
+    }
+  ]
+}
