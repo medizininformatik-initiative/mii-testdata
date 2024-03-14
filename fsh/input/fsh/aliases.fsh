@@ -45,3 +45,4 @@ Alias: $consentscope = http://terminology.hl7.org/CodeSystem/consentscope
 Alias: $mii-cs-consent-consent_category = https://www.medizininformatik-initiative.de/fhir/modul-consent/CodeSystem/mii-cs-consent-consent_category
 Alias: $mii-cs-consent-policy = urn:oid:2.16.840.1.113883.3.1937.777.24.5.3
 Alias: $ContactType = https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/CodeSystem/ContactType
+Alias: $gender-amtlich-de = http://fhir.de/CodeSystem/gender-amtlich-de

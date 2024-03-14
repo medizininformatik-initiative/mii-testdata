@@ -68,7 +68,7 @@
     },
     {
       "condition": {
-        "reference": "Condition/mii-exa-test-data-todesursache-1"
+        "reference": "Condition/mii-exa-test-data-patient-1-todesursache-1"
       },
       "use": {
         "coding": [

@@ -168,7 +168,8 @@
           }
         ],
         "gender": "male",
-        "birthDate": "1977-05-24"
+        "birthDate": "1977-05-24",
+        "deceasedDateTime": "2024-02-22"
       }
     },
     {
@@ -348,12 +349,12 @@
     {
       "request": {
         "method": "PUT",
-        "url": "Observation/mii-exa-test-data-vitalstatus-1"
+        "url": "Observation/mii-exa-test-data-patient-1-vitalstatus-1"
       },
-      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-vitalstatus-1",
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-1-vitalstatus-1",
       "resource": {
         "resourceType": "Observation",
-        "id": "mii-exa-test-data-vitalstatus-1",
+        "id": "mii-exa-test-data-patient-1-vitalstatus-1",
         "meta": {
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Vitalstatus"
@@ -395,12 +396,12 @@
     {
       "request": {
         "method": "PUT",
-        "url": "Condition/mii-exa-test-data-todesursache-1"
+        "url": "Condition/mii-exa-test-data-patient-1-todesursache-1"
       },
-      "fullUrl": "https://www.medizininformatik-initiative.de/Condition/mii-exa-test-data-todesursache-1",
+      "fullUrl": "https://www.medizininformatik-initiative.de/Condition/mii-exa-test-data-patient-1-todesursache-1",
       "resource": {
         "resourceType": "Condition",
-        "id": "mii-exa-test-data-todesursache-1",
+        "id": "mii-exa-test-data-patient-1-todesursache-1",
         "meta": {
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Todesursache"
@@ -676,7 +677,7 @@
           },
           {
             "condition": {
-              "reference": "Condition/mii-exa-test-data-todesursache-1"
+              "reference": "Condition/mii-exa-test-data-patient-1-todesursache-1"
             },
             "use": {
               "coding": [

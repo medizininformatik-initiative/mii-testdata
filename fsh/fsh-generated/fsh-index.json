@@ -8,6 +8,14 @@
     "endLine": 42
   },
   {
+    "outputFile": "Bundle-mii-exa-test-data-patient-2-bundle.json",
+    "fshName": "mii-exa-test-data-patient-2-bundle",
+    "fshType": "Instance",
+    "fshFile": "Bundle.fsh",
+    "startLine": 45,
+    "endLine": 53
+  },
+  {
     "outputFile": "Condition-mii-exa-test-data-patient-1-diagnose-1.json",
     "fshName": "mii-exa-test-data-patient-1-diagnose-1",
     "fshType": "Instance",
@@ -24,12 +32,20 @@
     "endLine": 20
   },
   {
-    "outputFile": "Condition-mii-exa-test-data-todesursache-1.json",
-    "fshName": "mii-exa-test-data-todesursache-1",
+    "outputFile": "Condition-mii-exa-test-data-patient-1-todesursache-1.json",
+    "fshName": "mii-exa-test-data-patient-1-todesursache-1",
     "fshType": "Instance",
     "fshFile": "modul-person/Todesursache.fsh",
     "startLine": 2,
     "endLine": 4
+  },
+  {
+    "outputFile": "Condition-mii-exa-test-data-patient-2-todesursache-1.json",
+    "fshName": "mii-exa-test-data-patient-2-todesursache-1",
+    "fshType": "Instance",
+    "fshFile": "modul-person/Todesursache.fsh",
+    "startLine": 7,
+    "endLine": 9
   },
   {
     "outputFile": "Consent-mii-exa-test-data-patient-1-consent-1.json",
@@ -38,6 +54,14 @@
     "fshFile": "modul-consent/Consent.fsh",
     "startLine": 2,
     "endLine": 30
+  },
+  {
+    "outputFile": "Consent-mii-exa-test-data-patient-2-consent-1.json",
+    "fshName": "mii-exa-test-data-patient-2-consent-1",
+    "fshType": "Instance",
+    "fshFile": "modul-consent/Consent.fsh",
+    "startLine": 33,
+    "endLine": 61
   },
   {
     "outputFile": "Device-mii-exa-test-data-device-roche-cobas-c303.json",
@@ -216,12 +240,20 @@
     "endLine": 91
   },
   {
-    "outputFile": "Observation-mii-exa-test-data-vitalstatus-1.json",
-    "fshName": "mii-exa-test-data-vitalstatus-1",
+    "outputFile": "Observation-mii-exa-test-data-patient-1-vitalstatus-1.json",
+    "fshName": "mii-exa-test-data-patient-1-vitalstatus-1",
     "fshType": "Instance",
     "fshFile": "modul-person/Vitalstatus.fsh",
     "startLine": 2,
     "endLine": 4
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-2-vitalstatus-1.json",
+    "fshName": "mii-exa-test-data-patient-2-vitalstatus-1",
+    "fshType": "Instance",
+    "fshFile": "modul-person/Vitalstatus.fsh",
+    "startLine": 7,
+    "endLine": 9
   },
   {
     "outputFile": "Organization-mii-exa-test-data-organization-biobank-charite.json",
@@ -253,7 +285,23 @@
     "fshType": "Instance",
     "fshFile": "modul-person/Patient.fsh",
     "startLine": 2,
-    "endLine": 32
+    "endLine": 33
+  },
+  {
+    "outputFile": "Patient-mii-exa-test-data-patient-2.json",
+    "fshName": "mii-exa-test-data-patient-2",
+    "fshType": "Instance",
+    "fshFile": "modul-person/Patient.fsh",
+    "startLine": 36,
+    "endLine": 44
+  },
+  {
+    "outputFile": "Procedure-mii-exa-test-data-patient-1-extrakorporalen-verfahren-1.json",
+    "fshName": "mii-exa-test-data-patient-1-extrakorporalen-verfahren-1",
+    "fshType": "Instance",
+    "fshFile": "modul-icu/ExtrakorporaleVerfahren.fsh",
+    "startLine": 1,
+    "endLine": 9
   },
   {
     "outputFile": "Procedure-mii-exa-test-data-patient-1-prozedur-1.json",

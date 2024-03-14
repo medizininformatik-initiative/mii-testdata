@@ -1,6 +1,6 @@
 {
   "resourceType": "Condition",
-  "id": "mii-exa-test-data-todesursache-1",
+  "id": "mii-exa-test-data-patient-1-todesursache-1",
   "meta": {
     "profile": [
       "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Todesursache"

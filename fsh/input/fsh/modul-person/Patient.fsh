@@ -7,6 +7,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-person/S
 * insert AddName(Markgraf von Brandenburg-Schwedt, Markgraf, Brandenburg-Schwedt, von, Christian, Ludwig, Prinz von Preußen, NB, aus dem Haus der Hohenzollern)
 * insert AddGender(male)
 * birthDate = "1977-05-24"
+* deceasedDateTime = "2024-02-22"
 * address
   * extension
     * url = "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-precinct"
@@ -30,3 +31,14 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-person/S
       * valueCoding = http://fhir.de/sid/destatis/ags#11000000
   * postalCode = "13051"
   * country = "DE"
+
+// Patient-2
+Instance: mii-exa-test-data-patient-2
+InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient
+* meta.profile = "http://fhir.de/ConsentManagement/StructureDefinition/Patient"
+* insert AddVersichertenIdGKV(B23456789, 123456789)
+* insert AddPID(147725268, https://www.charite.de/fhir/sid/patientenidentifikation, Charité)
+* insert AddGender(other)
+* gender.extension[other-amtlich].valueCoding = $gender-amtlich-de#D
+* birthDate = "2000-06-30"
+* deceasedBoolean = true 

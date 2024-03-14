@@ -7,7 +7,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-fall/Str
 * diagnosis[0].condition = Reference(mii-exa-test-data-patient-1-diagnose-1)
 * diagnosis[0].use = $diagnosis-role#AD "Admission diagnosis"
 * diagnosis[0].rank = 1
-* diagnosis[1].condition = Reference(mii-exa-test-data-todesursache-1)
+* diagnosis[1].condition = Reference(mii-exa-test-data-patient-1-todesursache-1)
 * diagnosis[1].use = $diagnosis-role#DD "Discharge diagnosis"
 * diagnosis[1].rank = 2
 * hospitalization.admitSource = $Aufnahmeanlass#E "Einweisung durch einen Arzt"

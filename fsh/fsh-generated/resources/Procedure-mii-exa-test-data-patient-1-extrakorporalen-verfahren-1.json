@@ -1,0 +1,38 @@
+{
+  "resourceType": "Procedure",
+  "id": "mii-exa-test-data-patient-1-extrakorporalen-verfahren-1",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/extrakorporales-verfahren"
+    ]
+  },
+  "category": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "182744004",
+        "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+      }
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "127788007",
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+      }
+    ]
+  },
+  "performedPeriod": {
+    "start": "2024-02-20T10:00:00+01:00",
+    "end": "2024-02-20T13:00:00+01:00"
+  },
+  "status": "completed",
+  "subject": {
+    "reference": "Patient/mii-exa-test-data-patient-1"
+  },
+  "encounter": {
+    "reference": "Encounter/mii-exa-test-data-patient-1-encounter-2"
+  }
+}

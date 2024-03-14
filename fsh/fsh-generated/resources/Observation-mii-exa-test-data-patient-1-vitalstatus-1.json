@@ -1,6 +1,6 @@
 {
   "resourceType": "Observation",
-  "id": "mii-exa-test-data-vitalstatus-1",
+  "id": "mii-exa-test-data-patient-1-vitalstatus-1",
   "meta": {
     "profile": [
       "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Vitalstatus"
