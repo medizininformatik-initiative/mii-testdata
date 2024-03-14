@@ -1,19 +1,11 @@
 [
   {
-    "outputFile": "Bundle-mii-exa-test-data-patient-1-bundle.json",
-    "fshName": "mii-exa-test-data-patient-1-bundle",
+    "outputFile": "Bundle-mii-exa-test-data-bundle.json",
+    "fshName": "mii-exa-test-data-bundle",
     "fshType": "Instance",
     "fshFile": "Bundle.fsh",
     "startLine": 7,
-    "endLine": 42
-  },
-  {
-    "outputFile": "Bundle-mii-exa-test-data-patient-2-bundle.json",
-    "fshName": "mii-exa-test-data-patient-2-bundle",
-    "fshType": "Instance",
-    "fshFile": "Bundle.fsh",
-    "startLine": 45,
-    "endLine": 53
+    "endLine": 47
   },
   {
     "outputFile": "Condition-mii-exa-test-data-patient-1-diagnose-1.json",

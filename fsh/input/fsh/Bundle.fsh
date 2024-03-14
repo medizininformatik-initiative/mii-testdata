@@ -4,10 +4,10 @@ RuleSet: AddBundleEntry(resource, url)
 * entry[=].request.method = #PUT
 * entry[=].request.url = "{url}/{resource}"
 
-Instance: mii-exa-test-data-patient-1-bundle
+Instance: mii-exa-test-data-bundle
 InstanceOf: Bundle
 * type = #transaction
-* timestamp = "2024-02-23T12:11:00+01:00"
+* timestamp = "2024-03-14T10:58:00+01:00"
 * insert AddBundleEntry(mii-exa-test-data-patient-1, Patient)
 * insert AddBundleEntry(mii-exa-test-data-patient-1-consent-1, Consent)
 * insert AddBundleEntry(mii-exa-test-data-patient-1-vitalstatus-1, Observation)
@@ -40,14 +40,8 @@ InstanceOf: Bundle
 * insert AddBundleEntry(mii-exa-test-data-patient-1-labobs-4, Observation)
 * insert AddBundleEntry(mii-exa-test-data-patient-1-labobs-5, Observation)
 * insert AddBundleEntry(mii-exa-test-data-patient-1-labobs-6, Observation)
-
 // Patient-2
-Instance: mii-exa-test-data-patient-2-bundle
-InstanceOf: Bundle
-* type = #transaction
-* timestamp = "2024-03-14T10:58:00+01:00"
 * insert AddBundleEntry(mii-exa-test-data-patient-2, Patient)
 * insert AddBundleEntry(mii-exa-test-data-patient-2-consent-1, Consent)
 * insert AddBundleEntry(mii-exa-test-data-patient-2-vitalstatus-1, Observation)
 * insert AddBundleEntry(mii-exa-test-data-patient-2-todesursache-1, Condition)
-* insert AddBundleEntry(mii-exa-test-data-organization-charite, Organization)
