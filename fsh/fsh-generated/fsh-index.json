@@ -5,7 +5,7 @@
     "fshType": "Instance",
     "fshFile": "Bundle.fsh",
     "startLine": 7,
-    "endLine": 47
+    "endLine": 51
   },
   {
     "outputFile": "Condition-mii-exa-test-data-patient-1-diagnose-1.json",
@@ -86,6 +86,14 @@
     "fshFile": "modul-labor/DiagnosticReport.fsh",
     "startLine": 2,
     "endLine": 17
+  },
+  {
+    "outputFile": "DiagnosticReport-mii-exa-test-data-patient-1-mibi-befund-1.json",
+    "fshName": "mii-exa-test-data-patient-1-mibi-befund-1",
+    "fshType": "Instance",
+    "fshFile": "modul-mikrobiologie/DiagnosticReport.fsh",
+    "startLine": 2,
+    "endLine": 21
   },
   {
     "outputFile": "Encounter-mii-exa-test-data-patient-1-encounter-1.json",
@@ -182,6 +190,14 @@
     "fshFile": "modul-icu/Atemfrequenz.fsh",
     "startLine": 1,
     "endLine": 5
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-1-kulturnachweis-1.json",
+    "fshName": "mii-exa-test-data-patient-1-kulturnachweis-1",
+    "fshType": "Instance",
+    "fshFile": "modul-mikrobiologie/Kulturnachweis.fsh",
+    "startLine": 1,
+    "endLine": 21
   },
   {
     "outputFile": "Observation-mii-exa-test-data-patient-1-labobs-1.json",
@@ -320,12 +336,28 @@
     "endLine": 17
   },
   {
+    "outputFile": "ServiceRequest-mii-exa-test-data-patient-1-labrequest-2.json",
+    "fshName": "mii-exa-test-data-patient-1-labrequest-2",
+    "fshType": "Instance",
+    "fshFile": "modul-mikrobiologie/ServiceRequest.fsh",
+    "startLine": 2,
+    "endLine": 16
+  },
+  {
     "outputFile": "Specimen-mii-exa-test-data-patient-1-specimen-1.json",
     "fshName": "mii-exa-test-data-patient-1-specimen-1",
     "fshType": "Instance",
     "fshFile": "modul-biobank/Specimen.fsh",
     "startLine": 2,
     "endLine": 41
+  },
+  {
+    "outputFile": "Specimen-mii-exa-test-data-patient-1-specimen-2.json",
+    "fshName": "mii-exa-test-data-patient-1-specimen-2",
+    "fshType": "Instance",
+    "fshFile": "modul-mikrobiologie/Specimen.fsh",
+    "startLine": 2,
+    "endLine": 13
   },
   {
     "outputFile": "Substance-mii-exa-test-data-patient-1-substance-1.json",

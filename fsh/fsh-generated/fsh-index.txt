@@ -1,5 +1,5 @@
 Output File                                                             Name                                                     Type      FSH File                                       Lines
-Bundle-mii-exa-test-data-bundle.json                                    mii-exa-test-data-bundle                                 Instance  Bundle.fsh                                     7 - 47
+Bundle-mii-exa-test-data-bundle.json                                    mii-exa-test-data-bundle                                 Instance  Bundle.fsh                                     7 - 51
 Condition-mii-exa-test-data-patient-1-diagnose-1.json                   mii-exa-test-data-patient-1-diagnose-1                   Instance  modul-diagnose/Diagnose.fsh                    2 - 11
 Condition-mii-exa-test-data-patient-1-diagnose-2.json                   mii-exa-test-data-patient-1-diagnose-2                   Instance  modul-diagnose/Diagnose.fsh                    13 - 20
 Condition-mii-exa-test-data-patient-1-todesursache-1.json               mii-exa-test-data-patient-1-todesursache-1               Instance  modul-person/Todesursache.fsh                  2 - 4
@@ -10,6 +10,7 @@ Device-mii-exa-test-data-device-roche-cobas-c303.json                   mii-exa-
 Device-mii-exa-test-data-device-roche-cobas-e402.json                   mii-exa-test-data-device-roche-cobas-e402                Instance  modul-labor/Device.fsh                         10 - 17
 Device-mii-exa-test-data-device-roche-cobas.json                        mii-exa-test-data-device-roche-cobas                     Instance  modul-labor/Device.fsh                         19 - 24
 DiagnosticReport-mii-exa-test-data-patient-1-labreport-1.json           mii-exa-test-data-patient-1-labreport-1                  Instance  modul-labor/DiagnosticReport.fsh               2 - 17
+DiagnosticReport-mii-exa-test-data-patient-1-mibi-befund-1.json         mii-exa-test-data-patient-1-mibi-befund-1                Instance  modul-mikrobiologie/DiagnosticReport.fsh       2 - 21
 Encounter-mii-exa-test-data-patient-1-encounter-1.json                  mii-exa-test-data-patient-1-encounter-1                  Instance  modul-fall/Encounter.fsh                       2 - 34
 Encounter-mii-exa-test-data-patient-1-encounter-2.json                  mii-exa-test-data-patient-1-encounter-2                  Instance  modul-fall/Encounter.fsh                       36 - 41
 List-mii-exa-test-data-patient-1-list-aufnahmemedikation.json           mii-exa-test-data-patient-1-list-aufnahmemedikation      Instance  modul-medikation/List.fsh                      2 - 10
@@ -22,6 +23,7 @@ MedicationRequest-mii-exa-test-data-patient-1-medrequest-2.json         mii-exa-
 MedicationStatement-mii-exa-test-data-patient-1-medstatement-1.json     mii-exa-test-data-patient-1-medstatement-1               Instance  modul-medikation/MedicationStatement.fsh       2 - 21
 MedicationStatement-mii-exa-test-data-patient-1-medstatement-2.json     mii-exa-test-data-patient-1-medstatement-2               Instance  modul-medikation/MedicationStatement.fsh       23 - 44
 Observation-mii-exa-test-data-patient-1-atemfrequenz-1.json             mii-exa-test-data-patient-1-atemfrequenz-1               Instance  modul-icu/Atemfrequenz.fsh                     1 - 5
+Observation-mii-exa-test-data-patient-1-kulturnachweis-1.json           mii-exa-test-data-patient-1-kulturnachweis-1             Instance  modul-mikrobiologie/Kulturnachweis.fsh         1 - 21
 Observation-mii-exa-test-data-patient-1-labobs-1.json                   mii-exa-test-data-patient-1-labobs-1                     Instance  modul-labor/Observation.fsh                    2 - 17
 Observation-mii-exa-test-data-patient-1-labobs-2.json                   mii-exa-test-data-patient-1-labobs-2                     Instance  modul-labor/Observation.fsh                    19 - 34
 Observation-mii-exa-test-data-patient-1-labobs-3.json                   mii-exa-test-data-patient-1-labobs-3                     Instance  modul-labor/Observation.fsh                    36 - 51
@@ -39,5 +41,7 @@ Procedure-mii-exa-test-data-patient-1-extrakorporalen-verfahren-1.json  mii-exa-
 Procedure-mii-exa-test-data-patient-1-prozedur-1.json                   mii-exa-test-data-patient-1-prozedur-1                   Instance  modul-prozedur/Prozedur.fsh                    2 - 11
 Procedure-mii-exa-test-data-patient-1-prozedur-2.json                   mii-exa-test-data-patient-1-prozedur-2                   Instance  modul-prozedur/Prozedur.fsh                    13 - 20
 ServiceRequest-mii-exa-test-data-patient-1-labrequest-1.json            mii-exa-test-data-patient-1-labrequest-1                 Instance  modul-labor/ServiceRequest.fsh                 2 - 17
+ServiceRequest-mii-exa-test-data-patient-1-labrequest-2.json            mii-exa-test-data-patient-1-labrequest-2                 Instance  modul-mikrobiologie/ServiceRequest.fsh         2 - 16
 Specimen-mii-exa-test-data-patient-1-specimen-1.json                    mii-exa-test-data-patient-1-specimen-1                   Instance  modul-biobank/Specimen.fsh                     2 - 41
+Specimen-mii-exa-test-data-patient-1-specimen-2.json                    mii-exa-test-data-patient-1-specimen-2                   Instance  modul-mikrobiologie/Specimen.fsh               2 - 13
 Substance-mii-exa-test-data-patient-1-substance-1.json                  mii-exa-test-data-patient-1-substance-1                  Instance  modul-biobank/Substance.fsh                    2 - 5

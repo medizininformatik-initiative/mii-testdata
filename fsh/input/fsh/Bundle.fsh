@@ -40,6 +40,10 @@ InstanceOf: Bundle
 * insert AddBundleEntry(mii-exa-test-data-patient-1-labobs-4, Observation)
 * insert AddBundleEntry(mii-exa-test-data-patient-1-labobs-5, Observation)
 * insert AddBundleEntry(mii-exa-test-data-patient-1-labobs-6, Observation)
+* insert AddBundleEntry(mii-exa-test-data-patient-1-mibi-befund-1, DiagnosticReport)
+* insert AddBundleEntry(mii-exa-test-data-patient-1-labrequest-2, ServiceRequest)
+* insert AddBundleEntry(mii-exa-test-data-patient-1-specimen-2, Specimen)
+* insert AddBundleEntry(mii-exa-test-data-patient-1-kulturnachweis-1, Observation)
 // Patient-2
 * insert AddBundleEntry(mii-exa-test-data-patient-2, Patient)
 * insert AddBundleEntry(mii-exa-test-data-patient-2-consent-1, Consent)

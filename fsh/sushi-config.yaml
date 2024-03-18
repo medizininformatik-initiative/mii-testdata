@@ -35,6 +35,7 @@ dependencies:
   de.medizininformatikinitiative.kerndatensatz.consent: 1.0.7
   de.medizininformatikinitiative.kerndatensatz.meta: 1.0.3
   de.medizininformatikinitiative.kerndatensatz.icu: 1.0.0
+  de.medizininformatikinitiative.kerndatensatz.mikrobiologie: 2024.0.0
   de.basisprofil.r4: 1.4.0
   de.einwilligungsmanagement: 1.0.1
 #   hl7.fhir.us.mcode:
