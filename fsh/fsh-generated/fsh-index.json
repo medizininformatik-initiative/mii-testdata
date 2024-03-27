@@ -13,15 +13,15 @@
     "fshType": "Instance",
     "fshFile": "modul-diagnose/Diagnose.fsh",
     "startLine": 2,
-    "endLine": 11
+    "endLine": 15
   },
   {
     "outputFile": "Condition-mii-exa-test-data-patient-1-diagnose-2.json",
     "fshName": "mii-exa-test-data-patient-1-diagnose-2",
     "fshType": "Instance",
     "fshFile": "modul-diagnose/Diagnose.fsh",
-    "startLine": 13,
-    "endLine": 20
+    "startLine": 17,
+    "endLine": 24
   },
   {
     "outputFile": "Condition-mii-exa-test-data-patient-1-todesursache-1.json",

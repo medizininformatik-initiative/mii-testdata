@@ -1,7 +1,7 @@
 Output File                                                             Name                                                     Type      FSH File                                       Lines
 Bundle-mii-exa-test-data-bundle.json                                    mii-exa-test-data-bundle                                 Instance  Bundle.fsh                                     7 - 51
-Condition-mii-exa-test-data-patient-1-diagnose-1.json                   mii-exa-test-data-patient-1-diagnose-1                   Instance  modul-diagnose/Diagnose.fsh                    2 - 11
-Condition-mii-exa-test-data-patient-1-diagnose-2.json                   mii-exa-test-data-patient-1-diagnose-2                   Instance  modul-diagnose/Diagnose.fsh                    13 - 20
+Condition-mii-exa-test-data-patient-1-diagnose-1.json                   mii-exa-test-data-patient-1-diagnose-1                   Instance  modul-diagnose/Diagnose.fsh                    2 - 15
+Condition-mii-exa-test-data-patient-1-diagnose-2.json                   mii-exa-test-data-patient-1-diagnose-2                   Instance  modul-diagnose/Diagnose.fsh                    17 - 24
 Condition-mii-exa-test-data-patient-1-todesursache-1.json               mii-exa-test-data-patient-1-todesursache-1               Instance  modul-person/Todesursache.fsh                  2 - 4
 Condition-mii-exa-test-data-patient-2-todesursache-1.json               mii-exa-test-data-patient-2-todesursache-1               Instance  modul-person/Todesursache.fsh                  7 - 9
 Consent-mii-exa-test-data-patient-1-consent-1.json                      mii-exa-test-data-patient-1-consent-1                    Instance  modul-consent/Consent.fsh                      2 - 30
