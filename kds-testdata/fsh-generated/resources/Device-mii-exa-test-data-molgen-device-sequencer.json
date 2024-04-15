@@ -1,0 +1,12 @@
+{
+  "resourceType": "Device",
+  "id": "mii-exa-test-data-molgen-device-sequencer",
+  "deviceName": [
+    {
+      "name": "MiSeq",
+      "type": "manufacturer-name"
+    }
+  ],
+  "status": "active",
+  "manufacturer": "Illumina"
+}

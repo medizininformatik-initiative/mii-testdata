@@ -1,0 +1,85 @@
+{
+  "resourceType": "Observation",
+  "id": "mii-exa-test-data-patient-1-mikrobio-empfindlichkeit-1",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-empfindlichkeit"
+    ]
+  },
+  "identifier": [
+    {
+      "assigner": {
+        "identifier": {
+          "system": "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier",
+          "value": "Charité"
+        }
+      },
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "OBI"
+          }
+        ]
+      },
+      "system": "https://www.charite.de/fhir/sid/lab-results",
+      "value": "MiBiEKT_000001"
+    }
+  ],
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "Laboratory"
+        },
+        {
+          "system": "http://loinc.org",
+          "code": "26436-6",
+          "display": "Laboratory studies (set)"
+        },
+        {
+          "system": "http://loinc.org",
+          "code": "18725-2",
+          "display": "Microbiology studies (set)"
+        }
+      ]
+    }
+  ],
+  "interpretation": [
+    {
+      "coding": [
+        {
+          "code": "R",
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "version": "2018-08-12",
+          "display": "Resistant"
+        }
+      ]
+    }
+  ],
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "code": "18868-0",
+        "system": "http://loinc.org",
+        "display": "Aztreonam [Susceptibility]"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/mii-exa-test-data-patient-1"
+  },
+  "effectiveDateTime": "2024-02-16T16:15:00+01:00",
+  "valueQuantity": {
+    "value": 32,
+    "code": "mg/L",
+    "system": "http://unitsofmeasure.org",
+    "unit": "mg/L"
+  },
+  "specimen": {
+    "reference": "Specimen/mii-exa-test-data-patient-1-specimen-2"
+  }
+}
