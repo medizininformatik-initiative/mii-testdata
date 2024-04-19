@@ -5,7 +5,7 @@
     "fshType": "Instance",
     "fshFile": "Bundle.fsh",
     "startLine": 7,
-    "endLine": 104
+    "endLine": 120
   },
   {
     "outputFile": "Composition-mii-exa-test-data-patient-1-patho-composition.json",
@@ -341,7 +341,7 @@
     "fshType": "Instance",
     "fshFile": "modul-icu/extrakorporaleVerfahren/ArteriellerDruck.fsh",
     "startLine": 1,
-    "endLine": 13
+    "endLine": 14
   },
   {
     "outputFile": "Observation-mii-exa-test-data-patient-1-ecmo-blutfluss-eingestellt.json",
@@ -464,6 +464,14 @@
     "endLine": 13
   },
   {
+    "outputFile": "Observation-mii-exa-test-data-patient-1-icu-muv-koerpergewicht.json",
+    "fshName": "mii-exa-test-data-patient-1-icu-muv-koerpergewicht",
+    "fshType": "Instance",
+    "fshFile": "modul-icu/MonitoringUndVitaldaten/Koerpergewicht.fsh",
+    "startLine": 1,
+    "endLine": 12
+  },
+  {
     "outputFile": "Observation-mii-exa-test-data-patient-1-kulturnachweis-1.json",
     "fshName": "mii-exa-test-data-patient-1-kulturnachweis-1",
     "fshType": "Instance",
@@ -568,6 +576,54 @@
     "endLine": 19
   },
   {
+    "outputFile": "Observation-mii-exa-test-data-patient-1-muv-arterieller-blutdruck.json",
+    "fshName": "mii-exa-test-data-patient-1-muv-arterieller-blutdruck",
+    "fshType": "Instance",
+    "fshFile": "modul-icu/MonitoringUndVitaldaten/ArteriellerBlutdruck.fsh",
+    "startLine": 1,
+    "endLine": 23
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-1-muv-atemfrequenz.json",
+    "fshName": "mii-exa-test-data-patient-1-muv-atemfrequenz",
+    "fshType": "Instance",
+    "fshFile": "modul-icu/MonitoringUndVitaldaten/Atemfrequenz.fsh",
+    "startLine": 1,
+    "endLine": 13
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-1-muv-herzfrequenz.json",
+    "fshName": "mii-exa-test-data-patient-1-muv-herzfrequenz",
+    "fshType": "Instance",
+    "fshFile": "modul-icu/MonitoringUndVitaldaten/Herzfrequenz.fsh",
+    "startLine": 1,
+    "endLine": 13
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-1-muv-koerpergroesse.json",
+    "fshName": "mii-exa-test-data-patient-1-muv-koerpergroesse",
+    "fshType": "Instance",
+    "fshFile": "modul-icu/MonitoringUndVitaldaten/Koerpergroesse.fsh",
+    "startLine": 1,
+    "endLine": 11
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-1-muv-kopfumfang.json",
+    "fshName": "mii-exa-test-data-patient-1-muv-kopfumfang",
+    "fshType": "Instance",
+    "fshFile": "modul-icu/MonitoringUndVitaldaten/Kopfumfang.fsh",
+    "startLine": 1,
+    "endLine": 12
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-1-muv-spo2-pulsoxymetrie.json",
+    "fshName": "mii-exa-test-data-patient-1-muv-spo2-pulsoxymetrie",
+    "fshType": "Instance",
+    "fshFile": "modul-icu/MonitoringUndVitaldaten/SauerstoffsaettigungPreduktalPulsoxymetrie.fsh",
+    "startLine": 1,
+    "endLine": 11
+  },
+  {
     "outputFile": "Observation-mii-exa-test-data-patient-1-patho-biopsy-site-a.json",
     "fshName": "mii-exa-test-data-patient-1-patho-biopsy-site-a",
     "fshType": "Instance",
@@ -670,6 +726,14 @@
     "fshFile": "modul-patho/PathoFinding.fsh",
     "startLine": 56,
     "endLine": 70
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-1-temp-trommelfell.json",
+    "fshName": "mii-exa-test-data-patient-1-temp-trommelfell",
+    "fshType": "Instance",
+    "fshFile": "modul-icu/MonitoringUndVitaldaten/KoerpertemperaturTrommelfell.fsh",
+    "startLine": 1,
+    "endLine": 14
   },
   {
     "outputFile": "Observation-mii-exa-test-data-patient-1-vitalstatus-1.json",
@@ -797,7 +861,7 @@
     "fshType": "Instance",
     "fshFile": "modul-person/Patient.fsh",
     "startLine": 49,
-    "endLine": 88
+    "endLine": 89
   },
   {
     "outputFile": "Procedure-mii-exa-test-data-patient-1-extrakorporalen-verfahren-1.json",

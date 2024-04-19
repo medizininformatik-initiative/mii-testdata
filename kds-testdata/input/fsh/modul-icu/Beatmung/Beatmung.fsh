@@ -1,7 +1,7 @@
 Instance: mii-exa-test-data-patient-1-vent-beatmung
-InstanceOf: Procedure
+InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/beatmung
 Usage: #example
-* meta.profile = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/beatmung"
+//* meta.profile = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/beatmung"
 * status = #completed
 * category = $sct#40617009 "Artificial respiration (procedure)"
 * code = $sct#26763009 "Controlled ventilation procedure and therapy, initiation and management (procedure)"

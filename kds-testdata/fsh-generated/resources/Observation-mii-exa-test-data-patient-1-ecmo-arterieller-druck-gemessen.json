@@ -46,6 +46,9 @@
   "subject": {
     "reference": "Patient/mii-exa-test-data-patient-1"
   },
+  "encounter": {
+    "reference": "Encounter/mii-exa-test-data-patient-1-encounter-1"
+  },
   "device": {
     "reference": "DeviceMetric/mii-exa-test-data-patient-1-ecmo-gemessene-parameter"
   }

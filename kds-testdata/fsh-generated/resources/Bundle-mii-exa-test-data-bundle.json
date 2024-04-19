@@ -5568,6 +5568,858 @@
     {
       "request": {
         "method": "PUT",
+        "url": "Observation/mii-exa-test-data-patient-1-atemfrequenz-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-1-atemfrequenz-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-1-atemfrequenz-1",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/atemfrequenz"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "86290005",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+              "display": "Respiratory rate (observable entity)"
+            },
+            {
+              "system": "http://loinc.org",
+              "code": "9279-1",
+              "display": "Respiratory Rate"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "system": "http://unitsofmeasure.org",
+          "code": "/min",
+          "value": 15,
+          "unit": "per minute"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-1"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-patient-1-encounter-1"
+        },
+        "effectiveDateTime": "2024-02-20T12:00:00+01:00"
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Procedure/mii-exa-test-data-patient-1-extrakorporalen-verfahren-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Procedure/mii-exa-test-data-patient-1-extrakorporalen-verfahren-1",
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "mii-exa-test-data-patient-1-extrakorporalen-verfahren-1",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/extrakorporales-verfahren"
+          ]
+        },
+        "category": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "182744004",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "127788007",
+              "system": "http://snomed.info/sct",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+            }
+          ]
+        },
+        "performedPeriod": {
+          "start": "2024-02-20T10:00:00+01:00",
+          "end": "2024-02-20T13:00:00+01:00"
+        },
+        "status": "completed",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-1"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-patient-1-encounter-2"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Procedure/mii-exa-test-data-patient-1-vent-beatmung"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Procedure/mii-exa-test-data-patient-1-vent-beatmung",
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "mii-exa-test-data-patient-1-vent-beatmung",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/beatmung"
+          ]
+        },
+        "performedPeriod": {
+          "start": "2024-02-20T10:00:00+01:00",
+          "end": "2024-02-20T13:00:00+01:00"
+        },
+        "status": "completed",
+        "category": {
+          "coding": [
+            {
+              "code": "40617009",
+              "system": "http://snomed.info/sct",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+              "display": "Artificial respiration (procedure)"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "26763009",
+              "system": "http://snomed.info/sct",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+              "display": "Controlled ventilation procedure and therapy, initiation and management (procedure)"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-1"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-patient-1-encounter-2"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "DeviceMetric/mii-exa-test-data-patient-1-vent-eingestellte-parameter"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/DeviceMetric/mii-exa-test-data-patient-1-vent-eingestellte-parameter",
+      "resource": {
+        "resourceType": "DeviceMetric",
+        "id": "mii-exa-test-data-patient-1-vent-eingestellte-parameter",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/devicemetric-eingestellte-gemessene-parameter-beatmung"
+          ]
+        },
+        "type": {
+          "coding": [
+            {
+              "code": "40617009",
+              "system": "http://snomed.info/sct",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+              "display": "Artificial respiration (procedure)"
+            }
+          ]
+        },
+        "category": "setting"
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "DeviceMetric/mii-exa-test-data-patient-1-vent-gemessene-parameter"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/DeviceMetric/mii-exa-test-data-patient-1-vent-gemessene-parameter",
+      "resource": {
+        "resourceType": "DeviceMetric",
+        "id": "mii-exa-test-data-patient-1-vent-gemessene-parameter",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/devicemetric-eingestellte-gemessene-parameter-beatmung"
+          ]
+        },
+        "type": {
+          "coding": [
+            {
+              "code": "40617009",
+              "system": "http://snomed.info/sct",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+              "display": "Artificial respiration (procedure)"
+            }
+          ]
+        },
+        "category": "measurement"
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-patient-1-ecmo-arterieller-druck-gemessen"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-1-ecmo-arterieller-druck-gemessen",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-1-ecmo-arterieller-druck-gemessen",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/arterieller-druck"
+          ]
+        },
+        "partOf": [
+          {
+            "reference": "Procedure/mii-exa-test-data-patient-1-extrakorporalen-verfahren-1"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "182744004",
+                "system": "http://snomed.info/sct",
+                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+                "display": "Extracorporeal circulation procedure (procedure)"
+              }
+            ]
+          }
+        ],
+        "effectivePeriod": {
+          "start": "2024-02-20T10:00:00+01:00",
+          "end": "2024-02-20T13:00:00+01:00"
+        },
+        "valueQuantity": {
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]",
+          "value": 20
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "386534000",
+              "system": "http://snomed.info/sct",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+              "display": "Arterial blood pressure (observable entity)"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-1"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-patient-1-encounter-1"
+        },
+        "device": {
+          "reference": "DeviceMetric/mii-exa-test-data-patient-1-ecmo-gemessene-parameter"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "DeviceMetric/mii-exa-test-data-patient-1-ecmo-gemessene-parameter"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/DeviceMetric/mii-exa-test-data-patient-1-ecmo-gemessene-parameter",
+      "resource": {
+        "resourceType": "DeviceMetric",
+        "id": "mii-exa-test-data-patient-1-ecmo-gemessene-parameter",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/devicemetric-eingestellte-gemessene-parameter-extrakorporale-verfahren"
+          ]
+        },
+        "type": {
+          "coding": [
+            {
+              "code": "182744004",
+              "system": "http://snomed.info/sct",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+              "display": "Extracorporeal circulation procedure (procedure)"
+            }
+          ]
+        },
+        "category": "measurement"
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "DeviceMetric/mii-exa-test-data-patient-1-ecmo-eingestellte-parameter"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/DeviceMetric/mii-exa-test-data-patient-1-ecmo-eingestellte-parameter",
+      "resource": {
+        "resourceType": "DeviceMetric",
+        "id": "mii-exa-test-data-patient-1-ecmo-eingestellte-parameter",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/devicemetric-eingestellte-gemessene-parameter-extrakorporale-verfahren"
+          ]
+        },
+        "type": {
+          "coding": [
+            {
+              "code": "182744004",
+              "system": "http://snomed.info/sct",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+              "display": "Extracorporeal circulation procedure (procedure)"
+            }
+          ]
+        },
+        "category": "setting"
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-patient-1-muv-arterieller-blutdruck"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-1-muv-arterieller-blutdruck",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-1-muv-arterieller-blutdruck",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/blutdruck"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "75367002",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+            },
+            {
+              "system": "http://loinc.org",
+              "code": "85354-9",
+              "display": "Blood pressure panel with all children optional"
+            }
+          ]
+        },
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic blood pressure"
+                },
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "271649006",
+                  "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+                  "display": "Systolic blood pressure (observable entity)"
+                },
+                {
+                  "system": "urn:iso:std:iso:11073:10101",
+                  "code": "150017",
+                  "display": "Systolic blood pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]",
+              "value": 120,
+              "unit": "millimeter Mercury column"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8478-0",
+                  "display": "Mean blood pressure"
+                },
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "6797001",
+                  "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+                  "display": "Mean blood pressure (observable entity)"
+                },
+                {
+                  "system": "urn:iso:std:iso:11073:10101",
+                  "code": "150019",
+                  "display": "Mean blood pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]",
+              "value": 90,
+              "unit": "millimeter Mercury column"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic blood pressure"
+                },
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "271650006",
+                  "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+                  "display": "Diastolic blood pressure (observable entity)"
+                },
+                {
+                  "system": "urn:iso:std:iso:11073:10101",
+                  "code": "150018",
+                  "display": "Diastolic blood pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]",
+              "value": 80,
+              "unit": "millimeter Mercury column"
+            }
+          }
+        ],
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-1"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-patient-1-encounter-1"
+        },
+        "effectiveDateTime": "2024-02-20T10:00:00+01:00"
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-patient-1-muv-atemfrequenz"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-1-muv-atemfrequenz",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-1-muv-atemfrequenz",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/atemfrequenz"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "86290005",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+              "display": "Respiratory rate (observable entity)"
+            },
+            {
+              "system": "http://loinc.org",
+              "code": "9279-1",
+              "display": "Respiratory Rate"
+            }
+          ]
+        },
+        "effectivePeriod": {
+          "start": "2024-02-20T10:00:00+01:00",
+          "end": "2024-02-20T11:00:00+01:00"
+        },
+        "valueQuantity": {
+          "system": "http://unitsofmeasure.org",
+          "code": "/min",
+          "value": 15,
+          "unit": "breaths per minute"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-1"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-patient-1-encounter-1"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-patient-1-muv-herzfrequenz"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-1-muv-herzfrequenz",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-1-muv-herzfrequenz",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/herzfrequenz"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8867-4",
+              "display": "Heart Rate"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "364075005",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+              "display": "Heart rate (observable entity)"
+            },
+            {
+              "system": "urn:iso:std:iso:11073:10101",
+              "code": "147842",
+              "display": "Heart Rate"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "system": "http://unitsofmeasure.org",
+          "code": "/min",
+          "value": 70,
+          "unit": "beats per minute"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-1"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-patient-1-encounter-1"
+        },
+        "effectiveDateTime": "2024-02-20T10:00:00+01:00"
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-patient-1-icu-muv-koerpergewicht"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-1-icu-muv-koerpergewicht",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-1-icu-muv-koerpergewicht",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/koerpergewicht"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "29463-7",
+              "display": "Body weight"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "27113001",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+              "display": "Body weight (observable entity)"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "system": "http://unitsofmeasure.org",
+          "code": "kg",
+          "value": 70,
+          "unit": "kilogram"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-1"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-patient-1-encounter-1"
+        },
+        "effectiveDateTime": "2024-02-20T10:00:00+01:00"
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-patient-1-muv-koerpergroesse"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-1-muv-koerpergroesse",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-1-muv-koerpergroesse",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/koerpergroesse"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "8302-2",
+              "system": "http://loinc.org",
+              "display": "Body height"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "1153637007",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+              "display": "Body height (observable entity)"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "system": "http://unitsofmeasure.org",
+          "unit": "centimeter",
+          "code": "cm",
+          "value": 170
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-1"
+        },
+        "effectiveDateTime": "2024-02-20T10:00:00+01:00"
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-patient-1-temp-trommelfell"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-1-temp-trommelfell",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-1-temp-trommelfell",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/koerpertemperatur-trommelfell"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8333-7",
+              "display": "Tympanic membrane temperature"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "415974002",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+              "display": "Core body temperature measured at tympanic membrane (observable entity)"
+            },
+            {
+              "system": "http://loinc.org",
+              "code": "8310-5",
+              "display": "Body temperature"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "system": "http://unitsofmeasure.org",
+          "code": "Cel",
+          "value": 37,
+          "unit": "Celsius"
+        },
+        "bodySite": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "42859004",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+              "display": "Tympanic membrane structure (body structure)"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-1"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-patient-1-encounter-1"
+        },
+        "effectiveDateTime": "2024-02-20T10:00:00+01:00"
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-patient-1-muv-kopfumfang"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-1-muv-kopfumfang",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-1-muv-kopfumfang",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/kopfumfang"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "9843-4",
+              "display": "Head Occipital-frontal circumference"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "363811000",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+              "display": "Head circumference measure (observable entity)"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "system": "http://unitsofmeasure.org",
+          "unit": "centimeter",
+          "code": "cm",
+          "value": 55
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-1"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-patient-1-encounter-1"
+        },
+        "effectiveDateTime": "2024-02-20T10:00:00+01:00"
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-patient-1-muv-spo2-pulsoxymetrie"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-1-muv-spo2-pulsoxymetrie",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-1-muv-spo2-pulsoxymetrie",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/sauerstoffsaettigung-im-blut-preduktal-durch-pulsoxymetrie"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "59407-7",
+              "display": "Oxygen saturation in Blood Preductal by Pulse oximetry"
+            },
+            {
+              "system": "urn:iso:std:iso:11073:10101",
+              "code": "160296",
+              "display": "Preductal SpO2"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "system": "http://unitsofmeasure.org",
+          "code": "%",
+          "value": 96,
+          "unit": "percent"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-1"
+        },
+        "effectiveDateTime": "2024-02-20T10:00:00+01:00"
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
         "url": "Patient/mii-exa-test-data-patient-2"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Patient/mii-exa-test-data-patient-2",
@@ -6005,6 +6857,7 @@
                 }
               ]
             },
+            "system": "https://www.signal-iduna.de/fhir/sid/pkv",
             "value": "3770010809"
           }
         ],

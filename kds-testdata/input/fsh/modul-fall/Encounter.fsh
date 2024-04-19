@@ -1,7 +1,7 @@
 // Encounter Patient-1
 Instance: mii-exa-test-data-patient-1-encounter-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung
-//* meta.profile[0] = "https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung|2024.0.0"
+//* meta.profile[0] = "https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung|2024.0.1"
 * insert AddEncounter(MII_0000001, finished, IMP, einrichtungskontakt, normalstationaer, mii-exa-test-data-patient-1, 0100)
 * period.start = "2024-02-14"
 * period.end = "2024-02-22"
@@ -36,7 +36,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-fall/Str
 
 Instance: mii-exa-test-data-patient-1-encounter-2
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung
-//* meta.profile[0] = "https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung|2024.0.0"
+//* meta.profile[0] = "https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung|2024.0.1"
 * insert AddEncounter(MII_0000002, finished, IMP, versorgungsstellenkontakt, operation, mii-exa-test-data-patient-1, 2000)
 * period.start = "2024-02-20T10:00:00+01:00"
 * period.end = "2024-02-20T13:00:00+01:00"
@@ -45,7 +45,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-fall/Str
 // Encounter Patient-3
 Instance: mii-exa-test-data-patient-3-encounter-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung
-//* meta.profile[0] = "https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung|2024.0.0"
+//* meta.profile[0] = "https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung|2024.0.1"
 * insert AddEncounter(MII_0000003, finished, IMP, einrichtungskontakt, normalstationaer, mii-exa-test-data-patient-3, 0100)
 * period.start = "2022-04-02"
 * period.end = "2022-04-22"

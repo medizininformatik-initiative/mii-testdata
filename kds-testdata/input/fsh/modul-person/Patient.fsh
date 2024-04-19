@@ -67,6 +67,7 @@ Usage: #example
 * identifier[versichertenId_GKV].assigner.identifier.system = "http://fhir.de/sid/arge-ik/iknr"
 * identifier[versichertennummer_pkv].use = #secondary
 * identifier[versichertennummer_pkv].type = http://fhir.de/CodeSystem/identifier-type-de-basis#PKV
+* identifier[versichertennummer_pkv].system = "https://www.signal-iduna.de/fhir/sid/pkv"
 * identifier[versichertennummer_pkv].value = "3770010809"
 * identifier[versichertennummer_pkv].assigner.display = "Signal Iduna"
 * name[name].use = #official
