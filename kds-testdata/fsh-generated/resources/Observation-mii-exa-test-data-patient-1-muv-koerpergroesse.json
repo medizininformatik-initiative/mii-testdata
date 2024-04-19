@@ -41,5 +41,8 @@
   "subject": {
     "reference": "Patient/mii-exa-test-data-patient-1"
   },
+  "encounter": {
+    "reference": "Encounter/mii-exa-test-data-patient-1-encounter-1"
+  },
   "effectiveDateTime": "2024-02-20T10:00:00+01:00"
 }

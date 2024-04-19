@@ -605,7 +605,7 @@
     "fshType": "Instance",
     "fshFile": "modul-icu/MonitoringUndVitaldaten/Koerpergroesse.fsh",
     "startLine": 1,
-    "endLine": 11
+    "endLine": 12
   },
   {
     "outputFile": "Observation-mii-exa-test-data-patient-1-muv-kopfumfang.json",
@@ -621,7 +621,7 @@
     "fshType": "Instance",
     "fshFile": "modul-icu/MonitoringUndVitaldaten/SauerstoffsaettigungPreduktalPulsoxymetrie.fsh",
     "startLine": 1,
-    "endLine": 11
+    "endLine": 12
   },
   {
     "outputFile": "Observation-mii-exa-test-data-patient-1-patho-biopsy-site-a.json",
