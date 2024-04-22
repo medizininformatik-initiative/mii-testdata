@@ -1,0 +1,57 @@
+{
+  "resourceType": "Observation",
+  "id": "mii-exa-test-data-patient-1-ecmo-sauerstoffgasfluss",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/sauerstoffgasfluss"
+    ]
+  },
+  "partOf": [
+    {
+      "reference": "Procedure/mii-exa-test-data-patient-1-extrakorporalen-verfahren-1"
+    }
+  ],
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "182744004",
+          "system": "http://snomed.info/sct",
+          "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+          "display": "Extracorporeal circulation procedure (procedure)"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "79063001",
+        "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+        "display": "Gas flow rate (v) (observable entity)"
+      },
+      {
+        "system": "http://loinc.org",
+        "code": "19941-4",
+        "display": "Oxygen gas flow Oxygen delivery system"
+      }
+    ]
+  },
+  "effectivePeriod": {
+    "start": "2024-02-20T10:00:00+01:00",
+    "end": "2024-02-20T13:00:00+01:00"
+  },
+  "valueQuantity": {
+    "system": "http://unitsofmeasure.org",
+    "code": "L/min",
+    "value": 2
+  },
+  "status": "final",
+  "subject": {
+    "reference": "Patient/mii-exa-test-data-patient-1"
+  },
+  "device": {
+    "reference": "DeviceMetric/mii-exa-test-data-patient-1-ecmo-eingestellte-parameter"
+  }
+}

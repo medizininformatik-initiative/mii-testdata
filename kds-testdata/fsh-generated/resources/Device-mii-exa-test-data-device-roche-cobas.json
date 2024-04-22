@@ -1,0 +1,12 @@
+{
+  "resourceType": "Device",
+  "id": "mii-exa-test-data-device-roche-cobas",
+  "deviceName": [
+    {
+      "name": "cobas",
+      "type": "manufacturer-name"
+    }
+  ],
+  "status": "active",
+  "manufacturer": "Roche"
+}

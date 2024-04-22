@@ -1,0 +1,55 @@
+{
+  "resourceType": "Medication",
+  "id": "mii-exa-test-data-medication-propofol",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/atc",
+        "code": "N01AX10",
+        "version": "2023",
+        "display": "Propofol"
+      }
+    ]
+  },
+  "form": {
+    "coding": [
+      {
+        "system": "http://standardterms.edqm.eu",
+        "code": "50021000",
+        "display": "Emulsion for injection/infusion"
+      }
+    ]
+  },
+  "ingredient": [
+    {
+      "itemCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://fhir.de/CodeSystem/ask",
+            "code": "22898",
+            "display": "Propofol"
+          },
+          {
+            "system": "http://fdasis.nlm.nih.gov",
+            "code": "YI7VU623SF"
+          },
+          {
+            "system": "urn:oid:2.16.840.1.113883.6.61",
+            "code": "2078-54-8"
+          },
+          {
+            "system": "http://snomed.info/sct",
+            "code": "387423006",
+            "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+            "display": "Propofol (substance)"
+          }
+        ]
+      }
+    }
+  ]
+}

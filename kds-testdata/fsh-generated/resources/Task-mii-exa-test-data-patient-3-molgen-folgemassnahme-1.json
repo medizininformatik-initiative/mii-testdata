@@ -1,0 +1,33 @@
+{
+  "resourceType": "Task",
+  "id": "mii-exa-test-data-patient-3-molgen-folgemassnahme-1",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/empfohlene-folgemassnahme",
+      "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/followup-recommendation"
+    ]
+  },
+  "basedOn": [
+    {
+      "reference": "ServiceRequest/mii-exa-test-data-patient-3-molgen-anforderung-1"
+    }
+  ],
+  "status": "requested",
+  "intent": "proposal",
+  "code": {
+    "coding": [
+      {
+        "code": "LA14020-4",
+        "system": "http://loinc.org",
+        "display": "Genetic counseling recommended"
+      }
+    ]
+  },
+  "description": "Genetische Beratung empfohlen mit Dr. Rosalind Franklin",
+  "for": {
+    "reference": "Patient/mii-exa-test-data-patient-3"
+  },
+  "reasonReference": {
+    "reference": "Observation/mii-exa-test-data-patient-3-molgen-therapeutische-implikation-1"
+  }
+}
