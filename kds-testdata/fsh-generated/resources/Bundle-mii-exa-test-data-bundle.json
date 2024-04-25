@@ -1807,6 +1807,25 @@
     {
       "request": {
         "method": "PUT",
+        "url": "Device/mii-exa-test-data-device-roche-cobas"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Device/mii-exa-test-data-device-roche-cobas",
+      "resource": {
+        "resourceType": "Device",
+        "id": "mii-exa-test-data-device-roche-cobas",
+        "deviceName": [
+          {
+            "name": "cobas",
+            "type": "manufacturer-name"
+          }
+        ],
+        "status": "active",
+        "manufacturer": "Roche"
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
         "url": "Device/mii-exa-test-data-device-roche-cobas-c303"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Device/mii-exa-test-data-device-roche-cobas-c303",

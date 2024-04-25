@@ -29,6 +29,7 @@ InstanceOf: Bundle
 * insert AddBundleEntry(mii-exa-test-data-patient-1-medstatement-2, MedicationStatement)
 * insert AddBundleEntry(mii-exa-test-data-patient-1-specimen-1, Specimen)
 * insert AddBundleEntry(mii-exa-test-data-patient-1-substance-1, Substance)
+* insert AddBundleEntry(mii-exa-test-data-device-roche-cobas, Device)
 * insert AddBundleEntry(mii-exa-test-data-device-roche-cobas-c303, Device)
 * insert AddBundleEntry(mii-exa-test-data-organization-biobank-charite, Organization)
 * insert AddBundleEntry(mii-exa-test-data-patient-1-labreport-1, DiagnosticReport)
