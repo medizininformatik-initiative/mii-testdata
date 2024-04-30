@@ -83,3 +83,38 @@ jobs:
         path: ./kds-testdata/fsh-generated
         compression-level: 9
         if-no-files-found: error
+
+  release:
+    runs-on: ubuntu-latest
+    if: ${{ startsWith(github.ref, 'refs/tags/v') }}
+    needs:
+    - build-kds
+    steps:
+    - name: Checkout Project
+      uses: actions/checkout@v4
+
+    - name: Download build artifacts
+      uses: actions/download-artifact@v4
+      with:
+        path: artifacts
+
+    - name: Zip each artifact
+      run: |
+        for a in *
+        do
+          zip -9qqr "$a.zip" "$a"
+        done
+      working-directory: artifacts
+
+    - name: Prepare Version
+      id: prep-version
+      run: echo "version=${GITHUB_REF#refs/tags/}" >> $GITHUB_OUTPUT
+
+    - name: Release
+      uses: softprops/action-gh-release@v1
+      with:
+        name: "MII Testdata - ${{ steps.prep-version.outputs.version }}"
+        draft: true
+        generate_release_notes: true
+        files: artifacts/*.zip
+        fail_on_unmatched_files: true
