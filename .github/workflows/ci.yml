@@ -1,0 +1,120 @@
+name: Build Testdata
+
+on:
+  push:
+    branches:
+    - main
+    tags:
+    - v[0-9]+.[0-9]+.[0-9]+**
+  pull_request:
+    branches:
+    - main
+
+jobs:
+  build-kds:
+    runs-on: ubuntu-latest
+    outputs:
+      artifact-url: ${{ steps.upload-artifact.outputs.artifact-url }}
+    steps:
+    - name: Checkout Project
+      uses: actions/checkout@v4
+
+    - name: Cache FHIR Packages
+      id: fhir-cache
+      uses: actions/cache@v4
+      with:
+        path: "~/.fhir"
+        key: fhir-cache
+
+    - name: Install jq, npm and yq
+      run: |
+        sudo add-apt-repository ppa:rmescandon/yq >/dev/null
+        sudo apt-get update -qqq
+        sudo apt-get install -qqqy npm jq yq > /dev/null
+
+    - name: Install sushi
+      run: npm install -g fsh-sushi
+
+    - name: Initial build
+      id: initial-build
+      run: |
+        sushi build --log-level warn .
+        echo BUILD_ERRORS="$?" >> "$GITHUB_OUTPUT"
+      working-directory: ./kds-testdata
+
+    - uses: actions/setup-dotnet@v4
+      if: ${{ steps.initial-build.outputs.BUILD_ERRORS != 0 }}
+      with:
+        dotnet-version: '6'
+
+    - name: Install firely
+      if: ${{ steps.initial-build.outputs.BUILD_ERRORS != 0 }}
+      run: dotnet tool install -g firely.terminal
+
+    - name: Create FHIR package snapshots
+      if: ${{ steps.initial-build.outputs.BUILD_ERRORS != 0 }}
+      run: for dep in $(yq eval '.' sushi-config.yaml -o json | jq -r '.dependencies | keys[]'); do fhir inflate --package "$dep"; done
+      working-directory: ./kds-testdata
+
+    - name: Check if KDS Laborbefund v1.0.7-alpha1 is patched
+      if: ${{ steps.initial-build.outputs.BUILD_ERRORS != 0 }}
+      id: check-patched
+      run: echo PATCHED="$(jq -c '.snapshot.element[] | select(.id == "Observation.value[x]") | has("slicing")'  \
+           "$HOME/.fhir/packages/de.medizininformatikinitiative.kerndatensatz.laborbefund#1.0.7-alpha1/package/Profile-ObservationLab.json" > /tmp/Profile-ObservationLab.json)" \
+           >> "$GITHUB_OUTPUT"
+
+    - name: Apply bugfix for FHIR package KDS Laborbefund v1.0.7-alpha1
+      if: ${{ steps.initial-build.outputs.BUILD_ERRORS != 0 && steps.check-patched.outputs.PATCHED != 'true' }}
+      run: |
+        jq -c '(.snapshot.element[] | select(.id == "Observation.value[x]") ) += {"slicing":{"discriminator":[{"type":"type","path":"$this"}],"ordered":false,"rules":"open"}}' \
+           "$HOME/.fhir/packages/de.medizininformatikinitiative.kerndatensatz.laborbefund#1.0.7-alpha1/package/Profile-ObservationLab.json" > /tmp/Profile-ObservationLab.json
+        mv /tmp/Profile-ObservationLab.json "$HOME/.fhir/packages/de.medizininformatikinitiative.kerndatensatz.laborbefund#1.0.7-alpha1/package/Profile-ObservationLab.json"
+
+    - name: Final build
+      if: ${{ steps.initial-build.outputs.BUILD_ERRORS != 0 }}
+      run: sushi build --log-level warn  .
+      working-directory: ./kds-testdata
+
+    - name: Upload generated FHIR resources as artifact
+      id: upload-artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: kds-testdata
+        path: ./kds-testdata/fsh-generated
+        compression-level: 9
+        if-no-files-found: error
+
+  release:
+    runs-on: ubuntu-latest
+    if: ${{ startsWith(github.ref, 'refs/tags/v') }}
+    needs:
+    - build-kds
+    steps:
+    - name: Checkout Project
+      uses: actions/checkout@v4
+
+    - name: Download build artifacts
+      uses: actions/download-artifact@v4
+      with:
+        path: artifacts
+
+    - name: Zip each artifact
+      run: |
+        for a in *
+        do
+          zip -9qqr "$a.zip" "$a"
+        done
+      working-directory: artifacts
+
+    - name: Prepare Version
+      id: prep-version
+      run: echo "version=${GITHUB_REF#refs/tags/}" >> $GITHUB_OUTPUT
+
+    - name: Release
+      uses: softprops/action-gh-release@v1
+      with:
+        name: "MII Testdata - ${{ steps.prep-version.outputs.version }}"
+        draft: true
+        generate_release_notes: true
+        files: artifacts/*.zip
+        fail_on_unmatched_files: true
