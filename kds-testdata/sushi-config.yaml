@@ -9,7 +9,7 @@ canonical: https://www.medizininformatik-initiative.de/fhir/testdata
 # title: Example Title
 # description: Example Implementation Guide for getting started with SUSHI
 # status: draft # draft | active | retired | unknown
-version: 0.1.0
+version: 2024.0.0
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 # copyrightYear: 2024+
 # releaseLabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
