@@ -74,11 +74,15 @@ jobs:
       run: sushi build --log-level warn  .
       working-directory: ./kds-testdata
 
+    - name: Get KDS Testdata Version
+      id: kds-version
+      run: echo KDS_VERSION="$(yq eval '.version' sushi-config.yaml | jq -r '.')" >> "$GITHUB_OUTPUT"
+
     - name: Upload generated FHIR resources as artifact
       id: upload-artifact
       uses: actions/upload-artifact@v4
       with:
-        name: kds-testdata
+        name: "kds-testdata-${{ steps.kds-version.outputs.KDS_VERSION }}"
         path: ./kds-testdata/fsh-generated
         compression-level: 9
         if-no-files-found: error
