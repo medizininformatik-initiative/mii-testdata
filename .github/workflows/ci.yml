@@ -76,7 +76,8 @@ jobs:
 
     - name: Get KDS Testdata Version
       id: kds-version
-      run: echo KDS_VERSION="$(yq eval '.version' sushi-config.yaml | jq -r '.')" >> "$GITHUB_OUTPUT"
+      run: echo KDS_VERSION="$(yq eval '.' sushi-config.yaml -o json | jq -r '.version')" >> "$GITHUB_OUTPUT"
+      working-directory: ./kds-testdata
 
     - name: Upload generated FHIR resources as artifact
       id: upload-artifact
