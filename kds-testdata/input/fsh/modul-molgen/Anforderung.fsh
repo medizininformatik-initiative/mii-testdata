@@ -14,5 +14,5 @@ Usage: #example
 * authoredOn = "2022-04-07"
 * reasonCode = $sct#447886005 "Adenocarcinoma of anorectum (disorder)"
 * specimen = Reference(mii-exa-test-data-patient-3-specimen-1)
-* supportingInfo[familienanamnese] = Reference(mii-exa-molgen-family-member-history-1)
+* supportingInfo[familienanamnese] = Reference(mii-exa-test-data-patient-3-molgen-family-member-history-1)
 
