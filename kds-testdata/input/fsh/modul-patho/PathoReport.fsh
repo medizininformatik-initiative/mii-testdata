@@ -20,6 +20,7 @@ Usage: #example
 * result[macroscopic-observations] = Reference(mii-exa-test-data-patient-1-patho-macro-grouper-b)
 * result[microscopic-observations] = Reference(mii-exa-test-data-patient-1-patho-micro-grouper-a)
 * result[diagnostic-conclusion] = Reference(mii-exa-test-data-patient-1-patho-diagnostic-conclusion-grouper)
+* imagingStudy = Reference(mii-exa-test-data-patient-1-patho-imagingstudy-1)
 * conclusion = "Mäßig differenziertes azinäres Adenokarzinom der Prostata, ISUP-Gradgruppe 2"
 * conclusionCode = $sct#399490008  
 * effectiveDateTime = "2021-06-01"
@@ -82,6 +83,9 @@ Description: "Example for an MII_PR_Patho_Composition"
 * custodian = Reference(mii-exa-test-data-organization-charite)
 * attester[legal].mode = #legal
 * attester[legal].party = Reference(mii-exa-test-data-organization-charite)
+* relatesTo[0].code = #appends
+* relatesTo[0].targetReference.reference.extension[0].url = "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+* relatesTo[0].targetReference.reference.extension[0].valueCode = #masked
 * event.period.start = "2024-02-16"
 * event.period.end = "2024-02-16"
 * section[patho-diagnostic-report]
@@ -103,3 +107,10 @@ Description: "Example for an MII_PR_Patho_Composition"
     </table>
   </div>"
   * entry = Reference(mii-exa-test-data-patient-1-patho-report-1)
+
+Instance: mii-exa-test-data-patient-1-patho-imagingstudy-1
+InstanceOf: ImagingStudy
+Usage: #example
+* status = #unknown
+* subject = Reference(mii-exa-test-data-patient-1)
+* encounter = Reference(mii-exa-test-data-patient-1-encounter-1)

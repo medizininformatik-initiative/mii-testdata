@@ -87,3 +87,22 @@ Usage: #example
 * address.state = "DE-BE"
 * address.postalCode = "10785"
 * address.country = "DE"
+
+//Patient-4
+Instance: mii-exa-test-data-patient-4
+InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/PatientPseudonymisiert
+Usage: #example
+//* meta.profile[0] = "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/PatientPseudonymisiert|2024.0.0"
+* meta.profile[+] = "http://fhir.de/ConsentManagement/StructureDefinition/Patient"
+* identifier[PseudonymisierterIdentifier].type = $v3-ObservationValue#PSEUDED 
+* identifier[PseudonymisierterIdentifier].system = "https://www.charite.de/fhir/sid/pseudonyme"
+* identifier[PseudonymisierterIdentifier].value = "CP5712840020128"
+* gender = #male
+* birthDate = "1962"
+* address[Strassenanschrift].type = #both
+* address[Strassenanschrift].line.extension[0].url = "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+* address[Strassenanschrift].line.extension[=].valueCode = #masked
+* address[Strassenanschrift].city.extension[0].url = "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+* address[Strassenanschrift].city.extension[=].valueCode = #masked
+* address[Strassenanschrift].postalCode = "10"
+* address[Strassenanschrift].country = "DE"

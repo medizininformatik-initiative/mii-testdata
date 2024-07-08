@@ -3,6 +3,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/Struc
 Usage: #example
 //* meta.profile = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/devicemetric-eingestellte-gemessene-parameter-extrakorporale-verfahren|1.0.0"
 * type = $sct#182744004 "Extracorporeal circulation procedure (procedure)"
+* source = Reference(mii-exa-test-data-patient-1-ecmo-dialysis-device)
 * category = #setting
 
 Instance: mii-exa-test-data-patient-1-ecmo-gemessene-parameter
@@ -10,4 +11,5 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/Struc
 Usage: #example
 //* meta.profile = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/devicemetric-eingestellte-gemessene-parameter-extrakorporale-verfahren|1.0.0"
 * type = $sct#182744004 "Extracorporeal circulation procedure (procedure)"
+* source = Reference(mii-exa-test-data-patient-1-ecmo-dialysis-device)
 * category = #measurement

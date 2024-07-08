@@ -45,3 +45,28 @@ Usage: #example
 * manufacturer = "Illumina"
 * deviceName.name = "MiSeq"
 * deviceName.type = $DeviceNameType#manufacturer-name
+
+// Patient-4
+Instance: mii-exa-test-data-patient-4-molgen-variante-1
+InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/variante
+Usage: #example
+//* meta.profile = "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/variant"
+* basedOn = Reference(mii-exa-test-data-patient-4-molgen-anforderung-1)
+* status = #final
+* category[labCategory] = $observation-category#laboratory "Laboratory"
+* code = $loinc#69548-6 "Genetic variant assessment"
+* subject = Reference(mii-exa-test-data-patient-4)
+* valueCodeableConcept = $loinc#LA9633-4 "Present"
+* method.coding[0] = $loinc#LA26398-0 "Sequencing"
+* specimen = Reference(mii-exa-test-data-patient-4-specimen-1)
+* device = Reference(mii-exa-test-data-molgen-device-sequencer)
+* component[gene-studied].valueCodeableConcept = $HGNC#HGNC:2509 "CTNNA1"
+* component[transcript-ref-seq].valueCodeableConcept = $RefSeq#NM_001903.5
+* component[coding-hgvs].valueCodeableConcept = $HGVS#NM_001903.5:c.1030del
+* component[genomic-hgvs].valueCodeableConcept = $HGVS#NC_000005.9:g.138163372del
+* component[genomic-ref-seq].valueCodeableConcept = $RefSeq#NC_000005.9
+* component[protein-hgvs].valueCodeableConcept = $HGVS#p.(Leu344CysfsTer25)
+* component[allelic-state].valueCodeableConcept = $loinc#LA6706-1 "Heterozygous"
+* component[coding-change-type].valueCodeableConcept = $SO#SO:0000159 "deletion"
+* component[amino-acid-change-type].valueCodeableConcept = $loinc#LA6694-9 "Frameshift"
+* component[cytogenetic-location].valueCodeableConcept = $ChromLoc#5q31.2

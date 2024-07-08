@@ -130,3 +130,15 @@ Description: "Example for diagnostic conclusion"
 * category[section-type].coding = $loinc#22637-3 
 * code = $loinc#94734-1 "Prostate cancer grade group [Score] in Prostate tumor Qualitative"
 * valueCodeableConcept = $loinc#LA9630-0 "Grade 2"
+
+// Patient-3
+Instance: mii-exa-test-data-patient-3-patho-fnding-1
+InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding
+Usage: #example
+//* meta.profile[0] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding|1.0.0"
+* status = #final
+* category[laboratory-category].coding = $observation-category#laboratory
+* category[section-type].coding = $loinc#22637-3 
+* code = $loinc#32996-1 "HER2 [Mass/volume] in Serum"
+* valueRatio.numerator = 16 'ng'
+* valueRatio.denominator = 1 'mL'

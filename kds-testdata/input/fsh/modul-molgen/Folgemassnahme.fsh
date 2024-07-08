@@ -11,3 +11,4 @@ Usage: #example
 * description = "Genetische Beratung empfohlen mit Dr. Rosalind Franklin"
 * for = Reference(mii-exa-test-data-patient-3)
 * reasonReference = Reference(mii-exa-test-data-patient-3-molgen-therapeutische-implikation-1)
+* reasonCode = $sct#447886005 "Adenocarcinoma of anorectum (disorder)"
