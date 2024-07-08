@@ -14,6 +14,7 @@ Description: "Pathology Service Request Example"
 * subject = Reference(mii-exa-test-data-patient-1)
 * encounter = Reference(mii-exa-test-data-patient-1-encounter-1)
 * requester = Reference(mii-exa-test-data-organization-charite)
+* reasonCode = $sct#266987004 "History of malignant neoplasm (situation)"
 * code = $sct#44977009 "Cytopathology procedure, cell block preparation (procedure)"
 * supportingInfo[anamnesis] = Reference(mii-exa-test-data-patient-1-patho-history-of-present-illness)
 * supportingInfo[activeProblems] = Reference(mii-exa-test-data-patient-1-patho-active-problems-list)

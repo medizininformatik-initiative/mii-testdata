@@ -117,6 +117,7 @@ Description: "HE-stained slide from Prostate tru-cut biopsy sample (specimen)"
 * processing[=].procedure.extension.valueUrl = "#faerbung"
 * processing[=].additive[+] = Reference(mii-exa-test-data-patient-1-patho-hematoxylin-stain)
 * processing[=].additive[+] = Reference(mii-exa-test-data-patient-1-patho-eosin-y)
+* processing[=].timePeriod.start = "2021-01-29T07:15:00Z"
 * container[+] 
   * type = $sct#433466003 "Microscope slide (physical object)"
   * additiveReference = Reference(mii-exa-test-data-patient-1-patho-microscope-slide-mounting-med)

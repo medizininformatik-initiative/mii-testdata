@@ -10,6 +10,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur
 * extension[durchfuehrungsabsicht].url = "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Durchfuehrungsabsicht"
 * extension[durchfuehrungsabsicht].valueCoding = $sct#262202000
 * encounter = Reference(mii-exa-test-data-patient-1-encounter-1)
+* recorder = Reference(mii-exa-test-data-practitioner-role-physician-1)
 
 Instance: mii-exa-test-data-patient-1-prozedur-2
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Procedure

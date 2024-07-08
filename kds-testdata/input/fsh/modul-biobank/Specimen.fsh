@@ -4,6 +4,8 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/S
 //* meta.profile[0] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|1.0.8"
 * extension[gehoertZu].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/VerwaltendeOrganisation"
 * extension[gehoertZu].valueReference = Reference(mii-exa-test-data-organization-biobank-charite)
+* extension[festgestellteDiagnose].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Diagnose"
+* extension[festgestellteDiagnose].valueReference = Reference(mii-exa-test-data-patient-1-diagnose-1)
 * identifier.system = "https://www.charite.de/fhir/sid/Bioproben"
 * identifier.value = "BP_000001"
 * status = #available
@@ -53,3 +55,26 @@ Usage: #example
 * identifier.value = "BP_000002"
 * status = #available
 * subject = Reference(mii-exa-test-data-patient-3)
+
+//Patient-4
+Instance: mii-exa-test-data-patient-4-specimen-1
+InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore
+Usage: #example
+* status = #available
+* type = $sct#445295009 "Blood specimen with edetic acid (specimen)"
+* subject = Reference(mii-exa-test-data-patient-4)
+* receivedTime = "2022-11-30"
+* collection.collectedDateTime = "2022-11-30"
+* identifier.system = "https://www.charite.de/fhir/sid/bioproben"
+* identifier.value = "BP_00070024"
+
+Instance: mii-exa-test-data-patient-4-specimen-2
+InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore
+Usage: #example
+* status = #available
+* type = $sct#445295009 "Blood specimen with edetic acid (specimen)"
+* subject = Reference(mii-exa-test-data-patient-4)
+* receivedTime = "2022-11-30"
+* collection.collectedDateTime = "2022-11-30"
+* identifier.system = "https://www.charite.de/fhir/sid/bioproben"
+* identifier.value = "BP_00070025"
