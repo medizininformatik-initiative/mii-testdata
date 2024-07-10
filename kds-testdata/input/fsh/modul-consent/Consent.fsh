@@ -24,6 +24,10 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/modul-consent/Struc
 * provision.provision[+].type = #permit
 * provision.provision[=].period.start = "2024-02-23"
 * provision.provision[=].period.end = "2054-01-31"
+* provision.provision[=].code = $mii-cs-consent-policy#2.16.840.1.113883.3.1937.777.24.5.3.9 "MDAT zusammenfuehren Dritte"
+* provision.provision[+].type = #permit
+* provision.provision[=].period.start = "2024-02-23"
+* provision.provision[=].period.end = "2054-01-31"
 * provision.provision[=].code = $mii-cs-consent-policy#2.16.840.1.113883.3.1937.777.24.5.3.20 "BIOMAT lagern verarbeiten"
 * provision.provision[+].type = #permit
 * provision.provision[=].period.start = "2024-02-23"

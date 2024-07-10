@@ -9,7 +9,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-person/S
 * insert AddGender(male)
 * birthDate = "1977-05-24"
 * deceasedDateTime = "2024-02-22"
-* address
+* address[Strassenanschrift]
   * extension
     * url = "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-precinct"
     * valueString = "Malchow"
@@ -81,12 +81,17 @@ Usage: #example
 * gender = #female
 * birthDate = "1968-09-13"
 * deceasedBoolean = false
-* address.type = #both
-* address.line = "Schöneberger Ufer 22"
-* address.city = "Berlin"
-* address.state = "DE-BE"
-* address.postalCode = "10785"
-* address.country = "DE"
+* address[Strassenanschrift].type = #both
+* address[Strassenanschrift].line = "Schöneberger Ufer 22"
+* address[Strassenanschrift].city = "Berlin"
+* address[Strassenanschrift].state = "DE-BE"
+* address[Strassenanschrift].postalCode = "10785"
+* address[Strassenanschrift].country = "DE"
+* address[Postfach].type = #postal 
+* address[Postfach].line.extension[Postfach].valueString = "Postfach-252618"
+* address[Postfach].city = "Berlin"
+* address[Postfach].postalCode = "10178"
+* address[Postfach].country = "DE"
 
 //Patient-4
 Instance: mii-exa-test-data-patient-4
