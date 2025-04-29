@@ -45,7 +45,7 @@ jobs:
     - uses: actions/setup-dotnet@v4
       if: ${{ steps.initial-build.outputs.HAD_ERRORS == 'true' }}
       with:
-        dotnet-version: '6'
+        dotnet-version: '8.0.x'
 
     - name: Install firely
       if: ${{ steps.initial-build.outputs.HAD_ERRORS == 'true' }}
