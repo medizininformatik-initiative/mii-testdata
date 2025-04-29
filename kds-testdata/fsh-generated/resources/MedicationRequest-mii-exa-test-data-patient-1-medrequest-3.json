@@ -1,0 +1,65 @@
+{
+  "resourceType": "MedicationRequest",
+  "id": "mii-exa-test-data-patient-1-medrequest-3",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationRequest"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "https://www.charite.de/fhir/sid/MedicationOrders",
+      "value": "MO_0000003"
+    }
+  ],
+  "dosageInstruction": [
+    {
+      "timing": {
+        "event": [
+          "2024-02-20T10:00:00+01:00"
+        ]
+      },
+      "doseAndRate": [
+        {
+          "rateQuantity": {
+            "system": "http://unitsofmeasure.org",
+            "value": 5,
+            "code": "mg/min"
+          }
+        }
+      ],
+      "text": "Propofol 6.5 mg/min IV via Perfusor",
+      "route": {
+        "coding": [
+          {
+            "code": "20045000",
+            "system": "http://standardterms.edqm.eu",
+            "display": "Intravenous use"
+          }
+        ]
+      },
+      "method": {
+        "coding": [
+          {
+            "code": "129331004",
+            "system": "http://snomed.info/sct",
+            "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+            "display": "Perfusion - action (qualifier value)"
+          }
+        ]
+      }
+    }
+  ],
+  "status": "cancelled",
+  "intent": "order",
+  "medicationReference": {
+    "reference": "Medication/mii-exa-test-data-medication-propofol"
+  },
+  "subject": {
+    "reference": "Patient/mii-exa-test-data-patient-1"
+  },
+  "encounter": {
+    "reference": "Encounter/mii-exa-test-data-patient-1-encounter-2"
+  },
+  "authoredOn": "2024-02-20T09:55:00+01:00"
+}

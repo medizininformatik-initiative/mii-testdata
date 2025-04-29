@@ -1,0 +1,76 @@
+{
+  "resourceType": "Procedure",
+  "id": "mii-exa-test-data-patient-1-prozedur-1",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Procedure"
+    ]
+  },
+  "category": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "387713003",
+        "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+      }
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "726427004",
+        "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/ops",
+        "code": "5-323.51",
+        "version": "2023"
+      }
+    ]
+  },
+  "bodySite": [
+    {
+      "coding": [
+        {
+          "code": "44714003",
+          "system": "http://snomed.info/sct",
+          "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+        }
+      ]
+    }
+  ],
+  "note": [
+    {
+      "text": "Exzision und Resektion an Lunge"
+    }
+  ],
+  "performedPeriod": {
+    "start": "2024-02-20T10:14:00+01:00",
+    "end": "2024-02-20T12:47:00+01:00"
+  },
+  "extension": [
+    {
+      "url": "http://fhir.de/StructureDefinition/ProzedurDokumentationsdatum",
+      "valueDateTime": "2024-02-20T16:15:00+01:00"
+    },
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Durchfuehrungsabsicht",
+      "valueCoding": {
+        "system": "http://snomed.info/sct",
+        "code": "262202000",
+        "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+      }
+    }
+  ],
+  "status": "completed",
+  "subject": {
+    "reference": "Patient/mii-exa-test-data-patient-1"
+  },
+  "encounter": {
+    "reference": "Encounter/mii-exa-test-data-patient-1-encounter-1"
+  },
+  "recorder": {
+    "reference": "PractitionerRole/mii-exa-test-data-practitioner-role-physician-1"
+  }
+}

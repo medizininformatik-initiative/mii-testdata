@@ -1,0 +1,38 @@
+{
+  "resourceType": "Encounter",
+  "id": "mii-exa-test-data-patient-2-encounter-2",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung"
+    ]
+  },
+  "type": [
+    {
+      "coding": [
+        {
+          "system": "http://fhir.de/CodeSystem/Kontaktebene",
+          "code": "abteilungskontakt"
+        }
+      ]
+    },
+    {
+      "coding": [
+        {
+          "system": "http://fhir.de/CodeSystem/kontaktart-de",
+          "code": "normalstationaer"
+        }
+      ]
+    }
+  ],
+  "period": {
+    "start": "2024-03-02",
+    "end": "2024-03-13"
+  },
+  "status": "finished",
+  "class": {
+    "code": "IMP"
+  },
+  "subject": {
+    "reference": "Patient/mii-exa-test-data-patient-2"
+  }
+}

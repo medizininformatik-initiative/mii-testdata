@@ -3,7 +3,14 @@ Instance: mii-exa-test-data-patient-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient
 //* meta.profile[0] = "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient|2024.0.0"
 * meta.profile[+] = "http://fhir.de/ConsentManagement/StructureDefinition/Patient"
-* insert AddVersichertenIdGKV(A123456780, 987654321)
+//* insert AddVersichertenIdGKV(A123456780, 987654321)
+* identifier[+].use = #official
+* identifier[=].type = $identifier-type-de-basis#KVZ10
+* identifier[=].system = "http://fhir.de/sid/gkv/kvid-10"
+* identifier[=].value = "A123456780"
+* identifier[=].assigner.identifier.use = #official
+* identifier[=].assigner.identifier.value = "987654321"
+* identifier[=].assigner.identifier.system = "http://fhir.de/sid/arge-ik/iknr"
 * insert AddPID(808439625, https://www.charite.de/fhir/sid/patientenidentifikation, Charité)
 * insert AddName(Markgraf von Brandenburg-Schwedt, Markgraf, Brandenburg-Schwedt, von, Christian, Ludwig, Prinz von Preußen, NB, aus dem Haus der Hohenzollern)
 * insert AddGender(male)
@@ -38,7 +45,14 @@ Instance: mii-exa-test-data-patient-2
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient
 //* meta.profile[0] = "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient|2024.0.0"
 * meta.profile[+] = "http://fhir.de/ConsentManagement/StructureDefinition/Patient"
-* insert AddVersichertenIdGKV(B23456789, 123456789)
+//* insert AddVersichertenIdGKV(B23456789, 123456789)
+* identifier[+].use = #official
+* identifier[=].type = $identifier-type-de-basis#KVZ10
+* identifier[=].system = "http://fhir.de/sid/gkv/kvid-10"
+* identifier[=].value = "B23456789"
+* identifier[=].assigner.identifier.use = #official
+* identifier[=].assigner.identifier.value = "123456789"
+* identifier[=].assigner.identifier.system = "http://fhir.de/sid/arge-ik/iknr"
 * insert AddPID(147725268, https://www.charite.de/fhir/sid/patientenidentifikation, Charité)
 * insert AddGender(other)
 * gender.extension[other-amtlich].valueCoding = $gender-amtlich-de#D
@@ -58,18 +72,25 @@ Usage: #example
 * identifier[pid].assigner.display = "Charité - Universitätsmedizin Berlin"
 * identifier[pid].assigner.identifier.system = "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"
 * identifier[pid].assigner.identifier.value = "Charité"
-* identifier[versichertenId_GKV].use = #official
-* identifier[versichertenId_GKV].type = http://fhir.de/CodeSystem/identifier-type-de-basis#GKV
-* identifier[versichertenId_GKV].system = "http://fhir.de/sid/gkv/kvid-10"
-* identifier[versichertenId_GKV].value = "Z234567890"
-* identifier[versichertenId_GKV].assigner.identifier.use = #official
-* identifier[versichertenId_GKV].assigner.identifier.value = "109519005"
-* identifier[versichertenId_GKV].assigner.identifier.system = "http://fhir.de/sid/arge-ik/iknr"
-* identifier[versichertennummer_pkv].use = #secondary
-* identifier[versichertennummer_pkv].type = http://fhir.de/CodeSystem/identifier-type-de-basis#PKV
-* identifier[versichertennummer_pkv].system = "https://www.signal-iduna.de/fhir/sid/pkv"
-* identifier[versichertennummer_pkv].value = "3770010809"
-* identifier[versichertennummer_pkv].assigner.display = "Signal Iduna"
+//* identifier[versichertenId_GKV].use = #official
+//* identifier[versichertenId_GKV].type = http://fhir.de/CodeSystem/identifier-type-de-basis#GKV
+//* identifier[versichertenId_GKV].system = "http://fhir.de/sid/gkv/kvid-10"
+//* identifier[versichertenId_GKV].value = "Z234567890"
+//* identifier[versichertenId_GKV].assigner.identifier.use = #official
+//* identifier[versichertenId_GKV].assigner.identifier.value = "109519005"
+//* identifier[versichertenId_GKV].assigner.identifier.system = "http://fhir.de/sid/arge-ik/iknr"
+//* identifier[versichertennummer_pkv].use = #secondary
+//* identifier[versichertennummer_pkv].type = http://fhir.de/CodeSystem/identifier-type-de-basis#PKV
+//* identifier[versichertennummer_pkv].system = "https://www.signal-iduna.de/fhir/sid/pkv"
+//* identifier[versichertennummer_pkv].value = "3770010809"
+//* identifier[versichertennummer_pkv].assigner.display = "Signal Iduna"
+* identifier[+].use = #official
+* identifier[=].type = $identifier-type-de-basis#KVZ10
+* identifier[=].system = "http://fhir.de/sid/gkv/kvid-10"
+* identifier[=].value = "Z234567890"
+* identifier[=].assigner.identifier.use = #official
+* identifier[=].assigner.identifier.value = "109519005"
+* identifier[=].assigner.identifier.system = "http://fhir.de/sid/arge-ik/iknr"
 * name[name].use = #official
 * name[name].family = "Schumann"
 * name[name].family.extension.url = "http://hl7.org/fhir/StructureDefinition/humanname-own-name"

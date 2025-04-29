@@ -1,0 +1,83 @@
+{
+  "resourceType": "MedicationRequest",
+  "id": "mii-exa-test-data-patient-3-medrequest-1",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationRequest"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "https://www.charite.de/fhir/sid/MedicationOrders",
+      "value": "MO_0000005"
+    }
+  ],
+  "dosageInstruction": [
+    {
+      "doseAndRate": [
+        {
+          "doseRange": {
+            "low": {
+              "system": "http://unitsofmeasure.org",
+              "value": 500,
+              "code": "mg",
+              "unit": "mg"
+            },
+            "high": {
+              "system": "http://unitsofmeasure.org",
+              "value": 1000,
+              "code": "mg",
+              "unit": "mg"
+            }
+          }
+        }
+      ],
+      "maxDosePerPeriod": {
+        "numerator": {
+          "system": "http://unitsofmeasure.org",
+          "value": 5000,
+          "code": "mg",
+          "unit": "mg"
+        },
+        "denominator": {
+          "system": "http://unitsofmeasure.org",
+          "value": 24,
+          "code": "h",
+          "unit": "Stunden"
+        }
+      },
+      "maxDosePerAdministration": {
+        "system": "http://unitsofmeasure.org",
+        "value": 1000,
+        "code": "mg",
+        "unit": "mg"
+      },
+      "text": "Die Einzeldosis 500-1000 mg, Tageshöchstdosis 5000 mg",
+      "asNeededBoolean": true,
+      "route": {
+        "coding": [
+          {
+            "code": "20053000",
+            "system": "http://standardterms.edqm.eu",
+            "display": "Oral use"
+          }
+        ]
+      }
+    }
+  ],
+  "substitution": {
+    "allowedBoolean": true
+  },
+  "status": "active",
+  "intent": "order",
+  "medicationReference": {
+    "reference": "Medication/mii-exa-test-data-medication-metamizol"
+  },
+  "subject": {
+    "reference": "Patient/mii-exa-test-data-patient-3"
+  },
+  "encounter": {
+    "reference": "Encounter/mii-exa-test-data-patient-3-encounter-1"
+  },
+  "authoredOn": "2022-04-12T11:32:00+01:00"
+}

@@ -1,0 +1,57 @@
+{
+  "resourceType": "Medication",
+  "id": "mii-exa-test-data-medication-rezeptur-doxorubicin",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication"
+    ]
+  },
+  "code": {
+    "text": "Infusion bestehend aus 85mg Doxorubicin aufgeloest zur Verabreichung in 250ml 5-%iger (50 mg/ml) Glucose-Infusionsloesung"
+  },
+  "ingredient": [
+    {
+      "strength": {
+        "denominator": {
+          "value": 250,
+          "code": "mL",
+          "system": "http://unitsofmeasure.org",
+          "unit": "milliliter"
+        },
+        "numerator": {
+          "value": 85,
+          "code": "mg",
+          "system": "http://unitsofmeasure.org",
+          "unit": "mg"
+        }
+      },
+      "isActive": true,
+      "itemCodeableConcept": {
+        "coding": [
+          {
+            "code": "L01DB01",
+            "system": "http://fhir.de/CodeSystem/bfarm/atc",
+            "version": "2023",
+            "display": "Doxorubicin"
+          }
+        ]
+      }
+    },
+    {
+      "isActive": true,
+      "itemReference": {
+        "reference": "Medication/mii-exa-test-data-medication-glucoseloesung"
+      }
+    }
+  ],
+  "form": {
+    "coding": [
+      {
+        "code": "11210000",
+        "system": "http://standardterms.edqm.eu",
+        "display": "Solution for infusion"
+      }
+    ]
+  },
+  "status": "active"
+}

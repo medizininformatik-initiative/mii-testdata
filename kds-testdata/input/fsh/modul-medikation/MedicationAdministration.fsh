@@ -4,6 +4,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 //* meta.profile[0] = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationAdministration|2.0.0"
 * identifier[0].system = "https://www.charite.de/fhir/sid/MedicationAdministrations"
 * identifier[0].value = "MA_0000001"
+* partOf = Reference(mii-exa-test-data-patient-1-prozedur-2)
 * status = #completed
 * category = $medication-admin-category#inpatient "Inpatient"
 * medicationReference = Reference(mii-exa-test-data-medication-dalbavancin)
@@ -26,6 +27,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 //* meta.profile[0] = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationAdministration|2.0.0"
 * identifier[0].system = "https://www.charite.de/fhir/sid/MedicationAdministrations"
 * identifier[0].value = "MA_0000002"
+* partOf = Reference(mii-exa-test-data-patient-1-prozedur-2)
 * status = #entered-in-error
 * category = $medication-admin-category#inpatient "Inpatient"
 * medicationReference = Reference(mii-exa-test-data-medication-dalbavancin)
@@ -40,3 +42,19 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 * dosage.route.coding[SNOMED] = $sct#47625008 "Intravenous route (qualifier value)"
 * dosage.dose = 1500 $ucum#mg "mg"
 * dosage.rateQuantity = 1500 $ucum#mg/h "mg/Stunde"
+
+// Patient-3
+Instance: mii-exa-test-data-patient-3-medadmin-1
+InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationAdministration
+Usage: #example
+//* insert TestDataLabel
+//* meta.profile = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationAdministration"
+* dosage.dose = 85 'mg' "mg"
+* dosage.rateRatio.denominator = 1 'h' "hour"
+* dosage.rateRatio.numerator = 250 'mL' "milliliter"
+* dosage.route = $standardterms#20045000 "Intravenous use"
+* effectivePeriod.start = "2022-04-14T13:43:00+01:00"
+* effectivePeriod.end = "2022-04-14T14:43:00+01:00"
+* medicationReference = Reference(mii-exa-test-data-medication-rezeptur-doxorubicin)
+* status = #completed
+* subject = Reference(mii-exa-test-data-patient-3)

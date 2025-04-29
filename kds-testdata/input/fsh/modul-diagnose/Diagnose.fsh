@@ -32,9 +32,9 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-diagnose
 * insert AddDiagnose(C21.8, 2022, mii-exa-test-data-patient-3, 2022-04-02, Bösartige anorektale Neubildung)
 * code.coding[alpha-id] = $alpha-id|2022#I29975 "Bösartige anorektale Neubildung"
 * code.coding[sct] = $sct#447886005 "Adenocarcinoma of anorectum (disorder)"
-* code.coding[icd-o-3] = $icd-o-3#8140/3 "Adenokarzinom o.n.A."
+//* code.coding[icd-o-3] = $icd-o-3#8140/3 "Adenokarzinom o.n.A."
 * bodySite.coding[snomed-ct] = $sct#281088000 "Structure of anus and/or rectum (body structure)"
-* bodySite.coding[icd-o-3] = $icd-o-3#C21.8
+//* bodySite.coding[icd-o-3] = $icd-o-3#C21.8
 * recordedDate = "2022-04-02"
 
 // Patient-4

@@ -1,0 +1,28 @@
+{
+  "resourceType": "DocumentReference",
+  "id": "mii-exa-test-data-documentreference-1",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/modul-studie/StructureDefinition/mii-pr-studie-dokument"
+    ]
+  },
+  "author": [
+    {
+      "reference": "Practitioner/mii-exa-test-data-practitioner-physician-1"
+    }
+  ],
+  "content": [
+    {
+      "attachment": {
+        "contentType": "application/pdf",
+        "url": "https://www.medizininformatik-initiative.de/sites/default/files/inline-files/MII_04_Kerndatensatz_1-0.pdf",
+        "size": 579000,
+        "title": "MI-I-Kerndatensatz"
+      }
+    }
+  ],
+  "status": "current",
+  "custodian": {
+    "reference": "Organization/mii-exa-test-data-organization-charite"
+  }
+}

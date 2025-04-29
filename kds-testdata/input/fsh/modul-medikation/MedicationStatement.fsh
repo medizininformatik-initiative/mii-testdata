@@ -119,3 +119,25 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 * dosage.maxDosePerPeriod.numerator = 5000 $ucum#mg "mg"
 * dosage.maxDosePerPeriod.denominator = 24 $ucum#h "Stunden"
 * dosage.maxDosePerAdministration = 1000 $ucum#mg "mg"
+
+Instance: mii-exa-test-data-patient-3-medstatement-2
+InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement
+//* meta.profile[0] = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement|2.0.0"
+* identifier[0].system = "https://www.charite.de/fhir/sid/MedicationStatements"
+* identifier[0].value = "MS_0000007"
+//* basedOn = Reference(mii-exa-test-data-patient-3-medrequest-1)
+* status = #completed
+* category.coding[usageCategory] = $medication-statement-category#inpatient
+* category.coding[contextCode] = $FallkontextBeiDokumentenerstellung#E200 "stationärer Aufenthalt"
+* medicationReference = Reference(mii-exa-test-data-medication-rezeptur-doxorubicin)
+* subject = Reference(mii-exa-test-data-patient-3)
+* context = Reference(mii-exa-test-data-patient-3-encounter-1)
+* effectivePeriod.start = "2022-04-14T13:43:00+01:00"
+* effectivePeriod.end = "2022-04-14T14:43:00+01:00"
+* dateAsserted = "2022-04-14"
+* dosage.doseAndRate.doseQuantity = 50 'mg/kg' "mg/kilogram"
+* dosage.route = $standardterms#20045000 "Intravenous use"
+* dosage.text = "Doxorubicin (Caelyx) 50 mg je Quadratmeter Koerperoberflaeche alle vier Wochen per intravenoeser Tropfinfusion"
+* dosage.timing.repeat.frequency = 1
+* dosage.timing.repeat.period = 4
+* dosage.timing.repeat.periodUnit = #wk

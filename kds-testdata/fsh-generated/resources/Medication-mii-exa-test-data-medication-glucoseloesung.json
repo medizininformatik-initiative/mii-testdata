@@ -1,0 +1,112 @@
+{
+  "resourceType": "Medication",
+  "id": "mii-exa-test-data-medication-glucoseloesung",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "03705422",
+        "system": "http://fhir.de/CodeSystem/ifa/pzn",
+        "display": "Glucose 5% B.braun Ecoflac Plus"
+      },
+      {
+        "code": "V06DC01",
+        "system": "http://fhir.de/CodeSystem/bfarm/atc",
+        "version": "2023",
+        "display": "Glucose"
+      },
+      {
+        "code": "V06DC01",
+        "system": "http://www.whocc.no/atc",
+        "version": "2023",
+        "display": "glucose"
+      }
+    ]
+  },
+  "ingredient": [
+    {
+      "itemCodeableConcept": {
+        "coding": [
+          {
+            "code": "12829",
+            "system": "http://fhir.de/CodeSystem/ask",
+            "display": "Glucose"
+          },
+          {
+            "code": "50-99-7",
+            "system": "urn:oid:2.16.840.1.113883.6.61",
+            "display": "Glucose"
+          },
+          {
+            "code": "5SL0G7R0OK",
+            "system": "http://fdasis.nlm.nih.gov",
+            "display": "ANHYDROUS DEXTROSE"
+          },
+          {
+            "code": "67079006",
+            "system": "http://snomed.info/sct",
+            "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+            "display": "Glucose (substance)"
+          }
+        ]
+      },
+      "strength": {
+        "denominator": {
+          "value": 1000,
+          "code": "ml",
+          "system": "http://unitsofmeasure.org",
+          "unit": "ml"
+        },
+        "numerator": {
+          "value": 50,
+          "code": "g",
+          "system": "http://unitsofmeasure.org",
+          "unit": "g"
+        }
+      },
+      "isActive": true
+    },
+    {
+      "itemCodeableConcept": {
+        "coding": [
+          {
+            "code": "00343",
+            "system": "http://fhir.de/CodeSystem/ask",
+            "display": "Wasser für Injektionszwecke"
+          },
+          {
+            "code": "7732-18-5",
+            "system": "urn:oid:2.16.840.1.113883.6.61",
+            "display": "WATER"
+          },
+          {
+            "code": "059QF0KO0R",
+            "system": "http://fdasis.nlm.nih.gov",
+            "display": "WATER"
+          },
+          {
+            "code": "11713004",
+            "system": "http://snomed.info/sct",
+            "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+            "display": "Water (substance)"
+          }
+        ]
+      },
+      "isActive": false
+    }
+  ],
+  "form": {
+    "coding": [
+      {
+        "code": "11210000",
+        "system": "http://standardterms.edqm.eu",
+        "display": "Solution for infusion"
+      }
+    ]
+  },
+  "status": "active"
+}
