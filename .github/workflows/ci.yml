@@ -28,9 +28,10 @@ jobs:
 
     - name: Install jq, npm and yq
       run: |
-        sudo add-apt-repository ppa:rmescandon/yq >/dev/null
         sudo apt-get update -qqq
-        sudo apt-get install -qqqy npm jq yq > /dev/null
+        sudo apt-get install -qqqy npm jq > /dev/null
+        wget -qO /usr/local/bin/yq https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64
+        chmod +x /usr/local/bin/yq
 
     - name: Install sushi
       run: npm install -g fsh-sushi
