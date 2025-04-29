@@ -56,20 +56,6 @@ jobs:
       run: for dep in $(yq eval '.' sushi-config.yaml -o json | jq -r '.dependencies | keys[]'); do fhir inflate --package "$dep"; done
       working-directory: ./kds-testdata
 
-    - name: Check if KDS Laborbefund v1.0.7-alpha1 is patched
-      if: ${{ steps.initial-build.outputs.HAD_ERRORS == 'true' }}
-      id: check-patched
-      run: echo PATCHED="$(jq -c '.snapshot.element[] | select(.id == "Observation.value[x]") | has("slicing")'  \
-           "$HOME/.fhir/packages/de.medizininformatikinitiative.kerndatensatz.laborbefund#1.0.7-alpha1/package/Profile-ObservationLab.json" > /tmp/Profile-ObservationLab.json)" \
-           >> "$GITHUB_OUTPUT"
-
-    - name: Apply bugfix for FHIR package KDS Laborbefund v1.0.7-alpha1
-      if: ${{ steps.initial-build.outputs.HAD_ERRORS == 'true' && steps.check-patched.outputs.PATCHED != 'true' }}
-      run: |
-        jq -c '(.snapshot.element[] | select(.id == "Observation.value[x]") ) += {"slicing":{"discriminator":[{"type":"type","path":"$this"}],"ordered":false,"rules":"open"}}' \
-           "$HOME/.fhir/packages/de.medizininformatikinitiative.kerndatensatz.laborbefund#1.0.7-alpha1/package/Profile-ObservationLab.json" > /tmp/Profile-ObservationLab.json
-        mv /tmp/Profile-ObservationLab.json "$HOME/.fhir/packages/de.medizininformatikinitiative.kerndatensatz.laborbefund#1.0.7-alpha1/package/Profile-ObservationLab.json"
-
     - name: Final build
       if: ${{ steps.initial-build.outputs.HAD_ERRORS == 'true' }}
       run: sushi build --log-level warn  .
