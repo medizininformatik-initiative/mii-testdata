@@ -1,4 +1,4 @@
-name: Build Testdata
+name: Build and Validate Testdata
 
 on:
   push:
@@ -87,6 +87,18 @@ jobs:
         path: ./kds-testdata/fsh-generated
         compression-level: 9
         if-no-files-found: error
+
+  JAVA_FHIR_VALIDATION:
+    uses: medizininformatik-initiative/kerndatensatz-meta/.github/workflows/ci_java_validation.yml@master
+    needs: build-kds
+    with:
+      ref: ${{ github.event.pull_request.head.ref }}
+      PATH_TO_CONFORMANCE_RESOURCES: ./kds-testdata/fsh-generated/resources
+      PATH_TO_EXAMPLES: ./kds-testdata/fsh-generated/resources
+      JAVA_VALIDATION_ENABLED: true
+      JAVA_VALIDATION_OPTIONS: -advisor-file ./kds-testdata/advisor.json -resolution-context file:./kds-testdata/fsh-generated/resources/ -show-message-ids -txLog txlog.txt
+      JAVA_VALIDATOR_VERSION: ${{ vars.JAVA_VALIDATOR_VERSION }}
+    secrets: inherit
 
   release:
     runs-on: ubuntu-latest
