@@ -1,11 +1,35 @@
 [
   {
-    "outputFile": "Bundle-mii-exa-test-data-bundle.json",
-    "fshName": "mii-exa-test-data-bundle",
+    "outputFile": "Bundle-mii-exa-test-data-bundle-pat-1.json",
+    "fshName": "mii-exa-test-data-bundle-pat-1",
     "fshType": "Instance",
     "fshFile": "Bundle.fsh",
     "startLine": 7,
-    "endLine": 160
+    "endLine": 97
+  },
+  {
+    "outputFile": "Bundle-mii-exa-test-data-bundle-pat-2.json",
+    "fshName": "mii-exa-test-data-bundle-pat-2",
+    "fshType": "Instance",
+    "fshFile": "Bundle.fsh",
+    "startLine": 100,
+    "endLine": 110
+  },
+  {
+    "outputFile": "Bundle-mii-exa-test-data-bundle-pat-3.json",
+    "fshName": "mii-exa-test-data-bundle-pat-3",
+    "fshType": "Instance",
+    "fshFile": "Bundle.fsh",
+    "startLine": 113,
+    "endLine": 144
+  },
+  {
+    "outputFile": "Bundle-mii-exa-test-data-bundle-pat-4.json",
+    "fshName": "mii-exa-test-data-bundle-pat-4",
+    "fshType": "Instance",
+    "fshFile": "Bundle.fsh",
+    "startLine": 147,
+    "endLine": 179
   },
   {
     "outputFile": "Composition-mii-exa-test-data-patient-1-patho-composition.json",

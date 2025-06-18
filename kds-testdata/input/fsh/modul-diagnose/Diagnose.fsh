@@ -41,4 +41,4 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-diagnose
 Instance: mii-exa-test-data-patient-4-diagnose-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-diagnose/StructureDefinition/Diagnose
 //* meta.profile[0] = "https://www.medizininformatik-initiative.de/fhir/core/modul-diagnose/StructureDefinition/Diagnose|2024.0.0"
-* insert AddDiagnose(C16.9, 2022, mii-exa-test-data-patient-3, 2022-11-30, Bösartige Neubildung des Magens nicht näher bezeichnet)
+* insert AddDiagnose(C16.9, 2022, mii-exa-test-data-patient-4, 2022-11-30, Bösartige Neubildung des Magens nicht näher bezeichnet)

@@ -1,13 +1,13 @@
 RuleSet: AddBundleEntry(resource, url)
 * entry[+].fullUrl = "https://www.medizininformatik-initiative.de/{url}/{resource}"
 * entry[=].resource = {resource}
-* entry[=].request.method = #PUT
-* entry[=].request.url = "{url}/{resource}"
+* entry[=].request.method = #POST
+* entry[=].request.url = "{url}"
 
-Instance: mii-exa-test-data-bundle
+Instance: mii-exa-test-data-bundle-pat-1
 InstanceOf: Bundle
 * type = #transaction
-* timestamp = "2025-04-16T12:17:00+02:00"
+* timestamp = "2025-06-18T13:51:00+02:00"
 * insert AddBundleEntry(mii-exa-test-data-patient-1, Patient)
 * insert AddBundleEntry(mii-exa-test-data-patient-1-consent-1, Consent)
 * insert AddBundleEntry(mii-exa-test-data-patient-1-vitalstatus-1, Observation)
@@ -48,6 +48,7 @@ InstanceOf: Bundle
 * insert AddBundleEntry(mii-exa-test-data-patient-1-labobs-4, Observation)
 * insert AddBundleEntry(mii-exa-test-data-patient-1-labobs-5, Observation)
 * insert AddBundleEntry(mii-exa-test-data-patient-1-labobs-6, Observation)
+* insert AddBundleEntry(mii-exa-test-data-patient-1-labobs-7, Observation)
 * insert AddBundleEntry(mii-exa-test-data-patient-1-mibi-befund-1, DiagnosticReport)
 * insert AddBundleEntry(mii-exa-test-data-patient-1-labrequest-2, ServiceRequest)
 * insert AddBundleEntry(mii-exa-test-data-patient-1-specimen-2, Specimen)
@@ -94,14 +95,25 @@ InstanceOf: Bundle
 * insert AddBundleEntry(mii-exa-test-data-group-1, Group)
 * insert AddBundleEntry(mii-exa-test-data-register-1, Library)
 * insert AddBundleEntry(mii-exa-test-data-researchstudy-1, ResearchStudy)
+
 // Patient-2
+Instance: mii-exa-test-data-bundle-pat-2
+InstanceOf: Bundle
+* type = #transaction
+* timestamp = "2025-06-18T13:53:00+02:00"
 * insert AddBundleEntry(mii-exa-test-data-patient-2, Patient)
 * insert AddBundleEntry(mii-exa-test-data-patient-2-consent-1, Consent)
 * insert AddBundleEntry(mii-exa-test-data-patient-2-medstatement-1, MedicationStatement)
 * insert AddBundleEntry(mii-exa-test-data-patient-2-medstatement-2, MedicationStatement)
 * insert AddBundleEntry(mii-exa-test-data-patient-2-vitalstatus-1, Observation)
 * insert AddBundleEntry(mii-exa-test-data-patient-2-todesursache-1, Condition)
+* insert AddBundleEntry(mii-exa-test-data-organization-charite, Organization)
+
 // Patient-3
+Instance: mii-exa-test-data-bundle-pat-3
+InstanceOf: Bundle
+* type = #transaction
+* timestamp = "2025-06-18T13:51:00+02:00"
 * insert AddBundleEntry(mii-exa-test-data-patient-3, Patient)
 * insert AddBundleEntry(mii-exa-test-data-patient-3-consent-1, Consent)
 * insert AddBundleEntry(mii-exa-test-data-patient-3-encounter-1, Encounter)
@@ -129,7 +141,13 @@ InstanceOf: Bundle
 * insert AddBundleEntry(mii-exa-test-data-patient-3-molgen-msi-1, Observation)
 * insert AddBundleEntry(mii-exa-test-data-molgen-device-sequencer, Device)
 * insert AddBundleEntry(mii-exa-test-data-patient-3-patho-fnding-1, Observation)
+* insert AddBundleEntry(mii-exa-test-data-organization-charite, Organization)
+
 // Patient-4
+Instance: mii-exa-test-data-bundle-pat-4
+InstanceOf: Bundle
+* type = #transaction
+* timestamp = "2025-06-18T13:54:00+02:00"
 * insert AddBundleEntry(mii-exa-test-data-patient-4, Patient)
 * insert AddBundleEntry(mii-exa-test-data-patient-4-diagnose-1, Condition)
 * insert AddBundleEntry(mii-exa-test-data-patient-4-molgen-anforderung-1, ServiceRequest)
@@ -158,3 +176,4 @@ InstanceOf: Bundle
 * insert AddBundleEntry(mii-exa-test-data-patient-4-molgen-untersuchte-region-17, Observation)
 * insert AddBundleEntry(mii-exa-test-data-patient-4-molgen-untersuchte-region-18, Observation)
 * insert AddBundleEntry(mii-exa-test-data-patient-4-molgen-befundbericht-1, DiagnosticReport)
+* insert AddBundleEntry(mii-exa-test-data-molgen-device-sequencer, Device)
