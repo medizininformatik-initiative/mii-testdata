@@ -19,12 +19,24 @@ jobs:
     - name: Checkout Project
       uses: actions/checkout@v4
 
-    - name: Cache FHIR Packages
-      id: fhir-cache
-      uses: actions/cache@v4
+    #- name: Cache FHIR Packages
+    #  id: fhir-cache
+    #  uses: actions/cache@v4
+    #  with:
+    #    path: "~/.fhir"
+    #    key: fhir-cache
+
+    - name: Download FHIR cache
+      uses: actions/checkout@v4
       with:
-        path: "~/.fhir"
-        key: fhir-cache
+        repository: medizininformatik-initiative/fhir-package-store
+        ref: cache-store
+        path: .fhir
+
+    - name: Link .fhir cache to ~/.fhir
+      run: |
+        mkdir -p ~/.fhir
+        cp -r .fhir/* ~/.fhir/
 
     - name: Install jq, npm and yq
       run: |
@@ -42,24 +54,24 @@ jobs:
         sushi build --log-level warn . || echo HAD_ERRORS='true' >> "$GITHUB_OUTPUT"
       working-directory: ./kds-testdata
 
-    - uses: actions/setup-dotnet@v4
-      if: ${{ steps.initial-build.outputs.HAD_ERRORS == 'true' }}
-      with:
-        dotnet-version: '8.0.x'
+    # - uses: actions/setup-dotnet@v4
+    #   if: ${{ steps.initial-build.outputs.HAD_ERRORS == 'true' }}
+    #   with:
+    #     dotnet-version: '8.0.x'
 
-    - name: Install firely
-      if: ${{ steps.initial-build.outputs.HAD_ERRORS == 'true' }}
-      run: dotnet tool install -g firely.terminal
+    # - name: Install firely
+    #   if: ${{ steps.initial-build.outputs.HAD_ERRORS == 'true' }}
+    #   run: dotnet tool install -g firely.terminal
 
-    - name: Create FHIR package snapshots
-      if: ${{ steps.initial-build.outputs.HAD_ERRORS == 'true' }}
-      run: for dep in $(yq eval '.' sushi-config.yaml -o json | jq -r '.dependencies | keys[]'); do fhir inflate --package "$dep"; done
-      working-directory: ./kds-testdata
+    # - name: Create FHIR package snapshots
+    #   if: ${{ steps.initial-build.outputs.HAD_ERRORS == 'true' }}
+    #   run: for dep in $(yq eval '.' sushi-config.yaml -o json | jq -r '.dependencies | keys[]'); do fhir inflate --package "$dep"; done
+    #   working-directory: ./kds-testdata
 
-    - name: Final build
-      if: ${{ steps.initial-build.outputs.HAD_ERRORS == 'true' }}
-      run: sushi build --log-level warn  .
-      working-directory: ./kds-testdata
+    # - name: Final build
+    #   if: ${{ steps.initial-build.outputs.HAD_ERRORS == 'true' }}
+    #   run: sushi build --log-level warn  .
+    #   working-directory: ./kds-testdata
 
     - name: Get KDS Testdata Version
       id: kds-version
@@ -83,7 +95,7 @@ jobs:
       PATH_TO_CONFORMANCE_RESOURCES: ./kds-testdata/fsh-generated/resources
       PATH_TO_EXAMPLES: ./kds-testdata/fsh-generated/resources
       JAVA_VALIDATION_ENABLED: true
-      JAVA_VALIDATION_OPTIONS: -advisor-file ./kds-testdata/advisor.json -resolution-context file:./kds-testdata/fsh-generated/resources/ -show-message-ids -txLog txlog.txt
+      JAVA_VALIDATION_OPTIONS: ${{ vars.JAVA_VALIDATION_OPTIONS }}
       JAVA_VALIDATOR_VERSION: ${{ vars.JAVA_VALIDATOR_VERSION }}
     secrets: inherit
 
