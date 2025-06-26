@@ -97,6 +97,7 @@ jobs:
       JAVA_VALIDATION_ENABLED: true
       JAVA_VALIDATION_OPTIONS: ${{ vars.JAVA_VALIDATION_OPTIONS }}
       JAVA_VALIDATOR_VERSION: ${{ vars.JAVA_VALIDATOR_VERSION }}
+      working-directory: ./kds-testdata
     secrets: inherit
 
   release:
