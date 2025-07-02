@@ -8,7 +8,7 @@
   },
   "text": {
     "status": "additional",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div id=\"specimen-a-title\"><b>Probe A</b></div><table><tr><td>Entnahmeart</td><td>transrektale Stanzbiopsie</td></tr><tr id=\"bearbeitungsprozedur\"><td id=\"bearbeitungsprozedur-key\">Bearbeitungsprozedur</td><td id=\"bearbeitungsprozedur-value\">Einbetten, schneiden, färben</td></tr><tr><td>Färbung</td><td>4% gepuffertes Formalin HE</td></tr></table></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div id=\"specimen-a-title\"><b>Probe A</b></div><table><tr><td>Entnahmeart</td><td>transrektale Stanzbiopsie</td></tr><tr id=\"bearbeitungsprozedur\"><td id=\"bearbeitungsprozedur-key\">Bearbeitungsprozedur</td><td id=\"bearbeitungsprozedur-value\">Einbetten, schneiden, färben</td></tr><tr id=\"faerbung\"><td>Färbung</td><td>4% gepuffertes Formalin HE</td></tr></table></div>"
   },
   "identifier": [
     {

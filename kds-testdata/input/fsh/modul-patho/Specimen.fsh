@@ -64,7 +64,7 @@ Description: "HE-stained slide from Prostate tru-cut biopsy sample (specimen)"
       <td id=\"bearbeitungsprozedur-key\">Bearbeitungsprozedur</td>
       <td id=\"bearbeitungsprozedur-value\">Einbetten, schneiden, färben</td>
     </tr>
-    <tr>
+    <tr id=\"faerbung\">
       <td>Färbung</td>
       <td>4% gepuffertes Formalin HE</td>
     </tr>
