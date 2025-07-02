@@ -113,7 +113,7 @@
       {
         "system": "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs",
         "code": "diagnostic-implication",
-        "display": "Diagnostische Implikation"
+        "display": "Diagnostic Implication"
       }
     ]
   },

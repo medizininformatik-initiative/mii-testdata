@@ -24,7 +24,7 @@ Usage: #example
 * extension[0].valueRelatedArtifact.url = "https://search.clinicalgenome.org/kb/gene-dosage/HGNC:2509"
 * status = #final
 * category[labCategory] = $observation-category#laboratory "Laboratory"
-* code = $tbd-codes-cs#diagnostic-implication "Diagnostische Implikation"
+* code = $tbd-codes-cs#diagnostic-implication "Diagnostic Implication"
 * subject = Reference(mii-exa-test-data-patient-4)
 * performer = Reference(mii-exa-test-data-practitioner-physician-2)
 * derivedFrom[variant] = Reference(mii-exa-test-data-patient-4-molgen-variante-1)
