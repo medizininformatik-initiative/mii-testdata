@@ -126,7 +126,7 @@
       {
         "code": "20570-8",
         "system": "http://loinc.org",
-        "display": "Hematocrit [Volume Fraction] of Blood"
+        "display": "Hematocrit [Volume Fraction] of Blood by calculation"
       }
     ]
   },

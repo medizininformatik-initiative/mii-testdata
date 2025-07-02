@@ -38,7 +38,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-labor/St
 Instance: mii-exa-test-data-patient-1-labobs-3
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab
 //* meta.profile[0] = "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab|1.0.7-alpha1"
-* insert AddLabObservation(LO_000003, 20570-8, Hematocrit [Volume Fraction] of Blood, mii-exa-test-data-patient-1, mii-exa-test-data-patient-1-encounter-1, 2024-02-15T12:00:00+01:00, 2024-02-15T12:00:00+01:00)
+* insert AddLabObservation(LO_000003, 20570-8, Hematocrit [Volume Fraction] of Blood by calculation, mii-exa-test-data-patient-1, mii-exa-test-data-patient-1-encounter-1, 2024-02-15T12:00:00+01:00, 2024-02-15T12:00:00+01:00)
 * basedOn = Reference(mii-exa-test-data-patient-1-labrequest-1)
 * valueQuantity = 45 $ucum#% "percent"
 * interpretation = $v3-ObservationInterpretation#N "Normal"
