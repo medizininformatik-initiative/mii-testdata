@@ -83,7 +83,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-fall/Str
 * period.start = "2022-04-02"
 * period.end = "2022-04-22"
 * diagnosis[0].condition = Reference(mii-exa-test-data-patient-3-diagnose-1)
-* diagnosis[0].use.coding[Diagnosetyp] = $KontaktDiagnoseProzedur#referral-diagnosis "Einweisungs-/Überweisungsdiagnose"
+* diagnosis[0].use.coding[Diagnosetyp] = $KontaktDiagnoseProzedur#referral-diagnosis "Überweisungsdiagnose"
 * diagnosis[0].use.coding[DiagnosesubTyp] = $diagnosis-role#AD "Admission diagnosis"
 * diagnosis[0].rank = 1
 * hospitalization.admitSource = $Aufnahmeanlass#E "Einweisung durch einen Arzt"

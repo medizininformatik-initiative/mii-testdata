@@ -356,7 +356,7 @@
                 {
                   "code": "referral-diagnosis",
                   "system": "http://fhir.de/CodeSystem/KontaktDiagnoseProzedur",
-                  "display": "Einweisungs-/Überweisungsdiagnose"
+                  "display": "Überweisungsdiagnose"
                 },
                 {
                   "code": "AD",
