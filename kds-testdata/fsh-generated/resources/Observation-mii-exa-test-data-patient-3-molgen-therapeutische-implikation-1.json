@@ -108,7 +108,7 @@
       {
         "system": "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs",
         "code": "therapeutic-implication",
-        "display": "Therapeutische Implikation"
+        "display": "Therapeutic Implication"
       }
     ]
   },

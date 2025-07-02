@@ -5,7 +5,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/St
 Usage: #example
 //* meta.profile[0] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/therapeutische-implikation"
 * meta.profile[+] = "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/therapeutic-implication"
-* code = $tbd-codes-cs#therapeutic-implication "Therapeutische Implikation"
+* code = $tbd-codes-cs#therapeutic-implication "Therapeutic Implication"
 * category[labCategory] = $observation-category#laboratory "Laboratory"
 * component[conclusion-string].code = $tbd-codes-cs#conclusion-string
 * component[conclusion-string].valueString = "Nachweis einer aktivierenden Mutation BRAF V600E. Triple-Therapie mit einem EGFR-Antikörper sowie einem BRAF- und einem MEK- Inhibitor prüfen."
