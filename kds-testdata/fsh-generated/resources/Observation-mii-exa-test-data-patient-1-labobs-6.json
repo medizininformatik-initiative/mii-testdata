@@ -53,7 +53,7 @@
       {
         "code": "788-0",
         "system": "http://loinc.org",
-        "display": "Erythrocyte distribution width [Ratio] by Automated count"
+        "display": "Erythrocyte [DistWidth] in Red Blood Cells by Automated count"
       }
     ]
   },

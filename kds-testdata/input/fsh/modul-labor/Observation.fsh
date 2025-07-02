@@ -92,6 +92,6 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-labor/St
 Instance: mii-exa-test-data-patient-1-labobs-6
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab
 //* meta.profile[0] = "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab|1.0.7-alpha1"
-* insert AddLabObservation(LO_000006, 788-0, Erythrocyte distribution width [Ratio] by Automated count, mii-exa-test-data-patient-1, mii-exa-test-data-patient-1-encounter-1, 2024-02-15T12:00:00+01:00, 2024-02-15T12:00:00+01:00)
+* insert AddLabObservation(LO_000006, 788-0, Erythrocyte [DistWidth] in Red Blood Cells by Automated count, mii-exa-test-data-patient-1, mii-exa-test-data-patient-1-encounter-1, 2024-02-15T12:00:00+01:00, 2024-02-15T12:00:00+01:00)
 * basedOn = Reference(mii-exa-test-data-patient-1-labrequest-1)
 * dataAbsentReason = $data-absent-reason#not-performed "Not Performed"
