@@ -1013,15 +1013,15 @@
     "fshType": "Instance",
     "fshFile": "modul-person/Patient.fsh",
     "startLine": 63,
-    "endLine": 115
+    "endLine": 116
   },
   {
     "outputFile": "Patient-mii-exa-test-data-patient-4.json",
     "fshName": "mii-exa-test-data-patient-4",
     "fshType": "Instance",
     "fshFile": "modul-person/Patient.fsh",
-    "startLine": 118,
-    "endLine": 134
+    "startLine": 119,
+    "endLine": 135
   },
   {
     "outputFile": "Practitioner-mii-exa-test-data-practitioner-physician-1.json",

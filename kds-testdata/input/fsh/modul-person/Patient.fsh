@@ -109,6 +109,7 @@ Usage: #example
 * address[Strassenanschrift].postalCode = "10785"
 * address[Strassenanschrift].country = "DE"
 * address[Postfach].type = #postal 
+* address[Postfach].line = "Postfach-252618"
 * address[Postfach].line.extension[Postfach].valueString = "Postfach-252618"
 * address[Postfach].city = "Berlin"
 * address[Postfach].postalCode = "10178"

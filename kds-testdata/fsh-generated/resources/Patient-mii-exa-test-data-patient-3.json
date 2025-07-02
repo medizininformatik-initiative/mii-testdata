@@ -83,10 +83,9 @@
       "country": "DE"
     },
     {
-      "type": "postal",
-      "city": "Berlin",
-      "postalCode": "10178",
-      "country": "DE",
+      "line": [
+        "Postfach-252618"
+      ],
       "_line": [
         {
           "extension": [
@@ -96,7 +95,11 @@
             }
           ]
         }
-      ]
+      ],
+      "type": "postal",
+      "city": "Berlin",
+      "postalCode": "10178",
+      "country": "DE"
     }
   ],
   "gender": "female",
