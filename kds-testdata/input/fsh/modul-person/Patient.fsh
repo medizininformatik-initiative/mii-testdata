@@ -117,13 +117,13 @@ Usage: #example
 
 //Patient-4
 Instance: mii-exa-test-data-patient-4
-InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/PatientPseudonymisiert
+InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient
 Usage: #example
 //* meta.profile[0] = "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/PatientPseudonymisiert|2024.0.0"
 * meta.profile[+] = "http://fhir.de/ConsentManagement/StructureDefinition/Patient"
-* identifier[PseudonymisierterIdentifier].type = $v3-ObservationValue#PSEUDED 
-* identifier[PseudonymisierterIdentifier].system = "https://www.charite.de/fhir/sid/pseudonyme"
-* identifier[PseudonymisierterIdentifier].value = "CP5712840020128"
+* identifier[+].type = $v3-ObservationValue#PSEUDED 
+* identifier[=].system = "https://www.charite.de/fhir/sid/pseudonyme"
+* identifier[=].value = "CP5712840020128"
 * gender = #male
 * birthDate = "1962"
 * address[Strassenanschrift].type = #both
