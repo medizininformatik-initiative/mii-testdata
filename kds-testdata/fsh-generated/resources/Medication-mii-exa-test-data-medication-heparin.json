@@ -1,0 +1,56 @@
+{
+  "resourceType": "Medication",
+  "id": "mii-exa-test-data-medication-heparin",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/atc",
+        "code": "B01AB01",
+        "version": "2024",
+        "display": "Heparin"
+      }
+    ]
+  },
+  "ingredient": [
+    {
+      "itemCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://fhir.de/CodeSystem/ask",
+            "code": "01291",
+            "display": "Heparin"
+          }
+        ]
+      },
+      "strength": {
+        "numerator": {
+          "value": 25000,
+          "code": "[iU]",
+          "system": "http://unitsofmeasure.org",
+          "unit": "IU"
+        },
+        "denominator": {
+          "value": 5,
+          "code": "ml",
+          "system": "http://unitsofmeasure.org",
+          "unit": "ml"
+        }
+      }
+    }
+  ],
+  "form": {
+    "coding": [
+      {
+        "code": "11201000",
+        "system": "http://standardterms.edqm.eu",
+        "display": "Solution for injection"
+      }
+    ]
+  },
+  "status": "active"
+}

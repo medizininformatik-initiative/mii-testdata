@@ -1,0 +1,70 @@
+{
+  "resourceType": "Procedure",
+  "id": "mii-exa-test-data-patient-10-prozedur-1",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Procedure"
+    ]
+  },
+  "category": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "165197003",
+        "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+      }
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "169066007",
+        "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/ops",
+        "code": "3-200",
+        "version": "2019"
+      }
+    ]
+  },
+  "bodySite": [
+    {
+      "coding": [
+        {
+          "code": "89546000",
+          "system": "http://snomed.info/sct",
+          "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+        }
+      ]
+    }
+  ],
+  "note": [
+    {
+      "text": "Kraniale CT zum Ausschluss struktureller Ursachen der Kopfschmerzen"
+    }
+  ],
+  "extension": [
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Durchfuehrungsabsicht",
+      "valueCoding": {
+        "system": "http://snomed.info/sct",
+        "code": "261004008",
+        "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+        "display": "Diagnostic intent"
+      }
+    }
+  ],
+  "status": "completed",
+  "subject": {
+    "reference": "Patient/mii-exa-test-data-patient-10"
+  },
+  "performedDateTime": "2019-05-15T16:30:00+02:00",
+  "encounter": {
+    "reference": "Encounter/mii-exa-test-data-patient-10-encounter-1"
+  },
+  "recorder": {
+    "reference": "PractitionerRole/mii-exa-test-data-practitioner-role-physician-1"
+  }
+}

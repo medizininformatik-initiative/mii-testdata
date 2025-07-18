@@ -1,0 +1,55 @@
+{
+  "resourceType": "MedicationRequest",
+  "id": "mii-exa-test-data-patient-7-medrequest-2",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationRequest"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "https://www.charite.de/fhir/sid/MedicationOrders",
+      "value": "MO_0000019"
+    }
+  ],
+  "dosageInstruction": [
+    {
+      "doseAndRate": [
+        {
+          "doseQuantity": {
+            "value": 200,
+            "code": "ug",
+            "system": "http://unitsofmeasure.org",
+            "unit": "μg"
+          }
+        }
+      ],
+      "text": "Salbutamol 2 Hubs inhalativ bei Bedarf",
+      "route": {
+        "coding": [
+          {
+            "code": "20020000",
+            "system": "http://standardterms.edqm.eu",
+            "display": "Inhalation use"
+          }
+        ]
+      },
+      "asNeededBoolean": true
+    }
+  ],
+  "substitution": {
+    "allowedBoolean": true
+  },
+  "status": "active",
+  "intent": "order",
+  "medicationReference": {
+    "reference": "Medication/mii-exa-test-data-medication-salbutamol"
+  },
+  "subject": {
+    "reference": "Patient/mii-exa-test-data-patient-7"
+  },
+  "encounter": {
+    "reference": "Encounter/mii-exa-test-data-patient-7-encounter-1"
+  },
+  "authoredOn": "2024-01-10T16:30:00+01:00"
+}

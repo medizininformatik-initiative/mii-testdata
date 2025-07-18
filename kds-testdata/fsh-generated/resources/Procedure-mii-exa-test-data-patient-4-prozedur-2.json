@@ -1,0 +1,73 @@
+{
+  "resourceType": "Procedure",
+  "id": "mii-exa-test-data-patient-4-prozedur-2",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Procedure"
+    ]
+  },
+  "category": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "387713003",
+        "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+      }
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "83985009",
+        "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/ops",
+        "code": "5-437.11",
+        "version": "2020"
+      }
+    ]
+  },
+  "bodySite": [
+    {
+      "coding": [
+        {
+          "code": "119212007",
+          "system": "http://snomed.info/sct",
+          "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+        }
+      ]
+    }
+  ],
+  "note": [
+    {
+      "text": "Subtotale Gastrektomie mit Billroth-II-Anastomose"
+    }
+  ],
+  "performedPeriod": {
+    "start": "2020-09-18T08:00:00+02:00",
+    "end": "2020-09-18T14:30:00+02:00"
+  },
+  "extension": [
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Durchfuehrungsabsicht",
+      "valueCoding": {
+        "system": "http://snomed.info/sct",
+        "code": "262202000",
+        "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+        "display": "Therapeutic"
+      }
+    }
+  ],
+  "status": "completed",
+  "subject": {
+    "reference": "Patient/mii-exa-test-data-patient-4"
+  },
+  "encounter": {
+    "reference": "Encounter/mii-exa-test-data-patient-4-encounter-1"
+  },
+  "recorder": {
+    "reference": "PractitionerRole/mii-exa-test-data-practitioner-role-physician-1"
+  }
+}

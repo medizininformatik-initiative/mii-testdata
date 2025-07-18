@@ -1,0 +1,56 @@
+{
+  "resourceType": "Medication",
+  "id": "mii-exa-test-data-medication-oxaliplatin",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/atc",
+        "code": "L01XA03",
+        "version": "2024",
+        "display": "Oxaliplatin"
+      }
+    ]
+  },
+  "ingredient": [
+    {
+      "itemCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://fhir.de/CodeSystem/ask",
+            "code": "02043",
+            "display": "Oxaliplatin"
+          }
+        ]
+      },
+      "strength": {
+        "numerator": {
+          "value": 85,
+          "code": "mg",
+          "system": "http://unitsofmeasure.org",
+          "unit": "mg"
+        },
+        "denominator": {
+          "value": 17,
+          "code": "ml",
+          "system": "http://unitsofmeasure.org",
+          "unit": "ml"
+        }
+      }
+    }
+  ],
+  "form": {
+    "coding": [
+      {
+        "code": "11210000",
+        "system": "http://standardterms.edqm.eu",
+        "display": "Solution for infusion"
+      }
+    ]
+  },
+  "status": "active"
+}

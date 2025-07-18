@@ -1,0 +1,68 @@
+{
+  "resourceType": "MedicationRequest",
+  "id": "mii-exa-test-data-patient-2-medrequest-2",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationRequest"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "https://www.charite.de/fhir/sid/MedicationOrders",
+      "value": "MO_0000007"
+    }
+  ],
+  "dosageInstruction": [
+    {
+      "doseAndRate": [
+        {
+          "rateRatio": {
+            "numerator": {
+              "system": "http://unitsofmeasure.org",
+              "value": 450,
+              "code": "mg",
+              "unit": "mg"
+            },
+            "denominator": {
+              "system": "http://unitsofmeasure.org",
+              "value": 1,
+              "code": "h",
+              "unit": "h"
+            }
+          },
+          "doseQuantity": {
+            "value": 450,
+            "code": "mg",
+            "system": "http://unitsofmeasure.org",
+            "unit": "mg"
+          }
+        }
+      ],
+      "text": "Carboplatin 450mg IV über 1 Stunde",
+      "route": {
+        "coding": [
+          {
+            "code": "20045000",
+            "system": "http://standardterms.edqm.eu",
+            "display": "Intravenous use"
+          }
+        ]
+      }
+    }
+  ],
+  "substitution": {
+    "allowedBoolean": false
+  },
+  "status": "active",
+  "intent": "order",
+  "medicationReference": {
+    "reference": "Medication/mii-exa-test-data-medication-carboplatin"
+  },
+  "subject": {
+    "reference": "Patient/mii-exa-test-data-patient-2"
+  },
+  "encounter": {
+    "reference": "Encounter/mii-exa-test-data-patient-2-encounter-1"
+  },
+  "authoredOn": "2024-03-07T10:00:00+01:00"
+}

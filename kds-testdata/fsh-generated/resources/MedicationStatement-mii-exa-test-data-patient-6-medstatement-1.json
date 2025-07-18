@@ -1,0 +1,82 @@
+{
+  "resourceType": "MedicationStatement",
+  "id": "mii-exa-test-data-patient-6-medstatement-1",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "https://www.charite.de/fhir/sid/MedicationStatements",
+      "value": "MS_0000016"
+    }
+  ],
+  "basedOn": [
+    {
+      "reference": "MedicationRequest/mii-exa-test-data-patient-6-medrequest-1"
+    }
+  ],
+  "category": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/medication-statement-category",
+        "code": "inpatient"
+      },
+      {
+        "system": "http://ihe-d.de/CodeSystems/FallkontextBeiDokumentenerstellung",
+        "code": "E200",
+        "display": "stationärer Aufenthalt"
+      }
+    ]
+  },
+  "effectivePeriod": {
+    "start": "2022-03-13T08:00:00+01:00",
+    "end": "2022-03-20T08:00:00+01:00"
+  },
+  "dosage": [
+    {
+      "route": {
+        "coding": [
+          {
+            "system": "http://standardterms.edqm.eu",
+            "code": "20053000",
+            "display": "Oral use"
+          }
+        ]
+      },
+      "doseAndRate": [
+        {
+          "doseQuantity": {
+            "system": "http://unitsofmeasure.org",
+            "value": 40,
+            "code": "mg",
+            "unit": "mg"
+          }
+        }
+      ],
+      "timing": {
+        "repeat": {
+          "when": [
+            "MORN"
+          ],
+          "frequency": 1,
+          "period": 1,
+          "periodUnit": "d"
+        }
+      },
+      "text": "Pantoprazol 40mg 1x täglich morgens"
+    }
+  ],
+  "status": "completed",
+  "medicationReference": {
+    "reference": "Medication/mii-exa-test-data-medication-pantoprazol"
+  },
+  "subject": {
+    "reference": "Patient/mii-exa-test-data-patient-6"
+  },
+  "context": {
+    "reference": "Encounter/mii-exa-test-data-patient-6-encounter-1"
+  },
+  "dateAsserted": "2022-03-13"
+}

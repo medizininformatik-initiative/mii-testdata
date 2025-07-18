@@ -1,0 +1,2210 @@
+{
+  "resourceType": "Bundle",
+  "id": "mii-exa-test-data-bundle-pat-5",
+  "entry": [
+    {
+      "request": {
+        "method": "POST",
+        "url": "Patient"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Patient/mii-exa-test-data-patient-5",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "mii-exa-test-data-patient-5",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient",
+            "http://fhir.de/ConsentManagement/StructureDefinition/Patient"
+          ]
+        },
+        "identifier": [
+          {
+            "assigner": {
+              "identifier": {
+                "system": "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier",
+                "value": "Charité"
+              },
+              "display": "Charité - Universitätsmedizin Berlin"
+            },
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "code": "MR"
+                }
+              ]
+            },
+            "use": "usual",
+            "system": "https://www.medizininformatik-initiative.de/fhir/sid/patienten",
+            "value": "925847361"
+          },
+          {
+            "assigner": {
+              "identifier": {
+                "use": "official",
+                "value": "987654321",
+                "system": "http://fhir.de/sid/arge-ik/iknr"
+              }
+            },
+            "use": "official",
+            "type": {
+              "coding": [
+                {
+                  "code": "KVZ10",
+                  "system": "http://fhir.de/CodeSystem/identifier-type-de-basis"
+                }
+              ]
+            },
+            "system": "http://fhir.de/sid/gkv/kvid-10",
+            "value": "C200919710"
+          }
+        ],
+        "name": [
+          {
+            "given": [
+              "Sabine",
+              "Maria"
+            ],
+            "use": "official",
+            "family": "Weber"
+          },
+          {
+            "use": "maiden",
+            "family": "Müller"
+          }
+        ],
+        "address": [
+          {
+            "line": [
+              "Kantstraße 47"
+            ],
+            "type": "both",
+            "city": "München",
+            "postalCode": "80636",
+            "country": "DE"
+          }
+        ],
+        "gender": "female",
+        "birthDate": "1985-03-12",
+        "deceasedBoolean": false
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Consent"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Consent/mii-exa-test-data-patient-5-consent-1",
+      "resource": {
+        "resourceType": "Consent",
+        "id": "mii-exa-test-data-patient-5-consent-1",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-einwilligung"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "57016-8"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "code": "2.16.840.1.113883.3.1937.777.24.2.184",
+                "system": "https://www.medizininformatik-initiative.de/fhir/modul-consent/CodeSystem/mii-cs-consent-consent_category"
+              }
+            ]
+          }
+        ],
+        "organization": [
+          {
+            "reference": "Organization/mii-exa-test-data-organization-charite"
+          }
+        ],
+        "policy": [
+          {
+            "uri": "urn:oid:2.16.840.1.113883.3.1937.777.24.2.1791"
+          }
+        ],
+        "provision": {
+          "period": {
+            "start": "2023-07-05",
+            "end": "2053-07-31"
+          },
+          "provision": [
+            {
+              "period": {
+                "start": "2023-07-05",
+                "end": "2053-07-31"
+              },
+              "code": [
+                {
+                  "coding": [
+                    {
+                      "code": "2.16.840.1.113883.3.1937.777.24.5.3.6",
+                      "system": "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3",
+                      "display": "MDAT erheben"
+                    }
+                  ]
+                }
+              ],
+              "type": "permit"
+            },
+            {
+              "period": {
+                "start": "2023-07-05",
+                "end": "2053-07-31"
+              },
+              "code": [
+                {
+                  "coding": [
+                    {
+                      "code": "2.16.840.1.113883.3.1937.777.24.5.3.7",
+                      "system": "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3",
+                      "display": "MDAT speichern, verarbeiten"
+                    }
+                  ]
+                }
+              ],
+              "type": "permit"
+            },
+            {
+              "period": {
+                "start": "2023-07-05",
+                "end": "2053-07-31"
+              },
+              "code": [
+                {
+                  "coding": [
+                    {
+                      "code": "2.16.840.1.113883.3.1937.777.24.5.3.8",
+                      "system": "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3",
+                      "display": "MDAT wissenschaftlich nutzen EU DSGVO NIVEAU"
+                    }
+                  ]
+                }
+              ],
+              "type": "permit"
+            },
+            {
+              "period": {
+                "start": "2023-07-05",
+                "end": "2053-07-31"
+              },
+              "code": [
+                {
+                  "coding": [
+                    {
+                      "code": "2.16.840.1.113883.3.1937.777.24.5.3.19",
+                      "system": "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3",
+                      "display": "BIOMAT erheben"
+                    }
+                  ]
+                }
+              ],
+              "type": "permit"
+            },
+            {
+              "period": {
+                "start": "2023-07-05",
+                "end": "2053-07-31"
+              },
+              "code": [
+                {
+                  "coding": [
+                    {
+                      "code": "2.16.840.1.113883.3.1937.777.24.5.3.9",
+                      "system": "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3",
+                      "display": "MDAT zusammenfuehren Dritte"
+                    }
+                  ]
+                }
+              ],
+              "type": "permit"
+            },
+            {
+              "period": {
+                "start": "2023-07-05",
+                "end": "2053-07-31"
+              },
+              "code": [
+                {
+                  "coding": [
+                    {
+                      "code": "2.16.840.1.113883.3.1937.777.24.5.3.20",
+                      "system": "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3",
+                      "display": "BIOMAT lagern verarbeiten"
+                    }
+                  ]
+                }
+              ],
+              "type": "permit"
+            },
+            {
+              "period": {
+                "start": "2023-07-05",
+                "end": "2053-07-31"
+              },
+              "code": [
+                {
+                  "coding": [
+                    {
+                      "code": "2.16.840.1.113883.3.1937.777.24.5.3.22",
+                      "system": "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3",
+                      "display": "BIOMAT wissenschaftlich nutzen EU DSGVO NIVEAU"
+                    }
+                  ]
+                }
+              ],
+              "type": "permit"
+            }
+          ],
+          "type": "deny"
+        },
+        "scope": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/consentscope",
+              "code": "research"
+            }
+          ]
+        },
+        "status": "active",
+        "patient": {
+          "reference": "Patient/mii-exa-test-data-patient-5"
+        },
+        "dateTime": "2023-07-05T09:15:00+02:00"
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Encounter"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Encounter/mii-exa-test-data-patient-5-encounter-1",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "mii-exa-test-data-patient-5-encounter-1",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung"
+          ]
+        },
+        "identifier": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "code": "VN"
+                }
+              ]
+            },
+            "system": "https://www.charite.de/fhir/NamingSystem/Aufnahmenummern",
+            "value": "MII_0000006"
+          }
+        ],
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://fhir.de/CodeSystem/Kontaktebene",
+                "code": "einrichtungskontakt"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "http://fhir.de/CodeSystem/kontaktart-de",
+                "code": "normalstationaer"
+              }
+            ]
+          }
+        ],
+        "serviceType": {
+          "coding": [
+            {
+              "system": "http://fhir.de/CodeSystem/dkgev/Fachabteilungsschluessel",
+              "code": "2400"
+            }
+          ]
+        },
+        "period": {
+          "start": "2023-07-10",
+          "end": "2023-07-18"
+        },
+        "hospitalization": {
+          "dischargeDisposition": {
+            "extension": [
+              {
+                "extension": [
+                  {
+                    "url": "ErsteUndZweiteStelle",
+                    "valueCoding": {
+                      "code": "01",
+                      "system": "http://fhir.de/CodeSystem/dkgev/EntlassungsgrundErsteUndZweiteStelle",
+                      "display": "Behandlung regulär beendet"
+                    }
+                  },
+                  {
+                    "url": "DritteStelle",
+                    "valueCoding": {
+                      "code": "1",
+                      "system": "http://fhir.de/CodeSystem/dkgev/EntlassungsgrundDritteStelle",
+                      "display": "arbeitsfähig entlassen"
+                    }
+                  }
+                ],
+                "url": "http://fhir.de/StructureDefinition/Entlassungsgrund"
+              }
+            ]
+          },
+          "admitSource": {
+            "coding": [
+              {
+                "code": "E",
+                "system": "http://fhir.de/CodeSystem/dgkev/Aufnahmeanlass",
+                "display": "Einweisung durch einen Arzt"
+              }
+            ]
+          }
+        },
+        "serviceProvider": {
+          "identifier": {
+            "system": "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier",
+            "value": "Charité"
+          },
+          "reference": "Organization/mii-exa-test-data-organization-charite",
+          "display": "Charité - Universitätsmedizin Berlin"
+        },
+        "status": "finished",
+        "class": {
+          "code": "IMP",
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode"
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-5"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Condition"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Condition/mii-exa-test-data-patient-5-diagnose-1",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "mii-exa-test-data-patient-5-diagnose-1",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/core/modul-diagnose/StructureDefinition/Diagnose"
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+              "code": "N80.1",
+              "version": "2023"
+            },
+            {
+              "system": "http://fhir.de/CodeSystem/bfarm/alpha-id",
+              "code": "I32145",
+              "version": "2023",
+              "display": "Endometriose des Ovars"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "129103003",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+              "display": "Endometriosis (disorder)"
+            }
+          ]
+        },
+        "note": [
+          {
+            "text": "Endometriose des Ovars"
+          }
+        ],
+        "bodySite": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "15497006",
+                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+                "display": "Ovarian structure (body structure)"
+              }
+            ]
+          }
+        ],
+        "clinicalStatus": {
+          "coding": [
+            {
+              "code": "active",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "code": "confirmed",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-5"
+        },
+        "recordedDate": "2023-07-10"
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-5-vitalstatus-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-5-vitalstatus-1",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Vitalstatus"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "67162-8"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-5"
+        },
+        "effectiveDateTime": "2023-11-08",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "L",
+              "system": "https://www.medizininformatik-initiative.de/fhir/core/modul-person/CodeSystem/Vitalstatus"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Procedure"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Procedure/mii-exa-test-data-patient-5-prozedur-1",
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "mii-exa-test-data-patient-5-prozedur-1",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Procedure"
+          ]
+        },
+        "category": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "165197003",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "73632009",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+            },
+            {
+              "system": "http://fhir.de/CodeSystem/bfarm/ops",
+              "code": "1-694",
+              "version": "2023"
+            }
+          ]
+        },
+        "bodySite": [
+          {
+            "coding": [
+              {
+                "code": "362696003",
+                "system": "http://snomed.info/sct",
+                "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+              }
+            ]
+          }
+        ],
+        "note": [
+          {
+            "text": "Diagnostische Laparoskopie zur Endometriose-Abklärung"
+          }
+        ],
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Durchfuehrungsabsicht",
+            "valueCoding": {
+              "system": "http://snomed.info/sct",
+              "code": "261004008",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+              "display": "Diagnostic intent"
+            }
+          }
+        ],
+        "status": "completed",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-5"
+        },
+        "performedDateTime": "2023-07-13T09:00:00+02:00",
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-patient-5-encounter-1"
+        },
+        "recorder": {
+          "reference": "PractitionerRole/mii-exa-test-data-practitioner-role-physician-1"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Procedure"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Procedure/mii-exa-test-data-patient-5-prozedur-2",
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "mii-exa-test-data-patient-5-prozedur-2",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Procedure"
+          ]
+        },
+        "category": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "387713003",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "713174005",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+            },
+            {
+              "system": "http://fhir.de/CodeSystem/bfarm/ops",
+              "code": "5-681.32",
+              "version": "2023"
+            }
+          ]
+        },
+        "bodySite": [
+          {
+            "coding": [
+              {
+                "code": "818983003",
+                "system": "http://snomed.info/sct",
+                "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+              }
+            ]
+          }
+        ],
+        "note": [
+          {
+            "text": "Laparoskopische Sanierung der Endometriose-Herde"
+          }
+        ],
+        "performedPeriod": {
+          "start": "2023-07-13T09:30:00+02:00",
+          "end": "2023-07-13T12:00:00+02:00"
+        },
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Durchfuehrungsabsicht",
+            "valueCoding": {
+              "system": "http://snomed.info/sct",
+              "code": "262202000",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+              "display": "Therapeutic"
+            }
+          }
+        ],
+        "status": "completed",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-5"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-patient-5-encounter-1"
+        },
+        "recorder": {
+          "reference": "PractitionerRole/mii-exa-test-data-practitioner-role-physician-1"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "ServiceRequest"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/ServiceRequest/mii-exa-test-data-patient-5-labrequest-1",
+      "resource": {
+        "resourceType": "ServiceRequest",
+        "id": "mii-exa-test-data-patient-5-labrequest-1",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ServiceRequestLab"
+          ]
+        },
+        "identifier": [
+          {
+            "assigner": {
+              "identifier": {
+                "system": "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier",
+                "value": "Charité"
+              }
+            },
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "code": "PLAC"
+                }
+              ]
+            },
+            "system": "https://www.charite.de/fhir/sid/lab-requests",
+            "value": "LAB_000005"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "108252007",
+                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+                "display": "Laboratory procedure"
+              }
+            ]
+          }
+        ],
+        "reasonCode": [
+          {
+            "coding": [
+              {
+                "code": "73211009",
+                "system": "http://snomed.info/sct",
+                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+                "display": "Diabetes mellitus"
+              }
+            ]
+          }
+        ],
+        "specimen": [
+          {
+            "reference": "Specimen/mii-exa-test-data-patient-5-specimen-2"
+          }
+        ],
+        "status": "completed",
+        "intent": "order",
+        "code": {
+          "coding": [
+            {
+              "code": "24362-6",
+              "system": "http://loinc.org",
+              "display": "Glucose and Hemoglobin A1c panel"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-5"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-patient-5-encounter-1"
+        },
+        "authoredOn": "2023-07-12T06:15:00+02:00",
+        "requester": {
+          "reference": "Practitioner/mii-exa-test-data-practitioner-physician-1"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "DiagnosticReport"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/DiagnosticReport/mii-exa-test-data-patient-5-labreport-1",
+      "resource": {
+        "resourceType": "DiagnosticReport",
+        "id": "mii-exa-test-data-patient-5-labreport-1",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/DiagnosticReportLab"
+          ]
+        },
+        "identifier": [
+          {
+            "assigner": {
+              "identifier": {
+                "system": "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier",
+                "value": "Charité"
+              }
+            },
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "code": "FILL"
+                }
+              ]
+            },
+            "system": "https://www.charite.de/fhir/sid/lab-results",
+            "value": "LDR_000005"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "26436-6",
+                "display": "Laboratory studies (set)"
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                "code": "LAB"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "11502-2",
+              "display": "Laboratory report"
+            }
+          ]
+        },
+        "basedOn": [
+          {
+            "reference": "ServiceRequest/mii-exa-test-data-patient-5-labrequest-1"
+          }
+        ],
+        "performer": [
+          {
+            "reference": "Organization/mii-exa-test-data-organization-labor-berlin"
+          }
+        ],
+        "specimen": [
+          {
+            "reference": "Specimen/mii-exa-test-data-patient-5-specimen-1"
+          },
+          {
+            "reference": "Specimen/mii-exa-test-data-patient-5-specimen-2"
+          }
+        ],
+        "result": [
+          {
+            "reference": "Observation/mii-exa-test-data-patient-5-labobs-1"
+          },
+          {
+            "reference": "Observation/mii-exa-test-data-patient-5-labobs-2"
+          },
+          {
+            "reference": "Observation/mii-exa-test-data-patient-5-labobs-3"
+          }
+        ],
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-5"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-patient-5-encounter-1"
+        },
+        "effectiveDateTime": "2023-07-12T06:45:00+02:00",
+        "issued": "2023-07-12T10:15:00+02:00",
+        "conclusion": "Leichte Anämie (Hb 11,8 g/dL) bei normoglykämischen Nüchternwerten (92 mg/dL). Eisenmangel-Anämie bei Endometriose-Patientin wahrscheinlich."
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-5-labobs-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-5-labobs-1",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab"
+          ]
+        },
+        "identifier": [
+          {
+            "assigner": {
+              "identifier": {
+                "system": "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier",
+                "value": "Charité"
+              }
+            },
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "code": "OBI"
+                }
+              ]
+            },
+            "system": "https://www.charite.de/fhir/sid/lab-results",
+            "value": "LO_000017"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "26436-6",
+                "display": "Laboratory studies (set)"
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ]
+          }
+        ],
+        "basedOn": [
+          {
+            "reference": "ServiceRequest/mii-exa-test-data-patient-5-labrequest-1"
+          }
+        ],
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "code": "N",
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "display": "Normal"
+              }
+            ]
+          }
+        ],
+        "valueQuantity": {
+          "system": "http://unitsofmeasure.org",
+          "value": 7.8,
+          "code": "/nL",
+          "unit": "/nanoliter"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "26464-8",
+              "system": "http://loinc.org",
+              "display": "Leukocytes [#/volume] in Blood"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-5"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-patient-5-encounter-1"
+        },
+        "effectiveDateTime": "2023-07-12T06:45:00+02:00",
+        "issued": "2023-07-12T08:30:00+02:00",
+        "method": {
+          "coding": [
+            {
+              "code": "703452004",
+              "system": "http://snomed.info/sct",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+              "display": "Electrical impedance technique (qualifier value)"
+            }
+          ]
+        },
+        "specimen": {
+          "reference": "Specimen/mii-exa-test-data-patient-5-specimen-1"
+        },
+        "device": {
+          "reference": "Device/mii-exa-test-data-device-roche-cobas-c303"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-5-labobs-2",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-5-labobs-2",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab"
+          ]
+        },
+        "identifier": [
+          {
+            "assigner": {
+              "identifier": {
+                "system": "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier",
+                "value": "Charité"
+              }
+            },
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "code": "OBI"
+                }
+              ]
+            },
+            "system": "https://www.charite.de/fhir/sid/lab-results",
+            "value": "LO_000018"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "26436-6",
+                "display": "Laboratory studies (set)"
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ]
+          }
+        ],
+        "basedOn": [
+          {
+            "reference": "ServiceRequest/mii-exa-test-data-patient-5-labrequest-1"
+          }
+        ],
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "code": "L",
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "display": "Low"
+              }
+            ]
+          }
+        ],
+        "valueQuantity": {
+          "system": "http://unitsofmeasure.org",
+          "value": 11.8,
+          "code": "g/dL",
+          "unit": "gram per deciliter"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "718-7",
+              "system": "http://loinc.org",
+              "display": "Hemoglobin [Mass/volume] in Blood"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-5"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-patient-5-encounter-1"
+        },
+        "effectiveDateTime": "2023-07-12T06:45:00+02:00",
+        "issued": "2023-07-12T08:30:00+02:00",
+        "method": {
+          "coding": [
+            {
+              "code": "83561000052101",
+              "system": "http://snomed.info/sct",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+              "display": "Photometry technique (qualifier value)"
+            }
+          ]
+        },
+        "specimen": {
+          "reference": "Specimen/mii-exa-test-data-patient-5-specimen-1"
+        },
+        "device": {
+          "reference": "Device/mii-exa-test-data-device-roche-cobas-c303"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-5-labobs-3",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-5-labobs-3",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab"
+          ]
+        },
+        "identifier": [
+          {
+            "assigner": {
+              "identifier": {
+                "system": "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier",
+                "value": "Charité"
+              }
+            },
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "code": "OBI"
+                }
+              ]
+            },
+            "system": "https://www.charite.de/fhir/sid/lab-results",
+            "value": "LO_000019"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "26436-6",
+                "display": "Laboratory studies (set)"
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ]
+          }
+        ],
+        "basedOn": [
+          {
+            "reference": "ServiceRequest/mii-exa-test-data-patient-5-labrequest-1"
+          }
+        ],
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "code": "N",
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "display": "Normal"
+              }
+            ]
+          }
+        ],
+        "valueQuantity": {
+          "system": "http://unitsofmeasure.org",
+          "value": 92,
+          "code": "mg/dL",
+          "unit": "milligram per deciliter"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "1558-6",
+              "system": "http://loinc.org",
+              "display": "Fasting glucose [Mass/volume] in Serum or Plasma"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-5"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-patient-5-encounter-1"
+        },
+        "effectiveDateTime": "2023-07-12T06:45:00+02:00",
+        "issued": "2023-07-12T08:30:00+02:00",
+        "method": {
+          "coding": [
+            {
+              "code": "83561000052101",
+              "system": "http://snomed.info/sct",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+              "display": "Photometry technique (qualifier value)"
+            }
+          ]
+        },
+        "specimen": {
+          "reference": "Specimen/mii-exa-test-data-patient-5-specimen-1"
+        },
+        "device": {
+          "reference": "Device/mii-exa-test-data-device-roche-cobas-c303"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "MedicationRequest"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/MedicationRequest/mii-exa-test-data-patient-5-medrequest-1",
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "mii-exa-test-data-patient-5-medrequest-1",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationRequest"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://www.charite.de/fhir/sid/MedicationOrders",
+            "value": "MO_0000013"
+          }
+        ],
+        "dosageInstruction": [
+          {
+            "doseAndRate": [
+              {
+                "doseQuantity": {
+                  "value": 3.75,
+                  "code": "mg",
+                  "system": "http://unitsofmeasure.org",
+                  "unit": "mg"
+                }
+              }
+            ],
+            "timing": {
+              "repeat": {
+                "frequency": 1,
+                "period": 4,
+                "periodUnit": "wk"
+              }
+            },
+            "text": "Leuprorelin 3,75mg s.c. alle 4 Wochen",
+            "route": {
+              "coding": [
+                {
+                  "code": "20066000",
+                  "system": "http://standardterms.edqm.eu",
+                  "display": "Subcutaneous use"
+                }
+              ]
+            }
+          }
+        ],
+        "substitution": {
+          "allowedBoolean": false
+        },
+        "status": "active",
+        "intent": "order",
+        "medicationReference": {
+          "reference": "Medication/mii-exa-test-data-medication-leuprorelin"
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-5"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-patient-5-encounter-1"
+        },
+        "authoredOn": "2023-07-11T09:00:00+02:00"
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "MedicationRequest"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/MedicationRequest/mii-exa-test-data-patient-5-medrequest-2",
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "mii-exa-test-data-patient-5-medrequest-2",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationRequest"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://www.charite.de/fhir/sid/MedicationOrders",
+            "value": "MO_0000014"
+          }
+        ],
+        "dosageInstruction": [
+          {
+            "doseAndRate": [
+              {
+                "doseQuantity": {
+                  "value": 400,
+                  "code": "mg",
+                  "system": "http://unitsofmeasure.org",
+                  "unit": "mg"
+                }
+              }
+            ],
+            "timing": {
+              "repeat": {
+                "frequency": 3,
+                "period": 1,
+                "periodUnit": "d"
+              }
+            },
+            "text": "Ibuprofen 400mg bis zu 3x täglich bei Bedarf",
+            "route": {
+              "coding": [
+                {
+                  "code": "20053000",
+                  "system": "http://standardterms.edqm.eu",
+                  "display": "Oral use"
+                }
+              ]
+            },
+            "asNeededBoolean": true
+          }
+        ],
+        "substitution": {
+          "allowedBoolean": true
+        },
+        "status": "active",
+        "intent": "order",
+        "medicationReference": {
+          "reference": "Medication/mii-exa-test-data-medication-ibuprofen"
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-5"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-patient-5-encounter-1"
+        },
+        "authoredOn": "2023-07-11T09:30:00+02:00"
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "MedicationStatement"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/MedicationStatement/mii-exa-test-data-patient-5-medstatement-1",
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "mii-exa-test-data-patient-5-medstatement-1",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://www.charite.de/fhir/sid/MedicationStatements",
+            "value": "MS_0000014"
+          }
+        ],
+        "basedOn": [
+          {
+            "reference": "MedicationRequest/mii-exa-test-data-patient-5-medrequest-1"
+          }
+        ],
+        "category": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/medication-statement-category",
+              "code": "inpatient"
+            },
+            {
+              "system": "http://ihe-d.de/CodeSystems/FallkontextBeiDokumentenerstellung",
+              "code": "E200",
+              "display": "stationärer Aufenthalt"
+            }
+          ]
+        },
+        "effectivePeriod": {
+          "start": "2023-07-11T09:00:00+02:00",
+          "end": "2023-07-11T09:05:00+02:00"
+        },
+        "dosage": [
+          {
+            "route": {
+              "coding": [
+                {
+                  "system": "http://standardterms.edqm.eu",
+                  "code": "20066000",
+                  "display": "Subcutaneous use"
+                }
+              ]
+            },
+            "doseAndRate": [
+              {
+                "doseQuantity": {
+                  "system": "http://unitsofmeasure.org",
+                  "value": 3.75,
+                  "code": "mg",
+                  "unit": "mg"
+                }
+              }
+            ],
+            "text": "Leuprorelin 3,75mg s.c. alle 4 Wochen"
+          }
+        ],
+        "status": "completed",
+        "medicationReference": {
+          "reference": "Medication/mii-exa-test-data-medication-leuprorelin"
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-5"
+        },
+        "context": {
+          "reference": "Encounter/mii-exa-test-data-patient-5-encounter-1"
+        },
+        "dateAsserted": "2023-07-11"
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "MedicationStatement"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/MedicationStatement/mii-exa-test-data-patient-5-medstatement-2",
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "mii-exa-test-data-patient-5-medstatement-2",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://www.charite.de/fhir/sid/MedicationStatements",
+            "value": "MS_0000015"
+          }
+        ],
+        "basedOn": [
+          {
+            "reference": "MedicationRequest/mii-exa-test-data-patient-5-medrequest-2"
+          }
+        ],
+        "category": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/medication-statement-category",
+              "code": "inpatient"
+            },
+            {
+              "system": "http://ihe-d.de/CodeSystems/FallkontextBeiDokumentenerstellung",
+              "code": "E200",
+              "display": "stationärer Aufenthalt"
+            }
+          ]
+        },
+        "effectivePeriod": {
+          "start": "2023-07-11T09:30:00+02:00",
+          "end": "2023-07-18T10:00:00+02:00"
+        },
+        "dosage": [
+          {
+            "route": {
+              "coding": [
+                {
+                  "system": "http://standardterms.edqm.eu",
+                  "code": "20053000",
+                  "display": "Oral use"
+                }
+              ]
+            },
+            "doseAndRate": [
+              {
+                "doseQuantity": {
+                  "system": "http://unitsofmeasure.org",
+                  "value": 400,
+                  "code": "mg",
+                  "unit": "mg"
+                }
+              }
+            ],
+            "timing": {
+              "repeat": {
+                "frequency": 3,
+                "period": 1,
+                "periodUnit": "d"
+              }
+            },
+            "text": "Ibuprofen 400mg bis zu 3x täglich bei Bedarf",
+            "asNeededBoolean": true
+          }
+        ],
+        "status": "active",
+        "medicationReference": {
+          "reference": "Medication/mii-exa-test-data-medication-ibuprofen"
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-5"
+        },
+        "context": {
+          "reference": "Encounter/mii-exa-test-data-patient-5-encounter-1"
+        },
+        "dateAsserted": "2023-07-11"
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "MedicationAdministration"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/MedicationAdministration/mii-exa-test-data-patient-5-medadmin-1",
+      "resource": {
+        "resourceType": "MedicationAdministration",
+        "id": "mii-exa-test-data-patient-5-medadmin-1",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationAdministration"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://www.charite.de/fhir/sid/MedicationAdministrations",
+            "value": "MA_0000011"
+          }
+        ],
+        "dosage": {
+          "route": {
+            "coding": [
+              {
+                "system": "http://standardterms.edqm.eu",
+                "code": "20066000",
+                "display": "Subcutaneous use"
+              }
+            ]
+          },
+          "dose": {
+            "system": "http://unitsofmeasure.org",
+            "value": 3.75,
+            "code": "mg",
+            "unit": "mg"
+          },
+          "text": "Leuprorelin 3,75mg s.c."
+        },
+        "status": "completed",
+        "category": {
+          "coding": [
+            {
+              "code": "inpatient",
+              "system": "http://terminology.hl7.org/CodeSystem/medication-admin-category",
+              "display": "Inpatient"
+            }
+          ]
+        },
+        "medicationReference": {
+          "reference": "Medication/mii-exa-test-data-medication-leuprorelin"
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-5"
+        },
+        "context": {
+          "reference": "Encounter/mii-exa-test-data-patient-5-encounter-1"
+        },
+        "effectiveDateTime": "2023-07-11T09:00:00+02:00",
+        "request": {
+          "reference": "MedicationRequest/mii-exa-test-data-patient-5-medrequest-1"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "MedicationAdministration"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/MedicationAdministration/mii-exa-test-data-patient-5-medadmin-2",
+      "resource": {
+        "resourceType": "MedicationAdministration",
+        "id": "mii-exa-test-data-patient-5-medadmin-2",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationAdministration"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://www.charite.de/fhir/sid/MedicationAdministrations",
+            "value": "MA_0000012"
+          }
+        ],
+        "dosage": {
+          "route": {
+            "coding": [
+              {
+                "system": "http://standardterms.edqm.eu",
+                "code": "20053000",
+                "display": "Oral use"
+              }
+            ]
+          },
+          "dose": {
+            "system": "http://unitsofmeasure.org",
+            "value": 400,
+            "code": "mg",
+            "unit": "mg"
+          },
+          "text": "Ibuprofen 400mg oral bei Schmerzen"
+        },
+        "status": "completed",
+        "category": {
+          "coding": [
+            {
+              "code": "inpatient",
+              "system": "http://terminology.hl7.org/CodeSystem/medication-admin-category",
+              "display": "Inpatient"
+            }
+          ]
+        },
+        "medicationReference": {
+          "reference": "Medication/mii-exa-test-data-medication-ibuprofen"
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-5"
+        },
+        "context": {
+          "reference": "Encounter/mii-exa-test-data-patient-5-encounter-1"
+        },
+        "effectiveDateTime": "2023-07-11T15:00:00+02:00",
+        "request": {
+          "reference": "MedicationRequest/mii-exa-test-data-patient-5-medrequest-2"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "List"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/List/mii-exa-test-data-patient-5-list-aufnahmemedikation",
+      "resource": {
+        "resourceType": "List",
+        "id": "mii-exa-test-data-patient-5-list-aufnahmemedikation",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/medikationsliste"
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/list-example-use-codes",
+              "code": "medications"
+            },
+            {
+              "system": "http://ihe-d.de/CodeSystems/FallkontextBeiDokumentenerstellung",
+              "code": "E210"
+            }
+          ]
+        },
+        "entry": [
+          {
+            "item": {
+              "reference": "MedicationStatement/mii-exa-test-data-patient-5-medstatement-1"
+            }
+          }
+        ],
+        "status": "current",
+        "mode": "snapshot",
+        "title": "Aufnahmemedikation",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-5"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "List"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/List/mii-exa-test-data-patient-5-list-stat-aufenthalt",
+      "resource": {
+        "resourceType": "List",
+        "id": "mii-exa-test-data-patient-5-list-stat-aufenthalt",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/medikationsliste"
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/list-example-use-codes",
+              "code": "medications"
+            },
+            {
+              "system": "http://ihe-d.de/CodeSystems/FallkontextBeiDokumentenerstellung",
+              "code": "E200"
+            }
+          ]
+        },
+        "entry": [
+          {
+            "item": {
+              "reference": "MedicationStatement/mii-exa-test-data-patient-5-medstatement-1"
+            }
+          },
+          {
+            "item": {
+              "reference": "MedicationStatement/mii-exa-test-data-patient-5-medstatement-2"
+            }
+          }
+        ],
+        "status": "current",
+        "mode": "working",
+        "title": "Medikationsliste während stationärem Aufenthalt",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-5"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Medication"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Medication/mii-exa-test-data-medication-leuprorelin",
+      "resource": {
+        "resourceType": "Medication",
+        "id": "mii-exa-test-data-medication-leuprorelin",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication"
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://fhir.de/CodeSystem/bfarm/atc",
+              "code": "L02AE02",
+              "version": "2024",
+              "display": "Leuprorelin"
+            }
+          ]
+        },
+        "ingredient": [
+          {
+            "itemCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://fhir.de/CodeSystem/ask",
+                  "code": "01648",
+                  "display": "Leuprorelin"
+                }
+              ]
+            },
+            "strength": {
+              "numerator": {
+                "value": 3.75,
+                "code": "mg",
+                "system": "http://unitsofmeasure.org",
+                "unit": "mg"
+              },
+              "denominator": {
+                "value": 1,
+                "code": "ml",
+                "system": "http://unitsofmeasure.org",
+                "unit": "ml"
+              }
+            }
+          }
+        ],
+        "form": {
+          "coding": [
+            {
+              "code": "11201000",
+              "system": "http://standardterms.edqm.eu",
+              "display": "Solution for injection"
+            }
+          ]
+        },
+        "status": "active"
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Medication"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Medication/mii-exa-test-data-medication-ibuprofen",
+      "resource": {
+        "resourceType": "Medication",
+        "id": "mii-exa-test-data-medication-ibuprofen",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication"
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://fhir.de/CodeSystem/bfarm/atc",
+              "code": "M01AE01",
+              "version": "2024",
+              "display": "Ibuprofen"
+            }
+          ]
+        },
+        "ingredient": [
+          {
+            "itemCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://fhir.de/CodeSystem/ask",
+                  "code": "01341",
+                  "display": "Ibuprofen"
+                }
+              ]
+            },
+            "strength": {
+              "numerator": {
+                "value": 400,
+                "code": "mg",
+                "system": "http://unitsofmeasure.org",
+                "unit": "mg"
+              },
+              "denominator": {
+                "value": 1,
+                "code": "1",
+                "system": "http://unitsofmeasure.org",
+                "unit": "1"
+              }
+            }
+          }
+        ],
+        "form": {
+          "coding": [
+            {
+              "code": "10221000",
+              "system": "http://standardterms.edqm.eu",
+              "display": "Film-coated tablet"
+            }
+          ]
+        },
+        "status": "active"
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Specimen"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Specimen/mii-exa-test-data-patient-5-specimen-1",
+      "resource": {
+        "resourceType": "Specimen",
+        "id": "mii-exa-test-data-patient-5-specimen-1",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Specimen"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/VerwaltendeOrganisation",
+            "valueReference": {
+              "reference": "Organization/mii-exa-test-data-organization-biobank-charite"
+            }
+          },
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Diagnose",
+            "valueReference": {
+              "reference": "Condition/mii-exa-test-data-patient-5-diagnose-1"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://www.charite.de/fhir/sid/Bioproben",
+            "value": "BP_000008"
+          }
+        ],
+        "type": {
+          "coding": [
+            {
+              "code": "445295009",
+              "system": "http://snomed.info/sct",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+              "display": "Blood specimen with edetic acid (specimen)"
+            }
+          ]
+        },
+        "collection": {
+          "bodySite": {
+            "coding": [
+              {
+                "code": "368208006",
+                "system": "http://snomed.info/sct",
+                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+                "display": "Left upper arm structure (body structure)"
+              }
+            ]
+          },
+          "collectedDateTime": "2023-07-12T06:00:00+02:00"
+        },
+        "container": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "code": "83059008",
+                  "system": "http://snomed.info/sct",
+                  "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+                  "display": "Tube, device (physical object)"
+                }
+              ]
+            },
+            "capacity": {
+              "value": 5,
+              "code": "ml",
+              "system": "http://unitsofmeasure.org"
+            },
+            "specimenQuantity": {
+              "value": 5,
+              "code": "ml",
+              "system": "http://unitsofmeasure.org"
+            }
+          }
+        ],
+        "status": "available",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-5"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Specimen"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Specimen/mii-exa-test-data-patient-5-specimen-2",
+      "resource": {
+        "resourceType": "Specimen",
+        "id": "mii-exa-test-data-patient-5-specimen-2",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Specimen"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/VerwaltendeOrganisation",
+            "valueReference": {
+              "reference": "Organization/mii-exa-test-data-organization-biobank-charite"
+            }
+          },
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Diagnose",
+            "valueReference": {
+              "reference": "Condition/mii-exa-test-data-patient-5-diagnose-1"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://www.charite.de/fhir/sid/Bioproben",
+            "value": "BP_000009"
+          }
+        ],
+        "type": {
+          "coding": [
+            {
+              "code": "119364003",
+              "system": "http://snomed.info/sct",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+              "display": "Serum specimen (specimen)"
+            }
+          ]
+        },
+        "collection": {
+          "bodySite": {
+            "coding": [
+              {
+                "code": "368209003",
+                "system": "http://snomed.info/sct",
+                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+                "display": "Right upper arm structure (body structure)"
+              }
+            ]
+          },
+          "collectedDateTime": "2023-07-12T06:00:00+02:00",
+          "fastingStatusCodeableConcept": {
+            "coding": [
+              {
+                "code": "F",
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0916",
+                "display": "Patient was fasting prior to the procedure."
+              }
+            ]
+          }
+        },
+        "container": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "code": "83059008",
+                  "system": "http://snomed.info/sct",
+                  "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+                  "display": "Tube, device (physical object)"
+                }
+              ]
+            },
+            "capacity": {
+              "value": 7,
+              "code": "ml",
+              "system": "http://unitsofmeasure.org"
+            },
+            "specimenQuantity": {
+              "value": 7,
+              "code": "ml",
+              "system": "http://unitsofmeasure.org"
+            }
+          }
+        ],
+        "status": "available",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-5"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Organization"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Organization/mii-exa-test-data-organization-charite",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "mii-exa-test-data-organization-charite",
+        "type": [
+          {
+            "coding": [
+              {
+                "code": "prov",
+                "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+                "display": "Healthcare Provider"
+              }
+            ]
+          }
+        ],
+        "name": "Charité – Universitätsmedizin Berlin"
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Organization"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Organization/mii-exa-test-data-organization-labor-berlin",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "mii-exa-test-data-organization-labor-berlin",
+        "type": [
+          {
+            "coding": [
+              {
+                "code": "prov",
+                "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+                "display": "Healthcare Provider"
+              }
+            ]
+          }
+        ],
+        "name": "Labor Berlin – Charité Vivantes GmbH"
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Organization"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Organization/mii-exa-test-data-organization-biobank-charite",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "mii-exa-test-data-organization-biobank-charite",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Organization"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/BeschreibungSammlung",
+            "valueMarkdown": "Zentrale Biobank der Charité"
+          }
+        ],
+        "identifier": [
+          {
+            "system": "http://www.bbmri-eric.eu/",
+            "value": "de-12345"
+          }
+        ],
+        "alias": [
+          "ZeBanC"
+        ],
+        "contact": [
+          {
+            "extension": [
+              {
+                "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/KontaktRolle",
+                "valueString": "Direktor"
+              }
+            ],
+            "name": {
+              "given": [
+                "Koch"
+              ],
+              "prefix": [
+                "Prof."
+              ],
+              "family": "Robert"
+            },
+            "telecom": [
+              {
+                "system": "email",
+                "value": "robert.koch@charite.de"
+              }
+            ],
+            "address": {
+              "line": [
+                "Südring 7"
+              ],
+              "postalCode": "13353",
+              "city": "Berlin"
+            },
+            "purpose": {
+              "coding": [
+                {
+                  "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/CodeSystem/ContactType",
+                  "code": "RESEARCH"
+                }
+              ]
+            }
+          }
+        ],
+        "name": "Zentrale Biobank der Charité",
+        "partOf": {
+          "reference": "Organization/mii-exa-test-data-organization-charite"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Practitioner"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Practitioner/mii-exa-test-data-practitioner-physician-1",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "mii-exa-test-data-practitioner-physician-1",
+        "name": [
+          {
+            "given": [
+              "Rahel"
+            ],
+            "family": "Hirsch"
+          }
+        ],
+        "active": true
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "PractitionerRole"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/PractitionerRole/mii-exa-test-data-practitioner-role-physician-1",
+      "resource": {
+        "resourceType": "PractitionerRole",
+        "id": "mii-exa-test-data-practitioner-role-physician-1",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-studie/StructureDefinition/mii-pr-studie-beteiligte-person"
+          ]
+        },
+        "code": [
+          {
+            "coding": [
+              {
+                "code": "309343006",
+                "system": "http://snomed.info/sct",
+                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+                "display": "Physician (occupation)"
+              }
+            ]
+          }
+        ],
+        "active": true,
+        "practitioner": {
+          "reference": "Practitioner/mii-exa-test-data-practitioner-physician-1"
+        },
+        "organization": {
+          "reference": "Organization/mii-exa-test-data-organization-charite"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Device"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Device/mii-exa-test-data-device-roche-cobas-c303",
+      "resource": {
+        "resourceType": "Device",
+        "id": "mii-exa-test-data-device-roche-cobas-c303",
+        "deviceName": [
+          {
+            "name": "cobas",
+            "type": "manufacturer-name"
+          }
+        ],
+        "status": "active",
+        "manufacturer": "Roche",
+        "modelNumber": "c 303",
+        "parent": {
+          "reference": "Device/mii-exa-test-data-device-roche-cobas"
+        }
+      }
+    }
+  ],
+  "type": "transaction",
+  "timestamp": "2025-06-18T13:55:00+02:00"
+}

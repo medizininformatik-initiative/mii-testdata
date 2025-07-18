@@ -1,0 +1,56 @@
+{
+  "resourceType": "Medication",
+  "id": "mii-exa-test-data-medication-salbutamol",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/atc",
+        "code": "R03AC02",
+        "version": "2024",
+        "display": "Salbutamol"
+      }
+    ]
+  },
+  "ingredient": [
+    {
+      "itemCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://fhir.de/CodeSystem/ask",
+            "code": "02303",
+            "display": "Salbutamol"
+          }
+        ]
+      },
+      "strength": {
+        "numerator": {
+          "value": 100,
+          "code": "ug",
+          "system": "http://unitsofmeasure.org",
+          "unit": "μg"
+        },
+        "denominator": {
+          "value": 1,
+          "code": "1",
+          "system": "http://unitsofmeasure.org",
+          "unit": "1"
+        }
+      }
+    }
+  ],
+  "form": {
+    "coding": [
+      {
+        "code": "11106000",
+        "system": "http://standardterms.edqm.eu",
+        "display": "Pressurised inhalation, solution"
+      }
+    ]
+  },
+  "status": "active"
+}

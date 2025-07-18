@@ -1,0 +1,61 @@
+{
+  "resourceType": "MedicationRequest",
+  "id": "mii-exa-test-data-patient-7-medrequest-1",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationRequest"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "https://www.charite.de/fhir/sid/MedicationOrders",
+      "value": "MO_0000018"
+    }
+  ],
+  "dosageInstruction": [
+    {
+      "doseAndRate": [
+        {
+          "doseQuantity": {
+            "value": 1.2,
+            "code": "g",
+            "system": "http://unitsofmeasure.org",
+            "unit": "g"
+          }
+        }
+      ],
+      "timing": {
+        "repeat": {
+          "frequency": 3,
+          "period": 1,
+          "periodUnit": "d"
+        }
+      },
+      "text": "Amoxicillin/Clavulansäure 1,2g IV alle 8 Stunden",
+      "route": {
+        "coding": [
+          {
+            "code": "20045000",
+            "system": "http://standardterms.edqm.eu",
+            "display": "Intravenous use"
+          }
+        ]
+      }
+    }
+  ],
+  "substitution": {
+    "allowedBoolean": false
+  },
+  "status": "active",
+  "intent": "order",
+  "medicationReference": {
+    "reference": "Medication/mii-exa-test-data-medication-amoxicillin-clavulansaeure"
+  },
+  "subject": {
+    "reference": "Patient/mii-exa-test-data-patient-7"
+  },
+  "encounter": {
+    "reference": "Encounter/mii-exa-test-data-patient-7-encounter-1"
+  },
+  "authoredOn": "2024-01-10T16:00:00+01:00"
+}

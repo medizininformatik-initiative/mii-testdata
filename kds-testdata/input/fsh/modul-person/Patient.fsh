@@ -133,3 +133,199 @@ Usage: #example
 * address[Strassenanschrift].city.extension[=].valueCode = #masked
 * address[Strassenanschrift].postalCode = "10"
 * address[Strassenanschrift].country = "DE"
+
+// Patient-5
+Instance: mii-exa-test-data-patient-5
+InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient
+Usage: #example
+* meta.profile[+] = "http://fhir.de/ConsentManagement/StructureDefinition/Patient"
+* identifier[pid].use = #usual
+* identifier[pid].type = http://terminology.hl7.org/CodeSystem/v2-0203#MR
+* identifier[pid].system = "https://www.medizininformatik-initiative.de/fhir/sid/patienten"
+* identifier[pid].value = "925847361"
+* identifier[pid].assigner.display = "Charité - Universitätsmedizin Berlin"
+* identifier[pid].assigner.identifier.system = "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"
+* identifier[pid].assigner.identifier.value = "Charité"
+* identifier[+].use = #official
+* identifier[=].type = $identifier-type-de-basis#KVZ10
+* identifier[=].system = "http://fhir.de/sid/gkv/kvid-10"
+* identifier[=].value = "C200919710"
+* identifier[=].assigner.identifier.use = #official
+* identifier[=].assigner.identifier.value = "987654321"
+* identifier[=].assigner.identifier.system = "http://fhir.de/sid/arge-ik/iknr"
+* name[name].use = #official
+* name[name].family = "Weber"
+* name[name].given[0] = "Sabine"
+* name[name].given[+] = "Maria"
+* name[geburtsname].use = #maiden
+* name[geburtsname].family = "Müller"
+* gender = #female
+* birthDate = "1985-03-12"
+* deceasedBoolean = false
+* address[Strassenanschrift].type = #both
+* address[Strassenanschrift].line = "Kantstraße 47"
+* address[Strassenanschrift].city = "München"
+* address[Strassenanschrift].postalCode = "80636"
+* address[Strassenanschrift].country = "DE"
+
+// Patient-6
+Instance: mii-exa-test-data-patient-6
+InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient
+Usage: #example
+* meta.profile[+] = "http://fhir.de/ConsentManagement/StructureDefinition/Patient"
+* identifier[pid].use = #usual
+* identifier[pid].type = http://terminology.hl7.org/CodeSystem/v2-0203#MR
+* identifier[pid].system = "https://www.medizininformatik-initiative.de/fhir/sid/patienten"
+* identifier[pid].value = "456789123"
+* identifier[pid].assigner.display = "Charité - Universitätsmedizin Berlin"
+* identifier[pid].assigner.identifier.system = "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"
+* identifier[pid].assigner.identifier.value = "Charité"
+* identifier[+].use = #official
+* identifier[=].type = $identifier-type-de-basis#KVZ10
+* identifier[=].system = "http://fhir.de/sid/gkv/kvid-10"
+* identifier[=].value = "D345678901"
+* identifier[=].assigner.identifier.use = #official
+* identifier[=].assigner.identifier.value = "123456789"
+* identifier[=].assigner.identifier.system = "http://fhir.de/sid/arge-ik/iknr"
+* name[name].use = #official
+* name[name].family = "Richter"
+* name[name].given[0] = "Thomas"
+* name[name].given[+] = "Michael"
+* gender = #male
+* birthDate = "1975-11-08"
+* deceasedBoolean = false
+* address[Strassenanschrift].type = #both
+* address[Strassenanschrift].line = "Hauptstraße 134"
+* address[Strassenanschrift].city = "Hamburg"
+* address[Strassenanschrift].postalCode = "20095"
+* address[Strassenanschrift].country = "DE"
+
+// Patient-7
+Instance: mii-exa-test-data-patient-7
+InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient
+Usage: #example
+* meta.profile[+] = "http://fhir.de/ConsentManagement/StructureDefinition/Patient"
+* identifier[pid].use = #usual
+* identifier[pid].type = http://terminology.hl7.org/CodeSystem/v2-0203#MR
+* identifier[pid].system = "https://www.medizininformatik-initiative.de/fhir/sid/patienten"
+* identifier[pid].value = "789456321"
+* identifier[pid].assigner.display = "Charité - Universitätsmedizin Berlin"
+* identifier[pid].assigner.identifier.system = "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"
+* identifier[pid].assigner.identifier.value = "Charité"
+* identifier[+].use = #official
+* identifier[=].type = $identifier-type-de-basis#KVZ10
+* identifier[=].system = "http://fhir.de/sid/gkv/kvid-10"
+* identifier[=].value = "E456789012"
+* identifier[=].assigner.identifier.use = #official
+* identifier[=].assigner.identifier.value = "567890123"
+* identifier[=].assigner.identifier.system = "http://fhir.de/sid/arge-ik/iknr"
+* name[name].use = #official
+* name[name].family = "Hoffmann"
+* name[name].given[0] = "Anna"
+* name[geburtsname].use = #maiden
+* name[geburtsname].family = "Schmidt"
+* gender = #female
+* birthDate = "1992-07-15"
+* deceasedBoolean = false
+* address[Strassenanschrift].type = #both
+* address[Strassenanschrift].line = "Gartenstraße 56"
+* address[Strassenanschrift].city = "Köln"
+* address[Strassenanschrift].postalCode = "50667"
+* address[Strassenanschrift].country = "DE"
+
+// Patient-8
+Instance: mii-exa-test-data-patient-8
+InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient
+Usage: #example
+* meta.profile[+] = "http://fhir.de/ConsentManagement/StructureDefinition/Patient"
+* identifier[pid].use = #usual
+* identifier[pid].type = http://terminology.hl7.org/CodeSystem/v2-0203#MR
+* identifier[pid].system = "https://www.medizininformatik-initiative.de/fhir/sid/patienten"
+* identifier[pid].value = "159753486"
+* identifier[pid].assigner.display = "Charité - Universitätsmedizin Berlin"
+* identifier[pid].assigner.identifier.system = "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"
+* identifier[pid].assigner.identifier.value = "Charité"
+* identifier[+].use = #official
+* identifier[=].type = $identifier-type-de-basis#KVZ10
+* identifier[=].system = "http://fhir.de/sid/gkv/kvid-10"
+* identifier[=].value = "F567890123"
+* identifier[=].assigner.identifier.use = #official
+* identifier[=].assigner.identifier.value = "234567890"
+* identifier[=].assigner.identifier.system = "http://fhir.de/sid/arge-ik/iknr"
+* name[name].use = #official
+* name[name].family = "Bauer"
+* name[name].given[0] = "Hans"
+* name[name].given[+] = "Peter"
+* gender = #male
+* birthDate = "1958-02-29"
+* deceasedBoolean = true
+* address[Strassenanschrift].type = #both
+* address[Strassenanschrift].line = "Bahnhofstraße 89"
+* address[Strassenanschrift].city = "Stuttgart"
+* address[Strassenanschrift].postalCode = "70173"
+* address[Strassenanschrift].country = "DE"
+
+// Patient-9
+Instance: mii-exa-test-data-patient-9
+InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient
+Usage: #example
+* meta.profile[+] = "http://fhir.de/ConsentManagement/StructureDefinition/Patient"
+* identifier[pid].use = #usual
+* identifier[pid].type = http://terminology.hl7.org/CodeSystem/v2-0203#MR
+* identifier[pid].system = "https://www.medizininformatik-initiative.de/fhir/sid/patienten"
+* identifier[pid].value = "321654987"
+* identifier[pid].assigner.display = "Charité - Universitätsmedizin Berlin"
+* identifier[pid].assigner.identifier.system = "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"
+* identifier[pid].assigner.identifier.value = "Charité"
+* identifier[+].use = #official
+* identifier[=].type = $identifier-type-de-basis#KVZ10
+* identifier[=].system = "http://fhir.de/sid/gkv/kvid-10"
+* identifier[=].value = "G678901234"
+* identifier[=].assigner.identifier.use = #official
+* identifier[=].assigner.identifier.value = "345678901"
+* identifier[=].assigner.identifier.system = "http://fhir.de/sid/arge-ik/iknr"
+* name[name].use = #official
+* name[name].family = "Klein"
+* name[name].given[0] = "Petra"
+* name[name].given[+] = "Elisabeth"
+* name[geburtsname].use = #maiden
+* name[geburtsname].family = "Fischer"
+* gender = #female
+* birthDate = "1981-12-03"
+* deceasedBoolean = false
+* address[Strassenanschrift].type = #both
+* address[Strassenanschrift].line = "Müllerstraße 23"
+* address[Strassenanschrift].city = "Dresden"
+* address[Strassenanschrift].postalCode = "01067"
+* address[Strassenanschrift].country = "DE"
+
+// Patient-10
+Instance: mii-exa-test-data-patient-10
+InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient
+Usage: #example
+* meta.profile[+] = "http://fhir.de/ConsentManagement/StructureDefinition/Patient"
+* identifier[pid].use = #usual
+* identifier[pid].type = http://terminology.hl7.org/CodeSystem/v2-0203#MR
+* identifier[pid].system = "https://www.medizininformatik-initiative.de/fhir/sid/patienten"
+* identifier[pid].value = "654987321"
+* identifier[pid].assigner.display = "Charité - Universitätsmedizin Berlin"
+* identifier[pid].assigner.identifier.system = "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"
+* identifier[pid].assigner.identifier.value = "Charité"
+* identifier[+].use = #official
+* identifier[=].type = $identifier-type-de-basis#KVZ10
+* identifier[=].system = "http://fhir.de/sid/gkv/kvid-10"
+* identifier[=].value = "H789012345"
+* identifier[=].assigner.identifier.use = #official
+* identifier[=].assigner.identifier.value = "456789012"
+* identifier[=].assigner.identifier.system = "http://fhir.de/sid/arge-ik/iknr"
+* name[name].use = #official
+* name[name].family = "Wolf"
+* name[name].given[0] = "Markus"
+* gender = #male
+* birthDate = "1969-09-17"
+* deceasedBoolean = false
+* address[Strassenanschrift].type = #both
+* address[Strassenanschrift].line = "Am Park 12"
+* address[Strassenanschrift].city = "Frankfurt am Main"
+* address[Strassenanschrift].postalCode = "60311"
+* address[Strassenanschrift].country = "DE"

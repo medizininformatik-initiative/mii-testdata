@@ -1,0 +1,80 @@
+{
+  "resourceType": "Specimen",
+  "id": "mii-exa-test-data-patient-7-specimen-1",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Specimen"
+    ]
+  },
+  "extension": [
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/VerwaltendeOrganisation",
+      "valueReference": {
+        "reference": "Organization/mii-exa-test-data-organization-biobank-charite"
+      }
+    },
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Diagnose",
+      "valueReference": {
+        "reference": "Condition/mii-exa-test-data-patient-7-diagnose-1"
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "system": "https://www.charite.de/fhir/sid/Bioproben",
+      "value": "BP_000012"
+    }
+  ],
+  "type": {
+    "coding": [
+      {
+        "code": "445295009",
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+        "display": "Blood specimen with edetic acid (specimen)"
+      }
+    ]
+  },
+  "collection": {
+    "bodySite": {
+      "coding": [
+        {
+          "code": "368208006",
+          "system": "http://snomed.info/sct",
+          "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+          "display": "Left upper arm structure (body structure)"
+        }
+      ]
+    },
+    "collectedDateTime": "2024-01-10T07:30:00+01:00"
+  },
+  "container": [
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "83059008",
+            "system": "http://snomed.info/sct",
+            "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+            "display": "Tube, device (physical object)"
+          }
+        ]
+      },
+      "capacity": {
+        "value": 5,
+        "code": "ml",
+        "system": "http://unitsofmeasure.org"
+      },
+      "specimenQuantity": {
+        "value": 5,
+        "code": "ml",
+        "system": "http://unitsofmeasure.org"
+      }
+    }
+  ],
+  "status": "available",
+  "subject": {
+    "reference": "Patient/mii-exa-test-data-patient-7"
+  }
+}

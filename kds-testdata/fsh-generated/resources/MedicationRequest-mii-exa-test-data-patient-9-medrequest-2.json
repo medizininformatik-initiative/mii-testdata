@@ -1,0 +1,62 @@
+{
+  "resourceType": "MedicationRequest",
+  "id": "mii-exa-test-data-patient-9-medrequest-2",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationRequest"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "https://www.charite.de/fhir/sid/MedicationOrders",
+      "value": "MO_0000020"
+    }
+  ],
+  "dosageInstruction": [
+    {
+      "doseAndRate": [
+        {
+          "doseQuantity": {
+            "value": 500,
+            "code": "mg",
+            "system": "http://unitsofmeasure.org",
+            "unit": "mg"
+          }
+        }
+      ],
+      "timing": {
+        "repeat": {
+          "frequency": 4,
+          "period": 1,
+          "periodUnit": "d"
+        }
+      },
+      "text": "Paracetamol 500mg bis zu 4x täglich bei Bedarf",
+      "route": {
+        "coding": [
+          {
+            "code": "20053000",
+            "system": "http://standardterms.edqm.eu",
+            "display": "Oral use"
+          }
+        ]
+      },
+      "asNeededBoolean": true
+    }
+  ],
+  "substitution": {
+    "allowedBoolean": true
+  },
+  "status": "active",
+  "intent": "order",
+  "medicationReference": {
+    "reference": "Medication/mii-exa-test-data-medication-paracetamol"
+  },
+  "subject": {
+    "reference": "Patient/mii-exa-test-data-patient-9"
+  },
+  "encounter": {
+    "reference": "Encounter/mii-exa-test-data-patient-9-encounter-1"
+  },
+  "authoredOn": "2024-02-22T16:00:00+01:00"
+}

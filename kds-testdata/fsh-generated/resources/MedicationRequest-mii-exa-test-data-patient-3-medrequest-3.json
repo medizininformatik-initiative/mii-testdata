@@ -1,0 +1,68 @@
+{
+  "resourceType": "MedicationRequest",
+  "id": "mii-exa-test-data-patient-3-medrequest-3",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationRequest"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "https://www.charite.de/fhir/sid/MedicationOrders",
+      "value": "MO_0000010"
+    }
+  ],
+  "dosageInstruction": [
+    {
+      "doseAndRate": [
+        {
+          "rateRatio": {
+            "numerator": {
+              "system": "http://unitsofmeasure.org",
+              "value": 85,
+              "code": "mg",
+              "unit": "mg"
+            },
+            "denominator": {
+              "system": "http://unitsofmeasure.org",
+              "value": 2,
+              "code": "h",
+              "unit": "h"
+            }
+          },
+          "doseQuantity": {
+            "value": 85,
+            "code": "mg",
+            "system": "http://unitsofmeasure.org",
+            "unit": "mg"
+          }
+        }
+      ],
+      "text": "Oxaliplatin 85mg/m² IV über 2 Stunden",
+      "route": {
+        "coding": [
+          {
+            "code": "20045000",
+            "system": "http://standardterms.edqm.eu",
+            "display": "Intravenous use"
+          }
+        ]
+      }
+    }
+  ],
+  "substitution": {
+    "allowedBoolean": false
+  },
+  "status": "active",
+  "intent": "order",
+  "medicationReference": {
+    "reference": "Medication/mii-exa-test-data-medication-oxaliplatin"
+  },
+  "subject": {
+    "reference": "Patient/mii-exa-test-data-patient-3"
+  },
+  "encounter": {
+    "reference": "Encounter/mii-exa-test-data-patient-3-encounter-1"
+  },
+  "authoredOn": "2022-04-25T09:30:00+02:00"
+}

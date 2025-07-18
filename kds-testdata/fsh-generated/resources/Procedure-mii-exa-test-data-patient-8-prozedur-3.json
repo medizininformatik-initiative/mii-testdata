@@ -1,0 +1,73 @@
+{
+  "resourceType": "Procedure",
+  "id": "mii-exa-test-data-patient-8-prozedur-3",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Procedure"
+    ]
+  },
+  "category": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "277132007",
+        "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+      }
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "89666000",
+        "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/ops",
+        "code": "8-771",
+        "version": "2023"
+      }
+    ]
+  },
+  "bodySite": [
+    {
+      "coding": [
+        {
+          "code": "113257007",
+          "system": "http://snomed.info/sct",
+          "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+        }
+      ]
+    }
+  ],
+  "note": [
+    {
+      "text": "Erfolglose kardiopulmonale Reanimation bei Kammerflimmern"
+    }
+  ],
+  "performedPeriod": {
+    "start": "2023-11-15T14:20:00+01:00",
+    "end": "2023-11-15T15:45:00+01:00"
+  },
+  "extension": [
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Durchfuehrungsabsicht",
+      "valueCoding": {
+        "system": "http://snomed.info/sct",
+        "code": "262202000",
+        "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+        "display": "Therapeutic"
+      }
+    }
+  ],
+  "status": "completed",
+  "subject": {
+    "reference": "Patient/mii-exa-test-data-patient-8"
+  },
+  "encounter": {
+    "reference": "Encounter/mii-exa-test-data-patient-8-encounter-1"
+  },
+  "recorder": {
+    "reference": "PractitionerRole/mii-exa-test-data-practitioner-role-physician-1"
+  }
+}

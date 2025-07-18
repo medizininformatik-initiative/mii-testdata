@@ -1,0 +1,79 @@
+{
+  "resourceType": "MedicationStatement",
+  "id": "mii-exa-test-data-patient-9-medstatement-1",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "https://www.charite.de/fhir/sid/MedicationStatements",
+      "value": "MS_0000024"
+    }
+  ],
+  "basedOn": [
+    {
+      "reference": "MedicationRequest/mii-exa-test-data-patient-9-medrequest-1"
+    }
+  ],
+  "category": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/medication-statement-category",
+        "code": "outpatient"
+      },
+      {
+        "system": "http://ihe-d.de/CodeSystems/FallkontextBeiDokumentenerstellung",
+        "code": "E210",
+        "display": "stationäre Aufnahme"
+      }
+    ]
+  },
+  "effectivePeriod": {
+    "start": "2024-01-01T08:00:00+01:00",
+    "end": "2024-02-28T08:00:00+01:00"
+  },
+  "dosage": [
+    {
+      "route": {
+        "coding": [
+          {
+            "system": "http://standardterms.edqm.eu",
+            "code": "20053000",
+            "display": "Oral use"
+          }
+        ]
+      },
+      "doseAndRate": [
+        {
+          "doseQuantity": {
+            "system": "http://unitsofmeasure.org",
+            "value": 1,
+            "code": "1",
+            "unit": "1"
+          }
+        }
+      ],
+      "timing": {
+        "repeat": {
+          "frequency": 1,
+          "period": 1,
+          "periodUnit": "d"
+        }
+      },
+      "text": "Verhütungspille 1 Tablette täglich"
+    }
+  ],
+  "status": "active",
+  "medicationReference": {
+    "reference": "Medication/mii-exa-test-data-medication-ethinylestradiol-levonorgestrel"
+  },
+  "subject": {
+    "reference": "Patient/mii-exa-test-data-patient-9"
+  },
+  "context": {
+    "reference": "Encounter/mii-exa-test-data-patient-9-encounter-1"
+  },
+  "dateAsserted": "2024-02-21"
+}

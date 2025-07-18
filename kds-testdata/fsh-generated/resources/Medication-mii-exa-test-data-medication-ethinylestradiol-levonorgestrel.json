@@ -1,0 +1,81 @@
+{
+  "resourceType": "Medication",
+  "id": "mii-exa-test-data-medication-ethinylestradiol-levonorgestrel",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/atc",
+        "code": "G03AA07",
+        "version": "2024",
+        "display": "Levonorgestrel und Ethinylestradiol"
+      }
+    ]
+  },
+  "ingredient": [
+    {
+      "itemCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://fhir.de/CodeSystem/ask",
+            "code": "00810",
+            "display": "Ethinylestradiol"
+          }
+        ]
+      },
+      "strength": {
+        "numerator": {
+          "value": 0.03,
+          "code": "mg",
+          "system": "http://unitsofmeasure.org",
+          "unit": "mg"
+        },
+        "denominator": {
+          "value": 1,
+          "code": "1",
+          "system": "http://unitsofmeasure.org",
+          "unit": "1"
+        }
+      }
+    },
+    {
+      "itemCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://fhir.de/CodeSystem/ask",
+            "code": "01661",
+            "display": "Levonorgestrel"
+          }
+        ]
+      },
+      "strength": {
+        "numerator": {
+          "value": 0.15,
+          "code": "mg",
+          "system": "http://unitsofmeasure.org",
+          "unit": "mg"
+        },
+        "denominator": {
+          "value": 1,
+          "code": "1",
+          "system": "http://unitsofmeasure.org",
+          "unit": "1"
+        }
+      }
+    }
+  ],
+  "form": {
+    "coding": [
+      {
+        "code": "10221000",
+        "system": "http://standardterms.edqm.eu",
+        "display": "Film-coated tablet"
+      }
+    ]
+  },
+  "status": "active"
+}

@@ -1,0 +1,56 @@
+{
+  "resourceType": "Medication",
+  "id": "mii-exa-test-data-medication-pantoprazol",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/atc",
+        "code": "A02BC02",
+        "version": "2024",
+        "display": "Pantoprazol"
+      }
+    ]
+  },
+  "ingredient": [
+    {
+      "itemCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://fhir.de/CodeSystem/ask",
+            "code": "02069",
+            "display": "Pantoprazol"
+          }
+        ]
+      },
+      "strength": {
+        "numerator": {
+          "value": 40,
+          "code": "mg",
+          "system": "http://unitsofmeasure.org",
+          "unit": "mg"
+        },
+        "denominator": {
+          "value": 1,
+          "code": "1",
+          "system": "http://unitsofmeasure.org",
+          "unit": "1"
+        }
+      }
+    }
+  ],
+  "form": {
+    "coding": [
+      {
+        "code": "10221000",
+        "system": "http://standardterms.edqm.eu",
+        "display": "Film-coated tablet"
+      }
+    ]
+  },
+  "status": "active"
+}

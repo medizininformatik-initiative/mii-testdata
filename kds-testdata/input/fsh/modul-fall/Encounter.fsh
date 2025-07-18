@@ -96,3 +96,132 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-fall/Str
 * serviceProvider.identifier.system = "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"
 * serviceProvider.identifier.value = "Charité"
 * serviceProvider.display = "Charité - Universitätsmedizin Berlin"
+
+// Encounter Patient-4
+Instance: mii-exa-test-data-patient-4-encounter-1
+InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung
+//* meta.profile[0] = "https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung|2024.0.1"
+* insert AddEncounter(MII_0000005, finished, IMP, einrichtungskontakt, normalstationaer, mii-exa-test-data-patient-4, 0300)
+* period.start = "2020-09-15"
+* period.end = "2020-09-25"
+* hospitalization.admitSource = $Aufnahmeanlass#E "Einweisung durch einen Arzt"
+* hospitalization.dischargeDisposition.extension[Entlassungsgrund].url = "http://fhir.de/StructureDefinition/Entlassungsgrund"
+* hospitalization.dischargeDisposition.extension[Entlassungsgrund].extension[ErsteUndZweiteStelle].url = "ErsteUndZweiteStelle"
+* hospitalization.dischargeDisposition.extension[Entlassungsgrund].extension[ErsteUndZweiteStelle].valueCoding = $EntlassungsgrundErsteUndZweiteStelle#01 "Behandlung regulär beendet"
+* hospitalization.dischargeDisposition.extension[Entlassungsgrund].extension[DritteStelle].url = "DritteStelle"
+* hospitalization.dischargeDisposition.extension[Entlassungsgrund].extension[DritteStelle].valueCoding = $EntlassungsgrundDritteStelle#1 "arbeitsfähig entlassen"
+* serviceProvider = Reference(mii-exa-test-data-organization-charite)
+* serviceProvider.identifier.system = "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"
+* serviceProvider.identifier.value = "Charité"
+* serviceProvider.display = "Charité - Universitätsmedizin Berlin"
+
+// Encounter Patient-5
+Instance: mii-exa-test-data-patient-5-encounter-1
+InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung
+//* meta.profile[0] = "https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung|2024.0.1"
+* insert AddEncounter(MII_0000006, finished, IMP, einrichtungskontakt, normalstationaer, mii-exa-test-data-patient-5, 2400)
+* period.start = "2023-07-10"
+* period.end = "2023-07-18"
+* hospitalization.admitSource = $Aufnahmeanlass#E "Einweisung durch einen Arzt"
+* hospitalization.dischargeDisposition.extension[Entlassungsgrund].url = "http://fhir.de/StructureDefinition/Entlassungsgrund"
+* hospitalization.dischargeDisposition.extension[Entlassungsgrund].extension[ErsteUndZweiteStelle].url = "ErsteUndZweiteStelle"
+* hospitalization.dischargeDisposition.extension[Entlassungsgrund].extension[ErsteUndZweiteStelle].valueCoding = $EntlassungsgrundErsteUndZweiteStelle#01 "Behandlung regulär beendet"
+* hospitalization.dischargeDisposition.extension[Entlassungsgrund].extension[DritteStelle].url = "DritteStelle"
+* hospitalization.dischargeDisposition.extension[Entlassungsgrund].extension[DritteStelle].valueCoding = $EntlassungsgrundDritteStelle#1 "arbeitsfähig entlassen"
+* serviceProvider = Reference(mii-exa-test-data-organization-charite)
+* serviceProvider.identifier.system = "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"
+* serviceProvider.identifier.value = "Charité"
+* serviceProvider.display = "Charité - Universitätsmedizin Berlin"
+
+// Encounter Patient-6
+Instance: mii-exa-test-data-patient-6-encounter-1
+InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung
+//* meta.profile[0] = "https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung|2024.0.1"
+* insert AddEncounter(MII_0000007, finished, IMP, einrichtungskontakt, normalstationaer, mii-exa-test-data-patient-6, 0100)
+* period.start = "2022-03-12"
+* period.end = "2022-03-20"
+* hospitalization.admitSource = $Aufnahmeanlass#E "Einweisung durch einen Arzt"
+* hospitalization.dischargeDisposition.extension[Entlassungsgrund].url = "http://fhir.de/StructureDefinition/Entlassungsgrund"
+* hospitalization.dischargeDisposition.extension[Entlassungsgrund].extension[ErsteUndZweiteStelle].url = "ErsteUndZweiteStelle"
+* hospitalization.dischargeDisposition.extension[Entlassungsgrund].extension[ErsteUndZweiteStelle].valueCoding = $EntlassungsgrundErsteUndZweiteStelle#01 "Behandlung regulär beendet"
+* hospitalization.dischargeDisposition.extension[Entlassungsgrund].extension[DritteStelle].url = "DritteStelle"
+* hospitalization.dischargeDisposition.extension[Entlassungsgrund].extension[DritteStelle].valueCoding = $EntlassungsgrundDritteStelle#1 "arbeitsfähig entlassen"
+* serviceProvider = Reference(mii-exa-test-data-organization-charite)
+* serviceProvider.identifier.system = "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"
+* serviceProvider.identifier.value = "Charité"
+* serviceProvider.display = "Charité - Universitätsmedizin Berlin"
+
+// Encounter Patient-7
+Instance: mii-exa-test-data-patient-7-encounter-1
+InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung
+//* meta.profile[0] = "https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung|2024.0.1"
+* insert AddEncounter(MII_0000008, finished, IMP, einrichtungskontakt, normalstationaer, mii-exa-test-data-patient-7, 1000)
+* period.start = "2024-01-08"
+* period.end = "2024-01-15"
+* hospitalization.admitSource = $Aufnahmeanlass#E "Einweisung durch einen Arzt"
+* hospitalization.dischargeDisposition.extension[Entlassungsgrund].url = "http://fhir.de/StructureDefinition/Entlassungsgrund"
+* hospitalization.dischargeDisposition.extension[Entlassungsgrund].extension[ErsteUndZweiteStelle].url = "ErsteUndZweiteStelle"
+* hospitalization.dischargeDisposition.extension[Entlassungsgrund].extension[ErsteUndZweiteStelle].valueCoding = $EntlassungsgrundErsteUndZweiteStelle#01 "Behandlung regulär beendet"
+* hospitalization.dischargeDisposition.extension[Entlassungsgrund].extension[DritteStelle].url = "DritteStelle"
+* hospitalization.dischargeDisposition.extension[Entlassungsgrund].extension[DritteStelle].valueCoding = $EntlassungsgrundDritteStelle#1 "arbeitsfähig entlassen"
+* serviceProvider = Reference(mii-exa-test-data-organization-charite)
+* serviceProvider.identifier.system = "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"
+* serviceProvider.identifier.value = "Charité"
+* serviceProvider.display = "Charité - Universitätsmedizin Berlin"
+
+// Encounter Patient-8
+Instance: mii-exa-test-data-patient-8-encounter-1
+InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung
+//* meta.profile[0] = "https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung|2024.0.1"
+* insert AddEncounter(MII_0000009, finished, IMP, einrichtungskontakt, normalstationaer, mii-exa-test-data-patient-8, 0300)
+* period.start = "2023-11-10"
+* period.end = "2023-11-15"
+* diagnosis[0].condition = Reference(mii-exa-test-data-patient-8-todesursache-1)
+* diagnosis[0].use = $diagnosis-role#DD "Discharge diagnosis"
+* diagnosis[0].rank = 1
+* hospitalization.admitSource = $Aufnahmeanlass#N "Notfall"
+* hospitalization.dischargeDisposition.extension[Entlassungsgrund].url = "http://fhir.de/StructureDefinition/Entlassungsgrund"
+* hospitalization.dischargeDisposition.extension[Entlassungsgrund].extension[ErsteUndZweiteStelle].url = "ErsteUndZweiteStelle"
+* hospitalization.dischargeDisposition.extension[Entlassungsgrund].extension[ErsteUndZweiteStelle].valueCoding = $EntlassungsgrundErsteUndZweiteStelle#07 "Tod"
+* hospitalization.dischargeDisposition.extension[Entlassungsgrund].extension[DritteStelle].url = "DritteStelle"
+* hospitalization.dischargeDisposition.extension[Entlassungsgrund].extension[DritteStelle].valueCoding = $EntlassungsgrundDritteStelle#9 "keine Angabe"
+* serviceProvider = Reference(mii-exa-test-data-organization-charite)
+* serviceProvider.identifier.system = "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"
+* serviceProvider.identifier.value = "Charité"
+* serviceProvider.display = "Charité - Universitätsmedizin Berlin"
+
+// Encounter Patient-9
+Instance: mii-exa-test-data-patient-9-encounter-1
+InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung
+//* meta.profile[0] = "https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung|2024.0.1"
+* insert AddEncounter(MII_0000010, finished, IMP, einrichtungskontakt, normalstationaer, mii-exa-test-data-patient-9, 2400)
+* period.start = "2024-02-20"
+* period.end = "2024-02-28"
+* hospitalization.admitSource = $Aufnahmeanlass#E "Einweisung durch einen Arzt"
+* hospitalization.dischargeDisposition.extension[Entlassungsgrund].url = "http://fhir.de/StructureDefinition/Entlassungsgrund"
+* hospitalization.dischargeDisposition.extension[Entlassungsgrund].extension[ErsteUndZweiteStelle].url = "ErsteUndZweiteStelle"
+* hospitalization.dischargeDisposition.extension[Entlassungsgrund].extension[ErsteUndZweiteStelle].valueCoding = $EntlassungsgrundErsteUndZweiteStelle#01 "Behandlung regulär beendet"
+* hospitalization.dischargeDisposition.extension[Entlassungsgrund].extension[DritteStelle].url = "DritteStelle"
+* hospitalization.dischargeDisposition.extension[Entlassungsgrund].extension[DritteStelle].valueCoding = $EntlassungsgrundDritteStelle#1 "arbeitsfähig entlassen"
+* serviceProvider = Reference(mii-exa-test-data-organization-charite)
+* serviceProvider.identifier.system = "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"
+* serviceProvider.identifier.value = "Charité"
+* serviceProvider.display = "Charité - Universitätsmedizin Berlin"
+
+// Encounter Patient-10
+Instance: mii-exa-test-data-patient-10-encounter-1
+InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung
+//* meta.profile[0] = "https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung|2024.0.1"
+* insert AddEncounter(MII_0000011, finished, IMP, einrichtungskontakt, normalstationaer, mii-exa-test-data-patient-10, 2800)
+* period.start = "2019-05-14"
+* period.end = "2019-05-22"
+* hospitalization.admitSource = $Aufnahmeanlass#E "Einweisung durch einen Arzt"
+* hospitalization.dischargeDisposition.extension[Entlassungsgrund].url = "http://fhir.de/StructureDefinition/Entlassungsgrund"
+* hospitalization.dischargeDisposition.extension[Entlassungsgrund].extension[ErsteUndZweiteStelle].url = "ErsteUndZweiteStelle"
+* hospitalization.dischargeDisposition.extension[Entlassungsgrund].extension[ErsteUndZweiteStelle].valueCoding = $EntlassungsgrundErsteUndZweiteStelle#01 "Behandlung regulär beendet"
+* hospitalization.dischargeDisposition.extension[Entlassungsgrund].extension[DritteStelle].url = "DritteStelle"
+* hospitalization.dischargeDisposition.extension[Entlassungsgrund].extension[DritteStelle].valueCoding = $EntlassungsgrundDritteStelle#1 "arbeitsfähig entlassen"
+* serviceProvider = Reference(mii-exa-test-data-organization-charite)
+* serviceProvider.identifier.system = "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"
+* serviceProvider.identifier.value = "Charité"
+* serviceProvider.display = "Charité - Universitätsmedizin Berlin"

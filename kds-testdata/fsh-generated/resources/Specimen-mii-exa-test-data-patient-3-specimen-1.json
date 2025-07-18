@@ -3,7 +3,7 @@
   "id": "mii-exa-test-data-patient-3-specimen-1",
   "meta": {
     "profile": [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore"
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Specimen"
     ]
   },
   "collection": {

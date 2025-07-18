@@ -1,0 +1,61 @@
+{
+  "resourceType": "MedicationRequest",
+  "id": "mii-exa-test-data-patient-9-medrequest-1",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationRequest"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "https://www.charite.de/fhir/sid/MedicationOrders",
+      "value": "MO_0000023"
+    }
+  ],
+  "dosageInstruction": [
+    {
+      "doseAndRate": [
+        {
+          "doseQuantity": {
+            "value": 1,
+            "code": "1",
+            "system": "http://unitsofmeasure.org",
+            "unit": "1"
+          }
+        }
+      ],
+      "timing": {
+        "repeat": {
+          "frequency": 1,
+          "period": 1,
+          "periodUnit": "d"
+        }
+      },
+      "text": "Verhütungspille 1 Tablette täglich",
+      "route": {
+        "coding": [
+          {
+            "code": "20053000",
+            "system": "http://standardterms.edqm.eu",
+            "display": "Oral use"
+          }
+        ]
+      }
+    }
+  ],
+  "substitution": {
+    "allowedBoolean": true
+  },
+  "status": "active",
+  "intent": "order",
+  "medicationReference": {
+    "reference": "Medication/mii-exa-test-data-medication-ethinylestradiol-levonorgestrel"
+  },
+  "subject": {
+    "reference": "Patient/mii-exa-test-data-patient-9"
+  },
+  "encounter": {
+    "reference": "Encounter/mii-exa-test-data-patient-9-encounter-1"
+  },
+  "authoredOn": "2024-02-21T10:00:00+01:00"
+}

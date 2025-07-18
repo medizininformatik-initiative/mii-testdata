@@ -1,0 +1,56 @@
+{
+  "resourceType": "Medication",
+  "id": "mii-exa-test-data-medication-amoxicillin",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/atc",
+        "code": "J01CA04",
+        "version": "2024",
+        "display": "Amoxicillin"
+      }
+    ]
+  },
+  "ingredient": [
+    {
+      "itemCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://fhir.de/CodeSystem/ask",
+            "code": "00097",
+            "display": "Amoxicillin"
+          }
+        ]
+      },
+      "strength": {
+        "numerator": {
+          "value": 500,
+          "code": "mg",
+          "system": "http://unitsofmeasure.org",
+          "unit": "mg"
+        },
+        "denominator": {
+          "value": 1,
+          "code": "1",
+          "system": "http://unitsofmeasure.org",
+          "unit": "1"
+        }
+      }
+    }
+  ],
+  "form": {
+    "coding": [
+      {
+        "code": "10210000",
+        "system": "http://standardterms.edqm.eu",
+        "display": "Capsule, hard"
+      }
+    ]
+  },
+  "status": "active"
+}

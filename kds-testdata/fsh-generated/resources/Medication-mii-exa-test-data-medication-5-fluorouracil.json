@@ -1,0 +1,56 @@
+{
+  "resourceType": "Medication",
+  "id": "mii-exa-test-data-medication-5-fluorouracil",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/atc",
+        "code": "L01BC02",
+        "version": "2024",
+        "display": "Fluorouracil"
+      }
+    ]
+  },
+  "ingredient": [
+    {
+      "itemCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://fhir.de/CodeSystem/ask",
+            "code": "00836",
+            "display": "5-Fluorouracil"
+          }
+        ]
+      },
+      "strength": {
+        "numerator": {
+          "value": 1000,
+          "code": "mg",
+          "system": "http://unitsofmeasure.org",
+          "unit": "mg"
+        },
+        "denominator": {
+          "value": 20,
+          "code": "ml",
+          "system": "http://unitsofmeasure.org",
+          "unit": "ml"
+        }
+      }
+    }
+  ],
+  "form": {
+    "coding": [
+      {
+        "code": "11210000",
+        "system": "http://standardterms.edqm.eu",
+        "display": "Solution for infusion"
+      }
+    ]
+  },
+  "status": "active"
+}

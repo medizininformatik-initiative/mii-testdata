@@ -9,7 +9,12 @@
   "identifier": [
     {
       "system": "https://www.charite.de/fhir/sid/MedicationStatements",
-      "value": "MS_0000004"
+      "value": "MS_0000007"
+    }
+  ],
+  "basedOn": [
+    {
+      "reference": "MedicationRequest/mii-exa-test-data-patient-2-medrequest-1"
     }
   ],
   "category": {
@@ -25,15 +30,9 @@
       }
     ]
   },
-  "medicationCodeableConcept": {
-    "coding": [
-      {
-        "system": "http://fhir.de/CodeSystem/bfarm/atc",
-        "code": "B05AX01",
-        "version": "2023",
-        "display": "Erythrozyten"
-      }
-    ]
+  "effectivePeriod": {
+    "start": "2024-03-06T08:00:00+01:00",
+    "end": "2024-03-13T10:00:00+01:00"
   },
   "dosage": [
     {
@@ -41,38 +40,41 @@
         "coding": [
           {
             "system": "http://standardterms.edqm.eu",
-            "code": "20045000",
-            "display": "Intravenous use"
-          },
-          {
-            "system": "http://snomed.info/sct",
-            "code": "47625008",
-            "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-            "display": "Intravenous route (qualifier value)"
+            "code": "20053000",
+            "display": "Oral use"
           }
         ]
       },
       "doseAndRate": [
         {
-          "rateRange": {
-            "low": {
-              "system": "http://unitsofmeasure.org",
-              "value": 150,
-              "code": "mL/h"
-            },
-            "high": {
-              "system": "http://unitsofmeasure.org",
-              "value": 300,
-              "code": "mL/h"
-            }
+          "doseQuantity": {
+            "system": "http://unitsofmeasure.org",
+            "value": 10,
+            "code": "mg",
+            "unit": "mg"
           }
         }
-      ]
+      ],
+      "timing": {
+        "repeat": {
+          "frequency": 4,
+          "period": 1,
+          "periodUnit": "d"
+        }
+      },
+      "text": "Morphin 10mg alle 6 Stunden bei Bedarf",
+      "asNeededBoolean": true
     }
   ],
-  "status": "completed",
+  "status": "active",
+  "medicationReference": {
+    "reference": "Medication/mii-exa-test-data-medication-morphin"
+  },
   "subject": {
     "reference": "Patient/mii-exa-test-data-patient-2"
   },
-  "effectiveDateTime": "2022-08-01"
+  "context": {
+    "reference": "Encounter/mii-exa-test-data-patient-2-encounter-1"
+  },
+  "dateAsserted": "2024-03-06"
 }

@@ -1,0 +1,39 @@
+{
+  "resourceType": "List",
+  "id": "mii-exa-test-data-patient-5-list-stat-aufenthalt",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/medikationsliste"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/list-example-use-codes",
+        "code": "medications"
+      },
+      {
+        "system": "http://ihe-d.de/CodeSystems/FallkontextBeiDokumentenerstellung",
+        "code": "E200"
+      }
+    ]
+  },
+  "entry": [
+    {
+      "item": {
+        "reference": "MedicationStatement/mii-exa-test-data-patient-5-medstatement-1"
+      }
+    },
+    {
+      "item": {
+        "reference": "MedicationStatement/mii-exa-test-data-patient-5-medstatement-2"
+      }
+    }
+  ],
+  "status": "current",
+  "mode": "working",
+  "title": "Medikationsliste während stationärem Aufenthalt",
+  "subject": {
+    "reference": "Patient/mii-exa-test-data-patient-5"
+  }
+}

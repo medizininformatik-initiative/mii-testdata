@@ -9,7 +9,12 @@
   "identifier": [
     {
       "system": "https://www.charite.de/fhir/sid/MedicationStatements",
-      "value": "MS_0000005"
+      "value": "MS_0000008"
+    }
+  ],
+  "basedOn": [
+    {
+      "reference": "MedicationRequest/mii-exa-test-data-patient-2-medrequest-2"
     }
   ],
   "category": {
@@ -25,15 +30,9 @@
       }
     ]
   },
-  "medicationCodeableConcept": {
-    "coding": [
-      {
-        "system": "http://fhir.de/CodeSystem/bfarm/atc",
-        "code": "B05AX01",
-        "version": "2023",
-        "display": "Erythrozyten"
-      }
-    ]
+  "effectivePeriod": {
+    "start": "2024-03-07T10:00:00+01:00",
+    "end": "2024-03-07T11:00:00+01:00"
   },
   "dosage": [
     {
@@ -43,12 +42,6 @@
             "system": "http://standardterms.edqm.eu",
             "code": "20045000",
             "display": "Intravenous use"
-          },
-          {
-            "system": "http://snomed.info/sct",
-            "code": "47625008",
-            "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-            "display": "Intravenous route (qualifier value)"
           }
         ]
       },
@@ -57,22 +50,37 @@
           "rateRatio": {
             "numerator": {
               "system": "http://unitsofmeasure.org",
-              "value": 150,
-              "code": "mL"
+              "value": 450,
+              "code": "mg",
+              "unit": "mg"
             },
             "denominator": {
               "system": "http://unitsofmeasure.org",
               "value": 1,
-              "code": "h"
+              "code": "h",
+              "unit": "h"
             }
+          },
+          "doseQuantity": {
+            "system": "http://unitsofmeasure.org",
+            "value": 450,
+            "code": "mg",
+            "unit": "mg"
           }
         }
-      ]
+      ],
+      "text": "Carboplatin 450mg IV über 1 Stunde"
     }
   ],
   "status": "completed",
+  "medicationReference": {
+    "reference": "Medication/mii-exa-test-data-medication-carboplatin"
+  },
   "subject": {
     "reference": "Patient/mii-exa-test-data-patient-2"
   },
-  "effectiveDateTime": "2022-08-02"
+  "context": {
+    "reference": "Encounter/mii-exa-test-data-patient-2-encounter-1"
+  },
+  "dateAsserted": "2024-03-07"
 }
