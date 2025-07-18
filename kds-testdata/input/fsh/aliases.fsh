@@ -77,3 +77,6 @@ Alias: $v3-RoleCode = http://terminology.hl7.org/CodeSystem/v3-RoleCode
 Alias: $HPO = http://human-phenotype-ontology.org
 Alias: $related-artifact-type = http://hl7.org/fhir/related-artifact-type
 Alias: $fdasis = http://fdasis.nlm.nih.gov
+Alias: $AufnahmegrundErsteUndZweiteStelle = http://fhir.de/CodeSystem/dkgev/AufnahmegrundErsteUndZweiteStelle
+Alias: $AufnahmegrundDritteStelle = http://fhir.de/CodeSystem/dkgev/AufnahmegrundDritteStelle
+Alias: $AufnahmegrundVierteStelle = http://fhir.de/CodeSystem/dkgev/AufnahmegrundVierteStelle

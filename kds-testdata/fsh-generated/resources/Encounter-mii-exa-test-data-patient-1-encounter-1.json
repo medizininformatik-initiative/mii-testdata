@@ -46,6 +46,37 @@
       }
     ]
   },
+  "extension": [
+    {
+      "extension": [
+        {
+          "url": "ErsteUndZweiteStelle",
+          "valueCoding": {
+            "code": "01",
+            "system": "http://fhir.de/CodeSystem/dkgev/AufnahmegrundErsteUndZweiteStelle",
+            "display": "Krankenhausbehandlung, vollstationär"
+          }
+        },
+        {
+          "url": "DritteStelle",
+          "valueCoding": {
+            "code": "0",
+            "system": "http://fhir.de/CodeSystem/dkgev/AufnahmegrundDritteStelle",
+            "display": "Anderes"
+          }
+        },
+        {
+          "url": "VierteStelle",
+          "valueCoding": {
+            "code": "1",
+            "system": "http://fhir.de/CodeSystem/dkgev/AufnahmegrundVierteStelle",
+            "display": "Normalfall"
+          }
+        }
+      ],
+      "url": "http://fhir.de/StructureDefinition/Aufnahmegrund"
+    }
+  ],
   "period": {
     "start": "2024-02-14",
     "end": "2024-02-22"

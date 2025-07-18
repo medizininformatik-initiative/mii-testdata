@@ -132,6 +132,7 @@ InstanceOf: Bundle
 
 // Devices
 * insert AddBundleEntry(mii-exa-test-data-device-roche-cobas-c303, Device)
+* insert AddBundleEntry(mii-exa-test-data-device-roche-cobas, Device)
 
 // =============================================================================
 // Patient-3
@@ -211,6 +212,7 @@ InstanceOf: Bundle
 // Devices
 * insert AddBundleEntry(mii-exa-test-data-device-roche-cobas-c303, Device)
 * insert AddBundleEntry(mii-exa-test-data-molgen-device-sequencer, Device)
+* insert AddBundleEntry(mii-exa-test-data-device-roche-cobas, Device)
 
 // =============================================================================
 // Patient-4
@@ -294,6 +296,7 @@ InstanceOf: Bundle
 // Devices
 * insert AddBundleEntry(mii-exa-test-data-device-roche-cobas-c303, Device)
 * insert AddBundleEntry(mii-exa-test-data-molgen-device-sequencer, Device)
+* insert AddBundleEntry(mii-exa-test-data-device-roche-cobas, Device)
 
 // =============================================================================
 // Patient-5
@@ -352,6 +355,7 @@ InstanceOf: Bundle
 
 // Devices
 * insert AddBundleEntry(mii-exa-test-data-device-roche-cobas-c303, Device)
+* insert AddBundleEntry(mii-exa-test-data-device-roche-cobas, Device)
 
 // =============================================================================
 // Patient-6
@@ -414,6 +418,7 @@ InstanceOf: Bundle
 
 // Devices
 * insert AddBundleEntry(mii-exa-test-data-device-roche-cobas-c303, Device)
+* insert AddBundleEntry(mii-exa-test-data-device-roche-cobas, Device)
 
 // =============================================================================
 // Patient-7
@@ -472,6 +477,7 @@ InstanceOf: Bundle
 
 // Devices
 * insert AddBundleEntry(mii-exa-test-data-device-roche-cobas-c303, Device)
+* insert AddBundleEntry(mii-exa-test-data-device-roche-cobas, Device)
 
 // =============================================================================
 // Patient-8
@@ -535,6 +541,7 @@ InstanceOf: Bundle
 
 // Devices
 * insert AddBundleEntry(mii-exa-test-data-device-roche-cobas-c303, Device)
+* insert AddBundleEntry(mii-exa-test-data-device-roche-cobas, Device)
 
 // =============================================================================
 // Patient-9
@@ -593,6 +600,7 @@ InstanceOf: Bundle
 
 // Devices
 * insert AddBundleEntry(mii-exa-test-data-device-roche-cobas-c303, Device)
+* insert AddBundleEntry(mii-exa-test-data-device-roche-cobas, Device)
 
 // =============================================================================
 // Patient-10
@@ -650,3 +658,4 @@ InstanceOf: Bundle
 
 // Devices
 * insert AddBundleEntry(mii-exa-test-data-device-roche-cobas-c303, Device)
+* insert AddBundleEntry(mii-exa-test-data-device-roche-cobas, Device)

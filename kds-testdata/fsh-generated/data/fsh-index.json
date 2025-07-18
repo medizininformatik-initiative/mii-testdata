@@ -12,8 +12,8 @@
     "fshName": "mii-exa-test-data-bundle-pat-10",
     "fshType": "Instance",
     "fshFile": "Bundle.fsh",
-    "startLine": 600,
-    "endLine": 652
+    "startLine": 608,
+    "endLine": 661
   },
   {
     "outputFile": "Bundle-mii-exa-test-data-bundle-pat-2.json",
@@ -21,63 +21,63 @@
     "fshType": "Instance",
     "fshFile": "Bundle.fsh",
     "startLine": 74,
-    "endLine": 134
+    "endLine": 135
   },
   {
     "outputFile": "Bundle-mii-exa-test-data-bundle-pat-3.json",
     "fshName": "mii-exa-test-data-bundle-pat-3",
     "fshType": "Instance",
     "fshFile": "Bundle.fsh",
-    "startLine": 139,
-    "endLine": 213
+    "startLine": 140,
+    "endLine": 215
   },
   {
     "outputFile": "Bundle-mii-exa-test-data-bundle-pat-4.json",
     "fshName": "mii-exa-test-data-bundle-pat-4",
     "fshType": "Instance",
     "fshFile": "Bundle.fsh",
-    "startLine": 218,
-    "endLine": 296
+    "startLine": 220,
+    "endLine": 299
   },
   {
     "outputFile": "Bundle-mii-exa-test-data-bundle-pat-5.json",
     "fshName": "mii-exa-test-data-bundle-pat-5",
     "fshType": "Instance",
     "fshFile": "Bundle.fsh",
-    "startLine": 301,
-    "endLine": 354
+    "startLine": 304,
+    "endLine": 358
   },
   {
     "outputFile": "Bundle-mii-exa-test-data-bundle-pat-6.json",
     "fshName": "mii-exa-test-data-bundle-pat-6",
     "fshType": "Instance",
     "fshFile": "Bundle.fsh",
-    "startLine": 359,
-    "endLine": 416
+    "startLine": 363,
+    "endLine": 421
   },
   {
     "outputFile": "Bundle-mii-exa-test-data-bundle-pat-7.json",
     "fshName": "mii-exa-test-data-bundle-pat-7",
     "fshType": "Instance",
     "fshFile": "Bundle.fsh",
-    "startLine": 421,
-    "endLine": 474
+    "startLine": 426,
+    "endLine": 480
   },
   {
     "outputFile": "Bundle-mii-exa-test-data-bundle-pat-8.json",
     "fshName": "mii-exa-test-data-bundle-pat-8",
     "fshType": "Instance",
     "fshFile": "Bundle.fsh",
-    "startLine": 479,
-    "endLine": 537
+    "startLine": 485,
+    "endLine": 544
   },
   {
     "outputFile": "Bundle-mii-exa-test-data-bundle-pat-9.json",
     "fshName": "mii-exa-test-data-bundle-pat-9",
     "fshType": "Instance",
     "fshFile": "Bundle.fsh",
-    "startLine": 542,
-    "endLine": 595
+    "startLine": 549,
+    "endLine": 603
   },
   {
     "outputFile": "Condition-mii-exa-test-data-patient-1-diagnose-1.json",
@@ -405,95 +405,95 @@
     "fshType": "Instance",
     "fshFile": "modul-fall/Encounter.fsh",
     "startLine": 2,
-    "endLine": 35
+    "endLine": 38
   },
   {
     "outputFile": "Encounter-mii-exa-test-data-patient-1-encounter-2.json",
     "fshName": "mii-exa-test-data-patient-1-encounter-2",
     "fshType": "Instance",
     "fshFile": "modul-fall/Encounter.fsh",
-    "startLine": 37,
-    "endLine": 43
+    "startLine": 40,
+    "endLine": 46
   },
   {
     "outputFile": "Encounter-mii-exa-test-data-patient-10-encounter-1.json",
     "fshName": "mii-exa-test-data-patient-10-encounter-1",
     "fshType": "Instance",
     "fshFile": "modul-fall/Encounter.fsh",
-    "startLine": 212,
-    "endLine": 227
+    "startLine": 215,
+    "endLine": 230
   },
   {
     "outputFile": "Encounter-mii-exa-test-data-patient-2-encounter-1.json",
     "fshName": "mii-exa-test-data-patient-2-encounter-1",
     "fshType": "Instance",
     "fshFile": "modul-fall/Encounter.fsh",
-    "startLine": 46,
-    "endLine": 65
+    "startLine": 49,
+    "endLine": 68
   },
   {
     "outputFile": "Encounter-mii-exa-test-data-patient-2-encounter-2.json",
     "fshName": "mii-exa-test-data-patient-2-encounter-2",
     "fshType": "Instance",
     "fshFile": "modul-fall/Encounter.fsh",
-    "startLine": 67,
-    "endLine": 76
+    "startLine": 70,
+    "endLine": 79
   },
   {
     "outputFile": "Encounter-mii-exa-test-data-patient-3-encounter-1.json",
     "fshName": "mii-exa-test-data-patient-3-encounter-1",
     "fshType": "Instance",
     "fshFile": "modul-fall/Encounter.fsh",
-    "startLine": 79,
-    "endLine": 98
+    "startLine": 82,
+    "endLine": 101
   },
   {
     "outputFile": "Encounter-mii-exa-test-data-patient-4-encounter-1.json",
     "fshName": "mii-exa-test-data-patient-4-encounter-1",
     "fshType": "Instance",
     "fshFile": "modul-fall/Encounter.fsh",
-    "startLine": 101,
-    "endLine": 116
+    "startLine": 104,
+    "endLine": 119
   },
   {
     "outputFile": "Encounter-mii-exa-test-data-patient-5-encounter-1.json",
     "fshName": "mii-exa-test-data-patient-5-encounter-1",
     "fshType": "Instance",
     "fshFile": "modul-fall/Encounter.fsh",
-    "startLine": 119,
-    "endLine": 134
+    "startLine": 122,
+    "endLine": 137
   },
   {
     "outputFile": "Encounter-mii-exa-test-data-patient-6-encounter-1.json",
     "fshName": "mii-exa-test-data-patient-6-encounter-1",
     "fshType": "Instance",
     "fshFile": "modul-fall/Encounter.fsh",
-    "startLine": 137,
-    "endLine": 152
+    "startLine": 140,
+    "endLine": 155
   },
   {
     "outputFile": "Encounter-mii-exa-test-data-patient-7-encounter-1.json",
     "fshName": "mii-exa-test-data-patient-7-encounter-1",
     "fshType": "Instance",
     "fshFile": "modul-fall/Encounter.fsh",
-    "startLine": 155,
-    "endLine": 170
+    "startLine": 158,
+    "endLine": 173
   },
   {
     "outputFile": "Encounter-mii-exa-test-data-patient-8-encounter-1.json",
     "fshName": "mii-exa-test-data-patient-8-encounter-1",
     "fshType": "Instance",
     "fshFile": "modul-fall/Encounter.fsh",
-    "startLine": 173,
-    "endLine": 191
+    "startLine": 176,
+    "endLine": 194
   },
   {
     "outputFile": "Encounter-mii-exa-test-data-patient-9-encounter-1.json",
     "fshName": "mii-exa-test-data-patient-9-encounter-1",
     "fshType": "Instance",
     "fshFile": "modul-fall/Encounter.fsh",
-    "startLine": 194,
-    "endLine": 209
+    "startLine": 197,
+    "endLine": 212
   },
   {
     "outputFile": "FamilyMemberHistory-mii-exa-test-data-patient-3-molgen-family-member-history-1.json",

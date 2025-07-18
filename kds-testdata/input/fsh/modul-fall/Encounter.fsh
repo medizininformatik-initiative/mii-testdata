@@ -3,6 +3,9 @@ Instance: mii-exa-test-data-patient-1-encounter-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung
 //* meta.profile[0] = "https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung|2024.0.1"
 * insert AddEncounter(MII_0000001, finished, IMP, einrichtungskontakt, normalstationaer, mii-exa-test-data-patient-1, 0100)
+* extension[Aufnahmegrund].extension[ErsteUndZweiteStelle].valueCoding = $AufnahmegrundErsteUndZweiteStelle#01 "Krankenhausbehandlung, vollstationär"
+* extension[Aufnahmegrund].extension[DritteStelle].valueCoding = $AufnahmegrundDritteStelle#0 "Anderes"
+* extension[Aufnahmegrund].extension[VierteStelle].valueCoding = $AufnahmegrundVierteStelle#1 "Normalfall"
 * period.start = "2024-02-14"
 * period.end = "2024-02-22"
 * diagnosis[0].condition = Reference(mii-exa-test-data-patient-1-diagnose-1)
