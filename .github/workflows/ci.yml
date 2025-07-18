@@ -73,6 +73,10 @@ jobs:
     #   run: sushi build --log-level warn  .
     #   working-directory: ./kds-testdata
 
+    - name: Generate timestamp
+      id: timestamp
+      run: echo "timestamp=$(date -u +'%Y%m%d-%H%M%S')" >> "$GITHUB_OUTPUT"
+
     - name: Get KDS Testdata Version
       id: kds-version
       run: echo KDS_VERSION="$(yq eval '.' sushi-config.yaml -o json | jq -r '.version')" >> "$GITHUB_OUTPUT"
@@ -82,7 +86,7 @@ jobs:
       id: upload-artifact
       uses: actions/upload-artifact@v4
       with:
-        name: "kds-testdata-${{ steps.kds-version.outputs.KDS_VERSION }}"
+        name: "kds-testdata-${{ steps.kds-version.outputs.KDS_VERSION }}-${{ steps.timestamp.outputs.timestamp }}"
         path: ./kds-testdata/fsh-generated
         compression-level: 9
         if-no-files-found: error
@@ -104,7 +108,7 @@ jobs:
     - name: Upload test data bundles NDJSON
       uses: actions/upload-artifact@v4
       with:
-        name: testdata-bundles-ndjson
+        name: "testdata-bundles-ndjson-${{ steps.timestamp.outputs.timestamp }}"
         path: ./kds-testdata/ndjson/testdata-bundles.ndjson
         compression-level: 9
         if-no-files-found: error
@@ -131,6 +135,10 @@ jobs:
     - name: Checkout Project
       uses: actions/checkout@v4
 
+    - name: Generate timestamp for release
+      id: timestamp
+      run: echo "timestamp=$(date -u +'%Y%m%d-%H%M%S')" >> "$GITHUB_OUTPUT"
+
     - name: Download build artifacts
       uses: actions/download-artifact@v4
       with:
@@ -146,7 +154,7 @@ jobs:
 
     - name: Add NDJSON file to release
       run: |
-        cp artifacts/testdata-bundles-ndjson/testdata-bundles.ndjson .
+        cp artifacts/testdata-bundles-ndjson-*/testdata-bundles.ndjson ./testdata-bundles-${{ steps.timestamp.outputs.timestamp }}.ndjson
 
     - name: Prepare Version
       id: prep-version
@@ -160,5 +168,5 @@ jobs:
         generate_release_notes: true
         files: |
           artifacts/*.zip
-          testdata-bundles.ndjson
+          testdata-bundles-*.ndjson
         fail_on_unmatched_files: true
