@@ -95,7 +95,8 @@ jobs:
       id: ndjson
       run: |
         mkdir -p ./kds-testdata/ndjson
-        output_file="./kds-testdata/ndjson/testdata-bundles.ndjson"
+        timestamp="${{ steps.timestamp.outputs.timestamp }}"
+        output_file="./kds-testdata/ndjson/testdata-bundles-${timestamp}.ndjson"
         > "$output_file"
 
         for file in ./kds-testdata/fsh-generated/resources/Bundle-mii-exa-test-data-bundle-pat*.json; do
@@ -103,13 +104,15 @@ jobs:
             jq -c '.' "$file" >> "$output_file"
           fi
         done
+
+        echo "ndjson_filename=testdata-bundles-${timestamp}.ndjson" >> "$GITHUB_OUTPUT"
       shell: bash
 
     - name: Upload test data bundles NDJSON
       uses: actions/upload-artifact@v4
       with:
         name: "testdata-bundles-ndjson-${{ steps.timestamp.outputs.timestamp }}"
-        path: ./kds-testdata/ndjson/testdata-bundles.ndjson
+        path: ./kds-testdata/ndjson/${{ steps.ndjson.outputs.ndjson_filename }}
         compression-level: 9
         if-no-files-found: error
 
