@@ -257,7 +257,7 @@ Usage: #example
 * name[name].given[0] = "Hans"
 * name[name].given[+] = "Peter"
 * gender = #male
-* birthDate = "1958-02-29"
+* birthDate = "1958-02-28"
 * deceasedBoolean = true
 * address[Strassenanschrift].type = #both
 * address[Strassenanschrift].line = "Bahnhofstraße 89"
