@@ -646,6 +646,7 @@ InstanceOf: Bundle
 
 // Biobank-Module
 * insert AddBundleEntry(mii-exa-test-data-patient-10-specimen-1, Specimen)
+* insert AddBundleEntry(mii-exa-test-data-patient-10-specimen-2, Specimen)
 
 // Organisationen
 * insert AddBundleEntry(mii-exa-test-data-organization-charite, Organization)
