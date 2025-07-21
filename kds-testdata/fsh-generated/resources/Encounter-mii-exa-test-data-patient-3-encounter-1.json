@@ -2,6 +2,13 @@
   "resourceType": "Encounter",
   "id": "mii-exa-test-data-patient-3-encounter-1",
   "meta": {
+    "security": [
+      {
+        "code": "HTEST",
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "display": "test health data"
+      }
+    ],
     "profile": [
       "https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung"
     ]

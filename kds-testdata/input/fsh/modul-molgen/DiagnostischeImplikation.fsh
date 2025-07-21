@@ -3,6 +3,8 @@
 Instance: mii-exa-test-data-patient-3-molgen-diagnostische-implikation-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/diagnostische-implikation
 Usage: #example
+Description: "Observation: Diagnostische Implikation für BRAF-Mutation"
+* insert TestDataLabel
 //* meta.profile[0] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/diagnostische-implikation|1.0.0"
 * meta.profile[+] = "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/diagnostic-implication"
 * status = #final
@@ -17,6 +19,8 @@ Usage: #example
 Instance: mii-exa-test-data-patient-4-molgen-diagnostische-implikation-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/diagnostische-implikation
 Usage: #example
+Description: "Observation: Diagnostische Implikation für Magenkarzinom"
+* insert TestDataLabel
 //* meta.profile = "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/diagnostic-implication"
 * extension[0].url = "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomics-artifact"
 * extension[0].valueRelatedArtifact.type = $related-artifact-type#citation "Citation"

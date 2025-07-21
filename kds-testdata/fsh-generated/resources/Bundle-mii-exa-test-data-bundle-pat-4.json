@@ -1,6 +1,15 @@
 {
   "resourceType": "Bundle",
   "id": "mii-exa-test-data-bundle-pat-4",
+  "meta": {
+    "security": [
+      {
+        "code": "HTEST",
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "display": "test health data"
+      }
+    ]
+  },
   "entry": [
     {
       "request": {
@@ -12,6 +21,13 @@
         "resourceType": "Patient",
         "id": "mii-exa-test-data-patient-4",
         "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient",
             "http://fhir.de/ConsentManagement/StructureDefinition/Patient"
@@ -70,6 +86,13 @@
         "resourceType": "Consent",
         "id": "mii-exa-test-data-patient-4-consent-1",
         "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-einwilligung"
           ]
@@ -244,6 +267,13 @@
         "resourceType": "Encounter",
         "id": "mii-exa-test-data-patient-4-encounter-1",
         "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung"
           ]
@@ -356,6 +386,13 @@
         "resourceType": "Condition",
         "id": "mii-exa-test-data-patient-4-diagnose-1",
         "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/core/modul-diagnose/StructureDefinition/Diagnose"
           ]
@@ -406,6 +443,13 @@
         "resourceType": "Procedure",
         "id": "mii-exa-test-data-patient-4-prozedur-1",
         "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Procedure"
           ]
@@ -483,6 +527,13 @@
         "resourceType": "Procedure",
         "id": "mii-exa-test-data-patient-4-prozedur-2",
         "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Procedure"
           ]
@@ -563,6 +614,13 @@
         "resourceType": "ServiceRequest",
         "id": "mii-exa-test-data-patient-4-labrequest-1",
         "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ServiceRequestLab"
           ]
@@ -591,10 +649,8 @@
           {
             "coding": [
               {
-                "system": "http://snomed.info/sct",
-                "code": "108252007",
-                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-                "display": "Laboratory procedure"
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
               }
             ]
           }
@@ -649,6 +705,13 @@
         "resourceType": "DiagnosticReport",
         "id": "mii-exa-test-data-patient-4-labreport-1",
         "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/DiagnosticReportLab"
           ]
@@ -748,6 +811,13 @@
         "resourceType": "Observation",
         "id": "mii-exa-test-data-patient-4-labobs-1",
         "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab"
           ]
@@ -856,6 +926,13 @@
         "resourceType": "Observation",
         "id": "mii-exa-test-data-patient-4-labobs-2",
         "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab"
           ]
@@ -964,6 +1041,13 @@
         "resourceType": "Observation",
         "id": "mii-exa-test-data-patient-4-labobs-3",
         "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab"
           ]
@@ -1072,6 +1156,13 @@
         "resourceType": "MedicationRequest",
         "id": "mii-exa-test-data-patient-4-medrequest-1",
         "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationRequest"
           ]
@@ -1147,6 +1238,13 @@
         "resourceType": "MedicationRequest",
         "id": "mii-exa-test-data-patient-4-medrequest-2",
         "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationRequest"
           ]
@@ -1218,6 +1316,13 @@
         "resourceType": "MedicationStatement",
         "id": "mii-exa-test-data-patient-4-medstatement-1",
         "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement"
           ]
@@ -1311,6 +1416,13 @@
         "resourceType": "MedicationStatement",
         "id": "mii-exa-test-data-patient-4-medstatement-2",
         "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement"
           ]
@@ -1400,6 +1512,13 @@
         "resourceType": "MedicationAdministration",
         "id": "mii-exa-test-data-patient-4-medadmin-1",
         "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationAdministration"
           ]
@@ -1480,6 +1599,13 @@
         "resourceType": "MedicationAdministration",
         "id": "mii-exa-test-data-patient-4-medadmin-2",
         "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationAdministration"
           ]
@@ -1543,6 +1669,13 @@
         "resourceType": "List",
         "id": "mii-exa-test-data-patient-4-list-stat-aufenthalt",
         "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/medikationsliste"
           ]
@@ -1589,6 +1722,13 @@
         "resourceType": "Medication",
         "id": "mii-exa-test-data-medication-cisplatin",
         "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication"
           ]
@@ -1652,6 +1792,13 @@
         "resourceType": "Medication",
         "id": "mii-exa-test-data-medication-omeprazol",
         "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication"
           ]
@@ -1715,6 +1862,13 @@
         "resourceType": "ServiceRequest",
         "id": "mii-exa-test-data-patient-4-molgen-anforderung-1",
         "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/anforderung-genetischer-test"
           ]
@@ -1803,6 +1957,13 @@
         "resourceType": "DiagnosticReport",
         "id": "mii-exa-test-data-patient-4-molgen-befundbericht-1",
         "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/molekulargenetischer-befundbericht",
             "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomics-report"
@@ -1933,6 +2094,13 @@
         "resourceType": "Observation",
         "id": "mii-exa-test-data-patient-4-molgen-variante-1",
         "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/variante"
           ]
@@ -2188,6 +2356,13 @@
         "resourceType": "Observation",
         "id": "mii-exa-test-data-patient-4-molgen-diagnostische-implikation-1",
         "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/diagnostische-implikation"
           ]
@@ -2319,6 +2494,18 @@
         "resourceType": "Observation",
         "id": "mii-exa-test-data-patient-4-molgen-untersuchte-region-1",
         "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            },
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/untersuchte-region",
             "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/region-studied"
@@ -2432,6 +2619,18 @@
         "resourceType": "Observation",
         "id": "mii-exa-test-data-patient-4-molgen-untersuchte-region-2",
         "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            },
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/untersuchte-region",
             "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/region-studied"
@@ -2545,6 +2744,18 @@
         "resourceType": "Observation",
         "id": "mii-exa-test-data-patient-4-molgen-untersuchte-region-3",
         "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            },
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/untersuchte-region",
             "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/region-studied"
@@ -2658,6 +2869,18 @@
         "resourceType": "Observation",
         "id": "mii-exa-test-data-patient-4-molgen-untersuchte-region-4",
         "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            },
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/untersuchte-region",
             "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/region-studied"
@@ -2771,6 +2994,18 @@
         "resourceType": "Observation",
         "id": "mii-exa-test-data-patient-4-molgen-untersuchte-region-5",
         "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            },
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/untersuchte-region",
             "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/region-studied"
@@ -2884,6 +3119,18 @@
         "resourceType": "Observation",
         "id": "mii-exa-test-data-patient-4-molgen-untersuchte-region-6",
         "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            },
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/untersuchte-region",
             "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/region-studied"
@@ -2997,6 +3244,18 @@
         "resourceType": "Observation",
         "id": "mii-exa-test-data-patient-4-molgen-untersuchte-region-7",
         "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            },
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/untersuchte-region",
             "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/region-studied"
@@ -3110,6 +3369,18 @@
         "resourceType": "Observation",
         "id": "mii-exa-test-data-patient-4-molgen-untersuchte-region-8",
         "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            },
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/untersuchte-region",
             "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/region-studied"
@@ -3223,6 +3494,18 @@
         "resourceType": "Observation",
         "id": "mii-exa-test-data-patient-4-molgen-untersuchte-region-9",
         "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            },
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/untersuchte-region",
             "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/region-studied"
@@ -3336,6 +3619,18 @@
         "resourceType": "Observation",
         "id": "mii-exa-test-data-patient-4-molgen-untersuchte-region-10",
         "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            },
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/untersuchte-region",
             "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/region-studied"
@@ -3449,6 +3744,18 @@
         "resourceType": "Observation",
         "id": "mii-exa-test-data-patient-4-molgen-untersuchte-region-11",
         "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            },
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/untersuchte-region",
             "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/region-studied"
@@ -3562,6 +3869,18 @@
         "resourceType": "Observation",
         "id": "mii-exa-test-data-patient-4-molgen-untersuchte-region-12",
         "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            },
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/untersuchte-region",
             "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/region-studied"
@@ -3675,6 +3994,18 @@
         "resourceType": "Observation",
         "id": "mii-exa-test-data-patient-4-molgen-untersuchte-region-13",
         "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            },
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/untersuchte-region",
             "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/region-studied"
@@ -3788,6 +4119,18 @@
         "resourceType": "Observation",
         "id": "mii-exa-test-data-patient-4-molgen-untersuchte-region-14",
         "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            },
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/untersuchte-region",
             "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/region-studied"
@@ -3901,6 +4244,18 @@
         "resourceType": "Observation",
         "id": "mii-exa-test-data-patient-4-molgen-untersuchte-region-15",
         "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            },
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/untersuchte-region",
             "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/region-studied"
@@ -4014,6 +4369,18 @@
         "resourceType": "Observation",
         "id": "mii-exa-test-data-patient-4-molgen-untersuchte-region-16",
         "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            },
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/untersuchte-region",
             "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/region-studied"
@@ -4127,6 +4494,18 @@
         "resourceType": "Observation",
         "id": "mii-exa-test-data-patient-4-molgen-untersuchte-region-17",
         "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            },
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/untersuchte-region",
             "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/region-studied"
@@ -4240,6 +4619,18 @@
         "resourceType": "Observation",
         "id": "mii-exa-test-data-patient-4-molgen-untersuchte-region-18",
         "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            },
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/untersuchte-region",
             "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/region-studied"
@@ -4353,6 +4744,13 @@
         "resourceType": "FamilyMemberHistory",
         "id": "mii-exa-test-data-patient-4-molgen-family-member-history-1",
         "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/familienanamnese"
           ]
@@ -4431,6 +4829,13 @@
         "resourceType": "Specimen",
         "id": "mii-exa-test-data-patient-4-specimen-1",
         "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Specimen"
           ]
@@ -4471,6 +4876,13 @@
         "resourceType": "Specimen",
         "id": "mii-exa-test-data-patient-4-specimen-2",
         "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Specimen"
           ]
@@ -4511,6 +4923,13 @@
         "resourceType": "Specimen",
         "id": "mii-exa-test-data-patient-4-specimen-3",
         "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Specimen"
           ]
@@ -4598,6 +5017,13 @@
         "resourceType": "Specimen",
         "id": "mii-exa-test-data-patient-4-specimen-4",
         "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Specimen"
           ]
@@ -4684,6 +5110,15 @@
       "resource": {
         "resourceType": "Organization",
         "id": "mii-exa-test-data-organization-charite",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ]
+        },
         "type": [
           {
             "coding": [
@@ -4707,6 +5142,15 @@
       "resource": {
         "resourceType": "Organization",
         "id": "mii-exa-test-data-organization-labor-berlin",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ]
+        },
         "type": [
           {
             "coding": [
@@ -4731,6 +5175,13 @@
         "resourceType": "Organization",
         "id": "mii-exa-test-data-organization-biobank-charite",
         "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Organization"
           ]
@@ -4805,6 +5256,15 @@
       "resource": {
         "resourceType": "Practitioner",
         "id": "mii-exa-test-data-practitioner-physician-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ]
+        },
         "name": [
           {
             "given": [
@@ -4825,6 +5285,15 @@
       "resource": {
         "resourceType": "Practitioner",
         "id": "mii-exa-test-data-practitioner-physician-2",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ]
+        },
         "name": [
           {
             "given": [
@@ -4850,6 +5319,13 @@
         "resourceType": "PractitionerRole",
         "id": "mii-exa-test-data-practitioner-role-physician-1",
         "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/modul-studie/StructureDefinition/mii-pr-studie-beteiligte-person"
           ]
@@ -4884,6 +5360,15 @@
       "resource": {
         "resourceType": "Device",
         "id": "mii-exa-test-data-device-roche-cobas-c303",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ]
+        },
         "deviceName": [
           {
             "name": "cobas",
@@ -4907,6 +5392,15 @@
       "resource": {
         "resourceType": "Device",
         "id": "mii-exa-test-data-molgen-device-sequencer",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ]
+        },
         "deviceName": [
           {
             "name": "MiSeq",
@@ -4926,6 +5420,15 @@
       "resource": {
         "resourceType": "Device",
         "id": "mii-exa-test-data-device-roche-cobas",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ]
+        },
         "deviceName": [
           {
             "name": "cobas",

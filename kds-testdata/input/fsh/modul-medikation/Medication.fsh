@@ -1,6 +1,9 @@
 // Patient-1
 Instance: mii-exa-test-data-medication-ass-100
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication
+Usage: #example
+Description: "Medication: ASS 100"
+* insert TestDataLabel
 //* meta.profile[0] = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication|2.0.0"
 * code.coding[Pharmazentralnummer] = $pzn#06312077 "ASS 100 - 1a Pharma TAH Tabletten"
 * code.coding[atcClassDe] = $atc|2023#B01AC06 "Acetylsalicylsäure"
@@ -11,6 +14,9 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 
 Instance: mii-exa-test-data-medication-dalbavancin
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication
+Usage: #example
+Description: "Medication: Dalbavancin"
+* insert TestDataLabel
 //* meta.profile[0] = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication|2.0.0"
 * code.coding[Pharmazentralnummer] = $pzn#15205222 "XYDALBA"
 * code.coding[atcClassDe] = $atc|2023#J01XA04 "Dalbavancin"
@@ -22,6 +28,9 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 
 Instance: mii-exa-test-data-medication-propofol
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication
+Usage: #example
+Description: "Medication: Propofol"
+* insert TestDataLabel
 //* meta.profile[0] = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication|2.0.0"
 * code.coding[atcClassDe] = $atc|2023#N01AX10 "Propofol"
 * form.coding[EDQM] = $standardterms#50021000 "Emulsion for injection/infusion"
@@ -32,6 +41,9 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 
 Instance: mii-exa-test-data-medication-metamizol
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication
+Usage: #example
+Description: "Medication: Metamizol"
+* insert TestDataLabel
 //* meta.profile[0] = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication|2.0.0"
 * code.coding[Pharmazentralnummer] = $pzn#00651306 "Metamizol HEXAL® 500 mg"
 * code.coding[atcClassDe] = $atc|2023#N02BB02 "Metamizol-Natrium"
@@ -43,7 +55,8 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 Instance: mii-exa-test-data-medication-rezeptur-doxorubicin
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication
 Usage: #example
-//* insert TestDataLabel
+Description: "Medication: Rezeptur Doxorubicin"
+* insert TestDataLabel
 //* meta.profile = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication"
 * code.text = "Infusion bestehend aus 85mg Doxorubicin aufgeloest zur Verabreichung in 250ml 5-%iger (50 mg/ml) Glucose-Infusionsloesung"
 * form = $standardterms#11210000 "Solution for infusion"
@@ -58,7 +71,8 @@ Usage: #example
 Instance: mii-exa-test-data-medication-glucoseloesung
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication
 Usage: #example
-//* insert TestDataLabel
+Description: "Medication: Glucoselösung 5%"
+* insert TestDataLabel
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication"
 * code.coding[0] = $pzn#03705422 "Glucose 5% B.braun Ecoflac Plus"
 * code.coding[+] = $atc|2023#V06DC01 "Glucose"
@@ -81,6 +95,9 @@ Usage: #example
 // Patient-2 Medications (Lungenkarzinom)
 Instance: mii-exa-test-data-medication-morphin
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication
+Usage: #example
+Description: "Medication: Morphin"
+* insert TestDataLabel
 * code.coding[atcClassDe] = $atc|2024#N02AA01 "Morphin"
 * form = $standardterms#10219000 "Tablet"
 * ingredient.itemCodeableConcept.coding[ASK] = $ask#01927 "Morphin"
@@ -90,6 +107,9 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 
 Instance: mii-exa-test-data-medication-carboplatin
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication
+Usage: #example
+Description: "Medication: Carboplatin"
+* insert TestDataLabel
 * code.coding[atcClassDe] = $atc|2024#L01XA02 "Carboplatin"
 * form = $standardterms#11210000 "Solution for infusion"
 * ingredient.itemCodeableConcept.coding[ASK] = $ask#00488 "Carboplatin"
@@ -99,6 +119,9 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 
 Instance: mii-exa-test-data-medication-paclitaxel
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication
+Usage: #example
+Description: "Medication: Paclitaxel"
+* insert TestDataLabel
 * code.coding[atcClassDe] = $atc|2024#L01CD01 "Paclitaxel"
 * form = $standardterms#11210000 "Solution for infusion"
 * ingredient.itemCodeableConcept.coding[ASK] = $ask#02058 "Paclitaxel"
@@ -109,6 +132,9 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 // Patient-3 Medications (Anorektalkarzinom)
 Instance: mii-exa-test-data-medication-5-fluorouracil
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication
+Usage: #example
+Description: "Medication: 5-Fluorouracil"
+* insert TestDataLabel
 * code.coding[atcClassDe] = $atc|2024#L01BC02 "Fluorouracil"
 * form = $standardterms#11210000 "Solution for infusion"
 * ingredient.itemCodeableConcept.coding[ASK] = $ask#00836 "5-Fluorouracil"
@@ -118,6 +144,9 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 
 Instance: mii-exa-test-data-medication-oxaliplatin
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication
+Usage: #example
+Description: "Medication: Oxaliplatin"
+* insert TestDataLabel
 * code.coding[atcClassDe] = $atc|2024#L01XA03 "Oxaliplatin"
 * form = $standardterms#11210000 "Solution for infusion"
 * ingredient.itemCodeableConcept.coding[ASK] = $ask#02043 "Oxaliplatin"
@@ -128,6 +157,9 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 // Patient-4 Medications (Magenkarzinom)
 Instance: mii-exa-test-data-medication-cisplatin
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication
+Usage: #example
+Description: "Medication: Cisplatin"
+* insert TestDataLabel
 * code.coding[atcClassDe] = $atc|2024#L01XA01 "Cisplatin"
 * form = $standardterms#11210000 "Solution for infusion"
 * ingredient.itemCodeableConcept.coding[ASK] = $ask#00580 "Cisplatin"
@@ -137,6 +169,9 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 
 Instance: mii-exa-test-data-medication-omeprazol
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication
+Usage: #example
+Description: "Medication: Omeprazol"
+* insert TestDataLabel
 * code.coding[atcClassDe] = $atc|2024#A02BC01 "Omeprazol"
 * form = $standardterms#10221000 "Film-coated tablet"
 * ingredient.itemCodeableConcept.coding[ASK] = $ask#02041 "Omeprazol"
@@ -147,6 +182,9 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 // Patient-5 Medications (Endometriose)
 Instance: mii-exa-test-data-medication-leuprorelin
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication
+Usage: #example
+Description: "Medication: Leuprorelin"
+* insert TestDataLabel
 * code.coding[atcClassDe] = $atc|2024#L02AE02 "Leuprorelin"
 * form = $standardterms#11201000 "Solution for injection"
 * ingredient.itemCodeableConcept.coding[ASK] = $ask#01648 "Leuprorelin"
@@ -156,6 +194,9 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 
 Instance: mii-exa-test-data-medication-ibuprofen
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication
+Usage: #example
+Description: "Medication: Ibuprofen"
+* insert TestDataLabel
 * code.coding[atcClassDe] = $atc|2024#M01AE01 "Ibuprofen"
 * form = $standardterms#10221000 "Film-coated tablet"
 * ingredient.itemCodeableConcept.coding[ASK] = $ask#01341 "Ibuprofen"
@@ -166,6 +207,9 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 // Patient-6 Medications (Gastritis)
 Instance: mii-exa-test-data-medication-pantoprazol
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication
+Usage: #example
+Description: "Medication: Pantoprazol"
+* insert TestDataLabel
 * code.coding[atcClassDe] = $atc|2024#A02BC02 "Pantoprazol"
 * form = $standardterms#10221000 "Film-coated tablet"
 * ingredient.itemCodeableConcept.coding[ASK] = $ask#02069 "Pantoprazol"
@@ -175,6 +219,9 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 
 Instance: mii-exa-test-data-medication-amoxicillin
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication
+Usage: #example
+Description: "Medication: Amoxicillin"
+* insert TestDataLabel
 * code.coding[atcClassDe] = $atc|2024#J01CA04 "Amoxicillin"
 * form = $standardterms#10210000 "Capsule, hard"
 * ingredient.itemCodeableConcept.coding[ASK] = $ask#00097 "Amoxicillin"
@@ -184,6 +231,9 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 
 Instance: mii-exa-test-data-medication-clarithromycin
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication
+Usage: #example
+Description: "Medication: Clarithromycin"
+* insert TestDataLabel
 * code.coding[atcClassDe] = $atc|2024#J01FA09 "Clarithromycin"
 * form = $standardterms#10221000 "Film-coated tablet"
 * ingredient.itemCodeableConcept.coding[ASK] = $ask#00594 "Clarithromycin"
@@ -194,6 +244,9 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 // Patient-7 Medications (Bronchitis)
 Instance: mii-exa-test-data-medication-amoxicillin-clavulansaeure
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication
+Usage: #example
+Description: "Medication: Amoxicillin und Clavulansäure"
+* insert TestDataLabel
 * code.coding[atcClassDe] = $atc|2024#J01CR02 "Amoxicillin und Betalactamase-Inhibitor"
 * form = $standardterms#11210000 "Solution for infusion"
 * ingredient[0].itemCodeableConcept.coding[ASK] = $ask#00097 "Amoxicillin"
@@ -206,6 +259,9 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 
 Instance: mii-exa-test-data-medication-salbutamol
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication
+Usage: #example
+Description: "Medication: Salbutamol"
+* insert TestDataLabel
 * code.coding[atcClassDe] = $atc|2024#R03AC02 "Salbutamol"
 * form = $standardterms#11106000 "Pressurised inhalation, solution"
 * ingredient.itemCodeableConcept.coding[ASK] = $ask#02303 "Salbutamol"
@@ -216,6 +272,9 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 // Patient-8 Medications (Myokardinfarkt)
 Instance: mii-exa-test-data-medication-heparin
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication
+Usage: #example
+Description: "Medication: Heparin"
+* insert TestDataLabel
 * code.coding[atcClassDe] = $atc|2024#B01AB01 "Heparin"
 * form = $standardterms#11201000 "Solution for injection"
 * ingredient.itemCodeableConcept.coding[ASK] = $ask#01291 "Heparin"
@@ -225,6 +284,9 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 
 Instance: mii-exa-test-data-medication-metoprolol
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication
+Usage: #example
+Description: "Medication: Metoprolol"
+* insert TestDataLabel
 * code.coding[atcClassDe] = $atc|2024#C07AB02 "Metoprolol"
 * form = $standardterms#10221000 "Film-coated tablet"
 * ingredient.itemCodeableConcept.coding[ASK] = $ask#01780 "Metoprolol"
@@ -234,6 +296,9 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 
 Instance: mii-exa-test-data-medication-atorvastatin
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication
+Usage: #example
+Description: "Medication: Atorvastatin"
+* insert TestDataLabel
 * code.coding[atcClassDe] = $atc|2024#C10AA05 "Atorvastatin"
 * form = $standardterms#10221000 "Film-coated tablet"
 * ingredient.itemCodeableConcept.coding[ASK] = $ask#00302 "Atorvastatin"
@@ -244,6 +309,9 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 // Patient-9 Medications (Ovarialzyste)
 Instance: mii-exa-test-data-medication-ethinylestradiol-levonorgestrel
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication
+Usage: #example
+Description: "Medication: Ethinylestradiol und Levonorgestrel"
+* insert TestDataLabel
 * code.coding[atcClassDe] = $atc|2024#G03AA07 "Levonorgestrel und Ethinylestradiol"
 * form = $standardterms#10221000 "Film-coated tablet"
 * ingredient[0].itemCodeableConcept.coding[ASK] = $ask#00810 "Ethinylestradiol"
@@ -256,6 +324,9 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 
 Instance: mii-exa-test-data-medication-paracetamol
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication
+Usage: #example
+Description: "Medication: Paracetamol"
+* insert TestDataLabel
 * code.coding[atcClassDe] = $atc|2024#N02BE01 "Paracetamol"
 * form = $standardterms#10219000 "Tablet"
 * ingredient.itemCodeableConcept.coding[ASK] = $ask#01954 "Paracetamol"
@@ -266,6 +337,9 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 // Patient-10 Medications (Migräne)
 Instance: mii-exa-test-data-medication-sumatriptan
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication
+Usage: #example
+Description: "Medication: Sumatriptan"
+* insert TestDataLabel
 * code.coding[atcClassDe] = $atc|2024#N02CC01 "Sumatriptan"
 * form = $standardterms#10219000 "Tablet"
 * ingredient.itemCodeableConcept.coding[ASK] = $ask#02517 "Sumatriptan"
@@ -275,6 +349,9 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 
 Instance: mii-exa-test-data-medication-topiramat
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication
+Usage: #example
+Description: "Medication: Topiramat"
+* insert TestDataLabel
 * code.coding[atcClassDe] = $atc|2024#N03AX11 "Topiramat"
 * form = $standardterms#10221000 "Film-coated tablet"
 * ingredient.itemCodeableConcept.coding[ASK] = $ask#02611 "Topiramat"

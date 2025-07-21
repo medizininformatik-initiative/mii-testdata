@@ -3,21 +3,21 @@
 # │  used properties are included. For a list of all supported properties and their functions,     │
 # │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-# id: miitestdata
+id: mii-kds-testdata
 canonical: https://www.medizininformatik-initiative.de/fhir/testdata
-# name: MIITestData
-# title: Example Title
-# description: Example Implementation Guide for getting started with SUSHI
-# status: draft # draft | active | retired | unknown
+name: MIIKDSTestData
+title: MII KDS Test Data
+description: This project contains example MII KDS data for testing purposes.
+status: draft # draft | active | retired | unknown
 version: 2025.0.0
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
-# copyrightYear: 2024+
-# releaseLabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
-# license: CC0-1.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
-# jurisdiction: urn:iso:std:iso:3166#US "United States of America" # https://www.hl7.org/fhir/valueset-jurisdiction.html
-# publisher:
-#   name: Medizininformatik Initiative
-#   url: https://www.medizininformatik-initiative.de
+copyrightYear: 2019+
+releaseLabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
+license: CC0-1.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
+jurisdiction: urn:iso:std:iso:3166#DE "Deutschland" # https://www.hl7.org/fhir/valueset-jurisdiction.html
+publisher:
+  name: Medizininformatik Initiative
+  url: https://www.medizininformatik-initiative.de
   # email: test@example.org
 
 # The dependencies property corresponds to IG.dependsOn. The key is the
@@ -92,9 +92,9 @@ parameters:
 # │ input/includes. To use a provided input/includes/menu.xml file, delete the "menu"              │
 # │ property below.                                                                                │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-# menu:
-#   Home: index.html
-#   Artifacts: artifacts.html
+menu:
+  Home: index.html
+  Artifacts: artifacts.html
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
 # │  Uncomment the properties below to configure additional properties on the ImplementationGuide  │
@@ -202,7 +202,7 @@ parameters:
 # If set to true, no IG related content will be generated.
 # The default value for this property is false.
 #
-FSHOnly: true
+FSHOnly: false
 #
 #
 # When set to true, the "short" and "definition" field on the root element of an Extension will

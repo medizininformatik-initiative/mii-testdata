@@ -1,7 +1,10 @@
 // Patient-1
 Instance: mii-exa-test-data-patient-1-labrequest-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ServiceRequestLab
+Usage: #example
+Description: "ServiceRequest: Kleines Blutbild für Patient 1"
 //* meta.profile[0] = "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ServiceRequestLab|1.0.7-alpha1"
+* insert TestDataLabel
 * status = #completed
 * intent = #order
 * identifier[anforderung].type = $v2-0203#PLAC
@@ -20,6 +23,9 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-labor/St
 // Patient-2 ServiceRequest (Complete Blood Count - alle hämatologischen Parameter)
 Instance: mii-exa-test-data-patient-2-labrequest-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ServiceRequestLab
+Usage: #example
+Description: "ServiceRequest: Vollständiges Blutbild für Patient 2"
+* insert TestDataLabel
 * identifier[anforderung].type = $v2-0203#PLAC
 * identifier[anforderung].system = "https://www.charite.de/fhir/sid/lab-requests"
 * identifier[anforderung].value = "LAB_000002"
@@ -27,18 +33,21 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-labor/St
 * identifier[anforderung].assigner.identifier.value = "Charité"
 * status = #completed
 * intent = #order
-* category = $sct#108252007 "Laboratory procedure"
+* category.coding[laboratory] = $observation-category#laboratory
 * code = $loinc#58410-2 "CBC panel - Blood by Automated count"
 * subject = Reference(mii-exa-test-data-patient-2)
 * encounter = Reference(mii-exa-test-data-patient-2-encounter-1)
 * authoredOn = "2024-03-04T07:00:00+01:00"
 * requester = Reference(mii-exa-test-data-practitioner-physician-1)
-* reasonCode = $sct#182840001 "Drug monitoring"
+* reasonCode = $sct#254637007 "Non-small cell lung cancer (disorder)"
 * specimen = Reference(mii-exa-test-data-patient-2-specimen-1)
 
 // Patient-3 ServiceRequest 1 (Complete Blood Count)
 Instance: mii-exa-test-data-patient-3-labrequest-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ServiceRequestLab
+Usage: #example
+Description: "ServiceRequest: Vollständiges Blutbild für Patient 3"
+* insert TestDataLabel
 * identifier[anforderung].type = $v2-0203#PLAC
 * identifier[anforderung].system = "https://www.charite.de/fhir/sid/lab-requests"
 * identifier[anforderung].value = "LAB_000003"
@@ -46,8 +55,8 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-labor/St
 * identifier[anforderung].assigner.identifier.value = "Charité"
 * status = #completed
 * intent = #order
-* category = $sct#108252007 "Laboratory procedure"
-* code = $loinc#24360-0 "Hepatic function panel"
+* category.coding[laboratory] = $observation-category#laboratory
+* code = $loinc#58410-2
 * subject = Reference(mii-exa-test-data-patient-3)
 * encounter = Reference(mii-exa-test-data-patient-3-encounter-1)
 * authoredOn = "2022-04-05T07:30:00+02:00"
@@ -58,6 +67,9 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-labor/St
 // Patient-4 ServiceRequest 1 (Basic Metabolic Panel)
 Instance: mii-exa-test-data-patient-4-labrequest-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ServiceRequestLab
+Usage: #example
+Description: "ServiceRequest: Basisstoffwechsel für Patient 4"
+* insert TestDataLabel
 * identifier[anforderung].type = $v2-0203#PLAC
 * identifier[anforderung].system = "https://www.charite.de/fhir/sid/lab-requests"
 * identifier[anforderung].value = "LAB_000004"
@@ -65,7 +77,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-labor/St
 * identifier[anforderung].assigner.identifier.value = "Charité"
 * status = #completed
 * intent = #order
-* category = $sct#108252007 "Laboratory procedure"
+* category.coding[laboratory] = $observation-category#laboratory
 * code = $loinc#24323-8 "Comprehensive metabolic 2000 panel - Serum or Plasma"
 * subject = Reference(mii-exa-test-data-patient-4)
 * encounter = Reference(mii-exa-test-data-patient-4-encounter-1)
@@ -77,6 +89,9 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-labor/St
 // Patient-5 ServiceRequest 1 (CBC + Basic Metabolic)
 Instance: mii-exa-test-data-patient-5-labrequest-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ServiceRequestLab
+Usage: #example
+Description: "ServiceRequest: Kleines Blutbild und Basisstoffwechsel für Patient 5"
+* insert TestDataLabel
 * identifier[anforderung].type = $v2-0203#PLAC
 * identifier[anforderung].system = "https://www.charite.de/fhir/sid/lab-requests"
 * identifier[anforderung].value = "LAB_000005"
@@ -84,8 +99,8 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-labor/St
 * identifier[anforderung].assigner.identifier.value = "Charité"
 * status = #completed
 * intent = #order
-* category = $sct#108252007 "Laboratory procedure"
-* code = $loinc#24362-6 "Glucose and Hemoglobin A1c panel"
+* category.coding[laboratory] = $observation-category#laboratory
+* code = $loinc#58410-2
 * subject = Reference(mii-exa-test-data-patient-5)
 * encounter = Reference(mii-exa-test-data-patient-5-encounter-1)
 * authoredOn = "2023-07-12T06:15:00+02:00"
@@ -96,6 +111,9 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-labor/St
 // Patient-6 ServiceRequest 1 (Liver Function Panel)
 Instance: mii-exa-test-data-patient-6-labrequest-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ServiceRequestLab
+Usage: #example
+Description: "ServiceRequest: Leberfunktionstest für Patient 6"
+* insert TestDataLabel
 * identifier[anforderung].type = $v2-0203#PLAC
 * identifier[anforderung].system = "https://www.charite.de/fhir/sid/lab-requests"
 * identifier[anforderung].value = "LAB_000006"
@@ -103,8 +121,8 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-labor/St
 * identifier[anforderung].assigner.identifier.value = "Charité"
 * status = #completed
 * intent = #order
-* category = $sct#108252007 "Laboratory procedure"
-* code = $loinc#24360-0 "Hepatic function panel"
+* category.coding[laboratory] = $observation-category#laboratory
+* code = $loinc#24360-0
 * subject = Reference(mii-exa-test-data-patient-6)
 * encounter = Reference(mii-exa-test-data-patient-6-encounter-1)
 * authoredOn = "2022-03-14T06:30:00+01:00"
@@ -115,6 +133,9 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-labor/St
 // Patient-7 ServiceRequest 1 (CBC + Inflammation markers)
 Instance: mii-exa-test-data-patient-7-labrequest-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ServiceRequestLab
+Usage: #example
+Description: "ServiceRequest: Kleines Blutbild und Entzündungsmarker für Patient 7"
+* insert TestDataLabel
 * identifier[anforderung].type = $v2-0203#PLAC
 * identifier[anforderung].system = "https://www.charite.de/fhir/sid/lab-requests"
 * identifier[anforderung].value = "LAB_000007"
@@ -122,8 +143,8 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-labor/St
 * identifier[anforderung].assigner.identifier.value = "Charité"
 * status = #completed
 * intent = #order
-* category = $sct#108252007 "Laboratory procedure"
-* code = $loinc#33747-0 "General health panel"
+* category.coding[laboratory] = $observation-category#laboratory
+* code = $loinc#55429-5
 * subject = Reference(mii-exa-test-data-patient-7)
 * encounter = Reference(mii-exa-test-data-patient-7-encounter-1)
 * authoredOn = "2024-01-10T07:45:00+01:00"
@@ -134,6 +155,9 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-labor/St
 // Patient-8 ServiceRequest 1 (Cardiac markers panel)
 Instance: mii-exa-test-data-patient-8-labrequest-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ServiceRequestLab
+Usage: #example
+Description: "ServiceRequest: Herzmarker-Panel für Patient 8"
+* insert TestDataLabel
 * identifier[anforderung].type = $v2-0203#PLAC
 * identifier[anforderung].system = "https://www.charite.de/fhir/sid/lab-requests"
 * identifier[anforderung].value = "LAB_000008"
@@ -141,8 +165,8 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-labor/St
 * identifier[anforderung].assigner.identifier.value = "Charité"
 * status = #completed
 * intent = #order
-* category = $sct#108252007 "Laboratory procedure"
-* code = $loinc#lipid-profile "Lipid profile"
+* category.coding[laboratory] = $observation-category#laboratory
+* code = $loinc#89576-3
 * subject = Reference(mii-exa-test-data-patient-8)
 * encounter = Reference(mii-exa-test-data-patient-8-encounter-1)
 * authoredOn = "2023-11-12T06:00:00+01:00"
@@ -153,6 +177,9 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-labor/St
 // Patient-9 ServiceRequest 1 (Hormone panel)
 Instance: mii-exa-test-data-patient-9-labrequest-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ServiceRequestLab
+Usage: #example
+Description: "ServiceRequest: Hormonpanel für Patient 9"
+* insert TestDataLabel
 * identifier[anforderung].type = $v2-0203#PLAC
 * identifier[anforderung].system = "https://www.charite.de/fhir/sid/lab-requests"
 * identifier[anforderung].value = "LAB_000009"
@@ -160,18 +187,21 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-labor/St
 * identifier[anforderung].assigner.identifier.value = "Charité"
 * status = #completed
 * intent = #order
-* category = $sct#108252007 "Laboratory procedure"
-* code = $loinc#24364-2 "Reproductive endocrine panel"
+* category.coding[laboratory] = $observation-category#laboratory
+* code = $loinc#24364-2
 * subject = Reference(mii-exa-test-data-patient-9)
 * encounter = Reference(mii-exa-test-data-patient-9-encounter-1)
 * authoredOn = "2024-02-22T06:45:00+01:00"
 * requester = Reference(mii-exa-test-data-practitioner-physician-1)
-* reasonCode = $sct#79876008 "Ovarian cyst"
+* reasonCode = $sct#79883001 "Cyst of ovary (disorder)"
 * specimen = Reference(mii-exa-test-data-patient-9-specimen-2)
 
 // Patient-10 ServiceRequest 1 (Basic panel)
 Instance: mii-exa-test-data-patient-10-labrequest-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ServiceRequestLab
+Usage: #example
+Description: "ServiceRequest: Basisstoffwechsel für Patient 10"
+* insert TestDataLabel
 * identifier[anforderung].type = $v2-0203#PLAC
 * identifier[anforderung].system = "https://www.charite.de/fhir/sid/lab-requests"
 * identifier[anforderung].value = "LAB_000010"
@@ -179,7 +209,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-labor/St
 * identifier[anforderung].assigner.identifier.value = "Charité"
 * status = #completed
 * intent = #order
-* category = $sct#108252007 "Laboratory procedure"
+* category.coding[laboratory] = $observation-category#laboratory
 * code = $loinc#24323-8 "Comprehensive metabolic 2000 panel - Serum or Plasma"
 * subject = Reference(mii-exa-test-data-patient-10)
 * encounter = Reference(mii-exa-test-data-patient-10-encounter-1)

@@ -1,6 +1,9 @@
 // Patient-1
 Instance: mii-exa-test-data-patient-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient
+Usage: #example
+Description: "Patient: Patient-1"
+* insert TestDataLabel
 //* meta.profile[0] = "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient|2024.0.0"
 * meta.profile[+] = "http://fhir.de/ConsentManagement/StructureDefinition/Patient"
 //* insert AddVersichertenIdGKV(A123456780, 987654321)
@@ -43,6 +46,9 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-person/S
 // Patient-2
 Instance: mii-exa-test-data-patient-2
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient
+Usage: #example
+Description: "Patient: Patient-2"
+* insert TestDataLabel
 //* meta.profile[0] = "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient|2024.0.0"
 * meta.profile[+] = "http://fhir.de/ConsentManagement/StructureDefinition/Patient"
 //* insert AddVersichertenIdGKV(B23456789, 123456789)
@@ -63,6 +69,8 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-person/S
 Instance: mii-exa-test-data-patient-3
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient
 Usage: #example
+Description: "Patient: Patient-3"
+* insert TestDataLabel
 //* meta.profile[0] = "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient|2024.0.0"
 * meta.profile[+] = "http://fhir.de/ConsentManagement/StructureDefinition/Patient"
 * identifier[pid].use = #usual
@@ -119,6 +127,8 @@ Usage: #example
 Instance: mii-exa-test-data-patient-4
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient
 Usage: #example
+Description: "Patient: Patient-4"
+* insert TestDataLabel
 //* meta.profile[0] = "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/PatientPseudonymisiert|2024.0.0"
 * meta.profile[+] = "http://fhir.de/ConsentManagement/StructureDefinition/Patient"
 * identifier[+].type = $v3-ObservationValue#PSEUDED 
@@ -138,6 +148,8 @@ Usage: #example
 Instance: mii-exa-test-data-patient-5
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient
 Usage: #example
+Description: "Patient: Patient-5"
+* insert TestDataLabel
 * meta.profile[+] = "http://fhir.de/ConsentManagement/StructureDefinition/Patient"
 * identifier[pid].use = #usual
 * identifier[pid].type = http://terminology.hl7.org/CodeSystem/v2-0203#MR
@@ -172,6 +184,8 @@ Usage: #example
 Instance: mii-exa-test-data-patient-6
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient
 Usage: #example
+Description: "Patient: Patient-6"
+* insert TestDataLabel
 * meta.profile[+] = "http://fhir.de/ConsentManagement/StructureDefinition/Patient"
 * identifier[pid].use = #usual
 * identifier[pid].type = http://terminology.hl7.org/CodeSystem/v2-0203#MR
@@ -204,6 +218,8 @@ Usage: #example
 Instance: mii-exa-test-data-patient-7
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient
 Usage: #example
+Description: "Patient: Patient-7"
+* insert TestDataLabel
 * meta.profile[+] = "http://fhir.de/ConsentManagement/StructureDefinition/Patient"
 * identifier[pid].use = #usual
 * identifier[pid].type = http://terminology.hl7.org/CodeSystem/v2-0203#MR
@@ -237,6 +253,8 @@ Usage: #example
 Instance: mii-exa-test-data-patient-8
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient
 Usage: #example
+Description: "Patient: Patient-8"
+* insert TestDataLabel
 * meta.profile[+] = "http://fhir.de/ConsentManagement/StructureDefinition/Patient"
 * identifier[pid].use = #usual
 * identifier[pid].type = http://terminology.hl7.org/CodeSystem/v2-0203#MR
@@ -269,6 +287,8 @@ Usage: #example
 Instance: mii-exa-test-data-patient-9
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient
 Usage: #example
+Description: "Patient: Patient-9"
+* insert TestDataLabel
 * meta.profile[+] = "http://fhir.de/ConsentManagement/StructureDefinition/Patient"
 * identifier[pid].use = #usual
 * identifier[pid].type = http://terminology.hl7.org/CodeSystem/v2-0203#MR
@@ -303,6 +323,8 @@ Usage: #example
 Instance: mii-exa-test-data-patient-10
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient
 Usage: #example
+Description: "Patient: Patient-10"
+* insert TestDataLabel
 * meta.profile[+] = "http://fhir.de/ConsentManagement/StructureDefinition/Patient"
 * identifier[pid].use = #usual
 * identifier[pid].type = http://terminology.hl7.org/CodeSystem/v2-0203#MR

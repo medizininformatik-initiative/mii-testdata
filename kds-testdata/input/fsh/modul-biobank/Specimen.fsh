@@ -1,6 +1,9 @@
 // Patient-1
 Instance: mii-exa-test-data-patient-1-specimen-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Specimen
+Usage: #example
+Description: "Specimen: EDTA-Blut für Klinische Chemie und Hämatologie"
+* insert TestDataLabel
 //* meta.profile[0] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|1.0.8"
 * extension[gehoertZu].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/VerwaltendeOrganisation"
 * extension[gehoertZu].valueReference = Reference(mii-exa-test-data-organization-biobank-charite)
@@ -46,6 +49,9 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/S
 // Patient-2 Specimen (EDTA-Blut für Hämatologie)
 Instance: mii-exa-test-data-patient-2-specimen-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Specimen
+Usage: #example
+Description: "Specimen: EDTA-Blut für Hämatologie"
+* insert TestDataLabel
 * extension[gehoertZu].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/VerwaltendeOrganisation"
 * extension[gehoertZu].valueReference = Reference(mii-exa-test-data-organization-biobank-charite)
 * extension[festgestellteDiagnose].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Diagnose"
@@ -65,6 +71,8 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/S
 Instance: mii-exa-test-data-patient-3-specimen-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Specimen
 Usage: #example
+Description: "Specimen: Gewebeprobe aus dem Kolon"
+* insert TestDataLabel
 //* meta.profile[0] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|1.0.8"
 * type = $sct#128159001 "Tissue specimen from colon (specimen)"
 * collection.collectedDateTime = "2022-03-24T12:44:00+01:00"
@@ -77,6 +85,9 @@ Usage: #example
 // Patient-3 Specimen (Serum für Klinische Chemie - zusätzlich zum bestehenden Gewebe)
 Instance: mii-exa-test-data-patient-3-specimen-2
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Specimen
+Usage: #example
+Description: "Specimen: Serum für Klinische Chemie"
+* insert TestDataLabel
 * extension[gehoertZu].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/VerwaltendeOrganisation"
 * extension[gehoertZu].valueReference = Reference(mii-exa-test-data-organization-biobank-charite)
 * extension[festgestellteDiagnose].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Diagnose"
@@ -95,6 +106,9 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/S
 // Patient-3 Specimen (EDTA-Blut für Hämatologie - zusätzlich)
 Instance: mii-exa-test-data-patient-3-specimen-3
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Specimen
+Usage: #example
+Description: "Specimen: EDTA-Blut für Hämatologie"
+* insert TestDataLabel
 * extension[gehoertZu].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/VerwaltendeOrganisation"
 * extension[gehoertZu].valueReference = Reference(mii-exa-test-data-organization-biobank-charite)
 * extension[festgestellteDiagnose].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Diagnose"
@@ -114,6 +128,8 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/S
 Instance: mii-exa-test-data-patient-4-specimen-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Specimen
 Usage: #example
+Description: "Specimen: EDTA-Blut für Klinische Chemie und Hämatologie"
+* insert TestDataLabel
 * status = #available
 * type = $sct#445295009 "Blood specimen with edetic acid (specimen)"
 * subject = Reference(mii-exa-test-data-patient-4)
@@ -125,6 +141,8 @@ Usage: #example
 Instance: mii-exa-test-data-patient-4-specimen-2
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Specimen
 Usage: #example
+Description: "Specimen: EDTA-Blut für Klinische Chemie und Hämatologie"
+* insert TestDataLabel
 * status = #available
 * type = $sct#445295009 "Blood specimen with edetic acid (specimen)"
 * subject = Reference(mii-exa-test-data-patient-4)
@@ -136,6 +154,9 @@ Usage: #example
 // Patient-4 Specimen (Serum für Klinische Chemie - zusätzlich zu bestehenden)
 Instance: mii-exa-test-data-patient-4-specimen-3
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Specimen
+Usage: #example
+Description: "Specimen: Serum für Klinische Chemie"
+* insert TestDataLabel
 * extension[gehoertZu].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/VerwaltendeOrganisation"
 * extension[gehoertZu].valueReference = Reference(mii-exa-test-data-organization-biobank-charite)
 * extension[festgestellteDiagnose].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Diagnose"
@@ -154,6 +175,9 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/S
 // Patient-4 Specimen (EDTA-Blut für Hämatologie - zusätzlich)
 Instance: mii-exa-test-data-patient-4-specimen-4
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Specimen
+Usage: #example
+Description: "Specimen: EDTA-Blut für Hämatologie"
+* insert TestDataLabel
 * extension[gehoertZu].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/VerwaltendeOrganisation"
 * extension[gehoertZu].valueReference = Reference(mii-exa-test-data-organization-biobank-charite)
 * extension[festgestellteDiagnose].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Diagnose"
@@ -172,6 +196,9 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/S
 // Patient-5 Specimen (EDTA-Blut für Hämatologie)
 Instance: mii-exa-test-data-patient-5-specimen-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Specimen
+Usage: #example
+Description: "Specimen: EDTA-Blut für Hämatologie"
+* insert TestDataLabel
 * extension[gehoertZu].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/VerwaltendeOrganisation"
 * extension[gehoertZu].valueReference = Reference(mii-exa-test-data-organization-biobank-charite)
 * extension[festgestellteDiagnose].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Diagnose"
@@ -190,6 +217,9 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/S
 // Patient-5 Specimen (Serum für Klinische Chemie)
 Instance: mii-exa-test-data-patient-5-specimen-2
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Specimen
+Usage: #example
+Description: "Specimen: Serum für Klinische Chemie"
+* insert TestDataLabel
 * extension[gehoertZu].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/VerwaltendeOrganisation"
 * extension[gehoertZu].valueReference = Reference(mii-exa-test-data-organization-biobank-charite)
 * extension[festgestellteDiagnose].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Diagnose"
@@ -209,6 +239,9 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/S
 // Patient-6 Specimen (EDTA-Blut für Hämatologie)
 Instance: mii-exa-test-data-patient-6-specimen-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Specimen
+Usage: #example
+Description: "Specimen: EDTA-Blut für Hämatologie"
+* insert TestDataLabel
 * extension[gehoertZu].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/VerwaltendeOrganisation"
 * extension[gehoertZu].valueReference = Reference(mii-exa-test-data-organization-biobank-charite)
 * extension[festgestellteDiagnose].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Diagnose"
@@ -227,6 +260,9 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/S
 // Patient-6 Specimen (Serum für Klinische Chemie)
 Instance: mii-exa-test-data-patient-6-specimen-2
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Specimen
+Usage: #example
+Description: "Specimen: Serum für Klinische Chemie"
+* insert TestDataLabel
 * extension[gehoertZu].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/VerwaltendeOrganisation"
 * extension[gehoertZu].valueReference = Reference(mii-exa-test-data-organization-biobank-charite)
 * extension[festgestellteDiagnose].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Diagnose"
@@ -245,6 +281,9 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/S
 // Patient-7 Specimen (EDTA-Blut für Hämatologie)
 Instance: mii-exa-test-data-patient-7-specimen-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Specimen
+Usage: #example
+Description: "Specimen: EDTA-Blut für Hämatologie"
+* insert TestDataLabel
 * extension[gehoertZu].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/VerwaltendeOrganisation"
 * extension[gehoertZu].valueReference = Reference(mii-exa-test-data-organization-biobank-charite)
 * extension[festgestellteDiagnose].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Diagnose"
@@ -263,6 +302,9 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/S
 // Patient-7 Specimen (Serum für Klinische Chemie)
 Instance: mii-exa-test-data-patient-7-specimen-2
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Specimen
+Usage: #example
+Description: "Specimen: Serum für Klinische Chemie"
+* insert TestDataLabel
 * extension[gehoertZu].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/VerwaltendeOrganisation"
 * extension[gehoertZu].valueReference = Reference(mii-exa-test-data-organization-biobank-charite)
 * extension[festgestellteDiagnose].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Diagnose"
@@ -281,6 +323,9 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/S
 // Patient-8 Specimen (EDTA-Blut für Hämatologie)
 Instance: mii-exa-test-data-patient-8-specimen-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Specimen
+Usage: #example
+Description: "Specimen: EDTA-Blut für Hämatologie"
+* insert TestDataLabel
 * extension[gehoertZu].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/VerwaltendeOrganisation"
 * extension[gehoertZu].valueReference = Reference(mii-exa-test-data-organization-biobank-charite)
 * extension[festgestellteDiagnose].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Diagnose"
@@ -299,6 +344,9 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/S
 // Patient-8 Specimen (Serum für Klinische Chemie)
 Instance: mii-exa-test-data-patient-8-specimen-2
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Specimen
+Usage: #example
+Description: "Specimen: Serum für Klinische Chemie"
+* insert TestDataLabel
 * extension[gehoertZu].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/VerwaltendeOrganisation"
 * extension[gehoertZu].valueReference = Reference(mii-exa-test-data-organization-biobank-charite)
 * extension[festgestellteDiagnose].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Diagnose"
@@ -317,6 +365,9 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/S
 // Patient-9 Specimen (EDTA-Blut für Hämatologie)
 Instance: mii-exa-test-data-patient-9-specimen-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Specimen
+Usage: #example
+Description: "Specimen: EDTA-Blut für Hämatologie"
+* insert TestDataLabel
 * extension[gehoertZu].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/VerwaltendeOrganisation"
 * extension[gehoertZu].valueReference = Reference(mii-exa-test-data-organization-biobank-charite)
 * extension[festgestellteDiagnose].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Diagnose"
@@ -335,6 +386,9 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/S
 // Patient-9 Specimen (Serum für Klinische Chemie)
 Instance: mii-exa-test-data-patient-9-specimen-2
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Specimen
+Usage: #example
+Description: "Specimen: Serum für Klinische Chemie"
+* insert TestDataLabel
 * extension[gehoertZu].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/VerwaltendeOrganisation"
 * extension[gehoertZu].valueReference = Reference(mii-exa-test-data-organization-biobank-charite)
 * extension[festgestellteDiagnose].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Diagnose"
@@ -353,6 +407,9 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/S
 // Patient-10 Specimen (EDTA-Blut für Hämatologie)
 Instance: mii-exa-test-data-patient-10-specimen-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Specimen
+Usage: #example
+Description: "Specimen: EDTA-Blut für Hämatologie"
+* insert TestDataLabel
 * extension[gehoertZu].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/VerwaltendeOrganisation"
 * extension[gehoertZu].valueReference = Reference(mii-exa-test-data-organization-biobank-charite)
 * extension[festgestellteDiagnose].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Diagnose"
@@ -371,6 +428,9 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/S
 // Patient-10 Specimen (Serum für Klinische Chemie)
 Instance: mii-exa-test-data-patient-10-specimen-2
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Specimen
+Usage: #example
+Description: "Specimen: Serum für Klinische Chemie"
+* insert TestDataLabel
 * extension[gehoertZu].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/VerwaltendeOrganisation"
 * extension[gehoertZu].valueReference = Reference(mii-exa-test-data-organization-biobank-charite)
 * extension[festgestellteDiagnose].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Diagnose"

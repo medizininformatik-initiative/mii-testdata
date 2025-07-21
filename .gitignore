@@ -13,3 +13,11 @@ medicine-route-of-administration.json
 mii-vs-medikation-ask.json
 mii-vs-medikation-atc.json
 .DS_Store
+_build.bat
+_build.sh 
+_gencontinuous.sh
+_gencontinuous.bat
+_genonce.sh
+_genonce.bat
+_updatePublisher.bat
+_updatePublisher.sh

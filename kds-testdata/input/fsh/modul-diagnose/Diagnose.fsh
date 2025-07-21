@@ -1,6 +1,9 @@
 // Diagnose Patient-1
 Instance: mii-exa-test-data-patient-1-diagnose-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-diagnose/StructureDefinition/Diagnose
+Usage: #example
+Description: "Condition: Masern mit Otitis für Patient 1"
+* insert TestDataLabel
 //* meta.profile[0] = "https://www.medizininformatik-initiative.de/fhir/core/modul-diagnose/StructureDefinition/Diagnose|2024.0.0"
 * insert AddDiagnose(B05.3, 2023, mii-exa-test-data-patient-1, 2024-02-12, Masernotitis)
 * code.coding[icd10-gm].extension[0].url = "http://fhir.de/StructureDefinition/icd-10-gm-mehrfachcodierungs-kennzeichen"
@@ -17,6 +20,9 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-diagnose
 
 Instance: mii-exa-test-data-patient-1-diagnose-2
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-diagnose/StructureDefinition/Diagnose
+Usage: #example
+Description: "Condition: Otitis media bei anderenorts klassifizierten Viruskrankheiten für Patient 1"
+* insert TestDataLabel
 //* meta.profile[0] = "https://www.medizininformatik-initiative.de/fhir/core/modul-diagnose/StructureDefinition/Diagnose|2024.0.0"
 * insert AddDiagnose(H67.1, 2023, mii-exa-test-data-patient-1, 2024-02-12, Masernotitis)
 * code.coding[icd10-gm].display = "Otitis media bei anderenorts klassifizierten Viruskrankheiten"
@@ -28,6 +34,9 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-diagnose
 // Patient-2
 Instance: mii-exa-test-data-patient-2-diagnose-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-diagnose/StructureDefinition/Diagnose
+Usage: #example
+Description: "Condition: Bösartige Neubildung des Lungenoberlappens für Patient 2"
+* insert TestDataLabel
 //* meta.profile[0] = "https://www.medizininformatik-initiative.de/fhir/core/modul-diagnose/StructureDefinition/Diagnose|2024.0.0"
 * insert AddDiagnose(C34.1, 2024, mii-exa-test-data-patient-2, 2024-03-02, Bösartige Neubildung: Oberlappen-Bronchus)
 * code.coding[alpha-id] = $alpha-id|2024#I30011 "Bösartige Neubildung des Lungenoberlappens"
@@ -38,6 +47,9 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-diagnose
 // Patient-3
 Instance: mii-exa-test-data-patient-3-diagnose-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-diagnose/StructureDefinition/Diagnose
+Usage: #example
+Description: "Condition: Bösartige anorektale Neubildung für Patient 3"
+* insert TestDataLabel
 //* meta.profile[0] = "https://www.medizininformatik-initiative.de/fhir/core/modul-diagnose/StructureDefinition/Diagnose|2024.0.0"
 * insert AddDiagnose(C21.8, 2022, mii-exa-test-data-patient-3, 2022-04-02, Bösartige anorektale Neubildung)
 * code.coding[alpha-id] = $alpha-id|2022#I29975 "Bösartige anorektale Neubildung"
@@ -50,12 +62,18 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-diagnose
 // Patient-4
 Instance: mii-exa-test-data-patient-4-diagnose-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-diagnose/StructureDefinition/Diagnose
+Usage: #example
+Description: "Condition: Bösartige Neubildung des Magens nicht näher bezeichnet für Patient 4"
+* insert TestDataLabel
 //* meta.profile[0] = "https://www.medizininformatik-initiative.de/fhir/core/modul-diagnose/StructureDefinition/Diagnose|2024.0.0"
 * insert AddDiagnose(C16.9, 2022, mii-exa-test-data-patient-4, 2022-11-30, Bösartige Neubildung des Magens nicht näher bezeichnet)
 
 // Patient-5
 Instance: mii-exa-test-data-patient-5-diagnose-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-diagnose/StructureDefinition/Diagnose
+Usage: #example
+Description: "Condition: Endometriose des Ovars für Patient 5"
+* insert TestDataLabel
 //* meta.profile[0] = "https://www.medizininformatik-initiative.de/fhir/core/modul-diagnose/StructureDefinition/Diagnose|2024.0.0"
 * insert AddDiagnose(N80.1, 2023, mii-exa-test-data-patient-5, 2023-07-10, Endometriose des Ovars)
 * code.coding[alpha-id] = $alpha-id|2023#I32145 "Endometriose des Ovars"
@@ -66,6 +84,9 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-diagnose
 // Patient-6
 Instance: mii-exa-test-data-patient-6-diagnose-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-diagnose/StructureDefinition/Diagnose
+Usage: #example
+Description: "Condition: Chronische Gastritis, nicht näher bezeichnet für Patient 6"
+* insert TestDataLabel
 //* meta.profile[0] = "https://www.medizininformatik-initiative.de/fhir/core/modul-diagnose/StructureDefinition/Diagnose|2024.0.0"
 * insert AddDiagnose(K29.5, 2022, mii-exa-test-data-patient-6, 2022-03-12, Chronische Gastritis\, nicht näher bezeichnet)
 * code.coding[alpha-id] = $alpha-id|2022#I30016 "Chronische Gastritis"
@@ -76,6 +97,9 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-diagnose
 // Patient-7
 Instance: mii-exa-test-data-patient-7-diagnose-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-diagnose/StructureDefinition/Diagnose
+Usage: #example
+Description: "Condition: Bösartige Neubildung des Magens nicht näher bezeichnet für Patient 7"
+* insert TestDataLabel
 //* meta.profile[0] = "https://www.medizininformatik-initiative.de/fhir/core/modul-diagnose/StructureDefinition/Diagnose|2024.0.0"
 * insert AddDiagnose(J20.9, 2024, mii-exa-test-data-patient-7, 2024-01-08, Akute Bronchitis\, nicht näher bezeichnet)
 * code.coding[alpha-id] = $alpha-id|2024#I25780 "Akute Bronchitis"
@@ -86,6 +110,9 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-diagnose
 // Patient-8
 Instance: mii-exa-test-data-patient-8-diagnose-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-diagnose/StructureDefinition/Diagnose
+Usage: #example
+Description: "Condition: Akute Bronchitis für Patient 8"
+* insert TestDataLabel
 //* meta.profile[0] = "https://www.medizininformatik-initiative.de/fhir/core/modul-diagnose/StructureDefinition/Diagnose|2024.0.0"
 * insert AddDiagnose(I25.9, 2023, mii-exa-test-data-patient-8, 2023-11-10, Chronische ischämische Herzkrankheit\, nicht näher bezeichnet)
 * code.coding[alpha-id] = $alpha-id|2023#I26852 "Chronische ischämische Herzkrankheit"
@@ -96,6 +123,9 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-diagnose
 // Patient-9
 Instance: mii-exa-test-data-patient-9-diagnose-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-diagnose/StructureDefinition/Diagnose
+Usage: #example
+Description: "Condition: Chronische ischämische Herzkrankheit für Patient 9"
+* insert TestDataLabel
 //* meta.profile[0] = "https://www.medizininformatik-initiative.de/fhir/core/modul-diagnose/StructureDefinition/Diagnose|2024.0.0"
 * insert AddDiagnose(N83.2, 2024, mii-exa-test-data-patient-9, 2024-02-20, Sonstige und nicht näher bezeichnete Ovarialzysten)
 * code.coding[alpha-id] = $alpha-id|2024#I20743 "Ovarialzyste"
@@ -106,6 +136,9 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-diagnose
 // Patient-10
 Instance: mii-exa-test-data-patient-10-diagnose-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-diagnose/StructureDefinition/Diagnose
+Usage: #example
+Description: "Condition: Chronische ischämische Herzkrankheit für Patient 10"
+* insert TestDataLabel
 //* meta.profile[0] = "https://www.medizininformatik-initiative.de/fhir/core/modul-diagnose/StructureDefinition/Diagnose|2024.0.0"
 * insert AddDiagnose(G43.9, 2019, mii-exa-test-data-patient-10, 2019-05-14, Migräne\, nicht näher bezeichnet)
 * code.coding[alpha-id] = $alpha-id|2019#I18412 "Migräne"

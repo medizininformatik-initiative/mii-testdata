@@ -3,6 +3,8 @@
 Instance: mii-exa-test-data-patient-3-molgen-family-member-history-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/familienanamnese
 Usage: #example
+Description: "FamilyMemberHistory: Familienanamnese für BRAF-Mutation"
+* insert TestDataLabel
 //* meta.profile[0] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/familienanamnese|1.0.0"
 * status = #completed
 * patient = Reference(mii-exa-test-data-patient-3)
@@ -21,6 +23,8 @@ Usage: #example
 Instance: mii-exa-test-data-patient-4-molgen-family-member-history-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/familienanamnese
 Usage: #example
+Description: "FamilyMemberHistory: Familienanamnese für Magenkarzinom"
+* insert TestDataLabel
 * status = #completed
 * patient = Reference(mii-exa-test-data-patient-4)
 * date = "2022-11-30"

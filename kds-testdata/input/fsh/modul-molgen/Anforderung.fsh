@@ -2,6 +2,8 @@
 Instance: mii-exa-test-data-patient-3-molgen-anforderung-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/anforderung-genetischer-test
 Usage: #example
+Description: "ServiceRequest: Anforderung genetischer Test für BRAF-Mutation"
+* insert TestDataLabel
 //* meta.profile[0] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/anforderung-genetischer-test|1.0.0"
 * status = #active
 * intent = #order
@@ -20,6 +22,8 @@ Usage: #example
 Instance: mii-exa-test-data-patient-4-molgen-anforderung-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/anforderung-genetischer-test
 Usage: #example
+Description: "ServiceRequest: Anforderung molekulargenetische Stufendiagnostik"
+* insert TestDataLabel
 * identifier.system = "https://www.charite.de/fhir/auftragsnummern"
 * identifier.value = "7B369EB0"
 * status = #active

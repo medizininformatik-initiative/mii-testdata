@@ -23,6 +23,9 @@ RuleSet: AddBundleEntry(resource, url)
 // =============================================================================
 Instance: mii-exa-test-data-bundle-pat-1
 InstanceOf: Bundle
+Usage: #example
+Description: "Bundle: Patient-1"
+* insert TestDataLabel
 * type = #transaction
 * timestamp = "2025-06-18T13:51:00+02:00"
 * insert AddBundleEntry(mii-exa-test-data-patient-1, Patient)
@@ -73,6 +76,9 @@ InstanceOf: Bundle
 // =============================================================================
 Instance: mii-exa-test-data-bundle-pat-2
 InstanceOf: Bundle
+Usage: #example
+Description: "Bundle: Patient-2"
+* insert TestDataLabel
 * type = #transaction
 * timestamp = "2025-06-18T13:53:00+02:00"
 
@@ -139,6 +145,9 @@ InstanceOf: Bundle
 // =============================================================================
 Instance: mii-exa-test-data-bundle-pat-3
 InstanceOf: Bundle
+Usage: #example
+Description: "Bundle: Patient-3"
+* insert TestDataLabel
 * type = #transaction
 * timestamp = "2025-06-18T13:51:00+02:00"
 
@@ -219,6 +228,9 @@ InstanceOf: Bundle
 // =============================================================================
 Instance: mii-exa-test-data-bundle-pat-4
 InstanceOf: Bundle
+Usage: #example
+Description: "Bundle: Patient-4"
+* insert TestDataLabel
 * type = #transaction
 * timestamp = "2025-06-18T13:54:00+02:00"
 
@@ -303,6 +315,9 @@ InstanceOf: Bundle
 // =============================================================================
 Instance: mii-exa-test-data-bundle-pat-5
 InstanceOf: Bundle
+Usage: #example
+Description: "Bundle: Patient-5"
+* insert TestDataLabel
 * type = #transaction
 * timestamp = "2025-06-18T13:55:00+02:00"
 
@@ -362,6 +377,9 @@ InstanceOf: Bundle
 // =============================================================================
 Instance: mii-exa-test-data-bundle-pat-6
 InstanceOf: Bundle
+Usage: #example
+Description: "Bundle: Patient-6"
+* insert TestDataLabel
 * type = #transaction
 * timestamp = "2025-06-18T13:56:00+02:00"
 
@@ -425,6 +443,9 @@ InstanceOf: Bundle
 // =============================================================================
 Instance: mii-exa-test-data-bundle-pat-7
 InstanceOf: Bundle
+Usage: #example
+Description: "Bundle: Patient-7"
+* insert TestDataLabel
 * type = #transaction
 * timestamp = "2025-06-18T13:57:00+02:00"
 
@@ -484,6 +505,9 @@ InstanceOf: Bundle
 // =============================================================================
 Instance: mii-exa-test-data-bundle-pat-8
 InstanceOf: Bundle
+Usage: #example
+Description: "Bundle: Patient-8"
+* insert TestDataLabel
 * type = #transaction
 * timestamp = "2025-06-18T13:58:00+02:00"
 
@@ -548,6 +572,9 @@ InstanceOf: Bundle
 // =============================================================================
 Instance: mii-exa-test-data-bundle-pat-9
 InstanceOf: Bundle
+Usage: #example
+Description: "Bundle: Patient-9"
+* insert TestDataLabel
 * type = #transaction
 * timestamp = "2025-06-18T13:59:00+02:00"
 
@@ -607,6 +634,9 @@ InstanceOf: Bundle
 // =============================================================================
 Instance: mii-exa-test-data-bundle-pat-10
 InstanceOf: Bundle
+Usage: #example
+Description: "Bundle: Patient-10"
+* insert TestDataLabel
 * type = #transaction
 * timestamp = "2025-06-18T14:00:00+02:00"
 

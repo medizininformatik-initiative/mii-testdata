@@ -3,6 +3,8 @@
 Instance: mii-exa-test-data-patient-3-molgen-therapeutische-implikation-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/therapeutische-implikation
 Usage: #example
+Description: "Observation: Therapeutische Implikation für BRAF-Mutation"
+* insert TestDataLabel
 //* meta.profile[0] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/therapeutische-implikation"
 * meta.profile[+] = "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/therapeutic-implication"
 * code = $tbd-codes-cs#therapeutic-implication "Therapeutic Implication"

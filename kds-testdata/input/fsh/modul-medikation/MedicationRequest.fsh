@@ -1,6 +1,9 @@
 // Patient-1
 Instance: mii-exa-test-data-patient-1-medrequest-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationRequest
+Usage: #example
+Description: "MedicationRequest: Dalbavancin 1500 mg IV als 30-minütige Infusion"
+* insert TestDataLabel
 //* meta.profile[0] = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationRequest|2.0.0"
 * identifier[0].system = "https://www.charite.de/fhir/sid/MedicationOrders"
 * identifier[0].value = "MO_0000001"
@@ -21,6 +24,9 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 
 Instance: mii-exa-test-data-patient-1-medrequest-2
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationRequest
+Usage: #example
+Description: "MedicationRequest: Dalbavancin 1500 mg IV als 30-minütige Infusion"
+* insert TestDataLabel
 //* meta.profile[0] = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationRequest|2.0.0"
 * identifier[0].system = "https://www.charite.de/fhir/sid/MedicationOrders"
 * identifier[0].value = "MO_0000002"
@@ -40,6 +46,9 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 
 Instance: mii-exa-test-data-patient-1-medrequest-3
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationRequest
+Usage: #example
+Description: "MedicationRequest: Propofol 6.5 mg/min IV via Perfusor"
+* insert TestDataLabel
 //* meta.profile[0] = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationRequest|2.0.0"
 * identifier[0].system = "https://www.charite.de/fhir/sid/MedicationOrders"
 * identifier[0].value = "MO_0000003"
@@ -57,6 +66,9 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 
 Instance: mii-exa-test-data-patient-1-medrequest-4
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationRequest
+Usage: #example
+Description: "MedicationRequest: Propofol 6.5 mg/min IV via Perfusor"
+* insert TestDataLabel
 //* meta.profile[0] = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationRequest|2.0.0"
 * identifier[0].system = "https://www.charite.de/fhir/sid/MedicationOrders"
 * identifier[0].value = "MO_0000004"
@@ -77,6 +89,9 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 //Patient-3
 Instance: mii-exa-test-data-patient-3-medrequest-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationRequest
+Usage: #example
+Description: "MedicationRequest: Metamizol 500-1000 mg oral bei Bedarf"
+* insert TestDataLabel
 //* meta.profile[0] = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationRequest|2.0.0"
 * identifier[0].system = "https://www.charite.de/fhir/sid/MedicationOrders"
 * identifier[0].value = "MO_0000005"
@@ -99,6 +114,9 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 // Patient-2 MedicationRequests
 Instance: mii-exa-test-data-patient-2-medrequest-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationRequest
+Usage: #example
+Description: "MedicationRequest: Morphin 10mg oral alle 6 Stunden bei Bedarf"
+* insert TestDataLabel
 * identifier[0].system = "https://www.charite.de/fhir/sid/MedicationOrders"
 * identifier[0].value = "MO_0000006"
 * status = #active
@@ -118,6 +136,9 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 
 Instance: mii-exa-test-data-patient-2-medrequest-2
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationRequest
+Usage: #example
+Description: "MedicationRequest: Carboplatin 450mg IV über 1 Stunde"
+* insert TestDataLabel
 * identifier[0].system = "https://www.charite.de/fhir/sid/MedicationOrders"
 * identifier[0].value = "MO_0000007"
 * status = #active
@@ -135,6 +156,9 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 
 Instance: mii-exa-test-data-patient-2-medrequest-3
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationRequest
+Usage: #example
+Description: "MedicationRequest: Paclitaxel 175mg IV über 3 Stunden"
+* insert TestDataLabel
 * identifier[0].system = "https://www.charite.de/fhir/sid/MedicationOrders"
 * identifier[0].value = "MO_0000008"
 * status = #active
@@ -153,6 +177,9 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 // Patient-3 MedicationRequests
 Instance: mii-exa-test-data-patient-3-medrequest-2
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationRequest
+Usage: #example
+Description: "MedicationRequest: 5-FU 1000mg/m² IV über 46 Stunden"
+* insert TestDataLabel
 * identifier[0].system = "https://www.charite.de/fhir/sid/MedicationOrders"
 * identifier[0].value = "MO_0000009"
 * status = #active
@@ -170,6 +197,9 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 
 Instance: mii-exa-test-data-patient-3-medrequest-3
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationRequest
+Usage: #example
+Description: "MedicationRequest: Oxaliplatin 85mg/m² IV über 2 Stunden"
+* insert TestDataLabel
 * identifier[0].system = "https://www.charite.de/fhir/sid/MedicationOrders"
 * identifier[0].value = "MO_0000010"
 * status = #active
@@ -188,6 +218,9 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 // Patient-4 MedicationRequests
 Instance: mii-exa-test-data-patient-4-medrequest-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationRequest
+Usage: #example
+Description: "MedicationRequest: Cisplatin 75mg/m² IV über 2 Stunden"
+* insert TestDataLabel
 * identifier[0].system = "https://www.charite.de/fhir/sid/MedicationOrders"
 * identifier[0].value = "MO_0000011"
 * status = #active
@@ -205,6 +238,9 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 
 Instance: mii-exa-test-data-patient-4-medrequest-2
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationRequest
+Usage: #example
+Description: "MedicationRequest: Omeprazol 20mg 1x täglich morgens"
+* insert TestDataLabel
 * identifier[0].system = "https://www.charite.de/fhir/sid/MedicationOrders"
 * identifier[0].value = "MO_0000012"
 * status = #active
@@ -225,6 +261,9 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 // Patient-5 MedicationRequests
 Instance: mii-exa-test-data-patient-5-medrequest-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationRequest
+Usage: #example
+Description: "MedicationRequest: Leuprorelin 3,75mg s.c. alle 4 Wochen"
+* insert TestDataLabel
 * identifier[0].system = "https://www.charite.de/fhir/sid/MedicationOrders"
 * identifier[0].value = "MO_0000013"
 * status = #active
@@ -243,6 +282,9 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 
 Instance: mii-exa-test-data-patient-5-medrequest-2
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationRequest
+Usage: #example
+Description: "MedicationRequest: Ibuprofen 400mg bis zu 3x täglich bei Bedarf"
+* insert TestDataLabel
 * identifier[0].system = "https://www.charite.de/fhir/sid/MedicationOrders"
 * identifier[0].value = "MO_0000014"
 * status = #active
@@ -263,6 +305,9 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 // Patient-6 MedicationRequests
 Instance: mii-exa-test-data-patient-6-medrequest-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationRequest
+Usage: #example
+Description: "MedicationRequest: Pantoprazol 40mg 1x täglich morgens"
+* insert TestDataLabel
 * identifier[0].system = "https://www.charite.de/fhir/sid/MedicationOrders"
 * identifier[0].value = "MO_0000015"
 * status = #active
@@ -282,6 +327,9 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 
 Instance: mii-exa-test-data-patient-6-medrequest-2
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationRequest
+Usage: #example
+Description: "MedicationRequest: Amoxicillin 500mg 3x täglich"
+* insert TestDataLabel
 * identifier[0].system = "https://www.charite.de/fhir/sid/MedicationOrders"
 * identifier[0].value = "MO_0000016"
 * status = #active
@@ -300,6 +348,9 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 
 Instance: mii-exa-test-data-patient-6-medrequest-3
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationRequest
+Usage: #example
+Description: "MedicationRequest: Clarithromycin 250mg 2x täglich"
+* insert TestDataLabel
 * identifier[0].system = "https://www.charite.de/fhir/sid/MedicationOrders"
 * identifier[0].value = "MO_0000017"
 * status = #active
@@ -319,6 +370,9 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 // Patient-7 MedicationRequests
 Instance: mii-exa-test-data-patient-7-medrequest-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationRequest
+Usage: #example
+Description: "MedicationRequest: Amoxicillin/Clavulansäure 1,2g IV alle 8 Stunden"
+* insert TestDataLabel
 * identifier[0].system = "https://www.charite.de/fhir/sid/MedicationOrders"
 * identifier[0].value = "MO_0000018"
 * status = #active
@@ -337,6 +391,9 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 
 Instance: mii-exa-test-data-patient-7-medrequest-2
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationRequest
+Usage: #example
+Description: "MedicationRequest: Salbutamol 2 Hubs inhalativ bei Bedarf"
+* insert TestDataLabel
 * identifier[0].system = "https://www.charite.de/fhir/sid/MedicationOrders"
 * identifier[0].value = "MO_0000019"
 * status = #active
@@ -354,6 +411,9 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 // Patient-8 MedicationRequests
 Instance: mii-exa-test-data-patient-8-medrequest-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationRequest
+Usage: #example
+Description: "MedicationRequest: Heparin 5000 IE s.c. alle 12 Stunden"
+* insert TestDataLabel
 * identifier[0].system = "https://www.charite.de/fhir/sid/MedicationOrders"
 * identifier[0].value = "MO_0000020"
 * status = #active
@@ -372,6 +432,9 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 
 Instance: mii-exa-test-data-patient-8-medrequest-2
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationRequest
+Usage: #example
+Description: "MedicationRequest: Metoprolol 50mg 2x täglich"
+* insert TestDataLabel
 * identifier[0].system = "https://www.charite.de/fhir/sid/MedicationOrders"
 * identifier[0].value = "MO_0000021"
 * status = #active
@@ -390,6 +453,9 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 
 Instance: mii-exa-test-data-patient-8-medrequest-3
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationRequest
+Usage: #example
+Description: "MedicationRequest: Atorvastatin 40mg 1x täglich abends"
+* insert TestDataLabel
 * identifier[0].system = "https://www.charite.de/fhir/sid/MedicationOrders"
 * identifier[0].value = "MO_0000022"
 * status = #active
@@ -410,6 +476,9 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 // Patient-9 MedicationRequests
 Instance: mii-exa-test-data-patient-9-medrequest-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationRequest
+Usage: #example
+Description: "MedicationRequest: Verhütungspille 1 Tablette täglich"
+* insert TestDataLabel
 * identifier[0].system = "https://www.charite.de/fhir/sid/MedicationOrders"
 * identifier[0].value = "MO_0000023"
 * status = #active
@@ -428,6 +497,9 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 
 Instance: mii-exa-test-data-patient-9-medrequest-2
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationRequest
+Usage: #example
+Description: "MedicationRequest: Paracetamol 500mg bis zu 4x täglich bei Bedarf"
+* insert TestDataLabel
 * identifier[0].system = "https://www.charite.de/fhir/sid/MedicationOrders"
 * identifier[0].value = "MO_0000020"
 * status = #active
@@ -448,6 +520,9 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 // Patient-10 MedicationRequests
 Instance: mii-exa-test-data-patient-10-medrequest-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationRequest
+Usage: #example
+Description: "MedicationRequest: Sumatriptan 50mg bei Migräne-Attacke"
+* insert TestDataLabel
 * identifier[0].system = "https://www.charite.de/fhir/sid/MedicationOrders"
 * identifier[0].value = "MO_0000024"
 * status = #active
@@ -464,6 +539,9 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 
 Instance: mii-exa-test-data-patient-10-medrequest-2
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationRequest
+Usage: #example
+Description: "MedicationRequest: Topiramat 50mg 2x täglich zur Prophylaxe"
+* insert TestDataLabel
 * identifier[0].system = "https://www.charite.de/fhir/sid/MedicationOrders"
 * identifier[0].value = "MO_0000025"
 * status = #active
