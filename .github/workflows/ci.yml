@@ -157,7 +157,7 @@ jobs:
 
     - name: Add NDJSON file to release
       run: |
-        cp artifacts/testdata-bundles-ndjson-*/testdata-bundles.ndjson ./testdata-bundles-${{ steps.timestamp.outputs.timestamp }}.ndjson
+        cp artifacts/testdata-bundles-ndjson-*/testdata-bundles-*.ndjson ./testdata-bundles-${{ steps.timestamp.outputs.timestamp }}.ndjson
 
     - name: Prepare Version
       id: prep-version
