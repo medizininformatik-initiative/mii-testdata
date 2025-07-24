@@ -155,9 +155,10 @@ jobs:
         done
       working-directory: artifacts
 
-    - name: Add NDJSON file to release
-      run: |
-        cp artifacts/testdata-bundles-ndjson-*/testdata-bundles-*.ndjson ./testdata-bundles-${{ steps.timestamp.outputs.timestamp }}.ndjson
+#    Step is unnecessary because ndjson file is already provided as zip artifact
+#    - name: Add NDJSON file to release
+#      run: |
+#        cp artifacts/testdata-bundles-ndjson-*/testdata-bundles-*.ndjson ./testdata-bundles-${{ steps.timestamp.outputs.timestamp }}.ndjson
 
     - name: Prepare Version
       id: prep-version
