@@ -76,7 +76,7 @@ Description: "Condition: Endometriose des Ovars für Patient 5"
 * insert TestDataLabel
 //* meta.profile[0] = "https://www.medizininformatik-initiative.de/fhir/core/modul-diagnose/StructureDefinition/Diagnose|2024.0.0"
 * insert AddDiagnose(N80.1, 2023, mii-exa-test-data-patient-5, 2023-07-10, Endometriose des Ovars)
-* code.coding[alpha-id] = $alpha-id|2023#I32145 "Endometriose des Ovars"
+* code.coding[alpha-id] = $alpha-id|2023#I133980 "Endometriose des Ovars"
 * code.coding[sct] = $sct#129103003 "Endometriosis (disorder)"
 * bodySite.coding[snomed-ct] = $sct#15497006 "Ovarian structure (body structure)"
 * recordedDate = "2023-07-10"

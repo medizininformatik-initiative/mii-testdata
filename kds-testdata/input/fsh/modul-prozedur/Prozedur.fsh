@@ -21,7 +21,7 @@ Usage: #example
 Description: "Procedure: Gabe von Dalbavancin für Patient-1"
 * insert TestDataLabel
 //* meta.profile[0] = "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Procedure|2024.0.0"
-* insert AddProzedur(completed, 18629005, 281790008, 2023, 6-00g.33, mii-exa-test-data-patient-1, 789218009, Dalbavancin parenteral)
+* insert AddProzedur(completed, 18629005, 281790008, 2024, 6-00g.33, mii-exa-test-data-patient-1, 789218009, Dalbavancin parenteral)
 * performedPeriod.start = "2024-02-16T10:20:00.000+01:00"
 * performedPeriod.end = "2024-02-16T10:50:00.000+01:00"
 * extension[durchfuehrungsabsicht].url = "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Durchfuehrungsabsicht"
@@ -233,7 +233,7 @@ Description: "Procedure: Koronarangiographie bei Myokardinfarkt für Patient-8"
 * insert AddProzedur(completed, 165197003, 33367005, 2023, 1-275.2, mii-exa-test-data-patient-8, 41801008, Koronarangiographie)
 * performedDateTime = "2023-11-12T07:30:00+01:00"
 * extension[durchfuehrungsabsicht].url = "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Durchfuehrungsabsicht"
-* extension[durchfuehrungsabsicht].valueCoding = $sct#165197003 "Diagnostic intent"
+* extension[durchfuehrungsabsicht].valueCoding = $sct#261004008 "Diagnostic intent"
 * encounter = Reference(mii-exa-test-data-patient-8-encounter-1)
 * recorder = Reference(mii-exa-test-data-practitioner-role-physician-1)
 * note.text = "Notfall-Koronarangiographie bei akutem STEMI"
@@ -313,7 +313,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur
 Usage: #example
 Description: "Procedure: Migräne-Prophylaxe mit Topiramat für Patient-10"
 * insert TestDataLabel
-* insert AddProzedur(completed, 277132007, 408381007, 2019, 8-918.00, mii-exa-test-data-patient-10, 255560000, Migräne-Prophylaxe)
+* insert AddProzedur(completed, 277132007, 408381007, 2019, 8-918.00, mii-exa-test-data-patient-10, 86762007, Migräne-Prophylaxe)
 * performedPeriod.start = "2019-05-16T12:00:00+02:00"
 * performedPeriod.end = "2019-05-22T10:00:00+02:00"
 * extension[durchfuehrungsabsicht].url = "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Durchfuehrungsabsicht"

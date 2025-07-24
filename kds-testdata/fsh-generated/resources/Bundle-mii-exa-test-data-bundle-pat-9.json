@@ -1220,9 +1220,9 @@
         "code": {
           "coding": [
             {
-              "code": "33747-0",
+              "code": "14715-7",
               "system": "http://loinc.org",
-              "display": "Estradiol [Moles/volume] in Serum or Plasma"
+              "display": "Estradiol (E2) [Moles/volume] in Serum or Plasma"
             }
           ]
         },
@@ -1860,8 +1860,7 @@
               "coding": [
                 {
                   "system": "http://fhir.de/CodeSystem/ask",
-                  "code": "00810",
-                  "display": "Ethinylestradiol"
+                  "code": "02200"
                 }
               ]
             },
@@ -1885,8 +1884,7 @@
               "coding": [
                 {
                   "system": "http://fhir.de/CodeSystem/ask",
-                  "code": "01661",
-                  "display": "Levonorgestrel"
+                  "code": "03335"
                 }
               ]
             },
@@ -1955,8 +1953,7 @@
               "coding": [
                 {
                   "system": "http://fhir.de/CodeSystem/ask",
-                  "code": "01954",
-                  "display": "Paracetamol"
+                  "code": "01212"
                 }
               ]
             },

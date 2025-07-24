@@ -52,7 +52,7 @@
               ]
             },
             "system": "http://fhir.de/sid/gkv/kvid-10",
-            "value": "B23456789"
+            "value": "B234567890"
           },
           {
             "assigner": {
@@ -2599,8 +2599,7 @@
               "coding": [
                 {
                   "system": "http://fhir.de/CodeSystem/ask",
-                  "code": "01927",
-                  "display": "Morphin"
+                  "code": "07651"
                 }
               ]
             },
@@ -2669,8 +2668,7 @@
               "coding": [
                 {
                   "system": "http://fhir.de/CodeSystem/ask",
-                  "code": "00488",
-                  "display": "Carboplatin"
+                  "code": "23168"
                 }
               ]
             },
@@ -2739,8 +2737,7 @@
               "coding": [
                 {
                   "system": "http://fhir.de/CodeSystem/ask",
-                  "code": "02058",
-                  "display": "Paclitaxel"
+                  "code": "26509"
                 }
               ]
             },

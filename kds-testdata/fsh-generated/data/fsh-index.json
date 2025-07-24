@@ -1772,144 +1772,144 @@
     "fshName": "mii-exa-test-data-patient-4-molgen-untersuchte-region-1",
     "fshType": "Instance",
     "fshFile": "modul-molgen/UntersuchteRegion.fsh",
-    "startLine": 50,
-    "endLine": 55
+    "startLine": 49,
+    "endLine": 54
   },
   {
     "outputFile": "Observation-mii-exa-test-data-patient-4-molgen-untersuchte-region-10.json",
     "fshName": "mii-exa-test-data-patient-4-molgen-untersuchte-region-10",
     "fshType": "Instance",
     "fshFile": "modul-molgen/UntersuchteRegion.fsh",
-    "startLine": 113,
-    "endLine": 118
+    "startLine": 112,
+    "endLine": 117
   },
   {
     "outputFile": "Observation-mii-exa-test-data-patient-4-molgen-untersuchte-region-11.json",
     "fshName": "mii-exa-test-data-patient-4-molgen-untersuchte-region-11",
     "fshType": "Instance",
     "fshFile": "modul-molgen/UntersuchteRegion.fsh",
-    "startLine": 120,
-    "endLine": 125
+    "startLine": 119,
+    "endLine": 124
   },
   {
     "outputFile": "Observation-mii-exa-test-data-patient-4-molgen-untersuchte-region-12.json",
     "fshName": "mii-exa-test-data-patient-4-molgen-untersuchte-region-12",
     "fshType": "Instance",
     "fshFile": "modul-molgen/UntersuchteRegion.fsh",
-    "startLine": 127,
-    "endLine": 132
+    "startLine": 126,
+    "endLine": 131
   },
   {
     "outputFile": "Observation-mii-exa-test-data-patient-4-molgen-untersuchte-region-13.json",
     "fshName": "mii-exa-test-data-patient-4-molgen-untersuchte-region-13",
     "fshType": "Instance",
     "fshFile": "modul-molgen/UntersuchteRegion.fsh",
-    "startLine": 134,
-    "endLine": 139
+    "startLine": 133,
+    "endLine": 138
   },
   {
     "outputFile": "Observation-mii-exa-test-data-patient-4-molgen-untersuchte-region-14.json",
     "fshName": "mii-exa-test-data-patient-4-molgen-untersuchte-region-14",
     "fshType": "Instance",
     "fshFile": "modul-molgen/UntersuchteRegion.fsh",
-    "startLine": 141,
-    "endLine": 146
+    "startLine": 140,
+    "endLine": 145
   },
   {
     "outputFile": "Observation-mii-exa-test-data-patient-4-molgen-untersuchte-region-15.json",
     "fshName": "mii-exa-test-data-patient-4-molgen-untersuchte-region-15",
     "fshType": "Instance",
     "fshFile": "modul-molgen/UntersuchteRegion.fsh",
-    "startLine": 148,
-    "endLine": 153
+    "startLine": 147,
+    "endLine": 152
   },
   {
     "outputFile": "Observation-mii-exa-test-data-patient-4-molgen-untersuchte-region-16.json",
     "fshName": "mii-exa-test-data-patient-4-molgen-untersuchte-region-16",
     "fshType": "Instance",
     "fshFile": "modul-molgen/UntersuchteRegion.fsh",
-    "startLine": 155,
-    "endLine": 160
+    "startLine": 154,
+    "endLine": 159
   },
   {
     "outputFile": "Observation-mii-exa-test-data-patient-4-molgen-untersuchte-region-17.json",
     "fshName": "mii-exa-test-data-patient-4-molgen-untersuchte-region-17",
     "fshType": "Instance",
     "fshFile": "modul-molgen/UntersuchteRegion.fsh",
-    "startLine": 162,
-    "endLine": 167
+    "startLine": 161,
+    "endLine": 166
   },
   {
     "outputFile": "Observation-mii-exa-test-data-patient-4-molgen-untersuchte-region-18.json",
     "fshName": "mii-exa-test-data-patient-4-molgen-untersuchte-region-18",
     "fshType": "Instance",
     "fshFile": "modul-molgen/UntersuchteRegion.fsh",
-    "startLine": 169,
-    "endLine": 174
+    "startLine": 168,
+    "endLine": 173
   },
   {
     "outputFile": "Observation-mii-exa-test-data-patient-4-molgen-untersuchte-region-2.json",
     "fshName": "mii-exa-test-data-patient-4-molgen-untersuchte-region-2",
     "fshType": "Instance",
     "fshFile": "modul-molgen/UntersuchteRegion.fsh",
-    "startLine": 57,
-    "endLine": 62
+    "startLine": 56,
+    "endLine": 61
   },
   {
     "outputFile": "Observation-mii-exa-test-data-patient-4-molgen-untersuchte-region-3.json",
     "fshName": "mii-exa-test-data-patient-4-molgen-untersuchte-region-3",
     "fshType": "Instance",
     "fshFile": "modul-molgen/UntersuchteRegion.fsh",
-    "startLine": 64,
-    "endLine": 69
+    "startLine": 63,
+    "endLine": 68
   },
   {
     "outputFile": "Observation-mii-exa-test-data-patient-4-molgen-untersuchte-region-4.json",
     "fshName": "mii-exa-test-data-patient-4-molgen-untersuchte-region-4",
     "fshType": "Instance",
     "fshFile": "modul-molgen/UntersuchteRegion.fsh",
-    "startLine": 71,
-    "endLine": 76
+    "startLine": 70,
+    "endLine": 75
   },
   {
     "outputFile": "Observation-mii-exa-test-data-patient-4-molgen-untersuchte-region-5.json",
     "fshName": "mii-exa-test-data-patient-4-molgen-untersuchte-region-5",
     "fshType": "Instance",
     "fshFile": "modul-molgen/UntersuchteRegion.fsh",
-    "startLine": 78,
-    "endLine": 83
+    "startLine": 77,
+    "endLine": 82
   },
   {
     "outputFile": "Observation-mii-exa-test-data-patient-4-molgen-untersuchte-region-6.json",
     "fshName": "mii-exa-test-data-patient-4-molgen-untersuchte-region-6",
     "fshType": "Instance",
     "fshFile": "modul-molgen/UntersuchteRegion.fsh",
-    "startLine": 85,
-    "endLine": 90
+    "startLine": 84,
+    "endLine": 89
   },
   {
     "outputFile": "Observation-mii-exa-test-data-patient-4-molgen-untersuchte-region-7.json",
     "fshName": "mii-exa-test-data-patient-4-molgen-untersuchte-region-7",
     "fshType": "Instance",
     "fshFile": "modul-molgen/UntersuchteRegion.fsh",
-    "startLine": 92,
-    "endLine": 97
+    "startLine": 91,
+    "endLine": 96
   },
   {
     "outputFile": "Observation-mii-exa-test-data-patient-4-molgen-untersuchte-region-8.json",
     "fshName": "mii-exa-test-data-patient-4-molgen-untersuchte-region-8",
     "fshType": "Instance",
     "fshFile": "modul-molgen/UntersuchteRegion.fsh",
-    "startLine": 99,
-    "endLine": 104
+    "startLine": 98,
+    "endLine": 103
   },
   {
     "outputFile": "Observation-mii-exa-test-data-patient-4-molgen-untersuchte-region-9.json",
     "fshName": "mii-exa-test-data-patient-4-molgen-untersuchte-region-9",
     "fshType": "Instance",
     "fshFile": "modul-molgen/UntersuchteRegion.fsh",
-    "startLine": 106,
-    "endLine": 111
+    "startLine": 105,
+    "endLine": 110
   },
   {
     "outputFile": "Observation-mii-exa-test-data-patient-4-molgen-variante-1.json",

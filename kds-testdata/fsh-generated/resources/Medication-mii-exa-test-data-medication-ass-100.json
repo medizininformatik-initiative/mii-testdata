@@ -43,8 +43,7 @@
         "coding": [
           {
             "system": "http://fhir.de/CodeSystem/ask",
-            "code": "00002",
-            "display": "Acetylsalicylsäure"
+            "code": "00002"
           }
         ]
       },

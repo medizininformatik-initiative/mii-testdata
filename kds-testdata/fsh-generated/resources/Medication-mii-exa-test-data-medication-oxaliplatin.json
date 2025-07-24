@@ -29,8 +29,7 @@
         "coding": [
           {
             "system": "http://fhir.de/CodeSystem/ask",
-            "code": "02043",
-            "display": "Oxaliplatin"
+            "code": "29849"
           }
         ]
       },

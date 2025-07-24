@@ -55,7 +55,7 @@ Description: "Patient: Patient-2"
 * identifier[+].use = #official
 * identifier[=].type = $identifier-type-de-basis#KVZ10
 * identifier[=].system = "http://fhir.de/sid/gkv/kvid-10"
-* identifier[=].value = "B23456789"
+* identifier[=].value = "B234567890"
 * identifier[=].assigner.identifier.use = #official
 * identifier[=].assigner.identifier.value = "123456789"
 * identifier[=].assigner.identifier.system = "http://fhir.de/sid/arge-ik/iknr"

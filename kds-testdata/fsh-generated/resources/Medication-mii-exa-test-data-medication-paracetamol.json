@@ -29,8 +29,7 @@
         "coding": [
           {
             "system": "http://fhir.de/CodeSystem/ask",
-            "code": "01954",
-            "display": "Paracetamol"
+            "code": "01212"
           }
         ]
       },

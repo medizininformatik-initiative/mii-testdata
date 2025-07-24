@@ -29,8 +29,7 @@
         "coding": [
           {
             "system": "http://fhir.de/CodeSystem/ask",
-            "code": "00488",
-            "display": "Carboplatin"
+            "code": "23168"
           }
         ]
       },

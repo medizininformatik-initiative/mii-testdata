@@ -73,6 +73,6 @@ Description: "Observation: Genetische Variante für CTNNA1-Mutation"
 * component[genomic-ref-seq].valueCodeableConcept = $RefSeq#NC_000005.9
 * component[protein-hgvs].valueCodeableConcept = $HGVS#p.(Leu344CysfsTer25)
 * component[allelic-state].valueCodeableConcept = $loinc#LA6706-1 "Heterozygous"
-* component[coding-change-type].valueCodeableConcept = $SO#SO:0000159 "deletion"
+* component[coding-change-type].valueCodeableConcept = $SO#SO:0000159 "Deletion"
 * component[amino-acid-change-type].valueCodeableConcept = $loinc#LA6694-9 "Frameshift"
 * component[cytogenetic-location].valueCodeableConcept = $ChromLoc#5q31.2

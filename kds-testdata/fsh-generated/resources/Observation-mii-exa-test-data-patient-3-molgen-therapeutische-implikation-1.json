@@ -43,7 +43,7 @@
           {
             "code": "L01EC",
             "system": "http://fhir.de/CodeSystem/bfarm/atc",
-            "display": "B-Raf serine-threonine kinase (BRAF) inhibitors"
+            "display": "BRAF-Serin-Threoninkinase-Inhibitoren"
           },
           {
             "code": "703645005",
@@ -79,7 +79,7 @@
           {
             "code": "L01FE",
             "system": "http://fhir.de/CodeSystem/bfarm/atc",
-            "display": "EGFR (Epidermal Growth Factor Receptor) inhibitors"
+            "display": "EGFR (Epidermaler Wachstumsfaktor-Rezeptor)-Inhibitoren"
           }
         ]
       }
@@ -99,7 +99,7 @@
           {
             "code": "L01EE",
             "system": "http://fhir.de/CodeSystem/bfarm/atc",
-            "display": "Mitogen-activated protein kinase (MEK) inhibitors"
+            "display": "Mitogen-aktivierte Proteinkinase (MEK)-Inhibitoren"
           }
         ]
       }

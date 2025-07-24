@@ -22,7 +22,7 @@
       },
       {
         "system": "http://fhir.de/CodeSystem/bfarm/alpha-id",
-        "code": "I32145",
+        "code": "I133980",
         "version": "2023",
         "display": "Endometriose des Ovars"
       },

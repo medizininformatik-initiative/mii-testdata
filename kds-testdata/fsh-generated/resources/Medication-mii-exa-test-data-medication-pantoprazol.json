@@ -29,8 +29,7 @@
         "coding": [
           {
             "system": "http://fhir.de/CodeSystem/ask",
-            "code": "02069",
-            "display": "Pantoprazol"
+            "code": "24848"
           }
         ]
       },

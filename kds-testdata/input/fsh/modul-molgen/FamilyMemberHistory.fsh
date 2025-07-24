@@ -33,6 +33,6 @@ Description: "FamilyMemberHistory: Familienanamnese für Magenkarzinom"
 * sex.coding[0] = $administrative-gender#female
 * sex.coding[+] = $sct#248152002 "Female (finding)"
 * deceasedBoolean = true
-* reasonCode.coding[sct] = $sct#87737001 "Signet ring cell carcinoma (morphologic abnormality)"
+* reasonCode.coding[sct] = $sct#443961001 "Malignant adenomatous neoplasm (disorder)"
 * condition[0].code.coding[sct] = $sct#254837009 "Malignant neoplasm of breast (disorder)"
 * condition[=].contributedToDeath = true

@@ -1154,7 +1154,7 @@
             {
               "system": "http://fhir.de/CodeSystem/bfarm/ops",
               "code": "6-00g.33",
-              "version": "2023"
+              "version": "2024"
             }
           ]
         },
@@ -1349,8 +1349,7 @@
               "coding": [
                 {
                   "system": "http://fhir.de/CodeSystem/ask",
-                  "code": "00002",
-                  "display": "Acetylsalicylsäure"
+                  "code": "00002"
                 }
               ]
             },

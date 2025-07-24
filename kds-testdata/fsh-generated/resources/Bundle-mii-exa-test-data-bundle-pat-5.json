@@ -453,7 +453,7 @@
             },
             {
               "system": "http://fhir.de/CodeSystem/bfarm/alpha-id",
-              "code": "I32145",
+              "code": "I133980",
               "version": "2023",
               "display": "Endometriose des Ovars"
             },
@@ -1879,8 +1879,7 @@
               "coding": [
                 {
                   "system": "http://fhir.de/CodeSystem/ask",
-                  "code": "01648",
-                  "display": "Leuprorelin"
+                  "code": "34837"
                 }
               ]
             },
@@ -1949,8 +1948,7 @@
               "coding": [
                 {
                   "system": "http://fhir.de/CodeSystem/ask",
-                  "code": "01341",
-                  "display": "Ibuprofen"
+                  "code": "23391"
                 }
               ]
             },

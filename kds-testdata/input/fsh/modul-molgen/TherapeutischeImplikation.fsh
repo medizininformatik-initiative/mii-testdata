@@ -12,13 +12,13 @@ Description: "Observation: Therapeutische Implikation für BRAF-Mutation"
 * component[conclusion-string].code = $tbd-codes-cs#conclusion-string
 * component[conclusion-string].valueString = "Nachweis einer aktivierenden Mutation BRAF V600E. Triple-Therapie mit einem EGFR-Antikörper sowie einem BRAF- und einem MEK- Inhibitor prüfen."
 * component[medication-assessed][0].code = $loinc#51963-7 "Medication assessed [ID]"
-* component[medication-assessed][0].valueCodeableConcept.coding[0] = $atc#L01EC "B-Raf serine-threonine kinase (BRAF) inhibitors"
+* component[medication-assessed][0].valueCodeableConcept.coding[0] = $atc#L01EC "BRAF-Serin-Threoninkinase-Inhibitoren"
 * component[medication-assessed][0].valueCodeableConcept.coding[+] = $sct#703645005 "Product containing B-Raf inhibitor (product)"
 * component[medication-assessed][0].valueCodeableConcept.text = "BRAF Inhibitor"
 * component[medication-assessed][1].code = $loinc#51963-7 "Medication assessed [ID]"
-* component[medication-assessed][1].valueCodeableConcept = $atc#L01FE "EGFR (Epidermal Growth Factor Receptor) inhibitors"
+* component[medication-assessed][1].valueCodeableConcept = $atc#L01FE "EGFR (Epidermaler Wachstumsfaktor-Rezeptor)-Inhibitoren"
 * component[medication-assessed][2].code = $loinc#51963-7 "Medication assessed [ID]"
-* component[medication-assessed][2].valueCodeableConcept = $atc#L01EE "Mitogen-activated protein kinase (MEK) inhibitors"
+* component[medication-assessed][2].valueCodeableConcept = $atc#L01EE "Mitogen-aktivierte Proteinkinase (MEK)-Inhibitoren"
 * status = #final
 * subject = Reference(mii-exa-test-data-patient-3)
 * derivedFrom = Reference(mii-exa-test-data-patient-3-molgen-variante-1)

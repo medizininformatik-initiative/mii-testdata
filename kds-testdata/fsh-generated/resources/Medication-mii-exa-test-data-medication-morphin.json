@@ -29,8 +29,7 @@
         "coding": [
           {
             "system": "http://fhir.de/CodeSystem/ask",
-            "code": "01927",
-            "display": "Morphin"
+            "code": "07651"
           }
         ]
       },

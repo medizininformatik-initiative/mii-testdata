@@ -2086,8 +2086,7 @@
               "coding": [
                 {
                   "system": "http://fhir.de/CodeSystem/ask",
-                  "code": "02069",
-                  "display": "Pantoprazol"
+                  "code": "24848"
                 }
               ]
             },
@@ -2156,8 +2155,7 @@
               "coding": [
                 {
                   "system": "http://fhir.de/CodeSystem/ask",
-                  "code": "00097",
-                  "display": "Amoxicillin"
+                  "code": "13209"
                 }
               ]
             },
@@ -2226,8 +2224,7 @@
               "coding": [
                 {
                   "system": "http://fhir.de/CodeSystem/ask",
-                  "code": "00594",
-                  "display": "Clarithromycin"
+                  "code": "23929"
                 }
               ]
             },

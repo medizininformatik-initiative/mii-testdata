@@ -404,7 +404,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-labor/St
 Usage: #example
 Description: "Observation: Kreatin-Kinase MB im Serum für Patient 8"
 * insert TestDataLabel
-* insert AddLabObservation(LO_000028, 2157-6, Creatine kinase.MB [Enzymatic activity/volume] in Serum or Plasma, mii-exa-test-data-patient-8, mii-exa-test-data-patient-8-encounter-1, 2023-11-12T06:30:00+01:00, 2023-11-12T08:15:00+01:00)
+* insert AddLabObservation(LO_000028, 2157-6, Creatine kinase [Enzymatic activity/volume] in Serum or Plasma, mii-exa-test-data-patient-8, mii-exa-test-data-patient-8-encounter-1, 2023-11-12T06:30:00+01:00, 2023-11-12T08:15:00+01:00)
 * basedOn = Reference(mii-exa-test-data-patient-8-labrequest-1)
 * valueQuantity = 85 $ucum#U/L "unit per liter"
 * interpretation = $v3-ObservationInterpretation#H "High"
@@ -444,7 +444,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-labor/St
 Usage: #example
 Description: "Observation: Estradiol im Serum für Patient 9"
 * insert TestDataLabel
-* insert AddLabObservation(LO_000031, 33747-0, Estradiol [Moles/volume] in Serum or Plasma, mii-exa-test-data-patient-9, mii-exa-test-data-patient-9-encounter-1, 2024-02-22T07:15:00+01:00, 2024-02-22T09:00:00+01:00)
+* insert AddLabObservation(LO_000031, 14715-7, Estradiol (E2\) [Moles/volume] in Serum or Plasma, mii-exa-test-data-patient-9, mii-exa-test-data-patient-9-encounter-1, 2024-02-22T07:15:00+01:00, 2024-02-22T09:00:00+01:00)
 * basedOn = Reference(mii-exa-test-data-patient-9-labrequest-1)
 * valueQuantity = 285 $ucum#pmol/L "picomole per liter"
 * interpretation = $v3-ObservationInterpretation#N "Normal"

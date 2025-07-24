@@ -1749,8 +1749,7 @@
               "coding": [
                 {
                   "system": "http://fhir.de/CodeSystem/ask",
-                  "code": "00580",
-                  "display": "Cisplatin"
+                  "code": "15579"
                 }
               ]
             },
@@ -1819,8 +1818,7 @@
               "coding": [
                 {
                   "system": "http://fhir.de/CodeSystem/ask",
-                  "code": "02041",
-                  "display": "Omeprazol"
+                  "code": "29052"
                 }
               ]
             },
@@ -2273,7 +2271,7 @@
                 {
                   "code": "SO:0000159",
                   "system": "http://sequenceontology.org",
-                  "display": "deletion"
+                  "display": "Deletion"
                 }
               ]
             }
@@ -2499,11 +2497,6 @@
               "code": "HTEST",
               "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
               "display": "test health data"
-            },
-            {
-              "code": "HTEST",
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
-              "display": "test health data"
             }
           ],
           "profile": [
@@ -2620,11 +2613,6 @@
         "id": "mii-exa-test-data-patient-4-molgen-untersuchte-region-2",
         "meta": {
           "security": [
-            {
-              "code": "HTEST",
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
-              "display": "test health data"
-            },
             {
               "code": "HTEST",
               "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
@@ -2749,11 +2737,6 @@
               "code": "HTEST",
               "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
               "display": "test health data"
-            },
-            {
-              "code": "HTEST",
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
-              "display": "test health data"
             }
           ],
           "profile": [
@@ -2870,11 +2853,6 @@
         "id": "mii-exa-test-data-patient-4-molgen-untersuchte-region-4",
         "meta": {
           "security": [
-            {
-              "code": "HTEST",
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
-              "display": "test health data"
-            },
             {
               "code": "HTEST",
               "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
@@ -2999,11 +2977,6 @@
               "code": "HTEST",
               "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
               "display": "test health data"
-            },
-            {
-              "code": "HTEST",
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
-              "display": "test health data"
             }
           ],
           "profile": [
@@ -3120,11 +3093,6 @@
         "id": "mii-exa-test-data-patient-4-molgen-untersuchte-region-6",
         "meta": {
           "security": [
-            {
-              "code": "HTEST",
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
-              "display": "test health data"
-            },
             {
               "code": "HTEST",
               "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
@@ -3249,11 +3217,6 @@
               "code": "HTEST",
               "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
               "display": "test health data"
-            },
-            {
-              "code": "HTEST",
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
-              "display": "test health data"
             }
           ],
           "profile": [
@@ -3370,11 +3333,6 @@
         "id": "mii-exa-test-data-patient-4-molgen-untersuchte-region-8",
         "meta": {
           "security": [
-            {
-              "code": "HTEST",
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
-              "display": "test health data"
-            },
             {
               "code": "HTEST",
               "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
@@ -3499,11 +3457,6 @@
               "code": "HTEST",
               "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
               "display": "test health data"
-            },
-            {
-              "code": "HTEST",
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
-              "display": "test health data"
             }
           ],
           "profile": [
@@ -3620,11 +3573,6 @@
         "id": "mii-exa-test-data-patient-4-molgen-untersuchte-region-10",
         "meta": {
           "security": [
-            {
-              "code": "HTEST",
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
-              "display": "test health data"
-            },
             {
               "code": "HTEST",
               "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
@@ -3749,11 +3697,6 @@
               "code": "HTEST",
               "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
               "display": "test health data"
-            },
-            {
-              "code": "HTEST",
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
-              "display": "test health data"
             }
           ],
           "profile": [
@@ -3870,11 +3813,6 @@
         "id": "mii-exa-test-data-patient-4-molgen-untersuchte-region-12",
         "meta": {
           "security": [
-            {
-              "code": "HTEST",
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
-              "display": "test health data"
-            },
             {
               "code": "HTEST",
               "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
@@ -3999,11 +3937,6 @@
               "code": "HTEST",
               "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
               "display": "test health data"
-            },
-            {
-              "code": "HTEST",
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
-              "display": "test health data"
             }
           ],
           "profile": [
@@ -4120,11 +4053,6 @@
         "id": "mii-exa-test-data-patient-4-molgen-untersuchte-region-14",
         "meta": {
           "security": [
-            {
-              "code": "HTEST",
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
-              "display": "test health data"
-            },
             {
               "code": "HTEST",
               "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
@@ -4249,11 +4177,6 @@
               "code": "HTEST",
               "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
               "display": "test health data"
-            },
-            {
-              "code": "HTEST",
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
-              "display": "test health data"
             }
           ],
           "profile": [
@@ -4370,11 +4293,6 @@
         "id": "mii-exa-test-data-patient-4-molgen-untersuchte-region-16",
         "meta": {
           "security": [
-            {
-              "code": "HTEST",
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
-              "display": "test health data"
-            },
             {
               "code": "HTEST",
               "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
@@ -4499,11 +4417,6 @@
               "code": "HTEST",
               "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
               "display": "test health data"
-            },
-            {
-              "code": "HTEST",
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
-              "display": "test health data"
             }
           ],
           "profile": [
@@ -4620,11 +4533,6 @@
         "id": "mii-exa-test-data-patient-4-molgen-untersuchte-region-18",
         "meta": {
           "security": [
-            {
-              "code": "HTEST",
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
-              "display": "test health data"
-            },
             {
               "code": "HTEST",
               "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
@@ -4789,9 +4697,9 @@
             "coding": [
               {
                 "system": "http://snomed.info/sct",
-                "code": "87737001",
+                "code": "443961001",
                 "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-                "display": "Signet ring cell carcinoma (morphologic abnormality)"
+                "display": "Malignant adenomatous neoplasm (disorder)"
               }
             ]
           }

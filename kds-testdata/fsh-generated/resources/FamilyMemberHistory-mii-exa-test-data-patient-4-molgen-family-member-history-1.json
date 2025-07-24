@@ -47,9 +47,9 @@
       "coding": [
         {
           "system": "http://snomed.info/sct",
-          "code": "87737001",
+          "code": "443961001",
           "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-          "display": "Signet ring cell carcinoma (morphologic abnormality)"
+          "display": "Malignant adenomatous neoplasm (disorder)"
         }
       ]
     }

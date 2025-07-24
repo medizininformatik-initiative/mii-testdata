@@ -29,8 +29,7 @@
         "coding": [
           {
             "system": "http://fhir.de/CodeSystem/ask",
-            "code": "00810",
-            "display": "Ethinylestradiol"
+            "code": "02200"
           }
         ]
       },
@@ -54,8 +53,7 @@
         "coding": [
           {
             "system": "http://fhir.de/CodeSystem/ask",
-            "code": "01661",
-            "display": "Levonorgestrel"
+            "code": "03335"
           }
         ]
       },

@@ -29,8 +29,7 @@
         "coding": [
           {
             "system": "http://fhir.de/CodeSystem/ask",
-            "code": "01648",
-            "display": "Leuprorelin"
+            "code": "34837"
           }
         ]
       },

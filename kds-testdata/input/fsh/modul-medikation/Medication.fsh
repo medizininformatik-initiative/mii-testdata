@@ -8,7 +8,7 @@ Description: "Medication: ASS 100"
 * code.coding[Pharmazentralnummer] = $pzn#06312077 "ASS 100 - 1a Pharma TAH Tabletten"
 * code.coding[atcClassDe] = $atc|2023#B01AC06 "Acetylsalicylsäure"
 * form.coding[EDQM] = $standardterms#10219000 "Tablet"
-* ingredient.itemCodeableConcept.coding[ASK] = $ask#00002 "Acetylsalicylsäure"
+* ingredient.itemCodeableConcept.coding[ASK] = $ask#00002
 * ingredient.strength.numerator = 100 'mg' "milligram"
 * ingredient.strength.denominator = 1 $standardterms#10219000 "Tablet"
 
@@ -100,7 +100,7 @@ Description: "Medication: Morphin"
 * insert TestDataLabel
 * code.coding[atcClassDe] = $atc|2024#N02AA01 "Morphin"
 * form = $standardterms#10219000 "Tablet"
-* ingredient.itemCodeableConcept.coding[ASK] = $ask#01927 "Morphin"
+* ingredient.itemCodeableConcept.coding[ASK] = $ask#07651
 * ingredient.strength.numerator = 10 'mg' "mg"
 * ingredient.strength.denominator = 1 '1' "1"
 * status = #active
@@ -112,7 +112,7 @@ Description: "Medication: Carboplatin"
 * insert TestDataLabel
 * code.coding[atcClassDe] = $atc|2024#L01XA02 "Carboplatin"
 * form = $standardterms#11210000 "Solution for infusion"
-* ingredient.itemCodeableConcept.coding[ASK] = $ask#00488 "Carboplatin"
+* ingredient.itemCodeableConcept.coding[ASK] = $ask#23168
 * ingredient.strength.numerator = 450 'mg' "mg"
 * ingredient.strength.denominator = 45 'ml' "ml"
 * status = #active
@@ -124,7 +124,7 @@ Description: "Medication: Paclitaxel"
 * insert TestDataLabel
 * code.coding[atcClassDe] = $atc|2024#L01CD01 "Paclitaxel"
 * form = $standardterms#11210000 "Solution for infusion"
-* ingredient.itemCodeableConcept.coding[ASK] = $ask#02058 "Paclitaxel"
+* ingredient.itemCodeableConcept.coding[ASK] = $ask#26509
 * ingredient.strength.numerator = 175 'mg' "mg"
 * ingredient.strength.denominator = 29 'ml' "ml"
 * status = #active
@@ -137,7 +137,7 @@ Description: "Medication: 5-Fluorouracil"
 * insert TestDataLabel
 * code.coding[atcClassDe] = $atc|2024#L01BC02 "Fluorouracil"
 * form = $standardterms#11210000 "Solution for infusion"
-* ingredient.itemCodeableConcept.coding[ASK] = $ask#00836 "5-Fluorouracil"
+* ingredient.itemCodeableConcept.coding[ASK] = $ask#07374
 * ingredient.strength.numerator = 1000 'mg' "mg"
 * ingredient.strength.denominator = 20 'ml' "ml"
 * status = #active
@@ -149,7 +149,7 @@ Description: "Medication: Oxaliplatin"
 * insert TestDataLabel
 * code.coding[atcClassDe] = $atc|2024#L01XA03 "Oxaliplatin"
 * form = $standardterms#11210000 "Solution for infusion"
-* ingredient.itemCodeableConcept.coding[ASK] = $ask#02043 "Oxaliplatin"
+* ingredient.itemCodeableConcept.coding[ASK] = $ask#29849
 * ingredient.strength.numerator = 85 'mg' "mg"
 * ingredient.strength.denominator = 17 'ml' "ml"
 * status = #active
@@ -162,7 +162,7 @@ Description: "Medication: Cisplatin"
 * insert TestDataLabel
 * code.coding[atcClassDe] = $atc|2024#L01XA01 "Cisplatin"
 * form = $standardterms#11210000 "Solution for infusion"
-* ingredient.itemCodeableConcept.coding[ASK] = $ask#00580 "Cisplatin"
+* ingredient.itemCodeableConcept.coding[ASK] = $ask#15579
 * ingredient.strength.numerator = 75 'mg' "mg"
 * ingredient.strength.denominator = 75 'ml' "ml"
 * status = #active
@@ -174,7 +174,7 @@ Description: "Medication: Omeprazol"
 * insert TestDataLabel
 * code.coding[atcClassDe] = $atc|2024#A02BC01 "Omeprazol"
 * form = $standardterms#10221000 "Film-coated tablet"
-* ingredient.itemCodeableConcept.coding[ASK] = $ask#02041 "Omeprazol"
+* ingredient.itemCodeableConcept.coding[ASK] = $ask#29052
 * ingredient.strength.numerator = 20 'mg' "mg"
 * ingredient.strength.denominator = 1 '1' "1"
 * status = #active
@@ -187,7 +187,7 @@ Description: "Medication: Leuprorelin"
 * insert TestDataLabel
 * code.coding[atcClassDe] = $atc|2024#L02AE02 "Leuprorelin"
 * form = $standardterms#11201000 "Solution for injection"
-* ingredient.itemCodeableConcept.coding[ASK] = $ask#01648 "Leuprorelin"
+* ingredient.itemCodeableConcept.coding[ASK] = $ask#34837
 * ingredient.strength.numerator = 3.75 'mg' "mg"
 * ingredient.strength.denominator = 1 'ml' "ml"
 * status = #active
@@ -199,7 +199,7 @@ Description: "Medication: Ibuprofen"
 * insert TestDataLabel
 * code.coding[atcClassDe] = $atc|2024#M01AE01 "Ibuprofen"
 * form = $standardterms#10221000 "Film-coated tablet"
-* ingredient.itemCodeableConcept.coding[ASK] = $ask#01341 "Ibuprofen"
+* ingredient.itemCodeableConcept.coding[ASK] = $ask#23391
 * ingredient.strength.numerator = 400 'mg' "mg"
 * ingredient.strength.denominator = 1 '1' "1"
 * status = #active
@@ -212,7 +212,7 @@ Description: "Medication: Pantoprazol"
 * insert TestDataLabel
 * code.coding[atcClassDe] = $atc|2024#A02BC02 "Pantoprazol"
 * form = $standardterms#10221000 "Film-coated tablet"
-* ingredient.itemCodeableConcept.coding[ASK] = $ask#02069 "Pantoprazol"
+* ingredient.itemCodeableConcept.coding[ASK] = $ask#24848
 * ingredient.strength.numerator = 40 'mg' "mg"
 * ingredient.strength.denominator = 1 '1' "1"
 * status = #active
@@ -224,7 +224,7 @@ Description: "Medication: Amoxicillin"
 * insert TestDataLabel
 * code.coding[atcClassDe] = $atc|2024#J01CA04 "Amoxicillin"
 * form = $standardterms#10210000 "Capsule, hard"
-* ingredient.itemCodeableConcept.coding[ASK] = $ask#00097 "Amoxicillin"
+* ingredient.itemCodeableConcept.coding[ASK] = $ask#13209
 * ingredient.strength.numerator = 500 'mg' "mg"
 * ingredient.strength.denominator = 1 '1' "1"
 * status = #active
@@ -236,7 +236,7 @@ Description: "Medication: Clarithromycin"
 * insert TestDataLabel
 * code.coding[atcClassDe] = $atc|2024#J01FA09 "Clarithromycin"
 * form = $standardterms#10221000 "Film-coated tablet"
-* ingredient.itemCodeableConcept.coding[ASK] = $ask#00594 "Clarithromycin"
+* ingredient.itemCodeableConcept.coding[ASK] = $ask#23929
 * ingredient.strength.numerator = 250 'mg' "mg"
 * ingredient.strength.denominator = 1 '1' "1"
 * status = #active
@@ -247,12 +247,12 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 Usage: #example
 Description: "Medication: Amoxicillin und Clavulansäure"
 * insert TestDataLabel
-* code.coding[atcClassDe] = $atc|2024#J01CR02 "Amoxicillin und Betalactamase-Inhibitor"
+* code.coding[atcClassDe] = $atc|2024#J01CR02 "Amoxicillin und Beta-Lactamase-Inhibitoren"
 * form = $standardterms#11210000 "Solution for infusion"
-* ingredient[0].itemCodeableConcept.coding[ASK] = $ask#00097 "Amoxicillin"
+* ingredient[0].itemCodeableConcept.coding[ASK] = $ask#13209
 * ingredient[0].strength.numerator = 1000 'mg' "mg"
 * ingredient[0].strength.denominator = 100 'ml' "ml"
-* ingredient[+].itemCodeableConcept.coding[ASK] = $ask#00598 "Clavulansäure"
+* ingredient[+].itemCodeableConcept.coding[ASK] = $ask#21871
 * ingredient[=].strength.numerator = 200 'mg' "mg"
 * ingredient[=].strength.denominator = 100 'ml' "ml"
 * status = #active
@@ -264,7 +264,7 @@ Description: "Medication: Salbutamol"
 * insert TestDataLabel
 * code.coding[atcClassDe] = $atc|2024#R03AC02 "Salbutamol"
 * form = $standardterms#11106000 "Pressurised inhalation, solution"
-* ingredient.itemCodeableConcept.coding[ASK] = $ask#02303 "Salbutamol"
+* ingredient.itemCodeableConcept.coding[ASK] = $ask#09051
 * ingredient.strength.numerator = 100 'ug' "μg"
 * ingredient.strength.denominator = 1 '1' "1"
 * status = #active
@@ -277,7 +277,7 @@ Description: "Medication: Heparin"
 * insert TestDataLabel
 * code.coding[atcClassDe] = $atc|2024#B01AB01 "Heparin"
 * form = $standardterms#11201000 "Solution for injection"
-* ingredient.itemCodeableConcept.coding[ASK] = $ask#01291 "Heparin"
+* ingredient.itemCodeableConcept.coding[ASK] = $ask#12545
 * ingredient.strength.numerator = 25000 '[iU]' "IU"
 * ingredient.strength.denominator = 5 'ml' "ml"
 * status = #active
@@ -289,7 +289,7 @@ Description: "Medication: Metoprolol"
 * insert TestDataLabel
 * code.coding[atcClassDe] = $atc|2024#C07AB02 "Metoprolol"
 * form = $standardterms#10221000 "Film-coated tablet"
-* ingredient.itemCodeableConcept.coding[ASK] = $ask#01780 "Metoprolol"
+* ingredient.itemCodeableConcept.coding[ASK] = $ask#11849
 * ingredient.strength.numerator = 50 'mg' "mg"
 * ingredient.strength.denominator = 1 '1' "1"
 * status = #active
@@ -301,7 +301,7 @@ Description: "Medication: Atorvastatin"
 * insert TestDataLabel
 * code.coding[atcClassDe] = $atc|2024#C10AA05 "Atorvastatin"
 * form = $standardterms#10221000 "Film-coated tablet"
-* ingredient.itemCodeableConcept.coding[ASK] = $ask#00302 "Atorvastatin"
+* ingredient.itemCodeableConcept.coding[ASK] = $ask#28860
 * ingredient.strength.numerator = 40 'mg' "mg"
 * ingredient.strength.denominator = 1 '1' "1"
 * status = #active
@@ -314,10 +314,10 @@ Description: "Medication: Ethinylestradiol und Levonorgestrel"
 * insert TestDataLabel
 * code.coding[atcClassDe] = $atc|2024#G03AA07 "Levonorgestrel und Ethinylestradiol"
 * form = $standardterms#10221000 "Film-coated tablet"
-* ingredient[0].itemCodeableConcept.coding[ASK] = $ask#00810 "Ethinylestradiol"
+* ingredient[0].itemCodeableConcept.coding[ASK] = $ask#02200
 * ingredient[0].strength.numerator = 0.03 'mg' "mg"
 * ingredient[0].strength.denominator = 1 '1' "1"
-* ingredient[+].itemCodeableConcept.coding[ASK] = $ask#01661 "Levonorgestrel"
+* ingredient[+].itemCodeableConcept.coding[ASK] = $ask#03335
 * ingredient[=].strength.numerator = 0.15 'mg' "mg"
 * ingredient[=].strength.denominator = 1 '1' "1"
 * status = #active
@@ -329,7 +329,7 @@ Description: "Medication: Paracetamol"
 * insert TestDataLabel
 * code.coding[atcClassDe] = $atc|2024#N02BE01 "Paracetamol"
 * form = $standardterms#10219000 "Tablet"
-* ingredient.itemCodeableConcept.coding[ASK] = $ask#01954 "Paracetamol"
+* ingredient.itemCodeableConcept.coding[ASK] = $ask#01212
 * ingredient.strength.numerator = 500 'mg' "mg"
 * ingredient.strength.denominator = 1 '1' "1"
 * status = #active
@@ -342,7 +342,7 @@ Description: "Medication: Sumatriptan"
 * insert TestDataLabel
 * code.coding[atcClassDe] = $atc|2024#N02CC01 "Sumatriptan"
 * form = $standardterms#10219000 "Tablet"
-* ingredient.itemCodeableConcept.coding[ASK] = $ask#02517 "Sumatriptan"
+* ingredient.itemCodeableConcept.coding[ASK] = $ask#24065
 * ingredient.strength.numerator = 50 'mg' "mg"
 * ingredient.strength.denominator = 1 '1' "1"
 * status = #active
@@ -354,7 +354,7 @@ Description: "Medication: Topiramat"
 * insert TestDataLabel
 * code.coding[atcClassDe] = $atc|2024#N03AX11 "Topiramat"
 * form = $standardterms#10221000 "Film-coated tablet"
-* ingredient.itemCodeableConcept.coding[ASK] = $ask#02611 "Topiramat"
+* ingredient.itemCodeableConcept.coding[ASK] = $ask#24994
 * ingredient.strength.numerator = 50 'mg' "mg"
 * ingredient.strength.denominator = 1 '1' "1"
 * status = #active

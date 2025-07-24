@@ -29,8 +29,7 @@
         "coding": [
           {
             "system": "http://fhir.de/CodeSystem/ask",
-            "code": "02041",
-            "display": "Omeprazol"
+            "code": "29052"
           }
         ]
       },

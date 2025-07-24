@@ -31,7 +31,6 @@ Description: "Observation: Untersuchte genomische Region BRAF Exon 15"
 
 // Patient-4
 RuleSet: Region(subject, specimen, device, HGNC-ID, HGNC-symbol, RefSeq)
-* insert TestDataLabel
 * meta.profile = "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/region-studied"
 * status = #final
 * category[labCategory] = $observation-category#laboratory "Laboratory"

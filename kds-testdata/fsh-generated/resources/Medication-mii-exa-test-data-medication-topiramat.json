@@ -29,8 +29,7 @@
         "coding": [
           {
             "system": "http://fhir.de/CodeSystem/ask",
-            "code": "02611",
-            "display": "Topiramat"
+            "code": "24994"
           }
         ]
       },

@@ -75,9 +75,9 @@
   "code": {
     "coding": [
       {
-        "code": "33747-0",
+        "code": "14715-7",
         "system": "http://loinc.org",
-        "display": "Estradiol [Moles/volume] in Serum or Plasma"
+        "display": "Estradiol (E2) [Moles/volume] in Serum or Plasma"
       }
     ]
   },

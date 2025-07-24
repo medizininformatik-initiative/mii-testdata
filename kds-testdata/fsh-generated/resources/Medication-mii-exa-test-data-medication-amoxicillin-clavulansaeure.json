@@ -19,7 +19,7 @@
         "system": "http://fhir.de/CodeSystem/bfarm/atc",
         "code": "J01CR02",
         "version": "2024",
-        "display": "Amoxicillin und Betalactamase-Inhibitor"
+        "display": "Amoxicillin und Beta-Lactamase-Inhibitoren"
       }
     ]
   },
@@ -29,8 +29,7 @@
         "coding": [
           {
             "system": "http://fhir.de/CodeSystem/ask",
-            "code": "00097",
-            "display": "Amoxicillin"
+            "code": "13209"
           }
         ]
       },
@@ -54,8 +53,7 @@
         "coding": [
           {
             "system": "http://fhir.de/CodeSystem/ask",
-            "code": "00598",
-            "display": "Clavulansäure"
+            "code": "21871"
           }
         ]
       },

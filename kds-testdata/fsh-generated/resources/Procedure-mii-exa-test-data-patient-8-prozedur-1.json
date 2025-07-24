@@ -57,7 +57,7 @@
       "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Durchfuehrungsabsicht",
       "valueCoding": {
         "system": "http://snomed.info/sct",
-        "code": "165197003",
+        "code": "261004008",
         "version": "http://snomed.info/sct/900000000000207008/version/20230731",
         "display": "Diagnostic intent"
       }

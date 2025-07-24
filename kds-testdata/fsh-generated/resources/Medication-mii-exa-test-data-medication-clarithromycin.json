@@ -29,8 +29,7 @@
         "coding": [
           {
             "system": "http://fhir.de/CodeSystem/ask",
-            "code": "00594",
-            "display": "Clarithromycin"
+            "code": "23929"
           }
         ]
       },

@@ -685,7 +685,7 @@
           {
             "coding": [
               {
-                "code": "255560000",
+                "code": "86762007",
                 "system": "http://snomed.info/sct",
                 "version": "http://snomed.info/sct/900000000000207008/version/20230731"
               }
@@ -1863,8 +1863,7 @@
               "coding": [
                 {
                   "system": "http://fhir.de/CodeSystem/ask",
-                  "code": "02517",
-                  "display": "Sumatriptan"
+                  "code": "24065"
                 }
               ]
             },
@@ -1933,8 +1932,7 @@
               "coding": [
                 {
                   "system": "http://fhir.de/CodeSystem/ask",
-                  "code": "02611",
-                  "display": "Topiramat"
+                  "code": "24994"
                 }
               ]
             },

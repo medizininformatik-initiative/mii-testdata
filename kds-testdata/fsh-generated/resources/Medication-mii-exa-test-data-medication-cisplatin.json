@@ -29,8 +29,7 @@
         "coding": [
           {
             "system": "http://fhir.de/CodeSystem/ask",
-            "code": "00580",
-            "display": "Cisplatin"
+            "code": "15579"
           }
         ]
       },
