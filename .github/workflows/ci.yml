@@ -168,6 +168,7 @@ jobs:
       with:
         name: "MII Testdata - ${{ steps.prep-version.outputs.version }}"
         draft: true
+        prerelease: ${{ contains(steps.prep-version.outputs.version, '-') }}
         generate_release_notes: true
         files: |
           artifacts/*.zip
