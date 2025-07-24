@@ -9,9 +9,16 @@ on:
   pull_request:
     branches:
     - main
+  workflow_dispatch:
+    inputs:
+      run_validation:
+        description: 'Run JAVA FHIR Validation'
+        required: false
+        default: true
+        type: boolean
 
 jobs:
-  build-kds:
+  build-kds-testdata:
     runs-on: ubuntu-latest
     outputs:
       artifact-url: ${{ steps.upload-artifact.outputs.artifact-url }}
@@ -118,9 +125,15 @@ jobs:
 
   JAVA_FHIR_VALIDATION:
     uses: medizininformatik-initiative/kerndatensatz-meta/.github/workflows/ci_java_validation.yml@master
-    needs: build-kds
+    needs: build-kds-testdata
+    # Only run validation in these scenarios:
+    if: |
+      (github.event_name == 'workflow_dispatch' && github.event.inputs.run_validation == 'true') ||
+      github.event_name == 'pull_request' ||
+      startsWith(github.ref, 'refs/tags/v') ||
+      contains(github.event.head_commit.message, '[validate]')
     with:
-      ref: ${{ github.event.pull_request.head.ref }}
+      ref: ${{ github.event_name == 'pull_request' && github.event.pull_request.head.ref || github.ref_name }}
       PATH_TO_CONFORMANCE_RESOURCES: ./kds-testdata/fsh-generated/resources
       PATH_TO_EXAMPLES: ./kds-testdata/fsh-generated/resources
       JAVA_VALIDATION_ENABLED: true
@@ -133,7 +146,7 @@ jobs:
     runs-on: ubuntu-latest
     if: ${{ startsWith(github.ref, 'refs/tags/v') }}
     needs:
-    - build-kds
+    - build-kds-testdata
     steps:
     - name: Checkout Project
       uses: actions/checkout@v4
@@ -155,9 +168,10 @@ jobs:
         done
       working-directory: artifacts
 
-    - name: Add NDJSON file to release
-      run: |
-        cp artifacts/testdata-bundles-ndjson-*/testdata-bundles-*.ndjson ./testdata-bundles-${{ steps.timestamp.outputs.timestamp }}.ndjson
+#    Step is unnecessary because ndjson file is already provided as zip artifact
+#    - name: Add NDJSON file to release
+#      run: |
+#        cp artifacts/testdata-bundles-ndjson-*/testdata-bundles-*.ndjson ./testdata-bundles-${{ steps.timestamp.outputs.timestamp }}.ndjson
 
     - name: Prepare Version
       id: prep-version
@@ -172,5 +186,4 @@ jobs:
         generate_release_notes: true
         files: |
           artifacts/*.zip
-          testdata-bundles-*.ndjson
         fail_on_unmatched_files: true
