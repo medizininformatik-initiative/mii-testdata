@@ -1,0 +1,63 @@
+{
+  "resourceType": "MedicationAdministration",
+  "id": "mii-exa-test-data-patient-7-medadmin-1",
+  "meta": {
+    "security": [
+      {
+        "code": "HTEST",
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "display": "test health data"
+      }
+    ],
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationAdministration"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "https://www.charite.de/fhir/sid/MedicationAdministrations",
+      "value": "MA_0000015"
+    }
+  ],
+  "dosage": {
+    "route": {
+      "coding": [
+        {
+          "system": "http://standardterms.edqm.eu",
+          "code": "20045000",
+          "display": "Intravenous use"
+        }
+      ]
+    },
+    "dose": {
+      "system": "http://unitsofmeasure.org",
+      "value": 1.2,
+      "code": "g",
+      "unit": "g"
+    },
+    "text": "Amoxicillin/Clavulansäure 1,2g IV"
+  },
+  "status": "completed",
+  "category": {
+    "coding": [
+      {
+        "code": "inpatient",
+        "system": "http://terminology.hl7.org/CodeSystem/medication-admin-category",
+        "display": "Inpatient"
+      }
+    ]
+  },
+  "medicationReference": {
+    "reference": "Medication/mii-exa-test-data-medication-amoxicillin-clavulansaeure"
+  },
+  "subject": {
+    "reference": "Patient/mii-exa-test-data-patient-7"
+  },
+  "context": {
+    "reference": "Encounter/mii-exa-test-data-patient-7-encounter-1"
+  },
+  "effectiveDateTime": "2024-01-10T16:00:00+01:00",
+  "request": {
+    "reference": "MedicationRequest/mii-exa-test-data-patient-7-medrequest-1"
+  }
+}

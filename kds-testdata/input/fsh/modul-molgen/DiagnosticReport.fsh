@@ -2,6 +2,8 @@
 Instance: mii-exa-test-data-patient-3-molgen-befundbericht-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/molekulargenetischer-befundbericht
 Usage: #example
+Description: "DiagnosticReport: Molekulargenetischer Befundbericht mit BRAF-Mutation"
+* insert TestDataLabel
 //* meta.profile[0] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/molekulargenetischer-befundbericht|1.0.0"
 * meta.profile[+] = "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomics-report"
 * extension[recommended-action][+].valueReference = Reference(mii-exa-test-data-patient-3-molgen-medikationsempfehlung-1)
@@ -29,6 +31,8 @@ Usage: #example
 Instance: mii-exa-test-data-patient-4-molgen-befundbericht-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/molekulargenetischer-befundbericht
 Usage: #example
+Description: "DiagnosticReport: Molekulargenetischer Befundbericht Magenkarzinom"
+* insert TestDataLabel
 * meta.profile[+] = "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomics-report"
 * extension[supportingInfo].valueReference = Reference(mii-exa-test-data-patient-4-molgen-family-member-history-1)
 * basedOn = Reference(mii-exa-test-data-patient-4-molgen-anforderung-1)

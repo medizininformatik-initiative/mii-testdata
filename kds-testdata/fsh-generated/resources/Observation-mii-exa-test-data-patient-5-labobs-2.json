@@ -1,0 +1,108 @@
+{
+  "resourceType": "Observation",
+  "id": "mii-exa-test-data-patient-5-labobs-2",
+  "meta": {
+    "security": [
+      {
+        "code": "HTEST",
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "display": "test health data"
+      }
+    ],
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab"
+    ]
+  },
+  "identifier": [
+    {
+      "assigner": {
+        "identifier": {
+          "system": "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier",
+          "value": "Charité"
+        }
+      },
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "OBI"
+          }
+        ]
+      },
+      "system": "https://www.charite.de/fhir/sid/lab-results",
+      "value": "LO_000018"
+    }
+  ],
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "26436-6",
+          "display": "Laboratory studies (set)"
+        },
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "Laboratory"
+        }
+      ]
+    }
+  ],
+  "basedOn": [
+    {
+      "reference": "ServiceRequest/mii-exa-test-data-patient-5-labrequest-1"
+    }
+  ],
+  "interpretation": [
+    {
+      "coding": [
+        {
+          "code": "L",
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "display": "Low"
+        }
+      ]
+    }
+  ],
+  "valueQuantity": {
+    "system": "http://unitsofmeasure.org",
+    "value": 11.8,
+    "code": "g/dL",
+    "unit": "gram per deciliter"
+  },
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "code": "718-7",
+        "system": "http://loinc.org",
+        "display": "Hemoglobin [Mass/volume] in Blood"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/mii-exa-test-data-patient-5"
+  },
+  "encounter": {
+    "reference": "Encounter/mii-exa-test-data-patient-5-encounter-1"
+  },
+  "effectiveDateTime": "2023-07-12T06:45:00+02:00",
+  "issued": "2023-07-12T08:30:00+02:00",
+  "method": {
+    "coding": [
+      {
+        "code": "83561000052101",
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+        "display": "Photometry technique (qualifier value)"
+      }
+    ]
+  },
+  "specimen": {
+    "reference": "Specimen/mii-exa-test-data-patient-5-specimen-1"
+  },
+  "device": {
+    "reference": "Device/mii-exa-test-data-device-roche-cobas-c303"
+  }
+}

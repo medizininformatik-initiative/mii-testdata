@@ -1,0 +1,62 @@
+{
+  "resourceType": "Medication",
+  "id": "mii-exa-test-data-medication-carboplatin",
+  "meta": {
+    "security": [
+      {
+        "code": "HTEST",
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "display": "test health data"
+      }
+    ],
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/atc",
+        "code": "L01XA02",
+        "version": "2024",
+        "display": "Carboplatin"
+      }
+    ]
+  },
+  "ingredient": [
+    {
+      "itemCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://fhir.de/CodeSystem/ask",
+            "code": "23168"
+          }
+        ]
+      },
+      "strength": {
+        "numerator": {
+          "value": 450,
+          "code": "mg",
+          "system": "http://unitsofmeasure.org",
+          "unit": "mg"
+        },
+        "denominator": {
+          "value": 45,
+          "code": "ml",
+          "system": "http://unitsofmeasure.org",
+          "unit": "ml"
+        }
+      }
+    }
+  ],
+  "form": {
+    "coding": [
+      {
+        "code": "11210000",
+        "system": "http://standardterms.edqm.eu",
+        "display": "Solution for infusion"
+      }
+    ]
+  },
+  "status": "active"
+}

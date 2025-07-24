@@ -3,6 +3,8 @@
 Instance: mii-exa-test-data-patient-3-molgen-msi-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/mikrosatelliteninstabilitaet
 Usage: #example
+Description: "Observation: Mikrosatelliteninstabilität für BRAF-Mutation"
+* insert TestDataLabel
 //* meta.profile[0] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/mikrosatelliteninstabilitaet|1.0.0"
 * meta.profile[+] = "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/msi"
 * status = #final

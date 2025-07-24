@@ -3,6 +3,8 @@
 Instance: mii-exa-test-data-patient-3-molgen-family-member-history-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/familienanamnese
 Usage: #example
+Description: "FamilyMemberHistory: Familienanamnese für BRAF-Mutation"
+* insert TestDataLabel
 //* meta.profile[0] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/familienanamnese|1.0.0"
 * status = #completed
 * patient = Reference(mii-exa-test-data-patient-3)
@@ -21,6 +23,8 @@ Usage: #example
 Instance: mii-exa-test-data-patient-4-molgen-family-member-history-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/familienanamnese
 Usage: #example
+Description: "FamilyMemberHistory: Familienanamnese für Magenkarzinom"
+* insert TestDataLabel
 * status = #completed
 * patient = Reference(mii-exa-test-data-patient-4)
 * date = "2022-11-30"
@@ -29,6 +33,6 @@ Usage: #example
 * sex.coding[0] = $administrative-gender#female
 * sex.coding[+] = $sct#248152002 "Female (finding)"
 * deceasedBoolean = true
-* reasonCode.coding[sct] = $sct#87737001 "Signet ring cell carcinoma (morphologic abnormality)"
+* reasonCode.coding[sct] = $sct#443961001 "Malignant adenomatous neoplasm (disorder)"
 * condition[0].code.coding[sct] = $sct#254837009 "Malignant neoplasm of breast (disorder)"
 * condition[=].contributedToDeath = true

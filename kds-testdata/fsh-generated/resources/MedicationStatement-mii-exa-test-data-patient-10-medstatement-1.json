@@ -1,0 +1,80 @@
+{
+  "resourceType": "MedicationStatement",
+  "id": "mii-exa-test-data-patient-10-medstatement-1",
+  "meta": {
+    "security": [
+      {
+        "code": "HTEST",
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "display": "test health data"
+      }
+    ],
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "https://www.charite.de/fhir/sid/MedicationStatements",
+      "value": "MS_0000025"
+    }
+  ],
+  "basedOn": [
+    {
+      "reference": "MedicationRequest/mii-exa-test-data-patient-10-medrequest-1"
+    }
+  ],
+  "category": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/medication-statement-category",
+        "code": "inpatient"
+      },
+      {
+        "system": "http://ihe-d.de/CodeSystems/FallkontextBeiDokumentenerstellung",
+        "code": "E200",
+        "display": "stationärer Aufenthalt"
+      }
+    ]
+  },
+  "effectivePeriod": {
+    "start": "2019-05-15T14:00:00+02:00",
+    "end": "2019-05-22T10:00:00+02:00"
+  },
+  "dosage": [
+    {
+      "route": {
+        "coding": [
+          {
+            "system": "http://standardterms.edqm.eu",
+            "code": "20053000",
+            "display": "Oral use"
+          }
+        ]
+      },
+      "doseAndRate": [
+        {
+          "doseQuantity": {
+            "system": "http://unitsofmeasure.org",
+            "value": 50,
+            "code": "mg",
+            "unit": "mg"
+          }
+        }
+      ],
+      "text": "Sumatriptan 50mg bei Migräne-Attacke",
+      "asNeededBoolean": true
+    }
+  ],
+  "status": "active",
+  "medicationReference": {
+    "reference": "Medication/mii-exa-test-data-medication-sumatriptan"
+  },
+  "subject": {
+    "reference": "Patient/mii-exa-test-data-patient-10"
+  },
+  "context": {
+    "reference": "Encounter/mii-exa-test-data-patient-10-encounter-1"
+  },
+  "dateAsserted": "2019-05-15"
+}

@@ -3,6 +3,8 @@
 Instance: mii-exa-test-data-patient-3-molgen-variante-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/variante
 Usage: #example
+Description: "Observation: Genetische Variante für BRAF-Mutation"
+* insert TestDataLabel
 //* meta.profile[0] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/variante|1.0.0"
 * meta.profile[+] = "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/variant"
 * basedOn = Reference(mii-exa-test-data-patient-3-molgen-anforderung-1)
@@ -41,6 +43,8 @@ Usage: #example
 Instance: mii-exa-test-data-molgen-device-sequencer
 InstanceOf: Device
 Usage: #example
+Description: "Device: Sequencer used for BRAF mutation analysis"
+* insert TestDataLabel
 * status = #active
 * manufacturer = "Illumina"
 * deviceName.name = "MiSeq"
@@ -50,6 +54,8 @@ Usage: #example
 Instance: mii-exa-test-data-patient-4-molgen-variante-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/variante
 Usage: #example
+Description: "Observation: Genetische Variante für CTNNA1-Mutation"
+* insert TestDataLabel
 //* meta.profile = "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/variant"
 * basedOn = Reference(mii-exa-test-data-patient-4-molgen-anforderung-1)
 * status = #final
@@ -67,6 +73,6 @@ Usage: #example
 * component[genomic-ref-seq].valueCodeableConcept = $RefSeq#NC_000005.9
 * component[protein-hgvs].valueCodeableConcept = $HGVS#p.(Leu344CysfsTer25)
 * component[allelic-state].valueCodeableConcept = $loinc#LA6706-1 "Heterozygous"
-* component[coding-change-type].valueCodeableConcept = $SO#SO:0000159 "deletion"
+* component[coding-change-type].valueCodeableConcept = $SO#SO:0000159 "Deletion"
 * component[amino-acid-change-type].valueCodeableConcept = $loinc#LA6694-9 "Frameshift"
 * component[cytogenetic-location].valueCodeableConcept = $ChromLoc#5q31.2

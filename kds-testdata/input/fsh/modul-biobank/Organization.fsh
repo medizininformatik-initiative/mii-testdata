@@ -1,6 +1,8 @@
 Instance: mii-exa-test-data-organization-biobank-charite
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Organization
 Usage: #example
+Description: "Organization: Zentrale Biobank der Charité"
+* insert TestDataLabel
 //* meta.profile[0] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Organization|1.0.8"
 * extension.url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/BeschreibungSammlung"
 * extension.valueMarkdown = "Zentrale Biobank der Charité"

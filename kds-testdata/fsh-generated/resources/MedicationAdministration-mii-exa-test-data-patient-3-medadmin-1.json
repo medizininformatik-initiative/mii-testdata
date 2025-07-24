@@ -1,0 +1,63 @@
+{
+  "resourceType": "MedicationAdministration",
+  "id": "mii-exa-test-data-patient-3-medadmin-1",
+  "meta": {
+    "security": [
+      {
+        "code": "HTEST",
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "display": "test health data"
+      }
+    ],
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationAdministration"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "https://www.charite.de/fhir/sid/MedicationAdministrations",
+      "value": "MA_0000006"
+    }
+  ],
+  "dosage": {
+    "route": {
+      "coding": [
+        {
+          "system": "http://standardterms.edqm.eu",
+          "code": "20053000",
+          "display": "Oral use"
+        }
+      ]
+    },
+    "dose": {
+      "system": "http://unitsofmeasure.org",
+      "value": 500,
+      "code": "mg",
+      "unit": "mg"
+    },
+    "text": "Metamizol 500mg oral bei Schmerzen"
+  },
+  "status": "completed",
+  "category": {
+    "coding": [
+      {
+        "code": "inpatient",
+        "system": "http://terminology.hl7.org/CodeSystem/medication-admin-category",
+        "display": "Inpatient"
+      }
+    ]
+  },
+  "medicationReference": {
+    "reference": "Medication/mii-exa-test-data-medication-metamizol"
+  },
+  "subject": {
+    "reference": "Patient/mii-exa-test-data-patient-3"
+  },
+  "context": {
+    "reference": "Encounter/mii-exa-test-data-patient-3-encounter-1"
+  },
+  "effectiveDateTime": "2022-04-12T14:00:00+02:00",
+  "request": {
+    "reference": "MedicationRequest/mii-exa-test-data-patient-3-medrequest-1"
+  }
+}

@@ -1,0 +1,2861 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "mii-kds-testdata",
+  "url": "https://www.medizininformatik-initiative.de/fhir/testdata/ImplementationGuide/mii-kds-testdata",
+  "version": "2025.0.0",
+  "name": "MIIKDSTestData",
+  "title": "MII KDS Test Data",
+  "status": "draft",
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "name": "Medizininformatik Initiative",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
+  "description": "This project contains example MII KDS data for testing purposes.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "DE",
+          "system": "urn:iso:std:iso:3166",
+          "display": "Deutschland"
+        }
+      ]
+    }
+  ],
+  "packageId": "mii-kds-testdata",
+  "license": "CC0-1.0",
+  "fhirVersion": [
+    "4.0.1"
+  ],
+  "dependsOn": [
+    {
+      "packageId": "de.medizininformatikinitiative.kerndatensatz.person",
+      "version": "2025.0.x",
+      "uri": "https://www.medizininformatik-initiative.de/fhir/core/modul-person/ImplementationGuide/mii-ig-person",
+      "id": "de_medizininformatikinitiative_kerndatensatz_person"
+    },
+    {
+      "packageId": "de.medizininformatikinitiative.kerndatensatz.diagnose",
+      "version": "2025.0.x",
+      "uri": "https://www.medizininformatik-initiative.de/fhir/core/modul-diagnose/ImplementationGuide/mii-ig-diagnose",
+      "id": "de_medizininformatikinitiative_kerndatensatz_diagnose"
+    },
+    {
+      "packageId": "de.medizininformatikinitiative.kerndatensatz.prozedur",
+      "version": "2025.0.x",
+      "uri": "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/ImplementationGuide/mii-ig-prozedur",
+      "id": "de_medizininformatikinitiative_kerndatensatz_prozedur"
+    },
+    {
+      "packageId": "de.medizininformatikinitiative.kerndatensatz.medikation",
+      "version": "2025.0.x",
+      "uri": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ImplementationGuide/mii-ig-medikation",
+      "id": "de_medizininformatikinitiative_kerndatensatz_medikation"
+    },
+    {
+      "packageId": "de.medizininformatikinitiative.kerndatensatz.laborbefund",
+      "version": "2025.0.x",
+      "uri": "http://fhir.org/packages/de.medizininformatikinitiative.kerndatensatz.laborbefund/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.laborbefund",
+      "id": "de_medizininformatikinitiative_kerndatensatz_laborbefund"
+    },
+    {
+      "packageId": "de.medizininformatikinitiative.kerndatensatz.fall",
+      "version": "2025.0.x",
+      "uri": "https://www.medizininformatik-initiative.de/fhir/core/modul-fall/ImplementationGuide/mii-ig-fall",
+      "id": "de_medizininformatikinitiative_kerndatensatz_fall"
+    },
+    {
+      "packageId": "de.medizininformatikinitiative.kerndatensatz.biobank",
+      "version": "2025.0.x",
+      "uri": "http://fhir.org/packages/de.medizininformatikinitiative.kerndatensatz.biobank/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.biobank",
+      "id": "de_medizininformatikinitiative_kerndatensatz_biobank"
+    },
+    {
+      "packageId": "de.medizininformatikinitiative.kerndatensatz.consent",
+      "version": "2025.0.x",
+      "uri": "http://fhir.org/packages/de.medizininformatikinitiative.kerndatensatz.consent/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.consent",
+      "id": "de_medizininformatikinitiative_kerndatensatz_consent"
+    },
+    {
+      "packageId": "de.medizininformatikinitiative.kerndatensatz.meta",
+      "version": "2025.0.x",
+      "uri": "http://fhir.org/packages/de.medizininformatikinitiative.kerndatensatz.meta/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.meta",
+      "id": "de_medizininformatikinitiative_kerndatensatz_meta"
+    },
+    {
+      "packageId": "de.medizininformatikinitiative.kerndatensatz.icu",
+      "version": "2025.0.x",
+      "uri": "http://fhir.org/packages/de.medizininformatikinitiative.kerndatensatz.icu/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.icu",
+      "id": "de_medizininformatikinitiative_kerndatensatz_icu"
+    },
+    {
+      "packageId": "de.medizininformatikinitiative.kerndatensatz.mikrobiologie",
+      "version": "2025.0.x",
+      "uri": "http://fhir.org/packages/de.medizininformatikinitiative.kerndatensatz.mikrobiologie/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.mikrobiologie",
+      "id": "de_medizininformatikinitiative_kerndatensatz_mikrobiologie"
+    },
+    {
+      "packageId": "de.medizininformatikinitiative.kerndatensatz.molgen",
+      "version": "2025.0.x",
+      "uri": "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/ImplementationGuide/mii-ig-molgen-v2025-DE",
+      "id": "de_medizininformatikinitiative_kerndatensatz_molgen"
+    },
+    {
+      "packageId": "de.medizininformatikinitiative.kerndatensatz.patho",
+      "version": "2025.0.x",
+      "uri": "http://fhir.org/packages/de.medizininformatikinitiative.kerndatensatz.patho/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.patho",
+      "id": "de_medizininformatikinitiative_kerndatensatz_patho"
+    },
+    {
+      "packageId": "de.medizininformatikinitiative.kerndatensatz.studie",
+      "version": "2025.0.x",
+      "uri": "http://fhir.org/packages/de.medizininformatikinitiative.kerndatensatz.studie/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.studie",
+      "id": "de_medizininformatikinitiative_kerndatensatz_studie"
+    },
+    {
+      "packageId": "de.basisprofil.r4",
+      "version": "1.5.x",
+      "uri": "http://fhir.org/packages/de.basisprofil.r4/ImplementationGuide/de.basisprofil.r4",
+      "id": "de_basisprofil_r4"
+    },
+    {
+      "packageId": "de.einwilligungsmanagement",
+      "version": "1.0.x",
+      "uri": "http://fhir.org/packages/de.einwilligungsmanagement/ImplementationGuide/de.einwilligungsmanagement",
+      "id": "de_einwilligungsmanagement"
+    }
+  ],
+  "definition": {
+    "resource": [
+      {
+        "reference": {
+          "reference": "List/mii-exa-test-data-patient-1-list-aufnahmemedikation"
+        },
+        "name": "Aufnahmemedikation",
+        "description": "List: Aufnahmemedikation für Patient 1",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "List/mii-exa-test-data-patient-5-list-aufnahmemedikation"
+        },
+        "name": "Aufnahmemedikation",
+        "description": "List: Aufnahmemedikation für Patient 5",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "List/mii-exa-test-data-patient-6-list-aufnahmemedikation"
+        },
+        "name": "Aufnahmemedikation",
+        "description": "List: Aufnahmemedikation für Patient 6",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "List/mii-exa-test-data-patient-9-list-aufnahmemedikation"
+        },
+        "name": "Aufnahmemedikation",
+        "description": "List: Aufnahmemedikation für Patient 9",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "List/mii-exa-test-data-patient-10-list-aufnahmemedikation"
+        },
+        "name": "Aufnahmemedikation",
+        "description": "List: Aufnahmemedikation für Patient 10",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "List/mii-exa-test-data-patient-2-list-aufnahmemedikation"
+        },
+        "name": "Aufnahmemedikation",
+        "description": "List: Aufnahmemedikation für Patient 2",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "List/mii-exa-test-data-patient-3-list-aufnahmemedikation"
+        },
+        "name": "Aufnahmemedikation",
+        "description": "List: Aufnahmemedikation für Patient 3",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "List/mii-exa-test-data-patient-4-list-aufnahmemedikation"
+        },
+        "name": "Aufnahmemedikation",
+        "description": "List: Aufnahmemedikation für Patient 4",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "List/mii-exa-test-data-patient-6-list-entlassmedikation"
+        },
+        "name": "Entlassmedikation",
+        "description": "List: Entlassmedikation für Patient 6",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "List/mii-exa-test-data-patient-7-list-entlassmedikation"
+        },
+        "name": "Entlassmedikation",
+        "description": "List: Entlassmedikation für Patient 7",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "List/mii-exa-test-data-patient-9-list-entlassmedikation"
+        },
+        "name": "Entlassmedikation",
+        "description": "List: Entlassmedikation für Patient 9",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "List/mii-exa-test-data-patient-10-list-entlassmedikation"
+        },
+        "name": "Entlassmedikation",
+        "description": "List: Entlassmedikation für Patient 10",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "List/mii-exa-test-data-patient-1-list-stat-aufenthalt"
+        },
+        "name": "Medikationsliste während stationärem Aufenthalt",
+        "description": "List: Medikationsliste während stationärem Aufenthalt für Patient 1",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "List/mii-exa-test-data-patient-2-list-stat-aufenthalt"
+        },
+        "name": "Medikationsliste während stationärem Aufenthalt",
+        "description": "List: Medikationsliste während stationärem Aufenthalt für Patient 2",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "List/mii-exa-test-data-patient-3-list-stat-aufenthalt"
+        },
+        "name": "Medikationsliste während stationärem Aufenthalt",
+        "description": "List: Medikationsliste während stationärem Aufenthalt für Patient 3",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "List/mii-exa-test-data-patient-4-list-stat-aufenthalt"
+        },
+        "name": "Medikationsliste während stationärem Aufenthalt",
+        "description": "List: Medikationsliste während stationärem Aufenthalt für Patient 4",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "List/mii-exa-test-data-patient-5-list-stat-aufenthalt"
+        },
+        "name": "Medikationsliste während stationärem Aufenthalt",
+        "description": "List: Medikationsliste während stationärem Aufenthalt für Patient 5",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "List/mii-exa-test-data-patient-6-list-stat-aufenthalt"
+        },
+        "name": "Medikationsliste während stationärem Aufenthalt",
+        "description": "List: Medikationsliste während stationärem Aufenthalt für Patient 6",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "List/mii-exa-test-data-patient-7-list-stat-aufenthalt"
+        },
+        "name": "Medikationsliste während stationärem Aufenthalt",
+        "description": "List: Medikationsliste während stationärem Aufenthalt für Patient 7",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "List/mii-exa-test-data-patient-8-list-stat-aufenthalt"
+        },
+        "name": "Medikationsliste während stationärem Aufenthalt",
+        "description": "List: Medikationsliste während stationärem Aufenthalt für Patient 8",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "List/mii-exa-test-data-patient-9-list-stat-aufenthalt"
+        },
+        "name": "Medikationsliste während stationärem Aufenthalt",
+        "description": "List: Medikationsliste während stationärem Aufenthalt für Patient 9",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Bundle/mii-exa-test-data-bundle-pat-1"
+        },
+        "name": "mii-exa-test-data-bundle-pat-1",
+        "description": "Bundle: Patient-1",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Bundle/mii-exa-test-data-bundle-pat-10"
+        },
+        "name": "mii-exa-test-data-bundle-pat-10",
+        "description": "Bundle: Patient-10",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Bundle/mii-exa-test-data-bundle-pat-2"
+        },
+        "name": "mii-exa-test-data-bundle-pat-2",
+        "description": "Bundle: Patient-2",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Bundle/mii-exa-test-data-bundle-pat-3"
+        },
+        "name": "mii-exa-test-data-bundle-pat-3",
+        "description": "Bundle: Patient-3",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Bundle/mii-exa-test-data-bundle-pat-4"
+        },
+        "name": "mii-exa-test-data-bundle-pat-4",
+        "description": "Bundle: Patient-4",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Bundle/mii-exa-test-data-bundle-pat-5"
+        },
+        "name": "mii-exa-test-data-bundle-pat-5",
+        "description": "Bundle: Patient-5",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Bundle/mii-exa-test-data-bundle-pat-6"
+        },
+        "name": "mii-exa-test-data-bundle-pat-6",
+        "description": "Bundle: Patient-6",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Bundle/mii-exa-test-data-bundle-pat-7"
+        },
+        "name": "mii-exa-test-data-bundle-pat-7",
+        "description": "Bundle: Patient-7",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Bundle/mii-exa-test-data-bundle-pat-8"
+        },
+        "name": "mii-exa-test-data-bundle-pat-8",
+        "description": "Bundle: Patient-8",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Bundle/mii-exa-test-data-bundle-pat-9"
+        },
+        "name": "mii-exa-test-data-bundle-pat-9",
+        "description": "Bundle: Patient-9",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Device/mii-exa-test-data-device-roche-cobas"
+        },
+        "name": "mii-exa-test-data-device-roche-cobas",
+        "description": "Device: Roche cobas",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Device/mii-exa-test-data-device-roche-cobas-c303"
+        },
+        "name": "mii-exa-test-data-device-roche-cobas-c303",
+        "description": "Device: Roche cobas c 303",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Device/mii-exa-test-data-device-roche-cobas-e402"
+        },
+        "name": "mii-exa-test-data-device-roche-cobas-e402",
+        "description": "Device: Roche cobas e 402",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Medication/mii-exa-test-data-medication-5-fluorouracil"
+        },
+        "name": "mii-exa-test-data-medication-5-fluorouracil",
+        "description": "Medication: 5-Fluorouracil",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Medication/mii-exa-test-data-medication-amoxicillin"
+        },
+        "name": "mii-exa-test-data-medication-amoxicillin",
+        "description": "Medication: Amoxicillin",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Medication/mii-exa-test-data-medication-amoxicillin-clavulansaeure"
+        },
+        "name": "mii-exa-test-data-medication-amoxicillin-clavulansaeure",
+        "description": "Medication: Amoxicillin und Clavulansäure",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Medication/mii-exa-test-data-medication-ass-100"
+        },
+        "name": "mii-exa-test-data-medication-ass-100",
+        "description": "Medication: ASS 100",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Medication/mii-exa-test-data-medication-atorvastatin"
+        },
+        "name": "mii-exa-test-data-medication-atorvastatin",
+        "description": "Medication: Atorvastatin",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Medication/mii-exa-test-data-medication-carboplatin"
+        },
+        "name": "mii-exa-test-data-medication-carboplatin",
+        "description": "Medication: Carboplatin",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Medication/mii-exa-test-data-medication-cisplatin"
+        },
+        "name": "mii-exa-test-data-medication-cisplatin",
+        "description": "Medication: Cisplatin",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Medication/mii-exa-test-data-medication-clarithromycin"
+        },
+        "name": "mii-exa-test-data-medication-clarithromycin",
+        "description": "Medication: Clarithromycin",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Medication/mii-exa-test-data-medication-dalbavancin"
+        },
+        "name": "mii-exa-test-data-medication-dalbavancin",
+        "description": "Medication: Dalbavancin",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Medication/mii-exa-test-data-medication-ethinylestradiol-levonorgestrel"
+        },
+        "name": "mii-exa-test-data-medication-ethinylestradiol-levonorgestrel",
+        "description": "Medication: Ethinylestradiol und Levonorgestrel",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Medication/mii-exa-test-data-medication-glucoseloesung"
+        },
+        "name": "mii-exa-test-data-medication-glucoseloesung",
+        "description": "Medication: Glucoselösung 5%",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Medication/mii-exa-test-data-medication-heparin"
+        },
+        "name": "mii-exa-test-data-medication-heparin",
+        "description": "Medication: Heparin",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Medication/mii-exa-test-data-medication-ibuprofen"
+        },
+        "name": "mii-exa-test-data-medication-ibuprofen",
+        "description": "Medication: Ibuprofen",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Medication/mii-exa-test-data-medication-leuprorelin"
+        },
+        "name": "mii-exa-test-data-medication-leuprorelin",
+        "description": "Medication: Leuprorelin",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Medication/mii-exa-test-data-medication-metamizol"
+        },
+        "name": "mii-exa-test-data-medication-metamizol",
+        "description": "Medication: Metamizol",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Medication/mii-exa-test-data-medication-metoprolol"
+        },
+        "name": "mii-exa-test-data-medication-metoprolol",
+        "description": "Medication: Metoprolol",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Medication/mii-exa-test-data-medication-morphin"
+        },
+        "name": "mii-exa-test-data-medication-morphin",
+        "description": "Medication: Morphin",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Medication/mii-exa-test-data-medication-omeprazol"
+        },
+        "name": "mii-exa-test-data-medication-omeprazol",
+        "description": "Medication: Omeprazol",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Medication/mii-exa-test-data-medication-oxaliplatin"
+        },
+        "name": "mii-exa-test-data-medication-oxaliplatin",
+        "description": "Medication: Oxaliplatin",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Medication/mii-exa-test-data-medication-paclitaxel"
+        },
+        "name": "mii-exa-test-data-medication-paclitaxel",
+        "description": "Medication: Paclitaxel",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Medication/mii-exa-test-data-medication-pantoprazol"
+        },
+        "name": "mii-exa-test-data-medication-pantoprazol",
+        "description": "Medication: Pantoprazol",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Medication/mii-exa-test-data-medication-paracetamol"
+        },
+        "name": "mii-exa-test-data-medication-paracetamol",
+        "description": "Medication: Paracetamol",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Medication/mii-exa-test-data-medication-propofol"
+        },
+        "name": "mii-exa-test-data-medication-propofol",
+        "description": "Medication: Propofol",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Medication/mii-exa-test-data-medication-rezeptur-doxorubicin"
+        },
+        "name": "mii-exa-test-data-medication-rezeptur-doxorubicin",
+        "description": "Medication: Rezeptur Doxorubicin",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Medication/mii-exa-test-data-medication-salbutamol"
+        },
+        "name": "mii-exa-test-data-medication-salbutamol",
+        "description": "Medication: Salbutamol",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Medication/mii-exa-test-data-medication-sumatriptan"
+        },
+        "name": "mii-exa-test-data-medication-sumatriptan",
+        "description": "Medication: Sumatriptan",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Medication/mii-exa-test-data-medication-topiramat"
+        },
+        "name": "mii-exa-test-data-medication-topiramat",
+        "description": "Medication: Topiramat",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Device/mii-exa-test-data-molgen-device-sequencer"
+        },
+        "name": "mii-exa-test-data-molgen-device-sequencer",
+        "description": "Device: Sequencer used for BRAF mutation analysis",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Organization/mii-exa-test-data-organization-biobank-charite"
+        },
+        "name": "mii-exa-test-data-organization-biobank-charite",
+        "description": "Organization: Zentrale Biobank der Charité",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Organization/mii-exa-test-data-organization-charite"
+        },
+        "name": "mii-exa-test-data-organization-charite",
+        "description": "Organization: Charité – Universitätsmedizin Berlin",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Organization/mii-exa-test-data-organization-labor-berlin"
+        },
+        "name": "mii-exa-test-data-organization-labor-berlin",
+        "description": "Organization: Labor Berlin – Charité Vivantes GmbH",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Patient/mii-exa-test-data-patient-1"
+        },
+        "name": "mii-exa-test-data-patient-1",
+        "description": "Patient: Patient-1",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Consent/mii-exa-test-data-patient-1-consent-1"
+        },
+        "name": "mii-exa-test-data-patient-1-consent-1",
+        "description": "Consent: Einwilligung für Patient 1",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Condition/mii-exa-test-data-patient-1-diagnose-1"
+        },
+        "name": "mii-exa-test-data-patient-1-diagnose-1",
+        "description": "Condition: Masern mit Otitis für Patient 1",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Condition/mii-exa-test-data-patient-1-diagnose-2"
+        },
+        "name": "mii-exa-test-data-patient-1-diagnose-2",
+        "description": "Condition: Otitis media bei anderenorts klassifizierten Viruskrankheiten für Patient 1",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Encounter/mii-exa-test-data-patient-1-encounter-1"
+        },
+        "name": "mii-exa-test-data-patient-1-encounter-1",
+        "description": "Encounter: Einrichtungskontakt Patient 1",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Encounter/mii-exa-test-data-patient-1-encounter-2"
+        },
+        "name": "mii-exa-test-data-patient-1-encounter-2",
+        "description": "Encounter: Versorgungsstellenkontakt Patient 1",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-labobs-1"
+        },
+        "name": "mii-exa-test-data-patient-1-labobs-1",
+        "description": "Observation: Leukozyten im Blut für Patient 1",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-labobs-2"
+        },
+        "name": "mii-exa-test-data-patient-1-labobs-2",
+        "description": "Observation: Erythrozyten im Blut für Patient 1",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-labobs-3"
+        },
+        "name": "mii-exa-test-data-patient-1-labobs-3",
+        "description": "Observation: Hämatokrit im Blut für Patient 1",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-labobs-4"
+        },
+        "name": "mii-exa-test-data-patient-1-labobs-4",
+        "description": "Observation: Thrombozyten im Blut für Patient 1",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-labobs-5"
+        },
+        "name": "mii-exa-test-data-patient-1-labobs-5",
+        "description": "Observation: Thrombozyten im Blut für Patient 1",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-labobs-6"
+        },
+        "name": "mii-exa-test-data-patient-1-labobs-6",
+        "description": "Observation: Hämoglobin im Blut für Patient 1",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-labobs-7"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-test-data-patient-1-labobs-7"
+      },
+      {
+        "reference": {
+          "reference": "DiagnosticReport/mii-exa-test-data-patient-1-labreport-1"
+        },
+        "name": "mii-exa-test-data-patient-1-labreport-1",
+        "description": "DiagnosticReport: Laborbericht für Patient 1",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "ServiceRequest/mii-exa-test-data-patient-1-labrequest-1"
+        },
+        "name": "mii-exa-test-data-patient-1-labrequest-1",
+        "description": "ServiceRequest: Kleines Blutbild für Patient 1",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "MedicationAdministration/mii-exa-test-data-patient-1-medadmin-1"
+        },
+        "name": "mii-exa-test-data-patient-1-medadmin-1",
+        "description": "MedicationAdministration: Dalbavancin 1500 mg als 30-minütige Infusion",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "MedicationAdministration/mii-exa-test-data-patient-1-medadmin-2"
+        },
+        "name": "mii-exa-test-data-patient-1-medadmin-2",
+        "description": "MedicationAdministration: Abgebrochen - Dalbavancin 1500 mg als 30-minütige Infusion",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "MedicationRequest/mii-exa-test-data-patient-1-medrequest-1"
+        },
+        "name": "mii-exa-test-data-patient-1-medrequest-1",
+        "description": "MedicationRequest: Dalbavancin 1500 mg IV als 30-minütige Infusion",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "MedicationRequest/mii-exa-test-data-patient-1-medrequest-2"
+        },
+        "name": "mii-exa-test-data-patient-1-medrequest-2",
+        "description": "MedicationRequest: Dalbavancin 1500 mg IV als 30-minütige Infusion",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "MedicationRequest/mii-exa-test-data-patient-1-medrequest-3"
+        },
+        "name": "mii-exa-test-data-patient-1-medrequest-3",
+        "description": "MedicationRequest: Propofol 6.5 mg/min IV via Perfusor",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "MedicationRequest/mii-exa-test-data-patient-1-medrequest-4"
+        },
+        "name": "mii-exa-test-data-patient-1-medrequest-4",
+        "description": "MedicationRequest: Propofol 6.5 mg/min IV via Perfusor",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "MedicationStatement/mii-exa-test-data-patient-1-medstatement-1"
+        },
+        "name": "mii-exa-test-data-patient-1-medstatement-1",
+        "description": "MedicationStatement: ASS 100 mg 1x täglich mittags eine Tablette oral",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "MedicationStatement/mii-exa-test-data-patient-1-medstatement-2"
+        },
+        "name": "mii-exa-test-data-patient-1-medstatement-2",
+        "description": "MedicationStatement: Dalbavancin 1500 mg als 30-minütige Infusion",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "MedicationStatement/mii-exa-test-data-patient-1-medstatement-3"
+        },
+        "name": "mii-exa-test-data-patient-1-medstatement-3",
+        "description": "MedicationStatement: Propofol 5 mg/min intravenös",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Procedure/mii-exa-test-data-patient-1-prozedur-1"
+        },
+        "name": "mii-exa-test-data-patient-1-prozedur-1",
+        "description": "Procedure: Exzision und Resektion an Lunge für Patient-1",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Procedure/mii-exa-test-data-patient-1-prozedur-2"
+        },
+        "name": "mii-exa-test-data-patient-1-prozedur-2",
+        "description": "Procedure: Gabe von Dalbavancin für Patient-1",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Specimen/mii-exa-test-data-patient-1-specimen-1"
+        },
+        "name": "mii-exa-test-data-patient-1-specimen-1",
+        "description": "Specimen: EDTA-Blut für Klinische Chemie und Hämatologie",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Substance/mii-exa-test-data-patient-1-substance-1"
+        },
+        "name": "mii-exa-test-data-patient-1-substance-1",
+        "description": "Substance: Edetic acid",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Condition/mii-exa-test-data-patient-1-todesursache-1"
+        },
+        "name": "mii-exa-test-data-patient-1-todesursache-1",
+        "description": "Observation: Todesursache für Patient-1",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-vitalstatus-1"
+        },
+        "name": "mii-exa-test-data-patient-1-vitalstatus-1",
+        "description": "Observation: Vitalstatus für Patient-1",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Patient/mii-exa-test-data-patient-10"
+        },
+        "name": "mii-exa-test-data-patient-10",
+        "description": "Patient: Patient-10",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Consent/mii-exa-test-data-patient-10-consent-1"
+        },
+        "name": "mii-exa-test-data-patient-10-consent-1",
+        "description": "Consent: Einwilligung für Patient 10",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Condition/mii-exa-test-data-patient-10-diagnose-1"
+        },
+        "name": "mii-exa-test-data-patient-10-diagnose-1",
+        "description": "Condition: Chronische ischämische Herzkrankheit für Patient 10",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Encounter/mii-exa-test-data-patient-10-encounter-1"
+        },
+        "name": "mii-exa-test-data-patient-10-encounter-1",
+        "description": "Encounter: Einrichtungskontakt Patient 10",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-10-labobs-1"
+        },
+        "name": "mii-exa-test-data-patient-10-labobs-1",
+        "description": "Observation: Leukozyten im Blut für Patient 10",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-10-labobs-2"
+        },
+        "name": "mii-exa-test-data-patient-10-labobs-2",
+        "description": "Observation: Hämoglobin im Blut für Patient 10",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-10-labobs-3"
+        },
+        "name": "mii-exa-test-data-patient-10-labobs-3",
+        "description": "Observation: Kreatinin im Serum für Patient 10",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "DiagnosticReport/mii-exa-test-data-patient-10-labreport-1"
+        },
+        "name": "mii-exa-test-data-patient-10-labreport-1",
+        "description": "DiagnosticReport: Laborbericht für Patient 10",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "ServiceRequest/mii-exa-test-data-patient-10-labrequest-1"
+        },
+        "name": "mii-exa-test-data-patient-10-labrequest-1",
+        "description": "ServiceRequest: Basisstoffwechsel für Patient 10",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "MedicationAdministration/mii-exa-test-data-patient-10-medadmin-1"
+        },
+        "name": "mii-exa-test-data-patient-10-medadmin-1",
+        "description": "MedicationAdministration: Sumatriptan 50mg oral bei Migräne",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "MedicationAdministration/mii-exa-test-data-patient-10-medadmin-2"
+        },
+        "name": "mii-exa-test-data-patient-10-medadmin-2",
+        "description": "MedicationAdministration: Topiramat 50mg oral zur Prophylaxe",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "MedicationRequest/mii-exa-test-data-patient-10-medrequest-1"
+        },
+        "name": "mii-exa-test-data-patient-10-medrequest-1",
+        "description": "MedicationRequest: Sumatriptan 50mg bei Migräne-Attacke",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "MedicationRequest/mii-exa-test-data-patient-10-medrequest-2"
+        },
+        "name": "mii-exa-test-data-patient-10-medrequest-2",
+        "description": "MedicationRequest: Topiramat 50mg 2x täglich zur Prophylaxe",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "MedicationStatement/mii-exa-test-data-patient-10-medstatement-1"
+        },
+        "name": "mii-exa-test-data-patient-10-medstatement-1",
+        "description": "MedicationStatement: Sumatriptan 50mg bei Migräne-Attacke",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "MedicationStatement/mii-exa-test-data-patient-10-medstatement-2"
+        },
+        "name": "mii-exa-test-data-patient-10-medstatement-2",
+        "description": "MedicationStatement: Topiramat 50mg 2x täglich zur Prophylaxe",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Procedure/mii-exa-test-data-patient-10-prozedur-1"
+        },
+        "name": "mii-exa-test-data-patient-10-prozedur-1",
+        "description": "Procedure: Computertomographie des Schädels bei Migräne für Patient-10",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Procedure/mii-exa-test-data-patient-10-prozedur-2"
+        },
+        "name": "mii-exa-test-data-patient-10-prozedur-2",
+        "description": "Procedure: Migräne-Prophylaxe mit Topiramat für Patient-10",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Specimen/mii-exa-test-data-patient-10-specimen-1"
+        },
+        "name": "mii-exa-test-data-patient-10-specimen-1",
+        "description": "Specimen: EDTA-Blut für Hämatologie",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Specimen/mii-exa-test-data-patient-10-specimen-2"
+        },
+        "name": "mii-exa-test-data-patient-10-specimen-2",
+        "description": "Specimen: Serum für Klinische Chemie",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-10-vitalstatus-1"
+        },
+        "name": "mii-exa-test-data-patient-10-vitalstatus-1",
+        "description": "Observation: Vitalstatus für Patient-10",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Patient/mii-exa-test-data-patient-2"
+        },
+        "name": "mii-exa-test-data-patient-2",
+        "description": "Patient: Patient-2",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Consent/mii-exa-test-data-patient-2-consent-1"
+        },
+        "name": "mii-exa-test-data-patient-2-consent-1",
+        "description": "Consent: Einwilligung für Patient 2",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Condition/mii-exa-test-data-patient-2-diagnose-1"
+        },
+        "name": "mii-exa-test-data-patient-2-diagnose-1",
+        "description": "Condition: Bösartige Neubildung des Lungenoberlappens für Patient 2",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Encounter/mii-exa-test-data-patient-2-encounter-1"
+        },
+        "name": "mii-exa-test-data-patient-2-encounter-1",
+        "description": "Encounter: Einrichtungskontakt Patient 2",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Encounter/mii-exa-test-data-patient-2-encounter-2"
+        },
+        "name": "mii-exa-test-data-patient-2-encounter-2",
+        "description": "Encounter: Abteilungskontakt Patient 2",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-2-labobs-1"
+        },
+        "name": "mii-exa-test-data-patient-2-labobs-1",
+        "description": "Observation: Leukozyten im Blut für Patient 2",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-2-labobs-2"
+        },
+        "name": "mii-exa-test-data-patient-2-labobs-2",
+        "description": "Observation: Erythrozyten im Blut für Patient 2",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-2-labobs-3"
+        },
+        "name": "mii-exa-test-data-patient-2-labobs-3",
+        "description": "Observation: Hämoglobin im Blut für Patient 2",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-2-labobs-4"
+        },
+        "name": "mii-exa-test-data-patient-2-labobs-4",
+        "description": "Observation: Thrombozyten im Blut für Patient 2",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "DiagnosticReport/mii-exa-test-data-patient-2-labreport-1"
+        },
+        "name": "mii-exa-test-data-patient-2-labreport-1",
+        "description": "DiagnosticReport: Laborbericht für Patient 2",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "ServiceRequest/mii-exa-test-data-patient-2-labrequest-1"
+        },
+        "name": "mii-exa-test-data-patient-2-labrequest-1",
+        "description": "ServiceRequest: Vollständiges Blutbild für Patient 2",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "MedicationAdministration/mii-exa-test-data-patient-2-medadmin-1"
+        },
+        "name": "mii-exa-test-data-patient-2-medadmin-1",
+        "description": "MedicationAdministration: Morphin 10 mg oral bei Schmerzen",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "MedicationAdministration/mii-exa-test-data-patient-2-medadmin-2"
+        },
+        "name": "mii-exa-test-data-patient-2-medadmin-2",
+        "description": "MedicationAdministration: Carboplatin 450 mg IV über 1 Stunde",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "MedicationAdministration/mii-exa-test-data-patient-2-medadmin-3"
+        },
+        "name": "mii-exa-test-data-patient-2-medadmin-3",
+        "description": "MedicationAdministration: Paclitaxel 175 mg IV über 3 Stunden",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "MedicationRequest/mii-exa-test-data-patient-2-medrequest-1"
+        },
+        "name": "mii-exa-test-data-patient-2-medrequest-1",
+        "description": "MedicationRequest: Morphin 10mg oral alle 6 Stunden bei Bedarf",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "MedicationRequest/mii-exa-test-data-patient-2-medrequest-2"
+        },
+        "name": "mii-exa-test-data-patient-2-medrequest-2",
+        "description": "MedicationRequest: Carboplatin 450mg IV über 1 Stunde",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "MedicationRequest/mii-exa-test-data-patient-2-medrequest-3"
+        },
+        "name": "mii-exa-test-data-patient-2-medrequest-3",
+        "description": "MedicationRequest: Paclitaxel 175mg IV über 3 Stunden",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "MedicationStatement/mii-exa-test-data-patient-2-medstatement-1"
+        },
+        "name": "mii-exa-test-data-patient-2-medstatement-1",
+        "description": "MedicationStatement: Morphin 10mg alle 6 Stunden bei Bedarf",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "MedicationStatement/mii-exa-test-data-patient-2-medstatement-2"
+        },
+        "name": "mii-exa-test-data-patient-2-medstatement-2",
+        "description": "MedicationStatement: Carboplatin 450mg IV über 1 Stunde",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "MedicationStatement/mii-exa-test-data-patient-2-medstatement-3"
+        },
+        "name": "mii-exa-test-data-patient-2-medstatement-3",
+        "description": "MedicationStatement: Paclitaxel 175mg IV über 3 Stunden",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "MedicationStatement/mii-exa-test-data-patient-2-medstatement-4"
+        },
+        "name": "mii-exa-test-data-patient-2-medstatement-4",
+        "description": "MedicationStatement: Erythrozyten 150-300 mL/h intravenös",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "MedicationStatement/mii-exa-test-data-patient-2-medstatement-5"
+        },
+        "name": "mii-exa-test-data-patient-2-medstatement-5",
+        "description": "MedicationStatement: Erythrozyten 150 mL/h intravenös",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Procedure/mii-exa-test-data-patient-2-prozedur-1"
+        },
+        "name": "mii-exa-test-data-patient-2-prozedur-1",
+        "description": "Procedure: Thorakotomie mit Lobektomie des rechten Oberlappens für Patient-2",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Procedure/mii-exa-test-data-patient-2-prozedur-2"
+        },
+        "name": "mii-exa-test-data-patient-2-prozedur-2",
+        "description": "Procedure: Postoperative Intensivüberwachung für Patient-2",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Procedure/mii-exa-test-data-patient-2-prozedur-3"
+        },
+        "name": "mii-exa-test-data-patient-2-prozedur-3",
+        "description": "Procedure: Transfusion von Erythrozytenkonzentrat für Patient-2",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Specimen/mii-exa-test-data-patient-2-specimen-1"
+        },
+        "name": "mii-exa-test-data-patient-2-specimen-1",
+        "description": "Specimen: EDTA-Blut für Hämatologie",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Condition/mii-exa-test-data-patient-2-todesursache-1"
+        },
+        "name": "mii-exa-test-data-patient-2-todesursache-1",
+        "description": "Observation: Todesursache für Patient-2",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-2-vitalstatus-1"
+        },
+        "name": "mii-exa-test-data-patient-2-vitalstatus-1",
+        "description": "Observation: Vitalstatus für Patient-2",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Patient/mii-exa-test-data-patient-3"
+        },
+        "name": "mii-exa-test-data-patient-3",
+        "description": "Patient: Patient-3",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Consent/mii-exa-test-data-patient-3-consent-1"
+        },
+        "name": "mii-exa-test-data-patient-3-consent-1",
+        "description": "Consent: Einwilligung für Patient 3",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Condition/mii-exa-test-data-patient-3-diagnose-1"
+        },
+        "name": "mii-exa-test-data-patient-3-diagnose-1",
+        "description": "Condition: Bösartige anorektale Neubildung für Patient 3",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Encounter/mii-exa-test-data-patient-3-encounter-1"
+        },
+        "name": "mii-exa-test-data-patient-3-encounter-1",
+        "description": "Encounter: Einrichtungskontakt Patient 3",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-3-labobs-1"
+        },
+        "name": "mii-exa-test-data-patient-3-labobs-1",
+        "description": "Observation: Leukozyten im Blut für Patient 3",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-3-labobs-2"
+        },
+        "name": "mii-exa-test-data-patient-3-labobs-2",
+        "description": "Observation: Alkalische Phosphatase im Serum für Patient 3",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-3-labobs-3"
+        },
+        "name": "mii-exa-test-data-patient-3-labobs-3",
+        "description": "Observation: Bilirubin im Serum für Patient 3",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "DiagnosticReport/mii-exa-test-data-patient-3-labreport-1"
+        },
+        "name": "mii-exa-test-data-patient-3-labreport-1",
+        "description": "DiagnosticReport: Laborbericht für Patient 3",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "ServiceRequest/mii-exa-test-data-patient-3-labrequest-1"
+        },
+        "name": "mii-exa-test-data-patient-3-labrequest-1",
+        "description": "ServiceRequest: Vollständiges Blutbild für Patient 3",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "MedicationAdministration/mii-exa-test-data-patient-3-medadmin-1"
+        },
+        "name": "mii-exa-test-data-patient-3-medadmin-1",
+        "description": "MedicationAdministration: Metamizol 500 mg oral bei Schmerzen",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "MedicationAdministration/mii-exa-test-data-patient-3-medadmin-2"
+        },
+        "name": "mii-exa-test-data-patient-3-medadmin-2",
+        "description": "MedicationAdministration: 5-FU 1000 mg IV über 46 Stunden",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "MedicationAdministration/mii-exa-test-data-patient-3-medadmin-3"
+        },
+        "name": "mii-exa-test-data-patient-3-medadmin-3",
+        "description": "MedicationAdministration: Oxaliplatin 85mg IV über 2 Stunden",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "MedicationRequest/mii-exa-test-data-patient-3-medrequest-1"
+        },
+        "name": "mii-exa-test-data-patient-3-medrequest-1",
+        "description": "MedicationRequest: Metamizol 500-1000 mg oral bei Bedarf",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "MedicationRequest/mii-exa-test-data-patient-3-medrequest-2"
+        },
+        "name": "mii-exa-test-data-patient-3-medrequest-2",
+        "description": "MedicationRequest: 5-FU 1000mg/m² IV über 46 Stunden",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "MedicationRequest/mii-exa-test-data-patient-3-medrequest-3"
+        },
+        "name": "mii-exa-test-data-patient-3-medrequest-3",
+        "description": "MedicationRequest: Oxaliplatin 85mg/m² IV über 2 Stunden",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "MedicationStatement/mii-exa-test-data-patient-3-medstatement-1"
+        },
+        "name": "mii-exa-test-data-patient-3-medstatement-1",
+        "description": "MedicationStatement: Metamizol 500-1000 mg oral bei Bedarf",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "MedicationStatement/mii-exa-test-data-patient-3-medstatement-2"
+        },
+        "name": "mii-exa-test-data-patient-3-medstatement-2",
+        "description": "MedicationStatement: Fluorouracil 1000mg/m² IV über 46 Stunden",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "MedicationStatement/mii-exa-test-data-patient-3-medstatement-3"
+        },
+        "name": "mii-exa-test-data-patient-3-medstatement-3",
+        "description": "MedicationStatement: Oxaliplatin 85mg/m² IV über 2 Stunden",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "MedicationStatement/mii-exa-test-data-patient-3-medstatement-4"
+        },
+        "name": "mii-exa-test-data-patient-3-medstatement-4",
+        "description": "MedicationStatement: Doxorubicin 50mg/m² IV über 1 Stunde",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "ServiceRequest/mii-exa-test-data-patient-3-molgen-anforderung-1"
+        },
+        "name": "mii-exa-test-data-patient-3-molgen-anforderung-1",
+        "description": "ServiceRequest: Anforderung genetischer Test für BRAF-Mutation",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "DiagnosticReport/mii-exa-test-data-patient-3-molgen-befundbericht-1"
+        },
+        "name": "mii-exa-test-data-patient-3-molgen-befundbericht-1",
+        "description": "DiagnosticReport: Molekulargenetischer Befundbericht mit BRAF-Mutation",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-3-molgen-diagnostische-implikation-1"
+        },
+        "name": "mii-exa-test-data-patient-3-molgen-diagnostische-implikation-1",
+        "description": "Observation: Diagnostische Implikation für BRAF-Mutation",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-3-molgen-ergebnis-zusammenfassung-1"
+        },
+        "name": "mii-exa-test-data-patient-3-molgen-ergebnis-zusammenfassung-1",
+        "description": "Observation: Ergebniszusammenfassung für BRAF-Mutation",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "FamilyMemberHistory/mii-exa-test-data-patient-3-molgen-family-member-history-1"
+        },
+        "name": "mii-exa-test-data-patient-3-molgen-family-member-history-1",
+        "description": "FamilyMemberHistory: Familienanamnese für BRAF-Mutation",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Task/mii-exa-test-data-patient-3-molgen-folgemassnahme-1"
+        },
+        "name": "mii-exa-test-data-patient-3-molgen-folgemassnahme-1",
+        "description": "Task: Empfohlene Folgemaßnahme für BRAF-Mutation",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-3-molgen-genotyp-1"
+        },
+        "name": "mii-exa-test-data-patient-3-molgen-genotyp-1",
+        "description": "Observation: Genotyp für BRAF-Mutation",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Task/mii-exa-test-data-patient-3-molgen-medikationsempfehlung-1"
+        },
+        "name": "mii-exa-test-data-patient-3-molgen-medikationsempfehlung-1",
+        "description": "Task: Medikationsempfehlung für BRAF-Mutation",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-3-molgen-msi-1"
+        },
+        "name": "mii-exa-test-data-patient-3-molgen-msi-1",
+        "description": "Observation: Mikrosatelliteninstabilität für BRAF-Mutation",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-3-molgen-mutationslast-1"
+        },
+        "name": "mii-exa-test-data-patient-3-molgen-mutationslast-1",
+        "description": "Observation: Mutationslast für BRAF-Mutation",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-3-molgen-therapeutische-implikation-1"
+        },
+        "name": "mii-exa-test-data-patient-3-molgen-therapeutische-implikation-1",
+        "description": "Observation: Therapeutische Implikation für BRAF-Mutation",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-3-molgen-untersuchte-region-1"
+        },
+        "name": "mii-exa-test-data-patient-3-molgen-untersuchte-region-1",
+        "description": "Observation: Untersuchte genomische Region BRAF Exon 15",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-3-molgen-variante-1"
+        },
+        "name": "mii-exa-test-data-patient-3-molgen-variante-1",
+        "description": "Observation: Genetische Variante für BRAF-Mutation",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Procedure/mii-exa-test-data-patient-3-prozedur-1"
+        },
+        "name": "mii-exa-test-data-patient-3-prozedur-1",
+        "description": "Procedure: Rektoskopie mit Biopsieentnahme für Patient-3",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Procedure/mii-exa-test-data-patient-3-prozedur-2"
+        },
+        "name": "mii-exa-test-data-patient-3-prozedur-2",
+        "description": "Procedure: Tiefe anteriore Rektumresektion für Patient-3",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Procedure/mii-exa-test-data-patient-3-prozedur-3"
+        },
+        "name": "mii-exa-test-data-patient-3-prozedur-3",
+        "description": "Procedure: Chemotherapie für Patient-3",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Specimen/mii-exa-test-data-patient-3-specimen-1"
+        },
+        "name": "mii-exa-test-data-patient-3-specimen-1",
+        "description": "Specimen: Gewebeprobe aus dem Kolon",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Specimen/mii-exa-test-data-patient-3-specimen-2"
+        },
+        "name": "mii-exa-test-data-patient-3-specimen-2",
+        "description": "Specimen: Serum für Klinische Chemie",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Specimen/mii-exa-test-data-patient-3-specimen-3"
+        },
+        "name": "mii-exa-test-data-patient-3-specimen-3",
+        "description": "Specimen: EDTA-Blut für Hämatologie",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-3-vitalstatus-1"
+        },
+        "name": "mii-exa-test-data-patient-3-vitalstatus-1",
+        "description": "Observation: Vitalstatus für Patient-3",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Patient/mii-exa-test-data-patient-4"
+        },
+        "name": "mii-exa-test-data-patient-4",
+        "description": "Patient: Patient-4",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Consent/mii-exa-test-data-patient-4-consent-1"
+        },
+        "name": "mii-exa-test-data-patient-4-consent-1",
+        "description": "Consent: Einwilligung für Patient 4",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Condition/mii-exa-test-data-patient-4-diagnose-1"
+        },
+        "name": "mii-exa-test-data-patient-4-diagnose-1",
+        "description": "Condition: Bösartige Neubildung des Magens nicht näher bezeichnet für Patient 4",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Encounter/mii-exa-test-data-patient-4-encounter-1"
+        },
+        "name": "mii-exa-test-data-patient-4-encounter-1",
+        "description": "Encounter: Einrichtungskontakt Patient 4",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-4-labobs-1"
+        },
+        "name": "mii-exa-test-data-patient-4-labobs-1",
+        "description": "Observation: Leukozyten im Blut für Patient 4",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-4-labobs-2"
+        },
+        "name": "mii-exa-test-data-patient-4-labobs-2",
+        "description": "Observation: Kreatinin im Serum für Patient 4",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-4-labobs-3"
+        },
+        "name": "mii-exa-test-data-patient-4-labobs-3",
+        "description": "Observation: Cholesterin im Serum für Patient 4",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "DiagnosticReport/mii-exa-test-data-patient-4-labreport-1"
+        },
+        "name": "mii-exa-test-data-patient-4-labreport-1",
+        "description": "DiagnosticReport: Laborbericht für Patient 4",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "ServiceRequest/mii-exa-test-data-patient-4-labrequest-1"
+        },
+        "name": "mii-exa-test-data-patient-4-labrequest-1",
+        "description": "ServiceRequest: Basisstoffwechsel für Patient 4",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "MedicationAdministration/mii-exa-test-data-patient-4-medadmin-1"
+        },
+        "name": "mii-exa-test-data-patient-4-medadmin-1",
+        "description": "MedicationAdministration: Cisplatin 75mg IV über 2 Stunden",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "MedicationAdministration/mii-exa-test-data-patient-4-medadmin-2"
+        },
+        "name": "mii-exa-test-data-patient-4-medadmin-2",
+        "description": "MedicationAdministration: Omeprazol 20mg oral morgens",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "MedicationRequest/mii-exa-test-data-patient-4-medrequest-1"
+        },
+        "name": "mii-exa-test-data-patient-4-medrequest-1",
+        "description": "MedicationRequest: Cisplatin 75mg/m² IV über 2 Stunden",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "MedicationRequest/mii-exa-test-data-patient-4-medrequest-2"
+        },
+        "name": "mii-exa-test-data-patient-4-medrequest-2",
+        "description": "MedicationRequest: Omeprazol 20mg 1x täglich morgens",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "MedicationStatement/mii-exa-test-data-patient-4-medstatement-1"
+        },
+        "name": "mii-exa-test-data-patient-4-medstatement-1",
+        "description": "MedicationStatement: Cisplatin 75mg/m² IV über 2 Stunden",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "MedicationStatement/mii-exa-test-data-patient-4-medstatement-2"
+        },
+        "name": "mii-exa-test-data-patient-4-medstatement-2",
+        "description": "MedicationStatement: Omeprazol 20mg 1x täglich morgens",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "ServiceRequest/mii-exa-test-data-patient-4-molgen-anforderung-1"
+        },
+        "name": "mii-exa-test-data-patient-4-molgen-anforderung-1",
+        "description": "ServiceRequest: Anforderung molekulargenetische Stufendiagnostik",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "DiagnosticReport/mii-exa-test-data-patient-4-molgen-befundbericht-1"
+        },
+        "name": "mii-exa-test-data-patient-4-molgen-befundbericht-1",
+        "description": "DiagnosticReport: Molekulargenetischer Befundbericht Magenkarzinom",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-4-molgen-diagnostische-implikation-1"
+        },
+        "name": "mii-exa-test-data-patient-4-molgen-diagnostische-implikation-1",
+        "description": "Observation: Diagnostische Implikation für Magenkarzinom",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "FamilyMemberHistory/mii-exa-test-data-patient-4-molgen-family-member-history-1"
+        },
+        "name": "mii-exa-test-data-patient-4-molgen-family-member-history-1",
+        "description": "FamilyMemberHistory: Familienanamnese für Magenkarzinom",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-4-molgen-untersuchte-region-1"
+        },
+        "name": "mii-exa-test-data-patient-4-molgen-untersuchte-region-1",
+        "description": "Observation: Untersuchte genomische Region APC-Gen",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-4-molgen-untersuchte-region-10"
+        },
+        "name": "mii-exa-test-data-patient-4-molgen-untersuchte-region-10",
+        "description": "Observation: Untersuchte genomische Region MUTYH-Gen",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-4-molgen-untersuchte-region-11"
+        },
+        "name": "mii-exa-test-data-patient-4-molgen-untersuchte-region-11",
+        "description": "Observation: Untersuchte genomische Region NTHL1-Gen",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-4-molgen-untersuchte-region-12"
+        },
+        "name": "mii-exa-test-data-patient-4-molgen-untersuchte-region-12",
+        "description": "Observation: Untersuchte genomische Region PMS2-Gen",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-4-molgen-untersuchte-region-13"
+        },
+        "name": "mii-exa-test-data-patient-4-molgen-untersuchte-region-13",
+        "description": "Observation: Untersuchte genomische Region POLD1-Gen",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-4-molgen-untersuchte-region-14"
+        },
+        "name": "mii-exa-test-data-patient-4-molgen-untersuchte-region-14",
+        "description": "Observation: Untersuchte genomische Region POLE-Gen",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-4-molgen-untersuchte-region-15"
+        },
+        "name": "mii-exa-test-data-patient-4-molgen-untersuchte-region-15",
+        "description": "Observation: Untersuchte genomische Region STK11-Gen",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-4-molgen-untersuchte-region-16"
+        },
+        "name": "mii-exa-test-data-patient-4-molgen-untersuchte-region-16",
+        "description": "Observation: Untersuchte genomische Region SMAD4-Gen",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-4-molgen-untersuchte-region-17"
+        },
+        "name": "mii-exa-test-data-patient-4-molgen-untersuchte-region-17",
+        "description": "Observation: Untersuchte genomische Region TP53-Gen",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-4-molgen-untersuchte-region-18"
+        },
+        "name": "mii-exa-test-data-patient-4-molgen-untersuchte-region-18",
+        "description": "Observation: Untersuchte genomische Region CTNNA1-Gen",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-4-molgen-untersuchte-region-2"
+        },
+        "name": "mii-exa-test-data-patient-4-molgen-untersuchte-region-2",
+        "description": "Observation: Untersuchte genomische Region ATM-Gen",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-4-molgen-untersuchte-region-3"
+        },
+        "name": "mii-exa-test-data-patient-4-molgen-untersuchte-region-3",
+        "description": "Observation: Untersuchte genomische Region BRCA1-Gen",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-4-molgen-untersuchte-region-4"
+        },
+        "name": "mii-exa-test-data-patient-4-molgen-untersuchte-region-4",
+        "description": "Observation: Untersuchte genomische Region BRCA2-Gen",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-4-molgen-untersuchte-region-5"
+        },
+        "name": "mii-exa-test-data-patient-4-molgen-untersuchte-region-5",
+        "description": "Observation: Untersuchte genomische Region CDH1-Gen",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-4-molgen-untersuchte-region-6"
+        },
+        "name": "mii-exa-test-data-patient-4-molgen-untersuchte-region-6",
+        "description": "Observation: Untersuchte genomische Region MLH1-Gen",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-4-molgen-untersuchte-region-7"
+        },
+        "name": "mii-exa-test-data-patient-4-molgen-untersuchte-region-7",
+        "description": "Observation: Untersuchte genomische Region MSH2-Gen",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-4-molgen-untersuchte-region-8"
+        },
+        "name": "mii-exa-test-data-patient-4-molgen-untersuchte-region-8",
+        "description": "Observation: Untersuchte genomische Region MSH3-Gen",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-4-molgen-untersuchte-region-9"
+        },
+        "name": "mii-exa-test-data-patient-4-molgen-untersuchte-region-9",
+        "description": "Observation: Untersuchte genomische Region MSH6-Gen",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-4-molgen-variante-1"
+        },
+        "name": "mii-exa-test-data-patient-4-molgen-variante-1",
+        "description": "Observation: Genetische Variante für CTNNA1-Mutation",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Procedure/mii-exa-test-data-patient-4-prozedur-1"
+        },
+        "name": "mii-exa-test-data-patient-4-prozedur-1",
+        "description": "Procedure: Ösophagogastroduodenoskopie mit Biopsie-Entnahme für Patient-4",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Procedure/mii-exa-test-data-patient-4-prozedur-2"
+        },
+        "name": "mii-exa-test-data-patient-4-prozedur-2",
+        "description": "Procedure: Partielle Gastrektomie für Patient-4",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Specimen/mii-exa-test-data-patient-4-specimen-1"
+        },
+        "name": "mii-exa-test-data-patient-4-specimen-1",
+        "description": "Specimen: EDTA-Blut für Klinische Chemie und Hämatologie",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Specimen/mii-exa-test-data-patient-4-specimen-2"
+        },
+        "name": "mii-exa-test-data-patient-4-specimen-2",
+        "description": "Specimen: EDTA-Blut für Klinische Chemie und Hämatologie",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Specimen/mii-exa-test-data-patient-4-specimen-3"
+        },
+        "name": "mii-exa-test-data-patient-4-specimen-3",
+        "description": "Specimen: Serum für Klinische Chemie",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Specimen/mii-exa-test-data-patient-4-specimen-4"
+        },
+        "name": "mii-exa-test-data-patient-4-specimen-4",
+        "description": "Specimen: EDTA-Blut für Hämatologie",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-4-vitalstatus-1"
+        },
+        "name": "mii-exa-test-data-patient-4-vitalstatus-1",
+        "description": "Observation: Vitalstatus für Patient-4",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Patient/mii-exa-test-data-patient-5"
+        },
+        "name": "mii-exa-test-data-patient-5",
+        "description": "Patient: Patient-5",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Consent/mii-exa-test-data-patient-5-consent-1"
+        },
+        "name": "mii-exa-test-data-patient-5-consent-1",
+        "description": "Consent: Einwilligung für Patient 5",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Condition/mii-exa-test-data-patient-5-diagnose-1"
+        },
+        "name": "mii-exa-test-data-patient-5-diagnose-1",
+        "description": "Condition: Endometriose des Ovars für Patient 5",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Encounter/mii-exa-test-data-patient-5-encounter-1"
+        },
+        "name": "mii-exa-test-data-patient-5-encounter-1",
+        "description": "Encounter: Einrichtungskontakt Patient 5",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-5-labobs-1"
+        },
+        "name": "mii-exa-test-data-patient-5-labobs-1",
+        "description": "Observation: Leukozyten im Blut für Patient 5",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-5-labobs-2"
+        },
+        "name": "mii-exa-test-data-patient-5-labobs-2",
+        "description": "Observation: Hämoglobin im Blut für Patient 5",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-5-labobs-3"
+        },
+        "name": "mii-exa-test-data-patient-5-labobs-3",
+        "description": "Observation: Fasting glucose im Serum für Patient 5",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "DiagnosticReport/mii-exa-test-data-patient-5-labreport-1"
+        },
+        "name": "mii-exa-test-data-patient-5-labreport-1",
+        "description": "DiagnosticReport: Laborbericht für Patient 5",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "ServiceRequest/mii-exa-test-data-patient-5-labrequest-1"
+        },
+        "name": "mii-exa-test-data-patient-5-labrequest-1",
+        "description": "ServiceRequest: Kleines Blutbild und Basisstoffwechsel für Patient 5",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "MedicationAdministration/mii-exa-test-data-patient-5-medadmin-1"
+        },
+        "name": "mii-exa-test-data-patient-5-medadmin-1",
+        "description": "MedicationAdministration: Leuprorelin 3,75mg s.c.",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "MedicationAdministration/mii-exa-test-data-patient-5-medadmin-2"
+        },
+        "name": "mii-exa-test-data-patient-5-medadmin-2",
+        "description": "MedicationAdministration: Ibuprofen 400mg oral bei Schmerzen",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "MedicationRequest/mii-exa-test-data-patient-5-medrequest-1"
+        },
+        "name": "mii-exa-test-data-patient-5-medrequest-1",
+        "description": "MedicationRequest: Leuprorelin 3,75mg s.c. alle 4 Wochen",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "MedicationRequest/mii-exa-test-data-patient-5-medrequest-2"
+        },
+        "name": "mii-exa-test-data-patient-5-medrequest-2",
+        "description": "MedicationRequest: Ibuprofen 400mg bis zu 3x täglich bei Bedarf",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "MedicationStatement/mii-exa-test-data-patient-5-medstatement-1"
+        },
+        "name": "mii-exa-test-data-patient-5-medstatement-1",
+        "description": "MedicationStatement: Leuprorelin 3,75mg s.c. alle 4 Wochen",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "MedicationStatement/mii-exa-test-data-patient-5-medstatement-2"
+        },
+        "name": "mii-exa-test-data-patient-5-medstatement-2",
+        "description": "MedicationStatement: Ibuprofen 400mg bis zu 3x täglich bei Bedarf",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Procedure/mii-exa-test-data-patient-5-prozedur-1"
+        },
+        "name": "mii-exa-test-data-patient-5-prozedur-1",
+        "description": "Procedure: Diagnostische Laparoskopie zur Endometriose-Abklärung für Patient-5",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Procedure/mii-exa-test-data-patient-5-prozedur-2"
+        },
+        "name": "mii-exa-test-data-patient-5-prozedur-2",
+        "description": "Procedure: Laparoskopische Exzision von Endometriose für Patient-5",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Specimen/mii-exa-test-data-patient-5-specimen-1"
+        },
+        "name": "mii-exa-test-data-patient-5-specimen-1",
+        "description": "Specimen: EDTA-Blut für Hämatologie",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Specimen/mii-exa-test-data-patient-5-specimen-2"
+        },
+        "name": "mii-exa-test-data-patient-5-specimen-2",
+        "description": "Specimen: Serum für Klinische Chemie",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-5-vitalstatus-1"
+        },
+        "name": "mii-exa-test-data-patient-5-vitalstatus-1",
+        "description": "Observation: Vitalstatus für Patient-5",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Patient/mii-exa-test-data-patient-6"
+        },
+        "name": "mii-exa-test-data-patient-6",
+        "description": "Patient: Patient-6",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Consent/mii-exa-test-data-patient-6-consent-1"
+        },
+        "name": "mii-exa-test-data-patient-6-consent-1",
+        "description": "Consent: Einwilligung für Patient 6",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Condition/mii-exa-test-data-patient-6-diagnose-1"
+        },
+        "name": "mii-exa-test-data-patient-6-diagnose-1",
+        "description": "Condition: Chronische Gastritis, nicht näher bezeichnet für Patient 6",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Encounter/mii-exa-test-data-patient-6-encounter-1"
+        },
+        "name": "mii-exa-test-data-patient-6-encounter-1",
+        "description": "Encounter: Einrichtungskontakt Patient 6",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-6-labobs-1"
+        },
+        "name": "mii-exa-test-data-patient-6-labobs-1",
+        "description": "Observation: Leukozyten im Blut für Patient 6",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-6-labobs-2"
+        },
+        "name": "mii-exa-test-data-patient-6-labobs-2",
+        "description": "Observation: Alanine aminotransferase im Serum für Patient 6",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-6-labobs-3"
+        },
+        "name": "mii-exa-test-data-patient-6-labobs-3",
+        "description": "Observation: Aspartate aminotransferase im Serum für Patient 6",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "DiagnosticReport/mii-exa-test-data-patient-6-labreport-1"
+        },
+        "name": "mii-exa-test-data-patient-6-labreport-1",
+        "description": "DiagnosticReport: Laborbericht für Patient 6",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "ServiceRequest/mii-exa-test-data-patient-6-labrequest-1"
+        },
+        "name": "mii-exa-test-data-patient-6-labrequest-1",
+        "description": "ServiceRequest: Leberfunktionstest für Patient 6",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "MedicationAdministration/mii-exa-test-data-patient-6-medadmin-1"
+        },
+        "name": "mii-exa-test-data-patient-6-medadmin-1",
+        "description": "MedicationAdministration: Pantoprazol 40mg oral morgens",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "MedicationAdministration/mii-exa-test-data-patient-6-medadmin-2"
+        },
+        "name": "mii-exa-test-data-patient-6-medadmin-2",
+        "description": "MedicationAdministration: Amoxicillin 500mg oral",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "MedicationRequest/mii-exa-test-data-patient-6-medrequest-1"
+        },
+        "name": "mii-exa-test-data-patient-6-medrequest-1",
+        "description": "MedicationRequest: Pantoprazol 40mg 1x täglich morgens",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "MedicationRequest/mii-exa-test-data-patient-6-medrequest-2"
+        },
+        "name": "mii-exa-test-data-patient-6-medrequest-2",
+        "description": "MedicationRequest: Amoxicillin 500mg 3x täglich",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "MedicationRequest/mii-exa-test-data-patient-6-medrequest-3"
+        },
+        "name": "mii-exa-test-data-patient-6-medrequest-3",
+        "description": "MedicationRequest: Clarithromycin 250mg 2x täglich",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "MedicationStatement/mii-exa-test-data-patient-6-medstatement-1"
+        },
+        "name": "mii-exa-test-data-patient-6-medstatement-1",
+        "description": "MedicationStatement: Pantoprazol 40mg 1x täglich morgens",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "MedicationStatement/mii-exa-test-data-patient-6-medstatement-2"
+        },
+        "name": "mii-exa-test-data-patient-6-medstatement-2",
+        "description": "MedicationStatement: Amoxicillin 500mg 3x täglich",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "MedicationStatement/mii-exa-test-data-patient-6-medstatement-3"
+        },
+        "name": "mii-exa-test-data-patient-6-medstatement-3",
+        "description": "MedicationStatement: Clarithromycin 250mg 2x täglich",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Procedure/mii-exa-test-data-patient-6-prozedur-1"
+        },
+        "name": "mii-exa-test-data-patient-6-prozedur-1",
+        "description": "Procedure: Ösophagogastroduodenoskopie bei Gastritis für Patient-6",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Procedure/mii-exa-test-data-patient-6-prozedur-2"
+        },
+        "name": "mii-exa-test-data-patient-6-prozedur-2",
+        "description": "Procedure: Atemtest auf Helicobacter pylori für Patient-6",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Specimen/mii-exa-test-data-patient-6-specimen-1"
+        },
+        "name": "mii-exa-test-data-patient-6-specimen-1",
+        "description": "Specimen: EDTA-Blut für Hämatologie",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Specimen/mii-exa-test-data-patient-6-specimen-2"
+        },
+        "name": "mii-exa-test-data-patient-6-specimen-2",
+        "description": "Specimen: Serum für Klinische Chemie",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-6-vitalstatus-1"
+        },
+        "name": "mii-exa-test-data-patient-6-vitalstatus-1",
+        "description": "Observation: Vitalstatus für Patient-6",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Patient/mii-exa-test-data-patient-7"
+        },
+        "name": "mii-exa-test-data-patient-7",
+        "description": "Patient: Patient-7",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Consent/mii-exa-test-data-patient-7-consent-1"
+        },
+        "name": "mii-exa-test-data-patient-7-consent-1",
+        "description": "Consent: Einwilligung für Patient 7",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Condition/mii-exa-test-data-patient-7-diagnose-1"
+        },
+        "name": "mii-exa-test-data-patient-7-diagnose-1",
+        "description": "Condition: Bösartige Neubildung des Magens nicht näher bezeichnet für Patient 7",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Encounter/mii-exa-test-data-patient-7-encounter-1"
+        },
+        "name": "mii-exa-test-data-patient-7-encounter-1",
+        "description": "Encounter: Einrichtungskontakt Patient 7",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-7-labobs-1"
+        },
+        "name": "mii-exa-test-data-patient-7-labobs-1",
+        "description": "Observation: Leukozyten im Blut für Patient 7",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-7-labobs-2"
+        },
+        "name": "mii-exa-test-data-patient-7-labobs-2",
+        "description": "Observation: Hämoglobin im Blut für Patient 7",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-7-labobs-3"
+        },
+        "name": "mii-exa-test-data-patient-7-labobs-3",
+        "description": "Observation: C-reactives Protein im Serum für Patient 7",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "DiagnosticReport/mii-exa-test-data-patient-7-labreport-1"
+        },
+        "name": "mii-exa-test-data-patient-7-labreport-1",
+        "description": "DiagnosticReport: Laborbericht für Patient 7",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "ServiceRequest/mii-exa-test-data-patient-7-labrequest-1"
+        },
+        "name": "mii-exa-test-data-patient-7-labrequest-1",
+        "description": "ServiceRequest: Kleines Blutbild und Entzündungsmarker für Patient 7",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "MedicationAdministration/mii-exa-test-data-patient-7-medadmin-1"
+        },
+        "name": "mii-exa-test-data-patient-7-medadmin-1",
+        "description": "MedicationAdministration: Amoxicillin/Clavulansäure 1,2g IV",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "MedicationAdministration/mii-exa-test-data-patient-7-medadmin-2"
+        },
+        "name": "mii-exa-test-data-patient-7-medadmin-2",
+        "description": "MedicationAdministration: Salbutamol 200μg inhalativ",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "MedicationRequest/mii-exa-test-data-patient-7-medrequest-1"
+        },
+        "name": "mii-exa-test-data-patient-7-medrequest-1",
+        "description": "MedicationRequest: Amoxicillin/Clavulansäure 1,2g IV alle 8 Stunden",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "MedicationRequest/mii-exa-test-data-patient-7-medrequest-2"
+        },
+        "name": "mii-exa-test-data-patient-7-medrequest-2",
+        "description": "MedicationRequest: Salbutamol 2 Hubs inhalativ bei Bedarf",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "MedicationStatement/mii-exa-test-data-patient-7-medstatement-1"
+        },
+        "name": "mii-exa-test-data-patient-7-medstatement-1",
+        "description": "MedicationStatement: Amoxicillin/Clavulansäure 1,2g IV alle 8 Stunden",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "MedicationStatement/mii-exa-test-data-patient-7-medstatement-2"
+        },
+        "name": "mii-exa-test-data-patient-7-medstatement-2",
+        "description": "MedicationStatement: Salbutamol 2 Hubs inhalativ bei Bedarf",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Procedure/mii-exa-test-data-patient-7-prozedur-1"
+        },
+        "name": "mii-exa-test-data-patient-7-prozedur-1",
+        "description": "Procedure: Flexible Bronchoskopie mit bronchoalveolärer Lavage für Patient-7",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Procedure/mii-exa-test-data-patient-7-prozedur-2"
+        },
+        "name": "mii-exa-test-data-patient-7-prozedur-2",
+        "description": "Procedure: Intravenöse Antibiotikatherapie für Patient-7",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Specimen/mii-exa-test-data-patient-7-specimen-1"
+        },
+        "name": "mii-exa-test-data-patient-7-specimen-1",
+        "description": "Specimen: EDTA-Blut für Hämatologie",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Specimen/mii-exa-test-data-patient-7-specimen-2"
+        },
+        "name": "mii-exa-test-data-patient-7-specimen-2",
+        "description": "Specimen: Serum für Klinische Chemie",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-7-vitalstatus-1"
+        },
+        "name": "mii-exa-test-data-patient-7-vitalstatus-1",
+        "description": "Observation: Vitalstatus für Patient-7",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Patient/mii-exa-test-data-patient-8"
+        },
+        "name": "mii-exa-test-data-patient-8",
+        "description": "Patient: Patient-8",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Consent/mii-exa-test-data-patient-8-consent-1"
+        },
+        "name": "mii-exa-test-data-patient-8-consent-1",
+        "description": "Consent: Einwilligung für Patient 8",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Condition/mii-exa-test-data-patient-8-diagnose-1"
+        },
+        "name": "mii-exa-test-data-patient-8-diagnose-1",
+        "description": "Condition: Akute Bronchitis für Patient 8",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Encounter/mii-exa-test-data-patient-8-encounter-1"
+        },
+        "name": "mii-exa-test-data-patient-8-encounter-1",
+        "description": "Encounter: Einrichtungskontakt Patient 8",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-8-labobs-1"
+        },
+        "name": "mii-exa-test-data-patient-8-labobs-1",
+        "description": "Observation: Leukozyten im Blut für Patient 8",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-8-labobs-2"
+        },
+        "name": "mii-exa-test-data-patient-8-labobs-2",
+        "description": "Observation: Troponin T im Serum für Patient 8",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-8-labobs-3"
+        },
+        "name": "mii-exa-test-data-patient-8-labobs-3",
+        "description": "Observation: Kreatin-Kinase MB im Serum für Patient 8",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "DiagnosticReport/mii-exa-test-data-patient-8-labreport-1"
+        },
+        "name": "mii-exa-test-data-patient-8-labreport-1",
+        "description": "DiagnosticReport: Laborbericht für Patient 8",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "ServiceRequest/mii-exa-test-data-patient-8-labrequest-1"
+        },
+        "name": "mii-exa-test-data-patient-8-labrequest-1",
+        "description": "ServiceRequest: Herzmarker-Panel für Patient 8",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "MedicationAdministration/mii-exa-test-data-patient-8-medadmin-1"
+        },
+        "name": "mii-exa-test-data-patient-8-medadmin-1",
+        "description": "MedicationAdministration: Heparin 5000 IE s.c.",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "MedicationAdministration/mii-exa-test-data-patient-8-medadmin-2"
+        },
+        "name": "mii-exa-test-data-patient-8-medadmin-2",
+        "description": "MedicationAdministration: Metoprolol 50mg oral",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "MedicationAdministration/mii-exa-test-data-patient-8-medadmin-3"
+        },
+        "name": "mii-exa-test-data-patient-8-medadmin-3",
+        "description": "MedicationAdministration: Atorvastatin 80mg oral zur Nacht",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "MedicationRequest/mii-exa-test-data-patient-8-medrequest-1"
+        },
+        "name": "mii-exa-test-data-patient-8-medrequest-1",
+        "description": "MedicationRequest: Heparin 5000 IE s.c. alle 12 Stunden",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "MedicationRequest/mii-exa-test-data-patient-8-medrequest-2"
+        },
+        "name": "mii-exa-test-data-patient-8-medrequest-2",
+        "description": "MedicationRequest: Metoprolol 50mg 2x täglich",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "MedicationRequest/mii-exa-test-data-patient-8-medrequest-3"
+        },
+        "name": "mii-exa-test-data-patient-8-medrequest-3",
+        "description": "MedicationRequest: Atorvastatin 40mg 1x täglich abends",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "MedicationStatement/mii-exa-test-data-patient-8-medstatement-1"
+        },
+        "name": "mii-exa-test-data-patient-8-medstatement-1",
+        "description": "MedicationStatement: Heparin 5000 IE s.c. alle 12 Stunden",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "MedicationStatement/mii-exa-test-data-patient-8-medstatement-2"
+        },
+        "name": "mii-exa-test-data-patient-8-medstatement-2",
+        "description": "MedicationStatement: Metoprolol 50mg 2x täglich",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "MedicationStatement/mii-exa-test-data-patient-8-medstatement-3"
+        },
+        "name": "mii-exa-test-data-patient-8-medstatement-3",
+        "description": "MedicationStatement: Atorvastatin 40mg 1x täglich abends",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Procedure/mii-exa-test-data-patient-8-prozedur-1"
+        },
+        "name": "mii-exa-test-data-patient-8-prozedur-1",
+        "description": "Procedure: Koronarangiographie bei Myokardinfarkt für Patient-8",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Procedure/mii-exa-test-data-patient-8-prozedur-2"
+        },
+        "name": "mii-exa-test-data-patient-8-prozedur-2",
+        "description": "Procedure: Perkutane Koronarangioplastie mit Stent-Implantation für Patient-8",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Procedure/mii-exa-test-data-patient-8-prozedur-3"
+        },
+        "name": "mii-exa-test-data-patient-8-prozedur-3",
+        "description": "Procedure: Kardiopulmonale Reanimation bei Myokardinfarkt für Patient-8",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Specimen/mii-exa-test-data-patient-8-specimen-1"
+        },
+        "name": "mii-exa-test-data-patient-8-specimen-1",
+        "description": "Specimen: EDTA-Blut für Hämatologie",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Specimen/mii-exa-test-data-patient-8-specimen-2"
+        },
+        "name": "mii-exa-test-data-patient-8-specimen-2",
+        "description": "Specimen: Serum für Klinische Chemie",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Condition/mii-exa-test-data-patient-8-todesursache-1"
+        },
+        "name": "mii-exa-test-data-patient-8-todesursache-1",
+        "description": "Observation: Todesursache für Patient-8",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-8-vitalstatus-1"
+        },
+        "name": "mii-exa-test-data-patient-8-vitalstatus-1",
+        "description": "Observation: Vitalstatus für Patient-8",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Patient/mii-exa-test-data-patient-9"
+        },
+        "name": "mii-exa-test-data-patient-9",
+        "description": "Patient: Patient-9",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Consent/mii-exa-test-data-patient-9-consent-1"
+        },
+        "name": "mii-exa-test-data-patient-9-consent-1",
+        "description": "Consent: Einwilligung für Patient 9",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Condition/mii-exa-test-data-patient-9-diagnose-1"
+        },
+        "name": "mii-exa-test-data-patient-9-diagnose-1",
+        "description": "Condition: Chronische ischämische Herzkrankheit für Patient 9",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Encounter/mii-exa-test-data-patient-9-encounter-1"
+        },
+        "name": "mii-exa-test-data-patient-9-encounter-1",
+        "description": "Encounter: Einrichtungskontakt Patient 9",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-9-labobs-1"
+        },
+        "name": "mii-exa-test-data-patient-9-labobs-1",
+        "description": "Observation: Leukozyten im Blut für Patient 9",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-9-labobs-2"
+        },
+        "name": "mii-exa-test-data-patient-9-labobs-2",
+        "description": "Observation: Hämoglobin im Blut für Patient 9",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-9-labobs-3"
+        },
+        "name": "mii-exa-test-data-patient-9-labobs-3",
+        "description": "Observation: Estradiol im Serum für Patient 9",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "DiagnosticReport/mii-exa-test-data-patient-9-labreport-1"
+        },
+        "name": "mii-exa-test-data-patient-9-labreport-1",
+        "description": "DiagnosticReport: Laborbericht für Patient 9",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "ServiceRequest/mii-exa-test-data-patient-9-labrequest-1"
+        },
+        "name": "mii-exa-test-data-patient-9-labrequest-1",
+        "description": "ServiceRequest: Hormonpanel für Patient 9",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "MedicationAdministration/mii-exa-test-data-patient-9-medadmin-1"
+        },
+        "name": "mii-exa-test-data-patient-9-medadmin-1",
+        "description": "MedicationAdministration: Verhütungspille 1 Tablette oral",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "MedicationAdministration/mii-exa-test-data-patient-9-medadmin-2"
+        },
+        "name": "mii-exa-test-data-patient-9-medadmin-2",
+        "description": "MedicationAdministration: Paracetamol 400mg oral bei Schmerzen",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "MedicationRequest/mii-exa-test-data-patient-9-medrequest-1"
+        },
+        "name": "mii-exa-test-data-patient-9-medrequest-1",
+        "description": "MedicationRequest: Verhütungspille 1 Tablette täglich",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "MedicationRequest/mii-exa-test-data-patient-9-medrequest-2"
+        },
+        "name": "mii-exa-test-data-patient-9-medrequest-2",
+        "description": "MedicationRequest: Paracetamol 500mg bis zu 4x täglich bei Bedarf",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "MedicationStatement/mii-exa-test-data-patient-9-medstatement-1"
+        },
+        "name": "mii-exa-test-data-patient-9-medstatement-1",
+        "description": "MedicationStatement: Verhütungspille 1 Tablette täglich",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "MedicationStatement/mii-exa-test-data-patient-9-medstatement-2"
+        },
+        "name": "mii-exa-test-data-patient-9-medstatement-2",
+        "description": "MedicationStatement: Paracetamol 500mg bei Bedarf",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Procedure/mii-exa-test-data-patient-9-prozedur-1"
+        },
+        "name": "mii-exa-test-data-patient-9-prozedur-1",
+        "description": "Procedure: Diagnostische Laparoskopie bei Ovarialzyste für Patient-9",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Procedure/mii-exa-test-data-patient-9-prozedur-2"
+        },
+        "name": "mii-exa-test-data-patient-9-prozedur-2",
+        "description": "Procedure: Laparoskopische Zystektomie bei Ovarialzyste für Patient-9",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Specimen/mii-exa-test-data-patient-9-specimen-1"
+        },
+        "name": "mii-exa-test-data-patient-9-specimen-1",
+        "description": "Specimen: EDTA-Blut für Hämatologie",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Specimen/mii-exa-test-data-patient-9-specimen-2"
+        },
+        "name": "mii-exa-test-data-patient-9-specimen-2",
+        "description": "Specimen: Serum für Klinische Chemie",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-9-vitalstatus-1"
+        },
+        "name": "mii-exa-test-data-patient-9-vitalstatus-1",
+        "description": "Observation: Vitalstatus für Patient-9",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Practitioner/mii-exa-test-data-practitioner-physician-1"
+        },
+        "name": "mii-exa-test-data-practitioner-physician-1",
+        "description": "Practitioner: Dr. Rahel Hirsch",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Practitioner/mii-exa-test-data-practitioner-physician-2"
+        },
+        "name": "mii-exa-test-data-practitioner-physician-2",
+        "description": "Practitioner: Dr. Robert Koch",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "PractitionerRole/mii-exa-test-data-practitioner-role-physician-1"
+        },
+        "name": "mii-exa-test-data-practitioner-role-physician-1",
+        "description": "PractitionerRole: Physician",
+        "exampleBoolean": true
+      }
+    ],
+    "page": {
+      "nameUrl": "toc.html",
+      "title": "Table of Contents",
+      "generation": "html",
+      "page": [
+        {
+          "nameUrl": "index.html",
+          "title": "Home",
+          "generation": "markdown"
+        }
+      ]
+    },
+    "parameter": [
+      {
+        "code": "copyrightyear",
+        "value": "2019+"
+      },
+      {
+        "code": "releaselabel",
+        "value": "ci-build"
+      },
+      {
+        "code": "path-resource",
+        "value": "input/predefined-resources"
+      }
+    ]
+  }
+}

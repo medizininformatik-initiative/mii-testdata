@@ -1,0 +1,67 @@
+{
+  "resourceType": "Medication",
+  "id": "mii-exa-test-data-medication-dalbavancin",
+  "meta": {
+    "security": [
+      {
+        "code": "HTEST",
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "display": "test health data"
+      }
+    ],
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "http://fhir.de/CodeSystem/ifa/pzn",
+        "code": "15205222",
+        "display": "XYDALBA"
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/atc",
+        "code": "J01XA04",
+        "version": "2023",
+        "display": "Dalbavancin"
+      }
+    ]
+  },
+  "form": {
+    "coding": [
+      {
+        "system": "http://standardterms.edqm.eu",
+        "code": "50043000",
+        "display": "Powder for concentrate for solution for infusion"
+      }
+    ]
+  },
+  "ingredient": [
+    {
+      "itemCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://fhir.de/CodeSystem/ask",
+            "code": "33395",
+            "display": "Dalbavancin"
+          },
+          {
+            "system": "http://fdasis.nlm.nih.gov",
+            "code": "808UI9MS5K"
+          },
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/CAS",
+            "code": "171500-79-1"
+          },
+          {
+            "system": "http://snomed.info/sct",
+            "code": "703917001",
+            "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+            "display": "Dalbavancin (substance)"
+          }
+        ]
+      }
+    }
+  ]
+}

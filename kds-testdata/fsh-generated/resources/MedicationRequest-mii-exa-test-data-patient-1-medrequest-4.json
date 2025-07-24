@@ -1,0 +1,84 @@
+{
+  "resourceType": "MedicationRequest",
+  "id": "mii-exa-test-data-patient-1-medrequest-4",
+  "meta": {
+    "security": [
+      {
+        "code": "HTEST",
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "display": "test health data"
+      }
+    ],
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationRequest"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "https://www.charite.de/fhir/sid/MedicationOrders",
+      "value": "MO_0000004"
+    }
+  ],
+  "dosageInstruction": [
+    {
+      "timing": {
+        "event": [
+          "2024-02-20T10:00:00+01:00"
+        ]
+      },
+      "doseAndRate": [
+        {
+          "rateRatio": {
+            "numerator": {
+              "system": "http://unitsofmeasure.org",
+              "value": 6.5,
+              "code": "mg",
+              "unit": "mg"
+            },
+            "denominator": {
+              "system": "http://unitsofmeasure.org",
+              "value": 1,
+              "code": "min",
+              "unit": "Minuten"
+            }
+          }
+        }
+      ],
+      "text": "Propofol 6.5 mg/min IV via Perfusor",
+      "route": {
+        "coding": [
+          {
+            "code": "20045000",
+            "system": "http://standardterms.edqm.eu",
+            "display": "Intravenous use"
+          }
+        ]
+      },
+      "method": {
+        "coding": [
+          {
+            "code": "129331004",
+            "system": "http://snomed.info/sct",
+            "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+            "display": "Perfusion - action (qualifier value)"
+          }
+        ]
+      }
+    }
+  ],
+  "status": "active",
+  "intent": "order",
+  "medicationReference": {
+    "reference": "Medication/mii-exa-test-data-medication-propofol"
+  },
+  "subject": {
+    "reference": "Patient/mii-exa-test-data-patient-1"
+  },
+  "encounter": {
+    "reference": "Encounter/mii-exa-test-data-patient-1-encounter-2"
+  },
+  "authoredOn": "2024-02-20T10:00:00+01:00",
+  "priorPrescription": {
+    "reference": "MedicationRequest/mii-exa-test-data-patient-1-medrequest-2"
+  }
+}

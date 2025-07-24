@@ -1,0 +1,67 @@
+{
+  "resourceType": "Medication",
+  "id": "mii-exa-test-data-medication-metamizol",
+  "meta": {
+    "security": [
+      {
+        "code": "HTEST",
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "display": "test health data"
+      }
+    ],
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "http://fhir.de/CodeSystem/ifa/pzn",
+        "code": "00651306",
+        "display": "Metamizol HEXAL® 500 mg"
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/atc",
+        "code": "N02BB02",
+        "version": "2023",
+        "display": "Metamizol-Natrium"
+      }
+    ]
+  },
+  "form": {
+    "coding": [
+      {
+        "system": "http://standardterms.edqm.eu",
+        "code": "10221000",
+        "display": "Film-coated tablet"
+      }
+    ]
+  },
+  "ingredient": [
+    {
+      "itemCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://fhir.de/CodeSystem/ask",
+            "code": "12915",
+            "display": "Metamizol-Natrium"
+          }
+        ]
+      },
+      "strength": {
+        "numerator": {
+          "value": 500,
+          "code": "mg",
+          "system": "http://unitsofmeasure.org",
+          "unit": "milligram"
+        },
+        "denominator": {
+          "value": 1,
+          "code": "10221000",
+          "system": "http://standardterms.edqm.eu",
+          "unit": "Film-coated tablet"
+        }
+      }
+    }
+  ]
+}

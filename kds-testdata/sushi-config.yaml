@@ -3,44 +3,45 @@
 # │  used properties are included. For a list of all supported properties and their functions,     │
 # │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-# id: miitestdata
+id: mii-kds-testdata
 canonical: https://www.medizininformatik-initiative.de/fhir/testdata
-# name: MIITestData
-# title: Example Title
-# description: Example Implementation Guide for getting started with SUSHI
-# status: draft # draft | active | retired | unknown
-version: 2024.0.1
+name: MIIKDSTestData
+title: MII KDS Test Data
+description: This project contains example MII KDS data for testing purposes.
+status: draft # draft | active | retired | unknown
+version: 2025.0.0
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
-# copyrightYear: 2024+
-# releaseLabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
-# license: CC0-1.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
-# jurisdiction: urn:iso:std:iso:3166#US "United States of America" # https://www.hl7.org/fhir/valueset-jurisdiction.html
-# publisher:
-#   name: Medizininformatik Initiative
-#   url: https://www.medizininformatik-initiative.de
+copyrightYear: 2019+
+releaseLabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
+license: CC0-1.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
+jurisdiction: urn:iso:std:iso:3166#DE "Deutschland" # https://www.hl7.org/fhir/valueset-jurisdiction.html
+publisher:
+  name: Medizininformatik Initiative
+  url: https://www.medizininformatik-initiative.de
   # email: test@example.org
 
 # The dependencies property corresponds to IG.dependsOn. The key is the
 # package id and the value is the version (or dev/current). For advanced
 # use cases, the value can be an object with keys for id, uri, and version.
 #
+# https://github.com/medizininformatik-initiative/kerndatensatz-meta/wiki/%C3%9Cbersicht-%C3%BCber-Versionen-der-Kerndatensatz%E2%80%90Module
 dependencies:
-  de.medizininformatikinitiative.kerndatensatz.person: 2024.0.0
-  de.medizininformatikinitiative.kerndatensatz.diagnose: 2024.0.0
-  de.medizininformatikinitiative.kerndatensatz.prozedur: 2024.0.0
-  de.medizininformatikinitiative.kerndatensatz.medikation: 2.0.0
-  de.medizininformatikinitiative.kerndatensatz.laborbefund: 1.0.7-alpha1
-  de.medizininformatikinitiative.kerndatensatz.fall: 2024.0.1
-  de.medizininformatikinitiative.kerndatensatz.biobank: 1.0.8
-  de.medizininformatikinitiative.kerndatensatz.consent: 1.0.7
-  de.medizininformatikinitiative.kerndatensatz.meta: 1.0.3
-  de.medizininformatikinitiative.kerndatensatz.icu: 1.0.0
-  de.medizininformatikinitiative.kerndatensatz.mikrobiologie: 2024.0.0
-  de.medizininformatikinitiative.kerndatensatz.molgen: 1.0.0
-  de.medizininformatikinitiative.kerndatensatz.patho: 1.0.0
-  de.medizininformatikinitiative.kerndatensatz.studie: 1.0.0
-  de.basisprofil.r4: 1.4.0
-  de.einwilligungsmanagement: 1.0.1
+  de.medizininformatikinitiative.kerndatensatz.person: 2025.0.x
+  de.medizininformatikinitiative.kerndatensatz.diagnose: 2025.0.x
+  de.medizininformatikinitiative.kerndatensatz.prozedur: 2025.0.x
+  de.medizininformatikinitiative.kerndatensatz.medikation: 2025.0.x
+  de.medizininformatikinitiative.kerndatensatz.laborbefund: 2025.0.x
+  de.medizininformatikinitiative.kerndatensatz.fall: 2025.0.x
+  de.medizininformatikinitiative.kerndatensatz.biobank: 2025.0.x
+  de.medizininformatikinitiative.kerndatensatz.consent: 2025.0.x
+  de.medizininformatikinitiative.kerndatensatz.meta: 2025.0.x
+  de.medizininformatikinitiative.kerndatensatz.icu: 2025.0.x
+  de.medizininformatikinitiative.kerndatensatz.mikrobiologie: 2025.0.x
+  de.medizininformatikinitiative.kerndatensatz.molgen: 2025.0.x
+  de.medizininformatikinitiative.kerndatensatz.patho: 2025.0.x
+  de.medizininformatikinitiative.kerndatensatz.studie: 2025.0.x
+  de.basisprofil.r4: 1.5.x
+  de.einwilligungsmanagement: 1.0.x
 #   hl7.fhir.us.mcode:
 #     id: mcode
 #     uri: http://hl7.org/fhir/us/mcode/ImplementationGuide/hl7.fhir.us.mcode
@@ -77,7 +78,9 @@ dependencies:
 # For parameters defined by the FHIR Tools IG see:
 # http://build.fhir.org/ig/FHIR/fhir-tools-ig/branches/master/CodeSystem-ig-parameters.html
 #
-# parameters:
+parameters:
+  path-resource:
+    - input/predefined-resources
 #   excludettl: true
 #   validation: [allow-any-extensions, no-broken-links]
 #
@@ -89,9 +92,9 @@ dependencies:
 # │ input/includes. To use a provided input/includes/menu.xml file, delete the "menu"              │
 # │ property below.                                                                                │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-# menu:
-#   Home: index.html
-#   Artifacts: artifacts.html
+menu:
+  Home: index.html
+  Artifacts: artifacts.html
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
 # │  Uncomment the properties below to configure additional properties on the ImplementationGuide  │
@@ -199,7 +202,7 @@ dependencies:
 # If set to true, no IG related content will be generated.
 # The default value for this property is false.
 #
-FSHOnly: true
+FSHOnly: false
 #
 #
 # When set to true, the "short" and "definition" field on the root element of an Extension will

@@ -1,4 +1,4 @@
-name: Build Testdata
+name: Build and Validate Testdata
 
 on:
   push:
@@ -19,18 +19,31 @@ jobs:
     - name: Checkout Project
       uses: actions/checkout@v4
 
-    - name: Cache FHIR Packages
-      id: fhir-cache
-      uses: actions/cache@v4
+    #- name: Cache FHIR Packages
+    #  id: fhir-cache
+    #  uses: actions/cache@v4
+    #  with:
+    #    path: "~/.fhir"
+    #    key: fhir-cache
+
+    - name: Download FHIR cache
+      uses: actions/checkout@v4
       with:
-        path: "~/.fhir"
-        key: fhir-cache
+        repository: medizininformatik-initiative/fhir-package-store
+        ref: cache-store
+        path: .fhir
+
+    - name: Link .fhir cache to ~/.fhir
+      run: |
+        mkdir -p ~/.fhir
+        cp -r .fhir/* ~/.fhir/
 
     - name: Install jq, npm and yq
       run: |
-        sudo add-apt-repository ppa:rmescandon/yq >/dev/null
         sudo apt-get update -qqq
-        sudo apt-get install -qqqy npm jq yq > /dev/null
+        sudo apt-get install -qqqy npm jq > /dev/null
+        wget -qO /usr/local/bin/yq https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64
+        chmod +x /usr/local/bin/yq
 
     - name: Install sushi
       run: npm install -g fsh-sushi
@@ -41,38 +54,28 @@ jobs:
         sushi build --log-level warn . || echo HAD_ERRORS='true' >> "$GITHUB_OUTPUT"
       working-directory: ./kds-testdata
 
-    - uses: actions/setup-dotnet@v4
-      if: ${{ steps.initial-build.outputs.HAD_ERRORS == 'true' }}
-      with:
-        dotnet-version: '6'
+    # - uses: actions/setup-dotnet@v4
+    #   if: ${{ steps.initial-build.outputs.HAD_ERRORS == 'true' }}
+    #   with:
+    #     dotnet-version: '8.0.x'
 
-    - name: Install firely
-      if: ${{ steps.initial-build.outputs.HAD_ERRORS == 'true' }}
-      run: dotnet tool install -g firely.terminal
+    # - name: Install firely
+    #   if: ${{ steps.initial-build.outputs.HAD_ERRORS == 'true' }}
+    #   run: dotnet tool install -g firely.terminal
 
-    - name: Create FHIR package snapshots
-      if: ${{ steps.initial-build.outputs.HAD_ERRORS == 'true' }}
-      run: for dep in $(yq eval '.' sushi-config.yaml -o json | jq -r '.dependencies | keys[]'); do fhir inflate --package "$dep"; done
-      working-directory: ./kds-testdata
+    # - name: Create FHIR package snapshots
+    #   if: ${{ steps.initial-build.outputs.HAD_ERRORS == 'true' }}
+    #   run: for dep in $(yq eval '.' sushi-config.yaml -o json | jq -r '.dependencies | keys[]'); do fhir inflate --package "$dep"; done
+    #   working-directory: ./kds-testdata
 
-    - name: Check if KDS Laborbefund v1.0.7-alpha1 is patched
-      if: ${{ steps.initial-build.outputs.HAD_ERRORS == 'true' }}
-      id: check-patched
-      run: echo PATCHED="$(jq -c '.snapshot.element[] | select(.id == "Observation.value[x]") | has("slicing")'  \
-           "$HOME/.fhir/packages/de.medizininformatikinitiative.kerndatensatz.laborbefund#1.0.7-alpha1/package/Profile-ObservationLab.json" > /tmp/Profile-ObservationLab.json)" \
-           >> "$GITHUB_OUTPUT"
+    # - name: Final build
+    #   if: ${{ steps.initial-build.outputs.HAD_ERRORS == 'true' }}
+    #   run: sushi build --log-level warn  .
+    #   working-directory: ./kds-testdata
 
-    - name: Apply bugfix for FHIR package KDS Laborbefund v1.0.7-alpha1
-      if: ${{ steps.initial-build.outputs.HAD_ERRORS == 'true' && steps.check-patched.outputs.PATCHED != 'true' }}
-      run: |
-        jq -c '(.snapshot.element[] | select(.id == "Observation.value[x]") ) += {"slicing":{"discriminator":[{"type":"type","path":"$this"}],"ordered":false,"rules":"open"}}' \
-           "$HOME/.fhir/packages/de.medizininformatikinitiative.kerndatensatz.laborbefund#1.0.7-alpha1/package/Profile-ObservationLab.json" > /tmp/Profile-ObservationLab.json
-        mv /tmp/Profile-ObservationLab.json "$HOME/.fhir/packages/de.medizininformatikinitiative.kerndatensatz.laborbefund#1.0.7-alpha1/package/Profile-ObservationLab.json"
-
-    - name: Final build
-      if: ${{ steps.initial-build.outputs.HAD_ERRORS == 'true' }}
-      run: sushi build --log-level warn  .
-      working-directory: ./kds-testdata
+    - name: Generate timestamp
+      id: timestamp
+      run: echo "timestamp=$(date -u +'%Y%m%d-%H%M%S')" >> "$GITHUB_OUTPUT"
 
     - name: Get KDS Testdata Version
       id: kds-version
@@ -83,10 +86,48 @@ jobs:
       id: upload-artifact
       uses: actions/upload-artifact@v4
       with:
-        name: "kds-testdata-${{ steps.kds-version.outputs.KDS_VERSION }}"
+        name: "kds-testdata-${{ steps.kds-version.outputs.KDS_VERSION }}-${{ steps.timestamp.outputs.timestamp }}"
         path: ./kds-testdata/fsh-generated
         compression-level: 9
         if-no-files-found: error
+
+    - name: Generate NDJSON from test data bundles
+      id: ndjson
+      run: |
+        mkdir -p ./kds-testdata/ndjson
+        timestamp="${{ steps.timestamp.outputs.timestamp }}"
+        output_file="./kds-testdata/ndjson/testdata-bundles-${timestamp}.ndjson"
+        > "$output_file"
+
+        for file in ./kds-testdata/fsh-generated/resources/Bundle-mii-exa-test-data-bundle-pat*.json; do
+          if [ -f "$file" ]; then
+            jq -c '.' "$file" >> "$output_file"
+          fi
+        done
+
+        echo "ndjson_filename=testdata-bundles-${timestamp}.ndjson" >> "$GITHUB_OUTPUT"
+      shell: bash
+
+    - name: Upload test data bundles NDJSON
+      uses: actions/upload-artifact@v4
+      with:
+        name: "testdata-bundles-ndjson-${{ steps.timestamp.outputs.timestamp }}"
+        path: ./kds-testdata/ndjson/${{ steps.ndjson.outputs.ndjson_filename }}
+        compression-level: 9
+        if-no-files-found: error
+
+  JAVA_FHIR_VALIDATION:
+    uses: medizininformatik-initiative/kerndatensatz-meta/.github/workflows/ci_java_validation.yml@master
+    needs: build-kds
+    with:
+      ref: ${{ github.event.pull_request.head.ref }}
+      PATH_TO_CONFORMANCE_RESOURCES: ./kds-testdata/fsh-generated/resources
+      PATH_TO_EXAMPLES: ./kds-testdata/fsh-generated/resources
+      JAVA_VALIDATION_ENABLED: true
+      JAVA_VALIDATION_OPTIONS: ${{ vars.JAVA_VALIDATION_OPTIONS }}
+      JAVA_VALIDATOR_VERSION: ${{ vars.JAVA_VALIDATOR_VERSION }}
+      working-directory: ./kds-testdata
+    secrets: inherit
 
   release:
     runs-on: ubuntu-latest
@@ -96,6 +137,10 @@ jobs:
     steps:
     - name: Checkout Project
       uses: actions/checkout@v4
+
+    - name: Generate timestamp for release
+      id: timestamp
+      run: echo "timestamp=$(date -u +'%Y%m%d-%H%M%S')" >> "$GITHUB_OUTPUT"
 
     - name: Download build artifacts
       uses: actions/download-artifact@v4
@@ -110,6 +155,10 @@ jobs:
         done
       working-directory: artifacts
 
+    - name: Add NDJSON file to release
+      run: |
+        cp artifacts/testdata-bundles-ndjson-*/testdata-bundles.ndjson ./testdata-bundles-${{ steps.timestamp.outputs.timestamp }}.ndjson
+
     - name: Prepare Version
       id: prep-version
       run: echo "version=${GITHUB_REF#refs/tags/}" >> $GITHUB_OUTPUT
@@ -119,6 +168,9 @@ jobs:
       with:
         name: "MII Testdata - ${{ steps.prep-version.outputs.version }}"
         draft: true
+        prerelease: ${{ contains(steps.prep-version.outputs.version, '-') }}
         generate_release_notes: true
-        files: artifacts/*.zip
+        files: |
+          artifacts/*.zip
+          testdata-bundles-*.ndjson
         fail_on_unmatched_files: true

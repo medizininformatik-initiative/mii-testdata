@@ -1,0 +1,48 @@
+{
+  "name": "de.medizininformatikinitiative.kerndatensatz.testdata",
+  "version": "2025.0.0",
+  "description": "Medizininformatik Initiative - Test Data",
+  "author": "juliansass",
+  "fhirVersions": [
+    "4.0.1"
+  ],
+  "keywords": [
+    "MII",
+    "KDS",
+    "Test Data"
+  ],
+  "license": "CC-BY-4.0",
+  "homepage": "https://www.medizininformatik-initiative.de/",
+  "directories" : {
+    "lib" : "package",
+    "example" : "examples"
+  },
+  "title": "MII KDS Test Data",
+  "maintainers" : [
+    {
+      "name" : "Medizininformatik Initiative",
+      "url" : "https://www.medizininformatik-initiative.de/"
+    }
+  ],
+  "canonicals": "https://www.medizininformatik-initiative.de/fhir/testdata",
+  "jurisdiction": "http://unstats.un.org/unsd/methods/m49/m49.htm#276",
+  "dependencies": {
+    "hl7.fhir.r4.core": "4.0.1",
+    "de.basisprofil.r4": "1.5.x",
+    "de.medizininformatikinitiative.kerndatensatz.meta": "2025.0.x",
+    "de.medizininformatikinitiative.kerndatensatz.person": "2025.0.x",
+    "de.medizininformatikinitiative.kerndatensatz.diagnose": "2025.0.x",
+    "de.medizininformatikinitiative.kerndatensatz.prozedur": "2025.0.x",
+    "de.medizininformatikinitiative.kerndatensatz.medikation": "2025.0.x",
+    "de.medizininformatikinitiative.kerndatensatz.laborbefund": "2025.0.x",
+    "de.medizininformatikinitiative.kerndatensatz.fall": "2025.0.x",
+    "de.medizininformatikinitiative.kerndatensatz.biobank": "2025.0.x",
+    "de.medizininformatikinitiative.kerndatensatz.consent": "2025.0.x",
+    "de.medizininformatikinitiative.kerndatensatz.icu": "2025.0.x",
+    "de.medizininformatikinitiative.kerndatensatz.mikrobiologie": "2025.0.x",
+    "de.medizininformatikinitiative.kerndatensatz.molgen": "2025.0.x",
+    "de.medizininformatikinitiative.kerndatensatz.patho": "2025.0.x",
+    "de.medizininformatikinitiative.kerndatensatz.studie": "2025.0.x",
+    "de.einwilligungsmanagement": "2.0.x"
+  }
+}
