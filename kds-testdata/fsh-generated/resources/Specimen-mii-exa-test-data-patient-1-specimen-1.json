@@ -63,6 +63,15 @@
           "display": "Patient was fasting prior to the procedure."
         }
       ]
+    },
+    "method": {
+      "coding": [
+        {
+          "code": "129300006",
+          "system": "http://snomed.info/sct",
+          "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+        }
+      ]
     }
   },
   "container": [
