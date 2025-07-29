@@ -5,79 +5,79 @@
     "fshType": "Instance",
     "fshFile": "Bundle.fsh",
     "startLine": 24,
-    "endLine": 72
+    "endLine": 78
   },
   {
     "outputFile": "Bundle-mii-exa-test-data-bundle-pat-10.json",
     "fshName": "mii-exa-test-data-bundle-pat-10",
     "fshType": "Instance",
     "fshFile": "Bundle.fsh",
-    "startLine": 635,
-    "endLine": 692
+    "startLine": 689,
+    "endLine": 748
   },
   {
     "outputFile": "Bundle-mii-exa-test-data-bundle-pat-2.json",
     "fshName": "mii-exa-test-data-bundle-pat-2",
     "fshType": "Instance",
     "fshFile": "Bundle.fsh",
-    "startLine": 77,
-    "endLine": 141
+    "startLine": 83,
+    "endLine": 149
   },
   {
     "outputFile": "Bundle-mii-exa-test-data-bundle-pat-3.json",
     "fshName": "mii-exa-test-data-bundle-pat-3",
     "fshType": "Instance",
     "fshFile": "Bundle.fsh",
-    "startLine": 146,
-    "endLine": 224
+    "startLine": 158,
+    "endLine": 238
   },
   {
     "outputFile": "Bundle-mii-exa-test-data-bundle-pat-4.json",
     "fshName": "mii-exa-test-data-bundle-pat-4",
     "fshType": "Instance",
     "fshFile": "Bundle.fsh",
-    "startLine": 229,
-    "endLine": 311
+    "startLine": 247,
+    "endLine": 331
   },
   {
     "outputFile": "Bundle-mii-exa-test-data-bundle-pat-5.json",
     "fshName": "mii-exa-test-data-bundle-pat-5",
     "fshType": "Instance",
     "fshFile": "Bundle.fsh",
-    "startLine": 316,
-    "endLine": 373
+    "startLine": 340,
+    "endLine": 399
   },
   {
     "outputFile": "Bundle-mii-exa-test-data-bundle-pat-6.json",
     "fshName": "mii-exa-test-data-bundle-pat-6",
     "fshType": "Instance",
     "fshFile": "Bundle.fsh",
-    "startLine": 378,
-    "endLine": 439
+    "startLine": 408,
+    "endLine": 471
   },
   {
     "outputFile": "Bundle-mii-exa-test-data-bundle-pat-7.json",
     "fshName": "mii-exa-test-data-bundle-pat-7",
     "fshType": "Instance",
     "fshFile": "Bundle.fsh",
-    "startLine": 444,
-    "endLine": 501
+    "startLine": 480,
+    "endLine": 539
   },
   {
     "outputFile": "Bundle-mii-exa-test-data-bundle-pat-8.json",
     "fshName": "mii-exa-test-data-bundle-pat-8",
     "fshType": "Instance",
     "fshFile": "Bundle.fsh",
-    "startLine": 506,
-    "endLine": 568
+    "startLine": 548,
+    "endLine": 612
   },
   {
     "outputFile": "Bundle-mii-exa-test-data-bundle-pat-9.json",
     "fshName": "mii-exa-test-data-bundle-pat-9",
     "fshType": "Instance",
     "fshFile": "Bundle.fsh",
-    "startLine": 573,
-    "endLine": 630
+    "startLine": 621,
+    "endLine": 680
   },
   {
     "outputFile": "Condition-mii-exa-test-data-patient-1-diagnose-1.json",
@@ -277,23 +277,23 @@
     "fshType": "Instance",
     "fshFile": "modul-labor/Device.fsh",
     "startLine": 1,
-    "endLine": 11
+    "endLine": 16
   },
   {
     "outputFile": "Device-mii-exa-test-data-device-roche-cobas-e402.json",
     "fshName": "mii-exa-test-data-device-roche-cobas-e402",
     "fshType": "Instance",
     "fshFile": "modul-labor/Device.fsh",
-    "startLine": 13,
-    "endLine": 23
+    "startLine": 18,
+    "endLine": 31
   },
   {
     "outputFile": "Device-mii-exa-test-data-device-roche-cobas.json",
     "fshName": "mii-exa-test-data-device-roche-cobas",
     "fshType": "Instance",
     "fshFile": "modul-labor/Device.fsh",
-    "startLine": 25,
-    "endLine": 33
+    "startLine": 33,
+    "endLine": 43
   },
   {
     "outputFile": "Device-mii-exa-test-data-molgen-device-sequencer.json",
@@ -302,6 +302,14 @@
     "fshFile": "modul-molgen/Variante.fsh",
     "startLine": 43,
     "endLine": 51
+  },
+  {
+    "outputFile": "DeviceMetric-mii-exa-test-data-devicemetric-roche-cobas-c303-1.json",
+    "fshName": "mii-exa-test-data-devicemetric-roche-cobas-c303-1",
+    "fshType": "Instance",
+    "fshFile": "modul-labor/DeviceMetric.fsh",
+    "startLine": 1,
+    "endLine": 10
   },
   {
     "outputFile": "DiagnosticReport-mii-exa-test-data-patient-1-labreport-1.json",
@@ -2501,167 +2509,167 @@
     "fshType": "Instance",
     "fshFile": "modul-biobank/Specimen.fsh",
     "startLine": 2,
-    "endLine": 47
+    "endLine": 48
   },
   {
     "outputFile": "Specimen-mii-exa-test-data-patient-10-specimen-1.json",
     "fshName": "mii-exa-test-data-patient-10-specimen-1",
     "fshType": "Instance",
     "fshFile": "modul-biobank/Specimen.fsh",
-    "startLine": 408,
-    "endLine": 426
+    "startLine": 409,
+    "endLine": 427
   },
   {
     "outputFile": "Specimen-mii-exa-test-data-patient-10-specimen-2.json",
     "fshName": "mii-exa-test-data-patient-10-specimen-2",
     "fshType": "Instance",
     "fshFile": "modul-biobank/Specimen.fsh",
-    "startLine": 429,
-    "endLine": 447
+    "startLine": 430,
+    "endLine": 448
   },
   {
     "outputFile": "Specimen-mii-exa-test-data-patient-2-specimen-1.json",
     "fshName": "mii-exa-test-data-patient-2-specimen-1",
     "fshType": "Instance",
     "fshFile": "modul-biobank/Specimen.fsh",
-    "startLine": 50,
-    "endLine": 68
+    "startLine": 51,
+    "endLine": 69
   },
   {
     "outputFile": "Specimen-mii-exa-test-data-patient-3-specimen-1.json",
     "fshName": "mii-exa-test-data-patient-3-specimen-1",
     "fshType": "Instance",
     "fshFile": "modul-biobank/Specimen.fsh",
-    "startLine": 71,
-    "endLine": 83
+    "startLine": 72,
+    "endLine": 84
   },
   {
     "outputFile": "Specimen-mii-exa-test-data-patient-3-specimen-2.json",
     "fshName": "mii-exa-test-data-patient-3-specimen-2",
     "fshType": "Instance",
     "fshFile": "modul-biobank/Specimen.fsh",
-    "startLine": 86,
-    "endLine": 104
+    "startLine": 87,
+    "endLine": 105
   },
   {
     "outputFile": "Specimen-mii-exa-test-data-patient-3-specimen-3.json",
     "fshName": "mii-exa-test-data-patient-3-specimen-3",
     "fshType": "Instance",
     "fshFile": "modul-biobank/Specimen.fsh",
-    "startLine": 107,
-    "endLine": 125
+    "startLine": 108,
+    "endLine": 126
   },
   {
     "outputFile": "Specimen-mii-exa-test-data-patient-4-specimen-1.json",
     "fshName": "mii-exa-test-data-patient-4-specimen-1",
     "fshType": "Instance",
     "fshFile": "modul-biobank/Specimen.fsh",
-    "startLine": 128,
-    "endLine": 139
+    "startLine": 129,
+    "endLine": 140
   },
   {
     "outputFile": "Specimen-mii-exa-test-data-patient-4-specimen-2.json",
     "fshName": "mii-exa-test-data-patient-4-specimen-2",
     "fshType": "Instance",
     "fshFile": "modul-biobank/Specimen.fsh",
-    "startLine": 141,
-    "endLine": 152
+    "startLine": 142,
+    "endLine": 153
   },
   {
     "outputFile": "Specimen-mii-exa-test-data-patient-4-specimen-3.json",
     "fshName": "mii-exa-test-data-patient-4-specimen-3",
     "fshType": "Instance",
     "fshFile": "modul-biobank/Specimen.fsh",
-    "startLine": 155,
-    "endLine": 173
+    "startLine": 156,
+    "endLine": 174
   },
   {
     "outputFile": "Specimen-mii-exa-test-data-patient-4-specimen-4.json",
     "fshName": "mii-exa-test-data-patient-4-specimen-4",
     "fshType": "Instance",
     "fshFile": "modul-biobank/Specimen.fsh",
-    "startLine": 176,
-    "endLine": 194
+    "startLine": 177,
+    "endLine": 195
   },
   {
     "outputFile": "Specimen-mii-exa-test-data-patient-5-specimen-1.json",
     "fshName": "mii-exa-test-data-patient-5-specimen-1",
     "fshType": "Instance",
     "fshFile": "modul-biobank/Specimen.fsh",
-    "startLine": 197,
-    "endLine": 215
+    "startLine": 198,
+    "endLine": 216
   },
   {
     "outputFile": "Specimen-mii-exa-test-data-patient-5-specimen-2.json",
     "fshName": "mii-exa-test-data-patient-5-specimen-2",
     "fshType": "Instance",
     "fshFile": "modul-biobank/Specimen.fsh",
-    "startLine": 218,
-    "endLine": 237
+    "startLine": 219,
+    "endLine": 238
   },
   {
     "outputFile": "Specimen-mii-exa-test-data-patient-6-specimen-1.json",
     "fshName": "mii-exa-test-data-patient-6-specimen-1",
     "fshType": "Instance",
     "fshFile": "modul-biobank/Specimen.fsh",
-    "startLine": 240,
-    "endLine": 258
+    "startLine": 241,
+    "endLine": 259
   },
   {
     "outputFile": "Specimen-mii-exa-test-data-patient-6-specimen-2.json",
     "fshName": "mii-exa-test-data-patient-6-specimen-2",
     "fshType": "Instance",
     "fshFile": "modul-biobank/Specimen.fsh",
-    "startLine": 261,
-    "endLine": 279
+    "startLine": 262,
+    "endLine": 280
   },
   {
     "outputFile": "Specimen-mii-exa-test-data-patient-7-specimen-1.json",
     "fshName": "mii-exa-test-data-patient-7-specimen-1",
     "fshType": "Instance",
     "fshFile": "modul-biobank/Specimen.fsh",
-    "startLine": 282,
-    "endLine": 300
+    "startLine": 283,
+    "endLine": 301
   },
   {
     "outputFile": "Specimen-mii-exa-test-data-patient-7-specimen-2.json",
     "fshName": "mii-exa-test-data-patient-7-specimen-2",
     "fshType": "Instance",
     "fshFile": "modul-biobank/Specimen.fsh",
-    "startLine": 303,
-    "endLine": 321
+    "startLine": 304,
+    "endLine": 322
   },
   {
     "outputFile": "Specimen-mii-exa-test-data-patient-8-specimen-1.json",
     "fshName": "mii-exa-test-data-patient-8-specimen-1",
     "fshType": "Instance",
     "fshFile": "modul-biobank/Specimen.fsh",
-    "startLine": 324,
-    "endLine": 342
+    "startLine": 325,
+    "endLine": 343
   },
   {
     "outputFile": "Specimen-mii-exa-test-data-patient-8-specimen-2.json",
     "fshName": "mii-exa-test-data-patient-8-specimen-2",
     "fshType": "Instance",
     "fshFile": "modul-biobank/Specimen.fsh",
-    "startLine": 345,
-    "endLine": 363
+    "startLine": 346,
+    "endLine": 364
   },
   {
     "outputFile": "Specimen-mii-exa-test-data-patient-9-specimen-1.json",
     "fshName": "mii-exa-test-data-patient-9-specimen-1",
     "fshType": "Instance",
     "fshFile": "modul-biobank/Specimen.fsh",
-    "startLine": 366,
-    "endLine": 384
+    "startLine": 367,
+    "endLine": 385
   },
   {
     "outputFile": "Specimen-mii-exa-test-data-patient-9-specimen-2.json",
     "fshName": "mii-exa-test-data-patient-9-specimen-2",
     "fshType": "Instance",
     "fshFile": "modul-biobank/Specimen.fsh",
-    "startLine": 387,
-    "endLine": 405
+    "startLine": 388,
+    "endLine": 406
   },
   {
     "outputFile": "Substance-mii-exa-test-data-patient-1-substance-1.json",

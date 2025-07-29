@@ -17,6 +17,7 @@ Description: "Specimen: EDTA-Blut für Klinische Chemie und Hämatologie"
 * collection.collectedDateTime = "2024-02-15T11:05:00+01:00"
 * collection.bodySite.coding[sct] = $sct#789218009 "Structure of dorsum of left hand (body structure)"
 * collection.fastingStatusCodeableConcept = $v2-0916#F "Patient was fasting prior to the procedure."
+* collection.method = $sct#129300006
 //* processing[lagerprozess][+].extension[temperaturbedingungen].valueRange.low = 15 'Cel' "°C"
 //* processing[lagerprozess][=].extension[temperaturbedingungen].valueRange.high = 25 'Cel' "°C"
 //* processing[lagerprozess][=].extension[temperaturbedingungen].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Temperaturbedingungen"

@@ -57,6 +57,12 @@ Description: "Bundle: Patient-1"
 * insert AddBundleEntry(mii-exa-test-data-patient-1-substance-1, Substance)
 * insert AddBundleEntry(mii-exa-test-data-device-roche-cobas, Device)
 * insert AddBundleEntry(mii-exa-test-data-device-roche-cobas-c303, Device)
+* insert AddBundleEntry(mii-exa-test-data-device-roche-cobas-e402, Device)
+* insert AddBundleEntry(mii-exa-test-data-devicemetric-roche-cobas-c303-1, DeviceMetric)
+// * insert AddBundleEntryConditional(mii-exa-test-data-device-roche-cobas, Device, identifier=https://www.charite.de/fhir/sid/Laboratory-device-identifier%7CRocheCobas)
+// * insert AddBundleEntryConditional(mii-exa-test-data-device-roche-cobas-c303, Device, identifier=https://www.charite.de/fhir/sid/Laboratory-device-identifier%7CRocheCobasC303)
+// * insert AddBundleEntryConditional(mii-exa-test-data-device-roche-cobas-e402, Device, identifier=https://www.charite.de/fhir/sid/Laboratory-device-identifier%7CRocheCobasE402)
+// * insert AddBundleEntryConditional(mii-exa-test-data-devicemetric-roche-cobas-c303-1, DeviceMetric, identifier=https://www.charite.de/fhir/sid/Laboratory-device-identifier%7CRocheCobasC303-160192)
 * insert AddBundleEntry(mii-exa-test-data-organization-biobank-charite, Organization)
 * insert AddBundleEntry(mii-exa-test-data-patient-1-labreport-1, DiagnosticReport)
 * insert AddBundleEntry(mii-exa-test-data-patient-1-labrequest-1, ServiceRequest)
@@ -137,8 +143,14 @@ Description: "Bundle: Patient-2"
 * insert AddBundleEntry(mii-exa-test-data-practitioner-role-physician-1, PractitionerRole)
 
 // Devices
-* insert AddBundleEntry(mii-exa-test-data-device-roche-cobas-c303, Device)
 * insert AddBundleEntry(mii-exa-test-data-device-roche-cobas, Device)
+* insert AddBundleEntry(mii-exa-test-data-device-roche-cobas-c303, Device)
+* insert AddBundleEntry(mii-exa-test-data-device-roche-cobas-e402, Device)
+* insert AddBundleEntry(mii-exa-test-data-devicemetric-roche-cobas-c303-1, DeviceMetric)
+// * insert AddBundleEntryConditional(mii-exa-test-data-device-roche-cobas, Device, identifier=https://www.charite.de/fhir/sid/Laboratory-device-identifier%7CRocheCobas)
+// * insert AddBundleEntryConditional(mii-exa-test-data-device-roche-cobas-c303, Device, identifier=https://www.charite.de/fhir/sid/Laboratory-device-identifier%7CRocheCobasC303)
+// * insert AddBundleEntryConditional(mii-exa-test-data-device-roche-cobas-e402, Device, identifier=https://www.charite.de/fhir/sid/Laboratory-device-identifier%7CRocheCobasE402)
+// * insert AddBundleEntryConditional(mii-exa-test-data-devicemetric-roche-cobas-c303-1, DeviceMetric, identifier=https://www.charite.de/fhir/sid/Laboratory-device-identifier%7CRocheCobasC303-160192)
 
 // =============================================================================
 // Patient-3
@@ -219,9 +231,15 @@ Description: "Bundle: Patient-3"
 * insert AddBundleEntry(mii-exa-test-data-practitioner-role-physician-1, PractitionerRole)
 
 // Devices
-* insert AddBundleEntry(mii-exa-test-data-device-roche-cobas-c303, Device)
 * insert AddBundleEntry(mii-exa-test-data-molgen-device-sequencer, Device)
 * insert AddBundleEntry(mii-exa-test-data-device-roche-cobas, Device)
+* insert AddBundleEntry(mii-exa-test-data-device-roche-cobas-c303, Device)
+* insert AddBundleEntry(mii-exa-test-data-device-roche-cobas-e402, Device)
+* insert AddBundleEntry(mii-exa-test-data-devicemetric-roche-cobas-c303-1, DeviceMetric)
+//* insert AddBundleEntryConditional(mii-exa-test-data-device-roche-cobas, Device, identifier=https://www.charite.de/fhir/sid/Laboratory-device-identifier%7CRocheCobas)
+//* insert AddBundleEntryConditional(mii-exa-test-data-device-roche-cobas-c303, Device, identifier=https://www.charite.de/fhir/sid/Laboratory-device-identifier%7CRocheCobasC303)
+//* insert AddBundleEntryConditional(mii-exa-test-data-device-roche-cobas-e402, Device, identifier=https://www.charite.de/fhir/sid/Laboratory-device-identifier%7CRocheCobasE402)
+//* insert AddBundleEntryConditional(mii-exa-test-data-devicemetric-roche-cobas-c303-1, DeviceMetric, identifier=https://www.charite.de/fhir/sid/Laboratory-device-identifier%7CRocheCobasC303-160192)
 
 // =============================================================================
 // Patient-4
@@ -306,9 +324,15 @@ Description: "Bundle: Patient-4"
 * insert AddBundleEntry(mii-exa-test-data-practitioner-role-physician-1, PractitionerRole)
 
 // Devices
-* insert AddBundleEntry(mii-exa-test-data-device-roche-cobas-c303, Device)
 * insert AddBundleEntry(mii-exa-test-data-molgen-device-sequencer, Device)
 * insert AddBundleEntry(mii-exa-test-data-device-roche-cobas, Device)
+* insert AddBundleEntry(mii-exa-test-data-device-roche-cobas-c303, Device)
+* insert AddBundleEntry(mii-exa-test-data-device-roche-cobas-e402, Device)
+* insert AddBundleEntry(mii-exa-test-data-devicemetric-roche-cobas-c303-1, DeviceMetric)
+// * insert AddBundleEntryConditional(mii-exa-test-data-device-roche-cobas, Device, identifier=https://www.charite.de/fhir/sid/Laboratory-device-identifier%7CRocheCobas)
+// * insert AddBundleEntryConditional(mii-exa-test-data-device-roche-cobas-c303, Device, identifier=https://www.charite.de/fhir/sid/Laboratory-device-identifier%7CRocheCobasC303)
+// * insert AddBundleEntryConditional(mii-exa-test-data-device-roche-cobas-e402, Device, identifier=https://www.charite.de/fhir/sid/Laboratory-device-identifier%7CRocheCobasE402)
+// * insert AddBundleEntryConditional(mii-exa-test-data-devicemetric-roche-cobas-c303-1, DeviceMetric, identifier=https://www.charite.de/fhir/sid/Laboratory-device-identifier%7CRocheCobasC303-160192)
 
 // =============================================================================
 // Patient-5
@@ -369,8 +393,14 @@ Description: "Bundle: Patient-5"
 * insert AddBundleEntry(mii-exa-test-data-practitioner-role-physician-1, PractitionerRole)
 
 // Devices
-* insert AddBundleEntry(mii-exa-test-data-device-roche-cobas-c303, Device)
 * insert AddBundleEntry(mii-exa-test-data-device-roche-cobas, Device)
+* insert AddBundleEntry(mii-exa-test-data-device-roche-cobas-c303, Device)
+* insert AddBundleEntry(mii-exa-test-data-device-roche-cobas-e402, Device)
+* insert AddBundleEntry(mii-exa-test-data-devicemetric-roche-cobas-c303-1, DeviceMetric)
+// * insert AddBundleEntryConditional(mii-exa-test-data-device-roche-cobas, Device, identifier=https://www.charite.de/fhir/sid/Laboratory-device-identifier%7CRocheCobas)
+// * insert AddBundleEntryConditional(mii-exa-test-data-device-roche-cobas-c303, Device, identifier=https://www.charite.de/fhir/sid/Laboratory-device-identifier%7CRocheCobasC303)
+// * insert AddBundleEntryConditional(mii-exa-test-data-device-roche-cobas-e402, Device, identifier=https://www.charite.de/fhir/sid/Laboratory-device-identifier%7CRocheCobasE402)
+// * insert AddBundleEntryConditional(mii-exa-test-data-devicemetric-roche-cobas-c303-1, DeviceMetric, identifier=https://www.charite.de/fhir/sid/Laboratory-device-identifier%7CRocheCobasC303-160192)
 
 // =============================================================================
 // Patient-6
@@ -435,8 +465,14 @@ Description: "Bundle: Patient-6"
 * insert AddBundleEntry(mii-exa-test-data-practitioner-role-physician-1, PractitionerRole)
 
 // Devices
-* insert AddBundleEntry(mii-exa-test-data-device-roche-cobas-c303, Device)
 * insert AddBundleEntry(mii-exa-test-data-device-roche-cobas, Device)
+* insert AddBundleEntry(mii-exa-test-data-device-roche-cobas-c303, Device)
+* insert AddBundleEntry(mii-exa-test-data-device-roche-cobas-e402, Device)
+* insert AddBundleEntry(mii-exa-test-data-devicemetric-roche-cobas-c303-1, DeviceMetric)
+// * insert AddBundleEntryConditional(mii-exa-test-data-device-roche-cobas, Device, identifier=https://www.charite.de/fhir/sid/Laboratory-device-identifier%7CRocheCobas)
+// * insert AddBundleEntryConditional(mii-exa-test-data-device-roche-cobas-c303, Device, identifier=https://www.charite.de/fhir/sid/Laboratory-device-identifier%7CRocheCobasC303)
+// * insert AddBundleEntryConditional(mii-exa-test-data-device-roche-cobas-e402, Device, identifier=https://www.charite.de/fhir/sid/Laboratory-device-identifier%7CRocheCobasE402)
+// * insert AddBundleEntryConditional(mii-exa-test-data-devicemetric-roche-cobas-c303-1, DeviceMetric, identifier=https://www.charite.de/fhir/sid/Laboratory-device-identifier%7CRocheCobasC303-160192)
 
 // =============================================================================
 // Patient-7
@@ -497,8 +533,14 @@ Description: "Bundle: Patient-7"
 * insert AddBundleEntry(mii-exa-test-data-practitioner-role-physician-1, PractitionerRole)
 
 // Devices
-* insert AddBundleEntry(mii-exa-test-data-device-roche-cobas-c303, Device)
 * insert AddBundleEntry(mii-exa-test-data-device-roche-cobas, Device)
+* insert AddBundleEntry(mii-exa-test-data-device-roche-cobas-c303, Device)
+* insert AddBundleEntry(mii-exa-test-data-device-roche-cobas-e402, Device)
+* insert AddBundleEntry(mii-exa-test-data-devicemetric-roche-cobas-c303-1, DeviceMetric)
+// * insert AddBundleEntryConditional(mii-exa-test-data-device-roche-cobas, Device, identifier=https://www.charite.de/fhir/sid/Laboratory-device-identifier%7CRocheCobas)
+// * insert AddBundleEntryConditional(mii-exa-test-data-device-roche-cobas-c303, Device, identifier=https://www.charite.de/fhir/sid/Laboratory-device-identifier%7CRocheCobasC303)
+// * insert AddBundleEntryConditional(mii-exa-test-data-device-roche-cobas-e402, Device, identifier=https://www.charite.de/fhir/sid/Laboratory-device-identifier%7CRocheCobasE402)
+// * insert AddBundleEntryConditional(mii-exa-test-data-devicemetric-roche-cobas-c303-1, DeviceMetric, identifier=https://www.charite.de/fhir/sid/Laboratory-device-identifier%7CRocheCobasC303-160192)
 
 // =============================================================================
 // Patient-8
@@ -564,8 +606,14 @@ Description: "Bundle: Patient-8"
 * insert AddBundleEntry(mii-exa-test-data-practitioner-role-physician-1, PractitionerRole)
 
 // Devices
-* insert AddBundleEntry(mii-exa-test-data-device-roche-cobas-c303, Device)
 * insert AddBundleEntry(mii-exa-test-data-device-roche-cobas, Device)
+* insert AddBundleEntry(mii-exa-test-data-device-roche-cobas-c303, Device)
+* insert AddBundleEntry(mii-exa-test-data-device-roche-cobas-e402, Device)
+* insert AddBundleEntry(mii-exa-test-data-devicemetric-roche-cobas-c303-1, DeviceMetric)
+// * insert AddBundleEntryConditional(mii-exa-test-data-device-roche-cobas, Device, identifier=https://www.charite.de/fhir/sid/Laboratory-device-identifier%7CRocheCobas)
+// * insert AddBundleEntryConditional(mii-exa-test-data-device-roche-cobas-c303, Device, identifier=https://www.charite.de/fhir/sid/Laboratory-device-identifier%7CRocheCobasC303)
+// * insert AddBundleEntryConditional(mii-exa-test-data-device-roche-cobas-e402, Device, identifier=https://www.charite.de/fhir/sid/Laboratory-device-identifier%7CRocheCobasE402)
+// * insert AddBundleEntryConditional(mii-exa-test-data-devicemetric-roche-cobas-c303-1, DeviceMetric, identifier=https://www.charite.de/fhir/sid/Laboratory-device-identifier%7CRocheCobasC303-160192)
 
 // =============================================================================
 // Patient-9
@@ -626,8 +674,14 @@ Description: "Bundle: Patient-9"
 * insert AddBundleEntry(mii-exa-test-data-practitioner-role-physician-1, PractitionerRole)
 
 // Devices
-* insert AddBundleEntry(mii-exa-test-data-device-roche-cobas-c303, Device)
 * insert AddBundleEntry(mii-exa-test-data-device-roche-cobas, Device)
+* insert AddBundleEntry(mii-exa-test-data-device-roche-cobas-c303, Device)
+* insert AddBundleEntry(mii-exa-test-data-device-roche-cobas-e402, Device)
+* insert AddBundleEntry(mii-exa-test-data-devicemetric-roche-cobas-c303-1, DeviceMetric)
+// * insert AddBundleEntryConditional(mii-exa-test-data-device-roche-cobas, Device, identifier=https://www.charite.de/fhir/sid/Laboratory-device-identifier%7CRocheCobas)
+// * insert AddBundleEntryConditional(mii-exa-test-data-device-roche-cobas-c303, Device, identifier=https://www.charite.de/fhir/sid/Laboratory-device-identifier%7CRocheCobasC303)
+// * insert AddBundleEntryConditional(mii-exa-test-data-device-roche-cobas-e402, Device, identifier=https://www.charite.de/fhir/sid/Laboratory-device-identifier%7CRocheCobasE402)
+// * insert AddBundleEntryConditional(mii-exa-test-data-devicemetric-roche-cobas-c303-1, DeviceMetric, identifier=https://www.charite.de/fhir/sid/Laboratory-device-identifier%7CRocheCobasC303-160192)
 
 // =============================================================================
 // Patient-10
@@ -688,5 +742,24 @@ Description: "Bundle: Patient-10"
 * insert AddBundleEntry(mii-exa-test-data-practitioner-role-physician-1, PractitionerRole)
 
 // Devices
-* insert AddBundleEntry(mii-exa-test-data-device-roche-cobas-c303, Device)
 * insert AddBundleEntry(mii-exa-test-data-device-roche-cobas, Device)
+* insert AddBundleEntry(mii-exa-test-data-device-roche-cobas-c303, Device)
+* insert AddBundleEntry(mii-exa-test-data-device-roche-cobas-e402, Device)
+* insert AddBundleEntry(mii-exa-test-data-devicemetric-roche-cobas-c303-1, DeviceMetric)
+// * insert AddBundleEntryConditional(mii-exa-test-data-device-roche-cobas, Device, identifier=https://www.charite.de/fhir/sid/Laboratory-device-identifier%7CRocheCobas)
+// * insert AddBundleEntryConditional(mii-exa-test-data-device-roche-cobas-c303, Device, identifier=https://www.charite.de/fhir/sid/Laboratory-device-identifier%7CRocheCobasC303)
+// * insert AddBundleEntryConditional(mii-exa-test-data-device-roche-cobas-e402, Device, identifier=https://www.charite.de/fhir/sid/Laboratory-device-identifier%7CRocheCobasE402)
+// * insert AddBundleEntryConditional(mii-exa-test-data-devicemetric-roche-cobas-c303-1, DeviceMetric, identifier=https://www.charite.de/fhir/sid/Laboratory-device-identifier%7CRocheCobasC303-160192)
+
+
+// Instance: mii-exa-test-data-bundle-dev
+// InstanceOf: Bundle
+// Usage: #example
+// Description: "Bundle: Dev"
+// * insert TestDataLabel
+// * type = #transaction
+// * timestamp = "2025-07-25T19:13:00+02:00"
+// * insert AddBundleEntryConditional(mii-exa-test-data-device-roche-cobas, Device, identifier=https://www.charite.de/fhir/sid/Laboratory-device-identifier%7CRocheCobas)
+// * insert AddBundleEntryConditional(mii-exa-test-data-device-roche-cobas-c303, Device, identifier=https://www.charite.de/fhir/sid/Laboratory-device-identifier%7CRocheCobasC303)
+// * insert AddBundleEntryConditional(mii-exa-test-data-device-roche-cobas-e402, Device, identifier=https://www.charite.de/fhir/sid/Laboratory-device-identifier%7CRocheCobasE402)
+// * insert AddBundleEntryConditional(mii-exa-test-data-devicemetric-roche-cobas-c303-1, DeviceMetric, identifier=https://www.charite.de/fhir/sid/Laboratory-device-identifier%7CRocheCobasC303-160192)

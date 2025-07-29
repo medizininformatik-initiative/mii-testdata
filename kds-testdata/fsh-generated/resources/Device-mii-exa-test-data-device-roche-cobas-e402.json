@@ -10,10 +10,28 @@
       }
     ]
   },
+  "identifier": [
+    {
+      "system": "https://www.charite.de/fhir/sid/Laboratory-device-identifier",
+      "value": "RocheCobasE402"
+    }
+  ],
   "deviceName": [
     {
       "name": "cobas",
       "type": "manufacturer-name"
+    }
+  ],
+  "property": [
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "160220",
+            "system": "urn:iso:std:iso:11073:10101"
+          }
+        ]
+      }
     }
   ],
   "status": "active",

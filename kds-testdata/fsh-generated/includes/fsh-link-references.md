@@ -32,6 +32,7 @@
 [mii-exa-test-data-device-roche-cobas]: Device-mii-exa-test-data-device-roche-cobas.html
 [mii-exa-test-data-device-roche-cobas-c303]: Device-mii-exa-test-data-device-roche-cobas-c303.html
 [mii-exa-test-data-device-roche-cobas-e402]: Device-mii-exa-test-data-device-roche-cobas-e402.html
+[mii-exa-test-data-devicemetric-roche-cobas-c303-1]: DeviceMetric-mii-exa-test-data-devicemetric-roche-cobas-c303-1.html
 [mii-exa-test-data-medication-5-fluorouracil]: Medication-mii-exa-test-data-medication-5-fluorouracil.html
 [mii-exa-test-data-medication-amoxicillin]: Medication-mii-exa-test-data-medication-amoxicillin.html
 [mii-exa-test-data-medication-amoxicillin-clavulansaeure]: Medication-mii-exa-test-data-medication-amoxicillin-clavulansaeure.html
