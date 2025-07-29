@@ -10,10 +10,48 @@
       }
     ]
   },
+  "identifier": [
+    {
+      "system": "https://www.charite.de/fhir/sid/Laboratory-device-identifier",
+      "value": "RocheCobasC303"
+    }
+  ],
   "deviceName": [
     {
       "name": "cobas",
       "type": "manufacturer-name"
+    }
+  ],
+  "property": [
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "69684",
+            "system": "urn:iso:std:iso:11073:10101"
+          }
+        ]
+      }
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "69652",
+            "system": "urn:iso:std:iso:11073:10101"
+          }
+        ]
+      }
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "69844",
+            "system": "urn:iso:std:iso:11073:10101"
+          }
+        ]
+      }
     }
   ],
   "status": "active",

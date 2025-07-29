@@ -5,79 +5,79 @@
     "fshType": "Instance",
     "fshFile": "Bundle.fsh",
     "startLine": 24,
-    "endLine": 72
+    "endLine": 78
   },
   {
     "outputFile": "Bundle-mii-exa-test-data-bundle-pat-10.json",
     "fshName": "mii-exa-test-data-bundle-pat-10",
     "fshType": "Instance",
     "fshFile": "Bundle.fsh",
-    "startLine": 635,
-    "endLine": 692
+    "startLine": 689,
+    "endLine": 748
   },
   {
     "outputFile": "Bundle-mii-exa-test-data-bundle-pat-2.json",
     "fshName": "mii-exa-test-data-bundle-pat-2",
     "fshType": "Instance",
     "fshFile": "Bundle.fsh",
-    "startLine": 77,
-    "endLine": 141
+    "startLine": 83,
+    "endLine": 149
   },
   {
     "outputFile": "Bundle-mii-exa-test-data-bundle-pat-3.json",
     "fshName": "mii-exa-test-data-bundle-pat-3",
     "fshType": "Instance",
     "fshFile": "Bundle.fsh",
-    "startLine": 146,
-    "endLine": 224
+    "startLine": 158,
+    "endLine": 238
   },
   {
     "outputFile": "Bundle-mii-exa-test-data-bundle-pat-4.json",
     "fshName": "mii-exa-test-data-bundle-pat-4",
     "fshType": "Instance",
     "fshFile": "Bundle.fsh",
-    "startLine": 229,
-    "endLine": 311
+    "startLine": 247,
+    "endLine": 331
   },
   {
     "outputFile": "Bundle-mii-exa-test-data-bundle-pat-5.json",
     "fshName": "mii-exa-test-data-bundle-pat-5",
     "fshType": "Instance",
     "fshFile": "Bundle.fsh",
-    "startLine": 316,
-    "endLine": 373
+    "startLine": 340,
+    "endLine": 399
   },
   {
     "outputFile": "Bundle-mii-exa-test-data-bundle-pat-6.json",
     "fshName": "mii-exa-test-data-bundle-pat-6",
     "fshType": "Instance",
     "fshFile": "Bundle.fsh",
-    "startLine": 378,
-    "endLine": 439
+    "startLine": 408,
+    "endLine": 471
   },
   {
     "outputFile": "Bundle-mii-exa-test-data-bundle-pat-7.json",
     "fshName": "mii-exa-test-data-bundle-pat-7",
     "fshType": "Instance",
     "fshFile": "Bundle.fsh",
-    "startLine": 444,
-    "endLine": 501
+    "startLine": 480,
+    "endLine": 539
   },
   {
     "outputFile": "Bundle-mii-exa-test-data-bundle-pat-8.json",
     "fshName": "mii-exa-test-data-bundle-pat-8",
     "fshType": "Instance",
     "fshFile": "Bundle.fsh",
-    "startLine": 506,
-    "endLine": 568
+    "startLine": 548,
+    "endLine": 612
   },
   {
     "outputFile": "Bundle-mii-exa-test-data-bundle-pat-9.json",
     "fshName": "mii-exa-test-data-bundle-pat-9",
     "fshType": "Instance",
     "fshFile": "Bundle.fsh",
-    "startLine": 573,
-    "endLine": 630
+    "startLine": 621,
+    "endLine": 680
   },
   {
     "outputFile": "Condition-mii-exa-test-data-patient-1-diagnose-1.json",
@@ -277,23 +277,23 @@
     "fshType": "Instance",
     "fshFile": "modul-labor/Device.fsh",
     "startLine": 1,
-    "endLine": 11
+    "endLine": 16
   },
   {
     "outputFile": "Device-mii-exa-test-data-device-roche-cobas-e402.json",
     "fshName": "mii-exa-test-data-device-roche-cobas-e402",
     "fshType": "Instance",
     "fshFile": "modul-labor/Device.fsh",
-    "startLine": 13,
-    "endLine": 23
+    "startLine": 18,
+    "endLine": 31
   },
   {
     "outputFile": "Device-mii-exa-test-data-device-roche-cobas.json",
     "fshName": "mii-exa-test-data-device-roche-cobas",
     "fshType": "Instance",
     "fshFile": "modul-labor/Device.fsh",
-    "startLine": 25,
-    "endLine": 33
+    "startLine": 33,
+    "endLine": 43
   },
   {
     "outputFile": "Device-mii-exa-test-data-molgen-device-sequencer.json",
@@ -302,6 +302,14 @@
     "fshFile": "modul-molgen/Variante.fsh",
     "startLine": 43,
     "endLine": 51
+  },
+  {
+    "outputFile": "DeviceMetric-mii-exa-test-data-devicemetric-roche-cobas-c303-1.json",
+    "fshName": "mii-exa-test-data-devicemetric-roche-cobas-c303-1",
+    "fshType": "Instance",
+    "fshFile": "modul-labor/DeviceMetric.fsh",
+    "startLine": 1,
+    "endLine": 10
   },
   {
     "outputFile": "DiagnosticReport-mii-exa-test-data-patient-1-labreport-1.json",

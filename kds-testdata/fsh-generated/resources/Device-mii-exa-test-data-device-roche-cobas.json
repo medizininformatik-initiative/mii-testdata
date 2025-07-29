@@ -10,6 +10,12 @@
       }
     ]
   },
+  "identifier": [
+    {
+      "system": "https://www.charite.de/fhir/sid/Laboratory-device-identifier",
+      "value": "RocheCobas"
+    }
+  ],
   "deviceName": [
     {
       "name": "cobas",

@@ -409,6 +409,14 @@
       },
       {
         "reference": {
+          "reference": "DeviceMetric/mii-exa-test-data-devicemetric-roche-cobas-c303-1"
+        },
+        "name": "mii-exa-test-data-devicemetric-roche-cobas-c303-1",
+        "description": "DeviceMetric: Roche cobas c 303",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Medication/mii-exa-test-data-medication-5-fluorouracil"
         },
         "name": "mii-exa-test-data-medication-5-fluorouracil",
