@@ -80,3 +80,7 @@ Alias: $fdasis = http://fdasis.nlm.nih.gov
 Alias: $AufnahmegrundErsteUndZweiteStelle = http://fhir.de/CodeSystem/dkgev/AufnahmegrundErsteUndZweiteStelle
 Alias: $AufnahmegrundDritteStelle = http://fhir.de/CodeSystem/dkgev/AufnahmegrundDritteStelle
 Alias: $AufnahmegrundVierteStelle = http://fhir.de/CodeSystem/dkgev/AufnahmegrundVierteStelle
+Alias: $DCM = http://dicom.nema.org/resources/ontology/DCM
+Alias: $CSdeviceName = http://hl7.org/fhir/device-nametype
+Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation-category
+Alias: $observation-type = http://terminology.hl7.org/CodeSystem/v2-0936

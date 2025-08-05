@@ -10,6 +10,7 @@
 [mii-exa-test-data-patient-7-list-entlassmedikation]: List-mii-exa-test-data-patient-7-list-entlassmedikation.html
 [mii-exa-test-data-patient-9-list-entlassmedikation]: List-mii-exa-test-data-patient-9-list-entlassmedikation.html
 [mii-exa-test-data-patient-10-list-entlassmedikation]: List-mii-exa-test-data-patient-10-list-entlassmedikation.html
+[mii-exa-test-data-semistrukt-befundbericht]: Composition-mii-exa-test-data-semistrukt-befundbericht.html
 [mii-exa-test-data-patient-1-list-stat-aufenthalt]: List-mii-exa-test-data-patient-1-list-stat-aufenthalt.html
 [mii-exa-test-data-patient-2-list-stat-aufenthalt]: List-mii-exa-test-data-patient-2-list-stat-aufenthalt.html
 [mii-exa-test-data-patient-3-list-stat-aufenthalt]: List-mii-exa-test-data-patient-3-list-stat-aufenthalt.html
@@ -19,6 +20,12 @@
 [mii-exa-test-data-patient-7-list-stat-aufenthalt]: List-mii-exa-test-data-patient-7-list-stat-aufenthalt.html
 [mii-exa-test-data-patient-8-list-stat-aufenthalt]: List-mii-exa-test-data-patient-8-list-stat-aufenthalt.html
 [mii-exa-test-data-patient-9-list-stat-aufenthalt]: List-mii-exa-test-data-patient-9-list-stat-aufenthalt.html
+[mii-exa-test-data-anforderung]: ServiceRequest-mii-exa-test-data-anforderung.html
+[mii-exa-test-data-befundbericht]: DiagnosticReport-mii-exa-test-data-befundbericht.html
+[mii-exa-test-data-befundungsprozedur]: Procedure-mii-exa-test-data-befundungsprozedur.html
+[mii-exa-test-data-behandlungsempfehlung]: CarePlan-mii-exa-test-data-behandlungsempfehlung.html
+[mii-exa-test-data-bildgebungsprozedur]: Procedure-mii-exa-test-data-bildgebungsprozedur.html
+[mii-exa-test-data-bildgebungsstudie]: ImagingStudy-mii-exa-test-data-bildgebungsstudie.html
 [mii-exa-test-data-bundle-pat-1]: Bundle-mii-exa-test-data-bundle-pat-1.html
 [mii-exa-test-data-bundle-pat-10]: Bundle-mii-exa-test-data-bundle-pat-10.html
 [mii-exa-test-data-bundle-pat-2]: Bundle-mii-exa-test-data-bundle-pat-2.html
@@ -33,6 +40,9 @@
 [mii-exa-test-data-device-roche-cobas-c303]: Device-mii-exa-test-data-device-roche-cobas-c303.html
 [mii-exa-test-data-device-roche-cobas-e402]: Device-mii-exa-test-data-device-roche-cobas-e402.html
 [mii-exa-test-data-devicemetric-roche-cobas-c303-1]: DeviceMetric-mii-exa-test-data-devicemetric-roche-cobas-c303-1.html
+[mii-exa-test-data-geraet]: Device-mii-exa-test-data-geraet.html
+[mii-exa-test-data-koerperstruktur]: BodyStructure-mii-exa-test-data-koerperstruktur.html
+[mii-exa-test-data-kontrastmittelgabe]: MedicationAdministration-mii-exa-test-data-kontrastmittelgabe.html
 [mii-exa-test-data-medication-5-fluorouracil]: Medication-mii-exa-test-data-medication-5-fluorouracil.html
 [mii-exa-test-data-medication-amoxicillin]: Medication-mii-exa-test-data-medication-amoxicillin.html
 [mii-exa-test-data-medication-amoxicillin-clavulansaeure]: Medication-mii-exa-test-data-medication-amoxicillin-clavulansaeure.html
@@ -336,3 +346,4 @@
 [mii-exa-test-data-practitioner-physician-1]: Practitioner-mii-exa-test-data-practitioner-physician-1.html
 [mii-exa-test-data-practitioner-physician-2]: Practitioner-mii-exa-test-data-practitioner-physician-2.html
 [mii-exa-test-data-practitioner-role-physician-1]: PractitionerRole-mii-exa-test-data-practitioner-role-physician-1.html
+[mii-exa-test-data-radiologische-beobachtung]: Observation-mii-exa-test-data-radiologische-beobachtung.html
