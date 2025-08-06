@@ -43,6 +43,7 @@
     "de.medizininformatikinitiative.kerndatensatz.molgen": "2025.0.x",
     "de.medizininformatikinitiative.kerndatensatz.patho": "2025.0.x",
     "de.medizininformatikinitiative.kerndatensatz.studie": "2025.0.x",
+    "de.medizininformatikinitiative.kerndatensatz.bildgebung": "2025.0.x",
     "de.einwilligungsmanagement": "2.0.x"
   }
 }
