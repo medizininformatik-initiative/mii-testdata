@@ -76,6 +76,18 @@ Description: "Bundle: Patient-1"
 * insert AddBundleEntry(mii-exa-test-data-patient-1-labobs-7, Observation)
 * insert AddBundleEntry(mii-exa-test-data-practitioner-role-physician-1, PractitionerRole)
 * insert AddBundleEntry(mii-exa-test-data-practitioner-physician-1, Practitioner)
+* insert AddBundleEntry(mii-exa-test-data-practitioner-physician-2, Practitioner)
+* insert AddBundleEntry(mii-exa-test-data-koerperstruktur, BodyStructure)
+* insert AddBundleEntry(mii-exa-test-data-behandlungsempfehlung, CarePlan)
+* insert AddBundleEntry(mii-exa-test-data-semistrukt-befundbericht, Composition)
+* insert AddBundleEntry(mii-exa-test-data-geraet, Device)
+* insert AddBundleEntry(mii-exa-test-data-befundbericht, DiagnosticReport)
+* insert AddBundleEntry(mii-exa-test-data-bildgebungsprozedur, Procedure)
+* insert AddBundleEntry(mii-exa-test-data-bildgebungsstudie, ImagingStudy)
+* insert AddBundleEntry(mii-exa-test-data-radiologische-beobachtung, Observation)
+* insert AddBundleEntry(mii-exa-test-data-befundungsprozedur, Procedure)
+* insert AddBundleEntry(mii-exa-test-data-anforderung, ServiceRequest)
+* insert AddBundleEntry(mii-exa-test-data-kontrastmittelgabe, MedicationAdministration)
 
 // =============================================================================
 // Patient-2

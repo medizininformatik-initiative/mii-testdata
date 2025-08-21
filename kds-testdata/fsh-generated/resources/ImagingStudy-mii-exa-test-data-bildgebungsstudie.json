@@ -1,0 +1,225 @@
+{
+  "resourceType": "ImagingStudy",
+  "id": "mii-exa-test-data-bildgebungsstudie",
+  "meta": {
+    "security": [
+      {
+        "code": "HTEST",
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "display": "test health data"
+      }
+    ],
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-bildgebungsstudie"
+    ]
+  },
+  "extension": [
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-bildgebungsgrund",
+      "valueString": "Verdacht auf Mammakarzinom"
+    }
+  ],
+  "modality": [
+    {
+      "code": "MR",
+      "system": "http://dicom.nema.org/resources/ontology/DCM",
+      "display": "Magnetic Resonance"
+    }
+  ],
+  "basedOn": [
+    {
+      "reference": "ServiceRequest/mii-exa-test-data-anforderung"
+    }
+  ],
+  "reasonReference": [
+    {
+      "reference": "Condition/mii-exa-test-data-patient-1-diagnose-1"
+    }
+  ],
+  "series": [
+    {
+      "extension": [
+        {
+          "extension": [
+            {
+              "valueQuantity": {
+                "unit": "tesla",
+                "value": 3
+              },
+              "url": "magneticFieldStrength"
+            },
+            {
+              "url": "scanningSequence",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "SE",
+                    "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-scanning-sequence"
+                  }
+                ]
+              }
+            },
+            {
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "SP",
+                    "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-scanning-sequence-variant"
+                  },
+                  {
+                    "code": "SK",
+                    "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-scanning-sequence-variant"
+                  }
+                ]
+              },
+              "url": "scanningSequenceVariant"
+            },
+            {
+              "valueQuantity": {
+                "unit": "milliseconds",
+                "value": 388
+              },
+              "url": "echoTime"
+            },
+            {
+              "valueQuantity": {
+                "unit": "milliseconds",
+                "value": 5000
+              },
+              "url": "repetitionTime"
+            },
+            {
+              "valueQuantity": {
+                "unit": "milliseconds",
+                "value": 900
+              },
+              "url": "inversionTime"
+            },
+            {
+              "valueQuantity": {
+                "unit": "plane angle degree",
+                "value": 130
+              },
+              "url": "flipAngle"
+            }
+          ],
+          "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mr"
+        },
+        {
+          "extension": [
+            {
+              "url": "contrastBolus",
+              "valueBoolean": true
+            },
+            {
+              "url": "contrastBolusDetails",
+              "valueReference": {
+                "reference": "MedicationAdministration/mii-exa-test-data-kontrastmittelgabe"
+              }
+            }
+          ],
+          "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-kontrastmittel"
+        }
+      ],
+      "performer": [
+        {
+          "actor": {
+            "reference": "Device/mii-exa-test-data-geraet"
+          }
+        }
+      ],
+      "instance": [
+        {
+          "extension": [
+            {
+              "extension": [
+                {
+                  "valueQuantity": {
+                    "unit": "millimeter",
+                    "value": 0.260417
+                  },
+                  "url": "pixelSpacingX"
+                },
+                {
+                  "valueQuantity": {
+                    "unit": "millimeter",
+                    "value": 0.260417
+                  },
+                  "url": "pixelSpacingY"
+                },
+                {
+                  "valueQuantity": {
+                    "unit": "millimeter",
+                    "value": 3
+                  },
+                  "url": "sliceThickness"
+                },
+                {
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "code": "ORIGINAL",
+                        "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-instance-image-type"
+                      },
+                      {
+                        "code": "SECONDARY",
+                        "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-instance-image-type"
+                      },
+                      {
+                        "code": "OTHER",
+                        "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-instance-image-type"
+                      }
+                    ]
+                  },
+                  "url": "imageType"
+                }
+              ],
+              "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-details"
+            }
+          ],
+          "uid": "1.2.34.5.6789.1.2.3.45678.9123456789123456789123456789",
+          "sopClass": {
+            "code": "urn:oid:1.2.840.10008.5.1.4.1.1.4",
+            "system": "urn:ietf:rfc:3986"
+          },
+          "number": 28
+        }
+      ],
+      "uid": "1.2.34.5.6789.1.2.34.5678912.34567891234567891234",
+      "number": 9,
+      "modality": {
+        "code": "MR",
+        "system": "http://dicom.nema.org/resources/ontology/DCM",
+        "display": "Magnetic Resonance"
+      },
+      "description": "T2 STIR_tra DRB",
+      "numberOfInstances": 28,
+      "bodySite": {
+        "code": "76752008",
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+        "display": "Breast structure (body structure)"
+      },
+      "laterality": {
+        "code": "51440002",
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+        "display": "Bilateral"
+      },
+      "started": "2024-07-19T12:03:30+02:00"
+    }
+  ],
+  "status": "available",
+  "subject": {
+    "reference": "Patient/mii-exa-test-data-patient-1"
+  },
+  "encounter": {
+    "reference": "Encounter/mii-exa-test-data-patient-1-encounter-1"
+  },
+  "numberOfSeries": 11,
+  "numberOfInstances": 294,
+  "procedureReference": {
+    "reference": "Procedure/mii-exa-test-data-bildgebungsprozedur"
+  },
+  "description": "Mamma"
+}

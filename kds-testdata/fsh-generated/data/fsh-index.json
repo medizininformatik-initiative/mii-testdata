@@ -1,83 +1,107 @@
 [
   {
+    "outputFile": "BodyStructure-mii-exa-test-data-koerperstruktur.json",
+    "fshName": "mii-exa-test-data-koerperstruktur",
+    "fshType": "Instance",
+    "fshFile": "modul-bildgebung/BodyStructure.fsh",
+    "startLine": 1,
+    "endLine": 10
+  },
+  {
     "outputFile": "Bundle-mii-exa-test-data-bundle-pat-1.json",
     "fshName": "mii-exa-test-data-bundle-pat-1",
     "fshType": "Instance",
     "fshFile": "Bundle.fsh",
     "startLine": 24,
-    "endLine": 78
+    "endLine": 90
   },
   {
     "outputFile": "Bundle-mii-exa-test-data-bundle-pat-10.json",
     "fshName": "mii-exa-test-data-bundle-pat-10",
     "fshType": "Instance",
     "fshFile": "Bundle.fsh",
-    "startLine": 689,
-    "endLine": 748
+    "startLine": 701,
+    "endLine": 760
   },
   {
     "outputFile": "Bundle-mii-exa-test-data-bundle-pat-2.json",
     "fshName": "mii-exa-test-data-bundle-pat-2",
     "fshType": "Instance",
     "fshFile": "Bundle.fsh",
-    "startLine": 83,
-    "endLine": 149
+    "startLine": 95,
+    "endLine": 161
   },
   {
     "outputFile": "Bundle-mii-exa-test-data-bundle-pat-3.json",
     "fshName": "mii-exa-test-data-bundle-pat-3",
     "fshType": "Instance",
     "fshFile": "Bundle.fsh",
-    "startLine": 158,
-    "endLine": 238
+    "startLine": 170,
+    "endLine": 250
   },
   {
     "outputFile": "Bundle-mii-exa-test-data-bundle-pat-4.json",
     "fshName": "mii-exa-test-data-bundle-pat-4",
     "fshType": "Instance",
     "fshFile": "Bundle.fsh",
-    "startLine": 247,
-    "endLine": 331
+    "startLine": 259,
+    "endLine": 343
   },
   {
     "outputFile": "Bundle-mii-exa-test-data-bundle-pat-5.json",
     "fshName": "mii-exa-test-data-bundle-pat-5",
     "fshType": "Instance",
     "fshFile": "Bundle.fsh",
-    "startLine": 340,
-    "endLine": 399
+    "startLine": 352,
+    "endLine": 411
   },
   {
     "outputFile": "Bundle-mii-exa-test-data-bundle-pat-6.json",
     "fshName": "mii-exa-test-data-bundle-pat-6",
     "fshType": "Instance",
     "fshFile": "Bundle.fsh",
-    "startLine": 408,
-    "endLine": 471
+    "startLine": 420,
+    "endLine": 483
   },
   {
     "outputFile": "Bundle-mii-exa-test-data-bundle-pat-7.json",
     "fshName": "mii-exa-test-data-bundle-pat-7",
     "fshType": "Instance",
     "fshFile": "Bundle.fsh",
-    "startLine": 480,
-    "endLine": 539
+    "startLine": 492,
+    "endLine": 551
   },
   {
     "outputFile": "Bundle-mii-exa-test-data-bundle-pat-8.json",
     "fshName": "mii-exa-test-data-bundle-pat-8",
     "fshType": "Instance",
     "fshFile": "Bundle.fsh",
-    "startLine": 548,
-    "endLine": 612
+    "startLine": 560,
+    "endLine": 624
   },
   {
     "outputFile": "Bundle-mii-exa-test-data-bundle-pat-9.json",
     "fshName": "mii-exa-test-data-bundle-pat-9",
     "fshType": "Instance",
     "fshFile": "Bundle.fsh",
-    "startLine": 621,
-    "endLine": 680
+    "startLine": 633,
+    "endLine": 692
+  },
+  {
+    "outputFile": "CarePlan-mii-exa-test-data-behandlungsempfehlung.json",
+    "fshName": "mii-exa-test-data-behandlungsempfehlung",
+    "fshType": "Instance",
+    "fshFile": "modul-bildgebung/CarePlan.fsh",
+    "startLine": 1,
+    "endLine": 11
+  },
+  {
+    "outputFile": "Composition-mii-exa-test-data-semistrukt-befundbericht.json",
+    "fshName": "mii-exa-test-data-semistrukt-befundbericht",
+    "fshType": "Instance",
+    "fshFile": "modul-bildgebung/Composition.fsh",
+    "startLine": 1,
+    "endLine": 17
   },
   {
     "outputFile": "Condition-mii-exa-test-data-patient-1-diagnose-1.json",
@@ -296,6 +320,14 @@
     "endLine": 43
   },
   {
+    "outputFile": "Device-mii-exa-test-data-geraet.json",
+    "fshName": "mii-exa-test-data-geraet",
+    "fshType": "Instance",
+    "fshFile": "modul-bildgebung/Device.fsh",
+    "startLine": 1,
+    "endLine": 9
+  },
+  {
     "outputFile": "Device-mii-exa-test-data-molgen-device-sequencer.json",
     "fshName": "mii-exa-test-data-molgen-device-sequencer",
     "fshType": "Instance",
@@ -310,6 +342,14 @@
     "fshFile": "modul-labor/DeviceMetric.fsh",
     "startLine": 1,
     "endLine": 10
+  },
+  {
+    "outputFile": "DiagnosticReport-mii-exa-test-data-befundbericht.json",
+    "fshName": "mii-exa-test-data-befundbericht",
+    "fshType": "Instance",
+    "fshFile": "modul-bildgebung/DiagnosticReport.fsh",
+    "startLine": 1,
+    "endLine": 22
   },
   {
     "outputFile": "DiagnosticReport-mii-exa-test-data-patient-1-labreport-1.json",
@@ -518,6 +558,14 @@
     "fshFile": "modul-molgen/FamilyMemberHistory.fsh",
     "startLine": 23,
     "endLine": 38
+  },
+  {
+    "outputFile": "ImagingStudy-mii-exa-test-data-bildgebungsstudie.json",
+    "fshName": "mii-exa-test-data-bildgebungsstudie",
+    "fshType": "Instance",
+    "fshFile": "modul-bildgebung/ImagingStudy.fsh",
+    "startLine": 1,
+    "endLine": 54
   },
   {
     "outputFile": "List-mii-exa-test-data-patient-1-list-aufnahmemedikation.json",
@@ -902,6 +950,14 @@
     "fshFile": "modul-medikation/Medication.fsh",
     "startLine": 350,
     "endLine": 360
+  },
+  {
+    "outputFile": "MedicationAdministration-mii-exa-test-data-kontrastmittelgabe.json",
+    "fshName": "mii-exa-test-data-kontrastmittelgabe",
+    "fshType": "Instance",
+    "fshFile": "modul-bildgebung/ContrastAdministration.fsh",
+    "startLine": 1,
+    "endLine": 20
   },
   {
     "outputFile": "MedicationAdministration-mii-exa-test-data-patient-1-medadmin-1.json",
@@ -2096,6 +2152,14 @@
     "endLine": 80
   },
   {
+    "outputFile": "Observation-mii-exa-test-data-radiologische-beobachtung.json",
+    "fshName": "mii-exa-test-data-radiologische-beobachtung",
+    "fshType": "Instance",
+    "fshFile": "modul-bildgebung/Observation.fsh",
+    "startLine": 1,
+    "endLine": 21
+  },
+  {
     "outputFile": "Organization-mii-exa-test-data-organization-biobank-charite.json",
     "fshName": "mii-exa-test-data-organization-biobank-charite",
     "fshType": "Instance",
@@ -2222,6 +2286,22 @@
     "fshFile": "modul-prozedur/PractitionerRole.fsh",
     "startLine": 1,
     "endLine": 9
+  },
+  {
+    "outputFile": "Procedure-mii-exa-test-data-befundungsprozedur.json",
+    "fshName": "mii-exa-test-data-befundungsprozedur",
+    "fshType": "Instance",
+    "fshFile": "modul-bildgebung/ReadProcedure.fsh",
+    "startLine": 1,
+    "endLine": 14
+  },
+  {
+    "outputFile": "Procedure-mii-exa-test-data-bildgebungsprozedur.json",
+    "fshName": "mii-exa-test-data-bildgebungsprozedur",
+    "fshType": "Instance",
+    "fshFile": "modul-bildgebung/ImagingProcedure.fsh",
+    "startLine": 1,
+    "endLine": 14
   },
   {
     "outputFile": "Procedure-mii-exa-test-data-patient-1-prozedur-1.json",
@@ -2406,6 +2486,14 @@
     "fshFile": "modul-prozedur/Prozedur.fsh",
     "startLine": 283,
     "endLine": 295
+  },
+  {
+    "outputFile": "ServiceRequest-mii-exa-test-data-anforderung.json",
+    "fshName": "mii-exa-test-data-anforderung",
+    "fshType": "Instance",
+    "fshFile": "modul-bildgebung/ServiceRequest.fsh",
+    "startLine": 1,
+    "endLine": 17
   },
   {
     "outputFile": "ServiceRequest-mii-exa-test-data-patient-1-labrequest-1.json",

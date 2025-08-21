@@ -4150,6 +4150,975 @@
         ],
         "active": true
       }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Practitioner"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Practitioner/mii-exa-test-data-practitioner-physician-2",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "mii-exa-test-data-practitioner-physician-2",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ]
+        },
+        "name": [
+          {
+            "given": [
+              "Robert"
+            ],
+            "prefix": [
+              "Dr."
+            ],
+            "use": "official",
+            "family": "Koch"
+          }
+        ],
+        "active": true
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "BodyStructure"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/BodyStructure/mii-exa-test-data-koerperstruktur",
+      "resource": {
+        "resourceType": "BodyStructure",
+        "id": "mii-exa-test-data-koerperstruktur",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-koerperstruktur"
+          ]
+        },
+        "locationQualifier": [
+          {
+            "coding": [
+              {
+                "code": "7771000",
+                "system": "http://snomed.info/sct",
+                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+                "display": "Left (qualifier value)"
+              }
+            ]
+          }
+        ],
+        "morphology": {
+          "coding": [
+            {
+              "code": "12747003",
+              "system": "http://snomed.info/sct",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+              "display": "Microcalcification, calcified structure (morphologic abnormality)"
+            }
+          ]
+        },
+        "location": {
+          "coding": [
+            {
+              "code": "76752008",
+              "system": "http://snomed.info/sct",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+              "display": "Breast structure (body structure)"
+            }
+          ]
+        },
+        "patient": {
+          "reference": "Patient/mii-exa-test-data-patient-1"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "CarePlan"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/CarePlan/mii-exa-test-data-behandlungsempfehlung",
+      "resource": {
+        "resourceType": "CarePlan",
+        "id": "mii-exa-test-data-behandlungsempfehlung",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-behandlungsempfehlung"
+          ]
+        },
+        "supportingInfo": [
+          {
+            "reference": "DiagnosticReport/mii-exa-test-data-befundbericht"
+          }
+        ],
+        "status": "completed",
+        "intent": "proposal",
+        "description": "The patient must receive vacuum biopsy",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-1"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Composition"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Composition/mii-exa-test-data-semistrukt-befundbericht",
+      "resource": {
+        "resourceType": "Composition",
+        "id": "mii-exa-test-data-semistrukt-befundbericht",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-semistrukt-befundbericht"
+          ]
+        },
+        "author": [
+          {
+            "reference": "Practitioner/mii-exa-test-data-practitioner-physician-1"
+          }
+        ],
+        "section": [
+          {
+            "author": [
+              {
+                "reference": "Practitioner/mii-exa-test-data-practitioner-physician-2"
+              }
+            ],
+            "entry": [
+              {
+                "reference": "DiagnosticReport/mii-exa-test-data-befundbericht"
+              }
+            ],
+            "section": [
+              {
+                "entry": [
+                  {
+                    "reference": "Observation/mii-exa-test-data-radiologische-beobachtung"
+                  }
+                ]
+              }
+            ],
+            "title": "Left Breast",
+            "code": {
+              "coding": [
+                {
+                  "code": "66110-8",
+                  "system": "http://loinc.org",
+                  "display": "Breast Pathology biopsy report"
+                }
+              ]
+            }
+          }
+        ],
+        "status": "final",
+        "type": {
+          "coding": [
+            {
+              "code": "24604-1",
+              "system": "http://loinc.org",
+              "display": "MG Breast Diagnostics Limited Views"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-1"
+        },
+        "date": "2024-07-19T12:03:30+02:00",
+        "title": "Mammographic Report"
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Device"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Device/mii-exa-test-data-geraet",
+      "resource": {
+        "resourceType": "Device",
+        "id": "mii-exa-test-data-geraet",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-geraet"
+          ]
+        },
+        "deviceName": [
+          {
+            "name": "Magnetom Vida",
+            "type": "model-name"
+          }
+        ],
+        "manufacturer": "Siemens"
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "DiagnosticReport"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/DiagnosticReport/mii-exa-test-data-befundbericht",
+      "resource": {
+        "resourceType": "DiagnosticReport",
+        "id": "mii-exa-test-data-befundbericht",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologischer-befund"
+          ]
+        },
+        "basedOn": [
+          {
+            "reference": "ServiceRequest/mii-exa-test-data-anforderung"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "4201000179104",
+                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+                "display": "Imaging report"
+              }
+            ]
+          }
+        ],
+        "result": [
+          {
+            "reference": "Observation/mii-exa-test-data-radiologische-beobachtung"
+          }
+        ],
+        "imagingStudy": [
+          {
+            "reference": "ImagingStudy/mii-exa-test-data-bildgebungsstudie"
+          }
+        ],
+        "conclusionCode": [
+          {
+            "coding": [
+              {
+                "code": "12747003",
+                "system": "http://snomed.info/sct",
+                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+                "display": "Microcalcification, calcified structure (morphologic abnormality)"
+              }
+            ]
+          }
+        ],
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "type",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "code": "SCI",
+                      "system": "http://terminology.hl7.org/CodeSystem/v2-0936",
+                      "display": "Supporting Clinical Information"
+                    }
+                  ]
+                }
+              },
+              {
+                "url": "reference",
+                "valueReference": {
+                  "reference": "Procedure/mii-exa-test-data-befundungsprozedur"
+                }
+              }
+            ],
+            "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.supportingInfo"
+          }
+        ],
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "4231000179109",
+              "system": "http://snomed.info/sct",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+              "display": "Mammography report"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-1"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-patient-1-encounter-1"
+        },
+        "effectiveDateTime": "2024-07-19T12:03:30+02:00",
+        "issued": "2024-07-19T12:03:30+02:00",
+        "conclusion": "There are suspicious microcalcifications in the upper outer quadrant in the left breast"
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Procedure"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Procedure/mii-exa-test-data-bildgebungsprozedur",
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "mii-exa-test-data-bildgebungsprozedur",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-bildgebungsprozedur"
+          ]
+        },
+        "basedOn": [
+          {
+            "reference": "ServiceRequest/mii-exa-test-data-anforderung"
+          }
+        ],
+        "bodySite": [
+          {
+            "coding": [
+              {
+                "code": "76752008",
+                "system": "http://snomed.info/sct",
+                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+                "display": "Breast structure (body structure)"
+              }
+            ]
+          }
+        ],
+        "note": [
+          {
+            "text": "Durchführung einer Mammographie"
+          }
+        ],
+        "status": "completed",
+        "category": {
+          "coding": [
+            {
+              "code": "363679005",
+              "system": "http://snomed.info/sct",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+              "display": "Imaging (procedure)"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "384151000119104",
+              "system": "http://snomed.info/sct",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+              "display": "Screening mammography of bilateral breasts (procedure)"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-1"
+        },
+        "performedDateTime": "2024-07-19T12:03:30+02:00"
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "ImagingStudy"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/ImagingStudy/mii-exa-test-data-bildgebungsstudie",
+      "resource": {
+        "resourceType": "ImagingStudy",
+        "id": "mii-exa-test-data-bildgebungsstudie",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-bildgebungsstudie"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-bildgebungsgrund",
+            "valueString": "Verdacht auf Mammakarzinom"
+          }
+        ],
+        "modality": [
+          {
+            "code": "MR",
+            "system": "http://dicom.nema.org/resources/ontology/DCM",
+            "display": "Magnetic Resonance"
+          }
+        ],
+        "basedOn": [
+          {
+            "reference": "ServiceRequest/mii-exa-test-data-anforderung"
+          }
+        ],
+        "reasonReference": [
+          {
+            "reference": "Condition/mii-exa-test-data-patient-1-diagnose-1"
+          }
+        ],
+        "series": [
+          {
+            "extension": [
+              {
+                "extension": [
+                  {
+                    "valueQuantity": {
+                      "unit": "tesla",
+                      "value": 3
+                    },
+                    "url": "magneticFieldStrength"
+                  },
+                  {
+                    "url": "scanningSequence",
+                    "valueCodeableConcept": {
+                      "coding": [
+                        {
+                          "code": "SE",
+                          "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-scanning-sequence"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "valueCodeableConcept": {
+                      "coding": [
+                        {
+                          "code": "SP",
+                          "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-scanning-sequence-variant"
+                        },
+                        {
+                          "code": "SK",
+                          "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-scanning-sequence-variant"
+                        }
+                      ]
+                    },
+                    "url": "scanningSequenceVariant"
+                  },
+                  {
+                    "valueQuantity": {
+                      "unit": "milliseconds",
+                      "value": 388
+                    },
+                    "url": "echoTime"
+                  },
+                  {
+                    "valueQuantity": {
+                      "unit": "milliseconds",
+                      "value": 5000
+                    },
+                    "url": "repetitionTime"
+                  },
+                  {
+                    "valueQuantity": {
+                      "unit": "milliseconds",
+                      "value": 900
+                    },
+                    "url": "inversionTime"
+                  },
+                  {
+                    "valueQuantity": {
+                      "unit": "plane angle degree",
+                      "value": 130
+                    },
+                    "url": "flipAngle"
+                  }
+                ],
+                "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mr"
+              },
+              {
+                "extension": [
+                  {
+                    "url": "contrastBolus",
+                    "valueBoolean": true
+                  },
+                  {
+                    "url": "contrastBolusDetails",
+                    "valueReference": {
+                      "reference": "MedicationAdministration/mii-exa-test-data-kontrastmittelgabe"
+                    }
+                  }
+                ],
+                "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-kontrastmittel"
+              }
+            ],
+            "performer": [
+              {
+                "actor": {
+                  "reference": "Device/mii-exa-test-data-geraet"
+                }
+              }
+            ],
+            "instance": [
+              {
+                "extension": [
+                  {
+                    "extension": [
+                      {
+                        "valueQuantity": {
+                          "unit": "millimeter",
+                          "value": 0.260417
+                        },
+                        "url": "pixelSpacingX"
+                      },
+                      {
+                        "valueQuantity": {
+                          "unit": "millimeter",
+                          "value": 0.260417
+                        },
+                        "url": "pixelSpacingY"
+                      },
+                      {
+                        "valueQuantity": {
+                          "unit": "millimeter",
+                          "value": 3
+                        },
+                        "url": "sliceThickness"
+                      },
+                      {
+                        "valueCodeableConcept": {
+                          "coding": [
+                            {
+                              "code": "ORIGINAL",
+                              "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-instance-image-type"
+                            },
+                            {
+                              "code": "SECONDARY",
+                              "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-instance-image-type"
+                            },
+                            {
+                              "code": "OTHER",
+                              "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-instance-image-type"
+                            }
+                          ]
+                        },
+                        "url": "imageType"
+                      }
+                    ],
+                    "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-details"
+                  }
+                ],
+                "uid": "1.2.34.5.6789.1.2.3.45678.9123456789123456789123456789",
+                "sopClass": {
+                  "code": "urn:oid:1.2.840.10008.5.1.4.1.1.4",
+                  "system": "urn:ietf:rfc:3986"
+                },
+                "number": 28
+              }
+            ],
+            "uid": "1.2.34.5.6789.1.2.34.5678912.34567891234567891234",
+            "number": 9,
+            "modality": {
+              "code": "MR",
+              "system": "http://dicom.nema.org/resources/ontology/DCM",
+              "display": "Magnetic Resonance"
+            },
+            "description": "T2 STIR_tra DRB",
+            "numberOfInstances": 28,
+            "bodySite": {
+              "code": "76752008",
+              "system": "http://snomed.info/sct",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+              "display": "Breast structure (body structure)"
+            },
+            "laterality": {
+              "code": "51440002",
+              "system": "http://snomed.info/sct",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+              "display": "Bilateral"
+            },
+            "started": "2024-07-19T12:03:30+02:00"
+          }
+        ],
+        "status": "available",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-1"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-patient-1-encounter-1"
+        },
+        "numberOfSeries": 11,
+        "numberOfInstances": 294,
+        "procedureReference": {
+          "reference": "Procedure/mii-exa-test-data-bildgebungsprozedur"
+        },
+        "description": "Mamma"
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-radiologische-beobachtung",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-radiologische-beobachtung",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologische-beobachtung"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-series-uid",
+            "valueId": "1.2.34.5.6789.1.2.34.5678912.34567891234567891234"
+          },
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-sop-instanz-uid",
+            "valueId": "1.2.34.5.6789.1.2.3.45678.9123456789123456789123456789"
+          },
+          {
+            "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-Observation.bodyStructure",
+            "valueReference": {
+              "reference": "BodyStructure/mii-exa-test-data-koerperstruktur"
+            }
+          }
+        ],
+        "partOf": [
+          {
+            "reference": "Procedure/mii-exa-test-data-befundungsprozedur"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "imaging",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "display": "Imaging"
+              }
+            ]
+          }
+        ],
+        "hasMember": [
+          {
+            "reference": "Observation/mii-exa-test-data-patient-1-labobs-1"
+          }
+        ],
+        "derivedFrom": [
+          {
+            "reference": "ImagingStudy/mii-exa-test-data-bildgebungsstudie"
+          }
+        ],
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "10157-6",
+                  "system": "http://loinc.org",
+                  "display": "History of family member diseases Narrative"
+                }
+              ]
+            },
+            "valueBoolean": true
+          }
+        ],
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "32422-8",
+              "system": "http://loinc.org",
+              "display": "Physical findings of Breast"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-1"
+        },
+        "issued": "2024-07-19T12:03:30+02:00",
+        "valueString": "microcalcifications in the upper outer quadrant in the left breast",
+        "bodySite": {
+          "coding": [
+            {
+              "code": "76752008",
+              "system": "http://snomed.info/sct",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+              "display": "Breast structure (body structure)"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Procedure"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Procedure/mii-exa-test-data-befundungsprozedur",
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "mii-exa-test-data-befundungsprozedur",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologische-befundungsprozedur"
+          ]
+        },
+        "bodySite": [
+          {
+            "coding": [
+              {
+                "code": "76752008",
+                "system": "http://snomed.info/sct",
+                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+                "display": "Breast structure (body structure)"
+              }
+            ]
+          }
+        ],
+        "report": [
+          {
+            "reference": "DiagnosticReport/mii-exa-test-data-befundbericht"
+          }
+        ],
+        "note": [
+          {
+            "text": "Befundung eines Mamma-CTs"
+          }
+        ],
+        "category": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "165197003",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+              "display": "Diagnostic assessment (procedure)"
+            }
+          ]
+        },
+        "status": "completed",
+        "code": {
+          "coding": [
+            {
+              "code": "4261000179100",
+              "system": "http://snomed.info/sct",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+              "display": "Computed tomography imaging report (record artifact)"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-1"
+        },
+        "performedDateTime": "2024-07-19T12:03:30+02:00"
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "ServiceRequest"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/ServiceRequest/mii-exa-test-data-anforderung",
+      "resource": {
+        "resourceType": "ServiceRequest",
+        "id": "mii-exa-test-data-anforderung",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-anforderung-bildgebung"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "363679005",
+                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+                "display": "Imaging (procedure)"
+              }
+            ]
+          }
+        ],
+        "reasonCode": [
+          {
+            "coding": [
+              {
+                "code": "268547008",
+                "system": "http://snomed.info/sct",
+                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+                "display": "Screening for malignant neoplasm of breast (procedure)"
+              }
+            ]
+          }
+        ],
+        "reasonReference": [
+          {
+            "reference": "Condition/mii-exa-test-data-patient-1-diagnose-1"
+          }
+        ],
+        "supportingInfo": [
+          {
+            "reference": "ImagingStudy/mii-exa-test-data-bildgebungsstudie"
+          }
+        ],
+        "status": "completed",
+        "intent": "order",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-1"
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "71651007",
+              "system": "http://snomed.info/sct",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+              "display": "Mammography (procedure)"
+            }
+          ]
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-patient-1-encounter-1"
+        },
+        "authoredOn": "2024-07-19T12:03:30+02:00",
+        "requester": {
+          "reference": "Organization/mii-exa-test-data-organization-biobank-charite"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "MedicationAdministration"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/MedicationAdministration/mii-exa-test-data-kontrastmittelgabe",
+      "resource": {
+        "resourceType": "MedicationAdministration",
+        "id": "mii-exa-test-data-kontrastmittelgabe",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-kontrastmittelgabe"
+          ]
+        },
+        "partOf": [
+          {
+            "reference": "Procedure/mii-exa-test-data-bildgebungsprozedur"
+          }
+        ],
+        "effectivePeriod": {
+          "end": "2024-07-19T12:22:45+02:00",
+          "start": "2024-07-19T12:21:45+02:00"
+        },
+        "performer": [
+          {
+            "actor": {
+              "reference": "Practitioner/mii-exa-test-data-practitioner-physician-1"
+            }
+          }
+        ],
+        "reasonReference": [
+          {
+            "reference": "Condition/mii-exa-test-data-patient-1-diagnose-1"
+          }
+        ],
+        "note": [
+          {
+            "text": "Kontrastmittelgabe"
+          }
+        ],
+        "dosage": {
+          "dose": {
+            "system": "http://unitsofmeasure.org",
+            "value": 111,
+            "unit": "milliliter",
+            "code": "mm"
+          }
+        },
+        "status": "completed",
+        "category": {
+          "coding": [
+            {
+              "code": "inpatient",
+              "system": "http://terminology.hl7.org/CodeSystem/medication-admin-category",
+              "display": "Inpatient"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-1"
+        },
+        "medicationReference": {
+          "reference": "Medication/mii-exa-test-data-medication-dalbavancin"
+        },
+        "request": {
+          "reference": "MedicationRequest/mii-exa-test-data-patient-1-medrequest-1"
+        }
+      }
     }
   ],
   "type": "transaction",

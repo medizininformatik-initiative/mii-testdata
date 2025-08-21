@@ -121,6 +121,12 @@
       "id": "de_medizininformatikinitiative_kerndatensatz_studie"
     },
     {
+      "packageId": "de.medizininformatikinitiative.kerndatensatz.bildgebung",
+      "version": "2025.0.x",
+      "uri": "http://fhir.org/packages/de.medizininformatikinitiative.kerndatensatz.bildgebung/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.bildgebung",
+      "id": "de_medizininformatikinitiative_kerndatensatz_bildgebung"
+    },
+    {
       "packageId": "de.basisprofil.r4",
       "version": "1.5.x",
       "uri": "http://fhir.org/packages/de.basisprofil.r4/ImplementationGuide/de.basisprofil.r4",
@@ -233,6 +239,14 @@
       },
       {
         "reference": {
+          "reference": "Composition/mii-exa-test-data-semistrukt-befundbericht"
+        },
+        "name": "Mammographic Report",
+        "description": "Composition: semistrukturierter Befundbericht",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "List/mii-exa-test-data-patient-1-list-stat-aufenthalt"
         },
         "name": "Medikationsliste während stationärem Aufenthalt",
@@ -301,6 +315,54 @@
         },
         "name": "Medikationsliste während stationärem Aufenthalt",
         "description": "List: Medikationsliste während stationärem Aufenthalt für Patient 9",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "ServiceRequest/mii-exa-test-data-anforderung"
+        },
+        "name": "mii-exa-test-data-anforderung",
+        "description": "ServiceRequest: Anforderung MR",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "DiagnosticReport/mii-exa-test-data-befundbericht"
+        },
+        "name": "mii-exa-test-data-befundbericht",
+        "description": "DiagnosticReport: Befundbericht",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Procedure/mii-exa-test-data-befundungsprozedur"
+        },
+        "name": "mii-exa-test-data-befundungsprozedur",
+        "description": "Procedure: Befundungsprozedur",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "CarePlan/mii-exa-test-data-behandlungsempfehlung"
+        },
+        "name": "mii-exa-test-data-behandlungsempfehlung",
+        "description": "CarePlan: Behandlungsempfehlung",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Procedure/mii-exa-test-data-bildgebungsprozedur"
+        },
+        "name": "mii-exa-test-data-bildgebungsprozedur",
+        "description": "Procedure: Bildgebungsprozedur",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "ImagingStudy/mii-exa-test-data-bildgebungsstudie"
+        },
+        "name": "mii-exa-test-data-bildgebungsstudie",
+        "description": "ImagingStudy: MagneticResonance",
         "exampleBoolean": true
       },
       {
@@ -413,6 +475,30 @@
         },
         "name": "mii-exa-test-data-devicemetric-roche-cobas-c303-1",
         "description": "DeviceMetric: Roche cobas c 303",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Device/mii-exa-test-data-geraet"
+        },
+        "name": "mii-exa-test-data-geraet",
+        "description": "Device: MRT-Gerät",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "BodyStructure/mii-exa-test-data-koerperstruktur"
+        },
+        "name": "mii-exa-test-data-koerperstruktur",
+        "description": "BodyStructure: Körperstruktur",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "MedicationAdministration/mii-exa-test-data-kontrastmittelgabe"
+        },
+        "name": "mii-exa-test-data-kontrastmittelgabe",
+        "description": "MedicationAdministration: kontrastmittelgabe",
         "exampleBoolean": true
       },
       {
@@ -2836,6 +2922,14 @@
         },
         "name": "mii-exa-test-data-practitioner-role-physician-1",
         "description": "PractitionerRole: Physician",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-radiologische-beobachtung"
+        },
+        "name": "mii-exa-test-data-radiologische-beobachtung",
+        "description": "Observation: Radiologische Beobachtung",
         "exampleBoolean": true
       }
     ],
