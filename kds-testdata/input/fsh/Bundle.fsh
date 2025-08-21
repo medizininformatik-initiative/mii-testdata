@@ -76,6 +76,7 @@ Description: "Bundle: Patient-1"
 * insert AddBundleEntry(mii-exa-test-data-patient-1-labobs-7, Observation)
 * insert AddBundleEntry(mii-exa-test-data-practitioner-role-physician-1, PractitionerRole)
 * insert AddBundleEntry(mii-exa-test-data-practitioner-physician-1, Practitioner)
+* insert AddBundleEntry(mii-exa-test-data-practitioner-physician-2, Practitioner)
 * insert AddBundleEntry(mii-exa-test-data-koerperstruktur, BodyStructure)
 * insert AddBundleEntry(mii-exa-test-data-behandlungsempfehlung, CarePlan)
 * insert AddBundleEntry(mii-exa-test-data-semistrukt-befundbericht, Composition)
