@@ -87,6 +87,19 @@ jobs:
       run: echo KDS_VERSION="$(yq eval '.' sushi-config.yaml -o json | jq -r '.version')" >> "$GITHUB_OUTPUT"
       working-directory: ./kds-testdata
 
+    - name: Fetch additional ICU test bundle
+      continue-on-error: true
+      run: |
+        echo "Attempting to fetch ICU test bundle..."
+        if curl -fsSL https://raw.githubusercontent.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/example_data/fsh-generated/resources/Bundle-mii-icu-test-data-bundle-ect-dauer-extrakorporaler-gasaustausch.json \
+          -o ./kds-testdata/fsh-generated/resources/Bundle-mii-icu-test-data-bundle-ect-dauer-extrakorporaler-gasaustausch.json; then
+          echo "✅ ICU test bundle fetched successfully"
+        else
+          echo "⚠️  Failed to fetch ICU test bundle - continuing without it"
+          exit 0
+        fi
+      shell: bash
+
     - name: Upload generated FHIR resources as artifact
       id: upload-artifact
       uses: actions/upload-artifact@v4
@@ -104,7 +117,7 @@ jobs:
         output_file="./kds-testdata/ndjson/testdata-bundles-${timestamp}.ndjson"
         > "$output_file"
 
-        for file in ./kds-testdata/fsh-generated/resources/Bundle-mii-exa-test-data-bundle-pat*.json; do
+        for file in ./kds-testdata/fsh-generated/resources/Bundle-mii-exa-test-data-bundle-pat*.json ./kds-testdata/fsh-generated/resources/Bundle-mii-icu-test-data-bundle-*.json; do
           if [ -f "$file" ]; then
             jq -c '.' "$file" >> "$output_file"
           fi
