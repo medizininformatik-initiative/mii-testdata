@@ -41,6 +41,7 @@ dependencies:
   de.medizininformatikinitiative.kerndatensatz.patho: 2025.0.x
   de.medizininformatikinitiative.kerndatensatz.studie: 2025.0.x
   de.medizininformatikinitiative.kerndatensatz.bildgebung: 2025.0.x
+  de.medizininformatikinitiative.kerndatensatz.onkologie: 2025.0.x
   hl7.fhir.extensions.r5: 4.0.1
   de.basisprofil.r4: 1.5.x
   de.einwilligungsmanagement: 1.0.x
