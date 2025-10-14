@@ -775,3 +775,17 @@ Description: "Bundle: Patient-10"
 // * insert AddBundleEntryConditional(mii-exa-test-data-device-roche-cobas-c303, Device, identifier=https://www.charite.de/fhir/sid/Laboratory-device-identifier%7CRocheCobasC303)
 // * insert AddBundleEntryConditional(mii-exa-test-data-device-roche-cobas-e402, Device, identifier=https://www.charite.de/fhir/sid/Laboratory-device-identifier%7CRocheCobasE402)
 // * insert AddBundleEntryConditional(mii-exa-test-data-devicemetric-roche-cobas-c303-1, DeviceMetric, identifier=https://www.charite.de/fhir/sid/Laboratory-device-identifier%7CRocheCobasC303-160192)
+
+Instance: mii-exa-test-data-bundle-onko-mamma
+InstanceOf: Bundle
+Usage: #example
+Description: "Bundle: Onkologie Mamma Beispiel"
+* insert TestDataLabel
+* type = #transaction
+* timestamp = "2025-06-18T14:00:00+02:00"
+
+* insert AddBundleEntry(mii-exa-test-data-patient-onko-mamma, Patient)
+* insert AddBundleEntry(mii-exa-test-data-onko-mamma-primaerdiagnose, Condition)
+* insert AddBundleEntry(mii-exa-test-data-onko-mamma-fall, Encounter)
+* insert AddBundleEntry(mii-exa-test-data-onko-mamma-specimen, Specimen)
+* insert AddBundleEntry(mii-exa-test-data-onko-mamma-lymphknotenuntersuchung, Observation)

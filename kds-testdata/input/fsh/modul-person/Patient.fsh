@@ -351,3 +351,11 @@ Description: "Patient: Patient-10"
 * address[Strassenanschrift].city = "Frankfurt am Main"
 * address[Strassenanschrift].postalCode = "60311"
 * address[Strassenanschrift].country = "DE"
+
+//Patient 11
+Instance: mii-exa-test-data-patient-onko-mamma
+InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient
+* name[name].use = #official
+* name[name].family = "MammaCA"
+* name[name].given[0] = "Martha"
+* gender = #female

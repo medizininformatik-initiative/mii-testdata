@@ -1,0 +1,19 @@
+{
+  "resourceType": "Patient",
+  "id": "mii-exa-test-data-patient-onko-mamma",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient"
+    ]
+  },
+  "name": [
+    {
+      "given": [
+        "Martha"
+      ],
+      "use": "official",
+      "family": "MammaCA"
+    }
+  ],
+  "gender": "female"
+}

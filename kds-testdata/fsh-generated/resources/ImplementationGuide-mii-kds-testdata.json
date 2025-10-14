@@ -127,6 +127,12 @@
       "id": "de_medizininformatikinitiative_kerndatensatz_bildgebung"
     },
     {
+      "packageId": "de.medizininformatikinitiative.kerndatensatz.onkologie",
+      "version": "2025.0.x",
+      "uri": "http://fhir.org/packages/de.medizininformatikinitiative.kerndatensatz.onkologie/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.onkologie",
+      "id": "de_medizininformatikinitiative_kerndatensatz_onkologie"
+    },
+    {
       "packageId": "de.basisprofil.r4",
       "version": "1.5.x",
       "uri": "http://fhir.org/packages/de.basisprofil.r4/ImplementationGuide/de.basisprofil.r4",
@@ -327,14 +333,6 @@
       },
       {
         "reference": {
-          "reference": "DiagnosticReport/mii-exa-test-data-befundbericht"
-        },
-        "name": "mii-exa-test-data-befundbericht",
-        "description": "DiagnosticReport: Befundbericht",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
           "reference": "Procedure/mii-exa-test-data-befundungsprozedur"
         },
         "name": "mii-exa-test-data-befundungsprozedur",
@@ -367,10 +365,10 @@
       },
       {
         "reference": {
-          "reference": "Bundle/mii-exa-test-data-bundle-pat-1"
+          "reference": "Bundle/mii-exa-test-data-bundle-onko-mamma"
         },
-        "name": "mii-exa-test-data-bundle-pat-1",
-        "description": "Bundle: Patient-1",
+        "name": "mii-exa-test-data-bundle-onko-mamma",
+        "description": "Bundle: Onkologie Mamma Beispiel",
         "exampleBoolean": true
       },
       {
@@ -723,6 +721,54 @@
         },
         "name": "mii-exa-test-data-molgen-device-sequencer",
         "description": "Device: Sequencer used for BRAF mutation analysis",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Encounter/mii-exa-test-data-onko-mamma-fall"
+        },
+        "name": "mii-exa-test-data-onko-mamma-fall",
+        "description": "Encounter: Einrichtungskontakt Patient 1",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "DiagnosticReport/mii-exa-test-data-onko-mamma-histologiebefund"
+        },
+        "name": "mii-exa-test-data-onko-mamma-histologiebefund",
+        "description": "DiagnosticReport: Histologiebefund für Onko Mamma PatientIn",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-onko-mamma-lymphknotenuntersuchung"
+        },
+        "name": "mii-exa-test-data-onko-mamma-lymphknotenuntersuchung",
+        "description": "Observation: Lymphknotenuntersuchung für Onko Mamma PatientIn",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Condition/mii-exa-test-data-onko-mamma-primaerdiagnose"
+        },
+        "name": "mii-exa-test-data-onko-mamma-primaerdiagnose",
+        "description": "Condition: Invasives duktales Karzinom o.n.A. für Patient 1",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Specimen/mii-exa-test-data-onko-mamma-specimen"
+        },
+        "name": "mii-exa-test-data-onko-mamma-specimen",
+        "description": "Specimen: Bioprobe für Onko Mamma PatientIn",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "CarePlan/mii-exa-test-data-onko-mamma-tumorkonferenz"
+        },
+        "name": "mii-exa-test-data-onko-mamma-tumorkonferenz",
+        "description": "DiagnosticReport: Histologiebefund für Onko Mamma PatientIn",
         "exampleBoolean": true
       },
       {
@@ -2902,6 +2948,13 @@
       },
       {
         "reference": {
+          "reference": "Patient/mii-exa-test-data-patient-onko-mamma"
+        },
+        "name": "mii-exa-test-data-patient-onko-mamma",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Practitioner/mii-exa-test-data-practitioner-physician-1"
         },
         "name": "mii-exa-test-data-practitioner-physician-1",
@@ -2922,14 +2975,6 @@
         },
         "name": "mii-exa-test-data-practitioner-role-physician-1",
         "description": "PractitionerRole: Physician",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "Observation/mii-exa-test-data-radiologische-beobachtung"
-        },
-        "name": "mii-exa-test-data-radiologische-beobachtung",
-        "description": "Observation: Radiologische Beobachtung",
         "exampleBoolean": true
       }
     ],
