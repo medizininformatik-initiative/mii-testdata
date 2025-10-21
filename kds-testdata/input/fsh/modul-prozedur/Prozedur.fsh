@@ -35,6 +35,7 @@ Usage: #example
 Description: "Procedure: Thorakotomie mit Lobektomie des rechten Oberlappens für Patient-2"
 * insert TestDataLabel
 * insert AddProzedur(completed, 387713003, 726428009, 2024, 5-322.d1, mii-exa-test-data-patient-2, 39607008, Lobektomie des rechten Oberlappens)
+* code.coding[ops].extension[http://fhir.de/StructureDefinition/seitenlokalisation].valueCoding = $seitenlokalisation#R
 * performedPeriod.start = "2024-03-05T08:00:00+01:00"
 * performedPeriod.end = "2024-03-05T12:30:00+01:00"
 * extension[durchfuehrungsabsicht].url = "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Durchfuehrungsabsicht"
