@@ -641,6 +641,15 @@
               "version": "http://snomed.info/sct/900000000000207008/version/20230731"
             },
             {
+              "extension": [
+                {
+                  "url": "http://fhir.de/StructureDefinition/seitenlokalisation",
+                  "valueCoding": {
+                    "code": "R",
+                    "system": "https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_ICD_SEITENLOKALISATION"
+                  }
+                }
+              ],
               "system": "http://fhir.de/CodeSystem/bfarm/ops",
               "code": "5-322.d1",
               "version": "2024"
