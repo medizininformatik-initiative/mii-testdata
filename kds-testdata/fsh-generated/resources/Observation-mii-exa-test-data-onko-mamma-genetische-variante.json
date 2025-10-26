@@ -45,14 +45,6 @@
     {
       "coding": [
         {
-          "code": "laboratory",
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category"
-        }
-      ]
-    },
-    {
-      "coding": [
-        {
           "system": "http://terminology.hl7.org/CodeSystem/observation-category",
           "code": "laboratory"
         }

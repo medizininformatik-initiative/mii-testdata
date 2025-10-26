@@ -1613,7 +1613,7 @@
     "fshType": "Instance",
     "fshFile": "modul-onkologie/Grading.fsh",
     "startLine": 1,
-    "endLine": 11
+    "endLine": 13
   },
   {
     "outputFile": "Observation-mii-exa-test-data-onko-mamma-lymphknotenuntersuchung.json",
@@ -1637,7 +1637,7 @@
     "fshType": "Instance",
     "fshFile": "modul-onkologie/Tod.fsh",
     "startLine": 1,
-    "endLine": 12
+    "endLine": 13
   },
   {
     "outputFile": "Observation-mii-exa-test-data-onko-mamma-verlaufshistologie.json",

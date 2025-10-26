@@ -10,3 +10,4 @@ Description: "Observation: Tod für Onko Mamma PatientIn"
 * interpretation.coding = $mii-cs-onko-tod#N "Nein, die Person ist nicht an einer Tumorerkrankung oder Folge einer Tumorerkrankung (einschließlich Behandlungskomplikation) verstorben."
 * code.coding = $sct#184305005
 * valueCodeableConcept = $icd-10-gm#C50.3 "Bösartige Neubildung: Unterer innerer Quadrant der Brustdrüse"
+* valueCodeableConcept.coding.version = "2022"

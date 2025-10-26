@@ -32,5 +32,14 @@
   "specimen": {
     "reference": "Specimen/mii-exa-test-data-onko-mamma-specimen"
   },
-  "status": "final"
+  "status": "final",
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "code": "8500/3",
+        "system": "http://terminology.hl7.org/CodeSystem/icd-o-3",
+        "display": "Invasives duktales Karzinom o.n.A."
+      }
+    ]
+  }
 }

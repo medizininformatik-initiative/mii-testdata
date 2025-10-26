@@ -10,4 +10,4 @@ Description: "Observation: Genetische Variante für Onko Mamma PatientIn"
 * effectiveDateTime = "2022-02-08"
 * interpretation.coding = $mii-cs-onko-gv-auspraegung#M
 * note.text = "BRAF1 Class II Mutation"
-* category = $observation-category#laboratory
+* category[labCategory] = $observation-category#laboratory

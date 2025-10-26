@@ -1,4 +1,4 @@
-RuleSet: AddTNM(coding, version, prefix, date, subject, diagnosis)
+RuleSet: AddTNM(coding, version, date, subject, diagnosis)
 * subject = Reference({subject})
 * focus = Reference({diagnosis})
 * effectiveDateTime = "{date}"
