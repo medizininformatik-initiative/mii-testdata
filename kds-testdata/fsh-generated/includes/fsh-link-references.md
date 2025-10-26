@@ -71,11 +71,16 @@
 [mii-exa-test-data-medication-topiramat]: Medication-mii-exa-test-data-medication-topiramat.html
 [mii-exa-test-data-molgen-device-sequencer]: Device-mii-exa-test-data-molgen-device-sequencer.html
 [mii-exa-test-data-onko-mamma-fall]: Encounter-mii-exa-test-data-onko-mamma-fall.html
+[mii-exa-test-data-onko-mamma-genetische-variante]: Observation-mii-exa-test-data-onko-mamma-genetische-variante.html
+[mii-exa-test-data-onko-mamma-grading]: Observation-mii-exa-test-data-onko-mamma-grading.html
 [mii-exa-test-data-onko-mamma-histologiebefund]: DiagnosticReport-mii-exa-test-data-onko-mamma-histologiebefund.html
 [mii-exa-test-data-onko-mamma-lymphknotenuntersuchung]: Observation-mii-exa-test-data-onko-mamma-lymphknotenuntersuchung.html
 [mii-exa-test-data-onko-mamma-primaerdiagnose]: Condition-mii-exa-test-data-onko-mamma-primaerdiagnose.html
 [mii-exa-test-data-onko-mamma-specimen]: Specimen-mii-exa-test-data-onko-mamma-specimen.html
+[mii-exa-test-data-onko-mamma-studienteilnahme]: Observation-mii-exa-test-data-onko-mamma-studienteilnahme.html
+[mii-exa-test-data-onko-mamma-tod]: Observation-mii-exa-test-data-onko-mamma-tod.html
 [mii-exa-test-data-onko-mamma-tumorkonferenz]: CarePlan-mii-exa-test-data-onko-mamma-tumorkonferenz.html
+[mii-exa-test-data-onko-mamma-verlaufshistologie]: Observation-mii-exa-test-data-onko-mamma-verlaufshistologie.html
 [mii-exa-test-data-organization-biobank-charite]: Organization-mii-exa-test-data-organization-biobank-charite.html
 [mii-exa-test-data-organization-charite]: Organization-mii-exa-test-data-organization-charite.html
 [mii-exa-test-data-organization-labor-berlin]: Organization-mii-exa-test-data-organization-labor-berlin.html

@@ -13,7 +13,7 @@
     "fshType": "Instance",
     "fshFile": "Bundle.fsh",
     "startLine": 779,
-    "endLine": 791
+    "endLine": 795
   },
   {
     "outputFile": "Bundle-mii-exa-test-data-bundle-pat-10.json",
@@ -101,7 +101,7 @@
     "fshType": "Instance",
     "fshFile": "modul-onkologie/Tumorkonferenz.fsh",
     "startLine": 1,
-    "endLine": 10
+    "endLine": 13
   },
   {
     "outputFile": "Composition-mii-exa-test-data-semistrukt-befundbericht.json",
@@ -1600,12 +1600,52 @@
     "endLine": 619
   },
   {
+    "outputFile": "Observation-mii-exa-test-data-onko-mamma-genetische-variante.json",
+    "fshName": "mii-exa-test-data-onko-mamma-genetische-variante",
+    "fshType": "Instance",
+    "fshFile": "modul-onkologie/Genetischevariante.fsh",
+    "startLine": 1,
+    "endLine": 13
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-onko-mamma-grading.json",
+    "fshName": "mii-exa-test-data-onko-mamma-grading",
+    "fshType": "Instance",
+    "fshFile": "modul-onkologie/Grading.fsh",
+    "startLine": 1,
+    "endLine": 11
+  },
+  {
     "outputFile": "Observation-mii-exa-test-data-onko-mamma-lymphknotenuntersuchung.json",
     "fshName": "mii-exa-test-data-onko-mamma-lymphknotenuntersuchung",
     "fshType": "Instance",
     "fshFile": "modul-onkologie/Lymphknotenuntersuchung.fsh",
     "startLine": 1,
     "endLine": 11
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-onko-mamma-studienteilnahme.json",
+    "fshName": "mii-exa-test-data-onko-mamma-studienteilnahme",
+    "fshType": "Instance",
+    "fshFile": "modul-onkologie/Studienteilnahme.fsh",
+    "startLine": 1,
+    "endLine": 10
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-onko-mamma-tod.json",
+    "fshName": "mii-exa-test-data-onko-mamma-tod",
+    "fshType": "Instance",
+    "fshFile": "modul-onkologie/Tod.fsh",
+    "startLine": 1,
+    "endLine": 12
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-onko-mamma-verlaufshistologie.json",
+    "fshName": "mii-exa-test-data-onko-mamma-verlaufshistologie",
+    "fshType": "Instance",
+    "fshFile": "modul-onkologie/Verlaufshistologie.fsh",
+    "startLine": 1,
+    "endLine": 12
   },
   {
     "outputFile": "Observation-mii-exa-test-data-patient-1-labobs-1.json",

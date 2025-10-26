@@ -91,3 +91,7 @@ Alias: $mii-cs-onko-therapie-typ = https://www.medizininformatik-initiative.de/f
 Alias: $request-status = http://hl7.org/fhir/request-status
 Alias: $request-intent = http://hl7.org/fhir/request-intent
 Alias: $care-plan-activity-status = http://hl7.org/fhir/care-plan-activity-status
+Alias: $tnm-version = https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-tnm-version
+Alias: $mii-cs-onko-studienteilnahme = https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-studienteilnahme
+Alias: $mii-cs-onko-gv-auspraegung = https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-genetische-variante-auspraegung
+Alias: $mii-cs-onko-tod = https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-tod

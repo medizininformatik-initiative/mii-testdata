@@ -733,6 +733,22 @@
       },
       {
         "reference": {
+          "reference": "Observation/mii-exa-test-data-onko-mamma-genetische-variante"
+        },
+        "name": "mii-exa-test-data-onko-mamma-genetische-variante",
+        "description": "Observation: Genetische Variante für Onko Mamma PatientIn",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-onko-mamma-grading"
+        },
+        "name": "mii-exa-test-data-onko-mamma-grading",
+        "description": "Observation: Grading für Onko Mamma PatientIn",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "DiagnosticReport/mii-exa-test-data-onko-mamma-histologiebefund"
         },
         "name": "mii-exa-test-data-onko-mamma-histologiebefund",
@@ -765,10 +781,34 @@
       },
       {
         "reference": {
+          "reference": "Observation/mii-exa-test-data-onko-mamma-studienteilnahme"
+        },
+        "name": "mii-exa-test-data-onko-mamma-studienteilnahme",
+        "description": "Observation: Studienteilnahme für Onko Mamma PatientIn",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-onko-mamma-tod"
+        },
+        "name": "mii-exa-test-data-onko-mamma-tod",
+        "description": "Observation: Tod für Onko Mamma PatientIn",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "CarePlan/mii-exa-test-data-onko-mamma-tumorkonferenz"
         },
         "name": "mii-exa-test-data-onko-mamma-tumorkonferenz",
         "description": "DiagnosticReport: Histologiebefund für Onko Mamma PatientIn",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-onko-mamma-verlaufshistologie"
+        },
+        "name": "mii-exa-test-data-onko-mamma-verlaufshistologie",
+        "description": "Observation: Verlaufshistologie für Onko Mamma PatientIn",
         "exampleBoolean": true
       },
       {
