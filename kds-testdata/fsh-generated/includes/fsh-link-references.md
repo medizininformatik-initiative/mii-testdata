@@ -28,6 +28,7 @@
 [mii-exa-test-data-bildgebungsstudie]: ImagingStudy-mii-exa-test-data-bildgebungsstudie.html
 [mii-exa-test-data-bundle-pat-1]: Bundle-mii-exa-test-data-bundle-pat-1.html
 [mii-exa-test-data-bundle-pat-10]: Bundle-mii-exa-test-data-bundle-pat-10.html
+[mii-exa-test-data-bundle-pat-11]: Bundle-mii-exa-test-data-bundle-pat-11.html
 [mii-exa-test-data-bundle-pat-2]: Bundle-mii-exa-test-data-bundle-pat-2.html
 [mii-exa-test-data-bundle-pat-3]: Bundle-mii-exa-test-data-bundle-pat-3.html
 [mii-exa-test-data-bundle-pat-4]: Bundle-mii-exa-test-data-bundle-pat-4.html
@@ -124,6 +125,7 @@
 [mii-exa-test-data-patient-10-specimen-1]: Specimen-mii-exa-test-data-patient-10-specimen-1.html
 [mii-exa-test-data-patient-10-specimen-2]: Specimen-mii-exa-test-data-patient-10-specimen-2.html
 [mii-exa-test-data-patient-10-vitalstatus-1]: Observation-mii-exa-test-data-patient-10-vitalstatus-1.html
+[mii-exa-test-data-patient-11]: Patient-mii-exa-test-data-patient-11.html
 [mii-exa-test-data-patient-2]: Patient-mii-exa-test-data-patient-2.html
 [mii-exa-test-data-patient-2-consent-1]: Consent-mii-exa-test-data-patient-2-consent-1.html
 [mii-exa-test-data-patient-2-diagnose-1]: Condition-mii-exa-test-data-patient-2-diagnose-1.html

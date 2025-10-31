@@ -383,6 +383,14 @@
       },
       {
         "reference": {
+          "reference": "Bundle/mii-exa-test-data-bundle-pat-11"
+        },
+        "name": "mii-exa-test-data-bundle-pat-11",
+        "description": "Bundle: Patient-11",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Bundle/mii-exa-test-data-bundle-pat-2"
         },
         "name": "mii-exa-test-data-bundle-pat-2",
@@ -1146,6 +1154,14 @@
         },
         "name": "mii-exa-test-data-patient-10-vitalstatus-1",
         "description": "Observation: Vitalstatus für Patient-10",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Patient/mii-exa-test-data-patient-11"
+        },
+        "name": "mii-exa-test-data-patient-11",
+        "description": "Patient: Patient-11",
         "exampleBoolean": true
       },
       {

@@ -852,6 +852,7 @@
               },
               "display": "RHC-06-210b"
             },
+            "status": "active",
             "physicalType": {
               "coding": [
                 {
@@ -869,6 +870,7 @@
               },
               "display": "RHC-06-210b-02"
             },
+            "status": "active",
             "physicalType": {
               "coding": [
                 {
@@ -886,6 +888,7 @@
               },
               "display": "RHC-06"
             },
+            "status": "active",
             "physicalType": {
               "coding": [
                 {

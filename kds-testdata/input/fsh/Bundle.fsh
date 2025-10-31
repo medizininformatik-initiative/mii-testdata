@@ -775,3 +775,17 @@ Description: "Bundle: Patient-10"
 // * insert AddBundleEntryConditional(mii-exa-test-data-device-roche-cobas-c303, Device, identifier=https://www.charite.de/fhir/sid/Laboratory-device-identifier%7CRocheCobasC303)
 // * insert AddBundleEntryConditional(mii-exa-test-data-device-roche-cobas-e402, Device, identifier=https://www.charite.de/fhir/sid/Laboratory-device-identifier%7CRocheCobasE402)
 // * insert AddBundleEntryConditional(mii-exa-test-data-devicemetric-roche-cobas-c303-1, DeviceMetric, identifier=https://www.charite.de/fhir/sid/Laboratory-device-identifier%7CRocheCobasC303-160192)
+
+// =============================================================================
+// Patient-11
+// =============================================================================
+Instance: mii-exa-test-data-bundle-pat-11
+InstanceOf: Bundle
+Usage: #example
+Description: "Bundle: Patient-11"
+* insert TestDataLabel
+* type = #transaction
+* timestamp = "2025-10-31T14:17:00+01:00"
+
+// Basis-Module
+* insert AddBundleEntry(mii-exa-test-data-patient-11, Patient)
