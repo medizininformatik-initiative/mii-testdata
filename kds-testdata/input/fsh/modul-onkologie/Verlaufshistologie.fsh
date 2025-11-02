@@ -8,5 +8,5 @@ Description: "Observation: Verlaufshistologie für Onko Mamma PatientIn"
 * specimen = Reference(mii-exa-test-data-onko-mamma-specimen)
 * code.coding = $loinc#59847-4
 * status = $observation-status#final
-* bodysite.coding[icd-o-3] = $icd-o-3#C50.4 "Oberer äußerer Quadrant der Brust"
-* value[x] = $icd-o-3#8500/3 "Invasives duktales Karzinom o.n.A."
+* bodySite.coding[icd-o-3] = $icd-o-3#C50.4 "Oberer äußerer Quadrant der Brust"
+* valueCodeableConcept = $icd-o-3#8500/3 "Invasives duktales Karzinom o.n.A."

@@ -789,6 +789,14 @@
       },
       {
         "reference": {
+          "reference": "Observation/mii-exa-test-data-onko-mamma-tnm-klassifikation"
+        },
+        "name": "mii-exa-test-data-onko-mamma-tnm-klassifikation",
+        "description": "Observation: TNM Klassifikation für Onko Mamma PatientIn",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Observation/mii-exa-test-data-onko-mamma-tod"
         },
         "name": "mii-exa-test-data-onko-mamma-tod",
@@ -801,6 +809,14 @@
         },
         "name": "mii-exa-test-data-onko-mamma-tumorkonferenz",
         "description": "DiagnosticReport: Histologiebefund für Onko Mamma PatientIn",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-onko-mamma-verlauf"
+        },
+        "name": "mii-exa-test-data-onko-mamma-verlauf",
+        "description": "Observation: Verlauf für Onko Mamma PatientIn",
         "exampleBoolean": true
       },
       {

@@ -1,6 +1,6 @@
 {
   "resourceType": "Observation",
-  "id": "mii-exa-test-data-onko-mamma-verlaufshistologie",
+  "id": "mii-exa-test-data-onko-mamma-tnm-klassifikation",
   "meta": {
     "security": [
       {
@@ -10,7 +10,7 @@
       }
     ],
     "profile": [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-histologie-icdo3"
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-tnm-klassifikation"
     ]
   },
   "focus": [
@@ -21,17 +21,10 @@
   "code": {
     "coding": [
       {
-        "system": "http://loinc.org",
-        "code": "59847-4"
-      }
-    ]
-  },
-  "bodySite": {
-    "coding": [
-      {
-        "system": "http://terminology.hl7.org/CodeSystem/icd-o-3",
-        "code": "C50.4",
-        "display": "Oberer äußerer Quadrant der Brust"
+        "code": "399537006",
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+        "display": "Clinical TNM stage grouping"
       }
     ]
   },
@@ -45,9 +38,9 @@
   "valueCodeableConcept": {
     "coding": [
       {
-        "code": "8500/3",
-        "system": "http://terminology.hl7.org/CodeSystem/icd-o-3",
-        "display": "Invasives duktales Karzinom o.n.A."
+        "code": "0",
+        "system": "https://www.uicc.org/resources/tnm",
+        "display": "Stadium 0"
       }
     ]
   }

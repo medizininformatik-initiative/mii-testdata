@@ -793,3 +793,4 @@ Description: "Bundle: Onkologie Mamma Beispiel"
 * insert AddBundleEntry(mii-exa-test-data-onko-mamma-histologiebefund, DiagnosticReport)
 * insert AddBundleEntry(mii-exa-test-data-onko-mamma-tod, Observation)
 * insert AddBundleEntry(mii-exa-test-data-onko-mamma-studienteilnahme, Observation)
+* insert AddBundleEntry(mii-exa-test-data-onko-mamma-verlauf, Observation)

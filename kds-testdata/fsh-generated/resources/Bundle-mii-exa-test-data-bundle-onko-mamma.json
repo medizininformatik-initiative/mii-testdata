@@ -510,6 +510,123 @@
           ]
         }
       }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-onko-mamma-verlauf",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-onko-mamma-verlauf",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-verlauf"
+          ]
+        },
+        "focus": [
+          {
+            "reference": "Condition/mii-exa-test-data-onko-mamma-primaerdiagnose"
+          }
+        ],
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "445200009",
+                  "system": "http://snomed.info/sct",
+                  "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+                  "display": "Status of residual neoplasm (observable entity)"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "T",
+                  "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-verlauf-primaertumor",
+                  "display": "Tumorreste (Residualtumor)"
+                }
+              ]
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "399656008",
+                  "system": "http://snomed.info/sct",
+                  "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+                  "display": "Presence of metastatic neoplasm in regional lymph node (observable entity)"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "P",
+                  "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-verlauf-lymphknoten",
+                  "display": "Presence of metastatic neoplasm in regional lymph node (observable entity)"
+                }
+              ]
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "399608002",
+                  "system": "http://snomed.info/sct",
+                  "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+                  "display": "Status of distant metastasis (observable entity)"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "K",
+                  "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-verlauf-fernmetastasen",
+                  "display": "keine Fernmetastasen nachweisbar"
+                }
+              ]
+            }
+          }
+        ],
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-onko-mamma"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "396432002",
+              "system": "http://snomed.info/sct",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+              "display": "Status of regression of tumor (observable entity)"
+            }
+          ]
+        },
+        "effectiveDateTime": "2024-02-08",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "B",
+              "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-verlauf-gesamtbeurteilung",
+              "display": "klinische Besserung des Zustandes, Teilremissionkriterien jedoch nicht erfüllt (minimal response, MR)"
+            }
+          ]
+        }
+      }
     }
   ],
   "type": "transaction",

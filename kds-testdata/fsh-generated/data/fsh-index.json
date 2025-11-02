@@ -13,7 +13,7 @@
     "fshType": "Instance",
     "fshFile": "Bundle.fsh",
     "startLine": 779,
-    "endLine": 795
+    "endLine": 796
   },
   {
     "outputFile": "Bundle-mii-exa-test-data-bundle-pat-10.json",
@@ -1632,12 +1632,28 @@
     "endLine": 10
   },
   {
+    "outputFile": "Observation-mii-exa-test-data-onko-mamma-tnm-klassifikation.json",
+    "fshName": "mii-exa-test-data-onko-mamma-tnm-klassifikation",
+    "fshType": "Instance",
+    "fshFile": "modul-onkologie/TNMKlassifikation.fsh",
+    "startLine": 1,
+    "endLine": 11
+  },
+  {
     "outputFile": "Observation-mii-exa-test-data-onko-mamma-tod.json",
     "fshName": "mii-exa-test-data-onko-mamma-tod",
     "fshType": "Instance",
     "fshFile": "modul-onkologie/Tod.fsh",
     "startLine": 1,
     "endLine": 13
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-onko-mamma-verlauf.json",
+    "fshName": "mii-exa-test-data-onko-mamma-verlauf",
+    "fshType": "Instance",
+    "fshFile": "modul-onkologie/Verlauf.fsh",
+    "startLine": 1,
+    "endLine": 20
   },
   {
     "outputFile": "Observation-mii-exa-test-data-onko-mamma-verlaufshistologie.json",

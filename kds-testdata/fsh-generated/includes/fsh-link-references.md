@@ -78,8 +78,10 @@
 [mii-exa-test-data-onko-mamma-primaerdiagnose]: Condition-mii-exa-test-data-onko-mamma-primaerdiagnose.html
 [mii-exa-test-data-onko-mamma-specimen]: Specimen-mii-exa-test-data-onko-mamma-specimen.html
 [mii-exa-test-data-onko-mamma-studienteilnahme]: Observation-mii-exa-test-data-onko-mamma-studienteilnahme.html
+[mii-exa-test-data-onko-mamma-tnm-klassifikation]: Observation-mii-exa-test-data-onko-mamma-tnm-klassifikation.html
 [mii-exa-test-data-onko-mamma-tod]: Observation-mii-exa-test-data-onko-mamma-tod.html
 [mii-exa-test-data-onko-mamma-tumorkonferenz]: CarePlan-mii-exa-test-data-onko-mamma-tumorkonferenz.html
+[mii-exa-test-data-onko-mamma-verlauf]: Observation-mii-exa-test-data-onko-mamma-verlauf.html
 [mii-exa-test-data-onko-mamma-verlaufshistologie]: Observation-mii-exa-test-data-onko-mamma-verlaufshistologie.html
 [mii-exa-test-data-organization-biobank-charite]: Organization-mii-exa-test-data-organization-biobank-charite.html
 [mii-exa-test-data-organization-charite]: Organization-mii-exa-test-data-organization-charite.html
