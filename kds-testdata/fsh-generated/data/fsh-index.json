@@ -2512,6 +2512,14 @@
     "endLine": 14
   },
   {
+    "outputFile": "Procedure-mii-exa-test-data-onko-systemische-procedure.json",
+    "fshName": "mii-exa-test-data-onko-systemische-procedure",
+    "fshType": "Instance",
+    "fshFile": "modul-onkologie/SystemischeTherapieProcedure.fsh",
+    "startLine": 1,
+    "endLine": 21
+  },
+  {
     "outputFile": "Procedure-mii-exa-test-data-patient-1-prozedur-1.json",
     "fshName": "mii-exa-test-data-patient-1-prozedur-1",
     "fshType": "Instance",
