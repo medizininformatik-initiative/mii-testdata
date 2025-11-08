@@ -28,6 +28,41 @@
       }
     ]
   },
+  "hasMember": [
+    {
+      "reference": "Observation/mii-exa-test-data-onko-mamma-tnm-t-kategorie"
+    },
+    {
+      "reference": "Observation/mii-exa-test-data-onko-mamma-tnm-n-kategorie"
+    },
+    {
+      "reference": "Observation/mii-exa-test-data-onko-mamma-tnm-m-kategorie"
+    },
+    {
+      "reference": "Observation/mii-exa-test-data-onko-mamma-tnm-l-kategorie"
+    },
+    {
+      "reference": "Observation/mii-exa-test-data-onko-mamma-tnm-pn-kategorie"
+    },
+    {
+      "reference": "Observation/mii-exa-test-data-onko-mamma-tnm-s-kategorie"
+    },
+    {
+      "reference": "Observation/mii-exa-test-data-onko-mamma-tnm-v-kategorie"
+    },
+    {
+      "reference": "Observation/mii-exa-test-data-onko-mamma-tnm-a-symbol"
+    },
+    {
+      "reference": "Observation/mii-exa-test-data-onko-mamma-tnm-m-symbol"
+    },
+    {
+      "reference": "Observation/mii-exa-test-data-onko-mamma-tnm-r-symbol"
+    },
+    {
+      "reference": "Observation/mii-exa-test-data-onko-mamma-tnm-y-symbol"
+    }
+  ],
   "subject": {
     "reference": "Patient/mii-exa-test-data-patient-onko-mamma"
   },
@@ -43,5 +78,6 @@
         "display": "Stadium 0"
       }
     ]
-  }
+  },
+  "effectiveDateTime": "2024-01-11"
 }

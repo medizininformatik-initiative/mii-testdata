@@ -13,7 +13,7 @@
     "fshType": "Instance",
     "fshFile": "Bundle.fsh",
     "startLine": 779,
-    "endLine": 796
+    "endLine": 814
   },
   {
     "outputFile": "Bundle-mii-exa-test-data-bundle-pat-10.json",
@@ -1600,6 +1600,22 @@
     "endLine": 619
   },
   {
+    "outputFile": "Observation-mii-exa-test-data-onko-mamma-ecog.json",
+    "fshName": "mii-exa-test-data-onko-mamma-ecog",
+    "fshType": "Instance",
+    "fshFile": "modul-onkologie/LeistungszustandECOG.fsh",
+    "startLine": 1,
+    "endLine": 11
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-onko-mamma-fernmetastasen.json",
+    "fshName": "mii-exa-test-data-onko-mamma-fernmetastasen",
+    "fshType": "Instance",
+    "fshFile": "modul-onkologie/Fernmetastasen.fsh",
+    "startLine": 1,
+    "endLine": 11
+  },
+  {
     "outputFile": "Observation-mii-exa-test-data-onko-mamma-genetische-variante.json",
     "fshName": "mii-exa-test-data-onko-mamma-genetische-variante",
     "fshType": "Instance",
@@ -1616,10 +1632,26 @@
     "endLine": 13
   },
   {
+    "outputFile": "Observation-mii-exa-test-data-onko-mamma-karnofsky.json",
+    "fshName": "mii-exa-test-data-onko-mamma-karnofsky",
+    "fshType": "Instance",
+    "fshFile": "modul-onkologie/LeistungszustandKarnofsky.fsh",
+    "startLine": 1,
+    "endLine": 11
+  },
+  {
     "outputFile": "Observation-mii-exa-test-data-onko-mamma-lymphknotenuntersuchung.json",
     "fshName": "mii-exa-test-data-onko-mamma-lymphknotenuntersuchung",
     "fshType": "Instance",
     "fshFile": "modul-onkologie/Lymphknotenuntersuchung.fsh",
+    "startLine": 1,
+    "endLine": 11
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-onko-mamma-residualstatus.json",
+    "fshName": "mii-exa-test-data-onko-mamma-residualstatus",
+    "fshType": "Instance",
+    "fshFile": "modul-onkologie/Residualstatus.fsh",
     "startLine": 1,
     "endLine": 11
   },
@@ -1632,12 +1664,100 @@
     "endLine": 10
   },
   {
+    "outputFile": "Observation-mii-exa-test-data-onko-mamma-tnm-a-symbol.json",
+    "fshName": "mii-exa-test-data-onko-mamma-tnm-a-symbol",
+    "fshType": "Instance",
+    "fshFile": "modul-onkologie/TNMSymbolA.fsh",
+    "startLine": 1,
+    "endLine": 6
+  },
+  {
     "outputFile": "Observation-mii-exa-test-data-onko-mamma-tnm-klassifikation.json",
     "fshName": "mii-exa-test-data-onko-mamma-tnm-klassifikation",
     "fshType": "Instance",
     "fshFile": "modul-onkologie/TNMKlassifikation.fsh",
     "startLine": 1,
-    "endLine": 11
+    "endLine": 23
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-onko-mamma-tnm-l-kategorie.json",
+    "fshName": "mii-exa-test-data-onko-mamma-tnm-l-kategorie",
+    "fshType": "Instance",
+    "fshFile": "modul-onkologie/TNMKategorieL.fsh",
+    "startLine": 1,
+    "endLine": 6
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-onko-mamma-tnm-m-kategorie.json",
+    "fshName": "mii-exa-test-data-onko-mamma-tnm-m-kategorie",
+    "fshType": "Instance",
+    "fshFile": "modul-onkologie/TNMKategorieM.fsh",
+    "startLine": 1,
+    "endLine": 6
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-onko-mamma-tnm-m-symbol.json",
+    "fshName": "mii-exa-test-data-onko-mamma-tnm-m-symbol",
+    "fshType": "Instance",
+    "fshFile": "modul-onkologie/TNMSymbolM.fsh",
+    "startLine": 1,
+    "endLine": 6
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-onko-mamma-tnm-n-kategorie.json",
+    "fshName": "mii-exa-test-data-onko-mamma-tnm-n-kategorie",
+    "fshType": "Instance",
+    "fshFile": "modul-onkologie/TNMKategorieN.fsh",
+    "startLine": 1,
+    "endLine": 6
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-onko-mamma-tnm-pn-kategorie.json",
+    "fshName": "mii-exa-test-data-onko-mamma-tnm-pn-kategorie",
+    "fshType": "Instance",
+    "fshFile": "modul-onkologie/TNMKategoriePn.fsh",
+    "startLine": 1,
+    "endLine": 6
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-onko-mamma-tnm-r-symbol.json",
+    "fshName": "mii-exa-test-data-onko-mamma-tnm-r-symbol",
+    "fshType": "Instance",
+    "fshFile": "modul-onkologie/TNMSymbolR.fsh",
+    "startLine": 1,
+    "endLine": 6
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-onko-mamma-tnm-s-kategorie.json",
+    "fshName": "mii-exa-test-data-onko-mamma-tnm-s-kategorie",
+    "fshType": "Instance",
+    "fshFile": "modul-onkologie/TNMKategorieS.fsh",
+    "startLine": 1,
+    "endLine": 6
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-onko-mamma-tnm-t-kategorie.json",
+    "fshName": "mii-exa-test-data-onko-mamma-tnm-t-kategorie",
+    "fshType": "Instance",
+    "fshFile": "modul-onkologie/TNMKategorieT.fsh",
+    "startLine": 1,
+    "endLine": 6
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-onko-mamma-tnm-v-kategorie.json",
+    "fshName": "mii-exa-test-data-onko-mamma-tnm-v-kategorie",
+    "fshType": "Instance",
+    "fshFile": "modul-onkologie/TNMKategorieV.fsh",
+    "startLine": 1,
+    "endLine": 6
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-onko-mamma-tnm-y-symbol.json",
+    "fshName": "mii-exa-test-data-onko-mamma-tnm-y-symbol",
+    "fshType": "Instance",
+    "fshFile": "modul-onkologie/TNMSymbolY.fsh",
+    "startLine": 1,
+    "endLine": 6
   },
   {
     "outputFile": "Observation-mii-exa-test-data-onko-mamma-tod.json",

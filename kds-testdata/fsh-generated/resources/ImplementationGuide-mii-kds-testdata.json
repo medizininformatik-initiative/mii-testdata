@@ -87,7 +87,7 @@
     {
       "packageId": "de.medizininformatikinitiative.kerndatensatz.meta",
       "version": "2025.0.x",
-      "uri": "http://fhir.org/packages/de.medizininformatikinitiative.kerndatensatz.meta/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.meta",
+      "uri": "https://www.medizininformatik-initiative.de/fhir/modul-meta/ImplementationGuide/mii-ig-meta",
       "id": "de_medizininformatikinitiative_kerndatensatz_meta"
     },
     {
@@ -725,10 +725,26 @@
       },
       {
         "reference": {
+          "reference": "Observation/mii-exa-test-data-onko-mamma-ecog"
+        },
+        "name": "mii-exa-test-data-onko-mamma-ecog",
+        "description": "Observation: Leistungszustand ECOG für Onko Mamma PatientIn",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Encounter/mii-exa-test-data-onko-mamma-fall"
         },
         "name": "mii-exa-test-data-onko-mamma-fall",
         "description": "Encounter: Einrichtungskontakt Patient 1",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-onko-mamma-fernmetastasen"
+        },
+        "name": "mii-exa-test-data-onko-mamma-fernmetastasen",
+        "description": "Observation: Fernmetastasen für Onko Mamma PatientIn",
         "exampleBoolean": true
       },
       {
@@ -757,6 +773,14 @@
       },
       {
         "reference": {
+          "reference": "Observation/mii-exa-test-data-onko-mamma-karnofsky"
+        },
+        "name": "mii-exa-test-data-onko-mamma-karnofsky",
+        "description": "Observation: Leistungszustand Karnofsky für Onko Mamma PatientIn",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Observation/mii-exa-test-data-onko-mamma-lymphknotenuntersuchung"
         },
         "name": "mii-exa-test-data-onko-mamma-lymphknotenuntersuchung",
@@ -769,6 +793,14 @@
         },
         "name": "mii-exa-test-data-onko-mamma-primaerdiagnose",
         "description": "Condition: Invasives duktales Karzinom o.n.A. für Patient 1",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-onko-mamma-residualstatus"
+        },
+        "name": "mii-exa-test-data-onko-mamma-residualstatus",
+        "description": "Observation: Residualstatus für Onko Mamma PatientIn",
         "exampleBoolean": true
       },
       {
@@ -789,10 +821,98 @@
       },
       {
         "reference": {
+          "reference": "Observation/mii-exa-test-data-onko-mamma-tnm-a-symbol"
+        },
+        "name": "mii-exa-test-data-onko-mamma-tnm-a-symbol",
+        "description": "Observation: TNM Kategorie M für Onko Mamma PatientIn",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Observation/mii-exa-test-data-onko-mamma-tnm-klassifikation"
         },
         "name": "mii-exa-test-data-onko-mamma-tnm-klassifikation",
         "description": "Observation: TNM Klassifikation für Onko Mamma PatientIn",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-onko-mamma-tnm-l-kategorie"
+        },
+        "name": "mii-exa-test-data-onko-mamma-tnm-l-kategorie",
+        "description": "Observation: TNM Kategorie T für Onko Mamma PatientIn",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-onko-mamma-tnm-m-kategorie"
+        },
+        "name": "mii-exa-test-data-onko-mamma-tnm-m-kategorie",
+        "description": "Observation: TNM Kategorie T für Onko Mamma PatientIn",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-onko-mamma-tnm-m-symbol"
+        },
+        "name": "mii-exa-test-data-onko-mamma-tnm-m-symbol",
+        "description": "Observation: TNM Kategorie M für Onko Mamma PatientIn",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-onko-mamma-tnm-n-kategorie"
+        },
+        "name": "mii-exa-test-data-onko-mamma-tnm-n-kategorie",
+        "description": "Observation: TNM Kategorie T für Onko Mamma PatientIn",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-onko-mamma-tnm-pn-kategorie"
+        },
+        "name": "mii-exa-test-data-onko-mamma-tnm-pn-kategorie",
+        "description": "Observation: TNM Kategorie T für Onko Mamma PatientIn",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-onko-mamma-tnm-r-symbol"
+        },
+        "name": "mii-exa-test-data-onko-mamma-tnm-r-symbol",
+        "description": "Observation: TNM Kategorie M für Onko Mamma PatientIn",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-onko-mamma-tnm-s-kategorie"
+        },
+        "name": "mii-exa-test-data-onko-mamma-tnm-s-kategorie",
+        "description": "Observation: TNM Kategorie T für Onko Mamma PatientIn",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-onko-mamma-tnm-t-kategorie"
+        },
+        "name": "mii-exa-test-data-onko-mamma-tnm-t-kategorie",
+        "description": "Observation: TNM Kategorie T für Onko Mamma PatientIn",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-onko-mamma-tnm-v-kategorie"
+        },
+        "name": "mii-exa-test-data-onko-mamma-tnm-v-kategorie",
+        "description": "Observation: TNM Kategorie V für Onko Mamma PatientIn",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-onko-mamma-tnm-y-symbol"
+        },
+        "name": "mii-exa-test-data-onko-mamma-tnm-y-symbol",
+        "description": "Observation: TNM Kategorie M für Onko Mamma PatientIn",
         "exampleBoolean": true
       },
       {

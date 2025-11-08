@@ -4,5 +4,5 @@ RuleSet: AddTNMKategorie(code, value, version, date, subject, diagnosis)
 * effectiveDateTime = "{date}"
 * status = $observation-status#final
 * method.coding = $tnm-version#{version}
-* code.coding = $sct#{coding}
+* code.coding = $sct#{code}
 * valueCodeableConcept = $tnm-uicc#{value}

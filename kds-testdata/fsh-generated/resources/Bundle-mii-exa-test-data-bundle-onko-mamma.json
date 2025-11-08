@@ -627,6 +627,934 @@
           ]
         }
       }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-onko-mamma-fernmetastasen",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-onko-mamma-fernmetastasen",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-fernmetastasen"
+          ]
+        },
+        "focus": [
+          {
+            "reference": "Condition/mii-exa-test-data-onko-mamma-primaerdiagnose"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "385421009",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-onko-mamma"
+        },
+        "status": "final",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "PUL",
+              "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-fernmetastasen",
+              "display": "Lunge"
+            }
+          ]
+        },
+        "effectiveDateTime": "2024-02-08"
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-onko-mamma-residualstatus",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-onko-mamma-residualstatus",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-residualstatus"
+          ]
+        },
+        "focus": [
+          {
+            "reference": "Condition/mii-exa-test-data-onko-mamma-primaerdiagnose"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "445200009",
+              "system": "http://snomed.info/sct",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-onko-mamma"
+        },
+        "status": "final",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "R0",
+              "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-residualstatus"
+            }
+          ]
+        },
+        "effectiveDateTime": "2024-02-08"
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-onko-mamma-ecog",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-onko-mamma-ecog",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-allgemeiner-leistungszustand-ecog"
+          ]
+        },
+        "focus": [
+          {
+            "reference": "Condition/mii-exa-test-data-onko-mamma-primaerdiagnose"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "423740007",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-onko-mamma"
+        },
+        "status": "final",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "0",
+              "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-allgemeiner-leistungszustand-ecog"
+            }
+          ]
+        },
+        "effectiveDateTime": "2024-02-08"
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-onko-mamma-karnofsky",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-onko-mamma-karnofsky",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-allgemeiner-leistungszustand-karnofsky"
+          ]
+        },
+        "focus": [
+          {
+            "reference": "Condition/mii-exa-test-data-onko-mamma-primaerdiagnose"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "761869008",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-onko-mamma"
+        },
+        "status": "final",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "100%",
+              "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-allgemeiner-leistungszustand-karnofsky"
+            }
+          ]
+        },
+        "effectiveDateTime": "2024-02-08"
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-onko-mamma-tnm-klassifikation",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-onko-mamma-tnm-klassifikation",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-tnm-klassifikation"
+          ]
+        },
+        "focus": [
+          {
+            "reference": "Condition/mii-exa-test-data-onko-mamma-primaerdiagnose"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "399537006",
+              "system": "http://snomed.info/sct",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+              "display": "Clinical TNM stage grouping"
+            }
+          ]
+        },
+        "hasMember": [
+          {
+            "reference": "Observation/mii-exa-test-data-onko-mamma-tnm-t-kategorie"
+          },
+          {
+            "reference": "Observation/mii-exa-test-data-onko-mamma-tnm-n-kategorie"
+          },
+          {
+            "reference": "Observation/mii-exa-test-data-onko-mamma-tnm-m-kategorie"
+          },
+          {
+            "reference": "Observation/mii-exa-test-data-onko-mamma-tnm-l-kategorie"
+          },
+          {
+            "reference": "Observation/mii-exa-test-data-onko-mamma-tnm-pn-kategorie"
+          },
+          {
+            "reference": "Observation/mii-exa-test-data-onko-mamma-tnm-s-kategorie"
+          },
+          {
+            "reference": "Observation/mii-exa-test-data-onko-mamma-tnm-v-kategorie"
+          },
+          {
+            "reference": "Observation/mii-exa-test-data-onko-mamma-tnm-a-symbol"
+          },
+          {
+            "reference": "Observation/mii-exa-test-data-onko-mamma-tnm-m-symbol"
+          },
+          {
+            "reference": "Observation/mii-exa-test-data-onko-mamma-tnm-r-symbol"
+          },
+          {
+            "reference": "Observation/mii-exa-test-data-onko-mamma-tnm-y-symbol"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-onko-mamma"
+        },
+        "specimen": {
+          "reference": "Specimen/mii-exa-test-data-onko-mamma-specimen"
+        },
+        "status": "final",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "0",
+              "system": "https://www.uicc.org/resources/tnm",
+              "display": "Stadium 0"
+            }
+          ]
+        },
+        "effectiveDateTime": "2024-01-11"
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-onko-mamma-tnm-t-kategorie",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-onko-mamma-tnm-t-kategorie",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-tnm-t-kategorie"
+          ]
+        },
+        "focus": [
+          {
+            "reference": "Condition/mii-exa-test-data-onko-mamma-primaerdiagnose"
+          }
+        ],
+        "method": {
+          "coding": [
+            {
+              "code": "8",
+              "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-tnm-version"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "399504009",
+              "system": "http://snomed.info/sct",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-onko-mamma"
+        },
+        "effectiveDateTime": "2024-01-11",
+        "status": "final",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "Tis",
+              "system": "https://www.uicc.org/resources/tnm"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-onko-mamma-tnm-n-kategorie",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-onko-mamma-tnm-n-kategorie",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-tnm-n-kategorie"
+          ]
+        },
+        "focus": [
+          {
+            "reference": "Condition/mii-exa-test-data-onko-mamma-primaerdiagnose"
+          }
+        ],
+        "method": {
+          "coding": [
+            {
+              "code": "8",
+              "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-tnm-version"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "399534004",
+              "system": "http://snomed.info/sct",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-onko-mamma"
+        },
+        "effectiveDateTime": "2024-01-11",
+        "status": "final",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "N0",
+              "system": "https://www.uicc.org/resources/tnm"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-onko-mamma-tnm-m-kategorie",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-onko-mamma-tnm-m-kategorie",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-tnm-m-kategorie"
+          ]
+        },
+        "focus": [
+          {
+            "reference": "Condition/mii-exa-test-data-onko-mamma-primaerdiagnose"
+          }
+        ],
+        "method": {
+          "coding": [
+            {
+              "code": "8",
+              "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-tnm-version"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "399387003",
+              "system": "http://snomed.info/sct",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-onko-mamma"
+        },
+        "effectiveDateTime": "2024-01-11",
+        "status": "final",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "M0",
+              "system": "https://www.uicc.org/resources/tnm"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-onko-mamma-tnm-l-kategorie",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-onko-mamma-tnm-l-kategorie",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-tnm-l-kategorie"
+          ]
+        },
+        "focus": [
+          {
+            "reference": "Condition/mii-exa-test-data-onko-mamma-primaerdiagnose"
+          }
+        ],
+        "method": {
+          "coding": [
+            {
+              "code": "8",
+              "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-tnm-version"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "395715009",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-onko-mamma"
+        },
+        "effectiveDateTime": "2024-01-11",
+        "status": "final",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "L1",
+              "system": "https://www.uicc.org/resources/tnm"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-onko-mamma-tnm-pn-kategorie",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-onko-mamma-tnm-pn-kategorie",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-tnm-pn-kategorie"
+          ]
+        },
+        "focus": [
+          {
+            "reference": "Condition/mii-exa-test-data-onko-mamma-primaerdiagnose"
+          }
+        ],
+        "method": {
+          "coding": [
+            {
+              "code": "8",
+              "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-tnm-version"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "371513001",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-onko-mamma"
+        },
+        "effectiveDateTime": "2024-01-11",
+        "status": "final",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "Pn1",
+              "system": "https://www.uicc.org/resources/tnm"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-onko-mamma-tnm-s-kategorie",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-onko-mamma-tnm-s-kategorie",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-tnm-s-kategorie"
+          ]
+        },
+        "focus": [
+          {
+            "reference": "Condition/mii-exa-test-data-onko-mamma-primaerdiagnose"
+          }
+        ],
+        "method": {
+          "coding": [
+            {
+              "code": "8",
+              "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-tnm-version"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "399424006",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-onko-mamma"
+        },
+        "effectiveDateTime": "2024-01-11",
+        "status": "final",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "S1",
+              "system": "https://www.uicc.org/resources/tnm"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-onko-mamma-tnm-v-kategorie",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-onko-mamma-tnm-v-kategorie",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-tnm-v-kategorie"
+          ]
+        },
+        "focus": [
+          {
+            "reference": "Condition/mii-exa-test-data-onko-mamma-primaerdiagnose"
+          }
+        ],
+        "method": {
+          "coding": [
+            {
+              "code": "8",
+              "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-tnm-version"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "371493002",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-onko-mamma"
+        },
+        "effectiveDateTime": "2024-01-11",
+        "status": "final",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "V1",
+              "system": "https://www.uicc.org/resources/tnm"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-onko-mamma-tnm-a-symbol",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-onko-mamma-tnm-a-symbol",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-tnm-a-symbol"
+          ]
+        },
+        "focus": [
+          {
+            "reference": "Condition/mii-exa-test-data-onko-mamma-primaerdiagnose"
+          }
+        ],
+        "method": {
+          "coding": [
+            {
+              "code": "8",
+              "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-tnm-version"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "101660-9"
+            }
+          ]
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "421426001",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-onko-mamma"
+        },
+        "effectiveDateTime": "2024-01-11",
+        "status": "final"
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-onko-mamma-tnm-m-symbol",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-onko-mamma-tnm-m-symbol",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-tnm-m-symbol"
+          ]
+        },
+        "focus": [
+          {
+            "reference": "Condition/mii-exa-test-data-onko-mamma-primaerdiagnose"
+          }
+        ],
+        "method": {
+          "coding": [
+            {
+              "code": "8",
+              "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-tnm-version"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "42030-7"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-onko-mamma"
+        },
+        "effectiveDateTime": "2024-01-11",
+        "status": "final",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "2",
+              "system": "https://www.uicc.org/resources/tnm"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-onko-mamma-tnm-r-symbol",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-onko-mamma-tnm-r-symbol",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-tnm-r-symbol"
+          ]
+        },
+        "focus": [
+          {
+            "reference": "Condition/mii-exa-test-data-onko-mamma-primaerdiagnose"
+          }
+        ],
+        "method": {
+          "coding": [
+            {
+              "code": "8",
+              "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-tnm-version"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "101659-1"
+            }
+          ]
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "421188008",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-onko-mamma"
+        },
+        "effectiveDateTime": "2024-01-11",
+        "status": "final"
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-onko-mamma-tnm-y-symbol",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-onko-mamma-tnm-y-symbol",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-tnm-y-symbol"
+          ]
+        },
+        "focus": [
+          {
+            "reference": "Condition/mii-exa-test-data-onko-mamma-primaerdiagnose"
+          }
+        ],
+        "method": {
+          "coding": [
+            {
+              "code": "8",
+              "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-tnm-version"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "101658-3"
+            }
+          ]
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "421755005",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-onko-mamma"
+        },
+        "effectiveDateTime": "2024-01-11",
+        "status": "final"
+      }
     }
   ],
   "type": "transaction",

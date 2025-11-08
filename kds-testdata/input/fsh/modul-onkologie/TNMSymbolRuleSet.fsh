@@ -4,5 +4,5 @@ RuleSet: AddTNMSymbol(code, value, version, date, subject, diagnosis)
 * effectiveDateTime = "{date}"
 * status = $observation-status#final
 * method.coding = $tnm-version#{version}
-* code.coding = $sct#{coding}
-* valueCodeableConcept = $
+* code.coding = $loinc#{code}
+* valueCodeableConcept = {value}
