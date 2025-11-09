@@ -1376,6 +1376,14 @@
     "endLine": 518
   },
   {
+    "outputFile": "MedicationStatement-mii-exa-test-data-onko-mamma-systemische-Medikation.json",
+    "fshName": "mii-exa-test-data-onko-mamma-systemische-Medikation",
+    "fshType": "Instance",
+    "fshFile": "modul-onkologie/SystemischeTherapieMedikation.fsh",
+    "startLine": 1,
+    "endLine": 10
+  },
+  {
     "outputFile": "MedicationStatement-mii-exa-test-data-patient-1-medstatement-1.json",
     "fshName": "mii-exa-test-data-patient-1-medstatement-1",
     "fshType": "Instance",
@@ -2512,8 +2520,8 @@
     "endLine": 14
   },
   {
-    "outputFile": "Procedure-mii-exa-test-data-onko-systemische-procedure.json",
-    "fshName": "mii-exa-test-data-onko-systemische-procedure",
+    "outputFile": "Procedure-mii-exa-test-data-onko-mamma-systemische-procedure.json",
+    "fshName": "mii-exa-test-data-onko-mamma-systemische-procedure",
     "fshType": "Instance",
     "fshFile": "modul-onkologie/SystemischeTherapieProcedure.fsh",
     "startLine": 1,

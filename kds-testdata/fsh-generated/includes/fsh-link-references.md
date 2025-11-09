@@ -82,6 +82,8 @@
 [mii-exa-test-data-onko-mamma-residualstatus]: Observation-mii-exa-test-data-onko-mamma-residualstatus.html
 [mii-exa-test-data-onko-mamma-specimen]: Specimen-mii-exa-test-data-onko-mamma-specimen.html
 [mii-exa-test-data-onko-mamma-studienteilnahme]: Observation-mii-exa-test-data-onko-mamma-studienteilnahme.html
+[mii-exa-test-data-onko-mamma-systemische-Medikation]: MedicationStatement-mii-exa-test-data-onko-mamma-systemische-Medikation.html
+[mii-exa-test-data-onko-mamma-systemische-procedure]: Procedure-mii-exa-test-data-onko-mamma-systemische-procedure.html
 [mii-exa-test-data-onko-mamma-tnm-a-symbol]: Observation-mii-exa-test-data-onko-mamma-tnm-a-symbol.html
 [mii-exa-test-data-onko-mamma-tnm-klassifikation]: Observation-mii-exa-test-data-onko-mamma-tnm-klassifikation.html
 [mii-exa-test-data-onko-mamma-tnm-l-kategorie]: Observation-mii-exa-test-data-onko-mamma-tnm-l-kategorie.html
@@ -98,7 +100,6 @@
 [mii-exa-test-data-onko-mamma-tumorkonferenz]: CarePlan-mii-exa-test-data-onko-mamma-tumorkonferenz.html
 [mii-exa-test-data-onko-mamma-verlauf]: Observation-mii-exa-test-data-onko-mamma-verlauf.html
 [mii-exa-test-data-onko-mamma-verlaufshistologie]: Observation-mii-exa-test-data-onko-mamma-verlaufshistologie.html
-[mii-exa-test-data-onko-systemische-procedure]: Procedure-mii-exa-test-data-onko-systemische-procedure.html
 [mii-exa-test-data-organization-biobank-charite]: Organization-mii-exa-test-data-organization-biobank-charite.html
 [mii-exa-test-data-organization-charite]: Organization-mii-exa-test-data-organization-charite.html
 [mii-exa-test-data-organization-labor-berlin]: Organization-mii-exa-test-data-organization-labor-berlin.html

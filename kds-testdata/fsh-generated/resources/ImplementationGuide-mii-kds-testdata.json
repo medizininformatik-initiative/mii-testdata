@@ -821,6 +821,22 @@
       },
       {
         "reference": {
+          "reference": "MedicationStatement/mii-exa-test-data-onko-mamma-systemische-Medikation"
+        },
+        "name": "mii-exa-test-data-onko-mamma-systemische-Medikation",
+        "description": "MedicationStatement: Systemische Therapie für Onko Mamma PatientIn",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Procedure/mii-exa-test-data-onko-mamma-systemische-procedure"
+        },
+        "name": "mii-exa-test-data-onko-mamma-systemische-procedure",
+        "description": "Procedure: Systemische Therapie für Onko Mamma PatientIn",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Observation/mii-exa-test-data-onko-mamma-tnm-a-symbol"
         },
         "name": "mii-exa-test-data-onko-mamma-tnm-a-symbol",
@@ -945,14 +961,6 @@
         },
         "name": "mii-exa-test-data-onko-mamma-verlaufshistologie",
         "description": "Observation: Verlaufshistologie für Onko Mamma PatientIn",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "Procedure/mii-exa-test-data-onko-systemische-procedure"
-        },
-        "name": "mii-exa-test-data-onko-systemische-procedure",
-        "description": "Procedure: Systemische Therapie für Onko Mamma PatientIn",
         "exampleBoolean": true
       },
       {

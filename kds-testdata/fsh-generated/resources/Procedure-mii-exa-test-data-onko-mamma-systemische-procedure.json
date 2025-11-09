@@ -1,6 +1,6 @@
 {
   "resourceType": "Procedure",
-  "id": "mii-exa-test-data-onko-systemische-procedure",
+  "id": "mii-exa-test-data-onko-mamma-systemische-procedure",
   "meta": {
     "security": [
       {
@@ -19,17 +19,7 @@
     }
   ],
   "extension": [
-    {
-      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-systemische-therapie-intention",
-      "valueCodeableConcept": {
-        "coding": [
-          {
-            "code": "K",
-            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-intention"
-          }
-        ]
-      }
-    },
+    null,
     {
       "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-systemische-therapie-stellungzurop",
       "valueCodeableConcept": {
