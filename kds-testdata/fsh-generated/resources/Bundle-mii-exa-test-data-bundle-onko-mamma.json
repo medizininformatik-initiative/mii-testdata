@@ -1555,6 +1555,215 @@
         "effectiveDateTime": "2024-01-11",
         "status": "final"
       }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Procedure"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Procedure/mii-exa-test-data-onko-mamma-systemische-procedure",
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "mii-exa-test-data-onko-mamma-systemische-procedure",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-systemische-therapie"
+          ]
+        },
+        "reasonReference": [
+          {
+            "reference": "Condition/mii-exa-test-data-onko-mamma-primaerdiagnose"
+          }
+        ],
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-systemische-therapie-intention",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "K",
+                  "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-intention"
+                }
+              ]
+            }
+          },
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-systemische-therapie-stellungzurop",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "A",
+                  "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-therapie-stellungzurop"
+                }
+              ]
+            }
+          }
+        ],
+        "category": {
+          "coding": [
+            {
+              "code": "367336001",
+              "system": "http://snomed.info/sct",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+              "display": "Chemotherapy (procedure)"
+            }
+          ]
+        },
+        "usedCode": [
+          {
+            "coding": [
+              {
+                "code": "AC",
+                "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-systemische-therapie-protokolle",
+                "display": "AC"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "Chemotherapy",
+              "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-therapie-typ"
+            },
+            {
+              "code": "8-52",
+              "system": "http://fhir.de/CodeSystem/bfarm/ops"
+            }
+          ]
+        },
+        "performedPeriod": {
+          "start": "2021-12-04",
+          "end": "2022-04-06"
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-onko-mamma"
+        },
+        "status": "completed"
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "MedicationStatement"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/MedicationStatement/mii-exa-test-data-onko-mamma-systemische-medikation",
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "mii-exa-test-data-onko-mamma-systemische-medikation",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-systemische-therapie-medikation"
+          ]
+        },
+        "partOf": [
+          {
+            "reference": "Procedure/mii-exa-test-data-onko-mamma-systemische-procedure"
+          }
+        ],
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://fhir.de/CodeSystem/bfarm/atc",
+              "code": "L01CD02",
+              "display": "Docetaxel"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-onko-mamma"
+        },
+        "effectiveDateTime": "2021-12-04",
+        "status": "completed"
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Procedure"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Procedure/mii-exa-test-data-onko-mamma-operation",
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "mii-exa-test-data-onko-mamma-operation",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-operation"
+          ]
+        },
+        "reasonReference": [
+          {
+            "reference": "Condition/mii-exa-test-data-onko-mamma-primaerdiagnose"
+          }
+        ],
+        "extension": [
+          {
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-intention",
+                  "code": "K"
+                }
+              ]
+            },
+            "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-operation-intention"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://fhir.de/CodeSystem/bfarm/ops",
+              "code": "5-870",
+              "version": "2021",
+              "display": "Partielle (brusterhaltende) Exzision der Mamma und Destruktion von Mammagewebe"
+            }
+          ]
+        },
+        "category": {
+          "coding": [
+            {
+              "code": "387713003",
+              "system": "http://snomed.info/sct",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+              "display": "Surgical procedure (procedure)"
+            }
+          ]
+        },
+        "outcome": {
+          "coding": [
+            {
+              "code": "R1",
+              "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-residualstatus"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-onko-mamma"
+        },
+        "status": "completed",
+        "performedDateTime": "2021-12-04"
+      }
     }
   ],
   "type": "transaction",

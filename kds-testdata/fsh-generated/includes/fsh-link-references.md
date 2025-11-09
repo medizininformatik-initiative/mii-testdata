@@ -78,11 +78,12 @@
 [mii-exa-test-data-onko-mamma-histologiebefund]: DiagnosticReport-mii-exa-test-data-onko-mamma-histologiebefund.html
 [mii-exa-test-data-onko-mamma-karnofsky]: Observation-mii-exa-test-data-onko-mamma-karnofsky.html
 [mii-exa-test-data-onko-mamma-lymphknotenuntersuchung]: Observation-mii-exa-test-data-onko-mamma-lymphknotenuntersuchung.html
+[mii-exa-test-data-onko-mamma-operation]: Procedure-mii-exa-test-data-onko-mamma-operation.html
 [mii-exa-test-data-onko-mamma-primaerdiagnose]: Condition-mii-exa-test-data-onko-mamma-primaerdiagnose.html
 [mii-exa-test-data-onko-mamma-residualstatus]: Observation-mii-exa-test-data-onko-mamma-residualstatus.html
 [mii-exa-test-data-onko-mamma-specimen]: Specimen-mii-exa-test-data-onko-mamma-specimen.html
 [mii-exa-test-data-onko-mamma-studienteilnahme]: Observation-mii-exa-test-data-onko-mamma-studienteilnahme.html
-[mii-exa-test-data-onko-mamma-systemische-Medikation]: MedicationStatement-mii-exa-test-data-onko-mamma-systemische-Medikation.html
+[mii-exa-test-data-onko-mamma-systemische-medikation]: MedicationStatement-mii-exa-test-data-onko-mamma-systemische-medikation.html
 [mii-exa-test-data-onko-mamma-systemische-procedure]: Procedure-mii-exa-test-data-onko-mamma-systemische-procedure.html
 [mii-exa-test-data-onko-mamma-tnm-a-symbol]: Observation-mii-exa-test-data-onko-mamma-tnm-a-symbol.html
 [mii-exa-test-data-onko-mamma-tnm-klassifikation]: Observation-mii-exa-test-data-onko-mamma-tnm-klassifikation.html

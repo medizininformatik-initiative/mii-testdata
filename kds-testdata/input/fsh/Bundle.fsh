@@ -784,6 +784,7 @@ Description: "Bundle: Onkologie Mamma Beispiel"
 * type = #transaction
 * timestamp = "2025-06-18T14:00:00+02:00"
 
+// Misc Grading & Histologie
 * insert AddBundleEntry(mii-exa-test-data-patient-onko-mamma, Patient)
 * insert AddBundleEntry(mii-exa-test-data-onko-mamma-primaerdiagnose, Condition)
 * insert AddBundleEntry(mii-exa-test-data-onko-mamma-fall, Encounter)
@@ -812,3 +813,8 @@ Description: "Bundle: Onkologie Mamma Beispiel"
 * insert AddBundleEntry(mii-exa-test-data-onko-mamma-tnm-m-symbol, Observation)
 * insert AddBundleEntry(mii-exa-test-data-onko-mamma-tnm-r-symbol, Observation)
 * insert AddBundleEntry(mii-exa-test-data-onko-mamma-tnm-y-symbol, Observation)
+// Systemische Therapie
+* insert AddBundleEntry(mii-exa-test-data-onko-mamma-systemische-procedure, Procedure)
+* insert AddBundleEntry(mii-exa-test-data-onko-mamma-systemische-medikation, MedicationStatement)
+// Operation
+* insert AddBundleEntry(mii-exa-test-data-onko-mamma-operation, Procedure)

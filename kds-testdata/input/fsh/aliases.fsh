@@ -111,3 +111,4 @@ Alias: $event-status = http://hl7.org/fhir/event-status
 Alias: $mii-cs-onko-therapie-typ = https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-therapie-typ
 Alias: $mii-cs-onko-therapie-protokolle = https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-systemische-therapie-protokolle
 Alias: $medication-status = http://hl7.org/fhir/CodeSystem/medication-statement-status
+Alias: $mii-cs-onko-operation-komplikation = https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-operation-komplikation

@@ -789,6 +789,14 @@
       },
       {
         "reference": {
+          "reference": "Procedure/mii-exa-test-data-onko-mamma-operation"
+        },
+        "name": "mii-exa-test-data-onko-mamma-operation",
+        "description": "Procedure: Operation für Onko Mamma PatientIn",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Condition/mii-exa-test-data-onko-mamma-primaerdiagnose"
         },
         "name": "mii-exa-test-data-onko-mamma-primaerdiagnose",
@@ -821,9 +829,9 @@
       },
       {
         "reference": {
-          "reference": "MedicationStatement/mii-exa-test-data-onko-mamma-systemische-Medikation"
+          "reference": "MedicationStatement/mii-exa-test-data-onko-mamma-systemische-medikation"
         },
-        "name": "mii-exa-test-data-onko-mamma-systemische-Medikation",
+        "name": "mii-exa-test-data-onko-mamma-systemische-medikation",
         "description": "MedicationStatement: Systemische Therapie für Onko Mamma PatientIn",
         "exampleBoolean": true
       },

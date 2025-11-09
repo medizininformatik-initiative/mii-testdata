@@ -1,6 +1,6 @@
 {
   "resourceType": "MedicationStatement",
-  "id": "mii-exa-test-data-onko-mamma-systemische-Medikation",
+  "id": "mii-exa-test-data-onko-mamma-systemische-medikation",
   "meta": {
     "security": [
       {
@@ -18,8 +18,18 @@
       "reference": "Procedure/mii-exa-test-data-onko-mamma-systemische-procedure"
     }
   ],
+  "medicationCodeableConcept": {
+    "coding": [
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/atc",
+        "code": "L01CD02",
+        "display": "Docetaxel"
+      }
+    ]
+  },
   "subject": {
     "reference": "Patient/mii-exa-test-data-patient-onko-mamma"
   },
+  "effectiveDateTime": "2021-12-04",
   "status": "completed"
 }
