@@ -66,7 +66,7 @@ Usage: #example
 * identifier.value = "6789"
 * status = #available
 * type.coding[+] = https://fhir.bbmri-eric.eu/fhir/CodeSystem/miabis-detailed-sample-type#TissueFreshFrozen "Tissue (fresh frozen)"
-* type.coding[+].system = $sct#16214371000119104 "Specimen from lung obtained by needle biopsy (specimen)"
+* type.coding[+] = $sct#16214371000119104 "Specimen from lung obtained by needle biopsy (specimen)"
 * subject.reference = "Patient/mii-exa-test-data-patient-1"
 
 * receivedTime = "2018-06-08T15:43:00+01:00"
@@ -91,9 +91,8 @@ Usage: #example
 * processing[=].extension[=].valueRange.low.value = -85
 * processing[=].extension[=].valueRange.high.value = -60
 * processing[=].extension[+].url = "https://fhir.bbmri-eric.eu/fhir/StructureDefinition/miabis-sample-storage-temperature-extension"
-* processing[=].extension[=].valueCodeableConcept.coding[0] = https://fhir.bbmri-eric.eu/fhir/CodeSystem/miabis-storage-temperature#-60to-85 "between -60 and -85 degrees Celsius"
-* processing[=].procedure.coding[+] =  $sct#1186936003 "Storage of specimen (procedure)"
-* processing[=].procedure.coding[+] = $sct#27872000 "Specimen freezing (procedure)"
+* processing[=].extension[=].valueCodeableConcept.coding[0] = https://fhir.bbmri-eric.eu/fhir/CodeSystem/miabis-storage-temperature-cs#-60to-85 "between -60 and -85 degrees Celsius"
+* processing[=].procedure[+].coding[+] =  $sct#1186936003 "Storage of specimen (procedure)"
 * processing[=].timePeriod.start = "2018-06-08T15:49:00+01:00"
 
 * container.type = http://snomed.info/sct#83059008 "Tube, device (physical object)"

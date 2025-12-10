@@ -50,7 +50,10 @@
         "display": "Tissue (fresh frozen)"
       },
       {
-        "system": "16214371000119104"
+        "code": "16214371000119104",
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+        "display": "Specimen from lung obtained by needle biopsy (specimen)"
       }
     ]
   },
@@ -151,7 +154,7 @@
             "coding": [
               {
                 "code": "-60to-85",
-                "system": "https://fhir.bbmri-eric.eu/fhir/CodeSystem/miabis-storage-temperature",
+                "system": "https://fhir.bbmri-eric.eu/fhir/CodeSystem/miabis-storage-temperature-cs",
                 "display": "between -60 and -85 degrees Celsius"
               }
             ]
@@ -166,12 +169,6 @@
             "system": "http://snomed.info/sct",
             "version": "http://snomed.info/sct/900000000000207008/version/20230731",
             "display": "Storage of specimen (procedure)"
-          },
-          {
-            "code": "27872000",
-            "system": "http://snomed.info/sct",
-            "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-            "display": "Specimen freezing (procedure)"
           }
         ]
       },
