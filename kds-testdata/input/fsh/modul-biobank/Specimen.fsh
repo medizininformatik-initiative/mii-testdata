@@ -47,6 +47,97 @@ Description: "Specimen: EDTA-Blut für Klinische Chemie und Hämatologie"
 * container.specimenQuantity = 10 'ml'
 * container.additiveReference = Reference(mii-exa-test-data-patient-1-substance-1)
 
+
+Instance: mii-exa-test-data-patient-1-specimen-2
+InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Specimen
+Title: "Specimen: Musterprobe Gewebe"
+Usage: #example
+
+* extension[+].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/VerwaltendeOrganisation"
+* extension[=].valueReference = Reference(mii-exa-test-data-organization-biobank-charite)
+* extension[+].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Diagnose"
+* extension[=].valueReference = Reference(Diagnose/mii-exa-test-data-patient-1-diagnose-1)
+* extension[+].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/mii-ex-biobank-ebene"
+* extension[=].valueCoding = https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/CodeSystem/mii-cs-biobank-probenebene#PRIMÄRPROBE "Primärprobe"
+* extension[+].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/mii-ex-biobank-ebene"
+* extension[=].valueCoding = https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/CodeSystem/mii-cs-biobank-probenebene#ALIQUOTGRUPPE "Aliquotgruppe"
+
+* identifier.system = "https://biobank.uk-musterstadt.de/fhir/sid/proben"
+* identifier.value = "6789"
+* status = #available
+* type.coding[+] = https://fhir.bbmri-eric.eu/fhir/CodeSystem/miabis-detailed-sample-type#TissueFreshFrozen "Tissue (fresh frozen)"
+* type.coding[+] = $sct#16214371000119104 "Specimen from lung obtained by needle biopsy (specimen)"
+* subject.reference = "Patient/mii-exa-test-data-patient-1"
+
+* receivedTime = "2018-06-08T15:43:00+01:00"
+//* request = Reference(GewebeBiopsie)
+
+* collection.extension[einstellungBlutversorgung].valueDateTime = "2018-06-08T15:32:00+01:00"
+* collection.collectedDateTime = "2018-06-08T15:34:00+01:00"
+* collection.fastingStatusDuration = 4 'h'
+* collection.bodySite = $sct#14559000 "Structure of apex of left lung (body structure)"
+* collection.method = $sct#274319000 "Needle biopsy of lung (procedure)"
+
+* processing[+].extension[+].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Temperaturbedingungen"
+* processing[=].extension[=].valueRange.low.value = 15
+* processing[=].extension[=].valueRange.high.value = 25
+* processing[=].extension[+].url = "https://fhir.bbmri-eric.eu/fhir/StructureDefinition/miabis-sample-storage-temperature-extension"
+* processing[=].extension[=].valueCodeableConcept = https://fhir.bbmri-eric.eu/fhir/CodeSystem/miabis-storage-temperature-cs#RT "Room temperature"
+* processing[=].procedure =  $sct#1186936003 "Storage of specimen (procedure)"
+* processing[=].timePeriod.start = "2018-06-08T15:34:00+01:00"
+* processing[=].timePeriod.end = "2018-06-08T15:42:00+01:00"
+
+* processing[+].extension[+].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Temperaturbedingungen"
+* processing[=].extension[=].valueRange.low.value = -85
+* processing[=].extension[=].valueRange.high.value = -60
+* processing[=].extension[+].url = "https://fhir.bbmri-eric.eu/fhir/StructureDefinition/miabis-sample-storage-temperature-extension"
+* processing[=].extension[=].valueCodeableConcept.coding[0] = https://fhir.bbmri-eric.eu/fhir/CodeSystem/miabis-storage-temperature-cs#-60to-85 "between -60 and -85 degrees Celsius"
+* processing[=].procedure[+].coding[+] =  $sct#1186936003 "Storage of specimen (procedure)"
+* processing[=].timePeriod.start = "2018-06-08T15:49:00+01:00"
+
+* container.type = http://snomed.info/sct#83059008 "Tube, device (physical object)"
+* container.specimenQuantity = 5 'g'
+* note.text = "Organoid vorhanden"
+
+Instance: mii-exa-test-data-patient-1-specimen-3
+InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/mii-pr-biobank-zellinie-organoid
+Title: "Specimen: Organoid Lungenbiopsie"
+Usage: #example
+
+* extension[kulturprotokoll].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/mii-ex-biobank-kulturprotokoll"
+* extension[kulturprotokoll].valueReference = Reference(mii-exa-test-data-specimen-documentrefence-1)
+
+* extension[modifikationen].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/mii-ex-biobank-modifikationen"
+* extension[modifikationen].extension[artDerModifikation].url = "artDerModifikation"
+* extension[modifikationen].extension[artDerModifikation].valueCodeableConcept = http://purl.obolibrary.org/obo/clo.owl#CLO:0037375 "derived from cell with knockout gene"
+* extension[modifikationen].extension[zielGen].url = "zielGen"
+* extension[modifikationen].extension[zielGen].valueCoding = http://www.genenames.org#TP53 "tumor protein p53"
+* extension[modifikationen].extension[protokoll].url = "protokoll"
+* extension[modifikationen].extension[protokoll].valueReference = Reference(mii-exa-test-data-specimen-documentrefence-2)
+
+* extension[anzahlPassagen].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/mii-ex-biobank-anzahl-passagen"
+* extension[anzahlPassagen].valueInteger = 3
+
+* parent = Reference(mii-exa-test-data-patient-1-specimen-2)
+* identifier.system = "https://biobank.uk-musterstadt.de/fhir/sid/proben"
+* identifier.value = "6789-ORG-1"
+* status = #available
+* type.coding[+] = https://fhir.bbmri-eric.eu/fhir/CodeSystem/miabis-detailed-sample-type#Organoid "Organoids"
+* type.coding[+] = $sct#123038009 "Specimen (specimen)"
+* subject.reference = "Patient/mii-exa-test-data-patient-1"
+* collection.collectedDateTime = "2018-06-08T15:34:00+01:00"
+
+
+* container.type = http://snomed.info/sct#83059008 "Tube, device (physical object)"
+* container.specimenQuantity = 1 'ml'
+
+* processing[+].extension[temperaturbedingungen].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Temperaturbedingungen"
+* processing[=].extension[temperaturbedingungen].valueRange.low.value = 37
+* processing[=].extension[temperaturbedingungen].valueRange.high.value = 37
+* processing[=].procedure = $sct#1186936003 "Storage of specimen (procedure)"
+* processing[=].timePeriod.start = "2018-06-20T10:00:00+01:00"
+* processing[=].timePeriod.end = "2018-06-27T10:00:00+01:00"
+
 // Patient-2 Specimen (EDTA-Blut für Hämatologie)
 Instance: mii-exa-test-data-patient-2-specimen-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Specimen
