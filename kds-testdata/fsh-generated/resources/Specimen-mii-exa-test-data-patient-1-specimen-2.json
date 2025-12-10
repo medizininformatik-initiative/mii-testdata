@@ -1,0 +1,208 @@
+{
+  "resourceType": "Specimen",
+  "id": "mii-exa-test-data-patient-1-specimen-2",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Specimen"
+    ]
+  },
+  "extension": [
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/VerwaltendeOrganisation",
+      "valueReference": {
+        "reference": "Organization/mii-exa-test-data-organization-biobank-charite"
+      }
+    },
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Diagnose",
+      "valueReference": {
+        "reference": "Diagnose/mii-exa-test-data-patient-1-diagnose-1"
+      }
+    },
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/mii-ex-biobank-ebene",
+      "valueCoding": {
+        "code": "PRIMÄRPROBE",
+        "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/CodeSystem/mii-cs-biobank-probenebene",
+        "display": "Primärprobe"
+      }
+    },
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/mii-ex-biobank-ebene",
+      "valueCoding": {
+        "code": "ALIQUOTGRUPPE",
+        "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/CodeSystem/mii-cs-biobank-probenebene",
+        "display": "Aliquotgruppe"
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "system": "https://biobank.uk-musterstadt.de/fhir/sid/proben",
+      "value": "6789"
+    }
+  ],
+  "type": {
+    "coding": [
+      {
+        "code": "TissueFreshFrozen",
+        "system": "https://fhir.bbmri-eric.eu/fhir/CodeSystem/miabis-detailed-sample-type",
+        "display": "Tissue (fresh frozen)"
+      },
+      {
+        "system": "16214371000119104"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/mii-exa-test-data-patient-1"
+  },
+  "collection": {
+    "extension": [
+      {
+        "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/EinstellungBlutversorgung",
+        "valueDateTime": "2018-06-08T15:32:00+01:00"
+      }
+    ],
+    "collectedDateTime": "2018-06-08T15:34:00+01:00",
+    "fastingStatusDuration": {
+      "value": 4,
+      "code": "h",
+      "system": "http://unitsofmeasure.org"
+    },
+    "bodySite": {
+      "coding": [
+        {
+          "code": "14559000",
+          "system": "http://snomed.info/sct",
+          "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+          "display": "Structure of apex of left lung (body structure)"
+        }
+      ]
+    },
+    "method": {
+      "coding": [
+        {
+          "code": "274319000",
+          "system": "http://snomed.info/sct",
+          "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+          "display": "Needle biopsy of lung (procedure)"
+        }
+      ]
+    }
+  },
+  "processing": [
+    {
+      "extension": [
+        {
+          "valueRange": {
+            "low": {
+              "value": 15
+            },
+            "high": {
+              "value": 25
+            }
+          },
+          "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Temperaturbedingungen"
+        },
+        {
+          "url": "https://fhir.bbmri-eric.eu/fhir/StructureDefinition/miabis-sample-storage-temperature-extension",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "code": "RT",
+                "system": "https://fhir.bbmri-eric.eu/fhir/CodeSystem/miabis-storage-temperature-cs",
+                "display": "Room temperature"
+              }
+            ]
+          }
+        }
+      ],
+      "timePeriod": {
+        "start": "2018-06-08T15:34:00+01:00",
+        "end": "2018-06-08T15:42:00+01:00"
+      },
+      "procedure": {
+        "coding": [
+          {
+            "code": "1186936003",
+            "system": "http://snomed.info/sct",
+            "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+            "display": "Storage of specimen (procedure)"
+          }
+        ]
+      }
+    },
+    {
+      "extension": [
+        {
+          "valueRange": {
+            "low": {
+              "value": -85
+            },
+            "high": {
+              "value": -60
+            }
+          },
+          "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Temperaturbedingungen"
+        },
+        {
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "code": "-60to-85",
+                "system": "https://fhir.bbmri-eric.eu/fhir/CodeSystem/miabis-sample-storage-temperature",
+                "display": "between -60 and -85 degrees Celsius"
+              }
+            ]
+          },
+          "url": "https://fhir.bbmri-eric.eu/fhir/StructureDefinition/miabis-sample-storage-temperature-extension"
+        }
+      ],
+      "procedure": {
+        "coding": [
+          {
+            "code": "1186936003",
+            "system": "http://snomed.info/sct",
+            "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+            "display": "Storage of specimen (procedure)"
+          },
+          {
+            "code": "27872000",
+            "system": "http://snomed.info/sct",
+            "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+            "display": "Specimen freezing (procedure)"
+          }
+        ]
+      },
+      "timePeriod": {
+        "start": "2018-06-08T15:49:00+01:00"
+      }
+    }
+  ],
+  "container": [
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "83059008",
+            "system": "http://snomed.info/sct",
+            "display": "Tube, device (physical object)"
+          }
+        ]
+      },
+      "specimenQuantity": {
+        "value": 5,
+        "code": "g",
+        "system": "http://unitsofmeasure.org"
+      }
+    }
+  ],
+  "note": [
+    {
+      "text": "Organoid vorhanden"
+    }
+  ],
+  "status": "available",
+  "receivedTime": "2018-06-08T15:43:00+01:00"
+}
