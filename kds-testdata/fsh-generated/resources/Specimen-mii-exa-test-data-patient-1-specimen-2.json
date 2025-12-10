@@ -151,7 +151,7 @@
             "coding": [
               {
                 "code": "-60to-85",
-                "system": "https://fhir.bbmri-eric.eu/fhir/CodeSystem/miabis-sample-storage-temperature",
+                "system": "https://fhir.bbmri-eric.eu/fhir/CodeSystem/miabis-storage-temperature",
                 "display": "between -60 and -85 degrees Celsius"
               }
             ]

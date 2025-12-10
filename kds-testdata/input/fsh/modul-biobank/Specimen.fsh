@@ -91,7 +91,7 @@ Usage: #example
 * processing[=].extension[=].valueRange.low.value = -85
 * processing[=].extension[=].valueRange.high.value = -60
 * processing[=].extension[+].url = "https://fhir.bbmri-eric.eu/fhir/StructureDefinition/miabis-sample-storage-temperature-extension"
-* processing[=].extension[=].valueCodeableConcept.coding[0] = https://fhir.bbmri-eric.eu/fhir/CodeSystem/miabis-sample-storage-temperature#-60to-85 "between -60 and -85 degrees Celsius"
+* processing[=].extension[=].valueCodeableConcept.coding[0] = https://fhir.bbmri-eric.eu/fhir/CodeSystem/miabis-storage-temperature#-60to-85 "between -60 and -85 degrees Celsius"
 * processing[=].procedure.coding[+] =  $sct#1186936003 "Storage of specimen (procedure)"
 * processing[=].procedure.coding[+] = $sct#27872000 "Specimen freezing (procedure)"
 * processing[=].timePeriod.start = "2018-06-08T15:49:00+01:00"
