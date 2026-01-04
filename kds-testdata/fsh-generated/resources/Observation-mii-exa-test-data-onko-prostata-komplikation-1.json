@@ -1,0 +1,52 @@
+{
+  "resourceType": "Observation",
+  "id": "mii-exa-test-data-onko-prostata-komplikation-1",
+  "meta": {
+    "security": [
+      {
+        "code": "HTEST",
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "display": "test health data"
+      }
+    ],
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-prostate-clavien-dindo"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "789279006",
+        "display": "Clavien-Dindo classification grade (observable entity)"
+      }
+    ]
+  },
+  "focus": [
+    {
+      "reference": "Condition/mii-exa-test-data-onko-diagnose-1"
+    },
+    {
+      "reference": "Procedure/mii-exa-test-data-onko-prostata-surgery-1"
+    }
+  ],
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "1367522003",
+        "display": "Clavien-Dindo classification grade IIIa (finding)"
+      },
+      {
+        "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-prostata-postsurgical-complications",
+        "code": "J",
+        "display": "Ja"
+      }
+    ]
+  },
+  "status": "final",
+  "subject": {
+    "reference": "Patient/mii-exa-test-data-onko-patient-1"
+  },
+  "effectiveDateTime": "2021-10-15"
+}

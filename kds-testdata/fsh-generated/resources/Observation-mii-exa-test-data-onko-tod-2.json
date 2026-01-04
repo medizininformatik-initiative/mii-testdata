@@ -1,0 +1,41 @@
+{
+  "resourceType": "Observation",
+  "id": "mii-exa-test-data-onko-tod-2",
+  "meta": {
+    "security": [
+      {
+        "code": "HTEST",
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "display": "test health data"
+      }
+    ],
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-tod"
+    ]
+  },
+  "interpretation": [
+    {
+      "coding": [
+        {
+          "code": "U",
+          "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-tod",
+          "display": "unbekannt"
+        }
+      ]
+    }
+  ],
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "code": "184305005",
+        "system": "http://snomed.info/sct",
+        "display": "Cause of death"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/mii-exa-test-data-onko-patient-1"
+  },
+  "effectiveDateTime": "2024-06-01"
+}

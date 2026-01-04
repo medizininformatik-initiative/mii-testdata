@@ -1,0 +1,47 @@
+{
+  "resourceType": "AdverseEvent",
+  "id": "mii-exa-test-data-onko-nebenwirkung-2",
+  "meta": {
+    "security": [
+      {
+        "code": "HTEST",
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "display": "test health data"
+      }
+    ],
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-nebenwirkung-adverse-event"
+    ]
+  },
+  "event": {
+    "coding": [
+      {
+        "system": "https://www.meddra.org",
+        "code": "10032759",
+        "display": "Polyneuropathy",
+        "version": "Version 27.0"
+      }
+    ]
+  },
+  "suspectEntity": [
+    {
+      "instance": {
+        "reference": "Procedure/mii-exa-test-data-onko-strahlentherapie-1"
+      }
+    }
+  ],
+  "actuality": "actual",
+  "subject": {
+    "reference": "Patient/mii-exa-test-data-onko-patient-1"
+  },
+  "date": "2022-04-01",
+  "seriousness": {
+    "coding": [
+      {
+        "code": "3",
+        "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-nebenwirkung-ctcae-grad",
+        "display": "Schwer oder medizinisch bedeutsam, jedoch nicht unmittelbar lebensbedrohlich"
+      }
+    ]
+  }
+}
