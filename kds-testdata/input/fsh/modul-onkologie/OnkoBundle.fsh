@@ -50,6 +50,7 @@ Description: "Vollst√§ndiges Transaktionsbundle mit allen Onkologie-Testdaten f√
 // TNM Categories
 * insert AddBundleEntry(mii-exa-test-data-onko-tnm-t-kategorie-1, Observation)
 * insert AddBundleEntry(mii-exa-test-data-onko-tnm-n-kategorie-1, Observation)
+* insert AddBundleEntry(mii-exa-test-data-onko-tnm-n-kategorie-sn-1, Observation)
 * insert AddBundleEntry(mii-exa-test-data-onko-tnm-m-kategorie-1, Observation)
 * insert AddBundleEntry(mii-exa-test-data-onko-tnm-l-kategorie-1, Observation)
 * insert AddBundleEntry(mii-exa-test-data-onko-tnm-v-kategorie-1, Observation)
@@ -85,6 +86,7 @@ Description: "Vollst√§ndiges Transaktionsbundle mit allen Onkologie-Testdaten f√
 
 // Strahlentherapie (Chapter 14)
 * insert AddBundleEntry(mii-exa-test-data-onko-strahlentherapie-1, Procedure)
+* insert AddBundleEntry(mii-exa-test-data-onko-strahlentherapie-bestrahlung-1, Procedure)
 
 // Systemische Therapie (Chapter 16)
 * insert AddBundleEntry(mii-exa-test-data-onko-systemische-therapie-1, Procedure)

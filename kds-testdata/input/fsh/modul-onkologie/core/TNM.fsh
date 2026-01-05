@@ -195,3 +195,29 @@ Description: "Onkologie Test TNM Klassifikation - ypT3c pN1 M1b, Stadium IVB"
 * hasMember[4] = Reference(mii-exa-test-data-onko-tnm-v-kategorie-1)
 * hasMember[5] = Reference(mii-exa-test-data-onko-tnm-pn-kategorie-1)
 * hasMember[6] = Reference(mii-exa-test-data-onko-tnm-y-symbol-1)
+
+// ============================================================================
+// TNM N-Kategorie with ITC and SN suffix (for SearchParameter coverage)
+// Covers: tnm-n-itc, tnm-n-sn-suffix
+// Example: pN0(i-)(sn) - Sentinel node negative, no isolated tumor cells
+// ============================================================================
+Instance: mii-exa-test-data-onko-tnm-n-kategorie-sn-1
+InstanceOf: MII_PR_Onko_TNM_N_Kategorie
+Usage: #example
+Description: "Onkologie Test TNM N-Kategorie - pN0(i-)(sn) Sentinel Node"
+* insert TestDataLabel
+* status = #final
+* code.extension[cpPraefix].valueCodeableConcept = $UICC#p "pathologisch"
+* code.coding = $SCT#371494008 "pN category (observable entity)"
+* subject = Reference(mii-exa-test-data-onko-patient-1)
+* encounter = Reference(mii-exa-test-data-onko-encounter-1)
+* effectiveDateTime = "2021-10-05"
+* method = $mii-cs-onko-tnm-version#8 "8. Auflage"
+* valueCodeableConcept.coding = $UICC#N0 "N0"
+// ITC suffix (covers tnm-n-itc search parameter)
+* valueCodeableConcept.extension[MII_EX_Onko_TNM_ITC_Suffix].valueCodeableConcept = $UICC#i- "(i-)"
+// SN suffix (covers tnm-n-sn-suffix search parameter)
+* valueCodeableConcept.extension[MII_EX_Onko_TNM_SN_Suffix].valueCodeableConcept = $UICC#sn "(sn)"
+* focus = Reference(mii-exa-test-data-onko-diagnose-1)
+* hasMember[0] = Reference(mii-exa-test-data-onko-anzahl-befallene-sentinel-lymphknoten-1)
+* hasMember[1] = Reference(mii-exa-test-data-onko-anzahl-untersuchte-sentinel-lymphknoten-1)

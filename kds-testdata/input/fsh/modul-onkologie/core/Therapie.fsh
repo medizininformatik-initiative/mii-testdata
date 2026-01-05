@@ -106,3 +106,42 @@ Description: "Onkologie Test Medikation - Niraparib (PARP-Inhibitor)"
 * effectivePeriod.start = "2022-01-25"
 * partOf[systemischeTherapie] = Reference(mii-exa-test-data-onko-systemische-therapie-1)
 * note.text = "Erhaltungstherapie mit PARP-Inhibitor"
+
+// ============================================================================
+// Strahlentherapie Bestrahlung (for SearchParameter coverage)
+// Covers: bestrahlung-applikationsart, bestrahlung-strahlenart,
+//         bestrahlung-gesamtdosis, bestrahlung-einzeldosis, bestrahlung-boost,
+//         bestrahlung-zielgebiet-lateralitaet
+// ============================================================================
+Instance: mii-exa-test-data-onko-strahlentherapie-bestrahlung-1
+InstanceOf: MII_PR_Onko_Strahlentherapie_Bestrahlung_Strahlentherapie
+Usage: #example
+Description: "Onkologie Test Strahlentherapie Bestrahlung - mit allen Dosisangaben"
+* insert TestDataLabel
+* status = #completed
+* category = $SCT#1287742003 "Radiotherapy (procedure)"
+* code.coding[ops] = $OPS#8-522.6 "Hochvoltstrahlentherapie: Stereotaktische Bestrahlung"
+* code.coding[ops].version = "2021"
+* subject = Reference(mii-exa-test-data-onko-patient-1)
+* performedPeriod.start = "2022-02-01"
+* performedPeriod.end = "2022-03-15"
+* partOf = Reference(mii-exa-test-data-onko-strahlentherapie-1)
+// Zielgebiet mit Seitenlokalisation (covers bestrahlung-zielgebiet-lateralitaet)
+* bodySite.coding = $mii-cs-onko-strahlentherapie-zielgebiet#5.3 "Becken"
+* bodySite.extension[Seitenlokalisation].valueCodeableConcept = $mii-cs-onko-seitenlokalisation#L "links"
+// Applikationsart (covers bestrahlung-applikationsart via extension)
+* extension[Applikationsart].valueCodeableConcept = $mii-cs-onko-strahlentherapie-applikationsart#PRCJ "perkutan mit stereotaktischen Techniken"
+// Strahlenart (covers bestrahlung-strahlenart via usedCode)
+* usedCode[Strahlenart] = $mii-cs-onko-strahlentherapie-strahlenart#UH "ultraharte Photonen"
+// Gesamtdosis (covers bestrahlung-gesamtdosis)
+* extension[Gesamtdosis].valueQuantity.value = 50.0
+* extension[Gesamtdosis].valueQuantity.unit = "Gy"
+* extension[Gesamtdosis].valueQuantity.system = $UCUM
+* extension[Gesamtdosis].valueQuantity.code = #Gy
+// Einzeldosis (covers bestrahlung-einzeldosis)
+* extension[Einzeldosis].valueQuantity.value = 2.0
+* extension[Einzeldosis].valueQuantity.unit = "Gy"
+* extension[Einzeldosis].valueQuantity.system = $UCUM
+* extension[Einzeldosis].valueQuantity.code = #Gy
+// Boost (covers bestrahlung-boost)
+* extension[Boost].valueCodeableConcept = $mii-cs-onko-strahlentherapie-boost#SIB "Simultan Integrierter Boost"

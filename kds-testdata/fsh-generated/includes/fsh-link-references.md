@@ -120,6 +120,7 @@
 [mii-exa-test-data-onko-residualstatus-1]: Observation-mii-exa-test-data-onko-residualstatus-1.html
 [mii-exa-test-data-onko-specimen-1]: Specimen-mii-exa-test-data-onko-specimen-1.html
 [mii-exa-test-data-onko-strahlentherapie-1]: Procedure-mii-exa-test-data-onko-strahlentherapie-1.html
+[mii-exa-test-data-onko-strahlentherapie-bestrahlung-1]: Procedure-mii-exa-test-data-onko-strahlentherapie-bestrahlung-1.html
 [mii-exa-test-data-onko-studienteilnahme-1]: Observation-mii-exa-test-data-onko-studienteilnahme-1.html
 [mii-exa-test-data-onko-studienteilnahme-2]: Observation-mii-exa-test-data-onko-studienteilnahme-2.html
 [mii-exa-test-data-onko-systemische-therapie-1]: Procedure-mii-exa-test-data-onko-systemische-therapie-1.html
@@ -135,6 +136,7 @@
 [mii-exa-test-data-onko-tnm-m-kategorie-1]: Observation-mii-exa-test-data-onko-tnm-m-kategorie-1.html
 [mii-exa-test-data-onko-tnm-m-symbol-1]: Observation-mii-exa-test-data-onko-tnm-m-symbol-1.html
 [mii-exa-test-data-onko-tnm-n-kategorie-1]: Observation-mii-exa-test-data-onko-tnm-n-kategorie-1.html
+[mii-exa-test-data-onko-tnm-n-kategorie-sn-1]: Observation-mii-exa-test-data-onko-tnm-n-kategorie-sn-1.html
 [mii-exa-test-data-onko-tnm-pn-kategorie-1]: Observation-mii-exa-test-data-onko-tnm-pn-kategorie-1.html
 [mii-exa-test-data-onko-tnm-r-symbol-1]: Observation-mii-exa-test-data-onko-tnm-r-symbol-1.html
 [mii-exa-test-data-onko-tnm-s-kategorie-1]: Observation-mii-exa-test-data-onko-tnm-s-kategorie-1.html
