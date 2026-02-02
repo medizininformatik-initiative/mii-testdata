@@ -1,6 +1,6 @@
 {
   "name": "de.medizininformatikinitiative.kerndatensatz.testdata",
-  "version": "2025.0.0",
+  "version": "2026.0.0",
   "description": "Medizininformatik Initiative - Test Data",
   "author": "juliansass",
   "fhirVersions": [
@@ -29,21 +29,18 @@
   "dependencies": {
     "hl7.fhir.r4.core": "4.0.1",
     "de.basisprofil.r4": "1.5.x",
-    "de.medizininformatikinitiative.kerndatensatz.meta": "2025.0.x",
-    "de.medizininformatikinitiative.kerndatensatz.person": "2025.0.x",
-    "de.medizininformatikinitiative.kerndatensatz.diagnose": "2025.0.x",
-    "de.medizininformatikinitiative.kerndatensatz.prozedur": "2025.0.x",
-    "de.medizininformatikinitiative.kerndatensatz.medikation": "2025.0.x",
-    "de.medizininformatikinitiative.kerndatensatz.laborbefund": "2025.0.x",
-    "de.medizininformatikinitiative.kerndatensatz.fall": "2025.0.x",
-    "de.medizininformatikinitiative.kerndatensatz.biobank": "2025.0.x",
-    "de.medizininformatikinitiative.kerndatensatz.consent": "2025.0.x",
-    "de.medizininformatikinitiative.kerndatensatz.icu": "2025.0.x",
+    "de.medizininformatikinitiative.kerndatensatz.base": "2026.0.x",
+    "de.medizininformatikinitiative.kerndatensatz.meta": "2026.0.x",
+    "de.medizininformatikinitiative.kerndatensatz.medikation": "2026.0.x",
+    "de.medizininformatikinitiative.kerndatensatz.laborbefund": "2026.0.x",
+    "de.medizininformatikinitiative.kerndatensatz.biobank": "2026.0.x",
+    "de.medizininformatikinitiative.kerndatensatz.consent": "2026.0.x",
+    "de.medizininformatikinitiative.kerndatensatz.icu": "2026.0.x",
     "de.medizininformatikinitiative.kerndatensatz.mikrobiologie": "2025.0.x",
-    "de.medizininformatikinitiative.kerndatensatz.molgen": "2025.0.x",
-    "de.medizininformatikinitiative.kerndatensatz.patho": "2025.0.x",
-    "de.medizininformatikinitiative.kerndatensatz.studie": "2025.0.x",
-    "de.medizininformatikinitiative.kerndatensatz.bildgebung": "2025.0.x",
-    "de.einwilligungsmanagement": "2.0.x"
+    "de.medizininformatikinitiative.kerndatensatz.molgen": "2026.0.x",
+    "de.medizininformatikinitiative.kerndatensatz.patho": "2026.0.x",
+    "de.medizininformatikinitiative.kerndatensatz.studie": "2026.0.x",
+    "de.medizininformatikinitiative.kerndatensatz.bildgebung": "2026.0.x",
+    "de.einwilligungsmanagement": "1.0.x"
   }
 }
