@@ -11,6 +11,7 @@ Description: "Onkologie Test Melanom Breslow Tiefe"
 * status = #final
 * code = $SCT#106243009 "Breslow depth staging for melanoma of skin (observable entity)"
 * subject = Reference(mii-exa-test-data-onko-patient-1)
+* encounter = Reference(mii-exa-test-data-onko-encounter-1)
 * focus = Reference(mii-exa-test-data-onko-diagnose-1)
 * effectiveDateTime = "2021-06-20"
 * valueQuantity.value = 1.8
@@ -18,6 +19,20 @@ Description: "Onkologie Test Melanom Breslow Tiefe"
 * valueQuantity.system = $UCUM
 * valueQuantity.code = #mm
 * method = $SCT#117617002 "Immunohistochemistry procedure"
+
+// Breslow Tiefe - dataAbsentReason variant
+Instance: mii-exa-test-data-onko-melanom-breslow-tiefe-2
+InstanceOf: MII_PR_Onko_Melanom_Breslow_Tiefe
+Usage: #example
+Description: "Onkologie Test Melanom Breslow Tiefe - Nicht bestimmbar"
+* insert TestDataLabel
+* status = #final
+* code = $SCT#106243009 "Breslow depth staging for melanoma of skin (observable entity)"
+* subject = Reference(mii-exa-test-data-onko-patient-1)
+* encounter = Reference(mii-exa-test-data-onko-encounter-1)
+* focus = Reference(mii-exa-test-data-onko-diagnose-1)
+* effectiveDateTime = "2021-06-20"
+* dataAbsentReason = http://terminology.hl7.org/CodeSystem/data-absent-reason#unknown "Unknown"
 
 // Ulzeration
 Instance: mii-exa-test-data-onko-melanom-ulzeration-1
@@ -28,6 +43,7 @@ Description: "Onkologie Test Melanom Ulzeration - Vorhanden"
 * status = #final
 * code.coding = $SCT#6270001000004106 "Presence of ulcer in primary malignant melanoma of skin (observable entity)"
 * subject = Reference(mii-exa-test-data-onko-patient-1)
+* encounter = Reference(mii-exa-test-data-onko-encounter-1)
 * focus = Reference(mii-exa-test-data-onko-diagnose-1)
 * effectiveDateTime = "2021-06-20"
 * valueCodeableConcept = $mii-cs-onko-melanom-ulzeration#J "Ja, histologisch bestätigt"
@@ -54,12 +70,27 @@ Description: "Onkologie Test Melanom Sicherheitsabstand"
 * status = #final
 * code.coding = $SCT#396511007 "Distance of in situ melanoma from closest lateral surgical margin in excised specimen of skin (observable entity)"
 * subject = Reference(mii-exa-test-data-onko-patient-1)
+* encounter = Reference(mii-exa-test-data-onko-encounter-1)
 * focus = Reference(mii-exa-test-data-onko-diagnose-1)
 * effectiveDateTime = "2021-07-10"
 * valueQuantity.value = 10
 * valueQuantity.unit = "mm"
 * valueQuantity.system = $UCUM
 * valueQuantity.code = #mm
+
+// Sicherheitsabstand - dataAbsentReason variant
+Instance: mii-exa-test-data-onko-melanom-sicherheitsabstand-2
+InstanceOf: MII_PR_Onko_Melanom_Sicherheitsabstand
+Usage: #example
+Description: "Onkologie Test Melanom Sicherheitsabstand - Nicht bestimmbar"
+* insert TestDataLabel
+* status = #final
+* code.coding = $SCT#396511007 "Distance of in situ melanoma from closest lateral surgical margin in excised specimen of skin (observable entity)"
+* subject = Reference(mii-exa-test-data-onko-patient-1)
+* encounter = Reference(mii-exa-test-data-onko-encounter-1)
+* focus = Reference(mii-exa-test-data-onko-diagnose-1)
+* effectiveDateTime = "2021-07-10"
+* dataAbsentReason = http://terminology.hl7.org/CodeSystem/data-absent-reason#not-performed "Not Performed"
 
 // LDH - with Quantity value (profile expects Quantity, not CodeableConcept)
 Instance: mii-exa-test-data-onko-melanom-ldh-1
@@ -94,6 +125,8 @@ Description: "Onkologie Test Melanom LDH - Erhöht"
 * valueQuantity.unit = "U/L"
 * valueQuantity.system = $UCUM
 * valueQuantity.code = #U/L
+* interpretation = http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation#H "High"
+* note.text = "LDH deutlich erhöht, Hinweis auf Tumorprogression"
 
 // Exzision
 Instance: mii-exa-test-data-onko-melanom-exzision-1

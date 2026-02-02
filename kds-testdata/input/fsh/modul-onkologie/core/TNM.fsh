@@ -50,7 +50,9 @@ Description: "Onkologie Test TNM M-Kategorie - pM1b"
 * effectiveDateTime = "2021-10-05"
 * method = $mii-cs-onko-tnm-version#8 "8. Auflage"
 * valueCodeableConcept.coding = $UICC#M1b
+* valueCodeableConcept.extension[MII_EX_Onko_TNM_ITC_Suffix].valueCodeableConcept = $UICC#i+ "(i+)"
 * focus = Reference(mii-exa-test-data-onko-diagnose-1)
+* partOf = Reference(mii-exa-test-data-onko-operation-1)
 * hasMember = Reference(mii-exa-test-data-onko-fernmetastasen-1)
 
 // TNM L-Kategorie

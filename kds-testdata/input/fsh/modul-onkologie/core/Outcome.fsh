@@ -9,11 +9,14 @@ Usage: #example
 Description: "Onkologie Test Verlauf - Vollremission nach Therapie"
 * insert TestDataLabel
 * status = #final
+* identifier.value = "VERLAUF-001"
 * code = $SCT#396432002 "Status of regression of tumor (observable entity)"
 * subject = Reference(mii-exa-test-data-onko-patient-1)
+* encounter = Reference(mii-exa-test-data-onko-encounter-1)
 * focus = Reference(mii-exa-test-data-onko-diagnose-1)
 * effectiveDateTime = "2022-06-15"
 * valueCodeableConcept = $mii-cs-onko-verlauf-gesamtbeurteilung#V "Vollremission (complete remission, CR)"
+* hasMember = Reference(mii-exa-test-data-onko-fernmetastasen-1)
 * component[Tumor_Verlauf].code.coding = $SCT#445200009 "Status of residual neoplasm (observable entity)"
 * component[Tumor_Verlauf].valueCodeableConcept = $mii-cs-onko-verlauf-primaertumor#K "kein Tumor nachweisbar"
 * component[Lymphknoten_Verlauf].code.coding = $SCT#399656008 "Presence of metastatic neoplasm in regional lymph node (observable entity)"
@@ -51,9 +54,12 @@ Description: "Onkologie Test Nebenwirkung - Fatigue nach Chemotherapie"
 * event.coding[meddra].code = #10016256
 * event.coding[meddra].display = "Fatigue"
 * event.coding[meddra].version = "Version 27.0"
+* event.text = "Fatigue nach Chemotherapie"
 * subject = Reference(mii-exa-test-data-onko-patient-1)
+* encounter = Reference(mii-exa-test-data-onko-encounter-1)
 * date = "2021-08-15"
 * seriousness = $mii-cs-onko-nebenwirkung-ctcae-grad#2 "Mäßig; minimale, lokale oder nichtinvasive Intervention indiziert; altersgemäße instrumentelle Aktivitäten des täglichen Lebens (ADL) eingeschränkt"
+* seriousness.text = "CTCAE Grad 2 - Mäßig"
 * suspectEntity.instance = Reference(mii-exa-test-data-onko-systemische-therapie-1)
 
 // Nebenwirkung - severe grade
@@ -81,6 +87,8 @@ Description: "Onkologie Test Tod - Verstorben an Tumorerkrankung"
 * status = #final
 * code = $SCT#184305005 "Cause of death"
 * subject = Reference(mii-exa-test-data-onko-patient-1)
+* encounter = Reference(mii-exa-test-data-onko-encounter-1)
+* focus = Reference(mii-exa-test-data-onko-diagnose-1)
 * effectiveDateTime = "2024-05-15"
 * interpretation = $mii-cs-onko-tod#J "Ja, die Person ist an einer Tumorerkrankung oder Folge einer Tumorerkrankung (einschließlich Behandlungskomplikation) verstorben."
 * valueCodeableConcept = $ICD10GM|2024#C56 "Bösartige Neubildung des Ovars"
@@ -105,7 +113,9 @@ Description: "Onkologie Test Genetische Variante - BRCA1 Mutation"
 * insert TestDataLabel
 * status = #final
 * subject = Reference(mii-exa-test-data-onko-patient-1)
+* encounter = Reference(mii-exa-test-data-onko-encounter-1)
 * effectiveDateTime = "2021-06-15"
+* valueCodeableConcept.coding = $LNC#LA9633-4 "Present"
 * note.text = "BRCA1 pathogene Variante nachgewiesen"
 * interpretation = $mii-cs-onko-genetische-variante-auspraegung#M "Mutation/Veränderung nachgewiesen"
 
@@ -130,7 +140,8 @@ Description: "Onkologie Test Studienteilnahme - Patient nimmt an Studie teil"
 * status = #final
 * code = $SCT#709491003 "Clinical trial participation (procedure)"
 * subject = Reference(mii-exa-test-data-onko-patient-1)
-* focus = Reference(mii-exa-test-data-onko-diagnose-1)
+* focus[primaertumor] = Reference(mii-exa-test-data-onko-diagnose-1)
+* focus[studie].display = "OVAR-21 Studie"
 * effectiveDateTime = "2021-07-01"
 * valueCodeableConcept = $mii-cs-onko-studienteilnahme#J "Ja"
 

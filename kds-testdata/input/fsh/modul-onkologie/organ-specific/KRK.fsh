@@ -16,6 +16,7 @@ Description: "Onkologie Test KRK Operation - Anteriore Resektion"
 * performedDateTime = "2021-09-30"
 * reasonReference = Reference(mii-exa-test-data-onko-diagnose-1)
 * extension[Intention].valueCodeableConcept = $mii-cs-onko-intention#K "kurativ"
+* usedCode.coding = $SCT#334101000 "Surgical stapling device (physical object)"
 
 // Abstand Tumor Anokutanlinie
 Instance: mii-exa-test-data-onko-krk-abstand-anokutan-1
@@ -104,6 +105,7 @@ Description: "Onkologie Test KRK Stoma Markierung"
 * subject = Reference(mii-exa-test-data-onko-patient-1)
 * reasonReference = Reference(mii-exa-test-data-onko-diagnose-1)
 * performedDateTime = "2021-09-25T10:00:00+02:00"
+* statusReason = $SCT#397943006 "Planned (qualifier value)"
 
 // KRK Specimen
 Instance: mii-exa-test-data-onko-krk-specimen-1
@@ -116,4 +118,5 @@ Description: "Onkologie Test KRK Specimen - Rektumresektat"
 * subject = Reference(mii-exa-test-data-onko-patient-1)
 * collection.collectedDateTime = "2021-09-30T11:00:00+02:00"
 * collection.bodySite = $SCT#34402009 "Rectum structure"
+* condition = $SCT#17621005 "Normal (qualifier value)"
 

@@ -27,6 +27,7 @@ Description: "Onkologie Test Befund - Pathologiebericht"
 * subject = Reference(mii-exa-test-data-onko-patient-1)
 * encounter = Reference(mii-exa-test-data-onko-encounter-1)
 * specimen = Reference(mii-exa-test-data-onko-specimen-1)
+* basedOn = Reference(mii-exa-test-data-onko-tumorkonferenz-1)
 * conclusion = "High-grade seröses Adenokarzinom des Ovars, pT3c pN1 M1b (HEP), L1 V0 Pn0, R0"
 
 // Grading
@@ -62,6 +63,8 @@ Description: "Onkologie Test Tumorgröße - 22mm"
 * valueQuantity.system = $UCUM
 * valueQuantity.code = #mm
 * focus = Reference(mii-exa-test-data-onko-diagnose-1)
+* bodySite.coding = $ICDO3#C56.9 "Ovar"
+* method = $SCT#787377000 "Gross examination and target (qualifier value)"
 
 // Histology ICD-O-3
 Instance: mii-exa-test-data-onko-histologie-icdo3-1

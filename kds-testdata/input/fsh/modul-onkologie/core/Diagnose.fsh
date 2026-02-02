@@ -19,6 +19,7 @@ Description: "Onkologie Test Diagnose - Ovarialkarzinom"
 * recordedDate = "2021-06-15"
 * bodySite.coding[primaertumorSeitenlokalisation] = $mii-cs-onko-seitenlokalisation#L "Links"
 * bodySite.coding[icd-o-3] = $ICDO3#C56.9 "Ovar"
+* extension[occurredFollowing].valueReference = Reference(mii-exa-test-data-onko-fruehere-tumorerkrankung-1)
 
 // Previous Tumor Disease
 Instance: mii-exa-test-data-onko-fruehere-tumorerkrankung-1
@@ -34,7 +35,10 @@ Description: "Onkologie Test - Frühere Tumorerkrankung"
 * code.coding[icd10-gm].version = "2015"
 * code.text = "Mammakarzinom 2015, in Remission"
 * subject = Reference(mii-exa-test-data-onko-patient-1)
+* encounter = Reference(mii-exa-test-data-onko-encounter-1)
 * recordedDate = "2015-03-15"
+* bodySite.coding[icd-o-3] = $ICDO3#C50.4 "Oberer äußerer Quadrant der Brustdrüse"
+* extension[morphology-behavior-icdo3].valueCodeableConcept.coding = $ICDO3#8500/3 "Invasives Karzinom, NOS"
 * note.text = "Zustand nach brusterhaltender OP und adjuvanter Therapie 2015"
 
 // Evidence List for Initial Diagnosis
@@ -45,7 +49,7 @@ Description: "Onkologie Test - Liste Evidenz Erstdiagnose"
 * insert TestDataLabel
 * status = #current
 * mode = #snapshot
-// title is fixed by profile to "Liste der Evidenz zum Erstdiagnosezeitpunkt"
+* title = "Liste der Evidenz zum Erstdiagnosezeitpunkt"
 * subject = Reference(mii-exa-test-data-onko-patient-1)
 * encounter = Reference(mii-exa-test-data-onko-encounter-1)
 * entry[0].flag = $SCT#168461002 "Imaging report"

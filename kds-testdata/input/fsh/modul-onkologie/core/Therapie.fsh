@@ -20,8 +20,10 @@ Description: "Onkologie Test Operation - Debulking Ovarialkarzinom"
 * extension[Urgency].valueCodeableConcept = $mii-cs-onko-operation-urgency#E "Elektiv"
 * outcome = $mii-cs-onko-residualstatus#R0 "Kein Residualtumor"
 * complication[compl_obds].coding = $mii-cs-onko-operation-komplikation#N "Nein"
+* complication[compl_icd10].coding = $ICD10GM|2021#T81.0 "Blutung und Hämatom als Komplikation eines Eingriffes, anderenorts nicht klassifiziert"
 * reasonReference = Reference(mii-exa-test-data-onko-diagnose-1)
 * basedOn = Reference(mii-exa-test-data-onko-tumorkonferenz-1)
+* partOf = Reference(mii-exa-test-data-onko-systemische-therapie-1)
 
 // Strahlentherapie (Chapter 14)
 Instance: mii-exa-test-data-onko-strahlentherapie-1
@@ -43,6 +45,8 @@ Description: "Onkologie Test Strahlentherapie - Adjuvante Bestrahlung"
 * extension[StellungZurOp].valueCodeableConcept.coding.display = "adjuvant"
 * outcome.coding = $mii-cs-onko-therapie-ende-grund#E "reguläres Ende"
 * reasonReference = Reference(mii-exa-test-data-onko-diagnose-1)
+* basedOn = Reference(mii-exa-test-data-onko-tumorkonferenz-2)
+* partOf = Reference(mii-exa-test-data-onko-verlauf-1)
 
 // Systemische Therapie (Chapter 16)
 Instance: mii-exa-test-data-onko-systemische-therapie-1
@@ -65,6 +69,10 @@ Description: "Onkologie Test Systemische Therapie - Neoadjuvante Chemotherapie C
 * outcome.coding = $mii-cs-onko-therapie-ende-grund#E "reguläres Ende"
 * reasonReference = Reference(mii-exa-test-data-onko-diagnose-1)
 * basedOn = Reference(mii-exa-test-data-onko-tumorkonferenz-1)
+* partOf = Reference(mii-exa-test-data-onko-operation-1)
+* usedCode.coding.system = $mii-cs-onko-systemische-therapie-protokolle
+* usedCode.coding.code = #CarboTax
+* usedCode.coding.display = "Carboplatin + Paclitaxel"
 
 // Systemische Therapie Medikation - Paclitaxel
 Instance: mii-exa-test-data-onko-medikation-1
@@ -126,6 +134,8 @@ Description: "Onkologie Test Strahlentherapie Bestrahlung - mit allen Dosisangab
 * performedPeriod.start = "2022-02-01"
 * performedPeriod.end = "2022-03-15"
 * partOf = Reference(mii-exa-test-data-onko-strahlentherapie-1)
+* basedOn = Reference(mii-exa-test-data-onko-tumorkonferenz-2)
+* reasonReference = Reference(mii-exa-test-data-onko-diagnose-1)
 // Zielgebiet mit Seitenlokalisation (covers bestrahlung-zielgebiet-lateralitaet)
 * bodySite.coding = $mii-cs-onko-strahlentherapie-zielgebiet#5.3 "Becken"
 * bodySite.extension[Seitenlokalisation].valueCodeableConcept = $mii-cs-onko-seitenlokalisation#L "links"
@@ -145,3 +155,42 @@ Description: "Onkologie Test Strahlentherapie Bestrahlung - mit allen Dosisangab
 * extension[Einzeldosis].valueQuantity.code = #Gy
 // Boost (covers bestrahlung-boost)
 * extension[Boost].valueCodeableConcept = $mii-cs-onko-strahlentherapie-boost#SIB "Simultan Integrierter Boost"
+
+// ============================================================================
+// Nuklearmedizinische Bestrahlung (Radionuklidtherapie)
+// Covers: mii-pr-onko-strahlentherapie-bestrahlung-nuklearmedizin
+// ============================================================================
+Instance: mii-exa-test-data-onko-bestrahlung-nuklearmedizin-1
+InstanceOf: MII_PR_Onko_Strahlentherapie_Bestrahlung_Nuklearmedizin
+Usage: #example
+Description: "Onkologie Test Nuklearmedizinische Bestrahlung - Radiojod-Therapie Schilddrüse"
+* insert TestDataLabel
+* status = #completed
+* category = $SCT#399315003 "Radionuclide therapy"
+* code.coding[ops] = $OPS#8-531 "Radiojodtherapie"
+* code.coding[ops].version = "2021"
+* subject = Reference(mii-exa-test-data-onko-patient-1)
+* performedPeriod.start = "2022-04-01"
+* performedPeriod.end = "2022-04-03"
+* partOf = Reference(mii-exa-test-data-onko-strahlentherapie-1)
+* basedOn = Reference(mii-exa-test-data-onko-tumorkonferenz-1)
+* reasonReference = Reference(mii-exa-test-data-onko-diagnose-1)
+// Zielgebiet mit Seitenlokalisation
+* bodySite.coding = $mii-cs-onko-strahlentherapie-zielgebiet#1 "Haut"
+* bodySite.extension[Seitenlokalisation].valueCodeableConcept = $mii-cs-onko-seitenlokalisation#T "trifft nicht zu"
+// Applikationsart - Radiojod-Therapie
+* extension[Applikationsart].valueCodeableConcept = $mii-cs-onko-strahlentherapie-applikationsart#MRJT "Radiojod-Therapie"
+// Strahlenart
+* usedCode[Strahlenart] = $mii-cs-onko-strahlentherapie-strahlenart#UH "Photonen (ultraharte Röntgenstrahlen, inklusive Gamma-Strahler)"
+// Gesamtdosis
+* extension[Gesamtdosis].valueQuantity.value = 3700
+* extension[Gesamtdosis].valueQuantity.unit = "MBq"
+* extension[Gesamtdosis].valueQuantity.system = $UCUM
+* extension[Gesamtdosis].valueQuantity.code = #MBq
+// Einzeldosis
+* extension[Einzeldosis].valueQuantity.value = 3700
+* extension[Einzeldosis].valueQuantity.unit = "MBq"
+* extension[Einzeldosis].valueQuantity.system = $UCUM
+* extension[Einzeldosis].valueQuantity.code = #MBq
+// Boost
+* extension[Boost].valueCodeableConcept = $mii-cs-onko-strahlentherapie-boost#N "keine Boostbestrahlung"

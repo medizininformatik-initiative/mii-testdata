@@ -74,6 +74,7 @@ Alias: $mii-cs-onko-prostata-postsurgical-complications = https://www.medizininf
 // Mamma-spezifisch
 Alias: $mii-cs-onko-mamma-her2neu-status-obds = https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-mamma-her2neu-status-obds
 Alias: $mii-cs-onko-mamma-her2neu-status-leitlinie = https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-mamma-her2neu-status-leitlinie
+Alias: $mii-cs-onko-mamma-rezeptorstatus-leitlinie = https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-mamma-rezeptorstatus-leitlinie
 
 // KRK-spezifisch
 Alias: $mii-cs-onko-krk-anastomoseninsuffizienz = https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-krk-anastomoseninsuffizienz

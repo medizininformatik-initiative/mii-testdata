@@ -12,9 +12,11 @@ Description: "Onkologie Test Tumorkonferenz - Prätherapeutisch mit OP + Chemo E
 * status = #active
 * intent = #plan
 * subject = Reference(mii-exa-test-data-onko-patient-1)
+* encounter = Reference(mii-exa-test-data-onko-encounter-1)
 * category = $mii-cs-onko-therapieplanung-typ#praeth "prätherapeutisch"
 * created = "2021-06-20"
 * addresses = Reference(mii-exa-test-data-onko-diagnose-1)
+* supportingInfo = Reference(mii-exa-test-data-onko-befund-1)
 * activity[obds][+].detail.code = $mii-cs-onko-therapie-typ#OP "Operation"
 * activity[obds][=].detail.status = #scheduled
 * activity[obds][+].detail.code = $mii-cs-onko-therapie-typ#CH "Chemotherapie"
@@ -45,6 +47,7 @@ InstanceOf: MII_PR_Onko_Therapieempfehlung_Operation
 Usage: #example
 Description: "Onkologie Test Therapieempfehlung Operation - Debulking"
 * insert TestDataLabel
+* identifier.value = "TE-OP-2021-001"
 * status = #active
 * intent = #proposal
 * category = $SCT#387713003 "Surgical procedure"
@@ -54,6 +57,7 @@ Description: "Onkologie Test Therapieempfehlung Operation - Debulking"
 * authoredOn = "2021-06-20"
 * reasonReference = Reference(mii-exa-test-data-onko-diagnose-1)
 * basedOn = Reference(mii-exa-test-data-onko-tumorkonferenz-1)
+* supportingInfo = Reference(mii-exa-test-data-onko-befund-1)
 
 // Therapieempfehlung Medikation (MedicationRequest)
 Instance: mii-exa-test-data-onko-therapieempfehlung-medikation-1
@@ -67,6 +71,7 @@ Description: "Onkologie Test Therapieempfehlung Medikation - Carboplatin"
 * authoredOn = "2021-06-20"
 * reasonReference[Primaertumor] = Reference(mii-exa-test-data-onko-diagnose-1)
 * medicationCodeableConcept.coding[atcClassDe] = $ATC_DE#L01XA02 "Carboplatin"
+* supportingInformation = Reference(mii-exa-test-data-onko-genetische-variante-1)
 
 // Second Therapieempfehlung Medikation
 Instance: mii-exa-test-data-onko-therapieempfehlung-medikation-2
@@ -87,17 +92,21 @@ InstanceOf: MII_PR_Onko_Therapieempfehlung_Kombinationstherapie
 Usage: #example
 Description: "Onkologie Test Therapieempfehlung Kombinationstherapie - CarboTax Schema"
 * insert TestDataLabel
+* identifier.value = "TE-KOMBI-2021-001"
 * status = #active
 * intent = #proposal
 * code = $mii-cs-onko-therapie-typ#CH "Chemotherapie"
 * code.text = "Carboplatin + Paclitaxel (CarboTax)"
 * subject = Reference(mii-exa-test-data-onko-patient-1)
+* encounter = Reference(mii-exa-test-data-onko-encounter-1)
 * authoredOn = "2021-06-20"
 * reasonReference = Reference(mii-exa-test-data-onko-diagnose-1)
-* action[+].title = "Carboplatin"
-* action[=].resource = Reference(mii-exa-test-data-onko-therapieempfehlung-medikation-1)
-* action[+].title = "Paclitaxel"
-* action[=].resource = Reference(mii-exa-test-data-onko-therapieempfehlung-medikation-2)
+* action[+].title = "CarboTax Chemotherapie"
+* action[=].resource = Reference(mii-exa-test-data-onko-tumorkonferenz-1)
+* action[=].action[+].title = "Carboplatin"
+* action[=].action[=].resource = Reference(mii-exa-test-data-onko-therapieempfehlung-medikation-1)
+* action[=].action[+].title = "Paclitaxel"
+* action[=].action[=].resource = Reference(mii-exa-test-data-onko-therapieempfehlung-medikation-2)
 
 // Alternative Tumorkonferenz with molecular board features
 Instance: mii-exa-test-data-onko-tumorkonferenz-molekular-1

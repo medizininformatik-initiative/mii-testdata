@@ -26,10 +26,12 @@ Description: "Onkologie Test Mamma Östrogenrezeptorstatus - Positiv"
 * subject = Reference(mii-exa-test-data-onko-patient-1)
 * focus = Reference(mii-exa-test-data-onko-diagnose-1)
 * effectiveDateTime = "2021-06-18"
-* valueCodeableConcept = $LNC#LA6576-8 "Positive"
+* valueCodeableConcept.coding[DefinitionOBDS] = $LNC#LA6576-8 "Positive"
+* valueCodeableConcept.coding[DefinitionLeitlinie] = $mii-cs-onko-mamma-rezeptorstatus-leitlinie#positiv "positiv"
 * component[AnteilPositiveZellen].valueQuantity.value = 85
 * component[AnteilPositiveZellen].valueQuantity.unit = "%"
 * component[AnteilPositiveZellen].valueQuantity.system = $UCUM
+* component[AnteilPositiveZellen].interpretation = http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation#H "High"
 * component[Faerbeintensitaet].valueCodeableConcept = $LNC#LA13035-3 "Strong"
 
 // Progesteron Receptor Status
@@ -44,6 +46,7 @@ Description: "Onkologie Test Mamma Progesteronrezeptorstatus - Positiv"
 * focus = Reference(mii-exa-test-data-onko-diagnose-1)
 * effectiveDateTime = "2021-06-18"
 * valueCodeableConcept.coding[DefinitionOBDS] = $LNC#LA6576-8 "Positive"
+* valueCodeableConcept.coding[DefinitionLeitlinie] = $mii-cs-onko-mamma-rezeptorstatus-leitlinie#positiv "positiv"
 * component[AnteilPositiveZellen].valueQuantity.value = 70
 * component[AnteilPositiveZellen].valueQuantity.unit = "%"
 * component[AnteilPositiveZellen].valueQuantity.system = $UCUM
@@ -80,6 +83,8 @@ Description: "Onkologie Test Mamma Her2neu Status - Positiv (3+)"
 * valueCodeableConcept.coding[DefinitionLeitlinie] = $mii-cs-onko-mamma-her2neu-status-leitlinie#positiv "HER2-positiv"
 * component[IHCScore].code = $LNC#85319-2 "HER2 [Presence] in Breast cancer specimen by Immune stain"
 * component[IHCScore].valueCodeableConcept = $LNC#LA11843-2 "3+"
+* component[ISHResult].code = $LNC#96893-3 "ERBB2 gene duplication in Tumor by FISH"
+* component[ISHResult].valueCodeableConcept = $LNC#LA6576-8 "Positive"
 
 // Präoperative Markierung
 Instance: mii-exa-test-data-onko-mamma-praeop-markierung-1
@@ -93,4 +98,36 @@ Description: "Onkologie Test Mamma Präoperative Markierung - Drahtmarkierung"
 * subject = Reference(mii-exa-test-data-onko-patient-1)
 * reasonReference = Reference(mii-exa-test-data-onko-diagnose-1)
 * performedDateTime = "2021-09-28T08:00:00+02:00"
+* partOf = Reference(mii-exa-test-data-onko-mamma-operation-1)
+
+// Mamma Operation
+Instance: mii-exa-test-data-onko-mamma-operation-1
+InstanceOf: MII_PR_Onko_Mamma_Operation
+Usage: #example
+Description: "Onkologie Test Mamma Operation - Brusterhaltende Therapie"
+* insert TestDataLabel
+* status = #completed
+* category = $SCT#387713003 "Surgical procedure"
+* code = $SCT#392021009 "Lumpectomy of breast (procedure)"
+* code.coding[ops] = $OPS#5-870.4 "Brusterhaltende Chirurgie: Segmentresektion"
+* code.coding[ops].version = "2021"
+* subject = Reference(mii-exa-test-data-onko-patient-1)
+* reasonReference = Reference(mii-exa-test-data-onko-diagnose-1)
+* performedDateTime = "2021-09-30"
+* extension[Intention].valueCodeableConcept = $mii-cs-onko-intention#K "kurativ"
+* usedCode[IntraoperativesImaging] = $SCT#168750009 "Specimen X-ray (procedure)"
+* usedCode[PraeoperativeMarkierung] = $SCT#433222002 "Insertion of guide wire into breast using ultrasound guidance (procedure)"
+
+// Mamma Sozialdienst
+Instance: mii-exa-test-data-onko-mamma-sozialdienst-1
+InstanceOf: MII_PR_Onko_Mamma_Sozialdienst
+Usage: #example
+Description: "Onkologie Test Mamma Sozialdienst - Psychosoziale Beratung"
+* insert TestDataLabel
+* status = #completed
+* category = $SCT#387713003 "Surgical procedure"
+* subject = Reference(mii-exa-test-data-onko-patient-1)
+* reasonReference = Reference(mii-exa-test-data-onko-diagnose-1)
+* performedDateTime = "2021-10-05"
+* extension[Intention].valueCodeableConcept = $mii-cs-onko-intention#K "kurativ"
 

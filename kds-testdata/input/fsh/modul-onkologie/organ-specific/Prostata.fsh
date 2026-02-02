@@ -69,6 +69,7 @@ Description: "Onkologie Test Prostata Gleason Primary Pattern (3)"
 * subject = Reference(mii-exa-test-data-onko-patient-1)
 * focus = Reference(mii-exa-test-data-onko-diagnose-1)
 * effectiveDateTime = "2021-06-10"
+* specimen = Reference(mii-exa-test-data-onko-specimen-1)
 * valueCodeableConcept = $SCT#369772003 "Gleason Pattern 3"
 
 // Gleason Secondary Pattern
@@ -127,6 +128,7 @@ Description: "Onkologie Test Prostata OP Komplikation - Clavien-Dindo IIIa"
 * focus[Diagnose] = Reference(mii-exa-test-data-onko-diagnose-1)
 * focus[Operation] = Reference(mii-exa-test-data-onko-prostata-surgery-1)
 * effectiveDateTime = "2021-10-15"
+* specimen = Reference(mii-exa-test-data-onko-specimen-1)
 * valueCodeableConcept.coding[ClavienDindo] = $SCT#1367522003 "Clavien-Dindo classification grade IIIa (finding)"
 * valueCodeableConcept.coding[OBDSPostOPKompl] = $mii-cs-onko-prostata-postsurgical-complications#J "Ja"
 
