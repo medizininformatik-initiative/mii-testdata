@@ -34,5 +34,6 @@ Description: "Observation: Diagnostische Implikation für Magenkarzinom"
 * derivedFrom[variant] = Reference(mii-exa-test-data-patient-4-molgen-variante-1)
 * component[conclusion-string].valueString = "Diese Variante wird nach den ACMG/AMP-Kriterien zusammenfasssend als pathogen bewertet entsprechend IARC Class 5."
 * component[clinical-significance].valueCodeableConcept = $loinc#LA6668-3 "Pathogenic"
-* component[functional-effect].valueCodeableConcept = $SO#SO:0002054 "loss_of_function_variant"
+// TODO: functional-effect component removed from diagnostische-implikation in molgen 2026.0.x
+// * component[functional-effect].valueCodeableConcept = $SO#SO:0002054 "loss_of_function_variant"
 * component[predicted-phenotype].valueCodeableConcept.coding[0] = $sct#716859000 "Hereditary diffuse carcinoma of stomach (disorder)"

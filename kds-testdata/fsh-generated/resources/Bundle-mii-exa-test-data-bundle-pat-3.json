@@ -166,8 +166,8 @@
           {
             "coding": [
               {
-                "code": "2.16.840.1.113883.3.1937.777.24.2.184",
-                "system": "https://www.medizininformatik-initiative.de/fhir/modul-consent/CodeSystem/mii-cs-consent-consent_category"
+                "system": "https://www.medizininformatik-initiative.de/fhir/modul-consent/CodeSystem/mii-cs-consent-version-modules",
+                "code": "2.16.840.1.113883.3.1937.777.24.2.184"
               }
             ]
           }
@@ -1368,15 +1368,15 @@
               {
                 "doseRange": {
                   "low": {
-                    "system": "http://unitsofmeasure.org",
                     "value": 500,
                     "code": "mg",
+                    "system": "http://unitsofmeasure.org",
                     "unit": "mg"
                   },
                   "high": {
-                    "system": "http://unitsofmeasure.org",
                     "value": 1000,
                     "code": "mg",
+                    "system": "http://unitsofmeasure.org",
                     "unit": "mg"
                   }
                 }
@@ -1384,23 +1384,17 @@
             ],
             "maxDosePerPeriod": {
               "numerator": {
-                "system": "http://unitsofmeasure.org",
                 "value": 5000,
                 "code": "mg",
+                "system": "http://unitsofmeasure.org",
                 "unit": "mg"
               },
               "denominator": {
-                "system": "http://unitsofmeasure.org",
                 "value": 24,
                 "code": "h",
+                "system": "http://unitsofmeasure.org",
                 "unit": "Stunden"
               }
-            },
-            "maxDosePerAdministration": {
-              "system": "http://unitsofmeasure.org",
-              "value": 1000,
-              "code": "mg",
-              "unit": "mg"
             },
             "text": "Die Einzeldosis 500-1000 mg, Tageshöchstdosis 5000 mg",
             "asNeededBoolean": true,
@@ -1412,6 +1406,12 @@
                   "display": "Oral use"
                 }
               ]
+            },
+            "maxDosePerAdministration": {
+              "value": 1000,
+              "code": "mg",
+              "system": "http://unitsofmeasure.org",
+              "unit": "mg"
             }
           }
         ],
@@ -1465,15 +1465,15 @@
               {
                 "rateRatio": {
                   "numerator": {
-                    "system": "http://unitsofmeasure.org",
                     "value": 1000,
                     "code": "mg",
+                    "system": "http://unitsofmeasure.org",
                     "unit": "mg"
                   },
                   "denominator": {
-                    "system": "http://unitsofmeasure.org",
                     "value": 46,
                     "code": "h",
+                    "system": "http://unitsofmeasure.org",
                     "unit": "h"
                   }
                 },
@@ -1547,15 +1547,15 @@
               {
                 "rateRatio": {
                   "numerator": {
-                    "system": "http://unitsofmeasure.org",
                     "value": 85,
                     "code": "mg",
+                    "system": "http://unitsofmeasure.org",
                     "unit": "mg"
                   },
                   "denominator": {
-                    "system": "http://unitsofmeasure.org",
                     "value": 2,
                     "code": "h",
+                    "system": "http://unitsofmeasure.org",
                     "unit": "h"
                   }
                 },
@@ -1659,15 +1659,15 @@
               {
                 "doseRange": {
                   "low": {
-                    "system": "http://unitsofmeasure.org",
                     "value": 500,
                     "code": "mg",
+                    "system": "http://unitsofmeasure.org",
                     "unit": "mg"
                   },
                   "high": {
-                    "system": "http://unitsofmeasure.org",
                     "value": 1000,
                     "code": "mg",
+                    "system": "http://unitsofmeasure.org",
                     "unit": "mg"
                   }
                 }
@@ -1675,25 +1675,25 @@
             ],
             "maxDosePerPeriod": {
               "numerator": {
-                "system": "http://unitsofmeasure.org",
                 "value": 5000,
                 "code": "mg",
+                "system": "http://unitsofmeasure.org",
                 "unit": "mg"
               },
               "denominator": {
-                "system": "http://unitsofmeasure.org",
                 "value": 24,
                 "code": "h",
+                "system": "http://unitsofmeasure.org",
                 "unit": "Stunden"
               }
             },
+            "asNeededBoolean": true,
             "maxDosePerAdministration": {
-              "system": "http://unitsofmeasure.org",
               "value": 1000,
               "code": "mg",
+              "system": "http://unitsofmeasure.org",
               "unit": "mg"
-            },
-            "asNeededBoolean": true
+            }
           }
         ],
         "status": "unknown",
@@ -1773,22 +1773,22 @@
               {
                 "rateRatio": {
                   "numerator": {
-                    "system": "http://unitsofmeasure.org",
                     "value": 1000,
                     "code": "mg",
+                    "system": "http://unitsofmeasure.org",
                     "unit": "mg"
                   },
                   "denominator": {
-                    "system": "http://unitsofmeasure.org",
                     "value": 46,
                     "code": "h",
+                    "system": "http://unitsofmeasure.org",
                     "unit": "h"
                   }
                 },
                 "doseQuantity": {
-                  "system": "http://unitsofmeasure.org",
                   "value": 1000,
                   "code": "mg",
+                  "system": "http://unitsofmeasure.org",
                   "unit": "mg"
                 }
               }
@@ -1873,22 +1873,22 @@
               {
                 "rateRatio": {
                   "numerator": {
-                    "system": "http://unitsofmeasure.org",
                     "value": 85,
                     "code": "mg",
+                    "system": "http://unitsofmeasure.org",
                     "unit": "mg"
                   },
                   "denominator": {
-                    "system": "http://unitsofmeasure.org",
                     "value": 2,
                     "code": "h",
+                    "system": "http://unitsofmeasure.org",
                     "unit": "h"
                   }
                 },
                 "doseQuantity": {
-                  "system": "http://unitsofmeasure.org",
                   "value": 85,
                   "code": "mg",
+                  "system": "http://unitsofmeasure.org",
                   "unit": "mg"
                 }
               }
@@ -1958,9 +1958,9 @@
             "doseAndRate": [
               {
                 "doseQuantity": {
-                  "system": "http://unitsofmeasure.org",
                   "value": 50,
                   "code": "mg/kg",
+                  "system": "http://unitsofmeasure.org",
                   "unit": "mg/kilogram"
                 }
               }
@@ -2034,13 +2034,13 @@
               }
             ]
           },
+          "text": "Metamizol 500mg oral bei Schmerzen",
           "dose": {
-            "system": "http://unitsofmeasure.org",
             "value": 500,
             "code": "mg",
+            "system": "http://unitsofmeasure.org",
             "unit": "mg"
-          },
-          "text": "Metamizol 500mg oral bei Schmerzen"
+          }
         },
         "status": "completed",
         "category": {
@@ -2110,25 +2110,25 @@
           },
           "rateRatio": {
             "numerator": {
-              "system": "http://unitsofmeasure.org",
               "value": 1000,
               "code": "mg",
+              "system": "http://unitsofmeasure.org",
               "unit": "mg"
             },
             "denominator": {
-              "system": "http://unitsofmeasure.org",
               "value": 46,
               "code": "h",
+              "system": "http://unitsofmeasure.org",
               "unit": "h"
             }
           },
+          "text": "5-FU 1000mg IV über 46 Stunden",
           "dose": {
-            "system": "http://unitsofmeasure.org",
             "value": 1000,
             "code": "mg",
+            "system": "http://unitsofmeasure.org",
             "unit": "mg"
-          },
-          "text": "5-FU 1000mg IV über 46 Stunden"
+          }
         },
         "status": "completed",
         "category": {
@@ -2197,25 +2197,25 @@
           },
           "rateRatio": {
             "numerator": {
-              "system": "http://unitsofmeasure.org",
               "value": 85,
               "code": "mg",
+              "system": "http://unitsofmeasure.org",
               "unit": "mg"
             },
             "denominator": {
-              "system": "http://unitsofmeasure.org",
               "value": 2,
               "code": "h",
+              "system": "http://unitsofmeasure.org",
               "unit": "h"
             }
           },
+          "text": "Oxaliplatin 85mg IV über 2 Stunden",
           "dose": {
-            "system": "http://unitsofmeasure.org",
             "value": 85,
             "code": "mg",
+            "system": "http://unitsofmeasure.org",
             "unit": "mg"
-          },
-          "text": "Oxaliplatin 85mg IV über 2 Stunden"
+          }
         },
         "status": "completed",
         "category": {
@@ -2857,9 +2857,6 @@
         ],
         "result": [
           {
-            "reference": "Observation/mii-exa-test-data-patient-3-molgen-ergebnis-zusammenfassung-1"
-          },
-          {
             "reference": "Observation/mii-exa-test-data-patient-3-molgen-diagnostische-implikation-1"
           },
           {
@@ -2869,101 +2866,23 @@
             "reference": "Observation/mii-exa-test-data-patient-3-molgen-variante-1"
           },
           {
-            "reference": "Observation/mii-exa-test-data-patient-3-molgen-untersuchte-region-1"
-          },
-          {
             "reference": "Observation/mii-exa-test-data-patient-3-molgen-genotyp-1"
-          },
-          {
-            "reference": "Observation/mii-exa-test-data-patient-3-molgen-mutationslast-1"
-          },
-          {
-            "reference": "Observation/mii-exa-test-data-patient-3-molgen-msi-1"
           }
         ],
-        "status": "final",
         "code": {
           "coding": [
             {
-              "code": "51969-4",
               "system": "http://loinc.org",
+              "code": "51969-4",
               "display": "Genetic analysis report"
             }
           ]
         },
-        "subject": {
-          "reference": "Patient/mii-exa-test-data-patient-3"
-        },
-        "conclusion": "BRAF p.V600E Mutation liegt vor. Bitte Therapieoption mit einem BRAF-Inhibitor prüfen."
-      }
-    },
-    {
-      "request": {
-        "method": "POST",
-        "url": "Observation"
-      },
-      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-3-molgen-ergebnis-zusammenfassung-1",
-      "resource": {
-        "resourceType": "Observation",
-        "id": "mii-exa-test-data-patient-3-molgen-ergebnis-zusammenfassung-1",
-        "meta": {
-          "security": [
-            {
-              "code": "HTEST",
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
-              "display": "test health data"
-            }
-          ],
-          "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/ergebnis-zusammenfassung",
-            "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/overall-interpretation"
-          ]
-        },
-        "category": [
-          {
-            "coding": [
-              {
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-                "code": "laboratory",
-                "display": "Laboratory"
-              }
-            ]
-          }
-        ],
-        "component": [
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs",
-                  "code": "conclusion-string"
-                }
-              ]
-            },
-            "valueString": "BRAF p.V600E Mutation liegt vor. Bitte Therapieoption mit einem BRAF-Inhibitor prüfen."
-          }
-        ],
-        "code": {
-          "coding": [
-            {
-              "system": "http://loinc.org",
-              "code": "51968-6"
-            }
-          ]
-        },
         "status": "final",
         "subject": {
           "reference": "Patient/mii-exa-test-data-patient-3"
         },
-        "valueCodeableConcept": {
-          "coding": [
-            {
-              "code": "LA6576-8",
-              "system": "http://loinc.org",
-              "display": "Positive"
-            }
-          ]
-        }
+        "conclusion": "BRAF p.V600E Mutation liegt vor. Bitte Therapieoption mit einem BRAF-Inhibitor prüfen."
       }
     },
     {
@@ -2995,6 +2914,14 @@
                 "system": "http://terminology.hl7.org/CodeSystem/observation-category",
                 "code": "laboratory",
                 "display": "Laboratory"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                "code": "GE"
               }
             ]
           }
@@ -3061,6 +2988,14 @@
                 "system": "http://terminology.hl7.org/CodeSystem/observation-category",
                 "code": "laboratory",
                 "display": "Laboratory"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                "code": "GE"
               }
             ]
           }
@@ -3201,11 +3136,14 @@
                 "display": "Laboratory"
               }
             ]
-          }
-        ],
-        "derivedFrom": [
+          },
           {
-            "reference": "Observation/mii-exa-test-data-patient-3-molgen-untersuchte-region-1"
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                "code": "GE"
+              }
+            ]
           }
         ],
         "component": [
@@ -3370,26 +3308,6 @@
               "coding": [
                 {
                   "system": "http://loinc.org",
-                  "code": "48006-1",
-                  "display": "Amino acid change [Type]"
-                }
-              ]
-            },
-            "valueCodeableConcept": {
-              "coding": [
-                {
-                  "code": "LA6698-0",
-                  "system": "http://loinc.org",
-                  "display": "Missense"
-                }
-              ]
-            }
-          },
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
                   "code": "81252-9",
                   "display": "Discrete genetic variant"
                 }
@@ -3449,191 +3367,6 @@
         "method": "POST",
         "url": "Observation"
       },
-      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-3-molgen-untersuchte-region-1",
-      "resource": {
-        "resourceType": "Observation",
-        "id": "mii-exa-test-data-patient-3-molgen-untersuchte-region-1",
-        "meta": {
-          "security": [
-            {
-              "code": "HTEST",
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
-              "display": "test health data"
-            }
-          ],
-          "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/untersuchte-region",
-            "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/region-studied"
-          ]
-        },
-        "category": [
-          {
-            "coding": [
-              {
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-                "code": "laboratory",
-                "display": "Laboratory"
-              }
-            ]
-          }
-        ],
-        "component": [
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "48018-6",
-                  "display": "Gene studied [ID]"
-                }
-              ]
-            },
-            "valueCodeableConcept": {
-              "coding": [
-                {
-                  "code": "HGNC:1097",
-                  "system": "http://www.genenames.org/geneId",
-                  "display": "BRAF"
-                }
-              ]
-            }
-          },
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "36908-2",
-                  "display": "Gene mutations tested for in Blood or Tissue by Molecular genetics method Nominal"
-                }
-              ]
-            },
-            "valueCodeableConcept": {
-              "coding": [
-                {
-                  "code": "NM_004333.4:c.1799T>A",
-                  "system": "http://varnomen.hgvs.org"
-                }
-              ]
-            }
-          },
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "81293-3",
-                  "display": "Description of ranges of DNA sequences examined"
-                }
-              ]
-            },
-            "valueString": "BRAF: Exon 15 (Codon 600)"
-          },
-          {
-            "valueRange": {
-              "low": {
-                "value": 15,
-                "code": "{Exon}",
-                "system": "http://unitsofmeasure.org",
-                "unit": "Exon"
-              },
-              "high": {
-                "value": 15,
-                "code": "{Exon}",
-                "system": "http://unitsofmeasure.org",
-                "unit": "Exon"
-              }
-            },
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "51959-5",
-                  "display": "Range(s) of DNA sequence examined"
-                }
-              ]
-            }
-          },
-          {
-            "valueRange": {
-              "low": {
-                "value": 582,
-                "code": "{Codon}",
-                "system": "http://unitsofmeasure.org",
-                "unit": "Codon"
-              },
-              "high": {
-                "value": 612,
-                "code": "{Codon}",
-                "system": "http://unitsofmeasure.org",
-                "unit": "Codon"
-              }
-            },
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "51959-5",
-                  "display": "Range(s) of DNA sequence examined"
-                }
-              ]
-            }
-          },
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "48013-7",
-                  "display": "Genomic reference sequence [ID]"
-                }
-              ]
-            },
-            "valueCodeableConcept": {
-              "coding": [
-                {
-                  "code": "NM_004333.4",
-                  "system": "http://www.ncbi.nlm.nih.gov/refseq"
-                }
-              ]
-            }
-          }
-        ],
-        "code": {
-          "coding": [
-            {
-              "system": "http://loinc.org",
-              "code": "53041-0",
-              "display": "DNA region of interest panel"
-            }
-          ]
-        },
-        "status": "final",
-        "subject": {
-          "reference": "Patient/mii-exa-test-data-patient-3"
-        },
-        "method": {
-          "coding": [
-            {
-              "code": "LA26398-0",
-              "system": "http://loinc.org",
-              "display": "Sequencing"
-            }
-          ]
-        },
-        "specimen": {
-          "reference": "Specimen/mii-exa-test-data-patient-3-specimen-1"
-        },
-        "device": {
-          "reference": "Device/mii-exa-test-data-molgen-device-sequencer"
-        }
-      }
-    },
-    {
-      "request": {
-        "method": "POST",
-        "url": "Observation"
-      },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-3-molgen-genotyp-1",
       "resource": {
         "resourceType": "Observation",
@@ -3658,6 +3391,14 @@
                 "system": "http://terminology.hl7.org/CodeSystem/observation-category",
                 "code": "laboratory",
                 "display": "Laboratory"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                "code": "GE"
               }
             ]
           }
@@ -3772,26 +3513,34 @@
                 "display": "Laboratory"
               }
             ]
+          },
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs",
+                "code": "biomarker-category"
+              }
+            ]
           }
         ],
+        "status": "final",
         "code": {
           "coding": [
             {
-              "system": "http://loinc.org",
               "code": "94076-7",
+              "system": "http://loinc.org",
               "display": "Mutations/Megabase [# Ratio] in Tumor"
             }
           ]
         },
-        "valueQuantity": {
-          "system": "http://unitsofmeasure.org",
-          "code": "1/1000000{Base}",
-          "value": 12,
-          "unit": "Mutations/Megabase"
-        },
-        "status": "final",
         "subject": {
           "reference": "Patient/mii-exa-test-data-patient-3"
+        },
+        "valueQuantity": {
+          "value": 12,
+          "code": "1/1000000{Base}",
+          "system": "http://unitsofmeasure.org",
+          "unit": "Mutations/Megabase"
         },
         "specimen": {
           "reference": "Specimen/mii-exa-test-data-patient-3-specimen-1"
@@ -3829,31 +3578,26 @@
                 "display": "Laboratory"
               }
             ]
-          }
-        ],
-        "component": [
+          },
           {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs",
-                  "code": "conclusion-string"
-                }
-              ]
-            },
-            "valueString": "Tumor weist ein mikrosatellitenstabiles Wachstum auf."
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs",
+                "code": "biomarker-category"
+              }
+            ]
           }
         ],
+        "status": "final",
         "code": {
           "coding": [
             {
-              "system": "http://loinc.org",
               "code": "81695-9",
+              "system": "http://loinc.org",
               "display": "Microsatellite instability [Interpretation] in Cancer specimen Qualitative"
             }
           ]
         },
-        "status": "final",
         "subject": {
           "reference": "Patient/mii-exa-test-data-patient-3"
         },
@@ -4105,11 +3849,37 @@
             "value": "BP_000002"
           }
         ],
+        "container": [
+          {
+            "capacity": {
+              "system": "http://unitsofmeasure.org",
+              "value": 5,
+              "code": "ml",
+              "unit": "mL"
+            },
+            "specimenQuantity": {
+              "system": "http://unitsofmeasure.org",
+              "value": 5,
+              "code": "ml",
+              "unit": "mL"
+            },
+            "type": {
+              "coding": [
+                {
+                  "code": "83059008",
+                  "system": "http://snomed.info/sct",
+                  "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+                  "display": "Tube, device (physical object)"
+                }
+              ]
+            }
+          }
+        ],
         "type": {
           "coding": [
             {
-              "code": "128159001",
               "system": "http://snomed.info/sct",
+              "code": "128159001",
               "version": "http://snomed.info/sct/900000000000207008/version/20230731",
               "display": "Tissue specimen from colon (specimen)"
             }
@@ -4165,8 +3935,8 @@
         "type": {
           "coding": [
             {
-              "code": "119364003",
               "system": "http://snomed.info/sct",
+              "code": "119364003",
               "version": "http://snomed.info/sct/900000000000207008/version/20230731",
               "display": "Serum specimen (specimen)"
             }
@@ -4187,6 +3957,18 @@
         },
         "container": [
           {
+            "capacity": {
+              "system": "http://unitsofmeasure.org",
+              "value": 7,
+              "code": "ml",
+              "unit": "mL"
+            },
+            "specimenQuantity": {
+              "system": "http://unitsofmeasure.org",
+              "value": 7,
+              "code": "ml",
+              "unit": "mL"
+            },
             "type": {
               "coding": [
                 {
@@ -4196,16 +3978,6 @@
                   "display": "Tube, device (physical object)"
                 }
               ]
-            },
-            "capacity": {
-              "value": 7,
-              "code": "ml",
-              "system": "http://unitsofmeasure.org"
-            },
-            "specimenQuantity": {
-              "value": 7,
-              "code": "ml",
-              "system": "http://unitsofmeasure.org"
             }
           }
         ],
@@ -4259,8 +4031,8 @@
         "type": {
           "coding": [
             {
-              "code": "445295009",
               "system": "http://snomed.info/sct",
+              "code": "445295009",
               "version": "http://snomed.info/sct/900000000000207008/version/20230731",
               "display": "Blood specimen with edetic acid (specimen)"
             }
@@ -4281,6 +4053,18 @@
         },
         "container": [
           {
+            "capacity": {
+              "system": "http://unitsofmeasure.org",
+              "value": 5,
+              "code": "ml",
+              "unit": "mL"
+            },
+            "specimenQuantity": {
+              "system": "http://unitsofmeasure.org",
+              "value": 5,
+              "code": "ml",
+              "unit": "mL"
+            },
             "type": {
               "coding": [
                 {
@@ -4290,16 +4074,6 @@
                   "display": "Tube, device (physical object)"
                 }
               ]
-            },
-            "capacity": {
-              "value": 5,
-              "code": "ml",
-              "system": "http://unitsofmeasure.org"
-            },
-            "specimenQuantity": {
-              "value": 5,
-              "code": "ml",
-              "system": "http://unitsofmeasure.org"
             }
           }
         ],

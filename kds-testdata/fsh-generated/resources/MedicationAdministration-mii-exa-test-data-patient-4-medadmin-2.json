@@ -29,13 +29,13 @@
         }
       ]
     },
+    "text": "Omeprazol 20mg oral morgens",
     "dose": {
-      "system": "http://unitsofmeasure.org",
       "value": 20,
       "code": "mg",
+      "system": "http://unitsofmeasure.org",
       "unit": "mg"
-    },
-    "text": "Omeprazol 20mg oral morgens"
+    }
   },
   "status": "completed",
   "category": {

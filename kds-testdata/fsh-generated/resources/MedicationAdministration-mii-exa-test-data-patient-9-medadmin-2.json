@@ -40,9 +40,9 @@
       ]
     },
     "dose": {
-      "system": "http://unitsofmeasure.org",
       "value": 500,
       "unit": "mg",
+      "system": "http://unitsofmeasure.org",
       "code": "mg"
     },
     "text": "Paracetamol 500mg oral bei postoperativen Schmerzen"

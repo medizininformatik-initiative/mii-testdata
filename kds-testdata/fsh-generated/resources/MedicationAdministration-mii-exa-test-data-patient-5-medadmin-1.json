@@ -29,13 +29,13 @@
         }
       ]
     },
+    "text": "Leuprorelin 3,75mg s.c.",
     "dose": {
-      "system": "http://unitsofmeasure.org",
       "value": 3.75,
       "code": "mg",
+      "system": "http://unitsofmeasure.org",
       "unit": "mg"
-    },
-    "text": "Leuprorelin 3,75mg s.c."
+    }
   },
   "status": "completed",
   "category": {

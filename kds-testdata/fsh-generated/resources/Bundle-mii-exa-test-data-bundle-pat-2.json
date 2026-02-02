@@ -130,8 +130,8 @@
           {
             "coding": [
               {
-                "code": "2.16.840.1.113883.3.1937.777.24.2.184",
-                "system": "https://www.medizininformatik-initiative.de/fhir/modul-consent/CodeSystem/mii-cs-consent-consent_category"
+                "system": "https://www.medizininformatik-initiative.de/fhir/modul-consent/CodeSystem/mii-cs-consent-version-modules",
+                "code": "2.16.840.1.113883.3.1937.777.24.2.184"
               }
             ]
           }
@@ -1660,15 +1660,15 @@
               {
                 "rateRatio": {
                   "numerator": {
-                    "system": "http://unitsofmeasure.org",
                     "value": 450,
                     "code": "mg",
+                    "system": "http://unitsofmeasure.org",
                     "unit": "mg"
                   },
                   "denominator": {
-                    "system": "http://unitsofmeasure.org",
                     "value": 1,
                     "code": "h",
+                    "system": "http://unitsofmeasure.org",
                     "unit": "h"
                   }
                 },
@@ -1742,15 +1742,15 @@
               {
                 "rateRatio": {
                   "numerator": {
-                    "system": "http://unitsofmeasure.org",
                     "value": 175,
                     "code": "mg",
+                    "system": "http://unitsofmeasure.org",
                     "unit": "mg"
                   },
                   "denominator": {
-                    "system": "http://unitsofmeasure.org",
                     "value": 3,
                     "code": "h",
+                    "system": "http://unitsofmeasure.org",
                     "unit": "h"
                   }
                 },
@@ -1854,9 +1854,9 @@
             "doseAndRate": [
               {
                 "doseQuantity": {
-                  "system": "http://unitsofmeasure.org",
                   "value": 10,
                   "code": "mg",
+                  "system": "http://unitsofmeasure.org",
                   "unit": "mg"
                 }
               }
@@ -1949,22 +1949,22 @@
               {
                 "rateRatio": {
                   "numerator": {
-                    "system": "http://unitsofmeasure.org",
                     "value": 450,
                     "code": "mg",
+                    "system": "http://unitsofmeasure.org",
                     "unit": "mg"
                   },
                   "denominator": {
-                    "system": "http://unitsofmeasure.org",
                     "value": 1,
                     "code": "h",
+                    "system": "http://unitsofmeasure.org",
                     "unit": "h"
                   }
                 },
                 "doseQuantity": {
-                  "system": "http://unitsofmeasure.org",
                   "value": 450,
                   "code": "mg",
+                  "system": "http://unitsofmeasure.org",
                   "unit": "mg"
                 }
               }
@@ -2049,22 +2049,22 @@
               {
                 "rateRatio": {
                   "numerator": {
-                    "system": "http://unitsofmeasure.org",
                     "value": 175,
                     "code": "mg",
+                    "system": "http://unitsofmeasure.org",
                     "unit": "mg"
                   },
                   "denominator": {
-                    "system": "http://unitsofmeasure.org",
                     "value": 3,
                     "code": "h",
+                    "system": "http://unitsofmeasure.org",
                     "unit": "h"
                   }
                 },
                 "doseQuantity": {
-                  "system": "http://unitsofmeasure.org",
                   "value": 175,
                   "code": "mg",
+                  "system": "http://unitsofmeasure.org",
                   "unit": "mg"
                 }
               }
@@ -2156,14 +2156,14 @@
               {
                 "rateRange": {
                   "low": {
-                    "system": "http://unitsofmeasure.org",
                     "value": 150,
-                    "code": "mL/h"
+                    "code": "mL/h",
+                    "system": "http://unitsofmeasure.org"
                   },
                   "high": {
-                    "system": "http://unitsofmeasure.org",
                     "value": 300,
-                    "code": "mL/h"
+                    "code": "mL/h",
+                    "system": "http://unitsofmeasure.org"
                   }
                 }
               }
@@ -2248,14 +2248,14 @@
               {
                 "rateRatio": {
                   "numerator": {
-                    "system": "http://unitsofmeasure.org",
                     "value": 150,
-                    "code": "mL"
+                    "code": "mL",
+                    "system": "http://unitsofmeasure.org"
                   },
                   "denominator": {
-                    "system": "http://unitsofmeasure.org",
                     "value": 1,
-                    "code": "h"
+                    "code": "h",
+                    "system": "http://unitsofmeasure.org"
                   }
                 }
               }
@@ -2306,13 +2306,13 @@
               }
             ]
           },
+          "text": "Morphin 10mg oral bei Schmerzen",
           "dose": {
-            "system": "http://unitsofmeasure.org",
             "value": 10,
             "code": "mg",
+            "system": "http://unitsofmeasure.org",
             "unit": "mg"
-          },
-          "text": "Morphin 10mg oral bei Schmerzen"
+          }
         },
         "status": "completed",
         "category": {
@@ -2382,25 +2382,25 @@
           },
           "rateRatio": {
             "numerator": {
-              "system": "http://unitsofmeasure.org",
               "value": 450,
               "code": "mg",
+              "system": "http://unitsofmeasure.org",
               "unit": "mg"
             },
             "denominator": {
-              "system": "http://unitsofmeasure.org",
               "value": 1,
               "code": "h",
+              "system": "http://unitsofmeasure.org",
               "unit": "h"
             }
           },
+          "text": "Carboplatin 450mg IV über 1 Stunde",
           "dose": {
-            "system": "http://unitsofmeasure.org",
             "value": 450,
             "code": "mg",
+            "system": "http://unitsofmeasure.org",
             "unit": "mg"
-          },
-          "text": "Carboplatin 450mg IV über 1 Stunde"
+          }
         },
         "status": "completed",
         "category": {
@@ -2469,25 +2469,25 @@
           },
           "rateRatio": {
             "numerator": {
-              "system": "http://unitsofmeasure.org",
               "value": 175,
               "code": "mg",
+              "system": "http://unitsofmeasure.org",
               "unit": "mg"
             },
             "denominator": {
-              "system": "http://unitsofmeasure.org",
               "value": 3,
               "code": "h",
+              "system": "http://unitsofmeasure.org",
               "unit": "h"
             }
           },
+          "text": "Paclitaxel 175mg IV über 3 Stunden",
           "dose": {
-            "system": "http://unitsofmeasure.org",
             "value": 175,
             "code": "mg",
+            "system": "http://unitsofmeasure.org",
             "unit": "mg"
-          },
-          "text": "Paclitaxel 175mg IV über 3 Stunden"
+          }
         },
         "status": "completed",
         "category": {
@@ -2822,8 +2822,8 @@
         "type": {
           "coding": [
             {
-              "code": "445295009",
               "system": "http://snomed.info/sct",
+              "code": "445295009",
               "version": "http://snomed.info/sct/900000000000207008/version/20230731",
               "display": "Blood specimen with edetic acid (specimen)"
             }
@@ -2844,6 +2844,18 @@
         },
         "container": [
           {
+            "capacity": {
+              "system": "http://unitsofmeasure.org",
+              "value": 5,
+              "code": "ml",
+              "unit": "mL"
+            },
+            "specimenQuantity": {
+              "system": "http://unitsofmeasure.org",
+              "value": 5,
+              "code": "ml",
+              "unit": "mL"
+            },
             "type": {
               "coding": [
                 {
@@ -2853,16 +2865,6 @@
                   "display": "Tube, device (physical object)"
                 }
               ]
-            },
-            "capacity": {
-              "value": 5,
-              "code": "ml",
-              "system": "http://unitsofmeasure.org"
-            },
-            "specimenQuantity": {
-              "value": 5,
-              "code": "ml",
-              "system": "http://unitsofmeasure.org"
             }
           }
         ],

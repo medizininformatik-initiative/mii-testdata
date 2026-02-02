@@ -25,15 +25,15 @@
         {
           "doseRange": {
             "low": {
-              "system": "http://unitsofmeasure.org",
               "value": 500,
               "code": "mg",
+              "system": "http://unitsofmeasure.org",
               "unit": "mg"
             },
             "high": {
-              "system": "http://unitsofmeasure.org",
               "value": 1000,
               "code": "mg",
+              "system": "http://unitsofmeasure.org",
               "unit": "mg"
             }
           }
@@ -41,23 +41,17 @@
       ],
       "maxDosePerPeriod": {
         "numerator": {
-          "system": "http://unitsofmeasure.org",
           "value": 5000,
           "code": "mg",
+          "system": "http://unitsofmeasure.org",
           "unit": "mg"
         },
         "denominator": {
-          "system": "http://unitsofmeasure.org",
           "value": 24,
           "code": "h",
+          "system": "http://unitsofmeasure.org",
           "unit": "Stunden"
         }
-      },
-      "maxDosePerAdministration": {
-        "system": "http://unitsofmeasure.org",
-        "value": 1000,
-        "code": "mg",
-        "unit": "mg"
       },
       "text": "Die Einzeldosis 500-1000 mg, Tageshöchstdosis 5000 mg",
       "asNeededBoolean": true,
@@ -69,6 +63,12 @@
             "display": "Oral use"
           }
         ]
+      },
+      "maxDosePerAdministration": {
+        "value": 1000,
+        "code": "mg",
+        "system": "http://unitsofmeasure.org",
+        "unit": "mg"
       }
     }
   ],

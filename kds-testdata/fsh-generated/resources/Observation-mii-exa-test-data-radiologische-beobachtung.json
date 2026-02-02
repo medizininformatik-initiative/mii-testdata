@@ -21,14 +21,26 @@
     {
       "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-sop-instanz-uid",
       "valueId": "1.2.34.5.6789.1.2.3.45678.9123456789123456789123456789"
-    },
-    {
-      "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-Observation.bodyStructure",
-      "valueReference": {
-        "reference": "BodyStructure/mii-exa-test-data-koerperstruktur"
-      }
     }
   ],
+  "bodySite": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/bodySite",
+        "valueReference": {
+          "reference": "BodyStructure/mii-exa-test-data-koerperstruktur"
+        }
+      }
+    ],
+    "coding": [
+      {
+        "code": "76752008",
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+        "display": "Breast structure (body structure)"
+      }
+    ]
+  },
   "partOf": [
     {
       "reference": "Procedure/mii-exa-test-data-befundungsprozedur"
@@ -83,15 +95,5 @@
     "reference": "Patient/mii-exa-test-data-patient-1"
   },
   "issued": "2024-07-19T12:03:30+02:00",
-  "valueString": "microcalcifications in the upper outer quadrant in the left breast",
-  "bodySite": {
-    "coding": [
-      {
-        "code": "76752008",
-        "system": "http://snomed.info/sct",
-        "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-        "display": "Breast structure (body structure)"
-      }
-    ]
-  }
+  "valueString": "microcalcifications in the upper outer quadrant in the left breast"
 }

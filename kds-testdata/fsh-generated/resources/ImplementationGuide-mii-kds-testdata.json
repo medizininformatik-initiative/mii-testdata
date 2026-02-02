@@ -2,7 +2,7 @@
   "resourceType": "ImplementationGuide",
   "id": "mii-kds-testdata",
   "url": "https://www.medizininformatik-initiative.de/fhir/testdata/ImplementationGuide/mii-kds-testdata",
-  "version": "2025.0.0",
+  "version": "2026.0.0",
   "name": "MIIKDSTestData",
   "title": "MII KDS Test Data",
   "status": "draft",
@@ -37,62 +37,44 @@
   ],
   "dependsOn": [
     {
-      "packageId": "de.medizininformatikinitiative.kerndatensatz.person",
-      "version": "2025.0.x",
-      "uri": "https://www.medizininformatik-initiative.de/fhir/core/modul-person/ImplementationGuide/mii-ig-person",
-      "id": "de_medizininformatikinitiative_kerndatensatz_person"
-    },
-    {
-      "packageId": "de.medizininformatikinitiative.kerndatensatz.diagnose",
-      "version": "2025.0.x",
-      "uri": "https://www.medizininformatik-initiative.de/fhir/core/modul-diagnose/ImplementationGuide/mii-ig-diagnose",
-      "id": "de_medizininformatikinitiative_kerndatensatz_diagnose"
-    },
-    {
-      "packageId": "de.medizininformatikinitiative.kerndatensatz.prozedur",
-      "version": "2025.0.x",
-      "uri": "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/ImplementationGuide/mii-ig-prozedur",
-      "id": "de_medizininformatikinitiative_kerndatensatz_prozedur"
+      "packageId": "de.medizininformatikinitiative.kerndatensatz.base",
+      "version": "2026.0.x",
+      "uri": "https://www.medizininformatik-initiative.de/fhir/modul-base/ImplementationGuide/mii-ig-base",
+      "id": "de_medizininformatikinitiative_kerndatensatz_base"
     },
     {
       "packageId": "de.medizininformatikinitiative.kerndatensatz.medikation",
-      "version": "2025.0.x",
+      "version": "2026.0.x",
       "uri": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ImplementationGuide/mii-ig-medikation",
       "id": "de_medizininformatikinitiative_kerndatensatz_medikation"
     },
     {
       "packageId": "de.medizininformatikinitiative.kerndatensatz.laborbefund",
-      "version": "2025.0.x",
+      "version": "2026.0.x",
       "uri": "http://fhir.org/packages/de.medizininformatikinitiative.kerndatensatz.laborbefund/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.laborbefund",
       "id": "de_medizininformatikinitiative_kerndatensatz_laborbefund"
     },
     {
-      "packageId": "de.medizininformatikinitiative.kerndatensatz.fall",
-      "version": "2025.0.x",
-      "uri": "https://www.medizininformatik-initiative.de/fhir/core/modul-fall/ImplementationGuide/mii-ig-fall",
-      "id": "de_medizininformatikinitiative_kerndatensatz_fall"
-    },
-    {
       "packageId": "de.medizininformatikinitiative.kerndatensatz.biobank",
-      "version": "2025.0.x",
+      "version": "2026.0.x",
       "uri": "http://fhir.org/packages/de.medizininformatikinitiative.kerndatensatz.biobank/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.biobank",
       "id": "de_medizininformatikinitiative_kerndatensatz_biobank"
     },
     {
       "packageId": "de.medizininformatikinitiative.kerndatensatz.consent",
-      "version": "2025.0.x",
+      "version": "2026.0.x",
       "uri": "http://fhir.org/packages/de.medizininformatikinitiative.kerndatensatz.consent/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.consent",
       "id": "de_medizininformatikinitiative_kerndatensatz_consent"
     },
     {
       "packageId": "de.medizininformatikinitiative.kerndatensatz.meta",
-      "version": "2025.0.x",
-      "uri": "http://fhir.org/packages/de.medizininformatikinitiative.kerndatensatz.meta/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.meta",
+      "version": "2026.0.x",
+      "uri": "https://www.medizininformatik-initiative.de/fhir/modul-meta/ImplementationGuide/mii-ig-meta",
       "id": "de_medizininformatikinitiative_kerndatensatz_meta"
     },
     {
       "packageId": "de.medizininformatikinitiative.kerndatensatz.icu",
-      "version": "2025.0.x",
+      "version": "2026.0.x",
       "uri": "http://fhir.org/packages/de.medizininformatikinitiative.kerndatensatz.icu/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.icu",
       "id": "de_medizininformatikinitiative_kerndatensatz_icu"
     },
@@ -104,25 +86,25 @@
     },
     {
       "packageId": "de.medizininformatikinitiative.kerndatensatz.molgen",
-      "version": "2025.0.x",
-      "uri": "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/ImplementationGuide/mii-ig-molgen-v2025-DE",
+      "version": "2026.0.x",
+      "uri": "http://fhir.org/packages/de.medizininformatikinitiative.kerndatensatz.molgen/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.molgen",
       "id": "de_medizininformatikinitiative_kerndatensatz_molgen"
     },
     {
       "packageId": "de.medizininformatikinitiative.kerndatensatz.patho",
-      "version": "2025.0.x",
+      "version": "2026.0.x",
       "uri": "http://fhir.org/packages/de.medizininformatikinitiative.kerndatensatz.patho/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.patho",
       "id": "de_medizininformatikinitiative_kerndatensatz_patho"
     },
     {
       "packageId": "de.medizininformatikinitiative.kerndatensatz.studie",
-      "version": "2025.0.x",
+      "version": "2026.0.x",
       "uri": "http://fhir.org/packages/de.medizininformatikinitiative.kerndatensatz.studie/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.studie",
       "id": "de_medizininformatikinitiative_kerndatensatz_studie"
     },
     {
       "packageId": "de.medizininformatikinitiative.kerndatensatz.bildgebung",
-      "version": "2025.0.x",
+      "version": "2026.0.x",
       "uri": "http://fhir.org/packages/de.medizininformatikinitiative.kerndatensatz.bildgebung/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.bildgebung",
       "id": "de_medizininformatikinitiative_kerndatensatz_bildgebung"
     },
@@ -1566,14 +1548,6 @@
       },
       {
         "reference": {
-          "reference": "Observation/mii-exa-test-data-patient-3-molgen-ergebnis-zusammenfassung-1"
-        },
-        "name": "mii-exa-test-data-patient-3-molgen-ergebnis-zusammenfassung-1",
-        "description": "Observation: Ergebniszusammenfassung für BRAF-Mutation",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
           "reference": "FamilyMemberHistory/mii-exa-test-data-patient-3-molgen-family-member-history-1"
         },
         "name": "mii-exa-test-data-patient-3-molgen-family-member-history-1",
@@ -1626,14 +1600,6 @@
         },
         "name": "mii-exa-test-data-patient-3-molgen-therapeutische-implikation-1",
         "description": "Observation: Therapeutische Implikation für BRAF-Mutation",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "Observation/mii-exa-test-data-patient-3-molgen-untersuchte-region-1"
-        },
-        "name": "mii-exa-test-data-patient-3-molgen-untersuchte-region-1",
-        "description": "Observation: Untersuchte genomische Region BRAF Exon 15",
         "exampleBoolean": true
       },
       {
@@ -1850,150 +1816,6 @@
         },
         "name": "mii-exa-test-data-patient-4-molgen-family-member-history-1",
         "description": "FamilyMemberHistory: Familienanamnese für Magenkarzinom",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "Observation/mii-exa-test-data-patient-4-molgen-untersuchte-region-1"
-        },
-        "name": "mii-exa-test-data-patient-4-molgen-untersuchte-region-1",
-        "description": "Observation: Untersuchte genomische Region APC-Gen",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "Observation/mii-exa-test-data-patient-4-molgen-untersuchte-region-10"
-        },
-        "name": "mii-exa-test-data-patient-4-molgen-untersuchte-region-10",
-        "description": "Observation: Untersuchte genomische Region MUTYH-Gen",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "Observation/mii-exa-test-data-patient-4-molgen-untersuchte-region-11"
-        },
-        "name": "mii-exa-test-data-patient-4-molgen-untersuchte-region-11",
-        "description": "Observation: Untersuchte genomische Region NTHL1-Gen",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "Observation/mii-exa-test-data-patient-4-molgen-untersuchte-region-12"
-        },
-        "name": "mii-exa-test-data-patient-4-molgen-untersuchte-region-12",
-        "description": "Observation: Untersuchte genomische Region PMS2-Gen",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "Observation/mii-exa-test-data-patient-4-molgen-untersuchte-region-13"
-        },
-        "name": "mii-exa-test-data-patient-4-molgen-untersuchte-region-13",
-        "description": "Observation: Untersuchte genomische Region POLD1-Gen",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "Observation/mii-exa-test-data-patient-4-molgen-untersuchte-region-14"
-        },
-        "name": "mii-exa-test-data-patient-4-molgen-untersuchte-region-14",
-        "description": "Observation: Untersuchte genomische Region POLE-Gen",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "Observation/mii-exa-test-data-patient-4-molgen-untersuchte-region-15"
-        },
-        "name": "mii-exa-test-data-patient-4-molgen-untersuchte-region-15",
-        "description": "Observation: Untersuchte genomische Region STK11-Gen",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "Observation/mii-exa-test-data-patient-4-molgen-untersuchte-region-16"
-        },
-        "name": "mii-exa-test-data-patient-4-molgen-untersuchte-region-16",
-        "description": "Observation: Untersuchte genomische Region SMAD4-Gen",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "Observation/mii-exa-test-data-patient-4-molgen-untersuchte-region-17"
-        },
-        "name": "mii-exa-test-data-patient-4-molgen-untersuchte-region-17",
-        "description": "Observation: Untersuchte genomische Region TP53-Gen",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "Observation/mii-exa-test-data-patient-4-molgen-untersuchte-region-18"
-        },
-        "name": "mii-exa-test-data-patient-4-molgen-untersuchte-region-18",
-        "description": "Observation: Untersuchte genomische Region CTNNA1-Gen",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "Observation/mii-exa-test-data-patient-4-molgen-untersuchte-region-2"
-        },
-        "name": "mii-exa-test-data-patient-4-molgen-untersuchte-region-2",
-        "description": "Observation: Untersuchte genomische Region ATM-Gen",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "Observation/mii-exa-test-data-patient-4-molgen-untersuchte-region-3"
-        },
-        "name": "mii-exa-test-data-patient-4-molgen-untersuchte-region-3",
-        "description": "Observation: Untersuchte genomische Region BRCA1-Gen",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "Observation/mii-exa-test-data-patient-4-molgen-untersuchte-region-4"
-        },
-        "name": "mii-exa-test-data-patient-4-molgen-untersuchte-region-4",
-        "description": "Observation: Untersuchte genomische Region BRCA2-Gen",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "Observation/mii-exa-test-data-patient-4-molgen-untersuchte-region-5"
-        },
-        "name": "mii-exa-test-data-patient-4-molgen-untersuchte-region-5",
-        "description": "Observation: Untersuchte genomische Region CDH1-Gen",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "Observation/mii-exa-test-data-patient-4-molgen-untersuchte-region-6"
-        },
-        "name": "mii-exa-test-data-patient-4-molgen-untersuchte-region-6",
-        "description": "Observation: Untersuchte genomische Region MLH1-Gen",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "Observation/mii-exa-test-data-patient-4-molgen-untersuchte-region-7"
-        },
-        "name": "mii-exa-test-data-patient-4-molgen-untersuchte-region-7",
-        "description": "Observation: Untersuchte genomische Region MSH2-Gen",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "Observation/mii-exa-test-data-patient-4-molgen-untersuchte-region-8"
-        },
-        "name": "mii-exa-test-data-patient-4-molgen-untersuchte-region-8",
-        "description": "Observation: Untersuchte genomische Region MSH3-Gen",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "Observation/mii-exa-test-data-patient-4-molgen-untersuchte-region-9"
-        },
-        "name": "mii-exa-test-data-patient-4-molgen-untersuchte-region-9",
-        "description": "Observation: Untersuchte genomische Region MSH6-Gen",
         "exampleBoolean": true
       },
       {

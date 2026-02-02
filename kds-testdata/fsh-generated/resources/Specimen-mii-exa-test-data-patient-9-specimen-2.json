@@ -36,8 +36,8 @@
   "type": {
     "coding": [
       {
-        "code": "119364003",
         "system": "http://snomed.info/sct",
+        "code": "119364003",
         "version": "http://snomed.info/sct/900000000000207008/version/20230731",
         "display": "Serum specimen (specimen)"
       }
@@ -58,6 +58,18 @@
   },
   "container": [
     {
+      "capacity": {
+        "system": "http://unitsofmeasure.org",
+        "value": 7,
+        "code": "ml",
+        "unit": "mL"
+      },
+      "specimenQuantity": {
+        "system": "http://unitsofmeasure.org",
+        "value": 7,
+        "code": "ml",
+        "unit": "mL"
+      },
       "type": {
         "coding": [
           {
@@ -67,16 +79,6 @@
             "display": "Tube, device (physical object)"
           }
         ]
-      },
-      "capacity": {
-        "value": 7,
-        "code": "ml",
-        "system": "http://unitsofmeasure.org"
-      },
-      "specimenQuantity": {
-        "value": 7,
-        "code": "ml",
-        "system": "http://unitsofmeasure.org"
       }
     }
   ],

@@ -63,14 +63,14 @@
         {
           "rateRange": {
             "low": {
-              "system": "http://unitsofmeasure.org",
               "value": 150,
-              "code": "mL/h"
+              "code": "mL/h",
+              "system": "http://unitsofmeasure.org"
             },
             "high": {
-              "system": "http://unitsofmeasure.org",
               "value": 300,
-              "code": "mL/h"
+              "code": "mL/h",
+              "system": "http://unitsofmeasure.org"
             }
           }
         }

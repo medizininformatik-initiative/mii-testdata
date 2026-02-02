@@ -133,8 +133,8 @@
           {
             "coding": [
               {
-                "code": "2.16.840.1.113883.3.1937.777.24.2.184",
-                "system": "https://www.medizininformatik-initiative.de/fhir/modul-consent/CodeSystem/mii-cs-consent-consent_category"
+                "system": "https://www.medizininformatik-initiative.de/fhir/modul-consent/CodeSystem/mii-cs-consent-version-modules",
+                "code": "2.16.840.1.113883.3.1937.777.24.2.184"
               }
             ]
           }
@@ -1398,9 +1398,9 @@
             "doseAndRate": [
               {
                 "doseQuantity": {
-                  "system": "http://unitsofmeasure.org",
                   "value": 50,
                   "code": "mg",
+                  "system": "http://unitsofmeasure.org",
                   "unit": "mg"
                 }
               }
@@ -1459,13 +1459,13 @@
               }
             ]
           },
+          "text": "Sumatriptan 50mg oral bei Migräne",
           "dose": {
-            "system": "http://unitsofmeasure.org",
             "value": 50,
             "code": "mg",
+            "system": "http://unitsofmeasure.org",
             "unit": "mg"
-          },
-          "text": "Sumatriptan 50mg oral bei Migräne"
+          }
         },
         "status": "completed",
         "category": {
@@ -1630,9 +1630,9 @@
             "doseAndRate": [
               {
                 "doseQuantity": {
-                  "system": "http://unitsofmeasure.org",
                   "value": 50,
                   "code": "mg",
+                  "system": "http://unitsofmeasure.org",
                   "unit": "mg"
                 }
               }
@@ -1697,13 +1697,13 @@
               }
             ]
           },
+          "text": "Topiramat 50mg oral zur Prophylaxe",
           "dose": {
-            "system": "http://unitsofmeasure.org",
             "value": 50,
             "code": "mg",
+            "system": "http://unitsofmeasure.org",
             "unit": "mg"
-          },
-          "text": "Topiramat 50mg oral zur Prophylaxe"
+          }
         },
         "status": "completed",
         "category": {
@@ -2008,8 +2008,8 @@
         "type": {
           "coding": [
             {
-              "code": "445295009",
               "system": "http://snomed.info/sct",
+              "code": "445295009",
               "version": "http://snomed.info/sct/900000000000207008/version/20230731",
               "display": "Blood specimen with edetic acid (specimen)"
             }
@@ -2030,6 +2030,18 @@
         },
         "container": [
           {
+            "capacity": {
+              "system": "http://unitsofmeasure.org",
+              "value": 5,
+              "code": "ml",
+              "unit": "mL"
+            },
+            "specimenQuantity": {
+              "system": "http://unitsofmeasure.org",
+              "value": 5,
+              "code": "ml",
+              "unit": "mL"
+            },
             "type": {
               "coding": [
                 {
@@ -2039,16 +2051,6 @@
                   "display": "Tube, device (physical object)"
                 }
               ]
-            },
-            "capacity": {
-              "value": 5,
-              "code": "ml",
-              "system": "http://unitsofmeasure.org"
-            },
-            "specimenQuantity": {
-              "value": 5,
-              "code": "ml",
-              "system": "http://unitsofmeasure.org"
             }
           }
         ],
@@ -2102,8 +2104,8 @@
         "type": {
           "coding": [
             {
-              "code": "119364003",
               "system": "http://snomed.info/sct",
+              "code": "119364003",
               "version": "http://snomed.info/sct/900000000000207008/version/20230731",
               "display": "Serum specimen (specimen)"
             }
@@ -2124,6 +2126,18 @@
         },
         "container": [
           {
+            "capacity": {
+              "system": "http://unitsofmeasure.org",
+              "value": 7,
+              "code": "ml",
+              "unit": "mL"
+            },
+            "specimenQuantity": {
+              "system": "http://unitsofmeasure.org",
+              "value": 7,
+              "code": "ml",
+              "unit": "mL"
+            },
             "type": {
               "coding": [
                 {
@@ -2133,16 +2147,6 @@
                   "display": "Tube, device (physical object)"
                 }
               ]
-            },
-            "capacity": {
-              "value": 7,
-              "code": "ml",
-              "system": "http://unitsofmeasure.org"
-            },
-            "specimenQuantity": {
-              "value": 7,
-              "code": "ml",
-              "system": "http://unitsofmeasure.org"
             }
           }
         ],

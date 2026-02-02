@@ -41,10 +41,10 @@
   ],
   "dosage": {
     "dose": {
-      "system": "http://unitsofmeasure.org",
       "value": 111,
-      "unit": "milliliter",
-      "code": "mm"
+      "code": "mL",
+      "system": "http://unitsofmeasure.org",
+      "unit": "milliliter"
     }
   },
   "status": "completed",

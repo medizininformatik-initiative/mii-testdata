@@ -63,14 +63,14 @@
         {
           "rateRatio": {
             "numerator": {
-              "system": "http://unitsofmeasure.org",
               "value": 150,
-              "code": "mL"
+              "code": "mL",
+              "system": "http://unitsofmeasure.org"
             },
             "denominator": {
-              "system": "http://unitsofmeasure.org",
               "value": 1,
-              "code": "h"
+              "code": "h",
+              "system": "http://unitsofmeasure.org"
             }
           }
         }

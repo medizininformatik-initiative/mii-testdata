@@ -29,9 +29,9 @@
       "doseAndRate": [
         {
           "rateQuantity": {
-            "system": "http://unitsofmeasure.org",
             "value": 5,
-            "code": "mg/min"
+            "code": "mg/min",
+            "system": "http://unitsofmeasure.org"
           }
         }
       ],

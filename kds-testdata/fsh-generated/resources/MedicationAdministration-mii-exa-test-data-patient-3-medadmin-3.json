@@ -35,25 +35,25 @@
     },
     "rateRatio": {
       "numerator": {
-        "system": "http://unitsofmeasure.org",
         "value": 85,
         "code": "mg",
+        "system": "http://unitsofmeasure.org",
         "unit": "mg"
       },
       "denominator": {
-        "system": "http://unitsofmeasure.org",
         "value": 2,
         "code": "h",
+        "system": "http://unitsofmeasure.org",
         "unit": "h"
       }
     },
+    "text": "Oxaliplatin 85mg IV über 2 Stunden",
     "dose": {
-      "system": "http://unitsofmeasure.org",
       "value": 85,
       "code": "mg",
+      "system": "http://unitsofmeasure.org",
       "unit": "mg"
-    },
-    "text": "Oxaliplatin 85mg IV über 2 Stunden"
+    }
   },
   "status": "completed",
   "category": {

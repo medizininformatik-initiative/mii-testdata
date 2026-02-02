@@ -27,6 +27,14 @@
           "display": "Laboratory"
         }
       ]
+    },
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "GE"
+        }
+      ]
     }
   ],
   "method": {
@@ -182,25 +190,6 @@
             "code": "SO:0000159",
             "system": "http://sequenceontology.org",
             "display": "Deletion"
-          }
-        ]
-      }
-    },
-    {
-      "code": {
-        "coding": [
-          {
-            "system": "http://loinc.org",
-            "code": "48006-1"
-          }
-        ]
-      },
-      "valueCodeableConcept": {
-        "coding": [
-          {
-            "code": "LA6694-9",
-            "system": "http://loinc.org",
-            "display": "Frameshift"
           }
         ]
       }

@@ -23,31 +23,26 @@
           "display": "Laboratory"
         }
       ]
-    }
-  ],
-  "component": [
+    },
     {
-      "code": {
-        "coding": [
-          {
-            "system": "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs",
-            "code": "conclusion-string"
-          }
-        ]
-      },
-      "valueString": "Tumor weist ein mikrosatellitenstabiles Wachstum auf."
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs",
+          "code": "biomarker-category"
+        }
+      ]
     }
   ],
+  "status": "final",
   "code": {
     "coding": [
       {
-        "system": "http://loinc.org",
         "code": "81695-9",
+        "system": "http://loinc.org",
         "display": "Microsatellite instability [Interpretation] in Cancer specimen Qualitative"
       }
     ]
   },
-  "status": "final",
   "subject": {
     "reference": "Patient/mii-exa-test-data-patient-3"
   },

@@ -6,7 +6,7 @@ Description: "Observation: Radiologische Beobachtung"
 //* meta.profile = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologische-beobachtung"
 * extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-series-uid].valueId = "1.2.34.5.6789.1.2.34.5678912.34567891234567891234"
 * extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-sop-instanz-uid].valueId = "1.2.34.5.6789.1.2.3.45678.9123456789123456789123456789"
-* extension[http://hl7.org/fhir/5.0/StructureDefinition/extension-Observation.bodyStructure].valueReference = Reference(mii-exa-test-data-koerperstruktur)
+* bodySite.extension[bodyStructure].valueReference = Reference(mii-exa-test-data-koerperstruktur)
 * partOf = Reference(mii-exa-test-data-befundungsprozedur)
 * status = #final
 * category = $observation-category#imaging "Imaging"

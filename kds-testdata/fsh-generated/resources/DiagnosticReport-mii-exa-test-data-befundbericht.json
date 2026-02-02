@@ -25,7 +25,7 @@
           "system": "http://snomed.info/sct",
           "code": "4201000179104",
           "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-          "display": "Imaging report"
+          "display": "Imaging report (record artifact)"
         }
       ]
     }
@@ -54,27 +54,10 @@
   ],
   "extension": [
     {
-      "extension": [
-        {
-          "url": "type",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "code": "SCI",
-                "system": "http://terminology.hl7.org/CodeSystem/v2-0936",
-                "display": "Supporting Clinical Information"
-              }
-            ]
-          }
-        },
-        {
-          "url": "reference",
-          "valueReference": {
-            "reference": "Procedure/mii-exa-test-data-befundungsprozedur"
-          }
-        }
-      ],
-      "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.supportingInfo"
+      "url": "http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo",
+      "valueReference": {
+        "reference": "Procedure/mii-exa-test-data-befundungsprozedur"
+      }
     }
   ],
   "status": "final",

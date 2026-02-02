@@ -35,25 +35,25 @@
     },
     "rateRatio": {
       "numerator": {
-        "system": "http://unitsofmeasure.org",
         "value": 450,
         "code": "mg",
+        "system": "http://unitsofmeasure.org",
         "unit": "mg"
       },
       "denominator": {
-        "system": "http://unitsofmeasure.org",
         "value": 1,
         "code": "h",
+        "system": "http://unitsofmeasure.org",
         "unit": "h"
       }
     },
+    "text": "Carboplatin 450mg IV über 1 Stunde",
     "dose": {
-      "system": "http://unitsofmeasure.org",
       "value": 450,
       "code": "mg",
+      "system": "http://unitsofmeasure.org",
       "unit": "mg"
-    },
-    "text": "Carboplatin 450mg IV über 1 Stunde"
+    }
   },
   "status": "completed",
   "category": {

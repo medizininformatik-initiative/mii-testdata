@@ -55,9 +55,9 @@
       "doseAndRate": [
         {
           "doseQuantity": {
-            "system": "http://unitsofmeasure.org",
             "value": 1,
             "code": "1",
+            "system": "http://unitsofmeasure.org",
             "unit": "1"
           }
         }

@@ -29,13 +29,13 @@
         }
       ]
     },
+    "text": "Amoxicillin/Clavulansäure 1,2g IV",
     "dose": {
-      "system": "http://unitsofmeasure.org",
       "value": 1.2,
       "code": "g",
+      "system": "http://unitsofmeasure.org",
       "unit": "g"
-    },
-    "text": "Amoxicillin/Clavulansäure 1,2g IV"
+    }
   },
   "status": "completed",
   "category": {

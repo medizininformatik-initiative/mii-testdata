@@ -30,14 +30,14 @@
         {
           "rateRange": {
             "low": {
-              "system": "http://unitsofmeasure.org",
               "value": 60,
-              "code": "mL/h"
+              "code": "mL/h",
+              "system": "http://unitsofmeasure.org"
             },
             "high": {
-              "system": "http://unitsofmeasure.org",
               "value": 120,
-              "code": "mL/h"
+              "code": "mL/h",
+              "system": "http://unitsofmeasure.org"
             }
           },
           "doseQuantity": {

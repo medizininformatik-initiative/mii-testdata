@@ -57,9 +57,6 @@
   ],
   "result": [
     {
-      "reference": "Observation/mii-exa-test-data-patient-3-molgen-ergebnis-zusammenfassung-1"
-    },
-    {
       "reference": "Observation/mii-exa-test-data-patient-3-molgen-diagnostische-implikation-1"
     },
     {
@@ -69,28 +66,19 @@
       "reference": "Observation/mii-exa-test-data-patient-3-molgen-variante-1"
     },
     {
-      "reference": "Observation/mii-exa-test-data-patient-3-molgen-untersuchte-region-1"
-    },
-    {
       "reference": "Observation/mii-exa-test-data-patient-3-molgen-genotyp-1"
-    },
-    {
-      "reference": "Observation/mii-exa-test-data-patient-3-molgen-mutationslast-1"
-    },
-    {
-      "reference": "Observation/mii-exa-test-data-patient-3-molgen-msi-1"
     }
   ],
-  "status": "final",
   "code": {
     "coding": [
       {
-        "code": "51969-4",
         "system": "http://loinc.org",
+        "code": "51969-4",
         "display": "Genetic analysis report"
       }
     ]
   },
+  "status": "final",
   "subject": {
     "reference": "Patient/mii-exa-test-data-patient-3"
   },

@@ -28,11 +28,14 @@
           "display": "Laboratory"
         }
       ]
-    }
-  ],
-  "derivedFrom": [
+    },
     {
-      "reference": "Observation/mii-exa-test-data-patient-3-molgen-untersuchte-region-1"
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "GE"
+        }
+      ]
     }
   ],
   "component": [
@@ -188,26 +191,6 @@
             "code": "SO:1000008",
             "system": "http://sequenceontology.org",
             "display": "point_mutation"
-          }
-        ]
-      }
-    },
-    {
-      "code": {
-        "coding": [
-          {
-            "system": "http://loinc.org",
-            "code": "48006-1",
-            "display": "Amino acid change [Type]"
-          }
-        ]
-      },
-      "valueCodeableConcept": {
-        "coding": [
-          {
-            "code": "LA6698-0",
-            "system": "http://loinc.org",
-            "display": "Missense"
           }
         ]
       }

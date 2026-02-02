@@ -109,8 +109,8 @@
           {
             "coding": [
               {
-                "code": "2.16.840.1.113883.3.1937.777.24.2.184",
-                "system": "https://www.medizininformatik-initiative.de/fhir/modul-consent/CodeSystem/mii-cs-consent-consent_category"
+                "system": "https://www.medizininformatik-initiative.de/fhir/modul-consent/CodeSystem/mii-cs-consent-version-modules",
+                "code": "2.16.840.1.113883.3.1937.777.24.2.184"
               }
             ]
           }
@@ -1179,15 +1179,15 @@
               {
                 "rateRatio": {
                   "numerator": {
-                    "system": "http://unitsofmeasure.org",
                     "value": 75,
                     "code": "mg",
+                    "system": "http://unitsofmeasure.org",
                     "unit": "mg"
                   },
                   "denominator": {
-                    "system": "http://unitsofmeasure.org",
                     "value": 2,
                     "code": "h",
+                    "system": "http://unitsofmeasure.org",
                     "unit": "h"
                   }
                 },
@@ -1370,22 +1370,22 @@
               {
                 "rateRatio": {
                   "numerator": {
-                    "system": "http://unitsofmeasure.org",
                     "value": 75,
                     "code": "mg",
+                    "system": "http://unitsofmeasure.org",
                     "unit": "mg"
                   },
                   "denominator": {
-                    "system": "http://unitsofmeasure.org",
                     "value": 2,
                     "code": "h",
+                    "system": "http://unitsofmeasure.org",
                     "unit": "h"
                   }
                 },
                 "doseQuantity": {
-                  "system": "http://unitsofmeasure.org",
                   "value": 75,
                   "code": "mg",
+                  "system": "http://unitsofmeasure.org",
                   "unit": "mg"
                 }
               }
@@ -1469,9 +1469,9 @@
             "doseAndRate": [
               {
                 "doseQuantity": {
-                  "system": "http://unitsofmeasure.org",
                   "value": 20,
                   "code": "mg",
+                  "system": "http://unitsofmeasure.org",
                   "unit": "mg"
                 }
               }
@@ -1545,25 +1545,25 @@
           },
           "rateRatio": {
             "numerator": {
-              "system": "http://unitsofmeasure.org",
               "value": 75,
               "code": "mg",
+              "system": "http://unitsofmeasure.org",
               "unit": "mg"
             },
             "denominator": {
-              "system": "http://unitsofmeasure.org",
               "value": 2,
               "code": "h",
+              "system": "http://unitsofmeasure.org",
               "unit": "h"
             }
           },
+          "text": "Cisplatin 75mg IV über 2 Stunden",
           "dose": {
-            "system": "http://unitsofmeasure.org",
             "value": 75,
             "code": "mg",
+            "system": "http://unitsofmeasure.org",
             "unit": "mg"
-          },
-          "text": "Cisplatin 75mg IV über 2 Stunden"
+          }
         },
         "status": "completed",
         "category": {
@@ -1626,13 +1626,13 @@
               }
             ]
           },
+          "text": "Omeprazol 20mg oral morgens",
           "dose": {
-            "system": "http://unitsofmeasure.org",
             "value": 20,
             "code": "mg",
+            "system": "http://unitsofmeasure.org",
             "unit": "mg"
-          },
-          "text": "Omeprazol 20mg oral morgens"
+          }
         },
         "status": "completed",
         "category": {
@@ -2010,72 +2010,18 @@
           },
           {
             "reference": "Observation/mii-exa-test-data-patient-4-molgen-variante-1"
-          },
-          {
-            "reference": "Observation/mii-exa-test-data-patient-4-molgen-untersuchte-region-1"
-          },
-          {
-            "reference": "Observation/mii-exa-test-data-patient-4-molgen-untersuchte-region-2"
-          },
-          {
-            "reference": "Observation/mii-exa-test-data-patient-4-molgen-untersuchte-region-3"
-          },
-          {
-            "reference": "Observation/mii-exa-test-data-patient-4-molgen-untersuchte-region-4"
-          },
-          {
-            "reference": "Observation/mii-exa-test-data-patient-4-molgen-untersuchte-region-5"
-          },
-          {
-            "reference": "Observation/mii-exa-test-data-patient-4-molgen-untersuchte-region-6"
-          },
-          {
-            "reference": "Observation/mii-exa-test-data-patient-4-molgen-untersuchte-region-7"
-          },
-          {
-            "reference": "Observation/mii-exa-test-data-patient-4-molgen-untersuchte-region-8"
-          },
-          {
-            "reference": "Observation/mii-exa-test-data-patient-4-molgen-untersuchte-region-9"
-          },
-          {
-            "reference": "Observation/mii-exa-test-data-patient-4-molgen-untersuchte-region-10"
-          },
-          {
-            "reference": "Observation/mii-exa-test-data-patient-4-molgen-untersuchte-region-11"
-          },
-          {
-            "reference": "Observation/mii-exa-test-data-patient-4-molgen-untersuchte-region-12"
-          },
-          {
-            "reference": "Observation/mii-exa-test-data-patient-4-molgen-untersuchte-region-13"
-          },
-          {
-            "reference": "Observation/mii-exa-test-data-patient-4-molgen-untersuchte-region-14"
-          },
-          {
-            "reference": "Observation/mii-exa-test-data-patient-4-molgen-untersuchte-region-15"
-          },
-          {
-            "reference": "Observation/mii-exa-test-data-patient-4-molgen-untersuchte-region-16"
-          },
-          {
-            "reference": "Observation/mii-exa-test-data-patient-4-molgen-untersuchte-region-17"
-          },
-          {
-            "reference": "Observation/mii-exa-test-data-patient-4-molgen-untersuchte-region-18"
           }
         ],
-        "status": "final",
         "code": {
           "coding": [
             {
-              "code": "51969-4",
               "system": "http://loinc.org",
+              "code": "51969-4",
               "display": "Genetic analysis report"
             }
           ]
         },
+        "status": "final",
         "subject": {
           "reference": "Patient/mii-exa-test-data-patient-4"
         },
@@ -2115,6 +2061,14 @@
                 "system": "http://terminology.hl7.org/CodeSystem/observation-category",
                 "code": "laboratory",
                 "display": "Laboratory"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                "code": "GE"
               }
             ]
           }
@@ -2281,25 +2235,6 @@
               "coding": [
                 {
                   "system": "http://loinc.org",
-                  "code": "48006-1"
-                }
-              ]
-            },
-            "valueCodeableConcept": {
-              "coding": [
-                {
-                  "code": "LA6694-9",
-                  "system": "http://loinc.org",
-                  "display": "Frameshift"
-                }
-              ]
-            }
-          },
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
                   "code": "48001-2"
                 }
               ]
@@ -2384,6 +2319,14 @@
                 "display": "Laboratory"
               }
             ]
+          },
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                "code": "GE"
+              }
+            ]
           }
         ],
         "performer": [
@@ -2428,25 +2371,6 @@
             }
           },
           {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs",
-                  "code": "functional-effect"
-                }
-              ]
-            },
-            "valueCodeableConcept": {
-              "coding": [
-                {
-                  "code": "SO:0002054",
-                  "system": "http://sequenceontology.org",
-                  "display": "loss_of_function_variant"
-                }
-              ]
-            }
-          },
-          {
             "valueCodeableConcept": {
               "coding": [
                 {
@@ -2479,2166 +2403,6 @@
         "status": "final",
         "subject": {
           "reference": "Patient/mii-exa-test-data-patient-4"
-        }
-      }
-    },
-    {
-      "request": {
-        "method": "POST",
-        "url": "Observation"
-      },
-      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-4-molgen-untersuchte-region-1",
-      "resource": {
-        "resourceType": "Observation",
-        "id": "mii-exa-test-data-patient-4-molgen-untersuchte-region-1",
-        "meta": {
-          "security": [
-            {
-              "code": "HTEST",
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
-              "display": "test health data"
-            }
-          ],
-          "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/untersuchte-region",
-            "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/region-studied"
-          ]
-        },
-        "category": [
-          {
-            "coding": [
-              {
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-                "code": "laboratory",
-                "display": "Laboratory"
-              }
-            ]
-          }
-        ],
-        "performer": [
-          {
-            "reference": "Practitioner/mii-exa-test-data-practitioner-physician-2"
-          }
-        ],
-        "component": [
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "48018-6",
-                  "display": "Gene studied [ID]"
-                }
-              ]
-            },
-            "valueCodeableConcept": {
-              "coding": [
-                {
-                  "code": "HGNC:583",
-                  "system": "http://www.genenames.org/geneId",
-                  "display": "APC"
-                }
-              ]
-            }
-          },
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "81293-3",
-                  "display": "Description of ranges of DNA sequences examined"
-                }
-              ]
-            },
-            "valueString": "direkte Sequenzierung der codierenden Exons inkl. flankierender intronischer Bereiche"
-          },
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "51958-7"
-                }
-              ]
-            },
-            "valueCodeableConcept": {
-              "coding": [
-                {
-                  "code": "NM_000038.4",
-                  "system": "http://www.ncbi.nlm.nih.gov/refseq"
-                }
-              ]
-            }
-          }
-        ],
-        "code": {
-          "coding": [
-            {
-              "system": "http://loinc.org",
-              "code": "53041-0",
-              "display": "DNA region of interest panel"
-            }
-          ]
-        },
-        "status": "final",
-        "subject": {
-          "reference": "Patient/mii-exa-test-data-patient-4"
-        },
-        "method": {
-          "coding": [
-            {
-              "code": "LA26398-0",
-              "system": "http://loinc.org",
-              "display": "Sequencing"
-            }
-          ]
-        },
-        "specimen": {
-          "reference": "Specimen/mii-exa-test-data-patient-4-specimen-1"
-        },
-        "device": {
-          "reference": "Device/mii-exa-test-data-molgen-device-sequencer"
-        }
-      }
-    },
-    {
-      "request": {
-        "method": "POST",
-        "url": "Observation"
-      },
-      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-4-molgen-untersuchte-region-2",
-      "resource": {
-        "resourceType": "Observation",
-        "id": "mii-exa-test-data-patient-4-molgen-untersuchte-region-2",
-        "meta": {
-          "security": [
-            {
-              "code": "HTEST",
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
-              "display": "test health data"
-            }
-          ],
-          "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/untersuchte-region",
-            "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/region-studied"
-          ]
-        },
-        "category": [
-          {
-            "coding": [
-              {
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-                "code": "laboratory",
-                "display": "Laboratory"
-              }
-            ]
-          }
-        ],
-        "performer": [
-          {
-            "reference": "Practitioner/mii-exa-test-data-practitioner-physician-2"
-          }
-        ],
-        "component": [
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "48018-6",
-                  "display": "Gene studied [ID]"
-                }
-              ]
-            },
-            "valueCodeableConcept": {
-              "coding": [
-                {
-                  "code": "HGNC:795",
-                  "system": "http://www.genenames.org/geneId",
-                  "display": "ATM"
-                }
-              ]
-            }
-          },
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "81293-3",
-                  "display": "Description of ranges of DNA sequences examined"
-                }
-              ]
-            },
-            "valueString": "direkte Sequenzierung der codierenden Exons inkl. flankierender intronischer Bereiche"
-          },
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "51958-7"
-                }
-              ]
-            },
-            "valueCodeableConcept": {
-              "coding": [
-                {
-                  "code": "NM_000051.3",
-                  "system": "http://www.ncbi.nlm.nih.gov/refseq"
-                }
-              ]
-            }
-          }
-        ],
-        "code": {
-          "coding": [
-            {
-              "system": "http://loinc.org",
-              "code": "53041-0",
-              "display": "DNA region of interest panel"
-            }
-          ]
-        },
-        "status": "final",
-        "subject": {
-          "reference": "Patient/mii-exa-test-data-patient-4"
-        },
-        "method": {
-          "coding": [
-            {
-              "code": "LA26398-0",
-              "system": "http://loinc.org",
-              "display": "Sequencing"
-            }
-          ]
-        },
-        "specimen": {
-          "reference": "Specimen/mii-exa-test-data-patient-4-specimen-1"
-        },
-        "device": {
-          "reference": "Device/mii-exa-test-data-molgen-device-sequencer"
-        }
-      }
-    },
-    {
-      "request": {
-        "method": "POST",
-        "url": "Observation"
-      },
-      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-4-molgen-untersuchte-region-3",
-      "resource": {
-        "resourceType": "Observation",
-        "id": "mii-exa-test-data-patient-4-molgen-untersuchte-region-3",
-        "meta": {
-          "security": [
-            {
-              "code": "HTEST",
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
-              "display": "test health data"
-            }
-          ],
-          "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/untersuchte-region",
-            "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/region-studied"
-          ]
-        },
-        "category": [
-          {
-            "coding": [
-              {
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-                "code": "laboratory",
-                "display": "Laboratory"
-              }
-            ]
-          }
-        ],
-        "performer": [
-          {
-            "reference": "Practitioner/mii-exa-test-data-practitioner-physician-2"
-          }
-        ],
-        "component": [
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "48018-6",
-                  "display": "Gene studied [ID]"
-                }
-              ]
-            },
-            "valueCodeableConcept": {
-              "coding": [
-                {
-                  "code": "HGNC:1100",
-                  "system": "http://www.genenames.org/geneId",
-                  "display": "BRCA1"
-                }
-              ]
-            }
-          },
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "81293-3",
-                  "display": "Description of ranges of DNA sequences examined"
-                }
-              ]
-            },
-            "valueString": "direkte Sequenzierung der codierenden Exons inkl. flankierender intronischer Bereiche"
-          },
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "51958-7"
-                }
-              ]
-            },
-            "valueCodeableConcept": {
-              "coding": [
-                {
-                  "code": "NM_007294.3",
-                  "system": "http://www.ncbi.nlm.nih.gov/refseq"
-                }
-              ]
-            }
-          }
-        ],
-        "code": {
-          "coding": [
-            {
-              "system": "http://loinc.org",
-              "code": "53041-0",
-              "display": "DNA region of interest panel"
-            }
-          ]
-        },
-        "status": "final",
-        "subject": {
-          "reference": "Patient/mii-exa-test-data-patient-4"
-        },
-        "method": {
-          "coding": [
-            {
-              "code": "LA26398-0",
-              "system": "http://loinc.org",
-              "display": "Sequencing"
-            }
-          ]
-        },
-        "specimen": {
-          "reference": "Specimen/mii-exa-test-data-patient-4-specimen-1"
-        },
-        "device": {
-          "reference": "Device/mii-exa-test-data-molgen-device-sequencer"
-        }
-      }
-    },
-    {
-      "request": {
-        "method": "POST",
-        "url": "Observation"
-      },
-      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-4-molgen-untersuchte-region-4",
-      "resource": {
-        "resourceType": "Observation",
-        "id": "mii-exa-test-data-patient-4-molgen-untersuchte-region-4",
-        "meta": {
-          "security": [
-            {
-              "code": "HTEST",
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
-              "display": "test health data"
-            }
-          ],
-          "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/untersuchte-region",
-            "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/region-studied"
-          ]
-        },
-        "category": [
-          {
-            "coding": [
-              {
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-                "code": "laboratory",
-                "display": "Laboratory"
-              }
-            ]
-          }
-        ],
-        "performer": [
-          {
-            "reference": "Practitioner/mii-exa-test-data-practitioner-physician-2"
-          }
-        ],
-        "component": [
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "48018-6",
-                  "display": "Gene studied [ID]"
-                }
-              ]
-            },
-            "valueCodeableConcept": {
-              "coding": [
-                {
-                  "code": "HGNC:1101",
-                  "system": "http://www.genenames.org/geneId",
-                  "display": "BRCA2"
-                }
-              ]
-            }
-          },
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "81293-3",
-                  "display": "Description of ranges of DNA sequences examined"
-                }
-              ]
-            },
-            "valueString": "direkte Sequenzierung der codierenden Exons inkl. flankierender intronischer Bereiche"
-          },
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "51958-7"
-                }
-              ]
-            },
-            "valueCodeableConcept": {
-              "coding": [
-                {
-                  "code": "NM_000059.3",
-                  "system": "http://www.ncbi.nlm.nih.gov/refseq"
-                }
-              ]
-            }
-          }
-        ],
-        "code": {
-          "coding": [
-            {
-              "system": "http://loinc.org",
-              "code": "53041-0",
-              "display": "DNA region of interest panel"
-            }
-          ]
-        },
-        "status": "final",
-        "subject": {
-          "reference": "Patient/mii-exa-test-data-patient-4"
-        },
-        "method": {
-          "coding": [
-            {
-              "code": "LA26398-0",
-              "system": "http://loinc.org",
-              "display": "Sequencing"
-            }
-          ]
-        },
-        "specimen": {
-          "reference": "Specimen/mii-exa-test-data-patient-4-specimen-1"
-        },
-        "device": {
-          "reference": "Device/mii-exa-test-data-molgen-device-sequencer"
-        }
-      }
-    },
-    {
-      "request": {
-        "method": "POST",
-        "url": "Observation"
-      },
-      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-4-molgen-untersuchte-region-5",
-      "resource": {
-        "resourceType": "Observation",
-        "id": "mii-exa-test-data-patient-4-molgen-untersuchte-region-5",
-        "meta": {
-          "security": [
-            {
-              "code": "HTEST",
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
-              "display": "test health data"
-            }
-          ],
-          "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/untersuchte-region",
-            "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/region-studied"
-          ]
-        },
-        "category": [
-          {
-            "coding": [
-              {
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-                "code": "laboratory",
-                "display": "Laboratory"
-              }
-            ]
-          }
-        ],
-        "performer": [
-          {
-            "reference": "Practitioner/mii-exa-test-data-practitioner-physician-2"
-          }
-        ],
-        "component": [
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "48018-6",
-                  "display": "Gene studied [ID]"
-                }
-              ]
-            },
-            "valueCodeableConcept": {
-              "coding": [
-                {
-                  "code": "HGNC:1748",
-                  "system": "http://www.genenames.org/geneId",
-                  "display": "CDH1"
-                }
-              ]
-            }
-          },
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "81293-3",
-                  "display": "Description of ranges of DNA sequences examined"
-                }
-              ]
-            },
-            "valueString": "direkte Sequenzierung der codierenden Exons inkl. flankierender intronischer Bereiche"
-          },
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "51958-7"
-                }
-              ]
-            },
-            "valueCodeableConcept": {
-              "coding": [
-                {
-                  "code": "NM_004360.4",
-                  "system": "http://www.ncbi.nlm.nih.gov/refseq"
-                }
-              ]
-            }
-          }
-        ],
-        "code": {
-          "coding": [
-            {
-              "system": "http://loinc.org",
-              "code": "53041-0",
-              "display": "DNA region of interest panel"
-            }
-          ]
-        },
-        "status": "final",
-        "subject": {
-          "reference": "Patient/mii-exa-test-data-patient-4"
-        },
-        "method": {
-          "coding": [
-            {
-              "code": "LA26398-0",
-              "system": "http://loinc.org",
-              "display": "Sequencing"
-            }
-          ]
-        },
-        "specimen": {
-          "reference": "Specimen/mii-exa-test-data-patient-4-specimen-1"
-        },
-        "device": {
-          "reference": "Device/mii-exa-test-data-molgen-device-sequencer"
-        }
-      }
-    },
-    {
-      "request": {
-        "method": "POST",
-        "url": "Observation"
-      },
-      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-4-molgen-untersuchte-region-6",
-      "resource": {
-        "resourceType": "Observation",
-        "id": "mii-exa-test-data-patient-4-molgen-untersuchte-region-6",
-        "meta": {
-          "security": [
-            {
-              "code": "HTEST",
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
-              "display": "test health data"
-            }
-          ],
-          "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/untersuchte-region",
-            "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/region-studied"
-          ]
-        },
-        "category": [
-          {
-            "coding": [
-              {
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-                "code": "laboratory",
-                "display": "Laboratory"
-              }
-            ]
-          }
-        ],
-        "performer": [
-          {
-            "reference": "Practitioner/mii-exa-test-data-practitioner-physician-2"
-          }
-        ],
-        "component": [
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "48018-6",
-                  "display": "Gene studied [ID]"
-                }
-              ]
-            },
-            "valueCodeableConcept": {
-              "coding": [
-                {
-                  "code": "HGNC:7127",
-                  "system": "http://www.genenames.org/geneId",
-                  "display": "MLH1"
-                }
-              ]
-            }
-          },
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "81293-3",
-                  "display": "Description of ranges of DNA sequences examined"
-                }
-              ]
-            },
-            "valueString": "direkte Sequenzierung der codierenden Exons inkl. flankierender intronischer Bereiche"
-          },
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "51958-7"
-                }
-              ]
-            },
-            "valueCodeableConcept": {
-              "coding": [
-                {
-                  "code": "NM_000249.3",
-                  "system": "http://www.ncbi.nlm.nih.gov/refseq"
-                }
-              ]
-            }
-          }
-        ],
-        "code": {
-          "coding": [
-            {
-              "system": "http://loinc.org",
-              "code": "53041-0",
-              "display": "DNA region of interest panel"
-            }
-          ]
-        },
-        "status": "final",
-        "subject": {
-          "reference": "Patient/mii-exa-test-data-patient-4"
-        },
-        "method": {
-          "coding": [
-            {
-              "code": "LA26398-0",
-              "system": "http://loinc.org",
-              "display": "Sequencing"
-            }
-          ]
-        },
-        "specimen": {
-          "reference": "Specimen/mii-exa-test-data-patient-4-specimen-1"
-        },
-        "device": {
-          "reference": "Device/mii-exa-test-data-molgen-device-sequencer"
-        }
-      }
-    },
-    {
-      "request": {
-        "method": "POST",
-        "url": "Observation"
-      },
-      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-4-molgen-untersuchte-region-7",
-      "resource": {
-        "resourceType": "Observation",
-        "id": "mii-exa-test-data-patient-4-molgen-untersuchte-region-7",
-        "meta": {
-          "security": [
-            {
-              "code": "HTEST",
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
-              "display": "test health data"
-            }
-          ],
-          "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/untersuchte-region",
-            "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/region-studied"
-          ]
-        },
-        "category": [
-          {
-            "coding": [
-              {
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-                "code": "laboratory",
-                "display": "Laboratory"
-              }
-            ]
-          }
-        ],
-        "performer": [
-          {
-            "reference": "Practitioner/mii-exa-test-data-practitioner-physician-2"
-          }
-        ],
-        "component": [
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "48018-6",
-                  "display": "Gene studied [ID]"
-                }
-              ]
-            },
-            "valueCodeableConcept": {
-              "coding": [
-                {
-                  "code": "HGNC:7325",
-                  "system": "http://www.genenames.org/geneId",
-                  "display": "MSH2"
-                }
-              ]
-            }
-          },
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "81293-3",
-                  "display": "Description of ranges of DNA sequences examined"
-                }
-              ]
-            },
-            "valueString": "direkte Sequenzierung der codierenden Exons inkl. flankierender intronischer Bereiche"
-          },
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "51958-7"
-                }
-              ]
-            },
-            "valueCodeableConcept": {
-              "coding": [
-                {
-                  "code": "NM_000251.2",
-                  "system": "http://www.ncbi.nlm.nih.gov/refseq"
-                }
-              ]
-            }
-          }
-        ],
-        "code": {
-          "coding": [
-            {
-              "system": "http://loinc.org",
-              "code": "53041-0",
-              "display": "DNA region of interest panel"
-            }
-          ]
-        },
-        "status": "final",
-        "subject": {
-          "reference": "Patient/mii-exa-test-data-patient-4"
-        },
-        "method": {
-          "coding": [
-            {
-              "code": "LA26398-0",
-              "system": "http://loinc.org",
-              "display": "Sequencing"
-            }
-          ]
-        },
-        "specimen": {
-          "reference": "Specimen/mii-exa-test-data-patient-4-specimen-1"
-        },
-        "device": {
-          "reference": "Device/mii-exa-test-data-molgen-device-sequencer"
-        }
-      }
-    },
-    {
-      "request": {
-        "method": "POST",
-        "url": "Observation"
-      },
-      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-4-molgen-untersuchte-region-8",
-      "resource": {
-        "resourceType": "Observation",
-        "id": "mii-exa-test-data-patient-4-molgen-untersuchte-region-8",
-        "meta": {
-          "security": [
-            {
-              "code": "HTEST",
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
-              "display": "test health data"
-            }
-          ],
-          "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/untersuchte-region",
-            "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/region-studied"
-          ]
-        },
-        "category": [
-          {
-            "coding": [
-              {
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-                "code": "laboratory",
-                "display": "Laboratory"
-              }
-            ]
-          }
-        ],
-        "performer": [
-          {
-            "reference": "Practitioner/mii-exa-test-data-practitioner-physician-2"
-          }
-        ],
-        "component": [
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "48018-6",
-                  "display": "Gene studied [ID]"
-                }
-              ]
-            },
-            "valueCodeableConcept": {
-              "coding": [
-                {
-                  "code": "HGNC:7326",
-                  "system": "http://www.genenames.org/geneId",
-                  "display": "MSH3"
-                }
-              ]
-            }
-          },
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "81293-3",
-                  "display": "Description of ranges of DNA sequences examined"
-                }
-              ]
-            },
-            "valueString": "direkte Sequenzierung der codierenden Exons inkl. flankierender intronischer Bereiche"
-          },
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "51958-7"
-                }
-              ]
-            },
-            "valueCodeableConcept": {
-              "coding": [
-                {
-                  "code": "NM_002439.4",
-                  "system": "http://www.ncbi.nlm.nih.gov/refseq"
-                }
-              ]
-            }
-          }
-        ],
-        "code": {
-          "coding": [
-            {
-              "system": "http://loinc.org",
-              "code": "53041-0",
-              "display": "DNA region of interest panel"
-            }
-          ]
-        },
-        "status": "final",
-        "subject": {
-          "reference": "Patient/mii-exa-test-data-patient-4"
-        },
-        "method": {
-          "coding": [
-            {
-              "code": "LA26398-0",
-              "system": "http://loinc.org",
-              "display": "Sequencing"
-            }
-          ]
-        },
-        "specimen": {
-          "reference": "Specimen/mii-exa-test-data-patient-4-specimen-1"
-        },
-        "device": {
-          "reference": "Device/mii-exa-test-data-molgen-device-sequencer"
-        }
-      }
-    },
-    {
-      "request": {
-        "method": "POST",
-        "url": "Observation"
-      },
-      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-4-molgen-untersuchte-region-9",
-      "resource": {
-        "resourceType": "Observation",
-        "id": "mii-exa-test-data-patient-4-molgen-untersuchte-region-9",
-        "meta": {
-          "security": [
-            {
-              "code": "HTEST",
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
-              "display": "test health data"
-            }
-          ],
-          "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/untersuchte-region",
-            "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/region-studied"
-          ]
-        },
-        "category": [
-          {
-            "coding": [
-              {
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-                "code": "laboratory",
-                "display": "Laboratory"
-              }
-            ]
-          }
-        ],
-        "performer": [
-          {
-            "reference": "Practitioner/mii-exa-test-data-practitioner-physician-2"
-          }
-        ],
-        "component": [
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "48018-6",
-                  "display": "Gene studied [ID]"
-                }
-              ]
-            },
-            "valueCodeableConcept": {
-              "coding": [
-                {
-                  "code": "HGNC:7329",
-                  "system": "http://www.genenames.org/geneId",
-                  "display": "MSH6"
-                }
-              ]
-            }
-          },
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "81293-3",
-                  "display": "Description of ranges of DNA sequences examined"
-                }
-              ]
-            },
-            "valueString": "direkte Sequenzierung der codierenden Exons inkl. flankierender intronischer Bereiche"
-          },
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "51958-7"
-                }
-              ]
-            },
-            "valueCodeableConcept": {
-              "coding": [
-                {
-                  "code": "NM_000179.2",
-                  "system": "http://www.ncbi.nlm.nih.gov/refseq"
-                }
-              ]
-            }
-          }
-        ],
-        "code": {
-          "coding": [
-            {
-              "system": "http://loinc.org",
-              "code": "53041-0",
-              "display": "DNA region of interest panel"
-            }
-          ]
-        },
-        "status": "final",
-        "subject": {
-          "reference": "Patient/mii-exa-test-data-patient-4"
-        },
-        "method": {
-          "coding": [
-            {
-              "code": "LA26398-0",
-              "system": "http://loinc.org",
-              "display": "Sequencing"
-            }
-          ]
-        },
-        "specimen": {
-          "reference": "Specimen/mii-exa-test-data-patient-4-specimen-1"
-        },
-        "device": {
-          "reference": "Device/mii-exa-test-data-molgen-device-sequencer"
-        }
-      }
-    },
-    {
-      "request": {
-        "method": "POST",
-        "url": "Observation"
-      },
-      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-4-molgen-untersuchte-region-10",
-      "resource": {
-        "resourceType": "Observation",
-        "id": "mii-exa-test-data-patient-4-molgen-untersuchte-region-10",
-        "meta": {
-          "security": [
-            {
-              "code": "HTEST",
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
-              "display": "test health data"
-            }
-          ],
-          "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/untersuchte-region",
-            "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/region-studied"
-          ]
-        },
-        "category": [
-          {
-            "coding": [
-              {
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-                "code": "laboratory",
-                "display": "Laboratory"
-              }
-            ]
-          }
-        ],
-        "performer": [
-          {
-            "reference": "Practitioner/mii-exa-test-data-practitioner-physician-2"
-          }
-        ],
-        "component": [
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "48018-6",
-                  "display": "Gene studied [ID]"
-                }
-              ]
-            },
-            "valueCodeableConcept": {
-              "coding": [
-                {
-                  "code": "HGNC:7527",
-                  "system": "http://www.genenames.org/geneId",
-                  "display": "MUTYH"
-                }
-              ]
-            }
-          },
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "81293-3",
-                  "display": "Description of ranges of DNA sequences examined"
-                }
-              ]
-            },
-            "valueString": "direkte Sequenzierung der codierenden Exons inkl. flankierender intronischer Bereiche"
-          },
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "51958-7"
-                }
-              ]
-            },
-            "valueCodeableConcept": {
-              "coding": [
-                {
-                  "code": "NM_001128425.1",
-                  "system": "http://www.ncbi.nlm.nih.gov/refseq"
-                }
-              ]
-            }
-          }
-        ],
-        "code": {
-          "coding": [
-            {
-              "system": "http://loinc.org",
-              "code": "53041-0",
-              "display": "DNA region of interest panel"
-            }
-          ]
-        },
-        "status": "final",
-        "subject": {
-          "reference": "Patient/mii-exa-test-data-patient-4"
-        },
-        "method": {
-          "coding": [
-            {
-              "code": "LA26398-0",
-              "system": "http://loinc.org",
-              "display": "Sequencing"
-            }
-          ]
-        },
-        "specimen": {
-          "reference": "Specimen/mii-exa-test-data-patient-4-specimen-1"
-        },
-        "device": {
-          "reference": "Device/mii-exa-test-data-molgen-device-sequencer"
-        }
-      }
-    },
-    {
-      "request": {
-        "method": "POST",
-        "url": "Observation"
-      },
-      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-4-molgen-untersuchte-region-11",
-      "resource": {
-        "resourceType": "Observation",
-        "id": "mii-exa-test-data-patient-4-molgen-untersuchte-region-11",
-        "meta": {
-          "security": [
-            {
-              "code": "HTEST",
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
-              "display": "test health data"
-            }
-          ],
-          "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/untersuchte-region",
-            "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/region-studied"
-          ]
-        },
-        "category": [
-          {
-            "coding": [
-              {
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-                "code": "laboratory",
-                "display": "Laboratory"
-              }
-            ]
-          }
-        ],
-        "performer": [
-          {
-            "reference": "Practitioner/mii-exa-test-data-practitioner-physician-2"
-          }
-        ],
-        "component": [
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "48018-6",
-                  "display": "Gene studied [ID]"
-                }
-              ]
-            },
-            "valueCodeableConcept": {
-              "coding": [
-                {
-                  "code": "HGNC:8028",
-                  "system": "http://www.genenames.org/geneId",
-                  "display": "NTHL1"
-                }
-              ]
-            }
-          },
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "81293-3",
-                  "display": "Description of ranges of DNA sequences examined"
-                }
-              ]
-            },
-            "valueString": "direkte Sequenzierung der codierenden Exons inkl. flankierender intronischer Bereiche"
-          },
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "51958-7"
-                }
-              ]
-            },
-            "valueCodeableConcept": {
-              "coding": [
-                {
-                  "code": "NM_002528.7",
-                  "system": "http://www.ncbi.nlm.nih.gov/refseq"
-                }
-              ]
-            }
-          }
-        ],
-        "code": {
-          "coding": [
-            {
-              "system": "http://loinc.org",
-              "code": "53041-0",
-              "display": "DNA region of interest panel"
-            }
-          ]
-        },
-        "status": "final",
-        "subject": {
-          "reference": "Patient/mii-exa-test-data-patient-4"
-        },
-        "method": {
-          "coding": [
-            {
-              "code": "LA26398-0",
-              "system": "http://loinc.org",
-              "display": "Sequencing"
-            }
-          ]
-        },
-        "specimen": {
-          "reference": "Specimen/mii-exa-test-data-patient-4-specimen-1"
-        },
-        "device": {
-          "reference": "Device/mii-exa-test-data-molgen-device-sequencer"
-        }
-      }
-    },
-    {
-      "request": {
-        "method": "POST",
-        "url": "Observation"
-      },
-      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-4-molgen-untersuchte-region-12",
-      "resource": {
-        "resourceType": "Observation",
-        "id": "mii-exa-test-data-patient-4-molgen-untersuchte-region-12",
-        "meta": {
-          "security": [
-            {
-              "code": "HTEST",
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
-              "display": "test health data"
-            }
-          ],
-          "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/untersuchte-region",
-            "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/region-studied"
-          ]
-        },
-        "category": [
-          {
-            "coding": [
-              {
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-                "code": "laboratory",
-                "display": "Laboratory"
-              }
-            ]
-          }
-        ],
-        "performer": [
-          {
-            "reference": "Practitioner/mii-exa-test-data-practitioner-physician-2"
-          }
-        ],
-        "component": [
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "48018-6",
-                  "display": "Gene studied [ID]"
-                }
-              ]
-            },
-            "valueCodeableConcept": {
-              "coding": [
-                {
-                  "code": "HGNC:9122",
-                  "system": "http://www.genenames.org/geneId",
-                  "display": "PMS2"
-                }
-              ]
-            }
-          },
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "81293-3",
-                  "display": "Description of ranges of DNA sequences examined"
-                }
-              ]
-            },
-            "valueString": "direkte Sequenzierung der codierenden Exons inkl. flankierender intronischer Bereiche"
-          },
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "51958-7"
-                }
-              ]
-            },
-            "valueCodeableConcept": {
-              "coding": [
-                {
-                  "code": "NM_000535.5",
-                  "system": "http://www.ncbi.nlm.nih.gov/refseq"
-                }
-              ]
-            }
-          }
-        ],
-        "code": {
-          "coding": [
-            {
-              "system": "http://loinc.org",
-              "code": "53041-0",
-              "display": "DNA region of interest panel"
-            }
-          ]
-        },
-        "status": "final",
-        "subject": {
-          "reference": "Patient/mii-exa-test-data-patient-4"
-        },
-        "method": {
-          "coding": [
-            {
-              "code": "LA26398-0",
-              "system": "http://loinc.org",
-              "display": "Sequencing"
-            }
-          ]
-        },
-        "specimen": {
-          "reference": "Specimen/mii-exa-test-data-patient-4-specimen-1"
-        },
-        "device": {
-          "reference": "Device/mii-exa-test-data-molgen-device-sequencer"
-        }
-      }
-    },
-    {
-      "request": {
-        "method": "POST",
-        "url": "Observation"
-      },
-      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-4-molgen-untersuchte-region-13",
-      "resource": {
-        "resourceType": "Observation",
-        "id": "mii-exa-test-data-patient-4-molgen-untersuchte-region-13",
-        "meta": {
-          "security": [
-            {
-              "code": "HTEST",
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
-              "display": "test health data"
-            }
-          ],
-          "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/untersuchte-region",
-            "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/region-studied"
-          ]
-        },
-        "category": [
-          {
-            "coding": [
-              {
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-                "code": "laboratory",
-                "display": "Laboratory"
-              }
-            ]
-          }
-        ],
-        "performer": [
-          {
-            "reference": "Practitioner/mii-exa-test-data-practitioner-physician-2"
-          }
-        ],
-        "component": [
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "48018-6",
-                  "display": "Gene studied [ID]"
-                }
-              ]
-            },
-            "valueCodeableConcept": {
-              "coding": [
-                {
-                  "code": "HGNC:9175",
-                  "system": "http://www.genenames.org/geneId",
-                  "display": "POLD1"
-                }
-              ]
-            }
-          },
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "81293-3",
-                  "display": "Description of ranges of DNA sequences examined"
-                }
-              ]
-            },
-            "valueString": "direkte Sequenzierung der codierenden Exons inkl. flankierender intronischer Bereiche"
-          },
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "51958-7"
-                }
-              ]
-            },
-            "valueCodeableConcept": {
-              "coding": [
-                {
-                  "code": "NM_001256849.1",
-                  "system": "http://www.ncbi.nlm.nih.gov/refseq"
-                }
-              ]
-            }
-          }
-        ],
-        "code": {
-          "coding": [
-            {
-              "system": "http://loinc.org",
-              "code": "53041-0",
-              "display": "DNA region of interest panel"
-            }
-          ]
-        },
-        "status": "final",
-        "subject": {
-          "reference": "Patient/mii-exa-test-data-patient-4"
-        },
-        "method": {
-          "coding": [
-            {
-              "code": "LA26398-0",
-              "system": "http://loinc.org",
-              "display": "Sequencing"
-            }
-          ]
-        },
-        "specimen": {
-          "reference": "Specimen/mii-exa-test-data-patient-4-specimen-1"
-        },
-        "device": {
-          "reference": "Device/mii-exa-test-data-molgen-device-sequencer"
-        }
-      }
-    },
-    {
-      "request": {
-        "method": "POST",
-        "url": "Observation"
-      },
-      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-4-molgen-untersuchte-region-14",
-      "resource": {
-        "resourceType": "Observation",
-        "id": "mii-exa-test-data-patient-4-molgen-untersuchte-region-14",
-        "meta": {
-          "security": [
-            {
-              "code": "HTEST",
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
-              "display": "test health data"
-            }
-          ],
-          "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/untersuchte-region",
-            "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/region-studied"
-          ]
-        },
-        "category": [
-          {
-            "coding": [
-              {
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-                "code": "laboratory",
-                "display": "Laboratory"
-              }
-            ]
-          }
-        ],
-        "performer": [
-          {
-            "reference": "Practitioner/mii-exa-test-data-practitioner-physician-2"
-          }
-        ],
-        "component": [
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "48018-6",
-                  "display": "Gene studied [ID]"
-                }
-              ]
-            },
-            "valueCodeableConcept": {
-              "coding": [
-                {
-                  "code": "HGNC:9177",
-                  "system": "http://www.genenames.org/geneId",
-                  "display": "POLE"
-                }
-              ]
-            }
-          },
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "81293-3",
-                  "display": "Description of ranges of DNA sequences examined"
-                }
-              ]
-            },
-            "valueString": "direkte Sequenzierung der codierenden Exons inkl. flankierender intronischer Bereiche"
-          },
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "51958-7"
-                }
-              ]
-            },
-            "valueCodeableConcept": {
-              "coding": [
-                {
-                  "code": "NM_006231.3",
-                  "system": "http://www.ncbi.nlm.nih.gov/refseq"
-                }
-              ]
-            }
-          }
-        ],
-        "code": {
-          "coding": [
-            {
-              "system": "http://loinc.org",
-              "code": "53041-0",
-              "display": "DNA region of interest panel"
-            }
-          ]
-        },
-        "status": "final",
-        "subject": {
-          "reference": "Patient/mii-exa-test-data-patient-4"
-        },
-        "method": {
-          "coding": [
-            {
-              "code": "LA26398-0",
-              "system": "http://loinc.org",
-              "display": "Sequencing"
-            }
-          ]
-        },
-        "specimen": {
-          "reference": "Specimen/mii-exa-test-data-patient-4-specimen-1"
-        },
-        "device": {
-          "reference": "Device/mii-exa-test-data-molgen-device-sequencer"
-        }
-      }
-    },
-    {
-      "request": {
-        "method": "POST",
-        "url": "Observation"
-      },
-      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-4-molgen-untersuchte-region-15",
-      "resource": {
-        "resourceType": "Observation",
-        "id": "mii-exa-test-data-patient-4-molgen-untersuchte-region-15",
-        "meta": {
-          "security": [
-            {
-              "code": "HTEST",
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
-              "display": "test health data"
-            }
-          ],
-          "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/untersuchte-region",
-            "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/region-studied"
-          ]
-        },
-        "category": [
-          {
-            "coding": [
-              {
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-                "code": "laboratory",
-                "display": "Laboratory"
-              }
-            ]
-          }
-        ],
-        "performer": [
-          {
-            "reference": "Practitioner/mii-exa-test-data-practitioner-physician-2"
-          }
-        ],
-        "component": [
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "48018-6",
-                  "display": "Gene studied [ID]"
-                }
-              ]
-            },
-            "valueCodeableConcept": {
-              "coding": [
-                {
-                  "code": "HGNC:11389",
-                  "system": "http://www.genenames.org/geneId",
-                  "display": "STK11"
-                }
-              ]
-            }
-          },
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "81293-3",
-                  "display": "Description of ranges of DNA sequences examined"
-                }
-              ]
-            },
-            "valueString": "direkte Sequenzierung der codierenden Exons inkl. flankierender intronischer Bereiche"
-          },
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "51958-7"
-                }
-              ]
-            },
-            "valueCodeableConcept": {
-              "coding": [
-                {
-                  "code": "NM_000455.4",
-                  "system": "http://www.ncbi.nlm.nih.gov/refseq"
-                }
-              ]
-            }
-          }
-        ],
-        "code": {
-          "coding": [
-            {
-              "system": "http://loinc.org",
-              "code": "53041-0",
-              "display": "DNA region of interest panel"
-            }
-          ]
-        },
-        "status": "final",
-        "subject": {
-          "reference": "Patient/mii-exa-test-data-patient-4"
-        },
-        "method": {
-          "coding": [
-            {
-              "code": "LA26398-0",
-              "system": "http://loinc.org",
-              "display": "Sequencing"
-            }
-          ]
-        },
-        "specimen": {
-          "reference": "Specimen/mii-exa-test-data-patient-4-specimen-1"
-        },
-        "device": {
-          "reference": "Device/mii-exa-test-data-molgen-device-sequencer"
-        }
-      }
-    },
-    {
-      "request": {
-        "method": "POST",
-        "url": "Observation"
-      },
-      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-4-molgen-untersuchte-region-16",
-      "resource": {
-        "resourceType": "Observation",
-        "id": "mii-exa-test-data-patient-4-molgen-untersuchte-region-16",
-        "meta": {
-          "security": [
-            {
-              "code": "HTEST",
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
-              "display": "test health data"
-            }
-          ],
-          "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/untersuchte-region",
-            "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/region-studied"
-          ]
-        },
-        "category": [
-          {
-            "coding": [
-              {
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-                "code": "laboratory",
-                "display": "Laboratory"
-              }
-            ]
-          }
-        ],
-        "performer": [
-          {
-            "reference": "Practitioner/mii-exa-test-data-practitioner-physician-2"
-          }
-        ],
-        "component": [
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "48018-6",
-                  "display": "Gene studied [ID]"
-                }
-              ]
-            },
-            "valueCodeableConcept": {
-              "coding": [
-                {
-                  "code": "HGNC:6770",
-                  "system": "http://www.genenames.org/geneId",
-                  "display": "SMAD4"
-                }
-              ]
-            }
-          },
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "81293-3",
-                  "display": "Description of ranges of DNA sequences examined"
-                }
-              ]
-            },
-            "valueString": "direkte Sequenzierung der codierenden Exons inkl. flankierender intronischer Bereiche"
-          },
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "51958-7"
-                }
-              ]
-            },
-            "valueCodeableConcept": {
-              "coding": [
-                {
-                  "code": "NM_005359.5",
-                  "system": "http://www.ncbi.nlm.nih.gov/refseq"
-                }
-              ]
-            }
-          }
-        ],
-        "code": {
-          "coding": [
-            {
-              "system": "http://loinc.org",
-              "code": "53041-0",
-              "display": "DNA region of interest panel"
-            }
-          ]
-        },
-        "status": "final",
-        "subject": {
-          "reference": "Patient/mii-exa-test-data-patient-4"
-        },
-        "method": {
-          "coding": [
-            {
-              "code": "LA26398-0",
-              "system": "http://loinc.org",
-              "display": "Sequencing"
-            }
-          ]
-        },
-        "specimen": {
-          "reference": "Specimen/mii-exa-test-data-patient-4-specimen-1"
-        },
-        "device": {
-          "reference": "Device/mii-exa-test-data-molgen-device-sequencer"
-        }
-      }
-    },
-    {
-      "request": {
-        "method": "POST",
-        "url": "Observation"
-      },
-      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-4-molgen-untersuchte-region-17",
-      "resource": {
-        "resourceType": "Observation",
-        "id": "mii-exa-test-data-patient-4-molgen-untersuchte-region-17",
-        "meta": {
-          "security": [
-            {
-              "code": "HTEST",
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
-              "display": "test health data"
-            }
-          ],
-          "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/untersuchte-region",
-            "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/region-studied"
-          ]
-        },
-        "category": [
-          {
-            "coding": [
-              {
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-                "code": "laboratory",
-                "display": "Laboratory"
-              }
-            ]
-          }
-        ],
-        "performer": [
-          {
-            "reference": "Practitioner/mii-exa-test-data-practitioner-physician-2"
-          }
-        ],
-        "component": [
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "48018-6",
-                  "display": "Gene studied [ID]"
-                }
-              ]
-            },
-            "valueCodeableConcept": {
-              "coding": [
-                {
-                  "code": "HGNC:11998",
-                  "system": "http://www.genenames.org/geneId",
-                  "display": "TP53"
-                }
-              ]
-            }
-          },
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "81293-3",
-                  "display": "Description of ranges of DNA sequences examined"
-                }
-              ]
-            },
-            "valueString": "direkte Sequenzierung der codierenden Exons inkl. flankierender intronischer Bereiche"
-          },
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "51958-7"
-                }
-              ]
-            },
-            "valueCodeableConcept": {
-              "coding": [
-                {
-                  "code": "NM_000546.5",
-                  "system": "http://www.ncbi.nlm.nih.gov/refseq"
-                }
-              ]
-            }
-          }
-        ],
-        "code": {
-          "coding": [
-            {
-              "system": "http://loinc.org",
-              "code": "53041-0",
-              "display": "DNA region of interest panel"
-            }
-          ]
-        },
-        "status": "final",
-        "subject": {
-          "reference": "Patient/mii-exa-test-data-patient-4"
-        },
-        "method": {
-          "coding": [
-            {
-              "code": "LA26398-0",
-              "system": "http://loinc.org",
-              "display": "Sequencing"
-            }
-          ]
-        },
-        "specimen": {
-          "reference": "Specimen/mii-exa-test-data-patient-4-specimen-1"
-        },
-        "device": {
-          "reference": "Device/mii-exa-test-data-molgen-device-sequencer"
-        }
-      }
-    },
-    {
-      "request": {
-        "method": "POST",
-        "url": "Observation"
-      },
-      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-4-molgen-untersuchte-region-18",
-      "resource": {
-        "resourceType": "Observation",
-        "id": "mii-exa-test-data-patient-4-molgen-untersuchte-region-18",
-        "meta": {
-          "security": [
-            {
-              "code": "HTEST",
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
-              "display": "test health data"
-            }
-          ],
-          "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/untersuchte-region",
-            "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/region-studied"
-          ]
-        },
-        "category": [
-          {
-            "coding": [
-              {
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-                "code": "laboratory",
-                "display": "Laboratory"
-              }
-            ]
-          }
-        ],
-        "performer": [
-          {
-            "reference": "Practitioner/mii-exa-test-data-practitioner-physician-2"
-          }
-        ],
-        "component": [
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "48018-6",
-                  "display": "Gene studied [ID]"
-                }
-              ]
-            },
-            "valueCodeableConcept": {
-              "coding": [
-                {
-                  "code": "HGNC:2509",
-                  "system": "http://www.genenames.org/geneId",
-                  "display": "CTNNA1"
-                }
-              ]
-            }
-          },
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "81293-3",
-                  "display": "Description of ranges of DNA sequences examined"
-                }
-              ]
-            },
-            "valueString": "direkte Sequenzierung der codierenden Exons inkl. flankierender intronischer Bereiche"
-          },
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "51958-7"
-                }
-              ]
-            },
-            "valueCodeableConcept": {
-              "coding": [
-                {
-                  "code": "NM_001903.5",
-                  "system": "http://www.ncbi.nlm.nih.gov/refseq"
-                }
-              ]
-            }
-          }
-        ],
-        "code": {
-          "coding": [
-            {
-              "system": "http://loinc.org",
-              "code": "53041-0",
-              "display": "DNA region of interest panel"
-            }
-          ]
-        },
-        "status": "final",
-        "subject": {
-          "reference": "Patient/mii-exa-test-data-patient-4"
-        },
-        "method": {
-          "coding": [
-            {
-              "code": "LA26398-0",
-              "system": "http://loinc.org",
-              "display": "Sequencing"
-            }
-          ]
-        },
-        "specimen": {
-          "reference": "Specimen/mii-exa-test-data-patient-4-specimen-1"
-        },
-        "device": {
-          "reference": "Device/mii-exa-test-data-molgen-device-sequencer"
         }
       }
     },
@@ -4757,17 +2521,43 @@
             "value": "BP_00070024"
           }
         ],
-        "status": "available",
+        "container": [
+          {
+            "capacity": {
+              "system": "http://unitsofmeasure.org",
+              "value": 5,
+              "code": "ml",
+              "unit": "mL"
+            },
+            "specimenQuantity": {
+              "system": "http://unitsofmeasure.org",
+              "value": 5,
+              "code": "ml",
+              "unit": "mL"
+            },
+            "type": {
+              "coding": [
+                {
+                  "code": "83059008",
+                  "system": "http://snomed.info/sct",
+                  "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+                  "display": "Tube, device (physical object)"
+                }
+              ]
+            }
+          }
+        ],
         "type": {
           "coding": [
             {
-              "code": "445295009",
               "system": "http://snomed.info/sct",
+              "code": "445295009",
               "version": "http://snomed.info/sct/900000000000207008/version/20230731",
               "display": "Blood specimen with edetic acid (specimen)"
             }
           ]
         },
+        "status": "available",
         "subject": {
           "reference": "Patient/mii-exa-test-data-patient-4"
         },
@@ -4804,17 +2594,43 @@
             "value": "BP_00070025"
           }
         ],
-        "status": "available",
+        "container": [
+          {
+            "capacity": {
+              "system": "http://unitsofmeasure.org",
+              "value": 5,
+              "code": "ml",
+              "unit": "mL"
+            },
+            "specimenQuantity": {
+              "system": "http://unitsofmeasure.org",
+              "value": 5,
+              "code": "ml",
+              "unit": "mL"
+            },
+            "type": {
+              "coding": [
+                {
+                  "code": "83059008",
+                  "system": "http://snomed.info/sct",
+                  "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+                  "display": "Tube, device (physical object)"
+                }
+              ]
+            }
+          }
+        ],
         "type": {
           "coding": [
             {
-              "code": "445295009",
               "system": "http://snomed.info/sct",
+              "code": "445295009",
               "version": "http://snomed.info/sct/900000000000207008/version/20230731",
               "display": "Blood specimen with edetic acid (specimen)"
             }
           ]
         },
+        "status": "available",
         "subject": {
           "reference": "Patient/mii-exa-test-data-patient-4"
         },
@@ -4865,8 +2681,8 @@
         "type": {
           "coding": [
             {
-              "code": "119364003",
               "system": "http://snomed.info/sct",
+              "code": "119364003",
               "version": "http://snomed.info/sct/900000000000207008/version/20230731",
               "display": "Serum specimen (specimen)"
             }
@@ -4887,6 +2703,18 @@
         },
         "container": [
           {
+            "capacity": {
+              "system": "http://unitsofmeasure.org",
+              "value": 7,
+              "code": "ml",
+              "unit": "mL"
+            },
+            "specimenQuantity": {
+              "system": "http://unitsofmeasure.org",
+              "value": 7,
+              "code": "ml",
+              "unit": "mL"
+            },
             "type": {
               "coding": [
                 {
@@ -4896,16 +2724,6 @@
                   "display": "Tube, device (physical object)"
                 }
               ]
-            },
-            "capacity": {
-              "value": 7,
-              "code": "ml",
-              "system": "http://unitsofmeasure.org"
-            },
-            "specimenQuantity": {
-              "value": 7,
-              "code": "ml",
-              "system": "http://unitsofmeasure.org"
             }
           }
         ],
@@ -4959,8 +2777,8 @@
         "type": {
           "coding": [
             {
-              "code": "445295009",
               "system": "http://snomed.info/sct",
+              "code": "445295009",
               "version": "http://snomed.info/sct/900000000000207008/version/20230731",
               "display": "Blood specimen with edetic acid (specimen)"
             }
@@ -4981,6 +2799,18 @@
         },
         "container": [
           {
+            "capacity": {
+              "system": "http://unitsofmeasure.org",
+              "value": 5,
+              "code": "ml",
+              "unit": "mL"
+            },
+            "specimenQuantity": {
+              "system": "http://unitsofmeasure.org",
+              "value": 5,
+              "code": "ml",
+              "unit": "mL"
+            },
             "type": {
               "coding": [
                 {
@@ -4990,16 +2820,6 @@
                   "display": "Tube, device (physical object)"
                 }
               ]
-            },
-            "capacity": {
-              "value": 5,
-              "code": "ml",
-              "system": "http://unitsofmeasure.org"
-            },
-            "specimenQuantity": {
-              "value": 5,
-              "code": "ml",
-              "system": "http://unitsofmeasure.org"
             }
           }
         ],

@@ -25,15 +25,15 @@
         {
           "rateRatio": {
             "numerator": {
-              "system": "http://unitsofmeasure.org",
               "value": 75,
               "code": "mg",
+              "system": "http://unitsofmeasure.org",
               "unit": "mg"
             },
             "denominator": {
-              "system": "http://unitsofmeasure.org",
               "value": 2,
               "code": "h",
+              "system": "http://unitsofmeasure.org",
               "unit": "h"
             }
           },

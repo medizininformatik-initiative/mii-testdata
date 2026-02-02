@@ -30,15 +30,15 @@
         {
           "rateRatio": {
             "numerator": {
-              "system": "http://unitsofmeasure.org",
               "value": 6.5,
               "code": "mg",
+              "system": "http://unitsofmeasure.org",
               "unit": "mg"
             },
             "denominator": {
-              "system": "http://unitsofmeasure.org",
               "value": 1,
               "code": "min",
+              "system": "http://unitsofmeasure.org",
               "unit": "Minuten"
             }
           }

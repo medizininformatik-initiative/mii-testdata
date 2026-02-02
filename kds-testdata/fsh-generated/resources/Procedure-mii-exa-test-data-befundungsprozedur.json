@@ -35,17 +35,17 @@
       "text": "Befundung eines Mamma-CTs"
     }
   ],
+  "status": "completed",
   "category": {
     "coding": [
       {
-        "system": "http://snomed.info/sct",
         "code": "165197003",
+        "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/900000000000207008/version/20230731",
         "display": "Diagnostic assessment (procedure)"
       }
     ]
   },
-  "status": "completed",
   "code": {
     "coding": [
       {

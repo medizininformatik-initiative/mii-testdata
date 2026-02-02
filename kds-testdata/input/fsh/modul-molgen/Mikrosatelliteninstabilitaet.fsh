@@ -13,5 +13,6 @@ Description: "Observation: Mikrosatelliteninstabilität für BRAF-Mutation"
 * subject = Reference(mii-exa-test-data-patient-3)
 * valueCodeableConcept = $loinc#LA14122-8 "Stable"
 * specimen = Reference(mii-exa-test-data-patient-3-specimen-1)
-* component[conclusion-string].code = $tbd-codes-cs#conclusion-string
-* component[conclusion-string].valueString = "Tumor weist ein mikrosatellitenstabiles Wachstum auf."
+// TODO: conclusion-string component removed from mikrosatelliteninstabilitaet in molgen 2026.0.x
+// * component[conclusion-string].code = $tbd-codes-cs#conclusion-string
+// * component[conclusion-string].valueString = "Tumor weist ein mikrosatellitenstabiles Wachstum auf."
