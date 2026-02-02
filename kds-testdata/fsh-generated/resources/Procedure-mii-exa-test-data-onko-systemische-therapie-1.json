@@ -77,6 +77,22 @@
       "reference": "CarePlan/mii-exa-test-data-onko-tumorkonferenz-1"
     }
   ],
+  "partOf": [
+    {
+      "reference": "Procedure/mii-exa-test-data-onko-operation-1"
+    }
+  ],
+  "usedCode": [
+    {
+      "coding": [
+        {
+          "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-systemische-therapie-protokolle",
+          "code": "CarboTax",
+          "display": "Carboplatin + Paclitaxel"
+        }
+      ]
+    }
+  ],
   "status": "completed",
   "category": {
     "coding": [

@@ -52,6 +52,26 @@
           }
         ]
       }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "96893-3",
+            "display": "ERBB2 gene duplication in Tumor by FISH"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "LA6576-8",
+            "system": "http://loinc.org",
+            "display": "Positive"
+          }
+        ]
+      }
     }
   ],
   "status": "final",

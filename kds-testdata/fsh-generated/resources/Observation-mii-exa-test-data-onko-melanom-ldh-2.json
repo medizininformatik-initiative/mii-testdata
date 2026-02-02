@@ -35,6 +35,22 @@
     "code": "U/L",
     "value": 320
   },
+  "interpretation": [
+    {
+      "coding": [
+        {
+          "code": "H",
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "display": "High"
+        }
+      ]
+    }
+  ],
+  "note": [
+    {
+      "text": "LDH deutlich erhöht, Hinweis auf Tumorprogression"
+    }
+  ],
   "status": "final",
   "code": {
     "coding": [

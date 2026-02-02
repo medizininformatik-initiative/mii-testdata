@@ -18,6 +18,11 @@
       "reference": "Condition/mii-exa-test-data-onko-diagnose-1"
     }
   ],
+  "partOf": [
+    {
+      "reference": "Procedure/mii-exa-test-data-onko-mamma-operation-1"
+    }
+  ],
   "status": "completed",
   "category": {
     "coding": [

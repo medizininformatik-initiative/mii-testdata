@@ -27,6 +27,11 @@
       "reference": "Specimen/mii-exa-test-data-onko-specimen-1"
     }
   ],
+  "basedOn": [
+    {
+      "reference": "CarePlan/mii-exa-test-data-onko-tumorkonferenz-1"
+    }
+  ],
   "status": "final",
   "subject": {
     "reference": "Patient/mii-exa-test-data-onko-patient-1"

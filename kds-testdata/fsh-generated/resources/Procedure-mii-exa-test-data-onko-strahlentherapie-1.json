@@ -72,6 +72,16 @@
       "reference": "Condition/mii-exa-test-data-onko-diagnose-1"
     }
   ],
+  "basedOn": [
+    {
+      "reference": "CarePlan/mii-exa-test-data-onko-tumorkonferenz-2"
+    }
+  ],
+  "partOf": [
+    {
+      "reference": "Observation/mii-exa-test-data-onko-verlauf-1"
+    }
+  ],
   "status": "completed",
   "category": {
     "coding": [

@@ -1,11 +1,35 @@
 [
   {
+    "outputFile": "AdverseEvent-mii-exa-test-data-onko-nebenwirkung-1.json",
+    "fshName": "mii-exa-test-data-onko-nebenwirkung-1",
+    "fshType": "Instance",
+    "fshFile": "modul-onkologie/core/Outcome.fsh",
+    "startLine": 47,
+    "endLine": 63
+  },
+  {
+    "outputFile": "AdverseEvent-mii-exa-test-data-onko-nebenwirkung-2.json",
+    "fshName": "mii-exa-test-data-onko-nebenwirkung-2",
+    "fshType": "Instance",
+    "fshFile": "modul-onkologie/core/Outcome.fsh",
+    "startLine": 66,
+    "endLine": 79
+  },
+  {
     "outputFile": "BodyStructure-mii-exa-test-data-koerperstruktur.json",
     "fshName": "mii-exa-test-data-koerperstruktur",
     "fshType": "Instance",
     "fshFile": "modul-bildgebung/BodyStructure.fsh",
     "startLine": 1,
     "endLine": 10
+  },
+  {
+    "outputFile": "Bundle-mii-exa-test-data-bundle-onkologie-1.json",
+    "fshName": "mii-exa-test-data-bundle-onkologie-1",
+    "fshType": "Instance",
+    "fshFile": "modul-onkologie/OnkoBundle.fsh",
+    "startLine": 6,
+    "endLine": 188
   },
   {
     "outputFile": "Bundle-mii-exa-test-data-bundle-pat-1.json",
@@ -104,12 +128,52 @@
     "endLine": 11
   },
   {
+    "outputFile": "CarePlan-mii-exa-test-data-onko-tumorkonferenz-1.json",
+    "fshName": "mii-exa-test-data-onko-tumorkonferenz-1",
+    "fshType": "Instance",
+    "fshFile": "modul-onkologie/core/Tumorkonferenz.fsh",
+    "startLine": 6,
+    "endLine": 23
+  },
+  {
+    "outputFile": "CarePlan-mii-exa-test-data-onko-tumorkonferenz-2.json",
+    "fshName": "mii-exa-test-data-onko-tumorkonferenz-2",
+    "fshType": "Instance",
+    "fshFile": "modul-onkologie/core/Tumorkonferenz.fsh",
+    "startLine": 26,
+    "endLine": 42
+  },
+  {
+    "outputFile": "CarePlan-mii-exa-test-data-onko-tumorkonferenz-molekular-1.json",
+    "fshName": "mii-exa-test-data-onko-tumorkonferenz-molekular-1",
+    "fshType": "Instance",
+    "fshFile": "modul-onkologie/core/Tumorkonferenz.fsh",
+    "startLine": 112,
+    "endLine": 128
+  },
+  {
     "outputFile": "Composition-mii-exa-test-data-semistrukt-befundbericht.json",
     "fshName": "mii-exa-test-data-semistrukt-befundbericht",
     "fshType": "Instance",
     "fshFile": "modul-bildgebung/Composition.fsh",
     "startLine": 1,
     "endLine": 18
+  },
+  {
+    "outputFile": "Condition-mii-exa-test-data-onko-diagnose-1.json",
+    "fshName": "mii-exa-test-data-onko-diagnose-1",
+    "fshType": "Instance",
+    "fshFile": "modul-onkologie/core/Diagnose.fsh",
+    "startLine": 6,
+    "endLine": 22
+  },
+  {
+    "outputFile": "Condition-mii-exa-test-data-onko-fruehere-tumorerkrankung-1.json",
+    "fshName": "mii-exa-test-data-onko-fruehere-tumorerkrankung-1",
+    "fshType": "Instance",
+    "fshFile": "modul-onkologie/core/Diagnose.fsh",
+    "startLine": 25,
+    "endLine": 42
   },
   {
     "outputFile": "Condition-mii-exa-test-data-patient-1-diagnose-1.json",
@@ -360,6 +424,14 @@
     "endLine": 19
   },
   {
+    "outputFile": "DiagnosticReport-mii-exa-test-data-onko-befund-1.json",
+    "fshName": "mii-exa-test-data-onko-befund-1",
+    "fshType": "Instance",
+    "fshFile": "modul-onkologie/core/Histologie.fsh",
+    "startLine": 20,
+    "endLine": 31
+  },
+  {
     "outputFile": "DiagnosticReport-mii-exa-test-data-patient-1-labreport-1.json",
     "fshName": "mii-exa-test-data-patient-1-labreport-1",
     "fshType": "Instance",
@@ -454,6 +526,14 @@
     "fshFile": "modul-labor/DiagnosticReport.fsh",
     "startLine": 157,
     "endLine": 173
+  },
+  {
+    "outputFile": "Encounter-mii-exa-test-data-onko-encounter-1.json",
+    "fshName": "mii-exa-test-data-onko-encounter-1",
+    "fshType": "Instance",
+    "fshFile": "modul-onkologie/core/Patient.fsh",
+    "startLine": 17,
+    "endLine": 26
   },
   {
     "outputFile": "Encounter-mii-exa-test-data-patient-1-encounter-1.json",
@@ -574,6 +654,14 @@
     "fshFile": "modul-bildgebung/ImagingStudy.fsh",
     "startLine": 1,
     "endLine": 54
+  },
+  {
+    "outputFile": "List-mii-exa-test-data-onko-liste-evidenz-1.json",
+    "fshName": "mii-exa-test-data-onko-liste-evidenz-1",
+    "fshType": "Instance",
+    "fshFile": "modul-onkologie/core/Diagnose.fsh",
+    "startLine": 45,
+    "endLine": 56
   },
   {
     "outputFile": "List-mii-exa-test-data-patient-1-list-aufnahmemedikation.json",
@@ -1152,6 +1240,30 @@
     "endLine": 423
   },
   {
+    "outputFile": "MedicationRequest-mii-exa-test-data-onko-therapieempfehlung-medikation-1.json",
+    "fshName": "mii-exa-test-data-onko-therapieempfehlung-medikation-1",
+    "fshType": "Instance",
+    "fshFile": "modul-onkologie/core/Tumorkonferenz.fsh",
+    "startLine": 63,
+    "endLine": 74
+  },
+  {
+    "outputFile": "MedicationRequest-mii-exa-test-data-onko-therapieempfehlung-medikation-2.json",
+    "fshName": "mii-exa-test-data-onko-therapieempfehlung-medikation-2",
+    "fshType": "Instance",
+    "fshFile": "modul-onkologie/core/Tumorkonferenz.fsh",
+    "startLine": 77,
+    "endLine": 87
+  },
+  {
+    "outputFile": "MedicationRequest-mii-exa-test-data-onko-therapieempfehlung-niraparib.json",
+    "fshName": "mii-exa-test-data-onko-therapieempfehlung-niraparib",
+    "fshType": "Instance",
+    "fshFile": "modul-onkologie/core/Tumorkonferenz.fsh",
+    "startLine": 148,
+    "endLine": 159
+  },
+  {
     "outputFile": "MedicationRequest-mii-exa-test-data-patient-1-medrequest-1.json",
     "fshName": "mii-exa-test-data-patient-1-medrequest-1",
     "fshType": "Instance",
@@ -1358,6 +1470,30 @@
     "fshFile": "modul-medikation/MedicationRequest.fsh",
     "startLine": 498,
     "endLine": 518
+  },
+  {
+    "outputFile": "MedicationStatement-mii-exa-test-data-onko-medikation-1.json",
+    "fshName": "mii-exa-test-data-onko-medikation-1",
+    "fshType": "Instance",
+    "fshFile": "modul-onkologie/core/Therapie.fsh",
+    "startLine": 78,
+    "endLine": 89
+  },
+  {
+    "outputFile": "MedicationStatement-mii-exa-test-data-onko-medikation-2.json",
+    "fshName": "mii-exa-test-data-onko-medikation-2",
+    "fshType": "Instance",
+    "fshFile": "modul-onkologie/core/Therapie.fsh",
+    "startLine": 92,
+    "endLine": 103
+  },
+  {
+    "outputFile": "MedicationStatement-mii-exa-test-data-onko-medikation-3.json",
+    "fshName": "mii-exa-test-data-onko-medikation-3",
+    "fshType": "Instance",
+    "fshFile": "modul-onkologie/core/Therapie.fsh",
+    "startLine": 106,
+    "endLine": 116
   },
   {
     "outputFile": "MedicationStatement-mii-exa-test-data-patient-1-medstatement-1.json",
@@ -1582,6 +1718,486 @@
     "fshFile": "modul-medikation/MedicationStatement.fsh",
     "startLine": 600,
     "endLine": 619
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-onko-anzahl-befallene-lymphknoten-1.json",
+    "fshName": "mii-exa-test-data-onko-anzahl-befallene-lymphknoten-1",
+    "fshType": "Instance",
+    "fshFile": "modul-onkologie/core/Histologie.fsh",
+    "startLine": 106,
+    "endLine": 122
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-onko-anzahl-befallene-sentinel-lymphknoten-1.json",
+    "fshName": "mii-exa-test-data-onko-anzahl-befallene-sentinel-lymphknoten-1",
+    "fshType": "Instance",
+    "fshFile": "modul-onkologie/core/Histologie.fsh",
+    "startLine": 142,
+    "endLine": 158
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-onko-anzahl-untersuchte-lymphknoten-1.json",
+    "fshName": "mii-exa-test-data-onko-anzahl-untersuchte-lymphknoten-1",
+    "fshType": "Instance",
+    "fshFile": "modul-onkologie/core/Histologie.fsh",
+    "startLine": 88,
+    "endLine": 104
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-onko-anzahl-untersuchte-sentinel-lymphknoten-1.json",
+    "fshName": "mii-exa-test-data-onko-anzahl-untersuchte-sentinel-lymphknoten-1",
+    "fshType": "Instance",
+    "fshFile": "modul-onkologie/core/Histologie.fsh",
+    "startLine": 124,
+    "endLine": 140
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-onko-asa-1.json",
+    "fshName": "mii-exa-test-data-onko-asa-1",
+    "fshType": "Instance",
+    "fshFile": "modul-onkologie/core/Staging.fsh",
+    "startLine": 81,
+    "endLine": 92
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-onko-ecog-1.json",
+    "fshName": "mii-exa-test-data-onko-ecog-1",
+    "fshType": "Instance",
+    "fshFile": "modul-onkologie/core/Staging.fsh",
+    "startLine": 51,
+    "endLine": 63
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-onko-fernmetastasen-1.json",
+    "fshName": "mii-exa-test-data-onko-fernmetastasen-1",
+    "fshType": "Instance",
+    "fshFile": "modul-onkologie/core/Staging.fsh",
+    "startLine": 37,
+    "endLine": 48
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-onko-figo-1.json",
+    "fshName": "mii-exa-test-data-onko-figo-1",
+    "fshType": "Instance",
+    "fshFile": "modul-onkologie/core/Staging.fsh",
+    "startLine": 6,
+    "endLine": 19
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-onko-genetische-variante-1.json",
+    "fshName": "mii-exa-test-data-onko-genetische-variante-1",
+    "fshType": "Instance",
+    "fshFile": "modul-onkologie/core/Outcome.fsh",
+    "startLine": 109,
+    "endLine": 120
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-onko-genetische-variante-2.json",
+    "fshName": "mii-exa-test-data-onko-genetische-variante-2",
+    "fshType": "Instance",
+    "fshFile": "modul-onkologie/core/Outcome.fsh",
+    "startLine": 123,
+    "endLine": 132
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-onko-grading-1.json",
+    "fshName": "mii-exa-test-data-onko-grading-1",
+    "fshType": "Instance",
+    "fshFile": "modul-onkologie/core/Histologie.fsh",
+    "startLine": 34,
+    "endLine": 47
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-onko-histologie-icdo3-1.json",
+    "fshName": "mii-exa-test-data-onko-histologie-icdo3-1",
+    "fshType": "Instance",
+    "fshFile": "modul-onkologie/core/Histologie.fsh",
+    "startLine": 70,
+    "endLine": 85
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-onko-karnofsky-1.json",
+    "fshName": "mii-exa-test-data-onko-karnofsky-1",
+    "fshType": "Instance",
+    "fshFile": "modul-onkologie/core/Staging.fsh",
+    "startLine": 66,
+    "endLine": 78
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-onko-krk-abstand-aboral-1.json",
+    "fshName": "mii-exa-test-data-onko-krk-abstand-aboral-1",
+    "fshType": "Instance",
+    "fshFile": "modul-onkologie/organ-specific/KRK.fsh",
+    "startLine": 52,
+    "endLine": 65
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-onko-krk-abstand-anokutan-1.json",
+    "fshName": "mii-exa-test-data-onko-krk-abstand-anokutan-1",
+    "fshType": "Instance",
+    "fshFile": "modul-onkologie/organ-specific/KRK.fsh",
+    "startLine": 22,
+    "endLine": 35
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-onko-krk-abstand-crm-1.json",
+    "fshName": "mii-exa-test-data-onko-krk-abstand-crm-1",
+    "fshType": "Instance",
+    "fshFile": "modul-onkologie/organ-specific/KRK.fsh",
+    "startLine": 38,
+    "endLine": 48
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-onko-krk-abstand-mesorektal-1.json",
+    "fshName": "mii-exa-test-data-onko-krk-abstand-mesorektal-1",
+    "fshType": "Instance",
+    "fshFile": "modul-onkologie/organ-specific/KRK.fsh",
+    "startLine": 68,
+    "endLine": 81
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-onko-krk-anastomoseninsuffizienz-1.json",
+    "fshName": "mii-exa-test-data-onko-krk-anastomoseninsuffizienz-1",
+    "fshType": "Instance",
+    "fshFile": "modul-onkologie/organ-specific/KRK.fsh",
+    "startLine": 84,
+    "endLine": 94
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-onko-mamma-her2neu-status-1.json",
+    "fshName": "mii-exa-test-data-onko-mamma-her2neu-status-1",
+    "fshType": "Instance",
+    "fshFile": "modul-onkologie/organ-specific/Mamma.fsh",
+    "startLine": 56,
+    "endLine": 69
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-onko-mamma-her2neu-status-2.json",
+    "fshName": "mii-exa-test-data-onko-mamma-her2neu-status-2",
+    "fshType": "Instance",
+    "fshFile": "modul-onkologie/organ-specific/Mamma.fsh",
+    "startLine": 72,
+    "endLine": 87
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-onko-mamma-menopause-status-1.json",
+    "fshName": "mii-exa-test-data-onko-mamma-menopause-status-1",
+    "fshType": "Instance",
+    "fshFile": "modul-onkologie/organ-specific/Mamma.fsh",
+    "startLine": 6,
+    "endLine": 16
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-onko-mamma-rezeptorstatus-estrogen-1.json",
+    "fshName": "mii-exa-test-data-onko-mamma-rezeptorstatus-estrogen-1",
+    "fshType": "Instance",
+    "fshFile": "modul-onkologie/organ-specific/Mamma.fsh",
+    "startLine": 19,
+    "endLine": 35
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-onko-mamma-rezeptorstatus-progesteron-1.json",
+    "fshName": "mii-exa-test-data-onko-mamma-rezeptorstatus-progesteron-1",
+    "fshType": "Instance",
+    "fshFile": "modul-onkologie/organ-specific/Mamma.fsh",
+    "startLine": 38,
+    "endLine": 53
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-onko-melanom-breslow-tiefe-1.json",
+    "fshName": "mii-exa-test-data-onko-melanom-breslow-tiefe-1",
+    "fshType": "Instance",
+    "fshFile": "modul-onkologie/organ-specific/Melanom.fsh",
+    "startLine": 6,
+    "endLine": 21
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-onko-melanom-breslow-tiefe-2.json",
+    "fshName": "mii-exa-test-data-onko-melanom-breslow-tiefe-2",
+    "fshType": "Instance",
+    "fshFile": "modul-onkologie/organ-specific/Melanom.fsh",
+    "startLine": 24,
+    "endLine": 35
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-onko-melanom-ldh-1.json",
+    "fshName": "mii-exa-test-data-onko-melanom-ldh-1",
+    "fshType": "Instance",
+    "fshFile": "modul-onkologie/organ-specific/Melanom.fsh",
+    "startLine": 96,
+    "endLine": 110
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-onko-melanom-ldh-2.json",
+    "fshName": "mii-exa-test-data-onko-melanom-ldh-2",
+    "fshType": "Instance",
+    "fshFile": "modul-onkologie/organ-specific/Melanom.fsh",
+    "startLine": 113,
+    "endLine": 129
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-onko-melanom-sicherheitsabstand-1.json",
+    "fshName": "mii-exa-test-data-onko-melanom-sicherheitsabstand-1",
+    "fshType": "Instance",
+    "fshFile": "modul-onkologie/organ-specific/Melanom.fsh",
+    "startLine": 65,
+    "endLine": 79
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-onko-melanom-sicherheitsabstand-2.json",
+    "fshName": "mii-exa-test-data-onko-melanom-sicherheitsabstand-2",
+    "fshType": "Instance",
+    "fshFile": "modul-onkologie/organ-specific/Melanom.fsh",
+    "startLine": 82,
+    "endLine": 93
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-onko-melanom-ulzeration-1.json",
+    "fshName": "mii-exa-test-data-onko-melanom-ulzeration-1",
+    "fshType": "Instance",
+    "fshFile": "modul-onkologie/organ-specific/Melanom.fsh",
+    "startLine": 38,
+    "endLine": 49
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-onko-melanom-ulzeration-2.json",
+    "fshName": "mii-exa-test-data-onko-melanom-ulzeration-2",
+    "fshType": "Instance",
+    "fshFile": "modul-onkologie/organ-specific/Melanom.fsh",
+    "startLine": 52,
+    "endLine": 62
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-onko-prostata-anzahl-stanzen-1.json",
+    "fshName": "mii-exa-test-data-onko-prostata-anzahl-stanzen-1",
+    "fshType": "Instance",
+    "fshFile": "modul-onkologie/organ-specific/Prostata.fsh",
+    "startLine": 20,
+    "endLine": 30
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-onko-prostata-ca-befall-1.json",
+    "fshName": "mii-exa-test-data-onko-prostata-ca-befall-1",
+    "fshType": "Instance",
+    "fshFile": "modul-onkologie/organ-specific/Prostata.fsh",
+    "startLine": 46,
+    "endLine": 59
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-onko-prostata-gleason-grade-group-1.json",
+    "fshName": "mii-exa-test-data-onko-prostata-gleason-grade-group-1",
+    "fshType": "Instance",
+    "fshFile": "modul-onkologie/organ-specific/Prostata.fsh",
+    "startLine": 89,
+    "endLine": 101
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-onko-prostata-gleason-primary-1.json",
+    "fshName": "mii-exa-test-data-onko-prostata-gleason-primary-1",
+    "fshType": "Instance",
+    "fshFile": "modul-onkologie/organ-specific/Prostata.fsh",
+    "startLine": 62,
+    "endLine": 73
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-onko-prostata-gleason-secondary-1.json",
+    "fshName": "mii-exa-test-data-onko-prostata-gleason-secondary-1",
+    "fshType": "Instance",
+    "fshFile": "modul-onkologie/organ-specific/Prostata.fsh",
+    "startLine": 76,
+    "endLine": 86
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-onko-prostata-komplikation-1.json",
+    "fshName": "mii-exa-test-data-onko-prostata-komplikation-1",
+    "fshType": "Instance",
+    "fshFile": "modul-onkologie/organ-specific/Prostata.fsh",
+    "startLine": 120,
+    "endLine": 133
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-onko-prostata-positive-stanzen-1.json",
+    "fshName": "mii-exa-test-data-onko-prostata-positive-stanzen-1",
+    "fshType": "Instance",
+    "fshFile": "modul-onkologie/organ-specific/Prostata.fsh",
+    "startLine": 33,
+    "endLine": 43
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-onko-prostata-psa-1.json",
+    "fshName": "mii-exa-test-data-onko-prostata-psa-1",
+    "fshType": "Instance",
+    "fshFile": "modul-onkologie/organ-specific/Prostata.fsh",
+    "startLine": 6,
+    "endLine": 16
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-onko-residualstatus-1.json",
+    "fshName": "mii-exa-test-data-onko-residualstatus-1",
+    "fshType": "Instance",
+    "fshFile": "modul-onkologie/core/Staging.fsh",
+    "startLine": 22,
+    "endLine": 34
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-onko-studienteilnahme-1.json",
+    "fshName": "mii-exa-test-data-onko-studienteilnahme-1",
+    "fshType": "Instance",
+    "fshFile": "modul-onkologie/core/Outcome.fsh",
+    "startLine": 135,
+    "endLine": 146
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-onko-studienteilnahme-2.json",
+    "fshName": "mii-exa-test-data-onko-studienteilnahme-2",
+    "fshType": "Instance",
+    "fshFile": "modul-onkologie/core/Outcome.fsh",
+    "startLine": 149,
+    "endLine": 159
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-onko-tnm-a-symbol-1.json",
+    "fshName": "mii-exa-test-data-onko-tnm-a-symbol-1",
+    "fshType": "Instance",
+    "fshFile": "modul-onkologie/core/TNM.fsh",
+    "startLine": 149,
+    "endLine": 161
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-onko-tnm-klassifikation-1.json",
+    "fshName": "mii-exa-test-data-onko-tnm-klassifikation-1",
+    "fshType": "Instance",
+    "fshFile": "modul-onkologie/core/TNM.fsh",
+    "startLine": 179,
+    "endLine": 199
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-onko-tnm-l-kategorie-1.json",
+    "fshName": "mii-exa-test-data-onko-tnm-l-kategorie-1",
+    "fshType": "Instance",
+    "fshFile": "modul-onkologie/core/TNM.fsh",
+    "startLine": 59,
+    "endLine": 71
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-onko-tnm-m-kategorie-1.json",
+    "fshName": "mii-exa-test-data-onko-tnm-m-kategorie-1",
+    "fshType": "Instance",
+    "fshFile": "modul-onkologie/core/TNM.fsh",
+    "startLine": 40,
+    "endLine": 56
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-onko-tnm-m-symbol-1.json",
+    "fshName": "mii-exa-test-data-onko-tnm-m-symbol-1",
+    "fshType": "Instance",
+    "fshFile": "modul-onkologie/core/TNM.fsh",
+    "startLine": 164,
+    "endLine": 176
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-onko-tnm-n-kategorie-1.json",
+    "fshName": "mii-exa-test-data-onko-tnm-n-kategorie-1",
+    "fshType": "Instance",
+    "fshFile": "modul-onkologie/core/TNM.fsh",
+    "startLine": 22,
+    "endLine": 37
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-onko-tnm-n-kategorie-sn-1.json",
+    "fshName": "mii-exa-test-data-onko-tnm-n-kategorie-sn-1",
+    "fshType": "Instance",
+    "fshFile": "modul-onkologie/core/TNM.fsh",
+    "startLine": 206,
+    "endLine": 225
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-onko-tnm-pn-kategorie-1.json",
+    "fshName": "mii-exa-test-data-onko-tnm-pn-kategorie-1",
+    "fshType": "Instance",
+    "fshFile": "modul-onkologie/core/TNM.fsh",
+    "startLine": 89,
+    "endLine": 101
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-onko-tnm-r-symbol-1.json",
+    "fshName": "mii-exa-test-data-onko-tnm-r-symbol-1",
+    "fshType": "Instance",
+    "fshFile": "modul-onkologie/core/TNM.fsh",
+    "startLine": 134,
+    "endLine": 146
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-onko-tnm-s-kategorie-1.json",
+    "fshName": "mii-exa-test-data-onko-tnm-s-kategorie-1",
+    "fshType": "Instance",
+    "fshFile": "modul-onkologie/core/TNM.fsh",
+    "startLine": 104,
+    "endLine": 116
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-onko-tnm-t-kategorie-1.json",
+    "fshName": "mii-exa-test-data-onko-tnm-t-kategorie-1",
+    "fshType": "Instance",
+    "fshFile": "modul-onkologie/core/TNM.fsh",
+    "startLine": 6,
+    "endLine": 19
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-onko-tnm-v-kategorie-1.json",
+    "fshName": "mii-exa-test-data-onko-tnm-v-kategorie-1",
+    "fshType": "Instance",
+    "fshFile": "modul-onkologie/core/TNM.fsh",
+    "startLine": 74,
+    "endLine": 86
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-onko-tnm-y-symbol-1.json",
+    "fshName": "mii-exa-test-data-onko-tnm-y-symbol-1",
+    "fshType": "Instance",
+    "fshFile": "modul-onkologie/core/TNM.fsh",
+    "startLine": 119,
+    "endLine": 131
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-onko-tod-1.json",
+    "fshName": "mii-exa-test-data-onko-tod-1",
+    "fshType": "Instance",
+    "fshFile": "modul-onkologie/core/Outcome.fsh",
+    "startLine": 82,
+    "endLine": 94
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-onko-tod-2.json",
+    "fshName": "mii-exa-test-data-onko-tod-2",
+    "fshType": "Instance",
+    "fshFile": "modul-onkologie/core/Outcome.fsh",
+    "startLine": 97,
+    "endLine": 106
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-onko-tumorgroesse-1.json",
+    "fshName": "mii-exa-test-data-onko-tumorgroesse-1",
+    "fshType": "Instance",
+    "fshFile": "modul-onkologie/core/Histologie.fsh",
+    "startLine": 50,
+    "endLine": 67
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-onko-verlauf-1.json",
+    "fshName": "mii-exa-test-data-onko-verlauf-1",
+    "fshType": "Instance",
+    "fshFile": "modul-onkologie/core/Outcome.fsh",
+    "startLine": 6,
+    "endLine": 25
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-onko-verlauf-2.json",
+    "fshName": "mii-exa-test-data-onko-verlauf-2",
+    "fshType": "Instance",
+    "fshFile": "modul-onkologie/core/Outcome.fsh",
+    "startLine": 28,
+    "endLine": 44
   },
   {
     "outputFile": "Observation-mii-exa-test-data-patient-1-labobs-1.json",
@@ -2032,6 +2648,14 @@
     "endLine": 15
   },
   {
+    "outputFile": "Patient-mii-exa-test-data-onko-patient-1.json",
+    "fshName": "mii-exa-test-data-onko-patient-1",
+    "fshType": "Instance",
+    "fshFile": "modul-onkologie/core/Patient.fsh",
+    "startLine": 5,
+    "endLine": 15
+  },
+  {
     "outputFile": "Patient-mii-exa-test-data-patient-1.json",
     "fshName": "mii-exa-test-data-patient-1",
     "fshType": "Instance",
@@ -2158,6 +2782,102 @@
     "fshFile": "modul-bildgebung/ImagingProcedure.fsh",
     "startLine": 1,
     "endLine": 14
+  },
+  {
+    "outputFile": "Procedure-mii-exa-test-data-onko-bestrahlung-nuklearmedizin-1.json",
+    "fshName": "mii-exa-test-data-onko-bestrahlung-nuklearmedizin-1",
+    "fshType": "Instance",
+    "fshFile": "modul-onkologie/core/Therapie.fsh",
+    "startLine": 163,
+    "endLine": 196
+  },
+  {
+    "outputFile": "Procedure-mii-exa-test-data-onko-krk-operation-1.json",
+    "fshName": "mii-exa-test-data-onko-krk-operation-1",
+    "fshType": "Instance",
+    "fshFile": "modul-onkologie/organ-specific/KRK.fsh",
+    "startLine": 6,
+    "endLine": 19
+  },
+  {
+    "outputFile": "Procedure-mii-exa-test-data-onko-krk-stoma-markierung-1.json",
+    "fshName": "mii-exa-test-data-onko-krk-stoma-markierung-1",
+    "fshType": "Instance",
+    "fshFile": "modul-onkologie/organ-specific/KRK.fsh",
+    "startLine": 97,
+    "endLine": 108
+  },
+  {
+    "outputFile": "Procedure-mii-exa-test-data-onko-mamma-operation-1.json",
+    "fshName": "mii-exa-test-data-onko-mamma-operation-1",
+    "fshType": "Instance",
+    "fshFile": "modul-onkologie/organ-specific/Mamma.fsh",
+    "startLine": 104,
+    "endLine": 119
+  },
+  {
+    "outputFile": "Procedure-mii-exa-test-data-onko-mamma-praeop-markierung-1.json",
+    "fshName": "mii-exa-test-data-onko-mamma-praeop-markierung-1",
+    "fshType": "Instance",
+    "fshFile": "modul-onkologie/organ-specific/Mamma.fsh",
+    "startLine": 90,
+    "endLine": 101
+  },
+  {
+    "outputFile": "Procedure-mii-exa-test-data-onko-mamma-sozialdienst-1.json",
+    "fshName": "mii-exa-test-data-onko-mamma-sozialdienst-1",
+    "fshType": "Instance",
+    "fshFile": "modul-onkologie/organ-specific/Mamma.fsh",
+    "startLine": 122,
+    "endLine": 132
+  },
+  {
+    "outputFile": "Procedure-mii-exa-test-data-onko-melanom-exzision-1.json",
+    "fshName": "mii-exa-test-data-onko-melanom-exzision-1",
+    "fshType": "Instance",
+    "fshFile": "modul-onkologie/organ-specific/Melanom.fsh",
+    "startLine": 132,
+    "endLine": 144
+  },
+  {
+    "outputFile": "Procedure-mii-exa-test-data-onko-operation-1.json",
+    "fshName": "mii-exa-test-data-onko-operation-1",
+    "fshType": "Instance",
+    "fshFile": "modul-onkologie/core/Therapie.fsh",
+    "startLine": 6,
+    "endLine": 26
+  },
+  {
+    "outputFile": "Procedure-mii-exa-test-data-onko-prostata-surgery-1.json",
+    "fshName": "mii-exa-test-data-onko-prostata-surgery-1",
+    "fshType": "Instance",
+    "fshFile": "modul-onkologie/organ-specific/Prostata.fsh",
+    "startLine": 104,
+    "endLine": 117
+  },
+  {
+    "outputFile": "Procedure-mii-exa-test-data-onko-strahlentherapie-1.json",
+    "fshName": "mii-exa-test-data-onko-strahlentherapie-1",
+    "fshType": "Instance",
+    "fshFile": "modul-onkologie/core/Therapie.fsh",
+    "startLine": 29,
+    "endLine": 49
+  },
+  {
+    "outputFile": "Procedure-mii-exa-test-data-onko-strahlentherapie-bestrahlung-1.json",
+    "fshName": "mii-exa-test-data-onko-strahlentherapie-bestrahlung-1",
+    "fshType": "Instance",
+    "fshFile": "modul-onkologie/core/Therapie.fsh",
+    "startLine": 124,
+    "endLine": 157
+  },
+  {
+    "outputFile": "Procedure-mii-exa-test-data-onko-systemische-therapie-1.json",
+    "fshName": "mii-exa-test-data-onko-systemische-therapie-1",
+    "fshType": "Instance",
+    "fshFile": "modul-onkologie/core/Therapie.fsh",
+    "startLine": 52,
+    "endLine": 75
   },
   {
     "outputFile": "Procedure-mii-exa-test-data-patient-1-prozedur-1.json",
@@ -2344,12 +3064,36 @@
     "endLine": 296
   },
   {
+    "outputFile": "RequestGroup-mii-exa-test-data-onko-therapieempfehlung-kombi-1.json",
+    "fshName": "mii-exa-test-data-onko-therapieempfehlung-kombi-1",
+    "fshType": "Instance",
+    "fshFile": "modul-onkologie/core/Tumorkonferenz.fsh",
+    "startLine": 90,
+    "endLine": 109
+  },
+  {
+    "outputFile": "RequestGroup-mii-exa-test-data-onko-therapieempfehlung-parp-1.json",
+    "fshName": "mii-exa-test-data-onko-therapieempfehlung-parp-1",
+    "fshType": "Instance",
+    "fshFile": "modul-onkologie/core/Tumorkonferenz.fsh",
+    "startLine": 131,
+    "endLine": 145
+  },
+  {
     "outputFile": "ServiceRequest-mii-exa-test-data-anforderung.json",
     "fshName": "mii-exa-test-data-anforderung",
     "fshType": "Instance",
     "fshFile": "modul-bildgebung/ServiceRequest.fsh",
     "startLine": 1,
     "endLine": 17
+  },
+  {
+    "outputFile": "ServiceRequest-mii-exa-test-data-onko-therapieempfehlung-op-1.json",
+    "fshName": "mii-exa-test-data-onko-therapieempfehlung-op-1",
+    "fshType": "Instance",
+    "fshFile": "modul-onkologie/core/Tumorkonferenz.fsh",
+    "startLine": 45,
+    "endLine": 60
   },
   {
     "outputFile": "ServiceRequest-mii-exa-test-data-patient-1-labrequest-1.json",
@@ -2446,6 +3190,22 @@
     "fshFile": "modul-labor/ServiceRequest.fsh",
     "startLine": 178,
     "endLine": 197
+  },
+  {
+    "outputFile": "Specimen-mii-exa-test-data-onko-krk-specimen-1.json",
+    "fshName": "mii-exa-test-data-onko-krk-specimen-1",
+    "fshType": "Instance",
+    "fshFile": "modul-onkologie/organ-specific/KRK.fsh",
+    "startLine": 111,
+    "endLine": 121
+  },
+  {
+    "outputFile": "Specimen-mii-exa-test-data-onko-specimen-1.json",
+    "fshName": "mii-exa-test-data-onko-specimen-1",
+    "fshType": "Instance",
+    "fshFile": "modul-onkologie/core/Histologie.fsh",
+    "startLine": 6,
+    "endLine": 17
   },
   {
     "outputFile": "Specimen-mii-exa-test-data-patient-1-specimen-1.json",

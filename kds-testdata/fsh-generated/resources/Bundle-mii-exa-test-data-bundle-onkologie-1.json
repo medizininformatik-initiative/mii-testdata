@@ -105,6 +105,12 @@
           {
             "url": "http://hl7.org/fhir/StructureDefinition/condition-assertedDate",
             "valueDateTime": "2021-06-10"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/condition-occurredFollowing",
+            "valueReference": {
+              "reference": "Condition/mii-exa-test-data-onko-fruehere-tumorerkrankung-1"
+            }
           }
         ],
         "verificationStatus": {
@@ -188,6 +194,18 @@
           {
             "url": "http://hl7.org/fhir/StructureDefinition/condition-assertedDate",
             "valueDateTime": "2015-03-01"
+          },
+          {
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/icd-o-3",
+                  "code": "8500/3",
+                  "display": "Invasives Karzinom, NOS"
+                }
+              ]
+            },
+            "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-histology-morphology-behavior-icdo3"
           }
         ],
         "category": [
@@ -220,6 +238,17 @@
           ],
           "text": "Mammakarzinom 2015, in Remission"
         },
+        "bodySite": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/icd-o-3",
+                "code": "C50.4",
+                "display": "Oberer äußerer Quadrant der Brustdrüse"
+              }
+            ]
+          }
+        ],
         "note": [
           {
             "text": "Zustand nach brusterhaltender OP und adjuvanter Therapie 2015"
@@ -243,6 +272,9 @@
         },
         "subject": {
           "reference": "Patient/mii-exa-test-data-onko-patient-1"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-onko-encounter-1"
         },
         "recordedDate": "2015-03-15"
       }
@@ -328,6 +360,11 @@
         "specimen": [
           {
             "reference": "Specimen/mii-exa-test-data-onko-specimen-1"
+          }
+        ],
+        "basedOn": [
+          {
+            "reference": "CarePlan/mii-exa-test-data-onko-tumorkonferenz-1"
           }
         ],
         "status": "final",
@@ -455,6 +492,15 @@
             "reference": "Condition/mii-exa-test-data-onko-diagnose-1"
           }
         ],
+        "bodySite": {
+          "coding": [
+            {
+              "code": "C56.9",
+              "system": "http://terminology.hl7.org/CodeSystem/icd-o-3",
+              "display": "Ovar"
+            }
+          ]
+        },
         "status": "final",
         "subject": {
           "reference": "Patient/mii-exa-test-data-onko-patient-1"
@@ -462,7 +508,16 @@
         "encounter": {
           "reference": "Encounter/mii-exa-test-data-onko-encounter-1"
         },
-        "effectiveDateTime": "2021-10-05"
+        "effectiveDateTime": "2021-10-05",
+        "method": {
+          "coding": [
+            {
+              "code": "787377000",
+              "system": "http://snomed.info/sct",
+              "display": "Gross examination and target (qualifier value)"
+            }
+          ]
+        }
       }
     },
     {
@@ -1117,11 +1172,30 @@
               "code": "M1b",
               "system": "https://www.uicc.org/resources/tnm"
             }
+          ],
+          "extension": [
+            {
+              "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-tnm-itc-suffix",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "i+",
+                    "system": "https://www.uicc.org/resources/tnm",
+                    "display": "(i+)"
+                  }
+                ]
+              }
+            }
           ]
         },
         "focus": [
           {
             "reference": "Condition/mii-exa-test-data-onko-diagnose-1"
+          }
+        ],
+        "partOf": [
+          {
+            "reference": "Procedure/mii-exa-test-data-onko-operation-1"
           }
         ],
         "hasMember": [
@@ -2154,6 +2228,16 @@
                 "display": "Nein"
               }
             ]
+          },
+          {
+            "coding": [
+              {
+                "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+                "code": "T81.0",
+                "version": "2021",
+                "display": "Blutung und Hämatom als Komplikation eines Eingriffes, anderenorts nicht klassifiziert"
+              }
+            ]
           }
         ],
         "reasonReference": [
@@ -2164,6 +2248,11 @@
         "basedOn": [
           {
             "reference": "CarePlan/mii-exa-test-data-onko-tumorkonferenz-1"
+          }
+        ],
+        "partOf": [
+          {
+            "reference": "Procedure/mii-exa-test-data-onko-systemische-therapie-1"
           }
         ],
         "status": "completed",
@@ -2274,6 +2363,16 @@
             "reference": "Condition/mii-exa-test-data-onko-diagnose-1"
           }
         ],
+        "basedOn": [
+          {
+            "reference": "CarePlan/mii-exa-test-data-onko-tumorkonferenz-2"
+          }
+        ],
+        "partOf": [
+          {
+            "reference": "Observation/mii-exa-test-data-onko-verlauf-1"
+          }
+        ],
         "status": "completed",
         "category": {
           "coding": [
@@ -2330,6 +2429,16 @@
         "partOf": [
           {
             "reference": "Procedure/mii-exa-test-data-onko-strahlentherapie-1"
+          }
+        ],
+        "basedOn": [
+          {
+            "reference": "CarePlan/mii-exa-test-data-onko-tumorkonferenz-2"
+          }
+        ],
+        "reasonReference": [
+          {
+            "reference": "Condition/mii-exa-test-data-onko-diagnose-1"
           }
         ],
         "bodySite": [
@@ -2432,6 +2541,151 @@
         "method": "POST",
         "url": "Procedure"
       },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Procedure/mii-exa-test-data-onko-bestrahlung-nuklearmedizin-1",
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "mii-exa-test-data-onko-bestrahlung-nuklearmedizin-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-strahlentherapie-bestrahlung-nuklearmedizin"
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://fhir.de/CodeSystem/bfarm/ops",
+              "code": "8-531",
+              "display": "Radiojodtherapie",
+              "version": "2021"
+            }
+          ]
+        },
+        "performedPeriod": {
+          "start": "2022-04-01",
+          "end": "2022-04-03"
+        },
+        "partOf": [
+          {
+            "reference": "Procedure/mii-exa-test-data-onko-strahlentherapie-1"
+          }
+        ],
+        "basedOn": [
+          {
+            "reference": "CarePlan/mii-exa-test-data-onko-tumorkonferenz-1"
+          }
+        ],
+        "reasonReference": [
+          {
+            "reference": "Condition/mii-exa-test-data-onko-diagnose-1"
+          }
+        ],
+        "bodySite": [
+          {
+            "coding": [
+              {
+                "code": "1",
+                "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-strahlentherapie-zielgebiet",
+                "display": "Haut"
+              }
+            ],
+            "extension": [
+              {
+                "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-strahlentherapie-bestrahlung-seitenlokalisation",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "code": "T",
+                      "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-seitenlokalisation",
+                      "display": "trifft nicht zu"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/procedure-method",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "MRJT",
+                  "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-strahlentherapie-applikationsart",
+                  "display": "Radiojod-Therapie"
+                }
+              ]
+            }
+          },
+          {
+            "valueQuantity": {
+              "system": "http://unitsofmeasure.org",
+              "value": 3700,
+              "unit": "MBq",
+              "code": "MBq"
+            },
+            "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-strahlentherapie-bestrahlung-gesamtdosis"
+          },
+          {
+            "valueQuantity": {
+              "system": "http://unitsofmeasure.org",
+              "value": 3700,
+              "unit": "MBq",
+              "code": "MBq"
+            },
+            "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-strahlentherapie-bestrahlung-einzeldosis"
+          },
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-strahlentherapie-bestrahlung-boost",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "N",
+                  "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-strahlentherapie-boost",
+                  "display": "keine Boostbestrahlung"
+                }
+              ]
+            }
+          }
+        ],
+        "usedCode": [
+          {
+            "coding": [
+              {
+                "code": "UH",
+                "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-strahlentherapie-strahlenart",
+                "display": "Photonen (ultraharte Röntgenstrahlen, inklusive Gamma-Strahler)"
+              }
+            ]
+          }
+        ],
+        "category": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "399315003",
+              "display": "Radionuclide therapy"
+            }
+          ]
+        },
+        "status": "completed",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-onko-patient-1"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Procedure"
+      },
       "fullUrl": "https://www.medizininformatik-initiative.de/Procedure/mii-exa-test-data-onko-systemische-therapie-1",
       "resource": {
         "resourceType": "Procedure",
@@ -2510,6 +2764,22 @@
         "basedOn": [
           {
             "reference": "CarePlan/mii-exa-test-data-onko-tumorkonferenz-1"
+          }
+        ],
+        "partOf": [
+          {
+            "reference": "Procedure/mii-exa-test-data-onko-operation-1"
+          }
+        ],
+        "usedCode": [
+          {
+            "coding": [
+              {
+                "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-systemische-therapie-protokolle",
+                "code": "CarboTax",
+                "display": "Carboplatin + Paclitaxel"
+              }
+            ]
           }
         ],
         "status": "completed",
@@ -2721,6 +2991,11 @@
             "reference": "Condition/mii-exa-test-data-onko-diagnose-1"
           }
         ],
+        "supportingInfo": [
+          {
+            "reference": "DiagnosticReport/mii-exa-test-data-onko-befund-1"
+          }
+        ],
         "activity": [
           {
             "detail": {
@@ -2755,6 +3030,9 @@
         "status": "active",
         "subject": {
           "reference": "Patient/mii-exa-test-data-onko-patient-1"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-onko-encounter-1"
         },
         "created": "2021-06-20"
       }
@@ -2946,6 +3224,11 @@
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-therapieempfehlung-operation"
           ]
         },
+        "identifier": [
+          {
+            "value": "TE-OP-2021-001"
+          }
+        ],
         "category": [
           {
             "coding": [
@@ -2975,6 +3258,11 @@
         "basedOn": [
           {
             "reference": "CarePlan/mii-exa-test-data-onko-tumorkonferenz-1"
+          }
+        ],
+        "supportingInfo": [
+          {
+            "reference": "DiagnosticReport/mii-exa-test-data-onko-befund-1"
           }
         ],
         "intent": "proposal",
@@ -3020,6 +3308,11 @@
             }
           ]
         },
+        "supportingInformation": [
+          {
+            "reference": "Observation/mii-exa-test-data-onko-genetische-variante-1"
+          }
+        ],
         "status": "active",
         "intent": "proposal",
         "subject": {
@@ -3092,6 +3385,11 @@
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-therapieempfehlung-kombinationstherapie"
           ]
         },
+        "identifier": [
+          {
+            "value": "TE-KOMBI-2021-001"
+          }
+        ],
         "code": {
           "coding": [
             {
@@ -3109,15 +3407,23 @@
         ],
         "action": [
           {
-            "title": "Carboplatin",
+            "action": [
+              {
+                "title": "Carboplatin",
+                "resource": {
+                  "reference": "MedicationRequest/mii-exa-test-data-onko-therapieempfehlung-medikation-1"
+                }
+              },
+              {
+                "title": "Paclitaxel",
+                "resource": {
+                  "reference": "MedicationRequest/mii-exa-test-data-onko-therapieempfehlung-medikation-2"
+                }
+              }
+            ],
+            "title": "CarboTax Chemotherapie",
             "resource": {
-              "reference": "MedicationRequest/mii-exa-test-data-onko-therapieempfehlung-medikation-1"
-            }
-          },
-          {
-            "title": "Paclitaxel",
-            "resource": {
-              "reference": "MedicationRequest/mii-exa-test-data-onko-therapieempfehlung-medikation-2"
+              "reference": "CarePlan/mii-exa-test-data-onko-tumorkonferenz-1"
             }
           }
         ],
@@ -3125,6 +3431,9 @@
         "status": "active",
         "subject": {
           "reference": "Patient/mii-exa-test-data-onko-patient-1"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-onko-encounter-1"
         },
         "authoredOn": "2021-06-20"
       }
@@ -3259,7 +3568,18 @@
               "display": "Fatigue",
               "version": "Version 27.0"
             }
-          ]
+          ],
+          "text": "Fatigue nach Chemotherapie"
+        },
+        "seriousness": {
+          "coding": [
+            {
+              "code": "2",
+              "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-nebenwirkung-ctcae-grad",
+              "display": "Mäßig; minimale, lokale oder nichtinvasive Intervention indiziert; altersgemäße instrumentelle Aktivitäten des täglichen Lebens (ADL) eingeschränkt"
+            }
+          ],
+          "text": "CTCAE Grad 2 - Mäßig"
         },
         "suspectEntity": [
           {
@@ -3272,16 +3592,10 @@
         "subject": {
           "reference": "Patient/mii-exa-test-data-onko-patient-1"
         },
-        "date": "2021-08-15",
-        "seriousness": {
-          "coding": [
-            {
-              "code": "2",
-              "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-nebenwirkung-ctcae-grad",
-              "display": "Mäßig; minimale, lokale oder nichtinvasive Intervention indiziert; altersgemäße instrumentelle Aktivitäten des täglichen Lebens (ADL) eingeschränkt"
-            }
-          ]
-        }
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-onko-encounter-1"
+        },
+        "date": "2021-08-15"
       }
     },
     {
@@ -3359,9 +3673,19 @@
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-verlauf"
           ]
         },
+        "identifier": [
+          {
+            "value": "VERLAUF-001"
+          }
+        ],
         "focus": [
           {
             "reference": "Condition/mii-exa-test-data-onko-diagnose-1"
+          }
+        ],
+        "hasMember": [
+          {
+            "reference": "Observation/mii-exa-test-data-onko-fernmetastasen-1"
           }
         ],
         "component": [
@@ -3438,6 +3762,9 @@
         },
         "subject": {
           "reference": "Patient/mii-exa-test-data-onko-patient-1"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-onko-encounter-1"
         },
         "effectiveDateTime": "2022-06-15",
         "valueCodeableConcept": {
@@ -3585,6 +3912,11 @@
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-tod"
           ]
         },
+        "focus": [
+          {
+            "reference": "Condition/mii-exa-test-data-onko-diagnose-1"
+          }
+        ],
         "interpretation": [
           {
             "coding": [
@@ -3608,6 +3940,9 @@
         },
         "subject": {
           "reference": "Patient/mii-exa-test-data-onko-patient-1"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-onko-encounter-1"
         },
         "effectiveDateTime": "2024-05-15",
         "valueCodeableConcept": {
@@ -3691,6 +4026,15 @@
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-genetische-variante"
           ]
         },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "LA9633-4",
+              "system": "http://loinc.org",
+              "display": "Present"
+            }
+          ]
+        },
         "note": [
           {
             "text": "BRCA1 pathogene Variante nachgewiesen"
@@ -3736,6 +4080,9 @@
         "status": "final",
         "subject": {
           "reference": "Patient/mii-exa-test-data-onko-patient-1"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-onko-encounter-1"
         },
         "effectiveDateTime": "2021-06-15"
       }
@@ -3834,6 +4181,9 @@
         "focus": [
           {
             "reference": "Condition/mii-exa-test-data-onko-diagnose-1"
+          },
+          {
+            "display": "OVAR-21 Studie"
           }
         ],
         "status": "final",
@@ -3989,6 +4339,20 @@
             "reference": "Condition/mii-exa-test-data-onko-diagnose-1"
           }
         ],
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "LA6576-8",
+              "display": "Positive"
+            },
+            {
+              "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-mamma-rezeptorstatus-leitlinie",
+              "code": "positiv",
+              "display": "positiv"
+            }
+          ]
+        },
         "component": [
           {
             "valueQuantity": {
@@ -3996,6 +4360,17 @@
               "system": "http://unitsofmeasure.org",
               "value": 85
             },
+            "interpretation": [
+              {
+                "coding": [
+                  {
+                    "code": "H",
+                    "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                    "display": "High"
+                  }
+                ]
+              }
+            ],
             "code": {
               "coding": [
                 {
@@ -4040,16 +4415,7 @@
         "subject": {
           "reference": "Patient/mii-exa-test-data-onko-patient-1"
         },
-        "effectiveDateTime": "2021-06-18",
-        "valueCodeableConcept": {
-          "coding": [
-            {
-              "code": "LA6576-8",
-              "system": "http://loinc.org",
-              "display": "Positive"
-            }
-          ]
-        }
+        "effectiveDateTime": "2021-06-18"
       }
     },
     {
@@ -4084,6 +4450,11 @@
               "system": "http://loinc.org",
               "code": "LA6576-8",
               "display": "Positive"
+            },
+            {
+              "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-mamma-rezeptorstatus-leitlinie",
+              "code": "positiv",
+              "display": "positiv"
             }
           ]
         },
@@ -4279,6 +4650,26 @@
                 }
               ]
             }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "96893-3",
+                  "display": "ERBB2 gene duplication in Tumor by FISH"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "LA6576-8",
+                  "system": "http://loinc.org",
+                  "display": "Positive"
+                }
+              ]
+            }
           }
         ],
         "status": "final",
@@ -4323,6 +4714,11 @@
             "reference": "Condition/mii-exa-test-data-onko-diagnose-1"
           }
         ],
+        "partOf": [
+          {
+            "reference": "Procedure/mii-exa-test-data-onko-mamma-operation-1"
+          }
+        ],
         "status": "completed",
         "category": {
           "coding": [
@@ -4346,6 +4742,162 @@
           "reference": "Patient/mii-exa-test-data-onko-patient-1"
         },
         "performedDateTime": "2021-09-28T08:00:00+02:00"
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Procedure"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Procedure/mii-exa-test-data-onko-mamma-operation-1",
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "mii-exa-test-data-onko-mamma-operation-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-mamma-operation"
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://fhir.de/CodeSystem/bfarm/ops",
+              "code": "5-870.4",
+              "display": "Brusterhaltende Chirurgie: Segmentresektion",
+              "version": "2021"
+            },
+            {
+              "code": "392021009",
+              "system": "http://snomed.info/sct",
+              "display": "Lumpectomy of breast (procedure)"
+            }
+          ]
+        },
+        "reasonReference": [
+          {
+            "reference": "Condition/mii-exa-test-data-onko-diagnose-1"
+          }
+        ],
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-operation-intention",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "K",
+                  "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-intention",
+                  "display": "kurativ"
+                }
+              ]
+            }
+          }
+        ],
+        "usedCode": [
+          {
+            "coding": [
+              {
+                "code": "168750009",
+                "system": "http://snomed.info/sct",
+                "display": "Specimen X-ray (procedure)"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "code": "433222002",
+                "system": "http://snomed.info/sct",
+                "display": "Insertion of guide wire into breast using ultrasound guidance (procedure)"
+              }
+            ]
+          }
+        ],
+        "status": "completed",
+        "category": {
+          "coding": [
+            {
+              "code": "387713003",
+              "system": "http://snomed.info/sct",
+              "display": "Surgical procedure"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-onko-patient-1"
+        },
+        "performedDateTime": "2021-09-30"
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Procedure"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Procedure/mii-exa-test-data-onko-mamma-sozialdienst-1",
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "mii-exa-test-data-onko-mamma-sozialdienst-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-mamma-sozialdienst"
+          ]
+        },
+        "reasonReference": [
+          {
+            "reference": "Condition/mii-exa-test-data-onko-diagnose-1"
+          }
+        ],
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-operation-intention",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "K",
+                  "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-intention",
+                  "display": "kurativ"
+                }
+              ]
+            }
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "306238000",
+              "display": "Referral to Social Services (procedure)"
+            }
+          ]
+        },
+        "status": "completed",
+        "category": {
+          "coding": [
+            {
+              "code": "387713003",
+              "system": "http://snomed.info/sct",
+              "display": "Surgical procedure"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-onko-patient-1"
+        },
+        "performedDateTime": "2021-10-05"
       }
     },
     {
@@ -4567,6 +5119,9 @@
           "reference": "Patient/mii-exa-test-data-onko-patient-1"
         },
         "effectiveDateTime": "2021-06-10",
+        "specimen": {
+          "reference": "Specimen/mii-exa-test-data-onko-specimen-1"
+        },
         "valueCodeableConcept": {
           "coding": [
             {
@@ -4806,7 +5361,10 @@
         "subject": {
           "reference": "Patient/mii-exa-test-data-onko-patient-1"
         },
-        "effectiveDateTime": "2021-10-15"
+        "effectiveDateTime": "2021-10-15",
+        "specimen": {
+          "reference": "Specimen/mii-exa-test-data-onko-specimen-1"
+        }
       }
     },
     {
@@ -5100,7 +5658,16 @@
         "subject": {
           "reference": "Patient/mii-exa-test-data-onko-patient-1"
         },
-        "performedDateTime": "2021-09-25T10:00:00+02:00"
+        "performedDateTime": "2021-09-25T10:00:00+02:00",
+        "statusReason": {
+          "coding": [
+            {
+              "code": "397943006",
+              "system": "http://snomed.info/sct",
+              "display": "Planned (qualifier value)"
+            }
+          ]
+        }
       }
     },
     {
@@ -5153,6 +5720,17 @@
             }
           }
         ],
+        "usedCode": [
+          {
+            "coding": [
+              {
+                "code": "334101000",
+                "system": "http://snomed.info/sct",
+                "display": "Surgical stapling device (physical object)"
+              }
+            ]
+          }
+        ],
         "status": "completed",
         "subject": {
           "reference": "Patient/mii-exa-test-data-onko-patient-1"
@@ -5193,6 +5771,17 @@
             ]
           }
         },
+        "condition": [
+          {
+            "coding": [
+              {
+                "code": "17621005",
+                "system": "http://snomed.info/sct",
+                "display": "Normal (qualifier value)"
+              }
+            ]
+          }
+        ],
         "status": "available",
         "type": {
           "coding": [
@@ -5253,6 +5842,9 @@
         "subject": {
           "reference": "Patient/mii-exa-test-data-onko-patient-1"
         },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-onko-encounter-1"
+        },
         "effectiveDateTime": "2021-06-20",
         "method": {
           "coding": [
@@ -5260,6 +5852,60 @@
               "code": "117617002",
               "system": "http://snomed.info/sct",
               "display": "Immunohistochemistry procedure"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-onko-melanom-breslow-tiefe-2",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-onko-melanom-breslow-tiefe-2",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-melanom-breslow-tiefe"
+          ]
+        },
+        "focus": [
+          {
+            "reference": "Condition/mii-exa-test-data-onko-diagnose-1"
+          }
+        ],
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "106243009",
+              "system": "http://snomed.info/sct",
+              "display": "Breslow depth staging for melanoma of skin (observable entity)"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-onko-patient-1"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-onko-encounter-1"
+        },
+        "effectiveDateTime": "2021-06-20",
+        "dataAbsentReason": {
+          "coding": [
+            {
+              "code": "unknown",
+              "system": "http://terminology.hl7.org/CodeSystem/data-absent-reason",
+              "display": "Unknown"
             }
           ]
         }
@@ -5303,6 +5949,9 @@
         "status": "final",
         "subject": {
           "reference": "Patient/mii-exa-test-data-onko-patient-1"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-onko-encounter-1"
         },
         "effectiveDateTime": "2021-06-20",
         "valueCodeableConcept": {
@@ -5412,7 +6061,64 @@
         "subject": {
           "reference": "Patient/mii-exa-test-data-onko-patient-1"
         },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-onko-encounter-1"
+        },
         "effectiveDateTime": "2021-07-10"
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-onko-melanom-sicherheitsabstand-2",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-onko-melanom-sicherheitsabstand-2",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-melanom-sicherheitsabstand"
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "396511007",
+              "display": "Distance of in situ melanoma from closest lateral surgical margin in excised specimen of skin (observable entity)"
+            }
+          ]
+        },
+        "focus": [
+          {
+            "reference": "Condition/mii-exa-test-data-onko-diagnose-1"
+          }
+        ],
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-onko-patient-1"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-onko-encounter-1"
+        },
+        "effectiveDateTime": "2021-07-10",
+        "dataAbsentReason": {
+          "coding": [
+            {
+              "code": "not-performed",
+              "system": "http://terminology.hl7.org/CodeSystem/data-absent-reason",
+              "display": "Not Performed"
+            }
+          ]
+        }
       }
     },
     {
@@ -5517,6 +6223,22 @@
           "code": "U/L",
           "value": 320
         },
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "code": "H",
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "display": "High"
+              }
+            ]
+          }
+        ],
+        "note": [
+          {
+            "text": "LDH deutlich erhöht, Hinweis auf Tumorprogression"
+          }
+        ],
         "status": "final",
         "code": {
           "coding": [

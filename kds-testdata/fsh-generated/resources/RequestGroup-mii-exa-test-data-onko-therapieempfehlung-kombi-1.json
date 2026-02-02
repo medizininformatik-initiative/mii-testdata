@@ -13,6 +13,11 @@
       "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-therapieempfehlung-kombinationstherapie"
     ]
   },
+  "identifier": [
+    {
+      "value": "TE-KOMBI-2021-001"
+    }
+  ],
   "code": {
     "coding": [
       {
@@ -30,15 +35,23 @@
   ],
   "action": [
     {
-      "title": "Carboplatin",
+      "action": [
+        {
+          "title": "Carboplatin",
+          "resource": {
+            "reference": "MedicationRequest/mii-exa-test-data-onko-therapieempfehlung-medikation-1"
+          }
+        },
+        {
+          "title": "Paclitaxel",
+          "resource": {
+            "reference": "MedicationRequest/mii-exa-test-data-onko-therapieempfehlung-medikation-2"
+          }
+        }
+      ],
+      "title": "CarboTax Chemotherapie",
       "resource": {
-        "reference": "MedicationRequest/mii-exa-test-data-onko-therapieempfehlung-medikation-1"
-      }
-    },
-    {
-      "title": "Paclitaxel",
-      "resource": {
-        "reference": "MedicationRequest/mii-exa-test-data-onko-therapieempfehlung-medikation-2"
+        "reference": "CarePlan/mii-exa-test-data-onko-tumorkonferenz-1"
       }
     }
   ],
@@ -46,6 +59,9 @@
   "status": "active",
   "subject": {
     "reference": "Patient/mii-exa-test-data-onko-patient-1"
+  },
+  "encounter": {
+    "reference": "Encounter/mii-exa-test-data-onko-encounter-1"
   },
   "authoredOn": "2021-06-20"
 }

@@ -27,6 +27,11 @@
       }
     ]
   },
+  "supportingInformation": [
+    {
+      "reference": "Observation/mii-exa-test-data-onko-genetische-variante-1"
+    }
+  ],
   "status": "active",
   "intent": "proposal",
   "subject": {

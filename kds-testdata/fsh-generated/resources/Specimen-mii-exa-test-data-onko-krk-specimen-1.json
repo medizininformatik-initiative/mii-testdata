@@ -25,6 +25,17 @@
       ]
     }
   },
+  "condition": [
+    {
+      "coding": [
+        {
+          "code": "17621005",
+          "system": "http://snomed.info/sct",
+          "display": "Normal (qualifier value)"
+        }
+      ]
+    }
+  ],
   "status": "available",
   "type": {
     "coding": [

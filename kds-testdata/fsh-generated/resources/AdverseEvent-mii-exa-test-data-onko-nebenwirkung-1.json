@@ -21,7 +21,18 @@
         "display": "Fatigue",
         "version": "Version 27.0"
       }
-    ]
+    ],
+    "text": "Fatigue nach Chemotherapie"
+  },
+  "seriousness": {
+    "coding": [
+      {
+        "code": "2",
+        "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-nebenwirkung-ctcae-grad",
+        "display": "Mäßig; minimale, lokale oder nichtinvasive Intervention indiziert; altersgemäße instrumentelle Aktivitäten des täglichen Lebens (ADL) eingeschränkt"
+      }
+    ],
+    "text": "CTCAE Grad 2 - Mäßig"
   },
   "suspectEntity": [
     {
@@ -34,14 +45,8 @@
   "subject": {
     "reference": "Patient/mii-exa-test-data-onko-patient-1"
   },
-  "date": "2021-08-15",
-  "seriousness": {
-    "coding": [
-      {
-        "code": "2",
-        "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-nebenwirkung-ctcae-grad",
-        "display": "Mäßig; minimale, lokale oder nichtinvasive Intervention indiziert; altersgemäße instrumentelle Aktivitäten des täglichen Lebens (ADL) eingeschränkt"
-      }
-    ]
-  }
+  "encounter": {
+    "reference": "Encounter/mii-exa-test-data-onko-encounter-1"
+  },
+  "date": "2021-08-15"
 }

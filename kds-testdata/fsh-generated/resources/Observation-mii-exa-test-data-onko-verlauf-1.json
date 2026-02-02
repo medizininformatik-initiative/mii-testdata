@@ -13,9 +13,19 @@
       "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-verlauf"
     ]
   },
+  "identifier": [
+    {
+      "value": "VERLAUF-001"
+    }
+  ],
   "focus": [
     {
       "reference": "Condition/mii-exa-test-data-onko-diagnose-1"
+    }
+  ],
+  "hasMember": [
+    {
+      "reference": "Observation/mii-exa-test-data-onko-fernmetastasen-1"
     }
   ],
   "component": [
@@ -92,6 +102,9 @@
   },
   "subject": {
     "reference": "Patient/mii-exa-test-data-onko-patient-1"
+  },
+  "encounter": {
+    "reference": "Encounter/mii-exa-test-data-onko-encounter-1"
   },
   "effectiveDateTime": "2022-06-15",
   "valueCodeableConcept": {

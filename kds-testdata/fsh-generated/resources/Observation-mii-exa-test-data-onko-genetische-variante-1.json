@@ -13,6 +13,15 @@
       "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-genetische-variante"
     ]
   },
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "code": "LA9633-4",
+        "system": "http://loinc.org",
+        "display": "Present"
+      }
+    ]
+  },
   "note": [
     {
       "text": "BRCA1 pathogene Variante nachgewiesen"
@@ -58,6 +67,9 @@
   "status": "final",
   "subject": {
     "reference": "Patient/mii-exa-test-data-onko-patient-1"
+  },
+  "encounter": {
+    "reference": "Encounter/mii-exa-test-data-onko-encounter-1"
   },
   "effectiveDateTime": "2021-06-15"
 }

@@ -42,11 +42,30 @@
         "code": "M1b",
         "system": "https://www.uicc.org/resources/tnm"
       }
+    ],
+    "extension": [
+      {
+        "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-tnm-itc-suffix",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "i+",
+              "system": "https://www.uicc.org/resources/tnm",
+              "display": "(i+)"
+            }
+          ]
+        }
+      }
     ]
   },
   "focus": [
     {
       "reference": "Condition/mii-exa-test-data-onko-diagnose-1"
+    }
+  ],
+  "partOf": [
+    {
+      "reference": "Procedure/mii-exa-test-data-onko-operation-1"
     }
   ],
   "hasMember": [

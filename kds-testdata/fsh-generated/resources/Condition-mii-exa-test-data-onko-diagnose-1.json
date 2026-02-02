@@ -17,6 +17,12 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/condition-assertedDate",
       "valueDateTime": "2021-06-10"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/condition-occurredFollowing",
+      "valueReference": {
+        "reference": "Condition/mii-exa-test-data-onko-fruehere-tumorerkrankung-1"
+      }
     }
   ],
   "verificationStatus": {

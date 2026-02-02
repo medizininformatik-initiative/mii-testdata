@@ -40,5 +40,14 @@
   "subject": {
     "reference": "Patient/mii-exa-test-data-onko-patient-1"
   },
-  "performedDateTime": "2021-09-25T10:00:00+02:00"
+  "performedDateTime": "2021-09-25T10:00:00+02:00",
+  "statusReason": {
+    "coding": [
+      {
+        "code": "397943006",
+        "system": "http://snomed.info/sct",
+        "display": "Planned (qualifier value)"
+      }
+    ]
+  }
 }

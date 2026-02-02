@@ -31,6 +31,9 @@
   "subject": {
     "reference": "Patient/mii-exa-test-data-onko-patient-1"
   },
+  "encounter": {
+    "reference": "Encounter/mii-exa-test-data-onko-encounter-1"
+  },
   "effectiveDateTime": "2021-06-20",
   "valueCodeableConcept": {
     "coding": [

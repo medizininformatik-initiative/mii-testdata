@@ -109,6 +109,12 @@
       "id": "de_medizininformatikinitiative_kerndatensatz_bildgebung"
     },
     {
+      "packageId": "de.medizininformatikinitiative.kerndatensatz.onkologie",
+      "version": "2026.0.x",
+      "uri": "http://fhir.org/packages/de.medizininformatikinitiative.kerndatensatz.onkologie/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.onkologie",
+      "id": "de_medizininformatikinitiative_kerndatensatz_onkologie"
+    },
+    {
       "packageId": "de.basisprofil.r4",
       "version": "1.5.x",
       "uri": "http://fhir.org/packages/de.basisprofil.r4/ImplementationGuide/de.basisprofil.r4",
@@ -221,6 +227,14 @@
       },
       {
         "reference": {
+          "reference": "List/mii-exa-test-data-onko-liste-evidenz-1"
+        },
+        "name": "Liste der Evidenz zum Erstdiagnosezeitpunkt",
+        "description": "Onkologie Test - Liste Evidenz Erstdiagnose",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Composition/mii-exa-test-data-semistrukt-befundbericht"
         },
         "name": "Mammographic Report",
@@ -297,6 +311,14 @@
         },
         "name": "Medikationsliste während stationärem Aufenthalt",
         "description": "List: Medikationsliste während stationärem Aufenthalt für Patient 9",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Bundle/mii-exa-test-data-bundle-onkologie-1"
+        },
+        "name": "MII Onkologie Test Data Bundle",
+        "description": "Vollständiges Transaktionsbundle mit allen Onkologie-Testdaten für den Upload auf einen FHIR-Server",
         "exampleBoolean": true
       },
       {
@@ -713,6 +735,750 @@
         },
         "name": "mii-exa-test-data-molgen-device-sequencer",
         "description": "Device: Sequencer used for BRAF mutation analysis",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-onko-anzahl-befallene-lymphknoten-1"
+        },
+        "name": "mii-exa-test-data-onko-anzahl-befallene-lymphknoten-1",
+        "description": "Onkologie Test - Anzahl befallene Lymphknoten",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-onko-anzahl-befallene-sentinel-lymphknoten-1"
+        },
+        "name": "mii-exa-test-data-onko-anzahl-befallene-sentinel-lymphknoten-1",
+        "description": "Onkologie Test - Anzahl befallene Sentinel-Lymphknoten",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-onko-anzahl-untersuchte-lymphknoten-1"
+        },
+        "name": "mii-exa-test-data-onko-anzahl-untersuchte-lymphknoten-1",
+        "description": "Onkologie Test - Anzahl untersuchte Lymphknoten",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-onko-anzahl-untersuchte-sentinel-lymphknoten-1"
+        },
+        "name": "mii-exa-test-data-onko-anzahl-untersuchte-sentinel-lymphknoten-1",
+        "description": "Onkologie Test - Anzahl untersuchte Sentinel-Lymphknoten",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-onko-asa-1"
+        },
+        "name": "mii-exa-test-data-onko-asa-1",
+        "description": "Onkologie Test ASA - II",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "DiagnosticReport/mii-exa-test-data-onko-befund-1"
+        },
+        "name": "mii-exa-test-data-onko-befund-1",
+        "description": "Onkologie Test Befund - Pathologiebericht",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Procedure/mii-exa-test-data-onko-bestrahlung-nuklearmedizin-1"
+        },
+        "name": "mii-exa-test-data-onko-bestrahlung-nuklearmedizin-1",
+        "description": "Onkologie Test Nuklearmedizinische Bestrahlung - Radiojod-Therapie Schilddrüse",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Condition/mii-exa-test-data-onko-diagnose-1"
+        },
+        "name": "mii-exa-test-data-onko-diagnose-1",
+        "description": "Onkologie Test Diagnose - Ovarialkarzinom",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-onko-ecog-1"
+        },
+        "name": "mii-exa-test-data-onko-ecog-1",
+        "description": "Onkologie Test ECOG - 1",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Encounter/mii-exa-test-data-onko-encounter-1"
+        },
+        "name": "mii-exa-test-data-onko-encounter-1",
+        "description": "Onkologie Test Encounter - Inpatient oncology encounter",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-onko-fernmetastasen-1"
+        },
+        "name": "mii-exa-test-data-onko-fernmetastasen-1",
+        "description": "Onkologie Test Fernmetastasen - Leber",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-onko-figo-1"
+        },
+        "name": "mii-exa-test-data-onko-figo-1",
+        "description": "Onkologie Test Weitere Klassifikationen - FIGO IVB",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Condition/mii-exa-test-data-onko-fruehere-tumorerkrankung-1"
+        },
+        "name": "mii-exa-test-data-onko-fruehere-tumorerkrankung-1",
+        "description": "Onkologie Test - Frühere Tumorerkrankung",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-onko-genetische-variante-1"
+        },
+        "name": "mii-exa-test-data-onko-genetische-variante-1",
+        "description": "Onkologie Test Genetische Variante - BRCA1 Mutation",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-onko-genetische-variante-2"
+        },
+        "name": "mii-exa-test-data-onko-genetische-variante-2",
+        "description": "Onkologie Test Genetische Variante - KRAS Wildtyp",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-onko-grading-1"
+        },
+        "name": "mii-exa-test-data-onko-grading-1",
+        "description": "Onkologie Test Grading - G3",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-onko-histologie-icdo3-1"
+        },
+        "name": "mii-exa-test-data-onko-histologie-icdo3-1",
+        "description": "Onkologie Test Histologie ICD-O-3 - Seröses Adenokarzinom",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-onko-karnofsky-1"
+        },
+        "name": "mii-exa-test-data-onko-karnofsky-1",
+        "description": "Onkologie Test Karnofsky - 80%",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-onko-krk-abstand-aboral-1"
+        },
+        "name": "mii-exa-test-data-onko-krk-abstand-aboral-1",
+        "description": "Onkologie Test KRK Abstand Resektionsrand aboral",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-onko-krk-abstand-anokutan-1"
+        },
+        "name": "mii-exa-test-data-onko-krk-abstand-anokutan-1",
+        "description": "Onkologie Test KRK Abstand Tumor zur Anokutanlinie",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-onko-krk-abstand-crm-1"
+        },
+        "name": "mii-exa-test-data-onko-krk-abstand-crm-1",
+        "description": "Onkologie Test KRK Abstand circumferentielle Resektionsebene (CRM)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-onko-krk-abstand-mesorektal-1"
+        },
+        "name": "mii-exa-test-data-onko-krk-abstand-mesorektal-1",
+        "description": "Onkologie Test KRK MRT Abstand zur mesorektalen Faszie",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-onko-krk-anastomoseninsuffizienz-1"
+        },
+        "name": "mii-exa-test-data-onko-krk-anastomoseninsuffizienz-1",
+        "description": "Onkologie Test KRK Anastomoseninsuffizienz - Keine",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Procedure/mii-exa-test-data-onko-krk-operation-1"
+        },
+        "name": "mii-exa-test-data-onko-krk-operation-1",
+        "description": "Onkologie Test KRK Operation - Anteriore Resektion",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Specimen/mii-exa-test-data-onko-krk-specimen-1"
+        },
+        "name": "mii-exa-test-data-onko-krk-specimen-1",
+        "description": "Onkologie Test KRK Specimen - Rektumresektat",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Procedure/mii-exa-test-data-onko-krk-stoma-markierung-1"
+        },
+        "name": "mii-exa-test-data-onko-krk-stoma-markierung-1",
+        "description": "Onkologie Test KRK Stoma Markierung",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-onko-mamma-her2neu-status-1"
+        },
+        "name": "mii-exa-test-data-onko-mamma-her2neu-status-1",
+        "description": "Onkologie Test Mamma Her2neu Status - Negativ",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-onko-mamma-her2neu-status-2"
+        },
+        "name": "mii-exa-test-data-onko-mamma-her2neu-status-2",
+        "description": "Onkologie Test Mamma Her2neu Status - Positiv (3+)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-onko-mamma-menopause-status-1"
+        },
+        "name": "mii-exa-test-data-onko-mamma-menopause-status-1",
+        "description": "Onkologie Test Mamma Menopausenstatus - Prämenopausal",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Procedure/mii-exa-test-data-onko-mamma-operation-1"
+        },
+        "name": "mii-exa-test-data-onko-mamma-operation-1",
+        "description": "Onkologie Test Mamma Operation - Brusterhaltende Therapie",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Procedure/mii-exa-test-data-onko-mamma-praeop-markierung-1"
+        },
+        "name": "mii-exa-test-data-onko-mamma-praeop-markierung-1",
+        "description": "Onkologie Test Mamma Präoperative Markierung - Drahtmarkierung",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-onko-mamma-rezeptorstatus-estrogen-1"
+        },
+        "name": "mii-exa-test-data-onko-mamma-rezeptorstatus-estrogen-1",
+        "description": "Onkologie Test Mamma Östrogenrezeptorstatus - Positiv",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-onko-mamma-rezeptorstatus-progesteron-1"
+        },
+        "name": "mii-exa-test-data-onko-mamma-rezeptorstatus-progesteron-1",
+        "description": "Onkologie Test Mamma Progesteronrezeptorstatus - Positiv",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Procedure/mii-exa-test-data-onko-mamma-sozialdienst-1"
+        },
+        "name": "mii-exa-test-data-onko-mamma-sozialdienst-1",
+        "description": "Onkologie Test Mamma Sozialdienst - Psychosoziale Beratung",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "MedicationStatement/mii-exa-test-data-onko-medikation-1"
+        },
+        "name": "mii-exa-test-data-onko-medikation-1",
+        "description": "Onkologie Test Medikation - Paclitaxel",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "MedicationStatement/mii-exa-test-data-onko-medikation-2"
+        },
+        "name": "mii-exa-test-data-onko-medikation-2",
+        "description": "Onkologie Test Medikation - Carboplatin",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "MedicationStatement/mii-exa-test-data-onko-medikation-3"
+        },
+        "name": "mii-exa-test-data-onko-medikation-3",
+        "description": "Onkologie Test Medikation - Niraparib (PARP-Inhibitor)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-onko-melanom-breslow-tiefe-1"
+        },
+        "name": "mii-exa-test-data-onko-melanom-breslow-tiefe-1",
+        "description": "Onkologie Test Melanom Breslow Tiefe",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-onko-melanom-breslow-tiefe-2"
+        },
+        "name": "mii-exa-test-data-onko-melanom-breslow-tiefe-2",
+        "description": "Onkologie Test Melanom Breslow Tiefe - Nicht bestimmbar",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Procedure/mii-exa-test-data-onko-melanom-exzision-1"
+        },
+        "name": "mii-exa-test-data-onko-melanom-exzision-1",
+        "description": "Onkologie Test Melanom Exzision - Oberarm",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-onko-melanom-ldh-1"
+        },
+        "name": "mii-exa-test-data-onko-melanom-ldh-1",
+        "description": "Onkologie Test Melanom LDH - Normal",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-onko-melanom-ldh-2"
+        },
+        "name": "mii-exa-test-data-onko-melanom-ldh-2",
+        "description": "Onkologie Test Melanom LDH - Erhöht",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-onko-melanom-sicherheitsabstand-1"
+        },
+        "name": "mii-exa-test-data-onko-melanom-sicherheitsabstand-1",
+        "description": "Onkologie Test Melanom Sicherheitsabstand",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-onko-melanom-sicherheitsabstand-2"
+        },
+        "name": "mii-exa-test-data-onko-melanom-sicherheitsabstand-2",
+        "description": "Onkologie Test Melanom Sicherheitsabstand - Nicht bestimmbar",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-onko-melanom-ulzeration-1"
+        },
+        "name": "mii-exa-test-data-onko-melanom-ulzeration-1",
+        "description": "Onkologie Test Melanom Ulzeration - Vorhanden",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-onko-melanom-ulzeration-2"
+        },
+        "name": "mii-exa-test-data-onko-melanom-ulzeration-2",
+        "description": "Onkologie Test Melanom Ulzeration - Nicht vorhanden",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "AdverseEvent/mii-exa-test-data-onko-nebenwirkung-1"
+        },
+        "name": "mii-exa-test-data-onko-nebenwirkung-1",
+        "description": "Onkologie Test Nebenwirkung - Fatigue nach Chemotherapie",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "AdverseEvent/mii-exa-test-data-onko-nebenwirkung-2"
+        },
+        "name": "mii-exa-test-data-onko-nebenwirkung-2",
+        "description": "Onkologie Test Nebenwirkung - Polyneuropathie nach Strahlentherapie",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Procedure/mii-exa-test-data-onko-operation-1"
+        },
+        "name": "mii-exa-test-data-onko-operation-1",
+        "description": "Onkologie Test Operation - Debulking Ovarialkarzinom",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Patient/mii-exa-test-data-onko-patient-1"
+        },
+        "name": "mii-exa-test-data-onko-patient-1",
+        "description": "Onkologie Test Patient - Synthetic patient for comprehensive oncology testing",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-onko-prostata-anzahl-stanzen-1"
+        },
+        "name": "mii-exa-test-data-onko-prostata-anzahl-stanzen-1",
+        "description": "Onkologie Test Prostata Anzahl Stanzen",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-onko-prostata-ca-befall-1"
+        },
+        "name": "mii-exa-test-data-onko-prostata-ca-befall-1",
+        "description": "Onkologie Test Prostata Ca-Befall stärkstbefallene Stanze",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-onko-prostata-gleason-grade-group-1"
+        },
+        "name": "mii-exa-test-data-onko-prostata-gleason-grade-group-1",
+        "description": "Onkologie Test Prostata Gleason Grade Group 2 (3+4=7)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-onko-prostata-gleason-primary-1"
+        },
+        "name": "mii-exa-test-data-onko-prostata-gleason-primary-1",
+        "description": "Onkologie Test Prostata Gleason Primary Pattern (3)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-onko-prostata-gleason-secondary-1"
+        },
+        "name": "mii-exa-test-data-onko-prostata-gleason-secondary-1",
+        "description": "Onkologie Test Prostata Gleason Secondary Pattern (4)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-onko-prostata-komplikation-1"
+        },
+        "name": "mii-exa-test-data-onko-prostata-komplikation-1",
+        "description": "Onkologie Test Prostata OP Komplikation - Clavien-Dindo IIIa",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-onko-prostata-positive-stanzen-1"
+        },
+        "name": "mii-exa-test-data-onko-prostata-positive-stanzen-1",
+        "description": "Onkologie Test Prostata Anzahl Positiver Stanzen",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-onko-prostata-psa-1"
+        },
+        "name": "mii-exa-test-data-onko-prostata-psa-1",
+        "description": "Onkologie Test Prostata PSA bei Diagnose",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Procedure/mii-exa-test-data-onko-prostata-surgery-1"
+        },
+        "name": "mii-exa-test-data-onko-prostata-surgery-1",
+        "description": "Onkologie Test Prostata OP - Radikale Prostatektomie",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-onko-residualstatus-1"
+        },
+        "name": "mii-exa-test-data-onko-residualstatus-1",
+        "description": "Onkologie Test Residualstatus - R0",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Specimen/mii-exa-test-data-onko-specimen-1"
+        },
+        "name": "mii-exa-test-data-onko-specimen-1",
+        "description": "Onkologie Test Specimen - Tumorresektat",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Procedure/mii-exa-test-data-onko-strahlentherapie-1"
+        },
+        "name": "mii-exa-test-data-onko-strahlentherapie-1",
+        "description": "Onkologie Test Strahlentherapie - Adjuvante Bestrahlung",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Procedure/mii-exa-test-data-onko-strahlentherapie-bestrahlung-1"
+        },
+        "name": "mii-exa-test-data-onko-strahlentherapie-bestrahlung-1",
+        "description": "Onkologie Test Strahlentherapie Bestrahlung - mit allen Dosisangaben",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-onko-studienteilnahme-1"
+        },
+        "name": "mii-exa-test-data-onko-studienteilnahme-1",
+        "description": "Onkologie Test Studienteilnahme - Patient nimmt an Studie teil",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-onko-studienteilnahme-2"
+        },
+        "name": "mii-exa-test-data-onko-studienteilnahme-2",
+        "description": "Onkologie Test Studienteilnahme - Keine Studienteilnahme",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Procedure/mii-exa-test-data-onko-systemische-therapie-1"
+        },
+        "name": "mii-exa-test-data-onko-systemische-therapie-1",
+        "description": "Onkologie Test Systemische Therapie - Neoadjuvante Chemotherapie CarboTax",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "RequestGroup/mii-exa-test-data-onko-therapieempfehlung-kombi-1"
+        },
+        "name": "mii-exa-test-data-onko-therapieempfehlung-kombi-1",
+        "description": "Onkologie Test Therapieempfehlung Kombinationstherapie - CarboTax Schema",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "MedicationRequest/mii-exa-test-data-onko-therapieempfehlung-medikation-1"
+        },
+        "name": "mii-exa-test-data-onko-therapieempfehlung-medikation-1",
+        "description": "Onkologie Test Therapieempfehlung Medikation - Carboplatin",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "MedicationRequest/mii-exa-test-data-onko-therapieempfehlung-medikation-2"
+        },
+        "name": "mii-exa-test-data-onko-therapieempfehlung-medikation-2",
+        "description": "Onkologie Test Therapieempfehlung Medikation - Paclitaxel",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "MedicationRequest/mii-exa-test-data-onko-therapieempfehlung-niraparib"
+        },
+        "name": "mii-exa-test-data-onko-therapieempfehlung-niraparib",
+        "description": "Onkologie Test Therapieempfehlung Medikation - Niraparib",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "ServiceRequest/mii-exa-test-data-onko-therapieempfehlung-op-1"
+        },
+        "name": "mii-exa-test-data-onko-therapieempfehlung-op-1",
+        "description": "Onkologie Test Therapieempfehlung Operation - Debulking",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "RequestGroup/mii-exa-test-data-onko-therapieempfehlung-parp-1"
+        },
+        "name": "mii-exa-test-data-onko-therapieempfehlung-parp-1",
+        "description": "Onkologie Test Therapieempfehlung - PARP-Inhibitor Erhaltung",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-onko-tnm-a-symbol-1"
+        },
+        "name": "mii-exa-test-data-onko-tnm-a-symbol-1",
+        "description": "Onkologie Test TNM a-Symbol - keine Autopsie",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-onko-tnm-klassifikation-1"
+        },
+        "name": "mii-exa-test-data-onko-tnm-klassifikation-1",
+        "description": "Onkologie Test TNM Klassifikation - ypT3c pN1 M1b, Stadium IVB",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-onko-tnm-l-kategorie-1"
+        },
+        "name": "mii-exa-test-data-onko-tnm-l-kategorie-1",
+        "description": "Onkologie Test TNM L-Kategorie - L1",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-onko-tnm-m-kategorie-1"
+        },
+        "name": "mii-exa-test-data-onko-tnm-m-kategorie-1",
+        "description": "Onkologie Test TNM M-Kategorie - pM1b",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-onko-tnm-m-symbol-1"
+        },
+        "name": "mii-exa-test-data-onko-tnm-m-symbol-1",
+        "description": "Onkologie Test TNM m-Symbol - kein multipler Primärtumor",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-onko-tnm-n-kategorie-1"
+        },
+        "name": "mii-exa-test-data-onko-tnm-n-kategorie-1",
+        "description": "Onkologie Test TNM N-Kategorie - pN1",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-onko-tnm-n-kategorie-sn-1"
+        },
+        "name": "mii-exa-test-data-onko-tnm-n-kategorie-sn-1",
+        "description": "Onkologie Test TNM N-Kategorie - pN0(i-)(sn) Sentinel Node",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-onko-tnm-pn-kategorie-1"
+        },
+        "name": "mii-exa-test-data-onko-tnm-pn-kategorie-1",
+        "description": "Onkologie Test TNM Pn-Kategorie - Pn0",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-onko-tnm-r-symbol-1"
+        },
+        "name": "mii-exa-test-data-onko-tnm-r-symbol-1",
+        "description": "Onkologie Test TNM r-Symbol - kein Rezidiv",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-onko-tnm-s-kategorie-1"
+        },
+        "name": "mii-exa-test-data-onko-tnm-s-kategorie-1",
+        "description": "Onkologie Test TNM S-Kategorie - S1",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-onko-tnm-t-kategorie-1"
+        },
+        "name": "mii-exa-test-data-onko-tnm-t-kategorie-1",
+        "description": "Onkologie Test TNM T-Kategorie - pT3c",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-onko-tnm-v-kategorie-1"
+        },
+        "name": "mii-exa-test-data-onko-tnm-v-kategorie-1",
+        "description": "Onkologie Test TNM V-Kategorie - V0",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-onko-tnm-y-symbol-1"
+        },
+        "name": "mii-exa-test-data-onko-tnm-y-symbol-1",
+        "description": "Onkologie Test TNM y-Symbol - Zustand nach neoadjuvanter Therapie",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-onko-tod-1"
+        },
+        "name": "mii-exa-test-data-onko-tod-1",
+        "description": "Onkologie Test Tod - Verstorben an Tumorerkrankung",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-onko-tod-2"
+        },
+        "name": "mii-exa-test-data-onko-tod-2",
+        "description": "Onkologie Test Tod - Todesursache unbekannt",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-onko-tumorgroesse-1"
+        },
+        "name": "mii-exa-test-data-onko-tumorgroesse-1",
+        "description": "Onkologie Test Tumorgröße - 22mm",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "CarePlan/mii-exa-test-data-onko-tumorkonferenz-1"
+        },
+        "name": "mii-exa-test-data-onko-tumorkonferenz-1",
+        "description": "Onkologie Test Tumorkonferenz - Prätherapeutisch mit OP + Chemo Empfehlung",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "CarePlan/mii-exa-test-data-onko-tumorkonferenz-2"
+        },
+        "name": "mii-exa-test-data-onko-tumorkonferenz-2",
+        "description": "Onkologie Test Tumorkonferenz - Postoperativ mit Therapieabweichung",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "CarePlan/mii-exa-test-data-onko-tumorkonferenz-molekular-1"
+        },
+        "name": "mii-exa-test-data-onko-tumorkonferenz-molekular-1",
+        "description": "Onkologie Test Molekulares Tumorboard - mit erweiterter Therapieempfehlung",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-onko-verlauf-1"
+        },
+        "name": "mii-exa-test-data-onko-verlauf-1",
+        "description": "Onkologie Test Verlauf - Vollremission nach Therapie",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-onko-verlauf-2"
+        },
+        "name": "mii-exa-test-data-onko-verlauf-2",
+        "description": "Onkologie Test Verlauf - Teilremission mit Lymphknotenprogress",
         "exampleBoolean": true
       },
       {

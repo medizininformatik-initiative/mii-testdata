@@ -63,6 +63,16 @@
           "display": "Nein"
         }
       ]
+    },
+    {
+      "coding": [
+        {
+          "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+          "code": "T81.0",
+          "version": "2021",
+          "display": "Blutung und Hämatom als Komplikation eines Eingriffes, anderenorts nicht klassifiziert"
+        }
+      ]
     }
   ],
   "reasonReference": [
@@ -73,6 +83,11 @@
   "basedOn": [
     {
       "reference": "CarePlan/mii-exa-test-data-onko-tumorkonferenz-1"
+    }
+  ],
+  "partOf": [
+    {
+      "reference": "Procedure/mii-exa-test-data-onko-systemische-therapie-1"
     }
   ],
   "status": "completed",

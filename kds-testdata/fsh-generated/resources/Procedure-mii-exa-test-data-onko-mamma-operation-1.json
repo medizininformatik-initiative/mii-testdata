@@ -1,6 +1,6 @@
 {
   "resourceType": "Procedure",
-  "id": "mii-exa-test-data-onko-krk-operation-1",
+  "id": "mii-exa-test-data-onko-mamma-operation-1",
   "meta": {
     "security": [
       {
@@ -10,16 +10,21 @@
       }
     ],
     "profile": [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-krk-operation"
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-mamma-operation"
     ]
   },
   "code": {
     "coding": [
       {
         "system": "http://fhir.de/CodeSystem/bfarm/ops",
-        "code": "5-484.52",
-        "display": "Rektumresektion unter Sphinktererhaltung: Tiefe anteriore Resektion: Offen chirurgisch (konventionell)",
+        "code": "5-870.4",
+        "display": "Brusterhaltende Chirurgie: Segmentresektion",
         "version": "2021"
+      },
+      {
+        "code": "392021009",
+        "system": "http://snomed.info/sct",
+        "display": "Lumpectomy of breast (procedure)"
       }
     ]
   },
@@ -46,14 +51,32 @@
     {
       "coding": [
         {
-          "code": "334101000",
+          "code": "168750009",
           "system": "http://snomed.info/sct",
-          "display": "Surgical stapling device (physical object)"
+          "display": "Specimen X-ray (procedure)"
+        }
+      ]
+    },
+    {
+      "coding": [
+        {
+          "code": "433222002",
+          "system": "http://snomed.info/sct",
+          "display": "Insertion of guide wire into breast using ultrasound guidance (procedure)"
         }
       ]
     }
   ],
   "status": "completed",
+  "category": {
+    "coding": [
+      {
+        "code": "387713003",
+        "system": "http://snomed.info/sct",
+        "display": "Surgical procedure"
+      }
+    ]
+  },
   "subject": {
     "reference": "Patient/mii-exa-test-data-onko-patient-1"
   },

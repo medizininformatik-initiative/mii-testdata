@@ -1,6 +1,6 @@
 {
   "resourceType": "Procedure",
-  "id": "mii-exa-test-data-onko-krk-operation-1",
+  "id": "mii-exa-test-data-onko-mamma-sozialdienst-1",
   "meta": {
     "security": [
       {
@@ -10,17 +10,7 @@
       }
     ],
     "profile": [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-krk-operation"
-    ]
-  },
-  "code": {
-    "coding": [
-      {
-        "system": "http://fhir.de/CodeSystem/bfarm/ops",
-        "code": "5-484.52",
-        "display": "Rektumresektion unter Sphinktererhaltung: Tiefe anteriore Resektion: Offen chirurgisch (konventionell)",
-        "version": "2021"
-      }
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-mamma-sozialdienst"
     ]
   },
   "reasonReference": [
@@ -42,20 +32,27 @@
       }
     }
   ],
-  "usedCode": [
-    {
-      "coding": [
-        {
-          "code": "334101000",
-          "system": "http://snomed.info/sct",
-          "display": "Surgical stapling device (physical object)"
-        }
-      ]
-    }
-  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "306238000",
+        "display": "Referral to Social Services (procedure)"
+      }
+    ]
+  },
   "status": "completed",
+  "category": {
+    "coding": [
+      {
+        "code": "387713003",
+        "system": "http://snomed.info/sct",
+        "display": "Surgical procedure"
+      }
+    ]
+  },
   "subject": {
     "reference": "Patient/mii-exa-test-data-onko-patient-1"
   },
-  "performedDateTime": "2021-09-30"
+  "performedDateTime": "2021-10-05"
 }

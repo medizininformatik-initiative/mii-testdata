@@ -1,6 +1,6 @@
 {
   "resourceType": "Procedure",
-  "id": "mii-exa-test-data-onko-strahlentherapie-bestrahlung-1",
+  "id": "mii-exa-test-data-onko-bestrahlung-nuklearmedizin-1",
   "meta": {
     "security": [
       {
@@ -10,22 +10,22 @@
       }
     ],
     "profile": [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-strahlentherapie-bestrahlung-strahlentherapie"
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-strahlentherapie-bestrahlung-nuklearmedizin"
     ]
   },
   "code": {
     "coding": [
       {
         "system": "http://fhir.de/CodeSystem/bfarm/ops",
-        "code": "8-522.6",
-        "display": "Hochvoltstrahlentherapie: Stereotaktische Bestrahlung",
+        "code": "8-531",
+        "display": "Radiojodtherapie",
         "version": "2021"
       }
     ]
   },
   "performedPeriod": {
-    "start": "2022-02-01",
-    "end": "2022-03-15"
+    "start": "2022-04-01",
+    "end": "2022-04-03"
   },
   "partOf": [
     {
@@ -34,7 +34,7 @@
   ],
   "basedOn": [
     {
-      "reference": "CarePlan/mii-exa-test-data-onko-tumorkonferenz-2"
+      "reference": "CarePlan/mii-exa-test-data-onko-tumorkonferenz-1"
     }
   ],
   "reasonReference": [
@@ -46,9 +46,9 @@
     {
       "coding": [
         {
-          "code": "5.3",
+          "code": "1",
           "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-strahlentherapie-zielgebiet",
-          "display": "Becken"
+          "display": "Haut"
         }
       ],
       "extension": [
@@ -57,9 +57,9 @@
           "valueCodeableConcept": {
             "coding": [
               {
-                "code": "L",
+                "code": "T",
                 "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-seitenlokalisation",
-                "display": "links"
+                "display": "trifft nicht zu"
               }
             ]
           }
@@ -73,9 +73,9 @@
       "valueCodeableConcept": {
         "coding": [
           {
-            "code": "PRCJ",
+            "code": "MRJT",
             "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-strahlentherapie-applikationsart",
-            "display": "perkutan mit stereotaktischen Techniken"
+            "display": "Radiojod-Therapie"
           }
         ]
       }
@@ -83,18 +83,18 @@
     {
       "valueQuantity": {
         "system": "http://unitsofmeasure.org",
-        "value": 50,
-        "unit": "Gy",
-        "code": "Gy"
+        "value": 3700,
+        "unit": "MBq",
+        "code": "MBq"
       },
       "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-strahlentherapie-bestrahlung-gesamtdosis"
     },
     {
       "valueQuantity": {
         "system": "http://unitsofmeasure.org",
-        "value": 2,
-        "unit": "Gy",
-        "code": "Gy"
+        "value": 3700,
+        "unit": "MBq",
+        "code": "MBq"
       },
       "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-strahlentherapie-bestrahlung-einzeldosis"
     },
@@ -103,9 +103,9 @@
       "valueCodeableConcept": {
         "coding": [
           {
-            "code": "SIB",
+            "code": "N",
             "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-strahlentherapie-boost",
-            "display": "Simultan Integrierter Boost"
+            "display": "keine Boostbestrahlung"
           }
         ]
       }
@@ -117,7 +117,7 @@
         {
           "code": "UH",
           "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-strahlentherapie-strahlenart",
-          "display": "ultraharte Photonen"
+          "display": "Photonen (ultraharte Röntgenstrahlen, inklusive Gamma-Strahler)"
         }
       ]
     }
@@ -126,8 +126,8 @@
     "coding": [
       {
         "system": "http://snomed.info/sct",
-        "code": "1287742003",
-        "display": "Radiotherapy (procedure)"
+        "code": "399315003",
+        "display": "Radionuclide therapy"
       }
     ]
   },

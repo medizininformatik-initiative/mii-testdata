@@ -16,6 +16,9 @@
   "focus": [
     {
       "reference": "Condition/mii-exa-test-data-onko-diagnose-1"
+    },
+    {
+      "display": "OVAR-21 Studie"
     }
   ],
   "status": "final",
