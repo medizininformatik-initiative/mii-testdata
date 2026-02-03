@@ -2629,7 +2629,7 @@
     "fshType": "Instance",
     "fshFile": "modul-biobank/Organization.fsh",
     "startLine": 1,
-    "endLine": 24
+    "endLine": 23
   },
   {
     "outputFile": "Organization-mii-exa-test-data-organization-charite.json",

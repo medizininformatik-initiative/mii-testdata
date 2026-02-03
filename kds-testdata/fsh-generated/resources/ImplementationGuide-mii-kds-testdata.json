@@ -61,6 +61,12 @@
       "id": "de_medizininformatikinitiative_kerndatensatz_biobank"
     },
     {
+      "packageId": "eu.miabis.r4",
+      "version": "0.2.0",
+      "uri": "http://fhir.org/packages/eu.miabis.r4/ImplementationGuide/eu.miabis.r4",
+      "id": "eu_miabis_r4"
+    },
+    {
       "packageId": "de.medizininformatikinitiative.kerndatensatz.consent",
       "version": "2026.0.x",
       "uri": "http://fhir.org/packages/de.medizininformatikinitiative.kerndatensatz.consent/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.consent",

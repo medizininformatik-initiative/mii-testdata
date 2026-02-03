@@ -30,6 +30,7 @@ dependencies:
   de.medizininformatikinitiative.kerndatensatz.medikation: 2026.0.x
   de.medizininformatikinitiative.kerndatensatz.laborbefund: 2026.0.x
   de.medizininformatikinitiative.kerndatensatz.biobank: 2026.0.x
+  eu.miabis.r4: 0.2.0
   de.medizininformatikinitiative.kerndatensatz.consent: 2026.0.x
   de.medizininformatikinitiative.kerndatensatz.meta: 2026.0.x
   de.medizininformatikinitiative.kerndatensatz.icu: 2026.0.x

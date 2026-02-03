@@ -2208,8 +2208,8 @@
         },
         "extension": [
           {
-            "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/BeschreibungSammlung",
-            "valueMarkdown": "Zentrale Biobank der Charité"
+            "url": "https://fhir.bbmri-eric.eu/fhir/StructureDefinition/miabis-organization-description-extension",
+            "valueString": "Zentrale Biobank der Charité"
           }
         ],
         "identifier": [
