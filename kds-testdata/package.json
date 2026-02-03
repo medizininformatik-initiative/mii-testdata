@@ -41,6 +41,7 @@
     "de.medizininformatikinitiative.kerndatensatz.patho": "2026.0.x",
     "de.medizininformatikinitiative.kerndatensatz.studie": "2026.0.x",
     "de.medizininformatikinitiative.kerndatensatz.bildgebung": "2026.0.x",
+    "de.medizininformatikinitiative.kerndatensatz.onkologie": "2026.0.x",
     "de.einwilligungsmanagement": "1.0.x"
   }
 }
