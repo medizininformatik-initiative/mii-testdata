@@ -18,7 +18,7 @@
       {
         "system": "http://loinc.org",
         "code": "101658-3",
-        "display": "Neoadjuvant treatment Cancer"
+        "display": "Cancer staging after multimodality therapy"
       }
     ]
   },
@@ -27,7 +27,7 @@
       {
         "system": "http://snomed.info/sct",
         "code": "421755005",
-        "display": "Status post therapy for malignant neoplasm"
+        "display": "y"
       }
     ]
   },

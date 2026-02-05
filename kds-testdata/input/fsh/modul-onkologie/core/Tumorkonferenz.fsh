@@ -13,7 +13,7 @@ Description: "Onkologie Test Tumorkonferenz - Prätherapeutisch mit OP + Chemo E
 * intent = #plan
 * subject = Reference(mii-exa-test-data-onko-patient-1)
 * encounter = Reference(mii-exa-test-data-onko-encounter-1)
-* category = $mii-cs-onko-therapieplanung-typ#praeth "prätherapeutisch"
+* category = $mii-cs-onko-therapieplanung-typ#praeth "prätherapeutische Tumorkonferenz (Festlegung der Therapiestrategie)"
 * created = "2021-06-20"
 * addresses = Reference(mii-exa-test-data-onko-diagnose-1)
 * supportingInfo = Reference(mii-exa-test-data-onko-befund-1)
@@ -32,14 +32,14 @@ Description: "Onkologie Test Tumorkonferenz - Postoperativ mit Therapieabweichun
 * status = #completed
 * intent = #plan
 * subject = Reference(mii-exa-test-data-onko-patient-1)
-* category = $mii-cs-onko-therapieplanung-typ#postop "postoperativ"
+* category = $mii-cs-onko-therapieplanung-typ#postop "postoperative Tumorkonferenz (Planung der postoperativen Therapie, z. B. zur Frage adjuvante Therapie)"
 * created = "2021-10-15"
 * addresses = Reference(mii-exa-test-data-onko-diagnose-1)
 * activity[obds][+].detail.code = $mii-cs-onko-therapie-typ#ST "Strahlentherapie"
 * activity[obds][=].detail.status = #completed
 * activity[obds][+].detail.code = $mii-cs-onko-therapie-typ#CH "Chemotherapie"
 * activity[obds][=].detail.status = #cancelled
-* activity[obds][=].detail.statusReason = $mii-cs-onko-therapieabweichung#M "Patient lehnt ab"
+* activity[obds][=].detail.statusReason = $mii-cs-onko-therapieabweichung#J "ja"
 
 // Therapieempfehlung Operation (ServiceRequest)
 Instance: mii-exa-test-data-onko-therapieempfehlung-op-1
@@ -118,7 +118,7 @@ Description: "Onkologie Test Molekulares Tumorboard - mit erweiterter Therapieem
 * status = #active
 * intent = #plan
 * subject = Reference(mii-exa-test-data-onko-patient-1)
-* category = $mii-cs-onko-therapieplanung-typ#praeth "prätherapeutisch"
+* category = $mii-cs-onko-therapieplanung-typ#praeth "prätherapeutische Tumorkonferenz (Festlegung der Therapiestrategie)"
 * category.text = "Molekulares Tumorboard"
 * created = "2022-03-10"
 * addresses = Reference(mii-exa-test-data-onko-diagnose-1)

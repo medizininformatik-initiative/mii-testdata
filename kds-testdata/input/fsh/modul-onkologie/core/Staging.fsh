@@ -9,13 +9,13 @@ Usage: #example
 Description: "Onkologie Test Weitere Klassifikationen - FIGO IVB"
 * insert TestDataLabel
 * status = #final
-* code.coding = $mii-cs-onko-weitere-klassifikationen-obds#FIGO "FIGO-Klassifikation"
+* code.coding = $SCT#254386003 "Federation Internationale de gynecologie et d'obstetrique staging of ovarian malignancy"
 * code.text = "FIGO Klassifikation für ovariale Tumore"
 * subject = Reference(mii-exa-test-data-onko-patient-1)
 * encounter = Reference(mii-exa-test-data-onko-encounter-1)
 * effectiveDateTime = "2021-10-05"
 * focus = Reference(mii-exa-test-data-onko-diagnose-1)
-* method.coding = $mii-cs-onko-weitere-klassifikationen-obds#FIGO
+* method.coding = $SCT#254386003 "Federation Internationale de gynecologie et d'obstetrique staging of ovarian malignancy"
 * valueCodeableConcept.text = "IVB"
 
 // Residualstatus (Chapter 10)
@@ -25,7 +25,7 @@ Usage: #example
 Description: "Onkologie Test Residualstatus - R0"
 * insert TestDataLabel
 * status = #final
-* code.coding[loinc] = $LNC#84892-9 "Residual tumor status after surgical resection"
+* code.coding[loinc] = $LNC#84892-9 "Residual tumor classification [Type] in Cancer specimen"
 * code.coding[snomed] = $SCT#445200009 "Status of residual neoplasm"
 * subject = Reference(mii-exa-test-data-onko-patient-1)
 * encounter = Reference(mii-exa-test-data-onko-encounter-1)
@@ -59,7 +59,7 @@ Description: "Onkologie Test ECOG - 1"
 * subject = Reference(mii-exa-test-data-onko-patient-1)
 * encounter = Reference(mii-exa-test-data-onko-encounter-1)
 * effectiveDateTime = "2021-06-15"
-* valueCodeableConcept.coding[obds] = $mii-cs-onko-allgemeiner-leistungszustand-ecog#1 "Einschränkung bei körperlicher Anstrengung"
+* valueCodeableConcept.coding[obds] = $mii-cs-onko-allgemeiner-leistungszustand-ecog#1 "Einschraenkung bei koerperlicher Anstrengung, aber gehfaehig; leichte koerperliche Arbeit bzw. Arbeit im Sitzen (z. B. leichte Hausarbeit oder Bueroarbeit) moeglich (70 - 80 % nach Karnofsky)"
 * valueCodeableConcept.coding[loinc] = $LNC#LA9623-5 "Restricted in physically strenuous activity"
 
 // Allgemeiner Leistungszustand Karnofsky (Chapter 12)
@@ -69,12 +69,12 @@ Usage: #example
 Description: "Onkologie Test Karnofsky - 80%"
 * insert TestDataLabel
 * status = #final
-* code.coding[snomed] = $SCT#761869008 "Karnofsky Performance Status"
+* code.coding[snomed] = $SCT#761869008 "KPS (Karnofsky Performance Status) score"
 * code.coding[loinc] = $LNC#89243-0 "Karnofsky Performance Status score"
 * subject = Reference(mii-exa-test-data-onko-patient-1)
 * encounter = Reference(mii-exa-test-data-onko-encounter-1)
 * effectiveDateTime = "2021-06-15"
-* valueCodeableConcept.coding[obds] = $mii-cs-onko-allgemeiner-leistungszustand-karnofsky#80 "Normale Aktivität mit Anstrengung möglich"
+* valueCodeableConcept.coding[obds] = $mii-cs-onko-allgemeiner-leistungszustand-karnofsky#80% "80%"
 * valueCodeableConcept.coding[loinc] = $LNC#LA29177-5 "Normal activity with effort"
 
 // ASA Klassifikation (Chapter 12)
@@ -89,4 +89,4 @@ Description: "Onkologie Test ASA - II"
 * encounter = Reference(mii-exa-test-data-onko-encounter-1)
 * effectiveDateTime = "2021-09-29"
 * focus = Reference(mii-exa-test-data-onko-diagnose-1)
-* valueCodeableConcept = $mii-cs-onko-asa#II "ASA II"
+* valueCodeableConcept = $mii-cs-onko-asa#2 "ASA II"

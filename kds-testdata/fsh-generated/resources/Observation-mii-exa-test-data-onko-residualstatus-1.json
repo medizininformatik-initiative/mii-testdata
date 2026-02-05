@@ -18,7 +18,7 @@
       {
         "system": "http://loinc.org",
         "code": "84892-9",
-        "display": "Residual tumor status after surgical resection"
+        "display": "Residual tumor classification [Type] in Cancer specimen"
       },
       {
         "system": "http://snomed.info/sct",

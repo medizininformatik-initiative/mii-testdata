@@ -35,9 +35,9 @@
   "valueCodeableConcept": {
     "coding": [
       {
-        "code": "N",
+        "code": "K",
         "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-krk-anastomoseninsuffizienz",
-        "display": "Keine Anastomoseninsuffizienz"
+        "display": "Keine Insuffizienz oder hochstens Grad A"
       }
     ]
   }

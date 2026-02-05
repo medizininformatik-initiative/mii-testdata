@@ -40,7 +40,7 @@
       {
         "code": "J",
         "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-melanom-ulzeration",
-        "display": "Ja, histologisch bestätigt"
+        "display": "Ja"
       }
     ]
   }

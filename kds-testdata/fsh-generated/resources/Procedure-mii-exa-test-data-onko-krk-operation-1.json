@@ -18,7 +18,7 @@
       {
         "system": "http://fhir.de/CodeSystem/bfarm/ops",
         "code": "5-484.52",
-        "display": "Rektumresektion unter Sphinktererhaltung: Tiefe anteriore Resektion: Offen chirurgisch (konventionell)",
+        "display": "Rektumresektion unter Sphinktererhaltung: Tiefe anteriore Resektion: Offen chirurgisch mit Enterostoma und Blindverschluss",
         "version": "2021"
       }
     ]
@@ -46,9 +46,9 @@
     {
       "coding": [
         {
-          "code": "334101000",
+          "code": "76164006",
           "system": "http://snomed.info/sct",
-          "display": "Surgical stapling device (physical object)"
+          "display": "Stapling device (physical object)"
         }
       ]
     }

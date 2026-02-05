@@ -58,7 +58,7 @@ Description: "Onkologie Test Nebenwirkung - Fatigue nach Chemotherapie"
 * subject = Reference(mii-exa-test-data-onko-patient-1)
 * encounter = Reference(mii-exa-test-data-onko-encounter-1)
 * date = "2021-08-15"
-* seriousness = $mii-cs-onko-nebenwirkung-ctcae-grad#2 "Mäßig; minimale, lokale oder nichtinvasive Intervention indiziert; altersgemäße instrumentelle Aktivitäten des täglichen Lebens (ADL) eingeschränkt"
+* seriousness = $mii-cs-onko-nebenwirkung-ctcae-grad#2 "moderat"
 * seriousness.text = "CTCAE Grad 2 - Mäßig"
 * suspectEntity.instance = Reference(mii-exa-test-data-onko-systemische-therapie-1)
 
@@ -75,7 +75,7 @@ Description: "Onkologie Test Nebenwirkung - Polyneuropathie nach Strahlentherapi
 * event.coding[meddra].version = "Version 27.0"
 * subject = Reference(mii-exa-test-data-onko-patient-1)
 * date = "2022-04-01"
-* seriousness = $mii-cs-onko-nebenwirkung-ctcae-grad#3 "Schwer oder medizinisch bedeutsam, jedoch nicht unmittelbar lebensbedrohlich"
+* seriousness = $mii-cs-onko-nebenwirkung-ctcae-grad#3 "schwerwiegend"
 * suspectEntity.instance = Reference(mii-exa-test-data-onko-strahlentherapie-1)
 
 // Tod (Death - Chapter 20) - Death due to tumor
@@ -117,7 +117,7 @@ Description: "Onkologie Test Genetische Variante - BRCA1 Mutation"
 * effectiveDateTime = "2021-06-15"
 * valueCodeableConcept.coding = $LNC#LA9633-4 "Present"
 * note.text = "BRCA1 pathogene Variante nachgewiesen"
-* interpretation = $mii-cs-onko-genetische-variante-auspraegung#M "Mutation/Veränderung nachgewiesen"
+* interpretation = $mii-cs-onko-genetische-variante-auspraegung#M "Mutation/positiv"
 
 // Genetische Variante - Wildtype
 Instance: mii-exa-test-data-onko-genetische-variante-2
@@ -129,7 +129,7 @@ Description: "Onkologie Test Genetische Variante - KRAS Wildtyp"
 * subject = Reference(mii-exa-test-data-onko-patient-1)
 * effectiveDateTime = "2021-06-15"
 * note.text = "KRAS Wildtyp (keine Mutation nachweisbar)"
-* interpretation = $mii-cs-onko-genetische-variante-auspraegung#W "Wildtyp"
+* interpretation = $mii-cs-onko-genetische-variante-auspraegung#W "Wildtyp/nicht mutiert/ negativ"
 
 // Studienteilnahme (Chapter 24)
 Instance: mii-exa-test-data-onko-studienteilnahme-1
@@ -138,7 +138,7 @@ Usage: #example
 Description: "Onkologie Test Studienteilnahme - Patient nimmt an Studie teil"
 * insert TestDataLabel
 * status = #final
-* code = $SCT#709491003 "Clinical trial participation (procedure)"
+* code = $SCT#709491003 "Enrollment in clinical trial"
 * subject = Reference(mii-exa-test-data-onko-patient-1)
 * focus[primaertumor] = Reference(mii-exa-test-data-onko-diagnose-1)
 * focus[studie].display = "OVAR-21 Studie"
@@ -152,7 +152,7 @@ Usage: #example
 Description: "Onkologie Test Studienteilnahme - Keine Studienteilnahme"
 * insert TestDataLabel
 * status = #final
-* code = $SCT#709491003 "Clinical trial participation (procedure)"
+* code = $SCT#709491003 "Enrollment in clinical trial"
 * subject = Reference(mii-exa-test-data-onko-patient-1)
 * focus = Reference(mii-exa-test-data-onko-diagnose-1)
 * effectiveDateTime = "2021-07-01"

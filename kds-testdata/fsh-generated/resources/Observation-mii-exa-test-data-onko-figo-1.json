@@ -16,9 +16,9 @@
   "code": {
     "coding": [
       {
-        "code": "FIGO",
-        "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-weitere-klassifikationen-obds",
-        "display": "FIGO-Klassifikation"
+        "code": "254386003",
+        "system": "http://snomed.info/sct",
+        "display": "Federation Internationale de gynecologie et d'obstetrique staging of ovarian malignancy"
       }
     ],
     "text": "FIGO Klassifikation für ovariale Tumore"
@@ -31,8 +31,9 @@
   "method": {
     "coding": [
       {
-        "code": "FIGO",
-        "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-weitere-klassifikationen-obds"
+        "code": "254386003",
+        "system": "http://snomed.info/sct",
+        "display": "Federation Internationale de gynecologie et d'obstetrique staging of ovarian malignancy"
       }
     ]
   },

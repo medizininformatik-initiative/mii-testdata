@@ -18,7 +18,7 @@
       {
         "system": "http://snomed.info/sct",
         "code": "371493002",
-        "display": "Venous invasion status"
+        "display": "Status of venous (large vessel) invasion by tumor"
       }
     ]
   },

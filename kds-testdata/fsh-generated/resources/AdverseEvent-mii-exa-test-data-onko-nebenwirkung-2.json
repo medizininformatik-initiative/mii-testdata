@@ -40,7 +40,7 @@
       {
         "code": "3",
         "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-nebenwirkung-ctcae-grad",
-        "display": "Schwer oder medizinisch bedeutsam, jedoch nicht unmittelbar lebensbedrohlich"
+        "display": "schwerwiegend"
       }
     ]
   }

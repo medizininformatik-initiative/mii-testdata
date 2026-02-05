@@ -46,7 +46,7 @@ Description: "Onkologie Test Melanom Ulzeration - Vorhanden"
 * encounter = Reference(mii-exa-test-data-onko-encounter-1)
 * focus = Reference(mii-exa-test-data-onko-diagnose-1)
 * effectiveDateTime = "2021-06-20"
-* valueCodeableConcept = $mii-cs-onko-melanom-ulzeration#J "Ja, histologisch bestätigt"
+* valueCodeableConcept = $mii-cs-onko-melanom-ulzeration#J "Ja"
 
 // Ulzeration - keine
 Instance: mii-exa-test-data-onko-melanom-ulzeration-2
@@ -136,10 +136,10 @@ Description: "Onkologie Test Melanom Exzision - Oberarm"
 * insert TestDataLabel
 * status = #completed
 // category is inherited from parent profile MII_PR_Onko_Operation
-* code.coding[sct] = $SCT#177302005 "Wide excision of skin lesion (procedure)"
+* code.coding[sct] = $SCT#177281002 "Excision of melanoma (procedure)"
 * subject = Reference(mii-exa-test-data-onko-patient-1)
 * performedDateTime = "2021-07-05"
 * reasonReference = Reference(mii-exa-test-data-onko-diagnose-1)
-* bodySite = $SCT#368208006 "Skin of left upper arm (body structure)"
+* bodySite = $SCT#368208006 "Left upper arm structure"
 * extension[Intention].valueCodeableConcept = $mii-cs-onko-intention#K "kurativ"
 

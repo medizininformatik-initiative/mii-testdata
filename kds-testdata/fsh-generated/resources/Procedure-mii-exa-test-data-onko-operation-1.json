@@ -48,7 +48,7 @@
           {
             "code": "E",
             "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-operation-urgency",
-            "display": "Elektiv"
+            "display": "Elektiveingriff"
           }
         ]
       }

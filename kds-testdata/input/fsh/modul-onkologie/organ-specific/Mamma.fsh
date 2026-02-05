@@ -32,7 +32,7 @@ Description: "Onkologie Test Mamma Östrogenrezeptorstatus - Positiv"
 * component[AnteilPositiveZellen].valueQuantity.unit = "%"
 * component[AnteilPositiveZellen].valueQuantity.system = $UCUM
 * component[AnteilPositiveZellen].interpretation = http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation#H "High"
-* component[Faerbeintensitaet].valueCodeableConcept = $LNC#LA13035-3 "Strong"
+* component[Faerbeintensitaet].valueCodeableConcept = $LNC#LA13035-3 "Impaired"
 
 // Progesteron Receptor Status
 Instance: mii-exa-test-data-onko-mamma-rezeptorstatus-progesteron-1
@@ -50,7 +50,7 @@ Description: "Onkologie Test Mamma Progesteronrezeptorstatus - Positiv"
 * component[AnteilPositiveZellen].valueQuantity.value = 70
 * component[AnteilPositiveZellen].valueQuantity.unit = "%"
 * component[AnteilPositiveZellen].valueQuantity.system = $UCUM
-* component[Faerbeintensitaet].valueCodeableConcept = $LNC#LA13035-3 "Strong"
+* component[Faerbeintensitaet].valueCodeableConcept = $LNC#LA13035-3 "Impaired"
 
 // Her2neu Status
 Instance: mii-exa-test-data-onko-mamma-her2neu-status-1
@@ -66,7 +66,7 @@ Description: "Onkologie Test Mamma Her2neu Status - Negativ"
 * valueCodeableConcept.coding[DefinitionOBDS] = $mii-cs-onko-mamma-her2neu-status-obds#N "negativ"
 * valueCodeableConcept.coding[DefinitionLeitlinie] = $mii-cs-onko-mamma-her2neu-status-leitlinie#negativ "HER2-negativ"
 * component[IHCScore].code = $LNC#85319-2 "HER2 [Presence] in Breast cancer specimen by Immune stain"
-* component[IHCScore].valueCodeableConcept = $LNC#LA11840-8 "0"
+* component[IHCScore].valueCodeableConcept = $LNC#LA11840-8 "Mixed"
 
 // Her2neu Status - Positive variant
 Instance: mii-exa-test-data-onko-mamma-her2neu-status-2
@@ -109,13 +109,13 @@ Description: "Onkologie Test Mamma Operation - Brusterhaltende Therapie"
 * status = #completed
 * category = $SCT#387713003 "Surgical procedure"
 * code = $SCT#392021009 "Lumpectomy of breast (procedure)"
-* code.coding[ops] = $OPS#5-870.4 "Brusterhaltende Chirurgie: Segmentresektion"
+* code.coding[ops] = $OPS#5-870.0 "Partielle (brusterhaltende) Exzision der Mamma: Exzision"
 * code.coding[ops].version = "2021"
 * subject = Reference(mii-exa-test-data-onko-patient-1)
 * reasonReference = Reference(mii-exa-test-data-onko-diagnose-1)
 * performedDateTime = "2021-09-30"
 * extension[Intention].valueCodeableConcept = $mii-cs-onko-intention#K "kurativ"
-* usedCode[IntraoperativesImaging] = $SCT#168750009 "Specimen X-ray (procedure)"
+* usedCode[IntraoperativesImaging] = $SCT#168750009 "Mammography abnormal"
 * usedCode[PraeoperativeMarkierung] = $SCT#433222002 "Insertion of guide wire into breast using ultrasound guidance (procedure)"
 
 // Mamma Sozialdienst

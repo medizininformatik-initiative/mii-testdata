@@ -108,7 +108,7 @@ Description: "Onkologie Test Prostata OP - Radikale Prostatektomie"
 * insert TestDataLabel
 * status = #completed
 // category is inherited from parent profile MII_PR_Onko_Operation
-* code.coding[ops] = $OPS#5-604.00 "Radikale Prostatovesikulektomie: Retropubisch: Mit Lymphadenektomie"
+* code.coding[ops] = $OPS#5-604.0 "Radikale Prostatovesikulektomie: Retropubisch"
 * code.coding[ops].version = "2021"
 * code.coding[sct] = $SCT#176258007 "Open prostatectomy (procedure)"
 * subject = Reference(mii-exa-test-data-onko-patient-1)

@@ -24,7 +24,7 @@
       {
         "code": "33195004",
         "system": "http://snomed.info/sct",
-        "display": "External beam radiation therapy"
+        "display": "External beam radiation therapy procedure"
       }
     ]
   },
@@ -46,16 +46,16 @@
       }
     },
     {
+      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-strahlentherapie-stellungzurop",
       "valueCodeableConcept": {
         "coding": [
           {
-            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-therapie-stellungzurop",
             "code": "A",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-therapie-stellungzurop",
             "display": "adjuvant"
           }
         ]
-      },
-      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-strahlentherapie-stellungzurop"
+      }
     }
   ],
   "outcome": {

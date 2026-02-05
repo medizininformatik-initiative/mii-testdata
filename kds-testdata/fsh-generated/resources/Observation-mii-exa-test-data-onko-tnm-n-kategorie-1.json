@@ -22,7 +22,7 @@
             {
               "code": "p",
               "system": "https://www.uicc.org/resources/tnm",
-              "display": "pathologisch"
+              "display": "p"
             }
           ]
         }
@@ -30,9 +30,9 @@
     ],
     "coding": [
       {
-        "code": "384626003",
+        "code": "371494008",
         "system": "http://snomed.info/sct",
-        "display": "pN category"
+        "display": "pN category (observable entity)"
       }
     ]
   },

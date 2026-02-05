@@ -9,7 +9,7 @@ Usage: #example
 Description: "Onkologie Test TNM T-Kategorie - pT3c"
 * insert TestDataLabel
 * status = #final
-* code.extension[cpPraefix].valueCodeableConcept = $UICC#p "pathologisch"
+* code.extension[cpPraefix].valueCodeableConcept = $UICC#p "p"
 * code.coding = $SCT#384625004 "pT category"
 * subject = Reference(mii-exa-test-data-onko-patient-1)
 * encounter = Reference(mii-exa-test-data-onko-encounter-1)
@@ -25,8 +25,8 @@ Usage: #example
 Description: "Onkologie Test TNM N-Kategorie - pN1"
 * insert TestDataLabel
 * status = #final
-* code.extension[cpPraefix].valueCodeableConcept = $UICC#p "pathologisch"
-* code.coding = $SCT#384626003 "pN category"
+* code.extension[cpPraefix].valueCodeableConcept = $UICC#p "p"
+* code.coding = $SCT#371494008 "pN category (observable entity)"
 * subject = Reference(mii-exa-test-data-onko-patient-1)
 * encounter = Reference(mii-exa-test-data-onko-encounter-1)
 * effectiveDateTime = "2021-10-05"
@@ -43,7 +43,7 @@ Usage: #example
 Description: "Onkologie Test TNM M-Kategorie - pM1b"
 * insert TestDataLabel
 * status = #final
-* code.extension[cpPraefix].valueCodeableConcept = $UICC#p "pathologisch"
+* code.extension[cpPraefix].valueCodeableConcept = $UICC#p "p"
 * code.coding = $SCT#371497001 "pM category"
 * subject = Reference(mii-exa-test-data-onko-patient-1)
 * encounter = Reference(mii-exa-test-data-onko-encounter-1)
@@ -62,7 +62,7 @@ Usage: #example
 Description: "Onkologie Test TNM L-Kategorie - L1"
 * insert TestDataLabel
 * status = #final
-* code.coding = $SCT#395715009 "Lymphatic invasion status"
+* code.coding = $SCT#395715009 "Status of lymphatic (small vessel) invasion by tumor"
 * subject = Reference(mii-exa-test-data-onko-patient-1)
 * encounter = Reference(mii-exa-test-data-onko-encounter-1)
 * effectiveDateTime = "2021-10-05"
@@ -77,7 +77,7 @@ Usage: #example
 Description: "Onkologie Test TNM V-Kategorie - V0"
 * insert TestDataLabel
 * status = #final
-* code.coding = $SCT#371493002 "Venous invasion status"
+* code.coding = $SCT#371493002 "Status of venous (large vessel) invasion by tumor"
 * subject = Reference(mii-exa-test-data-onko-patient-1)
 * encounter = Reference(mii-exa-test-data-onko-encounter-1)
 * effectiveDateTime = "2021-10-05"
@@ -92,7 +92,7 @@ Usage: #example
 Description: "Onkologie Test TNM Pn-Kategorie - Pn0"
 * insert TestDataLabel
 * status = #final
-* code.coding = $SCT#371513001 "Perineural invasion status"
+* code.coding = $SCT#371513001 "Presence of direct invasion by primary malignant neoplasm to nerve"
 * subject = Reference(mii-exa-test-data-onko-patient-1)
 * encounter = Reference(mii-exa-test-data-onko-encounter-1)
 * effectiveDateTime = "2021-10-05"
@@ -122,12 +122,12 @@ Usage: #example
 Description: "Onkologie Test TNM y-Symbol - Zustand nach neoadjuvanter Therapie"
 * insert TestDataLabel
 * status = #final
-* code.coding = $LNC#101658-3 "Neoadjuvant treatment Cancer"
+* code.coding = $LNC#101658-3 "Cancer staging after multimodality therapy"
 * subject = Reference(mii-exa-test-data-onko-patient-1)
 * encounter = Reference(mii-exa-test-data-onko-encounter-1)
 * effectiveDateTime = "2021-10-05"
 * method = $mii-cs-onko-tnm-version#8 "8. Auflage"
-* valueCodeableConcept.coding = $SCT#421755005 "Status post therapy for malignant neoplasm"
+* valueCodeableConcept.coding = $SCT#421755005 "y"
 * focus = Reference(mii-exa-test-data-onko-diagnose-1)
 
 // TNM r-Symbol (Recurrence)
@@ -137,12 +137,12 @@ Usage: #example
 Description: "Onkologie Test TNM r-Symbol - kein Rezidiv"
 * insert TestDataLabel
 * status = #final
-* code.coding = $LNC#21983-2 "Recurrence type first [Type] Cancer"
+* code.coding = $LNC#101659-1 "Recurrence type first episode Cancer"
 * subject = Reference(mii-exa-test-data-onko-patient-1)
 * encounter = Reference(mii-exa-test-data-onko-encounter-1)
 * effectiveDateTime = "2021-10-05"
 * method = $mii-cs-onko-tnm-version#8 "8. Auflage"
-* valueCodeableConcept.coding = $SCT#260413007 "None"
+* valueCodeableConcept.coding = $SCT#421188008 "r"
 * focus = Reference(mii-exa-test-data-onko-diagnose-1)
 
 // TNM a-Symbol (Autopsy)
@@ -152,19 +152,19 @@ Usage: #example
 Description: "Onkologie Test TNM a-Symbol - keine Autopsie"
 * insert TestDataLabel
 * status = #final
-* code.coding = $LNC#101657-5 "Autopsy determination Cancer"
+* code.coding = $LNC#101660-9 "Autopsy determination Cancer"
 * subject = Reference(mii-exa-test-data-onko-patient-1)
 * encounter = Reference(mii-exa-test-data-onko-encounter-1)
 * effectiveDateTime = "2021-10-05"
 * method = $mii-cs-onko-tnm-version#8 "8. Auflage"
-* valueCodeableConcept.coding = $SCT#260413007 "None"
+* valueCodeableConcept.coding = $SCT#421426001 "a"
 * focus = Reference(mii-exa-test-data-onko-diagnose-1)
 
 // TNM m-Symbol (Multiple primary tumors)
 Instance: mii-exa-test-data-onko-tnm-m-symbol-1
 InstanceOf: MII_PR_Onko_TNM_m_Symbol
 Usage: #example
-Description: "Onkologie Test TNM m-Symbol - kein multipler Primärtumor"
+Description: "Onkologie Test TNM m-Symbol - multiple Primärtumoren"
 * insert TestDataLabel
 * status = #final
 * code.coding = $LNC#42030-7 "Multiple tumors reported as single primary Cancer"
@@ -172,7 +172,7 @@ Description: "Onkologie Test TNM m-Symbol - kein multipler Primärtumor"
 * encounter = Reference(mii-exa-test-data-onko-encounter-1)
 * effectiveDateTime = "2021-10-05"
 * method = $mii-cs-onko-tnm-version#8 "8. Auflage"
-* valueCodeableConcept.coding = $SCT#260413007 "None"
+* valueCodeableConcept.coding = $UICC#m "(m)"
 * focus = Reference(mii-exa-test-data-onko-diagnose-1)
 
 // TNM Klassifikation (Grouper)
@@ -209,7 +209,7 @@ Usage: #example
 Description: "Onkologie Test TNM N-Kategorie - pN0(i-)(sn) Sentinel Node"
 * insert TestDataLabel
 * status = #final
-* code.extension[cpPraefix].valueCodeableConcept = $UICC#p "pathologisch"
+* code.extension[cpPraefix].valueCodeableConcept = $UICC#p "p"
 * code.coding = $SCT#371494008 "pN category (observable entity)"
 * subject = Reference(mii-exa-test-data-onko-patient-1)
 * encounter = Reference(mii-exa-test-data-onko-encounter-1)

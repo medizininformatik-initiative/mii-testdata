@@ -18,7 +18,7 @@
       {
         "system": "http://snomed.info/sct",
         "code": "761869008",
-        "display": "Karnofsky Performance Status"
+        "display": "KPS (Karnofsky Performance Status) score"
       },
       {
         "system": "http://loinc.org",
@@ -31,8 +31,8 @@
     "coding": [
       {
         "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-allgemeiner-leistungszustand-karnofsky",
-        "code": "80",
-        "display": "Normale Aktivität mit Anstrengung möglich"
+        "code": "80%",
+        "display": "80%"
       },
       {
         "system": "http://loinc.org",

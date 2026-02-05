@@ -24,7 +24,7 @@
         {
           "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-therapieplanung-typ",
           "code": "postop",
-          "display": "postoperativ"
+          "display": "postoperative Tumorkonferenz (Planung der postoperativen Therapie, z. B. zur Frage adjuvante Therapie)"
         }
       ]
     }
@@ -64,9 +64,9 @@
         "statusReason": {
           "coding": [
             {
-              "code": "M",
+              "code": "J",
               "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-therapieabweichung",
-              "display": "Patient lehnt ab"
+              "display": "ja"
             }
           ]
         }

@@ -46,16 +46,16 @@
       }
     },
     {
+      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-systemische-therapie-stellungzurop",
       "valueCodeableConcept": {
         "coding": [
           {
-            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-therapie-stellungzurop",
             "code": "N",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-therapie-stellungzurop",
             "display": "neoadjuvant"
           }
         ]
-      },
-      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-systemische-therapie-stellungzurop"
+      }
     }
   ],
   "outcome": {
@@ -88,7 +88,7 @@
         {
           "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-systemische-therapie-protokolle",
           "code": "CarboTax",
-          "display": "Carboplatin + Paclitaxel"
+          "display": "CarboTax"
         }
       ]
     }

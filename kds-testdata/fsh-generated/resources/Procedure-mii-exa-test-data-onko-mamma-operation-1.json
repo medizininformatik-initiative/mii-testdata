@@ -17,8 +17,8 @@
     "coding": [
       {
         "system": "http://fhir.de/CodeSystem/bfarm/ops",
-        "code": "5-870.4",
-        "display": "Brusterhaltende Chirurgie: Segmentresektion",
+        "code": "5-870.0",
+        "display": "Partielle (brusterhaltende) Exzision der Mamma: Exzision",
         "version": "2021"
       },
       {
@@ -53,7 +53,7 @@
         {
           "code": "168750009",
           "system": "http://snomed.info/sct",
-          "display": "Specimen X-ray (procedure)"
+          "display": "Mammography abnormal"
         }
       ]
     },

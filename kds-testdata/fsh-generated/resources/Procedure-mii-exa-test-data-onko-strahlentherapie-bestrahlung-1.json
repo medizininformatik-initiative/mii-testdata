@@ -18,7 +18,7 @@
       {
         "system": "http://fhir.de/CodeSystem/bfarm/ops",
         "code": "8-522.6",
-        "display": "Hochvoltstrahlentherapie: Stereotaktische Bestrahlung",
+        "display": "Hochvoltstrahlentherapie: Linearbeschleuniger mehr als 6 MeV Photonen oder schnelle Elektronen, bis zu 2 Bestrahlungsfelder",
         "version": "2021"
       }
     ]
@@ -46,9 +46,9 @@
     {
       "coding": [
         {
-          "code": "5.3",
+          "code": "5.12",
           "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-strahlentherapie-zielgebiet",
-          "display": "Becken"
+          "display": "Becken sonstige"
         }
       ],
       "extension": [
@@ -75,7 +75,7 @@
           {
             "code": "PRCJ",
             "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-strahlentherapie-applikationsart",
-            "display": "perkutan mit stereotaktischen Techniken"
+            "display": "perkutan mit Chemotherapie/Sensitizer"
           }
         ]
       }
@@ -105,7 +105,7 @@
           {
             "code": "SIB",
             "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-strahlentherapie-boost",
-            "display": "Simultan Integrierter Boost"
+            "display": "simultan integrierter Boost"
           }
         ]
       }
@@ -117,7 +117,7 @@
         {
           "code": "UH",
           "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-strahlentherapie-strahlenart",
-          "display": "ultraharte Photonen"
+          "display": "Photonen (ultraharte Roentgenstrahlen, inklusive Gamma-Strahler)"
         }
       ]
     }

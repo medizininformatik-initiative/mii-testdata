@@ -46,9 +46,9 @@
     {
       "coding": [
         {
-          "code": "1",
+          "code": "2.11",
           "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-strahlentherapie-zielgebiet",
-          "display": "Haut"
+          "display": "Schilddrüse"
         }
       ],
       "extension": [
@@ -105,7 +105,7 @@
           {
             "code": "N",
             "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-strahlentherapie-boost",
-            "display": "keine Boostbestrahlung"
+            "display": "nein, ohne Boost"
           }
         ]
       }
@@ -117,7 +117,7 @@
         {
           "code": "UH",
           "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-strahlentherapie-strahlenart",
-          "display": "Photonen (ultraharte Röntgenstrahlen, inklusive Gamma-Strahler)"
+          "display": "Photonen (ultraharte Roentgenstrahlen, inklusive Gamma-Strahler)"
         }
       ]
     }

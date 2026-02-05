@@ -43,7 +43,7 @@ Description: "Onkologie Test Grading - G3"
 * subject = Reference(mii-exa-test-data-onko-patient-1)
 * encounter = Reference(mii-exa-test-data-onko-encounter-1)
 * effectiveDateTime = "2021-10-05"
-* valueCodeableConcept = $mii-cs-onko-grading#3 "G3 - schlecht differenziert"
+* valueCodeableConcept = $mii-cs-onko-grading#3 "schlecht differenziert"
 * focus = Reference(mii-exa-test-data-onko-diagnose-1)
 
 // Tumor Size
@@ -64,7 +64,7 @@ Description: "Onkologie Test Tumorgröße - 22mm"
 * valueQuantity.code = #mm
 * focus = Reference(mii-exa-test-data-onko-diagnose-1)
 * bodySite.coding = $ICDO3#C56.9 "Ovar"
-* method = $SCT#787377000 "Gross examination and target (qualifier value)"
+* method = $SCT#787377000 "Gross examination and sampling of tissue specimen"
 
 // Histology ICD-O-3
 Instance: mii-exa-test-data-onko-histologie-icdo3-1
@@ -77,7 +77,7 @@ Description: "Onkologie Test Histologie ICD-O-3 - Seröses Adenokarzinom"
 * subject = Reference(mii-exa-test-data-onko-patient-1)
 * encounter = Reference(mii-exa-test-data-onko-encounter-1)
 * effectiveDateTime = "2021-10-05"
-* valueCodeableConcept.coding = $ICDO3#8441/3 "Seröses Adenokarzinom"
+* valueCodeableConcept.coding = $ICDO3#8441/3 "Seröses Karzinom o.n.A."
 * valueCodeableConcept.text = "Seröses Adenokarzinom"
 * bodySite.coding[Seitenlokalisation] = $mii-cs-onko-seitenlokalisation#L "Links"
 * bodySite.coding[icd-o-3] = $ICDO3#C56.9 "Ovar"

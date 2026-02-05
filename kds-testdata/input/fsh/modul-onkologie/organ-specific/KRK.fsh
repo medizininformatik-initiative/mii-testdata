@@ -10,13 +10,13 @@ Description: "Onkologie Test KRK Operation - Anteriore Resektion"
 * insert TestDataLabel
 * status = #completed
 // category is inherited from parent profile MII_PR_Onko_Operation
-* code.coding[ops] = $OPS#5-484.52 "Rektumresektion unter Sphinktererhaltung: Tiefe anteriore Resektion: Offen chirurgisch (konventionell)"
+* code.coding[ops] = $OPS#5-484.52 "Rektumresektion unter Sphinktererhaltung: Tiefe anteriore Resektion: Offen chirurgisch mit Enterostoma und Blindverschluss"
 * code.coding[ops].version = "2021"
 * subject = Reference(mii-exa-test-data-onko-patient-1)
 * performedDateTime = "2021-09-30"
 * reasonReference = Reference(mii-exa-test-data-onko-diagnose-1)
 * extension[Intention].valueCodeableConcept = $mii-cs-onko-intention#K "kurativ"
-* usedCode.coding = $SCT#334101000 "Surgical stapling device (physical object)"
+* usedCode.coding = $SCT#76164006 "Stapling device (physical object)"
 
 // Abstand Tumor Anokutanlinie
 Instance: mii-exa-test-data-onko-krk-abstand-anokutan-1
@@ -91,7 +91,7 @@ Description: "Onkologie Test KRK Anastomoseninsuffizienz - Keine"
 * subject = Reference(mii-exa-test-data-onko-patient-1)
 * focus = Reference(mii-exa-test-data-onko-krk-operation-1)
 * effectiveDateTime = "2021-10-15"
-* valueCodeableConcept = $mii-cs-onko-krk-anastomoseninsuffizienz#N "Keine Anastomoseninsuffizienz"
+* valueCodeableConcept = $mii-cs-onko-krk-anastomoseninsuffizienz#K "Keine Insuffizienz oder hochstens Grad A"
 
 // Stoma Markierung
 Instance: mii-exa-test-data-onko-krk-stoma-markierung-1
@@ -114,7 +114,7 @@ Usage: #example
 Description: "Onkologie Test KRK Specimen - Rektumresektat"
 * insert TestDataLabel
 * status = #available
-* type = $SCT#119376003 "Tissue specimen from rectum"
+* type = $SCT#119376003 "Tissue specimen"
 * subject = Reference(mii-exa-test-data-onko-patient-1)
 * collection.collectedDateTime = "2021-09-30T11:00:00+02:00"
 * collection.bodySite = $SCT#34402009 "Rectum structure"

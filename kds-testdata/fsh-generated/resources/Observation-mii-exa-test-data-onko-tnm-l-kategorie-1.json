@@ -18,7 +18,7 @@
       {
         "system": "http://snomed.info/sct",
         "code": "395715009",
-        "display": "Lymphatic invasion status"
+        "display": "Status of lymphatic (small vessel) invasion by tumor"
       }
     ]
   },

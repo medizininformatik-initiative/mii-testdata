@@ -33,7 +33,7 @@
         {
           "code": "M",
           "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-genetische-variante-auspraegung",
-          "display": "Mutation/Veränderung nachgewiesen"
+          "display": "Mutation/positiv"
         }
       ]
     }

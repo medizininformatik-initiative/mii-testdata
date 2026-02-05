@@ -17,8 +17,8 @@
     "coding": [
       {
         "system": "http://snomed.info/sct",
-        "code": "177302005",
-        "display": "Wide excision of skin lesion (procedure)"
+        "code": "177281002",
+        "display": "Excision of melanoma (procedure)"
       }
     ]
   },
@@ -33,7 +33,7 @@
         {
           "code": "368208006",
           "system": "http://snomed.info/sct",
-          "display": "Skin of left upper arm (body structure)"
+          "display": "Left upper arm structure"
         }
       ]
     }

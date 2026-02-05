@@ -29,7 +29,7 @@
       {
         "code": "2",
         "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-nebenwirkung-ctcae-grad",
-        "display": "Mäßig; minimale, lokale oder nichtinvasive Intervention indiziert; altersgemäße instrumentelle Aktivitäten des täglichen Lebens (ADL) eingeschränkt"
+        "display": "moderat"
       }
     ],
     "text": "CTCAE Grad 2 - Mäßig"

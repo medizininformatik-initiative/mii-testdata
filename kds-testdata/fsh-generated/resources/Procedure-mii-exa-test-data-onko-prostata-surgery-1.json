@@ -17,8 +17,8 @@
     "coding": [
       {
         "system": "http://fhir.de/CodeSystem/bfarm/ops",
-        "code": "5-604.00",
-        "display": "Radikale Prostatovesikulektomie: Retropubisch: Mit Lymphadenektomie",
+        "code": "5-604.0",
+        "display": "Radikale Prostatovesikulektomie: Retropubisch",
         "version": "2021"
       },
       {
