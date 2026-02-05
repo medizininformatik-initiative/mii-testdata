@@ -176,6 +176,7 @@
 [mii-exa-test-data-patient-1-diagnose-2]: Condition-mii-exa-test-data-patient-1-diagnose-2.html
 [mii-exa-test-data-patient-1-encounter-1]: Encounter-mii-exa-test-data-patient-1-encounter-1.html
 [mii-exa-test-data-patient-1-encounter-2]: Encounter-mii-exa-test-data-patient-1-encounter-2.html
+[mii-exa-test-data-patient-1-icu-herzfrequenz-1]: Observation-mii-exa-test-data-patient-1-icu-herzfrequenz-1.html
 [mii-exa-test-data-patient-1-labobs-1]: Observation-mii-exa-test-data-patient-1-labobs-1.html
 [mii-exa-test-data-patient-1-labobs-2]: Observation-mii-exa-test-data-patient-1-labobs-2.html
 [mii-exa-test-data-patient-1-labobs-3]: Observation-mii-exa-test-data-patient-1-labobs-3.html

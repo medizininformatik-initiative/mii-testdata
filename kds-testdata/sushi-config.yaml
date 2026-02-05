@@ -33,7 +33,7 @@ dependencies:
   eu.miabis.r4: 0.2.0
   de.medizininformatikinitiative.kerndatensatz.consent: 2026.0.1-rc-1
   de.medizininformatikinitiative.kerndatensatz.meta: 2026.0.x
-  de.medizininformatikinitiative.kerndatensatz.icu: 2026.0.x
+  de.medizininformatikinitiative.kerndatensatz.icu: 2026.0.1-rc1
   de.medizininformatikinitiative.kerndatensatz.mikrobiologie: 2025.0.x
   de.medizininformatikinitiative.kerndatensatz.molgen: 2026.0.x
   de.medizininformatikinitiative.kerndatensatz.patho: 2026.0.x

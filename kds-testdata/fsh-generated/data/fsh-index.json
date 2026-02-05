@@ -2200,6 +2200,14 @@
     "endLine": 44
   },
   {
+    "outputFile": "Observation-mii-exa-test-data-patient-1-icu-herzfrequenz-1.json",
+    "fshName": "mii-exa-test-data-patient-1-icu-herzfrequenz-1",
+    "fshType": "Instance",
+    "fshFile": "modul-icu/Observation.fsh",
+    "startLine": 2,
+    "endLine": 18
+  },
+  {
     "outputFile": "Observation-mii-exa-test-data-patient-1-labobs-1.json",
     "fshName": "mii-exa-test-data-patient-1-labobs-1",
     "fshType": "Instance",

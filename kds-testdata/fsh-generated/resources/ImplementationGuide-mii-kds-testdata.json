@@ -80,7 +80,7 @@
     },
     {
       "packageId": "de.medizininformatikinitiative.kerndatensatz.icu",
-      "version": "2026.0.x",
+      "version": "2026.0.1-rc1",
       "uri": "http://fhir.org/packages/de.medizininformatikinitiative.kerndatensatz.icu/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.icu",
       "id": "de_medizininformatikinitiative_kerndatensatz_icu"
     },
@@ -1557,6 +1557,14 @@
         },
         "name": "mii-exa-test-data-patient-1-encounter-2",
         "description": "Encounter: Versorgungsstellenkontakt Patient 1",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-herzfrequenz-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-herzfrequenz-1",
+        "description": "ICU Observation: Herzfrequenz für Patient 1",
         "exampleBoolean": true
       },
       {
