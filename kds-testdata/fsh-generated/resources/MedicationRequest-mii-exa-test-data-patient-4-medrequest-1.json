@@ -21,6 +21,11 @@
   ],
   "dosageInstruction": [
     {
+      "timing": {
+        "event": [
+          "2020-09-17T14:00:00+02:00"
+        ]
+      },
       "doseAndRate": [
         {
           "rateRatio": {

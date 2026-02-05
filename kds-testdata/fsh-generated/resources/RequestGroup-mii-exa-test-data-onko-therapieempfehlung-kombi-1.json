@@ -49,10 +49,7 @@
           }
         }
       ],
-      "title": "CarboTax Chemotherapie",
-      "resource": {
-        "reference": "CarePlan/mii-exa-test-data-onko-tumorkonferenz-1"
-      }
+      "title": "CarboTax Chemotherapie"
     }
   ],
   "intent": "proposal",

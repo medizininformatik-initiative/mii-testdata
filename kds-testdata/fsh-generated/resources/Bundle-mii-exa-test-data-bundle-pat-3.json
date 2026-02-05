@@ -1364,6 +1364,13 @@
         ],
         "dosageInstruction": [
           {
+            "timing": {
+              "repeat": {
+                "frequencyMax": 6,
+                "period": 1,
+                "periodUnit": "d"
+              }
+            },
             "doseAndRate": [
               {
                 "doseRange": {
@@ -1461,6 +1468,11 @@
         ],
         "dosageInstruction": [
           {
+            "timing": {
+              "event": [
+                "2022-04-25T09:00:00+02:00"
+              ]
+            },
             "doseAndRate": [
               {
                 "rateRatio": {
@@ -1543,6 +1555,11 @@
         ],
         "dosageInstruction": [
           {
+            "timing": {
+              "event": [
+                "2022-04-25T09:30:00+02:00"
+              ]
+            },
             "doseAndRate": [
               {
                 "rateRatio": {

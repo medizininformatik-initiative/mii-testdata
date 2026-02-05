@@ -21,6 +21,11 @@
   ],
   "dosageInstruction": [
     {
+      "timing": {
+        "event": [
+          "2022-04-25T09:30:00+02:00"
+        ]
+      },
       "doseAndRate": [
         {
           "rateRatio": {

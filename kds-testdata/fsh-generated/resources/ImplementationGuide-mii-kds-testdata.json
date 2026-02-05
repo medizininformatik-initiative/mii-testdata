@@ -68,7 +68,7 @@
     },
     {
       "packageId": "de.medizininformatikinitiative.kerndatensatz.consent",
-      "version": "2026.0.x",
+      "version": "2026.0.1-rc-1",
       "uri": "http://fhir.org/packages/de.medizininformatikinitiative.kerndatensatz.consent/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.consent",
       "id": "de_medizininformatikinitiative_kerndatensatz_consent"
     },
@@ -1356,7 +1356,7 @@
           "reference": "Observation/mii-exa-test-data-onko-tnm-m-symbol-1"
         },
         "name": "mii-exa-test-data-onko-tnm-m-symbol-1",
-        "description": "Onkologie Test TNM m-Symbol - kein multipler Primärtumor",
+        "description": "Onkologie Test TNM m-Symbol - multiple Primärtumoren",
         "exampleBoolean": true
       },
       {

@@ -9,7 +9,7 @@ Usage: #example
 Description: "Onkologie Test KRK Operation - Anteriore Resektion"
 * insert TestDataLabel
 * status = #completed
-// category is inherited from parent profile MII_PR_Onko_Operation
+* category = $SCT#387713003 "Surgical procedure"
 * code.coding[ops] = $OPS#5-484.52 "Rektumresektion unter Sphinktererhaltung: Tiefe anteriore Resektion: Offen chirurgisch mit Enterostoma und Blindverschluss"
 * code.coding[ops].version = "2021"
 * subject = Reference(mii-exa-test-data-onko-patient-1)

@@ -3422,10 +3422,7 @@
                 }
               }
             ],
-            "title": "CarboTax Chemotherapie",
-            "resource": {
-              "reference": "CarePlan/mii-exa-test-data-onko-tumorkonferenz-1"
-            }
+            "title": "CarboTax Chemotherapie"
           }
         ],
         "intent": "proposal",
@@ -5300,6 +5297,15 @@
           }
         ],
         "status": "completed",
+        "category": {
+          "coding": [
+            {
+              "code": "387713003",
+              "system": "http://snomed.info/sct",
+              "display": "Surgical procedure"
+            }
+          ]
+        },
         "subject": {
           "reference": "Patient/mii-exa-test-data-onko-patient-1"
         },
@@ -5733,6 +5739,15 @@
           }
         ],
         "status": "completed",
+        "category": {
+          "coding": [
+            {
+              "code": "387713003",
+              "system": "http://snomed.info/sct",
+              "display": "Surgical procedure"
+            }
+          ]
+        },
         "subject": {
           "reference": "Patient/mii-exa-test-data-onko-patient-1"
         },

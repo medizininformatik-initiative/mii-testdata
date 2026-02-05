@@ -102,6 +102,9 @@ Description: "MedicationRequest: Metamizol 500-1000 mg oral bei Bedarf"
 * encounter = Reference(mii-exa-test-data-patient-3-encounter-1)
 * authoredOn = "2022-04-12T11:32:00+01:00"
 * dosageInstruction.text = "Die Einzeldosis 500-1000 mg, Tageshöchstdosis 5000 mg"
+* dosageInstruction.timing.repeat.frequencyMax = 6
+* dosageInstruction.timing.repeat.period = 1
+* dosageInstruction.timing.repeat.periodUnit = #d
 * dosageInstruction.asNeededBoolean = true
 * dosageInstruction.route = $standardterms#20053000 "Oral use"
 * dosageInstruction.doseAndRate.doseRange.low = 500 $ucum#mg "mg"
@@ -148,6 +151,7 @@ Description: "MedicationRequest: Carboplatin 450mg IV über 1 Stunde"
 * encounter = Reference(mii-exa-test-data-patient-2-encounter-1)
 * authoredOn = "2024-03-07T10:00:00+01:00"
 * dosageInstruction.text = "Carboplatin 450mg IV über 1 Stunde"
+* dosageInstruction.timing.event = "2024-03-07T10:00:00+01:00"
 * dosageInstruction.route = $standardterms#20045000 "Intravenous use"
 * dosageInstruction.doseAndRate.doseQuantity = 450 $ucum#mg "mg"
 * dosageInstruction.doseAndRate.rateRatio.numerator = 450 $ucum#mg "mg"
@@ -168,6 +172,7 @@ Description: "MedicationRequest: Paclitaxel 175mg IV über 3 Stunden"
 * encounter = Reference(mii-exa-test-data-patient-2-encounter-1)
 * authoredOn = "2024-03-07T10:30:00+01:00"
 * dosageInstruction.text = "Paclitaxel 175mg IV über 3 Stunden"
+* dosageInstruction.timing.event = "2024-03-07T10:30:00+01:00"
 * dosageInstruction.route = $standardterms#20045000 "Intravenous use"
 * dosageInstruction.doseAndRate.doseQuantity = 175 $ucum#mg "mg"
 * dosageInstruction.doseAndRate.rateRatio.numerator = 175 $ucum#mg "mg"
@@ -189,6 +194,7 @@ Description: "MedicationRequest: 5-FU 1000mg/m² IV über 46 Stunden"
 * encounter = Reference(mii-exa-test-data-patient-3-encounter-1)
 * authoredOn = "2022-04-25T09:00:00+02:00"
 * dosageInstruction.text = "5-FU 1000mg/m² IV über 46 Stunden"
+* dosageInstruction.timing.event = "2022-04-25T09:00:00+02:00"
 * dosageInstruction.route = $standardterms#20045000 "Intravenous use"
 * dosageInstruction.doseAndRate.doseQuantity = 1000 $ucum#mg "mg"
 * dosageInstruction.doseAndRate.rateRatio.numerator = 1000 $ucum#mg "mg"
@@ -209,6 +215,7 @@ Description: "MedicationRequest: Oxaliplatin 85mg/m² IV über 2 Stunden"
 * encounter = Reference(mii-exa-test-data-patient-3-encounter-1)
 * authoredOn = "2022-04-25T09:30:00+02:00"
 * dosageInstruction.text = "Oxaliplatin 85mg/m² IV über 2 Stunden"
+* dosageInstruction.timing.event = "2022-04-25T09:30:00+02:00"
 * dosageInstruction.route = $standardterms#20045000 "Intravenous use"
 * dosageInstruction.doseAndRate.doseQuantity = 85 $ucum#mg "mg"
 * dosageInstruction.doseAndRate.rateRatio.numerator = 85 $ucum#mg "mg"
@@ -230,6 +237,7 @@ Description: "MedicationRequest: Cisplatin 75mg/m² IV über 2 Stunden"
 * encounter = Reference(mii-exa-test-data-patient-4-encounter-1)
 * authoredOn = "2020-09-17T14:00:00+02:00"
 * dosageInstruction.text = "Cisplatin 75mg/m² IV über 2 Stunden"
+* dosageInstruction.timing.event = "2020-09-17T14:00:00+02:00"
 * dosageInstruction.route = $standardterms#20045000 "Intravenous use"
 * dosageInstruction.doseAndRate.doseQuantity = 75 $ucum#mg "mg"
 * dosageInstruction.doseAndRate.rateRatio.numerator = 75 $ucum#mg "mg"
@@ -403,6 +411,9 @@ Description: "MedicationRequest: Salbutamol 2 Hubs inhalativ bei Bedarf"
 * encounter = Reference(mii-exa-test-data-patient-7-encounter-1)
 * authoredOn = "2024-01-10T16:30:00+01:00"
 * dosageInstruction.text = "Salbutamol 2 Hubs inhalativ bei Bedarf"
+* dosageInstruction.timing.repeat.frequencyMax = 6
+* dosageInstruction.timing.repeat.period = 1
+* dosageInstruction.timing.repeat.periodUnit = #d
 * dosageInstruction.route = $standardterms#20020000 "Inhalation use"
 * dosageInstruction.doseAndRate.doseQuantity = 200 $ucum#ug "μg"
 * dosageInstruction.asNeededBoolean = true
@@ -532,6 +543,9 @@ Description: "MedicationRequest: Sumatriptan 50mg bei Migräne-Attacke"
 * encounter = Reference(mii-exa-test-data-patient-10-encounter-1)
 * authoredOn = "2019-05-15T14:00:00+02:00"
 * dosageInstruction.text = "Sumatriptan 50mg bei Migräne-Attacke"
+* dosageInstruction.timing.repeat.frequencyMax = 2
+* dosageInstruction.timing.repeat.period = 1
+* dosageInstruction.timing.repeat.periodUnit = #d
 * dosageInstruction.route = $standardterms#20053000 "Oral use"
 * dosageInstruction.doseAndRate.doseQuantity = 50 $ucum#mg "mg"
 * dosageInstruction.asNeededBoolean = true

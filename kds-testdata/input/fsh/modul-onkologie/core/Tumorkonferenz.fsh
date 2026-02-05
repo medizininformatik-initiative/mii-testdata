@@ -102,7 +102,6 @@ Description: "Onkologie Test Therapieempfehlung Kombinationstherapie - CarboTax 
 * authoredOn = "2021-06-20"
 * reasonReference = Reference(mii-exa-test-data-onko-diagnose-1)
 * action[+].title = "CarboTax Chemotherapie"
-* action[=].resource = Reference(mii-exa-test-data-onko-tumorkonferenz-1)
 * action[=].action[+].title = "Carboplatin"
 * action[=].action[=].resource = Reference(mii-exa-test-data-onko-therapieempfehlung-medikation-1)
 * action[=].action[+].title = "Paclitaxel"

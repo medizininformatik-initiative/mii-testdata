@@ -1656,6 +1656,11 @@
         ],
         "dosageInstruction": [
           {
+            "timing": {
+              "event": [
+                "2024-03-07T10:00:00+01:00"
+              ]
+            },
             "doseAndRate": [
               {
                 "rateRatio": {
@@ -1738,6 +1743,11 @@
         ],
         "dosageInstruction": [
           {
+            "timing": {
+              "event": [
+                "2024-03-07T10:30:00+01:00"
+              ]
+            },
             "doseAndRate": [
               {
                 "rateRatio": {

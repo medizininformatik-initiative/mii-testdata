@@ -21,6 +21,13 @@
   ],
   "dosageInstruction": [
     {
+      "timing": {
+        "repeat": {
+          "frequencyMax": 6,
+          "period": 1,
+          "periodUnit": "d"
+        }
+      },
       "doseAndRate": [
         {
           "doseRange": {
