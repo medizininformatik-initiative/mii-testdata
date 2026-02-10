@@ -528,6 +528,22 @@
     "endLine": 9
   },
   {
+    "outputFile": "Device-mii-exa-test-data-icu-device-1.json",
+    "fshName": "mii-exa-test-data-icu-device-1",
+    "fshType": "Instance",
+    "fshFile": "modul-icu/Device.fsh",
+    "startLine": 2,
+    "endLine": 13
+  },
+  {
+    "outputFile": "Device-mii-exa-test-data-icu-ecmo-device-1.json",
+    "fshName": "mii-exa-test-data-icu-ecmo-device-1",
+    "fshType": "Instance",
+    "fshFile": "modul-icu/Device.fsh",
+    "startLine": 16,
+    "endLine": 27
+  },
+  {
     "outputFile": "Device-mii-exa-test-data-molgen-device-sequencer.json",
     "fshName": "mii-exa-test-data-molgen-device-sequencer",
     "fshType": "Instance",
@@ -542,6 +558,22 @@
     "fshFile": "modul-labor/DeviceMetric.fsh",
     "startLine": 1,
     "endLine": 10
+  },
+  {
+    "outputFile": "DeviceMetric-mii-exa-test-data-icu-devicemetric-beatmung-1.json",
+    "fshName": "mii-exa-test-data-icu-devicemetric-beatmung-1",
+    "fshType": "Instance",
+    "fshFile": "modul-icu/DeviceMetric.fsh",
+    "startLine": 2,
+    "endLine": 9
+  },
+  {
+    "outputFile": "DeviceMetric-mii-exa-test-data-icu-devicemetric-ect-1.json",
+    "fshName": "mii-exa-test-data-icu-devicemetric-ect-1",
+    "fshType": "Instance",
+    "fshFile": "modul-icu/DeviceMetric.fsh",
+    "startLine": 12,
+    "endLine": 19
   },
   {
     "outputFile": "DiagnosticReport-mii-exa-test-data-befundbericht-ct.json",
@@ -2768,6 +2800,38 @@
     "endLine": 71
   },
   {
+    "outputFile": "Observation-mii-exa-test-data-patient-1-icu-atemfrequenz-1.json",
+    "fshName": "mii-exa-test-data-patient-1-icu-atemfrequenz-1",
+    "fshType": "Instance",
+    "fshFile": "modul-icu/Observation.fsh",
+    "startLine": 21,
+    "endLine": 38
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-1-icu-bilanz-haemo-1.json",
+    "fshName": "mii-exa-test-data-patient-1-icu-bilanz-haemo-1",
+    "fshType": "Instance",
+    "fshFile": "modul-icu/Observation.fsh",
+    "startLine": 75,
+    "endLine": 97
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-1-icu-ect-art-druck-1.json",
+    "fshName": "mii-exa-test-data-patient-1-icu-ect-art-druck-1",
+    "fshType": "Instance",
+    "fshFile": "modul-icu/Observation.fsh",
+    "startLine": 41,
+    "endLine": 56
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-1-icu-ect-dauer-1.json",
+    "fshName": "mii-exa-test-data-patient-1-icu-ect-dauer-1",
+    "fshType": "Instance",
+    "fshFile": "modul-icu/Observation.fsh",
+    "startLine": 59,
+    "endLine": 72
+  },
+  {
     "outputFile": "Observation-mii-exa-test-data-patient-1-icu-herzfrequenz-1.json",
     "fshName": "mii-exa-test-data-patient-1-icu-herzfrequenz-1",
     "fshType": "Instance",
@@ -3944,6 +4008,14 @@
     "endLine": 73
   },
   {
+    "outputFile": "Procedure-mii-exa-test-data-patient-1-icu-ect-verfahren-1.json",
+    "fshName": "mii-exa-test-data-patient-1-icu-ect-verfahren-1",
+    "fshType": "Instance",
+    "fshFile": "modul-icu/Procedure.fsh",
+    "startLine": 2,
+    "endLine": 26
+  },
+  {
     "outputFile": "Procedure-mii-exa-test-data-patient-1-prozedur-1.json",
     "fshName": "mii-exa-test-data-patient-1-prozedur-1",
     "fshType": "Instance",
@@ -4446,6 +4518,14 @@
     "fshFile": "modul-onkologie/core/Histologie.fsh",
     "startLine": 6,
     "endLine": 17
+  },
+  {
+    "outputFile": "Specimen-mii-exa-test-data-patient-1-icu-specimen-1.json",
+    "fshName": "mii-exa-test-data-patient-1-icu-specimen-1",
+    "fshType": "Instance",
+    "fshFile": "modul-icu/Specimen.fsh",
+    "startLine": 2,
+    "endLine": 8
   },
   {
     "outputFile": "Specimen-mii-exa-test-data-patient-1-patho-specimen-1.json",

@@ -59,6 +59,10 @@
 [mii-exa-test-data-devicemetric-roche-cobas-c303-1]: DeviceMetric-mii-exa-test-data-devicemetric-roche-cobas-c303-1.html
 [mii-exa-test-data-geraet]: Device-mii-exa-test-data-geraet.html
 [mii-exa-test-data-geraet-ct]: Device-mii-exa-test-data-geraet-ct.html
+[mii-exa-test-data-icu-device-1]: Device-mii-exa-test-data-icu-device-1.html
+[mii-exa-test-data-icu-devicemetric-beatmung-1]: DeviceMetric-mii-exa-test-data-icu-devicemetric-beatmung-1.html
+[mii-exa-test-data-icu-devicemetric-ect-1]: DeviceMetric-mii-exa-test-data-icu-devicemetric-ect-1.html
+[mii-exa-test-data-icu-ecmo-device-1]: Device-mii-exa-test-data-icu-ecmo-device-1.html
 [mii-exa-test-data-koerperstruktur]: BodyStructure-mii-exa-test-data-koerperstruktur.html
 [mii-exa-test-data-koerperstruktur-ct]: BodyStructure-mii-exa-test-data-koerperstruktur-ct.html
 [mii-exa-test-data-kontrastmittelgabe]: MedicationAdministration-mii-exa-test-data-kontrastmittelgabe.html
@@ -199,7 +203,13 @@
 [mii-exa-test-data-patient-1-diagnose-2]: Condition-mii-exa-test-data-patient-1-diagnose-2.html
 [mii-exa-test-data-patient-1-encounter-1]: Encounter-mii-exa-test-data-patient-1-encounter-1.html
 [mii-exa-test-data-patient-1-encounter-2]: Encounter-mii-exa-test-data-patient-1-encounter-2.html
+[mii-exa-test-data-patient-1-icu-atemfrequenz-1]: Observation-mii-exa-test-data-patient-1-icu-atemfrequenz-1.html
+[mii-exa-test-data-patient-1-icu-bilanz-haemo-1]: Observation-mii-exa-test-data-patient-1-icu-bilanz-haemo-1.html
+[mii-exa-test-data-patient-1-icu-ect-art-druck-1]: Observation-mii-exa-test-data-patient-1-icu-ect-art-druck-1.html
+[mii-exa-test-data-patient-1-icu-ect-dauer-1]: Observation-mii-exa-test-data-patient-1-icu-ect-dauer-1.html
+[mii-exa-test-data-patient-1-icu-ect-verfahren-1]: Procedure-mii-exa-test-data-patient-1-icu-ect-verfahren-1.html
 [mii-exa-test-data-patient-1-icu-herzfrequenz-1]: Observation-mii-exa-test-data-patient-1-icu-herzfrequenz-1.html
+[mii-exa-test-data-patient-1-icu-specimen-1]: Specimen-mii-exa-test-data-patient-1-icu-specimen-1.html
 [mii-exa-test-data-patient-1-labobs-1]: Observation-mii-exa-test-data-patient-1-labobs-1.html
 [mii-exa-test-data-patient-1-labobs-2]: Observation-mii-exa-test-data-patient-1-labobs-2.html
 [mii-exa-test-data-patient-1-labobs-3]: Observation-mii-exa-test-data-patient-1-labobs-3.html

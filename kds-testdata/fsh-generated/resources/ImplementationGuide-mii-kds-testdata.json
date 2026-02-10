@@ -655,6 +655,38 @@
       },
       {
         "reference": {
+          "reference": "Device/mii-exa-test-data-icu-device-1"
+        },
+        "name": "mii-exa-test-data-icu-device-1",
+        "description": "Device: ICU Device",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "DeviceMetric/mii-exa-test-data-icu-devicemetric-beatmung-1"
+        },
+        "name": "mii-exa-test-data-icu-devicemetric-beatmung-1",
+        "description": "DeviceMetric: Gemessene Parameter Beatmung",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "DeviceMetric/mii-exa-test-data-icu-devicemetric-ect-1"
+        },
+        "name": "mii-exa-test-data-icu-devicemetric-ect-1",
+        "description": "DeviceMetric: Gemessene Parameter extrakorporale Verfahren",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Device/mii-exa-test-data-icu-ecmo-device-1"
+        },
+        "name": "mii-exa-test-data-icu-ecmo-device-1",
+        "description": "Device: ICU ECMO Device",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "BodyStructure/mii-exa-test-data-koerperstruktur"
         },
         "name": "mii-exa-test-data-koerperstruktur",
@@ -1775,10 +1807,58 @@
       },
       {
         "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-atemfrequenz-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-atemfrequenz-1",
+        "description": "ICU Observation: Atemfrequenz für Patient-1",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-bilanz-haemo-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-bilanz-haemo-1",
+        "description": "ICU Observation: Bilanz Abnahme Haemofiltration Einzelmesswerte für Patient-1",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-ect-art-druck-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-ect-art-druck-1",
+        "description": "ICU Observation: Arterieller Druck (ECT) für Patient-1",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-ect-dauer-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-ect-dauer-1",
+        "description": "ICU Observation: Dauer Extrakorporaler Gasaustausch für Patient-1",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Procedure/mii-exa-test-data-patient-1-icu-ect-verfahren-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-ect-verfahren-1",
+        "description": "Procedure: Extrakorporales Verfahren (ECMO) für Patient-1",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Observation/mii-exa-test-data-patient-1-icu-herzfrequenz-1"
         },
         "name": "mii-exa-test-data-patient-1-icu-herzfrequenz-1",
         "description": "ICU Observation: Herzfrequenz für Patient 1",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Specimen/mii-exa-test-data-patient-1-icu-specimen-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-specimen-1",
+        "description": "Specimen: ICU Specimen für Bilanz Patient-1",
         "exampleBoolean": true
       },
       {

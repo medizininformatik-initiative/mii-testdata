@@ -1,0 +1,65 @@
+{
+  "resourceType": "Observation",
+  "id": "mii-exa-test-data-patient-1-icu-ect-art-druck-1",
+  "meta": {
+    "security": [
+      {
+        "code": "HTEST",
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "display": "test health data"
+      }
+    ],
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-arterieller-druck"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "https://www.charite.de/fhir/sid/icu-identifier",
+      "value": "123456789"
+    }
+  ],
+  "partOf": [
+    {
+      "reference": "Procedure/mii-exa-test-data-patient-1-icu-ect-verfahren-1"
+    }
+  ],
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "182744004",
+          "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+          "display": "Extracorporeal circulation procedure (procedure)"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "386534000",
+        "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+        "display": "Arterial blood pressure (observable entity)"
+      }
+    ]
+  },
+  "valueQuantity": {
+    "system": "http://unitsofmeasure.org",
+    "code": "mm[Hg]",
+    "value": 20
+  },
+  "status": "final",
+  "subject": {
+    "reference": "Patient/mii-exa-test-data-patient-1"
+  },
+  "encounter": {
+    "reference": "Encounter/mii-exa-test-data-patient-1-encounter-1"
+  },
+  "effectiveDateTime": "2024-02-15T09:30:10+01:00",
+  "device": {
+    "reference": "DeviceMetric/mii-exa-test-data-icu-devicemetric-ect-1"
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "resourceType": "Procedure",
+  "id": "mii-exa-test-data-patient-1-icu-ect-verfahren-1",
+  "meta": {
+    "security": [
+      {
+        "code": "HTEST",
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "display": "test health data"
+      }
+    ],
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-extrakorporales-verfahren"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://fhir.de/StructureDefinition/ProzedurDokumentationsdatum",
+      "valueDateTime": "2023-09-23T10:30:00+02:00"
+    },
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Durchfuehrungsabsicht",
+      "valueCoding": {
+        "code": "262202000",
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+        "display": "Therapeutic"
+      }
+    }
+  ],
+  "category": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "182744004",
+        "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+        "display": "Extracorporeal circulation procedure (procedure)"
+      }
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "extension": [
+          {
+            "url": "http://fhir.de/StructureDefinition/seitenlokalisation",
+            "valueCoding": {
+              "code": "L",
+              "system": "https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_ICD_SEITENLOKALISATION",
+              "display": "links"
+            }
+          }
+        ],
+        "system": "http://fhir.de/CodeSystem/bfarm/ops",
+        "code": "5-470",
+        "version": "2023"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "786453001",
+        "version": "2023",
+        "display": "Venovenous extracorporeal membrane oxygenation (procedure)"
+      }
+    ]
+  },
+  "performedPeriod": {
+    "start": "2023-08-23T10:30:10+01:00",
+    "end": "2023-09-22T10:30:10+01:00"
+  },
+  "note": [
+    {
+      "text": "Beispielhafte Notiz zum extrakorporalen Verfahren."
+    }
+  ],
+  "status": "completed",
+  "subject": {
+    "reference": "Patient/mii-exa-test-data-patient-1"
+  },
+  "encounter": {
+    "reference": "Encounter/mii-exa-test-data-patient-1-encounter-1"
+  },
+  "recorder": {
+    "reference": "Practitioner/mii-exa-test-data-practitioner-physician-1"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "resourceType": "Device",
+  "id": "mii-exa-test-data-icu-ecmo-device-1",
+  "meta": {
+    "security": [
+      {
+        "code": "HTEST",
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "display": "test health data"
+      }
+    ],
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-icu-device"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "https://www.charite.de/fhir/sid/icu-device-identifier",
+      "value": "ICUDevice-12345"
+    }
+  ],
+  "deviceName": [
+    {
+      "name": "ICU Device Model X",
+      "type": "user-friendly-name"
+    }
+  ],
+  "type": {
+    "coding": [
+      {
+        "code": "49062001",
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+        "display": "Device (physical object)"
+      }
+    ]
+  },
+  "version": [
+    {
+      "value": "1.0.0"
+    }
+  ],
+  "status": "active"
+}
