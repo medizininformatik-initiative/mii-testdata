@@ -117,7 +117,7 @@
         {
           "code": "UH",
           "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-strahlentherapie-strahlenart",
-          "display": "Photonen (ultraharte Roentgenstrahlen, inklusive Gamma-Strahler)"
+          "display": "Photonen (ultraharte Röntgenstrahlen, inklusive Gamma-Strahler)"
         }
       ]
     }

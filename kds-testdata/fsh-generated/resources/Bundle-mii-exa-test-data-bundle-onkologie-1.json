@@ -1547,7 +1547,7 @@
             {
               "system": "http://loinc.org",
               "code": "101659-1",
-              "display": "Recurrence type first episode Cancer"
+              "display": "Cancer staging after tumor recurrence"
             }
           ]
         },
@@ -1610,7 +1610,7 @@
             {
               "system": "http://loinc.org",
               "code": "101660-9",
-              "display": "Autopsy determination Cancer"
+              "display": "Cancer staging during autopsy"
             }
           ]
         },
@@ -2014,7 +2014,7 @@
             {
               "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-allgemeiner-leistungszustand-ecog",
               "code": "1",
-              "display": "Einschraenkung bei koerperlicher Anstrengung, aber gehfaehig; leichte koerperliche Arbeit bzw. Arbeit im Sitzen (z. B. leichte Hausarbeit oder Bueroarbeit) moeglich (70 - 80 % nach Karnofsky)"
+              "display": "Einschränkung bei körperlicher Anstrengung, aber gehfähig; leichte körperliche Arbeit bzw. Arbeit im Sitzen (z. B. leichte Hausarbeit oder Büroarbeit) möglich (70 - 80 % nach Karnofsky)"
             },
             {
               "system": "http://loinc.org",
@@ -2505,7 +2505,7 @@
               {
                 "code": "UH",
                 "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-strahlentherapie-strahlenart",
-                "display": "Photonen (ultraharte Roentgenstrahlen, inklusive Gamma-Strahler)"
+                "display": "Photonen (ultraharte Röntgenstrahlen, inklusive Gamma-Strahler)"
               }
             ]
           }
@@ -2650,7 +2650,7 @@
               {
                 "code": "UH",
                 "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-strahlentherapie-strahlenart",
-                "display": "Photonen (ultraharte Roentgenstrahlen, inklusive Gamma-Strahler)"
+                "display": "Photonen (ultraharte Röntgenstrahlen, inklusive Gamma-Strahler)"
               }
             ]
           }

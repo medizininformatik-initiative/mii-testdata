@@ -140,7 +140,7 @@ Description: "Onkologie Test Strahlentherapie Bestrahlung - mit allen Dosisangab
 // Applikationsart (covers bestrahlung-applikationsart via extension)
 * extension[Applikationsart].valueCodeableConcept = $mii-cs-onko-strahlentherapie-applikationsart#PRCJ "perkutan mit Chemotherapie/Sensitizer"
 // Strahlenart (covers bestrahlung-strahlenart via usedCode)
-* usedCode[Strahlenart] = $mii-cs-onko-strahlentherapie-strahlenart#UH "Photonen (ultraharte Roentgenstrahlen, inklusive Gamma-Strahler)"
+* usedCode[Strahlenart] = $mii-cs-onko-strahlentherapie-strahlenart#UH "Photonen (ultraharte Röntgenstrahlen, inklusive Gamma-Strahler)"
 // Gesamtdosis (covers bestrahlung-gesamtdosis)
 * extension[Gesamtdosis].valueQuantity.value = 50.0
 * extension[Gesamtdosis].valueQuantity.unit = "Gy"
@@ -179,7 +179,7 @@ Description: "Onkologie Test Nuklearmedizinische Bestrahlung - Radiojod-Therapie
 // Applikationsart - Radiojod-Therapie
 * extension[Applikationsart].valueCodeableConcept = $mii-cs-onko-strahlentherapie-applikationsart#MRJT "Radiojod-Therapie"
 // Strahlenart
-* usedCode[Strahlenart] = $mii-cs-onko-strahlentherapie-strahlenart#UH "Photonen (ultraharte Roentgenstrahlen, inklusive Gamma-Strahler)"
+* usedCode[Strahlenart] = $mii-cs-onko-strahlentherapie-strahlenart#UH "Photonen (ultraharte Röntgenstrahlen, inklusive Gamma-Strahler)"
 // Gesamtdosis
 * extension[Gesamtdosis].valueQuantity.value = 3700
 * extension[Gesamtdosis].valueQuantity.unit = "MBq"

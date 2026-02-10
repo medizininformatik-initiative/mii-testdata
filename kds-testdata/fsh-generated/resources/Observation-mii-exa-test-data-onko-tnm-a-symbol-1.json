@@ -18,7 +18,7 @@
       {
         "system": "http://loinc.org",
         "code": "101660-9",
-        "display": "Autopsy determination Cancer"
+        "display": "Cancer staging during autopsy"
       }
     ]
   },
