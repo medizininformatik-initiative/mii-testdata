@@ -1,6 +1,8 @@
 {
   "suppress" : [
     "Terminology_TX_NoValid_16@ImplementationGuide.definition.parameter.code",
-    "Terminology_TX_Confirm_4a@AdverseEvent.event.coding"
+    "Terminology_TX_Confirm_4a@AdverseEvent.event.coding",
+    "_DT_Fixed_Wrong@Procedure.extension.value.ofType(CodeableConcept).coding.system",
+    "Terminology_TX_NoValid_1_CC@Procedure.extension.value.ofType(CodeableConcept)"
   ]
 }

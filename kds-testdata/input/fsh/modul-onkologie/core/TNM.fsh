@@ -137,7 +137,7 @@ Usage: #example
 Description: "Onkologie Test TNM r-Symbol - kein Rezidiv"
 * insert TestDataLabel
 * status = #final
-* code.coding = $LNC#101659-1 "Recurrence type first episode Cancer"
+* code.coding = $LNC#101659-1 "Cancer staging after tumor recurrence"
 * subject = Reference(mii-exa-test-data-onko-patient-1)
 * encounter = Reference(mii-exa-test-data-onko-encounter-1)
 * effectiveDateTime = "2021-10-05"
@@ -152,7 +152,7 @@ Usage: #example
 Description: "Onkologie Test TNM a-Symbol - keine Autopsie"
 * insert TestDataLabel
 * status = #final
-* code.coding = $LNC#101660-9 "Autopsy determination Cancer"
+* code.coding = $LNC#101660-9 "Cancer staging during autopsy"
 * subject = Reference(mii-exa-test-data-onko-patient-1)
 * encounter = Reference(mii-exa-test-data-onko-encounter-1)
 * effectiveDateTime = "2021-10-05"

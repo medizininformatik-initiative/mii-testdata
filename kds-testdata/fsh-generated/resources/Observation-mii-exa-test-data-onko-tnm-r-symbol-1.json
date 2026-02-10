@@ -18,7 +18,7 @@
       {
         "system": "http://loinc.org",
         "code": "101659-1",
-        "display": "Recurrence type first episode Cancer"
+        "display": "Cancer staging after tumor recurrence"
       }
     ]
   },

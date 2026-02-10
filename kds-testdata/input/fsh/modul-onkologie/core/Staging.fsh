@@ -59,7 +59,7 @@ Description: "Onkologie Test ECOG - 1"
 * subject = Reference(mii-exa-test-data-onko-patient-1)
 * encounter = Reference(mii-exa-test-data-onko-encounter-1)
 * effectiveDateTime = "2021-06-15"
-* valueCodeableConcept.coding[obds] = $mii-cs-onko-allgemeiner-leistungszustand-ecog#1 "Einschraenkung bei koerperlicher Anstrengung, aber gehfaehig; leichte koerperliche Arbeit bzw. Arbeit im Sitzen (z. B. leichte Hausarbeit oder Bueroarbeit) moeglich (70 - 80 % nach Karnofsky)"
+* valueCodeableConcept.coding[obds] = $mii-cs-onko-allgemeiner-leistungszustand-ecog#1 "Einschränkung bei körperlicher Anstrengung, aber gehfähig; leichte körperliche Arbeit bzw. Arbeit im Sitzen (z. B. leichte Hausarbeit oder Büroarbeit) möglich (70 - 80 % nach Karnofsky)"
 * valueCodeableConcept.coding[loinc] = $LNC#LA9623-5 "Restricted in physically strenuous activity"
 
 // Allgemeiner Leistungszustand Karnofsky (Chapter 12)
