@@ -1,0 +1,104 @@
+{
+  "resourceType": "MedicationRequest",
+  "id": "mii-exa-test-data-patient-3-seltene-therapieempfehlung-1",
+  "meta": {
+    "security": [
+      {
+        "code": "HTEST",
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "display": "test health data"
+      }
+    ],
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-therapieempfehlung"
+    ]
+  },
+  "extension": [
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-ex-seltene-empfehlung-prioritaet",
+      "valuePositiveInt": 1
+    },
+    {
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "1A",
+            "display": "Evidenzgrad 1A"
+          }
+        ]
+      },
+      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-ex-seltene-empfehlung-evidenzgraduierung"
+    },
+    {
+      "valueIdentifier": {
+        "system": "https://doi.org",
+        "value": "10.1016/j.ejphar.2015.03.048"
+      },
+      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-ex-seltene-empfehlung-publikation"
+    }
+  ],
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "prevention-medication",
+          "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/CodeSystem/mii-cs-seltene-therapieempfehlung-strategie",
+          "display": "Präventive Medikation"
+        }
+      ]
+    },
+    {
+      "coding": [
+        {
+          "code": "symptomatic",
+          "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/CodeSystem/mii-cs-seltene-therapieempfehlung-typ",
+          "display": "Symptomatisch"
+        }
+      ]
+    }
+  ],
+  "reasonReference": [
+    {
+      "reference": "Condition/mii-exa-test-data-patient-3-seltene-clinical-diagnosis-1"
+    }
+  ],
+  "dosageInstruction": [
+    {
+      "timing": {
+        "repeat": {
+          "frequency": 1,
+          "period": 1,
+          "periodUnit": "d"
+        }
+      },
+      "doseAndRate": [
+        {
+          "doseQuantity": {
+            "value": 50,
+            "unit": "mg",
+            "system": "http://unitsofmeasure.org",
+            "code": "mg"
+          }
+        }
+      ],
+      "text": "50mg 1x taeglich"
+    }
+  ],
+  "status": "active",
+  "intent": "proposal",
+  "medicationCodeableConcept": {
+    "coding": [
+      {
+        "code": "C09CA01",
+        "system": "http://fhir.de/CodeSystem/bfarm/atc",
+        "display": "Losartan"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/mii-exa-test-data-patient-3"
+  },
+  "encounter": {
+    "reference": "Encounter/mii-exa-test-data-patient-3-encounter-1"
+  }
+}

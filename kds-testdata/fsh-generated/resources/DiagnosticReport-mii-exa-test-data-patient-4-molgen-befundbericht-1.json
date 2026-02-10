@@ -20,6 +20,12 @@
       "valueReference": {
         "reference": "FamilyMemberHistory/mii-exa-test-data-patient-4-molgen-family-member-history-1"
       }
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-reference",
+      "valueReference": {
+        "reference": "Procedure/mii-exa-test-data-patient-4-molgen-genomic-study-1"
+      }
     }
   ],
   "basedOn": [
@@ -39,6 +45,11 @@
     }
   ],
   "performer": [
+    {
+      "reference": "Practitioner/mii-exa-test-data-practitioner-physician-2"
+    }
+  ],
+  "resultsInterpreter": [
     {
       "reference": "Practitioner/mii-exa-test-data-practitioner-physician-2"
     }
@@ -72,5 +83,9 @@
   "subject": {
     "reference": "Patient/mii-exa-test-data-patient-4"
   },
+  "encounter": {
+    "reference": "Encounter/mii-exa-test-data-patient-4-encounter-1"
+  },
+  "issued": "2022-12-05T14:00:00+01:00",
   "conclusion": "Nachweis der pathogenen Variante im CTNNA1-Gen."
 }

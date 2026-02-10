@@ -49,6 +49,33 @@
         ]
       },
       "valueString": "Nachweis einer aktivierenden Mutation BRAF V600E"
+    },
+    {
+      "valueCodeableConcept": {
+        "text": "Tier I - Level A"
+      },
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "93044-6",
+            "display": "Level of evidence"
+          }
+        ]
+      }
+    },
+    {
+      "valueCodeableConcept": {
+        "text": "Somatisch erworben"
+      },
+      "code": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs",
+            "code": "condition-inheritance"
+          }
+        ]
+      }
     }
   ],
   "code": {
@@ -63,5 +90,10 @@
   "status": "final",
   "subject": {
     "reference": "Patient/mii-exa-test-data-patient-3"
-  }
+  },
+  "encounter": {
+    "reference": "Encounter/mii-exa-test-data-patient-3-encounter-1"
+  },
+  "effectiveDateTime": "2022-04-07",
+  "issued": "2022-04-12T10:30:00+02:00"
 }

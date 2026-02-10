@@ -50,6 +50,12 @@
           "code": "443961001",
           "version": "http://snomed.info/sct/900000000000207008/version/20230731",
           "display": "Malignant adenomatous neoplasm (disorder)"
+        },
+        {
+          "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+          "version": "2022",
+          "code": "C16.9",
+          "display": "Boesartige Neubildung: Magen, nicht naeher bezeichnet"
         }
       ]
     }
@@ -63,6 +69,12 @@
             "code": "254837009",
             "version": "http://snomed.info/sct/900000000000207008/version/20230731",
             "display": "Malignant neoplasm of breast (disorder)"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+            "version": "2022",
+            "code": "C50.9",
+            "display": "Boesartige Neubildung: Brustdruese, nicht naeher bezeichnet"
           }
         ]
       },

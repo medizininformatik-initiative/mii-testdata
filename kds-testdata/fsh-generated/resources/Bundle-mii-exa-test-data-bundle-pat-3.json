@@ -2801,12 +2801,23 @@
             "reference": "FamilyMemberHistory/mii-exa-test-data-patient-3-molgen-family-member-history-1"
           }
         ],
+        "note": [
+          {
+            "text": "Dringender Verdacht auf BRAF V600E bei bekanntem kolorektalem Karzinom. Therapieentscheidung abhaengig von Ergebnis."
+          }
+        ],
         "status": "active",
         "intent": "order",
         "subject": {
           "reference": "Patient/mii-exa-test-data-patient-3"
         },
-        "authoredOn": "2022-04-07"
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-patient-3-encounter-1"
+        },
+        "authoredOn": "2022-04-07",
+        "requester": {
+          "reference": "Practitioner/mii-exa-test-data-practitioner-physician-1"
+        }
       }
     },
     {
@@ -2849,6 +2860,18 @@
             "valueReference": {
               "reference": "FamilyMemberHistory/mii-exa-test-data-patient-3-molgen-family-member-history-1"
             }
+          },
+          {
+            "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-reference",
+            "valueReference": {
+              "reference": "Procedure/mii-exa-test-data-patient-3-molgen-genomic-study-1"
+            }
+          },
+          {
+            "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-risk-assessment",
+            "valueReference": {
+              "reference": "RiskAssessment/mii-exa-test-data-patient-3-molgen-polygener-risiko-score-1"
+            }
           }
         ],
         "basedOn": [
@@ -2865,6 +2888,11 @@
                 "display": "Genetics"
               }
             ]
+          }
+        ],
+        "performer": [
+          {
+            "reference": "Practitioner/mii-exa-test-data-practitioner-physician-1"
           }
         ],
         "specimen": [
@@ -2884,6 +2912,24 @@
           },
           {
             "reference": "Observation/mii-exa-test-data-patient-3-molgen-genotyp-1"
+          },
+          {
+            "reference": "Observation/mii-exa-test-data-patient-3-molgen-mutationslast-1"
+          },
+          {
+            "reference": "Observation/mii-exa-test-data-patient-3-molgen-msi-1"
+          }
+        ],
+        "conclusionCode": [
+          {
+            "coding": [
+              {
+                "code": "10828004",
+                "system": "http://snomed.info/sct",
+                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+                "display": "Positive (qualifier value)"
+              }
+            ]
           }
         ],
         "code": {
@@ -2899,7 +2945,11 @@
         "subject": {
           "reference": "Patient/mii-exa-test-data-patient-3"
         },
-        "conclusion": "BRAF p.V600E Mutation liegt vor. Bitte Therapieoption mit einem BRAF-Inhibitor prüfen."
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-patient-3-encounter-1"
+        },
+        "issued": "2022-04-12T10:30:00+02:00",
+        "conclusion": "BRAF p.V600E Mutation liegt vor. Bitte Therapieoption mit einem BRAF-Inhibitor pruefen."
       }
     },
     {
@@ -2959,6 +3009,33 @@
               ]
             },
             "valueString": "Nachweis einer aktivierenden Mutation BRAF V600E"
+          },
+          {
+            "valueCodeableConcept": {
+              "text": "Tier I - Level A"
+            },
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "93044-6",
+                  "display": "Level of evidence"
+                }
+              ]
+            }
+          },
+          {
+            "valueCodeableConcept": {
+              "text": "Somatisch erworben"
+            },
+            "code": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs",
+                  "code": "condition-inheritance"
+                }
+              ]
+            }
           }
         ],
         "code": {
@@ -2973,7 +3050,12 @@
         "status": "final",
         "subject": {
           "reference": "Patient/mii-exa-test-data-patient-3"
-        }
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-patient-3-encounter-1"
+        },
+        "effectiveDateTime": "2022-04-07",
+        "issued": "2022-04-12T10:30:00+02:00"
       }
     },
     {
@@ -3017,6 +3099,11 @@
             ]
           }
         ],
+        "derivedFrom": [
+          {
+            "reference": "Observation/mii-exa-test-data-patient-3-molgen-variante-1"
+          }
+        ],
         "component": [
           {
             "code": {
@@ -3027,7 +3114,7 @@
                 }
               ]
             },
-            "valueString": "Nachweis einer aktivierenden Mutation BRAF V600E. Triple-Therapie mit einem EGFR-Antikörper sowie einem BRAF- und einem MEK- Inhibitor prüfen."
+            "valueString": "Nachweis einer aktivierenden Mutation BRAF V600E. Triple-Therapie mit einem EGFR-Antikoerper sowie einem BRAF- und einem MEK-Inhibitor pruefen."
           },
           {
             "valueCodeableConcept": {
@@ -3095,11 +3182,40 @@
                 }
               ]
             }
-          }
-        ],
-        "derivedFrom": [
+          },
           {
-            "reference": "Observation/mii-exa-test-data-patient-3-molgen-variante-1"
+            "valueCodeableConcept": {
+              "text": "Tier I - Level A (FDA-approved therapy)"
+            },
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "93044-6",
+                  "display": "Level of evidence"
+                }
+              ]
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "81259-4"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "447886005",
+                  "system": "http://snomed.info/sct",
+                  "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+                  "display": "Adenocarcinoma of anorectum (disorder)"
+                }
+              ]
+            }
           }
         ],
         "code": {
@@ -3114,7 +3230,12 @@
         "status": "final",
         "subject": {
           "reference": "Patient/mii-exa-test-data-patient-3"
-        }
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-patient-3-encounter-1"
+        },
+        "effectiveDateTime": "2022-04-07",
+        "issued": "2022-04-12T10:30:00+02:00"
       }
     },
     {
@@ -3338,6 +3459,89 @@
                 }
               ]
             }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "62374-4",
+                  "display": "Human reference sequence assembly version"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "LA26806-2",
+                  "system": "http://loinc.org",
+                  "display": "GRCh38"
+                }
+              ]
+            }
+          },
+          {
+            "valueRange": {
+              "low": {
+                "value": 140753336
+              },
+              "high": {
+                "value": 140753336
+              }
+            },
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "81254-5",
+                  "display": "Variant exact start-end"
+                }
+              ]
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "69547-8",
+                  "display": "Genomic ref allele [ID]"
+                }
+              ]
+            },
+            "valueString": "T"
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "69551-0",
+                  "display": "Genomic alt allele [ID]"
+                }
+              ]
+            },
+            "valueString": "A"
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "48002-0",
+                  "display": "Genomic source class [Type]"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "LA6684-0",
+                  "system": "http://loinc.org",
+                  "display": "Somatic"
+                }
+              ]
+            }
           }
         ],
         "code": {
@@ -3353,6 +3557,8 @@
         "subject": {
           "reference": "Patient/mii-exa-test-data-patient-3"
         },
+        "effectiveDateTime": "2022-04-07",
+        "issued": "2022-04-12T10:30:00+02:00",
         "valueCodeableConcept": {
           "coding": [
             {
@@ -3467,6 +3673,37 @@
                 }
               ]
             }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs",
+                  "code": "conclusion-string"
+                }
+              ]
+            },
+            "valueString": "Heterozygote BRAF V600E Mutation nachgewiesen"
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "62374-4",
+                  "display": "Human reference sequence assembly version"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "LA26806-2",
+                  "system": "http://loinc.org",
+                  "display": "GRCh38"
+                }
+              ]
+            }
           }
         ],
         "code": {
@@ -3482,6 +3719,11 @@
         "subject": {
           "reference": "Patient/mii-exa-test-data-patient-3"
         },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-patient-3-encounter-1"
+        },
+        "effectiveDateTime": "2022-04-07",
+        "issued": "2022-04-12T10:30:00+02:00",
         "method": {
           "coding": [
             {
@@ -3540,6 +3782,40 @@
             ]
           }
         ],
+        "derivedFrom": [
+          {
+            "reference": "Observation/mii-exa-test-data-patient-3-molgen-variante-1"
+          }
+        ],
+        "component": [
+          {
+            "valueCodeableConcept": {
+              "text": "Panel-basiert (alle Gene)"
+            },
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "48018-6",
+                  "display": "Gene studied [ID]"
+                }
+              ]
+            }
+          },
+          {
+            "valueCodeableConcept": {
+              "text": "Tumor Mutational Burden"
+            },
+            "code": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs",
+                  "code": "biomarker-category"
+                }
+              ]
+            }
+          }
+        ],
         "status": "final",
         "code": {
           "coding": [
@@ -3553,6 +3829,11 @@
         "subject": {
           "reference": "Patient/mii-exa-test-data-patient-3"
         },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-patient-3-encounter-1"
+        },
+        "effectiveDateTime": "2022-04-07",
+        "issued": "2022-04-12T10:30:00+02:00",
         "valueQuantity": {
           "value": 12,
           "code": "1/1000000{Base}",
@@ -3605,6 +3886,40 @@
             ]
           }
         ],
+        "derivedFrom": [
+          {
+            "reference": "Observation/mii-exa-test-data-patient-3-molgen-variante-1"
+          }
+        ],
+        "component": [
+          {
+            "valueCodeableConcept": {
+              "text": "MSI-Panel (5 Marker)"
+            },
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "48018-6",
+                  "display": "Gene studied [ID]"
+                }
+              ]
+            }
+          },
+          {
+            "valueCodeableConcept": {
+              "text": "Microsatellite Instability"
+            },
+            "code": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs",
+                  "code": "biomarker-category"
+                }
+              ]
+            }
+          }
+        ],
         "status": "final",
         "code": {
           "coding": [
@@ -3618,6 +3933,11 @@
         "subject": {
           "reference": "Patient/mii-exa-test-data-patient-3"
         },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-patient-3-encounter-1"
+        },
+        "effectiveDateTime": "2022-04-07",
+        "issued": "2022-04-12T10:30:00+02:00",
         "valueCodeableConcept": {
           "coding": [
             {
@@ -3667,15 +3987,28 @@
               "display": "Consider alternative medication"
             }
           ],
-          "text": "Alternative Medikation in Erwägung ziehen"
+          "text": "Alternative Medikation in Erwaegung ziehen"
         },
         "status": "requested",
         "intent": "proposal",
         "for": {
           "reference": "Patient/mii-exa-test-data-patient-3"
         },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-patient-3-encounter-1"
+        },
         "reasonReference": {
           "reference": "Observation/mii-exa-test-data-patient-3-molgen-therapeutische-implikation-1"
+        },
+        "reasonCode": {
+          "coding": [
+            {
+              "code": "447886005",
+              "system": "http://snomed.info/sct",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+              "display": "Adenocarcinoma of anorectum (disorder)"
+            }
+          ]
         }
       }
     },
@@ -3720,6 +4053,9 @@
         "description": "Genetische Beratung empfohlen mit Dr. Rosalind Franklin",
         "for": {
           "reference": "Patient/mii-exa-test-data-patient-3"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-patient-3-encounter-1"
         },
         "reasonReference": {
           "reference": "Observation/mii-exa-test-data-patient-3-molgen-therapeutische-implikation-1"
@@ -3794,6 +4130,12 @@
                 "code": "447886005",
                 "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                 "display": "Adenocarcinoma of anorectum (disorder)"
+              },
+              {
+                "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+                "version": "2022",
+                "code": "C21.8",
+                "display": "Boesartige Neubildung des Rektums, Anus und Analkanals: Rektum, Anus und Analkanal, mehrere Teilbereiche ueberlappend"
               }
             ]
           }
@@ -3812,6 +4154,12 @@
                   "code": "830150003",
                   "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                   "display": "Malignant melanoma with B-Raf proto-oncogene, serine/threonine kinase V600E mutation (disorder)"
+                },
+                {
+                  "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+                  "version": "2022",
+                  "code": "C43.9",
+                  "display": "Boesartiges Melanom der Haut, nicht naeher bezeichnet"
                 }
               ]
             },
@@ -3824,6 +4172,2628 @@
         },
         "date": "2022-04-07",
         "deceasedBoolean": true
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Procedure"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Procedure/mii-exa-test-data-patient-3-molgen-genomic-study-1",
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "mii-exa-test-data-patient-3-molgen-genomic-study-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/mii-pr-molgen-genomic-study"
+          ]
+        },
+        "reasonReference": [
+          {
+            "reference": "Condition/mii-exa-test-data-patient-3-diagnose-1"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-ext",
+            "valueReference": {
+              "reference": "Procedure/mii-exa-test-data-patient-3-molgen-genomic-study-analysis-1"
+            }
+          }
+        ],
+        "category": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+              "code": "laboratory"
+            }
+          ]
+        },
+        "status": "completed",
+        "code": {
+          "coding": [
+            {
+              "code": "405825005",
+              "system": "http://snomed.info/sct",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+              "display": "Molecular genetic test (procedure)"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-3"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-patient-3-encounter-1"
+        },
+        "performedDateTime": "2022-04-07"
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Procedure"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Procedure/mii-exa-test-data-patient-3-molgen-genomic-study-analysis-1",
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "mii-exa-test-data-patient-3-molgen-genomic-study-analysis-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/mii-pr-molgen-genomic-study-analysis"
+          ]
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-title",
+            "valueString": "BRAF Exon 15 Analyse"
+          },
+          {
+            "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-method-type",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "LA26398-0",
+                  "system": "http://loinc.org",
+                  "display": "Sequencing"
+                }
+              ]
+            }
+          },
+          {
+            "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-change-type",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "SO:1000008",
+                  "system": "http://sequenceontology.org",
+                  "display": "point_mutation"
+                }
+              ]
+            }
+          },
+          {
+            "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-genome-build",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "LA26806-2",
+                  "system": "http://loinc.org",
+                  "display": "GRCh38"
+                }
+              ]
+            }
+          },
+          {
+            "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-specimen",
+            "valueReference": {
+              "reference": "Specimen/mii-exa-test-data-patient-3-specimen-1"
+            }
+          },
+          {
+            "extension": [
+              {
+                "url": "device",
+                "valueReference": {
+                  "reference": "Device/mii-exa-test-data-molgen-device-sequencer"
+                }
+              }
+            ],
+            "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-device"
+          },
+          {
+            "extension": [
+              {
+                "url": "description",
+                "valueString": "BRAF: Exon 15 (Codon 582-612)"
+              },
+              {
+                "url": "studied",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "code": "HGNC:1097",
+                      "system": "http://www.genenames.org/geneId",
+                      "display": "BRAF"
+                    }
+                  ]
+                }
+              }
+            ],
+            "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-regions"
+          }
+        ],
+        "status": "completed",
+        "category": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+              "code": "laboratory"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-3"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-3-molgen-molekulare-konsequenz-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-3-molgen-molekulare-konsequenz-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/mii-pr-molgen-molekulare-konsequenz",
+            "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/molecular-consequence"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                "code": "GE"
+              }
+            ]
+          }
+        ],
+        "derivedFrom": [
+          {
+            "reference": "Observation/mii-exa-test-data-patient-3-molgen-variante-1"
+          }
+        ],
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs",
+                  "code": "conclusion-string"
+                }
+              ]
+            },
+            "valueString": "Aktivierende Missense-Mutation im BRAF-Gen. Austausch von Valin zu Glutaminsaeure an Position 600 fuehrt zu konstitutiver Aktivierung der BRAF-Kinase."
+          },
+          {
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "SO:0002053",
+                  "system": "http://sequenceontology.org",
+                  "display": "gain_of_function_variant"
+                }
+              ],
+              "text": "Konstitutive Aktivierung der BRAF-Kinase"
+            },
+            "code": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs",
+                  "code": "functional-effect"
+                }
+              ]
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "53037-8"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "LA6668-3",
+                  "system": "http://loinc.org",
+                  "display": "Pathogenic"
+                }
+              ]
+            }
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs",
+              "code": "molecular-consequence",
+              "display": "Molecular Consequence"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-3"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-patient-3-encounter-1"
+        },
+        "effectiveDateTime": "2022-04-07",
+        "issued": "2022-04-12T10:30:00+02:00"
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "RiskAssessment"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/RiskAssessment/mii-exa-test-data-patient-3-molgen-polygener-risiko-score-1",
+      "resource": {
+        "resourceType": "RiskAssessment",
+        "id": "mii-exa-test-data-patient-3-molgen-polygener-risiko-score-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/polygener-risiko-score"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://www.charite.de/fhir/sid/risiko-bewertungen",
+            "value": "PRS-CRC-2022-0407-001"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "721961004",
+              "system": "http://snomed.info/sct",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+              "display": "Risk assessment score (observable entity)"
+            }
+          ],
+          "text": "Polygener Risiko Score (PRS)"
+        },
+        "basis": [
+          {
+            "reference": "Observation/mii-exa-test-data-patient-3-molgen-variante-1"
+          }
+        ],
+        "prediction": [
+          {
+            "outcome": {
+              "coding": [
+                {
+                  "code": "363510005",
+                  "system": "http://snomed.info/sct",
+                  "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+                  "display": "Malignant tumor of large intestine (disorder)"
+                }
+              ],
+              "text": "Kolorektales Karzinom"
+            },
+            "whenRange": {
+              "low": {
+                "value": 50,
+                "code": "a",
+                "system": "http://unitsofmeasure.org",
+                "unit": "years"
+              },
+              "high": {
+                "value": 80,
+                "code": "a",
+                "system": "http://unitsofmeasure.org",
+                "unit": "years"
+              }
+            },
+            "probabilityDecimal": 0.32,
+            "qualitativeRisk": {
+              "coding": [
+                {
+                  "code": "high",
+                  "system": "http://terminology.hl7.org/CodeSystem/risk-probability",
+                  "display": "High likelihood"
+                }
+              ]
+            },
+            "relativeRisk": 2.8
+          }
+        ],
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-3"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-patient-3-encounter-1"
+        },
+        "occurrenceDateTime": "2022-04-07",
+        "condition": {
+          "reference": "Condition/mii-exa-test-data-patient-3-diagnose-1"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-3-seltene-hpo-assessment-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-3-seltene-hpo-assessment-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-hpo-assessment"
+          ]
+        },
+        "note": [
+          {
+            "text": "Aortenwurzeldilatation bei Echokardiographie festgestellt, Z-Score > 3."
+          }
+        ],
+        "derivedFrom": [
+          {
+            "reference": "Observation/mii-exa-test-data-patient-3-labobs-1"
+          }
+        ],
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "260411009",
+                  "system": "http://snomed.info/sct",
+                  "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+                  "display": "Presence findings"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "LA9633-4",
+                  "system": "http://loinc.org",
+                  "display": "Present"
+                }
+              ]
+            }
+          }
+        ],
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "HP:0002616",
+              "system": "http://human-phenotype-ontology.org",
+              "display": "Aortic root aneurysm"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-3"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-patient-3-encounter-1"
+        },
+        "effectiveDateTime": "2025-03-10",
+        "bodySite": {
+          "coding": [
+            {
+              "code": "57034009",
+              "system": "http://snomed.info/sct",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+              "display": "Aortic root structure"
+            }
+          ]
+        },
+        "method": {
+          "coding": [
+            {
+              "code": "278292003",
+              "system": "http://snomed.info/sct",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+              "display": "Ultrasound imaging"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-3-seltene-hpo-assessment-2",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-3-seltene-hpo-assessment-2",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-hpo-assessment"
+          ]
+        },
+        "note": [
+          {
+            "text": "Arachnodaktylie bei klinischer Untersuchung nicht nachweisbar. Armspanne/Koerpergroesse-Verhaeltnis im Normbereich."
+          }
+        ],
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "260411009",
+                  "system": "http://snomed.info/sct",
+                  "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+                  "display": "Presence findings"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "LA9634-2",
+                  "system": "http://loinc.org",
+                  "display": "Absent"
+                }
+              ]
+            }
+          }
+        ],
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "HP:0001166",
+              "system": "http://human-phenotype-ontology.org",
+              "display": "Arachnodactyly"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-3"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-patient-3-encounter-1"
+        },
+        "effectiveDateTime": "2025-03-10",
+        "method": {
+          "coding": [
+            {
+              "code": "5880005",
+              "system": "http://snomed.info/sct",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+              "display": "Physical examination procedure"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-3-seltene-hpo-assessment-3",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-3-seltene-hpo-assessment-3",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-hpo-assessment"
+          ]
+        },
+        "note": [
+          {
+            "text": "Moderate Linsensubluxation bilateral, ophthalmologisch dokumentiert."
+          }
+        ],
+        "component": [
+          {
+            "interpretation": [
+              {
+                "coding": [
+                  {
+                    "code": "newly-added",
+                    "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/CodeSystem/mii-cs-seltene-hpo-change-status",
+                    "display": "Neu hinzugekommen"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "code": "260411009",
+                  "system": "http://snomed.info/sct",
+                  "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+                  "display": "Presence findings"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "LA9633-4",
+                  "system": "http://loinc.org",
+                  "display": "Present"
+                }
+              ]
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "HP:0012824",
+                  "system": "http://human-phenotype-ontology.org",
+                  "display": "Severity"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "HP:0012826",
+                  "system": "http://human-phenotype-ontology.org",
+                  "display": "Moderate"
+                }
+              ]
+            }
+          }
+        ],
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "HP:0001083",
+              "system": "http://human-phenotype-ontology.org",
+              "display": "Ectopia lentis"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-3"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-patient-3-encounter-1"
+        },
+        "effectiveDateTime": "2025-03-10",
+        "bodySite": {
+          "coding": [
+            {
+              "code": "78076003",
+              "system": "http://snomed.info/sct",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+              "display": "Lens structure"
+            }
+          ]
+        },
+        "method": {
+          "coding": [
+            {
+              "code": "36228007",
+              "system": "http://snomed.info/sct",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+              "display": "Ophthalmic examination"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Condition"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Condition/mii-exa-test-data-patient-3-seltene-clinical-diagnosis-1",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "mii-exa-test-data-patient-3-seltene-clinical-diagnosis-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-clinical-diagnosis"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "encounter-diagnosis",
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "19346006",
+              "system": "http://snomed.info/sct",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+              "display": "Marfan syndrome"
+            },
+            {
+              "code": "558",
+              "system": "http://www.orpha.net",
+              "display": "Marfan syndrome"
+            },
+            {
+              "code": "Q87.4",
+              "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+              "display": "Marfan-Syndrom"
+            },
+            {
+              "code": "HP:0003549",
+              "system": "http://human-phenotype-ontology.org",
+              "display": "Connective tissue abnormality"
+            }
+          ],
+          "text": "Marfan-Syndrom, klinisch diagnostiziert nach Ghent-Kriterien"
+        },
+        "bodySite": [
+          {
+            "coding": [
+              {
+                "code": "113257007",
+                "system": "http://snomed.info/sct",
+                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+                "display": "Structure of cardiovascular system"
+              }
+            ]
+          }
+        ],
+        "onsetAge": {
+          "value": 28,
+          "unit": "years",
+          "system": "http://unitsofmeasure.org",
+          "code": "a"
+        },
+        "stage": [
+          {
+            "assessment": [
+              {
+                "reference": "ClinicalImpression/mii-exa-test-data-patient-3-seltene-clinical-impression-1"
+              }
+            ],
+            "type": {
+              "coding": [
+                {
+                  "code": "260998006",
+                  "system": "http://snomed.info/sct",
+                  "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+                  "display": "Clinical staging"
+                }
+              ]
+            }
+          }
+        ],
+        "evidence": [
+          {
+            "code": [
+              {
+                "coding": [
+                  {
+                    "code": "HP:0002616",
+                    "system": "http://human-phenotype-ontology.org",
+                    "display": "Aortic root aneurysm"
+                  }
+                ]
+              }
+            ],
+            "detail": [
+              {
+                "reference": "Observation/mii-exa-test-data-patient-3-seltene-hpo-assessment-1"
+              }
+            ]
+          },
+          {
+            "code": [
+              {
+                "coding": [
+                  {
+                    "code": "HP:0001083",
+                    "system": "http://human-phenotype-ontology.org",
+                    "display": "Ectopia lentis"
+                  }
+                ]
+              }
+            ],
+            "detail": [
+              {
+                "reference": "Observation/mii-exa-test-data-patient-3-seltene-hpo-assessment-3"
+              }
+            ]
+          },
+          {
+            "code": [
+              {
+                "coding": [
+                  {
+                    "code": "HP:0000098",
+                    "system": "http://human-phenotype-ontology.org",
+                    "display": "Tall stature"
+                  }
+                ]
+              }
+            ],
+            "detail": [
+              {
+                "reference": "Observation/mii-exa-test-data-patient-3-seltene-hpo-assessment-4"
+              }
+            ]
+          }
+        ],
+        "note": [
+          {
+            "text": "Klinische Diagnose basierend auf Ghent-Kriterien. Patient erfuellt Major-Kriterien im kardiovaskulaeren und ophthalmologischen System."
+          }
+        ],
+        "clinicalStatus": {
+          "coding": [
+            {
+              "code": "active",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "code": "confirmed",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status"
+            }
+          ]
+        },
+        "severity": {
+          "coding": [
+            {
+              "code": "24484000",
+              "system": "http://snomed.info/sct",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+              "display": "Severe"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-3"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-patient-3-encounter-1"
+        },
+        "abatementString": "Lebenslange Erkrankung, keine Remission erwartet",
+        "recordedDate": "2025-03-10",
+        "recorder": {
+          "reference": "Practitioner/mii-exa-test-data-practitioner-physician-1"
+        },
+        "asserter": {
+          "reference": "Practitioner/mii-exa-test-data-practitioner-physician-2"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Condition"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Condition/mii-exa-test-data-patient-3-seltene-genetic-diagnosis-1",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "mii-exa-test-data-patient-3-seltene-genetic-diagnosis-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-genetic-diagnosis"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-ex-seltene-penetrance",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "HP:0003829",
+                  "system": "http://human-phenotype-ontology.org",
+                  "display": "Incomplete penetrance"
+                }
+              ]
+            }
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "782964007",
+                "display": "Genetic disease",
+                "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "154700",
+              "system": "http://omim.org",
+              "display": "Marfan syndrome"
+            },
+            {
+              "code": "19346006",
+              "system": "http://snomed.info/sct",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+              "display": "Marfan syndrome"
+            },
+            {
+              "code": "558",
+              "system": "http://www.orpha.net",
+              "display": "Marfan syndrome"
+            }
+          ],
+          "text": "Marfan-Syndrom, genetisch bestaetigt (FBN1-Variante)"
+        },
+        "onsetAge": {
+          "value": 28,
+          "unit": "years",
+          "system": "http://unitsofmeasure.org",
+          "code": "a"
+        },
+        "stage": [
+          {
+            "assessment": [
+              {
+                "reference": "ClinicalImpression/mii-exa-test-data-patient-3-seltene-clinical-impression-1"
+              }
+            ],
+            "type": {
+              "coding": [
+                {
+                  "code": "260998006",
+                  "system": "http://snomed.info/sct",
+                  "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+                  "display": "Clinical staging"
+                }
+              ]
+            }
+          }
+        ],
+        "evidence": [
+          {
+            "code": [
+              {
+                "coding": [
+                  {
+                    "code": "106221001",
+                    "system": "http://snomed.info/sct",
+                    "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+                    "display": "Genetic finding"
+                  }
+                ]
+              }
+            ],
+            "detail": [
+              {
+                "reference": "Observation/mii-exa-test-data-patient-3-molgen-variante-1"
+              },
+              {
+                "reference": "DiagnosticReport/mii-exa-test-data-patient-3-molgen-befundbericht-1"
+              }
+            ]
+          }
+        ],
+        "note": [
+          {
+            "text": "Pathogene Variante im FBN1-Gen molekulargenetisch nachgewiesen. Diagnose genetisch gesichert. Unvollstaendige Penetranz dokumentiert."
+          }
+        ],
+        "clinicalStatus": {
+          "coding": [
+            {
+              "code": "active",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "code": "confirmed",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status"
+            }
+          ]
+        },
+        "severity": {
+          "coding": [
+            {
+              "code": "6736007",
+              "system": "http://snomed.info/sct",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+              "display": "Moderate"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-3"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-patient-3-encounter-1"
+        },
+        "abatementString": "Chronisch, genetisch bedingt",
+        "recordedDate": "2025-04-15",
+        "recorder": {
+          "reference": "Practitioner/mii-exa-test-data-practitioner-physician-1"
+        },
+        "asserter": {
+          "reference": "Practitioner/mii-exa-test-data-practitioner-physician-2"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Condition"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Condition/mii-exa-test-data-patient-3-seltene-symptom-condition-1",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "mii-exa-test-data-patient-3-seltene-symptom-condition-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-symptom-condition"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://www.charite.de/fhir/sid/seltene-symptom",
+            "value": "SE-SYMPTOM-2025-001"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "problem-list-item",
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                "display": "Problem List Item"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "HP:0000098",
+              "system": "http://purl.obolibrary.org/obo/hp.owl",
+              "display": "Tall stature"
+            },
+            {
+              "code": "15456002",
+              "system": "http://snomed.info/sct",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+              "display": "Tall stature"
+            },
+            {
+              "code": "E34.4",
+              "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+              "display": "Konstitutioneller Hochwuchs"
+            },
+            {
+              "code": "MONDO:0007064",
+              "system": "http://purl.obolibrary.org/obo/mondo.owl",
+              "display": "Marfan syndrome"
+            }
+          ],
+          "text": "Hochwuchs bei Marfan-Syndrom"
+        },
+        "bodySite": [
+          {
+            "coding": [
+              {
+                "code": "38266002",
+                "system": "http://snomed.info/sct",
+                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+                "display": "Entire body"
+              }
+            ]
+          }
+        ],
+        "onsetAge": {
+          "value": 14,
+          "unit": "years",
+          "system": "http://unitsofmeasure.org",
+          "code": "a"
+        },
+        "stage": [
+          {
+            "summary": {
+              "coding": [
+                {
+                  "code": "HP:0012825",
+                  "system": "http://human-phenotype-ontology.org",
+                  "display": "Mild"
+                }
+              ]
+            }
+          }
+        ],
+        "evidence": [
+          {
+            "code": [
+              {
+                "coding": [
+                  {
+                    "code": "HP:0000098",
+                    "system": "http://human-phenotype-ontology.org",
+                    "display": "Tall stature"
+                  }
+                ]
+              }
+            ],
+            "detail": [
+              {
+                "reference": "Observation/mii-exa-test-data-patient-3-seltene-hpo-assessment-4"
+              }
+            ]
+          }
+        ],
+        "note": [
+          {
+            "text": "Hochwuchs seit der Adoleszenz, typisch fuer Marfan-Syndrom. 195 cm bei Alter 30."
+          }
+        ],
+        "clinicalStatus": {
+          "coding": [
+            {
+              "code": "active",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "display": "Active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "code": "confirmed",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "display": "Confirmed"
+            }
+          ]
+        },
+        "severity": {
+          "coding": [
+            {
+              "code": "HP:0012825",
+              "system": "http://human-phenotype-ontology.org",
+              "display": "Mild"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-3"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-patient-3-encounter-1"
+        },
+        "recordedDate": "2025-03-10"
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "ClinicalImpression"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/ClinicalImpression/mii-exa-test-data-patient-3-seltene-clinical-impression-1",
+      "resource": {
+        "resourceType": "ClinicalImpression",
+        "id": "mii-exa-test-data-patient-3-seltene-clinical-impression-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-clinical-impression"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://www.charite.de/fhir/sid/seltene-clinical-impression",
+            "value": "SE-CI-2025-001"
+          }
+        ],
+        "problem": [
+          {
+            "reference": "Condition/mii-exa-test-data-patient-3-seltene-clinical-diagnosis-1"
+          }
+        ],
+        "investigation": [
+          {
+            "code": {
+              "text": "Klinische Untersuchung und Bildgebung"
+            },
+            "item": [
+              {
+                "reference": "Observation/mii-exa-test-data-patient-3-seltene-hpo-assessment-1"
+              },
+              {
+                "reference": "Observation/mii-exa-test-data-patient-3-seltene-hpo-assessment-3"
+              },
+              {
+                "reference": "Observation/mii-exa-test-data-patient-3-seltene-hpo-assessment-4"
+              }
+            ]
+          }
+        ],
+        "finding": [
+          {
+            "itemCodeableConcept": {
+              "coding": [
+                {
+                  "code": "HP:0002616",
+                  "system": "http://human-phenotype-ontology.org",
+                  "display": "Aortic root aneurysm"
+                }
+              ]
+            },
+            "itemReference": {
+              "reference": "Observation/mii-exa-test-data-patient-3-seltene-hpo-assessment-1"
+            }
+          },
+          {
+            "itemCodeableConcept": {
+              "coding": [
+                {
+                  "code": "HP:0001083",
+                  "system": "http://human-phenotype-ontology.org",
+                  "display": "Ectopia lentis"
+                }
+              ]
+            },
+            "itemReference": {
+              "reference": "Observation/mii-exa-test-data-patient-3-seltene-hpo-assessment-3"
+            }
+          },
+          {
+            "itemCodeableConcept": {
+              "coding": [
+                {
+                  "code": "HP:0000098",
+                  "system": "http://human-phenotype-ontology.org",
+                  "display": "Tall stature"
+                }
+              ]
+            },
+            "itemReference": {
+              "reference": "Observation/mii-exa-test-data-patient-3-seltene-hpo-assessment-4"
+            }
+          }
+        ],
+        "supportingInfo": [
+          {
+            "reference": "DiagnosticReport/mii-exa-test-data-patient-3-molgen-befundbericht-1"
+          },
+          {
+            "reference": "Condition/mii-exa-test-data-patient-3-seltene-symptom-condition-1"
+          }
+        ],
+        "note": [
+          {
+            "text": "Erstvorstellung in der Marfan-Sprechstunde. Klinische Diagnose gesichert, molekulargenetische Bestaetigung ausstehend."
+          },
+          {
+            "text": "Therapieplan erstellt: Losartan 50mg taeglich, jaehrliche Echokardiographie."
+          }
+        ],
+        "status": "completed",
+        "code": {
+          "coding": [
+            {
+              "code": "389067005",
+              "system": "http://snomed.info/sct",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+              "display": "Community health procedure"
+            }
+          ]
+        },
+        "description": "Marfan-Sprechstunde: Erstvorstellung zur Abklaerung erblicher Bindegewebserkrankung",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-3"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-patient-3-encounter-1"
+        },
+        "effectiveDateTime": "2025-03-10",
+        "date": "2025-03-10",
+        "summary": "Patient mit V.a. Marfan-Syndrom vorgestellt. Aortenwurzeldilatation und Linsensubluxation nachgewiesen. Ghent-Kriterien erfuellt. Genetische Testung veranlasst."
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "FamilyMemberHistory"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/FamilyMemberHistory/mii-exa-test-data-patient-3-seltene-familienanamnese-1",
+      "resource": {
+        "resourceType": "FamilyMemberHistory",
+        "id": "mii-exa-test-data-patient-3-seltene-familienanamnese-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-familienanamnese"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/von-seltene-betroffen",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "373066001",
+                  "system": "http://snomed.info/sct",
+                  "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+                  "display": "Yes"
+                }
+              ]
+            }
+          }
+        ],
+        "ageAge": {
+          "value": 65,
+          "unit": "years",
+          "system": "http://unitsofmeasure.org",
+          "code": "a"
+        },
+        "condition": [
+          {
+            "extension": [
+              {
+                "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-ex-seltene-penetrance",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "code": "HP:0003829",
+                      "system": "http://human-phenotype-ontology.org",
+                      "display": "Incomplete penetrance"
+                    }
+                  ]
+                }
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "code": "Q87.4",
+                  "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+                  "display": "Marfan-Syndrom"
+                },
+                {
+                  "code": "558",
+                  "system": "http://www.orpha.net",
+                  "display": "Marfan syndrome"
+                },
+                {
+                  "code": "MONDO:0007064",
+                  "system": "http://purl.obolibrary.org/obo/mondo.owl",
+                  "display": "Marfan syndrome"
+                }
+              ]
+            },
+            "onsetAge": {
+              "value": 25,
+              "unit": "years",
+              "system": "http://unitsofmeasure.org",
+              "code": "a"
+            },
+            "contributedToDeath": false
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "I71.2",
+                  "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+                  "display": "Aneurysma der Aorta thoracica, ohne Angabe einer Ruptur"
+                },
+                {
+                  "code": "233985008",
+                  "system": "http://snomed.info/sct",
+                  "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+                  "display": "Aortic aneurysm"
+                }
+              ]
+            },
+            "onsetAge": {
+              "value": 50,
+              "unit": "years",
+              "system": "http://unitsofmeasure.org",
+              "code": "a"
+            },
+            "contributedToDeath": false
+          }
+        ],
+        "relationship": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "65656005",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+              "display": "Natural mother"
+            }
+          ]
+        },
+        "status": "completed",
+        "patient": {
+          "reference": "Patient/mii-exa-test-data-patient-3"
+        },
+        "sex": {
+          "coding": [
+            {
+              "code": "female",
+              "system": "http://hl7.org/fhir/administrative-gender"
+            }
+          ]
+        },
+        "bornDate": "1960",
+        "deceasedBoolean": false
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "MedicationRequest"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/MedicationRequest/mii-exa-test-data-patient-3-seltene-therapieempfehlung-1",
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "mii-exa-test-data-patient-3-seltene-therapieempfehlung-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-therapieempfehlung"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-ex-seltene-empfehlung-prioritaet",
+            "valuePositiveInt": 1
+          },
+          {
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "1A",
+                  "display": "Evidenzgrad 1A"
+                }
+              ]
+            },
+            "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-ex-seltene-empfehlung-evidenzgraduierung"
+          },
+          {
+            "valueIdentifier": {
+              "system": "https://doi.org",
+              "value": "10.1016/j.ejphar.2015.03.048"
+            },
+            "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-ex-seltene-empfehlung-publikation"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "prevention-medication",
+                "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/CodeSystem/mii-cs-seltene-therapieempfehlung-strategie",
+                "display": "Präventive Medikation"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "code": "symptomatic",
+                "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/CodeSystem/mii-cs-seltene-therapieempfehlung-typ",
+                "display": "Symptomatisch"
+              }
+            ]
+          }
+        ],
+        "reasonReference": [
+          {
+            "reference": "Condition/mii-exa-test-data-patient-3-seltene-clinical-diagnosis-1"
+          }
+        ],
+        "dosageInstruction": [
+          {
+            "timing": {
+              "repeat": {
+                "frequency": 1,
+                "period": 1,
+                "periodUnit": "d"
+              }
+            },
+            "doseAndRate": [
+              {
+                "doseQuantity": {
+                  "value": 50,
+                  "unit": "mg",
+                  "system": "http://unitsofmeasure.org",
+                  "code": "mg"
+                }
+              }
+            ],
+            "text": "50mg 1x taeglich"
+          }
+        ],
+        "status": "active",
+        "intent": "proposal",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "code": "C09CA01",
+              "system": "http://fhir.de/CodeSystem/bfarm/atc",
+              "display": "Losartan"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-3"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-patient-3-encounter-1"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "ServiceRequest"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/ServiceRequest/mii-exa-test-data-patient-3-seltene-therapie-nicht-med-1",
+      "resource": {
+        "resourceType": "ServiceRequest",
+        "id": "mii-exa-test-data-patient-3-seltene-therapie-nicht-med-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-therapieempfehlung-nicht-medikamentoes"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-ex-seltene-empfehlung-prioritaet",
+            "valuePositiveInt": 2
+          },
+          {
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "2B",
+                  "display": "Evidenzgrad 2B"
+                }
+              ]
+            },
+            "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-ex-seltene-empfehlung-evidenzgraduierung"
+          },
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-ex-seltene-empfehlung-publikation",
+            "valueString": "ESC Guidelines on Marfan Syndrome 2024"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "early-detection",
+                "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/CodeSystem/mii-cs-seltene-therapieempfehlung-strategie",
+                "display": "Früherkennung"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "code": "symptomatic",
+                "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/CodeSystem/mii-cs-seltene-therapieempfehlung-typ",
+                "display": "Symptomatisch"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "312851005",
+              "system": "http://snomed.info/sct",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+              "display": "Screening for disorder"
+            },
+            {
+              "code": "3-052",
+              "system": "http://fhir.de/CodeSystem/bfarm/ops",
+              "display": "Transthorakale Echokardiographie"
+            },
+            {
+              "code": "34552-0",
+              "system": "http://loinc.org",
+              "display": "Cardiology Diagnostic study"
+            }
+          ],
+          "text": "Jaehrliche kardiologische Kontrolle mittels Echokardiographie bei Marfan-Syndrom"
+        },
+        "occurrenceTiming": {
+          "repeat": {
+            "frequency": 1,
+            "period": 1,
+            "periodUnit": "a"
+          }
+        },
+        "performer": [
+          {
+            "reference": "Practitioner/mii-exa-test-data-practitioner-physician-2"
+          }
+        ],
+        "reasonCode": [
+          {
+            "coding": [
+              {
+                "code": "19346006",
+                "system": "http://snomed.info/sct",
+                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+                "display": "Marfan syndrome"
+              }
+            ]
+          }
+        ],
+        "reasonReference": [
+          {
+            "reference": "Condition/mii-exa-test-data-patient-3-seltene-clinical-diagnosis-1"
+          }
+        ],
+        "supportingInfo": [
+          {
+            "reference": "DiagnosticReport/mii-exa-test-data-patient-3-molgen-befundbericht-1"
+          }
+        ],
+        "note": [
+          {
+            "text": "Jaehrliche Echokardiographie zur Frueherkennung von Aortenwurzeldilatation empfohlen gemaess aktueller Leitlinie."
+          }
+        ],
+        "intent": "proposal",
+        "status": "draft",
+        "priority": "routine",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-3"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-patient-3-encounter-1"
+        },
+        "requester": {
+          "reference": "Practitioner/mii-exa-test-data-practitioner-physician-1"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "ServiceRequest"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/ServiceRequest/mii-exa-test-data-patient-3-seltene-studieneinschluss-1",
+      "resource": {
+        "resourceType": "ServiceRequest",
+        "id": "mii-exa-test-data-patient-3-seltene-studieneinschluss-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-studieneinschluss-anfrage"
+          ]
+        },
+        "extension": [
+          {
+            "valueCodeableConcept": {
+              "text": "Patient erfuellt Einschlusskriterien der Studie"
+            },
+            "url": "http://hl7.org/fhir/StructureDefinition/request-statusReason"
+          },
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-ex-seltene-empfehlung-prioritaet",
+            "valuePositiveInt": 1
+          },
+          {
+            "valueIdentifier": {
+              "system": "https://doi.org",
+              "value": "10.1016/j.ahj.2020.09.005"
+            },
+            "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-ex-seltene-empfehlung-publikation"
+          }
+        ],
+        "reasonReference": [
+          {
+            "reference": "Condition/mii-exa-test-data-patient-3-seltene-clinical-diagnosis-1"
+          }
+        ],
+        "supportingInfo": [
+          {
+            "reference": "DiagnosticReport/mii-exa-test-data-patient-3-molgen-befundbericht-1"
+          }
+        ],
+        "intent": "proposal",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "110465008",
+                "display": "Clinical trial (procedure)"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "702475000",
+              "display": "Referral to clinical trial (procedure)"
+            }
+          ]
+        },
+        "status": "active",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-3"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-patient-3-encounter-1"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "RequestGroup"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/RequestGroup/mii-exa-test-data-patient-3-seltene-therapie-kombination-1",
+      "resource": {
+        "resourceType": "RequestGroup",
+        "id": "mii-exa-test-data-patient-3-seltene-therapie-kombination-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-therapieempfehlung-kombination"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-ex-seltene-empfehlung-prioritaet",
+            "valuePositiveInt": 1
+          },
+          {
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "1A",
+                  "display": "Evidenzgrad 1A"
+                }
+              ]
+            },
+            "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-ex-seltene-empfehlung-evidenzgraduierung"
+          },
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-ex-seltene-empfehlung-publikation",
+            "valueString": "Marfan-Leitlinie DGK 2024"
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://www.charite.de/fhir/sid/seltene-kombination",
+            "value": "SE-KOMBI-2025-001"
+          }
+        ],
+        "action": [
+          {
+            "resource": {
+              "reference": "MedicationRequest/mii-exa-test-data-patient-3-seltene-therapieempfehlung-1"
+            }
+          }
+        ],
+        "status": "draft",
+        "intent": "proposal",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-3"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "CarePlan"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/CarePlan/mii-exa-test-data-patient-3-seltene-therapieplan-1",
+      "resource": {
+        "resourceType": "CarePlan",
+        "id": "mii-exa-test-data-patient-3-seltene-therapieplan-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-therapieplan"
+          ]
+        },
+        "supportingInfo": [
+          {
+            "reference": "DiagnosticReport/mii-exa-test-data-patient-3-molgen-befundbericht-1"
+          }
+        ],
+        "activity": [
+          {
+            "detail": {
+              "status": "not-started",
+              "statusReason": {
+                "coding": [
+                  {
+                    "code": "no-target",
+                    "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/CodeSystem/mii-cs-seltene-empfehlung-status-begruendung",
+                    "display": "Kein therapeutisches Target identifiziert"
+                  }
+                ]
+              }
+            },
+            "reference": {
+              "reference": "MedicationRequest/mii-exa-test-data-patient-3-seltene-therapieempfehlung-1"
+            }
+          },
+          {
+            "detail": {
+              "status": "scheduled"
+            },
+            "reference": {
+              "reference": "ServiceRequest/mii-exa-test-data-patient-3-seltene-therapie-nicht-med-1"
+            }
+          },
+          {
+            "reference": {
+              "reference": "ServiceRequest/mii-exa-test-data-patient-3-seltene-studieneinschluss-1"
+            }
+          }
+        ],
+        "status": "draft",
+        "intent": "proposal",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-3"
+        },
+        "created": "2025-03-10",
+        "description": "Therapieplan fuer Patient mit Marfan-Syndrom: Medikamentoese Therapie mit Losartan, kardiologische Frueherkennung und Studieneinschluss"
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Procedure"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Procedure/mii-exa-test-data-patient-3-seltene-therapie-durchgefuehrt-1",
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "mii-exa-test-data-patient-3-seltene-therapie-durchgefuehrt-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-therapie-durchgefuehrt"
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/CodeSystem/mii-cs-seltene-narse-therapietyp",
+              "code": "pharmakotherapie",
+              "display": "Pharmakotherapie"
+            }
+          ]
+        },
+        "performedPeriod": {
+          "start": "2025-03-15",
+          "end": "2025-09-15"
+        },
+        "status": "completed",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-3"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-3-seltene-bmi-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-3-seltene-bmi-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-bodymassindex"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "vital-signs",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "display": "Vital Signs"
+              }
+            ]
+          }
+        ],
+        "valueQuantity": {
+          "unit": "kg/m2",
+          "system": "http://unitsofmeasure.org",
+          "code": "kg/m2",
+          "value": 19.2
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "39156-5",
+              "display": "Body mass index (BMI) [Ratio]"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-3"
+        },
+        "effectiveDateTime": "2025-03-10T10:00:00+01:00"
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-3-seltene-kopfumfang-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-3-seltene-kopfumfang-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-kopfumfang"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "vital-signs",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "display": "Vital Signs"
+              }
+            ]
+          }
+        ],
+        "valueQuantity": {
+          "unit": "cm",
+          "system": "http://unitsofmeasure.org",
+          "code": "cm",
+          "value": 57.5
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "9843-4",
+              "display": "Head Occipital-frontal circumference"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-3"
+        },
+        "effectiveDateTime": "2025-03-10T10:00:00+01:00"
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-3-seltene-hueftumfang-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-3-seltene-hueftumfang-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-hueftumfang"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "vital-signs",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "display": "Vital Signs"
+              }
+            ]
+          }
+        ],
+        "valueQuantity": {
+          "unit": "cm",
+          "system": "http://unitsofmeasure.org",
+          "code": "cm",
+          "value": 88
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "56063-1",
+              "display": "Circumference.at maximal protrusion of gluteus muscles Pelvis"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-3"
+        },
+        "effectiveDateTime": "2025-03-10T10:00:00+01:00"
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-3-seltene-taillenumfang-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-3-seltene-taillenumfang-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-taillenumfang"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "vital-signs",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "display": "Vital Signs"
+              }
+            ]
+          }
+        ],
+        "valueQuantity": {
+          "unit": "cm",
+          "system": "http://unitsofmeasure.org",
+          "code": "cm",
+          "value": 74
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8280-0",
+              "display": "Waist Circumference at umbilicus by Tape measure"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-3"
+        },
+        "effectiveDateTime": "2025-03-10T10:00:00+01:00"
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-3-seltene-blutgruppe-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-3-seltene-blutgruppe-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-blutgruppe|2026.0.1"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "882-1",
+              "system": "http://loinc.org",
+              "display": "ABO and Rh group [Type] in Blood"
+            },
+            {
+              "code": "883-9",
+              "system": "http://loinc.org",
+              "display": "ABO group [Type] in Blood"
+            }
+          ]
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "LA21325-8",
+              "system": "http://loinc.org",
+              "display": "A Pos"
+            },
+            {
+              "code": "278149003",
+              "system": "http://snomed.info/sct",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+              "display": "Blood group A Rh(D) positive (finding)"
+            }
+          ],
+          "text": "A Rh(D) positiv"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-3"
+        },
+        "effectiveDateTime": "2025-03-10T10:00:00+01:00"
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-3-seltene-hpo-assessment-4",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-3-seltene-hpo-assessment-4",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-hpo-assessment"
+          ]
+        },
+        "effectivePeriod": {
+          "start": "2011-01-01",
+          "end": "2025-03-10"
+        },
+        "note": [
+          {
+            "text": "Hochwuchs seit Adoleszenz, typisch fuer Marfan-Syndrom. Koerpergroesse 195 cm."
+          }
+        ],
+        "component": [
+          {
+            "interpretation": [
+              {
+                "coding": [
+                  {
+                    "code": "unchanged",
+                    "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/CodeSystem/mii-cs-seltene-hpo-change-status",
+                    "display": "Unveraendert"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "code": "260411009",
+                  "system": "http://snomed.info/sct",
+                  "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+                  "display": "Presence findings"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "LA9633-4",
+                  "system": "http://loinc.org",
+                  "display": "Present"
+                }
+              ]
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "HP:0012824",
+                  "system": "http://human-phenotype-ontology.org",
+                  "display": "Severity"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "HP:0012825",
+                  "system": "http://human-phenotype-ontology.org",
+                  "display": "Mild"
+                }
+              ]
+            }
+          }
+        ],
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "HP:0000098",
+              "system": "http://human-phenotype-ontology.org",
+              "display": "Tall stature"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-3"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-patient-3-encounter-1"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Condition"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Condition/mii-exa-test-data-patient-3-seltene-symptom-condition-2",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "mii-exa-test-data-patient-3-seltene-symptom-condition-2",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-symptom-condition"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://www.charite.de/fhir/sid/seltene-symptom",
+            "value": "SE-SYMPTOM-2025-002"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "problem-list-item",
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                "display": "Problem List Item"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "HP:0002616",
+              "system": "http://purl.obolibrary.org/obo/hp.owl",
+              "display": "Aortic root aneurysm"
+            },
+            {
+              "code": "128599005",
+              "system": "http://snomed.info/sct",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+              "display": "Structural disorder of heart"
+            }
+          ],
+          "text": "Aortenwurzeldilatation"
+        },
+        "bodySite": [
+          {
+            "coding": [
+              {
+                "code": "57034009",
+                "system": "http://snomed.info/sct",
+                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+                "display": "Aortic root structure"
+              }
+            ]
+          }
+        ],
+        "stage": [
+          {
+            "summary": {
+              "coding": [
+                {
+                  "code": "HP:0012828",
+                  "system": "http://human-phenotype-ontology.org",
+                  "display": "Severe"
+                }
+              ]
+            }
+          }
+        ],
+        "evidence": [
+          {
+            "code": [
+              {
+                "coding": [
+                  {
+                    "code": "HP:0002616",
+                    "system": "http://human-phenotype-ontology.org",
+                    "display": "Aortic root aneurysm"
+                  }
+                ]
+              }
+            ],
+            "detail": [
+              {
+                "reference": "Observation/mii-exa-test-data-patient-3-seltene-hpo-assessment-1"
+              }
+            ]
+          }
+        ],
+        "note": [
+          {
+            "text": "Nach operativer Korrektur inaktiv."
+          }
+        ],
+        "clinicalStatus": {
+          "coding": [
+            {
+              "code": "inactive",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "display": "Inactive"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "code": "confirmed",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "display": "Confirmed"
+            }
+          ]
+        },
+        "severity": {
+          "coding": [
+            {
+              "code": "HP:0012828",
+              "system": "http://human-phenotype-ontology.org",
+              "display": "Severe"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-3"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-patient-3-encounter-1"
+        },
+        "onsetDateTime": "2024-06-15",
+        "abatementDateTime": "2025-06-01",
+        "recordedDate": "2024-06-15"
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "FamilyMemberHistory"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/FamilyMemberHistory/mii-exa-test-data-patient-3-seltene-familienanamnese-2",
+      "resource": {
+        "resourceType": "FamilyMemberHistory",
+        "id": "mii-exa-test-data-patient-3-seltene-familienanamnese-2",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-familienanamnese"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/von-seltene-betroffen",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "373067005",
+                  "system": "http://snomed.info/sct",
+                  "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+                  "display": "No"
+                }
+              ]
+            }
+          }
+        ],
+        "ageAge": {
+          "value": 68,
+          "unit": "years",
+          "system": "http://unitsofmeasure.org",
+          "code": "a"
+        },
+        "deceasedAge": {
+          "value": 72,
+          "unit": "years",
+          "system": "http://unitsofmeasure.org",
+          "code": "a"
+        },
+        "condition": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "I25.1",
+                  "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+                  "display": "Atherosklerotische Herzkrankheit"
+                }
+              ]
+            },
+            "onsetAge": {
+              "value": 60,
+              "unit": "years",
+              "system": "http://unitsofmeasure.org",
+              "code": "a"
+            },
+            "contributedToDeath": true
+          }
+        ],
+        "relationship": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "66839005",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+              "display": "Natural father"
+            }
+          ]
+        },
+        "status": "completed",
+        "patient": {
+          "reference": "Patient/mii-exa-test-data-patient-3"
+        },
+        "sex": {
+          "coding": [
+            {
+              "code": "male",
+              "system": "http://hl7.org/fhir/administrative-gender"
+            }
+          ]
+        },
+        "bornDate": "1957"
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Procedure"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Procedure/mii-exa-test-data-patient-3-seltene-therapie-durchgefuehrt-2",
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "mii-exa-test-data-patient-3-seltene-therapie-durchgefuehrt-2",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-therapie-durchgefuehrt"
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/CodeSystem/mii-cs-seltene-narse-therapietyp",
+              "code": "sonstiges",
+              "display": "Sonstiges"
+            }
+          ]
+        },
+        "status": "completed",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-3"
+        },
+        "performedDateTime": "2025-05-20"
       }
     },
     {

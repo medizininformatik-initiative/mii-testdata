@@ -27,14 +27,27 @@
         "display": "Consider alternative medication"
       }
     ],
-    "text": "Alternative Medikation in Erwägung ziehen"
+    "text": "Alternative Medikation in Erwaegung ziehen"
   },
   "status": "requested",
   "intent": "proposal",
   "for": {
     "reference": "Patient/mii-exa-test-data-patient-3"
   },
+  "encounter": {
+    "reference": "Encounter/mii-exa-test-data-patient-3-encounter-1"
+  },
   "reasonReference": {
     "reference": "Observation/mii-exa-test-data-patient-3-molgen-therapeutische-implikation-1"
+  },
+  "reasonCode": {
+    "coding": [
+      {
+        "code": "447886005",
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+        "display": "Adenocarcinoma of anorectum (disorder)"
+      }
+    ]
   }
 }

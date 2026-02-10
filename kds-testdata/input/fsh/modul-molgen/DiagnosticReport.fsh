@@ -4,30 +4,31 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/St
 Usage: #example
 Description: "DiagnosticReport: Molekulargenetischer Befundbericht mit BRAF-Mutation"
 * insert TestDataLabel
-//* meta.profile[0] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/molekulargenetischer-befundbericht|1.0.0"
 * meta.profile[+] = "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomics-report"
 * extension[recommended-action][+].valueReference = Reference(mii-exa-test-data-patient-3-molgen-medikationsempfehlung-1)
 * extension[recommended-action][+].valueReference = Reference(mii-exa-test-data-patient-3-molgen-folgemassnahme-1)
 * extension[supportingInfo].valueReference = Reference(mii-exa-test-data-patient-3-molgen-family-member-history-1)
+* extension[genomic-study].url = "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-reference"
+* extension[genomic-study].valueReference = Reference(mii-exa-test-data-patient-3-molgen-genomic-study-1)
+* extension[genomic-risk-assessment].url = "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-risk-assessment"
+* extension[genomic-risk-assessment].valueReference = Reference(mii-exa-test-data-patient-3-molgen-polygener-risiko-score-1)
 * basedOn = Reference(mii-exa-test-data-patient-3-molgen-anforderung-1)
 * status = $diagnostic-report-status#final
 * category[Genetics] = $v2-0074#GE "Genetics"
 * code = $loinc#51969-4 "Genetic analysis report"
 * subject = Reference(mii-exa-test-data-patient-3)
-//* performer = Reference(mii-exa-molgen-practitioner-lab)
+* encounter = Reference(mii-exa-test-data-patient-3-encounter-1)
+* issued = "2022-04-12T10:30:00+02:00"
+* performer = Reference(mii-exa-test-data-practitioner-physician-1)
 * specimen = Reference(mii-exa-test-data-patient-3-specimen-1)
-//* result[gen-grouper] = Reference(mii-exa-molgen-gruppierung-beobachtungen-1)
-// TODO: Removed result slices in molgen 2026.0.x: overall (ergebnis-zusammenfassung deleted),
-//   region-studied (refactor to genomic-study), tumor-mutation-burden, microsatellite-instability
-// * result[overall] = Reference(mii-exa-test-data-patient-3-molgen-ergebnis-zusammenfassung-1)
 * result[diagnostic-implication] = Reference(mii-exa-test-data-patient-3-molgen-diagnostische-implikation-1)
 * result[therapeutic-implication] = Reference(mii-exa-test-data-patient-3-molgen-therapeutische-implikation-1)
 * result[variant] = Reference(mii-exa-test-data-patient-3-molgen-variante-1)
-// * result[region-studied] = Reference(mii-exa-test-data-patient-3-molgen-untersuchte-region-1)
 * result[genotype] = Reference(mii-exa-test-data-patient-3-molgen-genotyp-1)
-// * result[tumor-mutation-burden] = Reference(mii-exa-test-data-patient-3-molgen-mutationslast-1)
-// * result[microsatellite-instability] = Reference(mii-exa-test-data-patient-3-molgen-msi-1)
-* conclusion = "BRAF p.V600E Mutation liegt vor. Bitte Therapieoption mit einem BRAF-Inhibitor prüfen."
+* result[+] = Reference(mii-exa-test-data-patient-3-molgen-mutationslast-1)
+* result[+] = Reference(mii-exa-test-data-patient-3-molgen-msi-1)
+* conclusion = "BRAF p.V600E Mutation liegt vor. Bitte Therapieoption mit einem BRAF-Inhibitor pruefen."
+* conclusionCode = $sct#10828004 "Positive (qualifier value)"
 
 // Patient-4
 Instance: mii-exa-test-data-patient-4-molgen-befundbericht-1
@@ -37,34 +38,19 @@ Description: "DiagnosticReport: Molekulargenetischer Befundbericht Magenkarzinom
 * insert TestDataLabel
 * meta.profile[+] = "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomics-report"
 * extension[supportingInfo].valueReference = Reference(mii-exa-test-data-patient-4-molgen-family-member-history-1)
+* extension[genomic-study].url = "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-reference"
+* extension[genomic-study].valueReference = Reference(mii-exa-test-data-patient-4-molgen-genomic-study-1)
 * basedOn = Reference(mii-exa-test-data-patient-4-molgen-anforderung-1)
 * status = $diagnostic-report-status#final
 * category[Genetics] = $v2-0074#GE "Genetics"
 * code[+] = $loinc#51969-4 "Genetic analysis report"
 * subject = Reference(mii-exa-test-data-patient-4)
+* encounter = Reference(mii-exa-test-data-patient-4-encounter-1)
+* issued = "2022-12-05T14:00:00+01:00"
 * performer = Reference(mii-exa-test-data-practitioner-physician-2)
+* resultsInterpreter = Reference(mii-exa-test-data-practitioner-physician-2)
 * specimen[0] = Reference(mii-exa-test-data-patient-4-specimen-1)
 * specimen[1] = Reference(mii-exa-test-data-patient-4-specimen-2)
-//* result[gen-grouper] = Reference(mii-exa-molgen-gruppierung-beobachtungen-2-nipbl)
 * result[diagnostic-implication] = Reference(mii-exa-test-data-patient-4-molgen-diagnostische-implikation-1)
 * result[variant] = Reference(mii-exa-test-data-patient-4-molgen-variante-1)
-// TODO: region-studied removed in molgen 2026.0.x, refactor to genomic-study
-// * result[region-studied][+] = Reference(mii-exa-test-data-patient-4-molgen-untersuchte-region-1)
-// * result[region-studied][+] = Reference(mii-exa-test-data-patient-4-molgen-untersuchte-region-2)
-// * result[region-studied][+] = Reference(mii-exa-test-data-patient-4-molgen-untersuchte-region-3)
-// * result[region-studied][+] = Reference(mii-exa-test-data-patient-4-molgen-untersuchte-region-4)
-// * result[region-studied][+] = Reference(mii-exa-test-data-patient-4-molgen-untersuchte-region-5)
-// * result[region-studied][+] = Reference(mii-exa-test-data-patient-4-molgen-untersuchte-region-6)
-// * result[region-studied][+] = Reference(mii-exa-test-data-patient-4-molgen-untersuchte-region-7)
-// * result[region-studied][+] = Reference(mii-exa-test-data-patient-4-molgen-untersuchte-region-8)
-// * result[region-studied][+] = Reference(mii-exa-test-data-patient-4-molgen-untersuchte-region-9)
-// * result[region-studied][+] = Reference(mii-exa-test-data-patient-4-molgen-untersuchte-region-10)
-// * result[region-studied][+] = Reference(mii-exa-test-data-patient-4-molgen-untersuchte-region-11)
-// * result[region-studied][+] = Reference(mii-exa-test-data-patient-4-molgen-untersuchte-region-12)
-// * result[region-studied][+] = Reference(mii-exa-test-data-patient-4-molgen-untersuchte-region-13)
-// * result[region-studied][+] = Reference(mii-exa-test-data-patient-4-molgen-untersuchte-region-14)
-// * result[region-studied][+] = Reference(mii-exa-test-data-patient-4-molgen-untersuchte-region-15)
-// * result[region-studied][+] = Reference(mii-exa-test-data-patient-4-molgen-untersuchte-region-16)
-// * result[region-studied][+] = Reference(mii-exa-test-data-patient-4-molgen-untersuchte-region-17)
-// * result[region-studied][+] = Reference(mii-exa-test-data-patient-4-molgen-untersuchte-region-18)
 * conclusion = "Nachweis der pathogenen Variante im CTNNA1-Gen."

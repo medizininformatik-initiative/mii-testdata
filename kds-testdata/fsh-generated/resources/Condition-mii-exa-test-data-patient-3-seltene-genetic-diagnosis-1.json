@@ -1,0 +1,157 @@
+{
+  "resourceType": "Condition",
+  "id": "mii-exa-test-data-patient-3-seltene-genetic-diagnosis-1",
+  "meta": {
+    "security": [
+      {
+        "code": "HTEST",
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "display": "test health data"
+      }
+    ],
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-genetic-diagnosis"
+    ]
+  },
+  "extension": [
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-ex-seltene-penetrance",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "HP:0003829",
+            "system": "http://human-phenotype-ontology.org",
+            "display": "Incomplete penetrance"
+          }
+        ]
+      }
+    }
+  ],
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "782964007",
+          "display": "Genetic disease",
+          "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "code": "154700",
+        "system": "http://omim.org",
+        "display": "Marfan syndrome"
+      },
+      {
+        "code": "19346006",
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+        "display": "Marfan syndrome"
+      },
+      {
+        "code": "558",
+        "system": "http://www.orpha.net",
+        "display": "Marfan syndrome"
+      }
+    ],
+    "text": "Marfan-Syndrom, genetisch bestaetigt (FBN1-Variante)"
+  },
+  "onsetAge": {
+    "value": 28,
+    "unit": "years",
+    "system": "http://unitsofmeasure.org",
+    "code": "a"
+  },
+  "stage": [
+    {
+      "assessment": [
+        {
+          "reference": "ClinicalImpression/mii-exa-test-data-patient-3-seltene-clinical-impression-1"
+        }
+      ],
+      "type": {
+        "coding": [
+          {
+            "code": "260998006",
+            "system": "http://snomed.info/sct",
+            "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+            "display": "Clinical staging"
+          }
+        ]
+      }
+    }
+  ],
+  "evidence": [
+    {
+      "code": [
+        {
+          "coding": [
+            {
+              "code": "106221001",
+              "system": "http://snomed.info/sct",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+              "display": "Genetic finding"
+            }
+          ]
+        }
+      ],
+      "detail": [
+        {
+          "reference": "Observation/mii-exa-test-data-patient-3-molgen-variante-1"
+        },
+        {
+          "reference": "DiagnosticReport/mii-exa-test-data-patient-3-molgen-befundbericht-1"
+        }
+      ]
+    }
+  ],
+  "note": [
+    {
+      "text": "Pathogene Variante im FBN1-Gen molekulargenetisch nachgewiesen. Diagnose genetisch gesichert. Unvollstaendige Penetranz dokumentiert."
+    }
+  ],
+  "clinicalStatus": {
+    "coding": [
+      {
+        "code": "active",
+        "system": "http://terminology.hl7.org/CodeSystem/condition-clinical"
+      }
+    ]
+  },
+  "verificationStatus": {
+    "coding": [
+      {
+        "code": "confirmed",
+        "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status"
+      }
+    ]
+  },
+  "severity": {
+    "coding": [
+      {
+        "code": "6736007",
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+        "display": "Moderate"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/mii-exa-test-data-patient-3"
+  },
+  "encounter": {
+    "reference": "Encounter/mii-exa-test-data-patient-3-encounter-1"
+  },
+  "abatementString": "Chronisch, genetisch bedingt",
+  "recordedDate": "2025-04-15",
+  "recorder": {
+    "reference": "Practitioner/mii-exa-test-data-practitioner-physician-1"
+  },
+  "asserter": {
+    "reference": "Practitioner/mii-exa-test-data-practitioner-physician-2"
+  }
+}

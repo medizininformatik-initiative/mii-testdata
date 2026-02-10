@@ -1,0 +1,82 @@
+{
+  "resourceType": "Observation",
+  "id": "mii-exa-test-data-patient-1-pro-eq5d5l-profile",
+  "meta": {
+    "security": [
+      {
+        "code": "HTEST",
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "display": "test health data"
+      }
+    ],
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-observation-eq5d5l-profile"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "https://www.charite.de/fhir/sid/pro-observation-id",
+      "value": "PRO-OBS-EQ5D-PROF-PAT1-001"
+    }
+  ],
+  "performer": [
+    {
+      "reference": "Patient/mii-exa-test-data-patient-1"
+    }
+  ],
+  "interpretation": [
+    {
+      "coding": [
+        {
+          "code": "N",
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "display": "Normal"
+        }
+      ],
+      "text": "Mild problems in usual activities and pain/discomfort"
+    }
+  ],
+  "note": [
+    {
+      "text": "Profile string: Mobility=1, Self-care=1, Usual Activities=2, Pain/Discomfort=1, Anxiety/Depression=2"
+    }
+  ],
+  "derivedFrom": [
+    {
+      "reference": "QuestionnaireResponse/mii-exa-test-data-patient-1-pro-phq9-response"
+    }
+  ],
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/workflow-instantiatesCanonical",
+      "valueCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ObservationDefinition/mii-obsdef-pro-score-eq5d5l-profile"
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue",
+        "code": "euroqol-eq5d5l-profile",
+        "display": "EuroQol EQ-5D-5L Profile"
+      }
+    ]
+  },
+  "method": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "73041000052103",
+        "display": "EuroQoL five dimension five level questionnaire"
+      }
+    ]
+  },
+  "status": "final",
+  "subject": {
+    "reference": "Patient/mii-exa-test-data-patient-1"
+  },
+  "encounter": {
+    "reference": "Encounter/mii-exa-test-data-patient-1-encounter-1"
+  },
+  "effectiveDateTime": "2024-03-15T11:00:00+01:00",
+  "valueString": "11212"
+}

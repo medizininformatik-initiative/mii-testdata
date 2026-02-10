@@ -80,7 +80,7 @@
     },
     {
       "packageId": "de.medizininformatikinitiative.kerndatensatz.icu",
-      "version": "2026.0.1-rc1",
+      "version": "2026.0.x",
       "uri": "http://fhir.org/packages/de.medizininformatikinitiative.kerndatensatz.icu/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.icu",
       "id": "de_medizininformatikinitiative_kerndatensatz_icu"
     },
@@ -119,6 +119,36 @@
       "version": "2026.0.x",
       "uri": "http://fhir.org/packages/de.medizininformatikinitiative.kerndatensatz.onkologie/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.onkologie",
       "id": "de_medizininformatikinitiative_kerndatensatz_onkologie"
+    },
+    {
+      "packageId": "de.medizininformatikinitiative.kerndatensatz.seltene",
+      "version": "2026.0.x",
+      "uri": "http://fhir.org/packages/de.medizininformatikinitiative.kerndatensatz.seltene/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.seltene",
+      "id": "de_medizininformatikinitiative_kerndatensatz_seltene"
+    },
+    {
+      "packageId": "de.medizininformatikinitiative.kerndatensatz.mtb",
+      "version": "2026.0.x",
+      "uri": "http://fhir.org/packages/de.medizininformatikinitiative.kerndatensatz.mtb/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.mtb",
+      "id": "de_medizininformatikinitiative_kerndatensatz_mtb"
+    },
+    {
+      "packageId": "de.medizininformatikinitiative.kerndatensatz.pros",
+      "version": "2026.0.x",
+      "uri": "http://fhir.org/packages/de.medizininformatikinitiative.kerndatensatz.pros/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.pros",
+      "id": "de_medizininformatikinitiative_kerndatensatz_pros"
+    },
+    {
+      "packageId": "hl7.fhir.uv.genomics-reporting",
+      "version": "3.0.0",
+      "uri": "http://hl7.org/fhir/uv/genomics-reporting/ImplementationGuide/hl7.fhir.uv.genomics-reporting",
+      "id": "hl7_fhir_uv_genomics_reporting"
+    },
+    {
+      "packageId": "hl7.fhir.uv.sdc",
+      "version": "3.0.0",
+      "uri": "http://hl7.org/fhir/uv/sdc/ImplementationGuide/hl7.fhir.uv.sdc",
+      "id": "hl7_fhir_uv_sdc"
     },
     {
       "packageId": "de.basisprofil.r4",
@@ -1513,6 +1543,30 @@
       },
       {
         "reference": {
+          "reference": "Observation/mii-exa-test-data-pat1-pro-p29-pain-int-tscore"
+        },
+        "name": "mii-exa-test-data-pat1-pro-p29-pain-int-tscore",
+        "description": "PRO Observation: PROMIS-29 Pain Interference T-Score for Patient 1",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-pat1-pro-p29-phys-fn-tscore"
+        },
+        "name": "mii-exa-test-data-pat1-pro-p29-phys-fn-tscore",
+        "description": "PRO Observation: PROMIS-29 Physical Function T-Score for Patient 1",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-pat1-pro-p29-sleep-tscore"
+        },
+        "name": "mii-exa-test-data-pat1-pro-p29-sleep-tscore",
+        "description": "PRO Observation: PROMIS-29 Sleep Disturbance T-Score for Patient 1",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Patient/mii-exa-test-data-patient-1"
         },
         "name": "mii-exa-test-data-patient-1",
@@ -1708,6 +1762,134 @@
         },
         "name": "mii-exa-test-data-patient-1-medstatement-3",
         "description": "MedicationStatement: Propofol 5 mg/min intravenös",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-pro-bdi-ii-score"
+        },
+        "name": "mii-exa-test-data-patient-1-pro-bdi-ii-score",
+        "description": "PRO Observation: BDI-II Total Score for Patient 1 (mild depression, score 12)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-pro-eq5d5l-index"
+        },
+        "name": "mii-exa-test-data-patient-1-pro-eq5d5l-index",
+        "description": "PRO Observation: EQ-5D-5L Index Value for Patient 1",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-pro-eq5d5l-profile"
+        },
+        "name": "mii-exa-test-data-patient-1-pro-eq5d5l-profile",
+        "description": "PRO Observation: EQ-5D-5L Profile String for Patient 1",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-pro-eq5d5l-vas"
+        },
+        "name": "mii-exa-test-data-patient-1-pro-eq5d5l-vas",
+        "description": "PRO Observation: EQ-5D-5L VAS Score for Patient 1",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "QuestionnaireResponse/mii-exa-test-data-patient-1-pro-phq9-response"
+        },
+        "name": "mii-exa-test-data-patient-1-pro-phq9-response",
+        "description": "PRO QuestionnaireResponse: PHQ-9 for Patient 1 (mild depression, score 8)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-pro-phq9-score"
+        },
+        "name": "mii-exa-test-data-patient-1-pro-phq9-score",
+        "description": "PRO Observation: PHQ-9 Score for Patient 1 (mild depression, score 8)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-pro-promis-cogfn-sf4a-raw-score"
+        },
+        "name": "mii-exa-test-data-patient-1-pro-promis-cogfn-sf4a-raw-score",
+        "description": "PRO Observation: PROMIS Cognitive Function SF4a Raw Score for Patient 1",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-pro-promis-cogfn-sf4a-tscore"
+        },
+        "name": "mii-exa-test-data-patient-1-pro-promis-cogfn-sf4a-tscore",
+        "description": "PRO Observation: PROMIS Cognitive Function SF4a T-Score for Patient 1",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-pro-promis-dep-sf4a-raw-score"
+        },
+        "name": "mii-exa-test-data-patient-1-pro-promis-dep-sf4a-raw-score",
+        "description": "PRO Observation: PROMIS Depression SF4a Raw Score for Patient 1 (mild, raw score 7)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "QuestionnaireResponse/mii-exa-test-data-patient-1-pro-promis-dep-sf4a-response"
+        },
+        "name": "mii-exa-test-data-patient-1-pro-promis-dep-sf4a-response",
+        "description": "PRO QuestionnaireResponse: PROMIS Depression SF4a for Patient 1 (mild, raw score 7)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-pro-promis-dep-sf4a-tscore"
+        },
+        "name": "mii-exa-test-data-patient-1-pro-promis-dep-sf4a-tscore",
+        "description": "PRO Observation: PROMIS Depression T-Score for Patient 1 (mild, T-score 52.7)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-pro-promis29-anxiety-tscore"
+        },
+        "name": "mii-exa-test-data-patient-1-pro-promis29-anxiety-tscore",
+        "description": "PRO Observation: PROMIS-29 Anxiety T-Score for Patient 1",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-pro-promis29-depression-tscore"
+        },
+        "name": "mii-exa-test-data-patient-1-pro-promis29-depression-tscore",
+        "description": "PRO Observation: PROMIS-29 Depression T-Score for Patient 1",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-pro-promis29-fatigue-tscore"
+        },
+        "name": "mii-exa-test-data-patient-1-pro-promis29-fatigue-tscore",
+        "description": "PRO Observation: PROMIS-29 Fatigue T-Score for Patient 1",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-pro-promis29-pain-intensity"
+        },
+        "name": "mii-exa-test-data-patient-1-pro-promis29-pain-intensity",
+        "description": "PRO Observation: PROMIS-29 Pain Intensity for Patient 1",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-pro-promis29-social-function-tscore"
+        },
+        "name": "mii-exa-test-data-patient-1-pro-promis29-social-function-tscore",
+        "description": "PRO Observation: PROMIS-29 Social Function T-Score for Patient 1",
         "exampleBoolean": true
       },
       {
@@ -2307,7 +2489,7 @@
           "reference": "ServiceRequest/mii-exa-test-data-patient-3-molgen-anforderung-1"
         },
         "name": "mii-exa-test-data-patient-3-molgen-anforderung-1",
-        "description": "ServiceRequest: Anforderung genetischer Test für BRAF-Mutation",
+        "description": "ServiceRequest: Anforderung genetischer Test fuer BRAF-Mutation",
         "exampleBoolean": true
       },
       {
@@ -2323,7 +2505,7 @@
           "reference": "Observation/mii-exa-test-data-patient-3-molgen-diagnostische-implikation-1"
         },
         "name": "mii-exa-test-data-patient-3-molgen-diagnostische-implikation-1",
-        "description": "Observation: Diagnostische Implikation für BRAF-Mutation",
+        "description": "Observation: Diagnostische Implikation fuer BRAF-Mutation",
         "exampleBoolean": true
       },
       {
@@ -2331,7 +2513,7 @@
           "reference": "FamilyMemberHistory/mii-exa-test-data-patient-3-molgen-family-member-history-1"
         },
         "name": "mii-exa-test-data-patient-3-molgen-family-member-history-1",
-        "description": "FamilyMemberHistory: Familienanamnese für BRAF-Mutation",
+        "description": "FamilyMemberHistory: Familienanamnese fuer BRAF-Mutation",
         "exampleBoolean": true
       },
       {
@@ -2339,7 +2521,23 @@
           "reference": "Task/mii-exa-test-data-patient-3-molgen-folgemassnahme-1"
         },
         "name": "mii-exa-test-data-patient-3-molgen-folgemassnahme-1",
-        "description": "Task: Empfohlene Folgemaßnahme für BRAF-Mutation",
+        "description": "Task: Empfohlene Folgemassnahme fuer BRAF-Mutation",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Procedure/mii-exa-test-data-patient-3-molgen-genomic-study-1"
+        },
+        "name": "mii-exa-test-data-patient-3-molgen-genomic-study-1",
+        "description": "Procedure: Genomic Study BRAF-Analyse bei kolorektalem Adenokarzinom",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Procedure/mii-exa-test-data-patient-3-molgen-genomic-study-analysis-1"
+        },
+        "name": "mii-exa-test-data-patient-3-molgen-genomic-study-analysis-1",
+        "description": "Procedure: Genomic Study Analysis BRAF Exon 15 mittels NGS",
         "exampleBoolean": true
       },
       {
@@ -2347,7 +2545,7 @@
           "reference": "Observation/mii-exa-test-data-patient-3-molgen-genotyp-1"
         },
         "name": "mii-exa-test-data-patient-3-molgen-genotyp-1",
-        "description": "Observation: Genotyp für BRAF-Mutation",
+        "description": "Observation: Genotyp fuer BRAF-Mutation",
         "exampleBoolean": true
       },
       {
@@ -2355,7 +2553,15 @@
           "reference": "Task/mii-exa-test-data-patient-3-molgen-medikationsempfehlung-1"
         },
         "name": "mii-exa-test-data-patient-3-molgen-medikationsempfehlung-1",
-        "description": "Task: Medikationsempfehlung für BRAF-Mutation",
+        "description": "Task: Medikationsempfehlung fuer BRAF-Mutation",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-3-molgen-molekulare-konsequenz-1"
+        },
+        "name": "mii-exa-test-data-patient-3-molgen-molekulare-konsequenz-1",
+        "description": "Observation: Molekulare Konsequenz der BRAF V600E Mutation",
         "exampleBoolean": true
       },
       {
@@ -2363,7 +2569,7 @@
           "reference": "Observation/mii-exa-test-data-patient-3-molgen-msi-1"
         },
         "name": "mii-exa-test-data-patient-3-molgen-msi-1",
-        "description": "Observation: Mikrosatelliteninstabilität für BRAF-Mutation",
+        "description": "Observation: Mikrosatelliteninstabilitaet fuer BRAF-Mutation",
         "exampleBoolean": true
       },
       {
@@ -2371,7 +2577,15 @@
           "reference": "Observation/mii-exa-test-data-patient-3-molgen-mutationslast-1"
         },
         "name": "mii-exa-test-data-patient-3-molgen-mutationslast-1",
-        "description": "Observation: Mutationslast für BRAF-Mutation",
+        "description": "Observation: Mutationslast (TMB) fuer BRAF-Mutation",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "RiskAssessment/mii-exa-test-data-patient-3-molgen-polygener-risiko-score-1"
+        },
+        "name": "mii-exa-test-data-patient-3-molgen-polygener-risiko-score-1",
+        "description": "RiskAssessment: Polygener Risiko Score fuer kolorektales Karzinom",
         "exampleBoolean": true
       },
       {
@@ -2379,7 +2593,7 @@
           "reference": "Observation/mii-exa-test-data-patient-3-molgen-therapeutische-implikation-1"
         },
         "name": "mii-exa-test-data-patient-3-molgen-therapeutische-implikation-1",
-        "description": "Observation: Therapeutische Implikation für BRAF-Mutation",
+        "description": "Observation: Therapeutische Implikation fuer BRAF-Mutation",
         "exampleBoolean": true
       },
       {
@@ -2387,7 +2601,7 @@
           "reference": "Observation/mii-exa-test-data-patient-3-molgen-variante-1"
         },
         "name": "mii-exa-test-data-patient-3-molgen-variante-1",
-        "description": "Observation: Genetische Variante für BRAF-Mutation",
+        "description": "Observation: Genetische Variante fuer BRAF-Mutation",
         "exampleBoolean": true
       },
       {
@@ -2412,6 +2626,190 @@
         },
         "name": "mii-exa-test-data-patient-3-prozedur-3",
         "description": "Procedure: Chemotherapie für Patient-3",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-3-seltene-blutgruppe-1"
+        },
+        "name": "mii-exa-test-data-patient-3-seltene-blutgruppe-1",
+        "description": "Blutgruppe Observation: A Rh(D) positive - all MS elements, both code and value slices",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-3-seltene-bmi-1"
+        },
+        "name": "mii-exa-test-data-patient-3-seltene-bmi-1",
+        "description": "BMI Observation - all MS elements",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Condition/mii-exa-test-data-patient-3-seltene-clinical-diagnosis-1"
+        },
+        "name": "mii-exa-test-data-patient-3-seltene-clinical-diagnosis-1",
+        "description": "Clinical Diagnosis: Marfan syndrome - maximum MS element coverage",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "ClinicalImpression/mii-exa-test-data-patient-3-seltene-clinical-impression-1"
+        },
+        "name": "mii-exa-test-data-patient-3-seltene-clinical-impression-1",
+        "description": "ClinicalImpression: Rare disease assessment - all MS elements populated",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "FamilyMemberHistory/mii-exa-test-data-patient-3-seltene-familienanamnese-1"
+        },
+        "name": "mii-exa-test-data-patient-3-seltene-familienanamnese-1",
+        "description": "Familienanamnese: Mother with Marfan syndrome - all MS elements including penetrance, mondo, deceased",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "FamilyMemberHistory/mii-exa-test-data-patient-3-seltene-familienanamnese-2"
+        },
+        "name": "mii-exa-test-data-patient-3-seltene-familienanamnese-2",
+        "description": "Familienanamnese: Father not affected - tests vonSEBetroffen=No, deceasedAge",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Condition/mii-exa-test-data-patient-3-seltene-genetic-diagnosis-1"
+        },
+        "name": "mii-exa-test-data-patient-3-seltene-genetic-diagnosis-1",
+        "description": "Genetic Diagnosis: Marfan syndrome (FBN1 variant) - maximum MS element coverage including penetrance",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-3-seltene-hpo-assessment-1"
+        },
+        "name": "mii-exa-test-data-patient-3-seltene-hpo-assessment-1",
+        "description": "HPO Assessment: Aortic root aneurysm (Present) - all optional fields populated",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-3-seltene-hpo-assessment-2"
+        },
+        "name": "mii-exa-test-data-patient-3-seltene-hpo-assessment-2",
+        "description": "HPO Assessment: Arachnodactyly (Absent) - excluded phenotype",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-3-seltene-hpo-assessment-3"
+        },
+        "name": "mii-exa-test-data-patient-3-seltene-hpo-assessment-3",
+        "description": "HPO Assessment: Ectopia lentis (Present, Moderate severity, with change status interpretation)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-3-seltene-hpo-assessment-4"
+        },
+        "name": "mii-exa-test-data-patient-3-seltene-hpo-assessment-4",
+        "description": "HPO Assessment: Tall stature (Present, effectivePeriod) - tests effectivePeriod slice",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-3-seltene-hueftumfang-1"
+        },
+        "name": "mii-exa-test-data-patient-3-seltene-hueftumfang-1",
+        "description": "Hueftumfang Observation - all MS elements",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-3-seltene-kopfumfang-1"
+        },
+        "name": "mii-exa-test-data-patient-3-seltene-kopfumfang-1",
+        "description": "Kopfumfang Observation - all MS elements",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "ServiceRequest/mii-exa-test-data-patient-3-seltene-studieneinschluss-1"
+        },
+        "name": "mii-exa-test-data-patient-3-seltene-studieneinschluss-1",
+        "description": "Studieneinschluss Anfrage: Clinical trial referral - all MS elements",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Condition/mii-exa-test-data-patient-3-seltene-symptom-condition-1"
+        },
+        "name": "mii-exa-test-data-patient-3-seltene-symptom-condition-1",
+        "description": "Symptom Condition: Tall stature - all 4 code slices (HPO, SNOMED, ICD-10-GM, MONDO), all MS elements",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Condition/mii-exa-test-data-patient-3-seltene-symptom-condition-2"
+        },
+        "name": "mii-exa-test-data-patient-3-seltene-symptom-condition-2",
+        "description": "Symptom Condition: Aortic root dilatation - tests onsetDateTime/abatementDateTime slices",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-3-seltene-taillenumfang-1"
+        },
+        "name": "mii-exa-test-data-patient-3-seltene-taillenumfang-1",
+        "description": "Taillenumfang Observation - all MS elements",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Procedure/mii-exa-test-data-patient-3-seltene-therapie-durchgefuehrt-1"
+        },
+        "name": "mii-exa-test-data-patient-3-seltene-therapie-durchgefuehrt-1",
+        "description": "Therapie durchgefuehrt: Pharmakotherapie (Losartan) - tests performedPeriod, code.display",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Procedure/mii-exa-test-data-patient-3-seltene-therapie-durchgefuehrt-2"
+        },
+        "name": "mii-exa-test-data-patient-3-seltene-therapie-durchgefuehrt-2",
+        "description": "Therapie durchgefuehrt: Sonstiges (Physiotherapie) - tests performedDateTime slice",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "RequestGroup/mii-exa-test-data-patient-3-seltene-therapie-kombination-1"
+        },
+        "name": "mii-exa-test-data-patient-3-seltene-therapie-kombination-1",
+        "description": "Therapieempfehlung Kombination: Combined therapy for Marfan - all MS elements",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "ServiceRequest/mii-exa-test-data-patient-3-seltene-therapie-nicht-med-1"
+        },
+        "name": "mii-exa-test-data-patient-3-seltene-therapie-nicht-med-1",
+        "description": "Therapieempfehlung nicht-medikamentoes: Annual cardiac screening - all MS elements",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "MedicationRequest/mii-exa-test-data-patient-3-seltene-therapieempfehlung-1"
+        },
+        "name": "mii-exa-test-data-patient-3-seltene-therapieempfehlung-1",
+        "description": "Therapieempfehlung: Losartan for Marfan - all MS elements including extensions",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "CarePlan/mii-exa-test-data-patient-3-seltene-therapieplan-1"
+        },
+        "name": "mii-exa-test-data-patient-3-seltene-therapieplan-1",
+        "description": "Therapieplan: Marfan syndrome care plan - all activity slices and MS elements",
         "exampleBoolean": true
       },
       {
@@ -2587,7 +2985,7 @@
           "reference": "Observation/mii-exa-test-data-patient-4-molgen-diagnostische-implikation-1"
         },
         "name": "mii-exa-test-data-patient-4-molgen-diagnostische-implikation-1",
-        "description": "Observation: Diagnostische Implikation für Magenkarzinom",
+        "description": "Observation: Diagnostische Implikation fuer Magenkarzinom",
         "exampleBoolean": true
       },
       {
@@ -2595,7 +2993,31 @@
           "reference": "FamilyMemberHistory/mii-exa-test-data-patient-4-molgen-family-member-history-1"
         },
         "name": "mii-exa-test-data-patient-4-molgen-family-member-history-1",
-        "description": "FamilyMemberHistory: Familienanamnese für Magenkarzinom",
+        "description": "FamilyMemberHistory: Familienanamnese fuer Magenkarzinom",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Procedure/mii-exa-test-data-patient-4-molgen-genomic-study-1"
+        },
+        "name": "mii-exa-test-data-patient-4-molgen-genomic-study-1",
+        "description": "Procedure: Genomic Study Stufendiagnostik Magenkarzinom",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Procedure/mii-exa-test-data-patient-4-molgen-genomic-study-analysis-1"
+        },
+        "name": "mii-exa-test-data-patient-4-molgen-genomic-study-analysis-1",
+        "description": "Procedure: Genomic Study Analysis Stufendiagnostik Magenkarzinom-Panel",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-4-molgen-molekulare-konsequenz-1"
+        },
+        "name": "mii-exa-test-data-patient-4-molgen-molekulare-konsequenz-1",
+        "description": "Observation: Molekulare Konsequenz der CTNNA1 Frameshift-Deletion",
         "exampleBoolean": true
       },
       {
@@ -2603,7 +3025,7 @@
           "reference": "Observation/mii-exa-test-data-patient-4-molgen-variante-1"
         },
         "name": "mii-exa-test-data-patient-4-molgen-variante-1",
-        "description": "Observation: Genetische Variante für CTNNA1-Mutation",
+        "description": "Observation: Genetische Variante fuer CTNNA1-Mutation",
         "exampleBoolean": true
       },
       {
@@ -3548,6 +3970,406 @@
         },
         "name": "mii-exa-test-data-radiologische-beobachtung",
         "description": "Observation: Radiologische Beobachtung",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Claim/mii-exa-test-data-mtb-antrag-kostenuebernahme-1"
+        },
+        "name": "MTB Antrag Kostenuebernahme",
+        "description": "Test instance for cost coverage application with all MS elements",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "ClaimResponse/mii-exa-test-data-mtb-antwort-kostenuebernahme-1"
+        },
+        "name": "MTB Antwort Kostenuebernahme",
+        "description": "Test instance for cost coverage response with all MS elements",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "ClinicalImpression/mii-exa-test-data-mtb-behandlungsepisode-1"
+        },
+        "name": "MTB Behandlungsepisode",
+        "description": "Test instance for MTB treatment episode with all MS slices populated",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-mtb-biomarker-her2-status-1"
+        },
+        "name": "MTB Biomarker HER2 Status",
+        "description": "Test instance for HER2 biomarker status",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "ServiceRequest/mii-exa-test-data-mtb-biopsie-auftrag-1"
+        },
+        "name": "MTB Biopsie Auftrag",
+        "description": "Test instance for biopsy order",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-mtb-brcaness-1"
+        },
+        "name": "MTB BRCAness",
+        "description": "Test instance for BRCAness assessment",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-mtb-consent-given-1"
+        },
+        "name": "MTB Consent Given",
+        "description": "Test instance for MTB consent/patient education confirmation",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-mtb-copy-number-variant-1"
+        },
+        "name": "MTB Copy Number Variant - ERBB2",
+        "description": "Test instance for CNV (ERBB2 amplification) with all MS component slices",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Condition/mii-exa-test-data-mtb-diagnose-primaertumor-1"
+        },
+        "name": "MTB Diagnose Primaertumor",
+        "description": "Test instance for MTB primary tumor diagnosis with all MS elements",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-mtb-diagnostische-implikation-1"
+        },
+        "name": "MTB Diagnostische Implikation",
+        "description": "Test instance for diagnostic implication of EGFR variant",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-mtb-dna-fusion-1"
+        },
+        "name": "MTB DNA Fusion - EML4-ALK",
+        "description": "Test instance for DNA fusion variant (EML4-ALK)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-mtb-einfache-variante-1"
+        },
+        "name": "MTB Einfache Variante - EGFR",
+        "description": "Test instance for simple variant (EGFR L858R) with all MS elements",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "ClinicalImpression/mii-exa-test-data-mtb-follow-up-1"
+        },
+        "name": "MTB Follow-Up",
+        "description": "Test instance for MTB follow-up clinical impression with all MS elements",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Procedure/mii-exa-test-data-mtb-genomic-study-1"
+        },
+        "name": "MTB Genomic Study",
+        "description": "Test instance for MTB genomic study procedure",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Procedure/mii-exa-test-data-mtb-genomic-study-analysis-1"
+        },
+        "name": "MTB Genomic Study Analysis",
+        "description": "Test instance for MTB genomic study analysis with method and change types",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "ServiceRequest/mii-exa-test-data-mtb-histologie-evaluation-1"
+        },
+        "name": "MTB Histologie Evaluation Auftrag",
+        "description": "Test instance for histology evaluation order",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-mtb-hrd-score-1"
+        },
+        "name": "MTB HRD Score",
+        "description": "Test instance for homologous recombination deficiency score with sub-scores",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "ServiceRequest/mii-exa-test-data-mtb-humangenetische-beratung-1"
+        },
+        "name": "MTB Humangenetische Beratung Auftrag",
+        "description": "Test instance for human genetics counseling order",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-mtb-ihc-mmr-1"
+        },
+        "name": "MTB IHC MMR",
+        "description": "Test instance for mismatch repair protein immunohistochemistry",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-mtb-ihc-msi-1"
+        },
+        "name": "MTB IHC MSI",
+        "description": "Test instance for MSI by immunohistochemistry",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-mtb-ihc-phosphorylation-1"
+        },
+        "name": "MTB IHC Phosphorylation",
+        "description": "Test instance for phosphorylation immunohistochemistry",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-mtb-immunohistochemistry-1"
+        },
+        "name": "MTB Immunohistochemistry - PD-L1",
+        "description": "Test instance for immunohistochemistry observation",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-mtb-immunohistochemistry-her2-1"
+        },
+        "name": "MTB Immunohistochemistry HER2",
+        "description": "Test instance for HER2 immunohistochemistry",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-mtb-immunohistochemistry-pdl1-1"
+        },
+        "name": "MTB Immunohistochemistry PD-L1",
+        "description": "Test instance for PD-L1 immunohistochemistry with all MS elements",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-mtb-insituhybridization-1"
+        },
+        "name": "MTB In Situ Hybridization",
+        "description": "Test instance for in situ hybridization biomarker",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-mtb-insituhybridization-her2-1"
+        },
+        "name": "MTB In Situ Hybridization HER2",
+        "description": "Test instance for HER2 FISH with all component slices",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-mtb-mikrosatelliteninstabilitaet-1"
+        },
+        "name": "MTB Mikrosatelliteninstabilitaet (MSI)",
+        "description": "Test instance for microsatellite instability",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "DiagnosticReport/mii-exa-test-data-mtb-molecular-pathology-report-1"
+        },
+        "name": "MTB Molecular Pathology Report",
+        "description": "Test instance for molecular pathology report",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-mtb-molekularer-biomarker-1"
+        },
+        "name": "MTB Molekularer Biomarker",
+        "description": "Test instance for molecular biomarker base profile",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-mtb-mutationslast-1"
+        },
+        "name": "MTB Mutationslast (TMB)",
+        "description": "Test instance for tumor mutational burden",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "DiagnosticReport/mii-exa-test-data-mtb-ngs-bericht-1"
+        },
+        "name": "MTB NGS Bericht",
+        "description": "Test instance for NGS report with all result slices populated",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-mtb-oncotree-1"
+        },
+        "name": "MTB Oncotree Classification",
+        "description": "Test instance for Oncotree tumor classification",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-mtb-ploidie-1"
+        },
+        "name": "MTB Ploidie",
+        "description": "Test instance for ploidy assessment",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-mtb-response-befund-1"
+        },
+        "name": "MTB Response Befund",
+        "description": "Test instance for MTB response assessment with RECIST method",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-mtb-rna-fusion-1"
+        },
+        "name": "MTB RNA Fusion - BCR-ABL1",
+        "description": "Test instance for RNA fusion variant (BCR-ABL1)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-mtb-rna-seq-1"
+        },
+        "name": "MTB RNA Seq",
+        "description": "Test instance for RNA sequencing observation",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "ResearchStudy/mii-exa-test-data-mtb-studie-1"
+        },
+        "name": "MTB Studie",
+        "description": "Test instance for MTB research study",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "ServiceRequest/mii-exa-test-data-mtb-studieneinschluss-anfrage-1"
+        },
+        "name": "MTB Studieneinschluss Anfrage",
+        "description": "Test instance for study enrollment request with all MS elements",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Procedure/mii-exa-test-data-mtb-systemische-therapie-1"
+        },
+        "name": "MTB Systemische Therapie",
+        "description": "Test instance for MTB systemic therapy procedure",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "MedicationStatement/mii-exa-test-data-mtb-systemische-therapie-medstatement-1"
+        },
+        "name": "MTB Systemische Therapie MedicationStatement",
+        "description": "Test instance for MTB systemic therapy medication statement",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Procedure/mii-exa-test-data-mtb-systemische-vortherapie-1"
+        },
+        "name": "MTB Systemische Vortherapie",
+        "description": "Test instance for prior systemic therapy",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-mtb-therapeutische-implikation-1"
+        },
+        "name": "MTB Therapeutische Implikation",
+        "description": "Test instance for therapeutic implication with evidence grading",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "MedicationRequest/mii-exa-test-data-mtb-therapieempfehlung-1"
+        },
+        "name": "MTB Therapieempfehlung - Osimertinib",
+        "description": "Test instance for therapy recommendation with priority, evidence, and publication",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "MedicationRequest/mii-exa-test-data-mtb-therapieempfehlung-2"
+        },
+        "name": "MTB Therapieempfehlung - Sotorasib",
+        "description": "Test instance for second therapy recommendation (part of combination)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "MedicationRequest/mii-exa-test-data-mtb-therapieempfehlung-3"
+        },
+        "name": "MTB Therapieempfehlung - Trametinib",
+        "description": "Test instance for third therapy recommendation (part of combination)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "RequestGroup/mii-exa-test-data-mtb-therapieempfehlung-kombination-1"
+        },
+        "name": "MTB Therapieempfehlung Kombination",
+        "description": "Test instance for combination therapy recommendation",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "CarePlan/mii-exa-test-data-mtb-therapieplan-1"
+        },
+        "name": "MTB Therapieplan",
+        "description": "Test instance for MTB therapy plan with all activity slices",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-mtb-tumorausbreitung-1"
+        },
+        "name": "MTB Tumorausbreitung",
+        "description": "Test instance for tumor spread assessment with all MS elements",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-mtb-tumorzellgehalt-1"
+        },
+        "name": "MTB Tumorzellgehalt",
+        "description": "Test instance for tumor cell content measurement",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-mtb-who-grad-tumor-zns-1"
+        },
+        "name": "MTB WHO Grad Tumor ZNS",
+        "description": "Test instance for WHO CNS tumor grading",
         "exampleBoolean": true
       }
     ],

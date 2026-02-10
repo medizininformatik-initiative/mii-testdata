@@ -80,6 +80,37 @@
           }
         ]
       }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs",
+            "code": "conclusion-string"
+          }
+        ]
+      },
+      "valueString": "Heterozygote BRAF V600E Mutation nachgewiesen"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "62374-4",
+            "display": "Human reference sequence assembly version"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "LA26806-2",
+            "system": "http://loinc.org",
+            "display": "GRCh38"
+          }
+        ]
+      }
     }
   ],
   "code": {
@@ -95,6 +126,11 @@
   "subject": {
     "reference": "Patient/mii-exa-test-data-patient-3"
   },
+  "encounter": {
+    "reference": "Encounter/mii-exa-test-data-patient-3-encounter-1"
+  },
+  "effectiveDateTime": "2022-04-07",
+  "issued": "2022-04-12T10:30:00+02:00",
   "method": {
     "coding": [
       {

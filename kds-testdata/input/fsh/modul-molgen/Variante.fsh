@@ -3,21 +3,20 @@
 Instance: mii-exa-test-data-patient-3-molgen-variante-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/variante
 Usage: #example
-Description: "Observation: Genetische Variante für BRAF-Mutation"
+Description: "Observation: Genetische Variante fuer BRAF-Mutation"
 * insert TestDataLabel
-//* meta.profile[0] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/variante|1.0.0"
 * meta.profile[+] = "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/variant"
 * basedOn = Reference(mii-exa-test-data-patient-3-molgen-anforderung-1)
 * status = #final
 * category[labCategory] = $observation-category#laboratory "Laboratory"
 * code = $loinc#69548-6 "Genetic variant assessment"
 * subject = Reference(mii-exa-test-data-patient-3)
+* effectiveDateTime = "2022-04-07"
+* issued = "2022-04-12T10:30:00+02:00"
 * valueCodeableConcept = $loinc#LA9633-4 "Present"
 * method = $loinc#LA26398-0 "Sequencing"
 * specimen = Reference(mii-exa-test-data-patient-3-specimen-1)
 * device = Reference(mii-exa-test-data-molgen-device-sequencer)
-// TODO: derivedFrom untersuchte-region removed in molgen 2026.0.x, refactor to genomic-study
-// * derivedFrom = Reference(mii-exa-test-data-patient-3-molgen-untersuchte-region-1)
 * component[gene-studied].code = $loinc#48018-6 "Gene studied [ID]"
 * component[gene-studied].valueCodeableConcept = $HGNC#HGNC:1097 "BRAF"
 * component[genomic-ref-seq].code = $loinc#48013-7 "Genomic reference sequence [ID]"
@@ -36,12 +35,19 @@ Description: "Observation: Genetische Variante für BRAF-Mutation"
 * component[cytogenetic-location].valueCodeableConcept = $ChromLoc#7q34
 * component[coding-change-type].code = $loinc#48019-4 "DNA change type"
 * component[coding-change-type].valueCodeableConcept = $SO#SO:1000008 "point_mutation"
-// TODO: amino-acid-change-type removed from variante in molgen 2026.0.x
-//   migrate to separate molekulare-konsequenz (molecular-consequence) Observation instance
-// * component[amino-acid-change-type].code = $loinc#48006-1 "Amino acid change [Type]"
-// * component[amino-acid-change-type].valueCodeableConcept = $loinc#LA6698-0 "Missense"
 * component[variation-code].code = $loinc#81252-9 "Discrete genetic variant"
 * component[variation-code].valueCodeableConcept = $dbSNP#rs113488022
+* component[reference-sequence-assembly].code = $loinc#62374-4 "Human reference sequence assembly version"
+* component[reference-sequence-assembly].valueCodeableConcept = $loinc#LA26806-2 "GRCh38"
+* component[exact-start-end].code = $loinc#81254-5 "Variant exact start-end"
+* component[exact-start-end].valueRange.low.value = 140753336
+* component[exact-start-end].valueRange.high.value = 140753336
+* component[ref-allele].code = $loinc#69547-8 "Genomic ref allele [ID]"
+* component[ref-allele].valueString = "T"
+* component[alt-allele].code = $loinc#69551-0 "Genomic alt allele [ID]"
+* component[alt-allele].valueString = "A"
+* component[genomic-source-class].code = $loinc#48002-0 "Genomic source class [Type]"
+* component[genomic-source-class].valueCodeableConcept = $loinc#LA6684-0 "Somatic"
 
 Instance: mii-exa-test-data-molgen-device-sequencer
 InstanceOf: Device
@@ -57,14 +63,15 @@ Description: "Device: Sequencer used for BRAF mutation analysis"
 Instance: mii-exa-test-data-patient-4-molgen-variante-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/variante
 Usage: #example
-Description: "Observation: Genetische Variante für CTNNA1-Mutation"
+Description: "Observation: Genetische Variante fuer CTNNA1-Mutation"
 * insert TestDataLabel
-//* meta.profile = "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/variant"
 * basedOn = Reference(mii-exa-test-data-patient-4-molgen-anforderung-1)
 * status = #final
 * category[labCategory] = $observation-category#laboratory "Laboratory"
 * code = $loinc#69548-6 "Genetic variant assessment"
 * subject = Reference(mii-exa-test-data-patient-4)
+* effectiveDateTime = "2022-11-30"
+* issued = "2022-12-05T14:00:00+01:00"
 * valueCodeableConcept = $loinc#LA9633-4 "Present"
 * method.coding[0] = $loinc#LA26398-0 "Sequencing"
 * specimen = Reference(mii-exa-test-data-patient-4-specimen-1)
@@ -77,7 +84,6 @@ Description: "Observation: Genetische Variante für CTNNA1-Mutation"
 * component[representative-protein-hgvs].valueCodeableConcept = $HGVS#p.(Leu344CysfsTer25)
 * component[allelic-state].valueCodeableConcept = $loinc#LA6706-1 "Heterozygous"
 * component[coding-change-type].valueCodeableConcept = $SO#SO:0000159 "Deletion"
-// TODO: amino-acid-change-type removed from variante in molgen 2026.0.x
-//   migrate to separate molekulare-konsequenz (molecular-consequence) Observation instance
-// * component[amino-acid-change-type].valueCodeableConcept = $loinc#LA6694-9 "Frameshift"
 * component[cytogenetic-location].valueCodeableConcept = $ChromLoc#5q31.2
+* component[chromosome-identifier].code = $loinc#48000-4 "Chromosome [Identifier]"
+* component[chromosome-identifier].valueCodeableConcept = $loinc#LA21257-8 "Chromosome 5"

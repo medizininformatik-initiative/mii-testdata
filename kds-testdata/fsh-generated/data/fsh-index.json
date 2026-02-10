@@ -37,87 +37,87 @@
     "fshType": "Instance",
     "fshFile": "Bundle.fsh",
     "startLine": 24,
-    "endLine": 90
+    "endLine": 163
   },
   {
     "outputFile": "Bundle-mii-exa-test-data-bundle-pat-10.json",
     "fshName": "mii-exa-test-data-bundle-pat-10",
     "fshType": "Instance",
     "fshFile": "Bundle.fsh",
-    "startLine": 702,
-    "endLine": 761
+    "startLine": 788,
+    "endLine": 847
   },
   {
     "outputFile": "Bundle-mii-exa-test-data-bundle-pat-11.json",
     "fshName": "mii-exa-test-data-bundle-pat-11",
     "fshType": "Instance",
     "fshFile": "Bundle.fsh",
-    "startLine": 783,
-    "endLine": 792
+    "startLine": 869,
+    "endLine": 878
   },
   {
     "outputFile": "Bundle-mii-exa-test-data-bundle-pat-2.json",
     "fshName": "mii-exa-test-data-bundle-pat-2",
     "fshType": "Instance",
     "fshFile": "Bundle.fsh",
-    "startLine": 95,
-    "endLine": 161
+    "startLine": 168,
+    "endLine": 234
   },
   {
     "outputFile": "Bundle-mii-exa-test-data-bundle-pat-3.json",
     "fshName": "mii-exa-test-data-bundle-pat-3",
     "fshType": "Instance",
     "fshFile": "Bundle.fsh",
-    "startLine": 170,
-    "endLine": 250
+    "startLine": 243,
+    "endLine": 352
   },
   {
     "outputFile": "Bundle-mii-exa-test-data-bundle-pat-4.json",
     "fshName": "mii-exa-test-data-bundle-pat-4",
     "fshType": "Instance",
     "fshFile": "Bundle.fsh",
-    "startLine": 259,
-    "endLine": 344
+    "startLine": 361,
+    "endLine": 430
   },
   {
     "outputFile": "Bundle-mii-exa-test-data-bundle-pat-5.json",
     "fshName": "mii-exa-test-data-bundle-pat-5",
     "fshType": "Instance",
     "fshFile": "Bundle.fsh",
-    "startLine": 353,
-    "endLine": 412
+    "startLine": 439,
+    "endLine": 498
   },
   {
     "outputFile": "Bundle-mii-exa-test-data-bundle-pat-6.json",
     "fshName": "mii-exa-test-data-bundle-pat-6",
     "fshType": "Instance",
     "fshFile": "Bundle.fsh",
-    "startLine": 421,
-    "endLine": 484
+    "startLine": 507,
+    "endLine": 570
   },
   {
     "outputFile": "Bundle-mii-exa-test-data-bundle-pat-7.json",
     "fshName": "mii-exa-test-data-bundle-pat-7",
     "fshType": "Instance",
     "fshFile": "Bundle.fsh",
-    "startLine": 493,
-    "endLine": 552
+    "startLine": 579,
+    "endLine": 638
   },
   {
     "outputFile": "Bundle-mii-exa-test-data-bundle-pat-8.json",
     "fshName": "mii-exa-test-data-bundle-pat-8",
     "fshType": "Instance",
     "fshFile": "Bundle.fsh",
-    "startLine": 561,
-    "endLine": 625
+    "startLine": 647,
+    "endLine": 711
   },
   {
     "outputFile": "Bundle-mii-exa-test-data-bundle-pat-9.json",
     "fshName": "mii-exa-test-data-bundle-pat-9",
     "fshType": "Instance",
     "fshFile": "Bundle.fsh",
-    "startLine": 634,
-    "endLine": 693
+    "startLine": 720,
+    "endLine": 779
   },
   {
     "outputFile": "CarePlan-mii-exa-test-data-behandlungsempfehlung.json",
@@ -126,6 +126,14 @@
     "fshFile": "modul-bildgebung/CarePlan.fsh",
     "startLine": 1,
     "endLine": 11
+  },
+  {
+    "outputFile": "CarePlan-mii-exa-test-data-mtb-therapieplan-1.json",
+    "fshName": "mii-exa-test-data-mtb-therapieplan-1",
+    "fshType": "Instance",
+    "fshFile": "modul-mtb/Therapieplan.fsh",
+    "startLine": 8,
+    "endLine": 28
   },
   {
     "outputFile": "CarePlan-mii-exa-test-data-onko-tumorkonferenz-1.json",
@@ -152,12 +160,68 @@
     "endLine": 127
   },
   {
+    "outputFile": "CarePlan-mii-exa-test-data-patient-3-seltene-therapieplan-1.json",
+    "fshName": "mii-exa-test-data-patient-3-seltene-therapieplan-1",
+    "fshType": "Instance",
+    "fshFile": "modul-seltene/CarePlan.fsh",
+    "startLine": 8,
+    "endLine": 27
+  },
+  {
+    "outputFile": "Claim-mii-exa-test-data-mtb-antrag-kostenuebernahme-1.json",
+    "fshName": "mii-exa-test-data-mtb-antrag-kostenuebernahme-1",
+    "fshType": "Instance",
+    "fshFile": "modul-mtb/FollowUp.fsh",
+    "startLine": 96,
+    "endLine": 115
+  },
+  {
+    "outputFile": "ClaimResponse-mii-exa-test-data-mtb-antwort-kostenuebernahme-1.json",
+    "fshName": "mii-exa-test-data-mtb-antwort-kostenuebernahme-1",
+    "fshType": "Instance",
+    "fshFile": "modul-mtb/FollowUp.fsh",
+    "startLine": 120,
+    "endLine": 134
+  },
+  {
+    "outputFile": "ClinicalImpression-mii-exa-test-data-mtb-behandlungsepisode-1.json",
+    "fshName": "mii-exa-test-data-mtb-behandlungsepisode-1",
+    "fshType": "Instance",
+    "fshFile": "modul-mtb/Behandlungsepisode.fsh",
+    "startLine": 8,
+    "endLine": 26
+  },
+  {
+    "outputFile": "ClinicalImpression-mii-exa-test-data-mtb-follow-up-1.json",
+    "fshName": "mii-exa-test-data-mtb-follow-up-1",
+    "fshType": "Instance",
+    "fshFile": "modul-mtb/FollowUp.fsh",
+    "startLine": 8,
+    "endLine": 23
+  },
+  {
+    "outputFile": "ClinicalImpression-mii-exa-test-data-patient-3-seltene-clinical-impression-1.json",
+    "fshName": "mii-exa-test-data-patient-3-seltene-clinical-impression-1",
+    "fshType": "Instance",
+    "fshFile": "modul-seltene/ClinicalImpression.fsh",
+    "startLine": 6,
+    "endLine": 35
+  },
+  {
     "outputFile": "Composition-mii-exa-test-data-semistrukt-befundbericht.json",
     "fshName": "mii-exa-test-data-semistrukt-befundbericht",
     "fshType": "Instance",
     "fshFile": "modul-bildgebung/Composition.fsh",
     "startLine": 1,
     "endLine": 18
+  },
+  {
+    "outputFile": "Condition-mii-exa-test-data-mtb-diagnose-primaertumor-1.json",
+    "fshName": "mii-exa-test-data-mtb-diagnose-primaertumor-1",
+    "fshType": "Instance",
+    "fshFile": "modul-mtb/Behandlungsepisode.fsh",
+    "startLine": 47,
+    "endLine": 65
   },
   {
     "outputFile": "Condition-mii-exa-test-data-onko-diagnose-1.json",
@@ -230,6 +294,38 @@
     "fshFile": "modul-diagnose/Diagnose.fsh",
     "startLine": 48,
     "endLine": 60
+  },
+  {
+    "outputFile": "Condition-mii-exa-test-data-patient-3-seltene-clinical-diagnosis-1.json",
+    "fshName": "mii-exa-test-data-patient-3-seltene-clinical-diagnosis-1",
+    "fshType": "Instance",
+    "fshFile": "modul-seltene/Condition.fsh",
+    "startLine": 10,
+    "endLine": 44
+  },
+  {
+    "outputFile": "Condition-mii-exa-test-data-patient-3-seltene-genetic-diagnosis-1.json",
+    "fshName": "mii-exa-test-data-patient-3-seltene-genetic-diagnosis-1",
+    "fshType": "Instance",
+    "fshFile": "modul-seltene/Condition.fsh",
+    "startLine": 49,
+    "endLine": 82
+  },
+  {
+    "outputFile": "Condition-mii-exa-test-data-patient-3-seltene-symptom-condition-1.json",
+    "fshName": "mii-exa-test-data-patient-3-seltene-symptom-condition-1",
+    "fshType": "Instance",
+    "fshFile": "modul-seltene/Condition.fsh",
+    "startLine": 87,
+    "endLine": 115
+  },
+  {
+    "outputFile": "Condition-mii-exa-test-data-patient-3-seltene-symptom-condition-2.json",
+    "fshName": "mii-exa-test-data-patient-3-seltene-symptom-condition-2",
+    "fshType": "Instance",
+    "fshFile": "modul-seltene/Condition.fsh",
+    "startLine": 120,
+    "endLine": 143
   },
   {
     "outputFile": "Condition-mii-exa-test-data-patient-4-diagnose-1.json",
@@ -404,8 +500,8 @@
     "fshName": "mii-exa-test-data-molgen-device-sequencer",
     "fshType": "Instance",
     "fshFile": "modul-molgen/Variante.fsh",
-    "startLine": 46,
-    "endLine": 54
+    "startLine": 52,
+    "endLine": 60
   },
   {
     "outputFile": "DeviceMetric-mii-exa-test-data-devicemetric-roche-cobas-c303-1.json",
@@ -422,6 +518,22 @@
     "fshFile": "modul-bildgebung/DiagnosticReport.fsh",
     "startLine": 1,
     "endLine": 19
+  },
+  {
+    "outputFile": "DiagnosticReport-mii-exa-test-data-mtb-molecular-pathology-report-1.json",
+    "fshName": "mii-exa-test-data-mtb-molecular-pathology-report-1",
+    "fshType": "Instance",
+    "fshFile": "modul-mtb/NgsBericht.fsh",
+    "startLine": 356,
+    "endLine": 366
+  },
+  {
+    "outputFile": "DiagnosticReport-mii-exa-test-data-mtb-ngs-bericht-1.json",
+    "fshName": "mii-exa-test-data-mtb-ngs-bericht-1",
+    "fshType": "Instance",
+    "fshFile": "modul-mtb/NgsBericht.fsh",
+    "startLine": 8,
+    "endLine": 32
   },
   {
     "outputFile": "DiagnosticReport-mii-exa-test-data-onko-befund-1.json",
@@ -469,7 +581,7 @@
     "fshType": "Instance",
     "fshFile": "modul-molgen/DiagnosticReport.fsh",
     "startLine": 2,
-    "endLine": 30
+    "endLine": 31
   },
   {
     "outputFile": "DiagnosticReport-mii-exa-test-data-patient-4-labreport-1.json",
@@ -484,8 +596,8 @@
     "fshName": "mii-exa-test-data-patient-4-molgen-befundbericht-1",
     "fshType": "Instance",
     "fshFile": "modul-molgen/DiagnosticReport.fsh",
-    "startLine": 33,
-    "endLine": 70
+    "startLine": 34,
+    "endLine": 56
   },
   {
     "outputFile": "DiagnosticReport-mii-exa-test-data-patient-5-labreport-1.json",
@@ -637,15 +749,31 @@
     "fshType": "Instance",
     "fshFile": "modul-molgen/FamilyMemberHistory.fsh",
     "startLine": 3,
-    "endLine": 20
+    "endLine": 27
+  },
+  {
+    "outputFile": "FamilyMemberHistory-mii-exa-test-data-patient-3-seltene-familienanamnese-1.json",
+    "fshName": "mii-exa-test-data-patient-3-seltene-familienanamnese-1",
+    "fshType": "Instance",
+    "fshFile": "modul-seltene/FamilyMemberHistory.fsh",
+    "startLine": 7,
+    "endLine": 43
+  },
+  {
+    "outputFile": "FamilyMemberHistory-mii-exa-test-data-patient-3-seltene-familienanamnese-2.json",
+    "fshName": "mii-exa-test-data-patient-3-seltene-familienanamnese-2",
+    "fshType": "Instance",
+    "fshFile": "modul-seltene/FamilyMemberHistory.fsh",
+    "startLine": 46,
+    "endLine": 71
   },
   {
     "outputFile": "FamilyMemberHistory-mii-exa-test-data-patient-4-molgen-family-member-history-1.json",
     "fshName": "mii-exa-test-data-patient-4-molgen-family-member-history-1",
     "fshType": "Instance",
     "fshFile": "modul-molgen/FamilyMemberHistory.fsh",
-    "startLine": 23,
-    "endLine": 38
+    "startLine": 30,
+    "endLine": 53
   },
   {
     "outputFile": "ImagingStudy-mii-exa-test-data-bildgebungsstudie.json",
@@ -1240,6 +1368,30 @@
     "endLine": 423
   },
   {
+    "outputFile": "MedicationRequest-mii-exa-test-data-mtb-therapieempfehlung-1.json",
+    "fshName": "mii-exa-test-data-mtb-therapieempfehlung-1",
+    "fshType": "Instance",
+    "fshFile": "modul-mtb/Therapieplan.fsh",
+    "startLine": 33,
+    "endLine": 50
+  },
+  {
+    "outputFile": "MedicationRequest-mii-exa-test-data-mtb-therapieempfehlung-2.json",
+    "fshName": "mii-exa-test-data-mtb-therapieempfehlung-2",
+    "fshType": "Instance",
+    "fshFile": "modul-mtb/Therapieplan.fsh",
+    "startLine": 52,
+    "endLine": 65
+  },
+  {
+    "outputFile": "MedicationRequest-mii-exa-test-data-mtb-therapieempfehlung-3.json",
+    "fshName": "mii-exa-test-data-mtb-therapieempfehlung-3",
+    "fshType": "Instance",
+    "fshFile": "modul-mtb/Therapieplan.fsh",
+    "startLine": 67,
+    "endLine": 80
+  },
+  {
     "outputFile": "MedicationRequest-mii-exa-test-data-onko-therapieempfehlung-medikation-1.json",
     "fshName": "mii-exa-test-data-onko-therapieempfehlung-medikation-1",
     "fshType": "Instance",
@@ -1360,6 +1512,14 @@
     "endLine": 223
   },
   {
+    "outputFile": "MedicationRequest-mii-exa-test-data-patient-3-seltene-therapieempfehlung-1.json",
+    "fshName": "mii-exa-test-data-patient-3-seltene-therapieempfehlung-1",
+    "fshType": "Instance",
+    "fshFile": "modul-seltene/MedicationRequest.fsh",
+    "startLine": 6,
+    "endLine": 38
+  },
+  {
     "outputFile": "MedicationRequest-mii-exa-test-data-patient-4-medrequest-1.json",
     "fshName": "mii-exa-test-data-patient-4-medrequest-1",
     "fshType": "Instance",
@@ -1470,6 +1630,14 @@
     "fshFile": "modul-medikation/MedicationRequest.fsh",
     "startLine": 509,
     "endLine": 529
+  },
+  {
+    "outputFile": "MedicationStatement-mii-exa-test-data-mtb-systemische-therapie-medstatement-1.json",
+    "fshName": "mii-exa-test-data-mtb-systemische-therapie-medstatement-1",
+    "fshType": "Instance",
+    "fshFile": "modul-mtb/FollowUp.fsh",
+    "startLine": 50,
+    "endLine": 70
   },
   {
     "outputFile": "MedicationStatement-mii-exa-test-data-onko-medikation-1.json",
@@ -1718,6 +1886,230 @@
     "fshFile": "modul-medikation/MedicationStatement.fsh",
     "startLine": 600,
     "endLine": 619
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-mtb-biomarker-her2-status-1.json",
+    "fshName": "mii-exa-test-data-mtb-biomarker-her2-status-1",
+    "fshType": "Instance",
+    "fshFile": "modul-mtb/NgsBericht.fsh",
+    "startLine": 340,
+    "endLine": 351
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-mtb-brcaness-1.json",
+    "fshName": "mii-exa-test-data-mtb-brcaness-1",
+    "fshType": "Instance",
+    "fshFile": "modul-mtb/NgsBericht.fsh",
+    "startLine": 303,
+    "endLine": 317
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-mtb-consent-given-1.json",
+    "fshName": "mii-exa-test-data-mtb-consent-given-1",
+    "fshType": "Instance",
+    "fshFile": "modul-mtb/Behandlungsepisode.fsh",
+    "startLine": 31,
+    "endLine": 42
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-mtb-copy-number-variant-1.json",
+    "fshName": "mii-exa-test-data-mtb-copy-number-variant-1",
+    "fshType": "Instance",
+    "fshFile": "modul-mtb/NgsBericht.fsh",
+    "startLine": 94,
+    "endLine": 120
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-mtb-diagnostische-implikation-1.json",
+    "fshName": "mii-exa-test-data-mtb-diagnostische-implikation-1",
+    "fshType": "Instance",
+    "fshFile": "modul-mtb/NgsBericht.fsh",
+    "startLine": 188,
+    "endLine": 201
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-mtb-dna-fusion-1.json",
+    "fshName": "mii-exa-test-data-mtb-dna-fusion-1",
+    "fshType": "Instance",
+    "fshFile": "modul-mtb/NgsBericht.fsh",
+    "startLine": 125,
+    "endLine": 141
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-mtb-einfache-variante-1.json",
+    "fshName": "mii-exa-test-data-mtb-einfache-variante-1",
+    "fshType": "Instance",
+    "fshFile": "modul-mtb/NgsBericht.fsh",
+    "startLine": 71,
+    "endLine": 89
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-mtb-hrd-score-1.json",
+    "fshName": "mii-exa-test-data-mtb-hrd-score-1",
+    "fshType": "Instance",
+    "fshFile": "modul-mtb/NgsBericht.fsh",
+    "startLine": 282,
+    "endLine": 298
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-mtb-ihc-mmr-1.json",
+    "fshName": "mii-exa-test-data-mtb-ihc-mmr-1",
+    "fshType": "Instance",
+    "fshFile": "modul-mtb/NgsBericht.fsh",
+    "startLine": 458,
+    "endLine": 470
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-mtb-ihc-msi-1.json",
+    "fshName": "mii-exa-test-data-mtb-ihc-msi-1",
+    "fshType": "Instance",
+    "fshFile": "modul-mtb/NgsBericht.fsh",
+    "startLine": 475,
+    "endLine": 487
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-mtb-ihc-phosphorylation-1.json",
+    "fshName": "mii-exa-test-data-mtb-ihc-phosphorylation-1",
+    "fshType": "Instance",
+    "fshFile": "modul-mtb/NgsBericht.fsh",
+    "startLine": 438,
+    "endLine": 453
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-mtb-immunohistochemistry-1.json",
+    "fshName": "mii-exa-test-data-mtb-immunohistochemistry-1",
+    "fshType": "Instance",
+    "fshFile": "modul-mtb/NgsBericht.fsh",
+    "startLine": 371,
+    "endLine": 389
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-mtb-immunohistochemistry-her2-1.json",
+    "fshName": "mii-exa-test-data-mtb-immunohistochemistry-her2-1",
+    "fshType": "Instance",
+    "fshFile": "modul-mtb/NgsBericht.fsh",
+    "startLine": 394,
+    "endLine": 411
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-mtb-immunohistochemistry-pdl1-1.json",
+    "fshName": "mii-exa-test-data-mtb-immunohistochemistry-pdl1-1",
+    "fshType": "Instance",
+    "fshFile": "modul-mtb/NgsBericht.fsh",
+    "startLine": 416,
+    "endLine": 433
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-mtb-insituhybridization-1.json",
+    "fshName": "mii-exa-test-data-mtb-insituhybridization-1",
+    "fshType": "Instance",
+    "fshFile": "modul-mtb/NgsBericht.fsh",
+    "startLine": 492,
+    "endLine": 508
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-mtb-insituhybridization-her2-1.json",
+    "fshName": "mii-exa-test-data-mtb-insituhybridization-her2-1",
+    "fshType": "Instance",
+    "fshFile": "modul-mtb/NgsBericht.fsh",
+    "startLine": 513,
+    "endLine": 535
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-mtb-mikrosatelliteninstabilitaet-1.json",
+    "fshName": "mii-exa-test-data-mtb-mikrosatelliteninstabilitaet-1",
+    "fshType": "Instance",
+    "fshFile": "modul-mtb/NgsBericht.fsh",
+    "startLine": 263,
+    "endLine": 277
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-mtb-molekularer-biomarker-1.json",
+    "fshName": "mii-exa-test-data-mtb-molekularer-biomarker-1",
+    "fshType": "Instance",
+    "fshFile": "modul-mtb/NgsBericht.fsh",
+    "startLine": 227,
+    "endLine": 238
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-mtb-mutationslast-1.json",
+    "fshName": "mii-exa-test-data-mtb-mutationslast-1",
+    "fshType": "Instance",
+    "fshFile": "modul-mtb/NgsBericht.fsh",
+    "startLine": 243,
+    "endLine": 258
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-mtb-oncotree-1.json",
+    "fshName": "mii-exa-test-data-mtb-oncotree-1",
+    "fshType": "Instance",
+    "fshFile": "modul-mtb/Behandlungsepisode.fsh",
+    "startLine": 70,
+    "endLine": 81
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-mtb-ploidie-1.json",
+    "fshName": "mii-exa-test-data-mtb-ploidie-1",
+    "fshType": "Instance",
+    "fshFile": "modul-mtb/NgsBericht.fsh",
+    "startLine": 322,
+    "endLine": 335
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-mtb-response-befund-1.json",
+    "fshName": "mii-exa-test-data-mtb-response-befund-1",
+    "fshType": "Instance",
+    "fshFile": "modul-mtb/FollowUp.fsh",
+    "startLine": 75,
+    "endLine": 91
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-mtb-rna-fusion-1.json",
+    "fshName": "mii-exa-test-data-mtb-rna-fusion-1",
+    "fshType": "Instance",
+    "fshFile": "modul-mtb/NgsBericht.fsh",
+    "startLine": 146,
+    "endLine": 162
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-mtb-rna-seq-1.json",
+    "fshName": "mii-exa-test-data-mtb-rna-seq-1",
+    "fshType": "Instance",
+    "fshFile": "modul-mtb/NgsBericht.fsh",
+    "startLine": 167,
+    "endLine": 183
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-mtb-therapeutische-implikation-1.json",
+    "fshName": "mii-exa-test-data-mtb-therapeutische-implikation-1",
+    "fshType": "Instance",
+    "fshFile": "modul-mtb/NgsBericht.fsh",
+    "startLine": 206,
+    "endLine": 222
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-mtb-tumorausbreitung-1.json",
+    "fshName": "mii-exa-test-data-mtb-tumorausbreitung-1",
+    "fshType": "Instance",
+    "fshFile": "modul-mtb/Behandlungsepisode.fsh",
+    "startLine": 106,
+    "endLine": 118
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-mtb-tumorzellgehalt-1.json",
+    "fshName": "mii-exa-test-data-mtb-tumorzellgehalt-1",
+    "fshType": "Instance",
+    "fshFile": "modul-mtb/NgsBericht.fsh",
+    "startLine": 540,
+    "endLine": 554
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-mtb-who-grad-tumor-zns-1.json",
+    "fshName": "mii-exa-test-data-mtb-who-grad-tumor-zns-1",
+    "fshType": "Instance",
+    "fshFile": "modul-mtb/Behandlungsepisode.fsh",
+    "startLine": 123,
+    "endLine": 134
   },
   {
     "outputFile": "Observation-mii-exa-test-data-onko-anzahl-befallene-lymphknoten-1.json",
@@ -2200,6 +2592,30 @@
     "endLine": 44
   },
   {
+    "outputFile": "Observation-mii-exa-test-data-pat1-pro-p29-pain-int-tscore.json",
+    "fshName": "mii-exa-test-data-pat1-pro-p29-pain-int-tscore",
+    "fshType": "Instance",
+    "fshFile": "modul-pro/Observation.fsh",
+    "startLine": 328,
+    "endLine": 344
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-pat1-pro-p29-phys-fn-tscore.json",
+    "fshName": "mii-exa-test-data-pat1-pro-p29-phys-fn-tscore",
+    "fshType": "Instance",
+    "fshFile": "modul-pro/Observation.fsh",
+    "startLine": 351,
+    "endLine": 367
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-pat1-pro-p29-sleep-tscore.json",
+    "fshName": "mii-exa-test-data-pat1-pro-p29-sleep-tscore",
+    "fshType": "Instance",
+    "fshFile": "modul-pro/Observation.fsh",
+    "startLine": 374,
+    "endLine": 390
+  },
+  {
     "outputFile": "Observation-mii-exa-test-data-patient-1-icu-herzfrequenz-1.json",
     "fshName": "mii-exa-test-data-patient-1-icu-herzfrequenz-1",
     "fshType": "Instance",
@@ -2254,6 +2670,118 @@
     "fshFile": "modul-labor/Observation.fsh",
     "startLine": 107,
     "endLine": 115
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-1-pro-bdi-ii-score.json",
+    "fshName": "mii-exa-test-data-patient-1-pro-bdi-ii-score",
+    "fshType": "Instance",
+    "fshFile": "modul-pro/Observation.fsh",
+    "startLine": 101,
+    "endLine": 125
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-1-pro-eq5d5l-index.json",
+    "fshName": "mii-exa-test-data-patient-1-pro-eq5d5l-index",
+    "fshType": "Instance",
+    "fshFile": "modul-pro/Observation.fsh",
+    "startLine": 134,
+    "endLine": 157
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-1-pro-eq5d5l-profile.json",
+    "fshName": "mii-exa-test-data-patient-1-pro-eq5d5l-profile",
+    "fshType": "Instance",
+    "fshFile": "modul-pro/Observation.fsh",
+    "startLine": 199,
+    "endLine": 219
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-1-pro-eq5d5l-vas.json",
+    "fshName": "mii-exa-test-data-patient-1-pro-eq5d5l-vas",
+    "fshType": "Instance",
+    "fshFile": "modul-pro/Observation.fsh",
+    "startLine": 166,
+    "endLine": 189
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-1-pro-phq9-score.json",
+    "fshName": "mii-exa-test-data-patient-1-pro-phq9-score",
+    "fshType": "Instance",
+    "fshFile": "modul-pro/Observation.fsh",
+    "startLine": 12,
+    "endLine": 36
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-1-pro-promis-cogfn-sf4a-raw-score.json",
+    "fshName": "mii-exa-test-data-patient-1-pro-promis-cogfn-sf4a-raw-score",
+    "fshType": "Instance",
+    "fshFile": "modul-pro/Observation.fsh",
+    "startLine": 422,
+    "endLine": 448
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-1-pro-promis-cogfn-sf4a-tscore.json",
+    "fshName": "mii-exa-test-data-patient-1-pro-promis-cogfn-sf4a-tscore",
+    "fshType": "Instance",
+    "fshFile": "modul-pro/Observation.fsh",
+    "startLine": 457,
+    "endLine": 480
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-1-pro-promis-dep-sf4a-raw-score.json",
+    "fshName": "mii-exa-test-data-patient-1-pro-promis-dep-sf4a-raw-score",
+    "fshType": "Instance",
+    "fshFile": "modul-pro/Observation.fsh",
+    "startLine": 45,
+    "endLine": 64
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-1-pro-promis-dep-sf4a-tscore.json",
+    "fshName": "mii-exa-test-data-patient-1-pro-promis-dep-sf4a-tscore",
+    "fshType": "Instance",
+    "fshFile": "modul-pro/Observation.fsh",
+    "startLine": 73,
+    "endLine": 92
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-1-pro-promis29-anxiety-tscore.json",
+    "fshName": "mii-exa-test-data-patient-1-pro-promis29-anxiety-tscore",
+    "fshType": "Instance",
+    "fshFile": "modul-pro/Observation.fsh",
+    "startLine": 226,
+    "endLine": 249
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-1-pro-promis29-depression-tscore.json",
+    "fshName": "mii-exa-test-data-patient-1-pro-promis29-depression-tscore",
+    "fshType": "Instance",
+    "fshFile": "modul-pro/Observation.fsh",
+    "startLine": 256,
+    "endLine": 272
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-1-pro-promis29-fatigue-tscore.json",
+    "fshName": "mii-exa-test-data-patient-1-pro-promis29-fatigue-tscore",
+    "fshType": "Instance",
+    "fshFile": "modul-pro/Observation.fsh",
+    "startLine": 279,
+    "endLine": 295
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-1-pro-promis29-pain-intensity.json",
+    "fshName": "mii-exa-test-data-patient-1-pro-promis29-pain-intensity",
+    "fshType": "Instance",
+    "fshFile": "modul-pro/Observation.fsh",
+    "startLine": 303,
+    "endLine": 321
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-1-pro-promis29-social-function-tscore.json",
+    "fshName": "mii-exa-test-data-patient-1-pro-promis29-social-function-tscore",
+    "fshType": "Instance",
+    "fshFile": "modul-pro/Observation.fsh",
+    "startLine": 397,
+    "endLine": 413
   },
   {
     "outputFile": "Observation-mii-exa-test-data-patient-1-vitalstatus-1.json",
@@ -2365,7 +2893,7 @@
     "fshType": "Instance",
     "fshFile": "modul-molgen/DiagnostischeImplikation.fsh",
     "startLine": 3,
-    "endLine": 16
+    "endLine": 22
   },
   {
     "outputFile": "Observation-mii-exa-test-data-patient-3-molgen-genotyp-1.json",
@@ -2373,7 +2901,15 @@
     "fshType": "Instance",
     "fshFile": "modul-molgen/Genotyp.fsh",
     "startLine": 3,
-    "endLine": 22
+    "endLine": 28
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-3-molgen-molekulare-konsequenz-1.json",
+    "fshName": "mii-exa-test-data-patient-3-molgen-molekulare-konsequenz-1",
+    "fshType": "Instance",
+    "fshFile": "modul-molgen/MolekulareKonsequenz.fsh",
+    "startLine": 8,
+    "endLine": 26
   },
   {
     "outputFile": "Observation-mii-exa-test-data-patient-3-molgen-msi-1.json",
@@ -2381,7 +2917,7 @@
     "fshType": "Instance",
     "fshFile": "modul-molgen/Mikrosatelliteninstabilitaet.fsh",
     "startLine": 3,
-    "endLine": 15
+    "endLine": 22
   },
   {
     "outputFile": "Observation-mii-exa-test-data-patient-3-molgen-mutationslast-1.json",
@@ -2389,7 +2925,7 @@
     "fshType": "Instance",
     "fshFile": "modul-molgen/Mutationslast.fsh",
     "startLine": 3,
-    "endLine": 15
+    "endLine": 22
   },
   {
     "outputFile": "Observation-mii-exa-test-data-patient-3-molgen-therapeutische-implikation-1.json",
@@ -2397,7 +2933,7 @@
     "fshType": "Instance",
     "fshFile": "modul-molgen/TherapeutischeImplikation.fsh",
     "startLine": 3,
-    "endLine": 24
+    "endLine": 30
   },
   {
     "outputFile": "Observation-mii-exa-test-data-patient-3-molgen-variante-1.json",
@@ -2405,7 +2941,79 @@
     "fshType": "Instance",
     "fshFile": "modul-molgen/Variante.fsh",
     "startLine": 3,
-    "endLine": 44
+    "endLine": 50
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-3-seltene-blutgruppe-1.json",
+    "fshName": "mii-exa-test-data-patient-3-seltene-blutgruppe-1",
+    "fshType": "Instance",
+    "fshFile": "modul-seltene/BodyMeasurements.fsh",
+    "startLine": 72,
+    "endLine": 88
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-3-seltene-bmi-1.json",
+    "fshName": "mii-exa-test-data-patient-3-seltene-bmi-1",
+    "fshType": "Instance",
+    "fshFile": "modul-seltene/BodyMeasurements.fsh",
+    "startLine": 8,
+    "endLine": 21
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-3-seltene-hpo-assessment-1.json",
+    "fshName": "mii-exa-test-data-patient-3-seltene-hpo-assessment-1",
+    "fshType": "Instance",
+    "fshFile": "modul-seltene/HPOAssessment.fsh",
+    "startLine": 9,
+    "endLine": 24
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-3-seltene-hpo-assessment-2.json",
+    "fshName": "mii-exa-test-data-patient-3-seltene-hpo-assessment-2",
+    "fshType": "Instance",
+    "fshFile": "modul-seltene/HPOAssessment.fsh",
+    "startLine": 27,
+    "endLine": 40
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-3-seltene-hpo-assessment-3.json",
+    "fshName": "mii-exa-test-data-patient-3-seltene-hpo-assessment-3",
+    "fshType": "Instance",
+    "fshFile": "modul-seltene/HPOAssessment.fsh",
+    "startLine": 43,
+    "endLine": 60
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-3-seltene-hpo-assessment-4.json",
+    "fshName": "mii-exa-test-data-patient-3-seltene-hpo-assessment-4",
+    "fshType": "Instance",
+    "fshFile": "modul-seltene/HPOAssessment.fsh",
+    "startLine": 63,
+    "endLine": 79
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-3-seltene-hueftumfang-1.json",
+    "fshName": "mii-exa-test-data-patient-3-seltene-hueftumfang-1",
+    "fshType": "Instance",
+    "fshFile": "modul-seltene/BodyMeasurements.fsh",
+    "startLine": 40,
+    "endLine": 53
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-3-seltene-kopfumfang-1.json",
+    "fshName": "mii-exa-test-data-patient-3-seltene-kopfumfang-1",
+    "fshType": "Instance",
+    "fshFile": "modul-seltene/BodyMeasurements.fsh",
+    "startLine": 24,
+    "endLine": 37
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-3-seltene-taillenumfang-1.json",
+    "fshName": "mii-exa-test-data-patient-3-seltene-taillenumfang-1",
+    "fshType": "Instance",
+    "fshFile": "modul-seltene/BodyMeasurements.fsh",
+    "startLine": 56,
+    "endLine": 69
   },
   {
     "outputFile": "Observation-mii-exa-test-data-patient-3-vitalstatus-1.json",
@@ -2444,16 +3052,24 @@
     "fshName": "mii-exa-test-data-patient-4-molgen-diagnostische-implikation-1",
     "fshType": "Instance",
     "fshFile": "modul-molgen/DiagnostischeImplikation.fsh",
-    "startLine": 19,
-    "endLine": 39
+    "startLine": 25,
+    "endLine": 49
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-4-molgen-molekulare-konsequenz-1.json",
+    "fshName": "mii-exa-test-data-patient-4-molgen-molekulare-konsequenz-1",
+    "fshType": "Instance",
+    "fshFile": "modul-molgen/MolekulareKonsequenz.fsh",
+    "startLine": 29,
+    "endLine": 52
   },
   {
     "outputFile": "Observation-mii-exa-test-data-patient-4-molgen-variante-1.json",
     "fshName": "mii-exa-test-data-patient-4-molgen-variante-1",
     "fshType": "Instance",
     "fshFile": "modul-molgen/Variante.fsh",
-    "startLine": 57,
-    "endLine": 83
+    "startLine": 63,
+    "endLine": 89
   },
   {
     "outputFile": "Observation-mii-exa-test-data-patient-4-vitalstatus-1.json",
@@ -2792,6 +3408,38 @@
     "endLine": 14
   },
   {
+    "outputFile": "Procedure-mii-exa-test-data-mtb-genomic-study-1.json",
+    "fshName": "mii-exa-test-data-mtb-genomic-study-1",
+    "fshType": "Instance",
+    "fshFile": "modul-mtb/NgsBericht.fsh",
+    "startLine": 37,
+    "endLine": 46
+  },
+  {
+    "outputFile": "Procedure-mii-exa-test-data-mtb-genomic-study-analysis-1.json",
+    "fshName": "mii-exa-test-data-mtb-genomic-study-analysis-1",
+    "fshType": "Instance",
+    "fshFile": "modul-mtb/NgsBericht.fsh",
+    "startLine": 51,
+    "endLine": 66
+  },
+  {
+    "outputFile": "Procedure-mii-exa-test-data-mtb-systemische-therapie-1.json",
+    "fshName": "mii-exa-test-data-mtb-systemische-therapie-1",
+    "fshType": "Instance",
+    "fshFile": "modul-mtb/FollowUp.fsh",
+    "startLine": 28,
+    "endLine": 45
+  },
+  {
+    "outputFile": "Procedure-mii-exa-test-data-mtb-systemische-vortherapie-1.json",
+    "fshName": "mii-exa-test-data-mtb-systemische-vortherapie-1",
+    "fshType": "Instance",
+    "fshFile": "modul-mtb/Behandlungsepisode.fsh",
+    "startLine": 86,
+    "endLine": 101
+  },
+  {
     "outputFile": "Procedure-mii-exa-test-data-onko-bestrahlung-nuklearmedizin-1.json",
     "fshName": "mii-exa-test-data-onko-bestrahlung-nuklearmedizin-1",
     "fshType": "Instance",
@@ -2944,6 +3592,22 @@
     "endLine": 73
   },
   {
+    "outputFile": "Procedure-mii-exa-test-data-patient-3-molgen-genomic-study-1.json",
+    "fshName": "mii-exa-test-data-patient-3-molgen-genomic-study-1",
+    "fshType": "Instance",
+    "fshFile": "modul-molgen/GenomicStudy.fsh",
+    "startLine": 32,
+    "endLine": 44
+  },
+  {
+    "outputFile": "Procedure-mii-exa-test-data-patient-3-molgen-genomic-study-analysis-1.json",
+    "fshName": "mii-exa-test-data-patient-3-molgen-genomic-study-analysis-1",
+    "fshType": "Instance",
+    "fshFile": "modul-molgen/GenomicStudy.fsh",
+    "startLine": 6,
+    "endLine": 30
+  },
+  {
     "outputFile": "Procedure-mii-exa-test-data-patient-3-prozedur-1.json",
     "fshName": "mii-exa-test-data-patient-3-prozedur-1",
     "fshType": "Instance",
@@ -2966,6 +3630,38 @@
     "fshFile": "modul-prozedur/Prozedur.fsh",
     "startLine": 103,
     "endLine": 115
+  },
+  {
+    "outputFile": "Procedure-mii-exa-test-data-patient-3-seltene-therapie-durchgefuehrt-1.json",
+    "fshName": "mii-exa-test-data-patient-3-seltene-therapie-durchgefuehrt-1",
+    "fshType": "Instance",
+    "fshFile": "modul-seltene/Procedure.fsh",
+    "startLine": 7,
+    "endLine": 16
+  },
+  {
+    "outputFile": "Procedure-mii-exa-test-data-patient-3-seltene-therapie-durchgefuehrt-2.json",
+    "fshName": "mii-exa-test-data-patient-3-seltene-therapie-durchgefuehrt-2",
+    "fshType": "Instance",
+    "fshFile": "modul-seltene/Procedure.fsh",
+    "startLine": 19,
+    "endLine": 27
+  },
+  {
+    "outputFile": "Procedure-mii-exa-test-data-patient-4-molgen-genomic-study-1.json",
+    "fshName": "mii-exa-test-data-patient-4-molgen-genomic-study-1",
+    "fshType": "Instance",
+    "fshFile": "modul-molgen/GenomicStudy.fsh",
+    "startLine": 89,
+    "endLine": 101
+  },
+  {
+    "outputFile": "Procedure-mii-exa-test-data-patient-4-molgen-genomic-study-analysis-1.json",
+    "fshName": "mii-exa-test-data-patient-4-molgen-genomic-study-analysis-1",
+    "fshType": "Instance",
+    "fshFile": "modul-molgen/GenomicStudy.fsh",
+    "startLine": 47,
+    "endLine": 87
   },
   {
     "outputFile": "Procedure-mii-exa-test-data-patient-4-prozedur-1.json",
@@ -3072,6 +3768,30 @@
     "endLine": 296
   },
   {
+    "outputFile": "QuestionnaireResponse-mii-exa-test-data-patient-1-pro-phq9-response.json",
+    "fshName": "mii-exa-test-data-patient-1-pro-phq9-response",
+    "fshType": "Instance",
+    "fshFile": "modul-pro/QuestionnaireResponse.fsh",
+    "startLine": 10,
+    "endLine": 63
+  },
+  {
+    "outputFile": "QuestionnaireResponse-mii-exa-test-data-patient-1-pro-promis-dep-sf4a-response.json",
+    "fshName": "mii-exa-test-data-patient-1-pro-promis-dep-sf4a-response",
+    "fshType": "Instance",
+    "fshFile": "modul-pro/QuestionnaireResponse.fsh",
+    "startLine": 70,
+    "endLine": 103
+  },
+  {
+    "outputFile": "RequestGroup-mii-exa-test-data-mtb-therapieempfehlung-kombination-1.json",
+    "fshName": "mii-exa-test-data-mtb-therapieempfehlung-kombination-1",
+    "fshType": "Instance",
+    "fshFile": "modul-mtb/Therapieplan.fsh",
+    "startLine": 85,
+    "endLine": 100
+  },
+  {
     "outputFile": "RequestGroup-mii-exa-test-data-onko-therapieempfehlung-kombi-1.json",
     "fshName": "mii-exa-test-data-onko-therapieempfehlung-kombi-1",
     "fshType": "Instance",
@@ -3088,12 +3808,68 @@
     "endLine": 144
   },
   {
+    "outputFile": "RequestGroup-mii-exa-test-data-patient-3-seltene-therapie-kombination-1.json",
+    "fshName": "mii-exa-test-data-patient-3-seltene-therapie-kombination-1",
+    "fshType": "Instance",
+    "fshFile": "modul-seltene/RequestGroup.fsh",
+    "startLine": 6,
+    "endLine": 25
+  },
+  {
+    "outputFile": "ResearchStudy-mii-exa-test-data-mtb-studie-1.json",
+    "fshName": "mii-exa-test-data-mtb-studie-1",
+    "fshType": "Instance",
+    "fshFile": "modul-mtb/Therapieplan.fsh",
+    "startLine": 122,
+    "endLine": 134
+  },
+  {
+    "outputFile": "RiskAssessment-mii-exa-test-data-patient-3-molgen-polygener-risiko-score-1.json",
+    "fshName": "mii-exa-test-data-patient-3-molgen-polygener-risiko-score-1",
+    "fshType": "Instance",
+    "fshFile": "modul-molgen/PolygenerRisikoScore.fsh",
+    "startLine": 6,
+    "endLine": 27
+  },
+  {
     "outputFile": "ServiceRequest-mii-exa-test-data-anforderung.json",
     "fshName": "mii-exa-test-data-anforderung",
     "fshType": "Instance",
     "fshFile": "modul-bildgebung/ServiceRequest.fsh",
     "startLine": 1,
     "endLine": 17
+  },
+  {
+    "outputFile": "ServiceRequest-mii-exa-test-data-mtb-biopsie-auftrag-1.json",
+    "fshName": "mii-exa-test-data-mtb-biopsie-auftrag-1",
+    "fshType": "Instance",
+    "fshFile": "modul-mtb/Therapieplan.fsh",
+    "startLine": 172,
+    "endLine": 184
+  },
+  {
+    "outputFile": "ServiceRequest-mii-exa-test-data-mtb-histologie-evaluation-1.json",
+    "fshName": "mii-exa-test-data-mtb-histologie-evaluation-1",
+    "fshType": "Instance",
+    "fshFile": "modul-mtb/Therapieplan.fsh",
+    "startLine": 155,
+    "endLine": 167
+  },
+  {
+    "outputFile": "ServiceRequest-mii-exa-test-data-mtb-humangenetische-beratung-1.json",
+    "fshName": "mii-exa-test-data-mtb-humangenetische-beratung-1",
+    "fshType": "Instance",
+    "fshFile": "modul-mtb/Therapieplan.fsh",
+    "startLine": 139,
+    "endLine": 150
+  },
+  {
+    "outputFile": "ServiceRequest-mii-exa-test-data-mtb-studieneinschluss-anfrage-1.json",
+    "fshName": "mii-exa-test-data-mtb-studieneinschluss-anfrage-1",
+    "fshType": "Instance",
+    "fshFile": "modul-mtb/Therapieplan.fsh",
+    "startLine": 105,
+    "endLine": 117
   },
   {
     "outputFile": "ServiceRequest-mii-exa-test-data-onko-therapieempfehlung-op-1.json",
@@ -3141,7 +3917,23 @@
     "fshType": "Instance",
     "fshFile": "modul-molgen/Anforderung.fsh",
     "startLine": 2,
-    "endLine": 19
+    "endLine": 21
+  },
+  {
+    "outputFile": "ServiceRequest-mii-exa-test-data-patient-3-seltene-studieneinschluss-1.json",
+    "fshName": "mii-exa-test-data-patient-3-seltene-studieneinschluss-1",
+    "fshType": "Instance",
+    "fshFile": "modul-seltene/ServiceRequest.fsh",
+    "startLine": 49,
+    "endLine": 69
+  },
+  {
+    "outputFile": "ServiceRequest-mii-exa-test-data-patient-3-seltene-therapie-nicht-med-1.json",
+    "fshName": "mii-exa-test-data-patient-3-seltene-therapie-nicht-med-1",
+    "fshType": "Instance",
+    "fshFile": "modul-seltene/ServiceRequest.fsh",
+    "startLine": 10,
+    "endLine": 44
   },
   {
     "outputFile": "ServiceRequest-mii-exa-test-data-patient-4-labrequest-1.json",
@@ -3156,8 +3948,8 @@
     "fshName": "mii-exa-test-data-patient-4-molgen-anforderung-1",
     "fshType": "Instance",
     "fshFile": "modul-molgen/Anforderung.fsh",
-    "startLine": 22,
-    "endLine": 42
+    "startLine": 24,
+    "endLine": 46
   },
   {
     "outputFile": "ServiceRequest-mii-exa-test-data-patient-5-labrequest-1.json",
@@ -3405,6 +4197,6 @@
     "fshType": "Instance",
     "fshFile": "modul-molgen/Medikationsempfehlung.fsh",
     "startLine": 1,
-    "endLine": 14
+    "endLine": 15
   }
 ]

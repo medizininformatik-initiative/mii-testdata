@@ -50,6 +50,12 @@
           "code": "447886005",
           "version": "http://snomed.info/sct/900000000000207008/version/20230731",
           "display": "Adenocarcinoma of anorectum (disorder)"
+        },
+        {
+          "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+          "version": "2022",
+          "code": "C21.8",
+          "display": "Boesartige Neubildung des Rektums, Anus und Analkanals: Rektum, Anus und Analkanal, mehrere Teilbereiche ueberlappend"
         }
       ]
     }
@@ -68,6 +74,12 @@
             "code": "830150003",
             "version": "http://snomed.info/sct/900000000000207008/version/20230731",
             "display": "Malignant melanoma with B-Raf proto-oncogene, serine/threonine kinase V600E mutation (disorder)"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+            "version": "2022",
+            "code": "C43.9",
+            "display": "Boesartiges Melanom der Haut, nicht naeher bezeichnet"
           }
         ]
       },

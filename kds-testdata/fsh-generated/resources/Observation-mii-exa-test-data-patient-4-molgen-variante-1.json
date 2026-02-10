@@ -211,6 +211,26 @@
           }
         ]
       }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "48000-4",
+            "display": "Chromosome [Identifier]"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "LA21257-8",
+            "system": "http://loinc.org",
+            "display": "Chromosome 5"
+          }
+        ]
+      }
     }
   ],
   "code": {
@@ -226,6 +246,8 @@
   "subject": {
     "reference": "Patient/mii-exa-test-data-patient-4"
   },
+  "effectiveDateTime": "2022-11-30",
+  "issued": "2022-12-05T14:00:00+01:00",
   "valueCodeableConcept": {
     "coding": [
       {

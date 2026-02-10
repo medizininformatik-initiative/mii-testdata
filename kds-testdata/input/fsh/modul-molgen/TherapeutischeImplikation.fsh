@@ -3,14 +3,19 @@
 Instance: mii-exa-test-data-patient-3-molgen-therapeutische-implikation-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/therapeutische-implikation
 Usage: #example
-Description: "Observation: Therapeutische Implikation für BRAF-Mutation"
+Description: "Observation: Therapeutische Implikation fuer BRAF-Mutation"
 * insert TestDataLabel
-//* meta.profile[0] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/therapeutische-implikation"
 * meta.profile[+] = "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/therapeutic-implication"
 * code = $tbd-codes-cs#therapeutic-implication "Therapeutic Implication"
 * category[labCategory] = $observation-category#laboratory "Laboratory"
+* status = #final
+* subject = Reference(mii-exa-test-data-patient-3)
+* encounter = Reference(mii-exa-test-data-patient-3-encounter-1)
+* effectiveDateTime = "2022-04-07"
+* issued = "2022-04-12T10:30:00+02:00"
+* derivedFrom[variant] = Reference(mii-exa-test-data-patient-3-molgen-variante-1)
 * component[conclusion-string].code = $tbd-codes-cs#conclusion-string
-* component[conclusion-string].valueString = "Nachweis einer aktivierenden Mutation BRAF V600E. Triple-Therapie mit einem EGFR-Antikörper sowie einem BRAF- und einem MEK- Inhibitor prüfen."
+* component[conclusion-string].valueString = "Nachweis einer aktivierenden Mutation BRAF V600E. Triple-Therapie mit einem EGFR-Antikoerper sowie einem BRAF- und einem MEK-Inhibitor pruefen."
 * component[medication-assessed][0].code = $loinc#51963-7 "Medication assessed [ID]"
 * component[medication-assessed][0].valueCodeableConcept.coding[0] = $atc#L01EC "BRAF-Serin-Threoninkinase-Inhibitoren"
 * component[medication-assessed][0].valueCodeableConcept.coding[+] = $sct#703645005 "Product containing B-Raf inhibitor (product)"
@@ -19,6 +24,7 @@ Description: "Observation: Therapeutische Implikation für BRAF-Mutation"
 * component[medication-assessed][1].valueCodeableConcept = $atc#L01FE "EGFR (Epidermaler Wachstumsfaktor-Rezeptor)-Inhibitoren"
 * component[medication-assessed][2].code = $loinc#51963-7 "Medication assessed [ID]"
 * component[medication-assessed][2].valueCodeableConcept = $atc#L01EE "Mitogen-aktivierte Proteinkinase (MEK)-Inhibitoren"
-* status = #final
-* subject = Reference(mii-exa-test-data-patient-3)
-* derivedFrom = Reference(mii-exa-test-data-patient-3-molgen-variante-1)
+* component[evidence-level].code = $loinc#93044-6 "Level of evidence"
+* component[evidence-level].valueCodeableConcept.text = "Tier I - Level A (FDA-approved therapy)"
+// code inherited from profile pattern (loinc#81259-4)
+* component[phenotypic-treatment-context].valueCodeableConcept = $sct#447886005 "Adenocarcinoma of anorectum (disorder)"

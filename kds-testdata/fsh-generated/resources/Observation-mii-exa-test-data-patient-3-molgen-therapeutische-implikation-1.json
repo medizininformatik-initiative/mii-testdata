@@ -33,6 +33,11 @@
       ]
     }
   ],
+  "derivedFrom": [
+    {
+      "reference": "Observation/mii-exa-test-data-patient-3-molgen-variante-1"
+    }
+  ],
   "component": [
     {
       "code": {
@@ -43,7 +48,7 @@
           }
         ]
       },
-      "valueString": "Nachweis einer aktivierenden Mutation BRAF V600E. Triple-Therapie mit einem EGFR-Antikörper sowie einem BRAF- und einem MEK- Inhibitor prüfen."
+      "valueString": "Nachweis einer aktivierenden Mutation BRAF V600E. Triple-Therapie mit einem EGFR-Antikoerper sowie einem BRAF- und einem MEK-Inhibitor pruefen."
     },
     {
       "valueCodeableConcept": {
@@ -111,11 +116,40 @@
           }
         ]
       }
-    }
-  ],
-  "derivedFrom": [
+    },
     {
-      "reference": "Observation/mii-exa-test-data-patient-3-molgen-variante-1"
+      "valueCodeableConcept": {
+        "text": "Tier I - Level A (FDA-approved therapy)"
+      },
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "93044-6",
+            "display": "Level of evidence"
+          }
+        ]
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "81259-4"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "447886005",
+            "system": "http://snomed.info/sct",
+            "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+            "display": "Adenocarcinoma of anorectum (disorder)"
+          }
+        ]
+      }
     }
   ],
   "code": {
@@ -130,5 +164,10 @@
   "status": "final",
   "subject": {
     "reference": "Patient/mii-exa-test-data-patient-3"
-  }
+  },
+  "encounter": {
+    "reference": "Encounter/mii-exa-test-data-patient-3-encounter-1"
+  },
+  "effectiveDateTime": "2022-04-07",
+  "issued": "2022-04-12T10:30:00+02:00"
 }

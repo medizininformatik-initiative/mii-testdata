@@ -1,0 +1,53 @@
+{
+  "resourceType": "Observation",
+  "id": "mii-exa-test-data-mtb-tumorausbreitung-1",
+  "meta": {
+    "security": [
+      {
+        "code": "HTEST",
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "display": "test health data"
+      }
+    ],
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-tumorausbreitung"
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "473302008",
+          "system": "http://snomed.info/sct",
+          "display": "Aware of diagnosis"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "code": "371508000",
+        "system": "http://snomed.info/sct",
+        "display": "Tumor stage"
+      }
+    ]
+  },
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "255127006",
+        "display": "Locoregional (qualifier value)"
+      }
+    ]
+  },
+  "status": "final",
+  "subject": {
+    "reference": "Patient/mii-exa-test-data-patient-1"
+  },
+  "encounter": {
+    "reference": "Encounter/mii-exa-test-data-patient-1-encounter-1"
+  },
+  "effectiveDateTime": "2024-01-05"
+}

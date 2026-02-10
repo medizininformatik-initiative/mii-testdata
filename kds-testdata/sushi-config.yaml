@@ -33,13 +33,18 @@ dependencies:
   eu.miabis.r4: 0.2.0
   de.medizininformatikinitiative.kerndatensatz.consent: 2026.0.1-rc-1
   de.medizininformatikinitiative.kerndatensatz.meta: 2026.0.x
-  de.medizininformatikinitiative.kerndatensatz.icu: 2026.0.1-rc1
+  de.medizininformatikinitiative.kerndatensatz.icu: 2026.0.x
   de.medizininformatikinitiative.kerndatensatz.mikrobiologie: 2025.0.x
   de.medizininformatikinitiative.kerndatensatz.molgen: 2026.0.x
   de.medizininformatikinitiative.kerndatensatz.patho: 2026.0.x
   de.medizininformatikinitiative.kerndatensatz.studie: 2026.0.x
   de.medizininformatikinitiative.kerndatensatz.bildgebung: 2026.0.x
   de.medizininformatikinitiative.kerndatensatz.onkologie: 2026.0.x
+  de.medizininformatikinitiative.kerndatensatz.seltene: 2026.0.x
+  de.medizininformatikinitiative.kerndatensatz.mtb: 2026.0.x
+  de.medizininformatikinitiative.kerndatensatz.pros: 2026.0.x
+  hl7.fhir.uv.genomics-reporting: 3.0.0
+  hl7.fhir.uv.sdc: 3.0.0
   hl7.fhir.extensions.r5: 4.0.1
   de.basisprofil.r4: 1.5.x
   de.einwilligungsmanagement: 1.0.x

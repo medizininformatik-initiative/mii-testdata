@@ -43,6 +43,11 @@
     "de.medizininformatikinitiative.kerndatensatz.studie": "2026.0.x",
     "de.medizininformatikinitiative.kerndatensatz.bildgebung": "2026.0.x",
     "de.medizininformatikinitiative.kerndatensatz.onkologie": "2026.0.x",
-    "de.einwilligungsmanagement": "1.0.x"
+    "de.medizininformatikinitiative.kerndatensatz.seltene": "2026.0.x",
+    "de.medizininformatikinitiative.kerndatensatz.mtb": "2026.0.x",
+    "de.medizininformatikinitiative.kerndatensatz.pros": "2026.0.x",
+    "de.einwilligungsmanagement": "1.0.x",
+    "hl7.fhir.uv.genomics-reporting": "3.0.0",
+    "hl7.fhir.uv.sdc": "3.0.0"
   }
 }
