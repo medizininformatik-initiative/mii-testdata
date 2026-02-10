@@ -1,0 +1,115 @@
+{
+  "resourceType": "DiagnosticReport",
+  "id": "mii-exa-test-data-patient-1-patho-report-1",
+  "meta": {
+    "security": [
+      {
+        "code": "HTEST",
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "display": "test health data"
+      }
+    ],
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-report"
+    ]
+  },
+  "identifier": [
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "ACSN",
+            "display": "Accession ID"
+          }
+        ]
+      },
+      "system": "https://www.charite.de/fhir/sid/patho-befundnummern",
+      "value": "E24.00001"
+    }
+  ],
+  "basedOn": [
+    {
+      "reference": "ServiceRequest/mii-exa-test-data-patient-1-patho-request-1"
+    }
+  ],
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "PAT",
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "display": "Pathology (gross & histopath, not surgical)"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "60568-3",
+        "display": "Pathology Synoptic report"
+      }
+    ]
+  },
+  "performer": [
+    {
+      "reference": "Practitioner/mii-exa-test-data-practitioner-physician-1"
+    }
+  ],
+  "specimen": [
+    {
+      "reference": "Specimen/mii-exa-test-data-patient-1-patho-specimen-1"
+    },
+    {
+      "reference": "Specimen/mii-exa-test-data-patient-1-patho-specimen-2"
+    }
+  ],
+  "result": [
+    {
+      "reference": "Observation/mii-exa-test-data-patient-1-patho-intraoperative-grouper-1"
+    },
+    {
+      "reference": "Observation/mii-exa-test-data-patient-1-patho-macroscopic-grouper-1"
+    },
+    {
+      "reference": "Observation/mii-exa-test-data-patient-1-patho-microscopic-grouper-1"
+    },
+    {
+      "reference": "Observation/mii-exa-test-data-patient-1-patho-additional-grouper-1"
+    },
+    {
+      "reference": "Observation/mii-exa-test-data-pat1-patho-diag-concl-grouper-1"
+    }
+  ],
+  "conclusionCode": [
+    {
+      "coding": [
+        {
+          "code": "399490008",
+          "system": "http://snomed.info/sct",
+          "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+          "display": "Adenocarcinoma of prostate (disorder)"
+        }
+      ]
+    }
+  ],
+  "media": [
+    {
+      "link": {
+        "reference": "Media/mii-exa-test-data-patient-1-patho-image-1"
+      },
+      "comment": "Makroskopie Prostata-Stanzbiopsie, Probe A"
+    }
+  ],
+  "status": "final",
+  "subject": {
+    "reference": "Patient/mii-exa-test-data-patient-1"
+  },
+  "encounter": {
+    "reference": "Encounter/mii-exa-test-data-patient-1-encounter-1"
+  },
+  "effectiveDateTime": "2024-02-16",
+  "conclusion": "Maessig differenziertes azinäres Adenokarzinom der Prostata (rechter Seitenlappen lateral), Gleason-Score 3+4=7, ISUP-Gradgruppe 2. Tumorinfiltration in ca. 40% der Schnittflaeche des Stanzzylinders."
+}

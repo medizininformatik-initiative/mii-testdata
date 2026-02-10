@@ -1,0 +1,115 @@
+{
+  "resourceType": "Observation",
+  "id": "mii-exa-test-data-radiologische-beobachtung-ct",
+  "meta": {
+    "security": [
+      {
+        "code": "HTEST",
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "display": "test health data"
+      }
+    ],
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologische-beobachtung"
+    ]
+  },
+  "extension": [
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-series-uid",
+      "valueId": "2.16.840.1.113883.6.43.1.2.3456789.1234567890123456"
+    },
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-sop-instanz-uid",
+      "valueId": "2.16.840.1.113883.6.43.1.2.3456789.1234567890123456.153"
+    }
+  ],
+  "bodySite": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/bodySite",
+        "valueReference": {
+          "reference": "BodyStructure/mii-exa-test-data-koerperstruktur-ct"
+        }
+      }
+    ],
+    "coding": [
+      {
+        "code": "44029006",
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+        "display": "Structure of anterior segment of upper lobe of right lung (body structure)"
+      }
+    ]
+  },
+  "partOf": [
+    {
+      "reference": "Procedure/mii-exa-test-data-befundungsprozedur-ct"
+    }
+  ],
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "imaging",
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "display": "Imaging"
+        }
+      ]
+    }
+  ],
+  "derivedFrom": [
+    {
+      "reference": "ImagingStudy/mii-exa-test-data-bildgebungsstudie-ct"
+    }
+  ],
+  "component": [
+    {
+      "valueQuantity": {
+        "value": 18,
+        "unit": "millimeter",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm"
+      },
+      "code": {
+        "coding": [
+          {
+            "code": "33999-4",
+            "system": "http://loinc.org",
+            "display": "Diameter.maximum Lesion"
+          }
+        ]
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "10157-6",
+            "system": "http://loinc.org",
+            "display": "History of family member diseases Narrative"
+          }
+        ]
+      },
+      "valueBoolean": false
+    }
+  ],
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "code": "30746-2",
+        "system": "http://loinc.org",
+        "display": "CT Chest"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/mii-exa-test-data-patient-2"
+  },
+  "encounter": {
+    "reference": "Encounter/mii-exa-test-data-patient-2-encounter-1"
+  },
+  "effectiveDateTime": "2024-11-05T11:30:00+01:00",
+  "issued": "2024-11-05T13:45:00+01:00",
+  "valueString": "Solitaerer pulmonaler Rundherd im rechten Oberlappen, Segment 3, 18 mm Durchmesser, unregelmaeßig begrenzt mit Spiculae, ohne Verkalkungen"
+}

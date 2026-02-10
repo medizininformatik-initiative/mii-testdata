@@ -1,0 +1,71 @@
+{
+  "resourceType": "Procedure",
+  "id": "mii-exa-test-data-bildgebungsprozedur-ct",
+  "meta": {
+    "security": [
+      {
+        "code": "HTEST",
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "display": "test health data"
+      }
+    ],
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-bildgebungsprozedur"
+    ]
+  },
+  "basedOn": [
+    {
+      "reference": "ServiceRequest/mii-exa-test-data-anforderung-ct"
+    }
+  ],
+  "bodySite": [
+    {
+      "coding": [
+        {
+          "code": "51185008",
+          "system": "http://snomed.info/sct",
+          "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+          "display": "Thoracic structure (body structure)"
+        }
+      ]
+    }
+  ],
+  "report": [
+    {
+      "reference": "DiagnosticReport/mii-exa-test-data-befundbericht-ct"
+    }
+  ],
+  "note": [
+    {
+      "text": "CT Thorax mit Kontrastmittel zur Abklaerung eines pulmonalen Rundherdes"
+    }
+  ],
+  "status": "completed",
+  "category": {
+    "coding": [
+      {
+        "code": "363679005",
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+        "display": "Imaging (procedure)"
+      }
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "169070004",
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+        "display": "Computed tomography of chest (procedure)"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/mii-exa-test-data-patient-2"
+  },
+  "encounter": {
+    "reference": "Encounter/mii-exa-test-data-patient-2-encounter-1"
+  },
+  "performedDateTime": "2024-11-05T09:15:00+01:00"
+}

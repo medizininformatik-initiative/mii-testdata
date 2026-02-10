@@ -91,6 +91,121 @@
       }
     }
   ],
+  "processing": [
+    {
+      "extension": [
+        {
+          "valueRange": {
+            "low": {
+              "unit": "°C",
+              "system": "http://unitsofmeasure.org",
+              "code": "Cel",
+              "value": 15
+            },
+            "high": {
+              "unit": "°C",
+              "system": "http://unitsofmeasure.org",
+              "code": "Cel",
+              "value": 25
+            }
+          },
+          "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Temperaturbedingungen"
+        }
+      ],
+      "timePeriod": {
+        "start": "2023-07-12T06:00:00+02:00",
+        "end": "2023-07-12T06:30:00+02:00"
+      },
+      "procedure": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "1186936003",
+            "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+            "display": "Storage of specimen (procedure)"
+          },
+          {
+            "system": "http://snomed.info/sct"
+          }
+        ]
+      }
+    },
+    {
+      "extension": [
+        {
+          "valueRange": {
+            "low": {
+              "unit": "°C",
+              "system": "http://unitsofmeasure.org",
+              "code": "Cel",
+              "value": 15
+            },
+            "high": {
+              "unit": "°C",
+              "system": "http://unitsofmeasure.org",
+              "code": "Cel",
+              "value": 25
+            }
+          },
+          "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Temperaturbedingungen"
+        }
+      ],
+      "timePeriod": {
+        "start": "2023-07-12T06:30:00+02:00",
+        "end": "2023-07-12T06:45:00+02:00"
+      },
+      "procedure": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "73373003",
+            "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+            "display": "Specimen centrifugation (procedure)"
+          }
+        ]
+      }
+    },
+    {
+      "extension": [
+        {
+          "valueRange": {
+            "low": {
+              "unit": "°C",
+              "system": "http://unitsofmeasure.org",
+              "code": "Cel",
+              "value": -25
+            },
+            "high": {
+              "unit": "°C",
+              "system": "http://unitsofmeasure.org",
+              "code": "Cel",
+              "value": -15
+            }
+          },
+          "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Temperaturbedingungen"
+        }
+      ],
+      "procedure": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "1186936003",
+            "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+            "display": "Storage of specimen (procedure)"
+          },
+          {
+            "code": "27872000",
+            "system": "http://snomed.info/sct",
+            "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+            "display": "Specimen freezing (procedure)"
+          }
+        ]
+      },
+      "timePeriod": {
+        "start": "2023-07-12T06:45:00+02:00"
+      }
+    }
+  ],
   "status": "available",
   "subject": {
     "reference": "Patient/mii-exa-test-data-patient-5"

@@ -15,3 +15,24 @@ Description: "ServiceRequest: Anforderung MR"
 * reasonCode = $sct#268547008 "Screening for malignant neoplasm of breast (procedure)"
 * reasonReference = Reference(mii-exa-test-data-patient-1-diagnose-1)
 * supportingInfo = Reference(mii-exa-test-data-bildgebungsstudie)
+
+// CT Thorax scenario
+Instance: mii-exa-test-data-anforderung-ct
+InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-anforderung-bildgebung
+Usage: #example
+Description: "ServiceRequest: Anforderung CT Thorax"
+* insert TestDataLabel
+* status = #completed
+* intent = #order
+* priority = #urgent
+* category = $sct#363679005 "Imaging (procedure)"
+* code = $sct#169070004 "Computed tomography of chest (procedure)"
+* subject = Reference(mii-exa-test-data-patient-2)
+* encounter = Reference(mii-exa-test-data-patient-2-encounter-1)
+* authoredOn = "2024-11-04T16:30:00+01:00"
+* requester = Reference(mii-exa-test-data-practitioner-physician-1)
+* performer = Reference(mii-exa-test-data-practitioner-physician-1)
+* reasonCode = $sct#427359005 "Solitary nodule of lung (disorder)"
+* reasonReference = Reference(mii-exa-test-data-patient-2-diagnose-1)
+* supportingInfo = Reference(mii-exa-test-data-bildgebungsstudie-ct)
+* note.text = "V.a. Bronchialkarzinom bei Raucher mit Haemoptysen. CT Thorax mit KM zur Abklaerung dringend erbeten."

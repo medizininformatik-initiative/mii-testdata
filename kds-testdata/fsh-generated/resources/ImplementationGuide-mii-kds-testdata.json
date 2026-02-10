@@ -231,6 +231,38 @@
       },
       {
         "reference": {
+          "reference": "EvidenceVariable/mii-exa-test-data-studie-evidencevariable-3"
+        },
+        "name": "Ausschlusskriterium: Aktive maligne Erkrankung",
+        "description": "EvidenceVariable: Ausschlusskriterium – Aktive maligne Erkrankung",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Composition/mii-exa-test-data-semistrukt-befundbericht-ct"
+        },
+        "name": "CT Thorax Befundbericht",
+        "description": "Composition: CT Thorax semistrukturierter Befundbericht",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "EvidenceVariable/mii-exa-test-data-studie-evidencevariable-1"
+        },
+        "name": "Einschlusskriterium: Alter >= 18 Jahre",
+        "description": "EvidenceVariable: Einschlusskriterium – Alter >= 18 Jahre",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "EvidenceVariable/mii-exa-test-data-studie-evidencevariable-2"
+        },
+        "name": "Einschlusskriterium: Bestätigte entzündliche Erkrankung",
+        "description": "EvidenceVariable: Einschlusskriterium – Bestätigte entzündliche Erkrankung",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "List/mii-exa-test-data-patient-6-list-entlassmedikation"
         },
         "name": "Entlassmedikation",
@@ -367,10 +399,26 @@
       },
       {
         "reference": {
+          "reference": "ServiceRequest/mii-exa-test-data-anforderung-ct"
+        },
+        "name": "mii-exa-test-data-anforderung-ct",
+        "description": "ServiceRequest: Anforderung CT Thorax",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "DiagnosticReport/mii-exa-test-data-befundbericht"
         },
         "name": "mii-exa-test-data-befundbericht",
         "description": "DiagnosticReport: Befundbericht",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "DiagnosticReport/mii-exa-test-data-befundbericht-ct"
+        },
+        "name": "mii-exa-test-data-befundbericht-ct",
+        "description": "DiagnosticReport: CT Thorax Befundbericht",
         "exampleBoolean": true
       },
       {
@@ -383,10 +431,26 @@
       },
       {
         "reference": {
+          "reference": "Procedure/mii-exa-test-data-befundungsprozedur-ct"
+        },
+        "name": "mii-exa-test-data-befundungsprozedur-ct",
+        "description": "Procedure: CT Thorax Befundungsprozedur",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "CarePlan/mii-exa-test-data-behandlungsempfehlung"
         },
         "name": "mii-exa-test-data-behandlungsempfehlung",
         "description": "CarePlan: Behandlungsempfehlung",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "CarePlan/mii-exa-test-data-behandlungsempfehlung-ct"
+        },
+        "name": "mii-exa-test-data-behandlungsempfehlung-ct",
+        "description": "CarePlan: CT Thorax Behandlungsempfehlung",
         "exampleBoolean": true
       },
       {
@@ -399,10 +463,58 @@
       },
       {
         "reference": {
+          "reference": "Procedure/mii-exa-test-data-bildgebungsprozedur-ct"
+        },
+        "name": "mii-exa-test-data-bildgebungsprozedur-ct",
+        "description": "Procedure: CT Thorax Bildgebungsprozedur",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "ImagingStudy/mii-exa-test-data-bildgebungsstudie"
         },
         "name": "mii-exa-test-data-bildgebungsstudie",
         "description": "ImagingStudy: MagneticResonance",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "ImagingStudy/mii-exa-test-data-bildgebungsstudie-ct"
+        },
+        "name": "mii-exa-test-data-bildgebungsstudie-ct",
+        "description": "ImagingStudy: ComputedTomography Thorax",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Substance/mii-exa-test-data-biobank-substance-dmso"
+        },
+        "name": "mii-exa-test-data-biobank-substance-dmso",
+        "description": "Substance: Dimethylsulfoxid (DMSO, Kryoprotektivum)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Substance/mii-exa-test-data-biobank-substance-formalin"
+        },
+        "name": "mii-exa-test-data-biobank-substance-formalin",
+        "description": "Substance: Formalin (Fixierungsmittel)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Substance/mii-exa-test-data-biobank-substance-heparin"
+        },
+        "name": "mii-exa-test-data-biobank-substance-heparin",
+        "description": "Substance: Heparin (Antikoagulans)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Substance/mii-exa-test-data-biobank-substance-natriumcitrat"
+        },
+        "name": "mii-exa-test-data-biobank-substance-natriumcitrat",
+        "description": "Substance: Natriumcitrat (Antikoagulans)",
         "exampleBoolean": true
       },
       {
@@ -535,6 +647,14 @@
       },
       {
         "reference": {
+          "reference": "Device/mii-exa-test-data-geraet-ct"
+        },
+        "name": "mii-exa-test-data-geraet-ct",
+        "description": "Device: CT-Geraet",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "BodyStructure/mii-exa-test-data-koerperstruktur"
         },
         "name": "mii-exa-test-data-koerperstruktur",
@@ -543,10 +663,26 @@
       },
       {
         "reference": {
+          "reference": "BodyStructure/mii-exa-test-data-koerperstruktur-ct"
+        },
+        "name": "mii-exa-test-data-koerperstruktur-ct",
+        "description": "BodyStructure: Lungenrundherd rechter Oberlappen",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "MedicationAdministration/mii-exa-test-data-kontrastmittelgabe"
         },
         "name": "mii-exa-test-data-kontrastmittelgabe",
         "description": "MedicationAdministration: kontrastmittelgabe",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "MedicationAdministration/mii-exa-test-data-kontrastmittelgabe-ct"
+        },
+        "name": "mii-exa-test-data-kontrastmittelgabe-ct",
+        "description": "MedicationAdministration: CT Thorax Kontrastmittelgabe",
         "exampleBoolean": true
       },
       {
@@ -1543,6 +1679,14 @@
       },
       {
         "reference": {
+          "reference": "Observation/mii-exa-test-data-pat1-patho-diag-concl-grouper-1"
+        },
+        "name": "mii-exa-test-data-pat1-patho-diag-concl-grouper-1",
+        "description": "Patho Diagnostische Schlussfolgerung: Prostata-Adenokarzinom, Gleason 3+4=7, ISUP 2",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Observation/mii-exa-test-data-pat1-pro-p29-pain-int-tscore"
         },
         "name": "mii-exa-test-data-pat1-pro-p29-pain-int-tscore",
@@ -1571,6 +1715,22 @@
         },
         "name": "mii-exa-test-data-patient-1",
         "description": "Patient: Patient-1",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-biobank-dna-konzentration-1"
+        },
+        "name": "mii-exa-test-data-patient-1-biobank-dna-konzentration-1",
+        "description": "Observation: DNA-Konzentration aus EDTA-Blut (Patient 1)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-biobank-qualitaetspruefung-1"
+        },
+        "name": "mii-exa-test-data-patient-1-biobank-qualitaetspruefung-1",
+        "description": "Observation: Qualitaetspruefung STR-Analyse EDTA-Blut (Patient 1)",
         "exampleBoolean": true
       },
       {
@@ -1762,6 +1922,166 @@
         },
         "name": "mii-exa-test-data-patient-1-medstatement-3",
         "description": "MedicationStatement: Propofol 5 mg/min intravenös",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-patho-additional-finding-1"
+        },
+        "name": "mii-exa-test-data-patient-1-patho-additional-finding-1",
+        "description": "Patho Zusatzbefund: AMACR Immunhistochemie positiv",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-patho-additional-grouper-1"
+        },
+        "name": "mii-exa-test-data-patient-1-patho-additional-grouper-1",
+        "description": "Patho Zusaetzlicher Grouper: Ergaenzende immunhistochemische Befunde",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-patho-diagnostic-finding-1"
+        },
+        "name": "mii-exa-test-data-patient-1-patho-diagnostic-finding-1",
+        "description": "Patho Diagnose: ICD-O-3 Morphologie - Azinäres Adenokarzinom",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-patho-diagnostic-finding-2"
+        },
+        "name": "mii-exa-test-data-patient-1-patho-diagnostic-finding-2",
+        "description": "Patho Diagnose: Gleason-Score 3+4=7",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-patho-diagnostic-finding-3"
+        },
+        "name": "mii-exa-test-data-patient-1-patho-diagnostic-finding-3",
+        "description": "Patho Diagnose: ISUP Gradgruppe 2",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Media/mii-exa-test-data-patient-1-patho-image-1"
+        },
+        "name": "mii-exa-test-data-patient-1-patho-image-1",
+        "description": "Patho Image: Makroskopisches Foto der Prostata-Stanzbiopsie",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Media/mii-exa-test-data-patient-1-patho-image-2"
+        },
+        "name": "mii-exa-test-data-patient-1-patho-image-2",
+        "description": "Patho Image: Mikroskopisches Bild des HE-gefaerbten Schnitts",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-patho-intraop-finding-1"
+        },
+        "name": "mii-exa-test-data-patient-1-patho-intraop-finding-1",
+        "description": "Patho Intraoperativer Befund: Schnellschnitt-Tumornachweis",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-patho-intraoperative-grouper-1"
+        },
+        "name": "mii-exa-test-data-patient-1-patho-intraoperative-grouper-1",
+        "description": "Patho Intraoperativer Grouper: Schnellschnittbefund Prostata-Stanzbiopsie",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-patho-macro-finding-1"
+        },
+        "name": "mii-exa-test-data-patient-1-patho-macro-finding-1",
+        "description": "Patho Makro-Befund: Entnahmeort der Prostata-Stanzbiopsie",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-patho-macro-finding-2"
+        },
+        "name": "mii-exa-test-data-patient-1-patho-macro-finding-2",
+        "description": "Patho Makro-Befund: Stanzzylinderlänge",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-patho-macroscopic-grouper-1"
+        },
+        "name": "mii-exa-test-data-patient-1-patho-macroscopic-grouper-1",
+        "description": "Patho Makroskopischer Grouper: Prostata-Stanzbiopsie A",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-patho-micro-finding-1"
+        },
+        "name": "mii-exa-test-data-patient-1-patho-micro-finding-1",
+        "description": "Patho Mikro-Befund: Histologischer Typ - Azinäres Adenokarzinom",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-patho-micro-finding-2"
+        },
+        "name": "mii-exa-test-data-patient-1-patho-micro-finding-2",
+        "description": "Patho Mikro-Befund: Primaeres Gleason-Muster 3",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-patho-micro-finding-3"
+        },
+        "name": "mii-exa-test-data-patient-1-patho-micro-finding-3",
+        "description": "Patho Mikro-Befund: Sekundaeres Gleason-Muster 4",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-patho-microscopic-grouper-1"
+        },
+        "name": "mii-exa-test-data-patient-1-patho-microscopic-grouper-1",
+        "description": "Patho Mikroskopischer Grouper: Prostata-Stanzbiopsie A",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "DiagnosticReport/mii-exa-test-data-patient-1-patho-report-1"
+        },
+        "name": "mii-exa-test-data-patient-1-patho-report-1",
+        "description": "Patho Befundbericht: Prostata-Stanzbiopsie Adenokarzinom Gleason 3+4=7",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "ServiceRequest/mii-exa-test-data-patient-1-patho-request-1"
+        },
+        "name": "mii-exa-test-data-patient-1-patho-request-1",
+        "description": "Patho ServiceRequest: Prostata-Stanzbiopsie-Untersuchung fuer Patient 1",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Specimen/mii-exa-test-data-patient-1-patho-specimen-1"
+        },
+        "name": "mii-exa-test-data-patient-1-patho-specimen-1",
+        "description": "Patho Specimen: Prostata-Stanzbiopsie, rechter Seitenlappen lateral",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Specimen/mii-exa-test-data-patient-1-patho-specimen-2"
+        },
+        "name": "mii-exa-test-data-patient-1-patho-specimen-2",
+        "description": "Patho Specimen: HE-gefaerbter Schnitt der Prostata-Stanzbiopsie",
         "exampleBoolean": true
       },
       {
@@ -2338,6 +2658,62 @@
         },
         "name": "mii-exa-test-data-patient-3",
         "description": "Patient: Patient-3",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-3-biobank-dna-konzentration-1"
+        },
+        "name": "mii-exa-test-data-patient-3-biobank-dna-konzentration-1",
+        "description": "Observation: DNA-Konzentration aus Gewebeprobe Kolon (Patient 3)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-3-biobank-karyotyp-1"
+        },
+        "name": "mii-exa-test-data-patient-3-biobank-karyotyp-1",
+        "description": "Observation: Karyotyp 46,XY der Zelllinie (Patient 3)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-3-biobank-morphologie-1"
+        },
+        "name": "mii-exa-test-data-patient-3-biobank-morphologie-1",
+        "description": "Observation: Morphologie der Zelllinie aus Kolon-Gewebe (Patient 3)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-3-biobank-proliferation-1"
+        },
+        "name": "mii-exa-test-data-patient-3-biobank-proliferation-1",
+        "description": "Observation: Hohe Proliferation der Zelllinie (Patient 3)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-3-biobank-qualitaetspruefung-1"
+        },
+        "name": "mii-exa-test-data-patient-3-biobank-qualitaetspruefung-1",
+        "description": "Observation: Qualitaetspruefung Viabilitaetstest Gewebe (Patient 3)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-3-biobank-wachstumstyp-1"
+        },
+        "name": "mii-exa-test-data-patient-3-biobank-wachstumstyp-1",
+        "description": "Observation: Adhaerenter Wachstumstyp der Zelllinie (Patient 3)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Specimen/mii-exa-test-data-patient-3-biobank-zelllinie-1"
+        },
+        "name": "mii-exa-test-data-patient-3-biobank-zelllinie-1",
+        "description": "Zelllinie: Kolonkarzinom-Zelllinie aus Gewebeprobe (Patient 3)",
         "exampleBoolean": true
       },
       {
@@ -3094,6 +3470,54 @@
       },
       {
         "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-5-biobank-dna-konzentration-1"
+        },
+        "name": "mii-exa-test-data-patient-5-biobank-dna-konzentration-1",
+        "description": "Observation: DNA-Konzentration aus EDTA-Blut (Patient 5)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-5-biobank-karyotyp-1"
+        },
+        "name": "mii-exa-test-data-patient-5-biobank-karyotyp-1",
+        "description": "Observation: Karyotyp 46,XX der Zelllinie (Patient 5)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-5-biobank-morphologie-1"
+        },
+        "name": "mii-exa-test-data-patient-5-biobank-morphologie-1",
+        "description": "Observation: Morphologie der Zelllinie (Patient 5)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-5-biobank-proliferation-1"
+        },
+        "name": "mii-exa-test-data-patient-5-biobank-proliferation-1",
+        "description": "Observation: Viable Proliferationsstatus der Zelllinie (Patient 5)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-5-biobank-wachstumstyp-1"
+        },
+        "name": "mii-exa-test-data-patient-5-biobank-wachstumstyp-1",
+        "description": "Observation: Suspensions-Wachstumstyp der Zelllinie (Patient 5)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Specimen/mii-exa-test-data-patient-5-biobank-zelllinie-1"
+        },
+        "name": "mii-exa-test-data-patient-5-biobank-zelllinie-1",
+        "description": "Zelllinie: Brustkrebsorganoid (Patient 5)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Consent/mii-exa-test-data-patient-5-consent-1"
         },
         "name": "mii-exa-test-data-patient-5-consent-1",
@@ -3430,6 +3854,14 @@
       },
       {
         "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-7-biobank-qualitaetspruefung-1"
+        },
+        "name": "mii-exa-test-data-patient-7-biobank-qualitaetspruefung-1",
+        "description": "Observation: Qualitaetspruefung RNA-Integritaet Serum (Patient 7)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Consent/mii-exa-test-data-patient-7-consent-1"
         },
         "name": "mii-exa-test-data-patient-7-consent-1",
@@ -3586,6 +4018,14 @@
         },
         "name": "mii-exa-test-data-patient-8",
         "description": "Patient: Patient-8",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-8-biobank-proliferation-1"
+        },
+        "name": "mii-exa-test-data-patient-8-biobank-proliferation-1",
+        "description": "Observation: Immortale Proliferation der Zelllinie (Patient 8)",
         "exampleBoolean": true
       },
       {
@@ -3970,6 +4410,62 @@
         },
         "name": "mii-exa-test-data-radiologische-beobachtung",
         "description": "Observation: Radiologische Beobachtung",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-radiologische-beobachtung-ct"
+        },
+        "name": "mii-exa-test-data-radiologische-beobachtung-ct",
+        "description": "Observation: CT Thorax Radiologische Beobachtung",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "PractitionerRole/mii-exa-test-data-studie-beteiligte-person-1"
+        },
+        "name": "mii-exa-test-data-studie-beteiligte-person-1",
+        "description": "PractitionerRole: Studienleiter (Principal Investigator) der MII-BIOMARKER-2024 Studie",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "PractitionerRole/mii-exa-test-data-studie-beteiligte-person-2"
+        },
+        "name": "mii-exa-test-data-studie-beteiligte-person-2",
+        "description": "PractitionerRole: Studienkoordinator der MII-BIOMARKER-2024 Studie",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "DocumentReference/mii-exa-test-data-studie-dokument-1"
+        },
+        "name": "mii-exa-test-data-studie-dokument-1",
+        "description": "DocumentReference: Studienprotokoll für MII-BIOMARKER-2024",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Group/mii-exa-test-data-studie-group-1"
+        },
+        "name": "mii-exa-test-data-studie-group-1",
+        "description": "Group: Eligibility-Gruppe für Studie MII-BIOMARKER-2024",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Library/mii-exa-test-data-studie-register-1"
+        },
+        "name": "mii-exa-test-data-studie-register-1",
+        "description": "Library: DRKS – Deutsches Register Klinischer Studien (Quell-Register für MII-BIOMARKER-2024)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "ResearchSubject/mii-exa-test-data-studie-researchsubject-1"
+        },
+        "name": "mii-exa-test-data-studie-researchsubject-1",
+        "description": "ResearchSubject: Patient-1 als Studienteilnehmer der MII-BIOMARKER-2024 Studie",
         "exampleBoolean": true
       },
       {
@@ -4370,6 +4866,14 @@
         },
         "name": "MTB WHO Grad Tumor ZNS",
         "description": "Test instance for WHO CNS tumor grading",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "ResearchStudy/mii-exa-test-data-studie-studie-1"
+        },
+        "name": "Multizentrische interventionelle Studie zur Evaluierung eines neuen Biomarker-Panels für die Frühdiagnose entzündlicher Erkrankungen",
+        "description": "ResearchStudy: MII-BIOMARKER-2024 – Multizentrische interventionelle Studie zur Evaluierung eines neuen Biomarker-Panels",
         "exampleBoolean": true
       }
     ],

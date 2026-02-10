@@ -1,0 +1,131 @@
+{
+  "resourceType": "Specimen",
+  "id": "mii-exa-test-data-patient-1-patho-specimen-2",
+  "meta": {
+    "security": [
+      {
+        "code": "HTEST",
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "display": "test health data"
+      }
+    ],
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen"
+    ]
+  },
+  "identifier": [
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "FILL"
+          }
+        ]
+      },
+      "system": "https://www.charite.de/fhir/sid/patho-befundnummern",
+      "value": "E24.00001-A1-HE"
+    }
+  ],
+  "accessionIdentifier": {
+    "system": "https://www.charite.de/fhir/sid/patho-befundnummern",
+    "value": "E24.00001"
+  },
+  "parent": [
+    {
+      "reference": "Specimen/mii-exa-test-data-patient-1-patho-specimen-1"
+    }
+  ],
+  "request": [
+    {
+      "reference": "ServiceRequest/mii-exa-test-data-patient-1-patho-request-1"
+    }
+  ],
+  "collection": {
+    "collector": {
+      "reference": "Practitioner/mii-exa-test-data-practitioner-physician-1"
+    },
+    "collectedDateTime": "2024-02-15T09:30:00+01:00",
+    "method": {
+      "coding": [
+        {
+          "code": "40923002",
+          "system": "http://snomed.info/sct",
+          "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+          "display": "Tissue processing technique, routine, embed, cut and stain, per surgical specimen (procedure)"
+        }
+      ]
+    },
+    "bodySite": {
+      "coding": [
+        {
+          "code": "716917000",
+          "system": "http://snomed.info/sct",
+          "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+          "display": "Structure of lateral middle regional part of peripheral zone of right half prostate (body structure)"
+        }
+      ]
+    }
+  },
+  "processing": [
+    {
+      "extension": [
+        {
+          "valueRange": {
+            "low": {
+              "unit": "°C",
+              "system": "http://unitsofmeasure.org",
+              "code": "Cel",
+              "value": 15
+            },
+            "high": {
+              "unit": "°C",
+              "system": "http://unitsofmeasure.org",
+              "code": "Cel",
+              "value": 25
+            }
+          },
+          "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Temperaturbedingungen"
+        }
+      ],
+      "procedure": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "104210008",
+            "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+            "display": "Hematoxylin and eosin stain method (procedure)"
+          }
+        ]
+      }
+    }
+  ],
+  "container": [
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "433466003",
+            "system": "http://snomed.info/sct",
+            "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+            "display": "Microscope slide (physical object)"
+          }
+        ]
+      }
+    }
+  ],
+  "type": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "787150001",
+        "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+        "display": "Stained slide of tissue section (specimen)"
+      }
+    ]
+  },
+  "status": "available",
+  "subject": {
+    "reference": "Patient/mii-exa-test-data-patient-1"
+  }
+}

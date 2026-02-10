@@ -1,0 +1,52 @@
+{
+  "resourceType": "BodyStructure",
+  "id": "mii-exa-test-data-koerperstruktur-ct",
+  "meta": {
+    "security": [
+      {
+        "code": "HTEST",
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "display": "test health data"
+      }
+    ],
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-koerperstruktur"
+    ]
+  },
+  "locationQualifier": [
+    {
+      "coding": [
+        {
+          "code": "24028007",
+          "system": "http://snomed.info/sct",
+          "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+          "display": "Right (qualifier value)"
+        }
+      ]
+    }
+  ],
+  "morphology": {
+    "coding": [
+      {
+        "code": "427359005",
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+        "display": "Solitary nodule of lung (disorder)"
+      }
+    ]
+  },
+  "location": {
+    "coding": [
+      {
+        "code": "44029006",
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+        "display": "Structure of anterior segment of upper lobe of right lung (body structure)"
+      }
+    ]
+  },
+  "description": "Solitaerer pulmonaler Rundherd, 18 mm Durchmesser, unregelmaeßig begrenzt mit Spiculae, im Segment 3 des rechten Oberlappens",
+  "patient": {
+    "reference": "Patient/mii-exa-test-data-patient-2"
+  }
+}

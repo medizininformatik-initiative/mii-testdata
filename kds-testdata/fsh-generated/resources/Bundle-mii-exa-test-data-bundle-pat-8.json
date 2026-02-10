@@ -2769,6 +2769,13 @@
             ]
           }
         ],
+        "telecom": [
+          {
+            "system": "email",
+            "value": "rahel.hirsch@charite.de",
+            "use": "work"
+          }
+        ],
         "active": true,
         "practitioner": {
           "reference": "Practitioner/mii-exa-test-data-practitioner-physician-1"

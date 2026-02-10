@@ -85,6 +85,11 @@ Alias: $CSdeviceName = http://hl7.org/fhir/device-nametype
 Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation-category
 Alias: $observation-type = http://terminology.hl7.org/CodeSystem/v2-0936
 
+// Biobank Ontologies
+Alias: $CLO = http://purl.obolibrary.org/obo/clo.owl
+Alias: $PATO = http://purl.obolibrary.org/obo/pato.owl
+Alias: $GO = http://purl.obolibrary.org/obo/go.owl
+
 // Seltene Erkrankungen
 Alias: $HPO-OBO = http://purl.obolibrary.org/obo/hp.owl
 Alias: $MONDO = http://purl.obolibrary.org/obo/mondo.owl
@@ -92,3 +97,6 @@ Alias: $OMIM = http://omim.org
 Alias: $seltene-cs-narse = https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/CodeSystem/mii-cs-seltene-narse-therapietyp
 Alias: $seltene-cs-strategie = https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/CodeSystem/mii-cs-seltene-therapieempfehlung-strategie
 Alias: $seltene-cs-typ = https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/CodeSystem/mii-cs-seltene-therapieempfehlung-typ
+
+// Pathologie
+Alias: $media-type = http://terminology.hl7.org/CodeSystem/media-type

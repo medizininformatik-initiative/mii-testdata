@@ -1,0 +1,192 @@
+{
+  "resourceType": "ResearchStudy",
+  "id": "mii-exa-test-data-studie-studie-1",
+  "meta": {
+    "security": [
+      {
+        "code": "HTEST",
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "display": "test health data"
+      }
+    ],
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/modul-studie/StructureDefinition/mii-pr-studie-studie"
+    ]
+  },
+  "extension": [
+    {
+      "extension": [
+        {
+          "url": "value",
+          "valueString": "MII-BIOMARKER-2024 Biomarker Panel Study"
+        }
+      ],
+      "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-ResearchStudy.label"
+    },
+    {
+      "extension": [
+        {
+          "url": "role",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "code": "lead",
+                "system": "http://hl7.org/fhir/research-study-party-role",
+                "display": "Lead Sponsor"
+              }
+            ]
+          }
+        },
+        {
+          "url": "party",
+          "valueReference": {
+            "reference": "Organization/mii-exa-test-data-organization-charite"
+          }
+        },
+        {
+          "url": "name",
+          "valueString": "Charité – Universitätsmedizin Berlin"
+        }
+      ],
+      "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-ResearchStudy.associatedParty"
+    },
+    {
+      "extension": [
+        {
+          "url": "role",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "code": "collaborator",
+                "system": "http://hl7.org/fhir/research-study-party-role",
+                "display": "Collaborator"
+              }
+            ]
+          }
+        },
+        {
+          "url": "party",
+          "valueReference": {
+            "reference": "Organization/mii-exa-test-data-organization-charite"
+          }
+        }
+      ],
+      "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-ResearchStudy.associatedParty"
+    },
+    {
+      "extension": [
+        {
+          "url": "status",
+          "valueString": "genehmigt"
+        },
+        {
+          "url": "kommission",
+          "valueString": "Ethikkommission der Charité – Universitätsmedizin Berlin"
+        },
+        {
+          "url": "ethiknummer",
+          "valueString": "EA4/123/2024"
+        }
+      ],
+      "url": "https://www.medizininformatik-initiative.de/fhir/modul-studie/StructureDefinition/mii-ex-studie-ethikvotum"
+    },
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/modul-studie/StructureDefinition/mii-ex-studie-studienregister",
+      "valueReference": {
+        "reference": "Library/mii-exa-test-data-studie-register-1"
+      }
+    },
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/modul-studie/StructureDefinition/mii-ex-studie-eligibility",
+      "valueReference": {
+        "reference": "Group/mii-exa-test-data-studie-group-1"
+      }
+    },
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/modul-studie/StructureDefinition/mii-ex-studie-akronym",
+      "valueString": "MII-BIOMARKER-2024"
+    },
+    {
+      "extension": [
+        {
+          "url": "rekrutierungsstand-datum",
+          "valueDate": "2024-07-15"
+        },
+        {
+          "url": "rekrutierungsstand-genauigkeit",
+          "valueString": "geschätzt"
+        },
+        {
+          "url": "rekrutierungsstand",
+          "valueInteger": 142
+        },
+        {
+          "url": "rekrutierungsziel",
+          "valueInteger": 500
+        },
+        {
+          "url": "rekrutierungsstart",
+          "valueDate": "2024-01-15"
+        }
+      ],
+      "url": "https://www.medizininformatik-initiative.de/fhir/modul-studie/StructureDefinition/mii-ex-studie-rekrutierung"
+    },
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/modul-studie/StructureDefinition/mii-ex-studie-finanzierung",
+      "valueString": "BMBF-Drittmittelförderung"
+    }
+  ],
+  "identifier": [
+    {
+      "system": "https://drks.de/search/de/trial/",
+      "value": "DRKS00029123"
+    }
+  ],
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "phase-3",
+          "system": "http://terminology.hl7.org/CodeSystem/research-study-phase",
+          "display": "Phase 3"
+        }
+      ]
+    }
+  ],
+  "focus": [
+    {
+      "coding": [
+        {
+          "code": "362969004",
+          "system": "http://snomed.info/sct",
+          "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+          "display": "Disorder of endocrine system (disorder)"
+        }
+      ],
+      "text": "Entzündliche Erkrankungen – Biomarker-Panel"
+    }
+  ],
+  "keyword": [
+    {
+      "text": "Biomarker"
+    },
+    {
+      "text": "Entzündungsdiagnostik"
+    },
+    {
+      "text": "Multizentrisch"
+    }
+  ],
+  "arm": [
+    {
+      "name": "Interventionsgruppe",
+      "description": "Patienten, bei denen das neue Biomarker-Panel zusätzlich zur Standarddiagnostik eingesetzt wird"
+    },
+    {
+      "name": "Kontrollgruppe",
+      "description": "Patienten, die ausschließlich die Standarddiagnostik erhalten"
+    }
+  ],
+  "title": "Multizentrische interventionelle Studie zur Evaluierung eines neuen Biomarker-Panels für die Frühdiagnose entzündlicher Erkrankungen",
+  "status": "active"
+}

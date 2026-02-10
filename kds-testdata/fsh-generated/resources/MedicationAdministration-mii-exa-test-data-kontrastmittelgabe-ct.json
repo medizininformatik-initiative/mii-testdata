@@ -1,0 +1,94 @@
+{
+  "resourceType": "MedicationAdministration",
+  "id": "mii-exa-test-data-kontrastmittelgabe-ct",
+  "meta": {
+    "security": [
+      {
+        "code": "HTEST",
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "display": "test health data"
+      }
+    ],
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-kontrastmittelgabe"
+    ]
+  },
+  "partOf": [
+    {
+      "reference": "Procedure/mii-exa-test-data-bildgebungsprozedur-ct"
+    }
+  ],
+  "medicationCodeableConcept": {
+    "coding": [
+      {
+        "code": "385064004",
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+        "display": "Iodinated contrast media (substance)"
+      }
+    ],
+    "text": "Iomeprol 400 mg/mL"
+  },
+  "effectivePeriod": {
+    "start": "2024-11-05T09:16:00+01:00",
+    "end": "2024-11-05T09:17:30+01:00"
+  },
+  "performer": [
+    {
+      "actor": {
+        "reference": "Practitioner/mii-exa-test-data-practitioner-physician-1"
+      }
+    }
+  ],
+  "reasonReference": [
+    {
+      "reference": "Condition/mii-exa-test-data-patient-2-diagnose-1"
+    }
+  ],
+  "note": [
+    {
+      "text": "Kontrastmittelgabe Iomeprol 400 mg/mL, 80 mL, i.v., Bolus mit 3 mL/s"
+    }
+  ],
+  "dosage": {
+    "text": "80 mL Iomeprol 400 mg/mL i.v. Bolus",
+    "route": {
+      "coding": [
+        {
+          "code": "47625008",
+          "system": "http://snomed.info/sct",
+          "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+          "display": "Intravenous route (qualifier value)"
+        }
+      ]
+    },
+    "dose": {
+      "value": 80,
+      "code": "mL",
+      "system": "http://unitsofmeasure.org",
+      "unit": "milliliter"
+    },
+    "rateQuantity": {
+      "value": 3,
+      "code": "mL/s",
+      "system": "http://unitsofmeasure.org",
+      "unit": "milliliter per second"
+    }
+  },
+  "status": "completed",
+  "category": {
+    "coding": [
+      {
+        "code": "inpatient",
+        "system": "http://terminology.hl7.org/CodeSystem/medication-admin-category",
+        "display": "Inpatient"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/mii-exa-test-data-patient-2"
+  },
+  "context": {
+    "reference": "Encounter/mii-exa-test-data-patient-2-encounter-1"
+  }
+}

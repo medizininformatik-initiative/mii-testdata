@@ -19,3 +19,31 @@ Description: "Observation: Radiologische Beobachtung"
 * derivedFrom = Reference(mii-exa-test-data-bildgebungsstudie)
 * component.code = $loinc#10157-6 "History of family member diseases Narrative"
 * component.valueBoolean = true
+
+// CT Thorax scenario
+Instance: mii-exa-test-data-radiologische-beobachtung-ct
+InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologische-beobachtung
+Usage: #example
+Description: "Observation: CT Thorax Radiologische Beobachtung"
+* insert TestDataLabel
+* extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-series-uid].valueId = "2.16.840.1.113883.6.43.1.2.3456789.1234567890123456"
+* extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-sop-instanz-uid].valueId = "2.16.840.1.113883.6.43.1.2.3456789.1234567890123456.153"
+* bodySite.extension[bodyStructure].valueReference = Reference(mii-exa-test-data-koerperstruktur-ct)
+* partOf = Reference(mii-exa-test-data-befundungsprozedur-ct)
+* status = #final
+* category = $observation-category#imaging "Imaging"
+* code = $loinc#30746-2 "CT Chest"
+* subject = Reference(mii-exa-test-data-patient-2)
+* encounter = Reference(mii-exa-test-data-patient-2-encounter-1)
+* effectiveDateTime = "2024-11-05T11:30:00+01:00"
+* issued = "2024-11-05T13:45:00+01:00"
+* valueString = "Solitaerer pulmonaler Rundherd im rechten Oberlappen, Segment 3, 18 mm Durchmesser, unregelmae\u00DFig begrenzt mit Spiculae, ohne Verkalkungen"
+* bodySite = $sct#44029006 "Structure of anterior segment of upper lobe of right lung (body structure)"
+* derivedFrom = Reference(mii-exa-test-data-bildgebungsstudie-ct)
+* component[0].code = $loinc#33999-4 "Diameter.maximum Lesion"
+* component[=].valueQuantity.value = 18
+* component[=].valueQuantity.unit = "millimeter"
+* component[=].valueQuantity.system = $ucum
+* component[=].valueQuantity.code = #mm
+* component[+].code = $loinc#10157-6 "History of family member diseases Narrative"
+* component[=].valueBoolean = false
