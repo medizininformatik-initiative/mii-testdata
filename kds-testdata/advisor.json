@@ -1,5 +1,6 @@
-{ 
+{
   "suppress" : [
-    "Terminology_TX_NoValid_16@ImplementationGuide.definition.parameter.code"
+    "Terminology_TX_NoValid_16@ImplementationGuide.definition.parameter.code",
+    "Terminology_TX_Confirm_4a@AdverseEvent.event.coding"
   ]
 }

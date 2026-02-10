@@ -37,8 +37,9 @@ Description: "Onkologie Test - Frühere Tumorerkrankung"
 * subject = Reference(mii-exa-test-data-onko-patient-1)
 * encounter = Reference(mii-exa-test-data-onko-encounter-1)
 * recordedDate = "2015-03-15"
-* bodySite.coding[icd-o-3] = $ICDO3#C50.4 "Oberer äußerer Quadrant der Brustdrüse"
-* extension[morphology-behavior-icdo3].valueCodeableConcept.coding = $ICDO3#8500/3 "Invasives Karzinom, NOS"
+* bodySite.coding[icd-o-3] = $ICDO3#C50.4 "Oberer äußerer Quadrant der Brust"
+// TODO: Re-enable when TX server supports ICD-O-3 morphology ValueSet expansion (Terminology_TX_NoValid_1_CC)
+//* extension[morphology-behavior-icdo3].valueCodeableConcept.coding = $ICDO3#8500/3 "Invasives duktales Karzinom o.n.A."
 * note.text = "Zustand nach brusterhaltender OP und adjuvanter Therapie 2015"
 
 // Evidence List for Initial Diagnosis

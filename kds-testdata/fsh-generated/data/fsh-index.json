@@ -237,7 +237,7 @@
     "fshType": "Instance",
     "fshFile": "modul-onkologie/core/Diagnose.fsh",
     "startLine": 25,
-    "endLine": 42
+    "endLine": 43
   },
   {
     "outputFile": "Condition-mii-exa-test-data-patient-1-diagnose-1.json",
@@ -788,8 +788,8 @@
     "fshName": "mii-exa-test-data-onko-liste-evidenz-1",
     "fshType": "Instance",
     "fshFile": "modul-onkologie/core/Diagnose.fsh",
-    "startLine": 45,
-    "endLine": 56
+    "startLine": 46,
+    "endLine": 57
   },
   {
     "outputFile": "List-mii-exa-test-data-patient-1-list-aufnahmemedikation.json",

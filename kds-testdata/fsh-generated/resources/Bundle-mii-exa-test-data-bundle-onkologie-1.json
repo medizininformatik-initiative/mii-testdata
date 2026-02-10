@@ -194,18 +194,6 @@
           {
             "url": "http://hl7.org/fhir/StructureDefinition/condition-assertedDate",
             "valueDateTime": "2015-03-01"
-          },
-          {
-            "valueCodeableConcept": {
-              "coding": [
-                {
-                  "system": "http://terminology.hl7.org/CodeSystem/icd-o-3",
-                  "code": "8500/3",
-                  "display": "Invasives Karzinom, NOS"
-                }
-              ]
-            },
-            "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-histology-morphology-behavior-icdo3"
           }
         ],
         "category": [
@@ -244,7 +232,7 @@
               {
                 "system": "http://terminology.hl7.org/CodeSystem/icd-o-3",
                 "code": "C50.4",
-                "display": "Oberer äußerer Quadrant der Brustdrüse"
+                "display": "Oberer äußerer Quadrant der Brust"
               }
             ]
           }
