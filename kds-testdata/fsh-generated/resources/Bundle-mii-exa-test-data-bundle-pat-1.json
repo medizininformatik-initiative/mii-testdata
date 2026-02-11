@@ -283,7 +283,7 @@
                     {
                       "code": "2.16.840.1.113883.3.1937.777.24.5.3.8",
                       "system": "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3",
-                      "display": "MDAT wissenschaftlich nutzen EU DSGVO NIVEAU"
+                      "display": "MDAT wissenschaftlich nutzen"
                     }
                   ]
                 }
@@ -355,7 +355,7 @@
                     {
                       "code": "2.16.840.1.113883.3.1937.777.24.5.3.22",
                       "system": "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3",
-                      "display": "BIOMAT wissenschaftlich nutzen EU DSGVO NIVEAU"
+                      "display": "BIOMAT wissenschaftlich nutzen"
                     }
                   ]
                 }
@@ -4513,7 +4513,7 @@
             {
               "code": "24604-1",
               "system": "http://loinc.org",
-              "display": "MG Breast Diagnostics Limited Views"
+              "display": "MG Breast Diagnostic Limited Views"
             }
           ]
         },
@@ -7058,7 +7058,7 @@
               {
                 "code": "C34.1",
                 "system": "http://terminology.hl7.org/CodeSystem/icd-o-3",
-                "display": "Oberlappen, Bronchus oder Lunge"
+                "display": "Lungenoberlappen"
               }
             ]
           }
@@ -7269,7 +7269,7 @@
             {
               "system": "http://snomed.info/sct",
               "code": "255127006",
-              "display": "Locoregional (qualifier value)"
+              "display": "Local tumor spread"
             }
           ]
         },
@@ -8220,7 +8220,7 @@
                 {
                   "code": "HGNC:7989",
                   "system": "http://www.genenames.org/geneId",
-                  "display": "NTRK1"
+                  "display": "NRAS"
                 }
               ]
             }
@@ -8929,9 +8929,9 @@
         "valueCodeableConcept": {
           "coding": [
             {
-              "code": "LA11842-4",
+              "code": "LA6576-8",
               "system": "http://loinc.org",
-              "display": "2+"
+              "display": "Positive"
             }
           ]
         }
@@ -9032,7 +9032,7 @@
             {
               "code": "85147-7",
               "system": "http://loinc.org",
-              "display": "PD-L1 by clone 22C3 [Interpretation] in Tissue by Immune stain"
+              "display": "PD-L1 by clone 22C3 in Tissue by Immune stain Report"
             },
             {
               "code": "1234806008",
@@ -9145,8 +9145,8 @@
           "coding": [
             {
               "system": "http://loinc.org",
-              "code": "LA11842-4",
-              "display": "2+"
+              "code": "LA6576-8",
+              "display": "Positive"
             }
           ]
         },
@@ -9235,7 +9235,7 @@
             {
               "code": "85147-7",
               "system": "http://loinc.org",
-              "display": "PD-L1 by clone 22C3 [Interpretation] in Tissue by Immune stain"
+              "display": "PD-L1 by clone 22C3 in Tissue by Immune stain Report"
             },
             {
               "code": "1234806008",
@@ -9428,7 +9428,7 @@
             {
               "code": "85337-4",
               "system": "http://loinc.org",
-              "display": "Mismatch repair protein in Tissue by Immune stain"
+              "display": "Estrogen receptor Ag [Presence] in Breast cancer specimen by Immune stain"
             }
           ]
         },

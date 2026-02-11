@@ -44,6 +44,6 @@ Description: "Observation: Diagnostische Implikation fuer Magenkarzinom"
 * component[clinical-significance].valueCodeableConcept = $loinc#LA6668-3 "Pathogenic"
 * component[predicted-phenotype].valueCodeableConcept.coding[0] = $sct#716859000 "Hereditary diffuse carcinoma of stomach (disorder)"
 * component[evidence-level].code = $loinc#93044-6 "Level of evidence"
-* component[evidence-level].valueCodeableConcept = $loinc#LA30200-2 "Pathogenic strong"
+* component[evidence-level].valueCodeableConcept = $loinc#LA30200-2 "Very strong evidence pathogenic"
 // code inherited from profile pattern (tbd-codes-cs#condition-inheritance)
 * component[mode-of-inheritance].valueCodeableConcept = $HPO#HP:0000006 "Autosomal dominant inheritance"

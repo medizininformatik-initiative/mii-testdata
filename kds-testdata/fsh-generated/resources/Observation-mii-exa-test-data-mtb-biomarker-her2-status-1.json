@@ -48,9 +48,9 @@
   "valueCodeableConcept": {
     "coding": [
       {
-        "code": "LA11842-4",
+        "code": "LA6576-8",
         "system": "http://loinc.org",
-        "display": "2+"
+        "display": "Positive"
       }
     ]
   }

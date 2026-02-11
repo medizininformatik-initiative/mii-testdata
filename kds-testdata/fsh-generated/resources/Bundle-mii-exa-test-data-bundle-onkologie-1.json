@@ -5448,7 +5448,7 @@
             {
               "code": "44668-2",
               "system": "http://loinc.org",
-              "display": "Circumferential margin closest distance [Length]"
+              "display": "Deprecated M stage of distant metastasis Qualitative by CAP cancer protocols"
             }
           ]
         },
@@ -5599,7 +5599,7 @@
             {
               "code": "K",
               "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-krk-anastomoseninsuffizienz",
-              "display": "Keine Insuffizienz oder hochstens Grad A"
+              "display": "Keine Insuffizienz oder höchstens Grad A"
             }
           ]
         }
@@ -5721,7 +5721,7 @@
               {
                 "code": "76164006",
                 "system": "http://snomed.info/sct",
-                "display": "Stapling device (physical object)"
+                "display": "Biopsy of colon"
               }
             ]
           }

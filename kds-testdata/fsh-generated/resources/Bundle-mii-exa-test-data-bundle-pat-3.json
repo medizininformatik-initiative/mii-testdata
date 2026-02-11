@@ -235,7 +235,7 @@
                     {
                       "code": "2.16.840.1.113883.3.1937.777.24.5.3.8",
                       "system": "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3",
-                      "display": "MDAT wissenschaftlich nutzen EU DSGVO NIVEAU"
+                      "display": "MDAT wissenschaftlich nutzen"
                     }
                   ]
                 }
@@ -289,7 +289,7 @@
                     {
                       "code": "2.16.840.1.113883.3.1937.777.24.5.3.22",
                       "system": "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3",
-                      "display": "BIOMAT wissenschaftlich nutzen EU DSGVO NIVEAU"
+                      "display": "BIOMAT wissenschaftlich nutzen"
                     }
                   ]
                 }
@@ -3494,7 +3494,7 @@
                 {
                   "system": "http://loinc.org",
                   "code": "81254-5",
-                  "display": "Variant exact start-end"
+                  "display": "Genomic allele start-end"
                 }
               ]
             }
@@ -4642,7 +4642,7 @@
               "code": "57034009",
               "system": "http://snomed.info/sct",
               "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-              "display": "Aortic root structure"
+              "display": "Aortic arch structure"
             }
           ]
         },
@@ -4770,7 +4770,7 @@
                   {
                     "code": "newly-added",
                     "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/CodeSystem/mii-cs-seltene-hpo-change-status",
-                    "display": "Neu hinzugekommen"
+                    "display": "Neu hinzugefügt"
                   }
                 ]
               }
@@ -4902,12 +4902,13 @@
             {
               "code": "Q87.4",
               "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
-              "display": "Marfan-Syndrom"
+              "display": "Marfan-Syndrom",
+              "version": "2024"
             },
             {
               "code": "HP:0003549",
               "system": "http://human-phenotype-ontology.org",
-              "display": "Connective tissue abnormality"
+              "display": "Abnormality of connective tissue"
             }
           ],
           "text": "Marfan-Syndrom, klinisch diagnostiziert nach Ghent-Kriterien"
@@ -5042,7 +5043,6 @@
         "encounter": {
           "reference": "Encounter/mii-exa-test-data-patient-3-encounter-1"
         },
-        "abatementString": "Lebenslange Erkrankung, keine Remission erwartet",
         "recordedDate": "2025-03-10",
         "recorder": {
           "reference": "Practitioner/mii-exa-test-data-practitioner-physician-1"
@@ -5196,7 +5196,7 @@
               "code": "6736007",
               "system": "http://snomed.info/sct",
               "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-              "display": "Moderate"
+              "display": "Moderate severity"
             }
           ]
         },
@@ -5206,7 +5206,6 @@
         "encounter": {
           "reference": "Encounter/mii-exa-test-data-patient-3-encounter-1"
         },
-        "abatementString": "Chronisch, genetisch bedingt",
         "recordedDate": "2025-04-15",
         "recorder": {
           "reference": "Practitioner/mii-exa-test-data-practitioner-physician-1"
@@ -5287,7 +5286,7 @@
                 "code": "38266002",
                 "system": "http://snomed.info/sct",
                 "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-                "display": "Entire body"
+                "display": "Entire body as a whole"
               }
             ]
           }
@@ -5541,12 +5540,6 @@
             }
           }
         ],
-        "ageAge": {
-          "value": 65,
-          "unit": "years",
-          "system": "http://unitsofmeasure.org",
-          "code": "a"
-        },
         "condition": [
           {
             "extension": [
@@ -5568,7 +5561,8 @@
                 {
                   "code": "Q87.4",
                   "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
-                  "display": "Marfan-Syndrom"
+                  "display": "Marfan-Syndrom",
+                  "version": "2024"
                 },
                 {
                   "code": "558",
@@ -5596,13 +5590,14 @@
                 {
                   "code": "I71.2",
                   "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
-                  "display": "Aneurysma der Aorta thoracica, ohne Angabe einer Ruptur"
+                  "display": "Aneurysma der Aorta thoracica, ohne Angabe einer Ruptur",
+                  "version": "2024"
                 },
                 {
                   "code": "233985008",
                   "system": "http://snomed.info/sct",
                   "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-                  "display": "Aortic aneurysm"
+                  "display": "Abdominal aortic aneurysm"
                 }
               ]
             },
@@ -6065,21 +6060,15 @@
                   {
                     "code": "no-target",
                     "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/CodeSystem/mii-cs-seltene-empfehlung-status-begruendung",
-                    "display": "Kein therapeutisches Target identifiziert"
+                    "display": "Keine therapeutische Konsequenz"
                   }
                 ]
               }
-            },
-            "reference": {
-              "reference": "MedicationRequest/mii-exa-test-data-patient-3-seltene-therapieempfehlung-1"
             }
           },
           {
             "detail": {
               "status": "scheduled"
-            },
-            "reference": {
-              "reference": "ServiceRequest/mii-exa-test-data-patient-3-seltene-therapie-nicht-med-1"
             }
           },
           {
@@ -6460,7 +6449,7 @@
                   {
                     "code": "unchanged",
                     "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/CodeSystem/mii-cs-seltene-hpo-change-status",
-                    "display": "Unveraendert"
+                    "display": "Unverändert"
                   }
                 ]
               }
@@ -6585,7 +6574,7 @@
                 "code": "57034009",
                 "system": "http://snomed.info/sct",
                 "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-                "display": "Aortic root structure"
+                "display": "Aortic arch structure"
               }
             ]
           }
@@ -6702,12 +6691,6 @@
             }
           }
         ],
-        "ageAge": {
-          "value": 68,
-          "unit": "years",
-          "system": "http://unitsofmeasure.org",
-          "code": "a"
-        },
         "deceasedAge": {
           "value": 72,
           "unit": "years",
@@ -6721,7 +6704,8 @@
                 {
                   "code": "I25.1",
                   "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
-                  "display": "Atherosklerotische Herzkrankheit"
+                  "display": "Atherosklerotische Herzkrankheit",
+                  "version": "2024"
                 }
               ]
             },
@@ -6740,7 +6724,7 @@
               "system": "http://snomed.info/sct",
               "code": "66839005",
               "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-              "display": "Natural father"
+              "display": "Father"
             }
           ]
         },

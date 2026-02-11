@@ -180,7 +180,7 @@ Description: "Test instance for RNA sequencing observation"
 * identifier.value = "RNASEQ-001"
 * focus = Reference(mii-exa-test-data-mtb-diagnose-primaertumor-1)
 * component[gene-studied].code = $loinc#48018-6 "Gene studied [ID]"
-* component[gene-studied].valueCodeableConcept = $HGNC#HGNC:7989 "NTRK1"
+* component[gene-studied].valueCodeableConcept = $HGNC#HGNC:7989 "NRAS"
 
 // =============================================================================
 // 16. MII_PR_MTB_Diagnostische_Implikation (Observation, extends MolGen)
@@ -348,7 +348,7 @@ Description: "Test instance for HER2 biomarker status"
 * category[labCategory] = $fhir-observation-category#laboratory "Laboratory"
 * code = $loinc#48676-1 "HER2 [Interpretation] in Tissue"
 * subject = Reference(mii-exa-test-data-patient-1)
-* valueCodeableConcept = $loinc#LA11842-4 "2+"
+* valueCodeableConcept = $loinc#LA6576-8 "Positive"
 
 // =============================================================================
 // 25. MII_PR_MTB_Molecular_Pathology_Report (DiagnosticReport)
@@ -378,7 +378,7 @@ Description: "Test instance for immunohistochemistry observation"
 * status = #final
 * category[labCategory] = $fhir-observation-category#laboratory "Laboratory"
 * category[geCategory] = $hl7-v2-0074#GE "Genetics"
-* code.coding[+] = $loinc#85147-7 "PD-L1 by clone 22C3 [Interpretation] in Tissue by Immune stain"
+* code.coding[+] = $loinc#85147-7 "PD-L1 by clone 22C3 in Tissue by Immune stain Report"
 * subject = Reference(mii-exa-test-data-patient-1)
 * specimen = Reference(mii-exa-test-data-patient-1-specimen-1)
 * valueQuantity.value = 80
@@ -405,8 +405,8 @@ Description: "Test instance for HER2 immunohistochemistry"
 * subject = Reference(mii-exa-test-data-patient-1)
 * specimen = Reference(mii-exa-test-data-patient-1-specimen-1)
 * valueCodeableConcept.coding.system = "http://loinc.org"
-* valueCodeableConcept.coding.code = #LA11842-4
-* valueCodeableConcept.coding.display = "2+"
+* valueCodeableConcept.coding.code = #LA6576-8
+* valueCodeableConcept.coding.display = "Positive"
 * component[gene-studied].code.coding = $loinc#48018-6 "Gene studied [ID]"
 * component[gene-studied].valueCodeableConcept.coding = $HGNC#HGNC:3430 "ERBB2"
 
@@ -423,7 +423,7 @@ Description: "Test instance for PD-L1 immunohistochemistry with all MS elements"
 * status = #final
 * category[labCategory] = $fhir-observation-category#laboratory "Laboratory"
 * category[geCategory] = $hl7-v2-0074#GE "Genetics"
-* code.coding[+] = $loinc#85147-7 "PD-L1 by clone 22C3 [Interpretation] in Tissue by Immune stain"
+* code.coding[+] = $loinc#85147-7 "PD-L1 by clone 22C3 in Tissue by Immune stain Report"
 * subject = Reference(mii-exa-test-data-patient-1)
 * specimen = Reference(mii-exa-test-data-patient-1-specimen-1)
 * valueQuantity.value = 80
@@ -464,7 +464,9 @@ Description: "Test instance for mismatch repair protein immunohistochemistry"
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-immunohistochemistry-mmr"
 * status = #final
 * category[labCategory] = $fhir-observation-category#laboratory "Laboratory"
-* code = $loinc#85337-4 "Mismatch repair protein in Tissue by Immune stain"
+// TODO: LOINC 85337-4 display per validator is "Estrogen receptor Ag [Presence] in Breast cancer specimen by Immune stain",
+// not "Mismatch repair protein in Tissue by Immune stain". The code 85337-4 may be incorrect for MMR testing. Review and replace with correct LOINC code.
+* code = $loinc#85337-4 "Estrogen receptor Ag [Presence] in Breast cancer specimen by Immune stain"
 * subject = Reference(mii-exa-test-data-patient-1)
 * specimen = Reference(mii-exa-test-data-patient-1-specimen-1)
 * valueCodeableConcept.coding = $loinc#LA6576-8 "Positive"

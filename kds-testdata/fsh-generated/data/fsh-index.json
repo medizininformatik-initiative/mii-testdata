@@ -181,7 +181,7 @@
     "fshType": "Instance",
     "fshFile": "modul-seltene/CarePlan.fsh",
     "startLine": 8,
-    "endLine": 27
+    "endLine": 25
   },
   {
     "outputFile": "Claim-mii-exa-test-data-mtb-antrag-kostenuebernahme-1.json",
@@ -333,23 +333,23 @@
     "fshType": "Instance",
     "fshFile": "modul-seltene/Condition.fsh",
     "startLine": 49,
-    "endLine": 82
+    "endLine": 81
   },
   {
     "outputFile": "Condition-mii-exa-test-data-patient-3-seltene-symptom-condition-1.json",
     "fshName": "mii-exa-test-data-patient-3-seltene-symptom-condition-1",
     "fshType": "Instance",
     "fshFile": "modul-seltene/Condition.fsh",
-    "startLine": 87,
-    "endLine": 115
+    "startLine": 86,
+    "endLine": 114
   },
   {
     "outputFile": "Condition-mii-exa-test-data-patient-3-seltene-symptom-condition-2.json",
     "fshName": "mii-exa-test-data-patient-3-seltene-symptom-condition-2",
     "fshType": "Instance",
     "fshFile": "modul-seltene/Condition.fsh",
-    "startLine": 120,
-    "endLine": 143
+    "startLine": 119,
+    "endLine": 142
   },
   {
     "outputFile": "Condition-mii-exa-test-data-patient-4-diagnose-1.json",
@@ -869,15 +869,15 @@
     "fshType": "Instance",
     "fshFile": "modul-seltene/FamilyMemberHistory.fsh",
     "startLine": 7,
-    "endLine": 43
+    "endLine": 41
   },
   {
     "outputFile": "FamilyMemberHistory-mii-exa-test-data-patient-3-seltene-familienanamnese-2.json",
     "fshName": "mii-exa-test-data-patient-3-seltene-familienanamnese-2",
     "fshType": "Instance",
     "fshFile": "modul-seltene/FamilyMemberHistory.fsh",
-    "startLine": 46,
-    "endLine": 71
+    "startLine": 44,
+    "endLine": 66
   },
   {
     "outputFile": "FamilyMemberHistory-mii-exa-test-data-patient-4-molgen-family-member-history-1.json",
@@ -2117,15 +2117,15 @@
     "fshType": "Instance",
     "fshFile": "modul-mtb/NgsBericht.fsh",
     "startLine": 458,
-    "endLine": 470
+    "endLine": 472
   },
   {
     "outputFile": "Observation-mii-exa-test-data-mtb-ihc-msi-1.json",
     "fshName": "mii-exa-test-data-mtb-ihc-msi-1",
     "fshType": "Instance",
     "fshFile": "modul-mtb/NgsBericht.fsh",
-    "startLine": 475,
-    "endLine": 487
+    "startLine": 477,
+    "endLine": 489
   },
   {
     "outputFile": "Observation-mii-exa-test-data-mtb-ihc-phosphorylation-1.json",
@@ -2164,16 +2164,16 @@
     "fshName": "mii-exa-test-data-mtb-insituhybridization-1",
     "fshType": "Instance",
     "fshFile": "modul-mtb/NgsBericht.fsh",
-    "startLine": 492,
-    "endLine": 508
+    "startLine": 494,
+    "endLine": 510
   },
   {
     "outputFile": "Observation-mii-exa-test-data-mtb-insituhybridization-her2-1.json",
     "fshName": "mii-exa-test-data-mtb-insituhybridization-her2-1",
     "fshType": "Instance",
     "fshFile": "modul-mtb/NgsBericht.fsh",
-    "startLine": 513,
-    "endLine": 535
+    "startLine": 515,
+    "endLine": 537
   },
   {
     "outputFile": "Observation-mii-exa-test-data-mtb-mikrosatelliteninstabilitaet-1.json",
@@ -2260,8 +2260,8 @@
     "fshName": "mii-exa-test-data-mtb-tumorzellgehalt-1",
     "fshType": "Instance",
     "fshFile": "modul-mtb/NgsBericht.fsh",
-    "startLine": 540,
-    "endLine": 554
+    "startLine": 542,
+    "endLine": 556
   },
   {
     "outputFile": "Observation-mii-exa-test-data-mtb-who-grad-tumor-zns-1.json",
@@ -2380,40 +2380,40 @@
     "fshName": "mii-exa-test-data-onko-krk-abstand-aboral-1",
     "fshType": "Instance",
     "fshFile": "modul-onkologie/organ-specific/KRK.fsh",
-    "startLine": 52,
-    "endLine": 65
+    "startLine": 56,
+    "endLine": 69
   },
   {
     "outputFile": "Observation-mii-exa-test-data-onko-krk-abstand-anokutan-1.json",
     "fshName": "mii-exa-test-data-onko-krk-abstand-anokutan-1",
     "fshType": "Instance",
     "fshFile": "modul-onkologie/organ-specific/KRK.fsh",
-    "startLine": 22,
-    "endLine": 35
+    "startLine": 24,
+    "endLine": 37
   },
   {
     "outputFile": "Observation-mii-exa-test-data-onko-krk-abstand-crm-1.json",
     "fshName": "mii-exa-test-data-onko-krk-abstand-crm-1",
     "fshType": "Instance",
     "fshFile": "modul-onkologie/organ-specific/KRK.fsh",
-    "startLine": 38,
-    "endLine": 48
+    "startLine": 40,
+    "endLine": 52
   },
   {
     "outputFile": "Observation-mii-exa-test-data-onko-krk-abstand-mesorektal-1.json",
     "fshName": "mii-exa-test-data-onko-krk-abstand-mesorektal-1",
     "fshType": "Instance",
     "fshFile": "modul-onkologie/organ-specific/KRK.fsh",
-    "startLine": 68,
-    "endLine": 81
+    "startLine": 72,
+    "endLine": 85
   },
   {
     "outputFile": "Observation-mii-exa-test-data-onko-krk-anastomoseninsuffizienz-1.json",
     "fshName": "mii-exa-test-data-onko-krk-anastomoseninsuffizienz-1",
     "fshType": "Instance",
     "fshFile": "modul-onkologie/organ-specific/KRK.fsh",
-    "startLine": 84,
-    "endLine": 94
+    "startLine": 88,
+    "endLine": 98
   },
   {
     "outputFile": "Observation-mii-exa-test-data-onko-mamma-her2neu-status-1.json",
@@ -3925,15 +3925,15 @@
     "fshType": "Instance",
     "fshFile": "modul-onkologie/organ-specific/KRK.fsh",
     "startLine": 6,
-    "endLine": 19
+    "endLine": 21
   },
   {
     "outputFile": "Procedure-mii-exa-test-data-onko-krk-stoma-markierung-1.json",
     "fshName": "mii-exa-test-data-onko-krk-stoma-markierung-1",
     "fshType": "Instance",
     "fshFile": "modul-onkologie/organ-specific/KRK.fsh",
-    "startLine": 97,
-    "endLine": 108
+    "startLine": 101,
+    "endLine": 112
   },
   {
     "outputFile": "Procedure-mii-exa-test-data-onko-mamma-operation-1.json",
@@ -4508,8 +4508,8 @@
     "fshName": "mii-exa-test-data-onko-krk-specimen-1",
     "fshType": "Instance",
     "fshFile": "modul-onkologie/organ-specific/KRK.fsh",
-    "startLine": 111,
-    "endLine": 121
+    "startLine": 115,
+    "endLine": 125
   },
   {
     "outputFile": "Specimen-mii-exa-test-data-onko-specimen-1.json",

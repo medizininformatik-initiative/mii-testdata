@@ -27,21 +27,15 @@
             {
               "code": "no-target",
               "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/CodeSystem/mii-cs-seltene-empfehlung-status-begruendung",
-              "display": "Kein therapeutisches Target identifiziert"
+              "display": "Keine therapeutische Konsequenz"
             }
           ]
         }
-      },
-      "reference": {
-        "reference": "MedicationRequest/mii-exa-test-data-patient-3-seltene-therapieempfehlung-1"
       }
     },
     {
       "detail": {
         "status": "scheduled"
-      },
-      "reference": {
-        "reference": "ServiceRequest/mii-exa-test-data-patient-3-seltene-therapie-nicht-med-1"
       }
     },
     {

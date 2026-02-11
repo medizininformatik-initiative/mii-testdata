@@ -20,7 +20,8 @@ Description: "Clinical Diagnosis: Marfan syndrome - maximum MS element coverage"
 * code.coding[+] = $sct#19346006 "Marfan syndrome"
 * code.coding[+] = $orpha#558 "Marfan syndrome"
 * code.coding[+] = $icd-10-gm#Q87.4 "Marfan-Syndrom"
-* code.coding[+] = $HPO#HP:0003549 "Connective tissue abnormality"
+* code.coding[=].version = "2024"
+* code.coding[+] = $HPO#HP:0003549 "Abnormality of connective tissue"
 * code.text = "Marfan-Syndrom, klinisch diagnostiziert nach Ghent-Kriterien"
 * bodySite = $sct#113257007 "Structure of cardiovascular system"
 * subject = Reference(mii-exa-test-data-patient-3)
@@ -29,7 +30,6 @@ Description: "Clinical Diagnosis: Marfan syndrome - maximum MS element coverage"
 * onsetAge.unit = "years"
 * onsetAge.system = $ucum
 * onsetAge.code = #a
-* abatementString = "Lebenslange Erkrankung, keine Remission erwartet"
 * recordedDate = "2025-03-10"
 * recorder = Reference(mii-exa-test-data-practitioner-physician-1)
 * asserter = Reference(mii-exa-test-data-practitioner-physician-2)
@@ -57,7 +57,7 @@ Description: "Genetic Diagnosis: Marfan syndrome (FBN1 variant) - maximum MS ele
 * clinicalStatus = $condition-clinical#active
 * verificationStatus = $condition-ver-status#confirmed
 * category = $sct#782964007 "Genetic disease"
-* severity = $sct#6736007 "Moderate"
+* severity = $sct#6736007 "Moderate severity"
 // code with OMIM, SNOMED, Orphanet
 * code.coding[+] = $OMIM#154700 "Marfan syndrome"
 * code.coding[+] = $sct#19346006 "Marfan syndrome"
@@ -69,7 +69,6 @@ Description: "Genetic Diagnosis: Marfan syndrome (FBN1 variant) - maximum MS ele
 * onsetAge.unit = "years"
 * onsetAge.system = $ucum
 * onsetAge.code = #a
-* abatementString = "Chronisch, genetisch bedingt"
 * recordedDate = "2025-04-15"
 * recorder = Reference(mii-exa-test-data-practitioner-physician-1)
 * asserter = Reference(mii-exa-test-data-practitioner-physician-2)
@@ -101,7 +100,7 @@ Description: "Symptom Condition: Tall stature - all 4 code slices (HPO, SNOMED, 
 * code.coding[+] = $icd-10-gm#E34.4 "Konstitutioneller Hochwuchs"
 * code.coding[+] = $MONDO#MONDO:0007064 "Marfan syndrome"
 * code.text = "Hochwuchs bei Marfan-Syndrom"
-* bodySite = $sct#38266002 "Entire body"
+* bodySite = $sct#38266002 "Entire body as a whole"
 * subject = Reference(mii-exa-test-data-patient-3)
 * encounter = Reference(mii-exa-test-data-patient-3-encounter-1)
 * onsetAge.value = 14
@@ -131,7 +130,7 @@ Description: "Symptom Condition: Aortic root dilatation - tests onsetDateTime/ab
 * code.coding[+] = $HPO-OBO#HP:0002616 "Aortic root aneurysm"
 * code.coding[+] = $sct#128599005 "Structural disorder of heart"
 * code.text = "Aortenwurzeldilatation"
-* bodySite = $sct#57034009 "Aortic root structure"
+* bodySite = $sct#57034009 "Aortic arch structure"
 * subject = Reference(mii-exa-test-data-patient-3)
 * encounter = Reference(mii-exa-test-data-patient-3-encounter-1)
 * onsetDateTime = "2024-06-15"

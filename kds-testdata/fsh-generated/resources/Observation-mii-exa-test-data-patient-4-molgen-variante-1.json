@@ -218,7 +218,7 @@
           {
             "system": "http://loinc.org",
             "code": "48000-4",
-            "display": "Chromosome [Identifier]"
+            "display": "Chromosome [Identifier] in Blood or Tissue by Molecular genetics method"
           }
         ]
       },

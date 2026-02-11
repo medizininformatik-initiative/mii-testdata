@@ -59,7 +59,7 @@ Description: "Test instance for MTB primary tumor diagnosis with all MS elements
 * verificationStatus.coding[primaertumorDiagnosesicherung][+] = $mii-cs-onko-primaertumor-diagnosesicherung#7
 * code.coding[+] = $ICD10GM#C34.1 "Bösartige Neubildung: Oberlappen (-Bronchus)"
 * code.coding[=].version = "2024"
-* bodySite = $ICDO3#C34.1 "Oberlappen, Bronchus oder Lunge"
+* bodySite = $ICDO3#C34.1 "Lungenoberlappen"
 * stage[ErstdiagnoseZeitpunkt].assessment[+] = Reference(mii-exa-test-data-mtb-tumorausbreitung-1)
 // type inherited from profile pattern (sct#371469007 "Histologic grade of neoplasm")
 * stage[OncoTree].assessment[+] = Reference(mii-exa-test-data-mtb-oncotree-1)
@@ -115,7 +115,7 @@ Description: "Test instance for tumor spread assessment with all MS elements"
 * subject = Reference(mii-exa-test-data-patient-1)
 * encounter = Reference(mii-exa-test-data-patient-1-encounter-1)
 * effectiveDateTime = "2024-01-05"
-* valueCodeableConcept = $SCT#255127006 "Locoregional (qualifier value)"
+* valueCodeableConcept = $SCT#255127006 "Local tumor spread"
 
 // =============================================================================
 // 7. MII_PR_MTB_WHO_Grad_Tumor_ZNS (Observation)

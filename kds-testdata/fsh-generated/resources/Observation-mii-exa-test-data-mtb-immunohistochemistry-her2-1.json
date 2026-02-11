@@ -59,8 +59,8 @@
     "coding": [
       {
         "system": "http://loinc.org",
-        "code": "LA11842-4",
-        "display": "2+"
+        "code": "LA6576-8",
+        "display": "Positive"
       }
     ]
   },
