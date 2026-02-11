@@ -28,12 +28,6 @@
       }
     }
   ],
-  "ageAge": {
-    "value": 65,
-    "unit": "years",
-    "system": "http://unitsofmeasure.org",
-    "code": "a"
-  },
   "condition": [
     {
       "extension": [
@@ -55,7 +49,8 @@
           {
             "code": "Q87.4",
             "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
-            "display": "Marfan-Syndrom"
+            "display": "Marfan-Syndrom",
+            "version": "2024"
           },
           {
             "code": "558",
@@ -83,13 +78,14 @@
           {
             "code": "I71.2",
             "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
-            "display": "Aneurysma der Aorta thoracica, ohne Angabe einer Ruptur"
+            "display": "Aneurysma der Aorta thoracica, ohne Angabe einer Ruptur",
+            "version": "2024"
           },
           {
             "code": "233985008",
             "system": "http://snomed.info/sct",
             "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-            "display": "Aortic aneurysm"
+            "display": "Abdominal aortic aneurysm"
           }
         ]
       },

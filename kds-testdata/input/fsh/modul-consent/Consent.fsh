@@ -19,7 +19,7 @@ Description: "Consent: Einwilligung für Patient 1"
 * provision.provision[+].type = #permit
 * provision.provision[=].period.start = "2024-02-23"
 * provision.provision[=].period.end = "2054-01-31"
-* provision.provision[=].code = $mii-cs-consent-policy#2.16.840.1.113883.3.1937.777.24.5.3.8 "MDAT wissenschaftlich nutzen EU DSGVO NIVEAU"
+* provision.provision[=].code = $mii-cs-consent-policy#2.16.840.1.113883.3.1937.777.24.5.3.8 "MDAT wissenschaftlich nutzen"
 * provision.provision[+].type = #permit
 * provision.provision[=].period.start = "2024-02-23"
 * provision.provision[=].period.end = "2054-01-31"
@@ -35,7 +35,7 @@ Description: "Consent: Einwilligung für Patient 1"
 * provision.provision[+].type = #permit
 * provision.provision[=].period.start = "2024-02-23"
 * provision.provision[=].period.end = "2054-01-31"
-* provision.provision[=].code = $mii-cs-consent-policy#2.16.840.1.113883.3.1937.777.24.5.3.22 "BIOMAT wissenschaftlich nutzen EU DSGVO NIVEAU"
+* provision.provision[=].code = $mii-cs-consent-policy#2.16.840.1.113883.3.1937.777.24.5.3.22 "BIOMAT wissenschaftlich nutzen"
 
 // Patient-2
 Instance: mii-exa-test-data-patient-2-consent-1
@@ -58,7 +58,7 @@ Description: "Consent: Einwilligung für Patient 2"
 * provision.provision[+].type = #permit
 * provision.provision[=].period.start = "2024-03-14"
 * provision.provision[=].period.end = "2054-02-28"
-* provision.provision[=].code = $mii-cs-consent-policy#2.16.840.1.113883.3.1937.777.24.5.3.8 "MDAT wissenschaftlich nutzen EU DSGVO NIVEAU"
+* provision.provision[=].code = $mii-cs-consent-policy#2.16.840.1.113883.3.1937.777.24.5.3.8 "MDAT wissenschaftlich nutzen"
 * provision.provision[+].type = #permit
 * provision.provision[=].period.start = "2024-03-14"
 * provision.provision[=].period.end = "2054-02-28"
@@ -70,7 +70,7 @@ Description: "Consent: Einwilligung für Patient 2"
 * provision.provision[+].type = #permit
 * provision.provision[=].period.start = "2024-03-14"
 * provision.provision[=].period.end = "2054-02-28"
-* provision.provision[=].code = $mii-cs-consent-policy#2.16.840.1.113883.3.1937.777.24.5.3.22 "BIOMAT wissenschaftlich nutzen EU DSGVO NIVEAU"
+* provision.provision[=].code = $mii-cs-consent-policy#2.16.840.1.113883.3.1937.777.24.5.3.22 "BIOMAT wissenschaftlich nutzen"
 
 // Patient-3
 Instance: mii-exa-test-data-patient-3-consent-1
@@ -93,7 +93,7 @@ Description: "Consent: Einwilligung für Patient 3"
 * provision.provision[+].type = #permit
 * provision.provision[=].period.start = "2022-04-14"
 * provision.provision[=].period.end = "2052-02-28"
-* provision.provision[=].code = $mii-cs-consent-policy#2.16.840.1.113883.3.1937.777.24.5.3.8 "MDAT wissenschaftlich nutzen EU DSGVO NIVEAU"
+* provision.provision[=].code = $mii-cs-consent-policy#2.16.840.1.113883.3.1937.777.24.5.3.8 "MDAT wissenschaftlich nutzen"
 * provision.provision[+].type = #permit
 * provision.provision[=].period.start = "2022-04-14"
 * provision.provision[=].period.end = "2052-02-28"
@@ -105,7 +105,7 @@ Description: "Consent: Einwilligung für Patient 3"
 * provision.provision[+].type = #permit
 * provision.provision[=].period.start = "2022-04-14"
 * provision.provision[=].period.end = "2052-02-28"
-* provision.provision[=].code = $mii-cs-consent-policy#2.16.840.1.113883.3.1937.777.24.5.3.22 "BIOMAT wissenschaftlich nutzen EU DSGVO NIVEAU"
+* provision.provision[=].code = $mii-cs-consent-policy#2.16.840.1.113883.3.1937.777.24.5.3.22 "BIOMAT wissenschaftlich nutzen"
 
 // Patient-4
 Instance: mii-exa-test-data-patient-4-consent-1
@@ -128,7 +128,7 @@ Description: "Consent: Einwilligung für Patient 4"
 * provision.provision[+].type = #permit
 * provision.provision[=].period.start = "2020-09-10"
 * provision.provision[=].period.end = "2050-09-30"
-* provision.provision[=].code = $mii-cs-consent-policy#2.16.840.1.113883.3.1937.777.24.5.3.8 "MDAT wissenschaftlich nutzen EU DSGVO NIVEAU"
+* provision.provision[=].code = $mii-cs-consent-policy#2.16.840.1.113883.3.1937.777.24.5.3.8 "MDAT wissenschaftlich nutzen"
 * provision.provision[+].type = #permit
 * provision.provision[=].period.start = "2020-09-10"
 * provision.provision[=].period.end = "2050-09-30"
@@ -140,7 +140,7 @@ Description: "Consent: Einwilligung für Patient 4"
 * provision.provision[+].type = #permit
 * provision.provision[=].period.start = "2020-09-10"
 * provision.provision[=].period.end = "2050-09-30"
-* provision.provision[=].code = $mii-cs-consent-policy#2.16.840.1.113883.3.1937.777.24.5.3.22 "BIOMAT wissenschaftlich nutzen EU DSGVO NIVEAU"
+* provision.provision[=].code = $mii-cs-consent-policy#2.16.840.1.113883.3.1937.777.24.5.3.22 "BIOMAT wissenschaftlich nutzen"
 
 // Patient-5
 Instance: mii-exa-test-data-patient-5-consent-1
@@ -163,7 +163,7 @@ Description: "Consent: Einwilligung für Patient 5"
 * provision.provision[+].type = #permit
 * provision.provision[=].period.start = "2023-07-05"
 * provision.provision[=].period.end = "2053-07-31"
-* provision.provision[=].code = $mii-cs-consent-policy#2.16.840.1.113883.3.1937.777.24.5.3.8 "MDAT wissenschaftlich nutzen EU DSGVO NIVEAU"
+* provision.provision[=].code = $mii-cs-consent-policy#2.16.840.1.113883.3.1937.777.24.5.3.8 "MDAT wissenschaftlich nutzen"
 * provision.provision[+].type = #permit
 * provision.provision[=].period.start = "2023-07-05"
 * provision.provision[=].period.end = "2053-07-31"
@@ -179,7 +179,7 @@ Description: "Consent: Einwilligung für Patient 5"
 * provision.provision[+].type = #permit
 * provision.provision[=].period.start = "2023-07-05"
 * provision.provision[=].period.end = "2053-07-31"
-* provision.provision[=].code = $mii-cs-consent-policy#2.16.840.1.113883.3.1937.777.24.5.3.22 "BIOMAT wissenschaftlich nutzen EU DSGVO NIVEAU"
+* provision.provision[=].code = $mii-cs-consent-policy#2.16.840.1.113883.3.1937.777.24.5.3.22 "BIOMAT wissenschaftlich nutzen"
 
 // Patient-6
 Instance: mii-exa-test-data-patient-6-consent-1
@@ -202,7 +202,7 @@ Description: "Consent: Einwilligung für Patient 6"
 * provision.provision[+].type = #permit
 * provision.provision[=].period.start = "2022-03-08"
 * provision.provision[=].period.end = "2052-03-31"
-* provision.provision[=].code = $mii-cs-consent-policy#2.16.840.1.113883.3.1937.777.24.5.3.8 "MDAT wissenschaftlich nutzen EU DSGVO NIVEAU"
+* provision.provision[=].code = $mii-cs-consent-policy#2.16.840.1.113883.3.1937.777.24.5.3.8 "MDAT wissenschaftlich nutzen"
 * provision.provision[+].type = #permit
 * provision.provision[=].period.start = "2022-03-08"
 * provision.provision[=].period.end = "2052-03-31"
@@ -214,7 +214,7 @@ Description: "Consent: Einwilligung für Patient 6"
 * provision.provision[+].type = #permit
 * provision.provision[=].period.start = "2022-03-08"
 * provision.provision[=].period.end = "2052-03-31"
-* provision.provision[=].code = $mii-cs-consent-policy#2.16.840.1.113883.3.1937.777.24.5.3.22 "BIOMAT wissenschaftlich nutzen EU DSGVO NIVEAU"
+* provision.provision[=].code = $mii-cs-consent-policy#2.16.840.1.113883.3.1937.777.24.5.3.22 "BIOMAT wissenschaftlich nutzen"
 
 // Patient-7
 Instance: mii-exa-test-data-patient-7-consent-1
@@ -237,7 +237,7 @@ Description: "Consent: Einwilligung für Patient 7"
 * provision.provision[+].type = #permit
 * provision.provision[=].period.start = "2024-01-03"
 * provision.provision[=].period.end = "2054-01-31"
-* provision.provision[=].code = $mii-cs-consent-policy#2.16.840.1.113883.3.1937.777.24.5.3.8 "MDAT wissenschaftlich nutzen EU DSGVO NIVEAU"
+* provision.provision[=].code = $mii-cs-consent-policy#2.16.840.1.113883.3.1937.777.24.5.3.8 "MDAT wissenschaftlich nutzen"
 
 // Patient-8 (verstorben)
 Instance: mii-exa-test-data-patient-8-consent-1
@@ -260,7 +260,7 @@ Description: "Consent: Einwilligung für Patient 8"
 * provision.provision[+].type = #permit
 * provision.provision[=].period.start = "2023-11-05"
 * provision.provision[=].period.end = "2023-11-15"
-* provision.provision[=].code = $mii-cs-consent-policy#2.16.840.1.113883.3.1937.777.24.5.3.8 "MDAT wissenschaftlich nutzen EU DSGVO NIVEAU"
+* provision.provision[=].code = $mii-cs-consent-policy#2.16.840.1.113883.3.1937.777.24.5.3.8 "MDAT wissenschaftlich nutzen"
 
 // Patient-9
 Instance: mii-exa-test-data-patient-9-consent-1
@@ -283,7 +283,7 @@ Description: "Consent: Einwilligung für Patient 9"
 * provision.provision[+].type = #permit
 * provision.provision[=].period.start = "2024-02-15"
 * provision.provision[=].period.end = "2054-02-28"
-* provision.provision[=].code = $mii-cs-consent-policy#2.16.840.1.113883.3.1937.777.24.5.3.8 "MDAT wissenschaftlich nutzen EU DSGVO NIVEAU"
+* provision.provision[=].code = $mii-cs-consent-policy#2.16.840.1.113883.3.1937.777.24.5.3.8 "MDAT wissenschaftlich nutzen"
 * provision.provision[+].type = #permit
 * provision.provision[=].period.start = "2024-02-15"
 * provision.provision[=].period.end = "2054-02-28"
@@ -295,7 +295,7 @@ Description: "Consent: Einwilligung für Patient 9"
 * provision.provision[+].type = #permit
 * provision.provision[=].period.start = "2024-02-15"
 * provision.provision[=].period.end = "2054-02-28"
-* provision.provision[=].code = $mii-cs-consent-policy#2.16.840.1.113883.3.1937.777.24.5.3.22 "BIOMAT wissenschaftlich nutzen EU DSGVO NIVEAU"
+* provision.provision[=].code = $mii-cs-consent-policy#2.16.840.1.113883.3.1937.777.24.5.3.22 "BIOMAT wissenschaftlich nutzen"
 
 // Patient-10
 Instance: mii-exa-test-data-patient-10-consent-1
@@ -318,7 +318,7 @@ Description: "Consent: Einwilligung für Patient 10"
 * provision.provision[+].type = #permit
 * provision.provision[=].period.start = "2019-05-10"
 * provision.provision[=].period.end = "2049-05-31"
-* provision.provision[=].code = $mii-cs-consent-policy#2.16.840.1.113883.3.1937.777.24.5.3.8 "MDAT wissenschaftlich nutzen EU DSGVO NIVEAU"
+* provision.provision[=].code = $mii-cs-consent-policy#2.16.840.1.113883.3.1937.777.24.5.3.8 "MDAT wissenschaftlich nutzen"
 * provision.provision[+].type = #permit
 * provision.provision[=].period.start = "2019-05-10"
 * provision.provision[=].period.end = "2049-05-31"
@@ -334,4 +334,4 @@ Description: "Consent: Einwilligung für Patient 10"
 * provision.provision[+].type = #permit
 * provision.provision[=].period.start = "2019-05-10"
 * provision.provision[=].period.end = "2049-05-31"
-* provision.provision[=].code = $mii-cs-consent-policy#2.16.840.1.113883.3.1937.777.24.5.3.22 "BIOMAT wissenschaftlich nutzen EU DSGVO NIVEAU"
+* provision.provision[=].code = $mii-cs-consent-policy#2.16.840.1.113883.3.1937.777.24.5.3.22 "BIOMAT wissenschaftlich nutzen"

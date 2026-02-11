@@ -248,7 +248,7 @@
           {
             "system": "http://loinc.org",
             "code": "81254-5",
-            "display": "Variant exact start-end"
+            "display": "Genomic allele start-end"
           }
         ]
       }

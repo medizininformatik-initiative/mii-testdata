@@ -178,7 +178,7 @@
                     {
                       "code": "2.16.840.1.113883.3.1937.777.24.5.3.8",
                       "system": "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3",
-                      "display": "MDAT wissenschaftlich nutzen EU DSGVO NIVEAU"
+                      "display": "MDAT wissenschaftlich nutzen"
                     }
                   ]
                 }
@@ -232,7 +232,7 @@
                     {
                       "code": "2.16.840.1.113883.3.1937.777.24.5.3.22",
                       "system": "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3",
-                      "display": "BIOMAT wissenschaftlich nutzen EU DSGVO NIVEAU"
+                      "display": "BIOMAT wissenschaftlich nutzen"
                     }
                   ]
                 }
@@ -2282,7 +2282,7 @@
                 {
                   "system": "http://loinc.org",
                   "code": "48000-4",
-                  "display": "Chromosome [Identifier]"
+                  "display": "Chromosome [Identifier] in Blood or Tissue by Molecular genetics method"
                 }
               ]
             },
@@ -2455,7 +2455,7 @@
                 {
                   "code": "LA30200-2",
                   "system": "http://loinc.org",
-                  "display": "Pathogenic strong"
+                  "display": "Very strong evidence pathogenic"
                 }
               ]
             }
@@ -2991,7 +2991,7 @@
                 {
                   "code": "LA30200-2",
                   "system": "http://loinc.org",
-                  "display": "Pathogenic strong"
+                  "display": "Very strong evidence pathogenic"
                 }
               ]
             }

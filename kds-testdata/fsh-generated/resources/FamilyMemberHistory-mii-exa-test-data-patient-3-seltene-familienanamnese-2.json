@@ -28,12 +28,6 @@
       }
     }
   ],
-  "ageAge": {
-    "value": 68,
-    "unit": "years",
-    "system": "http://unitsofmeasure.org",
-    "code": "a"
-  },
   "deceasedAge": {
     "value": 72,
     "unit": "years",
@@ -47,7 +41,8 @@
           {
             "code": "I25.1",
             "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
-            "display": "Atherosklerotische Herzkrankheit"
+            "display": "Atherosklerotische Herzkrankheit",
+            "version": "2024"
           }
         ]
       },
@@ -66,7 +61,7 @@
         "system": "http://snomed.info/sct",
         "code": "66839005",
         "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-        "display": "Natural father"
+        "display": "Father"
       }
     ]
   },

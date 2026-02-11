@@ -17,7 +17,7 @@ Description: "HPO Assessment: Aortic root aneurysm (Present) - all optional fiel
 * encounter = Reference(mii-exa-test-data-patient-3-encounter-1)
 * effectiveDateTime = "2025-03-10"
 * note[+].text = "Aortenwurzeldilatation bei Echokardiographie festgestellt, Z-Score > 3."
-* bodySite = $sct#57034009 "Aortic root structure"
+* bodySite = $sct#57034009 "Aortic arch structure"
 * method = $sct#278292003 "Ultrasound imaging"
 * derivedFrom = Reference(mii-exa-test-data-patient-3-labobs-1)
 * component[+].code = $sct#260411009 "Presence findings"
@@ -55,7 +55,7 @@ Description: "HPO Assessment: Ectopia lentis (Present, Moderate severity, with c
 * method = $sct#36228007 "Ophthalmic examination"
 * component[+].code = $sct#260411009 "Presence findings"
 * component[=].valueCodeableConcept = $loinc#LA9633-4 "Present"
-* component[=].interpretation = $seltene-cs-change-status#newly-added "Neu hinzugekommen"
+* component[=].interpretation = $seltene-cs-change-status#newly-added "Neu hinzugefügt"
 * component[+].code = $HPO#HP:0012824 "Severity"
 * component[=].valueCodeableConcept = $HPO#HP:0012826 "Moderate"
 
@@ -74,6 +74,6 @@ Description: "HPO Assessment: Tall stature (Present, effectivePeriod) - tests ef
 * note[+].text = "Hochwuchs seit Adoleszenz, typisch fuer Marfan-Syndrom. Koerpergroesse 195 cm."
 * component[+].code = $sct#260411009 "Presence findings"
 * component[=].valueCodeableConcept = $loinc#LA9633-4 "Present"
-* component[=].interpretation = $seltene-cs-change-status#unchanged "Unveraendert"
+* component[=].interpretation = $seltene-cs-change-status#unchanged "Unverändert"
 * component[+].code = $HPO#HP:0012824 "Severity"
 * component[=].valueCodeableConcept = $HPO#HP:0012825 "Mild"

@@ -17,15 +17,12 @@ Description: "Familienanamnese: Mother with Marfan syndrome - all MS elements in
 * relationship = $sct#65656005 "Natural mother"
 * sex = http://hl7.org/fhir/administrative-gender#female
 * bornDate = "1960"
-* ageAge.value = 65
-* ageAge.unit = "years"
-* ageAge.system = $ucum
-* ageAge.code = #a
 * deceasedBoolean = false
 // Condition 1 with mondo coding, penetrance extension, contributedToDeath, onsetAge
 * condition[+].extension[+].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-ex-seltene-penetrance"
 * condition[=].extension[=].valueCodeableConcept = $HPO#HP:0003829 "Incomplete penetrance"
 * condition[=].code.coding[+] = $icd-10-gm#Q87.4 "Marfan-Syndrom"
+* condition[=].code.coding[=].version = "2024"
 * condition[=].code.coding[+] = $orpha#558 "Marfan syndrome"
 * condition[=].code.coding[+] = $MONDO#MONDO:0007064 "Marfan syndrome"
 * condition[=].contributedToDeath = false
@@ -35,7 +32,8 @@ Description: "Familienanamnese: Mother with Marfan syndrome - all MS elements in
 * condition[=].onsetAge.code = #a
 // Condition 2: Cardiovascular complication
 * condition[+].code.coding[+] = $icd-10-gm#I71.2 "Aneurysma der Aorta thoracica, ohne Angabe einer Ruptur"
-* condition[=].code.coding[+] = $sct#233985008 "Aortic aneurysm"
+* condition[=].code.coding[=].version = "2024"
+* condition[=].code.coding[+] = $sct#233985008 "Abdominal aortic aneurysm"
 * condition[=].contributedToDeath = false
 * condition[=].onsetAge.value = 50
 * condition[=].onsetAge.unit = "years"
@@ -52,18 +50,15 @@ Description: "Familienanamnese: Father not affected - tests vonSEBetroffen=No, d
 * extension[=].valueCodeableConcept = $sct#373067005 "No"
 * status = #completed
 * patient = Reference(mii-exa-test-data-patient-3)
-* relationship = $sct#66839005 "Natural father"
+* relationship = $sct#66839005 "Father"
 * sex = http://hl7.org/fhir/administrative-gender#male
 * bornDate = "1957"
-* ageAge.value = 68
-* ageAge.unit = "years"
-* ageAge.system = $ucum
-* ageAge.code = #a
 * deceasedAge.value = 72
 * deceasedAge.unit = "years"
 * deceasedAge.system = $ucum
 * deceasedAge.code = #a
 * condition[+].code.coding[+] = $icd-10-gm#I25.1 "Atherosklerotische Herzkrankheit"
+* condition[=].code.coding[=].version = "2024"
 * condition[=].contributedToDeath = true
 * condition[=].onsetAge.value = 60
 * condition[=].onsetAge.unit = "years"

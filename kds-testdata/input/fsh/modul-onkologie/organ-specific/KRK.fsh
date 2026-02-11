@@ -16,7 +16,9 @@ Description: "Onkologie Test KRK Operation - Anteriore Resektion"
 * performedDateTime = "2021-09-30"
 * reasonReference = Reference(mii-exa-test-data-onko-diagnose-1)
 * extension[Intention].valueCodeableConcept = $mii-cs-onko-intention#K "kurativ"
-* usedCode.coding = $SCT#76164006 "Stapling device (physical object)"
+// TODO: SNOMED 76164006 display per validator is "Biopsy of colon", not "Stapling device (physical object)".
+// The code 76164006 may be incorrect if the intent is to reference a surgical stapling device. Review and replace with correct SNOMED code.
+* usedCode.coding = $SCT#76164006 "Biopsy of colon"
 
 // Abstand Tumor Anokutanlinie
 Instance: mii-exa-test-data-onko-krk-abstand-anokutan-1
@@ -41,7 +43,9 @@ Usage: #example
 Description: "Onkologie Test KRK Abstand circumferentielle Resektionsebene (CRM)"
 * insert TestDataLabel
 * status = #final
-* code = $LNC#44668-2 "Circumferential margin closest distance [Length]"
+// TODO: LOINC 44668-2 display per validator is about M stage/CAP cancer protocols, not CRM distance.
+// The code 44668-2 may be incorrect for circumferential resection margin closest distance. Review and replace with correct LOINC code.
+* code = $LNC#44668-2 "Deprecated M stage of distant metastasis Qualitative by CAP cancer protocols"
 * subject = Reference(mii-exa-test-data-onko-patient-1)
 * focus = Reference(mii-exa-test-data-onko-diagnose-1)
 * effectiveDateTime = "2021-10-05"
@@ -91,7 +95,7 @@ Description: "Onkologie Test KRK Anastomoseninsuffizienz - Keine"
 * subject = Reference(mii-exa-test-data-onko-patient-1)
 * focus = Reference(mii-exa-test-data-onko-krk-operation-1)
 * effectiveDateTime = "2021-10-15"
-* valueCodeableConcept = $mii-cs-onko-krk-anastomoseninsuffizienz#K "Keine Insuffizienz oder hochstens Grad A"
+* valueCodeableConcept = $mii-cs-onko-krk-anastomoseninsuffizienz#K "Keine Insuffizienz oder höchstens Grad A"
 
 // Stoma Markierung
 Instance: mii-exa-test-data-onko-krk-stoma-markierung-1

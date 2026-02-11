@@ -30,7 +30,7 @@
             {
               "code": "unchanged",
               "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/CodeSystem/mii-cs-seltene-hpo-change-status",
-              "display": "Unveraendert"
+              "display": "Unverändert"
             }
           ]
         }

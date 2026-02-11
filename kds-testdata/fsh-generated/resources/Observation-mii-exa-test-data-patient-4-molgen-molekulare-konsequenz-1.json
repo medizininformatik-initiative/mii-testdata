@@ -113,7 +113,7 @@
           {
             "code": "LA30200-2",
             "system": "http://loinc.org",
-            "display": "Pathogenic strong"
+            "display": "Very strong evidence pathogenic"
           }
         ]
       }

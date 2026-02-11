@@ -39,7 +39,7 @@ Description: "Observation: Genetische Variante fuer BRAF-Mutation"
 * component[variation-code].valueCodeableConcept = $dbSNP#rs113488022
 * component[reference-sequence-assembly].code = $loinc#62374-4 "Human reference sequence assembly version"
 * component[reference-sequence-assembly].valueCodeableConcept = $loinc#LA26806-2 "GRCh38"
-* component[exact-start-end].code = $loinc#81254-5 "Variant exact start-end"
+* component[exact-start-end].code = $loinc#81254-5 "Genomic allele start-end"
 * component[exact-start-end].valueRange.low.value = 140753336
 * component[exact-start-end].valueRange.high.value = 140753336
 * component[ref-allele].code = $loinc#69547-8 "Genomic ref allele [ID]"
@@ -85,5 +85,5 @@ Description: "Observation: Genetische Variante fuer CTNNA1-Mutation"
 * component[allelic-state].valueCodeableConcept = $loinc#LA6706-1 "Heterozygous"
 * component[coding-change-type].valueCodeableConcept = $SO#SO:0000159 "Deletion"
 * component[cytogenetic-location].valueCodeableConcept = $ChromLoc#5q31.2
-* component[chromosome-identifier].code = $loinc#48000-4 "Chromosome [Identifier]"
+* component[chromosome-identifier].code = $loinc#48000-4 "Chromosome [Identifier] in Blood or Tissue by Molecular genetics method"
 * component[chromosome-identifier].valueCodeableConcept = $loinc#LA21257-8 "Chromosome 5"

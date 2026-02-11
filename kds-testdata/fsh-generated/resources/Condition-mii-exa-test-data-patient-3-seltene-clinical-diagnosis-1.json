@@ -39,12 +39,13 @@
       {
         "code": "Q87.4",
         "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
-        "display": "Marfan-Syndrom"
+        "display": "Marfan-Syndrom",
+        "version": "2024"
       },
       {
         "code": "HP:0003549",
         "system": "http://human-phenotype-ontology.org",
-        "display": "Connective tissue abnormality"
+        "display": "Abnormality of connective tissue"
       }
     ],
     "text": "Marfan-Syndrom, klinisch diagnostiziert nach Ghent-Kriterien"
@@ -179,7 +180,6 @@
   "encounter": {
     "reference": "Encounter/mii-exa-test-data-patient-3-encounter-1"
   },
-  "abatementString": "Lebenslange Erkrankung, keine Remission erwartet",
   "recordedDate": "2025-03-10",
   "recorder": {
     "reference": "Practitioner/mii-exa-test-data-practitioner-physician-1"
