@@ -4135,7 +4135,7 @@
                 "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
                 "version": "2022",
                 "code": "C21.8",
-                "display": "Boesartige Neubildung des Rektums, Anus und Analkanals: Rektum, Anus und Analkanal, mehrere Teilbereiche ueberlappend"
+                "display": "Bösartige Neubildung: Rektum, Anus und Analkanal, mehrere Teilbereiche überlappend"
               }
             ]
           }
@@ -4159,7 +4159,7 @@
                   "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
                   "version": "2022",
                   "code": "C43.9",
-                  "display": "Boesartiges Melanom der Haut, nicht naeher bezeichnet"
+                  "display": "Bösartiges Melanom der Haut, nicht näher bezeichnet"
                 }
               ]
             },
@@ -4499,10 +4499,10 @@
         "code": {
           "coding": [
             {
-              "code": "721961004",
+              "code": "225338004",
               "system": "http://snomed.info/sct",
               "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-              "display": "Risk assessment score (observable entity)"
+              "display": "Risk assessment"
             }
           ],
           "text": "Polygener Risiko Score (PRS)"
@@ -5261,7 +5261,7 @@
               "display": "Tall stature"
             },
             {
-              "code": "15456002",
+              "code": "248328003",
               "system": "http://snomed.info/sct",
               "version": "http://snomed.info/sct/900000000000207008/version/20230731",
               "display": "Tall stature"
@@ -5542,20 +5542,6 @@
         ],
         "condition": [
           {
-            "extension": [
-              {
-                "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-ex-seltene-penetrance",
-                "valueCodeableConcept": {
-                  "coding": [
-                    {
-                      "code": "HP:0003829",
-                      "system": "http://human-phenotype-ontology.org",
-                      "display": "Incomplete penetrance"
-                    }
-                  ]
-                }
-              }
-            ],
             "code": {
               "coding": [
                 {
@@ -5774,17 +5760,6 @@
             "valuePositiveInt": 2
           },
           {
-            "valueCodeableConcept": {
-              "coding": [
-                {
-                  "code": "2B",
-                  "display": "Evidenzgrad 2B"
-                }
-              ]
-            },
-            "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-ex-seltene-empfehlung-evidenzgraduierung"
-          },
-          {
             "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-ex-seltene-empfehlung-publikation",
             "valueString": "ESC Guidelines on Marfan Syndrome 2024"
           }
@@ -5907,6 +5882,14 @@
         "extension": [
           {
             "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "385645004",
+                  "system": "http://snomed.info/sct",
+                  "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+                  "display": "Accepted"
+                }
+              ],
               "text": "Patient erfuellt Einschlusskriterien der Studie"
             },
             "url": "http://hl7.org/fhir/StructureDefinition/request-statusReason"

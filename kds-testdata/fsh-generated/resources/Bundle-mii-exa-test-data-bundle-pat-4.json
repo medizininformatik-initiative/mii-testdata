@@ -2563,7 +2563,7 @@
                 "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
                 "version": "2022",
                 "code": "C16.9",
-                "display": "Boesartige Neubildung: Magen, nicht naeher bezeichnet"
+                "display": "Bösartige Neubildung: Magen, nicht näher bezeichnet"
               }
             ]
           }
@@ -2582,7 +2582,7 @@
                   "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
                   "version": "2022",
                   "code": "C50.9",
-                  "display": "Boesartige Neubildung: Brustdruese, nicht naeher bezeichnet"
+                  "display": "Bösartige Neubildung: Brustdrüse, nicht näher bezeichnet"
                 }
               ]
             },

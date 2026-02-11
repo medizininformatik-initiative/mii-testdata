@@ -3,6 +3,39 @@
     "Terminology_TX_NoValid_16@ImplementationGuide.definition.parameter.code",
     "Terminology_TX_Confirm_4a@AdverseEvent.event.coding",
     "_DT_Fixed_Wrong@Procedure.extension.value.ofType(CodeableConcept).coding.system",
-    "Terminology_TX_NoValid_1_CC@Procedure.extension.value.ofType(CodeableConcept)"
+    "Terminology_TX_NoValid_1_CC@Procedure.extension.value.ofType(CodeableConcept)",
+
+    "UNABLE_TO_INFER_CODESYSTEM@ImplementationGuide.definition.parameter.code",
+    "IG_DEPENDENCY_CLASH_CANONICAL@ImplementationGuide.dependsOn",
+
+    "Terminology_TX_Confirm_4a@Medication.ingredient.item.ofType(CodeableConcept).coding",
+
+    "Terminology_TX_Confirm_4a@FamilyMemberHistory.condition.code.coding",
+    "Terminology_TX_Confirm_4a@FamilyMemberHistory.reasonCode.coding",
+
+    "Terminology_TX_Confirm_4a@Condition.code.coding",
+
+    "Terminology_TX_Confirm_4a@DiagnosticReport.conclusionCode.coding",
+    "Terminology_TX_Confirm_4a@ServiceRequest.reasonCode.coding",
+
+    "UNABLE_TO_INFER_CODESYSTEM@Observation.value.ofType(CodeableConcept).coding.code",
+    "Terminology_TX_NoValid_16@Observation.value.ofType(CodeableConcept).coding.code",
+
+    "SLICING_CANNOT_BE_EVALUATED@DiagnosticReport.extension",
+    "SLICING_CANNOT_BE_EVALUATED@DiagnosticReport.result",
+    "SLICING_CANNOT_BE_EVALUATED@Observation.component",
+    "SLICING_CANNOT_BE_EVALUATED@Observation.value.ofType(CodeableConcept).coding",
+    "SLICING_CANNOT_BE_EVALUATED@Procedure.usedCode",
+    "SLICING_CANNOT_BE_EVALUATED@MedicationRequest.extension.value.ofType(CodeableConcept).coding",
+    "SLICING_CANNOT_BE_EVALUATED@RequestGroup.extension.value.ofType(CodeableConcept).coding",
+    "SLICING_CANNOT_BE_EVALUATED@ServiceRequest.extension.value.ofType(CodeableConcept).coding",
+
+    "Validation_VAL_Profile_MatchMultiple@DiagnosticReport.result",
+    "Validation_VAL_Profile_Maximum@DiagnosticReport",
+
+    "Extension_EXT_Unknown_NotHere@Observation.extension",
+    "Type_Specific_Checks_DT_URL_Resolve@Observation.extension.url",
+
+    "http://ig.fhir.de/igs/medication/StructureDefinition/DosageDE#DosageDoseUnitSameCode@MedicationRequest.dosageInstruction"
   ]
 }

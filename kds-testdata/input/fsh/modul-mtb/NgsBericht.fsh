@@ -291,7 +291,7 @@ Description: "Test instance for homologous recombination deficiency score with s
 // code inherited from profile pattern (loinc#107286-7)
 * subject = Reference(mii-exa-test-data-patient-1)
 * valueInteger = 42
-* interpretation = http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation#POS "Positive"
+* interpretation = http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation#H "High"
 // component codes inherited from profile patterns
 * component[LST].valueInteger = 15
 * component[TAI].valueInteger = 14
@@ -314,7 +314,7 @@ Description: "Test instance for BRCAness assessment"
 * valueQuantity.value = 0.72
 * valueQuantity.system = $ucum
 * valueQuantity.code = #1
-* interpretation = http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation#POS "Positive"
+* interpretation = http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation#H "High"
 
 // =============================================================================
 // 23. MII_PR_MTB_Ploidie (Observation, extends MTB Molekularer Biomarker)

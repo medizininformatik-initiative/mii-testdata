@@ -22,10 +22,10 @@
   "code": {
     "coding": [
       {
-        "code": "721961004",
+        "code": "225338004",
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-        "display": "Risk assessment score (observable entity)"
+        "display": "Risk assessment"
       }
     ],
     "text": "Polygener Risiko Score (PRS)"

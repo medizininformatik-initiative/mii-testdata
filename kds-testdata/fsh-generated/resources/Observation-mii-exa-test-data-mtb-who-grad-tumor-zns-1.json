@@ -26,8 +26,8 @@
     "coding": [
       {
         "system": "http://snomed.info/sct",
-        "code": "1228852002",
-        "display": "World Health Organization grade 4 (qualifier value)"
+        "code": "396925001",
+        "display": "WHO grade IV (central nervous system tumor)"
       }
     ]
   },

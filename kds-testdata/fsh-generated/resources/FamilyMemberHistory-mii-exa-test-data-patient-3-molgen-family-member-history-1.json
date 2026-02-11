@@ -55,7 +55,7 @@
           "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
           "version": "2022",
           "code": "C21.8",
-          "display": "Boesartige Neubildung des Rektums, Anus und Analkanals: Rektum, Anus und Analkanal, mehrere Teilbereiche ueberlappend"
+          "display": "Bösartige Neubildung: Rektum, Anus und Analkanal, mehrere Teilbereiche überlappend"
         }
       ]
     }
@@ -79,7 +79,7 @@
             "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
             "version": "2022",
             "code": "C43.9",
-            "display": "Boesartiges Melanom der Haut, nicht naeher bezeichnet"
+            "display": "Bösartiges Melanom der Haut, nicht näher bezeichnet"
           }
         ]
       },

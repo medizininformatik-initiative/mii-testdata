@@ -36,9 +36,9 @@
     {
       "coding": [
         {
-          "code": "POS",
+          "code": "H",
           "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
-          "display": "Positive"
+          "display": "High"
         }
       ]
     }

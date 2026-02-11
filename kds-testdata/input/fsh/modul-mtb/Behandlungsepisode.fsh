@@ -131,4 +131,4 @@ Description: "Test instance for WHO CNS tumor grading"
 // code inherited from profile pattern (sct#396921005 "WHO grade finding for central nervous system tumor")
 * subject = Reference(mii-exa-test-data-patient-1)
 * effectiveDateTime = "2024-01-05"
-* valueCodeableConcept = $SCT#1228852002 "World Health Organization grade 4 (qualifier value)"
+* valueCodeableConcept = $SCT#396925001 "WHO grade IV (central nervous system tumor)"

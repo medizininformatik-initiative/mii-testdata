@@ -30,20 +30,6 @@
   ],
   "condition": [
     {
-      "extension": [
-        {
-          "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-ex-seltene-penetrance",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "code": "HP:0003829",
-                "system": "http://human-phenotype-ontology.org",
-                "display": "Incomplete penetrance"
-              }
-            ]
-          }
-        }
-      ],
       "code": {
         "coding": [
           {

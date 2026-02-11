@@ -18,10 +18,9 @@ Description: "Familienanamnese: Mother with Marfan syndrome - all MS elements in
 * sex = http://hl7.org/fhir/administrative-gender#female
 * bornDate = "1960"
 * deceasedBoolean = false
-// Condition 1 with mondo coding, penetrance extension, contributedToDeath, onsetAge
-* condition[+].extension[+].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-ex-seltene-penetrance"
-* condition[=].extension[=].valueCodeableConcept = $HPO#HP:0003829 "Incomplete penetrance"
-* condition[=].code.coding[+] = $icd-10-gm#Q87.4 "Marfan-Syndrom"
+// Condition 1 with mondo coding, contributedToDeath, onsetAge
+// NOTE: penetrance extension removed - not allowed on FamilyMemberHistory.condition BackboneElement
+* condition[+].code.coding[+] = $icd-10-gm#Q87.4 "Marfan-Syndrom"
 * condition[=].code.coding[=].version = "2024"
 * condition[=].code.coding[+] = $orpha#558 "Marfan syndrome"
 * condition[=].code.coding[+] = $MONDO#MONDO:0007064 "Marfan syndrome"

@@ -11,7 +11,7 @@ Description: "RiskAssessment: Polygener Risiko Score fuer kolorektales Karzinom"
 * identifier.system = "https://www.charite.de/fhir/sid/risiko-bewertungen"
 * identifier.value = "PRS-CRC-2022-0407-001"
 * status = #final
-* code = $sct#721961004 "Risk assessment score (observable entity)"
+* code = $sct#225338004 "Risk assessment"
 * code.text = "Polygener Risiko Score (PRS)"
 * subject = Reference(mii-exa-test-data-patient-3)
 * encounter = Reference(mii-exa-test-data-patient-3-encounter-1)

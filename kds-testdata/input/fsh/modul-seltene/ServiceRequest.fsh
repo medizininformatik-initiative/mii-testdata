@@ -12,12 +12,9 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/S
 Usage: #example
 Description: "Therapieempfehlung nicht-medikamentoes: Annual cardiac screening - all MS elements"
 * insert TestDataLabel
-// Extensions: Prioritaet, Evidenzgraduierung, Publikation
+// Extensions: Prioritaet, Publikation (Evidenzgraduierung not allowed on ServiceRequest)
 * extension[+].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-ex-seltene-empfehlung-prioritaet"
 * extension[=].valuePositiveInt = 2
-* extension[+].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-ex-seltene-empfehlung-evidenzgraduierung"
-* extension[=].valueCodeableConcept.coding[+].code = #2B
-* extension[=].valueCodeableConcept.coding[=].display = "Evidenzgrad 2B"
 * extension[+].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-ex-seltene-empfehlung-publikation"
 * extension[=].valueString = "ESC Guidelines on Marfan Syndrome 2024"
 * status = #draft
@@ -53,6 +50,7 @@ Description: "Studieneinschluss Anfrage: Clinical trial referral - all MS elemen
 * insert TestDataLabel
 // Extensions: statusReason, Prioritaet, Publikation
 * extension[+].url = "http://hl7.org/fhir/StructureDefinition/request-statusReason"
+* extension[=].valueCodeableConcept.coding = $sct#385645004 "Accepted"
 * extension[=].valueCodeableConcept.text = "Patient erfuellt Einschlusskriterien der Studie"
 * extension[+].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-ex-seltene-empfehlung-prioritaet"
 * extension[=].valuePositiveInt = 1

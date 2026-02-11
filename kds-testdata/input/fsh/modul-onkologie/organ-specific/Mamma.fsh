@@ -109,8 +109,8 @@ Description: "Onkologie Test Mamma Operation - Brusterhaltende Therapie"
 * status = #completed
 * category = $SCT#387713003 "Surgical procedure"
 * code = $SCT#392021009 "Lumpectomy of breast (procedure)"
-* code.coding[ops] = $OPS#5-870.0 "Partielle (brusterhaltende) Exzision der Mamma: Exzision"
-* code.coding[ops].version = "2021"
+* code.coding[ops] = $OPS#5-870.a0 "Partielle (brusterhaltende) Exzision der Mamma und Destruktion von Mammagewebe: Partielle Resektion: Direkte Adaptation der benachbarten Wundflächen oder Verzicht auf Adaptation"
+* code.coding[ops].version = "2026"
 * subject = Reference(mii-exa-test-data-onko-patient-1)
 * reasonReference = Reference(mii-exa-test-data-onko-diagnose-1)
 * performedDateTime = "2021-09-30"

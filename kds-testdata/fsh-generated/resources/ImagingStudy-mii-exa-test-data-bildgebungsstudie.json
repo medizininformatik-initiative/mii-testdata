@@ -201,10 +201,10 @@
         "display": "Breast structure (body structure)"
       },
       "laterality": {
-        "code": "51440002",
+        "code": "7771000",
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-        "display": "Bilateral"
+        "display": "Left"
       },
       "started": "2024-07-19T12:03:30+02:00"
     }

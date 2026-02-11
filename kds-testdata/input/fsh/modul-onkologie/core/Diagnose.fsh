@@ -53,5 +53,5 @@ Description: "Onkologie Test - Liste Evidenz Erstdiagnose"
 * title = "Liste der Evidenz zum Erstdiagnosezeitpunkt"
 * subject = Reference(mii-exa-test-data-onko-patient-1)
 * encounter = Reference(mii-exa-test-data-onko-encounter-1)
-* entry[0].flag = $SCT#168461002 "Imaging report"
+* entry[0].flag = $SCT#4201000179104 "Imaging report"
 * entry[0].item = Reference(mii-exa-test-data-onko-befund-1)
