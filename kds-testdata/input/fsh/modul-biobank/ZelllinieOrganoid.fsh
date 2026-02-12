@@ -24,7 +24,7 @@ Description: "Zelllinie: Kolonkarzinom-Zelllinie aus Gewebeprobe (Patient 3)"
 * identifier.system = "https://www.charite.de/fhir/sid/Bioproben"
 * identifier.value = "ZL_000001"
 * status = #available
-* type.coding[sct] = $sct#258435002 "Tumor cells (specimen)"
+* type.coding[sct] = $sct#258435002 "Tumor tissue specimen"
 * subject = Reference(mii-exa-test-data-patient-3)
 * parent = Reference(mii-exa-test-data-patient-3-specimen-1)
 * collection.collectedDateTime = "2022-04-15T10:00:00+02:00"
@@ -58,7 +58,7 @@ Description: "Zelllinie: Brustkrebsorganoid (Patient 5)"
 * identifier.system = "https://www.charite.de/fhir/sid/Bioproben"
 * identifier.value = "ZL_000002"
 * status = #available
-* type.coding[sct] = $sct#258435002 "Tumor cells (specimen)"
+* type.coding[sct] = $sct#258435002 "Tumor tissue specimen"
 * subject = Reference(mii-exa-test-data-patient-5)
 * parent = Reference(mii-exa-test-data-patient-5-specimen-1)
 * collection.collectedDateTime = "2023-08-01T09:30:00+02:00"

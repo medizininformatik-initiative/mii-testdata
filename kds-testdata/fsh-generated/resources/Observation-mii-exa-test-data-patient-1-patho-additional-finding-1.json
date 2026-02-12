@@ -27,7 +27,7 @@
         {
           "code": "100969-5",
           "system": "http://loinc.org",
-          "display": "Pathology report additional specified observation in Specimen Document"
+          "display": "Pathology report additional specified observation in Specimen Narrative"
         }
       ]
     }
@@ -35,9 +35,9 @@
   "code": {
     "coding": [
       {
-        "code": "44663-3",
+        "code": "74119-9",
         "system": "http://loinc.org",
-        "display": "AMACR Ag [Presence] in Tissue by Immune stain"
+        "display": "P504S Ag [Presence] in Tissue by Immune stain"
       }
     ]
   },

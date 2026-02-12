@@ -12,7 +12,7 @@ Description: "Patho Makroskopischer Grouper: Prostata-Stanzbiopsie A"
 * insert TestDataLabel
 * status = #final
 * category[laboratory-category].coding = $observation-category#laboratory
-* code.coding = $loinc#22634-0 "Pathology report gross observation"
+* code.coding = $loinc#22634-0 "Pathology report gross observation Narrative"
 * subject = Reference(mii-exa-test-data-patient-1)
 * encounter = Reference(mii-exa-test-data-patient-1-encounter-1)
 * effectiveDateTime = "2024-02-16"
@@ -31,7 +31,7 @@ Description: "Patho Mikroskopischer Grouper: Prostata-Stanzbiopsie A"
 * insert TestDataLabel
 * status = #final
 * category[laboratory-category].coding = $observation-category#laboratory
-* code.coding = $loinc#22635-7 "Pathology report microscopic observation"
+* code.coding = $loinc#22635-7 "Pathology report microscopic observation Narrative Other stain"
 * subject = Reference(mii-exa-test-data-patient-1)
 * encounter = Reference(mii-exa-test-data-patient-1-encounter-1)
 * effectiveDateTime = "2024-02-16"
@@ -51,7 +51,7 @@ Description: "Patho Diagnostische Schlussfolgerung: Prostata-Adenokarzinom, Glea
 * insert TestDataLabel
 * status = #final
 * category[laboratory-category].coding = $observation-category#laboratory
-* code.coding = $loinc#22637-3 "Pathology report final diagnosis"
+* code.coding = $loinc#22637-3 "Pathology report final diagnosis Narrative"
 * subject = Reference(mii-exa-test-data-patient-1)
 * encounter = Reference(mii-exa-test-data-patient-1-encounter-1)
 * effectiveDateTime = "2024-02-16"
@@ -89,7 +89,7 @@ Description: "Patho Zusaetzlicher Grouper: Ergaenzende immunhistochemische Befun
 * insert TestDataLabel
 * status = #final
 * category[laboratory-category].coding = $observation-category#laboratory
-* code.coding = $loinc#100969-5 "Pathology report additional specified observation in Specimen Document"
+* code.coding = $loinc#100969-5 "Pathology report additional specified observation in Specimen Narrative"
 * subject = Reference(mii-exa-test-data-patient-1)
 * encounter = Reference(mii-exa-test-data-patient-1-encounter-1)
 * effectiveDateTime = "2024-02-16"

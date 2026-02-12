@@ -28,7 +28,7 @@
       {
         "system": "http://loinc.org",
         "code": "100969-5",
-        "display": "Pathology report additional specified observation in Specimen Document"
+        "display": "Pathology report additional specified observation in Specimen Narrative"
       }
     ]
   },

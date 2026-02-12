@@ -17,10 +17,10 @@
     {
       "coding": [
         {
-          "code": "224588003",
+          "code": "224615002",
           "system": "http://snomed.info/sct",
           "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-          "display": "Research nurse (occupation)"
+          "display": "Research nurse"
         }
       ]
     }

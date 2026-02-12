@@ -23,7 +23,7 @@ Usage: #example
 Description: "Substance: Heparin (Antikoagulans)"
 * insert TestDataLabel
 * category = $substance-category#chemical "Chemical"
-* code = $sct#96382006 "Heparin (substance)"
+* code = $sct#96382006 "Unfractionated heparin"
 
 // Formaldehyde / Formalin - common fixative for histology
 Instance: mii-exa-test-data-biobank-substance-formalin

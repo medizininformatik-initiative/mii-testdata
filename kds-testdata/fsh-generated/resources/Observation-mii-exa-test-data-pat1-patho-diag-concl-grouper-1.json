@@ -28,7 +28,7 @@
       {
         "system": "http://loinc.org",
         "code": "22637-3",
-        "display": "Pathology report final diagnosis"
+        "display": "Pathology report final diagnosis Narrative"
       }
     ]
   },

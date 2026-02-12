@@ -27,7 +27,7 @@ Description: "DiagnosticReport: CT Thorax Befundbericht"
 * basedOn = Reference(mii-exa-test-data-anforderung-ct)
 * status = #final
 * category.coding[sct] = $sct#4201000179104 "Imaging report (record artifact)"
-* code = $sct#169070004 "Computed tomography of chest (procedure)"
+* code = $sct#169069000 "CT of chest"
 * subject = Reference(mii-exa-test-data-patient-2)
 * encounter = Reference(mii-exa-test-data-patient-2-encounter-1)
 * effectiveDateTime = "2024-11-05T11:30:00+01:00"
@@ -36,5 +36,5 @@ Description: "DiagnosticReport: CT Thorax Befundbericht"
 * result = Reference(mii-exa-test-data-radiologische-beobachtung-ct)
 * imagingStudy = Reference(mii-exa-test-data-bildgebungsstudie-ct)
 * conclusion = "Solitaerer pulmonaler Rundherd im rechten Oberlappen (Segment 3), 18 mm, unregelmae\u00DFig begrenzt mit Spiculae. Dringender Verdacht auf Bronchialkarzinom. Empfehlung: PET-CT und bioptische Abklaerung."
-* conclusionCode = $sct#427359005 "Solitary nodule of lung (disorder)"
+* conclusionCode = $sct#427359005 "Solitary nodule of lung"
 * extension[supportingInfo].valueReference = Reference(mii-exa-test-data-befundungsprozedur-ct)

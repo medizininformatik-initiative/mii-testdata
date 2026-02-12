@@ -52,7 +52,7 @@
           "code": "427359005",
           "system": "http://snomed.info/sct",
           "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-          "display": "Solitary nodule of lung (disorder)"
+          "display": "Solitary nodule of lung"
         }
       ]
     }
@@ -69,10 +69,10 @@
   "code": {
     "coding": [
       {
-        "code": "169070004",
+        "code": "169069000",
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-        "display": "Computed tomography of chest (procedure)"
+        "display": "CT of chest"
       }
     ]
   },

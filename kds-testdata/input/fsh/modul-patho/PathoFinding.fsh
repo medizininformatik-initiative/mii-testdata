@@ -18,7 +18,7 @@ Description: "Patho Makro-Befund: Entnahmeort der Prostata-Stanzbiopsie"
 * insert TestDataLabel
 * status = #final
 * category[laboratory-category].coding = $observation-category#laboratory
-* category[section-type].coding = $loinc#22634-0 "Pathology report gross observation"
+* category[section-type].coding = $loinc#22634-0 "Pathology report gross observation Narrative"
 * code.coding = $loinc#94738-2 "Biopsy site Patient"
 * subject = Reference(mii-exa-test-data-patient-1)
 * encounter = Reference(mii-exa-test-data-patient-1-encounter-1)
@@ -35,7 +35,7 @@ Description: "Patho Makro-Befund: Stanzzylinderlänge"
 * insert TestDataLabel
 * status = #final
 * category[laboratory-category].coding = $observation-category#laboratory
-* category[section-type].coding = $loinc#22634-0 "Pathology report gross observation"
+* category[section-type].coding = $loinc#22634-0 "Pathology report gross observation Narrative"
 * code.coding = $loinc#44619-5 "Length of tissue core(s)"
 * subject = Reference(mii-exa-test-data-patient-1)
 * encounter = Reference(mii-exa-test-data-patient-1-encounter-1)
@@ -59,12 +59,12 @@ Description: "Patho Mikro-Befund: Histologischer Typ - Azinäres Adenokarzinom"
 * insert TestDataLabel
 * status = #final
 * category[laboratory-category].coding = $observation-category#laboratory
-* category[section-type].coding = $loinc#22635-7 "Pathology report microscopic observation"
-* code = $sct#371441004 "Histologic type (observable entity)"
+* category[section-type].coding = $loinc#22635-7 "Pathology report microscopic observation Narrative Other stain"
+* code = $sct#371441004 "Histologic type of proliferative mass"
 * subject = Reference(mii-exa-test-data-patient-1)
 * encounter = Reference(mii-exa-test-data-patient-1-encounter-1)
 * effectiveDateTime = "2024-02-16"
-* valueCodeableConcept = $sct#45410002 "Acinar adenocarcinoma (morphologic abnormality)"
+* valueCodeableConcept = $sct#45410002 "Acinar cell carcinoma"
 * specimen = Reference(mii-exa-test-data-patient-1-patho-specimen-2)
 * derivedFrom[+] = Reference(mii-exa-test-data-patient-1-patho-image-2)
 
@@ -76,7 +76,7 @@ Description: "Patho Mikro-Befund: Primaeres Gleason-Muster 3"
 * insert TestDataLabel
 * status = #final
 * category[laboratory-category].coding = $observation-category#laboratory
-* category[section-type].coding = $loinc#22635-7 "Pathology report microscopic observation"
+* category[section-type].coding = $loinc#22635-7 "Pathology report microscopic observation Narrative Other stain"
 * code.coding = $loinc#44641-9 "Gleason pattern.primary in Prostate tumor"
 * subject = Reference(mii-exa-test-data-patient-1)
 * encounter = Reference(mii-exa-test-data-patient-1-encounter-1)
@@ -93,7 +93,7 @@ Description: "Patho Mikro-Befund: Sekundaeres Gleason-Muster 4"
 * insert TestDataLabel
 * status = #final
 * category[laboratory-category].coding = $observation-category#laboratory
-* category[section-type].coding = $loinc#22635-7 "Pathology report microscopic observation"
+* category[section-type].coding = $loinc#22635-7 "Pathology report microscopic observation Narrative Other stain"
 * code.coding = $loinc#44642-7 "Gleason pattern.secondary in Prostate tumor"
 * subject = Reference(mii-exa-test-data-patient-1)
 * encounter = Reference(mii-exa-test-data-patient-1-encounter-1)
@@ -114,7 +114,7 @@ Description: "Patho Diagnose: ICD-O-3 Morphologie - Azinäres Adenokarzinom"
 * insert TestDataLabel
 * status = #final
 * category[laboratory-category].coding = $observation-category#laboratory
-* category[section-type].coding = $loinc#22637-3 "Pathology report final diagnosis"
+* category[section-type].coding = $loinc#22637-3 "Pathology report final diagnosis Narrative"
 * code.coding = $loinc#59847-4 "Histology and Behavior ICD-O-3 Cancer"
 * subject = Reference(mii-exa-test-data-patient-1)
 * encounter = Reference(mii-exa-test-data-patient-1-encounter-1)
@@ -129,12 +129,12 @@ Description: "Patho Diagnose: Gleason-Score 3+4=7"
 * insert TestDataLabel
 * status = #final
 * category[laboratory-category].coding = $observation-category#laboratory
-* category[section-type].coding = $loinc#22637-3 "Pathology report final diagnosis"
+* category[section-type].coding = $loinc#22637-3 "Pathology report final diagnosis Narrative"
 * code.coding = $loinc#35266-6 "Gleason score in Specimen Qualitative"
 * subject = Reference(mii-exa-test-data-patient-1)
 * encounter = Reference(mii-exa-test-data-patient-1-encounter-1)
 * effectiveDateTime = "2024-02-16"
-* valueCodeableConcept = $sct#57403001 "Gleason grade score 7 (finding)"
+* valueCodeableConcept = $sct#57403001 "Gleason grade score 7 out of 10"
 
 // Diagnostic Conclusion 3: ISUP Grade Group
 Instance: mii-exa-test-data-patient-1-patho-diagnostic-finding-3
@@ -144,7 +144,7 @@ Description: "Patho Diagnose: ISUP Gradgruppe 2"
 * insert TestDataLabel
 * status = #final
 * category[laboratory-category].coding = $observation-category#laboratory
-* category[section-type].coding = $loinc#22637-3 "Pathology report final diagnosis"
+* category[section-type].coding = $loinc#22637-3 "Pathology report final diagnosis Narrative"
 * code.coding = $loinc#94734-1 "Prostate cancer grade group [Score] in Prostate tumor Qualitative"
 * subject = Reference(mii-exa-test-data-patient-1)
 * encounter = Reference(mii-exa-test-data-patient-1-encounter-1)
@@ -164,7 +164,7 @@ Description: "Patho Intraoperativer Befund: Schnellschnitt-Tumornachweis"
 * status = #final
 * category[laboratory-category].coding = $observation-category#laboratory
 * category[section-type].coding = $loinc#83321-0 "Pathology report intraoperative observation in Specimen Document"
-* code.coding = $loinc#33731-1 "Pathology report intraoperative observation in Specimen Narrative"
+* code.coding = $loinc#33731-1 "Histology type in Cancer specimen Narrative"
 * subject = Reference(mii-exa-test-data-patient-1)
 * encounter = Reference(mii-exa-test-data-patient-1-encounter-1)
 * effectiveDateTime = "2024-02-15"
@@ -183,8 +183,8 @@ Description: "Patho Zusatzbefund: AMACR Immunhistochemie positiv"
 * insert TestDataLabel
 * status = #final
 * category[laboratory-category].coding = $observation-category#laboratory
-* category[section-type].coding = $loinc#100969-5 "Pathology report additional specified observation in Specimen Document"
-* code.coding = $loinc#44663-3 "AMACR Ag [Presence] in Tissue by Immune stain"
+* category[section-type].coding = $loinc#100969-5 "Pathology report additional specified observation in Specimen Narrative"
+* code.coding = $loinc#74119-9 "P504S Ag [Presence] in Tissue by Immune stain"
 * subject = Reference(mii-exa-test-data-patient-1)
 * encounter = Reference(mii-exa-test-data-patient-1-encounter-1)
 * effectiveDateTime = "2024-02-16"

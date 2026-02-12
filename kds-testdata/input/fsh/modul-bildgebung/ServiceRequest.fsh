@@ -26,13 +26,13 @@ Description: "ServiceRequest: Anforderung CT Thorax"
 * intent = #order
 * priority = #urgent
 * category = $sct#363679005 "Imaging (procedure)"
-* code = $sct#169070004 "Computed tomography of chest (procedure)"
+* code = $sct#169069000 "CT of chest"
 * subject = Reference(mii-exa-test-data-patient-2)
 * encounter = Reference(mii-exa-test-data-patient-2-encounter-1)
 * authoredOn = "2024-11-04T16:30:00+01:00"
 * requester = Reference(mii-exa-test-data-practitioner-physician-1)
 * performer = Reference(mii-exa-test-data-practitioner-physician-1)
-* reasonCode = $sct#427359005 "Solitary nodule of lung (disorder)"
+* reasonCode = $sct#427359005 "Solitary nodule of lung"
 * reasonReference = Reference(mii-exa-test-data-patient-2-diagnose-1)
 * supportingInfo = Reference(mii-exa-test-data-bildgebungsstudie-ct)
 * note.text = "V.a. Bronchialkarzinom bei Raucher mit Haemoptysen. CT Thorax mit KM zur Abklaerung dringend erbeten."

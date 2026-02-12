@@ -45,7 +45,7 @@
           "code": {
             "coding": [
               {
-                "code": "30746-2",
+                "code": "24627-2",
                 "system": "http://loinc.org",
                 "display": "CT Chest"
               }
@@ -69,9 +69,9 @@
   "type": {
     "coding": [
       {
-        "code": "87273-9",
+        "code": "24627-2",
         "system": "http://loinc.org",
-        "display": "CT Thorax"
+        "display": "CT Chest"
       }
     ]
   },

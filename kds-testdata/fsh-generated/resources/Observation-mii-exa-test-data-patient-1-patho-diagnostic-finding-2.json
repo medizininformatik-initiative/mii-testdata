@@ -27,7 +27,7 @@
         {
           "code": "22637-3",
           "system": "http://loinc.org",
-          "display": "Pathology report final diagnosis"
+          "display": "Pathology report final diagnosis Narrative"
         }
       ]
     }
@@ -55,7 +55,7 @@
         "code": "57403001",
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-        "display": "Gleason grade score 7 (finding)"
+        "display": "Gleason grade score 7 out of 10"
       }
     ]
   }

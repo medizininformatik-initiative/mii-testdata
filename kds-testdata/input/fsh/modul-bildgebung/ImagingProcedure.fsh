@@ -22,7 +22,7 @@ Description: "Procedure: CT Thorax Bildgebungsprozedur"
 * basedOn = Reference(mii-exa-test-data-anforderung-ct)
 * status = #completed
 * category = $sct#363679005 "Imaging (procedure)"
-* code = $sct#169070004 "Computed tomography of chest (procedure)"
+* code = $sct#169069000 "CT of chest"
 * subject = Reference(mii-exa-test-data-patient-2)
 * encounter = Reference(mii-exa-test-data-patient-2-encounter-1)
 * performedDateTime = "2024-11-05T09:15:00+01:00"

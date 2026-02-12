@@ -42,7 +42,7 @@
         {
           "extension": [
             {
-              "url": "ctdiVol",
+              "url": "CTDIvol",
               "valueQuantity": {
                 "value": 8.5,
                 "code": "mGy",
@@ -51,7 +51,7 @@
               }
             },
             {
-              "url": "kvp",
+              "url": "KVP",
               "valueQuantity": {
                 "value": 120,
                 "code": "kV",
@@ -78,7 +78,7 @@
               }
             },
             {
-              "url": "tubeCurrent",
+              "url": "xRayTubeCurrent",
               "valueQuantity": {
                 "value": 300,
                 "code": "mA",

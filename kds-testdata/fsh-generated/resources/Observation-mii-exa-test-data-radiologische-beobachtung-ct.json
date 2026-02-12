@@ -34,10 +34,10 @@
     ],
     "coding": [
       {
-        "code": "44029006",
+        "code": "39743006",
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-        "display": "Structure of anterior segment of upper lobe of right lung (body structure)"
+        "display": "Structure of anterior segment of right upper lobe of lung"
       }
     ]
   },
@@ -75,7 +75,7 @@
           {
             "code": "33999-4",
             "system": "http://loinc.org",
-            "display": "Diameter.maximum Lesion"
+            "display": "Diagnosis status"
           }
         ]
       }
@@ -97,7 +97,7 @@
   "code": {
     "coding": [
       {
-        "code": "30746-2",
+        "code": "24627-2",
         "system": "http://loinc.org",
         "display": "CT Chest"
       }

@@ -27,7 +27,7 @@
         {
           "code": "22635-7",
           "system": "http://loinc.org",
-          "display": "Pathology report microscopic observation"
+          "display": "Pathology report microscopic observation Narrative Other stain"
         }
       ]
     }
@@ -44,7 +44,7 @@
         "code": "371441004",
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-        "display": "Histologic type (observable entity)"
+        "display": "Histologic type of proliferative mass"
       }
     ]
   },
@@ -61,7 +61,7 @@
         "code": "45410002",
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-        "display": "Acinar adenocarcinoma (morphologic abnormality)"
+        "display": "Acinar cell carcinoma"
       }
     ]
   },

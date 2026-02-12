@@ -15,8 +15,8 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebun
 Usage: #example
 Description: "BodyStructure: Lungenrundherd rechter Oberlappen"
 * insert TestDataLabel
-* morphology = $sct#427359005 "Solitary nodule of lung (disorder)"
-* location = $sct#44029006 "Structure of anterior segment of upper lobe of right lung (body structure)"
+* morphology = $sct#427359005 "Solitary nodule of lung"
+* location = $sct#39743006 "Structure of anterior segment of right upper lobe of lung"
 * locationQualifier = $sct#24028007 "Right (qualifier value)"
 * description = "Solitaerer pulmonaler Rundherd, 18 mm Durchmesser, unregelmae\u00DFig begrenzt mit Spiculae, im Segment 3 des rechten Oberlappens"
 * patient = Reference(mii-exa-test-data-patient-2)

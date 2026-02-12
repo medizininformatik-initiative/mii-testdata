@@ -32,15 +32,15 @@ Description: "Observation: CT Thorax Radiologische Beobachtung"
 * partOf = Reference(mii-exa-test-data-befundungsprozedur-ct)
 * status = #final
 * category = $observation-category#imaging "Imaging"
-* code = $loinc#30746-2 "CT Chest"
+* code = $loinc#24627-2 "CT Chest"
 * subject = Reference(mii-exa-test-data-patient-2)
 * encounter = Reference(mii-exa-test-data-patient-2-encounter-1)
 * effectiveDateTime = "2024-11-05T11:30:00+01:00"
 * issued = "2024-11-05T13:45:00+01:00"
 * valueString = "Solitaerer pulmonaler Rundherd im rechten Oberlappen, Segment 3, 18 mm Durchmesser, unregelmae\u00DFig begrenzt mit Spiculae, ohne Verkalkungen"
-* bodySite = $sct#44029006 "Structure of anterior segment of upper lobe of right lung (body structure)"
+* bodySite = $sct#39743006 "Structure of anterior segment of right upper lobe of lung"
 * derivedFrom = Reference(mii-exa-test-data-bildgebungsstudie-ct)
-* component[0].code = $loinc#33999-4 "Diameter.maximum Lesion"
+* component[0].code = $loinc#33999-4 "Diagnosis status"
 * component[=].valueQuantity.value = 18
 * component[=].valueQuantity.unit = "millimeter"
 * component[=].valueQuantity.system = $ucum

@@ -17,7 +17,7 @@ Description: "Procedure: Extrakorporales Verfahren (ECMO) für Patient-1"
 * code.coding[ops].extension[+].url = "http://fhir.de/StructureDefinition/seitenlokalisation"
 * code.coding[ops].extension[=].valueCoding = $seitenlokalisation#L "links"
 * code.coding[sct] = $sct#786453001 "Venovenous extracorporeal membrane oxygenation (procedure)"
-* code.coding[sct].version = "2023"
+* code.coding[sct].version = "http://snomed.info/sct/900000000000207008/version/20230731"
 * subject = Reference(mii-exa-test-data-patient-1)
 * encounter = Reference(mii-exa-test-data-patient-1-encounter-1)
 * performedPeriod.start = "2023-08-23T10:30:10+01:00"

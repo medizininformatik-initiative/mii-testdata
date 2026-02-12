@@ -27,7 +27,7 @@
         {
           "code": "22634-0",
           "system": "http://loinc.org",
-          "display": "Pathology report gross observation"
+          "display": "Pathology report gross observation Narrative"
         }
       ]
     }

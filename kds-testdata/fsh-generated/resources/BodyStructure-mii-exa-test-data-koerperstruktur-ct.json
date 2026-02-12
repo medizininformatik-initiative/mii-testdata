@@ -31,17 +31,17 @@
         "code": "427359005",
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-        "display": "Solitary nodule of lung (disorder)"
+        "display": "Solitary nodule of lung"
       }
     ]
   },
   "location": {
     "coding": [
       {
-        "code": "44029006",
+        "code": "39743006",
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-        "display": "Structure of anterior segment of upper lobe of right lung (body structure)"
+        "display": "Structure of anterior segment of right upper lobe of lung"
       }
     ]
   },

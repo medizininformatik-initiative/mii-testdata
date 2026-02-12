@@ -17,7 +17,7 @@ Description: "Patho ServiceRequest: Prostata-Stanzbiopsie-Untersuchung fuer Pati
 * requisition.value = "AG_000001"
 * status = #completed
 * intent = #order
-* code = $sct#86273004 "Biopsy of prostate (procedure)"
+* code = $sct#86273004 "Biopsy"
 * subject = Reference(mii-exa-test-data-patient-1)
 * encounter = Reference(mii-exa-test-data-patient-1-encounter-1)
 * requester = Reference(mii-exa-test-data-practitioner-physician-1)

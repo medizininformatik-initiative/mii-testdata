@@ -18,7 +18,7 @@ Description: "CarePlan: CT Thorax Behandlungsempfehlung"
 * insert TestDataLabel
 * status = #active
 * intent = #proposal
-* category = $sct#410401003 "Respiratory system management (procedure)"
+* category = $sct#410401003 "Nursing care/supplementary surveillance"
 * description = "PET-CT zur weiteren Charakterisierung des Rundherdes sowie CT-gesteuerte transthorakale Biopsie empfohlen. Vorstellung im Thorax-Tumorboard."
 * subject = Reference(mii-exa-test-data-patient-2)
 * encounter = Reference(mii-exa-test-data-patient-2-encounter-1)

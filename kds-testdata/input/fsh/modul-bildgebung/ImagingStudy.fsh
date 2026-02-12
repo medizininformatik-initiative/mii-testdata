@@ -74,15 +74,15 @@ Description: "ImagingStudy: ComputedTomography Thorax"
 * description = "CT Thorax mit KM"
 // CT modality parameters - using generic extension syntax since SUSHI cannot resolve nested CT extension paths
 * series.extension[+].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-ct"
-* series.extension[=].extension[+].url = "ctdiVol"
+* series.extension[=].extension[+].url = "CTDIvol"
 * series.extension[=].extension[=].valueQuantity = 8.5 'mGy' "milligray"
-* series.extension[=].extension[+].url = "kvp"
+* series.extension[=].extension[+].url = "KVP"
 * series.extension[=].extension[=].valueQuantity = 120 'kV' "kilovolt"
 * series.extension[=].extension[+].url = "exposureTime"
 * series.extension[=].extension[=].valueQuantity = 500 'ms' "milliseconds"
 * series.extension[=].extension[+].url = "exposure"
 * series.extension[=].extension[=].valueQuantity = 150 'mA.s' "milliampere second"
-* series.extension[=].extension[+].url = "tubeCurrent"
+* series.extension[=].extension[+].url = "xRayTubeCurrent"
 * series.extension[=].extension[=].valueQuantity = 300 'mA' "milliampere"
 * series.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-kontrastmittel].extension[contrastBolus].valueBoolean = true
 * series.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-kontrastmittel].extension[contrastBolusDetails].valueReference = Reference(mii-exa-test-data-kontrastmittelgabe-ct)

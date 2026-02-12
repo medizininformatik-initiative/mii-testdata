@@ -37,7 +37,7 @@
       {
         "code": "33731-1",
         "system": "http://loinc.org",
-        "display": "Pathology report intraoperative observation in Specimen Narrative"
+        "display": "Histology type in Cancer specimen Narrative"
       }
     ]
   },

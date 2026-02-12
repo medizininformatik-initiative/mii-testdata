@@ -82,7 +82,7 @@ Description: "ICU Observation: Bilanz Abnahme Haemofiltration Einzelmesswerte f√
 * status = #final
 * category.coding[hl7-category] = $observation-category#vital-sign "Vital Signs"
 * category.coding[kdsicu-category] = $sct#364396009 "Observing patient (regime/therapy)"
-* code.coding[sct] = $sct#251850009 "Haemofiltration rate (observable entity)"
+* code.coding[sct] = $sct#251850009 "Ultrafiltrate fluid loss"
 * code.coding[loinc] = $loinc#99741-1
 * subject = Reference(mii-exa-test-data-patient-1)
 * encounter = Reference(mii-exa-test-data-patient-1-encounter-1)

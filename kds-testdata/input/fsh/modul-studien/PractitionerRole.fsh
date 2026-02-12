@@ -30,7 +30,7 @@ Description: "PractitionerRole: Studienkoordinator der MII-BIOMARKER-2024 Studie
 // Organization (MS)
 * organization = Reference(mii-exa-test-data-organization-charite)
 // Code (MS)
-* code = $sct#224588003 "Research nurse (occupation)"
+* code = $sct#224615002 "Research nurse"
 // Telecom (MS)
 * telecom[0].system = #email
 * telecom[0].value = "robert.koch@charite.de"

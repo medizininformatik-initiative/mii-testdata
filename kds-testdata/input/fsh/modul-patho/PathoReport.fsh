@@ -13,7 +13,7 @@ Description: "Patho Befundbericht: Prostata-Stanzbiopsie Adenokarzinom Gleason 3
 * basedOn = Reference(mii-exa-test-data-patient-1-patho-request-1)
 * status = #final
 * category = $v2-0074#PAT "Pathology (gross & histopath, not surgical)"
-* code.coding[pathology-report] = $loinc#60568-3 "Pathology Synoptic report"
+* code.coding[pathology-report] = $loinc#60568-3 "Pathology synoptic report"
 * subject = Reference(mii-exa-test-data-patient-1)
 * encounter = Reference(mii-exa-test-data-patient-1-encounter-1)
 * effectiveDateTime = "2024-02-16"

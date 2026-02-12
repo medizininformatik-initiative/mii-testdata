@@ -24,7 +24,7 @@ Usage: #example
 Description: "Composition: CT Thorax semistrukturierter Befundbericht"
 * insert TestDataLabel
 * status = #final
-* type = $loinc#87273-9 "CT Thorax"
+* type = $loinc#24627-2 "CT Chest"
 * subject = Reference(mii-exa-test-data-patient-2)
 * encounter = Reference(mii-exa-test-data-patient-2-encounter-1)
 * date = "2024-11-05T13:45:00+01:00"
@@ -33,7 +33,7 @@ Description: "Composition: CT Thorax semistrukturierter Befundbericht"
 * section[diagRep].title = "Diagnostic Report"
 * section[diagRep].entry = Reference(mii-exa-test-data-befundbericht-ct)
 * section[diagRep].section.title = "Rechter Oberlappen"
-* section[diagRep].section.code = $loinc#30746-2 "CT Chest"
+* section[diagRep].section.code = $loinc#24627-2 "CT Chest"
 * section[diagRep].section.text.status = #generated
 * section[diagRep].section.text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Solitaerer Rundherd rechter Oberlappen Segment 3, 18 mm, dringender V.a. Bronchialkarzinom</div>"
 * section[diagRep].section.author = Reference(mii-exa-test-data-practitioner-physician-1)
