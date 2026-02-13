@@ -122,7 +122,7 @@
     },
     {
       "packageId": "de.medizininformatikinitiative.kerndatensatz.seltene",
-      "uri": "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene",
+      "uri": "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.seltene",
       "version": "2026.0.x",
       "id": "de_medizininformatikinitiative_kerndatensatz_seltene"
     },

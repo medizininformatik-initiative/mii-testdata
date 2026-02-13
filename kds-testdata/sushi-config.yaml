@@ -42,7 +42,7 @@ dependencies:
   de.medizininformatikinitiative.kerndatensatz.onkologie: 2026.0.x
   de.medizininformatikinitiative.kerndatensatz.seltene:
     version: 2026.0.x
-    uri: https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene
+    uri: https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.seltene
   de.medizininformatikinitiative.kerndatensatz.mtb:
     version: 2026.0.x
     uri: https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/ImplementationGuide/mii-ig-mtb-de

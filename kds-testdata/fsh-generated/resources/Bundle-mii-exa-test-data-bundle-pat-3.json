@@ -2839,7 +2839,7 @@
           ],
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/molekulargenetischer-befundbericht",
-            "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomics-report"
+            "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-report"
           ]
         },
         "extension": [

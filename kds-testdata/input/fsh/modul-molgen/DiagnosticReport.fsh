@@ -4,7 +4,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/St
 Usage: #example
 Description: "DiagnosticReport: Molekulargenetischer Befundbericht mit BRAF-Mutation"
 * insert TestDataLabel
-* meta.profile[+] = "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomics-report"
+* meta.profile[+] = "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-report"
 * extension[recommended-action][+].valueReference = Reference(mii-exa-test-data-patient-3-molgen-medikationsempfehlung-1)
 * extension[recommended-action][+].valueReference = Reference(mii-exa-test-data-patient-3-molgen-folgemassnahme-1)
 * extension[supportingInfo].valueReference = Reference(mii-exa-test-data-patient-3-molgen-family-member-history-1)
@@ -36,7 +36,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/St
 Usage: #example
 Description: "DiagnosticReport: Molekulargenetischer Befundbericht Magenkarzinom"
 * insert TestDataLabel
-* meta.profile[+] = "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomics-report"
+* meta.profile[+] = "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-report"
 * extension[supportingInfo].valueReference = Reference(mii-exa-test-data-patient-4-molgen-family-member-history-1)
 * extension[genomic-study].url = "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-reference"
 * extension[genomic-study].valueReference = Reference(mii-exa-test-data-patient-4-molgen-genomic-study-1)
