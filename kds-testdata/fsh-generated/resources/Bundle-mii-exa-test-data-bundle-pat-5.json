@@ -1879,7 +1879,8 @@
               "coding": [
                 {
                   "system": "http://fhir.de/CodeSystem/ask",
-                  "code": "34837"
+                  "code": "34837",
+                  "version": "20260105"
                 }
               ]
             },
@@ -1948,7 +1949,8 @@
               "coding": [
                 {
                   "system": "http://fhir.de/CodeSystem/ask",
-                  "code": "23391"
+                  "code": "23391",
+                  "version": "20260105"
                 }
               ]
             },

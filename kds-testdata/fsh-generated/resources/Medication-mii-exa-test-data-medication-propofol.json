@@ -39,6 +39,7 @@
           {
             "system": "http://fhir.de/CodeSystem/ask",
             "code": "22898",
+            "version": "20260105",
             "display": "Propofol"
           },
           {

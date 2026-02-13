@@ -44,6 +44,7 @@
           {
             "system": "http://fhir.de/CodeSystem/ask",
             "code": "33395",
+            "version": "20260105",
             "display": "Dalbavancin"
           },
           {

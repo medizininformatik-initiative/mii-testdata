@@ -41,6 +41,7 @@
           {
             "code": "12829",
             "system": "http://fhir.de/CodeSystem/ask",
+            "version": "20260105",
             "display": "Glucose"
           },
           {
@@ -83,6 +84,7 @@
           {
             "code": "00343",
             "system": "http://fhir.de/CodeSystem/ask",
+            "version": "20260105",
             "display": "Wasser für Injektionszwecke"
           },
           {

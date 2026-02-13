@@ -1870,7 +1870,8 @@
               "coding": [
                 {
                   "system": "http://fhir.de/CodeSystem/ask",
-                  "code": "24065"
+                  "code": "24065",
+                  "version": "20260105"
                 }
               ]
             },
@@ -1939,7 +1940,8 @@
               "coding": [
                 {
                   "system": "http://fhir.de/CodeSystem/ask",
-                  "code": "24994"
+                  "code": "24994",
+                  "version": "20260105"
                 }
               ]
             },

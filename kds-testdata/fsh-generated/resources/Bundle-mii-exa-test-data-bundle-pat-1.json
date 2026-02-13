@@ -1352,7 +1352,8 @@
               "coding": [
                 {
                   "system": "http://fhir.de/CodeSystem/ask",
-                  "code": "00002"
+                  "code": "00002",
+                  "version": "20260105"
                 }
               ]
             },
@@ -1421,6 +1422,7 @@
                 {
                   "system": "http://fhir.de/CodeSystem/ask",
                   "code": "22898",
+                  "version": "20260105",
                   "display": "Propofol"
                 },
                 {
@@ -1495,6 +1497,7 @@
                 {
                   "system": "http://fhir.de/CodeSystem/ask",
                   "code": "33395",
+                  "version": "20260105",
                   "display": "Dalbavancin"
                 },
                 {

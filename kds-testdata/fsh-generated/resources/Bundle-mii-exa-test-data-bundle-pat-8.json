@@ -2236,7 +2236,8 @@
               "coding": [
                 {
                   "system": "http://fhir.de/CodeSystem/ask",
-                  "code": "12545"
+                  "code": "12545",
+                  "version": "20260105"
                 }
               ]
             },
@@ -2305,7 +2306,8 @@
               "coding": [
                 {
                   "system": "http://fhir.de/CodeSystem/ask",
-                  "code": "11849"
+                  "code": "11849",
+                  "version": "20260105"
                 }
               ]
             },
@@ -2374,7 +2376,8 @@
               "coding": [
                 {
                   "system": "http://fhir.de/CodeSystem/ask",
-                  "code": "28860"
+                  "code": "28860",
+                  "version": "20260105"
                 }
               ]
             },
