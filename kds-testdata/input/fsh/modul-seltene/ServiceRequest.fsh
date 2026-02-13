@@ -53,6 +53,7 @@ Description: "Studieneinschluss Anfrage: Clinical trial referral - all MS elemen
 * insert TestDataLabel
 // Extensions: statusReason, Prioritaet, Publikation
 * extension[+].url = "http://hl7.org/fhir/StructureDefinition/request-statusReason"
+* extension[=].valueCodeableConcept.coding = $sct#399069006 "Eligible for clinical trial (finding)"
 * extension[=].valueCodeableConcept.text = "Patient erfuellt Einschlusskriterien der Studie"
 * extension[+].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-ex-seltene-empfehlung-prioritaet"
 * extension[=].valuePositiveInt = 1
