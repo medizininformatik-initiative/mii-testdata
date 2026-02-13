@@ -1948,6 +1948,12 @@
             },
             "doseAndRate": [
               {
+                "doseQuantity": {
+                  "value": 200,
+                  "code": "mg",
+                  "system": "http://unitsofmeasure.org",
+                  "unit": "mg"
+                },
                 "rateQuantity": {
                   "value": 5,
                   "code": "mg/min",
@@ -2040,6 +2046,12 @@
                     "system": "http://unitsofmeasure.org",
                     "unit": "Minuten"
                   }
+                },
+                "doseQuantity": {
+                  "value": 200,
+                  "code": "mg",
+                  "system": "http://unitsofmeasure.org",
+                  "unit": "mg"
                 }
               }
             ],
@@ -5423,7 +5435,7 @@
             "answer": [
               {
                 "valueCoding": {
-                  "code": "LA6568-5",
+                  "code": "LA6270-8",
                   "system": "http://loinc.org",
                   "display": "Never"
                 }

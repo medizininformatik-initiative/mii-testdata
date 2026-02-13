@@ -62,6 +62,7 @@ Description: "MedicationRequest: Propofol 6.5 mg/min IV via Perfusor"
 * dosageInstruction.timing.event = "2024-02-20T10:00:00+01:00"
 * dosageInstruction.route = $standardterms#20045000 "Intravenous use"
 * dosageInstruction.method = $sct#129331004 "Perfusion - action (qualifier value)"
+* dosageInstruction.doseAndRate.doseQuantity = 200 $ucum#mg "mg"
 * dosageInstruction.doseAndRate.rateQuantity = 5 $ucum#mg/min
 
 Instance: mii-exa-test-data-patient-1-medrequest-4
@@ -82,6 +83,7 @@ Description: "MedicationRequest: Propofol 6.5 mg/min IV via Perfusor"
 * dosageInstruction.timing.event = "2024-02-20T10:00:00+01:00"
 * dosageInstruction.route = $standardterms#20045000 "Intravenous use"
 * dosageInstruction.method = $sct#129331004 "Perfusion - action (qualifier value)"
+* dosageInstruction.doseAndRate.doseQuantity = 200 $ucum#mg "mg"
 * dosageInstruction.doseAndRate.rateRatio.numerator = 6.5 $ucum#mg "mg"
 * dosageInstruction.doseAndRate.rateRatio.denominator = 1 $ucum#min "Minuten"
 * priorPrescription = Reference(mii-exa-test-data-patient-1-medrequest-2)
@@ -444,7 +446,7 @@ Description: "MedicationRequest: Heparin 5000 IE s.c. alle 12 Stunden"
 Instance: mii-exa-test-data-patient-8-medrequest-2
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationRequest
 Usage: #example
-Description: "MedicationRequest: Metoprolol 50mg 2x täglich"
+Description: "MedicationRequest: Metoprolol 25mg morgens, 50mg abends (2 dosageInstructions, gleiche Einheit mg)"
 * insert TestDataLabel
 * identifier[0].system = "https://www.charite.de/fhir/sid/MedicationOrders"
 * identifier[0].value = "MO_0000021"
@@ -454,12 +456,24 @@ Description: "MedicationRequest: Metoprolol 50mg 2x täglich"
 * subject = Reference(mii-exa-test-data-patient-8)
 * encounter = Reference(mii-exa-test-data-patient-8-encounter-1)
 * authoredOn = "2023-11-12T08:30:00+01:00"
-* dosageInstruction.text = "Metoprolol 50mg 2x täglich"
-* dosageInstruction.route = $standardterms#20053000 "Oral use"
-* dosageInstruction.doseAndRate.doseQuantity = 50 $ucum#mg "mg"
-* dosageInstruction.timing.repeat.frequency = 2
-* dosageInstruction.timing.repeat.period = 1
-* dosageInstruction.timing.repeat.periodUnit = #d
+// Morgendosis 25mg
+* dosageInstruction[0].sequence = 1
+* dosageInstruction[0].text = "Metoprolol 25mg morgens"
+* dosageInstruction[0].route = $standardterms#20053000 "Oral use"
+* dosageInstruction[0].doseAndRate.doseQuantity = 25 $ucum#mg "mg"
+* dosageInstruction[0].timing.repeat.frequency = 1
+* dosageInstruction[0].timing.repeat.period = 1
+* dosageInstruction[0].timing.repeat.periodUnit = #d
+* dosageInstruction[0].timing.repeat.when = #MORN
+// Abenddosis 50mg
+* dosageInstruction[+].sequence = 2
+* dosageInstruction[=].text = "Metoprolol 50mg abends"
+* dosageInstruction[=].route = $standardterms#20053000 "Oral use"
+* dosageInstruction[=].doseAndRate.doseQuantity = 50 $ucum#mg "mg"
+* dosageInstruction[=].timing.repeat.frequency = 1
+* dosageInstruction[=].timing.repeat.period = 1
+* dosageInstruction[=].timing.repeat.periodUnit = #d
+* dosageInstruction[=].timing.repeat.when = #EVE
 * substitution.allowedBoolean = true
 
 Instance: mii-exa-test-data-patient-8-medrequest-3

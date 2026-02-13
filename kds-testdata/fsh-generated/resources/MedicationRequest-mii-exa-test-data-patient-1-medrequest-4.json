@@ -41,6 +41,12 @@
               "system": "http://unitsofmeasure.org",
               "unit": "Minuten"
             }
+          },
+          "doseQuantity": {
+            "value": 200,
+            "code": "mg",
+            "system": "http://unitsofmeasure.org",
+            "unit": "mg"
           }
         }
       ],

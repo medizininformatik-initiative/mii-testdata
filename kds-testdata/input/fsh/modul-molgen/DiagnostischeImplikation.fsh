@@ -27,10 +27,9 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/St
 Usage: #example
 Description: "Observation: Diagnostische Implikation fuer Magenkarzinom"
 * insert TestDataLabel
-* extension[0].url = "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomics-artifact"
-* extension[0].valueRelatedArtifact.type = $related-artifact-type#citation "Citation"
-* extension[0].valueRelatedArtifact.citation = "ClinGen"
-* extension[0].valueRelatedArtifact.url = "https://search.clinicalgenome.org/kb/gene-dosage/HGNC:2509"
+* extension[workflow-relatedArtifact].valueRelatedArtifact.type = $related-artifact-type#citation "Citation"
+* extension[workflow-relatedArtifact].valueRelatedArtifact.citation = "ClinGen"
+* extension[workflow-relatedArtifact].valueRelatedArtifact.url = "https://search.clinicalgenome.org/kb/gene-dosage/HGNC:2509"
 * status = #final
 * category[labCategory] = $observation-category#laboratory "Laboratory"
 * code = $tbd-codes-cs#diagnostic-implication "Diagnostic Implication"

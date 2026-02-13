@@ -18,9 +18,9 @@
       "flag": {
         "coding": [
           {
-            "code": "168461002",
+            "code": "363679005",
             "system": "http://snomed.info/sct",
-            "display": "Imaging report"
+            "display": "Imaging (procedure)"
           }
         ]
       },

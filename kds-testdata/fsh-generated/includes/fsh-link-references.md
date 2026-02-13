@@ -198,6 +198,9 @@
 [mii-exa-test-data-patient-1-medstatement-1]: MedicationStatement-mii-exa-test-data-patient-1-medstatement-1.html
 [mii-exa-test-data-patient-1-medstatement-2]: MedicationStatement-mii-exa-test-data-patient-1-medstatement-2.html
 [mii-exa-test-data-patient-1-medstatement-3]: MedicationStatement-mii-exa-test-data-patient-1-medstatement-3.html
+[mii-exa-test-data-patient-1-patho-active-problems-1]: List-mii-exa-test-data-patient-1-patho-active-problems-1.html
+[mii-exa-test-data-patient-1-patho-hopi-1]: List-mii-exa-test-data-patient-1-patho-hopi-1.html
+[mii-exa-test-data-patient-1-patho-problem-list-item-1]: Condition-mii-exa-test-data-patient-1-patho-problem-list-item-1.html
 [mii-exa-test-data-patient-1-pro-bdi-ii-score]: Observation-mii-exa-test-data-patient-1-pro-bdi-ii-score.html
 [mii-exa-test-data-patient-1-pro-eq5d5l-index]: Observation-mii-exa-test-data-patient-1-pro-eq5d5l-index.html
 [mii-exa-test-data-patient-1-pro-eq5d5l-profile]: Observation-mii-exa-test-data-patient-1-pro-eq5d5l-profile.html
@@ -290,6 +293,7 @@
 [mii-exa-test-data-patient-3-medstatement-4]: MedicationStatement-mii-exa-test-data-patient-3-medstatement-4.html
 [mii-exa-test-data-patient-3-molgen-anforderung-1]: ServiceRequest-mii-exa-test-data-patient-3-molgen-anforderung-1.html
 [mii-exa-test-data-patient-3-molgen-befundbericht-1]: DiagnosticReport-mii-exa-test-data-patient-3-molgen-befundbericht-1.html
+[mii-exa-test-data-patient-3-molgen-biomarker-1]: Observation-mii-exa-test-data-patient-3-molgen-biomarker-1.html
 [mii-exa-test-data-patient-3-molgen-diagnostische-implikation-1]: Observation-mii-exa-test-data-patient-3-molgen-diagnostische-implikation-1.html
 [mii-exa-test-data-patient-3-molgen-family-member-history-1]: FamilyMemberHistory-mii-exa-test-data-patient-3-molgen-family-member-history-1.html
 [mii-exa-test-data-patient-3-molgen-folgemassnahme-1]: Task-mii-exa-test-data-patient-3-molgen-folgemassnahme-1.html
@@ -474,6 +478,7 @@
 [mii-exa-test-data-practitioner-physician-2]: Practitioner-mii-exa-test-data-practitioner-physician-2.html
 [mii-exa-test-data-practitioner-role-physician-1]: PractitionerRole-mii-exa-test-data-practitioner-role-physician-1.html
 [mii-exa-test-data-radiologische-beobachtung]: Observation-mii-exa-test-data-radiologische-beobachtung.html
+[mii-exa-test-data-studie-einschluss-anfrage-1]: ServiceRequest-mii-exa-test-data-studie-einschluss-anfrage-1.html
 [mii-exa-test-data-mtb-antrag-kostenuebernahme-1]: Claim-mii-exa-test-data-mtb-antrag-kostenuebernahme-1.html
 [mii-exa-test-data-mtb-antwort-kostenuebernahme-1]: ClaimResponse-mii-exa-test-data-mtb-antwort-kostenuebernahme-1.html
 [mii-exa-test-data-mtb-behandlungsepisode-1]: ClinicalImpression-mii-exa-test-data-mtb-behandlungsepisode-1.html

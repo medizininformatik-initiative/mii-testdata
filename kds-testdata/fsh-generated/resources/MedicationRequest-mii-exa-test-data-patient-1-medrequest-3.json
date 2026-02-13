@@ -28,6 +28,12 @@
       },
       "doseAndRate": [
         {
+          "doseQuantity": {
+            "value": 200,
+            "code": "mg",
+            "system": "http://unitsofmeasure.org",
+            "unit": "mg"
+          },
           "rateQuantity": {
             "value": 5,
             "code": "mg/min",

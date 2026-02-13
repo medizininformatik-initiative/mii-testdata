@@ -1766,6 +1766,30 @@
       },
       {
         "reference": {
+          "reference": "List/mii-exa-test-data-patient-1-patho-active-problems-1"
+        },
+        "name": "mii-exa-test-data-patient-1-patho-active-problems-1",
+        "description": "Patho Active Problems List: Prostataerkrankungen bei Patient-1",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "List/mii-exa-test-data-patient-1-patho-hopi-1"
+        },
+        "name": "mii-exa-test-data-patient-1-patho-hopi-1",
+        "description": "Patho History of Present Illness: Klinische Anamnese bei Prostata-Stanzbiopsie",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Condition/mii-exa-test-data-patient-1-patho-problem-list-item-1"
+        },
+        "name": "mii-exa-test-data-patient-1-patho-problem-list-item-1",
+        "description": "Patho Problem List Item: PSA-Erhöhung bei V.a. Prostatakarzinom",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Observation/mii-exa-test-data-patient-1-pro-bdi-ii-score"
         },
         "name": "mii-exa-test-data-patient-1-pro-bdi-ii-score",
@@ -2498,6 +2522,14 @@
         },
         "name": "mii-exa-test-data-patient-3-molgen-befundbericht-1",
         "description": "DiagnosticReport: Molekulargenetischer Befundbericht mit BRAF-Mutation",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-3-molgen-biomarker-1"
+        },
+        "name": "mii-exa-test-data-patient-3-molgen-biomarker-1",
+        "description": "Observation: Molekularer Biomarker (PD-L1 TPS) fuer Patient-3",
         "exampleBoolean": true
       },
       {
@@ -3689,7 +3721,7 @@
           "reference": "MedicationRequest/mii-exa-test-data-patient-8-medrequest-2"
         },
         "name": "mii-exa-test-data-patient-8-medrequest-2",
-        "description": "MedicationRequest: Metoprolol 50mg 2x täglich",
+        "description": "MedicationRequest: Metoprolol 25mg morgens, 50mg abends (2 dosageInstructions, gleiche Einheit mg)",
         "exampleBoolean": true
       },
       {
@@ -3970,6 +4002,14 @@
         },
         "name": "mii-exa-test-data-radiologische-beobachtung",
         "description": "Observation: Radiologische Beobachtung",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "ServiceRequest/mii-exa-test-data-studie-einschluss-anfrage-1"
+        },
+        "name": "mii-exa-test-data-studie-einschluss-anfrage-1",
+        "description": "ServiceRequest: Studieneinschluss-Anfrage für Patient-1 in MII-BIOMARKER-2024",
         "exampleBoolean": true
       },
       {

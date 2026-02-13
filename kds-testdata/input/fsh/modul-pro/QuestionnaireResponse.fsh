@@ -88,7 +88,7 @@ Description: "PRO QuestionnaireResponse: PROMIS Depression SF4a for Patient 1 (m
 
 // Item 3: I felt depressed - Never (1)
 * item[+].linkId = "promis-eddep29"
-* item[=].answer.valueCoding = $loinc#LA6568-5 "Never"
+* item[=].answer.valueCoding = $loinc#LA6270-8 "Never"
 
 // Item 4: I felt hopeless - Rarely (2)
 * item[+].linkId = "promis-eddep41"

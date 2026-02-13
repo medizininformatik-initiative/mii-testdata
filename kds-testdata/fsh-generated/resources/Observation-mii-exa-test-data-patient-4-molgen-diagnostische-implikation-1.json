@@ -20,7 +20,7 @@
         "citation": "ClinGen",
         "url": "https://search.clinicalgenome.org/kb/gene-dosage/HGNC:2509"
       },
-      "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomics-artifact"
+      "url": "http://hl7.org/fhir/StructureDefinition/workflow-relatedArtifact"
     }
   ],
   "category": [
