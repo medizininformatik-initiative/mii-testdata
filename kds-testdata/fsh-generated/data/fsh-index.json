@@ -1668,24 +1668,24 @@
     "fshName": "mii-exa-test-data-onko-medikation-1",
     "fshType": "Instance",
     "fshFile": "modul-onkologie/core/Therapie.fsh",
-    "startLine": 76,
-    "endLine": 87
+    "startLine": 80,
+    "endLine": 91
   },
   {
     "outputFile": "MedicationStatement-mii-exa-test-data-onko-medikation-2.json",
     "fshName": "mii-exa-test-data-onko-medikation-2",
     "fshType": "Instance",
     "fshFile": "modul-onkologie/core/Therapie.fsh",
-    "startLine": 90,
-    "endLine": 101
+    "startLine": 94,
+    "endLine": 105
   },
   {
     "outputFile": "MedicationStatement-mii-exa-test-data-onko-medikation-3.json",
     "fshName": "mii-exa-test-data-onko-medikation-3",
     "fshType": "Instance",
     "fshFile": "modul-onkologie/core/Therapie.fsh",
-    "startLine": 104,
-    "endLine": 114
+    "startLine": 108,
+    "endLine": 118
   },
   {
     "outputFile": "MedicationStatement-mii-exa-test-data-patient-1-medstatement-1.json",
@@ -3476,8 +3476,8 @@
     "fshName": "mii-exa-test-data-onko-bestrahlung-nuklearmedizin-1",
     "fshType": "Instance",
     "fshFile": "modul-onkologie/core/Therapie.fsh",
-    "startLine": 161,
-    "endLine": 194
+    "startLine": 165,
+    "endLine": 198
   },
   {
     "outputFile": "Procedure-mii-exa-test-data-onko-krk-operation-1.json",
@@ -3549,23 +3549,23 @@
     "fshType": "Instance",
     "fshFile": "modul-onkologie/core/Therapie.fsh",
     "startLine": 29,
-    "endLine": 48
+    "endLine": 50
   },
   {
     "outputFile": "Procedure-mii-exa-test-data-onko-strahlentherapie-bestrahlung-1.json",
     "fshName": "mii-exa-test-data-onko-strahlentherapie-bestrahlung-1",
     "fshType": "Instance",
     "fshFile": "modul-onkologie/core/Therapie.fsh",
-    "startLine": 122,
-    "endLine": 155
+    "startLine": 126,
+    "endLine": 159
   },
   {
     "outputFile": "Procedure-mii-exa-test-data-onko-systemische-therapie-1.json",
     "fshName": "mii-exa-test-data-onko-systemische-therapie-1",
     "fshType": "Instance",
     "fshFile": "modul-onkologie/core/Therapie.fsh",
-    "startLine": 51,
-    "endLine": 73
+    "startLine": 53,
+    "endLine": 77
   },
   {
     "outputFile": "Procedure-mii-exa-test-data-patient-1-prozedur-1.json",

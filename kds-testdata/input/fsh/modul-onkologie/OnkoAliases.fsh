@@ -5,10 +5,10 @@
 
 // MII Onko - Allgemeine CodeSysteme
 Alias: $mii-cs-onko-intention = https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-intention
-// NOTE: URI uses mii-cs-therapie-stellungzurop (without onko-) to match parent profile snapshot.
-// The extension definition has the corrected URI with onko- prefix, but the snapshot was not regenerated.
-// This causes 2 CI validator errors (value: _DT_Fixed_Wrong + code-invalid). Fix required in onkologie package.
-Alias: $mii-cs-onko-therapie-stellungzurop = https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-therapie-stellungzurop
+// NOTE: The CodeSystem canonical is mii-cs-onko-therapie-stellungzurop (with onko- prefix).
+// The parent profile snapshot still has the old URI without onko-, so we must assign system explicitly
+// to bypass SUSHI snapshot validation. See Therapie.fsh for the workaround.
+Alias: $mii-cs-onko-therapie-stellungzurop = https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-therapie-stellungzurop
 Alias: $mii-cs-onko-therapie-ende-grund = https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-therapie-ende-grund
 Alias: $mii-cs-onko-therapie-typ = https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-therapie-typ
 Alias: $mii-cs-onko-residualstatus = https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-residualstatus
