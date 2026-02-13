@@ -122,20 +122,20 @@
     },
     {
       "packageId": "de.medizininformatikinitiative.kerndatensatz.seltene",
+      "uri": "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene",
       "version": "2026.0.x",
-      "uri": "http://fhir.org/packages/de.medizininformatikinitiative.kerndatensatz.seltene/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.seltene",
       "id": "de_medizininformatikinitiative_kerndatensatz_seltene"
     },
     {
       "packageId": "de.medizininformatikinitiative.kerndatensatz.mtb",
+      "uri": "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/ImplementationGuide/mii-ig-mtb-de",
       "version": "2026.0.x",
-      "uri": "http://fhir.org/packages/de.medizininformatikinitiative.kerndatensatz.mtb/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.mtb",
       "id": "de_medizininformatikinitiative_kerndatensatz_mtb"
     },
     {
       "packageId": "de.medizininformatikinitiative.kerndatensatz.pros",
+      "uri": "https://www.medizininformatik-initiative.de/fhir/ext/modul-dok/ImplementationGuide/mii-ig-pro",
       "version": "2026.0.x",
-      "uri": "http://fhir.org/packages/de.medizininformatikinitiative.kerndatensatz.pros/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.pros",
       "id": "de_medizininformatikinitiative_kerndatensatz_pros"
     },
     {

@@ -404,9 +404,7 @@ Description: "Test instance for HER2 immunohistochemistry"
 * code.coding[spezifisch] = $loinc#18474-7 "HER2 Ag [Presence] in Tissue by Immune stain"
 * subject = Reference(mii-exa-test-data-patient-1)
 * specimen = Reference(mii-exa-test-data-patient-1-specimen-1)
-* valueCodeableConcept.coding.system = "http://loinc.org"
-* valueCodeableConcept.coding.code = #LA6576-8
-* valueCodeableConcept.coding.display = "Positive"
+* valueCodeableConcept = $loinc#LA6576-8 "Positive"
 * component[gene-studied].code.coding = $loinc#48018-6 "Gene studied [ID]"
 * component[gene-studied].valueCodeableConcept.coding = $HGNC#HGNC:3430 "ERBB2"
 

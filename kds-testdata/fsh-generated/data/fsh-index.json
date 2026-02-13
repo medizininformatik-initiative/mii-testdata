@@ -1980,24 +1980,24 @@
     "fshName": "mii-exa-test-data-mtb-ihc-mmr-1",
     "fshType": "Instance",
     "fshFile": "modul-mtb/NgsBericht.fsh",
-    "startLine": 458,
-    "endLine": 472
+    "startLine": 456,
+    "endLine": 470
   },
   {
     "outputFile": "Observation-mii-exa-test-data-mtb-ihc-msi-1.json",
     "fshName": "mii-exa-test-data-mtb-ihc-msi-1",
     "fshType": "Instance",
     "fshFile": "modul-mtb/NgsBericht.fsh",
-    "startLine": 477,
-    "endLine": 489
+    "startLine": 475,
+    "endLine": 487
   },
   {
     "outputFile": "Observation-mii-exa-test-data-mtb-ihc-phosphorylation-1.json",
     "fshName": "mii-exa-test-data-mtb-ihc-phosphorylation-1",
     "fshType": "Instance",
     "fshFile": "modul-mtb/NgsBericht.fsh",
-    "startLine": 438,
-    "endLine": 453
+    "startLine": 436,
+    "endLine": 451
   },
   {
     "outputFile": "Observation-mii-exa-test-data-mtb-immunohistochemistry-1.json",
@@ -2013,31 +2013,31 @@
     "fshType": "Instance",
     "fshFile": "modul-mtb/NgsBericht.fsh",
     "startLine": 394,
-    "endLine": 411
+    "endLine": 409
   },
   {
     "outputFile": "Observation-mii-exa-test-data-mtb-immunohistochemistry-pdl1-1.json",
     "fshName": "mii-exa-test-data-mtb-immunohistochemistry-pdl1-1",
     "fshType": "Instance",
     "fshFile": "modul-mtb/NgsBericht.fsh",
-    "startLine": 416,
-    "endLine": 433
+    "startLine": 414,
+    "endLine": 431
   },
   {
     "outputFile": "Observation-mii-exa-test-data-mtb-insituhybridization-1.json",
     "fshName": "mii-exa-test-data-mtb-insituhybridization-1",
     "fshType": "Instance",
     "fshFile": "modul-mtb/NgsBericht.fsh",
-    "startLine": 494,
-    "endLine": 510
+    "startLine": 492,
+    "endLine": 508
   },
   {
     "outputFile": "Observation-mii-exa-test-data-mtb-insituhybridization-her2-1.json",
     "fshName": "mii-exa-test-data-mtb-insituhybridization-her2-1",
     "fshType": "Instance",
     "fshFile": "modul-mtb/NgsBericht.fsh",
-    "startLine": 515,
-    "endLine": 537
+    "startLine": 513,
+    "endLine": 535
   },
   {
     "outputFile": "Observation-mii-exa-test-data-mtb-mikrosatelliteninstabilitaet-1.json",
@@ -2124,8 +2124,8 @@
     "fshName": "mii-exa-test-data-mtb-tumorzellgehalt-1",
     "fshType": "Instance",
     "fshFile": "modul-mtb/NgsBericht.fsh",
-    "startLine": 542,
-    "endLine": 556
+    "startLine": 540,
+    "endLine": 554
   },
   {
     "outputFile": "Observation-mii-exa-test-data-mtb-who-grad-tumor-zns-1.json",

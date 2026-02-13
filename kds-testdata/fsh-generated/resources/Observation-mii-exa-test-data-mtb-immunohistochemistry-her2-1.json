@@ -55,15 +55,6 @@
       }
     ]
   },
-  "valueCodeableConcept": {
-    "coding": [
-      {
-        "system": "http://loinc.org",
-        "code": "LA6576-8",
-        "display": "Positive"
-      }
-    ]
-  },
   "component": [
     {
       "code": {
@@ -92,5 +83,14 @@
   },
   "specimen": {
     "reference": "Specimen/mii-exa-test-data-patient-1-specimen-1"
+  },
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "code": "LA6576-8",
+        "system": "http://loinc.org",
+        "display": "Positive"
+      }
+    ]
   }
 }
