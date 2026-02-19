@@ -39,7 +39,7 @@ dependencies:
   de.medizininformatikinitiative.kerndatensatz.patho: 2026.0.x
   de.medizininformatikinitiative.kerndatensatz.studie: 2026.0.x
   de.medizininformatikinitiative.kerndatensatz.bildgebung: 2026.0.x
-  de.medizininformatikinitiative.kerndatensatz.onkologie: 2026.0.x
+  de.medizininformatikinitiative.kerndatensatz.onkologie: 2026.0.1
   de.medizininformatikinitiative.kerndatensatz.seltene:
     version: 2026.0.x
     uri: https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.seltene
