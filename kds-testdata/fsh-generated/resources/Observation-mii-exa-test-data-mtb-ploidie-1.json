@@ -40,8 +40,8 @@
   "code": {
     "coding": [
       {
-        "code": "C18303",
         "system": "https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem-ncit.html",
+        "code": "C18303",
         "display": "DNA Ploidy Analysis"
       },
       {

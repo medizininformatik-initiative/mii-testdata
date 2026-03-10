@@ -49,7 +49,7 @@
       "valueCodeableConcept": {
         "coding": [
           {
-            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-therapie-stellungzurop",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-therapie-stellungzurop",
             "code": "N",
             "display": "neoadjuvant"
           }

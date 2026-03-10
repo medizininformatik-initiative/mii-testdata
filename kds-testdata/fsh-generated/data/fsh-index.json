@@ -3957,7 +3957,7 @@
     "fshType": "Instance",
     "fshFile": "modul-seltene/ServiceRequest.fsh",
     "startLine": 49,
-    "endLine": 69
+    "endLine": 70
   },
   {
     "outputFile": "ServiceRequest-mii-exa-test-data-patient-3-seltene-therapie-nicht-med-1.json",

@@ -6734,8 +6734,8 @@
             "code": {
               "coding": [
                 {
-                  "code": "106221001",
                   "system": "http://snomed.info/sct",
+                  "code": "106221001",
                   "display": "Genetic finding"
                 }
               ]
@@ -6750,8 +6750,8 @@
             "code": {
               "coding": [
                 {
-                  "code": "60568-3",
                   "system": "http://loinc.org",
+                  "code": "60568-3",
                   "display": "Pathology synoptic report"
                 }
               ]
@@ -6766,8 +6766,8 @@
             "code": {
               "coding": [
                 {
-                  "code": "424122007",
                   "system": "http://snomed.info/sct",
+                  "code": "424122007",
                   "display": "ECOG performance status finding"
                 }
               ]
@@ -6782,8 +6782,8 @@
             "code": {
               "coding": [
                 {
-                  "code": "105511-0",
                   "system": "http://loinc.org",
+                  "code": "105511-0",
                   "display": "Was consent given"
                 }
               ]
@@ -6832,8 +6832,8 @@
         "code": {
           "coding": [
             {
-              "code": "105511-0",
               "system": "http://loinc.org",
+              "code": "105511-0",
               "display": "Was consent given"
             }
           ]
@@ -6931,8 +6931,8 @@
             "type": {
               "coding": [
                 {
-                  "code": "C19251",
                   "system": "https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem-ncit.html",
+                  "code": "C19251",
                   "display": "Stage at Diagnosis"
                 }
               ]
@@ -6947,8 +6947,8 @@
             "type": {
               "coding": [
                 {
-                  "code": "371441004",
                   "system": "http://snomed.info/sct",
+                  "code": "371441004",
                   "display": "Histologic type of proliferative mass"
                 }
               ]
@@ -6985,8 +6985,8 @@
         "code": {
           "coding": [
             {
-              "code": "371469007",
               "system": "http://snomed.info/sct",
+              "code": "371469007",
               "display": "Histologic grade of neoplasm (observable entity)"
             }
           ]
@@ -7116,8 +7116,8 @@
         "code": {
           "coding": [
             {
-              "code": "371508000",
               "system": "http://snomed.info/sct",
+              "code": "371508000",
               "display": "Tumor stage"
             }
           ]
@@ -7165,8 +7165,8 @@
         "code": {
           "coding": [
             {
-              "code": "396921005",
               "system": "http://snomed.info/sct",
+              "code": "396921005",
               "display": "WHO grade finding for central nervous system tumor"
             }
           ]
@@ -7586,8 +7586,8 @@
             "code": {
               "coding": [
                 {
-                  "code": "type",
-                  "system": "http://bwhc.de/mtb/genetics-copy-number-variant"
+                  "system": "http://bwhc.de/mtb/genetics-copy-number-variant",
+                  "code": "type"
                 }
               ]
             },
@@ -7626,8 +7626,8 @@
             "code": {
               "coding": [
                 {
-                  "code": "relative-copy-number",
-                  "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/CodeSystem/mii-cs-mtb-molekulare-biomarker"
+                  "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/CodeSystem/mii-cs-mtb-molekulare-biomarker",
+                  "code": "relative-copy-number"
                 }
               ]
             }
@@ -7733,8 +7733,8 @@
             "code": {
               "coding": [
                 {
-                  "code": "five-prime-chromosome",
-                  "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/CodeSystem/mii-cs-mtb-molekulare-biomarker"
+                  "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/CodeSystem/mii-cs-mtb-molekulare-biomarker",
+                  "code": "five-prime-chromosome"
                 }
               ]
             }
@@ -7743,8 +7743,8 @@
             "code": {
               "coding": [
                 {
-                  "code": "three-prime-chromosome",
-                  "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/CodeSystem/mii-cs-mtb-molekulare-biomarker"
+                  "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/CodeSystem/mii-cs-mtb-molekulare-biomarker",
+                  "code": "three-prime-chromosome"
                 }
               ]
             }
@@ -7753,8 +7753,8 @@
             "code": {
               "coding": [
                 {
-                  "code": "five-prime-position",
-                  "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/CodeSystem/mii-cs-mtb-molekulare-biomarker"
+                  "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/CodeSystem/mii-cs-mtb-molekulare-biomarker",
+                  "code": "five-prime-position"
                 }
               ]
             }
@@ -7763,8 +7763,8 @@
             "code": {
               "coding": [
                 {
-                  "code": "three-prime-position",
-                  "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/CodeSystem/mii-cs-mtb-molekulare-biomarker"
+                  "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/CodeSystem/mii-cs-mtb-molekulare-biomarker",
+                  "code": "three-prime-position"
                 }
               ]
             }
@@ -7773,8 +7773,8 @@
             "code": {
               "coding": [
                 {
-                  "code": "five-prime-gene",
-                  "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/CodeSystem/mii-cs-mtb-molekulare-biomarker"
+                  "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/CodeSystem/mii-cs-mtb-molekulare-biomarker",
+                  "code": "five-prime-gene"
                 }
               ]
             }
@@ -7783,8 +7783,8 @@
             "code": {
               "coding": [
                 {
-                  "code": "three-prime-gene",
-                  "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/CodeSystem/mii-cs-mtb-molekulare-biomarker"
+                  "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/CodeSystem/mii-cs-mtb-molekulare-biomarker",
+                  "code": "three-prime-gene"
                 }
               ]
             }
@@ -7890,8 +7890,8 @@
             "code": {
               "coding": [
                 {
-                  "code": "five-prime-gene",
-                  "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/CodeSystem/mii-cs-mtb-molekulare-biomarker"
+                  "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/CodeSystem/mii-cs-mtb-molekulare-biomarker",
+                  "code": "five-prime-gene"
                 }
               ]
             }
@@ -7900,8 +7900,8 @@
             "code": {
               "coding": [
                 {
-                  "code": "five-prime-transcript-id",
-                  "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/CodeSystem/mii-cs-mtb-molekulare-biomarker"
+                  "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/CodeSystem/mii-cs-mtb-molekulare-biomarker",
+                  "code": "five-prime-transcript-id"
                 }
               ]
             }
@@ -7910,8 +7910,8 @@
             "code": {
               "coding": [
                 {
-                  "code": "five-prime-exon-id",
-                  "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/CodeSystem/mii-cs-mtb-molekulare-biomarker"
+                  "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/CodeSystem/mii-cs-mtb-molekulare-biomarker",
+                  "code": "five-prime-exon-id"
                 }
               ]
             }
@@ -7920,8 +7920,8 @@
             "code": {
               "coding": [
                 {
-                  "code": "five-prime-position",
-                  "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/CodeSystem/mii-cs-mtb-molekulare-biomarker"
+                  "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/CodeSystem/mii-cs-mtb-molekulare-biomarker",
+                  "code": "five-prime-position"
                 }
               ]
             }
@@ -7930,8 +7930,8 @@
             "code": {
               "coding": [
                 {
-                  "code": "five-prime-strand",
-                  "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/CodeSystem/mii-cs-mtb-molekulare-biomarker"
+                  "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/CodeSystem/mii-cs-mtb-molekulare-biomarker",
+                  "code": "five-prime-strand"
                 }
               ]
             }
@@ -7940,8 +7940,8 @@
             "code": {
               "coding": [
                 {
-                  "code": "three-prime-gene",
-                  "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/CodeSystem/mii-cs-mtb-molekulare-biomarker"
+                  "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/CodeSystem/mii-cs-mtb-molekulare-biomarker",
+                  "code": "three-prime-gene"
                 }
               ]
             }
@@ -7950,8 +7950,8 @@
             "code": {
               "coding": [
                 {
-                  "code": "three-prime-transcript-id",
-                  "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/CodeSystem/mii-cs-mtb-molekulare-biomarker"
+                  "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/CodeSystem/mii-cs-mtb-molekulare-biomarker",
+                  "code": "three-prime-transcript-id"
                 }
               ]
             }
@@ -7960,8 +7960,8 @@
             "code": {
               "coding": [
                 {
-                  "code": "three-prime-exon-id",
-                  "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/CodeSystem/mii-cs-mtb-molekulare-biomarker"
+                  "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/CodeSystem/mii-cs-mtb-molekulare-biomarker",
+                  "code": "three-prime-exon-id"
                 }
               ]
             }
@@ -7970,8 +7970,8 @@
             "code": {
               "coding": [
                 {
-                  "code": "three-prime-position",
-                  "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/CodeSystem/mii-cs-mtb-molekulare-biomarker"
+                  "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/CodeSystem/mii-cs-mtb-molekulare-biomarker",
+                  "code": "three-prime-position"
                 }
               ]
             }
@@ -7980,8 +7980,8 @@
             "code": {
               "coding": [
                 {
-                  "code": "three-prime-strand",
-                  "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/CodeSystem/mii-cs-mtb-molekulare-biomarker"
+                  "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/CodeSystem/mii-cs-mtb-molekulare-biomarker",
+                  "code": "three-prime-strand"
                 }
               ]
             }
@@ -8548,8 +8548,8 @@
             "code": {
               "coding": [
                 {
-                  "code": "C120466",
                   "system": "https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem-ncit.html",
+                  "code": "C120466",
                   "display": "Large-Scale State Transition"
                 }
               ]
@@ -8560,8 +8560,8 @@
             "code": {
               "coding": [
                 {
-                  "code": "C129774",
                   "system": "https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem-ncit.html",
+                  "code": "C129774",
                   "display": "Telomeric Allelic Imbalance Region"
                 }
               ]
@@ -8572,8 +8572,8 @@
             "code": {
               "coding": [
                 {
-                  "code": "C18016",
                   "system": "https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem-ncit.html",
+                  "code": "C18016",
                   "display": "Loss of Heterozygosity"
                 }
               ]
@@ -8584,8 +8584,8 @@
         "code": {
           "coding": [
             {
-              "code": "107286-7",
-              "system": "http://loinc.org"
+              "system": "http://loinc.org",
+              "code": "107286-7"
             }
           ]
         },
@@ -8655,8 +8655,8 @@
         "code": {
           "coding": [
             {
-              "code": "brcaness",
-              "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/CodeSystem/mii-cs-mtb-molekulare-biomarker"
+              "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/CodeSystem/mii-cs-mtb-molekulare-biomarker",
+              "code": "brcaness"
             }
           ]
         },
@@ -8714,8 +8714,8 @@
         "code": {
           "coding": [
             {
-              "code": "C18303",
               "system": "https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem-ncit.html",
+              "code": "C18303",
               "display": "DNA Ploidy Analysis"
             },
             {
@@ -8893,8 +8893,8 @@
               "display": "PD-L1 by clone 22C3 in Tissue by Immune stain Report"
             },
             {
-              "code": "1234806008",
               "system": "http://snomed.info/sct",
+              "code": "1234806008",
               "display": "Observation using immunohistochemistry (observable entity)"
             }
           ]
@@ -8988,13 +8988,13 @@
         "code": {
           "coding": [
             {
-              "code": "18474-7",
               "system": "http://loinc.org",
+              "code": "18474-7",
               "display": "HER2 Ag [Presence] in Tissue by Immune stain"
             },
             {
-              "code": "1234806008",
               "system": "http://snomed.info/sct",
+              "code": "1234806008",
               "display": "Observation using immunohistochemistry (observable entity)"
             }
           ]
@@ -9013,8 +9013,8 @@
             "valueCodeableConcept": {
               "coding": [
                 {
-                  "code": "HGNC:3430",
                   "system": "http://www.genenames.org/geneId",
+                  "code": "HGNC:3430",
                   "display": "ERBB2"
                 }
               ]
@@ -9096,8 +9096,8 @@
               "display": "PD-L1 by clone 22C3 in Tissue by Immune stain Report"
             },
             {
-              "code": "1234806008",
               "system": "http://snomed.info/sct",
+              "code": "1234806008",
               "display": "Observation using immunohistochemistry (observable entity)"
             }
           ]
@@ -9185,8 +9185,8 @@
               "display": "Immune stain study"
             },
             {
-              "code": "1234806008",
               "system": "http://snomed.info/sct",
+              "code": "1234806008",
               "display": "Observation using immunohistochemistry (observable entity)"
             }
           ]
@@ -9342,8 +9342,8 @@
         "code": {
           "coding": [
             {
-              "code": "62862-8",
               "system": "http://loinc.org",
+              "code": "62862-8",
               "display": "Microsatellite instability [Presence] in Tissue by Immune stain"
             }
           ]
@@ -9415,8 +9415,8 @@
               "display": "ERBB2 gene copy number/Chromosome 17 copy number in Tissue by FISH"
             },
             {
-              "code": "51864006",
               "system": "http://snomed.info/sct",
+              "code": "51864006",
               "display": "Nucleic acid hybridization, function (observable entity)"
             }
           ]
@@ -9501,13 +9501,13 @@
         "code": {
           "coding": [
             {
-              "code": "49683-6",
               "system": "http://loinc.org",
+              "code": "49683-6",
               "display": "ERBB2 gene copy number/Chromosome 17 copy number in Tissue by FISH"
             },
             {
-              "code": "51864006",
               "system": "http://snomed.info/sct",
+              "code": "51864006",
               "display": "Nucleic acid hybridization, function (observable entity)"
             }
           ]
@@ -9540,8 +9540,8 @@
             "code": {
               "coding": [
                 {
-                  "code": "74860-8",
                   "system": "http://loinc.org",
+                  "code": "74860-8",
                   "display": "ERBB2 gene copy number/nucleus in Tissue by FISH"
                 }
               ]
@@ -9555,8 +9555,8 @@
             "code": {
               "coding": [
                 {
-                  "code": "74861-6",
                   "system": "http://loinc.org",
+                  "code": "74861-6",
                   "display": "Chromosome 17 copy number/nucleus in Tissue by FISH"
                 }
               ]
@@ -9570,8 +9570,8 @@
             "code": {
               "coding": [
                 {
-                  "code": "62361-1",
                   "system": "http://loinc.org",
+                  "code": "62361-1",
                   "display": "Cells counted [#]"
                 }
               ]
@@ -9581,8 +9581,8 @@
         "method": {
           "coding": [
             {
-              "code": "1303773004",
               "system": "http://snomed.info/sct",
+              "code": "1303773004",
               "display": "Fluorescence in situ hybridization technique (qualifier value)"
             }
           ]
@@ -9626,8 +9626,8 @@
         "code": {
           "coding": [
             {
-              "code": "93356-4",
               "system": "http://loinc.org",
+              "code": "93356-4",
               "display": "Cells with cytogenetic abnormality [#] in Blood or Tissue by Molecular genetics method"
             }
           ]
@@ -10012,8 +10012,8 @@
           {
             "coding": [
               {
-                "code": "110465008",
                 "system": "http://snomed.info/sct",
+                "code": "110465008",
                 "display": "Clinical trial (procedure)"
               }
             ]
@@ -10022,8 +10022,8 @@
         "code": {
           "coding": [
             {
-              "code": "702475000",
               "system": "http://snomed.info/sct",
+              "code": "702475000",
               "display": "Referral to clinical trial (procedure)"
             }
           ]
@@ -10103,8 +10103,8 @@
         "code": {
           "coding": [
             {
-              "code": "788339009",
               "system": "http://snomed.info/sct",
+              "code": "788339009",
               "display": "Genetic consultation (procedure)"
             }
           ]
@@ -10150,8 +10150,8 @@
         "code": {
           "coding": [
             {
-              "code": "183825009",
               "system": "http://snomed.info/sct",
+              "code": "183825009",
               "display": "Refer for histology (procedure)"
             }
           ]
@@ -10197,8 +10197,8 @@
         "code": {
           "coding": [
             {
-              "code": "86273004",
               "system": "http://snomed.info/sct",
+              "code": "86273004",
               "display": "Biopsy (procedure)"
             }
           ]
@@ -10244,8 +10244,8 @@
         "code": {
           "coding": [
             {
-              "code": "390906007",
               "system": "http://snomed.info/sct",
+              "code": "390906007",
               "display": "Follow-up encounter (procedure)"
             }
           ]
@@ -10582,8 +10582,8 @@
         "priority": {
           "coding": [
             {
-              "code": "normal",
-              "system": "http://terminology.hl7.org/CodeSystem/processpriority"
+              "system": "http://terminology.hl7.org/CodeSystem/processpriority",
+              "code": "normal"
             }
           ]
         },

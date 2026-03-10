@@ -49,8 +49,8 @@
   "priority": {
     "coding": [
       {
-        "code": "normal",
-        "system": "http://terminology.hl7.org/CodeSystem/processpriority"
+        "system": "http://terminology.hl7.org/CodeSystem/processpriority",
+        "code": "normal"
       }
     ]
   },

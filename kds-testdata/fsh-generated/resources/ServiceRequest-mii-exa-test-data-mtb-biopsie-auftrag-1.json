@@ -16,8 +16,8 @@
   "code": {
     "coding": [
       {
-        "code": "86273004",
         "system": "http://snomed.info/sct",
+        "code": "86273004",
         "display": "Biopsy (procedure)"
       }
     ]

@@ -41,8 +41,8 @@
         "display": "ERBB2 gene copy number/Chromosome 17 copy number in Tissue by FISH"
       },
       {
-        "code": "51864006",
         "system": "http://snomed.info/sct",
+        "code": "51864006",
         "display": "Nucleic acid hybridization, function (observable entity)"
       }
     ]

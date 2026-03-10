@@ -49,8 +49,8 @@
         "display": "Immune stain study"
       },
       {
-        "code": "1234806008",
         "system": "http://snomed.info/sct",
+        "code": "1234806008",
         "display": "Observation using immunohistochemistry (observable entity)"
       }
     ]

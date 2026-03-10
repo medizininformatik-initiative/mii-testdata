@@ -35,13 +35,13 @@
   "code": {
     "coding": [
       {
-        "code": "49683-6",
         "system": "http://loinc.org",
+        "code": "49683-6",
         "display": "ERBB2 gene copy number/Chromosome 17 copy number in Tissue by FISH"
       },
       {
-        "code": "51864006",
         "system": "http://snomed.info/sct",
+        "code": "51864006",
         "display": "Nucleic acid hybridization, function (observable entity)"
       }
     ]
@@ -74,8 +74,8 @@
       "code": {
         "coding": [
           {
-            "code": "74860-8",
             "system": "http://loinc.org",
+            "code": "74860-8",
             "display": "ERBB2 gene copy number/nucleus in Tissue by FISH"
           }
         ]
@@ -89,8 +89,8 @@
       "code": {
         "coding": [
           {
-            "code": "74861-6",
             "system": "http://loinc.org",
+            "code": "74861-6",
             "display": "Chromosome 17 copy number/nucleus in Tissue by FISH"
           }
         ]
@@ -104,8 +104,8 @@
       "code": {
         "coding": [
           {
-            "code": "62361-1",
             "system": "http://loinc.org",
+            "code": "62361-1",
             "display": "Cells counted [#]"
           }
         ]
@@ -115,8 +115,8 @@
   "method": {
     "coding": [
       {
-        "code": "1303773004",
         "system": "http://snomed.info/sct",
+        "code": "1303773004",
         "display": "Fluorescence in situ hybridization technique (qualifier value)"
       }
     ]

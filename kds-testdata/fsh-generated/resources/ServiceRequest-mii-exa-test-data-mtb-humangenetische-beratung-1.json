@@ -16,8 +16,8 @@
   "code": {
     "coding": [
       {
-        "code": "788339009",
         "system": "http://snomed.info/sct",
+        "code": "788339009",
         "display": "Genetic consultation (procedure)"
       }
     ]

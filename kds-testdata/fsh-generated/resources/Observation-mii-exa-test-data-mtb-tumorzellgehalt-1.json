@@ -22,8 +22,8 @@
   "code": {
     "coding": [
       {
-        "code": "93356-4",
         "system": "http://loinc.org",
+        "code": "93356-4",
         "display": "Cells with cytogenetic abnormality [#] in Blood or Tissue by Molecular genetics method"
       }
     ]

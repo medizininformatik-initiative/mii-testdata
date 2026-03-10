@@ -36,8 +36,8 @@
   "code": {
     "coding": [
       {
-        "code": "62862-8",
         "system": "http://loinc.org",
+        "code": "62862-8",
         "display": "Microsatellite instability [Presence] in Tissue by Immune stain"
       }
     ]

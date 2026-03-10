@@ -16,8 +16,8 @@
   "code": {
     "coding": [
       {
-        "code": "183825009",
         "system": "http://snomed.info/sct",
+        "code": "183825009",
         "display": "Refer for histology (procedure)"
       }
     ]

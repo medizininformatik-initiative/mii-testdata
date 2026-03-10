@@ -17,8 +17,8 @@
   "code": {
     "coding": [
       {
-        "code": "105511-0",
         "system": "http://loinc.org",
+        "code": "105511-0",
         "display": "Was consent given"
       }
     ]

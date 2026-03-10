@@ -16,8 +16,8 @@
   "code": {
     "coding": [
       {
-        "code": "396921005",
         "system": "http://snomed.info/sct",
+        "code": "396921005",
         "display": "WHO grade finding for central nervous system tumor"
       }
     ]

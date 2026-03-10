@@ -48,8 +48,8 @@
       "code": {
         "coding": [
           {
-            "code": "C120466",
             "system": "https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem-ncit.html",
+            "code": "C120466",
             "display": "Large-Scale State Transition"
           }
         ]
@@ -60,8 +60,8 @@
       "code": {
         "coding": [
           {
-            "code": "C129774",
             "system": "https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem-ncit.html",
+            "code": "C129774",
             "display": "Telomeric Allelic Imbalance Region"
           }
         ]
@@ -72,8 +72,8 @@
       "code": {
         "coding": [
           {
-            "code": "C18016",
             "system": "https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem-ncit.html",
+            "code": "C18016",
             "display": "Loss of Heterozygosity"
           }
         ]
@@ -84,8 +84,8 @@
   "code": {
     "coding": [
       {
-        "code": "107286-7",
-        "system": "http://loinc.org"
+        "system": "http://loinc.org",
+        "code": "107286-7"
       }
     ]
   },

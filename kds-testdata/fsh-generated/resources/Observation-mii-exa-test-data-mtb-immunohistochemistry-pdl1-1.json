@@ -49,8 +49,8 @@
         "display": "PD-L1 by clone 22C3 in Tissue by Immune stain Report"
       },
       {
-        "code": "1234806008",
         "system": "http://snomed.info/sct",
+        "code": "1234806008",
         "display": "Observation using immunohistochemistry (observable entity)"
       }
     ]

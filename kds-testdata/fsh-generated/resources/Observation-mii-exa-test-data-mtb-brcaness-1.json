@@ -51,8 +51,8 @@
   "code": {
     "coding": [
       {
-        "code": "brcaness",
-        "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/CodeSystem/mii-cs-mtb-molekulare-biomarker"
+        "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/CodeSystem/mii-cs-mtb-molekulare-biomarker",
+        "code": "brcaness"
       }
     ]
   },

@@ -68,8 +68,8 @@
       "code": {
         "coding": [
           {
-            "code": "five-prime-chromosome",
-            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/CodeSystem/mii-cs-mtb-molekulare-biomarker"
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/CodeSystem/mii-cs-mtb-molekulare-biomarker",
+            "code": "five-prime-chromosome"
           }
         ]
       }
@@ -78,8 +78,8 @@
       "code": {
         "coding": [
           {
-            "code": "three-prime-chromosome",
-            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/CodeSystem/mii-cs-mtb-molekulare-biomarker"
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/CodeSystem/mii-cs-mtb-molekulare-biomarker",
+            "code": "three-prime-chromosome"
           }
         ]
       }
@@ -88,8 +88,8 @@
       "code": {
         "coding": [
           {
-            "code": "five-prime-position",
-            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/CodeSystem/mii-cs-mtb-molekulare-biomarker"
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/CodeSystem/mii-cs-mtb-molekulare-biomarker",
+            "code": "five-prime-position"
           }
         ]
       }
@@ -98,8 +98,8 @@
       "code": {
         "coding": [
           {
-            "code": "three-prime-position",
-            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/CodeSystem/mii-cs-mtb-molekulare-biomarker"
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/CodeSystem/mii-cs-mtb-molekulare-biomarker",
+            "code": "three-prime-position"
           }
         ]
       }
@@ -108,8 +108,8 @@
       "code": {
         "coding": [
           {
-            "code": "five-prime-gene",
-            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/CodeSystem/mii-cs-mtb-molekulare-biomarker"
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/CodeSystem/mii-cs-mtb-molekulare-biomarker",
+            "code": "five-prime-gene"
           }
         ]
       }
@@ -118,8 +118,8 @@
       "code": {
         "coding": [
           {
-            "code": "three-prime-gene",
-            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/CodeSystem/mii-cs-mtb-molekulare-biomarker"
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/CodeSystem/mii-cs-mtb-molekulare-biomarker",
+            "code": "three-prime-gene"
           }
         ]
       }

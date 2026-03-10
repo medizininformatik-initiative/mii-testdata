@@ -27,8 +27,8 @@
   "code": {
     "coding": [
       {
-        "code": "371508000",
         "system": "http://snomed.info/sct",
+        "code": "371508000",
         "display": "Tumor stage"
       }
     ]

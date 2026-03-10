@@ -41,7 +41,7 @@ Description: "Onkologie Test Strahlentherapie - Adjuvante Bestrahlung"
 * performedPeriod.start = "2022-02-01"
 * performedPeriod.end = "2022-03-15"
 * extension[Intention].valueCodeableConcept = $mii-cs-onko-intention#K "kurativ"
-* extension[StellungZurOp].valueCodeableConcept.coding.system = "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-therapie-stellungzurop"
+* extension[StellungZurOp].valueCodeableConcept.coding.system = "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-therapie-stellungzurop"
 * extension[StellungZurOp].valueCodeableConcept.coding.code = #A
 * extension[StellungZurOp].valueCodeableConcept.coding.display = "adjuvant"
 * outcome.coding = $mii-cs-onko-therapie-ende-grund#E "reguläres Ende"
@@ -65,7 +65,7 @@ Description: "Onkologie Test Systemische Therapie - Neoadjuvante Chemotherapie C
 * performedPeriod.start = "2021-07-05"
 * performedPeriod.end = "2021-09-05"
 * extension[Intention].valueCodeableConcept = $mii-cs-onko-intention#K "kurativ"
-* extension[StellungZurOp].valueCodeableConcept.coding.system = "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-therapie-stellungzurop"
+* extension[StellungZurOp].valueCodeableConcept.coding.system = "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-therapie-stellungzurop"
 * extension[StellungZurOp].valueCodeableConcept.coding.code = #N
 * extension[StellungZurOp].valueCodeableConcept.coding.display = "neoadjuvant"
 * outcome.coding = $mii-cs-onko-therapie-ende-grund#E "reguläres Ende"

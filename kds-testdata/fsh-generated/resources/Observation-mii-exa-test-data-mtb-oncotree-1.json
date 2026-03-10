@@ -16,8 +16,8 @@
   "code": {
     "coding": [
       {
-        "code": "371469007",
         "system": "http://snomed.info/sct",
+        "code": "371469007",
         "display": "Histologic grade of neoplasm (observable entity)"
       }
     ]

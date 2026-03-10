@@ -70,8 +70,8 @@
       "type": {
         "coding": [
           {
-            "code": "C19251",
             "system": "https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem-ncit.html",
+            "code": "C19251",
             "display": "Stage at Diagnosis"
           }
         ]
@@ -86,8 +86,8 @@
       "type": {
         "coding": [
           {
-            "code": "371441004",
             "system": "http://snomed.info/sct",
+            "code": "371441004",
             "display": "Histologic type of proliferative mass"
           }
         ]

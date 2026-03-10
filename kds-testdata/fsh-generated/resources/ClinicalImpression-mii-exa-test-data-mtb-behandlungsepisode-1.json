@@ -32,8 +32,8 @@
       "code": {
         "coding": [
           {
-            "code": "106221001",
             "system": "http://snomed.info/sct",
+            "code": "106221001",
             "display": "Genetic finding"
           }
         ]
@@ -48,8 +48,8 @@
       "code": {
         "coding": [
           {
-            "code": "60568-3",
             "system": "http://loinc.org",
+            "code": "60568-3",
             "display": "Pathology synoptic report"
           }
         ]
@@ -64,8 +64,8 @@
       "code": {
         "coding": [
           {
-            "code": "424122007",
             "system": "http://snomed.info/sct",
+            "code": "424122007",
             "display": "ECOG performance status finding"
           }
         ]
@@ -80,8 +80,8 @@
       "code": {
         "coding": [
           {
-            "code": "105511-0",
             "system": "http://loinc.org",
+            "code": "105511-0",
             "display": "Was consent given"
           }
         ]
