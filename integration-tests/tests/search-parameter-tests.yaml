@@ -1,0 +1,211 @@
+# SearchParameter Integration Tests
+# Phase 1: Explicit tests for documented "Covers:" SearchParameters
+# Phase 2: Auto-generated smoke tests (HTTP 200 + valid Bundle) for all ~200 SPs
+# Phase 3: Incremental deeper assertions (min_total, contains_id)
+#
+# Fields:
+#   sp_code:       SearchParameter code (as used in query)
+#   sp_source:     Package source: meta, onkologie, icu, molgen, pros, studie
+#   base:          FHIR resource type
+#   query:         FHIR search query string (relative to base URL)
+#   expected:
+#     min_total:   Minimum expected search result total
+#     contains_id: List of resource IDs that MUST appear in results
+#   skip_servers:  Optional list of servers to skip: ["hapi"] or ["blaze"]
+
+tests:
+  # ===========================================================================
+  # Onkologie: Strahlentherapie Bestrahlung SearchParameters
+  # Source: modul-onkologie/core/Therapie.fsh (Covers: bestrahlung-*)
+  # ===========================================================================
+  - sp_code: bestrahlung-strahlenart
+    sp_source: onkologie
+    base: Procedure
+    query: "Procedure?bestrahlung-strahlenart=UH"
+    expected:
+      min_total: 1
+      contains_id:
+        - mii-exa-test-data-onko-strahlentherapie-bestrahlung-1
+
+  - sp_code: bestrahlung-applikationsart
+    sp_source: onkologie
+    base: Procedure
+    query: "Procedure?bestrahlung-applikationsart=PRCJ"
+    expected:
+      min_total: 1
+      contains_id:
+        - mii-exa-test-data-onko-strahlentherapie-bestrahlung-1
+
+  - sp_code: bestrahlung-boost
+    sp_source: onkologie
+    base: Procedure
+    query: "Procedure?bestrahlung-boost=SIB"
+    expected:
+      min_total: 1
+      contains_id:
+        - mii-exa-test-data-onko-strahlentherapie-bestrahlung-1
+
+  - sp_code: bestrahlung-gesamtdosis
+    sp_source: onkologie
+    base: Procedure
+    query: "Procedure?bestrahlung-gesamtdosis=50|http://unitsofmeasure.org|Gy"
+    expected:
+      min_total: 1
+      contains_id:
+        - mii-exa-test-data-onko-strahlentherapie-bestrahlung-1
+
+  - sp_code: bestrahlung-einzeldosis
+    sp_source: onkologie
+    base: Procedure
+    query: "Procedure?bestrahlung-einzeldosis=2|http://unitsofmeasure.org|Gy"
+    expected:
+      min_total: 1
+      contains_id:
+        - mii-exa-test-data-onko-strahlentherapie-bestrahlung-1
+
+  - sp_code: bestrahlung-zielgebiet-lateralitaet
+    sp_source: onkologie
+    base: Procedure
+    query: "Procedure?bestrahlung-zielgebiet-lateralitaet=L"
+    expected:
+      min_total: 1
+      contains_id:
+        - mii-exa-test-data-onko-strahlentherapie-bestrahlung-1
+
+  # ===========================================================================
+  # Onkologie: TNM SearchParameters
+  # Source: modul-onkologie/core/TNM.fsh (Covers: tnm-n-itc, tnm-n-sn-suffix)
+  # ===========================================================================
+  - sp_code: tnm-n-itc
+    sp_source: onkologie
+    base: Observation
+    query: "Observation?tnm-n-itc=i-"
+    expected:
+      min_total: 1
+      contains_id:
+        - mii-exa-test-data-onko-tnm-n-kategorie-sn-1
+
+  - sp_code: tnm-n-sn-suffix
+    sp_source: onkologie
+    base: Observation
+    query: "Observation?tnm-n-sn-suffix=sn"
+    expected:
+      min_total: 1
+      contains_id:
+        - mii-exa-test-data-onko-tnm-n-kategorie-sn-1
+
+  # ===========================================================================
+  # Meta: Common SearchParameters with known test data coverage
+  # ===========================================================================
+  - sp_code: body-site
+    sp_source: meta
+    base: Observation
+    query: "Observation?body-site=http://snomed.info/sct|"
+    expected:
+      min_total: 0
+    skip_servers: []
+
+  - sp_code: aufnahmegrund-ersteundzweitestelle
+    sp_source: meta
+    base: Encounter
+    query: "Encounter?aufnahmegrund-ersteundzweitestelle=01"
+    expected:
+      min_total: 1
+
+  - sp_code: bodySite
+    sp_source: meta
+    base: Procedure
+    query: "Procedure?bodySite=http://snomed.info/sct|"
+    expected:
+      min_total: 0
+
+  - sp_code: dokumentationsdatum
+    sp_source: meta
+    base: Procedure
+    query: "Procedure?dokumentationsdatum=ge2020-01-01"
+    expected:
+      min_total: 0
+
+  # ===========================================================================
+  # Phase 2: Smoke tests — only check HTTP 200 + valid Bundle response
+  # These test all SPs without deep assertions
+  # ===========================================================================
+
+  # Onkologie smoke tests
+  - sp_code: operation-intention
+    sp_source: onkologie
+    base: Procedure
+    query: "Procedure?operation-intention=|"
+    expected:
+      min_total: 0
+
+  - sp_code: strahlentherapie-intention
+    sp_source: onkologie
+    base: Procedure
+    query: "Procedure?strahlentherapie-intention=|"
+    expected:
+      min_total: 0
+
+  - sp_code: strahlentherapie-stellungzurop
+    sp_source: onkologie
+    base: Procedure
+    query: "Procedure?strahlentherapie-stellungzurop=|"
+    expected:
+      min_total: 0
+
+  - sp_code: systemischetherapie-intention
+    sp_source: onkologie
+    base: Procedure
+    query: "Procedure?systemischetherapie-intention=|"
+    expected:
+      min_total: 0
+
+  - sp_code: systemischetherapie-stellungzurop
+    sp_source: onkologie
+    base: Procedure
+    query: "Procedure?systemischetherapie-stellungzurop=|"
+    expected:
+      min_total: 0
+
+  - sp_code: morphology-behavior-icdo3
+    sp_source: onkologie
+    base: Condition
+    query: "Condition?morphology-behavior-icdo3=|"
+    expected:
+      min_total: 0
+
+  - sp_code: tnm-t-cppraefix
+    sp_source: onkologie
+    base: Observation
+    query: "Observation?tnm-t-cppraefix=|"
+    expected:
+      min_total: 0
+
+  - sp_code: tnm-m-cppraefix
+    sp_source: onkologie
+    base: Observation
+    query: "Observation?tnm-m-cppraefix=|"
+    expected:
+      min_total: 0
+
+  - sp_code: tnm-n-cppraefix
+    sp_source: onkologie
+    base: Observation
+    query: "Observation?tnm-n-cppraefix=|"
+    expected:
+      min_total: 0
+
+  # ICU smoke tests
+  - sp_code: interpretation
+    sp_source: icu
+    base: Observation
+    query: "Observation?interpretation=|"
+    expected:
+      min_total: 0
+
+  - sp_code: issued
+    sp_source: icu
+    base: Observation
+    query: "Observation?issued=ge2020-01-01"
+    expected:
+      min_total: 0

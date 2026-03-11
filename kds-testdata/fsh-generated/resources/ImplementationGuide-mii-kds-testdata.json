@@ -115,8 +115,14 @@
       "id": "de_medizininformatikinitiative_kerndatensatz_bildgebung"
     },
     {
-      "packageId": "de.medizininformatikinitiative.kerndatensatz.onkologie",
+      "packageId": "de.medizininformatikinitiative.kerndatensatz.dokument",
       "version": "2026.0.x",
+      "uri": "http://fhir.org/packages/de.medizininformatikinitiative.kerndatensatz.dokument/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.dokument",
+      "id": "de_medizininformatikinitiative_kerndatensatz_dokument"
+    },
+    {
+      "packageId": "de.medizininformatikinitiative.kerndatensatz.onkologie",
+      "version": "2026.0.1",
       "uri": "http://fhir.org/packages/de.medizininformatikinitiative.kerndatensatz.onkologie/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.onkologie",
       "id": "de_medizininformatikinitiative_kerndatensatz_onkologie"
     },
@@ -1595,6 +1601,22 @@
         },
         "name": "mii-exa-test-data-patient-1-diagnose-2",
         "description": "Condition: Otitis media bei anderenorts klassifizierten Viruskrankheiten für Patient 1",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "DocumentReference/mii-exa-test-data-patient-1-dokument-1"
+        },
+        "name": "mii-exa-test-data-patient-1-dokument-1",
+        "description": "DocumentReference: Entlassbrief Innere Medizin - alle MS-Elemente",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "DocumentReference/mii-exa-test-data-patient-1-dokument-2"
+        },
+        "name": "mii-exa-test-data-patient-1-dokument-2",
+        "description": "DocumentReference: Befundbericht Radiologie (URL-Verweis) - alle MS-Elemente",
         "exampleBoolean": true
       },
       {

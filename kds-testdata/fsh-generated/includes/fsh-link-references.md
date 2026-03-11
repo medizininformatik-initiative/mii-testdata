@@ -177,6 +177,8 @@
 [mii-exa-test-data-patient-1-consent-1]: Consent-mii-exa-test-data-patient-1-consent-1.html
 [mii-exa-test-data-patient-1-diagnose-1]: Condition-mii-exa-test-data-patient-1-diagnose-1.html
 [mii-exa-test-data-patient-1-diagnose-2]: Condition-mii-exa-test-data-patient-1-diagnose-2.html
+[mii-exa-test-data-patient-1-dokument-1]: DocumentReference-mii-exa-test-data-patient-1-dokument-1.html
+[mii-exa-test-data-patient-1-dokument-2]: DocumentReference-mii-exa-test-data-patient-1-dokument-2.html
 [mii-exa-test-data-patient-1-encounter-1]: Encounter-mii-exa-test-data-patient-1-encounter-1.html
 [mii-exa-test-data-patient-1-encounter-2]: Encounter-mii-exa-test-data-patient-1-encounter-2.html
 [mii-exa-test-data-patient-1-icu-herzfrequenz-1]: Observation-mii-exa-test-data-patient-1-icu-herzfrequenz-1.html

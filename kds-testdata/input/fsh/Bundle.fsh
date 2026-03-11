@@ -89,6 +89,10 @@ Description: "Bundle: Patient-1"
 * insert AddBundleEntry(mii-exa-test-data-anforderung, ServiceRequest)
 * insert AddBundleEntry(mii-exa-test-data-kontrastmittelgabe, MedicationAdministration)
 
+// Dokument-Module
+* insert AddBundleEntry(mii-exa-test-data-patient-1-dokument-1, DocumentReference)
+* insert AddBundleEntry(mii-exa-test-data-patient-1-dokument-2, DocumentReference)
+
 // PRO-Module
 * insert AddBundleEntry(mii-exa-test-data-patient-1-pro-phq9-response, QuestionnaireResponse)
 * insert AddBundleEntry(mii-exa-test-data-patient-1-pro-phq9-score, Observation)

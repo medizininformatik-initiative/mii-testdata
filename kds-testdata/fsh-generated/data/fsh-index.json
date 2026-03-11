@@ -37,87 +37,87 @@
     "fshType": "Instance",
     "fshFile": "Bundle.fsh",
     "startLine": 24,
-    "endLine": 163
+    "endLine": 167
   },
   {
     "outputFile": "Bundle-mii-exa-test-data-bundle-pat-10.json",
     "fshName": "mii-exa-test-data-bundle-pat-10",
     "fshType": "Instance",
     "fshFile": "Bundle.fsh",
-    "startLine": 788,
-    "endLine": 847
+    "startLine": 792,
+    "endLine": 851
   },
   {
     "outputFile": "Bundle-mii-exa-test-data-bundle-pat-11.json",
     "fshName": "mii-exa-test-data-bundle-pat-11",
     "fshType": "Instance",
     "fshFile": "Bundle.fsh",
-    "startLine": 869,
-    "endLine": 878
+    "startLine": 873,
+    "endLine": 882
   },
   {
     "outputFile": "Bundle-mii-exa-test-data-bundle-pat-2.json",
     "fshName": "mii-exa-test-data-bundle-pat-2",
     "fshType": "Instance",
     "fshFile": "Bundle.fsh",
-    "startLine": 168,
-    "endLine": 234
+    "startLine": 172,
+    "endLine": 238
   },
   {
     "outputFile": "Bundle-mii-exa-test-data-bundle-pat-3.json",
     "fshName": "mii-exa-test-data-bundle-pat-3",
     "fshType": "Instance",
     "fshFile": "Bundle.fsh",
-    "startLine": 243,
-    "endLine": 352
+    "startLine": 247,
+    "endLine": 356
   },
   {
     "outputFile": "Bundle-mii-exa-test-data-bundle-pat-4.json",
     "fshName": "mii-exa-test-data-bundle-pat-4",
     "fshType": "Instance",
     "fshFile": "Bundle.fsh",
-    "startLine": 361,
-    "endLine": 430
+    "startLine": 365,
+    "endLine": 434
   },
   {
     "outputFile": "Bundle-mii-exa-test-data-bundle-pat-5.json",
     "fshName": "mii-exa-test-data-bundle-pat-5",
     "fshType": "Instance",
     "fshFile": "Bundle.fsh",
-    "startLine": 439,
-    "endLine": 498
+    "startLine": 443,
+    "endLine": 502
   },
   {
     "outputFile": "Bundle-mii-exa-test-data-bundle-pat-6.json",
     "fshName": "mii-exa-test-data-bundle-pat-6",
     "fshType": "Instance",
     "fshFile": "Bundle.fsh",
-    "startLine": 507,
-    "endLine": 570
+    "startLine": 511,
+    "endLine": 574
   },
   {
     "outputFile": "Bundle-mii-exa-test-data-bundle-pat-7.json",
     "fshName": "mii-exa-test-data-bundle-pat-7",
     "fshType": "Instance",
     "fshFile": "Bundle.fsh",
-    "startLine": 579,
-    "endLine": 638
+    "startLine": 583,
+    "endLine": 642
   },
   {
     "outputFile": "Bundle-mii-exa-test-data-bundle-pat-8.json",
     "fshName": "mii-exa-test-data-bundle-pat-8",
     "fshType": "Instance",
     "fshFile": "Bundle.fsh",
-    "startLine": 647,
-    "endLine": 711
+    "startLine": 651,
+    "endLine": 715
   },
   {
     "outputFile": "Bundle-mii-exa-test-data-bundle-pat-9.json",
     "fshName": "mii-exa-test-data-bundle-pat-9",
     "fshType": "Instance",
     "fshFile": "Bundle.fsh",
-    "startLine": 720,
-    "endLine": 779
+    "startLine": 724,
+    "endLine": 783
   },
   {
     "outputFile": "CarePlan-mii-exa-test-data-behandlungsempfehlung.json",
@@ -646,6 +646,22 @@
     "fshFile": "modul-labor/DiagnosticReport.fsh",
     "startLine": 157,
     "endLine": 173
+  },
+  {
+    "outputFile": "DocumentReference-mii-exa-test-data-patient-1-dokument-1.json",
+    "fshName": "mii-exa-test-data-patient-1-dokument-1",
+    "fshType": "Instance",
+    "fshFile": "modul-dokument/DocumentReference.fsh",
+    "startLine": 20,
+    "endLine": 66
+  },
+  {
+    "outputFile": "DocumentReference-mii-exa-test-data-patient-1-dokument-2.json",
+    "fshName": "mii-exa-test-data-patient-1-dokument-2",
+    "fshType": "Instance",
+    "fshFile": "modul-dokument/DocumentReference.fsh",
+    "startLine": 71,
+    "endLine": 114
   },
   {
     "outputFile": "Encounter-mii-exa-test-data-onko-encounter-1.json",
@@ -3956,8 +3972,8 @@
     "fshName": "mii-exa-test-data-patient-3-seltene-studieneinschluss-1",
     "fshType": "Instance",
     "fshFile": "modul-seltene/ServiceRequest.fsh",
-    "startLine": 49,
-    "endLine": 70
+    "startLine": 46,
+    "endLine": 67
   },
   {
     "outputFile": "ServiceRequest-mii-exa-test-data-patient-3-seltene-therapie-nicht-med-1.json",
@@ -3965,7 +3981,7 @@
     "fshType": "Instance",
     "fshFile": "modul-seltene/ServiceRequest.fsh",
     "startLine": 10,
-    "endLine": 44
+    "endLine": 41
   },
   {
     "outputFile": "ServiceRequest-mii-exa-test-data-patient-4-labrequest-1.json",

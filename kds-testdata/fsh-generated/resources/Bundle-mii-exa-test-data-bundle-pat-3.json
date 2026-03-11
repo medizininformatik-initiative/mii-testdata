@@ -5779,17 +5779,6 @@
             "valuePositiveInt": 2
           },
           {
-            "valueCodeableConcept": {
-              "coding": [
-                {
-                  "code": "2B",
-                  "display": "Evidenzgrad 2B"
-                }
-              ]
-            },
-            "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-ex-seltene-empfehlung-evidenzgraduierung"
-          },
-          {
             "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-ex-seltene-empfehlung-publikation",
             "valueString": "ESC Guidelines on Marfan Syndrome 2024"
           }
