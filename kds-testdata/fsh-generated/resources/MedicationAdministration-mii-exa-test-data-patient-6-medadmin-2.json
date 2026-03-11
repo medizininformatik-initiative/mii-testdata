@@ -29,13 +29,13 @@
         }
       ]
     },
+    "text": "Amoxicillin 500mg oral",
     "dose": {
-      "system": "http://unitsofmeasure.org",
       "value": 500,
       "code": "mg",
+      "system": "http://unitsofmeasure.org",
       "unit": "mg"
-    },
-    "text": "Amoxicillin 500mg oral"
+    }
   },
   "status": "completed",
   "category": {

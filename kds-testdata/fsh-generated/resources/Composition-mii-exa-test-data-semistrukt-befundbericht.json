@@ -20,11 +20,6 @@
   ],
   "section": [
     {
-      "author": [
-        {
-          "reference": "Practitioner/mii-exa-test-data-practitioner-physician-2"
-        }
-      ],
       "entry": [
         {
           "reference": "DiagnosticReport/mii-exa-test-data-befundbericht"
@@ -32,23 +27,38 @@
       ],
       "section": [
         {
+          "author": [
+            {
+              "reference": "Practitioner/mii-exa-test-data-practitioner-physician-2"
+            }
+          ],
           "entry": [
             {
               "reference": "Observation/mii-exa-test-data-radiologische-beobachtung"
             }
-          ]
+          ],
+          "title": "Left Breast",
+          "code": {
+            "coding": [
+              {
+                "code": "66110-8",
+                "system": "http://loinc.org",
+                "display": "Breast Pathology biopsy report"
+              }
+            ]
+          }
         }
       ],
-      "title": "Left Breast",
       "code": {
         "coding": [
           {
-            "code": "66110-8",
             "system": "http://loinc.org",
-            "display": "Breast Pathology biopsy report"
+            "code": "18782-3",
+            "display": "Radiology Study observation (narrative)"
           }
         ]
-      }
+      },
+      "title": "Diagnostic Report"
     }
   ],
   "status": "final",
@@ -57,7 +67,7 @@
       {
         "code": "24604-1",
         "system": "http://loinc.org",
-        "display": "MG Breast Diagnostics Limited Views"
+        "display": "MG Breast Diagnostic Limited Views"
       }
     ]
   },

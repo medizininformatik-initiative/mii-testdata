@@ -29,13 +29,13 @@
         }
       ]
     },
+    "text": "Metoprolol 50mg oral",
     "dose": {
-      "system": "http://unitsofmeasure.org",
       "value": 50,
       "code": "mg",
+      "system": "http://unitsofmeasure.org",
       "unit": "mg"
-    },
-    "text": "Metoprolol 50mg oral"
+    }
   },
   "status": "completed",
   "category": {

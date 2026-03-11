@@ -23,26 +23,73 @@
           "display": "Laboratory"
         }
       ]
+    },
+    {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs",
+          "code": "biomarker-category"
+        }
+      ]
     }
   ],
+  "derivedFrom": [
+    {
+      "reference": "Observation/mii-exa-test-data-patient-3-molgen-variante-1"
+    }
+  ],
+  "component": [
+    {
+      "valueCodeableConcept": {
+        "text": "Panel-basiert (alle Gene)"
+      },
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "48018-6",
+            "display": "Gene studied [ID]"
+          }
+        ]
+      }
+    },
+    {
+      "valueCodeableConcept": {
+        "text": "Tumor Mutational Burden"
+      },
+      "code": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs",
+            "code": "biomarker-category"
+          }
+        ]
+      }
+    }
+  ],
+  "status": "final",
   "code": {
     "coding": [
       {
-        "system": "http://loinc.org",
         "code": "94076-7",
+        "system": "http://loinc.org",
         "display": "Mutations/Megabase [# Ratio] in Tumor"
       }
     ]
   },
-  "valueQuantity": {
-    "system": "http://unitsofmeasure.org",
-    "code": "1/1000000{Base}",
-    "value": 12,
-    "unit": "Mutations/Megabase"
-  },
-  "status": "final",
   "subject": {
     "reference": "Patient/mii-exa-test-data-patient-3"
+  },
+  "encounter": {
+    "reference": "Encounter/mii-exa-test-data-patient-3-encounter-1"
+  },
+  "effectiveDateTime": "2022-04-07",
+  "issued": "2022-04-12T10:30:00+02:00",
+  "valueQuantity": {
+    "value": 12,
+    "code": "1/1000000{Base}",
+    "system": "http://unitsofmeasure.org",
+    "unit": "Mutations/Megabase"
   },
   "specimen": {
     "reference": "Specimen/mii-exa-test-data-patient-3-specimen-1"

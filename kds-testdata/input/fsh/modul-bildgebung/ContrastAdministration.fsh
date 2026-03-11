@@ -15,6 +15,4 @@ Description: "MedicationAdministration: kontrastmittelgabe"
 * reasonReference = Reference(mii-exa-test-data-patient-1-diagnose-1)
 * request = Reference(mii-exa-test-data-patient-1-medrequest-1)
 * note.text = "Kontrastmittelgabe"
-* dosage.dose.value = 111
-* dosage.dose.unit = "milliliter"
-* dosage.dose.code = #mm
+* dosage.dose = 111 $ucum#mL "milliliter"

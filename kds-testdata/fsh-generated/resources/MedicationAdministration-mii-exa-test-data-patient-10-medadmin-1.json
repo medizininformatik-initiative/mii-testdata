@@ -29,13 +29,13 @@
         }
       ]
     },
+    "text": "Sumatriptan 50mg oral bei Migräne",
     "dose": {
-      "system": "http://unitsofmeasure.org",
       "value": 50,
       "code": "mg",
+      "system": "http://unitsofmeasure.org",
       "unit": "mg"
-    },
-    "text": "Sumatriptan 50mg oral bei Migräne"
+    }
   },
   "status": "completed",
   "category": {

@@ -29,13 +29,13 @@
         }
       ]
     },
+    "text": "Heparin 5000 IE s.c.",
     "dose": {
-      "system": "http://unitsofmeasure.org",
       "value": 5000,
       "code": "[iU]",
+      "system": "http://unitsofmeasure.org",
       "unit": "IU"
-    },
-    "text": "Heparin 5000 IE s.c."
+    }
   },
   "status": "completed",
   "category": {

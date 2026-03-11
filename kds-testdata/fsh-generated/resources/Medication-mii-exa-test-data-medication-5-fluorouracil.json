@@ -29,7 +29,8 @@
         "coding": [
           {
             "system": "http://fhir.de/CodeSystem/ask",
-            "code": "07374"
+            "code": "07374",
+            "version": "20260105"
           }
         ]
       },

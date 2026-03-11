@@ -29,7 +29,8 @@
         "coding": [
           {
             "system": "http://fhir.de/CodeSystem/ask",
-            "code": "13209"
+            "code": "13209",
+            "version": "20260105"
           }
         ]
       },
@@ -53,7 +54,8 @@
         "coding": [
           {
             "system": "http://fhir.de/CodeSystem/ask",
-            "code": "21871"
+            "code": "21871",
+            "version": "20260105"
           }
         ]
       },

@@ -76,10 +76,18 @@
       "reference": "Condition/mii-exa-test-data-patient-4-diagnose-1"
     }
   ],
+  "supportingInfo": [
+    {
+      "reference": "FamilyMemberHistory/mii-exa-test-data-patient-4-molgen-family-member-history-1"
+    }
+  ],
   "status": "active",
   "intent": "order",
   "subject": {
     "reference": "Patient/mii-exa-test-data-patient-4"
+  },
+  "encounter": {
+    "reference": "Encounter/mii-exa-test-data-patient-4-encounter-1"
   },
   "authoredOn": "2022-11-30",
   "requester": {

@@ -61,25 +61,25 @@
     },
     "rateRatio": {
       "numerator": {
-        "system": "http://unitsofmeasure.org",
         "value": 1500,
         "code": "mg",
+        "system": "http://unitsofmeasure.org",
         "unit": "mg"
       },
       "denominator": {
-        "system": "http://unitsofmeasure.org",
         "value": 30,
         "code": "min",
+        "system": "http://unitsofmeasure.org",
         "unit": "Minuten"
       }
     },
+    "text": "Dalbavancin 1500 mg als 30-minütige Infusion",
     "dose": {
-      "system": "http://unitsofmeasure.org",
       "value": 1500,
       "code": "mg",
+      "system": "http://unitsofmeasure.org",
       "unit": "mg"
-    },
-    "text": "Dalbavancin 1500 mg als 30-minütige Infusion"
+    }
   },
   "status": "completed",
   "category": {

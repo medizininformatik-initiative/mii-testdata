@@ -36,8 +36,8 @@
   "type": {
     "coding": [
       {
-        "code": "122555007",
         "system": "http://snomed.info/sct",
+        "code": "122555007",
         "version": "http://snomed.info/sct/900000000000207008/version/20230731",
         "display": "Venous blood specimen (specimen)"
       }
@@ -76,6 +76,18 @@
   },
   "container": [
     {
+      "capacity": {
+        "system": "http://unitsofmeasure.org",
+        "value": 10,
+        "code": "ml",
+        "unit": "mL"
+      },
+      "specimenQuantity": {
+        "system": "http://unitsofmeasure.org",
+        "value": 10,
+        "code": "ml",
+        "unit": "mL"
+      },
       "type": {
         "coding": [
           {
@@ -85,16 +97,6 @@
             "display": "Tube, device (physical object)"
           }
         ]
-      },
-      "capacity": {
-        "value": 10,
-        "code": "ml",
-        "system": "http://unitsofmeasure.org"
-      },
-      "specimenQuantity": {
-        "value": 10,
-        "code": "ml",
-        "system": "http://unitsofmeasure.org"
       },
       "additiveReference": {
         "reference": "Substance/mii-exa-test-data-patient-1-substance-1"

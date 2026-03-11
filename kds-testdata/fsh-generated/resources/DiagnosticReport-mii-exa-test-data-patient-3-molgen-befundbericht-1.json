@@ -11,7 +11,7 @@
     ],
     "profile": [
       "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/molekulargenetischer-befundbericht",
-      "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomics-report"
+      "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-report"
     ]
   },
   "extension": [
@@ -32,6 +32,18 @@
       "valueReference": {
         "reference": "FamilyMemberHistory/mii-exa-test-data-patient-3-molgen-family-member-history-1"
       }
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-reference",
+      "valueReference": {
+        "reference": "Procedure/mii-exa-test-data-patient-3-molgen-genomic-study-1"
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-risk-assessment",
+      "valueReference": {
+        "reference": "RiskAssessment/mii-exa-test-data-patient-3-molgen-polygener-risiko-score-1"
+      }
     }
   ],
   "basedOn": [
@@ -50,15 +62,17 @@
       ]
     }
   ],
+  "performer": [
+    {
+      "reference": "Practitioner/mii-exa-test-data-practitioner-physician-1"
+    }
+  ],
   "specimen": [
     {
       "reference": "Specimen/mii-exa-test-data-patient-3-specimen-1"
     }
   ],
   "result": [
-    {
-      "reference": "Observation/mii-exa-test-data-patient-3-molgen-ergebnis-zusammenfassung-1"
-    },
     {
       "reference": "Observation/mii-exa-test-data-patient-3-molgen-diagnostische-implikation-1"
     },
@@ -67,9 +81,6 @@
     },
     {
       "reference": "Observation/mii-exa-test-data-patient-3-molgen-variante-1"
-    },
-    {
-      "reference": "Observation/mii-exa-test-data-patient-3-molgen-untersuchte-region-1"
     },
     {
       "reference": "Observation/mii-exa-test-data-patient-3-molgen-genotyp-1"
@@ -81,18 +92,34 @@
       "reference": "Observation/mii-exa-test-data-patient-3-molgen-msi-1"
     }
   ],
-  "status": "final",
+  "conclusionCode": [
+    {
+      "coding": [
+        {
+          "code": "10828004",
+          "system": "http://snomed.info/sct",
+          "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+          "display": "Positive (qualifier value)"
+        }
+      ]
+    }
+  ],
   "code": {
     "coding": [
       {
-        "code": "51969-4",
         "system": "http://loinc.org",
+        "code": "51969-4",
         "display": "Genetic analysis report"
       }
     ]
   },
+  "status": "final",
   "subject": {
     "reference": "Patient/mii-exa-test-data-patient-3"
   },
-  "conclusion": "BRAF p.V600E Mutation liegt vor. Bitte Therapieoption mit einem BRAF-Inhibitor prüfen."
+  "encounter": {
+    "reference": "Encounter/mii-exa-test-data-patient-3-encounter-1"
+  },
+  "issued": "2022-04-12T10:30:00+02:00",
+  "conclusion": "BRAF p.V600E Mutation liegt vor. Bitte Therapieoption mit einem BRAF-Inhibitor pruefen."
 }

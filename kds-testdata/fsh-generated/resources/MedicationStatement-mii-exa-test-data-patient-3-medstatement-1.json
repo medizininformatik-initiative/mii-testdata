@@ -55,15 +55,15 @@
         {
           "doseRange": {
             "low": {
-              "system": "http://unitsofmeasure.org",
               "value": 500,
               "code": "mg",
+              "system": "http://unitsofmeasure.org",
               "unit": "mg"
             },
             "high": {
-              "system": "http://unitsofmeasure.org",
               "value": 1000,
               "code": "mg",
+              "system": "http://unitsofmeasure.org",
               "unit": "mg"
             }
           }
@@ -71,25 +71,25 @@
       ],
       "maxDosePerPeriod": {
         "numerator": {
-          "system": "http://unitsofmeasure.org",
           "value": 5000,
           "code": "mg",
+          "system": "http://unitsofmeasure.org",
           "unit": "mg"
         },
         "denominator": {
-          "system": "http://unitsofmeasure.org",
           "value": 24,
           "code": "h",
+          "system": "http://unitsofmeasure.org",
           "unit": "Stunden"
         }
       },
+      "asNeededBoolean": true,
       "maxDosePerAdministration": {
-        "system": "http://unitsofmeasure.org",
         "value": 1000,
         "code": "mg",
+        "system": "http://unitsofmeasure.org",
         "unit": "mg"
-      },
-      "asNeededBoolean": true
+      }
     }
   ],
   "status": "unknown",

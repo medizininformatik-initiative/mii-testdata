@@ -134,8 +134,8 @@
           {
             "coding": [
               {
-                "code": "2.16.840.1.113883.3.1937.777.24.2.184",
-                "system": "https://www.medizininformatik-initiative.de/fhir/modul-consent/CodeSystem/mii-cs-consent-consent_category"
+                "system": "https://www.medizininformatik-initiative.de/fhir/modul-consent/CodeSystem/mii-cs-consent-version-modules",
+                "code": "2.16.840.1.113883.3.1937.777.24.2.184"
               }
             ]
           }
@@ -203,7 +203,7 @@
                     {
                       "code": "2.16.840.1.113883.3.1937.777.24.5.3.8",
                       "system": "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3",
-                      "display": "MDAT wissenschaftlich nutzen EU DSGVO NIVEAU"
+                      "display": "MDAT wissenschaftlich nutzen"
                     }
                   ]
                 }
@@ -257,7 +257,7 @@
                     {
                       "code": "2.16.840.1.113883.3.1937.777.24.5.3.22",
                       "system": "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3",
-                      "display": "BIOMAT wissenschaftlich nutzen EU DSGVO NIVEAU"
+                      "display": "BIOMAT wissenschaftlich nutzen"
                     }
                   ]
                 }
@@ -1536,9 +1536,9 @@
             "doseAndRate": [
               {
                 "doseQuantity": {
-                  "system": "http://unitsofmeasure.org",
                   "value": 40,
                   "code": "mg",
+                  "system": "http://unitsofmeasure.org",
                   "unit": "mg"
                 }
               }
@@ -1632,9 +1632,9 @@
             "doseAndRate": [
               {
                 "doseQuantity": {
-                  "system": "http://unitsofmeasure.org",
                   "value": 500,
                   "code": "mg",
+                  "system": "http://unitsofmeasure.org",
                   "unit": "mg"
                 }
               }
@@ -1725,9 +1725,9 @@
             "doseAndRate": [
               {
                 "doseQuantity": {
-                  "system": "http://unitsofmeasure.org",
                   "value": 250,
                   "code": "mg",
+                  "system": "http://unitsofmeasure.org",
                   "unit": "mg"
                 }
               }
@@ -1792,13 +1792,13 @@
               }
             ]
           },
+          "text": "Pantoprazol 40mg oral morgens",
           "dose": {
-            "system": "http://unitsofmeasure.org",
             "value": 40,
             "code": "mg",
+            "system": "http://unitsofmeasure.org",
             "unit": "mg"
-          },
-          "text": "Pantoprazol 40mg oral morgens"
+          }
         },
         "status": "completed",
         "category": {
@@ -1862,13 +1862,13 @@
               }
             ]
           },
+          "text": "Amoxicillin 500mg oral",
           "dose": {
-            "system": "http://unitsofmeasure.org",
             "value": 500,
             "code": "mg",
+            "system": "http://unitsofmeasure.org",
             "unit": "mg"
-          },
-          "text": "Amoxicillin 500mg oral"
+          }
         },
         "status": "completed",
         "category": {
@@ -2086,7 +2086,8 @@
               "coding": [
                 {
                   "system": "http://fhir.de/CodeSystem/ask",
-                  "code": "24848"
+                  "code": "24848",
+                  "version": "20260105"
                 }
               ]
             },
@@ -2155,7 +2156,8 @@
               "coding": [
                 {
                   "system": "http://fhir.de/CodeSystem/ask",
-                  "code": "13209"
+                  "code": "13209",
+                  "version": "20260105"
                 }
               ]
             },
@@ -2224,7 +2226,8 @@
               "coding": [
                 {
                   "system": "http://fhir.de/CodeSystem/ask",
-                  "code": "23929"
+                  "code": "23929",
+                  "version": "20260105"
                 }
               ]
             },
@@ -2300,8 +2303,8 @@
         "type": {
           "coding": [
             {
-              "code": "445295009",
               "system": "http://snomed.info/sct",
+              "code": "445295009",
               "version": "http://snomed.info/sct/900000000000207008/version/20230731",
               "display": "Blood specimen with edetic acid (specimen)"
             }
@@ -2322,6 +2325,18 @@
         },
         "container": [
           {
+            "capacity": {
+              "system": "http://unitsofmeasure.org",
+              "value": 5,
+              "code": "ml",
+              "unit": "mL"
+            },
+            "specimenQuantity": {
+              "system": "http://unitsofmeasure.org",
+              "value": 5,
+              "code": "ml",
+              "unit": "mL"
+            },
             "type": {
               "coding": [
                 {
@@ -2331,16 +2346,6 @@
                   "display": "Tube, device (physical object)"
                 }
               ]
-            },
-            "capacity": {
-              "value": 5,
-              "code": "ml",
-              "system": "http://unitsofmeasure.org"
-            },
-            "specimenQuantity": {
-              "value": 5,
-              "code": "ml",
-              "system": "http://unitsofmeasure.org"
             }
           }
         ],
@@ -2394,8 +2399,8 @@
         "type": {
           "coding": [
             {
-              "code": "119364003",
               "system": "http://snomed.info/sct",
+              "code": "119364003",
               "version": "http://snomed.info/sct/900000000000207008/version/20230731",
               "display": "Serum specimen (specimen)"
             }
@@ -2416,6 +2421,18 @@
         },
         "container": [
           {
+            "capacity": {
+              "system": "http://unitsofmeasure.org",
+              "value": 7,
+              "code": "ml",
+              "unit": "mL"
+            },
+            "specimenQuantity": {
+              "system": "http://unitsofmeasure.org",
+              "value": 7,
+              "code": "ml",
+              "unit": "mL"
+            },
             "type": {
               "coding": [
                 {
@@ -2425,16 +2442,6 @@
                   "display": "Tube, device (physical object)"
                 }
               ]
-            },
-            "capacity": {
-              "value": 7,
-              "code": "ml",
-              "system": "http://unitsofmeasure.org"
-            },
-            "specimenQuantity": {
-              "value": 7,
-              "code": "ml",
-              "system": "http://unitsofmeasure.org"
             }
           }
         ],
@@ -2531,8 +2538,8 @@
         },
         "extension": [
           {
-            "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/BeschreibungSammlung",
-            "valueMarkdown": "Zentrale Biobank der Charité"
+            "url": "https://fhir.bbmri-eric.eu/fhir/StructureDefinition/miabis-organization-description-extension",
+            "valueString": "Zentrale Biobank der Charité"
           }
         ],
         "identifier": [

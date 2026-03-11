@@ -1,0 +1,59 @@
+{
+  "resourceType": "Observation",
+  "id": "mii-exa-test-data-onko-anzahl-befallene-lymphknoten-1",
+  "meta": {
+    "security": [
+      {
+        "code": "HTEST",
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "display": "test health data"
+      }
+    ],
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-anzahl-befallene-lymphknoten"
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "21893-3",
+        "display": "Regional lymph nodes positive [#] Specimen"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "443527007",
+        "display": "Number of lymph nodes containing metastatic neoplasm"
+      }
+    ]
+  },
+  "valueQuantity": {
+    "system": "http://unitsofmeasure.org",
+    "code": "1",
+    "value": 2,
+    "unit": "1"
+  },
+  "focus": [
+    {
+      "reference": "Condition/mii-exa-test-data-onko-diagnose-1"
+    }
+  ],
+  "status": "final",
+  "subject": {
+    "reference": "Patient/mii-exa-test-data-onko-patient-1"
+  },
+  "encounter": {
+    "reference": "Encounter/mii-exa-test-data-onko-encounter-1"
+  },
+  "effectiveDateTime": "2021-10-05"
+}

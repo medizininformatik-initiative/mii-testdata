@@ -24,9 +24,9 @@
       "doseAndRate": [
         {
           "doseQuantity": {
-            "system": "http://unitsofmeasure.org",
             "value": 500,
             "code": "mg",
+            "system": "http://unitsofmeasure.org",
             "unit": "mg"
           }
         }

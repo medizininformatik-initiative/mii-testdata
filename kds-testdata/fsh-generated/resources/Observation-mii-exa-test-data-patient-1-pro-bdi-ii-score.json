@@ -1,0 +1,88 @@
+{
+  "resourceType": "Observation",
+  "id": "mii-exa-test-data-patient-1-pro-bdi-ii-score",
+  "meta": {
+    "security": [
+      {
+        "code": "HTEST",
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "display": "test health data"
+      }
+    ],
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-observation-bdi-ii"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "https://www.charite.de/fhir/sid/pro-observation-id",
+      "value": "PRO-OBS-BDI2-PAT1-001"
+    }
+  ],
+  "performer": [
+    {
+      "reference": "Patient/mii-exa-test-data-patient-1"
+    }
+  ],
+  "valueQuantity": {
+    "unit": "{score}",
+    "system": "http://unitsofmeasure.org",
+    "code": "{score}",
+    "value": 12
+  },
+  "method": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "89209-1",
+        "display": "Beck Depression Inventory II total score [BDI]"
+      }
+    ],
+    "text": "Beck Depression Inventory II (BDI-II)"
+  },
+  "interpretation": [
+    {
+      "coding": [
+        {
+          "code": "L",
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "display": "Low"
+        }
+      ],
+      "text": "Mild depression (10-18)"
+    }
+  ],
+  "note": [
+    {
+      "text": "BDI-II completed as cross-validation for PHQ-9 screening"
+    }
+  ],
+  "derivedFrom": [
+    {
+      "reference": "QuestionnaireResponse/mii-exa-test-data-patient-1-pro-phq9-response"
+    }
+  ],
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/workflow-instantiatesCanonical",
+      "valueCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ObservationDefinition/mii-obsdef-pro-score-bdi-ii"
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "89209-1",
+        "display": "Beck Depression Inventory II total score [BDI]"
+      }
+    ]
+  },
+  "status": "final",
+  "subject": {
+    "reference": "Patient/mii-exa-test-data-patient-1"
+  },
+  "encounter": {
+    "reference": "Encounter/mii-exa-test-data-patient-1-encounter-1"
+  },
+  "effectiveDateTime": "2024-03-15T10:30:00+01:00"
+}

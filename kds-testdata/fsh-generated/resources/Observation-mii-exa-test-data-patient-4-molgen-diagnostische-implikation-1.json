@@ -20,7 +20,7 @@
         "citation": "ClinGen",
         "url": "https://search.clinicalgenome.org/kb/gene-dosage/HGNC:2509"
       },
-      "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomics-artifact"
+      "url": "http://hl7.org/fhir/StructureDefinition/workflow-relatedArtifact"
     }
   ],
   "category": [
@@ -30,6 +30,14 @@
           "system": "http://terminology.hl7.org/CodeSystem/observation-category",
           "code": "laboratory",
           "display": "Laboratory"
+        }
+      ]
+    },
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "GE"
         }
       ]
     }
@@ -54,7 +62,7 @@
           }
         ]
       },
-      "valueString": "Diese Variante wird nach den ACMG/AMP-Kriterien zusammenfasssend als pathogen bewertet entsprechend IARC Class 5."
+      "valueString": "Diese Variante wird nach den ACMG/AMP-Kriterien zusammenfassend als pathogen bewertet entsprechend IARC Class 5."
     },
     {
       "code": {
@@ -71,25 +79,6 @@
             "code": "LA6668-3",
             "system": "http://loinc.org",
             "display": "Pathogenic"
-          }
-        ]
-      }
-    },
-    {
-      "code": {
-        "coding": [
-          {
-            "system": "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs",
-            "code": "functional-effect"
-          }
-        ]
-      },
-      "valueCodeableConcept": {
-        "coding": [
-          {
-            "code": "SO:0002054",
-            "system": "http://sequenceontology.org",
-            "display": "loss_of_function_variant"
           }
         ]
       }
@@ -113,6 +102,45 @@
           }
         ]
       }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "93044-6",
+            "display": "Level of evidence"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "LA30200-2",
+            "system": "http://loinc.org",
+            "display": "Very strong evidence pathogenic"
+          }
+        ]
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs",
+            "code": "condition-inheritance"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "HP:0000006",
+            "system": "http://human-phenotype-ontology.org",
+            "display": "Autosomal dominant inheritance"
+          }
+        ]
+      }
     }
   ],
   "code": {
@@ -127,5 +155,10 @@
   "status": "final",
   "subject": {
     "reference": "Patient/mii-exa-test-data-patient-4"
-  }
+  },
+  "encounter": {
+    "reference": "Encounter/mii-exa-test-data-patient-4-encounter-1"
+  },
+  "effectiveDateTime": "2022-11-30",
+  "issued": "2022-12-05T14:00:00+01:00"
 }

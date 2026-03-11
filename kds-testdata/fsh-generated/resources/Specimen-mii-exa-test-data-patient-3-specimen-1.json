@@ -32,11 +32,37 @@
       "value": "BP_000002"
     }
   ],
+  "container": [
+    {
+      "capacity": {
+        "system": "http://unitsofmeasure.org",
+        "value": 5,
+        "code": "ml",
+        "unit": "mL"
+      },
+      "specimenQuantity": {
+        "system": "http://unitsofmeasure.org",
+        "value": 5,
+        "code": "ml",
+        "unit": "mL"
+      },
+      "type": {
+        "coding": [
+          {
+            "code": "83059008",
+            "system": "http://snomed.info/sct",
+            "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+            "display": "Tube, device (physical object)"
+          }
+        ]
+      }
+    }
+  ],
   "type": {
     "coding": [
       {
-        "code": "128159001",
         "system": "http://snomed.info/sct",
+        "code": "128159001",
         "version": "http://snomed.info/sct/900000000000207008/version/20230731",
         "display": "Tissue specimen from colon (specimen)"
       }

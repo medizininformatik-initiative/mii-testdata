@@ -29,13 +29,13 @@
         }
       ]
     },
+    "text": "Pantoprazol 40mg oral morgens",
     "dose": {
-      "system": "http://unitsofmeasure.org",
       "value": 40,
       "code": "mg",
+      "system": "http://unitsofmeasure.org",
       "unit": "mg"
-    },
-    "text": "Pantoprazol 40mg oral morgens"
+    }
   },
   "status": "completed",
   "category": {

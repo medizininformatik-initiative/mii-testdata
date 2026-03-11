@@ -44,6 +44,7 @@
           {
             "system": "http://fhir.de/CodeSystem/ask",
             "code": "12915",
+            "version": "20260105",
             "display": "Metamizol-Natrium"
           }
         ]

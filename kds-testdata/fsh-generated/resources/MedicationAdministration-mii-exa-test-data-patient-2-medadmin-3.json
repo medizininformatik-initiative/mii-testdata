@@ -35,25 +35,25 @@
     },
     "rateRatio": {
       "numerator": {
-        "system": "http://unitsofmeasure.org",
         "value": 175,
         "code": "mg",
+        "system": "http://unitsofmeasure.org",
         "unit": "mg"
       },
       "denominator": {
-        "system": "http://unitsofmeasure.org",
         "value": 3,
         "code": "h",
+        "system": "http://unitsofmeasure.org",
         "unit": "h"
       }
     },
+    "text": "Paclitaxel 175mg IV über 3 Stunden",
     "dose": {
-      "system": "http://unitsofmeasure.org",
       "value": 175,
       "code": "mg",
+      "system": "http://unitsofmeasure.org",
       "unit": "mg"
-    },
-    "text": "Paclitaxel 175mg IV über 3 Stunden"
+    }
   },
   "status": "completed",
   "category": {

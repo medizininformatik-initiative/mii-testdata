@@ -21,19 +21,24 @@
   ],
   "dosageInstruction": [
     {
+      "timing": {
+        "event": [
+          "2024-03-07T10:30:00+01:00"
+        ]
+      },
       "doseAndRate": [
         {
           "rateRatio": {
             "numerator": {
-              "system": "http://unitsofmeasure.org",
               "value": 175,
               "code": "mg",
+              "system": "http://unitsofmeasure.org",
               "unit": "mg"
             },
             "denominator": {
-              "system": "http://unitsofmeasure.org",
               "value": 3,
               "code": "h",
+              "system": "http://unitsofmeasure.org",
               "unit": "h"
             }
           },

@@ -44,7 +44,9 @@ Description: "Specimen: EDTA-Blut für Klinische Chemie und Hämatologie"
 //* processing[lagerprozess][=].timePeriod.start = "2024-02-15T12:00:00+01:00"
 * container.type = $sct#83059008 "Tube, device (physical object)"
 * container.capacity = 10 'ml'
+* container.capacity.unit = "mL"
 * container.specimenQuantity = 10 'ml'
+* container.specimenQuantity.unit = "mL"
 * container.additiveReference = Reference(mii-exa-test-data-patient-1-substance-1)
 
 // Patient-2 Specimen (EDTA-Blut für Hämatologie)
@@ -66,7 +68,9 @@ Description: "Specimen: EDTA-Blut für Hämatologie"
 * collection.bodySite.coding[sct] = $sct#368208006 "Left upper arm structure (body structure)"
 * container.type = $sct#83059008 "Tube, device (physical object)"
 * container.capacity = 5 'ml'
+* container.capacity.unit = "mL"
 * container.specimenQuantity = 5 'ml'
+* container.specimenQuantity.unit = "mL"
 
 //Patient-3
 Instance: mii-exa-test-data-patient-3-specimen-1
@@ -82,6 +86,11 @@ Description: "Specimen: Gewebeprobe aus dem Kolon"
 * identifier.value = "BP_000002"
 * status = #available
 * subject = Reference(mii-exa-test-data-patient-3)
+* container.type = $sct#83059008 "Tube, device (physical object)"
+* container.capacity = 5 'ml'
+* container.capacity.unit = "mL"
+* container.specimenQuantity = 5 'ml'
+* container.specimenQuantity.unit = "mL"
 
 // Patient-3 Specimen (Serum für Klinische Chemie - zusätzlich zum bestehenden Gewebe)
 Instance: mii-exa-test-data-patient-3-specimen-2
@@ -102,7 +111,9 @@ Description: "Specimen: Serum für Klinische Chemie"
 * collection.bodySite.coding[sct] = $sct#368208006 "Left upper arm structure (body structure)"
 * container.type = $sct#83059008 "Tube, device (physical object)"
 * container.capacity = 7 'ml'
+* container.capacity.unit = "mL"
 * container.specimenQuantity = 7 'ml'
+* container.specimenQuantity.unit = "mL"
 
 // Patient-3 Specimen (EDTA-Blut für Hämatologie - zusätzlich)
 Instance: mii-exa-test-data-patient-3-specimen-3
@@ -123,7 +134,9 @@ Description: "Specimen: EDTA-Blut für Hämatologie"
 * collection.bodySite.coding[sct] = $sct#368209003 "Right upper arm structure (body structure)"
 * container.type = $sct#83059008 "Tube, device (physical object)"
 * container.capacity = 5 'ml'
+* container.capacity.unit = "mL"
 * container.specimenQuantity = 5 'ml'
+* container.specimenQuantity.unit = "mL"
 
 //Patient-4
 Instance: mii-exa-test-data-patient-4-specimen-1
@@ -138,6 +151,11 @@ Description: "Specimen: EDTA-Blut für Klinische Chemie und Hämatologie"
 * collection.collectedDateTime = "2022-11-30"
 * identifier.system = "https://www.charite.de/fhir/sid/bioproben"
 * identifier.value = "BP_00070024"
+* container.type = $sct#83059008 "Tube, device (physical object)"
+* container.capacity = 5 'ml'
+* container.capacity.unit = "mL"
+* container.specimenQuantity = 5 'ml'
+* container.specimenQuantity.unit = "mL"
 
 Instance: mii-exa-test-data-patient-4-specimen-2
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Specimen
@@ -151,6 +169,11 @@ Description: "Specimen: EDTA-Blut für Klinische Chemie und Hämatologie"
 * collection.collectedDateTime = "2022-11-30"
 * identifier.system = "https://www.charite.de/fhir/sid/bioproben"
 * identifier.value = "BP_00070025"
+* container.type = $sct#83059008 "Tube, device (physical object)"
+* container.capacity = 5 'ml'
+* container.capacity.unit = "mL"
+* container.specimenQuantity = 5 'ml'
+* container.specimenQuantity.unit = "mL"
 
 // Patient-4 Specimen (Serum für Klinische Chemie - zusätzlich zu bestehenden)
 Instance: mii-exa-test-data-patient-4-specimen-3
@@ -171,7 +194,9 @@ Description: "Specimen: Serum für Klinische Chemie"
 * collection.bodySite.coding[sct] = $sct#368208006 "Left upper arm structure (body structure)"
 * container.type = $sct#83059008 "Tube, device (physical object)"
 * container.capacity = 7 'ml'
+* container.capacity.unit = "mL"
 * container.specimenQuantity = 7 'ml'
+* container.specimenQuantity.unit = "mL"
 
 // Patient-4 Specimen (EDTA-Blut für Hämatologie - zusätzlich)
 Instance: mii-exa-test-data-patient-4-specimen-4
@@ -192,7 +217,9 @@ Description: "Specimen: EDTA-Blut für Hämatologie"
 * collection.bodySite.coding[sct] = $sct#368209003 "Right upper arm structure (body structure)"
 * container.type = $sct#83059008 "Tube, device (physical object)"
 * container.capacity = 5 'ml'
+* container.capacity.unit = "mL"
 * container.specimenQuantity = 5 'ml'
+* container.specimenQuantity.unit = "mL"
 
 // Patient-5 Specimen (EDTA-Blut für Hämatologie)
 Instance: mii-exa-test-data-patient-5-specimen-1
@@ -213,7 +240,9 @@ Description: "Specimen: EDTA-Blut für Hämatologie"
 * collection.bodySite.coding[sct] = $sct#368208006 "Left upper arm structure (body structure)"
 * container.type = $sct#83059008 "Tube, device (physical object)"
 * container.capacity = 5 'ml'
+* container.capacity.unit = "mL"
 * container.specimenQuantity = 5 'ml'
+* container.specimenQuantity.unit = "mL"
 
 // Patient-5 Specimen (Serum für Klinische Chemie)
 Instance: mii-exa-test-data-patient-5-specimen-2
@@ -235,7 +264,9 @@ Description: "Specimen: Serum für Klinische Chemie"
 * collection.fastingStatusCodeableConcept = $v2-0916#F "Patient was fasting prior to the procedure."
 * container.type = $sct#83059008 "Tube, device (physical object)"
 * container.capacity = 7 'ml'
+* container.capacity.unit = "mL"
 * container.specimenQuantity = 7 'ml'
+* container.specimenQuantity.unit = "mL"
 
 // Patient-6 Specimen (EDTA-Blut für Hämatologie)
 Instance: mii-exa-test-data-patient-6-specimen-1
@@ -256,7 +287,9 @@ Description: "Specimen: EDTA-Blut für Hämatologie"
 * collection.bodySite.coding[sct] = $sct#368208006 "Left upper arm structure (body structure)"
 * container.type = $sct#83059008 "Tube, device (physical object)"
 * container.capacity = 5 'ml'
+* container.capacity.unit = "mL"
 * container.specimenQuantity = 5 'ml'
+* container.specimenQuantity.unit = "mL"
 
 // Patient-6 Specimen (Serum für Klinische Chemie)
 Instance: mii-exa-test-data-patient-6-specimen-2
@@ -277,7 +310,9 @@ Description: "Specimen: Serum für Klinische Chemie"
 * collection.bodySite.coding[sct] = $sct#368209003 "Right upper arm structure (body structure)"
 * container.type = $sct#83059008 "Tube, device (physical object)"
 * container.capacity = 7 'ml'
+* container.capacity.unit = "mL"
 * container.specimenQuantity = 7 'ml'
+* container.specimenQuantity.unit = "mL"
 
 // Patient-7 Specimen (EDTA-Blut für Hämatologie)
 Instance: mii-exa-test-data-patient-7-specimen-1
@@ -298,7 +333,9 @@ Description: "Specimen: EDTA-Blut für Hämatologie"
 * collection.bodySite.coding[sct] = $sct#368208006 "Left upper arm structure (body structure)"
 * container.type = $sct#83059008 "Tube, device (physical object)"
 * container.capacity = 5 'ml'
+* container.capacity.unit = "mL"
 * container.specimenQuantity = 5 'ml'
+* container.specimenQuantity.unit = "mL"
 
 // Patient-7 Specimen (Serum für Klinische Chemie)
 Instance: mii-exa-test-data-patient-7-specimen-2
@@ -319,7 +356,9 @@ Description: "Specimen: Serum für Klinische Chemie"
 * collection.bodySite.coding[sct] = $sct#368209003 "Right upper arm structure (body structure)"
 * container.type = $sct#83059008 "Tube, device (physical object)"
 * container.capacity = 7 'ml'
+* container.capacity.unit = "mL"
 * container.specimenQuantity = 7 'ml'
+* container.specimenQuantity.unit = "mL"
 
 // Patient-8 Specimen (EDTA-Blut für Hämatologie)
 Instance: mii-exa-test-data-patient-8-specimen-1
@@ -340,7 +379,9 @@ Description: "Specimen: EDTA-Blut für Hämatologie"
 * collection.bodySite.coding[sct] = $sct#368208006 "Left upper arm structure (body structure)"
 * container.type = $sct#83059008 "Tube, device (physical object)"
 * container.capacity = 5 'ml'
+* container.capacity.unit = "mL"
 * container.specimenQuantity = 5 'ml'
+* container.specimenQuantity.unit = "mL"
 
 // Patient-8 Specimen (Serum für Klinische Chemie)
 Instance: mii-exa-test-data-patient-8-specimen-2
@@ -361,7 +402,9 @@ Description: "Specimen: Serum für Klinische Chemie"
 * collection.bodySite.coding[sct] = $sct#368209003 "Right upper arm structure (body structure)"
 * container.type = $sct#83059008 "Tube, device (physical object)"
 * container.capacity = 7 'ml'
+* container.capacity.unit = "mL"
 * container.specimenQuantity = 7 'ml'
+* container.specimenQuantity.unit = "mL"
 
 // Patient-9 Specimen (EDTA-Blut für Hämatologie)
 Instance: mii-exa-test-data-patient-9-specimen-1
@@ -382,7 +425,9 @@ Description: "Specimen: EDTA-Blut für Hämatologie"
 * collection.bodySite.coding[sct] = $sct#368208006 "Left upper arm structure (body structure)"
 * container.type = $sct#83059008 "Tube, device (physical object)"
 * container.capacity = 5 'ml'
+* container.capacity.unit = "mL"
 * container.specimenQuantity = 5 'ml'
+* container.specimenQuantity.unit = "mL"
 
 // Patient-9 Specimen (Serum für Klinische Chemie)
 Instance: mii-exa-test-data-patient-9-specimen-2
@@ -403,7 +448,9 @@ Description: "Specimen: Serum für Klinische Chemie"
 * collection.bodySite.coding[sct] = $sct#368209003 "Right upper arm structure (body structure)"
 * container.type = $sct#83059008 "Tube, device (physical object)"
 * container.capacity = 7 'ml'
+* container.capacity.unit = "mL"
 * container.specimenQuantity = 7 'ml'
+* container.specimenQuantity.unit = "mL"
 
 // Patient-10 Specimen (EDTA-Blut für Hämatologie)
 Instance: mii-exa-test-data-patient-10-specimen-1
@@ -424,7 +471,9 @@ Description: "Specimen: EDTA-Blut für Hämatologie"
 * collection.bodySite.coding[sct] = $sct#368208006 "Left upper arm structure (body structure)"
 * container.type = $sct#83059008 "Tube, device (physical object)"
 * container.capacity = 5 'ml'
+* container.capacity.unit = "mL"
 * container.specimenQuantity = 5 'ml'
+* container.specimenQuantity.unit = "mL"
 
 // Patient-10 Specimen (Serum für Klinische Chemie)
 Instance: mii-exa-test-data-patient-10-specimen-2
@@ -445,4 +494,6 @@ Description: "Specimen: Serum für Klinische Chemie"
 * collection.bodySite.coding[sct] = $sct#368209003 "Right upper arm structure (body structure)"
 * container.type = $sct#83059008 "Tube, device (physical object)"
 * container.capacity = 7 'ml'
+* container.capacity.unit = "mL"
 * container.specimenQuantity = 7 'ml'
+* container.specimenQuantity.unit = "mL"
