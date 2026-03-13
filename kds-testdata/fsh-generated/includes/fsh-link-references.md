@@ -28,7 +28,12 @@
 [mii-exa-test-data-behandlungsempfehlung]: CarePlan-mii-exa-test-data-behandlungsempfehlung.html
 [mii-exa-test-data-bildgebungsprozedur]: Procedure-mii-exa-test-data-bildgebungsprozedur.html
 [mii-exa-test-data-bildgebungsstudie]: ImagingStudy-mii-exa-test-data-bildgebungsstudie.html
+[mii-exa-test-data-bundle-bildgebung-1]: Bundle-mii-exa-test-data-bundle-bildgebung-1.html
+[mii-exa-test-data-bundle-biobank-1]: Bundle-mii-exa-test-data-bundle-biobank-1.html
+[mii-exa-test-data-bundle-dokument-1]: Bundle-mii-exa-test-data-bundle-dokument-1.html
 [mii-exa-test-data-bundle-icu-1]: Bundle-mii-exa-test-data-bundle-icu-1.html
+[mii-exa-test-data-bundle-molgen-1]: Bundle-mii-exa-test-data-bundle-molgen-1.html
+[mii-exa-test-data-bundle-mtb-1]: Bundle-mii-exa-test-data-bundle-mtb-1.html
 [mii-exa-test-data-bundle-pat-1]: Bundle-mii-exa-test-data-bundle-pat-1.html
 [mii-exa-test-data-bundle-pat-10]: Bundle-mii-exa-test-data-bundle-pat-10.html
 [mii-exa-test-data-bundle-pat-11]: Bundle-mii-exa-test-data-bundle-pat-11.html
@@ -40,6 +45,10 @@
 [mii-exa-test-data-bundle-pat-7]: Bundle-mii-exa-test-data-bundle-pat-7.html
 [mii-exa-test-data-bundle-pat-8]: Bundle-mii-exa-test-data-bundle-pat-8.html
 [mii-exa-test-data-bundle-pat-9]: Bundle-mii-exa-test-data-bundle-pat-9.html
+[mii-exa-test-data-bundle-patho-1]: Bundle-mii-exa-test-data-bundle-patho-1.html
+[mii-exa-test-data-bundle-pro-1]: Bundle-mii-exa-test-data-bundle-pro-1.html
+[mii-exa-test-data-bundle-seltene-1]: Bundle-mii-exa-test-data-bundle-seltene-1.html
+[mii-exa-test-data-bundle-studien-1]: Bundle-mii-exa-test-data-bundle-studien-1.html
 [mii-exa-test-data-device-roche-cobas]: Device-mii-exa-test-data-device-roche-cobas.html
 [mii-exa-test-data-device-roche-cobas-c303]: Device-mii-exa-test-data-device-roche-cobas-c303.html
 [mii-exa-test-data-device-roche-cobas-e402]: Device-mii-exa-test-data-device-roche-cobas-e402.html

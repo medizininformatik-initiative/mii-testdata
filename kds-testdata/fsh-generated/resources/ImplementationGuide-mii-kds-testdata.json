@@ -413,10 +413,50 @@
       },
       {
         "reference": {
+          "reference": "Bundle/mii-exa-test-data-bundle-bildgebung-1"
+        },
+        "name": "mii-exa-test-data-bundle-bildgebung-1",
+        "description": "Bundle: Bildgebung Testdaten Patient-1",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Bundle/mii-exa-test-data-bundle-biobank-1"
+        },
+        "name": "mii-exa-test-data-bundle-biobank-1",
+        "description": "Bundle: Biobank Testdaten",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Bundle/mii-exa-test-data-bundle-dokument-1"
+        },
+        "name": "mii-exa-test-data-bundle-dokument-1",
+        "description": "Bundle: Dokument Testdaten Patient-1",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Bundle/mii-exa-test-data-bundle-icu-1"
         },
         "name": "mii-exa-test-data-bundle-icu-1",
         "description": "Bundle: ICU Testdaten Patient-1",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Bundle/mii-exa-test-data-bundle-molgen-1"
+        },
+        "name": "mii-exa-test-data-bundle-molgen-1",
+        "description": "Bundle: Molekulargenetik Testdaten Patient-3 und Patient-4",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Bundle/mii-exa-test-data-bundle-mtb-1"
+        },
+        "name": "mii-exa-test-data-bundle-mtb-1",
+        "description": "Bundle: MTB Testdaten Patient-1",
         "exampleBoolean": true
       },
       {
@@ -505,6 +545,38 @@
         },
         "name": "mii-exa-test-data-bundle-pat-9",
         "description": "Bundle: Patient-9",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Bundle/mii-exa-test-data-bundle-patho-1"
+        },
+        "name": "mii-exa-test-data-bundle-patho-1",
+        "description": "Bundle: Pathologie Testdaten Patient-1",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Bundle/mii-exa-test-data-bundle-pro-1"
+        },
+        "name": "mii-exa-test-data-bundle-pro-1",
+        "description": "Bundle: PRO Testdaten Patient-1",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Bundle/mii-exa-test-data-bundle-seltene-1"
+        },
+        "name": "mii-exa-test-data-bundle-seltene-1",
+        "description": "Bundle: Seltene Erkrankungen Testdaten Patient-3",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Bundle/mii-exa-test-data-bundle-studien-1"
+        },
+        "name": "mii-exa-test-data-bundle-studien-1",
+        "description": "Bundle: Studien Testdaten Patient-1",
         "exampleBoolean": true
       },
       {

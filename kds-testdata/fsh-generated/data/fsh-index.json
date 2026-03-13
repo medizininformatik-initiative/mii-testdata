@@ -24,12 +24,52 @@
     "endLine": 10
   },
   {
+    "outputFile": "Bundle-mii-exa-test-data-bundle-bildgebung-1.json",
+    "fshName": "mii-exa-test-data-bundle-bildgebung-1",
+    "fshType": "Instance",
+    "fshFile": "modul-bildgebung/Bundle.fsh",
+    "startLine": 5,
+    "endLine": 25
+  },
+  {
+    "outputFile": "Bundle-mii-exa-test-data-bundle-biobank-1.json",
+    "fshName": "mii-exa-test-data-bundle-biobank-1",
+    "fshType": "Instance",
+    "fshFile": "modul-biobank/Bundle.fsh",
+    "startLine": 5,
+    "endLine": 54
+  },
+  {
+    "outputFile": "Bundle-mii-exa-test-data-bundle-dokument-1.json",
+    "fshName": "mii-exa-test-data-bundle-dokument-1",
+    "fshType": "Instance",
+    "fshFile": "modul-dokument/Bundle.fsh",
+    "startLine": 5,
+    "endLine": 16
+  },
+  {
     "outputFile": "Bundle-mii-exa-test-data-bundle-icu-1.json",
     "fshName": "mii-exa-test-data-bundle-icu-1",
     "fshType": "Instance",
     "fshFile": "modul-icu/Bundle.fsh",
     "startLine": 5,
     "endLine": 90
+  },
+  {
+    "outputFile": "Bundle-mii-exa-test-data-bundle-molgen-1.json",
+    "fshName": "mii-exa-test-data-bundle-molgen-1",
+    "fshType": "Instance",
+    "fshFile": "modul-molgen/Bundle.fsh",
+    "startLine": 5,
+    "endLine": 43
+  },
+  {
+    "outputFile": "Bundle-mii-exa-test-data-bundle-mtb-1.json",
+    "fshName": "mii-exa-test-data-bundle-mtb-1",
+    "fshType": "Instance",
+    "fshFile": "modul-mtb/Bundle.fsh",
+    "startLine": 5,
+    "endLine": 68
   },
   {
     "outputFile": "Bundle-mii-exa-test-data-bundle-onkologie-1.json",
@@ -126,6 +166,38 @@
     "fshFile": "Bundle.fsh",
     "startLine": 725,
     "endLine": 784
+  },
+  {
+    "outputFile": "Bundle-mii-exa-test-data-bundle-patho-1.json",
+    "fshName": "mii-exa-test-data-bundle-patho-1",
+    "fshType": "Instance",
+    "fshFile": "modul-patho/Bundle.fsh",
+    "startLine": 5,
+    "endLine": 17
+  },
+  {
+    "outputFile": "Bundle-mii-exa-test-data-bundle-pro-1.json",
+    "fshName": "mii-exa-test-data-bundle-pro-1",
+    "fshType": "Instance",
+    "fshFile": "modul-pro/Bundle.fsh",
+    "startLine": 5,
+    "endLine": 34
+  },
+  {
+    "outputFile": "Bundle-mii-exa-test-data-bundle-seltene-1.json",
+    "fshName": "mii-exa-test-data-bundle-seltene-1",
+    "fshType": "Instance",
+    "fshFile": "modul-seltene/Bundle.fsh",
+    "startLine": 5,
+    "endLine": 42
+  },
+  {
+    "outputFile": "Bundle-mii-exa-test-data-bundle-studien-1.json",
+    "fshName": "mii-exa-test-data-bundle-studien-1",
+    "fshType": "Instance",
+    "fshFile": "modul-studien/Bundle.fsh",
+    "startLine": 5,
+    "endLine": 16
   },
   {
     "outputFile": "CarePlan-mii-exa-test-data-behandlungsempfehlung.json",
