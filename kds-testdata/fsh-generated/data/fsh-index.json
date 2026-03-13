@@ -24,6 +24,14 @@
     "endLine": 10
   },
   {
+    "outputFile": "Bundle-mii-exa-test-data-bundle-icu-1.json",
+    "fshName": "mii-exa-test-data-bundle-icu-1",
+    "fshType": "Instance",
+    "fshFile": "modul-icu/Bundle.fsh",
+    "startLine": 5,
+    "endLine": 90
+  },
+  {
     "outputFile": "Bundle-mii-exa-test-data-bundle-onkologie-1.json",
     "fshName": "mii-exa-test-data-bundle-onkologie-1",
     "fshType": "Instance",
@@ -37,87 +45,87 @@
     "fshType": "Instance",
     "fshFile": "Bundle.fsh",
     "startLine": 24,
-    "endLine": 167
+    "endLine": 168
   },
   {
     "outputFile": "Bundle-mii-exa-test-data-bundle-pat-10.json",
     "fshName": "mii-exa-test-data-bundle-pat-10",
     "fshType": "Instance",
     "fshFile": "Bundle.fsh",
-    "startLine": 792,
-    "endLine": 851
+    "startLine": 793,
+    "endLine": 852
   },
   {
     "outputFile": "Bundle-mii-exa-test-data-bundle-pat-11.json",
     "fshName": "mii-exa-test-data-bundle-pat-11",
     "fshType": "Instance",
     "fshFile": "Bundle.fsh",
-    "startLine": 873,
-    "endLine": 882
+    "startLine": 874,
+    "endLine": 883
   },
   {
     "outputFile": "Bundle-mii-exa-test-data-bundle-pat-2.json",
     "fshName": "mii-exa-test-data-bundle-pat-2",
     "fshType": "Instance",
     "fshFile": "Bundle.fsh",
-    "startLine": 172,
-    "endLine": 238
+    "startLine": 173,
+    "endLine": 239
   },
   {
     "outputFile": "Bundle-mii-exa-test-data-bundle-pat-3.json",
     "fshName": "mii-exa-test-data-bundle-pat-3",
     "fshType": "Instance",
     "fshFile": "Bundle.fsh",
-    "startLine": 247,
-    "endLine": 356
+    "startLine": 248,
+    "endLine": 357
   },
   {
     "outputFile": "Bundle-mii-exa-test-data-bundle-pat-4.json",
     "fshName": "mii-exa-test-data-bundle-pat-4",
     "fshType": "Instance",
     "fshFile": "Bundle.fsh",
-    "startLine": 365,
-    "endLine": 434
+    "startLine": 366,
+    "endLine": 435
   },
   {
     "outputFile": "Bundle-mii-exa-test-data-bundle-pat-5.json",
     "fshName": "mii-exa-test-data-bundle-pat-5",
     "fshType": "Instance",
     "fshFile": "Bundle.fsh",
-    "startLine": 443,
-    "endLine": 502
+    "startLine": 444,
+    "endLine": 503
   },
   {
     "outputFile": "Bundle-mii-exa-test-data-bundle-pat-6.json",
     "fshName": "mii-exa-test-data-bundle-pat-6",
     "fshType": "Instance",
     "fshFile": "Bundle.fsh",
-    "startLine": 511,
-    "endLine": 574
+    "startLine": 512,
+    "endLine": 575
   },
   {
     "outputFile": "Bundle-mii-exa-test-data-bundle-pat-7.json",
     "fshName": "mii-exa-test-data-bundle-pat-7",
     "fshType": "Instance",
     "fshFile": "Bundle.fsh",
-    "startLine": 583,
-    "endLine": 642
+    "startLine": 584,
+    "endLine": 643
   },
   {
     "outputFile": "Bundle-mii-exa-test-data-bundle-pat-8.json",
     "fshName": "mii-exa-test-data-bundle-pat-8",
     "fshType": "Instance",
     "fshFile": "Bundle.fsh",
-    "startLine": 651,
-    "endLine": 715
+    "startLine": 652,
+    "endLine": 716
   },
   {
     "outputFile": "Bundle-mii-exa-test-data-bundle-pat-9.json",
     "fshName": "mii-exa-test-data-bundle-pat-9",
     "fshType": "Instance",
     "fshFile": "Bundle.fsh",
-    "startLine": 724,
-    "endLine": 783
+    "startLine": 725,
+    "endLine": 784
   },
   {
     "outputFile": "CarePlan-mii-exa-test-data-behandlungsempfehlung.json",
@@ -512,12 +520,36 @@
     "endLine": 60
   },
   {
+    "outputFile": "Device-mii-exa-test-data-patient-1-icu-device-1.json",
+    "fshName": "mii-exa-test-data-patient-1-icu-device-1",
+    "fshType": "Instance",
+    "fshFile": "modul-icu/Device.fsh",
+    "startLine": 5,
+    "endLine": 13
+  },
+  {
     "outputFile": "DeviceMetric-mii-exa-test-data-devicemetric-roche-cobas-c303-1.json",
     "fshName": "mii-exa-test-data-devicemetric-roche-cobas-c303-1",
     "fshType": "Instance",
     "fshFile": "modul-labor/DeviceMetric.fsh",
     "startLine": 1,
     "endLine": 10
+  },
+  {
+    "outputFile": "DeviceMetric-mii-exa-test-data-patient-1-icu-ect-dm-param-1.json",
+    "fshName": "mii-exa-test-data-patient-1-icu-ect-dm-param-1",
+    "fshType": "Instance",
+    "fshFile": "modul-icu/Device.fsh",
+    "startLine": 15,
+    "endLine": 22
+  },
+  {
+    "outputFile": "DeviceMetric-mii-exa-test-data-patient-1-icu-vent-dm-param-1.json",
+    "fshName": "mii-exa-test-data-patient-1-icu-vent-dm-param-1",
+    "fshType": "Instance",
+    "fshFile": "modul-icu/Device.fsh",
+    "startLine": 24,
+    "endLine": 31
   },
   {
     "outputFile": "DiagnosticReport-mii-exa-test-data-befundbericht.json",
@@ -2656,12 +2688,524 @@
     "endLine": 390
   },
   {
-    "outputFile": "Observation-mii-exa-test-data-patient-1-icu-herzfrequenz-1.json",
-    "fshName": "mii-exa-test-data-patient-1-icu-herzfrequenz-1",
+    "outputFile": "Observation-mii-exa-test-data-patient-1-icu-bilanz-ausf-fluess-1.json",
+    "fshName": "mii-exa-test-data-patient-1-icu-bilanz-ausf-fluess-1",
     "fshType": "Instance",
     "fshFile": "modul-icu/Observation.fsh",
-    "startLine": 2,
-    "endLine": 18
+    "startLine": 37,
+    "endLine": 50
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-1-icu-bilanz-ausf-galle-1.json",
+    "fshName": "mii-exa-test-data-patient-1-icu-bilanz-ausf-galle-1",
+    "fshType": "Instance",
+    "fshFile": "modul-icu/Observation.fsh",
+    "startLine": 52,
+    "endLine": 65
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-1-icu-bilanz-ausf-gallengang-1.json",
+    "fshName": "mii-exa-test-data-patient-1-icu-bilanz-ausf-gallengang-1",
+    "fshType": "Instance",
+    "fshFile": "modul-icu/Observation.fsh",
+    "startLine": 67,
+    "endLine": 80
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-1-icu-bilanz-ausf-magen-1.json",
+    "fshName": "mii-exa-test-data-patient-1-icu-bilanz-ausf-magen-1",
+    "fshType": "Instance",
+    "fshFile": "modul-icu/Observation.fsh",
+    "startLine": 82,
+    "endLine": 95
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-1-icu-bilanz-ausf-opdrain-1.json",
+    "fshName": "mii-exa-test-data-patient-1-icu-bilanz-ausf-opdrain-1",
+    "fshType": "Instance",
+    "fshFile": "modul-icu/Observation.fsh",
+    "startLine": 97,
+    "endLine": 110
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-1-icu-bilanz-ausf-pankreas-1.json",
+    "fshName": "mii-exa-test-data-patient-1-icu-bilanz-ausf-pankreas-1",
+    "fshType": "Instance",
+    "fshFile": "modul-icu/Observation.fsh",
+    "startLine": 112,
+    "endLine": 124
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-1-icu-bilanz-ausf-stuhl-1.json",
+    "fshName": "mii-exa-test-data-patient-1-icu-bilanz-ausf-stuhl-1",
+    "fshType": "Instance",
+    "fshFile": "modul-icu/Observation.fsh",
+    "startLine": 126,
+    "endLine": 139
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-1-icu-bilanz-ausf-urin-1.json",
+    "fshName": "mii-exa-test-data-patient-1-icu-bilanz-ausf-urin-1",
+    "fshType": "Instance",
+    "fshFile": "modul-icu/Observation.fsh",
+    "startLine": 141,
+    "endLine": 154
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-1-icu-bilanz-ausf-wunde-1.json",
+    "fshName": "mii-exa-test-data-patient-1-icu-bilanz-ausf-wunde-1",
+    "fshType": "Instance",
+    "fshFile": "modul-icu/Observation.fsh",
+    "startLine": 156,
+    "endLine": 169
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-1-icu-bilanz-blutverlust-1.json",
+    "fshName": "mii-exa-test-data-patient-1-icu-bilanz-blutverlust-1",
+    "fshType": "Instance",
+    "fshFile": "modul-icu/Observation.fsh",
+    "startLine": 171,
+    "endLine": 184
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-1-icu-bilanz-drainage-1.json",
+    "fshName": "mii-exa-test-data-patient-1-icu-bilanz-drainage-1",
+    "fshType": "Instance",
+    "fshFile": "modul-icu/Observation.fsh",
+    "startLine": 23,
+    "endLine": 35
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-1-icu-bilanz-einf-enteral-1.json",
+    "fshName": "mii-exa-test-data-patient-1-icu-bilanz-einf-enteral-1",
+    "fshType": "Instance",
+    "fshFile": "modul-icu/Observation.fsh",
+    "startLine": 186,
+    "endLine": 199
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-1-icu-bilanz-einf-fluess-1.json",
+    "fshName": "mii-exa-test-data-patient-1-icu-bilanz-einf-fluess-1",
+    "fshType": "Instance",
+    "fshFile": "modul-icu/Observation.fsh",
+    "startLine": 201,
+    "endLine": 213
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-1-icu-bilanz-einf-oral-1.json",
+    "fshName": "mii-exa-test-data-patient-1-icu-bilanz-einf-oral-1",
+    "fshType": "Instance",
+    "fshFile": "modul-icu/Observation.fsh",
+    "startLine": 215,
+    "endLine": 228
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-1-icu-bilanz-ges-ausf-1.json",
+    "fshName": "mii-exa-test-data-patient-1-icu-bilanz-ges-ausf-1",
+    "fshType": "Instance",
+    "fshFile": "modul-icu/Observation.fsh",
+    "startLine": 230,
+    "endLine": 243
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-1-icu-bilanz-ges-einf-1.json",
+    "fshName": "mii-exa-test-data-patient-1-icu-bilanz-ges-einf-1",
+    "fshType": "Instance",
+    "fshFile": "modul-icu/Observation.fsh",
+    "startLine": 245,
+    "endLine": 258
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-1-icu-bilanz-haemofiltr-1.json",
+    "fshName": "mii-exa-test-data-patient-1-icu-bilanz-haemofiltr-1",
+    "fshType": "Instance",
+    "fshFile": "modul-icu/Observation.fsh",
+    "startLine": 8,
+    "endLine": 21
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-1-icu-bilanz-tages-1.json",
+    "fshName": "mii-exa-test-data-patient-1-icu-bilanz-tages-1",
+    "fshType": "Instance",
+    "fshFile": "modul-icu/Observation.fsh",
+    "startLine": 260,
+    "endLine": 274
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-1-icu-ect-art-druck-1.json",
+    "fshName": "mii-exa-test-data-patient-1-icu-ect-art-druck-1",
+    "fshType": "Instance",
+    "fshFile": "modul-icu/Observation.fsh",
+    "startLine": 278,
+    "endLine": 289
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-1-icu-ect-blutfl-cardio-1.json",
+    "fshName": "mii-exa-test-data-patient-1-icu-ect-blutfl-cardio-1",
+    "fshType": "Instance",
+    "fshFile": "modul-icu/Observation.fsh",
+    "startLine": 291,
+    "endLine": 302
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-1-icu-ect-blutfl-extra-1.json",
+    "fshName": "mii-exa-test-data-patient-1-icu-ect-blutfl-extra-1",
+    "fshType": "Instance",
+    "fshFile": "modul-icu/Observation.fsh",
+    "startLine": 304,
+    "endLine": 315
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-1-icu-ect-blutfl-idx-1.json",
+    "fshName": "mii-exa-test-data-patient-1-icu-ect-blutfl-idx-1",
+    "fshType": "Instance",
+    "fshFile": "modul-icu/Observation.fsh",
+    "startLine": 317,
+    "endLine": 329
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-1-icu-ect-dauer-extra-1.json",
+    "fshName": "mii-exa-test-data-patient-1-icu-ect-dauer-extra-1",
+    "fshType": "Instance",
+    "fshFile": "modul-icu/Observation.fsh",
+    "startLine": 331,
+    "endLine": 343
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-1-icu-ect-dauer-haemo-1.json",
+    "fshName": "mii-exa-test-data-patient-1-icu-ect-dauer-haemo-1",
+    "fshType": "Instance",
+    "fshFile": "modul-icu/Observation.fsh",
+    "startLine": 345,
+    "endLine": 357
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-1-icu-ect-gasfluss-1.json",
+    "fshName": "mii-exa-test-data-patient-1-icu-ect-gasfluss-1",
+    "fshType": "Instance",
+    "fshFile": "modul-icu/Observation.fsh",
+    "startLine": 359,
+    "endLine": 370
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-1-icu-ect-haemo-blutfl-1.json",
+    "fshName": "mii-exa-test-data-patient-1-icu-ect-haemo-blutfl-1",
+    "fshType": "Instance",
+    "fshFile": "modul-icu/Observation.fsh",
+    "startLine": 372,
+    "endLine": 384
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-1-icu-ect-kalzium-1.json",
+    "fshName": "mii-exa-test-data-patient-1-icu-ect-kalzium-1",
+    "fshType": "Instance",
+    "fshFile": "modul-icu/Observation.fsh",
+    "startLine": 386,
+    "endLine": 398
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-1-icu-ect-substituatfl-1.json",
+    "fshName": "mii-exa-test-data-patient-1-icu-ect-substituatfl-1",
+    "fshType": "Instance",
+    "fshFile": "modul-icu/Observation.fsh",
+    "startLine": 400,
+    "endLine": 412
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-1-icu-ect-substituatvol-1.json",
+    "fshName": "mii-exa-test-data-patient-1-icu-ect-substituatvol-1",
+    "fshType": "Instance",
+    "fshFile": "modul-icu/Observation.fsh",
+    "startLine": 414,
+    "endLine": 426
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-1-icu-ect-ven-druck-1.json",
+    "fshName": "mii-exa-test-data-patient-1-icu-ect-ven-druck-1",
+    "fshType": "Instance",
+    "fshFile": "modul-icu/Observation.fsh",
+    "startLine": 428,
+    "endLine": 439
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-1-icu-event-o2-partial-1.json",
+    "fshName": "mii-exa-test-data-patient-1-icu-event-o2-partial-1",
+    "fshType": "Instance",
+    "fshFile": "modul-icu/Observation.fsh",
+    "startLine": 443,
+    "endLine": 457
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-1-icu-muv-atemfreq-1.json",
+    "fshName": "mii-exa-test-data-patient-1-icu-muv-atemfreq-1",
+    "fshType": "Instance",
+    "fshFile": "modul-icu/Observation.fsh",
+    "startLine": 477,
+    "endLine": 489
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-1-icu-muv-blutdruck-1.json",
+    "fshName": "mii-exa-test-data-patient-1-icu-muv-blutdruck-1",
+    "fshType": "Instance",
+    "fshFile": "modul-icu/Observation.fsh",
+    "startLine": 461,
+    "endLine": 475
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-1-icu-muv-gewicht-1.json",
+    "fshName": "mii-exa-test-data-patient-1-icu-muv-gewicht-1",
+    "fshType": "Instance",
+    "fshFile": "modul-icu/Observation.fsh",
+    "startLine": 506,
+    "endLine": 519
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-1-icu-muv-groesse-1.json",
+    "fshName": "mii-exa-test-data-patient-1-icu-muv-groesse-1",
+    "fshType": "Instance",
+    "fshFile": "modul-icu/Observation.fsh",
+    "startLine": 521,
+    "endLine": 534
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-1-icu-muv-herzfreq-1.json",
+    "fshName": "mii-exa-test-data-patient-1-icu-muv-herzfreq-1",
+    "fshType": "Instance",
+    "fshFile": "modul-icu/Observation.fsh",
+    "startLine": 491,
+    "endLine": 504
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-1-icu-muv-kopfumfang-1.json",
+    "fshName": "mii-exa-test-data-patient-1-icu-muv-kopfumfang-1",
+    "fshType": "Instance",
+    "fshFile": "modul-icu/Observation.fsh",
+    "startLine": 536,
+    "endLine": 548
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-1-icu-vent-atemdr-mitt-1.json",
+    "fshName": "mii-exa-test-data-patient-1-icu-vent-atemdr-mitt-1",
+    "fshType": "Instance",
+    "fshFile": "modul-icu/Observation.fsh",
+    "startLine": 581,
+    "endLine": 593
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-1-icu-vent-atemdr-null-1.json",
+    "fshName": "mii-exa-test-data-patient-1-icu-vent-atemdr-null-1",
+    "fshType": "Instance",
+    "fshFile": "modul-icu/Observation.fsh",
+    "startLine": 567,
+    "endLine": 579
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-1-icu-vent-compliance-1.json",
+    "fshName": "mii-exa-test-data-patient-1-icu-vent-compliance-1",
+    "fshType": "Instance",
+    "fshFile": "modul-icu/Observation.fsh",
+    "startLine": 947,
+    "endLine": 961
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-1-icu-vent-dp-1.json",
+    "fshName": "mii-exa-test-data-patient-1-icu-vent-dp-1",
+    "fshType": "Instance",
+    "fshFile": "modul-icu/Observation.fsh",
+    "startLine": 963,
+    "endLine": 976
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-1-icu-vent-etco2-1.json",
+    "fshName": "mii-exa-test-data-patient-1-icu-vent-etco2-1",
+    "fshType": "Instance",
+    "fshFile": "modul-icu/Observation.fsh",
+    "startLine": 718,
+    "endLine": 732
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-1-icu-vent-exp-flow-1.json",
+    "fshName": "mii-exa-test-data-patient-1-icu-vent-exp-flow-1",
+    "fshType": "Instance",
+    "fshFile": "modul-icu/Observation.fsh",
+    "startLine": 734,
+    "endLine": 747
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-1-icu-vent-fio2-eingest-1.json",
+    "fshName": "mii-exa-test-data-patient-1-icu-vent-fio2-eingest-1",
+    "fshType": "Instance",
+    "fshFile": "modul-icu/Observation.fsh",
+    "startLine": 552,
+    "endLine": 565
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-1-icu-vent-fio2-gem-1.json",
+    "fshName": "mii-exa-test-data-patient-1-icu-vent-fio2-gem-1",
+    "fshType": "Instance",
+    "fshFile": "modul-icu/Observation.fsh",
+    "startLine": 764,
+    "endLine": 777
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-1-icu-vent-freq-mech-1.json",
+    "fshName": "mii-exa-test-data-patient-1-icu-vent-freq-mech-1",
+    "fshType": "Instance",
+    "fshFile": "modul-icu/Observation.fsh",
+    "startLine": 810,
+    "endLine": 824
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-1-icu-vent-freq-spont-1.json",
+    "fshName": "mii-exa-test-data-patient-1-icu-vent-freq-spont-1",
+    "fshType": "Instance",
+    "fshFile": "modul-icu/Observation.fsh",
+    "startLine": 858,
+    "endLine": 870
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-1-icu-vent-freq-spont-mech-1.json",
+    "fshName": "mii-exa-test-data-patient-1-icu-vent-freq-spont-mech-1",
+    "fshType": "Instance",
+    "fshFile": "modul-icu/Observation.fsh",
+    "startLine": 872,
+    "endLine": 886
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-1-icu-vent-horowitz-1.json",
+    "fshName": "mii-exa-test-data-patient-1-icu-vent-horowitz-1",
+    "fshType": "Instance",
+    "fshFile": "modul-icu/Observation.fsh",
+    "startLine": 749,
+    "endLine": 762
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-1-icu-vent-ie-ratio-1.json",
+    "fshName": "mii-exa-test-data-patient-1-icu-vent-ie-ratio-1",
+    "fshType": "Instance",
+    "fshFile": "modul-icu/Observation.fsh",
+    "startLine": 931,
+    "endLine": 945
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-1-icu-vent-insp-flow-1.json",
+    "fshName": "mii-exa-test-data-patient-1-icu-vent-insp-flow-1",
+    "fshType": "Instance",
+    "fshFile": "modul-icu/Observation.fsh",
+    "startLine": 779,
+    "endLine": 792
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-1-icu-vent-insp-flow-set-1.json",
+    "fshName": "mii-exa-test-data-patient-1-icu-vent-insp-flow-set-1",
+    "fshType": "Instance",
+    "fshFile": "modul-icu/Observation.fsh",
+    "startLine": 673,
+    "endLine": 685
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-1-icu-vent-map-1.json",
+    "fshName": "mii-exa-test-data-patient-1-icu-vent-map-1",
+    "fshType": "Instance",
+    "fshFile": "modul-icu/Observation.fsh",
+    "startLine": 826,
+    "endLine": 840
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-1-icu-vent-mv-masch-1.json",
+    "fshName": "mii-exa-test-data-patient-1-icu-vent-mv-masch-1",
+    "fshType": "Instance",
+    "fshFile": "modul-icu/Observation.fsh",
+    "startLine": 627,
+    "endLine": 641
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-1-icu-vent-peep-1.json",
+    "fshName": "mii-exa-test-data-patient-1-icu-vent-peep-1",
+    "fshType": "Instance",
+    "fshFile": "modul-icu/Observation.fsh",
+    "startLine": 842,
+    "endLine": 856
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-1-icu-vent-pip-1.json",
+    "fshName": "mii-exa-test-data-patient-1-icu-vent-pip-1",
+    "fshType": "Instance",
+    "fshFile": "modul-icu/Observation.fsh",
+    "startLine": 794,
+    "endLine": 808
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-1-icu-vent-ps-1.json",
+    "fshName": "mii-exa-test-data-patient-1-icu-vent-ps-1",
+    "fshType": "Instance",
+    "fshFile": "modul-icu/Observation.fsh",
+    "startLine": 917,
+    "endLine": 929
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-1-icu-vent-te-1.json",
+    "fshName": "mii-exa-test-data-patient-1-icu-vent-te-1",
+    "fshType": "Instance",
+    "fshFile": "modul-icu/Observation.fsh",
+    "startLine": 687,
+    "endLine": 700
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-1-icu-vent-ti-1.json",
+    "fshName": "mii-exa-test-data-patient-1-icu-vent-ti-1",
+    "fshType": "Instance",
+    "fshFile": "modul-icu/Observation.fsh",
+    "startLine": 702,
+    "endLine": 716
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-1-icu-vent-vt-beat-1.json",
+    "fshName": "mii-exa-test-data-patient-1-icu-vent-vt-beat-1",
+    "fshType": "Instance",
+    "fshFile": "modul-icu/Observation.fsh",
+    "startLine": 611,
+    "endLine": 625
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-1-icu-vent-vt-einst-1.json",
+    "fshName": "mii-exa-test-data-patient-1-icu-vent-vt-einst-1",
+    "fshType": "Instance",
+    "fshFile": "modul-icu/Observation.fsh",
+    "startLine": 595,
+    "endLine": 609
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-1-icu-vent-vt-spont-1.json",
+    "fshName": "mii-exa-test-data-patient-1-icu-vent-vt-spont-1",
+    "fshType": "Instance",
+    "fshFile": "modul-icu/Observation.fsh",
+    "startLine": 888,
+    "endLine": 901
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-1-icu-vent-vt-spont-mech-1.json",
+    "fshName": "mii-exa-test-data-patient-1-icu-vent-vt-spont-mech-1",
+    "fshType": "Instance",
+    "fshFile": "modul-icu/Observation.fsh",
+    "startLine": 903,
+    "endLine": 915
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-1-icu-vent-zeit-hoch-1.json",
+    "fshName": "mii-exa-test-data-patient-1-icu-vent-zeit-hoch-1",
+    "fshType": "Instance",
+    "fshFile": "modul-icu/Observation.fsh",
+    "startLine": 643,
+    "endLine": 656
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-1-icu-vent-zeit-niedrig-1.json",
+    "fshName": "mii-exa-test-data-patient-1-icu-vent-zeit-niedrig-1",
+    "fshType": "Instance",
+    "fshFile": "modul-icu/Observation.fsh",
+    "startLine": 658,
+    "endLine": 671
   },
   {
     "outputFile": "Observation-mii-exa-test-data-patient-1-labobs-1.json",
@@ -3582,6 +4126,22 @@
     "fshFile": "modul-onkologie/core/Therapie.fsh",
     "startLine": 53,
     "endLine": 77
+  },
+  {
+    "outputFile": "Procedure-mii-exa-test-data-patient-1-icu-ect-extrakorp-1.json",
+    "fshName": "mii-exa-test-data-patient-1-icu-ect-extrakorp-1",
+    "fshType": "Instance",
+    "fshFile": "modul-icu/Procedure.fsh",
+    "startLine": 5,
+    "endLine": 16
+  },
+  {
+    "outputFile": "Procedure-mii-exa-test-data-patient-1-icu-vent-beatmung-1.json",
+    "fshName": "mii-exa-test-data-patient-1-icu-vent-beatmung-1",
+    "fshType": "Instance",
+    "fshFile": "modul-icu/Procedure.fsh",
+    "startLine": 18,
+    "endLine": 29
   },
   {
     "outputFile": "Procedure-mii-exa-test-data-patient-1-prozedur-1.json",
