@@ -36,17 +36,17 @@
         "system": "http://snomed.info/sct",
         "code": "250822000",
         "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-        "display": "250822000"
+        "display": "Inspiration/expiration time ratio"
       },
       {
         "system": "http://loinc.org",
         "code": "75931-6",
-        "display": "75931-6"
+        "display": "Inspiration/Expiration time Ratio"
       },
       {
         "system": "urn:iso:std:iso:11073:10101",
         "code": "151832",
-        "display": "151832"
+        "display": "MDC_RATIO_IE"
       }
     ]
   },

@@ -36,17 +36,17 @@
         "system": "http://snomed.info/sct",
         "code": "698821009",
         "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-        "display": "698821009"
+        "display": "Mean inspiratory airway pressure"
       },
       {
         "system": "http://loinc.org",
         "code": "76530-5",
-        "display": "76530-5"
+        "display": "Mean pressure Respiratory system airway --on ventilator"
       },
       {
         "system": "urn:iso:std:iso:11073:10101",
         "code": "151975",
-        "display": "151975"
+        "display": "MDC_VENT_PRESS_AWAY_MEAN"
       }
     ]
   },

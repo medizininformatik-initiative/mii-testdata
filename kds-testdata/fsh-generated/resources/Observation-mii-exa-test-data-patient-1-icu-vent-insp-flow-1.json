@@ -35,12 +35,12 @@
       {
         "system": "http://loinc.org",
         "code": "60794-5",
-        "display": "60794-5"
+        "display": "Inspiratory gas flow Respiratory system airway --on ventilator"
       },
       {
         "system": "urn:iso:std:iso:11073:10101",
         "code": "151948",
-        "display": "151948"
+        "display": "MDC_VENT_FLOW_INSP"
       }
     ]
   },

@@ -36,17 +36,17 @@
         "system": "http://snomed.info/sct",
         "code": "250876000",
         "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-        "display": "250876000"
+        "display": "Ventilator rate"
       },
       {
         "system": "http://loinc.org",
         "code": "33438-3",
-        "display": "33438-3"
+        "display": "Breath rate mechanical --on ventilator"
       },
       {
         "system": "urn:iso:std:iso:11073:10101",
         "code": "151586",
-        "display": "151586"
+        "display": "MDC_VENT_RESP_RATE"
       }
     ]
   },

@@ -36,17 +36,17 @@
         "system": "http://snomed.info/sct",
         "code": "250875001",
         "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-        "display": "250875001"
+        "display": "Ventilator delivered minute volume"
       },
       {
         "system": "http://loinc.org",
         "code": "76009-0",
-        "display": "76009-0"
+        "display": "Inspired minute Volume during Mechanical ventilation"
       },
       {
         "system": "urn:iso:std:iso:11073:10101",
         "code": "152004",
-        "display": "152004"
+        "display": "MDC_VENT_VOL_MINUTE_INSP"
       }
     ]
   },

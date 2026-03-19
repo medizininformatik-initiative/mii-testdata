@@ -10,7 +10,7 @@
       }
     ],
     "profile": [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-arterieller-blutdruck"
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-arterieller-blutdruck"
     ]
   },
   "category": [
@@ -28,19 +28,19 @@
       {
         "system": "http://loinc.org",
         "code": "85354-9",
-        "display": "85354-9"
+        "display": "Blood pressure panel with all children optional"
       },
       {
         "system": "http://snomed.info/sct",
         "code": "75367002",
         "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-        "display": "75367002"
+        "display": "Blood pressure"
       },
       {
         "system": "http://snomed.info/sct",
         "code": "364090009",
         "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-        "display": "364090009"
+        "display": "Systemic arterial pressure"
       }
     ]
   },

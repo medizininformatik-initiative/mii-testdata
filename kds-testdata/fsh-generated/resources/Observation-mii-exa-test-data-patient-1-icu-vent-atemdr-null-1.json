@@ -35,7 +35,7 @@
       {
         "system": "http://loinc.org",
         "code": "20060-0",
-        "display": "20060-0"
+        "display": "Airway pressure --at zero inspiratory flow on ventilator"
       }
     ]
   },

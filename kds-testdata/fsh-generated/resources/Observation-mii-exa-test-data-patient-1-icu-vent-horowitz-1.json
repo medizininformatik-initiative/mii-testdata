@@ -33,12 +33,12 @@
       {
         "system": "http://loinc.org",
         "code": "50984-4",
-        "display": "50984-4"
+        "display": "Horowitz index in Arterial blood"
       },
       {
         "system": "urn:iso:std:iso:11073:10101",
         "code": "150656",
-        "display": "150656"
+        "display": "MDC_O2_OXYGENATION_RATIO"
       }
     ]
   },

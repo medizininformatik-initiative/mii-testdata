@@ -10,7 +10,7 @@
       }
     ],
     "profile": [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-herzfrequenz"
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-herzfrequenz"
     ]
   },
   "category": [
@@ -29,17 +29,17 @@
         "system": "http://snomed.info/sct",
         "code": "364075005",
         "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-        "display": "364075005"
+        "display": "Heart rate"
       },
       {
         "system": "http://loinc.org",
         "code": "8867-4",
-        "display": "8867-4"
+        "display": "Heart rate"
       },
       {
         "system": "urn:iso:std:iso:11073:10101",
         "code": "147842",
-        "display": "147842"
+        "display": "MDC_ECG_HEART_RATE"
       }
     ]
   },

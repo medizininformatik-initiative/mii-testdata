@@ -10,7 +10,7 @@
       }
     ],
     "profile": [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-kopfumfang"
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-kopfumfang"
     ]
   },
   "category": [
@@ -28,13 +28,13 @@
       {
         "system": "http://loinc.org",
         "code": "9843-4",
-        "display": "9843-4"
+        "display": "Head Occipital-frontal circumference"
       },
       {
         "system": "http://snomed.info/sct",
         "code": "363812007",
         "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-        "display": "363812007"
+        "display": "Head circumference"
       }
     ]
   },

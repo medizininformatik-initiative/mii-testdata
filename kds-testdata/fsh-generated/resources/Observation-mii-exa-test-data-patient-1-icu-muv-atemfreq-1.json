@@ -10,7 +10,7 @@
       }
     ],
     "profile": [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-atemfrequenz"
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-atemfrequenz"
     ]
   },
   "category": [
@@ -28,13 +28,13 @@
       {
         "system": "http://loinc.org",
         "code": "9279-1",
-        "display": "9279-1"
+        "display": "Respiratory rate"
       },
       {
         "system": "http://snomed.info/sct",
         "code": "86290005",
         "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-        "display": "86290005"
+        "display": "Respiratory rate"
       }
     ]
   },

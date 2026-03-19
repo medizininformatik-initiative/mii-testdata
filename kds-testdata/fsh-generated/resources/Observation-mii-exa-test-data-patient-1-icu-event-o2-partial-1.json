@@ -36,17 +36,17 @@
         "system": "http://snomed.info/sct",
         "code": "442720002",
         "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-        "display": "442720002"
+        "display": "Expired oxygen tension"
       },
       {
         "system": "http://loinc.org",
         "code": "3147-6",
-        "display": "3147-6"
+        "display": "Oxygen [Partial pressure] in Exhaled gas"
       },
       {
         "system": "urn:iso:std:iso:11073:10101",
         "code": "153132",
-        "display": "153132"
+        "display": "MDC_CONC_AWAY_O2_EXP"
       }
     ]
   },

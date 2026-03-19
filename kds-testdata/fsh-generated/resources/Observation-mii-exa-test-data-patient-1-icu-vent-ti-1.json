@@ -36,17 +36,17 @@
         "system": "http://snomed.info/sct",
         "code": "250819002",
         "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-        "display": "250819002"
+        "display": "Inspiratory time"
       },
       {
         "system": "http://loinc.org",
         "code": "76334-2",
-        "display": "76334-2"
+        "display": "Inspiratory time setting Ventilator"
       },
       {
         "system": "urn:iso:std:iso:11073:10101",
         "code": "16929632",
-        "display": "16929632"
+        "display": "MDC_VENT_TIME_PD_INSP_SETTING"
       }
     ]
   },

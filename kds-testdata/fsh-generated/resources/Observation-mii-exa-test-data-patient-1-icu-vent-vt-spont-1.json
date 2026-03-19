@@ -36,12 +36,12 @@
         "system": "http://snomed.info/sct",
         "code": "250816009",
         "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-        "display": "250816009"
+        "display": "Spontaneous tidal volume"
       },
       {
         "system": "http://loinc.org",
         "code": "20116-0",
-        "display": "20116-0"
+        "display": "Tidal volume.spontaneous --on ventilator"
       }
     ]
   },

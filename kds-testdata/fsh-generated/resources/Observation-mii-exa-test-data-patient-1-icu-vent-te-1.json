@@ -36,12 +36,12 @@
         "system": "http://snomed.info/sct",
         "code": "250820008",
         "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-        "display": "250820008"
+        "display": "Expiratory time"
       },
       {
         "system": "http://loinc.org",
         "code": "76187-4",
-        "display": "76187-4"
+        "display": "Expiratory hold time setting Ventilator"
       }
     ]
   },

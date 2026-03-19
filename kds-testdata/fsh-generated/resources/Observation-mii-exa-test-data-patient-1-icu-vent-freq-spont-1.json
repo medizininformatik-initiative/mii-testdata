@@ -35,7 +35,7 @@
       {
         "system": "urn:iso:std:iso:11073:10101",
         "code": "152498",
-        "display": "152498"
+        "display": "MDC_VENT_RESP_BTSD_P_RATE"
       },
       {
         "system": "http://snomed.info/sct",

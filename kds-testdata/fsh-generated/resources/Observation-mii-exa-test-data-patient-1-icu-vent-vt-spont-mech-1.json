@@ -35,7 +35,7 @@
       {
         "system": "http://loinc.org",
         "code": "20118-6",
-        "display": "20118-6"
+        "display": "Tidal volume.spontaneous+mechanical --on ventilator"
       }
     ]
   },

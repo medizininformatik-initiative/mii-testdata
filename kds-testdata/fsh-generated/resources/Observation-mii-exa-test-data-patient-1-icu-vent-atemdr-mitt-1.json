@@ -35,7 +35,7 @@
       {
         "system": "http://loinc.org",
         "code": "20056-8",
-        "display": "20056-8"
+        "display": "Airway pressure --at mean expiratory flow on ventilator"
       }
     ]
   },

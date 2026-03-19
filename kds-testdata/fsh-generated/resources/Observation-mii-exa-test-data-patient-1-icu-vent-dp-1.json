@@ -35,12 +35,12 @@
       {
         "system": "http://loinc.org",
         "code": "76154-4",
-        "display": "76154-4"
+        "display": "Airway pressure delta --on ventilator"
       },
       {
         "system": "urn:iso:std:iso:11073:10101",
         "code": "152720",
-        "display": "152720"
+        "display": "MDC_VENT_PRESS_AWAY_DELTA"
       }
     ]
   },

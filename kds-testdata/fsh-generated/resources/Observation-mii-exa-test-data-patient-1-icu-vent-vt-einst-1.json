@@ -36,17 +36,17 @@
         "system": "http://snomed.info/sct",
         "code": "416811008",
         "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-        "display": "416811008"
+        "display": "Tidal volume setting"
       },
       {
         "system": "http://loinc.org",
         "code": "20112-9",
-        "display": "20112-9"
+        "display": "Tidal volume setting Ventilator"
       },
       {
         "system": "urn:iso:std:iso:11073:10101",
         "code": "16929196",
-        "display": "16929196"
+        "display": "MDC_VENT_VOL_TIDAL_SETTING"
       }
     ]
   },

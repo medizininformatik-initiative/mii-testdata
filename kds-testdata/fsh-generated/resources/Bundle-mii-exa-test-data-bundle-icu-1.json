@@ -437,19 +437,19 @@
             }
           ],
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-abnahme-haemofiltration-einzelmesswerte"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-haemofiltration-einzelmesswerte"
           ]
         },
         "category": [
           {
             "coding": [
               {
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-                "code": "vital-sign"
+                "code": "exam",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
               },
               {
-                "system": "http://snomed.info/sct",
                 "code": "364396009",
+                "system": "http://snomed.info/sct",
                 "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                 "display": "Fluid balance observable (observable entity)"
               }
@@ -461,15 +461,21 @@
             {
               "system": "http://snomed.info/sct",
               "code": "251850009",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-              "display": "251850009"
+              "display": "Ultrafiltrate fluid loss (observable entity)",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731"
             },
             {
               "system": "http://loinc.org",
               "code": "99741-1",
-              "display": "99741-1"
+              "display": "Ultrafiltrate volume removed"
             }
           ]
+        },
+        "valueQuantity": {
+          "unit": "ml",
+          "value": 120,
+          "code": "ml",
+          "system": "http://unitsofmeasure.org"
         },
         "status": "final",
         "subject": {
@@ -478,13 +484,7 @@
         "encounter": {
           "reference": "Encounter/mii-exa-test-data-patient-1-encounter-1"
         },
-        "effectiveDateTime": "2024-02-15T14:30:00+01:00",
-        "valueQuantity": {
-          "value": 120,
-          "code": "mL",
-          "system": "http://unitsofmeasure.org",
-          "unit": "mL"
-        }
+        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
       }
     },
     {
@@ -512,12 +512,12 @@
           {
             "coding": [
               {
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-                "code": "exam"
+                "code": "exam",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
               },
               {
-                "system": "http://snomed.info/sct",
                 "code": "364396009",
+                "system": "http://snomed.info/sct",
                 "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                 "display": "Fluid balance observable (observable entity)"
               }
@@ -529,10 +529,20 @@
             {
               "system": "http://snomed.info/sct",
               "code": "251843005",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-              "display": "251843005"
+              "display": "Fluid output from drain",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+            },
+            {
+              "system": "urn:iso:std:iso:11073:10101",
+              "code": "26668"
             }
           ]
+        },
+        "valueQuantity": {
+          "unit": "ml",
+          "value": 50,
+          "code": "ml",
+          "system": "http://unitsofmeasure.org"
         },
         "status": "final",
         "subject": {
@@ -541,13 +551,7 @@
         "encounter": {
           "reference": "Encounter/mii-exa-test-data-patient-1-encounter-1"
         },
-        "effectiveDateTime": "2024-02-15T14:30:00+01:00",
-        "valueQuantity": {
-          "value": 50,
-          "code": "mL",
-          "system": "http://unitsofmeasure.org",
-          "unit": "mL"
-        }
+        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
       }
     },
     {
@@ -575,12 +579,12 @@
           {
             "coding": [
               {
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-                "code": "vital-sign"
+                "code": "exam",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
               },
               {
-                "system": "http://snomed.info/sct",
                 "code": "364396009",
+                "system": "http://snomed.info/sct",
                 "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                 "display": "Fluid balance observable (observable entity)"
               }
@@ -592,15 +596,21 @@
             {
               "system": "http://snomed.info/sct",
               "code": "251847006",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-              "display": "251847006"
+              "display": "Total fluid loss",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731"
             },
             {
               "system": "http://loinc.org",
               "code": "9257-7",
-              "display": "9257-7"
+              "display": "Fluid output total Measured"
             }
           ]
+        },
+        "valueQuantity": {
+          "unit": "ml",
+          "value": 2200,
+          "code": "ml",
+          "system": "http://unitsofmeasure.org"
         },
         "status": "final",
         "subject": {
@@ -609,13 +619,7 @@
         "encounter": {
           "reference": "Encounter/mii-exa-test-data-patient-1-encounter-1"
         },
-        "effectiveDateTime": "2024-02-15T14:30:00+01:00",
-        "valueQuantity": {
-          "value": 2200,
-          "code": "mL",
-          "system": "http://unitsofmeasure.org",
-          "unit": "mL"
-        }
+        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
       }
     },
     {
@@ -643,12 +647,12 @@
           {
             "coding": [
               {
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-                "code": "exam"
+                "code": "exam",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
               },
               {
-                "system": "http://snomed.info/sct",
                 "code": "364396009",
+                "system": "http://snomed.info/sct",
                 "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                 "display": "Fluid balance observable (observable entity)"
               }
@@ -659,16 +663,22 @@
           "coding": [
             {
               "system": "http://snomed.info/sct",
-              "code": "1162670008",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-              "display": "1162670008"
+              "code": "1162667009",
+              "display": "Volume of drainage of bile duct (observable entity)",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731"
             },
             {
               "system": "http://loinc.org",
               "code": "9113-2",
-              "display": "9113-2"
+              "display": "Fluid output biliary drain"
             }
           ]
+        },
+        "valueQuantity": {
+          "unit": "ml",
+          "value": 30,
+          "code": "ml",
+          "system": "http://unitsofmeasure.org"
         },
         "status": "final",
         "subject": {
@@ -677,13 +687,7 @@
         "encounter": {
           "reference": "Encounter/mii-exa-test-data-patient-1-encounter-1"
         },
-        "effectiveDateTime": "2024-02-15T14:30:00+01:00",
-        "valueQuantity": {
-          "value": 30,
-          "code": "mL",
-          "system": "http://unitsofmeasure.org",
-          "unit": "mL"
-        }
+        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
       }
     },
     {
@@ -704,19 +708,19 @@
             }
           ],
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-gallengang"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-gallenfluessigkeit"
           ]
         },
         "category": [
           {
             "coding": [
               {
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-                "code": "exam"
+                "code": "exam",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
               },
               {
-                "system": "http://snomed.info/sct",
                 "code": "364396009",
+                "system": "http://snomed.info/sct",
                 "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                 "display": "Fluid balance observable (observable entity)"
               }
@@ -728,15 +732,21 @@
             {
               "system": "http://snomed.info/sct",
               "code": "1162667009",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-              "display": "1162667009"
+              "display": "Volume of drainage of bile duct (observable entity)",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731"
             },
             {
               "system": "http://loinc.org",
               "code": "9113-2",
-              "display": "9113-2"
+              "display": "Fluid output biliary drain"
             }
           ]
+        },
+        "valueQuantity": {
+          "unit": "ml",
+          "value": 25,
+          "code": "ml",
+          "system": "http://unitsofmeasure.org"
         },
         "status": "final",
         "subject": {
@@ -745,13 +755,7 @@
         "encounter": {
           "reference": "Encounter/mii-exa-test-data-patient-1-encounter-1"
         },
-        "effectiveDateTime": "2024-02-15T14:30:00+01:00",
-        "valueQuantity": {
-          "value": 25,
-          "code": "mL",
-          "system": "http://unitsofmeasure.org",
-          "unit": "mL"
-        }
+        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
       }
     },
     {
@@ -779,12 +783,12 @@
           {
             "coding": [
               {
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-                "code": "exam"
+                "code": "exam",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
               },
               {
-                "system": "http://snomed.info/sct",
                 "code": "364396009",
+                "system": "http://snomed.info/sct",
                 "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                 "display": "Fluid balance observable (observable entity)"
               }
@@ -795,16 +799,22 @@
           "coding": [
             {
               "system": "http://snomed.info/sct",
-              "code": "251848001",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-              "display": "251848001"
+              "code": "1162665001",
+              "display": "Volume of drainage of gastric contents (observable entity)",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731"
             },
             {
               "system": "http://loinc.org",
               "code": "79561-7",
-              "display": "79561-7"
+              "display": "Fluid output enteral tube [Volume] Measured"
             }
           ]
+        },
+        "valueQuantity": {
+          "unit": "ml",
+          "value": 100,
+          "code": "ml",
+          "system": "http://unitsofmeasure.org"
         },
         "status": "final",
         "subject": {
@@ -813,13 +823,7 @@
         "encounter": {
           "reference": "Encounter/mii-exa-test-data-patient-1-encounter-1"
         },
-        "effectiveDateTime": "2024-02-15T14:30:00+01:00",
-        "valueQuantity": {
-          "value": 100,
-          "code": "mL",
-          "system": "http://unitsofmeasure.org",
-          "unit": "mL"
-        }
+        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
       }
     },
     {
@@ -840,19 +844,19 @@
             }
           ],
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-opdrainage"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-op-drainage"
           ]
         },
         "category": [
           {
             "coding": [
               {
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-                "code": "exam"
+                "code": "exam",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
               },
               {
-                "system": "http://snomed.info/sct",
                 "code": "364396009",
+                "system": "http://snomed.info/sct",
                 "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                 "display": "Fluid balance observable (observable entity)"
               }
@@ -864,15 +868,16 @@
             {
               "system": "http://snomed.info/sct",
               "code": "251844004",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-              "display": "251844004"
-            },
-            {
-              "system": "http://loinc.org",
-              "code": "9203-1",
-              "display": "9203-1"
+              "display": "Fluid output from surgical drain (observable entity)",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731"
             }
           ]
+        },
+        "valueQuantity": {
+          "unit": "ml",
+          "value": 75,
+          "code": "ml",
+          "system": "http://unitsofmeasure.org"
         },
         "status": "final",
         "subject": {
@@ -881,13 +886,7 @@
         "encounter": {
           "reference": "Encounter/mii-exa-test-data-patient-1-encounter-1"
         },
-        "effectiveDateTime": "2024-02-15T14:30:00+01:00",
-        "valueQuantity": {
-          "value": 75,
-          "code": "mL",
-          "system": "http://unitsofmeasure.org",
-          "unit": "mL"
-        }
+        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
       }
     },
     {
@@ -915,12 +914,12 @@
           {
             "coding": [
               {
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-                "code": "exam"
+                "code": "exam",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
               },
               {
-                "system": "http://snomed.info/sct",
                 "code": "364396009",
+                "system": "http://snomed.info/sct",
                 "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                 "display": "Fluid balance observable (observable entity)"
               }
@@ -932,10 +931,16 @@
             {
               "system": "http://snomed.info/sct",
               "code": "1162668004",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-              "display": "1162668004"
+              "display": "Volume of drainage of pancreatic fluid (observable entity)",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731"
             }
           ]
+        },
+        "valueQuantity": {
+          "unit": "ml",
+          "value": 20,
+          "code": "ml",
+          "system": "http://unitsofmeasure.org"
         },
         "status": "final",
         "subject": {
@@ -944,13 +949,7 @@
         "encounter": {
           "reference": "Encounter/mii-exa-test-data-patient-1-encounter-1"
         },
-        "effectiveDateTime": "2024-02-15T14:30:00+01:00",
-        "valueQuantity": {
-          "value": 20,
-          "code": "mL",
-          "system": "http://unitsofmeasure.org",
-          "unit": "mL"
-        }
+        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
       }
     },
     {
@@ -978,12 +977,12 @@
           {
             "coding": [
               {
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-                "code": "exam"
+                "code": "exam",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
               },
               {
-                "system": "http://snomed.info/sct",
                 "code": "364396009",
+                "system": "http://snomed.info/sct",
                 "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                 "display": "Fluid balance observable (observable entity)"
               }
@@ -993,17 +992,17 @@
         "code": {
           "coding": [
             {
-              "system": "http://snomed.info/sct",
-              "code": "251849009",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-              "display": "251849009"
-            },
-            {
               "system": "http://loinc.org",
-              "code": "9167-8",
-              "display": "9167-8"
+              "code": "9217-1",
+              "display": "Output.stool [Volume]"
             }
           ]
+        },
+        "valueQuantity": {
+          "unit": "ml",
+          "value": 200,
+          "code": "ml",
+          "system": "http://unitsofmeasure.org"
         },
         "status": "final",
         "subject": {
@@ -1012,13 +1011,7 @@
         "encounter": {
           "reference": "Encounter/mii-exa-test-data-patient-1-encounter-1"
         },
-        "effectiveDateTime": "2024-02-15T14:30:00+01:00",
-        "valueQuantity": {
-          "value": 200,
-          "code": "mL",
-          "system": "http://unitsofmeasure.org",
-          "unit": "mL"
-        }
+        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
       }
     },
     {
@@ -1046,12 +1039,12 @@
           {
             "coding": [
               {
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-                "code": "vital-sign"
+                "code": "exam",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
               },
               {
-                "system": "http://snomed.info/sct",
                 "code": "364396009",
+                "system": "http://snomed.info/sct",
                 "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                 "display": "Fluid balance observable (observable entity)"
               }
@@ -1062,16 +1055,22 @@
           "coding": [
             {
               "system": "http://snomed.info/sct",
-              "code": "364202003",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-              "display": "364202003"
+              "code": "364201005",
+              "display": "Urine output observable (observable entity)",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731"
             },
             {
               "system": "http://loinc.org",
               "code": "9187-6",
-              "display": "9187-6"
+              "display": "Urine output"
             }
           ]
+        },
+        "valueQuantity": {
+          "unit": "ml",
+          "value": 1800,
+          "code": "ml",
+          "system": "http://unitsofmeasure.org"
         },
         "status": "final",
         "subject": {
@@ -1080,13 +1079,7 @@
         "encounter": {
           "reference": "Encounter/mii-exa-test-data-patient-1-encounter-1"
         },
-        "effectiveDateTime": "2024-02-15T14:30:00+01:00",
-        "valueQuantity": {
-          "value": 1800,
-          "code": "mL",
-          "system": "http://unitsofmeasure.org",
-          "unit": "mL"
-        }
+        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
       }
     },
     {
@@ -1114,12 +1107,12 @@
           {
             "coding": [
               {
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-                "code": "exam"
+                "code": "exam",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
               },
               {
-                "system": "http://snomed.info/sct",
                 "code": "364396009",
+                "system": "http://snomed.info/sct",
                 "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                 "display": "Fluid balance observable (observable entity)"
               }
@@ -1131,15 +1124,21 @@
             {
               "system": "http://snomed.info/sct",
               "code": "251845003",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-              "display": "251845003"
+              "display": "Fluid output from wound drain (observable entity)",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731"
             },
             {
               "system": "http://loinc.org",
               "code": "9203-1",
-              "display": "9203-1"
+              "display": "Fluid output wound drain"
             }
           ]
+        },
+        "valueQuantity": {
+          "unit": "ml",
+          "value": 45,
+          "code": "ml",
+          "system": "http://unitsofmeasure.org"
         },
         "status": "final",
         "subject": {
@@ -1148,13 +1147,7 @@
         "encounter": {
           "reference": "Encounter/mii-exa-test-data-patient-1-encounter-1"
         },
-        "effectiveDateTime": "2024-02-15T14:30:00+01:00",
-        "valueQuantity": {
-          "value": 45,
-          "code": "mL",
-          "system": "http://unitsofmeasure.org",
-          "unit": "mL"
-        }
+        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
       }
     },
     {
@@ -1175,19 +1168,19 @@
             }
           ],
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-blutverlust"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-blutverlust"
           ]
         },
         "category": [
           {
             "coding": [
               {
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-                "code": "vital-sign"
+                "code": "exam",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
               },
               {
-                "system": "http://snomed.info/sct",
                 "code": "364396009",
+                "system": "http://snomed.info/sct",
                 "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                 "display": "Fluid balance observable (observable entity)"
               }
@@ -1199,15 +1192,21 @@
             {
               "system": "http://snomed.info/sct",
               "code": "250771004",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-              "display": "250771004"
+              "display": "Actual blood loss",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731"
             },
             {
               "system": "http://loinc.org",
               "code": "81661-1",
-              "display": "81661-1"
+              "display": "Blood loss [Volume] Measured"
             }
           ]
+        },
+        "valueQuantity": {
+          "unit": "ml",
+          "value": 150,
+          "code": "ml",
+          "system": "http://unitsofmeasure.org"
         },
         "status": "final",
         "subject": {
@@ -1216,13 +1215,7 @@
         "encounter": {
           "reference": "Encounter/mii-exa-test-data-patient-1-encounter-1"
         },
-        "effectiveDateTime": "2024-02-15T14:30:00+01:00",
-        "valueQuantity": {
-          "value": 150,
-          "code": "mL",
-          "system": "http://unitsofmeasure.org",
-          "unit": "mL"
-        }
+        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
       }
     },
     {
@@ -1250,12 +1243,12 @@
           {
             "coding": [
               {
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-                "code": "therapy"
+                "code": "exam",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
               },
               {
-                "system": "http://snomed.info/sct",
                 "code": "364396009",
+                "system": "http://snomed.info/sct",
                 "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                 "display": "Fluid balance observable (observable entity)"
               }
@@ -1267,15 +1260,21 @@
             {
               "system": "http://snomed.info/sct",
               "code": "251854000",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-              "display": "251854000"
+              "display": "Enteral fluid input (observable entity)",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731"
             },
             {
               "system": "http://loinc.org",
               "code": "8953-2",
-              "display": "8953-2"
+              "display": "Fluid intake enteral tube Measured"
             }
           ]
+        },
+        "valueQuantity": {
+          "unit": "ml",
+          "value": 1500,
+          "code": "ml",
+          "system": "http://unitsofmeasure.org"
         },
         "status": "final",
         "subject": {
@@ -1284,13 +1283,7 @@
         "encounter": {
           "reference": "Encounter/mii-exa-test-data-patient-1-encounter-1"
         },
-        "effectiveDateTime": "2024-02-15T14:30:00+01:00",
-        "valueQuantity": {
-          "value": 1500,
-          "code": "mL",
-          "system": "http://unitsofmeasure.org",
-          "unit": "mL"
-        }
+        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
       }
     },
     {
@@ -1318,12 +1311,12 @@
           {
             "coding": [
               {
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-                "code": "therapy"
+                "code": "exam",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
               },
               {
-                "system": "http://snomed.info/sct",
                 "code": "364396009",
+                "system": "http://snomed.info/sct",
                 "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                 "display": "Fluid balance observable (observable entity)"
               }
@@ -1334,11 +1327,22 @@
           "coding": [
             {
               "system": "http://snomed.info/sct",
-              "code": "251855004",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-              "display": "251855004"
+              "code": "251852001",
+              "display": "Total fluid input (observable entity)",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+            },
+            {
+              "system": "http://loinc.org",
+              "code": "9103-3",
+              "display": "Fluid intake total Measured"
             }
           ]
+        },
+        "valueQuantity": {
+          "unit": "ml",
+          "value": 2500,
+          "code": "ml",
+          "system": "http://unitsofmeasure.org"
         },
         "status": "final",
         "subject": {
@@ -1347,13 +1351,7 @@
         "encounter": {
           "reference": "Encounter/mii-exa-test-data-patient-1-encounter-1"
         },
-        "effectiveDateTime": "2024-02-15T14:30:00+01:00",
-        "valueQuantity": {
-          "value": 2500,
-          "code": "mL",
-          "system": "http://unitsofmeasure.org",
-          "unit": "mL"
-        }
+        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
       }
     },
     {
@@ -1374,19 +1372,19 @@
             }
           ],
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-einfuhr-oraler-fluessigkeit"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-einfuhr-fluessigkeit-gesamt"
           ]
         },
         "category": [
           {
             "coding": [
               {
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-                "code": "therapy"
+                "code": "exam",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
               },
               {
-                "system": "http://snomed.info/sct",
                 "code": "364396009",
+                "system": "http://snomed.info/sct",
                 "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                 "display": "Fluid balance observable (observable entity)"
               }
@@ -1397,16 +1395,22 @@
           "coding": [
             {
               "system": "http://snomed.info/sct",
-              "code": "251853006",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-              "display": "251853006"
+              "code": "251852001",
+              "display": "Total fluid input (observable entity)",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731"
             },
             {
               "system": "http://loinc.org",
-              "code": "9000-1",
-              "display": "9000-1"
+              "code": "9103-3",
+              "display": "Fluid intake total Measured"
             }
           ]
+        },
+        "valueQuantity": {
+          "unit": "ml",
+          "value": 800,
+          "code": "ml",
+          "system": "http://unitsofmeasure.org"
         },
         "status": "final",
         "subject": {
@@ -1415,13 +1419,7 @@
         "encounter": {
           "reference": "Encounter/mii-exa-test-data-patient-1-encounter-1"
         },
-        "effectiveDateTime": "2024-02-15T14:30:00+01:00",
-        "valueQuantity": {
-          "value": 800,
-          "code": "mL",
-          "system": "http://unitsofmeasure.org",
-          "unit": "mL"
-        }
+        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
       }
     },
     {
@@ -1442,19 +1440,19 @@
             }
           ],
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-gesamte-ausfuhr"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-fluessigkeit-gesamt"
           ]
         },
         "category": [
           {
             "coding": [
               {
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-                "code": "exam"
+                "code": "exam",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
               },
               {
-                "system": "http://snomed.info/sct",
                 "code": "364396009",
+                "system": "http://snomed.info/sct",
                 "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                 "display": "Fluid balance observable (observable entity)"
               }
@@ -1465,16 +1463,22 @@
           "coding": [
             {
               "system": "http://snomed.info/sct",
-              "code": "251841007",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-              "display": "251841007"
+              "code": "251847006",
+              "display": "Total fluid loss",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731"
             },
             {
               "system": "http://loinc.org",
               "code": "9257-7",
-              "display": "9257-7"
+              "display": "Fluid output total Measured"
             }
           ]
+        },
+        "valueQuantity": {
+          "unit": "ml",
+          "value": 2400,
+          "code": "ml",
+          "system": "http://unitsofmeasure.org"
         },
         "status": "final",
         "subject": {
@@ -1483,13 +1487,7 @@
         "encounter": {
           "reference": "Encounter/mii-exa-test-data-patient-1-encounter-1"
         },
-        "effectiveDateTime": "2024-02-15T14:30:00+01:00",
-        "valueQuantity": {
-          "value": 2400,
-          "code": "mL",
-          "system": "http://unitsofmeasure.org",
-          "unit": "mL"
-        }
+        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
       }
     },
     {
@@ -1510,19 +1508,19 @@
             }
           ],
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-gesamte-einfuhr"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-einfuhr-fluessigkeit-gesamt"
           ]
         },
         "category": [
           {
             "coding": [
               {
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-                "code": "therapy"
+                "code": "exam",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
               },
               {
-                "system": "http://snomed.info/sct",
                 "code": "364396009",
+                "system": "http://snomed.info/sct",
                 "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                 "display": "Fluid balance observable (observable entity)"
               }
@@ -1534,15 +1532,21 @@
             {
               "system": "http://snomed.info/sct",
               "code": "251852001",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-              "display": "251852001"
+              "display": "Total fluid input (observable entity)",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731"
             },
             {
               "system": "http://loinc.org",
               "code": "9103-3",
-              "display": "9103-3"
+              "display": "Fluid intake total Measured"
             }
           ]
+        },
+        "valueQuantity": {
+          "unit": "ml",
+          "value": 2800,
+          "code": "ml",
+          "system": "http://unitsofmeasure.org"
         },
         "status": "final",
         "subject": {
@@ -1551,13 +1555,7 @@
         "encounter": {
           "reference": "Encounter/mii-exa-test-data-patient-1-encounter-1"
         },
-        "effectiveDateTime": "2024-02-15T14:30:00+01:00",
-        "valueQuantity": {
-          "value": 2800,
-          "code": "mL",
-          "system": "http://unitsofmeasure.org",
-          "unit": "mL"
-        }
+        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
       }
     },
     {
@@ -1578,19 +1576,19 @@
             }
           ],
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-gesamte-tages-bilanz"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-tagesbilanz-fluessigkeit"
           ]
         },
         "category": [
           {
             "coding": [
               {
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-                "code": "vital-sign"
+                "code": "exam",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
               },
               {
-                "system": "http://snomed.info/sct",
                 "code": "364396009",
+                "system": "http://snomed.info/sct",
                 "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                 "display": "Fluid balance observable (observable entity)"
               }
@@ -1602,20 +1600,21 @@
             {
               "system": "http://snomed.info/sct",
               "code": "251856003",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-              "display": "251856003"
+              "display": "Fluid balance status (observable entity)",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731"
             },
             {
               "system": "http://loinc.org",
               "code": "9097-7",
-              "display": "9097-7"
-            },
-            {
-              "system": "urn:iso:std:iso:11073:10101",
-              "code": "157756",
-              "display": "157756"
+              "display": "Fluid balance 24 hour"
             }
           ]
+        },
+        "valueQuantity": {
+          "unit": "ml",
+          "value": 400,
+          "code": "ml",
+          "system": "http://unitsofmeasure.org"
         },
         "status": "final",
         "subject": {
@@ -1624,13 +1623,7 @@
         "encounter": {
           "reference": "Encounter/mii-exa-test-data-patient-1-encounter-1"
         },
-        "effectiveDateTime": "2024-02-15T14:30:00+01:00",
-        "valueQuantity": {
-          "value": 400,
-          "code": "mL",
-          "system": "http://unitsofmeasure.org",
-          "unit": "mL"
-        }
+        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
       }
     },
     {
@@ -1665,7 +1658,7 @@
               "system": "http://snomed.info/sct",
               "code": "386534000",
               "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-              "display": "386534000"
+              "display": "Arterial blood pressure"
             }
           ]
         },
@@ -1717,7 +1710,7 @@
               "system": "http://snomed.info/sct",
               "code": "444479000",
               "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-              "display": "444479000"
+              "display": "Rate of blood flow through cardiovascular device"
             }
           ]
         },
@@ -1769,7 +1762,7 @@
               "system": "http://snomed.info/sct",
               "code": "251288004",
               "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-              "display": "251288004"
+              "display": "Extracorporeal gas exchange flow rate"
             }
           ]
         },
@@ -1833,7 +1826,7 @@
               "system": "http://snomed.info/sct",
               "code": "251289007",
               "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-              "display": "251289007"
+              "display": "Extracorporeal gas exchange flow index"
             }
           ]
         },
@@ -1897,7 +1890,7 @@
               "system": "http://snomed.info/sct",
               "code": "251286000",
               "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-              "display": "251286000"
+              "display": "Extracorporeal gas exchange duration"
             }
           ]
         },
@@ -1961,7 +1954,7 @@
               "system": "http://snomed.info/sct",
               "code": "445940005",
               "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-              "display": "445940005"
+              "display": "Duration of haemodialysis session"
             }
           ]
         },
@@ -2013,7 +2006,7 @@
               "system": "http://snomed.info/sct",
               "code": "79063001",
               "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-              "display": "79063001"
+              "display": "Gas flow rate (v)"
             }
           ]
         },
@@ -2077,7 +2070,7 @@
               "system": "http://snomed.info/sct",
               "code": "401000124105",
               "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-              "display": "401000124105"
+              "display": "Hemodialysis blood flow"
             }
           ]
         },
@@ -2140,7 +2133,7 @@
             {
               "system": "http://loinc.org",
               "code": "83064-6",
-              "display": "83064-6"
+              "display": "Calcium.ionized [Moles/volume] in Blood drawn from CRRT circuit"
             }
           ]
         },
@@ -2204,7 +2197,7 @@
               "system": "http://snomed.info/sct",
               "code": "708513005",
               "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-              "display": "708513005"
+              "display": "Substitution flow rate"
             }
           ]
         },
@@ -2268,7 +2261,7 @@
               "system": "http://snomed.info/sct",
               "code": "708514004",
               "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-              "display": "708514004"
+              "display": "Substitution volume"
             }
           ]
         },
@@ -2320,7 +2313,7 @@
               "system": "http://snomed.info/sct",
               "code": "252076005",
               "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-              "display": "252076005"
+              "display": "Venous pressure"
             }
           ]
         },
@@ -2384,17 +2377,17 @@
               "system": "http://snomed.info/sct",
               "code": "442720002",
               "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-              "display": "442720002"
+              "display": "Expired oxygen tension"
             },
             {
               "system": "http://loinc.org",
               "code": "3147-6",
-              "display": "3147-6"
+              "display": "Oxygen [Partial pressure] in Exhaled gas"
             },
             {
               "system": "urn:iso:std:iso:11073:10101",
               "code": "153132",
-              "display": "153132"
+              "display": "MDC_CONC_AWAY_O2_EXP"
             }
           ]
         },
@@ -2432,7 +2425,7 @@
             }
           ],
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-arterieller-blutdruck"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-arterieller-blutdruck"
           ]
         },
         "category": [
@@ -2450,19 +2443,19 @@
             {
               "system": "http://loinc.org",
               "code": "85354-9",
-              "display": "85354-9"
+              "display": "Blood pressure panel with all children optional"
             },
             {
               "system": "http://snomed.info/sct",
               "code": "75367002",
               "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-              "display": "75367002"
+              "display": "Blood pressure"
             },
             {
               "system": "http://snomed.info/sct",
               "code": "364090009",
               "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-              "display": "364090009"
+              "display": "Systemic arterial pressure"
             }
           ]
         },
@@ -2544,7 +2537,7 @@
             }
           ],
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-atemfrequenz"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-atemfrequenz"
           ]
         },
         "category": [
@@ -2562,13 +2555,13 @@
             {
               "system": "http://loinc.org",
               "code": "9279-1",
-              "display": "9279-1"
+              "display": "Respiratory rate"
             },
             {
               "system": "http://snomed.info/sct",
               "code": "86290005",
               "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-              "display": "86290005"
+              "display": "Respiratory rate"
             }
           ]
         },
@@ -2606,7 +2599,7 @@
             }
           ],
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-herzfrequenz"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-herzfrequenz"
           ]
         },
         "category": [
@@ -2625,17 +2618,17 @@
               "system": "http://snomed.info/sct",
               "code": "364075005",
               "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-              "display": "364075005"
+              "display": "Heart rate"
             },
             {
               "system": "http://loinc.org",
               "code": "8867-4",
-              "display": "8867-4"
+              "display": "Heart rate"
             },
             {
               "system": "urn:iso:std:iso:11073:10101",
               "code": "147842",
-              "display": "147842"
+              "display": "MDC_ECG_HEART_RATE"
             }
           ]
         },
@@ -2673,7 +2666,7 @@
             }
           ],
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-koerpergewicht"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-koerpergewicht"
           ]
         },
         "category": [
@@ -2691,18 +2684,18 @@
             {
               "system": "http://loinc.org",
               "code": "29463-7",
-              "display": "29463-7"
+              "display": "Body weight"
             },
             {
               "system": "http://loinc.org",
               "code": "8339-4",
-              "display": "8339-4"
+              "display": "Birth weight Measured"
             },
             {
               "system": "http://snomed.info/sct",
               "code": "27113001",
               "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-              "display": "27113001"
+              "display": "Body weight"
             }
           ]
         },
@@ -2740,7 +2733,7 @@
             }
           ],
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-koerpergroesse"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-koerpergroesse"
           ]
         },
         "category": [
@@ -2758,18 +2751,18 @@
             {
               "system": "http://loinc.org",
               "code": "8302-2",
-              "display": "8302-2"
+              "display": "Body height"
             },
             {
               "system": "http://loinc.org",
               "code": "89269-5",
-              "display": "89269-5"
+              "display": "Body height Measured --at birth"
             },
             {
               "system": "http://snomed.info/sct",
               "code": "1153637007",
               "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-              "display": "1153637007"
+              "display": "Body height"
             }
           ]
         },
@@ -2807,7 +2800,7 @@
             }
           ],
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-kopfumfang"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-kopfumfang"
           ]
         },
         "category": [
@@ -2825,13 +2818,13 @@
             {
               "system": "http://loinc.org",
               "code": "9843-4",
-              "display": "9843-4"
+              "display": "Head Occipital-frontal circumference"
             },
             {
               "system": "http://snomed.info/sct",
               "code": "363812007",
               "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-              "display": "363812007"
+              "display": "Head circumference"
             }
           ]
         },
@@ -2895,12 +2888,12 @@
               "system": "http://snomed.info/sct",
               "code": "250774007",
               "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-              "display": "250774007"
+              "display": "Inspired oxygen concentration"
             },
             {
               "system": "http://loinc.org",
               "code": "19994-3",
-              "display": "19994-3"
+              "display": "Oxygen/Total gas setting [Volume Fraction] Ventilator"
             }
           ]
         },
@@ -2963,7 +2956,7 @@
             {
               "system": "http://loinc.org",
               "code": "20060-0",
-              "display": "20060-0"
+              "display": "Airway pressure --at zero inspiratory flow on ventilator"
             }
           ]
         },
@@ -3026,7 +3019,7 @@
             {
               "system": "http://loinc.org",
               "code": "20056-8",
-              "display": "20056-8"
+              "display": "Airway pressure --at mean expiratory flow on ventilator"
             }
           ]
         },
@@ -3090,17 +3083,17 @@
               "system": "http://snomed.info/sct",
               "code": "416811008",
               "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-              "display": "416811008"
+              "display": "Tidal volume setting"
             },
             {
               "system": "http://loinc.org",
               "code": "20112-9",
-              "display": "20112-9"
+              "display": "Tidal volume setting Ventilator"
             },
             {
               "system": "urn:iso:std:iso:11073:10101",
               "code": "16929196",
-              "display": "16929196"
+              "display": "MDC_VENT_VOL_TIDAL_SETTING"
             }
           ]
         },
@@ -3164,17 +3157,17 @@
               "system": "http://snomed.info/sct",
               "code": "250874002",
               "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-              "display": "250874002"
+              "display": "Ventilator delivered tidal volume"
             },
             {
               "system": "http://loinc.org",
               "code": "76222-9",
-              "display": "76222-9"
+              "display": "Tidal volume Ventilator --on ventilator"
             },
             {
               "system": "urn:iso:std:iso:11073:10101",
               "code": "151980",
-              "display": "151980"
+              "display": "MDC_VENT_VOL_TIDAL"
             }
           ]
         },
@@ -3238,17 +3231,17 @@
               "system": "http://snomed.info/sct",
               "code": "250875001",
               "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-              "display": "250875001"
+              "display": "Ventilator delivered minute volume"
             },
             {
               "system": "http://loinc.org",
               "code": "76009-0",
-              "display": "76009-0"
+              "display": "Inspired minute Volume during Mechanical ventilation"
             },
             {
               "system": "urn:iso:std:iso:11073:10101",
               "code": "152004",
-              "display": "152004"
+              "display": "MDC_VENT_VOL_MINUTE_INSP"
             }
           ]
         },
@@ -3311,12 +3304,12 @@
             {
               "system": "http://loinc.org",
               "code": "76190-8",
-              "display": "76190-8"
+              "display": "High pressure hold time setting Ventilator"
             },
             {
               "system": "urn:iso:std:iso:11073:10101",
               "code": "16929860",
-              "display": "16929860"
+              "display": "MDC_VENT_TIME_PD_INSP_THIGH_SETTING"
             }
           ]
         },
@@ -3379,12 +3372,12 @@
             {
               "system": "http://loinc.org",
               "code": "76229-4",
-              "display": "76229-4"
+              "display": "Low pressure hold time setting Ventilator"
             },
             {
               "system": "urn:iso:std:iso:11073:10101",
               "code": "16929864",
-              "display": "16929864"
+              "display": "MDC_VENT_TIME_PD_EXP_TLOW_SETTING"
             }
           ]
         },
@@ -3447,7 +3440,7 @@
             {
               "system": "http://loinc.org",
               "code": "76275-7",
-              "display": "76275-7"
+              "display": "Inspiratory flow setting Ventilator"
             }
           ]
         },
@@ -3511,12 +3504,12 @@
               "system": "http://snomed.info/sct",
               "code": "250820008",
               "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-              "display": "250820008"
+              "display": "Expiratory time"
             },
             {
               "system": "http://loinc.org",
               "code": "76187-4",
-              "display": "76187-4"
+              "display": "Expiratory hold time setting Ventilator"
             }
           ]
         },
@@ -3580,17 +3573,17 @@
               "system": "http://snomed.info/sct",
               "code": "250819002",
               "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-              "display": "250819002"
+              "display": "Inspiratory time"
             },
             {
               "system": "http://loinc.org",
               "code": "76334-2",
-              "display": "76334-2"
+              "display": "Inspiratory time setting Ventilator"
             },
             {
               "system": "urn:iso:std:iso:11073:10101",
               "code": "16929632",
-              "display": "16929632"
+              "display": "MDC_VENT_TIME_PD_INSP_SETTING"
             }
           ]
         },
@@ -3654,17 +3647,17 @@
               "system": "http://snomed.info/sct",
               "code": "250790007",
               "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-              "display": "250790007"
+              "display": "End tidal carbon dioxide tension"
             },
             {
               "system": "http://loinc.org",
               "code": "19891-1",
-              "display": "19891-1"
+              "display": "Carbon dioxide [Partial pressure] in Exhaled gas --at end expiration"
             },
             {
               "system": "urn:iso:std:iso:11073:10101",
               "code": "151708",
-              "display": "151708"
+              "display": "MDC_CONC_AWAY_CO2_ET"
             }
           ]
         },
@@ -3727,12 +3720,12 @@
             {
               "system": "http://loinc.org",
               "code": "60792-9",
-              "display": "60792-9"
+              "display": "Expiratory gas flow Respiratory system airway --on ventilator"
             },
             {
               "system": "urn:iso:std:iso:11073:10101",
               "code": "151944",
-              "display": "151944"
+              "display": "MDC_VENT_FLOW_EXP"
             }
           ]
         },
@@ -3793,12 +3786,12 @@
             {
               "system": "http://loinc.org",
               "code": "50984-4",
-              "display": "50984-4"
+              "display": "Horowitz index in Arterial blood"
             },
             {
               "system": "urn:iso:std:iso:11073:10101",
               "code": "150656",
-              "display": "150656"
+              "display": "MDC_O2_OXYGENATION_RATIO"
             }
           ]
         },
@@ -3862,12 +3855,12 @@
               "system": "http://snomed.info/sct",
               "code": "250774007",
               "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-              "display": "250774007"
+              "display": "Inspired oxygen concentration"
             },
             {
               "system": "http://loinc.org",
               "code": "71835-3",
-              "display": "71835-3"
+              "display": "Oxygen/Gas total [Pure volume fraction] Inhaled gas"
             }
           ]
         },
@@ -3930,12 +3923,12 @@
             {
               "system": "http://loinc.org",
               "code": "60794-5",
-              "display": "60794-5"
+              "display": "Inspiratory gas flow Respiratory system airway --on ventilator"
             },
             {
               "system": "urn:iso:std:iso:11073:10101",
               "code": "151948",
-              "display": "151948"
+              "display": "MDC_VENT_FLOW_INSP"
             }
           ]
         },
@@ -3999,17 +3992,17 @@
               "system": "http://snomed.info/sct",
               "code": "27913002",
               "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-              "display": "27913002"
+              "display": "Maximum inspiratory pressure"
             },
             {
               "system": "http://loinc.org",
               "code": "76531-3",
-              "display": "76531-3"
+              "display": "Pressure.max Respiratory system airway --on ventilator"
             },
             {
               "system": "urn:iso:std:iso:11073:10101",
               "code": "151973",
-              "display": "151973"
+              "display": "MDC_VENT_PRESS_AWAY_MAX"
             }
           ]
         },
@@ -4073,17 +4066,17 @@
               "system": "http://snomed.info/sct",
               "code": "250876000",
               "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-              "display": "250876000"
+              "display": "Ventilator rate"
             },
             {
               "system": "http://loinc.org",
               "code": "33438-3",
-              "display": "33438-3"
+              "display": "Breath rate mechanical --on ventilator"
             },
             {
               "system": "urn:iso:std:iso:11073:10101",
               "code": "151586",
-              "display": "151586"
+              "display": "MDC_VENT_RESP_RATE"
             }
           ]
         },
@@ -4147,17 +4140,17 @@
               "system": "http://snomed.info/sct",
               "code": "698821009",
               "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-              "display": "698821009"
+              "display": "Mean inspiratory airway pressure"
             },
             {
               "system": "http://loinc.org",
               "code": "76530-5",
-              "display": "76530-5"
+              "display": "Mean pressure Respiratory system airway --on ventilator"
             },
             {
               "system": "urn:iso:std:iso:11073:10101",
               "code": "151975",
-              "display": "151975"
+              "display": "MDC_VENT_PRESS_AWAY_MEAN"
             }
           ]
         },
@@ -4221,17 +4214,17 @@
               "system": "http://snomed.info/sct",
               "code": "250854009",
               "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-              "display": "250854009"
+              "display": "Positive end expiratory pressure"
             },
             {
               "system": "http://loinc.org",
               "code": "76248-4",
-              "display": "76248-4"
+              "display": "PEEP Respiratory system --on ventilator"
             },
             {
               "system": "urn:iso:std:iso:11073:10101",
               "code": "151976",
-              "display": "151976"
+              "display": "MDC_VENT_PRESS_AWAY_END_EXP_POS"
             }
           ]
         },
@@ -4294,7 +4287,7 @@
             {
               "system": "urn:iso:std:iso:11073:10101",
               "code": "152498",
-              "display": "152498"
+              "display": "MDC_VENT_RESP_BTSD_P_RATE"
             },
             {
               "system": "http://snomed.info/sct",
@@ -4362,17 +4355,17 @@
               "system": "http://snomed.info/sct",
               "code": "250810003",
               "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-              "display": "250810003"
+              "display": "Total breath rate"
             },
             {
               "system": "http://loinc.org",
               "code": "19840-8",
-              "display": "19840-8"
+              "display": "Breath rate spontaneous and mechanical --on ventilator"
             },
             {
               "system": "urn:iso:std:iso:11073:10101",
               "code": "152490",
-              "display": "152490"
+              "display": "MDC_VENT_RESP_BTSD_PSAZC_RATE"
             }
           ]
         },
@@ -4436,12 +4429,12 @@
               "system": "http://snomed.info/sct",
               "code": "250816009",
               "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-              "display": "250816009"
+              "display": "Spontaneous tidal volume"
             },
             {
               "system": "http://loinc.org",
               "code": "20116-0",
-              "display": "20116-0"
+              "display": "Tidal volume.spontaneous --on ventilator"
             }
           ]
         },
@@ -4504,7 +4497,7 @@
             {
               "system": "http://loinc.org",
               "code": "20118-6",
-              "display": "20118-6"
+              "display": "Tidal volume.spontaneous+mechanical --on ventilator"
             }
           ]
         },
@@ -4567,7 +4560,7 @@
             {
               "system": "http://loinc.org",
               "code": "20079-0",
-              "display": "20079-0"
+              "display": "Pressure support setting Ventilator"
             }
           ]
         },
@@ -4631,17 +4624,17 @@
               "system": "http://snomed.info/sct",
               "code": "250822000",
               "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-              "display": "250822000"
+              "display": "Inspiration/expiration time ratio"
             },
             {
               "system": "http://loinc.org",
               "code": "75931-6",
-              "display": "75931-6"
+              "display": "Inspiration/Expiration time Ratio"
             },
             {
               "system": "urn:iso:std:iso:11073:10101",
               "code": "151832",
-              "display": "151832"
+              "display": "MDC_RATIO_IE"
             }
           ]
         },
@@ -4705,17 +4698,17 @@
               "system": "http://snomed.info/sct",
               "code": "250823005",
               "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-              "display": "250823005"
+              "display": "Total dynamic compliance"
             },
             {
               "system": "http://loinc.org",
               "code": "0827-3",
-              "display": "0827-3"
+              "display": "Dynamic lung compliance"
             },
             {
               "system": "urn:iso:std:iso:11073:10101",
               "code": "151692",
-              "display": "151692"
+              "display": "MDC_COMPL_LUNG_DYN"
             }
           ]
         },
@@ -4778,12 +4771,12 @@
             {
               "system": "http://loinc.org",
               "code": "76154-4",
-              "display": "76154-4"
+              "display": "Airway pressure delta --on ventilator"
             },
             {
               "system": "urn:iso:std:iso:11073:10101",
               "code": "152720",
-              "display": "152720"
+              "display": "MDC_VENT_PRESS_AWAY_DELTA"
             }
           ]
         },

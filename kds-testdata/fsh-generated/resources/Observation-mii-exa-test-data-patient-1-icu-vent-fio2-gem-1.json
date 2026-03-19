@@ -36,12 +36,12 @@
         "system": "http://snomed.info/sct",
         "code": "250774007",
         "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-        "display": "250774007"
+        "display": "Inspired oxygen concentration"
       },
       {
         "system": "http://loinc.org",
         "code": "71835-3",
-        "display": "71835-3"
+        "display": "Oxygen/Gas total [Pure volume fraction] Inhaled gas"
       }
     ]
   },

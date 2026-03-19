@@ -36,17 +36,17 @@
         "system": "http://snomed.info/sct",
         "code": "250790007",
         "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-        "display": "250790007"
+        "display": "End tidal carbon dioxide tension"
       },
       {
         "system": "http://loinc.org",
         "code": "19891-1",
-        "display": "19891-1"
+        "display": "Carbon dioxide [Partial pressure] in Exhaled gas --at end expiration"
       },
       {
         "system": "urn:iso:std:iso:11073:10101",
         "code": "151708",
-        "display": "151708"
+        "display": "MDC_CONC_AWAY_CO2_ET"
       }
     ]
   },
