@@ -16,7 +16,6 @@ Description: "ICU Observation: MII PR ICU Bilanz Abnahme Haemofiltration Einzelm
 * code.coding[sct] = $sct#251850009 "Ultrafiltrate fluid loss (observable entity)"
 * code.coding[loinc] = $loinc#99741-1 "Ultrafiltrate volume removed"
 * subject = Reference(mii-exa-test-data-patient-1)
-* encounter = Reference(mii-exa-test-data-patient-1-encounter-1)
 * effectiveDateTime = "2024-02-15T14:30:00+01:00"
 * valueQuantity = 120 'ml' "ml"
 
@@ -30,7 +29,6 @@ Description: "ICU Observation: MII PR ICU Bilanz Ausfuhr Drainage Generisch"
 * category.coding[kdsicu-category] = $sct#364396009 "Fluid balance observable (observable entity)"
 * code.coding[sct] = $sct#251843005 "Fluid output from drain"
 * subject = Reference(mii-exa-test-data-patient-1)
-* encounter = Reference(mii-exa-test-data-patient-1-encounter-1)
 * effectiveDateTime = "2024-02-15T14:30:00+01:00"
 * valueQuantity = 50 'ml' "ml"
 
@@ -45,7 +43,6 @@ Description: "ICU Observation: MII PR ICU Bilanz Ausfuhr Fluessigkeit Gesamt"
 * code.coding[sct] = $sct#251847006 "Total fluid loss"
 * code.coding[loinc] = $loinc#9257-7 "Fluid output total Measured"
 * subject = Reference(mii-exa-test-data-patient-1)
-* encounter = Reference(mii-exa-test-data-patient-1-encounter-1)
 * effectiveDateTime = "2024-02-15T14:30:00+01:00"
 * valueQuantity = 2200 'ml' "ml"
 
@@ -60,7 +57,6 @@ Description: "ICU Observation: MII PR ICU Bilanz Ausfuhr Gallenfluessigkeit"
 * code.coding[sct] = $sct#1162667009 "Volume of drainage of bile duct (observable entity)"
 * code.coding[loinc] = $loinc#9113-2 "Fluid output biliary drain"
 * subject = Reference(mii-exa-test-data-patient-1)
-* encounter = Reference(mii-exa-test-data-patient-1-encounter-1)
 * effectiveDateTime = "2024-02-15T14:30:00+01:00"
 * valueQuantity = 30 'ml' "ml"
 
@@ -75,7 +71,6 @@ Description: "ICU Observation: MII PR ICU Bilanz Ausfuhr Gallengang"
 * code.coding[sct] = $sct#1162667009 "Volume of drainage of bile duct (observable entity)"
 * code.coding[loinc] = $loinc#9113-2 "Fluid output biliary drain"
 * subject = Reference(mii-exa-test-data-patient-1)
-* encounter = Reference(mii-exa-test-data-patient-1-encounter-1)
 * effectiveDateTime = "2024-02-15T14:30:00+01:00"
 * valueQuantity = 25 'ml' "ml"
 
@@ -90,7 +85,6 @@ Description: "ICU Observation: MII PR ICU Bilanz Ausfuhr Magensonde"
 * code.coding[sct] = $sct#1162665001 "Volume of drainage of gastric contents (observable entity)"
 * code.coding[loinc] = $loinc#79561-7 "Fluid output enteral tube [Volume] Measured"
 * subject = Reference(mii-exa-test-data-patient-1)
-* encounter = Reference(mii-exa-test-data-patient-1-encounter-1)
 * effectiveDateTime = "2024-02-15T14:30:00+01:00"
 * valueQuantity = 100 'ml' "ml"
 
@@ -104,7 +98,6 @@ Description: "ICU Observation: MII PR ICU Bilanz Ausfuhr Opdrainage"
 * category.coding[kdsicu-category] = $sct#364396009 "Fluid balance observable (observable entity)"
 * code.coding[sct] = $sct#251844004 "Fluid output from surgical drain (observable entity)"
 * subject = Reference(mii-exa-test-data-patient-1)
-* encounter = Reference(mii-exa-test-data-patient-1-encounter-1)
 * effectiveDateTime = "2024-02-15T14:30:00+01:00"
 * valueQuantity = 75 'ml' "ml"
 
@@ -118,7 +111,6 @@ Description: "ICU Observation: MII PR ICU Bilanz Ausfuhr Pankreasdrainage"
 * category.coding[kdsicu-category] = $sct#364396009 "Fluid balance observable (observable entity)"
 * code.coding[sct] = $sct#1162668004 "Volume of drainage of pancreatic fluid (observable entity)"
 * subject = Reference(mii-exa-test-data-patient-1)
-* encounter = Reference(mii-exa-test-data-patient-1-encounter-1)
 * effectiveDateTime = "2024-02-15T14:30:00+01:00"
 * valueQuantity = 20 'ml' "ml"
 
@@ -132,7 +124,6 @@ Description: "ICU Observation: MII PR ICU Bilanz Ausfuhr Stuhlgang"
 * category.coding[kdsicu-category] = $sct#364396009 "Fluid balance observable (observable entity)"
 * code.coding[loinc] = $loinc#9217-1 "Output.stool [Volume]"
 * subject = Reference(mii-exa-test-data-patient-1)
-* encounter = Reference(mii-exa-test-data-patient-1-encounter-1)
 * effectiveDateTime = "2024-02-15T14:30:00+01:00"
 * valueQuantity = 200 'ml' "ml"
 
@@ -147,7 +138,6 @@ Description: "ICU Observation: MII PR ICU Bilanz Ausfuhr Urin"
 * code.coding[sct] = $sct#364201005 "Urine output observable (observable entity)"
 * code.coding[loinc] = $loinc#9187-6 "Urine output"
 * subject = Reference(mii-exa-test-data-patient-1)
-* encounter = Reference(mii-exa-test-data-patient-1-encounter-1)
 * effectiveDateTime = "2024-02-15T14:30:00+01:00"
 * valueQuantity = 1800 'ml' "ml"
 
@@ -162,7 +152,6 @@ Description: "ICU Observation: MII PR ICU Bilanz Ausfuhr Wunddrainage"
 * code.coding[sct] = $sct#251845003 "Fluid output from wound drain (observable entity)"
 * code.coding[loinc] = $loinc#9203-1 "Fluid output wound drain"
 * subject = Reference(mii-exa-test-data-patient-1)
-* encounter = Reference(mii-exa-test-data-patient-1-encounter-1)
 * effectiveDateTime = "2024-02-15T14:30:00+01:00"
 * valueQuantity = 45 'ml' "ml"
 
@@ -177,7 +166,6 @@ Description: "ICU Observation: MII PR ICU Bilanz Blutverlust"
 * code.coding[sct] = $sct#250771004 "Actual blood loss"
 * code.coding[loinc] = $loinc#81661-1 "Blood loss [Volume] Measured"
 * subject = Reference(mii-exa-test-data-patient-1)
-* encounter = Reference(mii-exa-test-data-patient-1-encounter-1)
 * effectiveDateTime = "2024-02-15T14:30:00+01:00"
 * valueQuantity = 150 'ml' "ml"
 
@@ -192,7 +180,6 @@ Description: "ICU Observation: MII PR ICU Bilanz Einfuhr Enterale Fluessigkeit"
 * code.coding[sct] = $sct#251854000 "Enteral fluid input (observable entity)"
 * code.coding[loinc] = $loinc#8953-2 "Fluid intake enteral tube Measured"
 * subject = Reference(mii-exa-test-data-patient-1)
-* encounter = Reference(mii-exa-test-data-patient-1-encounter-1)
 * effectiveDateTime = "2024-02-15T14:30:00+01:00"
 * valueQuantity = 1500 'ml' "ml"
 
@@ -206,7 +193,6 @@ Description: "ICU Observation: SD MII ICU Bilanz Einfuhr Fluessigkeit Gesamt"
 * category.coding[kdsicu-category] = $sct#364396009 "Fluid balance observable (observable entity)"
 * code.coding[sct] = $sct#251852001 "Total fluid input (observable entity)"
 * subject = Reference(mii-exa-test-data-patient-1)
-* encounter = Reference(mii-exa-test-data-patient-1-encounter-1)
 * effectiveDateTime = "2024-02-15T14:30:00+01:00"
 * valueQuantity = 2500 'ml' "ml"
 
@@ -221,7 +207,6 @@ Description: "ICU Observation: MII PR ICU Bilanz Einfuhr Oraler Fluessigkeit"
 * code.coding[sct] = $sct#251852001 "Total fluid input (observable entity)"
 * code.coding[loinc] = $loinc#9103-3 "Fluid intake total Measured"
 * subject = Reference(mii-exa-test-data-patient-1)
-* encounter = Reference(mii-exa-test-data-patient-1-encounter-1)
 * effectiveDateTime = "2024-02-15T14:30:00+01:00"
 * valueQuantity = 800 'ml' "ml"
 
@@ -236,7 +221,6 @@ Description: "ICU Observation: MII PR ICU Bilanz Gesamte Ausfuhr"
 * code.coding[sct] = $sct#251847006 "Total fluid loss"
 * code.coding[loinc] = $loinc#9257-7 "Fluid output total Measured"
 * subject = Reference(mii-exa-test-data-patient-1)
-* encounter = Reference(mii-exa-test-data-patient-1-encounter-1)
 * effectiveDateTime = "2024-02-15T14:30:00+01:00"
 * valueQuantity = 2400 'ml' "ml"
 
@@ -251,7 +235,6 @@ Description: "ICU Observation: MII PR ICU Bilanz Gesamte Einfuhr"
 * code.coding[sct] = $sct#251852001 "Total fluid input (observable entity)"
 * code.coding[loinc] = $loinc#9103-3 "Fluid intake total Measured"
 * subject = Reference(mii-exa-test-data-patient-1)
-* encounter = Reference(mii-exa-test-data-patient-1-encounter-1)
 * effectiveDateTime = "2024-02-15T14:30:00+01:00"
 * valueQuantity = 2800 'ml' "ml"
 
@@ -266,7 +249,6 @@ Description: "ICU Observation: MII PR ICU Bilanz Gesamte Tages Bilanz"
 * code.coding[sct] = $sct#251856003 "Fluid balance status (observable entity)"
 * code.coding[loinc] = $loinc#9097-7 "Fluid balance 24 hour"
 * subject = Reference(mii-exa-test-data-patient-1)
-* encounter = Reference(mii-exa-test-data-patient-1-encounter-1)
 * effectiveDateTime = "2024-02-15T14:30:00+01:00"
 * valueQuantity = 400 'ml' "ml"
 
@@ -281,7 +263,6 @@ Description: "ICU Observation: MII PR ICU Arterieller Druck"
 * partOf = Reference(mii-exa-test-data-patient-1-icu-ect-extrakorp-1)
 * code.coding[sct] = $sct#386534000 "Arterial blood pressure"
 * subject = Reference(mii-exa-test-data-patient-1)
-* encounter = Reference(mii-exa-test-data-patient-1-encounter-1)
 * effectiveDateTime = "2024-02-15T14:30:00+01:00"
 * valueQuantity = 85 'mm[Hg]' "mmHg"
 
@@ -294,7 +275,6 @@ Description: "ICU Observation: MII PR ICU Blutfluss Cardiovasculaeres Geraet"
 * partOf = Reference(mii-exa-test-data-patient-1-icu-ect-extrakorp-1)
 * code.coding[sct] = $sct#444479000 "Rate of blood flow through cardiovascular device"
 * subject = Reference(mii-exa-test-data-patient-1)
-* encounter = Reference(mii-exa-test-data-patient-1-encounter-1)
 * effectiveDateTime = "2024-02-15T14:30:00+01:00"
 * valueQuantity = 4.5 'L/min' "L/min"
 
@@ -307,7 +287,6 @@ Description: "ICU Observation: MII PR ICU Blutfluss Extrakorporaler Gasaustausch
 * partOf = Reference(mii-exa-test-data-patient-1-icu-ect-extrakorp-1)
 * code.coding[sct] = $sct#251288004 "Extracorporeal gas exchange flow rate"
 * subject = Reference(mii-exa-test-data-patient-1)
-* encounter = Reference(mii-exa-test-data-patient-1-encounter-1)
 * effectiveDateTime = "2024-02-15T14:30:00+01:00"
 * valueQuantity = 3.0 'L/min' "L/min"
 
@@ -321,7 +300,6 @@ Description: "ICU Observation: MII PR ICU Blutflussindex Extrakorporaler Gasaust
 * category.coding[sct] = $sct#182744004 "Renal dialysis (procedure)"
 * code.coding[sct] = $sct#251289007 "Extracorporeal gas exchange flow index"
 * subject = Reference(mii-exa-test-data-patient-1)
-* encounter = Reference(mii-exa-test-data-patient-1-encounter-1)
 * effectiveDateTime = "2024-02-15T14:30:00+01:00"
 * valueQuantity = 1.8 'L/(min.m2)' "L/(min.m2)"
 
@@ -335,7 +313,6 @@ Description: "ICU Observation: MII PR ICU Dauer Extrakorporaler Gasaustausch"
 * category.coding[sct] = $sct#182744004 "Renal dialysis (procedure)"
 * code.coding[sct] = $sct#251286000 "Extracorporeal gas exchange duration"
 * subject = Reference(mii-exa-test-data-patient-1)
-* encounter = Reference(mii-exa-test-data-patient-1-encounter-1)
 * effectiveDateTime = "2024-02-15T14:30:00+01:00"
 * valueQuantity = 72 'h' "hours"
 
@@ -349,7 +326,6 @@ Description: "ICU Observation: MII ICU Dauer Haemodialysesitzung"
 * category.coding[sct] = $sct#182744004 "Renal dialysis (procedure)"
 * code.coding[sct] = $sct#445940005 "Duration of haemodialysis session"
 * subject = Reference(mii-exa-test-data-patient-1)
-* encounter = Reference(mii-exa-test-data-patient-1-encounter-1)
 * effectiveDateTime = "2024-02-15T14:30:00+01:00"
 * valueQuantity = 4 'h' "hours"
 
@@ -362,7 +338,6 @@ Description: "ICU Observation: MII PR ICU Gasfluss"
 * partOf = Reference(mii-exa-test-data-patient-1-icu-ect-extrakorp-1)
 * code.coding[sct] = $sct#79063001 "Gas flow rate (v)"
 * subject = Reference(mii-exa-test-data-patient-1)
-* encounter = Reference(mii-exa-test-data-patient-1-encounter-1)
 * effectiveDateTime = "2024-02-15T14:30:00+01:00"
 * valueQuantity = 3 'L/min' "L/min"
 
@@ -376,7 +351,6 @@ Description: "ICU Observation: MII PR ICU Haemodialyse Blutfluss"
 * category.coding[sct] = $sct#182744004 "Renal dialysis (procedure)"
 * code.coding[sct] = $sct#401000124105 "Hemodialysis blood flow"
 * subject = Reference(mii-exa-test-data-patient-1)
-* encounter = Reference(mii-exa-test-data-patient-1-encounter-1)
 * effectiveDateTime = "2024-02-15T14:30:00+01:00"
 * valueQuantity = 250 'mL/min' "mL/min"
 
@@ -390,7 +364,6 @@ Description: "ICU Observation: MII PR ICU Ionisiertes Kalzium Nierenersatzverfah
 * category.coding[sct] = $sct#182744004 "Renal dialysis (procedure)"
 * code.coding[loinc] = $loinc#83064-6 "Calcium.ionized [Moles/volume] in Blood drawn from CRRT circuit"
 * subject = Reference(mii-exa-test-data-patient-1)
-* encounter = Reference(mii-exa-test-data-patient-1-encounter-1)
 * effectiveDateTime = "2024-02-15T14:30:00+01:00"
 * valueQuantity = 1.15 'mmol/L' "mmol/L"
 
@@ -404,7 +377,6 @@ Description: "ICU Observation: MII PR ICU Substituatfluss"
 * category.coding[sct] = $sct#182744004 "Renal dialysis (procedure)"
 * code.coding[sct] = $sct#708513005 "Substitution flow rate"
 * subject = Reference(mii-exa-test-data-patient-1)
-* encounter = Reference(mii-exa-test-data-patient-1-encounter-1)
 * effectiveDateTime = "2024-02-15T14:30:00+01:00"
 * valueQuantity = 2000 'mL/h' "mL/h"
 
@@ -418,7 +390,6 @@ Description: "ICU Observation: MII PR ICU Substituatvolumen"
 * category.coding[sct] = $sct#182744004 "Renal dialysis (procedure)"
 * code.coding[sct] = $sct#708514004 "Substitution volume"
 * subject = Reference(mii-exa-test-data-patient-1)
-* encounter = Reference(mii-exa-test-data-patient-1-encounter-1)
 * effectiveDateTime = "2024-02-15T14:30:00+01:00"
 * valueQuantity = 48 'L' "L"
 
@@ -431,7 +402,6 @@ Description: "ICU Observation: MII PR ICU Venous Pressure"
 * partOf = Reference(mii-exa-test-data-patient-1-icu-ect-extrakorp-1)
 * code.coding[sct] = $sct#252076005 "Venous pressure"
 * subject = Reference(mii-exa-test-data-patient-1)
-* encounter = Reference(mii-exa-test-data-patient-1-encounter-1)
 * effectiveDateTime = "2024-02-15T14:30:00+01:00"
 * valueQuantity = 15 'mm[Hg]' "mmHg"
 
@@ -449,7 +419,6 @@ Description: "ICU Observation: MII PR ICU Exspiratorischer Sauerstoffpartialdruc
 * code.coding[loinc] = $loinc#3147-6 "Oxygen [Partial pressure] in Exhaled gas"
 * code.coding[IEEE-11073] = $11073-10101#153132 "MDC_CONC_AWAY_O2_EXP"
 * subject = Reference(mii-exa-test-data-patient-1)
-* encounter = Reference(mii-exa-test-data-patient-1-encounter-1)
 * effectiveDateTime = "2024-02-15T14:30:00+01:00"
 * valueQuantity = 40 'mm[Hg]' "mmHg"
 
@@ -466,7 +435,6 @@ Description: "ICU Observation: MII PR ICU Arterieller Blutdruck"
 * code.coding[snomed] = $sct#75367002 "Blood pressure"
 * code.coding[sct] = $sct#364090009 "Systemic arterial pressure"
 * subject = Reference(mii-exa-test-data-patient-1)
-* encounter = Reference(mii-exa-test-data-patient-1-encounter-1)
 * effectiveDateTime = "2024-02-15T14:30:00+01:00"
 * component[SystolicBP].valueQuantity = 120 'mm[Hg]' "mmHg"
 * component[DiastolicBP].valueQuantity = 80 'mm[Hg]' "mmHg"
@@ -481,7 +449,6 @@ Description: "ICU Observation: MII PR ICU Atemfrequenz"
 * code.coding[loinc] = $loinc#9279-1 "Respiratory rate"
 * code.coding[snomed] = $sct#86290005 "Respiratory rate"
 * subject = Reference(mii-exa-test-data-patient-1)
-* encounter = Reference(mii-exa-test-data-patient-1-encounter-1)
 * effectiveDateTime = "2024-02-15T14:30:00+01:00"
 * valueQuantity = 14 '/min' "breaths per minute"
 
@@ -496,7 +463,6 @@ Description: "ICU Observation: MII SD ICU Herzfrequenz"
 * code.coding[loinc] = $loinc#8867-4 "Heart rate"
 * code.coding[IEEE-11073] = $11073-10101#147842 "MDC_ECG_HEART_RATE"
 * subject = Reference(mii-exa-test-data-patient-1)
-* encounter = Reference(mii-exa-test-data-patient-1-encounter-1)
 * effectiveDateTime = "2024-02-15T14:30:00+01:00"
 * valueQuantity = 72 '/min' "beats per minute"
 
@@ -511,7 +477,6 @@ Description: "ICU Observation: MII PR ICU Koerpergewicht"
 * code.coding[loinc-zusatzcode] = $loinc#8339-4 "Birth weight Measured"
 * code.coding[snomed] = $sct#27113001 "Body weight"
 * subject = Reference(mii-exa-test-data-patient-1)
-* encounter = Reference(mii-exa-test-data-patient-1-encounter-1)
 * effectiveDateTime = "2024-02-15T14:30:00+01:00"
 * valueQuantity = 80 'kg' "kilogram"
 
@@ -526,7 +491,6 @@ Description: "ICU Observation: MII PR ICU Koerpergroesse"
 * code.coding[loinc-zusatzcode] = $loinc#89269-5 "Body height Measured --at birth"
 * code.coding[snomed] = $sct#1153637007 "Body height"
 * subject = Reference(mii-exa-test-data-patient-1)
-* encounter = Reference(mii-exa-test-data-patient-1-encounter-1)
 * effectiveDateTime = "2024-02-15T14:30:00+01:00"
 * valueQuantity = 175 'cm' "centimeter"
 
@@ -540,7 +504,6 @@ Description: "ICU Observation: MII PR ICU Kopfumfang"
 * code.coding[loinc] = $loinc#9843-4 "Head Occipital-frontal circumference"
 * code.coding[snomed] = $sct#363812007 "Head circumference"
 * subject = Reference(mii-exa-test-data-patient-1)
-* encounter = Reference(mii-exa-test-data-patient-1-encounter-1)
 * effectiveDateTime = "2024-02-15T14:30:00+01:00"
 * valueQuantity = 57 'cm' "centimeter"
 
@@ -557,7 +520,6 @@ Description: "ICU Observation: mii-pr-icu-inspiratorische-sauerstofffraktion-ein
 * code.coding[sct] = $sct#250774007 "Inspired oxygen concentration"
 * code.coding[loinc] = $loinc#19994-3 "Oxygen/Total gas setting [Volume Fraction] Ventilator"
 * subject = Reference(mii-exa-test-data-patient-1)
-* encounter = Reference(mii-exa-test-data-patient-1-encounter-1)
 * effectiveDateTime = "2024-02-15T14:30:00+01:00"
 * valueQuantity = 0.4 '%' "percent"
 
@@ -571,7 +533,6 @@ Description: "ICU Observation: MII PR ICU Atemwegsdruck Bei Null Expiratorischem
 * category = $sct#40617009 "Artificial ventilation (regime/therapy)"
 * code.coding[loinc] = $loinc#20060-0 "Airway pressure --at zero inspiratory flow on ventilator"
 * subject = Reference(mii-exa-test-data-patient-1)
-* encounter = Reference(mii-exa-test-data-patient-1-encounter-1)
 * effectiveDateTime = "2024-02-15T14:30:00+01:00"
 * valueQuantity = 3 'cm[H2O]' "cmH2O"
 
@@ -585,7 +546,6 @@ Description: "ICU Observation: MII PR ICU Atemwegsdruck Bei Mittlerem Expiratori
 * category = $sct#40617009 "Artificial ventilation (regime/therapy)"
 * code.coding[loinc] = $loinc#20056-8 "Airway pressure --at mean expiratory flow on ventilator"
 * subject = Reference(mii-exa-test-data-patient-1)
-* encounter = Reference(mii-exa-test-data-patient-1-encounter-1)
 * effectiveDateTime = "2024-02-15T14:30:00+01:00"
 * valueQuantity = 8 'cm[H2O]' "cmH2O"
 
@@ -601,7 +561,6 @@ Description: "ICU Observation: MII PR ICU Atemzugvolumen Einstellung"
 * code.coding[loinc] = $loinc#20112-9 "Tidal volume setting Ventilator"
 * code.coding[IEEE-11073] = $11073-10101#16929196 "MDC_VENT_VOL_TIDAL_SETTING"
 * subject = Reference(mii-exa-test-data-patient-1)
-* encounter = Reference(mii-exa-test-data-patient-1-encounter-1)
 * effectiveDateTime = "2024-02-15T14:30:00+01:00"
 * valueQuantity = 500 'mL' "mL"
 
@@ -617,7 +576,6 @@ Description: "ICU Observation: MII PR ICU Atemzugvolumen Waehrend Beatmung"
 * code.coding[loinc] = $loinc#76222-9 "Tidal volume Ventilator --on ventilator"
 * code.coding[IEEE-11073] = $11073-10101#151980 "MDC_VENT_VOL_TIDAL"
 * subject = Reference(mii-exa-test-data-patient-1)
-* encounter = Reference(mii-exa-test-data-patient-1-encounter-1)
 * effectiveDateTime = "2024-02-15T14:30:00+01:00"
 * valueQuantity = 480 'mL' "mL"
 
@@ -633,7 +591,6 @@ Description: "ICU Observation: MII PR ICU Beatmungsvolumen Pro Minute Maschinell
 * code.coding[loinc] = $loinc#76009-0 "Inspired minute Volume during Mechanical ventilation"
 * code.coding[IEEE-11073] = $11073-10101#152004 "MDC_VENT_VOL_MINUTE_INSP"
 * subject = Reference(mii-exa-test-data-patient-1)
-* encounter = Reference(mii-exa-test-data-patient-1-encounter-1)
 * effectiveDateTime = "2024-02-15T14:30:00+01:00"
 * valueQuantity = 7.5 'L/min' "L/min"
 
@@ -648,7 +605,6 @@ Description: "ICU Observation: MII ICU Beatmungszeit Hohem Druck"
 * code.coding[loinc] = $loinc#76190-8 "High pressure hold time setting Ventilator"
 * code.coding[IEEE-11073] = $11073-10101#16929860 "MDC_VENT_TIME_PD_INSP_THIGH_SETTING"
 * subject = Reference(mii-exa-test-data-patient-1)
-* encounter = Reference(mii-exa-test-data-patient-1-encounter-1)
 * effectiveDateTime = "2024-02-15T14:30:00+01:00"
 * valueQuantity = 1.0 's' "seconds"
 
@@ -663,7 +619,6 @@ Description: "ICU Observation: MII PR ICU Beatmungszeit Niedrigem Druck"
 * code.coding[loinc] = $loinc#76229-4 "Low pressure hold time setting Ventilator"
 * code.coding[IEEE-11073] = $11073-10101#16929864 "MDC_VENT_TIME_PD_EXP_TLOW_SETTING"
 * subject = Reference(mii-exa-test-data-patient-1)
-* encounter = Reference(mii-exa-test-data-patient-1-encounter-1)
 * effectiveDateTime = "2024-02-15T14:30:00+01:00"
 * valueQuantity = 0.8 's' "seconds"
 
@@ -677,7 +632,6 @@ Description: "ICU Observation: MII PR ICU Eingestellter Inspiratorischer Gasflus
 * category[Beatmung] = $sct#40617009 "Artificial ventilation (regime/therapy)"
 * code.coding[loinc] = $loinc#76275-7 "Inspiratory flow setting Ventilator"
 * subject = Reference(mii-exa-test-data-patient-1)
-* encounter = Reference(mii-exa-test-data-patient-1-encounter-1)
 * effectiveDateTime = "2024-02-15T14:30:00+01:00"
 * valueQuantity = 40 'L/min' "L/min"
 
@@ -692,7 +646,6 @@ Description: "ICU Observation: MII PR ICU Einstellung Ausatmungszeit Beatmung"
 * code.coding[sct] = $sct#250820008 "Expiratory time"
 * code.coding[loinc] = $loinc#76187-4 "Expiratory hold time setting Ventilator"
 * subject = Reference(mii-exa-test-data-patient-1)
-* encounter = Reference(mii-exa-test-data-patient-1-encounter-1)
 * effectiveDateTime = "2024-02-15T14:30:00+01:00"
 * valueQuantity = 2.0 's' "seconds"
 
@@ -708,7 +661,6 @@ Description: "ICU Observation: MII PR ICU Einstellung Einatmungszeit Beatmung"
 * code.coding[loinc] = $loinc#76334-2 "Inspiratory time setting Ventilator"
 * code.coding[IEEE-11073] = $11073-10101#16929632 "MDC_VENT_TIME_PD_INSP_SETTING"
 * subject = Reference(mii-exa-test-data-patient-1)
-* encounter = Reference(mii-exa-test-data-patient-1-encounter-1)
 * effectiveDateTime = "2024-02-15T14:30:00+01:00"
 * valueQuantity = 1.0 's' "seconds"
 
@@ -724,7 +676,6 @@ Description: "ICU Observation: MII PR ICU Endexpiratorischer Kohlendioxidpartial
 * code.coding[loinc] = $loinc#19891-1 "Carbon dioxide [Partial pressure] in Exhaled gas --at end expiration"
 * code.coding[IEEE-11073] = $11073-10101#151708 "MDC_CONC_AWAY_CO2_ET"
 * subject = Reference(mii-exa-test-data-patient-1)
-* encounter = Reference(mii-exa-test-data-patient-1-encounter-1)
 * effectiveDateTime = "2024-02-15T14:30:00+01:00"
 * valueQuantity = 35 'mm[Hg]' "mmHg"
 
@@ -739,7 +690,6 @@ Description: "ICU Observation: MII PR ICU Exspiratorischer Gasfluss"
 * code.coding[loinc] = $loinc#60792-9 "Expiratory gas flow Respiratory system airway --on ventilator"
 * code.coding[IEEE-11073] = $11073-10101#151944 "MDC_VENT_FLOW_EXP"
 * subject = Reference(mii-exa-test-data-patient-1)
-* encounter = Reference(mii-exa-test-data-patient-1-encounter-1)
 * effectiveDateTime = "2024-02-15T14:30:00+01:00"
 * valueQuantity = 35 'L/min' "L/min"
 
@@ -754,7 +704,6 @@ Description: "ICU Observation: MII PR ICU Horowitz In Arteriellem Blut"
 * code.coding[loinc] = $loinc#50984-4 "Horowitz index in Arterial blood"
 * code.coding[IEEE-11073] = $11073-10101#150656 "MDC_O2_OXYGENATION_RATIO"
 * subject = Reference(mii-exa-test-data-patient-1)
-* encounter = Reference(mii-exa-test-data-patient-1-encounter-1)
 * effectiveDateTime = "2024-02-15T14:30:00+01:00"
 * valueQuantity = 350 'mm[Hg]' "mmHg"
 
@@ -769,7 +718,6 @@ Description: "ICU Observation: MIIm PR ICU Inspiratorische Sauerstofffraktion Ge
 * code.coding[sct] = $sct#250774007 "Inspired oxygen concentration"
 * code.coding[loinc] = $loinc#71835-3 "Oxygen/Gas total [Pure volume fraction] Inhaled gas"
 * subject = Reference(mii-exa-test-data-patient-1)
-* encounter = Reference(mii-exa-test-data-patient-1-encounter-1)
 * effectiveDateTime = "2024-02-15T14:30:00+01:00"
 * valueQuantity = 0.42 '%' "percent"
 
@@ -784,7 +732,6 @@ Description: "ICU Observation: MII PR ICU Inspiratorischer Gasfluss"
 * code.coding[loinc] = $loinc#60794-5 "Inspiratory gas flow Respiratory system airway --on ventilator"
 * code.coding[IEEE-11073] = $11073-10101#151948 "MDC_VENT_FLOW_INSP"
 * subject = Reference(mii-exa-test-data-patient-1)
-* encounter = Reference(mii-exa-test-data-patient-1-encounter-1)
 * effectiveDateTime = "2024-02-15T14:30:00+01:00"
 * valueQuantity = 40 'L/min' "L/min"
 
@@ -800,7 +747,6 @@ Description: "ICU Observation: MII PR ICU Maximaler Beatmungsdruck"
 * code.coding[loinc] = $loinc#76531-3 "Pressure.max Respiratory system airway --on ventilator"
 * code.coding[IEEE-11073] = $11073-10101#151973 "MDC_VENT_PRESS_AWAY_MAX"
 * subject = Reference(mii-exa-test-data-patient-1)
-* encounter = Reference(mii-exa-test-data-patient-1-encounter-1)
 * effectiveDateTime = "2024-02-15T14:30:00+01:00"
 * valueQuantity = 25 'cm[H2O]' "cmH2O"
 
@@ -816,7 +762,6 @@ Description: "ICU Observation: MII PR ICU Mechanische Atemfrequenz Beatmet"
 * code.coding[loinc] = $loinc#33438-3 "Breath rate mechanical --on ventilator"
 * code.coding[IEEE-11073] = $11073-10101#151586 "MDC_VENT_RESP_RATE"
 * subject = Reference(mii-exa-test-data-patient-1)
-* encounter = Reference(mii-exa-test-data-patient-1-encounter-1)
 * effectiveDateTime = "2024-02-15T14:30:00+01:00"
 * valueQuantity = 16 '{Breaths}/min' "breaths per minute"
 
@@ -832,7 +777,6 @@ Description: "ICU Observation: MII PR ICU Mittlerer Beatmungsdruck"
 * code.coding[loinc] = $loinc#76530-5 "Mean pressure Respiratory system airway --on ventilator"
 * code.coding[IEEE-11073] = $11073-10101#151975 "MDC_VENT_PRESS_AWAY_MEAN"
 * subject = Reference(mii-exa-test-data-patient-1)
-* encounter = Reference(mii-exa-test-data-patient-1-encounter-1)
 * effectiveDateTime = "2024-02-15T14:30:00+01:00"
 * valueQuantity = 15 'cm[H2O]' "cmH2O"
 
@@ -848,7 +792,6 @@ Description: "ICU Observation: MII PR ICU Positiv Endexpiratorischer Druck"
 * code.coding[loinc] = $loinc#76248-4 "PEEP Respiratory system --on ventilator"
 * code.coding[IEEE-11073] = $11073-10101#151976 "MDC_VENT_PRESS_AWAY_END_EXP_POS"
 * subject = Reference(mii-exa-test-data-patient-1)
-* encounter = Reference(mii-exa-test-data-patient-1-encounter-1)
 * effectiveDateTime = "2024-02-15T14:30:00+01:00"
 * valueQuantity = 8 'cm[H2O]' "cmH2O"
 
@@ -862,7 +805,6 @@ Description: "ICU Observation: MII PR ICU Spontane Atemfrequenz Beatmet"
 * category = $sct#40617009 "Artificial ventilation (regime/therapy)"
 * code.coding[IEEE-11073] = $11073-10101#152498 "MDC_VENT_RESP_BTSD_P_RATE"
 * subject = Reference(mii-exa-test-data-patient-1)
-* encounter = Reference(mii-exa-test-data-patient-1-encounter-1)
 * effectiveDateTime = "2024-02-15T14:30:00+01:00"
 * valueQuantity = 4 '/min' "breaths per minute"
 
@@ -878,7 +820,6 @@ Description: "ICU Observation: MII PR ICU Spontane Mechanische Atemfrequenz Beat
 * code.coding[loinc] = $loinc#19840-8 "Breath rate spontaneous and mechanical --on ventilator"
 * code.coding[IEEE-11073] = $11073-10101#152490 "MDC_VENT_RESP_BTSD_PSAZC_RATE"
 * subject = Reference(mii-exa-test-data-patient-1)
-* encounter = Reference(mii-exa-test-data-patient-1-encounter-1)
 * effectiveDateTime = "2024-02-15T14:30:00+01:00"
 * valueQuantity = 20 '/min' "breaths per minute"
 
@@ -893,7 +834,6 @@ Description: "ICU Observation: MII PR ICU Spontanes Atemzugvolumen"
 * code.coding[sct] = $sct#250816009 "Spontaneous tidal volume"
 * code.coding[loinc] = $loinc#20116-0 "Tidal volume.spontaneous --on ventilator"
 * subject = Reference(mii-exa-test-data-patient-1)
-* encounter = Reference(mii-exa-test-data-patient-1-encounter-1)
 * effectiveDateTime = "2024-02-15T14:30:00+01:00"
 * valueQuantity = 450 'mL' "mL"
 
@@ -907,7 +847,6 @@ Description: "ICU Observation: MII PR ICU Spontanes Plus Mechanisches Atemzugvol
 * category = $sct#40617009 "Artificial ventilation (regime/therapy)"
 * code.coding[loinc] = $loinc#20118-6 "Tidal volume.spontaneous+mechanical --on ventilator"
 * subject = Reference(mii-exa-test-data-patient-1)
-* encounter = Reference(mii-exa-test-data-patient-1-encounter-1)
 * effectiveDateTime = "2024-02-15T14:30:00+01:00"
 * valueQuantity = 470 'mL' "mL"
 
@@ -921,7 +860,6 @@ Description: "ICU Observation: MII PR ICU Unterstuezungsdruck Beatmung"
 * category = $sct#40617009 "Artificial ventilation (regime/therapy)"
 * code.coding[loinc] = $loinc#20079-0 "Pressure support setting Ventilator"
 * subject = Reference(mii-exa-test-data-patient-1)
-* encounter = Reference(mii-exa-test-data-patient-1-encounter-1)
 * effectiveDateTime = "2024-02-15T14:30:00+01:00"
 * valueQuantity = 12 'cm[H2O]' "cmH2O"
 
@@ -937,7 +875,6 @@ Description: "ICU Observation: MII PR ICU Zeitverhaeltnis Ein Ausatmung"
 * code.coding[loinc] = $loinc#75931-6 "Inspiration/Expiration time Ratio"
 * code.coding[IEEE-11073] = $11073-10101#151832 "MDC_RATIO_IE"
 * subject = Reference(mii-exa-test-data-patient-1)
-* encounter = Reference(mii-exa-test-data-patient-1-encounter-1)
 * effectiveDateTime = "2024-02-15T14:30:00+01:00"
 * valueQuantity = 0.5 '{ratio}' "ratio"
 
@@ -953,7 +890,6 @@ Description: "ICU Observation: mii-pr-icu-dynamische-kompliance"
 * code.coding[loinc] = $loinc#0827-3 "Dynamic lung compliance"
 * code.coding[IEEE-11073] = $11073-10101#151692 "MDC_COMPL_LUNG_DYN"
 * subject = Reference(mii-exa-test-data-patient-1)
-* encounter = Reference(mii-exa-test-data-patient-1-encounter-1)
 * effectiveDateTime = "2024-02-15T14:30:00+01:00"
 * valueQuantity = 50 'mL/cm[H2O]' "mL/cmH2O"
 
@@ -968,6 +904,5 @@ Description: "ICU Observation: MII PR ICU Druckdifferenz Beatmung"
 * code.coding[loinc] = $loinc#76154-4 "Airway pressure delta --on ventilator"
 * code.coding[IEEE-11073] = $11073-10101#152720 "MDC_VENT_PRESS_AWAY_DELTA"
 * subject = Reference(mii-exa-test-data-patient-1)
-* encounter = Reference(mii-exa-test-data-patient-1-encounter-1)
 * effectiveDateTime = "2024-02-15T14:30:00+01:00"
 * valueQuantity = 13 'cm[H2O]' "cmH2O"

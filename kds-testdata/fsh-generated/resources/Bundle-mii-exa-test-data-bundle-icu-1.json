@@ -481,9 +481,6 @@
         "subject": {
           "reference": "Patient/mii-exa-test-data-patient-1"
         },
-        "encounter": {
-          "reference": "Encounter/mii-exa-test-data-patient-1-encounter-1"
-        },
         "effectiveDateTime": "2024-02-15T14:30:00+01:00"
       }
     },
@@ -547,9 +544,6 @@
         "status": "final",
         "subject": {
           "reference": "Patient/mii-exa-test-data-patient-1"
-        },
-        "encounter": {
-          "reference": "Encounter/mii-exa-test-data-patient-1-encounter-1"
         },
         "effectiveDateTime": "2024-02-15T14:30:00+01:00"
       }
@@ -616,9 +610,6 @@
         "subject": {
           "reference": "Patient/mii-exa-test-data-patient-1"
         },
-        "encounter": {
-          "reference": "Encounter/mii-exa-test-data-patient-1-encounter-1"
-        },
         "effectiveDateTime": "2024-02-15T14:30:00+01:00"
       }
     },
@@ -683,9 +674,6 @@
         "status": "final",
         "subject": {
           "reference": "Patient/mii-exa-test-data-patient-1"
-        },
-        "encounter": {
-          "reference": "Encounter/mii-exa-test-data-patient-1-encounter-1"
         },
         "effectiveDateTime": "2024-02-15T14:30:00+01:00"
       }
@@ -752,9 +740,6 @@
         "subject": {
           "reference": "Patient/mii-exa-test-data-patient-1"
         },
-        "encounter": {
-          "reference": "Encounter/mii-exa-test-data-patient-1-encounter-1"
-        },
         "effectiveDateTime": "2024-02-15T14:30:00+01:00"
       }
     },
@@ -820,9 +805,6 @@
         "subject": {
           "reference": "Patient/mii-exa-test-data-patient-1"
         },
-        "encounter": {
-          "reference": "Encounter/mii-exa-test-data-patient-1-encounter-1"
-        },
         "effectiveDateTime": "2024-02-15T14:30:00+01:00"
       }
     },
@@ -882,9 +864,6 @@
         "status": "final",
         "subject": {
           "reference": "Patient/mii-exa-test-data-patient-1"
-        },
-        "encounter": {
-          "reference": "Encounter/mii-exa-test-data-patient-1-encounter-1"
         },
         "effectiveDateTime": "2024-02-15T14:30:00+01:00"
       }
@@ -946,9 +925,6 @@
         "subject": {
           "reference": "Patient/mii-exa-test-data-patient-1"
         },
-        "encounter": {
-          "reference": "Encounter/mii-exa-test-data-patient-1-encounter-1"
-        },
         "effectiveDateTime": "2024-02-15T14:30:00+01:00"
       }
     },
@@ -1007,9 +983,6 @@
         "status": "final",
         "subject": {
           "reference": "Patient/mii-exa-test-data-patient-1"
-        },
-        "encounter": {
-          "reference": "Encounter/mii-exa-test-data-patient-1-encounter-1"
         },
         "effectiveDateTime": "2024-02-15T14:30:00+01:00"
       }
@@ -1076,9 +1049,6 @@
         "subject": {
           "reference": "Patient/mii-exa-test-data-patient-1"
         },
-        "encounter": {
-          "reference": "Encounter/mii-exa-test-data-patient-1-encounter-1"
-        },
         "effectiveDateTime": "2024-02-15T14:30:00+01:00"
       }
     },
@@ -1143,9 +1113,6 @@
         "status": "final",
         "subject": {
           "reference": "Patient/mii-exa-test-data-patient-1"
-        },
-        "encounter": {
-          "reference": "Encounter/mii-exa-test-data-patient-1-encounter-1"
         },
         "effectiveDateTime": "2024-02-15T14:30:00+01:00"
       }
@@ -1212,9 +1179,6 @@
         "subject": {
           "reference": "Patient/mii-exa-test-data-patient-1"
         },
-        "encounter": {
-          "reference": "Encounter/mii-exa-test-data-patient-1-encounter-1"
-        },
         "effectiveDateTime": "2024-02-15T14:30:00+01:00"
       }
     },
@@ -1279,9 +1243,6 @@
         "status": "final",
         "subject": {
           "reference": "Patient/mii-exa-test-data-patient-1"
-        },
-        "encounter": {
-          "reference": "Encounter/mii-exa-test-data-patient-1-encounter-1"
         },
         "effectiveDateTime": "2024-02-15T14:30:00+01:00"
       }
@@ -1348,9 +1309,6 @@
         "subject": {
           "reference": "Patient/mii-exa-test-data-patient-1"
         },
-        "encounter": {
-          "reference": "Encounter/mii-exa-test-data-patient-1-encounter-1"
-        },
         "effectiveDateTime": "2024-02-15T14:30:00+01:00"
       }
     },
@@ -1415,9 +1373,6 @@
         "status": "final",
         "subject": {
           "reference": "Patient/mii-exa-test-data-patient-1"
-        },
-        "encounter": {
-          "reference": "Encounter/mii-exa-test-data-patient-1-encounter-1"
         },
         "effectiveDateTime": "2024-02-15T14:30:00+01:00"
       }
@@ -1484,9 +1439,6 @@
         "subject": {
           "reference": "Patient/mii-exa-test-data-patient-1"
         },
-        "encounter": {
-          "reference": "Encounter/mii-exa-test-data-patient-1-encounter-1"
-        },
         "effectiveDateTime": "2024-02-15T14:30:00+01:00"
       }
     },
@@ -1551,9 +1503,6 @@
         "status": "final",
         "subject": {
           "reference": "Patient/mii-exa-test-data-patient-1"
-        },
-        "encounter": {
-          "reference": "Encounter/mii-exa-test-data-patient-1-encounter-1"
         },
         "effectiveDateTime": "2024-02-15T14:30:00+01:00"
       }
@@ -1620,9 +1569,6 @@
         "subject": {
           "reference": "Patient/mii-exa-test-data-patient-1"
         },
-        "encounter": {
-          "reference": "Encounter/mii-exa-test-data-patient-1-encounter-1"
-        },
         "effectiveDateTime": "2024-02-15T14:30:00+01:00"
       }
     },
@@ -1671,9 +1617,6 @@
         "status": "final",
         "subject": {
           "reference": "Patient/mii-exa-test-data-patient-1"
-        },
-        "encounter": {
-          "reference": "Encounter/mii-exa-test-data-patient-1-encounter-1"
         },
         "effectiveDateTime": "2024-02-15T14:30:00+01:00"
       }
@@ -1724,9 +1667,6 @@
         "subject": {
           "reference": "Patient/mii-exa-test-data-patient-1"
         },
-        "encounter": {
-          "reference": "Encounter/mii-exa-test-data-patient-1-encounter-1"
-        },
         "effectiveDateTime": "2024-02-15T14:30:00+01:00"
       }
     },
@@ -1775,9 +1715,6 @@
         "status": "final",
         "subject": {
           "reference": "Patient/mii-exa-test-data-patient-1"
-        },
-        "encounter": {
-          "reference": "Encounter/mii-exa-test-data-patient-1-encounter-1"
         },
         "effectiveDateTime": "2024-02-15T14:30:00+01:00"
       }
@@ -1840,9 +1777,6 @@
         "subject": {
           "reference": "Patient/mii-exa-test-data-patient-1"
         },
-        "encounter": {
-          "reference": "Encounter/mii-exa-test-data-patient-1-encounter-1"
-        },
         "effectiveDateTime": "2024-02-15T14:30:00+01:00"
       }
     },
@@ -1903,9 +1837,6 @@
         "status": "final",
         "subject": {
           "reference": "Patient/mii-exa-test-data-patient-1"
-        },
-        "encounter": {
-          "reference": "Encounter/mii-exa-test-data-patient-1-encounter-1"
         },
         "effectiveDateTime": "2024-02-15T14:30:00+01:00"
       }
@@ -1968,9 +1899,6 @@
         "subject": {
           "reference": "Patient/mii-exa-test-data-patient-1"
         },
-        "encounter": {
-          "reference": "Encounter/mii-exa-test-data-patient-1-encounter-1"
-        },
         "effectiveDateTime": "2024-02-15T14:30:00+01:00"
       }
     },
@@ -2019,9 +1947,6 @@
         "status": "final",
         "subject": {
           "reference": "Patient/mii-exa-test-data-patient-1"
-        },
-        "encounter": {
-          "reference": "Encounter/mii-exa-test-data-patient-1-encounter-1"
         },
         "effectiveDateTime": "2024-02-15T14:30:00+01:00"
       }
@@ -2084,9 +2009,6 @@
         "subject": {
           "reference": "Patient/mii-exa-test-data-patient-1"
         },
-        "encounter": {
-          "reference": "Encounter/mii-exa-test-data-patient-1-encounter-1"
-        },
         "effectiveDateTime": "2024-02-15T14:30:00+01:00"
       }
     },
@@ -2146,9 +2068,6 @@
         "status": "final",
         "subject": {
           "reference": "Patient/mii-exa-test-data-patient-1"
-        },
-        "encounter": {
-          "reference": "Encounter/mii-exa-test-data-patient-1-encounter-1"
         },
         "effectiveDateTime": "2024-02-15T14:30:00+01:00"
       }
@@ -2211,9 +2130,6 @@
         "subject": {
           "reference": "Patient/mii-exa-test-data-patient-1"
         },
-        "encounter": {
-          "reference": "Encounter/mii-exa-test-data-patient-1-encounter-1"
-        },
         "effectiveDateTime": "2024-02-15T14:30:00+01:00"
       }
     },
@@ -2275,9 +2191,6 @@
         "subject": {
           "reference": "Patient/mii-exa-test-data-patient-1"
         },
-        "encounter": {
-          "reference": "Encounter/mii-exa-test-data-patient-1-encounter-1"
-        },
         "effectiveDateTime": "2024-02-15T14:30:00+01:00"
       }
     },
@@ -2326,9 +2239,6 @@
         "status": "final",
         "subject": {
           "reference": "Patient/mii-exa-test-data-patient-1"
-        },
-        "encounter": {
-          "reference": "Encounter/mii-exa-test-data-patient-1-encounter-1"
         },
         "effectiveDateTime": "2024-02-15T14:30:00+01:00"
       }
@@ -2400,9 +2310,6 @@
         "status": "final",
         "subject": {
           "reference": "Patient/mii-exa-test-data-patient-1"
-        },
-        "encounter": {
-          "reference": "Encounter/mii-exa-test-data-patient-1-encounter-1"
         },
         "effectiveDateTime": "2024-02-15T14:30:00+01:00"
       }
@@ -2513,9 +2420,6 @@
         "subject": {
           "reference": "Patient/mii-exa-test-data-patient-1"
         },
-        "encounter": {
-          "reference": "Encounter/mii-exa-test-data-patient-1-encounter-1"
-        },
         "effectiveDateTime": "2024-02-15T14:30:00+01:00"
       }
     },
@@ -2574,9 +2478,6 @@
         "status": "final",
         "subject": {
           "reference": "Patient/mii-exa-test-data-patient-1"
-        },
-        "encounter": {
-          "reference": "Encounter/mii-exa-test-data-patient-1-encounter-1"
         },
         "effectiveDateTime": "2024-02-15T14:30:00+01:00"
       }
@@ -2642,9 +2543,6 @@
         "subject": {
           "reference": "Patient/mii-exa-test-data-patient-1"
         },
-        "encounter": {
-          "reference": "Encounter/mii-exa-test-data-patient-1-encounter-1"
-        },
         "effectiveDateTime": "2024-02-15T14:30:00+01:00"
       }
     },
@@ -2708,9 +2606,6 @@
         "status": "final",
         "subject": {
           "reference": "Patient/mii-exa-test-data-patient-1"
-        },
-        "encounter": {
-          "reference": "Encounter/mii-exa-test-data-patient-1-encounter-1"
         },
         "effectiveDateTime": "2024-02-15T14:30:00+01:00"
       }
@@ -2776,9 +2671,6 @@
         "subject": {
           "reference": "Patient/mii-exa-test-data-patient-1"
         },
-        "encounter": {
-          "reference": "Encounter/mii-exa-test-data-patient-1-encounter-1"
-        },
         "effectiveDateTime": "2024-02-15T14:30:00+01:00"
       }
     },
@@ -2837,9 +2729,6 @@
         "status": "final",
         "subject": {
           "reference": "Patient/mii-exa-test-data-patient-1"
-        },
-        "encounter": {
-          "reference": "Encounter/mii-exa-test-data-patient-1-encounter-1"
         },
         "effectiveDateTime": "2024-02-15T14:30:00+01:00"
       }
@@ -2900,9 +2789,6 @@
         "status": "final",
         "subject": {
           "reference": "Patient/mii-exa-test-data-patient-1"
-        },
-        "encounter": {
-          "reference": "Encounter/mii-exa-test-data-patient-1-encounter-1"
         },
         "effectiveDateTime": "2024-02-15T14:30:00+01:00",
         "valueQuantity": {
@@ -2970,9 +2856,6 @@
         "subject": {
           "reference": "Patient/mii-exa-test-data-patient-1"
         },
-        "encounter": {
-          "reference": "Encounter/mii-exa-test-data-patient-1-encounter-1"
-        },
         "effectiveDateTime": "2024-02-15T14:30:00+01:00"
       }
     },
@@ -3032,9 +2915,6 @@
         "status": "final",
         "subject": {
           "reference": "Patient/mii-exa-test-data-patient-1"
-        },
-        "encounter": {
-          "reference": "Encounter/mii-exa-test-data-patient-1-encounter-1"
         },
         "effectiveDateTime": "2024-02-15T14:30:00+01:00"
       }
@@ -3107,9 +2987,6 @@
         "subject": {
           "reference": "Patient/mii-exa-test-data-patient-1"
         },
-        "encounter": {
-          "reference": "Encounter/mii-exa-test-data-patient-1-encounter-1"
-        },
         "effectiveDateTime": "2024-02-15T14:30:00+01:00"
       }
     },
@@ -3180,9 +3057,6 @@
         "status": "final",
         "subject": {
           "reference": "Patient/mii-exa-test-data-patient-1"
-        },
-        "encounter": {
-          "reference": "Encounter/mii-exa-test-data-patient-1-encounter-1"
         },
         "effectiveDateTime": "2024-02-15T14:30:00+01:00"
       }
@@ -3255,9 +3129,6 @@
         "subject": {
           "reference": "Patient/mii-exa-test-data-patient-1"
         },
-        "encounter": {
-          "reference": "Encounter/mii-exa-test-data-patient-1-encounter-1"
-        },
         "effectiveDateTime": "2024-02-15T14:30:00+01:00"
       }
     },
@@ -3322,9 +3193,6 @@
         "status": "final",
         "subject": {
           "reference": "Patient/mii-exa-test-data-patient-1"
-        },
-        "encounter": {
-          "reference": "Encounter/mii-exa-test-data-patient-1-encounter-1"
         },
         "effectiveDateTime": "2024-02-15T14:30:00+01:00"
       }
@@ -3391,9 +3259,6 @@
         "subject": {
           "reference": "Patient/mii-exa-test-data-patient-1"
         },
-        "encounter": {
-          "reference": "Encounter/mii-exa-test-data-patient-1-encounter-1"
-        },
         "effectiveDateTime": "2024-02-15T14:30:00+01:00"
       }
     },
@@ -3453,9 +3318,6 @@
         "status": "final",
         "subject": {
           "reference": "Patient/mii-exa-test-data-patient-1"
-        },
-        "encounter": {
-          "reference": "Encounter/mii-exa-test-data-patient-1-encounter-1"
         },
         "effectiveDateTime": "2024-02-15T14:30:00+01:00"
       }
@@ -3522,9 +3384,6 @@
         "status": "final",
         "subject": {
           "reference": "Patient/mii-exa-test-data-patient-1"
-        },
-        "encounter": {
-          "reference": "Encounter/mii-exa-test-data-patient-1-encounter-1"
         },
         "effectiveDateTime": "2024-02-15T14:30:00+01:00"
       }
@@ -3597,9 +3456,6 @@
         "subject": {
           "reference": "Patient/mii-exa-test-data-patient-1"
         },
-        "encounter": {
-          "reference": "Encounter/mii-exa-test-data-patient-1-encounter-1"
-        },
         "effectiveDateTime": "2024-02-15T14:30:00+01:00"
       }
     },
@@ -3671,9 +3527,6 @@
         "subject": {
           "reference": "Patient/mii-exa-test-data-patient-1"
         },
-        "encounter": {
-          "reference": "Encounter/mii-exa-test-data-patient-1-encounter-1"
-        },
         "effectiveDateTime": "2024-02-15T14:30:00+01:00"
       }
     },
@@ -3739,9 +3592,6 @@
         "subject": {
           "reference": "Patient/mii-exa-test-data-patient-1"
         },
-        "encounter": {
-          "reference": "Encounter/mii-exa-test-data-patient-1-encounter-1"
-        },
         "effectiveDateTime": "2024-02-15T14:30:00+01:00"
       }
     },
@@ -3805,9 +3655,6 @@
         "subject": {
           "reference": "Patient/mii-exa-test-data-patient-1"
         },
-        "encounter": {
-          "reference": "Encounter/mii-exa-test-data-patient-1-encounter-1"
-        },
         "effectiveDateTime": "2024-02-15T14:30:00+01:00"
       }
     },
@@ -3867,9 +3714,6 @@
         "status": "final",
         "subject": {
           "reference": "Patient/mii-exa-test-data-patient-1"
-        },
-        "encounter": {
-          "reference": "Encounter/mii-exa-test-data-patient-1-encounter-1"
         },
         "effectiveDateTime": "2024-02-15T14:30:00+01:00",
         "valueQuantity": {
@@ -3942,9 +3786,6 @@
         "subject": {
           "reference": "Patient/mii-exa-test-data-patient-1"
         },
-        "encounter": {
-          "reference": "Encounter/mii-exa-test-data-patient-1-encounter-1"
-        },
         "effectiveDateTime": "2024-02-15T14:30:00+01:00"
       }
     },
@@ -4015,9 +3856,6 @@
         "status": "final",
         "subject": {
           "reference": "Patient/mii-exa-test-data-patient-1"
-        },
-        "encounter": {
-          "reference": "Encounter/mii-exa-test-data-patient-1-encounter-1"
         },
         "effectiveDateTime": "2024-02-15T14:30:00+01:00"
       }
@@ -4090,9 +3928,6 @@
         "subject": {
           "reference": "Patient/mii-exa-test-data-patient-1"
         },
-        "encounter": {
-          "reference": "Encounter/mii-exa-test-data-patient-1-encounter-1"
-        },
         "effectiveDateTime": "2024-02-15T14:30:00+01:00"
       }
     },
@@ -4163,9 +3998,6 @@
         "status": "final",
         "subject": {
           "reference": "Patient/mii-exa-test-data-patient-1"
-        },
-        "encounter": {
-          "reference": "Encounter/mii-exa-test-data-patient-1-encounter-1"
         },
         "effectiveDateTime": "2024-02-15T14:30:00+01:00"
       }
@@ -4238,9 +4070,6 @@
         "subject": {
           "reference": "Patient/mii-exa-test-data-patient-1"
         },
-        "encounter": {
-          "reference": "Encounter/mii-exa-test-data-patient-1-encounter-1"
-        },
         "effectiveDateTime": "2024-02-15T14:30:00+01:00"
       }
     },
@@ -4304,9 +4133,6 @@
         "status": "final",
         "subject": {
           "reference": "Patient/mii-exa-test-data-patient-1"
-        },
-        "encounter": {
-          "reference": "Encounter/mii-exa-test-data-patient-1-encounter-1"
         },
         "effectiveDateTime": "2024-02-15T14:30:00+01:00"
       }
@@ -4379,9 +4205,6 @@
         "subject": {
           "reference": "Patient/mii-exa-test-data-patient-1"
         },
-        "encounter": {
-          "reference": "Encounter/mii-exa-test-data-patient-1-encounter-1"
-        },
         "effectiveDateTime": "2024-02-15T14:30:00+01:00"
       }
     },
@@ -4448,9 +4271,6 @@
         "subject": {
           "reference": "Patient/mii-exa-test-data-patient-1"
         },
-        "encounter": {
-          "reference": "Encounter/mii-exa-test-data-patient-1-encounter-1"
-        },
         "effectiveDateTime": "2024-02-15T14:30:00+01:00"
       }
     },
@@ -4511,9 +4331,6 @@
         "subject": {
           "reference": "Patient/mii-exa-test-data-patient-1"
         },
-        "encounter": {
-          "reference": "Encounter/mii-exa-test-data-patient-1-encounter-1"
-        },
         "effectiveDateTime": "2024-02-15T14:30:00+01:00"
       }
     },
@@ -4573,9 +4390,6 @@
         "status": "final",
         "subject": {
           "reference": "Patient/mii-exa-test-data-patient-1"
-        },
-        "encounter": {
-          "reference": "Encounter/mii-exa-test-data-patient-1-encounter-1"
         },
         "effectiveDateTime": "2024-02-15T14:30:00+01:00"
       }
@@ -4648,9 +4462,6 @@
         "subject": {
           "reference": "Patient/mii-exa-test-data-patient-1"
         },
-        "encounter": {
-          "reference": "Encounter/mii-exa-test-data-patient-1-encounter-1"
-        },
         "effectiveDateTime": "2024-02-15T14:30:00+01:00"
       }
     },
@@ -4722,9 +4533,6 @@
         "subject": {
           "reference": "Patient/mii-exa-test-data-patient-1"
         },
-        "encounter": {
-          "reference": "Encounter/mii-exa-test-data-patient-1-encounter-1"
-        },
         "effectiveDateTime": "2024-02-15T14:30:00+01:00"
       }
     },
@@ -4789,9 +4597,6 @@
         "status": "final",
         "subject": {
           "reference": "Patient/mii-exa-test-data-patient-1"
-        },
-        "encounter": {
-          "reference": "Encounter/mii-exa-test-data-patient-1-encounter-1"
         },
         "effectiveDateTime": "2024-02-15T14:30:00+01:00"
       }
