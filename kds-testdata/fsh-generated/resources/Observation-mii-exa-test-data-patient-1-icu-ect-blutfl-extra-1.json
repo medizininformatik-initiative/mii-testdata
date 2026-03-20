@@ -1,0 +1,42 @@
+{
+  "resourceType": "Observation",
+  "id": "mii-exa-test-data-patient-1-icu-ect-blutfl-extra-1",
+  "meta": {
+    "security": [
+      {
+        "code": "HTEST",
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "display": "test health data"
+      }
+    ],
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-blutfluss-extrakorporaler-gasaustausch"
+    ]
+  },
+  "partOf": [
+    {
+      "reference": "Procedure/mii-exa-test-data-patient-1-icu-ect-extrakorp-1"
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "251288004",
+        "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+        "display": "Extracorporeal gas exchange flow rate"
+      }
+    ]
+  },
+  "valueQuantity": {
+    "system": "http://unitsofmeasure.org",
+    "code": "L/min",
+    "value": 3,
+    "unit": "L/min"
+  },
+  "status": "final",
+  "subject": {
+    "reference": "Patient/mii-exa-test-data-patient-1"
+  },
+  "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+}

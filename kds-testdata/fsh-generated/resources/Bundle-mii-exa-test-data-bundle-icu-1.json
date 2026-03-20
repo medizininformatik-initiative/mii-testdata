@@ -1,0 +1,4831 @@
+{
+  "resourceType": "Bundle",
+  "id": "mii-exa-test-data-bundle-icu-1",
+  "meta": {
+    "security": [
+      {
+        "code": "HTEST",
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "display": "test health data"
+      }
+    ]
+  },
+  "entry": [
+    {
+      "request": {
+        "method": "POST",
+        "url": "Patient"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Patient/mii-exa-test-data-patient-1",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "mii-exa-test-data-patient-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient",
+            "http://fhir.de/ConsentManagement/StructureDefinition/Patient"
+          ]
+        },
+        "identifier": [
+          {
+            "assigner": {
+              "identifier": {
+                "use": "official",
+                "value": "987654321",
+                "system": "http://fhir.de/sid/arge-ik/iknr"
+              }
+            },
+            "use": "official",
+            "type": {
+              "coding": [
+                {
+                  "code": "KVZ10",
+                  "system": "http://fhir.de/CodeSystem/identifier-type-de-basis"
+                }
+              ]
+            },
+            "system": "http://fhir.de/sid/gkv/kvid-10",
+            "value": "A123456780"
+          },
+          {
+            "assigner": {
+              "identifier": {
+                "type": {
+                  "coding": [
+                    {
+                      "code": "XX",
+                      "system": "http://terminology.hl7.org/CodeSystem/v2-0203"
+                    }
+                  ]
+                },
+                "system": "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier",
+                "value": "Charité"
+              }
+            },
+            "type": {
+              "coding": [
+                {
+                  "code": "MR",
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203"
+                }
+              ]
+            },
+            "system": "https://www.charite.de/fhir/sid/patientenidentifikation",
+            "value": "808439625"
+          }
+        ],
+        "name": [
+          {
+            "given": [
+              "Christian",
+              "Ludwig"
+            ],
+            "prefix": [
+              "Prinz von Preußen"
+            ],
+            "_prefix": [
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier",
+                    "valueCode": "NB"
+                  }
+                ]
+              }
+            ],
+            "suffix": [
+              "aus dem Haus der Hohenzollern"
+            ],
+            "use": "official",
+            "family": "Markgraf von Brandenburg-Schwedt",
+            "_family": {
+              "extension": [
+                {
+                  "url": "http://fhir.de/StructureDefinition/humanname-namenszusatz",
+                  "valueString": "Markgraf"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/humanname-own-name",
+                  "valueString": "Brandenburg-Schwedt"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/humanname-own-prefix",
+                  "valueString": "von"
+                }
+              ]
+            }
+          }
+        ],
+        "address": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-precinct",
+                "valueString": "Malchow"
+              }
+            ],
+            "line": [
+              "Dorfstraße 9",
+              "Schloss",
+              "Malchow"
+            ],
+            "_line": [
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName",
+                    "valueString": "Dorfstraße"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber",
+                    "valueString": "9"
+                  }
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator",
+                    "valueString": "Schloss"
+                  }
+                ]
+              },
+              null
+            ],
+            "type": "both",
+            "city": "Berlin",
+            "_city": {
+              "extension": [
+                {
+                  "url": "http://fhir.de/StructureDefinition/destatis/ags",
+                  "valueCoding": {
+                    "code": "11000000",
+                    "system": "http://fhir.de/sid/destatis/ags"
+                  }
+                }
+              ]
+            },
+            "postalCode": "13051",
+            "country": "DE"
+          }
+        ],
+        "gender": "male",
+        "birthDate": "1977-05-24",
+        "deceasedDateTime": "2024-02-22"
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Encounter"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Encounter/mii-exa-test-data-patient-1-encounter-1",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "mii-exa-test-data-patient-1-encounter-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung"
+          ]
+        },
+        "identifier": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "code": "VN"
+                }
+              ]
+            },
+            "system": "https://www.charite.de/fhir/NamingSystem/Aufnahmenummern",
+            "value": "MII_0000001"
+          }
+        ],
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://fhir.de/CodeSystem/Kontaktebene",
+                "code": "einrichtungskontakt"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "http://fhir.de/CodeSystem/kontaktart-de",
+                "code": "normalstationaer"
+              }
+            ]
+          }
+        ],
+        "serviceType": {
+          "coding": [
+            {
+              "system": "http://fhir.de/CodeSystem/dkgev/Fachabteilungsschluessel",
+              "code": "0100"
+            }
+          ]
+        },
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "ErsteUndZweiteStelle",
+                "valueCoding": {
+                  "code": "01",
+                  "system": "http://fhir.de/CodeSystem/dkgev/AufnahmegrundErsteUndZweiteStelle",
+                  "display": "Krankenhausbehandlung, vollstationär"
+                }
+              },
+              {
+                "url": "DritteStelle",
+                "valueCoding": {
+                  "code": "0",
+                  "system": "http://fhir.de/CodeSystem/dkgev/AufnahmegrundDritteStelle",
+                  "display": "Anderes"
+                }
+              },
+              {
+                "url": "VierteStelle",
+                "valueCoding": {
+                  "code": "1",
+                  "system": "http://fhir.de/CodeSystem/dkgev/AufnahmegrundVierteStelle",
+                  "display": "Normalfall"
+                }
+              }
+            ],
+            "url": "http://fhir.de/StructureDefinition/Aufnahmegrund"
+          }
+        ],
+        "period": {
+          "start": "2024-02-14",
+          "end": "2024-02-22"
+        },
+        "diagnosis": [
+          {
+            "condition": {
+              "reference": "Condition/mii-exa-test-data-patient-1-diagnose-1"
+            },
+            "use": {
+              "coding": [
+                {
+                  "code": "AD",
+                  "system": "http://terminology.hl7.org/CodeSystem/diagnosis-role",
+                  "display": "Admission diagnosis"
+                }
+              ]
+            },
+            "rank": 1
+          },
+          {
+            "condition": {
+              "reference": "Condition/mii-exa-test-data-patient-1-todesursache-1"
+            },
+            "use": {
+              "coding": [
+                {
+                  "code": "DD",
+                  "system": "http://terminology.hl7.org/CodeSystem/diagnosis-role",
+                  "display": "Discharge diagnosis"
+                }
+              ]
+            },
+            "rank": 2
+          }
+        ],
+        "hospitalization": {
+          "dischargeDisposition": {
+            "extension": [
+              {
+                "extension": [
+                  {
+                    "url": "ErsteUndZweiteStelle",
+                    "valueCoding": {
+                      "code": "07",
+                      "system": "http://fhir.de/CodeSystem/dkgev/EntlassungsgrundErsteUndZweiteStelle",
+                      "display": "Tod"
+                    }
+                  },
+                  {
+                    "url": "DritteStelle",
+                    "valueCoding": {
+                      "code": "9",
+                      "system": "http://fhir.de/CodeSystem/dkgev/EntlassungsgrundDritteStelle",
+                      "display": "keine Angabe"
+                    }
+                  }
+                ],
+                "url": "http://fhir.de/StructureDefinition/Entlassungsgrund"
+              }
+            ]
+          },
+          "admitSource": {
+            "coding": [
+              {
+                "code": "E",
+                "system": "http://fhir.de/CodeSystem/dgkev/Aufnahmeanlass",
+                "display": "Einweisung durch einen Arzt"
+              }
+            ]
+          }
+        },
+        "location": [
+          {
+            "location": {
+              "identifier": {
+                "system": "https://www.charite.de/fhir/sid/Zimmernummern",
+                "value": "RHC-06-210b"
+              },
+              "display": "RHC-06-210b"
+            },
+            "status": "active",
+            "physicalType": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/location-physical-type",
+                  "code": "ro"
+                }
+              ]
+            }
+          },
+          {
+            "location": {
+              "identifier": {
+                "system": "https://www.charite.de/fhir/sid/Bettennummern",
+                "value": "RHC-06-210b-02"
+              },
+              "display": "RHC-06-210b-02"
+            },
+            "status": "active",
+            "physicalType": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/location-physical-type",
+                  "code": "bd"
+                }
+              ]
+            }
+          },
+          {
+            "location": {
+              "identifier": {
+                "system": "https://www.charite.de/fhir/sid/Stationsnummern",
+                "value": "RHC-06"
+              },
+              "display": "RHC-06"
+            },
+            "status": "active",
+            "physicalType": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/location-physical-type",
+                  "code": "wa"
+                }
+              ]
+            }
+          }
+        ],
+        "serviceProvider": {
+          "identifier": {
+            "system": "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier",
+            "value": "Charité"
+          },
+          "reference": "Organization/mii-exa-test-data-organization-charite",
+          "display": "Charité - Universitätsmedizin Berlin"
+        },
+        "status": "finished",
+        "class": {
+          "code": "IMP",
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode"
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-1"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-1-icu-bilanz-haemofiltr-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-1-icu-bilanz-haemofiltr-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-haemofiltration-einzelmesswerte"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "exam",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              },
+              {
+                "code": "364396009",
+                "system": "http://snomed.info/sct",
+                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+                "display": "Fluid balance observable (observable entity)"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "251850009",
+              "display": "Ultrafiltrate fluid loss (observable entity)",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+            },
+            {
+              "system": "http://loinc.org",
+              "code": "99741-1",
+              "display": "Ultrafiltrate volume removed"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "unit": "ml",
+          "value": 120,
+          "code": "ml",
+          "system": "http://unitsofmeasure.org"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-1"
+        },
+        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-1-icu-bilanz-drainage-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-1-icu-bilanz-drainage-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-drainage-generisch"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "exam",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              },
+              {
+                "code": "364396009",
+                "system": "http://snomed.info/sct",
+                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+                "display": "Fluid balance observable (observable entity)"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "251843005",
+              "display": "Fluid output from drain",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+            },
+            {
+              "system": "urn:iso:std:iso:11073:10101",
+              "code": "26668"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "unit": "ml",
+          "value": 50,
+          "code": "ml",
+          "system": "http://unitsofmeasure.org"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-1"
+        },
+        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-1-icu-bilanz-ausf-fluess-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-1-icu-bilanz-ausf-fluess-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-fluessigkeit-gesamt"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "exam",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              },
+              {
+                "code": "364396009",
+                "system": "http://snomed.info/sct",
+                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+                "display": "Fluid balance observable (observable entity)"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "251847006",
+              "display": "Total fluid loss",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+            },
+            {
+              "system": "http://loinc.org",
+              "code": "9257-7",
+              "display": "Fluid output total Measured"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "unit": "ml",
+          "value": 2200,
+          "code": "ml",
+          "system": "http://unitsofmeasure.org"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-1"
+        },
+        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-1-icu-bilanz-ausf-galle-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-1-icu-bilanz-ausf-galle-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-gallenfluessigkeit"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "exam",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              },
+              {
+                "code": "364396009",
+                "system": "http://snomed.info/sct",
+                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+                "display": "Fluid balance observable (observable entity)"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "1162667009",
+              "display": "Volume of drainage of bile duct (observable entity)",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+            },
+            {
+              "system": "http://loinc.org",
+              "code": "9113-2",
+              "display": "Fluid output biliary drain"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "unit": "ml",
+          "value": 30,
+          "code": "ml",
+          "system": "http://unitsofmeasure.org"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-1"
+        },
+        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-1-icu-bilanz-ausf-gallengang-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-1-icu-bilanz-ausf-gallengang-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-gallenfluessigkeit"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "exam",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              },
+              {
+                "code": "364396009",
+                "system": "http://snomed.info/sct",
+                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+                "display": "Fluid balance observable (observable entity)"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "1162667009",
+              "display": "Volume of drainage of bile duct (observable entity)",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+            },
+            {
+              "system": "http://loinc.org",
+              "code": "9113-2",
+              "display": "Fluid output biliary drain"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "unit": "ml",
+          "value": 25,
+          "code": "ml",
+          "system": "http://unitsofmeasure.org"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-1"
+        },
+        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-1-icu-bilanz-ausf-magen-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-1-icu-bilanz-ausf-magen-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-magensonde"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "exam",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              },
+              {
+                "code": "364396009",
+                "system": "http://snomed.info/sct",
+                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+                "display": "Fluid balance observable (observable entity)"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "1162665001",
+              "display": "Volume of drainage of gastric contents (observable entity)",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+            },
+            {
+              "system": "http://loinc.org",
+              "code": "79561-7",
+              "display": "Fluid output enteral tube [Volume] Measured"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "unit": "ml",
+          "value": 100,
+          "code": "ml",
+          "system": "http://unitsofmeasure.org"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-1"
+        },
+        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-1-icu-bilanz-ausf-opdrain-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-1-icu-bilanz-ausf-opdrain-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-op-drainage"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "exam",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              },
+              {
+                "code": "364396009",
+                "system": "http://snomed.info/sct",
+                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+                "display": "Fluid balance observable (observable entity)"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "251844004",
+              "display": "Fluid output from surgical drain (observable entity)",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "unit": "ml",
+          "value": 75,
+          "code": "ml",
+          "system": "http://unitsofmeasure.org"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-1"
+        },
+        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-1-icu-bilanz-ausf-pankreas-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-1-icu-bilanz-ausf-pankreas-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-pankreasdrainage"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "exam",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              },
+              {
+                "code": "364396009",
+                "system": "http://snomed.info/sct",
+                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+                "display": "Fluid balance observable (observable entity)"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "1162668004",
+              "display": "Volume of drainage of pancreatic fluid (observable entity)",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "unit": "ml",
+          "value": 20,
+          "code": "ml",
+          "system": "http://unitsofmeasure.org"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-1"
+        },
+        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-1-icu-bilanz-ausf-stuhl-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-1-icu-bilanz-ausf-stuhl-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-stuhlgang"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "exam",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              },
+              {
+                "code": "364396009",
+                "system": "http://snomed.info/sct",
+                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+                "display": "Fluid balance observable (observable entity)"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "9217-1",
+              "display": "Output.stool [Volume]"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "unit": "ml",
+          "value": 200,
+          "code": "ml",
+          "system": "http://unitsofmeasure.org"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-1"
+        },
+        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-1-icu-bilanz-ausf-urin-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-1-icu-bilanz-ausf-urin-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-urin"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "exam",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              },
+              {
+                "code": "364396009",
+                "system": "http://snomed.info/sct",
+                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+                "display": "Fluid balance observable (observable entity)"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "364201005",
+              "display": "Urine output observable (observable entity)",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+            },
+            {
+              "system": "http://loinc.org",
+              "code": "9187-6",
+              "display": "Urine output"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "unit": "ml",
+          "value": 1800,
+          "code": "ml",
+          "system": "http://unitsofmeasure.org"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-1"
+        },
+        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-1-icu-bilanz-ausf-wunde-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-1-icu-bilanz-ausf-wunde-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-wunddrainage"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "exam",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              },
+              {
+                "code": "364396009",
+                "system": "http://snomed.info/sct",
+                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+                "display": "Fluid balance observable (observable entity)"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "251845003",
+              "display": "Fluid output from wound drain (observable entity)",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+            },
+            {
+              "system": "http://loinc.org",
+              "code": "9203-1",
+              "display": "Fluid output wound drain"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "unit": "ml",
+          "value": 45,
+          "code": "ml",
+          "system": "http://unitsofmeasure.org"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-1"
+        },
+        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-1-icu-bilanz-blutverlust-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-1-icu-bilanz-blutverlust-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-blutverlust"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "exam",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              },
+              {
+                "code": "364396009",
+                "system": "http://snomed.info/sct",
+                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+                "display": "Fluid balance observable (observable entity)"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "250771004",
+              "display": "Actual blood loss",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+            },
+            {
+              "system": "http://loinc.org",
+              "code": "81661-1",
+              "display": "Blood loss [Volume] Measured"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "unit": "ml",
+          "value": 150,
+          "code": "ml",
+          "system": "http://unitsofmeasure.org"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-1"
+        },
+        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-1-icu-bilanz-einf-enteral-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-1-icu-bilanz-einf-enteral-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-einfuhr-enterale-fluessigkeit"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "exam",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              },
+              {
+                "code": "364396009",
+                "system": "http://snomed.info/sct",
+                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+                "display": "Fluid balance observable (observable entity)"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "251854000",
+              "display": "Enteral fluid input (observable entity)",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+            },
+            {
+              "system": "http://loinc.org",
+              "code": "8953-2",
+              "display": "Fluid intake enteral tube Measured"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "unit": "ml",
+          "value": 1500,
+          "code": "ml",
+          "system": "http://unitsofmeasure.org"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-1"
+        },
+        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-1-icu-bilanz-einf-fluess-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-1-icu-bilanz-einf-fluess-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-einfuhr-fluessigkeit-gesamt"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "exam",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              },
+              {
+                "code": "364396009",
+                "system": "http://snomed.info/sct",
+                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+                "display": "Fluid balance observable (observable entity)"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "251852001",
+              "display": "Total fluid input (observable entity)",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+            },
+            {
+              "system": "http://loinc.org",
+              "code": "9103-3",
+              "display": "Fluid intake total Measured"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "unit": "ml",
+          "value": 2500,
+          "code": "ml",
+          "system": "http://unitsofmeasure.org"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-1"
+        },
+        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-1-icu-bilanz-einf-oral-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-1-icu-bilanz-einf-oral-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-einfuhr-fluessigkeit-gesamt"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "exam",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              },
+              {
+                "code": "364396009",
+                "system": "http://snomed.info/sct",
+                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+                "display": "Fluid balance observable (observable entity)"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "251852001",
+              "display": "Total fluid input (observable entity)",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+            },
+            {
+              "system": "http://loinc.org",
+              "code": "9103-3",
+              "display": "Fluid intake total Measured"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "unit": "ml",
+          "value": 800,
+          "code": "ml",
+          "system": "http://unitsofmeasure.org"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-1"
+        },
+        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-1-icu-bilanz-ges-ausf-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-1-icu-bilanz-ges-ausf-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-fluessigkeit-gesamt"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "exam",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              },
+              {
+                "code": "364396009",
+                "system": "http://snomed.info/sct",
+                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+                "display": "Fluid balance observable (observable entity)"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "251847006",
+              "display": "Total fluid loss",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+            },
+            {
+              "system": "http://loinc.org",
+              "code": "9257-7",
+              "display": "Fluid output total Measured"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "unit": "ml",
+          "value": 2400,
+          "code": "ml",
+          "system": "http://unitsofmeasure.org"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-1"
+        },
+        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-1-icu-bilanz-ges-einf-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-1-icu-bilanz-ges-einf-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-einfuhr-fluessigkeit-gesamt"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "exam",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              },
+              {
+                "code": "364396009",
+                "system": "http://snomed.info/sct",
+                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+                "display": "Fluid balance observable (observable entity)"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "251852001",
+              "display": "Total fluid input (observable entity)",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+            },
+            {
+              "system": "http://loinc.org",
+              "code": "9103-3",
+              "display": "Fluid intake total Measured"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "unit": "ml",
+          "value": 2800,
+          "code": "ml",
+          "system": "http://unitsofmeasure.org"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-1"
+        },
+        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-1-icu-bilanz-tages-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-1-icu-bilanz-tages-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-tagesbilanz-fluessigkeit"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "exam",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              },
+              {
+                "code": "364396009",
+                "system": "http://snomed.info/sct",
+                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+                "display": "Fluid balance observable (observable entity)"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "251856003",
+              "display": "Fluid balance status (observable entity)",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+            },
+            {
+              "system": "http://loinc.org",
+              "code": "9097-7",
+              "display": "Fluid balance 24 hour"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "unit": "ml",
+          "value": 400,
+          "code": "ml",
+          "system": "http://unitsofmeasure.org"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-1"
+        },
+        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-1-icu-ect-art-druck-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-1-icu-ect-art-druck-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-arterieller-druck"
+          ]
+        },
+        "partOf": [
+          {
+            "reference": "Procedure/mii-exa-test-data-patient-1-icu-ect-extrakorp-1"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "386534000",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+              "display": "Arterial blood pressure"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]",
+          "value": 85,
+          "unit": "mmHg"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-1"
+        },
+        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-1-icu-ect-blutfl-cardio-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-1-icu-ect-blutfl-cardio-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-blutfluss-cardiovasculaeres-geraet"
+          ]
+        },
+        "partOf": [
+          {
+            "reference": "Procedure/mii-exa-test-data-patient-1-icu-ect-extrakorp-1"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "444479000",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+              "display": "Rate of blood flow through cardiovascular device"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "system": "http://unitsofmeasure.org",
+          "code": "L/min",
+          "value": 4.5,
+          "unit": "L/min"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-1"
+        },
+        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-1-icu-ect-blutfl-extra-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-1-icu-ect-blutfl-extra-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-blutfluss-extrakorporaler-gasaustausch"
+          ]
+        },
+        "partOf": [
+          {
+            "reference": "Procedure/mii-exa-test-data-patient-1-icu-ect-extrakorp-1"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "251288004",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+              "display": "Extracorporeal gas exchange flow rate"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "system": "http://unitsofmeasure.org",
+          "code": "L/min",
+          "value": 3,
+          "unit": "L/min"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-1"
+        },
+        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-1-icu-ect-blutfl-idx-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-1-icu-ect-blutfl-idx-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-blutflussindex-extrakorporaler-gasaustausch"
+          ]
+        },
+        "partOf": [
+          {
+            "reference": "Procedure/mii-exa-test-data-patient-1-icu-ect-extrakorp-1"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "182744004",
+                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+                "display": "Renal dialysis (procedure)"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "251289007",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+              "display": "Extracorporeal gas exchange flow index"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "system": "http://unitsofmeasure.org",
+          "code": "L/(min.m2)",
+          "value": 1.8,
+          "unit": "L/(min.m2)"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-1"
+        },
+        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-1-icu-ect-dauer-extra-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-1-icu-ect-dauer-extra-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-dauer-extrakorporaler-gasaustausch"
+          ]
+        },
+        "partOf": [
+          {
+            "reference": "Procedure/mii-exa-test-data-patient-1-icu-ect-extrakorp-1"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "182744004",
+                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+                "display": "Renal dialysis (procedure)"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "251286000",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+              "display": "Extracorporeal gas exchange duration"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "system": "http://unitsofmeasure.org",
+          "code": "h",
+          "value": 72,
+          "unit": "hours"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-1"
+        },
+        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-1-icu-ect-dauer-haemo-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-1-icu-ect-dauer-haemo-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-dauer-haemodialysesitzung"
+          ]
+        },
+        "partOf": [
+          {
+            "reference": "Procedure/mii-exa-test-data-patient-1-icu-ect-extrakorp-1"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "182744004",
+                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+                "display": "Renal dialysis (procedure)"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "445940005",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+              "display": "Duration of haemodialysis session"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "system": "http://unitsofmeasure.org",
+          "code": "h",
+          "value": 4,
+          "unit": "hours"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-1"
+        },
+        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-1-icu-ect-gasfluss-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-1-icu-ect-gasfluss-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-gasfluss"
+          ]
+        },
+        "partOf": [
+          {
+            "reference": "Procedure/mii-exa-test-data-patient-1-icu-ect-extrakorp-1"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "79063001",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+              "display": "Gas flow rate (v)"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "system": "http://unitsofmeasure.org",
+          "code": "L/min",
+          "value": 3,
+          "unit": "L/min"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-1"
+        },
+        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-1-icu-ect-haemo-blutfl-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-1-icu-ect-haemo-blutfl-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-haemodialyse-blutfluss"
+          ]
+        },
+        "partOf": [
+          {
+            "reference": "Procedure/mii-exa-test-data-patient-1-icu-ect-extrakorp-1"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "182744004",
+                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+                "display": "Renal dialysis (procedure)"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "401000124105",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+              "display": "Hemodialysis blood flow"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "system": "http://unitsofmeasure.org",
+          "code": "mL/min",
+          "value": 250,
+          "unit": "mL/min"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-1"
+        },
+        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-1-icu-ect-kalzium-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-1-icu-ect-kalzium-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-ionisiertes-kalzium-nierenersatzverfahren"
+          ]
+        },
+        "partOf": [
+          {
+            "reference": "Procedure/mii-exa-test-data-patient-1-icu-ect-extrakorp-1"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "182744004",
+                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+                "display": "Renal dialysis (procedure)"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "83064-6",
+              "display": "Calcium.ionized [Moles/volume] in Blood drawn from CRRT circuit"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "system": "http://unitsofmeasure.org",
+          "code": "mmol/L",
+          "value": 1.15,
+          "unit": "mmol/L"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-1"
+        },
+        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-1-icu-ect-substituatfl-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-1-icu-ect-substituatfl-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-substituatfluss"
+          ]
+        },
+        "partOf": [
+          {
+            "reference": "Procedure/mii-exa-test-data-patient-1-icu-ect-extrakorp-1"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "182744004",
+                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+                "display": "Renal dialysis (procedure)"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "708513005",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+              "display": "Substitution flow rate"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "system": "http://unitsofmeasure.org",
+          "code": "mL/h",
+          "value": 2000,
+          "unit": "mL/h"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-1"
+        },
+        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-1-icu-ect-substituatvol-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-1-icu-ect-substituatvol-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-substituatvolumen"
+          ]
+        },
+        "partOf": [
+          {
+            "reference": "Procedure/mii-exa-test-data-patient-1-icu-ect-extrakorp-1"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "182744004",
+                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+                "display": "Renal dialysis (procedure)"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "708514004",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+              "display": "Substitution volume"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "system": "http://unitsofmeasure.org",
+          "code": "L",
+          "value": 48,
+          "unit": "L"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-1"
+        },
+        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-1-icu-ect-ven-druck-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-1-icu-ect-ven-druck-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-venoeser-druck"
+          ]
+        },
+        "partOf": [
+          {
+            "reference": "Procedure/mii-exa-test-data-patient-1-icu-ect-extrakorp-1"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "252076005",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+              "display": "Venous pressure"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]",
+          "value": 15,
+          "unit": "mmHg"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-1"
+        },
+        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-1-icu-event-o2-partial-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-1-icu-event-o2-partial-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-exspiratorischer-sauerstoffpartialdruck"
+          ]
+        },
+        "partOf": [
+          {
+            "reference": "Procedure/mii-exa-test-data-patient-1-icu-vent-beatmung-1"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "40617009",
+                "system": "http://snomed.info/sct",
+                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+                "display": "Artificial ventilation (regime/therapy)"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "442720002",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+              "display": "Expired oxygen tension"
+            },
+            {
+              "system": "http://loinc.org",
+              "code": "3147-6",
+              "display": "Oxygen [Partial pressure] in Exhaled gas"
+            },
+            {
+              "system": "urn:iso:std:iso:11073:10101",
+              "code": "153132",
+              "display": "MDC_CONC_AWAY_O2_EXP"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]",
+          "value": 40,
+          "unit": "mmHg"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-1"
+        },
+        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-1-icu-muv-blutdruck-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-1-icu-muv-blutdruck-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-arterieller-blutdruck"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "85354-9",
+              "display": "Blood pressure panel with all children optional"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "75367002",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+              "display": "Blood pressure"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "364090009",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+              "display": "Systemic arterial pressure"
+            }
+          ]
+        },
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6"
+                },
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "271649006"
+                },
+                {
+                  "system": "urn:iso:std:iso:11073:10101",
+                  "code": "150017"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]",
+              "value": 120,
+              "unit": "mmHg"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4"
+                },
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "271650006"
+                },
+                {
+                  "system": "urn:iso:std:iso:11073:10101",
+                  "code": "150018"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]",
+              "value": 80,
+              "unit": "mmHg"
+            }
+          }
+        ],
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-1"
+        },
+        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-1-icu-muv-atemfreq-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-1-icu-muv-atemfreq-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-atemfrequenz"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "9279-1",
+              "display": "Respiratory rate"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "86290005",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+              "display": "Respiratory rate"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "system": "http://unitsofmeasure.org",
+          "unit": "breaths per minute",
+          "code": "/min",
+          "value": 14
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-1"
+        },
+        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-1-icu-muv-herzfreq-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-1-icu-muv-herzfreq-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-herzfrequenz"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "364075005",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+              "display": "Heart rate"
+            },
+            {
+              "system": "http://loinc.org",
+              "code": "8867-4",
+              "display": "Heart rate"
+            },
+            {
+              "system": "urn:iso:std:iso:11073:10101",
+              "code": "147842",
+              "display": "MDC_ECG_HEART_RATE"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "system": "http://unitsofmeasure.org",
+          "unit": "beats per minute",
+          "code": "/min",
+          "value": 72
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-1"
+        },
+        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-1-icu-muv-gewicht-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-1-icu-muv-gewicht-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-koerpergewicht"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "29463-7",
+              "display": "Body weight"
+            },
+            {
+              "system": "http://loinc.org",
+              "code": "8339-4",
+              "display": "Birth weight Measured"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "27113001",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+              "display": "Body weight"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "system": "http://unitsofmeasure.org",
+          "unit": "kilogram",
+          "code": "kg",
+          "value": 80
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-1"
+        },
+        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-1-icu-muv-groesse-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-1-icu-muv-groesse-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-koerpergroesse"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8302-2",
+              "display": "Body height"
+            },
+            {
+              "system": "http://loinc.org",
+              "code": "89269-5",
+              "display": "Body height Measured --at birth"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "1153637007",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+              "display": "Body height"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "unit": "centimeter",
+          "system": "http://unitsofmeasure.org",
+          "code": "cm",
+          "value": 175
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-1"
+        },
+        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-1-icu-muv-kopfumfang-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-1-icu-muv-kopfumfang-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-kopfumfang"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "9843-4",
+              "display": "Head Occipital-frontal circumference"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "363812007",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+              "display": "Head circumference"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "system": "http://unitsofmeasure.org",
+          "unit": "centimeter",
+          "code": "cm",
+          "value": 57
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-1"
+        },
+        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-1-icu-vent-fio2-eingest-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-1-icu-vent-fio2-eingest-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-inspiratorische-sauerstofffraktion-eingestellt"
+          ]
+        },
+        "partOf": [
+          {
+            "reference": "Procedure/mii-exa-test-data-patient-1-icu-vent-beatmung-1"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "40617009",
+                "system": "http://snomed.info/sct",
+                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+                "display": "Artificial ventilation (regime/therapy)"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "250774007",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+              "display": "Inspired oxygen concentration"
+            },
+            {
+              "system": "http://loinc.org",
+              "code": "19994-3",
+              "display": "Oxygen/Total gas setting [Volume Fraction] Ventilator"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-1"
+        },
+        "effectiveDateTime": "2024-02-15T14:30:00+01:00",
+        "valueQuantity": {
+          "value": 0.4,
+          "code": "%",
+          "system": "http://unitsofmeasure.org",
+          "unit": "percent"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-1-icu-vent-atemdr-null-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-1-icu-vent-atemdr-null-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-atemwegsdruck-bei-null-expiratorischem-gasfluss"
+          ]
+        },
+        "partOf": [
+          {
+            "reference": "Procedure/mii-exa-test-data-patient-1-icu-vent-beatmung-1"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "40617009",
+                "system": "http://snomed.info/sct",
+                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+                "display": "Artificial ventilation (regime/therapy)"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "20060-0",
+              "display": "Airway pressure --at zero inspiratory flow on ventilator"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "system": "http://unitsofmeasure.org",
+          "code": "cm[H2O]",
+          "value": 3,
+          "unit": "cmH2O"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-1"
+        },
+        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-1-icu-vent-atemdr-mitt-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-1-icu-vent-atemdr-mitt-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-atemwegsdruck-bei-mittlerem-expiratorischem-gasfluss"
+          ]
+        },
+        "partOf": [
+          {
+            "reference": "Procedure/mii-exa-test-data-patient-1-icu-vent-beatmung-1"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "40617009",
+                "system": "http://snomed.info/sct",
+                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+                "display": "Artificial ventilation (regime/therapy)"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "20056-8",
+              "display": "Airway pressure --at mean expiratory flow on ventilator"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "system": "http://unitsofmeasure.org",
+          "code": "cm[H2O]",
+          "value": 8,
+          "unit": "cmH2O"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-1"
+        },
+        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-1-icu-vent-vt-einst-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-1-icu-vent-vt-einst-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-atemzugvolumen-einstellung"
+          ]
+        },
+        "partOf": [
+          {
+            "reference": "Procedure/mii-exa-test-data-patient-1-icu-vent-beatmung-1"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "40617009",
+                "system": "http://snomed.info/sct",
+                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+                "display": "Artificial ventilation (regime/therapy)"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "416811008",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+              "display": "Tidal volume setting"
+            },
+            {
+              "system": "http://loinc.org",
+              "code": "20112-9",
+              "display": "Tidal volume setting Ventilator"
+            },
+            {
+              "system": "urn:iso:std:iso:11073:10101",
+              "code": "16929196",
+              "display": "MDC_VENT_VOL_TIDAL_SETTING"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "system": "http://unitsofmeasure.org",
+          "code": "mL",
+          "value": 500,
+          "unit": "mL"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-1"
+        },
+        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-1-icu-vent-vt-beat-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-1-icu-vent-vt-beat-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-atemzugvolumen-waehrend-beatmung"
+          ]
+        },
+        "partOf": [
+          {
+            "reference": "Procedure/mii-exa-test-data-patient-1-icu-vent-beatmung-1"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "40617009",
+                "system": "http://snomed.info/sct",
+                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+                "display": "Artificial ventilation (regime/therapy)"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "250874002",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+              "display": "Ventilator delivered tidal volume"
+            },
+            {
+              "system": "http://loinc.org",
+              "code": "76222-9",
+              "display": "Tidal volume Ventilator --on ventilator"
+            },
+            {
+              "system": "urn:iso:std:iso:11073:10101",
+              "code": "151980",
+              "display": "MDC_VENT_VOL_TIDAL"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "system": "http://unitsofmeasure.org",
+          "code": "mL",
+          "value": 480,
+          "unit": "mL"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-1"
+        },
+        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-1-icu-vent-mv-masch-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-1-icu-vent-mv-masch-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-beatmungsvolumen-pro-minute-maschineller-beatmung"
+          ]
+        },
+        "partOf": [
+          {
+            "reference": "Procedure/mii-exa-test-data-patient-1-icu-vent-beatmung-1"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "40617009",
+                "system": "http://snomed.info/sct",
+                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+                "display": "Artificial ventilation (regime/therapy)"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "250875001",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+              "display": "Ventilator delivered minute volume"
+            },
+            {
+              "system": "http://loinc.org",
+              "code": "76009-0",
+              "display": "Inspired minute Volume during Mechanical ventilation"
+            },
+            {
+              "system": "urn:iso:std:iso:11073:10101",
+              "code": "152004",
+              "display": "MDC_VENT_VOL_MINUTE_INSP"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "system": "http://unitsofmeasure.org",
+          "code": "L/min",
+          "value": 7.5,
+          "unit": "L/min"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-1"
+        },
+        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-1-icu-vent-zeit-hoch-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-1-icu-vent-zeit-hoch-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-beatmungszeit-hohem-druck"
+          ]
+        },
+        "partOf": [
+          {
+            "reference": "Procedure/mii-exa-test-data-patient-1-icu-vent-beatmung-1"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "40617009",
+                "system": "http://snomed.info/sct",
+                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+                "display": "Artificial ventilation (regime/therapy)"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "76190-8",
+              "display": "High pressure hold time setting Ventilator"
+            },
+            {
+              "system": "urn:iso:std:iso:11073:10101",
+              "code": "16929860",
+              "display": "MDC_VENT_TIME_PD_INSP_THIGH_SETTING"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "system": "http://unitsofmeasure.org",
+          "code": "s",
+          "value": 1,
+          "unit": "seconds"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-1"
+        },
+        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-1-icu-vent-zeit-niedrig-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-1-icu-vent-zeit-niedrig-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-beatmungszeit-niedrigem-druck"
+          ]
+        },
+        "partOf": [
+          {
+            "reference": "Procedure/mii-exa-test-data-patient-1-icu-vent-beatmung-1"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "40617009",
+                "system": "http://snomed.info/sct",
+                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+                "display": "Artificial ventilation (regime/therapy)"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "76229-4",
+              "display": "Low pressure hold time setting Ventilator"
+            },
+            {
+              "system": "urn:iso:std:iso:11073:10101",
+              "code": "16929864",
+              "display": "MDC_VENT_TIME_PD_EXP_TLOW_SETTING"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "system": "http://unitsofmeasure.org",
+          "code": "s",
+          "value": 0.8,
+          "unit": "seconds"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-1"
+        },
+        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-1-icu-vent-insp-flow-set-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-1-icu-vent-insp-flow-set-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-eingestellter-inspiratorischer-gasfluss"
+          ]
+        },
+        "partOf": [
+          {
+            "reference": "Procedure/mii-exa-test-data-patient-1-icu-vent-beatmung-1"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "40617009",
+                "system": "http://snomed.info/sct",
+                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+                "display": "Artificial ventilation (regime/therapy)"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "76275-7",
+              "display": "Inspiratory flow setting Ventilator"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "system": "http://unitsofmeasure.org",
+          "code": "L/min",
+          "value": 40,
+          "unit": "L/min"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-1"
+        },
+        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-1-icu-vent-te-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-1-icu-vent-te-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-einstellung-ausatmungszeit-beatmung"
+          ]
+        },
+        "partOf": [
+          {
+            "reference": "Procedure/mii-exa-test-data-patient-1-icu-vent-beatmung-1"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "40617009",
+                "system": "http://snomed.info/sct",
+                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+                "display": "Artificial ventilation (regime/therapy)"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "250820008",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+              "display": "Expiratory time"
+            },
+            {
+              "system": "http://loinc.org",
+              "code": "76187-4",
+              "display": "Expiratory hold time setting Ventilator"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "system": "http://unitsofmeasure.org",
+          "code": "s",
+          "value": 2,
+          "unit": "seconds"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-1"
+        },
+        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-1-icu-vent-ti-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-1-icu-vent-ti-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-einstellung-einatmungszeit-beatmung"
+          ]
+        },
+        "partOf": [
+          {
+            "reference": "Procedure/mii-exa-test-data-patient-1-icu-vent-beatmung-1"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "40617009",
+                "system": "http://snomed.info/sct",
+                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+                "display": "Artificial ventilation (regime/therapy)"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "250819002",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+              "display": "Inspiratory time"
+            },
+            {
+              "system": "http://loinc.org",
+              "code": "76334-2",
+              "display": "Inspiratory time setting Ventilator"
+            },
+            {
+              "system": "urn:iso:std:iso:11073:10101",
+              "code": "16929632",
+              "display": "MDC_VENT_TIME_PD_INSP_SETTING"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "system": "http://unitsofmeasure.org",
+          "code": "s",
+          "value": 1,
+          "unit": "seconds"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-1"
+        },
+        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-1-icu-vent-etco2-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-1-icu-vent-etco2-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-endexpiratorischer-kohlendioxidpartialdruck"
+          ]
+        },
+        "partOf": [
+          {
+            "reference": "Procedure/mii-exa-test-data-patient-1-icu-vent-beatmung-1"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "40617009",
+                "system": "http://snomed.info/sct",
+                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+                "display": "Artificial ventilation (regime/therapy)"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "250790007",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+              "display": "End tidal carbon dioxide tension"
+            },
+            {
+              "system": "http://loinc.org",
+              "code": "19891-1",
+              "display": "Carbon dioxide [Partial pressure] in Exhaled gas --at end expiration"
+            },
+            {
+              "system": "urn:iso:std:iso:11073:10101",
+              "code": "151708",
+              "display": "MDC_CONC_AWAY_CO2_ET"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]",
+          "value": 35,
+          "unit": "mmHg"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-1"
+        },
+        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-1-icu-vent-exp-flow-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-1-icu-vent-exp-flow-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-exspiratorischer-gasfluss"
+          ]
+        },
+        "partOf": [
+          {
+            "reference": "Procedure/mii-exa-test-data-patient-1-icu-vent-beatmung-1"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "40617009",
+                "system": "http://snomed.info/sct",
+                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+                "display": "Artificial ventilation (regime/therapy)"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "60792-9",
+              "display": "Expiratory gas flow Respiratory system airway --on ventilator"
+            },
+            {
+              "system": "urn:iso:std:iso:11073:10101",
+              "code": "151944",
+              "display": "MDC_VENT_FLOW_EXP"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "system": "http://unitsofmeasure.org",
+          "code": "L/min",
+          "value": 35,
+          "unit": "L/min"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-1"
+        },
+        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-1-icu-vent-horowitz-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-1-icu-vent-horowitz-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-horowitz-in-arteriellem-blut"
+          ]
+        },
+        "partOf": [
+          {
+            "reference": "Procedure/mii-exa-test-data-patient-1-icu-vent-beatmung-1"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "vital-signs",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "50984-4",
+              "display": "Horowitz index in Arterial blood"
+            },
+            {
+              "system": "urn:iso:std:iso:11073:10101",
+              "code": "150656",
+              "display": "MDC_O2_OXYGENATION_RATIO"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]",
+          "value": 350,
+          "unit": "mmHg"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-1"
+        },
+        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-1-icu-vent-fio2-gem-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-1-icu-vent-fio2-gem-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-inspiratorische-sauerstofffraktion-gemessen"
+          ]
+        },
+        "partOf": [
+          {
+            "reference": "Procedure/mii-exa-test-data-patient-1-icu-vent-beatmung-1"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "40617009",
+                "system": "http://snomed.info/sct",
+                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+                "display": "Artificial ventilation (regime/therapy)"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "250774007",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+              "display": "Inspired oxygen concentration"
+            },
+            {
+              "system": "http://loinc.org",
+              "code": "71835-3",
+              "display": "Oxygen/Gas total [Pure volume fraction] Inhaled gas"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-1"
+        },
+        "effectiveDateTime": "2024-02-15T14:30:00+01:00",
+        "valueQuantity": {
+          "value": 0.42,
+          "code": "%",
+          "system": "http://unitsofmeasure.org",
+          "unit": "percent"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-1-icu-vent-insp-flow-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-1-icu-vent-insp-flow-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-inspiratorischer-gasfluss"
+          ]
+        },
+        "partOf": [
+          {
+            "reference": "Procedure/mii-exa-test-data-patient-1-icu-vent-beatmung-1"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "40617009",
+                "system": "http://snomed.info/sct",
+                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+                "display": "Artificial ventilation (regime/therapy)"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "60794-5",
+              "display": "Inspiratory gas flow Respiratory system airway --on ventilator"
+            },
+            {
+              "system": "urn:iso:std:iso:11073:10101",
+              "code": "151948",
+              "display": "MDC_VENT_FLOW_INSP"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "system": "http://unitsofmeasure.org",
+          "code": "L/min",
+          "value": 40,
+          "unit": "L/min"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-1"
+        },
+        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-1-icu-vent-pip-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-1-icu-vent-pip-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-maximaler-beatmungsdruck"
+          ]
+        },
+        "partOf": [
+          {
+            "reference": "Procedure/mii-exa-test-data-patient-1-icu-vent-beatmung-1"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "40617009",
+                "system": "http://snomed.info/sct",
+                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+                "display": "Artificial ventilation (regime/therapy)"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "27913002",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+              "display": "Maximum inspiratory pressure"
+            },
+            {
+              "system": "http://loinc.org",
+              "code": "76531-3",
+              "display": "Pressure.max Respiratory system airway --on ventilator"
+            },
+            {
+              "system": "urn:iso:std:iso:11073:10101",
+              "code": "151973",
+              "display": "MDC_VENT_PRESS_AWAY_MAX"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "system": "http://unitsofmeasure.org",
+          "code": "cm[H2O]",
+          "value": 25,
+          "unit": "cmH2O"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-1"
+        },
+        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-1-icu-vent-freq-mech-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-1-icu-vent-freq-mech-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-mechanische-atemfrequenz-beatmet"
+          ]
+        },
+        "partOf": [
+          {
+            "reference": "Procedure/mii-exa-test-data-patient-1-icu-vent-beatmung-1"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "40617009",
+                "system": "http://snomed.info/sct",
+                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+                "display": "Artificial ventilation (regime/therapy)"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "250876000",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+              "display": "Ventilator rate"
+            },
+            {
+              "system": "http://loinc.org",
+              "code": "33438-3",
+              "display": "Breath rate mechanical --on ventilator"
+            },
+            {
+              "system": "urn:iso:std:iso:11073:10101",
+              "code": "151586",
+              "display": "MDC_VENT_RESP_RATE"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "system": "http://unitsofmeasure.org",
+          "code": "{Breaths}/min",
+          "value": 16,
+          "unit": "breaths per minute"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-1"
+        },
+        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-1-icu-vent-map-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-1-icu-vent-map-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-mittlerer-beatmungsdruck"
+          ]
+        },
+        "partOf": [
+          {
+            "reference": "Procedure/mii-exa-test-data-patient-1-icu-vent-beatmung-1"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "40617009",
+                "system": "http://snomed.info/sct",
+                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+                "display": "Artificial ventilation (regime/therapy)"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "698821009",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+              "display": "Mean inspiratory airway pressure"
+            },
+            {
+              "system": "http://loinc.org",
+              "code": "76530-5",
+              "display": "Mean pressure Respiratory system airway --on ventilator"
+            },
+            {
+              "system": "urn:iso:std:iso:11073:10101",
+              "code": "151975",
+              "display": "MDC_VENT_PRESS_AWAY_MEAN"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "system": "http://unitsofmeasure.org",
+          "code": "cm[H2O]",
+          "value": 15,
+          "unit": "cmH2O"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-1"
+        },
+        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-1-icu-vent-peep-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-1-icu-vent-peep-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-positiv-endexpiratorischer-druck"
+          ]
+        },
+        "partOf": [
+          {
+            "reference": "Procedure/mii-exa-test-data-patient-1-icu-vent-beatmung-1"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "40617009",
+                "system": "http://snomed.info/sct",
+                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+                "display": "Artificial ventilation (regime/therapy)"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "250854009",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+              "display": "Positive end expiratory pressure"
+            },
+            {
+              "system": "http://loinc.org",
+              "code": "76248-4",
+              "display": "PEEP Respiratory system --on ventilator"
+            },
+            {
+              "system": "urn:iso:std:iso:11073:10101",
+              "code": "151976",
+              "display": "MDC_VENT_PRESS_AWAY_END_EXP_POS"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "system": "http://unitsofmeasure.org",
+          "code": "cm[H2O]",
+          "value": 8,
+          "unit": "cmH2O"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-1"
+        },
+        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-1-icu-vent-freq-spont-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-1-icu-vent-freq-spont-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-spontane-atemfrequenz-beatmet"
+          ]
+        },
+        "partOf": [
+          {
+            "reference": "Procedure/mii-exa-test-data-patient-1-icu-vent-beatmung-1"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "40617009",
+                "system": "http://snomed.info/sct",
+                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+                "display": "Artificial ventilation (regime/therapy)"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "urn:iso:std:iso:11073:10101",
+              "code": "152498",
+              "display": "MDC_VENT_RESP_BTSD_P_RATE"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "271625008"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "system": "http://unitsofmeasure.org",
+          "code": "/min",
+          "value": 4,
+          "unit": "breaths per minute"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-1"
+        },
+        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-1-icu-vent-freq-spont-mech-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-1-icu-vent-freq-spont-mech-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-spontane-mechanische-atemfrequenz-beatmet"
+          ]
+        },
+        "partOf": [
+          {
+            "reference": "Procedure/mii-exa-test-data-patient-1-icu-vent-beatmung-1"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "40617009",
+                "system": "http://snomed.info/sct",
+                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+                "display": "Artificial ventilation (regime/therapy)"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "250810003",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+              "display": "Total breath rate"
+            },
+            {
+              "system": "http://loinc.org",
+              "code": "19840-8",
+              "display": "Breath rate spontaneous and mechanical --on ventilator"
+            },
+            {
+              "system": "urn:iso:std:iso:11073:10101",
+              "code": "152490",
+              "display": "MDC_VENT_RESP_BTSD_PSAZC_RATE"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "system": "http://unitsofmeasure.org",
+          "code": "/min",
+          "value": 20,
+          "unit": "breaths per minute"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-1"
+        },
+        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-1-icu-vent-vt-spont-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-1-icu-vent-vt-spont-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-spontanes-atemzugvolumen"
+          ]
+        },
+        "partOf": [
+          {
+            "reference": "Procedure/mii-exa-test-data-patient-1-icu-vent-beatmung-1"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "40617009",
+                "system": "http://snomed.info/sct",
+                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+                "display": "Artificial ventilation (regime/therapy)"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "250816009",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+              "display": "Spontaneous tidal volume"
+            },
+            {
+              "system": "http://loinc.org",
+              "code": "20116-0",
+              "display": "Tidal volume.spontaneous --on ventilator"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "system": "http://unitsofmeasure.org",
+          "code": "mL",
+          "value": 450,
+          "unit": "mL"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-1"
+        },
+        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-1-icu-vent-vt-spont-mech-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-1-icu-vent-vt-spont-mech-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-spontanes-mechanisches-atemzugvolumen-waehrend-beatmung"
+          ]
+        },
+        "partOf": [
+          {
+            "reference": "Procedure/mii-exa-test-data-patient-1-icu-vent-beatmung-1"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "40617009",
+                "system": "http://snomed.info/sct",
+                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+                "display": "Artificial ventilation (regime/therapy)"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "20118-6",
+              "display": "Tidal volume.spontaneous+mechanical --on ventilator"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "system": "http://unitsofmeasure.org",
+          "code": "mL",
+          "value": 470,
+          "unit": "mL"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-1"
+        },
+        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-1-icu-vent-ps-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-1-icu-vent-ps-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-unterstuetzungsdruck-beatmung"
+          ]
+        },
+        "partOf": [
+          {
+            "reference": "Procedure/mii-exa-test-data-patient-1-icu-vent-beatmung-1"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "40617009",
+                "system": "http://snomed.info/sct",
+                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+                "display": "Artificial ventilation (regime/therapy)"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "20079-0",
+              "display": "Pressure support setting Ventilator"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "system": "http://unitsofmeasure.org",
+          "code": "cm[H2O]",
+          "value": 12,
+          "unit": "cmH2O"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-1"
+        },
+        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-1-icu-vent-ie-ratio-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-1-icu-vent-ie-ratio-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-zeitverhaeltnis-ein-ausatmung"
+          ]
+        },
+        "partOf": [
+          {
+            "reference": "Procedure/mii-exa-test-data-patient-1-icu-vent-beatmung-1"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "40617009",
+                "system": "http://snomed.info/sct",
+                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+                "display": "Artificial ventilation (regime/therapy)"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "250822000",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+              "display": "Inspiration/expiration time ratio"
+            },
+            {
+              "system": "http://loinc.org",
+              "code": "75931-6",
+              "display": "Inspiration/Expiration time Ratio"
+            },
+            {
+              "system": "urn:iso:std:iso:11073:10101",
+              "code": "151832",
+              "display": "MDC_RATIO_IE"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "system": "http://unitsofmeasure.org",
+          "code": "{ratio}",
+          "value": 0.5,
+          "unit": "ratio"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-1"
+        },
+        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-1-icu-vent-compliance-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-1-icu-vent-compliance-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-dynamische-kompliance"
+          ]
+        },
+        "partOf": [
+          {
+            "reference": "Procedure/mii-exa-test-data-patient-1-icu-vent-beatmung-1"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "40617009",
+                "system": "http://snomed.info/sct",
+                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+                "display": "Artificial ventilation (regime/therapy)"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "250823005",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+              "display": "Total dynamic compliance"
+            },
+            {
+              "system": "http://loinc.org",
+              "code": "0827-3",
+              "display": "Dynamic lung compliance"
+            },
+            {
+              "system": "urn:iso:std:iso:11073:10101",
+              "code": "151692",
+              "display": "MDC_COMPL_LUNG_DYN"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "system": "http://unitsofmeasure.org",
+          "code": "mL/cm[H2O]",
+          "value": 50,
+          "unit": "mL/cmH2O"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-1"
+        },
+        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-1-icu-vent-dp-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-1-icu-vent-dp-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-druckdifferenz-beatmung"
+          ]
+        },
+        "partOf": [
+          {
+            "reference": "Procedure/mii-exa-test-data-patient-1-icu-vent-beatmung-1"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "40617009",
+                "system": "http://snomed.info/sct",
+                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+                "display": "Artificial ventilation (regime/therapy)"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "76154-4",
+              "display": "Airway pressure delta --on ventilator"
+            },
+            {
+              "system": "urn:iso:std:iso:11073:10101",
+              "code": "152720",
+              "display": "MDC_VENT_PRESS_AWAY_DELTA"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "system": "http://unitsofmeasure.org",
+          "code": "cm[H2O]",
+          "value": 13,
+          "unit": "cmH2O"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-1"
+        },
+        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Procedure"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Procedure/mii-exa-test-data-patient-1-icu-ect-extrakorp-1",
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "mii-exa-test-data-patient-1-icu-ect-extrakorp-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-extrakorporales-verfahren"
+          ]
+        },
+        "performedPeriod": {
+          "start": "2024-02-12T08:00:00+01:00",
+          "end": "2024-02-18T16:00:00+01:00"
+        },
+        "status": "completed",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-1"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-patient-1-encounter-1"
+        },
+        "category": {
+          "coding": [
+            {
+              "code": "182744004",
+              "system": "http://snomed.info/sct",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+              "display": "Renal dialysis (procedure)"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "233573008",
+              "system": "http://snomed.info/sct",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+              "display": "Extracorporeal membrane oxygenation (procedure)"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Procedure"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Procedure/mii-exa-test-data-patient-1-icu-vent-beatmung-1",
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "mii-exa-test-data-patient-1-icu-vent-beatmung-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-beatmung"
+          ]
+        },
+        "performedPeriod": {
+          "start": "2024-02-12T08:00:00+01:00",
+          "end": "2024-02-18T16:00:00+01:00"
+        },
+        "status": "completed",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patient-1"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-patient-1-encounter-1"
+        },
+        "category": {
+          "coding": [
+            {
+              "code": "40617009",
+              "system": "http://snomed.info/sct",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+              "display": "Artificial respiration (procedure)"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "243147009",
+              "system": "http://snomed.info/sct",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+              "display": "Controlled ventilation (procedure)"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "Device"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Device/mii-exa-test-data-patient-1-icu-device-1",
+      "resource": {
+        "resourceType": "Device",
+        "id": "mii-exa-test-data-patient-1-icu-device-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-icu-device"
+          ]
+        },
+        "deviceName": [
+          {
+            "name": "Draeger Evita V500",
+            "type": "manufacturer-name"
+          }
+        ],
+        "type": {
+          "coding": [
+            {
+              "code": "706172005",
+              "system": "http://snomed.info/sct",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+              "display": "Ventilator (physical object)"
+            }
+          ]
+        },
+        "patient": {
+          "reference": "Patient/mii-exa-test-data-patient-1"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "DeviceMetric"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/DeviceMetric/mii-exa-test-data-patient-1-icu-ect-dm-param-1",
+      "resource": {
+        "resourceType": "DeviceMetric",
+        "id": "mii-exa-test-data-patient-1-icu-ect-dm-param-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-devicemetric-eingestellte-gemessene-parameter-extrakorporale-verfahren"
+          ]
+        },
+        "type": {
+          "coding": [
+            {
+              "code": "182744004",
+              "system": "http://snomed.info/sct",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+              "display": "Renal dialysis (procedure)"
+            }
+          ]
+        },
+        "source": {
+          "reference": "Device/mii-exa-test-data-patient-1-icu-device-1"
+        },
+        "category": "measurement"
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "DeviceMetric"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/DeviceMetric/mii-exa-test-data-patient-1-icu-vent-dm-param-1",
+      "resource": {
+        "resourceType": "DeviceMetric",
+        "id": "mii-exa-test-data-patient-1-icu-vent-dm-param-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-devicemetric-eingestellte-gemessene-parameter-beatmung"
+          ]
+        },
+        "type": {
+          "coding": [
+            {
+              "code": "40617009",
+              "system": "http://snomed.info/sct",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+              "display": "Artificial ventilation (regime/therapy)"
+            }
+          ]
+        },
+        "source": {
+          "reference": "Device/mii-exa-test-data-patient-1-icu-device-1"
+        },
+        "category": "measurement"
+      }
+    }
+  ],
+  "type": "transaction",
+  "timestamp": "2025-06-18T13:51:00+02:00"
+}

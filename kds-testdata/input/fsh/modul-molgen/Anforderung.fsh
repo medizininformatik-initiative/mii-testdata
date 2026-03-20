@@ -44,3 +44,25 @@ Description: "ServiceRequest: Anforderung molekulargenetische Stufendiagnostik"
 * reasonCode[1].text = "Mutter an Brustkrebs verstorben"
 * reasonReference[0] = Reference(mii-exa-test-data-patient-4-diagnose-1)
 * supportingInfo[familienanamnese] = Reference(mii-exa-test-data-patient-4-molgen-family-member-history-1)
+
+// Patient-3 NSCLC Stadium IV
+Instance: mii-exa-test-data-patient-3-molgen-anforderung-2
+InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/anforderung-genetischer-test
+Usage: #example
+Description: "ServiceRequest: Anforderung NGS-Panel bei NSCLC Stadium IV gemaess S3-Leitlinie"
+* insert TestDataLabel
+* extension[workflow-relatedArtifact].valueRelatedArtifact.type = $related-artifact-type#citation "Citation"
+* extension[workflow-relatedArtifact].valueRelatedArtifact.citation = "S3-Leitlinie Lungenkarzinom, Version 4.0 (April 2025), Empfehlung 6.60, AWMF 020-007OL"
+* extension[workflow-relatedArtifact].valueRelatedArtifact.url = "https://register.awmf.org/de/leitlinien/detail/020-007OL"
+* status = #active
+* intent = #order
+* category = $sct#108252007 "Laboratory procedure (procedure)"
+* code.coding[0] = $sct#405825005 "Molecular genetic test (procedure)"
+* code.text = "NGS-Panel NSCLC: EGFR Exon 18-21, BRAF V600, ALK, ROS1, RET, NTRK 1-3, KRAS G12C, MET Exon 14, NRG1, HER2 Exon 8/18-21"
+* subject = Reference(mii-exa-test-data-patient-3)
+* encounter = Reference(mii-exa-test-data-patient-3-encounter-1)
+* authoredOn = "2024-03-15"
+* requester = Reference(mii-exa-test-data-practitioner-physician-1)
+* reasonCode = $sct#254637007 "Non-small cell carcinoma of lung (disorder)"
+* specimen = Reference(mii-exa-test-data-patient-3-specimen-1)
+* note.text = "NSCLC Stadium IV. Molekularpathologische Untersuchung gemaess S3-Leitlinie Empfehlung 6.60 vor Einleitung der Erstlinientherapie."

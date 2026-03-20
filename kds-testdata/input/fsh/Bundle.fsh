@@ -88,6 +88,7 @@ Description: "Bundle: Patient-1"
 * insert AddBundleEntry(mii-exa-test-data-befundungsprozedur, Procedure)
 * insert AddBundleEntry(mii-exa-test-data-anforderung, ServiceRequest)
 * insert AddBundleEntry(mii-exa-test-data-kontrastmittelgabe, MedicationAdministration)
+// ICU-Module: see modul-icu/Bundle.fsh (separate per-module bundle)
 
 // Dokument-Module
 * insert AddBundleEntry(mii-exa-test-data-patient-1-dokument-1, DocumentReference)
