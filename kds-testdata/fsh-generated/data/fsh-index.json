@@ -61,7 +61,7 @@
     "fshType": "Instance",
     "fshFile": "modul-molgen/Bundle.fsh",
     "startLine": 5,
-    "endLine": 43
+    "endLine": 49
   },
   {
     "outputFile": "Bundle-mii-exa-test-data-bundle-mtb-1.json",
@@ -3600,12 +3600,44 @@
     "endLine": 30
   },
   {
+    "outputFile": "Observation-mii-exa-test-data-patient-3-molgen-therapeutische-implikation-2.json",
+    "fshName": "mii-exa-test-data-patient-3-molgen-therapeutische-implikation-2",
+    "fshType": "Instance",
+    "fshFile": "modul-molgen/TherapeutischeImplikation.fsh",
+    "startLine": 33,
+    "endLine": 58
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-3-molgen-therapeutische-implikation-3.json",
+    "fshName": "mii-exa-test-data-patient-3-molgen-therapeutische-implikation-3",
+    "fshType": "Instance",
+    "fshFile": "modul-molgen/TherapeutischeImplikation.fsh",
+    "startLine": 61,
+    "endLine": 85
+  },
+  {
     "outputFile": "Observation-mii-exa-test-data-patient-3-molgen-variante-1.json",
     "fshName": "mii-exa-test-data-patient-3-molgen-variante-1",
     "fshType": "Instance",
     "fshFile": "modul-molgen/Variante.fsh",
     "startLine": 3,
     "endLine": 50
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-3-molgen-variante-2.json",
+    "fshName": "mii-exa-test-data-patient-3-molgen-variante-2",
+    "fshType": "Instance",
+    "fshFile": "modul-molgen/Variante.fsh",
+    "startLine": 92,
+    "endLine": 139
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-3-molgen-variante-3.json",
+    "fshName": "mii-exa-test-data-patient-3-molgen-variante-3",
+    "fshType": "Instance",
+    "fshFile": "modul-molgen/Variante.fsh",
+    "startLine": 145,
+    "endLine": 181
   },
   {
     "outputFile": "Observation-mii-exa-test-data-patient-3-seltene-blutgruppe-1.json",
@@ -4598,6 +4630,14 @@
     "fshFile": "modul-molgen/Anforderung.fsh",
     "startLine": 2,
     "endLine": 21
+  },
+  {
+    "outputFile": "ServiceRequest-mii-exa-test-data-patient-3-molgen-anforderung-2.json",
+    "fshName": "mii-exa-test-data-patient-3-molgen-anforderung-2",
+    "fshType": "Instance",
+    "fshFile": "modul-molgen/Anforderung.fsh",
+    "startLine": 49,
+    "endLine": 68
   },
   {
     "outputFile": "ServiceRequest-mii-exa-test-data-patient-3-seltene-studieneinschluss-1.json",

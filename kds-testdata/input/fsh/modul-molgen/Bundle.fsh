@@ -41,3 +41,9 @@ Description: "Bundle: Molekulargenetik Testdaten Patient-3 und Patient-4"
 * insert AddBundleEntry(mii-exa-test-data-patient-4-molgen-molekulare-konsequenz-1, Observation)
 * insert AddBundleEntry(mii-exa-test-data-patient-4-molgen-diagnostische-implikation-1, Observation)
 * insert AddBundleEntry(mii-exa-test-data-patient-4-molgen-family-member-history-1, FamilyMemberHistory)
+// Patient-3 NSCLC Stadium IV
+* insert AddBundleEntry(mii-exa-test-data-patient-3-molgen-anforderung-2, ServiceRequest)
+* insert AddBundleEntry(mii-exa-test-data-patient-3-molgen-variante-2, Observation)
+* insert AddBundleEntry(mii-exa-test-data-patient-3-molgen-therapeutische-implikation-2, Observation)
+* insert AddBundleEntry(mii-exa-test-data-patient-3-molgen-variante-3, Observation)
+* insert AddBundleEntry(mii-exa-test-data-patient-3-molgen-therapeutische-implikation-3, Observation)

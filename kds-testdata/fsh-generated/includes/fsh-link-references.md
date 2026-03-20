@@ -373,6 +373,7 @@
 [mii-exa-test-data-patient-3-medstatement-3]: MedicationStatement-mii-exa-test-data-patient-3-medstatement-3.html
 [mii-exa-test-data-patient-3-medstatement-4]: MedicationStatement-mii-exa-test-data-patient-3-medstatement-4.html
 [mii-exa-test-data-patient-3-molgen-anforderung-1]: ServiceRequest-mii-exa-test-data-patient-3-molgen-anforderung-1.html
+[mii-exa-test-data-patient-3-molgen-anforderung-2]: ServiceRequest-mii-exa-test-data-patient-3-molgen-anforderung-2.html
 [mii-exa-test-data-patient-3-molgen-befundbericht-1]: DiagnosticReport-mii-exa-test-data-patient-3-molgen-befundbericht-1.html
 [mii-exa-test-data-patient-3-molgen-biomarker-1]: Observation-mii-exa-test-data-patient-3-molgen-biomarker-1.html
 [mii-exa-test-data-patient-3-molgen-diagnostische-implikation-1]: Observation-mii-exa-test-data-patient-3-molgen-diagnostische-implikation-1.html
@@ -387,7 +388,11 @@
 [mii-exa-test-data-patient-3-molgen-mutationslast-1]: Observation-mii-exa-test-data-patient-3-molgen-mutationslast-1.html
 [mii-exa-test-data-patient-3-molgen-polygener-risiko-score-1]: RiskAssessment-mii-exa-test-data-patient-3-molgen-polygener-risiko-score-1.html
 [mii-exa-test-data-patient-3-molgen-therapeutische-implikation-1]: Observation-mii-exa-test-data-patient-3-molgen-therapeutische-implikation-1.html
+[mii-exa-test-data-patient-3-molgen-therapeutische-implikation-2]: Observation-mii-exa-test-data-patient-3-molgen-therapeutische-implikation-2.html
+[mii-exa-test-data-patient-3-molgen-therapeutische-implikation-3]: Observation-mii-exa-test-data-patient-3-molgen-therapeutische-implikation-3.html
 [mii-exa-test-data-patient-3-molgen-variante-1]: Observation-mii-exa-test-data-patient-3-molgen-variante-1.html
+[mii-exa-test-data-patient-3-molgen-variante-2]: Observation-mii-exa-test-data-patient-3-molgen-variante-2.html
+[mii-exa-test-data-patient-3-molgen-variante-3]: Observation-mii-exa-test-data-patient-3-molgen-variante-3.html
 [mii-exa-test-data-patient-3-prozedur-1]: Procedure-mii-exa-test-data-patient-3-prozedur-1.html
 [mii-exa-test-data-patient-3-prozedur-2]: Procedure-mii-exa-test-data-patient-3-prozedur-2.html
 [mii-exa-test-data-patient-3-prozedur-3]: Procedure-mii-exa-test-data-patient-3-prozedur-3.html

@@ -3172,6 +3172,14 @@
       },
       {
         "reference": {
+          "reference": "ServiceRequest/mii-exa-test-data-patient-3-molgen-anforderung-2"
+        },
+        "name": "mii-exa-test-data-patient-3-molgen-anforderung-2",
+        "description": "ServiceRequest: Anforderung NGS-Panel bei NSCLC Stadium IV gemaess S3-Leitlinie",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "DiagnosticReport/mii-exa-test-data-patient-3-molgen-befundbericht-1"
         },
         "name": "mii-exa-test-data-patient-3-molgen-befundbericht-1",
@@ -3284,10 +3292,42 @@
       },
       {
         "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-3-molgen-therapeutische-implikation-2"
+        },
+        "name": "mii-exa-test-data-patient-3-molgen-therapeutische-implikation-2",
+        "description": "Observation: Therapeutische Implikation fuer EGFR L858R bei NSCLC Stadium IV",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-3-molgen-therapeutische-implikation-3"
+        },
+        "name": "mii-exa-test-data-patient-3-molgen-therapeutische-implikation-3",
+        "description": "Observation: Therapeutische Implikation fuer EGFR Exon-20-Insertion bei NSCLC - Amivantamab",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Observation/mii-exa-test-data-patient-3-molgen-variante-1"
         },
         "name": "mii-exa-test-data-patient-3-molgen-variante-1",
         "description": "Observation: Genetische Variante fuer BRAF-Mutation",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-3-molgen-variante-2"
+        },
+        "name": "mii-exa-test-data-patient-3-molgen-variante-2",
+        "description": "Observation: Genetische Variante EGFR L858R bei NSCLC",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-3-molgen-variante-3"
+        },
+        "name": "mii-exa-test-data-patient-3-molgen-variante-3",
+        "description": "Observation: Genetische Variante EGFR Exon-20-Insertion p.Ala767_Val769dup bei NSCLC",
         "exampleBoolean": true
       },
       {
