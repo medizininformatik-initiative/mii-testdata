@@ -12,7 +12,7 @@ Description: "ICU Procedure: MII PR ICU Extrakorporales Verfahren"
 * encounter = Reference(mii-exa-test-data-patient-1-encounter-1)
 * performedPeriod.start = "2024-02-12T08:00:00+01:00"
 * performedPeriod.end = "2024-02-18T16:00:00+01:00"
-* category = $sct#182744004 "Renal dialysis (procedure)"
+* category = $sct#182744004 "Extracorporeal circulation procedure"
 * code = $sct#233573008 "Extracorporeal membrane oxygenation (procedure)"
 
 Instance: mii-exa-test-data-patient-1-icu-vent-beatmung-1
