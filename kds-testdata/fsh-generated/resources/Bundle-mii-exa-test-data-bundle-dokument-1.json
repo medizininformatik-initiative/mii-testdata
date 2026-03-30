@@ -13,8 +13,8 @@
   "entry": [
     {
       "request": {
-        "method": "POST",
-        "url": "Patient"
+        "method": "PUT",
+        "url": "Patient/mii-exa-test-data-dokument-patient-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Patient/mii-exa-test-data-dokument-patient-1",
       "resource": {
@@ -49,8 +49,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Encounter"
+        "method": "PUT",
+        "url": "Encounter/mii-exa-test-data-dokument-encounter-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Encounter/mii-exa-test-data-dokument-encounter-1",
       "resource": {
@@ -82,8 +82,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "DocumentReference"
+        "method": "PUT",
+        "url": "DocumentReference/mii-exa-test-data-patient-1-dokument-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/DocumentReference/mii-exa-test-data-patient-1-dokument-1",
       "resource": {
@@ -237,8 +237,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "DocumentReference"
+        "method": "PUT",
+        "url": "DocumentReference/mii-exa-test-data-patient-1-dokument-2"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/DocumentReference/mii-exa-test-data-patient-1-dokument-2",
       "resource": {

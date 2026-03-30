@@ -13,8 +13,8 @@
   "entry": [
     {
       "request": {
-        "method": "POST",
-        "url": "Patient"
+        "method": "PUT",
+        "url": "Patient/mii-exa-test-data-seltene-patient-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Patient/mii-exa-test-data-seltene-patient-1",
       "resource": {
@@ -49,8 +49,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Encounter"
+        "method": "PUT",
+        "url": "Encounter/mii-exa-test-data-seltene-encounter-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Encounter/mii-exa-test-data-seltene-encounter-1",
       "resource": {
@@ -82,8 +82,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-patient-3-seltene-bmi-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-3-seltene-bmi-1",
       "resource": {
@@ -136,8 +136,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-patient-3-seltene-kopfumfang-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-3-seltene-kopfumfang-1",
       "resource": {
@@ -190,8 +190,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-patient-3-seltene-hueftumfang-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-3-seltene-hueftumfang-1",
       "resource": {
@@ -244,8 +244,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-patient-3-seltene-taillenumfang-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-3-seltene-taillenumfang-1",
       "resource": {
@@ -298,8 +298,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-patient-3-seltene-blutgruppe-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-3-seltene-blutgruppe-1",
       "resource": {
@@ -367,8 +367,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-patient-3-seltene-hpo-assessment-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-3-seltene-hpo-assessment-1",
       "resource": {
@@ -460,8 +460,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-patient-3-seltene-hpo-assessment-2"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-3-seltene-hpo-assessment-2",
       "resource": {
@@ -538,8 +538,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-patient-3-seltene-hpo-assessment-3"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-3-seltene-hpo-assessment-3",
       "resource": {
@@ -657,8 +657,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-patient-3-seltene-hpo-assessment-4"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-3-seltene-hpo-assessment-4",
       "resource": {
@@ -759,8 +759,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Condition"
+        "method": "PUT",
+        "url": "Condition/mii-exa-test-data-patient-3-seltene-clinical-diagnosis-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Condition/mii-exa-test-data-patient-3-seltene-clinical-diagnosis-1",
       "resource": {
@@ -956,8 +956,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Condition"
+        "method": "PUT",
+        "url": "Condition/mii-exa-test-data-patient-3-seltene-genetic-diagnosis-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Condition/mii-exa-test-data-patient-3-seltene-genetic-diagnosis-1",
       "resource": {
@@ -1119,8 +1119,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Condition"
+        "method": "PUT",
+        "url": "Condition/mii-exa-test-data-patient-3-seltene-symptom-condition-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Condition/mii-exa-test-data-patient-3-seltene-symptom-condition-1",
       "resource": {
@@ -1275,8 +1275,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Condition"
+        "method": "PUT",
+        "url": "Condition/mii-exa-test-data-patient-3-seltene-symptom-condition-2"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Condition/mii-exa-test-data-patient-3-seltene-symptom-condition-2",
       "resource": {
@@ -1417,8 +1417,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "ClinicalImpression"
+        "method": "PUT",
+        "url": "ClinicalImpression/mii-exa-test-data-patient-3-seltene-clinical-impression-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/ClinicalImpression/mii-exa-test-data-patient-3-seltene-clinical-impression-1",
       "resource": {
@@ -1550,8 +1550,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "FamilyMemberHistory"
+        "method": "PUT",
+        "url": "FamilyMemberHistory/mii-exa-test-data-patient-3-seltene-familienanamnese-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/FamilyMemberHistory/mii-exa-test-data-patient-3-seltene-familienanamnese-1",
       "resource": {
@@ -1682,8 +1682,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "FamilyMemberHistory"
+        "method": "PUT",
+        "url": "FamilyMemberHistory/mii-exa-test-data-patient-3-seltene-familienanamnese-2"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/FamilyMemberHistory/mii-exa-test-data-patient-3-seltene-familienanamnese-2",
       "resource": {
@@ -1770,8 +1770,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "CarePlan"
+        "method": "PUT",
+        "url": "CarePlan/mii-exa-test-data-patient-3-seltene-therapieplan-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/CarePlan/mii-exa-test-data-patient-3-seltene-therapieplan-1",
       "resource": {
@@ -1831,8 +1831,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "MedicationRequest"
+        "method": "PUT",
+        "url": "MedicationRequest/mii-exa-test-data-patient-3-seltene-therapieempfehlung-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/MedicationRequest/mii-exa-test-data-patient-3-seltene-therapieempfehlung-1",
       "resource": {
@@ -1942,8 +1942,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "ServiceRequest"
+        "method": "PUT",
+        "url": "ServiceRequest/mii-exa-test-data-patient-3-seltene-therapie-nicht-med-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/ServiceRequest/mii-exa-test-data-patient-3-seltene-therapie-nicht-med-1",
       "resource": {
@@ -2067,8 +2067,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "ServiceRequest"
+        "method": "PUT",
+        "url": "ServiceRequest/mii-exa-test-data-patient-3-seltene-studieneinschluss-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/ServiceRequest/mii-exa-test-data-patient-3-seltene-studieneinschluss-1",
       "resource": {
@@ -2155,8 +2155,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "RequestGroup"
+        "method": "PUT",
+        "url": "RequestGroup/mii-exa-test-data-patient-3-seltene-therapie-kombination-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/RequestGroup/mii-exa-test-data-patient-3-seltene-therapie-kombination-1",
       "resource": {
@@ -2217,8 +2217,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Procedure"
+        "method": "PUT",
+        "url": "Procedure/mii-exa-test-data-patient-3-seltene-therapie-durchgefuehrt-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Procedure/mii-exa-test-data-patient-3-seltene-therapie-durchgefuehrt-1",
       "resource": {
@@ -2257,8 +2257,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Procedure"
+        "method": "PUT",
+        "url": "Procedure/mii-exa-test-data-patient-3-seltene-therapie-durchgefuehrt-2"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Procedure/mii-exa-test-data-patient-3-seltene-therapie-durchgefuehrt-2",
       "resource": {

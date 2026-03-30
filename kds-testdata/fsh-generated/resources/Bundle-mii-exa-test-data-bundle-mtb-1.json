@@ -13,8 +13,8 @@
   "entry": [
     {
       "request": {
-        "method": "POST",
-        "url": "Patient"
+        "method": "PUT",
+        "url": "Patient/mii-exa-test-data-mtb-patient-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Patient/mii-exa-test-data-mtb-patient-1",
       "resource": {
@@ -49,8 +49,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Encounter"
+        "method": "PUT",
+        "url": "Encounter/mii-exa-test-data-mtb-encounter-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Encounter/mii-exa-test-data-mtb-encounter-1",
       "resource": {
@@ -82,8 +82,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "ClinicalImpression"
+        "method": "PUT",
+        "url": "ClinicalImpression/mii-exa-test-data-mtb-behandlungsepisode-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/ClinicalImpression/mii-exa-test-data-mtb-behandlungsepisode-1",
       "resource": {
@@ -195,8 +195,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-mtb-consent-given-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-mtb-consent-given-1",
       "resource": {
@@ -241,8 +241,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Condition"
+        "method": "PUT",
+        "url": "Condition/mii-exa-test-data-mtb-diagnose-primaertumor-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Condition/mii-exa-test-data-mtb-diagnose-primaertumor-1",
       "resource": {
@@ -349,8 +349,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-mtb-oncotree-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-mtb-oncotree-1",
       "resource": {
@@ -395,8 +395,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Procedure"
+        "method": "PUT",
+        "url": "Procedure/mii-exa-test-data-mtb-systemische-vortherapie-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Procedure/mii-exa-test-data-mtb-systemische-vortherapie-1",
       "resource": {
@@ -469,8 +469,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-mtb-tumorausbreitung-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-mtb-tumorausbreitung-1",
       "resource": {
@@ -529,8 +529,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-mtb-who-grad-tumor-zns-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-mtb-who-grad-tumor-zns-1",
       "resource": {
@@ -575,8 +575,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "DiagnosticReport"
+        "method": "PUT",
+        "url": "DiagnosticReport/mii-exa-test-data-mtb-ngs-bericht-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/DiagnosticReport/mii-exa-test-data-mtb-ngs-bericht-1",
       "resource": {
@@ -666,8 +666,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Procedure"
+        "method": "PUT",
+        "url": "Procedure/mii-exa-test-data-mtb-genomic-study-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Procedure/mii-exa-test-data-mtb-genomic-study-1",
       "resource": {
@@ -709,8 +709,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Procedure"
+        "method": "PUT",
+        "url": "Procedure/mii-exa-test-data-mtb-genomic-study-analysis-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Procedure/mii-exa-test-data-mtb-genomic-study-analysis-1",
       "resource": {
@@ -782,8 +782,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-mtb-einfache-variante-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-mtb-einfache-variante-1",
       "resource": {
@@ -898,8 +898,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-mtb-copy-number-variant-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-mtb-copy-number-variant-1",
       "resource": {
@@ -1045,8 +1045,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-mtb-dna-fusion-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-mtb-dna-fusion-1",
       "resource": {
@@ -1202,8 +1202,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-mtb-rna-fusion-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-mtb-rna-fusion-1",
       "resource": {
@@ -1399,8 +1399,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-mtb-rna-seq-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-mtb-rna-seq-1",
       "resource": {
@@ -1496,8 +1496,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-mtb-diagnostische-implikation-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-mtb-diagnostische-implikation-1",
       "resource": {
@@ -1577,8 +1577,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-mtb-therapeutische-implikation-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-mtb-therapeutische-implikation-1",
       "resource": {
@@ -1683,8 +1683,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-mtb-molekularer-biomarker-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-mtb-molekularer-biomarker-1",
       "resource": {
@@ -1747,8 +1747,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-mtb-mutationslast-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-mtb-mutationslast-1",
       "resource": {
@@ -1819,8 +1819,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-mtb-mikrosatelliteninstabilitaet-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-mtb-mikrosatelliteninstabilitaet-1",
       "resource": {
@@ -1880,8 +1880,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-mtb-hrd-score-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-mtb-hrd-score-1",
       "resource": {
@@ -1984,8 +1984,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-mtb-brcaness-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-mtb-brcaness-1",
       "resource": {
@@ -2054,8 +2054,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-mtb-ploidie-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-mtb-ploidie-1",
       "resource": {
@@ -2119,8 +2119,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-mtb-biomarker-her2-status-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-mtb-biomarker-her2-status-1",
       "resource": {
@@ -2183,8 +2183,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "DiagnosticReport"
+        "method": "PUT",
+        "url": "DiagnosticReport/mii-exa-test-data-mtb-molecular-pathology-report-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/DiagnosticReport/mii-exa-test-data-mtb-molecular-pathology-report-1",
       "resource": {
@@ -2224,8 +2224,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-mtb-immunohistochemistry-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-mtb-immunohistochemistry-1",
       "resource": {
@@ -2324,8 +2324,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-mtb-immunohistochemistry-her2-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-mtb-immunohistochemistry-her2-1",
       "resource": {
@@ -2427,8 +2427,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-mtb-immunohistochemistry-pdl1-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-mtb-immunohistochemistry-pdl1-1",
       "resource": {
@@ -2516,8 +2516,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-mtb-ihc-phosphorylation-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-mtb-ihc-phosphorylation-1",
       "resource": {
@@ -2619,8 +2619,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-mtb-ihc-mmr-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-mtb-ihc-mmr-1",
       "resource": {
@@ -2686,8 +2686,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-mtb-ihc-msi-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-mtb-ihc-msi-1",
       "resource": {
@@ -2754,8 +2754,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-mtb-insituhybridization-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-mtb-insituhybridization-1",
       "resource": {
@@ -2846,8 +2846,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-mtb-insituhybridization-her2-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-mtb-insituhybridization-her2-1",
       "resource": {
@@ -2984,8 +2984,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-mtb-tumorzellgehalt-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-mtb-tumorzellgehalt-1",
       "resource": {
@@ -3034,8 +3034,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "CarePlan"
+        "method": "PUT",
+        "url": "CarePlan/mii-exa-test-data-mtb-therapieplan-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/CarePlan/mii-exa-test-data-mtb-therapieplan-1",
       "resource": {
@@ -3116,8 +3116,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "MedicationRequest"
+        "method": "PUT",
+        "url": "MedicationRequest/mii-exa-test-data-mtb-therapieempfehlung-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/MedicationRequest/mii-exa-test-data-mtb-therapieempfehlung-1",
       "resource": {
@@ -3194,8 +3194,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "MedicationRequest"
+        "method": "PUT",
+        "url": "MedicationRequest/mii-exa-test-data-mtb-therapieempfehlung-2"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/MedicationRequest/mii-exa-test-data-mtb-therapieempfehlung-2",
       "resource": {
@@ -3238,8 +3238,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "MedicationRequest"
+        "method": "PUT",
+        "url": "MedicationRequest/mii-exa-test-data-mtb-therapieempfehlung-3"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/MedicationRequest/mii-exa-test-data-mtb-therapieempfehlung-3",
       "resource": {
@@ -3282,8 +3282,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "RequestGroup"
+        "method": "PUT",
+        "url": "RequestGroup/mii-exa-test-data-mtb-therapieempfehlung-kombination-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/RequestGroup/mii-exa-test-data-mtb-therapieempfehlung-kombination-1",
       "resource": {
@@ -3356,8 +3356,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "ServiceRequest"
+        "method": "PUT",
+        "url": "ServiceRequest/mii-exa-test-data-mtb-studieneinschluss-anfrage-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/ServiceRequest/mii-exa-test-data-mtb-studieneinschluss-anfrage-1",
       "resource": {
@@ -3422,8 +3422,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "ResearchStudy"
+        "method": "PUT",
+        "url": "ResearchStudy/mii-exa-test-data-mtb-studie-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/ResearchStudy/mii-exa-test-data-mtb-studie-1",
       "resource": {
@@ -3467,8 +3467,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "ServiceRequest"
+        "method": "PUT",
+        "url": "ServiceRequest/mii-exa-test-data-mtb-humangenetische-beratung-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/ServiceRequest/mii-exa-test-data-mtb-humangenetische-beratung-1",
       "resource": {
@@ -3514,8 +3514,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "ServiceRequest"
+        "method": "PUT",
+        "url": "ServiceRequest/mii-exa-test-data-mtb-histologie-evaluation-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/ServiceRequest/mii-exa-test-data-mtb-histologie-evaluation-1",
       "resource": {
@@ -3561,8 +3561,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "ServiceRequest"
+        "method": "PUT",
+        "url": "ServiceRequest/mii-exa-test-data-mtb-biopsie-auftrag-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/ServiceRequest/mii-exa-test-data-mtb-biopsie-auftrag-1",
       "resource": {
@@ -3608,8 +3608,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "ClinicalImpression"
+        "method": "PUT",
+        "url": "ClinicalImpression/mii-exa-test-data-mtb-follow-up-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/ClinicalImpression/mii-exa-test-data-mtb-follow-up-1",
       "resource": {
@@ -3671,8 +3671,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Procedure"
+        "method": "PUT",
+        "url": "Procedure/mii-exa-test-data-mtb-systemische-therapie-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Procedure/mii-exa-test-data-mtb-systemische-therapie-1",
       "resource": {
@@ -3750,8 +3750,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "MedicationStatement"
+        "method": "PUT",
+        "url": "MedicationStatement/mii-exa-test-data-mtb-systemische-therapie-medstatement-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/MedicationStatement/mii-exa-test-data-mtb-systemische-therapie-medstatement-1",
       "resource": {
@@ -3826,8 +3826,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-mtb-response-befund-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-mtb-response-befund-1",
       "resource": {
@@ -3913,8 +3913,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Claim"
+        "method": "PUT",
+        "url": "Claim/mii-exa-test-data-mtb-antrag-kostenuebernahme-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Claim/mii-exa-test-data-mtb-antrag-kostenuebernahme-1",
       "resource": {
@@ -3995,8 +3995,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "ClaimResponse"
+        "method": "PUT",
+        "url": "ClaimResponse/mii-exa-test-data-mtb-antwort-kostenuebernahme-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/ClaimResponse/mii-exa-test-data-mtb-antwort-kostenuebernahme-1",
       "resource": {

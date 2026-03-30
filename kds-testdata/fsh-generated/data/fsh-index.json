@@ -85,7 +85,7 @@
     "fshType": "Instance",
     "fshFile": "Bundle.fsh",
     "startLine": 24,
-    "endLine": 79
+    "endLine": 168
   },
   {
     "outputFile": "Bundle-mii-exa-test-data-bundle-pat-10.json",
@@ -93,7 +93,7 @@
     "fshType": "Instance",
     "fshFile": "Bundle.fsh",
     "startLine": 793,
-    "endLine": 833
+    "endLine": 852
   },
   {
     "outputFile": "Bundle-mii-exa-test-data-bundle-pat-11.json",
@@ -109,7 +109,7 @@
     "fshType": "Instance",
     "fshFile": "Bundle.fsh",
     "startLine": 173,
-    "endLine": 224
+    "endLine": 239
   },
   {
     "outputFile": "Bundle-mii-exa-test-data-bundle-pat-3.json",
@@ -117,7 +117,7 @@
     "fshType": "Instance",
     "fshFile": "Bundle.fsh",
     "startLine": 248,
-    "endLine": 292
+    "endLine": 357
   },
   {
     "outputFile": "Bundle-mii-exa-test-data-bundle-pat-4.json",
@@ -125,7 +125,7 @@
     "fshType": "Instance",
     "fshFile": "Bundle.fsh",
     "startLine": 366,
-    "endLine": 402
+    "endLine": 435
   },
   {
     "outputFile": "Bundle-mii-exa-test-data-bundle-pat-5.json",
@@ -133,7 +133,7 @@
     "fshType": "Instance",
     "fshFile": "Bundle.fsh",
     "startLine": 444,
-    "endLine": 484
+    "endLine": 503
   },
   {
     "outputFile": "Bundle-mii-exa-test-data-bundle-pat-6.json",
@@ -141,7 +141,7 @@
     "fshType": "Instance",
     "fshFile": "Bundle.fsh",
     "startLine": 512,
-    "endLine": 556
+    "endLine": 575
   },
   {
     "outputFile": "Bundle-mii-exa-test-data-bundle-pat-7.json",
@@ -149,7 +149,7 @@
     "fshType": "Instance",
     "fshFile": "Bundle.fsh",
     "startLine": 584,
-    "endLine": 624
+    "endLine": 643
   },
   {
     "outputFile": "Bundle-mii-exa-test-data-bundle-pat-8.json",
@@ -157,7 +157,7 @@
     "fshType": "Instance",
     "fshFile": "Bundle.fsh",
     "startLine": 652,
-    "endLine": 697
+    "endLine": 716
   },
   {
     "outputFile": "Bundle-mii-exa-test-data-bundle-pat-9.json",
@@ -165,7 +165,7 @@
     "fshType": "Instance",
     "fshFile": "Bundle.fsh",
     "startLine": 725,
-    "endLine": 765
+    "endLine": 784
   },
   {
     "outputFile": "Bundle-mii-exa-test-data-bundle-patho-1.json",

@@ -13,8 +13,8 @@
   "entry": [
     {
       "request": {
-        "method": "POST",
-        "url": "Patient"
+        "method": "PUT",
+        "url": "Patient/mii-exa-test-data-patient-2"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Patient/mii-exa-test-data-patient-2",
       "resource": {
@@ -99,8 +99,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Consent"
+        "method": "PUT",
+        "url": "Consent/mii-exa-test-data-patient-2-consent-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Consent/mii-exa-test-data-patient-2-consent-1",
       "resource": {
@@ -280,8 +280,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Encounter"
+        "method": "PUT",
+        "url": "Encounter/mii-exa-test-data-patient-2-encounter-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Encounter/mii-exa-test-data-patient-2-encounter-1",
       "resource": {
@@ -399,8 +399,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Condition"
+        "method": "PUT",
+        "url": "Condition/mii-exa-test-data-patient-2-diagnose-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Condition/mii-exa-test-data-patient-2-diagnose-1",
       "resource": {
@@ -480,8 +480,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-patient-2-vitalstatus-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-2-vitalstatus-1",
       "resource": {
@@ -534,8 +534,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Condition"
+        "method": "PUT",
+        "url": "Condition/mii-exa-test-data-patient-2-todesursache-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Condition/mii-exa-test-data-patient-2-todesursache-1",
       "resource": {
@@ -605,8 +605,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Procedure"
+        "method": "PUT",
+        "url": "Procedure/mii-exa-test-data-patient-2-prozedur-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Procedure/mii-exa-test-data-patient-2-prozedur-1",
       "resource": {
@@ -701,8 +701,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Procedure"
+        "method": "PUT",
+        "url": "Procedure/mii-exa-test-data-patient-2-prozedur-2"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Procedure/mii-exa-test-data-patient-2-prozedur-2",
       "resource": {
@@ -788,8 +788,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Procedure"
+        "method": "PUT",
+        "url": "Procedure/mii-exa-test-data-patient-2-prozedur-3"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Procedure/mii-exa-test-data-patient-2-prozedur-3",
       "resource": {
@@ -875,8 +875,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "ServiceRequest"
+        "method": "PUT",
+        "url": "ServiceRequest/mii-exa-test-data-patient-2-labrequest-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/ServiceRequest/mii-exa-test-data-patient-2-labrequest-1",
       "resource": {
@@ -966,8 +966,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "DiagnosticReport"
+        "method": "PUT",
+        "url": "DiagnosticReport/mii-exa-test-data-patient-2-labreport-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/DiagnosticReport/mii-exa-test-data-patient-2-labreport-1",
       "resource": {
@@ -1072,8 +1072,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-patient-2-labobs-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-2-labobs-1",
       "resource": {
@@ -1208,8 +1208,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-patient-2-labobs-2"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-2-labobs-2",
       "resource": {
@@ -1323,8 +1323,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-patient-2-labobs-3"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-2-labobs-3",
       "resource": {
@@ -1438,8 +1438,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-patient-2-labobs-4"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-2-labobs-4",
       "resource": {
@@ -1553,8 +1553,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "MedicationRequest"
+        "method": "PUT",
+        "url": "MedicationRequest/mii-exa-test-data-patient-2-medrequest-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/MedicationRequest/mii-exa-test-data-patient-2-medrequest-1",
       "resource": {
@@ -1629,8 +1629,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "MedicationRequest"
+        "method": "PUT",
+        "url": "MedicationRequest/mii-exa-test-data-patient-2-medrequest-2"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/MedicationRequest/mii-exa-test-data-patient-2-medrequest-2",
       "resource": {
@@ -1716,8 +1716,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "MedicationRequest"
+        "method": "PUT",
+        "url": "MedicationRequest/mii-exa-test-data-patient-2-medrequest-3"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/MedicationRequest/mii-exa-test-data-patient-2-medrequest-3",
       "resource": {
@@ -1803,8 +1803,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "MedicationStatement"
+        "method": "PUT",
+        "url": "MedicationStatement/mii-exa-test-data-patient-2-medstatement-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/MedicationStatement/mii-exa-test-data-patient-2-medstatement-1",
       "resource": {
@@ -1897,8 +1897,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "MedicationStatement"
+        "method": "PUT",
+        "url": "MedicationStatement/mii-exa-test-data-patient-2-medstatement-2"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/MedicationStatement/mii-exa-test-data-patient-2-medstatement-2",
       "resource": {
@@ -1997,8 +1997,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "MedicationStatement"
+        "method": "PUT",
+        "url": "MedicationStatement/mii-exa-test-data-patient-2-medstatement-3"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/MedicationStatement/mii-exa-test-data-patient-2-medstatement-3",
       "resource": {
@@ -2097,8 +2097,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "MedicationStatement"
+        "method": "PUT",
+        "url": "MedicationStatement/mii-exa-test-data-patient-2-medstatement-4"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/MedicationStatement/mii-exa-test-data-patient-2-medstatement-4",
       "resource": {
@@ -2189,8 +2189,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "MedicationStatement"
+        "method": "PUT",
+        "url": "MedicationStatement/mii-exa-test-data-patient-2-medstatement-5"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/MedicationStatement/mii-exa-test-data-patient-2-medstatement-5",
       "resource": {
@@ -2281,8 +2281,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "MedicationAdministration"
+        "method": "PUT",
+        "url": "MedicationAdministration/mii-exa-test-data-patient-2-medadmin-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/MedicationAdministration/mii-exa-test-data-patient-2-medadmin-1",
       "resource": {
@@ -2351,8 +2351,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "MedicationAdministration"
+        "method": "PUT",
+        "url": "MedicationAdministration/mii-exa-test-data-patient-2-medadmin-2"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/MedicationAdministration/mii-exa-test-data-patient-2-medadmin-2",
       "resource": {
@@ -2438,8 +2438,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "MedicationAdministration"
+        "method": "PUT",
+        "url": "MedicationAdministration/mii-exa-test-data-patient-2-medadmin-3"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/MedicationAdministration/mii-exa-test-data-patient-2-medadmin-3",
       "resource": {
@@ -2525,8 +2525,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "List"
+        "method": "PUT",
+        "url": "List/mii-exa-test-data-patient-2-list-stat-aufenthalt"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/List/mii-exa-test-data-patient-2-list-stat-aufenthalt",
       "resource": {
@@ -2583,8 +2583,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Medication"
+        "method": "PUT",
+        "url": "Medication/mii-exa-test-data-medication-morphin"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Medication/mii-exa-test-data-medication-morphin",
       "resource": {
@@ -2653,8 +2653,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Medication"
+        "method": "PUT",
+        "url": "Medication/mii-exa-test-data-medication-carboplatin"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Medication/mii-exa-test-data-medication-carboplatin",
       "resource": {
@@ -2723,8 +2723,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Medication"
+        "method": "PUT",
+        "url": "Medication/mii-exa-test-data-medication-paclitaxel"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Medication/mii-exa-test-data-medication-paclitaxel",
       "resource": {
@@ -2793,8 +2793,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Specimen"
+        "method": "PUT",
+        "url": "Specimen/mii-exa-test-data-patient-2-specimen-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Specimen/mii-exa-test-data-patient-2-specimen-1",
       "resource": {
@@ -2885,6 +2885,415 @@
         "subject": {
           "reference": "Patient/mii-exa-test-data-patient-2"
         }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Organization/mii-exa-test-data-organization-charite"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Organization/mii-exa-test-data-organization-charite",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "mii-exa-test-data-organization-charite",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ]
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "code": "prov",
+                "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+                "display": "Healthcare Provider"
+              }
+            ]
+          }
+        ],
+        "name": "Charité – Universitätsmedizin Berlin"
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Organization/mii-exa-test-data-organization-labor-berlin"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Organization/mii-exa-test-data-organization-labor-berlin",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "mii-exa-test-data-organization-labor-berlin",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ]
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "code": "prov",
+                "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+                "display": "Healthcare Provider"
+              }
+            ]
+          }
+        ],
+        "name": "Labor Berlin – Charité Vivantes GmbH"
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Organization/mii-exa-test-data-organization-biobank-charite"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Organization/mii-exa-test-data-organization-biobank-charite",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "mii-exa-test-data-organization-biobank-charite",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Organization"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.bbmri-eric.eu/fhir/StructureDefinition/miabis-organization-description-extension",
+            "valueString": "Zentrale Biobank der Charité"
+          }
+        ],
+        "identifier": [
+          {
+            "system": "http://www.bbmri-eric.eu/",
+            "value": "de-12345"
+          }
+        ],
+        "alias": [
+          "ZeBanC"
+        ],
+        "contact": [
+          {
+            "extension": [
+              {
+                "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/KontaktRolle",
+                "valueString": "Direktor"
+              }
+            ],
+            "name": {
+              "given": [
+                "Koch"
+              ],
+              "prefix": [
+                "Prof."
+              ],
+              "family": "Robert"
+            },
+            "telecom": [
+              {
+                "system": "email",
+                "value": "robert.koch@charite.de"
+              }
+            ],
+            "address": {
+              "line": [
+                "Südring 7"
+              ],
+              "postalCode": "13353",
+              "city": "Berlin"
+            },
+            "purpose": {
+              "coding": [
+                {
+                  "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/CodeSystem/ContactType",
+                  "code": "RESEARCH"
+                }
+              ]
+            }
+          }
+        ],
+        "name": "Zentrale Biobank der Charité",
+        "partOf": {
+          "reference": "Organization/mii-exa-test-data-organization-charite"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Practitioner/mii-exa-test-data-practitioner-physician-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Practitioner/mii-exa-test-data-practitioner-physician-1",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "mii-exa-test-data-practitioner-physician-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ]
+        },
+        "name": [
+          {
+            "given": [
+              "Rahel"
+            ],
+            "family": "Hirsch"
+          }
+        ],
+        "active": true
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "PractitionerRole/mii-exa-test-data-practitioner-role-physician-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/PractitionerRole/mii-exa-test-data-practitioner-role-physician-1",
+      "resource": {
+        "resourceType": "PractitionerRole",
+        "id": "mii-exa-test-data-practitioner-role-physician-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-studie/StructureDefinition/mii-pr-studie-beteiligte-person"
+          ]
+        },
+        "code": [
+          {
+            "coding": [
+              {
+                "code": "309343006",
+                "system": "http://snomed.info/sct",
+                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+                "display": "Physician (occupation)"
+              }
+            ]
+          }
+        ],
+        "active": true,
+        "practitioner": {
+          "reference": "Practitioner/mii-exa-test-data-practitioner-physician-1"
+        },
+        "organization": {
+          "reference": "Organization/mii-exa-test-data-organization-charite"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Device/mii-exa-test-data-device-roche-cobas"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Device/mii-exa-test-data-device-roche-cobas",
+      "resource": {
+        "resourceType": "Device",
+        "id": "mii-exa-test-data-device-roche-cobas",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://www.charite.de/fhir/sid/Laboratory-device-identifier",
+            "value": "RocheCobas"
+          }
+        ],
+        "deviceName": [
+          {
+            "name": "cobas",
+            "type": "manufacturer-name"
+          }
+        ],
+        "status": "active",
+        "manufacturer": "Roche"
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Device/mii-exa-test-data-device-roche-cobas-c303"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Device/mii-exa-test-data-device-roche-cobas-c303",
+      "resource": {
+        "resourceType": "Device",
+        "id": "mii-exa-test-data-device-roche-cobas-c303",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://www.charite.de/fhir/sid/Laboratory-device-identifier",
+            "value": "RocheCobasC303"
+          }
+        ],
+        "deviceName": [
+          {
+            "name": "cobas",
+            "type": "manufacturer-name"
+          }
+        ],
+        "property": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "code": "69684",
+                  "system": "urn:iso:std:iso:11073:10101"
+                }
+              ]
+            }
+          },
+          {
+            "type": {
+              "coding": [
+                {
+                  "code": "69652",
+                  "system": "urn:iso:std:iso:11073:10101"
+                }
+              ]
+            }
+          },
+          {
+            "type": {
+              "coding": [
+                {
+                  "code": "69844",
+                  "system": "urn:iso:std:iso:11073:10101"
+                }
+              ]
+            }
+          }
+        ],
+        "status": "active",
+        "manufacturer": "Roche",
+        "modelNumber": "c 303",
+        "parent": {
+          "reference": "Device/mii-exa-test-data-device-roche-cobas"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Device/mii-exa-test-data-device-roche-cobas-e402"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Device/mii-exa-test-data-device-roche-cobas-e402",
+      "resource": {
+        "resourceType": "Device",
+        "id": "mii-exa-test-data-device-roche-cobas-e402",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://www.charite.de/fhir/sid/Laboratory-device-identifier",
+            "value": "RocheCobasE402"
+          }
+        ],
+        "deviceName": [
+          {
+            "name": "cobas",
+            "type": "manufacturer-name"
+          }
+        ],
+        "property": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "code": "160220",
+                  "system": "urn:iso:std:iso:11073:10101"
+                }
+              ]
+            }
+          }
+        ],
+        "status": "active",
+        "manufacturer": "Roche",
+        "modelNumber": "e 402",
+        "parent": {
+          "reference": "Device/mii-exa-test-data-device-roche-cobas"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "DeviceMetric/mii-exa-test-data-devicemetric-roche-cobas-c303-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/DeviceMetric/mii-exa-test-data-devicemetric-roche-cobas-c303-1",
+      "resource": {
+        "resourceType": "DeviceMetric",
+        "id": "mii-exa-test-data-devicemetric-roche-cobas-c303-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://www.charite.de/fhir/sid/Laboratory-device-identifier",
+            "value": "RocheCobasC303-160192"
+          }
+        ],
+        "type": {
+          "coding": [
+            {
+              "code": "160192",
+              "system": "urn:iso:std:iso:11073:10101"
+            }
+          ]
+        },
+        "source": {
+          "reference": "Device/mii-exa-test-data-device-roche-cobas-c303"
+        },
+        "category": "measurement"
       }
     }
   ],

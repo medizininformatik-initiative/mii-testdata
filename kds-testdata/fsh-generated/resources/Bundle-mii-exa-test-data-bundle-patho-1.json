@@ -13,8 +13,8 @@
   "entry": [
     {
       "request": {
-        "method": "POST",
-        "url": "Patient"
+        "method": "PUT",
+        "url": "Patient/mii-exa-test-data-patho-patient-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Patient/mii-exa-test-data-patho-patient-1",
       "resource": {
@@ -49,8 +49,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Encounter"
+        "method": "PUT",
+        "url": "Encounter/mii-exa-test-data-patho-encounter-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Encounter/mii-exa-test-data-patho-encounter-1",
       "resource": {
@@ -82,8 +82,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "List"
+        "method": "PUT",
+        "url": "List/mii-exa-test-data-patient-1-patho-active-problems-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/List/mii-exa-test-data-patient-1-patho-active-problems-1",
       "resource": {
@@ -130,8 +130,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "List"
+        "method": "PUT",
+        "url": "List/mii-exa-test-data-patient-1-patho-hopi-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/List/mii-exa-test-data-patient-1-patho-hopi-1",
       "resource": {
@@ -178,8 +178,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Condition"
+        "method": "PUT",
+        "url": "Condition/mii-exa-test-data-patient-1-patho-problem-list-item-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Condition/mii-exa-test-data-patient-1-patho-problem-list-item-1",
       "resource": {

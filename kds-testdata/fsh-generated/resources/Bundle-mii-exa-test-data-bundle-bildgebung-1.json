@@ -13,8 +13,8 @@
   "entry": [
     {
       "request": {
-        "method": "POST",
-        "url": "Patient"
+        "method": "PUT",
+        "url": "Patient/mii-exa-test-data-bildgebung-patient-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Patient/mii-exa-test-data-bildgebung-patient-1",
       "resource": {
@@ -49,8 +49,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Encounter"
+        "method": "PUT",
+        "url": "Encounter/mii-exa-test-data-bildgebung-encounter-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Encounter/mii-exa-test-data-bildgebung-encounter-1",
       "resource": {
@@ -82,8 +82,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "ServiceRequest"
+        "method": "PUT",
+        "url": "ServiceRequest/mii-exa-test-data-anforderung"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/ServiceRequest/mii-exa-test-data-anforderung",
       "resource": {
@@ -161,8 +161,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Procedure"
+        "method": "PUT",
+        "url": "Procedure/mii-exa-test-data-bildgebungsprozedur"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Procedure/mii-exa-test-data-bildgebungsprozedur",
       "resource": {
@@ -231,8 +231,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "BodyStructure"
+        "method": "PUT",
+        "url": "BodyStructure/mii-exa-test-data-koerperstruktur"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/BodyStructure/mii-exa-test-data-koerperstruktur",
       "resource": {
@@ -289,8 +289,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-radiologische-beobachtung"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-radiologische-beobachtung",
       "resource": {
@@ -395,8 +395,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "DiagnosticReport"
+        "method": "PUT",
+        "url": "DiagnosticReport/mii-exa-test-data-befundbericht"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/DiagnosticReport/mii-exa-test-data-befundbericht",
       "resource": {
@@ -485,8 +485,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Device"
+        "method": "PUT",
+        "url": "Device/mii-exa-test-data-geraet"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Device/mii-exa-test-data-geraet",
       "resource": {
@@ -515,8 +515,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Procedure"
+        "method": "PUT",
+        "url": "Procedure/mii-exa-test-data-befundungsprozedur"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Procedure/mii-exa-test-data-befundungsprozedur",
       "resource": {
@@ -585,8 +585,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "CarePlan"
+        "method": "PUT",
+        "url": "CarePlan/mii-exa-test-data-behandlungsempfehlung"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/CarePlan/mii-exa-test-data-behandlungsempfehlung",
       "resource": {
@@ -619,8 +619,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "ImagingStudy"
+        "method": "PUT",
+        "url": "ImagingStudy/mii-exa-test-data-bildgebungsstudie"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/ImagingStudy/mii-exa-test-data-bildgebungsstudie",
       "resource": {
@@ -851,8 +851,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "MedicationAdministration"
+        "method": "PUT",
+        "url": "MedicationAdministration/mii-exa-test-data-kontrastmittelgabe"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/MedicationAdministration/mii-exa-test-data-kontrastmittelgabe",
       "resource": {
@@ -927,8 +927,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Composition"
+        "method": "PUT",
+        "url": "Composition/mii-exa-test-data-semistrukt-befundbericht"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Composition/mii-exa-test-data-semistrukt-befundbericht",
       "resource": {

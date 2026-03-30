@@ -13,8 +13,8 @@
   "entry": [
     {
       "request": {
-        "method": "POST",
-        "url": "Patient"
+        "method": "PUT",
+        "url": "Patient/mii-exa-test-data-molgen-patient-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Patient/mii-exa-test-data-molgen-patient-1",
       "resource": {
@@ -49,8 +49,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Encounter"
+        "method": "PUT",
+        "url": "Encounter/mii-exa-test-data-molgen-encounter-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Encounter/mii-exa-test-data-molgen-encounter-1",
       "resource": {
@@ -82,8 +82,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Patient"
+        "method": "PUT",
+        "url": "Patient/mii-exa-test-data-molgen-patient-2"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Patient/mii-exa-test-data-molgen-patient-2",
       "resource": {
@@ -118,8 +118,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Encounter"
+        "method": "PUT",
+        "url": "Encounter/mii-exa-test-data-molgen-encounter-2"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Encounter/mii-exa-test-data-molgen-encounter-2",
       "resource": {
@@ -151,8 +151,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Device"
+        "method": "PUT",
+        "url": "Device/mii-exa-test-data-molgen-device-sequencer"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Device/mii-exa-test-data-molgen-device-sequencer",
       "resource": {
@@ -179,8 +179,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "ServiceRequest"
+        "method": "PUT",
+        "url": "ServiceRequest/mii-exa-test-data-patient-3-molgen-anforderung-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/ServiceRequest/mii-exa-test-data-patient-3-molgen-anforderung-1",
       "resource": {
@@ -274,8 +274,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "DiagnosticReport"
+        "method": "PUT",
+        "url": "DiagnosticReport/mii-exa-test-data-patient-3-molgen-befundbericht-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/DiagnosticReport/mii-exa-test-data-patient-3-molgen-befundbericht-1",
       "resource": {
@@ -406,8 +406,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-patient-3-molgen-variante-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-3-molgen-variante-1",
       "resource": {
@@ -753,8 +753,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-patient-3-molgen-genotyp-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-3-molgen-genotyp-1",
       "resource": {
@@ -909,8 +909,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Procedure"
+        "method": "PUT",
+        "url": "Procedure/mii-exa-test-data-patient-3-molgen-genomic-study-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Procedure/mii-exa-test-data-patient-3-molgen-genomic-study-1",
       "resource": {
@@ -971,8 +971,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Procedure"
+        "method": "PUT",
+        "url": "Procedure/mii-exa-test-data-patient-3-molgen-genomic-study-analysis-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Procedure/mii-exa-test-data-patient-3-molgen-genomic-study-analysis-1",
       "resource": {
@@ -1086,8 +1086,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-patient-3-molgen-molekulare-konsequenz-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-3-molgen-molekulare-konsequenz-1",
       "resource": {
@@ -1204,8 +1204,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-patient-3-molgen-diagnostische-implikation-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-3-molgen-diagnostische-implikation-1",
       "resource": {
@@ -1310,8 +1310,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-patient-3-molgen-therapeutische-implikation-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-3-molgen-therapeutische-implikation-1",
       "resource": {
@@ -1490,8 +1490,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-patient-3-molgen-mutationslast-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-3-molgen-mutationslast-1",
       "resource": {
@@ -1594,8 +1594,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-patient-3-molgen-msi-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-3-molgen-msi-1",
       "resource": {
@@ -1701,8 +1701,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Task"
+        "method": "PUT",
+        "url": "Task/mii-exa-test-data-patient-3-molgen-medikationsempfehlung-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Task/mii-exa-test-data-patient-3-molgen-medikationsempfehlung-1",
       "resource": {
@@ -1761,8 +1761,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Task"
+        "method": "PUT",
+        "url": "Task/mii-exa-test-data-patient-3-molgen-folgemassnahme-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Task/mii-exa-test-data-patient-3-molgen-folgemassnahme-1",
       "resource": {
@@ -1821,8 +1821,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "FamilyMemberHistory"
+        "method": "PUT",
+        "url": "FamilyMemberHistory/mii-exa-test-data-patient-3-molgen-family-member-history-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/FamilyMemberHistory/mii-exa-test-data-patient-3-molgen-family-member-history-1",
       "resource": {
@@ -1923,8 +1923,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "RiskAssessment"
+        "method": "PUT",
+        "url": "RiskAssessment/mii-exa-test-data-patient-3-molgen-polygener-risiko-score-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/RiskAssessment/mii-exa-test-data-patient-3-molgen-polygener-risiko-score-1",
       "resource": {
@@ -2019,8 +2019,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-patient-3-molgen-biomarker-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-3-molgen-biomarker-1",
       "resource": {
@@ -2104,8 +2104,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "ServiceRequest"
+        "method": "PUT",
+        "url": "ServiceRequest/mii-exa-test-data-patient-4-molgen-anforderung-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/ServiceRequest/mii-exa-test-data-patient-4-molgen-anforderung-1",
       "resource": {
@@ -2207,8 +2207,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "DiagnosticReport"
+        "method": "PUT",
+        "url": "DiagnosticReport/mii-exa-test-data-patient-4-molgen-befundbericht-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/DiagnosticReport/mii-exa-test-data-patient-4-molgen-befundbericht-1",
       "resource": {
@@ -2305,8 +2305,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-patient-4-molgen-variante-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-4-molgen-variante-1",
       "resource": {
@@ -2578,8 +2578,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Procedure"
+        "method": "PUT",
+        "url": "Procedure/mii-exa-test-data-patient-4-molgen-genomic-study-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Procedure/mii-exa-test-data-patient-4-molgen-genomic-study-1",
       "resource": {
@@ -2640,8 +2640,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Procedure"
+        "method": "PUT",
+        "url": "Procedure/mii-exa-test-data-patient-4-molgen-genomic-study-analysis-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Procedure/mii-exa-test-data-patient-4-molgen-genomic-study-analysis-1",
       "resource": {
@@ -2851,8 +2851,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-patient-4-molgen-molekulare-konsequenz-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-4-molgen-molekulare-konsequenz-1",
       "resource": {
@@ -2998,8 +2998,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-patient-4-molgen-diagnostische-implikation-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-4-molgen-diagnostische-implikation-1",
       "resource": {
@@ -3169,8 +3169,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "FamilyMemberHistory"
+        "method": "PUT",
+        "url": "FamilyMemberHistory/mii-exa-test-data-patient-4-molgen-family-member-history-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/FamilyMemberHistory/mii-exa-test-data-patient-4-molgen-family-member-history-1",
       "resource": {
@@ -3266,8 +3266,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "ServiceRequest"
+        "method": "PUT",
+        "url": "ServiceRequest/mii-exa-test-data-patient-3-molgen-anforderung-2"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/ServiceRequest/mii-exa-test-data-patient-3-molgen-anforderung-2",
       "resource": {
@@ -3356,8 +3356,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-patient-3-molgen-variante-2"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-3-molgen-variante-2",
       "resource": {
@@ -3691,8 +3691,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-patient-3-molgen-therapeutische-implikation-2"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-3-molgen-therapeutische-implikation-2",
       "resource": {
@@ -3835,8 +3835,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-patient-3-molgen-variante-3"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-3-molgen-variante-3",
       "resource": {
@@ -4108,8 +4108,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-patient-3-molgen-therapeutische-implikation-3"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-3-molgen-therapeutische-implikation-3",
       "resource": {

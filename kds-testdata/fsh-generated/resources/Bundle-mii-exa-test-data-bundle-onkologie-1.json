@@ -13,8 +13,8 @@
   "entry": [
     {
       "request": {
-        "method": "POST",
-        "url": "Patient"
+        "method": "PUT",
+        "url": "Patient/mii-exa-test-data-onko-patient-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Patient/mii-exa-test-data-onko-patient-1",
       "resource": {
@@ -49,8 +49,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Encounter"
+        "method": "PUT",
+        "url": "Encounter/mii-exa-test-data-onko-encounter-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Encounter/mii-exa-test-data-onko-encounter-1",
       "resource": {
@@ -82,8 +82,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Condition"
+        "method": "PUT",
+        "url": "Condition/mii-exa-test-data-onko-diagnose-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Condition/mii-exa-test-data-onko-diagnose-1",
       "resource": {
@@ -171,8 +171,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Condition"
+        "method": "PUT",
+        "url": "Condition/mii-exa-test-data-onko-fruehere-tumorerkrankung-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Condition/mii-exa-test-data-onko-fruehere-tumorerkrankung-1",
       "resource": {
@@ -269,8 +269,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Specimen"
+        "method": "PUT",
+        "url": "Specimen/mii-exa-test-data-onko-specimen-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Specimen/mii-exa-test-data-onko-specimen-1",
       "resource": {
@@ -317,8 +317,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "DiagnosticReport"
+        "method": "PUT",
+        "url": "DiagnosticReport/mii-exa-test-data-onko-befund-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/DiagnosticReport/mii-exa-test-data-onko-befund-1",
       "resource": {
@@ -367,8 +367,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-onko-grading-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-onko-grading-1",
       "resource": {
@@ -436,8 +436,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-onko-tumorgroesse-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-onko-tumorgroesse-1",
       "resource": {
@@ -510,8 +510,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-onko-histologie-icdo3-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-onko-histologie-icdo3-1",
       "resource": {
@@ -582,8 +582,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-onko-anzahl-untersuchte-lymphknoten-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-onko-anzahl-untersuchte-lymphknoten-1",
       "resource": {
@@ -648,8 +648,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-onko-anzahl-befallene-lymphknoten-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-onko-anzahl-befallene-lymphknoten-1",
       "resource": {
@@ -714,8 +714,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-onko-anzahl-untersuchte-sentinel-lymphknoten-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-onko-anzahl-untersuchte-sentinel-lymphknoten-1",
       "resource": {
@@ -780,8 +780,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-onko-anzahl-befallene-sentinel-lymphknoten-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-onko-anzahl-befallene-sentinel-lymphknoten-1",
       "resource": {
@@ -841,8 +841,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-onko-tnm-t-kategorie-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-onko-tnm-t-kategorie-1",
       "resource": {
@@ -917,8 +917,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-onko-tnm-n-kategorie-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-onko-tnm-n-kategorie-1",
       "resource": {
@@ -1001,8 +1001,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-onko-tnm-n-kategorie-sn-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-onko-tnm-n-kategorie-sn-1",
       "resource": {
@@ -1112,8 +1112,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-onko-tnm-m-kategorie-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-onko-tnm-m-kategorie-1",
       "resource": {
@@ -1212,8 +1212,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-onko-tnm-l-kategorie-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-onko-tnm-l-kategorie-1",
       "resource": {
@@ -1274,8 +1274,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-onko-tnm-v-kategorie-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-onko-tnm-v-kategorie-1",
       "resource": {
@@ -1336,8 +1336,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-onko-tnm-pn-kategorie-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-onko-tnm-pn-kategorie-1",
       "resource": {
@@ -1398,8 +1398,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-onko-tnm-s-kategorie-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-onko-tnm-s-kategorie-1",
       "resource": {
@@ -1460,8 +1460,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-onko-tnm-y-symbol-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-onko-tnm-y-symbol-1",
       "resource": {
@@ -1523,8 +1523,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-onko-tnm-r-symbol-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-onko-tnm-r-symbol-1",
       "resource": {
@@ -1586,8 +1586,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-onko-tnm-a-symbol-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-onko-tnm-a-symbol-1",
       "resource": {
@@ -1649,8 +1649,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-onko-tnm-m-symbol-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-onko-tnm-m-symbol-1",
       "resource": {
@@ -1712,8 +1712,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-onko-tnm-klassifikation-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-onko-tnm-klassifikation-1",
       "resource": {
@@ -1801,8 +1801,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-onko-figo-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-onko-figo-1",
       "resource": {
@@ -1859,8 +1859,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-onko-residualstatus-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-onko-residualstatus-1",
       "resource": {
@@ -1922,8 +1922,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-onko-fernmetastasen-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-onko-fernmetastasen-1",
       "resource": {
@@ -1976,8 +1976,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-onko-ecog-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-onko-ecog-1",
       "resource": {
@@ -2035,8 +2035,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-onko-karnofsky-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-onko-karnofsky-1",
       "resource": {
@@ -2094,8 +2094,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-onko-asa-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-onko-asa-1",
       "resource": {
@@ -2148,8 +2148,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Procedure"
+        "method": "PUT",
+        "url": "Procedure/mii-exa-test-data-onko-operation-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Procedure/mii-exa-test-data-onko-operation-1",
       "resource": {
@@ -2274,8 +2274,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Procedure"
+        "method": "PUT",
+        "url": "Procedure/mii-exa-test-data-onko-strahlentherapie-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Procedure/mii-exa-test-data-onko-strahlentherapie-1",
       "resource": {
@@ -2382,8 +2382,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Procedure"
+        "method": "PUT",
+        "url": "Procedure/mii-exa-test-data-onko-strahlentherapie-bestrahlung-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Procedure/mii-exa-test-data-onko-strahlentherapie-bestrahlung-1",
       "resource": {
@@ -2527,8 +2527,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Procedure"
+        "method": "PUT",
+        "url": "Procedure/mii-exa-test-data-onko-bestrahlung-nuklearmedizin-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Procedure/mii-exa-test-data-onko-bestrahlung-nuklearmedizin-1",
       "resource": {
@@ -2672,8 +2672,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Procedure"
+        "method": "PUT",
+        "url": "Procedure/mii-exa-test-data-onko-systemische-therapie-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Procedure/mii-exa-test-data-onko-systemische-therapie-1",
       "resource": {
@@ -2791,8 +2791,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "MedicationStatement"
+        "method": "PUT",
+        "url": "MedicationStatement/mii-exa-test-data-onko-medikation-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/MedicationStatement/mii-exa-test-data-onko-medikation-1",
       "resource": {
@@ -2841,8 +2841,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "MedicationStatement"
+        "method": "PUT",
+        "url": "MedicationStatement/mii-exa-test-data-onko-medikation-2"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/MedicationStatement/mii-exa-test-data-onko-medikation-2",
       "resource": {
@@ -2891,8 +2891,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "MedicationStatement"
+        "method": "PUT",
+        "url": "MedicationStatement/mii-exa-test-data-onko-medikation-3"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/MedicationStatement/mii-exa-test-data-onko-medikation-3",
       "resource": {
@@ -2940,8 +2940,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "CarePlan"
+        "method": "PUT",
+        "url": "CarePlan/mii-exa-test-data-onko-tumorkonferenz-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/CarePlan/mii-exa-test-data-onko-tumorkonferenz-1",
       "resource": {
@@ -3028,8 +3028,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "CarePlan"
+        "method": "PUT",
+        "url": "CarePlan/mii-exa-test-data-onko-tumorkonferenz-2"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/CarePlan/mii-exa-test-data-onko-tumorkonferenz-2",
       "resource": {
@@ -3117,8 +3117,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "CarePlan"
+        "method": "PUT",
+        "url": "CarePlan/mii-exa-test-data-onko-tumorkonferenz-molekular-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/CarePlan/mii-exa-test-data-onko-tumorkonferenz-molekular-1",
       "resource": {
@@ -3194,8 +3194,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "ServiceRequest"
+        "method": "PUT",
+        "url": "ServiceRequest/mii-exa-test-data-onko-therapieempfehlung-op-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/ServiceRequest/mii-exa-test-data-onko-therapieempfehlung-op-1",
       "resource": {
@@ -3264,8 +3264,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "MedicationRequest"
+        "method": "PUT",
+        "url": "MedicationRequest/mii-exa-test-data-onko-therapieempfehlung-medikation-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/MedicationRequest/mii-exa-test-data-onko-therapieempfehlung-medikation-1",
       "resource": {
@@ -3312,8 +3312,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "MedicationRequest"
+        "method": "PUT",
+        "url": "MedicationRequest/mii-exa-test-data-onko-therapieempfehlung-medikation-2"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/MedicationRequest/mii-exa-test-data-onko-therapieempfehlung-medikation-2",
       "resource": {
@@ -3355,8 +3355,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "RequestGroup"
+        "method": "PUT",
+        "url": "RequestGroup/mii-exa-test-data-onko-therapieempfehlung-kombi-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/RequestGroup/mii-exa-test-data-onko-therapieempfehlung-kombi-1",
       "resource": {
@@ -3426,8 +3426,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "RequestGroup"
+        "method": "PUT",
+        "url": "RequestGroup/mii-exa-test-data-onko-therapieempfehlung-parp-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/RequestGroup/mii-exa-test-data-onko-therapieempfehlung-parp-1",
       "resource": {
@@ -3479,8 +3479,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "MedicationRequest"
+        "method": "PUT",
+        "url": "MedicationRequest/mii-exa-test-data-onko-therapieempfehlung-niraparib"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/MedicationRequest/mii-exa-test-data-onko-therapieempfehlung-niraparib",
       "resource": {
@@ -3527,8 +3527,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "AdverseEvent"
+        "method": "PUT",
+        "url": "AdverseEvent/mii-exa-test-data-onko-nebenwirkung-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/AdverseEvent/mii-exa-test-data-onko-nebenwirkung-1",
       "resource": {
@@ -3586,8 +3586,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "AdverseEvent"
+        "method": "PUT",
+        "url": "AdverseEvent/mii-exa-test-data-onko-nebenwirkung-2"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/AdverseEvent/mii-exa-test-data-onko-nebenwirkung-2",
       "resource": {
@@ -3640,8 +3640,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-onko-verlauf-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-onko-verlauf-1",
       "resource": {
@@ -3766,8 +3766,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-onko-verlauf-2"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-onko-verlauf-2",
       "resource": {
@@ -3879,8 +3879,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-onko-tod-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-onko-tod-1",
       "resource": {
@@ -3945,8 +3945,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-onko-tod-2"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-onko-tod-2",
       "resource": {
@@ -3993,8 +3993,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-onko-genetische-variante-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-onko-genetische-variante-1",
       "resource": {
@@ -4075,8 +4075,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-onko-genetische-variante-2"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-onko-genetische-variante-2",
       "resource": {
@@ -4145,8 +4145,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-onko-studienteilnahme-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-onko-studienteilnahme-1",
       "resource": {
@@ -4199,8 +4199,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-onko-studienteilnahme-2"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-onko-studienteilnahme-2",
       "resource": {
@@ -4250,8 +4250,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-onko-mamma-menopause-status-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-onko-mamma-menopause-status-1",
       "resource": {
@@ -4301,8 +4301,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-onko-mamma-rezeptorstatus-estrogen-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-onko-mamma-rezeptorstatus-estrogen-1",
       "resource": {
@@ -4406,8 +4406,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-onko-mamma-rezeptorstatus-progesteron-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-onko-mamma-rezeptorstatus-progesteron-1",
       "resource": {
@@ -4500,8 +4500,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-onko-mamma-her2neu-status-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-onko-mamma-her2neu-status-1",
       "resource": {
@@ -4578,8 +4578,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-onko-mamma-her2neu-status-2"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-onko-mamma-her2neu-status-2",
       "resource": {
@@ -4676,8 +4676,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Procedure"
+        "method": "PUT",
+        "url": "Procedure/mii-exa-test-data-onko-mamma-praeop-markierung-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Procedure/mii-exa-test-data-onko-mamma-praeop-markierung-1",
       "resource": {
@@ -4732,8 +4732,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Procedure"
+        "method": "PUT",
+        "url": "Procedure/mii-exa-test-data-onko-mamma-operation-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Procedure/mii-exa-test-data-onko-mamma-operation-1",
       "resource": {
@@ -4823,8 +4823,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Procedure"
+        "method": "PUT",
+        "url": "Procedure/mii-exa-test-data-onko-mamma-sozialdienst-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Procedure/mii-exa-test-data-onko-mamma-sozialdienst-1",
       "resource": {
@@ -4888,8 +4888,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-onko-prostata-psa-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-onko-prostata-psa-1",
       "resource": {
@@ -4933,8 +4933,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-onko-prostata-anzahl-stanzen-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-onko-prostata-anzahl-stanzen-1",
       "resource": {
@@ -4976,8 +4976,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-onko-prostata-positive-stanzen-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-onko-prostata-positive-stanzen-1",
       "resource": {
@@ -5019,8 +5019,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-onko-prostata-ca-befall-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-onko-prostata-ca-befall-1",
       "resource": {
@@ -5067,8 +5067,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-onko-prostata-gleason-primary-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-onko-prostata-gleason-primary-1",
       "resource": {
@@ -5121,8 +5121,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-onko-prostata-gleason-secondary-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-onko-prostata-gleason-secondary-1",
       "resource": {
@@ -5172,8 +5172,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-onko-prostata-gleason-grade-group-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-onko-prostata-gleason-grade-group-1",
       "resource": {
@@ -5231,8 +5231,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Procedure"
+        "method": "PUT",
+        "url": "Procedure/mii-exa-test-data-onko-prostata-surgery-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Procedure/mii-exa-test-data-onko-prostata-surgery-1",
       "resource": {
@@ -5302,8 +5302,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-onko-prostata-komplikation-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-onko-prostata-komplikation-1",
       "resource": {
@@ -5364,8 +5364,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-onko-krk-abstand-anokutan-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-onko-krk-abstand-anokutan-1",
       "resource": {
@@ -5412,8 +5412,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-onko-krk-abstand-crm-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-onko-krk-abstand-crm-1",
       "resource": {
@@ -5460,8 +5460,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-onko-krk-abstand-aboral-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-onko-krk-abstand-aboral-1",
       "resource": {
@@ -5508,8 +5508,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-onko-krk-abstand-mesorektal-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-onko-krk-abstand-mesorektal-1",
       "resource": {
@@ -5556,8 +5556,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-onko-krk-anastomoseninsuffizienz-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-onko-krk-anastomoseninsuffizienz-1",
       "resource": {
@@ -5607,8 +5607,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Procedure"
+        "method": "PUT",
+        "url": "Procedure/mii-exa-test-data-onko-krk-stoma-markierung-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Procedure/mii-exa-test-data-onko-krk-stoma-markierung-1",
       "resource": {
@@ -5667,8 +5667,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Procedure"
+        "method": "PUT",
+        "url": "Procedure/mii-exa-test-data-onko-krk-operation-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Procedure/mii-exa-test-data-onko-krk-operation-1",
       "resource": {
@@ -5744,8 +5744,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Specimen"
+        "method": "PUT",
+        "url": "Specimen/mii-exa-test-data-onko-krk-specimen-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Specimen/mii-exa-test-data-onko-krk-specimen-1",
       "resource": {
@@ -5803,8 +5803,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-onko-melanom-breslow-tiefe-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-onko-melanom-breslow-tiefe-1",
       "resource": {
@@ -5863,8 +5863,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-onko-melanom-breslow-tiefe-2"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-onko-melanom-breslow-tiefe-2",
       "resource": {
@@ -5917,8 +5917,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-onko-melanom-ulzeration-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-onko-melanom-ulzeration-1",
       "resource": {
@@ -5971,8 +5971,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-onko-melanom-ulzeration-2"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-onko-melanom-ulzeration-2",
       "resource": {
@@ -6022,8 +6022,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-onko-melanom-sicherheitsabstand-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-onko-melanom-sicherheitsabstand-1",
       "resource": {
@@ -6073,8 +6073,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-onko-melanom-sicherheitsabstand-2"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-onko-melanom-sicherheitsabstand-2",
       "resource": {
@@ -6127,8 +6127,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-onko-melanom-ldh-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-onko-melanom-ldh-1",
       "resource": {
@@ -6186,8 +6186,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-onko-melanom-ldh-2"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-onko-melanom-ldh-2",
       "resource": {
@@ -6261,8 +6261,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Procedure"
+        "method": "PUT",
+        "url": "Procedure/mii-exa-test-data-onko-melanom-exzision-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Procedure/mii-exa-test-data-onko-melanom-exzision-1",
       "resource": {
