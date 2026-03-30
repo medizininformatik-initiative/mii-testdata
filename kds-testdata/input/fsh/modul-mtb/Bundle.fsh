@@ -66,3 +66,8 @@ Description: "Bundle: MTB Testdaten Patient-1"
 * insert AddBundleEntry(mii-exa-test-data-mtb-response-befund-1, Observation)
 * insert AddBundleEntry(mii-exa-test-data-mtb-antrag-kostenuebernahme-1, Claim)
 * insert AddBundleEntry(mii-exa-test-data-mtb-antwort-kostenuebernahme-1, ClaimResponse)
+// Supporting resources
+* insert AddBundleEntry(mii-exa-test-data-mtb-labobs-ecog-1, Observation)
+* insert AddBundleEntry(mii-exa-test-data-mtb-labobs-vorbefund-1, Observation)
+* insert AddBundleEntry(mii-exa-test-data-mtb-specimen-1, Specimen)
+* insert AddBundleEntry(mii-exa-test-data-organization-charite, Organization)

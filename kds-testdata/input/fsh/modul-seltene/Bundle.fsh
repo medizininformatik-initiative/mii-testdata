@@ -40,3 +40,10 @@ Description: "Bundle: Seltene Erkrankungen Testdaten Patient-3"
 * insert AddBundleEntry(mii-exa-test-data-patient-3-seltene-therapie-kombination-1, RequestGroup)
 * insert AddBundleEntry(mii-exa-test-data-patient-3-seltene-therapie-durchgefuehrt-1, Procedure)
 * insert AddBundleEntry(mii-exa-test-data-patient-3-seltene-therapie-durchgefuehrt-2, Procedure)
+// Supporting resources
+* insert AddBundleEntry(mii-exa-test-data-seltene-labobs-1, Observation)
+* insert AddBundleEntry(mii-exa-test-data-seltene-molgen-befundbericht-1, DiagnosticReport)
+* insert AddBundleEntry(mii-exa-test-data-seltene-molgen-variante-1, Observation)
+// Infrastructure
+* insert AddBundleEntry(mii-exa-test-data-practitioner-physician-1, Practitioner)
+* insert AddBundleEntry(mii-exa-test-data-practitioner-physician-2, Practitioner)

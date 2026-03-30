@@ -18,7 +18,7 @@ Description: "FamilyMemberHistory: Familienanamnese fuer BRAF-Mutation"
 * reasonCode.coding[icd10-gm].version = "2022"
 * reasonCode.coding[icd10-gm].code = #C21.8
 * reasonCode.coding[icd10-gm].display = "Bösartige Neubildung: Rektum, Anus und Analkanal, mehrere Teilbereiche überlappend"
-* reasonReference = Reference(mii-exa-test-data-patient-3-diagnose-1)
+* reasonReference = Reference(mii-exa-test-data-molgen-diagnose-1)
 * condition[0].code.coding[sct] = $sct#830150003 "Malignant melanoma with B-Raf proto-oncogene, serine/threonine kinase V600E mutation (disorder)"
 * condition[0].code.coding[icd10-gm].system = "http://fhir.de/CodeSystem/bfarm/icd-10-gm"
 * condition[0].code.coding[icd10-gm].version = "2022"

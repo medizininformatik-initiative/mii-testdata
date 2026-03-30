@@ -24,3 +24,34 @@ Description: "Bildgebung Test Encounter"
 * subject = Reference(mii-exa-test-data-bildgebung-patient-1)
 * period.start = "2024-03-01"
 * period.end = "2024-03-15"
+
+// Stub resources for Bildgebung (needed for referential integrity)
+Instance: mii-exa-test-data-bildgebung-diagnose-1
+InstanceOf: Condition
+Usage: #example
+Description: "Bildgebung Diagnose - Lungentumor"
+* insert TestDataLabel
+* clinicalStatus = http://terminology.hl7.org/CodeSystem/condition-clinical#active
+* verificationStatus = http://terminology.hl7.org/CodeSystem/condition-ver-status#confirmed
+* code.coding = http://fhir.de/CodeSystem/bfarm/icd-10-gm#C34.1 "Bösartige Neubildung: Oberlappen (-Bronchus)"
+* subject = Reference(mii-exa-test-data-bildgebung-patient-1)
+
+Instance: mii-exa-test-data-bildgebung-labobs-1
+InstanceOf: Observation
+Usage: #example
+Description: "Bildgebung Lab - Tumorgröße"
+* insert TestDataLabel
+* status = #final
+* code = http://loinc.org#21889-1 "Size Tumor"
+* subject = Reference(mii-exa-test-data-bildgebung-patient-1)
+* valueQuantity = 32 'mm'
+
+Instance: mii-exa-test-data-bildgebung-medrequest-1
+InstanceOf: MedicationRequest
+Usage: #example
+Description: "Bildgebung MedRequest - Kontrastmittel"
+* insert TestDataLabel
+* status = #completed
+* intent = #order
+* medicationReference = Reference(mii-exa-test-data-medication-dalbavancin)
+* subject = Reference(mii-exa-test-data-bildgebung-patient-1)

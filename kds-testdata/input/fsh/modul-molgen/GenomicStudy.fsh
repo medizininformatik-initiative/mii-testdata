@@ -19,7 +19,7 @@ Description: "Procedure: Genomic Study Analysis BRAF Exon 15 mittels NGS"
 * extension[genome-build].url = "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-genome-build"
 * extension[genome-build].valueCodeableConcept = $loinc#LA26806-2 "GRCh38"
 * extension[specimen].url = "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-specimen"
-* extension[specimen].valueReference = Reference(mii-exa-test-data-patient-3-specimen-1)
+* extension[specimen].valueReference = Reference(mii-exa-test-data-molgen-specimen-1)
 * extension[device].url = "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-device"
 * extension[device].extension[+].url = "device"
 * extension[device].extension[=].valueReference = Reference(mii-exa-test-data-molgen-device-sequencer)
@@ -39,7 +39,7 @@ Description: "Procedure: Genomic Study BRAF-Analyse bei kolorektalem Adenokarzin
 * subject = Reference(mii-exa-test-data-molgen-patient-1)
 * encounter = Reference(mii-exa-test-data-molgen-encounter-1)
 * performedDateTime = "2022-04-07"
-* reasonReference = Reference(mii-exa-test-data-patient-3-diagnose-1)
+* reasonReference = Reference(mii-exa-test-data-molgen-diagnose-1)
 * extension[genomic-study-analysis][+].url = "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-ext"
 * extension[genomic-study-analysis][=].valueReference = Reference(mii-exa-test-data-patient-3-molgen-genomic-study-analysis-1)
 
@@ -58,7 +58,7 @@ Description: "Procedure: Genomic Study Analysis Stufendiagnostik Magenkarzinom-P
 * extension[genome-build].url = "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-genome-build"
 * extension[genome-build].valueCodeableConcept = $loinc#LA26806-2 "GRCh38"
 * extension[specimen].url = "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-specimen"
-* extension[specimen].valueReference = Reference(mii-exa-test-data-patient-4-specimen-1)
+* extension[specimen].valueReference = Reference(mii-exa-test-data-molgen-specimen-2)
 * extension[device].url = "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-device"
 * extension[device].extension[+].url = "device"
 * extension[device].extension[=].valueReference = Reference(mii-exa-test-data-molgen-device-sequencer)
@@ -96,6 +96,6 @@ Description: "Procedure: Genomic Study Stufendiagnostik Magenkarzinom"
 * subject = Reference(mii-exa-test-data-molgen-patient-2)
 * encounter = Reference(mii-exa-test-data-molgen-encounter-2)
 * performedDateTime = "2022-11-30"
-* reasonReference = Reference(mii-exa-test-data-patient-4-diagnose-1)
+* reasonReference = Reference(mii-exa-test-data-molgen-diagnose-2)
 * extension[genomic-study-analysis][+].url = "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-ext"
 * extension[genomic-study-analysis][=].valueReference = Reference(mii-exa-test-data-patient-4-molgen-genomic-study-analysis-1)

@@ -19,7 +19,7 @@ Description: "HPO Assessment: Aortic root aneurysm (Present) - all optional fiel
 * note[+].text = "Aortenwurzeldilatation bei Echokardiographie festgestellt, Z-Score > 3."
 * bodySite = $sct#57034009 "Aortic arch structure"
 * method = $sct#278292003 "Ultrasound imaging"
-* derivedFrom = Reference(mii-exa-test-data-patient-3-labobs-1)
+* derivedFrom = Reference(mii-exa-test-data-seltene-labobs-1)
 * component[+].code = $sct#260411009 "Presence findings"
 * component[=].valueCodeableConcept = $loinc#LA9633-4 "Present"
 

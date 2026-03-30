@@ -14,7 +14,7 @@ Description: "Observation: Mutationslast (TMB) fuer BRAF-Mutation"
 * effectiveDateTime = "2022-04-07"
 * issued = "2022-04-12T10:30:00+02:00"
 * valueQuantity = 12 $ucum#1/1000000{Base} "Mutations/Megabase"
-* specimen = Reference(mii-exa-test-data-patient-3-specimen-1)
+* specimen = Reference(mii-exa-test-data-molgen-specimen-1)
 * derivedFrom = Reference(mii-exa-test-data-patient-3-molgen-variante-1)
 * component[gene-studied].code = $loinc#48018-6 "Gene studied [ID]"
 * component[gene-studied].valueCodeableConcept.text = "Panel-basiert (alle Gene)"

@@ -29,7 +29,7 @@ Description: "ClinicalImpression: Rare disease assessment - all MS elements popu
 * finding[=].itemReference = Reference(mii-exa-test-data-patient-3-seltene-hpo-assessment-3)
 * finding[+].itemCodeableConcept = $HPO#HP:0000098 "Tall stature"
 * finding[=].itemReference = Reference(mii-exa-test-data-patient-3-seltene-hpo-assessment-4)
-* supportingInfo[+] = Reference(mii-exa-test-data-patient-3-molgen-befundbericht-1)
+* supportingInfo[+] = Reference(mii-exa-test-data-seltene-molgen-befundbericht-1)
 * supportingInfo[+] = Reference(mii-exa-test-data-patient-3-seltene-symptom-condition-1)
 * note[+].text = "Erstvorstellung in der Marfan-Sprechstunde. Klinische Diagnose gesichert, molekulargenetische Bestaetigung ausstehend."
 * note[+].text = "Therapieplan erstellt: Losartan 50mg taeglich, jaehrliche Echokardiographie."

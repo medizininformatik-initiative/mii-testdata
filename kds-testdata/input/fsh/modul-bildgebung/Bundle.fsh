@@ -23,3 +23,12 @@ Description: "Bundle: Bildgebung Testdaten Patient-1"
 * insert AddBundleEntry(mii-exa-test-data-bildgebungsstudie, ImagingStudy)
 * insert AddBundleEntry(mii-exa-test-data-kontrastmittelgabe, MedicationAdministration)
 * insert AddBundleEntry(mii-exa-test-data-semistrukt-befundbericht, Composition)
+// Infrastructure
+* insert AddBundleEntry(mii-exa-test-data-organization-biobank-charite, Organization)
+* insert AddBundleEntry(mii-exa-test-data-practitioner-physician-1, Practitioner)
+* insert AddBundleEntry(mii-exa-test-data-practitioner-physician-2, Practitioner)
+* insert AddBundleEntry(mii-exa-test-data-medication-dalbavancin, Medication)
+* insert AddBundleEntry(mii-exa-test-data-bildgebung-diagnose-1, Condition)
+* insert AddBundleEntry(mii-exa-test-data-bildgebung-labobs-1, Observation)
+* insert AddBundleEntry(mii-exa-test-data-bildgebung-medrequest-1, MedicationRequest)
+* insert AddBundleEntry(mii-exa-test-data-organization-charite, Organization)

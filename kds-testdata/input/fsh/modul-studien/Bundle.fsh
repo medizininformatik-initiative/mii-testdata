@@ -14,3 +14,6 @@ Description: "Bundle: Studien Testdaten Patient-1"
 // * insert AddBundleEntry(mii-exa-test-data-practitioner-physician-1, Practitioner)
 // Studieneinschluss
 * insert AddBundleEntry(mii-exa-test-data-studie-einschluss-anfrage-1, ServiceRequest)
+// Infrastructure
+* insert AddBundleEntry(mii-exa-test-data-organization-charite, Organization)
+* insert AddBundleEntry(mii-exa-test-data-practitioner-physician-1, Practitioner)

@@ -13,5 +13,5 @@ Description: "ServiceRequest: Anforderung MR"
 * authoredOn = "2024-07-19T12:03:30+02:00"
 * requester = Reference(mii-exa-test-data-organization-biobank-charite)
 * reasonCode = $sct#268547008 "Screening for malignant neoplasm of breast (procedure)"
-* reasonReference = Reference(mii-exa-test-data-patient-1-diagnose-1)
+* reasonReference = Reference(mii-exa-test-data-bildgebung-diagnose-1)
 * supportingInfo = Reference(mii-exa-test-data-bildgebungsstudie)

@@ -17,7 +17,7 @@ Description: "Test instance for NGS report with all result slices populated"
 * code = $loinc#51969-4 "Genetic analysis report"
 * subject = Reference(mii-exa-test-data-mtb-patient-1)
 * issued = "2024-03-15T00:00:00.000Z"
-* specimen = Reference(mii-exa-test-data-patient-1-specimen-1)
+* specimen = Reference(mii-exa-test-data-mtb-specimen-1)
 * result[TumorMutionalBurden] = Reference(mii-exa-test-data-mtb-mutationslast-1)
 * result[MSI] = Reference(mii-exa-test-data-mtb-mikrosatelliteninstabilitaet-1)
 * result[BRCAness] = Reference(mii-exa-test-data-mtb-brcaness-1)
@@ -380,7 +380,7 @@ Description: "Test instance for immunohistochemistry observation"
 * category[geCategory] = $hl7-v2-0074#GE "Genetics"
 * code.coding[+] = $loinc#85147-7 "PD-L1 by clone 22C3 in Tissue by Immune stain Report"
 * subject = Reference(mii-exa-test-data-mtb-patient-1)
-* specimen = Reference(mii-exa-test-data-patient-1-specimen-1)
+* specimen = Reference(mii-exa-test-data-mtb-specimen-1)
 * valueQuantity.value = 80
 * valueQuantity.unit = "%"
 * valueQuantity.code = #{/100}
@@ -403,7 +403,7 @@ Description: "Test instance for HER2 immunohistochemistry"
 * category[geCategory] = $hl7-v2-0074#GE "Genetics"
 * code.coding[spezifisch] = $loinc#18474-7 "HER2 Ag [Presence] in Tissue by Immune stain"
 * subject = Reference(mii-exa-test-data-mtb-patient-1)
-* specimen = Reference(mii-exa-test-data-patient-1-specimen-1)
+* specimen = Reference(mii-exa-test-data-mtb-specimen-1)
 * valueCodeableConcept = $loinc#LA6576-8 "Positive"
 * component[gene-studied].code.coding = $loinc#48018-6 "Gene studied [ID]"
 * component[gene-studied].valueCodeableConcept.coding = $HGNC#HGNC:3430 "ERBB2"
@@ -423,7 +423,7 @@ Description: "Test instance for PD-L1 immunohistochemistry with all MS elements"
 * category[geCategory] = $hl7-v2-0074#GE "Genetics"
 * code.coding[+] = $loinc#85147-7 "PD-L1 by clone 22C3 in Tissue by Immune stain Report"
 * subject = Reference(mii-exa-test-data-mtb-patient-1)
-* specimen = Reference(mii-exa-test-data-patient-1-specimen-1)
+* specimen = Reference(mii-exa-test-data-mtb-specimen-1)
 * valueQuantity.value = 80
 * valueQuantity.unit = "%"
 * valueQuantity.code = #{/100}
@@ -445,7 +445,7 @@ Description: "Test instance for phosphorylation immunohistochemistry"
 * category[geCategory] = $hl7-v2-0074#GE "Genetics"
 * code.coding[+] = $loinc#55229-9 "Immune stain study"
 * subject = Reference(mii-exa-test-data-mtb-patient-1)
-* specimen = Reference(mii-exa-test-data-patient-1-specimen-1)
+* specimen = Reference(mii-exa-test-data-mtb-specimen-1)
 * valueCodeableConcept = $loinc#LA6576-8 "Positive"
 * component[gene-studied].code.coding = $loinc#48018-6 "Gene studied [ID]"
 * component[gene-studied].valueCodeableConcept.coding = $HGNC#HGNC:3236 "EGFR"
@@ -466,7 +466,7 @@ Description: "Test instance for mismatch repair protein immunohistochemistry"
 // not "Mismatch repair protein in Tissue by Immune stain". The code 85337-4 may be incorrect for MMR testing. Review and replace with correct LOINC code.
 * code = $loinc#85337-4 "Estrogen receptor Ag [Presence] in Breast cancer specimen by Immune stain"
 * subject = Reference(mii-exa-test-data-mtb-patient-1)
-* specimen = Reference(mii-exa-test-data-patient-1-specimen-1)
+* specimen = Reference(mii-exa-test-data-mtb-specimen-1)
 * valueCodeableConcept.coding = $loinc#LA6576-8 "Positive"
 
 // =============================================================================
@@ -483,7 +483,7 @@ Description: "Test instance for MSI by immunohistochemistry"
 * category[labCategory] = $fhir-observation-category#laboratory "Laboratory"
 * code.coding = $loinc#62862-8 "Microsatellite instability [Presence] in Tissue by Immune stain"
 * subject = Reference(mii-exa-test-data-mtb-patient-1)
-* specimen = Reference(mii-exa-test-data-patient-1-specimen-1)
+* specimen = Reference(mii-exa-test-data-mtb-specimen-1)
 * valueCodeableConcept = $loinc#LA14122-8 "Stable"
 
 // =============================================================================
@@ -502,7 +502,7 @@ Description: "Test instance for in situ hybridization biomarker"
 * code.coding[+] = $loinc#49683-6 "ERBB2 gene copy number/Chromosome 17 copy number in Tissue by FISH"
 * method = $SCT#1303773004 "Fluorescence in situ hybridization technique (qualifier value)"
 * subject = Reference(mii-exa-test-data-mtb-patient-1)
-* specimen = Reference(mii-exa-test-data-patient-1-specimen-1)
+* specimen = Reference(mii-exa-test-data-mtb-specimen-1)
 * valueRatio.numerator.value = 2.4
 * valueRatio.denominator.value = 1
 * interpretation = $SCT#260385009 "Negative (qualifier value)"
@@ -523,7 +523,7 @@ Description: "Test instance for HER2 FISH with all component slices"
 * code.coding[spezifisch] = $loinc#49683-6 "ERBB2 gene copy number/Chromosome 17 copy number in Tissue by FISH"
 * method = $SCT#1303773004 "Fluorescence in situ hybridization technique (qualifier value)"
 * subject = Reference(mii-exa-test-data-mtb-patient-1)
-* specimen = Reference(mii-exa-test-data-patient-1-specimen-1)
+* specimen = Reference(mii-exa-test-data-mtb-specimen-1)
 * valueRatio.numerator.value = 1.8
 * valueRatio.denominator.value = 1
 * interpretation = $SCT#260385009 "Negative (qualifier value)"

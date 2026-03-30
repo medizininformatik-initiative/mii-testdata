@@ -16,7 +16,7 @@ Description: "RiskAssessment: Polygener Risiko Score fuer kolorektales Karzinom"
 * subject = Reference(mii-exa-test-data-molgen-patient-1)
 * encounter = Reference(mii-exa-test-data-molgen-encounter-1)
 * occurrenceDateTime = "2022-04-07"
-* condition = Reference(mii-exa-test-data-patient-3-diagnose-1)
+* condition = Reference(mii-exa-test-data-molgen-diagnose-1)
 * basis = Reference(mii-exa-test-data-patient-3-molgen-variante-1)
 * prediction[0].outcome = $sct#363510005 "Malignant tumor of large intestine (disorder)"
 * prediction[0].outcome.text = "Kolorektales Karzinom"

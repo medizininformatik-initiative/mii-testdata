@@ -8,7 +8,7 @@ Description: "Specimen: EDTA-Blut für Klinische Chemie und Hämatologie"
 * extension[gehoertZu].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/VerwaltendeOrganisation"
 * extension[gehoertZu].valueReference = Reference(mii-exa-test-data-organization-biobank-charite)
 * extension[festgestellteDiagnose].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Diagnose"
-* extension[festgestellteDiagnose].valueReference = Reference(mii-exa-test-data-patient-1-diagnose-1)
+* extension[festgestellteDiagnose].valueReference = Reference(mii-exa-test-data-biobank-diagnose-1)
 * identifier.system = "https://www.charite.de/fhir/sid/Bioproben"
 * identifier.value = "BP_000001"
 * status = #available
@@ -58,12 +58,12 @@ Description: "Specimen: EDTA-Blut für Hämatologie"
 * extension[gehoertZu].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/VerwaltendeOrganisation"
 * extension[gehoertZu].valueReference = Reference(mii-exa-test-data-organization-biobank-charite)
 * extension[festgestellteDiagnose].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Diagnose"
-* extension[festgestellteDiagnose].valueReference = Reference(mii-exa-test-data-patient-2-diagnose-1)
+* extension[festgestellteDiagnose].valueReference = Reference(mii-exa-test-data-biobank-diagnose-1)
 * identifier.system = "https://www.charite.de/fhir/sid/Bioproben"
 * identifier.value = "BP_000003"
 * status = #available
 * type.coding[sct] = $sct#445295009 "Blood specimen with edetic acid (specimen)"
-* subject = Reference(mii-exa-test-data-patient-2)
+* subject = Reference(mii-exa-test-data-biobank-patient-2)
 * collection.collectedDateTime = "2024-03-04T06:45:00+01:00"
 * collection.bodySite.coding[sct] = $sct#368208006 "Left upper arm structure (body structure)"
 * container.type = $sct#83059008 "Tube, device (physical object)"
@@ -101,7 +101,7 @@ Description: "Specimen: Serum für Klinische Chemie"
 * extension[gehoertZu].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/VerwaltendeOrganisation"
 * extension[gehoertZu].valueReference = Reference(mii-exa-test-data-organization-biobank-charite)
 * extension[festgestellteDiagnose].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Diagnose"
-* extension[festgestellteDiagnose].valueReference = Reference(mii-exa-test-data-patient-3-diagnose-1)
+* extension[festgestellteDiagnose].valueReference = Reference(mii-exa-test-data-biobank-diagnose-1)
 * identifier.system = "https://www.charite.de/fhir/sid/Bioproben"
 * identifier.value = "BP_000004"
 * status = #available
@@ -124,7 +124,7 @@ Description: "Specimen: EDTA-Blut für Hämatologie"
 * extension[gehoertZu].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/VerwaltendeOrganisation"
 * extension[gehoertZu].valueReference = Reference(mii-exa-test-data-organization-biobank-charite)
 * extension[festgestellteDiagnose].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Diagnose"
-* extension[festgestellteDiagnose].valueReference = Reference(mii-exa-test-data-patient-3-diagnose-1)
+* extension[festgestellteDiagnose].valueReference = Reference(mii-exa-test-data-biobank-diagnose-1)
 * identifier.system = "https://www.charite.de/fhir/sid/Bioproben"
 * identifier.value = "BP_000005"
 * status = #available
@@ -184,7 +184,7 @@ Description: "Specimen: Serum für Klinische Chemie"
 * extension[gehoertZu].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/VerwaltendeOrganisation"
 * extension[gehoertZu].valueReference = Reference(mii-exa-test-data-organization-biobank-charite)
 * extension[festgestellteDiagnose].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Diagnose"
-* extension[festgestellteDiagnose].valueReference = Reference(mii-exa-test-data-patient-4-diagnose-1)
+* extension[festgestellteDiagnose].valueReference = Reference(mii-exa-test-data-biobank-diagnose-1)
 * identifier.system = "https://www.charite.de/fhir/sid/Bioproben"
 * identifier.value = "BP_000006"
 * status = #available
@@ -207,7 +207,7 @@ Description: "Specimen: EDTA-Blut für Hämatologie"
 * extension[gehoertZu].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/VerwaltendeOrganisation"
 * extension[gehoertZu].valueReference = Reference(mii-exa-test-data-organization-biobank-charite)
 * extension[festgestellteDiagnose].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Diagnose"
-* extension[festgestellteDiagnose].valueReference = Reference(mii-exa-test-data-patient-4-diagnose-1)
+* extension[festgestellteDiagnose].valueReference = Reference(mii-exa-test-data-biobank-diagnose-1)
 * identifier.system = "https://www.charite.de/fhir/sid/Bioproben"
 * identifier.value = "BP_000007"
 * status = #available
@@ -230,7 +230,7 @@ Description: "Specimen: EDTA-Blut für Hämatologie"
 * extension[gehoertZu].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/VerwaltendeOrganisation"
 * extension[gehoertZu].valueReference = Reference(mii-exa-test-data-organization-biobank-charite)
 * extension[festgestellteDiagnose].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Diagnose"
-* extension[festgestellteDiagnose].valueReference = Reference(mii-exa-test-data-patient-5-diagnose-1)
+* extension[festgestellteDiagnose].valueReference = Reference(mii-exa-test-data-biobank-diagnose-1)
 * identifier.system = "https://www.charite.de/fhir/sid/Bioproben"
 * identifier.value = "BP_000008"
 * status = #available
@@ -253,7 +253,7 @@ Description: "Specimen: Serum für Klinische Chemie"
 * extension[gehoertZu].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/VerwaltendeOrganisation"
 * extension[gehoertZu].valueReference = Reference(mii-exa-test-data-organization-biobank-charite)
 * extension[festgestellteDiagnose].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Diagnose"
-* extension[festgestellteDiagnose].valueReference = Reference(mii-exa-test-data-patient-5-diagnose-1)
+* extension[festgestellteDiagnose].valueReference = Reference(mii-exa-test-data-biobank-diagnose-1)
 * identifier.system = "https://www.charite.de/fhir/sid/Bioproben"
 * identifier.value = "BP_000009"
 * status = #available
@@ -277,7 +277,7 @@ Description: "Specimen: EDTA-Blut für Hämatologie"
 * extension[gehoertZu].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/VerwaltendeOrganisation"
 * extension[gehoertZu].valueReference = Reference(mii-exa-test-data-organization-biobank-charite)
 * extension[festgestellteDiagnose].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Diagnose"
-* extension[festgestellteDiagnose].valueReference = Reference(mii-exa-test-data-patient-6-diagnose-1)
+* extension[festgestellteDiagnose].valueReference = Reference(mii-exa-test-data-biobank-diagnose-1)
 * identifier.system = "https://www.charite.de/fhir/sid/Bioproben"
 * identifier.value = "BP_000010"
 * status = #available
@@ -300,7 +300,7 @@ Description: "Specimen: Serum für Klinische Chemie"
 * extension[gehoertZu].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/VerwaltendeOrganisation"
 * extension[gehoertZu].valueReference = Reference(mii-exa-test-data-organization-biobank-charite)
 * extension[festgestellteDiagnose].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Diagnose"
-* extension[festgestellteDiagnose].valueReference = Reference(mii-exa-test-data-patient-6-diagnose-1)
+* extension[festgestellteDiagnose].valueReference = Reference(mii-exa-test-data-biobank-diagnose-1)
 * identifier.system = "https://www.charite.de/fhir/sid/Bioproben"
 * identifier.value = "BP_000011"
 * status = #available
@@ -323,7 +323,7 @@ Description: "Specimen: EDTA-Blut für Hämatologie"
 * extension[gehoertZu].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/VerwaltendeOrganisation"
 * extension[gehoertZu].valueReference = Reference(mii-exa-test-data-organization-biobank-charite)
 * extension[festgestellteDiagnose].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Diagnose"
-* extension[festgestellteDiagnose].valueReference = Reference(mii-exa-test-data-patient-7-diagnose-1)
+* extension[festgestellteDiagnose].valueReference = Reference(mii-exa-test-data-biobank-diagnose-1)
 * identifier.system = "https://www.charite.de/fhir/sid/Bioproben"
 * identifier.value = "BP_000012"
 * status = #available
@@ -346,7 +346,7 @@ Description: "Specimen: Serum für Klinische Chemie"
 * extension[gehoertZu].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/VerwaltendeOrganisation"
 * extension[gehoertZu].valueReference = Reference(mii-exa-test-data-organization-biobank-charite)
 * extension[festgestellteDiagnose].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Diagnose"
-* extension[festgestellteDiagnose].valueReference = Reference(mii-exa-test-data-patient-7-diagnose-1)
+* extension[festgestellteDiagnose].valueReference = Reference(mii-exa-test-data-biobank-diagnose-1)
 * identifier.system = "https://www.charite.de/fhir/sid/Bioproben"
 * identifier.value = "BP_000013"
 * status = #available
@@ -369,7 +369,7 @@ Description: "Specimen: EDTA-Blut für Hämatologie"
 * extension[gehoertZu].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/VerwaltendeOrganisation"
 * extension[gehoertZu].valueReference = Reference(mii-exa-test-data-organization-biobank-charite)
 * extension[festgestellteDiagnose].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Diagnose"
-* extension[festgestellteDiagnose].valueReference = Reference(mii-exa-test-data-patient-8-diagnose-1)
+* extension[festgestellteDiagnose].valueReference = Reference(mii-exa-test-data-biobank-diagnose-1)
 * identifier.system = "https://www.charite.de/fhir/sid/Bioproben"
 * identifier.value = "BP_000014"
 * status = #available
@@ -392,7 +392,7 @@ Description: "Specimen: Serum für Klinische Chemie"
 * extension[gehoertZu].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/VerwaltendeOrganisation"
 * extension[gehoertZu].valueReference = Reference(mii-exa-test-data-organization-biobank-charite)
 * extension[festgestellteDiagnose].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Diagnose"
-* extension[festgestellteDiagnose].valueReference = Reference(mii-exa-test-data-patient-8-diagnose-1)
+* extension[festgestellteDiagnose].valueReference = Reference(mii-exa-test-data-biobank-diagnose-1)
 * identifier.system = "https://www.charite.de/fhir/sid/Bioproben"
 * identifier.value = "BP_000015"
 * status = #available
@@ -415,7 +415,7 @@ Description: "Specimen: EDTA-Blut für Hämatologie"
 * extension[gehoertZu].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/VerwaltendeOrganisation"
 * extension[gehoertZu].valueReference = Reference(mii-exa-test-data-organization-biobank-charite)
 * extension[festgestellteDiagnose].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Diagnose"
-* extension[festgestellteDiagnose].valueReference = Reference(mii-exa-test-data-patient-9-diagnose-1)
+* extension[festgestellteDiagnose].valueReference = Reference(mii-exa-test-data-biobank-diagnose-1)
 * identifier.system = "https://www.charite.de/fhir/sid/Bioproben"
 * identifier.value = "BP_000016"
 * status = #available
@@ -438,7 +438,7 @@ Description: "Specimen: Serum für Klinische Chemie"
 * extension[gehoertZu].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/VerwaltendeOrganisation"
 * extension[gehoertZu].valueReference = Reference(mii-exa-test-data-organization-biobank-charite)
 * extension[festgestellteDiagnose].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Diagnose"
-* extension[festgestellteDiagnose].valueReference = Reference(mii-exa-test-data-patient-9-diagnose-1)
+* extension[festgestellteDiagnose].valueReference = Reference(mii-exa-test-data-biobank-diagnose-1)
 * identifier.system = "https://www.charite.de/fhir/sid/Bioproben"
 * identifier.value = "BP_000017"
 * status = #available
@@ -461,7 +461,7 @@ Description: "Specimen: EDTA-Blut für Hämatologie"
 * extension[gehoertZu].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/VerwaltendeOrganisation"
 * extension[gehoertZu].valueReference = Reference(mii-exa-test-data-organization-biobank-charite)
 * extension[festgestellteDiagnose].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Diagnose"
-* extension[festgestellteDiagnose].valueReference = Reference(mii-exa-test-data-patient-10-diagnose-1)
+* extension[festgestellteDiagnose].valueReference = Reference(mii-exa-test-data-biobank-diagnose-1)
 * identifier.system = "https://www.charite.de/fhir/sid/Bioproben"
 * identifier.value = "BP_000018"
 * status = #available
@@ -484,7 +484,7 @@ Description: "Specimen: Serum für Klinische Chemie"
 * extension[gehoertZu].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/VerwaltendeOrganisation"
 * extension[gehoertZu].valueReference = Reference(mii-exa-test-data-organization-biobank-charite)
 * extension[festgestellteDiagnose].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Diagnose"
-* extension[festgestellteDiagnose].valueReference = Reference(mii-exa-test-data-patient-10-diagnose-1)
+* extension[festgestellteDiagnose].valueReference = Reference(mii-exa-test-data-biobank-diagnose-1)
 * identifier.system = "https://www.charite.de/fhir/sid/Bioproben"
 * identifier.value = "BP_000019"
 * status = #available

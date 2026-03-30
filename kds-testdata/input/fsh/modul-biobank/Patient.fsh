@@ -109,3 +109,13 @@ Description: "Biobank Test Patient 9"
 * name.given = "Ingrid"
 * birthDate = 1983-10-04
 * gender = #female
+
+// Stub diagnoses for biobank specimens (referential integrity)
+Instance: mii-exa-test-data-biobank-diagnose-1
+InstanceOf: Condition
+Usage: #example
+Description: "Biobank Diagnose Patient 1"
+* insert TestDataLabel
+* clinicalStatus = http://terminology.hl7.org/CodeSystem/condition-clinical#active
+* code.text = "Biobank-relevante Diagnose"
+* subject = Reference(mii-exa-test-data-biobank-patient-1)

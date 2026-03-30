@@ -15,7 +15,7 @@ Description: "Observation: Genetische Variante fuer BRAF-Mutation"
 * issued = "2022-04-12T10:30:00+02:00"
 * valueCodeableConcept = $loinc#LA9633-4 "Present"
 * method = $loinc#LA26398-0 "Sequencing"
-* specimen = Reference(mii-exa-test-data-patient-3-specimen-1)
+* specimen = Reference(mii-exa-test-data-molgen-specimen-1)
 * device = Reference(mii-exa-test-data-molgen-device-sequencer)
 * component[gene-studied].code = $loinc#48018-6 "Gene studied [ID]"
 * component[gene-studied].valueCodeableConcept = $HGNC#HGNC:1097 "BRAF"
@@ -74,7 +74,7 @@ Description: "Observation: Genetische Variante fuer CTNNA1-Mutation"
 * issued = "2022-12-05T14:00:00+01:00"
 * valueCodeableConcept = $loinc#LA9633-4 "Present"
 * method.coding[0] = $loinc#LA26398-0 "Sequencing"
-* specimen = Reference(mii-exa-test-data-patient-4-specimen-1)
+* specimen = Reference(mii-exa-test-data-molgen-specimen-2)
 * device = Reference(mii-exa-test-data-molgen-device-sequencer)
 * component[gene-studied].valueCodeableConcept = $HGNC#HGNC:2509 "CTNNA1"
 * component[representative-transcript-ref-seq].valueCodeableConcept = $RefSeq#NM_001903.5
@@ -104,7 +104,7 @@ Description: "Observation: Genetische Variante EGFR L858R bei NSCLC"
 * issued = "2024-03-25T10:00:00+01:00"
 * valueCodeableConcept = $loinc#LA9633-4 "Present"
 * method = $loinc#LA26398-0 "Sequencing"
-* specimen = Reference(mii-exa-test-data-patient-3-specimen-1)
+* specimen = Reference(mii-exa-test-data-molgen-specimen-1)
 * device = Reference(mii-exa-test-data-molgen-device-sequencer)
 * component[gene-studied].code = $loinc#48018-6 "Gene studied [ID]"
 * component[gene-studied].valueCodeableConcept = $HGNC#HGNC:3236 "EGFR"
@@ -157,7 +157,7 @@ Description: "Observation: Genetische Variante EGFR Exon-20-Insertion p.Ala767_V
 * issued = "2024-03-25T10:00:00+01:00"
 * valueCodeableConcept = $loinc#LA9633-4 "Present"
 * method = $loinc#LA26398-0 "Sequencing"
-* specimen = Reference(mii-exa-test-data-patient-3-specimen-1)
+* specimen = Reference(mii-exa-test-data-molgen-specimen-1)
 * device = Reference(mii-exa-test-data-molgen-device-sequencer)
 * component[gene-studied].code = $loinc#48018-6 "Gene studied [ID]"
 * component[gene-studied].valueCodeableConcept = $HGNC#HGNC:3236 "EGFR"

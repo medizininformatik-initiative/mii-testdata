@@ -76,8 +76,8 @@ Description: "Genetic Diagnosis: Marfan syndrome (FBN1 variant) - maximum MS ele
 * stage[=].assessment = Reference(mii-exa-test-data-patient-3-seltene-clinical-impression-1)
 // Evidence with genetic finding code AND detail references to MolGen
 * evidence[+].code.coding[+] = $sct#106221001 "Genetic finding"
-* evidence[=].detail[+] = Reference(mii-exa-test-data-patient-3-molgen-variante-1)
-* evidence[=].detail[+] = Reference(mii-exa-test-data-patient-3-molgen-befundbericht-1)
+* evidence[=].detail[+] = Reference(mii-exa-test-data-seltene-molgen-variante-1)
+* evidence[=].detail[+] = Reference(mii-exa-test-data-seltene-molgen-befundbericht-1)
 * note.text = "Pathogene Variante im FBN1-Gen molekulargenetisch nachgewiesen. Diagnose genetisch gesichert. Unvollstaendige Penetranz dokumentiert."
 
 // =============================================================================

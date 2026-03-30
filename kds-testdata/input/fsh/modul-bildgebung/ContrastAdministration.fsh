@@ -12,7 +12,7 @@ Description: "MedicationAdministration: kontrastmittelgabe"
 * effectivePeriod.end = "2024-07-19T12:22:45+02:00"
 * effectivePeriod.start = "2024-07-19T12:21:45+02:00"
 * performer.actor = Reference(mii-exa-test-data-practitioner-physician-1)
-* reasonReference = Reference(mii-exa-test-data-patient-1-diagnose-1)
-* request = Reference(mii-exa-test-data-patient-1-medrequest-1)
+* reasonReference = Reference(mii-exa-test-data-bildgebung-diagnose-1)
+* request = Reference(mii-exa-test-data-bildgebung-medrequest-1)
 * note.text = "Kontrastmittelgabe"
 * dosage.dose = 111 $ucum#mL "milliliter"

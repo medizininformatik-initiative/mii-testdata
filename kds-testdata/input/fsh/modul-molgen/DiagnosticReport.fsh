@@ -20,7 +20,7 @@ Description: "DiagnosticReport: Molekulargenetischer Befundbericht mit BRAF-Muta
 * encounter = Reference(mii-exa-test-data-molgen-encounter-1)
 * issued = "2022-04-12T10:30:00+02:00"
 * performer = Reference(mii-exa-test-data-practitioner-physician-1)
-* specimen = Reference(mii-exa-test-data-patient-3-specimen-1)
+* specimen = Reference(mii-exa-test-data-molgen-specimen-1)
 * result[diagnostic-implication] = Reference(mii-exa-test-data-patient-3-molgen-diagnostische-implikation-1)
 * result[therapeutic-implication] = Reference(mii-exa-test-data-patient-3-molgen-therapeutische-implikation-1)
 * result[variant] = Reference(mii-exa-test-data-patient-3-molgen-variante-1)
@@ -49,8 +49,8 @@ Description: "DiagnosticReport: Molekulargenetischer Befundbericht Magenkarzinom
 * issued = "2022-12-05T14:00:00+01:00"
 * performer = Reference(mii-exa-test-data-practitioner-physician-2)
 * resultsInterpreter = Reference(mii-exa-test-data-practitioner-physician-2)
-* specimen[0] = Reference(mii-exa-test-data-patient-4-specimen-1)
-* specimen[1] = Reference(mii-exa-test-data-patient-4-specimen-2)
+* specimen[0] = Reference(mii-exa-test-data-molgen-specimen-2)
+* specimen[1] = Reference(mii-exa-test-data-molgen-specimen-3)
 * result[diagnostic-implication] = Reference(mii-exa-test-data-patient-4-molgen-diagnostische-implikation-1)
 * result[variant] = Reference(mii-exa-test-data-patient-4-molgen-variante-1)
 * conclusion = "Nachweis der pathogenen Variante im CTNNA1-Gen."

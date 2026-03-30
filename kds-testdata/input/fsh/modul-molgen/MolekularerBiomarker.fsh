@@ -14,5 +14,5 @@ Description: "Observation: Molekularer Biomarker (PD-L1 TPS) fuer Patient-3"
 * effectiveDateTime = "2022-04-07"
 * issued = "2022-04-12T11:00:00+02:00"
 * valueQuantity = 60 $ucum#% "percent"
-* specimen = Reference(mii-exa-test-data-patient-3-specimen-1)
+* specimen = Reference(mii-exa-test-data-molgen-specimen-1)
 * component[biomarker-category].valueCodeableConcept.text = "PD-L1 Tumor Proportion Score"

@@ -164,7 +164,7 @@ Description: "Test instance for histology evaluation order"
 * code.coding = $SCT#183825009 "Refer for histology (procedure)"
 * subject = Reference(mii-exa-test-data-mtb-patient-1)
 * reasonReference = Reference(mii-exa-test-data-mtb-tumorzellgehalt-1)
-* specimen = Reference(mii-exa-test-data-patient-1-specimen-1)
+* specimen = Reference(mii-exa-test-data-mtb-specimen-1)
 
 // =============================================================================
 // 42. MII_PR_MTB_Biopsie_Auftrag (ServiceRequest)
@@ -181,4 +181,4 @@ Description: "Test instance for biopsy order"
 * code.coding = $SCT#86273004 "Biopsy (procedure)"
 * subject = Reference(mii-exa-test-data-mtb-patient-1)
 * reasonReference = Reference(mii-exa-test-data-mtb-tumorzellgehalt-1)
-* specimen = Reference(mii-exa-test-data-patient-1-specimen-1)
+* specimen = Reference(mii-exa-test-data-mtb-specimen-1)

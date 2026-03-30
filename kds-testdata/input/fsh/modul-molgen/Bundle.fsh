@@ -47,3 +47,12 @@ Description: "Bundle: Molekulargenetik Testdaten Patient-3 und Patient-4"
 * insert AddBundleEntry(mii-exa-test-data-patient-3-molgen-therapeutische-implikation-2, Observation)
 * insert AddBundleEntry(mii-exa-test-data-patient-3-molgen-variante-3, Observation)
 * insert AddBundleEntry(mii-exa-test-data-patient-3-molgen-therapeutische-implikation-3, Observation)
+// Specimens
+* insert AddBundleEntry(mii-exa-test-data-molgen-specimen-1, Specimen)
+* insert AddBundleEntry(mii-exa-test-data-molgen-specimen-2, Specimen)
+* insert AddBundleEntry(mii-exa-test-data-molgen-specimen-3, Specimen)
+// Infrastructure
+* insert AddBundleEntry(mii-exa-test-data-practitioner-physician-1, Practitioner)
+* insert AddBundleEntry(mii-exa-test-data-practitioner-physician-2, Practitioner)
+* insert AddBundleEntry(mii-exa-test-data-molgen-diagnose-1, Condition)
+* insert AddBundleEntry(mii-exa-test-data-molgen-diagnose-2, Condition)

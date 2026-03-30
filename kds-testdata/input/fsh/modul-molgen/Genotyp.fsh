@@ -15,7 +15,7 @@ Description: "Observation: Genotyp fuer BRAF-Mutation"
 * issued = "2022-04-12T10:30:00+02:00"
 * valueCodeableConcept.text = "BRAF rs113488022 T>A"
 * method = $loinc#LA26398-0 "Sequencing"
-* specimen = Reference(mii-exa-test-data-patient-3-specimen-1)
+* specimen = Reference(mii-exa-test-data-molgen-specimen-1)
 * device = Reference(mii-exa-test-data-molgen-device-sequencer)
 * derivedFrom = Reference(mii-exa-test-data-patient-3-molgen-variante-1)
 * component[gene-studied].code = $loinc#48018-6 "Gene studied [ID]"

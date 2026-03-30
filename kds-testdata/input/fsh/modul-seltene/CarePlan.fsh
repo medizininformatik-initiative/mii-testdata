@@ -15,7 +15,7 @@ Description: "Therapieplan: Marfan syndrome care plan - all activity slices and 
 * subject = Reference(mii-exa-test-data-seltene-patient-1)
 * created = "2025-03-10"
 * description = "Therapieplan fuer Patient mit Marfan-Syndrom: Medikamentoese Therapie mit Losartan, kardiologische Frueherkennung und Studieneinschluss"
-* supportingInfo = Reference(mii-exa-test-data-patient-3-molgen-befundbericht-1)
+* supportingInfo = Reference(mii-exa-test-data-seltene-molgen-befundbericht-1)
 // Activity 1: MedikamentoesTherapie with detail
 * activity[+].detail.status = #not-started
 * activity[=].detail.statusReason = $seltene-cs-status-begruendung#no-target "Keine therapeutische Konsequenz"

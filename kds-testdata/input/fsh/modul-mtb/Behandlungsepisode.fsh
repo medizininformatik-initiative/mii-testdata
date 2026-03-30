@@ -19,10 +19,10 @@ Description: "Test instance for MTB treatment episode with all MS slices populat
 * problem = Reference(mii-exa-test-data-mtb-diagnose-primaertumor-1)
 * investigation[NgsBericht][+].item = Reference(mii-exa-test-data-mtb-ngs-bericht-1)
 * investigation[MolekularPathologieBefund][+].item = Reference(mii-exa-test-data-mtb-molecular-pathology-report-1)
-* investigation[ECOG][+].item = Reference(mii-exa-test-data-patient-1-labobs-1)
+* investigation[ECOG][+].item = Reference(mii-exa-test-data-mtb-labobs-ecog-1)
 * investigation[Einwilligung].item = Reference(mii-exa-test-data-mtb-consent-given-1)
 * supportingInfo[Vortherapie][+] = Reference(mii-exa-test-data-mtb-systemische-vortherapie-1)
-* supportingInfo[Vorbefund][+] = Reference(mii-exa-test-data-patient-1-labobs-2)
+* supportingInfo[Vorbefund][+] = Reference(mii-exa-test-data-mtb-labobs-vorbefund-1)
 * supportingInfo[Therapieplan] = Reference(mii-exa-test-data-mtb-therapieplan-1)
 
 // =============================================================================

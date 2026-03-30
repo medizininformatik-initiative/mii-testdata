@@ -37,7 +37,7 @@ Description: "Therapieempfehlung nicht-medikamentoes: Annual cardiac screening -
 * performer = Reference(mii-exa-test-data-practitioner-physician-2)
 * reasonCode = $sct#19346006 "Marfan syndrome"
 * reasonReference = Reference(mii-exa-test-data-patient-3-seltene-clinical-diagnosis-1)
-* supportingInfo = Reference(mii-exa-test-data-patient-3-molgen-befundbericht-1)
+* supportingInfo = Reference(mii-exa-test-data-seltene-molgen-befundbericht-1)
 * note.text = "Jaehrliche Echokardiographie zur Frueherkennung von Aortenwurzeldilatation empfohlen gemaess aktueller Leitlinie."
 
 // =============================================================================
@@ -64,4 +64,4 @@ Description: "Studieneinschluss Anfrage: Clinical trial referral - all MS elemen
 * encounter = Reference(mii-exa-test-data-seltene-encounter-1)
 * reasonReference = Reference(mii-exa-test-data-patient-3-seltene-clinical-diagnosis-1)
 // supportingInfo sliced - Studie reference
-* supportingInfo = Reference(mii-exa-test-data-patient-3-molgen-befundbericht-1)
+* supportingInfo = Reference(mii-exa-test-data-seltene-molgen-befundbericht-1)

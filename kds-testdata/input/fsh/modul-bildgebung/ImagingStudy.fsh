@@ -14,7 +14,7 @@ Description: "ImagingStudy: MagneticResonance"
 * numberOfSeries = 11
 * numberOfInstances = 294
 * procedureReference = Reference(mii-exa-test-data-bildgebungsprozedur)
-* reasonReference = Reference(mii-exa-test-data-patient-1-diagnose-1)
+* reasonReference = Reference(mii-exa-test-data-bildgebung-diagnose-1)
 * description = "Mamma"
 * series.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mr].extension[magneticFieldStrength].valueQuantity.value = 3
 * series.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mr].extension[magneticFieldStrength].valueQuantity.unit = "tesla"
