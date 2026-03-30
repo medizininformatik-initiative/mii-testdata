@@ -15,5 +15,5 @@ Description: "DiagnosticReport: Befundbericht"
 * result = Reference (mii-exa-test-data-radiologische-beobachtung)
 * imagingStudy = Reference (mii-exa-test-data-bildgebungsstudie)
 * conclusion = "There are suspicious microcalcifications in the upper outer quadrant in the left breast"
-* conclusionCode = $sct#12747003 "Microcalcification, calcified structure (morphologic abnormality)"
+* conclusionCode = $sct#129770009 "Mammographic calcification finding (finding)"
 * extension[supportingInfo].valueReference = Reference(mii-exa-test-data-befundungsprozedur)

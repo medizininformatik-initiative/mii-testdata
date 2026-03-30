@@ -17,5 +17,5 @@ Description: "Observation: Radiologische Beobachtung"
 * bodySite = $sct#76752008 "Breast structure (body structure)"
 * hasMember = Reference(mii-exa-test-data-bildgebung-labobs-1)
 * derivedFrom = Reference(mii-exa-test-data-bildgebungsstudie)
-* component.code = $loinc#10157-6 "History of family member diseases Narrative"
+* component.code = $loinc#10157-6 "History of family member diseases note"
 * component.valueBoolean = true
