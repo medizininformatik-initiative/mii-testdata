@@ -15,7 +15,7 @@ Description: "Test instance for MTB therapy plan with all activity slices"
 * status = #active
 * intent = #plan
 * category = $mii-cs-onko-therapieplanung-typ#praeth
-* subject = Reference(mii-exa-test-data-patient-1)
+* subject = Reference(mii-exa-test-data-mtb-patient-1)
 * created = "2024-03-28"
 * description = "MTB-Beschluss mit Therapieempfehlungen und Studieneinschluss"
 * addresses = Reference(mii-exa-test-data-mtb-diagnose-primaertumor-1)
@@ -40,7 +40,7 @@ Description: "Test instance for therapy recommendation with priority, evidence, 
 * status = #draft
 * intent = #proposal
 * authoredOn = "2024-03-28"
-* subject = Reference(mii-exa-test-data-patient-1)
+* subject = Reference(mii-exa-test-data-mtb-patient-1)
 * basedOn = Reference(mii-exa-test-data-mtb-therapieplan-1)
 * medicationCodeableConcept.coding[+] = $atc#L01EB04 "Osimertinib"
 * medicationCodeableConcept.coding[=].version = "2024"
@@ -59,7 +59,7 @@ Description: "Test instance for second therapy recommendation (part of combinati
 * status = #draft
 * intent = #option
 * authoredOn = "2024-03-28"
-* subject = Reference(mii-exa-test-data-patient-1)
+* subject = Reference(mii-exa-test-data-mtb-patient-1)
 * medicationCodeableConcept.coding = $atc#L01XX73 "Sotorasib"
 * medicationCodeableConcept.coding.version = "2024"
 * reasonReference[Primaertumor] = Reference(mii-exa-test-data-mtb-diagnose-primaertumor-1)
@@ -74,7 +74,7 @@ Description: "Test instance for third therapy recommendation (part of combinatio
 * status = #draft
 * intent = #option
 * authoredOn = "2024-03-28"
-* subject = Reference(mii-exa-test-data-patient-1)
+* subject = Reference(mii-exa-test-data-mtb-patient-1)
 * medicationCodeableConcept.coding = $atc#L01EE01 "Trametinib"
 * medicationCodeableConcept.coding.version = "2024"
 * reasonReference[Primaertumor] = Reference(mii-exa-test-data-mtb-diagnose-primaertumor-1)
@@ -92,7 +92,7 @@ Description: "Test instance for combination therapy recommendation"
 * status = #draft
 * intent = #proposal
 * authoredOn = "2024-03-28"
-* subject = Reference(mii-exa-test-data-patient-1)
+* subject = Reference(mii-exa-test-data-mtb-patient-1)
 * code = $mii-cs-onko-therapie-typ#ZS "zielgerichtete Substanzen"
 * action[+].resource = Reference(mii-exa-test-data-mtb-therapieempfehlung-2)
 * action[+].resource = Reference(mii-exa-test-data-mtb-therapieempfehlung-3)
@@ -111,7 +111,7 @@ Description: "Test instance for study enrollment request with all MS elements"
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-studieneinschluss-anfrage"
 * status = #draft
 * intent = #proposal
-* subject = Reference(mii-exa-test-data-patient-1)
+* subject = Reference(mii-exa-test-data-mtb-patient-1)
 * supportingInfo = Reference(mii-exa-test-data-mtb-studie-1)
 * insert MtbBeschlussSubPrioritaet(3.1)
 * insert MtbBeschlussEvidenzPublikation(http://www.ncbi.nlm.nih.gov/pubmed, 34726479)
@@ -146,7 +146,7 @@ Description: "Test instance for human genetics counseling order"
 * status = #draft
 * intent = #proposal
 * code.coding = $SCT#788339009 "Genetic consultation (procedure)"
-* subject = Reference(mii-exa-test-data-patient-1)
+* subject = Reference(mii-exa-test-data-mtb-patient-1)
 * reasonCode = $mii-cs-mtb-auftrag-begruendung#secondary-tumor
 
 // =============================================================================
@@ -162,7 +162,7 @@ Description: "Test instance for histology evaluation order"
 * status = #draft
 * intent = #proposal
 * code.coding = $SCT#183825009 "Refer for histology (procedure)"
-* subject = Reference(mii-exa-test-data-patient-1)
+* subject = Reference(mii-exa-test-data-mtb-patient-1)
 * reasonReference = Reference(mii-exa-test-data-mtb-tumorzellgehalt-1)
 * specimen = Reference(mii-exa-test-data-patient-1-specimen-1)
 
@@ -179,6 +179,6 @@ Description: "Test instance for biopsy order"
 * status = #draft
 * intent = #proposal
 * code.coding = $SCT#86273004 "Biopsy (procedure)"
-* subject = Reference(mii-exa-test-data-patient-1)
+* subject = Reference(mii-exa-test-data-mtb-patient-1)
 * reasonReference = Reference(mii-exa-test-data-mtb-tumorzellgehalt-1)
 * specimen = Reference(mii-exa-test-data-patient-1-specimen-1)

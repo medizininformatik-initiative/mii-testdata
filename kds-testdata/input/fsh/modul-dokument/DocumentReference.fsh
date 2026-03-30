@@ -42,7 +42,7 @@ Description: "DocumentReference: Entlassbrief Innere Medizin - alle MS-Elemente"
 * category[+].coding = $ihe-d-class#BRI "Brief"
 * category[=].text = "Brief"
 // Subject and Encounter
-* subject = Reference(mii-exa-test-data-patient-1)
+* subject = Reference(mii-exa-test-data-dokument-patient-1)
 // relatesTo
 * relatesTo[+].code = #replaces
 * relatesTo[=].target = Reference(mii-exa-test-data-patient-1-dokument-2)
@@ -58,7 +58,7 @@ Description: "DocumentReference: Entlassbrief Innere Medizin - alle MS-Elemente"
 * content[=].attachment.creation = "2024-02-20"
 * content[=].format = $ihe-formatcode#urn:ihe:iti:xds:2017:mimeTypeSufficient "mimeType Sufficient"
 // Context
-* context.encounter = Reference(mii-exa-test-data-patient-1-encounter-1)
+* context.encounter = Reference(mii-exa-test-data-dokument-encounter-1)
 * context.event[+].coding = $ihe-d-event#E100 "stationaerer Aufenthalt"
 * context.period.start = "2024-02-10"
 * context.period.end = "2024-02-20"
@@ -93,7 +93,7 @@ Description: "DocumentReference: Befundbericht Radiologie (URL-Verweis) - alle M
 * category[+].coding = $ihe-d-class#BEF "Befundbericht"
 * category[=].text = "Befundbericht"
 // Subject and Encounter
-* subject = Reference(mii-exa-test-data-patient-1)
+* subject = Reference(mii-exa-test-data-dokument-patient-1)
 // Description
 * description = "Roentgen-Thorax Befundbericht mit Nachweis eines Infiltrats im rechten Unterlappen"
 // Security Label
@@ -106,7 +106,7 @@ Description: "DocumentReference: Befundbericht Radiologie (URL-Verweis) - alle M
 * content[=].attachment.creation = "2024-02-15"
 * content[=].format = $ihe-formatcode#urn:ihe:iti:xds:2017:mimeTypeSufficient "mimeType Sufficient"
 // Context
-* context.encounter = Reference(mii-exa-test-data-patient-1-encounter-1)
+* context.encounter = Reference(mii-exa-test-data-dokument-encounter-1)
 * context.event[+].coding = $ihe-d-event#E100 "stationaerer Aufenthalt"
 * context.period.start = "2024-02-15"
 * context.period.end = "2024-02-15"

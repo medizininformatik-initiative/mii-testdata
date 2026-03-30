@@ -15,7 +15,7 @@ Description: "Test instance for NGS report with all result slices populated"
 * status = #final
 * category = $hl7-v2-0074#GE "Genetics"
 * code = $loinc#51969-4 "Genetic analysis report"
-* subject = Reference(mii-exa-test-data-patient-1)
+* subject = Reference(mii-exa-test-data-mtb-patient-1)
 * issued = "2024-03-15T00:00:00.000Z"
 * specimen = Reference(mii-exa-test-data-patient-1-specimen-1)
 * result[TumorMutionalBurden] = Reference(mii-exa-test-data-mtb-mutationslast-1)
@@ -42,7 +42,7 @@ Description: "Test instance for MTB genomic study procedure"
 * insert TestDataLabel
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-genomic-study"
 * status = #completed
-* subject = Reference(mii-exa-test-data-patient-1)
+* subject = Reference(mii-exa-test-data-mtb-patient-1)
 * extension[genomic-study-analysis][+].valueReference = Reference(mii-exa-test-data-mtb-genomic-study-analysis-1)
 
 // =============================================================================
@@ -57,7 +57,7 @@ Description: "Test instance for MTB genomic study analysis with method and chang
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-genomic-study-analysis"
 * status = #completed
 * category.coding = http://terminology.hl7.org/CodeSystem/observation-category#laboratory
-* subject = Reference(mii-exa-test-data-patient-1)
+* subject = Reference(mii-exa-test-data-mtb-patient-1)
 * extension[+].url = "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-method-type"
 * extension[=].valueCodeableConcept = http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/genomic-study-method-type-cs#ngs-mps "Next-Generation (NGS)/Massively parallel sequencing (MPS)"
 * extension[+].url = "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-change-type"
@@ -79,7 +79,7 @@ Description: "Test instance for simple variant (EGFR L858R) with all MS elements
 * category[labCategory] = $fhir-observation-category#laboratory "Laboratory"
 * code = $loinc#69548-6 "Genetic variant assessment"
 * valueCodeableConcept = $loinc#LA9633-4 "Present"
-* subject = Reference(mii-exa-test-data-patient-1)
+* subject = Reference(mii-exa-test-data-mtb-patient-1)
 * identifier.system = "https://www.charite.de/fhir/sid/mtb-variante"
 * identifier.value = "VAR-EGFR-001"
 * focus = Reference(mii-exa-test-data-mtb-diagnose-primaertumor-1)
@@ -102,7 +102,7 @@ Description: "Test instance for CNV (ERBB2 amplification) with all MS component 
 * category[labCategory] = $fhir-observation-category#laboratory "Laboratory"
 * code = $loinc#69548-6 "Genetic variant assessment"
 * valueCodeableConcept = $loinc#LA9633-4 "Present"
-* subject = Reference(mii-exa-test-data-patient-1)
+* subject = Reference(mii-exa-test-data-mtb-patient-1)
 * identifier.system = "https://www.charite.de/fhir/sid/mtb-variante"
 * identifier.value = "CNV-ERBB2-001"
 * focus = Reference(mii-exa-test-data-mtb-diagnose-primaertumor-1)
@@ -133,7 +133,7 @@ Description: "Test instance for DNA fusion variant (EML4-ALK)"
 * category[labCategory] = $fhir-observation-category#laboratory "Laboratory"
 * code = $loinc#69548-6 "Genetic variant assessment"
 * valueCodeableConcept = $loinc#LA9633-4 "Present"
-* subject = Reference(mii-exa-test-data-patient-1)
+* subject = Reference(mii-exa-test-data-mtb-patient-1)
 * identifier.system = "https://www.charite.de/fhir/sid/mtb-variante"
 * identifier.value = "FUS-DNA-EML4ALK-001"
 * focus = Reference(mii-exa-test-data-mtb-diagnose-primaertumor-1)
@@ -154,7 +154,7 @@ Description: "Test instance for RNA fusion variant (BCR-ABL1)"
 * category[labCategory] = $fhir-observation-category#laboratory "Laboratory"
 * code = $loinc#69548-6 "Genetic variant assessment"
 * valueCodeableConcept = $loinc#LA9633-4 "Present"
-* subject = Reference(mii-exa-test-data-patient-1)
+* subject = Reference(mii-exa-test-data-mtb-patient-1)
 * identifier.system = "https://www.charite.de/fhir/sid/mtb-variante"
 * identifier.value = "FUS-RNA-BCRABL1-001"
 * focus = Reference(mii-exa-test-data-mtb-diagnose-primaertumor-1)
@@ -175,7 +175,7 @@ Description: "Test instance for RNA sequencing observation"
 * category[labCategory] = $fhir-observation-category#laboratory "Laboratory"
 * code = $loinc#69548-6 "Genetic variant assessment"
 * valueCodeableConcept = $loinc#LA9633-4 "Present"
-* subject = Reference(mii-exa-test-data-patient-1)
+* subject = Reference(mii-exa-test-data-mtb-patient-1)
 * identifier.system = "https://www.charite.de/fhir/sid/mtb-variante"
 * identifier.value = "RNASEQ-001"
 * focus = Reference(mii-exa-test-data-mtb-diagnose-primaertumor-1)
@@ -195,7 +195,7 @@ Description: "Test instance for diagnostic implication of EGFR variant"
 * status = #final
 * category[labCategory] = $fhir-observation-category#laboratory "Laboratory"
 * code = $TBD#diagnostic-implication "Diagnostic Implication"
-* subject = Reference(mii-exa-test-data-patient-1)
+* subject = Reference(mii-exa-test-data-mtb-patient-1)
 * derivedFrom = Reference(mii-exa-test-data-mtb-einfache-variante-1)
 * component[clinical-significance].code = $loinc#53037-8
 * component[clinical-significance].valueCodeableConcept = $loinc#LA6668-3 "Pathogenic"
@@ -213,7 +213,7 @@ Description: "Test instance for therapeutic implication with evidence grading"
 * status = #final
 * category[labCategory] = $fhir-observation-category#laboratory "Laboratory"
 * code = $TBD#therapeutic-implication "Therapeutic Implication"
-* subject = Reference(mii-exa-test-data-patient-1)
+* subject = Reference(mii-exa-test-data-mtb-patient-1)
 * derivedFrom = Reference(mii-exa-test-data-mtb-einfache-variante-1)
 * component[conclusion-string].code = $TBD#conclusion-string
 * component[conclusion-string].valueString = "EGFR L858R mutation predicts sensitivity to EGFR TKI therapy (EL m1A)."
@@ -234,7 +234,7 @@ Description: "Test instance for molecular biomarker base profile"
 * status = #final
 * category[labCategory] = $fhir-observation-category#laboratory "Laboratory"
 * code = $loinc#69548-6 "Genetic variant assessment"
-* subject = Reference(mii-exa-test-data-patient-1)
+* subject = Reference(mii-exa-test-data-mtb-patient-1)
 * valueCodeableConcept = $loinc#LA9633-4 "Present"
 
 // =============================================================================
@@ -250,7 +250,7 @@ Description: "Test instance for tumor mutational burden"
 * status = #final
 * category[labCategory] = $fhir-observation-category#laboratory "Laboratory"
 * code = $loinc#94076-7 "Mutations/Megabase [# Ratio] in Tumor"
-* subject = Reference(mii-exa-test-data-patient-1)
+* subject = Reference(mii-exa-test-data-mtb-patient-1)
 * valueQuantity.value = 14.2
 * valueQuantity.unit = "mutations per megabase"
 * valueQuantity.system = $ucum
@@ -270,7 +270,7 @@ Description: "Test instance for microsatellite instability"
 * status = #final
 * category[labCategory] = $fhir-observation-category#laboratory "Laboratory"
 * code = $loinc#81695-9 "Microsatellite instability [Interpretation] in Cancer specimen Qualitative"
-* subject = Reference(mii-exa-test-data-patient-1)
+* subject = Reference(mii-exa-test-data-mtb-patient-1)
 * valueQuantity.value = 0.15
 * valueQuantity.unit = "ratio"
 * valueQuantity.system = $ucum
@@ -289,7 +289,7 @@ Description: "Test instance for homologous recombination deficiency score with s
 * status = #final
 * category[labCategory] = $fhir-observation-category#laboratory "Laboratory"
 // code inherited from profile pattern (loinc#107286-7)
-* subject = Reference(mii-exa-test-data-patient-1)
+* subject = Reference(mii-exa-test-data-mtb-patient-1)
 * valueInteger = 42
 * interpretation = http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation#POS "Positive"
 // component codes inherited from profile patterns
@@ -310,7 +310,7 @@ Description: "Test instance for BRCAness assessment"
 * status = #final
 * category[labCategory] = $fhir-observation-category#laboratory "Laboratory"
 // code inherited from profile pattern (mii-cs-mtb-molekulare-biomarker#brcaness)
-* subject = Reference(mii-exa-test-data-patient-1)
+* subject = Reference(mii-exa-test-data-mtb-patient-1)
 * valueQuantity.value = 0.72
 * valueQuantity.system = $ucum
 * valueQuantity.code = #1
@@ -329,7 +329,7 @@ Description: "Test instance for ploidy assessment"
 * status = #final
 * category[labCategory] = $fhir-observation-category#laboratory "Laboratory"
 * code = $loinc#69548-6 "Genetic variant assessment"
-* subject = Reference(mii-exa-test-data-patient-1)
+* subject = Reference(mii-exa-test-data-mtb-patient-1)
 * valueQuantity.value = 2.3
 * valueQuantity.system = $ucum
 * valueQuantity.code = #1
@@ -347,7 +347,7 @@ Description: "Test instance for HER2 biomarker status"
 * status = #final
 * category[labCategory] = $fhir-observation-category#laboratory "Laboratory"
 * code = $loinc#48676-1 "HER2 [Interpretation] in Tissue"
-* subject = Reference(mii-exa-test-data-patient-1)
+* subject = Reference(mii-exa-test-data-mtb-patient-1)
 * valueCodeableConcept = $loinc#LA6576-8 "Positive"
 
 // =============================================================================
@@ -362,7 +362,7 @@ Description: "Test instance for molecular pathology report"
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-molecular-pathology-report"
 * status = #final
 * code = $loinc#60568-3 "Pathology synoptic report"
-* subject = Reference(mii-exa-test-data-patient-1)
+* subject = Reference(mii-exa-test-data-mtb-patient-1)
 * result[+] = Reference(mii-exa-test-data-mtb-immunohistochemistry-1)
 
 // =============================================================================
@@ -379,7 +379,7 @@ Description: "Test instance for immunohistochemistry observation"
 * category[labCategory] = $fhir-observation-category#laboratory "Laboratory"
 * category[geCategory] = $hl7-v2-0074#GE "Genetics"
 * code.coding[+] = $loinc#85147-7 "PD-L1 by clone 22C3 in Tissue by Immune stain Report"
-* subject = Reference(mii-exa-test-data-patient-1)
+* subject = Reference(mii-exa-test-data-mtb-patient-1)
 * specimen = Reference(mii-exa-test-data-patient-1-specimen-1)
 * valueQuantity.value = 80
 * valueQuantity.unit = "%"
@@ -402,7 +402,7 @@ Description: "Test instance for HER2 immunohistochemistry"
 * category[labCategory] = $fhir-observation-category#laboratory "Laboratory"
 * category[geCategory] = $hl7-v2-0074#GE "Genetics"
 * code.coding[spezifisch] = $loinc#18474-7 "HER2 Ag [Presence] in Tissue by Immune stain"
-* subject = Reference(mii-exa-test-data-patient-1)
+* subject = Reference(mii-exa-test-data-mtb-patient-1)
 * specimen = Reference(mii-exa-test-data-patient-1-specimen-1)
 * valueCodeableConcept = $loinc#LA6576-8 "Positive"
 * component[gene-studied].code.coding = $loinc#48018-6 "Gene studied [ID]"
@@ -422,7 +422,7 @@ Description: "Test instance for PD-L1 immunohistochemistry with all MS elements"
 * category[labCategory] = $fhir-observation-category#laboratory "Laboratory"
 * category[geCategory] = $hl7-v2-0074#GE "Genetics"
 * code.coding[+] = $loinc#85147-7 "PD-L1 by clone 22C3 in Tissue by Immune stain Report"
-* subject = Reference(mii-exa-test-data-patient-1)
+* subject = Reference(mii-exa-test-data-mtb-patient-1)
 * specimen = Reference(mii-exa-test-data-patient-1-specimen-1)
 * valueQuantity.value = 80
 * valueQuantity.unit = "%"
@@ -444,7 +444,7 @@ Description: "Test instance for phosphorylation immunohistochemistry"
 * category[labCategory] = $fhir-observation-category#laboratory "Laboratory"
 * category[geCategory] = $hl7-v2-0074#GE "Genetics"
 * code.coding[+] = $loinc#55229-9 "Immune stain study"
-* subject = Reference(mii-exa-test-data-patient-1)
+* subject = Reference(mii-exa-test-data-mtb-patient-1)
 * specimen = Reference(mii-exa-test-data-patient-1-specimen-1)
 * valueCodeableConcept = $loinc#LA6576-8 "Positive"
 * component[gene-studied].code.coding = $loinc#48018-6 "Gene studied [ID]"
@@ -465,7 +465,7 @@ Description: "Test instance for mismatch repair protein immunohistochemistry"
 // TODO: LOINC 85337-4 display per validator is "Estrogen receptor Ag [Presence] in Breast cancer specimen by Immune stain",
 // not "Mismatch repair protein in Tissue by Immune stain". The code 85337-4 may be incorrect for MMR testing. Review and replace with correct LOINC code.
 * code = $loinc#85337-4 "Estrogen receptor Ag [Presence] in Breast cancer specimen by Immune stain"
-* subject = Reference(mii-exa-test-data-patient-1)
+* subject = Reference(mii-exa-test-data-mtb-patient-1)
 * specimen = Reference(mii-exa-test-data-patient-1-specimen-1)
 * valueCodeableConcept.coding = $loinc#LA6576-8 "Positive"
 
@@ -482,7 +482,7 @@ Description: "Test instance for MSI by immunohistochemistry"
 * status = #final
 * category[labCategory] = $fhir-observation-category#laboratory "Laboratory"
 * code.coding = $loinc#62862-8 "Microsatellite instability [Presence] in Tissue by Immune stain"
-* subject = Reference(mii-exa-test-data-patient-1)
+* subject = Reference(mii-exa-test-data-mtb-patient-1)
 * specimen = Reference(mii-exa-test-data-patient-1-specimen-1)
 * valueCodeableConcept = $loinc#LA14122-8 "Stable"
 
@@ -501,7 +501,7 @@ Description: "Test instance for in situ hybridization biomarker"
 * category[mbCategory] = $TBD#biomarker-category
 * code.coding[+] = $loinc#49683-6 "ERBB2 gene copy number/Chromosome 17 copy number in Tissue by FISH"
 * method = $SCT#1303773004 "Fluorescence in situ hybridization technique (qualifier value)"
-* subject = Reference(mii-exa-test-data-patient-1)
+* subject = Reference(mii-exa-test-data-mtb-patient-1)
 * specimen = Reference(mii-exa-test-data-patient-1-specimen-1)
 * valueRatio.numerator.value = 2.4
 * valueRatio.denominator.value = 1
@@ -522,7 +522,7 @@ Description: "Test instance for HER2 FISH with all component slices"
 * category[mbCategory] = $TBD#biomarker-category
 * code.coding[spezifisch] = $loinc#49683-6 "ERBB2 gene copy number/Chromosome 17 copy number in Tissue by FISH"
 * method = $SCT#1303773004 "Fluorescence in situ hybridization technique (qualifier value)"
-* subject = Reference(mii-exa-test-data-patient-1)
+* subject = Reference(mii-exa-test-data-mtb-patient-1)
 * specimen = Reference(mii-exa-test-data-patient-1-specimen-1)
 * valueRatio.numerator.value = 1.8
 * valueRatio.denominator.value = 1
@@ -546,7 +546,7 @@ Description: "Test instance for tumor cell content measurement"
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-tumorzellgehalt"
 * status = #final
 // code inherited from profile pattern (loinc#93356-4)
-* subject = Reference(mii-exa-test-data-patient-1)
+* subject = Reference(mii-exa-test-data-mtb-patient-1)
 * valueQuantity.value = 45
 * valueQuantity.unit = "percent"
 * valueQuantity.system = $ucum

@@ -18,11 +18,11 @@ Description: "PRO Observation: PHQ-9 Score for Patient 1 (mild depression, score
 * identifier[=].value = "PRO-OBS-PHQ9-PAT1-001"
 * status = #final
 * code = $loinc#44261-6 "Patient Health Questionnaire 9 item (PHQ-9) total score [Reported]"
-* subject = Reference(mii-exa-test-data-patient-1)
-* focus = Reference(mii-exa-test-data-patient-1-encounter-1)
-* encounter = Reference(mii-exa-test-data-patient-1-encounter-1)
+* subject = Reference(mii-exa-test-data-pro-patient-1)
+* focus = Reference(mii-exa-test-data-pro-encounter-1)
+* encounter = Reference(mii-exa-test-data-pro-encounter-1)
 * effectiveDateTime = "2024-03-15T10:00:00+01:00"
-* performer = Reference(mii-exa-test-data-patient-1)
+* performer = Reference(mii-exa-test-data-pro-patient-1)
 * valueQuantity.value = 8
 * valueQuantity.unit = "{score}"
 * valueQuantity.system = $ucum
@@ -50,7 +50,7 @@ Description: "PRO Observation: PROMIS Depression SF4a Raw Score for Patient 1 (m
 * status = #final
 * category = $observation-category#survey "Survey"
 * code = $loinc#77821-7 "PROMIS short form - emotional distress - depression 4a - version 1.0 raw score"
-* subject = Reference(mii-exa-test-data-patient-1)
+* subject = Reference(mii-exa-test-data-pro-patient-1)
 * effectiveDateTime = "2024-03-15T10:15:00+01:00"
 * valueQuantity.value = 7
 * valueQuantity.unit = "{score}"
@@ -78,7 +78,7 @@ Description: "PRO Observation: PROMIS Depression T-Score for Patient 1 (mild, T-
 * status = #final
 * category = $observation-category#survey "Survey"
 * code = $loinc#77861-3 "PROMIS emotional distress - depression - version 1.0 Tscore"
-* subject = Reference(mii-exa-test-data-patient-1)
+* subject = Reference(mii-exa-test-data-pro-patient-1)
 * effectiveDateTime = "2024-03-15T10:15:00+01:00"
 * valueQuantity.value = 52.7
 * valueQuantity.unit = "{score}"
@@ -107,10 +107,10 @@ Description: "PRO Observation: BDI-II Total Score for Patient 1 (mild depression
 * identifier[=].value = "PRO-OBS-BDI2-PAT1-001"
 * status = #final
 * code = $loinc#89209-1 "Beck Depression Inventory II total score [BDI]"
-* subject = Reference(mii-exa-test-data-patient-1)
-* encounter = Reference(mii-exa-test-data-patient-1-encounter-1)
+* subject = Reference(mii-exa-test-data-pro-patient-1)
+* encounter = Reference(mii-exa-test-data-pro-encounter-1)
 * effectiveDateTime = "2024-03-15T10:30:00+01:00"
-* performer = Reference(mii-exa-test-data-patient-1)
+* performer = Reference(mii-exa-test-data-pro-patient-1)
 * valueQuantity.value = 12
 * valueQuantity.unit = "{score}"
 * valueQuantity.system = $ucum
@@ -140,10 +140,10 @@ Description: "PRO Observation: EQ-5D-5L Index Value for Patient 1"
 * identifier[=].value = "PRO-OBS-EQ5D-IDX-PAT1-001"
 * status = #final
 // code inherited from profile pattern (sct#736534008)
-* subject = Reference(mii-exa-test-data-patient-1)
-* encounter = Reference(mii-exa-test-data-patient-1-encounter-1)
+* subject = Reference(mii-exa-test-data-pro-patient-1)
+* encounter = Reference(mii-exa-test-data-pro-encounter-1)
 * effectiveDateTime = "2024-03-15T11:00:00+01:00"
-* performer = Reference(mii-exa-test-data-patient-1)
+* performer = Reference(mii-exa-test-data-pro-patient-1)
 * valueQuantity.value = 0.812
 * valueQuantity.unit = "1"
 * valueQuantity.system = $ucum
@@ -172,10 +172,10 @@ Description: "PRO Observation: EQ-5D-5L VAS Score for Patient 1"
 * identifier[=].value = "PRO-OBS-EQ5D-VAS-PAT1-001"
 * status = #final
 // code inherited from profile pattern (sct#736535009)
-* subject = Reference(mii-exa-test-data-patient-1)
-* encounter = Reference(mii-exa-test-data-patient-1-encounter-1)
+* subject = Reference(mii-exa-test-data-pro-patient-1)
+* encounter = Reference(mii-exa-test-data-pro-encounter-1)
 * effectiveDateTime = "2024-03-15T11:00:00+01:00"
-* performer = Reference(mii-exa-test-data-patient-1)
+* performer = Reference(mii-exa-test-data-pro-patient-1)
 * valueQuantity.value = 75
 * valueQuantity.unit = "1"
 * valueQuantity.system = $ucum
@@ -205,10 +205,10 @@ Description: "PRO Observation: EQ-5D-5L Profile String for Patient 1"
 * identifier[=].value = "PRO-OBS-EQ5D-PROF-PAT1-001"
 * status = #final
 * code = https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue#euroqol-eq5d5l-profile "EuroQol EQ-5D-5L Profile"
-* subject = Reference(mii-exa-test-data-patient-1)
-* encounter = Reference(mii-exa-test-data-patient-1-encounter-1)
+* subject = Reference(mii-exa-test-data-pro-patient-1)
+* encounter = Reference(mii-exa-test-data-pro-encounter-1)
 * effectiveDateTime = "2024-03-15T11:00:00+01:00"
-* performer = Reference(mii-exa-test-data-patient-1)
+* performer = Reference(mii-exa-test-data-pro-patient-1)
 * valueString = "11212"
 * method = http://snomed.info/sct#73041000052103 "EuroQoL five dimension five level questionnaire"
 * interpretation = $v3-ObservationInterpretation#N "Normal"
@@ -232,10 +232,10 @@ Description: "PRO Observation: PROMIS-29 Anxiety T-Score for Patient 1"
 * identifier[=].value = "PRO-OBS-P29-ANX-PAT1-001"
 * status = #final
 * code = $loinc#71967-4 "PROMIS-29 Anxiety score T-score"
-* subject = Reference(mii-exa-test-data-patient-1)
-* encounter = Reference(mii-exa-test-data-patient-1-encounter-1)
+* subject = Reference(mii-exa-test-data-pro-patient-1)
+* encounter = Reference(mii-exa-test-data-pro-encounter-1)
 * effectiveDateTime = "2024-03-15T11:30:00+01:00"
-* performer = Reference(mii-exa-test-data-patient-1)
+* performer = Reference(mii-exa-test-data-pro-patient-1)
 * valueQuantity.value = 53.7
 * valueQuantity.unit = "{score}"
 * valueQuantity.system = $ucum
@@ -260,7 +260,7 @@ Description: "PRO Observation: PROMIS-29 Depression T-Score for Patient 1"
 * insert TestDataLabel
 * status = #final
 * code = $loinc#77861-3 "PROMIS emotional distress - depression - version 1.0 Tscore"
-* subject = Reference(mii-exa-test-data-patient-1)
+* subject = Reference(mii-exa-test-data-pro-patient-1)
 * effectiveDateTime = "2024-03-15T11:30:00+01:00"
 * valueQuantity.value = 55.1
 * valueQuantity.unit = "{score}"
@@ -283,7 +283,7 @@ Description: "PRO Observation: PROMIS-29 Fatigue T-Score for Patient 1"
 * insert TestDataLabel
 * status = #final
 * code = $loinc#77864-7 "PROMIS fatigue - version 1.0 Tscore"
-* subject = Reference(mii-exa-test-data-patient-1)
+* subject = Reference(mii-exa-test-data-pro-patient-1)
 * effectiveDateTime = "2024-03-15T11:30:00+01:00"
 * valueQuantity.value = 58.3
 * valueQuantity.unit = "{score}"
@@ -307,7 +307,7 @@ Description: "PRO Observation: PROMIS-29 Pain Intensity for Patient 1"
 * insert TestDataLabel
 * status = #final
 * code = $loinc#75261-8 "How intense was your average pain in the past 7 days [PROMIS]"
-* subject = Reference(mii-exa-test-data-patient-1)
+* subject = Reference(mii-exa-test-data-pro-patient-1)
 * effectiveDateTime = "2024-03-15T11:30:00+01:00"
 * valueQuantity.value = 3
 * valueQuantity.unit = "1"
@@ -332,7 +332,7 @@ Description: "PRO Observation: PROMIS-29 Pain Interference T-Score for Patient 1
 * insert TestDataLabel
 * status = #final
 * code = $loinc#77865-4 "PROMIS pain interference - version 1.0 Tscore"
-* subject = Reference(mii-exa-test-data-patient-1)
+* subject = Reference(mii-exa-test-data-pro-patient-1)
 * effectiveDateTime = "2024-03-15T11:30:00+01:00"
 * valueQuantity.value = 52.4
 * valueQuantity.unit = "{score}"
@@ -355,7 +355,7 @@ Description: "PRO Observation: PROMIS-29 Physical Function T-Score for Patient 1
 * insert TestDataLabel
 * status = #final
 * code = $loinc#91721-1 "PROMIS physical function - version 2.0 T-score"
-* subject = Reference(mii-exa-test-data-patient-1)
+* subject = Reference(mii-exa-test-data-pro-patient-1)
 * effectiveDateTime = "2024-03-15T11:30:00+01:00"
 * valueQuantity.value = 48.2
 * valueQuantity.unit = "{score}"
@@ -378,7 +378,7 @@ Description: "PRO Observation: PROMIS-29 Sleep Disturbance T-Score for Patient 1
 * insert TestDataLabel
 * status = #final
 * code = $loinc#77860-5 "PROMIS sleep disturbance - version 1.0 Tscore"
-* subject = Reference(mii-exa-test-data-patient-1)
+* subject = Reference(mii-exa-test-data-pro-patient-1)
 * effectiveDateTime = "2024-03-15T11:30:00+01:00"
 * valueQuantity.value = 56.8
 * valueQuantity.unit = "{score}"
@@ -401,7 +401,7 @@ Description: "PRO Observation: PROMIS-29 Social Function T-Score for Patient 1"
 * insert TestDataLabel
 * status = #final
 * code = $loinc#77854-8 "PROMIS ability to participate in social roles and activities - version 2.0 Tscore"
-* subject = Reference(mii-exa-test-data-patient-1)
+* subject = Reference(mii-exa-test-data-pro-patient-1)
 * effectiveDateTime = "2024-03-15T11:30:00+01:00"
 * valueQuantity.value = 44.9
 * valueQuantity.unit = "{score}"
@@ -428,10 +428,10 @@ Description: "PRO Observation: PROMIS Cognitive Function SF4a Raw Score for Pati
 * identifier[=].value = "PRO-OBS-COGFN-RAW-PAT1-001"
 * status = #final
 * code = $loinc#81533-2 "PROMIS short form - cognitive function 4a - version 2.0 raw score"
-* subject = Reference(mii-exa-test-data-patient-1)
-* encounter = Reference(mii-exa-test-data-patient-1-encounter-1)
+* subject = Reference(mii-exa-test-data-pro-patient-1)
+* encounter = Reference(mii-exa-test-data-pro-encounter-1)
 * effectiveDateTime = "2024-03-15T12:00:00+01:00"
-* performer = Reference(mii-exa-test-data-patient-1)
+* performer = Reference(mii-exa-test-data-pro-patient-1)
 * valueQuantity.value = 15
 * valueQuantity.unit = "{score}"
 * valueQuantity.system = $ucum
@@ -463,10 +463,10 @@ Description: "PRO Observation: PROMIS Cognitive Function SF4a T-Score for Patien
 * identifier[=].value = "PRO-OBS-COGFN-T-PAT1-001"
 * status = #final
 * code = $loinc#81538-1 "PROMIS cognitive function - version 2.0 T-score"
-* subject = Reference(mii-exa-test-data-patient-1)
-* encounter = Reference(mii-exa-test-data-patient-1-encounter-1)
+* subject = Reference(mii-exa-test-data-pro-patient-1)
+* encounter = Reference(mii-exa-test-data-pro-encounter-1)
 * effectiveDateTime = "2024-03-15T12:00:00+01:00"
-* performer = Reference(mii-exa-test-data-patient-1)
+* performer = Reference(mii-exa-test-data-pro-patient-1)
 * valueQuantity.value = 54.1
 * valueQuantity.unit = "{score}"
 * valueQuantity.system = $ucum

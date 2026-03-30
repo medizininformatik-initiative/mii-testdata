@@ -9,8 +9,8 @@ Description: "Bundle: MTB Testdaten Patient-1"
 * insert TestDataLabel
 * type = #transaction
 * timestamp = "2025-06-18T13:51:00+02:00"
-* insert AddBundleEntry(mii-exa-test-data-patient-1, Patient)
-* insert AddBundleEntry(mii-exa-test-data-patient-1-encounter-1, Encounter)
+* insert AddBundleEntry(mii-exa-test-data-mtb-patient-1, Patient)
+* insert AddBundleEntry(mii-exa-test-data-mtb-encounter-1, Encounter)
 // Behandlungsepisode
 * insert AddBundleEntry(mii-exa-test-data-mtb-behandlungsepisode-1, ClinicalImpression)
 * insert AddBundleEntry(mii-exa-test-data-mtb-consent-given-1, Observation)

@@ -9,8 +9,8 @@ Description: "Bundle: Bildgebung Testdaten Patient-1"
 * insert TestDataLabel
 * type = #transaction
 * timestamp = "2025-06-18T13:51:00+02:00"
-* insert AddBundleEntry(mii-exa-test-data-patient-1, Patient)
-* insert AddBundleEntry(mii-exa-test-data-patient-1-encounter-1, Encounter)
+* insert AddBundleEntry(mii-exa-test-data-bildgebung-patient-1, Patient)
+* insert AddBundleEntry(mii-exa-test-data-bildgebung-encounter-1, Encounter)
 // Imaging Resources
 * insert AddBundleEntry(mii-exa-test-data-anforderung, ServiceRequest)
 * insert AddBundleEntry(mii-exa-test-data-bildgebungsprozedur, Procedure)

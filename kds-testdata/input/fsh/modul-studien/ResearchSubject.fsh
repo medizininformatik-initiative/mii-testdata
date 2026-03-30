@@ -12,5 +12,5 @@
 // * status = #candidate
 // * period.start = "2024-03-06"
 // * study = Reference(mii-exa-test-data-researchstudy-1)
-// * individual = Reference(mii-exa-test-data-patient-1)
+// * individual = Reference(mii-exa-test-data-studien-patient-1)
 // * consent = Reference(mii-exa-test-data-patient-1-consent-1)

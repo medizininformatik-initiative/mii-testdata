@@ -8,8 +8,8 @@ Description: "DiagnosticReport: Befundbericht"
 * status = #final
 * category.coding[sct] = $sct#4201000179104 "Imaging report (record artifact)"
 * code = $sct#4231000179109 "Mammography report"
-* subject = Reference(mii-exa-test-data-patient-1)
-* encounter = Reference(mii-exa-test-data-patient-1-encounter-1)
+* subject = Reference(mii-exa-test-data-bildgebung-patient-1)
+* encounter = Reference(mii-exa-test-data-bildgebung-encounter-1)
 * effectiveDateTime = "2024-07-19T12:03:30+02:00"
 * issued = "2024-07-19T12:03:30+02:00"
 * result = Reference (mii-exa-test-data-radiologische-beobachtung)

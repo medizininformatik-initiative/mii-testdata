@@ -8,7 +8,7 @@ Description: "Procedure: Bildgebungsprozedur"
 * status = #completed
 * category = $sct#363679005 "Imaging (procedure)"
 * code = $sct#384151000119104 "Screening mammography of bilateral breasts (procedure)"
-* subject = Reference(mii-exa-test-data-patient-1)
+* subject = Reference(mii-exa-test-data-bildgebung-patient-1)
 * performedDateTime = "2024-07-19T12:03:30+02:00"
 * bodySite = $sct#76752008 "Breast structure (body structure)"
 * note.text = "Durchführung einer Mammographie"

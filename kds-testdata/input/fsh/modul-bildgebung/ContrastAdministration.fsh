@@ -7,7 +7,7 @@ Description: "MedicationAdministration: kontrastmittelgabe"
 * partOf = Reference(mii-exa-test-data-bildgebungsprozedur)
 * status = #completed
 * category = $medication-admin-category#inpatient "Inpatient"
-* subject = Reference(mii-exa-test-data-patient-1)
+* subject = Reference(mii-exa-test-data-bildgebung-patient-1)
 * medicationReference = Reference(mii-exa-test-data-medication-dalbavancin)
 * effectivePeriod.end = "2024-07-19T12:22:45+02:00"
 * effectivePeriod.start = "2024-07-19T12:21:45+02:00"

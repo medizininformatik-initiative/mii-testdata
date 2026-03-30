@@ -9,8 +9,7 @@ Description: "Bundle: Biobank Testdaten"
 * insert TestDataLabel
 * type = #transaction
 * timestamp = "2025-06-18T13:51:00+02:00"
-* insert AddBundleEntry(mii-exa-test-data-patient-1, Patient)
-* insert AddBundleEntry(mii-exa-test-data-patient-1-encounter-1, Encounter)
+* insert AddBundleEntry(mii-exa-test-data-biobank-patient-1, Patient)
 // Organization
 * insert AddBundleEntry(mii-exa-test-data-organization-biobank-charite, Organization)
 // Substance
@@ -49,6 +48,6 @@ Description: "Bundle: Biobank Testdaten"
 * insert AddBundleEntry(mii-exa-test-data-patient-9-specimen-1, Specimen)
 * insert AddBundleEntry(mii-exa-test-data-patient-9-specimen-2, Specimen)
 // Specimens Patient-10
-* insert AddBundleEntry(mii-exa-test-data-patient-10, Patient)
+* insert AddBundleEntry(mii-exa-test-data-biobank-patient-2, Patient)
 * insert AddBundleEntry(mii-exa-test-data-patient-10-specimen-1, Specimen)
 * insert AddBundleEntry(mii-exa-test-data-patient-10-specimen-2, Specimen)

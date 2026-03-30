@@ -14,7 +14,7 @@ Description: "PRO QuestionnaireResponse: PHQ-9 for Patient 1 (mild depression, s
 * insert TestDataLabel
 * status = #completed
 * language = #de
-* subject = Reference(mii-exa-test-data-patient-1)
+* subject = Reference(mii-exa-test-data-pro-patient-1)
 * authored = "2024-03-15T10:00:00+01:00"
 * questionnaire = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-phq-9"
 
@@ -74,7 +74,7 @@ Description: "PRO QuestionnaireResponse: PROMIS Depression SF4a for Patient 1 (m
 * insert TestDataLabel
 * status = #completed
 * language = #de
-* subject = Reference(mii-exa-test-data-patient-1)
+* subject = Reference(mii-exa-test-data-pro-patient-1)
 * authored = "2024-03-15T10:15:00+01:00"
 * questionnaire = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-depression-sf4a"
 

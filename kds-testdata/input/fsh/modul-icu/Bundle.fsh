@@ -9,8 +9,8 @@ Description: "Bundle: ICU Testdaten Patient-1"
 * insert TestDataLabel
 * type = #transaction
 * timestamp = "2025-06-18T13:51:00+02:00"
-* insert AddBundleEntry(mii-exa-test-data-patient-1, Patient)
-* insert AddBundleEntry(mii-exa-test-data-patient-1-encounter-1, Encounter)
+* insert AddBundleEntry(mii-exa-test-data-icu-patient-1, Patient)
+* insert AddBundleEntry(mii-exa-test-data-icu-encounter-1, Encounter)
 // Bilanz Observations
 * insert AddBundleEntry(mii-exa-test-data-patient-1-icu-bilanz-haemofiltr-1, Observation)
 * insert AddBundleEntry(mii-exa-test-data-patient-1-icu-bilanz-drainage-1, Observation)

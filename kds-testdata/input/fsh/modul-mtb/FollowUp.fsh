@@ -14,7 +14,7 @@ Description: "Test instance for MTB follow-up clinical impression with all MS el
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-follow-up-clinicalimpression"
 * status = #completed
 * code.coding = $SCT#390906007 "Follow-up encounter (procedure)"
-* subject = Reference(mii-exa-test-data-patient-1)
+* subject = Reference(mii-exa-test-data-mtb-patient-1)
 * effectiveDateTime = "2024-09-15"
 * previous = Reference(mii-exa-test-data-mtb-behandlungsepisode-1)
 * investigation.code.coding = $mii-cs-mtb-follow-up-status#completed
@@ -39,7 +39,7 @@ Description: "Test instance for MTB systemic therapy procedure"
 * code.coding[systemische_therapie_art] = $mii-cs-onko-therapie-typ#ZS
 * code.coding[ops] = $OPS#8-54 "Zytostatische Chemotherapie, Immuntherapie und antiretrovirale Therapie"
 * code.coding[ops].version = "2024"
-* subject = Reference(mii-exa-test-data-patient-1)
+* subject = Reference(mii-exa-test-data-mtb-patient-1)
 * performedPeriod.start = "2024-04-15"
 * performedPeriod.end = "2024-08-30"
 * basedOn = Reference(mii-exa-test-data-mtb-therapieplan-1)
@@ -60,7 +60,7 @@ Description: "Test instance for MTB systemic therapy medication statement"
 * medicationCodeableConcept.coding[+] = $unii#3C06JJ0Z2O "OSIMERTINIB"
 * medicationCodeableConcept.coding[atcClassDe] = $atc#L01EB04 "Osimertinib"
 * medicationCodeableConcept.coding[atcClassDe].version = "2024"
-* subject = Reference(mii-exa-test-data-patient-1)
+* subject = Reference(mii-exa-test-data-mtb-patient-1)
 * effectivePeriod.start = "2024-04-15"
 * effectivePeriod.end = "2024-04-15"
 * note.text = "Z1 Osimertinib 80mg oral, daily"
@@ -83,7 +83,7 @@ Description: "Test instance for MTB response assessment with RECIST method"
 * code = $SCT#396432002 "Status of regression of tumor (observable entity)"
 * method = $mii-cs-mtb-response-befund-beurteilungsmethode#RECIST "RECIST"
 * effectiveDateTime = "2024-07-20"
-* subject = Reference(mii-exa-test-data-patient-1)
+* subject = Reference(mii-exa-test-data-mtb-patient-1)
 * focus = Reference(mii-exa-test-data-mtb-diagnose-primaertumor-1)
 * partOf = Reference(mii-exa-test-data-mtb-systemische-therapie-1)
 * valueCodeableConcept.coding = $mii-cs-mtb-response-befund-beurteilung#PR "Partial Response"
@@ -102,7 +102,7 @@ Description: "Test instance for cost coverage application with all MS elements"
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-antrag-kostenuebernahme"
 * type = #institutional
 * use = #claim
-* patient = Reference(mii-exa-test-data-patient-1)
+* patient = Reference(mii-exa-test-data-mtb-patient-1)
 * created = "2024-04-01"
 * provider = Reference(mii-exa-test-data-organization-charite)
 * prescription = Reference(mii-exa-test-data-mtb-therapieempfehlung-1)
@@ -127,7 +127,7 @@ Description: "Test instance for cost coverage response with all MS elements"
 * status = #active
 * type = #institutional
 * use = #claim
-* patient = Reference(mii-exa-test-data-patient-1)
+* patient = Reference(mii-exa-test-data-mtb-patient-1)
 * created = "2024-04-20"
 * insurer = Reference(mii-exa-test-data-organization-charite)
 * request = Reference(mii-exa-test-data-mtb-antrag-kostenuebernahme-1)

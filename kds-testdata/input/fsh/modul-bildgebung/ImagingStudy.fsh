@@ -8,8 +8,8 @@ Description: "ImagingStudy: MagneticResonance"
 * extension[bildgebungsgrund].valueString = "Verdacht auf Mammakarzinom"
 * status = #available
 * modality = $DCM#MR "Magnetic Resonance"
-* subject = Reference(mii-exa-test-data-patient-1)
-* encounter = Reference(mii-exa-test-data-patient-1-encounter-1)
+* subject = Reference(mii-exa-test-data-bildgebung-patient-1)
+* encounter = Reference(mii-exa-test-data-bildgebung-encounter-1)
 * basedOn = Reference(mii-exa-test-data-anforderung)
 * numberOfSeries = 11
 * numberOfInstances = 294
