@@ -9,12 +9,12 @@ Description: "Observation: Mutationslast (TMB) fuer BRAF-Mutation"
 * status = #final
 * category[labCategory] = $observation-category#laboratory "Laboratory"
 * code = $loinc#94076-7 "Mutations/Megabase [# Ratio] in Tumor"
-* subject = Reference(mii-exa-test-data-patient-3)
-* encounter = Reference(mii-exa-test-data-patient-3-encounter-1)
+* subject = Reference(mii-exa-test-data-molgen-patient-1)
+* encounter = Reference(mii-exa-test-data-molgen-encounter-1)
 * effectiveDateTime = "2022-04-07"
 * issued = "2022-04-12T10:30:00+02:00"
 * valueQuantity = 12 $ucum#1/1000000{Base} "Mutations/Megabase"
-* specimen = Reference(mii-exa-test-data-patient-3-specimen-1)
+* specimen = Reference(mii-exa-test-data-molgen-specimen-1)
 * derivedFrom = Reference(mii-exa-test-data-patient-3-molgen-variante-1)
 * component[gene-studied].code = $loinc#48018-6 "Gene studied [ID]"
 * component[gene-studied].valueCodeableConcept.text = "Panel-basiert (alle Gene)"

@@ -21,7 +21,7 @@
   ],
   "performer": [
     {
-      "reference": "Patient/mii-exa-test-data-patient-1"
+      "reference": "Patient/mii-exa-test-data-pro-patient-1"
     }
   ],
   "valueQuantity": {
@@ -83,10 +83,10 @@
   },
   "status": "final",
   "subject": {
-    "reference": "Patient/mii-exa-test-data-patient-1"
+    "reference": "Patient/mii-exa-test-data-pro-patient-1"
   },
   "encounter": {
-    "reference": "Encounter/mii-exa-test-data-patient-1-encounter-1"
+    "reference": "Encounter/mii-exa-test-data-pro-encounter-1"
   },
   "effectiveDateTime": "2024-03-15T12:00:00+01:00"
 }

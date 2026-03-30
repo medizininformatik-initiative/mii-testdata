@@ -13,8 +13,8 @@ Description: "ClinicalImpression: Rare disease assessment - all MS elements popu
 * status = #completed
 * code = $sct#389067005 "Community health procedure"
 * description = "Marfan-Sprechstunde: Erstvorstellung zur Abklaerung erblicher Bindegewebserkrankung"
-* subject = Reference(mii-exa-test-data-patient-3)
-* encounter = Reference(mii-exa-test-data-patient-3-encounter-1)
+* subject = Reference(mii-exa-test-data-seltene-patient-1)
+* encounter = Reference(mii-exa-test-data-seltene-encounter-1)
 * effectiveDateTime = "2025-03-10"
 * date = "2025-03-10"
 * summary = "Patient mit V.a. Marfan-Syndrom vorgestellt. Aortenwurzeldilatation und Linsensubluxation nachgewiesen. Ghent-Kriterien erfuellt. Genetische Testung veranlasst."
@@ -29,7 +29,7 @@ Description: "ClinicalImpression: Rare disease assessment - all MS elements popu
 * finding[=].itemReference = Reference(mii-exa-test-data-patient-3-seltene-hpo-assessment-3)
 * finding[+].itemCodeableConcept = $HPO#HP:0000098 "Tall stature"
 * finding[=].itemReference = Reference(mii-exa-test-data-patient-3-seltene-hpo-assessment-4)
-* supportingInfo[+] = Reference(mii-exa-test-data-patient-3-molgen-befundbericht-1)
+* supportingInfo[+] = Reference(mii-exa-test-data-seltene-molgen-befundbericht-1)
 * supportingInfo[+] = Reference(mii-exa-test-data-patient-3-seltene-symptom-condition-1)
 * note[+].text = "Erstvorstellung in der Marfan-Sprechstunde. Klinische Diagnose gesichert, molekulargenetische Bestaetigung ausstehend."
 * note[+].text = "Therapieplan erstellt: Losartan 50mg taeglich, jaehrliche Echokardiographie."

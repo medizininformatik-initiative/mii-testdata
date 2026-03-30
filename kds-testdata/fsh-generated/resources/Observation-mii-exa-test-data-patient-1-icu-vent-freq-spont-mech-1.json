@@ -1,0 +1,64 @@
+{
+  "resourceType": "Observation",
+  "id": "mii-exa-test-data-patient-1-icu-vent-freq-spont-mech-1",
+  "meta": {
+    "security": [
+      {
+        "code": "HTEST",
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "display": "test health data"
+      }
+    ],
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-spontane-mechanische-atemfrequenz-beatmet"
+    ]
+  },
+  "partOf": [
+    {
+      "reference": "Procedure/mii-exa-test-data-patient-1-icu-vent-beatmung-1"
+    }
+  ],
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "40617009",
+          "system": "http://snomed.info/sct",
+          "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+          "display": "Artificial ventilation (regime/therapy)"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "250810003",
+        "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+        "display": "Total breath rate"
+      },
+      {
+        "system": "http://loinc.org",
+        "code": "19840-8",
+        "display": "Breath rate spontaneous and mechanical --on ventilator"
+      },
+      {
+        "system": "urn:iso:std:iso:11073:10101",
+        "code": "152490",
+        "display": "MDC_VENT_RESP_BTSD_PSAZC_RATE"
+      }
+    ]
+  },
+  "valueQuantity": {
+    "system": "http://unitsofmeasure.org",
+    "code": "/min",
+    "value": 20,
+    "unit": "breaths per minute"
+  },
+  "status": "final",
+  "subject": {
+    "reference": "Patient/mii-exa-test-data-icu-patient-1"
+  },
+  "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+}

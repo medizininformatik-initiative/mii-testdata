@@ -13,9 +13,9 @@
 // * status = #final
 // * category[labCategory] = $observation-category#laboratory "Laboratory"
 // * code = $loinc#53041-0 "DNA region of interest panel"
-// * subject = Reference(mii-exa-test-data-patient-3)
+// * subject = Reference(mii-exa-test-data-molgen-patient-1)
 // * method = $loinc#LA26398-0 "Sequencing"
-// * specimen = Reference(mii-exa-test-data-patient-3-specimen-1)
+// * specimen = Reference(mii-exa-test-data-molgen-specimen-1)
 // * device = Reference(mii-exa-test-data-molgen-device-sequencer)
 // * component[gene-studied].code = $loinc#48018-6 "Gene studied [ID]"
 // * component[gene-studied].valueCodeableConcept = $HGNC#HGNC:1097 "BRAF"

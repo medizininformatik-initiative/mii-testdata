@@ -94,7 +94,7 @@
   "context": {
     "encounter": [
       {
-        "reference": "Encounter/mii-exa-test-data-patient-1-encounter-1"
+        "reference": "Encounter/mii-exa-test-data-dokument-encounter-1"
       }
     ],
     "event": [
@@ -134,7 +134,7 @@
   "status": "current",
   "docStatus": "final",
   "subject": {
-    "reference": "Patient/mii-exa-test-data-patient-1"
+    "reference": "Patient/mii-exa-test-data-dokument-patient-1"
   },
   "description": "Roentgen-Thorax Befundbericht mit Nachweis eines Infiltrats im rechten Unterlappen"
 }

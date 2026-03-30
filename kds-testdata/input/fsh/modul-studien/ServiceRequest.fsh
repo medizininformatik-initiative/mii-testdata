@@ -8,8 +8,8 @@ Description: "ServiceRequest: Studieneinschluss-Anfrage für Patient-1 in MII-BI
 * intent = #proposal
 * category = $sct#110465008 "Clinical trial (procedure)"
 * code = $sct#702475000 "Referral to clinical trial (procedure)"
-* subject = Reference(mii-exa-test-data-patient-1)
-* encounter = Reference(mii-exa-test-data-patient-1-encounter-1)
+* subject = Reference(mii-exa-test-data-studien-patient-1)
+* encounter = Reference(mii-exa-test-data-studien-encounter-1)
 * authoredOn = "2024-03-10"
 * requester = Reference(mii-exa-test-data-practitioner-physician-1)
 * reasonCode = $sct#363346000 "Malignant neoplastic disease (disorder)"

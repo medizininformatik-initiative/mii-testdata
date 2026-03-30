@@ -107,10 +107,10 @@
   "status": "draft",
   "priority": "routine",
   "subject": {
-    "reference": "Patient/mii-exa-test-data-patient-3"
+    "reference": "Patient/mii-exa-test-data-seltene-patient-1"
   },
   "encounter": {
-    "reference": "Encounter/mii-exa-test-data-patient-3-encounter-1"
+    "reference": "Encounter/mii-exa-test-data-seltene-encounter-1"
   },
   "requester": {
     "reference": "Practitioner/mii-exa-test-data-practitioner-physician-1"

@@ -244,7 +244,7 @@
   },
   "status": "final",
   "subject": {
-    "reference": "Patient/mii-exa-test-data-patient-4"
+    "reference": "Patient/mii-exa-test-data-molgen-patient-2"
   },
   "effectiveDateTime": "2022-11-30",
   "issued": "2022-12-05T14:00:00+01:00",

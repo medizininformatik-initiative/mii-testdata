@@ -7,5 +7,5 @@ Description: "CarePlan: Behandlungsempfehlung"
 * status = #completed
 * intent = #proposal
 * description = "The patient must receive vacuum biopsy"
-* subject = Reference(mii-exa-test-data-patient-1)
+* subject = Reference(mii-exa-test-data-bildgebung-patient-1)
 * supportingInfo = Reference(mii-exa-test-data-befundbericht)

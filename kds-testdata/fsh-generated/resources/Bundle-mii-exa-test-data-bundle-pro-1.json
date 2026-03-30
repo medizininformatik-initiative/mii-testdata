@@ -1,0 +1,1645 @@
+{
+  "resourceType": "Bundle",
+  "id": "mii-exa-test-data-bundle-pro-1",
+  "meta": {
+    "security": [
+      {
+        "code": "HTEST",
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "display": "test health data"
+      }
+    ]
+  },
+  "entry": [
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Patient/mii-exa-test-data-pro-patient-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Patient/mii-exa-test-data-pro-patient-1",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "mii-exa-test-data-pro-patient-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://www.charite.de/fhir/sid/patientenidentifikation",
+            "value": "PRO-TEST-001"
+          }
+        ],
+        "name": [
+          {
+            "given": [
+              "Anna"
+            ],
+            "family": "Fragebogen"
+          }
+        ],
+        "birthDate": "1988-12-05",
+        "gender": "female"
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Encounter/mii-exa-test-data-pro-encounter-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Encounter/mii-exa-test-data-pro-encounter-1",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "mii-exa-test-data-pro-encounter-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ]
+        },
+        "period": {
+          "start": "2024-06-01",
+          "end": "2024-06-15"
+        },
+        "status": "finished",
+        "class": {
+          "code": "IMP",
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "display": "inpatient encounter"
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-pro-patient-1"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "QuestionnaireResponse/mii-exa-test-data-patient-1-pro-phq9-response"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/QuestionnaireResponse/mii-exa-test-data-patient-1-pro-phq9-response",
+      "resource": {
+        "resourceType": "QuestionnaireResponse",
+        "id": "mii-exa-test-data-patient-1-pro-phq9-response",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"
+          ]
+        },
+        "item": [
+          {
+            "answer": [
+              {
+                "valueCoding": {
+                  "code": "LA6569-3",
+                  "system": "http://loinc.org",
+                  "display": "Several days"
+                }
+              }
+            ],
+            "linkId": "phq-phq9-q01"
+          },
+          {
+            "answer": [
+              {
+                "valueCoding": {
+                  "code": "LA6569-3",
+                  "system": "http://loinc.org",
+                  "display": "Several days"
+                }
+              }
+            ],
+            "linkId": "phq-phq9-q02"
+          },
+          {
+            "answer": [
+              {
+                "valueCoding": {
+                  "code": "LA6570-1",
+                  "system": "http://loinc.org",
+                  "display": "More than half the days"
+                }
+              }
+            ],
+            "linkId": "phq-phq9-q03"
+          },
+          {
+            "answer": [
+              {
+                "valueCoding": {
+                  "code": "LA6569-3",
+                  "system": "http://loinc.org",
+                  "display": "Several days"
+                }
+              }
+            ],
+            "linkId": "phq-phq9-q04"
+          },
+          {
+            "answer": [
+              {
+                "valueCoding": {
+                  "code": "LA6568-5",
+                  "system": "http://loinc.org",
+                  "display": "Not at all"
+                }
+              }
+            ],
+            "linkId": "phq-phq9-q05"
+          },
+          {
+            "answer": [
+              {
+                "valueCoding": {
+                  "code": "LA6569-3",
+                  "system": "http://loinc.org",
+                  "display": "Several days"
+                }
+              }
+            ],
+            "linkId": "phq-phq9-q06"
+          },
+          {
+            "answer": [
+              {
+                "valueCoding": {
+                  "code": "LA6569-3",
+                  "system": "http://loinc.org",
+                  "display": "Several days"
+                }
+              }
+            ],
+            "linkId": "phq-phq9-q07"
+          },
+          {
+            "answer": [
+              {
+                "valueCoding": {
+                  "code": "LA6568-5",
+                  "system": "http://loinc.org",
+                  "display": "Not at all"
+                }
+              }
+            ],
+            "linkId": "phq-phq9-q08"
+          },
+          {
+            "answer": [
+              {
+                "valueCoding": {
+                  "code": "LA6569-3",
+                  "system": "http://loinc.org",
+                  "display": "Several days"
+                }
+              }
+            ],
+            "linkId": "phq-phq9-q09"
+          },
+          {
+            "answer": [
+              {
+                "valueDecimal": 8
+              }
+            ],
+            "linkId": "phq-phq9-score-total"
+          },
+          {
+            "answer": [
+              {
+                "valueCoding": {
+                  "code": "LA6573-5",
+                  "system": "http://loinc.org",
+                  "display": "Somewhat difficult"
+                }
+              }
+            ],
+            "linkId": "phq-phq9-q10"
+          }
+        ],
+        "status": "completed",
+        "language": "de",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-pro-patient-1"
+        },
+        "authored": "2024-03-15T10:00:00+01:00",
+        "questionnaire": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-phq-9"
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "QuestionnaireResponse/mii-exa-test-data-patient-1-pro-promis-dep-sf4a-response"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/QuestionnaireResponse/mii-exa-test-data-patient-1-pro-promis-dep-sf4a-response",
+      "resource": {
+        "resourceType": "QuestionnaireResponse",
+        "id": "mii-exa-test-data-patient-1-pro-promis-dep-sf4a-response",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"
+          ]
+        },
+        "item": [
+          {
+            "answer": [
+              {
+                "valueCoding": {
+                  "code": "LA10066-1",
+                  "system": "http://loinc.org",
+                  "display": "Rarely"
+                }
+              }
+            ],
+            "linkId": "promis-eddep04"
+          },
+          {
+            "answer": [
+              {
+                "valueCoding": {
+                  "code": "LA10066-1",
+                  "system": "http://loinc.org",
+                  "display": "Rarely"
+                }
+              }
+            ],
+            "linkId": "promis-eddep06"
+          },
+          {
+            "answer": [
+              {
+                "valueCoding": {
+                  "code": "LA6270-8",
+                  "system": "http://loinc.org",
+                  "display": "Never"
+                }
+              }
+            ],
+            "linkId": "promis-eddep29"
+          },
+          {
+            "answer": [
+              {
+                "valueCoding": {
+                  "code": "LA10066-1",
+                  "system": "http://loinc.org",
+                  "display": "Rarely"
+                }
+              }
+            ],
+            "linkId": "promis-eddep41"
+          },
+          {
+            "answer": [
+              {
+                "valueDecimal": 7
+              }
+            ],
+            "linkId": "promis-depression-score-raw"
+          },
+          {
+            "answer": [
+              {
+                "valueDecimal": 52.7
+              }
+            ],
+            "linkId": "promis-depression-score-tscore"
+          }
+        ],
+        "status": "completed",
+        "language": "de",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-pro-patient-1"
+        },
+        "authored": "2024-03-15T10:15:00+01:00",
+        "questionnaire": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-depression-sf4a"
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-patient-1-pro-phq9-score"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-1-pro-phq9-score",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-1-pro-phq9-score",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://www.charite.de/fhir/sid/pro-observation-id",
+            "value": "PRO-OBS-PHQ9-PAT1-001"
+          }
+        ],
+        "focus": [
+          {
+            "reference": "Encounter/mii-exa-test-data-pro-encounter-1"
+          }
+        ],
+        "performer": [
+          {
+            "reference": "Patient/mii-exa-test-data-pro-patient-1"
+          }
+        ],
+        "valueQuantity": {
+          "value": 8,
+          "unit": "{score}",
+          "system": "http://unitsofmeasure.org",
+          "code": "{score}"
+        },
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "code": "L",
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "display": "Low"
+              }
+            ],
+            "text": "Mild depression (5-9)"
+          }
+        ],
+        "method": {
+          "text": "PHQ-9 Self-Report Questionnaire"
+        },
+        "note": [
+          {
+            "text": "Patient completed questionnaire independently during outpatient visit"
+          }
+        ],
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/mii-exa-test-data-patient-1-pro-phq9-response"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/workflow-instantiatesCanonical",
+            "valueCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ObservationDefinition/mii-obsdef-pro-score-phq-9"
+          }
+        ],
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "44261-6",
+              "system": "http://loinc.org",
+              "display": "Patient Health Questionnaire 9 item (PHQ-9) total score [Reported]"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-pro-patient-1"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-pro-encounter-1"
+        },
+        "effectiveDateTime": "2024-03-15T10:00:00+01:00"
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-patient-1-pro-promis-dep-sf4a-raw-score"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-1-pro-promis-dep-sf4a-raw-score",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-1-pro-promis-dep-sf4a-raw-score",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-depression-sf4a-raw-score"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "survey",
+                "display": "Survey"
+              }
+            ]
+          }
+        ],
+        "valueQuantity": {
+          "unit": "{score}",
+          "system": "http://unitsofmeasure.org",
+          "code": "{score}",
+          "value": 7
+        },
+        "referenceRange": [
+          {
+            "low": {
+              "value": 4
+            },
+            "high": {
+              "value": 20
+            },
+            "text": "Valid range for PROMIS Depression SF 4a raw scores"
+          }
+        ],
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/mii-exa-test-data-patient-1-pro-promis-dep-sf4a-response"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/workflow-instantiatesCanonical",
+            "valueCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ObservationDefinition/mii-obsdef-pro-promis-depression-sf4a-raw-score"
+          }
+        ],
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "77821-7",
+              "display": "PROMIS short form - emotional distress - depression 4a - version 1.0 raw score"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-pro-patient-1"
+        },
+        "effectiveDateTime": "2024-03-15T10:15:00+01:00"
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-patient-1-pro-promis-dep-sf4a-tscore"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-1-pro-promis-dep-sf4a-tscore",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-1-pro-promis-dep-sf4a-tscore",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-depression-t-score"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "survey",
+                "display": "Survey"
+              }
+            ]
+          }
+        ],
+        "valueQuantity": {
+          "unit": "{score}",
+          "system": "http://unitsofmeasure.org",
+          "code": "{score}",
+          "value": 52.7
+        },
+        "referenceRange": [
+          {
+            "low": {
+              "value": 41
+            },
+            "high": {
+              "value": 78.4
+            },
+            "text": "Depression T-score interpretation based on European population data"
+          }
+        ],
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/mii-exa-test-data-patient-1-pro-promis-dep-sf4a-response"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/workflow-instantiatesCanonical",
+            "valueCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ObservationDefinition/mii-obsdef-pro-depression-t-score"
+          }
+        ],
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "77861-3",
+              "display": "PROMIS emotional distress - depression - version 1.0 Tscore"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-pro-patient-1"
+        },
+        "effectiveDateTime": "2024-03-15T10:15:00+01:00"
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-patient-1-pro-bdi-ii-score"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-1-pro-bdi-ii-score",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-1-pro-bdi-ii-score",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-observation-bdi-ii"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://www.charite.de/fhir/sid/pro-observation-id",
+            "value": "PRO-OBS-BDI2-PAT1-001"
+          }
+        ],
+        "performer": [
+          {
+            "reference": "Patient/mii-exa-test-data-pro-patient-1"
+          }
+        ],
+        "valueQuantity": {
+          "unit": "{score}",
+          "system": "http://unitsofmeasure.org",
+          "code": "{score}",
+          "value": 12
+        },
+        "method": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "89209-1",
+              "display": "Beck Depression Inventory II total score [BDI]"
+            }
+          ],
+          "text": "Beck Depression Inventory II (BDI-II)"
+        },
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "code": "L",
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "display": "Low"
+              }
+            ],
+            "text": "Mild depression (10-18)"
+          }
+        ],
+        "note": [
+          {
+            "text": "BDI-II completed as cross-validation for PHQ-9 screening"
+          }
+        ],
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/mii-exa-test-data-patient-1-pro-phq9-response"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/workflow-instantiatesCanonical",
+            "valueCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ObservationDefinition/mii-obsdef-pro-score-bdi-ii"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "89209-1",
+              "display": "Beck Depression Inventory II total score [BDI]"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-pro-patient-1"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-pro-encounter-1"
+        },
+        "effectiveDateTime": "2024-03-15T10:30:00+01:00"
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-patient-1-pro-eq5d5l-index"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-1-pro-eq5d5l-index",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-1-pro-eq5d5l-index",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-observation-eq5d5l-index"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://www.charite.de/fhir/sid/pro-observation-id",
+            "value": "PRO-OBS-EQ5D-IDX-PAT1-001"
+          }
+        ],
+        "performer": [
+          {
+            "reference": "Patient/mii-exa-test-data-pro-patient-1"
+          }
+        ],
+        "valueQuantity": {
+          "unit": "1",
+          "system": "http://unitsofmeasure.org",
+          "code": "1",
+          "value": 0.812
+        },
+        "note": [
+          {
+            "text": "Reference: Ludwig, K., Graf von der Schulenburg, JM. & Greiner, W. German Value Set for the EQ-5D-5L. PharmacoEconomics 36, 663-674 (2018). https://doi.org/10.1007/s40273-018-0615-8"
+          }
+        ],
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "code": "N",
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "display": "Normal"
+              }
+            ],
+            "text": "Good health state"
+          }
+        ],
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/mii-exa-test-data-patient-1-pro-phq9-response"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/workflow-instantiatesCanonical",
+            "valueCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ObservationDefinition/mii-obsdef-pro-score-eq5d5l-index"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "736534008",
+              "display": "EuroQol five dimension five level index value (observable entity)"
+            }
+          ]
+        },
+        "method": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "73041000052103",
+              "display": "EuroQoL five dimension five level questionnaire"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-pro-patient-1"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-pro-encounter-1"
+        },
+        "effectiveDateTime": "2024-03-15T11:00:00+01:00"
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-patient-1-pro-eq5d5l-vas"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-1-pro-eq5d5l-vas",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-1-pro-eq5d5l-vas",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-observation-eq5d5l-vas"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://www.charite.de/fhir/sid/pro-observation-id",
+            "value": "PRO-OBS-EQ5D-VAS-PAT1-001"
+          }
+        ],
+        "performer": [
+          {
+            "reference": "Patient/mii-exa-test-data-pro-patient-1"
+          }
+        ],
+        "valueQuantity": {
+          "unit": "1",
+          "system": "http://unitsofmeasure.org",
+          "code": "1",
+          "value": 75
+        },
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "code": "N",
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "display": "Normal"
+              }
+            ],
+            "text": "Good self-rated health"
+          }
+        ],
+        "note": [
+          {
+            "text": "VAS scale 0-100, higher values indicate better health"
+          }
+        ],
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/mii-exa-test-data-patient-1-pro-phq9-response"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/workflow-instantiatesCanonical",
+            "valueCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ObservationDefinition/mii-obsdef-pro-score-eq5d5l-vas"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "736535009",
+              "display": "EuroQol visual analogue score (observable entity)"
+            }
+          ]
+        },
+        "method": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "73041000052103",
+              "display": "EuroQoL five dimension five level questionnaire"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-pro-patient-1"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-pro-encounter-1"
+        },
+        "effectiveDateTime": "2024-03-15T11:00:00+01:00"
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-patient-1-pro-eq5d5l-profile"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-1-pro-eq5d5l-profile",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-1-pro-eq5d5l-profile",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-observation-eq5d5l-profile"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://www.charite.de/fhir/sid/pro-observation-id",
+            "value": "PRO-OBS-EQ5D-PROF-PAT1-001"
+          }
+        ],
+        "performer": [
+          {
+            "reference": "Patient/mii-exa-test-data-pro-patient-1"
+          }
+        ],
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "code": "N",
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "display": "Normal"
+              }
+            ],
+            "text": "Mild problems in usual activities and pain/discomfort"
+          }
+        ],
+        "note": [
+          {
+            "text": "Profile string: Mobility=1, Self-care=1, Usual Activities=2, Pain/Discomfort=1, Anxiety/Depression=2"
+          }
+        ],
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/mii-exa-test-data-patient-1-pro-phq9-response"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/workflow-instantiatesCanonical",
+            "valueCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ObservationDefinition/mii-obsdef-pro-score-eq5d5l-profile"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue",
+              "code": "euroqol-eq5d5l-profile",
+              "display": "EuroQol EQ-5D-5L Profile"
+            }
+          ]
+        },
+        "method": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "73041000052103",
+              "display": "EuroQoL five dimension five level questionnaire"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-pro-patient-1"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-pro-encounter-1"
+        },
+        "effectiveDateTime": "2024-03-15T11:00:00+01:00",
+        "valueString": "11212"
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-patient-1-pro-promis29-anxiety-tscore"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-1-pro-promis29-anxiety-tscore",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-1-pro-promis29-anxiety-tscore",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-29-anxiety-tscore"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://www.charite.de/fhir/sid/pro-observation-id",
+            "value": "PRO-OBS-P29-ANX-PAT1-001"
+          }
+        ],
+        "performer": [
+          {
+            "reference": "Patient/mii-exa-test-data-pro-patient-1"
+          }
+        ],
+        "valueQuantity": {
+          "unit": "{score}",
+          "system": "http://unitsofmeasure.org",
+          "code": "{score}",
+          "value": 53.7
+        },
+        "method": {
+          "text": "PROMIS-29 Profile v2.1"
+        },
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "code": "N",
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "display": "Normal"
+              }
+            ],
+            "text": "Within normal limits"
+          }
+        ],
+        "note": [
+          {
+            "text": "PROMIS-29 anxiety domain completed as part of comprehensive assessment"
+          }
+        ],
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/mii-exa-test-data-patient-1-pro-phq9-response"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/workflow-instantiatesCanonical",
+            "valueCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ObservationDefinition/mii-obsdef-pro-promis-29-anxiety-tscore"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "71967-4",
+              "display": "PROMIS-29 Anxiety score T-score"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-pro-patient-1"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-pro-encounter-1"
+        },
+        "effectiveDateTime": "2024-03-15T11:30:00+01:00"
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-patient-1-pro-promis29-depression-tscore"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-1-pro-promis29-depression-tscore",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-1-pro-promis29-depression-tscore",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-29-depression-tscore"
+          ]
+        },
+        "valueQuantity": {
+          "unit": "{score}",
+          "system": "http://unitsofmeasure.org",
+          "code": "{score}",
+          "value": 55.1
+        },
+        "method": {
+          "text": "PROMIS-29 Profile v2.1"
+        },
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/mii-exa-test-data-patient-1-pro-phq9-response"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/workflow-instantiatesCanonical",
+            "valueCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ObservationDefinition/mii-obsdef-pro-promis-29-depression-tscore"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "77861-3",
+              "display": "PROMIS emotional distress - depression - version 1.0 Tscore"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-pro-patient-1"
+        },
+        "effectiveDateTime": "2024-03-15T11:30:00+01:00"
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-patient-1-pro-promis29-fatigue-tscore"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-1-pro-promis29-fatigue-tscore",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-1-pro-promis29-fatigue-tscore",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-29-fatigue-tscore"
+          ]
+        },
+        "valueQuantity": {
+          "unit": "{score}",
+          "system": "http://unitsofmeasure.org",
+          "code": "{score}",
+          "value": 58.3
+        },
+        "method": {
+          "text": "PROMIS-29 Profile v2.1"
+        },
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/mii-exa-test-data-patient-1-pro-phq9-response"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/workflow-instantiatesCanonical",
+            "valueCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ObservationDefinition/mii-obsdef-pro-promis-29-fatigue-tscore"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "77864-7",
+              "display": "PROMIS fatigue - version 1.0 Tscore"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-pro-patient-1"
+        },
+        "effectiveDateTime": "2024-03-15T11:30:00+01:00"
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-patient-1-pro-promis29-pain-intensity"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-1-pro-promis29-pain-intensity",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-1-pro-promis29-pain-intensity",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-29-pain-intensity"
+          ]
+        },
+        "valueQuantity": {
+          "unit": "1",
+          "system": "http://unitsofmeasure.org",
+          "code": "1",
+          "value": 3
+        },
+        "method": {
+          "text": "PROMIS-29 Profile v2.1 - Pain Intensity single item"
+        },
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "code": "N",
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "display": "Normal"
+              }
+            ],
+            "text": "Mild pain"
+          }
+        ],
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/mii-exa-test-data-patient-1-pro-phq9-response"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/workflow-instantiatesCanonical",
+            "valueCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ObservationDefinition/mii-obsdef-pro-promis-29-pain-intensity"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "75261-8",
+              "display": "How intense was your average pain in the past 7 days [PROMIS]"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-pro-patient-1"
+        },
+        "effectiveDateTime": "2024-03-15T11:30:00+01:00"
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-pat1-pro-p29-pain-int-tscore"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-pat1-pro-p29-pain-int-tscore",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-pat1-pro-p29-pain-int-tscore",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-29-pain-interference-tscore"
+          ]
+        },
+        "valueQuantity": {
+          "unit": "{score}",
+          "system": "http://unitsofmeasure.org",
+          "code": "{score}",
+          "value": 52.4
+        },
+        "method": {
+          "text": "PROMIS-29 Profile v2.1"
+        },
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/mii-exa-test-data-patient-1-pro-phq9-response"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/workflow-instantiatesCanonical",
+            "valueCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ObservationDefinition/mii-obsdef-pro-promis-29-pain-interference-tscore"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "77865-4",
+              "display": "PROMIS pain interference - version 1.0 Tscore"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-pro-patient-1"
+        },
+        "effectiveDateTime": "2024-03-15T11:30:00+01:00"
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-pat1-pro-p29-phys-fn-tscore"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-pat1-pro-p29-phys-fn-tscore",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-pat1-pro-p29-phys-fn-tscore",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-29-physical-function-tscore"
+          ]
+        },
+        "valueQuantity": {
+          "unit": "{score}",
+          "system": "http://unitsofmeasure.org",
+          "code": "{score}",
+          "value": 48.2
+        },
+        "method": {
+          "text": "PROMIS-29 Profile v2.1"
+        },
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/mii-exa-test-data-patient-1-pro-phq9-response"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/workflow-instantiatesCanonical",
+            "valueCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ObservationDefinition/mii-obsdef-pro-promis-29-physical-function-tscore"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "91721-1",
+              "display": "PROMIS physical function - version 2.0 T-score"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-pro-patient-1"
+        },
+        "effectiveDateTime": "2024-03-15T11:30:00+01:00"
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-pat1-pro-p29-sleep-tscore"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-pat1-pro-p29-sleep-tscore",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-pat1-pro-p29-sleep-tscore",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-29-sleep-disturbance-tscore"
+          ]
+        },
+        "valueQuantity": {
+          "unit": "{score}",
+          "system": "http://unitsofmeasure.org",
+          "code": "{score}",
+          "value": 56.8
+        },
+        "method": {
+          "text": "PROMIS-29 Profile v2.1"
+        },
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/mii-exa-test-data-patient-1-pro-phq9-response"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/workflow-instantiatesCanonical",
+            "valueCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ObservationDefinition/mii-obsdef-pro-promis-29-sleep-disturbance-tscore"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "77860-5",
+              "display": "PROMIS sleep disturbance - version 1.0 Tscore"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-pro-patient-1"
+        },
+        "effectiveDateTime": "2024-03-15T11:30:00+01:00"
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-patient-1-pro-promis29-social-function-tscore"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-1-pro-promis29-social-function-tscore",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-1-pro-promis29-social-function-tscore",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-29-social-function-tscore"
+          ]
+        },
+        "valueQuantity": {
+          "unit": "{score}",
+          "system": "http://unitsofmeasure.org",
+          "code": "{score}",
+          "value": 44.9
+        },
+        "method": {
+          "text": "PROMIS-29 Profile v2.1"
+        },
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/mii-exa-test-data-patient-1-pro-phq9-response"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/workflow-instantiatesCanonical",
+            "valueCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ObservationDefinition/mii-obsdef-pro-promis-29-social-function-tscore"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "77854-8",
+              "display": "PROMIS ability to participate in social roles and activities - version 2.0 Tscore"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-pro-patient-1"
+        },
+        "effectiveDateTime": "2024-03-15T11:30:00+01:00"
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-patient-1-pro-promis-cogfn-sf4a-raw-score"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-1-pro-promis-cogfn-sf4a-raw-score",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-1-pro-promis-cogfn-sf4a-raw-score",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-cognitive-function-sf4a-raw-score"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://www.charite.de/fhir/sid/pro-observation-id",
+            "value": "PRO-OBS-COGFN-RAW-PAT1-001"
+          }
+        ],
+        "performer": [
+          {
+            "reference": "Patient/mii-exa-test-data-pro-patient-1"
+          }
+        ],
+        "valueQuantity": {
+          "unit": "{score}",
+          "system": "http://unitsofmeasure.org",
+          "code": "{score}",
+          "value": 15
+        },
+        "method": {
+          "text": "PROMIS Cognitive Function SF 4a"
+        },
+        "referenceRange": [
+          {
+            "low": {
+              "value": 4
+            },
+            "high": {
+              "value": 20
+            },
+            "text": "Valid range for PROMIS Cognitive Function SF 4a raw scores"
+          }
+        ],
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "code": "N",
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "display": "Normal"
+              }
+            ],
+            "text": "Above average cognitive function"
+          }
+        ],
+        "note": [
+          {
+            "text": "Cognitive function screening as part of comprehensive PRO assessment"
+          }
+        ],
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/mii-exa-test-data-patient-1-pro-phq9-response"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/workflow-instantiatesCanonical",
+            "valueCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ObservationDefinition/mii-obsdef-pro-promis-cognitive-function-sf4a-raw-score"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "81533-2",
+              "display": "PROMIS short form - cognitive function 4a - version 2.0 raw score"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-pro-patient-1"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-pro-encounter-1"
+        },
+        "effectiveDateTime": "2024-03-15T12:00:00+01:00"
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-patient-1-pro-promis-cogfn-sf4a-tscore"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-1-pro-promis-cogfn-sf4a-tscore",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-1-pro-promis-cogfn-sf4a-tscore",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-cognitive-function-sf4a-tscore"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://www.charite.de/fhir/sid/pro-observation-id",
+            "value": "PRO-OBS-COGFN-T-PAT1-001"
+          }
+        ],
+        "performer": [
+          {
+            "reference": "Patient/mii-exa-test-data-pro-patient-1"
+          }
+        ],
+        "valueQuantity": {
+          "unit": "{score}",
+          "system": "http://unitsofmeasure.org",
+          "code": "{score}",
+          "value": 54.1
+        },
+        "method": {
+          "text": "PROMIS Cognitive Function SF 4a"
+        },
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "code": "N",
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "display": "Normal"
+              }
+            ],
+            "text": "Cognitive function within normal limits"
+          }
+        ],
+        "note": [
+          {
+            "text": "T-score derived from raw score 15"
+          }
+        ],
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/mii-exa-test-data-patient-1-pro-phq9-response"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/workflow-instantiatesCanonical",
+            "valueCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ObservationDefinition/mii-obsdef-pro-promis-cognitive-function-sf4a-tscore"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "81538-1",
+              "display": "PROMIS cognitive function - version 2.0 T-score"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-pro-patient-1"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-pro-encounter-1"
+        },
+        "effectiveDateTime": "2024-03-15T12:00:00+01:00"
+      }
+    }
+  ],
+  "type": "transaction",
+  "timestamp": "2025-06-18T13:51:00+02:00"
+}

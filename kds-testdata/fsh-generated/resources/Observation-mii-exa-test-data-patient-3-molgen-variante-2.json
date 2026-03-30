@@ -1,0 +1,328 @@
+{
+  "resourceType": "Observation",
+  "id": "mii-exa-test-data-patient-3-molgen-variante-2",
+  "meta": {
+    "security": [
+      {
+        "code": "HTEST",
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "display": "test health data"
+      }
+    ],
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/variante",
+      "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/variant"
+    ]
+  },
+  "basedOn": [
+    {
+      "reference": "ServiceRequest/mii-exa-test-data-patient-3-molgen-anforderung-2"
+    }
+  ],
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "Laboratory"
+        }
+      ]
+    },
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "GE"
+        }
+      ]
+    }
+  ],
+  "component": [
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "48018-6",
+            "display": "Gene studied [ID]"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "HGNC:3236",
+            "system": "http://www.genenames.org/geneId",
+            "display": "EGFR"
+          }
+        ]
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "48013-7",
+            "display": "Genomic reference sequence [ID]"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "NM_005228.5",
+            "system": "http://www.ncbi.nlm.nih.gov/refseq"
+          }
+        ]
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "47999-8",
+            "display": "DNA region name [Identifier]"
+          }
+        ]
+      },
+      "valueString": "Exon 21"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "48004-6",
+            "display": "DNA change (c.HGVS)"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "NM_005228.5:c.2573T>G",
+            "system": "http://varnomen.hgvs.org"
+          }
+        ]
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "48005-3",
+            "display": "Amino acid change (pHGVS)"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "p.(Leu858Arg)",
+            "system": "http://varnomen.hgvs.org"
+          }
+        ]
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "81258-6",
+            "display": "Sample variant allelic frequency [NFr]"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 42.3,
+        "code": "%",
+        "system": "http://unitsofmeasure.org"
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "48001-2",
+            "display": "Cytogenetic (chromosome) location"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "7p11.2",
+            "system": "urn:oid:2.16.840.1.113883.6.335"
+          }
+        ]
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "48019-4",
+            "display": "DNA change type"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "SO:1000008",
+            "system": "http://sequenceontology.org",
+            "display": "point_mutation"
+          }
+        ]
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "81252-9",
+            "display": "Discrete genetic variant"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "rs121434568",
+            "system": "http://www.ncbi.nlm.nih.gov/projects/SNP"
+          }
+        ]
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "62374-4",
+            "display": "Human reference sequence assembly version"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "LA26806-2",
+            "system": "http://loinc.org",
+            "display": "GRCh38"
+          }
+        ]
+      }
+    },
+    {
+      "valueRange": {
+        "low": {
+          "value": 55191822
+        },
+        "high": {
+          "value": 55191822
+        }
+      },
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "81254-5",
+            "display": "Genomic allele start-end"
+          }
+        ]
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "69547-8",
+            "display": "Genomic ref allele [ID]"
+          }
+        ]
+      },
+      "valueString": "T"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "69551-0",
+            "display": "Genomic alt allele [ID]"
+          }
+        ]
+      },
+      "valueString": "G"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "48002-0",
+            "display": "Genomic source class [Type]"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "LA6684-0",
+            "system": "http://loinc.org",
+            "display": "Somatic"
+          }
+        ]
+      }
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "69548-6",
+        "display": "Genetic variant assessment"
+      }
+    ]
+  },
+  "status": "final",
+  "subject": {
+    "reference": "Patient/mii-exa-test-data-molgen-patient-1"
+  },
+  "effectiveDateTime": "2024-03-20",
+  "issued": "2024-03-25T10:00:00+01:00",
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "code": "LA9633-4",
+        "system": "http://loinc.org",
+        "display": "Present"
+      }
+    ]
+  },
+  "method": {
+    "coding": [
+      {
+        "code": "LA26398-0",
+        "system": "http://loinc.org",
+        "display": "Sequencing"
+      }
+    ]
+  },
+  "specimen": {
+    "reference": "Specimen/mii-exa-test-data-patient-3-specimen-1"
+  },
+  "device": {
+    "reference": "Device/mii-exa-test-data-molgen-device-sequencer"
+  }
+}

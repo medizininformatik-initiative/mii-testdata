@@ -7,4 +7,4 @@ Description: "BodyStructure: Körperstruktur"
 * morphology = $sct#12747003 "Microcalcification, calcified structure (morphologic abnormality)"
 * location = $sct#76752008 "Breast structure (body structure)"
 * locationQualifier = $sct#7771000 "Left (qualifier value)"
-* patient = Reference(mii-exa-test-data-patient-1)
+* patient = Reference(mii-exa-test-data-bildgebung-patient-1)

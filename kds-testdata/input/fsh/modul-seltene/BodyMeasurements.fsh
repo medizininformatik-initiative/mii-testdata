@@ -13,7 +13,7 @@ Description: "BMI Observation - all MS elements"
 * status = #final
 * category = $observation-category#vital-signs "Vital Signs"
 * code = $loinc#39156-5 "Body mass index (BMI) [Ratio]"
-* subject = Reference(mii-exa-test-data-patient-3)
+* subject = Reference(mii-exa-test-data-seltene-patient-1)
 * effectiveDateTime = "2025-03-10T10:00:00+01:00"
 * valueQuantity.value = 19.2
 * valueQuantity.unit = "kg/m2"
@@ -29,7 +29,7 @@ Description: "Kopfumfang Observation - all MS elements"
 * status = #final
 * category = $observation-category#vital-signs "Vital Signs"
 * code = $loinc#9843-4 "Head Occipital-frontal circumference"
-* subject = Reference(mii-exa-test-data-patient-3)
+* subject = Reference(mii-exa-test-data-seltene-patient-1)
 * effectiveDateTime = "2025-03-10T10:00:00+01:00"
 * valueQuantity.value = 57.5
 * valueQuantity.unit = "cm"
@@ -45,7 +45,7 @@ Description: "Hueftumfang Observation - all MS elements"
 * status = #final
 * category = $observation-category#vital-signs "Vital Signs"
 * code = $loinc#56063-1 "Circumference.at maximal protrusion of gluteus muscles Pelvis"
-* subject = Reference(mii-exa-test-data-patient-3)
+* subject = Reference(mii-exa-test-data-seltene-patient-1)
 * effectiveDateTime = "2025-03-10T10:00:00+01:00"
 * valueQuantity.value = 88
 * valueQuantity.unit = "cm"
@@ -61,7 +61,7 @@ Description: "Taillenumfang Observation - all MS elements"
 * status = #final
 * category = $observation-category#vital-signs "Vital Signs"
 * code = $loinc#8280-0 "Waist Circumference at umbilicus by Tape measure"
-* subject = Reference(mii-exa-test-data-patient-3)
+* subject = Reference(mii-exa-test-data-seltene-patient-1)
 * effectiveDateTime = "2025-03-10T10:00:00+01:00"
 * valueQuantity.value = 74
 * valueQuantity.unit = "cm"
@@ -80,7 +80,7 @@ Description: "Blutgruppe Observation: A Rh(D) positive - all MS elements, both c
 // Both LOINC code slices: abo-rh AND abo
 * code.coding[+] = $loinc#882-1 "ABO and Rh group [Type] in Blood"
 * code.coding[+] = $loinc#883-9 "ABO group [Type] in Blood"
-* subject = Reference(mii-exa-test-data-patient-3)
+* subject = Reference(mii-exa-test-data-seltene-patient-1)
 * effectiveDateTime = "2025-03-10T10:00:00+01:00"
 // value with both LOINC and SNOMED coding slices + text
 * valueCodeableConcept.coding[+] = $loinc#LA21325-8 "A Pos"

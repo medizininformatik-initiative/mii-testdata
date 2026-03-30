@@ -11,7 +11,7 @@ Description: "Observation: Leukozyten im Blut für Patient 1"
 * interpretation = $v3-ObservationInterpretation#H "High"
 * method = $sct#703452004 "Electrical impedance technique (qualifier value)"
 * note.text = "Leukozyten EDTA-Blut Impedanzmessung"
-* specimen = Reference(mii-exa-test-data-patient-1-specimen-1)
+// * specimen = Reference(mii-exa-test-data-patient-1-specimen-1)
 * device = Reference(mii-exa-test-data-device-roche-cobas-c303)
 * referenceRange.low = 3.9 $ucum#/nL "/nanoliter"
 * referenceRange.high = 10.5 $ucum#/nL "/nanoliter"
@@ -32,7 +32,7 @@ Description: "Observation: Erythrozyten im Blut für Patient 1"
 * interpretation = $v3-ObservationInterpretation#N "Normal"
 * method = $sct#703452004 "Electrical impedance technique (qualifier value)"
 * note.text = "Erythrozyten EDTA-Blut Impedanzmessung"
-* specimen = Reference(mii-exa-test-data-patient-1-specimen-1)
+// * specimen = Reference(mii-exa-test-data-patient-1-specimen-1)
 * device = Reference(mii-exa-test-data-device-roche-cobas-c303)
 * referenceRange.low = 4.3 $ucum#/pL "/picoliter"
 * referenceRange.high = 5.8 $ucum#/pL "/picoliter"
@@ -53,7 +53,7 @@ Description: "Observation: Hämatokrit im Blut für Patient 1"
 * interpretation = $v3-ObservationInterpretation#N "Normal"
 * method = $sct#703452004 "Electrical impedance technique (qualifier value)"
 * note.text = "Hämatokrit EDTA-Blut Impedanzmessung"
-* specimen = Reference(mii-exa-test-data-patient-1-specimen-1)
+// * specimen = Reference(mii-exa-test-data-patient-1-specimen-1)
 * device = Reference(mii-exa-test-data-device-roche-cobas-c303)
 * referenceRange.low = 40 $ucum#% "percent"
 * referenceRange.high = 51 $ucum#% "percent"
@@ -74,7 +74,7 @@ Description: "Observation: Thrombozyten im Blut für Patient 1"
 * interpretation = $v3-ObservationInterpretation#N "Normal"
 * method = $sct#83561000052101 "Photometry technique (qualifier value)"
 * note.text = "Hämoglobin EDTA-Blut Photometrie"
-* specimen = Reference(mii-exa-test-data-patient-1-specimen-1)
+// * specimen = Reference(mii-exa-test-data-patient-1-specimen-1)
 * device = Reference(mii-exa-test-data-device-roche-cobas-c303)
 * referenceRange.low = 13.5 $ucum#g/dL "gram per deciliter"
 * referenceRange.high = 17 $ucum#g/dL "gram per deciliter"
@@ -95,7 +95,7 @@ Description: "Observation: Thrombozyten im Blut für Patient 1"
 * interpretation = $v3-ObservationInterpretation#N "Normal"
 * method = $sct#703452004 "Electrical impedance technique (qualifier value)"
 * note.text = "Thrombozyten EDTA-Blut Impedanzmessung"
-* specimen = Reference(mii-exa-test-data-patient-1-specimen-1)
+// * specimen = Reference(mii-exa-test-data-patient-1-specimen-1)
 * device = Reference(mii-exa-test-data-device-roche-cobas-c303)
 * referenceRange.low = 150 $ucum#/nL "/nanoliter"
 * referenceRange.high = 370 $ucum#/nL "/nanoliter"
@@ -126,7 +126,7 @@ Description: "Observation: Leukozyten im Blut für Patient 2"
 * interpretation = $v3-ObservationInterpretation#L "Low"
 * method = $sct#703452004 "Electrical impedance technique (qualifier value)"
 * note.text = "Leukopenie bei Tumorpatient"
-* specimen = Reference(mii-exa-test-data-patient-2-specimen-1)
+// * specimen = Reference(mii-exa-test-data-patient-2-specimen-1)
 * device = Reference(mii-exa-test-data-device-roche-cobas-c303)
 * referenceRange.low = 3.9 $ucum#/nL "/nanoliter"
 * referenceRange.high = 10.5 $ucum#/nL "/nanoliter"
@@ -141,7 +141,7 @@ Description: "Observation: Erythrozyten im Blut für Patient 2"
 * valueQuantity = 3.8 $ucum#/pL "/picoliter"
 * interpretation = $v3-ObservationInterpretation#L "Low"
 * method = $sct#703452004 "Electrical impedance technique (qualifier value)"
-* specimen = Reference(mii-exa-test-data-patient-2-specimen-1)
+// * specimen = Reference(mii-exa-test-data-patient-2-specimen-1)
 * device = Reference(mii-exa-test-data-device-roche-cobas-c303)
 
 Instance: mii-exa-test-data-patient-2-labobs-3
@@ -154,7 +154,7 @@ Description: "Observation: Hämoglobin im Blut für Patient 2"
 * valueQuantity = 9.2 $ucum#g/dL "gram per deciliter"
 * interpretation = $v3-ObservationInterpretation#L "Low"
 * method = $sct#83561000052101 "Photometry technique (qualifier value)"
-* specimen = Reference(mii-exa-test-data-patient-2-specimen-1)
+// * specimen = Reference(mii-exa-test-data-patient-2-specimen-1)
 * device = Reference(mii-exa-test-data-device-roche-cobas-c303)
 
 Instance: mii-exa-test-data-patient-2-labobs-4
@@ -167,7 +167,7 @@ Description: "Observation: Thrombozyten im Blut für Patient 2"
 * valueQuantity = 120 $ucum#/nL "/nanoliter"
 * interpretation = $v3-ObservationInterpretation#L "Low"
 * method = $sct#703452004 "Electrical impedance technique (qualifier value)"
-* specimen = Reference(mii-exa-test-data-patient-2-specimen-1)
+// * specimen = Reference(mii-exa-test-data-patient-2-specimen-1)
 * device = Reference(mii-exa-test-data-device-roche-cobas-c303)
 
 // Patient-3 Labor-Observations
@@ -181,7 +181,7 @@ Description: "Observation: Leukozyten im Blut für Patient 3"
 * valueQuantity = 12.5 $ucum#/nL "/nanoliter"
 * interpretation = $v3-ObservationInterpretation#H "High"
 * method = $sct#703452004 "Electrical impedance technique (qualifier value)"
-* specimen = Reference(mii-exa-test-data-patient-3-specimen-1)
+// * specimen = Reference(mii-exa-test-data-patient-3-specimen-1)
 * device = Reference(mii-exa-test-data-device-roche-cobas-c303)
 
 Instance: mii-exa-test-data-patient-3-labobs-2
@@ -194,7 +194,7 @@ Description: "Observation: Alkalische Phosphatase im Serum für Patient 3"
 * valueQuantity = 156 $ucum#U/L "unit per liter"
 * interpretation = $v3-ObservationInterpretation#H "High"
 * method = $sct#83561000052101 "Photometry technique (qualifier value)"
-* specimen = Reference(mii-exa-test-data-patient-3-specimen-1)
+// * specimen = Reference(mii-exa-test-data-patient-3-specimen-1)
 * device = Reference(mii-exa-test-data-device-roche-cobas-c303)
 
 Instance: mii-exa-test-data-patient-3-labobs-3
@@ -207,7 +207,7 @@ Description: "Observation: Bilirubin im Serum für Patient 3"
 * valueQuantity = 2.8 $ucum#mg/dL "milligram per deciliter"
 * interpretation = $v3-ObservationInterpretation#H "High"
 * method = $sct#83561000052101 "Photometry technique (qualifier value)"
-* specimen = Reference(mii-exa-test-data-patient-3-specimen-1)
+// * specimen = Reference(mii-exa-test-data-patient-3-specimen-1)
 * device = Reference(mii-exa-test-data-device-roche-cobas-c303)
 
 // Patient-4 Labor-Observations
@@ -221,7 +221,7 @@ Description: "Observation: Leukozyten im Blut für Patient 4"
 * valueQuantity = 8.2 $ucum#/nL "/nanoliter"
 * interpretation = $v3-ObservationInterpretation#N "Normal"
 * method = $sct#703452004 "Electrical impedance technique (qualifier value)"
-* specimen = Reference(mii-exa-test-data-patient-4-specimen-1)
+// * specimen = Reference(mii-exa-test-data-patient-4-specimen-1)
 * device = Reference(mii-exa-test-data-device-roche-cobas-c303)
 
 Instance: mii-exa-test-data-patient-4-labobs-2
@@ -234,7 +234,7 @@ Description: "Observation: Kreatinin im Serum für Patient 4"
 * valueQuantity = 0.9 $ucum#mg/dL "milligram per deciliter"
 * interpretation = $v3-ObservationInterpretation#N "Normal"
 * method = $sct#83561000052101 "Photometry technique (qualifier value)"
-* specimen = Reference(mii-exa-test-data-patient-4-specimen-1)
+// * specimen = Reference(mii-exa-test-data-patient-4-specimen-1)
 * device = Reference(mii-exa-test-data-device-roche-cobas-c303)
 
 Instance: mii-exa-test-data-patient-4-labobs-3
@@ -247,7 +247,7 @@ Description: "Observation: Cholesterin im Serum für Patient 4"
 * valueQuantity = 6.2 $ucum#mmol/L "millimole per liter"
 * interpretation = $v3-ObservationInterpretation#H "High"
 * method = $sct#83561000052101 "Photometry technique (qualifier value)"
-* specimen = Reference(mii-exa-test-data-patient-4-specimen-1)
+// * specimen = Reference(mii-exa-test-data-patient-4-specimen-1)
 * device = Reference(mii-exa-test-data-device-roche-cobas-c303)
 
 // Patient-5 Labor-Observations
@@ -261,7 +261,7 @@ Description: "Observation: Leukozyten im Blut für Patient 5"
 * valueQuantity = 7.8 $ucum#/nL "/nanoliter"
 * interpretation = $v3-ObservationInterpretation#N "Normal"
 * method = $sct#703452004 "Electrical impedance technique (qualifier value)"
-* specimen = Reference(mii-exa-test-data-patient-5-specimen-1)
+// * specimen = Reference(mii-exa-test-data-patient-5-specimen-1)
 * device = Reference(mii-exa-test-data-device-roche-cobas-c303)
 
 Instance: mii-exa-test-data-patient-5-labobs-2
@@ -274,7 +274,7 @@ Description: "Observation: Hämoglobin im Blut für Patient 5"
 * valueQuantity = 11.8 $ucum#g/dL "gram per deciliter"
 * interpretation = $v3-ObservationInterpretation#L "Low"
 * method = $sct#83561000052101 "Photometry technique (qualifier value)"
-* specimen = Reference(mii-exa-test-data-patient-5-specimen-1)
+// * specimen = Reference(mii-exa-test-data-patient-5-specimen-1)
 * device = Reference(mii-exa-test-data-device-roche-cobas-c303)
 
 Instance: mii-exa-test-data-patient-5-labobs-3
@@ -287,7 +287,7 @@ Description: "Observation: Fasting glucose im Serum für Patient 5"
 * valueQuantity = 92 $ucum#mg/dL "milligram per deciliter"
 * interpretation = $v3-ObservationInterpretation#N "Normal"
 * method = $sct#83561000052101 "Photometry technique (qualifier value)"
-* specimen = Reference(mii-exa-test-data-patient-5-specimen-1)
+// * specimen = Reference(mii-exa-test-data-patient-5-specimen-1)
 * device = Reference(mii-exa-test-data-device-roche-cobas-c303)
 
 // Patient-6 Labor-Observations
@@ -301,7 +301,7 @@ Description: "Observation: Leukozyten im Blut für Patient 6"
 * valueQuantity = 9.1 $ucum#/nL "/nanoliter"
 * interpretation = $v3-ObservationInterpretation#N "Normal"
 * method = $sct#703452004 "Electrical impedance technique (qualifier value)"
-* specimen = Reference(mii-exa-test-data-patient-6-specimen-1)
+// * specimen = Reference(mii-exa-test-data-patient-6-specimen-1)
 * device = Reference(mii-exa-test-data-device-roche-cobas-c303)
 
 Instance: mii-exa-test-data-patient-6-labobs-2
@@ -314,7 +314,7 @@ Description: "Observation: Alanine aminotransferase im Serum für Patient 6"
 * valueQuantity = 45 $ucum#U/L "unit per liter"
 * interpretation = $v3-ObservationInterpretation#H "High"
 * method = $sct#83561000052101 "Photometry technique (qualifier value)"
-* specimen = Reference(mii-exa-test-data-patient-6-specimen-1)
+// * specimen = Reference(mii-exa-test-data-patient-6-specimen-1)
 * device = Reference(mii-exa-test-data-device-roche-cobas-c303)
 
 Instance: mii-exa-test-data-patient-6-labobs-3
@@ -327,7 +327,7 @@ Description: "Observation: Aspartate aminotransferase im Serum für Patient 6"
 * valueQuantity = 38 $ucum#U/L "unit per liter"
 * interpretation = $v3-ObservationInterpretation#H "High"
 * method = $sct#83561000052101 "Photometry technique (qualifier value)"
-* specimen = Reference(mii-exa-test-data-patient-6-specimen-1)
+// * specimen = Reference(mii-exa-test-data-patient-6-specimen-1)
 * device = Reference(mii-exa-test-data-device-roche-cobas-c303)
 
 // Patient-7 Labor-Observations
@@ -342,7 +342,7 @@ Description: "Observation: Leukozyten im Blut für Patient 7"
 * interpretation = $v3-ObservationInterpretation#H "High"
 * method = $sct#703452004 "Electrical impedance technique (qualifier value)"
 * note.text = "Erhöhte Leukozyten bei Infektion"
-* specimen = Reference(mii-exa-test-data-patient-7-specimen-1)
+// * specimen = Reference(mii-exa-test-data-patient-7-specimen-1)
 * device = Reference(mii-exa-test-data-device-roche-cobas-c303)
 
 Instance: mii-exa-test-data-patient-7-labobs-2
@@ -355,7 +355,7 @@ Description: "Observation: Hämoglobin im Blut für Patient 7"
 * valueQuantity = 13.2 $ucum#g/dL "gram per deciliter"
 * interpretation = $v3-ObservationInterpretation#N "Normal"
 * method = $sct#83561000052101 "Photometry technique (qualifier value)"
-* specimen = Reference(mii-exa-test-data-patient-7-specimen-1)
+// * specimen = Reference(mii-exa-test-data-patient-7-specimen-1)
 * device = Reference(mii-exa-test-data-device-roche-cobas-c303)
 
 Instance: mii-exa-test-data-patient-7-labobs-3
@@ -368,7 +368,7 @@ Description: "Observation: C-reactives Protein im Serum für Patient 7"
 * valueQuantity = 25.6 $ucum#mg/L "milligram per liter"
 * interpretation = $v3-ObservationInterpretation#H "High"
 * method = $sct#83561000052101 "Photometry technique (qualifier value)"
-* specimen = Reference(mii-exa-test-data-patient-7-specimen-1)
+// * specimen = Reference(mii-exa-test-data-patient-7-specimen-1)
 * device = Reference(mii-exa-test-data-device-roche-cobas-c303)
 
 // Patient-8 Labor-Observations
@@ -382,7 +382,7 @@ Description: "Observation: Leukozyten im Blut für Patient 8"
 * valueQuantity = 13.8 $ucum#/nL "/nanoliter"
 * interpretation = $v3-ObservationInterpretation#H "High"
 * method = $sct#703452004 "Electrical impedance technique (qualifier value)"
-* specimen = Reference(mii-exa-test-data-patient-8-specimen-1)
+// * specimen = Reference(mii-exa-test-data-patient-8-specimen-1)
 * device = Reference(mii-exa-test-data-device-roche-cobas-c303)
 
 Instance: mii-exa-test-data-patient-8-labobs-2
@@ -396,7 +396,7 @@ Description: "Observation: Troponin T im Serum für Patient 8"
 * interpretation = $v3-ObservationInterpretation#HH "Critical high"
 * method = $sct#83561000052101 "Photometry technique (qualifier value)"
 * note.text = "Stark erhöhtes Troponin T bei Myokardinfarkt"
-* specimen = Reference(mii-exa-test-data-patient-8-specimen-1)
+// * specimen = Reference(mii-exa-test-data-patient-8-specimen-1)
 * device = Reference(mii-exa-test-data-device-roche-cobas-c303)
 
 Instance: mii-exa-test-data-patient-8-labobs-3
@@ -409,7 +409,7 @@ Description: "Observation: Kreatin-Kinase MB im Serum für Patient 8"
 * valueQuantity = 85 $ucum#U/L "unit per liter"
 * interpretation = $v3-ObservationInterpretation#H "High"
 * method = $sct#83561000052101 "Photometry technique (qualifier value)"
-* specimen = Reference(mii-exa-test-data-patient-8-specimen-1)
+// * specimen = Reference(mii-exa-test-data-patient-8-specimen-1)
 * device = Reference(mii-exa-test-data-device-roche-cobas-c303)
 
 // Patient-9 Labor-Observations
@@ -423,7 +423,7 @@ Description: "Observation: Leukozyten im Blut für Patient 9"
 * valueQuantity = 6.8 $ucum#/nL "/nanoliter"
 * interpretation = $v3-ObservationInterpretation#N "Normal"
 * method = $sct#703452004 "Electrical impedance technique (qualifier value)"
-* specimen = Reference(mii-exa-test-data-patient-9-specimen-1)
+// * specimen = Reference(mii-exa-test-data-patient-9-specimen-1)
 * device = Reference(mii-exa-test-data-device-roche-cobas-c303)
 
 Instance: mii-exa-test-data-patient-9-labobs-2
@@ -436,7 +436,7 @@ Description: "Observation: Hämoglobin im Blut für Patient 9"
 * valueQuantity = 12.8 $ucum#g/dL "gram per deciliter"
 * interpretation = $v3-ObservationInterpretation#N "Normal"
 * method = $sct#83561000052101 "Photometry technique (qualifier value)"
-* specimen = Reference(mii-exa-test-data-patient-9-specimen-1)
+// * specimen = Reference(mii-exa-test-data-patient-9-specimen-1)
 * device = Reference(mii-exa-test-data-device-roche-cobas-c303)
 
 Instance: mii-exa-test-data-patient-9-labobs-3
@@ -449,7 +449,7 @@ Description: "Observation: Estradiol im Serum für Patient 9"
 * valueQuantity = 285 $ucum#pmol/L "picomole per liter"
 * interpretation = $v3-ObservationInterpretation#N "Normal"
 * method = $sct#83561000052101 "Photometry technique (qualifier value)"
-* specimen = Reference(mii-exa-test-data-patient-9-specimen-1)
+// * specimen = Reference(mii-exa-test-data-patient-9-specimen-1)
 * device = Reference(mii-exa-test-data-device-roche-cobas-c303)
 
 // Patient-10 Labor-Observations
@@ -463,7 +463,7 @@ Description: "Observation: Leukozyten im Blut für Patient 10"
 * valueQuantity = 8.9 $ucum#/nL "/nanoliter"
 * interpretation = $v3-ObservationInterpretation#N "Normal"
 * method = $sct#703452004 "Electrical impedance technique (qualifier value)"
-* specimen = Reference(mii-exa-test-data-patient-10-specimen-1)
+// * specimen = Reference(mii-exa-test-data-patient-10-specimen-1)
 * device = Reference(mii-exa-test-data-device-roche-cobas-c303)
 
 Instance: mii-exa-test-data-patient-10-labobs-2
@@ -476,7 +476,7 @@ Description: "Observation: Hämoglobin im Blut für Patient 10"
 * valueQuantity = 14.2 $ucum#g/dL "gram per deciliter"
 * interpretation = $v3-ObservationInterpretation#N "Normal"
 * method = $sct#83561000052101 "Photometry technique (qualifier value)"
-* specimen = Reference(mii-exa-test-data-patient-10-specimen-1)
+// * specimen = Reference(mii-exa-test-data-patient-10-specimen-1)
 * device = Reference(mii-exa-test-data-device-roche-cobas-c303)
 
 Instance: mii-exa-test-data-patient-10-labobs-3
@@ -489,5 +489,5 @@ Description: "Observation: Kreatinin im Serum für Patient 10"
 * valueQuantity = 1.1 $ucum#mg/dL "milligram per deciliter"
 * interpretation = $v3-ObservationInterpretation#N "Normal"
 * method = $sct#83561000052101 "Photometry technique (qualifier value)"
-* specimen = Reference(mii-exa-test-data-patient-10-specimen-1)
+// * specimen = Reference(mii-exa-test-data-patient-10-specimen-1)
 * device = Reference(mii-exa-test-data-device-roche-cobas-c303)

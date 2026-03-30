@@ -8,13 +8,13 @@ Description: "ImagingStudy: MagneticResonance"
 * extension[bildgebungsgrund].valueString = "Verdacht auf Mammakarzinom"
 * status = #available
 * modality = $DCM#MR "Magnetic Resonance"
-* subject = Reference(mii-exa-test-data-patient-1)
-* encounter = Reference(mii-exa-test-data-patient-1-encounter-1)
+* subject = Reference(mii-exa-test-data-bildgebung-patient-1)
+* encounter = Reference(mii-exa-test-data-bildgebung-encounter-1)
 * basedOn = Reference(mii-exa-test-data-anforderung)
 * numberOfSeries = 11
 * numberOfInstances = 294
 * procedureReference = Reference(mii-exa-test-data-bildgebungsprozedur)
-* reasonReference = Reference(mii-exa-test-data-patient-1-diagnose-1)
+* reasonReference = Reference(mii-exa-test-data-bildgebung-diagnose-1)
 * description = "Mamma"
 * series.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mr].extension[magneticFieldStrength].valueQuantity.value = 3
 * series.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mr].extension[magneticFieldStrength].valueQuantity.unit = "tesla"

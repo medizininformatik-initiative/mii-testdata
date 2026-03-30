@@ -13,7 +13,7 @@ Description: "Familienanamnese: Mother with Marfan syndrome - all MS elements in
 * extension[+].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/von-seltene-betroffen"
 * extension[=].valueCodeableConcept = $sct#373066001 "Yes"
 * status = #completed
-* patient = Reference(mii-exa-test-data-patient-3)
+* patient = Reference(mii-exa-test-data-seltene-patient-1)
 * relationship = $sct#65656005 "Natural mother"
 * sex = http://hl7.org/fhir/administrative-gender#female
 * bornDate = "1960"
@@ -49,7 +49,7 @@ Description: "Familienanamnese: Father not affected - tests vonSEBetroffen=No, d
 * extension[+].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/von-seltene-betroffen"
 * extension[=].valueCodeableConcept = $sct#373067005 "No"
 * status = #completed
-* patient = Reference(mii-exa-test-data-patient-3)
+* patient = Reference(mii-exa-test-data-seltene-patient-1)
 * relationship = $sct#66839005 "Father"
 * sex = http://hl7.org/fhir/administrative-gender#male
 * bornDate = "1957"

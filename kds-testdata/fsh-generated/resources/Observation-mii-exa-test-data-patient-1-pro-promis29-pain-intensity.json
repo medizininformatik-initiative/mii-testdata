@@ -56,7 +56,7 @@
   },
   "status": "final",
   "subject": {
-    "reference": "Patient/mii-exa-test-data-patient-1"
+    "reference": "Patient/mii-exa-test-data-pro-patient-1"
   },
   "effectiveDateTime": "2024-03-15T11:30:00+01:00"
 }

@@ -1,0 +1,238 @@
+{
+  "resourceType": "Bundle",
+  "id": "mii-exa-test-data-bundle-patho-1",
+  "meta": {
+    "security": [
+      {
+        "code": "HTEST",
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "display": "test health data"
+      }
+    ]
+  },
+  "entry": [
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Patient/mii-exa-test-data-patho-patient-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Patient/mii-exa-test-data-patho-patient-1",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "mii-exa-test-data-patho-patient-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://www.charite.de/fhir/sid/patientenidentifikation",
+            "value": "PATH-TEST-001"
+          }
+        ],
+        "name": [
+          {
+            "given": [
+              "Klaus"
+            ],
+            "family": "Gewebeprobe"
+          }
+        ],
+        "birthDate": "1963-06-30",
+        "gender": "male"
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Encounter/mii-exa-test-data-patho-encounter-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Encounter/mii-exa-test-data-patho-encounter-1",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "mii-exa-test-data-patho-encounter-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ]
+        },
+        "period": {
+          "start": "2024-02-01",
+          "end": "2024-02-20"
+        },
+        "status": "finished",
+        "class": {
+          "code": "IMP",
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "display": "inpatient encounter"
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patho-patient-1"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "List/mii-exa-test-data-patient-1-patho-active-problems-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/List/mii-exa-test-data-patient-1-patho-active-problems-1",
+      "resource": {
+        "resourceType": "List",
+        "id": "mii-exa-test-data-patient-1-patho-active-problems-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-active-problems-list"
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "11450-4",
+              "display": "Problem list - Reported"
+            }
+          ]
+        },
+        "entry": [
+          {
+            "item": {
+              "reference": "Condition/mii-exa-test-data-patient-1-patho-problem-list-item-1"
+            }
+          }
+        ],
+        "mode": "snapshot",
+        "status": "current",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patho-patient-1"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-patho-encounter-1"
+        },
+        "date": "2024-02-16"
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "List/mii-exa-test-data-patient-1-patho-hopi-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/List/mii-exa-test-data-patient-1-patho-hopi-1",
+      "resource": {
+        "resourceType": "List",
+        "id": "mii-exa-test-data-patient-1-patho-hopi-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-history-of-present-illness"
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8684-3",
+              "display": "History of Present illness"
+            }
+          ]
+        },
+        "entry": [
+          {
+            "item": {
+              "reference": "Condition/mii-exa-test-data-patient-1-patho-problem-list-item-1"
+            }
+          }
+        ],
+        "mode": "snapshot",
+        "status": "current",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patho-patient-1"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-patho-encounter-1"
+        },
+        "date": "2024-02-15"
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Condition/mii-exa-test-data-patient-1-patho-problem-list-item-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Condition/mii-exa-test-data-patient-1-patho-problem-list-item-1",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "mii-exa-test-data-patient-1-patho-problem-list-item-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-problem-list-item"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                "code": "problem-list-item",
+                "display": "Problem List Item"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "399068003",
+              "system": "http://snomed.info/sct",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+              "display": "Malignant neoplasm of prostate"
+            },
+            {
+              "code": "C61",
+              "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+              "display": "Bösartige Neubildung der Prostata"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patho-patient-1"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-patho-encounter-1"
+        },
+        "recordedDate": "2024-02-16"
+      }
+    }
+  ],
+  "type": "transaction",
+  "timestamp": "2025-06-18T13:51:00+02:00"
+}

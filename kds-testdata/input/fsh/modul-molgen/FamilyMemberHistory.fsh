@@ -6,7 +6,7 @@ Usage: #example
 Description: "FamilyMemberHistory: Familienanamnese fuer BRAF-Mutation"
 * insert TestDataLabel
 * status = #completed
-* patient = Reference(mii-exa-test-data-patient-3)
+* patient = Reference(mii-exa-test-data-molgen-patient-1)
 * date = "2022-04-07"
 * relationship.coding[snomed] = $sct#72705000 "Mother (person)"
 * relationship.coding[v3-RoleCode] = $v3-RoleCode#MTH "mother"
@@ -18,7 +18,7 @@ Description: "FamilyMemberHistory: Familienanamnese fuer BRAF-Mutation"
 * reasonCode.coding[icd10-gm].version = "2022"
 * reasonCode.coding[icd10-gm].code = #C21.8
 * reasonCode.coding[icd10-gm].display = "Bösartige Neubildung: Rektum, Anus und Analkanal, mehrere Teilbereiche überlappend"
-* reasonReference = Reference(mii-exa-test-data-patient-3-diagnose-1)
+* reasonReference = Reference(mii-exa-test-data-molgen-diagnose-1)
 * condition[0].code.coding[sct] = $sct#830150003 "Malignant melanoma with B-Raf proto-oncogene, serine/threonine kinase V600E mutation (disorder)"
 * condition[0].code.coding[icd10-gm].system = "http://fhir.de/CodeSystem/bfarm/icd-10-gm"
 * condition[0].code.coding[icd10-gm].version = "2022"
@@ -33,7 +33,7 @@ Usage: #example
 Description: "FamilyMemberHistory: Familienanamnese fuer Magenkarzinom"
 * insert TestDataLabel
 * status = #completed
-* patient = Reference(mii-exa-test-data-patient-4)
+* patient = Reference(mii-exa-test-data-molgen-patient-2)
 * date = "2022-11-30"
 * relationship.coding[snomed] = $sct#72705000 "Mother (person)"
 * relationship.coding[v3-RoleCode] = $v3-RoleCode#MTH "mother"

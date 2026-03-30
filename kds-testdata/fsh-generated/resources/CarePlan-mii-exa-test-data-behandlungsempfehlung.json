@@ -22,6 +22,6 @@
   "intent": "proposal",
   "description": "The patient must receive vacuum biopsy",
   "subject": {
-    "reference": "Patient/mii-exa-test-data-patient-1"
+    "reference": "Patient/mii-exa-test-data-bildgebung-patient-1"
   }
 }

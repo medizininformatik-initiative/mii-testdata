@@ -25,8 +25,8 @@ Description: "Therapieempfehlung: Losartan for Marfan - all MS elements includin
 * category[+] = $seltene-cs-strategie#prevention-medication "Präventive Medikation"
 * category[+] = $seltene-cs-typ#symptomatic "Symptomatisch"
 * medicationCodeableConcept = $atc#C09CA01 "Losartan"
-* subject = Reference(mii-exa-test-data-patient-3)
-* encounter = Reference(mii-exa-test-data-patient-3-encounter-1)
+* subject = Reference(mii-exa-test-data-seltene-patient-1)
+* encounter = Reference(mii-exa-test-data-seltene-encounter-1)
 * reasonReference = Reference(mii-exa-test-data-patient-3-seltene-clinical-diagnosis-1)
 * dosageInstruction[+].text = "50mg 1x taeglich"
 * dosageInstruction[=].timing.repeat.frequency = 1

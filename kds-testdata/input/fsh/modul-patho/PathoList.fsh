@@ -13,8 +13,8 @@ Description: "Patho Active Problems List: Prostataerkrankungen bei Patient-1"
 * status = #current
 * mode = #snapshot
 * code.coding = $loinc#11450-4 "Problem list - Reported"
-* subject = Reference(mii-exa-test-data-patient-1)
-* encounter = Reference(mii-exa-test-data-patient-1-encounter-1)
+* subject = Reference(mii-exa-test-data-patho-patient-1)
+* encounter = Reference(mii-exa-test-data-patho-encounter-1)
 * date = "2024-02-16"
 * entry[+].item = Reference(mii-exa-test-data-patient-1-patho-problem-list-item-1)
 
@@ -29,7 +29,7 @@ Description: "Patho History of Present Illness: Klinische Anamnese bei Prostata-
 * status = #current
 * mode = #snapshot
 * code.coding = $loinc#8684-3 "History of Present illness"
-* subject = Reference(mii-exa-test-data-patient-1)
-* encounter = Reference(mii-exa-test-data-patient-1-encounter-1)
+* subject = Reference(mii-exa-test-data-patho-patient-1)
+* encounter = Reference(mii-exa-test-data-patho-encounter-1)
 * date = "2024-02-15"
 * entry[+].item = Reference(mii-exa-test-data-patient-1-patho-problem-list-item-1)

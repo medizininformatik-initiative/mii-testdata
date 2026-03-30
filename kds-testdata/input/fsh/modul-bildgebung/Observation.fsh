@@ -11,11 +11,11 @@ Description: "Observation: Radiologische Beobachtung"
 * status = #final
 * category = $observation-category#imaging "Imaging"
 * code = $loinc#32422-8 "Physical findings of Breast"
-* subject = Reference(mii-exa-test-data-patient-1)
+* subject = Reference(mii-exa-test-data-bildgebung-patient-1)
 * issued = "2024-07-19T12:03:30+02:00"
 * valueString = "microcalcifications in the upper outer quadrant in the left breast"
 * bodySite = $sct#76752008 "Breast structure (body structure)"
-* hasMember = Reference(mii-exa-test-data-patient-1-labobs-1)
+* hasMember = Reference(mii-exa-test-data-bildgebung-labobs-1)
 * derivedFrom = Reference(mii-exa-test-data-bildgebungsstudie)
 * component.code = $loinc#10157-6 "History of family member diseases Narrative"
 * component.valueBoolean = true

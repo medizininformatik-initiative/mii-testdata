@@ -18,7 +18,7 @@ Description: "ServiceRequest: Kleines Blutbild für Patient 1"
 * subject = Reference(mii-exa-test-data-patient-1)
 * encounter = Reference(mii-exa-test-data-patient-1-encounter-1)
 * authoredOn = "2024-02-15T10:28:00+01:00"
-* specimen = Reference(mii-exa-test-data-patient-1-specimen-1)
+// * specimen = Reference(mii-exa-test-data-patient-1-specimen-1)
 
 // Patient-2 ServiceRequest (Complete Blood Count - alle hämatologischen Parameter)
 Instance: mii-exa-test-data-patient-2-labrequest-1
@@ -40,7 +40,7 @@ Description: "ServiceRequest: Vollständiges Blutbild für Patient 2"
 * authoredOn = "2024-03-04T07:00:00+01:00"
 * requester = Reference(mii-exa-test-data-practitioner-physician-1)
 * reasonCode = $sct#254637007 "Non-small cell lung cancer (disorder)"
-* specimen = Reference(mii-exa-test-data-patient-2-specimen-1)
+// * specimen = Reference(mii-exa-test-data-patient-2-specimen-1)
 
 // Patient-3 ServiceRequest 1 (Complete Blood Count)
 Instance: mii-exa-test-data-patient-3-labrequest-1
@@ -62,7 +62,7 @@ Description: "ServiceRequest: Vollständiges Blutbild für Patient 3"
 * authoredOn = "2022-04-05T07:30:00+02:00"
 * requester = Reference(mii-exa-test-data-practitioner-physician-1)
 * reasonCode = $sct#235856003 "Disease of liver"
-* specimen = Reference(mii-exa-test-data-patient-3-specimen-2)
+// * specimen = Reference(mii-exa-test-data-patient-3-specimen-2)
 
 // Patient-4 ServiceRequest 1 (Basic Metabolic Panel)
 Instance: mii-exa-test-data-patient-4-labrequest-1
@@ -84,7 +84,7 @@ Description: "ServiceRequest: Basisstoffwechsel für Patient 4"
 * authoredOn = "2020-09-17T06:45:00+02:00"
 * requester = Reference(mii-exa-test-data-practitioner-physician-1)
 * reasonCode = $sct#183932001 "Procedure contraindicated"
-* specimen = Reference(mii-exa-test-data-patient-4-specimen-3)
+// * specimen = Reference(mii-exa-test-data-patient-4-specimen-3)
 
 // Patient-5 ServiceRequest 1 (CBC + Basic Metabolic)
 Instance: mii-exa-test-data-patient-5-labrequest-1
@@ -106,7 +106,7 @@ Description: "ServiceRequest: Kleines Blutbild und Basisstoffwechsel für Patien
 * authoredOn = "2023-07-12T06:15:00+02:00"
 * requester = Reference(mii-exa-test-data-practitioner-physician-1)
 * reasonCode = $sct#73211009 "Diabetes mellitus"
-* specimen = Reference(mii-exa-test-data-patient-5-specimen-2)
+// * specimen = Reference(mii-exa-test-data-patient-5-specimen-2)
 
 // Patient-6 ServiceRequest 1 (Liver Function Panel)
 Instance: mii-exa-test-data-patient-6-labrequest-1
@@ -128,7 +128,7 @@ Description: "ServiceRequest: Leberfunktionstest für Patient 6"
 * authoredOn = "2022-03-14T06:30:00+01:00"
 * requester = Reference(mii-exa-test-data-practitioner-physician-1)
 * reasonCode = $sct#4556007 "Gastritis"
-* specimen = Reference(mii-exa-test-data-patient-6-specimen-2)
+// * specimen = Reference(mii-exa-test-data-patient-6-specimen-2)
 
 // Patient-7 ServiceRequest 1 (CBC + Inflammation markers)
 Instance: mii-exa-test-data-patient-7-labrequest-1
@@ -150,7 +150,7 @@ Description: "ServiceRequest: Kleines Blutbild und Entzündungsmarker für Patie
 * authoredOn = "2024-01-10T07:45:00+01:00"
 * requester = Reference(mii-exa-test-data-practitioner-physician-1)
 * reasonCode = $sct#10509002 "Acute bronchitis"
-* specimen = Reference(mii-exa-test-data-patient-7-specimen-2)
+// * specimen = Reference(mii-exa-test-data-patient-7-specimen-2)
 
 // Patient-8 ServiceRequest 1 (Cardiac markers panel)
 Instance: mii-exa-test-data-patient-8-labrequest-1
@@ -172,7 +172,7 @@ Description: "ServiceRequest: Herzmarker-Panel für Patient 8"
 * authoredOn = "2023-11-12T06:00:00+01:00"
 * requester = Reference(mii-exa-test-data-practitioner-physician-1)
 * reasonCode = $sct#22298006 "Myocardial infarction"
-* specimen = Reference(mii-exa-test-data-patient-8-specimen-2)
+// * specimen = Reference(mii-exa-test-data-patient-8-specimen-2)
 
 // Patient-9 ServiceRequest 1 (Hormone panel)
 Instance: mii-exa-test-data-patient-9-labrequest-1
@@ -194,7 +194,7 @@ Description: "ServiceRequest: Hormonpanel für Patient 9"
 * authoredOn = "2024-02-22T06:45:00+01:00"
 * requester = Reference(mii-exa-test-data-practitioner-physician-1)
 * reasonCode = $sct#79883001 "Cyst of ovary (disorder)"
-* specimen = Reference(mii-exa-test-data-patient-9-specimen-2)
+// * specimen = Reference(mii-exa-test-data-patient-9-specimen-2)
 
 // Patient-10 ServiceRequest 1 (Basic panel)
 Instance: mii-exa-test-data-patient-10-labrequest-1
@@ -216,4 +216,4 @@ Description: "ServiceRequest: Basisstoffwechsel für Patient 10"
 * authoredOn = "2019-05-16T08:00:00+02:00"
 * requester = Reference(mii-exa-test-data-practitioner-physician-1)
 * reasonCode = $sct#37796009 "Migraine"
-* specimen = Reference(mii-exa-test-data-patient-10-specimen-2)
+// * specimen = Reference(mii-exa-test-data-patient-10-specimen-2)

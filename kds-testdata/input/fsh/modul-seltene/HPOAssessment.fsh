@@ -13,13 +13,13 @@ Description: "HPO Assessment: Aortic root aneurysm (Present) - all optional fiel
 * insert TestDataLabel
 * status = #final
 * code = $HPO#HP:0002616 "Aortic root aneurysm"
-* subject = Reference(mii-exa-test-data-patient-3)
-* encounter = Reference(mii-exa-test-data-patient-3-encounter-1)
+* subject = Reference(mii-exa-test-data-seltene-patient-1)
+* encounter = Reference(mii-exa-test-data-seltene-encounter-1)
 * effectiveDateTime = "2025-03-10"
 * note[+].text = "Aortenwurzeldilatation bei Echokardiographie festgestellt, Z-Score > 3."
 * bodySite = $sct#57034009 "Aortic arch structure"
 * method = $sct#278292003 "Ultrasound imaging"
-* derivedFrom = Reference(mii-exa-test-data-patient-3-labobs-1)
+* derivedFrom = Reference(mii-exa-test-data-seltene-labobs-1)
 * component[+].code = $sct#260411009 "Presence findings"
 * component[=].valueCodeableConcept = $loinc#LA9633-4 "Present"
 
@@ -31,8 +31,8 @@ Description: "HPO Assessment: Arachnodactyly (Absent) - excluded phenotype"
 * insert TestDataLabel
 * status = #final
 * code = $HPO#HP:0001166 "Arachnodactyly"
-* subject = Reference(mii-exa-test-data-patient-3)
-* encounter = Reference(mii-exa-test-data-patient-3-encounter-1)
+* subject = Reference(mii-exa-test-data-seltene-patient-1)
+* encounter = Reference(mii-exa-test-data-seltene-encounter-1)
 * effectiveDateTime = "2025-03-10"
 * note[+].text = "Arachnodaktylie bei klinischer Untersuchung nicht nachweisbar. Armspanne/Koerpergroesse-Verhaeltnis im Normbereich."
 * method = $sct#5880005 "Physical examination procedure"
@@ -47,8 +47,8 @@ Description: "HPO Assessment: Ectopia lentis (Present, Moderate severity, with c
 * insert TestDataLabel
 * status = #final
 * code = $HPO#HP:0001083 "Ectopia lentis"
-* subject = Reference(mii-exa-test-data-patient-3)
-* encounter = Reference(mii-exa-test-data-patient-3-encounter-1)
+* subject = Reference(mii-exa-test-data-seltene-patient-1)
+* encounter = Reference(mii-exa-test-data-seltene-encounter-1)
 * effectiveDateTime = "2025-03-10"
 * note[+].text = "Moderate Linsensubluxation bilateral, ophthalmologisch dokumentiert."
 * bodySite = $sct#78076003 "Lens structure"
@@ -67,8 +67,8 @@ Description: "HPO Assessment: Tall stature (Present, effectivePeriod) - tests ef
 * insert TestDataLabel
 * status = #final
 * code = $HPO#HP:0000098 "Tall stature"
-* subject = Reference(mii-exa-test-data-patient-3)
-* encounter = Reference(mii-exa-test-data-patient-3-encounter-1)
+* subject = Reference(mii-exa-test-data-seltene-patient-1)
+* encounter = Reference(mii-exa-test-data-seltene-encounter-1)
 * effectivePeriod.start = "2011-01-01"
 * effectivePeriod.end = "2025-03-10"
 * note[+].text = "Hochwuchs seit Adoleszenz, typisch fuer Marfan-Syndrom. Koerpergroesse 195 cm."

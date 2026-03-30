@@ -70,6 +70,6 @@
   },
   "status": "available",
   "subject": {
-    "reference": "Patient/mii-exa-test-data-patient-3"
+    "reference": "Patient/mii-exa-test-data-biobank-patient-3"
   }
 }

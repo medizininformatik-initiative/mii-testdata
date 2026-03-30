@@ -82,7 +82,7 @@
   "status": "completed",
   "language": "de",
   "subject": {
-    "reference": "Patient/mii-exa-test-data-patient-1"
+    "reference": "Patient/mii-exa-test-data-pro-patient-1"
   },
   "authored": "2024-03-15T10:15:00+01:00",
   "questionnaire": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-depression-sf4a"

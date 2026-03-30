@@ -38,25 +38,25 @@
   "dependsOn": [
     {
       "packageId": "de.medizininformatikinitiative.kerndatensatz.base",
-      "version": "2026.0.x",
+      "version": "2026.0.0",
       "uri": "https://www.medizininformatik-initiative.de/fhir/modul-base/ImplementationGuide/mii-ig-base",
       "id": "de_medizininformatikinitiative_kerndatensatz_base"
     },
     {
       "packageId": "de.medizininformatikinitiative.kerndatensatz.medikation",
-      "version": "2026.0.x",
+      "version": "2026.0.1",
       "uri": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ImplementationGuide/mii-ig-medikation",
       "id": "de_medizininformatikinitiative_kerndatensatz_medikation"
     },
     {
       "packageId": "de.medizininformatikinitiative.kerndatensatz.laborbefund",
-      "version": "2026.0.x",
+      "version": "2026.0.1",
       "uri": "http://fhir.org/packages/de.medizininformatikinitiative.kerndatensatz.laborbefund/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.laborbefund",
       "id": "de_medizininformatikinitiative_kerndatensatz_laborbefund"
     },
     {
       "packageId": "de.medizininformatikinitiative.kerndatensatz.biobank",
-      "version": "2026.0.x",
+      "version": "2026.0.1",
       "uri": "http://fhir.org/packages/de.medizininformatikinitiative.kerndatensatz.biobank/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.biobank",
       "id": "de_medizininformatikinitiative_kerndatensatz_biobank"
     },
@@ -74,74 +74,74 @@
     },
     {
       "packageId": "de.medizininformatikinitiative.kerndatensatz.meta",
-      "version": "2026.0.x",
+      "version": "2026.0.0",
       "uri": "https://www.medizininformatik-initiative.de/fhir/modul-meta/ImplementationGuide/mii-ig-meta",
       "id": "de_medizininformatikinitiative_kerndatensatz_meta"
     },
     {
       "packageId": "de.medizininformatikinitiative.kerndatensatz.icu",
-      "version": "2026.0.x",
+      "version": "2026.0.2",
       "uri": "http://fhir.org/packages/de.medizininformatikinitiative.kerndatensatz.icu/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.icu",
       "id": "de_medizininformatikinitiative_kerndatensatz_icu"
     },
     {
       "packageId": "de.medizininformatikinitiative.kerndatensatz.mikrobiologie",
-      "version": "2025.0.x",
+      "version": "2025.0.1",
       "uri": "http://fhir.org/packages/de.medizininformatikinitiative.kerndatensatz.mikrobiologie/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.mikrobiologie",
       "id": "de_medizininformatikinitiative_kerndatensatz_mikrobiologie"
     },
     {
       "packageId": "de.medizininformatikinitiative.kerndatensatz.molgen",
-      "version": "2026.0.x",
+      "version": "2026.0.4",
       "uri": "http://fhir.org/packages/de.medizininformatikinitiative.kerndatensatz.molgen/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.molgen",
       "id": "de_medizininformatikinitiative_kerndatensatz_molgen"
     },
     {
       "packageId": "de.medizininformatikinitiative.kerndatensatz.patho",
-      "version": "2026.0.x",
+      "version": "2026.0.1",
       "uri": "http://fhir.org/packages/de.medizininformatikinitiative.kerndatensatz.patho/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.patho",
       "id": "de_medizininformatikinitiative_kerndatensatz_patho"
     },
     {
       "packageId": "de.medizininformatikinitiative.kerndatensatz.studie",
-      "version": "2026.0.x",
+      "version": "2026.0.2",
       "uri": "http://fhir.org/packages/de.medizininformatikinitiative.kerndatensatz.studie/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.studie",
       "id": "de_medizininformatikinitiative_kerndatensatz_studie"
     },
     {
       "packageId": "de.medizininformatikinitiative.kerndatensatz.bildgebung",
-      "version": "2026.0.x",
+      "version": "2026.0.0",
       "uri": "http://fhir.org/packages/de.medizininformatikinitiative.kerndatensatz.bildgebung/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.bildgebung",
       "id": "de_medizininformatikinitiative_kerndatensatz_bildgebung"
     },
     {
       "packageId": "de.medizininformatikinitiative.kerndatensatz.dokument",
-      "version": "2026.0.x",
-      "uri": "http://fhir.org/packages/de.medizininformatikinitiative.kerndatensatz.dokument/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.dokument",
+      "version": "2026.0.1",
+      "uri": "https://www.medizininformatik-initiative.de/fhir/ext/modul-dokument/ImplementationGuide/mii-ig-dokument",
       "id": "de_medizininformatikinitiative_kerndatensatz_dokument"
     },
     {
       "packageId": "de.medizininformatikinitiative.kerndatensatz.onkologie",
-      "version": "2026.0.1",
+      "version": "2026.0.3",
       "uri": "http://fhir.org/packages/de.medizininformatikinitiative.kerndatensatz.onkologie/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.onkologie",
       "id": "de_medizininformatikinitiative_kerndatensatz_onkologie"
     },
     {
       "packageId": "de.medizininformatikinitiative.kerndatensatz.seltene",
       "uri": "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.seltene",
-      "version": "2026.0.x",
+      "version": "2026.0.0",
       "id": "de_medizininformatikinitiative_kerndatensatz_seltene"
     },
     {
       "packageId": "de.medizininformatikinitiative.kerndatensatz.mtb",
       "uri": "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/ImplementationGuide/mii-ig-mtb-de",
-      "version": "2026.0.x",
+      "version": "2026.0.1",
       "id": "de_medizininformatikinitiative_kerndatensatz_mtb"
     },
     {
       "packageId": "de.medizininformatikinitiative.kerndatensatz.pros",
       "uri": "https://www.medizininformatik-initiative.de/fhir/ext/modul-dok/ImplementationGuide/mii-ig-pro",
-      "version": "2026.0.x",
+      "version": "2026.0.1",
       "id": "de_medizininformatikinitiative_kerndatensatz_pros"
     },
     {
@@ -158,13 +158,13 @@
     },
     {
       "packageId": "de.basisprofil.r4",
-      "version": "1.5.x",
+      "version": "1.5.4",
       "uri": "http://fhir.org/packages/de.basisprofil.r4/ImplementationGuide/de.basisprofil.r4",
       "id": "de_basisprofil_r4"
     },
     {
       "packageId": "de.einwilligungsmanagement",
-      "version": "1.0.x",
+      "version": "1.0.2",
       "uri": "http://fhir.org/packages/de.einwilligungsmanagement/ImplementationGuide/de.einwilligungsmanagement",
       "id": "de_einwilligungsmanagement"
     }
@@ -397,6 +397,22 @@
       },
       {
         "reference": {
+          "reference": "Encounter/mii-exa-test-data-bildgebung-encounter-1"
+        },
+        "name": "mii-exa-test-data-bildgebung-encounter-1",
+        "description": "Bildgebung Test Encounter",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Patient/mii-exa-test-data-bildgebung-patient-1"
+        },
+        "name": "mii-exa-test-data-bildgebung-patient-1",
+        "description": "Bildgebung Test Patient",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Procedure/mii-exa-test-data-bildgebungsprozedur"
         },
         "name": "mii-exa-test-data-bildgebungsprozedur",
@@ -409,6 +425,126 @@
         },
         "name": "mii-exa-test-data-bildgebungsstudie",
         "description": "ImagingStudy: MagneticResonance",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Patient/mii-exa-test-data-biobank-patient-1"
+        },
+        "name": "mii-exa-test-data-biobank-patient-1",
+        "description": "Biobank Test Patient 1",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Patient/mii-exa-test-data-biobank-patient-2"
+        },
+        "name": "mii-exa-test-data-biobank-patient-2",
+        "description": "Biobank Test Patient 2",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Patient/mii-exa-test-data-biobank-patient-3"
+        },
+        "name": "mii-exa-test-data-biobank-patient-3",
+        "description": "Biobank Test Patient 3",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Patient/mii-exa-test-data-biobank-patient-4"
+        },
+        "name": "mii-exa-test-data-biobank-patient-4",
+        "description": "Biobank Test Patient 4",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Patient/mii-exa-test-data-biobank-patient-5"
+        },
+        "name": "mii-exa-test-data-biobank-patient-5",
+        "description": "Biobank Test Patient 5",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Patient/mii-exa-test-data-biobank-patient-6"
+        },
+        "name": "mii-exa-test-data-biobank-patient-6",
+        "description": "Biobank Test Patient 6",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Patient/mii-exa-test-data-biobank-patient-7"
+        },
+        "name": "mii-exa-test-data-biobank-patient-7",
+        "description": "Biobank Test Patient 7",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Patient/mii-exa-test-data-biobank-patient-8"
+        },
+        "name": "mii-exa-test-data-biobank-patient-8",
+        "description": "Biobank Test Patient 8",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Patient/mii-exa-test-data-biobank-patient-9"
+        },
+        "name": "mii-exa-test-data-biobank-patient-9",
+        "description": "Biobank Test Patient 9",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Bundle/mii-exa-test-data-bundle-bildgebung-1"
+        },
+        "name": "mii-exa-test-data-bundle-bildgebung-1",
+        "description": "Bundle: Bildgebung Testdaten Patient-1",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Bundle/mii-exa-test-data-bundle-biobank-1"
+        },
+        "name": "mii-exa-test-data-bundle-biobank-1",
+        "description": "Bundle: Biobank Testdaten",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Bundle/mii-exa-test-data-bundle-dokument-1"
+        },
+        "name": "mii-exa-test-data-bundle-dokument-1",
+        "description": "Bundle: Dokument Testdaten Patient-1",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Bundle/mii-exa-test-data-bundle-icu-1"
+        },
+        "name": "mii-exa-test-data-bundle-icu-1",
+        "description": "Bundle: ICU Testdaten Patient-1",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Bundle/mii-exa-test-data-bundle-molgen-1"
+        },
+        "name": "mii-exa-test-data-bundle-molgen-1",
+        "description": "Bundle: Molekulargenetik Testdaten Patient-3 und Patient-4",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Bundle/mii-exa-test-data-bundle-mtb-1"
+        },
+        "name": "mii-exa-test-data-bundle-mtb-1",
+        "description": "Bundle: MTB Testdaten Patient-1",
         "exampleBoolean": true
       },
       {
@@ -501,6 +637,38 @@
       },
       {
         "reference": {
+          "reference": "Bundle/mii-exa-test-data-bundle-patho-1"
+        },
+        "name": "mii-exa-test-data-bundle-patho-1",
+        "description": "Bundle: Pathologie Testdaten Patient-1",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Bundle/mii-exa-test-data-bundle-pro-1"
+        },
+        "name": "mii-exa-test-data-bundle-pro-1",
+        "description": "Bundle: PRO Testdaten Patient-1",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Bundle/mii-exa-test-data-bundle-seltene-1"
+        },
+        "name": "mii-exa-test-data-bundle-seltene-1",
+        "description": "Bundle: Seltene Erkrankungen Testdaten Patient-3",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Bundle/mii-exa-test-data-bundle-studien-1"
+        },
+        "name": "mii-exa-test-data-bundle-studien-1",
+        "description": "Bundle: Studien Testdaten Patient-1",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Device/mii-exa-test-data-device-roche-cobas"
         },
         "name": "mii-exa-test-data-device-roche-cobas",
@@ -533,10 +701,42 @@
       },
       {
         "reference": {
+          "reference": "Encounter/mii-exa-test-data-dokument-encounter-1"
+        },
+        "name": "mii-exa-test-data-dokument-encounter-1",
+        "description": "Dokument Test Encounter",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Patient/mii-exa-test-data-dokument-patient-1"
+        },
+        "name": "mii-exa-test-data-dokument-patient-1",
+        "description": "Dokument Test Patient",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Device/mii-exa-test-data-geraet"
         },
         "name": "mii-exa-test-data-geraet",
         "description": "Device: MRT-Gerät",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Encounter/mii-exa-test-data-icu-encounter-1"
+        },
+        "name": "mii-exa-test-data-icu-encounter-1",
+        "description": "ICU Test Encounter",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Patient/mii-exa-test-data-icu-patient-1"
+        },
+        "name": "mii-exa-test-data-icu-patient-1",
+        "description": "ICU Test Patient",
         "exampleBoolean": true
       },
       {
@@ -777,6 +977,54 @@
         },
         "name": "mii-exa-test-data-molgen-device-sequencer",
         "description": "Device: Sequencer used for BRAF mutation analysis",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Encounter/mii-exa-test-data-molgen-encounter-1"
+        },
+        "name": "mii-exa-test-data-molgen-encounter-1",
+        "description": "Molgen Test Encounter 1",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Encounter/mii-exa-test-data-molgen-encounter-2"
+        },
+        "name": "mii-exa-test-data-molgen-encounter-2",
+        "description": "Molgen Test Encounter 2",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Patient/mii-exa-test-data-molgen-patient-1"
+        },
+        "name": "mii-exa-test-data-molgen-patient-1",
+        "description": "Molgen Test Patient 1 (Erbliche Tumorerkrankung)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Patient/mii-exa-test-data-molgen-patient-2"
+        },
+        "name": "mii-exa-test-data-molgen-patient-2",
+        "description": "Molgen Test Patient 2 (NSCLC)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Encounter/mii-exa-test-data-mtb-encounter-1"
+        },
+        "name": "mii-exa-test-data-mtb-encounter-1",
+        "description": "MTB Test Encounter",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Patient/mii-exa-test-data-mtb-patient-1"
+        },
+        "name": "mii-exa-test-data-mtb-patient-1",
+        "description": "MTB Test Patient",
         "exampleBoolean": true
       },
       {
@@ -1573,6 +1821,22 @@
       },
       {
         "reference": {
+          "reference": "Encounter/mii-exa-test-data-patho-encounter-1"
+        },
+        "name": "mii-exa-test-data-patho-encounter-1",
+        "description": "Patho Test Encounter",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Patient/mii-exa-test-data-patho-patient-1"
+        },
+        "name": "mii-exa-test-data-patho-patient-1",
+        "description": "Patho Test Patient",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Patient/mii-exa-test-data-patient-1"
         },
         "name": "mii-exa-test-data-patient-1",
@@ -1637,10 +1901,562 @@
       },
       {
         "reference": {
-          "reference": "Observation/mii-exa-test-data-patient-1-icu-herzfrequenz-1"
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-bilanz-ausf-fluess-1"
         },
-        "name": "mii-exa-test-data-patient-1-icu-herzfrequenz-1",
-        "description": "ICU Observation: Herzfrequenz für Patient 1",
+        "name": "mii-exa-test-data-patient-1-icu-bilanz-ausf-fluess-1",
+        "description": "ICU Observation: MII PR ICU Bilanz Ausfuhr Fluessigkeit Gesamt",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-bilanz-ausf-galle-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-bilanz-ausf-galle-1",
+        "description": "ICU Observation: MII PR ICU Bilanz Ausfuhr Gallenfluessigkeit",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-bilanz-ausf-gallengang-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-bilanz-ausf-gallengang-1",
+        "description": "ICU Observation: MII PR ICU Bilanz Ausfuhr Gallengang",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-bilanz-ausf-magen-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-bilanz-ausf-magen-1",
+        "description": "ICU Observation: MII PR ICU Bilanz Ausfuhr Magensonde",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-bilanz-ausf-opdrain-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-bilanz-ausf-opdrain-1",
+        "description": "ICU Observation: MII PR ICU Bilanz Ausfuhr Opdrainage",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-bilanz-ausf-pankreas-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-bilanz-ausf-pankreas-1",
+        "description": "ICU Observation: MII PR ICU Bilanz Ausfuhr Pankreasdrainage",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-bilanz-ausf-stuhl-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-bilanz-ausf-stuhl-1",
+        "description": "ICU Observation: MII PR ICU Bilanz Ausfuhr Stuhlgang",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-bilanz-ausf-urin-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-bilanz-ausf-urin-1",
+        "description": "ICU Observation: MII PR ICU Bilanz Ausfuhr Urin",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-bilanz-ausf-wunde-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-bilanz-ausf-wunde-1",
+        "description": "ICU Observation: MII PR ICU Bilanz Ausfuhr Wunddrainage",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-bilanz-blutverlust-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-bilanz-blutverlust-1",
+        "description": "ICU Observation: MII PR ICU Bilanz Blutverlust",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-bilanz-drainage-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-bilanz-drainage-1",
+        "description": "ICU Observation: MII PR ICU Bilanz Ausfuhr Drainage Generisch",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-bilanz-einf-enteral-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-bilanz-einf-enteral-1",
+        "description": "ICU Observation: MII PR ICU Bilanz Einfuhr Enterale Fluessigkeit",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-bilanz-einf-fluess-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-bilanz-einf-fluess-1",
+        "description": "ICU Observation: SD MII ICU Bilanz Einfuhr Fluessigkeit Gesamt",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-bilanz-einf-oral-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-bilanz-einf-oral-1",
+        "description": "ICU Observation: MII PR ICU Bilanz Einfuhr Oraler Fluessigkeit",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-bilanz-ges-ausf-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-bilanz-ges-ausf-1",
+        "description": "ICU Observation: MII PR ICU Bilanz Gesamte Ausfuhr",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-bilanz-ges-einf-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-bilanz-ges-einf-1",
+        "description": "ICU Observation: MII PR ICU Bilanz Gesamte Einfuhr",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-bilanz-haemofiltr-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-bilanz-haemofiltr-1",
+        "description": "ICU Observation: MII PR ICU Bilanz Abnahme Haemofiltration Einzelmesswerte",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-bilanz-tages-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-bilanz-tages-1",
+        "description": "ICU Observation: MII PR ICU Bilanz Gesamte Tages Bilanz",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Device/mii-exa-test-data-patient-1-icu-device-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-device-1",
+        "description": "ICU Device: Beatmungsgeraet Draeger Evita V500",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-ect-art-druck-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-ect-art-druck-1",
+        "description": "ICU Observation: MII PR ICU Arterieller Druck",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-ect-blutfl-cardio-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-ect-blutfl-cardio-1",
+        "description": "ICU Observation: MII PR ICU Blutfluss Cardiovasculaeres Geraet",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-ect-blutfl-extra-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-ect-blutfl-extra-1",
+        "description": "ICU Observation: MII PR ICU Blutfluss Extrakorporaler Gasaustausch",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-ect-blutfl-idx-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-ect-blutfl-idx-1",
+        "description": "ICU Observation: MII PR ICU Blutflussindex Extrakorporaler Gasaustausch",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-ect-dauer-extra-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-ect-dauer-extra-1",
+        "description": "ICU Observation: MII PR ICU Dauer Extrakorporaler Gasaustausch",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-ect-dauer-haemo-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-ect-dauer-haemo-1",
+        "description": "ICU Observation: MII ICU Dauer Haemodialysesitzung",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "DeviceMetric/mii-exa-test-data-patient-1-icu-ect-dm-param-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-ect-dm-param-1",
+        "description": "ICU DeviceMetric: Eingestellte Gemessene Parameter Extrakorporale Verfahren",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Procedure/mii-exa-test-data-patient-1-icu-ect-extrakorp-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-ect-extrakorp-1",
+        "description": "ICU Procedure: MII PR ICU Extrakorporales Verfahren",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-ect-gasfluss-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-ect-gasfluss-1",
+        "description": "ICU Observation: MII PR ICU Gasfluss",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-ect-haemo-blutfl-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-ect-haemo-blutfl-1",
+        "description": "ICU Observation: MII PR ICU Haemodialyse Blutfluss",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-ect-kalzium-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-ect-kalzium-1",
+        "description": "ICU Observation: MII PR ICU Ionisiertes Kalzium Nierenersatzverfahren",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-ect-substituatfl-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-ect-substituatfl-1",
+        "description": "ICU Observation: MII PR ICU Substituatfluss",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-ect-substituatvol-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-ect-substituatvol-1",
+        "description": "ICU Observation: MII PR ICU Substituatvolumen",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-ect-ven-druck-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-ect-ven-druck-1",
+        "description": "ICU Observation: MII PR ICU Venous Pressure",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-event-o2-partial-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-event-o2-partial-1",
+        "description": "ICU Observation: MII PR ICU Exspiratorischer Sauerstoffpartialdruck",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-muv-atemfreq-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-muv-atemfreq-1",
+        "description": "ICU Observation: MII PR ICU Atemfrequenz",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-muv-blutdruck-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-muv-blutdruck-1",
+        "description": "ICU Observation: MII PR ICU Arterieller Blutdruck",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-muv-gewicht-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-muv-gewicht-1",
+        "description": "ICU Observation: MII PR ICU Koerpergewicht",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-muv-groesse-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-muv-groesse-1",
+        "description": "ICU Observation: MII PR ICU Koerpergroesse",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-muv-herzfreq-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-muv-herzfreq-1",
+        "description": "ICU Observation: MII SD ICU Herzfrequenz",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-muv-kopfumfang-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-muv-kopfumfang-1",
+        "description": "ICU Observation: MII PR ICU Kopfumfang",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-vent-atemdr-mitt-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-vent-atemdr-mitt-1",
+        "description": "ICU Observation: MII PR ICU Atemwegsdruck Bei Mittlerem Expiratorischem Gasfluss",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-vent-atemdr-null-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-vent-atemdr-null-1",
+        "description": "ICU Observation: MII PR ICU Atemwegsdruck Bei Null Expiratorischem Gasfluss",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Procedure/mii-exa-test-data-patient-1-icu-vent-beatmung-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-vent-beatmung-1",
+        "description": "ICU Procedure: MII PR ICU Beatmung",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-vent-compliance-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-vent-compliance-1",
+        "description": "ICU Observation: mii-pr-icu-dynamische-kompliance",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "DeviceMetric/mii-exa-test-data-patient-1-icu-vent-dm-param-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-vent-dm-param-1",
+        "description": "ICU DeviceMetric: Eingestellte Gemessene Parameter Beatmung",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-vent-dp-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-vent-dp-1",
+        "description": "ICU Observation: MII PR ICU Druckdifferenz Beatmung",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-vent-etco2-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-vent-etco2-1",
+        "description": "ICU Observation: MII PR ICU Endexpiratorischer Kohlendioxidpartialdruck",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-vent-exp-flow-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-vent-exp-flow-1",
+        "description": "ICU Observation: MII PR ICU Exspiratorischer Gasfluss",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-vent-fio2-eingest-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-vent-fio2-eingest-1",
+        "description": "ICU Observation: mii-pr-icu-inspiratorische-sauerstofffraktion-eingestellt",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-vent-fio2-gem-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-vent-fio2-gem-1",
+        "description": "ICU Observation: MIIm PR ICU Inspiratorische Sauerstofffraktion Gemessen",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-vent-freq-mech-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-vent-freq-mech-1",
+        "description": "ICU Observation: MII PR ICU Mechanische Atemfrequenz Beatmet",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-vent-freq-spont-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-vent-freq-spont-1",
+        "description": "ICU Observation: MII PR ICU Spontane Atemfrequenz Beatmet",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-vent-freq-spont-mech-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-vent-freq-spont-mech-1",
+        "description": "ICU Observation: MII PR ICU Spontane Mechanische Atemfrequenz Beatmet",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-vent-horowitz-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-vent-horowitz-1",
+        "description": "ICU Observation: MII PR ICU Horowitz In Arteriellem Blut",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-vent-ie-ratio-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-vent-ie-ratio-1",
+        "description": "ICU Observation: MII PR ICU Zeitverhaeltnis Ein Ausatmung",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-vent-insp-flow-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-vent-insp-flow-1",
+        "description": "ICU Observation: MII PR ICU Inspiratorischer Gasfluss",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-vent-insp-flow-set-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-vent-insp-flow-set-1",
+        "description": "ICU Observation: MII PR ICU Eingestellter Inspiratorischer Gasfluss",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-vent-map-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-vent-map-1",
+        "description": "ICU Observation: MII PR ICU Mittlerer Beatmungsdruck",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-vent-mv-masch-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-vent-mv-masch-1",
+        "description": "ICU Observation: MII PR ICU Beatmungsvolumen Pro Minute Maschineller Beatmung",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-vent-peep-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-vent-peep-1",
+        "description": "ICU Observation: MII PR ICU Positiv Endexpiratorischer Druck",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-vent-pip-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-vent-pip-1",
+        "description": "ICU Observation: MII PR ICU Maximaler Beatmungsdruck",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-vent-ps-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-vent-ps-1",
+        "description": "ICU Observation: MII PR ICU Unterstuezungsdruck Beatmung",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-vent-te-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-vent-te-1",
+        "description": "ICU Observation: MII PR ICU Einstellung Ausatmungszeit Beatmung",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-vent-ti-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-vent-ti-1",
+        "description": "ICU Observation: MII PR ICU Einstellung Einatmungszeit Beatmung",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-vent-vt-beat-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-vent-vt-beat-1",
+        "description": "ICU Observation: MII PR ICU Atemzugvolumen Waehrend Beatmung",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-vent-vt-einst-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-vent-vt-einst-1",
+        "description": "ICU Observation: MII PR ICU Atemzugvolumen Einstellung",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-vent-vt-spont-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-vent-vt-spont-1",
+        "description": "ICU Observation: MII PR ICU Spontanes Atemzugvolumen",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-vent-vt-spont-mech-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-vent-vt-spont-mech-1",
+        "description": "ICU Observation: MII PR ICU Spontanes Plus Mechanisches Atemzugvolumen",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-vent-zeit-hoch-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-vent-zeit-hoch-1",
+        "description": "ICU Observation: MII ICU Beatmungszeit Hohem Druck",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-vent-zeit-niedrig-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-vent-zeit-niedrig-1",
+        "description": "ICU Observation: MII PR ICU Beatmungszeit Niedrigem Druck",
         "exampleBoolean": true
       },
       {
@@ -2540,6 +3356,14 @@
       },
       {
         "reference": {
+          "reference": "ServiceRequest/mii-exa-test-data-patient-3-molgen-anforderung-2"
+        },
+        "name": "mii-exa-test-data-patient-3-molgen-anforderung-2",
+        "description": "ServiceRequest: Anforderung NGS-Panel bei NSCLC Stadium IV gemaess S3-Leitlinie",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "DiagnosticReport/mii-exa-test-data-patient-3-molgen-befundbericht-1"
         },
         "name": "mii-exa-test-data-patient-3-molgen-befundbericht-1",
@@ -2652,10 +3476,42 @@
       },
       {
         "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-3-molgen-therapeutische-implikation-2"
+        },
+        "name": "mii-exa-test-data-patient-3-molgen-therapeutische-implikation-2",
+        "description": "Observation: Therapeutische Implikation fuer EGFR L858R bei NSCLC Stadium IV",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-3-molgen-therapeutische-implikation-3"
+        },
+        "name": "mii-exa-test-data-patient-3-molgen-therapeutische-implikation-3",
+        "description": "Observation: Therapeutische Implikation fuer EGFR Exon-20-Insertion bei NSCLC - Amivantamab",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Observation/mii-exa-test-data-patient-3-molgen-variante-1"
         },
         "name": "mii-exa-test-data-patient-3-molgen-variante-1",
         "description": "Observation: Genetische Variante fuer BRAF-Mutation",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-3-molgen-variante-2"
+        },
+        "name": "mii-exa-test-data-patient-3-molgen-variante-2",
+        "description": "Observation: Genetische Variante EGFR L858R bei NSCLC",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-3-molgen-variante-3"
+        },
+        "name": "mii-exa-test-data-patient-3-molgen-variante-3",
+        "description": "Observation: Genetische Variante EGFR Exon-20-Insertion p.Ala767_Val769dup bei NSCLC",
         "exampleBoolean": true
       },
       {
@@ -4020,6 +4876,22 @@
       },
       {
         "reference": {
+          "reference": "Encounter/mii-exa-test-data-pro-encounter-1"
+        },
+        "name": "mii-exa-test-data-pro-encounter-1",
+        "description": "PRO Test Encounter",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Patient/mii-exa-test-data-pro-patient-1"
+        },
+        "name": "mii-exa-test-data-pro-patient-1",
+        "description": "PRO Test Patient",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Observation/mii-exa-test-data-radiologische-beobachtung"
         },
         "name": "mii-exa-test-data-radiologische-beobachtung",
@@ -4028,10 +4900,42 @@
       },
       {
         "reference": {
+          "reference": "Encounter/mii-exa-test-data-seltene-encounter-1"
+        },
+        "name": "mii-exa-test-data-seltene-encounter-1",
+        "description": "Seltene Erkrankungen Test Encounter",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Patient/mii-exa-test-data-seltene-patient-1"
+        },
+        "name": "mii-exa-test-data-seltene-patient-1",
+        "description": "Seltene Erkrankungen Test Patient",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "ServiceRequest/mii-exa-test-data-studie-einschluss-anfrage-1"
         },
         "name": "mii-exa-test-data-studie-einschluss-anfrage-1",
         "description": "ServiceRequest: Studieneinschluss-Anfrage für Patient-1 in MII-BIOMARKER-2024",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Encounter/mii-exa-test-data-studien-encounter-1"
+        },
+        "name": "mii-exa-test-data-studien-encounter-1",
+        "description": "Studien Test Encounter",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Patient/mii-exa-test-data-studien-patient-1"
+        },
+        "name": "mii-exa-test-data-studien-patient-1",
+        "description": "Studien Test Patient",
         "exampleBoolean": true
       },
       {

@@ -1,0 +1,4249 @@
+{
+  "resourceType": "Bundle",
+  "id": "mii-exa-test-data-bundle-molgen-1",
+  "meta": {
+    "security": [
+      {
+        "code": "HTEST",
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "display": "test health data"
+      }
+    ]
+  },
+  "entry": [
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Patient/mii-exa-test-data-molgen-patient-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Patient/mii-exa-test-data-molgen-patient-1",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "mii-exa-test-data-molgen-patient-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://www.charite.de/fhir/sid/patientenidentifikation",
+            "value": "MOL-TEST-001"
+          }
+        ],
+        "name": [
+          {
+            "given": [
+              "Petra"
+            ],
+            "family": "Genomisch"
+          }
+        ],
+        "birthDate": "1985-08-14",
+        "gender": "female"
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Encounter/mii-exa-test-data-molgen-encounter-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Encounter/mii-exa-test-data-molgen-encounter-1",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "mii-exa-test-data-molgen-encounter-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ]
+        },
+        "period": {
+          "start": "2024-03-01",
+          "end": "2024-03-20"
+        },
+        "status": "finished",
+        "class": {
+          "code": "IMP",
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "display": "inpatient encounter"
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-molgen-patient-1"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Patient/mii-exa-test-data-molgen-patient-2"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Patient/mii-exa-test-data-molgen-patient-2",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "mii-exa-test-data-molgen-patient-2",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://www.charite.de/fhir/sid/patientenidentifikation",
+            "value": "MOL-TEST-002"
+          }
+        ],
+        "name": [
+          {
+            "given": [
+              "Markus"
+            ],
+            "family": "Sequenziert"
+          }
+        ],
+        "birthDate": "1972-11-25",
+        "gender": "male"
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Encounter/mii-exa-test-data-molgen-encounter-2"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Encounter/mii-exa-test-data-molgen-encounter-2",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "mii-exa-test-data-molgen-encounter-2",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ]
+        },
+        "period": {
+          "start": "2024-04-01",
+          "end": "2024-04-15"
+        },
+        "status": "finished",
+        "class": {
+          "code": "IMP",
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "display": "inpatient encounter"
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-molgen-patient-2"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Device/mii-exa-test-data-molgen-device-sequencer"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Device/mii-exa-test-data-molgen-device-sequencer",
+      "resource": {
+        "resourceType": "Device",
+        "id": "mii-exa-test-data-molgen-device-sequencer",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ]
+        },
+        "deviceName": [
+          {
+            "name": "MiSeq",
+            "type": "manufacturer-name"
+          }
+        ],
+        "status": "active",
+        "manufacturer": "Illumina"
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "ServiceRequest/mii-exa-test-data-patient-3-molgen-anforderung-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/ServiceRequest/mii-exa-test-data-patient-3-molgen-anforderung-1",
+      "resource": {
+        "resourceType": "ServiceRequest",
+        "id": "mii-exa-test-data-patient-3-molgen-anforderung-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/anforderung-genetischer-test"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "108252007",
+                "system": "http://snomed.info/sct",
+                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+                "display": "Laboratory procedure (procedure)"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "405825005",
+              "system": "http://snomed.info/sct",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+              "display": "Molecular genetic test (procedure)"
+            },
+            {
+              "code": "53844-7",
+              "system": "http://loinc.org",
+              "display": "BRAF gene targeted mutation analysis in Blood or Tissue by Molecular genetics method"
+            },
+            {
+              "code": "HGNC:1097",
+              "system": "http://www.genenames.org/geneId",
+              "display": "BRAF"
+            }
+          ],
+          "text": "BRAF: Exon 15 (Codon 600)"
+        },
+        "reasonCode": [
+          {
+            "coding": [
+              {
+                "code": "447886005",
+                "system": "http://snomed.info/sct",
+                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+                "display": "Adenocarcinoma of anorectum (disorder)"
+              }
+            ]
+          }
+        ],
+        "specimen": [
+          {
+            "reference": "Specimen/mii-exa-test-data-patient-3-specimen-1"
+          }
+        ],
+        "supportingInfo": [
+          {
+            "reference": "FamilyMemberHistory/mii-exa-test-data-patient-3-molgen-family-member-history-1"
+          }
+        ],
+        "note": [
+          {
+            "text": "Dringender Verdacht auf BRAF V600E bei bekanntem kolorektalem Karzinom. Therapieentscheidung abhaengig von Ergebnis."
+          }
+        ],
+        "status": "active",
+        "intent": "order",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-molgen-patient-1"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-molgen-encounter-1"
+        },
+        "authoredOn": "2022-04-07",
+        "requester": {
+          "reference": "Practitioner/mii-exa-test-data-practitioner-physician-1"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "DiagnosticReport/mii-exa-test-data-patient-3-molgen-befundbericht-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/DiagnosticReport/mii-exa-test-data-patient-3-molgen-befundbericht-1",
+      "resource": {
+        "resourceType": "DiagnosticReport",
+        "id": "mii-exa-test-data-patient-3-molgen-befundbericht-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/molekulargenetischer-befundbericht",
+            "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-report"
+          ]
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/recommended-action",
+            "valueReference": {
+              "reference": "Task/mii-exa-test-data-patient-3-molgen-medikationsempfehlung-1"
+            }
+          },
+          {
+            "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/recommended-action",
+            "valueReference": {
+              "reference": "Task/mii-exa-test-data-patient-3-molgen-folgemassnahme-1"
+            }
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo",
+            "valueReference": {
+              "reference": "FamilyMemberHistory/mii-exa-test-data-patient-3-molgen-family-member-history-1"
+            }
+          },
+          {
+            "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-reference",
+            "valueReference": {
+              "reference": "Procedure/mii-exa-test-data-patient-3-molgen-genomic-study-1"
+            }
+          },
+          {
+            "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-risk-assessment",
+            "valueReference": {
+              "reference": "RiskAssessment/mii-exa-test-data-patient-3-molgen-polygener-risiko-score-1"
+            }
+          }
+        ],
+        "basedOn": [
+          {
+            "reference": "ServiceRequest/mii-exa-test-data-patient-3-molgen-anforderung-1"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                "code": "GE",
+                "display": "Genetics"
+              }
+            ]
+          }
+        ],
+        "performer": [
+          {
+            "reference": "Practitioner/mii-exa-test-data-practitioner-physician-1"
+          }
+        ],
+        "specimen": [
+          {
+            "reference": "Specimen/mii-exa-test-data-patient-3-specimen-1"
+          }
+        ],
+        "result": [
+          {
+            "reference": "Observation/mii-exa-test-data-patient-3-molgen-diagnostische-implikation-1"
+          },
+          {
+            "reference": "Observation/mii-exa-test-data-patient-3-molgen-therapeutische-implikation-1"
+          },
+          {
+            "reference": "Observation/mii-exa-test-data-patient-3-molgen-variante-1"
+          },
+          {
+            "reference": "Observation/mii-exa-test-data-patient-3-molgen-genotyp-1"
+          },
+          {
+            "reference": "Observation/mii-exa-test-data-patient-3-molgen-mutationslast-1"
+          },
+          {
+            "reference": "Observation/mii-exa-test-data-patient-3-molgen-msi-1"
+          }
+        ],
+        "conclusionCode": [
+          {
+            "coding": [
+              {
+                "code": "10828004",
+                "system": "http://snomed.info/sct",
+                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+                "display": "Positive (qualifier value)"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "51969-4",
+              "display": "Genetic analysis report"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-molgen-patient-1"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-molgen-encounter-1"
+        },
+        "issued": "2022-04-12T10:30:00+02:00",
+        "conclusion": "BRAF p.V600E Mutation liegt vor. Bitte Therapieoption mit einem BRAF-Inhibitor pruefen."
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-patient-3-molgen-variante-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-3-molgen-variante-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-3-molgen-variante-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/variante",
+            "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/variant"
+          ]
+        },
+        "basedOn": [
+          {
+            "reference": "ServiceRequest/mii-exa-test-data-patient-3-molgen-anforderung-1"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                "code": "GE"
+              }
+            ]
+          }
+        ],
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "48018-6",
+                  "display": "Gene studied [ID]"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "HGNC:1097",
+                  "system": "http://www.genenames.org/geneId",
+                  "display": "BRAF"
+                }
+              ]
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "48013-7",
+                  "display": "Genomic reference sequence [ID]"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "NM_004333.4",
+                  "system": "http://www.ncbi.nlm.nih.gov/refseq"
+                }
+              ]
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "47999-8",
+                  "display": "DNA region name [Identifier]"
+                }
+              ]
+            },
+            "valueString": "Exon #15"
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "47999-8",
+                  "display": "DNA region name [Identifier]"
+                }
+              ]
+            },
+            "valueString": "Codon #582 - #612"
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "48004-6",
+                  "display": "DNA change (c.HGVS)"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "NM_004333.4:c.1799T>A",
+                  "system": "http://varnomen.hgvs.org"
+                }
+              ]
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "48005-3",
+                  "display": "Amino acid change (pHGVS)"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "p.(Val600Glu)",
+                  "system": "http://varnomen.hgvs.org"
+                }
+              ]
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "81258-6",
+                  "display": "Sample variant allelic frequency [NFr]"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 30.25,
+              "code": "%",
+              "system": "http://unitsofmeasure.org"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "48001-2",
+                  "display": "Cytogenetic (chromosome) location"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "7q34",
+                  "system": "urn:oid:2.16.840.1.113883.6.335"
+                }
+              ]
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "48019-4",
+                  "display": "DNA change type"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "SO:1000008",
+                  "system": "http://sequenceontology.org",
+                  "display": "point_mutation"
+                }
+              ]
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "81252-9",
+                  "display": "Discrete genetic variant"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "rs113488022",
+                  "system": "http://www.ncbi.nlm.nih.gov/projects/SNP"
+                }
+              ]
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "62374-4",
+                  "display": "Human reference sequence assembly version"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "LA26806-2",
+                  "system": "http://loinc.org",
+                  "display": "GRCh38"
+                }
+              ]
+            }
+          },
+          {
+            "valueRange": {
+              "low": {
+                "value": 140753336
+              },
+              "high": {
+                "value": 140753336
+              }
+            },
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "81254-5",
+                  "display": "Genomic allele start-end"
+                }
+              ]
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "69547-8",
+                  "display": "Genomic ref allele [ID]"
+                }
+              ]
+            },
+            "valueString": "T"
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "69551-0",
+                  "display": "Genomic alt allele [ID]"
+                }
+              ]
+            },
+            "valueString": "A"
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "48002-0",
+                  "display": "Genomic source class [Type]"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "LA6684-0",
+                  "system": "http://loinc.org",
+                  "display": "Somatic"
+                }
+              ]
+            }
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "69548-6",
+              "display": "Genetic variant assessment"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-molgen-patient-1"
+        },
+        "effectiveDateTime": "2022-04-07",
+        "issued": "2022-04-12T10:30:00+02:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "LA9633-4",
+              "system": "http://loinc.org",
+              "display": "Present"
+            }
+          ]
+        },
+        "method": {
+          "coding": [
+            {
+              "code": "LA26398-0",
+              "system": "http://loinc.org",
+              "display": "Sequencing"
+            }
+          ]
+        },
+        "specimen": {
+          "reference": "Specimen/mii-exa-test-data-patient-3-specimen-1"
+        },
+        "device": {
+          "reference": "Device/mii-exa-test-data-molgen-device-sequencer"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-patient-3-molgen-genotyp-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-3-molgen-genotyp-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-3-molgen-genotyp-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/genotyp",
+            "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genotype"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                "code": "GE"
+              }
+            ]
+          }
+        ],
+        "valueCodeableConcept": {
+          "text": "BRAF rs113488022 T>A"
+        },
+        "derivedFrom": [
+          {
+            "reference": "Observation/mii-exa-test-data-patient-3-molgen-variante-1"
+          }
+        ],
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "48018-6",
+                  "display": "Gene studied [ID]"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "HGNC:1097",
+                  "system": "http://www.genenames.org/geneId",
+                  "display": "BRAF"
+                }
+              ]
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "48001-2",
+                  "display": "Cytogenetic (chromosome) location"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "7q34",
+                  "system": "urn:oid:2.16.840.1.113883.6.335"
+                }
+              ]
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs",
+                  "code": "conclusion-string"
+                }
+              ]
+            },
+            "valueString": "Heterozygote BRAF V600E Mutation nachgewiesen"
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "62374-4",
+                  "display": "Human reference sequence assembly version"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "LA26806-2",
+                  "system": "http://loinc.org",
+                  "display": "GRCh38"
+                }
+              ]
+            }
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "84413-4",
+              "display": "Genotype display name"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-molgen-patient-1"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-molgen-encounter-1"
+        },
+        "effectiveDateTime": "2022-04-07",
+        "issued": "2022-04-12T10:30:00+02:00",
+        "method": {
+          "coding": [
+            {
+              "code": "LA26398-0",
+              "system": "http://loinc.org",
+              "display": "Sequencing"
+            }
+          ]
+        },
+        "specimen": {
+          "reference": "Specimen/mii-exa-test-data-patient-3-specimen-1"
+        },
+        "device": {
+          "reference": "Device/mii-exa-test-data-molgen-device-sequencer"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Procedure/mii-exa-test-data-patient-3-molgen-genomic-study-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Procedure/mii-exa-test-data-patient-3-molgen-genomic-study-1",
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "mii-exa-test-data-patient-3-molgen-genomic-study-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/mii-pr-molgen-genomic-study"
+          ]
+        },
+        "reasonReference": [
+          {
+            "reference": "Condition/mii-exa-test-data-patient-3-diagnose-1"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-ext",
+            "valueReference": {
+              "reference": "Procedure/mii-exa-test-data-patient-3-molgen-genomic-study-analysis-1"
+            }
+          }
+        ],
+        "category": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+              "code": "laboratory"
+            }
+          ]
+        },
+        "status": "completed",
+        "code": {
+          "coding": [
+            {
+              "code": "405825005",
+              "system": "http://snomed.info/sct",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+              "display": "Molecular genetic test (procedure)"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-molgen-patient-1"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-molgen-encounter-1"
+        },
+        "performedDateTime": "2022-04-07"
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Procedure/mii-exa-test-data-patient-3-molgen-genomic-study-analysis-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Procedure/mii-exa-test-data-patient-3-molgen-genomic-study-analysis-1",
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "mii-exa-test-data-patient-3-molgen-genomic-study-analysis-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/mii-pr-molgen-genomic-study-analysis"
+          ]
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-title",
+            "valueString": "BRAF Exon 15 Analyse"
+          },
+          {
+            "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-method-type",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "LA26398-0",
+                  "system": "http://loinc.org",
+                  "display": "Sequencing"
+                }
+              ]
+            }
+          },
+          {
+            "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-change-type",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "SO:1000008",
+                  "system": "http://sequenceontology.org",
+                  "display": "point_mutation"
+                }
+              ]
+            }
+          },
+          {
+            "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-genome-build",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "LA26806-2",
+                  "system": "http://loinc.org",
+                  "display": "GRCh38"
+                }
+              ]
+            }
+          },
+          {
+            "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-specimen",
+            "valueReference": {
+              "reference": "Specimen/mii-exa-test-data-patient-3-specimen-1"
+            }
+          },
+          {
+            "extension": [
+              {
+                "url": "device",
+                "valueReference": {
+                  "reference": "Device/mii-exa-test-data-molgen-device-sequencer"
+                }
+              }
+            ],
+            "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-device"
+          },
+          {
+            "extension": [
+              {
+                "url": "description",
+                "valueString": "BRAF: Exon 15 (Codon 582-612)"
+              },
+              {
+                "url": "studied",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "code": "HGNC:1097",
+                      "system": "http://www.genenames.org/geneId",
+                      "display": "BRAF"
+                    }
+                  ]
+                }
+              }
+            ],
+            "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-regions"
+          }
+        ],
+        "status": "completed",
+        "category": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+              "code": "laboratory"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-molgen-patient-1"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-patient-3-molgen-molekulare-konsequenz-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-3-molgen-molekulare-konsequenz-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-3-molgen-molekulare-konsequenz-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/mii-pr-molgen-molekulare-konsequenz",
+            "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/molecular-consequence"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                "code": "GE"
+              }
+            ]
+          }
+        ],
+        "derivedFrom": [
+          {
+            "reference": "Observation/mii-exa-test-data-patient-3-molgen-variante-1"
+          }
+        ],
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs",
+                  "code": "conclusion-string"
+                }
+              ]
+            },
+            "valueString": "Aktivierende Missense-Mutation im BRAF-Gen. Austausch von Valin zu Glutaminsaeure an Position 600 fuehrt zu konstitutiver Aktivierung der BRAF-Kinase."
+          },
+          {
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "SO:0002053",
+                  "system": "http://sequenceontology.org",
+                  "display": "gain_of_function_variant"
+                }
+              ],
+              "text": "Konstitutive Aktivierung der BRAF-Kinase"
+            },
+            "code": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs",
+                  "code": "functional-effect"
+                }
+              ]
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "53037-8"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "LA6668-3",
+                  "system": "http://loinc.org",
+                  "display": "Pathogenic"
+                }
+              ]
+            }
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs",
+              "code": "molecular-consequence",
+              "display": "Molecular Consequence"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-molgen-patient-1"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-molgen-encounter-1"
+        },
+        "effectiveDateTime": "2022-04-07",
+        "issued": "2022-04-12T10:30:00+02:00"
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-patient-3-molgen-diagnostische-implikation-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-3-molgen-diagnostische-implikation-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-3-molgen-diagnostische-implikation-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/diagnostische-implikation",
+            "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/diagnostic-implication"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                "code": "GE"
+              }
+            ]
+          }
+        ],
+        "derivedFrom": [
+          {
+            "reference": "Observation/mii-exa-test-data-patient-3-molgen-variante-1"
+          }
+        ],
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs",
+                  "code": "conclusion-string"
+                }
+              ]
+            },
+            "valueString": "Nachweis einer aktivierenden Mutation BRAF V600E"
+          },
+          {
+            "valueCodeableConcept": {
+              "text": "Tier I - Level A"
+            },
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "93044-6",
+                  "display": "Level of evidence"
+                }
+              ]
+            }
+          },
+          {
+            "valueCodeableConcept": {
+              "text": "Somatisch erworben"
+            },
+            "code": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs",
+                  "code": "condition-inheritance"
+                }
+              ]
+            }
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs",
+              "code": "diagnostic-implication",
+              "display": "Diagnostic Implication"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-molgen-patient-1"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-molgen-encounter-1"
+        },
+        "effectiveDateTime": "2022-04-07",
+        "issued": "2022-04-12T10:30:00+02:00"
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-patient-3-molgen-therapeutische-implikation-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-3-molgen-therapeutische-implikation-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-3-molgen-therapeutische-implikation-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/therapeutische-implikation",
+            "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/therapeutic-implication"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                "code": "GE"
+              }
+            ]
+          }
+        ],
+        "derivedFrom": [
+          {
+            "reference": "Observation/mii-exa-test-data-patient-3-molgen-variante-1"
+          }
+        ],
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs",
+                  "code": "conclusion-string"
+                }
+              ]
+            },
+            "valueString": "Nachweis einer aktivierenden Mutation BRAF V600E. Triple-Therapie mit einem EGFR-Antikoerper sowie einem BRAF- und einem MEK-Inhibitor pruefen."
+          },
+          {
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "L01EC",
+                  "system": "http://fhir.de/CodeSystem/bfarm/atc",
+                  "display": "BRAF-Serin-Threoninkinase-Inhibitoren"
+                },
+                {
+                  "code": "703645005",
+                  "system": "http://snomed.info/sct",
+                  "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+                  "display": "Product containing B-Raf inhibitor (product)"
+                }
+              ],
+              "text": "BRAF Inhibitor"
+            },
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "51963-7",
+                  "display": "Medication assessed [ID]"
+                }
+              ]
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "51963-7",
+                  "display": "Medication assessed [ID]"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "L01FE",
+                  "system": "http://fhir.de/CodeSystem/bfarm/atc",
+                  "display": "EGFR (Epidermaler Wachstumsfaktor-Rezeptor)-Inhibitoren"
+                }
+              ]
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "51963-7",
+                  "display": "Medication assessed [ID]"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "L01EE",
+                  "system": "http://fhir.de/CodeSystem/bfarm/atc",
+                  "display": "Mitogen-aktivierte Proteinkinase (MEK)-Inhibitoren"
+                }
+              ]
+            }
+          },
+          {
+            "valueCodeableConcept": {
+              "text": "Tier I - Level A (FDA-approved therapy)"
+            },
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "93044-6",
+                  "display": "Level of evidence"
+                }
+              ]
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "81259-4"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "447886005",
+                  "system": "http://snomed.info/sct",
+                  "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+                  "display": "Adenocarcinoma of anorectum (disorder)"
+                }
+              ]
+            }
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs",
+              "code": "therapeutic-implication",
+              "display": "Therapeutic Implication"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-molgen-patient-1"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-molgen-encounter-1"
+        },
+        "effectiveDateTime": "2022-04-07",
+        "issued": "2022-04-12T10:30:00+02:00"
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-patient-3-molgen-mutationslast-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-3-molgen-mutationslast-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-3-molgen-mutationslast-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/mutationslast",
+            "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/tmb"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs",
+                "code": "biomarker-category"
+              }
+            ]
+          }
+        ],
+        "derivedFrom": [
+          {
+            "reference": "Observation/mii-exa-test-data-patient-3-molgen-variante-1"
+          }
+        ],
+        "component": [
+          {
+            "valueCodeableConcept": {
+              "text": "Panel-basiert (alle Gene)"
+            },
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "48018-6",
+                  "display": "Gene studied [ID]"
+                }
+              ]
+            }
+          },
+          {
+            "valueCodeableConcept": {
+              "text": "Tumor Mutational Burden"
+            },
+            "code": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs",
+                  "code": "biomarker-category"
+                }
+              ]
+            }
+          }
+        ],
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "94076-7",
+              "system": "http://loinc.org",
+              "display": "Mutations/Megabase [# Ratio] in Tumor"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-molgen-patient-1"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-molgen-encounter-1"
+        },
+        "effectiveDateTime": "2022-04-07",
+        "issued": "2022-04-12T10:30:00+02:00",
+        "valueQuantity": {
+          "value": 12,
+          "code": "1/1000000{Base}",
+          "system": "http://unitsofmeasure.org",
+          "unit": "Mutations/Megabase"
+        },
+        "specimen": {
+          "reference": "Specimen/mii-exa-test-data-patient-3-specimen-1"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-patient-3-molgen-msi-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-3-molgen-msi-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-3-molgen-msi-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/mikrosatelliteninstabilitaet",
+            "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/msi"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs",
+                "code": "biomarker-category"
+              }
+            ]
+          }
+        ],
+        "derivedFrom": [
+          {
+            "reference": "Observation/mii-exa-test-data-patient-3-molgen-variante-1"
+          }
+        ],
+        "component": [
+          {
+            "valueCodeableConcept": {
+              "text": "MSI-Panel (5 Marker)"
+            },
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "48018-6",
+                  "display": "Gene studied [ID]"
+                }
+              ]
+            }
+          },
+          {
+            "valueCodeableConcept": {
+              "text": "Microsatellite Instability"
+            },
+            "code": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs",
+                  "code": "biomarker-category"
+                }
+              ]
+            }
+          }
+        ],
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "81695-9",
+              "system": "http://loinc.org",
+              "display": "Microsatellite instability [Interpretation] in Cancer specimen Qualitative"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-molgen-patient-1"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-molgen-encounter-1"
+        },
+        "effectiveDateTime": "2022-04-07",
+        "issued": "2022-04-12T10:30:00+02:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "LA14122-8",
+              "system": "http://loinc.org",
+              "display": "Stable"
+            }
+          ]
+        },
+        "specimen": {
+          "reference": "Specimen/mii-exa-test-data-patient-3-specimen-1"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Task/mii-exa-test-data-patient-3-molgen-medikationsempfehlung-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Task/mii-exa-test-data-patient-3-molgen-medikationsempfehlung-1",
+      "resource": {
+        "resourceType": "Task",
+        "id": "mii-exa-test-data-patient-3-molgen-medikationsempfehlung-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/medikationsempfehlung",
+            "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/medication-recommendation"
+          ]
+        },
+        "basedOn": [
+          {
+            "reference": "ServiceRequest/mii-exa-test-data-patient-3-molgen-anforderung-1"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "LA26421-0",
+              "system": "http://loinc.org",
+              "display": "Consider alternative medication"
+            }
+          ],
+          "text": "Alternative Medikation in Erwaegung ziehen"
+        },
+        "status": "requested",
+        "intent": "proposal",
+        "for": {
+          "reference": "Patient/mii-exa-test-data-molgen-patient-1"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-molgen-encounter-1"
+        },
+        "reasonReference": {
+          "reference": "Observation/mii-exa-test-data-patient-3-molgen-therapeutische-implikation-1"
+        },
+        "reasonCode": {
+          "coding": [
+            {
+              "code": "447886005",
+              "system": "http://snomed.info/sct",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+              "display": "Adenocarcinoma of anorectum (disorder)"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Task/mii-exa-test-data-patient-3-molgen-folgemassnahme-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Task/mii-exa-test-data-patient-3-molgen-folgemassnahme-1",
+      "resource": {
+        "resourceType": "Task",
+        "id": "mii-exa-test-data-patient-3-molgen-folgemassnahme-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/empfohlene-folgemassnahme",
+            "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/followup-recommendation"
+          ]
+        },
+        "basedOn": [
+          {
+            "reference": "ServiceRequest/mii-exa-test-data-patient-3-molgen-anforderung-1"
+          }
+        ],
+        "status": "requested",
+        "intent": "proposal",
+        "code": {
+          "coding": [
+            {
+              "code": "LA14020-4",
+              "system": "http://loinc.org",
+              "display": "Genetic counseling recommended"
+            }
+          ]
+        },
+        "description": "Genetische Beratung empfohlen mit Dr. Rosalind Franklin",
+        "for": {
+          "reference": "Patient/mii-exa-test-data-molgen-patient-1"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-molgen-encounter-1"
+        },
+        "reasonReference": {
+          "reference": "Observation/mii-exa-test-data-patient-3-molgen-therapeutische-implikation-1"
+        },
+        "reasonCode": {
+          "coding": [
+            {
+              "code": "447886005",
+              "system": "http://snomed.info/sct",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+              "display": "Adenocarcinoma of anorectum (disorder)"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "FamilyMemberHistory/mii-exa-test-data-patient-3-molgen-family-member-history-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/FamilyMemberHistory/mii-exa-test-data-patient-3-molgen-family-member-history-1",
+      "resource": {
+        "resourceType": "FamilyMemberHistory",
+        "id": "mii-exa-test-data-patient-3-molgen-family-member-history-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/familienanamnese"
+          ]
+        },
+        "relationship": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "72705000",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+              "display": "Mother (person)"
+            },
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+              "code": "MTH",
+              "display": "mother"
+            }
+          ]
+        },
+        "sex": {
+          "coding": [
+            {
+              "code": "female",
+              "system": "http://hl7.org/fhir/administrative-gender"
+            },
+            {
+              "code": "248152002",
+              "system": "http://snomed.info/sct",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+              "display": "Female (finding)"
+            }
+          ]
+        },
+        "reasonCode": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "447886005",
+                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+                "display": "Adenocarcinoma of anorectum (disorder)"
+              },
+              {
+                "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+                "version": "2022",
+                "code": "C21.8",
+                "display": "Bösartige Neubildung: Rektum, Anus und Analkanal, mehrere Teilbereiche überlappend"
+              }
+            ]
+          }
+        ],
+        "reasonReference": [
+          {
+            "reference": "Condition/mii-exa-test-data-patient-3-diagnose-1"
+          }
+        ],
+        "condition": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "830150003",
+                  "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+                  "display": "Malignant melanoma with B-Raf proto-oncogene, serine/threonine kinase V600E mutation (disorder)"
+                },
+                {
+                  "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+                  "version": "2022",
+                  "code": "C43.9",
+                  "display": "Bösartiges Melanom der Haut, nicht näher bezeichnet"
+                }
+              ]
+            },
+            "contributedToDeath": true
+          }
+        ],
+        "status": "completed",
+        "patient": {
+          "reference": "Patient/mii-exa-test-data-molgen-patient-1"
+        },
+        "date": "2022-04-07",
+        "deceasedBoolean": true
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "RiskAssessment/mii-exa-test-data-patient-3-molgen-polygener-risiko-score-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/RiskAssessment/mii-exa-test-data-patient-3-molgen-polygener-risiko-score-1",
+      "resource": {
+        "resourceType": "RiskAssessment",
+        "id": "mii-exa-test-data-patient-3-molgen-polygener-risiko-score-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/polygener-risiko-score"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://www.charite.de/fhir/sid/risiko-bewertungen",
+            "value": "PRS-CRC-2022-0407-001"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "721961004",
+              "system": "http://snomed.info/sct",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+              "display": "Risk assessment score (observable entity)"
+            }
+          ],
+          "text": "Polygener Risiko Score (PRS)"
+        },
+        "basis": [
+          {
+            "reference": "Observation/mii-exa-test-data-patient-3-molgen-variante-1"
+          }
+        ],
+        "prediction": [
+          {
+            "outcome": {
+              "coding": [
+                {
+                  "code": "363510005",
+                  "system": "http://snomed.info/sct",
+                  "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+                  "display": "Malignant tumor of large intestine (disorder)"
+                }
+              ],
+              "text": "Kolorektales Karzinom"
+            },
+            "whenRange": {
+              "low": {
+                "value": 50,
+                "code": "a",
+                "system": "http://unitsofmeasure.org",
+                "unit": "years"
+              },
+              "high": {
+                "value": 80,
+                "code": "a",
+                "system": "http://unitsofmeasure.org",
+                "unit": "years"
+              }
+            },
+            "probabilityDecimal": 0.32,
+            "qualitativeRisk": {
+              "coding": [
+                {
+                  "code": "high",
+                  "system": "http://terminology.hl7.org/CodeSystem/risk-probability",
+                  "display": "High likelihood"
+                }
+              ]
+            },
+            "relativeRisk": 2.8
+          }
+        ],
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-molgen-patient-1"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-molgen-encounter-1"
+        },
+        "occurrenceDateTime": "2022-04-07",
+        "condition": {
+          "reference": "Condition/mii-exa-test-data-patient-3-diagnose-1"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-patient-3-molgen-biomarker-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-3-molgen-biomarker-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-3-molgen-biomarker-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/mii-pr-molgen-molekularer-biomarker",
+            "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/molecular-biomarker"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs",
+                "code": "biomarker-category"
+              }
+            ]
+          }
+        ],
+        "component": [
+          {
+            "valueCodeableConcept": {
+              "text": "PD-L1 Tumor Proportion Score"
+            },
+            "code": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs",
+                  "code": "biomarker-category"
+                }
+              ]
+            }
+          }
+        ],
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "85147-0",
+              "system": "http://loinc.org",
+              "display": "PD-L1 by clone 22C3 [Interpretation] in Tissue by Immune stain"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-molgen-patient-1"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-molgen-encounter-1"
+        },
+        "effectiveDateTime": "2022-04-07",
+        "issued": "2022-04-12T11:00:00+02:00",
+        "valueQuantity": {
+          "value": 60,
+          "code": "%",
+          "system": "http://unitsofmeasure.org",
+          "unit": "percent"
+        },
+        "specimen": {
+          "reference": "Specimen/mii-exa-test-data-patient-3-specimen-1"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "ServiceRequest/mii-exa-test-data-patient-4-molgen-anforderung-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/ServiceRequest/mii-exa-test-data-patient-4-molgen-anforderung-1",
+      "resource": {
+        "resourceType": "ServiceRequest",
+        "id": "mii-exa-test-data-patient-4-molgen-anforderung-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/anforderung-genetischer-test"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://www.charite.de/fhir/auftragsnummern",
+            "value": "7B369EB0"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "108252007",
+                "system": "http://snomed.info/sct",
+                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+                "display": "Laboratory procedure (procedure)"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "405825005",
+              "system": "http://snomed.info/sct",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+              "display": "Molecular genetic test (procedure)"
+            }
+          ],
+          "text": "Molekulargenetische Untersuchung (Stufendiagnostik) der relevanten Gene"
+        },
+        "specimen": [
+          {
+            "reference": "Specimen/mii-exa-test-data-patient-4-specimen-1"
+          }
+        ],
+        "reasonCode": [
+          {
+            "coding": [
+              {
+                "code": "87737001",
+                "system": "http://snomed.info/sct",
+                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+                "display": "Signet ring cell carcinoma (morphologic abnormality)"
+              }
+            ],
+            "text": "Eigenanamnese: Siegelringkarzinom des Magens, diffus wachsend"
+          },
+          {
+            "coding": [
+              {
+                "code": "429740004",
+                "system": "http://snomed.info/sct",
+                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+                "display": "Family history of malignant neoplasm of breast (situation)"
+              }
+            ],
+            "text": "Mutter an Brustkrebs verstorben"
+          }
+        ],
+        "reasonReference": [
+          {
+            "reference": "Condition/mii-exa-test-data-patient-4-diagnose-1"
+          }
+        ],
+        "supportingInfo": [
+          {
+            "reference": "FamilyMemberHistory/mii-exa-test-data-patient-4-molgen-family-member-history-1"
+          }
+        ],
+        "status": "active",
+        "intent": "order",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-molgen-patient-2"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-molgen-encounter-2"
+        },
+        "authoredOn": "2022-11-30",
+        "requester": {
+          "reference": "Practitioner/mii-exa-test-data-practitioner-physician-2"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "DiagnosticReport/mii-exa-test-data-patient-4-molgen-befundbericht-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/DiagnosticReport/mii-exa-test-data-patient-4-molgen-befundbericht-1",
+      "resource": {
+        "resourceType": "DiagnosticReport",
+        "id": "mii-exa-test-data-patient-4-molgen-befundbericht-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/molekulargenetischer-befundbericht",
+            "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-report"
+          ]
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo",
+            "valueReference": {
+              "reference": "FamilyMemberHistory/mii-exa-test-data-patient-4-molgen-family-member-history-1"
+            }
+          },
+          {
+            "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-reference",
+            "valueReference": {
+              "reference": "Procedure/mii-exa-test-data-patient-4-molgen-genomic-study-1"
+            }
+          }
+        ],
+        "basedOn": [
+          {
+            "reference": "ServiceRequest/mii-exa-test-data-patient-4-molgen-anforderung-1"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                "code": "GE",
+                "display": "Genetics"
+              }
+            ]
+          }
+        ],
+        "performer": [
+          {
+            "reference": "Practitioner/mii-exa-test-data-practitioner-physician-2"
+          }
+        ],
+        "resultsInterpreter": [
+          {
+            "reference": "Practitioner/mii-exa-test-data-practitioner-physician-2"
+          }
+        ],
+        "specimen": [
+          {
+            "reference": "Specimen/mii-exa-test-data-patient-4-specimen-1"
+          },
+          {
+            "reference": "Specimen/mii-exa-test-data-patient-4-specimen-2"
+          }
+        ],
+        "result": [
+          {
+            "reference": "Observation/mii-exa-test-data-patient-4-molgen-diagnostische-implikation-1"
+          },
+          {
+            "reference": "Observation/mii-exa-test-data-patient-4-molgen-variante-1"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "51969-4",
+              "display": "Genetic analysis report"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-molgen-patient-2"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-molgen-encounter-2"
+        },
+        "issued": "2022-12-05T14:00:00+01:00",
+        "conclusion": "Nachweis der pathogenen Variante im CTNNA1-Gen."
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-patient-4-molgen-variante-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-4-molgen-variante-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-4-molgen-variante-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/variante"
+          ]
+        },
+        "basedOn": [
+          {
+            "reference": "ServiceRequest/mii-exa-test-data-patient-4-molgen-anforderung-1"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                "code": "GE"
+              }
+            ]
+          }
+        ],
+        "method": {
+          "coding": [
+            {
+              "code": "LA26398-0",
+              "system": "http://loinc.org",
+              "display": "Sequencing"
+            }
+          ]
+        },
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "48018-6"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "HGNC:2509",
+                  "system": "http://www.genenames.org/geneId",
+                  "display": "CTNNA1"
+                }
+              ]
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "51958-7"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "NM_001903.5",
+                  "system": "http://www.ncbi.nlm.nih.gov/refseq"
+                }
+              ]
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "48004-6"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "NM_001903.5:c.1030del",
+                  "system": "http://varnomen.hgvs.org"
+                }
+              ]
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "81290-9"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "NC_000005.9:g.138163372del",
+                  "system": "http://varnomen.hgvs.org"
+                }
+              ]
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "48013-7"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "NC_000005.9",
+                  "system": "http://www.ncbi.nlm.nih.gov/refseq"
+                }
+              ]
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "48005-3"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "p.(Leu344CysfsTer25)",
+                  "system": "http://varnomen.hgvs.org"
+                }
+              ]
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "53034-5"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "LA6706-1",
+                  "system": "http://loinc.org",
+                  "display": "Heterozygous"
+                }
+              ]
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "48019-4"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "SO:0000159",
+                  "system": "http://sequenceontology.org",
+                  "display": "Deletion"
+                }
+              ]
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "48001-2"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "5q31.2",
+                  "system": "urn:oid:2.16.840.1.113883.6.335"
+                }
+              ]
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "48000-4",
+                  "display": "Chromosome [Identifier] in Blood or Tissue by Molecular genetics method"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "LA21257-8",
+                  "system": "http://loinc.org",
+                  "display": "Chromosome 5"
+                }
+              ]
+            }
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "69548-6",
+              "display": "Genetic variant assessment"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-molgen-patient-2"
+        },
+        "effectiveDateTime": "2022-11-30",
+        "issued": "2022-12-05T14:00:00+01:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "LA9633-4",
+              "system": "http://loinc.org",
+              "display": "Present"
+            }
+          ]
+        },
+        "specimen": {
+          "reference": "Specimen/mii-exa-test-data-patient-4-specimen-1"
+        },
+        "device": {
+          "reference": "Device/mii-exa-test-data-molgen-device-sequencer"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Procedure/mii-exa-test-data-patient-4-molgen-genomic-study-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Procedure/mii-exa-test-data-patient-4-molgen-genomic-study-1",
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "mii-exa-test-data-patient-4-molgen-genomic-study-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/mii-pr-molgen-genomic-study"
+          ]
+        },
+        "reasonReference": [
+          {
+            "reference": "Condition/mii-exa-test-data-patient-4-diagnose-1"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-ext",
+            "valueReference": {
+              "reference": "Procedure/mii-exa-test-data-patient-4-molgen-genomic-study-analysis-1"
+            }
+          }
+        ],
+        "category": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+              "code": "laboratory"
+            }
+          ]
+        },
+        "status": "completed",
+        "code": {
+          "coding": [
+            {
+              "code": "405825005",
+              "system": "http://snomed.info/sct",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+              "display": "Molecular genetic test (procedure)"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-molgen-patient-2"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-molgen-encounter-2"
+        },
+        "performedDateTime": "2022-11-30"
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Procedure/mii-exa-test-data-patient-4-molgen-genomic-study-analysis-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Procedure/mii-exa-test-data-patient-4-molgen-genomic-study-analysis-1",
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "mii-exa-test-data-patient-4-molgen-genomic-study-analysis-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/mii-pr-molgen-genomic-study-analysis"
+          ]
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-title",
+            "valueString": "Stufendiagnostik hereditaeres Magenkarzinom"
+          },
+          {
+            "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-method-type",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "LA26398-0",
+                  "system": "http://loinc.org",
+                  "display": "Sequencing"
+                }
+              ]
+            }
+          },
+          {
+            "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-genome-build",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "LA26806-2",
+                  "system": "http://loinc.org",
+                  "display": "GRCh38"
+                }
+              ]
+            }
+          },
+          {
+            "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-specimen",
+            "valueReference": {
+              "reference": "Specimen/mii-exa-test-data-patient-4-specimen-1"
+            }
+          },
+          {
+            "extension": [
+              {
+                "url": "device",
+                "valueReference": {
+                  "reference": "Device/mii-exa-test-data-molgen-device-sequencer"
+                }
+              }
+            ],
+            "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-device"
+          },
+          {
+            "extension": [
+              {
+                "url": "description",
+                "valueString": "Direkte Sequenzierung der codierenden Exons inkl. flankierender intronischer Bereiche"
+              },
+              {
+                "url": "studied",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "code": "HGNC:583",
+                      "system": "http://www.genenames.org/geneId",
+                      "display": "APC"
+                    }
+                  ]
+                }
+              },
+              {
+                "url": "studied",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "code": "HGNC:795",
+                      "system": "http://www.genenames.org/geneId",
+                      "display": "ATM"
+                    }
+                  ]
+                }
+              },
+              {
+                "url": "studied",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "code": "HGNC:1100",
+                      "system": "http://www.genenames.org/geneId",
+                      "display": "BRCA1"
+                    }
+                  ]
+                }
+              },
+              {
+                "url": "studied",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "code": "HGNC:1101",
+                      "system": "http://www.genenames.org/geneId",
+                      "display": "BRCA2"
+                    }
+                  ]
+                }
+              },
+              {
+                "url": "studied",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "code": "HGNC:1748",
+                      "system": "http://www.genenames.org/geneId",
+                      "display": "CDH1"
+                    }
+                  ]
+                }
+              },
+              {
+                "url": "studied",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "code": "HGNC:2509",
+                      "system": "http://www.genenames.org/geneId",
+                      "display": "CTNNA1"
+                    }
+                  ]
+                }
+              },
+              {
+                "url": "studied",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "code": "HGNC:7127",
+                      "system": "http://www.genenames.org/geneId",
+                      "display": "MLH1"
+                    }
+                  ]
+                }
+              },
+              {
+                "url": "studied",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "code": "HGNC:7325",
+                      "system": "http://www.genenames.org/geneId",
+                      "display": "MSH2"
+                    }
+                  ]
+                }
+              },
+              {
+                "url": "studied",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "code": "HGNC:7329",
+                      "system": "http://www.genenames.org/geneId",
+                      "display": "MSH6"
+                    }
+                  ]
+                }
+              },
+              {
+                "url": "studied",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "code": "HGNC:11998",
+                      "system": "http://www.genenames.org/geneId",
+                      "display": "TP53"
+                    }
+                  ]
+                }
+              }
+            ],
+            "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-regions"
+          }
+        ],
+        "status": "completed",
+        "category": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+              "code": "laboratory"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-molgen-patient-2"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-patient-4-molgen-molekulare-konsequenz-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-4-molgen-molekulare-konsequenz-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-4-molgen-molekulare-konsequenz-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/mii-pr-molgen-molekulare-konsequenz",
+            "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/molecular-consequence"
+          ]
+        },
+        "extension": [
+          {
+            "valueRelatedArtifact": {
+              "type": "citation",
+              "citation": "Richards et al., Genet Med. 2015; 17:405-24",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/25741868/"
+            },
+            "url": "http://hl7.org/fhir/StructureDefinition/workflow-relatedArtifact"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                "code": "GE"
+              }
+            ]
+          }
+        ],
+        "derivedFrom": [
+          {
+            "reference": "Observation/mii-exa-test-data-patient-4-molgen-variante-1"
+          }
+        ],
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs",
+                  "code": "conclusion-string"
+                }
+              ]
+            },
+            "valueString": "Frameshift-Deletion fuehrt zu vorzeitigem Stopp-Codon und Verlust des alpha-E-Catenin-Proteins."
+          },
+          {
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "SO:0002054",
+                  "system": "http://sequenceontology.org",
+                  "display": "loss_of_function_variant"
+                }
+              ],
+              "text": "Funktionsverlust des alpha-E-Catenin-Proteins"
+            },
+            "code": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs",
+                  "code": "functional-effect"
+                }
+              ]
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "53037-8"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "LA6668-3",
+                  "system": "http://loinc.org",
+                  "display": "Pathogenic"
+                }
+              ]
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "93044-6"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "LA30200-2",
+                  "system": "http://loinc.org",
+                  "display": "Very strong evidence pathogenic"
+                }
+              ]
+            }
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs",
+              "code": "molecular-consequence",
+              "display": "Molecular Consequence"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-molgen-patient-2"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-molgen-encounter-2"
+        },
+        "effectiveDateTime": "2022-11-30",
+        "issued": "2022-12-05T14:00:00+01:00"
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-patient-4-molgen-diagnostische-implikation-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-4-molgen-diagnostische-implikation-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-4-molgen-diagnostische-implikation-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/diagnostische-implikation"
+          ]
+        },
+        "extension": [
+          {
+            "valueRelatedArtifact": {
+              "type": "citation",
+              "citation": "ClinGen",
+              "url": "https://search.clinicalgenome.org/kb/gene-dosage/HGNC:2509"
+            },
+            "url": "http://hl7.org/fhir/StructureDefinition/workflow-relatedArtifact"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                "code": "GE"
+              }
+            ]
+          }
+        ],
+        "performer": [
+          {
+            "reference": "Practitioner/mii-exa-test-data-practitioner-physician-2"
+          }
+        ],
+        "derivedFrom": [
+          {
+            "reference": "Observation/mii-exa-test-data-patient-4-molgen-variante-1"
+          }
+        ],
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs",
+                  "code": "conclusion-string"
+                }
+              ]
+            },
+            "valueString": "Diese Variante wird nach den ACMG/AMP-Kriterien zusammenfassend als pathogen bewertet entsprechend IARC Class 5."
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "53037-8"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "LA6668-3",
+                  "system": "http://loinc.org",
+                  "display": "Pathogenic"
+                }
+              ]
+            }
+          },
+          {
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "716859000",
+                  "system": "http://snomed.info/sct",
+                  "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+                  "display": "Hereditary diffuse carcinoma of stomach (disorder)"
+                }
+              ]
+            },
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "81259-4"
+                }
+              ]
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "93044-6",
+                  "display": "Level of evidence"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "LA30200-2",
+                  "system": "http://loinc.org",
+                  "display": "Very strong evidence pathogenic"
+                }
+              ]
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs",
+                  "code": "condition-inheritance"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "HP:0000006",
+                  "system": "http://human-phenotype-ontology.org",
+                  "display": "Autosomal dominant inheritance"
+                }
+              ]
+            }
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs",
+              "code": "diagnostic-implication",
+              "display": "Diagnostic Implication"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-molgen-patient-2"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-molgen-encounter-2"
+        },
+        "effectiveDateTime": "2022-11-30",
+        "issued": "2022-12-05T14:00:00+01:00"
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "FamilyMemberHistory/mii-exa-test-data-patient-4-molgen-family-member-history-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/FamilyMemberHistory/mii-exa-test-data-patient-4-molgen-family-member-history-1",
+      "resource": {
+        "resourceType": "FamilyMemberHistory",
+        "id": "mii-exa-test-data-patient-4-molgen-family-member-history-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/familienanamnese"
+          ]
+        },
+        "relationship": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "72705000",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+              "display": "Mother (person)"
+            },
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+              "code": "MTH",
+              "display": "mother"
+            }
+          ]
+        },
+        "sex": {
+          "coding": [
+            {
+              "code": "female",
+              "system": "http://hl7.org/fhir/administrative-gender"
+            },
+            {
+              "code": "248152002",
+              "system": "http://snomed.info/sct",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+              "display": "Female (finding)"
+            }
+          ]
+        },
+        "reasonCode": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "443961001",
+                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+                "display": "Malignant adenomatous neoplasm (disorder)"
+              },
+              {
+                "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+                "version": "2022",
+                "code": "C16.9",
+                "display": "Bösartige Neubildung: Magen, nicht näher bezeichnet"
+              }
+            ]
+          }
+        ],
+        "condition": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "254837009",
+                  "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+                  "display": "Malignant neoplasm of breast (disorder)"
+                },
+                {
+                  "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+                  "version": "2022",
+                  "code": "C50.9",
+                  "display": "Bösartige Neubildung: Brustdrüse, nicht näher bezeichnet"
+                }
+              ]
+            },
+            "contributedToDeath": true
+          }
+        ],
+        "status": "completed",
+        "patient": {
+          "reference": "Patient/mii-exa-test-data-molgen-patient-2"
+        },
+        "date": "2022-11-30",
+        "deceasedBoolean": true
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "ServiceRequest/mii-exa-test-data-patient-3-molgen-anforderung-2"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/ServiceRequest/mii-exa-test-data-patient-3-molgen-anforderung-2",
+      "resource": {
+        "resourceType": "ServiceRequest",
+        "id": "mii-exa-test-data-patient-3-molgen-anforderung-2",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/anforderung-genetischer-test"
+          ]
+        },
+        "extension": [
+          {
+            "valueRelatedArtifact": {
+              "type": "citation",
+              "citation": "S3-Leitlinie Lungenkarzinom, Version 4.0 (April 2025), Empfehlung 6.60, AWMF 020-007OL",
+              "url": "https://register.awmf.org/de/leitlinien/detail/020-007OL"
+            },
+            "url": "http://hl7.org/fhir/StructureDefinition/workflow-relatedArtifact"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "108252007",
+                "system": "http://snomed.info/sct",
+                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+                "display": "Laboratory procedure (procedure)"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "405825005",
+              "system": "http://snomed.info/sct",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+              "display": "Molecular genetic test (procedure)"
+            }
+          ],
+          "text": "NGS-Panel NSCLC: EGFR Exon 18-21, BRAF V600, ALK, ROS1, RET, NTRK 1-3, KRAS G12C, MET Exon 14, NRG1, HER2 Exon 8/18-21"
+        },
+        "reasonCode": [
+          {
+            "coding": [
+              {
+                "code": "254637007",
+                "system": "http://snomed.info/sct",
+                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+                "display": "Non-small cell carcinoma of lung (disorder)"
+              }
+            ]
+          }
+        ],
+        "specimen": [
+          {
+            "reference": "Specimen/mii-exa-test-data-patient-3-specimen-1"
+          }
+        ],
+        "note": [
+          {
+            "text": "NSCLC Stadium IV. Molekularpathologische Untersuchung gemaess S3-Leitlinie Empfehlung 6.60 vor Einleitung der Erstlinientherapie."
+          }
+        ],
+        "status": "active",
+        "intent": "order",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-molgen-patient-1"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-molgen-encounter-1"
+        },
+        "authoredOn": "2024-03-15",
+        "requester": {
+          "reference": "Practitioner/mii-exa-test-data-practitioner-physician-1"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-patient-3-molgen-variante-2"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-3-molgen-variante-2",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-3-molgen-variante-2",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/variante",
+            "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/variant"
+          ]
+        },
+        "basedOn": [
+          {
+            "reference": "ServiceRequest/mii-exa-test-data-patient-3-molgen-anforderung-2"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                "code": "GE"
+              }
+            ]
+          }
+        ],
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "48018-6",
+                  "display": "Gene studied [ID]"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "HGNC:3236",
+                  "system": "http://www.genenames.org/geneId",
+                  "display": "EGFR"
+                }
+              ]
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "48013-7",
+                  "display": "Genomic reference sequence [ID]"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "NM_005228.5",
+                  "system": "http://www.ncbi.nlm.nih.gov/refseq"
+                }
+              ]
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "47999-8",
+                  "display": "DNA region name [Identifier]"
+                }
+              ]
+            },
+            "valueString": "Exon 21"
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "48004-6",
+                  "display": "DNA change (c.HGVS)"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "NM_005228.5:c.2573T>G",
+                  "system": "http://varnomen.hgvs.org"
+                }
+              ]
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "48005-3",
+                  "display": "Amino acid change (pHGVS)"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "p.(Leu858Arg)",
+                  "system": "http://varnomen.hgvs.org"
+                }
+              ]
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "81258-6",
+                  "display": "Sample variant allelic frequency [NFr]"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 42.3,
+              "code": "%",
+              "system": "http://unitsofmeasure.org"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "48001-2",
+                  "display": "Cytogenetic (chromosome) location"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "7p11.2",
+                  "system": "urn:oid:2.16.840.1.113883.6.335"
+                }
+              ]
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "48019-4",
+                  "display": "DNA change type"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "SO:1000008",
+                  "system": "http://sequenceontology.org",
+                  "display": "point_mutation"
+                }
+              ]
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "81252-9",
+                  "display": "Discrete genetic variant"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "rs121434568",
+                  "system": "http://www.ncbi.nlm.nih.gov/projects/SNP"
+                }
+              ]
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "62374-4",
+                  "display": "Human reference sequence assembly version"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "LA26806-2",
+                  "system": "http://loinc.org",
+                  "display": "GRCh38"
+                }
+              ]
+            }
+          },
+          {
+            "valueRange": {
+              "low": {
+                "value": 55191822
+              },
+              "high": {
+                "value": 55191822
+              }
+            },
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "81254-5",
+                  "display": "Genomic allele start-end"
+                }
+              ]
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "69547-8",
+                  "display": "Genomic ref allele [ID]"
+                }
+              ]
+            },
+            "valueString": "T"
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "69551-0",
+                  "display": "Genomic alt allele [ID]"
+                }
+              ]
+            },
+            "valueString": "G"
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "48002-0",
+                  "display": "Genomic source class [Type]"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "LA6684-0",
+                  "system": "http://loinc.org",
+                  "display": "Somatic"
+                }
+              ]
+            }
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "69548-6",
+              "display": "Genetic variant assessment"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-molgen-patient-1"
+        },
+        "effectiveDateTime": "2024-03-20",
+        "issued": "2024-03-25T10:00:00+01:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "LA9633-4",
+              "system": "http://loinc.org",
+              "display": "Present"
+            }
+          ]
+        },
+        "method": {
+          "coding": [
+            {
+              "code": "LA26398-0",
+              "system": "http://loinc.org",
+              "display": "Sequencing"
+            }
+          ]
+        },
+        "specimen": {
+          "reference": "Specimen/mii-exa-test-data-patient-3-specimen-1"
+        },
+        "device": {
+          "reference": "Device/mii-exa-test-data-molgen-device-sequencer"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-patient-3-molgen-therapeutische-implikation-2"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-3-molgen-therapeutische-implikation-2",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-3-molgen-therapeutische-implikation-2",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/therapeutische-implikation",
+            "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/therapeutic-implication"
+          ]
+        },
+        "extension": [
+          {
+            "valueRelatedArtifact": {
+              "type": "citation",
+              "citation": "Ramalingam SS et al. Overall Survival with Osimertinib in Untreated, EGFR-Mutated Advanced NSCLC. N Engl J Med. 2020;382(1):41-50. PMID 31751012",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/31751012/"
+            },
+            "url": "http://hl7.org/fhir/StructureDefinition/workflow-relatedArtifact"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                "code": "GE"
+              }
+            ]
+          }
+        ],
+        "derivedFrom": [
+          {
+            "reference": "Observation/mii-exa-test-data-patient-3-molgen-variante-2"
+          }
+        ],
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs",
+                  "code": "conclusion-string"
+                }
+              ]
+            },
+            "valueString": "Nachweis einer aktivierenden EGFR-Punktmutation p.(Leu858Arg) in Exon 21 (L858R). Osimertinib (Tagrisso) als Erstlinientherapie empfohlen gemaess FLAURA-Studie und aktueller Zulassung."
+          },
+          {
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "L01EB04",
+                  "system": "http://fhir.de/CodeSystem/bfarm/atc",
+                  "display": "Osimertinib"
+                }
+              ],
+              "text": "Osimertinib (Tagrisso)"
+            },
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "51963-7",
+                  "display": "Medication assessed [ID]"
+                }
+              ]
+            }
+          },
+          {
+            "valueCodeableConcept": {
+              "text": "Tier I - Level A (EMA/FDA-zugelassen, FLAURA)"
+            },
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "93044-6",
+                  "display": "Level of evidence"
+                }
+              ]
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "81259-4"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "254637007",
+                  "system": "http://snomed.info/sct",
+                  "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+                  "display": "Non-small cell carcinoma of lung (disorder)"
+                }
+              ]
+            }
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs",
+              "code": "therapeutic-implication",
+              "display": "Therapeutic Implication"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-molgen-patient-1"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-molgen-encounter-1"
+        },
+        "effectiveDateTime": "2024-03-20",
+        "issued": "2024-03-25T10:00:00+01:00"
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-patient-3-molgen-variante-3"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-3-molgen-variante-3",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-3-molgen-variante-3",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/variante",
+            "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/variant"
+          ]
+        },
+        "basedOn": [
+          {
+            "reference": "ServiceRequest/mii-exa-test-data-patient-3-molgen-anforderung-2"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                "code": "GE"
+              }
+            ]
+          }
+        ],
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "48018-6",
+                  "display": "Gene studied [ID]"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "HGNC:3236",
+                  "system": "http://www.genenames.org/geneId",
+                  "display": "EGFR"
+                }
+              ]
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "48013-7",
+                  "display": "Genomic reference sequence [ID]"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "NM_005228.5",
+                  "system": "http://www.ncbi.nlm.nih.gov/refseq"
+                }
+              ]
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "47999-8",
+                  "display": "DNA region name [Identifier]"
+                }
+              ]
+            },
+            "valueString": "Exon 20"
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "48004-6",
+                  "display": "DNA change (c.HGVS)"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "NM_005228.5:c.2300_2308dup",
+                  "system": "http://varnomen.hgvs.org"
+                }
+              ]
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "48005-3",
+                  "display": "Amino acid change (pHGVS)"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "p.(Ala767_Val769dup)",
+                  "system": "http://varnomen.hgvs.org"
+                }
+              ]
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "81258-6",
+                  "display": "Sample variant allelic frequency [NFr]"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 18.7,
+              "code": "%",
+              "system": "http://unitsofmeasure.org"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "48001-2",
+                  "display": "Cytogenetic (chromosome) location"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "7p11.2",
+                  "system": "urn:oid:2.16.840.1.113883.6.335"
+                }
+              ]
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "48019-4",
+                  "display": "DNA change type"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "SO:1000035",
+                  "system": "http://sequenceontology.org",
+                  "display": "duplication"
+                }
+              ]
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "62374-4",
+                  "display": "Human reference sequence assembly version"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "LA26806-2",
+                  "system": "http://loinc.org",
+                  "display": "GRCh38"
+                }
+              ]
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "48002-0",
+                  "display": "Genomic source class [Type]"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "LA6684-0",
+                  "system": "http://loinc.org",
+                  "display": "Somatic"
+                }
+              ]
+            }
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "69548-6",
+              "display": "Genetic variant assessment"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-molgen-patient-1"
+        },
+        "effectiveDateTime": "2024-03-20",
+        "issued": "2024-03-25T10:00:00+01:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "LA9633-4",
+              "system": "http://loinc.org",
+              "display": "Present"
+            }
+          ]
+        },
+        "method": {
+          "coding": [
+            {
+              "code": "LA26398-0",
+              "system": "http://loinc.org",
+              "display": "Sequencing"
+            }
+          ]
+        },
+        "specimen": {
+          "reference": "Specimen/mii-exa-test-data-patient-3-specimen-1"
+        },
+        "device": {
+          "reference": "Device/mii-exa-test-data-molgen-device-sequencer"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-patient-3-molgen-therapeutische-implikation-3"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-3-molgen-therapeutische-implikation-3",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-3-molgen-therapeutische-implikation-3",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/therapeutische-implikation",
+            "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/therapeutic-implication"
+          ]
+        },
+        "extension": [
+          {
+            "valueRelatedArtifact": {
+              "type": "citation",
+              "citation": "Park K et al. Amivantamab in EGFR Exon 20 Insertion-Mutated Non-Small-Cell Lung Cancer Progressing on Platinum Chemotherapy (CHRYSALIS). J Clin Oncol. 2021;39(30):3391-3402. PMID 34339292",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/34339292/"
+            },
+            "url": "http://hl7.org/fhir/StructureDefinition/workflow-relatedArtifact"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                "code": "GE"
+              }
+            ]
+          }
+        ],
+        "derivedFrom": [
+          {
+            "reference": "Observation/mii-exa-test-data-patient-3-molgen-variante-3"
+          }
+        ],
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs",
+                  "code": "conclusion-string"
+                }
+              ]
+            },
+            "valueString": "Nachweis einer EGFR-Exon-20-Insertion p.(Ala767_Val769dup). Diese Variante zeigt primaere Resistenz gegenueber gaengigen EGFR-TKIs (inkl. Osimertinib). Amivantamab (Rybrevant) ist EMA-zugelassen nach Versagen platinbasierter Chemotherapie (2L). Einsatz in der Erstlinie (PAPILLON-Schema: Amivantamab + Carboplatin/Pemetrexed) derzeit in Deutschland off-label."
+          },
+          {
+            "valueCodeableConcept": {
+              "text": "Amivantamab (Rybrevant) - EGFR/MET bispezifischer Antikoerper"
+            },
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "51963-7",
+                  "display": "Medication assessed [ID]"
+                }
+              ]
+            }
+          },
+          {
+            "valueCodeableConcept": {
+              "text": "Tier I - Level B (EMA-zugelassen 2L; 1L off-label, PAPILLON-Studie)"
+            },
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "93044-6",
+                  "display": "Level of evidence"
+                }
+              ]
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "81259-4"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "254637007",
+                  "system": "http://snomed.info/sct",
+                  "version": "http://snomed.info/sct/900000000000207008/version/20230731",
+                  "display": "Non-small cell carcinoma of lung (disorder)"
+                }
+              ]
+            }
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs",
+              "code": "therapeutic-implication",
+              "display": "Therapeutic Implication"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-molgen-patient-1"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-molgen-encounter-1"
+        },
+        "effectiveDateTime": "2024-03-20",
+        "issued": "2024-03-25T10:00:00+01:00"
+      }
+    }
+  ],
+  "type": "transaction",
+  "timestamp": "2025-06-18T13:51:00+02:00"
+}
