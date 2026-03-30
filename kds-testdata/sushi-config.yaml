@@ -26,35 +26,35 @@ publisher:
 #
 # https://github.com/medizininformatik-initiative/kerndatensatz-meta/wiki/%C3%9Cbersicht-%C3%BCber-Versionen-der-Kerndatensatz%E2%80%90Module
 dependencies:
-  de.medizininformatikinitiative.kerndatensatz.base: 2026.0.x
-  de.medizininformatikinitiative.kerndatensatz.medikation: 2026.0.x
-  de.medizininformatikinitiative.kerndatensatz.laborbefund: 2026.0.x
-  de.medizininformatikinitiative.kerndatensatz.biobank: 2026.0.x
+  de.medizininformatikinitiative.kerndatensatz.base: 2026.0.0
+  de.medizininformatikinitiative.kerndatensatz.medikation: 2026.0.1
+  de.medizininformatikinitiative.kerndatensatz.laborbefund: 2026.0.1
+  de.medizininformatikinitiative.kerndatensatz.biobank: 2026.0.1
   eu.miabis.r4: 0.2.0
   de.medizininformatikinitiative.kerndatensatz.consent: 2026.0.1-rc-1
-  de.medizininformatikinitiative.kerndatensatz.meta: 2026.0.x
-  de.medizininformatikinitiative.kerndatensatz.icu: 2026.0.x
-  de.medizininformatikinitiative.kerndatensatz.mikrobiologie: 2025.0.x
-  de.medizininformatikinitiative.kerndatensatz.molgen: 2026.0.x
-  de.medizininformatikinitiative.kerndatensatz.patho: 2026.0.x
-  de.medizininformatikinitiative.kerndatensatz.studie: 2026.0.x
-  de.medizininformatikinitiative.kerndatensatz.bildgebung: 2026.0.x
-  de.medizininformatikinitiative.kerndatensatz.dokument: 2026.0.x
-  de.medizininformatikinitiative.kerndatensatz.onkologie: 2026.0.1
+  de.medizininformatikinitiative.kerndatensatz.meta: 2026.0.0
+  de.medizininformatikinitiative.kerndatensatz.icu: 2026.0.2
+  de.medizininformatikinitiative.kerndatensatz.mikrobiologie: 2025.0.1
+  de.medizininformatikinitiative.kerndatensatz.molgen: 2026.0.4
+  de.medizininformatikinitiative.kerndatensatz.patho: 2026.0.1
+  de.medizininformatikinitiative.kerndatensatz.studie: 2026.0.2
+  de.medizininformatikinitiative.kerndatensatz.bildgebung: 2026.0.0
+  de.medizininformatikinitiative.kerndatensatz.dokument: 2026.0.1
+  de.medizininformatikinitiative.kerndatensatz.onkologie: 2026.0.3
   de.medizininformatikinitiative.kerndatensatz.seltene:
-    version: 2026.0.x
+    version: 2026.0.0
     uri: https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.seltene
   de.medizininformatikinitiative.kerndatensatz.mtb:
-    version: 2026.0.x
+    version: 2026.0.1
     uri: https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/ImplementationGuide/mii-ig-mtb-de
   de.medizininformatikinitiative.kerndatensatz.pros:
-    version: 2026.0.x
+    version: 2026.0.1
     uri: https://www.medizininformatik-initiative.de/fhir/ext/modul-dok/ImplementationGuide/mii-ig-pro
   hl7.fhir.uv.genomics-reporting: 3.0.0
   hl7.fhir.uv.sdc: 3.0.0
   hl7.fhir.extensions.r5: 4.0.1
-  de.basisprofil.r4: 1.5.x
-  de.einwilligungsmanagement: 1.0.x
+  de.basisprofil.r4: 1.5.4
+  de.einwilligungsmanagement: 1.0.2
 #   hl7.fhir.us.mcode:
 #     id: mcode
 #     uri: http://hl7.org/fhir/us/mcode/ImplementationGuide/hl7.fhir.us.mcode
