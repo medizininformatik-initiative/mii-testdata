@@ -1957,7 +1957,7 @@
                 {
                   "code": "363510005",
                   "system": "http://snomed.info/sct",
-                  "display": "Malignant tumor of large intestine (disorder)"
+                  "display": "Malignant neoplasm of large intestine"
                 }
               ],
               "text": "Kolorektales Karzinom"
@@ -3297,7 +3297,7 @@
               {
                 "code": "254637007",
                 "system": "http://snomed.info/sct",
-                "display": "Non-small cell carcinoma of lung (disorder)"
+                "display": "Non-small cell lung cancer"
               }
             ]
           }
@@ -3778,7 +3778,7 @@
                 {
                   "code": "254637007",
                   "system": "http://snomed.info/sct",
-                  "display": "Non-small cell carcinoma of lung (disorder)"
+                  "display": "Non-small cell lung cancer"
                 }
               ]
             }
@@ -4187,7 +4187,7 @@
                 {
                   "code": "254637007",
                   "system": "http://snomed.info/sct",
-                  "display": "Non-small cell carcinoma of lung (disorder)"
+                  "display": "Non-small cell lung cancer"
                 }
               ]
             }

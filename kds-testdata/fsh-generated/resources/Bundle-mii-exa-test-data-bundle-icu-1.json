@@ -1231,7 +1231,7 @@
               {
                 "system": "http://snomed.info/sct",
                 "code": "182744004",
-                "display": "Renal dialysis (procedure)"
+                "display": "Extracorporeal circulation procedure"
               }
             ]
           }
@@ -1386,7 +1386,7 @@
               {
                 "system": "http://snomed.info/sct",
                 "code": "182744004",
-                "display": "Renal dialysis (procedure)"
+                "display": "Extracorporeal circulation procedure"
               }
             ]
           }
@@ -1445,7 +1445,7 @@
               {
                 "system": "http://snomed.info/sct",
                 "code": "182744004",
-                "display": "Renal dialysis (procedure)"
+                "display": "Extracorporeal circulation procedure"
               }
             ]
           }
@@ -1504,7 +1504,7 @@
               {
                 "system": "http://snomed.info/sct",
                 "code": "182744004",
-                "display": "Renal dialysis (procedure)"
+                "display": "Extracorporeal circulation procedure"
               }
             ]
           }
@@ -1611,7 +1611,7 @@
               {
                 "system": "http://snomed.info/sct",
                 "code": "182744004",
-                "display": "Renal dialysis (procedure)"
+                "display": "Extracorporeal circulation procedure"
               }
             ]
           }
@@ -1670,7 +1670,7 @@
               {
                 "system": "http://snomed.info/sct",
                 "code": "182744004",
-                "display": "Renal dialysis (procedure)"
+                "display": "Extracorporeal circulation procedure"
               }
             ]
           }
@@ -1729,7 +1729,7 @@
               {
                 "system": "http://snomed.info/sct",
                 "code": "182744004",
-                "display": "Renal dialysis (procedure)"
+                "display": "Extracorporeal circulation procedure"
               }
             ]
           }
@@ -1788,7 +1788,7 @@
               {
                 "system": "http://snomed.info/sct",
                 "code": "182744004",
-                "display": "Renal dialysis (procedure)"
+                "display": "Extracorporeal circulation procedure"
               }
             ]
           }
@@ -4258,7 +4258,7 @@
             {
               "code": "40617009",
               "system": "http://snomed.info/sct",
-              "display": "Artificial respiration (procedure)"
+              "display": "Artificial ventilation"
             }
           ]
         },
@@ -4340,7 +4340,7 @@
             {
               "code": "182744004",
               "system": "http://snomed.info/sct",
-              "display": "Renal dialysis (procedure)"
+              "display": "Extracorporeal circulation procedure"
             }
           ]
         },

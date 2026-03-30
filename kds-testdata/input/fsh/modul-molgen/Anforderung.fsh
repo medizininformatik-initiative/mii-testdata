@@ -63,6 +63,6 @@ Description: "ServiceRequest: Anforderung NGS-Panel bei NSCLC Stadium IV gemaess
 * encounter = Reference(mii-exa-test-data-molgen-encounter-1)
 * authoredOn = "2024-03-15"
 * requester = Reference(mii-exa-test-data-practitioner-physician-1)
-* reasonCode = $sct#254637007 "Non-small cell carcinoma of lung (disorder)"
+* reasonCode = $sct#254637007 "Non-small cell lung cancer"
 * specimen = Reference(mii-exa-test-data-molgen-specimen-1)
 * note.text = "NSCLC Stadium IV. Molekularpathologische Untersuchung gemaess S3-Leitlinie Empfehlung 6.60 vor Einleitung der Erstlinientherapie."

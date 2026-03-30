@@ -18,9 +18,9 @@
       "valueCodeableConcept": {
         "coding": [
           {
-            "code": "399069006",
+            "code": "385645004",
             "system": "http://snomed.info/sct",
-            "display": "Eligible for clinical trial (finding)"
+            "display": "Accepted"
           }
         ],
         "text": "Patient erfuellt Einschlusskriterien der Studie"

@@ -116,9 +116,9 @@
           {
             "coding": [
               {
-                "code": "274897005",
+                "code": "116339002",
                 "system": "http://snomed.info/sct",
-                "display": "Breast finding (finding)"
+                "display": "Breast finding"
               }
             ]
           }
@@ -250,7 +250,7 @@
               {
                 "code": "7771000",
                 "system": "http://snomed.info/sct",
-                "display": "Left (qualifier value)"
+                "display": "Unilateral left"
               }
             ]
           }
@@ -811,7 +811,7 @@
             "laterality": {
               "code": "419161000",
               "system": "http://snomed.info/sct",
-              "display": "Left (qualifier value)"
+              "display": "Unilateral left"
             },
             "started": "2024-07-19T12:03:30+02:00"
           }

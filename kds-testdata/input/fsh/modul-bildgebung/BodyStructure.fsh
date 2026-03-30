@@ -6,5 +6,5 @@ Description: "BodyStructure: Körperstruktur"
 //* meta.profile = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-koerperstruktur"
 * morphology = $sct#12747003 "Microcalcification, calcified structure (morphologic abnormality)"
 * location = $sct#76752008 "Breast structure (body structure)"
-* locationQualifier = $sct#7771000 "Left (qualifier value)"
+* locationQualifier = $sct#7771000 "Unilateral left"
 * patient = Reference(mii-exa-test-data-bildgebung-patient-1)

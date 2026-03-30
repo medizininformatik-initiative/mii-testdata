@@ -202,7 +202,7 @@
       "laterality": {
         "code": "419161000",
         "system": "http://snomed.info/sct",
-        "display": "Left (qualifier value)"
+        "display": "Unilateral left"
       },
       "started": "2024-07-19T12:03:30+02:00"
     }

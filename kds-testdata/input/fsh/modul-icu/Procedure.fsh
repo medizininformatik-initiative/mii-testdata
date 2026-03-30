@@ -25,6 +25,6 @@ Description: "ICU Procedure: MII PR ICU Beatmung"
 * encounter = Reference(mii-exa-test-data-icu-encounter-1)
 * performedPeriod.start = "2024-02-12T08:00:00+01:00"
 * performedPeriod.end = "2024-02-18T16:00:00+01:00"
-* category = $sct#40617009 "Artificial respiration (procedure)"
+* category = $sct#40617009 "Artificial ventilation"
 * code = $sct#243147009 "Controlled ventilation (procedure)"
 
