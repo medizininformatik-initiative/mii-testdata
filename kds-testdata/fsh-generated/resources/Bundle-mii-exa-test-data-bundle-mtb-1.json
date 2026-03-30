@@ -4092,9 +4092,9 @@
         "code": {
           "coding": [
             {
-              "code": "85319-2",
+              "code": "55233-8",
               "system": "http://loinc.org",
-              "display": "Cell-free DNA [Mass/volume] in Serum or Plasma"
+              "display": "Circulating cell-free genomic DNA [Mass/volume] in Plasma"
             }
           ]
         },

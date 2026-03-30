@@ -42,7 +42,7 @@ Usage: #example
 Description: "MTB Vorbefund Lab"
 * insert TestDataLabel
 * status = #final
-* code = http://loinc.org#85319-2 "Cell-free DNA [Mass/volume] in Serum or Plasma"
+* code = http://loinc.org#55233-8 "Circulating cell-free genomic DNA [Mass/volume] in Plasma"
 * subject = Reference(mii-exa-test-data-mtb-patient-1)
 * valueQuantity = 15.2 'ng/mL'
 

@@ -3768,7 +3768,7 @@
             {
               "code": "788-0",
               "system": "http://loinc.org",
-              "display": "Erythrocyte [DistWidth] in Red Blood Cells by Automated count"
+              "display": "Erythrocyte distribution width [Entitic volume] by Automated count"
             }
           ]
         },
