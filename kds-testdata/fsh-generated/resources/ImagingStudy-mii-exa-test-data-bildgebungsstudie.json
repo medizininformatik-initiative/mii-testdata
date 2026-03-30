@@ -211,10 +211,10 @@
   ],
   "status": "available",
   "subject": {
-    "reference": "Patient/mii-exa-test-data-patient-1"
+    "reference": "Patient/mii-exa-test-data-bildgebung-patient-1"
   },
   "encounter": {
-    "reference": "Encounter/mii-exa-test-data-patient-1-encounter-1"
+    "reference": "Encounter/mii-exa-test-data-bildgebung-encounter-1"
   },
   "numberOfSeries": 11,
   "numberOfInstances": 294,

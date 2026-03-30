@@ -81,10 +81,10 @@
   },
   "status": "final",
   "subject": {
-    "reference": "Patient/mii-exa-test-data-patient-4"
+    "reference": "Patient/mii-exa-test-data-molgen-patient-2"
   },
   "encounter": {
-    "reference": "Encounter/mii-exa-test-data-patient-4-encounter-1"
+    "reference": "Encounter/mii-exa-test-data-molgen-encounter-2"
   },
   "issued": "2022-12-05T14:00:00+01:00",
   "conclusion": "Nachweis der pathogenen Variante im CTNNA1-Gen."

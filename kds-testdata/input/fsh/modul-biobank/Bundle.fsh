@@ -11,7 +11,7 @@ Description: "Bundle: Biobank Testdaten"
 * timestamp = "2025-06-18T13:51:00+02:00"
 * insert AddBundleEntry(mii-exa-test-data-biobank-patient-1, Patient)
 // Organization
-* insert AddBundleEntry(mii-exa-test-data-organization-biobank-charite, Organization)
+// * insert AddBundleEntry(mii-exa-test-data-organization-biobank-charite, Organization)
 // Substance
 * insert AddBundleEntry(mii-exa-test-data-patient-1-substance-1, Substance)
 // Specimens Patient-1

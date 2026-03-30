@@ -38,25 +38,25 @@
   "dependsOn": [
     {
       "packageId": "de.medizininformatikinitiative.kerndatensatz.base",
-      "version": "2026.0.x",
+      "version": "2026.0.0",
       "uri": "https://www.medizininformatik-initiative.de/fhir/modul-base/ImplementationGuide/mii-ig-base",
       "id": "de_medizininformatikinitiative_kerndatensatz_base"
     },
     {
       "packageId": "de.medizininformatikinitiative.kerndatensatz.medikation",
-      "version": "2026.0.x",
+      "version": "2026.0.1",
       "uri": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ImplementationGuide/mii-ig-medikation",
       "id": "de_medizininformatikinitiative_kerndatensatz_medikation"
     },
     {
       "packageId": "de.medizininformatikinitiative.kerndatensatz.laborbefund",
-      "version": "2026.0.x",
+      "version": "2026.0.1",
       "uri": "http://fhir.org/packages/de.medizininformatikinitiative.kerndatensatz.laborbefund/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.laborbefund",
       "id": "de_medizininformatikinitiative_kerndatensatz_laborbefund"
     },
     {
       "packageId": "de.medizininformatikinitiative.kerndatensatz.biobank",
-      "version": "2026.0.x",
+      "version": "2026.0.1",
       "uri": "http://fhir.org/packages/de.medizininformatikinitiative.kerndatensatz.biobank/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.biobank",
       "id": "de_medizininformatikinitiative_kerndatensatz_biobank"
     },
@@ -74,74 +74,74 @@
     },
     {
       "packageId": "de.medizininformatikinitiative.kerndatensatz.meta",
-      "version": "2026.0.x",
+      "version": "2026.0.0",
       "uri": "https://www.medizininformatik-initiative.de/fhir/modul-meta/ImplementationGuide/mii-ig-meta",
       "id": "de_medizininformatikinitiative_kerndatensatz_meta"
     },
     {
       "packageId": "de.medizininformatikinitiative.kerndatensatz.icu",
-      "version": "2026.0.x",
+      "version": "2026.0.2",
       "uri": "http://fhir.org/packages/de.medizininformatikinitiative.kerndatensatz.icu/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.icu",
       "id": "de_medizininformatikinitiative_kerndatensatz_icu"
     },
     {
       "packageId": "de.medizininformatikinitiative.kerndatensatz.mikrobiologie",
-      "version": "2025.0.x",
+      "version": "2025.0.1",
       "uri": "http://fhir.org/packages/de.medizininformatikinitiative.kerndatensatz.mikrobiologie/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.mikrobiologie",
       "id": "de_medizininformatikinitiative_kerndatensatz_mikrobiologie"
     },
     {
       "packageId": "de.medizininformatikinitiative.kerndatensatz.molgen",
-      "version": "2026.0.x",
+      "version": "2026.0.4",
       "uri": "http://fhir.org/packages/de.medizininformatikinitiative.kerndatensatz.molgen/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.molgen",
       "id": "de_medizininformatikinitiative_kerndatensatz_molgen"
     },
     {
       "packageId": "de.medizininformatikinitiative.kerndatensatz.patho",
-      "version": "2026.0.x",
+      "version": "2026.0.1",
       "uri": "http://fhir.org/packages/de.medizininformatikinitiative.kerndatensatz.patho/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.patho",
       "id": "de_medizininformatikinitiative_kerndatensatz_patho"
     },
     {
       "packageId": "de.medizininformatikinitiative.kerndatensatz.studie",
-      "version": "2026.0.x",
+      "version": "2026.0.2",
       "uri": "http://fhir.org/packages/de.medizininformatikinitiative.kerndatensatz.studie/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.studie",
       "id": "de_medizininformatikinitiative_kerndatensatz_studie"
     },
     {
       "packageId": "de.medizininformatikinitiative.kerndatensatz.bildgebung",
-      "version": "2026.0.x",
+      "version": "2026.0.0",
       "uri": "http://fhir.org/packages/de.medizininformatikinitiative.kerndatensatz.bildgebung/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.bildgebung",
       "id": "de_medizininformatikinitiative_kerndatensatz_bildgebung"
     },
     {
       "packageId": "de.medizininformatikinitiative.kerndatensatz.dokument",
-      "version": "2026.0.x",
-      "uri": "http://fhir.org/packages/de.medizininformatikinitiative.kerndatensatz.dokument/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.dokument",
+      "version": "2026.0.1",
+      "uri": "https://www.medizininformatik-initiative.de/fhir/ext/modul-dokument/ImplementationGuide/mii-ig-dokument",
       "id": "de_medizininformatikinitiative_kerndatensatz_dokument"
     },
     {
       "packageId": "de.medizininformatikinitiative.kerndatensatz.onkologie",
-      "version": "2026.0.1",
+      "version": "2026.0.3",
       "uri": "http://fhir.org/packages/de.medizininformatikinitiative.kerndatensatz.onkologie/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.onkologie",
       "id": "de_medizininformatikinitiative_kerndatensatz_onkologie"
     },
     {
       "packageId": "de.medizininformatikinitiative.kerndatensatz.seltene",
       "uri": "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.seltene",
-      "version": "2026.0.x",
+      "version": "2026.0.0",
       "id": "de_medizininformatikinitiative_kerndatensatz_seltene"
     },
     {
       "packageId": "de.medizininformatikinitiative.kerndatensatz.mtb",
       "uri": "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/ImplementationGuide/mii-ig-mtb-de",
-      "version": "2026.0.x",
+      "version": "2026.0.1",
       "id": "de_medizininformatikinitiative_kerndatensatz_mtb"
     },
     {
       "packageId": "de.medizininformatikinitiative.kerndatensatz.pros",
       "uri": "https://www.medizininformatik-initiative.de/fhir/ext/modul-dok/ImplementationGuide/mii-ig-pro",
-      "version": "2026.0.x",
+      "version": "2026.0.1",
       "id": "de_medizininformatikinitiative_kerndatensatz_pros"
     },
     {
@@ -158,13 +158,13 @@
     },
     {
       "packageId": "de.basisprofil.r4",
-      "version": "1.5.x",
+      "version": "1.5.4",
       "uri": "http://fhir.org/packages/de.basisprofil.r4/ImplementationGuide/de.basisprofil.r4",
       "id": "de_basisprofil_r4"
     },
     {
       "packageId": "de.einwilligungsmanagement",
-      "version": "1.0.x",
+      "version": "1.0.2",
       "uri": "http://fhir.org/packages/de.einwilligungsmanagement/ImplementationGuide/de.einwilligungsmanagement",
       "id": "de_einwilligungsmanagement"
     }
@@ -397,6 +397,22 @@
       },
       {
         "reference": {
+          "reference": "Encounter/mii-exa-test-data-bildgebung-encounter-1"
+        },
+        "name": "mii-exa-test-data-bildgebung-encounter-1",
+        "description": "Bildgebung Test Encounter",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Patient/mii-exa-test-data-bildgebung-patient-1"
+        },
+        "name": "mii-exa-test-data-bildgebung-patient-1",
+        "description": "Bildgebung Test Patient",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Procedure/mii-exa-test-data-bildgebungsprozedur"
         },
         "name": "mii-exa-test-data-bildgebungsprozedur",
@@ -409,6 +425,78 @@
         },
         "name": "mii-exa-test-data-bildgebungsstudie",
         "description": "ImagingStudy: MagneticResonance",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Patient/mii-exa-test-data-biobank-patient-1"
+        },
+        "name": "mii-exa-test-data-biobank-patient-1",
+        "description": "Biobank Test Patient 1",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Patient/mii-exa-test-data-biobank-patient-2"
+        },
+        "name": "mii-exa-test-data-biobank-patient-2",
+        "description": "Biobank Test Patient 2",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Patient/mii-exa-test-data-biobank-patient-3"
+        },
+        "name": "mii-exa-test-data-biobank-patient-3",
+        "description": "Biobank Test Patient 3",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Patient/mii-exa-test-data-biobank-patient-4"
+        },
+        "name": "mii-exa-test-data-biobank-patient-4",
+        "description": "Biobank Test Patient 4",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Patient/mii-exa-test-data-biobank-patient-5"
+        },
+        "name": "mii-exa-test-data-biobank-patient-5",
+        "description": "Biobank Test Patient 5",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Patient/mii-exa-test-data-biobank-patient-6"
+        },
+        "name": "mii-exa-test-data-biobank-patient-6",
+        "description": "Biobank Test Patient 6",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Patient/mii-exa-test-data-biobank-patient-7"
+        },
+        "name": "mii-exa-test-data-biobank-patient-7",
+        "description": "Biobank Test Patient 7",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Patient/mii-exa-test-data-biobank-patient-8"
+        },
+        "name": "mii-exa-test-data-biobank-patient-8",
+        "description": "Biobank Test Patient 8",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Patient/mii-exa-test-data-biobank-patient-9"
+        },
+        "name": "mii-exa-test-data-biobank-patient-9",
+        "description": "Biobank Test Patient 9",
         "exampleBoolean": true
       },
       {
@@ -613,10 +701,42 @@
       },
       {
         "reference": {
+          "reference": "Encounter/mii-exa-test-data-dokument-encounter-1"
+        },
+        "name": "mii-exa-test-data-dokument-encounter-1",
+        "description": "Dokument Test Encounter",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Patient/mii-exa-test-data-dokument-patient-1"
+        },
+        "name": "mii-exa-test-data-dokument-patient-1",
+        "description": "Dokument Test Patient",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Device/mii-exa-test-data-geraet"
         },
         "name": "mii-exa-test-data-geraet",
         "description": "Device: MRT-Gerät",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Encounter/mii-exa-test-data-icu-encounter-1"
+        },
+        "name": "mii-exa-test-data-icu-encounter-1",
+        "description": "ICU Test Encounter",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Patient/mii-exa-test-data-icu-patient-1"
+        },
+        "name": "mii-exa-test-data-icu-patient-1",
+        "description": "ICU Test Patient",
         "exampleBoolean": true
       },
       {
@@ -857,6 +977,54 @@
         },
         "name": "mii-exa-test-data-molgen-device-sequencer",
         "description": "Device: Sequencer used for BRAF mutation analysis",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Encounter/mii-exa-test-data-molgen-encounter-1"
+        },
+        "name": "mii-exa-test-data-molgen-encounter-1",
+        "description": "Molgen Test Encounter 1",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Encounter/mii-exa-test-data-molgen-encounter-2"
+        },
+        "name": "mii-exa-test-data-molgen-encounter-2",
+        "description": "Molgen Test Encounter 2",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Patient/mii-exa-test-data-molgen-patient-1"
+        },
+        "name": "mii-exa-test-data-molgen-patient-1",
+        "description": "Molgen Test Patient 1 (Erbliche Tumorerkrankung)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Patient/mii-exa-test-data-molgen-patient-2"
+        },
+        "name": "mii-exa-test-data-molgen-patient-2",
+        "description": "Molgen Test Patient 2 (NSCLC)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Encounter/mii-exa-test-data-mtb-encounter-1"
+        },
+        "name": "mii-exa-test-data-mtb-encounter-1",
+        "description": "MTB Test Encounter",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Patient/mii-exa-test-data-mtb-patient-1"
+        },
+        "name": "mii-exa-test-data-mtb-patient-1",
+        "description": "MTB Test Patient",
         "exampleBoolean": true
       },
       {
@@ -1649,6 +1817,22 @@
         },
         "name": "mii-exa-test-data-pat1-pro-p29-sleep-tscore",
         "description": "PRO Observation: PROMIS-29 Sleep Disturbance T-Score for Patient 1",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Encounter/mii-exa-test-data-patho-encounter-1"
+        },
+        "name": "mii-exa-test-data-patho-encounter-1",
+        "description": "Patho Test Encounter",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Patient/mii-exa-test-data-patho-patient-1"
+        },
+        "name": "mii-exa-test-data-patho-patient-1",
+        "description": "Patho Test Patient",
         "exampleBoolean": true
       },
       {
@@ -4692,6 +4876,22 @@
       },
       {
         "reference": {
+          "reference": "Encounter/mii-exa-test-data-pro-encounter-1"
+        },
+        "name": "mii-exa-test-data-pro-encounter-1",
+        "description": "PRO Test Encounter",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Patient/mii-exa-test-data-pro-patient-1"
+        },
+        "name": "mii-exa-test-data-pro-patient-1",
+        "description": "PRO Test Patient",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Observation/mii-exa-test-data-radiologische-beobachtung"
         },
         "name": "mii-exa-test-data-radiologische-beobachtung",
@@ -4700,10 +4900,42 @@
       },
       {
         "reference": {
+          "reference": "Encounter/mii-exa-test-data-seltene-encounter-1"
+        },
+        "name": "mii-exa-test-data-seltene-encounter-1",
+        "description": "Seltene Erkrankungen Test Encounter",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Patient/mii-exa-test-data-seltene-patient-1"
+        },
+        "name": "mii-exa-test-data-seltene-patient-1",
+        "description": "Seltene Erkrankungen Test Patient",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "ServiceRequest/mii-exa-test-data-studie-einschluss-anfrage-1"
         },
         "name": "mii-exa-test-data-studie-einschluss-anfrage-1",
         "description": "ServiceRequest: Studieneinschluss-Anfrage für Patient-1 in MII-BIOMARKER-2024",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Encounter/mii-exa-test-data-studien-encounter-1"
+        },
+        "name": "mii-exa-test-data-studien-encounter-1",
+        "description": "Studien Test Encounter",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Patient/mii-exa-test-data-studien-patient-1"
+        },
+        "name": "mii-exa-test-data-studien-patient-1",
+        "description": "Studien Test Patient",
         "exampleBoolean": true
       },
       {

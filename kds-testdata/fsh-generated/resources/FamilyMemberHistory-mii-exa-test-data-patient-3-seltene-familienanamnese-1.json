@@ -110,7 +110,7 @@
   },
   "status": "completed",
   "patient": {
-    "reference": "Patient/mii-exa-test-data-patient-3"
+    "reference": "Patient/mii-exa-test-data-seltene-patient-1"
   },
   "sex": {
     "coding": [

@@ -19,10 +19,10 @@
   },
   "status": "completed",
   "subject": {
-    "reference": "Patient/mii-exa-test-data-patient-1"
+    "reference": "Patient/mii-exa-test-data-icu-patient-1"
   },
   "encounter": {
-    "reference": "Encounter/mii-exa-test-data-patient-1-encounter-1"
+    "reference": "Encounter/mii-exa-test-data-icu-encounter-1"
   },
   "category": {
     "coding": [

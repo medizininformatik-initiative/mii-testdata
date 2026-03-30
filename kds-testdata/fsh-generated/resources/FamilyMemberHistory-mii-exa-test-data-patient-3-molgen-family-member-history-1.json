@@ -88,7 +88,7 @@
   ],
   "status": "completed",
   "patient": {
-    "reference": "Patient/mii-exa-test-data-patient-3"
+    "reference": "Patient/mii-exa-test-data-molgen-patient-1"
   },
   "date": "2022-04-07",
   "deceasedBoolean": true

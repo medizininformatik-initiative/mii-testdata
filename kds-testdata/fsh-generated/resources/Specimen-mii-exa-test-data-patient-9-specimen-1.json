@@ -84,6 +84,6 @@
   ],
   "status": "available",
   "subject": {
-    "reference": "Patient/mii-exa-test-data-patient-9"
+    "reference": "Patient/mii-exa-test-data-biobank-patient-9"
   }
 }

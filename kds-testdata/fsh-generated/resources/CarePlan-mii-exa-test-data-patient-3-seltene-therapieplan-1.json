@@ -47,7 +47,7 @@
   "status": "draft",
   "intent": "proposal",
   "subject": {
-    "reference": "Patient/mii-exa-test-data-patient-3"
+    "reference": "Patient/mii-exa-test-data-seltene-patient-1"
   },
   "created": "2025-03-10",
   "description": "Therapieplan fuer Patient mit Marfan-Syndrom: Medikamentoese Therapie mit Losartan, kardiologische Frueherkennung und Studieneinschluss"

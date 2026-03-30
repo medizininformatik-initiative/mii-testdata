@@ -19,10 +19,10 @@
   },
   "status": "completed",
   "subject": {
-    "reference": "Patient/mii-exa-test-data-patient-1"
+    "reference": "Patient/mii-exa-test-data-icu-patient-1"
   },
   "encounter": {
-    "reference": "Encounter/mii-exa-test-data-patient-1-encounter-1"
+    "reference": "Encounter/mii-exa-test-data-icu-encounter-1"
   },
   "category": {
     "coding": [
@@ -30,7 +30,7 @@
         "code": "182744004",
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-        "display": "Renal dialysis (procedure)"
+        "display": "Extracorporeal circulation procedure"
       }
     ]
   },

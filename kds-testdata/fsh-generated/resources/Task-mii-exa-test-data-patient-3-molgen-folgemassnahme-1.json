@@ -32,10 +32,10 @@
   },
   "description": "Genetische Beratung empfohlen mit Dr. Rosalind Franklin",
   "for": {
-    "reference": "Patient/mii-exa-test-data-patient-3"
+    "reference": "Patient/mii-exa-test-data-molgen-patient-1"
   },
   "encounter": {
-    "reference": "Encounter/mii-exa-test-data-patient-3-encounter-1"
+    "reference": "Encounter/mii-exa-test-data-molgen-encounter-1"
   },
   "reasonReference": {
     "reference": "Observation/mii-exa-test-data-patient-3-molgen-therapeutische-implikation-1"

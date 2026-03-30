@@ -16,10 +16,10 @@
         "method": "POST",
         "url": "Patient"
       },
-      "fullUrl": "https://www.medizininformatik-initiative.de/Patient/mii-exa-test-data-patient-3",
+      "fullUrl": "https://www.medizininformatik-initiative.de/Patient/mii-exa-test-data-seltene-patient-1",
       "resource": {
         "resourceType": "Patient",
-        "id": "mii-exa-test-data-patient-3",
+        "id": "mii-exa-test-data-seltene-patient-1",
         "meta": {
           "security": [
             {
@@ -27,110 +27,24 @@
               "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
               "display": "test health data"
             }
-          ],
-          "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient",
-            "http://fhir.de/ConsentManagement/StructureDefinition/Patient"
           ]
         },
         "identifier": [
           {
-            "assigner": {
-              "identifier": {
-                "system": "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier",
-                "value": "Charité"
-              },
-              "display": "Charité - Universitätsmedizin Berlin"
-            },
-            "type": {
-              "coding": [
-                {
-                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
-                  "code": "MR"
-                }
-              ]
-            },
-            "use": "usual",
-            "system": "https://www.medizininformatik-initiative.de/fhir/sid/patienten",
-            "value": "42285243"
-          },
-          {
-            "assigner": {
-              "identifier": {
-                "use": "official",
-                "value": "109519005",
-                "system": "http://fhir.de/sid/arge-ik/iknr"
-              }
-            },
-            "use": "official",
-            "type": {
-              "coding": [
-                {
-                  "code": "KVZ10",
-                  "system": "http://fhir.de/CodeSystem/identifier-type-de-basis"
-                }
-              ]
-            },
-            "system": "http://fhir.de/sid/gkv/kvid-10",
-            "value": "Z234567890"
+            "system": "https://www.charite.de/fhir/sid/patientenidentifikation",
+            "value": "SELT-TEST-001"
           }
         ],
         "name": [
           {
             "given": [
-              "Clara",
-              "Josephine"
+              "Luisa"
             ],
-            "use": "official",
-            "family": "Schumann",
-            "_family": {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/humanname-own-name",
-                  "valueString": "Schumann"
-                }
-              ]
-            }
-          },
-          {
-            "use": "maiden",
-            "family": "Wieck"
+            "family": "Seltenfall"
           }
         ],
-        "address": [
-          {
-            "line": [
-              "Schöneberger Ufer 22"
-            ],
-            "type": "both",
-            "city": "Berlin",
-            "state": "DE-BE",
-            "postalCode": "10785",
-            "country": "DE"
-          },
-          {
-            "line": [
-              "Postfach-252618"
-            ],
-            "_line": [
-              {
-                "extension": [
-                  {
-                    "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox",
-                    "valueString": "Postfach-252618"
-                  }
-                ]
-              }
-            ],
-            "type": "postal",
-            "city": "Berlin",
-            "postalCode": "10178",
-            "country": "DE"
-          }
-        ],
-        "gender": "female",
-        "birthDate": "1968-09-13",
-        "deceasedBoolean": false
+        "birthDate": "1995-02-10",
+        "gender": "female"
       }
     },
     {
@@ -138,10 +52,10 @@
         "method": "POST",
         "url": "Encounter"
       },
-      "fullUrl": "https://www.medizininformatik-initiative.de/Encounter/mii-exa-test-data-patient-3-encounter-1",
+      "fullUrl": "https://www.medizininformatik-initiative.de/Encounter/mii-exa-test-data-seltene-encounter-1",
       "resource": {
         "resourceType": "Encounter",
-        "id": "mii-exa-test-data-patient-3-encounter-1",
+        "id": "mii-exa-test-data-seltene-encounter-1",
         "meta": {
           "security": [
             {
@@ -149,128 +63,20 @@
               "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
               "display": "test health data"
             }
-          ],
-          "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung"
-          ]
-        },
-        "identifier": [
-          {
-            "type": {
-              "coding": [
-                {
-                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
-                  "code": "VN"
-                }
-              ]
-            },
-            "system": "https://www.charite.de/fhir/NamingSystem/Aufnahmenummern",
-            "value": "MII_0000003"
-          }
-        ],
-        "type": [
-          {
-            "coding": [
-              {
-                "system": "http://fhir.de/CodeSystem/Kontaktebene",
-                "code": "einrichtungskontakt"
-              }
-            ]
-          },
-          {
-            "coding": [
-              {
-                "system": "http://fhir.de/CodeSystem/kontaktart-de",
-                "code": "normalstationaer"
-              }
-            ]
-          }
-        ],
-        "serviceType": {
-          "coding": [
-            {
-              "system": "http://fhir.de/CodeSystem/dkgev/Fachabteilungsschluessel",
-              "code": "0100"
-            }
           ]
         },
         "period": {
-          "start": "2022-04-02",
-          "end": "2022-04-22"
-        },
-        "diagnosis": [
-          {
-            "use": {
-              "coding": [
-                {
-                  "code": "referral-diagnosis",
-                  "system": "http://fhir.de/CodeSystem/KontaktDiagnoseProzedur",
-                  "display": "Überweisungsdiagnose"
-                },
-                {
-                  "code": "AD",
-                  "system": "http://terminology.hl7.org/CodeSystem/diagnosis-role",
-                  "display": "Admission diagnosis"
-                }
-              ]
-            },
-            "condition": {
-              "reference": "Condition/mii-exa-test-data-patient-3-diagnose-1"
-            },
-            "rank": 1
-          }
-        ],
-        "hospitalization": {
-          "dischargeDisposition": {
-            "extension": [
-              {
-                "extension": [
-                  {
-                    "url": "ErsteUndZweiteStelle",
-                    "valueCoding": {
-                      "code": "02",
-                      "system": "http://fhir.de/CodeSystem/dkgev/EntlassungsgrundErsteUndZweiteStelle",
-                      "display": "Behandlung regulär beendet, nachstationäre Behandlung vorgesehen"
-                    }
-                  },
-                  {
-                    "url": "DritteStelle",
-                    "valueCoding": {
-                      "code": "2",
-                      "system": "http://fhir.de/CodeSystem/dkgev/EntlassungsgrundDritteStelle",
-                      "display": "arbeitsunfähig entlassen"
-                    }
-                  }
-                ],
-                "url": "http://fhir.de/StructureDefinition/Entlassungsgrund"
-              }
-            ]
-          },
-          "admitSource": {
-            "coding": [
-              {
-                "code": "E",
-                "system": "http://fhir.de/CodeSystem/dgkev/Aufnahmeanlass",
-                "display": "Einweisung durch einen Arzt"
-              }
-            ]
-          }
-        },
-        "serviceProvider": {
-          "identifier": {
-            "system": "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier",
-            "value": "Charité"
-          },
-          "reference": "Organization/mii-exa-test-data-organization-charite",
-          "display": "Charité - Universitätsmedizin Berlin"
+          "start": "2024-03-01",
+          "end": "2024-03-25"
         },
         "status": "finished",
         "class": {
           "code": "IMP",
-          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode"
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "display": "inpatient encounter"
         },
         "subject": {
-          "reference": "Patient/mii-exa-test-data-patient-3"
+          "reference": "Patient/mii-exa-test-data-seltene-patient-1"
         }
       }
     },
@@ -323,7 +129,7 @@
         },
         "status": "final",
         "subject": {
-          "reference": "Patient/mii-exa-test-data-patient-3"
+          "reference": "Patient/mii-exa-test-data-seltene-patient-1"
         },
         "effectiveDateTime": "2025-03-10T10:00:00+01:00"
       }
@@ -377,7 +183,7 @@
         },
         "status": "final",
         "subject": {
-          "reference": "Patient/mii-exa-test-data-patient-3"
+          "reference": "Patient/mii-exa-test-data-seltene-patient-1"
         },
         "effectiveDateTime": "2025-03-10T10:00:00+01:00"
       }
@@ -431,7 +237,7 @@
         },
         "status": "final",
         "subject": {
-          "reference": "Patient/mii-exa-test-data-patient-3"
+          "reference": "Patient/mii-exa-test-data-seltene-patient-1"
         },
         "effectiveDateTime": "2025-03-10T10:00:00+01:00"
       }
@@ -485,7 +291,7 @@
         },
         "status": "final",
         "subject": {
-          "reference": "Patient/mii-exa-test-data-patient-3"
+          "reference": "Patient/mii-exa-test-data-seltene-patient-1"
         },
         "effectiveDateTime": "2025-03-10T10:00:00+01:00"
       }
@@ -554,7 +360,7 @@
         },
         "status": "final",
         "subject": {
-          "reference": "Patient/mii-exa-test-data-patient-3"
+          "reference": "Patient/mii-exa-test-data-seltene-patient-1"
         },
         "effectiveDateTime": "2025-03-10T10:00:00+01:00"
       }
@@ -624,10 +430,10 @@
           ]
         },
         "subject": {
-          "reference": "Patient/mii-exa-test-data-patient-3"
+          "reference": "Patient/mii-exa-test-data-seltene-patient-1"
         },
         "encounter": {
-          "reference": "Encounter/mii-exa-test-data-patient-3-encounter-1"
+          "reference": "Encounter/mii-exa-test-data-seltene-encounter-1"
         },
         "effectiveDateTime": "2025-03-10",
         "bodySite": {
@@ -712,10 +518,10 @@
           ]
         },
         "subject": {
-          "reference": "Patient/mii-exa-test-data-patient-3"
+          "reference": "Patient/mii-exa-test-data-seltene-patient-1"
         },
         "encounter": {
-          "reference": "Encounter/mii-exa-test-data-patient-3-encounter-1"
+          "reference": "Encounter/mii-exa-test-data-seltene-encounter-1"
         },
         "effectiveDateTime": "2025-03-10",
         "method": {
@@ -821,10 +627,10 @@
           ]
         },
         "subject": {
-          "reference": "Patient/mii-exa-test-data-patient-3"
+          "reference": "Patient/mii-exa-test-data-seltene-patient-1"
         },
         "encounter": {
-          "reference": "Encounter/mii-exa-test-data-patient-3-encounter-1"
+          "reference": "Encounter/mii-exa-test-data-seltene-encounter-1"
         },
         "effectiveDateTime": "2025-03-10",
         "bodySite": {
@@ -944,10 +750,10 @@
           ]
         },
         "subject": {
-          "reference": "Patient/mii-exa-test-data-patient-3"
+          "reference": "Patient/mii-exa-test-data-seltene-patient-1"
         },
         "encounter": {
-          "reference": "Encounter/mii-exa-test-data-patient-3-encounter-1"
+          "reference": "Encounter/mii-exa-test-data-seltene-encounter-1"
         }
       }
     },
@@ -1134,10 +940,10 @@
           ]
         },
         "subject": {
-          "reference": "Patient/mii-exa-test-data-patient-3"
+          "reference": "Patient/mii-exa-test-data-seltene-patient-1"
         },
         "encounter": {
-          "reference": "Encounter/mii-exa-test-data-patient-3-encounter-1"
+          "reference": "Encounter/mii-exa-test-data-seltene-encounter-1"
         },
         "recordedDate": "2025-03-10",
         "recorder": {
@@ -1297,10 +1103,10 @@
           ]
         },
         "subject": {
-          "reference": "Patient/mii-exa-test-data-patient-3"
+          "reference": "Patient/mii-exa-test-data-seltene-patient-1"
         },
         "encounter": {
-          "reference": "Encounter/mii-exa-test-data-patient-3-encounter-1"
+          "reference": "Encounter/mii-exa-test-data-seltene-encounter-1"
         },
         "recordedDate": "2025-04-15",
         "recorder": {
@@ -1459,10 +1265,10 @@
           ]
         },
         "subject": {
-          "reference": "Patient/mii-exa-test-data-patient-3"
+          "reference": "Patient/mii-exa-test-data-seltene-patient-1"
         },
         "encounter": {
-          "reference": "Encounter/mii-exa-test-data-patient-3-encounter-1"
+          "reference": "Encounter/mii-exa-test-data-seltene-encounter-1"
         },
         "recordedDate": "2025-03-10"
       }
@@ -1599,10 +1405,10 @@
           ]
         },
         "subject": {
-          "reference": "Patient/mii-exa-test-data-patient-3"
+          "reference": "Patient/mii-exa-test-data-seltene-patient-1"
         },
         "encounter": {
-          "reference": "Encounter/mii-exa-test-data-patient-3-encounter-1"
+          "reference": "Encounter/mii-exa-test-data-seltene-encounter-1"
         },
         "onsetDateTime": "2024-06-15",
         "abatementDateTime": "2025-06-01",
@@ -1732,10 +1538,10 @@
         },
         "description": "Marfan-Sprechstunde: Erstvorstellung zur Abklaerung erblicher Bindegewebserkrankung",
         "subject": {
-          "reference": "Patient/mii-exa-test-data-patient-3"
+          "reference": "Patient/mii-exa-test-data-seltene-patient-1"
         },
         "encounter": {
-          "reference": "Encounter/mii-exa-test-data-patient-3-encounter-1"
+          "reference": "Encounter/mii-exa-test-data-seltene-encounter-1"
         },
         "effectiveDateTime": "2025-03-10",
         "date": "2025-03-10",
@@ -1860,7 +1666,7 @@
         },
         "status": "completed",
         "patient": {
-          "reference": "Patient/mii-exa-test-data-patient-3"
+          "reference": "Patient/mii-exa-test-data-seltene-patient-1"
         },
         "sex": {
           "coding": [
@@ -1949,7 +1755,7 @@
         },
         "status": "completed",
         "patient": {
-          "reference": "Patient/mii-exa-test-data-patient-3"
+          "reference": "Patient/mii-exa-test-data-seltene-patient-1"
         },
         "sex": {
           "coding": [
@@ -2017,7 +1823,7 @@
         "status": "draft",
         "intent": "proposal",
         "subject": {
-          "reference": "Patient/mii-exa-test-data-patient-3"
+          "reference": "Patient/mii-exa-test-data-seltene-patient-1"
         },
         "created": "2025-03-10",
         "description": "Therapieplan fuer Patient mit Marfan-Syndrom: Medikamentoese Therapie mit Losartan, kardiologische Frueherkennung und Studieneinschluss"
@@ -2127,10 +1933,10 @@
           ]
         },
         "subject": {
-          "reference": "Patient/mii-exa-test-data-patient-3"
+          "reference": "Patient/mii-exa-test-data-seltene-patient-1"
         },
         "encounter": {
-          "reference": "Encounter/mii-exa-test-data-patient-3-encounter-1"
+          "reference": "Encounter/mii-exa-test-data-seltene-encounter-1"
         }
       }
     },
@@ -2249,10 +2055,10 @@
         "status": "draft",
         "priority": "routine",
         "subject": {
-          "reference": "Patient/mii-exa-test-data-patient-3"
+          "reference": "Patient/mii-exa-test-data-seltene-patient-1"
         },
         "encounter": {
-          "reference": "Encounter/mii-exa-test-data-patient-3-encounter-1"
+          "reference": "Encounter/mii-exa-test-data-seltene-encounter-1"
         },
         "requester": {
           "reference": "Practitioner/mii-exa-test-data-practitioner-physician-1"
@@ -2340,10 +2146,10 @@
         },
         "status": "active",
         "subject": {
-          "reference": "Patient/mii-exa-test-data-patient-3"
+          "reference": "Patient/mii-exa-test-data-seltene-patient-1"
         },
         "encounter": {
-          "reference": "Encounter/mii-exa-test-data-patient-3-encounter-1"
+          "reference": "Encounter/mii-exa-test-data-seltene-encounter-1"
         }
       }
     },
@@ -2405,7 +2211,7 @@
         "status": "draft",
         "intent": "proposal",
         "subject": {
-          "reference": "Patient/mii-exa-test-data-patient-3"
+          "reference": "Patient/mii-exa-test-data-seltene-patient-1"
         }
       }
     },
@@ -2445,7 +2251,7 @@
         },
         "status": "completed",
         "subject": {
-          "reference": "Patient/mii-exa-test-data-patient-3"
+          "reference": "Patient/mii-exa-test-data-seltene-patient-1"
         }
       }
     },
@@ -2481,7 +2287,7 @@
         },
         "status": "completed",
         "subject": {
-          "reference": "Patient/mii-exa-test-data-patient-3"
+          "reference": "Patient/mii-exa-test-data-seltene-patient-1"
         },
         "performedDateTime": "2025-05-20"
       }

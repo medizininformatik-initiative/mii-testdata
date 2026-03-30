@@ -46,10 +46,10 @@
     ]
   },
   "subject": {
-    "reference": "Patient/mii-exa-test-data-patient-4"
+    "reference": "Patient/mii-exa-test-data-molgen-patient-2"
   },
   "encounter": {
-    "reference": "Encounter/mii-exa-test-data-patient-4-encounter-1"
+    "reference": "Encounter/mii-exa-test-data-molgen-encounter-2"
   },
   "performedDateTime": "2022-11-30"
 }

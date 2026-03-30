@@ -16,10 +16,10 @@
         "method": "POST",
         "url": "Patient"
       },
-      "fullUrl": "https://www.medizininformatik-initiative.de/Patient/mii-exa-test-data-patient-1",
+      "fullUrl": "https://www.medizininformatik-initiative.de/Patient/mii-exa-test-data-biobank-patient-1",
       "resource": {
         "resourceType": "Patient",
-        "id": "mii-exa-test-data-patient-1",
+        "id": "mii-exa-test-data-biobank-patient-1",
         "meta": {
           "security": [
             {
@@ -27,478 +27,24 @@
               "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
               "display": "test health data"
             }
-          ],
-          "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient",
-            "http://fhir.de/ConsentManagement/StructureDefinition/Patient"
           ]
         },
         "identifier": [
           {
-            "assigner": {
-              "identifier": {
-                "use": "official",
-                "value": "987654321",
-                "system": "http://fhir.de/sid/arge-ik/iknr"
-              }
-            },
-            "use": "official",
-            "type": {
-              "coding": [
-                {
-                  "code": "KVZ10",
-                  "system": "http://fhir.de/CodeSystem/identifier-type-de-basis"
-                }
-              ]
-            },
-            "system": "http://fhir.de/sid/gkv/kvid-10",
-            "value": "A123456780"
-          },
-          {
-            "assigner": {
-              "identifier": {
-                "type": {
-                  "coding": [
-                    {
-                      "code": "XX",
-                      "system": "http://terminology.hl7.org/CodeSystem/v2-0203"
-                    }
-                  ]
-                },
-                "system": "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier",
-                "value": "Charité"
-              }
-            },
-            "type": {
-              "coding": [
-                {
-                  "code": "MR",
-                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203"
-                }
-              ]
-            },
             "system": "https://www.charite.de/fhir/sid/patientenidentifikation",
-            "value": "808439625"
+            "value": "BIO-TEST-001"
           }
         ],
         "name": [
           {
             "given": [
-              "Christian",
-              "Ludwig"
+              "Sabine"
             ],
-            "prefix": [
-              "Prinz von Preußen"
-            ],
-            "_prefix": [
-              {
-                "extension": [
-                  {
-                    "url": "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier",
-                    "valueCode": "NB"
-                  }
-                ]
-              }
-            ],
-            "suffix": [
-              "aus dem Haus der Hohenzollern"
-            ],
-            "use": "official",
-            "family": "Markgraf von Brandenburg-Schwedt",
-            "_family": {
-              "extension": [
-                {
-                  "url": "http://fhir.de/StructureDefinition/humanname-namenszusatz",
-                  "valueString": "Markgraf"
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/humanname-own-name",
-                  "valueString": "Brandenburg-Schwedt"
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/humanname-own-prefix",
-                  "valueString": "von"
-                }
-              ]
-            }
+            "family": "Musterfrau"
           }
         ],
-        "address": [
-          {
-            "extension": [
-              {
-                "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-precinct",
-                "valueString": "Malchow"
-              }
-            ],
-            "line": [
-              "Dorfstraße 9",
-              "Schloss",
-              "Malchow"
-            ],
-            "_line": [
-              {
-                "extension": [
-                  {
-                    "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName",
-                    "valueString": "Dorfstraße"
-                  },
-                  {
-                    "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber",
-                    "valueString": "9"
-                  }
-                ]
-              },
-              {
-                "extension": [
-                  {
-                    "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator",
-                    "valueString": "Schloss"
-                  }
-                ]
-              },
-              null
-            ],
-            "type": "both",
-            "city": "Berlin",
-            "_city": {
-              "extension": [
-                {
-                  "url": "http://fhir.de/StructureDefinition/destatis/ags",
-                  "valueCoding": {
-                    "code": "11000000",
-                    "system": "http://fhir.de/sid/destatis/ags"
-                  }
-                }
-              ]
-            },
-            "postalCode": "13051",
-            "country": "DE"
-          }
-        ],
-        "gender": "male",
-        "birthDate": "1977-05-24",
-        "deceasedDateTime": "2024-02-22"
-      }
-    },
-    {
-      "request": {
-        "method": "POST",
-        "url": "Encounter"
-      },
-      "fullUrl": "https://www.medizininformatik-initiative.de/Encounter/mii-exa-test-data-patient-1-encounter-1",
-      "resource": {
-        "resourceType": "Encounter",
-        "id": "mii-exa-test-data-patient-1-encounter-1",
-        "meta": {
-          "security": [
-            {
-              "code": "HTEST",
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
-              "display": "test health data"
-            }
-          ],
-          "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung"
-          ]
-        },
-        "identifier": [
-          {
-            "type": {
-              "coding": [
-                {
-                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
-                  "code": "VN"
-                }
-              ]
-            },
-            "system": "https://www.charite.de/fhir/NamingSystem/Aufnahmenummern",
-            "value": "MII_0000001"
-          }
-        ],
-        "type": [
-          {
-            "coding": [
-              {
-                "system": "http://fhir.de/CodeSystem/Kontaktebene",
-                "code": "einrichtungskontakt"
-              }
-            ]
-          },
-          {
-            "coding": [
-              {
-                "system": "http://fhir.de/CodeSystem/kontaktart-de",
-                "code": "normalstationaer"
-              }
-            ]
-          }
-        ],
-        "serviceType": {
-          "coding": [
-            {
-              "system": "http://fhir.de/CodeSystem/dkgev/Fachabteilungsschluessel",
-              "code": "0100"
-            }
-          ]
-        },
-        "extension": [
-          {
-            "extension": [
-              {
-                "url": "ErsteUndZweiteStelle",
-                "valueCoding": {
-                  "code": "01",
-                  "system": "http://fhir.de/CodeSystem/dkgev/AufnahmegrundErsteUndZweiteStelle",
-                  "display": "Krankenhausbehandlung, vollstationär"
-                }
-              },
-              {
-                "url": "DritteStelle",
-                "valueCoding": {
-                  "code": "0",
-                  "system": "http://fhir.de/CodeSystem/dkgev/AufnahmegrundDritteStelle",
-                  "display": "Anderes"
-                }
-              },
-              {
-                "url": "VierteStelle",
-                "valueCoding": {
-                  "code": "1",
-                  "system": "http://fhir.de/CodeSystem/dkgev/AufnahmegrundVierteStelle",
-                  "display": "Normalfall"
-                }
-              }
-            ],
-            "url": "http://fhir.de/StructureDefinition/Aufnahmegrund"
-          }
-        ],
-        "period": {
-          "start": "2024-02-14",
-          "end": "2024-02-22"
-        },
-        "diagnosis": [
-          {
-            "condition": {
-              "reference": "Condition/mii-exa-test-data-patient-1-diagnose-1"
-            },
-            "use": {
-              "coding": [
-                {
-                  "code": "AD",
-                  "system": "http://terminology.hl7.org/CodeSystem/diagnosis-role",
-                  "display": "Admission diagnosis"
-                }
-              ]
-            },
-            "rank": 1
-          },
-          {
-            "condition": {
-              "reference": "Condition/mii-exa-test-data-patient-1-todesursache-1"
-            },
-            "use": {
-              "coding": [
-                {
-                  "code": "DD",
-                  "system": "http://terminology.hl7.org/CodeSystem/diagnosis-role",
-                  "display": "Discharge diagnosis"
-                }
-              ]
-            },
-            "rank": 2
-          }
-        ],
-        "hospitalization": {
-          "dischargeDisposition": {
-            "extension": [
-              {
-                "extension": [
-                  {
-                    "url": "ErsteUndZweiteStelle",
-                    "valueCoding": {
-                      "code": "07",
-                      "system": "http://fhir.de/CodeSystem/dkgev/EntlassungsgrundErsteUndZweiteStelle",
-                      "display": "Tod"
-                    }
-                  },
-                  {
-                    "url": "DritteStelle",
-                    "valueCoding": {
-                      "code": "9",
-                      "system": "http://fhir.de/CodeSystem/dkgev/EntlassungsgrundDritteStelle",
-                      "display": "keine Angabe"
-                    }
-                  }
-                ],
-                "url": "http://fhir.de/StructureDefinition/Entlassungsgrund"
-              }
-            ]
-          },
-          "admitSource": {
-            "coding": [
-              {
-                "code": "E",
-                "system": "http://fhir.de/CodeSystem/dgkev/Aufnahmeanlass",
-                "display": "Einweisung durch einen Arzt"
-              }
-            ]
-          }
-        },
-        "location": [
-          {
-            "location": {
-              "identifier": {
-                "system": "https://www.charite.de/fhir/sid/Zimmernummern",
-                "value": "RHC-06-210b"
-              },
-              "display": "RHC-06-210b"
-            },
-            "status": "active",
-            "physicalType": {
-              "coding": [
-                {
-                  "system": "http://terminology.hl7.org/CodeSystem/location-physical-type",
-                  "code": "ro"
-                }
-              ]
-            }
-          },
-          {
-            "location": {
-              "identifier": {
-                "system": "https://www.charite.de/fhir/sid/Bettennummern",
-                "value": "RHC-06-210b-02"
-              },
-              "display": "RHC-06-210b-02"
-            },
-            "status": "active",
-            "physicalType": {
-              "coding": [
-                {
-                  "system": "http://terminology.hl7.org/CodeSystem/location-physical-type",
-                  "code": "bd"
-                }
-              ]
-            }
-          },
-          {
-            "location": {
-              "identifier": {
-                "system": "https://www.charite.de/fhir/sid/Stationsnummern",
-                "value": "RHC-06"
-              },
-              "display": "RHC-06"
-            },
-            "status": "active",
-            "physicalType": {
-              "coding": [
-                {
-                  "system": "http://terminology.hl7.org/CodeSystem/location-physical-type",
-                  "code": "wa"
-                }
-              ]
-            }
-          }
-        ],
-        "serviceProvider": {
-          "identifier": {
-            "system": "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier",
-            "value": "Charité"
-          },
-          "reference": "Organization/mii-exa-test-data-organization-charite",
-          "display": "Charité - Universitätsmedizin Berlin"
-        },
-        "status": "finished",
-        "class": {
-          "code": "IMP",
-          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode"
-        },
-        "subject": {
-          "reference": "Patient/mii-exa-test-data-patient-1"
-        }
-      }
-    },
-    {
-      "request": {
-        "method": "POST",
-        "url": "Organization"
-      },
-      "fullUrl": "https://www.medizininformatik-initiative.de/Organization/mii-exa-test-data-organization-biobank-charite",
-      "resource": {
-        "resourceType": "Organization",
-        "id": "mii-exa-test-data-organization-biobank-charite",
-        "meta": {
-          "security": [
-            {
-              "code": "HTEST",
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
-              "display": "test health data"
-            }
-          ],
-          "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Organization"
-          ]
-        },
-        "extension": [
-          {
-            "url": "https://fhir.bbmri-eric.eu/fhir/StructureDefinition/miabis-organization-description-extension",
-            "valueString": "Zentrale Biobank der Charité"
-          }
-        ],
-        "identifier": [
-          {
-            "system": "http://www.bbmri-eric.eu/",
-            "value": "de-12345"
-          }
-        ],
-        "alias": [
-          "ZeBanC"
-        ],
-        "contact": [
-          {
-            "extension": [
-              {
-                "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/KontaktRolle",
-                "valueString": "Direktor"
-              }
-            ],
-            "name": {
-              "given": [
-                "Koch"
-              ],
-              "prefix": [
-                "Prof."
-              ],
-              "family": "Robert"
-            },
-            "telecom": [
-              {
-                "system": "email",
-                "value": "robert.koch@charite.de"
-              }
-            ],
-            "address": {
-              "line": [
-                "Südring 7"
-              ],
-              "postalCode": "13353",
-              "city": "Berlin"
-            },
-            "purpose": {
-              "coding": [
-                {
-                  "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/CodeSystem/ContactType",
-                  "code": "RESEARCH"
-                }
-              ]
-            }
-          }
-        ],
-        "name": "Zentrale Biobank der Charité",
-        "partOf": {
-          "reference": "Organization/mii-exa-test-data-organization-charite"
-        }
+        "birthDate": "1975-11-03",
+        "gender": "female"
       }
     },
     {
@@ -658,7 +204,7 @@
         ],
         "status": "available",
         "subject": {
-          "reference": "Patient/mii-exa-test-data-patient-1"
+          "reference": "Patient/mii-exa-test-data-biobank-patient-1"
         }
       }
     },
@@ -667,10 +213,10 @@
         "method": "POST",
         "url": "Patient"
       },
-      "fullUrl": "https://www.medizininformatik-initiative.de/Patient/mii-exa-test-data-patient-3",
+      "fullUrl": "https://www.medizininformatik-initiative.de/Patient/mii-exa-test-data-biobank-patient-3",
       "resource": {
         "resourceType": "Patient",
-        "id": "mii-exa-test-data-patient-3",
+        "id": "mii-exa-test-data-biobank-patient-3",
         "meta": {
           "security": [
             {
@@ -678,110 +224,24 @@
               "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
               "display": "test health data"
             }
-          ],
-          "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient",
-            "http://fhir.de/ConsentManagement/StructureDefinition/Patient"
           ]
         },
         "identifier": [
           {
-            "assigner": {
-              "identifier": {
-                "system": "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier",
-                "value": "Charité"
-              },
-              "display": "Charité - Universitätsmedizin Berlin"
-            },
-            "type": {
-              "coding": [
-                {
-                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
-                  "code": "MR"
-                }
-              ]
-            },
-            "use": "usual",
-            "system": "https://www.medizininformatik-initiative.de/fhir/sid/patienten",
-            "value": "42285243"
-          },
-          {
-            "assigner": {
-              "identifier": {
-                "use": "official",
-                "value": "109519005",
-                "system": "http://fhir.de/sid/arge-ik/iknr"
-              }
-            },
-            "use": "official",
-            "type": {
-              "coding": [
-                {
-                  "code": "KVZ10",
-                  "system": "http://fhir.de/CodeSystem/identifier-type-de-basis"
-                }
-              ]
-            },
-            "system": "http://fhir.de/sid/gkv/kvid-10",
-            "value": "Z234567890"
+            "system": "https://www.charite.de/fhir/sid/patientenidentifikation",
+            "value": "BIO-TEST-003"
           }
         ],
         "name": [
           {
             "given": [
-              "Clara",
-              "Josephine"
+              "Claudia"
             ],
-            "use": "official",
-            "family": "Schumann",
-            "_family": {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/humanname-own-name",
-                  "valueString": "Schumann"
-                }
-              ]
-            }
-          },
-          {
-            "use": "maiden",
-            "family": "Wieck"
+            "family": "Spender"
           }
         ],
-        "address": [
-          {
-            "line": [
-              "Schöneberger Ufer 22"
-            ],
-            "type": "both",
-            "city": "Berlin",
-            "state": "DE-BE",
-            "postalCode": "10785",
-            "country": "DE"
-          },
-          {
-            "line": [
-              "Postfach-252618"
-            ],
-            "_line": [
-              {
-                "extension": [
-                  {
-                    "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox",
-                    "valueString": "Postfach-252618"
-                  }
-                ]
-              }
-            ],
-            "type": "postal",
-            "city": "Berlin",
-            "postalCode": "10178",
-            "country": "DE"
-          }
-        ],
-        "gender": "female",
-        "birthDate": "1968-09-13",
-        "deceasedBoolean": false
+        "birthDate": "1962-05-22",
+        "gender": "female"
       }
     },
     {
@@ -862,7 +322,7 @@
         },
         "status": "available",
         "subject": {
-          "reference": "Patient/mii-exa-test-data-patient-3"
+          "reference": "Patient/mii-exa-test-data-biobank-patient-3"
         }
       }
     },
@@ -958,7 +418,7 @@
         ],
         "status": "available",
         "subject": {
-          "reference": "Patient/mii-exa-test-data-patient-3"
+          "reference": "Patient/mii-exa-test-data-biobank-patient-3"
         }
       }
     },
@@ -1054,7 +514,7 @@
         ],
         "status": "available",
         "subject": {
-          "reference": "Patient/mii-exa-test-data-patient-3"
+          "reference": "Patient/mii-exa-test-data-biobank-patient-3"
         }
       }
     },
@@ -1063,10 +523,10 @@
         "method": "POST",
         "url": "Patient"
       },
-      "fullUrl": "https://www.medizininformatik-initiative.de/Patient/mii-exa-test-data-patient-4",
+      "fullUrl": "https://www.medizininformatik-initiative.de/Patient/mii-exa-test-data-biobank-patient-4",
       "resource": {
         "resourceType": "Patient",
-        "id": "mii-exa-test-data-patient-4",
+        "id": "mii-exa-test-data-biobank-patient-4",
         "meta": {
           "security": [
             {
@@ -1074,53 +534,24 @@
               "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
               "display": "test health data"
             }
-          ],
-          "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient",
-            "http://fhir.de/ConsentManagement/StructureDefinition/Patient"
           ]
         },
         "identifier": [
           {
-            "type": {
-              "coding": [
-                {
-                  "code": "PSEUDED",
-                  "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue"
-                }
-              ]
-            },
-            "system": "https://www.charite.de/fhir/sid/pseudonyme",
-            "value": "CP5712840020128"
+            "system": "https://www.charite.de/fhir/sid/patientenidentifikation",
+            "value": "BIO-TEST-004"
           }
         ],
-        "address": [
+        "name": [
           {
-            "type": "both",
-            "postalCode": "10",
-            "country": "DE",
-            "_line": [
-              {
-                "extension": [
-                  {
-                    "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
-                    "valueCode": "masked"
-                  }
-                ]
-              }
+            "given": [
+              "Dirk"
             ],
-            "_city": {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
-                  "valueCode": "masked"
-                }
-              ]
-            }
+            "family": "Probenspender"
           }
         ],
-        "gender": "male",
-        "birthDate": "1962"
+        "birthDate": "1978-09-11",
+        "gender": "male"
       }
     },
     {
@@ -1191,7 +622,7 @@
         },
         "status": "available",
         "subject": {
-          "reference": "Patient/mii-exa-test-data-patient-4"
+          "reference": "Patient/mii-exa-test-data-biobank-patient-4"
         },
         "receivedTime": "2022-11-30"
       }
@@ -1264,7 +695,7 @@
         },
         "status": "available",
         "subject": {
-          "reference": "Patient/mii-exa-test-data-patient-4"
+          "reference": "Patient/mii-exa-test-data-biobank-patient-4"
         },
         "receivedTime": "2022-11-30"
       }
@@ -1361,7 +792,7 @@
         ],
         "status": "available",
         "subject": {
-          "reference": "Patient/mii-exa-test-data-patient-4"
+          "reference": "Patient/mii-exa-test-data-biobank-patient-4"
         }
       }
     },
@@ -1457,7 +888,7 @@
         ],
         "status": "available",
         "subject": {
-          "reference": "Patient/mii-exa-test-data-patient-4"
+          "reference": "Patient/mii-exa-test-data-biobank-patient-4"
         }
       }
     },
@@ -1466,10 +897,10 @@
         "method": "POST",
         "url": "Patient"
       },
-      "fullUrl": "https://www.medizininformatik-initiative.de/Patient/mii-exa-test-data-patient-5",
+      "fullUrl": "https://www.medizininformatik-initiative.de/Patient/mii-exa-test-data-biobank-patient-5",
       "resource": {
         "resourceType": "Patient",
-        "id": "mii-exa-test-data-patient-5",
+        "id": "mii-exa-test-data-biobank-patient-5",
         "meta": {
           "security": [
             {
@@ -1477,82 +908,24 @@
               "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
               "display": "test health data"
             }
-          ],
-          "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient",
-            "http://fhir.de/ConsentManagement/StructureDefinition/Patient"
           ]
         },
         "identifier": [
           {
-            "assigner": {
-              "identifier": {
-                "system": "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier",
-                "value": "Charité"
-              },
-              "display": "Charité - Universitätsmedizin Berlin"
-            },
-            "type": {
-              "coding": [
-                {
-                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
-                  "code": "MR"
-                }
-              ]
-            },
-            "use": "usual",
-            "system": "https://www.medizininformatik-initiative.de/fhir/sid/patienten",
-            "value": "925847361"
-          },
-          {
-            "assigner": {
-              "identifier": {
-                "use": "official",
-                "value": "987654321",
-                "system": "http://fhir.de/sid/arge-ik/iknr"
-              }
-            },
-            "use": "official",
-            "type": {
-              "coding": [
-                {
-                  "code": "KVZ10",
-                  "system": "http://fhir.de/CodeSystem/identifier-type-de-basis"
-                }
-              ]
-            },
-            "system": "http://fhir.de/sid/gkv/kvid-10",
-            "value": "C200919710"
+            "system": "https://www.charite.de/fhir/sid/patientenidentifikation",
+            "value": "BIO-TEST-005"
           }
         ],
         "name": [
           {
             "given": [
-              "Sabine",
-              "Maria"
+              "Eva"
             ],
-            "use": "official",
-            "family": "Weber"
-          },
-          {
-            "use": "maiden",
-            "family": "Müller"
+            "family": "Gewebe"
           }
         ],
-        "address": [
-          {
-            "line": [
-              "Kantstraße 47"
-            ],
-            "type": "both",
-            "city": "München",
-            "postalCode": "80636",
-            "country": "DE"
-          }
-        ],
-        "gender": "female",
-        "birthDate": "1985-03-12",
-        "deceasedBoolean": false
+        "birthDate": "1991-01-30",
+        "gender": "female"
       }
     },
     {
@@ -1647,7 +1020,7 @@
         ],
         "status": "available",
         "subject": {
-          "reference": "Patient/mii-exa-test-data-patient-5"
+          "reference": "Patient/mii-exa-test-data-biobank-patient-5"
         }
       }
     },
@@ -1752,7 +1125,7 @@
         ],
         "status": "available",
         "subject": {
-          "reference": "Patient/mii-exa-test-data-patient-5"
+          "reference": "Patient/mii-exa-test-data-biobank-patient-5"
         }
       }
     },
@@ -1761,10 +1134,10 @@
         "method": "POST",
         "url": "Patient"
       },
-      "fullUrl": "https://www.medizininformatik-initiative.de/Patient/mii-exa-test-data-patient-6",
+      "fullUrl": "https://www.medizininformatik-initiative.de/Patient/mii-exa-test-data-biobank-patient-6",
       "resource": {
         "resourceType": "Patient",
-        "id": "mii-exa-test-data-patient-6",
+        "id": "mii-exa-test-data-biobank-patient-6",
         "meta": {
           "security": [
             {
@@ -1772,78 +1145,24 @@
               "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
               "display": "test health data"
             }
-          ],
-          "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient",
-            "http://fhir.de/ConsentManagement/StructureDefinition/Patient"
           ]
         },
         "identifier": [
           {
-            "assigner": {
-              "identifier": {
-                "system": "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier",
-                "value": "Charité"
-              },
-              "display": "Charité - Universitätsmedizin Berlin"
-            },
-            "type": {
-              "coding": [
-                {
-                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
-                  "code": "MR"
-                }
-              ]
-            },
-            "use": "usual",
-            "system": "https://www.medizininformatik-initiative.de/fhir/sid/patienten",
-            "value": "456789123"
-          },
-          {
-            "assigner": {
-              "identifier": {
-                "use": "official",
-                "value": "123456789",
-                "system": "http://fhir.de/sid/arge-ik/iknr"
-              }
-            },
-            "use": "official",
-            "type": {
-              "coding": [
-                {
-                  "code": "KVZ10",
-                  "system": "http://fhir.de/CodeSystem/identifier-type-de-basis"
-                }
-              ]
-            },
-            "system": "http://fhir.de/sid/gkv/kvid-10",
-            "value": "D345678901"
+            "system": "https://www.charite.de/fhir/sid/patientenidentifikation",
+            "value": "BIO-TEST-006"
           }
         ],
         "name": [
           {
             "given": [
-              "Thomas",
-              "Michael"
+              "Frank"
             ],
-            "use": "official",
-            "family": "Richter"
+            "family": "Blutprobe"
           }
         ],
-        "address": [
-          {
-            "line": [
-              "Hauptstraße 134"
-            ],
-            "type": "both",
-            "city": "Hamburg",
-            "postalCode": "20095",
-            "country": "DE"
-          }
-        ],
-        "gender": "male",
-        "birthDate": "1975-11-08",
-        "deceasedBoolean": false
+        "birthDate": "1955-12-07",
+        "gender": "male"
       }
     },
     {
@@ -1938,7 +1257,7 @@
         ],
         "status": "available",
         "subject": {
-          "reference": "Patient/mii-exa-test-data-patient-6"
+          "reference": "Patient/mii-exa-test-data-biobank-patient-6"
         }
       }
     },
@@ -2034,7 +1353,7 @@
         ],
         "status": "available",
         "subject": {
-          "reference": "Patient/mii-exa-test-data-patient-6"
+          "reference": "Patient/mii-exa-test-data-biobank-patient-6"
         }
       }
     },
@@ -2043,10 +1362,10 @@
         "method": "POST",
         "url": "Patient"
       },
-      "fullUrl": "https://www.medizininformatik-initiative.de/Patient/mii-exa-test-data-patient-7",
+      "fullUrl": "https://www.medizininformatik-initiative.de/Patient/mii-exa-test-data-biobank-patient-7",
       "resource": {
         "resourceType": "Patient",
-        "id": "mii-exa-test-data-patient-7",
+        "id": "mii-exa-test-data-biobank-patient-7",
         "meta": {
           "security": [
             {
@@ -2054,81 +1373,24 @@
               "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
               "display": "test health data"
             }
-          ],
-          "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient",
-            "http://fhir.de/ConsentManagement/StructureDefinition/Patient"
           ]
         },
         "identifier": [
           {
-            "assigner": {
-              "identifier": {
-                "system": "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier",
-                "value": "Charité"
-              },
-              "display": "Charité - Universitätsmedizin Berlin"
-            },
-            "type": {
-              "coding": [
-                {
-                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
-                  "code": "MR"
-                }
-              ]
-            },
-            "use": "usual",
-            "system": "https://www.medizininformatik-initiative.de/fhir/sid/patienten",
-            "value": "789456321"
-          },
-          {
-            "assigner": {
-              "identifier": {
-                "use": "official",
-                "value": "567890123",
-                "system": "http://fhir.de/sid/arge-ik/iknr"
-              }
-            },
-            "use": "official",
-            "type": {
-              "coding": [
-                {
-                  "code": "KVZ10",
-                  "system": "http://fhir.de/CodeSystem/identifier-type-de-basis"
-                }
-              ]
-            },
-            "system": "http://fhir.de/sid/gkv/kvid-10",
-            "value": "E456789012"
+            "system": "https://www.charite.de/fhir/sid/patientenidentifikation",
+            "value": "BIO-TEST-007"
           }
         ],
         "name": [
           {
             "given": [
-              "Anna"
+              "Greta"
             ],
-            "use": "official",
-            "family": "Hoffmann"
-          },
-          {
-            "use": "maiden",
-            "family": "Schmidt"
+            "family": "Serum"
           }
         ],
-        "address": [
-          {
-            "line": [
-              "Gartenstraße 56"
-            ],
-            "type": "both",
-            "city": "Köln",
-            "postalCode": "50667",
-            "country": "DE"
-          }
-        ],
-        "gender": "female",
-        "birthDate": "1992-07-15",
-        "deceasedBoolean": false
+        "birthDate": "1987-03-15",
+        "gender": "female"
       }
     },
     {
@@ -2223,7 +1485,7 @@
         ],
         "status": "available",
         "subject": {
-          "reference": "Patient/mii-exa-test-data-patient-7"
+          "reference": "Patient/mii-exa-test-data-biobank-patient-7"
         }
       }
     },
@@ -2319,7 +1581,7 @@
         ],
         "status": "available",
         "subject": {
-          "reference": "Patient/mii-exa-test-data-patient-7"
+          "reference": "Patient/mii-exa-test-data-biobank-patient-7"
         }
       }
     },
@@ -2328,10 +1590,10 @@
         "method": "POST",
         "url": "Patient"
       },
-      "fullUrl": "https://www.medizininformatik-initiative.de/Patient/mii-exa-test-data-patient-8",
+      "fullUrl": "https://www.medizininformatik-initiative.de/Patient/mii-exa-test-data-biobank-patient-8",
       "resource": {
         "resourceType": "Patient",
-        "id": "mii-exa-test-data-patient-8",
+        "id": "mii-exa-test-data-biobank-patient-8",
         "meta": {
           "security": [
             {
@@ -2339,78 +1601,24 @@
               "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
               "display": "test health data"
             }
-          ],
-          "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient",
-            "http://fhir.de/ConsentManagement/StructureDefinition/Patient"
           ]
         },
         "identifier": [
           {
-            "assigner": {
-              "identifier": {
-                "system": "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier",
-                "value": "Charité"
-              },
-              "display": "Charité - Universitätsmedizin Berlin"
-            },
-            "type": {
-              "coding": [
-                {
-                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
-                  "code": "MR"
-                }
-              ]
-            },
-            "use": "usual",
-            "system": "https://www.medizininformatik-initiative.de/fhir/sid/patienten",
-            "value": "159753486"
-          },
-          {
-            "assigner": {
-              "identifier": {
-                "use": "official",
-                "value": "234567890",
-                "system": "http://fhir.de/sid/arge-ik/iknr"
-              }
-            },
-            "use": "official",
-            "type": {
-              "coding": [
-                {
-                  "code": "KVZ10",
-                  "system": "http://fhir.de/CodeSystem/identifier-type-de-basis"
-                }
-              ]
-            },
-            "system": "http://fhir.de/sid/gkv/kvid-10",
-            "value": "F567890123"
+            "system": "https://www.charite.de/fhir/sid/patientenidentifikation",
+            "value": "BIO-TEST-008"
           }
         ],
         "name": [
           {
             "given": [
-              "Hans",
-              "Peter"
+              "Heinrich"
             ],
-            "use": "official",
-            "family": "Bauer"
+            "family": "Plasma"
           }
         ],
-        "address": [
-          {
-            "line": [
-              "Bahnhofstraße 89"
-            ],
-            "type": "both",
-            "city": "Stuttgart",
-            "postalCode": "70173",
-            "country": "DE"
-          }
-        ],
-        "gender": "male",
-        "birthDate": "1958-02-28",
-        "deceasedBoolean": true
+        "birthDate": "1969-07-28",
+        "gender": "male"
       }
     },
     {
@@ -2505,7 +1713,7 @@
         ],
         "status": "available",
         "subject": {
-          "reference": "Patient/mii-exa-test-data-patient-8"
+          "reference": "Patient/mii-exa-test-data-biobank-patient-8"
         }
       }
     },
@@ -2601,7 +1809,7 @@
         ],
         "status": "available",
         "subject": {
-          "reference": "Patient/mii-exa-test-data-patient-8"
+          "reference": "Patient/mii-exa-test-data-biobank-patient-8"
         }
       }
     },
@@ -2610,10 +1818,10 @@
         "method": "POST",
         "url": "Patient"
       },
-      "fullUrl": "https://www.medizininformatik-initiative.de/Patient/mii-exa-test-data-patient-9",
+      "fullUrl": "https://www.medizininformatik-initiative.de/Patient/mii-exa-test-data-biobank-patient-9",
       "resource": {
         "resourceType": "Patient",
-        "id": "mii-exa-test-data-patient-9",
+        "id": "mii-exa-test-data-biobank-patient-9",
         "meta": {
           "security": [
             {
@@ -2621,82 +1829,24 @@
               "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
               "display": "test health data"
             }
-          ],
-          "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient",
-            "http://fhir.de/ConsentManagement/StructureDefinition/Patient"
           ]
         },
         "identifier": [
           {
-            "assigner": {
-              "identifier": {
-                "system": "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier",
-                "value": "Charité"
-              },
-              "display": "Charité - Universitätsmedizin Berlin"
-            },
-            "type": {
-              "coding": [
-                {
-                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
-                  "code": "MR"
-                }
-              ]
-            },
-            "use": "usual",
-            "system": "https://www.medizininformatik-initiative.de/fhir/sid/patienten",
-            "value": "321654987"
-          },
-          {
-            "assigner": {
-              "identifier": {
-                "use": "official",
-                "value": "345678901",
-                "system": "http://fhir.de/sid/arge-ik/iknr"
-              }
-            },
-            "use": "official",
-            "type": {
-              "coding": [
-                {
-                  "code": "KVZ10",
-                  "system": "http://fhir.de/CodeSystem/identifier-type-de-basis"
-                }
-              ]
-            },
-            "system": "http://fhir.de/sid/gkv/kvid-10",
-            "value": "G678901234"
+            "system": "https://www.charite.de/fhir/sid/patientenidentifikation",
+            "value": "BIO-TEST-009"
           }
         ],
         "name": [
           {
             "given": [
-              "Petra",
-              "Elisabeth"
+              "Ingrid"
             ],
-            "use": "official",
-            "family": "Klein"
-          },
-          {
-            "use": "maiden",
-            "family": "Fischer"
+            "family": "Biopsie"
           }
         ],
-        "address": [
-          {
-            "line": [
-              "Müllerstraße 23"
-            ],
-            "type": "both",
-            "city": "Dresden",
-            "postalCode": "01067",
-            "country": "DE"
-          }
-        ],
-        "gender": "female",
-        "birthDate": "1981-12-03",
-        "deceasedBoolean": false
+        "birthDate": "1983-10-04",
+        "gender": "female"
       }
     },
     {
@@ -2791,7 +1941,7 @@
         ],
         "status": "available",
         "subject": {
-          "reference": "Patient/mii-exa-test-data-patient-9"
+          "reference": "Patient/mii-exa-test-data-biobank-patient-9"
         }
       }
     },
@@ -2887,7 +2037,7 @@
         ],
         "status": "available",
         "subject": {
-          "reference": "Patient/mii-exa-test-data-patient-9"
+          "reference": "Patient/mii-exa-test-data-biobank-patient-9"
         }
       }
     },
@@ -2896,10 +2046,10 @@
         "method": "POST",
         "url": "Patient"
       },
-      "fullUrl": "https://www.medizininformatik-initiative.de/Patient/mii-exa-test-data-patient-10",
+      "fullUrl": "https://www.medizininformatik-initiative.de/Patient/mii-exa-test-data-biobank-patient-2",
       "resource": {
         "resourceType": "Patient",
-        "id": "mii-exa-test-data-patient-10",
+        "id": "mii-exa-test-data-biobank-patient-2",
         "meta": {
           "security": [
             {
@@ -2907,77 +2057,24 @@
               "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
               "display": "test health data"
             }
-          ],
-          "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient",
-            "http://fhir.de/ConsentManagement/StructureDefinition/Patient"
           ]
         },
         "identifier": [
           {
-            "assigner": {
-              "identifier": {
-                "system": "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier",
-                "value": "Charité"
-              },
-              "display": "Charité - Universitätsmedizin Berlin"
-            },
-            "type": {
-              "coding": [
-                {
-                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
-                  "code": "MR"
-                }
-              ]
-            },
-            "use": "usual",
-            "system": "https://www.medizininformatik-initiative.de/fhir/sid/patienten",
-            "value": "654987321"
-          },
-          {
-            "assigner": {
-              "identifier": {
-                "use": "official",
-                "value": "456789012",
-                "system": "http://fhir.de/sid/arge-ik/iknr"
-              }
-            },
-            "use": "official",
-            "type": {
-              "coding": [
-                {
-                  "code": "KVZ10",
-                  "system": "http://fhir.de/CodeSystem/identifier-type-de-basis"
-                }
-              ]
-            },
-            "system": "http://fhir.de/sid/gkv/kvid-10",
-            "value": "H789012345"
+            "system": "https://www.charite.de/fhir/sid/patientenidentifikation",
+            "value": "BIO-TEST-002"
           }
         ],
         "name": [
           {
             "given": [
-              "Markus"
+              "Martin"
             ],
-            "use": "official",
-            "family": "Wolf"
+            "family": "Testfall"
           }
         ],
-        "address": [
-          {
-            "line": [
-              "Am Park 12"
-            ],
-            "type": "both",
-            "city": "Frankfurt am Main",
-            "postalCode": "60311",
-            "country": "DE"
-          }
-        ],
-        "gender": "male",
-        "birthDate": "1969-09-17",
-        "deceasedBoolean": false
+        "birthDate": "1980-04-18",
+        "gender": "male"
       }
     },
     {
@@ -3072,7 +2169,7 @@
         ],
         "status": "available",
         "subject": {
-          "reference": "Patient/mii-exa-test-data-patient-10"
+          "reference": "Patient/mii-exa-test-data-biobank-patient-2"
         }
       }
     },
@@ -3168,7 +2265,7 @@
         ],
         "status": "available",
         "subject": {
-          "reference": "Patient/mii-exa-test-data-patient-10"
+          "reference": "Patient/mii-exa-test-data-biobank-patient-2"
         }
       }
     }

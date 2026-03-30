@@ -32,10 +32,10 @@
   "mode": "snapshot",
   "status": "current",
   "subject": {
-    "reference": "Patient/mii-exa-test-data-patient-1"
+    "reference": "Patient/mii-exa-test-data-patho-patient-1"
   },
   "encounter": {
-    "reference": "Encounter/mii-exa-test-data-patient-1-encounter-1"
+    "reference": "Encounter/mii-exa-test-data-patho-encounter-1"
   },
   "date": "2024-02-16"
 }

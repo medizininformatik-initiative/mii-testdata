@@ -55,10 +55,10 @@
   },
   "status": "active",
   "subject": {
-    "reference": "Patient/mii-exa-test-data-patient-1"
+    "reference": "Patient/mii-exa-test-data-studien-patient-1"
   },
   "encounter": {
-    "reference": "Encounter/mii-exa-test-data-patient-1-encounter-1"
+    "reference": "Encounter/mii-exa-test-data-studien-encounter-1"
   },
   "authoredOn": "2024-03-10",
   "requester": {

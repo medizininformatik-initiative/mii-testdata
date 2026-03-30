@@ -58,7 +58,7 @@
     ]
   },
   "subject": {
-    "reference": "Patient/mii-exa-test-data-patient-1"
+    "reference": "Patient/mii-exa-test-data-bildgebung-patient-1"
   },
   "medicationReference": {
     "reference": "Medication/mii-exa-test-data-medication-dalbavancin"
