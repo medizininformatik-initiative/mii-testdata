@@ -24,8 +24,8 @@ Description: "Clinical Diagnosis: Marfan syndrome - maximum MS element coverage"
 * code.coding[+] = $HPO#HP:0003549 "Abnormality of connective tissue"
 * code.text = "Marfan-Syndrom, klinisch diagnostiziert nach Ghent-Kriterien"
 * bodySite = $sct#113257007 "Structure of cardiovascular system"
-* subject = Reference(mii-exa-test-data-patient-3)
-* encounter = Reference(mii-exa-test-data-patient-3-encounter-1)
+* subject = Reference(mii-exa-test-data-seltene-patient-1)
+* encounter = Reference(mii-exa-test-data-seltene-encounter-1)
 * onsetAge.value = 28
 * onsetAge.unit = "years"
 * onsetAge.system = $ucum
@@ -63,8 +63,8 @@ Description: "Genetic Diagnosis: Marfan syndrome (FBN1 variant) - maximum MS ele
 * code.coding[+] = $sct#19346006 "Marfan syndrome"
 * code.coding[+] = $orpha#558 "Marfan syndrome"
 * code.text = "Marfan-Syndrom, genetisch bestaetigt (FBN1-Variante)"
-* subject = Reference(mii-exa-test-data-patient-3)
-* encounter = Reference(mii-exa-test-data-patient-3-encounter-1)
+* subject = Reference(mii-exa-test-data-seltene-patient-1)
+* encounter = Reference(mii-exa-test-data-seltene-encounter-1)
 * onsetAge.value = 28
 * onsetAge.unit = "years"
 * onsetAge.system = $ucum
@@ -101,8 +101,8 @@ Description: "Symptom Condition: Tall stature - all 4 code slices (HPO, SNOMED, 
 * code.coding[+] = $MONDO#MONDO:0007064 "Marfan syndrome"
 * code.text = "Hochwuchs bei Marfan-Syndrom"
 * bodySite = $sct#38266002 "Entire body as a whole"
-* subject = Reference(mii-exa-test-data-patient-3)
-* encounter = Reference(mii-exa-test-data-patient-3-encounter-1)
+* subject = Reference(mii-exa-test-data-seltene-patient-1)
+* encounter = Reference(mii-exa-test-data-seltene-encounter-1)
 * onsetAge.value = 14
 * onsetAge.unit = "years"
 * onsetAge.system = $ucum
@@ -131,8 +131,8 @@ Description: "Symptom Condition: Aortic root dilatation - tests onsetDateTime/ab
 * code.coding[+] = $sct#128599005 "Structural disorder of heart"
 * code.text = "Aortenwurzeldilatation"
 * bodySite = $sct#57034009 "Aortic arch structure"
-* subject = Reference(mii-exa-test-data-patient-3)
-* encounter = Reference(mii-exa-test-data-patient-3-encounter-1)
+* subject = Reference(mii-exa-test-data-seltene-patient-1)
+* encounter = Reference(mii-exa-test-data-seltene-encounter-1)
 * onsetDateTime = "2024-06-15"
 * abatementDateTime = "2025-06-01"
 * recordedDate = "2024-06-15"

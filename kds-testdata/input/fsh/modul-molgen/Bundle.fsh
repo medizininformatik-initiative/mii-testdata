@@ -9,10 +9,10 @@ Description: "Bundle: Molekulargenetik Testdaten Patient-3 und Patient-4"
 * insert TestDataLabel
 * type = #transaction
 * timestamp = "2025-06-18T13:51:00+02:00"
-* insert AddBundleEntry(mii-exa-test-data-patient-3, Patient)
-* insert AddBundleEntry(mii-exa-test-data-patient-3-encounter-1, Encounter)
-* insert AddBundleEntry(mii-exa-test-data-patient-4, Patient)
-* insert AddBundleEntry(mii-exa-test-data-patient-4-encounter-1, Encounter)
+* insert AddBundleEntry(mii-exa-test-data-molgen-patient-1, Patient)
+* insert AddBundleEntry(mii-exa-test-data-molgen-encounter-1, Encounter)
+* insert AddBundleEntry(mii-exa-test-data-molgen-patient-2, Patient)
+* insert AddBundleEntry(mii-exa-test-data-molgen-encounter-2, Encounter)
 // Device
 * insert AddBundleEntry(mii-exa-test-data-molgen-device-sequencer, Device)
 // Patient-3 Molekulargenetik

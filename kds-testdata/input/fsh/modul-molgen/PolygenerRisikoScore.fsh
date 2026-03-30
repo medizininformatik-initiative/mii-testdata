@@ -13,8 +13,8 @@ Description: "RiskAssessment: Polygener Risiko Score fuer kolorektales Karzinom"
 * status = #final
 * code = $sct#721961004 "Risk assessment score (observable entity)"
 * code.text = "Polygener Risiko Score (PRS)"
-* subject = Reference(mii-exa-test-data-patient-3)
-* encounter = Reference(mii-exa-test-data-patient-3-encounter-1)
+* subject = Reference(mii-exa-test-data-molgen-patient-1)
+* encounter = Reference(mii-exa-test-data-molgen-encounter-1)
 * occurrenceDateTime = "2022-04-07"
 * condition = Reference(mii-exa-test-data-patient-3-diagnose-1)
 * basis = Reference(mii-exa-test-data-patient-3-molgen-variante-1)

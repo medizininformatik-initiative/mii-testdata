@@ -28,8 +28,8 @@ Description: "Therapieempfehlung nicht-medikamentoes: Annual cardiac screening -
 * code.coding[+] = $ops#3-052 "Transthorakale Echokardiographie"
 * code.coding[+] = $loinc#34552-0 "Cardiology Diagnostic study"
 * code.text = "Jaehrliche kardiologische Kontrolle mittels Echokardiographie bei Marfan-Syndrom"
-* subject = Reference(mii-exa-test-data-patient-3)
-* encounter = Reference(mii-exa-test-data-patient-3-encounter-1)
+* subject = Reference(mii-exa-test-data-seltene-patient-1)
+* encounter = Reference(mii-exa-test-data-seltene-encounter-1)
 * occurrenceTiming.repeat.frequency = 1
 * occurrenceTiming.repeat.period = 1
 * occurrenceTiming.repeat.periodUnit = #a
@@ -60,8 +60,8 @@ Description: "Studieneinschluss Anfrage: Clinical trial referral - all MS elemen
 * status = #active
 * intent = #proposal
 // category and code inherited from profile (fixed values)
-* subject = Reference(mii-exa-test-data-patient-3)
-* encounter = Reference(mii-exa-test-data-patient-3-encounter-1)
+* subject = Reference(mii-exa-test-data-seltene-patient-1)
+* encounter = Reference(mii-exa-test-data-seltene-encounter-1)
 * reasonReference = Reference(mii-exa-test-data-patient-3-seltene-clinical-diagnosis-1)
 // supportingInfo sliced - Studie reference
 * supportingInfo = Reference(mii-exa-test-data-patient-3-molgen-befundbericht-1)

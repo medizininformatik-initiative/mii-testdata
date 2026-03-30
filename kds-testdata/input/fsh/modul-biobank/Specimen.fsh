@@ -85,7 +85,7 @@ Description: "Specimen: Gewebeprobe aus dem Kolon"
 * identifier.system = "https://www.charite.de/fhir/sid/Bioproben"
 * identifier.value = "BP_000002"
 * status = #available
-* subject = Reference(mii-exa-test-data-patient-3)
+* subject = Reference(mii-exa-test-data-biobank-patient-3)
 * container.type = $sct#83059008 "Tube, device (physical object)"
 * container.capacity = 5 'ml'
 * container.capacity.unit = "mL"
@@ -106,7 +106,7 @@ Description: "Specimen: Serum für Klinische Chemie"
 * identifier.value = "BP_000004"
 * status = #available
 * type.coding[sct] = $sct#119364003 "Serum specimen (specimen)"
-* subject = Reference(mii-exa-test-data-patient-3)
+* subject = Reference(mii-exa-test-data-biobank-patient-3)
 * collection.collectedDateTime = "2022-04-05T07:15:00+02:00"
 * collection.bodySite.coding[sct] = $sct#368208006 "Left upper arm structure (body structure)"
 * container.type = $sct#83059008 "Tube, device (physical object)"
@@ -129,7 +129,7 @@ Description: "Specimen: EDTA-Blut für Hämatologie"
 * identifier.value = "BP_000005"
 * status = #available
 * type.coding[sct] = $sct#445295009 "Blood specimen with edetic acid (specimen)"
-* subject = Reference(mii-exa-test-data-patient-3)
+* subject = Reference(mii-exa-test-data-biobank-patient-3)
 * collection.collectedDateTime = "2022-04-05T07:15:00+02:00"
 * collection.bodySite.coding[sct] = $sct#368209003 "Right upper arm structure (body structure)"
 * container.type = $sct#83059008 "Tube, device (physical object)"
@@ -146,7 +146,7 @@ Description: "Specimen: EDTA-Blut für Klinische Chemie und Hämatologie"
 * insert TestDataLabel
 * status = #available
 * type = $sct#445295009 "Blood specimen with edetic acid (specimen)"
-* subject = Reference(mii-exa-test-data-patient-4)
+* subject = Reference(mii-exa-test-data-biobank-patient-4)
 * receivedTime = "2022-11-30"
 * collection.collectedDateTime = "2022-11-30"
 * identifier.system = "https://www.charite.de/fhir/sid/bioproben"
@@ -164,7 +164,7 @@ Description: "Specimen: EDTA-Blut für Klinische Chemie und Hämatologie"
 * insert TestDataLabel
 * status = #available
 * type = $sct#445295009 "Blood specimen with edetic acid (specimen)"
-* subject = Reference(mii-exa-test-data-patient-4)
+* subject = Reference(mii-exa-test-data-biobank-patient-4)
 * receivedTime = "2022-11-30"
 * collection.collectedDateTime = "2022-11-30"
 * identifier.system = "https://www.charite.de/fhir/sid/bioproben"
@@ -189,7 +189,7 @@ Description: "Specimen: Serum für Klinische Chemie"
 * identifier.value = "BP_000006"
 * status = #available
 * type.coding[sct] = $sct#119364003 "Serum specimen (specimen)"
-* subject = Reference(mii-exa-test-data-patient-4)
+* subject = Reference(mii-exa-test-data-biobank-patient-4)
 * collection.collectedDateTime = "2020-09-17T06:30:00+02:00"
 * collection.bodySite.coding[sct] = $sct#368208006 "Left upper arm structure (body structure)"
 * container.type = $sct#83059008 "Tube, device (physical object)"
@@ -212,7 +212,7 @@ Description: "Specimen: EDTA-Blut für Hämatologie"
 * identifier.value = "BP_000007"
 * status = #available
 * type.coding[sct] = $sct#445295009 "Blood specimen with edetic acid (specimen)"
-* subject = Reference(mii-exa-test-data-patient-4)
+* subject = Reference(mii-exa-test-data-biobank-patient-4)
 * collection.collectedDateTime = "2020-09-17T06:30:00+02:00"
 * collection.bodySite.coding[sct] = $sct#368209003 "Right upper arm structure (body structure)"
 * container.type = $sct#83059008 "Tube, device (physical object)"
@@ -235,7 +235,7 @@ Description: "Specimen: EDTA-Blut für Hämatologie"
 * identifier.value = "BP_000008"
 * status = #available
 * type.coding[sct] = $sct#445295009 "Blood specimen with edetic acid (specimen)"
-* subject = Reference(mii-exa-test-data-patient-5)
+* subject = Reference(mii-exa-test-data-biobank-patient-5)
 * collection.collectedDateTime = "2023-07-12T06:00:00+02:00"
 * collection.bodySite.coding[sct] = $sct#368208006 "Left upper arm structure (body structure)"
 * container.type = $sct#83059008 "Tube, device (physical object)"
@@ -258,7 +258,7 @@ Description: "Specimen: Serum für Klinische Chemie"
 * identifier.value = "BP_000009"
 * status = #available
 * type.coding[sct] = $sct#119364003 "Serum specimen (specimen)"
-* subject = Reference(mii-exa-test-data-patient-5)
+* subject = Reference(mii-exa-test-data-biobank-patient-5)
 * collection.collectedDateTime = "2023-07-12T06:00:00+02:00"
 * collection.bodySite.coding[sct] = $sct#368209003 "Right upper arm structure (body structure)"
 * collection.fastingStatusCodeableConcept = $v2-0916#F "Patient was fasting prior to the procedure."
@@ -282,7 +282,7 @@ Description: "Specimen: EDTA-Blut für Hämatologie"
 * identifier.value = "BP_000010"
 * status = #available
 * type.coding[sct] = $sct#445295009 "Blood specimen with edetic acid (specimen)"
-* subject = Reference(mii-exa-test-data-patient-6)
+* subject = Reference(mii-exa-test-data-biobank-patient-6)
 * collection.collectedDateTime = "2022-03-14T06:15:00+01:00"
 * collection.bodySite.coding[sct] = $sct#368208006 "Left upper arm structure (body structure)"
 * container.type = $sct#83059008 "Tube, device (physical object)"
@@ -305,7 +305,7 @@ Description: "Specimen: Serum für Klinische Chemie"
 * identifier.value = "BP_000011"
 * status = #available
 * type.coding[sct] = $sct#119364003 "Serum specimen (specimen)"
-* subject = Reference(mii-exa-test-data-patient-6)
+* subject = Reference(mii-exa-test-data-biobank-patient-6)
 * collection.collectedDateTime = "2022-03-14T06:15:00+01:00"
 * collection.bodySite.coding[sct] = $sct#368209003 "Right upper arm structure (body structure)"
 * container.type = $sct#83059008 "Tube, device (physical object)"
@@ -328,7 +328,7 @@ Description: "Specimen: EDTA-Blut für Hämatologie"
 * identifier.value = "BP_000012"
 * status = #available
 * type.coding[sct] = $sct#445295009 "Blood specimen with edetic acid (specimen)"
-* subject = Reference(mii-exa-test-data-patient-7)
+* subject = Reference(mii-exa-test-data-biobank-patient-7)
 * collection.collectedDateTime = "2024-01-10T07:30:00+01:00"
 * collection.bodySite.coding[sct] = $sct#368208006 "Left upper arm structure (body structure)"
 * container.type = $sct#83059008 "Tube, device (physical object)"
@@ -351,7 +351,7 @@ Description: "Specimen: Serum für Klinische Chemie"
 * identifier.value = "BP_000013"
 * status = #available
 * type.coding[sct] = $sct#119364003 "Serum specimen (specimen)"
-* subject = Reference(mii-exa-test-data-patient-7)
+* subject = Reference(mii-exa-test-data-biobank-patient-7)
 * collection.collectedDateTime = "2024-01-10T07:30:00+01:00"
 * collection.bodySite.coding[sct] = $sct#368209003 "Right upper arm structure (body structure)"
 * container.type = $sct#83059008 "Tube, device (physical object)"
@@ -374,7 +374,7 @@ Description: "Specimen: EDTA-Blut für Hämatologie"
 * identifier.value = "BP_000014"
 * status = #available
 * type.coding[sct] = $sct#445295009 "Blood specimen with edetic acid (specimen)"
-* subject = Reference(mii-exa-test-data-patient-8)
+* subject = Reference(mii-exa-test-data-biobank-patient-8)
 * collection.collectedDateTime = "2023-11-12T05:45:00+01:00"
 * collection.bodySite.coding[sct] = $sct#368208006 "Left upper arm structure (body structure)"
 * container.type = $sct#83059008 "Tube, device (physical object)"
@@ -397,7 +397,7 @@ Description: "Specimen: Serum für Klinische Chemie"
 * identifier.value = "BP_000015"
 * status = #available
 * type.coding[sct] = $sct#119364003 "Serum specimen (specimen)"
-* subject = Reference(mii-exa-test-data-patient-8)
+* subject = Reference(mii-exa-test-data-biobank-patient-8)
 * collection.collectedDateTime = "2023-11-12T05:45:00+01:00"
 * collection.bodySite.coding[sct] = $sct#368209003 "Right upper arm structure (body structure)"
 * container.type = $sct#83059008 "Tube, device (physical object)"
@@ -420,7 +420,7 @@ Description: "Specimen: EDTA-Blut für Hämatologie"
 * identifier.value = "BP_000016"
 * status = #available
 * type.coding[sct] = $sct#445295009 "Blood specimen with edetic acid (specimen)"
-* subject = Reference(mii-exa-test-data-patient-9)
+* subject = Reference(mii-exa-test-data-biobank-patient-9)
 * collection.collectedDateTime = "2024-02-22T06:30:00+01:00"
 * collection.bodySite.coding[sct] = $sct#368208006 "Left upper arm structure (body structure)"
 * container.type = $sct#83059008 "Tube, device (physical object)"
@@ -443,7 +443,7 @@ Description: "Specimen: Serum für Klinische Chemie"
 * identifier.value = "BP_000017"
 * status = #available
 * type.coding[sct] = $sct#119364003 "Serum specimen (specimen)"
-* subject = Reference(mii-exa-test-data-patient-9)
+* subject = Reference(mii-exa-test-data-biobank-patient-9)
 * collection.collectedDateTime = "2024-02-22T06:30:00+01:00"
 * collection.bodySite.coding[sct] = $sct#368209003 "Right upper arm structure (body structure)"
 * container.type = $sct#83059008 "Tube, device (physical object)"

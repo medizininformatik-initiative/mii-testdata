@@ -11,7 +11,7 @@ Description: "Therapie durchgefuehrt: Pharmakotherapie (Losartan) - tests perfor
 * insert TestDataLabel
 * status = #completed
 * code.coding = $seltene-cs-narse#pharmakotherapie "Pharmakotherapie"
-* subject = Reference(mii-exa-test-data-patient-3)
+* subject = Reference(mii-exa-test-data-seltene-patient-1)
 * performedPeriod.start = "2025-03-15"
 * performedPeriod.end = "2025-09-15"
 
@@ -23,5 +23,5 @@ Description: "Therapie durchgefuehrt: Sonstiges (Physiotherapie) - tests perform
 * insert TestDataLabel
 * status = #completed
 * code.coding = $seltene-cs-narse#sonstiges "Sonstiges"
-* subject = Reference(mii-exa-test-data-patient-3)
+* subject = Reference(mii-exa-test-data-seltene-patient-1)
 * performedDateTime = "2025-05-20"

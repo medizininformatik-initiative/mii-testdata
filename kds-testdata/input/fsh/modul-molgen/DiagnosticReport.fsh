@@ -16,8 +16,8 @@ Description: "DiagnosticReport: Molekulargenetischer Befundbericht mit BRAF-Muta
 * status = $diagnostic-report-status#final
 * category[Genetics] = $v2-0074#GE "Genetics"
 * code = $loinc#51969-4 "Genetic analysis report"
-* subject = Reference(mii-exa-test-data-patient-3)
-* encounter = Reference(mii-exa-test-data-patient-3-encounter-1)
+* subject = Reference(mii-exa-test-data-molgen-patient-1)
+* encounter = Reference(mii-exa-test-data-molgen-encounter-1)
 * issued = "2022-04-12T10:30:00+02:00"
 * performer = Reference(mii-exa-test-data-practitioner-physician-1)
 * specimen = Reference(mii-exa-test-data-patient-3-specimen-1)
@@ -44,8 +44,8 @@ Description: "DiagnosticReport: Molekulargenetischer Befundbericht Magenkarzinom
 * status = $diagnostic-report-status#final
 * category[Genetics] = $v2-0074#GE "Genetics"
 * code[+] = $loinc#51969-4 "Genetic analysis report"
-* subject = Reference(mii-exa-test-data-patient-4)
-* encounter = Reference(mii-exa-test-data-patient-4-encounter-1)
+* subject = Reference(mii-exa-test-data-molgen-patient-2)
+* encounter = Reference(mii-exa-test-data-molgen-encounter-2)
 * issued = "2022-12-05T14:00:00+01:00"
 * performer = Reference(mii-exa-test-data-practitioner-physician-2)
 * resultsInterpreter = Reference(mii-exa-test-data-practitioner-physician-2)

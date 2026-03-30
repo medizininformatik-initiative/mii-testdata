@@ -12,7 +12,7 @@ Description: "Therapieplan: Marfan syndrome care plan - all activity slices and 
 * insert TestDataLabel
 * status = #draft
 * intent = #proposal
-* subject = Reference(mii-exa-test-data-patient-3)
+* subject = Reference(mii-exa-test-data-seltene-patient-1)
 * created = "2025-03-10"
 * description = "Therapieplan fuer Patient mit Marfan-Syndrom: Medikamentoese Therapie mit Losartan, kardiologische Frueherkennung und Studieneinschluss"
 * supportingInfo = Reference(mii-exa-test-data-patient-3-molgen-befundbericht-1)

@@ -20,6 +20,6 @@ Description: "Therapieempfehlung Kombination: Combined therapy for Marfan - all 
 * identifier[=].value = "SE-KOMBI-2025-001"
 * status = #draft
 * intent = #proposal
-* subject = Reference(mii-exa-test-data-patient-3)
+* subject = Reference(mii-exa-test-data-seltene-patient-1)
 // Multiple actions referencing therapy recommendations
 * action[+].resource = Reference(mii-exa-test-data-patient-3-seltene-therapieempfehlung-1)

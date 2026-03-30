@@ -10,7 +10,7 @@ Description: "Observation: Genetische Variante fuer BRAF-Mutation"
 * status = #final
 * category[labCategory] = $observation-category#laboratory "Laboratory"
 * code = $loinc#69548-6 "Genetic variant assessment"
-* subject = Reference(mii-exa-test-data-patient-3)
+* subject = Reference(mii-exa-test-data-molgen-patient-1)
 * effectiveDateTime = "2022-04-07"
 * issued = "2022-04-12T10:30:00+02:00"
 * valueCodeableConcept = $loinc#LA9633-4 "Present"
@@ -69,7 +69,7 @@ Description: "Observation: Genetische Variante fuer CTNNA1-Mutation"
 * status = #final
 * category[labCategory] = $observation-category#laboratory "Laboratory"
 * code = $loinc#69548-6 "Genetic variant assessment"
-* subject = Reference(mii-exa-test-data-patient-4)
+* subject = Reference(mii-exa-test-data-molgen-patient-2)
 * effectiveDateTime = "2022-11-30"
 * issued = "2022-12-05T14:00:00+01:00"
 * valueCodeableConcept = $loinc#LA9633-4 "Present"
@@ -99,7 +99,7 @@ Description: "Observation: Genetische Variante EGFR L858R bei NSCLC"
 * status = #final
 * category[labCategory] = $observation-category#laboratory "Laboratory"
 * code = $loinc#69548-6 "Genetic variant assessment"
-* subject = Reference(mii-exa-test-data-patient-3)
+* subject = Reference(mii-exa-test-data-molgen-patient-1)
 * effectiveDateTime = "2024-03-20"
 * issued = "2024-03-25T10:00:00+01:00"
 * valueCodeableConcept = $loinc#LA9633-4 "Present"
@@ -152,7 +152,7 @@ Description: "Observation: Genetische Variante EGFR Exon-20-Insertion p.Ala767_V
 * status = #final
 * category[labCategory] = $observation-category#laboratory "Laboratory"
 * code = $loinc#69548-6 "Genetic variant assessment"
-* subject = Reference(mii-exa-test-data-patient-3)
+* subject = Reference(mii-exa-test-data-molgen-patient-1)
 * effectiveDateTime = "2024-03-20"
 * issued = "2024-03-25T10:00:00+01:00"
 * valueCodeableConcept = $loinc#LA9633-4 "Present"

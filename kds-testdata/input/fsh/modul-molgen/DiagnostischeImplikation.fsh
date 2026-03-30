@@ -9,8 +9,8 @@ Description: "Observation: Diagnostische Implikation fuer BRAF-Mutation"
 * status = #final
 * category[labCategory] = $observation-category#laboratory "Laboratory"
 * code = $tbd-codes-cs#diagnostic-implication "Diagnostic Implication"
-* subject = Reference(mii-exa-test-data-patient-3)
-* encounter = Reference(mii-exa-test-data-patient-3-encounter-1)
+* subject = Reference(mii-exa-test-data-molgen-patient-1)
+* encounter = Reference(mii-exa-test-data-molgen-encounter-1)
 * effectiveDateTime = "2022-04-07"
 * issued = "2022-04-12T10:30:00+02:00"
 * derivedFrom[variant] = Reference(mii-exa-test-data-patient-3-molgen-variante-1)
@@ -33,8 +33,8 @@ Description: "Observation: Diagnostische Implikation fuer Magenkarzinom"
 * status = #final
 * category[labCategory] = $observation-category#laboratory "Laboratory"
 * code = $tbd-codes-cs#diagnostic-implication "Diagnostic Implication"
-* subject = Reference(mii-exa-test-data-patient-4)
-* encounter = Reference(mii-exa-test-data-patient-4-encounter-1)
+* subject = Reference(mii-exa-test-data-molgen-patient-2)
+* encounter = Reference(mii-exa-test-data-molgen-encounter-2)
 * effectiveDateTime = "2022-11-30"
 * issued = "2022-12-05T14:00:00+01:00"
 * performer = Reference(mii-exa-test-data-practitioner-physician-2)

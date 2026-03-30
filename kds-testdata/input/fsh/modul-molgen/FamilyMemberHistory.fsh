@@ -6,7 +6,7 @@ Usage: #example
 Description: "FamilyMemberHistory: Familienanamnese fuer BRAF-Mutation"
 * insert TestDataLabel
 * status = #completed
-* patient = Reference(mii-exa-test-data-patient-3)
+* patient = Reference(mii-exa-test-data-molgen-patient-1)
 * date = "2022-04-07"
 * relationship.coding[snomed] = $sct#72705000 "Mother (person)"
 * relationship.coding[v3-RoleCode] = $v3-RoleCode#MTH "mother"
@@ -33,7 +33,7 @@ Usage: #example
 Description: "FamilyMemberHistory: Familienanamnese fuer Magenkarzinom"
 * insert TestDataLabel
 * status = #completed
-* patient = Reference(mii-exa-test-data-patient-4)
+* patient = Reference(mii-exa-test-data-molgen-patient-2)
 * date = "2022-11-30"
 * relationship.coding[snomed] = $sct#72705000 "Mother (person)"
 * relationship.coding[v3-RoleCode] = $v3-RoleCode#MTH "mother"

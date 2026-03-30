@@ -11,8 +11,8 @@ Description: "ServiceRequest: Anforderung genetischer Test fuer BRAF-Mutation"
 * code.coding[+] = $loinc#53844-7 "BRAF gene targeted mutation analysis in Blood or Tissue by Molecular genetics method"
 * code.coding[+] = $HGNC#HGNC:1097 "BRAF"
 * code.text = "BRAF: Exon 15 (Codon 600)"
-* subject = Reference(mii-exa-test-data-patient-3)
-* encounter = Reference(mii-exa-test-data-patient-3-encounter-1)
+* subject = Reference(mii-exa-test-data-molgen-patient-1)
+* encounter = Reference(mii-exa-test-data-molgen-encounter-1)
 * authoredOn = "2022-04-07"
 * requester = Reference(mii-exa-test-data-practitioner-physician-1)
 * reasonCode = $sct#447886005 "Adenocarcinoma of anorectum (disorder)"
@@ -33,8 +33,8 @@ Description: "ServiceRequest: Anforderung molekulargenetische Stufendiagnostik"
 * category = $sct#108252007 "Laboratory procedure (procedure)"
 * code.coding[0] = $sct#405825005 "Molecular genetic test (procedure)"
 * code.text = "Molekulargenetische Untersuchung (Stufendiagnostik) der relevanten Gene"
-* subject = Reference(mii-exa-test-data-patient-4)
-* encounter = Reference(mii-exa-test-data-patient-4-encounter-1)
+* subject = Reference(mii-exa-test-data-molgen-patient-2)
+* encounter = Reference(mii-exa-test-data-molgen-encounter-2)
 * authoredOn = "2022-11-30"
 * requester = Reference(mii-exa-test-data-practitioner-physician-2)
 * specimen = Reference(mii-exa-test-data-patient-4-specimen-1)
@@ -59,8 +59,8 @@ Description: "ServiceRequest: Anforderung NGS-Panel bei NSCLC Stadium IV gemaess
 * category = $sct#108252007 "Laboratory procedure (procedure)"
 * code.coding[0] = $sct#405825005 "Molecular genetic test (procedure)"
 * code.text = "NGS-Panel NSCLC: EGFR Exon 18-21, BRAF V600, ALK, ROS1, RET, NTRK 1-3, KRAS G12C, MET Exon 14, NRG1, HER2 Exon 8/18-21"
-* subject = Reference(mii-exa-test-data-patient-3)
-* encounter = Reference(mii-exa-test-data-patient-3-encounter-1)
+* subject = Reference(mii-exa-test-data-molgen-patient-1)
+* encounter = Reference(mii-exa-test-data-molgen-encounter-1)
 * authoredOn = "2024-03-15"
 * requester = Reference(mii-exa-test-data-practitioner-physician-1)
 * reasonCode = $sct#254637007 "Non-small cell carcinoma of lung (disorder)"

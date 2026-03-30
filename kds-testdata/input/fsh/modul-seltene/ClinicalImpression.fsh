@@ -13,8 +13,8 @@ Description: "ClinicalImpression: Rare disease assessment - all MS elements popu
 * status = #completed
 * code = $sct#389067005 "Community health procedure"
 * description = "Marfan-Sprechstunde: Erstvorstellung zur Abklaerung erblicher Bindegewebserkrankung"
-* subject = Reference(mii-exa-test-data-patient-3)
-* encounter = Reference(mii-exa-test-data-patient-3-encounter-1)
+* subject = Reference(mii-exa-test-data-seltene-patient-1)
+* encounter = Reference(mii-exa-test-data-seltene-encounter-1)
 * effectiveDateTime = "2025-03-10"
 * date = "2025-03-10"
 * summary = "Patient mit V.a. Marfan-Syndrom vorgestellt. Aortenwurzeldilatation und Linsensubluxation nachgewiesen. Ghent-Kriterien erfuellt. Genetische Testung veranlasst."

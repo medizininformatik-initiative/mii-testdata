@@ -9,8 +9,8 @@ Description: "Observation: Therapeutische Implikation fuer BRAF-Mutation"
 * code = $tbd-codes-cs#therapeutic-implication "Therapeutic Implication"
 * category[labCategory] = $observation-category#laboratory "Laboratory"
 * status = #final
-* subject = Reference(mii-exa-test-data-patient-3)
-* encounter = Reference(mii-exa-test-data-patient-3-encounter-1)
+* subject = Reference(mii-exa-test-data-molgen-patient-1)
+* encounter = Reference(mii-exa-test-data-molgen-encounter-1)
 * effectiveDateTime = "2022-04-07"
 * issued = "2022-04-12T10:30:00+02:00"
 * derivedFrom[variant] = Reference(mii-exa-test-data-patient-3-molgen-variante-1)
@@ -42,8 +42,8 @@ Description: "Observation: Therapeutische Implikation fuer EGFR L858R bei NSCLC 
 * code = $tbd-codes-cs#therapeutic-implication "Therapeutic Implication"
 * category[labCategory] = $observation-category#laboratory "Laboratory"
 * status = #final
-* subject = Reference(mii-exa-test-data-patient-3)
-* encounter = Reference(mii-exa-test-data-patient-3-encounter-1)
+* subject = Reference(mii-exa-test-data-molgen-patient-1)
+* encounter = Reference(mii-exa-test-data-molgen-encounter-1)
 * effectiveDateTime = "2024-03-20"
 * issued = "2024-03-25T10:00:00+01:00"
 * derivedFrom[variant] = Reference(mii-exa-test-data-patient-3-molgen-variante-2)
@@ -70,8 +70,8 @@ Description: "Observation: Therapeutische Implikation fuer EGFR Exon-20-Insertio
 * code = $tbd-codes-cs#therapeutic-implication "Therapeutic Implication"
 * category[labCategory] = $observation-category#laboratory "Laboratory"
 * status = #final
-* subject = Reference(mii-exa-test-data-patient-3)
-* encounter = Reference(mii-exa-test-data-patient-3-encounter-1)
+* subject = Reference(mii-exa-test-data-molgen-patient-1)
+* encounter = Reference(mii-exa-test-data-molgen-encounter-1)
 * effectiveDateTime = "2024-03-20"
 * issued = "2024-03-25T10:00:00+01:00"
 * derivedFrom[variant] = Reference(mii-exa-test-data-patient-3-molgen-variante-3)

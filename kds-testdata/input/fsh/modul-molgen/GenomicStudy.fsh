@@ -9,7 +9,7 @@ Usage: #example
 Description: "Procedure: Genomic Study Analysis BRAF Exon 15 mittels NGS"
 * insert TestDataLabel
 * status = #completed
-* subject = Reference(mii-exa-test-data-patient-3)
+* subject = Reference(mii-exa-test-data-molgen-patient-1)
 * extension[title].url = "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-title"
 * extension[title].valueString = "BRAF Exon 15 Analyse"
 * extension[method-type].url = "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-method-type"
@@ -36,8 +36,8 @@ Description: "Procedure: Genomic Study BRAF-Analyse bei kolorektalem Adenokarzin
 * insert TestDataLabel
 * status = #completed
 * code = $sct#405825005 "Molecular genetic test (procedure)"
-* subject = Reference(mii-exa-test-data-patient-3)
-* encounter = Reference(mii-exa-test-data-patient-3-encounter-1)
+* subject = Reference(mii-exa-test-data-molgen-patient-1)
+* encounter = Reference(mii-exa-test-data-molgen-encounter-1)
 * performedDateTime = "2022-04-07"
 * reasonReference = Reference(mii-exa-test-data-patient-3-diagnose-1)
 * extension[genomic-study-analysis][+].url = "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-ext"
@@ -50,7 +50,7 @@ Usage: #example
 Description: "Procedure: Genomic Study Analysis Stufendiagnostik Magenkarzinom-Panel"
 * insert TestDataLabel
 * status = #completed
-* subject = Reference(mii-exa-test-data-patient-4)
+* subject = Reference(mii-exa-test-data-molgen-patient-2)
 * extension[title].url = "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-title"
 * extension[title].valueString = "Stufendiagnostik hereditaeres Magenkarzinom"
 * extension[method-type].url = "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-method-type"
@@ -93,8 +93,8 @@ Description: "Procedure: Genomic Study Stufendiagnostik Magenkarzinom"
 * insert TestDataLabel
 * status = #completed
 * code = $sct#405825005 "Molecular genetic test (procedure)"
-* subject = Reference(mii-exa-test-data-patient-4)
-* encounter = Reference(mii-exa-test-data-patient-4-encounter-1)
+* subject = Reference(mii-exa-test-data-molgen-patient-2)
+* encounter = Reference(mii-exa-test-data-molgen-encounter-2)
 * performedDateTime = "2022-11-30"
 * reasonReference = Reference(mii-exa-test-data-patient-4-diagnose-1)
 * extension[genomic-study-analysis][+].url = "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-ext"

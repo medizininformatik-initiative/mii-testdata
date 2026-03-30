@@ -9,8 +9,8 @@ Description: "Bundle: Seltene Erkrankungen Testdaten Patient-3"
 * insert TestDataLabel
 * type = #transaction
 * timestamp = "2025-06-18T13:51:00+02:00"
-* insert AddBundleEntry(mii-exa-test-data-patient-3, Patient)
-* insert AddBundleEntry(mii-exa-test-data-patient-3-encounter-1, Encounter)
+* insert AddBundleEntry(mii-exa-test-data-seltene-patient-1, Patient)
+* insert AddBundleEntry(mii-exa-test-data-seltene-encounter-1, Encounter)
 // Body Measurements
 * insert AddBundleEntry(mii-exa-test-data-patient-3-seltene-bmi-1, Observation)
 * insert AddBundleEntry(mii-exa-test-data-patient-3-seltene-kopfumfang-1, Observation)
