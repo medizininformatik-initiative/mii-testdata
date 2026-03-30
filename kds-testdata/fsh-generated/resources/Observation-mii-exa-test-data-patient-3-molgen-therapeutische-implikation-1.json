@@ -61,7 +61,6 @@
           {
             "code": "703645005",
             "system": "http://snomed.info/sct",
-            "version": "http://snomed.info/sct/900000000000207008/version/20230731",
             "display": "Product containing B-Raf inhibitor (product)"
           }
         ],
@@ -145,7 +144,6 @@
           {
             "code": "447886005",
             "system": "http://snomed.info/sct",
-            "version": "http://snomed.info/sct/900000000000207008/version/20230731",
             "display": "Adenocarcinoma of anorectum (disorder)"
           }
         ]

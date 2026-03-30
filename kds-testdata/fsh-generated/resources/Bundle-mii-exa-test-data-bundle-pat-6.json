@@ -438,7 +438,6 @@
             {
               "system": "http://snomed.info/sct",
               "code": "4556007",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
               "display": "Gastritis (disorder)"
             }
           ]
@@ -454,7 +453,6 @@
               {
                 "system": "http://snomed.info/sct",
                 "code": "69695003",
-                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                 "display": "Stomach structure (body structure)"
               }
             ]
@@ -561,8 +559,7 @@
           "coding": [
             {
               "system": "http://snomed.info/sct",
-              "code": "165197003",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+              "code": "165197003"
             }
           ]
         },
@@ -570,8 +567,7 @@
           "coding": [
             {
               "system": "http://snomed.info/sct",
-              "code": "76009000",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+              "code": "76009000"
             },
             {
               "system": "http://fhir.de/CodeSystem/bfarm/ops",
@@ -585,8 +581,7 @@
             "coding": [
               {
                 "code": "32849002",
-                "system": "http://snomed.info/sct",
-                "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+                "system": "http://snomed.info/sct"
               }
             ]
           }
@@ -602,7 +597,6 @@
             "valueCoding": {
               "system": "http://snomed.info/sct",
               "code": "261004008",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
               "display": "Diagnostic intent"
             }
           }
@@ -645,8 +639,7 @@
           "coding": [
             {
               "system": "http://snomed.info/sct",
-              "code": "165197003",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+              "code": "165197003"
             }
           ]
         },
@@ -654,8 +647,7 @@
           "coding": [
             {
               "system": "http://snomed.info/sct",
-              "code": "408652004",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+              "code": "408652004"
             },
             {
               "system": "http://fhir.de/CodeSystem/bfarm/ops",
@@ -669,8 +661,7 @@
             "coding": [
               {
                 "code": "122865005",
-                "system": "http://snomed.info/sct",
-                "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+                "system": "http://snomed.info/sct"
               }
             ]
           }
@@ -686,7 +677,6 @@
             "valueCoding": {
               "system": "http://snomed.info/sct",
               "code": "261004008",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
               "display": "Diagnostic intent"
             }
           }
@@ -761,15 +751,9 @@
               {
                 "code": "4556007",
                 "system": "http://snomed.info/sct",
-                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                 "display": "Gastritis"
               }
             ]
-          }
-        ],
-        "specimen": [
-          {
-            "reference": "Specimen/mii-exa-test-data-patient-6-specimen-2"
           }
         ],
         "status": "completed",
@@ -867,14 +851,6 @@
         "performer": [
           {
             "reference": "Organization/mii-exa-test-data-organization-labor-berlin"
-          }
-        ],
-        "specimen": [
-          {
-            "reference": "Specimen/mii-exa-test-data-patient-6-specimen-1"
-          },
-          {
-            "reference": "Specimen/mii-exa-test-data-patient-6-specimen-2"
           }
         ],
         "result": [
@@ -1002,13 +978,9 @@
             {
               "code": "703452004",
               "system": "http://snomed.info/sct",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
               "display": "Electrical impedance technique (qualifier value)"
             }
           ]
-        },
-        "specimen": {
-          "reference": "Specimen/mii-exa-test-data-patient-6-specimen-1"
         },
         "device": {
           "reference": "Device/mii-exa-test-data-device-roche-cobas-c303"
@@ -1117,13 +1089,9 @@
             {
               "code": "83561000052101",
               "system": "http://snomed.info/sct",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
               "display": "Photometry technique (qualifier value)"
             }
           ]
-        },
-        "specimen": {
-          "reference": "Specimen/mii-exa-test-data-patient-6-specimen-1"
         },
         "device": {
           "reference": "Device/mii-exa-test-data-device-roche-cobas-c303"
@@ -1232,13 +1200,9 @@
             {
               "code": "83561000052101",
               "system": "http://snomed.info/sct",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
               "display": "Photometry technique (qualifier value)"
             }
           ]
-        },
-        "specimen": {
-          "reference": "Specimen/mii-exa-test-data-patient-6-specimen-1"
         },
         "device": {
           "reference": "Device/mii-exa-test-data-device-roche-cobas-c303"
@@ -2461,7 +2425,6 @@
               {
                 "code": "309343006",
                 "system": "http://snomed.info/sct",
-                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                 "display": "Physician (occupation)"
               }
             ]

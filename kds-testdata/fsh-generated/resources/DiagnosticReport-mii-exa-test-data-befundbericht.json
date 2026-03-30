@@ -24,7 +24,6 @@
         {
           "system": "http://snomed.info/sct",
           "code": "4201000179104",
-          "version": "http://snomed.info/sct/900000000000207008/version/20230731",
           "display": "Imaging report (record artifact)"
         }
       ]
@@ -44,10 +43,9 @@
     {
       "coding": [
         {
-          "code": "12747003",
+          "code": "129770009",
           "system": "http://snomed.info/sct",
-          "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-          "display": "Microcalcification, calcified structure (morphologic abnormality)"
+          "display": "Mammographic calcification finding (finding)"
         }
       ]
     }
@@ -66,7 +64,6 @@
       {
         "code": "4231000179109",
         "system": "http://snomed.info/sct",
-        "version": "http://snomed.info/sct/900000000000207008/version/20230731",
         "display": "Mammography report"
       }
     ]

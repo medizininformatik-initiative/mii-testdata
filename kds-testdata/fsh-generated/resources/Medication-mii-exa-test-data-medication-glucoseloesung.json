@@ -57,7 +57,6 @@
           {
             "code": "67079006",
             "system": "http://snomed.info/sct",
-            "version": "http://snomed.info/sct/900000000000207008/version/20230731",
             "display": "Glucose (substance)"
           }
         ]
@@ -100,7 +99,6 @@
           {
             "code": "11713004",
             "system": "http://snomed.info/sct",
-            "version": "http://snomed.info/sct/900000000000207008/version/20230731",
             "display": "Water (substance)"
           }
         ]

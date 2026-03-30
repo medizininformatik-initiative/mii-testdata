@@ -23,7 +23,7 @@
     {
       "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Diagnose",
       "valueReference": {
-        "reference": "Condition/mii-exa-test-data-patient-5-diagnose-1"
+        "reference": "Condition/mii-exa-test-data-biobank-diagnose-1"
       }
     }
   ],
@@ -38,7 +38,6 @@
       {
         "system": "http://snomed.info/sct",
         "code": "119364003",
-        "version": "http://snomed.info/sct/900000000000207008/version/20230731",
         "display": "Serum specimen (specimen)"
       }
     ]
@@ -49,7 +48,6 @@
         {
           "code": "368209003",
           "system": "http://snomed.info/sct",
-          "version": "http://snomed.info/sct/900000000000207008/version/20230731",
           "display": "Right upper arm structure (body structure)"
         }
       ]
@@ -84,7 +82,6 @@
           {
             "code": "83059008",
             "system": "http://snomed.info/sct",
-            "version": "http://snomed.info/sct/900000000000207008/version/20230731",
             "display": "Tube, device (physical object)"
           }
         ]

@@ -23,7 +23,6 @@
       {
         "system": "http://snomed.info/sct",
         "code": "444479000",
-        "version": "http://snomed.info/sct/900000000000207008/version/20230731",
         "display": "Rate of blood flow through cardiovascular device"
       }
     ]

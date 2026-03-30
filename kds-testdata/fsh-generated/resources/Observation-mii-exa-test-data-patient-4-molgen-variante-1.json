@@ -258,7 +258,7 @@
     ]
   },
   "specimen": {
-    "reference": "Specimen/mii-exa-test-data-patient-4-specimen-1"
+    "reference": "Specimen/mii-exa-test-data-molgen-specimen-2"
   },
   "device": {
     "reference": "Device/mii-exa-test-data-molgen-device-sequencer"

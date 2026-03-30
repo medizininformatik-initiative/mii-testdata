@@ -25,7 +25,6 @@
         {
           "code": "108252007",
           "system": "http://snomed.info/sct",
-          "version": "http://snomed.info/sct/900000000000207008/version/20230731",
           "display": "Laboratory procedure (procedure)"
         }
       ]
@@ -36,7 +35,6 @@
       {
         "code": "405825005",
         "system": "http://snomed.info/sct",
-        "version": "http://snomed.info/sct/900000000000207008/version/20230731",
         "display": "Molecular genetic test (procedure)"
       }
     ],
@@ -44,7 +42,7 @@
   },
   "specimen": [
     {
-      "reference": "Specimen/mii-exa-test-data-patient-4-specimen-1"
+      "reference": "Specimen/mii-exa-test-data-molgen-specimen-2"
     }
   ],
   "reasonCode": [
@@ -53,7 +51,6 @@
         {
           "code": "87737001",
           "system": "http://snomed.info/sct",
-          "version": "http://snomed.info/sct/900000000000207008/version/20230731",
           "display": "Signet ring cell carcinoma (morphologic abnormality)"
         }
       ],
@@ -64,7 +61,6 @@
         {
           "code": "429740004",
           "system": "http://snomed.info/sct",
-          "version": "http://snomed.info/sct/900000000000207008/version/20230731",
           "display": "Family history of malignant neoplasm of breast (situation)"
         }
       ],
@@ -73,7 +69,7 @@
   ],
   "reasonReference": [
     {
-      "reference": "Condition/mii-exa-test-data-patient-4-diagnose-1"
+      "reference": "Condition/mii-exa-test-data-molgen-diagnose-2"
     }
   ],
   "supportingInfo": [

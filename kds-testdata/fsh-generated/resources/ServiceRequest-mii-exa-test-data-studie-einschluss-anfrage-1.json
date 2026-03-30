@@ -19,8 +19,7 @@
         {
           "system": "http://snomed.info/sct",
           "code": "110465008",
-          "display": "Clinical trial (procedure)",
-          "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+          "display": "Clinical trial (procedure)"
         }
       ]
     }
@@ -31,7 +30,6 @@
         {
           "code": "363346000",
           "system": "http://snomed.info/sct",
-          "version": "http://snomed.info/sct/900000000000207008/version/20230731",
           "display": "Malignant neoplastic disease (disorder)"
         }
       ]
@@ -48,8 +46,7 @@
       {
         "system": "http://snomed.info/sct",
         "code": "702475000",
-        "display": "Referral to clinical trial (procedure)",
-        "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+        "display": "Referral to clinical trial (procedure)"
       }
     ]
   },

@@ -36,7 +36,6 @@
       {
         "code": "76752008",
         "system": "http://snomed.info/sct",
-        "version": "http://snomed.info/sct/900000000000207008/version/20230731",
         "display": "Breast structure (body structure)"
       }
     ]
@@ -59,7 +58,7 @@
   ],
   "hasMember": [
     {
-      "reference": "Observation/mii-exa-test-data-patient-1-labobs-1"
+      "reference": "Observation/mii-exa-test-data-bildgebung-labobs-1"
     }
   ],
   "derivedFrom": [
@@ -74,7 +73,7 @@
           {
             "code": "10157-6",
             "system": "http://loinc.org",
-            "display": "History of family member diseases Narrative"
+            "display": "History of family member diseases note"
           }
         ]
       },

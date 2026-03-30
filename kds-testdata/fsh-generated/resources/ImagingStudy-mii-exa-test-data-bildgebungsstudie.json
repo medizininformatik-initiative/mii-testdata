@@ -33,7 +33,7 @@
   ],
   "reasonReference": [
     {
-      "reference": "Condition/mii-exa-test-data-patient-1-diagnose-1"
+      "reference": "Condition/mii-exa-test-data-bildgebung-diagnose-1"
     }
   ],
   "series": [
@@ -197,14 +197,12 @@
       "bodySite": {
         "code": "76752008",
         "system": "http://snomed.info/sct",
-        "version": "http://snomed.info/sct/900000000000207008/version/20230731",
         "display": "Breast structure (body structure)"
       },
       "laterality": {
-        "code": "51440002",
+        "code": "419161000",
         "system": "http://snomed.info/sct",
-        "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-        "display": "Bilateral"
+        "display": "Left (qualifier value)"
       },
       "started": "2024-07-19T12:03:30+02:00"
     }

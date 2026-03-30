@@ -28,6 +28,7 @@ Description: "ICU Observation: MII PR ICU Bilanz Ausfuhr Drainage Generisch"
 * category.coding[hl7-category] = http://terminology.hl7.org/CodeSystem/observation-category#exam
 * category.coding[kdsicu-category] = $sct#364396009 "Fluid balance observable (observable entity)"
 * code.coding[sct] = $sct#251843005 "Fluid output from drain"
+* code.coding[IEEE-11073] = $11073-10101#26668 "Drainage volume in bag"
 * subject = Reference(mii-exa-test-data-icu-patient-1)
 * effectiveDateTime = "2024-02-15T14:30:00+01:00"
 * valueQuantity = 50 'ml' "ml"
@@ -192,6 +193,7 @@ Description: "ICU Observation: SD MII ICU Bilanz Einfuhr Fluessigkeit Gesamt"
 * category.coding[hl7-category] = http://terminology.hl7.org/CodeSystem/observation-category#exam
 * category.coding[kdsicu-category] = $sct#364396009 "Fluid balance observable (observable entity)"
 * code.coding[sct] = $sct#251852001 "Total fluid input (observable entity)"
+* code.coding[loinc] = $loinc#9103-3 "Fluid intake total Measured"
 * subject = Reference(mii-exa-test-data-icu-patient-1)
 * effectiveDateTime = "2024-02-15T14:30:00+01:00"
 * valueQuantity = 2500 'ml' "ml"
@@ -261,6 +263,7 @@ Description: "ICU Observation: MII PR ICU Arterieller Druck"
 * insert TestDataLabel
 * status = #final
 * partOf = Reference(mii-exa-test-data-patient-1-icu-ect-extrakorp-1)
+* category.coding[sct] = $sct#182744004 "Renal dialysis (procedure)"
 * code.coding[sct] = $sct#386534000 "Arterial blood pressure"
 * subject = Reference(mii-exa-test-data-icu-patient-1)
 * effectiveDateTime = "2024-02-15T14:30:00+01:00"

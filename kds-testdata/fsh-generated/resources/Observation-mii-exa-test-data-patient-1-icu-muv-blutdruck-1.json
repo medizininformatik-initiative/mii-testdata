@@ -33,13 +33,11 @@
       {
         "system": "http://snomed.info/sct",
         "code": "75367002",
-        "version": "http://snomed.info/sct/900000000000207008/version/20230731",
         "display": "Blood pressure"
       },
       {
         "system": "http://snomed.info/sct",
         "code": "364090009",
-        "version": "http://snomed.info/sct/900000000000207008/version/20230731",
         "display": "Systemic arterial pressure"
       }
     ]

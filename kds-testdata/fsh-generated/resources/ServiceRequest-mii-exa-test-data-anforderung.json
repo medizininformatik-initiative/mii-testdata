@@ -19,7 +19,6 @@
         {
           "code": "363679005",
           "system": "http://snomed.info/sct",
-          "version": "http://snomed.info/sct/900000000000207008/version/20230731",
           "display": "Imaging (procedure)"
         }
       ]
@@ -29,17 +28,16 @@
     {
       "coding": [
         {
-          "code": "268547008",
+          "code": "274897005",
           "system": "http://snomed.info/sct",
-          "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-          "display": "Screening for malignant neoplasm of breast (procedure)"
+          "display": "Breast finding (finding)"
         }
       ]
     }
   ],
   "reasonReference": [
     {
-      "reference": "Condition/mii-exa-test-data-patient-1-diagnose-1"
+      "reference": "Condition/mii-exa-test-data-bildgebung-diagnose-1"
     }
   ],
   "supportingInfo": [
@@ -57,7 +55,6 @@
       {
         "code": "71651007",
         "system": "http://snomed.info/sct",
-        "version": "http://snomed.info/sct/900000000000207008/version/20230731",
         "display": "Mammography (procedure)"
       }
     ]

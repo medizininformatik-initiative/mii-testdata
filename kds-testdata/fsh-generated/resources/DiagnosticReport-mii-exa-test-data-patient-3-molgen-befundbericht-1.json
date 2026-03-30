@@ -69,7 +69,7 @@
   ],
   "specimen": [
     {
-      "reference": "Specimen/mii-exa-test-data-patient-3-specimen-1"
+      "reference": "Specimen/mii-exa-test-data-molgen-specimen-1"
     }
   ],
   "result": [
@@ -98,7 +98,6 @@
         {
           "code": "10828004",
           "system": "http://snomed.info/sct",
-          "version": "http://snomed.info/sct/900000000000207008/version/20230731",
           "display": "Positive (qualifier value)"
         }
       ]

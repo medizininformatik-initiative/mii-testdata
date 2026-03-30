@@ -18,12 +18,22 @@
       "reference": "Procedure/mii-exa-test-data-patient-1-icu-ect-extrakorp-1"
     }
   ],
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "182744004",
+          "display": "Renal dialysis (procedure)"
+        }
+      ]
+    }
+  ],
   "code": {
     "coding": [
       {
         "system": "http://snomed.info/sct",
         "code": "386534000",
-        "version": "http://snomed.info/sct/900000000000207008/version/20230731",
         "display": "Arterial blood pressure"
       }
     ]

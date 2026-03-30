@@ -36,7 +36,6 @@
           {
             "code": "260411009",
             "system": "http://snomed.info/sct",
-            "version": "http://snomed.info/sct/900000000000207008/version/20230731",
             "display": "Presence findings"
           }
         ]
@@ -94,7 +93,6 @@
       {
         "code": "78076003",
         "system": "http://snomed.info/sct",
-        "version": "http://snomed.info/sct/900000000000207008/version/20230731",
         "display": "Lens structure"
       }
     ]
@@ -104,7 +102,6 @@
       {
         "code": "36228007",
         "system": "http://snomed.info/sct",
-        "version": "http://snomed.info/sct/900000000000207008/version/20230731",
         "display": "Ophthalmic examination"
       }
     ]

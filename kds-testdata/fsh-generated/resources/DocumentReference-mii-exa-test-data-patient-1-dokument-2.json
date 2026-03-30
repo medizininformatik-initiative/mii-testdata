@@ -13,19 +13,6 @@
       "https://www.medizininformatik-initiative.de/fhir/ext/modul-dokument/StructureDefinition/mii-pr-dokument-dokument"
     ]
   },
-  "extension": [
-    {
-      "valueCodeableConcept": {
-        "coding": [
-          {
-            "code": "annotated",
-            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-dokument/CodeSystem/mii-cs-dokument-nlp-processing-status"
-          }
-        ]
-      },
-      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-dokument/StructureDefinition/mii-ex-dokument-nlp-processing-status"
-    }
-  ],
   "masterIdentifier": {
     "system": "urn:ietf:rfc:3986",
     "value": "urn:oid:1.2.840.113556.1.8000.2554.58783.21864.3474.19410.44358.58254.41281.99902"
@@ -40,9 +27,9 @@
   "type": {
     "coding": [
       {
-        "code": "AD030101",
+        "code": "AD010109",
         "system": "http://dvmd.de/fhir/CodeSystem/kdl",
-        "display": "Radiologischer Befundbericht"
+        "display": "Ärztlicher Befundbericht"
       },
       {
         "code": "BERI",
@@ -101,9 +88,9 @@
       {
         "coding": [
           {
-            "code": "E100",
+            "code": "E200",
             "system": "http://ihe-d.de/CodeSystems/FallkontextBeiDokumentenerstellung",
-            "display": "stationaerer Aufenthalt"
+            "display": "stationärer Aufenthalt"
           }
         ]
       }

@@ -53,11 +53,6 @@
     ],
     "text": "kleines Blutbild"
   },
-  "specimen": [
-    {
-      "reference": "Specimen/mii-exa-test-data-patient-1-specimen-1"
-    }
-  ],
   "status": "completed",
   "intent": "order",
   "subject": {
