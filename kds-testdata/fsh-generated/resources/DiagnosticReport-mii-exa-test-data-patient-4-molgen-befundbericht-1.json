@@ -56,10 +56,10 @@
   ],
   "specimen": [
     {
-      "reference": "Specimen/mii-exa-test-data-patient-4-specimen-1"
+      "reference": "Specimen/mii-exa-test-data-molgen-specimen-2"
     },
     {
-      "reference": "Specimen/mii-exa-test-data-patient-4-specimen-2"
+      "reference": "Specimen/mii-exa-test-data-molgen-specimen-3"
     }
   ],
   "result": [

@@ -434,7 +434,6 @@
             {
               "system": "http://snomed.info/sct",
               "code": "254637007",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
               "display": "Non-small cell lung cancer (disorder)"
             }
           ]
@@ -450,7 +449,6 @@
               {
                 "system": "http://snomed.info/sct",
                 "code": "45653009",
-                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                 "display": "Structure of upper lobe of lung (body structure)"
               }
             ]
@@ -628,8 +626,7 @@
           "coding": [
             {
               "system": "http://snomed.info/sct",
-              "code": "387713003",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+              "code": "387713003"
             }
           ]
         },
@@ -637,8 +634,7 @@
           "coding": [
             {
               "system": "http://snomed.info/sct",
-              "code": "726428009",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+              "code": "726428009"
             },
             {
               "extension": [
@@ -661,8 +657,7 @@
             "coding": [
               {
                 "code": "39607008",
-                "system": "http://snomed.info/sct",
-                "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+                "system": "http://snomed.info/sct"
               }
             ]
           }
@@ -682,7 +677,6 @@
             "valueCoding": {
               "system": "http://snomed.info/sct",
               "code": "262202000",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
               "display": "Therapeutic"
             }
           }
@@ -724,8 +718,7 @@
           "coding": [
             {
               "system": "http://snomed.info/sct",
-              "code": "394841004",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+              "code": "394841004"
             }
           ]
         },
@@ -733,8 +726,7 @@
           "coding": [
             {
               "system": "http://snomed.info/sct",
-              "code": "182810003",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+              "code": "182810003"
             },
             {
               "system": "http://fhir.de/CodeSystem/bfarm/ops",
@@ -748,8 +740,7 @@
             "coding": [
               {
                 "code": "442083009",
-                "system": "http://snomed.info/sct",
-                "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+                "system": "http://snomed.info/sct"
               }
             ]
           }
@@ -769,7 +760,6 @@
             "valueCoding": {
               "system": "http://snomed.info/sct",
               "code": "74964007",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
               "display": "Other"
             }
           }
@@ -811,8 +801,7 @@
           "coding": [
             {
               "system": "http://snomed.info/sct",
-              "code": "18629005",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+              "code": "18629005"
             }
           ]
         },
@@ -820,8 +809,7 @@
           "coding": [
             {
               "system": "http://snomed.info/sct",
-              "code": "182836005",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+              "code": "182836005"
             },
             {
               "system": "http://fhir.de/CodeSystem/bfarm/ops",
@@ -835,8 +823,7 @@
             "coding": [
               {
                 "code": "19715009",
-                "system": "http://snomed.info/sct",
-                "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+                "system": "http://snomed.info/sct"
               }
             ]
           }
@@ -856,7 +843,6 @@
             "valueCoding": {
               "system": "http://snomed.info/sct",
               "code": "264931009",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
               "display": "Symptomatic"
             }
           }
@@ -930,15 +916,9 @@
               {
                 "code": "254637007",
                 "system": "http://snomed.info/sct",
-                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                 "display": "Non-small cell lung cancer (disorder)"
               }
             ]
-          }
-        ],
-        "specimen": [
-          {
-            "reference": "Specimen/mii-exa-test-data-patient-2-specimen-1"
           }
         ],
         "status": "completed",
@@ -1037,11 +1017,6 @@
         "performer": [
           {
             "reference": "Organization/mii-exa-test-data-organization-labor-berlin"
-          }
-        ],
-        "specimen": [
-          {
-            "reference": "Specimen/mii-exa-test-data-patient-2-specimen-1"
           }
         ],
         "result": [
@@ -1193,13 +1168,9 @@
             {
               "code": "703452004",
               "system": "http://snomed.info/sct",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
               "display": "Electrical impedance technique (qualifier value)"
             }
           ]
-        },
-        "specimen": {
-          "reference": "Specimen/mii-exa-test-data-patient-2-specimen-1"
         },
         "device": {
           "reference": "Device/mii-exa-test-data-device-roche-cobas-c303"
@@ -1308,13 +1279,9 @@
             {
               "code": "703452004",
               "system": "http://snomed.info/sct",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
               "display": "Electrical impedance technique (qualifier value)"
             }
           ]
-        },
-        "specimen": {
-          "reference": "Specimen/mii-exa-test-data-patient-2-specimen-1"
         },
         "device": {
           "reference": "Device/mii-exa-test-data-device-roche-cobas-c303"
@@ -1423,13 +1390,9 @@
             {
               "code": "83561000052101",
               "system": "http://snomed.info/sct",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
               "display": "Photometry technique (qualifier value)"
             }
           ]
-        },
-        "specimen": {
-          "reference": "Specimen/mii-exa-test-data-patient-2-specimen-1"
         },
         "device": {
           "reference": "Device/mii-exa-test-data-device-roche-cobas-c303"
@@ -1538,13 +1501,9 @@
             {
               "code": "703452004",
               "system": "http://snomed.info/sct",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
               "display": "Electrical impedance technique (qualifier value)"
             }
           ]
-        },
-        "specimen": {
-          "reference": "Specimen/mii-exa-test-data-patient-2-specimen-1"
         },
         "device": {
           "reference": "Device/mii-exa-test-data-device-roche-cobas-c303"
@@ -2157,7 +2116,6 @@
                 {
                   "system": "http://snomed.info/sct",
                   "code": "47625008",
-                  "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                   "display": "Intravenous route (qualifier value)"
                 }
               ]
@@ -2249,7 +2207,6 @@
                 {
                   "system": "http://snomed.info/sct",
                   "code": "47625008",
-                  "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                   "display": "Intravenous route (qualifier value)"
                 }
               ]
@@ -2993,7 +2950,6 @@
               {
                 "code": "309343006",
                 "system": "http://snomed.info/sct",
-                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                 "display": "Physician (occupation)"
               }
             ]

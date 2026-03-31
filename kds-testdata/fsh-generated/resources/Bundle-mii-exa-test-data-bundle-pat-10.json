@@ -455,7 +455,6 @@
             {
               "system": "http://snomed.info/sct",
               "code": "37796009",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
               "display": "Migraine (disorder)"
             }
           ]
@@ -471,7 +470,6 @@
               {
                 "system": "http://snomed.info/sct",
                 "code": "281231009",
-                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                 "display": "Vascular structure of head (body structure)"
               }
             ]
@@ -578,8 +576,7 @@
           "coding": [
             {
               "system": "http://snomed.info/sct",
-              "code": "165197003",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+              "code": "165197003"
             }
           ]
         },
@@ -587,8 +584,7 @@
           "coding": [
             {
               "system": "http://snomed.info/sct",
-              "code": "169066007",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+              "code": "169066007"
             },
             {
               "system": "http://fhir.de/CodeSystem/bfarm/ops",
@@ -602,8 +598,7 @@
             "coding": [
               {
                 "code": "89546000",
-                "system": "http://snomed.info/sct",
-                "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+                "system": "http://snomed.info/sct"
               }
             ]
           }
@@ -619,7 +614,6 @@
             "valueCoding": {
               "system": "http://snomed.info/sct",
               "code": "261004008",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
               "display": "Diagnostic intent"
             }
           }
@@ -662,8 +656,7 @@
           "coding": [
             {
               "system": "http://snomed.info/sct",
-              "code": "277132007",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+              "code": "277132007"
             }
           ]
         },
@@ -671,8 +664,7 @@
           "coding": [
             {
               "system": "http://snomed.info/sct",
-              "code": "408381007",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+              "code": "408381007"
             },
             {
               "system": "http://fhir.de/CodeSystem/bfarm/ops",
@@ -686,8 +678,7 @@
             "coding": [
               {
                 "code": "86762007",
-                "system": "http://snomed.info/sct",
-                "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+                "system": "http://snomed.info/sct"
               }
             ]
           }
@@ -707,7 +698,6 @@
             "valueCoding": {
               "system": "http://snomed.info/sct",
               "code": "262202000",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
               "display": "Therapeutic"
             }
           }
@@ -781,15 +771,9 @@
               {
                 "code": "37796009",
                 "system": "http://snomed.info/sct",
-                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                 "display": "Migraine"
               }
             ]
-          }
-        ],
-        "specimen": [
-          {
-            "reference": "Specimen/mii-exa-test-data-patient-10-specimen-2"
           }
         ],
         "status": "completed",
@@ -888,14 +872,6 @@
         "performer": [
           {
             "reference": "Organization/mii-exa-test-data-organization-labor-berlin"
-          }
-        ],
-        "specimen": [
-          {
-            "reference": "Specimen/mii-exa-test-data-patient-10-specimen-1"
-          },
-          {
-            "reference": "Specimen/mii-exa-test-data-patient-10-specimen-2"
           }
         ],
         "result": [
@@ -1023,13 +999,9 @@
             {
               "code": "703452004",
               "system": "http://snomed.info/sct",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
               "display": "Electrical impedance technique (qualifier value)"
             }
           ]
-        },
-        "specimen": {
-          "reference": "Specimen/mii-exa-test-data-patient-10-specimen-1"
         },
         "device": {
           "reference": "Device/mii-exa-test-data-device-roche-cobas-c303"
@@ -1138,13 +1110,9 @@
             {
               "code": "83561000052101",
               "system": "http://snomed.info/sct",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
               "display": "Photometry technique (qualifier value)"
             }
           ]
-        },
-        "specimen": {
-          "reference": "Specimen/mii-exa-test-data-patient-10-specimen-1"
         },
         "device": {
           "reference": "Device/mii-exa-test-data-device-roche-cobas-c303"
@@ -1253,13 +1221,9 @@
             {
               "code": "83561000052101",
               "system": "http://snomed.info/sct",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
               "display": "Photometry technique (qualifier value)"
             }
           ]
-        },
-        "specimen": {
-          "reference": "Specimen/mii-exa-test-data-patient-10-specimen-1"
         },
         "device": {
           "reference": "Device/mii-exa-test-data-device-roche-cobas-c303"
@@ -2175,7 +2139,6 @@
               {
                 "code": "309343006",
                 "system": "http://snomed.info/sct",
-                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                 "display": "Physician (occupation)"
               }
             ]

@@ -49,15 +49,9 @@
         {
           "code": "79883001",
           "system": "http://snomed.info/sct",
-          "version": "http://snomed.info/sct/900000000000207008/version/20230731",
           "display": "Cyst of ovary (disorder)"
         }
       ]
-    }
-  ],
-  "specimen": [
-    {
-      "reference": "Specimen/mii-exa-test-data-patient-9-specimen-2"
     }
   ],
   "status": "completed",

@@ -19,7 +19,6 @@
         {
           "code": "108252007",
           "system": "http://snomed.info/sct",
-          "version": "http://snomed.info/sct/900000000000207008/version/20230731",
           "display": "Laboratory procedure (procedure)"
         }
       ]
@@ -30,7 +29,6 @@
       {
         "code": "405825005",
         "system": "http://snomed.info/sct",
-        "version": "http://snomed.info/sct/900000000000207008/version/20230731",
         "display": "Molecular genetic test (procedure)"
       },
       {
@@ -52,7 +50,6 @@
         {
           "code": "447886005",
           "system": "http://snomed.info/sct",
-          "version": "http://snomed.info/sct/900000000000207008/version/20230731",
           "display": "Adenocarcinoma of anorectum (disorder)"
         }
       ]
@@ -60,7 +57,7 @@
   ],
   "specimen": [
     {
-      "reference": "Specimen/mii-exa-test-data-patient-3-specimen-1"
+      "reference": "Specimen/mii-exa-test-data-molgen-specimen-1"
     }
   ],
   "supportingInfo": [

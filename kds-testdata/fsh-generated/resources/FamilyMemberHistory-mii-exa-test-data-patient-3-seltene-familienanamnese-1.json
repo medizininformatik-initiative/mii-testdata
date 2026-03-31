@@ -21,7 +21,6 @@
           {
             "code": "373066001",
             "system": "http://snomed.info/sct",
-            "version": "http://snomed.info/sct/900000000000207008/version/20230731",
             "display": "Yes"
           }
         ]
@@ -84,7 +83,6 @@
           {
             "code": "233985008",
             "system": "http://snomed.info/sct",
-            "version": "http://snomed.info/sct/900000000000207008/version/20230731",
             "display": "Abdominal aortic aneurysm"
           }
         ]
@@ -103,7 +101,6 @@
       {
         "system": "http://snomed.info/sct",
         "code": "65656005",
-        "version": "http://snomed.info/sct/900000000000207008/version/20230731",
         "display": "Natural mother"
       }
     ]

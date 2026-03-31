@@ -23,7 +23,7 @@
     {
       "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Diagnose",
       "valueReference": {
-        "reference": "Condition/mii-exa-test-data-patient-7-diagnose-1"
+        "reference": "Condition/mii-exa-test-data-biobank-diagnose-1"
       }
     }
   ],
@@ -38,7 +38,6 @@
       {
         "system": "http://snomed.info/sct",
         "code": "445295009",
-        "version": "http://snomed.info/sct/900000000000207008/version/20230731",
         "display": "Blood specimen with edetic acid (specimen)"
       }
     ]
@@ -49,7 +48,6 @@
         {
           "code": "368208006",
           "system": "http://snomed.info/sct",
-          "version": "http://snomed.info/sct/900000000000207008/version/20230731",
           "display": "Left upper arm structure (body structure)"
         }
       ]
@@ -75,7 +73,6 @@
           {
             "code": "83059008",
             "system": "http://snomed.info/sct",
-            "version": "http://snomed.info/sct/900000000000207008/version/20230731",
             "display": "Tube, device (physical object)"
           }
         ]

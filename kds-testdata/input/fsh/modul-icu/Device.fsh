@@ -17,7 +17,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/Struc
 Usage: #example
 Description: "ICU DeviceMetric: Eingestellte Gemessene Parameter Extrakorporale Verfahren"
 * insert TestDataLabel
-* type = $sct#182744004 "Renal dialysis (procedure)"
+* type = $sct#182744004 "Extracorporeal circulation procedure"
 * source = Reference(mii-exa-test-data-patient-1-icu-device-1)
 * category = #measurement
 

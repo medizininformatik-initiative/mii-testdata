@@ -57,7 +57,7 @@
     {
       "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-specimen",
       "valueReference": {
-        "reference": "Specimen/mii-exa-test-data-patient-3-specimen-1"
+        "reference": "Specimen/mii-exa-test-data-molgen-specimen-1"
       }
     },
     {

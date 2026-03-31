@@ -567,7 +567,6 @@
             {
               "system": "http://snomed.info/sct",
               "code": "13420004",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
               "display": "Post measles otitis media (disorder)"
             }
           ]
@@ -583,7 +582,6 @@
               {
                 "system": "http://snomed.info/sct",
                 "code": "25342003",
-                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                 "display": "Middle ear structure (body structure)"
               }
             ]
@@ -1052,8 +1050,7 @@
           "coding": [
             {
               "system": "http://snomed.info/sct",
-              "code": "387713003",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+              "code": "387713003"
             }
           ]
         },
@@ -1061,8 +1058,7 @@
           "coding": [
             {
               "system": "http://snomed.info/sct",
-              "code": "726427004",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+              "code": "726427004"
             },
             {
               "system": "http://fhir.de/CodeSystem/bfarm/ops",
@@ -1076,8 +1072,7 @@
             "coding": [
               {
                 "code": "44714003",
-                "system": "http://snomed.info/sct",
-                "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+                "system": "http://snomed.info/sct"
               }
             ]
           }
@@ -1100,8 +1095,7 @@
             "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Durchfuehrungsabsicht",
             "valueCoding": {
               "system": "http://snomed.info/sct",
-              "code": "262202000",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+              "code": "262202000"
             }
           }
         ],
@@ -1142,8 +1136,7 @@
           "coding": [
             {
               "system": "http://snomed.info/sct",
-              "code": "18629005",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+              "code": "18629005"
             }
           ]
         },
@@ -1151,8 +1144,7 @@
           "coding": [
             {
               "system": "http://snomed.info/sct",
-              "code": "281790008",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+              "code": "281790008"
             },
             {
               "system": "http://fhir.de/CodeSystem/bfarm/ops",
@@ -1166,8 +1158,7 @@
             "coding": [
               {
                 "code": "789218009",
-                "system": "http://snomed.info/sct",
-                "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+                "system": "http://snomed.info/sct"
               }
             ]
           }
@@ -1186,8 +1177,7 @@
             "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Durchfuehrungsabsicht",
             "valueCoding": {
               "system": "http://snomed.info/sct",
-              "code": "262202000",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+              "code": "262202000"
             }
           }
         ],
@@ -1436,7 +1426,6 @@
                 {
                   "system": "http://snomed.info/sct",
                   "code": "387423006",
-                  "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                   "display": "Propofol (substance)"
                 }
               ]
@@ -1511,7 +1500,6 @@
                 {
                   "system": "http://snomed.info/sct",
                   "code": "703917001",
-                  "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                   "display": "Dalbavancin (substance)"
                 }
               ]
@@ -1567,7 +1555,6 @@
               {
                 "system": "http://snomed.info/sct",
                 "code": "789218009",
-                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                 "display": "Structure of dorsum of left hand (body structure)"
               }
             ]
@@ -1582,7 +1569,6 @@
               {
                 "system": "http://snomed.info/sct",
                 "code": "47625008",
-                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                 "display": "Intravenous route (qualifier value)"
               }
             ]
@@ -1679,7 +1665,6 @@
               {
                 "system": "http://snomed.info/sct",
                 "code": "789218009",
-                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                 "display": "Structure of dorsum of left hand (body structure)"
               }
             ]
@@ -1694,7 +1679,6 @@
               {
                 "system": "http://snomed.info/sct",
                 "code": "47625008",
-                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                 "display": "Intravenous route (qualifier value)"
               }
             ]
@@ -1979,7 +1963,6 @@
                 {
                   "code": "129331004",
                   "system": "http://snomed.info/sct",
-                  "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                   "display": "Perfusion - action (qualifier value)"
                 }
               ]
@@ -2073,7 +2056,6 @@
                 {
                   "code": "129331004",
                   "system": "http://snomed.info/sct",
-                  "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                   "display": "Perfusion - action (qualifier value)"
                 }
               ]
@@ -2146,7 +2128,6 @@
               {
                 "code": "787930001",
                 "system": "http://snomed.info/sct",
-                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                 "display": "Direct thrombin inhibitor prophylaxis indicated (situation)"
               }
             ]
@@ -2258,7 +2239,6 @@
                 {
                   "system": "http://snomed.info/sct",
                   "code": "789218009",
-                  "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                   "display": "Structure of dorsum of left hand (body structure)"
                 }
               ]
@@ -2273,7 +2253,6 @@
                 {
                   "system": "http://snomed.info/sct",
                   "code": "47625008",
-                  "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                   "display": "Intravenous route (qualifier value)"
                 }
               ]
@@ -2378,7 +2357,6 @@
                 {
                   "system": "http://snomed.info/sct",
                   "code": "47625008",
-                  "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                   "display": "Intravenous route (qualifier value)"
                 }
               ]
@@ -2756,11 +2734,6 @@
             "reference": "Organization/mii-exa-test-data-organization-labor-berlin"
           }
         ],
-        "specimen": [
-          {
-            "reference": "Specimen/mii-exa-test-data-patient-1-specimen-1"
-          }
-        ],
         "result": [
           {
             "reference": "Observation/mii-exa-test-data-patient-1-labobs-1"
@@ -2854,11 +2827,6 @@
           ],
           "text": "kleines Blutbild"
         },
-        "specimen": [
-          {
-            "reference": "Specimen/mii-exa-test-data-patient-1-specimen-1"
-          }
-        ],
         "status": "completed",
         "intent": "order",
         "subject": {
@@ -2988,7 +2956,6 @@
                   {
                     "code": "248153007",
                     "system": "http://snomed.info/sct",
-                    "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                     "display": "Male (finding)"
                   }
                 ]
@@ -3060,13 +3027,9 @@
             {
               "code": "703452004",
               "system": "http://snomed.info/sct",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
               "display": "Electrical impedance technique (qualifier value)"
             }
           ]
-        },
-        "specimen": {
-          "reference": "Specimen/mii-exa-test-data-patient-1-specimen-1"
         },
         "device": {
           "reference": "Device/mii-exa-test-data-device-roche-cobas-c303"
@@ -3159,7 +3122,6 @@
                   {
                     "code": "248153007",
                     "system": "http://snomed.info/sct",
-                    "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                     "display": "Male (finding)"
                   }
                 ]
@@ -3231,13 +3193,9 @@
             {
               "code": "703452004",
               "system": "http://snomed.info/sct",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
               "display": "Electrical impedance technique (qualifier value)"
             }
           ]
-        },
-        "specimen": {
-          "reference": "Specimen/mii-exa-test-data-patient-1-specimen-1"
         },
         "device": {
           "reference": "Device/mii-exa-test-data-device-roche-cobas-c303"
@@ -3330,7 +3288,6 @@
                   {
                     "code": "248153007",
                     "system": "http://snomed.info/sct",
-                    "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                     "display": "Male (finding)"
                   }
                 ]
@@ -3402,13 +3359,9 @@
             {
               "code": "703452004",
               "system": "http://snomed.info/sct",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
               "display": "Electrical impedance technique (qualifier value)"
             }
           ]
-        },
-        "specimen": {
-          "reference": "Specimen/mii-exa-test-data-patient-1-specimen-1"
         },
         "device": {
           "reference": "Device/mii-exa-test-data-device-roche-cobas-c303"
@@ -3501,7 +3454,6 @@
                   {
                     "code": "248153007",
                     "system": "http://snomed.info/sct",
-                    "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                     "display": "Male (finding)"
                   }
                 ]
@@ -3573,13 +3525,9 @@
             {
               "code": "83561000052101",
               "system": "http://snomed.info/sct",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
               "display": "Photometry technique (qualifier value)"
             }
           ]
-        },
-        "specimen": {
-          "reference": "Specimen/mii-exa-test-data-patient-1-specimen-1"
         },
         "device": {
           "reference": "Device/mii-exa-test-data-device-roche-cobas-c303"
@@ -3672,7 +3620,6 @@
                   {
                     "code": "248153007",
                     "system": "http://snomed.info/sct",
-                    "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                     "display": "Male (finding)"
                   }
                 ]
@@ -3744,13 +3691,9 @@
             {
               "code": "703452004",
               "system": "http://snomed.info/sct",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
               "display": "Electrical impedance technique (qualifier value)"
             }
           ]
-        },
-        "specimen": {
-          "reference": "Specimen/mii-exa-test-data-patient-1-specimen-1"
         },
         "device": {
           "reference": "Device/mii-exa-test-data-device-roche-cobas-c303"
@@ -3825,7 +3768,7 @@
             {
               "code": "788-0",
               "system": "http://loinc.org",
-              "display": "Erythrocyte [DistWidth] in Red Blood Cells by Automated count"
+              "display": "Erythrocyte distribution width [Entitic volume] by Automated count"
             }
           ]
         },
@@ -3966,7 +3909,6 @@
               {
                 "code": "309343006",
                 "system": "http://snomed.info/sct",
-                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                 "display": "Physician (occupation)"
               }
             ]

@@ -49,15 +49,9 @@
         {
           "code": "183932001",
           "system": "http://snomed.info/sct",
-          "version": "http://snomed.info/sct/900000000000207008/version/20230731",
           "display": "Procedure contraindicated"
         }
       ]
-    }
-  ],
-  "specimen": [
-    {
-      "reference": "Specimen/mii-exa-test-data-patient-4-specimen-3"
     }
   ],
   "status": "completed",

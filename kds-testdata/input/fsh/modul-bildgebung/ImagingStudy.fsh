@@ -38,7 +38,7 @@ Description: "ImagingStudy: MagneticResonance"
 * series.description = "T2 STIR_tra DRB"
 * series.numberOfInstances = 28
 * series.bodySite = $sct#76752008 "Breast structure (body structure)"
-* series.laterality = $sct#51440002 "Bilateral" 
+* series.laterality = $sct#419161000 "Unilateral left" 
 * series.started = "2024-07-19T12:03:30+02:00"
 * series.instance.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-details].extension[pixelSpacingX].valueQuantity.value = 0.260417
 * series.instance.extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-details].extension[pixelSpacingX].valueQuantity.unit = "millimeter"

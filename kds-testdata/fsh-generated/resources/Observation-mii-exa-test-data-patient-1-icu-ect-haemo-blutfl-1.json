@@ -24,8 +24,7 @@
         {
           "system": "http://snomed.info/sct",
           "code": "182744004",
-          "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-          "display": "Renal dialysis (procedure)"
+          "display": "Extracorporeal circulation procedure"
         }
       ]
     }
@@ -35,7 +34,6 @@
       {
         "system": "http://snomed.info/sct",
         "code": "401000124105",
-        "version": "http://snomed.info/sct/900000000000207008/version/20230731",
         "display": "Hemodialysis blood flow"
       }
     ]

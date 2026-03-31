@@ -20,7 +20,7 @@
   ],
   "derivedFrom": [
     {
-      "reference": "Observation/mii-exa-test-data-patient-3-labobs-1"
+      "reference": "Observation/mii-exa-test-data-seltene-labobs-1"
     }
   ],
   "component": [
@@ -30,7 +30,6 @@
           {
             "code": "260411009",
             "system": "http://snomed.info/sct",
-            "version": "http://snomed.info/sct/900000000000207008/version/20230731",
             "display": "Presence findings"
           }
         ]
@@ -68,7 +67,6 @@
       {
         "code": "57034009",
         "system": "http://snomed.info/sct",
-        "version": "http://snomed.info/sct/900000000000207008/version/20230731",
         "display": "Aortic arch structure"
       }
     ]
@@ -78,7 +76,6 @@
       {
         "code": "278292003",
         "system": "http://snomed.info/sct",
-        "version": "http://snomed.info/sct/900000000000207008/version/20230731",
         "display": "Ultrasound imaging"
       }
     ]

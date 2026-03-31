@@ -58,7 +58,7 @@
     {
       "item": [
         {
-          "reference": "Observation/mii-exa-test-data-patient-1-labobs-1"
+          "reference": "Observation/mii-exa-test-data-mtb-labobs-ecog-1"
         }
       ],
       "code": {
@@ -93,7 +93,7 @@
       "reference": "Procedure/mii-exa-test-data-mtb-systemische-vortherapie-1"
     },
     {
-      "reference": "Observation/mii-exa-test-data-patient-1-labobs-2"
+      "reference": "Observation/mii-exa-test-data-mtb-labobs-vorbefund-1"
     },
     {
       "reference": "CarePlan/mii-exa-test-data-mtb-therapieplan-1"

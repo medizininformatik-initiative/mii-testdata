@@ -204,7 +204,6 @@
               {
                 "code": "108252007",
                 "system": "http://snomed.info/sct",
-                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                 "display": "Laboratory procedure (procedure)"
               }
             ]
@@ -215,7 +214,6 @@
             {
               "code": "405825005",
               "system": "http://snomed.info/sct",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
               "display": "Molecular genetic test (procedure)"
             },
             {
@@ -237,7 +235,6 @@
               {
                 "code": "447886005",
                 "system": "http://snomed.info/sct",
-                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                 "display": "Adenocarcinoma of anorectum (disorder)"
               }
             ]
@@ -245,7 +242,7 @@
         ],
         "specimen": [
           {
-            "reference": "Specimen/mii-exa-test-data-patient-3-specimen-1"
+            "reference": "Specimen/mii-exa-test-data-molgen-specimen-1"
           }
         ],
         "supportingInfo": [
@@ -349,7 +346,7 @@
         ],
         "specimen": [
           {
-            "reference": "Specimen/mii-exa-test-data-patient-3-specimen-1"
+            "reference": "Specimen/mii-exa-test-data-molgen-specimen-1"
           }
         ],
         "result": [
@@ -378,7 +375,6 @@
               {
                 "code": "10828004",
                 "system": "http://snomed.info/sct",
-                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                 "display": "Positive (qualifier value)"
               }
             ]
@@ -744,7 +740,7 @@
           ]
         },
         "specimen": {
-          "reference": "Specimen/mii-exa-test-data-patient-3-specimen-1"
+          "reference": "Specimen/mii-exa-test-data-molgen-specimen-1"
         },
         "device": {
           "reference": "Device/mii-exa-test-data-molgen-device-sequencer"
@@ -900,7 +896,7 @@
           ]
         },
         "specimen": {
-          "reference": "Specimen/mii-exa-test-data-patient-3-specimen-1"
+          "reference": "Specimen/mii-exa-test-data-molgen-specimen-1"
         },
         "device": {
           "reference": "Device/mii-exa-test-data-molgen-device-sequencer"
@@ -930,7 +926,7 @@
         },
         "reasonReference": [
           {
-            "reference": "Condition/mii-exa-test-data-patient-3-diagnose-1"
+            "reference": "Condition/mii-exa-test-data-molgen-diagnose-1"
           }
         ],
         "extension": [
@@ -955,7 +951,6 @@
             {
               "code": "405825005",
               "system": "http://snomed.info/sct",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
               "display": "Molecular genetic test (procedure)"
             }
           ]
@@ -1034,7 +1029,7 @@
           {
             "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-specimen",
             "valueReference": {
-              "reference": "Specimen/mii-exa-test-data-patient-3-specimen-1"
+              "reference": "Specimen/mii-exa-test-data-molgen-specimen-1"
             }
           },
           {
@@ -1377,7 +1372,6 @@
                 {
                   "code": "703645005",
                   "system": "http://snomed.info/sct",
-                  "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                   "display": "Product containing B-Raf inhibitor (product)"
                 }
               ],
@@ -1461,7 +1455,6 @@
                 {
                   "code": "447886005",
                   "system": "http://snomed.info/sct",
-                  "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                   "display": "Adenocarcinoma of anorectum (disorder)"
                 }
               ]
@@ -1588,7 +1581,7 @@
           "unit": "Mutations/Megabase"
         },
         "specimen": {
-          "reference": "Specimen/mii-exa-test-data-patient-3-specimen-1"
+          "reference": "Specimen/mii-exa-test-data-molgen-specimen-1"
         }
       }
     },
@@ -1695,7 +1688,7 @@
           ]
         },
         "specimen": {
-          "reference": "Specimen/mii-exa-test-data-patient-3-specimen-1"
+          "reference": "Specimen/mii-exa-test-data-molgen-specimen-1"
         }
       }
     },
@@ -1752,7 +1745,6 @@
             {
               "code": "447886005",
               "system": "http://snomed.info/sct",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
               "display": "Adenocarcinoma of anorectum (disorder)"
             }
           ]
@@ -1812,7 +1804,6 @@
             {
               "code": "447886005",
               "system": "http://snomed.info/sct",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
               "display": "Adenocarcinoma of anorectum (disorder)"
             }
           ]
@@ -1845,7 +1836,6 @@
             {
               "system": "http://snomed.info/sct",
               "code": "72705000",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
               "display": "Mother (person)"
             },
             {
@@ -1864,7 +1854,6 @@
             {
               "code": "248152002",
               "system": "http://snomed.info/sct",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
               "display": "Female (finding)"
             }
           ]
@@ -1875,7 +1864,6 @@
               {
                 "system": "http://snomed.info/sct",
                 "code": "447886005",
-                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                 "display": "Adenocarcinoma of anorectum (disorder)"
               },
               {
@@ -1889,7 +1877,7 @@
         ],
         "reasonReference": [
           {
-            "reference": "Condition/mii-exa-test-data-patient-3-diagnose-1"
+            "reference": "Condition/mii-exa-test-data-molgen-diagnose-1"
           }
         ],
         "condition": [
@@ -1899,7 +1887,6 @@
                 {
                   "system": "http://snomed.info/sct",
                   "code": "830150003",
-                  "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                   "display": "Malignant melanoma with B-Raf proto-oncogene, serine/threonine kinase V600E mutation (disorder)"
                 },
                 {
@@ -1953,7 +1940,6 @@
             {
               "code": "721961004",
               "system": "http://snomed.info/sct",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
               "display": "Risk assessment score (observable entity)"
             }
           ],
@@ -1971,8 +1957,7 @@
                 {
                   "code": "363510005",
                   "system": "http://snomed.info/sct",
-                  "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-                  "display": "Malignant tumor of large intestine (disorder)"
+                  "display": "Malignant neoplasm of large intestine"
                 }
               ],
               "text": "Kolorektales Karzinom"
@@ -2013,7 +1998,7 @@
         },
         "occurrenceDateTime": "2022-04-07",
         "condition": {
-          "reference": "Condition/mii-exa-test-data-patient-3-diagnose-1"
+          "reference": "Condition/mii-exa-test-data-molgen-diagnose-1"
         }
       }
     },
@@ -2098,7 +2083,7 @@
           "unit": "percent"
         },
         "specimen": {
-          "reference": "Specimen/mii-exa-test-data-patient-3-specimen-1"
+          "reference": "Specimen/mii-exa-test-data-molgen-specimen-1"
         }
       }
     },
@@ -2135,7 +2120,6 @@
               {
                 "code": "108252007",
                 "system": "http://snomed.info/sct",
-                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                 "display": "Laboratory procedure (procedure)"
               }
             ]
@@ -2146,7 +2130,6 @@
             {
               "code": "405825005",
               "system": "http://snomed.info/sct",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
               "display": "Molecular genetic test (procedure)"
             }
           ],
@@ -2154,7 +2137,7 @@
         },
         "specimen": [
           {
-            "reference": "Specimen/mii-exa-test-data-patient-4-specimen-1"
+            "reference": "Specimen/mii-exa-test-data-molgen-specimen-2"
           }
         ],
         "reasonCode": [
@@ -2163,7 +2146,6 @@
               {
                 "code": "87737001",
                 "system": "http://snomed.info/sct",
-                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                 "display": "Signet ring cell carcinoma (morphologic abnormality)"
               }
             ],
@@ -2174,7 +2156,6 @@
               {
                 "code": "429740004",
                 "system": "http://snomed.info/sct",
-                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                 "display": "Family history of malignant neoplasm of breast (situation)"
               }
             ],
@@ -2183,7 +2164,7 @@
         ],
         "reasonReference": [
           {
-            "reference": "Condition/mii-exa-test-data-patient-4-diagnose-1"
+            "reference": "Condition/mii-exa-test-data-molgen-diagnose-2"
           }
         ],
         "supportingInfo": [
@@ -2269,10 +2250,10 @@
         ],
         "specimen": [
           {
-            "reference": "Specimen/mii-exa-test-data-patient-4-specimen-1"
+            "reference": "Specimen/mii-exa-test-data-molgen-specimen-2"
           },
           {
-            "reference": "Specimen/mii-exa-test-data-patient-4-specimen-2"
+            "reference": "Specimen/mii-exa-test-data-molgen-specimen-3"
           }
         ],
         "result": [
@@ -2569,7 +2550,7 @@
           ]
         },
         "specimen": {
-          "reference": "Specimen/mii-exa-test-data-patient-4-specimen-1"
+          "reference": "Specimen/mii-exa-test-data-molgen-specimen-2"
         },
         "device": {
           "reference": "Device/mii-exa-test-data-molgen-device-sequencer"
@@ -2599,7 +2580,7 @@
         },
         "reasonReference": [
           {
-            "reference": "Condition/mii-exa-test-data-patient-4-diagnose-1"
+            "reference": "Condition/mii-exa-test-data-molgen-diagnose-2"
           }
         ],
         "extension": [
@@ -2624,7 +2605,6 @@
             {
               "code": "405825005",
               "system": "http://snomed.info/sct",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
               "display": "Molecular genetic test (procedure)"
             }
           ]
@@ -2691,7 +2671,7 @@
           {
             "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-specimen",
             "valueReference": {
-              "reference": "Specimen/mii-exa-test-data-patient-4-specimen-1"
+              "reference": "Specimen/mii-exa-test-data-molgen-specimen-2"
             }
           },
           {
@@ -3093,7 +3073,6 @@
                 {
                   "code": "716859000",
                   "system": "http://snomed.info/sct",
-                  "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                   "display": "Hereditary diffuse carcinoma of stomach (disorder)"
                 }
               ]
@@ -3193,7 +3172,6 @@
             {
               "system": "http://snomed.info/sct",
               "code": "72705000",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
               "display": "Mother (person)"
             },
             {
@@ -3212,7 +3190,6 @@
             {
               "code": "248152002",
               "system": "http://snomed.info/sct",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
               "display": "Female (finding)"
             }
           ]
@@ -3223,7 +3200,6 @@
               {
                 "system": "http://snomed.info/sct",
                 "code": "443961001",
-                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                 "display": "Malignant adenomatous neoplasm (disorder)"
               },
               {
@@ -3242,7 +3218,6 @@
                 {
                   "system": "http://snomed.info/sct",
                   "code": "254837009",
-                  "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                   "display": "Malignant neoplasm of breast (disorder)"
                 },
                 {
@@ -3301,7 +3276,6 @@
               {
                 "code": "108252007",
                 "system": "http://snomed.info/sct",
-                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                 "display": "Laboratory procedure (procedure)"
               }
             ]
@@ -3312,7 +3286,6 @@
             {
               "code": "405825005",
               "system": "http://snomed.info/sct",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
               "display": "Molecular genetic test (procedure)"
             }
           ],
@@ -3324,15 +3297,14 @@
               {
                 "code": "254637007",
                 "system": "http://snomed.info/sct",
-                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-                "display": "Non-small cell carcinoma of lung (disorder)"
+                "display": "Non-small cell lung cancer"
               }
             ]
           }
         ],
         "specimen": [
           {
-            "reference": "Specimen/mii-exa-test-data-patient-3-specimen-1"
+            "reference": "Specimen/mii-exa-test-data-molgen-specimen-1"
           }
         ],
         "note": [
@@ -3682,7 +3654,7 @@
           ]
         },
         "specimen": {
-          "reference": "Specimen/mii-exa-test-data-patient-3-specimen-1"
+          "reference": "Specimen/mii-exa-test-data-molgen-specimen-1"
         },
         "device": {
           "reference": "Device/mii-exa-test-data-molgen-device-sequencer"
@@ -3806,8 +3778,7 @@
                 {
                   "code": "254637007",
                   "system": "http://snomed.info/sct",
-                  "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-                  "display": "Non-small cell carcinoma of lung (disorder)"
+                  "display": "Non-small cell lung cancer"
                 }
               ]
             }
@@ -4019,7 +3990,7 @@
                 {
                   "code": "SO:1000035",
                   "system": "http://sequenceontology.org",
-                  "display": "duplication"
+                  "display": "Duplication"
                 }
               ]
             }
@@ -4099,7 +4070,7 @@
           ]
         },
         "specimen": {
-          "reference": "Specimen/mii-exa-test-data-patient-3-specimen-1"
+          "reference": "Specimen/mii-exa-test-data-molgen-specimen-1"
         },
         "device": {
           "reference": "Device/mii-exa-test-data-molgen-device-sequencer"
@@ -4216,8 +4187,7 @@
                 {
                   "code": "254637007",
                   "system": "http://snomed.info/sct",
-                  "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-                  "display": "Non-small cell carcinoma of lung (disorder)"
+                  "display": "Non-small cell lung cancer"
                 }
               ]
             }
@@ -4241,6 +4211,272 @@
         },
         "effectiveDateTime": "2024-03-20",
         "issued": "2024-03-25T10:00:00+01:00"
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Specimen/mii-exa-test-data-molgen-specimen-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Specimen/mii-exa-test-data-molgen-specimen-1",
+      "resource": {
+        "resourceType": "Specimen",
+        "id": "mii-exa-test-data-molgen-specimen-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ]
+        },
+        "collection": {
+          "collectedDateTime": "2024-03-05"
+        },
+        "status": "available",
+        "type": {
+          "coding": [
+            {
+              "code": "BLD",
+              "system": "http://terminology.hl7.org/CodeSystem/v2-0487",
+              "display": "Whole blood"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-molgen-patient-1"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Specimen/mii-exa-test-data-molgen-specimen-2"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Specimen/mii-exa-test-data-molgen-specimen-2",
+      "resource": {
+        "resourceType": "Specimen",
+        "id": "mii-exa-test-data-molgen-specimen-2",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ]
+        },
+        "collection": {
+          "collectedDateTime": "2024-04-03"
+        },
+        "status": "available",
+        "type": {
+          "coding": [
+            {
+              "code": "TISS",
+              "system": "http://terminology.hl7.org/CodeSystem/v2-0487",
+              "display": "Tissue"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-molgen-patient-2"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Specimen/mii-exa-test-data-molgen-specimen-3"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Specimen/mii-exa-test-data-molgen-specimen-3",
+      "resource": {
+        "resourceType": "Specimen",
+        "id": "mii-exa-test-data-molgen-specimen-3",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ]
+        },
+        "collection": {
+          "collectedDateTime": "2024-04-03"
+        },
+        "status": "available",
+        "type": {
+          "coding": [
+            {
+              "code": "BLD",
+              "system": "http://terminology.hl7.org/CodeSystem/v2-0487",
+              "display": "Whole blood"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-molgen-patient-2"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Practitioner/mii-exa-test-data-practitioner-physician-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Practitioner/mii-exa-test-data-practitioner-physician-1",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "mii-exa-test-data-practitioner-physician-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ]
+        },
+        "name": [
+          {
+            "given": [
+              "Rahel"
+            ],
+            "family": "Hirsch"
+          }
+        ],
+        "active": true
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Practitioner/mii-exa-test-data-practitioner-physician-2"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Practitioner/mii-exa-test-data-practitioner-physician-2",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "mii-exa-test-data-practitioner-physician-2",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ]
+        },
+        "name": [
+          {
+            "given": [
+              "Robert"
+            ],
+            "prefix": [
+              "Dr."
+            ],
+            "use": "official",
+            "family": "Koch"
+          }
+        ],
+        "active": true
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Condition/mii-exa-test-data-molgen-diagnose-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Condition/mii-exa-test-data-molgen-diagnose-1",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "mii-exa-test-data-molgen-diagnose-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "C18.7",
+              "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+              "display": "Bösartige Neubildung: Colon sigmoideum"
+            }
+          ]
+        },
+        "clinicalStatus": {
+          "coding": [
+            {
+              "code": "active",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "code": "confirmed",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-molgen-patient-1"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Condition/mii-exa-test-data-molgen-diagnose-2"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Condition/mii-exa-test-data-molgen-diagnose-2",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "mii-exa-test-data-molgen-diagnose-2",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "C34.1",
+              "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+              "display": "Bösartige Neubildung: Oberlappen (-Bronchus)"
+            }
+          ]
+        },
+        "clinicalStatus": {
+          "coding": [
+            {
+              "code": "active",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "code": "confirmed",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-molgen-patient-2"
+        }
       }
     }
   ],

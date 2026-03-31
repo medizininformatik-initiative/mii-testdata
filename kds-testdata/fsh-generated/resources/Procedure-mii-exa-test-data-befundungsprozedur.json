@@ -19,7 +19,6 @@
         {
           "code": "76752008",
           "system": "http://snomed.info/sct",
-          "version": "http://snomed.info/sct/900000000000207008/version/20230731",
           "display": "Breast structure (body structure)"
         }
       ]
@@ -41,7 +40,6 @@
       {
         "code": "165197003",
         "system": "http://snomed.info/sct",
-        "version": "http://snomed.info/sct/900000000000207008/version/20230731",
         "display": "Diagnostic assessment (procedure)"
       }
     ]
@@ -51,7 +49,6 @@
       {
         "code": "4261000179100",
         "system": "http://snomed.info/sct",
-        "version": "http://snomed.info/sct/900000000000207008/version/20230731",
         "display": "Computed tomography imaging report (record artifact)"
       }
     ]

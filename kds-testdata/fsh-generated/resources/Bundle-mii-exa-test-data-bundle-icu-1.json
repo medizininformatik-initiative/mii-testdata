@@ -111,7 +111,6 @@
               {
                 "code": "364396009",
                 "system": "http://snomed.info/sct",
-                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                 "display": "Fluid balance observable (observable entity)"
               }
             ]
@@ -122,8 +121,7 @@
             {
               "system": "http://snomed.info/sct",
               "code": "251850009",
-              "display": "Ultrafiltrate fluid loss (observable entity)",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+              "display": "Ultrafiltrate fluid loss (observable entity)"
             },
             {
               "system": "http://loinc.org",
@@ -176,7 +174,6 @@
               {
                 "code": "364396009",
                 "system": "http://snomed.info/sct",
-                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                 "display": "Fluid balance observable (observable entity)"
               }
             ]
@@ -187,12 +184,12 @@
             {
               "system": "http://snomed.info/sct",
               "code": "251843005",
-              "display": "Fluid output from drain",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+              "display": "Fluid output from drain"
             },
             {
               "system": "urn:iso:std:iso:11073:10101",
-              "code": "26668"
+              "code": "26668",
+              "display": "Drainage volume in bag"
             }
           ]
         },
@@ -240,7 +237,6 @@
               {
                 "code": "364396009",
                 "system": "http://snomed.info/sct",
-                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                 "display": "Fluid balance observable (observable entity)"
               }
             ]
@@ -251,8 +247,7 @@
             {
               "system": "http://snomed.info/sct",
               "code": "251847006",
-              "display": "Total fluid loss",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+              "display": "Total fluid loss"
             },
             {
               "system": "http://loinc.org",
@@ -305,7 +300,6 @@
               {
                 "code": "364396009",
                 "system": "http://snomed.info/sct",
-                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                 "display": "Fluid balance observable (observable entity)"
               }
             ]
@@ -316,8 +310,7 @@
             {
               "system": "http://snomed.info/sct",
               "code": "1162667009",
-              "display": "Volume of drainage of bile duct (observable entity)",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+              "display": "Volume of drainage of bile duct (observable entity)"
             },
             {
               "system": "http://loinc.org",
@@ -370,7 +363,6 @@
               {
                 "code": "364396009",
                 "system": "http://snomed.info/sct",
-                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                 "display": "Fluid balance observable (observable entity)"
               }
             ]
@@ -381,8 +373,7 @@
             {
               "system": "http://snomed.info/sct",
               "code": "1162667009",
-              "display": "Volume of drainage of bile duct (observable entity)",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+              "display": "Volume of drainage of bile duct (observable entity)"
             },
             {
               "system": "http://loinc.org",
@@ -435,7 +426,6 @@
               {
                 "code": "364396009",
                 "system": "http://snomed.info/sct",
-                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                 "display": "Fluid balance observable (observable entity)"
               }
             ]
@@ -446,8 +436,7 @@
             {
               "system": "http://snomed.info/sct",
               "code": "1162665001",
-              "display": "Volume of drainage of gastric contents (observable entity)",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+              "display": "Volume of drainage of gastric contents (observable entity)"
             },
             {
               "system": "http://loinc.org",
@@ -500,7 +489,6 @@
               {
                 "code": "364396009",
                 "system": "http://snomed.info/sct",
-                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                 "display": "Fluid balance observable (observable entity)"
               }
             ]
@@ -511,8 +499,7 @@
             {
               "system": "http://snomed.info/sct",
               "code": "251844004",
-              "display": "Fluid output from surgical drain (observable entity)",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+              "display": "Fluid output from surgical drain (observable entity)"
             }
           ]
         },
@@ -560,7 +547,6 @@
               {
                 "code": "364396009",
                 "system": "http://snomed.info/sct",
-                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                 "display": "Fluid balance observable (observable entity)"
               }
             ]
@@ -571,8 +557,7 @@
             {
               "system": "http://snomed.info/sct",
               "code": "1162668004",
-              "display": "Volume of drainage of pancreatic fluid (observable entity)",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+              "display": "Volume of drainage of pancreatic fluid (observable entity)"
             }
           ]
         },
@@ -620,7 +605,6 @@
               {
                 "code": "364396009",
                 "system": "http://snomed.info/sct",
-                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                 "display": "Fluid balance observable (observable entity)"
               }
             ]
@@ -679,7 +663,6 @@
               {
                 "code": "364396009",
                 "system": "http://snomed.info/sct",
-                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                 "display": "Fluid balance observable (observable entity)"
               }
             ]
@@ -690,8 +673,7 @@
             {
               "system": "http://snomed.info/sct",
               "code": "364201005",
-              "display": "Urine output observable (observable entity)",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+              "display": "Urine output observable (observable entity)"
             },
             {
               "system": "http://loinc.org",
@@ -744,7 +726,6 @@
               {
                 "code": "364396009",
                 "system": "http://snomed.info/sct",
-                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                 "display": "Fluid balance observable (observable entity)"
               }
             ]
@@ -755,8 +736,7 @@
             {
               "system": "http://snomed.info/sct",
               "code": "251845003",
-              "display": "Fluid output from wound drain (observable entity)",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+              "display": "Fluid output from wound drain (observable entity)"
             },
             {
               "system": "http://loinc.org",
@@ -809,7 +789,6 @@
               {
                 "code": "364396009",
                 "system": "http://snomed.info/sct",
-                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                 "display": "Fluid balance observable (observable entity)"
               }
             ]
@@ -820,8 +799,7 @@
             {
               "system": "http://snomed.info/sct",
               "code": "250771004",
-              "display": "Actual blood loss",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+              "display": "Actual blood loss"
             },
             {
               "system": "http://loinc.org",
@@ -874,7 +852,6 @@
               {
                 "code": "364396009",
                 "system": "http://snomed.info/sct",
-                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                 "display": "Fluid balance observable (observable entity)"
               }
             ]
@@ -885,8 +862,7 @@
             {
               "system": "http://snomed.info/sct",
               "code": "251854000",
-              "display": "Enteral fluid input (observable entity)",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+              "display": "Enteral fluid input (observable entity)"
             },
             {
               "system": "http://loinc.org",
@@ -939,7 +915,6 @@
               {
                 "code": "364396009",
                 "system": "http://snomed.info/sct",
-                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                 "display": "Fluid balance observable (observable entity)"
               }
             ]
@@ -950,8 +925,7 @@
             {
               "system": "http://snomed.info/sct",
               "code": "251852001",
-              "display": "Total fluid input (observable entity)",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+              "display": "Total fluid input (observable entity)"
             },
             {
               "system": "http://loinc.org",
@@ -1004,7 +978,6 @@
               {
                 "code": "364396009",
                 "system": "http://snomed.info/sct",
-                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                 "display": "Fluid balance observable (observable entity)"
               }
             ]
@@ -1015,8 +988,7 @@
             {
               "system": "http://snomed.info/sct",
               "code": "251852001",
-              "display": "Total fluid input (observable entity)",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+              "display": "Total fluid input (observable entity)"
             },
             {
               "system": "http://loinc.org",
@@ -1069,7 +1041,6 @@
               {
                 "code": "364396009",
                 "system": "http://snomed.info/sct",
-                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                 "display": "Fluid balance observable (observable entity)"
               }
             ]
@@ -1080,8 +1051,7 @@
             {
               "system": "http://snomed.info/sct",
               "code": "251847006",
-              "display": "Total fluid loss",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+              "display": "Total fluid loss"
             },
             {
               "system": "http://loinc.org",
@@ -1134,7 +1104,6 @@
               {
                 "code": "364396009",
                 "system": "http://snomed.info/sct",
-                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                 "display": "Fluid balance observable (observable entity)"
               }
             ]
@@ -1145,8 +1114,7 @@
             {
               "system": "http://snomed.info/sct",
               "code": "251852001",
-              "display": "Total fluid input (observable entity)",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+              "display": "Total fluid input (observable entity)"
             },
             {
               "system": "http://loinc.org",
@@ -1199,7 +1167,6 @@
               {
                 "code": "364396009",
                 "system": "http://snomed.info/sct",
-                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                 "display": "Fluid balance observable (observable entity)"
               }
             ]
@@ -1210,8 +1177,7 @@
             {
               "system": "http://snomed.info/sct",
               "code": "251856003",
-              "display": "Fluid balance status (observable entity)",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+              "display": "Fluid balance status (observable entity)"
             },
             {
               "system": "http://loinc.org",
@@ -1259,12 +1225,22 @@
             "reference": "Procedure/mii-exa-test-data-patient-1-icu-ect-extrakorp-1"
           }
         ],
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "182744004",
+                "display": "Extracorporeal circulation procedure"
+              }
+            ]
+          }
+        ],
         "code": {
           "coding": [
             {
               "system": "http://snomed.info/sct",
               "code": "386534000",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
               "display": "Arterial blood pressure"
             }
           ]
@@ -1313,7 +1289,6 @@
             {
               "system": "http://snomed.info/sct",
               "code": "444479000",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
               "display": "Rate of blood flow through cardiovascular device"
             }
           ]
@@ -1362,7 +1337,6 @@
             {
               "system": "http://snomed.info/sct",
               "code": "251288004",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
               "display": "Extracorporeal gas exchange flow rate"
             }
           ]
@@ -1412,8 +1386,7 @@
               {
                 "system": "http://snomed.info/sct",
                 "code": "182744004",
-                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-                "display": "Renal dialysis (procedure)"
+                "display": "Extracorporeal circulation procedure"
               }
             ]
           }
@@ -1423,7 +1396,6 @@
             {
               "system": "http://snomed.info/sct",
               "code": "251289007",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
               "display": "Extracorporeal gas exchange flow index"
             }
           ]
@@ -1473,8 +1445,7 @@
               {
                 "system": "http://snomed.info/sct",
                 "code": "182744004",
-                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-                "display": "Renal dialysis (procedure)"
+                "display": "Extracorporeal circulation procedure"
               }
             ]
           }
@@ -1484,7 +1455,6 @@
             {
               "system": "http://snomed.info/sct",
               "code": "251286000",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
               "display": "Extracorporeal gas exchange duration"
             }
           ]
@@ -1534,8 +1504,7 @@
               {
                 "system": "http://snomed.info/sct",
                 "code": "182744004",
-                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-                "display": "Renal dialysis (procedure)"
+                "display": "Extracorporeal circulation procedure"
               }
             ]
           }
@@ -1545,7 +1514,6 @@
             {
               "system": "http://snomed.info/sct",
               "code": "445940005",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
               "display": "Duration of haemodialysis session"
             }
           ]
@@ -1594,7 +1562,6 @@
             {
               "system": "http://snomed.info/sct",
               "code": "79063001",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
               "display": "Gas flow rate (v)"
             }
           ]
@@ -1644,8 +1611,7 @@
               {
                 "system": "http://snomed.info/sct",
                 "code": "182744004",
-                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-                "display": "Renal dialysis (procedure)"
+                "display": "Extracorporeal circulation procedure"
               }
             ]
           }
@@ -1655,7 +1621,6 @@
             {
               "system": "http://snomed.info/sct",
               "code": "401000124105",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
               "display": "Hemodialysis blood flow"
             }
           ]
@@ -1705,8 +1670,7 @@
               {
                 "system": "http://snomed.info/sct",
                 "code": "182744004",
-                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-                "display": "Renal dialysis (procedure)"
+                "display": "Extracorporeal circulation procedure"
               }
             ]
           }
@@ -1765,8 +1729,7 @@
               {
                 "system": "http://snomed.info/sct",
                 "code": "182744004",
-                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-                "display": "Renal dialysis (procedure)"
+                "display": "Extracorporeal circulation procedure"
               }
             ]
           }
@@ -1776,7 +1739,6 @@
             {
               "system": "http://snomed.info/sct",
               "code": "708513005",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
               "display": "Substitution flow rate"
             }
           ]
@@ -1826,8 +1788,7 @@
               {
                 "system": "http://snomed.info/sct",
                 "code": "182744004",
-                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-                "display": "Renal dialysis (procedure)"
+                "display": "Extracorporeal circulation procedure"
               }
             ]
           }
@@ -1837,7 +1798,6 @@
             {
               "system": "http://snomed.info/sct",
               "code": "708514004",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
               "display": "Substitution volume"
             }
           ]
@@ -1886,7 +1846,6 @@
             {
               "system": "http://snomed.info/sct",
               "code": "252076005",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
               "display": "Venous pressure"
             }
           ]
@@ -1936,7 +1895,6 @@
               {
                 "code": "40617009",
                 "system": "http://snomed.info/sct",
-                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                 "display": "Artificial ventilation (regime/therapy)"
               }
             ]
@@ -1947,7 +1905,6 @@
             {
               "system": "http://snomed.info/sct",
               "code": "442720002",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
               "display": "Expired oxygen tension"
             },
             {
@@ -2016,13 +1973,11 @@
             {
               "system": "http://snomed.info/sct",
               "code": "75367002",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
               "display": "Blood pressure"
             },
             {
               "system": "http://snomed.info/sct",
               "code": "364090009",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
               "display": "Systemic arterial pressure"
             }
           ]
@@ -2125,7 +2080,6 @@
             {
               "system": "http://snomed.info/sct",
               "code": "86290005",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
               "display": "Respiratory rate"
             }
           ]
@@ -2179,7 +2133,6 @@
             {
               "system": "http://snomed.info/sct",
               "code": "364075005",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
               "display": "Heart rate"
             },
             {
@@ -2253,7 +2206,6 @@
             {
               "system": "http://snomed.info/sct",
               "code": "27113001",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
               "display": "Body weight"
             }
           ]
@@ -2317,7 +2269,6 @@
             {
               "system": "http://snomed.info/sct",
               "code": "1153637007",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
               "display": "Body height"
             }
           ]
@@ -2376,7 +2327,6 @@
             {
               "system": "http://snomed.info/sct",
               "code": "363812007",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
               "display": "Head circumference"
             }
           ]
@@ -2426,7 +2376,6 @@
               {
                 "code": "40617009",
                 "system": "http://snomed.info/sct",
-                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                 "display": "Artificial ventilation (regime/therapy)"
               }
             ]
@@ -2437,7 +2386,6 @@
             {
               "system": "http://snomed.info/sct",
               "code": "250774007",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
               "display": "Inspired oxygen concentration"
             },
             {
@@ -2492,7 +2440,6 @@
               {
                 "code": "40617009",
                 "system": "http://snomed.info/sct",
-                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                 "display": "Artificial ventilation (regime/therapy)"
               }
             ]
@@ -2552,7 +2499,6 @@
               {
                 "code": "40617009",
                 "system": "http://snomed.info/sct",
-                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                 "display": "Artificial ventilation (regime/therapy)"
               }
             ]
@@ -2612,7 +2558,6 @@
               {
                 "code": "40617009",
                 "system": "http://snomed.info/sct",
-                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                 "display": "Artificial ventilation (regime/therapy)"
               }
             ]
@@ -2623,7 +2568,6 @@
             {
               "system": "http://snomed.info/sct",
               "code": "416811008",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
               "display": "Tidal volume setting"
             },
             {
@@ -2683,7 +2627,6 @@
               {
                 "code": "40617009",
                 "system": "http://snomed.info/sct",
-                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                 "display": "Artificial ventilation (regime/therapy)"
               }
             ]
@@ -2694,7 +2637,6 @@
             {
               "system": "http://snomed.info/sct",
               "code": "250874002",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
               "display": "Ventilator delivered tidal volume"
             },
             {
@@ -2754,7 +2696,6 @@
               {
                 "code": "40617009",
                 "system": "http://snomed.info/sct",
-                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                 "display": "Artificial ventilation (regime/therapy)"
               }
             ]
@@ -2765,7 +2706,6 @@
             {
               "system": "http://snomed.info/sct",
               "code": "250875001",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
               "display": "Ventilator delivered minute volume"
             },
             {
@@ -2825,7 +2765,6 @@
               {
                 "code": "40617009",
                 "system": "http://snomed.info/sct",
-                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                 "display": "Artificial ventilation (regime/therapy)"
               }
             ]
@@ -2890,7 +2829,6 @@
               {
                 "code": "40617009",
                 "system": "http://snomed.info/sct",
-                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                 "display": "Artificial ventilation (regime/therapy)"
               }
             ]
@@ -2955,7 +2893,6 @@
               {
                 "code": "40617009",
                 "system": "http://snomed.info/sct",
-                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                 "display": "Artificial ventilation (regime/therapy)"
               }
             ]
@@ -3015,7 +2952,6 @@
               {
                 "code": "40617009",
                 "system": "http://snomed.info/sct",
-                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                 "display": "Artificial ventilation (regime/therapy)"
               }
             ]
@@ -3026,7 +2962,6 @@
             {
               "system": "http://snomed.info/sct",
               "code": "250820008",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
               "display": "Expiratory time"
             },
             {
@@ -3081,7 +3016,6 @@
               {
                 "code": "40617009",
                 "system": "http://snomed.info/sct",
-                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                 "display": "Artificial ventilation (regime/therapy)"
               }
             ]
@@ -3092,7 +3026,6 @@
             {
               "system": "http://snomed.info/sct",
               "code": "250819002",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
               "display": "Inspiratory time"
             },
             {
@@ -3152,7 +3085,6 @@
               {
                 "code": "40617009",
                 "system": "http://snomed.info/sct",
-                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                 "display": "Artificial ventilation (regime/therapy)"
               }
             ]
@@ -3163,7 +3095,6 @@
             {
               "system": "http://snomed.info/sct",
               "code": "250790007",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
               "display": "End tidal carbon dioxide tension"
             },
             {
@@ -3223,7 +3154,6 @@
               {
                 "code": "40617009",
                 "system": "http://snomed.info/sct",
-                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                 "display": "Artificial ventilation (regime/therapy)"
               }
             ]
@@ -3351,7 +3281,6 @@
               {
                 "code": "40617009",
                 "system": "http://snomed.info/sct",
-                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                 "display": "Artificial ventilation (regime/therapy)"
               }
             ]
@@ -3362,7 +3291,6 @@
             {
               "system": "http://snomed.info/sct",
               "code": "250774007",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
               "display": "Inspired oxygen concentration"
             },
             {
@@ -3417,7 +3345,6 @@
               {
                 "code": "40617009",
                 "system": "http://snomed.info/sct",
-                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                 "display": "Artificial ventilation (regime/therapy)"
               }
             ]
@@ -3482,7 +3409,6 @@
               {
                 "code": "40617009",
                 "system": "http://snomed.info/sct",
-                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                 "display": "Artificial ventilation (regime/therapy)"
               }
             ]
@@ -3493,7 +3419,6 @@
             {
               "system": "http://snomed.info/sct",
               "code": "27913002",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
               "display": "Maximum inspiratory pressure"
             },
             {
@@ -3553,7 +3478,6 @@
               {
                 "code": "40617009",
                 "system": "http://snomed.info/sct",
-                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                 "display": "Artificial ventilation (regime/therapy)"
               }
             ]
@@ -3564,7 +3488,6 @@
             {
               "system": "http://snomed.info/sct",
               "code": "250876000",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
               "display": "Ventilator rate"
             },
             {
@@ -3624,7 +3547,6 @@
               {
                 "code": "40617009",
                 "system": "http://snomed.info/sct",
-                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                 "display": "Artificial ventilation (regime/therapy)"
               }
             ]
@@ -3635,7 +3557,6 @@
             {
               "system": "http://snomed.info/sct",
               "code": "698821009",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
               "display": "Mean inspiratory airway pressure"
             },
             {
@@ -3695,7 +3616,6 @@
               {
                 "code": "40617009",
                 "system": "http://snomed.info/sct",
-                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                 "display": "Artificial ventilation (regime/therapy)"
               }
             ]
@@ -3706,7 +3626,6 @@
             {
               "system": "http://snomed.info/sct",
               "code": "250854009",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
               "display": "Positive end expiratory pressure"
             },
             {
@@ -3766,7 +3685,6 @@
               {
                 "code": "40617009",
                 "system": "http://snomed.info/sct",
-                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                 "display": "Artificial ventilation (regime/therapy)"
               }
             ]
@@ -3830,7 +3748,6 @@
               {
                 "code": "40617009",
                 "system": "http://snomed.info/sct",
-                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                 "display": "Artificial ventilation (regime/therapy)"
               }
             ]
@@ -3841,7 +3758,6 @@
             {
               "system": "http://snomed.info/sct",
               "code": "250810003",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
               "display": "Total breath rate"
             },
             {
@@ -3901,7 +3817,6 @@
               {
                 "code": "40617009",
                 "system": "http://snomed.info/sct",
-                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                 "display": "Artificial ventilation (regime/therapy)"
               }
             ]
@@ -3912,7 +3827,6 @@
             {
               "system": "http://snomed.info/sct",
               "code": "250816009",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
               "display": "Spontaneous tidal volume"
             },
             {
@@ -3967,7 +3881,6 @@
               {
                 "code": "40617009",
                 "system": "http://snomed.info/sct",
-                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                 "display": "Artificial ventilation (regime/therapy)"
               }
             ]
@@ -4027,7 +3940,6 @@
               {
                 "code": "40617009",
                 "system": "http://snomed.info/sct",
-                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                 "display": "Artificial ventilation (regime/therapy)"
               }
             ]
@@ -4087,7 +3999,6 @@
               {
                 "code": "40617009",
                 "system": "http://snomed.info/sct",
-                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                 "display": "Artificial ventilation (regime/therapy)"
               }
             ]
@@ -4098,7 +4009,6 @@
             {
               "system": "http://snomed.info/sct",
               "code": "250822000",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
               "display": "Inspiration/expiration time ratio"
             },
             {
@@ -4158,7 +4068,6 @@
               {
                 "code": "40617009",
                 "system": "http://snomed.info/sct",
-                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                 "display": "Artificial ventilation (regime/therapy)"
               }
             ]
@@ -4169,7 +4078,6 @@
             {
               "system": "http://snomed.info/sct",
               "code": "250823005",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
               "display": "Total dynamic compliance"
             },
             {
@@ -4229,7 +4137,6 @@
               {
                 "code": "40617009",
                 "system": "http://snomed.info/sct",
-                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                 "display": "Artificial ventilation (regime/therapy)"
               }
             ]
@@ -4299,7 +4206,6 @@
             {
               "code": "182744004",
               "system": "http://snomed.info/sct",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
               "display": "Extracorporeal circulation procedure"
             }
           ]
@@ -4309,7 +4215,6 @@
             {
               "code": "233573008",
               "system": "http://snomed.info/sct",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
               "display": "Extracorporeal membrane oxygenation (procedure)"
             }
           ]
@@ -4353,8 +4258,7 @@
             {
               "code": "40617009",
               "system": "http://snomed.info/sct",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-              "display": "Artificial respiration (procedure)"
+              "display": "Artificial ventilation"
             }
           ]
         },
@@ -4363,7 +4267,6 @@
             {
               "code": "243147009",
               "system": "http://snomed.info/sct",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
               "display": "Controlled ventilation (procedure)"
             }
           ]
@@ -4402,7 +4305,6 @@
             {
               "code": "706172005",
               "system": "http://snomed.info/sct",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
               "display": "Ventilator (physical object)"
             }
           ]
@@ -4438,8 +4340,7 @@
             {
               "code": "182744004",
               "system": "http://snomed.info/sct",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-              "display": "Renal dialysis (procedure)"
+              "display": "Extracorporeal circulation procedure"
             }
           ]
         },
@@ -4475,7 +4376,6 @@
             {
               "code": "40617009",
               "system": "http://snomed.info/sct",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
               "display": "Artificial ventilation (regime/therapy)"
             }
           ]

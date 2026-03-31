@@ -49,15 +49,9 @@
         {
           "code": "254637007",
           "system": "http://snomed.info/sct",
-          "version": "http://snomed.info/sct/900000000000207008/version/20230731",
           "display": "Non-small cell lung cancer (disorder)"
         }
       ]
-    }
-  ],
-  "specimen": [
-    {
-      "reference": "Specimen/mii-exa-test-data-patient-2-specimen-1"
     }
   ],
   "status": "completed",

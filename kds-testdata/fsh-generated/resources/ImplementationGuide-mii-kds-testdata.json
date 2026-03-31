@@ -397,10 +397,34 @@
       },
       {
         "reference": {
+          "reference": "Condition/mii-exa-test-data-bildgebung-diagnose-1"
+        },
+        "name": "mii-exa-test-data-bildgebung-diagnose-1",
+        "description": "Bildgebung Diagnose - Lungentumor",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Encounter/mii-exa-test-data-bildgebung-encounter-1"
         },
         "name": "mii-exa-test-data-bildgebung-encounter-1",
         "description": "Bildgebung Test Encounter",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-bildgebung-labobs-1"
+        },
+        "name": "mii-exa-test-data-bildgebung-labobs-1",
+        "description": "Bildgebung Lab - Tumorgröße",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "MedicationRequest/mii-exa-test-data-bildgebung-medrequest-1"
+        },
+        "name": "mii-exa-test-data-bildgebung-medrequest-1",
+        "description": "Bildgebung MedRequest - Kontrastmittel",
         "exampleBoolean": true
       },
       {
@@ -425,6 +449,14 @@
         },
         "name": "mii-exa-test-data-bildgebungsstudie",
         "description": "ImagingStudy: MagneticResonance",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Condition/mii-exa-test-data-biobank-diagnose-1"
+        },
+        "name": "mii-exa-test-data-biobank-diagnose-1",
+        "description": "Biobank Diagnose Patient 1",
         "exampleBoolean": true
       },
       {
@@ -981,6 +1013,22 @@
       },
       {
         "reference": {
+          "reference": "Condition/mii-exa-test-data-molgen-diagnose-1"
+        },
+        "name": "mii-exa-test-data-molgen-diagnose-1",
+        "description": "Molgen Diagnose - Erbliches Tumorsyndrom",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Condition/mii-exa-test-data-molgen-diagnose-2"
+        },
+        "name": "mii-exa-test-data-molgen-diagnose-2",
+        "description": "Molgen Diagnose - NSCLC",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Encounter/mii-exa-test-data-molgen-encounter-1"
         },
         "name": "mii-exa-test-data-molgen-encounter-1",
@@ -1013,6 +1061,30 @@
       },
       {
         "reference": {
+          "reference": "Specimen/mii-exa-test-data-molgen-specimen-1"
+        },
+        "name": "mii-exa-test-data-molgen-specimen-1",
+        "description": "Molgen Specimen 1 - Blutprobe Patient 1",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Specimen/mii-exa-test-data-molgen-specimen-2"
+        },
+        "name": "mii-exa-test-data-molgen-specimen-2",
+        "description": "Molgen Specimen 2 - Tumorgewebe Patient 2",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Specimen/mii-exa-test-data-molgen-specimen-3"
+        },
+        "name": "mii-exa-test-data-molgen-specimen-3",
+        "description": "Molgen Specimen 3 - Blutprobe Patient 2",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Encounter/mii-exa-test-data-mtb-encounter-1"
         },
         "name": "mii-exa-test-data-mtb-encounter-1",
@@ -1021,10 +1093,34 @@
       },
       {
         "reference": {
+          "reference": "Observation/mii-exa-test-data-mtb-labobs-ecog-1"
+        },
+        "name": "mii-exa-test-data-mtb-labobs-ecog-1",
+        "description": "MTB ECOG Performance Status",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-mtb-labobs-vorbefund-1"
+        },
+        "name": "mii-exa-test-data-mtb-labobs-vorbefund-1",
+        "description": "MTB Vorbefund Lab",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Patient/mii-exa-test-data-mtb-patient-1"
         },
         "name": "mii-exa-test-data-mtb-patient-1",
         "description": "MTB Test Patient",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Specimen/mii-exa-test-data-mtb-specimen-1"
+        },
+        "name": "mii-exa-test-data-mtb-specimen-1",
+        "description": "MTB Tumorgewebe",
         "exampleBoolean": true
       },
       {
@@ -4904,6 +5000,30 @@
         },
         "name": "mii-exa-test-data-seltene-encounter-1",
         "description": "Seltene Erkrankungen Test Encounter",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-seltene-labobs-1"
+        },
+        "name": "mii-exa-test-data-seltene-labobs-1",
+        "description": "Seltene Lab Observation - Enzymaktivitaet",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "DiagnosticReport/mii-exa-test-data-seltene-molgen-befundbericht-1"
+        },
+        "name": "mii-exa-test-data-seltene-molgen-befundbericht-1",
+        "description": "Seltene Molgen Befundbericht Stub",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-seltene-molgen-variante-1"
+        },
+        "name": "mii-exa-test-data-seltene-molgen-variante-1",
+        "description": "Seltene Molgen Variante Stub",
         "exampleBoolean": true
       },
       {

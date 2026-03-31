@@ -55,7 +55,7 @@ Description: "Observation: Therapeutische Implikation fuer EGFR L858R bei NSCLC 
 * component[evidence-level].code = $loinc#93044-6 "Level of evidence"
 * component[evidence-level].valueCodeableConcept.text = "Tier I - Level A (EMA/FDA-zugelassen, FLAURA)"
 // code inherited from profile pattern (loinc#81259-4)
-* component[phenotypic-treatment-context].valueCodeableConcept = $sct#254637007 "Non-small cell carcinoma of lung (disorder)"
+* component[phenotypic-treatment-context].valueCodeableConcept = $sct#254637007 "Non-small cell lung cancer"
 
 // Patient-3 EGFR Exon-20-Insertion → Amivantamab (off-label 1L / zugelassen 2L)
 Instance: mii-exa-test-data-patient-3-molgen-therapeutische-implikation-3
@@ -82,4 +82,4 @@ Description: "Observation: Therapeutische Implikation fuer EGFR Exon-20-Insertio
 * component[evidence-level].code = $loinc#93044-6 "Level of evidence"
 * component[evidence-level].valueCodeableConcept.text = "Tier I - Level B (EMA-zugelassen 2L; 1L off-label, PAPILLON-Studie)"
 // code inherited from profile pattern (loinc#81259-4)
-* component[phenotypic-treatment-context].valueCodeableConcept = $sct#254637007 "Non-small cell carcinoma of lung (disorder)"
+* component[phenotypic-treatment-context].valueCodeableConcept = $sct#254637007 "Non-small cell lung cancer"

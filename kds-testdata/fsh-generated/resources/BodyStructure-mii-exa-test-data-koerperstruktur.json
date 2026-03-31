@@ -19,8 +19,7 @@
         {
           "code": "7771000",
           "system": "http://snomed.info/sct",
-          "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-          "display": "Left (qualifier value)"
+          "display": "Left"
         }
       ]
     }
@@ -30,7 +29,6 @@
       {
         "code": "12747003",
         "system": "http://snomed.info/sct",
-        "version": "http://snomed.info/sct/900000000000207008/version/20230731",
         "display": "Microcalcification, calcified structure (morphologic abnormality)"
       }
     ]
@@ -40,7 +38,6 @@
       {
         "code": "76752008",
         "system": "http://snomed.info/sct",
-        "version": "http://snomed.info/sct/900000000000207008/version/20230731",
         "display": "Breast structure (body structure)"
       }
     ]

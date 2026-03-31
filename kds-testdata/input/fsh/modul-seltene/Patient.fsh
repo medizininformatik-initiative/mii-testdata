@@ -42,7 +42,7 @@ Usage: #example
 Description: "Seltene Molgen Befundbericht Stub"
 * insert TestDataLabel
 * status = #final
-* code = http://loinc.org#51969-4 "Genetic analysis summary report"
+* code = http://loinc.org#51969-4 "Genetic analysis report"
 * subject = Reference(mii-exa-test-data-seltene-patient-1)
 * effectiveDateTime = "2024-03-15"
 

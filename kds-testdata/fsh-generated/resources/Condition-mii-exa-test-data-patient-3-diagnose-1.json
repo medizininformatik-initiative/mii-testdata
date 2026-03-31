@@ -29,7 +29,6 @@
       {
         "system": "http://snomed.info/sct",
         "code": "447886005",
-        "version": "http://snomed.info/sct/900000000000207008/version/20230731",
         "display": "Adenocarcinoma of anorectum (disorder)"
       }
     ]
@@ -45,7 +44,6 @@
         {
           "system": "http://snomed.info/sct",
           "code": "281088000",
-          "version": "http://snomed.info/sct/900000000000207008/version/20230731",
           "display": "Structure of anus and/or rectum (body structure)"
         }
       ]

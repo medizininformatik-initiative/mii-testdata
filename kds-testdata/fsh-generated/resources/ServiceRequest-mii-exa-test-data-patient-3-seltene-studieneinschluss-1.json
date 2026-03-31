@@ -18,10 +18,9 @@
       "valueCodeableConcept": {
         "coding": [
           {
-            "code": "399069006",
+            "code": "385645004",
             "system": "http://snomed.info/sct",
-            "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-            "display": "Eligible for clinical trial (finding)"
+            "display": "Accepted"
           }
         ],
         "text": "Patient erfuellt Einschlusskriterien der Studie"
@@ -47,7 +46,7 @@
   ],
   "supportingInfo": [
     {
-      "reference": "DiagnosticReport/mii-exa-test-data-patient-3-molgen-befundbericht-1"
+      "reference": "DiagnosticReport/mii-exa-test-data-seltene-molgen-befundbericht-1"
     }
   ],
   "intent": "proposal",

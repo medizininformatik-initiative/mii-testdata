@@ -174,7 +174,7 @@ Description: "Observation: Genetische Variante EGFR Exon-20-Insertion p.Ala767_V
 * component[cytogenetic-location].code = $loinc#48001-2 "Cytogenetic (chromosome) location"
 * component[cytogenetic-location].valueCodeableConcept = $ChromLoc#7p11.2
 * component[coding-change-type].code = $loinc#48019-4 "DNA change type"
-* component[coding-change-type].valueCodeableConcept = $SO#SO:1000035 "duplication"
+* component[coding-change-type].valueCodeableConcept = $SO#SO:1000035 "Duplication"
 * component[reference-sequence-assembly].code = $loinc#62374-4 "Human reference sequence assembly version"
 * component[reference-sequence-assembly].valueCodeableConcept = $loinc#LA26806-2 "GRCh38"
 * component[genomic-source-class].code = $loinc#48002-0 "Genomic source class [Type]"

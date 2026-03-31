@@ -49,15 +49,9 @@
         {
           "code": "4556007",
           "system": "http://snomed.info/sct",
-          "version": "http://snomed.info/sct/900000000000207008/version/20230731",
           "display": "Gastritis"
         }
       ]
-    }
-  ],
-  "specimen": [
-    {
-      "reference": "Specimen/mii-exa-test-data-patient-6-specimen-2"
     }
   ],
   "status": "completed",

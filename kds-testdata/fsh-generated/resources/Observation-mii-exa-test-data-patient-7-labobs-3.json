@@ -94,13 +94,9 @@
       {
         "code": "83561000052101",
         "system": "http://snomed.info/sct",
-        "version": "http://snomed.info/sct/900000000000207008/version/20230731",
         "display": "Photometry technique (qualifier value)"
       }
     ]
-  },
-  "specimen": {
-    "reference": "Specimen/mii-exa-test-data-patient-7-specimen-1"
   },
   "device": {
     "reference": "Device/mii-exa-test-data-device-roche-cobas-c303"

@@ -23,7 +23,6 @@
         {
           "code": "364396009",
           "system": "http://snomed.info/sct",
-          "version": "http://snomed.info/sct/900000000000207008/version/20230731",
           "display": "Fluid balance observable (observable entity)"
         }
       ]
@@ -34,8 +33,7 @@
       {
         "system": "http://snomed.info/sct",
         "code": "364201005",
-        "display": "Urine output observable (observable entity)",
-        "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+        "display": "Urine output observable (observable entity)"
       },
       {
         "system": "http://loinc.org",

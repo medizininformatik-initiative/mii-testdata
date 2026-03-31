@@ -178,7 +178,7 @@
           {
             "code": "SO:1000035",
             "system": "http://sequenceontology.org",
-            "display": "duplication"
+            "display": "Duplication"
           }
         ]
       }
@@ -258,7 +258,7 @@
     ]
   },
   "specimen": {
-    "reference": "Specimen/mii-exa-test-data-patient-3-specimen-1"
+    "reference": "Specimen/mii-exa-test-data-molgen-specimen-1"
   },
   "device": {
     "reference": "Device/mii-exa-test-data-molgen-device-sequencer"

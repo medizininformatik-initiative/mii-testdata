@@ -387,7 +387,6 @@
             {
               "system": "http://snomed.info/sct",
               "code": "10509002",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
               "display": "Acute bronchitis (disorder)"
             }
           ]
@@ -403,7 +402,6 @@
               {
                 "system": "http://snomed.info/sct",
                 "code": "955009",
-                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                 "display": "Bronchial structure (body structure)"
               }
             ]
@@ -510,8 +508,7 @@
           "coding": [
             {
               "system": "http://snomed.info/sct",
-              "code": "165197003",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+              "code": "165197003"
             }
           ]
         },
@@ -519,8 +516,7 @@
           "coding": [
             {
               "system": "http://snomed.info/sct",
-              "code": "10847001",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+              "code": "10847001"
             },
             {
               "system": "http://fhir.de/CodeSystem/bfarm/ops",
@@ -534,8 +530,7 @@
             "coding": [
               {
                 "code": "321667001",
-                "system": "http://snomed.info/sct",
-                "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+                "system": "http://snomed.info/sct"
               }
             ]
           }
@@ -551,7 +546,6 @@
             "valueCoding": {
               "system": "http://snomed.info/sct",
               "code": "261004008",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
               "display": "Diagnostic intent"
             }
           }
@@ -594,8 +588,7 @@
           "coding": [
             {
               "system": "http://snomed.info/sct",
-              "code": "277132007",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+              "code": "277132007"
             }
           ]
         },
@@ -603,8 +596,7 @@
           "coding": [
             {
               "system": "http://snomed.info/sct",
-              "code": "281789004",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+              "code": "281789004"
             },
             {
               "system": "http://fhir.de/CodeSystem/bfarm/ops",
@@ -618,8 +610,7 @@
             "coding": [
               {
                 "code": "321667001",
-                "system": "http://snomed.info/sct",
-                "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+                "system": "http://snomed.info/sct"
               }
             ]
           }
@@ -639,7 +630,6 @@
             "valueCoding": {
               "system": "http://snomed.info/sct",
               "code": "262202000",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
               "display": "Therapeutic"
             }
           }
@@ -713,15 +703,9 @@
               {
                 "code": "10509002",
                 "system": "http://snomed.info/sct",
-                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                 "display": "Acute bronchitis"
               }
             ]
-          }
-        ],
-        "specimen": [
-          {
-            "reference": "Specimen/mii-exa-test-data-patient-7-specimen-2"
           }
         ],
         "status": "completed",
@@ -819,14 +803,6 @@
         "performer": [
           {
             "reference": "Organization/mii-exa-test-data-organization-labor-berlin"
-          }
-        ],
-        "specimen": [
-          {
-            "reference": "Specimen/mii-exa-test-data-patient-7-specimen-1"
-          },
-          {
-            "reference": "Specimen/mii-exa-test-data-patient-7-specimen-2"
           }
         ],
         "result": [
@@ -959,13 +935,9 @@
             {
               "code": "703452004",
               "system": "http://snomed.info/sct",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
               "display": "Electrical impedance technique (qualifier value)"
             }
           ]
-        },
-        "specimen": {
-          "reference": "Specimen/mii-exa-test-data-patient-7-specimen-1"
         },
         "device": {
           "reference": "Device/mii-exa-test-data-device-roche-cobas-c303"
@@ -1074,13 +1046,9 @@
             {
               "code": "83561000052101",
               "system": "http://snomed.info/sct",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
               "display": "Photometry technique (qualifier value)"
             }
           ]
-        },
-        "specimen": {
-          "reference": "Specimen/mii-exa-test-data-patient-7-specimen-1"
         },
         "device": {
           "reference": "Device/mii-exa-test-data-device-roche-cobas-c303"
@@ -1189,13 +1157,9 @@
             {
               "code": "83561000052101",
               "system": "http://snomed.info/sct",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
               "display": "Photometry technique (qualifier value)"
             }
           ]
-        },
-        "specimen": {
-          "reference": "Specimen/mii-exa-test-data-patient-7-specimen-1"
         },
         "device": {
           "reference": "Device/mii-exa-test-data-device-roche-cobas-c303"
@@ -2141,7 +2105,6 @@
               {
                 "code": "309343006",
                 "system": "http://snomed.info/sct",
-                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                 "display": "Physician (occupation)"
               }
             ]

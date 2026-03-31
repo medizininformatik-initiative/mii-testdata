@@ -31,7 +31,7 @@
   ],
   "reasonReference": [
     {
-      "reference": "Condition/mii-exa-test-data-patient-1-diagnose-1"
+      "reference": "Condition/mii-exa-test-data-bildgebung-diagnose-1"
     }
   ],
   "note": [
@@ -64,6 +64,6 @@
     "reference": "Medication/mii-exa-test-data-medication-dalbavancin"
   },
   "request": {
-    "reference": "MedicationRequest/mii-exa-test-data-patient-1-medrequest-1"
+    "reference": "MedicationRequest/mii-exa-test-data-bildgebung-medrequest-1"
   }
 }

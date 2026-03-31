@@ -33,8 +33,7 @@
         {
           "system": "http://snomed.info/sct",
           "code": "782964007",
-          "display": "Genetic disease",
-          "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+          "display": "Genetic disease"
         }
       ]
     }
@@ -49,7 +48,6 @@
       {
         "code": "19346006",
         "system": "http://snomed.info/sct",
-        "version": "http://snomed.info/sct/900000000000207008/version/20230731",
         "display": "Marfan syndrome"
       },
       {
@@ -78,7 +76,6 @@
           {
             "code": "260998006",
             "system": "http://snomed.info/sct",
-            "version": "http://snomed.info/sct/900000000000207008/version/20230731",
             "display": "Clinical staging"
           }
         ]
@@ -93,7 +90,6 @@
             {
               "code": "106221001",
               "system": "http://snomed.info/sct",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
               "display": "Genetic finding"
             }
           ]
@@ -101,10 +97,10 @@
       ],
       "detail": [
         {
-          "reference": "Observation/mii-exa-test-data-patient-3-molgen-variante-1"
+          "reference": "Observation/mii-exa-test-data-seltene-molgen-variante-1"
         },
         {
-          "reference": "DiagnosticReport/mii-exa-test-data-patient-3-molgen-befundbericht-1"
+          "reference": "DiagnosticReport/mii-exa-test-data-seltene-molgen-befundbericht-1"
         }
       ]
     }
@@ -135,7 +131,6 @@
       {
         "code": "6736007",
         "system": "http://snomed.info/sct",
-        "version": "http://snomed.info/sct/900000000000207008/version/20230731",
         "display": "Moderate severity"
       }
     ]

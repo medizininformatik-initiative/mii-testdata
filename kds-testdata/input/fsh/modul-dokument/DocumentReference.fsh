@@ -22,9 +22,6 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-dokument/
 Usage: #example
 Description: "DocumentReference: Entlassbrief Innere Medizin - alle MS-Elemente"
 * insert TestDataLabel
-// NLP Processing Status Extension
-* extension[+].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-dokument/StructureDefinition/mii-ex-dokument-nlp-processing-status"
-* extension[=].valueCodeableConcept.coding = $nlp-status-cs#unprocessed
 // Identifiers
 * masterIdentifier.system = "urn:ietf:rfc:3986"
 * masterIdentifier.value = "urn:oid:1.2.840.113556.1.8000.2554.58783.21864.3474.19410.44358.58254.41281.99901"
@@ -35,7 +32,7 @@ Description: "DocumentReference: Entlassbrief Innere Medizin - alle MS-Elemente"
 * status = #current
 * docStatus = #final
 // Type with KDL and IHE-D slices
-* type.coding[+] = $kdl#AD010110 "Aerztlicher Verlaufsbericht"
+* type.coding[+] = $kdl#AD010110 "Ärztlicher Verlaufsbericht"
 * type.coding[+] = $ihe-d-type#BERI "Arztberichte"
 * type.text = "Entlassbrief Innere Medizin"
 // Category with IHE-D class code
@@ -59,7 +56,7 @@ Description: "DocumentReference: Entlassbrief Innere Medizin - alle MS-Elemente"
 * content[=].format = $ihe-formatcode#urn:ihe:iti:xds:2017:mimeTypeSufficient "mimeType Sufficient"
 // Context
 * context.encounter = Reference(mii-exa-test-data-dokument-encounter-1)
-* context.event[+].coding = $ihe-d-event#E100 "stationaerer Aufenthalt"
+* context.event[+].coding = $ihe-d-event#E200 "stationärer Aufenthalt"
 * context.period.start = "2024-02-10"
 * context.period.end = "2024-02-20"
 * context.facilityType.coding = $ihe-d-facility#KHS "Krankenhaus"
@@ -73,9 +70,6 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-dokument/
 Usage: #example
 Description: "DocumentReference: Befundbericht Radiologie (URL-Verweis) - alle MS-Elemente"
 * insert TestDataLabel
-// NLP Processing Status Extension - annotated
-* extension[+].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-dokument/StructureDefinition/mii-ex-dokument-nlp-processing-status"
-* extension[=].valueCodeableConcept.coding = $nlp-status-cs#annotated
 // Identifiers
 * masterIdentifier.system = "urn:ietf:rfc:3986"
 * masterIdentifier.value = "urn:oid:1.2.840.113556.1.8000.2554.58783.21864.3474.19410.44358.58254.41281.99902"
@@ -86,7 +80,7 @@ Description: "DocumentReference: Befundbericht Radiologie (URL-Verweis) - alle M
 * status = #current
 * docStatus = #final
 // Type with KDL and IHE-D slices
-* type.coding[+] = $kdl#AD030101 "Radiologischer Befundbericht"
+* type.coding[+] = $kdl#AD010109 "Ärztlicher Befundbericht"
 * type.coding[+] = $ihe-d-type#BERI "Arztberichte"
 * type.text = "Radiologischer Befundbericht Roentgen-Thorax"
 // Category
@@ -107,7 +101,7 @@ Description: "DocumentReference: Befundbericht Radiologie (URL-Verweis) - alle M
 * content[=].format = $ihe-formatcode#urn:ihe:iti:xds:2017:mimeTypeSufficient "mimeType Sufficient"
 // Context
 * context.encounter = Reference(mii-exa-test-data-dokument-encounter-1)
-* context.event[+].coding = $ihe-d-event#E100 "stationaerer Aufenthalt"
+* context.event[+].coding = $ihe-d-event#E200 "stationärer Aufenthalt"
 * context.period.start = "2024-02-15"
 * context.period.end = "2024-02-15"
 * context.facilityType.coding = $ihe-d-facility#KHS "Krankenhaus"
