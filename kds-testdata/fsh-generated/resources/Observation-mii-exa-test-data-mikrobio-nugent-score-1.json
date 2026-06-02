@@ -110,7 +110,8 @@
           "valueInteger": 0
         }
       ]
-    }
+    },
+    "comparator": ">="
   },
   "method": {
     "coding": [

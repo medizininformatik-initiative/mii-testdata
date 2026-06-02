@@ -1,6 +1,6 @@
 {
   "resourceType": "Observation",
-  "id": "mii-exa-test-data-mikrobio-ct-wert-1",
+  "id": "mii-exa-test-data-mikrobio-mre-klasse-alt-1",
   "meta": {
     "security": [
       {
@@ -11,7 +11,7 @@
     ],
     "source": "https://example.org/fhir/mikrobio-lab-system",
     "profile": [
-      "https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-ct-wert"
+      "https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-mre-klasse"
     ]
   },
   "identifier": [
@@ -31,7 +31,7 @@
         }
       },
       "system": "https://www.charite.de/fhir/sid/test-lab-results",
-      "value": "ct-wert-1"
+      "value": "mre-klasse-alt-1"
     }
   ],
   "category": [
@@ -89,55 +89,56 @@
     },
     "reference": "Device/mii-exa-test-data-mikrobio-device-1"
   },
-  "derivedFrom": [
+  "modifierExtension": [
     {
-      "reference": "Observation/mii-exa-test-data-mikrobio-molekulare-pathogenlast-1"
+      "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/InterpretationsbeeinflussendeEigenschaft",
+      "valueCoding": {
+        "code": "118127007",
+        "system": "http://snomed.info/sct",
+        "display": "Specimen lipemic (finding)"
+      }
+    }
+  ],
+  "extension": [
+    {
+      "extension": [
+        {
+          "url": "observation",
+          "valueReference": {
+            "reference": "Observation/mii-exa-test-data-mikrobio-allgemeine-kultur-1"
+          }
+        },
+        {
+          "url": "type",
+          "valueCode": "repeat"
+        }
+      ],
+      "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-Observation.triggeredBy"
     }
   ],
   "code": {
     "coding": [
       {
-        "code": "74039-9",
-        "system": "http://loinc.org",
-        "display": "Threshold cycle time"
+        "system": "http://snomed.info/sct",
+        "code": "1285113001"
       }
     ]
   },
   "valueQuantity": {
     "system": "http://unitsofmeasure.org",
-    "code": "1",
-    "value": 21.3,
+    "value": 1,
     "_value": {
       "extension": [
         {
           "url": "http://hl7.org/fhir/StructureDefinition/quantity-precision",
-          "valueInteger": 1
+          "valueInteger": 0
         }
       ]
     },
-    "comparator": "<",
-    "unit": "1"
+    "comparator": ">=",
+    "unit": "1",
+    "code": "1"
   },
-  "method": {
-    "coding": [
-      {
-        "system": "http://snomed.info/sct",
-        "code": "70601000052104",
-        "display": "Real-time PCR technique"
-      }
-    ]
-  },
-  "interpretation": [
-    {
-      "coding": [
-        {
-          "code": "H",
-          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
-          "display": "High"
-        }
-      ]
-    }
-  ],
   "referenceRange": [
     {
       "low": {
@@ -147,20 +148,40 @@
         "code": "1"
       },
       "high": {
-        "value": 35,
+        "value": 10,
         "unit": "1",
         "system": "http://unitsofmeasure.org",
         "code": "1"
       }
     }
   ],
+  "method": {
+    "coding": [
+      {
+        "code": "258066000",
+        "system": "http://snomed.info/sct",
+        "display": "MALDI-TOF"
+      }
+    ]
+  },
+  "interpretation": [
+    {
+      "coding": [
+        {
+          "code": "A",
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "display": "Abnormal"
+        }
+      ]
+    }
+  ],
   "note": [
     {
-      "text": "Niedriger CT-Wert (21.3) spricht fuer hohe Erregerlast."
+      "text": "Alt-Variante zur MS-Coverage (mre-klasse)"
     }
   ],
   "status": "final",
-  "effectiveDateTime": "2026-04-03T17:00:00+02:00",
+  "effectiveDateTime": "2026-04-05T10:00:00+02:00",
   "_effectiveDateTime": {
     "extension": [
       {
@@ -177,5 +198,5 @@
       }
     ]
   },
-  "issued": "2026-04-03T18:00:00+02:00"
+  "issued": "2026-04-05T11:00:00+02:00"
 }

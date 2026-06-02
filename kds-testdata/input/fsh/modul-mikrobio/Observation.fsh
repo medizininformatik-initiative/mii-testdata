@@ -629,6 +629,7 @@ Description: "Mikrobio: Avidität IgG niedrig (frische Infektion)"
 * valueQuantity.value = 35
 * valueQuantity.value.extension[+].url = "http://hl7.org/fhir/StructureDefinition/quantity-precision"
 * valueQuantity.value.extension[=].valueInteger = 0
+* valueQuantity.comparator = #<
 * valueQuantity.unit = "%"
 * valueQuantity.system = $ucum
 * valueQuantity.code = #%
@@ -685,6 +686,7 @@ Description: "Mikrobio: Antikörper-Titer (1:128)"
 * valueQuantity.value = 128
 * valueQuantity.value.extension[+].url = "http://hl7.org/fhir/StructureDefinition/quantity-precision"
 * valueQuantity.value.extension[=].valueInteger = 0
+* valueQuantity.comparator = #>=
 * valueQuantity.unit = "{titer}"
 * valueQuantity.system = $ucum
 * valueQuantity.code = #{titer}
@@ -736,11 +738,13 @@ Description: "Mikrobio: CT-Wert PCR (21.3)"
 * device = Reference(mii-exa-test-data-mikrobio-device-1)
 * device.identifier.system = "https://www.charite.de/fhir/sid/device-identifier"
 * device.identifier.value = "VITEK2-001"
+* derivedFrom = Reference(mii-exa-test-data-mikrobio-molekulare-pathogenlast-1)
 * code.coding = $loinc#74039-9 "Threshold cycle time"
 * code.coding.display = "Threshold cycle time"
 * valueQuantity.value = 21.3
 * valueQuantity.value.extension[+].url = "http://hl7.org/fhir/StructureDefinition/quantity-precision"
 * valueQuantity.value.extension[=].valueInteger = 1
+* valueQuantity.comparator = #<
 * valueQuantity.unit = "1"
 * valueQuantity.system = $ucum
 * valueQuantity.code = #1
@@ -897,6 +901,7 @@ Description: "Mikrobio: Nugent-Score (7 — bakterielle Vaginose)"
 * valueQuantity.value = 7
 * valueQuantity.value.extension[+].url = "http://hl7.org/fhir/StructureDefinition/quantity-precision"
 * valueQuantity.value.extension[=].valueInteger = 0
+* valueQuantity.comparator = #>=
 * valueQuantity.unit = "1"
 * valueQuantity.system = $ucum
 * valueQuantity.code = #1
