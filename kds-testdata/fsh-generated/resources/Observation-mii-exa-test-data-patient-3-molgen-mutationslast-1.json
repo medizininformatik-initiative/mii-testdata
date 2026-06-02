@@ -41,20 +41,13 @@
   "component": [
     {
       "valueCodeableConcept": {
-        "text": "Panel-basiert (alle Gene)"
-      },
-      "code": {
         "coding": [
           {
-            "system": "http://loinc.org",
-            "code": "48018-6",
-            "display": "Gene studied [ID]"
+            "code": "C150128",
+            "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+            "display": "Tumor Mutation Burden"
           }
-        ]
-      }
-    },
-    {
-      "valueCodeableConcept": {
+        ],
         "text": "Tumor Mutational Burden"
       },
       "code": {

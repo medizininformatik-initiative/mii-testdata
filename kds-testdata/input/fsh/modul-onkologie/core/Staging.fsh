@@ -16,6 +16,7 @@ Description: "Onkologie Test Weitere Klassifikationen - FIGO IVB"
 * effectiveDateTime = "2021-10-05"
 * focus = Reference(mii-exa-test-data-onko-diagnose-1)
 * method.coding = $SCT#254386003 "Federation Internationale de gynecologie et d'obstetrique staging of ovarian malignancy"
+* valueCodeableConcept.coding = $ncit#C128095 "FIGO Stage IVB Ovarian Cancer 2014"
 * valueCodeableConcept.text = "IVB"
 
 // Residualstatus (Chapter 10)

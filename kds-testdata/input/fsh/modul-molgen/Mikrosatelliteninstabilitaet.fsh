@@ -16,7 +16,7 @@ Description: "Observation: Mikrosatelliteninstabilitaet fuer BRAF-Mutation"
 * valueCodeableConcept = $loinc#LA14122-8 "Stable"
 * specimen = Reference(mii-exa-test-data-molgen-specimen-1)
 * derivedFrom = Reference(mii-exa-test-data-patient-3-molgen-variante-1)
-* component[gene-studied].code = $loinc#48018-6 "Gene studied [ID]"
-* component[gene-studied].valueCodeableConcept.text = "MSI-Panel (5 Marker)"
+// gene-studied bewusst weggelassen: MSI-Test ist panel-basiert (5 Marker: BAT-25, BAT-26, NR-21, NR-24, MONO-27), kein einzelnes Gen
 // code inherited from profile pattern (tbd-codes-cs#biomarker-category)
+* component[biomarker-category].valueCodeableConcept.coding = $ncit#C36318 "Microsatellite Instability"
 * component[biomarker-category].valueCodeableConcept.text = "Microsatellite Instability"

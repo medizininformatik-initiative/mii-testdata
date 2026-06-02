@@ -62,6 +62,13 @@
     },
     {
       "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "L01FX18",
+            "system": "http://fhir.de/CodeSystem/bfarm/atc",
+            "display": "Amivantamab"
+          }
+        ],
         "text": "Amivantamab (Rybrevant) - EGFR/MET bispezifischer Antikoerper"
       },
       "code": {
@@ -76,7 +83,14 @@
     },
     {
       "valueCodeableConcept": {
-        "text": "Tier I - Level B (EMA-zugelassen 2L; 1L off-label, PAPILLON-Studie)"
+        "coding": [
+          {
+            "code": "LA30201-0",
+            "system": "http://loinc.org",
+            "display": "Strong evidence pathogenic"
+          }
+        ],
+        "text": "Tier I - Level B (AMP/ASCO/CAP, EMA-zugelassen 2L; 1L off-label, PAPILLON-Studie)"
       },
       "code": {
         "coding": [

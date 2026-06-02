@@ -285,7 +285,7 @@
     "fshType": "Instance",
     "fshFile": "modul-seltene/ClinicalImpression.fsh",
     "startLine": 6,
-    "endLine": 35
+    "endLine": 36
   },
   {
     "outputFile": "Composition-mii-exa-test-data-semistrukt-befundbericht.json",
@@ -308,8 +308,8 @@
     "fshName": "mii-exa-test-data-biobank-diagnose-1",
     "fshType": "Instance",
     "fshFile": "modul-biobank/Patient.fsh",
-    "startLine": 114,
-    "endLine": 121
+    "startLine": 115,
+    "endLine": 128
   },
   {
     "outputFile": "Condition-mii-exa-test-data-molgen-diagnose-1.json",
@@ -1228,24 +1228,24 @@
     "fshName": "mii-exa-test-data-medication-5-fluorouracil",
     "fshType": "Instance",
     "fshFile": "modul-medikation/Medication.fsh",
-    "startLine": 133,
-    "endLine": 143
+    "startLine": 134,
+    "endLine": 144
   },
   {
     "outputFile": "Medication-mii-exa-test-data-medication-amoxicillin-clavulansaeure.json",
     "fshName": "mii-exa-test-data-medication-amoxicillin-clavulansaeure",
     "fshType": "Instance",
     "fshFile": "modul-medikation/Medication.fsh",
-    "startLine": 245,
-    "endLine": 258
+    "startLine": 246,
+    "endLine": 259
   },
   {
     "outputFile": "Medication-mii-exa-test-data-medication-amoxicillin.json",
     "fshName": "mii-exa-test-data-medication-amoxicillin",
     "fshType": "Instance",
     "fshFile": "modul-medikation/Medication.fsh",
-    "startLine": 220,
-    "endLine": 230
+    "startLine": 221,
+    "endLine": 231
   },
   {
     "outputFile": "Medication-mii-exa-test-data-medication-ass-100.json",
@@ -1260,32 +1260,32 @@
     "fshName": "mii-exa-test-data-medication-atorvastatin",
     "fshType": "Instance",
     "fshFile": "modul-medikation/Medication.fsh",
-    "startLine": 297,
-    "endLine": 307
+    "startLine": 298,
+    "endLine": 308
   },
   {
     "outputFile": "Medication-mii-exa-test-data-medication-carboplatin.json",
     "fshName": "mii-exa-test-data-medication-carboplatin",
     "fshType": "Instance",
     "fshFile": "modul-medikation/Medication.fsh",
-    "startLine": 108,
-    "endLine": 118
+    "startLine": 109,
+    "endLine": 119
   },
   {
     "outputFile": "Medication-mii-exa-test-data-medication-cisplatin.json",
     "fshName": "mii-exa-test-data-medication-cisplatin",
     "fshType": "Instance",
     "fshFile": "modul-medikation/Medication.fsh",
-    "startLine": 158,
-    "endLine": 168
+    "startLine": 159,
+    "endLine": 169
   },
   {
     "outputFile": "Medication-mii-exa-test-data-medication-clarithromycin.json",
     "fshName": "mii-exa-test-data-medication-clarithromycin",
     "fshType": "Instance",
     "fshFile": "modul-medikation/Medication.fsh",
-    "startLine": 232,
-    "endLine": 242
+    "startLine": 233,
+    "endLine": 243
   },
   {
     "outputFile": "Medication-mii-exa-test-data-medication-dalbavancin.json",
@@ -1300,40 +1300,40 @@
     "fshName": "mii-exa-test-data-medication-ethinylestradiol-levonorgestrel",
     "fshType": "Instance",
     "fshFile": "modul-medikation/Medication.fsh",
-    "startLine": 310,
-    "endLine": 323
+    "startLine": 311,
+    "endLine": 324
   },
   {
     "outputFile": "Medication-mii-exa-test-data-medication-glucoseloesung.json",
     "fshName": "mii-exa-test-data-medication-glucoseloesung",
     "fshType": "Instance",
     "fshFile": "modul-medikation/Medication.fsh",
-    "startLine": 71,
-    "endLine": 93
+    "startLine": 72,
+    "endLine": 94
   },
   {
     "outputFile": "Medication-mii-exa-test-data-medication-heparin.json",
     "fshName": "mii-exa-test-data-medication-heparin",
     "fshType": "Instance",
     "fshFile": "modul-medikation/Medication.fsh",
-    "startLine": 273,
-    "endLine": 283
+    "startLine": 274,
+    "endLine": 284
   },
   {
     "outputFile": "Medication-mii-exa-test-data-medication-ibuprofen.json",
     "fshName": "mii-exa-test-data-medication-ibuprofen",
     "fshType": "Instance",
     "fshFile": "modul-medikation/Medication.fsh",
-    "startLine": 195,
-    "endLine": 205
+    "startLine": 196,
+    "endLine": 206
   },
   {
     "outputFile": "Medication-mii-exa-test-data-medication-leuprorelin.json",
     "fshName": "mii-exa-test-data-medication-leuprorelin",
     "fshType": "Instance",
     "fshFile": "modul-medikation/Medication.fsh",
-    "startLine": 183,
-    "endLine": 193
+    "startLine": 184,
+    "endLine": 194
   },
   {
     "outputFile": "Medication-mii-exa-test-data-medication-metamizol.json",
@@ -1348,56 +1348,56 @@
     "fshName": "mii-exa-test-data-medication-metoprolol",
     "fshType": "Instance",
     "fshFile": "modul-medikation/Medication.fsh",
-    "startLine": 285,
-    "endLine": 295
+    "startLine": 286,
+    "endLine": 296
   },
   {
     "outputFile": "Medication-mii-exa-test-data-medication-morphin.json",
     "fshName": "mii-exa-test-data-medication-morphin",
     "fshType": "Instance",
     "fshFile": "modul-medikation/Medication.fsh",
-    "startLine": 96,
-    "endLine": 106
+    "startLine": 97,
+    "endLine": 107
   },
   {
     "outputFile": "Medication-mii-exa-test-data-medication-omeprazol.json",
     "fshName": "mii-exa-test-data-medication-omeprazol",
     "fshType": "Instance",
     "fshFile": "modul-medikation/Medication.fsh",
-    "startLine": 170,
-    "endLine": 180
+    "startLine": 171,
+    "endLine": 181
   },
   {
     "outputFile": "Medication-mii-exa-test-data-medication-oxaliplatin.json",
     "fshName": "mii-exa-test-data-medication-oxaliplatin",
     "fshType": "Instance",
     "fshFile": "modul-medikation/Medication.fsh",
-    "startLine": 145,
-    "endLine": 155
+    "startLine": 146,
+    "endLine": 156
   },
   {
     "outputFile": "Medication-mii-exa-test-data-medication-paclitaxel.json",
     "fshName": "mii-exa-test-data-medication-paclitaxel",
     "fshType": "Instance",
     "fshFile": "modul-medikation/Medication.fsh",
-    "startLine": 120,
-    "endLine": 130
+    "startLine": 121,
+    "endLine": 131
   },
   {
     "outputFile": "Medication-mii-exa-test-data-medication-pantoprazol.json",
     "fshName": "mii-exa-test-data-medication-pantoprazol",
     "fshType": "Instance",
     "fshFile": "modul-medikation/Medication.fsh",
-    "startLine": 208,
-    "endLine": 218
+    "startLine": 209,
+    "endLine": 219
   },
   {
     "outputFile": "Medication-mii-exa-test-data-medication-paracetamol.json",
     "fshName": "mii-exa-test-data-medication-paracetamol",
     "fshType": "Instance",
     "fshFile": "modul-medikation/Medication.fsh",
-    "startLine": 325,
-    "endLine": 335
+    "startLine": 326,
+    "endLine": 336
   },
   {
     "outputFile": "Medication-mii-exa-test-data-medication-propofol.json",
@@ -1413,31 +1413,31 @@
     "fshType": "Instance",
     "fshFile": "modul-medikation/Medication.fsh",
     "startLine": 55,
-    "endLine": 69
+    "endLine": 70
   },
   {
     "outputFile": "Medication-mii-exa-test-data-medication-salbutamol.json",
     "fshName": "mii-exa-test-data-medication-salbutamol",
     "fshType": "Instance",
     "fshFile": "modul-medikation/Medication.fsh",
-    "startLine": 260,
-    "endLine": 270
+    "startLine": 261,
+    "endLine": 271
   },
   {
     "outputFile": "Medication-mii-exa-test-data-medication-sumatriptan.json",
     "fshName": "mii-exa-test-data-medication-sumatriptan",
     "fshType": "Instance",
     "fshFile": "modul-medikation/Medication.fsh",
-    "startLine": 338,
-    "endLine": 348
+    "startLine": 339,
+    "endLine": 349
   },
   {
     "outputFile": "Medication-mii-exa-test-data-medication-topiramat.json",
     "fshName": "mii-exa-test-data-medication-topiramat",
     "fshType": "Instance",
     "fshFile": "modul-medikation/Medication.fsh",
-    "startLine": 350,
-    "endLine": 360
+    "startLine": 351,
+    "endLine": 361
   },
   {
     "outputFile": "MedicationAdministration-mii-exa-test-data-kontrastmittelgabe.json",
@@ -2444,24 +2444,24 @@
     "fshName": "mii-exa-test-data-onko-asa-1",
     "fshType": "Instance",
     "fshFile": "modul-onkologie/core/Staging.fsh",
-    "startLine": 81,
-    "endLine": 92
+    "startLine": 82,
+    "endLine": 93
   },
   {
     "outputFile": "Observation-mii-exa-test-data-onko-ecog-1.json",
     "fshName": "mii-exa-test-data-onko-ecog-1",
     "fshType": "Instance",
     "fshFile": "modul-onkologie/core/Staging.fsh",
-    "startLine": 51,
-    "endLine": 63
+    "startLine": 52,
+    "endLine": 64
   },
   {
     "outputFile": "Observation-mii-exa-test-data-onko-fernmetastasen-1.json",
     "fshName": "mii-exa-test-data-onko-fernmetastasen-1",
     "fshType": "Instance",
     "fshFile": "modul-onkologie/core/Staging.fsh",
-    "startLine": 37,
-    "endLine": 48
+    "startLine": 38,
+    "endLine": 49
   },
   {
     "outputFile": "Observation-mii-exa-test-data-onko-figo-1.json",
@@ -2469,7 +2469,7 @@
     "fshType": "Instance",
     "fshFile": "modul-onkologie/core/Staging.fsh",
     "startLine": 6,
-    "endLine": 19
+    "endLine": 20
   },
   {
     "outputFile": "Observation-mii-exa-test-data-onko-genetische-variante-1.json",
@@ -2508,8 +2508,8 @@
     "fshName": "mii-exa-test-data-onko-karnofsky-1",
     "fshType": "Instance",
     "fshFile": "modul-onkologie/core/Staging.fsh",
-    "startLine": 66,
-    "endLine": 78
+    "startLine": 67,
+    "endLine": 79
   },
   {
     "outputFile": "Observation-mii-exa-test-data-onko-krk-abstand-aboral-1.json",
@@ -2724,8 +2724,8 @@
     "fshName": "mii-exa-test-data-onko-residualstatus-1",
     "fshType": "Instance",
     "fshFile": "modul-onkologie/core/Staging.fsh",
-    "startLine": 22,
-    "endLine": 34
+    "startLine": 23,
+    "endLine": 35
   },
   {
     "outputFile": "Observation-mii-exa-test-data-onko-studienteilnahme-1.json",
@@ -2892,24 +2892,24 @@
     "fshName": "mii-exa-test-data-pat1-pro-p29-pain-int-tscore",
     "fshType": "Instance",
     "fshFile": "modul-pro/Observation.fsh",
-    "startLine": 328,
-    "endLine": 344
+    "startLine": 333,
+    "endLine": 350
   },
   {
     "outputFile": "Observation-mii-exa-test-data-pat1-pro-p29-phys-fn-tscore.json",
     "fshName": "mii-exa-test-data-pat1-pro-p29-phys-fn-tscore",
     "fshType": "Instance",
     "fshFile": "modul-pro/Observation.fsh",
-    "startLine": 351,
-    "endLine": 367
+    "startLine": 357,
+    "endLine": 374
   },
   {
     "outputFile": "Observation-mii-exa-test-data-pat1-pro-p29-sleep-tscore.json",
     "fshName": "mii-exa-test-data-pat1-pro-p29-sleep-tscore",
     "fshType": "Instance",
     "fshFile": "modul-pro/Observation.fsh",
-    "startLine": 374,
-    "endLine": 390
+    "startLine": 381,
+    "endLine": 398
   },
   {
     "outputFile": "Observation-mii-exa-test-data-patient-1-icu-bilanz-ausf-fluess-1.json",
@@ -3484,32 +3484,32 @@
     "fshName": "mii-exa-test-data-patient-1-pro-bdi-ii-score",
     "fshType": "Instance",
     "fshFile": "modul-pro/Observation.fsh",
-    "startLine": 101,
-    "endLine": 125
+    "startLine": 102,
+    "endLine": 126
   },
   {
     "outputFile": "Observation-mii-exa-test-data-patient-1-pro-eq5d5l-index.json",
     "fshName": "mii-exa-test-data-patient-1-pro-eq5d5l-index",
     "fshType": "Instance",
     "fshFile": "modul-pro/Observation.fsh",
-    "startLine": 134,
-    "endLine": 157
+    "startLine": 135,
+    "endLine": 158
   },
   {
     "outputFile": "Observation-mii-exa-test-data-patient-1-pro-eq5d5l-profile.json",
     "fshName": "mii-exa-test-data-patient-1-pro-eq5d5l-profile",
     "fshType": "Instance",
     "fshFile": "modul-pro/Observation.fsh",
-    "startLine": 199,
-    "endLine": 219
+    "startLine": 200,
+    "endLine": 220
   },
   {
     "outputFile": "Observation-mii-exa-test-data-patient-1-pro-eq5d5l-vas.json",
     "fshName": "mii-exa-test-data-patient-1-pro-eq5d5l-vas",
     "fshType": "Instance",
     "fshFile": "modul-pro/Observation.fsh",
-    "startLine": 166,
-    "endLine": 189
+    "startLine": 167,
+    "endLine": 190
   },
   {
     "outputFile": "Observation-mii-exa-test-data-patient-1-pro-phq9-score.json",
@@ -3517,79 +3517,79 @@
     "fshType": "Instance",
     "fshFile": "modul-pro/Observation.fsh",
     "startLine": 12,
-    "endLine": 36
+    "endLine": 37
   },
   {
     "outputFile": "Observation-mii-exa-test-data-patient-1-pro-promis-cogfn-sf4a-raw-score.json",
     "fshName": "mii-exa-test-data-patient-1-pro-promis-cogfn-sf4a-raw-score",
     "fshType": "Instance",
     "fshFile": "modul-pro/Observation.fsh",
-    "startLine": 422,
-    "endLine": 448
+    "startLine": 431,
+    "endLine": 458
   },
   {
     "outputFile": "Observation-mii-exa-test-data-patient-1-pro-promis-cogfn-sf4a-tscore.json",
     "fshName": "mii-exa-test-data-patient-1-pro-promis-cogfn-sf4a-tscore",
     "fshType": "Instance",
     "fshFile": "modul-pro/Observation.fsh",
-    "startLine": 457,
-    "endLine": 480
+    "startLine": 467,
+    "endLine": 491
   },
   {
     "outputFile": "Observation-mii-exa-test-data-patient-1-pro-promis-dep-sf4a-raw-score.json",
     "fshName": "mii-exa-test-data-patient-1-pro-promis-dep-sf4a-raw-score",
     "fshType": "Instance",
     "fshFile": "modul-pro/Observation.fsh",
-    "startLine": 45,
-    "endLine": 64
+    "startLine": 46,
+    "endLine": 65
   },
   {
     "outputFile": "Observation-mii-exa-test-data-patient-1-pro-promis-dep-sf4a-tscore.json",
     "fshName": "mii-exa-test-data-patient-1-pro-promis-dep-sf4a-tscore",
     "fshType": "Instance",
     "fshFile": "modul-pro/Observation.fsh",
-    "startLine": 73,
-    "endLine": 92
+    "startLine": 74,
+    "endLine": 93
   },
   {
     "outputFile": "Observation-mii-exa-test-data-patient-1-pro-promis29-anxiety-tscore.json",
     "fshName": "mii-exa-test-data-patient-1-pro-promis29-anxiety-tscore",
     "fshType": "Instance",
     "fshFile": "modul-pro/Observation.fsh",
-    "startLine": 226,
-    "endLine": 249
+    "startLine": 227,
+    "endLine": 251
   },
   {
     "outputFile": "Observation-mii-exa-test-data-patient-1-pro-promis29-depression-tscore.json",
     "fshName": "mii-exa-test-data-patient-1-pro-promis29-depression-tscore",
     "fshType": "Instance",
     "fshFile": "modul-pro/Observation.fsh",
-    "startLine": 256,
-    "endLine": 272
+    "startLine": 258,
+    "endLine": 275
   },
   {
     "outputFile": "Observation-mii-exa-test-data-patient-1-pro-promis29-fatigue-tscore.json",
     "fshName": "mii-exa-test-data-patient-1-pro-promis29-fatigue-tscore",
     "fshType": "Instance",
     "fshFile": "modul-pro/Observation.fsh",
-    "startLine": 279,
-    "endLine": 295
+    "startLine": 282,
+    "endLine": 299
   },
   {
     "outputFile": "Observation-mii-exa-test-data-patient-1-pro-promis29-pain-intensity.json",
     "fshName": "mii-exa-test-data-patient-1-pro-promis29-pain-intensity",
     "fshType": "Instance",
     "fshFile": "modul-pro/Observation.fsh",
-    "startLine": 303,
-    "endLine": 321
+    "startLine": 307,
+    "endLine": 326
   },
   {
     "outputFile": "Observation-mii-exa-test-data-patient-1-pro-promis29-social-function-tscore.json",
     "fshName": "mii-exa-test-data-patient-1-pro-promis29-social-function-tscore",
     "fshType": "Instance",
     "fshFile": "modul-pro/Observation.fsh",
-    "startLine": 397,
-    "endLine": 413
+    "startLine": 405,
+    "endLine": 422
   },
   {
     "outputFile": "Observation-mii-exa-test-data-patient-1-vitalstatus-1.json",
@@ -3701,7 +3701,7 @@
     "fshType": "Instance",
     "fshFile": "modul-molgen/MolekularerBiomarker.fsh",
     "startLine": 3,
-    "endLine": 18
+    "endLine": 19
   },
   {
     "outputFile": "Observation-mii-exa-test-data-patient-3-molgen-diagnostische-implikation-1.json",
@@ -3709,7 +3709,7 @@
     "fshType": "Instance",
     "fshFile": "modul-molgen/DiagnostischeImplikation.fsh",
     "startLine": 3,
-    "endLine": 22
+    "endLine": 24
   },
   {
     "outputFile": "Observation-mii-exa-test-data-patient-3-molgen-genotyp-1.json",
@@ -3717,7 +3717,7 @@
     "fshType": "Instance",
     "fshFile": "modul-molgen/Genotyp.fsh",
     "startLine": 3,
-    "endLine": 28
+    "endLine": 29
   },
   {
     "outputFile": "Observation-mii-exa-test-data-patient-3-molgen-molekulare-konsequenz-1.json",
@@ -3749,23 +3749,23 @@
     "fshType": "Instance",
     "fshFile": "modul-molgen/TherapeutischeImplikation.fsh",
     "startLine": 3,
-    "endLine": 30
+    "endLine": 31
   },
   {
     "outputFile": "Observation-mii-exa-test-data-patient-3-molgen-therapeutische-implikation-2.json",
     "fshName": "mii-exa-test-data-patient-3-molgen-therapeutische-implikation-2",
     "fshType": "Instance",
     "fshFile": "modul-molgen/TherapeutischeImplikation.fsh",
-    "startLine": 33,
-    "endLine": 58
+    "startLine": 34,
+    "endLine": 60
   },
   {
     "outputFile": "Observation-mii-exa-test-data-patient-3-molgen-therapeutische-implikation-3.json",
     "fshName": "mii-exa-test-data-patient-3-molgen-therapeutische-implikation-3",
     "fshType": "Instance",
     "fshFile": "modul-molgen/TherapeutischeImplikation.fsh",
-    "startLine": 61,
-    "endLine": 85
+    "startLine": 63,
+    "endLine": 89
   },
   {
     "outputFile": "Observation-mii-exa-test-data-patient-3-molgen-variante-1.json",
@@ -3900,8 +3900,8 @@
     "fshName": "mii-exa-test-data-patient-4-molgen-diagnostische-implikation-1",
     "fshType": "Instance",
     "fshFile": "modul-molgen/DiagnostischeImplikation.fsh",
-    "startLine": 25,
-    "endLine": 48
+    "startLine": 27,
+    "endLine": 50
   },
   {
     "outputFile": "Observation-mii-exa-test-data-patient-4-molgen-molekulare-konsequenz-1.json",
@@ -5100,16 +5100,16 @@
     "fshName": "mii-exa-test-data-patient-10-specimen-1",
     "fshType": "Instance",
     "fshFile": "modul-biobank/Specimen.fsh",
-    "startLine": 456,
-    "endLine": 476
+    "startLine": 457,
+    "endLine": 477
   },
   {
     "outputFile": "Specimen-mii-exa-test-data-patient-10-specimen-2.json",
     "fshName": "mii-exa-test-data-patient-10-specimen-2",
     "fshType": "Instance",
     "fshFile": "modul-biobank/Specimen.fsh",
-    "startLine": 479,
-    "endLine": 499
+    "startLine": 480,
+    "endLine": 500
   },
   {
     "outputFile": "Specimen-mii-exa-test-data-patient-2-specimen-1.json",
@@ -5125,135 +5125,135 @@
     "fshType": "Instance",
     "fshFile": "modul-biobank/Specimen.fsh",
     "startLine": 76,
-    "endLine": 93
+    "endLine": 94
   },
   {
     "outputFile": "Specimen-mii-exa-test-data-patient-3-specimen-2.json",
     "fshName": "mii-exa-test-data-patient-3-specimen-2",
     "fshType": "Instance",
     "fshFile": "modul-biobank/Specimen.fsh",
-    "startLine": 96,
-    "endLine": 116
+    "startLine": 97,
+    "endLine": 117
   },
   {
     "outputFile": "Specimen-mii-exa-test-data-patient-3-specimen-3.json",
     "fshName": "mii-exa-test-data-patient-3-specimen-3",
     "fshType": "Instance",
     "fshFile": "modul-biobank/Specimen.fsh",
-    "startLine": 119,
-    "endLine": 139
+    "startLine": 120,
+    "endLine": 140
   },
   {
     "outputFile": "Specimen-mii-exa-test-data-patient-4-specimen-1.json",
     "fshName": "mii-exa-test-data-patient-4-specimen-1",
     "fshType": "Instance",
     "fshFile": "modul-biobank/Specimen.fsh",
-    "startLine": 142,
-    "endLine": 158
+    "startLine": 143,
+    "endLine": 159
   },
   {
     "outputFile": "Specimen-mii-exa-test-data-patient-4-specimen-2.json",
     "fshName": "mii-exa-test-data-patient-4-specimen-2",
     "fshType": "Instance",
     "fshFile": "modul-biobank/Specimen.fsh",
-    "startLine": 160,
-    "endLine": 176
+    "startLine": 161,
+    "endLine": 177
   },
   {
     "outputFile": "Specimen-mii-exa-test-data-patient-4-specimen-3.json",
     "fshName": "mii-exa-test-data-patient-4-specimen-3",
     "fshType": "Instance",
     "fshFile": "modul-biobank/Specimen.fsh",
-    "startLine": 179,
-    "endLine": 199
+    "startLine": 180,
+    "endLine": 200
   },
   {
     "outputFile": "Specimen-mii-exa-test-data-patient-4-specimen-4.json",
     "fshName": "mii-exa-test-data-patient-4-specimen-4",
     "fshType": "Instance",
     "fshFile": "modul-biobank/Specimen.fsh",
-    "startLine": 202,
-    "endLine": 222
+    "startLine": 203,
+    "endLine": 223
   },
   {
     "outputFile": "Specimen-mii-exa-test-data-patient-5-specimen-1.json",
     "fshName": "mii-exa-test-data-patient-5-specimen-1",
     "fshType": "Instance",
     "fshFile": "modul-biobank/Specimen.fsh",
-    "startLine": 225,
-    "endLine": 245
+    "startLine": 226,
+    "endLine": 246
   },
   {
     "outputFile": "Specimen-mii-exa-test-data-patient-5-specimen-2.json",
     "fshName": "mii-exa-test-data-patient-5-specimen-2",
     "fshType": "Instance",
     "fshFile": "modul-biobank/Specimen.fsh",
-    "startLine": 248,
-    "endLine": 269
+    "startLine": 249,
+    "endLine": 270
   },
   {
     "outputFile": "Specimen-mii-exa-test-data-patient-6-specimen-1.json",
     "fshName": "mii-exa-test-data-patient-6-specimen-1",
     "fshType": "Instance",
     "fshFile": "modul-biobank/Specimen.fsh",
-    "startLine": 272,
-    "endLine": 292
+    "startLine": 273,
+    "endLine": 293
   },
   {
     "outputFile": "Specimen-mii-exa-test-data-patient-6-specimen-2.json",
     "fshName": "mii-exa-test-data-patient-6-specimen-2",
     "fshType": "Instance",
     "fshFile": "modul-biobank/Specimen.fsh",
-    "startLine": 295,
-    "endLine": 315
+    "startLine": 296,
+    "endLine": 316
   },
   {
     "outputFile": "Specimen-mii-exa-test-data-patient-7-specimen-1.json",
     "fshName": "mii-exa-test-data-patient-7-specimen-1",
     "fshType": "Instance",
     "fshFile": "modul-biobank/Specimen.fsh",
-    "startLine": 318,
-    "endLine": 338
+    "startLine": 319,
+    "endLine": 339
   },
   {
     "outputFile": "Specimen-mii-exa-test-data-patient-7-specimen-2.json",
     "fshName": "mii-exa-test-data-patient-7-specimen-2",
     "fshType": "Instance",
     "fshFile": "modul-biobank/Specimen.fsh",
-    "startLine": 341,
-    "endLine": 361
+    "startLine": 342,
+    "endLine": 362
   },
   {
     "outputFile": "Specimen-mii-exa-test-data-patient-8-specimen-1.json",
     "fshName": "mii-exa-test-data-patient-8-specimen-1",
     "fshType": "Instance",
     "fshFile": "modul-biobank/Specimen.fsh",
-    "startLine": 364,
-    "endLine": 384
+    "startLine": 365,
+    "endLine": 385
   },
   {
     "outputFile": "Specimen-mii-exa-test-data-patient-8-specimen-2.json",
     "fshName": "mii-exa-test-data-patient-8-specimen-2",
     "fshType": "Instance",
     "fshFile": "modul-biobank/Specimen.fsh",
-    "startLine": 387,
-    "endLine": 407
+    "startLine": 388,
+    "endLine": 408
   },
   {
     "outputFile": "Specimen-mii-exa-test-data-patient-9-specimen-1.json",
     "fshName": "mii-exa-test-data-patient-9-specimen-1",
     "fshType": "Instance",
     "fshFile": "modul-biobank/Specimen.fsh",
-    "startLine": 410,
-    "endLine": 430
+    "startLine": 411,
+    "endLine": 431
   },
   {
     "outputFile": "Specimen-mii-exa-test-data-patient-9-specimen-2.json",
     "fshName": "mii-exa-test-data-patient-9-specimen-2",
     "fshType": "Instance",
     "fshFile": "modul-biobank/Specimen.fsh",
-    "startLine": 433,
-    "endLine": 453
+    "startLine": 434,
+    "endLine": 454
   },
   {
     "outputFile": "Substance-mii-exa-test-data-patient-1-substance-1.json",

@@ -1845,6 +1845,13 @@
           ]
         },
         "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "C128095",
+              "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+              "display": "FIGO Stage IVB Ovarian Cancer 2014"
+            }
+          ],
           "text": "IVB"
         },
         "status": "final",

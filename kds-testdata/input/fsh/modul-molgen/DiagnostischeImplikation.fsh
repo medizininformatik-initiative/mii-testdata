@@ -17,8 +17,10 @@ Description: "Observation: Diagnostische Implikation fuer BRAF-Mutation"
 * component[conclusion-string].code = $tbd-codes-cs#conclusion-string
 * component[conclusion-string].valueString = "Nachweis einer aktivierenden Mutation BRAF V600E"
 * component[evidence-level].code = $loinc#93044-6 "Level of evidence"
-* component[evidence-level].valueCodeableConcept.text = "Tier I - Level A"
+* component[evidence-level].valueCodeableConcept.coding = $loinc#LA30200-2 "Very strong evidence pathogenic"
+* component[evidence-level].valueCodeableConcept.text = "Tier I - Level A (AMP/ASCO/CAP)"
 // code inherited from profile pattern (tbd-codes-cs#condition-inheritance)
+* component[mode-of-inheritance].valueCodeableConcept.coding = $HPO#HP:0001442 "Typified by somatic mosaicism"
 * component[mode-of-inheritance].valueCodeableConcept.text = "Somatisch erworben"
 
 // Patient-4

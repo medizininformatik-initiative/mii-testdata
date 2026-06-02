@@ -41,20 +41,13 @@
   "component": [
     {
       "valueCodeableConcept": {
-        "text": "MSI-Panel (5 Marker)"
-      },
-      "code": {
         "coding": [
           {
-            "system": "http://loinc.org",
-            "code": "48018-6",
-            "display": "Gene studied [ID]"
+            "code": "C36318",
+            "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+            "display": "Microsatellite Instability"
           }
-        ]
-      }
-    },
-    {
-      "valueCodeableConcept": {
+        ],
         "text": "Microsatellite Instability"
       },
       "code": {

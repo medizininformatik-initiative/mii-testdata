@@ -20,6 +20,13 @@
     "value": 58.3
   },
   "method": {
+    "coding": [
+      {
+        "code": "promis-promis29",
+        "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue",
+        "display": "PROMIS-29 Questionnaire"
+      }
+    ],
     "text": "PROMIS-29 Profile v2.1"
   },
   "derivedFrom": [

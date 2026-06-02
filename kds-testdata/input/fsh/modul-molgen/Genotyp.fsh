@@ -13,6 +13,7 @@ Description: "Observation: Genotyp fuer BRAF-Mutation"
 * encounter = Reference(mii-exa-test-data-molgen-encounter-1)
 * effectiveDateTime = "2022-04-07"
 * issued = "2022-04-12T10:30:00+02:00"
+* valueCodeableConcept.coding = $dbSNP#rs113488022 "BRAF V600E (c.1799T>A)"
 * valueCodeableConcept.text = "BRAF rs113488022 T>A"
 * method = $loinc#LA26398-0 "Sequencing"
 * specimen = Reference(mii-exa-test-data-molgen-specimen-1)
