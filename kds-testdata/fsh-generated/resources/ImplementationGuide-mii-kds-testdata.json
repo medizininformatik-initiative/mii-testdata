@@ -86,7 +86,7 @@
     },
     {
       "packageId": "de.medizininformatikinitiative.kerndatensatz.mikrobiologie",
-      "version": "2025.0.1",
+      "version": "2027.0.0-alpha.3",
       "uri": "http://fhir.org/packages/de.medizininformatikinitiative.kerndatensatz.mikrobiologie/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.mikrobiologie",
       "id": "de_medizininformatikinitiative_kerndatensatz_mikrobiologie"
     },
@@ -155,6 +155,12 @@
       "version": "3.0.0",
       "uri": "http://hl7.org/fhir/uv/sdc/ImplementationGuide/hl7.fhir.uv.sdc",
       "id": "hl7_fhir_uv_sdc"
+    },
+    {
+      "packageId": "hl7.fhir.uv.xver-r5.r4",
+      "version": "0.1.0",
+      "uri": "http://hl7.org/fhir/uv/xver/ImplementationGuide/hl7.fhir.uv.xver-r5.r4",
+      "id": "hl7_fhir_uv_xver_r5_r4"
     },
     {
       "packageId": "de.basisprofil.r4",
@@ -561,6 +567,14 @@
         },
         "name": "mii-exa-test-data-bundle-icu-1",
         "description": "Bundle: ICU Testdaten Patient-1",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Bundle/mii-exa-test-data-bundle-mikrobio-1"
+        },
+        "name": "mii-exa-test-data-bundle-mikrobio-1",
+        "description": "Bundle: Mikrobiologie Testdaten (Sepsis-Patient mit MRSA)",
         "exampleBoolean": true
       },
       {
@@ -1001,6 +1015,222 @@
         },
         "name": "mii-exa-test-data-medication-topiramat",
         "description": "Medication: Topiramat",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-mikrobio-allgemeine-bestimmung-1"
+        },
+        "name": "mii-exa-test-data-mikrobio-allgemeine-bestimmung-1",
+        "description": "Mikrobio: Allgemeine Bestimmung — Bakterien-Nachweis",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-mikrobio-allgemeine-kultur-1"
+        },
+        "name": "mii-exa-test-data-mikrobio-allgemeine-kultur-1",
+        "description": "Mikrobio: Allgemeine Kultur (Blutkultur) — positiv",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-mikrobio-allgemeine-kultur-dar-1"
+        },
+        "name": "mii-exa-test-data-mikrobio-allgemeine-kultur-dar-1",
+        "description": "Mikrobio: Allgemeine Kultur — Ergebnis fehlt (Probe abgelaufen)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-mikrobio-antigen-antikoerper-1"
+        },
+        "name": "mii-exa-test-data-mikrobio-antigen-antikoerper-1",
+        "description": "Mikrobio: Antikörper-Titer (IgG) quantitativ",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-mikrobio-aviditaet-1"
+        },
+        "name": "mii-exa-test-data-mikrobio-aviditaet-1",
+        "description": "Mikrobio: Avidität IgG niedrig (frische Infektion)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-mikrobio-barlett-score-1"
+        },
+        "name": "mii-exa-test-data-mikrobio-barlett-score-1",
+        "description": "Mikrobio: Barlett-Score (verwertbar)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-mikrobio-ct-wert-1"
+        },
+        "name": "mii-exa-test-data-mikrobio-ct-wert-1",
+        "description": "Mikrobio: CT-Wert PCR (21.3)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Device/mii-exa-test-data-mikrobio-device-1"
+        },
+        "name": "mii-exa-test-data-mikrobio-device-1",
+        "description": "Mikrobio Lab Analyzer: VITEK 2 (BioMérieux)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "DiagnosticReport/mii-exa-test-data-mikrobio-diagnostic-report-1"
+        },
+        "name": "mii-exa-test-data-mikrobio-diagnostic-report-1",
+        "description": "Mikrobio Diagnostic Report: Blutkultur + Antibiogramm + MRSA-Befund",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-mikrobio-empfindlichkeit-1"
+        },
+        "name": "mii-exa-test-data-mikrobio-empfindlichkeit-1",
+        "description": "Mikrobio: Empfindlichkeit Vancomycin (MHK 1 mg/L, S)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Encounter/mii-exa-test-data-mikrobio-encounter-1"
+        },
+        "name": "mii-exa-test-data-mikrobio-encounter-1",
+        "description": "Mikrobio Test Encounter: Stationärer Sepsis-Aufenthalt",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-mikrobio-keimzahl-1"
+        },
+        "name": "mii-exa-test-data-mikrobio-keimzahl-1",
+        "description": "Mikrobio: Keimzahl Urinkultur (E. coli, signifikant)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-mikrobio-mikroskopie-1"
+        },
+        "name": "mii-exa-test-data-mikrobio-mikroskopie-1",
+        "description": "Mikrobio: Mikroskopie — Gram-positive Kokken in Haufen",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-mikrobio-molekulare-pathogenlast-1"
+        },
+        "name": "mii-exa-test-data-mikrobio-molekulare-pathogenlast-1",
+        "description": "Mikrobio: Molekulare Pathogenlast (350.000 Copies/mL)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-mikrobio-mre-klasse-1"
+        },
+        "name": "mii-exa-test-data-mikrobio-mre-klasse-1",
+        "description": "Mikrobio: MRE-Klasse MRSA",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-mikrobio-mrgn-klasse-1"
+        },
+        "name": "mii-exa-test-data-mikrobio-mrgn-klasse-1",
+        "description": "Mikrobio: MRGN-Klasse 2MRGN (E. coli)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-mikrobio-nugent-score-1"
+        },
+        "name": "mii-exa-test-data-mikrobio-nugent-score-1",
+        "description": "Mikrobio: Nugent-Score (7 — bakterielle Vaginose)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Organization/mii-exa-test-data-mikrobio-organization-lab-1"
+        },
+        "name": "mii-exa-test-data-mikrobio-organization-lab-1",
+        "description": "Mikrobio Lab Organization: Mikrobiologisches Labor Charité",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Patient/mii-exa-test-data-mikrobio-patient-1"
+        },
+        "name": "mii-exa-test-data-mikrobio-patient-1",
+        "description": "Mikrobio Test Patient: Sepsis-Fall",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-mikrobio-resistenzmechanismen-1"
+        },
+        "name": "mii-exa-test-data-mikrobio-resistenzmechanismen-1",
+        "description": "Mikrobio: Resistenzmechanismus mecA nachgewiesen",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "ServiceRequest/mii-exa-test-data-mikrobio-servicerequest-1"
+        },
+        "name": "mii-exa-test-data-mikrobio-servicerequest-1",
+        "description": "Mikrobio Auftrag: Blutkultur + Erregerdiagnostik",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Specimen/mii-exa-test-data-mikrobio-specimen-1"
+        },
+        "name": "mii-exa-test-data-mikrobio-specimen-1",
+        "description": "Mikrobio Specimen: Blutkultur aerob",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Specimen/mii-exa-test-data-mikrobio-specimen-2"
+        },
+        "name": "mii-exa-test-data-mikrobio-specimen-2",
+        "description": "Mikrobio Specimen: Mittelstrahlurin",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-mikrobio-spezifische-bestimmung-1"
+        },
+        "name": "mii-exa-test-data-mikrobio-spezifische-bestimmung-1",
+        "description": "Mikrobio: Spezifische Bestimmung — S. aureus identifiziert",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-mikrobio-titer-1"
+        },
+        "name": "mii-exa-test-data-mikrobio-titer-1",
+        "description": "Mikrobio: Antikörper-Titer (1:128)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-mikrobio-virulenzfaktor-1"
+        },
+        "name": "mii-exa-test-data-mikrobio-virulenzfaktor-1",
+        "description": "Mikrobio: Virulenzfaktor PVL nicht nachgewiesen",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-mikrobio-voraussichtliche-empfindlichkeit-1"
+        },
+        "name": "mii-exa-test-data-mikrobio-voraussichtliche-empfindlichkeit-1",
+        "description": "Mikrobio: Voraussichtliche Empfindlichkeit Methicillin (R via mecA)",
         "exampleBoolean": true
       },
       {

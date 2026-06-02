@@ -1,0 +1,3821 @@
+{
+  "resourceType": "Bundle",
+  "id": "mii-exa-test-data-bundle-mikrobio-1",
+  "meta": {
+    "security": [
+      {
+        "code": "HTEST",
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "display": "test health data"
+      }
+    ]
+  },
+  "entry": [
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Patient/mii-exa-test-data-mikrobio-patient-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Patient/mii-exa-test-data-mikrobio-patient-1",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "mii-exa-test-data-mikrobio-patient-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://www.charite.de/fhir/sid/patientenidentifikation",
+            "value": "MIKROBIO-TEST-001"
+          }
+        ],
+        "name": [
+          {
+            "given": [
+              "Sigmund"
+            ],
+            "family": "Sepsis"
+          }
+        ],
+        "birthDate": "1957-08-14",
+        "gender": "male"
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Encounter/mii-exa-test-data-mikrobio-encounter-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Encounter/mii-exa-test-data-mikrobio-encounter-1",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "mii-exa-test-data-mikrobio-encounter-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://www.charite.de/fhir/sid/encounter-identifier",
+            "value": "MIKROBIO-ENC-001"
+          }
+        ],
+        "period": {
+          "start": "2026-04-01",
+          "end": "2026-04-14"
+        },
+        "status": "finished",
+        "class": {
+          "code": "IMP",
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "display": "inpatient encounter"
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-mikrobio-patient-1"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Organization/mii-exa-test-data-mikrobio-organization-lab-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Organization/mii-exa-test-data-mikrobio-organization-lab-1",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "mii-exa-test-data-mikrobio-organization-lab-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier",
+            "value": "DIZ-CHA"
+          }
+        ],
+        "type": [
+          {
+            "coding": [
+              {
+                "code": "prov",
+                "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+                "display": "Healthcare Provider"
+              }
+            ]
+          }
+        ],
+        "name": "Mikrobiologisches Labor Charité"
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Specimen/mii-exa-test-data-mikrobio-specimen-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Specimen/mii-exa-test-data-mikrobio-specimen-1",
+      "resource": {
+        "resourceType": "Specimen",
+        "id": "mii-exa-test-data-mikrobio-specimen-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://www.charite.de/fhir/sid/Probennummer",
+            "value": "BLOOD-CULT-001"
+          }
+        ],
+        "collection": {
+          "bodySite": {
+            "coding": [
+              {
+                "code": "28273000",
+                "system": "http://snomed.info/sct",
+                "display": "Bilateral antecubital fossae (body structure)"
+              }
+            ]
+          },
+          "collectedDateTime": "2026-04-02T08:30:00+02:00"
+        },
+        "status": "available",
+        "type": {
+          "coding": [
+            {
+              "code": "119297000",
+              "system": "http://snomed.info/sct",
+              "display": "Blood specimen (specimen)"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-mikrobio-patient-1"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Specimen/mii-exa-test-data-mikrobio-specimen-2"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Specimen/mii-exa-test-data-mikrobio-specimen-2",
+      "resource": {
+        "resourceType": "Specimen",
+        "id": "mii-exa-test-data-mikrobio-specimen-2",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://www.charite.de/fhir/sid/Probennummer",
+            "value": "URINE-001"
+          }
+        ],
+        "collection": {
+          "collectedDateTime": "2026-04-02T09:00:00+02:00"
+        },
+        "status": "available",
+        "type": {
+          "coding": [
+            {
+              "code": "122575003",
+              "system": "http://snomed.info/sct",
+              "display": "Urine specimen (specimen)"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-mikrobio-patient-1"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Device/mii-exa-test-data-mikrobio-device-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Device/mii-exa-test-data-mikrobio-device-1",
+      "resource": {
+        "resourceType": "Device",
+        "id": "mii-exa-test-data-mikrobio-device-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://www.charite.de/fhir/sid/device-identifier",
+            "value": "VITEK2-001"
+          }
+        ],
+        "deviceName": [
+          {
+            "name": "VITEK 2",
+            "type": "manufacturer-name"
+          }
+        ],
+        "type": {
+          "coding": [
+            {
+              "code": "469318003",
+              "system": "http://snomed.info/sct",
+              "display": "Bacterial identification device (physical object)"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "ServiceRequest/mii-exa-test-data-mikrobio-servicerequest-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/ServiceRequest/mii-exa-test-data-mikrobio-servicerequest-1",
+      "resource": {
+        "resourceType": "ServiceRequest",
+        "id": "mii-exa-test-data-mikrobio-servicerequest-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://www.charite.de/fhir/sid/service-request",
+            "value": "MIKROBIO-SR-001"
+          }
+        ],
+        "status": "completed",
+        "intent": "order",
+        "code": {
+          "coding": [
+            {
+              "code": "252418007",
+              "system": "http://snomed.info/sct",
+              "display": "Microbiology procedure (procedure)"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-mikrobio-patient-1"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-mikrobio-encounter-1"
+        },
+        "authoredOn": "2026-04-02T08:00:00+02:00"
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-mikrobio-allgemeine-kultur-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-mikrobio-allgemeine-kultur-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-mikrobio-allgemeine-kultur-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://example.org/fhir/mikrobio-lab-system",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-allgemeine-kultur"
+          ]
+        },
+        "identifier": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "code": "OBI"
+                }
+              ]
+            },
+            "assigner": {
+              "identifier": {
+                "system": "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier",
+                "value": "DIZ-CHA"
+              }
+            },
+            "system": "https://www.charite.de/fhir/sid/test-lab-results",
+            "value": "allg-kultur-1"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                "code": "MB"
+              },
+              {
+                "code": "MB",
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0074"
+              },
+              {
+                "code": "26436-6",
+                "system": "http://loinc.org"
+              },
+              {
+                "code": "laboratory",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              },
+              {
+                "code": "18725-2",
+                "system": "http://loinc.org",
+                "display": "Microbiology studies (set)"
+              }
+            ]
+          }
+        ],
+        "subject": {
+          "identifier": {
+            "system": "https://www.charite.de/fhir/sid/patientenidentifikation",
+            "value": "MIKROBIO-TEST-001"
+          },
+          "reference": "Patient/mii-exa-test-data-mikrobio-patient-1"
+        },
+        "encounter": {
+          "identifier": {
+            "system": "https://www.charite.de/fhir/sid/encounter-identifier",
+            "value": "MIKROBIO-ENC-001"
+          },
+          "reference": "Encounter/mii-exa-test-data-mikrobio-encounter-1"
+        },
+        "specimen": {
+          "identifier": {
+            "system": "https://www.charite.de/fhir/sid/Probennummer",
+            "value": "BLOOD-CULT-001"
+          },
+          "reference": "Specimen/mii-exa-test-data-mikrobio-specimen-1"
+        },
+        "device": {
+          "identifier": {
+            "system": "https://www.charite.de/fhir/sid/device-identifier",
+            "value": "VITEK2-001"
+          },
+          "reference": "Device/mii-exa-test-data-mikrobio-device-1"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "11475-1",
+              "display": "Microorganism identified in Blood by Aerobic culture"
+            }
+          ]
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "10828004",
+              "system": "http://snomed.info/sct",
+              "display": "Positive (qualifier value)"
+            }
+          ]
+        },
+        "method": {
+          "coding": [
+            {
+              "code": "703750006",
+              "system": "http://snomed.info/sct",
+              "display": "Bacterial culture (procedure)"
+            }
+          ]
+        },
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "code": "POS",
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "display": "Positive"
+              }
+            ]
+          }
+        ],
+        "note": [
+          {
+            "text": "Wuchs nach 18h aerob; weitere Differenzierung folgt."
+          }
+        ],
+        "status": "final",
+        "effectiveDateTime": "2026-04-02T10:00:00+02:00",
+        "_effectiveDateTime": {
+          "extension": [
+            {
+              "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "281271004",
+                    "system": "http://snomed.info/sct",
+                    "display": "Date sample collected (observable entity)"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "issued": "2026-04-03T14:00:00+02:00"
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-mikrobio-allgemeine-kultur-dar-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-mikrobio-allgemeine-kultur-dar-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-mikrobio-allgemeine-kultur-dar-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://example.org/fhir/mikrobio-lab-system",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-allgemeine-kultur"
+          ]
+        },
+        "identifier": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "code": "OBI"
+                }
+              ]
+            },
+            "assigner": {
+              "identifier": {
+                "system": "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier",
+                "value": "DIZ-CHA"
+              }
+            },
+            "system": "https://www.charite.de/fhir/sid/test-lab-results",
+            "value": "allg-kultur-dar-1"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                "code": "MB"
+              },
+              {
+                "code": "MB",
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0074"
+              },
+              {
+                "code": "26436-6",
+                "system": "http://loinc.org"
+              },
+              {
+                "code": "laboratory",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              },
+              {
+                "code": "18725-2",
+                "system": "http://loinc.org",
+                "display": "Microbiology studies (set)"
+              }
+            ]
+          }
+        ],
+        "subject": {
+          "identifier": {
+            "system": "https://www.charite.de/fhir/sid/patientenidentifikation",
+            "value": "MIKROBIO-TEST-001"
+          },
+          "reference": "Patient/mii-exa-test-data-mikrobio-patient-1"
+        },
+        "encounter": {
+          "identifier": {
+            "system": "https://www.charite.de/fhir/sid/encounter-identifier",
+            "value": "MIKROBIO-ENC-001"
+          },
+          "reference": "Encounter/mii-exa-test-data-mikrobio-encounter-1"
+        },
+        "specimen": {
+          "identifier": {
+            "system": "https://www.charite.de/fhir/sid/Probennummer",
+            "value": "BLOOD-CULT-001"
+          },
+          "reference": "Specimen/mii-exa-test-data-mikrobio-specimen-1"
+        },
+        "device": {
+          "identifier": {
+            "system": "https://www.charite.de/fhir/sid/device-identifier",
+            "value": "VITEK2-001"
+          },
+          "reference": "Device/mii-exa-test-data-mikrobio-device-1"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "11475-1",
+              "display": "Microorganism identified in Blood by Aerobic culture"
+            }
+          ]
+        },
+        "dataAbsentReason": {
+          "coding": [
+            {
+              "code": "unknown",
+              "system": "http://terminology.hl7.org/CodeSystem/data-absent-reason",
+              "display": "Unknown"
+            }
+          ]
+        },
+        "method": {
+          "coding": [
+            {
+              "code": "703750006",
+              "system": "http://snomed.info/sct",
+              "display": "Bacterial culture (procedure)"
+            }
+          ]
+        },
+        "note": [
+          {
+            "text": "Kultur konnte nicht ausgewertet werden (Probe abgelaufen)."
+          }
+        ],
+        "status": "final",
+        "effectiveDateTime": "2026-04-02T11:00:00+02:00",
+        "_effectiveDateTime": {
+          "extension": [
+            {
+              "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "281271004",
+                    "system": "http://snomed.info/sct",
+                    "display": "Date sample collected (observable entity)"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "issued": "2026-04-03T15:00:00+02:00"
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-mikrobio-spezifische-bestimmung-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-mikrobio-spezifische-bestimmung-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-mikrobio-spezifische-bestimmung-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://example.org/fhir/mikrobio-lab-system",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-spezifische-bestimmung"
+          ]
+        },
+        "identifier": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "code": "OBI"
+                }
+              ]
+            },
+            "assigner": {
+              "identifier": {
+                "system": "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier",
+                "value": "DIZ-CHA"
+              }
+            },
+            "system": "https://www.charite.de/fhir/sid/test-lab-results",
+            "value": "spez-bestimmung-1"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                "code": "MB"
+              },
+              {
+                "code": "MB",
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0074"
+              },
+              {
+                "code": "26436-6",
+                "system": "http://loinc.org"
+              },
+              {
+                "code": "laboratory",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              },
+              {
+                "code": "18725-2",
+                "system": "http://loinc.org",
+                "display": "Microbiology studies (set)"
+              }
+            ]
+          }
+        ],
+        "subject": {
+          "identifier": {
+            "system": "https://www.charite.de/fhir/sid/patientenidentifikation",
+            "value": "MIKROBIO-TEST-001"
+          },
+          "reference": "Patient/mii-exa-test-data-mikrobio-patient-1"
+        },
+        "encounter": {
+          "identifier": {
+            "system": "https://www.charite.de/fhir/sid/encounter-identifier",
+            "value": "MIKROBIO-ENC-001"
+          },
+          "reference": "Encounter/mii-exa-test-data-mikrobio-encounter-1"
+        },
+        "specimen": {
+          "identifier": {
+            "system": "https://www.charite.de/fhir/sid/Probennummer",
+            "value": "BLOOD-CULT-001"
+          },
+          "reference": "Specimen/mii-exa-test-data-mikrobio-specimen-1"
+        },
+        "device": {
+          "identifier": {
+            "system": "https://www.charite.de/fhir/sid/device-identifier",
+            "value": "VITEK2-001"
+          },
+          "reference": "Device/mii-exa-test-data-mikrobio-device-1"
+        },
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "observation",
+                "valueReference": {
+                  "reference": "Observation/mii-exa-test-data-mikrobio-allgemeine-kultur-1"
+                }
+              },
+              {
+                "url": "type",
+                "valueCode": "reflex"
+              }
+            ],
+            "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-Observation.triggeredBy"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "92253-4",
+              "system": "http://loinc.org",
+              "display": "Microorganism or agent identified in Specimen"
+            }
+          ]
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "3092008",
+              "system": "http://snomed.info/sct",
+              "display": "Staphylococcus aureus (organism)"
+            }
+          ]
+        },
+        "method": {
+          "coding": [
+            {
+              "code": "258066000",
+              "system": "http://snomed.info/sct",
+              "display": "MALDI-TOF mass spectrometry technique (qualifier value)"
+            }
+          ]
+        },
+        "note": [
+          {
+            "text": "Identifikation via MALDI-TOF (Score 2.4)."
+          }
+        ],
+        "status": "final",
+        "effectiveDateTime": "2026-04-03T15:00:00+02:00",
+        "_effectiveDateTime": {
+          "extension": [
+            {
+              "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "281271004",
+                    "system": "http://snomed.info/sct",
+                    "display": "Date sample collected (observable entity)"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "issued": "2026-04-03T16:00:00+02:00"
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-mikrobio-allgemeine-bestimmung-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-mikrobio-allgemeine-bestimmung-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-mikrobio-allgemeine-bestimmung-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://example.org/fhir/mikrobio-lab-system",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-allgemeine-bestimmung"
+          ]
+        },
+        "identifier": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "code": "OBI"
+                }
+              ]
+            },
+            "assigner": {
+              "identifier": {
+                "system": "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier",
+                "value": "DIZ-CHA"
+              }
+            },
+            "system": "https://www.charite.de/fhir/sid/test-lab-results",
+            "value": "allg-bestimmung-1"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                "code": "MB"
+              },
+              {
+                "code": "MB",
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0074"
+              },
+              {
+                "code": "26436-6",
+                "system": "http://loinc.org"
+              },
+              {
+                "code": "laboratory",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              },
+              {
+                "code": "18725-2",
+                "system": "http://loinc.org",
+                "display": "Microbiology studies (set)"
+              }
+            ]
+          }
+        ],
+        "subject": {
+          "identifier": {
+            "system": "https://www.charite.de/fhir/sid/patientenidentifikation",
+            "value": "MIKROBIO-TEST-001"
+          },
+          "reference": "Patient/mii-exa-test-data-mikrobio-patient-1"
+        },
+        "encounter": {
+          "identifier": {
+            "system": "https://www.charite.de/fhir/sid/encounter-identifier",
+            "value": "MIKROBIO-ENC-001"
+          },
+          "reference": "Encounter/mii-exa-test-data-mikrobio-encounter-1"
+        },
+        "specimen": {
+          "identifier": {
+            "system": "https://www.charite.de/fhir/sid/Probennummer",
+            "value": "BLOOD-CULT-001"
+          },
+          "reference": "Specimen/mii-exa-test-data-mikrobio-specimen-1"
+        },
+        "device": {
+          "identifier": {
+            "system": "https://www.charite.de/fhir/sid/device-identifier",
+            "value": "VITEK2-001"
+          },
+          "reference": "Device/mii-exa-test-data-mikrobio-device-1"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "41852-5",
+              "display": "Microorganism or agent identified in Specimen"
+            }
+          ]
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "52499004",
+              "system": "http://snomed.info/sct",
+              "display": "Bacteria detected (finding)"
+            }
+          ]
+        },
+        "method": {
+          "coding": [
+            {
+              "code": "278289002",
+              "system": "http://snomed.info/sct",
+              "display": "Microscopy (procedure)"
+            }
+          ]
+        },
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "code": "A",
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "display": "Abnormal"
+              }
+            ]
+          }
+        ],
+        "note": [
+          {
+            "text": "Bakteriennachweis in Gram-Faerbung; weitere Typisierung folgt."
+          }
+        ],
+        "status": "final",
+        "effectiveDateTime": "2026-04-03T15:30:00+02:00",
+        "_effectiveDateTime": {
+          "extension": [
+            {
+              "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "281271004",
+                    "system": "http://snomed.info/sct",
+                    "display": "Date sample collected (observable entity)"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "issued": "2026-04-03T16:30:00+02:00"
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-mikrobio-mikroskopie-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-mikrobio-mikroskopie-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-mikrobio-mikroskopie-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://example.org/fhir/mikrobio-lab-system",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-mikroskopie"
+          ]
+        },
+        "identifier": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "code": "OBI"
+                }
+              ]
+            },
+            "assigner": {
+              "identifier": {
+                "system": "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier",
+                "value": "DIZ-CHA"
+              }
+            },
+            "system": "https://www.charite.de/fhir/sid/test-lab-results",
+            "value": "mikroskopie-1"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                "code": "MB"
+              },
+              {
+                "code": "MB",
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0074"
+              },
+              {
+                "code": "26436-6",
+                "system": "http://loinc.org"
+              },
+              {
+                "code": "laboratory",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              },
+              {
+                "code": "18725-2",
+                "system": "http://loinc.org",
+                "display": "Microbiology studies (set)"
+              }
+            ]
+          }
+        ],
+        "subject": {
+          "identifier": {
+            "system": "https://www.charite.de/fhir/sid/patientenidentifikation",
+            "value": "MIKROBIO-TEST-001"
+          },
+          "reference": "Patient/mii-exa-test-data-mikrobio-patient-1"
+        },
+        "encounter": {
+          "identifier": {
+            "system": "https://www.charite.de/fhir/sid/encounter-identifier",
+            "value": "MIKROBIO-ENC-001"
+          },
+          "reference": "Encounter/mii-exa-test-data-mikrobio-encounter-1"
+        },
+        "specimen": {
+          "identifier": {
+            "system": "https://www.charite.de/fhir/sid/Probennummer",
+            "value": "BLOOD-CULT-001"
+          },
+          "reference": "Specimen/mii-exa-test-data-mikrobio-specimen-1"
+        },
+        "device": {
+          "identifier": {
+            "system": "https://www.charite.de/fhir/sid/device-identifier",
+            "value": "VITEK2-001"
+          },
+          "reference": "Device/mii-exa-test-data-mikrobio-device-1"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "105059-0",
+              "display": "Microscopic observation in Specimen"
+            }
+          ]
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "70003006",
+              "system": "http://snomed.info/sct",
+              "display": "Gram-positive cocci in clusters (finding)"
+            }
+          ]
+        },
+        "method": {
+          "coding": [
+            {
+              "code": "278289002",
+              "system": "http://snomed.info/sct",
+              "display": "Microscopy (procedure)"
+            }
+          ]
+        },
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "code": "A",
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "display": "Abnormal"
+              }
+            ]
+          }
+        ],
+        "note": [
+          {
+            "text": "Mikroskopisch typisches Bild fuer S. aureus."
+          }
+        ],
+        "status": "final",
+        "effectiveDateTime": "2026-04-02T10:30:00+02:00",
+        "_effectiveDateTime": {
+          "extension": [
+            {
+              "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "281271004",
+                    "system": "http://snomed.info/sct",
+                    "display": "Date sample collected (observable entity)"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "issued": "2026-04-02T11:00:00+02:00"
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-mikrobio-keimzahl-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-mikrobio-keimzahl-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-mikrobio-keimzahl-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://example.org/fhir/mikrobio-lab-system",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-keimzahl"
+          ]
+        },
+        "identifier": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "code": "OBI"
+                }
+              ]
+            },
+            "assigner": {
+              "identifier": {
+                "system": "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier",
+                "value": "DIZ-CHA"
+              }
+            },
+            "system": "https://www.charite.de/fhir/sid/test-lab-results",
+            "value": "keimzahl-1"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                "code": "MB"
+              },
+              {
+                "code": "MB",
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0074"
+              },
+              {
+                "code": "26436-6",
+                "system": "http://loinc.org"
+              },
+              {
+                "code": "laboratory",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              },
+              {
+                "code": "18725-2",
+                "system": "http://loinc.org",
+                "display": "Microbiology studies (set)"
+              }
+            ]
+          }
+        ],
+        "subject": {
+          "identifier": {
+            "system": "https://www.charite.de/fhir/sid/patientenidentifikation",
+            "value": "MIKROBIO-TEST-001"
+          },
+          "reference": "Patient/mii-exa-test-data-mikrobio-patient-1"
+        },
+        "encounter": {
+          "identifier": {
+            "system": "https://www.charite.de/fhir/sid/encounter-identifier",
+            "value": "MIKROBIO-ENC-001"
+          },
+          "reference": "Encounter/mii-exa-test-data-mikrobio-encounter-1"
+        },
+        "specimen": {
+          "identifier": {
+            "system": "https://www.charite.de/fhir/sid/Probennummer",
+            "value": "URINE-001"
+          },
+          "reference": "Specimen/mii-exa-test-data-mikrobio-specimen-2"
+        },
+        "device": {
+          "identifier": {
+            "system": "https://www.charite.de/fhir/sid/device-identifier",
+            "value": "VITEK2-001"
+          },
+          "reference": "Device/mii-exa-test-data-mikrobio-device-1"
+        },
+        "modifierExtension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/InterpretationsbeeinflussendeEigenschaft",
+            "valueCoding": {
+              "code": "167569004",
+              "system": "http://snomed.info/sct",
+              "display": "Urine culture - mixed growth (finding)"
+            }
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "49223-1",
+              "system": "http://loinc.org",
+              "display": "Microorganism identified in Urine by Aerobic culture"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "system": "http://unitsofmeasure.org",
+          "value": 100000,
+          "_value": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/quantity-precision",
+                "valueInteger": 0
+              }
+            ]
+          },
+          "comparator": ">=",
+          "unit": "/mL",
+          "code": "/mL"
+        },
+        "method": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "410681005",
+              "display": "Total count technique (qualifier value)"
+            }
+          ]
+        },
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "code": "H",
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "display": "High"
+              }
+            ]
+          }
+        ],
+        "referenceRange": [
+          {
+            "low": {
+              "value": 0,
+              "unit": "/mL",
+              "system": "http://unitsofmeasure.org",
+              "code": "/mL"
+            },
+            "high": {
+              "value": 100000,
+              "unit": "/mL",
+              "system": "http://unitsofmeasure.org",
+              "code": "/mL"
+            }
+          }
+        ],
+        "note": [
+          {
+            "text": "Signifikante Bakteriurie."
+          }
+        ],
+        "status": "final",
+        "effectiveDateTime": "2026-04-03T14:00:00+02:00",
+        "_effectiveDateTime": {
+          "extension": [
+            {
+              "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "281271004",
+                    "system": "http://snomed.info/sct",
+                    "display": "Date sample collected (observable entity)"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "issued": "2026-04-03T15:00:00+02:00"
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-mikrobio-empfindlichkeit-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-mikrobio-empfindlichkeit-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-mikrobio-empfindlichkeit-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://example.org/fhir/mikrobio-lab-system",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-empfindlichkeit"
+          ]
+        },
+        "identifier": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "code": "OBI"
+                }
+              ]
+            },
+            "assigner": {
+              "identifier": {
+                "system": "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier",
+                "value": "DIZ-CHA"
+              }
+            },
+            "system": "https://www.charite.de/fhir/sid/test-lab-results",
+            "value": "empfindlichkeit-1"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                "code": "MB"
+              },
+              {
+                "code": "MB",
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0074"
+              },
+              {
+                "code": "26436-6",
+                "system": "http://loinc.org"
+              },
+              {
+                "code": "laboratory",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              },
+              {
+                "code": "18725-2",
+                "system": "http://loinc.org",
+                "display": "Microbiology studies (set)"
+              }
+            ]
+          }
+        ],
+        "subject": {
+          "identifier": {
+            "system": "https://www.charite.de/fhir/sid/patientenidentifikation",
+            "value": "MIKROBIO-TEST-001"
+          },
+          "reference": "Patient/mii-exa-test-data-mikrobio-patient-1"
+        },
+        "encounter": {
+          "identifier": {
+            "system": "https://www.charite.de/fhir/sid/encounter-identifier",
+            "value": "MIKROBIO-ENC-001"
+          },
+          "reference": "Encounter/mii-exa-test-data-mikrobio-encounter-1"
+        },
+        "specimen": {
+          "identifier": {
+            "system": "https://www.charite.de/fhir/sid/Probennummer",
+            "value": "BLOOD-CULT-001"
+          },
+          "reference": "Specimen/mii-exa-test-data-mikrobio-specimen-1"
+        },
+        "device": {
+          "identifier": {
+            "system": "https://www.charite.de/fhir/sid/device-identifier",
+            "value": "VITEK2-001"
+          },
+          "reference": "Device/mii-exa-test-data-mikrobio-device-1"
+        },
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "observation",
+                "valueReference": {
+                  "reference": "Observation/mii-exa-test-data-mikrobio-allgemeine-kultur-1"
+                }
+              },
+              {
+                "url": "type",
+                "valueCode": "reflex"
+              }
+            ],
+            "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-Observation.triggeredBy"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "29576-6",
+              "system": "http://loinc.org",
+              "display": "Vancomycin [Susceptibility]"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "system": "http://unitsofmeasure.org",
+          "value": 1,
+          "_value": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/quantity-precision",
+                "valueInteger": 1
+              }
+            ]
+          },
+          "comparator": "<=",
+          "unit": "mg/L",
+          "code": "mg/L"
+        },
+        "interpretation": [
+          {
+            "extension": [
+              {
+                "url": "https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-ex-mikrobio-empfindlichkeit-norm",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "code": "EUCAST",
+                      "system": "https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/CodeSystem/mii-cs-mikrobio-susceptibility-norm",
+                      "display": "EUCAST"
+                    }
+                  ]
+                }
+              }
+            ],
+            "coding": [
+              {
+                "code": "S",
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "display": "Susceptible"
+              }
+            ]
+          }
+        ],
+        "method": {
+          "coding": [
+            {
+              "code": "700461007",
+              "system": "http://snomed.info/sct",
+              "display": "Antimicrobial susceptibility by MIC technique"
+            }
+          ]
+        },
+        "referenceRange": [
+          {
+            "low": {
+              "value": 0,
+              "unit": "mg/L",
+              "system": "http://unitsofmeasure.org",
+              "code": "mg/L"
+            },
+            "high": {
+              "value": 2,
+              "unit": "mg/L",
+              "system": "http://unitsofmeasure.org",
+              "code": "mg/L"
+            }
+          }
+        ],
+        "note": [
+          {
+            "text": "Vancomycin als empirische Therapie geeignet; gemaess EUCAST-Kriterien empfindlich."
+          }
+        ],
+        "status": "final",
+        "effectiveDateTime": "2026-04-04T09:00:00+02:00",
+        "_effectiveDateTime": {
+          "extension": [
+            {
+              "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "281271004",
+                    "system": "http://snomed.info/sct",
+                    "display": "Date sample collected (observable entity)"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "issued": "2026-04-04T10:00:00+02:00"
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-mikrobio-voraussichtliche-empfindlichkeit-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-mikrobio-voraussichtliche-empfindlichkeit-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-mikrobio-voraussichtliche-empfindlichkeit-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://example.org/fhir/mikrobio-lab-system",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-voraussichtliche-empfindlichkeit"
+          ]
+        },
+        "identifier": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "code": "OBI"
+                }
+              ]
+            },
+            "assigner": {
+              "identifier": {
+                "system": "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier",
+                "value": "DIZ-CHA"
+              }
+            },
+            "system": "https://www.charite.de/fhir/sid/test-lab-results",
+            "value": "voraus-empfindlichkeit-1"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                "code": "MB"
+              },
+              {
+                "code": "MB",
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0074"
+              },
+              {
+                "code": "26436-6",
+                "system": "http://loinc.org"
+              },
+              {
+                "code": "laboratory",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              },
+              {
+                "code": "18725-2",
+                "system": "http://loinc.org",
+                "display": "Microbiology studies (set)"
+              }
+            ]
+          }
+        ],
+        "subject": {
+          "identifier": {
+            "system": "https://www.charite.de/fhir/sid/patientenidentifikation",
+            "value": "MIKROBIO-TEST-001"
+          },
+          "reference": "Patient/mii-exa-test-data-mikrobio-patient-1"
+        },
+        "encounter": {
+          "identifier": {
+            "system": "https://www.charite.de/fhir/sid/encounter-identifier",
+            "value": "MIKROBIO-ENC-001"
+          },
+          "reference": "Encounter/mii-exa-test-data-mikrobio-encounter-1"
+        },
+        "specimen": {
+          "identifier": {
+            "system": "https://www.charite.de/fhir/sid/Probennummer",
+            "value": "BLOOD-CULT-001"
+          },
+          "reference": "Specimen/mii-exa-test-data-mikrobio-specimen-1"
+        },
+        "device": {
+          "identifier": {
+            "system": "https://www.charite.de/fhir/sid/device-identifier",
+            "value": "VITEK2-001"
+          },
+          "reference": "Device/mii-exa-test-data-mikrobio-device-1"
+        },
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "observation",
+                "valueReference": {
+                  "reference": "Observation/mii-exa-test-data-mikrobio-resistenzmechanismen-1"
+                }
+              },
+              {
+                "url": "type",
+                "valueCode": "reflex"
+              }
+            ],
+            "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-Observation.triggeredBy"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "89489-9",
+              "system": "http://loinc.org",
+              "display": "Antimicrobial susceptibility predicted from genotype"
+            }
+          ]
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "R",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+              "display": "Resistant"
+            }
+          ]
+        },
+        "method": {
+          "coding": [
+            {
+              "code": "258066000",
+              "system": "http://snomed.info/sct",
+              "display": "Molecular detection technique"
+            }
+          ]
+        },
+        "note": [
+          {
+            "text": "Prognose der Methicillin-Resistenz aufgrund mecA-Nachweis."
+          }
+        ],
+        "status": "final",
+        "effectiveDateTime": "2026-04-04T07:00:00+02:00",
+        "_effectiveDateTime": {
+          "extension": [
+            {
+              "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "281271004",
+                    "system": "http://snomed.info/sct",
+                    "display": "Date sample collected (observable entity)"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "issued": "2026-04-04T08:00:00+02:00"
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-mikrobio-mre-klasse-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-mikrobio-mre-klasse-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-mikrobio-mre-klasse-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://example.org/fhir/mikrobio-lab-system",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-mre-klasse"
+          ]
+        },
+        "identifier": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "code": "OBI"
+                }
+              ]
+            },
+            "assigner": {
+              "identifier": {
+                "system": "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier",
+                "value": "DIZ-CHA"
+              }
+            },
+            "system": "https://www.charite.de/fhir/sid/test-lab-results",
+            "value": "mre-klasse-1"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                "code": "MB"
+              },
+              {
+                "code": "MB",
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0074"
+              },
+              {
+                "code": "26436-6",
+                "system": "http://loinc.org"
+              },
+              {
+                "code": "laboratory",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              },
+              {
+                "code": "18725-2",
+                "system": "http://loinc.org",
+                "display": "Microbiology studies (set)"
+              }
+            ]
+          }
+        ],
+        "subject": {
+          "identifier": {
+            "system": "https://www.charite.de/fhir/sid/patientenidentifikation",
+            "value": "MIKROBIO-TEST-001"
+          },
+          "reference": "Patient/mii-exa-test-data-mikrobio-patient-1"
+        },
+        "encounter": {
+          "identifier": {
+            "system": "https://www.charite.de/fhir/sid/encounter-identifier",
+            "value": "MIKROBIO-ENC-001"
+          },
+          "reference": "Encounter/mii-exa-test-data-mikrobio-encounter-1"
+        },
+        "specimen": {
+          "identifier": {
+            "system": "https://www.charite.de/fhir/sid/Probennummer",
+            "value": "BLOOD-CULT-001"
+          },
+          "reference": "Specimen/mii-exa-test-data-mikrobio-specimen-1"
+        },
+        "device": {
+          "identifier": {
+            "system": "https://www.charite.de/fhir/sid/device-identifier",
+            "value": "VITEK2-001"
+          },
+          "reference": "Device/mii-exa-test-data-mikrobio-device-1"
+        },
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "observation",
+                "valueReference": {
+                  "reference": "Observation/mii-exa-test-data-mikrobio-spezifische-bestimmung-1"
+                }
+              },
+              {
+                "url": "type",
+                "valueCode": "reflex"
+              }
+            ],
+            "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-Observation.triggeredBy"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "1285113001",
+              "display": "Type of antimicrobial resistant organism (observable entity)"
+            }
+          ]
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "409795000",
+              "system": "http://snomed.info/sct",
+              "display": "Methicillin resistant Staphylococcus aureus (organism)"
+            }
+          ]
+        },
+        "method": {
+          "coding": [
+            {
+              "code": "258066000",
+              "system": "http://snomed.info/sct",
+              "display": "MALDI-TOF mass spectrometry technique"
+            }
+          ]
+        },
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "code": "POS",
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "display": "Positive"
+              }
+            ]
+          }
+        ],
+        "note": [
+          {
+            "text": "MRSA-Befund — Isolation noetig."
+          }
+        ],
+        "status": "final",
+        "effectiveDateTime": "2026-04-04T10:30:00+02:00",
+        "_effectiveDateTime": {
+          "extension": [
+            {
+              "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "281271004",
+                    "system": "http://snomed.info/sct",
+                    "display": "Date sample collected (observable entity)"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "issued": "2026-04-04T11:00:00+02:00"
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-mikrobio-mrgn-klasse-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-mikrobio-mrgn-klasse-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-mikrobio-mrgn-klasse-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://example.org/fhir/mikrobio-lab-system",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-mrgn-klasse"
+          ]
+        },
+        "identifier": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "code": "OBI"
+                }
+              ]
+            },
+            "assigner": {
+              "identifier": {
+                "system": "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier",
+                "value": "DIZ-CHA"
+              }
+            },
+            "system": "https://www.charite.de/fhir/sid/test-lab-results",
+            "value": "mrgn-klasse-1"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                "code": "MB"
+              },
+              {
+                "code": "MB",
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0074"
+              },
+              {
+                "code": "26436-6",
+                "system": "http://loinc.org"
+              },
+              {
+                "code": "laboratory",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              },
+              {
+                "code": "18725-2",
+                "system": "http://loinc.org",
+                "display": "Microbiology studies (set)"
+              }
+            ]
+          }
+        ],
+        "subject": {
+          "identifier": {
+            "system": "https://www.charite.de/fhir/sid/patientenidentifikation",
+            "value": "MIKROBIO-TEST-001"
+          },
+          "reference": "Patient/mii-exa-test-data-mikrobio-patient-1"
+        },
+        "encounter": {
+          "identifier": {
+            "system": "https://www.charite.de/fhir/sid/encounter-identifier",
+            "value": "MIKROBIO-ENC-001"
+          },
+          "reference": "Encounter/mii-exa-test-data-mikrobio-encounter-1"
+        },
+        "specimen": {
+          "identifier": {
+            "system": "https://www.charite.de/fhir/sid/Probennummer",
+            "value": "URINE-001"
+          },
+          "reference": "Specimen/mii-exa-test-data-mikrobio-specimen-2"
+        },
+        "device": {
+          "identifier": {
+            "system": "https://www.charite.de/fhir/sid/device-identifier",
+            "value": "VITEK2-001"
+          },
+          "reference": "Device/mii-exa-test-data-mikrobio-device-1"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "99780-9",
+              "display": "Multidrug resistant gram-negative organism classification [Type]"
+            }
+          ]
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "LA33214-0",
+              "system": "http://loinc.org",
+              "display": "2MRGN"
+            }
+          ]
+        },
+        "method": {
+          "coding": [
+            {
+              "code": "700452006",
+              "system": "http://snomed.info/sct",
+              "display": "Susceptibility to antimicrobial"
+            }
+          ]
+        },
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "code": "R",
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "display": "Resistant"
+              }
+            ]
+          }
+        ],
+        "note": [
+          {
+            "text": "2MRGN gemaess KRINKO 2012; Cephalosporin-Resistenz nachgewiesen."
+          }
+        ],
+        "status": "final",
+        "effectiveDateTime": "2026-04-04T11:00:00+02:00",
+        "_effectiveDateTime": {
+          "extension": [
+            {
+              "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "281271004",
+                    "system": "http://snomed.info/sct",
+                    "display": "Date sample collected (observable entity)"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "issued": "2026-04-04T11:30:00+02:00"
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-mikrobio-resistenzmechanismen-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-mikrobio-resistenzmechanismen-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-mikrobio-resistenzmechanismen-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://example.org/fhir/mikrobio-lab-system",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-resistenzmechanismen-determinanten"
+          ]
+        },
+        "identifier": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "code": "OBI"
+                }
+              ]
+            },
+            "assigner": {
+              "identifier": {
+                "system": "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier",
+                "value": "DIZ-CHA"
+              }
+            },
+            "system": "https://www.charite.de/fhir/sid/test-lab-results",
+            "value": "resistenz-1"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                "code": "MB"
+              },
+              {
+                "code": "MB",
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0074"
+              },
+              {
+                "code": "26436-6",
+                "system": "http://loinc.org"
+              },
+              {
+                "code": "laboratory",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              },
+              {
+                "code": "18725-2",
+                "system": "http://loinc.org",
+                "display": "Microbiology studies (set)"
+              }
+            ]
+          }
+        ],
+        "subject": {
+          "identifier": {
+            "system": "https://www.charite.de/fhir/sid/patientenidentifikation",
+            "value": "MIKROBIO-TEST-001"
+          },
+          "reference": "Patient/mii-exa-test-data-mikrobio-patient-1"
+        },
+        "encounter": {
+          "identifier": {
+            "system": "https://www.charite.de/fhir/sid/encounter-identifier",
+            "value": "MIKROBIO-ENC-001"
+          },
+          "reference": "Encounter/mii-exa-test-data-mikrobio-encounter-1"
+        },
+        "specimen": {
+          "identifier": {
+            "system": "https://www.charite.de/fhir/sid/Probennummer",
+            "value": "BLOOD-CULT-001"
+          },
+          "reference": "Specimen/mii-exa-test-data-mikrobio-specimen-1"
+        },
+        "device": {
+          "identifier": {
+            "system": "https://www.charite.de/fhir/sid/device-identifier",
+            "value": "VITEK2-001"
+          },
+          "reference": "Device/mii-exa-test-data-mikrobio-device-1"
+        },
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "observation",
+                "valueReference": {
+                  "reference": "Observation/mii-exa-test-data-mikrobio-spezifische-bestimmung-1"
+                }
+              },
+              {
+                "url": "type",
+                "valueCode": "reflex"
+              }
+            ],
+            "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-Observation.triggeredBy"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "92249-2",
+              "system": "http://loinc.org",
+              "display": "Genetic variation in Specimen by Molecular method"
+            }
+          ]
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "260373001",
+              "system": "http://snomed.info/sct",
+              "display": "Detected (qualifier value)"
+            }
+          ]
+        },
+        "method": {
+          "coding": [
+            {
+              "code": "258066000",
+              "system": "http://snomed.info/sct",
+              "display": "Molecular detection technique"
+            }
+          ]
+        },
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "code": "POS",
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "display": "Positive"
+              }
+            ]
+          }
+        ],
+        "note": [
+          {
+            "text": "mecA-Gen via PCR nachgewiesen."
+          }
+        ],
+        "status": "final",
+        "effectiveDateTime": "2026-04-04T07:00:00+02:00",
+        "_effectiveDateTime": {
+          "extension": [
+            {
+              "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "281271004",
+                    "system": "http://snomed.info/sct",
+                    "display": "Date sample collected (observable entity)"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "issued": "2026-04-04T07:30:00+02:00"
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-mikrobio-virulenzfaktor-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-mikrobio-virulenzfaktor-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-mikrobio-virulenzfaktor-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://example.org/fhir/mikrobio-lab-system",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-virulenzfaktor"
+          ]
+        },
+        "identifier": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "code": "OBI"
+                }
+              ]
+            },
+            "assigner": {
+              "identifier": {
+                "system": "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier",
+                "value": "DIZ-CHA"
+              }
+            },
+            "system": "https://www.charite.de/fhir/sid/test-lab-results",
+            "value": "virulenz-1"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                "code": "MB"
+              },
+              {
+                "code": "MB",
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0074"
+              },
+              {
+                "code": "26436-6",
+                "system": "http://loinc.org"
+              },
+              {
+                "code": "laboratory",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              },
+              {
+                "code": "18725-2",
+                "system": "http://loinc.org",
+                "display": "Microbiology studies (set)"
+              }
+            ]
+          }
+        ],
+        "subject": {
+          "identifier": {
+            "system": "https://www.charite.de/fhir/sid/patientenidentifikation",
+            "value": "MIKROBIO-TEST-001"
+          },
+          "reference": "Patient/mii-exa-test-data-mikrobio-patient-1"
+        },
+        "encounter": {
+          "identifier": {
+            "system": "https://www.charite.de/fhir/sid/encounter-identifier",
+            "value": "MIKROBIO-ENC-001"
+          },
+          "reference": "Encounter/mii-exa-test-data-mikrobio-encounter-1"
+        },
+        "specimen": {
+          "identifier": {
+            "system": "https://www.charite.de/fhir/sid/Probennummer",
+            "value": "BLOOD-CULT-001"
+          },
+          "reference": "Specimen/mii-exa-test-data-mikrobio-specimen-1"
+        },
+        "device": {
+          "identifier": {
+            "system": "https://www.charite.de/fhir/sid/device-identifier",
+            "value": "VITEK2-001"
+          },
+          "reference": "Device/mii-exa-test-data-mikrobio-device-1"
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "87402-4",
+              "system": "http://loinc.org",
+              "display": "Virulence factor [Identifier] in Specimen by Molecular method"
+            }
+          ]
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "260415000",
+              "system": "http://snomed.info/sct",
+              "display": "Not detected (qualifier value)"
+            }
+          ]
+        },
+        "method": {
+          "coding": [
+            {
+              "code": "258066000",
+              "system": "http://snomed.info/sct",
+              "display": "Molecular detection technique"
+            }
+          ]
+        },
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "code": "NEG",
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "display": "Negative"
+              }
+            ]
+          }
+        ],
+        "note": [
+          {
+            "text": "Panton-Valentine-Leukocidin (PVL) nicht nachgewiesen — kein Hinweis auf erhoehte Virulenz."
+          }
+        ],
+        "status": "final",
+        "effectiveDateTime": "2026-04-04T08:00:00+02:00",
+        "_effectiveDateTime": {
+          "extension": [
+            {
+              "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "281271004",
+                    "system": "http://snomed.info/sct",
+                    "display": "Date sample collected (observable entity)"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "issued": "2026-04-04T08:30:00+02:00"
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-mikrobio-antigen-antikoerper-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-mikrobio-antigen-antikoerper-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-mikrobio-antigen-antikoerper-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://example.org/fhir/mikrobio-lab-system",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-antigen-antikoerper-quantitativ"
+          ]
+        },
+        "identifier": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "code": "OBI"
+                }
+              ]
+            },
+            "assigner": {
+              "identifier": {
+                "system": "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier",
+                "value": "DIZ-CHA"
+              }
+            },
+            "system": "https://www.charite.de/fhir/sid/test-lab-results",
+            "value": "antigen-ak-1"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                "code": "MB"
+              },
+              {
+                "code": "MB",
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0074"
+              },
+              {
+                "code": "26436-6",
+                "system": "http://loinc.org"
+              },
+              {
+                "code": "laboratory",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              },
+              {
+                "code": "18725-2",
+                "system": "http://loinc.org",
+                "display": "Microbiology studies (set)"
+              }
+            ]
+          }
+        ],
+        "subject": {
+          "identifier": {
+            "system": "https://www.charite.de/fhir/sid/patientenidentifikation",
+            "value": "MIKROBIO-TEST-001"
+          },
+          "reference": "Patient/mii-exa-test-data-mikrobio-patient-1"
+        },
+        "encounter": {
+          "identifier": {
+            "system": "https://www.charite.de/fhir/sid/encounter-identifier",
+            "value": "MIKROBIO-ENC-001"
+          },
+          "reference": "Encounter/mii-exa-test-data-mikrobio-encounter-1"
+        },
+        "specimen": {
+          "identifier": {
+            "system": "https://www.charite.de/fhir/sid/Probennummer",
+            "value": "BLOOD-CULT-001"
+          },
+          "reference": "Specimen/mii-exa-test-data-mikrobio-specimen-1"
+        },
+        "device": {
+          "identifier": {
+            "system": "https://www.charite.de/fhir/sid/device-identifier",
+            "value": "VITEK2-001"
+          },
+          "reference": "Device/mii-exa-test-data-mikrobio-device-1"
+        },
+        "modifierExtension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/InterpretationsbeeinflussendeEigenschaft",
+            "valueCoding": {
+              "code": "118128002",
+              "system": "http://snomed.info/sct",
+              "display": "Specimen hemolyzed (finding)"
+            }
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "94507-1",
+              "system": "http://loinc.org",
+              "display": "Serotype identifier by immunoassay"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "system": "http://unitsofmeasure.org",
+          "value": 42,
+          "_value": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/quantity-precision",
+                "valueInteger": 1
+              }
+            ]
+          },
+          "comparator": ">",
+          "unit": "[IU]/mL",
+          "code": "[IU]/mL"
+        },
+        "method": {
+          "coding": [
+            {
+              "code": "726449005",
+              "system": "http://snomed.info/sct",
+              "display": "Immunoassay technique (qualifier value)"
+            }
+          ]
+        },
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "code": "H",
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "display": "High"
+              }
+            ]
+          }
+        ],
+        "referenceRange": [
+          {
+            "low": {
+              "value": 0,
+              "unit": "[IU]/mL",
+              "system": "http://unitsofmeasure.org",
+              "code": "[IU]/mL"
+            },
+            "high": {
+              "value": 10,
+              "unit": "[IU]/mL",
+              "system": "http://unitsofmeasure.org",
+              "code": "[IU]/mL"
+            }
+          }
+        ],
+        "note": [
+          {
+            "text": "IgG-Titer erhoeht; Verdachtsdiagnose passt zu durchgemachter Infektion. Haemolyse der Probe beachten!"
+          }
+        ],
+        "status": "final",
+        "effectiveDateTime": "2026-04-05T09:00:00+02:00",
+        "_effectiveDateTime": {
+          "extension": [
+            {
+              "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "281271004",
+                    "system": "http://snomed.info/sct",
+                    "display": "Date sample collected (observable entity)"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "issued": "2026-04-05T10:00:00+02:00"
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-mikrobio-aviditaet-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-mikrobio-aviditaet-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-mikrobio-aviditaet-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://example.org/fhir/mikrobio-lab-system",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-aviditaet"
+          ]
+        },
+        "identifier": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "code": "OBI"
+                }
+              ]
+            },
+            "assigner": {
+              "identifier": {
+                "system": "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier",
+                "value": "DIZ-CHA"
+              }
+            },
+            "system": "https://www.charite.de/fhir/sid/test-lab-results",
+            "value": "aviditaet-1"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                "code": "MB"
+              },
+              {
+                "code": "MB",
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0074"
+              },
+              {
+                "code": "26436-6",
+                "system": "http://loinc.org"
+              },
+              {
+                "code": "laboratory",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              },
+              {
+                "code": "18725-2",
+                "system": "http://loinc.org",
+                "display": "Microbiology studies (set)"
+              }
+            ]
+          }
+        ],
+        "subject": {
+          "identifier": {
+            "system": "https://www.charite.de/fhir/sid/patientenidentifikation",
+            "value": "MIKROBIO-TEST-001"
+          },
+          "reference": "Patient/mii-exa-test-data-mikrobio-patient-1"
+        },
+        "encounter": {
+          "identifier": {
+            "system": "https://www.charite.de/fhir/sid/encounter-identifier",
+            "value": "MIKROBIO-ENC-001"
+          },
+          "reference": "Encounter/mii-exa-test-data-mikrobio-encounter-1"
+        },
+        "specimen": {
+          "identifier": {
+            "system": "https://www.charite.de/fhir/sid/Probennummer",
+            "value": "BLOOD-CULT-001"
+          },
+          "reference": "Specimen/mii-exa-test-data-mikrobio-specimen-1"
+        },
+        "device": {
+          "identifier": {
+            "system": "https://www.charite.de/fhir/sid/device-identifier",
+            "value": "VITEK2-001"
+          },
+          "reference": "Device/mii-exa-test-data-mikrobio-device-1"
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "92657-6",
+              "system": "http://loinc.org",
+              "display": "Antibody avidity mass fraction in Specimen"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "unit": "%",
+          "system": "http://unitsofmeasure.org",
+          "code": "%",
+          "value": 35,
+          "_value": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/quantity-precision",
+                "valueInteger": 0
+              }
+            ]
+          }
+        },
+        "method": {
+          "coding": [
+            {
+              "code": "726449005",
+              "system": "http://snomed.info/sct",
+              "display": "Immunoassay technique"
+            }
+          ]
+        },
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "code": "L",
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "display": "Low"
+              }
+            ]
+          }
+        ],
+        "referenceRange": [
+          {
+            "low": {
+              "value": 40,
+              "unit": "%",
+              "system": "http://unitsofmeasure.org",
+              "code": "%"
+            },
+            "high": {
+              "value": 100,
+              "unit": "%",
+              "system": "http://unitsofmeasure.org",
+              "code": "%"
+            }
+          }
+        ],
+        "note": [
+          {
+            "text": "Niedrige Avidität spricht fuer kuerzlich durchgemachte Infektion."
+          }
+        ],
+        "status": "final",
+        "effectiveDateTime": "2026-04-05T10:30:00+02:00",
+        "_effectiveDateTime": {
+          "extension": [
+            {
+              "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "281271004",
+                    "system": "http://snomed.info/sct",
+                    "display": "Date sample collected (observable entity)"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "issued": "2026-04-05T11:00:00+02:00"
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-mikrobio-titer-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-mikrobio-titer-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-mikrobio-titer-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://example.org/fhir/mikrobio-lab-system",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-titer"
+          ]
+        },
+        "identifier": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "code": "OBI"
+                }
+              ]
+            },
+            "assigner": {
+              "identifier": {
+                "system": "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier",
+                "value": "DIZ-CHA"
+              }
+            },
+            "system": "https://www.charite.de/fhir/sid/test-lab-results",
+            "value": "titer-1"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                "code": "MB"
+              },
+              {
+                "code": "MB",
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0074"
+              },
+              {
+                "code": "26436-6",
+                "system": "http://loinc.org"
+              },
+              {
+                "code": "laboratory",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              },
+              {
+                "code": "18725-2",
+                "system": "http://loinc.org",
+                "display": "Microbiology studies (set)"
+              }
+            ]
+          }
+        ],
+        "subject": {
+          "identifier": {
+            "system": "https://www.charite.de/fhir/sid/patientenidentifikation",
+            "value": "MIKROBIO-TEST-001"
+          },
+          "reference": "Patient/mii-exa-test-data-mikrobio-patient-1"
+        },
+        "encounter": {
+          "identifier": {
+            "system": "https://www.charite.de/fhir/sid/encounter-identifier",
+            "value": "MIKROBIO-ENC-001"
+          },
+          "reference": "Encounter/mii-exa-test-data-mikrobio-encounter-1"
+        },
+        "specimen": {
+          "identifier": {
+            "system": "https://www.charite.de/fhir/sid/Probennummer",
+            "value": "BLOOD-CULT-001"
+          },
+          "reference": "Specimen/mii-exa-test-data-mikrobio-specimen-1"
+        },
+        "device": {
+          "identifier": {
+            "system": "https://www.charite.de/fhir/sid/device-identifier",
+            "value": "VITEK2-001"
+          },
+          "reference": "Device/mii-exa-test-data-mikrobio-device-1"
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "53655-7",
+              "system": "http://loinc.org",
+              "display": "Antibody titer in Serum"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "system": "http://unitsofmeasure.org",
+          "value": 128,
+          "_value": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/quantity-precision",
+                "valueInteger": 0
+              }
+            ]
+          },
+          "unit": "{titer}",
+          "code": "{titer}"
+        },
+        "method": {
+          "coding": [
+            {
+              "code": "708104000",
+              "system": "http://snomed.info/sct",
+              "display": "Serological agglutination"
+            }
+          ]
+        },
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "code": "H",
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "display": "High"
+              }
+            ]
+          }
+        ],
+        "referenceRange": [
+          {
+            "low": {
+              "value": 0,
+              "unit": "{titer}",
+              "system": "http://unitsofmeasure.org",
+              "code": "{titer}"
+            },
+            "high": {
+              "value": 32,
+              "unit": "{titer}",
+              "system": "http://unitsofmeasure.org",
+              "code": "{titer}"
+            }
+          }
+        ],
+        "note": [
+          {
+            "text": "Titerstufe 1:128"
+          }
+        ],
+        "status": "final",
+        "effectiveDateTime": "2026-04-05T11:00:00+02:00",
+        "_effectiveDateTime": {
+          "extension": [
+            {
+              "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "281271004",
+                    "system": "http://snomed.info/sct",
+                    "display": "Date sample collected (observable entity)"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "issued": "2026-04-05T12:00:00+02:00"
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-mikrobio-ct-wert-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-mikrobio-ct-wert-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-mikrobio-ct-wert-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://example.org/fhir/mikrobio-lab-system",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-ct-wert"
+          ]
+        },
+        "identifier": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "code": "OBI"
+                }
+              ]
+            },
+            "assigner": {
+              "identifier": {
+                "system": "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier",
+                "value": "DIZ-CHA"
+              }
+            },
+            "system": "https://www.charite.de/fhir/sid/test-lab-results",
+            "value": "ct-wert-1"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                "code": "MB"
+              },
+              {
+                "code": "MB",
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0074"
+              },
+              {
+                "code": "26436-6",
+                "system": "http://loinc.org"
+              },
+              {
+                "code": "laboratory",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              },
+              {
+                "code": "18725-2",
+                "system": "http://loinc.org",
+                "display": "Microbiology studies (set)"
+              }
+            ]
+          }
+        ],
+        "subject": {
+          "identifier": {
+            "system": "https://www.charite.de/fhir/sid/patientenidentifikation",
+            "value": "MIKROBIO-TEST-001"
+          },
+          "reference": "Patient/mii-exa-test-data-mikrobio-patient-1"
+        },
+        "encounter": {
+          "identifier": {
+            "system": "https://www.charite.de/fhir/sid/encounter-identifier",
+            "value": "MIKROBIO-ENC-001"
+          },
+          "reference": "Encounter/mii-exa-test-data-mikrobio-encounter-1"
+        },
+        "specimen": {
+          "identifier": {
+            "system": "https://www.charite.de/fhir/sid/Probennummer",
+            "value": "BLOOD-CULT-001"
+          },
+          "reference": "Specimen/mii-exa-test-data-mikrobio-specimen-1"
+        },
+        "device": {
+          "identifier": {
+            "system": "https://www.charite.de/fhir/sid/device-identifier",
+            "value": "VITEK2-001"
+          },
+          "reference": "Device/mii-exa-test-data-mikrobio-device-1"
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "74039-9",
+              "system": "http://loinc.org",
+              "display": "Threshold cycle time"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "system": "http://unitsofmeasure.org",
+          "code": "1",
+          "value": 21.3,
+          "_value": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/quantity-precision",
+                "valueInteger": 1
+              }
+            ]
+          },
+          "unit": "1"
+        },
+        "method": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "70601000052104",
+              "display": "Real-time PCR technique"
+            }
+          ]
+        },
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "code": "H",
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "display": "High"
+              }
+            ]
+          }
+        ],
+        "referenceRange": [
+          {
+            "low": {
+              "value": 0,
+              "unit": "1",
+              "system": "http://unitsofmeasure.org",
+              "code": "1"
+            },
+            "high": {
+              "value": 35,
+              "unit": "1",
+              "system": "http://unitsofmeasure.org",
+              "code": "1"
+            }
+          }
+        ],
+        "note": [
+          {
+            "text": "Niedriger CT-Wert (21.3) spricht fuer hohe Erregerlast."
+          }
+        ],
+        "status": "final",
+        "effectiveDateTime": "2026-04-03T17:00:00+02:00",
+        "_effectiveDateTime": {
+          "extension": [
+            {
+              "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "281271004",
+                    "system": "http://snomed.info/sct",
+                    "display": "Date sample collected (observable entity)"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "issued": "2026-04-03T18:00:00+02:00"
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-mikrobio-molekulare-pathogenlast-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-mikrobio-molekulare-pathogenlast-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-mikrobio-molekulare-pathogenlast-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://example.org/fhir/mikrobio-lab-system",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-molekulare-pathogenlast"
+          ]
+        },
+        "identifier": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "code": "OBI"
+                }
+              ]
+            },
+            "assigner": {
+              "identifier": {
+                "system": "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier",
+                "value": "DIZ-CHA"
+              }
+            },
+            "system": "https://www.charite.de/fhir/sid/test-lab-results",
+            "value": "pathogenlast-1"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                "code": "MB"
+              },
+              {
+                "code": "MB",
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0074"
+              },
+              {
+                "code": "26436-6",
+                "system": "http://loinc.org"
+              },
+              {
+                "code": "laboratory",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              },
+              {
+                "code": "18725-2",
+                "system": "http://loinc.org",
+                "display": "Microbiology studies (set)"
+              }
+            ]
+          }
+        ],
+        "subject": {
+          "identifier": {
+            "system": "https://www.charite.de/fhir/sid/patientenidentifikation",
+            "value": "MIKROBIO-TEST-001"
+          },
+          "reference": "Patient/mii-exa-test-data-mikrobio-patient-1"
+        },
+        "encounter": {
+          "identifier": {
+            "system": "https://www.charite.de/fhir/sid/encounter-identifier",
+            "value": "MIKROBIO-ENC-001"
+          },
+          "reference": "Encounter/mii-exa-test-data-mikrobio-encounter-1"
+        },
+        "specimen": {
+          "identifier": {
+            "system": "https://www.charite.de/fhir/sid/Probennummer",
+            "value": "BLOOD-CULT-001"
+          },
+          "reference": "Specimen/mii-exa-test-data-mikrobio-specimen-1"
+        },
+        "device": {
+          "identifier": {
+            "system": "https://www.charite.de/fhir/sid/device-identifier",
+            "value": "VITEK2-001"
+          },
+          "reference": "Device/mii-exa-test-data-mikrobio-device-1"
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "94009-8",
+              "system": "http://loinc.org",
+              "display": "Pathogen RNA copies per volume"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "system": "http://unitsofmeasure.org",
+          "value": 350000,
+          "_value": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/quantity-precision",
+                "valueInteger": 0
+              }
+            ]
+          },
+          "comparator": ">=",
+          "unit": "Copies/mL",
+          "code": "1/mL"
+        },
+        "method": {
+          "coding": [
+            {
+              "code": "70601000052104",
+              "system": "http://snomed.info/sct",
+              "display": "Real-time PCR technique"
+            }
+          ]
+        },
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "code": "H",
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "display": "High"
+              }
+            ]
+          }
+        ],
+        "referenceRange": [
+          {
+            "low": {
+              "value": 0,
+              "unit": "Copies/mL",
+              "system": "http://unitsofmeasure.org",
+              "code": "1/mL"
+            },
+            "high": {
+              "value": 1000,
+              "unit": "Copies/mL",
+              "system": "http://unitsofmeasure.org",
+              "code": "1/mL"
+            }
+          }
+        ],
+        "note": [
+          {
+            "text": "Hohe Pathogenlast — klinische Relevanz mit Behandelndem besprechen."
+          }
+        ],
+        "status": "final",
+        "effectiveDateTime": "2026-04-03T18:00:00+02:00",
+        "_effectiveDateTime": {
+          "extension": [
+            {
+              "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "281271004",
+                    "system": "http://snomed.info/sct",
+                    "display": "Date sample collected (observable entity)"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "issued": "2026-04-03T19:00:00+02:00"
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-mikrobio-barlett-score-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-mikrobio-barlett-score-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-mikrobio-barlett-score-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://example.org/fhir/mikrobio-lab-system",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-barlett-score"
+          ]
+        },
+        "identifier": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "code": "OBI"
+                }
+              ]
+            },
+            "assigner": {
+              "identifier": {
+                "system": "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier",
+                "value": "DIZ-CHA"
+              }
+            },
+            "system": "https://www.charite.de/fhir/sid/test-lab-results",
+            "value": "barlett-1"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                "code": "MB"
+              },
+              {
+                "code": "MB",
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0074"
+              },
+              {
+                "code": "26436-6",
+                "system": "http://loinc.org"
+              },
+              {
+                "code": "laboratory",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              },
+              {
+                "code": "18725-2",
+                "system": "http://loinc.org",
+                "display": "Microbiology studies (set)"
+              }
+            ]
+          }
+        ],
+        "subject": {
+          "identifier": {
+            "system": "https://www.charite.de/fhir/sid/patientenidentifikation",
+            "value": "MIKROBIO-TEST-001"
+          },
+          "reference": "Patient/mii-exa-test-data-mikrobio-patient-1"
+        },
+        "encounter": {
+          "identifier": {
+            "system": "https://www.charite.de/fhir/sid/encounter-identifier",
+            "value": "MIKROBIO-ENC-001"
+          },
+          "reference": "Encounter/mii-exa-test-data-mikrobio-encounter-1"
+        },
+        "specimen": {
+          "identifier": {
+            "system": "https://www.charite.de/fhir/sid/Probennummer",
+            "value": "BLOOD-CULT-001"
+          },
+          "reference": "Specimen/mii-exa-test-data-mikrobio-specimen-1"
+        },
+        "device": {
+          "identifier": {
+            "system": "https://www.charite.de/fhir/sid/device-identifier",
+            "value": "VITEK2-001"
+          },
+          "reference": "Device/mii-exa-test-data-mikrobio-device-1"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "75371-5",
+              "display": "Bartlett quality assessment of sputum smear"
+            }
+          ]
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "LA21390-2",
+              "system": "http://loinc.org",
+              "display": "Good quality sputum sample for culture"
+            }
+          ]
+        },
+        "method": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "702661004",
+              "display": "Microscopy by Gram stain"
+            }
+          ]
+        },
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "code": "N",
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "display": "Normal"
+              }
+            ]
+          }
+        ],
+        "note": [
+          {
+            "text": "Sputum-Probe verwertbar (Barlett-Score positiv)."
+          }
+        ],
+        "status": "final",
+        "effectiveDateTime": "2026-04-02T11:15:00+02:00",
+        "_effectiveDateTime": {
+          "extension": [
+            {
+              "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "281271004",
+                    "system": "http://snomed.info/sct",
+                    "display": "Date sample collected (observable entity)"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "issued": "2026-04-02T11:30:00+02:00"
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-mikrobio-nugent-score-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-mikrobio-nugent-score-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-mikrobio-nugent-score-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://example.org/fhir/mikrobio-lab-system",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-nugent-score"
+          ]
+        },
+        "identifier": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "code": "OBI"
+                }
+              ]
+            },
+            "assigner": {
+              "identifier": {
+                "system": "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier",
+                "value": "DIZ-CHA"
+              }
+            },
+            "system": "https://www.charite.de/fhir/sid/test-lab-results",
+            "value": "nugent-1"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                "code": "MB"
+              },
+              {
+                "code": "MB",
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0074"
+              },
+              {
+                "code": "26436-6",
+                "system": "http://loinc.org"
+              },
+              {
+                "code": "laboratory",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              },
+              {
+                "code": "18725-2",
+                "system": "http://loinc.org",
+                "display": "Microbiology studies (set)"
+              }
+            ]
+          }
+        ],
+        "subject": {
+          "identifier": {
+            "system": "https://www.charite.de/fhir/sid/patientenidentifikation",
+            "value": "MIKROBIO-TEST-001"
+          },
+          "reference": "Patient/mii-exa-test-data-mikrobio-patient-1"
+        },
+        "encounter": {
+          "identifier": {
+            "system": "https://www.charite.de/fhir/sid/encounter-identifier",
+            "value": "MIKROBIO-ENC-001"
+          },
+          "reference": "Encounter/mii-exa-test-data-mikrobio-encounter-1"
+        },
+        "specimen": {
+          "identifier": {
+            "system": "https://www.charite.de/fhir/sid/Probennummer",
+            "value": "BLOOD-CULT-001"
+          },
+          "reference": "Specimen/mii-exa-test-data-mikrobio-specimen-1"
+        },
+        "device": {
+          "identifier": {
+            "system": "https://www.charite.de/fhir/sid/device-identifier",
+            "value": "VITEK2-001"
+          },
+          "reference": "Device/mii-exa-test-data-mikrobio-device-1"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "101433-1",
+              "display": "Nugent score"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "unit": "1",
+          "system": "http://unitsofmeasure.org",
+          "code": "1",
+          "value": 7,
+          "_value": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/quantity-precision",
+                "valueInteger": 0
+              }
+            ]
+          }
+        },
+        "method": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "702661004",
+              "display": "Microscopy by Gram stain (procedure)"
+            }
+          ]
+        },
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "code": "H",
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "display": "High"
+              }
+            ]
+          }
+        ],
+        "referenceRange": [
+          {
+            "low": {
+              "value": 0,
+              "unit": "1",
+              "system": "http://unitsofmeasure.org",
+              "code": "1"
+            },
+            "high": {
+              "value": 3,
+              "unit": "1",
+              "system": "http://unitsofmeasure.org",
+              "code": "1"
+            }
+          }
+        ],
+        "note": [
+          {
+            "text": "Nugent-Score 7 spricht fuer bakterielle Vaginose."
+          }
+        ],
+        "status": "final",
+        "effectiveDateTime": "2026-04-02T11:30:00+02:00",
+        "_effectiveDateTime": {
+          "extension": [
+            {
+              "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "281271004",
+                    "system": "http://snomed.info/sct",
+                    "display": "Date sample collected (observable entity)"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "issued": "2026-04-02T12:00:00+02:00"
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "DiagnosticReport/mii-exa-test-data-mikrobio-diagnostic-report-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/DiagnosticReport/mii-exa-test-data-mikrobio-diagnostic-report-1",
+      "resource": {
+        "resourceType": "DiagnosticReport",
+        "id": "mii-exa-test-data-mikrobio-diagnostic-report-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://example.org/fhir/mikrobio-lab-system",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-diagnostic-report"
+          ]
+        },
+        "identifier": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "code": "FILL"
+                }
+              ]
+            },
+            "assigner": {
+              "identifier": {
+                "system": "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier",
+                "value": "DIZ-CHA"
+              },
+              "reference": "Organization/mii-exa-test-data-mikrobio-organization-lab-1"
+            },
+            "system": "https://www.charite.de/fhir/sid/diagnostic-report",
+            "value": "MIKROBIO-DR-001"
+          }
+        ],
+        "basedOn": [
+          {
+            "identifier": {
+              "system": "https://www.charite.de/fhir/sid/service-request",
+              "value": "MIKROBIO-SR-001"
+            },
+            "reference": "ServiceRequest/mii-exa-test-data-mikrobio-servicerequest-1"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "MB",
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                "display": "Microbiology"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "code": "18725-2",
+                "system": "http://loinc.org",
+                "display": "Microbiology studies (set)"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "26436-6"
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                "code": "LAB"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                "code": "MB"
+              }
+            ]
+          }
+        ],
+        "subject": {
+          "identifier": {
+            "system": "https://www.charite.de/fhir/sid/patientenidentifikation",
+            "value": "MIKROBIO-TEST-001"
+          },
+          "reference": "Patient/mii-exa-test-data-mikrobio-patient-1"
+        },
+        "encounter": {
+          "identifier": {
+            "system": "https://www.charite.de/fhir/sid/encounter-identifier",
+            "value": "MIKROBIO-ENC-001"
+          },
+          "reference": "Encounter/mii-exa-test-data-mikrobio-encounter-1"
+        },
+        "performer": [
+          {
+            "identifier": {
+              "system": "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier",
+              "value": "DIZ-CHA"
+            },
+            "reference": "Organization/mii-exa-test-data-mikrobio-organization-lab-1"
+          }
+        ],
+        "resultsInterpreter": [
+          {
+            "reference": "Organization/mii-exa-test-data-mikrobio-organization-lab-1"
+          }
+        ],
+        "specimen": [
+          {
+            "identifier": {
+              "system": "https://www.charite.de/fhir/sid/Probennummer",
+              "value": "BLOOD-CULT-001"
+            },
+            "reference": "Specimen/mii-exa-test-data-mikrobio-specimen-1"
+          }
+        ],
+        "result": [
+          {
+            "reference": "Observation/mii-exa-test-data-mikrobio-allgemeine-kultur-1"
+          },
+          {
+            "reference": "Observation/mii-exa-test-data-mikrobio-spezifische-bestimmung-1"
+          },
+          {
+            "reference": "Observation/mii-exa-test-data-mikrobio-mikroskopie-1"
+          },
+          {
+            "reference": "Observation/mii-exa-test-data-mikrobio-empfindlichkeit-1"
+          },
+          {
+            "reference": "Observation/mii-exa-test-data-mikrobio-voraussichtliche-empfindlichkeit-1"
+          },
+          {
+            "reference": "Observation/mii-exa-test-data-mikrobio-mre-klasse-1"
+          },
+          {
+            "reference": "Observation/mii-exa-test-data-mikrobio-resistenzmechanismen-1"
+          },
+          {
+            "reference": "Observation/mii-exa-test-data-mikrobio-virulenzfaktor-1"
+          },
+          {
+            "reference": "Observation/mii-exa-test-data-mikrobio-ct-wert-1"
+          },
+          {
+            "reference": "Observation/mii-exa-test-data-mikrobio-molekulare-pathogenlast-1"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "11502-2"
+            },
+            {
+              "code": "11475-1",
+              "system": "http://loinc.org",
+              "display": "Microorganism identified in Blood by Aerobic culture"
+            }
+          ]
+        },
+        "status": "final",
+        "effectiveDateTime": "2026-04-02T08:30:00+02:00",
+        "_effectiveDateTime": {
+          "extension": [
+            {
+              "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "281271004",
+                    "system": "http://snomed.info/sct",
+                    "display": "Date sample collected (observable entity)"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "issued": "2026-04-05T15:00:00+02:00",
+        "conclusion": "Nachweis MRSA in Blutkultur. mecA-positiv, Vancomycin-empfindlich. Empfehlung: Linezolid oder Daptomycin als Reserve. Klinik konsultieren."
+      }
+    }
+  ],
+  "type": "transaction",
+  "timestamp": "2026-04-05T16:00:00+02:00"
+}

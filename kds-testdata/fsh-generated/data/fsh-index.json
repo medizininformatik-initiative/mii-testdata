@@ -56,6 +56,14 @@
     "endLine": 90
   },
   {
+    "outputFile": "Bundle-mii-exa-test-data-bundle-mikrobio-1.json",
+    "fshName": "mii-exa-test-data-bundle-mikrobio-1",
+    "fshType": "Instance",
+    "fshFile": "modul-mikrobio/Bundle.fsh",
+    "startLine": 5,
+    "endLine": 41
+  },
+  {
     "outputFile": "Bundle-mii-exa-test-data-bundle-molgen-1.json",
     "fshName": "mii-exa-test-data-bundle-molgen-1",
     "fshType": "Instance",
@@ -616,6 +624,14 @@
     "endLine": 9
   },
   {
+    "outputFile": "Device-mii-exa-test-data-mikrobio-device-1.json",
+    "fshName": "mii-exa-test-data-mikrobio-device-1",
+    "fshType": "Instance",
+    "fshFile": "modul-mikrobio/Device.fsh",
+    "startLine": 5,
+    "endLine": 14
+  },
+  {
     "outputFile": "Device-mii-exa-test-data-molgen-device-sequencer.json",
     "fshName": "mii-exa-test-data-molgen-device-sequencer",
     "fshType": "Instance",
@@ -662,6 +678,14 @@
     "fshFile": "modul-bildgebung/DiagnosticReport.fsh",
     "startLine": 1,
     "endLine": 19
+  },
+  {
+    "outputFile": "DiagnosticReport-mii-exa-test-data-mikrobio-diagnostic-report-1.json",
+    "fshName": "mii-exa-test-data-mikrobio-diagnostic-report-1",
+    "fshType": "Instance",
+    "fshFile": "modul-mikrobio/DiagnosticReport.fsh",
+    "startLine": 5,
+    "endLine": 51
   },
   {
     "outputFile": "DiagnosticReport-mii-exa-test-data-mtb-molecular-pathology-report-1.json",
@@ -830,6 +854,14 @@
     "fshFile": "modul-icu/Patient.fsh",
     "startLine": 17,
     "endLine": 26
+  },
+  {
+    "outputFile": "Encounter-mii-exa-test-data-mikrobio-encounter-1.json",
+    "fshName": "mii-exa-test-data-mikrobio-encounter-1",
+    "fshType": "Instance",
+    "fshFile": "modul-mikrobio/Patient.fsh",
+    "startLine": 18,
+    "endLine": 29
   },
   {
     "outputFile": "Encounter-mii-exa-test-data-molgen-encounter-1.json",
@@ -2166,6 +2198,158 @@
     "fshFile": "modul-bildgebung/Patient.fsh",
     "startLine": 39,
     "endLine": 47
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-mikrobio-allgemeine-bestimmung-1.json",
+    "fshName": "mii-exa-test-data-mikrobio-allgemeine-bestimmung-1",
+    "fshType": "Instance",
+    "fshFile": "modul-mikrobio/Observation.fsh",
+    "startLine": 97,
+    "endLine": 135
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-mikrobio-allgemeine-kultur-1.json",
+    "fshName": "mii-exa-test-data-mikrobio-allgemeine-kultur-1",
+    "fshType": "Instance",
+    "fshFile": "modul-mikrobio/Observation.fsh",
+    "startLine": 9,
+    "endLine": 46
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-mikrobio-allgemeine-kultur-dar-1.json",
+    "fshName": "mii-exa-test-data-mikrobio-allgemeine-kultur-dar-1",
+    "fshType": "Instance",
+    "fshFile": "modul-mikrobio/Observation.fsh",
+    "startLine": 920,
+    "endLine": 957
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-mikrobio-antigen-antikoerper-1.json",
+    "fshName": "mii-exa-test-data-mikrobio-antigen-antikoerper-1",
+    "fshType": "Instance",
+    "fshFile": "modul-mikrobio/Observation.fsh",
+    "startLine": 536,
+    "endLine": 590
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-mikrobio-aviditaet-1.json",
+    "fshName": "mii-exa-test-data-mikrobio-aviditaet-1",
+    "fshType": "Instance",
+    "fshFile": "modul-mikrobio/Observation.fsh",
+    "startLine": 595,
+    "endLine": 646
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-mikrobio-barlett-score-1.json",
+    "fshName": "mii-exa-test-data-mikrobio-barlett-score-1",
+    "fshType": "Instance",
+    "fshFile": "modul-mikrobio/Observation.fsh",
+    "startLine": 820,
+    "endLine": 858
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-mikrobio-ct-wert-1.json",
+    "fshName": "mii-exa-test-data-mikrobio-ct-wert-1",
+    "fshType": "Instance",
+    "fshFile": "modul-mikrobio/Observation.fsh",
+    "startLine": 707,
+    "endLine": 758
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-mikrobio-empfindlichkeit-1.json",
+    "fshName": "mii-exa-test-data-mikrobio-empfindlichkeit-1",
+    "fshType": "Instance",
+    "fshFile": "modul-mikrobio/Observation.fsh",
+    "startLine": 243,
+    "endLine": 302
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-mikrobio-keimzahl-1.json",
+    "fshName": "mii-exa-test-data-mikrobio-keimzahl-1",
+    "fshType": "Instance",
+    "fshFile": "modul-mikrobio/Observation.fsh",
+    "startLine": 184,
+    "endLine": 238
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-mikrobio-mikroskopie-1.json",
+    "fshName": "mii-exa-test-data-mikrobio-mikroskopie-1",
+    "fshType": "Instance",
+    "fshFile": "modul-mikrobio/Observation.fsh",
+    "startLine": 140,
+    "endLine": 179
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-mikrobio-molekulare-pathogenlast-1.json",
+    "fshName": "mii-exa-test-data-mikrobio-molekulare-pathogenlast-1",
+    "fshType": "Instance",
+    "fshFile": "modul-mikrobio/Observation.fsh",
+    "startLine": 763,
+    "endLine": 815
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-mikrobio-mre-klasse-1.json",
+    "fshName": "mii-exa-test-data-mikrobio-mre-klasse-1",
+    "fshType": "Instance",
+    "fshFile": "modul-mikrobio/Observation.fsh",
+    "startLine": 354,
+    "endLine": 396
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-mikrobio-mrgn-klasse-1.json",
+    "fshName": "mii-exa-test-data-mikrobio-mrgn-klasse-1",
+    "fshType": "Instance",
+    "fshFile": "modul-mikrobio/Observation.fsh",
+    "startLine": 401,
+    "endLine": 438
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-mikrobio-nugent-score-1.json",
+    "fshName": "mii-exa-test-data-mikrobio-nugent-score-1",
+    "fshType": "Instance",
+    "fshFile": "modul-mikrobio/Observation.fsh",
+    "startLine": 863,
+    "endLine": 914
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-mikrobio-resistenzmechanismen-1.json",
+    "fshName": "mii-exa-test-data-mikrobio-resistenzmechanismen-1",
+    "fshType": "Instance",
+    "fshFile": "modul-mikrobio/Observation.fsh",
+    "startLine": 443,
+    "endLine": 487
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-mikrobio-spezifische-bestimmung-1.json",
+    "fshName": "mii-exa-test-data-mikrobio-spezifische-bestimmung-1",
+    "fshType": "Instance",
+    "fshFile": "modul-mikrobio/Observation.fsh",
+    "startLine": 51,
+    "endLine": 92
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-mikrobio-titer-1.json",
+    "fshName": "mii-exa-test-data-mikrobio-titer-1",
+    "fshType": "Instance",
+    "fshFile": "modul-mikrobio/Observation.fsh",
+    "startLine": 651,
+    "endLine": 702
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-mikrobio-virulenzfaktor-1.json",
+    "fshName": "mii-exa-test-data-mikrobio-virulenzfaktor-1",
+    "fshType": "Instance",
+    "fshFile": "modul-mikrobio/Observation.fsh",
+    "startLine": 492,
+    "endLine": 531
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-mikrobio-voraussichtliche-empfindlichkeit-1.json",
+    "fshName": "mii-exa-test-data-mikrobio-voraussichtliche-empfindlichkeit-1",
+    "fshType": "Instance",
+    "fshFile": "modul-mikrobio/Observation.fsh",
+    "startLine": 307,
+    "endLine": 349
   },
   {
     "outputFile": "Observation-mii-exa-test-data-mtb-biomarker-her2-status-1.json",
@@ -4112,6 +4296,14 @@
     "endLine": 57
   },
   {
+    "outputFile": "Organization-mii-exa-test-data-mikrobio-organization-lab-1.json",
+    "fshName": "mii-exa-test-data-mikrobio-organization-lab-1",
+    "fshType": "Instance",
+    "fshFile": "modul-mikrobio/Patient.fsh",
+    "startLine": 31,
+    "endLine": 39
+  },
+  {
     "outputFile": "Organization-mii-exa-test-data-organization-biobank-charite.json",
     "fshName": "mii-exa-test-data-organization-biobank-charite",
     "fshType": "Instance",
@@ -4230,6 +4422,14 @@
     "fshFile": "modul-icu/Patient.fsh",
     "startLine": 5,
     "endLine": 15
+  },
+  {
+    "outputFile": "Patient-mii-exa-test-data-mikrobio-patient-1.json",
+    "fshName": "mii-exa-test-data-mikrobio-patient-1",
+    "fshType": "Instance",
+    "fshFile": "modul-mikrobio/Patient.fsh",
+    "startLine": 6,
+    "endLine": 16
   },
   {
     "outputFile": "Patient-mii-exa-test-data-molgen-patient-1.json",
@@ -4872,6 +5072,14 @@
     "endLine": 17
   },
   {
+    "outputFile": "ServiceRequest-mii-exa-test-data-mikrobio-servicerequest-1.json",
+    "fshName": "mii-exa-test-data-mikrobio-servicerequest-1",
+    "fshType": "Instance",
+    "fshFile": "modul-mikrobio/Device.fsh",
+    "startLine": 16,
+    "endLine": 28
+  },
+  {
     "outputFile": "ServiceRequest-mii-exa-test-data-mtb-biopsie-auftrag-1.json",
     "fshName": "mii-exa-test-data-mtb-biopsie-auftrag-1",
     "fshType": "Instance",
@@ -5038,6 +5246,22 @@
     "fshFile": "modul-studien/ServiceRequest.fsh",
     "startLine": 2,
     "endLine": 16
+  },
+  {
+    "outputFile": "Specimen-mii-exa-test-data-mikrobio-specimen-1.json",
+    "fshName": "mii-exa-test-data-mikrobio-specimen-1",
+    "fshType": "Instance",
+    "fshFile": "modul-mikrobio/Specimen.fsh",
+    "startLine": 5,
+    "endLine": 16
+  },
+  {
+    "outputFile": "Specimen-mii-exa-test-data-mikrobio-specimen-2.json",
+    "fshName": "mii-exa-test-data-mikrobio-specimen-2",
+    "fshType": "Instance",
+    "fshFile": "modul-mikrobio/Specimen.fsh",
+    "startLine": 18,
+    "endLine": 28
   },
   {
     "outputFile": "Specimen-mii-exa-test-data-molgen-specimen-1.json",

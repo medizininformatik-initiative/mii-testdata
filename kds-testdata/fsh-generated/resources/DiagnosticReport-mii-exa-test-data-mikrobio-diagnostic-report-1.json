@@ -1,0 +1,189 @@
+{
+  "resourceType": "DiagnosticReport",
+  "id": "mii-exa-test-data-mikrobio-diagnostic-report-1",
+  "meta": {
+    "security": [
+      {
+        "code": "HTEST",
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "display": "test health data"
+      }
+    ],
+    "source": "https://example.org/fhir/mikrobio-lab-system",
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-diagnostic-report"
+    ]
+  },
+  "identifier": [
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "FILL"
+          }
+        ]
+      },
+      "assigner": {
+        "identifier": {
+          "system": "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier",
+          "value": "DIZ-CHA"
+        },
+        "reference": "Organization/mii-exa-test-data-mikrobio-organization-lab-1"
+      },
+      "system": "https://www.charite.de/fhir/sid/diagnostic-report",
+      "value": "MIKROBIO-DR-001"
+    }
+  ],
+  "basedOn": [
+    {
+      "identifier": {
+        "system": "https://www.charite.de/fhir/sid/service-request",
+        "value": "MIKROBIO-SR-001"
+      },
+      "reference": "ServiceRequest/mii-exa-test-data-mikrobio-servicerequest-1"
+    }
+  ],
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "MB",
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "display": "Microbiology"
+        }
+      ]
+    },
+    {
+      "coding": [
+        {
+          "code": "18725-2",
+          "system": "http://loinc.org",
+          "display": "Microbiology studies (set)"
+        }
+      ]
+    },
+    {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "26436-6"
+        },
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "LAB"
+        }
+      ]
+    },
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "MB"
+        }
+      ]
+    }
+  ],
+  "subject": {
+    "identifier": {
+      "system": "https://www.charite.de/fhir/sid/patientenidentifikation",
+      "value": "MIKROBIO-TEST-001"
+    },
+    "reference": "Patient/mii-exa-test-data-mikrobio-patient-1"
+  },
+  "encounter": {
+    "identifier": {
+      "system": "https://www.charite.de/fhir/sid/encounter-identifier",
+      "value": "MIKROBIO-ENC-001"
+    },
+    "reference": "Encounter/mii-exa-test-data-mikrobio-encounter-1"
+  },
+  "performer": [
+    {
+      "identifier": {
+        "system": "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier",
+        "value": "DIZ-CHA"
+      },
+      "reference": "Organization/mii-exa-test-data-mikrobio-organization-lab-1"
+    }
+  ],
+  "resultsInterpreter": [
+    {
+      "reference": "Organization/mii-exa-test-data-mikrobio-organization-lab-1"
+    }
+  ],
+  "specimen": [
+    {
+      "identifier": {
+        "system": "https://www.charite.de/fhir/sid/Probennummer",
+        "value": "BLOOD-CULT-001"
+      },
+      "reference": "Specimen/mii-exa-test-data-mikrobio-specimen-1"
+    }
+  ],
+  "result": [
+    {
+      "reference": "Observation/mii-exa-test-data-mikrobio-allgemeine-kultur-1"
+    },
+    {
+      "reference": "Observation/mii-exa-test-data-mikrobio-spezifische-bestimmung-1"
+    },
+    {
+      "reference": "Observation/mii-exa-test-data-mikrobio-mikroskopie-1"
+    },
+    {
+      "reference": "Observation/mii-exa-test-data-mikrobio-empfindlichkeit-1"
+    },
+    {
+      "reference": "Observation/mii-exa-test-data-mikrobio-voraussichtliche-empfindlichkeit-1"
+    },
+    {
+      "reference": "Observation/mii-exa-test-data-mikrobio-mre-klasse-1"
+    },
+    {
+      "reference": "Observation/mii-exa-test-data-mikrobio-resistenzmechanismen-1"
+    },
+    {
+      "reference": "Observation/mii-exa-test-data-mikrobio-virulenzfaktor-1"
+    },
+    {
+      "reference": "Observation/mii-exa-test-data-mikrobio-ct-wert-1"
+    },
+    {
+      "reference": "Observation/mii-exa-test-data-mikrobio-molekulare-pathogenlast-1"
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "11502-2"
+      },
+      {
+        "code": "11475-1",
+        "system": "http://loinc.org",
+        "display": "Microorganism identified in Blood by Aerobic culture"
+      }
+    ]
+  },
+  "status": "final",
+  "effectiveDateTime": "2026-04-02T08:30:00+02:00",
+  "_effectiveDateTime": {
+    "extension": [
+      {
+        "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "281271004",
+              "system": "http://snomed.info/sct",
+              "display": "Date sample collected (observable entity)"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "issued": "2026-04-05T15:00:00+02:00",
+  "conclusion": "Nachweis MRSA in Blutkultur. mecA-positiv, Vancomycin-empfindlich. Empfehlung: Linezolid oder Daptomycin als Reserve. Klinik konsultieren."
+}
