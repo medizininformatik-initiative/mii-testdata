@@ -36,6 +36,13 @@
   "component": [
     {
       "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "C184941",
+            "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+            "display": "PD-L1 Tumor Proportion Score"
+          }
+        ],
         "text": "PD-L1 Tumor Proportion Score"
       },
       "code": {

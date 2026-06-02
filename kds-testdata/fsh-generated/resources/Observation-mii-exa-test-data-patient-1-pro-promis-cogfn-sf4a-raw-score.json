@@ -31,6 +31,13 @@
     "value": 15
   },
   "method": {
+    "coding": [
+      {
+        "code": "promis-cognitive-function-sf4a",
+        "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue",
+        "display": "PROMIS Cognitive Function Abilities 4a Short Form Questionnaire"
+      }
+    ],
     "text": "PROMIS Cognitive Function SF 4a"
   },
   "referenceRange": [

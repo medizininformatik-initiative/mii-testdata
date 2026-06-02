@@ -25,7 +25,8 @@ Description: "Observation: Therapeutische Implikation fuer BRAF-Mutation"
 * component[medication-assessed][2].code = $loinc#51963-7 "Medication assessed [ID]"
 * component[medication-assessed][2].valueCodeableConcept = $atc#L01EE "Mitogen-aktivierte Proteinkinase (MEK)-Inhibitoren"
 * component[evidence-level].code = $loinc#93044-6 "Level of evidence"
-* component[evidence-level].valueCodeableConcept.text = "Tier I - Level A (FDA-approved therapy)"
+* component[evidence-level].valueCodeableConcept.coding = $loinc#LA30200-2 "Very strong evidence pathogenic"
+* component[evidence-level].valueCodeableConcept.text = "Tier I - Level A (AMP/ASCO/CAP, FDA-approved therapy)"
 // code inherited from profile pattern (loinc#81259-4)
 * component[phenotypic-treatment-context].valueCodeableConcept = $sct#447886005 "Adenocarcinoma of anorectum (disorder)"
 
@@ -53,7 +54,8 @@ Description: "Observation: Therapeutische Implikation fuer EGFR L858R bei NSCLC 
 * component[medication-assessed][0].valueCodeableConcept.coding[0] = $atc#L01EB04 "Osimertinib"
 * component[medication-assessed][0].valueCodeableConcept.text = "Osimertinib (Tagrisso)"
 * component[evidence-level].code = $loinc#93044-6 "Level of evidence"
-* component[evidence-level].valueCodeableConcept.text = "Tier I - Level A (EMA/FDA-zugelassen, FLAURA)"
+* component[evidence-level].valueCodeableConcept.coding = $loinc#LA30200-2 "Very strong evidence pathogenic"
+* component[evidence-level].valueCodeableConcept.text = "Tier I - Level A (AMP/ASCO/CAP, EMA/FDA-zugelassen, FLAURA)"
 // code inherited from profile pattern (loinc#81259-4)
 * component[phenotypic-treatment-context].valueCodeableConcept = $sct#254637007 "Non-small cell lung cancer"
 
@@ -78,8 +80,10 @@ Description: "Observation: Therapeutische Implikation fuer EGFR Exon-20-Insertio
 * component[conclusion-string].code = $tbd-codes-cs#conclusion-string
 * component[conclusion-string].valueString = "Nachweis einer EGFR-Exon-20-Insertion p.(Ala767_Val769dup). Diese Variante zeigt primaere Resistenz gegenueber gaengigen EGFR-TKIs (inkl. Osimertinib). Amivantamab (Rybrevant) ist EMA-zugelassen nach Versagen platinbasierter Chemotherapie (2L). Einsatz in der Erstlinie (PAPILLON-Schema: Amivantamab + Carboplatin/Pemetrexed) derzeit in Deutschland off-label."
 * component[medication-assessed][0].code = $loinc#51963-7 "Medication assessed [ID]"
+* component[medication-assessed][0].valueCodeableConcept.coding = $atc#L01FX18 "Amivantamab"
 * component[medication-assessed][0].valueCodeableConcept.text = "Amivantamab (Rybrevant) - EGFR/MET bispezifischer Antikoerper"
 * component[evidence-level].code = $loinc#93044-6 "Level of evidence"
-* component[evidence-level].valueCodeableConcept.text = "Tier I - Level B (EMA-zugelassen 2L; 1L off-label, PAPILLON-Studie)"
+* component[evidence-level].valueCodeableConcept.coding = $loinc#LA30201-0 "Strong evidence pathogenic"
+* component[evidence-level].valueCodeableConcept.text = "Tier I - Level B (AMP/ASCO/CAP, EMA-zugelassen 2L; 1L off-label, PAPILLON-Studie)"
 // code inherited from profile pattern (loinc#81259-4)
 * component[phenotypic-treatment-context].valueCodeableConcept = $sct#254637007 "Non-small cell lung cancer"

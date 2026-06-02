@@ -2373,6 +2373,14 @@
           ]
         },
         "code": {
+          "coding": [
+            {
+              "system": "http://fhir.de/CodeSystem/bfarm/atc",
+              "code": "L01DB01",
+              "version": "2023",
+              "display": "Doxorubicin"
+            }
+          ],
           "text": "Infusion bestehend aus 85mg Doxorubicin aufgeloest zur Verabreichung in 250ml 5-%iger (50 mg/ml) Glucose-Infusionsloesung"
         },
         "ingredient": [

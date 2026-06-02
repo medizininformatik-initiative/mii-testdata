@@ -27,6 +27,13 @@
   "investigation": [
     {
       "code": {
+        "coding": [
+          {
+            "code": "271336007",
+            "system": "http://snomed.info/sct",
+            "display": "Examination / signs"
+          }
+        ],
         "text": "Klinische Untersuchung und Bildgebung"
       },
       "item": [

@@ -16,7 +16,7 @@ Description: "Observation: Mutationslast (TMB) fuer BRAF-Mutation"
 * valueQuantity = 12 $ucum#1/1000000{Base} "Mutations/Megabase"
 * specimen = Reference(mii-exa-test-data-molgen-specimen-1)
 * derivedFrom = Reference(mii-exa-test-data-patient-3-molgen-variante-1)
-* component[gene-studied].code = $loinc#48018-6 "Gene studied [ID]"
-* component[gene-studied].valueCodeableConcept.text = "Panel-basiert (alle Gene)"
+// gene-studied bewusst weggelassen: TMB ist panel-basiert (alle Gene), kein einzelnes Gen
 // code inherited from profile pattern (tbd-codes-cs#biomarker-category)
+* component[biomarker-category].valueCodeableConcept.coding = $ncit#C150128 "Tumor Mutation Burden"
 * component[biomarker-category].valueCodeableConcept.text = "Tumor Mutational Burden"

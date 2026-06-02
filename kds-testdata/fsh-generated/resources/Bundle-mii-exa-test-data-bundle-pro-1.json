@@ -392,6 +392,13 @@
           }
         ],
         "method": {
+          "coding": [
+            {
+              "code": "44249-1",
+              "system": "http://loinc.org",
+              "display": "PHQ-9 quick depression assessment panel [Reported.PHQ]"
+            }
+          ],
           "text": "PHQ-9 Self-Report Questionnaire"
         },
         "note": [
@@ -992,6 +999,13 @@
           "value": 53.7
         },
         "method": {
+          "coding": [
+            {
+              "code": "promis-promis29",
+              "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue",
+              "display": "PROMIS-29 Questionnaire"
+            }
+          ],
           "text": "PROMIS-29 Profile v2.1"
         },
         "interpretation": [
@@ -1069,6 +1083,13 @@
           "value": 55.1
         },
         "method": {
+          "coding": [
+            {
+              "code": "promis-promis29",
+              "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue",
+              "display": "PROMIS-29 Questionnaire"
+            }
+          ],
           "text": "PROMIS-29 Profile v2.1"
         },
         "derivedFrom": [
@@ -1126,6 +1147,13 @@
           "value": 58.3
         },
         "method": {
+          "coding": [
+            {
+              "code": "promis-promis29",
+              "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue",
+              "display": "PROMIS-29 Questionnaire"
+            }
+          ],
           "text": "PROMIS-29 Profile v2.1"
         },
         "derivedFrom": [
@@ -1183,6 +1211,13 @@
           "value": 3
         },
         "method": {
+          "coding": [
+            {
+              "code": "promis-promis29",
+              "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue",
+              "display": "PROMIS-29 Questionnaire"
+            }
+          ],
           "text": "PROMIS-29 Profile v2.1 - Pain Intensity single item"
         },
         "interpretation": [
@@ -1252,6 +1287,13 @@
           "value": 52.4
         },
         "method": {
+          "coding": [
+            {
+              "code": "promis-promis29",
+              "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue",
+              "display": "PROMIS-29 Questionnaire"
+            }
+          ],
           "text": "PROMIS-29 Profile v2.1"
         },
         "derivedFrom": [
@@ -1309,6 +1351,13 @@
           "value": 48.2
         },
         "method": {
+          "coding": [
+            {
+              "code": "promis-promis29",
+              "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue",
+              "display": "PROMIS-29 Questionnaire"
+            }
+          ],
           "text": "PROMIS-29 Profile v2.1"
         },
         "derivedFrom": [
@@ -1366,6 +1415,13 @@
           "value": 56.8
         },
         "method": {
+          "coding": [
+            {
+              "code": "promis-promis29",
+              "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue",
+              "display": "PROMIS-29 Questionnaire"
+            }
+          ],
           "text": "PROMIS-29 Profile v2.1"
         },
         "derivedFrom": [
@@ -1423,6 +1479,13 @@
           "value": 44.9
         },
         "method": {
+          "coding": [
+            {
+              "code": "promis-promis29",
+              "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue",
+              "display": "PROMIS-29 Questionnaire"
+            }
+          ],
           "text": "PROMIS-29 Profile v2.1"
         },
         "derivedFrom": [
@@ -1491,6 +1554,13 @@
           "value": 15
         },
         "method": {
+          "coding": [
+            {
+              "code": "promis-cognitive-function-sf4a",
+              "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue",
+              "display": "PROMIS Cognitive Function Abilities 4a Short Form Questionnaire"
+            }
+          ],
           "text": "PROMIS Cognitive Function SF 4a"
         },
         "referenceRange": [
@@ -1590,6 +1660,13 @@
           "value": 54.1
         },
         "method": {
+          "coding": [
+            {
+              "code": "promis-cognitive-function-sf4a",
+              "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue",
+              "display": "PROMIS Cognitive Function Abilities 4a Short Form Questionnaire"
+            }
+          ],
           "text": "PROMIS Cognitive Function SF 4a"
         },
         "interpretation": [

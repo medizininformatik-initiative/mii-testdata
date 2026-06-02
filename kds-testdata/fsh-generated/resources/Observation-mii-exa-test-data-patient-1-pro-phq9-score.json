@@ -48,6 +48,13 @@
     }
   ],
   "method": {
+    "coding": [
+      {
+        "code": "44249-1",
+        "system": "http://loinc.org",
+        "display": "PHQ-9 quick depression assessment panel [Reported.PHQ]"
+      }
+    ],
     "text": "PHQ-9 Self-Report Questionnaire"
   },
   "note": [

@@ -789,6 +789,13 @@
           }
         ],
         "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "rs113488022",
+              "system": "http://www.ncbi.nlm.nih.gov/projects/SNP",
+              "display": "BRAF V600E (c.1799T>A)"
+            }
+          ],
           "text": "BRAF rs113488022 T>A"
         },
         "derivedFrom": [
@@ -1257,7 +1264,14 @@
           },
           {
             "valueCodeableConcept": {
-              "text": "Tier I - Level A"
+              "coding": [
+                {
+                  "code": "LA30200-2",
+                  "system": "http://loinc.org",
+                  "display": "Very strong evidence pathogenic"
+                }
+              ],
+              "text": "Tier I - Level A (AMP/ASCO/CAP)"
             },
             "code": {
               "coding": [
@@ -1271,6 +1285,13 @@
           },
           {
             "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "HP:0001442",
+                  "system": "http://human-phenotype-ontology.org",
+                  "display": "Typified by somatic mosaicism"
+                }
+              ],
               "text": "Somatisch erworben"
             },
             "code": {
@@ -1429,7 +1450,14 @@
           },
           {
             "valueCodeableConcept": {
-              "text": "Tier I - Level A (FDA-approved therapy)"
+              "coding": [
+                {
+                  "code": "LA30200-2",
+                  "system": "http://loinc.org",
+                  "display": "Very strong evidence pathogenic"
+                }
+              ],
+              "text": "Tier I - Level A (AMP/ASCO/CAP, FDA-approved therapy)"
             },
             "code": {
               "coding": [
@@ -1530,20 +1558,13 @@
         "component": [
           {
             "valueCodeableConcept": {
-              "text": "Panel-basiert (alle Gene)"
-            },
-            "code": {
               "coding": [
                 {
-                  "system": "http://loinc.org",
-                  "code": "48018-6",
-                  "display": "Gene studied [ID]"
+                  "code": "C150128",
+                  "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+                  "display": "Tumor Mutation Burden"
                 }
-              ]
-            }
-          },
-          {
-            "valueCodeableConcept": {
+              ],
               "text": "Tumor Mutational Burden"
             },
             "code": {
@@ -1634,20 +1655,13 @@
         "component": [
           {
             "valueCodeableConcept": {
-              "text": "MSI-Panel (5 Marker)"
-            },
-            "code": {
               "coding": [
                 {
-                  "system": "http://loinc.org",
-                  "code": "48018-6",
-                  "display": "Gene studied [ID]"
+                  "code": "C36318",
+                  "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+                  "display": "Microsatellite Instability"
                 }
-              ]
-            }
-          },
-          {
-            "valueCodeableConcept": {
+              ],
               "text": "Microsatellite Instability"
             },
             "code": {
@@ -2046,6 +2060,13 @@
         "component": [
           {
             "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "C184941",
+                  "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+                  "display": "PD-L1 Tumor Proportion Score"
+                }
+              ],
               "text": "PD-L1 Tumor Proportion Score"
             },
             "code": {
@@ -3752,7 +3773,14 @@
           },
           {
             "valueCodeableConcept": {
-              "text": "Tier I - Level A (EMA/FDA-zugelassen, FLAURA)"
+              "coding": [
+                {
+                  "code": "LA30200-2",
+                  "system": "http://loinc.org",
+                  "display": "Very strong evidence pathogenic"
+                }
+              ],
+              "text": "Tier I - Level A (AMP/ASCO/CAP, EMA/FDA-zugelassen, FLAURA)"
             },
             "code": {
               "coding": [
@@ -4147,6 +4175,13 @@
           },
           {
             "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "L01FX18",
+                  "system": "http://fhir.de/CodeSystem/bfarm/atc",
+                  "display": "Amivantamab"
+                }
+              ],
               "text": "Amivantamab (Rybrevant) - EGFR/MET bispezifischer Antikoerper"
             },
             "code": {
@@ -4161,7 +4196,14 @@
           },
           {
             "valueCodeableConcept": {
-              "text": "Tier I - Level B (EMA-zugelassen 2L; 1L off-label, PAPILLON-Studie)"
+              "coding": [
+                {
+                  "code": "LA30201-0",
+                  "system": "http://loinc.org",
+                  "display": "Strong evidence pathogenic"
+                }
+              ],
+              "text": "Tier I - Level B (AMP/ASCO/CAP, EMA-zugelassen 2L; 1L off-label, PAPILLON-Studie)"
             },
             "code": {
               "coding": [

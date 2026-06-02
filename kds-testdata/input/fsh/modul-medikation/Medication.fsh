@@ -58,6 +58,7 @@ Usage: #example
 Description: "Medication: Rezeptur Doxorubicin"
 * insert TestDataLabel
 //* meta.profile = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication"
+* code.coding[atcClassDe] = $atc|2023#L01DB01 "Doxorubicin"
 * code.text = "Infusion bestehend aus 85mg Doxorubicin aufgeloest zur Verabreichung in 250ml 5-%iger (50 mg/ml) Glucose-Infusionsloesung"
 * form = $standardterms#11210000 "Solution for infusion"
 * ingredient[0].isActive = true

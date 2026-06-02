@@ -19,7 +19,8 @@ Description: "ClinicalImpression: Rare disease assessment - all MS elements popu
 * date = "2025-03-10"
 * summary = "Patient mit V.a. Marfan-Syndrom vorgestellt. Aortenwurzeldilatation und Linsensubluxation nachgewiesen. Ghent-Kriterien erfuellt. Genetische Testung veranlasst."
 * problem[+] = Reference(mii-exa-test-data-patient-3-seltene-clinical-diagnosis-1)
-* investigation[+].code.text = "Klinische Untersuchung und Bildgebung"
+* investigation[+].code.coding = $sct#271336007 "Examination / signs"
+* investigation[=].code.text = "Klinische Untersuchung und Bildgebung"
 * investigation[=].item[+] = Reference(mii-exa-test-data-patient-3-seltene-hpo-assessment-1)
 * investigation[=].item[+] = Reference(mii-exa-test-data-patient-3-seltene-hpo-assessment-3)
 * investigation[=].item[+] = Reference(mii-exa-test-data-patient-3-seltene-hpo-assessment-4)

@@ -83,7 +83,14 @@
     },
     {
       "valueCodeableConcept": {
-        "text": "Tier I - Level A (EMA/FDA-zugelassen, FLAURA)"
+        "coding": [
+          {
+            "code": "LA30200-2",
+            "system": "http://loinc.org",
+            "display": "Very strong evidence pathogenic"
+          }
+        ],
+        "text": "Tier I - Level A (AMP/ASCO/CAP, EMA/FDA-zugelassen, FLAURA)"
       },
       "code": {
         "coding": [

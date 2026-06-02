@@ -34,6 +34,13 @@
     }
   ],
   "valueCodeableConcept": {
+    "coding": [
+      {
+        "code": "rs113488022",
+        "system": "http://www.ncbi.nlm.nih.gov/projects/SNP",
+        "display": "BRAF V600E (c.1799T>A)"
+      }
+    ],
     "text": "BRAF rs113488022 T>A"
   },
   "derivedFrom": [

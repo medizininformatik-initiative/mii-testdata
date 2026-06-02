@@ -157,6 +157,12 @@
       "id": "hl7_fhir_uv_sdc"
     },
     {
+      "packageId": "hl7.fhir.uv.xver-r5.r4",
+      "version": "0.1.0",
+      "uri": "http://hl7.org/fhir/uv/xver/ImplementationGuide/hl7.fhir.uv.xver-r5.r4",
+      "id": "hl7_fhir_uv_xver_r5_r4"
+    },
+    {
       "packageId": "de.basisprofil.r4",
       "version": "1.5.4",
       "uri": "http://fhir.org/packages/de.basisprofil.r4/ImplementationGuide/de.basisprofil.r4",
@@ -456,7 +462,7 @@
           "reference": "Condition/mii-exa-test-data-biobank-diagnose-1"
         },
         "name": "mii-exa-test-data-biobank-diagnose-1",
-        "description": "Biobank Diagnose Patient 1",
+        "description": "Biobank Diagnose Patient 1: Kolonkarzinom",
         "exampleBoolean": true
       },
       {

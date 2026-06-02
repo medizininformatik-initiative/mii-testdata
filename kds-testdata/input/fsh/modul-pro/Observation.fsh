@@ -29,6 +29,7 @@ Description: "PRO Observation: PHQ-9 Score for Patient 1 (mild depression, score
 * valueQuantity.code = #{score}
 * interpretation = $v3-ObservationInterpretation#L "Low"
 * interpretation.text = "Mild depression (5-9)"
+* method.coding = $loinc#44249-1 "PHQ-9 quick depression assessment panel [Reported.PHQ]"
 * method.text = "PHQ-9 Self-Report Questionnaire"
 * note[+].text = "Patient completed questionnaire independently during outpatient visit"
 * derivedFrom = Reference(mii-exa-test-data-patient-1-pro-phq9-response)
@@ -240,6 +241,7 @@ Description: "PRO Observation: PROMIS-29 Anxiety T-Score for Patient 1"
 * valueQuantity.unit = "{score}"
 * valueQuantity.system = $ucum
 * valueQuantity.code = #{score}
+* method.coding = $pro-qc#promis-promis29 "PROMIS-29 Questionnaire"
 * method.text = "PROMIS-29 Profile v2.1"
 * interpretation = $v3-ObservationInterpretation#N "Normal"
 * interpretation.text = "Within normal limits"
@@ -266,6 +268,7 @@ Description: "PRO Observation: PROMIS-29 Depression T-Score for Patient 1"
 * valueQuantity.unit = "{score}"
 * valueQuantity.system = $ucum
 * valueQuantity.code = #{score}
+* method.coding = $pro-qc#promis-promis29 "PROMIS-29 Questionnaire"
 * method.text = "PROMIS-29 Profile v2.1"
 * derivedFrom = Reference(mii-exa-test-data-patient-1-pro-phq9-response)
 * extension[instantiatesCanonical].url = "http://hl7.org/fhir/StructureDefinition/workflow-instantiatesCanonical"
@@ -289,6 +292,7 @@ Description: "PRO Observation: PROMIS-29 Fatigue T-Score for Patient 1"
 * valueQuantity.unit = "{score}"
 * valueQuantity.system = $ucum
 * valueQuantity.code = #{score}
+* method.coding = $pro-qc#promis-promis29 "PROMIS-29 Questionnaire"
 * method.text = "PROMIS-29 Profile v2.1"
 * derivedFrom = Reference(mii-exa-test-data-patient-1-pro-phq9-response)
 * extension[instantiatesCanonical].url = "http://hl7.org/fhir/StructureDefinition/workflow-instantiatesCanonical"
@@ -313,6 +317,7 @@ Description: "PRO Observation: PROMIS-29 Pain Intensity for Patient 1"
 * valueQuantity.unit = "1"
 * valueQuantity.system = $ucum
 * valueQuantity.code = #1
+* method.coding = $pro-qc#promis-promis29 "PROMIS-29 Questionnaire"
 * method.text = "PROMIS-29 Profile v2.1 - Pain Intensity single item"
 * interpretation = $v3-ObservationInterpretation#N "Normal"
 * interpretation.text = "Mild pain"
@@ -338,6 +343,7 @@ Description: "PRO Observation: PROMIS-29 Pain Interference T-Score for Patient 1
 * valueQuantity.unit = "{score}"
 * valueQuantity.system = $ucum
 * valueQuantity.code = #{score}
+* method.coding = $pro-qc#promis-promis29 "PROMIS-29 Questionnaire"
 * method.text = "PROMIS-29 Profile v2.1"
 * derivedFrom = Reference(mii-exa-test-data-patient-1-pro-phq9-response)
 * extension[instantiatesCanonical].url = "http://hl7.org/fhir/StructureDefinition/workflow-instantiatesCanonical"
@@ -361,6 +367,7 @@ Description: "PRO Observation: PROMIS-29 Physical Function T-Score for Patient 1
 * valueQuantity.unit = "{score}"
 * valueQuantity.system = $ucum
 * valueQuantity.code = #{score}
+* method.coding = $pro-qc#promis-promis29 "PROMIS-29 Questionnaire"
 * method.text = "PROMIS-29 Profile v2.1"
 * derivedFrom = Reference(mii-exa-test-data-patient-1-pro-phq9-response)
 * extension[instantiatesCanonical].url = "http://hl7.org/fhir/StructureDefinition/workflow-instantiatesCanonical"
@@ -384,6 +391,7 @@ Description: "PRO Observation: PROMIS-29 Sleep Disturbance T-Score for Patient 1
 * valueQuantity.unit = "{score}"
 * valueQuantity.system = $ucum
 * valueQuantity.code = #{score}
+* method.coding = $pro-qc#promis-promis29 "PROMIS-29 Questionnaire"
 * method.text = "PROMIS-29 Profile v2.1"
 * derivedFrom = Reference(mii-exa-test-data-patient-1-pro-phq9-response)
 * extension[instantiatesCanonical].url = "http://hl7.org/fhir/StructureDefinition/workflow-instantiatesCanonical"
@@ -407,6 +415,7 @@ Description: "PRO Observation: PROMIS-29 Social Function T-Score for Patient 1"
 * valueQuantity.unit = "{score}"
 * valueQuantity.system = $ucum
 * valueQuantity.code = #{score}
+* method.coding = $pro-qc#promis-promis29 "PROMIS-29 Questionnaire"
 * method.text = "PROMIS-29 Profile v2.1"
 * derivedFrom = Reference(mii-exa-test-data-patient-1-pro-phq9-response)
 * extension[instantiatesCanonical].url = "http://hl7.org/fhir/StructureDefinition/workflow-instantiatesCanonical"
@@ -436,6 +445,7 @@ Description: "PRO Observation: PROMIS Cognitive Function SF4a Raw Score for Pati
 * valueQuantity.unit = "{score}"
 * valueQuantity.system = $ucum
 * valueQuantity.code = #{score}
+* method.coding = $pro-qc#promis-cognitive-function-sf4a "PROMIS Cognitive Function Abilities 4a Short Form Questionnaire"
 * method.text = "PROMIS Cognitive Function SF 4a"
 * referenceRange[+].low.value = 4
 * referenceRange[=].high.value = 20
@@ -471,6 +481,7 @@ Description: "PRO Observation: PROMIS Cognitive Function SF4a T-Score for Patien
 * valueQuantity.unit = "{score}"
 * valueQuantity.system = $ucum
 * valueQuantity.code = #{score}
+* method.coding = $pro-qc#promis-cognitive-function-sf4a "PROMIS Cognitive Function Abilities 4a Short Form Questionnaire"
 * method.text = "PROMIS Cognitive Function SF 4a"
 * interpretation = $v3-ObservationInterpretation#N "Normal"
 * interpretation.text = "Cognitive function within normal limits"
