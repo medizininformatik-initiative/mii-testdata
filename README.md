@@ -6,6 +6,8 @@ or non MII compliant testdata for performance testing.
 ## kds-testdata
 The project generates MII core data set (CDS) compliant data in order to test the functionality of the CDS modules.
 
+Refer to https://github.com/medizininformatik-initiative/mii-testdata/tree/main/kds-testdata
+
 ## excel2fhir
 excel2fhir converts structured Excel workbooks into synthetic FHIR R4 test data bundles. It is intended for creating coherent, referenced test data in the context of the German Medical Informatics Initiative (MII) Kerndatensatz.
 
