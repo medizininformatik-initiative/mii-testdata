@@ -6,6 +6,8 @@ or non MII compliant testdata for performance testing.
 ## kds-testdata
 The project generates MII core data set (CDS) compliant data in order to test the functionality of the CDS modules.
 
+Generated KDS test data is available as ndjson via [release assets](https://github.com/medizininformatik-initiative/mii-testdata/releases).
+
 Refer to https://github.com/medizininformatik-initiative/mii-testdata/tree/main/kds-testdata
 
 ## excel2fhir
