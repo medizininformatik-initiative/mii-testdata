@@ -21,3 +21,8 @@ Refer to https://github.com/medizininformatik-initiative/excel2fhir
 This project allows for the generation of synthetic patient data using the patient data generator [Synthea](https://github.com/synthetichealth/synthea). Generated data is transformed in order to conform to the [KDS Profiles](https://simplifier.net/organization/koordinationsstellemii/~home) provided by the Medical Informatics Initiative (MII). 
 
 Refer to https://github.com/life-research/Synthea-MII-KDS
+
+## musterdatenspende-diz
+The test data provided here reflects the technical heterogeneity of data from various data centers for potential users, enabling realistic application testing, particularly for distributed analyses. The data is typically generated through the data centers’ ETL processes.
+ 
+Refer to https://github.com/medizininformatik-initiative/musterdatenspende-diz 
