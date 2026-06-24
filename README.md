@@ -14,7 +14,15 @@ excel2fhir converts structured Excel workbooks into synthetic FHIR R4 test data 
 
 The input is an Excel workbook with predefined sheets for patients, encounters, diagnoses, procedures, observations, medication, clinical documentation and conversion options. The generator splits the workbook into intermediate CSV files and then creates FHIR resources and bundles.
 
+Test data generated using excel2fhir is located in the ‘kerndatensatz-testdaten’ repository. See the following section.
+
 Refer to https://github.com/medizininformatik-initiative/excel2fhir
+
+## kerndatensatz-testdaten
+
+This repository contains test data generated using excel2fhir (see the section above). The test data is organised into packages containing up to 1,000 patients, or individual patients with up to 1,000 transaction bundles, in the form of JSON (ZIP) and ndjson files.
+
+Refer to https://github.com/medizininformatik-initiative/kerndatensatz-testdaten
 
 ## SyntheaKDS
 This project allows for the generation of synthetic patient data using the patient data generator [Synthea](https://github.com/synthetichealth/synthea). Generated data is transformed in order to conform to the [CDS Profiles](https://simplifier.net/organization/koordinationsstellemii/~home) provided by the MII. 
