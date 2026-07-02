@@ -1,0 +1,35 @@
+{
+  "resourceType": "Specimen",
+  "id": "mii-exa-test-data-mikrobio-specimen-2",
+  "meta": {
+    "security": [
+      {
+        "code": "HTEST",
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "display": "test health data"
+      }
+    ]
+  },
+  "identifier": [
+    {
+      "system": "https://www.charite.de/fhir/sid/Probennummer",
+      "value": "URINE-001"
+    }
+  ],
+  "collection": {
+    "collectedDateTime": "2026-04-02T09:00:00+02:00"
+  },
+  "status": "available",
+  "type": {
+    "coding": [
+      {
+        "code": "122575003",
+        "system": "http://snomed.info/sct",
+        "display": "Urine specimen (specimen)"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/mii-exa-test-data-mikrobio-patient-1"
+  }
+}

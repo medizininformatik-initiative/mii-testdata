@@ -1,0 +1,167 @@
+{
+  "resourceType": "Observation",
+  "id": "mii-exa-test-data-mikrobio-resistenzmechanismen-1",
+  "meta": {
+    "security": [
+      {
+        "code": "HTEST",
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "display": "test health data"
+      }
+    ],
+    "source": "https://example.org/fhir/mikrobio-lab-system",
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-resistenzmechanismen-determinanten"
+    ]
+  },
+  "identifier": [
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "OBI"
+          }
+        ]
+      },
+      "assigner": {
+        "identifier": {
+          "system": "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier",
+          "value": "DIZ-CHA"
+        }
+      },
+      "system": "https://www.charite.de/fhir/sid/test-lab-results",
+      "value": "resistenz-1"
+    }
+  ],
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "MB"
+        },
+        {
+          "code": "26436-6",
+          "system": "http://loinc.org"
+        },
+        {
+          "code": "laboratory",
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+        },
+        {
+          "code": "18725-2",
+          "system": "http://loinc.org",
+          "display": "Microbiology studies (set)"
+        }
+      ]
+    }
+  ],
+  "subject": {
+    "identifier": {
+      "system": "https://www.charite.de/fhir/sid/patientenidentifikation",
+      "value": "MIKROBIO-TEST-001"
+    },
+    "reference": "Patient/mii-exa-test-data-mikrobio-patient-1"
+  },
+  "encounter": {
+    "identifier": {
+      "system": "https://www.charite.de/fhir/sid/encounter-identifier",
+      "value": "MIKROBIO-ENC-001"
+    },
+    "reference": "Encounter/mii-exa-test-data-mikrobio-encounter-1"
+  },
+  "specimen": {
+    "identifier": {
+      "system": "https://www.charite.de/fhir/sid/Probennummer",
+      "value": "BLOOD-CULT-001"
+    },
+    "reference": "Specimen/mii-exa-test-data-mikrobio-specimen-1"
+  },
+  "device": {
+    "identifier": {
+      "system": "https://www.charite.de/fhir/sid/device-identifier",
+      "value": "PCR-CYCLER-001"
+    },
+    "reference": "Device/mii-exa-test-data-mikrobio-device-pcr-1"
+  },
+  "extension": [
+    {
+      "extension": [
+        {
+          "url": "observation",
+          "valueReference": {
+            "reference": "Observation/mii-exa-test-data-mikrobio-spezifische-bestimmung-1"
+          }
+        },
+        {
+          "url": "type",
+          "valueCode": "reflex"
+        }
+      ],
+      "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-Observation.triggeredBy"
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "code": "48813-0",
+        "system": "http://loinc.org",
+        "display": "Methicillin resistance mecA gene [Presence] by Molecular method"
+      }
+    ]
+  },
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "code": "260373001",
+        "system": "http://snomed.info/sct",
+        "display": "Detected (qualifier value)"
+      }
+    ]
+  },
+  "method": {
+    "coding": [
+      {
+        "code": "708068002",
+        "system": "http://snomed.info/sct",
+        "display": "Molecular genetics technique (qualifier value)"
+      }
+    ]
+  },
+  "interpretation": [
+    {
+      "coding": [
+        {
+          "code": "POS",
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "display": "Positive"
+        }
+      ]
+    }
+  ],
+  "note": [
+    {
+      "text": "mecA-Gen via PCR nachgewiesen."
+    }
+  ],
+  "status": "final",
+  "effectiveDateTime": "2026-04-04T07:00:00+02:00",
+  "_effectiveDateTime": {
+    "extension": [
+      {
+        "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "281271004",
+              "system": "http://snomed.info/sct",
+              "display": "Date sample collected (observable entity)"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "issued": "2026-04-04T07:30:00+02:00"
+}
