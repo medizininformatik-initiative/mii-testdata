@@ -10,7 +10,7 @@
       }
     ],
     "profile": [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-koerpergewicht"
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/koerpergewicht"
     ]
   },
   "category": [
@@ -29,11 +29,6 @@
         "system": "http://loinc.org",
         "code": "29463-7",
         "display": "Body weight"
-      },
-      {
-        "system": "http://loinc.org",
-        "code": "8339-4",
-        "display": "Birth weight Measured"
       },
       {
         "system": "http://snomed.info/sct",

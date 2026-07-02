@@ -10,7 +10,7 @@
       }
     ],
     "profile": [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-arterieller-blutdruck"
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/arterieller-blutdruck"
     ]
   },
   "category": [
@@ -64,7 +64,7 @@
         "system": "http://unitsofmeasure.org",
         "code": "mm[Hg]",
         "value": 120,
-        "unit": "mmHg"
+        "unit": "millimeter Mercury column"
       }
     },
     {
@@ -88,7 +88,7 @@
         "system": "http://unitsofmeasure.org",
         "code": "mm[Hg]",
         "value": 80,
-        "unit": "mmHg"
+        "unit": "millimeter Mercury column"
       }
     }
   ],

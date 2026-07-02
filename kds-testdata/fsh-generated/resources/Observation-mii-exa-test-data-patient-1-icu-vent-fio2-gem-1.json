@@ -10,7 +10,7 @@
       }
     ],
     "profile": [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-inspiratorische-sauerstofffraktion-gemessen"
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/inspiratorische-sauerstofffraktion-gemessen"
     ]
   },
   "partOf": [
@@ -43,15 +43,15 @@
       }
     ]
   },
+  "valueQuantity": {
+    "system": "http://unitsofmeasure.org",
+    "value": 0.42,
+    "code": "%",
+    "unit": "percent"
+  },
   "status": "final",
   "subject": {
     "reference": "Patient/mii-exa-test-data-icu-patient-1"
   },
-  "effectiveDateTime": "2024-02-15T14:30:00+01:00",
-  "valueQuantity": {
-    "value": 0.42,
-    "code": "%",
-    "system": "http://unitsofmeasure.org",
-    "unit": "percent"
-  }
+  "effectiveDateTime": "2024-02-15T14:30:00+01:00"
 }

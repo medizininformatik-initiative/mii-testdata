@@ -208,6 +208,7 @@
     }
   ],
   "status": "available",
+  "started": "2024-07-19T12:03:30+02:00",
   "subject": {
     "reference": "Patient/mii-exa-test-data-bildgebung-patient-1"
   },
