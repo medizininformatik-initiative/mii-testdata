@@ -42,10 +42,6 @@
           "code": "MB"
         },
         {
-          "code": "MB",
-          "system": "http://terminology.hl7.org/CodeSystem/v2-0074"
-        },
-        {
           "code": "26436-6",
           "system": "http://loinc.org"
         },
@@ -85,9 +81,9 @@
   "device": {
     "identifier": {
       "system": "https://www.charite.de/fhir/sid/device-identifier",
-      "value": "VITEK2-001"
+      "value": "PCR-CYCLER-001"
     },
-    "reference": "Device/mii-exa-test-data-mikrobio-device-1"
+    "reference": "Device/mii-exa-test-data-mikrobio-device-pcr-1"
   },
   "modifierExtension": [
     {
@@ -119,19 +115,18 @@
   "code": {
     "coding": [
       {
-        "code": "94009-8",
-        "system": "http://loinc.org"
+        "code": "66719-6",
+        "system": "http://loinc.org",
+        "display": "Adenovirus DNA [Log #/volume] (viral load) in Urine by NAA with probe detection"
       }
     ]
   },
-  "valueCodeableConcept": {
-    "coding": [
-      {
-        "code": "260373001",
-        "system": "http://snomed.info/sct",
-        "display": "Detected (qualifier value)"
-      }
-    ]
+  "valueQuantity": {
+    "system": "http://unitsofmeasure.org",
+    "value": 5000,
+    "comparator": ">=",
+    "unit": "Copies/mL",
+    "code": "1/mL"
   },
   "method": {
     "coding": [

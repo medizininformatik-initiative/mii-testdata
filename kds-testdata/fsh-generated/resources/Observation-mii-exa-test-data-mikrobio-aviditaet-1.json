@@ -42,10 +42,6 @@
           "code": "MB"
         },
         {
-          "code": "MB",
-          "system": "http://terminology.hl7.org/CodeSystem/v2-0074"
-        },
-        {
           "code": "26436-6",
           "system": "http://loinc.org"
         },
@@ -85,16 +81,16 @@
   "device": {
     "identifier": {
       "system": "https://www.charite.de/fhir/sid/device-identifier",
-      "value": "VITEK2-001"
+      "value": "IMMUNOASSAY-001"
     },
-    "reference": "Device/mii-exa-test-data-mikrobio-device-1"
+    "reference": "Device/mii-exa-test-data-mikrobio-device-immunoassay-1"
   },
   "code": {
     "coding": [
       {
-        "code": "92657-6",
+        "code": "56990-5",
         "system": "http://loinc.org",
-        "display": "Antibody avidity mass fraction in Specimen"
+        "display": "Toxoplasma gondii IgG Ab avidity [Ratio] in Serum by Immunoassay"
       }
     ]
   },
@@ -102,15 +98,7 @@
     "unit": "%",
     "system": "http://unitsofmeasure.org",
     "code": "%",
-    "value": 35,
-    "_value": {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/StructureDefinition/quantity-precision",
-          "valueInteger": 0
-        }
-      ]
-    },
+    "value": 14,
     "comparator": "<"
   },
   "method": {

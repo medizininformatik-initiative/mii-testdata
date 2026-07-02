@@ -42,10 +42,6 @@
           "code": "MB"
         },
         {
-          "code": "MB",
-          "system": "http://terminology.hl7.org/CodeSystem/v2-0074"
-        },
-        {
           "code": "26436-6",
           "system": "http://loinc.org"
         },
@@ -85,15 +81,16 @@
   "device": {
     "identifier": {
       "system": "https://www.charite.de/fhir/sid/device-identifier",
-      "value": "VITEK2-001"
+      "value": "PCR-CYCLER-001"
     },
-    "reference": "Device/mii-exa-test-data-mikrobio-device-1"
+    "reference": "Device/mii-exa-test-data-mikrobio-device-pcr-1"
   },
   "code": {
     "coding": [
       {
-        "code": "92249-2",
-        "system": "http://loinc.org"
+        "code": "72891-5",
+        "system": "http://loinc.org",
+        "display": "Staphylococcus protein A spa gene [Presence] in Isolate or Specimen by NAA with probe detection"
       }
     ]
   },
@@ -109,7 +106,7 @@
   "method": {
     "coding": [
       {
-        "code": "258066000",
+        "code": "708068002",
         "system": "http://snomed.info/sct"
       }
     ]

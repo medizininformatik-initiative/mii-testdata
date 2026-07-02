@@ -42,10 +42,6 @@
           "code": "MB"
         },
         {
-          "code": "MB",
-          "system": "http://terminology.hl7.org/CodeSystem/v2-0074"
-        },
-        {
           "code": "26436-6",
           "system": "http://loinc.org"
         },
@@ -85,16 +81,16 @@
   "device": {
     "identifier": {
       "system": "https://www.charite.de/fhir/sid/device-identifier",
-      "value": "VITEK2-001"
+      "value": "PCR-CYCLER-001"
     },
-    "reference": "Device/mii-exa-test-data-mikrobio-device-1"
+    "reference": "Device/mii-exa-test-data-mikrobio-device-pcr-1"
   },
   "code": {
     "coding": [
       {
-        "code": "87402-4",
+        "code": "48816-3",
         "system": "http://loinc.org",
-        "display": "Virulence factor [Identifier] in Specimen by Molecular method"
+        "display": "Staphylococcus aureus Panton-Valentine leukocidin gene [Presence] in Isolate or Specimen by Molecular genetics method"
       }
     ]
   },
@@ -110,9 +106,9 @@
   "method": {
     "coding": [
       {
-        "code": "258066000",
+        "code": "70601000052104",
         "system": "http://snomed.info/sct",
-        "display": "Molecular detection technique"
+        "display": "Real-time polymerase chain reaction technique (qualifier value)"
       }
     ]
   },

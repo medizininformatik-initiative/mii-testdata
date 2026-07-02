@@ -18,7 +18,6 @@ Description: "Mikrobio Diagnostic Report: Blutkultur + Antibiogramm + MRSA-Befun
 * basedOn[=].identifier.system = "https://www.charite.de/fhir/sid/service-request"
 * basedOn[=].identifier.value = "MIKROBIO-SR-001"
 * status = #final
-* category[+] = $v2-0074#MB "Microbiology"
 * category[+] = $loinc#18725-2 "Microbiology studies (set)"
 * code = $loinc#11475-1 "Microorganism identified in Blood by Aerobic culture"
 * subject = Reference(mii-exa-test-data-mikrobio-patient-1)

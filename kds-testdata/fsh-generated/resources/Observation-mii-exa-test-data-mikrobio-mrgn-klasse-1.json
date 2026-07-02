@@ -42,10 +42,6 @@
           "code": "MB"
         },
         {
-          "code": "MB",
-          "system": "http://terminology.hl7.org/CodeSystem/v2-0074"
-        },
-        {
           "code": "26436-6",
           "system": "http://loinc.org"
         },
@@ -82,13 +78,6 @@
     },
     "reference": "Specimen/mii-exa-test-data-mikrobio-specimen-2"
   },
-  "device": {
-    "identifier": {
-      "system": "https://www.charite.de/fhir/sid/device-identifier",
-      "value": "VITEK2-001"
-    },
-    "reference": "Device/mii-exa-test-data-mikrobio-device-1"
-  },
   "code": {
     "coding": [
       {
@@ -101,35 +90,15 @@
   "valueCodeableConcept": {
     "coding": [
       {
-        "code": "LA33214-0",
+        "code": "LA33215-7",
         "system": "http://loinc.org",
-        "display": "2MRGN"
+        "display": "3MRGN"
       }
     ]
   },
-  "method": {
-    "coding": [
-      {
-        "code": "700452006",
-        "system": "http://snomed.info/sct",
-        "display": "Susceptibility to antimicrobial"
-      }
-    ]
-  },
-  "interpretation": [
-    {
-      "coding": [
-        {
-          "code": "R",
-          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
-          "display": "Resistant"
-        }
-      ]
-    }
-  ],
   "note": [
     {
-      "text": "2MRGN gemaess KRINKO 2012; Cephalosporin-Resistenz nachgewiesen."
+      "text": "3MRGN gemaess KRINKO 2012; Cephalosporin, Acylureidopenicilline, Fluorchinolone -Resistenz nachgewiesen."
     }
   ],
   "status": "final",

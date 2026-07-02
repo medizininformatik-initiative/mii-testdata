@@ -42,10 +42,6 @@
           "code": "MB"
         },
         {
-          "code": "MB",
-          "system": "http://terminology.hl7.org/CodeSystem/v2-0074"
-        },
-        {
           "code": "26436-6",
           "system": "http://loinc.org"
         },
@@ -82,13 +78,6 @@
     },
     "reference": "Specimen/mii-exa-test-data-mikrobio-specimen-1"
   },
-  "device": {
-    "identifier": {
-      "system": "https://www.charite.de/fhir/sid/device-identifier",
-      "value": "VITEK2-001"
-    },
-    "reference": "Device/mii-exa-test-data-mikrobio-device-1"
-  },
   "modifierExtension": [
     {
       "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/InterpretationsbeeinflussendeEigenschaft",
@@ -119,26 +108,25 @@
   "code": {
     "coding": [
       {
-        "code": "29576-6",
-        "system": "http://loinc.org"
+        "code": "100045-4",
+        "system": "http://loinc.org",
+        "display": "Cefozopran [Susceptibility]"
       }
     ]
   },
-  "valueCodeableConcept": {
-    "coding": [
-      {
-        "code": "260373001",
-        "system": "http://snomed.info/sct",
-        "display": "Detected (qualifier value)"
-      }
-    ]
+  "valueQuantity": {
+    "system": "http://unitsofmeasure.org",
+    "value": 8,
+    "comparator": ">",
+    "unit": "mg/L",
+    "code": "mg/L"
   },
   "method": {
     "coding": [
       {
-        "code": "700461007",
+        "code": "708073008",
         "system": "http://snomed.info/sct",
-        "display": "Antimicrobial susceptibility by MIC technique"
+        "display": "Minimum inhibitory concentration susceptibility test technique (qualifier value)"
       }
     ]
   },

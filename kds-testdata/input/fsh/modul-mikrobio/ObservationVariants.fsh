@@ -15,7 +15,6 @@ Description: "Mikrobio: allgemeine-bestimmung — Alt-Variante zur MS-Coverage"
 * identifier[analyseBefundCode].assigner.identifier.system = "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"
 * identifier[analyseBefundCode].assigner.identifier.value = "DIZ-CHA"
 * status = #final
-* category[mibi-category].coding[v2-microbiology] = $v2-0074#MB
 * category[mibi-category].coding[loinc-observation] = $loinc#26436-6
 * category[mibi-category].coding[observation-category] = $observation-category#laboratory
 * category[mibi-category].coding[loinc-microbiology-studies] = $loinc#18725-2 "Microbiology studies (set)"
@@ -32,9 +31,6 @@ Description: "Mikrobio: allgemeine-bestimmung — Alt-Variante zur MS-Coverage"
 * specimen = Reference(mii-exa-test-data-mikrobio-specimen-1)
 * specimen.identifier.system = "https://www.charite.de/fhir/sid/Probennummer"
 * specimen.identifier.value = "BLOOD-CULT-001"
-* device = Reference(mii-exa-test-data-mikrobio-device-1)
-* device.identifier.system = "https://www.charite.de/fhir/sid/device-identifier"
-* device.identifier.value = "VITEK2-001"
 * modifierExtension[interpretationsbeeinflussendeEigenschaft].url = "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/InterpretationsbeeinflussendeEigenschaft"
 * modifierExtension[interpretationsbeeinflussendeEigenschaft].valueCoding = $sct#118127007 "Specimen lipemic (finding)"
 * extension[+].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-Observation.triggeredBy"
@@ -43,23 +39,9 @@ Description: "Mikrobio: allgemeine-bestimmung — Alt-Variante zur MS-Coverage"
 * extension[=].extension[+].url = "type"
 * extension[=].extension[=].valueCode = #repeat
 * code.coding = $loinc#41852-5
-* valueQuantity.value = 1
-* valueQuantity.value.extension[+].url = "http://hl7.org/fhir/StructureDefinition/quantity-precision"
-* valueQuantity.value.extension[=].valueInteger = 0
-* valueQuantity.comparator = #>=
-* valueQuantity.unit = "1"
-* valueQuantity.system = $ucum
-* valueQuantity.code = #1
-* referenceRange.low.value = 0
-* referenceRange.low.unit = "1"
-* referenceRange.low.system = $ucum
-* referenceRange.low.code = #1
-* referenceRange.high.value = 10
-* referenceRange.high.unit = "1"
-* referenceRange.high.system = $ucum
-* referenceRange.high.code = #1
+* valueCodeableConcept.coding = $sct#260373001 "Detected (qualifier value)"
 * method.coding = $sct#278289002
-* method.coding.display = "Microscopy (procedure)"
+* method.coding.display = "Microscopy technique (qualifier value)"
 * interpretation = $v3-ObservationInterpretation#A "Abnormal"
 * note[+].text = "Alt-Variante zur MS-Coverage (allgemeine-bestimmung)"
 
@@ -76,7 +58,6 @@ Description: "Mikrobio: allgemeine-bestimmung — Probe nicht auswertbar (dataAb
 * identifier[analyseBefundCode].assigner.identifier.system = "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"
 * identifier[analyseBefundCode].assigner.identifier.value = "DIZ-CHA"
 * status = #final
-* category[mibi-category].coding[v2-microbiology] = $v2-0074#MB
 * category[mibi-category].coding[loinc-observation] = $loinc#26436-6
 * category[mibi-category].coding[observation-category] = $observation-category#laboratory
 * category[mibi-category].coding[loinc-microbiology-studies] = $loinc#18725-2 "Microbiology studies (set)"
@@ -93,9 +74,6 @@ Description: "Mikrobio: allgemeine-bestimmung — Probe nicht auswertbar (dataAb
 * specimen = Reference(mii-exa-test-data-mikrobio-specimen-1)
 * specimen.identifier.system = "https://www.charite.de/fhir/sid/Probennummer"
 * specimen.identifier.value = "BLOOD-CULT-001"
-* device = Reference(mii-exa-test-data-mikrobio-device-1)
-* device.identifier.system = "https://www.charite.de/fhir/sid/device-identifier"
-* device.identifier.value = "VITEK2-001"
 * code.coding = $loinc#41852-5
 * dataAbsentReason.coding = $data-absent-reason#unknown "Unknown"
 * method.coding = $sct#278289002
@@ -115,7 +93,6 @@ Description: "Mikrobio: allgemeine-kultur — Alt-Variante zur MS-Coverage"
 * identifier[analyseBefundCode].assigner.identifier.system = "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"
 * identifier[analyseBefundCode].assigner.identifier.value = "DIZ-CHA"
 * status = #final
-* category[mibi-category].coding[v2-microbiology] = $v2-0074#MB
 * category[mibi-category].coding[loinc-observation] = $loinc#26436-6
 * category[mibi-category].coding[observation-category] = $observation-category#laboratory
 * category[mibi-category].coding[loinc-microbiology-studies] = $loinc#18725-2 "Microbiology studies (set)"
@@ -132,9 +109,6 @@ Description: "Mikrobio: allgemeine-kultur — Alt-Variante zur MS-Coverage"
 * specimen = Reference(mii-exa-test-data-mikrobio-specimen-1)
 * specimen.identifier.system = "https://www.charite.de/fhir/sid/Probennummer"
 * specimen.identifier.value = "BLOOD-CULT-001"
-* device = Reference(mii-exa-test-data-mikrobio-device-1)
-* device.identifier.system = "https://www.charite.de/fhir/sid/device-identifier"
-* device.identifier.value = "VITEK2-001"
 * modifierExtension[interpretationsbeeinflussendeEigenschaft].url = "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/InterpretationsbeeinflussendeEigenschaft"
 * modifierExtension[interpretationsbeeinflussendeEigenschaft].valueCoding = $sct#118127007 "Specimen lipemic (finding)"
 * extension[+].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-Observation.triggeredBy"
@@ -143,23 +117,9 @@ Description: "Mikrobio: allgemeine-kultur — Alt-Variante zur MS-Coverage"
 * extension[=].extension[+].url = "type"
 * extension[=].extension[=].valueCode = #repeat
 * code.coding = $loinc#11475-1
-* valueQuantity.value = 1
-* valueQuantity.value.extension[+].url = "http://hl7.org/fhir/StructureDefinition/quantity-precision"
-* valueQuantity.value.extension[=].valueInteger = 0
-* valueQuantity.comparator = #>=
-* valueQuantity.unit = "1"
-* valueQuantity.system = $ucum
-* valueQuantity.code = #1
-* referenceRange.low.value = 0
-* referenceRange.low.unit = "1"
-* referenceRange.low.system = $ucum
-* referenceRange.low.code = #1
-* referenceRange.high.value = 10
-* referenceRange.high.unit = "1"
-* referenceRange.high.system = $ucum
-* referenceRange.high.code = #1
+* valueCodeableConcept.coding = $sct#264868006 "No growth (qualifier value)"
 * method.coding = $sct#703750006
-* method.coding.display = "Bacterial culture (procedure)"
+* method.coding.display = "Aerobic culture technique (qualifier value)"
 * interpretation = $v3-ObservationInterpretation#A "Abnormal"
 * note[+].text = "Alt-Variante zur MS-Coverage (allgemeine-kultur)"
 
@@ -176,7 +136,6 @@ Description: "Mikrobio: antigen-antikoerper-quantitativ — Alt-Variante zur MS-
 * identifier[analyseBefundCode].assigner.identifier.system = "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"
 * identifier[analyseBefundCode].assigner.identifier.value = "DIZ-CHA"
 * status = #final
-* category[mibi-category].coding[v2-microbiology] = $v2-0074#MB
 * category[mibi-category].coding[loinc-observation] = $loinc#26436-6
 * category[mibi-category].coding[observation-category] = $observation-category#laboratory
 * category[mibi-category].coding[loinc-microbiology-studies] = $loinc#18725-2 "Microbiology studies (set)"
@@ -193,9 +152,9 @@ Description: "Mikrobio: antigen-antikoerper-quantitativ — Alt-Variante zur MS-
 * specimen = Reference(mii-exa-test-data-mikrobio-specimen-1)
 * specimen.identifier.system = "https://www.charite.de/fhir/sid/Probennummer"
 * specimen.identifier.value = "BLOOD-CULT-001"
-* device = Reference(mii-exa-test-data-mikrobio-device-1)
+* device = Reference(mii-exa-test-data-mikrobio-device-immunoassay-1)
 * device.identifier.system = "https://www.charite.de/fhir/sid/device-identifier"
-* device.identifier.value = "VITEK2-001"
+* device.identifier.value = "IMMUNOASSAY-001"
 * modifierExtension[interpretationsbeeinflussendeEigenschaft].url = "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/InterpretationsbeeinflussendeEigenschaft"
 * modifierExtension[interpretationsbeeinflussendeEigenschaft].valueCoding = $sct#118127007 "Specimen lipemic (finding)"
 * extension[+].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-Observation.triggeredBy"
@@ -203,10 +162,12 @@ Description: "Mikrobio: antigen-antikoerper-quantitativ — Alt-Variante zur MS-
 * extension[=].extension[=].valueReference = Reference(mii-exa-test-data-mikrobio-allgemeine-kultur-1)
 * extension[=].extension[+].url = "type"
 * extension[=].extension[=].valueCode = #repeat
-* code.coding = $loinc#94507-1
-* valueCodeableConcept.coding = $sct#260373001 "Detected (qualifier value)"
-* valueCodeableConcept.coding.system = "http://snomed.info/sct"
-* valueCodeableConcept.coding.code = #260373001
+* code.coding = $loinc#5060-9 "Borrelia burgdorferi Ab [Units/volume] in Serum by Immunoassay"
+* valueQuantity.value = 8
+* valueQuantity.comparator = #<
+* valueQuantity.unit = "[IU]/mL"
+* valueQuantity.system = $ucum
+* valueQuantity.code = #[IU]/mL
 * method.coding = $sct#726449005
 * method.coding.display = "Immunoassay technique"
 * interpretation = $v3-ObservationInterpretation#A "Abnormal"
@@ -225,7 +186,6 @@ Description: "Mikrobio: antigen-antikoerper-quantitativ — Probe nicht auswertb
 * identifier[analyseBefundCode].assigner.identifier.system = "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"
 * identifier[analyseBefundCode].assigner.identifier.value = "DIZ-CHA"
 * status = #final
-* category[mibi-category].coding[v2-microbiology] = $v2-0074#MB
 * category[mibi-category].coding[loinc-observation] = $loinc#26436-6
 * category[mibi-category].coding[observation-category] = $observation-category#laboratory
 * category[mibi-category].coding[loinc-microbiology-studies] = $loinc#18725-2 "Microbiology studies (set)"
@@ -242,10 +202,10 @@ Description: "Mikrobio: antigen-antikoerper-quantitativ — Probe nicht auswertb
 * specimen = Reference(mii-exa-test-data-mikrobio-specimen-1)
 * specimen.identifier.system = "https://www.charite.de/fhir/sid/Probennummer"
 * specimen.identifier.value = "BLOOD-CULT-001"
-* device = Reference(mii-exa-test-data-mikrobio-device-1)
+* device = Reference(mii-exa-test-data-mikrobio-device-immunoassay-1)
 * device.identifier.system = "https://www.charite.de/fhir/sid/device-identifier"
-* device.identifier.value = "VITEK2-001"
-* code.coding = $loinc#94507-1
+* device.identifier.value = "IMMUNOASSAY-001"
+* code.coding = $loinc#5060-9 "Borrelia burgdorferi Ab [Units/volume] in Serum by Immunoassay"
 * dataAbsentReason.coding = $data-absent-reason#unknown "Unknown"
 * method.coding = $sct#726449005
 * note[+].text = "Probe nicht auswertbar — Ergebnis nicht verfügbar."
@@ -263,7 +223,6 @@ Description: "Mikrobio: aviditaet — Alt-Variante zur MS-Coverage"
 * identifier[analyseBefundCode].assigner.identifier.system = "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"
 * identifier[analyseBefundCode].assigner.identifier.value = "DIZ-CHA"
 * status = #final
-* category[mibi-category].coding[v2-microbiology] = $v2-0074#MB
 * category[mibi-category].coding[loinc-observation] = $loinc#26436-6
 * category[mibi-category].coding[observation-category] = $observation-category#laboratory
 * category[mibi-category].coding[loinc-microbiology-studies] = $loinc#18725-2 "Microbiology studies (set)"
@@ -280,9 +239,9 @@ Description: "Mikrobio: aviditaet — Alt-Variante zur MS-Coverage"
 * specimen = Reference(mii-exa-test-data-mikrobio-specimen-1)
 * specimen.identifier.system = "https://www.charite.de/fhir/sid/Probennummer"
 * specimen.identifier.value = "BLOOD-CULT-001"
-* device = Reference(mii-exa-test-data-mikrobio-device-1)
+* device = Reference(mii-exa-test-data-mikrobio-device-immunoassay-1)
 * device.identifier.system = "https://www.charite.de/fhir/sid/device-identifier"
-* device.identifier.value = "VITEK2-001"
+* device.identifier.value = "IMMUNOASSAY-001"
 * modifierExtension[interpretationsbeeinflussendeEigenschaft].url = "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/InterpretationsbeeinflussendeEigenschaft"
 * modifierExtension[interpretationsbeeinflussendeEigenschaft].valueCoding = $sct#118127007 "Specimen lipemic (finding)"
 * extension[+].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-Observation.triggeredBy"
@@ -290,10 +249,12 @@ Description: "Mikrobio: aviditaet — Alt-Variante zur MS-Coverage"
 * extension[=].extension[=].valueReference = Reference(mii-exa-test-data-mikrobio-allgemeine-kultur-1)
 * extension[=].extension[+].url = "type"
 * extension[=].extension[=].valueCode = #repeat
-* code.coding = $loinc#92657-6
-* valueCodeableConcept.coding = $sct#260373001 "Detected (qualifier value)"
-* valueCodeableConcept.coding.system = "http://snomed.info/sct"
-* valueCodeableConcept.coding.code = #260373001
+* code.coding = $loinc#104428-8 "Measles virus IgG Ab avidity [Ratio] in Serum by Immunoassay"
+* valueQuantity.value = 65
+* valueQuantity.comparator = #>
+* valueQuantity.unit = "%"
+* valueQuantity.system = $ucum
+* valueQuantity.code = #%
 * method.coding = $sct#726449005
 * method.coding.display = "Immunoassay technique"
 * interpretation = $v3-ObservationInterpretation#A "Abnormal"
@@ -312,7 +273,6 @@ Description: "Mikrobio: aviditaet — Probe nicht auswertbar (dataAbsentReason)"
 * identifier[analyseBefundCode].assigner.identifier.system = "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"
 * identifier[analyseBefundCode].assigner.identifier.value = "DIZ-CHA"
 * status = #final
-* category[mibi-category].coding[v2-microbiology] = $v2-0074#MB
 * category[mibi-category].coding[loinc-observation] = $loinc#26436-6
 * category[mibi-category].coding[observation-category] = $observation-category#laboratory
 * category[mibi-category].coding[loinc-microbiology-studies] = $loinc#18725-2 "Microbiology studies (set)"
@@ -329,10 +289,10 @@ Description: "Mikrobio: aviditaet — Probe nicht auswertbar (dataAbsentReason)"
 * specimen = Reference(mii-exa-test-data-mikrobio-specimen-1)
 * specimen.identifier.system = "https://www.charite.de/fhir/sid/Probennummer"
 * specimen.identifier.value = "BLOOD-CULT-001"
-* device = Reference(mii-exa-test-data-mikrobio-device-1)
+* device = Reference(mii-exa-test-data-mikrobio-device-immunoassay-1)
 * device.identifier.system = "https://www.charite.de/fhir/sid/device-identifier"
-* device.identifier.value = "VITEK2-001"
-* code.coding = $loinc#92657-6
+* device.identifier.value = "IMMUNOASSAY-001"
+* code.coding = $loinc#104428-8 "Measles virus IgG Ab avidity [Ratio] in Serum by Immunoassay"
 * dataAbsentReason.coding = $data-absent-reason#unknown "Unknown"
 * method.coding = $sct#726449005
 * note[+].text = "Probe nicht auswertbar — Ergebnis nicht verfügbar."
@@ -350,7 +310,6 @@ Description: "Mikrobio: barlett-score — Alt-Variante zur MS-Coverage"
 * identifier[analyseBefundCode].assigner.identifier.system = "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"
 * identifier[analyseBefundCode].assigner.identifier.value = "DIZ-CHA"
 * status = #final
-* category[mibi-category].coding[v2-microbiology] = $v2-0074#MB
 * category[mibi-category].coding[loinc-observation] = $loinc#26436-6
 * category[mibi-category].coding[observation-category] = $observation-category#laboratory
 * category[mibi-category].coding[loinc-microbiology-studies] = $loinc#18725-2 "Microbiology studies (set)"
@@ -367,9 +326,6 @@ Description: "Mikrobio: barlett-score — Alt-Variante zur MS-Coverage"
 * specimen = Reference(mii-exa-test-data-mikrobio-specimen-1)
 * specimen.identifier.system = "https://www.charite.de/fhir/sid/Probennummer"
 * specimen.identifier.value = "BLOOD-CULT-001"
-* device = Reference(mii-exa-test-data-mikrobio-device-1)
-* device.identifier.system = "https://www.charite.de/fhir/sid/device-identifier"
-* device.identifier.value = "VITEK2-001"
 * modifierExtension[interpretationsbeeinflussendeEigenschaft].url = "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/InterpretationsbeeinflussendeEigenschaft"
 * modifierExtension[interpretationsbeeinflussendeEigenschaft].valueCoding = $sct#118127007 "Specimen lipemic (finding)"
 * extension[+].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-Observation.triggeredBy"
@@ -378,23 +334,9 @@ Description: "Mikrobio: barlett-score — Alt-Variante zur MS-Coverage"
 * extension[=].extension[+].url = "type"
 * extension[=].extension[=].valueCode = #repeat
 * code.coding = $loinc#75371-5
-* valueQuantity.value = 1
-* valueQuantity.value.extension[+].url = "http://hl7.org/fhir/StructureDefinition/quantity-precision"
-* valueQuantity.value.extension[=].valueInteger = 0
-* valueQuantity.comparator = #>=
-* valueQuantity.unit = "1"
-* valueQuantity.system = $ucum
-* valueQuantity.code = #1
-* referenceRange.low.value = 0
-* referenceRange.low.unit = "1"
-* referenceRange.low.system = $ucum
-* referenceRange.low.code = #1
-* referenceRange.high.value = 10
-* referenceRange.high.unit = "1"
-* referenceRange.high.system = $ucum
-* referenceRange.high.code = #1
+* valueCodeableConcept.coding = $loinc#LA21390-2 "+1 Active inflammation"
 * method.coding = $sct#702661004
-* method.coding.display = "Microscopy by Gram stain"
+* method.coding.display = "Light microscopy technique (qualifier value)"
 * interpretation = $v3-ObservationInterpretation#A "Abnormal"
 * note[+].text = "Alt-Variante zur MS-Coverage (barlett-score)"
 
@@ -411,7 +353,6 @@ Description: "Mikrobio: barlett-score — Probe nicht auswertbar (dataAbsentReas
 * identifier[analyseBefundCode].assigner.identifier.system = "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"
 * identifier[analyseBefundCode].assigner.identifier.value = "DIZ-CHA"
 * status = #final
-* category[mibi-category].coding[v2-microbiology] = $v2-0074#MB
 * category[mibi-category].coding[loinc-observation] = $loinc#26436-6
 * category[mibi-category].coding[observation-category] = $observation-category#laboratory
 * category[mibi-category].coding[loinc-microbiology-studies] = $loinc#18725-2 "Microbiology studies (set)"
@@ -428,9 +369,6 @@ Description: "Mikrobio: barlett-score — Probe nicht auswertbar (dataAbsentReas
 * specimen = Reference(mii-exa-test-data-mikrobio-specimen-1)
 * specimen.identifier.system = "https://www.charite.de/fhir/sid/Probennummer"
 * specimen.identifier.value = "BLOOD-CULT-001"
-* device = Reference(mii-exa-test-data-mikrobio-device-1)
-* device.identifier.system = "https://www.charite.de/fhir/sid/device-identifier"
-* device.identifier.value = "VITEK2-001"
 * code.coding = $loinc#75371-5
 * dataAbsentReason.coding = $data-absent-reason#unknown "Unknown"
 * method.coding = $sct#702661004
@@ -449,7 +387,6 @@ Description: "Mikrobio: ct-wert — Alt-Variante zur MS-Coverage"
 * identifier[analyseBefundCode].assigner.identifier.system = "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"
 * identifier[analyseBefundCode].assigner.identifier.value = "DIZ-CHA"
 * status = #final
-* category[mibi-category].coding[v2-microbiology] = $v2-0074#MB
 * category[mibi-category].coding[loinc-observation] = $loinc#26436-6
 * category[mibi-category].coding[observation-category] = $observation-category#laboratory
 * category[mibi-category].coding[loinc-microbiology-studies] = $loinc#18725-2 "Microbiology studies (set)"
@@ -466,9 +403,9 @@ Description: "Mikrobio: ct-wert — Alt-Variante zur MS-Coverage"
 * specimen = Reference(mii-exa-test-data-mikrobio-specimen-1)
 * specimen.identifier.system = "https://www.charite.de/fhir/sid/Probennummer"
 * specimen.identifier.value = "BLOOD-CULT-001"
-* device = Reference(mii-exa-test-data-mikrobio-device-1)
+* device = Reference(mii-exa-test-data-mikrobio-device-pcr-1)
 * device.identifier.system = "https://www.charite.de/fhir/sid/device-identifier"
-* device.identifier.value = "VITEK2-001"
+* device.identifier.value = "PCR-CYCLER-001"
 * modifierExtension[interpretationsbeeinflussendeEigenschaft].url = "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/InterpretationsbeeinflussendeEigenschaft"
 * modifierExtension[interpretationsbeeinflussendeEigenschaft].valueCoding = $sct#118127007 "Specimen lipemic (finding)"
 * extension[+].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-Observation.triggeredBy"
@@ -477,9 +414,11 @@ Description: "Mikrobio: ct-wert — Alt-Variante zur MS-Coverage"
 * extension[=].extension[+].url = "type"
 * extension[=].extension[=].valueCode = #repeat
 * code.coding = $loinc#74039-9
-* valueCodeableConcept.coding = $sct#260373001 "Detected (qualifier value)"
-* valueCodeableConcept.coding.system = "http://snomed.info/sct"
-* valueCodeableConcept.coding.code = #260373001
+* valueQuantity.value = 30.5
+* valueQuantity.comparator = #<
+* valueQuantity.unit = "Ct"
+* valueQuantity.system = $ucum
+* valueQuantity.code = #1
 * method.coding = $sct#70601000052104
 * method.coding.display = "Real-time PCR technique"
 * interpretation = $v3-ObservationInterpretation#A "Abnormal"
@@ -498,7 +437,6 @@ Description: "Mikrobio: ct-wert — Probe nicht auswertbar (dataAbsentReason)"
 * identifier[analyseBefundCode].assigner.identifier.system = "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"
 * identifier[analyseBefundCode].assigner.identifier.value = "DIZ-CHA"
 * status = #final
-* category[mibi-category].coding[v2-microbiology] = $v2-0074#MB
 * category[mibi-category].coding[loinc-observation] = $loinc#26436-6
 * category[mibi-category].coding[observation-category] = $observation-category#laboratory
 * category[mibi-category].coding[loinc-microbiology-studies] = $loinc#18725-2 "Microbiology studies (set)"
@@ -515,9 +453,9 @@ Description: "Mikrobio: ct-wert — Probe nicht auswertbar (dataAbsentReason)"
 * specimen = Reference(mii-exa-test-data-mikrobio-specimen-1)
 * specimen.identifier.system = "https://www.charite.de/fhir/sid/Probennummer"
 * specimen.identifier.value = "BLOOD-CULT-001"
-* device = Reference(mii-exa-test-data-mikrobio-device-1)
+* device = Reference(mii-exa-test-data-mikrobio-device-pcr-1)
 * device.identifier.system = "https://www.charite.de/fhir/sid/device-identifier"
-* device.identifier.value = "VITEK2-001"
+* device.identifier.value = "PCR-CYCLER-001"
 * code.coding = $loinc#74039-9
 * dataAbsentReason.coding = $data-absent-reason#unknown "Unknown"
 * method.coding = $sct#70601000052104
@@ -536,7 +474,6 @@ Description: "Mikrobio: empfindlichkeit — Alt-Variante zur MS-Coverage"
 * identifier[analyseBefundCode].assigner.identifier.system = "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"
 * identifier[analyseBefundCode].assigner.identifier.value = "DIZ-CHA"
 * status = #final
-* category[mibi-category].coding[v2-microbiology] = $v2-0074#MB
 * category[mibi-category].coding[loinc-observation] = $loinc#26436-6
 * category[mibi-category].coding[observation-category] = $observation-category#laboratory
 * category[mibi-category].coding[loinc-microbiology-studies] = $loinc#18725-2 "Microbiology studies (set)"
@@ -553,9 +490,6 @@ Description: "Mikrobio: empfindlichkeit — Alt-Variante zur MS-Coverage"
 * specimen = Reference(mii-exa-test-data-mikrobio-specimen-1)
 * specimen.identifier.system = "https://www.charite.de/fhir/sid/Probennummer"
 * specimen.identifier.value = "BLOOD-CULT-001"
-* device = Reference(mii-exa-test-data-mikrobio-device-1)
-* device.identifier.system = "https://www.charite.de/fhir/sid/device-identifier"
-* device.identifier.value = "VITEK2-001"
 * modifierExtension[interpretationsbeeinflussendeEigenschaft].url = "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/InterpretationsbeeinflussendeEigenschaft"
 * modifierExtension[interpretationsbeeinflussendeEigenschaft].valueCoding = $sct#118127007 "Specimen lipemic (finding)"
 * extension[+].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-Observation.triggeredBy"
@@ -563,12 +497,14 @@ Description: "Mikrobio: empfindlichkeit — Alt-Variante zur MS-Coverage"
 * extension[=].extension[=].valueReference = Reference(mii-exa-test-data-mikrobio-allgemeine-kultur-1)
 * extension[=].extension[+].url = "type"
 * extension[=].extension[=].valueCode = #repeat
-* code.coding = $loinc#29576-6
-* valueCodeableConcept.coding = $sct#260373001 "Detected (qualifier value)"
-* valueCodeableConcept.coding.system = "http://snomed.info/sct"
-* valueCodeableConcept.coding.code = #260373001
-* method.coding = $sct#700461007 "Antimicrobial susceptibility by MIC technique"
-* method.coding.display = "Antimicrobial susceptibility by MIC technique"
+* code.coding = $loinc#100045-4 "Cefozopran [Susceptibility]"
+* valueQuantity.value = 8
+* valueQuantity.comparator = #>
+* valueQuantity.unit = "mg/L"
+* valueQuantity.system = $ucum
+* valueQuantity.code = #mg/L
+* method.coding = $sct#708073008
+* method.coding.display = "Minimum inhibitory concentration susceptibility test technique (qualifier value)"
 * interpretation.extension[Norm].url = "https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-ex-mikrobio-empfindlichkeit-norm"
 * interpretation.extension[Norm].valueCodeableConcept = https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/CodeSystem/mii-cs-mikrobio-susceptibility-norm#CLSI "CLSI"
 * interpretation.coding = $v3-ObservationInterpretation#R "Resistant"
@@ -587,7 +523,6 @@ Description: "Mikrobio: empfindlichkeit — Probe nicht auswertbar (dataAbsentRe
 * identifier[analyseBefundCode].assigner.identifier.system = "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"
 * identifier[analyseBefundCode].assigner.identifier.value = "DIZ-CHA"
 * status = #final
-* category[mibi-category].coding[v2-microbiology] = $v2-0074#MB
 * category[mibi-category].coding[loinc-observation] = $loinc#26436-6
 * category[mibi-category].coding[observation-category] = $observation-category#laboratory
 * category[mibi-category].coding[loinc-microbiology-studies] = $loinc#18725-2 "Microbiology studies (set)"
@@ -604,12 +539,9 @@ Description: "Mikrobio: empfindlichkeit — Probe nicht auswertbar (dataAbsentRe
 * specimen = Reference(mii-exa-test-data-mikrobio-specimen-1)
 * specimen.identifier.system = "https://www.charite.de/fhir/sid/Probennummer"
 * specimen.identifier.value = "BLOOD-CULT-001"
-* device = Reference(mii-exa-test-data-mikrobio-device-1)
-* device.identifier.system = "https://www.charite.de/fhir/sid/device-identifier"
-* device.identifier.value = "VITEK2-001"
-* code.coding = $loinc#29576-6
+* code.coding = $loinc#100045-4 "Cefozopran [Susceptibility]"
 * dataAbsentReason.coding = $data-absent-reason#unknown "Unknown"
-* method.coding = $sct#700461007
+* method.coding = $sct#708073008
 * note[+].text = "Probe nicht auswertbar — Ergebnis nicht verfügbar."
 
 
@@ -625,7 +557,6 @@ Description: "Mikrobio: keimzahl — Alt-Variante zur MS-Coverage"
 * identifier[analyseBefundCode].assigner.identifier.system = "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"
 * identifier[analyseBefundCode].assigner.identifier.value = "DIZ-CHA"
 * status = #final
-* category[mibi-category].coding[v2-microbiology] = $v2-0074#MB
 * category[mibi-category].coding[loinc-observation] = $loinc#26436-6
 * category[mibi-category].coding[observation-category] = $observation-category#laboratory
 * category[mibi-category].coding[loinc-microbiology-studies] = $loinc#18725-2 "Microbiology studies (set)"
@@ -642,9 +573,6 @@ Description: "Mikrobio: keimzahl — Alt-Variante zur MS-Coverage"
 * specimen = Reference(mii-exa-test-data-mikrobio-specimen-1)
 * specimen.identifier.system = "https://www.charite.de/fhir/sid/Probennummer"
 * specimen.identifier.value = "BLOOD-CULT-001"
-* device = Reference(mii-exa-test-data-mikrobio-device-1)
-* device.identifier.system = "https://www.charite.de/fhir/sid/device-identifier"
-* device.identifier.value = "VITEK2-001"
 * modifierExtension[interpretationsbeeinflussendeEigenschaft].url = "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/InterpretationsbeeinflussendeEigenschaft"
 * modifierExtension[interpretationsbeeinflussendeEigenschaft].valueCoding = $sct#118127007 "Specimen lipemic (finding)"
 * extension[+].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-Observation.triggeredBy"
@@ -653,11 +581,13 @@ Description: "Mikrobio: keimzahl — Alt-Variante zur MS-Coverage"
 * extension[=].extension[+].url = "type"
 * extension[=].extension[=].valueCode = #repeat
 * code.coding = $loinc#49223-1
-* valueCodeableConcept.coding = $sct#260373001 "Detected (qualifier value)"
-* valueCodeableConcept.coding.system = "http://snomed.info/sct"
-* valueCodeableConcept.coding.code = #260373001
+* valueQuantity.value = 10000
+* valueQuantity.comparator = #>=
+* valueQuantity.unit = "/mL"
+* valueQuantity.system = $ucum
+* valueQuantity.code = #/mL
 * method.coding = $sct#410681005
-* method.coding.display = "Total count technique"
+* method.coding.display = "Count of entities (property) (qualifier value)"
 * interpretation = $v3-ObservationInterpretation#A "Abnormal"
 * note[+].text = "Alt-Variante zur MS-Coverage (keimzahl)"
 
@@ -674,7 +604,6 @@ Description: "Mikrobio: keimzahl — Probe nicht auswertbar (dataAbsentReason)"
 * identifier[analyseBefundCode].assigner.identifier.system = "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"
 * identifier[analyseBefundCode].assigner.identifier.value = "DIZ-CHA"
 * status = #final
-* category[mibi-category].coding[v2-microbiology] = $v2-0074#MB
 * category[mibi-category].coding[loinc-observation] = $loinc#26436-6
 * category[mibi-category].coding[observation-category] = $observation-category#laboratory
 * category[mibi-category].coding[loinc-microbiology-studies] = $loinc#18725-2 "Microbiology studies (set)"
@@ -691,9 +620,6 @@ Description: "Mikrobio: keimzahl — Probe nicht auswertbar (dataAbsentReason)"
 * specimen = Reference(mii-exa-test-data-mikrobio-specimen-1)
 * specimen.identifier.system = "https://www.charite.de/fhir/sid/Probennummer"
 * specimen.identifier.value = "BLOOD-CULT-001"
-* device = Reference(mii-exa-test-data-mikrobio-device-1)
-* device.identifier.system = "https://www.charite.de/fhir/sid/device-identifier"
-* device.identifier.value = "VITEK2-001"
 * code.coding = $loinc#49223-1
 * dataAbsentReason.coding = $data-absent-reason#unknown "Unknown"
 * method.coding = $sct#410681005
@@ -712,7 +638,6 @@ Description: "Mikrobio: mikroskopie — Alt-Variante zur MS-Coverage"
 * identifier[analyseBefundCode].assigner.identifier.system = "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"
 * identifier[analyseBefundCode].assigner.identifier.value = "DIZ-CHA"
 * status = #final
-* category[mibi-category].coding[v2-microbiology] = $v2-0074#MB
 * category[mibi-category].coding[loinc-observation] = $loinc#26436-6
 * category[mibi-category].coding[observation-category] = $observation-category#laboratory
 * category[mibi-category].coding[loinc-microbiology-studies] = $loinc#18725-2 "Microbiology studies (set)"
@@ -729,9 +654,6 @@ Description: "Mikrobio: mikroskopie — Alt-Variante zur MS-Coverage"
 * specimen = Reference(mii-exa-test-data-mikrobio-specimen-1)
 * specimen.identifier.system = "https://www.charite.de/fhir/sid/Probennummer"
 * specimen.identifier.value = "BLOOD-CULT-001"
-* device = Reference(mii-exa-test-data-mikrobio-device-1)
-* device.identifier.system = "https://www.charite.de/fhir/sid/device-identifier"
-* device.identifier.value = "VITEK2-001"
 * modifierExtension[interpretationsbeeinflussendeEigenschaft].url = "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/InterpretationsbeeinflussendeEigenschaft"
 * modifierExtension[interpretationsbeeinflussendeEigenschaft].valueCoding = $sct#118127007 "Specimen lipemic (finding)"
 * extension[+].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-Observation.triggeredBy"
@@ -740,23 +662,9 @@ Description: "Mikrobio: mikroskopie — Alt-Variante zur MS-Coverage"
 * extension[=].extension[+].url = "type"
 * extension[=].extension[=].valueCode = #repeat
 * code.coding = $loinc#105059-0
-* valueQuantity.value = 1
-* valueQuantity.value.extension[+].url = "http://hl7.org/fhir/StructureDefinition/quantity-precision"
-* valueQuantity.value.extension[=].valueInteger = 0
-* valueQuantity.comparator = #>=
-* valueQuantity.unit = "1"
-* valueQuantity.system = $ucum
-* valueQuantity.code = #1
-* referenceRange.low.value = 0
-* referenceRange.low.unit = "1"
-* referenceRange.low.system = $ucum
-* referenceRange.low.code = #1
-* referenceRange.high.value = 10
-* referenceRange.high.unit = "1"
-* referenceRange.high.system = $ucum
-* referenceRange.high.code = #1
-* method.coding = $sct#278289002
-* method.coding.display = "Microscopy (procedure)"
+* valueCodeableConcept.coding = $sct#260373001 "Detected (qualifier value)"
+* method.coding = $sct#702661004
+* method.coding.display = "Light microscopy technique (qualifier value)"
 * interpretation = $v3-ObservationInterpretation#A "Abnormal"
 * note[+].text = "Alt-Variante zur MS-Coverage (mikroskopie)"
 
@@ -773,7 +681,6 @@ Description: "Mikrobio: mikroskopie — Probe nicht auswertbar (dataAbsentReason
 * identifier[analyseBefundCode].assigner.identifier.system = "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"
 * identifier[analyseBefundCode].assigner.identifier.value = "DIZ-CHA"
 * status = #final
-* category[mibi-category].coding[v2-microbiology] = $v2-0074#MB
 * category[mibi-category].coding[loinc-observation] = $loinc#26436-6
 * category[mibi-category].coding[observation-category] = $observation-category#laboratory
 * category[mibi-category].coding[loinc-microbiology-studies] = $loinc#18725-2 "Microbiology studies (set)"
@@ -790,12 +697,9 @@ Description: "Mikrobio: mikroskopie — Probe nicht auswertbar (dataAbsentReason
 * specimen = Reference(mii-exa-test-data-mikrobio-specimen-1)
 * specimen.identifier.system = "https://www.charite.de/fhir/sid/Probennummer"
 * specimen.identifier.value = "BLOOD-CULT-001"
-* device = Reference(mii-exa-test-data-mikrobio-device-1)
-* device.identifier.system = "https://www.charite.de/fhir/sid/device-identifier"
-* device.identifier.value = "VITEK2-001"
 * code.coding = $loinc#105059-0
 * dataAbsentReason.coding = $data-absent-reason#unknown "Unknown"
-* method.coding = $sct#278289002
+* method.coding = $sct#702661004
 * note[+].text = "Probe nicht auswertbar — Ergebnis nicht verfügbar."
 
 
@@ -811,7 +715,6 @@ Description: "Mikrobio: molekulare-pathogenlast — Alt-Variante zur MS-Coverage
 * identifier[analyseBefundCode].assigner.identifier.system = "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"
 * identifier[analyseBefundCode].assigner.identifier.value = "DIZ-CHA"
 * status = #final
-* category[mibi-category].coding[v2-microbiology] = $v2-0074#MB
 * category[mibi-category].coding[loinc-observation] = $loinc#26436-6
 * category[mibi-category].coding[observation-category] = $observation-category#laboratory
 * category[mibi-category].coding[loinc-microbiology-studies] = $loinc#18725-2 "Microbiology studies (set)"
@@ -828,9 +731,9 @@ Description: "Mikrobio: molekulare-pathogenlast — Alt-Variante zur MS-Coverage
 * specimen = Reference(mii-exa-test-data-mikrobio-specimen-1)
 * specimen.identifier.system = "https://www.charite.de/fhir/sid/Probennummer"
 * specimen.identifier.value = "BLOOD-CULT-001"
-* device = Reference(mii-exa-test-data-mikrobio-device-1)
+* device = Reference(mii-exa-test-data-mikrobio-device-pcr-1)
 * device.identifier.system = "https://www.charite.de/fhir/sid/device-identifier"
-* device.identifier.value = "VITEK2-001"
+* device.identifier.value = "PCR-CYCLER-001"
 * modifierExtension[interpretationsbeeinflussendeEigenschaft].url = "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/InterpretationsbeeinflussendeEigenschaft"
 * modifierExtension[interpretationsbeeinflussendeEigenschaft].valueCoding = $sct#118127007 "Specimen lipemic (finding)"
 * extension[+].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-Observation.triggeredBy"
@@ -838,10 +741,12 @@ Description: "Mikrobio: molekulare-pathogenlast — Alt-Variante zur MS-Coverage
 * extension[=].extension[=].valueReference = Reference(mii-exa-test-data-mikrobio-allgemeine-kultur-1)
 * extension[=].extension[+].url = "type"
 * extension[=].extension[=].valueCode = #repeat
-* code.coding = $loinc#94009-8
-* valueCodeableConcept.coding = $sct#260373001 "Detected (qualifier value)"
-* valueCodeableConcept.coding.system = "http://snomed.info/sct"
-* valueCodeableConcept.coding.code = #260373001
+* code.coding = $loinc#66719-6 "Adenovirus DNA [Log #/volume] (viral load) in Urine by NAA with probe detection"
+* valueQuantity.value = 5000
+* valueQuantity.comparator = #>=
+* valueQuantity.unit = "Copies/mL"
+* valueQuantity.system = $ucum
+* valueQuantity.code = #1/mL
 * method.coding = $sct#70601000052104
 * method.coding.display = "Real-time PCR technique"
 * interpretation = $v3-ObservationInterpretation#A "Abnormal"
@@ -860,7 +765,6 @@ Description: "Mikrobio: molekulare-pathogenlast — Probe nicht auswertbar (data
 * identifier[analyseBefundCode].assigner.identifier.system = "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"
 * identifier[analyseBefundCode].assigner.identifier.value = "DIZ-CHA"
 * status = #final
-* category[mibi-category].coding[v2-microbiology] = $v2-0074#MB
 * category[mibi-category].coding[loinc-observation] = $loinc#26436-6
 * category[mibi-category].coding[observation-category] = $observation-category#laboratory
 * category[mibi-category].coding[loinc-microbiology-studies] = $loinc#18725-2 "Microbiology studies (set)"
@@ -877,10 +781,10 @@ Description: "Mikrobio: molekulare-pathogenlast — Probe nicht auswertbar (data
 * specimen = Reference(mii-exa-test-data-mikrobio-specimen-1)
 * specimen.identifier.system = "https://www.charite.de/fhir/sid/Probennummer"
 * specimen.identifier.value = "BLOOD-CULT-001"
-* device = Reference(mii-exa-test-data-mikrobio-device-1)
+* device = Reference(mii-exa-test-data-mikrobio-device-pcr-1)
 * device.identifier.system = "https://www.charite.de/fhir/sid/device-identifier"
-* device.identifier.value = "VITEK2-001"
-* code.coding = $loinc#94009-8
+* device.identifier.value = "PCR-CYCLER-001"
+* code.coding = $loinc#66719-6 "Adenovirus DNA [Log #/volume] (viral load) in Urine by NAA with probe detection"
 * dataAbsentReason.coding = $data-absent-reason#unknown "Unknown"
 * method.coding = $sct#70601000052104
 * note[+].text = "Probe nicht auswertbar — Ergebnis nicht verfügbar."
@@ -898,7 +802,6 @@ Description: "Mikrobio: mre-klasse — Alt-Variante zur MS-Coverage"
 * identifier[analyseBefundCode].assigner.identifier.system = "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"
 * identifier[analyseBefundCode].assigner.identifier.value = "DIZ-CHA"
 * status = #final
-* category[mibi-category].coding[v2-microbiology] = $v2-0074#MB
 * category[mibi-category].coding[loinc-observation] = $loinc#26436-6
 * category[mibi-category].coding[observation-category] = $observation-category#laboratory
 * category[mibi-category].coding[loinc-microbiology-studies] = $loinc#18725-2 "Microbiology studies (set)"
@@ -915,9 +818,9 @@ Description: "Mikrobio: mre-klasse — Alt-Variante zur MS-Coverage"
 * specimen = Reference(mii-exa-test-data-mikrobio-specimen-1)
 * specimen.identifier.system = "https://www.charite.de/fhir/sid/Probennummer"
 * specimen.identifier.value = "BLOOD-CULT-001"
-* device = Reference(mii-exa-test-data-mikrobio-device-1)
+* device = Reference(mii-exa-test-data-mikrobio-device-pcr-1)
 * device.identifier.system = "https://www.charite.de/fhir/sid/device-identifier"
-* device.identifier.value = "VITEK2-001"
+* device.identifier.value = "PCR-CYCLER-001"
 * modifierExtension[interpretationsbeeinflussendeEigenschaft].url = "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/InterpretationsbeeinflussendeEigenschaft"
 * modifierExtension[interpretationsbeeinflussendeEigenschaft].valueCoding = $sct#118127007 "Specimen lipemic (finding)"
 * extension[+].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-Observation.triggeredBy"
@@ -926,24 +829,9 @@ Description: "Mikrobio: mre-klasse — Alt-Variante zur MS-Coverage"
 * extension[=].extension[+].url = "type"
 * extension[=].extension[=].valueCode = #repeat
 * code.coding = $sct#1285113001
-* valueQuantity.value = 1
-* valueQuantity.value.extension[+].url = "http://hl7.org/fhir/StructureDefinition/quantity-precision"
-* valueQuantity.value.extension[=].valueInteger = 0
-* valueQuantity.comparator = #>=
-* valueQuantity.unit = "1"
-* valueQuantity.system = $ucum
-* valueQuantity.code = #1
-* referenceRange.low.value = 0
-* referenceRange.low.unit = "1"
-* referenceRange.low.system = $ucum
-* referenceRange.low.code = #1
-* referenceRange.high.value = 10
-* referenceRange.high.unit = "1"
-* referenceRange.high.system = $ucum
-* referenceRange.high.code = #1
-* method.coding = $sct#258066000
-* method.coding.display = "MALDI-TOF"
-* interpretation = $v3-ObservationInterpretation#A "Abnormal"
+* valueCodeableConcept.coding = $sct#115329001 "Methicillin resistant Staphylococcus aureus (organism)"
+* method.coding = $sct#708068002
+* method.coding.display = "Molecular genetics technique (qualifier value)"
 * note[+].text = "Alt-Variante zur MS-Coverage (mre-klasse)"
 
 
@@ -959,7 +847,6 @@ Description: "Mikrobio: mre-klasse — Probe nicht auswertbar (dataAbsentReason)
 * identifier[analyseBefundCode].assigner.identifier.system = "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"
 * identifier[analyseBefundCode].assigner.identifier.value = "DIZ-CHA"
 * status = #final
-* category[mibi-category].coding[v2-microbiology] = $v2-0074#MB
 * category[mibi-category].coding[loinc-observation] = $loinc#26436-6
 * category[mibi-category].coding[observation-category] = $observation-category#laboratory
 * category[mibi-category].coding[loinc-microbiology-studies] = $loinc#18725-2 "Microbiology studies (set)"
@@ -976,12 +863,12 @@ Description: "Mikrobio: mre-klasse — Probe nicht auswertbar (dataAbsentReason)
 * specimen = Reference(mii-exa-test-data-mikrobio-specimen-1)
 * specimen.identifier.system = "https://www.charite.de/fhir/sid/Probennummer"
 * specimen.identifier.value = "BLOOD-CULT-001"
-* device = Reference(mii-exa-test-data-mikrobio-device-1)
+* device = Reference(mii-exa-test-data-mikrobio-device-pcr-1)
 * device.identifier.system = "https://www.charite.de/fhir/sid/device-identifier"
-* device.identifier.value = "VITEK2-001"
+* device.identifier.value = "PCR-CYCLER-001"
 * code.coding = $sct#1285113001
 * dataAbsentReason.coding = $data-absent-reason#unknown "Unknown"
-* method.coding = $sct#258066000
+* method.coding = $sct#708068002
 * note[+].text = "Probe nicht auswertbar — Ergebnis nicht verfügbar."
 
 
@@ -997,7 +884,6 @@ Description: "Mikrobio: mrgn-klasse — Alt-Variante zur MS-Coverage"
 * identifier[analyseBefundCode].assigner.identifier.system = "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"
 * identifier[analyseBefundCode].assigner.identifier.value = "DIZ-CHA"
 * status = #final
-* category[mibi-category].coding[v2-microbiology] = $v2-0074#MB
 * category[mibi-category].coding[loinc-observation] = $loinc#26436-6
 * category[mibi-category].coding[observation-category] = $observation-category#laboratory
 * category[mibi-category].coding[loinc-microbiology-studies] = $loinc#18725-2 "Microbiology studies (set)"
@@ -1014,9 +900,6 @@ Description: "Mikrobio: mrgn-klasse — Alt-Variante zur MS-Coverage"
 * specimen = Reference(mii-exa-test-data-mikrobio-specimen-1)
 * specimen.identifier.system = "https://www.charite.de/fhir/sid/Probennummer"
 * specimen.identifier.value = "BLOOD-CULT-001"
-* device = Reference(mii-exa-test-data-mikrobio-device-1)
-* device.identifier.system = "https://www.charite.de/fhir/sid/device-identifier"
-* device.identifier.value = "VITEK2-001"
 * modifierExtension[interpretationsbeeinflussendeEigenschaft].url = "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/InterpretationsbeeinflussendeEigenschaft"
 * modifierExtension[interpretationsbeeinflussendeEigenschaft].valueCoding = $sct#118127007 "Specimen lipemic (finding)"
 * extension[+].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-Observation.triggeredBy"
@@ -1025,24 +908,7 @@ Description: "Mikrobio: mrgn-klasse — Alt-Variante zur MS-Coverage"
 * extension[=].extension[+].url = "type"
 * extension[=].extension[=].valueCode = #repeat
 * code.coding = $loinc#99780-9
-* valueQuantity.value = 1
-* valueQuantity.value.extension[+].url = "http://hl7.org/fhir/StructureDefinition/quantity-precision"
-* valueQuantity.value.extension[=].valueInteger = 0
-* valueQuantity.comparator = #>=
-* valueQuantity.unit = "1"
-* valueQuantity.system = $ucum
-* valueQuantity.code = #1
-* referenceRange.low.value = 0
-* referenceRange.low.unit = "1"
-* referenceRange.low.system = $ucum
-* referenceRange.low.code = #1
-* referenceRange.high.value = 10
-* referenceRange.high.unit = "1"
-* referenceRange.high.system = $ucum
-* referenceRange.high.code = #1
-* method.coding = $sct#700452006
-* method.coding.display = "Susceptibility to antimicrobial"
-* interpretation = $v3-ObservationInterpretation#A "Abnormal"
+* valueCodeableConcept.coding = $loinc#LA33214-0 "2MRGN"
 * note[+].text = "Alt-Variante zur MS-Coverage (mrgn-klasse)"
 
 
@@ -1058,7 +924,6 @@ Description: "Mikrobio: mrgn-klasse — Probe nicht auswertbar (dataAbsentReason
 * identifier[analyseBefundCode].assigner.identifier.system = "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"
 * identifier[analyseBefundCode].assigner.identifier.value = "DIZ-CHA"
 * status = #final
-* category[mibi-category].coding[v2-microbiology] = $v2-0074#MB
 * category[mibi-category].coding[loinc-observation] = $loinc#26436-6
 * category[mibi-category].coding[observation-category] = $observation-category#laboratory
 * category[mibi-category].coding[loinc-microbiology-studies] = $loinc#18725-2 "Microbiology studies (set)"
@@ -1075,12 +940,8 @@ Description: "Mikrobio: mrgn-klasse — Probe nicht auswertbar (dataAbsentReason
 * specimen = Reference(mii-exa-test-data-mikrobio-specimen-1)
 * specimen.identifier.system = "https://www.charite.de/fhir/sid/Probennummer"
 * specimen.identifier.value = "BLOOD-CULT-001"
-* device = Reference(mii-exa-test-data-mikrobio-device-1)
-* device.identifier.system = "https://www.charite.de/fhir/sid/device-identifier"
-* device.identifier.value = "VITEK2-001"
 * code.coding = $loinc#99780-9
 * dataAbsentReason.coding = $data-absent-reason#unknown "Unknown"
-* method.coding = $sct#700452006
 * note[+].text = "Probe nicht auswertbar — Ergebnis nicht verfügbar."
 
 
@@ -1096,7 +957,6 @@ Description: "Mikrobio: nugent-score — Alt-Variante zur MS-Coverage"
 * identifier[analyseBefundCode].assigner.identifier.system = "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"
 * identifier[analyseBefundCode].assigner.identifier.value = "DIZ-CHA"
 * status = #final
-* category[mibi-category].coding[v2-microbiology] = $v2-0074#MB
 * category[mibi-category].coding[loinc-observation] = $loinc#26436-6
 * category[mibi-category].coding[observation-category] = $observation-category#laboratory
 * category[mibi-category].coding[loinc-microbiology-studies] = $loinc#18725-2 "Microbiology studies (set)"
@@ -1113,9 +973,6 @@ Description: "Mikrobio: nugent-score — Alt-Variante zur MS-Coverage"
 * specimen = Reference(mii-exa-test-data-mikrobio-specimen-1)
 * specimen.identifier.system = "https://www.charite.de/fhir/sid/Probennummer"
 * specimen.identifier.value = "BLOOD-CULT-001"
-* device = Reference(mii-exa-test-data-mikrobio-device-1)
-* device.identifier.system = "https://www.charite.de/fhir/sid/device-identifier"
-* device.identifier.value = "VITEK2-001"
 * modifierExtension[interpretationsbeeinflussendeEigenschaft].url = "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/InterpretationsbeeinflussendeEigenschaft"
 * modifierExtension[interpretationsbeeinflussendeEigenschaft].valueCoding = $sct#118127007 "Specimen lipemic (finding)"
 * extension[+].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-Observation.triggeredBy"
@@ -1124,11 +981,13 @@ Description: "Mikrobio: nugent-score — Alt-Variante zur MS-Coverage"
 * extension[=].extension[+].url = "type"
 * extension[=].extension[=].valueCode = #repeat
 * code.coding = $loinc#101433-1
-* valueCodeableConcept.coding = $sct#260373001 "Detected (qualifier value)"
-* valueCodeableConcept.coding.system = "http://snomed.info/sct"
-* valueCodeableConcept.coding.code = #260373001
+* valueQuantity.value = 2
+* valueQuantity.comparator = #<=
+* valueQuantity.unit = "1"
+* valueQuantity.system = $ucum
+* valueQuantity.code = #1
 * method.coding = $sct#702661004
-* method.coding.display = "Microscopy by Gram stain"
+* method.coding.display = "Light microscopy technique (qualifier value)"
 * interpretation = $v3-ObservationInterpretation#A "Abnormal"
 * note[+].text = "Alt-Variante zur MS-Coverage (nugent-score)"
 
@@ -1145,7 +1004,6 @@ Description: "Mikrobio: nugent-score — Probe nicht auswertbar (dataAbsentReaso
 * identifier[analyseBefundCode].assigner.identifier.system = "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"
 * identifier[analyseBefundCode].assigner.identifier.value = "DIZ-CHA"
 * status = #final
-* category[mibi-category].coding[v2-microbiology] = $v2-0074#MB
 * category[mibi-category].coding[loinc-observation] = $loinc#26436-6
 * category[mibi-category].coding[observation-category] = $observation-category#laboratory
 * category[mibi-category].coding[loinc-microbiology-studies] = $loinc#18725-2 "Microbiology studies (set)"
@@ -1162,9 +1020,6 @@ Description: "Mikrobio: nugent-score — Probe nicht auswertbar (dataAbsentReaso
 * specimen = Reference(mii-exa-test-data-mikrobio-specimen-1)
 * specimen.identifier.system = "https://www.charite.de/fhir/sid/Probennummer"
 * specimen.identifier.value = "BLOOD-CULT-001"
-* device = Reference(mii-exa-test-data-mikrobio-device-1)
-* device.identifier.system = "https://www.charite.de/fhir/sid/device-identifier"
-* device.identifier.value = "VITEK2-001"
 * code.coding = $loinc#101433-1
 * dataAbsentReason.coding = $data-absent-reason#unknown "Unknown"
 * method.coding = $sct#702661004
@@ -1183,7 +1038,6 @@ Description: "Mikrobio: resistenzmechanismen-determinanten — Alt-Variante zur 
 * identifier[analyseBefundCode].assigner.identifier.system = "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"
 * identifier[analyseBefundCode].assigner.identifier.value = "DIZ-CHA"
 * status = #final
-* category[mibi-category].coding[v2-microbiology] = $v2-0074#MB
 * category[mibi-category].coding[loinc-observation] = $loinc#26436-6
 * category[mibi-category].coding[observation-category] = $observation-category#laboratory
 * category[mibi-category].coding[loinc-microbiology-studies] = $loinc#18725-2 "Microbiology studies (set)"
@@ -1200,9 +1054,9 @@ Description: "Mikrobio: resistenzmechanismen-determinanten — Alt-Variante zur 
 * specimen = Reference(mii-exa-test-data-mikrobio-specimen-1)
 * specimen.identifier.system = "https://www.charite.de/fhir/sid/Probennummer"
 * specimen.identifier.value = "BLOOD-CULT-001"
-* device = Reference(mii-exa-test-data-mikrobio-device-1)
+* device = Reference(mii-exa-test-data-mikrobio-device-pcr-1)
 * device.identifier.system = "https://www.charite.de/fhir/sid/device-identifier"
-* device.identifier.value = "VITEK2-001"
+* device.identifier.value = "PCR-CYCLER-001"
 * modifierExtension[interpretationsbeeinflussendeEigenschaft].url = "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/InterpretationsbeeinflussendeEigenschaft"
 * modifierExtension[interpretationsbeeinflussendeEigenschaft].valueCoding = $sct#118127007 "Specimen lipemic (finding)"
 * extension[+].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-Observation.triggeredBy"
@@ -1210,24 +1064,10 @@ Description: "Mikrobio: resistenzmechanismen-determinanten — Alt-Variante zur 
 * extension[=].extension[=].valueReference = Reference(mii-exa-test-data-mikrobio-allgemeine-kultur-1)
 * extension[=].extension[+].url = "type"
 * extension[=].extension[=].valueCode = #repeat
-* code.coding = $loinc#92249-2
-* valueQuantity.value = 1
-* valueQuantity.value.extension[+].url = "http://hl7.org/fhir/StructureDefinition/quantity-precision"
-* valueQuantity.value.extension[=].valueInteger = 0
-* valueQuantity.comparator = #>=
-* valueQuantity.unit = "1"
-* valueQuantity.system = $ucum
-* valueQuantity.code = #1
-* referenceRange.low.value = 0
-* referenceRange.low.unit = "1"
-* referenceRange.low.system = $ucum
-* referenceRange.low.code = #1
-* referenceRange.high.value = 10
-* referenceRange.high.unit = "1"
-* referenceRange.high.system = $ucum
-* referenceRange.high.code = #1
-* method.coding = $sct#258066000
-* method.coding.display = "Molecular detection technique"
+* code.coding = $loinc#72891-5 "Staphylococcus protein A spa gene [Presence] in Isolate or Specimen by NAA with probe detection"
+* valueCodeableConcept.coding = $sct#260373001 "Detected (qualifier value)"
+* method.coding = $sct#708068002
+* method.coding.display = "Molecular genetics technique (qualifier value)"
 * interpretation = $v3-ObservationInterpretation#A "Abnormal"
 * note[+].text = "Alt-Variante zur MS-Coverage (resistenzmechanismen-determinanten)"
 
@@ -1244,7 +1084,6 @@ Description: "Mikrobio: resistenzmechanismen-determinanten — Probe nicht auswe
 * identifier[analyseBefundCode].assigner.identifier.system = "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"
 * identifier[analyseBefundCode].assigner.identifier.value = "DIZ-CHA"
 * status = #final
-* category[mibi-category].coding[v2-microbiology] = $v2-0074#MB
 * category[mibi-category].coding[loinc-observation] = $loinc#26436-6
 * category[mibi-category].coding[observation-category] = $observation-category#laboratory
 * category[mibi-category].coding[loinc-microbiology-studies] = $loinc#18725-2 "Microbiology studies (set)"
@@ -1261,12 +1100,12 @@ Description: "Mikrobio: resistenzmechanismen-determinanten — Probe nicht auswe
 * specimen = Reference(mii-exa-test-data-mikrobio-specimen-1)
 * specimen.identifier.system = "https://www.charite.de/fhir/sid/Probennummer"
 * specimen.identifier.value = "BLOOD-CULT-001"
-* device = Reference(mii-exa-test-data-mikrobio-device-1)
+* device = Reference(mii-exa-test-data-mikrobio-device-pcr-1)
 * device.identifier.system = "https://www.charite.de/fhir/sid/device-identifier"
-* device.identifier.value = "VITEK2-001"
-* code.coding = $loinc#92249-2
+* device.identifier.value = "PCR-CYCLER-001"
+* code.coding = $loinc#72891-5 "Staphylococcus protein A spa gene [Presence] in Isolate or Specimen by NAA with probe detection"
 * dataAbsentReason.coding = $data-absent-reason#unknown "Unknown"
-* method.coding = $sct#258066000
+* method.coding = $sct#708068002
 * note[+].text = "Probe nicht auswertbar — Ergebnis nicht verfügbar."
 
 
@@ -1282,7 +1121,6 @@ Description: "Mikrobio: spezifische-bestimmung — Alt-Variante zur MS-Coverage"
 * identifier[analyseBefundCode].assigner.identifier.system = "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"
 * identifier[analyseBefundCode].assigner.identifier.value = "DIZ-CHA"
 * status = #final
-* category[mibi-category].coding[v2-microbiology] = $v2-0074#MB
 * category[mibi-category].coding[loinc-observation] = $loinc#26436-6
 * category[mibi-category].coding[observation-category] = $observation-category#laboratory
 * category[mibi-category].coding[loinc-microbiology-studies] = $loinc#18725-2 "Microbiology studies (set)"
@@ -1299,9 +1137,9 @@ Description: "Mikrobio: spezifische-bestimmung — Alt-Variante zur MS-Coverage"
 * specimen = Reference(mii-exa-test-data-mikrobio-specimen-1)
 * specimen.identifier.system = "https://www.charite.de/fhir/sid/Probennummer"
 * specimen.identifier.value = "BLOOD-CULT-001"
-* device = Reference(mii-exa-test-data-mikrobio-device-1)
+* device = Reference(mii-exa-test-data-mikrobio-device-pcr-1)
 * device.identifier.system = "https://www.charite.de/fhir/sid/device-identifier"
-* device.identifier.value = "VITEK2-001"
+* device.identifier.value = "PCR-CYCLER-001"
 * modifierExtension[interpretationsbeeinflussendeEigenschaft].url = "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/InterpretationsbeeinflussendeEigenschaft"
 * modifierExtension[interpretationsbeeinflussendeEigenschaft].valueCoding = $sct#118127007 "Specimen lipemic (finding)"
 * extension[+].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-Observation.triggeredBy"
@@ -1309,24 +1147,10 @@ Description: "Mikrobio: spezifische-bestimmung — Alt-Variante zur MS-Coverage"
 * extension[=].extension[=].valueReference = Reference(mii-exa-test-data-mikrobio-allgemeine-kultur-1)
 * extension[=].extension[+].url = "type"
 * extension[=].extension[=].valueCode = #repeat
-* code.coding = $loinc#92253-4
-* valueQuantity.value = 1
-* valueQuantity.value.extension[+].url = "http://hl7.org/fhir/StructureDefinition/quantity-precision"
-* valueQuantity.value.extension[=].valueInteger = 0
-* valueQuantity.comparator = #>=
-* valueQuantity.unit = "1"
-* valueQuantity.system = $ucum
-* valueQuantity.code = #1
-* referenceRange.low.value = 0
-* referenceRange.low.unit = "1"
-* referenceRange.low.system = $ucum
-* referenceRange.low.code = #1
-* referenceRange.high.value = 10
-* referenceRange.high.unit = "1"
-* referenceRange.high.system = $ucum
-* referenceRange.high.code = #1
-* method.coding = $sct#258066000
-* method.coding.display = "MALDI-TOF"
+* code.coding = $loinc#105651-4 "Enterobacter cloacae complex DNA [Presence] in Specimen by NAA with probe detection"
+* valueCodeableConcept.coding = $sct#260373001 "Detected (qualifier value)"
+* method.coding = $sct#70601000052104
+* method.coding.display = "Real-time polymerase chain reaction technique (qualifier value)"
 * interpretation = $v3-ObservationInterpretation#A "Abnormal"
 * note[+].text = "Alt-Variante zur MS-Coverage (spezifische-bestimmung)"
 
@@ -1343,7 +1167,6 @@ Description: "Mikrobio: spezifische-bestimmung — Probe nicht auswertbar (dataA
 * identifier[analyseBefundCode].assigner.identifier.system = "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"
 * identifier[analyseBefundCode].assigner.identifier.value = "DIZ-CHA"
 * status = #final
-* category[mibi-category].coding[v2-microbiology] = $v2-0074#MB
 * category[mibi-category].coding[loinc-observation] = $loinc#26436-6
 * category[mibi-category].coding[observation-category] = $observation-category#laboratory
 * category[mibi-category].coding[loinc-microbiology-studies] = $loinc#18725-2 "Microbiology studies (set)"
@@ -1360,12 +1183,12 @@ Description: "Mikrobio: spezifische-bestimmung — Probe nicht auswertbar (dataA
 * specimen = Reference(mii-exa-test-data-mikrobio-specimen-1)
 * specimen.identifier.system = "https://www.charite.de/fhir/sid/Probennummer"
 * specimen.identifier.value = "BLOOD-CULT-001"
-* device = Reference(mii-exa-test-data-mikrobio-device-1)
+* device = Reference(mii-exa-test-data-mikrobio-device-pcr-1)
 * device.identifier.system = "https://www.charite.de/fhir/sid/device-identifier"
-* device.identifier.value = "VITEK2-001"
-* code.coding = $loinc#92253-4
+* device.identifier.value = "PCR-CYCLER-001"
+* code.coding = $loinc#61398-4 "Escherichia coli DNA [Presence] in Specimen by NAA with probe detection"
 * dataAbsentReason.coding = $data-absent-reason#unknown "Unknown"
-* method.coding = $sct#258066000
+* method.coding = $sct#70601000052104
 * note[+].text = "Probe nicht auswertbar — Ergebnis nicht verfügbar."
 
 
@@ -1381,7 +1204,6 @@ Description: "Mikrobio: titer — Alt-Variante zur MS-Coverage"
 * identifier[analyseBefundCode].assigner.identifier.system = "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"
 * identifier[analyseBefundCode].assigner.identifier.value = "DIZ-CHA"
 * status = #final
-* category[mibi-category].coding[v2-microbiology] = $v2-0074#MB
 * category[mibi-category].coding[loinc-observation] = $loinc#26436-6
 * category[mibi-category].coding[observation-category] = $observation-category#laboratory
 * category[mibi-category].coding[loinc-microbiology-studies] = $loinc#18725-2 "Microbiology studies (set)"
@@ -1398,9 +1220,6 @@ Description: "Mikrobio: titer — Alt-Variante zur MS-Coverage"
 * specimen = Reference(mii-exa-test-data-mikrobio-specimen-1)
 * specimen.identifier.system = "https://www.charite.de/fhir/sid/Probennummer"
 * specimen.identifier.value = "BLOOD-CULT-001"
-* device = Reference(mii-exa-test-data-mikrobio-device-1)
-* device.identifier.system = "https://www.charite.de/fhir/sid/device-identifier"
-* device.identifier.value = "VITEK2-001"
 * modifierExtension[interpretationsbeeinflussendeEigenschaft].url = "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/InterpretationsbeeinflussendeEigenschaft"
 * modifierExtension[interpretationsbeeinflussendeEigenschaft].valueCoding = $sct#118127007 "Specimen lipemic (finding)"
 * extension[+].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-Observation.triggeredBy"
@@ -1408,7 +1227,7 @@ Description: "Mikrobio: titer — Alt-Variante zur MS-Coverage"
 * extension[=].extension[=].valueReference = Reference(mii-exa-test-data-mikrobio-allgemeine-kultur-1)
 * extension[=].extension[+].url = "type"
 * extension[=].extension[=].valueCode = #repeat
-* code.coding = $loinc#53655-7
+* code.coding = $loinc#23648-9 "Actinobacillus pleuropneumoniae Ab [Titer] in Serum"
 * valueRatio.numerator.value = 1
 * valueRatio.numerator.unit = "{titer}"
 * valueRatio.numerator.system = $ucum
@@ -1418,7 +1237,7 @@ Description: "Mikrobio: titer — Alt-Variante zur MS-Coverage"
 * valueRatio.denominator.system = $ucum
 * valueRatio.denominator.code = #{titer}
 * method.coding = $sct#708104000
-* method.coding.display = "Serological agglutination"
+* method.coding.display = "Agglutination technique (qualifier value)"
 * interpretation = $v3-ObservationInterpretation#A "Abnormal"
 * note[+].text = "Alt-Variante zur MS-Coverage (titer)"
 
@@ -1435,7 +1254,6 @@ Description: "Mikrobio: titer — Probe nicht auswertbar (dataAbsentReason)"
 * identifier[analyseBefundCode].assigner.identifier.system = "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"
 * identifier[analyseBefundCode].assigner.identifier.value = "DIZ-CHA"
 * status = #final
-* category[mibi-category].coding[v2-microbiology] = $v2-0074#MB
 * category[mibi-category].coding[loinc-observation] = $loinc#26436-6
 * category[mibi-category].coding[observation-category] = $observation-category#laboratory
 * category[mibi-category].coding[loinc-microbiology-studies] = $loinc#18725-2 "Microbiology studies (set)"
@@ -1452,10 +1270,7 @@ Description: "Mikrobio: titer — Probe nicht auswertbar (dataAbsentReason)"
 * specimen = Reference(mii-exa-test-data-mikrobio-specimen-1)
 * specimen.identifier.system = "https://www.charite.de/fhir/sid/Probennummer"
 * specimen.identifier.value = "BLOOD-CULT-001"
-* device = Reference(mii-exa-test-data-mikrobio-device-1)
-* device.identifier.system = "https://www.charite.de/fhir/sid/device-identifier"
-* device.identifier.value = "VITEK2-001"
-* code.coding = $loinc#53655-7
+* code.coding = $loinc#23648-9 "Actinobacillus pleuropneumoniae Ab [Titer] in Serum"
 * dataAbsentReason.coding = $data-absent-reason#unknown "Unknown"
 * method.coding = $sct#708104000
 * note[+].text = "Probe nicht auswertbar — Ergebnis nicht verfügbar."
@@ -1473,7 +1288,6 @@ Description: "Mikrobio: virulenzfaktor — Alt-Variante zur MS-Coverage"
 * identifier[analyseBefundCode].assigner.identifier.system = "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"
 * identifier[analyseBefundCode].assigner.identifier.value = "DIZ-CHA"
 * status = #final
-* category[mibi-category].coding[v2-microbiology] = $v2-0074#MB
 * category[mibi-category].coding[loinc-observation] = $loinc#26436-6
 * category[mibi-category].coding[observation-category] = $observation-category#laboratory
 * category[mibi-category].coding[loinc-microbiology-studies] = $loinc#18725-2 "Microbiology studies (set)"
@@ -1490,9 +1304,9 @@ Description: "Mikrobio: virulenzfaktor — Alt-Variante zur MS-Coverage"
 * specimen = Reference(mii-exa-test-data-mikrobio-specimen-1)
 * specimen.identifier.system = "https://www.charite.de/fhir/sid/Probennummer"
 * specimen.identifier.value = "BLOOD-CULT-001"
-* device = Reference(mii-exa-test-data-mikrobio-device-1)
+* device = Reference(mii-exa-test-data-mikrobio-device-pcr-1)
 * device.identifier.system = "https://www.charite.de/fhir/sid/device-identifier"
-* device.identifier.value = "VITEK2-001"
+* device.identifier.value = "PCR-CYCLER-001"
 * modifierExtension[interpretationsbeeinflussendeEigenschaft].url = "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/InterpretationsbeeinflussendeEigenschaft"
 * modifierExtension[interpretationsbeeinflussendeEigenschaft].valueCoding = $sct#118127007 "Specimen lipemic (finding)"
 * extension[+].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-Observation.triggeredBy"
@@ -1501,23 +1315,9 @@ Description: "Mikrobio: virulenzfaktor — Alt-Variante zur MS-Coverage"
 * extension[=].extension[+].url = "type"
 * extension[=].extension[=].valueCode = #repeat
 * code.coding = $loinc#87402-4
-* valueQuantity.value = 1
-* valueQuantity.value.extension[+].url = "http://hl7.org/fhir/StructureDefinition/quantity-precision"
-* valueQuantity.value.extension[=].valueInteger = 0
-* valueQuantity.comparator = #>=
-* valueQuantity.unit = "1"
-* valueQuantity.system = $ucum
-* valueQuantity.code = #1
-* referenceRange.low.value = 0
-* referenceRange.low.unit = "1"
-* referenceRange.low.system = $ucum
-* referenceRange.low.code = #1
-* referenceRange.high.value = 10
-* referenceRange.high.unit = "1"
-* referenceRange.high.system = $ucum
-* referenceRange.high.code = #1
-* method.coding = $sct#258066000
-* method.coding.display = "Molecular detection technique"
+* valueCodeableConcept.coding = $sct#260373001 "Detected (qualifier value)"
+* method.coding = $sct#70601000052104
+* method.coding.display = "Real-time polymerase chain reaction technique (qualifier value)"
 * interpretation = $v3-ObservationInterpretation#A "Abnormal"
 * note[+].text = "Alt-Variante zur MS-Coverage (virulenzfaktor)"
 
@@ -1534,7 +1334,6 @@ Description: "Mikrobio: virulenzfaktor — Probe nicht auswertbar (dataAbsentRea
 * identifier[analyseBefundCode].assigner.identifier.system = "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"
 * identifier[analyseBefundCode].assigner.identifier.value = "DIZ-CHA"
 * status = #final
-* category[mibi-category].coding[v2-microbiology] = $v2-0074#MB
 * category[mibi-category].coding[loinc-observation] = $loinc#26436-6
 * category[mibi-category].coding[observation-category] = $observation-category#laboratory
 * category[mibi-category].coding[loinc-microbiology-studies] = $loinc#18725-2 "Microbiology studies (set)"
@@ -1551,12 +1350,12 @@ Description: "Mikrobio: virulenzfaktor — Probe nicht auswertbar (dataAbsentRea
 * specimen = Reference(mii-exa-test-data-mikrobio-specimen-1)
 * specimen.identifier.system = "https://www.charite.de/fhir/sid/Probennummer"
 * specimen.identifier.value = "BLOOD-CULT-001"
-* device = Reference(mii-exa-test-data-mikrobio-device-1)
+* device = Reference(mii-exa-test-data-mikrobio-device-pcr-1)
 * device.identifier.system = "https://www.charite.de/fhir/sid/device-identifier"
-* device.identifier.value = "VITEK2-001"
+* device.identifier.value = "PCR-CYCLER-001"
 * code.coding = $loinc#87402-4
 * dataAbsentReason.coding = $data-absent-reason#unknown "Unknown"
-* method.coding = $sct#258066000
+* method.coding = $sct#70601000052104
 * note[+].text = "Probe nicht auswertbar — Ergebnis nicht verfügbar."
 
 
@@ -1572,7 +1371,6 @@ Description: "Mikrobio: voraussichtliche-empfindlichkeit — Alt-Variante zur MS
 * identifier[analyseBefundCode].assigner.identifier.system = "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"
 * identifier[analyseBefundCode].assigner.identifier.value = "DIZ-CHA"
 * status = #final
-* category[mibi-category].coding[v2-microbiology] = $v2-0074#MB
 * category[mibi-category].coding[loinc-observation] = $loinc#26436-6
 * category[mibi-category].coding[observation-category] = $observation-category#laboratory
 * category[mibi-category].coding[loinc-microbiology-studies] = $loinc#18725-2 "Microbiology studies (set)"
@@ -1589,9 +1387,9 @@ Description: "Mikrobio: voraussichtliche-empfindlichkeit — Alt-Variante zur MS
 * specimen = Reference(mii-exa-test-data-mikrobio-specimen-1)
 * specimen.identifier.system = "https://www.charite.de/fhir/sid/Probennummer"
 * specimen.identifier.value = "BLOOD-CULT-001"
-* device = Reference(mii-exa-test-data-mikrobio-device-1)
+* device = Reference(mii-exa-test-data-mikrobio-device-pcr-1)
 * device.identifier.system = "https://www.charite.de/fhir/sid/device-identifier"
-* device.identifier.value = "VITEK2-001"
+* device.identifier.value = "PCR-CYCLER-001"
 * modifierExtension[interpretationsbeeinflussendeEigenschaft].url = "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/InterpretationsbeeinflussendeEigenschaft"
 * modifierExtension[interpretationsbeeinflussendeEigenschaft].valueCoding = $sct#118127007 "Specimen lipemic (finding)"
 * extension[+].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-Observation.triggeredBy"
@@ -1599,24 +1397,10 @@ Description: "Mikrobio: voraussichtliche-empfindlichkeit — Alt-Variante zur MS
 * extension[=].extension[=].valueReference = Reference(mii-exa-test-data-mikrobio-allgemeine-kultur-1)
 * extension[=].extension[+].url = "type"
 * extension[=].extension[=].valueCode = #repeat
-* code.coding = $loinc#89489-9
-* valueQuantity.value = 1
-* valueQuantity.value.extension[+].url = "http://hl7.org/fhir/StructureDefinition/quantity-precision"
-* valueQuantity.value.extension[=].valueInteger = 0
-* valueQuantity.comparator = #>=
-* valueQuantity.unit = "1"
-* valueQuantity.system = $ucum
-* valueQuantity.code = #1
-* referenceRange.low.value = 0
-* referenceRange.low.unit = "1"
-* referenceRange.low.system = $ucum
-* referenceRange.low.code = #1
-* referenceRange.high.value = 10
-* referenceRange.high.unit = "1"
-* referenceRange.high.system = $ucum
-* referenceRange.high.code = #1
-* method.coding = $sct#258066000
-* method.coding.display = "Molecular detection technique"
+* code.coding = $loinc#92255-9 "Methicillin [Susceptibility] by Genotype method"
+* valueCodeableConcept.coding = $v3-ObservationInterpretation#S "Susceptible"
+* method.coding = $sct#708060009
+* method.coding.display = "Genotype determination technique (qualifier value)"
 * interpretation = $v3-ObservationInterpretation#A "Abnormal"
 * note[+].text = "Alt-Variante zur MS-Coverage (voraussichtliche-empfindlichkeit)"
 
@@ -1633,7 +1417,6 @@ Description: "Mikrobio: voraussichtliche-empfindlichkeit — Probe nicht auswert
 * identifier[analyseBefundCode].assigner.identifier.system = "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"
 * identifier[analyseBefundCode].assigner.identifier.value = "DIZ-CHA"
 * status = #final
-* category[mibi-category].coding[v2-microbiology] = $v2-0074#MB
 * category[mibi-category].coding[loinc-observation] = $loinc#26436-6
 * category[mibi-category].coding[observation-category] = $observation-category#laboratory
 * category[mibi-category].coding[loinc-microbiology-studies] = $loinc#18725-2 "Microbiology studies (set)"
@@ -1650,51 +1433,11 @@ Description: "Mikrobio: voraussichtliche-empfindlichkeit — Probe nicht auswert
 * specimen = Reference(mii-exa-test-data-mikrobio-specimen-1)
 * specimen.identifier.system = "https://www.charite.de/fhir/sid/Probennummer"
 * specimen.identifier.value = "BLOOD-CULT-001"
-* device = Reference(mii-exa-test-data-mikrobio-device-1)
+* device = Reference(mii-exa-test-data-mikrobio-device-pcr-1)
 * device.identifier.system = "https://www.charite.de/fhir/sid/device-identifier"
-* device.identifier.value = "VITEK2-001"
-* code.coding = $loinc#89489-9
+* device.identifier.value = "PCR-CYCLER-001"
+* code.coding = $loinc#92255-9 "Methicillin [Susceptibility] by Genotype method"
 * dataAbsentReason.coding = $data-absent-reason#unknown "Unknown"
-* method.coding = $sct#258066000
+* method.coding = $sct#708060009
 * note[+].text = "Probe nicht auswertbar — Ergebnis nicht verfügbar."
 
-
-Instance: mii-exa-test-data-mikrobio-titer-cc-1
-InstanceOf: https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-titer
-Usage: #example
-Description: "Mikrobio: titer — CodeableConcept-Variante zur MS-Coverage"
-* insert TestDataLabel
-* meta.source = "https://example.org/fhir/mikrobio-lab-system"
-* identifier[analyseBefundCode].type.coding[observationInstanceV2] = $v2-0203#OBI
-* identifier[analyseBefundCode].system = "https://www.charite.de/fhir/sid/test-lab-results"
-* identifier[analyseBefundCode].value = "titer-cc-1"
-* identifier[analyseBefundCode].assigner.identifier.system = "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"
-* identifier[analyseBefundCode].assigner.identifier.value = "DIZ-CHA"
-* status = #final
-* category[mibi-category].coding[v2-microbiology] = $v2-0074#MB
-* category[mibi-category].coding[loinc-observation] = $loinc#26436-6
-* category[mibi-category].coding[observation-category] = $observation-category#laboratory
-* category[mibi-category].coding[loinc-microbiology-studies] = $loinc#18725-2 "Microbiology studies (set)"
-* subject = Reference(mii-exa-test-data-mikrobio-patient-1)
-* subject.identifier.system = "https://www.charite.de/fhir/sid/patientenidentifikation"
-* subject.identifier.value = "MIKROBIO-TEST-001"
-* encounter = Reference(mii-exa-test-data-mikrobio-encounter-1)
-* encounter.identifier.system = "https://www.charite.de/fhir/sid/encounter-identifier"
-* encounter.identifier.value = "MIKROBIO-ENC-001"
-* effectiveDateTime = "2026-04-05T10:00:00+02:00"
-* effectiveDateTime.extension[+].url = "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum"
-* effectiveDateTime.extension[=].valueCodeableConcept = $sct#281271004 "Date sample collected (observable entity)"
-* issued = "2026-04-05T11:00:00+02:00"
-* specimen = Reference(mii-exa-test-data-mikrobio-specimen-1)
-* specimen.identifier.system = "https://www.charite.de/fhir/sid/Probennummer"
-* specimen.identifier.value = "BLOOD-CULT-001"
-* device = Reference(mii-exa-test-data-mikrobio-device-1)
-* device.identifier.system = "https://www.charite.de/fhir/sid/device-identifier"
-* device.identifier.value = "VITEK2-001"
-* code.coding = $loinc#53655-7 "Antibody titer in Serum"
-* valueCodeableConcept.coding = $sct#10828004 "Positive (qualifier value)"
-* valueCodeableConcept.coding.system = "http://snomed.info/sct"
-* valueCodeableConcept.coding.code = #10828004
-* method.coding = $sct#708104000 "Serological agglutination"
-* interpretation = $v3-ObservationInterpretation#POS "Positive"
-* note[+].text = "Titer-CC-Variante zur MS-Coverage"

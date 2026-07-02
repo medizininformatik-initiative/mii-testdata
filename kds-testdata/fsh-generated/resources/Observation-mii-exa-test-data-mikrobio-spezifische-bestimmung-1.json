@@ -42,10 +42,6 @@
           "code": "MB"
         },
         {
-          "code": "MB",
-          "system": "http://terminology.hl7.org/CodeSystem/v2-0074"
-        },
-        {
           "code": "26436-6",
           "system": "http://loinc.org"
         },
@@ -85,9 +81,9 @@
   "device": {
     "identifier": {
       "system": "https://www.charite.de/fhir/sid/device-identifier",
-      "value": "VITEK2-001"
+      "value": "MALDI-TOF-001"
     },
-    "reference": "Device/mii-exa-test-data-mikrobio-device-1"
+    "reference": "Device/mii-exa-test-data-mikrobio-device-maldi-1"
   },
   "extension": [
     {
@@ -109,9 +105,9 @@
   "code": {
     "coding": [
       {
-        "code": "92253-4",
+        "code": "100897-8",
         "system": "http://loinc.org",
-        "display": "Microorganism or agent identified in Specimen"
+        "display": "Staphylococcus aureus [Presence] in Specimen by Organism specific culture"
       }
     ]
   },
@@ -127,15 +123,15 @@
   "method": {
     "coding": [
       {
-        "code": "258066000",
+        "code": "703752003",
         "system": "http://snomed.info/sct",
-        "display": "MALDI-TOF mass spectrometry technique (qualifier value)"
+        "display": "Organism specific culture technique (qualifier value)"
       }
     ]
   },
   "note": [
     {
-      "text": "Identifikation via MALDI-TOF (Score 2.4)."
+      "text": "Identifikation via spezifische Kultur."
     }
   ],
   "status": "final",

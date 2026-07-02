@@ -42,10 +42,6 @@
           "code": "MB"
         },
         {
-          "code": "MB",
-          "system": "http://terminology.hl7.org/CodeSystem/v2-0074"
-        },
-        {
           "code": "26436-6",
           "system": "http://loinc.org"
         },
@@ -82,19 +78,12 @@
     },
     "reference": "Specimen/mii-exa-test-data-mikrobio-specimen-1"
   },
-  "device": {
-    "identifier": {
-      "system": "https://www.charite.de/fhir/sid/device-identifier",
-      "value": "VITEK2-001"
-    },
-    "reference": "Device/mii-exa-test-data-mikrobio-device-1"
-  },
   "code": {
     "coding": [
       {
         "system": "http://loinc.org",
         "code": "101433-1",
-        "display": "Nugent score"
+        "display": "Bacterial vaginosis score in Vaginal fluid Qualitative by Nugent"
       }
     ]
   },
@@ -103,14 +92,6 @@
     "system": "http://unitsofmeasure.org",
     "code": "1",
     "value": 7,
-    "_value": {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/StructureDefinition/quantity-precision",
-          "valueInteger": 0
-        }
-      ]
-    },
     "comparator": ">="
   },
   "method": {
@@ -118,7 +99,7 @@
       {
         "system": "http://snomed.info/sct",
         "code": "702661004",
-        "display": "Microscopy by Gram stain (procedure)"
+        "display": "Light microscopy technique (qualifier value)"
       }
     ]
   },

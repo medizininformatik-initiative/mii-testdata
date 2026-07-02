@@ -42,10 +42,6 @@
           "code": "MB"
         },
         {
-          "code": "MB",
-          "system": "http://terminology.hl7.org/CodeSystem/v2-0074"
-        },
-        {
           "code": "26436-6",
           "system": "http://loinc.org"
         },
@@ -85,9 +81,9 @@
   "device": {
     "identifier": {
       "system": "https://www.charite.de/fhir/sid/device-identifier",
-      "value": "VITEK2-001"
+      "value": "PCR-CYCLER-001"
     },
-    "reference": "Device/mii-exa-test-data-mikrobio-device-1"
+    "reference": "Device/mii-exa-test-data-mikrobio-device-pcr-1"
   },
   "derivedFrom": [
     {
@@ -99,7 +95,7 @@
       {
         "code": "74039-9",
         "system": "http://loinc.org",
-        "display": "Threshold cycle time"
+        "display": "Influenza virus A H3 RNA [Cycle Threshold #] in Specimen by NAA with probe detection"
       }
     ]
   },
@@ -116,7 +112,7 @@
       ]
     },
     "comparator": "<",
-    "unit": "1"
+    "unit": "Ct"
   },
   "method": {
     "coding": [
@@ -142,13 +138,13 @@
     {
       "low": {
         "value": 0,
-        "unit": "1",
+        "unit": "Ct",
         "system": "http://unitsofmeasure.org",
         "code": "1"
       },
       "high": {
         "value": 35,
-        "unit": "1",
+        "unit": "Ct",
         "system": "http://unitsofmeasure.org",
         "code": "1"
       }

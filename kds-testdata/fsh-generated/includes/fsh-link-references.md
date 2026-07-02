@@ -121,7 +121,9 @@
 [mii-exa-test-data-mikrobio-ct-wert-1]: Observation-mii-exa-test-data-mikrobio-ct-wert-1.html
 [mii-exa-test-data-mikrobio-ct-wert-alt-1]: Observation-mii-exa-test-data-mikrobio-ct-wert-alt-1.html
 [mii-exa-test-data-mikrobio-ct-wert-dar-1]: Observation-mii-exa-test-data-mikrobio-ct-wert-dar-1.html
-[mii-exa-test-data-mikrobio-device-1]: Device-mii-exa-test-data-mikrobio-device-1.html
+[mii-exa-test-data-mikrobio-device-immunoassay-1]: Device-mii-exa-test-data-mikrobio-device-immunoassay-1.html
+[mii-exa-test-data-mikrobio-device-maldi-1]: Device-mii-exa-test-data-mikrobio-device-maldi-1.html
+[mii-exa-test-data-mikrobio-device-pcr-1]: Device-mii-exa-test-data-mikrobio-device-pcr-1.html
 [mii-exa-test-data-mikrobio-diagnostic-report-1]: DiagnosticReport-mii-exa-test-data-mikrobio-diagnostic-report-1.html
 [mii-exa-test-data-mikrobio-empfindlichkeit-1]: Observation-mii-exa-test-data-mikrobio-empfindlichkeit-1.html
 [mii-exa-test-data-mikrobio-empfindlichkeit-alt-1]: Observation-mii-exa-test-data-mikrobio-empfindlichkeit-alt-1.html
@@ -158,7 +160,6 @@
 [mii-exa-test-data-mikrobio-spezifische-bestimmung-dar-1]: Observation-mii-exa-test-data-mikrobio-spezifische-bestimmung-dar-1.html
 [mii-exa-test-data-mikrobio-titer-1]: Observation-mii-exa-test-data-mikrobio-titer-1.html
 [mii-exa-test-data-mikrobio-titer-alt-1]: Observation-mii-exa-test-data-mikrobio-titer-alt-1.html
-[mii-exa-test-data-mikrobio-titer-cc-1]: Observation-mii-exa-test-data-mikrobio-titer-cc-1.html
 [mii-exa-test-data-mikrobio-titer-dar-1]: Observation-mii-exa-test-data-mikrobio-titer-dar-1.html
 [mii-exa-test-data-mikrobio-virulenzfaktor-1]: Observation-mii-exa-test-data-mikrobio-virulenzfaktor-1.html
 [mii-exa-test-data-mikrobio-virulenzfaktor-alt-1]: Observation-mii-exa-test-data-mikrobio-virulenzfaktor-alt-1.html

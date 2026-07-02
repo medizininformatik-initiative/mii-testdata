@@ -42,10 +42,6 @@
           "code": "MB"
         },
         {
-          "code": "MB",
-          "system": "http://terminology.hl7.org/CodeSystem/v2-0074"
-        },
-        {
           "code": "26436-6",
           "system": "http://loinc.org"
         },
@@ -85,9 +81,9 @@
   "device": {
     "identifier": {
       "system": "https://www.charite.de/fhir/sid/device-identifier",
-      "value": "VITEK2-001"
+      "value": "PCR-CYCLER-001"
     },
-    "reference": "Device/mii-exa-test-data-mikrobio-device-1"
+    "reference": "Device/mii-exa-test-data-mikrobio-device-pcr-1"
   },
   "modifierExtension": [
     {
@@ -119,48 +115,27 @@
   "code": {
     "coding": [
       {
-        "code": "92253-4",
-        "system": "http://loinc.org"
+        "code": "105651-4",
+        "system": "http://loinc.org",
+        "display": "Enterobacter cloacae complex DNA [Presence] in Specimen by NAA with probe detection"
       }
     ]
   },
-  "valueQuantity": {
-    "system": "http://unitsofmeasure.org",
-    "value": 1,
-    "_value": {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/StructureDefinition/quantity-precision",
-          "valueInteger": 0
-        }
-      ]
-    },
-    "comparator": ">=",
-    "unit": "1",
-    "code": "1"
-  },
-  "referenceRange": [
-    {
-      "low": {
-        "value": 0,
-        "unit": "1",
-        "system": "http://unitsofmeasure.org",
-        "code": "1"
-      },
-      "high": {
-        "value": 10,
-        "unit": "1",
-        "system": "http://unitsofmeasure.org",
-        "code": "1"
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "code": "260373001",
+        "system": "http://snomed.info/sct",
+        "display": "Detected (qualifier value)"
       }
-    }
-  ],
+    ]
+  },
   "method": {
     "coding": [
       {
-        "code": "258066000",
+        "code": "70601000052104",
         "system": "http://snomed.info/sct",
-        "display": "MALDI-TOF"
+        "display": "Real-time polymerase chain reaction technique (qualifier value)"
       }
     ]
   },

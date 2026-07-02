@@ -48,15 +48,6 @@
     {
       "coding": [
         {
-          "code": "MB",
-          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
-          "display": "Microbiology"
-        }
-      ]
-    },
-    {
-      "coding": [
-        {
           "code": "18725-2",
           "system": "http://loinc.org",
           "display": "Microbiology studies (set)"

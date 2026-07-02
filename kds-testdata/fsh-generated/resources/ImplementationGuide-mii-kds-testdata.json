@@ -1163,10 +1163,26 @@
       },
       {
         "reference": {
-          "reference": "Device/mii-exa-test-data-mikrobio-device-1"
+          "reference": "Device/mii-exa-test-data-mikrobio-device-immunoassay-1"
         },
-        "name": "mii-exa-test-data-mikrobio-device-1",
-        "description": "Mikrobio Lab Analyzer: VITEK 2 (BioMérieux)",
+        "name": "mii-exa-test-data-mikrobio-device-immunoassay-1",
+        "description": "Mikrobio Lab Analyzer: Immunoassay-Analyzer (Serologie)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Device/mii-exa-test-data-mikrobio-device-maldi-1"
+        },
+        "name": "mii-exa-test-data-mikrobio-device-maldi-1",
+        "description": "Mikrobio Lab Analyzer: MALDI-TOF Massenspektrometer (Erreger-Identifikation)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Device/mii-exa-test-data-mikrobio-device-pcr-1"
+        },
+        "name": "mii-exa-test-data-mikrobio-device-pcr-1",
+        "description": "Mikrobio Lab Analyzer: Real-time-PCR-Cycler (molekulare Diagnostik)",
         "exampleBoolean": true
       },
       {
@@ -1310,7 +1326,7 @@
           "reference": "Observation/mii-exa-test-data-mikrobio-mrgn-klasse-1"
         },
         "name": "mii-exa-test-data-mikrobio-mrgn-klasse-1",
-        "description": "Mikrobio: MRGN-Klasse 2MRGN (E. coli)",
+        "description": "Mikrobio: MRGN-Klasse 3MRGN (E. coli)",
         "exampleBoolean": true
       },
       {
@@ -1455,14 +1471,6 @@
         },
         "name": "mii-exa-test-data-mikrobio-titer-alt-1",
         "description": "Mikrobio: titer — Alt-Variante zur MS-Coverage",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "Observation/mii-exa-test-data-mikrobio-titer-cc-1"
-        },
-        "name": "mii-exa-test-data-mikrobio-titer-cc-1",
-        "description": "Mikrobio: titer — CodeableConcept-Variante zur MS-Coverage",
         "exampleBoolean": true
       },
       {

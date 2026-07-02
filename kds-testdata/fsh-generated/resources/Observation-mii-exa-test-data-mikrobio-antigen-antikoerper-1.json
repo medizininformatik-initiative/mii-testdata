@@ -42,10 +42,6 @@
           "code": "MB"
         },
         {
-          "code": "MB",
-          "system": "http://terminology.hl7.org/CodeSystem/v2-0074"
-        },
-        {
           "code": "26436-6",
           "system": "http://loinc.org"
         },
@@ -85,9 +81,9 @@
   "device": {
     "identifier": {
       "system": "https://www.charite.de/fhir/sid/device-identifier",
-      "value": "VITEK2-001"
+      "value": "IMMUNOASSAY-001"
     },
-    "reference": "Device/mii-exa-test-data-mikrobio-device-1"
+    "reference": "Device/mii-exa-test-data-mikrobio-device-immunoassay-1"
   },
   "modifierExtension": [
     {
@@ -102,23 +98,15 @@
   "code": {
     "coding": [
       {
-        "code": "94507-1",
+        "code": "5060-9",
         "system": "http://loinc.org",
-        "display": "Serotype identifier by immunoassay"
+        "display": "Borrelia burgdorferi Ab [Units/volume] in Serum by Immunoassay"
       }
     ]
   },
   "valueQuantity": {
     "system": "http://unitsofmeasure.org",
     "value": 42,
-    "_value": {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/StructureDefinition/quantity-precision",
-          "valueInteger": 1
-        }
-      ]
-    },
     "comparator": ">",
     "unit": "[IU]/mL",
     "code": "[IU]/mL"
@@ -161,7 +149,7 @@
   ],
   "note": [
     {
-      "text": "IgG-Titer erhoeht; Verdachtsdiagnose passt zu durchgemachter Infektion. Haemolyse der Probe beachten!"
+      "text": "Borrelien-Antikörper nachweisbar. Klinische Korrelation empfohlen."
     }
   ],
   "status": "final",

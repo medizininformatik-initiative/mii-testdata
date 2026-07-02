@@ -42,10 +42,6 @@
           "code": "MB"
         },
         {
-          "code": "MB",
-          "system": "http://terminology.hl7.org/CodeSystem/v2-0074"
-        },
-        {
           "code": "26436-6",
           "system": "http://loinc.org"
         },
@@ -82,19 +78,12 @@
     },
     "reference": "Specimen/mii-exa-test-data-mikrobio-specimen-1"
   },
-  "device": {
-    "identifier": {
-      "system": "https://www.charite.de/fhir/sid/device-identifier",
-      "value": "VITEK2-001"
-    },
-    "reference": "Device/mii-exa-test-data-mikrobio-device-1"
-  },
   "code": {
     "coding": [
       {
         "system": "http://loinc.org",
         "code": "75371-5",
-        "display": "Bartlett quality assessment of sputum smear"
+        "display": "Bartlett score of Sputum Qualitative by Light microscopy"
       }
     ]
   },
@@ -103,7 +92,7 @@
       {
         "code": "LA21390-2",
         "system": "http://loinc.org",
-        "display": "Good quality sputum sample for culture"
+        "display": "+1 Active inflammation"
       }
     ]
   },
@@ -112,7 +101,7 @@
       {
         "system": "http://snomed.info/sct",
         "code": "702661004",
-        "display": "Microscopy by Gram stain"
+        "display": "Light microscopy technique (qualifier value)"
       }
     ]
   },
@@ -120,9 +109,9 @@
     {
       "coding": [
         {
-          "code": "N",
+          "code": "A",
           "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
-          "display": "Normal"
+          "display": "Abnormal"
         }
       ]
     }

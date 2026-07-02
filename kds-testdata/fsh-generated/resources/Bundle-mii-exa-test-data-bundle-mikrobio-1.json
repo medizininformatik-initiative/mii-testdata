@@ -220,12 +220,12 @@
     {
       "request": {
         "method": "PUT",
-        "url": "Device/mii-exa-test-data-mikrobio-device-1"
+        "url": "Device/mii-exa-test-data-mikrobio-device-maldi-1"
       },
-      "fullUrl": "https://www.medizininformatik-initiative.de/Device/mii-exa-test-data-mikrobio-device-1",
+      "fullUrl": "https://www.medizininformatik-initiative.de/Device/mii-exa-test-data-mikrobio-device-maldi-1",
       "resource": {
         "resourceType": "Device",
-        "id": "mii-exa-test-data-mikrobio-device-1",
+        "id": "mii-exa-test-data-mikrobio-device-maldi-1",
         "meta": {
           "security": [
             {
@@ -238,13 +238,13 @@
         "identifier": [
           {
             "system": "https://www.charite.de/fhir/sid/device-identifier",
-            "value": "VITEK2-001"
+            "value": "MALDI-TOF-001"
           }
         ],
         "deviceName": [
           {
-            "name": "VITEK 2",
-            "type": "manufacturer-name"
+            "name": "MALDI Biotyper",
+            "type": "model-name"
           }
         ],
         "type": {
@@ -256,6 +256,70 @@
             }
           ]
         }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Device/mii-exa-test-data-mikrobio-device-pcr-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Device/mii-exa-test-data-mikrobio-device-pcr-1",
+      "resource": {
+        "resourceType": "Device",
+        "id": "mii-exa-test-data-mikrobio-device-pcr-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://www.charite.de/fhir/sid/device-identifier",
+            "value": "PCR-CYCLER-001"
+          }
+        ],
+        "deviceName": [
+          {
+            "name": "Real-Time PCR Cycler",
+            "type": "model-name"
+          }
+        ]
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Device/mii-exa-test-data-mikrobio-device-immunoassay-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Device/mii-exa-test-data-mikrobio-device-immunoassay-1",
+      "resource": {
+        "resourceType": "Device",
+        "id": "mii-exa-test-data-mikrobio-device-immunoassay-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://www.charite.de/fhir/sid/device-identifier",
+            "value": "IMMUNOASSAY-001"
+          }
+        ],
+        "deviceName": [
+          {
+            "name": "Immunoassay Analyzer",
+            "type": "model-name"
+          }
+        ]
       }
     },
     {
@@ -352,10 +416,6 @@
                 "code": "MB"
               },
               {
-                "code": "MB",
-                "system": "http://terminology.hl7.org/CodeSystem/v2-0074"
-              },
-              {
                 "code": "26436-6",
                 "system": "http://loinc.org"
               },
@@ -392,19 +452,12 @@
           },
           "reference": "Specimen/mii-exa-test-data-mikrobio-specimen-1"
         },
-        "device": {
-          "identifier": {
-            "system": "https://www.charite.de/fhir/sid/device-identifier",
-            "value": "VITEK2-001"
-          },
-          "reference": "Device/mii-exa-test-data-mikrobio-device-1"
-        },
         "code": {
           "coding": [
             {
               "system": "http://loinc.org",
               "code": "11475-1",
-              "display": "Microorganism identified in Blood by Aerobic culture"
+              "display": "Microorganism identified in Specimen by Culture"
             }
           ]
         },
@@ -422,7 +475,7 @@
             {
               "code": "703750006",
               "system": "http://snomed.info/sct",
-              "display": "Bacterial culture (procedure)"
+              "display": "Aerobic culture technique (qualifier value)"
             }
           ]
         },
@@ -513,10 +566,6 @@
                 "code": "MB"
               },
               {
-                "code": "MB",
-                "system": "http://terminology.hl7.org/CodeSystem/v2-0074"
-              },
-              {
                 "code": "26436-6",
                 "system": "http://loinc.org"
               },
@@ -553,19 +602,12 @@
           },
           "reference": "Specimen/mii-exa-test-data-mikrobio-specimen-1"
         },
-        "device": {
-          "identifier": {
-            "system": "https://www.charite.de/fhir/sid/device-identifier",
-            "value": "VITEK2-001"
-          },
-          "reference": "Device/mii-exa-test-data-mikrobio-device-1"
-        },
         "code": {
           "coding": [
             {
               "system": "http://loinc.org",
               "code": "11475-1",
-              "display": "Microorganism identified in Blood by Aerobic culture"
+              "display": "Microorganism identified in Specimen by Culture"
             }
           ]
         },
@@ -583,7 +625,7 @@
             {
               "code": "703750006",
               "system": "http://snomed.info/sct",
-              "display": "Bacterial culture (procedure)"
+              "display": "Aerobic culture technique (qualifier value)"
             }
           ]
         },
@@ -663,10 +705,6 @@
                 "code": "MB"
               },
               {
-                "code": "MB",
-                "system": "http://terminology.hl7.org/CodeSystem/v2-0074"
-              },
-              {
                 "code": "26436-6",
                 "system": "http://loinc.org"
               },
@@ -706,9 +744,9 @@
         "device": {
           "identifier": {
             "system": "https://www.charite.de/fhir/sid/device-identifier",
-            "value": "VITEK2-001"
+            "value": "MALDI-TOF-001"
           },
-          "reference": "Device/mii-exa-test-data-mikrobio-device-1"
+          "reference": "Device/mii-exa-test-data-mikrobio-device-maldi-1"
         },
         "extension": [
           {
@@ -730,9 +768,9 @@
         "code": {
           "coding": [
             {
-              "code": "92253-4",
+              "code": "100897-8",
               "system": "http://loinc.org",
-              "display": "Microorganism or agent identified in Specimen"
+              "display": "Staphylococcus aureus [Presence] in Specimen by Organism specific culture"
             }
           ]
         },
@@ -748,15 +786,15 @@
         "method": {
           "coding": [
             {
-              "code": "258066000",
+              "code": "703752003",
               "system": "http://snomed.info/sct",
-              "display": "MALDI-TOF mass spectrometry technique (qualifier value)"
+              "display": "Organism specific culture technique (qualifier value)"
             }
           ]
         },
         "note": [
           {
-            "text": "Identifikation via MALDI-TOF (Score 2.4)."
+            "text": "Identifikation via spezifische Kultur."
           }
         ],
         "status": "final",
@@ -830,10 +868,6 @@
                 "code": "MB"
               },
               {
-                "code": "MB",
-                "system": "http://terminology.hl7.org/CodeSystem/v2-0074"
-              },
-              {
                 "code": "26436-6",
                 "system": "http://loinc.org"
               },
@@ -870,13 +904,6 @@
           },
           "reference": "Specimen/mii-exa-test-data-mikrobio-specimen-1"
         },
-        "device": {
-          "identifier": {
-            "system": "https://www.charite.de/fhir/sid/device-identifier",
-            "value": "VITEK2-001"
-          },
-          "reference": "Device/mii-exa-test-data-mikrobio-device-1"
-        },
         "code": {
           "coding": [
             {
@@ -889,9 +916,9 @@
         "valueCodeableConcept": {
           "coding": [
             {
-              "code": "52499004",
+              "code": "3092008",
               "system": "http://snomed.info/sct",
-              "display": "Bacteria detected (finding)"
+              "display": "Staphylococcus aureus (organism)"
             }
           ]
         },
@@ -900,7 +927,7 @@
             {
               "code": "278289002",
               "system": "http://snomed.info/sct",
-              "display": "Microscopy (procedure)"
+              "display": "Microscopy technique (qualifier value)"
             }
           ]
         },
@@ -991,10 +1018,6 @@
                 "code": "MB"
               },
               {
-                "code": "MB",
-                "system": "http://terminology.hl7.org/CodeSystem/v2-0074"
-              },
-              {
                 "code": "26436-6",
                 "system": "http://loinc.org"
               },
@@ -1031,19 +1054,12 @@
           },
           "reference": "Specimen/mii-exa-test-data-mikrobio-specimen-1"
         },
-        "device": {
-          "identifier": {
-            "system": "https://www.charite.de/fhir/sid/device-identifier",
-            "value": "VITEK2-001"
-          },
-          "reference": "Device/mii-exa-test-data-mikrobio-device-1"
-        },
         "code": {
           "coding": [
             {
               "system": "http://loinc.org",
               "code": "105059-0",
-              "display": "Microscopic observation in Specimen"
+              "display": "Microscopic observation [Identifier] in Specimen"
             }
           ]
         },
@@ -1059,9 +1075,9 @@
         "method": {
           "coding": [
             {
-              "code": "278289002",
+              "code": "702661004",
               "system": "http://snomed.info/sct",
-              "display": "Microscopy (procedure)"
+              "display": "Light microscopy technique (qualifier value)"
             }
           ]
         },
@@ -1152,10 +1168,6 @@
                 "code": "MB"
               },
               {
-                "code": "MB",
-                "system": "http://terminology.hl7.org/CodeSystem/v2-0074"
-              },
-              {
                 "code": "26436-6",
                 "system": "http://loinc.org"
               },
@@ -1192,13 +1204,6 @@
           },
           "reference": "Specimen/mii-exa-test-data-mikrobio-specimen-2"
         },
-        "device": {
-          "identifier": {
-            "system": "https://www.charite.de/fhir/sid/device-identifier",
-            "value": "VITEK2-001"
-          },
-          "reference": "Device/mii-exa-test-data-mikrobio-device-1"
-        },
         "modifierExtension": [
           {
             "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/InterpretationsbeeinflussendeEigenschaft",
@@ -1214,7 +1219,7 @@
             {
               "code": "49223-1",
               "system": "http://loinc.org",
-              "display": "Microorganism identified in Urine by Aerobic culture"
+              "display": "Colony count [#/volume] in Specimen by Visual count"
             }
           ]
         },
@@ -1238,7 +1243,7 @@
             {
               "system": "http://snomed.info/sct",
               "code": "410681005",
-              "display": "Total count technique (qualifier value)"
+              "display": "Count of entities (property) (qualifier value)"
             }
           ]
         },
@@ -1345,10 +1350,6 @@
                 "code": "MB"
               },
               {
-                "code": "MB",
-                "system": "http://terminology.hl7.org/CodeSystem/v2-0074"
-              },
-              {
                 "code": "26436-6",
                 "system": "http://loinc.org"
               },
@@ -1385,13 +1386,6 @@
           },
           "reference": "Specimen/mii-exa-test-data-mikrobio-specimen-1"
         },
-        "device": {
-          "identifier": {
-            "system": "https://www.charite.de/fhir/sid/device-identifier",
-            "value": "VITEK2-001"
-          },
-          "reference": "Device/mii-exa-test-data-mikrobio-device-1"
-        },
         "extension": [
           {
             "extension": [
@@ -1412,7 +1406,7 @@
         "code": {
           "coding": [
             {
-              "code": "29576-6",
+              "code": "19000-9",
               "system": "http://loinc.org",
               "display": "Vancomycin [Susceptibility]"
             }
@@ -1461,9 +1455,9 @@
         "method": {
           "coding": [
             {
-              "code": "700461007",
+              "code": "708073008",
               "system": "http://snomed.info/sct",
-              "display": "Antimicrobial susceptibility by MIC technique"
+              "display": "Minimum inhibitory concentration susceptibility test technique (qualifier value)"
             }
           ]
         },
@@ -1559,10 +1553,6 @@
                 "code": "MB"
               },
               {
-                "code": "MB",
-                "system": "http://terminology.hl7.org/CodeSystem/v2-0074"
-              },
-              {
                 "code": "26436-6",
                 "system": "http://loinc.org"
               },
@@ -1602,9 +1592,9 @@
         "device": {
           "identifier": {
             "system": "https://www.charite.de/fhir/sid/device-identifier",
-            "value": "VITEK2-001"
+            "value": "PCR-CYCLER-001"
           },
-          "reference": "Device/mii-exa-test-data-mikrobio-device-1"
+          "reference": "Device/mii-exa-test-data-mikrobio-device-pcr-1"
         },
         "extension": [
           {
@@ -1626,9 +1616,9 @@
         "code": {
           "coding": [
             {
-              "code": "89489-9",
+              "code": "92255-9",
               "system": "http://loinc.org",
-              "display": "Antimicrobial susceptibility predicted from genotype"
+              "display": "Methicillin [Susceptibility] by Genotype method"
             }
           ]
         },
@@ -1644,9 +1634,9 @@
         "method": {
           "coding": [
             {
-              "code": "258066000",
+              "code": "708060009",
               "system": "http://snomed.info/sct",
-              "display": "Molecular detection technique"
+              "display": "Genotype determination technique (qualifier value)"
             }
           ]
         },
@@ -1726,10 +1716,6 @@
                 "code": "MB"
               },
               {
-                "code": "MB",
-                "system": "http://terminology.hl7.org/CodeSystem/v2-0074"
-              },
-              {
                 "code": "26436-6",
                 "system": "http://loinc.org"
               },
@@ -1769,9 +1755,9 @@
         "device": {
           "identifier": {
             "system": "https://www.charite.de/fhir/sid/device-identifier",
-            "value": "VITEK2-001"
+            "value": "PCR-CYCLER-001"
           },
-          "reference": "Device/mii-exa-test-data-mikrobio-device-1"
+          "reference": "Device/mii-exa-test-data-mikrobio-device-pcr-1"
         },
         "extension": [
           {
@@ -1802,7 +1788,7 @@
         "valueCodeableConcept": {
           "coding": [
             {
-              "code": "409795000",
+              "code": "115329001",
               "system": "http://snomed.info/sct",
               "display": "Methicillin resistant Staphylococcus aureus (organism)"
             }
@@ -1811,23 +1797,12 @@
         "method": {
           "coding": [
             {
-              "code": "258066000",
+              "code": "708068002",
               "system": "http://snomed.info/sct",
-              "display": "MALDI-TOF mass spectrometry technique"
+              "display": "Molecular genetics technique (qualifier value)"
             }
           ]
         },
-        "interpretation": [
-          {
-            "coding": [
-              {
-                "code": "POS",
-                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
-                "display": "Positive"
-              }
-            ]
-          }
-        ],
         "note": [
           {
             "text": "MRSA-Befund — Isolation noetig."
@@ -1904,10 +1879,6 @@
                 "code": "MB"
               },
               {
-                "code": "MB",
-                "system": "http://terminology.hl7.org/CodeSystem/v2-0074"
-              },
-              {
                 "code": "26436-6",
                 "system": "http://loinc.org"
               },
@@ -1944,13 +1915,6 @@
           },
           "reference": "Specimen/mii-exa-test-data-mikrobio-specimen-2"
         },
-        "device": {
-          "identifier": {
-            "system": "https://www.charite.de/fhir/sid/device-identifier",
-            "value": "VITEK2-001"
-          },
-          "reference": "Device/mii-exa-test-data-mikrobio-device-1"
-        },
         "code": {
           "coding": [
             {
@@ -1963,35 +1927,15 @@
         "valueCodeableConcept": {
           "coding": [
             {
-              "code": "LA33214-0",
+              "code": "LA33215-7",
               "system": "http://loinc.org",
-              "display": "2MRGN"
+              "display": "3MRGN"
             }
           ]
         },
-        "method": {
-          "coding": [
-            {
-              "code": "700452006",
-              "system": "http://snomed.info/sct",
-              "display": "Susceptibility to antimicrobial"
-            }
-          ]
-        },
-        "interpretation": [
-          {
-            "coding": [
-              {
-                "code": "R",
-                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
-                "display": "Resistant"
-              }
-            ]
-          }
-        ],
         "note": [
           {
-            "text": "2MRGN gemaess KRINKO 2012; Cephalosporin-Resistenz nachgewiesen."
+            "text": "3MRGN gemaess KRINKO 2012; Cephalosporin, Acylureidopenicilline, Fluorchinolone -Resistenz nachgewiesen."
           }
         ],
         "status": "final",
@@ -2065,10 +2009,6 @@
                 "code": "MB"
               },
               {
-                "code": "MB",
-                "system": "http://terminology.hl7.org/CodeSystem/v2-0074"
-              },
-              {
                 "code": "26436-6",
                 "system": "http://loinc.org"
               },
@@ -2108,9 +2048,9 @@
         "device": {
           "identifier": {
             "system": "https://www.charite.de/fhir/sid/device-identifier",
-            "value": "VITEK2-001"
+            "value": "PCR-CYCLER-001"
           },
-          "reference": "Device/mii-exa-test-data-mikrobio-device-1"
+          "reference": "Device/mii-exa-test-data-mikrobio-device-pcr-1"
         },
         "extension": [
           {
@@ -2132,9 +2072,9 @@
         "code": {
           "coding": [
             {
-              "code": "92249-2",
+              "code": "48813-0",
               "system": "http://loinc.org",
-              "display": "Genetic variation in Specimen by Molecular method"
+              "display": "Methicillin resistance mecA gene [Presence] by Molecular method"
             }
           ]
         },
@@ -2150,9 +2090,9 @@
         "method": {
           "coding": [
             {
-              "code": "258066000",
+              "code": "708068002",
               "system": "http://snomed.info/sct",
-              "display": "Molecular detection technique"
+              "display": "Molecular genetics technique (qualifier value)"
             }
           ]
         },
@@ -2243,10 +2183,6 @@
                 "code": "MB"
               },
               {
-                "code": "MB",
-                "system": "http://terminology.hl7.org/CodeSystem/v2-0074"
-              },
-              {
                 "code": "26436-6",
                 "system": "http://loinc.org"
               },
@@ -2286,16 +2222,16 @@
         "device": {
           "identifier": {
             "system": "https://www.charite.de/fhir/sid/device-identifier",
-            "value": "VITEK2-001"
+            "value": "PCR-CYCLER-001"
           },
-          "reference": "Device/mii-exa-test-data-mikrobio-device-1"
+          "reference": "Device/mii-exa-test-data-mikrobio-device-pcr-1"
         },
         "code": {
           "coding": [
             {
-              "code": "87402-4",
+              "code": "48816-3",
               "system": "http://loinc.org",
-              "display": "Virulence factor [Identifier] in Specimen by Molecular method"
+              "display": "Staphylococcus aureus Panton-Valentine leukocidin gene [Presence] in Isolate or Specimen by Molecular genetics method"
             }
           ]
         },
@@ -2311,9 +2247,9 @@
         "method": {
           "coding": [
             {
-              "code": "258066000",
+              "code": "70601000052104",
               "system": "http://snomed.info/sct",
-              "display": "Molecular detection technique"
+              "display": "Real-time polymerase chain reaction technique (qualifier value)"
             }
           ]
         },
@@ -2404,10 +2340,6 @@
                 "code": "MB"
               },
               {
-                "code": "MB",
-                "system": "http://terminology.hl7.org/CodeSystem/v2-0074"
-              },
-              {
                 "code": "26436-6",
                 "system": "http://loinc.org"
               },
@@ -2447,9 +2379,9 @@
         "device": {
           "identifier": {
             "system": "https://www.charite.de/fhir/sid/device-identifier",
-            "value": "VITEK2-001"
+            "value": "IMMUNOASSAY-001"
           },
-          "reference": "Device/mii-exa-test-data-mikrobio-device-1"
+          "reference": "Device/mii-exa-test-data-mikrobio-device-immunoassay-1"
         },
         "modifierExtension": [
           {
@@ -2464,23 +2396,15 @@
         "code": {
           "coding": [
             {
-              "code": "94507-1",
+              "code": "5060-9",
               "system": "http://loinc.org",
-              "display": "Serotype identifier by immunoassay"
+              "display": "Borrelia burgdorferi Ab [Units/volume] in Serum by Immunoassay"
             }
           ]
         },
         "valueQuantity": {
           "system": "http://unitsofmeasure.org",
           "value": 42,
-          "_value": {
-            "extension": [
-              {
-                "url": "http://hl7.org/fhir/StructureDefinition/quantity-precision",
-                "valueInteger": 1
-              }
-            ]
-          },
           "comparator": ">",
           "unit": "[IU]/mL",
           "code": "[IU]/mL"
@@ -2523,7 +2447,7 @@
         ],
         "note": [
           {
-            "text": "IgG-Titer erhoeht; Verdachtsdiagnose passt zu durchgemachter Infektion. Haemolyse der Probe beachten!"
+            "text": "Borrelien-Antikörper nachweisbar. Klinische Korrelation empfohlen."
           }
         ],
         "status": "final",
@@ -2597,10 +2521,6 @@
                 "code": "MB"
               },
               {
-                "code": "MB",
-                "system": "http://terminology.hl7.org/CodeSystem/v2-0074"
-              },
-              {
                 "code": "26436-6",
                 "system": "http://loinc.org"
               },
@@ -2640,16 +2560,16 @@
         "device": {
           "identifier": {
             "system": "https://www.charite.de/fhir/sid/device-identifier",
-            "value": "VITEK2-001"
+            "value": "IMMUNOASSAY-001"
           },
-          "reference": "Device/mii-exa-test-data-mikrobio-device-1"
+          "reference": "Device/mii-exa-test-data-mikrobio-device-immunoassay-1"
         },
         "code": {
           "coding": [
             {
-              "code": "92657-6",
+              "code": "56990-5",
               "system": "http://loinc.org",
-              "display": "Antibody avidity mass fraction in Specimen"
+              "display": "Toxoplasma gondii IgG Ab avidity [Ratio] in Serum by Immunoassay"
             }
           ]
         },
@@ -2657,15 +2577,7 @@
           "unit": "%",
           "system": "http://unitsofmeasure.org",
           "code": "%",
-          "value": 35,
-          "_value": {
-            "extension": [
-              {
-                "url": "http://hl7.org/fhir/StructureDefinition/quantity-precision",
-                "valueInteger": 0
-              }
-            ]
-          },
+          "value": 14,
           "comparator": "<"
         },
         "method": {
@@ -2780,10 +2692,6 @@
                 "code": "MB"
               },
               {
-                "code": "MB",
-                "system": "http://terminology.hl7.org/CodeSystem/v2-0074"
-              },
-              {
                 "code": "26436-6",
                 "system": "http://loinc.org"
               },
@@ -2820,43 +2728,32 @@
           },
           "reference": "Specimen/mii-exa-test-data-mikrobio-specimen-1"
         },
-        "device": {
-          "identifier": {
-            "system": "https://www.charite.de/fhir/sid/device-identifier",
-            "value": "VITEK2-001"
-          },
-          "reference": "Device/mii-exa-test-data-mikrobio-device-1"
-        },
         "code": {
           "coding": [
             {
-              "code": "53655-7",
+              "code": "22080-6",
               "system": "http://loinc.org",
-              "display": "Antibody titer in Serum"
+              "display": "Adenovirus Ab [Titer] in Serum"
             }
           ]
         },
-        "valueQuantity": {
-          "system": "http://unitsofmeasure.org",
-          "value": 128,
-          "_value": {
-            "extension": [
-              {
-                "url": "http://hl7.org/fhir/StructureDefinition/quantity-precision",
-                "valueInteger": 0
-              }
-            ]
+        "valueRatio": {
+          "numerator": {
+            "value": 1
           },
-          "comparator": ">=",
-          "unit": "{titer}",
-          "code": "{titer}"
+          "denominator": {
+            "value": 128,
+            "unit": "{titer}",
+            "system": "http://unitsofmeasure.org",
+            "code": "{titer}"
+          }
         },
         "method": {
           "coding": [
             {
               "code": "708104000",
               "system": "http://snomed.info/sct",
-              "display": "Serological agglutination"
+              "display": "Agglutination technique (qualifier value)"
             }
           ]
         },
@@ -2963,10 +2860,6 @@
                 "code": "MB"
               },
               {
-                "code": "MB",
-                "system": "http://terminology.hl7.org/CodeSystem/v2-0074"
-              },
-              {
                 "code": "26436-6",
                 "system": "http://loinc.org"
               },
@@ -3006,9 +2899,9 @@
         "device": {
           "identifier": {
             "system": "https://www.charite.de/fhir/sid/device-identifier",
-            "value": "VITEK2-001"
+            "value": "PCR-CYCLER-001"
           },
-          "reference": "Device/mii-exa-test-data-mikrobio-device-1"
+          "reference": "Device/mii-exa-test-data-mikrobio-device-pcr-1"
         },
         "derivedFrom": [
           {
@@ -3020,7 +2913,7 @@
             {
               "code": "74039-9",
               "system": "http://loinc.org",
-              "display": "Threshold cycle time"
+              "display": "Influenza virus A H3 RNA [Cycle Threshold #] in Specimen by NAA with probe detection"
             }
           ]
         },
@@ -3037,7 +2930,7 @@
             ]
           },
           "comparator": "<",
-          "unit": "1"
+          "unit": "Ct"
         },
         "method": {
           "coding": [
@@ -3063,13 +2956,13 @@
           {
             "low": {
               "value": 0,
-              "unit": "1",
+              "unit": "Ct",
               "system": "http://unitsofmeasure.org",
               "code": "1"
             },
             "high": {
               "value": 35,
-              "unit": "1",
+              "unit": "Ct",
               "system": "http://unitsofmeasure.org",
               "code": "1"
             }
@@ -3151,10 +3044,6 @@
                 "code": "MB"
               },
               {
-                "code": "MB",
-                "system": "http://terminology.hl7.org/CodeSystem/v2-0074"
-              },
-              {
                 "code": "26436-6",
                 "system": "http://loinc.org"
               },
@@ -3194,30 +3083,22 @@
         "device": {
           "identifier": {
             "system": "https://www.charite.de/fhir/sid/device-identifier",
-            "value": "VITEK2-001"
+            "value": "PCR-CYCLER-001"
           },
-          "reference": "Device/mii-exa-test-data-mikrobio-device-1"
+          "reference": "Device/mii-exa-test-data-mikrobio-device-pcr-1"
         },
         "code": {
           "coding": [
             {
-              "code": "94009-8",
+              "code": "95521-1",
               "system": "http://loinc.org",
-              "display": "Pathogen RNA copies per volume"
+              "display": "SARS-CoV-2 (COVID-19) N gene [#/volume] (viral load) in Respiratory system specimen by NAA with probe detection"
             }
           ]
         },
         "valueQuantity": {
           "system": "http://unitsofmeasure.org",
           "value": 350000,
-          "_value": {
-            "extension": [
-              {
-                "url": "http://hl7.org/fhir/StructureDefinition/quantity-precision",
-                "valueInteger": 0
-              }
-            ]
-          },
           "comparator": ">=",
           "unit": "Copies/mL",
           "code": "1/mL"
@@ -3240,22 +3121,6 @@
                 "display": "High"
               }
             ]
-          }
-        ],
-        "referenceRange": [
-          {
-            "low": {
-              "value": 0,
-              "unit": "Copies/mL",
-              "system": "http://unitsofmeasure.org",
-              "code": "1/mL"
-            },
-            "high": {
-              "value": 1000,
-              "unit": "Copies/mL",
-              "system": "http://unitsofmeasure.org",
-              "code": "1/mL"
-            }
           }
         ],
         "note": [
@@ -3334,10 +3199,6 @@
                 "code": "MB"
               },
               {
-                "code": "MB",
-                "system": "http://terminology.hl7.org/CodeSystem/v2-0074"
-              },
-              {
                 "code": "26436-6",
                 "system": "http://loinc.org"
               },
@@ -3374,19 +3235,12 @@
           },
           "reference": "Specimen/mii-exa-test-data-mikrobio-specimen-1"
         },
-        "device": {
-          "identifier": {
-            "system": "https://www.charite.de/fhir/sid/device-identifier",
-            "value": "VITEK2-001"
-          },
-          "reference": "Device/mii-exa-test-data-mikrobio-device-1"
-        },
         "code": {
           "coding": [
             {
               "system": "http://loinc.org",
               "code": "75371-5",
-              "display": "Bartlett quality assessment of sputum smear"
+              "display": "Bartlett score of Sputum Qualitative by Light microscopy"
             }
           ]
         },
@@ -3395,7 +3249,7 @@
             {
               "code": "LA21390-2",
               "system": "http://loinc.org",
-              "display": "Good quality sputum sample for culture"
+              "display": "+1 Active inflammation"
             }
           ]
         },
@@ -3404,7 +3258,7 @@
             {
               "system": "http://snomed.info/sct",
               "code": "702661004",
-              "display": "Microscopy by Gram stain"
+              "display": "Light microscopy technique (qualifier value)"
             }
           ]
         },
@@ -3412,9 +3266,9 @@
           {
             "coding": [
               {
-                "code": "N",
+                "code": "A",
                 "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
-                "display": "Normal"
+                "display": "Abnormal"
               }
             ]
           }
@@ -3495,10 +3349,6 @@
                 "code": "MB"
               },
               {
-                "code": "MB",
-                "system": "http://terminology.hl7.org/CodeSystem/v2-0074"
-              },
-              {
                 "code": "26436-6",
                 "system": "http://loinc.org"
               },
@@ -3535,19 +3385,12 @@
           },
           "reference": "Specimen/mii-exa-test-data-mikrobio-specimen-1"
         },
-        "device": {
-          "identifier": {
-            "system": "https://www.charite.de/fhir/sid/device-identifier",
-            "value": "VITEK2-001"
-          },
-          "reference": "Device/mii-exa-test-data-mikrobio-device-1"
-        },
         "code": {
           "coding": [
             {
               "system": "http://loinc.org",
               "code": "101433-1",
-              "display": "Nugent score"
+              "display": "Bacterial vaginosis score in Vaginal fluid Qualitative by Nugent"
             }
           ]
         },
@@ -3556,14 +3399,6 @@
           "system": "http://unitsofmeasure.org",
           "code": "1",
           "value": 7,
-          "_value": {
-            "extension": [
-              {
-                "url": "http://hl7.org/fhir/StructureDefinition/quantity-precision",
-                "valueInteger": 0
-              }
-            ]
-          },
           "comparator": ">="
         },
         "method": {
@@ -3571,7 +3406,7 @@
             {
               "system": "http://snomed.info/sct",
               "code": "702661004",
-              "display": "Microscopy by Gram stain (procedure)"
+              "display": "Light microscopy technique (qualifier value)"
             }
           ]
         },
@@ -3678,10 +3513,6 @@
                 "code": "MB"
               },
               {
-                "code": "MB",
-                "system": "http://terminology.hl7.org/CodeSystem/v2-0074"
-              },
-              {
                 "code": "26436-6",
                 "system": "http://loinc.org"
               },
@@ -3718,13 +3549,6 @@
           },
           "reference": "Specimen/mii-exa-test-data-mikrobio-specimen-1"
         },
-        "device": {
-          "identifier": {
-            "system": "https://www.charite.de/fhir/sid/device-identifier",
-            "value": "VITEK2-001"
-          },
-          "reference": "Device/mii-exa-test-data-mikrobio-device-1"
-        },
         "modifierExtension": [
           {
             "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/InterpretationsbeeinflussendeEigenschaft",
@@ -3760,43 +3584,21 @@
             }
           ]
         },
-        "valueQuantity": {
-          "system": "http://unitsofmeasure.org",
-          "value": 1,
-          "_value": {
-            "extension": [
-              {
-                "url": "http://hl7.org/fhir/StructureDefinition/quantity-precision",
-                "valueInteger": 0
-              }
-            ]
-          },
-          "comparator": ">=",
-          "unit": "1",
-          "code": "1"
-        },
-        "referenceRange": [
-          {
-            "low": {
-              "value": 0,
-              "unit": "1",
-              "system": "http://unitsofmeasure.org",
-              "code": "1"
-            },
-            "high": {
-              "value": 10,
-              "unit": "1",
-              "system": "http://unitsofmeasure.org",
-              "code": "1"
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "260373001",
+              "system": "http://snomed.info/sct",
+              "display": "Detected (qualifier value)"
             }
-          }
-        ],
+          ]
+        },
         "method": {
           "coding": [
             {
               "code": "278289002",
               "system": "http://snomed.info/sct",
-              "display": "Microscopy (procedure)"
+              "display": "Microscopy technique (qualifier value)"
             }
           ]
         },
@@ -3887,10 +3689,6 @@
                 "code": "MB"
               },
               {
-                "code": "MB",
-                "system": "http://terminology.hl7.org/CodeSystem/v2-0074"
-              },
-              {
                 "code": "26436-6",
                 "system": "http://loinc.org"
               },
@@ -3926,13 +3724,6 @@
             "value": "BLOOD-CULT-001"
           },
           "reference": "Specimen/mii-exa-test-data-mikrobio-specimen-1"
-        },
-        "device": {
-          "identifier": {
-            "system": "https://www.charite.de/fhir/sid/device-identifier",
-            "value": "VITEK2-001"
-          },
-          "reference": "Device/mii-exa-test-data-mikrobio-device-1"
         },
         "code": {
           "coding": [
@@ -4035,10 +3826,6 @@
                 "code": "MB"
               },
               {
-                "code": "MB",
-                "system": "http://terminology.hl7.org/CodeSystem/v2-0074"
-              },
-              {
                 "code": "26436-6",
                 "system": "http://loinc.org"
               },
@@ -4075,13 +3862,6 @@
           },
           "reference": "Specimen/mii-exa-test-data-mikrobio-specimen-1"
         },
-        "device": {
-          "identifier": {
-            "system": "https://www.charite.de/fhir/sid/device-identifier",
-            "value": "VITEK2-001"
-          },
-          "reference": "Device/mii-exa-test-data-mikrobio-device-1"
-        },
         "modifierExtension": [
           {
             "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/InterpretationsbeeinflussendeEigenschaft",
@@ -4117,43 +3897,21 @@
             }
           ]
         },
-        "valueQuantity": {
-          "system": "http://unitsofmeasure.org",
-          "value": 1,
-          "_value": {
-            "extension": [
-              {
-                "url": "http://hl7.org/fhir/StructureDefinition/quantity-precision",
-                "valueInteger": 0
-              }
-            ]
-          },
-          "comparator": ">=",
-          "unit": "1",
-          "code": "1"
-        },
-        "referenceRange": [
-          {
-            "low": {
-              "value": 0,
-              "unit": "1",
-              "system": "http://unitsofmeasure.org",
-              "code": "1"
-            },
-            "high": {
-              "value": 10,
-              "unit": "1",
-              "system": "http://unitsofmeasure.org",
-              "code": "1"
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "264868006",
+              "system": "http://snomed.info/sct",
+              "display": "No growth (qualifier value)"
             }
-          }
-        ],
+          ]
+        },
         "method": {
           "coding": [
             {
               "code": "703750006",
               "system": "http://snomed.info/sct",
-              "display": "Bacterial culture (procedure)"
+              "display": "Aerobic culture technique (qualifier value)"
             }
           ]
         },
@@ -4244,10 +4002,6 @@
                 "code": "MB"
               },
               {
-                "code": "MB",
-                "system": "http://terminology.hl7.org/CodeSystem/v2-0074"
-              },
-              {
                 "code": "26436-6",
                 "system": "http://loinc.org"
               },
@@ -4287,9 +4041,9 @@
         "device": {
           "identifier": {
             "system": "https://www.charite.de/fhir/sid/device-identifier",
-            "value": "VITEK2-001"
+            "value": "IMMUNOASSAY-001"
           },
-          "reference": "Device/mii-exa-test-data-mikrobio-device-1"
+          "reference": "Device/mii-exa-test-data-mikrobio-device-immunoassay-1"
         },
         "modifierExtension": [
           {
@@ -4321,19 +4075,18 @@
         "code": {
           "coding": [
             {
-              "code": "94507-1",
-              "system": "http://loinc.org"
+              "code": "5060-9",
+              "system": "http://loinc.org",
+              "display": "Borrelia burgdorferi Ab [Units/volume] in Serum by Immunoassay"
             }
           ]
         },
-        "valueCodeableConcept": {
-          "coding": [
-            {
-              "code": "260373001",
-              "system": "http://snomed.info/sct",
-              "display": "Detected (qualifier value)"
-            }
-          ]
+        "valueQuantity": {
+          "system": "http://unitsofmeasure.org",
+          "value": 8,
+          "comparator": "<",
+          "unit": "[IU]/mL",
+          "code": "[IU]/mL"
         },
         "method": {
           "coding": [
@@ -4431,10 +4184,6 @@
                 "code": "MB"
               },
               {
-                "code": "MB",
-                "system": "http://terminology.hl7.org/CodeSystem/v2-0074"
-              },
-              {
                 "code": "26436-6",
                 "system": "http://loinc.org"
               },
@@ -4474,15 +4223,16 @@
         "device": {
           "identifier": {
             "system": "https://www.charite.de/fhir/sid/device-identifier",
-            "value": "VITEK2-001"
+            "value": "IMMUNOASSAY-001"
           },
-          "reference": "Device/mii-exa-test-data-mikrobio-device-1"
+          "reference": "Device/mii-exa-test-data-mikrobio-device-immunoassay-1"
         },
         "code": {
           "coding": [
             {
-              "code": "94507-1",
-              "system": "http://loinc.org"
+              "code": "5060-9",
+              "system": "http://loinc.org",
+              "display": "Borrelia burgdorferi Ab [Units/volume] in Serum by Immunoassay"
             }
           ]
         },
@@ -4579,10 +4329,6 @@
                 "code": "MB"
               },
               {
-                "code": "MB",
-                "system": "http://terminology.hl7.org/CodeSystem/v2-0074"
-              },
-              {
                 "code": "26436-6",
                 "system": "http://loinc.org"
               },
@@ -4622,9 +4368,9 @@
         "device": {
           "identifier": {
             "system": "https://www.charite.de/fhir/sid/device-identifier",
-            "value": "VITEK2-001"
+            "value": "IMMUNOASSAY-001"
           },
-          "reference": "Device/mii-exa-test-data-mikrobio-device-1"
+          "reference": "Device/mii-exa-test-data-mikrobio-device-immunoassay-1"
         },
         "modifierExtension": [
           {
@@ -4656,19 +4402,18 @@
         "code": {
           "coding": [
             {
-              "code": "92657-6",
-              "system": "http://loinc.org"
+              "code": "104428-8",
+              "system": "http://loinc.org",
+              "display": "Measles virus IgG Ab avidity [Ratio] in Serum by Immunoassay"
             }
           ]
         },
-        "valueCodeableConcept": {
-          "coding": [
-            {
-              "code": "260373001",
-              "system": "http://snomed.info/sct",
-              "display": "Detected (qualifier value)"
-            }
-          ]
+        "valueQuantity": {
+          "unit": "%",
+          "system": "http://unitsofmeasure.org",
+          "code": "%",
+          "value": 65,
+          "comparator": ">"
         },
         "method": {
           "coding": [
@@ -4766,10 +4511,6 @@
                 "code": "MB"
               },
               {
-                "code": "MB",
-                "system": "http://terminology.hl7.org/CodeSystem/v2-0074"
-              },
-              {
                 "code": "26436-6",
                 "system": "http://loinc.org"
               },
@@ -4809,15 +4550,16 @@
         "device": {
           "identifier": {
             "system": "https://www.charite.de/fhir/sid/device-identifier",
-            "value": "VITEK2-001"
+            "value": "IMMUNOASSAY-001"
           },
-          "reference": "Device/mii-exa-test-data-mikrobio-device-1"
+          "reference": "Device/mii-exa-test-data-mikrobio-device-immunoassay-1"
         },
         "code": {
           "coding": [
             {
-              "code": "92657-6",
-              "system": "http://loinc.org"
+              "code": "104428-8",
+              "system": "http://loinc.org",
+              "display": "Measles virus IgG Ab avidity [Ratio] in Serum by Immunoassay"
             }
           ]
         },
@@ -4914,10 +4656,6 @@
                 "code": "MB"
               },
               {
-                "code": "MB",
-                "system": "http://terminology.hl7.org/CodeSystem/v2-0074"
-              },
-              {
                 "code": "26436-6",
                 "system": "http://loinc.org"
               },
@@ -4954,13 +4692,6 @@
           },
           "reference": "Specimen/mii-exa-test-data-mikrobio-specimen-1"
         },
-        "device": {
-          "identifier": {
-            "system": "https://www.charite.de/fhir/sid/device-identifier",
-            "value": "VITEK2-001"
-          },
-          "reference": "Device/mii-exa-test-data-mikrobio-device-1"
-        },
         "modifierExtension": [
           {
             "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/InterpretationsbeeinflussendeEigenschaft",
@@ -4996,43 +4727,21 @@
             }
           ]
         },
-        "valueQuantity": {
-          "system": "http://unitsofmeasure.org",
-          "value": 1,
-          "_value": {
-            "extension": [
-              {
-                "url": "http://hl7.org/fhir/StructureDefinition/quantity-precision",
-                "valueInteger": 0
-              }
-            ]
-          },
-          "comparator": ">=",
-          "unit": "1",
-          "code": "1"
-        },
-        "referenceRange": [
-          {
-            "low": {
-              "value": 0,
-              "unit": "1",
-              "system": "http://unitsofmeasure.org",
-              "code": "1"
-            },
-            "high": {
-              "value": 10,
-              "unit": "1",
-              "system": "http://unitsofmeasure.org",
-              "code": "1"
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "LA21390-2",
+              "system": "http://loinc.org",
+              "display": "+1 Active inflammation"
             }
-          }
-        ],
+          ]
+        },
         "method": {
           "coding": [
             {
               "system": "http://snomed.info/sct",
               "code": "702661004",
-              "display": "Microscopy by Gram stain"
+              "display": "Light microscopy technique (qualifier value)"
             }
           ]
         },
@@ -5123,10 +4832,6 @@
                 "code": "MB"
               },
               {
-                "code": "MB",
-                "system": "http://terminology.hl7.org/CodeSystem/v2-0074"
-              },
-              {
                 "code": "26436-6",
                 "system": "http://loinc.org"
               },
@@ -5162,13 +4867,6 @@
             "value": "BLOOD-CULT-001"
           },
           "reference": "Specimen/mii-exa-test-data-mikrobio-specimen-1"
-        },
-        "device": {
-          "identifier": {
-            "system": "https://www.charite.de/fhir/sid/device-identifier",
-            "value": "VITEK2-001"
-          },
-          "reference": "Device/mii-exa-test-data-mikrobio-device-1"
         },
         "code": {
           "coding": [
@@ -5271,10 +4969,6 @@
                 "code": "MB"
               },
               {
-                "code": "MB",
-                "system": "http://terminology.hl7.org/CodeSystem/v2-0074"
-              },
-              {
                 "code": "26436-6",
                 "system": "http://loinc.org"
               },
@@ -5314,9 +5008,9 @@
         "device": {
           "identifier": {
             "system": "https://www.charite.de/fhir/sid/device-identifier",
-            "value": "VITEK2-001"
+            "value": "PCR-CYCLER-001"
           },
-          "reference": "Device/mii-exa-test-data-mikrobio-device-1"
+          "reference": "Device/mii-exa-test-data-mikrobio-device-pcr-1"
         },
         "modifierExtension": [
           {
@@ -5353,14 +5047,12 @@
             }
           ]
         },
-        "valueCodeableConcept": {
-          "coding": [
-            {
-              "code": "260373001",
-              "system": "http://snomed.info/sct",
-              "display": "Detected (qualifier value)"
-            }
-          ]
+        "valueQuantity": {
+          "system": "http://unitsofmeasure.org",
+          "code": "1",
+          "value": 30.5,
+          "comparator": "<",
+          "unit": "Ct"
         },
         "method": {
           "coding": [
@@ -5458,10 +5150,6 @@
                 "code": "MB"
               },
               {
-                "code": "MB",
-                "system": "http://terminology.hl7.org/CodeSystem/v2-0074"
-              },
-              {
                 "code": "26436-6",
                 "system": "http://loinc.org"
               },
@@ -5501,9 +5189,9 @@
         "device": {
           "identifier": {
             "system": "https://www.charite.de/fhir/sid/device-identifier",
-            "value": "VITEK2-001"
+            "value": "PCR-CYCLER-001"
           },
-          "reference": "Device/mii-exa-test-data-mikrobio-device-1"
+          "reference": "Device/mii-exa-test-data-mikrobio-device-pcr-1"
         },
         "code": {
           "coding": [
@@ -5606,10 +5294,6 @@
                 "code": "MB"
               },
               {
-                "code": "MB",
-                "system": "http://terminology.hl7.org/CodeSystem/v2-0074"
-              },
-              {
                 "code": "26436-6",
                 "system": "http://loinc.org"
               },
@@ -5646,13 +5330,6 @@
           },
           "reference": "Specimen/mii-exa-test-data-mikrobio-specimen-1"
         },
-        "device": {
-          "identifier": {
-            "system": "https://www.charite.de/fhir/sid/device-identifier",
-            "value": "VITEK2-001"
-          },
-          "reference": "Device/mii-exa-test-data-mikrobio-device-1"
-        },
         "modifierExtension": [
           {
             "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/InterpretationsbeeinflussendeEigenschaft",
@@ -5683,26 +5360,25 @@
         "code": {
           "coding": [
             {
-              "code": "29576-6",
-              "system": "http://loinc.org"
+              "code": "100045-4",
+              "system": "http://loinc.org",
+              "display": "Cefozopran [Susceptibility]"
             }
           ]
         },
-        "valueCodeableConcept": {
-          "coding": [
-            {
-              "code": "260373001",
-              "system": "http://snomed.info/sct",
-              "display": "Detected (qualifier value)"
-            }
-          ]
+        "valueQuantity": {
+          "system": "http://unitsofmeasure.org",
+          "value": 8,
+          "comparator": ">",
+          "unit": "mg/L",
+          "code": "mg/L"
         },
         "method": {
           "coding": [
             {
-              "code": "700461007",
+              "code": "708073008",
               "system": "http://snomed.info/sct",
-              "display": "Antimicrobial susceptibility by MIC technique"
+              "display": "Minimum inhibitory concentration susceptibility test technique (qualifier value)"
             }
           ]
         },
@@ -5807,10 +5483,6 @@
                 "code": "MB"
               },
               {
-                "code": "MB",
-                "system": "http://terminology.hl7.org/CodeSystem/v2-0074"
-              },
-              {
                 "code": "26436-6",
                 "system": "http://loinc.org"
               },
@@ -5847,18 +5519,12 @@
           },
           "reference": "Specimen/mii-exa-test-data-mikrobio-specimen-1"
         },
-        "device": {
-          "identifier": {
-            "system": "https://www.charite.de/fhir/sid/device-identifier",
-            "value": "VITEK2-001"
-          },
-          "reference": "Device/mii-exa-test-data-mikrobio-device-1"
-        },
         "code": {
           "coding": [
             {
-              "code": "29576-6",
-              "system": "http://loinc.org"
+              "code": "100045-4",
+              "system": "http://loinc.org",
+              "display": "Cefozopran [Susceptibility]"
             }
           ]
         },
@@ -5874,7 +5540,7 @@
         "method": {
           "coding": [
             {
-              "code": "700461007",
+              "code": "708073008",
               "system": "http://snomed.info/sct"
             }
           ]
@@ -5955,10 +5621,6 @@
                 "code": "MB"
               },
               {
-                "code": "MB",
-                "system": "http://terminology.hl7.org/CodeSystem/v2-0074"
-              },
-              {
                 "code": "26436-6",
                 "system": "http://loinc.org"
               },
@@ -5995,13 +5657,6 @@
           },
           "reference": "Specimen/mii-exa-test-data-mikrobio-specimen-1"
         },
-        "device": {
-          "identifier": {
-            "system": "https://www.charite.de/fhir/sid/device-identifier",
-            "value": "VITEK2-001"
-          },
-          "reference": "Device/mii-exa-test-data-mikrobio-device-1"
-        },
         "modifierExtension": [
           {
             "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/InterpretationsbeeinflussendeEigenschaft",
@@ -6037,21 +5692,19 @@
             }
           ]
         },
-        "valueCodeableConcept": {
-          "coding": [
-            {
-              "code": "260373001",
-              "system": "http://snomed.info/sct",
-              "display": "Detected (qualifier value)"
-            }
-          ]
+        "valueQuantity": {
+          "system": "http://unitsofmeasure.org",
+          "value": 10000,
+          "comparator": ">=",
+          "unit": "/mL",
+          "code": "/mL"
         },
         "method": {
           "coding": [
             {
               "system": "http://snomed.info/sct",
               "code": "410681005",
-              "display": "Total count technique"
+              "display": "Count of entities (property) (qualifier value)"
             }
           ]
         },
@@ -6142,10 +5795,6 @@
                 "code": "MB"
               },
               {
-                "code": "MB",
-                "system": "http://terminology.hl7.org/CodeSystem/v2-0074"
-              },
-              {
                 "code": "26436-6",
                 "system": "http://loinc.org"
               },
@@ -6181,13 +5830,6 @@
             "value": "BLOOD-CULT-001"
           },
           "reference": "Specimen/mii-exa-test-data-mikrobio-specimen-1"
-        },
-        "device": {
-          "identifier": {
-            "system": "https://www.charite.de/fhir/sid/device-identifier",
-            "value": "VITEK2-001"
-          },
-          "reference": "Device/mii-exa-test-data-mikrobio-device-1"
         },
         "code": {
           "coding": [
@@ -6290,10 +5932,6 @@
                 "code": "MB"
               },
               {
-                "code": "MB",
-                "system": "http://terminology.hl7.org/CodeSystem/v2-0074"
-              },
-              {
                 "code": "26436-6",
                 "system": "http://loinc.org"
               },
@@ -6330,13 +5968,6 @@
           },
           "reference": "Specimen/mii-exa-test-data-mikrobio-specimen-1"
         },
-        "device": {
-          "identifier": {
-            "system": "https://www.charite.de/fhir/sid/device-identifier",
-            "value": "VITEK2-001"
-          },
-          "reference": "Device/mii-exa-test-data-mikrobio-device-1"
-        },
         "modifierExtension": [
           {
             "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/InterpretationsbeeinflussendeEigenschaft",
@@ -6372,43 +6003,21 @@
             }
           ]
         },
-        "valueQuantity": {
-          "system": "http://unitsofmeasure.org",
-          "value": 1,
-          "_value": {
-            "extension": [
-              {
-                "url": "http://hl7.org/fhir/StructureDefinition/quantity-precision",
-                "valueInteger": 0
-              }
-            ]
-          },
-          "comparator": ">=",
-          "unit": "1",
-          "code": "1"
-        },
-        "referenceRange": [
-          {
-            "low": {
-              "value": 0,
-              "unit": "1",
-              "system": "http://unitsofmeasure.org",
-              "code": "1"
-            },
-            "high": {
-              "value": 10,
-              "unit": "1",
-              "system": "http://unitsofmeasure.org",
-              "code": "1"
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "260373001",
+              "system": "http://snomed.info/sct",
+              "display": "Detected (qualifier value)"
             }
-          }
-        ],
+          ]
+        },
         "method": {
           "coding": [
             {
-              "code": "278289002",
+              "code": "702661004",
               "system": "http://snomed.info/sct",
-              "display": "Microscopy (procedure)"
+              "display": "Light microscopy technique (qualifier value)"
             }
           ]
         },
@@ -6499,10 +6108,6 @@
                 "code": "MB"
               },
               {
-                "code": "MB",
-                "system": "http://terminology.hl7.org/CodeSystem/v2-0074"
-              },
-              {
                 "code": "26436-6",
                 "system": "http://loinc.org"
               },
@@ -6539,13 +6144,6 @@
           },
           "reference": "Specimen/mii-exa-test-data-mikrobio-specimen-1"
         },
-        "device": {
-          "identifier": {
-            "system": "https://www.charite.de/fhir/sid/device-identifier",
-            "value": "VITEK2-001"
-          },
-          "reference": "Device/mii-exa-test-data-mikrobio-device-1"
-        },
         "code": {
           "coding": [
             {
@@ -6566,7 +6164,7 @@
         "method": {
           "coding": [
             {
-              "code": "278289002",
+              "code": "702661004",
               "system": "http://snomed.info/sct"
             }
           ]
@@ -6647,10 +6245,6 @@
                 "code": "MB"
               },
               {
-                "code": "MB",
-                "system": "http://terminology.hl7.org/CodeSystem/v2-0074"
-              },
-              {
                 "code": "26436-6",
                 "system": "http://loinc.org"
               },
@@ -6690,9 +6284,9 @@
         "device": {
           "identifier": {
             "system": "https://www.charite.de/fhir/sid/device-identifier",
-            "value": "VITEK2-001"
+            "value": "PCR-CYCLER-001"
           },
-          "reference": "Device/mii-exa-test-data-mikrobio-device-1"
+          "reference": "Device/mii-exa-test-data-mikrobio-device-pcr-1"
         },
         "modifierExtension": [
           {
@@ -6724,19 +6318,18 @@
         "code": {
           "coding": [
             {
-              "code": "94009-8",
-              "system": "http://loinc.org"
+              "code": "66719-6",
+              "system": "http://loinc.org",
+              "display": "Adenovirus DNA [Log #/volume] (viral load) in Urine by NAA with probe detection"
             }
           ]
         },
-        "valueCodeableConcept": {
-          "coding": [
-            {
-              "code": "260373001",
-              "system": "http://snomed.info/sct",
-              "display": "Detected (qualifier value)"
-            }
-          ]
+        "valueQuantity": {
+          "system": "http://unitsofmeasure.org",
+          "value": 5000,
+          "comparator": ">=",
+          "unit": "Copies/mL",
+          "code": "1/mL"
         },
         "method": {
           "coding": [
@@ -6834,10 +6427,6 @@
                 "code": "MB"
               },
               {
-                "code": "MB",
-                "system": "http://terminology.hl7.org/CodeSystem/v2-0074"
-              },
-              {
                 "code": "26436-6",
                 "system": "http://loinc.org"
               },
@@ -6877,15 +6466,16 @@
         "device": {
           "identifier": {
             "system": "https://www.charite.de/fhir/sid/device-identifier",
-            "value": "VITEK2-001"
+            "value": "PCR-CYCLER-001"
           },
-          "reference": "Device/mii-exa-test-data-mikrobio-device-1"
+          "reference": "Device/mii-exa-test-data-mikrobio-device-pcr-1"
         },
         "code": {
           "coding": [
             {
-              "code": "94009-8",
-              "system": "http://loinc.org"
+              "code": "66719-6",
+              "system": "http://loinc.org",
+              "display": "Adenovirus DNA [Log #/volume] (viral load) in Urine by NAA with probe detection"
             }
           ]
         },
@@ -6982,10 +6572,6 @@
                 "code": "MB"
               },
               {
-                "code": "MB",
-                "system": "http://terminology.hl7.org/CodeSystem/v2-0074"
-              },
-              {
                 "code": "26436-6",
                 "system": "http://loinc.org"
               },
@@ -7025,9 +6611,9 @@
         "device": {
           "identifier": {
             "system": "https://www.charite.de/fhir/sid/device-identifier",
-            "value": "VITEK2-001"
+            "value": "PCR-CYCLER-001"
           },
-          "reference": "Device/mii-exa-test-data-mikrobio-device-1"
+          "reference": "Device/mii-exa-test-data-mikrobio-device-pcr-1"
         },
         "modifierExtension": [
           {
@@ -7064,57 +6650,24 @@
             }
           ]
         },
-        "valueQuantity": {
-          "system": "http://unitsofmeasure.org",
-          "value": 1,
-          "_value": {
-            "extension": [
-              {
-                "url": "http://hl7.org/fhir/StructureDefinition/quantity-precision",
-                "valueInteger": 0
-              }
-            ]
-          },
-          "comparator": ">=",
-          "unit": "1",
-          "code": "1"
-        },
-        "referenceRange": [
-          {
-            "low": {
-              "value": 0,
-              "unit": "1",
-              "system": "http://unitsofmeasure.org",
-              "code": "1"
-            },
-            "high": {
-              "value": 10,
-              "unit": "1",
-              "system": "http://unitsofmeasure.org",
-              "code": "1"
-            }
-          }
-        ],
-        "method": {
+        "valueCodeableConcept": {
           "coding": [
             {
-              "code": "258066000",
+              "code": "115329001",
               "system": "http://snomed.info/sct",
-              "display": "MALDI-TOF"
+              "display": "Methicillin resistant Staphylococcus aureus (organism)"
             }
           ]
         },
-        "interpretation": [
-          {
-            "coding": [
-              {
-                "code": "A",
-                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
-                "display": "Abnormal"
-              }
-            ]
-          }
-        ],
+        "method": {
+          "coding": [
+            {
+              "code": "708068002",
+              "system": "http://snomed.info/sct",
+              "display": "Molecular genetics technique (qualifier value)"
+            }
+          ]
+        },
         "note": [
           {
             "text": "Alt-Variante zur MS-Coverage (mre-klasse)"
@@ -7191,10 +6744,6 @@
                 "code": "MB"
               },
               {
-                "code": "MB",
-                "system": "http://terminology.hl7.org/CodeSystem/v2-0074"
-              },
-              {
                 "code": "26436-6",
                 "system": "http://loinc.org"
               },
@@ -7234,9 +6783,9 @@
         "device": {
           "identifier": {
             "system": "https://www.charite.de/fhir/sid/device-identifier",
-            "value": "VITEK2-001"
+            "value": "PCR-CYCLER-001"
           },
-          "reference": "Device/mii-exa-test-data-mikrobio-device-1"
+          "reference": "Device/mii-exa-test-data-mikrobio-device-pcr-1"
         },
         "code": {
           "coding": [
@@ -7258,7 +6807,7 @@
         "method": {
           "coding": [
             {
-              "code": "258066000",
+              "code": "708068002",
               "system": "http://snomed.info/sct"
             }
           ]
@@ -7339,10 +6888,6 @@
                 "code": "MB"
               },
               {
-                "code": "MB",
-                "system": "http://terminology.hl7.org/CodeSystem/v2-0074"
-              },
-              {
                 "code": "26436-6",
                 "system": "http://loinc.org"
               },
@@ -7379,13 +6924,6 @@
           },
           "reference": "Specimen/mii-exa-test-data-mikrobio-specimen-1"
         },
-        "device": {
-          "identifier": {
-            "system": "https://www.charite.de/fhir/sid/device-identifier",
-            "value": "VITEK2-001"
-          },
-          "reference": "Device/mii-exa-test-data-mikrobio-device-1"
-        },
         "modifierExtension": [
           {
             "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/InterpretationsbeeinflussendeEigenschaft",
@@ -7421,57 +6959,15 @@
             }
           ]
         },
-        "valueQuantity": {
-          "system": "http://unitsofmeasure.org",
-          "value": 1,
-          "_value": {
-            "extension": [
-              {
-                "url": "http://hl7.org/fhir/StructureDefinition/quantity-precision",
-                "valueInteger": 0
-              }
-            ]
-          },
-          "comparator": ">=",
-          "unit": "1",
-          "code": "1"
-        },
-        "referenceRange": [
-          {
-            "low": {
-              "value": 0,
-              "unit": "1",
-              "system": "http://unitsofmeasure.org",
-              "code": "1"
-            },
-            "high": {
-              "value": 10,
-              "unit": "1",
-              "system": "http://unitsofmeasure.org",
-              "code": "1"
-            }
-          }
-        ],
-        "method": {
+        "valueCodeableConcept": {
           "coding": [
             {
-              "code": "700452006",
-              "system": "http://snomed.info/sct",
-              "display": "Susceptibility to antimicrobial"
+              "code": "LA33214-0",
+              "system": "http://loinc.org",
+              "display": "2MRGN"
             }
           ]
         },
-        "interpretation": [
-          {
-            "coding": [
-              {
-                "code": "A",
-                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
-                "display": "Abnormal"
-              }
-            ]
-          }
-        ],
         "note": [
           {
             "text": "Alt-Variante zur MS-Coverage (mrgn-klasse)"
@@ -7548,10 +7044,6 @@
                 "code": "MB"
               },
               {
-                "code": "MB",
-                "system": "http://terminology.hl7.org/CodeSystem/v2-0074"
-              },
-              {
                 "code": "26436-6",
                 "system": "http://loinc.org"
               },
@@ -7588,13 +7080,6 @@
           },
           "reference": "Specimen/mii-exa-test-data-mikrobio-specimen-1"
         },
-        "device": {
-          "identifier": {
-            "system": "https://www.charite.de/fhir/sid/device-identifier",
-            "value": "VITEK2-001"
-          },
-          "reference": "Device/mii-exa-test-data-mikrobio-device-1"
-        },
         "code": {
           "coding": [
             {
@@ -7609,14 +7094,6 @@
               "code": "unknown",
               "system": "http://terminology.hl7.org/CodeSystem/data-absent-reason",
               "display": "Unknown"
-            }
-          ]
-        },
-        "method": {
-          "coding": [
-            {
-              "code": "700452006",
-              "system": "http://snomed.info/sct"
             }
           ]
         },
@@ -7696,10 +7173,6 @@
                 "code": "MB"
               },
               {
-                "code": "MB",
-                "system": "http://terminology.hl7.org/CodeSystem/v2-0074"
-              },
-              {
                 "code": "26436-6",
                 "system": "http://loinc.org"
               },
@@ -7736,13 +7209,6 @@
           },
           "reference": "Specimen/mii-exa-test-data-mikrobio-specimen-1"
         },
-        "device": {
-          "identifier": {
-            "system": "https://www.charite.de/fhir/sid/device-identifier",
-            "value": "VITEK2-001"
-          },
-          "reference": "Device/mii-exa-test-data-mikrobio-device-1"
-        },
         "modifierExtension": [
           {
             "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/InterpretationsbeeinflussendeEigenschaft",
@@ -7778,21 +7244,19 @@
             }
           ]
         },
-        "valueCodeableConcept": {
-          "coding": [
-            {
-              "code": "260373001",
-              "system": "http://snomed.info/sct",
-              "display": "Detected (qualifier value)"
-            }
-          ]
+        "valueQuantity": {
+          "unit": "1",
+          "system": "http://unitsofmeasure.org",
+          "code": "1",
+          "value": 2,
+          "comparator": "<="
         },
         "method": {
           "coding": [
             {
               "system": "http://snomed.info/sct",
               "code": "702661004",
-              "display": "Microscopy by Gram stain"
+              "display": "Light microscopy technique (qualifier value)"
             }
           ]
         },
@@ -7883,10 +7347,6 @@
                 "code": "MB"
               },
               {
-                "code": "MB",
-                "system": "http://terminology.hl7.org/CodeSystem/v2-0074"
-              },
-              {
                 "code": "26436-6",
                 "system": "http://loinc.org"
               },
@@ -7922,13 +7382,6 @@
             "value": "BLOOD-CULT-001"
           },
           "reference": "Specimen/mii-exa-test-data-mikrobio-specimen-1"
-        },
-        "device": {
-          "identifier": {
-            "system": "https://www.charite.de/fhir/sid/device-identifier",
-            "value": "VITEK2-001"
-          },
-          "reference": "Device/mii-exa-test-data-mikrobio-device-1"
         },
         "code": {
           "coding": [
@@ -8031,10 +7484,6 @@
                 "code": "MB"
               },
               {
-                "code": "MB",
-                "system": "http://terminology.hl7.org/CodeSystem/v2-0074"
-              },
-              {
                 "code": "26436-6",
                 "system": "http://loinc.org"
               },
@@ -8074,9 +7523,9 @@
         "device": {
           "identifier": {
             "system": "https://www.charite.de/fhir/sid/device-identifier",
-            "value": "VITEK2-001"
+            "value": "PCR-CYCLER-001"
           },
-          "reference": "Device/mii-exa-test-data-mikrobio-device-1"
+          "reference": "Device/mii-exa-test-data-mikrobio-device-pcr-1"
         },
         "modifierExtension": [
           {
@@ -8108,48 +7557,27 @@
         "code": {
           "coding": [
             {
-              "code": "92249-2",
-              "system": "http://loinc.org"
+              "code": "72891-5",
+              "system": "http://loinc.org",
+              "display": "Staphylococcus protein A spa gene [Presence] in Isolate or Specimen by NAA with probe detection"
             }
           ]
         },
-        "valueQuantity": {
-          "system": "http://unitsofmeasure.org",
-          "value": 1,
-          "_value": {
-            "extension": [
-              {
-                "url": "http://hl7.org/fhir/StructureDefinition/quantity-precision",
-                "valueInteger": 0
-              }
-            ]
-          },
-          "comparator": ">=",
-          "unit": "1",
-          "code": "1"
-        },
-        "referenceRange": [
-          {
-            "low": {
-              "value": 0,
-              "unit": "1",
-              "system": "http://unitsofmeasure.org",
-              "code": "1"
-            },
-            "high": {
-              "value": 10,
-              "unit": "1",
-              "system": "http://unitsofmeasure.org",
-              "code": "1"
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "260373001",
+              "system": "http://snomed.info/sct",
+              "display": "Detected (qualifier value)"
             }
-          }
-        ],
+          ]
+        },
         "method": {
           "coding": [
             {
-              "code": "258066000",
+              "code": "708068002",
               "system": "http://snomed.info/sct",
-              "display": "Molecular detection technique"
+              "display": "Molecular genetics technique (qualifier value)"
             }
           ]
         },
@@ -8240,10 +7668,6 @@
                 "code": "MB"
               },
               {
-                "code": "MB",
-                "system": "http://terminology.hl7.org/CodeSystem/v2-0074"
-              },
-              {
                 "code": "26436-6",
                 "system": "http://loinc.org"
               },
@@ -8283,15 +7707,16 @@
         "device": {
           "identifier": {
             "system": "https://www.charite.de/fhir/sid/device-identifier",
-            "value": "VITEK2-001"
+            "value": "PCR-CYCLER-001"
           },
-          "reference": "Device/mii-exa-test-data-mikrobio-device-1"
+          "reference": "Device/mii-exa-test-data-mikrobio-device-pcr-1"
         },
         "code": {
           "coding": [
             {
-              "code": "92249-2",
-              "system": "http://loinc.org"
+              "code": "72891-5",
+              "system": "http://loinc.org",
+              "display": "Staphylococcus protein A spa gene [Presence] in Isolate or Specimen by NAA with probe detection"
             }
           ]
         },
@@ -8307,7 +7732,7 @@
         "method": {
           "coding": [
             {
-              "code": "258066000",
+              "code": "708068002",
               "system": "http://snomed.info/sct"
             }
           ]
@@ -8388,10 +7813,6 @@
                 "code": "MB"
               },
               {
-                "code": "MB",
-                "system": "http://terminology.hl7.org/CodeSystem/v2-0074"
-              },
-              {
                 "code": "26436-6",
                 "system": "http://loinc.org"
               },
@@ -8431,9 +7852,9 @@
         "device": {
           "identifier": {
             "system": "https://www.charite.de/fhir/sid/device-identifier",
-            "value": "VITEK2-001"
+            "value": "PCR-CYCLER-001"
           },
-          "reference": "Device/mii-exa-test-data-mikrobio-device-1"
+          "reference": "Device/mii-exa-test-data-mikrobio-device-pcr-1"
         },
         "modifierExtension": [
           {
@@ -8465,48 +7886,27 @@
         "code": {
           "coding": [
             {
-              "code": "92253-4",
-              "system": "http://loinc.org"
+              "code": "105651-4",
+              "system": "http://loinc.org",
+              "display": "Enterobacter cloacae complex DNA [Presence] in Specimen by NAA with probe detection"
             }
           ]
         },
-        "valueQuantity": {
-          "system": "http://unitsofmeasure.org",
-          "value": 1,
-          "_value": {
-            "extension": [
-              {
-                "url": "http://hl7.org/fhir/StructureDefinition/quantity-precision",
-                "valueInteger": 0
-              }
-            ]
-          },
-          "comparator": ">=",
-          "unit": "1",
-          "code": "1"
-        },
-        "referenceRange": [
-          {
-            "low": {
-              "value": 0,
-              "unit": "1",
-              "system": "http://unitsofmeasure.org",
-              "code": "1"
-            },
-            "high": {
-              "value": 10,
-              "unit": "1",
-              "system": "http://unitsofmeasure.org",
-              "code": "1"
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "260373001",
+              "system": "http://snomed.info/sct",
+              "display": "Detected (qualifier value)"
             }
-          }
-        ],
+          ]
+        },
         "method": {
           "coding": [
             {
-              "code": "258066000",
+              "code": "70601000052104",
               "system": "http://snomed.info/sct",
-              "display": "MALDI-TOF"
+              "display": "Real-time polymerase chain reaction technique (qualifier value)"
             }
           ]
         },
@@ -8597,10 +7997,6 @@
                 "code": "MB"
               },
               {
-                "code": "MB",
-                "system": "http://terminology.hl7.org/CodeSystem/v2-0074"
-              },
-              {
                 "code": "26436-6",
                 "system": "http://loinc.org"
               },
@@ -8640,15 +8036,16 @@
         "device": {
           "identifier": {
             "system": "https://www.charite.de/fhir/sid/device-identifier",
-            "value": "VITEK2-001"
+            "value": "PCR-CYCLER-001"
           },
-          "reference": "Device/mii-exa-test-data-mikrobio-device-1"
+          "reference": "Device/mii-exa-test-data-mikrobio-device-pcr-1"
         },
         "code": {
           "coding": [
             {
-              "code": "92253-4",
-              "system": "http://loinc.org"
+              "code": "61398-4",
+              "system": "http://loinc.org",
+              "display": "Escherichia coli DNA [Presence] in Specimen by NAA with probe detection"
             }
           ]
         },
@@ -8664,7 +8061,7 @@
         "method": {
           "coding": [
             {
-              "code": "258066000",
+              "code": "70601000052104",
               "system": "http://snomed.info/sct"
             }
           ]
@@ -8745,10 +8142,6 @@
                 "code": "MB"
               },
               {
-                "code": "MB",
-                "system": "http://terminology.hl7.org/CodeSystem/v2-0074"
-              },
-              {
                 "code": "26436-6",
                 "system": "http://loinc.org"
               },
@@ -8784,13 +8177,6 @@
             "value": "BLOOD-CULT-001"
           },
           "reference": "Specimen/mii-exa-test-data-mikrobio-specimen-1"
-        },
-        "device": {
-          "identifier": {
-            "system": "https://www.charite.de/fhir/sid/device-identifier",
-            "value": "VITEK2-001"
-          },
-          "reference": "Device/mii-exa-test-data-mikrobio-device-1"
         },
         "modifierExtension": [
           {
@@ -8822,8 +8208,9 @@
         "code": {
           "coding": [
             {
-              "code": "53655-7",
-              "system": "http://loinc.org"
+              "code": "23648-9",
+              "system": "http://loinc.org",
+              "display": "Actinobacillus pleuropneumoniae Ab [Titer] in Serum"
             }
           ]
         },
@@ -8846,7 +8233,7 @@
             {
               "code": "708104000",
               "system": "http://snomed.info/sct",
-              "display": "Serological agglutination"
+              "display": "Agglutination technique (qualifier value)"
             }
           ]
         },
@@ -8864,167 +8251,6 @@
         "note": [
           {
             "text": "Alt-Variante zur MS-Coverage (titer)"
-          }
-        ],
-        "status": "final",
-        "effectiveDateTime": "2026-04-05T10:00:00+02:00",
-        "_effectiveDateTime": {
-          "extension": [
-            {
-              "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum",
-              "valueCodeableConcept": {
-                "coding": [
-                  {
-                    "code": "281271004",
-                    "system": "http://snomed.info/sct",
-                    "display": "Date sample collected (observable entity)"
-                  }
-                ]
-              }
-            }
-          ]
-        },
-        "issued": "2026-04-05T11:00:00+02:00"
-      }
-    },
-    {
-      "request": {
-        "method": "PUT",
-        "url": "Observation/mii-exa-test-data-mikrobio-titer-cc-1"
-      },
-      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-mikrobio-titer-cc-1",
-      "resource": {
-        "resourceType": "Observation",
-        "id": "mii-exa-test-data-mikrobio-titer-cc-1",
-        "meta": {
-          "security": [
-            {
-              "code": "HTEST",
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
-              "display": "test health data"
-            }
-          ],
-          "source": "https://example.org/fhir/mikrobio-lab-system",
-          "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-titer"
-          ]
-        },
-        "identifier": [
-          {
-            "type": {
-              "coding": [
-                {
-                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
-                  "code": "OBI"
-                }
-              ]
-            },
-            "assigner": {
-              "identifier": {
-                "system": "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier",
-                "value": "DIZ-CHA"
-              }
-            },
-            "system": "https://www.charite.de/fhir/sid/test-lab-results",
-            "value": "titer-cc-1"
-          }
-        ],
-        "category": [
-          {
-            "coding": [
-              {
-                "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
-                "code": "MB"
-              },
-              {
-                "code": "MB",
-                "system": "http://terminology.hl7.org/CodeSystem/v2-0074"
-              },
-              {
-                "code": "26436-6",
-                "system": "http://loinc.org"
-              },
-              {
-                "code": "laboratory",
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
-              },
-              {
-                "code": "18725-2",
-                "system": "http://loinc.org",
-                "display": "Microbiology studies (set)"
-              }
-            ]
-          }
-        ],
-        "subject": {
-          "identifier": {
-            "system": "https://www.charite.de/fhir/sid/patientenidentifikation",
-            "value": "MIKROBIO-TEST-001"
-          },
-          "reference": "Patient/mii-exa-test-data-mikrobio-patient-1"
-        },
-        "encounter": {
-          "identifier": {
-            "system": "https://www.charite.de/fhir/sid/encounter-identifier",
-            "value": "MIKROBIO-ENC-001"
-          },
-          "reference": "Encounter/mii-exa-test-data-mikrobio-encounter-1"
-        },
-        "specimen": {
-          "identifier": {
-            "system": "https://www.charite.de/fhir/sid/Probennummer",
-            "value": "BLOOD-CULT-001"
-          },
-          "reference": "Specimen/mii-exa-test-data-mikrobio-specimen-1"
-        },
-        "device": {
-          "identifier": {
-            "system": "https://www.charite.de/fhir/sid/device-identifier",
-            "value": "VITEK2-001"
-          },
-          "reference": "Device/mii-exa-test-data-mikrobio-device-1"
-        },
-        "code": {
-          "coding": [
-            {
-              "code": "53655-7",
-              "system": "http://loinc.org",
-              "display": "Antibody titer in Serum"
-            }
-          ]
-        },
-        "valueCodeableConcept": {
-          "coding": [
-            {
-              "code": "10828004",
-              "system": "http://snomed.info/sct",
-              "display": "Positive (qualifier value)"
-            }
-          ]
-        },
-        "method": {
-          "coding": [
-            {
-              "code": "708104000",
-              "system": "http://snomed.info/sct",
-              "display": "Serological agglutination"
-            }
-          ]
-        },
-        "interpretation": [
-          {
-            "coding": [
-              {
-                "code": "POS",
-                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
-                "display": "Positive"
-              }
-            ]
-          }
-        ],
-        "note": [
-          {
-            "text": "Titer-CC-Variante zur MS-Coverage"
           }
         ],
         "status": "final",
@@ -9098,10 +8324,6 @@
                 "code": "MB"
               },
               {
-                "code": "MB",
-                "system": "http://terminology.hl7.org/CodeSystem/v2-0074"
-              },
-              {
                 "code": "26436-6",
                 "system": "http://loinc.org"
               },
@@ -9138,18 +8360,12 @@
           },
           "reference": "Specimen/mii-exa-test-data-mikrobio-specimen-1"
         },
-        "device": {
-          "identifier": {
-            "system": "https://www.charite.de/fhir/sid/device-identifier",
-            "value": "VITEK2-001"
-          },
-          "reference": "Device/mii-exa-test-data-mikrobio-device-1"
-        },
         "code": {
           "coding": [
             {
-              "code": "53655-7",
-              "system": "http://loinc.org"
+              "code": "23648-9",
+              "system": "http://loinc.org",
+              "display": "Actinobacillus pleuropneumoniae Ab [Titer] in Serum"
             }
           ]
         },
@@ -9246,10 +8462,6 @@
                 "code": "MB"
               },
               {
-                "code": "MB",
-                "system": "http://terminology.hl7.org/CodeSystem/v2-0074"
-              },
-              {
                 "code": "26436-6",
                 "system": "http://loinc.org"
               },
@@ -9289,9 +8501,9 @@
         "device": {
           "identifier": {
             "system": "https://www.charite.de/fhir/sid/device-identifier",
-            "value": "VITEK2-001"
+            "value": "PCR-CYCLER-001"
           },
-          "reference": "Device/mii-exa-test-data-mikrobio-device-1"
+          "reference": "Device/mii-exa-test-data-mikrobio-device-pcr-1"
         },
         "modifierExtension": [
           {
@@ -9328,43 +8540,21 @@
             }
           ]
         },
-        "valueQuantity": {
-          "system": "http://unitsofmeasure.org",
-          "value": 1,
-          "_value": {
-            "extension": [
-              {
-                "url": "http://hl7.org/fhir/StructureDefinition/quantity-precision",
-                "valueInteger": 0
-              }
-            ]
-          },
-          "comparator": ">=",
-          "unit": "1",
-          "code": "1"
-        },
-        "referenceRange": [
-          {
-            "low": {
-              "value": 0,
-              "unit": "1",
-              "system": "http://unitsofmeasure.org",
-              "code": "1"
-            },
-            "high": {
-              "value": 10,
-              "unit": "1",
-              "system": "http://unitsofmeasure.org",
-              "code": "1"
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "260373001",
+              "system": "http://snomed.info/sct",
+              "display": "Detected (qualifier value)"
             }
-          }
-        ],
+          ]
+        },
         "method": {
           "coding": [
             {
-              "code": "258066000",
+              "code": "70601000052104",
               "system": "http://snomed.info/sct",
-              "display": "Molecular detection technique"
+              "display": "Real-time polymerase chain reaction technique (qualifier value)"
             }
           ]
         },
@@ -9455,10 +8645,6 @@
                 "code": "MB"
               },
               {
-                "code": "MB",
-                "system": "http://terminology.hl7.org/CodeSystem/v2-0074"
-              },
-              {
                 "code": "26436-6",
                 "system": "http://loinc.org"
               },
@@ -9498,9 +8684,9 @@
         "device": {
           "identifier": {
             "system": "https://www.charite.de/fhir/sid/device-identifier",
-            "value": "VITEK2-001"
+            "value": "PCR-CYCLER-001"
           },
-          "reference": "Device/mii-exa-test-data-mikrobio-device-1"
+          "reference": "Device/mii-exa-test-data-mikrobio-device-pcr-1"
         },
         "code": {
           "coding": [
@@ -9522,7 +8708,7 @@
         "method": {
           "coding": [
             {
-              "code": "258066000",
+              "code": "70601000052104",
               "system": "http://snomed.info/sct"
             }
           ]
@@ -9603,10 +8789,6 @@
                 "code": "MB"
               },
               {
-                "code": "MB",
-                "system": "http://terminology.hl7.org/CodeSystem/v2-0074"
-              },
-              {
                 "code": "26436-6",
                 "system": "http://loinc.org"
               },
@@ -9646,9 +8828,9 @@
         "device": {
           "identifier": {
             "system": "https://www.charite.de/fhir/sid/device-identifier",
-            "value": "VITEK2-001"
+            "value": "PCR-CYCLER-001"
           },
-          "reference": "Device/mii-exa-test-data-mikrobio-device-1"
+          "reference": "Device/mii-exa-test-data-mikrobio-device-pcr-1"
         },
         "modifierExtension": [
           {
@@ -9680,48 +8862,27 @@
         "code": {
           "coding": [
             {
-              "code": "89489-9",
-              "system": "http://loinc.org"
+              "code": "92255-9",
+              "system": "http://loinc.org",
+              "display": "Methicillin [Susceptibility] by Genotype method"
             }
           ]
         },
-        "valueQuantity": {
-          "system": "http://unitsofmeasure.org",
-          "value": 1,
-          "_value": {
-            "extension": [
-              {
-                "url": "http://hl7.org/fhir/StructureDefinition/quantity-precision",
-                "valueInteger": 0
-              }
-            ]
-          },
-          "comparator": ">=",
-          "unit": "1",
-          "code": "1"
-        },
-        "referenceRange": [
-          {
-            "low": {
-              "value": 0,
-              "unit": "1",
-              "system": "http://unitsofmeasure.org",
-              "code": "1"
-            },
-            "high": {
-              "value": 10,
-              "unit": "1",
-              "system": "http://unitsofmeasure.org",
-              "code": "1"
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "S",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+              "display": "Susceptible"
             }
-          }
-        ],
+          ]
+        },
         "method": {
           "coding": [
             {
-              "code": "258066000",
+              "code": "708060009",
               "system": "http://snomed.info/sct",
-              "display": "Molecular detection technique"
+              "display": "Genotype determination technique (qualifier value)"
             }
           ]
         },
@@ -9812,10 +8973,6 @@
                 "code": "MB"
               },
               {
-                "code": "MB",
-                "system": "http://terminology.hl7.org/CodeSystem/v2-0074"
-              },
-              {
                 "code": "26436-6",
                 "system": "http://loinc.org"
               },
@@ -9855,15 +9012,16 @@
         "device": {
           "identifier": {
             "system": "https://www.charite.de/fhir/sid/device-identifier",
-            "value": "VITEK2-001"
+            "value": "PCR-CYCLER-001"
           },
-          "reference": "Device/mii-exa-test-data-mikrobio-device-1"
+          "reference": "Device/mii-exa-test-data-mikrobio-device-pcr-1"
         },
         "code": {
           "coding": [
             {
-              "code": "89489-9",
-              "system": "http://loinc.org"
+              "code": "92255-9",
+              "system": "http://loinc.org",
+              "display": "Methicillin [Susceptibility] by Genotype method"
             }
           ]
         },
@@ -9879,7 +9037,7 @@
         "method": {
           "coding": [
             {
-              "code": "258066000",
+              "code": "708060009",
               "system": "http://snomed.info/sct"
             }
           ]
@@ -9963,15 +9121,6 @@
           }
         ],
         "category": [
-          {
-            "coding": [
-              {
-                "code": "MB",
-                "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
-                "display": "Microbiology"
-              }
-            ]
-          },
           {
             "coding": [
               {

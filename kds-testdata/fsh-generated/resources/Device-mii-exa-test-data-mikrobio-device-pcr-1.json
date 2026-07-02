@@ -1,6 +1,6 @@
 {
   "resourceType": "Device",
-  "id": "mii-exa-test-data-mikrobio-device-1",
+  "id": "mii-exa-test-data-mikrobio-device-pcr-1",
   "meta": {
     "security": [
       {
@@ -13,22 +13,13 @@
   "identifier": [
     {
       "system": "https://www.charite.de/fhir/sid/device-identifier",
-      "value": "VITEK2-001"
+      "value": "PCR-CYCLER-001"
     }
   ],
   "deviceName": [
     {
-      "name": "VITEK 2",
-      "type": "manufacturer-name"
+      "name": "Real-Time PCR Cycler",
+      "type": "model-name"
     }
-  ],
-  "type": {
-    "coding": [
-      {
-        "code": "469318003",
-        "system": "http://snomed.info/sct",
-        "display": "Bacterial identification device (physical object)"
-      }
-    ]
-  }
+  ]
 }
