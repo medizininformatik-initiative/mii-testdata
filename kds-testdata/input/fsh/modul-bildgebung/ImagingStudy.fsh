@@ -7,6 +7,7 @@ Description: "ImagingStudy: MagneticResonance"
 * extension[bildgebungsgrund].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-bildgebungsgrund"
 * extension[bildgebungsgrund].valueString = "Verdacht auf Mammakarzinom"
 * status = #available
+* started = "2024-07-19T12:03:30+02:00"
 * modality = $DCM#MR "Magnetic Resonance"
 * subject = Reference(mii-exa-test-data-bildgebung-patient-1)
 * encounter = Reference(mii-exa-test-data-bildgebung-encounter-1)

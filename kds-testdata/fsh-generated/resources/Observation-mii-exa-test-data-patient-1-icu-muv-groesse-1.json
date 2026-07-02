@@ -10,7 +10,7 @@
       }
     ],
     "profile": [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-koerpergroesse"
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/koerpergroesse"
     ]
   },
   "category": [
