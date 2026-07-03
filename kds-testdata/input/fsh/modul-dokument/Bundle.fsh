@@ -11,6 +11,7 @@ Description: "Bundle: Dokument Testdaten Patient-1"
 * timestamp = "2025-06-18T13:51:00+02:00"
 * insert AddBundleEntry(mii-exa-test-data-dokument-patient-1, Patient)
 * insert AddBundleEntry(mii-exa-test-data-dokument-encounter-1, Encounter)
+* insert AddBundleEntry(mii-exa-test-data-dokument-diagnose-1, Condition)
 // DocumentReferences
 * insert AddBundleEntry(mii-exa-test-data-patient-1-dokument-1, DocumentReference)
 * insert AddBundleEntry(mii-exa-test-data-patient-1-dokument-2, DocumentReference)

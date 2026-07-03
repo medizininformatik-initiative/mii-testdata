@@ -11,6 +11,7 @@ Description: "Bundle: PRO Testdaten Patient-1"
 * timestamp = "2025-06-18T13:51:00+02:00"
 * insert AddBundleEntry(mii-exa-test-data-pro-patient-1, Patient)
 * insert AddBundleEntry(mii-exa-test-data-pro-encounter-1, Encounter)
+* insert AddBundleEntry(mii-exa-test-data-pro-diagnose-1, Condition)
 // QuestionnaireResponses
 * insert AddBundleEntry(mii-exa-test-data-patient-1-pro-phq9-response, QuestionnaireResponse)
 * insert AddBundleEntry(mii-exa-test-data-patient-1-pro-promis-dep-sf4a-response, QuestionnaireResponse)
