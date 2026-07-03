@@ -467,6 +467,14 @@
       },
       {
         "reference": {
+          "reference": "Encounter/mii-exa-test-data-biobank-encounter-1"
+        },
+        "name": "mii-exa-test-data-biobank-encounter-1",
+        "description": "Biobank Test Encounter (Probenentnahme)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Patient/mii-exa-test-data-biobank-patient-1"
         },
         "name": "mii-exa-test-data-biobank-patient-1",
@@ -739,6 +747,14 @@
       },
       {
         "reference": {
+          "reference": "Condition/mii-exa-test-data-dokument-diagnose-1"
+        },
+        "name": "mii-exa-test-data-dokument-diagnose-1",
+        "description": "Condition: Pneumonie fuer Dokument-Patient 1",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Encounter/mii-exa-test-data-dokument-encounter-1"
         },
         "name": "mii-exa-test-data-dokument-encounter-1",
@@ -759,6 +775,14 @@
         },
         "name": "mii-exa-test-data-geraet",
         "description": "Device: MRT-Gerät",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Condition/mii-exa-test-data-icu-diagnose-1"
+        },
+        "name": "mii-exa-test-data-icu-diagnose-1",
+        "description": "Condition: Sepsis (ICU-Aufnahmediagnose) fuer ICU-Patient 1",
         "exampleBoolean": true
       },
       {
@@ -4978,6 +5002,14 @@
       },
       {
         "reference": {
+          "reference": "Condition/mii-exa-test-data-pro-diagnose-1"
+        },
+        "name": "mii-exa-test-data-pro-diagnose-1",
+        "description": "Condition: Mittelgradige depressive Episode fuer PRO-Patient 1",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Encounter/mii-exa-test-data-pro-encounter-1"
         },
         "name": "mii-exa-test-data-pro-encounter-1",
@@ -5046,6 +5078,14 @@
         },
         "name": "mii-exa-test-data-studie-einschluss-anfrage-1",
         "description": "ServiceRequest: Studieneinschluss-Anfrage für Patient-1 in MII-BIOMARKER-2024",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Condition/mii-exa-test-data-studien-diagnose-1"
+        },
+        "name": "mii-exa-test-data-studien-diagnose-1",
+        "description": "Condition: Diabetes mellitus Typ 2 fuer Studien-Patient 1",
         "exampleBoolean": true
       },
       {
