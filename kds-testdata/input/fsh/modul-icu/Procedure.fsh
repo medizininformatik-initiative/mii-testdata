@@ -3,7 +3,7 @@
 // ============================================================================
 
 Instance: mii-exa-test-data-patient-1-icu-ect-extrakorp-1
-InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-extrakorporales-verfahren
+InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/extrakorporales-verfahren
 Usage: #example
 Description: "ICU Procedure: MII PR ICU Extrakorporales Verfahren"
 * insert TestDataLabel
@@ -16,7 +16,7 @@ Description: "ICU Procedure: MII PR ICU Extrakorporales Verfahren"
 * code = $sct#233573008 "Extracorporeal membrane oxygenation (procedure)"
 
 Instance: mii-exa-test-data-patient-1-icu-vent-beatmung-1
-InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-beatmung
+InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/beatmung
 Usage: #example
 Description: "ICU Procedure: MII PR ICU Beatmung"
 * insert TestDataLabel

@@ -80,7 +80,7 @@
     },
     {
       "packageId": "de.medizininformatikinitiative.kerndatensatz.icu",
-      "version": "2026.0.2",
+      "version": "2025.0.4",
       "uri": "http://fhir.org/packages/de.medizininformatikinitiative.kerndatensatz.icu/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.icu",
       "id": "de_medizininformatikinitiative_kerndatensatz_icu"
     },
@@ -2870,7 +2870,7 @@
           "reference": "Observation/mii-exa-test-data-patient-1-icu-vent-compliance-1"
         },
         "name": "mii-exa-test-data-patient-1-icu-vent-compliance-1",
-        "description": "ICU Observation: mii-pr-icu-dynamische-kompliance",
+        "description": "ICU Observation: dynamische-kompliance",
         "exampleBoolean": true
       },
       {
@@ -2910,7 +2910,7 @@
           "reference": "Observation/mii-exa-test-data-patient-1-icu-vent-fio2-eingest-1"
         },
         "name": "mii-exa-test-data-patient-1-icu-vent-fio2-eingest-1",
-        "description": "ICU Observation: mii-pr-icu-inspiratorische-sauerstofffraktion-eingestellt",
+        "description": "ICU Observation: inspiratorische-sauerstofffraktion-eingestellt",
         "exampleBoolean": true
       },
       {

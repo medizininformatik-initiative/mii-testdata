@@ -98,19 +98,19 @@
             }
           ],
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-haemofiltration-einzelmesswerte"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/bilanz-abnahme-haemofiltration-einzelmesswerte"
           ]
         },
         "category": [
           {
             "coding": [
               {
-                "code": "exam",
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-sign"
               },
               {
-                "code": "364396009",
                 "system": "http://snomed.info/sct",
+                "code": "364396009",
                 "display": "Fluid balance observable (observable entity)"
               }
             ]
@@ -130,17 +130,17 @@
             }
           ]
         },
-        "valueQuantity": {
-          "unit": "ml",
-          "value": 120,
-          "code": "ml",
-          "system": "http://unitsofmeasure.org"
-        },
         "status": "final",
         "subject": {
           "reference": "Patient/mii-exa-test-data-icu-patient-1"
         },
-        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+        "effectiveDateTime": "2024-02-15T14:30:00+01:00",
+        "valueQuantity": {
+          "value": 120,
+          "code": "ml",
+          "system": "http://unitsofmeasure.org",
+          "unit": "ml"
+        }
       }
     },
     {
@@ -161,19 +161,19 @@
             }
           ],
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-drainage-generisch"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/bilanz-ausfuhr-drainage-generisch"
           ]
         },
         "category": [
           {
             "coding": [
               {
-                "code": "exam",
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "exam"
               },
               {
-                "code": "364396009",
                 "system": "http://snomed.info/sct",
+                "code": "364396009",
                 "display": "Fluid balance observable (observable entity)"
               }
             ]
@@ -193,17 +193,17 @@
             }
           ]
         },
-        "valueQuantity": {
-          "unit": "ml",
-          "value": 50,
-          "code": "ml",
-          "system": "http://unitsofmeasure.org"
-        },
         "status": "final",
         "subject": {
           "reference": "Patient/mii-exa-test-data-icu-patient-1"
         },
-        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+        "effectiveDateTime": "2024-02-15T14:30:00+01:00",
+        "valueQuantity": {
+          "value": 50,
+          "code": "ml",
+          "system": "http://unitsofmeasure.org",
+          "unit": "ml"
+        }
       }
     },
     {
@@ -224,19 +224,19 @@
             }
           ],
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-fluessigkeit-gesamt"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/bilanz-ausfuhr-fluessigkeit-gesamt"
           ]
         },
         "category": [
           {
             "coding": [
               {
-                "code": "exam",
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-sign"
               },
               {
-                "code": "364396009",
                 "system": "http://snomed.info/sct",
+                "code": "364396009",
                 "display": "Fluid balance observable (observable entity)"
               }
             ]
@@ -256,17 +256,17 @@
             }
           ]
         },
-        "valueQuantity": {
-          "unit": "ml",
-          "value": 2200,
-          "code": "ml",
-          "system": "http://unitsofmeasure.org"
-        },
         "status": "final",
         "subject": {
           "reference": "Patient/mii-exa-test-data-icu-patient-1"
         },
-        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+        "effectiveDateTime": "2024-02-15T14:30:00+01:00",
+        "valueQuantity": {
+          "value": 2200,
+          "code": "ml",
+          "system": "http://unitsofmeasure.org",
+          "unit": "ml"
+        }
       }
     },
     {
@@ -287,19 +287,19 @@
             }
           ],
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-gallenfluessigkeit"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/bilanz-ausfuhr-gallenfluessigkeit"
           ]
         },
         "category": [
           {
             "coding": [
               {
-                "code": "exam",
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "exam"
               },
               {
-                "code": "364396009",
                 "system": "http://snomed.info/sct",
+                "code": "364396009",
                 "display": "Fluid balance observable (observable entity)"
               }
             ]
@@ -309,8 +309,7 @@
           "coding": [
             {
               "system": "http://snomed.info/sct",
-              "code": "1162667009",
-              "display": "Volume of drainage of bile duct (observable entity)"
+              "code": "1162670008"
             },
             {
               "system": "http://loinc.org",
@@ -319,17 +318,17 @@
             }
           ]
         },
-        "valueQuantity": {
-          "unit": "ml",
-          "value": 30,
-          "code": "ml",
-          "system": "http://unitsofmeasure.org"
-        },
         "status": "final",
         "subject": {
           "reference": "Patient/mii-exa-test-data-icu-patient-1"
         },
-        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+        "effectiveDateTime": "2024-02-15T14:30:00+01:00",
+        "valueQuantity": {
+          "value": 30,
+          "code": "ml",
+          "system": "http://unitsofmeasure.org",
+          "unit": "ml"
+        }
       }
     },
     {
@@ -350,19 +349,19 @@
             }
           ],
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-gallenfluessigkeit"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/bilanz-ausfuhr-gallenfluessigkeit"
           ]
         },
         "category": [
           {
             "coding": [
               {
-                "code": "exam",
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "exam"
               },
               {
-                "code": "364396009",
                 "system": "http://snomed.info/sct",
+                "code": "364396009",
                 "display": "Fluid balance observable (observable entity)"
               }
             ]
@@ -372,8 +371,7 @@
           "coding": [
             {
               "system": "http://snomed.info/sct",
-              "code": "1162667009",
-              "display": "Volume of drainage of bile duct (observable entity)"
+              "code": "1162670008"
             },
             {
               "system": "http://loinc.org",
@@ -382,17 +380,17 @@
             }
           ]
         },
-        "valueQuantity": {
-          "unit": "ml",
-          "value": 25,
-          "code": "ml",
-          "system": "http://unitsofmeasure.org"
-        },
         "status": "final",
         "subject": {
           "reference": "Patient/mii-exa-test-data-icu-patient-1"
         },
-        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+        "effectiveDateTime": "2024-02-15T14:30:00+01:00",
+        "valueQuantity": {
+          "value": 25,
+          "code": "ml",
+          "system": "http://unitsofmeasure.org",
+          "unit": "ml"
+        }
       }
     },
     {
@@ -413,19 +411,19 @@
             }
           ],
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-magensonde"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/bilanz-ausfuhr-magensonde"
           ]
         },
         "category": [
           {
             "coding": [
               {
-                "code": "exam",
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "exam"
               },
               {
-                "code": "364396009",
                 "system": "http://snomed.info/sct",
+                "code": "364396009",
                 "display": "Fluid balance observable (observable entity)"
               }
             ]
@@ -435,8 +433,7 @@
           "coding": [
             {
               "system": "http://snomed.info/sct",
-              "code": "1162665001",
-              "display": "Volume of drainage of gastric contents (observable entity)"
+              "code": "251848001"
             },
             {
               "system": "http://loinc.org",
@@ -445,17 +442,17 @@
             }
           ]
         },
-        "valueQuantity": {
-          "unit": "ml",
-          "value": 100,
-          "code": "ml",
-          "system": "http://unitsofmeasure.org"
-        },
         "status": "final",
         "subject": {
           "reference": "Patient/mii-exa-test-data-icu-patient-1"
         },
-        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+        "effectiveDateTime": "2024-02-15T14:30:00+01:00",
+        "valueQuantity": {
+          "value": 100,
+          "code": "ml",
+          "system": "http://unitsofmeasure.org",
+          "unit": "ml"
+        }
       }
     },
     {
@@ -476,19 +473,19 @@
             }
           ],
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-op-drainage"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/bilanz-ausfuhr-drainage-op"
           ]
         },
         "category": [
           {
             "coding": [
               {
-                "code": "exam",
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "exam"
               },
               {
-                "code": "364396009",
                 "system": "http://snomed.info/sct",
+                "code": "364396009",
                 "display": "Fluid balance observable (observable entity)"
               }
             ]
@@ -500,20 +497,24 @@
               "system": "http://snomed.info/sct",
               "code": "251844004",
               "display": "Fluid output from surgical drain (observable entity)"
+            },
+            {
+              "system": "http://loinc.org",
+              "code": "9203-1"
             }
           ]
-        },
-        "valueQuantity": {
-          "unit": "ml",
-          "value": 75,
-          "code": "ml",
-          "system": "http://unitsofmeasure.org"
         },
         "status": "final",
         "subject": {
           "reference": "Patient/mii-exa-test-data-icu-patient-1"
         },
-        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+        "effectiveDateTime": "2024-02-15T14:30:00+01:00",
+        "valueQuantity": {
+          "value": 75,
+          "code": "ml",
+          "system": "http://unitsofmeasure.org",
+          "unit": "ml"
+        }
       }
     },
     {
@@ -534,19 +535,19 @@
             }
           ],
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-pankreasdrainage"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/bilanz-ausfuhr-pankreasdrainage"
           ]
         },
         "category": [
           {
             "coding": [
               {
-                "code": "exam",
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "exam"
               },
               {
-                "code": "364396009",
                 "system": "http://snomed.info/sct",
+                "code": "364396009",
                 "display": "Fluid balance observable (observable entity)"
               }
             ]
@@ -561,17 +562,17 @@
             }
           ]
         },
-        "valueQuantity": {
-          "unit": "ml",
-          "value": 20,
-          "code": "ml",
-          "system": "http://unitsofmeasure.org"
-        },
         "status": "final",
         "subject": {
           "reference": "Patient/mii-exa-test-data-icu-patient-1"
         },
-        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+        "effectiveDateTime": "2024-02-15T14:30:00+01:00",
+        "valueQuantity": {
+          "value": 20,
+          "code": "ml",
+          "system": "http://unitsofmeasure.org",
+          "unit": "ml"
+        }
       }
     },
     {
@@ -592,19 +593,19 @@
             }
           ],
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-stuhlgang"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/bilanz-ausfuhr-stuhlgang"
           ]
         },
         "category": [
           {
             "coding": [
               {
-                "code": "exam",
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "exam"
               },
               {
-                "code": "364396009",
                 "system": "http://snomed.info/sct",
+                "code": "364396009",
                 "display": "Fluid balance observable (observable entity)"
               }
             ]
@@ -613,23 +614,26 @@
         "code": {
           "coding": [
             {
+              "system": "http://snomed.info/sct",
+              "code": "251849009"
+            },
+            {
               "system": "http://loinc.org",
-              "code": "9217-1",
-              "display": "Output.stool [Volume]"
+              "code": "9167-8"
             }
           ]
-        },
-        "valueQuantity": {
-          "unit": "ml",
-          "value": 200,
-          "code": "ml",
-          "system": "http://unitsofmeasure.org"
         },
         "status": "final",
         "subject": {
           "reference": "Patient/mii-exa-test-data-icu-patient-1"
         },
-        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+        "effectiveDateTime": "2024-02-15T14:30:00+01:00",
+        "valueQuantity": {
+          "value": 200,
+          "code": "ml",
+          "system": "http://unitsofmeasure.org",
+          "unit": "ml"
+        }
       }
     },
     {
@@ -650,19 +654,19 @@
             }
           ],
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-urin"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/bilanz-ausfuhr-urin"
           ]
         },
         "category": [
           {
             "coding": [
               {
-                "code": "exam",
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-sign"
               },
               {
-                "code": "364396009",
                 "system": "http://snomed.info/sct",
+                "code": "364396009",
                 "display": "Fluid balance observable (observable entity)"
               }
             ]
@@ -672,8 +676,7 @@
           "coding": [
             {
               "system": "http://snomed.info/sct",
-              "code": "364201005",
-              "display": "Urine output observable (observable entity)"
+              "code": "364202003"
             },
             {
               "system": "http://loinc.org",
@@ -682,17 +685,17 @@
             }
           ]
         },
-        "valueQuantity": {
-          "unit": "ml",
-          "value": 1800,
-          "code": "ml",
-          "system": "http://unitsofmeasure.org"
-        },
         "status": "final",
         "subject": {
           "reference": "Patient/mii-exa-test-data-icu-patient-1"
         },
-        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+        "effectiveDateTime": "2024-02-15T14:30:00+01:00",
+        "valueQuantity": {
+          "value": 1800,
+          "code": "ml",
+          "system": "http://unitsofmeasure.org",
+          "unit": "ml"
+        }
       }
     },
     {
@@ -713,19 +716,19 @@
             }
           ],
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-wunddrainage"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/bilanz-ausfuhr-wunddrainage"
           ]
         },
         "category": [
           {
             "coding": [
               {
-                "code": "exam",
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "exam"
               },
               {
-                "code": "364396009",
                 "system": "http://snomed.info/sct",
+                "code": "364396009",
                 "display": "Fluid balance observable (observable entity)"
               }
             ]
@@ -745,17 +748,17 @@
             }
           ]
         },
-        "valueQuantity": {
-          "unit": "ml",
-          "value": 45,
-          "code": "ml",
-          "system": "http://unitsofmeasure.org"
-        },
         "status": "final",
         "subject": {
           "reference": "Patient/mii-exa-test-data-icu-patient-1"
         },
-        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+        "effectiveDateTime": "2024-02-15T14:30:00+01:00",
+        "valueQuantity": {
+          "value": 45,
+          "code": "ml",
+          "system": "http://unitsofmeasure.org",
+          "unit": "ml"
+        }
       }
     },
     {
@@ -776,19 +779,19 @@
             }
           ],
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-blutverlust"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/bilanz-blutverlust"
           ]
         },
         "category": [
           {
             "coding": [
               {
-                "code": "exam",
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-sign"
               },
               {
-                "code": "364396009",
                 "system": "http://snomed.info/sct",
+                "code": "364396009",
                 "display": "Fluid balance observable (observable entity)"
               }
             ]
@@ -808,17 +811,17 @@
             }
           ]
         },
-        "valueQuantity": {
-          "unit": "ml",
-          "value": 150,
-          "code": "ml",
-          "system": "http://unitsofmeasure.org"
-        },
         "status": "final",
         "subject": {
           "reference": "Patient/mii-exa-test-data-icu-patient-1"
         },
-        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+        "effectiveDateTime": "2024-02-15T14:30:00+01:00",
+        "valueQuantity": {
+          "value": 150,
+          "code": "ml",
+          "system": "http://unitsofmeasure.org",
+          "unit": "ml"
+        }
       }
     },
     {
@@ -839,19 +842,19 @@
             }
           ],
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-einfuhr-enterale-fluessigkeit"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/bilanz-einfuhr-enterale-fluessigkeit"
           ]
         },
         "category": [
           {
             "coding": [
               {
-                "code": "exam",
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "therapy"
               },
               {
-                "code": "364396009",
                 "system": "http://snomed.info/sct",
+                "code": "364396009",
                 "display": "Fluid balance observable (observable entity)"
               }
             ]
@@ -871,17 +874,17 @@
             }
           ]
         },
-        "valueQuantity": {
-          "unit": "ml",
-          "value": 1500,
-          "code": "ml",
-          "system": "http://unitsofmeasure.org"
-        },
         "status": "final",
         "subject": {
           "reference": "Patient/mii-exa-test-data-icu-patient-1"
         },
-        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+        "effectiveDateTime": "2024-02-15T14:30:00+01:00",
+        "valueQuantity": {
+          "value": 1500,
+          "code": "ml",
+          "system": "http://unitsofmeasure.org",
+          "unit": "ml"
+        }
       }
     },
     {
@@ -902,19 +905,19 @@
             }
           ],
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-einfuhr-fluessigkeit-gesamt"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/bilanz-einfuhr-fluessigkeit-gesamt"
           ]
         },
         "category": [
           {
             "coding": [
               {
-                "code": "exam",
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "therapy"
               },
               {
-                "code": "364396009",
                 "system": "http://snomed.info/sct",
+                "code": "364396009",
                 "display": "Fluid balance observable (observable entity)"
               }
             ]
@@ -924,27 +927,21 @@
           "coding": [
             {
               "system": "http://snomed.info/sct",
-              "code": "251852001",
-              "display": "Total fluid input (observable entity)"
-            },
-            {
-              "system": "http://loinc.org",
-              "code": "9103-3",
-              "display": "Fluid intake total Measured"
+              "code": "251855004"
             }
           ]
-        },
-        "valueQuantity": {
-          "unit": "ml",
-          "value": 2500,
-          "code": "ml",
-          "system": "http://unitsofmeasure.org"
         },
         "status": "final",
         "subject": {
           "reference": "Patient/mii-exa-test-data-icu-patient-1"
         },
-        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+        "effectiveDateTime": "2024-02-15T14:30:00+01:00",
+        "valueQuantity": {
+          "value": 2500,
+          "code": "ml",
+          "system": "http://unitsofmeasure.org",
+          "unit": "ml"
+        }
       }
     },
     {
@@ -965,19 +962,19 @@
             }
           ],
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-einfuhr-fluessigkeit-gesamt"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/bilanz-einfuhr-fluessigkeit-gesamt"
           ]
         },
         "category": [
           {
             "coding": [
               {
-                "code": "exam",
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "therapy"
               },
               {
-                "code": "364396009",
                 "system": "http://snomed.info/sct",
+                "code": "364396009",
                 "display": "Fluid balance observable (observable entity)"
               }
             ]
@@ -987,27 +984,21 @@
           "coding": [
             {
               "system": "http://snomed.info/sct",
-              "code": "251852001",
-              "display": "Total fluid input (observable entity)"
-            },
-            {
-              "system": "http://loinc.org",
-              "code": "9103-3",
-              "display": "Fluid intake total Measured"
+              "code": "251855004"
             }
           ]
-        },
-        "valueQuantity": {
-          "unit": "ml",
-          "value": 800,
-          "code": "ml",
-          "system": "http://unitsofmeasure.org"
         },
         "status": "final",
         "subject": {
           "reference": "Patient/mii-exa-test-data-icu-patient-1"
         },
-        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+        "effectiveDateTime": "2024-02-15T14:30:00+01:00",
+        "valueQuantity": {
+          "value": 800,
+          "code": "ml",
+          "system": "http://unitsofmeasure.org",
+          "unit": "ml"
+        }
       }
     },
     {
@@ -1028,19 +1019,19 @@
             }
           ],
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-fluessigkeit-gesamt"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/bilanz-ausfuhr-fluessigkeit-gesamt"
           ]
         },
         "category": [
           {
             "coding": [
               {
-                "code": "exam",
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-sign"
               },
               {
-                "code": "364396009",
                 "system": "http://snomed.info/sct",
+                "code": "364396009",
                 "display": "Fluid balance observable (observable entity)"
               }
             ]
@@ -1060,17 +1051,17 @@
             }
           ]
         },
-        "valueQuantity": {
-          "unit": "ml",
-          "value": 2400,
-          "code": "ml",
-          "system": "http://unitsofmeasure.org"
-        },
         "status": "final",
         "subject": {
           "reference": "Patient/mii-exa-test-data-icu-patient-1"
         },
-        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+        "effectiveDateTime": "2024-02-15T14:30:00+01:00",
+        "valueQuantity": {
+          "value": 2400,
+          "code": "ml",
+          "system": "http://unitsofmeasure.org",
+          "unit": "ml"
+        }
       }
     },
     {
@@ -1091,19 +1082,19 @@
             }
           ],
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-einfuhr-fluessigkeit-gesamt"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/bilanz-einfuhr-fluessigkeit-gesamt"
           ]
         },
         "category": [
           {
             "coding": [
               {
-                "code": "exam",
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "therapy"
               },
               {
-                "code": "364396009",
                 "system": "http://snomed.info/sct",
+                "code": "364396009",
                 "display": "Fluid balance observable (observable entity)"
               }
             ]
@@ -1113,27 +1104,21 @@
           "coding": [
             {
               "system": "http://snomed.info/sct",
-              "code": "251852001",
-              "display": "Total fluid input (observable entity)"
-            },
-            {
-              "system": "http://loinc.org",
-              "code": "9103-3",
-              "display": "Fluid intake total Measured"
+              "code": "251855004"
             }
           ]
-        },
-        "valueQuantity": {
-          "unit": "ml",
-          "value": 2800,
-          "code": "ml",
-          "system": "http://unitsofmeasure.org"
         },
         "status": "final",
         "subject": {
           "reference": "Patient/mii-exa-test-data-icu-patient-1"
         },
-        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+        "effectiveDateTime": "2024-02-15T14:30:00+01:00",
+        "valueQuantity": {
+          "value": 2800,
+          "code": "ml",
+          "system": "http://unitsofmeasure.org",
+          "unit": "ml"
+        }
       }
     },
     {
@@ -1154,19 +1139,19 @@
             }
           ],
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-tagesbilanz-fluessigkeit"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/bilanz-gesamte-tages-bilanz"
           ]
         },
         "category": [
           {
             "coding": [
               {
-                "code": "exam",
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-sign"
               },
               {
-                "code": "364396009",
                 "system": "http://snomed.info/sct",
+                "code": "364396009",
                 "display": "Fluid balance observable (observable entity)"
               }
             ]
@@ -1183,20 +1168,24 @@
               "system": "http://loinc.org",
               "code": "9097-7",
               "display": "Fluid balance 24 hour"
+            },
+            {
+              "system": "urn:iso:std:iso:11073:10101",
+              "code": "26684"
             }
           ]
-        },
-        "valueQuantity": {
-          "unit": "ml",
-          "value": 400,
-          "code": "ml",
-          "system": "http://unitsofmeasure.org"
         },
         "status": "final",
         "subject": {
           "reference": "Patient/mii-exa-test-data-icu-patient-1"
         },
-        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+        "effectiveDateTime": "2024-02-15T14:30:00+01:00",
+        "valueQuantity": {
+          "value": 400,
+          "code": "ml",
+          "system": "http://unitsofmeasure.org",
+          "unit": "ml"
+        }
       }
     },
     {
@@ -1217,7 +1206,7 @@
             }
           ],
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-arterieller-druck"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/arterieller-druck"
           ]
         },
         "partOf": [
@@ -1276,7 +1265,7 @@
             }
           ],
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-blutfluss-cardiovasculaeres-geraet"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/blutfluss-cardiovasculaeres-geraet"
           ]
         },
         "partOf": [
@@ -1324,7 +1313,7 @@
             }
           ],
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-blutfluss-extrakorporaler-gasaustausch"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/blutfluss-extrakorporaler-gasaustausch"
           ]
         },
         "partOf": [
@@ -1372,7 +1361,7 @@
             }
           ],
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-blutflussindex-extrakorporaler-gasaustausch"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/blutflussindex-extrakorporaler-gasaustausch"
           ]
         },
         "partOf": [
@@ -1431,7 +1420,7 @@
             }
           ],
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-dauer-extrakorporaler-gasaustausch"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/dauer-extrakorporaler-gasaustausch"
           ]
         },
         "partOf": [
@@ -1490,7 +1479,7 @@
             }
           ],
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-dauer-haemodialysesitzung"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/dauer-haemodialysesitzung"
           ]
         },
         "partOf": [
@@ -1549,7 +1538,7 @@
             }
           ],
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-gasfluss"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/gasfluss"
           ]
         },
         "partOf": [
@@ -1597,7 +1586,7 @@
             }
           ],
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-haemodialyse-blutfluss"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/haemodialyse-blutfluss"
           ]
         },
         "partOf": [
@@ -1656,7 +1645,7 @@
             }
           ],
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-ionisiertes-kalzium-nierenersatzverfahren"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/ionisiertes-kalzium-nierenersatzverfahren"
           ]
         },
         "partOf": [
@@ -1715,7 +1704,7 @@
             }
           ],
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-substituatfluss"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/substituatfluss"
           ]
         },
         "partOf": [
@@ -1774,7 +1763,7 @@
             }
           ],
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-substituatvolumen"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/substituatvolumen"
           ]
         },
         "partOf": [
@@ -1833,7 +1822,7 @@
             }
           ],
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-venoeser-druck"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/venoeser-druck"
           ]
         },
         "partOf": [
@@ -1881,7 +1870,7 @@
             }
           ],
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-exspiratorischer-sauerstoffpartialdruck"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/exspiratorischer-sauerstoffpartialdruck"
           ]
         },
         "partOf": [
@@ -1950,7 +1939,7 @@
             }
           ],
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-arterieller-blutdruck"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/arterieller-blutdruck"
           ]
         },
         "category": [
@@ -2004,7 +1993,7 @@
               "system": "http://unitsofmeasure.org",
               "code": "mm[Hg]",
               "value": 120,
-              "unit": "mmHg"
+              "unit": "millimeter Mercury column"
             }
           },
           {
@@ -2028,7 +2017,7 @@
               "system": "http://unitsofmeasure.org",
               "code": "mm[Hg]",
               "value": 80,
-              "unit": "mmHg"
+              "unit": "millimeter Mercury column"
             }
           }
         ],
@@ -2057,7 +2046,7 @@
             }
           ],
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-atemfrequenz"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/atemfrequenz"
           ]
         },
         "category": [
@@ -2115,7 +2104,7 @@
             }
           ],
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-herzfrequenz"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/herzfrequenz"
           ]
         },
         "category": [
@@ -2148,8 +2137,8 @@
           ]
         },
         "valueQuantity": {
-          "system": "http://unitsofmeasure.org",
           "unit": "beats per minute",
+          "system": "http://unitsofmeasure.org",
           "code": "/min",
           "value": 72
         },
@@ -2178,7 +2167,7 @@
             }
           ],
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-koerpergewicht"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/koerpergewicht"
           ]
         },
         "category": [
@@ -2197,11 +2186,6 @@
               "system": "http://loinc.org",
               "code": "29463-7",
               "display": "Body weight"
-            },
-            {
-              "system": "http://loinc.org",
-              "code": "8339-4",
-              "display": "Birth weight Measured"
             },
             {
               "system": "http://snomed.info/sct",
@@ -2241,7 +2225,7 @@
             }
           ],
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-koerpergroesse"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/koerpergroesse"
           ]
         },
         "category": [
@@ -2304,7 +2288,7 @@
             }
           ],
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-kopfumfang"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/kopfumfang"
           ]
         },
         "category": [
@@ -2326,10 +2310,12 @@
             },
             {
               "system": "http://snomed.info/sct",
-              "code": "363812007",
-              "display": "Head circumference"
+              "code": "363812007"
             }
           ]
+        },
+        "effectivePeriod": {
+          "start": "2024-02-15T14:30:00+01:00"
         },
         "valueQuantity": {
           "system": "http://unitsofmeasure.org",
@@ -2340,8 +2326,7 @@
         "status": "final",
         "subject": {
           "reference": "Patient/mii-exa-test-data-icu-patient-1"
-        },
-        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+        }
       }
     },
     {
@@ -2362,7 +2347,7 @@
             }
           ],
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-inspiratorische-sauerstofffraktion-eingestellt"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/inspiratorische-sauerstofffraktion-eingestellt"
           ]
         },
         "partOf": [
@@ -2395,17 +2380,17 @@
             }
           ]
         },
+        "valueQuantity": {
+          "system": "http://unitsofmeasure.org",
+          "value": 0.4,
+          "code": "%",
+          "unit": "percent"
+        },
         "status": "final",
         "subject": {
           "reference": "Patient/mii-exa-test-data-icu-patient-1"
         },
-        "effectiveDateTime": "2024-02-15T14:30:00+01:00",
-        "valueQuantity": {
-          "value": 0.4,
-          "code": "%",
-          "system": "http://unitsofmeasure.org",
-          "unit": "percent"
-        }
+        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
       }
     },
     {
@@ -2426,7 +2411,7 @@
             }
           ],
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-atemwegsdruck-bei-null-expiratorischem-gasfluss"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/atemwegsdruck-bei-null-exspiratorischem-gasfluss"
           ]
         },
         "partOf": [
@@ -2485,7 +2470,7 @@
             }
           ],
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-atemwegsdruck-bei-mittlerem-expiratorischem-gasfluss"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/atemwegsdruck-bei-mitl-exspiratorischem-gasfluss"
           ]
         },
         "partOf": [
@@ -2544,7 +2529,7 @@
             }
           ],
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-atemzugvolumen-einstellung"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/atemzugvolumen-einstellung"
           ]
         },
         "partOf": [
@@ -2613,7 +2598,7 @@
             }
           ],
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-atemzugvolumen-waehrend-beatmung"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/atemzugvolumen-waehrend-beatmung"
           ]
         },
         "partOf": [
@@ -2682,7 +2667,7 @@
             }
           ],
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-beatmungsvolumen-pro-minute-maschineller-beatmung"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/beatmungsvolumen-pro-minute-maschineller"
           ]
         },
         "partOf": [
@@ -2751,7 +2736,7 @@
             }
           ],
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-beatmungszeit-hohem-druck"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/beatmungszeit-hohem-druck"
           ]
         },
         "partOf": [
@@ -2815,7 +2800,7 @@
             }
           ],
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-beatmungszeit-niedrigem-druck"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/beatmungszeit-niedrigem-druck"
           ]
         },
         "partOf": [
@@ -2879,7 +2864,7 @@
             }
           ],
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-eingestellter-inspiratorischer-gasfluss"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/eingestellter-inspiratorischer-gasfluss"
           ]
         },
         "partOf": [
@@ -2938,7 +2923,7 @@
             }
           ],
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-einstellung-ausatmungszeit-beatmung"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/einstellung-ausatmungszeit-beatmung"
           ]
         },
         "partOf": [
@@ -3002,7 +2987,7 @@
             }
           ],
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-einstellung-einatmungszeit-beatmung"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/einstellung-einatmungszeit-beatmung"
           ]
         },
         "partOf": [
@@ -3071,7 +3056,7 @@
             }
           ],
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-endexpiratorischer-kohlendioxidpartialdruck"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/endexspiratorischer-kohlendioxidpartialdruck"
           ]
         },
         "partOf": [
@@ -3140,7 +3125,7 @@
             }
           ],
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-exspiratorischer-gasfluss"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/exspiratorischer-gasfluss"
           ]
         },
         "partOf": [
@@ -3204,7 +3189,7 @@
             }
           ],
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-horowitz-in-arteriellem-blut"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/horowitz-in-arteriellem-blut"
           ]
         },
         "partOf": [
@@ -3216,8 +3201,9 @@
           {
             "coding": [
               {
-                "code": "vital-signs",
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+                "code": "40617009",
+                "system": "http://snomed.info/sct",
+                "display": "Artificial ventilation (regime/therapy)"
               }
             ]
           }
@@ -3267,7 +3253,7 @@
             }
           ],
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-inspiratorische-sauerstofffraktion-gemessen"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/inspiratorische-sauerstofffraktion-gemessen"
           ]
         },
         "partOf": [
@@ -3300,17 +3286,17 @@
             }
           ]
         },
+        "valueQuantity": {
+          "system": "http://unitsofmeasure.org",
+          "value": 0.42,
+          "code": "%",
+          "unit": "percent"
+        },
         "status": "final",
         "subject": {
           "reference": "Patient/mii-exa-test-data-icu-patient-1"
         },
-        "effectiveDateTime": "2024-02-15T14:30:00+01:00",
-        "valueQuantity": {
-          "value": 0.42,
-          "code": "%",
-          "system": "http://unitsofmeasure.org",
-          "unit": "percent"
-        }
+        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
       }
     },
     {
@@ -3331,7 +3317,7 @@
             }
           ],
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-inspiratorischer-gasfluss"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/inspiratorischer-gasfluss"
           ]
         },
         "partOf": [
@@ -3395,7 +3381,7 @@
             }
           ],
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-maximaler-beatmungsdruck"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/maximaler-beatmungsdruck"
           ]
         },
         "partOf": [
@@ -3464,7 +3450,7 @@
             }
           ],
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-mechanische-atemfrequenz-beatmet"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mechanische-atemfrequenz-beatmet"
           ]
         },
         "partOf": [
@@ -3533,7 +3519,7 @@
             }
           ],
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-mittlerer-beatmungsdruck"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mittlerer-beatmungsdruck"
           ]
         },
         "partOf": [
@@ -3602,7 +3588,7 @@
             }
           ],
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-positiv-endexpiratorischer-druck"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/positiv-endexspiratorischer-druck"
           ]
         },
         "partOf": [
@@ -3671,7 +3657,7 @@
             }
           ],
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-spontane-atemfrequenz-beatmet"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/spontane-atemfrequenz-beatmet"
           ]
         },
         "partOf": [
@@ -3734,7 +3720,7 @@
             }
           ],
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-spontane-mechanische-atemfrequenz-beatmet"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/spontane-mechanische-atemfrequenz-beatmet"
           ]
         },
         "partOf": [
@@ -3803,7 +3789,7 @@
             }
           ],
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-spontanes-atemzugvolumen"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/spontanes-atemzugvolumen"
           ]
         },
         "partOf": [
@@ -3867,7 +3853,7 @@
             }
           ],
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-spontanes-mechanisches-atemzugvolumen-waehrend-beatmung"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/spontanes-mechanisches-atemzugvolumen-waehrend"
           ]
         },
         "partOf": [
@@ -3926,7 +3912,7 @@
             }
           ],
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-unterstuetzungsdruck-beatmung"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/unterstuetzungsdruck-beatmung"
           ]
         },
         "partOf": [
@@ -3985,7 +3971,7 @@
             }
           ],
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-zeitverhaeltnis-ein-ausatmung"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/zeitverhaeltnis-ein-ausatmung"
           ]
         },
         "partOf": [
@@ -4054,7 +4040,7 @@
             }
           ],
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-dynamische-kompliance"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/dynamische-kompliance"
           ]
         },
         "partOf": [
@@ -4082,8 +4068,7 @@
             },
             {
               "system": "http://loinc.org",
-              "code": "0827-3",
-              "display": "Dynamic lung compliance"
+              "code": "60827-3"
             },
             {
               "system": "urn:iso:std:iso:11073:10101",
@@ -4123,7 +4108,7 @@
             }
           ],
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-druckdifferenz-beatmung"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/druckdifferenz-beatmung"
           ]
         },
         "partOf": [
@@ -4187,7 +4172,7 @@
             }
           ],
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-extrakorporales-verfahren"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/extrakorporales-verfahren"
           ]
         },
         "performedPeriod": {
@@ -4239,7 +4224,7 @@
             }
           ],
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-beatmung"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/beatmung"
           ]
         },
         "performedPeriod": {
@@ -4291,7 +4276,7 @@
             }
           ],
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-icu-device"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/icu-device"
           ]
         },
         "deviceName": [
@@ -4332,7 +4317,7 @@
             }
           ],
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-devicemetric-eingestellte-gemessene-parameter-extrakorporale-verfahren"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/devicemetric-eingestellte-gemessene-parameter-extrakorporale-verfahren"
           ]
         },
         "type": {
@@ -4368,7 +4353,7 @@
             }
           ],
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-devicemetric-eingestellte-gemessene-parameter-beatmung"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/devicemetric-eingestellte-gemessene-parameter-beatmung"
           ]
         },
         "type": {
