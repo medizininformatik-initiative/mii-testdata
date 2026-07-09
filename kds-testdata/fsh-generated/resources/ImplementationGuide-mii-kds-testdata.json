@@ -1211,6 +1211,14 @@
       },
       {
         "reference": {
+          "reference": "Condition/mii-exa-test-data-mikrobio-diagnose-1"
+        },
+        "name": "mii-exa-test-data-mikrobio-diagnose-1",
+        "description": "Condition: Sepsis durch MRSA fuer Mikrobio-Patient 1",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "DiagnosticReport/mii-exa-test-data-mikrobio-diagnostic-report-1"
         },
         "name": "mii-exa-test-data-mikrobio-diagnostic-report-1",

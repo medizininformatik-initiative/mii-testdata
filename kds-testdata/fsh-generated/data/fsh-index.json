@@ -61,7 +61,7 @@
     "fshType": "Instance",
     "fshFile": "modul-mikrobio/Bundle.fsh",
     "startLine": 5,
-    "endLine": 79
+    "endLine": 80
   },
   {
     "outputFile": "Bundle-mii-exa-test-data-bundle-molgen-1.json",
@@ -332,6 +332,14 @@
     "fshName": "mii-exa-test-data-icu-diagnose-1",
     "fshType": "Instance",
     "fshFile": "modul-icu/Condition.fsh",
+    "startLine": 2,
+    "endLine": 8
+  },
+  {
+    "outputFile": "Condition-mii-exa-test-data-mikrobio-diagnose-1.json",
+    "fshName": "mii-exa-test-data-mikrobio-diagnose-1",
+    "fshType": "Instance",
+    "fshFile": "modul-mikrobio/Condition.fsh",
     "startLine": 2,
     "endLine": 8
   },

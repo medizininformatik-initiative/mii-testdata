@@ -12,6 +12,7 @@ Description: "Bundle: Mikrobiologie Testdaten (Sepsis-Patient mit MRSA)"
 // Infrastructure
 * insert AddBundleEntry(mii-exa-test-data-mikrobio-patient-1, Patient)
 * insert AddBundleEntry(mii-exa-test-data-mikrobio-encounter-1, Encounter)
+* insert AddBundleEntry(mii-exa-test-data-mikrobio-diagnose-1, Condition)
 * insert AddBundleEntry(mii-exa-test-data-mikrobio-organization-lab-1, Organization)
 * insert AddBundleEntry(mii-exa-test-data-mikrobio-specimen-1, Specimen)
 * insert AddBundleEntry(mii-exa-test-data-mikrobio-specimen-2, Specimen)

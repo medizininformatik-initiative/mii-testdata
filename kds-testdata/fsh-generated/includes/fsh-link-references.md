@@ -127,6 +127,7 @@
 [mii-exa-test-data-mikrobio-device-immunoassay-1]: Device-mii-exa-test-data-mikrobio-device-immunoassay-1.html
 [mii-exa-test-data-mikrobio-device-maldi-1]: Device-mii-exa-test-data-mikrobio-device-maldi-1.html
 [mii-exa-test-data-mikrobio-device-pcr-1]: Device-mii-exa-test-data-mikrobio-device-pcr-1.html
+[mii-exa-test-data-mikrobio-diagnose-1]: Condition-mii-exa-test-data-mikrobio-diagnose-1.html
 [mii-exa-test-data-mikrobio-diagnostic-report-1]: DiagnosticReport-mii-exa-test-data-mikrobio-diagnostic-report-1.html
 [mii-exa-test-data-mikrobio-empfindlichkeit-1]: Observation-mii-exa-test-data-mikrobio-empfindlichkeit-1.html
 [mii-exa-test-data-mikrobio-empfindlichkeit-alt-1]: Observation-mii-exa-test-data-mikrobio-empfindlichkeit-alt-1.html
