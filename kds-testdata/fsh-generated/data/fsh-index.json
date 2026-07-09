@@ -37,7 +37,7 @@
     "fshType": "Instance",
     "fshFile": "modul-biobank/Bundle.fsh",
     "startLine": 5,
-    "endLine": 56
+    "endLine": 57
   },
   {
     "outputFile": "Bundle-mii-exa-test-data-bundle-dokument-1.json",
@@ -45,7 +45,7 @@
     "fshType": "Instance",
     "fshFile": "modul-dokument/Bundle.fsh",
     "startLine": 5,
-    "endLine": 16
+    "endLine": 17
   },
   {
     "outputFile": "Bundle-mii-exa-test-data-bundle-icu-1.json",
@@ -53,7 +53,7 @@
     "fshType": "Instance",
     "fshFile": "modul-icu/Bundle.fsh",
     "startLine": 5,
-    "endLine": 90
+    "endLine": 91
   },
   {
     "outputFile": "Bundle-mii-exa-test-data-bundle-mikrobio-1.json",
@@ -189,7 +189,7 @@
     "fshType": "Instance",
     "fshFile": "modul-pro/Bundle.fsh",
     "startLine": 5,
-    "endLine": 34
+    "endLine": 35
   },
   {
     "outputFile": "Bundle-mii-exa-test-data-bundle-seltene-1.json",
@@ -205,7 +205,7 @@
     "fshType": "Instance",
     "fshFile": "modul-studien/Bundle.fsh",
     "startLine": 5,
-    "endLine": 19
+    "endLine": 20
   },
   {
     "outputFile": "CarePlan-mii-exa-test-data-behandlungsempfehlung.json",
@@ -318,6 +318,22 @@
     "fshFile": "modul-biobank/Patient.fsh",
     "startLine": 115,
     "endLine": 128
+  },
+  {
+    "outputFile": "Condition-mii-exa-test-data-dokument-diagnose-1.json",
+    "fshName": "mii-exa-test-data-dokument-diagnose-1",
+    "fshType": "Instance",
+    "fshFile": "modul-dokument/Condition.fsh",
+    "startLine": 2,
+    "endLine": 8
+  },
+  {
+    "outputFile": "Condition-mii-exa-test-data-icu-diagnose-1.json",
+    "fshName": "mii-exa-test-data-icu-diagnose-1",
+    "fshType": "Instance",
+    "fshFile": "modul-icu/Condition.fsh",
+    "startLine": 2,
+    "endLine": 8
   },
   {
     "outputFile": "Condition-mii-exa-test-data-molgen-diagnose-1.json",
@@ -510,6 +526,22 @@
     "fshFile": "modul-diagnose/Diagnose.fsh",
     "startLine": 124,
     "endLine": 134
+  },
+  {
+    "outputFile": "Condition-mii-exa-test-data-pro-diagnose-1.json",
+    "fshName": "mii-exa-test-data-pro-diagnose-1",
+    "fshType": "Instance",
+    "fshFile": "modul-pro/Condition.fsh",
+    "startLine": 2,
+    "endLine": 8
+  },
+  {
+    "outputFile": "Condition-mii-exa-test-data-studien-diagnose-1.json",
+    "fshName": "mii-exa-test-data-studien-diagnose-1",
+    "fshType": "Instance",
+    "fshFile": "modul-studien/Condition.fsh",
+    "startLine": 2,
+    "endLine": 8
   },
   {
     "outputFile": "Consent-mii-exa-test-data-patient-1-consent-1.json",
@@ -854,6 +886,14 @@
     "fshFile": "modul-bildgebung/Patient.fsh",
     "startLine": 17,
     "endLine": 26
+  },
+  {
+    "outputFile": "Encounter-mii-exa-test-data-biobank-encounter-1.json",
+    "fshName": "mii-exa-test-data-biobank-encounter-1",
+    "fshType": "Instance",
+    "fshFile": "modul-biobank/Encounter.fsh",
+    "startLine": 2,
+    "endLine": 11
   },
   {
     "outputFile": "Encounter-mii-exa-test-data-dokument-encounter-1.json",

@@ -34,6 +34,7 @@
 [mii-exa-test-data-bildgebungsprozedur]: Procedure-mii-exa-test-data-bildgebungsprozedur.html
 [mii-exa-test-data-bildgebungsstudie]: ImagingStudy-mii-exa-test-data-bildgebungsstudie.html
 [mii-exa-test-data-biobank-diagnose-1]: Condition-mii-exa-test-data-biobank-diagnose-1.html
+[mii-exa-test-data-biobank-encounter-1]: Encounter-mii-exa-test-data-biobank-encounter-1.html
 [mii-exa-test-data-biobank-patient-1]: Patient-mii-exa-test-data-biobank-patient-1.html
 [mii-exa-test-data-biobank-patient-2]: Patient-mii-exa-test-data-biobank-patient-2.html
 [mii-exa-test-data-biobank-patient-3]: Patient-mii-exa-test-data-biobank-patient-3.html
@@ -69,9 +70,11 @@
 [mii-exa-test-data-device-roche-cobas-c303]: Device-mii-exa-test-data-device-roche-cobas-c303.html
 [mii-exa-test-data-device-roche-cobas-e402]: Device-mii-exa-test-data-device-roche-cobas-e402.html
 [mii-exa-test-data-devicemetric-roche-cobas-c303-1]: DeviceMetric-mii-exa-test-data-devicemetric-roche-cobas-c303-1.html
+[mii-exa-test-data-dokument-diagnose-1]: Condition-mii-exa-test-data-dokument-diagnose-1.html
 [mii-exa-test-data-dokument-encounter-1]: Encounter-mii-exa-test-data-dokument-encounter-1.html
 [mii-exa-test-data-dokument-patient-1]: Patient-mii-exa-test-data-dokument-patient-1.html
 [mii-exa-test-data-geraet]: Device-mii-exa-test-data-geraet.html
+[mii-exa-test-data-icu-diagnose-1]: Condition-mii-exa-test-data-icu-diagnose-1.html
 [mii-exa-test-data-icu-encounter-1]: Encounter-mii-exa-test-data-icu-encounter-1.html
 [mii-exa-test-data-icu-patient-1]: Patient-mii-exa-test-data-icu-patient-1.html
 [mii-exa-test-data-koerperstruktur]: BodyStructure-mii-exa-test-data-koerperstruktur.html
@@ -663,6 +666,7 @@
 [mii-exa-test-data-practitioner-physician-1]: Practitioner-mii-exa-test-data-practitioner-physician-1.html
 [mii-exa-test-data-practitioner-physician-2]: Practitioner-mii-exa-test-data-practitioner-physician-2.html
 [mii-exa-test-data-practitioner-role-physician-1]: PractitionerRole-mii-exa-test-data-practitioner-role-physician-1.html
+[mii-exa-test-data-pro-diagnose-1]: Condition-mii-exa-test-data-pro-diagnose-1.html
 [mii-exa-test-data-pro-encounter-1]: Encounter-mii-exa-test-data-pro-encounter-1.html
 [mii-exa-test-data-pro-patient-1]: Patient-mii-exa-test-data-pro-patient-1.html
 [mii-exa-test-data-radiologische-beobachtung]: Observation-mii-exa-test-data-radiologische-beobachtung.html
@@ -672,6 +676,7 @@
 [mii-exa-test-data-seltene-molgen-variante-1]: Observation-mii-exa-test-data-seltene-molgen-variante-1.html
 [mii-exa-test-data-seltene-patient-1]: Patient-mii-exa-test-data-seltene-patient-1.html
 [mii-exa-test-data-studie-einschluss-anfrage-1]: ServiceRequest-mii-exa-test-data-studie-einschluss-anfrage-1.html
+[mii-exa-test-data-studien-diagnose-1]: Condition-mii-exa-test-data-studien-diagnose-1.html
 [mii-exa-test-data-studien-encounter-1]: Encounter-mii-exa-test-data-studien-encounter-1.html
 [mii-exa-test-data-studien-patient-1]: Patient-mii-exa-test-data-studien-patient-1.html
 [mii-exa-test-data-mtb-antrag-kostenuebernahme-1]: Claim-mii-exa-test-data-mtb-antrag-kostenuebernahme-1.html
