@@ -9,7 +9,7 @@
         "display": "test health data"
       }
     ],
-    "source": "https://example.org/fhir/mikrobio-lab-system",
+    "source": "https://www.charite.de/fhir/mikrobiologie-lab-system",
     "profile": [
       "https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-antigen-antikoerper-quantitativ"
     ]

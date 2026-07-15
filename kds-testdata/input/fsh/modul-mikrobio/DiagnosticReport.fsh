@@ -7,7 +7,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/Stru
 Usage: #example
 Description: "Mikrobio Diagnostic Report: Blutkultur + Antibiogramm + MRSA-Befund"
 * insert TestDataLabel
-* meta.source = "https://example.org/fhir/mikrobio-lab-system"
+* meta.source = "https://www.charite.de/fhir/mikrobiologie-lab-system"
 * identifier[befund].type.coding[fillerV2] = $v2-0203#FILL
 * identifier[befund].system = "https://www.charite.de/fhir/sid/diagnostic-report"
 * identifier[befund].value = "MIKROBIO-DR-001"

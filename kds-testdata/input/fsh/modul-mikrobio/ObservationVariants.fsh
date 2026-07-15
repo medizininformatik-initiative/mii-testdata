@@ -8,7 +8,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/Stru
 Usage: #example
 Description: "Mikrobio: allgemeine-bestimmung — Alt-Variante zur MS-Coverage"
 * insert TestDataLabel
-* meta.source = "https://example.org/fhir/mikrobio-lab-system"
+* meta.source = "https://www.charite.de/fhir/mikrobiologie-lab-system"
 * identifier[analyseBefundCode].type.coding[observationInstanceV2] = $v2-0203#OBI
 * identifier[analyseBefundCode].system = "https://www.charite.de/fhir/sid/test-lab-results"
 * identifier[analyseBefundCode].value = "allgemeine-bestimmung-alt-1"
@@ -51,7 +51,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/Stru
 Usage: #example
 Description: "Mikrobio: allgemeine-bestimmung — Probe nicht auswertbar (dataAbsentReason)"
 * insert TestDataLabel
-* meta.source = "https://example.org/fhir/mikrobio-lab-system"
+* meta.source = "https://www.charite.de/fhir/mikrobiologie-lab-system"
 * identifier[analyseBefundCode].type.coding[observationInstanceV2] = $v2-0203#OBI
 * identifier[analyseBefundCode].system = "https://www.charite.de/fhir/sid/test-lab-results"
 * identifier[analyseBefundCode].value = "allgemeine-bestimmung-dar-1"
@@ -86,7 +86,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/Stru
 Usage: #example
 Description: "Mikrobio: allgemeine-kultur — Alt-Variante zur MS-Coverage"
 * insert TestDataLabel
-* meta.source = "https://example.org/fhir/mikrobio-lab-system"
+* meta.source = "https://www.charite.de/fhir/mikrobiologie-lab-system"
 * identifier[analyseBefundCode].type.coding[observationInstanceV2] = $v2-0203#OBI
 * identifier[analyseBefundCode].system = "https://www.charite.de/fhir/sid/test-lab-results"
 * identifier[analyseBefundCode].value = "allgemeine-kultur-alt-1"
@@ -129,7 +129,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/Stru
 Usage: #example
 Description: "Mikrobio: antigen-antikoerper-quantitativ — Alt-Variante zur MS-Coverage"
 * insert TestDataLabel
-* meta.source = "https://example.org/fhir/mikrobio-lab-system"
+* meta.source = "https://www.charite.de/fhir/mikrobiologie-lab-system"
 * identifier[analyseBefundCode].type.coding[observationInstanceV2] = $v2-0203#OBI
 * identifier[analyseBefundCode].system = "https://www.charite.de/fhir/sid/test-lab-results"
 * identifier[analyseBefundCode].value = "antigen-antikoerper-quantitativ-alt-1"
@@ -179,7 +179,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/Stru
 Usage: #example
 Description: "Mikrobio: antigen-antikoerper-quantitativ — Probe nicht auswertbar (dataAbsentReason)"
 * insert TestDataLabel
-* meta.source = "https://example.org/fhir/mikrobio-lab-system"
+* meta.source = "https://www.charite.de/fhir/mikrobiologie-lab-system"
 * identifier[analyseBefundCode].type.coding[observationInstanceV2] = $v2-0203#OBI
 * identifier[analyseBefundCode].system = "https://www.charite.de/fhir/sid/test-lab-results"
 * identifier[analyseBefundCode].value = "antigen-antikoerper-quantitativ-dar-1"
@@ -216,7 +216,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/Stru
 Usage: #example
 Description: "Mikrobio: aviditaet — Alt-Variante zur MS-Coverage"
 * insert TestDataLabel
-* meta.source = "https://example.org/fhir/mikrobio-lab-system"
+* meta.source = "https://www.charite.de/fhir/mikrobiologie-lab-system"
 * identifier[analyseBefundCode].type.coding[observationInstanceV2] = $v2-0203#OBI
 * identifier[analyseBefundCode].system = "https://www.charite.de/fhir/sid/test-lab-results"
 * identifier[analyseBefundCode].value = "aviditaet-alt-1"
@@ -266,7 +266,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/Stru
 Usage: #example
 Description: "Mikrobio: aviditaet — Probe nicht auswertbar (dataAbsentReason)"
 * insert TestDataLabel
-* meta.source = "https://example.org/fhir/mikrobio-lab-system"
+* meta.source = "https://www.charite.de/fhir/mikrobiologie-lab-system"
 * identifier[analyseBefundCode].type.coding[observationInstanceV2] = $v2-0203#OBI
 * identifier[analyseBefundCode].system = "https://www.charite.de/fhir/sid/test-lab-results"
 * identifier[analyseBefundCode].value = "aviditaet-dar-1"
@@ -303,7 +303,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/Stru
 Usage: #example
 Description: "Mikrobio: barlett-score — Alt-Variante zur MS-Coverage"
 * insert TestDataLabel
-* meta.source = "https://example.org/fhir/mikrobio-lab-system"
+* meta.source = "https://www.charite.de/fhir/mikrobiologie-lab-system"
 * identifier[analyseBefundCode].type.coding[observationInstanceV2] = $v2-0203#OBI
 * identifier[analyseBefundCode].system = "https://www.charite.de/fhir/sid/test-lab-results"
 * identifier[analyseBefundCode].value = "barlett-score-alt-1"
@@ -346,7 +346,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/Stru
 Usage: #example
 Description: "Mikrobio: barlett-score — Probe nicht auswertbar (dataAbsentReason)"
 * insert TestDataLabel
-* meta.source = "https://example.org/fhir/mikrobio-lab-system"
+* meta.source = "https://www.charite.de/fhir/mikrobiologie-lab-system"
 * identifier[analyseBefundCode].type.coding[observationInstanceV2] = $v2-0203#OBI
 * identifier[analyseBefundCode].system = "https://www.charite.de/fhir/sid/test-lab-results"
 * identifier[analyseBefundCode].value = "barlett-score-dar-1"
@@ -380,7 +380,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/Stru
 Usage: #example
 Description: "Mikrobio: ct-wert — Alt-Variante zur MS-Coverage"
 * insert TestDataLabel
-* meta.source = "https://example.org/fhir/mikrobio-lab-system"
+* meta.source = "https://www.charite.de/fhir/mikrobiologie-lab-system"
 * identifier[analyseBefundCode].type.coding[observationInstanceV2] = $v2-0203#OBI
 * identifier[analyseBefundCode].system = "https://www.charite.de/fhir/sid/test-lab-results"
 * identifier[analyseBefundCode].value = "ct-wert-alt-1"
@@ -430,7 +430,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/Stru
 Usage: #example
 Description: "Mikrobio: ct-wert — Probe nicht auswertbar (dataAbsentReason)"
 * insert TestDataLabel
-* meta.source = "https://example.org/fhir/mikrobio-lab-system"
+* meta.source = "https://www.charite.de/fhir/mikrobiologie-lab-system"
 * identifier[analyseBefundCode].type.coding[observationInstanceV2] = $v2-0203#OBI
 * identifier[analyseBefundCode].system = "https://www.charite.de/fhir/sid/test-lab-results"
 * identifier[analyseBefundCode].value = "ct-wert-dar-1"
@@ -467,7 +467,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/Stru
 Usage: #example
 Description: "Mikrobio: empfindlichkeit — Alt-Variante zur MS-Coverage"
 * insert TestDataLabel
-* meta.source = "https://example.org/fhir/mikrobio-lab-system"
+* meta.source = "https://www.charite.de/fhir/mikrobiologie-lab-system"
 * identifier[analyseBefundCode].type.coding[observationInstanceV2] = $v2-0203#OBI
 * identifier[analyseBefundCode].system = "https://www.charite.de/fhir/sid/test-lab-results"
 * identifier[analyseBefundCode].value = "empfindlichkeit-alt-1"
@@ -516,7 +516,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/Stru
 Usage: #example
 Description: "Mikrobio: empfindlichkeit — Probe nicht auswertbar (dataAbsentReason)"
 * insert TestDataLabel
-* meta.source = "https://example.org/fhir/mikrobio-lab-system"
+* meta.source = "https://www.charite.de/fhir/mikrobiologie-lab-system"
 * identifier[analyseBefundCode].type.coding[observationInstanceV2] = $v2-0203#OBI
 * identifier[analyseBefundCode].system = "https://www.charite.de/fhir/sid/test-lab-results"
 * identifier[analyseBefundCode].value = "empfindlichkeit-dar-1"
@@ -550,7 +550,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/Stru
 Usage: #example
 Description: "Mikrobio: keimzahl — Alt-Variante zur MS-Coverage"
 * insert TestDataLabel
-* meta.source = "https://example.org/fhir/mikrobio-lab-system"
+* meta.source = "https://www.charite.de/fhir/mikrobiologie-lab-system"
 * identifier[analyseBefundCode].type.coding[observationInstanceV2] = $v2-0203#OBI
 * identifier[analyseBefundCode].system = "https://www.charite.de/fhir/sid/test-lab-results"
 * identifier[analyseBefundCode].value = "keimzahl-alt-1"
@@ -597,7 +597,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/Stru
 Usage: #example
 Description: "Mikrobio: keimzahl — Probe nicht auswertbar (dataAbsentReason)"
 * insert TestDataLabel
-* meta.source = "https://example.org/fhir/mikrobio-lab-system"
+* meta.source = "https://www.charite.de/fhir/mikrobiologie-lab-system"
 * identifier[analyseBefundCode].type.coding[observationInstanceV2] = $v2-0203#OBI
 * identifier[analyseBefundCode].system = "https://www.charite.de/fhir/sid/test-lab-results"
 * identifier[analyseBefundCode].value = "keimzahl-dar-1"
@@ -631,7 +631,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/Stru
 Usage: #example
 Description: "Mikrobio: mikroskopie — Alt-Variante zur MS-Coverage"
 * insert TestDataLabel
-* meta.source = "https://example.org/fhir/mikrobio-lab-system"
+* meta.source = "https://www.charite.de/fhir/mikrobiologie-lab-system"
 * identifier[analyseBefundCode].type.coding[observationInstanceV2] = $v2-0203#OBI
 * identifier[analyseBefundCode].system = "https://www.charite.de/fhir/sid/test-lab-results"
 * identifier[analyseBefundCode].value = "mikroskopie-alt-1"
@@ -674,7 +674,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/Stru
 Usage: #example
 Description: "Mikrobio: mikroskopie — Probe nicht auswertbar (dataAbsentReason)"
 * insert TestDataLabel
-* meta.source = "https://example.org/fhir/mikrobio-lab-system"
+* meta.source = "https://www.charite.de/fhir/mikrobiologie-lab-system"
 * identifier[analyseBefundCode].type.coding[observationInstanceV2] = $v2-0203#OBI
 * identifier[analyseBefundCode].system = "https://www.charite.de/fhir/sid/test-lab-results"
 * identifier[analyseBefundCode].value = "mikroskopie-dar-1"
@@ -708,7 +708,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/Stru
 Usage: #example
 Description: "Mikrobio: molekulare-pathogenlast — Alt-Variante zur MS-Coverage"
 * insert TestDataLabel
-* meta.source = "https://example.org/fhir/mikrobio-lab-system"
+* meta.source = "https://www.charite.de/fhir/mikrobiologie-lab-system"
 * identifier[analyseBefundCode].type.coding[observationInstanceV2] = $v2-0203#OBI
 * identifier[analyseBefundCode].system = "https://www.charite.de/fhir/sid/test-lab-results"
 * identifier[analyseBefundCode].value = "molekulare-pathogenlast-alt-1"
@@ -758,7 +758,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/Stru
 Usage: #example
 Description: "Mikrobio: molekulare-pathogenlast — Probe nicht auswertbar (dataAbsentReason)"
 * insert TestDataLabel
-* meta.source = "https://example.org/fhir/mikrobio-lab-system"
+* meta.source = "https://www.charite.de/fhir/mikrobiologie-lab-system"
 * identifier[analyseBefundCode].type.coding[observationInstanceV2] = $v2-0203#OBI
 * identifier[analyseBefundCode].system = "https://www.charite.de/fhir/sid/test-lab-results"
 * identifier[analyseBefundCode].value = "molekulare-pathogenlast-dar-1"
@@ -795,7 +795,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/Stru
 Usage: #example
 Description: "Mikrobio: mre-klasse — Alt-Variante zur MS-Coverage"
 * insert TestDataLabel
-* meta.source = "https://example.org/fhir/mikrobio-lab-system"
+* meta.source = "https://www.charite.de/fhir/mikrobiologie-lab-system"
 * identifier[analyseBefundCode].type.coding[observationInstanceV2] = $v2-0203#OBI
 * identifier[analyseBefundCode].system = "https://www.charite.de/fhir/sid/test-lab-results"
 * identifier[analyseBefundCode].value = "mre-klasse-alt-1"
@@ -840,7 +840,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/Stru
 Usage: #example
 Description: "Mikrobio: mre-klasse — Probe nicht auswertbar (dataAbsentReason)"
 * insert TestDataLabel
-* meta.source = "https://example.org/fhir/mikrobio-lab-system"
+* meta.source = "https://www.charite.de/fhir/mikrobiologie-lab-system"
 * identifier[analyseBefundCode].type.coding[observationInstanceV2] = $v2-0203#OBI
 * identifier[analyseBefundCode].system = "https://www.charite.de/fhir/sid/test-lab-results"
 * identifier[analyseBefundCode].value = "mre-klasse-dar-1"
@@ -877,7 +877,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/Stru
 Usage: #example
 Description: "Mikrobio: mrgn-klasse — Alt-Variante zur MS-Coverage"
 * insert TestDataLabel
-* meta.source = "https://example.org/fhir/mikrobio-lab-system"
+* meta.source = "https://www.charite.de/fhir/mikrobiologie-lab-system"
 * identifier[analyseBefundCode].type.coding[observationInstanceV2] = $v2-0203#OBI
 * identifier[analyseBefundCode].system = "https://www.charite.de/fhir/sid/test-lab-results"
 * identifier[analyseBefundCode].value = "mrgn-klasse-alt-1"
@@ -917,7 +917,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/Stru
 Usage: #example
 Description: "Mikrobio: mrgn-klasse — Probe nicht auswertbar (dataAbsentReason)"
 * insert TestDataLabel
-* meta.source = "https://example.org/fhir/mikrobio-lab-system"
+* meta.source = "https://www.charite.de/fhir/mikrobiologie-lab-system"
 * identifier[analyseBefundCode].type.coding[observationInstanceV2] = $v2-0203#OBI
 * identifier[analyseBefundCode].system = "https://www.charite.de/fhir/sid/test-lab-results"
 * identifier[analyseBefundCode].value = "mrgn-klasse-dar-1"
@@ -950,7 +950,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/Stru
 Usage: #example
 Description: "Mikrobio: nugent-score — Alt-Variante zur MS-Coverage"
 * insert TestDataLabel
-* meta.source = "https://example.org/fhir/mikrobio-lab-system"
+* meta.source = "https://www.charite.de/fhir/mikrobiologie-lab-system"
 * identifier[analyseBefundCode].type.coding[observationInstanceV2] = $v2-0203#OBI
 * identifier[analyseBefundCode].system = "https://www.charite.de/fhir/sid/test-lab-results"
 * identifier[analyseBefundCode].value = "nugent-score-alt-1"
@@ -997,7 +997,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/Stru
 Usage: #example
 Description: "Mikrobio: nugent-score — Probe nicht auswertbar (dataAbsentReason)"
 * insert TestDataLabel
-* meta.source = "https://example.org/fhir/mikrobio-lab-system"
+* meta.source = "https://www.charite.de/fhir/mikrobiologie-lab-system"
 * identifier[analyseBefundCode].type.coding[observationInstanceV2] = $v2-0203#OBI
 * identifier[analyseBefundCode].system = "https://www.charite.de/fhir/sid/test-lab-results"
 * identifier[analyseBefundCode].value = "nugent-score-dar-1"
@@ -1031,7 +1031,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/Stru
 Usage: #example
 Description: "Mikrobio: resistenzmechanismen-determinanten — Alt-Variante zur MS-Coverage"
 * insert TestDataLabel
-* meta.source = "https://example.org/fhir/mikrobio-lab-system"
+* meta.source = "https://www.charite.de/fhir/mikrobiologie-lab-system"
 * identifier[analyseBefundCode].type.coding[observationInstanceV2] = $v2-0203#OBI
 * identifier[analyseBefundCode].system = "https://www.charite.de/fhir/sid/test-lab-results"
 * identifier[analyseBefundCode].value = "resistenzmechanismen-determinanten-alt-1"
@@ -1077,7 +1077,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/Stru
 Usage: #example
 Description: "Mikrobio: resistenzmechanismen-determinanten — Probe nicht auswertbar (dataAbsentReason)"
 * insert TestDataLabel
-* meta.source = "https://example.org/fhir/mikrobio-lab-system"
+* meta.source = "https://www.charite.de/fhir/mikrobiologie-lab-system"
 * identifier[analyseBefundCode].type.coding[observationInstanceV2] = $v2-0203#OBI
 * identifier[analyseBefundCode].system = "https://www.charite.de/fhir/sid/test-lab-results"
 * identifier[analyseBefundCode].value = "resistenzmechanismen-determinanten-dar-1"
@@ -1114,7 +1114,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/Stru
 Usage: #example
 Description: "Mikrobio: spezifische-bestimmung — Alt-Variante zur MS-Coverage"
 * insert TestDataLabel
-* meta.source = "https://example.org/fhir/mikrobio-lab-system"
+* meta.source = "https://www.charite.de/fhir/mikrobiologie-lab-system"
 * identifier[analyseBefundCode].type.coding[observationInstanceV2] = $v2-0203#OBI
 * identifier[analyseBefundCode].system = "https://www.charite.de/fhir/sid/test-lab-results"
 * identifier[analyseBefundCode].value = "spezifische-bestimmung-alt-1"
@@ -1160,7 +1160,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/Stru
 Usage: #example
 Description: "Mikrobio: spezifische-bestimmung — Probe nicht auswertbar (dataAbsentReason)"
 * insert TestDataLabel
-* meta.source = "https://example.org/fhir/mikrobio-lab-system"
+* meta.source = "https://www.charite.de/fhir/mikrobiologie-lab-system"
 * identifier[analyseBefundCode].type.coding[observationInstanceV2] = $v2-0203#OBI
 * identifier[analyseBefundCode].system = "https://www.charite.de/fhir/sid/test-lab-results"
 * identifier[analyseBefundCode].value = "spezifische-bestimmung-dar-1"
@@ -1197,7 +1197,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/Stru
 Usage: #example
 Description: "Mikrobio: titer — Alt-Variante zur MS-Coverage"
 * insert TestDataLabel
-* meta.source = "https://example.org/fhir/mikrobio-lab-system"
+* meta.source = "https://www.charite.de/fhir/mikrobiologie-lab-system"
 * identifier[analyseBefundCode].type.coding[observationInstanceV2] = $v2-0203#OBI
 * identifier[analyseBefundCode].system = "https://www.charite.de/fhir/sid/test-lab-results"
 * identifier[analyseBefundCode].value = "titer-alt-1"
@@ -1247,7 +1247,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/Stru
 Usage: #example
 Description: "Mikrobio: titer — Probe nicht auswertbar (dataAbsentReason)"
 * insert TestDataLabel
-* meta.source = "https://example.org/fhir/mikrobio-lab-system"
+* meta.source = "https://www.charite.de/fhir/mikrobiologie-lab-system"
 * identifier[analyseBefundCode].type.coding[observationInstanceV2] = $v2-0203#OBI
 * identifier[analyseBefundCode].system = "https://www.charite.de/fhir/sid/test-lab-results"
 * identifier[analyseBefundCode].value = "titer-dar-1"
@@ -1281,7 +1281,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/Stru
 Usage: #example
 Description: "Mikrobio: virulenzfaktor — Alt-Variante zur MS-Coverage"
 * insert TestDataLabel
-* meta.source = "https://example.org/fhir/mikrobio-lab-system"
+* meta.source = "https://www.charite.de/fhir/mikrobiologie-lab-system"
 * identifier[analyseBefundCode].type.coding[observationInstanceV2] = $v2-0203#OBI
 * identifier[analyseBefundCode].system = "https://www.charite.de/fhir/sid/test-lab-results"
 * identifier[analyseBefundCode].value = "virulenzfaktor-alt-1"
@@ -1327,7 +1327,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/Stru
 Usage: #example
 Description: "Mikrobio: virulenzfaktor — Probe nicht auswertbar (dataAbsentReason)"
 * insert TestDataLabel
-* meta.source = "https://example.org/fhir/mikrobio-lab-system"
+* meta.source = "https://www.charite.de/fhir/mikrobiologie-lab-system"
 * identifier[analyseBefundCode].type.coding[observationInstanceV2] = $v2-0203#OBI
 * identifier[analyseBefundCode].system = "https://www.charite.de/fhir/sid/test-lab-results"
 * identifier[analyseBefundCode].value = "virulenzfaktor-dar-1"
@@ -1364,7 +1364,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/Stru
 Usage: #example
 Description: "Mikrobio: voraussichtliche-empfindlichkeit — Alt-Variante zur MS-Coverage"
 * insert TestDataLabel
-* meta.source = "https://example.org/fhir/mikrobio-lab-system"
+* meta.source = "https://www.charite.de/fhir/mikrobiologie-lab-system"
 * identifier[analyseBefundCode].type.coding[observationInstanceV2] = $v2-0203#OBI
 * identifier[analyseBefundCode].system = "https://www.charite.de/fhir/sid/test-lab-results"
 * identifier[analyseBefundCode].value = "voraussichtliche-empfindlichkeit-alt-1"
@@ -1410,7 +1410,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/Stru
 Usage: #example
 Description: "Mikrobio: voraussichtliche-empfindlichkeit — Probe nicht auswertbar (dataAbsentReason)"
 * insert TestDataLabel
-* meta.source = "https://example.org/fhir/mikrobio-lab-system"
+* meta.source = "https://www.charite.de/fhir/mikrobiologie-lab-system"
 * identifier[analyseBefundCode].type.coding[observationInstanceV2] = $v2-0203#OBI
 * identifier[analyseBefundCode].system = "https://www.charite.de/fhir/sid/test-lab-results"
 * identifier[analyseBefundCode].value = "voraussichtliche-empfindlichkeit-dar-1"
