@@ -59,24 +59,35 @@ jobs:
         sushi build --log-level warn . || echo HAD_ERRORS='true' >> "$GITHUB_OUTPUT"
       working-directory: ./kds-testdata
 
-    # - uses: actions/setup-dotnet@v4
-    #   if: ${{ steps.initial-build.outputs.HAD_ERRORS == 'true' }}
-    #   with:
-    #     dotnet-version: '8.0.x'
+    - uses: actions/setup-dotnet@v4
+      if: ${{ steps.initial-build.outputs.HAD_ERRORS == 'true' }}
+      with:
+        dotnet-version: '8.0.x'
 
-    # - name: Install firely
-    #   if: ${{ steps.initial-build.outputs.HAD_ERRORS == 'true' }}
-    #   run: dotnet tool install -g firely.terminal
+    - name: Install firely
+      if: ${{ steps.initial-build.outputs.HAD_ERRORS == 'true' }}
+      run: dotnet tool install -g firely.terminal
 
-    # - name: Create FHIR package snapshots
-    #   if: ${{ steps.initial-build.outputs.HAD_ERRORS == 'true' }}
-    #   run: for dep in $(yq eval '.' sushi-config.yaml -o json | jq -r '.dependencies | keys[]'); do fhir inflate --package "$dep"; done
-    #   working-directory: ./kds-testdata
+    # KDS-ICU 2025.x ships its StructureDefinitions differential-only (no snapshot),
+    # which SUSHI cannot import ("missing a snapshot"). Generate snapshots in-place.
+    # Note: `fhir inflate --package <name>` reports "not a project folder"; the
+    # reliable form is `inflate --here` from inside the package folder (which has a
+    # package.json). We inflate the ICU dependencies first, then the ICU package.
+    - name: Create FHIR package snapshots
+      if: ${{ steps.initial-build.outputs.HAD_ERRORS == 'true' }}
+      working-directory: ./kds-testdata
+      run: |
+        export PATH="$HOME/.dotnet/tools:$PATH"
+        icu_ver="$(yq eval '.dependencies["de.medizininformatikinitiative.kerndatensatz.icu"]' sushi-config.yaml)"
+        fhir cache install de.medizininformatikinitiative.kerndatensatz.icu "$icu_ver"
+        fhir inflate --package "de.medizininformatikinitiative.kerndatensatz.icu@${icu_ver}" --snapshot --dependencies --force || true
+        ( cd "$HOME/.fhir/packages/de.medizininformatikinitiative.kerndatensatz.icu#${icu_ver}/package" \
+          && fhir inflate --here --snapshot --force )
 
-    # - name: Final build
-    #   if: ${{ steps.initial-build.outputs.HAD_ERRORS == 'true' }}
-    #   run: sushi build --log-level warn  .
-    #   working-directory: ./kds-testdata
+    - name: Final build
+      if: ${{ steps.initial-build.outputs.HAD_ERRORS == 'true' }}
+      run: sushi build --log-level warn .
+      working-directory: ./kds-testdata
 
     - name: Generate timestamp
       id: timestamp

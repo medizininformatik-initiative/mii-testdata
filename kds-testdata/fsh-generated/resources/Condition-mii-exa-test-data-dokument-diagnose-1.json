@@ -1,0 +1,53 @@
+{
+  "resourceType": "Condition",
+  "id": "mii-exa-test-data-dokument-diagnose-1",
+  "meta": {
+    "security": [
+      {
+        "code": "HTEST",
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "display": "test health data"
+      }
+    ],
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/core/modul-diagnose/StructureDefinition/Diagnose"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+        "code": "J18.9",
+        "version": "2024"
+      }
+    ]
+  },
+  "note": [
+    {
+      "text": "Pneumonie nicht naeher bezeichnet"
+    }
+  ],
+  "clinicalStatus": {
+    "coding": [
+      {
+        "code": "active",
+        "system": "http://terminology.hl7.org/CodeSystem/condition-clinical"
+      }
+    ]
+  },
+  "verificationStatus": {
+    "coding": [
+      {
+        "code": "confirmed",
+        "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/mii-exa-test-data-dokument-patient-1"
+  },
+  "recordedDate": "2024-04-01",
+  "encounter": {
+    "reference": "Encounter/mii-exa-test-data-dokument-encounter-1"
+  }
+}

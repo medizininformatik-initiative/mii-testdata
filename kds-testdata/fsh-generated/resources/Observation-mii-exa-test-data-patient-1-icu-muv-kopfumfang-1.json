@@ -10,7 +10,7 @@
       }
     ],
     "profile": [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-kopfumfang"
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/kopfumfang"
     ]
   },
   "category": [
@@ -32,10 +32,12 @@
       },
       {
         "system": "http://snomed.info/sct",
-        "code": "363812007",
-        "display": "Head circumference"
+        "code": "363812007"
       }
     ]
+  },
+  "effectivePeriod": {
+    "start": "2024-02-15T14:30:00+01:00"
   },
   "valueQuantity": {
     "system": "http://unitsofmeasure.org",
@@ -46,6 +48,5 @@
   "status": "final",
   "subject": {
     "reference": "Patient/mii-exa-test-data-icu-patient-1"
-  },
-  "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+  }
 }

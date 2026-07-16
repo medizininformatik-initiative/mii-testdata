@@ -3,7 +3,7 @@
 // ============================================================================
 
 Instance: mii-exa-test-data-patient-1-icu-device-1
-InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-icu-device
+InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/icu-device
 Usage: #example
 Description: "ICU Device: Beatmungsgeraet Draeger Evita V500"
 * insert TestDataLabel
@@ -13,7 +13,7 @@ Description: "ICU Device: Beatmungsgeraet Draeger Evita V500"
 * patient = Reference(mii-exa-test-data-icu-patient-1)
 
 Instance: mii-exa-test-data-patient-1-icu-ect-dm-param-1
-InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-devicemetric-eingestellte-gemessene-parameter-extrakorporale-verfahren
+InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/devicemetric-eingestellte-gemessene-parameter-extrakorporale-verfahren
 Usage: #example
 Description: "ICU DeviceMetric: Eingestellte Gemessene Parameter Extrakorporale Verfahren"
 * insert TestDataLabel
@@ -22,7 +22,7 @@ Description: "ICU DeviceMetric: Eingestellte Gemessene Parameter Extrakorporale 
 * category = #measurement
 
 Instance: mii-exa-test-data-patient-1-icu-vent-dm-param-1
-InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-devicemetric-eingestellte-gemessene-parameter-beatmung
+InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/devicemetric-eingestellte-gemessene-parameter-beatmung
 Usage: #example
 Description: "ICU DeviceMetric: Eingestellte Gemessene Parameter Beatmung"
 * insert TestDataLabel
