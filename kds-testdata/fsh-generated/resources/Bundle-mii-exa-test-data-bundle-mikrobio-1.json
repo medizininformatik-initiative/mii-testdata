@@ -561,14 +561,10 @@
           "extension": [
             {
               "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum",
-              "valueCodeableConcept": {
-                "coding": [
-                  {
-                    "code": "281271004",
-                    "system": "http://snomed.info/sct",
-                    "display": "Date sample collected (observable entity)"
-                  }
-                ]
+              "valueCoding": {
+                "code": "399445004",
+                "system": "http://snomed.info/sct",
+                "display": "Specimen collection date (observable entity)"
               }
             }
           ]
@@ -700,14 +696,10 @@
           "extension": [
             {
               "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum",
-              "valueCodeableConcept": {
-                "coding": [
-                  {
-                    "code": "281271004",
-                    "system": "http://snomed.info/sct",
-                    "display": "Date sample collected (observable entity)"
-                  }
-                ]
+              "valueCoding": {
+                "code": "399445004",
+                "system": "http://snomed.info/sct",
+                "display": "Specimen collection date (observable entity)"
               }
             }
           ]
@@ -863,14 +855,10 @@
           "extension": [
             {
               "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum",
-              "valueCodeableConcept": {
-                "coding": [
-                  {
-                    "code": "281271004",
-                    "system": "http://snomed.info/sct",
-                    "display": "Date sample collected (observable entity)"
-                  }
-                ]
+              "valueCoding": {
+                "code": "399445004",
+                "system": "http://snomed.info/sct",
+                "display": "Specimen collection date (observable entity)"
               }
             }
           ]
@@ -1013,14 +1001,10 @@
           "extension": [
             {
               "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum",
-              "valueCodeableConcept": {
-                "coding": [
-                  {
-                    "code": "281271004",
-                    "system": "http://snomed.info/sct",
-                    "display": "Date sample collected (observable entity)"
-                  }
-                ]
+              "valueCoding": {
+                "code": "399445004",
+                "system": "http://snomed.info/sct",
+                "display": "Specimen collection date (observable entity)"
               }
             }
           ]
@@ -1163,14 +1147,10 @@
           "extension": [
             {
               "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum",
-              "valueCodeableConcept": {
-                "coding": [
-                  {
-                    "code": "281271004",
-                    "system": "http://snomed.info/sct",
-                    "display": "Date sample collected (observable entity)"
-                  }
-                ]
+              "valueCoding": {
+                "code": "399445004",
+                "system": "http://snomed.info/sct",
+                "display": "Specimen collection date (observable entity)"
               }
             }
           ]
@@ -1345,14 +1325,10 @@
           "extension": [
             {
               "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum",
-              "valueCodeableConcept": {
-                "coding": [
-                  {
-                    "code": "281271004",
-                    "system": "http://snomed.info/sct",
-                    "display": "Date sample collected (observable entity)"
-                  }
-                ]
+              "valueCoding": {
+                "code": "399445004",
+                "system": "http://snomed.info/sct",
+                "display": "Specimen collection date (observable entity)"
               }
             }
           ]
@@ -1548,14 +1524,10 @@
           "extension": [
             {
               "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum",
-              "valueCodeableConcept": {
-                "coding": [
-                  {
-                    "code": "281271004",
-                    "system": "http://snomed.info/sct",
-                    "display": "Date sample collected (observable entity)"
-                  }
-                ]
+              "valueCoding": {
+                "code": "399445004",
+                "system": "http://snomed.info/sct",
+                "display": "Specimen collection date (observable entity)"
               }
             }
           ]
@@ -1711,14 +1683,10 @@
           "extension": [
             {
               "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum",
-              "valueCodeableConcept": {
-                "coding": [
-                  {
-                    "code": "281271004",
-                    "system": "http://snomed.info/sct",
-                    "display": "Date sample collected (observable entity)"
-                  }
-                ]
+              "valueCoding": {
+                "code": "399445004",
+                "system": "http://snomed.info/sct",
+                "display": "Specimen collection date (observable entity)"
               }
             }
           ]
@@ -1874,14 +1842,10 @@
           "extension": [
             {
               "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum",
-              "valueCodeableConcept": {
-                "coding": [
-                  {
-                    "code": "281271004",
-                    "system": "http://snomed.info/sct",
-                    "display": "Date sample collected (observable entity)"
-                  }
-                ]
+              "valueCoding": {
+                "code": "399445004",
+                "system": "http://snomed.info/sct",
+                "display": "Specimen collection date (observable entity)"
               }
             }
           ]
@@ -2004,14 +1968,10 @@
           "extension": [
             {
               "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum",
-              "valueCodeableConcept": {
-                "coding": [
-                  {
-                    "code": "281271004",
-                    "system": "http://snomed.info/sct",
-                    "display": "Date sample collected (observable entity)"
-                  }
-                ]
+              "valueCoding": {
+                "code": "399445004",
+                "system": "http://snomed.info/sct",
+                "display": "Specimen collection date (observable entity)"
               }
             }
           ]
@@ -2178,14 +2138,10 @@
           "extension": [
             {
               "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum",
-              "valueCodeableConcept": {
-                "coding": [
-                  {
-                    "code": "281271004",
-                    "system": "http://snomed.info/sct",
-                    "display": "Date sample collected (observable entity)"
-                  }
-                ]
+              "valueCoding": {
+                "code": "399445004",
+                "system": "http://snomed.info/sct",
+                "display": "Specimen collection date (observable entity)"
               }
             }
           ]
@@ -2335,14 +2291,10 @@
           "extension": [
             {
               "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum",
-              "valueCodeableConcept": {
-                "coding": [
-                  {
-                    "code": "281271004",
-                    "system": "http://snomed.info/sct",
-                    "display": "Date sample collected (observable entity)"
-                  }
-                ]
+              "valueCoding": {
+                "code": "399445004",
+                "system": "http://snomed.info/sct",
+                "display": "Specimen collection date (observable entity)"
               }
             }
           ]
@@ -2516,14 +2468,10 @@
           "extension": [
             {
               "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum",
-              "valueCodeableConcept": {
-                "coding": [
-                  {
-                    "code": "281271004",
-                    "system": "http://snomed.info/sct",
-                    "display": "Date sample collected (observable entity)"
-                  }
-                ]
+              "valueCoding": {
+                "code": "399445004",
+                "system": "http://snomed.info/sct",
+                "display": "Specimen collection date (observable entity)"
               }
             }
           ]
@@ -2687,14 +2635,10 @@
           "extension": [
             {
               "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum",
-              "valueCodeableConcept": {
-                "coding": [
-                  {
-                    "code": "281271004",
-                    "system": "http://snomed.info/sct",
-                    "display": "Date sample collected (observable entity)"
-                  }
-                ]
+              "valueCoding": {
+                "code": "399445004",
+                "system": "http://snomed.info/sct",
+                "display": "Specimen collection date (observable entity)"
               }
             }
           ]
@@ -2855,14 +2799,10 @@
           "extension": [
             {
               "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum",
-              "valueCodeableConcept": {
-                "coding": [
-                  {
-                    "code": "281271004",
-                    "system": "http://snomed.info/sct",
-                    "display": "Date sample collected (observable entity)"
-                  }
-                ]
+              "valueCoding": {
+                "code": "399445004",
+                "system": "http://snomed.info/sct",
+                "display": "Specimen collection date (observable entity)"
               }
             }
           ]
@@ -3039,14 +2979,10 @@
           "extension": [
             {
               "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum",
-              "valueCodeableConcept": {
-                "coding": [
-                  {
-                    "code": "281271004",
-                    "system": "http://snomed.info/sct",
-                    "display": "Date sample collected (observable entity)"
-                  }
-                ]
+              "valueCoding": {
+                "code": "399445004",
+                "system": "http://snomed.info/sct",
+                "display": "Specimen collection date (observable entity)"
               }
             }
           ]
@@ -3194,14 +3130,10 @@
           "extension": [
             {
               "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum",
-              "valueCodeableConcept": {
-                "coding": [
-                  {
-                    "code": "281271004",
-                    "system": "http://snomed.info/sct",
-                    "display": "Date sample collected (observable entity)"
-                  }
-                ]
+              "valueCoding": {
+                "code": "399445004",
+                "system": "http://snomed.info/sct",
+                "display": "Specimen collection date (observable entity)"
               }
             }
           ]
@@ -3344,14 +3276,10 @@
           "extension": [
             {
               "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum",
-              "valueCodeableConcept": {
-                "coding": [
-                  {
-                    "code": "281271004",
-                    "system": "http://snomed.info/sct",
-                    "display": "Date sample collected (observable entity)"
-                  }
-                ]
+              "valueCoding": {
+                "code": "399445004",
+                "system": "http://snomed.info/sct",
+                "display": "Specimen collection date (observable entity)"
               }
             }
           ]
@@ -3508,14 +3436,10 @@
           "extension": [
             {
               "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum",
-              "valueCodeableConcept": {
-                "coding": [
-                  {
-                    "code": "281271004",
-                    "system": "http://snomed.info/sct",
-                    "display": "Date sample collected (observable entity)"
-                  }
-                ]
+              "valueCoding": {
+                "code": "399445004",
+                "system": "http://snomed.info/sct",
+                "display": "Specimen collection date (observable entity)"
               }
             }
           ]
@@ -3684,14 +3608,10 @@
           "extension": [
             {
               "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum",
-              "valueCodeableConcept": {
-                "coding": [
-                  {
-                    "code": "281271004",
-                    "system": "http://snomed.info/sct",
-                    "display": "Date sample collected (observable entity)"
-                  }
-                ]
+              "valueCoding": {
+                "code": "399445004",
+                "system": "http://snomed.info/sct",
+                "display": "Specimen collection date (observable entity)"
               }
             }
           ]
@@ -3821,14 +3741,10 @@
           "extension": [
             {
               "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum",
-              "valueCodeableConcept": {
-                "coding": [
-                  {
-                    "code": "281271004",
-                    "system": "http://snomed.info/sct",
-                    "display": "Date sample collected (observable entity)"
-                  }
-                ]
+              "valueCoding": {
+                "code": "399445004",
+                "system": "http://snomed.info/sct",
+                "display": "Specimen collection date (observable entity)"
               }
             }
           ]
@@ -3997,14 +3913,10 @@
           "extension": [
             {
               "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum",
-              "valueCodeableConcept": {
-                "coding": [
-                  {
-                    "code": "281271004",
-                    "system": "http://snomed.info/sct",
-                    "display": "Date sample collected (observable entity)"
-                  }
-                ]
+              "valueCoding": {
+                "code": "399445004",
+                "system": "http://snomed.info/sct",
+                "display": "Specimen collection date (observable entity)"
               }
             }
           ]
@@ -4179,14 +4091,10 @@
           "extension": [
             {
               "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum",
-              "valueCodeableConcept": {
-                "coding": [
-                  {
-                    "code": "281271004",
-                    "system": "http://snomed.info/sct",
-                    "display": "Date sample collected (observable entity)"
-                  }
-                ]
+              "valueCoding": {
+                "code": "399445004",
+                "system": "http://snomed.info/sct",
+                "display": "Specimen collection date (observable entity)"
               }
             }
           ]
@@ -4324,14 +4232,10 @@
           "extension": [
             {
               "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum",
-              "valueCodeableConcept": {
-                "coding": [
-                  {
-                    "code": "281271004",
-                    "system": "http://snomed.info/sct",
-                    "display": "Date sample collected (observable entity)"
-                  }
-                ]
+              "valueCoding": {
+                "code": "399445004",
+                "system": "http://snomed.info/sct",
+                "display": "Specimen collection date (observable entity)"
               }
             }
           ]
@@ -4506,14 +4410,10 @@
           "extension": [
             {
               "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum",
-              "valueCodeableConcept": {
-                "coding": [
-                  {
-                    "code": "281271004",
-                    "system": "http://snomed.info/sct",
-                    "display": "Date sample collected (observable entity)"
-                  }
-                ]
+              "valueCoding": {
+                "code": "399445004",
+                "system": "http://snomed.info/sct",
+                "display": "Specimen collection date (observable entity)"
               }
             }
           ]
@@ -4651,14 +4551,10 @@
           "extension": [
             {
               "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum",
-              "valueCodeableConcept": {
-                "coding": [
-                  {
-                    "code": "281271004",
-                    "system": "http://snomed.info/sct",
-                    "display": "Date sample collected (observable entity)"
-                  }
-                ]
+              "valueCoding": {
+                "code": "399445004",
+                "system": "http://snomed.info/sct",
+                "display": "Specimen collection date (observable entity)"
               }
             }
           ]
@@ -4827,14 +4723,10 @@
           "extension": [
             {
               "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum",
-              "valueCodeableConcept": {
-                "coding": [
-                  {
-                    "code": "281271004",
-                    "system": "http://snomed.info/sct",
-                    "display": "Date sample collected (observable entity)"
-                  }
-                ]
+              "valueCoding": {
+                "code": "399445004",
+                "system": "http://snomed.info/sct",
+                "display": "Specimen collection date (observable entity)"
               }
             }
           ]
@@ -4964,14 +4856,10 @@
           "extension": [
             {
               "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum",
-              "valueCodeableConcept": {
-                "coding": [
-                  {
-                    "code": "281271004",
-                    "system": "http://snomed.info/sct",
-                    "display": "Date sample collected (observable entity)"
-                  }
-                ]
+              "valueCoding": {
+                "code": "399445004",
+                "system": "http://snomed.info/sct",
+                "display": "Specimen collection date (observable entity)"
               }
             }
           ]
@@ -5145,14 +5033,10 @@
           "extension": [
             {
               "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum",
-              "valueCodeableConcept": {
-                "coding": [
-                  {
-                    "code": "281271004",
-                    "system": "http://snomed.info/sct",
-                    "display": "Date sample collected (observable entity)"
-                  }
-                ]
+              "valueCoding": {
+                "code": "399445004",
+                "system": "http://snomed.info/sct",
+                "display": "Specimen collection date (observable entity)"
               }
             }
           ]
@@ -5289,14 +5173,10 @@
           "extension": [
             {
               "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum",
-              "valueCodeableConcept": {
-                "coding": [
-                  {
-                    "code": "281271004",
-                    "system": "http://snomed.info/sct",
-                    "display": "Date sample collected (observable entity)"
-                  }
-                ]
+              "valueCoding": {
+                "code": "399445004",
+                "system": "http://snomed.info/sct",
+                "display": "Specimen collection date (observable entity)"
               }
             }
           ]
@@ -5478,14 +5358,10 @@
           "extension": [
             {
               "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum",
-              "valueCodeableConcept": {
-                "coding": [
-                  {
-                    "code": "281271004",
-                    "system": "http://snomed.info/sct",
-                    "display": "Date sample collected (observable entity)"
-                  }
-                ]
+              "valueCoding": {
+                "code": "399445004",
+                "system": "http://snomed.info/sct",
+                "display": "Specimen collection date (observable entity)"
               }
             }
           ]
@@ -5616,14 +5492,10 @@
           "extension": [
             {
               "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum",
-              "valueCodeableConcept": {
-                "coding": [
-                  {
-                    "code": "281271004",
-                    "system": "http://snomed.info/sct",
-                    "display": "Date sample collected (observable entity)"
-                  }
-                ]
+              "valueCoding": {
+                "code": "399445004",
+                "system": "http://snomed.info/sct",
+                "display": "Specimen collection date (observable entity)"
               }
             }
           ]
@@ -5790,14 +5662,10 @@
           "extension": [
             {
               "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum",
-              "valueCodeableConcept": {
-                "coding": [
-                  {
-                    "code": "281271004",
-                    "system": "http://snomed.info/sct",
-                    "display": "Date sample collected (observable entity)"
-                  }
-                ]
+              "valueCoding": {
+                "code": "399445004",
+                "system": "http://snomed.info/sct",
+                "display": "Specimen collection date (observable entity)"
               }
             }
           ]
@@ -5927,14 +5795,10 @@
           "extension": [
             {
               "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum",
-              "valueCodeableConcept": {
-                "coding": [
-                  {
-                    "code": "281271004",
-                    "system": "http://snomed.info/sct",
-                    "display": "Date sample collected (observable entity)"
-                  }
-                ]
+              "valueCoding": {
+                "code": "399445004",
+                "system": "http://snomed.info/sct",
+                "display": "Specimen collection date (observable entity)"
               }
             }
           ]
@@ -6103,14 +5967,10 @@
           "extension": [
             {
               "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum",
-              "valueCodeableConcept": {
-                "coding": [
-                  {
-                    "code": "281271004",
-                    "system": "http://snomed.info/sct",
-                    "display": "Date sample collected (observable entity)"
-                  }
-                ]
+              "valueCoding": {
+                "code": "399445004",
+                "system": "http://snomed.info/sct",
+                "display": "Specimen collection date (observable entity)"
               }
             }
           ]
@@ -6240,14 +6100,10 @@
           "extension": [
             {
               "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum",
-              "valueCodeableConcept": {
-                "coding": [
-                  {
-                    "code": "281271004",
-                    "system": "http://snomed.info/sct",
-                    "display": "Date sample collected (observable entity)"
-                  }
-                ]
+              "valueCoding": {
+                "code": "399445004",
+                "system": "http://snomed.info/sct",
+                "display": "Specimen collection date (observable entity)"
               }
             }
           ]
@@ -6422,14 +6278,10 @@
           "extension": [
             {
               "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum",
-              "valueCodeableConcept": {
-                "coding": [
-                  {
-                    "code": "281271004",
-                    "system": "http://snomed.info/sct",
-                    "display": "Date sample collected (observable entity)"
-                  }
-                ]
+              "valueCoding": {
+                "code": "399445004",
+                "system": "http://snomed.info/sct",
+                "display": "Specimen collection date (observable entity)"
               }
             }
           ]
@@ -6567,14 +6419,10 @@
           "extension": [
             {
               "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum",
-              "valueCodeableConcept": {
-                "coding": [
-                  {
-                    "code": "281271004",
-                    "system": "http://snomed.info/sct",
-                    "display": "Date sample collected (observable entity)"
-                  }
-                ]
+              "valueCoding": {
+                "code": "399445004",
+                "system": "http://snomed.info/sct",
+                "display": "Specimen collection date (observable entity)"
               }
             }
           ]
@@ -6739,14 +6587,10 @@
           "extension": [
             {
               "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum",
-              "valueCodeableConcept": {
-                "coding": [
-                  {
-                    "code": "281271004",
-                    "system": "http://snomed.info/sct",
-                    "display": "Date sample collected (observable entity)"
-                  }
-                ]
+              "valueCoding": {
+                "code": "399445004",
+                "system": "http://snomed.info/sct",
+                "display": "Specimen collection date (observable entity)"
               }
             }
           ]
@@ -6883,14 +6727,10 @@
           "extension": [
             {
               "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum",
-              "valueCodeableConcept": {
-                "coding": [
-                  {
-                    "code": "281271004",
-                    "system": "http://snomed.info/sct",
-                    "display": "Date sample collected (observable entity)"
-                  }
-                ]
+              "valueCoding": {
+                "code": "399445004",
+                "system": "http://snomed.info/sct",
+                "display": "Specimen collection date (observable entity)"
               }
             }
           ]
@@ -7039,14 +6879,10 @@
           "extension": [
             {
               "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum",
-              "valueCodeableConcept": {
-                "coding": [
-                  {
-                    "code": "281271004",
-                    "system": "http://snomed.info/sct",
-                    "display": "Date sample collected (observable entity)"
-                  }
-                ]
+              "valueCoding": {
+                "code": "399445004",
+                "system": "http://snomed.info/sct",
+                "display": "Specimen collection date (observable entity)"
               }
             }
           ]
@@ -7168,14 +7004,10 @@
           "extension": [
             {
               "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum",
-              "valueCodeableConcept": {
-                "coding": [
-                  {
-                    "code": "281271004",
-                    "system": "http://snomed.info/sct",
-                    "display": "Date sample collected (observable entity)"
-                  }
-                ]
+              "valueCoding": {
+                "code": "399445004",
+                "system": "http://snomed.info/sct",
+                "display": "Specimen collection date (observable entity)"
               }
             }
           ]
@@ -7342,14 +7174,10 @@
           "extension": [
             {
               "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum",
-              "valueCodeableConcept": {
-                "coding": [
-                  {
-                    "code": "281271004",
-                    "system": "http://snomed.info/sct",
-                    "display": "Date sample collected (observable entity)"
-                  }
-                ]
+              "valueCoding": {
+                "code": "399445004",
+                "system": "http://snomed.info/sct",
+                "display": "Specimen collection date (observable entity)"
               }
             }
           ]
@@ -7479,14 +7307,10 @@
           "extension": [
             {
               "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum",
-              "valueCodeableConcept": {
-                "coding": [
-                  {
-                    "code": "281271004",
-                    "system": "http://snomed.info/sct",
-                    "display": "Date sample collected (observable entity)"
-                  }
-                ]
+              "valueCoding": {
+                "code": "399445004",
+                "system": "http://snomed.info/sct",
+                "display": "Specimen collection date (observable entity)"
               }
             }
           ]
@@ -7663,14 +7487,10 @@
           "extension": [
             {
               "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum",
-              "valueCodeableConcept": {
-                "coding": [
-                  {
-                    "code": "281271004",
-                    "system": "http://snomed.info/sct",
-                    "display": "Date sample collected (observable entity)"
-                  }
-                ]
+              "valueCoding": {
+                "code": "399445004",
+                "system": "http://snomed.info/sct",
+                "display": "Specimen collection date (observable entity)"
               }
             }
           ]
@@ -7808,14 +7628,10 @@
           "extension": [
             {
               "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum",
-              "valueCodeableConcept": {
-                "coding": [
-                  {
-                    "code": "281271004",
-                    "system": "http://snomed.info/sct",
-                    "display": "Date sample collected (observable entity)"
-                  }
-                ]
+              "valueCoding": {
+                "code": "399445004",
+                "system": "http://snomed.info/sct",
+                "display": "Specimen collection date (observable entity)"
               }
             }
           ]
@@ -7992,14 +7808,10 @@
           "extension": [
             {
               "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum",
-              "valueCodeableConcept": {
-                "coding": [
-                  {
-                    "code": "281271004",
-                    "system": "http://snomed.info/sct",
-                    "display": "Date sample collected (observable entity)"
-                  }
-                ]
+              "valueCoding": {
+                "code": "399445004",
+                "system": "http://snomed.info/sct",
+                "display": "Specimen collection date (observable entity)"
               }
             }
           ]
@@ -8137,14 +7949,10 @@
           "extension": [
             {
               "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum",
-              "valueCodeableConcept": {
-                "coding": [
-                  {
-                    "code": "281271004",
-                    "system": "http://snomed.info/sct",
-                    "display": "Date sample collected (observable entity)"
-                  }
-                ]
+              "valueCoding": {
+                "code": "399445004",
+                "system": "http://snomed.info/sct",
+                "display": "Specimen collection date (observable entity)"
               }
             }
           ]
@@ -8319,14 +8127,10 @@
           "extension": [
             {
               "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum",
-              "valueCodeableConcept": {
-                "coding": [
-                  {
-                    "code": "281271004",
-                    "system": "http://snomed.info/sct",
-                    "display": "Date sample collected (observable entity)"
-                  }
-                ]
+              "valueCoding": {
+                "code": "399445004",
+                "system": "http://snomed.info/sct",
+                "display": "Specimen collection date (observable entity)"
               }
             }
           ]
@@ -8457,14 +8261,10 @@
           "extension": [
             {
               "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum",
-              "valueCodeableConcept": {
-                "coding": [
-                  {
-                    "code": "281271004",
-                    "system": "http://snomed.info/sct",
-                    "display": "Date sample collected (observable entity)"
-                  }
-                ]
+              "valueCoding": {
+                "code": "399445004",
+                "system": "http://snomed.info/sct",
+                "display": "Specimen collection date (observable entity)"
               }
             }
           ]
@@ -8640,14 +8440,10 @@
           "extension": [
             {
               "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum",
-              "valueCodeableConcept": {
-                "coding": [
-                  {
-                    "code": "281271004",
-                    "system": "http://snomed.info/sct",
-                    "display": "Date sample collected (observable entity)"
-                  }
-                ]
+              "valueCoding": {
+                "code": "399445004",
+                "system": "http://snomed.info/sct",
+                "display": "Specimen collection date (observable entity)"
               }
             }
           ]
@@ -8784,14 +8580,10 @@
           "extension": [
             {
               "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum",
-              "valueCodeableConcept": {
-                "coding": [
-                  {
-                    "code": "281271004",
-                    "system": "http://snomed.info/sct",
-                    "display": "Date sample collected (observable entity)"
-                  }
-                ]
+              "valueCoding": {
+                "code": "399445004",
+                "system": "http://snomed.info/sct",
+                "display": "Specimen collection date (observable entity)"
               }
             }
           ]
@@ -8968,14 +8760,10 @@
           "extension": [
             {
               "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum",
-              "valueCodeableConcept": {
-                "coding": [
-                  {
-                    "code": "281271004",
-                    "system": "http://snomed.info/sct",
-                    "display": "Date sample collected (observable entity)"
-                  }
-                ]
+              "valueCoding": {
+                "code": "399445004",
+                "system": "http://snomed.info/sct",
+                "display": "Specimen collection date (observable entity)"
               }
             }
           ]
@@ -9113,14 +8901,10 @@
           "extension": [
             {
               "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum",
-              "valueCodeableConcept": {
-                "coding": [
-                  {
-                    "code": "281271004",
-                    "system": "http://snomed.info/sct",
-                    "display": "Date sample collected (observable entity)"
-                  }
-                ]
+              "valueCoding": {
+                "code": "399445004",
+                "system": "http://snomed.info/sct",
+                "display": "Specimen collection date (observable entity)"
               }
             }
           ]
@@ -9299,14 +9083,10 @@
           "extension": [
             {
               "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum",
-              "valueCodeableConcept": {
-                "coding": [
-                  {
-                    "code": "281271004",
-                    "system": "http://snomed.info/sct",
-                    "display": "Date sample collected (observable entity)"
-                  }
-                ]
+              "valueCoding": {
+                "code": "399445004",
+                "system": "http://snomed.info/sct",
+                "display": "Specimen collection date (observable entity)"
               }
             }
           ]

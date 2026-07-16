@@ -28,7 +28,7 @@ Description: "Mikrobio Diagnostic Report: Blutkultur + Antibiogramm + MRSA-Befun
 * encounter.identifier.value = "MIKROBIO-ENC-001"
 * effectiveDateTime = "2026-04-02T08:30:00+02:00"
 * effectiveDateTime.extension[+].url = "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum"
-* effectiveDateTime.extension[=].valueCodeableConcept = $sct#281271004 "Date sample collected (observable entity)"
+* effectiveDateTime.extension[=].valueCoding = $sct#399445004 "Specimen collection date (observable entity)"
 * issued = "2026-04-05T15:00:00+02:00"
 * performer[+] = Reference(mii-exa-test-data-mikrobio-organization-lab-1)
 * performer[=].identifier.system = "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"
