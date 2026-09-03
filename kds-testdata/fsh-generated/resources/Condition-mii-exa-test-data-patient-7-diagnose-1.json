@@ -29,7 +29,6 @@
       {
         "system": "http://snomed.info/sct",
         "code": "10509002",
-        "version": "http://snomed.info/sct/900000000000207008/version/20230731",
         "display": "Acute bronchitis (disorder)"
       }
     ]
@@ -45,7 +44,6 @@
         {
           "system": "http://snomed.info/sct",
           "code": "955009",
-          "version": "http://snomed.info/sct/900000000000207008/version/20230731",
           "display": "Bronchial structure (body structure)"
         }
       ]

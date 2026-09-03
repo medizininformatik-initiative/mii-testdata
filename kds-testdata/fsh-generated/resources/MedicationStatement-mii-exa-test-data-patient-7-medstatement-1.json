@@ -55,9 +55,9 @@
       "doseAndRate": [
         {
           "doseQuantity": {
-            "system": "http://unitsofmeasure.org",
             "value": 1.2,
             "code": "g",
+            "system": "http://unitsofmeasure.org",
             "unit": "g"
           }
         }

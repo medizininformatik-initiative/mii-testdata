@@ -29,7 +29,6 @@
       {
         "system": "http://snomed.info/sct",
         "code": "37796009",
-        "version": "http://snomed.info/sct/900000000000207008/version/20230731",
         "display": "Migraine (disorder)"
       }
     ]
@@ -45,7 +44,6 @@
         {
           "system": "http://snomed.info/sct",
           "code": "281231009",
-          "version": "http://snomed.info/sct/900000000000207008/version/20230731",
           "display": "Vascular structure of head (body structure)"
         }
       ]

@@ -1,0 +1,59 @@
+{
+  "resourceType": "Observation",
+  "id": "mii-exa-test-data-onko-tod-1",
+  "meta": {
+    "security": [
+      {
+        "code": "HTEST",
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "display": "test health data"
+      }
+    ],
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-tod"
+    ]
+  },
+  "focus": [
+    {
+      "reference": "Condition/mii-exa-test-data-onko-diagnose-1"
+    }
+  ],
+  "interpretation": [
+    {
+      "coding": [
+        {
+          "code": "J",
+          "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-tod",
+          "display": "Ja, die Person ist an einer Tumorerkrankung oder Folge einer Tumorerkrankung (einschließlich Behandlungskomplikation) verstorben."
+        }
+      ]
+    }
+  ],
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "code": "184305005",
+        "system": "http://snomed.info/sct",
+        "display": "Cause of death"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/mii-exa-test-data-onko-patient-1"
+  },
+  "encounter": {
+    "reference": "Encounter/mii-exa-test-data-onko-encounter-1"
+  },
+  "effectiveDateTime": "2024-05-15",
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "code": "C56",
+        "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+        "version": "2024",
+        "display": "Bösartige Neubildung des Ovars"
+      }
+    ]
+  }
+}

@@ -29,7 +29,6 @@
       {
         "system": "http://snomed.info/sct",
         "code": "254637007",
-        "version": "http://snomed.info/sct/900000000000207008/version/20230731",
         "display": "Non-small cell lung cancer (disorder)"
       }
     ]
@@ -45,7 +44,6 @@
         {
           "system": "http://snomed.info/sct",
           "code": "45653009",
-          "version": "http://snomed.info/sct/900000000000207008/version/20230731",
           "display": "Structure of upper lobe of lung (body structure)"
         }
       ]

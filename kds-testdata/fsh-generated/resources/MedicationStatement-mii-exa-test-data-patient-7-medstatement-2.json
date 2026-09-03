@@ -55,9 +55,9 @@
       "doseAndRate": [
         {
           "doseQuantity": {
-            "system": "http://unitsofmeasure.org",
             "value": 200,
             "code": "ug",
+            "system": "http://unitsofmeasure.org",
             "unit": "μg"
           }
         }

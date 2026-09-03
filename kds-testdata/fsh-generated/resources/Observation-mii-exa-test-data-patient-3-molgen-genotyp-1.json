@@ -23,9 +23,24 @@
           "display": "Laboratory"
         }
       ]
+    },
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "GE"
+        }
+      ]
     }
   ],
   "valueCodeableConcept": {
+    "coding": [
+      {
+        "code": "rs113488022",
+        "system": "http://www.ncbi.nlm.nih.gov/projects/SNP",
+        "display": "BRAF V600E (c.1799T>A)"
+      }
+    ],
     "text": "BRAF rs113488022 T>A"
   },
   "derivedFrom": [
@@ -72,6 +87,37 @@
           }
         ]
       }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs",
+            "code": "conclusion-string"
+          }
+        ]
+      },
+      "valueString": "Heterozygote BRAF V600E Mutation nachgewiesen"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "62374-4",
+            "display": "Human reference sequence assembly version"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "LA26806-2",
+            "system": "http://loinc.org",
+            "display": "GRCh38"
+          }
+        ]
+      }
     }
   ],
   "code": {
@@ -85,8 +131,13 @@
   },
   "status": "final",
   "subject": {
-    "reference": "Patient/mii-exa-test-data-patient-3"
+    "reference": "Patient/mii-exa-test-data-molgen-patient-1"
   },
+  "encounter": {
+    "reference": "Encounter/mii-exa-test-data-molgen-encounter-1"
+  },
+  "effectiveDateTime": "2022-04-07",
+  "issued": "2022-04-12T10:30:00+02:00",
   "method": {
     "coding": [
       {
@@ -97,7 +148,7 @@
     ]
   },
   "specimen": {
-    "reference": "Specimen/mii-exa-test-data-patient-3-specimen-1"
+    "reference": "Specimen/mii-exa-test-data-molgen-specimen-1"
   },
   "device": {
     "reference": "Device/mii-exa-test-data-molgen-device-sequencer"

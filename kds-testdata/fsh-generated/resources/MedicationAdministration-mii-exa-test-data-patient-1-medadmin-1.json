@@ -39,7 +39,6 @@
         {
           "system": "http://snomed.info/sct",
           "code": "789218009",
-          "version": "http://snomed.info/sct/900000000000207008/version/20230731",
           "display": "Structure of dorsum of left hand (body structure)"
         }
       ]
@@ -54,32 +53,31 @@
         {
           "system": "http://snomed.info/sct",
           "code": "47625008",
-          "version": "http://snomed.info/sct/900000000000207008/version/20230731",
           "display": "Intravenous route (qualifier value)"
         }
       ]
     },
     "rateRatio": {
       "numerator": {
-        "system": "http://unitsofmeasure.org",
         "value": 1500,
         "code": "mg",
+        "system": "http://unitsofmeasure.org",
         "unit": "mg"
       },
       "denominator": {
-        "system": "http://unitsofmeasure.org",
         "value": 30,
         "code": "min",
+        "system": "http://unitsofmeasure.org",
         "unit": "Minuten"
       }
     },
+    "text": "Dalbavancin 1500 mg als 30-minütige Infusion",
     "dose": {
-      "system": "http://unitsofmeasure.org",
       "value": 1500,
       "code": "mg",
+      "system": "http://unitsofmeasure.org",
       "unit": "mg"
-    },
-    "text": "Dalbavancin 1500 mg als 30-minütige Infusion"
+    }
   },
   "status": "completed",
   "category": {

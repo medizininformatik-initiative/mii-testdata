@@ -1,0 +1,29 @@
+services:
+  hapi:
+    image: hapiproject/hapi:v7.6.0
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./hapi/application.yaml:/app/config/application.yaml:ro
+    healthcheck:
+      test: ["CMD-SHELL", "curl -sf http://localhost:8080/fhir/metadata | grep -q CapabilityStatement"]
+      interval: 10s
+      timeout: 5s
+      retries: 30
+      start_period: 30s
+    environment:
+      JAVA_OPTS: "-Xmx2g"
+
+  blaze:
+    image: samply/blaze:0.30
+    ports:
+      - "8082:8080"
+    environment:
+      JAVA_TOOL_OPTIONS: "-Xmx2g"
+      LOG_LEVEL: info
+    healthcheck:
+      test: ["CMD-SHELL", "curl -sf http://localhost:8080/health | grep -q UP"]
+      interval: 10s
+      timeout: 5s
+      retries: 20
+      start_period: 20s

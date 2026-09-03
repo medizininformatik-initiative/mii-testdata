@@ -67,14 +67,6 @@
       "reference": "Organization/mii-exa-test-data-organization-labor-berlin"
     }
   ],
-  "specimen": [
-    {
-      "reference": "Specimen/mii-exa-test-data-patient-10-specimen-1"
-    },
-    {
-      "reference": "Specimen/mii-exa-test-data-patient-10-specimen-2"
-    }
-  ],
   "result": [
     {
       "reference": "Observation/mii-exa-test-data-patient-10-labobs-1"

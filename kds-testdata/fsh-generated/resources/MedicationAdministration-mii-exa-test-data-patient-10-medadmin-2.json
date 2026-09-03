@@ -29,13 +29,13 @@
         }
       ]
     },
+    "text": "Topiramat 50mg oral zur Prophylaxe",
     "dose": {
-      "system": "http://unitsofmeasure.org",
       "value": 50,
       "code": "mg",
+      "system": "http://unitsofmeasure.org",
       "unit": "mg"
-    },
-    "text": "Topiramat 50mg oral zur Prophylaxe"
+    }
   },
   "status": "completed",
   "category": {

@@ -55,9 +55,9 @@
       "doseAndRate": [
         {
           "doseQuantity": {
-            "system": "http://unitsofmeasure.org",
             "value": 5000,
             "code": "[iU]",
+            "system": "http://unitsofmeasure.org",
             "unit": "IU"
           }
         }

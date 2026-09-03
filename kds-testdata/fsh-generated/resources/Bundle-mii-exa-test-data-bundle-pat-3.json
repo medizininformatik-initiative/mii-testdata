@@ -13,8 +13,8 @@
   "entry": [
     {
       "request": {
-        "method": "POST",
-        "url": "Patient"
+        "method": "PUT",
+        "url": "Patient/mii-exa-test-data-patient-3"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Patient/mii-exa-test-data-patient-3",
       "resource": {
@@ -135,8 +135,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Consent"
+        "method": "PUT",
+        "url": "Consent/mii-exa-test-data-patient-3-consent-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Consent/mii-exa-test-data-patient-3-consent-1",
       "resource": {
@@ -166,8 +166,8 @@
           {
             "coding": [
               {
-                "code": "2.16.840.1.113883.3.1937.777.24.2.184",
-                "system": "https://www.medizininformatik-initiative.de/fhir/modul-consent/CodeSystem/mii-cs-consent-consent_category"
+                "system": "https://www.medizininformatik-initiative.de/fhir/modul-consent/CodeSystem/mii-cs-consent-version-modules",
+                "code": "2.16.840.1.113883.3.1937.777.24.2.184"
               }
             ]
           }
@@ -235,7 +235,7 @@
                     {
                       "code": "2.16.840.1.113883.3.1937.777.24.5.3.8",
                       "system": "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3",
-                      "display": "MDAT wissenschaftlich nutzen EU DSGVO NIVEAU"
+                      "display": "MDAT wissenschaftlich nutzen"
                     }
                   ]
                 }
@@ -289,7 +289,7 @@
                     {
                       "code": "2.16.840.1.113883.3.1937.777.24.5.3.22",
                       "system": "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3",
-                      "display": "BIOMAT wissenschaftlich nutzen EU DSGVO NIVEAU"
+                      "display": "BIOMAT wissenschaftlich nutzen"
                     }
                   ]
                 }
@@ -316,8 +316,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Encounter"
+        "method": "PUT",
+        "url": "Encounter/mii-exa-test-data-patient-3-encounter-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Encounter/mii-exa-test-data-patient-3-encounter-1",
       "resource": {
@@ -457,8 +457,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Condition"
+        "method": "PUT",
+        "url": "Condition/mii-exa-test-data-patient-3-diagnose-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Condition/mii-exa-test-data-patient-3-diagnose-1",
       "resource": {
@@ -492,7 +492,6 @@
             {
               "system": "http://snomed.info/sct",
               "code": "447886005",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
               "display": "Adenocarcinoma of anorectum (disorder)"
             }
           ]
@@ -508,7 +507,6 @@
               {
                 "system": "http://snomed.info/sct",
                 "code": "281088000",
-                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                 "display": "Structure of anus and/or rectum (body structure)"
               }
             ]
@@ -538,8 +536,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Procedure"
+        "method": "PUT",
+        "url": "Procedure/mii-exa-test-data-patient-3-prozedur-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Procedure/mii-exa-test-data-patient-3-prozedur-1",
       "resource": {
@@ -561,8 +559,7 @@
           "coding": [
             {
               "system": "http://snomed.info/sct",
-              "code": "165197003",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+              "code": "165197003"
             }
           ]
         },
@@ -570,8 +567,7 @@
           "coding": [
             {
               "system": "http://snomed.info/sct",
-              "code": "274324002",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+              "code": "274324002"
             },
             {
               "system": "http://fhir.de/CodeSystem/bfarm/ops",
@@ -585,8 +581,7 @@
             "coding": [
               {
                 "code": "372237002",
-                "system": "http://snomed.info/sct",
-                "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+                "system": "http://snomed.info/sct"
               }
             ]
           }
@@ -602,7 +597,6 @@
             "valueCoding": {
               "system": "http://snomed.info/sct",
               "code": "261004008",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
               "display": "Diagnostic intent"
             }
           }
@@ -622,8 +616,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Procedure"
+        "method": "PUT",
+        "url": "Procedure/mii-exa-test-data-patient-3-prozedur-2"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Procedure/mii-exa-test-data-patient-3-prozedur-2",
       "resource": {
@@ -645,8 +639,7 @@
           "coding": [
             {
               "system": "http://snomed.info/sct",
-              "code": "387713003",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+              "code": "387713003"
             }
           ]
         },
@@ -654,8 +647,7 @@
           "coding": [
             {
               "system": "http://snomed.info/sct",
-              "code": "265414003",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+              "code": "265414003"
             },
             {
               "system": "http://fhir.de/CodeSystem/bfarm/ops",
@@ -669,8 +661,7 @@
             "coding": [
               {
                 "code": "34402009",
-                "system": "http://snomed.info/sct",
-                "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+                "system": "http://snomed.info/sct"
               }
             ]
           }
@@ -690,7 +681,6 @@
             "valueCoding": {
               "system": "http://snomed.info/sct",
               "code": "262202000",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
               "display": "Therapeutic"
             }
           }
@@ -709,8 +699,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Procedure"
+        "method": "PUT",
+        "url": "Procedure/mii-exa-test-data-patient-3-prozedur-3"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Procedure/mii-exa-test-data-patient-3-prozedur-3",
       "resource": {
@@ -732,8 +722,7 @@
           "coding": [
             {
               "system": "http://snomed.info/sct",
-              "code": "18629005",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+              "code": "18629005"
             }
           ]
         },
@@ -741,8 +730,7 @@
           "coding": [
             {
               "system": "http://snomed.info/sct",
-              "code": "724159000",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+              "code": "724159000"
             },
             {
               "system": "http://fhir.de/CodeSystem/bfarm/ops",
@@ -756,8 +744,7 @@
             "coding": [
               {
                 "code": "734748008",
-                "system": "http://snomed.info/sct",
-                "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+                "system": "http://snomed.info/sct"
               }
             ]
           }
@@ -777,7 +764,6 @@
             "valueCoding": {
               "system": "http://snomed.info/sct",
               "code": "262202000",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
               "display": "Therapeutic"
             }
           }
@@ -796,8 +782,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "ServiceRequest"
+        "method": "PUT",
+        "url": "ServiceRequest/mii-exa-test-data-patient-3-labrequest-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/ServiceRequest/mii-exa-test-data-patient-3-labrequest-1",
       "resource": {
@@ -851,15 +837,9 @@
               {
                 "code": "235856003",
                 "system": "http://snomed.info/sct",
-                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                 "display": "Disease of liver"
               }
             ]
-          }
-        ],
-        "specimen": [
-          {
-            "reference": "Specimen/mii-exa-test-data-patient-3-specimen-2"
           }
         ],
         "status": "completed",
@@ -886,8 +866,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "DiagnosticReport"
+        "method": "PUT",
+        "url": "DiagnosticReport/mii-exa-test-data-patient-3-labreport-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/DiagnosticReport/mii-exa-test-data-patient-3-labreport-1",
       "resource": {
@@ -959,14 +939,6 @@
             "reference": "Organization/mii-exa-test-data-organization-labor-berlin"
           }
         ],
-        "specimen": [
-          {
-            "reference": "Specimen/mii-exa-test-data-patient-3-specimen-2"
-          },
-          {
-            "reference": "Specimen/mii-exa-test-data-patient-3-specimen-3"
-          }
-        ],
         "result": [
           {
             "reference": "Observation/mii-exa-test-data-patient-3-labobs-1"
@@ -992,8 +964,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-patient-3-labobs-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-3-labobs-1",
       "resource": {
@@ -1092,13 +1064,9 @@
             {
               "code": "703452004",
               "system": "http://snomed.info/sct",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
               "display": "Electrical impedance technique (qualifier value)"
             }
           ]
-        },
-        "specimen": {
-          "reference": "Specimen/mii-exa-test-data-patient-3-specimen-1"
         },
         "device": {
           "reference": "Device/mii-exa-test-data-device-roche-cobas-c303"
@@ -1107,8 +1075,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-patient-3-labobs-2"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-3-labobs-2",
       "resource": {
@@ -1207,13 +1175,9 @@
             {
               "code": "83561000052101",
               "system": "http://snomed.info/sct",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
               "display": "Photometry technique (qualifier value)"
             }
           ]
-        },
-        "specimen": {
-          "reference": "Specimen/mii-exa-test-data-patient-3-specimen-1"
         },
         "device": {
           "reference": "Device/mii-exa-test-data-device-roche-cobas-c303"
@@ -1222,8 +1186,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-patient-3-labobs-3"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-3-labobs-3",
       "resource": {
@@ -1322,13 +1286,9 @@
             {
               "code": "83561000052101",
               "system": "http://snomed.info/sct",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
               "display": "Photometry technique (qualifier value)"
             }
           ]
-        },
-        "specimen": {
-          "reference": "Specimen/mii-exa-test-data-patient-3-specimen-1"
         },
         "device": {
           "reference": "Device/mii-exa-test-data-device-roche-cobas-c303"
@@ -1337,8 +1297,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "MedicationRequest"
+        "method": "PUT",
+        "url": "MedicationRequest/mii-exa-test-data-patient-3-medrequest-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/MedicationRequest/mii-exa-test-data-patient-3-medrequest-1",
       "resource": {
@@ -1364,19 +1324,26 @@
         ],
         "dosageInstruction": [
           {
+            "timing": {
+              "repeat": {
+                "frequencyMax": 6,
+                "period": 1,
+                "periodUnit": "d"
+              }
+            },
             "doseAndRate": [
               {
                 "doseRange": {
                   "low": {
-                    "system": "http://unitsofmeasure.org",
                     "value": 500,
                     "code": "mg",
+                    "system": "http://unitsofmeasure.org",
                     "unit": "mg"
                   },
                   "high": {
-                    "system": "http://unitsofmeasure.org",
                     "value": 1000,
                     "code": "mg",
+                    "system": "http://unitsofmeasure.org",
                     "unit": "mg"
                   }
                 }
@@ -1384,23 +1351,17 @@
             ],
             "maxDosePerPeriod": {
               "numerator": {
-                "system": "http://unitsofmeasure.org",
                 "value": 5000,
                 "code": "mg",
+                "system": "http://unitsofmeasure.org",
                 "unit": "mg"
               },
               "denominator": {
-                "system": "http://unitsofmeasure.org",
                 "value": 24,
                 "code": "h",
+                "system": "http://unitsofmeasure.org",
                 "unit": "Stunden"
               }
-            },
-            "maxDosePerAdministration": {
-              "system": "http://unitsofmeasure.org",
-              "value": 1000,
-              "code": "mg",
-              "unit": "mg"
             },
             "text": "Die Einzeldosis 500-1000 mg, Tageshöchstdosis 5000 mg",
             "asNeededBoolean": true,
@@ -1412,6 +1373,12 @@
                   "display": "Oral use"
                 }
               ]
+            },
+            "maxDosePerAdministration": {
+              "value": 1000,
+              "code": "mg",
+              "system": "http://unitsofmeasure.org",
+              "unit": "mg"
             }
           }
         ],
@@ -1434,8 +1401,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "MedicationRequest"
+        "method": "PUT",
+        "url": "MedicationRequest/mii-exa-test-data-patient-3-medrequest-2"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/MedicationRequest/mii-exa-test-data-patient-3-medrequest-2",
       "resource": {
@@ -1461,19 +1428,24 @@
         ],
         "dosageInstruction": [
           {
+            "timing": {
+              "event": [
+                "2022-04-25T09:00:00+02:00"
+              ]
+            },
             "doseAndRate": [
               {
                 "rateRatio": {
                   "numerator": {
-                    "system": "http://unitsofmeasure.org",
                     "value": 1000,
                     "code": "mg",
+                    "system": "http://unitsofmeasure.org",
                     "unit": "mg"
                   },
                   "denominator": {
-                    "system": "http://unitsofmeasure.org",
                     "value": 46,
                     "code": "h",
+                    "system": "http://unitsofmeasure.org",
                     "unit": "h"
                   }
                 },
@@ -1516,8 +1488,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "MedicationRequest"
+        "method": "PUT",
+        "url": "MedicationRequest/mii-exa-test-data-patient-3-medrequest-3"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/MedicationRequest/mii-exa-test-data-patient-3-medrequest-3",
       "resource": {
@@ -1543,19 +1515,24 @@
         ],
         "dosageInstruction": [
           {
+            "timing": {
+              "event": [
+                "2022-04-25T09:30:00+02:00"
+              ]
+            },
             "doseAndRate": [
               {
                 "rateRatio": {
                   "numerator": {
-                    "system": "http://unitsofmeasure.org",
                     "value": 85,
                     "code": "mg",
+                    "system": "http://unitsofmeasure.org",
                     "unit": "mg"
                   },
                   "denominator": {
-                    "system": "http://unitsofmeasure.org",
                     "value": 2,
                     "code": "h",
+                    "system": "http://unitsofmeasure.org",
                     "unit": "h"
                   }
                 },
@@ -1598,8 +1575,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "MedicationStatement"
+        "method": "PUT",
+        "url": "MedicationStatement/mii-exa-test-data-patient-3-medstatement-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/MedicationStatement/mii-exa-test-data-patient-3-medstatement-1",
       "resource": {
@@ -1659,15 +1636,15 @@
               {
                 "doseRange": {
                   "low": {
-                    "system": "http://unitsofmeasure.org",
                     "value": 500,
                     "code": "mg",
+                    "system": "http://unitsofmeasure.org",
                     "unit": "mg"
                   },
                   "high": {
-                    "system": "http://unitsofmeasure.org",
                     "value": 1000,
                     "code": "mg",
+                    "system": "http://unitsofmeasure.org",
                     "unit": "mg"
                   }
                 }
@@ -1675,25 +1652,25 @@
             ],
             "maxDosePerPeriod": {
               "numerator": {
-                "system": "http://unitsofmeasure.org",
                 "value": 5000,
                 "code": "mg",
+                "system": "http://unitsofmeasure.org",
                 "unit": "mg"
               },
               "denominator": {
-                "system": "http://unitsofmeasure.org",
                 "value": 24,
                 "code": "h",
+                "system": "http://unitsofmeasure.org",
                 "unit": "Stunden"
               }
             },
+            "asNeededBoolean": true,
             "maxDosePerAdministration": {
-              "system": "http://unitsofmeasure.org",
               "value": 1000,
               "code": "mg",
+              "system": "http://unitsofmeasure.org",
               "unit": "mg"
-            },
-            "asNeededBoolean": true
+            }
           }
         ],
         "status": "unknown",
@@ -1711,8 +1688,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "MedicationStatement"
+        "method": "PUT",
+        "url": "MedicationStatement/mii-exa-test-data-patient-3-medstatement-2"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/MedicationStatement/mii-exa-test-data-patient-3-medstatement-2",
       "resource": {
@@ -1773,22 +1750,22 @@
               {
                 "rateRatio": {
                   "numerator": {
-                    "system": "http://unitsofmeasure.org",
                     "value": 1000,
                     "code": "mg",
+                    "system": "http://unitsofmeasure.org",
                     "unit": "mg"
                   },
                   "denominator": {
-                    "system": "http://unitsofmeasure.org",
                     "value": 46,
                     "code": "h",
+                    "system": "http://unitsofmeasure.org",
                     "unit": "h"
                   }
                 },
                 "doseQuantity": {
-                  "system": "http://unitsofmeasure.org",
                   "value": 1000,
                   "code": "mg",
+                  "system": "http://unitsofmeasure.org",
                   "unit": "mg"
                 }
               }
@@ -1811,8 +1788,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "MedicationStatement"
+        "method": "PUT",
+        "url": "MedicationStatement/mii-exa-test-data-patient-3-medstatement-3"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/MedicationStatement/mii-exa-test-data-patient-3-medstatement-3",
       "resource": {
@@ -1873,22 +1850,22 @@
               {
                 "rateRatio": {
                   "numerator": {
-                    "system": "http://unitsofmeasure.org",
                     "value": 85,
                     "code": "mg",
+                    "system": "http://unitsofmeasure.org",
                     "unit": "mg"
                   },
                   "denominator": {
-                    "system": "http://unitsofmeasure.org",
                     "value": 2,
                     "code": "h",
+                    "system": "http://unitsofmeasure.org",
                     "unit": "h"
                   }
                 },
                 "doseQuantity": {
-                  "system": "http://unitsofmeasure.org",
                   "value": 85,
                   "code": "mg",
+                  "system": "http://unitsofmeasure.org",
                   "unit": "mg"
                 }
               }
@@ -1911,8 +1888,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "MedicationStatement"
+        "method": "PUT",
+        "url": "MedicationStatement/mii-exa-test-data-patient-3-medstatement-4"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/MedicationStatement/mii-exa-test-data-patient-3-medstatement-4",
       "resource": {
@@ -1958,9 +1935,9 @@
             "doseAndRate": [
               {
                 "doseQuantity": {
-                  "system": "http://unitsofmeasure.org",
                   "value": 50,
                   "code": "mg/kg",
+                  "system": "http://unitsofmeasure.org",
                   "unit": "mg/kilogram"
                 }
               }
@@ -1999,8 +1976,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "MedicationAdministration"
+        "method": "PUT",
+        "url": "MedicationAdministration/mii-exa-test-data-patient-3-medadmin-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/MedicationAdministration/mii-exa-test-data-patient-3-medadmin-1",
       "resource": {
@@ -2034,13 +2011,13 @@
               }
             ]
           },
+          "text": "Metamizol 500mg oral bei Schmerzen",
           "dose": {
-            "system": "http://unitsofmeasure.org",
             "value": 500,
             "code": "mg",
+            "system": "http://unitsofmeasure.org",
             "unit": "mg"
-          },
-          "text": "Metamizol 500mg oral bei Schmerzen"
+          }
         },
         "status": "completed",
         "category": {
@@ -2069,8 +2046,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "MedicationAdministration"
+        "method": "PUT",
+        "url": "MedicationAdministration/mii-exa-test-data-patient-3-medadmin-2"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/MedicationAdministration/mii-exa-test-data-patient-3-medadmin-2",
       "resource": {
@@ -2110,25 +2087,25 @@
           },
           "rateRatio": {
             "numerator": {
-              "system": "http://unitsofmeasure.org",
               "value": 1000,
               "code": "mg",
+              "system": "http://unitsofmeasure.org",
               "unit": "mg"
             },
             "denominator": {
-              "system": "http://unitsofmeasure.org",
               "value": 46,
               "code": "h",
+              "system": "http://unitsofmeasure.org",
               "unit": "h"
             }
           },
+          "text": "5-FU 1000mg IV über 46 Stunden",
           "dose": {
-            "system": "http://unitsofmeasure.org",
             "value": 1000,
             "code": "mg",
+            "system": "http://unitsofmeasure.org",
             "unit": "mg"
-          },
-          "text": "5-FU 1000mg IV über 46 Stunden"
+          }
         },
         "status": "completed",
         "category": {
@@ -2156,8 +2133,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "MedicationAdministration"
+        "method": "PUT",
+        "url": "MedicationAdministration/mii-exa-test-data-patient-3-medadmin-3"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/MedicationAdministration/mii-exa-test-data-patient-3-medadmin-3",
       "resource": {
@@ -2197,25 +2174,25 @@
           },
           "rateRatio": {
             "numerator": {
-              "system": "http://unitsofmeasure.org",
               "value": 85,
               "code": "mg",
+              "system": "http://unitsofmeasure.org",
               "unit": "mg"
             },
             "denominator": {
-              "system": "http://unitsofmeasure.org",
               "value": 2,
               "code": "h",
+              "system": "http://unitsofmeasure.org",
               "unit": "h"
             }
           },
+          "text": "Oxaliplatin 85mg IV über 2 Stunden",
           "dose": {
-            "system": "http://unitsofmeasure.org",
             "value": 85,
             "code": "mg",
+            "system": "http://unitsofmeasure.org",
             "unit": "mg"
-          },
-          "text": "Oxaliplatin 85mg IV über 2 Stunden"
+          }
         },
         "status": "completed",
         "category": {
@@ -2243,8 +2220,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "List"
+        "method": "PUT",
+        "url": "List/mii-exa-test-data-patient-3-list-stat-aufenthalt"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/List/mii-exa-test-data-patient-3-list-stat-aufenthalt",
       "resource": {
@@ -2301,8 +2278,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Medication"
+        "method": "PUT",
+        "url": "Medication/mii-exa-test-data-medication-metamizol"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Medication/mii-exa-test-data-medication-metamizol",
       "resource": {
@@ -2351,6 +2328,7 @@
                 {
                   "system": "http://fhir.de/CodeSystem/ask",
                   "code": "12915",
+                  "version": "20260105",
                   "display": "Metamizol-Natrium"
                 }
               ]
@@ -2375,8 +2353,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Medication"
+        "method": "PUT",
+        "url": "Medication/mii-exa-test-data-medication-rezeptur-doxorubicin"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Medication/mii-exa-test-data-medication-rezeptur-doxorubicin",
       "resource": {
@@ -2395,6 +2373,14 @@
           ]
         },
         "code": {
+          "coding": [
+            {
+              "system": "http://fhir.de/CodeSystem/bfarm/atc",
+              "code": "L01DB01",
+              "version": "2023",
+              "display": "Doxorubicin"
+            }
+          ],
           "text": "Infusion bestehend aus 85mg Doxorubicin aufgeloest zur Verabreichung in 250ml 5-%iger (50 mg/ml) Glucose-Infusionsloesung"
         },
         "ingredient": [
@@ -2446,8 +2432,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Medication"
+        "method": "PUT",
+        "url": "Medication/mii-exa-test-data-medication-glucoseloesung"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Medication/mii-exa-test-data-medication-glucoseloesung",
       "resource": {
@@ -2493,6 +2479,7 @@
                 {
                   "code": "12829",
                   "system": "http://fhir.de/CodeSystem/ask",
+                  "version": "20260105",
                   "display": "Glucose"
                 },
                 {
@@ -2508,7 +2495,6 @@
                 {
                   "code": "67079006",
                   "system": "http://snomed.info/sct",
-                  "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                   "display": "Glucose (substance)"
                 }
               ]
@@ -2535,6 +2521,7 @@
                 {
                   "code": "00343",
                   "system": "http://fhir.de/CodeSystem/ask",
+                  "version": "20260105",
                   "display": "Wasser für Injektionszwecke"
                 },
                 {
@@ -2550,7 +2537,6 @@
                 {
                   "code": "11713004",
                   "system": "http://snomed.info/sct",
-                  "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                   "display": "Water (substance)"
                 }
               ]
@@ -2572,8 +2558,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Medication"
+        "method": "PUT",
+        "url": "Medication/mii-exa-test-data-medication-5-fluorouracil"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Medication/mii-exa-test-data-medication-5-fluorouracil",
       "resource": {
@@ -2607,7 +2593,8 @@
               "coding": [
                 {
                   "system": "http://fhir.de/CodeSystem/ask",
-                  "code": "07374"
+                  "code": "07374",
+                  "version": "20260105"
                 }
               ]
             },
@@ -2641,8 +2628,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Medication"
+        "method": "PUT",
+        "url": "Medication/mii-exa-test-data-medication-oxaliplatin"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Medication/mii-exa-test-data-medication-oxaliplatin",
       "resource": {
@@ -2676,7 +2663,8 @@
               "coding": [
                 {
                   "system": "http://fhir.de/CodeSystem/ask",
-                  "code": "29849"
+                  "code": "29849",
+                  "version": "20260105"
                 }
               ]
             },
@@ -2710,1609 +2698,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "ServiceRequest"
-      },
-      "fullUrl": "https://www.medizininformatik-initiative.de/ServiceRequest/mii-exa-test-data-patient-3-molgen-anforderung-1",
-      "resource": {
-        "resourceType": "ServiceRequest",
-        "id": "mii-exa-test-data-patient-3-molgen-anforderung-1",
-        "meta": {
-          "security": [
-            {
-              "code": "HTEST",
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
-              "display": "test health data"
-            }
-          ],
-          "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/anforderung-genetischer-test"
-          ]
-        },
-        "category": [
-          {
-            "coding": [
-              {
-                "code": "108252007",
-                "system": "http://snomed.info/sct",
-                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-                "display": "Laboratory procedure (procedure)"
-              }
-            ]
-          }
-        ],
-        "code": {
-          "coding": [
-            {
-              "code": "405825005",
-              "system": "http://snomed.info/sct",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-              "display": "Molecular genetic test (procedure)"
-            },
-            {
-              "code": "53844-7",
-              "system": "http://loinc.org",
-              "display": "BRAF gene targeted mutation analysis in Blood or Tissue by Molecular genetics method"
-            },
-            {
-              "code": "HGNC:1097",
-              "system": "http://www.genenames.org/geneId",
-              "display": "BRAF"
-            }
-          ],
-          "text": "BRAF: Exon 15 (Codon 600)"
-        },
-        "reasonCode": [
-          {
-            "coding": [
-              {
-                "code": "447886005",
-                "system": "http://snomed.info/sct",
-                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-                "display": "Adenocarcinoma of anorectum (disorder)"
-              }
-            ]
-          }
-        ],
-        "specimen": [
-          {
-            "reference": "Specimen/mii-exa-test-data-patient-3-specimen-1"
-          }
-        ],
-        "supportingInfo": [
-          {
-            "reference": "FamilyMemberHistory/mii-exa-test-data-patient-3-molgen-family-member-history-1"
-          }
-        ],
-        "status": "active",
-        "intent": "order",
-        "subject": {
-          "reference": "Patient/mii-exa-test-data-patient-3"
-        },
-        "authoredOn": "2022-04-07"
-      }
-    },
-    {
-      "request": {
-        "method": "POST",
-        "url": "DiagnosticReport"
-      },
-      "fullUrl": "https://www.medizininformatik-initiative.de/DiagnosticReport/mii-exa-test-data-patient-3-molgen-befundbericht-1",
-      "resource": {
-        "resourceType": "DiagnosticReport",
-        "id": "mii-exa-test-data-patient-3-molgen-befundbericht-1",
-        "meta": {
-          "security": [
-            {
-              "code": "HTEST",
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
-              "display": "test health data"
-            }
-          ],
-          "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/molekulargenetischer-befundbericht",
-            "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomics-report"
-          ]
-        },
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/recommended-action",
-            "valueReference": {
-              "reference": "Task/mii-exa-test-data-patient-3-molgen-medikationsempfehlung-1"
-            }
-          },
-          {
-            "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/recommended-action",
-            "valueReference": {
-              "reference": "Task/mii-exa-test-data-patient-3-molgen-folgemassnahme-1"
-            }
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo",
-            "valueReference": {
-              "reference": "FamilyMemberHistory/mii-exa-test-data-patient-3-molgen-family-member-history-1"
-            }
-          }
-        ],
-        "basedOn": [
-          {
-            "reference": "ServiceRequest/mii-exa-test-data-patient-3-molgen-anforderung-1"
-          }
-        ],
-        "category": [
-          {
-            "coding": [
-              {
-                "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
-                "code": "GE",
-                "display": "Genetics"
-              }
-            ]
-          }
-        ],
-        "specimen": [
-          {
-            "reference": "Specimen/mii-exa-test-data-patient-3-specimen-1"
-          }
-        ],
-        "result": [
-          {
-            "reference": "Observation/mii-exa-test-data-patient-3-molgen-ergebnis-zusammenfassung-1"
-          },
-          {
-            "reference": "Observation/mii-exa-test-data-patient-3-molgen-diagnostische-implikation-1"
-          },
-          {
-            "reference": "Observation/mii-exa-test-data-patient-3-molgen-therapeutische-implikation-1"
-          },
-          {
-            "reference": "Observation/mii-exa-test-data-patient-3-molgen-variante-1"
-          },
-          {
-            "reference": "Observation/mii-exa-test-data-patient-3-molgen-untersuchte-region-1"
-          },
-          {
-            "reference": "Observation/mii-exa-test-data-patient-3-molgen-genotyp-1"
-          },
-          {
-            "reference": "Observation/mii-exa-test-data-patient-3-molgen-mutationslast-1"
-          },
-          {
-            "reference": "Observation/mii-exa-test-data-patient-3-molgen-msi-1"
-          }
-        ],
-        "status": "final",
-        "code": {
-          "coding": [
-            {
-              "code": "51969-4",
-              "system": "http://loinc.org",
-              "display": "Genetic analysis report"
-            }
-          ]
-        },
-        "subject": {
-          "reference": "Patient/mii-exa-test-data-patient-3"
-        },
-        "conclusion": "BRAF p.V600E Mutation liegt vor. Bitte Therapieoption mit einem BRAF-Inhibitor prüfen."
-      }
-    },
-    {
-      "request": {
-        "method": "POST",
-        "url": "Observation"
-      },
-      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-3-molgen-ergebnis-zusammenfassung-1",
-      "resource": {
-        "resourceType": "Observation",
-        "id": "mii-exa-test-data-patient-3-molgen-ergebnis-zusammenfassung-1",
-        "meta": {
-          "security": [
-            {
-              "code": "HTEST",
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
-              "display": "test health data"
-            }
-          ],
-          "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/ergebnis-zusammenfassung",
-            "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/overall-interpretation"
-          ]
-        },
-        "category": [
-          {
-            "coding": [
-              {
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-                "code": "laboratory",
-                "display": "Laboratory"
-              }
-            ]
-          }
-        ],
-        "component": [
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs",
-                  "code": "conclusion-string"
-                }
-              ]
-            },
-            "valueString": "BRAF p.V600E Mutation liegt vor. Bitte Therapieoption mit einem BRAF-Inhibitor prüfen."
-          }
-        ],
-        "code": {
-          "coding": [
-            {
-              "system": "http://loinc.org",
-              "code": "51968-6"
-            }
-          ]
-        },
-        "status": "final",
-        "subject": {
-          "reference": "Patient/mii-exa-test-data-patient-3"
-        },
-        "valueCodeableConcept": {
-          "coding": [
-            {
-              "code": "LA6576-8",
-              "system": "http://loinc.org",
-              "display": "Positive"
-            }
-          ]
-        }
-      }
-    },
-    {
-      "request": {
-        "method": "POST",
-        "url": "Observation"
-      },
-      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-3-molgen-diagnostische-implikation-1",
-      "resource": {
-        "resourceType": "Observation",
-        "id": "mii-exa-test-data-patient-3-molgen-diagnostische-implikation-1",
-        "meta": {
-          "security": [
-            {
-              "code": "HTEST",
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
-              "display": "test health data"
-            }
-          ],
-          "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/diagnostische-implikation",
-            "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/diagnostic-implication"
-          ]
-        },
-        "category": [
-          {
-            "coding": [
-              {
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-                "code": "laboratory",
-                "display": "Laboratory"
-              }
-            ]
-          }
-        ],
-        "derivedFrom": [
-          {
-            "reference": "Observation/mii-exa-test-data-patient-3-molgen-variante-1"
-          }
-        ],
-        "component": [
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs",
-                  "code": "conclusion-string"
-                }
-              ]
-            },
-            "valueString": "Nachweis einer aktivierenden Mutation BRAF V600E"
-          }
-        ],
-        "code": {
-          "coding": [
-            {
-              "system": "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs",
-              "code": "diagnostic-implication",
-              "display": "Diagnostic Implication"
-            }
-          ]
-        },
-        "status": "final",
-        "subject": {
-          "reference": "Patient/mii-exa-test-data-patient-3"
-        }
-      }
-    },
-    {
-      "request": {
-        "method": "POST",
-        "url": "Observation"
-      },
-      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-3-molgen-therapeutische-implikation-1",
-      "resource": {
-        "resourceType": "Observation",
-        "id": "mii-exa-test-data-patient-3-molgen-therapeutische-implikation-1",
-        "meta": {
-          "security": [
-            {
-              "code": "HTEST",
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
-              "display": "test health data"
-            }
-          ],
-          "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/therapeutische-implikation",
-            "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/therapeutic-implication"
-          ]
-        },
-        "category": [
-          {
-            "coding": [
-              {
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-                "code": "laboratory",
-                "display": "Laboratory"
-              }
-            ]
-          }
-        ],
-        "component": [
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs",
-                  "code": "conclusion-string"
-                }
-              ]
-            },
-            "valueString": "Nachweis einer aktivierenden Mutation BRAF V600E. Triple-Therapie mit einem EGFR-Antikörper sowie einem BRAF- und einem MEK- Inhibitor prüfen."
-          },
-          {
-            "valueCodeableConcept": {
-              "coding": [
-                {
-                  "code": "L01EC",
-                  "system": "http://fhir.de/CodeSystem/bfarm/atc",
-                  "display": "BRAF-Serin-Threoninkinase-Inhibitoren"
-                },
-                {
-                  "code": "703645005",
-                  "system": "http://snomed.info/sct",
-                  "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-                  "display": "Product containing B-Raf inhibitor (product)"
-                }
-              ],
-              "text": "BRAF Inhibitor"
-            },
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "51963-7",
-                  "display": "Medication assessed [ID]"
-                }
-              ]
-            }
-          },
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "51963-7",
-                  "display": "Medication assessed [ID]"
-                }
-              ]
-            },
-            "valueCodeableConcept": {
-              "coding": [
-                {
-                  "code": "L01FE",
-                  "system": "http://fhir.de/CodeSystem/bfarm/atc",
-                  "display": "EGFR (Epidermaler Wachstumsfaktor-Rezeptor)-Inhibitoren"
-                }
-              ]
-            }
-          },
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "51963-7",
-                  "display": "Medication assessed [ID]"
-                }
-              ]
-            },
-            "valueCodeableConcept": {
-              "coding": [
-                {
-                  "code": "L01EE",
-                  "system": "http://fhir.de/CodeSystem/bfarm/atc",
-                  "display": "Mitogen-aktivierte Proteinkinase (MEK)-Inhibitoren"
-                }
-              ]
-            }
-          }
-        ],
-        "derivedFrom": [
-          {
-            "reference": "Observation/mii-exa-test-data-patient-3-molgen-variante-1"
-          }
-        ],
-        "code": {
-          "coding": [
-            {
-              "system": "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs",
-              "code": "therapeutic-implication",
-              "display": "Therapeutic Implication"
-            }
-          ]
-        },
-        "status": "final",
-        "subject": {
-          "reference": "Patient/mii-exa-test-data-patient-3"
-        }
-      }
-    },
-    {
-      "request": {
-        "method": "POST",
-        "url": "Observation"
-      },
-      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-3-molgen-variante-1",
-      "resource": {
-        "resourceType": "Observation",
-        "id": "mii-exa-test-data-patient-3-molgen-variante-1",
-        "meta": {
-          "security": [
-            {
-              "code": "HTEST",
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
-              "display": "test health data"
-            }
-          ],
-          "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/variante",
-            "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/variant"
-          ]
-        },
-        "basedOn": [
-          {
-            "reference": "ServiceRequest/mii-exa-test-data-patient-3-molgen-anforderung-1"
-          }
-        ],
-        "category": [
-          {
-            "coding": [
-              {
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-                "code": "laboratory",
-                "display": "Laboratory"
-              }
-            ]
-          }
-        ],
-        "derivedFrom": [
-          {
-            "reference": "Observation/mii-exa-test-data-patient-3-molgen-untersuchte-region-1"
-          }
-        ],
-        "component": [
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "48018-6",
-                  "display": "Gene studied [ID]"
-                }
-              ]
-            },
-            "valueCodeableConcept": {
-              "coding": [
-                {
-                  "code": "HGNC:1097",
-                  "system": "http://www.genenames.org/geneId",
-                  "display": "BRAF"
-                }
-              ]
-            }
-          },
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "48013-7",
-                  "display": "Genomic reference sequence [ID]"
-                }
-              ]
-            },
-            "valueCodeableConcept": {
-              "coding": [
-                {
-                  "code": "NM_004333.4",
-                  "system": "http://www.ncbi.nlm.nih.gov/refseq"
-                }
-              ]
-            }
-          },
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "47999-8",
-                  "display": "DNA region name [Identifier]"
-                }
-              ]
-            },
-            "valueString": "Exon #15"
-          },
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "47999-8",
-                  "display": "DNA region name [Identifier]"
-                }
-              ]
-            },
-            "valueString": "Codon #582 - #612"
-          },
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "48004-6",
-                  "display": "DNA change (c.HGVS)"
-                }
-              ]
-            },
-            "valueCodeableConcept": {
-              "coding": [
-                {
-                  "code": "NM_004333.4:c.1799T>A",
-                  "system": "http://varnomen.hgvs.org"
-                }
-              ]
-            }
-          },
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "48005-3",
-                  "display": "Amino acid change (pHGVS)"
-                }
-              ]
-            },
-            "valueCodeableConcept": {
-              "coding": [
-                {
-                  "code": "p.(Val600Glu)",
-                  "system": "http://varnomen.hgvs.org"
-                }
-              ]
-            }
-          },
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "81258-6",
-                  "display": "Sample variant allelic frequency [NFr]"
-                }
-              ]
-            },
-            "valueQuantity": {
-              "value": 30.25,
-              "code": "%",
-              "system": "http://unitsofmeasure.org"
-            }
-          },
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "48001-2",
-                  "display": "Cytogenetic (chromosome) location"
-                }
-              ]
-            },
-            "valueCodeableConcept": {
-              "coding": [
-                {
-                  "code": "7q34",
-                  "system": "urn:oid:2.16.840.1.113883.6.335"
-                }
-              ]
-            }
-          },
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "48019-4",
-                  "display": "DNA change type"
-                }
-              ]
-            },
-            "valueCodeableConcept": {
-              "coding": [
-                {
-                  "code": "SO:1000008",
-                  "system": "http://sequenceontology.org",
-                  "display": "point_mutation"
-                }
-              ]
-            }
-          },
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "48006-1",
-                  "display": "Amino acid change [Type]"
-                }
-              ]
-            },
-            "valueCodeableConcept": {
-              "coding": [
-                {
-                  "code": "LA6698-0",
-                  "system": "http://loinc.org",
-                  "display": "Missense"
-                }
-              ]
-            }
-          },
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "81252-9",
-                  "display": "Discrete genetic variant"
-                }
-              ]
-            },
-            "valueCodeableConcept": {
-              "coding": [
-                {
-                  "code": "rs113488022",
-                  "system": "http://www.ncbi.nlm.nih.gov/projects/SNP"
-                }
-              ]
-            }
-          }
-        ],
-        "code": {
-          "coding": [
-            {
-              "system": "http://loinc.org",
-              "code": "69548-6",
-              "display": "Genetic variant assessment"
-            }
-          ]
-        },
-        "status": "final",
-        "subject": {
-          "reference": "Patient/mii-exa-test-data-patient-3"
-        },
-        "valueCodeableConcept": {
-          "coding": [
-            {
-              "code": "LA9633-4",
-              "system": "http://loinc.org",
-              "display": "Present"
-            }
-          ]
-        },
-        "method": {
-          "coding": [
-            {
-              "code": "LA26398-0",
-              "system": "http://loinc.org",
-              "display": "Sequencing"
-            }
-          ]
-        },
-        "specimen": {
-          "reference": "Specimen/mii-exa-test-data-patient-3-specimen-1"
-        },
-        "device": {
-          "reference": "Device/mii-exa-test-data-molgen-device-sequencer"
-        }
-      }
-    },
-    {
-      "request": {
-        "method": "POST",
-        "url": "Observation"
-      },
-      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-3-molgen-untersuchte-region-1",
-      "resource": {
-        "resourceType": "Observation",
-        "id": "mii-exa-test-data-patient-3-molgen-untersuchte-region-1",
-        "meta": {
-          "security": [
-            {
-              "code": "HTEST",
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
-              "display": "test health data"
-            }
-          ],
-          "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/untersuchte-region",
-            "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/region-studied"
-          ]
-        },
-        "category": [
-          {
-            "coding": [
-              {
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-                "code": "laboratory",
-                "display": "Laboratory"
-              }
-            ]
-          }
-        ],
-        "component": [
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "48018-6",
-                  "display": "Gene studied [ID]"
-                }
-              ]
-            },
-            "valueCodeableConcept": {
-              "coding": [
-                {
-                  "code": "HGNC:1097",
-                  "system": "http://www.genenames.org/geneId",
-                  "display": "BRAF"
-                }
-              ]
-            }
-          },
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "36908-2",
-                  "display": "Gene mutations tested for in Blood or Tissue by Molecular genetics method Nominal"
-                }
-              ]
-            },
-            "valueCodeableConcept": {
-              "coding": [
-                {
-                  "code": "NM_004333.4:c.1799T>A",
-                  "system": "http://varnomen.hgvs.org"
-                }
-              ]
-            }
-          },
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "81293-3",
-                  "display": "Description of ranges of DNA sequences examined"
-                }
-              ]
-            },
-            "valueString": "BRAF: Exon 15 (Codon 600)"
-          },
-          {
-            "valueRange": {
-              "low": {
-                "value": 15,
-                "code": "{Exon}",
-                "system": "http://unitsofmeasure.org",
-                "unit": "Exon"
-              },
-              "high": {
-                "value": 15,
-                "code": "{Exon}",
-                "system": "http://unitsofmeasure.org",
-                "unit": "Exon"
-              }
-            },
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "51959-5",
-                  "display": "Range(s) of DNA sequence examined"
-                }
-              ]
-            }
-          },
-          {
-            "valueRange": {
-              "low": {
-                "value": 582,
-                "code": "{Codon}",
-                "system": "http://unitsofmeasure.org",
-                "unit": "Codon"
-              },
-              "high": {
-                "value": 612,
-                "code": "{Codon}",
-                "system": "http://unitsofmeasure.org",
-                "unit": "Codon"
-              }
-            },
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "51959-5",
-                  "display": "Range(s) of DNA sequence examined"
-                }
-              ]
-            }
-          },
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "48013-7",
-                  "display": "Genomic reference sequence [ID]"
-                }
-              ]
-            },
-            "valueCodeableConcept": {
-              "coding": [
-                {
-                  "code": "NM_004333.4",
-                  "system": "http://www.ncbi.nlm.nih.gov/refseq"
-                }
-              ]
-            }
-          }
-        ],
-        "code": {
-          "coding": [
-            {
-              "system": "http://loinc.org",
-              "code": "53041-0",
-              "display": "DNA region of interest panel"
-            }
-          ]
-        },
-        "status": "final",
-        "subject": {
-          "reference": "Patient/mii-exa-test-data-patient-3"
-        },
-        "method": {
-          "coding": [
-            {
-              "code": "LA26398-0",
-              "system": "http://loinc.org",
-              "display": "Sequencing"
-            }
-          ]
-        },
-        "specimen": {
-          "reference": "Specimen/mii-exa-test-data-patient-3-specimen-1"
-        },
-        "device": {
-          "reference": "Device/mii-exa-test-data-molgen-device-sequencer"
-        }
-      }
-    },
-    {
-      "request": {
-        "method": "POST",
-        "url": "Observation"
-      },
-      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-3-molgen-genotyp-1",
-      "resource": {
-        "resourceType": "Observation",
-        "id": "mii-exa-test-data-patient-3-molgen-genotyp-1",
-        "meta": {
-          "security": [
-            {
-              "code": "HTEST",
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
-              "display": "test health data"
-            }
-          ],
-          "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/genotyp",
-            "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genotype"
-          ]
-        },
-        "category": [
-          {
-            "coding": [
-              {
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-                "code": "laboratory",
-                "display": "Laboratory"
-              }
-            ]
-          }
-        ],
-        "valueCodeableConcept": {
-          "text": "BRAF rs113488022 T>A"
-        },
-        "derivedFrom": [
-          {
-            "reference": "Observation/mii-exa-test-data-patient-3-molgen-variante-1"
-          }
-        ],
-        "component": [
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "48018-6",
-                  "display": "Gene studied [ID]"
-                }
-              ]
-            },
-            "valueCodeableConcept": {
-              "coding": [
-                {
-                  "code": "HGNC:1097",
-                  "system": "http://www.genenames.org/geneId",
-                  "display": "BRAF"
-                }
-              ]
-            }
-          },
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "48001-2",
-                  "display": "Cytogenetic (chromosome) location"
-                }
-              ]
-            },
-            "valueCodeableConcept": {
-              "coding": [
-                {
-                  "code": "7q34",
-                  "system": "urn:oid:2.16.840.1.113883.6.335"
-                }
-              ]
-            }
-          }
-        ],
-        "code": {
-          "coding": [
-            {
-              "system": "http://loinc.org",
-              "code": "84413-4",
-              "display": "Genotype display name"
-            }
-          ]
-        },
-        "status": "final",
-        "subject": {
-          "reference": "Patient/mii-exa-test-data-patient-3"
-        },
-        "method": {
-          "coding": [
-            {
-              "code": "LA26398-0",
-              "system": "http://loinc.org",
-              "display": "Sequencing"
-            }
-          ]
-        },
-        "specimen": {
-          "reference": "Specimen/mii-exa-test-data-patient-3-specimen-1"
-        },
-        "device": {
-          "reference": "Device/mii-exa-test-data-molgen-device-sequencer"
-        }
-      }
-    },
-    {
-      "request": {
-        "method": "POST",
-        "url": "Observation"
-      },
-      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-3-molgen-mutationslast-1",
-      "resource": {
-        "resourceType": "Observation",
-        "id": "mii-exa-test-data-patient-3-molgen-mutationslast-1",
-        "meta": {
-          "security": [
-            {
-              "code": "HTEST",
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
-              "display": "test health data"
-            }
-          ],
-          "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/mutationslast",
-            "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/tmb"
-          ]
-        },
-        "category": [
-          {
-            "coding": [
-              {
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-                "code": "laboratory",
-                "display": "Laboratory"
-              }
-            ]
-          }
-        ],
-        "code": {
-          "coding": [
-            {
-              "system": "http://loinc.org",
-              "code": "94076-7",
-              "display": "Mutations/Megabase [# Ratio] in Tumor"
-            }
-          ]
-        },
-        "valueQuantity": {
-          "system": "http://unitsofmeasure.org",
-          "code": "1/1000000{Base}",
-          "value": 12,
-          "unit": "Mutations/Megabase"
-        },
-        "status": "final",
-        "subject": {
-          "reference": "Patient/mii-exa-test-data-patient-3"
-        },
-        "specimen": {
-          "reference": "Specimen/mii-exa-test-data-patient-3-specimen-1"
-        }
-      }
-    },
-    {
-      "request": {
-        "method": "POST",
-        "url": "Observation"
-      },
-      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-3-molgen-msi-1",
-      "resource": {
-        "resourceType": "Observation",
-        "id": "mii-exa-test-data-patient-3-molgen-msi-1",
-        "meta": {
-          "security": [
-            {
-              "code": "HTEST",
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
-              "display": "test health data"
-            }
-          ],
-          "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/mikrosatelliteninstabilitaet",
-            "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/msi"
-          ]
-        },
-        "category": [
-          {
-            "coding": [
-              {
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-                "code": "laboratory",
-                "display": "Laboratory"
-              }
-            ]
-          }
-        ],
-        "component": [
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs",
-                  "code": "conclusion-string"
-                }
-              ]
-            },
-            "valueString": "Tumor weist ein mikrosatellitenstabiles Wachstum auf."
-          }
-        ],
-        "code": {
-          "coding": [
-            {
-              "system": "http://loinc.org",
-              "code": "81695-9",
-              "display": "Microsatellite instability [Interpretation] in Cancer specimen Qualitative"
-            }
-          ]
-        },
-        "status": "final",
-        "subject": {
-          "reference": "Patient/mii-exa-test-data-patient-3"
-        },
-        "valueCodeableConcept": {
-          "coding": [
-            {
-              "code": "LA14122-8",
-              "system": "http://loinc.org",
-              "display": "Stable"
-            }
-          ]
-        },
-        "specimen": {
-          "reference": "Specimen/mii-exa-test-data-patient-3-specimen-1"
-        }
-      }
-    },
-    {
-      "request": {
-        "method": "POST",
-        "url": "Task"
-      },
-      "fullUrl": "https://www.medizininformatik-initiative.de/Task/mii-exa-test-data-patient-3-molgen-medikationsempfehlung-1",
-      "resource": {
-        "resourceType": "Task",
-        "id": "mii-exa-test-data-patient-3-molgen-medikationsempfehlung-1",
-        "meta": {
-          "security": [
-            {
-              "code": "HTEST",
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
-              "display": "test health data"
-            }
-          ],
-          "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/medikationsempfehlung",
-            "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/medication-recommendation"
-          ]
-        },
-        "basedOn": [
-          {
-            "reference": "ServiceRequest/mii-exa-test-data-patient-3-molgen-anforderung-1"
-          }
-        ],
-        "code": {
-          "coding": [
-            {
-              "code": "LA26421-0",
-              "system": "http://loinc.org",
-              "display": "Consider alternative medication"
-            }
-          ],
-          "text": "Alternative Medikation in Erwägung ziehen"
-        },
-        "status": "requested",
-        "intent": "proposal",
-        "for": {
-          "reference": "Patient/mii-exa-test-data-patient-3"
-        },
-        "reasonReference": {
-          "reference": "Observation/mii-exa-test-data-patient-3-molgen-therapeutische-implikation-1"
-        }
-      }
-    },
-    {
-      "request": {
-        "method": "POST",
-        "url": "Task"
-      },
-      "fullUrl": "https://www.medizininformatik-initiative.de/Task/mii-exa-test-data-patient-3-molgen-folgemassnahme-1",
-      "resource": {
-        "resourceType": "Task",
-        "id": "mii-exa-test-data-patient-3-molgen-folgemassnahme-1",
-        "meta": {
-          "security": [
-            {
-              "code": "HTEST",
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
-              "display": "test health data"
-            }
-          ],
-          "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/empfohlene-folgemassnahme",
-            "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/followup-recommendation"
-          ]
-        },
-        "basedOn": [
-          {
-            "reference": "ServiceRequest/mii-exa-test-data-patient-3-molgen-anforderung-1"
-          }
-        ],
-        "status": "requested",
-        "intent": "proposal",
-        "code": {
-          "coding": [
-            {
-              "code": "LA14020-4",
-              "system": "http://loinc.org",
-              "display": "Genetic counseling recommended"
-            }
-          ]
-        },
-        "description": "Genetische Beratung empfohlen mit Dr. Rosalind Franklin",
-        "for": {
-          "reference": "Patient/mii-exa-test-data-patient-3"
-        },
-        "reasonReference": {
-          "reference": "Observation/mii-exa-test-data-patient-3-molgen-therapeutische-implikation-1"
-        },
-        "reasonCode": {
-          "coding": [
-            {
-              "code": "447886005",
-              "system": "http://snomed.info/sct",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-              "display": "Adenocarcinoma of anorectum (disorder)"
-            }
-          ]
-        }
-      }
-    },
-    {
-      "request": {
-        "method": "POST",
-        "url": "FamilyMemberHistory"
-      },
-      "fullUrl": "https://www.medizininformatik-initiative.de/FamilyMemberHistory/mii-exa-test-data-patient-3-molgen-family-member-history-1",
-      "resource": {
-        "resourceType": "FamilyMemberHistory",
-        "id": "mii-exa-test-data-patient-3-molgen-family-member-history-1",
-        "meta": {
-          "security": [
-            {
-              "code": "HTEST",
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
-              "display": "test health data"
-            }
-          ],
-          "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/familienanamnese"
-          ]
-        },
-        "relationship": {
-          "coding": [
-            {
-              "system": "http://snomed.info/sct",
-              "code": "72705000",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-              "display": "Mother (person)"
-            },
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
-              "code": "MTH",
-              "display": "mother"
-            }
-          ]
-        },
-        "sex": {
-          "coding": [
-            {
-              "code": "female",
-              "system": "http://hl7.org/fhir/administrative-gender"
-            },
-            {
-              "code": "248152002",
-              "system": "http://snomed.info/sct",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-              "display": "Female (finding)"
-            }
-          ]
-        },
-        "reasonCode": [
-          {
-            "coding": [
-              {
-                "system": "http://snomed.info/sct",
-                "code": "447886005",
-                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-                "display": "Adenocarcinoma of anorectum (disorder)"
-              }
-            ]
-          }
-        ],
-        "reasonReference": [
-          {
-            "reference": "Condition/mii-exa-test-data-patient-3-diagnose-1"
-          }
-        ],
-        "condition": [
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://snomed.info/sct",
-                  "code": "830150003",
-                  "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-                  "display": "Malignant melanoma with B-Raf proto-oncogene, serine/threonine kinase V600E mutation (disorder)"
-                }
-              ]
-            },
-            "contributedToDeath": true
-          }
-        ],
-        "status": "completed",
-        "patient": {
-          "reference": "Patient/mii-exa-test-data-patient-3"
-        },
-        "date": "2022-04-07",
-        "deceasedBoolean": true
-      }
-    },
-    {
-      "request": {
-        "method": "POST",
-        "url": "Specimen"
-      },
-      "fullUrl": "https://www.medizininformatik-initiative.de/Specimen/mii-exa-test-data-patient-3-specimen-1",
-      "resource": {
-        "resourceType": "Specimen",
-        "id": "mii-exa-test-data-patient-3-specimen-1",
-        "meta": {
-          "security": [
-            {
-              "code": "HTEST",
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
-              "display": "test health data"
-            }
-          ],
-          "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Specimen"
-          ]
-        },
-        "collection": {
-          "collectedDateTime": "2022-03-24T12:44:00+01:00",
-          "bodySite": {
-            "coding": [
-              {
-                "code": "71854001",
-                "system": "http://snomed.info/sct",
-                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-                "display": "Colon structure (body structure)"
-              }
-            ]
-          }
-        },
-        "identifier": [
-          {
-            "system": "https://www.charite.de/fhir/sid/Bioproben",
-            "value": "BP_000002"
-          }
-        ],
-        "type": {
-          "coding": [
-            {
-              "code": "128159001",
-              "system": "http://snomed.info/sct",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-              "display": "Tissue specimen from colon (specimen)"
-            }
-          ]
-        },
-        "status": "available",
-        "subject": {
-          "reference": "Patient/mii-exa-test-data-patient-3"
-        }
-      }
-    },
-    {
-      "request": {
-        "method": "POST",
-        "url": "Specimen"
-      },
-      "fullUrl": "https://www.medizininformatik-initiative.de/Specimen/mii-exa-test-data-patient-3-specimen-2",
-      "resource": {
-        "resourceType": "Specimen",
-        "id": "mii-exa-test-data-patient-3-specimen-2",
-        "meta": {
-          "security": [
-            {
-              "code": "HTEST",
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
-              "display": "test health data"
-            }
-          ],
-          "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Specimen"
-          ]
-        },
-        "extension": [
-          {
-            "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/VerwaltendeOrganisation",
-            "valueReference": {
-              "reference": "Organization/mii-exa-test-data-organization-biobank-charite"
-            }
-          },
-          {
-            "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Diagnose",
-            "valueReference": {
-              "reference": "Condition/mii-exa-test-data-patient-3-diagnose-1"
-            }
-          }
-        ],
-        "identifier": [
-          {
-            "system": "https://www.charite.de/fhir/sid/Bioproben",
-            "value": "BP_000004"
-          }
-        ],
-        "type": {
-          "coding": [
-            {
-              "code": "119364003",
-              "system": "http://snomed.info/sct",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-              "display": "Serum specimen (specimen)"
-            }
-          ]
-        },
-        "collection": {
-          "bodySite": {
-            "coding": [
-              {
-                "code": "368208006",
-                "system": "http://snomed.info/sct",
-                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-                "display": "Left upper arm structure (body structure)"
-              }
-            ]
-          },
-          "collectedDateTime": "2022-04-05T07:15:00+02:00"
-        },
-        "container": [
-          {
-            "type": {
-              "coding": [
-                {
-                  "code": "83059008",
-                  "system": "http://snomed.info/sct",
-                  "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-                  "display": "Tube, device (physical object)"
-                }
-              ]
-            },
-            "capacity": {
-              "value": 7,
-              "code": "ml",
-              "system": "http://unitsofmeasure.org"
-            },
-            "specimenQuantity": {
-              "value": 7,
-              "code": "ml",
-              "system": "http://unitsofmeasure.org"
-            }
-          }
-        ],
-        "status": "available",
-        "subject": {
-          "reference": "Patient/mii-exa-test-data-patient-3"
-        }
-      }
-    },
-    {
-      "request": {
-        "method": "POST",
-        "url": "Specimen"
-      },
-      "fullUrl": "https://www.medizininformatik-initiative.de/Specimen/mii-exa-test-data-patient-3-specimen-3",
-      "resource": {
-        "resourceType": "Specimen",
-        "id": "mii-exa-test-data-patient-3-specimen-3",
-        "meta": {
-          "security": [
-            {
-              "code": "HTEST",
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
-              "display": "test health data"
-            }
-          ],
-          "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Specimen"
-          ]
-        },
-        "extension": [
-          {
-            "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/VerwaltendeOrganisation",
-            "valueReference": {
-              "reference": "Organization/mii-exa-test-data-organization-biobank-charite"
-            }
-          },
-          {
-            "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Diagnose",
-            "valueReference": {
-              "reference": "Condition/mii-exa-test-data-patient-3-diagnose-1"
-            }
-          }
-        ],
-        "identifier": [
-          {
-            "system": "https://www.charite.de/fhir/sid/Bioproben",
-            "value": "BP_000005"
-          }
-        ],
-        "type": {
-          "coding": [
-            {
-              "code": "445295009",
-              "system": "http://snomed.info/sct",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-              "display": "Blood specimen with edetic acid (specimen)"
-            }
-          ]
-        },
-        "collection": {
-          "bodySite": {
-            "coding": [
-              {
-                "code": "368209003",
-                "system": "http://snomed.info/sct",
-                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-                "display": "Right upper arm structure (body structure)"
-              }
-            ]
-          },
-          "collectedDateTime": "2022-04-05T07:15:00+02:00"
-        },
-        "container": [
-          {
-            "type": {
-              "coding": [
-                {
-                  "code": "83059008",
-                  "system": "http://snomed.info/sct",
-                  "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-                  "display": "Tube, device (physical object)"
-                }
-              ]
-            },
-            "capacity": {
-              "value": 5,
-              "code": "ml",
-              "system": "http://unitsofmeasure.org"
-            },
-            "specimenQuantity": {
-              "value": 5,
-              "code": "ml",
-              "system": "http://unitsofmeasure.org"
-            }
-          }
-        ],
-        "status": "available",
-        "subject": {
-          "reference": "Patient/mii-exa-test-data-patient-3"
-        }
-      }
-    },
-    {
-      "request": {
-        "method": "POST",
-        "url": "Organization"
+        "method": "PUT",
+        "url": "Organization/mii-exa-test-data-organization-charite"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Organization/mii-exa-test-data-organization-charite",
       "resource": {
@@ -4343,8 +2730,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Organization"
+        "method": "PUT",
+        "url": "Organization/mii-exa-test-data-organization-labor-berlin"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Organization/mii-exa-test-data-organization-labor-berlin",
       "resource": {
@@ -4375,8 +2762,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Organization"
+        "method": "PUT",
+        "url": "Organization/mii-exa-test-data-organization-biobank-charite"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Organization/mii-exa-test-data-organization-biobank-charite",
       "resource": {
@@ -4396,8 +2783,8 @@
         },
         "extension": [
           {
-            "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/BeschreibungSammlung",
-            "valueMarkdown": "Zentrale Biobank der Charité"
+            "url": "https://fhir.bbmri-eric.eu/fhir/StructureDefinition/miabis-organization-description-extension",
+            "valueString": "Zentrale Biobank der Charité"
           }
         ],
         "identifier": [
@@ -4457,8 +2844,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Practitioner"
+        "method": "PUT",
+        "url": "Practitioner/mii-exa-test-data-practitioner-physician-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Practitioner/mii-exa-test-data-practitioner-physician-1",
       "resource": {
@@ -4486,8 +2873,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "PractitionerRole"
+        "method": "PUT",
+        "url": "PractitionerRole/mii-exa-test-data-practitioner-role-physician-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/PractitionerRole/mii-exa-test-data-practitioner-role-physician-1",
       "resource": {
@@ -4511,7 +2898,6 @@
               {
                 "code": "309343006",
                 "system": "http://snomed.info/sct",
-                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                 "display": "Physician (occupation)"
               }
             ]
@@ -4528,36 +2914,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Device"
-      },
-      "fullUrl": "https://www.medizininformatik-initiative.de/Device/mii-exa-test-data-molgen-device-sequencer",
-      "resource": {
-        "resourceType": "Device",
-        "id": "mii-exa-test-data-molgen-device-sequencer",
-        "meta": {
-          "security": [
-            {
-              "code": "HTEST",
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
-              "display": "test health data"
-            }
-          ]
-        },
-        "deviceName": [
-          {
-            "name": "MiSeq",
-            "type": "manufacturer-name"
-          }
-        ],
-        "status": "active",
-        "manufacturer": "Illumina"
-      }
-    },
-    {
-      "request": {
-        "method": "POST",
-        "url": "Device"
+        "method": "PUT",
+        "url": "Device/mii-exa-test-data-device-roche-cobas"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Device/mii-exa-test-data-device-roche-cobas",
       "resource": {
@@ -4590,8 +2948,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Device"
+        "method": "PUT",
+        "url": "Device/mii-exa-test-data-device-roche-cobas-c303"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Device/mii-exa-test-data-device-roche-cobas-c303",
       "resource": {
@@ -4660,8 +3018,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Device"
+        "method": "PUT",
+        "url": "Device/mii-exa-test-data-device-roche-cobas-e402"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Device/mii-exa-test-data-device-roche-cobas-e402",
       "resource": {
@@ -4710,8 +3068,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "DeviceMetric"
+        "method": "PUT",
+        "url": "DeviceMetric/mii-exa-test-data-devicemetric-roche-cobas-c303-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/DeviceMetric/mii-exa-test-data-devicemetric-roche-cobas-c303-1",
       "resource": {

@@ -62,6 +62,7 @@ Description: "MedicationRequest: Propofol 6.5 mg/min IV via Perfusor"
 * dosageInstruction.timing.event = "2024-02-20T10:00:00+01:00"
 * dosageInstruction.route = $standardterms#20045000 "Intravenous use"
 * dosageInstruction.method = $sct#129331004 "Perfusion - action (qualifier value)"
+* dosageInstruction.doseAndRate.doseQuantity = 200 $ucum#mg "mg"
 * dosageInstruction.doseAndRate.rateQuantity = 5 $ucum#mg/min
 
 Instance: mii-exa-test-data-patient-1-medrequest-4
@@ -82,6 +83,7 @@ Description: "MedicationRequest: Propofol 6.5 mg/min IV via Perfusor"
 * dosageInstruction.timing.event = "2024-02-20T10:00:00+01:00"
 * dosageInstruction.route = $standardterms#20045000 "Intravenous use"
 * dosageInstruction.method = $sct#129331004 "Perfusion - action (qualifier value)"
+* dosageInstruction.doseAndRate.doseQuantity = 200 $ucum#mg "mg"
 * dosageInstruction.doseAndRate.rateRatio.numerator = 6.5 $ucum#mg "mg"
 * dosageInstruction.doseAndRate.rateRatio.denominator = 1 $ucum#min "Minuten"
 * priorPrescription = Reference(mii-exa-test-data-patient-1-medrequest-2)
@@ -102,6 +104,9 @@ Description: "MedicationRequest: Metamizol 500-1000 mg oral bei Bedarf"
 * encounter = Reference(mii-exa-test-data-patient-3-encounter-1)
 * authoredOn = "2022-04-12T11:32:00+01:00"
 * dosageInstruction.text = "Die Einzeldosis 500-1000 mg, Tageshöchstdosis 5000 mg"
+* dosageInstruction.timing.repeat.frequencyMax = 6
+* dosageInstruction.timing.repeat.period = 1
+* dosageInstruction.timing.repeat.periodUnit = #d
 * dosageInstruction.asNeededBoolean = true
 * dosageInstruction.route = $standardterms#20053000 "Oral use"
 * dosageInstruction.doseAndRate.doseRange.low = 500 $ucum#mg "mg"
@@ -148,6 +153,7 @@ Description: "MedicationRequest: Carboplatin 450mg IV über 1 Stunde"
 * encounter = Reference(mii-exa-test-data-patient-2-encounter-1)
 * authoredOn = "2024-03-07T10:00:00+01:00"
 * dosageInstruction.text = "Carboplatin 450mg IV über 1 Stunde"
+* dosageInstruction.timing.event = "2024-03-07T10:00:00+01:00"
 * dosageInstruction.route = $standardterms#20045000 "Intravenous use"
 * dosageInstruction.doseAndRate.doseQuantity = 450 $ucum#mg "mg"
 * dosageInstruction.doseAndRate.rateRatio.numerator = 450 $ucum#mg "mg"
@@ -168,6 +174,7 @@ Description: "MedicationRequest: Paclitaxel 175mg IV über 3 Stunden"
 * encounter = Reference(mii-exa-test-data-patient-2-encounter-1)
 * authoredOn = "2024-03-07T10:30:00+01:00"
 * dosageInstruction.text = "Paclitaxel 175mg IV über 3 Stunden"
+* dosageInstruction.timing.event = "2024-03-07T10:30:00+01:00"
 * dosageInstruction.route = $standardterms#20045000 "Intravenous use"
 * dosageInstruction.doseAndRate.doseQuantity = 175 $ucum#mg "mg"
 * dosageInstruction.doseAndRate.rateRatio.numerator = 175 $ucum#mg "mg"
@@ -189,6 +196,7 @@ Description: "MedicationRequest: 5-FU 1000mg/m² IV über 46 Stunden"
 * encounter = Reference(mii-exa-test-data-patient-3-encounter-1)
 * authoredOn = "2022-04-25T09:00:00+02:00"
 * dosageInstruction.text = "5-FU 1000mg/m² IV über 46 Stunden"
+* dosageInstruction.timing.event = "2022-04-25T09:00:00+02:00"
 * dosageInstruction.route = $standardterms#20045000 "Intravenous use"
 * dosageInstruction.doseAndRate.doseQuantity = 1000 $ucum#mg "mg"
 * dosageInstruction.doseAndRate.rateRatio.numerator = 1000 $ucum#mg "mg"
@@ -209,6 +217,7 @@ Description: "MedicationRequest: Oxaliplatin 85mg/m² IV über 2 Stunden"
 * encounter = Reference(mii-exa-test-data-patient-3-encounter-1)
 * authoredOn = "2022-04-25T09:30:00+02:00"
 * dosageInstruction.text = "Oxaliplatin 85mg/m² IV über 2 Stunden"
+* dosageInstruction.timing.event = "2022-04-25T09:30:00+02:00"
 * dosageInstruction.route = $standardterms#20045000 "Intravenous use"
 * dosageInstruction.doseAndRate.doseQuantity = 85 $ucum#mg "mg"
 * dosageInstruction.doseAndRate.rateRatio.numerator = 85 $ucum#mg "mg"
@@ -230,6 +239,7 @@ Description: "MedicationRequest: Cisplatin 75mg/m² IV über 2 Stunden"
 * encounter = Reference(mii-exa-test-data-patient-4-encounter-1)
 * authoredOn = "2020-09-17T14:00:00+02:00"
 * dosageInstruction.text = "Cisplatin 75mg/m² IV über 2 Stunden"
+* dosageInstruction.timing.event = "2020-09-17T14:00:00+02:00"
 * dosageInstruction.route = $standardterms#20045000 "Intravenous use"
 * dosageInstruction.doseAndRate.doseQuantity = 75 $ucum#mg "mg"
 * dosageInstruction.doseAndRate.rateRatio.numerator = 75 $ucum#mg "mg"
@@ -403,6 +413,9 @@ Description: "MedicationRequest: Salbutamol 2 Hubs inhalativ bei Bedarf"
 * encounter = Reference(mii-exa-test-data-patient-7-encounter-1)
 * authoredOn = "2024-01-10T16:30:00+01:00"
 * dosageInstruction.text = "Salbutamol 2 Hubs inhalativ bei Bedarf"
+* dosageInstruction.timing.repeat.frequencyMax = 6
+* dosageInstruction.timing.repeat.period = 1
+* dosageInstruction.timing.repeat.periodUnit = #d
 * dosageInstruction.route = $standardterms#20020000 "Inhalation use"
 * dosageInstruction.doseAndRate.doseQuantity = 200 $ucum#ug "μg"
 * dosageInstruction.asNeededBoolean = true
@@ -433,7 +446,7 @@ Description: "MedicationRequest: Heparin 5000 IE s.c. alle 12 Stunden"
 Instance: mii-exa-test-data-patient-8-medrequest-2
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationRequest
 Usage: #example
-Description: "MedicationRequest: Metoprolol 50mg 2x täglich"
+Description: "MedicationRequest: Metoprolol 25mg morgens, 50mg abends (2 dosageInstructions, gleiche Einheit mg)"
 * insert TestDataLabel
 * identifier[0].system = "https://www.charite.de/fhir/sid/MedicationOrders"
 * identifier[0].value = "MO_0000021"
@@ -443,12 +456,24 @@ Description: "MedicationRequest: Metoprolol 50mg 2x täglich"
 * subject = Reference(mii-exa-test-data-patient-8)
 * encounter = Reference(mii-exa-test-data-patient-8-encounter-1)
 * authoredOn = "2023-11-12T08:30:00+01:00"
-* dosageInstruction.text = "Metoprolol 50mg 2x täglich"
-* dosageInstruction.route = $standardterms#20053000 "Oral use"
-* dosageInstruction.doseAndRate.doseQuantity = 50 $ucum#mg "mg"
-* dosageInstruction.timing.repeat.frequency = 2
-* dosageInstruction.timing.repeat.period = 1
-* dosageInstruction.timing.repeat.periodUnit = #d
+// Morgendosis 25mg
+* dosageInstruction[0].sequence = 1
+* dosageInstruction[0].text = "Metoprolol 25mg morgens"
+* dosageInstruction[0].route = $standardterms#20053000 "Oral use"
+* dosageInstruction[0].doseAndRate.doseQuantity = 25 $ucum#mg "mg"
+* dosageInstruction[0].timing.repeat.frequency = 1
+* dosageInstruction[0].timing.repeat.period = 1
+* dosageInstruction[0].timing.repeat.periodUnit = #d
+* dosageInstruction[0].timing.repeat.when = #MORN
+// Abenddosis 50mg
+* dosageInstruction[+].sequence = 2
+* dosageInstruction[=].text = "Metoprolol 50mg abends"
+* dosageInstruction[=].route = $standardterms#20053000 "Oral use"
+* dosageInstruction[=].doseAndRate.doseQuantity = 50 $ucum#mg "mg"
+* dosageInstruction[=].timing.repeat.frequency = 1
+* dosageInstruction[=].timing.repeat.period = 1
+* dosageInstruction[=].timing.repeat.periodUnit = #d
+* dosageInstruction[=].timing.repeat.when = #EVE
 * substitution.allowedBoolean = true
 
 Instance: mii-exa-test-data-patient-8-medrequest-3
@@ -532,6 +557,9 @@ Description: "MedicationRequest: Sumatriptan 50mg bei Migräne-Attacke"
 * encounter = Reference(mii-exa-test-data-patient-10-encounter-1)
 * authoredOn = "2019-05-15T14:00:00+02:00"
 * dosageInstruction.text = "Sumatriptan 50mg bei Migräne-Attacke"
+* dosageInstruction.timing.repeat.frequencyMax = 2
+* dosageInstruction.timing.repeat.period = 1
+* dosageInstruction.timing.repeat.periodUnit = #d
 * dosageInstruction.route = $standardterms#20053000 "Oral use"
 * dosageInstruction.doseAndRate.doseQuantity = 50 $ucum#mg "mg"
 * dosageInstruction.asNeededBoolean = true

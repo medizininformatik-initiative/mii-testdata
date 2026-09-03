@@ -1,0 +1,4 @@
+requests>=2.31,<3
+pyyaml>=6.0,<7
+pytest>=7.4,<9
+pytest-html>=4.0,<5

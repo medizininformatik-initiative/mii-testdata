@@ -29,13 +29,13 @@
         }
       ]
     },
+    "text": "Morphin 10mg oral bei Schmerzen",
     "dose": {
-      "system": "http://unitsofmeasure.org",
       "value": 10,
       "code": "mg",
+      "system": "http://unitsofmeasure.org",
       "unit": "mg"
-    },
-    "text": "Morphin 10mg oral bei Schmerzen"
+    }
   },
   "status": "completed",
   "category": {

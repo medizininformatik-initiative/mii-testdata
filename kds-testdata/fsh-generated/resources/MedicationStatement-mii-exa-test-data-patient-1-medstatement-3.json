@@ -52,7 +52,6 @@
           {
             "system": "http://snomed.info/sct",
             "code": "47625008",
-            "version": "http://snomed.info/sct/900000000000207008/version/20230731",
             "display": "Intravenous route (qualifier value)"
           }
         ]
@@ -60,9 +59,9 @@
       "doseAndRate": [
         {
           "rateQuantity": {
-            "system": "http://unitsofmeasure.org",
             "value": 5,
-            "code": "mg/min"
+            "code": "mg/min",
+            "system": "http://unitsofmeasure.org"
           }
         }
       ]

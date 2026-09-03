@@ -29,13 +29,13 @@
         }
       ]
     },
+    "text": "Salbutamol 2 Hubs inhalativ",
     "dose": {
-      "system": "http://unitsofmeasure.org",
       "value": 200,
       "code": "ug",
+      "system": "http://unitsofmeasure.org",
       "unit": "μg"
-    },
-    "text": "Salbutamol 2 Hubs inhalativ"
+    }
   },
   "status": "completed",
   "category": {

@@ -19,7 +19,6 @@
         {
           "code": "108252007",
           "system": "http://snomed.info/sct",
-          "version": "http://snomed.info/sct/900000000000207008/version/20230731",
           "display": "Laboratory procedure (procedure)"
         }
       ]
@@ -30,7 +29,6 @@
       {
         "code": "405825005",
         "system": "http://snomed.info/sct",
-        "version": "http://snomed.info/sct/900000000000207008/version/20230731",
         "display": "Molecular genetic test (procedure)"
       },
       {
@@ -52,7 +50,6 @@
         {
           "code": "447886005",
           "system": "http://snomed.info/sct",
-          "version": "http://snomed.info/sct/900000000000207008/version/20230731",
           "display": "Adenocarcinoma of anorectum (disorder)"
         }
       ]
@@ -60,7 +57,7 @@
   ],
   "specimen": [
     {
-      "reference": "Specimen/mii-exa-test-data-patient-3-specimen-1"
+      "reference": "Specimen/mii-exa-test-data-molgen-specimen-1"
     }
   ],
   "supportingInfo": [
@@ -68,10 +65,21 @@
       "reference": "FamilyMemberHistory/mii-exa-test-data-patient-3-molgen-family-member-history-1"
     }
   ],
+  "note": [
+    {
+      "text": "Dringender Verdacht auf BRAF V600E bei bekanntem kolorektalem Karzinom. Therapieentscheidung abhaengig von Ergebnis."
+    }
+  ],
   "status": "active",
   "intent": "order",
   "subject": {
-    "reference": "Patient/mii-exa-test-data-patient-3"
+    "reference": "Patient/mii-exa-test-data-molgen-patient-1"
   },
-  "authoredOn": "2022-04-07"
+  "encounter": {
+    "reference": "Encounter/mii-exa-test-data-molgen-encounter-1"
+  },
+  "authoredOn": "2022-04-07",
+  "requester": {
+    "reference": "Practitioner/mii-exa-test-data-practitioner-physician-1"
+  }
 }

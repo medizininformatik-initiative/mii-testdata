@@ -351,3 +351,19 @@ Description: "Patient: Patient-10"
 * address[Strassenanschrift].city = "Frankfurt am Main"
 * address[Strassenanschrift].postalCode = "60311"
 * address[Strassenanschrift].country = "DE"
+
+// Patient-11
+Instance: mii-exa-test-data-patient-11
+InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient
+Usage: #example
+Description: "Patient: Patient-11"
+* insert TestDataLabel
+* meta.profile[+] = "http://fhir.de/ConsentManagement/StructureDefinition/Patient"
+* identifier[pid].use = #usual
+* identifier[pid].type = http://terminology.hl7.org/CodeSystem/v2-0203#MR
+* identifier[pid].system = "https://www.medizininformatik-initiative.de/fhir/sid/patienten"
+* identifier[pid].value = "689923402"
+* identifier[pid].assigner.display = "Charité - Universitätsmedizin Berlin"
+* identifier[pid].assigner.identifier.system = "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"
+* identifier[pid].assigner.identifier.value = "Charité"
+* gender = #male

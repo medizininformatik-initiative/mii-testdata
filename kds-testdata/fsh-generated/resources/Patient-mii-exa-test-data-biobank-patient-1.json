@@ -1,0 +1,29 @@
+{
+  "resourceType": "Patient",
+  "id": "mii-exa-test-data-biobank-patient-1",
+  "meta": {
+    "security": [
+      {
+        "code": "HTEST",
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "display": "test health data"
+      }
+    ]
+  },
+  "identifier": [
+    {
+      "system": "https://www.charite.de/fhir/sid/patientenidentifikation",
+      "value": "BIO-TEST-001"
+    }
+  ],
+  "name": [
+    {
+      "given": [
+        "Sabine"
+      ],
+      "family": "Musterfrau"
+    }
+  ],
+  "birthDate": "1975-11-03",
+  "gender": "female"
+}

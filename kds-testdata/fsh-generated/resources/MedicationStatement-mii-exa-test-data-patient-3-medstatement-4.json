@@ -41,9 +41,9 @@
       "doseAndRate": [
         {
           "doseQuantity": {
-            "system": "http://unitsofmeasure.org",
             "value": 50,
             "code": "mg/kg",
+            "system": "http://unitsofmeasure.org",
             "unit": "mg/kilogram"
           }
         }

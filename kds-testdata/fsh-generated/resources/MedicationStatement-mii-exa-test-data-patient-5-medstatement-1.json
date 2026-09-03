@@ -55,9 +55,9 @@
       "doseAndRate": [
         {
           "doseQuantity": {
-            "system": "http://unitsofmeasure.org",
             "value": 3.75,
             "code": "mg",
+            "system": "http://unitsofmeasure.org",
             "unit": "mg"
           }
         }

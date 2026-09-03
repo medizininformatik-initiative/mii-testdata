@@ -398,7 +398,7 @@ Description: "MedicationAdministration: Verhütungspille 1 Tablette oral"
 * request = Reference(mii-exa-test-data-patient-9-medrequest-1)
 * dosage.text = "Verhütungspille 1 Tablette"
 * dosage.route.coding[EDQM] = $standardterms#20053000 "Oral use"
-* dosage.dose = 1 '1' "1"
+* dosage.dose = 1 $ucum#1 "1"
 
 Instance: mii-exa-test-data-patient-9-medadmin-2
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationAdministration

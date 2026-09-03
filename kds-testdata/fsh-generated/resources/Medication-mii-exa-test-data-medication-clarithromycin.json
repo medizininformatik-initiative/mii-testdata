@@ -29,7 +29,8 @@
         "coding": [
           {
             "system": "http://fhir.de/CodeSystem/ask",
-            "code": "23929"
+            "code": "23929",
+            "version": "20260105"
           }
         ]
       },

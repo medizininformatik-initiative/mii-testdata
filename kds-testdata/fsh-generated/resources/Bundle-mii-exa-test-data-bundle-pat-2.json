@@ -13,8 +13,8 @@
   "entry": [
     {
       "request": {
-        "method": "POST",
-        "url": "Patient"
+        "method": "PUT",
+        "url": "Patient/mii-exa-test-data-patient-2"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Patient/mii-exa-test-data-patient-2",
       "resource": {
@@ -99,8 +99,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Consent"
+        "method": "PUT",
+        "url": "Consent/mii-exa-test-data-patient-2-consent-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Consent/mii-exa-test-data-patient-2-consent-1",
       "resource": {
@@ -130,8 +130,8 @@
           {
             "coding": [
               {
-                "code": "2.16.840.1.113883.3.1937.777.24.2.184",
-                "system": "https://www.medizininformatik-initiative.de/fhir/modul-consent/CodeSystem/mii-cs-consent-consent_category"
+                "system": "https://www.medizininformatik-initiative.de/fhir/modul-consent/CodeSystem/mii-cs-consent-version-modules",
+                "code": "2.16.840.1.113883.3.1937.777.24.2.184"
               }
             ]
           }
@@ -199,7 +199,7 @@
                     {
                       "code": "2.16.840.1.113883.3.1937.777.24.5.3.8",
                       "system": "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3",
-                      "display": "MDAT wissenschaftlich nutzen EU DSGVO NIVEAU"
+                      "display": "MDAT wissenschaftlich nutzen"
                     }
                   ]
                 }
@@ -253,7 +253,7 @@
                     {
                       "code": "2.16.840.1.113883.3.1937.777.24.5.3.22",
                       "system": "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3",
-                      "display": "BIOMAT wissenschaftlich nutzen EU DSGVO NIVEAU"
+                      "display": "BIOMAT wissenschaftlich nutzen"
                     }
                   ]
                 }
@@ -280,8 +280,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Encounter"
+        "method": "PUT",
+        "url": "Encounter/mii-exa-test-data-patient-2-encounter-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Encounter/mii-exa-test-data-patient-2-encounter-1",
       "resource": {
@@ -399,8 +399,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Condition"
+        "method": "PUT",
+        "url": "Condition/mii-exa-test-data-patient-2-diagnose-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Condition/mii-exa-test-data-patient-2-diagnose-1",
       "resource": {
@@ -434,7 +434,6 @@
             {
               "system": "http://snomed.info/sct",
               "code": "254637007",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
               "display": "Non-small cell lung cancer (disorder)"
             }
           ]
@@ -450,7 +449,6 @@
               {
                 "system": "http://snomed.info/sct",
                 "code": "45653009",
-                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                 "display": "Structure of upper lobe of lung (body structure)"
               }
             ]
@@ -480,8 +478,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-patient-2-vitalstatus-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-2-vitalstatus-1",
       "resource": {
@@ -534,8 +532,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Condition"
+        "method": "PUT",
+        "url": "Condition/mii-exa-test-data-patient-2-todesursache-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Condition/mii-exa-test-data-patient-2-todesursache-1",
       "resource": {
@@ -605,8 +603,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Procedure"
+        "method": "PUT",
+        "url": "Procedure/mii-exa-test-data-patient-2-prozedur-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Procedure/mii-exa-test-data-patient-2-prozedur-1",
       "resource": {
@@ -628,8 +626,7 @@
           "coding": [
             {
               "system": "http://snomed.info/sct",
-              "code": "387713003",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+              "code": "387713003"
             }
           ]
         },
@@ -637,10 +634,18 @@
           "coding": [
             {
               "system": "http://snomed.info/sct",
-              "code": "726428009",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+              "code": "726428009"
             },
             {
+              "extension": [
+                {
+                  "url": "http://fhir.de/StructureDefinition/seitenlokalisation",
+                  "valueCoding": {
+                    "code": "R",
+                    "system": "https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_ICD_SEITENLOKALISATION"
+                  }
+                }
+              ],
               "system": "http://fhir.de/CodeSystem/bfarm/ops",
               "code": "5-322.d1",
               "version": "2024"
@@ -652,8 +657,7 @@
             "coding": [
               {
                 "code": "39607008",
-                "system": "http://snomed.info/sct",
-                "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+                "system": "http://snomed.info/sct"
               }
             ]
           }
@@ -673,7 +677,6 @@
             "valueCoding": {
               "system": "http://snomed.info/sct",
               "code": "262202000",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
               "display": "Therapeutic"
             }
           }
@@ -692,8 +695,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Procedure"
+        "method": "PUT",
+        "url": "Procedure/mii-exa-test-data-patient-2-prozedur-2"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Procedure/mii-exa-test-data-patient-2-prozedur-2",
       "resource": {
@@ -715,8 +718,7 @@
           "coding": [
             {
               "system": "http://snomed.info/sct",
-              "code": "394841004",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+              "code": "394841004"
             }
           ]
         },
@@ -724,8 +726,7 @@
           "coding": [
             {
               "system": "http://snomed.info/sct",
-              "code": "182810003",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+              "code": "182810003"
             },
             {
               "system": "http://fhir.de/CodeSystem/bfarm/ops",
@@ -739,8 +740,7 @@
             "coding": [
               {
                 "code": "442083009",
-                "system": "http://snomed.info/sct",
-                "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+                "system": "http://snomed.info/sct"
               }
             ]
           }
@@ -760,7 +760,6 @@
             "valueCoding": {
               "system": "http://snomed.info/sct",
               "code": "74964007",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
               "display": "Other"
             }
           }
@@ -779,8 +778,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Procedure"
+        "method": "PUT",
+        "url": "Procedure/mii-exa-test-data-patient-2-prozedur-3"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Procedure/mii-exa-test-data-patient-2-prozedur-3",
       "resource": {
@@ -802,8 +801,7 @@
           "coding": [
             {
               "system": "http://snomed.info/sct",
-              "code": "18629005",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+              "code": "18629005"
             }
           ]
         },
@@ -811,8 +809,7 @@
           "coding": [
             {
               "system": "http://snomed.info/sct",
-              "code": "182836005",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+              "code": "182836005"
             },
             {
               "system": "http://fhir.de/CodeSystem/bfarm/ops",
@@ -826,8 +823,7 @@
             "coding": [
               {
                 "code": "19715009",
-                "system": "http://snomed.info/sct",
-                "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+                "system": "http://snomed.info/sct"
               }
             ]
           }
@@ -847,7 +843,6 @@
             "valueCoding": {
               "system": "http://snomed.info/sct",
               "code": "264931009",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
               "display": "Symptomatic"
             }
           }
@@ -866,8 +861,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "ServiceRequest"
+        "method": "PUT",
+        "url": "ServiceRequest/mii-exa-test-data-patient-2-labrequest-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/ServiceRequest/mii-exa-test-data-patient-2-labrequest-1",
       "resource": {
@@ -921,15 +916,9 @@
               {
                 "code": "254637007",
                 "system": "http://snomed.info/sct",
-                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                 "display": "Non-small cell lung cancer (disorder)"
               }
             ]
-          }
-        ],
-        "specimen": [
-          {
-            "reference": "Specimen/mii-exa-test-data-patient-2-specimen-1"
           }
         ],
         "status": "completed",
@@ -957,8 +946,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "DiagnosticReport"
+        "method": "PUT",
+        "url": "DiagnosticReport/mii-exa-test-data-patient-2-labreport-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/DiagnosticReport/mii-exa-test-data-patient-2-labreport-1",
       "resource": {
@@ -1030,11 +1019,6 @@
             "reference": "Organization/mii-exa-test-data-organization-labor-berlin"
           }
         ],
-        "specimen": [
-          {
-            "reference": "Specimen/mii-exa-test-data-patient-2-specimen-1"
-          }
-        ],
         "result": [
           {
             "reference": "Observation/mii-exa-test-data-patient-2-labobs-1"
@@ -1063,8 +1047,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-patient-2-labobs-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-2-labobs-1",
       "resource": {
@@ -1184,13 +1168,9 @@
             {
               "code": "703452004",
               "system": "http://snomed.info/sct",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
               "display": "Electrical impedance technique (qualifier value)"
             }
           ]
-        },
-        "specimen": {
-          "reference": "Specimen/mii-exa-test-data-patient-2-specimen-1"
         },
         "device": {
           "reference": "Device/mii-exa-test-data-device-roche-cobas-c303"
@@ -1199,8 +1179,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-patient-2-labobs-2"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-2-labobs-2",
       "resource": {
@@ -1299,13 +1279,9 @@
             {
               "code": "703452004",
               "system": "http://snomed.info/sct",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
               "display": "Electrical impedance technique (qualifier value)"
             }
           ]
-        },
-        "specimen": {
-          "reference": "Specimen/mii-exa-test-data-patient-2-specimen-1"
         },
         "device": {
           "reference": "Device/mii-exa-test-data-device-roche-cobas-c303"
@@ -1314,8 +1290,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-patient-2-labobs-3"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-2-labobs-3",
       "resource": {
@@ -1414,13 +1390,9 @@
             {
               "code": "83561000052101",
               "system": "http://snomed.info/sct",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
               "display": "Photometry technique (qualifier value)"
             }
           ]
-        },
-        "specimen": {
-          "reference": "Specimen/mii-exa-test-data-patient-2-specimen-1"
         },
         "device": {
           "reference": "Device/mii-exa-test-data-device-roche-cobas-c303"
@@ -1429,8 +1401,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-patient-2-labobs-4"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-2-labobs-4",
       "resource": {
@@ -1529,13 +1501,9 @@
             {
               "code": "703452004",
               "system": "http://snomed.info/sct",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
               "display": "Electrical impedance technique (qualifier value)"
             }
           ]
-        },
-        "specimen": {
-          "reference": "Specimen/mii-exa-test-data-patient-2-specimen-1"
         },
         "device": {
           "reference": "Device/mii-exa-test-data-device-roche-cobas-c303"
@@ -1544,8 +1512,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "MedicationRequest"
+        "method": "PUT",
+        "url": "MedicationRequest/mii-exa-test-data-patient-2-medrequest-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/MedicationRequest/mii-exa-test-data-patient-2-medrequest-1",
       "resource": {
@@ -1620,8 +1588,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "MedicationRequest"
+        "method": "PUT",
+        "url": "MedicationRequest/mii-exa-test-data-patient-2-medrequest-2"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/MedicationRequest/mii-exa-test-data-patient-2-medrequest-2",
       "resource": {
@@ -1647,19 +1615,24 @@
         ],
         "dosageInstruction": [
           {
+            "timing": {
+              "event": [
+                "2024-03-07T10:00:00+01:00"
+              ]
+            },
             "doseAndRate": [
               {
                 "rateRatio": {
                   "numerator": {
-                    "system": "http://unitsofmeasure.org",
                     "value": 450,
                     "code": "mg",
+                    "system": "http://unitsofmeasure.org",
                     "unit": "mg"
                   },
                   "denominator": {
-                    "system": "http://unitsofmeasure.org",
                     "value": 1,
                     "code": "h",
+                    "system": "http://unitsofmeasure.org",
                     "unit": "h"
                   }
                 },
@@ -1702,8 +1675,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "MedicationRequest"
+        "method": "PUT",
+        "url": "MedicationRequest/mii-exa-test-data-patient-2-medrequest-3"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/MedicationRequest/mii-exa-test-data-patient-2-medrequest-3",
       "resource": {
@@ -1729,19 +1702,24 @@
         ],
         "dosageInstruction": [
           {
+            "timing": {
+              "event": [
+                "2024-03-07T10:30:00+01:00"
+              ]
+            },
             "doseAndRate": [
               {
                 "rateRatio": {
                   "numerator": {
-                    "system": "http://unitsofmeasure.org",
                     "value": 175,
                     "code": "mg",
+                    "system": "http://unitsofmeasure.org",
                     "unit": "mg"
                   },
                   "denominator": {
-                    "system": "http://unitsofmeasure.org",
                     "value": 3,
                     "code": "h",
+                    "system": "http://unitsofmeasure.org",
                     "unit": "h"
                   }
                 },
@@ -1784,8 +1762,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "MedicationStatement"
+        "method": "PUT",
+        "url": "MedicationStatement/mii-exa-test-data-patient-2-medstatement-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/MedicationStatement/mii-exa-test-data-patient-2-medstatement-1",
       "resource": {
@@ -1845,9 +1823,9 @@
             "doseAndRate": [
               {
                 "doseQuantity": {
-                  "system": "http://unitsofmeasure.org",
                   "value": 10,
                   "code": "mg",
+                  "system": "http://unitsofmeasure.org",
                   "unit": "mg"
                 }
               }
@@ -1878,8 +1856,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "MedicationStatement"
+        "method": "PUT",
+        "url": "MedicationStatement/mii-exa-test-data-patient-2-medstatement-2"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/MedicationStatement/mii-exa-test-data-patient-2-medstatement-2",
       "resource": {
@@ -1940,22 +1918,22 @@
               {
                 "rateRatio": {
                   "numerator": {
-                    "system": "http://unitsofmeasure.org",
                     "value": 450,
                     "code": "mg",
+                    "system": "http://unitsofmeasure.org",
                     "unit": "mg"
                   },
                   "denominator": {
-                    "system": "http://unitsofmeasure.org",
                     "value": 1,
                     "code": "h",
+                    "system": "http://unitsofmeasure.org",
                     "unit": "h"
                   }
                 },
                 "doseQuantity": {
-                  "system": "http://unitsofmeasure.org",
                   "value": 450,
                   "code": "mg",
+                  "system": "http://unitsofmeasure.org",
                   "unit": "mg"
                 }
               }
@@ -1978,8 +1956,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "MedicationStatement"
+        "method": "PUT",
+        "url": "MedicationStatement/mii-exa-test-data-patient-2-medstatement-3"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/MedicationStatement/mii-exa-test-data-patient-2-medstatement-3",
       "resource": {
@@ -2040,22 +2018,22 @@
               {
                 "rateRatio": {
                   "numerator": {
-                    "system": "http://unitsofmeasure.org",
                     "value": 175,
                     "code": "mg",
+                    "system": "http://unitsofmeasure.org",
                     "unit": "mg"
                   },
                   "denominator": {
-                    "system": "http://unitsofmeasure.org",
                     "value": 3,
                     "code": "h",
+                    "system": "http://unitsofmeasure.org",
                     "unit": "h"
                   }
                 },
                 "doseQuantity": {
-                  "system": "http://unitsofmeasure.org",
                   "value": 175,
                   "code": "mg",
+                  "system": "http://unitsofmeasure.org",
                   "unit": "mg"
                 }
               }
@@ -2078,8 +2056,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "MedicationStatement"
+        "method": "PUT",
+        "url": "MedicationStatement/mii-exa-test-data-patient-2-medstatement-4"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/MedicationStatement/mii-exa-test-data-patient-2-medstatement-4",
       "resource": {
@@ -2138,7 +2116,6 @@
                 {
                   "system": "http://snomed.info/sct",
                   "code": "47625008",
-                  "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                   "display": "Intravenous route (qualifier value)"
                 }
               ]
@@ -2147,14 +2124,14 @@
               {
                 "rateRange": {
                   "low": {
-                    "system": "http://unitsofmeasure.org",
                     "value": 150,
-                    "code": "mL/h"
+                    "code": "mL/h",
+                    "system": "http://unitsofmeasure.org"
                   },
                   "high": {
-                    "system": "http://unitsofmeasure.org",
                     "value": 300,
-                    "code": "mL/h"
+                    "code": "mL/h",
+                    "system": "http://unitsofmeasure.org"
                   }
                 }
               }
@@ -2170,8 +2147,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "MedicationStatement"
+        "method": "PUT",
+        "url": "MedicationStatement/mii-exa-test-data-patient-2-medstatement-5"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/MedicationStatement/mii-exa-test-data-patient-2-medstatement-5",
       "resource": {
@@ -2230,7 +2207,6 @@
                 {
                   "system": "http://snomed.info/sct",
                   "code": "47625008",
-                  "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                   "display": "Intravenous route (qualifier value)"
                 }
               ]
@@ -2239,14 +2215,14 @@
               {
                 "rateRatio": {
                   "numerator": {
-                    "system": "http://unitsofmeasure.org",
                     "value": 150,
-                    "code": "mL"
+                    "code": "mL",
+                    "system": "http://unitsofmeasure.org"
                   },
                   "denominator": {
-                    "system": "http://unitsofmeasure.org",
                     "value": 1,
-                    "code": "h"
+                    "code": "h",
+                    "system": "http://unitsofmeasure.org"
                   }
                 }
               }
@@ -2262,8 +2238,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "MedicationAdministration"
+        "method": "PUT",
+        "url": "MedicationAdministration/mii-exa-test-data-patient-2-medadmin-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/MedicationAdministration/mii-exa-test-data-patient-2-medadmin-1",
       "resource": {
@@ -2297,13 +2273,13 @@
               }
             ]
           },
+          "text": "Morphin 10mg oral bei Schmerzen",
           "dose": {
-            "system": "http://unitsofmeasure.org",
             "value": 10,
             "code": "mg",
+            "system": "http://unitsofmeasure.org",
             "unit": "mg"
-          },
-          "text": "Morphin 10mg oral bei Schmerzen"
+          }
         },
         "status": "completed",
         "category": {
@@ -2332,8 +2308,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "MedicationAdministration"
+        "method": "PUT",
+        "url": "MedicationAdministration/mii-exa-test-data-patient-2-medadmin-2"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/MedicationAdministration/mii-exa-test-data-patient-2-medadmin-2",
       "resource": {
@@ -2373,25 +2349,25 @@
           },
           "rateRatio": {
             "numerator": {
-              "system": "http://unitsofmeasure.org",
               "value": 450,
               "code": "mg",
+              "system": "http://unitsofmeasure.org",
               "unit": "mg"
             },
             "denominator": {
-              "system": "http://unitsofmeasure.org",
               "value": 1,
               "code": "h",
+              "system": "http://unitsofmeasure.org",
               "unit": "h"
             }
           },
+          "text": "Carboplatin 450mg IV über 1 Stunde",
           "dose": {
-            "system": "http://unitsofmeasure.org",
             "value": 450,
             "code": "mg",
+            "system": "http://unitsofmeasure.org",
             "unit": "mg"
-          },
-          "text": "Carboplatin 450mg IV über 1 Stunde"
+          }
         },
         "status": "completed",
         "category": {
@@ -2419,8 +2395,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "MedicationAdministration"
+        "method": "PUT",
+        "url": "MedicationAdministration/mii-exa-test-data-patient-2-medadmin-3"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/MedicationAdministration/mii-exa-test-data-patient-2-medadmin-3",
       "resource": {
@@ -2460,25 +2436,25 @@
           },
           "rateRatio": {
             "numerator": {
-              "system": "http://unitsofmeasure.org",
               "value": 175,
               "code": "mg",
+              "system": "http://unitsofmeasure.org",
               "unit": "mg"
             },
             "denominator": {
-              "system": "http://unitsofmeasure.org",
               "value": 3,
               "code": "h",
+              "system": "http://unitsofmeasure.org",
               "unit": "h"
             }
           },
+          "text": "Paclitaxel 175mg IV über 3 Stunden",
           "dose": {
-            "system": "http://unitsofmeasure.org",
             "value": 175,
             "code": "mg",
+            "system": "http://unitsofmeasure.org",
             "unit": "mg"
-          },
-          "text": "Paclitaxel 175mg IV über 3 Stunden"
+          }
         },
         "status": "completed",
         "category": {
@@ -2506,8 +2482,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "List"
+        "method": "PUT",
+        "url": "List/mii-exa-test-data-patient-2-list-stat-aufenthalt"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/List/mii-exa-test-data-patient-2-list-stat-aufenthalt",
       "resource": {
@@ -2564,8 +2540,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Medication"
+        "method": "PUT",
+        "url": "Medication/mii-exa-test-data-medication-morphin"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Medication/mii-exa-test-data-medication-morphin",
       "resource": {
@@ -2599,7 +2575,8 @@
               "coding": [
                 {
                   "system": "http://fhir.de/CodeSystem/ask",
-                  "code": "07651"
+                  "code": "07651",
+                  "version": "20260105"
                 }
               ]
             },
@@ -2633,8 +2610,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Medication"
+        "method": "PUT",
+        "url": "Medication/mii-exa-test-data-medication-carboplatin"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Medication/mii-exa-test-data-medication-carboplatin",
       "resource": {
@@ -2668,7 +2645,8 @@
               "coding": [
                 {
                   "system": "http://fhir.de/CodeSystem/ask",
-                  "code": "23168"
+                  "code": "23168",
+                  "version": "20260105"
                 }
               ]
             },
@@ -2702,8 +2680,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Medication"
+        "method": "PUT",
+        "url": "Medication/mii-exa-test-data-medication-paclitaxel"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Medication/mii-exa-test-data-medication-paclitaxel",
       "resource": {
@@ -2737,7 +2715,8 @@
               "coding": [
                 {
                   "system": "http://fhir.de/CodeSystem/ask",
-                  "code": "26509"
+                  "code": "26509",
+                  "version": "20260105"
                 }
               ]
             },
@@ -2771,102 +2750,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Specimen"
-      },
-      "fullUrl": "https://www.medizininformatik-initiative.de/Specimen/mii-exa-test-data-patient-2-specimen-1",
-      "resource": {
-        "resourceType": "Specimen",
-        "id": "mii-exa-test-data-patient-2-specimen-1",
-        "meta": {
-          "security": [
-            {
-              "code": "HTEST",
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
-              "display": "test health data"
-            }
-          ],
-          "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Specimen"
-          ]
-        },
-        "extension": [
-          {
-            "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/VerwaltendeOrganisation",
-            "valueReference": {
-              "reference": "Organization/mii-exa-test-data-organization-biobank-charite"
-            }
-          },
-          {
-            "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Diagnose",
-            "valueReference": {
-              "reference": "Condition/mii-exa-test-data-patient-2-diagnose-1"
-            }
-          }
-        ],
-        "identifier": [
-          {
-            "system": "https://www.charite.de/fhir/sid/Bioproben",
-            "value": "BP_000003"
-          }
-        ],
-        "type": {
-          "coding": [
-            {
-              "code": "445295009",
-              "system": "http://snomed.info/sct",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-              "display": "Blood specimen with edetic acid (specimen)"
-            }
-          ]
-        },
-        "collection": {
-          "bodySite": {
-            "coding": [
-              {
-                "code": "368208006",
-                "system": "http://snomed.info/sct",
-                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-                "display": "Left upper arm structure (body structure)"
-              }
-            ]
-          },
-          "collectedDateTime": "2024-03-04T06:45:00+01:00"
-        },
-        "container": [
-          {
-            "type": {
-              "coding": [
-                {
-                  "code": "83059008",
-                  "system": "http://snomed.info/sct",
-                  "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-                  "display": "Tube, device (physical object)"
-                }
-              ]
-            },
-            "capacity": {
-              "value": 5,
-              "code": "ml",
-              "system": "http://unitsofmeasure.org"
-            },
-            "specimenQuantity": {
-              "value": 5,
-              "code": "ml",
-              "system": "http://unitsofmeasure.org"
-            }
-          }
-        ],
-        "status": "available",
-        "subject": {
-          "reference": "Patient/mii-exa-test-data-patient-2"
-        }
-      }
-    },
-    {
-      "request": {
-        "method": "POST",
-        "url": "Organization"
+        "method": "PUT",
+        "url": "Organization/mii-exa-test-data-organization-charite"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Organization/mii-exa-test-data-organization-charite",
       "resource": {
@@ -2897,8 +2782,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Organization"
+        "method": "PUT",
+        "url": "Organization/mii-exa-test-data-organization-labor-berlin"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Organization/mii-exa-test-data-organization-labor-berlin",
       "resource": {
@@ -2929,8 +2814,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Organization"
+        "method": "PUT",
+        "url": "Organization/mii-exa-test-data-organization-biobank-charite"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Organization/mii-exa-test-data-organization-biobank-charite",
       "resource": {
@@ -2950,8 +2835,8 @@
         },
         "extension": [
           {
-            "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/BeschreibungSammlung",
-            "valueMarkdown": "Zentrale Biobank der Charité"
+            "url": "https://fhir.bbmri-eric.eu/fhir/StructureDefinition/miabis-organization-description-extension",
+            "valueString": "Zentrale Biobank der Charité"
           }
         ],
         "identifier": [
@@ -3011,8 +2896,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Practitioner"
+        "method": "PUT",
+        "url": "Practitioner/mii-exa-test-data-practitioner-physician-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Practitioner/mii-exa-test-data-practitioner-physician-1",
       "resource": {
@@ -3040,8 +2925,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "PractitionerRole"
+        "method": "PUT",
+        "url": "PractitionerRole/mii-exa-test-data-practitioner-role-physician-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/PractitionerRole/mii-exa-test-data-practitioner-role-physician-1",
       "resource": {
@@ -3065,7 +2950,6 @@
               {
                 "code": "309343006",
                 "system": "http://snomed.info/sct",
-                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                 "display": "Physician (occupation)"
               }
             ]
@@ -3082,8 +2966,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Device"
+        "method": "PUT",
+        "url": "Device/mii-exa-test-data-device-roche-cobas"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Device/mii-exa-test-data-device-roche-cobas",
       "resource": {
@@ -3116,8 +3000,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Device"
+        "method": "PUT",
+        "url": "Device/mii-exa-test-data-device-roche-cobas-c303"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Device/mii-exa-test-data-device-roche-cobas-c303",
       "resource": {
@@ -3186,8 +3070,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Device"
+        "method": "PUT",
+        "url": "Device/mii-exa-test-data-device-roche-cobas-e402"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Device/mii-exa-test-data-device-roche-cobas-e402",
       "resource": {
@@ -3236,8 +3120,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "DeviceMetric"
+        "method": "PUT",
+        "url": "DeviceMetric/mii-exa-test-data-devicemetric-roche-cobas-c303-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/DeviceMetric/mii-exa-test-data-devicemetric-roche-cobas-c303-1",
       "resource": {

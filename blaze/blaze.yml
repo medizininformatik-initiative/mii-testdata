@@ -1,0 +1,13 @@
+services:
+  blaze:
+    image: "samply/blaze:latest"
+    environment:
+      ENFORCE_REFERENTIAL_INTEGRITY: "true"
+    ports:
+    - "8080:8080"
+    healthcheck:
+      test: ["CMD", "wget", "-q", "--spider", "http://localhost:8080/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 12
+      start_period: 20s

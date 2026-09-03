@@ -24,6 +24,39 @@
       "doseAndRate": [
         {
           "doseQuantity": {
+            "value": 25,
+            "code": "mg",
+            "system": "http://unitsofmeasure.org",
+            "unit": "mg"
+          }
+        }
+      ],
+      "timing": {
+        "repeat": {
+          "when": [
+            "MORN"
+          ],
+          "frequency": 1,
+          "period": 1,
+          "periodUnit": "d"
+        }
+      },
+      "sequence": 1,
+      "text": "Metoprolol 25mg morgens",
+      "route": {
+        "coding": [
+          {
+            "code": "20053000",
+            "system": "http://standardterms.edqm.eu",
+            "display": "Oral use"
+          }
+        ]
+      }
+    },
+    {
+      "doseAndRate": [
+        {
+          "doseQuantity": {
             "value": 50,
             "code": "mg",
             "system": "http://unitsofmeasure.org",
@@ -33,12 +66,16 @@
       ],
       "timing": {
         "repeat": {
-          "frequency": 2,
+          "when": [
+            "EVE"
+          ],
+          "frequency": 1,
           "period": 1,
           "periodUnit": "d"
         }
       },
-      "text": "Metoprolol 50mg 2x täglich",
+      "sequence": 2,
+      "text": "Metoprolol 50mg abends",
       "route": {
         "coding": [
           {

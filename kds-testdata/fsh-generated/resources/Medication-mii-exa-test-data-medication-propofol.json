@@ -39,6 +39,7 @@
           {
             "system": "http://fhir.de/CodeSystem/ask",
             "code": "22898",
+            "version": "20260105",
             "display": "Propofol"
           },
           {
@@ -52,7 +53,6 @@
           {
             "system": "http://snomed.info/sct",
             "code": "387423006",
-            "version": "http://snomed.info/sct/900000000000207008/version/20230731",
             "display": "Propofol (substance)"
           }
         ]

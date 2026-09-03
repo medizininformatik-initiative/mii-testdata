@@ -29,7 +29,6 @@
       {
         "system": "http://snomed.info/sct",
         "code": "413838009",
-        "version": "http://snomed.info/sct/900000000000207008/version/20230731",
         "display": "Chronic ischemic heart disease (disorder)"
       }
     ]
@@ -45,7 +44,6 @@
         {
           "system": "http://snomed.info/sct",
           "code": "80891009",
-          "version": "http://snomed.info/sct/900000000000207008/version/20230731",
           "display": "Heart structure (body structure)"
         }
       ]

@@ -1,8 +1,8 @@
 RuleSet: AddBundleEntry(resource, url)
 * entry[+].fullUrl = "https://www.medizininformatik-initiative.de/{url}/{resource}"
 * entry[=].resource = {resource}
-* entry[=].request.method = #POST
-* entry[=].request.url = "{url}"
+* entry[=].request.method = #PUT
+* entry[=].request.url = "{url}/{resource}"
 
 // RuleSet: AddBundleEntryConditional(resource, url, ifNoneExist)
 // * entry[+].fullUrl = "https://www.medizininformatik-initiative.de/{url}/{resource}"
@@ -53,8 +53,8 @@ Description: "Bundle: Patient-1"
 * insert AddBundleEntry(mii-exa-test-data-patient-1-medstatement-1, MedicationStatement)
 * insert AddBundleEntry(mii-exa-test-data-patient-1-medstatement-2, MedicationStatement)
 * insert AddBundleEntry(mii-exa-test-data-patient-1-medstatement-3, MedicationStatement)
-* insert AddBundleEntry(mii-exa-test-data-patient-1-specimen-1, Specimen)
-* insert AddBundleEntry(mii-exa-test-data-patient-1-substance-1, Substance)
+// * insert AddBundleEntry(mii-exa-test-data-patient-1-specimen-1, Specimen)
+// * insert AddBundleEntry(mii-exa-test-data-patient-1-substance-1, Substance)
 * insert AddBundleEntry(mii-exa-test-data-device-roche-cobas, Device)
 * insert AddBundleEntry(mii-exa-test-data-device-roche-cobas-c303, Device)
 * insert AddBundleEntry(mii-exa-test-data-device-roche-cobas-e402, Device)
@@ -76,6 +76,96 @@ Description: "Bundle: Patient-1"
 * insert AddBundleEntry(mii-exa-test-data-patient-1-labobs-7, Observation)
 * insert AddBundleEntry(mii-exa-test-data-practitioner-role-physician-1, PractitionerRole)
 * insert AddBundleEntry(mii-exa-test-data-practitioner-physician-1, Practitioner)
+* insert AddBundleEntry(mii-exa-test-data-practitioner-physician-2, Practitioner)
+// * insert AddBundleEntry(mii-exa-test-data-koerperstruktur, BodyStructure)
+// * insert AddBundleEntry(mii-exa-test-data-behandlungsempfehlung, CarePlan)
+// * insert AddBundleEntry(mii-exa-test-data-semistrukt-befundbericht, Composition)
+// * insert AddBundleEntry(mii-exa-test-data-geraet, Device)
+// * insert AddBundleEntry(mii-exa-test-data-befundbericht, DiagnosticReport)
+// * insert AddBundleEntry(mii-exa-test-data-bildgebungsprozedur, Procedure)
+// * insert AddBundleEntry(mii-exa-test-data-bildgebungsstudie, ImagingStudy)
+// * insert AddBundleEntry(mii-exa-test-data-radiologische-beobachtung, Observation)
+// * insert AddBundleEntry(mii-exa-test-data-befundungsprozedur, Procedure)
+// * insert AddBundleEntry(mii-exa-test-data-anforderung, ServiceRequest)
+// * insert AddBundleEntry(mii-exa-test-data-kontrastmittelgabe, MedicationAdministration)
+// ICU-Module: see modul-icu/Bundle.fsh (separate per-module bundle)
+
+// Dokument-Module
+// * insert AddBundleEntry(mii-exa-test-data-patient-1-dokument-1, DocumentReference)
+// * insert AddBundleEntry(mii-exa-test-data-patient-1-dokument-2, DocumentReference)
+
+// PRO-Module
+// * insert AddBundleEntry(mii-exa-test-data-patient-1-pro-phq9-response, QuestionnaireResponse)
+// * insert AddBundleEntry(mii-exa-test-data-patient-1-pro-phq9-score, Observation)
+// * insert AddBundleEntry(mii-exa-test-data-patient-1-pro-promis-dep-sf4a-response, QuestionnaireResponse)
+// * insert AddBundleEntry(mii-exa-test-data-patient-1-pro-promis-dep-sf4a-raw-score, Observation)
+// * insert AddBundleEntry(mii-exa-test-data-patient-1-pro-promis-dep-sf4a-tscore, Observation)
+// * insert AddBundleEntry(mii-exa-test-data-patient-1-pro-bdi-ii-score, Observation)
+// * insert AddBundleEntry(mii-exa-test-data-patient-1-pro-eq5d5l-index, Observation)
+// * insert AddBundleEntry(mii-exa-test-data-patient-1-pro-eq5d5l-vas, Observation)
+// * insert AddBundleEntry(mii-exa-test-data-patient-1-pro-eq5d5l-profile, Observation)
+// * insert AddBundleEntry(mii-exa-test-data-patient-1-pro-promis29-anxiety-tscore, Observation)
+// * insert AddBundleEntry(mii-exa-test-data-patient-1-pro-promis29-depression-tscore, Observation)
+// * insert AddBundleEntry(mii-exa-test-data-patient-1-pro-promis29-fatigue-tscore, Observation)
+// * insert AddBundleEntry(mii-exa-test-data-patient-1-pro-promis29-pain-intensity, Observation)
+// * insert AddBundleEntry(mii-exa-test-data-pat1-pro-p29-pain-int-tscore, Observation)
+// * insert AddBundleEntry(mii-exa-test-data-pat1-pro-p29-phys-fn-tscore, Observation)
+// * insert AddBundleEntry(mii-exa-test-data-pat1-pro-p29-sleep-tscore, Observation)
+// * insert AddBundleEntry(mii-exa-test-data-patient-1-pro-promis29-social-function-tscore, Observation)
+// * insert AddBundleEntry(mii-exa-test-data-patient-1-pro-promis-cogfn-sf4a-raw-score, Observation)
+// * insert AddBundleEntry(mii-exa-test-data-patient-1-pro-promis-cogfn-sf4a-tscore, Observation)
+
+// MTB-Module (Molekulares Tumorboard)
+// * insert AddBundleEntry(mii-exa-test-data-mtb-behandlungsepisode-1, ClinicalImpression)
+// * insert AddBundleEntry(mii-exa-test-data-mtb-consent-given-1, Observation)
+// * insert AddBundleEntry(mii-exa-test-data-mtb-diagnose-primaertumor-1, Condition)
+// * insert AddBundleEntry(mii-exa-test-data-mtb-oncotree-1, Observation)
+// * insert AddBundleEntry(mii-exa-test-data-mtb-systemische-vortherapie-1, Procedure)
+// * insert AddBundleEntry(mii-exa-test-data-mtb-tumorausbreitung-1, Observation)
+// * insert AddBundleEntry(mii-exa-test-data-mtb-who-grad-tumor-zns-1, Observation)
+// * insert AddBundleEntry(mii-exa-test-data-mtb-ngs-bericht-1, DiagnosticReport)
+// * insert AddBundleEntry(mii-exa-test-data-mtb-genomic-study-1, Procedure)
+// * insert AddBundleEntry(mii-exa-test-data-mtb-genomic-study-analysis-1, Procedure)
+// * insert AddBundleEntry(mii-exa-test-data-mtb-einfache-variante-1, Observation)
+// * insert AddBundleEntry(mii-exa-test-data-mtb-copy-number-variant-1, Observation)
+// * insert AddBundleEntry(mii-exa-test-data-mtb-dna-fusion-1, Observation)
+// * insert AddBundleEntry(mii-exa-test-data-mtb-rna-fusion-1, Observation)
+// * insert AddBundleEntry(mii-exa-test-data-mtb-rna-seq-1, Observation)
+// * insert AddBundleEntry(mii-exa-test-data-mtb-diagnostische-implikation-1, Observation)
+// * insert AddBundleEntry(mii-exa-test-data-mtb-therapeutische-implikation-1, Observation)
+// * insert AddBundleEntry(mii-exa-test-data-mtb-molekularer-biomarker-1, Observation)
+// * insert AddBundleEntry(mii-exa-test-data-mtb-mutationslast-1, Observation)
+// * insert AddBundleEntry(mii-exa-test-data-mtb-mikrosatelliteninstabilitaet-1, Observation)
+// * insert AddBundleEntry(mii-exa-test-data-mtb-hrd-score-1, Observation)
+// * insert AddBundleEntry(mii-exa-test-data-mtb-brcaness-1, Observation)
+// * insert AddBundleEntry(mii-exa-test-data-mtb-ploidie-1, Observation)
+// * insert AddBundleEntry(mii-exa-test-data-mtb-biomarker-her2-status-1, Observation)
+// * insert AddBundleEntry(mii-exa-test-data-mtb-molecular-pathology-report-1, DiagnosticReport)
+// * insert AddBundleEntry(mii-exa-test-data-mtb-immunohistochemistry-1, Observation)
+// * insert AddBundleEntry(mii-exa-test-data-mtb-immunohistochemistry-her2-1, Observation)
+// * insert AddBundleEntry(mii-exa-test-data-mtb-immunohistochemistry-pdl1-1, Observation)
+// * insert AddBundleEntry(mii-exa-test-data-mtb-ihc-phosphorylation-1, Observation)
+// * insert AddBundleEntry(mii-exa-test-data-mtb-ihc-mmr-1, Observation)
+// * insert AddBundleEntry(mii-exa-test-data-mtb-ihc-msi-1, Observation)
+// * insert AddBundleEntry(mii-exa-test-data-mtb-insituhybridization-1, Observation)
+// * insert AddBundleEntry(mii-exa-test-data-mtb-insituhybridization-her2-1, Observation)
+// * insert AddBundleEntry(mii-exa-test-data-mtb-tumorzellgehalt-1, Observation)
+// * insert AddBundleEntry(mii-exa-test-data-mtb-therapieplan-1, CarePlan)
+// * insert AddBundleEntry(mii-exa-test-data-mtb-therapieempfehlung-1, MedicationRequest)
+// * insert AddBundleEntry(mii-exa-test-data-mtb-therapieempfehlung-2, MedicationRequest)
+// * insert AddBundleEntry(mii-exa-test-data-mtb-therapieempfehlung-3, MedicationRequest)
+// * insert AddBundleEntry(mii-exa-test-data-mtb-therapieempfehlung-kombination-1, RequestGroup)
+// * insert AddBundleEntry(mii-exa-test-data-mtb-studieneinschluss-anfrage-1, ServiceRequest)
+// * insert AddBundleEntry(mii-exa-test-data-mtb-studie-1, ResearchStudy)
+// * insert AddBundleEntry(mii-exa-test-data-mtb-humangenetische-beratung-1, ServiceRequest)
+// * insert AddBundleEntry(mii-exa-test-data-mtb-histologie-evaluation-1, ServiceRequest)
+// * insert AddBundleEntry(mii-exa-test-data-mtb-biopsie-auftrag-1, ServiceRequest)
+// * insert AddBundleEntry(mii-exa-test-data-mtb-follow-up-1, ClinicalImpression)
+// * insert AddBundleEntry(mii-exa-test-data-mtb-systemische-therapie-1, Procedure)
+// * insert AddBundleEntry(mii-exa-test-data-mtb-systemische-therapie-medstatement-1, MedicationStatement)
+// * insert AddBundleEntry(mii-exa-test-data-mtb-response-befund-1, Observation)
+// * insert AddBundleEntry(mii-exa-test-data-mtb-antrag-kostenuebernahme-1, Claim)
+// * insert AddBundleEntry(mii-exa-test-data-mtb-antwort-kostenuebernahme-1, ClaimResponse)
 
 // =============================================================================
 // Patient-2
@@ -131,7 +221,7 @@ Description: "Bundle: Patient-2"
 * insert AddBundleEntry(mii-exa-test-data-medication-paclitaxel, Medication)
 
 // Biobank-Module
-* insert AddBundleEntry(mii-exa-test-data-patient-2-specimen-1, Specimen)
+// * insert AddBundleEntry(mii-exa-test-data-patient-2-specimen-1, Specimen)
 
 // Organisationen
 * insert AddBundleEntry(mii-exa-test-data-organization-charite, Organization)
@@ -202,24 +292,53 @@ Description: "Bundle: Patient-3"
 * insert AddBundleEntry(mii-exa-test-data-medication-oxaliplatin, Medication)
 
 // Molekulargenetik-Module (bereits vorhanden, aber vollständig)
-* insert AddBundleEntry(mii-exa-test-data-patient-3-molgen-anforderung-1, ServiceRequest)
-* insert AddBundleEntry(mii-exa-test-data-patient-3-molgen-befundbericht-1, DiagnosticReport)
-* insert AddBundleEntry(mii-exa-test-data-patient-3-molgen-ergebnis-zusammenfassung-1, Observation)
-* insert AddBundleEntry(mii-exa-test-data-patient-3-molgen-diagnostische-implikation-1, Observation)
-* insert AddBundleEntry(mii-exa-test-data-patient-3-molgen-therapeutische-implikation-1, Observation)
-* insert AddBundleEntry(mii-exa-test-data-patient-3-molgen-variante-1, Observation)
-* insert AddBundleEntry(mii-exa-test-data-patient-3-molgen-untersuchte-region-1, Observation)
-* insert AddBundleEntry(mii-exa-test-data-patient-3-molgen-genotyp-1, Observation)
-* insert AddBundleEntry(mii-exa-test-data-patient-3-molgen-mutationslast-1, Observation)
-* insert AddBundleEntry(mii-exa-test-data-patient-3-molgen-msi-1, Observation)
-* insert AddBundleEntry(mii-exa-test-data-patient-3-molgen-medikationsempfehlung-1, Task)
-* insert AddBundleEntry(mii-exa-test-data-patient-3-molgen-folgemassnahme-1, Task)
-* insert AddBundleEntry(mii-exa-test-data-patient-3-molgen-family-member-history-1, FamilyMemberHistory)
+// * insert AddBundleEntry(mii-exa-test-data-patient-3-molgen-anforderung-1, ServiceRequest)
+// * insert AddBundleEntry(mii-exa-test-data-patient-3-molgen-befundbericht-1, DiagnosticReport)
+// * insert AddBundleEntry(mii-exa-test-data-patient-3-molgen-ergebnis-zusammenfassung-1, Observation)
+// * insert AddBundleEntry(mii-exa-test-data-patient-3-molgen-diagnostische-implikation-1, Observation)
+// * insert AddBundleEntry(mii-exa-test-data-patient-3-molgen-therapeutische-implikation-1, Observation)
+// * insert AddBundleEntry(mii-exa-test-data-patient-3-molgen-variante-1, Observation)
+// * insert AddBundleEntry(mii-exa-test-data-patient-3-molgen-untersuchte-region-1, Observation)
+// * insert AddBundleEntry(mii-exa-test-data-patient-3-molgen-genotyp-1, Observation)
+// * insert AddBundleEntry(mii-exa-test-data-patient-3-molgen-mutationslast-1, Observation)
+// * insert AddBundleEntry(mii-exa-test-data-patient-3-molgen-msi-1, Observation)
+// * insert AddBundleEntry(mii-exa-test-data-patient-3-molgen-medikationsempfehlung-1, Task)
+// * insert AddBundleEntry(mii-exa-test-data-patient-3-molgen-folgemassnahme-1, Task)
+// * insert AddBundleEntry(mii-exa-test-data-patient-3-molgen-family-member-history-1, FamilyMemberHistory)
+// * insert AddBundleEntry(mii-exa-test-data-patient-3-molgen-genomic-study-1, Procedure)
+// * insert AddBundleEntry(mii-exa-test-data-patient-3-molgen-genomic-study-analysis-1, Procedure)
+// * insert AddBundleEntry(mii-exa-test-data-patient-3-molgen-molekulare-konsequenz-1, Observation)
+// * insert AddBundleEntry(mii-exa-test-data-patient-3-molgen-polygener-risiko-score-1, RiskAssessment)
+
+// Seltene Erkrankungen Module
+// * insert AddBundleEntry(mii-exa-test-data-patient-3-seltene-hpo-assessment-1, Observation)
+// * insert AddBundleEntry(mii-exa-test-data-patient-3-seltene-hpo-assessment-2, Observation)
+// * insert AddBundleEntry(mii-exa-test-data-patient-3-seltene-hpo-assessment-3, Observation)
+// * insert AddBundleEntry(mii-exa-test-data-patient-3-seltene-clinical-diagnosis-1, Condition)
+// * insert AddBundleEntry(mii-exa-test-data-patient-3-seltene-genetic-diagnosis-1, Condition)
+// * insert AddBundleEntry(mii-exa-test-data-patient-3-seltene-symptom-condition-1, Condition)
+// * insert AddBundleEntry(mii-exa-test-data-patient-3-seltene-clinical-impression-1, ClinicalImpression)
+// * insert AddBundleEntry(mii-exa-test-data-patient-3-seltene-familienanamnese-1, FamilyMemberHistory)
+// * insert AddBundleEntry(mii-exa-test-data-patient-3-seltene-therapieempfehlung-1, MedicationRequest)
+// * insert AddBundleEntry(mii-exa-test-data-patient-3-seltene-therapie-nicht-med-1, ServiceRequest)
+// * insert AddBundleEntry(mii-exa-test-data-patient-3-seltene-studieneinschluss-1, ServiceRequest)
+// * insert AddBundleEntry(mii-exa-test-data-patient-3-seltene-therapie-kombination-1, RequestGroup)
+// * insert AddBundleEntry(mii-exa-test-data-patient-3-seltene-therapieplan-1, CarePlan)
+// * insert AddBundleEntry(mii-exa-test-data-patient-3-seltene-therapie-durchgefuehrt-1, Procedure)
+// * insert AddBundleEntry(mii-exa-test-data-patient-3-seltene-bmi-1, Observation)
+// * insert AddBundleEntry(mii-exa-test-data-patient-3-seltene-kopfumfang-1, Observation)
+// * insert AddBundleEntry(mii-exa-test-data-patient-3-seltene-hueftumfang-1, Observation)
+// * insert AddBundleEntry(mii-exa-test-data-patient-3-seltene-taillenumfang-1, Observation)
+// * insert AddBundleEntry(mii-exa-test-data-patient-3-seltene-blutgruppe-1, Observation)
+// * insert AddBundleEntry(mii-exa-test-data-patient-3-seltene-hpo-assessment-4, Observation)
+// * insert AddBundleEntry(mii-exa-test-data-patient-3-seltene-symptom-condition-2, Condition)
+// * insert AddBundleEntry(mii-exa-test-data-patient-3-seltene-familienanamnese-2, FamilyMemberHistory)
+// * insert AddBundleEntry(mii-exa-test-data-patient-3-seltene-therapie-durchgefuehrt-2, Procedure)
 
 // Biobank-Module
-* insert AddBundleEntry(mii-exa-test-data-patient-3-specimen-1, Specimen)
-* insert AddBundleEntry(mii-exa-test-data-patient-3-specimen-2, Specimen)
-* insert AddBundleEntry(mii-exa-test-data-patient-3-specimen-3, Specimen)
+// * insert AddBundleEntry(mii-exa-test-data-patient-3-specimen-1, Specimen)
+// * insert AddBundleEntry(mii-exa-test-data-patient-3-specimen-2, Specimen)
+// * insert AddBundleEntry(mii-exa-test-data-patient-3-specimen-3, Specimen)
 
 // Organisationen
 * insert AddBundleEntry(mii-exa-test-data-organization-charite, Organization)
@@ -231,7 +350,7 @@ Description: "Bundle: Patient-3"
 * insert AddBundleEntry(mii-exa-test-data-practitioner-role-physician-1, PractitionerRole)
 
 // Devices
-* insert AddBundleEntry(mii-exa-test-data-molgen-device-sequencer, Device)
+// * insert AddBundleEntry(mii-exa-test-data-molgen-device-sequencer, Device)
 * insert AddBundleEntry(mii-exa-test-data-device-roche-cobas, Device)
 * insert AddBundleEntry(mii-exa-test-data-device-roche-cobas-c303, Device)
 * insert AddBundleEntry(mii-exa-test-data-device-roche-cobas-e402, Device)
@@ -282,36 +401,21 @@ Description: "Bundle: Patient-4"
 * insert AddBundleEntry(mii-exa-test-data-medication-cisplatin, Medication)
 * insert AddBundleEntry(mii-exa-test-data-medication-omeprazol, Medication)
 
-// Molekulargenetik-Module (bereits vorhanden, aber vollständig)
-* insert AddBundleEntry(mii-exa-test-data-patient-4-molgen-anforderung-1, ServiceRequest)
-* insert AddBundleEntry(mii-exa-test-data-patient-4-molgen-befundbericht-1, DiagnosticReport)
-* insert AddBundleEntry(mii-exa-test-data-patient-4-molgen-variante-1, Observation)
-* insert AddBundleEntry(mii-exa-test-data-patient-4-molgen-diagnostische-implikation-1, Observation)
-* insert AddBundleEntry(mii-exa-test-data-patient-4-molgen-untersuchte-region-1, Observation)
-* insert AddBundleEntry(mii-exa-test-data-patient-4-molgen-untersuchte-region-2, Observation)
-* insert AddBundleEntry(mii-exa-test-data-patient-4-molgen-untersuchte-region-3, Observation)
-* insert AddBundleEntry(mii-exa-test-data-patient-4-molgen-untersuchte-region-4, Observation)
-* insert AddBundleEntry(mii-exa-test-data-patient-4-molgen-untersuchte-region-5, Observation)
-* insert AddBundleEntry(mii-exa-test-data-patient-4-molgen-untersuchte-region-6, Observation)
-* insert AddBundleEntry(mii-exa-test-data-patient-4-molgen-untersuchte-region-7, Observation)
-* insert AddBundleEntry(mii-exa-test-data-patient-4-molgen-untersuchte-region-8, Observation)
-* insert AddBundleEntry(mii-exa-test-data-patient-4-molgen-untersuchte-region-9, Observation)
-* insert AddBundleEntry(mii-exa-test-data-patient-4-molgen-untersuchte-region-10, Observation)
-* insert AddBundleEntry(mii-exa-test-data-patient-4-molgen-untersuchte-region-11, Observation)
-* insert AddBundleEntry(mii-exa-test-data-patient-4-molgen-untersuchte-region-12, Observation)
-* insert AddBundleEntry(mii-exa-test-data-patient-4-molgen-untersuchte-region-13, Observation)
-* insert AddBundleEntry(mii-exa-test-data-patient-4-molgen-untersuchte-region-14, Observation)
-* insert AddBundleEntry(mii-exa-test-data-patient-4-molgen-untersuchte-region-15, Observation)
-* insert AddBundleEntry(mii-exa-test-data-patient-4-molgen-untersuchte-region-16, Observation)
-* insert AddBundleEntry(mii-exa-test-data-patient-4-molgen-untersuchte-region-17, Observation)
-* insert AddBundleEntry(mii-exa-test-data-patient-4-molgen-untersuchte-region-18, Observation)
-* insert AddBundleEntry(mii-exa-test-data-patient-4-molgen-family-member-history-1, FamilyMemberHistory)
+// Molekulargenetik-Module
+// * insert AddBundleEntry(mii-exa-test-data-patient-4-molgen-anforderung-1, ServiceRequest)
+// * insert AddBundleEntry(mii-exa-test-data-patient-4-molgen-befundbericht-1, DiagnosticReport)
+// * insert AddBundleEntry(mii-exa-test-data-patient-4-molgen-variante-1, Observation)
+// * insert AddBundleEntry(mii-exa-test-data-patient-4-molgen-diagnostische-implikation-1, Observation)
+// * insert AddBundleEntry(mii-exa-test-data-patient-4-molgen-family-member-history-1, FamilyMemberHistory)
+// * insert AddBundleEntry(mii-exa-test-data-patient-4-molgen-genomic-study-1, Procedure)
+// * insert AddBundleEntry(mii-exa-test-data-patient-4-molgen-genomic-study-analysis-1, Procedure)
+// * insert AddBundleEntry(mii-exa-test-data-patient-4-molgen-molekulare-konsequenz-1, Observation)
 
 // Biobank-Module
-* insert AddBundleEntry(mii-exa-test-data-patient-4-specimen-1, Specimen)
-* insert AddBundleEntry(mii-exa-test-data-patient-4-specimen-2, Specimen)
-* insert AddBundleEntry(mii-exa-test-data-patient-4-specimen-3, Specimen)
-* insert AddBundleEntry(mii-exa-test-data-patient-4-specimen-4, Specimen)
+// * insert AddBundleEntry(mii-exa-test-data-patient-4-specimen-1, Specimen)
+// * insert AddBundleEntry(mii-exa-test-data-patient-4-specimen-2, Specimen)
+// * insert AddBundleEntry(mii-exa-test-data-patient-4-specimen-3, Specimen)
+// * insert AddBundleEntry(mii-exa-test-data-patient-4-specimen-4, Specimen)
 
 // Organisationen
 * insert AddBundleEntry(mii-exa-test-data-organization-charite, Organization)
@@ -324,7 +428,7 @@ Description: "Bundle: Patient-4"
 * insert AddBundleEntry(mii-exa-test-data-practitioner-role-physician-1, PractitionerRole)
 
 // Devices
-* insert AddBundleEntry(mii-exa-test-data-molgen-device-sequencer, Device)
+// * insert AddBundleEntry(mii-exa-test-data-molgen-device-sequencer, Device)
 * insert AddBundleEntry(mii-exa-test-data-device-roche-cobas, Device)
 * insert AddBundleEntry(mii-exa-test-data-device-roche-cobas-c303, Device)
 * insert AddBundleEntry(mii-exa-test-data-device-roche-cobas-e402, Device)
@@ -380,8 +484,8 @@ Description: "Bundle: Patient-5"
 * insert AddBundleEntry(mii-exa-test-data-medication-ibuprofen, Medication)
 
 // Biobank-Module
-* insert AddBundleEntry(mii-exa-test-data-patient-5-specimen-1, Specimen)
-* insert AddBundleEntry(mii-exa-test-data-patient-5-specimen-2, Specimen)
+// * insert AddBundleEntry(mii-exa-test-data-patient-5-specimen-1, Specimen)
+// * insert AddBundleEntry(mii-exa-test-data-patient-5-specimen-2, Specimen)
 
 // Organisationen
 * insert AddBundleEntry(mii-exa-test-data-organization-charite, Organization)
@@ -452,8 +556,8 @@ Description: "Bundle: Patient-6"
 * insert AddBundleEntry(mii-exa-test-data-medication-clarithromycin, Medication)
 
 // Biobank-Module
-* insert AddBundleEntry(mii-exa-test-data-patient-6-specimen-1, Specimen)
-* insert AddBundleEntry(mii-exa-test-data-patient-6-specimen-2, Specimen)
+// * insert AddBundleEntry(mii-exa-test-data-patient-6-specimen-1, Specimen)
+// * insert AddBundleEntry(mii-exa-test-data-patient-6-specimen-2, Specimen)
 
 // Organisationen
 * insert AddBundleEntry(mii-exa-test-data-organization-charite, Organization)
@@ -520,8 +624,8 @@ Description: "Bundle: Patient-7"
 * insert AddBundleEntry(mii-exa-test-data-medication-salbutamol, Medication)
 
 // Biobank-Module
-* insert AddBundleEntry(mii-exa-test-data-patient-7-specimen-1, Specimen)
-* insert AddBundleEntry(mii-exa-test-data-patient-7-specimen-2, Specimen)
+// * insert AddBundleEntry(mii-exa-test-data-patient-7-specimen-1, Specimen)
+// * insert AddBundleEntry(mii-exa-test-data-patient-7-specimen-2, Specimen)
 
 // Organisationen
 * insert AddBundleEntry(mii-exa-test-data-organization-charite, Organization)
@@ -593,8 +697,8 @@ Description: "Bundle: Patient-8"
 * insert AddBundleEntry(mii-exa-test-data-medication-atorvastatin, Medication)
 
 // Biobank-Module
-* insert AddBundleEntry(mii-exa-test-data-patient-8-specimen-1, Specimen)
-* insert AddBundleEntry(mii-exa-test-data-patient-8-specimen-2, Specimen)
+// * insert AddBundleEntry(mii-exa-test-data-patient-8-specimen-1, Specimen)
+// * insert AddBundleEntry(mii-exa-test-data-patient-8-specimen-2, Specimen)
 
 // Organisationen
 * insert AddBundleEntry(mii-exa-test-data-organization-charite, Organization)
@@ -661,8 +765,8 @@ Description: "Bundle: Patient-9"
 * insert AddBundleEntry(mii-exa-test-data-medication-paracetamol, Medication)
 
 // Biobank-Module
-* insert AddBundleEntry(mii-exa-test-data-patient-9-specimen-1, Specimen)
-* insert AddBundleEntry(mii-exa-test-data-patient-9-specimen-2, Specimen)
+// * insert AddBundleEntry(mii-exa-test-data-patient-9-specimen-1, Specimen)
+// * insert AddBundleEntry(mii-exa-test-data-patient-9-specimen-2, Specimen)
 
 // Organisationen
 * insert AddBundleEntry(mii-exa-test-data-organization-charite, Organization)
@@ -729,8 +833,8 @@ Description: "Bundle: Patient-10"
 * insert AddBundleEntry(mii-exa-test-data-medication-topiramat, Medication)
 
 // Biobank-Module
-* insert AddBundleEntry(mii-exa-test-data-patient-10-specimen-1, Specimen)
-* insert AddBundleEntry(mii-exa-test-data-patient-10-specimen-2, Specimen)
+// * insert AddBundleEntry(mii-exa-test-data-patient-10-specimen-1, Specimen)
+// * insert AddBundleEntry(mii-exa-test-data-patient-10-specimen-2, Specimen)
 
 // Organisationen
 * insert AddBundleEntry(mii-exa-test-data-organization-charite, Organization)
@@ -763,3 +867,17 @@ Description: "Bundle: Patient-10"
 // * insert AddBundleEntryConditional(mii-exa-test-data-device-roche-cobas-c303, Device, identifier=https://www.charite.de/fhir/sid/Laboratory-device-identifier%7CRocheCobasC303)
 // * insert AddBundleEntryConditional(mii-exa-test-data-device-roche-cobas-e402, Device, identifier=https://www.charite.de/fhir/sid/Laboratory-device-identifier%7CRocheCobasE402)
 // * insert AddBundleEntryConditional(mii-exa-test-data-devicemetric-roche-cobas-c303-1, DeviceMetric, identifier=https://www.charite.de/fhir/sid/Laboratory-device-identifier%7CRocheCobasC303-160192)
+
+// =============================================================================
+// Patient-11
+// =============================================================================
+Instance: mii-exa-test-data-bundle-pat-11
+InstanceOf: Bundle
+Usage: #example
+Description: "Bundle: Patient-11"
+* insert TestDataLabel
+* type = #transaction
+* timestamp = "2025-10-31T14:17:00+01:00"
+
+// Basis-Module
+* insert AddBundleEntry(mii-exa-test-data-patient-11, Patient)

@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    url: "jdbc:h2:mem:hapi;DB_CLOSE_DELAY=-1"
+    driver_class_name: org.h2.Driver
+    username: sa
+    password: ""
+  jpa:
+    properties:
+      hibernate.dialect: ca.uhn.fhir.jpa.model.dialect.HapiFhirH2Dialect
+      hibernate.search.enabled: false
+
+hapi:
+  fhir:
+    fhir_version: R4
+    server_address: http://localhost:8080/fhir
+    allow_multiple_delete: true
+    reuse_cached_search_results_millis: 60000
+    client_id_strategy: ANY
+    custom_search_parameters:
+      enabled: true

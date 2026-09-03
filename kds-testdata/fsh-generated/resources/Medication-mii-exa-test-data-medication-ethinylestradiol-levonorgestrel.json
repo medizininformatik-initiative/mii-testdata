@@ -29,7 +29,8 @@
         "coding": [
           {
             "system": "http://fhir.de/CodeSystem/ask",
-            "code": "02200"
+            "code": "02200",
+            "version": "20260105"
           }
         ]
       },
@@ -53,7 +54,8 @@
         "coding": [
           {
             "system": "http://fhir.de/CodeSystem/ask",
-            "code": "03335"
+            "code": "03335",
+            "version": "20260105"
           }
         ]
       },

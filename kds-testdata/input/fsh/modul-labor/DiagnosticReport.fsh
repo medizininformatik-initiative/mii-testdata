@@ -11,7 +11,7 @@ Description: "DiagnosticReport: Laborbericht für Patient 1"
 * effectiveDateTime = "2024-02-15T12:00:00+01:00"
 * issued = "2024-02-15T12:00:00+01:00"
 * performer = Reference(mii-exa-test-data-organization-labor-berlin)
-* specimen = Reference(mii-exa-test-data-patient-1-specimen-1)
+// * specimen = Reference(mii-exa-test-data-patient-1-specimen-1)
 * result[0] = Reference(mii-exa-test-data-patient-1-labobs-1)
 * result[1] = Reference(mii-exa-test-data-patient-1-labobs-2)
 * result[2] = Reference(mii-exa-test-data-patient-1-labobs-3)
@@ -32,7 +32,7 @@ Description: "DiagnosticReport: Laborbericht für Patient 2"
 * effectiveDateTime = "2024-03-04T07:30:00+01:00"
 * issued = "2024-03-04T11:30:00+01:00"
 * performer = Reference(mii-exa-test-data-organization-labor-berlin)
-* specimen = Reference(mii-exa-test-data-patient-2-specimen-1)
+// * specimen = Reference(mii-exa-test-data-patient-2-specimen-1)
 * result[0] = Reference(mii-exa-test-data-patient-2-labobs-1)
 * result[1] = Reference(mii-exa-test-data-patient-2-labobs-2)
 * result[2] = Reference(mii-exa-test-data-patient-2-labobs-3)
@@ -51,8 +51,8 @@ Description: "DiagnosticReport: Laborbericht für Patient 3"
 * effectiveDateTime = "2022-04-05T08:00:00+02:00"
 * issued = "2022-04-05T13:00:00+02:00"
 * performer = Reference(mii-exa-test-data-organization-labor-berlin)
-* specimen[0] = Reference(mii-exa-test-data-patient-3-specimen-2)
-* specimen[1] = Reference(mii-exa-test-data-patient-3-specimen-3)
+// * specimen[0] = Reference(mii-exa-test-data-patient-3-specimen-2)
+// * specimen[1] = Reference(mii-exa-test-data-patient-3-specimen-3)
 * result[0] = Reference(mii-exa-test-data-patient-3-labobs-1)
 * result[1] = Reference(mii-exa-test-data-patient-3-labobs-2)
 * result[2] = Reference(mii-exa-test-data-patient-3-labobs-3)
@@ -70,8 +70,8 @@ Description: "DiagnosticReport: Laborbericht für Patient 4"
 * effectiveDateTime = "2020-09-17T07:15:00+02:00"
 * issued = "2020-09-17T12:00:00+02:00"
 * performer = Reference(mii-exa-test-data-organization-labor-berlin)
-* specimen[0] = Reference(mii-exa-test-data-patient-4-specimen-3)
-* specimen[1] = Reference(mii-exa-test-data-patient-4-specimen-4)
+// * specimen[0] = Reference(mii-exa-test-data-patient-4-specimen-3)
+// * specimen[1] = Reference(mii-exa-test-data-patient-4-specimen-4)
 * result[0] = Reference(mii-exa-test-data-patient-4-labobs-1)
 * result[1] = Reference(mii-exa-test-data-patient-4-labobs-2)
 * result[2] = Reference(mii-exa-test-data-patient-4-labobs-3)
@@ -89,8 +89,8 @@ Description: "DiagnosticReport: Laborbericht für Patient 5"
 * effectiveDateTime = "2023-07-12T06:45:00+02:00"
 * issued = "2023-07-12T10:15:00+02:00"
 * performer = Reference(mii-exa-test-data-organization-labor-berlin)
-* specimen[0] = Reference(mii-exa-test-data-patient-5-specimen-1)
-* specimen[1] = Reference(mii-exa-test-data-patient-5-specimen-2)
+// * specimen[0] = Reference(mii-exa-test-data-patient-5-specimen-1)
+// * specimen[1] = Reference(mii-exa-test-data-patient-5-specimen-2)
 * result[0] = Reference(mii-exa-test-data-patient-5-labobs-1)
 * result[1] = Reference(mii-exa-test-data-patient-5-labobs-2)
 * result[2] = Reference(mii-exa-test-data-patient-5-labobs-3)
@@ -108,8 +108,8 @@ Description: "DiagnosticReport: Laborbericht für Patient 6"
 * effectiveDateTime = "2022-03-14T07:00:00+01:00"
 * issued = "2022-03-14T11:45:00+01:00"
 * performer = Reference(mii-exa-test-data-organization-labor-berlin)
-* specimen[0] = Reference(mii-exa-test-data-patient-6-specimen-1)
-* specimen[1] = Reference(mii-exa-test-data-patient-6-specimen-2)
+// * specimen[0] = Reference(mii-exa-test-data-patient-6-specimen-1)
+// * specimen[1] = Reference(mii-exa-test-data-patient-6-specimen-2)
 * result[0] = Reference(mii-exa-test-data-patient-6-labobs-1)
 * result[1] = Reference(mii-exa-test-data-patient-6-labobs-2)
 * result[2] = Reference(mii-exa-test-data-patient-6-labobs-3)
@@ -127,8 +127,8 @@ Description: "DiagnosticReport: Laborbericht für Patient 7"
 * effectiveDateTime = "2024-01-10T08:15:00+01:00"
 * issued = "2024-01-10T12:30:00+01:00"
 * performer = Reference(mii-exa-test-data-organization-labor-berlin)
-* specimen[0] = Reference(mii-exa-test-data-patient-7-specimen-1)
-* specimen[1] = Reference(mii-exa-test-data-patient-7-specimen-2)
+// * specimen[0] = Reference(mii-exa-test-data-patient-7-specimen-1)
+// * specimen[1] = Reference(mii-exa-test-data-patient-7-specimen-2)
 * result[0] = Reference(mii-exa-test-data-patient-7-labobs-1)
 * result[1] = Reference(mii-exa-test-data-patient-7-labobs-2)
 * result[2] = Reference(mii-exa-test-data-patient-7-labobs-3)
@@ -146,8 +146,8 @@ Description: "DiagnosticReport: Laborbericht für Patient 8"
 * effectiveDateTime = "2023-11-12T06:30:00+01:00"
 * issued = "2023-11-12T10:45:00+01:00"
 * performer = Reference(mii-exa-test-data-organization-labor-berlin)
-* specimen[0] = Reference(mii-exa-test-data-patient-8-specimen-1)
-* specimen[1] = Reference(mii-exa-test-data-patient-8-specimen-2)
+// * specimen[0] = Reference(mii-exa-test-data-patient-8-specimen-1)
+// * specimen[1] = Reference(mii-exa-test-data-patient-8-specimen-2)
 * result[0] = Reference(mii-exa-test-data-patient-8-labobs-1)
 * result[1] = Reference(mii-exa-test-data-patient-8-labobs-2)
 * result[2] = Reference(mii-exa-test-data-patient-8-labobs-3)
@@ -165,8 +165,8 @@ Description: "DiagnosticReport: Laborbericht für Patient 9"
 * effectiveDateTime = "2024-02-22T07:15:00+01:00"
 * issued = "2024-02-22T11:00:00+01:00"
 * performer = Reference(mii-exa-test-data-organization-labor-berlin)
-* specimen[0] = Reference(mii-exa-test-data-patient-9-specimen-1)
-* specimen[1] = Reference(mii-exa-test-data-patient-9-specimen-2)
+// * specimen[0] = Reference(mii-exa-test-data-patient-9-specimen-1)
+// * specimen[1] = Reference(mii-exa-test-data-patient-9-specimen-2)
 * result[0] = Reference(mii-exa-test-data-patient-9-labobs-1)
 * result[1] = Reference(mii-exa-test-data-patient-9-labobs-2)
 * result[2] = Reference(mii-exa-test-data-patient-9-labobs-3)
@@ -184,8 +184,8 @@ Description: "DiagnosticReport: Laborbericht für Patient 10"
 * effectiveDateTime = "2019-05-16T08:30:00+02:00"
 * issued = "2019-05-16T13:15:00+02:00"
 * performer = Reference(mii-exa-test-data-organization-labor-berlin)
-* specimen[0] = Reference(mii-exa-test-data-patient-10-specimen-1)
-* specimen[1] = Reference(mii-exa-test-data-patient-10-specimen-2)
+// * specimen[0] = Reference(mii-exa-test-data-patient-10-specimen-1)
+// * specimen[1] = Reference(mii-exa-test-data-patient-10-specimen-2)
 * result[0] = Reference(mii-exa-test-data-patient-10-labobs-1)
 * result[1] = Reference(mii-exa-test-data-patient-10-labobs-2)
 * result[2] = Reference(mii-exa-test-data-patient-10-labobs-3)

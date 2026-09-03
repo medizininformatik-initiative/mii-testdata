@@ -29,13 +29,13 @@
         }
       ]
     },
+    "text": "Metamizol 500mg oral bei Schmerzen",
     "dose": {
-      "system": "http://unitsofmeasure.org",
       "value": 500,
       "code": "mg",
+      "system": "http://unitsofmeasure.org",
       "unit": "mg"
-    },
-    "text": "Metamizol 500mg oral bei Schmerzen"
+    }
   },
   "status": "completed",
   "category": {

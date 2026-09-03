@@ -29,13 +29,13 @@
         }
       ]
     },
+    "text": "Ibuprofen 400mg oral bei Schmerzen",
     "dose": {
-      "system": "http://unitsofmeasure.org",
       "value": 400,
       "code": "mg",
+      "system": "http://unitsofmeasure.org",
       "unit": "mg"
-    },
-    "text": "Ibuprofen 400mg oral bei Schmerzen"
+    }
   },
   "status": "completed",
   "category": {

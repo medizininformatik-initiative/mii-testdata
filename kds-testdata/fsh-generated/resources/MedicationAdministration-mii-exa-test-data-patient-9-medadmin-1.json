@@ -29,13 +29,13 @@
         }
       ]
     },
+    "text": "Verhütungspille 1 Tablette",
     "dose": {
-      "system": "http://unitsofmeasure.org",
       "value": 1,
       "code": "1",
+      "system": "http://unitsofmeasure.org",
       "unit": "1"
-    },
-    "text": "Verhütungspille 1 Tablette"
+    }
   },
   "status": "completed",
   "category": {

@@ -13,8 +13,8 @@
   "entry": [
     {
       "request": {
-        "method": "POST",
-        "url": "Patient"
+        "method": "PUT",
+        "url": "Patient/mii-exa-test-data-patient-10"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Patient/mii-exa-test-data-patient-10",
       "resource": {
@@ -102,8 +102,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Consent"
+        "method": "PUT",
+        "url": "Consent/mii-exa-test-data-patient-10-consent-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Consent/mii-exa-test-data-patient-10-consent-1",
       "resource": {
@@ -133,8 +133,8 @@
           {
             "coding": [
               {
-                "code": "2.16.840.1.113883.3.1937.777.24.2.184",
-                "system": "https://www.medizininformatik-initiative.de/fhir/modul-consent/CodeSystem/mii-cs-consent-consent_category"
+                "system": "https://www.medizininformatik-initiative.de/fhir/modul-consent/CodeSystem/mii-cs-consent-version-modules",
+                "code": "2.16.840.1.113883.3.1937.777.24.2.184"
               }
             ]
           }
@@ -202,7 +202,7 @@
                     {
                       "code": "2.16.840.1.113883.3.1937.777.24.5.3.8",
                       "system": "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3",
-                      "display": "MDAT wissenschaftlich nutzen EU DSGVO NIVEAU"
+                      "display": "MDAT wissenschaftlich nutzen"
                     }
                   ]
                 }
@@ -274,7 +274,7 @@
                     {
                       "code": "2.16.840.1.113883.3.1937.777.24.5.3.22",
                       "system": "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3",
-                      "display": "BIOMAT wissenschaftlich nutzen EU DSGVO NIVEAU"
+                      "display": "BIOMAT wissenschaftlich nutzen"
                     }
                   ]
                 }
@@ -301,8 +301,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Encounter"
+        "method": "PUT",
+        "url": "Encounter/mii-exa-test-data-patient-10-encounter-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Encounter/mii-exa-test-data-patient-10-encounter-1",
       "resource": {
@@ -420,8 +420,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Condition"
+        "method": "PUT",
+        "url": "Condition/mii-exa-test-data-patient-10-diagnose-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Condition/mii-exa-test-data-patient-10-diagnose-1",
       "resource": {
@@ -455,7 +455,6 @@
             {
               "system": "http://snomed.info/sct",
               "code": "37796009",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
               "display": "Migraine (disorder)"
             }
           ]
@@ -471,7 +470,6 @@
               {
                 "system": "http://snomed.info/sct",
                 "code": "281231009",
-                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                 "display": "Vascular structure of head (body structure)"
               }
             ]
@@ -501,8 +499,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-patient-10-vitalstatus-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-10-vitalstatus-1",
       "resource": {
@@ -555,8 +553,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Procedure"
+        "method": "PUT",
+        "url": "Procedure/mii-exa-test-data-patient-10-prozedur-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Procedure/mii-exa-test-data-patient-10-prozedur-1",
       "resource": {
@@ -578,8 +576,7 @@
           "coding": [
             {
               "system": "http://snomed.info/sct",
-              "code": "165197003",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+              "code": "165197003"
             }
           ]
         },
@@ -587,8 +584,7 @@
           "coding": [
             {
               "system": "http://snomed.info/sct",
-              "code": "169066007",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+              "code": "169066007"
             },
             {
               "system": "http://fhir.de/CodeSystem/bfarm/ops",
@@ -602,8 +598,7 @@
             "coding": [
               {
                 "code": "89546000",
-                "system": "http://snomed.info/sct",
-                "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+                "system": "http://snomed.info/sct"
               }
             ]
           }
@@ -619,7 +614,6 @@
             "valueCoding": {
               "system": "http://snomed.info/sct",
               "code": "261004008",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
               "display": "Diagnostic intent"
             }
           }
@@ -639,8 +633,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Procedure"
+        "method": "PUT",
+        "url": "Procedure/mii-exa-test-data-patient-10-prozedur-2"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Procedure/mii-exa-test-data-patient-10-prozedur-2",
       "resource": {
@@ -662,8 +656,7 @@
           "coding": [
             {
               "system": "http://snomed.info/sct",
-              "code": "277132007",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+              "code": "277132007"
             }
           ]
         },
@@ -671,8 +664,7 @@
           "coding": [
             {
               "system": "http://snomed.info/sct",
-              "code": "408381007",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+              "code": "408381007"
             },
             {
               "system": "http://fhir.de/CodeSystem/bfarm/ops",
@@ -686,8 +678,7 @@
             "coding": [
               {
                 "code": "86762007",
-                "system": "http://snomed.info/sct",
-                "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+                "system": "http://snomed.info/sct"
               }
             ]
           }
@@ -707,7 +698,6 @@
             "valueCoding": {
               "system": "http://snomed.info/sct",
               "code": "262202000",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
               "display": "Therapeutic"
             }
           }
@@ -726,8 +716,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "ServiceRequest"
+        "method": "PUT",
+        "url": "ServiceRequest/mii-exa-test-data-patient-10-labrequest-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/ServiceRequest/mii-exa-test-data-patient-10-labrequest-1",
       "resource": {
@@ -781,15 +771,9 @@
               {
                 "code": "37796009",
                 "system": "http://snomed.info/sct",
-                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                 "display": "Migraine"
               }
             ]
-          }
-        ],
-        "specimen": [
-          {
-            "reference": "Specimen/mii-exa-test-data-patient-10-specimen-2"
           }
         ],
         "status": "completed",
@@ -817,8 +801,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "DiagnosticReport"
+        "method": "PUT",
+        "url": "DiagnosticReport/mii-exa-test-data-patient-10-labreport-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/DiagnosticReport/mii-exa-test-data-patient-10-labreport-1",
       "resource": {
@@ -890,14 +874,6 @@
             "reference": "Organization/mii-exa-test-data-organization-labor-berlin"
           }
         ],
-        "specimen": [
-          {
-            "reference": "Specimen/mii-exa-test-data-patient-10-specimen-1"
-          },
-          {
-            "reference": "Specimen/mii-exa-test-data-patient-10-specimen-2"
-          }
-        ],
         "result": [
           {
             "reference": "Observation/mii-exa-test-data-patient-10-labobs-1"
@@ -923,8 +899,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-patient-10-labobs-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-10-labobs-1",
       "resource": {
@@ -1023,13 +999,9 @@
             {
               "code": "703452004",
               "system": "http://snomed.info/sct",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
               "display": "Electrical impedance technique (qualifier value)"
             }
           ]
-        },
-        "specimen": {
-          "reference": "Specimen/mii-exa-test-data-patient-10-specimen-1"
         },
         "device": {
           "reference": "Device/mii-exa-test-data-device-roche-cobas-c303"
@@ -1038,8 +1010,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-patient-10-labobs-2"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-10-labobs-2",
       "resource": {
@@ -1138,13 +1110,9 @@
             {
               "code": "83561000052101",
               "system": "http://snomed.info/sct",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
               "display": "Photometry technique (qualifier value)"
             }
           ]
-        },
-        "specimen": {
-          "reference": "Specimen/mii-exa-test-data-patient-10-specimen-1"
         },
         "device": {
           "reference": "Device/mii-exa-test-data-device-roche-cobas-c303"
@@ -1153,8 +1121,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-patient-10-labobs-3"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-10-labobs-3",
       "resource": {
@@ -1253,13 +1221,9 @@
             {
               "code": "83561000052101",
               "system": "http://snomed.info/sct",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
               "display": "Photometry technique (qualifier value)"
             }
           ]
-        },
-        "specimen": {
-          "reference": "Specimen/mii-exa-test-data-patient-10-specimen-1"
         },
         "device": {
           "reference": "Device/mii-exa-test-data-device-roche-cobas-c303"
@@ -1268,8 +1232,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "MedicationRequest"
+        "method": "PUT",
+        "url": "MedicationRequest/mii-exa-test-data-patient-10-medrequest-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/MedicationRequest/mii-exa-test-data-patient-10-medrequest-1",
       "resource": {
@@ -1295,6 +1259,13 @@
         ],
         "dosageInstruction": [
           {
+            "timing": {
+              "repeat": {
+                "frequencyMax": 2,
+                "period": 1,
+                "periodUnit": "d"
+              }
+            },
             "doseAndRate": [
               {
                 "doseQuantity": {
@@ -1337,8 +1308,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "MedicationStatement"
+        "method": "PUT",
+        "url": "MedicationStatement/mii-exa-test-data-patient-10-medstatement-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/MedicationStatement/mii-exa-test-data-patient-10-medstatement-1",
       "resource": {
@@ -1398,9 +1369,9 @@
             "doseAndRate": [
               {
                 "doseQuantity": {
-                  "system": "http://unitsofmeasure.org",
                   "value": 50,
                   "code": "mg",
+                  "system": "http://unitsofmeasure.org",
                   "unit": "mg"
                 }
               }
@@ -1424,8 +1395,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "MedicationAdministration"
+        "method": "PUT",
+        "url": "MedicationAdministration/mii-exa-test-data-patient-10-medadmin-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/MedicationAdministration/mii-exa-test-data-patient-10-medadmin-1",
       "resource": {
@@ -1459,13 +1430,13 @@
               }
             ]
           },
+          "text": "Sumatriptan 50mg oral bei Migräne",
           "dose": {
-            "system": "http://unitsofmeasure.org",
             "value": 50,
             "code": "mg",
+            "system": "http://unitsofmeasure.org",
             "unit": "mg"
-          },
-          "text": "Sumatriptan 50mg oral bei Migräne"
+          }
         },
         "status": "completed",
         "category": {
@@ -1494,8 +1465,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "MedicationRequest"
+        "method": "PUT",
+        "url": "MedicationRequest/mii-exa-test-data-patient-10-medrequest-2"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/MedicationRequest/mii-exa-test-data-patient-10-medrequest-2",
       "resource": {
@@ -1569,8 +1540,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "MedicationStatement"
+        "method": "PUT",
+        "url": "MedicationStatement/mii-exa-test-data-patient-10-medstatement-2"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/MedicationStatement/mii-exa-test-data-patient-10-medstatement-2",
       "resource": {
@@ -1630,9 +1601,9 @@
             "doseAndRate": [
               {
                 "doseQuantity": {
-                  "system": "http://unitsofmeasure.org",
                   "value": 50,
                   "code": "mg",
+                  "system": "http://unitsofmeasure.org",
                   "unit": "mg"
                 }
               }
@@ -1662,8 +1633,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "MedicationAdministration"
+        "method": "PUT",
+        "url": "MedicationAdministration/mii-exa-test-data-patient-10-medadmin-2"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/MedicationAdministration/mii-exa-test-data-patient-10-medadmin-2",
       "resource": {
@@ -1697,13 +1668,13 @@
               }
             ]
           },
+          "text": "Topiramat 50mg oral zur Prophylaxe",
           "dose": {
-            "system": "http://unitsofmeasure.org",
             "value": 50,
             "code": "mg",
+            "system": "http://unitsofmeasure.org",
             "unit": "mg"
-          },
-          "text": "Topiramat 50mg oral zur Prophylaxe"
+          }
         },
         "status": "completed",
         "category": {
@@ -1732,8 +1703,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "List"
+        "method": "PUT",
+        "url": "List/mii-exa-test-data-patient-10-list-aufnahmemedikation"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/List/mii-exa-test-data-patient-10-list-aufnahmemedikation",
       "resource": {
@@ -1780,8 +1751,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "List"
+        "method": "PUT",
+        "url": "List/mii-exa-test-data-patient-10-list-entlassmedikation"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/List/mii-exa-test-data-patient-10-list-entlassmedikation",
       "resource": {
@@ -1828,8 +1799,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Medication"
+        "method": "PUT",
+        "url": "Medication/mii-exa-test-data-medication-sumatriptan"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Medication/mii-exa-test-data-medication-sumatriptan",
       "resource": {
@@ -1863,7 +1834,8 @@
               "coding": [
                 {
                   "system": "http://fhir.de/CodeSystem/ask",
-                  "code": "24065"
+                  "code": "24065",
+                  "version": "20260105"
                 }
               ]
             },
@@ -1897,8 +1869,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Medication"
+        "method": "PUT",
+        "url": "Medication/mii-exa-test-data-medication-topiramat"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Medication/mii-exa-test-data-medication-topiramat",
       "resource": {
@@ -1932,7 +1904,8 @@
               "coding": [
                 {
                   "system": "http://fhir.de/CodeSystem/ask",
-                  "code": "24994"
+                  "code": "24994",
+                  "version": "20260105"
                 }
               ]
             },
@@ -1966,196 +1939,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Specimen"
-      },
-      "fullUrl": "https://www.medizininformatik-initiative.de/Specimen/mii-exa-test-data-patient-10-specimen-1",
-      "resource": {
-        "resourceType": "Specimen",
-        "id": "mii-exa-test-data-patient-10-specimen-1",
-        "meta": {
-          "security": [
-            {
-              "code": "HTEST",
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
-              "display": "test health data"
-            }
-          ],
-          "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Specimen"
-          ]
-        },
-        "extension": [
-          {
-            "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/VerwaltendeOrganisation",
-            "valueReference": {
-              "reference": "Organization/mii-exa-test-data-organization-biobank-charite"
-            }
-          },
-          {
-            "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Diagnose",
-            "valueReference": {
-              "reference": "Condition/mii-exa-test-data-patient-10-diagnose-1"
-            }
-          }
-        ],
-        "identifier": [
-          {
-            "system": "https://www.charite.de/fhir/sid/Bioproben",
-            "value": "BP_000018"
-          }
-        ],
-        "type": {
-          "coding": [
-            {
-              "code": "445295009",
-              "system": "http://snomed.info/sct",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-              "display": "Blood specimen with edetic acid (specimen)"
-            }
-          ]
-        },
-        "collection": {
-          "bodySite": {
-            "coding": [
-              {
-                "code": "368208006",
-                "system": "http://snomed.info/sct",
-                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-                "display": "Left upper arm structure (body structure)"
-              }
-            ]
-          },
-          "collectedDateTime": "2019-05-16T07:45:00+02:00"
-        },
-        "container": [
-          {
-            "type": {
-              "coding": [
-                {
-                  "code": "83059008",
-                  "system": "http://snomed.info/sct",
-                  "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-                  "display": "Tube, device (physical object)"
-                }
-              ]
-            },
-            "capacity": {
-              "value": 5,
-              "code": "ml",
-              "system": "http://unitsofmeasure.org"
-            },
-            "specimenQuantity": {
-              "value": 5,
-              "code": "ml",
-              "system": "http://unitsofmeasure.org"
-            }
-          }
-        ],
-        "status": "available",
-        "subject": {
-          "reference": "Patient/mii-exa-test-data-patient-10"
-        }
-      }
-    },
-    {
-      "request": {
-        "method": "POST",
-        "url": "Specimen"
-      },
-      "fullUrl": "https://www.medizininformatik-initiative.de/Specimen/mii-exa-test-data-patient-10-specimen-2",
-      "resource": {
-        "resourceType": "Specimen",
-        "id": "mii-exa-test-data-patient-10-specimen-2",
-        "meta": {
-          "security": [
-            {
-              "code": "HTEST",
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
-              "display": "test health data"
-            }
-          ],
-          "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Specimen"
-          ]
-        },
-        "extension": [
-          {
-            "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/VerwaltendeOrganisation",
-            "valueReference": {
-              "reference": "Organization/mii-exa-test-data-organization-biobank-charite"
-            }
-          },
-          {
-            "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Diagnose",
-            "valueReference": {
-              "reference": "Condition/mii-exa-test-data-patient-10-diagnose-1"
-            }
-          }
-        ],
-        "identifier": [
-          {
-            "system": "https://www.charite.de/fhir/sid/Bioproben",
-            "value": "BP_000019"
-          }
-        ],
-        "type": {
-          "coding": [
-            {
-              "code": "119364003",
-              "system": "http://snomed.info/sct",
-              "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-              "display": "Serum specimen (specimen)"
-            }
-          ]
-        },
-        "collection": {
-          "bodySite": {
-            "coding": [
-              {
-                "code": "368209003",
-                "system": "http://snomed.info/sct",
-                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-                "display": "Right upper arm structure (body structure)"
-              }
-            ]
-          },
-          "collectedDateTime": "2019-05-16T07:45:00+02:00"
-        },
-        "container": [
-          {
-            "type": {
-              "coding": [
-                {
-                  "code": "83059008",
-                  "system": "http://snomed.info/sct",
-                  "version": "http://snomed.info/sct/900000000000207008/version/20230731",
-                  "display": "Tube, device (physical object)"
-                }
-              ]
-            },
-            "capacity": {
-              "value": 7,
-              "code": "ml",
-              "system": "http://unitsofmeasure.org"
-            },
-            "specimenQuantity": {
-              "value": 7,
-              "code": "ml",
-              "system": "http://unitsofmeasure.org"
-            }
-          }
-        ],
-        "status": "available",
-        "subject": {
-          "reference": "Patient/mii-exa-test-data-patient-10"
-        }
-      }
-    },
-    {
-      "request": {
-        "method": "POST",
-        "url": "Organization"
+        "method": "PUT",
+        "url": "Organization/mii-exa-test-data-organization-charite"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Organization/mii-exa-test-data-organization-charite",
       "resource": {
@@ -2186,8 +1971,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Organization"
+        "method": "PUT",
+        "url": "Organization/mii-exa-test-data-organization-labor-berlin"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Organization/mii-exa-test-data-organization-labor-berlin",
       "resource": {
@@ -2218,8 +2003,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Organization"
+        "method": "PUT",
+        "url": "Organization/mii-exa-test-data-organization-biobank-charite"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Organization/mii-exa-test-data-organization-biobank-charite",
       "resource": {
@@ -2239,8 +2024,8 @@
         },
         "extension": [
           {
-            "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/BeschreibungSammlung",
-            "valueMarkdown": "Zentrale Biobank der Charité"
+            "url": "https://fhir.bbmri-eric.eu/fhir/StructureDefinition/miabis-organization-description-extension",
+            "valueString": "Zentrale Biobank der Charité"
           }
         ],
         "identifier": [
@@ -2300,8 +2085,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Practitioner"
+        "method": "PUT",
+        "url": "Practitioner/mii-exa-test-data-practitioner-physician-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Practitioner/mii-exa-test-data-practitioner-physician-1",
       "resource": {
@@ -2329,8 +2114,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "PractitionerRole"
+        "method": "PUT",
+        "url": "PractitionerRole/mii-exa-test-data-practitioner-role-physician-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/PractitionerRole/mii-exa-test-data-practitioner-role-physician-1",
       "resource": {
@@ -2354,7 +2139,6 @@
               {
                 "code": "309343006",
                 "system": "http://snomed.info/sct",
-                "version": "http://snomed.info/sct/900000000000207008/version/20230731",
                 "display": "Physician (occupation)"
               }
             ]
@@ -2371,8 +2155,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Device"
+        "method": "PUT",
+        "url": "Device/mii-exa-test-data-device-roche-cobas"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Device/mii-exa-test-data-device-roche-cobas",
       "resource": {
@@ -2405,8 +2189,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Device"
+        "method": "PUT",
+        "url": "Device/mii-exa-test-data-device-roche-cobas-c303"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Device/mii-exa-test-data-device-roche-cobas-c303",
       "resource": {
@@ -2475,8 +2259,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "Device"
+        "method": "PUT",
+        "url": "Device/mii-exa-test-data-device-roche-cobas-e402"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Device/mii-exa-test-data-device-roche-cobas-e402",
       "resource": {
@@ -2525,8 +2309,8 @@
     },
     {
       "request": {
-        "method": "POST",
-        "url": "DeviceMetric"
+        "method": "PUT",
+        "url": "DeviceMetric/mii-exa-test-data-devicemetric-roche-cobas-c303-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/DeviceMetric/mii-exa-test-data-devicemetric-roche-cobas-c303-1",
       "resource": {
