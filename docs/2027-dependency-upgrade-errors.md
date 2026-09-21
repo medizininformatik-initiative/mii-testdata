@@ -123,8 +123,32 @@ old-style `hl7.fhir.extensions.r5`-Deklaration.
 
 ## Neue Module (Testdaten neu erstellt)
 
-_Wird ergänzt: symptom, soziodemographie, kardiologie, lungenfunktion —
-Research-Docs unter `docs/research-<modul>.md`._
+Vier Module hatten noch keine Testdaten; je Modul ein self-containedes
+Transaction-Bundle `mii-exa-test-data-bundle-<modul>-1` mit eigenem Patienten.
+Details, Profil-Coverage-Tabellen und Upstream-Befunde in den Research-Docs:
+
+- **Symptom** ([research-symptom.md](research-symptom.md)): beide Profile
+  (finding-condition, finding-observation) über 6 Instanzen abgedeckt; beide
+  sind upstream `abstract: true` — Instanzen tragen trotzdem meta.profile für
+  die Validierung (dokumentiert).
+- **Soziodemographie** ([research-soziodemographie.md](research-soziodemographie.md)):
+  alle 18 instanziierbaren Profile abgedeckt (Datenerhebung mit allen 13
+  hasMember-Slices; beschaeftigungsstatus/berufliche-stellung je in beiden
+  Value-Slices); `mii-pr-sdd-lebenssituation` ist abstract → über die sechs
+  abgeleiteten Profile abgedeckt.
+- **Kardiologie** ([research-kardiologie.md](research-kardiologie.md)): 13/13
+  Profile; Szenario KHK/HFrEF mit ICD-Implantation. Upstream:
+  `ISiKRaucherStatus` referenziert gematik `ISiKLoincCoding`, das die BOM nicht
+  einbettet (SUSHI-Fallback auf Coding, +1 Warning).
+- **Lungenfunktion** ([research-lungenfunktion.md](research-lungenfunktion.md)):
+  49 Profile, 40 direkt instanziiert, 9 generische Parents transitiv. Der
+  bekannte BF/FEV_FVC-Slicing-Bug wird nicht getriggert (Spirometrie trägt
+  FEV_FVC, Bodyplethysmographie BF). Mehrere Upstream-Defekte dokumentiert
+  (TODO-Platzhalter-Codes, ug-statt-kg-Unit, UCUM-Typo, kaputtes
+  conclusionCode-Pattern u.a.).
+
+Gesamtergebnis nach Integration: **0 Errors / 15 Warnings, 829 Instanzen,
+27 Bundles** (11 Patienten-Bundles + 16 Modul-Bundles).
 
 ## Begleitende Änderungen
 

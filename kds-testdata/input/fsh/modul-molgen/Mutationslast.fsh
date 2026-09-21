@@ -5,7 +5,6 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/St
 Usage: #example
 Description: "Observation: Mutationslast (TMB) fuer BRAF-Mutation"
 * insert TestDataLabel
-* meta.profile[+] = "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/tmb"
 * status = #final
 * category[labCategory] = $observation-category#laboratory "Laboratory"
 * code = $loinc#94076-7 "Mutations/Megabase [# Ratio] in Tumor"

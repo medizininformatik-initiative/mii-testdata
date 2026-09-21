@@ -56,6 +56,22 @@
     "endLine": 92
   },
   {
+    "outputFile": "Bundle-mii-exa-test-data-bundle-kardiologie-1.json",
+    "fshName": "mii-exa-test-data-bundle-kardiologie-1",
+    "fshType": "Instance",
+    "fshFile": "modul-kardiologie/Bundle.fsh",
+    "startLine": 5,
+    "endLine": 30
+  },
+  {
+    "outputFile": "Bundle-mii-exa-test-data-bundle-lungenfunktion-1.json",
+    "fshName": "mii-exa-test-data-bundle-lungenfunktion-1",
+    "fshType": "Instance",
+    "fshFile": "modul-lungenfunktion/Bundle.fsh",
+    "startLine": 5,
+    "endLine": 68
+  },
+  {
     "outputFile": "Bundle-mii-exa-test-data-bundle-mikrobio-1.json",
     "fshName": "mii-exa-test-data-bundle-mikrobio-1",
     "fshType": "Instance",
@@ -200,12 +216,28 @@
     "endLine": 49
   },
   {
+    "outputFile": "Bundle-mii-exa-test-data-bundle-soziodemographie-1.json",
+    "fshName": "mii-exa-test-data-bundle-soziodemographie-1",
+    "fshType": "Instance",
+    "fshFile": "modul-soziodemographie/Bundle.fsh",
+    "startLine": 5,
+    "endLine": 32
+  },
+  {
     "outputFile": "Bundle-mii-exa-test-data-bundle-studien-1.json",
     "fshName": "mii-exa-test-data-bundle-studien-1",
     "fshType": "Instance",
     "fshFile": "modul-studien/Bundle.fsh",
     "startLine": 5,
     "endLine": 20
+  },
+  {
+    "outputFile": "Bundle-mii-exa-test-data-bundle-symptom-1.json",
+    "fshName": "mii-exa-test-data-bundle-symptom-1",
+    "fshType": "Instance",
+    "fshFile": "modul-symptom/Bundle.fsh",
+    "startLine": 5,
+    "endLine": 24
   },
   {
     "outputFile": "CarePlan-mii-exa-test-data-behandlungsempfehlung.json",
@@ -334,6 +366,30 @@
     "fshFile": "modul-icu/Condition.fsh",
     "startLine": 2,
     "endLine": 8
+  },
+  {
+    "outputFile": "Condition-mii-exa-test-data-kardiologie-diagnose-1.json",
+    "fshName": "mii-exa-test-data-kardiologie-diagnose-1",
+    "fshType": "Instance",
+    "fshFile": "modul-kardiologie/Condition.fsh",
+    "startLine": 7,
+    "endLine": 23
+  },
+  {
+    "outputFile": "Condition-mii-exa-test-data-kardiologie-diagnose-2.json",
+    "fshName": "mii-exa-test-data-kardiologie-diagnose-2",
+    "fshType": "Instance",
+    "fshFile": "modul-kardiologie/Condition.fsh",
+    "startLine": 27,
+    "endLine": 44
+  },
+  {
+    "outputFile": "Condition-mii-exa-test-data-kardiologie-klappenvitium-1.json",
+    "fshName": "mii-exa-test-data-kardiologie-klappenvitium-1",
+    "fshType": "Instance",
+    "fshFile": "modul-kardiologie/Condition.fsh",
+    "startLine": 47,
+    "endLine": 64
   },
   {
     "outputFile": "Condition-mii-exa-test-data-mikrobio-diagnose-1.json",
@@ -552,6 +608,22 @@
     "endLine": 8
   },
   {
+    "outputFile": "Condition-mii-exa-test-data-symptom-condition-1.json",
+    "fshName": "mii-exa-test-data-symptom-condition-1",
+    "fshType": "Instance",
+    "fshFile": "modul-symptom/Condition.fsh",
+    "startLine": 12,
+    "endLine": 43
+  },
+  {
+    "outputFile": "Condition-mii-exa-test-data-symptom-condition-2.json",
+    "fshName": "mii-exa-test-data-symptom-condition-2",
+    "fshType": "Instance",
+    "fshFile": "modul-symptom/Condition.fsh",
+    "startLine": 47,
+    "endLine": 69
+  },
+  {
     "outputFile": "Consent-mii-exa-test-data-patient-1-consent-1.json",
     "fshName": "mii-exa-test-data-patient-1-consent-1",
     "fshType": "Instance",
@@ -664,6 +736,14 @@
     "endLine": 9
   },
   {
+    "outputFile": "Device-mii-exa-test-data-kardiologie-device-1.json",
+    "fshName": "mii-exa-test-data-kardiologie-device-1",
+    "fshType": "Instance",
+    "fshFile": "modul-kardiologie/Device.fsh",
+    "startLine": 6,
+    "endLine": 17
+  },
+  {
     "outputFile": "Device-mii-exa-test-data-mikrobio-device-immunoassay-1.json",
     "fshName": "mii-exa-test-data-mikrobio-device-immunoassay-1",
     "fshType": "Instance",
@@ -712,12 +792,28 @@
     "endLine": 25
   },
   {
+    "outputFile": "Device-mii-exa-test-data-symptom-device-1.json",
+    "fshName": "mii-exa-test-data-symptom-device-1",
+    "fshType": "Instance",
+    "fshFile": "modul-symptom/Patient.fsh",
+    "startLine": 33,
+    "endLine": 42
+  },
+  {
     "outputFile": "DeviceMetric-mii-exa-test-data-devicemetric-roche-cobas-c303-1.json",
     "fshName": "mii-exa-test-data-devicemetric-roche-cobas-c303-1",
     "fshType": "Instance",
     "fshFile": "modul-labor/DeviceMetric.fsh",
     "startLine": 1,
     "endLine": 10
+  },
+  {
+    "outputFile": "DeviceMetric-mii-exa-test-data-kardiologie-devicemetric-1.json",
+    "fshName": "mii-exa-test-data-kardiologie-devicemetric-1",
+    "fshType": "Instance",
+    "fshFile": "modul-kardiologie/Device.fsh",
+    "startLine": 19,
+    "endLine": 28
   },
   {
     "outputFile": "DeviceMetric-mii-exa-test-data-patient-1-icu-ect-dm-param-1.json",
@@ -742,6 +838,38 @@
     "fshFile": "modul-bildgebung/DiagnosticReport.fsh",
     "startLine": 1,
     "endLine": 19
+  },
+  {
+    "outputFile": "DiagnosticReport-mii-exa-test-data-lungenfunktion-bodyplethysmographie-befund-1.json",
+    "fshName": "mii-exa-test-data-lungenfunktion-bodyplethysmographie-befund-1",
+    "fshType": "Instance",
+    "fshFile": "modul-lungenfunktion/DiagnosticReport.fsh",
+    "startLine": 50,
+    "endLine": 73
+  },
+  {
+    "outputFile": "DiagnosticReport-mii-exa-test-data-lungenfunktion-diffusion-befund-1.json",
+    "fshName": "mii-exa-test-data-lungenfunktion-diffusion-befund-1",
+    "fshType": "Instance",
+    "fshFile": "modul-lungenfunktion/DiagnosticReport.fsh",
+    "startLine": 76,
+    "endLine": 89
+  },
+  {
+    "outputFile": "DiagnosticReport-mii-exa-test-data-lungenfunktion-provokationstest-befund-1.json",
+    "fshName": "mii-exa-test-data-lungenfunktion-provokationstest-befund-1",
+    "fshType": "Instance",
+    "fshFile": "modul-lungenfunktion/DiagnosticReport.fsh",
+    "startLine": 92,
+    "endLine": 109
+  },
+  {
+    "outputFile": "DiagnosticReport-mii-exa-test-data-lungenfunktion-spirometrie-befund-1.json",
+    "fshName": "mii-exa-test-data-lungenfunktion-spirometrie-befund-1",
+    "fshType": "Instance",
+    "fshFile": "modul-lungenfunktion/DiagnosticReport.fsh",
+    "startLine": 26,
+    "endLine": 47
   },
   {
     "outputFile": "DiagnosticReport-mii-exa-test-data-mikrobio-diagnostic-report-1.json",
@@ -928,6 +1056,22 @@
     "endLine": 36
   },
   {
+    "outputFile": "Encounter-mii-exa-test-data-kardiologie-encounter-1.json",
+    "fshName": "mii-exa-test-data-kardiologie-encounter-1",
+    "fshType": "Instance",
+    "fshFile": "modul-kardiologie/Patient.fsh",
+    "startLine": 20,
+    "endLine": 32
+  },
+  {
+    "outputFile": "Encounter-mii-exa-test-data-lungenfunktion-encounter-1.json",
+    "fshName": "mii-exa-test-data-lungenfunktion-encounter-1",
+    "fshType": "Instance",
+    "fshFile": "modul-lungenfunktion/Patient.fsh",
+    "startLine": 20,
+    "endLine": 29
+  },
+  {
     "outputFile": "Encounter-mii-exa-test-data-mikrobio-encounter-1.json",
     "fshName": "mii-exa-test-data-mikrobio-encounter-1",
     "fshType": "Instance",
@@ -1094,6 +1238,14 @@
     "fshFile": "modul-studien/Patient.fsh",
     "startLine": 17,
     "endLine": 26
+  },
+  {
+    "outputFile": "Encounter-mii-exa-test-data-symptom-encounter-1.json",
+    "fshName": "mii-exa-test-data-symptom-encounter-1",
+    "fshType": "Instance",
+    "fshFile": "modul-symptom/Patient.fsh",
+    "startLine": 18,
+    "endLine": 28
   },
   {
     "outputFile": "FamilyMemberHistory-mii-exa-test-data-patient-3-molgen-family-member-history-1.json",
@@ -1328,6 +1480,22 @@
     "endLine": 256
   },
   {
+    "outputFile": "Location-mii-exa-test-data-lungenfunktion-umgebung-1.json",
+    "fshName": "mii-exa-test-data-lungenfunktion-umgebung-1",
+    "fshType": "Instance",
+    "fshFile": "modul-lungenfunktion/Patient.fsh",
+    "startLine": 32,
+    "endLine": 40
+  },
+  {
+    "outputFile": "Medication-mii-exa-test-data-lungenfunktion-methacholine-1.json",
+    "fshName": "mii-exa-test-data-lungenfunktion-methacholine-1",
+    "fshType": "Instance",
+    "fshFile": "modul-lungenfunktion/Medication.fsh",
+    "startLine": 6,
+    "endLine": 20
+  },
+  {
     "outputFile": "Medication-mii-exa-test-data-medication-5-fluorouracil.json",
     "fshName": "mii-exa-test-data-medication-5-fluorouracil",
     "fshType": "Instance",
@@ -1550,6 +1718,22 @@
     "fshFile": "modul-bildgebung/ContrastAdministration.fsh",
     "startLine": 1,
     "endLine": 18
+  },
+  {
+    "outputFile": "MedicationAdministration-mii-exa-test-data-lungenfunktion-dosis-gabe-1.json",
+    "fshName": "mii-exa-test-data-lungenfunktion-dosis-gabe-1",
+    "fshType": "Instance",
+    "fshFile": "modul-lungenfunktion/Medication.fsh",
+    "startLine": 23,
+    "endLine": 34
+  },
+  {
+    "outputFile": "MedicationAdministration-mii-exa-test-data-lungenfunktion-dosis-gabe-2.json",
+    "fshName": "mii-exa-test-data-lungenfunktion-dosis-gabe-2",
+    "fshType": "Instance",
+    "fshFile": "modul-lungenfunktion/Medication.fsh",
+    "startLine": 37,
+    "endLine": 49
   },
   {
     "outputFile": "MedicationAdministration-mii-exa-test-data-patient-1-medadmin-1.json",
@@ -2270,6 +2454,350 @@
     "fshFile": "modul-bildgebung/Patient.fsh",
     "startLine": 39,
     "endLine": 47
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-kardiologie-erstereignis-1.json",
+    "fshName": "mii-exa-test-data-kardiologie-erstereignis-1",
+    "fshType": "Instance",
+    "fshFile": "modul-kardiologie/Observation.fsh",
+    "startLine": 81,
+    "endLine": 95
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-kardiologie-geraeteprogrammierung-1.json",
+    "fshName": "mii-exa-test-data-kardiologie-geraeteprogrammierung-1",
+    "fshType": "Instance",
+    "fshFile": "modul-kardiologie/Observation.fsh",
+    "startLine": 137,
+    "endLine": 150
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-kardiologie-htx-nein-1.json",
+    "fshName": "mii-exa-test-data-kardiologie-htx-nein-1",
+    "fshType": "Instance",
+    "fshFile": "modul-kardiologie/Observation.fsh",
+    "startLine": 98,
+    "endLine": 111
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-kardiologie-kh-aufenthalte-1.json",
+    "fshName": "mii-exa-test-data-kardiologie-kh-aufenthalte-1",
+    "fshType": "Instance",
+    "fshFile": "modul-kardiologie/Observation.fsh",
+    "startLine": 66,
+    "endLine": 78
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-kardiologie-lvef-1.json",
+    "fshName": "mii-exa-test-data-kardiologie-lvef-1",
+    "fshType": "Instance",
+    "fshFile": "modul-kardiologie/Observation.fsh",
+    "startLine": 9,
+    "endLine": 27
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-kardiologie-mrs-1.json",
+    "fshName": "mii-exa-test-data-kardiologie-mrs-1",
+    "fshType": "Instance",
+    "fshFile": "modul-kardiologie/Observation.fsh",
+    "startLine": 48,
+    "endLine": 63
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-kardiologie-nyha-1.json",
+    "fshName": "mii-exa-test-data-kardiologie-nyha-1",
+    "fshType": "Instance",
+    "fshFile": "modul-kardiologie/Observation.fsh",
+    "startLine": 30,
+    "endLine": 45
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-kardiologie-rauchen-1.json",
+    "fshName": "mii-exa-test-data-kardiologie-rauchen-1",
+    "fshType": "Instance",
+    "fshFile": "modul-kardiologie/Observation.fsh",
+    "startLine": 114,
+    "endLine": 134
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-lungenfunktion-bf-1.json",
+    "fshName": "mii-exa-test-data-lungenfunktion-bf-1",
+    "fshType": "Instance",
+    "fshFile": "modul-lungenfunktion/ObservationSpirometrie.fsh",
+    "startLine": 8,
+    "endLine": 26
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-lungenfunktion-co2-1.json",
+    "fshName": "mii-exa-test-data-lungenfunktion-co2-1",
+    "fshType": "Instance",
+    "fshFile": "modul-lungenfunktion/ObservationUmgebung.fsh",
+    "startLine": 8,
+    "endLine": 21
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-lungenfunktion-dlco-1.json",
+    "fshName": "mii-exa-test-data-lungenfunktion-dlco-1",
+    "fshType": "Instance",
+    "fshFile": "modul-lungenfunktion/ObservationDiffusion.fsh",
+    "startLine": 8,
+    "endLine": 22
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-lungenfunktion-dlcoc-1.json",
+    "fshName": "mii-exa-test-data-lungenfunktion-dlcoc-1",
+    "fshType": "Instance",
+    "fshFile": "modul-lungenfunktion/ObservationDiffusion.fsh",
+    "startLine": 25,
+    "endLine": 35
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-lungenfunktion-dosis-kumuliert-1.json",
+    "fshName": "mii-exa-test-data-lungenfunktion-dosis-kumuliert-1",
+    "fshType": "Instance",
+    "fshFile": "modul-lungenfunktion/ObservationProvokation.fsh",
+    "startLine": 93,
+    "endLine": 102
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-lungenfunktion-dosis-schwellwert-1.json",
+    "fshName": "mii-exa-test-data-lungenfunktion-dosis-schwellwert-1",
+    "fshType": "Instance",
+    "fshFile": "modul-lungenfunktion/ObservationProvokation.fsh",
+    "startLine": 81,
+    "endLine": 90
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-lungenfunktion-fev-1.json",
+    "fshName": "mii-exa-test-data-lungenfunktion-fev-1",
+    "fshType": "Instance",
+    "fshFile": "modul-lungenfunktion/ObservationSpirometrie.fsh",
+    "startLine": 29,
+    "endLine": 48
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-lungenfunktion-fev-fvc-1.json",
+    "fshName": "mii-exa-test-data-lungenfunktion-fev-fvc-1",
+    "fshType": "Instance",
+    "fshFile": "modul-lungenfunktion/ObservationSpirometrie.fsh",
+    "startLine": 70,
+    "endLine": 85
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-lungenfunktion-fev-prov-1.json",
+    "fshName": "mii-exa-test-data-lungenfunktion-fev-prov-1",
+    "fshType": "Instance",
+    "fshFile": "modul-lungenfunktion/ObservationProvokation.fsh",
+    "startLine": 9,
+    "endLine": 18
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-lungenfunktion-fev-prov-2.json",
+    "fshName": "mii-exa-test-data-lungenfunktion-fev-prov-2",
+    "fshType": "Instance",
+    "fshFile": "modul-lungenfunktion/ObservationProvokation.fsh",
+    "startLine": 21,
+    "endLine": 30
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-lungenfunktion-frc-1.json",
+    "fshName": "mii-exa-test-data-lungenfunktion-frc-1",
+    "fshType": "Instance",
+    "fshFile": "modul-lungenfunktion/ObservationBodyplethysmographie.fsh",
+    "startLine": 8,
+    "endLine": 20
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-lungenfunktion-frc-prov-1.json",
+    "fshName": "mii-exa-test-data-lungenfunktion-frc-prov-1",
+    "fshType": "Instance",
+    "fshFile": "modul-lungenfunktion/ObservationProvokation.fsh",
+    "startLine": 69,
+    "endLine": 78
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-lungenfunktion-fvc-1.json",
+    "fshName": "mii-exa-test-data-lungenfunktion-fvc-1",
+    "fshType": "Instance",
+    "fshFile": "modul-lungenfunktion/ObservationSpirometrie.fsh",
+    "startLine": 51,
+    "endLine": 67
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-lungenfunktion-gewicht-1.json",
+    "fshName": "mii-exa-test-data-lungenfunktion-gewicht-1",
+    "fshType": "Instance",
+    "fshFile": "modul-lungenfunktion/ObservationUmgebung.fsh",
+    "startLine": 59,
+    "endLine": 68
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-lungenfunktion-hb-1.json",
+    "fshName": "mii-exa-test-data-lungenfunktion-hb-1",
+    "fshType": "Instance",
+    "fshFile": "modul-lungenfunktion/ObservationDiffusion.fsh",
+    "startLine": 84,
+    "endLine": 95
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-lungenfunktion-ic-1.json",
+    "fshName": "mii-exa-test-data-lungenfunktion-ic-1",
+    "fshType": "Instance",
+    "fshFile": "modul-lungenfunktion/ObservationSpirometrie.fsh",
+    "startLine": 88,
+    "endLine": 102
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-lungenfunktion-irv-erv-1.json",
+    "fshName": "mii-exa-test-data-lungenfunktion-irv-erv-1",
+    "fshType": "Instance",
+    "fshFile": "modul-lungenfunktion/ObservationSpirometrie.fsh",
+    "startLine": 105,
+    "endLine": 117
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-lungenfunktion-kco-1.json",
+    "fshName": "mii-exa-test-data-lungenfunktion-kco-1",
+    "fshType": "Instance",
+    "fshFile": "modul-lungenfunktion/ObservationDiffusion.fsh",
+    "startLine": 38,
+    "endLine": 54
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-lungenfunktion-kcoc-1.json",
+    "fshName": "mii-exa-test-data-lungenfunktion-kcoc-1",
+    "fshType": "Instance",
+    "fshFile": "modul-lungenfunktion/ObservationDiffusion.fsh",
+    "startLine": 57,
+    "endLine": 69
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-lungenfunktion-luftfeuchtigkeit-1.json",
+    "fshName": "mii-exa-test-data-lungenfunktion-luftfeuchtigkeit-1",
+    "fshType": "Instance",
+    "fshFile": "modul-lungenfunktion/ObservationUmgebung.fsh",
+    "startLine": 40,
+    "endLine": 53
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-lungenfunktion-lufttemperatur-1.json",
+    "fshName": "mii-exa-test-data-lungenfunktion-lufttemperatur-1",
+    "fshType": "Instance",
+    "fshFile": "modul-lungenfunktion/ObservationUmgebung.fsh",
+    "startLine": 24,
+    "endLine": 37
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-lungenfunktion-mef-1.json",
+    "fshName": "mii-exa-test-data-lungenfunktion-mef-1",
+    "fshType": "Instance",
+    "fshFile": "modul-lungenfunktion/ObservationSpirometrie.fsh",
+    "startLine": 120,
+    "endLine": 130
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-lungenfunktion-pef-1.json",
+    "fshName": "mii-exa-test-data-lungenfunktion-pef-1",
+    "fshType": "Instance",
+    "fshFile": "modul-lungenfunktion/ObservationSpirometrie.fsh",
+    "startLine": 133,
+    "endLine": 148
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-lungenfunktion-pef-prov-1.json",
+    "fshName": "mii-exa-test-data-lungenfunktion-pef-prov-1",
+    "fshType": "Instance",
+    "fshFile": "modul-lungenfunktion/ObservationProvokation.fsh",
+    "startLine": 33,
+    "endLine": 42
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-lungenfunktion-r-1.json",
+    "fshName": "mii-exa-test-data-lungenfunktion-r-1",
+    "fshType": "Instance",
+    "fshFile": "modul-lungenfunktion/ObservationBodyplethysmographie.fsh",
+    "startLine": 23,
+    "endLine": 36
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-lungenfunktion-r-prov-1.json",
+    "fshName": "mii-exa-test-data-lungenfunktion-r-prov-1",
+    "fshType": "Instance",
+    "fshFile": "modul-lungenfunktion/ObservationProvokation.fsh",
+    "startLine": 45,
+    "endLine": 54
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-lungenfunktion-rv-1.json",
+    "fshName": "mii-exa-test-data-lungenfunktion-rv-1",
+    "fshType": "Instance",
+    "fshFile": "modul-lungenfunktion/ObservationBodyplethysmographie.fsh",
+    "startLine": 98,
+    "endLine": 112
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-lungenfunktion-rv-tlc-1.json",
+    "fshName": "mii-exa-test-data-lungenfunktion-rv-tlc-1",
+    "fshType": "Instance",
+    "fshFile": "modul-lungenfunktion/ObservationBodyplethysmographie.fsh",
+    "startLine": 115,
+    "endLine": 127
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-lungenfunktion-sg-total-1.json",
+    "fshName": "mii-exa-test-data-lungenfunktion-sg-total-1",
+    "fshType": "Instance",
+    "fshFile": "modul-lungenfunktion/ObservationBodyplethysmographie.fsh",
+    "startLine": 69,
+    "endLine": 78
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-lungenfunktion-sr-1.json",
+    "fshName": "mii-exa-test-data-lungenfunktion-sr-1",
+    "fshType": "Instance",
+    "fshFile": "modul-lungenfunktion/ObservationBodyplethysmographie.fsh",
+    "startLine": 39,
+    "endLine": 51
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-lungenfunktion-sr-eff-1.json",
+    "fshName": "mii-exa-test-data-lungenfunktion-sr-eff-1",
+    "fshType": "Instance",
+    "fshFile": "modul-lungenfunktion/ObservationBodyplethysmographie.fsh",
+    "startLine": 54,
+    "endLine": 66
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-lungenfunktion-sr-prov-1.json",
+    "fshName": "mii-exa-test-data-lungenfunktion-sr-prov-1",
+    "fshType": "Instance",
+    "fshFile": "modul-lungenfunktion/ObservationProvokation.fsh",
+    "startLine": 57,
+    "endLine": 66
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-lungenfunktion-tlc-1.json",
+    "fshName": "mii-exa-test-data-lungenfunktion-tlc-1",
+    "fshType": "Instance",
+    "fshFile": "modul-lungenfunktion/ObservationBodyplethysmographie.fsh",
+    "startLine": 81,
+    "endLine": 95
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-lungenfunktion-va-1.json",
+    "fshName": "mii-exa-test-data-lungenfunktion-va-1",
+    "fshType": "Instance",
+    "fshFile": "modul-lungenfunktion/ObservationDiffusion.fsh",
+    "startLine": 72,
+    "endLine": 81
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-lungenfunktion-vc-1.json",
+    "fshName": "mii-exa-test-data-lungenfunktion-vc-1",
+    "fshType": "Instance",
+    "fshFile": "modul-lungenfunktion/ObservationSpirometrie.fsh",
+    "startLine": 151,
+    "endLine": 167
   },
   {
     "outputFile": "Observation-mii-exa-test-data-mikrobio-allgemeine-bestimmung-1.json",
@@ -4269,7 +4797,7 @@
     "fshType": "Instance",
     "fshFile": "modul-molgen/Mikrosatelliteninstabilitaet.fsh",
     "startLine": 3,
-    "endLine": 22
+    "endLine": 21
   },
   {
     "outputFile": "Observation-mii-exa-test-data-patient-3-molgen-mutationslast-1.json",
@@ -4277,7 +4805,7 @@
     "fshType": "Instance",
     "fshFile": "modul-molgen/Mutationslast.fsh",
     "startLine": 3,
-    "endLine": 22
+    "endLine": 21
   },
   {
     "outputFile": "Observation-mii-exa-test-data-patient-3-molgen-therapeutische-implikation-1.json",
@@ -4648,6 +5176,174 @@
     "endLine": 57
   },
   {
+    "outputFile": "Observation-mii-exa-test-data-soziodemographie-ausbildung-1.json",
+    "fshName": "mii-exa-test-data-soziodemographie-ausbildung-1",
+    "fshType": "Instance",
+    "fshFile": "modul-soziodemographie/SoziooekonomischeFaktoren.fsh",
+    "startLine": 21,
+    "endLine": 29
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-soziodemographie-berufliche-stellung-1.json",
+    "fshName": "mii-exa-test-data-soziodemographie-berufliche-stellung-1",
+    "fshType": "Instance",
+    "fshFile": "modul-soziodemographie/SoziooekonomischeFaktoren.fsh",
+    "startLine": 54,
+    "endLine": 62
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-soziodemographie-berufliche-stellung-2.json",
+    "fshName": "mii-exa-test-data-soziodemographie-berufliche-stellung-2",
+    "fshType": "Instance",
+    "fshFile": "modul-soziodemographie/SoziooekonomischeFaktoren.fsh",
+    "startLine": 65,
+    "endLine": 73
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-soziodemographie-beschaeftigungsstatus-1.json",
+    "fshName": "mii-exa-test-data-soziodemographie-beschaeftigungsstatus-1",
+    "fshType": "Instance",
+    "fshFile": "modul-soziodemographie/SoziooekonomischeFaktoren.fsh",
+    "startLine": 32,
+    "endLine": 40
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-soziodemographie-beschaeftigungsstatus-2.json",
+    "fshName": "mii-exa-test-data-soziodemographie-beschaeftigungsstatus-2",
+    "fshType": "Instance",
+    "fshFile": "modul-soziodemographie/SoziooekonomischeFaktoren.fsh",
+    "startLine": 43,
+    "endLine": 51
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-soziodemographie-betreuungssituation-1.json",
+    "fshName": "mii-exa-test-data-soziodemographie-betreuungssituation-1",
+    "fshType": "Instance",
+    "fshFile": "modul-soziodemographie/Lebenssituation.fsh",
+    "startLine": 65,
+    "endLine": 73
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-soziodemographie-datenerhebung-1.json",
+    "fshName": "mii-exa-test-data-soziodemographie-datenerhebung-1",
+    "fshType": "Instance",
+    "fshFile": "modul-soziodemographie/Datenerhebung.fsh",
+    "startLine": 7,
+    "endLine": 30
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-soziodemographie-einkommen-1.json",
+    "fshName": "mii-exa-test-data-soziodemographie-einkommen-1",
+    "fshType": "Instance",
+    "fshFile": "modul-soziodemographie/SoziooekonomischeFaktoren.fsh",
+    "startLine": 76,
+    "endLine": 83
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-soziodemographie-geburtsland-mutter-1.json",
+    "fshName": "mii-exa-test-data-soziodemographie-geburtsland-mutter-1",
+    "fshType": "Instance",
+    "fshFile": "modul-soziodemographie/Lebenssituation.fsh",
+    "startLine": 11,
+    "endLine": 19
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-soziodemographie-geburtsland-vater-1.json",
+    "fshName": "mii-exa-test-data-soziodemographie-geburtsland-vater-1",
+    "fshType": "Instance",
+    "fshFile": "modul-soziodemographie/Lebenssituation.fsh",
+    "startLine": 22,
+    "endLine": 30
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-soziodemographie-haushaltsgroesse-1.json",
+    "fshName": "mii-exa-test-data-soziodemographie-haushaltsgroesse-1",
+    "fshType": "Instance",
+    "fshFile": "modul-soziodemographie/Lebenssituation.fsh",
+    "startLine": 55,
+    "endLine": 62
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-soziodemographie-partnerschaft-1.json",
+    "fshName": "mii-exa-test-data-soziodemographie-partnerschaft-1",
+    "fshType": "Instance",
+    "fshFile": "modul-soziodemographie/Lebenssituation.fsh",
+    "startLine": 33,
+    "endLine": 41
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-soziodemographie-schulabschluss-1.json",
+    "fshName": "mii-exa-test-data-soziodemographie-schulabschluss-1",
+    "fshType": "Instance",
+    "fshFile": "modul-soziodemographie/SoziooekonomischeFaktoren.fsh",
+    "startLine": 86,
+    "endLine": 94
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-soziodemographie-schuljahre-1.json",
+    "fshName": "mii-exa-test-data-soziodemographie-schuljahre-1",
+    "fshType": "Instance",
+    "fshFile": "modul-soziodemographie/SoziooekonomischeFaktoren.fsh",
+    "startLine": 97,
+    "endLine": 104
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-soziodemographie-schwerbehindertenausweis-1.json",
+    "fshName": "mii-exa-test-data-soziodemographie-schwerbehindertenausweis-1",
+    "fshType": "Instance",
+    "fshFile": "modul-soziodemographie/Lebenssituation.fsh",
+    "startLine": 76,
+    "endLine": 87
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-soziodemographie-soziooekonomische-faktoren-1.json",
+    "fshName": "mii-exa-test-data-soziodemographie-soziooekonomische-faktoren-1",
+    "fshType": "Instance",
+    "fshFile": "modul-soziodemographie/SoziooekonomischeFaktoren.fsh",
+    "startLine": 12,
+    "endLine": 18
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-soziodemographie-vertrauensperson-1.json",
+    "fshName": "mii-exa-test-data-soziodemographie-vertrauensperson-1",
+    "fshType": "Instance",
+    "fshFile": "modul-soziodemographie/Lebenssituation.fsh",
+    "startLine": 44,
+    "endLine": 52
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-symptom-observation-1.json",
+    "fshName": "mii-exa-test-data-symptom-observation-1",
+    "fshType": "Instance",
+    "fshFile": "modul-symptom/Observation.fsh",
+    "startLine": 12,
+    "endLine": 34
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-symptom-observation-2.json",
+    "fshName": "mii-exa-test-data-symptom-observation-2",
+    "fshType": "Instance",
+    "fshFile": "modul-symptom/Observation.fsh",
+    "startLine": 37,
+    "endLine": 54
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-symptom-observation-3.json",
+    "fshName": "mii-exa-test-data-symptom-observation-3",
+    "fshType": "Instance",
+    "fshFile": "modul-symptom/Observation.fsh",
+    "startLine": 57,
+    "endLine": 75
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-symptom-observation-4.json",
+    "fshName": "mii-exa-test-data-symptom-observation-4",
+    "fshType": "Instance",
+    "fshFile": "modul-symptom/Observation.fsh",
+    "startLine": 78,
+    "endLine": 93
+  },
+  {
     "outputFile": "Organization-mii-exa-test-data-mikrobio-organization-lab-1.json",
     "fshName": "mii-exa-test-data-mikrobio-organization-lab-1",
     "fshType": "Instance",
@@ -4774,6 +5470,22 @@
     "fshFile": "modul-icu/Patient.fsh",
     "startLine": 7,
     "endLine": 21
+  },
+  {
+    "outputFile": "Patient-mii-exa-test-data-kardiologie-patient-1.json",
+    "fshName": "mii-exa-test-data-kardiologie-patient-1",
+    "fshType": "Instance",
+    "fshFile": "modul-kardiologie/Patient.fsh",
+    "startLine": 8,
+    "endLine": 18
+  },
+  {
+    "outputFile": "Patient-mii-exa-test-data-lungenfunktion-patient-1.json",
+    "fshName": "mii-exa-test-data-lungenfunktion-patient-1",
+    "fshType": "Instance",
+    "fshFile": "modul-lungenfunktion/Patient.fsh",
+    "startLine": 8,
+    "endLine": 18
   },
   {
     "outputFile": "Patient-mii-exa-test-data-mikrobio-patient-1.json",
@@ -4928,12 +5640,28 @@
     "endLine": 15
   },
   {
+    "outputFile": "Patient-mii-exa-test-data-soziodemographie-patient-1.json",
+    "fshName": "mii-exa-test-data-soziodemographie-patient-1",
+    "fshType": "Instance",
+    "fshFile": "modul-soziodemographie/Patient.fsh",
+    "startLine": 6,
+    "endLine": 17
+  },
+  {
     "outputFile": "Patient-mii-exa-test-data-studien-patient-1.json",
     "fshName": "mii-exa-test-data-studien-patient-1",
     "fshType": "Instance",
     "fshFile": "modul-studien/Patient.fsh",
     "startLine": 5,
     "endLine": 15
+  },
+  {
+    "outputFile": "Patient-mii-exa-test-data-symptom-patient-1.json",
+    "fshName": "mii-exa-test-data-symptom-patient-1",
+    "fshType": "Instance",
+    "fshFile": "modul-symptom/Patient.fsh",
+    "startLine": 5,
+    "endLine": 16
   },
   {
     "outputFile": "Practitioner-mii-exa-test-data-practitioner-physician-1.json",
@@ -4974,6 +5702,46 @@
     "fshFile": "modul-bildgebung/ImagingProcedure.fsh",
     "startLine": 1,
     "endLine": 14
+  },
+  {
+    "outputFile": "Procedure-mii-exa-test-data-kardiologie-deviceimplantation-1.json",
+    "fshName": "mii-exa-test-data-kardiologie-deviceimplantation-1",
+    "fshType": "Instance",
+    "fshFile": "modul-kardiologie/Procedure.fsh",
+    "startLine": 6,
+    "endLine": 25
+  },
+  {
+    "outputFile": "Procedure-mii-exa-test-data-lungenfunktion-bodyplethysmographie-messung-1.json",
+    "fshName": "mii-exa-test-data-lungenfunktion-bodyplethysmographie-messung-1",
+    "fshType": "Instance",
+    "fshFile": "modul-lungenfunktion/Procedure.fsh",
+    "startLine": 20,
+    "endLine": 32
+  },
+  {
+    "outputFile": "Procedure-mii-exa-test-data-lungenfunktion-diffusion-messung-1.json",
+    "fshName": "mii-exa-test-data-lungenfunktion-diffusion-messung-1",
+    "fshType": "Instance",
+    "fshFile": "modul-lungenfunktion/Procedure.fsh",
+    "startLine": 34,
+    "endLine": 46
+  },
+  {
+    "outputFile": "Procedure-mii-exa-test-data-lungenfunktion-provokationstest-messung-1.json",
+    "fshName": "mii-exa-test-data-lungenfunktion-provokationstest-messung-1",
+    "fshType": "Instance",
+    "fshFile": "modul-lungenfunktion/Procedure.fsh",
+    "startLine": 48,
+    "endLine": 63
+  },
+  {
+    "outputFile": "Procedure-mii-exa-test-data-lungenfunktion-spirometrie-messung-1.json",
+    "fshName": "mii-exa-test-data-lungenfunktion-spirometrie-messung-1",
+    "fshType": "Instance",
+    "fshFile": "modul-lungenfunktion/Procedure.fsh",
+    "startLine": 6,
+    "endLine": 18
   },
   {
     "outputFile": "Procedure-mii-exa-test-data-mtb-genomic-study-1.json",
@@ -5366,6 +6134,14 @@
     "fshFile": "modul-pro/QuestionnaireResponse.fsh",
     "startLine": 70,
     "endLine": 103
+  },
+  {
+    "outputFile": "QuestionnaireResponse-mii-exa-test-data-symptom-questionnaireresponse-1.json",
+    "fshName": "mii-exa-test-data-symptom-questionnaireresponse-1",
+    "fshType": "Instance",
+    "fshFile": "modul-symptom/Patient.fsh",
+    "startLine": 44,
+    "endLine": 55
   },
   {
     "outputFile": "RequestGroup-mii-exa-test-data-mtb-therapieempfehlung-kombination-1.json",

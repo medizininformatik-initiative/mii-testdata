@@ -465,6 +465,22 @@
       },
       {
         "reference": {
+          "reference": "Bundle/mii-exa-test-data-bundle-kardiologie-1"
+        },
+        "name": "mii-exa-test-data-bundle-kardiologie-1",
+        "description": "Bundle: Kardiologie Testdaten Patient-1 (KHK mit Z.n. Myokardinfarkt, Aortenklappenstenose, Herzinsuffizienz NYHA II, Z.n. embolischem zerebrovaskulaerem Ereignis, ICD-Implantation)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Bundle/mii-exa-test-data-bundle-lungenfunktion-1"
+        },
+        "name": "mii-exa-test-data-bundle-lungenfunktion-1",
+        "description": "Bundle: Lungenfunktion Testdaten Patient-1 (Spirometrie, Bodyplethysmographie, Diffusionsmessung und Methacholin-Provokationstest bei V.a. Asthma bronchiale)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Bundle/mii-exa-test-data-bundle-mikrobio-1"
         },
         "name": "mii-exa-test-data-bundle-mikrobio-1",
@@ -601,10 +617,26 @@
       },
       {
         "reference": {
+          "reference": "Bundle/mii-exa-test-data-bundle-soziodemographie-1"
+        },
+        "name": "mii-exa-test-data-bundle-soziodemographie-1",
+        "description": "Bundle: Soziodemographie Testdaten Patient-1",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Bundle/mii-exa-test-data-bundle-studien-1"
         },
         "name": "mii-exa-test-data-bundle-studien-1",
         "description": "Bundle: Studien Testdaten Patient-1",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Bundle/mii-exa-test-data-bundle-symptom-1"
+        },
+        "name": "mii-exa-test-data-bundle-symptom-1",
+        "description": "Bundle: Symptom Testdaten Patient-1",
         "exampleBoolean": true
       },
       {
@@ -697,6 +729,134 @@
       },
       {
         "reference": {
+          "reference": "Device/mii-exa-test-data-kardiologie-device-1"
+        },
+        "name": "mii-exa-test-data-kardiologie-device-1",
+        "description": "Kardio Device: Implantierbarer Kardioverter-Defibrillator (ICD)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Procedure/mii-exa-test-data-kardiologie-deviceimplantation-1"
+        },
+        "name": "mii-exa-test-data-kardiologie-deviceimplantation-1",
+        "description": "Kardio Kardiale Deviceimplantation: Implantation eines ICD",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "DeviceMetric/mii-exa-test-data-kardiologie-devicemetric-1"
+        },
+        "name": "mii-exa-test-data-kardiologie-devicemetric-1",
+        "description": "Kardio DeviceMetric: NBG-Schrittmachermodus des ICD",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Condition/mii-exa-test-data-kardiologie-diagnose-1"
+        },
+        "name": "mii-exa-test-data-kardiologie-diagnose-1",
+        "description": "Kardio Diagnose: Akuter transmuraler Myokardinfarkt der Vorderwand",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Condition/mii-exa-test-data-kardiologie-diagnose-2"
+        },
+        "name": "mii-exa-test-data-kardiologie-diagnose-2",
+        "description": "Kardio Diagnose: Hirninfarkt durch embolischen Verschluss zerebraler Arterien (eg-cv)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Encounter/mii-exa-test-data-kardiologie-encounter-1"
+        },
+        "name": "mii-exa-test-data-kardiologie-encounter-1",
+        "description": "Kardiologie Test Encounter: stationaere Aufnahme wegen dekompensierter Herzinsuffizienz",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-kardiologie-erstereignis-1"
+        },
+        "name": "mii-exa-test-data-kardiologie-erstereignis-1",
+        "description": "Kardio Atherosklerotisches Erstereignis: KHK, Erstdiagnose 03/2020",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-kardiologie-geraeteprogrammierung-1"
+        },
+        "name": "mii-exa-test-data-kardiologie-geraeteprogrammierung-1",
+        "description": "Kardio Geraeteprogrammierung: Brady Pacing Mode VVI",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-kardiologie-htx-nein-1"
+        },
+        "name": "mii-exa-test-data-kardiologie-htx-nein-1",
+        "description": "Kardio Nein/Unbekannt: Herztransplantation - nein",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-kardiologie-kh-aufenthalte-1"
+        },
+        "name": "mii-exa-test-data-kardiologie-kh-aufenthalte-1",
+        "description": "Kardio Anzahl KH-Aufenthalte wegen Herzinsuffizienz: 2 in den letzten 12 Monaten",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Condition/mii-exa-test-data-kardiologie-klappenvitium-1"
+        },
+        "name": "mii-exa-test-data-kardiologie-klappenvitium-1",
+        "description": "Kardio Klappenvitium: hoehergradige Aortenklappenstenose",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-kardiologie-lvef-1"
+        },
+        "name": "mii-exa-test-data-kardiologie-lvef-1",
+        "description": "Kardio LVEF: 38 % (reduzierte Ejektionsfraktion, HFrEF)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-kardiologie-mrs-1"
+        },
+        "name": "mii-exa-test-data-kardiologie-mrs-1",
+        "description": "Kardio Score mRS: 1 (keine relevante Beeintraechtigung)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-kardiologie-nyha-1"
+        },
+        "name": "mii-exa-test-data-kardiologie-nyha-1",
+        "description": "Kardio Score NYHA: Klasse II",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Patient/mii-exa-test-data-kardiologie-patient-1"
+        },
+        "name": "mii-exa-test-data-kardiologie-patient-1",
+        "description": "Kardiologie Test Patient: Karl Herzmann (KHK, Aortenklappenstenose, Herzinsuffizienz)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-kardiologie-rauchen-1"
+        },
+        "name": "mii-exa-test-data-kardiologie-rauchen-1",
+        "description": "Kardio Raucherstatus: Ex-Raucher, 30 Packungsjahre",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "BodyStructure/mii-exa-test-data-koerperstruktur"
         },
         "name": "mii-exa-test-data-koerperstruktur",
@@ -709,6 +869,398 @@
         },
         "name": "mii-exa-test-data-kontrastmittelgabe",
         "description": "MedicationAdministration: kontrastmittelgabe",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-lungenfunktion-bf-1"
+        },
+        "name": "mii-exa-test-data-lungenfunktion-bf-1",
+        "description": "Lungenfunktion BF: Atemfrequenz 14/min",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "DiagnosticReport/mii-exa-test-data-lungenfunktion-bodyplethysmographie-befund-1"
+        },
+        "name": "mii-exa-test-data-lungenfunktion-bodyplethysmographie-befund-1",
+        "description": "Lungenfunktion Bodyplethysmographie-Befund: erhoehter Atemwegswiderstand, leichte Ueberblaehung",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Procedure/mii-exa-test-data-lungenfunktion-bodyplethysmographie-messung-1"
+        },
+        "name": "mii-exa-test-data-lungenfunktion-bodyplethysmographie-messung-1",
+        "description": "Lungenfunktion Bodyplethysmographie-Messung",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-lungenfunktion-co2-1"
+        },
+        "name": "mii-exa-test-data-lungenfunktion-co2-1",
+        "description": "Lungenfunktion CO2-Konzentration im Messraum: 0.05 %",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "DiagnosticReport/mii-exa-test-data-lungenfunktion-diffusion-befund-1"
+        },
+        "name": "mii-exa-test-data-lungenfunktion-diffusion-befund-1",
+        "description": "Lungenfunktion Diffusions-Befund: normale CO-Diffusionskapazitaet",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Procedure/mii-exa-test-data-lungenfunktion-diffusion-messung-1"
+        },
+        "name": "mii-exa-test-data-lungenfunktion-diffusion-messung-1",
+        "description": "Lungenfunktion Diffusionsmessung (CO-Diffusionskapazitaet, Single-Breath)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-lungenfunktion-dlco-1"
+        },
+        "name": "mii-exa-test-data-lungenfunktion-dlco-1",
+        "description": "Lungenfunktion DLCO: 7.20 mmol/(min.kPa) (92 % vom Soll)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-lungenfunktion-dlcoc-1"
+        },
+        "name": "mii-exa-test-data-lungenfunktion-dlcoc-1",
+        "description": "Lungenfunktion DLCOc: 7.45 mmol/(min.kPa) (Hb-korrigiert)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "MedicationAdministration/mii-exa-test-data-lungenfunktion-dosis-gabe-1"
+        },
+        "name": "mii-exa-test-data-lungenfunktion-dosis-gabe-1",
+        "description": "Lungenfunktion Dosisgabe 1: 0.04 mg Methacholin inhalativ",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "MedicationAdministration/mii-exa-test-data-lungenfunktion-dosis-gabe-2"
+        },
+        "name": "mii-exa-test-data-lungenfunktion-dosis-gabe-2",
+        "description": "Lungenfunktion Dosisgabe 2: 0.30 mg Methacholin inhalativ",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-lungenfunktion-dosis-kumuliert-1"
+        },
+        "name": "mii-exa-test-data-lungenfunktion-dosis-kumuliert-1",
+        "description": "Lungenfunktion Dosis kumuliert: 0.34 mg Methacholin",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-lungenfunktion-dosis-schwellwert-1"
+        },
+        "name": "mii-exa-test-data-lungenfunktion-dosis-schwellwert-1",
+        "description": "Lungenfunktion Dosis-Schwellwert (PD20): 0.30 mg Methacholin",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Encounter/mii-exa-test-data-lungenfunktion-encounter-1"
+        },
+        "name": "mii-exa-test-data-lungenfunktion-encounter-1",
+        "description": "Lungenfunktion Test Encounter: ambulante Lungenfunktionsdiagnostik",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-lungenfunktion-fev-1"
+        },
+        "name": "mii-exa-test-data-lungenfunktion-fev-1",
+        "description": "Lungenfunktion FEV1: 2.10 L (74 % vom Soll)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-lungenfunktion-fev-fvc-1"
+        },
+        "name": "mii-exa-test-data-lungenfunktion-fev-fvc-1",
+        "description": "Lungenfunktion FEV1/FVC: 67.7 % (leichte Obstruktion)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-lungenfunktion-fev-prov-1"
+        },
+        "name": "mii-exa-test-data-lungenfunktion-fev-prov-1",
+        "description": "Lungenfunktion FEV1 (Provokation, Baseline): 2.10 L",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-lungenfunktion-fev-prov-2"
+        },
+        "name": "mii-exa-test-data-lungenfunktion-fev-prov-2",
+        "description": "Lungenfunktion FEV1 (Provokation, nach Methacholin): 1.55 L (-26 %)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-lungenfunktion-frc-1"
+        },
+        "name": "mii-exa-test-data-lungenfunktion-frc-1",
+        "description": "Lungenfunktion FRC: 3.40 L (bodyplethysmographisch)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-lungenfunktion-frc-prov-1"
+        },
+        "name": "mii-exa-test-data-lungenfunktion-frc-prov-1",
+        "description": "Lungenfunktion FRC (Provokation, nach Methacholin): 3.60 L",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-lungenfunktion-fvc-1"
+        },
+        "name": "mii-exa-test-data-lungenfunktion-fvc-1",
+        "description": "Lungenfunktion FVC: 3.10 L (86 % vom Soll)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-lungenfunktion-gewicht-1"
+        },
+        "name": "mii-exa-test-data-lungenfunktion-gewicht-1",
+        "description": "Lungenfunktion Koerpergewicht: 68 (Einheit 'ug' durch Profil-Pattern vorgegeben, fachlich 'kg')",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-lungenfunktion-hb-1"
+        },
+        "name": "mii-exa-test-data-lungenfunktion-hb-1",
+        "description": "Lungenfunktion Hb: 13.8 g/dL",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-lungenfunktion-ic-1"
+        },
+        "name": "mii-exa-test-data-lungenfunktion-ic-1",
+        "description": "Lungenfunktion IC: 2.40 L",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-lungenfunktion-irv-erv-1"
+        },
+        "name": "mii-exa-test-data-lungenfunktion-irv-erv-1",
+        "description": "Lungenfunktion ERV: 0.90 L",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-lungenfunktion-kco-1"
+        },
+        "name": "mii-exa-test-data-lungenfunktion-kco-1",
+        "description": "Lungenfunktion KCO: 1.45 mmol/(min.kPa.L) (95 % vom Soll)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-lungenfunktion-kcoc-1"
+        },
+        "name": "mii-exa-test-data-lungenfunktion-kcoc-1",
+        "description": "Lungenfunktion KCOc: 1.50 mmol/(min.kPa.L) (Hb-korrigiert)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-lungenfunktion-luftfeuchtigkeit-1"
+        },
+        "name": "mii-exa-test-data-lungenfunktion-luftfeuchtigkeit-1",
+        "description": "Lungenfunktion Luftfeuchtigkeit im Messraum: 45 %",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-lungenfunktion-lufttemperatur-1"
+        },
+        "name": "mii-exa-test-data-lungenfunktion-lufttemperatur-1",
+        "description": "Lungenfunktion Lufttemperatur im Messraum: 21.5 Cel",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-lungenfunktion-mef-1"
+        },
+        "name": "mii-exa-test-data-lungenfunktion-mef-1",
+        "description": "Lungenfunktion MEF50: 1.90 L/s (deutlich reduziert)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Medication/mii-exa-test-data-lungenfunktion-methacholine-1"
+        },
+        "name": "mii-exa-test-data-lungenfunktion-methacholine-1",
+        "description": "Lungenfunktion Medication: Methacholin-Provokationsloesung (Provokit 0,33%)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Patient/mii-exa-test-data-lungenfunktion-patient-1"
+        },
+        "name": "mii-exa-test-data-lungenfunktion-patient-1",
+        "description": "Lungenfunktion Test Patient: Luise Atemwald (V.a. Asthma bronchiale)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-lungenfunktion-pef-1"
+        },
+        "name": "mii-exa-test-data-lungenfunktion-pef-1",
+        "description": "Lungenfunktion PEF: 5.20 L/s (75 % vom Soll)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-lungenfunktion-pef-prov-1"
+        },
+        "name": "mii-exa-test-data-lungenfunktion-pef-prov-1",
+        "description": "Lungenfunktion PEF (Provokation, nach Methacholin): 4.10 L/s",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "DiagnosticReport/mii-exa-test-data-lungenfunktion-provokationstest-befund-1"
+        },
+        "name": "mii-exa-test-data-lungenfunktion-provokationstest-befund-1",
+        "description": "Lungenfunktion Provokationstest-Befund: positiver Methacholin-Provokationstest",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Procedure/mii-exa-test-data-lungenfunktion-provokationstest-messung-1"
+        },
+        "name": "mii-exa-test-data-lungenfunktion-provokationstest-messung-1",
+        "description": "Lungenfunktion Provokationstest-Messung (Methacholin-Provokation)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-lungenfunktion-r-1"
+        },
+        "name": "mii-exa-test-data-lungenfunktion-r-1",
+        "description": "Lungenfunktion R_tot: 0.42 kPa/(L/s) (erhoeht)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-lungenfunktion-r-prov-1"
+        },
+        "name": "mii-exa-test-data-lungenfunktion-r-prov-1",
+        "description": "Lungenfunktion R_tot (Provokation, nach Methacholin): 0.55 kPa/(L/s)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-lungenfunktion-rv-1"
+        },
+        "name": "mii-exa-test-data-lungenfunktion-rv-1",
+        "description": "Lungenfunktion RV: 2.60 L (130 % vom Soll, Ueberblaehung)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-lungenfunktion-rv-tlc-1"
+        },
+        "name": "mii-exa-test-data-lungenfunktion-rv-tlc-1",
+        "description": "Lungenfunktion RV/TLC: 44 % (erhoeht)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-lungenfunktion-sg-total-1"
+        },
+        "name": "mii-exa-test-data-lungenfunktion-sg-total-1",
+        "description": "Lungenfunktion sG_tot: 0.74 /kPa.s (erniedrigt)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "DiagnosticReport/mii-exa-test-data-lungenfunktion-spirometrie-befund-1"
+        },
+        "name": "mii-exa-test-data-lungenfunktion-spirometrie-befund-1",
+        "description": "Lungenfunktion Spirometrie-Befund: leichte obstruktive Ventilationsstoerung",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Procedure/mii-exa-test-data-lungenfunktion-spirometrie-messung-1"
+        },
+        "name": "mii-exa-test-data-lungenfunktion-spirometrie-messung-1",
+        "description": "Lungenfunktion Spirometrie-Messung",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-lungenfunktion-sr-1"
+        },
+        "name": "mii-exa-test-data-lungenfunktion-sr-1",
+        "description": "Lungenfunktion sR_tot: 1.35 kPa.s (erhoeht)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-lungenfunktion-sr-eff-1"
+        },
+        "name": "mii-exa-test-data-lungenfunktion-sr-eff-1",
+        "description": "Lungenfunktion sR_eff: 1.10 kPa.s (leicht erhoeht)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-lungenfunktion-sr-prov-1"
+        },
+        "name": "mii-exa-test-data-lungenfunktion-sr-prov-1",
+        "description": "Lungenfunktion sR_tot (Provokation, nach Methacholin): 1.80 kPa.s",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-lungenfunktion-tlc-1"
+        },
+        "name": "mii-exa-test-data-lungenfunktion-tlc-1",
+        "description": "Lungenfunktion TLC: 5.90 L (107 % vom Soll)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Location/mii-exa-test-data-lungenfunktion-umgebung-1"
+        },
+        "name": "mii-exa-test-data-lungenfunktion-umgebung-1",
+        "description": "Lungenfunktion Umgebung: Lungenfunktionslabor (Raum innerhalb eines Gebaeudes)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-lungenfunktion-va-1"
+        },
+        "name": "mii-exa-test-data-lungenfunktion-va-1",
+        "description": "Lungenfunktion VA: 4.95 L",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-lungenfunktion-vc-1"
+        },
+        "name": "mii-exa-test-data-lungenfunktion-vc-1",
+        "description": "Lungenfunktion VC: 3.30 L (89 % vom Soll)",
         "exampleBoolean": true
       },
       {
@@ -5496,6 +6048,150 @@
       },
       {
         "reference": {
+          "reference": "Observation/mii-exa-test-data-soziodemographie-ausbildung-1"
+        },
+        "name": "mii-exa-test-data-soziodemographie-ausbildung-1",
+        "description": "Soziodemographie: Berufsausbildung Lehre",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-soziodemographie-berufliche-stellung-1"
+        },
+        "name": "mii-exa-test-data-soziodemographie-berufliche-stellung-1",
+        "description": "Soziodemographie: Berufliche Stellung Angestellte (lang-Slice)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-soziodemographie-berufliche-stellung-2"
+        },
+        "name": "mii-exa-test-data-soziodemographie-berufliche-stellung-2",
+        "description": "Soziodemographie: Berufliche Stellung Angestellte (minimal-Slice)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-soziodemographie-beschaeftigungsstatus-1"
+        },
+        "name": "mii-exa-test-data-soziodemographie-beschaeftigungsstatus-1",
+        "description": "Soziodemographie: Beschaeftigungsstatus Rentnerin (lang-Slice)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-soziodemographie-beschaeftigungsstatus-2"
+        },
+        "name": "mii-exa-test-data-soziodemographie-beschaeftigungsstatus-2",
+        "description": "Soziodemographie: Beschaeftigungsstatus Rente (minimal-Slice)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-soziodemographie-betreuungssituation-1"
+        },
+        "name": "mii-exa-test-data-soziodemographie-betreuungssituation-1",
+        "description": "Soziodemographie: Betreuung auf Anfrage (Hausnotruf)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-soziodemographie-datenerhebung-1"
+        },
+        "name": "mii-exa-test-data-soziodemographie-datenerhebung-1",
+        "description": "Soziodemographie: Datenerhebung per Selbstauskunft mit allen Einzel-Observations",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-soziodemographie-einkommen-1"
+        },
+        "name": "mii-exa-test-data-soziodemographie-einkommen-1",
+        "description": "Soziodemographie: Haushaltsnettoeinkommen 2.000 bis unter 3.000 Euro",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-soziodemographie-geburtsland-mutter-1"
+        },
+        "name": "mii-exa-test-data-soziodemographie-geburtsland-mutter-1",
+        "description": "Soziodemographie: Geburtsland der Mutter (Polen)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-soziodemographie-geburtsland-vater-1"
+        },
+        "name": "mii-exa-test-data-soziodemographie-geburtsland-vater-1",
+        "description": "Soziodemographie: Geburtsland des Vaters (Deutschland)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-soziodemographie-haushaltsgroesse-1"
+        },
+        "name": "mii-exa-test-data-soziodemographie-haushaltsgroesse-1",
+        "description": "Soziodemographie: Haushaltsgroesse 2 Personen",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-soziodemographie-partnerschaft-1"
+        },
+        "name": "mii-exa-test-data-soziodemographie-partnerschaft-1",
+        "description": "Soziodemographie: Aktuelle Partnerschaft vorhanden",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Patient/mii-exa-test-data-soziodemographie-patient-1"
+        },
+        "name": "mii-exa-test-data-soziodemographie-patient-1",
+        "description": "Soziodemographie Test Patient",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-soziodemographie-schulabschluss-1"
+        },
+        "name": "mii-exa-test-data-soziodemographie-schulabschluss-1",
+        "description": "Soziodemographie: Realschulabschluss",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-soziodemographie-schuljahre-1"
+        },
+        "name": "mii-exa-test-data-soziodemographie-schuljahre-1",
+        "description": "Soziodemographie: 10 Schuljahre",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-soziodemographie-schwerbehindertenausweis-1"
+        },
+        "name": "mii-exa-test-data-soziodemographie-schwerbehindertenausweis-1",
+        "description": "Soziodemographie: Schwerbehindertenausweis mit GdB 60 und Merkzeichen G",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-soziodemographie-soziooekonomische-faktoren-1"
+        },
+        "name": "mii-exa-test-data-soziodemographie-soziooekonomische-faktoren-1",
+        "description": "Soziodemographie: Soziooekonomischer Faktor (generisch)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-soziodemographie-vertrauensperson-1"
+        },
+        "name": "mii-exa-test-data-soziodemographie-vertrauensperson-1",
+        "description": "Soziodemographie: Vertrauensperson vorhanden",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "ServiceRequest/mii-exa-test-data-studie-einschluss-anfrage-1"
         },
         "name": "mii-exa-test-data-studie-einschluss-anfrage-1",
@@ -5524,6 +6220,86 @@
         },
         "name": "mii-exa-test-data-studien-patient-1",
         "description": "Studien Test Patient",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Condition/mii-exa-test-data-symptom-condition-1"
+        },
+        "name": "mii-exa-test-data-symptom-condition-1",
+        "description": "Symptom Condition: Chronische Spannungskopfschmerzen",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Condition/mii-exa-test-data-symptom-condition-2"
+        },
+        "name": "mii-exa-test-data-symptom-condition-2",
+        "description": "Symptom Condition: Chronische Herzinsuffizienz, NYHA-Klasse II",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Device/mii-exa-test-data-symptom-device-1"
+        },
+        "name": "mii-exa-test-data-symptom-device-1",
+        "description": "Symptom Test Device: digitales Symptomtagebuch (ePRO-App)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Encounter/mii-exa-test-data-symptom-encounter-1"
+        },
+        "name": "mii-exa-test-data-symptom-encounter-1",
+        "description": "Symptom Test Encounter (ambulante Abklaerung)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-symptom-observation-1"
+        },
+        "name": "mii-exa-test-data-symptom-observation-1",
+        "description": "Symptom Observation: Kopfschmerz mit Begleitsymptom und Schmerzintensitaet",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-symptom-observation-2"
+        },
+        "name": "mii-exa-test-data-symptom-observation-2",
+        "description": "Symptom Observation: Schmerzintensitaet NRS aus dem Kopfschmerztagebuch",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-symptom-observation-3"
+        },
+        "name": "mii-exa-test-data-symptom-observation-3",
+        "description": "Symptom Observation: Belastungsdyspnoe bei chronischer Herzinsuffizienz",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-symptom-observation-4"
+        },
+        "name": "mii-exa-test-data-symptom-observation-4",
+        "description": "Symptom Observation: Schwindel erfragt, keine verwertbare Angabe (dataAbsentReason)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Patient/mii-exa-test-data-symptom-patient-1"
+        },
+        "name": "mii-exa-test-data-symptom-patient-1",
+        "description": "Symptom Test Patient",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "QuestionnaireResponse/mii-exa-test-data-symptom-questionnaireresponse-1"
+        },
+        "name": "mii-exa-test-data-symptom-questionnaireresponse-1",
+        "description": "Symptom Test QuestionnaireResponse: Kopfschmerztagebuch",
         "exampleBoolean": true
       },
       {

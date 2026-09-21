@@ -53,7 +53,7 @@ Usage: #example
 Title: "MTB Systemische Therapie MedicationStatement"
 Description: "Test instance for MTB systemic therapy medication statement"
 * insert TestDataLabel
-* meta.profile = "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-systemische-therapie-medication-statement"
+* meta.profile = "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-systemtherapie-medication-statement"
 * basedOn = Reference(mii-exa-test-data-mtb-therapieempfehlung-1)
 * partOf = Reference(mii-exa-test-data-mtb-systemische-therapie-1)
 * status = #completed

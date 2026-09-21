@@ -478,7 +478,7 @@ Usage: #example
 Title: "MTB IHC MSI"
 Description: "Test instance for MSI by immunohistochemistry"
 * insert TestDataLabel
-* meta.profile = "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-immunohistochemistry-msi"
+* meta.profile = "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-msi"
 * status = #final
 * category[labCategory] = $fhir-observation-category#laboratory "Laboratory"
 * code.coding = $loinc#62862-8 "Microsatellite instability [Presence] in Tissue by Immune stain"
@@ -495,7 +495,7 @@ Usage: #example
 Title: "MTB In Situ Hybridization"
 Description: "Test instance for in situ hybridization biomarker"
 * insert TestDataLabel
-* meta.profile = "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-biomarker-insituhybridization"
+* meta.profile = "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-insituhybridization"
 * status = #final
 * category[labCategory] = $fhir-observation-category#laboratory "Laboratory"
 * category[mbCategory] = $TBD#biomarker-category

@@ -1527,8 +1527,7 @@
             }
           ],
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/mutationslast",
-            "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/tmb"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/mutationslast"
           ]
         },
         "category": [
@@ -1624,8 +1623,7 @@
             }
           ],
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/mikrosatelliteninstabilitaet",
-            "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/msi"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/mikrosatelliteninstabilitaet"
           ]
         },
         "category": [
