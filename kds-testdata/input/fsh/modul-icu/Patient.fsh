@@ -23,19 +23,16 @@ Description: "ICU Test Patient (Standort B). Identisch mit Onko-Patient an Stand
 Instance: mii-exa-test-data-icu-encounter-1
 InstanceOf: Encounter
 Usage: #example
-Description: "ICU Test Encounter (Standort B) - Aufnahme wegen COVID-19; Onkologie nur als Nebendiagnose"
+Description: "ICU Test Encounter (Standort B) - Aufnahme wegen COVID-19"
 * insert TestDataLabel
 * status = #finished
 * class = http://terminology.hl7.org/CodeSystem/v3-ActCode#IMP "inpatient encounter"
 * subject = Reference(mii-exa-test-data-icu-patient-1)
 * period.start = "2024-05-01"
 * period.end = "2024-05-14"
-* serviceProvider = Reference(mii-exa-crossmodul-standort-b)
 // Aufnahme-/Hauptdiagnose: COVID-19
 * diagnosis[+].condition = Reference(mii-exa-test-data-icu-diagnose-1)
 * diagnosis[=].use = $diagnosis-role#AD "Admission diagnosis"
 * diagnosis[=].rank = 1
-// Onkologie als Neben-/Komorbiditätsdiagnose (Basis-Diagnose, KEIN Onko-Profil)
-* diagnosis[+].condition = Reference(mii-exa-crossmodul-icu-onko-nebendiagnose)
-* diagnosis[=].use = $diagnosis-role#CC "Comorbidity diagnosis"
-* diagnosis[=].rank = 2
+// Hinweis: Das standortuebergreifende Crossmodul-Szenario (Onko-Nebendiagnose,
+// Organization Standort B) ist auf Branch wip/icu2026-crossmodul geparkt.

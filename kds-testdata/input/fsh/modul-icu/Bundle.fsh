@@ -5,16 +5,13 @@
 Instance: mii-exa-test-data-bundle-icu-1
 InstanceOf: Bundle
 Usage: #example
-Description: "Bundle: ICU Testdaten Patient-1 (Standort B). COVID-19-Aufnahme; Onkologie nur als Nebendiagnose (Basis-Diagnose ohne Onko-Profil)."
+Description: "Bundle: ICU Testdaten Patient-1 (Standort B). COVID-19-Aufnahme."
 * insert TestDataLabel
 * type = #transaction
 * timestamp = "2025-06-18T13:51:00+02:00"
-* insert AddBundleEntry(mii-exa-crossmodul-standort-b, Organization)
 * insert AddBundleEntry(mii-exa-test-data-icu-patient-1, Patient)
 * insert AddBundleEntry(mii-exa-test-data-icu-encounter-1, Encounter)
 * insert AddBundleEntry(mii-exa-test-data-icu-diagnose-1, Condition)
-// Onkologie als Neben-/Komorbiditätsdiagnose (KEIN Onko-Profil) – Kern des Cross-Modul-Szenarios
-* insert AddBundleEntry(mii-exa-crossmodul-icu-onko-nebendiagnose, Condition)
 // Bilanz Observations
 * insert AddBundleEntry(mii-exa-test-data-patient-1-icu-bilanz-haemofiltr-1, Observation)
 * insert AddBundleEntry(mii-exa-test-data-patient-1-icu-bilanz-drainage-1, Observation)
