@@ -42,7 +42,7 @@ Description: "Mikrobio Diagnostic Report: Blutkultur + Antibiogramm + MRSA-Befun
 * result[+] = Reference(mii-exa-test-data-mikrobio-mikroskopie-1)
 * result[+] = Reference(mii-exa-test-data-mikrobio-empfindlichkeit-1)
 * result[+] = Reference(mii-exa-test-data-mikrobio-voraussichtliche-empfindlichkeit-1)
-* result[+] = Reference(mii-exa-test-data-mikrobio-mre-klasse-1)
+* result[+] = Reference(mii-exa-test-data-mikrobio-resistenzkategorie-status-1)
 * result[+] = Reference(mii-exa-test-data-mikrobio-resistenzmechanismen-1)
 * result[+] = Reference(mii-exa-test-data-mikrobio-virulenzfaktor-1)
 * result[+] = Reference(mii-exa-test-data-mikrobio-ct-wert-1)

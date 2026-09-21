@@ -18,9 +18,8 @@ Description: "Mikrobio: Allgemeine Kultur (Blutkultur) — positiv"
 * identifier[analyseBefundCode].assigner.identifier.system = "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"
 * identifier[analyseBefundCode].assigner.identifier.value = "DIZ-CHA"
 * status = #final
-* category[mibi-category].coding[loinc-observation] = $loinc#26436-6
-* category[mibi-category].coding[observation-category] = $observation-category#laboratory
-* category[mibi-category].coding[loinc-microbiology-studies] = $loinc#18725-2 "Microbiology studies (set)"
+* category[observation-category] = $observation-category#laboratory
+* category[mibi-category] = $v2-0074#MB "Microbiology"
 * subject = Reference(mii-exa-test-data-mikrobio-patient-1)
 * subject.identifier.system = "https://www.charite.de/fhir/sid/patientenidentifikation"
 * subject.identifier.value = "MIKROBIO-TEST-001"
@@ -56,9 +55,8 @@ Description: "Mikrobio: Spezifische Bestimmung — S. aureus identifiziert"
 * identifier[analyseBefundCode].assigner.identifier.system = "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"
 * identifier[analyseBefundCode].assigner.identifier.value = "DIZ-CHA"
 * status = #final
-* category[mibi-category].coding[loinc-observation] = $loinc#26436-6
-* category[mibi-category].coding[observation-category] = $observation-category#laboratory
-* category[mibi-category].coding[loinc-microbiology-studies] = $loinc#18725-2 "Microbiology studies (set)"
+* category[observation-category] = $observation-category#laboratory
+* category[mibi-category] = $v2-0074#MB "Microbiology"
 * subject = Reference(mii-exa-test-data-mikrobio-patient-1)
 * subject.identifier.system = "https://www.charite.de/fhir/sid/patientenidentifikation"
 * subject.identifier.value = "MIKROBIO-TEST-001"
@@ -101,9 +99,8 @@ Description: "Mikrobio: Allgemeine Bestimmung — Bakterien-Nachweis"
 * identifier[analyseBefundCode].assigner.identifier.system = "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"
 * identifier[analyseBefundCode].assigner.identifier.value = "DIZ-CHA"
 * status = #final
-* category[mibi-category].coding[loinc-observation] = $loinc#26436-6
-* category[mibi-category].coding[observation-category] = $observation-category#laboratory
-* category[mibi-category].coding[loinc-microbiology-studies] = $loinc#18725-2 "Microbiology studies (set)"
+* category[observation-category] = $observation-category#laboratory
+* category[mibi-category] = $v2-0074#MB "Microbiology"
 * subject = Reference(mii-exa-test-data-mikrobio-patient-1)
 * subject.identifier.system = "https://www.charite.de/fhir/sid/patientenidentifikation"
 * subject.identifier.value = "MIKROBIO-TEST-001"
@@ -140,9 +137,8 @@ Description: "Mikrobio: Mikroskopie — Gram-positive Kokken in Haufen"
 * identifier[analyseBefundCode].assigner.identifier.system = "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"
 * identifier[analyseBefundCode].assigner.identifier.value = "DIZ-CHA"
 * status = #final
-* category[mibi-category].coding[loinc-observation] = $loinc#26436-6
-* category[mibi-category].coding[observation-category] = $observation-category#laboratory
-* category[mibi-category].coding[loinc-microbiology-studies] = $loinc#18725-2 "Microbiology studies (set)"
+* category[observation-category] = $observation-category#laboratory
+* category[mibi-category] = $v2-0074#MB "Microbiology"
 * subject = Reference(mii-exa-test-data-mikrobio-patient-1)
 * subject.identifier.system = "https://www.charite.de/fhir/sid/patientenidentifikation"
 * subject.identifier.value = "MIKROBIO-TEST-001"
@@ -180,9 +176,8 @@ Description: "Mikrobio: Keimzahl Urinkultur (E. coli, signifikant)"
 * identifier[analyseBefundCode].assigner.identifier.system = "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"
 * identifier[analyseBefundCode].assigner.identifier.value = "DIZ-CHA"
 * status = #final
-* category[mibi-category].coding[loinc-observation] = $loinc#26436-6
-* category[mibi-category].coding[observation-category] = $observation-category#laboratory
-* category[mibi-category].coding[loinc-microbiology-studies] = $loinc#18725-2 "Microbiology studies (set)"
+* category[observation-category] = $observation-category#laboratory
+* category[mibi-category] = $v2-0074#MB "Microbiology"
 * subject = Reference(mii-exa-test-data-mikrobio-patient-1)
 * subject.identifier.system = "https://www.charite.de/fhir/sid/patientenidentifikation"
 * subject.identifier.value = "MIKROBIO-TEST-001"
@@ -235,9 +230,8 @@ Description: "Mikrobio: Empfindlichkeit Vancomycin (MHK 1 mg/L, S)"
 * identifier[analyseBefundCode].assigner.identifier.system = "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"
 * identifier[analyseBefundCode].assigner.identifier.value = "DIZ-CHA"
 * status = #final
-* category[mibi-category].coding[loinc-observation] = $loinc#26436-6
-* category[mibi-category].coding[observation-category] = $observation-category#laboratory
-* category[mibi-category].coding[loinc-microbiology-studies] = $loinc#18725-2 "Microbiology studies (set)"
+* category[observation-category] = $observation-category#laboratory
+* category[mibi-category] = $v2-0074#MB "Microbiology"
 * subject = Reference(mii-exa-test-data-mikrobio-patient-1)
 * subject.identifier.system = "https://www.charite.de/fhir/sid/patientenidentifikation"
 * subject.identifier.value = "MIKROBIO-TEST-001"
@@ -295,9 +289,8 @@ Description: "Mikrobio: Voraussichtliche Empfindlichkeit Methicillin (R via mecA
 * identifier[analyseBefundCode].assigner.identifier.system = "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"
 * identifier[analyseBefundCode].assigner.identifier.value = "DIZ-CHA"
 * status = #final
-* category[mibi-category].coding[loinc-observation] = $loinc#26436-6
-* category[mibi-category].coding[observation-category] = $observation-category#laboratory
-* category[mibi-category].coding[loinc-microbiology-studies] = $loinc#18725-2 "Microbiology studies (set)"
+* category[observation-category] = $observation-category#laboratory
+* category[mibi-category] = $v2-0074#MB "Microbiology"
 * subject = Reference(mii-exa-test-data-mikrobio-patient-1)
 * subject.identifier.system = "https://www.charite.de/fhir/sid/patientenidentifikation"
 * subject.identifier.value = "MIKROBIO-TEST-001"
@@ -327,23 +320,22 @@ Description: "Mikrobio: Voraussichtliche Empfindlichkeit Methicillin (R via mecA
 * note[+].text = "Prognose der Methicillin-Resistenz aufgrund mecA-Nachweis."
 
 // ----------------------------------------------------------------------------
-// 8. MRE-Klasse — Multiresistenter Erreger (MRSA)
+// 8. Resistenzkategorie-Status — MRSA-Status (positiv)
 // ----------------------------------------------------------------------------
-Instance: mii-exa-test-data-mikrobio-mre-klasse-1
-InstanceOf: https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-mre-klasse
+Instance: mii-exa-test-data-mikrobio-resistenzkategorie-status-1
+InstanceOf: https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-resistenzkategorie-status
 Usage: #example
-Description: "Mikrobio: MRE-Klasse MRSA"
+Description: "Mikrobio: Resistenzkategorie-Status — MRSA-Status positiv"
 * insert TestDataLabel
 * meta.source = "https://www.charite.de/fhir/mikrobiologie-lab-system"
 * identifier[analyseBefundCode].type.coding[observationInstanceV2] = $v2-0203#OBI
 * identifier[analyseBefundCode].system = "https://www.charite.de/fhir/sid/test-lab-results"
-* identifier[analyseBefundCode].value = "mre-klasse-1"
+* identifier[analyseBefundCode].value = "resistenzkategorie-status-1"
 * identifier[analyseBefundCode].assigner.identifier.system = "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"
 * identifier[analyseBefundCode].assigner.identifier.value = "DIZ-CHA"
 * status = #final
-* category[mibi-category].coding[loinc-observation] = $loinc#26436-6
-* category[mibi-category].coding[observation-category] = $observation-category#laboratory
-* category[mibi-category].coding[loinc-microbiology-studies] = $loinc#18725-2 "Microbiology studies (set)"
+* category[observation-category] = $observation-category#laboratory
+* category[mibi-category] = $v2-0074#MB "Microbiology"
 * subject = Reference(mii-exa-test-data-mikrobio-patient-1)
 * subject.identifier.system = "https://www.charite.de/fhir/sid/patientenidentifikation"
 * subject.identifier.value = "MIKROBIO-TEST-001"
@@ -365,11 +357,11 @@ Description: "Mikrobio: MRE-Klasse MRSA"
 * extension[=].extension[=].valueReference = Reference(mii-exa-test-data-mikrobio-spezifische-bestimmung-1)
 * extension[=].extension[+].url = "type"
 * extension[=].extension[=].valueCode = #reflex
-* code.coding = $sct#1285113001 "Type of antimicrobial resistant organism (observable entity)"
-* valueCodeableConcept.coding = $sct#115329001 "Methicillin resistant Staphylococcus aureus (organism)"
+* code.coding = https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/CodeSystem/mii-cs-mikrobio-resistenzkategorie#mrsa-status "MRSA-Status"
+* valueCodeableConcept.coding = $sct#10828004 "Positive"
 * method.coding = $sct#708068002 "Molecular genetics technique (qualifier value)"
 * method.coding.display = "Molecular genetics technique (qualifier value)"
-* note[+].text = "MRSA-Befund — Isolation noetig."
+* note[+].text = "MRSA-Befund (Methicillin-resistenter Staphylococcus aureus nachgewiesen) — Isolation noetig."
 
 // ----------------------------------------------------------------------------
 // 9. MRGN-Klasse — E. coli (2MRGN)
@@ -386,9 +378,8 @@ Description: "Mikrobio: MRGN-Klasse 3MRGN (E. coli)"
 * identifier[analyseBefundCode].assigner.identifier.system = "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"
 * identifier[analyseBefundCode].assigner.identifier.value = "DIZ-CHA"
 * status = #final
-* category[mibi-category].coding[loinc-observation] = $loinc#26436-6
-* category[mibi-category].coding[observation-category] = $observation-category#laboratory
-* category[mibi-category].coding[loinc-microbiology-studies] = $loinc#18725-2 "Microbiology studies (set)"
+* category[observation-category] = $observation-category#laboratory
+* category[mibi-category] = $v2-0074#MB "Microbiology"
 * subject = Reference(mii-exa-test-data-mikrobio-patient-1)
 * subject.identifier.system = "https://www.charite.de/fhir/sid/patientenidentifikation"
 * subject.identifier.value = "MIKROBIO-TEST-001"
@@ -421,9 +412,8 @@ Description: "Mikrobio: Resistenzmechanismus mecA nachgewiesen"
 * identifier[analyseBefundCode].assigner.identifier.system = "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"
 * identifier[analyseBefundCode].assigner.identifier.value = "DIZ-CHA"
 * status = #final
-* category[mibi-category].coding[loinc-observation] = $loinc#26436-6
-* category[mibi-category].coding[observation-category] = $observation-category#laboratory
-* category[mibi-category].coding[loinc-microbiology-studies] = $loinc#18725-2 "Microbiology studies (set)"
+* category[observation-category] = $observation-category#laboratory
+* category[mibi-category] = $v2-0074#MB "Microbiology"
 * subject = Reference(mii-exa-test-data-mikrobio-patient-1)
 * subject.identifier.system = "https://www.charite.de/fhir/sid/patientenidentifikation"
 * subject.identifier.value = "MIKROBIO-TEST-001"
@@ -469,9 +459,8 @@ Description: "Mikrobio: Virulenzfaktor PVL nicht nachgewiesen"
 * identifier[analyseBefundCode].assigner.identifier.system = "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"
 * identifier[analyseBefundCode].assigner.identifier.value = "DIZ-CHA"
 * status = #final
-* category[mibi-category].coding[loinc-observation] = $loinc#26436-6
-* category[mibi-category].coding[observation-category] = $observation-category#laboratory
-* category[mibi-category].coding[loinc-microbiology-studies] = $loinc#18725-2 "Microbiology studies (set)"
+* category[observation-category] = $observation-category#laboratory
+* category[mibi-category] = $v2-0074#MB "Microbiology"
 * subject = Reference(mii-exa-test-data-mikrobio-patient-1)
 * subject.identifier.system = "https://www.charite.de/fhir/sid/patientenidentifikation"
 * subject.identifier.value = "MIKROBIO-TEST-001"
@@ -512,9 +501,8 @@ Description: "Mikrobio: Antikörper-Titer (IgG) quantitativ"
 * identifier[analyseBefundCode].assigner.identifier.system = "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"
 * identifier[analyseBefundCode].assigner.identifier.value = "DIZ-CHA"
 * status = #final
-* category[mibi-category].coding[loinc-observation] = $loinc#26436-6
-* category[mibi-category].coding[observation-category] = $observation-category#laboratory
-* category[mibi-category].coding[loinc-microbiology-studies] = $loinc#18725-2 "Microbiology studies (set)"
+* category[observation-category] = $observation-category#laboratory
+* category[mibi-category] = $v2-0074#MB "Microbiology"
 * subject = Reference(mii-exa-test-data-mikrobio-patient-1)
 * subject.identifier.system = "https://www.charite.de/fhir/sid/patientenidentifikation"
 * subject.identifier.value = "MIKROBIO-TEST-001"
@@ -568,9 +556,8 @@ Description: "Mikrobio: Avidität IgG niedrig (frische Infektion)"
 * identifier[analyseBefundCode].assigner.identifier.system = "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"
 * identifier[analyseBefundCode].assigner.identifier.value = "DIZ-CHA"
 * status = #final
-* category[mibi-category].coding[loinc-observation] = $loinc#26436-6
-* category[mibi-category].coding[observation-category] = $observation-category#laboratory
-* category[mibi-category].coding[loinc-microbiology-studies] = $loinc#18725-2 "Microbiology studies (set)"
+* category[observation-category] = $observation-category#laboratory
+* category[mibi-category] = $v2-0074#MB "Microbiology"
 * subject = Reference(mii-exa-test-data-mikrobio-patient-1)
 * subject.identifier.system = "https://www.charite.de/fhir/sid/patientenidentifikation"
 * subject.identifier.value = "MIKROBIO-TEST-001"
@@ -622,9 +609,8 @@ Description: "Mikrobio: Antikörper-Titer (1:128)"
 * identifier[analyseBefundCode].assigner.identifier.system = "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"
 * identifier[analyseBefundCode].assigner.identifier.value = "DIZ-CHA"
 * status = #final
-* category[mibi-category].coding[loinc-observation] = $loinc#26436-6
-* category[mibi-category].coding[observation-category] = $observation-category#laboratory
-* category[mibi-category].coding[loinc-microbiology-studies] = $loinc#18725-2 "Microbiology studies (set)"
+* category[observation-category] = $observation-category#laboratory
+* category[mibi-category] = $v2-0074#MB "Microbiology"
 * subject = Reference(mii-exa-test-data-mikrobio-patient-1)
 * subject.identifier.system = "https://www.charite.de/fhir/sid/patientenidentifikation"
 * subject.identifier.value = "MIKROBIO-TEST-001"
@@ -673,9 +659,8 @@ Description: "Mikrobio: CT-Wert PCR (21.3)"
 * identifier[analyseBefundCode].assigner.identifier.system = "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"
 * identifier[analyseBefundCode].assigner.identifier.value = "DIZ-CHA"
 * status = #final
-* category[mibi-category].coding[loinc-observation] = $loinc#26436-6
-* category[mibi-category].coding[observation-category] = $observation-category#laboratory
-* category[mibi-category].coding[loinc-microbiology-studies] = $loinc#18725-2 "Microbiology studies (set)"
+* category[observation-category] = $observation-category#laboratory
+* category[mibi-category] = $v2-0074#MB "Microbiology"
 * subject = Reference(mii-exa-test-data-mikrobio-patient-1)
 * subject.identifier.system = "https://www.charite.de/fhir/sid/patientenidentifikation"
 * subject.identifier.value = "MIKROBIO-TEST-001"
@@ -730,9 +715,8 @@ Description: "Mikrobio: Molekulare Pathogenlast (350.000 Copies/mL)"
 * identifier[analyseBefundCode].assigner.identifier.system = "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"
 * identifier[analyseBefundCode].assigner.identifier.value = "DIZ-CHA"
 * status = #final
-* category[mibi-category].coding[loinc-observation] = $loinc#26436-6
-* category[mibi-category].coding[observation-category] = $observation-category#laboratory
-* category[mibi-category].coding[loinc-microbiology-studies] = $loinc#18725-2 "Microbiology studies (set)"
+* category[observation-category] = $observation-category#laboratory
+* category[mibi-category] = $v2-0074#MB "Microbiology"
 * subject = Reference(mii-exa-test-data-mikrobio-patient-1)
 * subject.identifier.system = "https://www.charite.de/fhir/sid/patientenidentifikation"
 * subject.identifier.value = "MIKROBIO-TEST-001"
@@ -762,23 +746,22 @@ Description: "Mikrobio: Molekulare Pathogenlast (350.000 Copies/mL)"
 * note[+].text = "Hohe Pathogenlast — klinische Relevanz mit Behandelndem besprechen."
 
 // ----------------------------------------------------------------------------
-// 17. Barlett-Score
+// 17. Bartlett-Score
 // ----------------------------------------------------------------------------
-Instance: mii-exa-test-data-mikrobio-barlett-score-1
-InstanceOf: https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-barlett-score
+Instance: mii-exa-test-data-mikrobio-bartlett-score-1
+InstanceOf: https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-bartlett-score
 Usage: #example
-Description: "Mikrobio: Barlett-Score (verwertbar)"
+Description: "Mikrobio: Bartlett-Score (verwertbar)"
 * insert TestDataLabel
 * meta.source = "https://www.charite.de/fhir/mikrobiologie-lab-system"
 * identifier[analyseBefundCode].type.coding[observationInstanceV2] = $v2-0203#OBI
 * identifier[analyseBefundCode].system = "https://www.charite.de/fhir/sid/test-lab-results"
-* identifier[analyseBefundCode].value = "barlett-1"
+* identifier[analyseBefundCode].value = "bartlett-1"
 * identifier[analyseBefundCode].assigner.identifier.system = "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"
 * identifier[analyseBefundCode].assigner.identifier.value = "DIZ-CHA"
 * status = #final
-* category[mibi-category].coding[loinc-observation] = $loinc#26436-6
-* category[mibi-category].coding[observation-category] = $observation-category#laboratory
-* category[mibi-category].coding[loinc-microbiology-studies] = $loinc#18725-2 "Microbiology studies (set)"
+* category[observation-category] = $observation-category#laboratory
+* category[mibi-category] = $v2-0074#MB "Microbiology"
 * subject = Reference(mii-exa-test-data-mikrobio-patient-1)
 * subject.identifier.system = "https://www.charite.de/fhir/sid/patientenidentifikation"
 * subject.identifier.value = "MIKROBIO-TEST-001"
@@ -798,7 +781,7 @@ Description: "Mikrobio: Barlett-Score (verwertbar)"
 * method.coding = $sct#702661004 "Light microscopy technique (qualifier value)"
 * method.coding.display = "Light microscopy technique (qualifier value)"
 * interpretation = $v3-ObservationInterpretation#A "Abnormal"
-* note[+].text = "Sputum-Probe verwertbar (Barlett-Score positiv)."
+* note[+].text = "Sputum-Probe verwertbar (Bartlett-Score positiv)."
 
 // ----------------------------------------------------------------------------
 // 18. Nugent-Score
@@ -815,9 +798,8 @@ Description: "Mikrobio: Nugent-Score (7 — bakterielle Vaginose)"
 * identifier[analyseBefundCode].assigner.identifier.system = "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"
 * identifier[analyseBefundCode].assigner.identifier.value = "DIZ-CHA"
 * status = #final
-* category[mibi-category].coding[loinc-observation] = $loinc#26436-6
-* category[mibi-category].coding[observation-category] = $observation-category#laboratory
-* category[mibi-category].coding[loinc-microbiology-studies] = $loinc#18725-2 "Microbiology studies (set)"
+* category[observation-category] = $observation-category#laboratory
+* category[mibi-category] = $v2-0074#MB "Microbiology"
 * subject = Reference(mii-exa-test-data-mikrobio-patient-1)
 * subject.identifier.system = "https://www.charite.de/fhir/sid/patientenidentifikation"
 * subject.identifier.value = "MIKROBIO-TEST-001"
@@ -867,9 +849,8 @@ Description: "Mikrobio: Allgemeine Kultur — Ergebnis fehlt (Probe abgelaufen)"
 * identifier[analyseBefundCode].assigner.identifier.system = "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"
 * identifier[analyseBefundCode].assigner.identifier.value = "DIZ-CHA"
 * status = #final
-* category[mibi-category].coding[loinc-observation] = $loinc#26436-6
-* category[mibi-category].coding[observation-category] = $observation-category#laboratory
-* category[mibi-category].coding[loinc-microbiology-studies] = $loinc#18725-2 "Microbiology studies (set)"
+* category[observation-category] = $observation-category#laboratory
+* category[mibi-category] = $v2-0074#MB "Microbiology"
 * subject = Reference(mii-exa-test-data-mikrobio-patient-1)
 * subject.identifier.system = "https://www.charite.de/fhir/sid/patientenidentifikation"
 * subject.identifier.value = "MIKROBIO-TEST-001"
