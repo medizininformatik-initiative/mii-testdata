@@ -75,7 +75,7 @@ Usage: #example
 Description: "Onkologie Test KRK MRT Abstand zur mesorektalen Faszie"
 * insert TestDataLabel
 * status = #final
-* code.coding = $RADLEX#RDE96 "Distance to MRF"
+* code.coding = $RADELEMENT#RDE96 "Distance to MRF"
 * subject = Reference(mii-exa-test-data-onko-patient-1)
 * focus = Reference(mii-exa-test-data-onko-diagnose-1)
 * effectiveDateTime = "2021-06-20"

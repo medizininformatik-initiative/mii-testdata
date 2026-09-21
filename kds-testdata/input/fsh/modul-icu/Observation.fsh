@@ -27,7 +27,6 @@ Description: "ICU Observation: MII PR ICU Bilanz Ausfuhr Drainage Generisch"
 * category.coding[hl7-category] = http://terminology.hl7.org/CodeSystem/observation-category#exam
 * category.coding[kdsicu-category] = $sct#364396009 "Fluid balance observable (observable entity)"
 * code.coding[sct] = $sct#251843005 "Fluid output from drain"
-* code.coding[IEEE-11073] = $11073-10101#26668 "Drainage volume in bag"
 * subject = Reference(mii-exa-test-data-icu-patient-1)
 * effectiveDateTime = "2024-05-05T08:00:00+02:00"
 * valueQuantity = 50 'ml' "ml"
@@ -396,10 +395,10 @@ Description: "ICU Observation: MII PR ICU Exspiratorischer Sauerstoffpartialdruc
 * insert TestDataLabel
 * status = #final
 * partOf = Reference(mii-exa-test-data-patient-1-icu-vent-beatmung-1)
-* category[Beatmung] = $sct#40617009 "Artificial ventilation (regime/therapy)"
-* code.coding[sct] = $sct#442720002 "Expired oxygen tension"
+* category[kuenstlicheBeatmung] = $sct#40617009 "Artificial ventilation (regime/therapy)"
+* code.coding[sct] = $sct#442720002 "Expired oxygen tension (observable entity)"
 * code.coding[loinc] = $loinc#3147-6 "Oxygen [Partial pressure] in Exhaled gas"
-* code.coding[IEEE-11073] = $11073-10101#153132 "MDC_CONC_AWAY_O2_EXP"
+* code.coding[IEEE-11073] = $11073-10101#153132 "Partial pressure of oxygen in airway gas measured during expiration."
 * subject = Reference(mii-exa-test-data-icu-patient-1)
 * effectiveDateTime = "2024-05-05T08:00:00+02:00"
 * valueQuantity = 40 'mm[Hg]' "mmHg"
@@ -500,9 +499,8 @@ Description: "ICU Observation: inspiratorische-sauerstofffraktion-eingestellt"
 * insert TestDataLabel
 * status = #final
 * partOf = Reference(mii-exa-test-data-patient-1-icu-vent-beatmung-1)
-* category = $sct#40617009 "Artificial ventilation (regime/therapy)"
-* code.coding[sct] = $sct#250774007 "Inspired oxygen concentration"
-* code.coding[loinc] = $loinc#19994-3 "Oxygen/Total gas setting [Volume Fraction] Ventilator"
+* category[kuenstlicheBeatmung] = $sct#40617009 "Artificial ventilation (regime/therapy)"
+* code.coding[sct] = $sct#250774007 "Inspired oxygen concentration (observable entity)"
 * subject = Reference(mii-exa-test-data-icu-patient-1)
 * effectiveDateTime = "2024-05-05T08:00:00+02:00"
 * valueQuantity = 0.5 '%' "percent"
@@ -514,8 +512,8 @@ Description: "ICU Observation: MII PR ICU Atemwegsdruck Bei Null Expiratorischem
 * insert TestDataLabel
 * status = #final
 * partOf = Reference(mii-exa-test-data-patient-1-icu-vent-beatmung-1)
-* category = $sct#40617009 "Artificial ventilation (regime/therapy)"
-* code.coding[loinc] = $loinc#20060-0 "Airway pressure --at zero inspiratory flow on ventilator"
+* category[kuenstlicheBeatmung] = $sct#40617009 "Artificial ventilation (regime/therapy)"
+* code.coding[loinc] = $loinc#20060-0 "Pressure.airway^at zero inspiratory flow on ventilator"
 * subject = Reference(mii-exa-test-data-icu-patient-1)
 * effectiveDateTime = "2024-05-05T08:00:00+02:00"
 * valueQuantity = 3 'cm[H2O]' "cmH2O"
@@ -527,8 +525,8 @@ Description: "ICU Observation: MII PR ICU Atemwegsdruck Bei Mittlerem Expiratori
 * insert TestDataLabel
 * status = #final
 * partOf = Reference(mii-exa-test-data-patient-1-icu-vent-beatmung-1)
-* category = $sct#40617009 "Artificial ventilation (regime/therapy)"
-* code.coding[loinc] = $loinc#20056-8 "Airway pressure --at mean expiratory flow on ventilator"
+* category[kuenstlicheBeatmung] = $sct#40617009 "Artificial ventilation (regime/therapy)"
+* code.coding[loinc] = $loinc#20056-8 "Pressure.airway^at mean expiratory flow on ventilator"
 * subject = Reference(mii-exa-test-data-icu-patient-1)
 * effectiveDateTime = "2024-05-05T08:00:00+02:00"
 * valueQuantity = 8 'cm[H2O]' "cmH2O"
@@ -540,8 +538,8 @@ Description: "ICU Observation: MII PR ICU Atemzugvolumen Einstellung"
 * insert TestDataLabel
 * status = #final
 * partOf = Reference(mii-exa-test-data-patient-1-icu-vent-beatmung-1)
-* category = $sct#40617009 "Artificial ventilation (regime/therapy)"
-* code.coding[sct] = $sct#416811008 "Tidal volume setting"
+* category[kuenstlicheBeatmung] = $sct#40617009 "Artificial ventilation (regime/therapy)"
+* code.coding[sct] = $sct#416811008 "Tidal volume setting (observable entity)"
 * code.coding[loinc] = $loinc#20112-9 "Tidal volume setting Ventilator"
 * code.coding[IEEE-11073] = $11073-10101#16929196 "MDC_VENT_VOL_TIDAL_SETTING"
 * subject = Reference(mii-exa-test-data-icu-patient-1)
@@ -555,10 +553,10 @@ Description: "ICU Observation: MII PR ICU Atemzugvolumen Waehrend Beatmung"
 * insert TestDataLabel
 * status = #final
 * partOf = Reference(mii-exa-test-data-patient-1-icu-vent-beatmung-1)
-* category = $sct#40617009 "Artificial ventilation (regime/therapy)"
-* code.coding[sct] = $sct#250874002 "Ventilator delivered tidal volume"
+* category[kuenstlicheBeatmung] = $sct#40617009 "Artificial ventilation (regime/therapy)"
+* code.coding[sct] = $sct#250874002 "Ventilator delivered tidal volume (observable entity)"
 * code.coding[loinc] = $loinc#76222-9 "Tidal volume Ventilator --on ventilator"
-* code.coding[IEEE-11073] = $11073-10101#151980 "MDC_VENT_VOL_TIDAL"
+* code.coding[IEEE-11073] = $11073-10101#151980 "Volume of gas delivered through the patient-connection port during a respiratory cycle."
 * subject = Reference(mii-exa-test-data-icu-patient-1)
 * effectiveDateTime = "2024-05-05T08:00:00+02:00"
 * valueQuantity = 320 'mL' "mL"
@@ -570,10 +568,10 @@ Description: "ICU Observation: MII PR ICU Beatmungsvolumen Pro Minute Maschinell
 * insert TestDataLabel
 * status = #final
 * partOf = Reference(mii-exa-test-data-patient-1-icu-vent-beatmung-1)
-* category = $sct#40617009 "Artificial ventilation (regime/therapy)"
-* code.coding[sct] = $sct#250875001 "Ventilator delivered minute volume"
+* category[kuenstlicheBeatmung] = $sct#40617009 "Artificial ventilation (regime/therapy)"
+* code.coding[sct] = $sct#250875001 "Ventilator delivered minute volume (observable entity)"
 * code.coding[loinc] = $loinc#76009-0 "Inspired minute Volume during Mechanical ventilation"
-* code.coding[IEEE-11073] = $11073-10101#152004 "MDC_VENT_VOL_MINUTE_INSP"
+* code.coding[IEEE-11073] = $11073-10101#152004 "Total volume of gas breathed in during 1 min during mechanical ventilation."
 * subject = Reference(mii-exa-test-data-icu-patient-1)
 * effectiveDateTime = "2024-05-05T08:00:00+02:00"
 * valueQuantity = 7.5 'L/min' "L/min"
@@ -585,7 +583,7 @@ Description: "ICU Observation: MII ICU Beatmungszeit Hohem Druck"
 * insert TestDataLabel
 * status = #final
 * partOf = Reference(mii-exa-test-data-patient-1-icu-vent-beatmung-1)
-* category = $sct#40617009 "Artificial ventilation (regime/therapy)"
+* category[kuenstlicheBeatmung] = $sct#40617009 "Artificial ventilation (regime/therapy)"
 * code.coding[loinc] = $loinc#76190-8 "High pressure hold time setting Ventilator"
 * code.coding[IEEE-11073] = $11073-10101#16929860 "MDC_VENT_TIME_PD_INSP_THIGH_SETTING"
 * subject = Reference(mii-exa-test-data-icu-patient-1)
@@ -599,7 +597,7 @@ Description: "ICU Observation: MII PR ICU Beatmungszeit Niedrigem Druck"
 * insert TestDataLabel
 * status = #final
 * partOf = Reference(mii-exa-test-data-patient-1-icu-vent-beatmung-1)
-* category = $sct#40617009 "Artificial ventilation (regime/therapy)"
+* category[kuenstlicheBeatmung] = $sct#40617009 "Artificial ventilation (regime/therapy)"
 * code.coding[loinc] = $loinc#76229-4 "Low pressure hold time setting Ventilator"
 * code.coding[IEEE-11073] = $11073-10101#16929864 "MDC_VENT_TIME_PD_EXP_TLOW_SETTING"
 * subject = Reference(mii-exa-test-data-icu-patient-1)
@@ -613,7 +611,7 @@ Description: "ICU Observation: MII PR ICU Eingestellter Inspiratorischer Gasflus
 * insert TestDataLabel
 * status = #final
 * partOf = Reference(mii-exa-test-data-patient-1-icu-vent-beatmung-1)
-* category[Beatmung] = $sct#40617009 "Artificial ventilation (regime/therapy)"
+* category[kuenstlicheBeatmung] = $sct#40617009 "Artificial ventilation (regime/therapy)"
 * code.coding[loinc] = $loinc#76275-7 "Inspiratory flow setting Ventilator"
 * subject = Reference(mii-exa-test-data-icu-patient-1)
 * effectiveDateTime = "2024-05-05T08:00:00+02:00"
@@ -626,9 +624,9 @@ Description: "ICU Observation: MII PR ICU Einstellung Ausatmungszeit Beatmung"
 * insert TestDataLabel
 * status = #final
 * partOf = Reference(mii-exa-test-data-patient-1-icu-vent-beatmung-1)
-* category = $sct#40617009 "Artificial ventilation (regime/therapy)"
-* code.coding[sct] = $sct#250820008 "Expiratory time"
-* code.coding[loinc] = $loinc#76187-4 "Expiratory hold time setting Ventilator"
+* category[kuenstlicheBeatmung] = $sct#40617009 "Artificial ventilation (regime/therapy)"
+* code.coding[sct] = $sct#250820008 "Expiratory time (observable entity)"
+* code.coding[loinc] = $loinc#76187-4 "Expiratory hold time setting"
 * subject = Reference(mii-exa-test-data-icu-patient-1)
 * effectiveDateTime = "2024-05-05T08:00:00+02:00"
 * valueQuantity = 2.0 's' "seconds"
@@ -640,9 +638,9 @@ Description: "ICU Observation: MII PR ICU Einstellung Einatmungszeit Beatmung"
 * insert TestDataLabel
 * status = #final
 * partOf = Reference(mii-exa-test-data-patient-1-icu-vent-beatmung-1)
-* category = $sct#40617009 "Artificial ventilation (regime/therapy)"
-* code.coding[sct] = $sct#250819002 "Inspiratory time"
-* code.coding[loinc] = $loinc#76334-2 "Inspiratory time setting Ventilator"
+* category[kuenstlicheBeatmung] = $sct#40617009 "Artificial ventilation (regime/therapy)"
+* code.coding[sct] = $sct#250819002 "Inspiratory time (observable entity)"
+* code.coding[loinc] = $loinc#76334-2 "Inspiratory time setting"
 * code.coding[IEEE-11073] = $11073-10101#16929632 "MDC_VENT_TIME_PD_INSP_SETTING"
 * subject = Reference(mii-exa-test-data-icu-patient-1)
 * effectiveDateTime = "2024-05-05T08:00:00+02:00"
@@ -655,10 +653,10 @@ Description: "ICU Observation: MII PR ICU Endexpiratorischer Kohlendioxidpartial
 * insert TestDataLabel
 * status = #final
 * partOf = Reference(mii-exa-test-data-patient-1-icu-vent-beatmung-1)
-* category[Beatmung] = $sct#40617009 "Artificial ventilation (regime/therapy)"
-* code.coding[sct] = $sct#250790007 "End tidal carbon dioxide tension"
-* code.coding[loinc] = $loinc#19891-1 "Carbon dioxide [Partial pressure] in Exhaled gas --at end expiration"
-* code.coding[IEEE-11073] = $11073-10101#151708 "MDC_CONC_AWAY_CO2_ET"
+* category[kuenstlicheBeatmung] = $sct#40617009 "Artificial ventilation (regime/therapy)"
+* code.coding[sct] = $sct#250790007 "End tidal carbon dioxide tension (observable entity)"
+* code.coding[loinc] = $loinc#19891-1 "Carbon dioxide^at end expiration"
+* code.coding[IEEE-11073] = $11073-10101#151708 "Partial pressure of carbon dioxide in airway gas measured at the end of expiration."
 * subject = Reference(mii-exa-test-data-icu-patient-1)
 * effectiveDateTime = "2024-05-05T08:00:00+02:00"
 * valueQuantity = 35 'mm[Hg]' "mmHg"
@@ -670,9 +668,9 @@ Description: "ICU Observation: MII PR ICU Exspiratorischer Gasfluss"
 * insert TestDataLabel
 * status = #final
 * partOf = Reference(mii-exa-test-data-patient-1-icu-vent-beatmung-1)
-* category[Beatmung] = $sct#40617009 "Artificial ventilation (regime/therapy)"
+* category[kuenstlicheBeatmung] = $sct#40617009 "Artificial ventilation (regime/therapy)"
 * code.coding[loinc] = $loinc#60792-9 "Expiratory gas flow Respiratory system airway --on ventilator"
-* code.coding[IEEE-11073] = $11073-10101#151944 "MDC_VENT_FLOW_EXP"
+* code.coding[IEEE-11073] = $11073-10101#151944 "Expiratory gas flow during mechanical ventilation. "
 * subject = Reference(mii-exa-test-data-icu-patient-1)
 * effectiveDateTime = "2024-05-05T08:00:00+02:00"
 * valueQuantity = 35 'L/min' "L/min"
@@ -684,9 +682,9 @@ Description: "ICU Observation: MII PR ICU Horowitz In Arteriellem Blut"
 * insert TestDataLabel
 * status = #final
 * partOf = Reference(mii-exa-test-data-patient-1-icu-vent-beatmung-1)
-* category = $sct#40617009 "Artificial ventilation (regime/therapy)"
+* category[kuenstlicheBeatmung] = $sct#40617009 "Artificial ventilation (regime/therapy)"
 * code.coding[loinc] = $loinc#50984-4 "Horowitz index in Arterial blood"
-* code.coding[IEEE-11073] = $11073-10101#150656 "MDC_O2_OXYGENATION_RATIO"
+* code.coding[IEEE-11073] = $11073-10101#150656 "Oxygenation Ratio, calculated as the ratio of PaO2 (partial pressure of arterial oxygen) divided by FiO2 (the fractional of inspired oxygen, e.g., FiO2 in air = 0.21)."
 * subject = Reference(mii-exa-test-data-icu-patient-1)
 * effectiveDateTime = "2024-05-05T08:00:00+02:00"
 * valueQuantity = 68 'mm[Hg]' "mmHg"
@@ -698,9 +696,8 @@ Description: "ICU Observation: MIIm PR ICU Inspiratorische Sauerstofffraktion Ge
 * insert TestDataLabel
 * status = #final
 * partOf = Reference(mii-exa-test-data-patient-1-icu-vent-beatmung-1)
-* category[Beatmung] = $sct#40617009 "Artificial ventilation (regime/therapy)"
-* code.coding[sct] = $sct#250774007 "Inspired oxygen concentration"
-* code.coding[loinc] = $loinc#71835-3 "Oxygen/Gas total [Pure volume fraction] Inhaled gas"
+* category[kuenstlicheBeatmung] = $sct#40617009 "Artificial ventilation (regime/therapy)"
+* code.coding[sct] = $sct#250774007 "Inspired oxygen concentration (observable entity)"
 * subject = Reference(mii-exa-test-data-icu-patient-1)
 * effectiveDateTime = "2024-05-05T08:00:00+02:00"
 * valueQuantity = 0.52 '%' "percent"
@@ -712,7 +709,7 @@ Description: "ICU Observation: MII PR ICU Inspiratorischer Gasfluss"
 * insert TestDataLabel
 * status = #final
 * partOf = Reference(mii-exa-test-data-patient-1-icu-vent-beatmung-1)
-* category[Beatmung] = $sct#40617009 "Artificial ventilation (regime/therapy)"
+* category[kuenstlicheBeatmung] = $sct#40617009 "Artificial ventilation (regime/therapy)"
 * code.coding[loinc] = $loinc#60794-5 "Inspiratory gas flow Respiratory system airway --on ventilator"
 * code.coding[IEEE-11073] = $11073-10101#151948 "MDC_VENT_FLOW_INSP"
 * subject = Reference(mii-exa-test-data-icu-patient-1)
@@ -726,10 +723,10 @@ Description: "ICU Observation: MII PR ICU Maximaler Beatmungsdruck"
 * insert TestDataLabel
 * status = #final
 * partOf = Reference(mii-exa-test-data-patient-1-icu-vent-beatmung-1)
-* category = $sct#40617009 "Artificial ventilation (regime/therapy)"
+* category[kuenstlicheBeatmung] = $sct#40617009 "Artificial ventilation (regime/therapy)"
 * code.coding[sct] = $sct#27913002 "Maximum inspiratory pressure"
 * code.coding[loinc] = $loinc#76531-3 "Pressure.max Respiratory system airway --on ventilator"
-* code.coding[IEEE-11073] = $11073-10101#151973 "MDC_VENT_PRESS_AWAY_MAX"
+* code.coding[IEEE-11073] = $11073-10101#151957 "Maximum airway pressure during mechanical ventilation."
 * subject = Reference(mii-exa-test-data-icu-patient-1)
 * effectiveDateTime = "2024-05-05T08:00:00+02:00"
 * valueQuantity = 27 'cm[H2O]' "cmH2O"
@@ -741,10 +738,10 @@ Description: "ICU Observation: MII PR ICU Mechanische Atemfrequenz Beatmet"
 * insert TestDataLabel
 * status = #final
 * partOf = Reference(mii-exa-test-data-patient-1-icu-vent-beatmung-1)
-* category = $sct#40617009 "Artificial ventilation (regime/therapy)"
-* code.coding[sct] = $sct#250876000 "Ventilator rate"
+* category[kuenstlicheBeatmung] = $sct#40617009 "Artificial ventilation (regime/therapy)"
+* code.coding[sct] = $sct#250876000 "Ventilator rate (observable entity)"
 * code.coding[loinc] = $loinc#33438-3 "Breath rate mechanical --on ventilator"
-* code.coding[IEEE-11073] = $11073-10101#151586 "MDC_VENT_RESP_RATE"
+* code.coding[IEEE-11073] = $11073-10101#151586 "Rate of mechanical ventilation; method not specified."
 * subject = Reference(mii-exa-test-data-icu-patient-1)
 * effectiveDateTime = "2024-05-05T08:00:00+02:00"
 * valueQuantity = 12 '{Breaths}/min' "breaths per minute"
@@ -757,9 +754,9 @@ Description: "ICU Observation: MII PR ICU Mittlerer Beatmungsdruck"
 * status = #final
 * partOf = Reference(mii-exa-test-data-patient-1-icu-vent-beatmung-1)
 * category = $sct#40617009 "Artificial ventilation (regime/therapy)"
-* code.coding[sct] = $sct#698821009 "Mean inspiratory airway pressure"
+* code.coding[sct] = $sct#698821009 "Mean inspiratory airway pressure (observable entity)"
 * code.coding[loinc] = $loinc#76530-5 "Mean pressure Respiratory system airway --on ventilator"
-* code.coding[IEEE-11073] = $11073-10101#151975 "MDC_VENT_PRESS_AWAY_MEAN"
+* code.coding[IEEE-11073] = $11073-10101#151975 "Mean inspiratory airway pressure."
 * subject = Reference(mii-exa-test-data-icu-patient-1)
 * effectiveDateTime = "2024-05-05T08:00:00+02:00"
 * valueQuantity = 18 'cm[H2O]' "cmH2O"
@@ -771,10 +768,10 @@ Description: "ICU Observation: MII PR ICU Positiv Endexpiratorischer Druck"
 * insert TestDataLabel
 * status = #final
 * partOf = Reference(mii-exa-test-data-patient-1-icu-vent-beatmung-1)
-* category = $sct#40617009 "Artificial ventilation (regime/therapy)"
-* code.coding[sct] = $sct#250854009 "Positive end expiratory pressure"
+* category[kuenstlicheBeatmung] = $sct#40617009 "Artificial ventilation (regime/therapy)"
+* code.coding[sct] = $sct#250854009 "Positive end expiratory pressure (observable entity)"
 * code.coding[loinc] = $loinc#76248-4 "PEEP Respiratory system --on ventilator"
-* code.coding[IEEE-11073] = $11073-10101#151976 "MDC_VENT_PRESS_AWAY_END_EXP_POS"
+* code.coding[IEEE-11073] = $11073-10101#151976 "Positive end expiratory pressure applied to the airway."
 * subject = Reference(mii-exa-test-data-icu-patient-1)
 * effectiveDateTime = "2024-05-05T08:00:00+02:00"
 * valueQuantity = 14 'cm[H2O]' "cmH2O"
@@ -786,8 +783,8 @@ Description: "ICU Observation: MII PR ICU Spontane Atemfrequenz Beatmet"
 * insert TestDataLabel
 * status = #final
 * partOf = Reference(mii-exa-test-data-patient-1-icu-vent-beatmung-1)
-* category = $sct#40617009 "Artificial ventilation (regime/therapy)"
-* code.coding[IEEE-11073] = $11073-10101#152498 "MDC_VENT_RESP_BTSD_P_RATE"
+* category[kuenstlicheBeatmung] = $sct#40617009 "Artificial ventilation (regime/therapy)"
+* code.coding[IEEE-11073] = $11073-10101#152498 "Rate of breaths or inspiratory gas flow initiated and terminated by the patient where pressure and flow/volume delivery are determined by the patient without support or assistance by the ventilator. Includes unassisted breaths that are superimposed on the intermittently elevated baseline pressure with APRV, bilevel or spontaneous-only modes."
 * subject = Reference(mii-exa-test-data-icu-patient-1)
 * effectiveDateTime = "2024-05-05T08:00:00+02:00"
 * valueQuantity = 4 '/min' "breaths per minute"
@@ -799,10 +796,10 @@ Description: "ICU Observation: MII PR ICU Spontane Mechanische Atemfrequenz Beat
 * insert TestDataLabel
 * status = #final
 * partOf = Reference(mii-exa-test-data-patient-1-icu-vent-beatmung-1)
-* category = $sct#40617009 "Artificial ventilation (regime/therapy)"
-* code.coding[sct] = $sct#250810003 "Total breath rate"
+* category[kuenstlicheBeatmung] = $sct#40617009 "Artificial ventilation (regime/therapy)"
+* code.coding[sct] = $sct#250810003 "Total breath rate (observable entity)"
 * code.coding[loinc] = $loinc#19840-8 "Breath rate spontaneous and mechanical --on ventilator"
-* code.coding[IEEE-11073] = $11073-10101#152490 "MDC_VENT_RESP_BTSD_PSAZC_RATE"
+* code.coding[IEEE-11073] = $11073-10101#152490 "Total rate of breaths or inspiratory gas flow comprised of unassisted (P), supported (S), assisted (A), synchronized assisted (Z) and controlled (C) breath types."
 * subject = Reference(mii-exa-test-data-icu-patient-1)
 * effectiveDateTime = "2024-05-05T08:00:00+02:00"
 * valueQuantity = 20 '/min' "breaths per minute"
@@ -814,9 +811,8 @@ Description: "ICU Observation: MII PR ICU Spontanes Atemzugvolumen"
 * insert TestDataLabel
 * status = #final
 * partOf = Reference(mii-exa-test-data-patient-1-icu-vent-beatmung-1)
-* category = $sct#40617009 "Artificial ventilation (regime/therapy)"
-* code.coding[sct] = $sct#250816009 "Spontaneous tidal volume"
-* code.coding[loinc] = $loinc#20116-0 "Tidal volume.spontaneous --on ventilator"
+* category[kuenstlicheBeatmung] = $sct#40617009 "Artificial ventilation (regime/therapy)"
+* code.coding[sct] = $sct#250816009 "Spontaneous tidal volume (observable entity)"
 * subject = Reference(mii-exa-test-data-icu-patient-1)
 * effectiveDateTime = "2024-05-05T08:00:00+02:00"
 * valueQuantity = 450 'mL' "mL"
@@ -828,7 +824,7 @@ Description: "ICU Observation: MII PR ICU Spontanes Plus Mechanisches Atemzugvol
 * insert TestDataLabel
 * status = #final
 * partOf = Reference(mii-exa-test-data-patient-1-icu-vent-beatmung-1)
-* category = $sct#40617009 "Artificial ventilation (regime/therapy)"
+* category[kuenstlicheBeatmung] = $sct#40617009 "Artificial ventilation (regime/therapy)"
 * code.coding[loinc] = $loinc#20118-6 "Tidal volume.spontaneous+mechanical --on ventilator"
 * subject = Reference(mii-exa-test-data-icu-patient-1)
 * effectiveDateTime = "2024-05-05T08:00:00+02:00"
@@ -841,7 +837,7 @@ Description: "ICU Observation: MII PR ICU Unterstuezungsdruck Beatmung"
 * insert TestDataLabel
 * status = #final
 * partOf = Reference(mii-exa-test-data-patient-1-icu-vent-beatmung-1)
-* category = $sct#40617009 "Artificial ventilation (regime/therapy)"
+* category[kuenstlicheBeatmung] = $sct#40617009 "Artificial ventilation (regime/therapy)"
 * code.coding[loinc] = $loinc#20079-0 "Pressure support setting Ventilator"
 * subject = Reference(mii-exa-test-data-icu-patient-1)
 * effectiveDateTime = "2024-05-05T08:00:00+02:00"
@@ -854,10 +850,10 @@ Description: "ICU Observation: MII PR ICU Zeitverhaeltnis Ein Ausatmung"
 * insert TestDataLabel
 * status = #final
 * partOf = Reference(mii-exa-test-data-patient-1-icu-vent-beatmung-1)
-* category = $sct#40617009 "Artificial ventilation (regime/therapy)"
-* code.coding[sct] = $sct#250822000 "Inspiration/expiration time ratio"
+* category[kuenstlicheBeatmung] = $sct#40617009 "Artificial ventilation (regime/therapy)"
+* code.coding[sct] = $sct#250822000 "Inspiration/expiration time ratio (observable entity)"
 * code.coding[loinc] = $loinc#75931-6 "Inspiration/Expiration time Ratio"
-* code.coding[IEEE-11073] = $11073-10101#151832 "MDC_RATIO_IE"
+* code.coding[IEEE-11073] = $11073-10101#151832 "Ratio of durations of inspiratory and expiratory phases."
 * subject = Reference(mii-exa-test-data-icu-patient-1)
 * effectiveDateTime = "2024-05-05T08:00:00+02:00"
 * valueQuantity = 0.5 '{ratio}' "ratio"
@@ -869,9 +865,9 @@ Description: "ICU Observation: dynamische-kompliance"
 * insert TestDataLabel
 * status = #final
 * partOf = Reference(mii-exa-test-data-patient-1-icu-vent-beatmung-1)
-* category = $sct#40617009 "Artificial ventilation (regime/therapy)"
-* code.coding[sct] = $sct#250823005 "Total dynamic compliance"
-* code.coding[IEEE-11073] = $11073-10101#151692 "MDC_COMPL_LUNG_DYN"
+* category[kuenstlicheBeatmung] = $sct#40617009 "Artificial ventilation (regime/therapy)"
+* code.coding[sct] = $sct#250823005 "Total dynamic compliance (observable entity)"
+* code.coding[IEEE-11073] = $11073-10101#151692 "Change of tidal volume per unit change of transthoracic pressure."
 * subject = Reference(mii-exa-test-data-icu-patient-1)
 * effectiveDateTime = "2024-05-05T08:00:00+02:00"
 * valueQuantity = 50 'mL/cm[H2O]' "mL/cmH2O"
@@ -883,9 +879,9 @@ Description: "ICU Observation: MII PR ICU Druckdifferenz Beatmung"
 * insert TestDataLabel
 * status = #final
 * partOf = Reference(mii-exa-test-data-patient-1-icu-vent-beatmung-1)
-* category = $sct#40617009 "Artificial ventilation (regime/therapy)"
-* code.coding[loinc] = $loinc#76154-4 "Airway pressure delta --on ventilator"
-* code.coding[IEEE-11073] = $11073-10101#152720 "MDC_VENT_PRESS_AWAY_DELTA"
+* category[kuenstlicheBeatmung] = $sct#40617009 "Artificial ventilation (regime/therapy)"
+* code.coding[loinc] = $loinc#76154-4 "Airway pressure delta^on ventilator"
+* code.coding[IEEE-11073] = $11073-10101#152720 "Inspiratory airway pressure relative to PEEP or BAP."
 * subject = Reference(mii-exa-test-data-icu-patient-1)
 * effectiveDateTime = "2024-05-05T08:00:00+02:00"
 * valueQuantity = 13 'cm[H2O]' "cmH2O"

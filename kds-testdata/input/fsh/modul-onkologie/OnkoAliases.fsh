@@ -99,6 +99,7 @@ Alias: $ATC_DE = http://fhir.de/CodeSystem/bfarm/atc
 Alias: $UNII = http://fdasis.nlm.nih.gov
 Alias: $MEDDRA = https://www.meddra.org
 Alias: $RADLEX = http://radlex.org
+Alias: $RADELEMENT = https://radelement.org
 
 // KBV Extensions
 Alias: $icd-seitenlokalisation = https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_ICD_SEITENLOKALISATION

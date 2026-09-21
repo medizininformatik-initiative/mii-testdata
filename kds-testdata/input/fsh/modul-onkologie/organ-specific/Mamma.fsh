@@ -59,13 +59,13 @@ Usage: #example
 Description: "Onkologie Test Mamma Her2neu Status - Negativ"
 * insert TestDataLabel
 * status = #final
-* code = $LNC#48676-1 "HER2 [Interpretation] in Tissue"
+* code = $LNC#48676-1 "HER2 Ag [Interpretation] in Tissue"
 * subject = Reference(mii-exa-test-data-onko-patient-1)
 * focus = Reference(mii-exa-test-data-onko-diagnose-1)
 * effectiveDateTime = "2021-06-18"
 * valueCodeableConcept.coding[DefinitionOBDS] = $mii-cs-onko-mamma-her2neu-status-obds#N "negativ"
 * valueCodeableConcept.coding[DefinitionLeitlinie] = $mii-cs-onko-mamma-her2neu-status-leitlinie#negativ "HER2-negativ"
-* component[IHCScore].code = $LNC#85319-2 "HER2 [Presence] in Breast cancer specimen by Immune stain"
+* component[IHCScore].code = $LNC#85319-2 "HER2 Ag [Presence] in Breast cancer specimen by Immune stain"
 * component[IHCScore].valueCodeableConcept = $LNC#LA11840-8 "Mixed"
 
 // Her2neu Status - Positive variant
@@ -75,13 +75,13 @@ Usage: #example
 Description: "Onkologie Test Mamma Her2neu Status - Positiv (3+)"
 * insert TestDataLabel
 * status = #final
-* code = $LNC#48676-1 "HER2 [Interpretation] in Tissue"
+* code = $LNC#48676-1 "HER2 Ag [Interpretation] in Tissue"
 * subject = Reference(mii-exa-test-data-onko-patient-1)
 * focus = Reference(mii-exa-test-data-onko-diagnose-1)
 * effectiveDateTime = "2021-06-20"
 * valueCodeableConcept.coding[DefinitionOBDS] = $mii-cs-onko-mamma-her2neu-status-obds#P "positiv"
 * valueCodeableConcept.coding[DefinitionLeitlinie] = $mii-cs-onko-mamma-her2neu-status-leitlinie#positiv "HER2-positiv"
-* component[IHCScore].code = $LNC#85319-2 "HER2 [Presence] in Breast cancer specimen by Immune stain"
+* component[IHCScore].code = $LNC#85319-2 "HER2 Ag [Presence] in Breast cancer specimen by Immune stain"
 * component[IHCScore].valueCodeableConcept = $LNC#LA11843-2 "3+"
 * component[ISHResult].code = $LNC#96893-3 "ERBB2 gene duplication in Tumor by FISH"
 * component[ISHResult].valueCodeableConcept = $LNC#LA6576-8 "Positive"

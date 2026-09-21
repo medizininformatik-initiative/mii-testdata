@@ -4,6 +4,7 @@ Usage: #example
 Description: "Organization: Zentrale Biobank der Charité"
 * insert TestDataLabel
 //* meta.profile[0] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Organization|1.0.8"
+* extension[beschreibung].url = "https://fhir.bbmri-eric.eu/StructureDefinition/miabis-organization-description-extension"
 * extension[beschreibung].valueString = "Zentrale Biobank der Charité"
 * identifier[bbmri-eric-id].system = "http://www.bbmri-eric.eu/"
 * identifier[bbmri-eric-id].value = "de-12345"

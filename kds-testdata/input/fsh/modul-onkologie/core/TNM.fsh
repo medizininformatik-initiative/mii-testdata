@@ -15,7 +15,7 @@ Description: "Onkologie Test TNM T-Kategorie - pT3c"
 * encounter = Reference(mii-exa-test-data-onko-encounter-1)
 * effectiveDateTime = "2021-10-05"
 * method = $mii-cs-onko-tnm-version#8 "8. Auflage"
-* valueCodeableConcept.coding = $UICC#T3c
+* valueCodeableConcept.coding[uicc] = $UICC#T3c
 * focus = Reference(mii-exa-test-data-onko-diagnose-1)
 
 // TNM N-Kategorie
@@ -31,7 +31,7 @@ Description: "Onkologie Test TNM N-Kategorie - pN1"
 * encounter = Reference(mii-exa-test-data-onko-encounter-1)
 * effectiveDateTime = "2021-10-05"
 * method = $mii-cs-onko-tnm-version#8 "8. Auflage"
-* valueCodeableConcept.coding = $UICC#N1
+* valueCodeableConcept.coding[uicc] = $UICC#N1
 * focus = Reference(mii-exa-test-data-onko-diagnose-1)
 * hasMember[0] = Reference(mii-exa-test-data-onko-anzahl-befallene-lymphknoten-1)
 * hasMember[1] = Reference(mii-exa-test-data-onko-anzahl-untersuchte-lymphknoten-1)
@@ -49,7 +49,7 @@ Description: "Onkologie Test TNM M-Kategorie - pM1b"
 * encounter = Reference(mii-exa-test-data-onko-encounter-1)
 * effectiveDateTime = "2021-10-05"
 * method = $mii-cs-onko-tnm-version#8 "8. Auflage"
-* valueCodeableConcept.coding = $UICC#M1b
+* valueCodeableConcept.coding[uicc] = $UICC#M1b
 * valueCodeableConcept.extension[MII_EX_Onko_TNM_ITC_Suffix].valueCodeableConcept = $UICC#i+ "(i+)"
 * focus = Reference(mii-exa-test-data-onko-diagnose-1)
 * partOf = Reference(mii-exa-test-data-onko-operation-1)
@@ -215,7 +215,7 @@ Description: "Onkologie Test TNM N-Kategorie - pN0(i-)(sn) Sentinel Node"
 * encounter = Reference(mii-exa-test-data-onko-encounter-1)
 * effectiveDateTime = "2021-10-05"
 * method = $mii-cs-onko-tnm-version#8 "8. Auflage"
-* valueCodeableConcept.coding = $UICC#N0 "N0"
+* valueCodeableConcept.coding[uicc] = $UICC#N0 "N0"
 // ITC suffix (covers tnm-n-itc search parameter)
 * valueCodeableConcept.extension[MII_EX_Onko_TNM_ITC_Suffix].valueCodeableConcept = $UICC#i- "(i-)"
 // SN suffix (covers tnm-n-sn-suffix search parameter)

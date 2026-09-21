@@ -44,7 +44,8 @@ Description: "Hueftumfang Observation - all MS elements"
 * insert TestDataLabel
 * status = #final
 * category = $observation-category#vital-signs "Vital Signs"
-* code = $loinc#56063-1 "Circumference.at maximal protrusion of gluteus muscles Pelvis"
+* code.coding[0] = $sct#284472007 "Hip circumference"
+* code.coding[+] = $loinc#56063-1 "Circumference.at maximal protrusion of gluteus muscles Pelvis"
 * subject = Reference(mii-exa-test-data-seltene-patient-1)
 * effectiveDateTime = "2025-03-10T10:00:00+01:00"
 * valueQuantity.value = 88
@@ -60,7 +61,8 @@ Description: "Taillenumfang Observation - all MS elements"
 * insert TestDataLabel
 * status = #final
 * category = $observation-category#vital-signs "Vital Signs"
-* code = $loinc#8280-0 "Waist Circumference at umbilicus by Tape measure"
+* code.coding[0] = $sct#276361009 "Waist circumference"
+* code.coding[+] = $loinc#8280-0 "Waist Circumference at umbilicus by Tape measure"
 * subject = Reference(mii-exa-test-data-seltene-patient-1)
 * effectiveDateTime = "2025-03-10T10:00:00+01:00"
 * valueQuantity.value = 74

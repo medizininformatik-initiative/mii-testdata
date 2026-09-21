@@ -6,7 +6,7 @@ Description: "DiagnosticReport: Befundbericht"
 //* meta.profile = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologischer-befund"
 * basedOn = Reference(mii-exa-test-data-anforderung)
 * status = #final
-* category.coding[sct] = $sct#4201000179104 "Imaging report (record artifact)"
+* category.coding[sct] = $sct|http://snomed.info/sct/900000000000207008/version/20260701#4201000179104 "Imaging report (record artifact)"
 * code = $sct#4231000179109 "Mammography report"
 * subject = Reference(mii-exa-test-data-bildgebung-patient-1)
 * encounter = Reference(mii-exa-test-data-bildgebung-encounter-1)

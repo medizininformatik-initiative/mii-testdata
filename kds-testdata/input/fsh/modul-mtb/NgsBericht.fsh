@@ -346,7 +346,7 @@ Description: "Test instance for HER2 biomarker status"
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-biomarker-her2-status"
 * status = #final
 * category[labCategory] = $fhir-observation-category#laboratory "Laboratory"
-* code = $loinc#48676-1 "HER2 [Interpretation] in Tissue"
+* code = $loinc#48676-1 "HER2 Ag [Interpretation] in Tissue"
 * subject = Reference(mii-exa-test-data-mtb-patient-1)
 * valueCodeableConcept = $loinc#LA6576-8 "Positive"
 
