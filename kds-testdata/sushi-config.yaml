@@ -9,7 +9,7 @@ name: MIIKDSTestData
 title: MII KDS Test Data
 description: This project contains example MII KDS data for testing purposes.
 status: draft # draft | active | retired | unknown
-version: 2026.0.0
+version: 2027.0.0-ballot
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2019+
 releaseLabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
@@ -26,35 +26,21 @@ publisher:
 #
 # https://github.com/medizininformatik-initiative/kerndatensatz-meta/wiki/%C3%9Cbersicht-%C3%BCber-Versionen-der-Kerndatensatz%E2%80%90Module
 dependencies:
-  de.medizininformatikinitiative.kerndatensatz.base: 2026.0.0
-  de.medizininformatikinitiative.kerndatensatz.medikation: 2026.0.1
-  de.medizininformatikinitiative.kerndatensatz.laborbefund: 2026.0.1
-  de.medizininformatikinitiative.kerndatensatz.biobank: 2026.0.1
-  eu.miabis.r4: 0.2.0
-  de.medizininformatikinitiative.kerndatensatz.consent: 2026.0.1-rc-1
-  de.medizininformatikinitiative.kerndatensatz.meta: 2026.0.0
-  de.medizininformatikinitiative.kerndatensatz.icu: 2025.0.4
-  de.medizininformatikinitiative.kerndatensatz.mikrobiologie: 2027.0.0-alpha.3
-  de.medizininformatikinitiative.kerndatensatz.molgen: 2026.0.4
-  de.medizininformatikinitiative.kerndatensatz.patho: 2026.0.1
-  de.medizininformatikinitiative.kerndatensatz.studie: 2026.0.2
-  de.medizininformatikinitiative.kerndatensatz.bildgebung: 2026.0.0
-  de.medizininformatikinitiative.kerndatensatz.dokument: 2026.0.1
-  de.medizininformatikinitiative.kerndatensatz.onkologie: 2026.0.3
-  de.medizininformatikinitiative.kerndatensatz.seltene:
-    version: 2026.0.0
-    uri: https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.seltene
-  de.medizininformatikinitiative.kerndatensatz.mtb:
-    version: 2026.0.1
-    uri: https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/ImplementationGuide/mii-ig-mtb-de
-  de.medizininformatikinitiative.kerndatensatz.pros:
-    version: 2026.0.1
-    uri: https://www.medizininformatik-initiative.de/fhir/ext/modul-dok/ImplementationGuide/mii-ig-pro
-  hl7.fhir.uv.genomics-reporting: 3.0.0
-  hl7.fhir.uv.sdc: 3.0.0
+  # Alle MII-KDS-Module kommen als EINE Dependency ueber die BOM
+  # de.medizininformatikinitiative.kerndatensatz.complete (fat package: bettet die
+  # Conformance-Ressourcen aller 21 Module physisch ein und pinnt die externen
+  # Abhaengigkeiten). Nicht in einer Registry publiziert — muss lokal bzw. im CI
+  # aus dem fhir-package-store Cache aufgeloest werden.
+  # KEINE Einzelmodule zusaetzlich deklarieren (doppelte Canonicals!).
+  # ICU ist darin auf 2027.0.0-ballot.3 gepinnt; icu 2027.0.0 (ohne Suffix) ist
+  # eine kaputte Versehens-Publikation und darf nie aufgeloest werden.
+  de.medizininformatikinitiative.kerndatensatz.complete:
+    version: 2027.0.0-ballot.19
+    uri: https://www.medizininformatik-initiative.de/fhir/core/complete/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.complete
+  # Extras, die die BOM nicht (oder nur transitiv) liefert:
+  hl7.fhir.uv.sdc: 4.0.0 # pros 2027.0.0-ballot.1 und isik 6.0.0 fordern 4.0.0
   hl7.fhir.extensions.r5: 4.0.1
-  de.basisprofil.r4: 1.5.4
-  de.einwilligungsmanagement: 1.0.2
+  de.einwilligungsmanagement: 2.0.4 # kommt sonst nur transitiv via consent 2027.0.0-ballot
 #   hl7.fhir.us.mcode:
 #     id: mcode
 #     uri: http://hl7.org/fhir/us/mcode/ImplementationGuide/hl7.fhir.us.mcode
