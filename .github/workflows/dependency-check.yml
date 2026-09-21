@@ -1,0 +1,75 @@
+# Dependency version check — adaptiert aus dem mii-kds-module-template
+# (dort Monitoring-Layer B). Dependabot kennt kein FHIR-Package-Ökosystem und
+# kann weder sushi-config.yaml noch kds-testdata/package.json lesen — dieser
+# Workflow IST die Abdeckung für diese Pins, inkl. der BOM
+# de.medizininformatikinitiative.kerndatensatz.complete (GitHub-Releases, da
+# nicht registry-publiziert) und der Toolchain-Pins (SUSHI, yq) aus ci.yml.
+#
+# Zweck:     scripts/check-updates.mjs ausführen und Versionsdrift als EIN
+#            fortlaufend aktualisiertes Tracking-Issue melden
+#            ("Dependency status <YYYYWww>", Label: dependencies).
+#            Schlägt nur vor — bumpt nie selbst.
+# Trigger:   schedule (montags 06:00 UTC) + workflow_dispatch.
+# Toggle:    vars.ENABLE_DEPENDENCY_CHECK — ON per Default; Repo-Variable auf
+#            'false' setzen, um den Job zu überspringen (zeigt "skipped").
+# Human-gated: jeder vorgeschlagene Bump. Ein Mensch prüft Changelog/Diff,
+#            zieht sushi-config.yaml UND kds-testdata/package.json gemeinsam
+#            nach (Quelle: package.json der BOM-Version) und merged per PR.
+name: Dependency version check
+
+on:
+  schedule:
+    - cron: "0 6 * * 1" # montags 06:00 UTC
+  workflow_dispatch:
+
+permissions:
+  issues: write # Tracking-Issue upserten — einziger Write dieses Jobs
+
+concurrency:
+  group: dependency-check
+  cancel-in-progress: false
+
+jobs:
+  check:
+    if: ${{ vars.ENABLE_DEPENDENCY_CHECK != 'false' }} # Toggle: ON per Default
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: "22"
+
+      - name: Run checker
+        env:
+          # Authentifizierte GitHub-API-Lookups vermeiden das anonyme Rate-Limit.
+          GITHUB_TOKEN: ${{ github.token }}
+        # Der Checker endet immer mit Exit 0 — Drift steht im Report,
+        # nie im Exit-Code.
+        run: node scripts/check-updates.mjs --format=markdown > drift.md
+
+      - name: Upload drift report
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: drift-report
+          path: drift.md
+
+      - name: Upsert tracking issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+        # Ein offenes, fortlaufend aktualisiertes Issue statt vieler
+        # veralteter: bleibt lesbar, auch wenn Wartung sporadisch passiert.
+        run: |
+          set -euo pipefail
+          week="$(date -u +%GW%V)"
+          title="Dependency status ${week}"
+          existing="$(gh issue list --repo "$GITHUB_REPOSITORY" \
+            --label dependencies --state open \
+            --json number --jq '.[0].number // empty')"
+          if [ -n "${existing}" ]; then
+            gh issue edit "${existing}" --repo "$GITHUB_REPOSITORY" \
+              --title "${title}" --body-file drift.md
+          else
+            gh issue create --repo "$GITHUB_REPOSITORY" \
+              --title "${title}" --label dependencies --body-file drift.md
+          fi
