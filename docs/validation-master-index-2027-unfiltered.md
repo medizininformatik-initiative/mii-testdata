@@ -25,13 +25,26 @@ MedicationAdministrations von P2 bleiben bewusst strukturiert
 
 ## Einordnung der Top-Cluster
 
-1. **Lungenfunktion dominiert** (~79 % aller Fehler): `Validation_VAL_Profile_MatchMultiple` (891) +
-   `SLICING_CANNOT_BE_EVALUATED` (190) sind überwiegend der bekannte Upstream-Slicing-Defekt des
-   Moduls — Pattern-Slices sind nicht disjunkt (betrifft nicht nur Bodyplethysmographie/BF↔FEV_FVC,
-   sondern u.a. auch `methacholine`), und der `$this`-Diskriminator auf `component:predicted`
-   ist wegen der TODO-Platzhalter-Codes nicht auswertbar. Die Testdaten selbst sind
-   SUSHI-clean; der Validator meldet die Profil-Ambiguität trotzdem. → Upstream-Issue
-   ans Modul, nicht an den Testdaten fixbar (vgl. docs/research-lungenfunktion.md).
+1. **Lungenfunktion dominiert** (~79 % aller Fehler) — Ursache vollständig analysiert,
+   gemeldet als [kerndatensatz-lungenfunktion#45](https://github.com/medizininformatik-initiative/kerndatensatz-lungenfunktion/issues/45).
+   Drei Konstruktionsfehler in den Profilen, **keiner instanzseitig behebbar**:
+   - `DiagnosticReport.result` ist mit Diskriminator **`type`/`$this`** gesliced — alle
+     17 (Bodyplethysmographie) bzw. 7 (Provokationstest) Slices sind vom Typ `Reference`
+     und damit für den Validator identisch → jedes result matcht mehrere Slices
+     (`Validation_VAL_Profile_MatchMultiple`, Paare „BF, X" — BF = Breathing
+     Frequency/Atemfrequenz, nicht „Befund"). Fix: `profile`/`$this.resolve()`.
+   - Provokationstest: `Dosis_Schwellwert` und `Dosis_kumuliert` referenzieren
+     **dasselbe** Zielprofil `mii-pr-lungenfunktion-dosis` — auch mit korrektem
+     Diskriminator unheilbar; braucht getrennte Profile oder `resolve().code`.
+   - `Observation.component` (predicted/percentPredicted/z-score) und
+     `Observation.code.coding` sind mit **`value`/`$this` ohne Pattern** gesliced;
+     die unterscheidenden required-Bindings sitzen erst auf `component.code.coding` →
+     `SLICING_CANNOT_BE_EVALUATED` (je 52 pro Component-Slice), verschärft durch
+     TODO-Platzhalter-Codes in den ValueSets. Fix: Diskriminator `value`/`code` mit
+     patternCodeableConcept.
+   Die Testdaten sind SUSHI-clean und umgehen die Ambiguität inhaltlich (Spirometrie
+   trägt FEV_FVC, Bodyplethysmographie BF); die Meldungen entstehen rein aus den
+   Profildefinitionen (vgl. docs/research-lungenfunktion.md).
 2. **`Reference_REF_CantMatchChoice` (79)**: Referenzziele (v.a. Medication) matchen keines der
    im Profil erlaubten Ziel-Profile — Kandidat für Testdaten-Fixes (meta.profile am Ziel bzw.
    korrektes Zielprofil).
