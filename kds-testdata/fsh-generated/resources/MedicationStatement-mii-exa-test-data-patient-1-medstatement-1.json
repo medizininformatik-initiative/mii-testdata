@@ -58,6 +58,16 @@
           "periodUnit": "d"
         }
       },
+      "doseAndRate": [
+        {
+          "doseQuantity": {
+            "value": 100,
+            "code": "mg",
+            "system": "http://unitsofmeasure.org",
+            "unit": "mg"
+          }
+        }
+      ],
       "route": {
         "coding": [
           {
@@ -66,8 +76,7 @@
             "display": "Oral use"
           }
         ]
-      },
-      "text": "ASS 100 mg 1x täglich mittags eine Tablette oral"
+      }
     }
   ],
   "status": "active",

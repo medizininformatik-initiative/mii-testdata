@@ -13,7 +13,6 @@ Description: "MedicationRequest: Dalbavancin 1500 mg IV als 30-minütige Infusio
 * subject = Reference(mii-exa-test-data-patient-1)
 * encounter = Reference(mii-exa-test-data-patient-1-encounter-1)
 * authoredOn = "2024-02-16T08:37:00+01:00"
-* dosageInstruction.text = "Dalbavancin 1500 mg als 30-minütige Infusion"
 * dosageInstruction.timing.event = "2024-02-16"
 * dosageInstruction.route = $standardterms#20045000 "Intravenous use"
 * dosageInstruction.doseAndRate.doseQuantity = 1500 $ucum#mg "mg"
@@ -36,7 +35,6 @@ Description: "MedicationRequest: Dalbavancin 1500 mg IV als 30-minütige Infusio
 * subject = Reference(mii-exa-test-data-patient-1)
 * encounter = Reference(mii-exa-test-data-patient-1-encounter-1)
 * authoredOn = "2024-02-16T08:37:00+01:00"
-* dosageInstruction.text = "Dalbavancin 1500 mg als 30-minütige Infusion"
 * dosageInstruction.timing.event = "2024-02-16"
 * dosageInstruction.route = $standardterms#20045000 "Intravenous use"
 * dosageInstruction.doseAndRate.doseQuantity = 1500 $ucum#mg "mg"
@@ -58,7 +56,6 @@ Description: "MedicationRequest: Propofol 6.5 mg/min IV via Perfusor"
 * subject = Reference(mii-exa-test-data-patient-1)
 * encounter = Reference(mii-exa-test-data-patient-1-encounter-2)
 * authoredOn = "2024-02-20T09:55:00+01:00"
-* dosageInstruction.text = "Propofol 6.5 mg/min IV via Perfusor"
 * dosageInstruction.timing.event = "2024-02-20T10:00:00+01:00"
 * dosageInstruction.route = $standardterms#20045000 "Intravenous use"
 * dosageInstruction.method = $sct#129331004 "Perfusion - action (qualifier value)"
@@ -79,7 +76,6 @@ Description: "MedicationRequest: Propofol 6.5 mg/min IV via Perfusor"
 * subject = Reference(mii-exa-test-data-patient-1)
 * encounter = Reference(mii-exa-test-data-patient-1-encounter-2)
 * authoredOn = "2024-02-20T10:00:00+01:00"
-* dosageInstruction.text = "Propofol 6.5 mg/min IV via Perfusor"
 * dosageInstruction.timing.event = "2024-02-20T10:00:00+01:00"
 * dosageInstruction.route = $standardterms#20045000 "Intravenous use"
 * dosageInstruction.method = $sct#129331004 "Perfusion - action (qualifier value)"
@@ -126,17 +122,11 @@ Description: "MedicationRequest: Morphin 10mg oral alle 6 Stunden bei Bedarf"
 * identifier[0].value = "MO_0000006"
 * status = #active
 * intent = #order
-* medicationReference = Reference(mii-exa-test-data-medication-morphin)
+* medicationCodeableConcept.text = "Morphin 10 mg Tabletten"
 * subject = Reference(mii-exa-test-data-patient-2)
 * encounter = Reference(mii-exa-test-data-patient-2-encounter-1)
 * authoredOn = "2024-03-06T08:00:00+01:00"
-* dosageInstruction.text = "Morphin 10mg alle 6 Stunden bei Bedarf"
-* dosageInstruction.route = $standardterms#20053000 "Oral use"
-* dosageInstruction.doseAndRate.doseQuantity = 10 $ucum#mg "mg"
-* dosageInstruction.timing.repeat.frequency = 4
-* dosageInstruction.timing.repeat.period = 1
-* dosageInstruction.timing.repeat.periodUnit = #d
-* dosageInstruction.asNeededBoolean = true
+* dosageInstruction.text = "Morphin 10 mg oral, alle 6 Stunden bei Bedarf"
 * substitution.allowedBoolean = true
 
 Instance: mii-exa-test-data-patient-2-medrequest-2
@@ -148,16 +138,11 @@ Description: "MedicationRequest: Carboplatin 450mg IV über 1 Stunde"
 * identifier[0].value = "MO_0000007"
 * status = #active
 * intent = #order
-* medicationReference = Reference(mii-exa-test-data-medication-carboplatin)
+* medicationCodeableConcept.text = "Carboplatin Infusionsloesung 450 mg"
 * subject = Reference(mii-exa-test-data-patient-2)
 * encounter = Reference(mii-exa-test-data-patient-2-encounter-1)
 * authoredOn = "2024-03-07T10:00:00+01:00"
-* dosageInstruction.text = "Carboplatin 450mg IV über 1 Stunde"
-* dosageInstruction.timing.event = "2024-03-07T10:00:00+01:00"
-* dosageInstruction.route = $standardterms#20045000 "Intravenous use"
-* dosageInstruction.doseAndRate.doseQuantity = 450 $ucum#mg "mg"
-* dosageInstruction.doseAndRate.rateRatio.numerator = 450 $ucum#mg "mg"
-* dosageInstruction.doseAndRate.rateRatio.denominator = 1 $ucum#h "h"
+* dosageInstruction.text = "Carboplatin 450 mg intravenös über 1 Stunde, Gabe am 07.03.2024"
 * substitution.allowedBoolean = false
 
 Instance: mii-exa-test-data-patient-2-medrequest-3
@@ -169,16 +154,11 @@ Description: "MedicationRequest: Paclitaxel 175mg IV über 3 Stunden"
 * identifier[0].value = "MO_0000008"
 * status = #active
 * intent = #order
-* medicationReference = Reference(mii-exa-test-data-medication-paclitaxel)
+* medicationCodeableConcept.text = "Paclitaxel Infusionsloesung 175 mg"
 * subject = Reference(mii-exa-test-data-patient-2)
 * encounter = Reference(mii-exa-test-data-patient-2-encounter-1)
 * authoredOn = "2024-03-07T10:30:00+01:00"
-* dosageInstruction.text = "Paclitaxel 175mg IV über 3 Stunden"
-* dosageInstruction.timing.event = "2024-03-07T10:30:00+01:00"
-* dosageInstruction.route = $standardterms#20045000 "Intravenous use"
-* dosageInstruction.doseAndRate.doseQuantity = 175 $ucum#mg "mg"
-* dosageInstruction.doseAndRate.rateRatio.numerator = 175 $ucum#mg "mg"
-* dosageInstruction.doseAndRate.rateRatio.denominator = 3 $ucum#h "h"
+* dosageInstruction.text = "Paclitaxel 175 mg intravenös über 3 Stunden, Gabe am 07.03.2024"
 * substitution.allowedBoolean = false
 
 // Patient-3 MedicationRequests

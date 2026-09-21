@@ -51,7 +51,7 @@
       {
         "code": "C56",
         "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
-        "version": "2024",
+        "version": "2026",
         "display": "Bösartige Neubildung des Ovars"
       }
     ]

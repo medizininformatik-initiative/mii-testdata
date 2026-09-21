@@ -1779,7 +1779,6 @@
                 }
               }
             ],
-            "text": "Dalbavancin 1500 mg als 30-minütige Infusion",
             "route": {
               "coding": [
                 {
@@ -1870,7 +1869,6 @@
                 }
               }
             ],
-            "text": "Dalbavancin 1500 mg als 30-minütige Infusion",
             "route": {
               "coding": [
                 {
@@ -1948,7 +1946,6 @@
                 }
               }
             ],
-            "text": "Propofol 6.5 mg/min IV via Perfusor",
             "route": {
               "coding": [
                 {
@@ -2041,7 +2038,6 @@
                 }
               }
             ],
-            "text": "Propofol 6.5 mg/min IV via Perfusor",
             "route": {
               "coding": [
                 {
@@ -2145,6 +2141,16 @@
                 "periodUnit": "d"
               }
             },
+            "doseAndRate": [
+              {
+                "doseQuantity": {
+                  "value": 100,
+                  "code": "mg",
+                  "system": "http://unitsofmeasure.org",
+                  "unit": "mg"
+                }
+              }
+            ],
             "route": {
               "coding": [
                 {
@@ -2153,8 +2159,7 @@
                   "display": "Oral use"
                 }
               ]
-            },
-            "text": "ASS 100 mg 1x täglich mittags eine Tablette oral"
+            }
           }
         ],
         "status": "active",
@@ -2257,6 +2262,11 @@
                 }
               ]
             },
+            "timing": {
+              "event": [
+                "2024-02-16T10:20:00+01:00"
+              ]
+            },
             "doseAndRate": [
               {
                 "rateRatio": {
@@ -2280,8 +2290,7 @@
                   "unit": "mg"
                 }
               }
-            ],
-            "text": "Dalbavancin 1500 mg als 30-minütige Infusion"
+            ]
           }
         ],
         "status": "completed",
@@ -2361,8 +2370,19 @@
                 }
               ]
             },
+            "timing": {
+              "event": [
+                "2024-02-20T09:55:00+01:00"
+              ]
+            },
             "doseAndRate": [
               {
+                "doseQuantity": {
+                  "value": 200,
+                  "code": "mg",
+                  "system": "http://unitsofmeasure.org",
+                  "unit": "mg"
+                },
                 "rateQuantity": {
                   "value": 5,
                   "code": "mg/min",

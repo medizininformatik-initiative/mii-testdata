@@ -64,6 +64,9 @@ Description: "Test instance for MTB systemic therapy medication statement"
 * effectivePeriod.start = "2024-04-15"
 * effectivePeriod.end = "2024-04-15"
 * note.text = "Z1 Osimertinib 80mg oral, daily"
+* dosage.timing.repeat.frequency = 1
+* dosage.timing.repeat.period = 1
+* dosage.timing.repeat.periodUnit = #d
 * dosage.doseAndRate.doseQuantity.value = 80
 * dosage.doseAndRate.doseQuantity.unit = "mg"
 * dosage.doseAndRate.doseQuantity.code = #mg

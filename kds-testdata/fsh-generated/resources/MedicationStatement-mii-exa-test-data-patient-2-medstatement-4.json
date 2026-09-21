@@ -33,47 +33,11 @@
     ]
   },
   "medicationCodeableConcept": {
-    "coding": [
-      {
-        "system": "http://fhir.de/CodeSystem/bfarm/atc",
-        "code": "B05AX01",
-        "version": "2023",
-        "display": "Erythrozyten"
-      }
-    ]
+    "text": "Erythrozytenkonzentrat"
   },
   "dosage": [
     {
-      "route": {
-        "coding": [
-          {
-            "system": "http://standardterms.edqm.eu",
-            "code": "20045000",
-            "display": "Intravenous use"
-          },
-          {
-            "system": "http://snomed.info/sct",
-            "code": "47625008",
-            "display": "Intravenous route (qualifier value)"
-          }
-        ]
-      },
-      "doseAndRate": [
-        {
-          "rateRange": {
-            "low": {
-              "value": 150,
-              "code": "mL/h",
-              "system": "http://unitsofmeasure.org"
-            },
-            "high": {
-              "value": 300,
-              "code": "mL/h",
-              "system": "http://unitsofmeasure.org"
-            }
-          }
-        }
-      ]
+      "text": "Erythrozytenkonzentrat 150 bis 300 mL/h intravenös"
     }
   ],
   "status": "completed",

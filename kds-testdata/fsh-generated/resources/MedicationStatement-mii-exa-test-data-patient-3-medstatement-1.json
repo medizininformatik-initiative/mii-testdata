@@ -51,6 +51,13 @@
           }
         ]
       },
+      "timing": {
+        "repeat": {
+          "frequency": 4,
+          "period": 1,
+          "periodUnit": "d"
+        }
+      },
       "doseAndRate": [
         {
           "doseRange": {

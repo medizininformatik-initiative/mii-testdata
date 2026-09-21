@@ -1632,6 +1632,13 @@
                 }
               ]
             },
+            "timing": {
+              "repeat": {
+                "frequency": 4,
+                "period": 1,
+                "periodUnit": "d"
+              }
+            },
             "doseAndRate": [
               {
                 "doseRange": {
@@ -1746,6 +1753,13 @@
                 }
               ]
             },
+            "timing": {
+              "repeat": {
+                "count": 1,
+                "duration": 46,
+                "durationUnit": "h"
+              }
+            },
             "doseAndRate": [
               {
                 "rateRatio": {
@@ -1845,6 +1859,13 @@
                   "display": "Intravenous use"
                 }
               ]
+            },
+            "timing": {
+              "repeat": {
+                "count": 1,
+                "duration": 2,
+                "durationUnit": "h"
+              }
             },
             "doseAndRate": [
               {

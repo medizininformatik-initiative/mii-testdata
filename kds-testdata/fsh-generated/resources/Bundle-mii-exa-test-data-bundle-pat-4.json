@@ -1337,6 +1337,13 @@
                 }
               ]
             },
+            "timing": {
+              "repeat": {
+                "count": 1,
+                "duration": 2,
+                "durationUnit": "h"
+              }
+            },
             "doseAndRate": [
               {
                 "rateRatio": {

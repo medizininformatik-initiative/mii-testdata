@@ -7,6 +7,22 @@ Setup: HL7 Java Validator (validator_cli, lokal) über alle 830 Dateien in
 basisprofil 1.6.0, einwilligungsmanagement 2.0.4, sdc 4.0.0, genomics-reporting 3.0.0, miabis 1.3.0;
 **`-tx n/a`** (kein Terminologieserver — Terminologie-Meldungen fallen entsprechend anders aus als im CI mit SU-TermServ).
 
+## Fix-Status (Nachtrag 2026-09-21)
+
+Gezielter Re-Run (validator_cli, gleiche Konfiguration) nach den Testdaten-Fixes:
+
+| Cluster | vorher | nachher | Maßnahme |
+|---|---|---|---|
+| DosageDE `DosageStructuredRequiresBoth` | 30 | **0** | Konzept-Split: **Patient 1 = durchgehend strukturierte Dosierung** (timing + doseAndRate, ohne dosage.text, voll kodierte Medications), **Patient 2 = durchgehend unstrukturiert** (nur `dosage.text`, `medicationCodeableConcept.text` statt Medication-Ressource). Übrige Instanzen: fehlende timing-/dose-Hälfte ergänzt. |
+| `Questionnaire_QR_Item_NotFound` (PHQ-9) | 30 | **0** | LinkIds an das pros-2026.7-Rename angepasst: `phq-phq9-q01…q09` → `phq-phq2a…2i`, `q10` → `phq-phq9-difficulty`. |
+| DosageDE `DosageDoseUnitSameCode` | 6 | **0** | P2-Fälle durch Freitext-Umstellung entfallen; Propofol (P1) um `doseQuantity 200 mg` ergänzt (Constraint zählt dose-Einheiten, rate allein ⇒ count 0). |
+| `VALUESET_VALUE_MISMATCH` (ICD-10-GM, onko-tod) | 34 | 34 → **reklassifiziert als `-tx n/a`-Artefakt** | Das gebundene VS `mii-vs-diagnose-icd10gm` includiert ICD-10-GM **2009–2026**; ohne Terminologieserver meldet der Validator jede Include-Version ≠ Coding-Version. `coding.version` ist im Tod-Profil 1..1 Pflicht und kann nicht entfallen. Instanz von `|2024` auf `|2026` gehoben (aktueller Jahrgang; ICD-10-GM 2027 ist noch nicht veröffentlicht — bei Erscheinen upstream ValueSet-Erweiterung prüfen). Im CI mit SU-TermServ neu bewerten. |
+
+Ein durchgehend UNSTRUKTURIERTER Patient (P2) und ein durchgehend STRUKTURIERTER
+Patient (P1) decken jetzt beide DosageDE-Welten als Testfälle ab; die
+MedicationAdministrations von P2 bleiben bewusst strukturiert
+(Gabedokumentation entsteht systemseitig).
+
 ## Einordnung der Top-Cluster
 
 1. **Lungenfunktion dominiert** (~79 % aller Fehler): `Validation_VAL_Profile_MatchMultiple` (891) +

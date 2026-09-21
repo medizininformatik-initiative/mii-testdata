@@ -172,7 +172,7 @@
                 }
               }
             ],
-            "linkId": "phq-phq9-q01"
+            "linkId": "phq-phq2a"
           },
           {
             "answer": [
@@ -184,7 +184,7 @@
                 }
               }
             ],
-            "linkId": "phq-phq9-q02"
+            "linkId": "phq-phq2b"
           },
           {
             "answer": [
@@ -196,7 +196,7 @@
                 }
               }
             ],
-            "linkId": "phq-phq9-q03"
+            "linkId": "phq-phq2c"
           },
           {
             "answer": [
@@ -208,7 +208,7 @@
                 }
               }
             ],
-            "linkId": "phq-phq9-q04"
+            "linkId": "phq-phq2d"
           },
           {
             "answer": [
@@ -220,7 +220,7 @@
                 }
               }
             ],
-            "linkId": "phq-phq9-q05"
+            "linkId": "phq-phq2e"
           },
           {
             "answer": [
@@ -232,7 +232,7 @@
                 }
               }
             ],
-            "linkId": "phq-phq9-q06"
+            "linkId": "phq-phq2f"
           },
           {
             "answer": [
@@ -244,7 +244,7 @@
                 }
               }
             ],
-            "linkId": "phq-phq9-q07"
+            "linkId": "phq-phq2g"
           },
           {
             "answer": [
@@ -256,7 +256,7 @@
                 }
               }
             ],
-            "linkId": "phq-phq9-q08"
+            "linkId": "phq-phq2h"
           },
           {
             "answer": [
@@ -268,7 +268,7 @@
                 }
               }
             ],
-            "linkId": "phq-phq9-q09"
+            "linkId": "phq-phq2i"
           },
           {
             "answer": [
@@ -288,7 +288,7 @@
                 }
               }
             ],
-            "linkId": "phq-phq9-q10"
+            "linkId": "phq-phq9-difficulty"
           }
         ],
         "status": "completed",

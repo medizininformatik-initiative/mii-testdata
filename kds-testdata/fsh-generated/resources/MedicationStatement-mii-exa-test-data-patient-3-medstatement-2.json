@@ -52,6 +52,13 @@
           }
         ]
       },
+      "timing": {
+        "repeat": {
+          "count": 1,
+          "duration": 46,
+          "durationUnit": "h"
+        }
+      },
       "doseAndRate": [
         {
           "rateRatio": {
