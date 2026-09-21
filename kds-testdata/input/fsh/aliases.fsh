@@ -94,3 +94,11 @@ Alias: $OMIM = http://omim.org
 Alias: $seltene-cs-narse = https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/CodeSystem/mii-cs-seltene-narse-therapietyp
 Alias: $seltene-cs-strategie = https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/CodeSystem/mii-cs-seltene-therapieempfehlung-strategie
 Alias: $seltene-cs-typ = https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/CodeSystem/mii-cs-seltene-therapieempfehlung-typ
+
+// Kardiologie
+Alias: $v2-0532 = http://terminology.hl7.org/CodeSystem/v2-0532
+Alias: $kardio-cs-atherosklerotisches-ereignis = https://www.medizininformatik-initiative.de/fhir/ext/modul-kardio/CodeSystem/mii-cs-kardio-atherosklerotisches-ereignis
+Alias: $kardio-cs-modifizierte-rankin-skala = https://www.medizininformatik-initiative.de/fhir/ext/modul-kardio/CodeSystem/mii-cs-kardio-modifizierte-rankin-skala
+
+// SNOMED CT mit Versions-Pin der 2027er-Ballot-Profile (Kardiologie/Lungenfunktion)
+Alias: $sct20260701 = http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701
