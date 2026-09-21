@@ -164,13 +164,21 @@
                 "display": "Vital Signs"
               }
             ]
+          },
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
           }
         ],
         "valueQuantity": {
-          "unit": "cm",
           "system": "http://unitsofmeasure.org",
-          "code": "cm",
-          "value": 57.5
+          "value": 57.5,
+          "unit": "cm",
+          "code": "cm"
         },
         "code": {
           "coding": [
@@ -220,20 +228,25 @@
             ]
           }
         ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "284472007",
+              "display": "Hip circumference"
+            },
+            {
+              "code": "56063-1",
+              "system": "http://loinc.org",
+              "display": "Circumference.at maximal protrusion of gluteus muscles Pelvis"
+            }
+          ]
+        },
         "valueQuantity": {
           "unit": "cm",
           "system": "http://unitsofmeasure.org",
           "code": "cm",
           "value": 88
-        },
-        "code": {
-          "coding": [
-            {
-              "system": "http://loinc.org",
-              "code": "56063-1",
-              "display": "Circumference.at maximal protrusion of gluteus muscles Pelvis"
-            }
-          ]
         },
         "status": "final",
         "subject": {
@@ -274,20 +287,25 @@
             ]
           }
         ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "276361009",
+              "display": "Waist circumference"
+            },
+            {
+              "code": "8280-0",
+              "system": "http://loinc.org",
+              "display": "Waist Circumference at umbilicus by Tape measure"
+            }
+          ]
+        },
         "valueQuantity": {
           "unit": "cm",
           "system": "http://unitsofmeasure.org",
           "code": "cm",
           "value": 74
-        },
-        "code": {
-          "coding": [
-            {
-              "system": "http://loinc.org",
-              "code": "8280-0",
-              "display": "Waist Circumference at umbilicus by Tape measure"
-            }
-          ]
         },
         "status": "final",
         "subject": {

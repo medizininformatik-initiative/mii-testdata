@@ -1,6 +1,6 @@
 {
   "resourceType": "Device",
-  "id": "mii-exa-test-data-patient-1-icu-device-1",
+  "id": "mii-exa-test-data-patient-1-icu-device-ecmo-1",
   "meta": {
     "security": [
       {
@@ -15,18 +15,12 @@
   },
   "deviceName": [
     {
-      "name": "Draeger Evita V500",
+      "name": "Getinge Cardiohelp",
       "type": "manufacturer-name"
     }
   ],
   "type": {
-    "coding": [
-      {
-        "code": "706172005",
-        "system": "http://snomed.info/sct",
-        "display": "Ventilator (physical object)"
-      }
-    ]
+    "text": "VV-ECMO-System (extrakorporale Membranoxygenierung)"
   },
   "patient": {
     "reference": "Patient/mii-exa-test-data-icu-patient-1"

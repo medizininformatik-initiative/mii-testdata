@@ -103,7 +103,7 @@
         },
         "extension": [
           {
-            "url": "https://fhir.bbmri-eric.eu/fhir/StructureDefinition/miabis-organization-description-extension",
+            "url": "https://fhir.bbmri-eric.eu/StructureDefinition/miabis-organization-description-extension",
             "valueString": "Zentrale Biobank der Charité"
           }
         ],
@@ -249,8 +249,8 @@
         "type": {
           "coding": [
             {
-              "system": "http://snomed.info/sct",
               "code": "122555007",
+              "system": "http://snomed.info/sct",
               "display": "Venous blood specimen (specimen)"
             }
           ]
@@ -426,8 +426,8 @@
         "type": {
           "coding": [
             {
-              "system": "http://snomed.info/sct",
               "code": "128159001",
+              "system": "http://snomed.info/sct",
               "display": "Tissue specimen from colon (specimen)"
             }
           ]
@@ -482,8 +482,8 @@
         "type": {
           "coding": [
             {
-              "system": "http://snomed.info/sct",
               "code": "119364003",
+              "system": "http://snomed.info/sct",
               "display": "Serum specimen (specimen)"
             }
           ]
@@ -575,8 +575,8 @@
         "type": {
           "coding": [
             {
-              "system": "http://snomed.info/sct",
               "code": "445295009",
+              "system": "http://snomed.info/sct",
               "display": "Blood specimen with edetic acid (specimen)"
             }
           ]
@@ -715,16 +715,16 @@
             }
           }
         ],
+        "status": "available",
         "type": {
           "coding": [
             {
-              "system": "http://snomed.info/sct",
               "code": "445295009",
+              "system": "http://snomed.info/sct",
               "display": "Blood specimen with edetic acid (specimen)"
             }
           ]
         },
-        "status": "available",
         "subject": {
           "reference": "Patient/mii-exa-test-data-biobank-patient-4"
         },
@@ -786,16 +786,16 @@
             }
           }
         ],
+        "status": "available",
         "type": {
           "coding": [
             {
-              "system": "http://snomed.info/sct",
               "code": "445295009",
+              "system": "http://snomed.info/sct",
               "display": "Blood specimen with edetic acid (specimen)"
             }
           ]
         },
-        "status": "available",
         "subject": {
           "reference": "Patient/mii-exa-test-data-biobank-patient-4"
         },
@@ -846,8 +846,8 @@
         "type": {
           "coding": [
             {
-              "system": "http://snomed.info/sct",
               "code": "119364003",
+              "system": "http://snomed.info/sct",
               "display": "Serum specimen (specimen)"
             }
           ]
@@ -939,8 +939,8 @@
         "type": {
           "coding": [
             {
-              "system": "http://snomed.info/sct",
               "code": "445295009",
+              "system": "http://snomed.info/sct",
               "display": "Blood specimen with edetic acid (specimen)"
             }
           ]
@@ -1068,8 +1068,8 @@
         "type": {
           "coding": [
             {
-              "system": "http://snomed.info/sct",
               "code": "445295009",
+              "system": "http://snomed.info/sct",
               "display": "Blood specimen with edetic acid (specimen)"
             }
           ]
@@ -1161,8 +1161,8 @@
         "type": {
           "coding": [
             {
-              "system": "http://snomed.info/sct",
               "code": "119364003",
+              "system": "http://snomed.info/sct",
               "display": "Serum specimen (specimen)"
             }
           ]
@@ -1299,8 +1299,8 @@
         "type": {
           "coding": [
             {
-              "system": "http://snomed.info/sct",
               "code": "445295009",
+              "system": "http://snomed.info/sct",
               "display": "Blood specimen with edetic acid (specimen)"
             }
           ]
@@ -1392,8 +1392,8 @@
         "type": {
           "coding": [
             {
-              "system": "http://snomed.info/sct",
               "code": "119364003",
+              "system": "http://snomed.info/sct",
               "display": "Serum specimen (specimen)"
             }
           ]
@@ -1521,8 +1521,8 @@
         "type": {
           "coding": [
             {
-              "system": "http://snomed.info/sct",
               "code": "445295009",
+              "system": "http://snomed.info/sct",
               "display": "Blood specimen with edetic acid (specimen)"
             }
           ]
@@ -1614,8 +1614,8 @@
         "type": {
           "coding": [
             {
-              "system": "http://snomed.info/sct",
               "code": "119364003",
+              "system": "http://snomed.info/sct",
               "display": "Serum specimen (specimen)"
             }
           ]
@@ -1743,8 +1743,8 @@
         "type": {
           "coding": [
             {
-              "system": "http://snomed.info/sct",
               "code": "445295009",
+              "system": "http://snomed.info/sct",
               "display": "Blood specimen with edetic acid (specimen)"
             }
           ]
@@ -1836,8 +1836,8 @@
         "type": {
           "coding": [
             {
-              "system": "http://snomed.info/sct",
               "code": "119364003",
+              "system": "http://snomed.info/sct",
               "display": "Serum specimen (specimen)"
             }
           ]
@@ -1965,8 +1965,8 @@
         "type": {
           "coding": [
             {
-              "system": "http://snomed.info/sct",
               "code": "445295009",
+              "system": "http://snomed.info/sct",
               "display": "Blood specimen with edetic acid (specimen)"
             }
           ]
@@ -2058,8 +2058,8 @@
         "type": {
           "coding": [
             {
-              "system": "http://snomed.info/sct",
               "code": "119364003",
+              "system": "http://snomed.info/sct",
               "display": "Serum specimen (specimen)"
             }
           ]
@@ -2187,8 +2187,8 @@
         "type": {
           "coding": [
             {
-              "system": "http://snomed.info/sct",
               "code": "445295009",
+              "system": "http://snomed.info/sct",
               "display": "Blood specimen with edetic acid (specimen)"
             }
           ]
@@ -2280,8 +2280,8 @@
         "type": {
           "coding": [
             {
-              "system": "http://snomed.info/sct",
               "code": "119364003",
+              "system": "http://snomed.info/sct",
               "display": "Serum specimen (specimen)"
             }
           ]

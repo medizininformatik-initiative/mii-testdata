@@ -10,7 +10,7 @@
       }
     ],
     "profile": [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/spontane-mechanische-atemfrequenz-beatmet"
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-spontane-mechanische-atemfrequenz-beatmet"
     ]
   },
   "partOf": [
@@ -22,8 +22,8 @@
     {
       "coding": [
         {
-          "code": "40617009",
           "system": "http://snomed.info/sct",
+          "code": "40617009",
           "display": "Artificial ventilation (regime/therapy)"
         }
       ]
@@ -34,7 +34,7 @@
       {
         "system": "http://snomed.info/sct",
         "code": "250810003",
-        "display": "Total breath rate"
+        "display": "Total breath rate (observable entity)"
       },
       {
         "system": "http://loinc.org",
@@ -44,7 +44,7 @@
       {
         "system": "urn:iso:std:iso:11073:10101",
         "code": "152490",
-        "display": "MDC_VENT_RESP_BTSD_PSAZC_RATE"
+        "display": "Total rate of breaths or inspiratory gas flow comprised of unassisted (P), supported (S), assisted (A), synchronized assisted (Z) and controlled (C) breath types."
       }
     ]
   },
@@ -58,5 +58,5 @@
   "subject": {
     "reference": "Patient/mii-exa-test-data-icu-patient-1"
   },
-  "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+  "effectiveDateTime": "2024-05-05T08:00:00+02:00"
 }

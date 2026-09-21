@@ -17,14 +17,14 @@
     "coding": [
       {
         "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
-        "code": "A41.9",
+        "code": "U07.1",
         "version": "2024"
       }
     ]
   },
   "note": [
     {
-      "text": "Sepsis nicht naeher bezeichnet"
+      "text": "COVID-19 Virus nachgewiesen"
     }
   ],
   "clinicalStatus": {
@@ -46,7 +46,7 @@
   "subject": {
     "reference": "Patient/mii-exa-test-data-icu-patient-1"
   },
-  "recordedDate": "2024-02-15",
+  "recordedDate": "2024-05-01",
   "encounter": {
     "reference": "Encounter/mii-exa-test-data-icu-encounter-1"
   }

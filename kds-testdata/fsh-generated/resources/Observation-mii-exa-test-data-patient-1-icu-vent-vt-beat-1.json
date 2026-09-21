@@ -10,7 +10,7 @@
       }
     ],
     "profile": [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/atemzugvolumen-waehrend-beatmung"
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-atemzugvolumen-waehrend-beatmung"
     ]
   },
   "partOf": [
@@ -22,8 +22,8 @@
     {
       "coding": [
         {
-          "code": "40617009",
           "system": "http://snomed.info/sct",
+          "code": "40617009",
           "display": "Artificial ventilation (regime/therapy)"
         }
       ]
@@ -34,7 +34,7 @@
       {
         "system": "http://snomed.info/sct",
         "code": "250874002",
-        "display": "Ventilator delivered tidal volume"
+        "display": "Ventilator delivered tidal volume (observable entity)"
       },
       {
         "system": "http://loinc.org",
@@ -44,19 +44,19 @@
       {
         "system": "urn:iso:std:iso:11073:10101",
         "code": "151980",
-        "display": "MDC_VENT_VOL_TIDAL"
+        "display": "Volume of gas delivered through the patient-connection port during a respiratory cycle."
       }
     ]
   },
   "valueQuantity": {
     "system": "http://unitsofmeasure.org",
     "code": "mL",
-    "value": 480,
+    "value": 320,
     "unit": "mL"
   },
   "status": "final",
   "subject": {
     "reference": "Patient/mii-exa-test-data-icu-patient-1"
   },
-  "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+  "effectiveDateTime": "2024-05-05T08:00:00+02:00"
 }

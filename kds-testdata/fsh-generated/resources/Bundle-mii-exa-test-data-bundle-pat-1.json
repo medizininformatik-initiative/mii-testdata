@@ -2600,7 +2600,7 @@
         },
         "extension": [
           {
-            "url": "https://fhir.bbmri-eric.eu/fhir/StructureDefinition/miabis-organization-description-extension",
+            "url": "https://fhir.bbmri-eric.eu/StructureDefinition/miabis-organization-description-extension",
             "valueString": "Zentrale Biobank der Charité"
           }
         ],
@@ -2704,13 +2704,13 @@
           {
             "coding": [
               {
-                "system": "http://loinc.org",
-                "code": "26436-6",
-                "display": "Laboratory studies (set)"
-              },
-              {
                 "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
                 "code": "LAB"
+              },
+              {
+                "code": "26436-6",
+                "system": "http://loinc.org",
+                "display": "Laboratory studies (set)"
               }
             ]
           }
@@ -2915,14 +2915,14 @@
           {
             "coding": [
               {
-                "system": "http://loinc.org",
-                "code": "26436-6",
-                "display": "Laboratory studies (set)"
-              },
-              {
                 "system": "http://terminology.hl7.org/CodeSystem/observation-category",
                 "code": "laboratory",
                 "display": "Laboratory"
+              },
+              {
+                "code": "26436-6",
+                "system": "http://loinc.org",
+                "display": "Laboratory studies (set)"
               }
             ]
           }
@@ -3081,14 +3081,14 @@
           {
             "coding": [
               {
-                "system": "http://loinc.org",
-                "code": "26436-6",
-                "display": "Laboratory studies (set)"
-              },
-              {
                 "system": "http://terminology.hl7.org/CodeSystem/observation-category",
                 "code": "laboratory",
                 "display": "Laboratory"
+              },
+              {
+                "code": "26436-6",
+                "system": "http://loinc.org",
+                "display": "Laboratory studies (set)"
               }
             ]
           }
@@ -3247,14 +3247,14 @@
           {
             "coding": [
               {
-                "system": "http://loinc.org",
-                "code": "26436-6",
-                "display": "Laboratory studies (set)"
-              },
-              {
                 "system": "http://terminology.hl7.org/CodeSystem/observation-category",
                 "code": "laboratory",
                 "display": "Laboratory"
+              },
+              {
+                "code": "26436-6",
+                "system": "http://loinc.org",
+                "display": "Laboratory studies (set)"
               }
             ]
           }
@@ -3413,14 +3413,14 @@
           {
             "coding": [
               {
-                "system": "http://loinc.org",
-                "code": "26436-6",
-                "display": "Laboratory studies (set)"
-              },
-              {
                 "system": "http://terminology.hl7.org/CodeSystem/observation-category",
                 "code": "laboratory",
                 "display": "Laboratory"
+              },
+              {
+                "code": "26436-6",
+                "system": "http://loinc.org",
+                "display": "Laboratory studies (set)"
               }
             ]
           }
@@ -3579,14 +3579,14 @@
           {
             "coding": [
               {
-                "system": "http://loinc.org",
-                "code": "26436-6",
-                "display": "Laboratory studies (set)"
-              },
-              {
                 "system": "http://terminology.hl7.org/CodeSystem/observation-category",
                 "code": "laboratory",
                 "display": "Laboratory"
+              },
+              {
+                "code": "26436-6",
+                "system": "http://loinc.org",
+                "display": "Laboratory studies (set)"
               }
             ]
           }
@@ -3745,14 +3745,14 @@
           {
             "coding": [
               {
-                "system": "http://loinc.org",
-                "code": "26436-6",
-                "display": "Laboratory studies (set)"
-              },
-              {
                 "system": "http://terminology.hl7.org/CodeSystem/observation-category",
                 "code": "laboratory",
                 "display": "Laboratory"
+              },
+              {
+                "code": "26436-6",
+                "system": "http://loinc.org",
+                "display": "Laboratory studies (set)"
               }
             ]
           }

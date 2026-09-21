@@ -36,8 +36,8 @@
   "type": {
     "coding": [
       {
-        "system": "http://snomed.info/sct",
         "code": "119364003",
+        "system": "http://snomed.info/sct",
         "display": "Serum specimen (specimen)"
       }
     ]

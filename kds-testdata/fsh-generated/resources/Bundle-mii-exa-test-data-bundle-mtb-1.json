@@ -341,6 +341,17 @@
             }
           }
         ],
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "55342001",
+                "display": "Neoplastic disease"
+              }
+            ]
+          }
+        ],
         "recordedDate": "2024-01-05",
         "subject": {
           "reference": "Patient/mii-exa-test-data-mtb-patient-1"
@@ -2163,7 +2174,7 @@
             {
               "code": "48676-1",
               "system": "http://loinc.org",
-              "display": "HER2 [Interpretation] in Tissue"
+              "display": "HER2 Ag [Interpretation] in Tissue"
             }
           ]
         },

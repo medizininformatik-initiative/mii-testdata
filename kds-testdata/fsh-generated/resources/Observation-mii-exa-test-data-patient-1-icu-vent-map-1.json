@@ -10,7 +10,7 @@
       }
     ],
     "profile": [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mittlerer-beatmungsdruck"
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-mittlerer-beatmungsdruck"
     ]
   },
   "partOf": [
@@ -34,7 +34,7 @@
       {
         "system": "http://snomed.info/sct",
         "code": "698821009",
-        "display": "Mean inspiratory airway pressure"
+        "display": "Mean inspiratory airway pressure (observable entity)"
       },
       {
         "system": "http://loinc.org",
@@ -44,19 +44,19 @@
       {
         "system": "urn:iso:std:iso:11073:10101",
         "code": "151975",
-        "display": "MDC_VENT_PRESS_AWAY_MEAN"
+        "display": "Mean inspiratory airway pressure."
       }
     ]
   },
   "valueQuantity": {
     "system": "http://unitsofmeasure.org",
     "code": "cm[H2O]",
-    "value": 15,
+    "value": 18,
     "unit": "cmH2O"
   },
   "status": "final",
   "subject": {
     "reference": "Patient/mii-exa-test-data-icu-patient-1"
   },
-  "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+  "effectiveDateTime": "2024-05-05T08:00:00+02:00"
 }

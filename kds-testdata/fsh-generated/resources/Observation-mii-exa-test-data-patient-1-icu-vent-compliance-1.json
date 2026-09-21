@@ -10,7 +10,7 @@
       }
     ],
     "profile": [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/dynamische-kompliance"
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-dynamische-kompliance"
     ]
   },
   "partOf": [
@@ -22,8 +22,8 @@
     {
       "coding": [
         {
-          "code": "40617009",
           "system": "http://snomed.info/sct",
+          "code": "40617009",
           "display": "Artificial ventilation (regime/therapy)"
         }
       ]
@@ -34,16 +34,17 @@
       {
         "system": "http://snomed.info/sct",
         "code": "250823005",
-        "display": "Total dynamic compliance"
-      },
-      {
-        "system": "http://loinc.org",
-        "code": "60827-3"
+        "display": "Total dynamic compliance (observable entity)"
       },
       {
         "system": "urn:iso:std:iso:11073:10101",
         "code": "151692",
-        "display": "MDC_COMPL_LUNG_DYN"
+        "display": "Change of tidal volume per unit change of transthoracic pressure."
+      },
+      {
+        "system": "http://loinc.org",
+        "code": "60827-3",
+        "display": "Compliance.dynamic"
       }
     ]
   },
@@ -57,5 +58,5 @@
   "subject": {
     "reference": "Patient/mii-exa-test-data-icu-patient-1"
   },
-  "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+  "effectiveDateTime": "2024-05-05T08:00:00+02:00"
 }

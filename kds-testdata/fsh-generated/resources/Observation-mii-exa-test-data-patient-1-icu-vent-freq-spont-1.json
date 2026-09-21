@@ -10,7 +10,7 @@
       }
     ],
     "profile": [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/spontane-atemfrequenz-beatmet"
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-spontane-atemfrequenz-beatmet"
     ]
   },
   "partOf": [
@@ -22,8 +22,8 @@
     {
       "coding": [
         {
-          "code": "40617009",
           "system": "http://snomed.info/sct",
+          "code": "40617009",
           "display": "Artificial ventilation (regime/therapy)"
         }
       ]
@@ -34,11 +34,12 @@
       {
         "system": "urn:iso:std:iso:11073:10101",
         "code": "152498",
-        "display": "MDC_VENT_RESP_BTSD_P_RATE"
+        "display": "Rate of breaths or inspiratory gas flow initiated and terminated by the patient where pressure and flow/volume delivery are determined by the patient without support or assistance by the ventilator. Includes unassisted breaths that are superimposed on the intermittently elevated baseline pressure with APRV, bilevel or spontaneous-only modes."
       },
       {
-        "system": "http://snomed.info/sct",
-        "code": "271625008"
+        "system": "http://loinc.org",
+        "code": "19839-0",
+        "display": "Breath rate spontaneous --on ventilator"
       }
     ]
   },
@@ -52,5 +53,5 @@
   "subject": {
     "reference": "Patient/mii-exa-test-data-icu-patient-1"
   },
-  "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+  "effectiveDateTime": "2024-05-05T08:00:00+02:00"
 }

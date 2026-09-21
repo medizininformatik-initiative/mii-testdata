@@ -414,6 +414,7 @@
             "coding": [
               {
                 "system": "http://snomed.info/sct",
+                "version": "http://snomed.info/sct/900000000000207008/version/20260701",
                 "code": "4201000179104",
                 "display": "Imaging report (record artifact)"
               }
@@ -1017,7 +1018,7 @@
         },
         "extension": [
           {
-            "url": "https://fhir.bbmri-eric.eu/fhir/StructureDefinition/miabis-organization-description-extension",
+            "url": "https://fhir.bbmri-eric.eu/StructureDefinition/miabis-organization-description-extension",
             "valueString": "Zentrale Biobank der Charité"
           }
         ],

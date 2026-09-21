@@ -22,13 +22,21 @@
           "display": "Vital Signs"
         }
       ]
+    },
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs"
+        }
+      ]
     }
   ],
   "valueQuantity": {
-    "unit": "cm",
     "system": "http://unitsofmeasure.org",
-    "code": "cm",
-    "value": 57.5
+    "value": 57.5,
+    "unit": "cm",
+    "code": "cm"
   },
   "code": {
     "coding": [

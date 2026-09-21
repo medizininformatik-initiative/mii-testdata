@@ -36,8 +36,8 @@
   "type": {
     "coding": [
       {
-        "system": "http://snomed.info/sct",
         "code": "445295009",
+        "system": "http://snomed.info/sct",
         "display": "Blood specimen with edetic acid (specimen)"
       }
     ]

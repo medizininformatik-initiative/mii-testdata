@@ -36,6 +36,15 @@
           "display": "Medical oncology (qualifier value)"
         }
       ]
+    },
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "55342001",
+          "display": "Neoplastic disease"
+        }
+      ]
     }
   ],
   "code": {

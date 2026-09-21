@@ -10,7 +10,7 @@
       }
     ],
     "profile": [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mechanische-atemfrequenz-beatmet"
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-mechanische-atemfrequenz-beatmet"
     ]
   },
   "partOf": [
@@ -22,8 +22,8 @@
     {
       "coding": [
         {
-          "code": "40617009",
           "system": "http://snomed.info/sct",
+          "code": "40617009",
           "display": "Artificial ventilation (regime/therapy)"
         }
       ]
@@ -34,7 +34,7 @@
       {
         "system": "http://snomed.info/sct",
         "code": "250876000",
-        "display": "Ventilator rate"
+        "display": "Ventilator rate (observable entity)"
       },
       {
         "system": "http://loinc.org",
@@ -44,19 +44,19 @@
       {
         "system": "urn:iso:std:iso:11073:10101",
         "code": "151586",
-        "display": "MDC_VENT_RESP_RATE"
+        "display": "Rate of mechanical ventilation; method not specified."
       }
     ]
   },
   "valueQuantity": {
     "system": "http://unitsofmeasure.org",
     "code": "{Breaths}/min",
-    "value": 16,
+    "value": 12,
     "unit": "breaths per minute"
   },
   "status": "final",
   "subject": {
     "reference": "Patient/mii-exa-test-data-icu-patient-1"
   },
-  "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+  "effectiveDateTime": "2024-05-05T08:00:00+02:00"
 }

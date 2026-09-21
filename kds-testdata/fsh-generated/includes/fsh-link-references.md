@@ -118,9 +118,9 @@
 [mii-exa-test-data-mikrobio-aviditaet-1]: Observation-mii-exa-test-data-mikrobio-aviditaet-1.html
 [mii-exa-test-data-mikrobio-aviditaet-alt-1]: Observation-mii-exa-test-data-mikrobio-aviditaet-alt-1.html
 [mii-exa-test-data-mikrobio-aviditaet-dar-1]: Observation-mii-exa-test-data-mikrobio-aviditaet-dar-1.html
-[mii-exa-test-data-mikrobio-barlett-score-1]: Observation-mii-exa-test-data-mikrobio-barlett-score-1.html
-[mii-exa-test-data-mikrobio-barlett-score-alt-1]: Observation-mii-exa-test-data-mikrobio-barlett-score-alt-1.html
-[mii-exa-test-data-mikrobio-barlett-score-dar-1]: Observation-mii-exa-test-data-mikrobio-barlett-score-dar-1.html
+[mii-exa-test-data-mikrobio-bartlett-score-1]: Observation-mii-exa-test-data-mikrobio-bartlett-score-1.html
+[mii-exa-test-data-mikrobio-bartlett-score-alt-1]: Observation-mii-exa-test-data-mikrobio-bartlett-score-alt-1.html
+[mii-exa-test-data-mikrobio-bartlett-score-dar-1]: Observation-mii-exa-test-data-mikrobio-bartlett-score-dar-1.html
 [mii-exa-test-data-mikrobio-ct-wert-1]: Observation-mii-exa-test-data-mikrobio-ct-wert-1.html
 [mii-exa-test-data-mikrobio-ct-wert-alt-1]: Observation-mii-exa-test-data-mikrobio-ct-wert-alt-1.html
 [mii-exa-test-data-mikrobio-ct-wert-dar-1]: Observation-mii-exa-test-data-mikrobio-ct-wert-dar-1.html
@@ -142,9 +142,6 @@
 [mii-exa-test-data-mikrobio-molekulare-pathogenlast-1]: Observation-mii-exa-test-data-mikrobio-molekulare-pathogenlast-1.html
 [mii-exa-test-data-mikrobio-molekulare-pathogenlast-alt-1]: Observation-mii-exa-test-data-mikrobio-molekulare-pathogenlast-alt-1.html
 [mii-exa-test-data-mikrobio-molekulare-pathogenlast-dar-1]: Observation-mii-exa-test-data-mikrobio-molekulare-pathogenlast-dar-1.html
-[mii-exa-test-data-mikrobio-mre-klasse-1]: Observation-mii-exa-test-data-mikrobio-mre-klasse-1.html
-[mii-exa-test-data-mikrobio-mre-klasse-alt-1]: Observation-mii-exa-test-data-mikrobio-mre-klasse-alt-1.html
-[mii-exa-test-data-mikrobio-mre-klasse-dar-1]: Observation-mii-exa-test-data-mikrobio-mre-klasse-dar-1.html
 [mii-exa-test-data-mikrobio-mrgn-klasse-1]: Observation-mii-exa-test-data-mikrobio-mrgn-klasse-1.html
 [mii-exa-test-data-mikrobio-mrgn-klasse-alt-1]: Observation-mii-exa-test-data-mikrobio-mrgn-klasse-alt-1.html
 [mii-exa-test-data-mikrobio-mrgn-klasse-dar-1]: Observation-mii-exa-test-data-mikrobio-mrgn-klasse-dar-1.html
@@ -155,6 +152,9 @@
 [mii-exa-test-data-mikrobio-patient-1]: Patient-mii-exa-test-data-mikrobio-patient-1.html
 [mii-exa-test-data-mikrobio-resistenz-mech-alt-1]: Observation-mii-exa-test-data-mikrobio-resistenz-mech-alt-1.html
 [mii-exa-test-data-mikrobio-resistenz-mech-dar-1]: Observation-mii-exa-test-data-mikrobio-resistenz-mech-dar-1.html
+[mii-exa-test-data-mikrobio-resistenzkategorie-status-1]: Observation-mii-exa-test-data-mikrobio-resistenzkategorie-status-1.html
+[mii-exa-test-data-mikrobio-resistenzkategorie-status-alt-1]: Observation-mii-exa-test-data-mikrobio-resistenzkategorie-status-alt-1.html
+[mii-exa-test-data-mikrobio-resistenzkategorie-status-neg-1]: Observation-mii-exa-test-data-mikrobio-resistenzkategorie-status-neg-1.html
 [mii-exa-test-data-mikrobio-resistenzmechanismen-1]: Observation-mii-exa-test-data-mikrobio-resistenzmechanismen-1.html
 [mii-exa-test-data-mikrobio-servicerequest-1]: ServiceRequest-mii-exa-test-data-mikrobio-servicerequest-1.html
 [mii-exa-test-data-mikrobio-specimen-1]: Specimen-mii-exa-test-data-mikrobio-specimen-1.html
@@ -314,6 +314,7 @@
 [mii-exa-test-data-patient-1-icu-bilanz-haemofiltr-1]: Observation-mii-exa-test-data-patient-1-icu-bilanz-haemofiltr-1.html
 [mii-exa-test-data-patient-1-icu-bilanz-tages-1]: Observation-mii-exa-test-data-patient-1-icu-bilanz-tages-1.html
 [mii-exa-test-data-patient-1-icu-device-1]: Device-mii-exa-test-data-patient-1-icu-device-1.html
+[mii-exa-test-data-patient-1-icu-device-ecmo-1]: Device-mii-exa-test-data-patient-1-icu-device-ecmo-1.html
 [mii-exa-test-data-patient-1-icu-ect-art-druck-1]: Observation-mii-exa-test-data-patient-1-icu-ect-art-druck-1.html
 [mii-exa-test-data-patient-1-icu-ect-blutfl-cardio-1]: Observation-mii-exa-test-data-patient-1-icu-ect-blutfl-cardio-1.html
 [mii-exa-test-data-patient-1-icu-ect-blutfl-extra-1]: Observation-mii-exa-test-data-patient-1-icu-ect-blutfl-extra-1.html

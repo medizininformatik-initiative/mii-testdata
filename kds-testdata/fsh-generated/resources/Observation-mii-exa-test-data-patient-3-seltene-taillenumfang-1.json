@@ -24,20 +24,25 @@
       ]
     }
   ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "276361009",
+        "display": "Waist circumference"
+      },
+      {
+        "code": "8280-0",
+        "system": "http://loinc.org",
+        "display": "Waist Circumference at umbilicus by Tape measure"
+      }
+    ]
+  },
   "valueQuantity": {
     "unit": "cm",
     "system": "http://unitsofmeasure.org",
     "code": "cm",
     "value": 74
-  },
-  "code": {
-    "coding": [
-      {
-        "system": "http://loinc.org",
-        "code": "8280-0",
-        "display": "Waist Circumference at umbilicus by Tape measure"
-      }
-    ]
   },
   "status": "final",
   "subject": {

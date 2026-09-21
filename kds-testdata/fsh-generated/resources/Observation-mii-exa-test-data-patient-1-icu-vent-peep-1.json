@@ -10,7 +10,7 @@
       }
     ],
     "profile": [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/positiv-endexspiratorischer-druck"
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-positiv-endexpiratorischer-druck"
     ]
   },
   "partOf": [
@@ -22,8 +22,8 @@
     {
       "coding": [
         {
-          "code": "40617009",
           "system": "http://snomed.info/sct",
+          "code": "40617009",
           "display": "Artificial ventilation (regime/therapy)"
         }
       ]
@@ -34,7 +34,7 @@
       {
         "system": "http://snomed.info/sct",
         "code": "250854009",
-        "display": "Positive end expiratory pressure"
+        "display": "Positive end expiratory pressure (observable entity)"
       },
       {
         "system": "http://loinc.org",
@@ -44,19 +44,19 @@
       {
         "system": "urn:iso:std:iso:11073:10101",
         "code": "151976",
-        "display": "MDC_VENT_PRESS_AWAY_END_EXP_POS"
+        "display": "Positive end expiratory pressure applied to the airway."
       }
     ]
   },
   "valueQuantity": {
     "system": "http://unitsofmeasure.org",
     "code": "cm[H2O]",
-    "value": 8,
+    "value": 14,
     "unit": "cmH2O"
   },
   "status": "final",
   "subject": {
     "reference": "Patient/mii-exa-test-data-icu-patient-1"
   },
-  "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+  "effectiveDateTime": "2024-05-05T08:00:00+02:00"
 }

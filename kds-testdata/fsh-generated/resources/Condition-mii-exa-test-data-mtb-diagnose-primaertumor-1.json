@@ -94,6 +94,17 @@
       }
     }
   ],
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "55342001",
+          "display": "Neoplastic disease"
+        }
+      ]
+    }
+  ],
   "recordedDate": "2024-01-05",
   "subject": {
     "reference": "Patient/mii-exa-test-data-mtb-patient-1"

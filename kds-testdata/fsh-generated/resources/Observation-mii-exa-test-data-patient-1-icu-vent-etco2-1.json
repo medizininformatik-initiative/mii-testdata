@@ -10,7 +10,7 @@
       }
     ],
     "profile": [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/endexspiratorischer-kohlendioxidpartialdruck"
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-endexpiratorischer-kohlendioxidpartialdruck"
     ]
   },
   "partOf": [
@@ -22,8 +22,8 @@
     {
       "coding": [
         {
-          "code": "40617009",
           "system": "http://snomed.info/sct",
+          "code": "40617009",
           "display": "Artificial ventilation (regime/therapy)"
         }
       ]
@@ -34,17 +34,17 @@
       {
         "system": "http://snomed.info/sct",
         "code": "250790007",
-        "display": "End tidal carbon dioxide tension"
+        "display": "End tidal carbon dioxide tension (observable entity)"
       },
       {
         "system": "http://loinc.org",
         "code": "19891-1",
-        "display": "Carbon dioxide [Partial pressure] in Exhaled gas --at end expiration"
+        "display": "Carbon dioxide^at end expiration"
       },
       {
         "system": "urn:iso:std:iso:11073:10101",
         "code": "151708",
-        "display": "MDC_CONC_AWAY_CO2_ET"
+        "display": "Partial pressure of carbon dioxide in airway gas measured at the end of expiration."
       }
     ]
   },
@@ -58,5 +58,5 @@
   "subject": {
     "reference": "Patient/mii-exa-test-data-icu-patient-1"
   },
-  "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+  "effectiveDateTime": "2024-05-05T08:00:00+02:00"
 }

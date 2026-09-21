@@ -472,21 +472,17 @@
           {
             "coding": [
               {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
                 "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
-                "code": "MB"
-              },
-              {
-                "code": "26436-6",
-                "system": "http://loinc.org"
-              },
-              {
-                "code": "laboratory",
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
-              },
-              {
-                "code": "18725-2",
-                "system": "http://loinc.org",
-                "display": "Microbiology studies (set)"
+                "code": "MB",
+                "display": "Microbiology"
               }
             ]
           }
@@ -515,8 +511,8 @@
         "code": {
           "coding": [
             {
-              "system": "http://loinc.org",
               "code": "11475-1",
+              "system": "http://loinc.org",
               "display": "Microorganism identified in Specimen by Culture"
             }
           ]
@@ -618,21 +614,17 @@
           {
             "coding": [
               {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
                 "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
-                "code": "MB"
-              },
-              {
-                "code": "26436-6",
-                "system": "http://loinc.org"
-              },
-              {
-                "code": "laboratory",
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
-              },
-              {
-                "code": "18725-2",
-                "system": "http://loinc.org",
-                "display": "Microbiology studies (set)"
+                "code": "MB",
+                "display": "Microbiology"
               }
             ]
           }
@@ -661,8 +653,8 @@
         "code": {
           "coding": [
             {
-              "system": "http://loinc.org",
               "code": "11475-1",
+              "system": "http://loinc.org",
               "display": "Microorganism identified in Specimen by Culture"
             }
           ]
@@ -753,21 +745,17 @@
           {
             "coding": [
               {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
                 "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
-                "code": "MB"
-              },
-              {
-                "code": "26436-6",
-                "system": "http://loinc.org"
-              },
-              {
-                "code": "laboratory",
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
-              },
-              {
-                "code": "18725-2",
-                "system": "http://loinc.org",
-                "display": "Microbiology studies (set)"
+                "code": "MB",
+                "display": "Microbiology"
               }
             ]
           }
@@ -912,21 +900,17 @@
           {
             "coding": [
               {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
                 "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
-                "code": "MB"
-              },
-              {
-                "code": "26436-6",
-                "system": "http://loinc.org"
-              },
-              {
-                "code": "laboratory",
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
-              },
-              {
-                "code": "18725-2",
-                "system": "http://loinc.org",
-                "display": "Microbiology studies (set)"
+                "code": "MB",
+                "display": "Microbiology"
               }
             ]
           }
@@ -955,8 +939,8 @@
         "code": {
           "coding": [
             {
-              "system": "http://loinc.org",
               "code": "41852-5",
+              "system": "http://loinc.org",
               "display": "Microorganism or agent identified in Specimen"
             }
           ]
@@ -1058,21 +1042,17 @@
           {
             "coding": [
               {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
                 "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
-                "code": "MB"
-              },
-              {
-                "code": "26436-6",
-                "system": "http://loinc.org"
-              },
-              {
-                "code": "laboratory",
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
-              },
-              {
-                "code": "18725-2",
-                "system": "http://loinc.org",
-                "display": "Microbiology studies (set)"
+                "code": "MB",
+                "display": "Microbiology"
               }
             ]
           }
@@ -1101,8 +1081,8 @@
         "code": {
           "coding": [
             {
-              "system": "http://loinc.org",
               "code": "105059-0",
+              "system": "http://loinc.org",
               "display": "Microscopic observation [Identifier] in Specimen"
             }
           ]
@@ -1204,21 +1184,17 @@
           {
             "coding": [
               {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
                 "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
-                "code": "MB"
-              },
-              {
-                "code": "26436-6",
-                "system": "http://loinc.org"
-              },
-              {
-                "code": "laboratory",
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
-              },
-              {
-                "code": "18725-2",
-                "system": "http://loinc.org",
-                "display": "Microbiology studies (set)"
+                "code": "MB",
+                "display": "Microbiology"
               }
             ]
           }
@@ -1382,21 +1358,17 @@
           {
             "coding": [
               {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
                 "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
-                "code": "MB"
-              },
-              {
-                "code": "26436-6",
-                "system": "http://loinc.org"
-              },
-              {
-                "code": "laboratory",
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
-              },
-              {
-                "code": "18725-2",
-                "system": "http://loinc.org",
-                "display": "Microbiology studies (set)"
+                "code": "MB",
+                "display": "Microbiology"
               }
             ]
           }
@@ -1581,21 +1553,17 @@
           {
             "coding": [
               {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
                 "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
-                "code": "MB"
-              },
-              {
-                "code": "26436-6",
-                "system": "http://loinc.org"
-              },
-              {
-                "code": "laboratory",
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
-              },
-              {
-                "code": "18725-2",
-                "system": "http://loinc.org",
-                "display": "Microbiology studies (set)"
+                "code": "MB",
+                "display": "Microbiology"
               }
             ]
           }
@@ -1697,12 +1665,12 @@
     {
       "request": {
         "method": "PUT",
-        "url": "Observation/mii-exa-test-data-mikrobio-mre-klasse-1"
+        "url": "Observation/mii-exa-test-data-mikrobio-resistenzkategorie-status-1"
       },
-      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-mikrobio-mre-klasse-1",
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-mikrobio-resistenzkategorie-status-1",
       "resource": {
         "resourceType": "Observation",
-        "id": "mii-exa-test-data-mikrobio-mre-klasse-1",
+        "id": "mii-exa-test-data-mikrobio-resistenzkategorie-status-1",
         "meta": {
           "security": [
             {
@@ -1713,7 +1681,7 @@
           ],
           "source": "https://www.charite.de/fhir/mikrobiologie-lab-system",
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-mre-klasse"
+            "https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-resistenzkategorie-status"
           ]
         },
         "identifier": [
@@ -1733,28 +1701,24 @@
               }
             },
             "system": "https://www.charite.de/fhir/sid/test-lab-results",
-            "value": "mre-klasse-1"
+            "value": "resistenzkategorie-status-1"
           }
         ],
         "category": [
           {
             "coding": [
               {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
                 "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
-                "code": "MB"
-              },
-              {
-                "code": "26436-6",
-                "system": "http://loinc.org"
-              },
-              {
-                "code": "laboratory",
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
-              },
-              {
-                "code": "18725-2",
-                "system": "http://loinc.org",
-                "display": "Microbiology studies (set)"
+                "code": "MB",
+                "display": "Microbiology"
               }
             ]
           }
@@ -1807,18 +1771,18 @@
         "code": {
           "coding": [
             {
-              "system": "http://snomed.info/sct",
-              "code": "1285113001",
-              "display": "Type of antimicrobial resistant organism (observable entity)"
+              "code": "mrsa-status",
+              "system": "https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/CodeSystem/mii-cs-mikrobio-resistenzkategorie",
+              "display": "MRSA-Status"
             }
           ]
         },
         "valueCodeableConcept": {
           "coding": [
             {
-              "code": "115329001",
+              "code": "10828004",
               "system": "http://snomed.info/sct",
-              "display": "Methicillin resistant Staphylococcus aureus (organism)"
+              "display": "Positive"
             }
           ]
         },
@@ -1833,7 +1797,7 @@
         },
         "note": [
           {
-            "text": "MRSA-Befund — Isolation noetig."
+            "text": "MRSA-Befund (Methicillin-resistenter Staphylococcus aureus nachgewiesen) — Isolation noetig."
           }
         ],
         "status": "final",
@@ -1899,21 +1863,17 @@
           {
             "coding": [
               {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
                 "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
-                "code": "MB"
-              },
-              {
-                "code": "26436-6",
-                "system": "http://loinc.org"
-              },
-              {
-                "code": "laboratory",
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
-              },
-              {
-                "code": "18725-2",
-                "system": "http://loinc.org",
-                "display": "Microbiology studies (set)"
+                "code": "MB",
+                "display": "Microbiology"
               }
             ]
           }
@@ -2025,21 +1985,17 @@
           {
             "coding": [
               {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
                 "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
-                "code": "MB"
-              },
-              {
-                "code": "26436-6",
-                "system": "http://loinc.org"
-              },
-              {
-                "code": "laboratory",
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
-              },
-              {
-                "code": "18725-2",
-                "system": "http://loinc.org",
-                "display": "Microbiology studies (set)"
+                "code": "MB",
+                "display": "Microbiology"
               }
             ]
           }
@@ -2195,21 +2151,17 @@
           {
             "coding": [
               {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
                 "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
-                "code": "MB"
-              },
-              {
-                "code": "26436-6",
-                "system": "http://loinc.org"
-              },
-              {
-                "code": "laboratory",
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
-              },
-              {
-                "code": "18725-2",
-                "system": "http://loinc.org",
-                "display": "Microbiology studies (set)"
+                "code": "MB",
+                "display": "Microbiology"
               }
             ]
           }
@@ -2348,21 +2300,17 @@
           {
             "coding": [
               {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
                 "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
-                "code": "MB"
-              },
-              {
-                "code": "26436-6",
-                "system": "http://loinc.org"
-              },
-              {
-                "code": "laboratory",
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
-              },
-              {
-                "code": "18725-2",
-                "system": "http://loinc.org",
-                "display": "Microbiology studies (set)"
+                "code": "MB",
+                "display": "Microbiology"
               }
             ]
           }
@@ -2525,21 +2473,17 @@
           {
             "coding": [
               {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
                 "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
-                "code": "MB"
-              },
-              {
-                "code": "26436-6",
-                "system": "http://loinc.org"
-              },
-              {
-                "code": "laboratory",
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
-              },
-              {
-                "code": "18725-2",
-                "system": "http://loinc.org",
-                "display": "Microbiology studies (set)"
+                "code": "MB",
+                "display": "Microbiology"
               }
             ]
           }
@@ -2692,21 +2636,17 @@
           {
             "coding": [
               {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
                 "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
-                "code": "MB"
-              },
-              {
-                "code": "26436-6",
-                "system": "http://loinc.org"
-              },
-              {
-                "code": "laboratory",
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
-              },
-              {
-                "code": "18725-2",
-                "system": "http://loinc.org",
-                "display": "Microbiology studies (set)"
+                "code": "MB",
+                "display": "Microbiology"
               }
             ]
           }
@@ -2856,21 +2796,17 @@
           {
             "coding": [
               {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
                 "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
-                "code": "MB"
-              },
-              {
-                "code": "26436-6",
-                "system": "http://loinc.org"
-              },
-              {
-                "code": "laboratory",
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
-              },
-              {
-                "code": "18725-2",
-                "system": "http://loinc.org",
-                "display": "Microbiology studies (set)"
+                "code": "MB",
+                "display": "Microbiology"
               }
             ]
           }
@@ -3036,21 +2972,17 @@
           {
             "coding": [
               {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
                 "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
-                "code": "MB"
-              },
-              {
-                "code": "26436-6",
-                "system": "http://loinc.org"
-              },
-              {
-                "code": "laboratory",
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
-              },
-              {
-                "code": "18725-2",
-                "system": "http://loinc.org",
-                "display": "Microbiology studies (set)"
+                "code": "MB",
+                "display": "Microbiology"
               }
             ]
           }
@@ -3144,12 +3076,12 @@
     {
       "request": {
         "method": "PUT",
-        "url": "Observation/mii-exa-test-data-mikrobio-barlett-score-1"
+        "url": "Observation/mii-exa-test-data-mikrobio-bartlett-score-1"
       },
-      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-mikrobio-barlett-score-1",
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-mikrobio-bartlett-score-1",
       "resource": {
         "resourceType": "Observation",
-        "id": "mii-exa-test-data-mikrobio-barlett-score-1",
+        "id": "mii-exa-test-data-mikrobio-bartlett-score-1",
         "meta": {
           "security": [
             {
@@ -3160,7 +3092,7 @@
           ],
           "source": "https://www.charite.de/fhir/mikrobiologie-lab-system",
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-barlett-score"
+            "https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-bartlett-score"
           ]
         },
         "identifier": [
@@ -3180,28 +3112,24 @@
               }
             },
             "system": "https://www.charite.de/fhir/sid/test-lab-results",
-            "value": "barlett-1"
+            "value": "bartlett-1"
           }
         ],
         "category": [
           {
             "coding": [
               {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
                 "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
-                "code": "MB"
-              },
-              {
-                "code": "26436-6",
-                "system": "http://loinc.org"
-              },
-              {
-                "code": "laboratory",
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
-              },
-              {
-                "code": "18725-2",
-                "system": "http://loinc.org",
-                "display": "Microbiology studies (set)"
+                "code": "MB",
+                "display": "Microbiology"
               }
             ]
           }
@@ -3267,7 +3195,7 @@
         ],
         "note": [
           {
-            "text": "Sputum-Probe verwertbar (Barlett-Score positiv)."
+            "text": "Sputum-Probe verwertbar (Bartlett-Score positiv)."
           }
         ],
         "status": "final",
@@ -3333,21 +3261,17 @@
           {
             "coding": [
               {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
                 "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
-                "code": "MB"
-              },
-              {
-                "code": "26436-6",
-                "system": "http://loinc.org"
-              },
-              {
-                "code": "laboratory",
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
-              },
-              {
-                "code": "18725-2",
-                "system": "http://loinc.org",
-                "display": "Microbiology studies (set)"
+                "code": "MB",
+                "display": "Microbiology"
               }
             ]
           }
@@ -3383,11 +3307,11 @@
           ]
         },
         "valueQuantity": {
-          "unit": "1",
           "system": "http://unitsofmeasure.org",
           "code": "1",
           "value": 7,
-          "comparator": ">="
+          "comparator": ">=",
+          "unit": "1"
         },
         "method": {
           "coding": [
@@ -3493,21 +3417,17 @@
           {
             "coding": [
               {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
                 "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
-                "code": "MB"
-              },
-              {
-                "code": "26436-6",
-                "system": "http://loinc.org"
-              },
-              {
-                "code": "laboratory",
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
-              },
-              {
-                "code": "18725-2",
-                "system": "http://loinc.org",
-                "display": "Microbiology studies (set)"
+                "code": "MB",
+                "display": "Microbiology"
               }
             ]
           }
@@ -3563,8 +3483,8 @@
         "code": {
           "coding": [
             {
-              "system": "http://loinc.org",
-              "code": "41852-5"
+              "code": "41852-5",
+              "system": "http://loinc.org"
             }
           ]
         },
@@ -3665,21 +3585,17 @@
           {
             "coding": [
               {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
                 "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
-                "code": "MB"
-              },
-              {
-                "code": "26436-6",
-                "system": "http://loinc.org"
-              },
-              {
-                "code": "laboratory",
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
-              },
-              {
-                "code": "18725-2",
-                "system": "http://loinc.org",
-                "display": "Microbiology studies (set)"
+                "code": "MB",
+                "display": "Microbiology"
               }
             ]
           }
@@ -3708,8 +3624,8 @@
         "code": {
           "coding": [
             {
-              "system": "http://loinc.org",
-              "code": "41852-5"
+              "code": "41852-5",
+              "system": "http://loinc.org"
             }
           ]
         },
@@ -3798,21 +3714,17 @@
           {
             "coding": [
               {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
                 "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
-                "code": "MB"
-              },
-              {
-                "code": "26436-6",
-                "system": "http://loinc.org"
-              },
-              {
-                "code": "laboratory",
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
-              },
-              {
-                "code": "18725-2",
-                "system": "http://loinc.org",
-                "display": "Microbiology studies (set)"
+                "code": "MB",
+                "display": "Microbiology"
               }
             ]
           }
@@ -3868,8 +3780,8 @@
         "code": {
           "coding": [
             {
-              "system": "http://loinc.org",
-              "code": "11475-1"
+              "code": "11475-1",
+              "system": "http://loinc.org"
             }
           ]
         },
@@ -3970,21 +3882,17 @@
           {
             "coding": [
               {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
                 "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
-                "code": "MB"
-              },
-              {
-                "code": "26436-6",
-                "system": "http://loinc.org"
-              },
-              {
-                "code": "laboratory",
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
-              },
-              {
-                "code": "18725-2",
-                "system": "http://loinc.org",
-                "display": "Microbiology studies (set)"
+                "code": "MB",
+                "display": "Microbiology"
               }
             ]
           }
@@ -4148,21 +4056,17 @@
           {
             "coding": [
               {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
                 "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
-                "code": "MB"
-              },
-              {
-                "code": "26436-6",
-                "system": "http://loinc.org"
-              },
-              {
-                "code": "laboratory",
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
-              },
-              {
-                "code": "18725-2",
-                "system": "http://loinc.org",
-                "display": "Microbiology studies (set)"
+                "code": "MB",
+                "display": "Microbiology"
               }
             ]
           }
@@ -4289,21 +4193,17 @@
           {
             "coding": [
               {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
                 "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
-                "code": "MB"
-              },
-              {
-                "code": "26436-6",
-                "system": "http://loinc.org"
-              },
-              {
-                "code": "laboratory",
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
-              },
-              {
-                "code": "18725-2",
-                "system": "http://loinc.org",
-                "display": "Microbiology studies (set)"
+                "code": "MB",
+                "display": "Microbiology"
               }
             ]
           }
@@ -4467,21 +4367,17 @@
           {
             "coding": [
               {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
                 "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
-                "code": "MB"
-              },
-              {
-                "code": "26436-6",
-                "system": "http://loinc.org"
-              },
-              {
-                "code": "laboratory",
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
-              },
-              {
-                "code": "18725-2",
-                "system": "http://loinc.org",
-                "display": "Microbiology studies (set)"
+                "code": "MB",
+                "display": "Microbiology"
               }
             ]
           }
@@ -4565,12 +4461,12 @@
     {
       "request": {
         "method": "PUT",
-        "url": "Observation/mii-exa-test-data-mikrobio-barlett-score-alt-1"
+        "url": "Observation/mii-exa-test-data-mikrobio-bartlett-score-alt-1"
       },
-      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-mikrobio-barlett-score-alt-1",
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-mikrobio-bartlett-score-alt-1",
       "resource": {
         "resourceType": "Observation",
-        "id": "mii-exa-test-data-mikrobio-barlett-score-alt-1",
+        "id": "mii-exa-test-data-mikrobio-bartlett-score-alt-1",
         "meta": {
           "security": [
             {
@@ -4581,7 +4477,7 @@
           ],
           "source": "https://www.charite.de/fhir/mikrobiologie-lab-system",
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-barlett-score"
+            "https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-bartlett-score"
           ]
         },
         "identifier": [
@@ -4601,28 +4497,24 @@
               }
             },
             "system": "https://www.charite.de/fhir/sid/test-lab-results",
-            "value": "barlett-score-alt-1"
+            "value": "bartlett-score-alt-1"
           }
         ],
         "category": [
           {
             "coding": [
               {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
                 "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
-                "code": "MB"
-              },
-              {
-                "code": "26436-6",
-                "system": "http://loinc.org"
-              },
-              {
-                "code": "laboratory",
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
-              },
-              {
-                "code": "18725-2",
-                "system": "http://loinc.org",
-                "display": "Microbiology studies (set)"
+                "code": "MB",
+                "display": "Microbiology"
               }
             ]
           }
@@ -4714,7 +4606,7 @@
         ],
         "note": [
           {
-            "text": "Alt-Variante zur MS-Coverage (barlett-score)"
+            "text": "Alt-Variante zur MS-Coverage (bartlett-score)"
           }
         ],
         "status": "final",
@@ -4737,12 +4629,12 @@
     {
       "request": {
         "method": "PUT",
-        "url": "Observation/mii-exa-test-data-mikrobio-barlett-score-dar-1"
+        "url": "Observation/mii-exa-test-data-mikrobio-bartlett-score-dar-1"
       },
-      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-mikrobio-barlett-score-dar-1",
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-mikrobio-bartlett-score-dar-1",
       "resource": {
         "resourceType": "Observation",
-        "id": "mii-exa-test-data-mikrobio-barlett-score-dar-1",
+        "id": "mii-exa-test-data-mikrobio-bartlett-score-dar-1",
         "meta": {
           "security": [
             {
@@ -4753,7 +4645,7 @@
           ],
           "source": "https://www.charite.de/fhir/mikrobiologie-lab-system",
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-barlett-score"
+            "https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-bartlett-score"
           ]
         },
         "identifier": [
@@ -4773,28 +4665,24 @@
               }
             },
             "system": "https://www.charite.de/fhir/sid/test-lab-results",
-            "value": "barlett-score-dar-1"
+            "value": "bartlett-score-dar-1"
           }
         ],
         "category": [
           {
             "coding": [
               {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
                 "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
-                "code": "MB"
-              },
-              {
-                "code": "26436-6",
-                "system": "http://loinc.org"
-              },
-              {
-                "code": "laboratory",
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
-              },
-              {
-                "code": "18725-2",
-                "system": "http://loinc.org",
-                "display": "Microbiology studies (set)"
+                "code": "MB",
+                "display": "Microbiology"
               }
             ]
           }
@@ -4913,21 +4801,17 @@
           {
             "coding": [
               {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
                 "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
-                "code": "MB"
-              },
-              {
-                "code": "26436-6",
-                "system": "http://loinc.org"
-              },
-              {
-                "code": "laboratory",
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
-              },
-              {
-                "code": "18725-2",
-                "system": "http://loinc.org",
-                "display": "Microbiology studies (set)"
+                "code": "MB",
+                "display": "Microbiology"
               }
             ]
           }
@@ -5090,21 +4974,17 @@
           {
             "coding": [
               {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
                 "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
-                "code": "MB"
-              },
-              {
-                "code": "26436-6",
-                "system": "http://loinc.org"
-              },
-              {
-                "code": "laboratory",
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
-              },
-              {
-                "code": "18725-2",
-                "system": "http://loinc.org",
-                "display": "Microbiology studies (set)"
+                "code": "MB",
+                "display": "Microbiology"
               }
             ]
           }
@@ -5230,21 +5110,17 @@
           {
             "coding": [
               {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
                 "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
-                "code": "MB"
-              },
-              {
-                "code": "26436-6",
-                "system": "http://loinc.org"
-              },
-              {
-                "code": "laboratory",
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
-              },
-              {
-                "code": "18725-2",
-                "system": "http://loinc.org",
-                "display": "Microbiology studies (set)"
+                "code": "MB",
+                "display": "Microbiology"
               }
             ]
           }
@@ -5415,21 +5291,17 @@
           {
             "coding": [
               {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
                 "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
-                "code": "MB"
-              },
-              {
-                "code": "26436-6",
-                "system": "http://loinc.org"
-              },
-              {
-                "code": "laboratory",
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
-              },
-              {
-                "code": "18725-2",
-                "system": "http://loinc.org",
-                "display": "Microbiology studies (set)"
+                "code": "MB",
+                "display": "Microbiology"
               }
             ]
           }
@@ -5549,21 +5421,17 @@
           {
             "coding": [
               {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
                 "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
-                "code": "MB"
-              },
-              {
-                "code": "26436-6",
-                "system": "http://loinc.org"
-              },
-              {
-                "code": "laboratory",
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
-              },
-              {
-                "code": "18725-2",
-                "system": "http://loinc.org",
-                "display": "Microbiology studies (set)"
+                "code": "MB",
+                "display": "Microbiology"
               }
             ]
           }
@@ -5719,21 +5587,17 @@
           {
             "coding": [
               {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
                 "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
-                "code": "MB"
-              },
-              {
-                "code": "26436-6",
-                "system": "http://loinc.org"
-              },
-              {
-                "code": "laboratory",
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
-              },
-              {
-                "code": "18725-2",
-                "system": "http://loinc.org",
-                "display": "Microbiology studies (set)"
+                "code": "MB",
+                "display": "Microbiology"
               }
             ]
           }
@@ -5852,21 +5716,17 @@
           {
             "coding": [
               {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
                 "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
-                "code": "MB"
-              },
-              {
-                "code": "26436-6",
-                "system": "http://loinc.org"
-              },
-              {
-                "code": "laboratory",
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
-              },
-              {
-                "code": "18725-2",
-                "system": "http://loinc.org",
-                "display": "Microbiology studies (set)"
+                "code": "MB",
+                "display": "Microbiology"
               }
             ]
           }
@@ -5922,8 +5782,8 @@
         "code": {
           "coding": [
             {
-              "system": "http://loinc.org",
-              "code": "105059-0"
+              "code": "105059-0",
+              "system": "http://loinc.org"
             }
           ]
         },
@@ -6024,21 +5884,17 @@
           {
             "coding": [
               {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
                 "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
-                "code": "MB"
-              },
-              {
-                "code": "26436-6",
-                "system": "http://loinc.org"
-              },
-              {
-                "code": "laboratory",
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
-              },
-              {
-                "code": "18725-2",
-                "system": "http://loinc.org",
-                "display": "Microbiology studies (set)"
+                "code": "MB",
+                "display": "Microbiology"
               }
             ]
           }
@@ -6067,8 +5923,8 @@
         "code": {
           "coding": [
             {
-              "system": "http://loinc.org",
-              "code": "105059-0"
+              "code": "105059-0",
+              "system": "http://loinc.org"
             }
           ]
         },
@@ -6157,21 +6013,17 @@
           {
             "coding": [
               {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
                 "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
-                "code": "MB"
-              },
-              {
-                "code": "26436-6",
-                "system": "http://loinc.org"
-              },
-              {
-                "code": "laboratory",
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
-              },
-              {
-                "code": "18725-2",
-                "system": "http://loinc.org",
-                "display": "Microbiology studies (set)"
+                "code": "MB",
+                "display": "Microbiology"
               }
             ]
           }
@@ -6335,21 +6187,17 @@
           {
             "coding": [
               {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
                 "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
-                "code": "MB"
-              },
-              {
-                "code": "26436-6",
-                "system": "http://loinc.org"
-              },
-              {
-                "code": "laboratory",
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
-              },
-              {
-                "code": "18725-2",
-                "system": "http://loinc.org",
-                "display": "Microbiology studies (set)"
+                "code": "MB",
+                "display": "Microbiology"
               }
             ]
           }
@@ -6433,12 +6281,12 @@
     {
       "request": {
         "method": "PUT",
-        "url": "Observation/mii-exa-test-data-mikrobio-mre-klasse-alt-1"
+        "url": "Observation/mii-exa-test-data-mikrobio-resistenzkategorie-status-alt-1"
       },
-      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-mikrobio-mre-klasse-alt-1",
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-mikrobio-resistenzkategorie-status-alt-1",
       "resource": {
         "resourceType": "Observation",
-        "id": "mii-exa-test-data-mikrobio-mre-klasse-alt-1",
+        "id": "mii-exa-test-data-mikrobio-resistenzkategorie-status-alt-1",
         "meta": {
           "security": [
             {
@@ -6449,7 +6297,7 @@
           ],
           "source": "https://www.charite.de/fhir/mikrobiologie-lab-system",
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-mre-klasse"
+            "https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-resistenzkategorie-status"
           ]
         },
         "identifier": [
@@ -6469,28 +6317,24 @@
               }
             },
             "system": "https://www.charite.de/fhir/sid/test-lab-results",
-            "value": "mre-klasse-alt-1"
+            "value": "resistenzkategorie-status-alt-1"
           }
         ],
         "category": [
           {
             "coding": [
               {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
                 "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
-                "code": "MB"
-              },
-              {
-                "code": "26436-6",
-                "system": "http://loinc.org"
-              },
-              {
-                "code": "laboratory",
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
-              },
-              {
-                "code": "18725-2",
-                "system": "http://loinc.org",
-                "display": "Microbiology studies (set)"
+                "code": "MB",
+                "display": "Microbiology"
               }
             ]
           }
@@ -6553,17 +6397,18 @@
         "code": {
           "coding": [
             {
-              "system": "http://snomed.info/sct",
-              "code": "1285113001"
+              "code": "mrsa-status",
+              "system": "https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/CodeSystem/mii-cs-mikrobio-resistenzkategorie",
+              "display": "MRSA-Status"
             }
           ]
         },
         "valueCodeableConcept": {
           "coding": [
             {
-              "code": "115329001",
+              "code": "10828004",
               "system": "http://snomed.info/sct",
-              "display": "Methicillin resistant Staphylococcus aureus (organism)"
+              "display": "Positive"
             }
           ]
         },
@@ -6578,7 +6423,7 @@
         },
         "note": [
           {
-            "text": "Alt-Variante zur MS-Coverage (mre-klasse)"
+            "text": "Alt-Variante zur MS-Coverage (resistenzkategorie-status)"
           }
         ],
         "status": "final",
@@ -6601,12 +6446,12 @@
     {
       "request": {
         "method": "PUT",
-        "url": "Observation/mii-exa-test-data-mikrobio-mre-klasse-dar-1"
+        "url": "Observation/mii-exa-test-data-mikrobio-resistenzkategorie-status-neg-1"
       },
-      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-mikrobio-mre-klasse-dar-1",
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-mikrobio-resistenzkategorie-status-neg-1",
       "resource": {
         "resourceType": "Observation",
-        "id": "mii-exa-test-data-mikrobio-mre-klasse-dar-1",
+        "id": "mii-exa-test-data-mikrobio-resistenzkategorie-status-neg-1",
         "meta": {
           "security": [
             {
@@ -6617,7 +6462,7 @@
           ],
           "source": "https://www.charite.de/fhir/mikrobiologie-lab-system",
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-mre-klasse"
+            "https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-resistenzkategorie-status"
           ]
         },
         "identifier": [
@@ -6637,28 +6482,24 @@
               }
             },
             "system": "https://www.charite.de/fhir/sid/test-lab-results",
-            "value": "mre-klasse-dar-1"
+            "value": "resistenzkategorie-status-neg-1"
           }
         ],
         "category": [
           {
             "coding": [
               {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
                 "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
-                "code": "MB"
-              },
-              {
-                "code": "26436-6",
-                "system": "http://loinc.org"
-              },
-              {
-                "code": "laboratory",
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
-              },
-              {
-                "code": "18725-2",
-                "system": "http://loinc.org",
-                "display": "Microbiology studies (set)"
+                "code": "MB",
+                "display": "Microbiology"
               }
             ]
           }
@@ -6694,17 +6535,18 @@
         "code": {
           "coding": [
             {
-              "system": "http://snomed.info/sct",
-              "code": "1285113001"
+              "code": "mrsa-status",
+              "system": "https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/CodeSystem/mii-cs-mikrobio-resistenzkategorie",
+              "display": "MRSA-Status"
             }
           ]
         },
-        "dataAbsentReason": {
+        "valueCodeableConcept": {
           "coding": [
             {
-              "code": "unknown",
-              "system": "http://terminology.hl7.org/CodeSystem/data-absent-reason",
-              "display": "Unknown"
+              "code": "260385009",
+              "system": "http://snomed.info/sct",
+              "display": "Negative"
             }
           ]
         },
@@ -6718,7 +6560,7 @@
         },
         "note": [
           {
-            "text": "Probe nicht auswertbar — Ergebnis nicht verfügbar."
+            "text": "MRSA nicht nachgewiesen (negatives Screening-Ergebnis)."
           }
         ],
         "status": "final",
@@ -6784,21 +6626,17 @@
           {
             "coding": [
               {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
                 "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
-                "code": "MB"
-              },
-              {
-                "code": "26436-6",
-                "system": "http://loinc.org"
-              },
-              {
-                "code": "laboratory",
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
-              },
-              {
-                "code": "18725-2",
-                "system": "http://loinc.org",
-                "display": "Microbiology studies (set)"
+                "code": "MB",
+                "display": "Microbiology"
               }
             ]
           }
@@ -6936,21 +6774,17 @@
           {
             "coding": [
               {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
                 "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
-                "code": "MB"
-              },
-              {
-                "code": "26436-6",
-                "system": "http://loinc.org"
-              },
-              {
-                "code": "laboratory",
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
-              },
-              {
-                "code": "18725-2",
-                "system": "http://loinc.org",
-                "display": "Microbiology studies (set)"
+                "code": "MB",
+                "display": "Microbiology"
               }
             ]
           }
@@ -7061,21 +6895,17 @@
           {
             "coding": [
               {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
                 "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
-                "code": "MB"
-              },
-              {
-                "code": "26436-6",
-                "system": "http://loinc.org"
-              },
-              {
-                "code": "laboratory",
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
-              },
-              {
-                "code": "18725-2",
-                "system": "http://loinc.org",
-                "display": "Microbiology studies (set)"
+                "code": "MB",
+                "display": "Microbiology"
               }
             ]
           }
@@ -7137,11 +6967,11 @@
           ]
         },
         "valueQuantity": {
-          "unit": "1",
           "system": "http://unitsofmeasure.org",
           "code": "1",
           "value": 2,
-          "comparator": "<="
+          "comparator": "<=",
+          "unit": "1"
         },
         "method": {
           "coding": [
@@ -7231,21 +7061,17 @@
           {
             "coding": [
               {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
                 "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
-                "code": "MB"
-              },
-              {
-                "code": "26436-6",
-                "system": "http://loinc.org"
-              },
-              {
-                "code": "laboratory",
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
-              },
-              {
-                "code": "18725-2",
-                "system": "http://loinc.org",
-                "display": "Microbiology studies (set)"
+                "code": "MB",
+                "display": "Microbiology"
               }
             ]
           }
@@ -7364,21 +7190,17 @@
           {
             "coding": [
               {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
                 "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
-                "code": "MB"
-              },
-              {
-                "code": "26436-6",
-                "system": "http://loinc.org"
-              },
-              {
-                "code": "laboratory",
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
-              },
-              {
-                "code": "18725-2",
-                "system": "http://loinc.org",
-                "display": "Microbiology studies (set)"
+                "code": "MB",
+                "display": "Microbiology"
               }
             ]
           }
@@ -7544,21 +7366,17 @@
           {
             "coding": [
               {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
                 "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
-                "code": "MB"
-              },
-              {
-                "code": "26436-6",
-                "system": "http://loinc.org"
-              },
-              {
-                "code": "laboratory",
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
-              },
-              {
-                "code": "18725-2",
-                "system": "http://loinc.org",
-                "display": "Microbiology studies (set)"
+                "code": "MB",
+                "display": "Microbiology"
               }
             ]
           }
@@ -7685,21 +7503,17 @@
           {
             "coding": [
               {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
                 "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
-                "code": "MB"
-              },
-              {
-                "code": "26436-6",
-                "system": "http://loinc.org"
-              },
-              {
-                "code": "laboratory",
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
-              },
-              {
-                "code": "18725-2",
-                "system": "http://loinc.org",
-                "display": "Microbiology studies (set)"
+                "code": "MB",
+                "display": "Microbiology"
               }
             ]
           }
@@ -7865,21 +7679,17 @@
           {
             "coding": [
               {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
                 "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
-                "code": "MB"
-              },
-              {
-                "code": "26436-6",
-                "system": "http://loinc.org"
-              },
-              {
-                "code": "laboratory",
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
-              },
-              {
-                "code": "18725-2",
-                "system": "http://loinc.org",
-                "display": "Microbiology studies (set)"
+                "code": "MB",
+                "display": "Microbiology"
               }
             ]
           }
@@ -8006,21 +7816,17 @@
           {
             "coding": [
               {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
                 "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
-                "code": "MB"
-              },
-              {
-                "code": "26436-6",
-                "system": "http://loinc.org"
-              },
-              {
-                "code": "laboratory",
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
-              },
-              {
-                "code": "18725-2",
-                "system": "http://loinc.org",
-                "display": "Microbiology studies (set)"
+                "code": "MB",
+                "display": "Microbiology"
               }
             ]
           }
@@ -8184,21 +7990,17 @@
           {
             "coding": [
               {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
                 "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
-                "code": "MB"
-              },
-              {
-                "code": "26436-6",
-                "system": "http://loinc.org"
-              },
-              {
-                "code": "laboratory",
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
-              },
-              {
-                "code": "18725-2",
-                "system": "http://loinc.org",
-                "display": "Microbiology studies (set)"
+                "code": "MB",
+                "display": "Microbiology"
               }
             ]
           }
@@ -8318,21 +8120,17 @@
           {
             "coding": [
               {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
                 "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
-                "code": "MB"
-              },
-              {
-                "code": "26436-6",
-                "system": "http://loinc.org"
-              },
-              {
-                "code": "laboratory",
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
-              },
-              {
-                "code": "18725-2",
-                "system": "http://loinc.org",
-                "display": "Microbiology studies (set)"
+                "code": "MB",
+                "display": "Microbiology"
               }
             ]
           }
@@ -8497,21 +8295,17 @@
           {
             "coding": [
               {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
                 "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
-                "code": "MB"
-              },
-              {
-                "code": "26436-6",
-                "system": "http://loinc.org"
-              },
-              {
-                "code": "laboratory",
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
-              },
-              {
-                "code": "18725-2",
-                "system": "http://loinc.org",
-                "display": "Microbiology studies (set)"
+                "code": "MB",
+                "display": "Microbiology"
               }
             ]
           }
@@ -8637,21 +8431,17 @@
           {
             "coding": [
               {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
                 "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
-                "code": "MB"
-              },
-              {
-                "code": "26436-6",
-                "system": "http://loinc.org"
-              },
-              {
-                "code": "laboratory",
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
-              },
-              {
-                "code": "18725-2",
-                "system": "http://loinc.org",
-                "display": "Microbiology studies (set)"
+                "code": "MB",
+                "display": "Microbiology"
               }
             ]
           }
@@ -8817,21 +8607,17 @@
           {
             "coding": [
               {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
                 "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
-                "code": "MB"
-              },
-              {
-                "code": "26436-6",
-                "system": "http://loinc.org"
-              },
-              {
-                "code": "laboratory",
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
-              },
-              {
-                "code": "18725-2",
-                "system": "http://loinc.org",
-                "display": "Microbiology studies (set)"
+                "code": "MB",
+                "display": "Microbiology"
               }
             ]
           }
@@ -8977,10 +8763,6 @@
           {
             "coding": [
               {
-                "system": "http://loinc.org",
-                "code": "26436-6"
-              },
-              {
                 "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
                 "code": "LAB"
               }
@@ -9049,7 +8831,7 @@
             "reference": "Observation/mii-exa-test-data-mikrobio-voraussichtliche-empfindlichkeit-1"
           },
           {
-            "reference": "Observation/mii-exa-test-data-mikrobio-mre-klasse-1"
+            "reference": "Observation/mii-exa-test-data-mikrobio-resistenzkategorie-status-1"
           },
           {
             "reference": "Observation/mii-exa-test-data-mikrobio-resistenzmechanismen-1"

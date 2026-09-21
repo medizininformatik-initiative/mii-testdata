@@ -15,7 +15,7 @@
   },
   "extension": [
     {
-      "url": "https://fhir.bbmri-eric.eu/fhir/StructureDefinition/miabis-organization-description-extension",
+      "url": "https://fhir.bbmri-eric.eu/StructureDefinition/miabis-organization-description-extension",
       "valueString": "Zentrale Biobank der Charité"
     }
   ],
