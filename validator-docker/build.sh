@@ -44,26 +44,12 @@ jq -r '.dependencies | to_entries[] | "\(.key)#\(.value)"' "${LOCK_FILE}" | whil
     fi
 done
 
-# Step 3: Also copy newer versions referenced in sushi-config but not yet in lock file
-for extra_pkg in \
-    "de.medizininformatikinitiative.kerndatensatz.onkologie#2026.0.1" \
-    "de.medizininformatikinitiative.kerndatensatz.seltene#2026.0.0" \
-    "de.medizininformatikinitiative.kerndatensatz.mtb#2026.0.0" \
-    "de.medizininformatikinitiative.kerndatensatz.consent#2026.0.1-rc-1" \
-    "de.medizininformatikinitiative.kerndatensatz.icu#2026.0.1" \
-    "de.medizininformatikinitiative.kerndatensatz.laborbefund#2026.0.1" \
-    "de.medizininformatikinitiative.kerndatensatz.medikation#2026.0.1" \
-    "de.medizininformatikinitiative.kerndatensatz.biobank#2026.0.1" \
-    "de.medizininformatikinitiative.kerndatensatz.studie#2026.0.2" \
-    "de.medizininformatikinitiative.kerndatensatz.pros#2026.0.1"; do
-    pkg_dir="${FHIR_CACHE}/${extra_pkg}"
-    target_basename="$(basename "${pkg_dir}")"
-    if [ -d "${pkg_dir}" ] && [ ! -d "${TARGET_DIR}/${target_basename}" ]; then
-        fhir inflate --package "${extra_pkg}" 2>/dev/null || true
-        echo "  + ${extra_pkg}"
-        cp -r "${pkg_dir}" "${TARGET_DIR}/"
-    fi
-done
+# Hinweis: Die fruehere hartkodierte Extra-Paketliste ("Step 3") ist entfernt.
+# Seit der 2027-Ballot-Generation ist fhirpkg.lock.json die einzige Quelle;
+# es wird per `fhir restore` aus kds-testdata/package.json erzeugt (expandierte
+# Pins der BOM de.medizininformatikinitiative.kerndatensatz.complete).
+# Bei einem Versions-Bump: package.json aktualisieren, `fhir restore` laufen
+# lassen, dieses Script neu ausfuehren.
 
 # Step 4: Verify snapshots exist
 echo ""

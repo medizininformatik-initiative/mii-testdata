@@ -47,45 +47,21 @@ jobs:
 
     - name: Install yq
       run: |
-        wget -qO /usr/local/bin/yq https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64
+        wget -qO /usr/local/bin/yq https://github.com/mikefarah/yq/releases/download/${YQ_VERSION}/yq_linux_amd64
         chmod +x /usr/local/bin/yq
+      env:
+        YQ_VERSION: v4.44.3
 
     - name: Install sushi
-      run: npm install -g fsh-sushi
+      run: npm install -g fsh-sushi@${SUSHI_VERSION}
+      env:
+        SUSHI_VERSION: 3.20.1
 
-    - name: Initial build
-      id: initial-build
-      run: |
-        sushi build --log-level warn . || echo HAD_ERRORS='true' >> "$GITHUB_OUTPUT"
-      working-directory: ./kds-testdata
-
-    - uses: actions/setup-dotnet@v4
-      if: ${{ steps.initial-build.outputs.HAD_ERRORS == 'true' }}
-      with:
-        dotnet-version: '8.0.x'
-
-    - name: Install firely
-      if: ${{ steps.initial-build.outputs.HAD_ERRORS == 'true' }}
-      run: dotnet tool install -g firely.terminal
-
-    # KDS-ICU 2025.x ships its StructureDefinitions differential-only (no snapshot),
-    # which SUSHI cannot import ("missing a snapshot"). Generate snapshots in-place.
-    # Note: `fhir inflate --package <name>` reports "not a project folder"; the
-    # reliable form is `inflate --here` from inside the package folder (which has a
-    # package.json). We inflate the ICU dependencies first, then the ICU package.
-    - name: Create FHIR package snapshots
-      if: ${{ steps.initial-build.outputs.HAD_ERRORS == 'true' }}
-      working-directory: ./kds-testdata
-      run: |
-        export PATH="$HOME/.dotnet/tools:$PATH"
-        icu_ver="$(yq eval '.dependencies["de.medizininformatikinitiative.kerndatensatz.icu"]' sushi-config.yaml)"
-        fhir cache install de.medizininformatikinitiative.kerndatensatz.icu "$icu_ver"
-        fhir inflate --package "de.medizininformatikinitiative.kerndatensatz.icu@${icu_ver}" --snapshot --dependencies --force || true
-        ( cd "$HOME/.fhir/packages/de.medizininformatikinitiative.kerndatensatz.icu#${icu_ver}/package" \
-          && fhir inflate --here --snapshot --force )
-
-    - name: Final build
-      if: ${{ steps.initial-build.outputs.HAD_ERRORS == 'true' }}
+    # Seit der 2027-Ballot-Generation liefern die KDS-Pakete Snapshots mit;
+    # der fruehere ICU-inflate-Workaround (Firely Terminal) ist entfernt.
+    # Alle MII-Module kommen ueber die BOM de.medizininformatikinitiative.
+    # kerndatensatz.complete aus dem fhir-package-store Cache.
+    - name: Build
       run: sushi build --log-level warn .
       working-directory: ./kds-testdata
 
@@ -170,15 +146,30 @@ jobs:
       if: always()
       run: docker compose -f blaze/blaze.yml down -v
 
-  JAVA_FHIR_VALIDATION:
-    uses: medizininformatik-initiative/kerndatensatz-meta/.github/workflows/ci_java_validation.yml@master
+  # Die aufgerufene Workflow-Definition deklariert ihre Secrets als required;
+  # fehlen sie (z.B. in Forks), stirbt der Job ohne einen einzigen Step.
+  # Der Guard prueft die Verfuegbarkeit vorab (Muster: kerndatensatz-lungenfunktion).
+  java-validation-guard:
+    runs-on: ubuntu-latest
     needs: build-kds-testdata
-    # Only run validation in these scenarios:
     if: |
       (github.event_name == 'workflow_dispatch' && github.event.inputs.run_validation == 'true') ||
       github.event_name == 'pull_request' ||
       startsWith(github.ref, 'refs/tags/v') ||
       contains(github.event.head_commit.message, '[validate]')
+    outputs:
+      has-secrets: ${{ steps.check.outputs.has-secrets }}
+    steps:
+    - id: check
+      run: echo "has-secrets=${{ env.CERT != '' }}" >> "$GITHUB_OUTPUT"
+      env:
+        CERT: ${{ secrets.CDS_DEV_CLIENT_CERT }}
+
+  JAVA_FHIR_VALIDATION:
+    # Auf Commit-SHA gepinnt statt @master (Reproduzierbarkeit; Muster der Modul-Repos)
+    uses: medizininformatik-initiative/kerndatensatz-meta/.github/workflows/ci_java_validation.yml@1db2e534704d92e5ee0cde663ce3e7ccd8825fa7
+    needs: java-validation-guard
+    if: needs.java-validation-guard.outputs.has-secrets == 'true'
     with:
       ref: ${{ github.event_name == 'pull_request' && github.event.pull_request.head.ref || github.ref_name }}
       PATH_TO_CONFORMANCE_RESOURCES: ./kds-testdata/fsh-generated/resources
