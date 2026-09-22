@@ -117,9 +117,29 @@ def main():
     # nicht der Branch-/main-Zustand.
     modsum = collections.defaultdict(lambda: {"prof_total": 0, "prof_used": 0,
                                               "ms_total": 0, "ms_cov": 0})
+    # Abstract-Regel (Team-Entscheidung): ein abstraktes Profil gilt als
+    # abgedeckt, sobald mindestens ein abgeleitetes Profil abgedeckt ist.
+    sd_meta = {}
     for f in idx["files"]:
         if f.get("resourceType") == "StructureDefinition" and f.get("kind") == "resource":
             modsum[mod_of(f.get("url", ""))]["prof_total"] += 1
+            try:
+                d = json.load(open(P + f["filename"]))
+                sd_meta[f["url"]] = (d.get("abstract", False), d.get("baseDefinition"))
+            except Exception:
+                sd_meta[f["url"]] = (False, None)
+    def ancestors(url):
+        seen = set()
+        cur = sd_meta.get(url, (False, None))[1]
+        while cur and cur in sd_meta and cur not in seen:
+            seen.add(cur)
+            cur = sd_meta[cur][1]
+        return seen
+    abstract_covered = set()
+    for u in by_prof:
+        for anc in ancestors(u):
+            if sd_meta.get(anc, (False,))[0]:
+                abstract_covered.add(anc)
 
     for prof, instances in sorted(by_prof.items()):
         fn = sd_file.get(prof)
@@ -153,7 +173,7 @@ def main():
         top = collapse(missing)
         tot_top += len(top)
         mod = mod_of(prof)
-        modsum[mod]["prof_used"] += 1
+        modsum[mod]["prof_used"] += 1  # abstrakte via abstract_covered unten
         modsum[mod]["ms_total"] += len(ms_ids)
         modsum[mod]["ms_cov"] += len(ms_ids) - len(missing)
         if top:
@@ -174,6 +194,10 @@ def main():
         for p in used:
             if not is_ms(p) and not any(is_ms(p[:k]) for k in range(1, len(p))):
                 notms[mod][".".join(p)] += 1
+
+    for u in abstract_covered:
+        if u not in by_prof:
+            modsum[mod_of(u)]["prof_used"] += 1
 
     print("# Must-Support-Abdeckung der Testdaten (2027-Ballot)\n")
     print(f"Generiert von `scripts/ms-coverage.py`. **Source of Truth sind die "

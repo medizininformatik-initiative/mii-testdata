@@ -10,7 +10,7 @@
 | diagnose | 1/1 | 62/77 | 81 % | `abatement[x]`, `abatement[x]:abatementAge`, `abatement[x]:abatementDateTime` |
 | dokument | 1/1 | 69/70 | 99 % | `extension:nlp-processing-status` |
 | fall | 1/1 | 92/96 | 96 % | `account` |
-| icu | 93/94 | 2338/2996 | 78 % | `identifier`, `dataAbsentReason`, `device` |
+| icu | 94/94 | 2338/2996 | 78 % | `identifier`, `dataAbsentReason`, `device` |
 | kardio | 13/13 | 272/362 | 75 % | `encounter`, `abatement[x]`, `abatement[x]:abatementAge` |
 | labor | 3/3 | 120/151 | 79 % | `encounter.identifier`, `specimen`, `subject.identifier` |
 | lungenfunktion | 39/48 | 1156/1556 | 74 % | `hasMember`, `derivedFrom`, `referenceRange` |
@@ -20,12 +20,12 @@
 | molgen | 16/16 | 241/248 | 97 % | `basedOn`, `relationship.coding:snomed.extension:FamiliareLinie`, `relationship.coding:snomed.extension:Verwandtschaftsgrad` |
 | mtb | 50/50 | 929/1520 | 61 % | `encounter`, `issued`, `effective[x]` |
 | onko | 76/76 | 1385/2035 | 68 % | `encounter`, `note`, `code.coding:ops.extension:Seitenlokalisation` |
-| patho | 15/17 | 349/468 | 75 % | `meta.lastUpdated`, `text`, `component.code` |
+| patho | 17/17 | 349/468 | 75 % | `meta.lastUpdated`, `text`, `component.code` |
 | person | 5/5 | 161/258 | 62 % | `encounter`, `address:Postfach.city.extension:gemeindeschluessel.url`, `address:Postfach.city.extension:gemeindeschluessel.value[x]` |
 | pro | 21/23 | 238/292 | 82 % | `focus`, `note`, `identifier` |
 | prozedur | 1/1 | 45/46 | 98 % | `bodySite.coding:snomed-ct.version` |
 | seltene | 23/23 | 395/607 | 65 % | `abatement[x]`, `abatement[x]:abatementAge`, `abatement[x]:abatementDateTime` |
-| soziodemographie | 15/16 | 148/153 | 97 % | `dataAbsentReason` |
+| soziodemographie | 16/16 | 148/153 | 97 % | `dataAbsentReason` |
 | studie | 7/7 | 73/78 | 94 % | `telecom`, `partOf`, `supportingInfo` |
 | symptom | 2/2 | 36/39 | 92 % | `onset[x]:onsetPeriod.end.extension:lebensphase-bis`, `onset[x]:onsetPeriod.start.extension:lebensphase-von`, `specimen` |
 
