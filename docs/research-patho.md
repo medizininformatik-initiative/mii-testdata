@@ -18,9 +18,9 @@ history-of-present-illness, problem-list-item).
 | 2 | mii-pr-patho-composition | Composition (ISiKBerichtSubSysteme) | nein | mii-exa-test-data-patho-composition-1 |
 | 3 | mii-pr-patho-report | DiagnosticReport | nein | mii-exa-test-data-patho-report-1 |
 | 4 | mii-pr-patho-service-request | ServiceRequest | nein | mii-exa-test-data-patho-request-1 |
-| 5 | mii-pr-patho-specimen | Specimen (SpecimenCore, modul-biobank) | nein | 36 Instanzen `mii-exa-test-data-patho-specimen-01..12-{part,block,slide}` |
+| 5 | mii-pr-patho-specimen | Specimen (SpecimenCore, modul-biobank) | nein | 6 Instanzen `mii-exa-test-data-patho-specimen-{01,03}-{part,block,slide}` |
 | 6 | mii-pr-patho-base-observation | Observation | **ja** | indirekt ueber alle abgeleiteten Profile (7-12); zusaetzlich technisches Ziel des `Observations`-Entry-Slice im Bundle |
-| 7 | mii-pr-patho-finding | mii-pr-patho-base-observation | nein | 190 Finding-Instanzen (Makro-/Mikro-/Konklusions-/Intraop-/Zusatz-Befunde) |
+| 7 | mii-pr-patho-finding | mii-pr-patho-base-observation | nein | 38 Finding-Instanzen (Makro-/Mikro-/Konklusions-/Intraop-/Zusatz-Befunde) |
 | 8 | mii-pr-patho-section-grouper | mii-pr-patho-base-observation | **ja** | indirekt ueber alle 5 abgeleiteten Grouper (9-13) |
 | 9 | mii-pr-patho-macroscopic-grouper | mii-pr-patho-section-grouper | nein | mii-exa-test-data-patho-macro-grouper-1 |
 | 10 | mii-pr-patho-microscopic-grouper | mii-pr-patho-section-grouper | nein | mii-exa-test-data-patho-micro-grouper-1 |
@@ -50,22 +50,26 @@ diagnostischer Schlussfolgerung.
 
 **Arbeitsteilung**: mii-testdata ist die *technische* Schicht (Profil-Coverage,
 CI-validierbare Bundles); ProstateCancerSpec bleibt die *klinische*
-Referenzimplementierung. Auf Wunsch des Users wurde der vollstaendige Fall (alle 12
-Stanzen) uebernommen, nicht nur ein schlankes Extrakt.
+Referenzimplementierung. Der Fall wurde zunaechst vollstaendig portiert (alle 12 Stanzen,
+251 Instanzen) und anschliessend auf Wunsch des Users **bewusst auf ein 2-Stanzen-Szenario
+eingedampft** (Stanze 01 positiv, Stanze 03 benigne als Kontrast - analog zum historischen
+2-Stanzen-Material): 69 Instanzen, 38 Findings, Dokument-Bundle mit 63 Entries. Die
+17/17-Profilabdeckung bleibt vollstaendig erhalten. Wer den VOLLEN 12-Stanzen-Fall braucht,
+findet ihn referenzimplementiert im ProstateCancerSpec - genau dafuer ist der da.
 
 ### 2.1 Portiert (mit Migration 2026 -> 2027)
 
 | Quelle (PCS) | Ziel (modul-patho) | Anpassungen |
 |---|---|---|
 | serviceRequest.fsh | PathoRequest.fsh | + Filler-ID-Slice, supportingInfo auf benannte Slices (observations/codedCondition/anamnesis/activeProblems) inkl. Verkettung mit Bestands-Listen |
-| specimens.fsh (36 Specimens) | Specimen.fsh | Doppel-Profilierung specimen + SpecimenCore beibehalten (deckt biobank-SpecimenCore mit ab), Versionssuffixe |2026.0.0 entfernt |
-| macroscopy.fsh (Grouper + 36 Findings) | PathoMacroscopy.fsh | Grouper-Mitglieder von `derivedFrom` auf `hasMember` migriert (2027-Slice `pathology-finding`) |
-| microscopy-findings-01-03/04-06/07-09/10-12.fsh (154 Findings) | PathoMicroscopy0103/0406/0709/1012.fsh | QuestionnaireResponse-derivedFrom-Referenzen entfernt (QRs nicht portiert, s.u.) |
+| specimens.fsh (reduziert auf Stanzen 01+03: 6 Specimens) | Specimen.fsh | Doppel-Profilierung specimen + SpecimenCore beibehalten (deckt biobank-SpecimenCore mit ab), Versionssuffixe |2026.0.0 entfernt |
+| macroscopy.fsh (Grouper + 6 Findings fuer 01/03) | PathoMacroscopy.fsh | Grouper-Mitglieder von `derivedFrom` auf `hasMember` migriert (2027-Slice `pathology-finding`) |
+| microscopy-findings-*.fsh (reduziert auf 8 Findings: 6 Kernparameter Stanze 01, HistoTyp+MorphText Stanze 03) | PathoMicroscopy.fsh | QuestionnaireResponse-derivedFrom-Referenzen entfernt (QRs nicht portiert, s.u.) |
 | microscopy-grouper.fsh | PathoMicroscopyGrouper.fsh | derivedFrom -> hasMember |
-| diagnostic-conclusion.fsh (Grouper + 23 Findings) | PathoConclusion.fsh | doppelte identische code.coding-Zeile (ISUP-Grading) dedupliziert; onko-meta.profile-Doppeltags entfernt (s. 4.4) |
+| diagnostic-conclusion.fsh (Grouper + 22 Findings; ExtraprostaticExtensionLocation gestrichen) | PathoConclusion.fsh | doppelte identische code.coding-Zeile (ISUP-Grading) dedupliziert; onko-meta.profile-Doppeltags entfernt (s. 4.4); Werte auf das 2-Stanzen-Szenario angepasst (Gleason 3+4=7, ISUP-Gruppe 2, Ratio 1/2, Tumorlaenge 7,2 mm) |
 | diagnostic-report.fsh | PathoReport.fsh | + encounter, + result-Slices intraoperative-/additional-observations, + media.link, + conclusionCode, + Extension `composition` (R5-Backport-Verweis auf die Composition) |
 | composition.fsh | PathoComposition.fsh | komplett auf mii-pr-patho-composition migriert: statt einer Sammel-Sektion die 2027-Sektions-Slices (patho-diagnostic-report, makroskopie, mikroskopie, intraoperativ, diagnostische-schlussfolgerung, zusaetzliche-beobachtung), text.status auf fixiertes `#extensions`, identifier/attester/custodian/event ergaenzt |
-| bundle-document.fsh | PathoBundleDocument.fsh | PCS nutzt plain `Bundle` mit 9 Entries; hier vollstaendige Instanz von mii-pr-patho-bundle mit 245 Entries, benannten Entry-Slices, identifier, timestamp und der vom Profil geforderten signature |
+| bundle-document.fsh | PathoBundleDocument.fsh | PCS nutzt plain `Bundle` mit 9 Entries; hier vollstaendige Instanz von mii-pr-patho-bundle mit 63 Entries, benannten Entry-Slices, identifier, timestamp und der vom Profil geforderten signature |
 | diagnosis.fsh (2x onko-diagnose-primaertumor) | PathoDiagnose.fsh | Pflicht-Slice `category[onkologie]` (SNOMED 55342001) ergaenzt (2027-Anforderung) |
 | supportingInfo-psa-level.fsh | PathoPsa.fsh | + `category` laboratory (noetig, damit die PSA-Observation den `Observations`-Bundle-Slice gegen base-observation besteht) |
 | tnm-staging.fsh (cT2a/cN0/cM0) | PathoTnm.fsh | unveraendert portiert (onko-TNM-Profile existieren in 2027) |
@@ -112,18 +116,18 @@ Specimens, HE-Schnitte, Gleason-Befundkette).
 ```
 ServiceRequest (request-1)
   supportingInfo: PSA, Verdachtsdiagnose (onko), Anamnese-/Problemlisten
-  specimen: 12x Part
+  specimen: 2x Part (Stanze 01 + 03)
 Specimen-Hierarchie je Stanze: Part -> Block (Paraffin) -> Slide (HE)
-Findings (mii-pr-patho-finding):
-  Makro: Laenge/Zylinderzahl/Seitenangabe je Stanze  (Sektionstyp 22634-0)
-  Mikro: 16 Parameter je positiver Stanze (01,02,04,06,07,09,11), HistoTyp+MorphText benigne (22635-7)
+Findings (mii-pr-patho-finding), 38 gesamt:
+  Makro: Laenge/Zylinderzahl/Seitenangabe je Stanze (6x, Sektionstyp 22634-0)
+  Mikro: 6 Kernparameter Stanze 01 (positiv), HistoTyp+MorphText Stanze 03 (benigne) (22635-7)
   Intraop: Schnellschnitt Stanze 01 (83321-0)
   Zusatz: p63-IHC (100969-5)
-  Konklusion: 23 synoptische Parameter (22637-3)
+  Konklusion: 22 synoptische Parameter (22637-3)
 Grouper (je Sektion) --hasMember--> Findings
 DiagnosticReport (report-1) --result[Slices]--> alle 5 Grouper; media.link -> Media
 Composition (composition-1): 6 Sektions-Slices -> Report bzw. Grouper
-Dokument-Bundle (befund-bundle-1, mii-pr-patho-bundle): Composition first, 245 Entries, Signature
+Dokument-Bundle (befund-bundle-1, mii-pr-patho-bundle): Composition first, 63 Entries, Signature
 ```
 
 Zwei Bundles:
@@ -133,7 +137,7 @@ Zwei Bundles:
   gesicherte Diagnose sind bewusst NICHT enthalten (im Dokument unreferenziert, wuerden
   Dokument-Erreichbarkeits-Warnungen ausloesen).
 - **`mii-exa-test-data-bundle-patho-1`** - Transaction-Bundle (CI-NDJSON-Glob, Name
-  unveraendert), erweitert um alle 250 Ressourcen inklusive des Dokument-Bundles selbst.
+  unveraendert), erweitert um alle 68 Ressourcen inklusive des Dokument-Bundles selbst.
 
 ## 4. Entscheidungen
 
@@ -196,7 +200,8 @@ Zwei Bundles:
   unveraendert in anderen Modulen: genomics-reporting-Extensions, bbmri, address-de-basis,
   seltene).
 - Java-Validator (validator_cli, `-version 4.0.1`, complete-2027.0.0-ballot.19 + basisprofil
-  1.6.0, `-tx n/a`) ueber alle 254 generierten Patho-Ressourcen (einzeln + Dokument-Bundle):
+  1.6.0, `-tx n/a`; Lauf am vollstaendigen 12-Stanzen-Stand vor der Eindampfung, das
+  2-Stanzen-Szenario ist eine echte Teilmenge davon):
   616 Errors, die sich vollstaendig auf vier tx-/Umgebungs-Cluster zurueckfuehren lassen -
   KEIN Fehler bleibt nach Abzug der Cluster uebrig:
   1. **`category:section-type`-Slice "required but not found"** (380x, jede Finding-Instanz

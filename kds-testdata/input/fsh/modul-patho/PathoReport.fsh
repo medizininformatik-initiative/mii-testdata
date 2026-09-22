@@ -3,7 +3,7 @@ Instance: mii-exa-test-data-patho-report-1
 InstanceOf: $mii-patho-report
 Usage: #example
 Title: "Pathologiebericht Prostatastanzen"
-Description: "Umfangreicher Pathologiebericht für Core Needle Biopsys"
+Description: "Pathologiebericht für die 2-Stanzen-Prostatabiopsie (Stanze 01 positiv, Stanze 03 benigne)"
 * insert TestDataLabel
 * meta.source = "https://www.charite.de/fhir/kds-testdata"
 * identifier[Set-ID].type = http://terminology.hl7.org/CodeSystem/v2-0203#ACSN "Accession ID"
@@ -18,55 +18,25 @@ Description: "Umfangreicher Pathologiebericht für Core Needle Biopsys"
 * effectiveDateTime = "2024-01-20T15:00:00+01:00"
 * issued = "2024-01-20T15:30:00+01:00"
 * performer = Reference(mii-exa-test-data-patho-practitioner-1)
-// Alle 12 Prostatastanzen - Part, Block, Slide
+// Beide Prostatastanzen - Part, Block, Slide
 // Stanze 01
 * specimen[+] = Reference(mii-exa-test-data-patho-specimen-01-part)
 * specimen[+] = Reference(mii-exa-test-data-patho-specimen-01-block)
 * specimen[+] = Reference(mii-exa-test-data-patho-specimen-01-slide)
 // Stanze 02
-* specimen[+] = Reference(mii-exa-test-data-patho-specimen-02-part)
-* specimen[+] = Reference(mii-exa-test-data-patho-specimen-02-block)
-* specimen[+] = Reference(mii-exa-test-data-patho-specimen-02-slide)
 // Stanze 03
 * specimen[+] = Reference(mii-exa-test-data-patho-specimen-03-part)
 * specimen[+] = Reference(mii-exa-test-data-patho-specimen-03-block)
 * specimen[+] = Reference(mii-exa-test-data-patho-specimen-03-slide)
 // Stanze 04
-* specimen[+] = Reference(mii-exa-test-data-patho-specimen-04-part)
-* specimen[+] = Reference(mii-exa-test-data-patho-specimen-04-block)
-* specimen[+] = Reference(mii-exa-test-data-patho-specimen-04-slide)
 // Stanze 05
-* specimen[+] = Reference(mii-exa-test-data-patho-specimen-05-part)
-* specimen[+] = Reference(mii-exa-test-data-patho-specimen-05-block)
-* specimen[+] = Reference(mii-exa-test-data-patho-specimen-05-slide)
 // Stanze 06
-* specimen[+] = Reference(mii-exa-test-data-patho-specimen-06-part)
-* specimen[+] = Reference(mii-exa-test-data-patho-specimen-06-block)
-* specimen[+] = Reference(mii-exa-test-data-patho-specimen-06-slide)
 // Stanze 07
-* specimen[+] = Reference(mii-exa-test-data-patho-specimen-07-part)
-* specimen[+] = Reference(mii-exa-test-data-patho-specimen-07-block)
-* specimen[+] = Reference(mii-exa-test-data-patho-specimen-07-slide)
 // Stanze 08
-* specimen[+] = Reference(mii-exa-test-data-patho-specimen-08-part)
-* specimen[+] = Reference(mii-exa-test-data-patho-specimen-08-block)
-* specimen[+] = Reference(mii-exa-test-data-patho-specimen-08-slide)
 // Stanze 09
-* specimen[+] = Reference(mii-exa-test-data-patho-specimen-09-part)
-* specimen[+] = Reference(mii-exa-test-data-patho-specimen-09-block)
-* specimen[+] = Reference(mii-exa-test-data-patho-specimen-09-slide)
 // Stanze 10
-* specimen[+] = Reference(mii-exa-test-data-patho-specimen-10-part)
-* specimen[+] = Reference(mii-exa-test-data-patho-specimen-10-block)
-* specimen[+] = Reference(mii-exa-test-data-patho-specimen-10-slide)
 // Stanze 11
-* specimen[+] = Reference(mii-exa-test-data-patho-specimen-11-part)
-* specimen[+] = Reference(mii-exa-test-data-patho-specimen-11-block)
-* specimen[+] = Reference(mii-exa-test-data-patho-specimen-11-slide)
 // Stanze 12
-* specimen[+] = Reference(mii-exa-test-data-patho-specimen-12-part)
-* specimen[+] = Reference(mii-exa-test-data-patho-specimen-12-block)
-* specimen[+] = Reference(mii-exa-test-data-patho-specimen-12-slide)
 
 // Pathologische Befunde - nur Grouper
 * result[intraoperative-observations] = Reference(mii-exa-test-data-patho-intraop-grouper-1)
@@ -82,5 +52,5 @@ Description: "Umfangreicher Pathologiebericht für Core Needle Biopsys"
 // Verweis auf die zugehörige Composition (R5-Backport-Extension)
 * extension[composition].valueReference = Reference(mii-exa-test-data-patho-composition-1)
 
-* conclusion = "Adenokarzinom der Prostata, Gleason-Score 7a (3+4) in 7 von 12 Stanzen, mit perineuralem Befall."
+* conclusion = "Azinäres Adenokarzinom der Prostata, Gleason-Score 7a (3+4), ISUP-Gradgruppe 2, Nachweis in 1 von 2 Stanzen (Stanze 01, rechts lateral basal), perineurale Infiltration. Stanze 03 tumorfrei."
 * conclusionCode = $sct#399068003 "Malignant tumor of prostate (disorder)"

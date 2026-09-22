@@ -14,7 +14,7 @@ Description: "Grouper for all diagnostic conclusion findings in biopsy specimens
 * category[laboratory-category] = $observation-category#laboratory
 * code = $loinc#22637-3
 * subject = Reference(mii-exa-test-data-patho-patient-1)
-* effectiveDateTime = "2023-03-15"
+* effectiveDateTime = "2024-01-20"
 * performer = Reference(mii-exa-test-data-patho-practitioner-1)
 * basedOn = Reference(mii-exa-test-data-patho-request-1)
 * hasMember[+] = Reference(mii-exa-test-data-patho-histological-type-icdo-3)
@@ -35,7 +35,6 @@ Description: "Grouper for all diagnostic conclusion findings in biopsy specimens
 * hasMember[+] = Reference(mii-exa-test-data-patho-seminal-vesicle-invasion)
 * hasMember[+] = Reference(mii-exa-test-data-patho-lymphovascular-invasion)
 * hasMember[+] = Reference(mii-exa-test-data-patho-periprostatatic-fat-invasion)
-* hasMember[+] = Reference(mii-exa-test-data-patho-extraprostatic-extension-location)
 * hasMember[+] = Reference(mii-exa-test-data-patho-intraductal-carcinoma)
 * hasMember[+] = Reference(mii-exa-test-data-patho-asap)
 * hasMember[+] = Reference(mii-exa-test-data-patho-high-grade-pin)
@@ -43,21 +42,8 @@ Description: "Grouper for all diagnostic conclusion findings in biopsy specimens
 // derivedFrom references to microscopy findings
 * derivedFrom[0] = Reference(mii-exa-test-data-patho-primaer-gleason-01)
 * derivedFrom[+] = Reference(mii-exa-test-data-patho-sekundaer-gleason-01)
-* derivedFrom[+] = Reference(mii-exa-test-data-patho-primaer-gleason-02)
-* derivedFrom[+] = Reference(mii-exa-test-data-patho-sekundaer-gleason-02)
-* derivedFrom[+] = Reference(mii-exa-test-data-patho-prozent-gleason-01)
-* derivedFrom[+] = Reference(mii-exa-test-data-patho-prozent-gleason-02)
 * derivedFrom[+] = Reference(mii-exa-test-data-patho-gleason-grading-01)
-* derivedFrom[+] = Reference(mii-exa-test-data-patho-gleason-grading-02)
-* derivedFrom[+] = Reference(mii-exa-test-data-patho-verhaeltnis-positiver-stanzen-01)
-* derivedFrom[+] = Reference(mii-exa-test-data-patho-verhaeltnis-positiver-stanzen-02)
 * derivedFrom[+] = Reference(mii-exa-test-data-patho-tumoranteil-01)
-* derivedFrom[+] = Reference(mii-exa-test-data-patho-tumoranteil-02)
-* derivedFrom[+] = Reference(mii-exa-test-data-patho-tumorbefallin-laenge-01)
-* derivedFrom[+] = Reference(mii-exa-test-data-patho-tumorbefallin-laenge-02)
-* derivedFrom[+] = Reference(mii-exa-test-data-patho-perineurale-infiltration-01)
-* derivedFrom[+] = Reference(mii-exa-test-data-patho-perineurale-infiltration-02)
-* derivedFrom[+] = Reference(mii-exa-test-data-patho-high-grade-pin-01)
 
 // Histological Type (ICD-O-3)
 Instance: mii-exa-test-data-patho-histological-type-icdo-3
@@ -72,7 +58,7 @@ Description: "Histological type according to ICD-O-3 classification"
 * category[section-type] = $loinc#22637-3
 * code = $loinc#59847-4 "Histology and Behavior ICD-O-3 Cancer"
 * subject = Reference(mii-exa-test-data-patho-patient-1)
-* effectiveDateTime = "2023-03-15"
+* effectiveDateTime = "2024-01-20"
 * performer = Reference(mii-exa-test-data-patho-practitioner-1)
 * basedOn = Reference(mii-exa-test-data-patho-request-1)
 * valueCodeableConcept = $ICDO-3#8140/3 "Azinäres Adenokarzinom"
@@ -90,7 +76,7 @@ Description: "Free text description of tumor morphology"
 * category[section-type] = $loinc#22637-3
 * code = $loinc#33731-1 "Histology type in Cancer specimen Narrative"
 * subject = Reference(mii-exa-test-data-patho-patient-1)
-* effectiveDateTime = "2023-03-15"
+* effectiveDateTime = "2024-01-20"
 * performer = Reference(mii-exa-test-data-patho-practitioner-1)
 * basedOn = Reference(mii-exa-test-data-patho-request-1)
 * valueString = "Konventionelles Adenokarzinom der Prostata mit prominenten azidophilen Nukleolen"
@@ -108,7 +94,7 @@ Description: "Version of ICD-O classification used"
 * category[section-type] = $loinc#22637-3
 * code = $sct#397005006 "World Health Organization tumor classification (observable entity)"
 * subject = Reference(mii-exa-test-data-patho-patient-1)
-* effectiveDateTime = "2023-03-15"
+* effectiveDateTime = "2024-01-20"
 * performer = Reference(mii-exa-test-data-patho-practitioner-1)
 * basedOn = Reference(mii-exa-test-data-patho-request-1)
 * valueCodeableConcept = $ICDO-3_Auflagen#33 "ICD-O-3 2. Auflage 2019"
@@ -128,17 +114,11 @@ Description: "Primary Gleason pattern according to Epstein 2005"
 * code.coding[+] = $loinc#44641-9 "Gleason pattern.primary in Prostate tumor"
 * code.coding[+] = $sct#384994009 "Primary Gleason pattern (observable entity)"
 * subject = Reference(mii-exa-test-data-patho-patient-1)
-* effectiveDateTime = "2023-03-15"
+* effectiveDateTime = "2024-01-20"
 * performer = Reference(mii-exa-test-data-patho-practitioner-1)
 * basedOn = Reference(mii-exa-test-data-patho-request-1)
 * valueCodeableConcept = $sct#369772003 "Gleason Pattern 3 (finding)"
 * derivedFrom[0] = Reference(mii-exa-test-data-patho-primaer-gleason-01)
-* derivedFrom[+] = Reference(mii-exa-test-data-patho-primaer-gleason-02)
-* derivedFrom[+] = Reference(mii-exa-test-data-patho-primaer-gleason-04)
-* derivedFrom[+] = Reference(mii-exa-test-data-patho-primaer-gleason-06)
-* derivedFrom[+] = Reference(mii-exa-test-data-patho-primaer-gleason-07)
-* derivedFrom[+] = Reference(mii-exa-test-data-patho-primaer-gleason-09)
-* derivedFrom[+] = Reference(mii-exa-test-data-patho-primaer-gleason-11)
 
 // Secondary Gleason Pattern
 Instance: mii-exa-test-data-patho-secondary-gleason-pattern
@@ -155,17 +135,11 @@ Description: "Secondary Gleason pattern according to Epstein 2005"
 * code.coding[+] = $loinc#44642-7 "Gleason pattern.secondary in Prostate tumor"
 * code.coding[+] = $sct#384995005 "Secondary Gleason pattern (observable entity)"
 * subject = Reference(mii-exa-test-data-patho-patient-1)
-* effectiveDateTime = "2023-03-15"
+* effectiveDateTime = "2024-01-20"
 * performer = Reference(mii-exa-test-data-patho-practitioner-1)
 * basedOn = Reference(mii-exa-test-data-patho-request-1)
 * valueCodeableConcept = $sct#369773008 "Gleason Pattern 4 (finding)"
 * derivedFrom[0] = Reference(mii-exa-test-data-patho-sekundaer-gleason-01)
-* derivedFrom[+] = Reference(mii-exa-test-data-patho-sekundaer-gleason-02)
-* derivedFrom[+] = Reference(mii-exa-test-data-patho-sekundaer-gleason-04)
-* derivedFrom[+] = Reference(mii-exa-test-data-patho-sekundaer-gleason-06)
-* derivedFrom[+] = Reference(mii-exa-test-data-patho-sekundaer-gleason-07)
-* derivedFrom[+] = Reference(mii-exa-test-data-patho-sekundaer-gleason-09)
-* derivedFrom[+] = Reference(mii-exa-test-data-patho-sekundaer-gleason-11)
 
 // Gleason Score
 Instance: mii-exa-test-data-patho-gleason-score-total
@@ -181,12 +155,10 @@ Description: "Total Gleason score in biopsy specimens"
 * code.coding[+] = $loinc#35266-6 "Gleason score in Specimen Qualitative"
 * code.coding[+] = $sct#385377005 "Gleason grade finding for prostatic cancer"
 * subject = Reference(mii-exa-test-data-patho-patient-1)
-* effectiveDateTime = "2023-03-15"
+* effectiveDateTime = "2024-01-20"
 * performer = Reference(mii-exa-test-data-patho-practitioner-1)
 * basedOn = Reference(mii-exa-test-data-patho-request-1)
-// Semantic Change: OID urn:oid:2.16.840.1.113883.3.1937.777.18.5.14010#C_999009 "Gleason grade (Score) 9"
-// → SNOMED CT 58925000 "Gleason grade score 9 out of 10" (kontrolliert gegen TermServ, 2026-05-17)
-* valueCodeableConcept = $sct#58925000 "Gleason grade score 9 out of 10"
+* valueCodeableConcept = $sct#57403001 "Gleason grade score 7"
 * derivedFrom[0] = Reference(mii-exa-test-data-patho-primary-gleason-pattern)
 * derivedFrom[+] = Reference(mii-exa-test-data-patho-secondary-gleason-pattern)
 
@@ -203,10 +175,10 @@ Description: "Percentage of tumor area with Gleason pattern 4 and 5"
 * category[section-type] = $loinc#22637-3
 * code = $loinc#94735-8 "Prostate tumor area with Gleason pattern 4+5/Total tumor area [Area Fraction] in Prostate tumor by Microscopy"
 * subject = Reference(mii-exa-test-data-patho-patient-1)
-* effectiveDateTime = "2023-03-15"
+* effectiveDateTime = "2024-01-20"
 * performer = Reference(mii-exa-test-data-patho-practitioner-1)
 * basedOn = Reference(mii-exa-test-data-patho-request-1)
-* valueQuantity.value = 77
+* valueQuantity.value = 30
 * valueQuantity.unit = "%"
 * valueQuantity.system = $ucum
 * valueQuantity.code = #%
@@ -224,10 +196,10 @@ Description: "Prostate cancer grade group according to ISUP 2014 and WHO 2016"
 * category[section-type] = $loinc#22637-3
 * code.coding[+] = $sct#1812491000004107 "Histologic grade of primary malignant neoplasm of prostate by International Society of Urological Pathology technique (observable entity)"
 * subject = Reference(mii-exa-test-data-patho-patient-1)
-* effectiveDateTime = "2023-03-15"
+* effectiveDateTime = "2024-01-20"
 * performer = Reference(mii-exa-test-data-patho-practitioner-1)
 * basedOn = Reference(mii-exa-test-data-patho-request-1)
-* valueCodeableConcept = $sct#1279720000 "International Society of Urological Pathology grade group 5 (Gleason score 4 + 5 = 9)"
+* valueCodeableConcept = $sct#1279714001 "International Society of Urological Pathology grade group 2 (Gleason score 3 + 4 = 7) (qualifier value)"
 
 // Histological Grade WHO
 Instance: mii-exa-test-data-patho-histological-grade-who
@@ -242,12 +214,10 @@ Description: "Histological differentiation grade according to WHO"
 * category[section-type] = $loinc#22637-3
 * code = $loinc#21858-6 "Grade Cancer"
 * subject = Reference(mii-exa-test-data-patho-patient-1)
-* effectiveDateTime = "2023-03-15"
+* effectiveDateTime = "2024-01-20"
 * performer = Reference(mii-exa-test-data-patho-practitioner-1)
 * basedOn = Reference(mii-exa-test-data-patho-request-1)
-// Semantic Change: OID urn:oid:2.16.840.1.113883.3.1937.777.18.5.10010#4 "Undifferenziert"
-// → SNOMED CT 1155702002 "G4: Undifferentiated" (kontrolliert gegen TermServ, 2026-05-17)
-* valueCodeableConcept = $sct#1155702002 "G4: Undifferentiated"
+* valueCodeableConcept.text = "G2: mäßig differenziert"
 
 // Number of Positive Cores Right
 Instance: mii-exa-test-data-patho-positive-cores-right
@@ -263,11 +233,11 @@ Description: "Number of tissue cores positive for carcinoma on the right side"
 * category[section-type] = $loinc#22637-3
 * code = $loinc#44651-8 "Tissue cores.positive.carcinoma in Tissue core"
 * subject = Reference(mii-exa-test-data-patho-patient-1)
-* effectiveDateTime = "2023-03-15"
+* effectiveDateTime = "2024-01-20"
 * performer = Reference(mii-exa-test-data-patho-practitioner-1)
 * basedOn = Reference(mii-exa-test-data-patho-request-1)
 * bodySite = $sct#24028007 "Right (qualifier value)"
-* valueQuantity.value = 4
+* valueQuantity.value = 1
 
 
 // Number of Positive Cores Left
@@ -284,11 +254,11 @@ Description: "Number of tissue cores positive for carcinoma on the left side"
 * category[section-type] = $loinc#22637-3
 * code = $loinc#44651-8 "Tissue cores.positive.carcinoma in Tissue core"
 * subject = Reference(mii-exa-test-data-patho-patient-1)
-* effectiveDateTime = "2023-03-15"
+* effectiveDateTime = "2024-01-20"
 * performer = Reference(mii-exa-test-data-patho-practitioner-1)
 * basedOn = Reference(mii-exa-test-data-patho-request-1)
 * bodySite = $sct#7771000 "Left (qualifier value)"
-* valueQuantity.value = 3
+* valueQuantity.value = 0
 
 // Ratio of Positive to Total Cores
 Instance: mii-exa-test-data-patho-ratio-positive-cores
@@ -303,12 +273,12 @@ Description: "Ratio of positive cores to all examined cores"
 * category[section-type] = $loinc#22637-3
 * code = $sct#372303007 "Ratio of blocks with prostate tumor to total number of blocks obtained (observable entity)"
 * subject = Reference(mii-exa-test-data-patho-patient-1)
-* effectiveDateTime = "2023-03-15"
+* effectiveDateTime = "2024-01-20"
 * performer = Reference(mii-exa-test-data-patho-practitioner-1)
 * basedOn = Reference(mii-exa-test-data-patho-request-1)
-* valueRatio.numerator.value = 7
+* valueRatio.numerator.value = 1
 * valueRatio.numerator.unit = "cores"
-* valueRatio.denominator.value = 12
+* valueRatio.denominator.value = 2
 * valueRatio.denominator.unit = "cores"
 
 // Percentage Tumor Total
@@ -324,10 +294,10 @@ Description: "Total percentage of tumor in all positive tissue cores"
 * category[section-type] = $loinc#22637-3
 * code = $loinc#44651-8 "Tissue cores.positive.carcinoma in Tissue core"
 * subject = Reference(mii-exa-test-data-patho-patient-1)
-* effectiveDateTime = "2023-03-15"
+* effectiveDateTime = "2024-01-20"
 * performer = Reference(mii-exa-test-data-patho-practitioner-1)
 * basedOn = Reference(mii-exa-test-data-patho-request-1)
-* valueQuantity.value = 51
+* valueQuantity.value = 40
 * valueQuantity.unit = "%"
 * valueQuantity.system = $ucum
 * valueQuantity.code = #%
@@ -345,10 +315,10 @@ Description: "Total linear length of carcinoma in millimeters"
 * category[section-type] = $loinc#22637-3
 * code = $loinc#44618-7 "Total linear mm of carcinoma"
 * subject = Reference(mii-exa-test-data-patho-patient-1)
-* effectiveDateTime = "2023-03-15"
+* effectiveDateTime = "2024-01-20"
 * performer = Reference(mii-exa-test-data-patho-practitioner-1)
 * basedOn = Reference(mii-exa-test-data-patho-request-1)
-* valueQuantity.value = 52.7
+* valueQuantity.value = 7.2
 * valueQuantity.unit = "mm"
 * valueQuantity.system = $ucum
 * valueQuantity.code = #mm
@@ -366,7 +336,7 @@ Description: "Presence of perineural invasion in cancer specimen"
 * category[section-type] = $loinc#22637-3
 * code = $loinc#92837-4 "Perineural invasion [Presence] in Cancer specimen"
 * subject = Reference(mii-exa-test-data-patho-patient-1)
-* effectiveDateTime = "2023-03-15"
+* effectiveDateTime = "2024-01-20"
 * performer = Reference(mii-exa-test-data-patho-practitioner-1)
 * basedOn = Reference(mii-exa-test-data-patho-request-1)
 * valueCodeableConcept = $sct#52101004 "Present (qualifier value)"
@@ -384,7 +354,7 @@ Description: "Tumor invasion into seminal vesicles (typically not assessable in 
 * category[section-type] = $loinc#22637-3
 * code = $loinc#44626-0 "Seminal vesicle invasion [Identifier] in Specimen by CAP cancer protocols"
 * subject = Reference(mii-exa-test-data-patho-patient-1)
-* effectiveDateTime = "2023-03-15"
+* effectiveDateTime = "2024-01-20"
 * performer = Reference(mii-exa-test-data-patho-practitioner-1)
 * basedOn = Reference(mii-exa-test-data-patho-request-1)
 * valueCodeableConcept = $sct#47492008 "Not seen (qualifier value)"
@@ -402,7 +372,7 @@ Description: "Lymphatic and vascular invasion in cancer specimen"
 * category[section-type] = $loinc#22637-3
 * code = $loinc#33761-8 "Venous + Lymphatic small vessel invasion in Specimen by CAP cancer protocols"
 * subject = Reference(mii-exa-test-data-patho-patient-1)
-* effectiveDateTime = "2023-03-15"
+* effectiveDateTime = "2024-01-20"
 * performer = Reference(mii-exa-test-data-patho-practitioner-1)
 * basedOn = Reference(mii-exa-test-data-patho-request-1)
 * valueCodeableConcept = $sct#47492008 "Not seen (qualifier value)"
@@ -420,28 +390,10 @@ Description: "Tumor invasion into periprostatic connective and adipose tissue (t
 * category[section-type] = $loinc#22637-3
 * code = $loinc#44625-2 "Periprostatic fat invasion [Identifier] in Specimen by CAP cancer protocols"
 * subject = Reference(mii-exa-test-data-patho-patient-1)
-* effectiveDateTime = "2023-03-15"
+* effectiveDateTime = "2024-01-20"
 * performer = Reference(mii-exa-test-data-patho-practitioner-1)
 * basedOn = Reference(mii-exa-test-data-patho-request-1)
-* valueCodeableConcept = $sct#52101004 "Present (qualifier value)"
-
-// Extraprostatic Extension Location
-Instance: mii-exa-test-data-patho-extraprostatic-extension-location
-InstanceOf: $mii-patho-finding
-Usage: #example
-Title: "Location of Extraprostatic Extension - Biopsy"
-Description: "Anatomical location of extraprostatic tumor extension (typically not assessable in biopsy)"
-* insert TestDataLabel
-* meta.source = "https://www.charite.de/fhir/kds-testdata"
-* status = #final
-* category[laboratory-category] = $observation-category#laboratory
-* category[section-type] = $loinc#22637-3
-* code = $loinc#84902-6 "Extraprostatic extension site [Anatomy] of Prostate tumor"
-* subject = Reference(mii-exa-test-data-patho-patient-1)
-* effectiveDateTime = "2023-03-15"
-* performer = Reference(mii-exa-test-data-patho-practitioner-1)
-* basedOn = Reference(mii-exa-test-data-patho-request-1)
-* valueCodeableConcept = $loinc#LA25151-4 "Apical"
+* valueCodeableConcept = $sct#47492008 "Not seen (qualifier value)"
 
 // Intraductal Carcinoma
 Instance: mii-exa-test-data-patho-intraductal-carcinoma
@@ -456,7 +408,7 @@ Description: "Presence of intraductal carcinoma"
 * category[section-type] = $loinc#22637-3
 * code = $sct#1162814007 "Non-infiltrating intraductal carcinoma (morphologic abnormality)"
 * subject = Reference(mii-exa-test-data-patho-patient-1)
-* effectiveDateTime = "2023-03-15"
+* effectiveDateTime = "2024-01-20"
 * performer = Reference(mii-exa-test-data-patho-practitioner-1)
 * basedOn = Reference(mii-exa-test-data-patho-request-1)
 * valueCodeableConcept = $sct#47492008 "Not seen (qualifier value)"
@@ -474,7 +426,7 @@ Description: "Presence of atypical small acinar proliferation"
 * category[section-type] = $loinc#22637-3
 * code = $sct#16294321000119104 "Atypical small acinar proliferation of prostate (disorder)"
 * subject = Reference(mii-exa-test-data-patho-patient-1)
-* effectiveDateTime = "2023-03-15"
+* effectiveDateTime = "2024-01-20"
 * performer = Reference(mii-exa-test-data-patho-practitioner-1)
 * basedOn = Reference(mii-exa-test-data-patho-request-1)
 * valueCodeableConcept = $sct#373067005 "No (qualifier value)"
@@ -492,7 +444,7 @@ Description: "Presence of high-grade prostatic intraepithelial neoplasia"
 * category[section-type] = $loinc#22637-3
 * code = $loinc#94666-5 "High grade prostatic intraepithelial neoplasia [Presence] in Specimen by Microscopy"
 * subject = Reference(mii-exa-test-data-patho-patient-1)
-* effectiveDateTime = "2023-03-15"
+* effectiveDateTime = "2024-01-20"
 * performer = Reference(mii-exa-test-data-patho-practitioner-1)
 * basedOn = Reference(mii-exa-test-data-patho-request-1)
 * valueCodeableConcept = $sct#47492008 "Not seen (qualifier value)"
@@ -510,7 +462,7 @@ Description: "Presence of granulomatous prostatitis"
 * category[section-type] = $loinc#22637-3
 * code = $loinc#94665-7 "Granulomatous prostatitis [Presence] in Specimen by Microscopy"
 * subject = Reference(mii-exa-test-data-patho-patient-1)
-* effectiveDateTime = "2023-03-15"
+* effectiveDateTime = "2024-01-20"
 * performer = Reference(mii-exa-test-data-patho-practitioner-1)
 * basedOn = Reference(mii-exa-test-data-patho-request-1)
 * valueCodeableConcept = $sct#47492008 "Not seen (qualifier value)"

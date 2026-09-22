@@ -10,7 +10,7 @@ Instance: mii-exa-test-data-patho-composition-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-composition
 Usage: #example
 Title: "Histopathologischer Befundbericht - Prostatabiopsie"
-Description: "Composition für den strukturierten Prostatabiopsie-Befundbericht (12 Stanzen)"
+Description: "Composition für den strukturierten Prostatabiopsie-Befundbericht (2 Stanzen: 01 positiv, 03 benigne)"
 * insert TestDataLabel
 * meta.source = "https://www.charite.de/fhir/kds-testdata"
 * text.status = #extensions
@@ -47,7 +47,7 @@ Description: "Composition für den strukturierten Prostatabiopsie-Befundbericht 
   * title = "Pathologiebefundbericht"
   * code = $loinc#60567-5 "Comprehensive pathology report panel"
   * text.status = #additional
-  * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h3>Klinische Angaben</h3><p>Erhöhter PSA-Wert (12,8 ng/ml). V.a. Prostatakarzinom. Bitte histologische Abklärung. 12-Stanzen-Biopsie beider Prostatalappen.</p><p>Der vollständige strukturierte Befund gliedert sich in die Sektionen Makroskopie, Mikroskopie, Intraoperative Beobachtung, Diagnostische Schlussfolgerung und Zusätzliche Beobachtungen.</p></div>"
+  * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h3>Klinische Angaben</h3><p>Erhöhter PSA-Wert (12,8 ng/ml). V.a. Prostatakarzinom. Bitte histologische Abklärung. Stanzbiopsie der rechten Prostata (2 Stanzen).</p><p>Der vollständige strukturierte Befund gliedert sich in die Sektionen Makroskopie, Mikroskopie, Intraoperative Beobachtung, Diagnostische Schlussfolgerung und Zusätzliche Beobachtungen.</p></div>"
   * entry = Reference(mii-exa-test-data-patho-report-1)
 
 // Sektion: Makroskopie
@@ -55,7 +55,7 @@ Description: "Composition für den strukturierten Prostatabiopsie-Befundbericht 
   * title = "Makroskopie"
   * code = $loinc#22634-0 "Pathology report gross observation"
   * text.status = #additional
-  * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Makroskopische Messungen für alle 12 Prostatastanzen: Längen 1,3–1,9 cm, je 1 Zylinder pro Specimen. Stanzen 01–06 aus rechter Prostataregion (lateral basal/mid/apikal, medial basal/mid/apikal), Stanzen 07–12 aus linker Prostataregion.</p><table><thead><tr><th>Stanze</th><th>Lokalisation</th><th>Stanzenlänge (cm)</th></tr></thead><tbody><tr><td>01</td><td>Rechts lateral basal</td><td>1.8</td></tr><tr><td>02</td><td>Rechts lateral mid</td><td>1.6</td></tr><tr><td>03</td><td>Rechts lateral apikal</td><td>1.5</td></tr><tr><td>04</td><td>Rechts medial basal</td><td>1.9</td></tr><tr><td>05</td><td>Rechts medial mid</td><td>1.4</td></tr><tr><td>06</td><td>Rechts medial apikal</td><td>1.7</td></tr><tr><td>07</td><td>Links lateral basal</td><td>1.6</td></tr><tr><td>08</td><td>Links lateral mid</td><td>1.5</td></tr><tr><td>09</td><td>Links lateral apikal</td><td>1.8</td></tr><tr><td>10</td><td>Links medial basal</td><td>1.3</td></tr><tr><td>11</td><td>Links medial mid</td><td>1.7</td></tr><tr><td>12</td><td>Links medial apikal</td><td>1.4</td></tr></tbody></table></div>"
+  * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Makroskopische Messungen beider Prostatastanzen, je 1 Zylinder pro Specimen.</p><table><thead><tr><th>Stanze</th><th>Lokalisation</th><th>Stanzenlänge (cm)</th></tr></thead><tbody><tr><td>01</td><td>Rechts lateral basal</td><td>1.8</td></tr><tr><td>03</td><td>Rechts lateral apikal</td><td>1.5</td></tr></tbody></table></div>"
   * entry = Reference(mii-exa-test-data-patho-macro-grouper-1)
 
 // Sektion: Mikroskopie
@@ -63,7 +63,7 @@ Description: "Composition für den strukturierten Prostatabiopsie-Befundbericht 
   * title = "Mikroskopie"
   * code = $loinc#22635-7 "Pathology report microscopic observation"
   * text.status = #additional
-  * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Adenokarzinom in 7 von 12 Stanzen nachgewiesen (01, 02, 04, 06, 07, 09, 11). Gleason-Scores: Stanze 01 (3+4=7), Stanze 02 (4+3=7), Stanze 04 (4+4=8), Stanze 06 (3+3=6), Stanze 07 (4+5=9), Stanze 09 (3+4=7), Stanze 11 (3+4=7). Höchster Gleason-Score 4+5=9, ISUP-Gradgruppe 5. Benigne Befunde in Stanzen 03, 05, 08, 10, 12.</p></div>"
+  * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Adenokarzinom in Stanze 01 nachgewiesen: azinäres Adenokarzinom, Gleason-Score 3+4=7, ISUP-Gradgruppe 2, Tumoranteil 40%. Stanze 03 benigne (fibröse und glatte Muskulatur mit vereinzelten benignen Prostatadrüsen, keine Atypien).</p></div>"
   * entry = Reference(mii-exa-test-data-patho-micro-grouper-1)
 
 // Sektion: Intraoperative Beobachtung (Schnellschnitt)
@@ -79,7 +79,7 @@ Description: "Composition für den strukturierten Prostatabiopsie-Befundbericht 
   * title = "Diagnostische Schlussfolgerung"
   * code = $loinc#22637-3 "Pathology report diagnosis"
   * text.status = #additional
-  * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>7 von 12 Stanzen tumorbefallen (4 rechts: 01, 02, 04, 06; 3 links: 07, 09, 11). Prozentualer Tumoranteil 51%, Tumorlänge gesamt 52,7 mm. Perineurale Infiltration und Infiltration des periprostatischen Fettgewebes apikal nachgewiesen. Samenblaseninfiltration, lymphovaskuläre Invasion, intraduktales Karzinom, ASAP, High-grade-PIN und granulomatöse Prostatitis nicht nachgewiesen.</p><p><b>Diagnose:</b> Azinäres Adenokarzinom der Prostata (ICD-O 8140/3), Gleason-Score 4+5=9 (höchster Score), ISUP-Gradgruppe 5.</p></div>"
+  * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>1 von 2 Stanzen tumorbefallen (Stanze 01, rechts lateral basal). Prozentualer Tumoranteil 40%, Tumorlänge gesamt 7,2 mm. Perineurale Infiltration nachgewiesen. Infiltration des periprostatischen Fettgewebes, Samenblaseninfiltration, lymphovaskuläre Invasion, intraduktales Karzinom, ASAP, High-grade-PIN und granulomatöse Prostatitis nicht nachgewiesen.</p><p><b>Diagnose:</b> Azinäres Adenokarzinom der Prostata (ICD-O 8140/3), Gleason-Score 3+4=7, ISUP-Gradgruppe 2.</p></div>"
   * entry = Reference(mii-exa-test-data-patho-conclusion-grouper-1)
 
 // Sektion: Zusätzliche Beobachtungen

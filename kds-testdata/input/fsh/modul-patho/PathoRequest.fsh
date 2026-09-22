@@ -2,8 +2,8 @@
 Instance: mii-exa-test-data-patho-request-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-service-request
 Usage: #example
-Title: "Standardbiopsie Prostata Anforderung"
-Description: "Anforderung für 12-Stanzen Prostatabiopsie"
+Title: "Prostatabiopsie Anforderung (2 Stanzen)"
+Description: "Anforderung für die 2-Stanzen-Prostatabiopsie (Testdaten-Szenario)"
 * insert TestDataLabel
 * meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #completed
@@ -22,17 +22,7 @@ Description: "Anforderung für 12-Stanzen Prostatabiopsie"
 * performer = Reference(mii-exa-test-data-patho-practitioner-1)
 * reasonCode = $sct#396152005 "Prostate specific antigen above reference range"
 * specimen[+] = Reference(mii-exa-test-data-patho-specimen-01-part)
-* specimen[+] = Reference(mii-exa-test-data-patho-specimen-02-part)
 * specimen[+] = Reference(mii-exa-test-data-patho-specimen-03-part)
-* specimen[+] = Reference(mii-exa-test-data-patho-specimen-04-part)
-* specimen[+] = Reference(mii-exa-test-data-patho-specimen-05-part)
-* specimen[+] = Reference(mii-exa-test-data-patho-specimen-06-part)
-* specimen[+] = Reference(mii-exa-test-data-patho-specimen-07-part)
-* specimen[+] = Reference(mii-exa-test-data-patho-specimen-08-part)
-* specimen[+] = Reference(mii-exa-test-data-patho-specimen-09-part)
-* specimen[+] = Reference(mii-exa-test-data-patho-specimen-10-part)
-* specimen[+] = Reference(mii-exa-test-data-patho-specimen-11-part)
-* specimen[+] = Reference(mii-exa-test-data-patho-specimen-12-part)
 * supportingInfo[observations][+] = Reference(mii-exa-test-data-patho-psa-1)
 * supportingInfo[codedCondition][+] = Reference(mii-exa-test-data-patho-diagnose-verdacht-1)
 * supportingInfo[anamnesis][+] = Reference(mii-exa-test-data-patient-1-patho-hopi-1)
