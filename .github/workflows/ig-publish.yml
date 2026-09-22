@@ -89,11 +89,46 @@ jobs:
         curl -fsSL -o publisher.jar \
           "https://github.com/HL7/fhir-ig-publisher/releases/download/${PUBLISHER_VERSION}/publisher.jar"
 
+    - name: Start SU-TermServ proxy (falls Zertifikat vorhanden)
+      id: tx
+      env:
+        CDS_DEV_CLIENT_CERT: ${{ secrets.CDS_DEV_CLIENT_CERT }}
+        CDS_DEV_CLIENT_KEY: ${{ secrets.CDS_DEV_CLIENT_KEY }}
+        CDS_DEV_CLIENT_CERT_PASSWORD: ${{ secrets.CDS_DEV_CLIENT_CERT_PASSWORD }}
+      # Template-Muster (kerndatensatz-lungenfunktion/ig-publisher.yml):
+      # SU-TermServ wenn moeglich, sonst oeffentlicher HL7-Server —
+      # MII-ValueSets expandieren dann ggf. unvollstaendig (QA-Hinweis, kein Fehler).
+      run: |
+        if [ -z "$CDS_DEV_CLIENT_CERT" ]; then
+          echo "tx=https://tx.fhir.org" >> "$GITHUB_OUTPUT"
+          echo "::notice::Kein SU-TermServ-Zertifikat — Fallback auf https://tx.fhir.org."
+          exit 0
+        fi
+        mkdir -p nginx/certs
+        echo "$CDS_DEV_CLIENT_CERT" | base64 -d > nginx/certs/client-cert.pem
+        echo "$CDS_DEV_CLIENT_KEY" | base64 -d > nginx/certs/client-key-encrypted.key
+        openssl rsa -in nginx/certs/client-key-encrypted.key \
+          -out nginx/certs/client-key.key -passin env:CDS_DEV_CLIENT_CERT_PASSWORD
+        docker run -d --name nginx-proxy \
+          -v "$PWD/.github/workflows/su-termserv-nginx.conf:/etc/nginx/nginx.conf:ro" \
+          -v "$PWD/nginx/certs:/etc/nginx/certs:ro" \
+          -p 8090:80 nginx:alpine
+        sleep 5
+        curl -fsS -o /dev/null "http://127.0.0.1:8090/fhir/metadata" \
+          && echo "tx=http://127.0.0.1:8090/fhir" >> "$GITHUB_OUTPUT" \
+          || { echo "::warning::SU-TermServ-Proxy nicht erreichbar — Fallback tx.fhir.org"; echo "tx=https://tx.fhir.org" >> "$GITHUB_OUTPUT"; }
+
     - name: Build IG
       working-directory: ./kds-testdata
+      env:
+        TX: ${{ steps.tx.outputs.tx }}
       run: |
         java -Xmx6g -Dfile.encoding=UTF-8 -jar ../publisher.jar \
-          -ig . -tx n/a -packages ../local-packages
+          -ig . -tx "$TX" -packages ../local-packages
+
+    - name: Stop SU-TermServ proxy
+      if: always()
+      run: docker rm -f nginx-proxy 2>/dev/null || true
 
     - name: Summarize QA
       if: always()
