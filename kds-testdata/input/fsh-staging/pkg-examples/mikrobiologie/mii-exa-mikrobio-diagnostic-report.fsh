@@ -1,10 +1,10 @@
 Instance: mii-exa-mikrobio-diagnostic-report
 InstanceOf: MII_PR_Mikrobio_Diagnostic_Report
 Usage: #example
-* identifier[analyseBefundCode].type = http://terminology.hl7.org/CodeSystem/v2-0203#FILL "Filler Identifier"
-* identifier[analyseBefundCode].system = "https://example.org/fhir/sid/test-befund"
-* identifier[analyseBefundCode].value = "mikrobio-dr-1"
-* identifier[analyseBefundCode].assigner = Reference(mii-exa-mikrobio-labor)
+* identifier[befund].type = http://terminology.hl7.org/CodeSystem/v2-0203#FILL "Filler Identifier"
+* identifier[befund].system = "https://example.org/fhir/sid/test-befund"
+* identifier[befund].value = "mikrobio-dr-1"
+* identifier[befund].assigner = Reference(mii-exa-mikrobio-labor)
 * category[0].coding[0] = http://terminology.hl7.org/CodeSystem/v2-0074#LAB "Laboratory"
 * category[=].coding[+] = http://loinc.org#26436-6 "Laboratory studies (set)"
 * category[=].coding[=].version = "2.82"

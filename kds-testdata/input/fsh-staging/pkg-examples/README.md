@@ -72,5 +72,7 @@ Der Mikrobiologie-Block (114 Fehler über `identifier:analyseBefundCode`) war
 **kein Modulfehler**, sondern ein Artefakt der GoFSH-Konvertierung: GoFSH
 vergibt keine Slice-Namen, SUSHI matcht Slices nicht per Diskriminator. Die
 Original-JSON-Examples erfüllen den Slice. Fix: Slice-Namen in den FSH-Dateien
-ergänzt (`identifier[analyseBefundCode].…`) — Rest-Fehlerstand Mikrobiologie
-bei Probe-Integration: 21 (statt 114+).
+ergänzt (`identifier[analyseBefundCode].…`) — Gleiches gilt für den DiagnosticReport-Slice `identifier[befund]`.
+Rest-Fehlerstand Mikrobiologie bei Probe-Integration: **6 echte Lücken**
+(2× `Observation.interpretation.extension:Norm.value[x]`,
+2× `Specimen.type.coding(.sct).code`-Paare) — statt 114+ vor der Korrektur.
