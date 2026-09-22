@@ -18,6 +18,18 @@ Description: "Bundle: Seltene Erkrankungen Testdaten Patient-3"
 * insert AddBundleEntry(mii-exa-test-data-patient-3-seltene-hueftumfang-1, Observation)
 * insert AddBundleEntry(mii-exa-test-data-patient-3-seltene-taillenumfang-1, Observation)
 * insert AddBundleEntry(mii-exa-test-data-patient-3-seltene-blutgruppe-1, Observation)
+// Perinataldaten + Consanguinity (Profilluecken-Abdeckung, Paket-Beispiele adaptiert)
+* insert AddBundleEntry(mii-exa-test-data-patient-3-seltene-geburtsgewicht-1, Observation)
+* insert AddBundleEntry(mii-exa-test-data-patient-3-seltene-geburtslaenge-1, Observation)
+* insert AddBundleEntry(mii-exa-test-data-patient-3-seltene-gestationsalter-1, Observation)
+* insert AddBundleEntry(mii-exa-test-data-patient-3-seltene-consanguinity-1, Observation)
+// ICF-Assessment
+* insert AddBundleEntry(mii-exa-test-data-patient-3-seltene-icf-assessment-1, Observation)
+// Registerteilnahme
+* insert AddBundleEntry(mii-exa-test-data-patient-3-seltene-registerteilnahme-1, ResearchSubject)
+* insert AddBundleEntry(mii-exa-test-data-seltene-register-katalog-1, Library)
+* insert AddBundleEntry(mii-exa-test-data-seltene-register-study-1, ResearchStudy)
+* insert AddBundleEntry(mii-exa-test-data-seltene-register-consent-1, Consent)
 // HPO Assessments
 * insert AddBundleEntry(mii-exa-test-data-patient-3-seltene-hpo-assessment-1, Observation)
 * insert AddBundleEntry(mii-exa-test-data-patient-3-seltene-hpo-assessment-2, Observation)

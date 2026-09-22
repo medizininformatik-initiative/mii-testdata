@@ -102,3 +102,20 @@ Alias: $kardio-cs-modifizierte-rankin-skala = https://www.medizininformatik-init
 
 // SNOMED CT mit Versions-Pin der 2027er-Ballot-Profile (Kardiologie/Lungenfunktion)
 Alias: $sct20260701 = http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701
+
+// Biobank Zelllinien/Organoide (OBO-Ontologien + MIABIS, aus den Modul-Beispielen)
+Alias: $pato = http://purl.obolibrary.org/obo/pato.owl
+Alias: $go-obo = http://purl.obolibrary.org/obo/go.owl
+Alias: $clo = http://purl.obolibrary.org/obo/clo.owl
+Alias: $miabis-sample-type = https://fhir.bbmri-eric.eu/CodeSystem/miabis-detailed-samply-type-cs
+Alias: $genenames = http://www.genenames.org
+
+// Seltene Erkrankungen ICF-Assessment
+Alias: $icf = http://hl7.org/fhir/sid/icf
+Alias: $icf-beurteilungsmerkmal = https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/CodeSystem/mii-cs-seltene-icf-beurteilungsmerkmal
+Alias: $icf-q-ausmass = https://terminologien.bfarm.de/fhir/CodeSystem/icf-q-ausmass-der-schaedigung
+
+// Studien
+Alias: $title-type = http://terminology.hl7.org/CodeSystem/title-type
+Alias: $consentcategorycodes = http://terminology.hl7.org/CodeSystem/consentcategorycodes
+Alias: $consentpolicycodes = http://terminology.hl7.org/CodeSystem/consentpolicycodes

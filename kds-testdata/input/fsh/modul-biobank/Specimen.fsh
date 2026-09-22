@@ -519,3 +519,60 @@ Description: "Specimen: Serum für Klinische Chemie"
 * container.capacity.unit = "mL"
 * container.specimenQuantity = 7 'ml'
 * container.specimenQuantity.unit = "mL"
+
+// ============================================================================
+// Zelllinie/Organoid und SpecimenCore
+// Adaptiert aus den Beispielen des Pakets
+// de.medizininformatikinitiative.kerndatensatz.biobank 2027.0.0-ballot
+// (Specimen-OrganoidLunge -> Kolon-Organoid passend zur Kolonkarzinom-Diagnose
+//  von Biobank-Patient 3; DNA-Probe als SpecimenCore-Instanz)
+// ============================================================================
+
+// --- Kolon-Organoid, abgeleitet aus der Gewebeprobe von Patient-3 ---
+Instance: mii-exa-test-data-biobank-organoid-1
+InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/mii-pr-biobank-zellinie-organoid
+Usage: #example
+Description: "Specimen: Kolon-Tumor-Organoid, abgeleitet aus der Gewebeprobe von Biobank-Patient 3"
+* insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
+* extension[kulturprotokoll].valueReference = Reference(mii-exa-test-data-biobank-kulturprotokoll-1)
+* extension[modifikationen].extension[artDerModifikation].valueCodeableConcept = $clo#CLO:0037375 "derives from cell with knockout gene"
+* extension[modifikationen].extension[zielGen].valueCoding = $genenames#TP53 "tumor protein p53"
+* extension[modifikationen].extension[protokoll].valueReference = Reference(mii-exa-test-data-biobank-crispr-protokoll-1)
+* extension[anzahlPassagen].valueInteger = 3
+* identifier.system = "https://www.charite.de/fhir/sid/Bioproben"
+* identifier.value = "BP_000020"
+* status = #available
+* type.coding[sct] = $sct#123038009 "Specimen (specimen)"
+* type.coding[+] = $miabis-sample-type#Organoid "Organoids"
+* subject = Reference(mii-exa-test-data-biobank-patient-3)
+* parent = Reference(mii-exa-test-data-patient-3-specimen-1)
+* collection.collectedDateTime = "2022-03-24T12:44:00+01:00"
+* processing[0].extension[0].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Temperaturbedingungen"
+* processing[0].extension[0].valueRange.low = 37 'Cel' "°C"
+* processing[0].extension[0].valueRange.high = 37 'Cel' "°C"
+* processing[0].procedure = $sct#1186936003 "Storage of specimen (procedure)"
+* processing[0].timePeriod.start = "2022-04-01T10:00:00+02:00"
+* processing[0].timePeriod.end = "2022-04-12T10:00:00+02:00"
+* container.type = $sct#83059008 "Tube, device (physical object)"
+* container.specimenQuantity = 1 'ml'
+* container.specimenQuantity.unit = "mL"
+
+// --- DNA-Probe als SpecimenCore-Instanz (bewusst gegen das Core-Profil,
+//     Doppel-Abdeckung zu den Specimen-Instanzen gegen das Vollprofil) ---
+Instance: mii-exa-test-data-biobank-specimen-dna-1
+InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore
+Usage: #example
+Description: "Specimen (Core): DNA-Probe, extrahiert aus dem EDTA-Blut von Biobank-Patient 1"
+* insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
+* identifier.system = "https://www.charite.de/fhir/sid/Bioproben"
+* identifier.value = "BP_000021"
+* status = #available
+* type.coding[sct] = $sct#258566005 "Deoxyribonucleic acid specimen (specimen)"
+* subject = Reference(mii-exa-test-data-biobank-patient-1)
+* parent = Reference(mii-exa-test-data-patient-1-specimen-1)
+* collection.collectedDateTime = "2024-02-15T11:05:00+01:00"
+* container.type = $sct#83059008 "Tube, device (physical object)"
+* container.specimenQuantity = 0.2 'ml'
+* container.specimenQuantity.unit = "mL"
