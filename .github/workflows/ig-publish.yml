@@ -1,0 +1,120 @@
+# IG Publish — baut den Testdaten-IG (IG Publisher) und deployt ihn nach
+# GitHub Pages. Bewusst schlanker als das ig-publisher.yml des
+# mii-kds-module-template (keine Branch-Previews, kein vendored ig-template,
+# kein go-publish — Testdaten sind kein formal publizierter IG).
+#
+# Besonderheiten:
+# - Die BOM de.medizininformatikinitiative.kerndatensatz.complete ist in keiner
+#   Registry publiziert. Der IG Publisher prueft Cache-Pakete gegen die
+#   Registries und RAEUMT nicht verifizierbare Eintraege WEG. Deshalb wird das
+#   tgz aus dem fhir-package-store per `-packages <dir>` direkt geladen
+#   (laedt *.tgz vor der Dependency-Aufloesung).
+# - Terminologie: -tx n/a (deterministisch, kein Secret noetig). QA-Werte sind
+#   entsprechend ohne Terminologie-Verdicts zu lesen; die massgebliche
+#   Validierung laeuft in ci.yml (JAVA_FHIR_VALIDATION gegen SU-TermServ).
+#
+# Deployment: Push des Publisher-Outputs auf den gh-pages-Branch
+# (Pages-Source: branch gh-pages, wie bei den KDS-Modul-Repos).
+name: IG Publish
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ["kds-testdata/**"]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ig-publish
+  cancel-in-progress: false
+
+env:
+  SUSHI_VERSION: 3.20.1
+  PUBLISHER_VERSION: 2.3.4
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout Project
+      uses: actions/checkout@v4
+
+    - name: Download FHIR cache (inkl. complete-BOM tgz)
+      uses: actions/checkout@v4
+      with:
+        repository: medizininformatik-initiative/fhir-package-store
+        ref: cache-store
+        path: .fhir
+
+    - name: Link .fhir cache to ~/.fhir
+      run: |
+        mkdir -p ~/.fhir
+        cp -r .fhir/* ~/.fhir/
+
+    - name: Stage unpublished packages for -packages
+      # cache-store entpackt die Tarballs nach packages/; fuer -packages brauchen
+      # wir die tgz-Datei selbst — sie liegt im main-Branch des Store-Repos.
+      run: |
+        mkdir -p local-packages
+        pkg="de.medizininformatikinitiative.kerndatensatz.complete"
+        ver="$(yq eval '.dependencies["'$pkg'"].version' kds-testdata/sushi-config.yaml)"
+        curl -fsSL -o "local-packages/${pkg}-${ver}.tgz" \
+          "https://raw.githubusercontent.com/medizininformatik-initiative/fhir-package-store/main/package-tarballs/${pkg}-${ver}.tgz"
+        tar -tzf "local-packages/${pkg}-${ver}.tgz" >/dev/null
+
+    - name: Install yq
+      run: |
+        wget -qO /usr/local/bin/yq https://github.com/mikefarah/yq/releases/download/v4.44.3/yq_linux_amd64
+        chmod +x /usr/local/bin/yq
+
+    - name: Install sushi
+      run: npm install -g fsh-sushi@${SUSHI_VERSION}
+
+    - uses: actions/setup-java@v4
+      with:
+        distribution: temurin
+        java-version: "17"
+
+    - uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: "3.3"
+
+    - name: Install jekyll
+      run: gem install jekyll --no-document
+
+    - name: Download IG Publisher
+      run: |
+        curl -fsSL -o publisher.jar \
+          "https://github.com/HL7/fhir-ig-publisher/releases/download/${PUBLISHER_VERSION}/publisher.jar"
+
+    - name: Build IG
+      working-directory: ./kds-testdata
+      run: |
+        java -Xmx6g -Dfile.encoding=UTF-8 -jar ../publisher.jar \
+          -ig . -tx n/a -packages ../local-packages
+
+    - name: Summarize QA
+      if: always()
+      run: |
+        if [ -f kds-testdata/output/qa.json ]; then
+          jq -r '"QA: \(.errs) errors, \(.warnings) warnings, \(.hints) hints"' \
+            kds-testdata/output/qa.json >> "$GITHUB_STEP_SUMMARY" || true
+        fi
+
+    - name: Deploy to gh-pages
+      run: |
+        set -euo pipefail
+        cd kds-testdata/output
+        touch .nojekyll
+        git init -q -b gh-pages
+        git add -A
+        git -c user.email=github-actions[bot]@users.noreply.github.com \
+            -c user.name=github-actions[bot] \
+            commit -qm "IG build ${GITHUB_SHA::8}"
+        git push -q --force \
+          "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" \
+          gh-pages:gh-pages
+      env:
+        GITHUB_TOKEN: ${{ github.token }}

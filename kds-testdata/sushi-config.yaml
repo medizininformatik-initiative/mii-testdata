@@ -38,9 +38,11 @@ dependencies:
     version: 2027.0.0-ballot.19
     uri: https://www.medizininformatik-initiative.de/fhir/core/complete/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.complete
   # Extras, die die BOM nicht (oder nur transitiv) liefert:
-  hl7.fhir.uv.sdc: 4.0.0 # pros 2027.0.0-ballot.1 und isik 6.0.0 fordern 4.0.0
+  # - sdc 4.0.0: pros 2027.0.0-ballot.1 und isik 6.0.0 fordern 4.0.0
+  # - einwilligungsmanagement 2.0.4: kommt sonst nur transitiv via consent 2027.0.0-ballot
+  hl7.fhir.uv.sdc: 4.0.0
   hl7.fhir.extensions.r5: 4.0.1
-  de.einwilligungsmanagement: 2.0.4 # kommt sonst nur transitiv via consent 2027.0.0-ballot
+  de.einwilligungsmanagement: 2.0.4
 #   hl7.fhir.us.mcode:
 #     id: mcode
 #     uri: http://hl7.org/fhir/us/mcode/ImplementationGuide/hl7.fhir.us.mcode
