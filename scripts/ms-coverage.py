@@ -102,8 +102,9 @@ def main():
     by_prof = collections.defaultdict(list)
     for fp in glob.glob("fsh-generated/resources/*.json"):
         r = json.load(open(fp))
-        if r.get("resourceType") == "Bundle":
-            continue
+        # Bundles zaehlen mit: Profile wie mii-pr-patho-bundle werden von
+        # Dokument-Bundle-Instanzen beansprucht. Die Transaction-Container
+        # (ohne meta.profile) fallen ohnehin heraus.
         for p in r.get("meta", {}).get("profile", []):
             by_prof[p.split("|")[0]].append(r)
 

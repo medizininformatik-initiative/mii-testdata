@@ -1,0 +1,5102 @@
+{
+  "resourceType": "Bundle",
+  "id": "mii-exa-test-data-patho-befund-bundle-1",
+  "meta": {
+    "security": [
+      {
+        "code": "HTEST",
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "display": "test health data"
+      }
+    ],
+    "source": "https://www.charite.de/fhir/kds-testdata",
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-bundle"
+    ]
+  },
+  "identifier": {
+    "system": "https://www.charite.de/fhir/sid/patho/befundbericht",
+    "value": "E_24_001-DOC"
+  },
+  "signature": {
+    "type": [
+      {
+        "code": "1.2.840.10065.1.12.1.1",
+        "system": "urn:iso-astm:E1762-95:2013",
+        "display": "Author's Signature"
+      }
+    ],
+    "when": "2024-01-20T15:30:00+01:00",
+    "who": {
+      "reference": "Organization/mii-exa-test-data-patho-organization-1"
+    }
+  },
+  "entry": [
+    {
+      "resource": {
+        "status": "final",
+        "text": {
+          "status": "extensions",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div id=\"befund-titel\"><b>Histopathologischer Befundbericht - Prostatabiopsie</b></div><table><tr id=\"befund-eingangsnummer\"><td>Eingangsnummer</td><td>E_24_001</td></tr><tr id=\"befund-status\"><td>Status</td><td>final</td></tr><tr id=\"befund-patient\"><td>Patient</td><td>Klaus Gewebeprobe (PATH-TEST-001)</td></tr><tr id=\"befund-datum\"><td>Datum</td><td>2024-01-20</td></tr></table></div>"
+        },
+        "resourceType": "Composition",
+        "id": "mii-exa-test-data-patho-composition-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-composition"
+          ]
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/composition-clinicaldocument-versionNumber",
+            "valueString": "1"
+          }
+        ],
+        "identifier": {
+          "type": {
+            "coding": [
+              {
+                "code": "ACSN",
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                "display": "Accession ID"
+              }
+            ]
+          },
+          "system": "https://www.charite.de/fhir/sid/patho/befundbericht",
+          "value": "E_24_001"
+        },
+        "type": {
+          "coding": [
+            {
+              "code": "11526-1",
+              "system": "http://loinc.org",
+              "display": "Pathology study"
+            },
+            {
+              "code": "PATH",
+              "system": "http://ihe-d.de/CodeSystems/IHEXDStypeCode"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "721967005",
+              "display": "Tissue pathology biopsy report"
+            }
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "BEF",
+                "system": "http://ihe-d.de/CodeSystems/IHEXDSclassCode"
+              }
+            ]
+          }
+        ],
+        "author": [
+          {
+            "reference": "Organization/mii-exa-test-data-patho-organization-1",
+            "display": "Institut für Pathologie"
+          }
+        ],
+        "attester": [
+          {
+            "mode": "legal",
+            "party": {
+              "reference": "Organization/mii-exa-test-data-patho-organization-1"
+            }
+          },
+          {
+            "mode": "professional",
+            "party": {
+              "reference": "Practitioner/mii-exa-test-data-patho-practitioner-1"
+            }
+          }
+        ],
+        "event": [
+          {
+            "period": {
+              "start": "2024-01-15",
+              "end": "2024-01-20"
+            },
+            "detail": [
+              {
+                "reference": "ServiceRequest/mii-exa-test-data-patho-request-1"
+              }
+            ]
+          }
+        ],
+        "section": [
+          {
+            "text": {
+              "status": "additional",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h3>Klinische Angaben</h3><p>Erhöhter PSA-Wert (12,8 ng/ml). V.a. Prostatakarzinom. Bitte histologische Abklärung. Stanzbiopsie der rechten Prostata (2 Stanzen).</p><p>Der vollständige strukturierte Befund gliedert sich in die Sektionen Makroskopie, Mikroskopie, Intraoperative Beobachtung, Diagnostische Schlussfolgerung und Zusätzliche Beobachtungen.</p></div>"
+            },
+            "entry": [
+              {
+                "reference": "DiagnosticReport/mii-exa-test-data-patho-report-1"
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "60567-5",
+                  "display": "Comprehensive pathology report panel"
+                }
+              ]
+            },
+            "title": "Pathologiebefundbericht"
+          },
+          {
+            "text": {
+              "status": "additional",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Makroskopische Messungen beider Prostatastanzen, je 1 Zylinder pro Specimen.</p><table><thead><tr><th>Stanze</th><th>Lokalisation</th><th>Stanzenlänge (cm)</th></tr></thead><tbody><tr><td>01</td><td>Rechts lateral basal</td><td>1.8</td></tr><tr><td>03</td><td>Rechts lateral apikal</td><td>1.5</td></tr></tbody></table></div>"
+            },
+            "entry": [
+              {
+                "reference": "Observation/mii-exa-test-data-patho-macro-grouper-1"
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "22634-0",
+                  "display": "Pathology report gross observation"
+                }
+              ]
+            },
+            "title": "Makroskopie"
+          },
+          {
+            "text": {
+              "status": "additional",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Adenokarzinom in Stanze 01 nachgewiesen: azinäres Adenokarzinom, Gleason-Score 3+4=7, ISUP-Gradgruppe 2, Tumoranteil 40%. Stanze 03 benigne (fibröse und glatte Muskulatur mit vereinzelten benignen Prostatadrüsen, keine Atypien).</p></div>"
+            },
+            "entry": [
+              {
+                "reference": "Observation/mii-exa-test-data-patho-micro-grouper-1"
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "22635-7",
+                  "display": "Pathology report microscopic observation"
+                }
+              ]
+            },
+            "title": "Mikroskopie"
+          },
+          {
+            "text": {
+              "status": "additional",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Schnellschnitt Stanze 01: Nachweis eines azinären Adenokarzinoms; endgültige Gradierung am Paraffinmaterial.</p></div>"
+            },
+            "entry": [
+              {
+                "reference": "Observation/mii-exa-test-data-patho-intraop-grouper-1"
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "83321-0",
+                  "display": "Pathology report intraoperative observation in Specimen Document"
+                }
+              ]
+            },
+            "title": "Intraoperative Beobachtung"
+          },
+          {
+            "text": {
+              "status": "additional",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>1 von 2 Stanzen tumorbefallen (Stanze 01, rechts lateral basal). Prozentualer Tumoranteil 40%, Tumorlänge gesamt 7,2 mm. Perineurale Infiltration nachgewiesen. Infiltration des periprostatischen Fettgewebes, Samenblaseninfiltration, lymphovaskuläre Invasion, intraduktales Karzinom, ASAP, High-grade-PIN und granulomatöse Prostatitis nicht nachgewiesen.</p><p><b>Diagnose:</b> Azinäres Adenokarzinom der Prostata (ICD-O 8140/3), Gleason-Score 3+4=7, ISUP-Gradgruppe 2.</p></div>"
+            },
+            "entry": [
+              {
+                "reference": "Observation/mii-exa-test-data-patho-conclusion-grouper-1"
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "22637-3",
+                  "display": "Pathology report diagnosis"
+                }
+              ]
+            },
+            "title": "Diagnostische Schlussfolgerung"
+          },
+          {
+            "text": {
+              "status": "additional",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Immunhistochemie: Die Tumorzellen sind negativ für p63.</p></div>"
+            },
+            "entry": [
+              {
+                "reference": "Observation/mii-exa-test-data-patho-zusatz-grouper-1"
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "100969-5",
+                  "display": "Pathology report additional specified observation in Specimen Narrative"
+                }
+              ]
+            },
+            "title": "Zusätzliche Beobachtungen"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patho-patient-1"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-patho-encounter-1"
+        },
+        "date": "2024-01-20T15:30:00+01:00",
+        "title": "Histopathologischer Befundbericht - Prostatabiopsie",
+        "custodian": {
+          "reference": "Organization/mii-exa-test-data-patho-organization-1"
+        }
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Composition/mii-exa-test-data-patho-composition-1"
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/Patient/mii-exa-test-data-patho-patient-1",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "mii-exa-test-data-patho-patient-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata"
+        },
+        "identifier": [
+          {
+            "system": "https://www.charite.de/fhir/sid/patientenidentifikation",
+            "value": "PATH-TEST-001"
+          }
+        ],
+        "name": [
+          {
+            "given": [
+              "Klaus"
+            ],
+            "family": "Gewebeprobe"
+          }
+        ],
+        "birthDate": "1963-06-30",
+        "gender": "male"
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/Encounter/mii-exa-test-data-patho-encounter-1",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "mii-exa-test-data-patho-encounter-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata"
+        },
+        "period": {
+          "start": "2024-01-10",
+          "end": "2024-02-20"
+        },
+        "status": "finished",
+        "class": {
+          "code": "IMP",
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "display": "inpatient encounter"
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patho-patient-1"
+        }
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/ServiceRequest/mii-exa-test-data-patho-request-1",
+      "resource": {
+        "resourceType": "ServiceRequest",
+        "id": "mii-exa-test-data-patho-request-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-service-request"
+          ]
+        },
+        "identifier": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "code": "PLAC",
+                  "display": "Placer Identifier"
+                }
+              ]
+            },
+            "system": "https://www.charite.de/fhir/sid/patho/untersuchungsauftrag",
+            "value": "PATH-RPT-2024-001"
+          },
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "code": "FILL"
+                }
+              ]
+            },
+            "system": "https://www.charite.de/fhir/sid/patho/befundbericht",
+            "value": "E_24_001"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "726007",
+                "display": "Pathology consultation, comprehensive, records and specimen with report"
+              }
+            ]
+          }
+        ],
+        "performer": [
+          {
+            "reference": "Practitioner/mii-exa-test-data-patho-practitioner-1"
+          }
+        ],
+        "reasonCode": [
+          {
+            "coding": [
+              {
+                "code": "396152005",
+                "system": "http://snomed.info/sct",
+                "display": "Prostate specific antigen above reference range"
+              }
+            ]
+          }
+        ],
+        "specimen": [
+          {
+            "reference": "Specimen/mii-exa-test-data-patho-specimen-01-part"
+          },
+          {
+            "reference": "Specimen/mii-exa-test-data-patho-specimen-03-part"
+          }
+        ],
+        "supportingInfo": [
+          {
+            "reference": "Observation/mii-exa-test-data-patho-psa-1"
+          },
+          {
+            "reference": "Condition/mii-exa-test-data-patho-diagnose-verdacht-1"
+          },
+          {
+            "reference": "List/mii-exa-test-data-patient-1-patho-hopi-1"
+          },
+          {
+            "reference": "List/mii-exa-test-data-patient-1-patho-active-problems-1"
+          }
+        ],
+        "intent": "order",
+        "status": "completed",
+        "code": {
+          "coding": [
+            {
+              "code": "66117-3",
+              "system": "http://loinc.org",
+              "display": "Prostate Pathology biopsy report"
+            }
+          ]
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-patho-encounter-1"
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patho-patient-1"
+        },
+        "requester": {
+          "reference": "Practitioner/mii-exa-test-data-patho-practitioner-2"
+        }
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/Specimen/mii-exa-test-data-patho-specimen-01-block",
+      "resource": {
+        "resourceType": "Specimen",
+        "id": "mii-exa-test-data-patho-specimen-01-block",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen",
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore"
+          ],
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata"
+        },
+        "identifier": [
+          {
+            "system": "https://www.charite.de/fhir/sid/patho/befundbericht",
+            "value": "E_24_001_A_1"
+          }
+        ],
+        "accessionIdentifier": {
+          "system": "https://www.charite.de/fhir/sid/patho/befundbericht",
+          "value": "E_24_001"
+        },
+        "parent": [
+          {
+            "reference": "Specimen/mii-exa-test-data-patho-specimen-01-part"
+          }
+        ],
+        "collection": {
+          "collectedDateTime": "2024-01-16T10:30:00+01:00",
+          "method": {
+            "coding": [
+              {
+                "code": "787377000",
+                "system": "http://snomed.info/sct",
+                "display": "Gross examination and sampling of tissue specimen"
+              }
+            ]
+          }
+        },
+        "processing": [
+          {
+            "extension": [
+              {
+                "valueRange": {
+                  "low": {
+                    "unit": "°C",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "Cel",
+                    "value": 2
+                  },
+                  "high": {
+                    "unit": "°C",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "Cel",
+                    "value": 8
+                  }
+                },
+                "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Temperaturbedingungen"
+              }
+            ],
+            "procedure": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "787376009",
+                  "display": "Preparation of formalin fixed paraffin embedded tissue specimen"
+                }
+              ]
+            },
+            "description": "Zuschnitt und Paraffineinbettung",
+            "timeDateTime": "2024-01-16T08:00:00+01:00"
+          }
+        ],
+        "container": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "code": "706053007",
+                  "system": "http://snomed.info/sct",
+                  "display": "General specimen container (physical object)"
+                }
+              ]
+            },
+            "additiveCodeableConcept": {
+              "coding": [
+                {
+                  "code": "311731000",
+                  "system": "http://snomed.info/sct",
+                  "display": "Paraffin wax (substance)"
+                }
+              ]
+            }
+          }
+        ],
+        "type": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "706053007",
+              "display": "General specimen container (physical object)"
+            }
+          ]
+        },
+        "status": "available",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patho-patient-1"
+        }
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/Specimen/mii-exa-test-data-patho-specimen-01-part",
+      "resource": {
+        "resourceType": "Specimen",
+        "id": "mii-exa-test-data-patho-specimen-01-part",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen",
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore"
+          ],
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata"
+        },
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "type",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "code": "716902004",
+                      "system": "http://snomed.info/sct",
+                      "display": "Right basal peripheral zone of prostate"
+                    }
+                  ]
+                }
+              },
+              {
+                "url": "description",
+                "valueString": "Markiert mit roter Tinte"
+              }
+            ],
+            "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-Specimen.feature"
+          }
+        ],
+        "identifier": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "code": "PLAC",
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203"
+                }
+              ]
+            },
+            "system": "https://www.charite.de/fhir/sid/patho/untersuchungsauftrag",
+            "value": "BX24_001_01_A"
+          },
+          {
+            "type": {
+              "coding": [
+                {
+                  "code": "FILL",
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203"
+                }
+              ]
+            },
+            "system": "https://www.charite.de/fhir/sid/patho/befundbericht",
+            "value": "E_24_001_A"
+          }
+        ],
+        "accessionIdentifier": {
+          "system": "https://www.charite.de/fhir/sid/patho/befundbericht",
+          "value": "E_24_001"
+        },
+        "request": [
+          {
+            "reference": "ServiceRequest/mii-exa-test-data-patho-request-1"
+          }
+        ],
+        "collection": {
+          "collector": {
+            "reference": "Practitioner/mii-exa-test-data-patho-practitioner-2"
+          },
+          "collectedDateTime": "2024-01-15T10:30:00+01:00",
+          "method": {
+            "coding": [
+              {
+                "code": "301759007",
+                "system": "http://snomed.info/sct",
+                "display": "Tru-cut biopsy of prostate (procedure)"
+              }
+            ]
+          },
+          "bodySite": {
+            "coding": [
+              {
+                "code": "716902004",
+                "system": "http://snomed.info/sct",
+                "display": "Right basal peripheral zone of prostate"
+              }
+            ]
+          }
+        },
+        "container": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "code": "434746001",
+                  "system": "http://snomed.info/sct",
+                  "display": "Specimen vial (physical object)"
+                }
+              ]
+            },
+            "additiveCodeableConcept": {
+              "coding": [
+                {
+                  "code": "434162003",
+                  "system": "http://snomed.info/sct",
+                  "display": "Neutral buffered formalin (substance)"
+                }
+              ]
+            }
+          }
+        ],
+        "type": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "309134005",
+              "display": "Prostate tru-cut biopsy sample"
+            }
+          ]
+        },
+        "status": "available",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patho-patient-1"
+        }
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/Specimen/mii-exa-test-data-patho-specimen-01-slide",
+      "resource": {
+        "resourceType": "Specimen",
+        "id": "mii-exa-test-data-patho-specimen-01-slide",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen",
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore"
+          ],
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata"
+        },
+        "identifier": [
+          {
+            "system": "https://www.charite.de/fhir/sid/patho/befundbericht",
+            "value": "E_24_001_A_1_1HE"
+          }
+        ],
+        "accessionIdentifier": {
+          "system": "https://www.charite.de/fhir/sid/patho/befundbericht",
+          "value": "E_24_001"
+        },
+        "parent": [
+          {
+            "reference": "Specimen/mii-exa-test-data-patho-specimen-01-block"
+          }
+        ],
+        "collection": {
+          "collectedDateTime": "2024-01-17T08:00:00+01:00",
+          "method": {
+            "coding": [
+              {
+                "code": "13283003",
+                "system": "http://snomed.info/sct",
+                "display": "Tissue processing technique (procedure)"
+              }
+            ]
+          }
+        },
+        "processing": [
+          {
+            "extension": [
+              {
+                "valueRange": {
+                  "low": {
+                    "unit": "°C",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "Cel",
+                    "value": 2
+                  },
+                  "high": {
+                    "unit": "°C",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "Cel",
+                    "value": 8
+                  }
+                },
+                "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Temperaturbedingungen"
+              }
+            ],
+            "procedure": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "434472006",
+                  "display": "Sectioning of tissue block"
+                }
+              ]
+            },
+            "description": "Schnittherstellung",
+            "timeDateTime": "2024-01-17T09:00:00+01:00"
+          },
+          {
+            "extension": [
+              {
+                "valueRange": {
+                  "low": {
+                    "unit": "°C",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "Cel",
+                    "value": 2
+                  },
+                  "high": {
+                    "unit": "°C",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "Cel",
+                    "value": 8
+                  }
+                },
+                "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Temperaturbedingungen"
+              }
+            ],
+            "procedure": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "127790008",
+                  "display": "Staining method"
+                }
+              ]
+            },
+            "description": "HE-Färbung",
+            "timeDateTime": "2024-01-17T09:15:00+01:00"
+          }
+        ],
+        "container": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "code": "433466003",
+                  "system": "http://snomed.info/sct",
+                  "display": "Microscope slide (physical object)"
+                }
+              ]
+            },
+            "additiveCodeableConcept": {
+              "coding": [
+                {
+                  "code": "430862008",
+                  "system": "http://snomed.info/sct",
+                  "display": "Microscope slide mounting medium (substance)"
+                }
+              ]
+            }
+          }
+        ],
+        "type": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "430856003",
+              "display": "Tissue section (specimen)"
+            }
+          ]
+        },
+        "status": "available",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patho-patient-1"
+        }
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/Specimen/mii-exa-test-data-patho-specimen-03-block",
+      "resource": {
+        "resourceType": "Specimen",
+        "id": "mii-exa-test-data-patho-specimen-03-block",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen",
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore"
+          ],
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata"
+        },
+        "identifier": [
+          {
+            "system": "https://www.charite.de/fhir/sid/patho/befundbericht",
+            "value": "E_24_001_C_1"
+          }
+        ],
+        "accessionIdentifier": {
+          "system": "https://www.charite.de/fhir/sid/patho/befundbericht",
+          "value": "E_24_001"
+        },
+        "parent": [
+          {
+            "reference": "Specimen/mii-exa-test-data-patho-specimen-03-part"
+          }
+        ],
+        "collection": {
+          "collectedDateTime": "2024-01-16T10:34:00+01:00",
+          "method": {
+            "coding": [
+              {
+                "code": "787377000",
+                "system": "http://snomed.info/sct",
+                "display": "Gross examination and sampling of tissue specimen"
+              }
+            ]
+          }
+        },
+        "processing": [
+          {
+            "extension": [
+              {
+                "valueRange": {
+                  "low": {
+                    "unit": "°C",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "Cel",
+                    "value": 2
+                  },
+                  "high": {
+                    "unit": "°C",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "Cel",
+                    "value": 8
+                  }
+                },
+                "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Temperaturbedingungen"
+              }
+            ],
+            "procedure": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "787376009",
+                  "display": "Preparation of formalin fixed paraffin embedded tissue specimen"
+                }
+              ]
+            },
+            "description": "Zuschnitt und Paraffineinbettung",
+            "timeDateTime": "2024-01-16T08:00:00+01:00"
+          }
+        ],
+        "container": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "code": "706053007",
+                  "system": "http://snomed.info/sct",
+                  "display": "General specimen container (physical object)"
+                }
+              ]
+            },
+            "additiveCodeableConcept": {
+              "coding": [
+                {
+                  "code": "311731000",
+                  "system": "http://snomed.info/sct",
+                  "display": "Paraffin wax (substance)"
+                }
+              ]
+            }
+          }
+        ],
+        "type": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "706053007",
+              "display": "General specimen container (physical object)"
+            }
+          ]
+        },
+        "status": "available",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patho-patient-1"
+        }
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/Specimen/mii-exa-test-data-patho-specimen-03-part",
+      "resource": {
+        "resourceType": "Specimen",
+        "id": "mii-exa-test-data-patho-specimen-03-part",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen",
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore"
+          ],
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata"
+        },
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "type",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "code": "716934008",
+                      "system": "http://snomed.info/sct",
+                      "display": "Structure of apical part of peripheral zone of right half prostate (body structure)"
+                    }
+                  ]
+                }
+              },
+              {
+                "url": "description",
+                "valueString": "Markiert mit grüner Tinte"
+              }
+            ],
+            "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-Specimen.feature"
+          }
+        ],
+        "identifier": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "code": "PLAC",
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203"
+                }
+              ]
+            },
+            "system": "https://www.charite.de/fhir/sid/patho/untersuchungsauftrag",
+            "value": "BX24_001_03_A"
+          },
+          {
+            "type": {
+              "coding": [
+                {
+                  "code": "FILL",
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203"
+                }
+              ]
+            },
+            "system": "https://www.charite.de/fhir/sid/patho/befundbericht",
+            "value": "E_24_001_C"
+          }
+        ],
+        "accessionIdentifier": {
+          "system": "https://www.charite.de/fhir/sid/patho/befundbericht",
+          "value": "E_24_001"
+        },
+        "request": [
+          {
+            "reference": "ServiceRequest/mii-exa-test-data-patho-request-1"
+          }
+        ],
+        "collection": {
+          "collector": {
+            "reference": "Practitioner/mii-exa-test-data-patho-practitioner-2"
+          },
+          "collectedDateTime": "2024-01-15T10:34:00+01:00",
+          "method": {
+            "coding": [
+              {
+                "code": "301759007",
+                "system": "http://snomed.info/sct",
+                "display": "Tru-cut biopsy of prostate (procedure)"
+              }
+            ]
+          },
+          "bodySite": {
+            "coding": [
+              {
+                "code": "716934008",
+                "system": "http://snomed.info/sct",
+                "display": "Structure of apical part of peripheral zone of right half prostate (body structure)"
+              }
+            ]
+          }
+        },
+        "container": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "code": "434746001",
+                  "system": "http://snomed.info/sct",
+                  "display": "Specimen vial (physical object)"
+                }
+              ]
+            },
+            "additiveCodeableConcept": {
+              "coding": [
+                {
+                  "code": "434162003",
+                  "system": "http://snomed.info/sct",
+                  "display": "Neutral buffered formalin (substance)"
+                }
+              ]
+            }
+          }
+        ],
+        "type": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "309134005",
+              "display": "Prostate tru-cut biopsy sample"
+            }
+          ]
+        },
+        "status": "available",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patho-patient-1"
+        }
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/Specimen/mii-exa-test-data-patho-specimen-03-slide",
+      "resource": {
+        "resourceType": "Specimen",
+        "id": "mii-exa-test-data-patho-specimen-03-slide",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen",
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore"
+          ],
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata"
+        },
+        "identifier": [
+          {
+            "system": "https://www.charite.de/fhir/sid/patho/befundbericht",
+            "value": "E_24_001_C_1_1HE"
+          }
+        ],
+        "accessionIdentifier": {
+          "system": "https://www.charite.de/fhir/sid/patho/befundbericht",
+          "value": "E_24_001"
+        },
+        "parent": [
+          {
+            "reference": "Specimen/mii-exa-test-data-patho-specimen-03-block"
+          }
+        ],
+        "collection": {
+          "collectedDateTime": "2024-01-17T08:00:00+01:00",
+          "method": {
+            "coding": [
+              {
+                "code": "13283003",
+                "system": "http://snomed.info/sct",
+                "display": "Tissue processing technique (procedure)"
+              }
+            ]
+          }
+        },
+        "processing": [
+          {
+            "extension": [
+              {
+                "valueRange": {
+                  "low": {
+                    "unit": "°C",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "Cel",
+                    "value": 2
+                  },
+                  "high": {
+                    "unit": "°C",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "Cel",
+                    "value": 8
+                  }
+                },
+                "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Temperaturbedingungen"
+              }
+            ],
+            "procedure": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "434472006",
+                  "display": "Sectioning of tissue block"
+                }
+              ]
+            },
+            "description": "Schnittherstellung",
+            "timeDateTime": "2024-01-17T09:00:00+01:00"
+          },
+          {
+            "extension": [
+              {
+                "valueRange": {
+                  "low": {
+                    "unit": "°C",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "Cel",
+                    "value": 2
+                  },
+                  "high": {
+                    "unit": "°C",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "Cel",
+                    "value": 8
+                  }
+                },
+                "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Temperaturbedingungen"
+              }
+            ],
+            "procedure": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "127790008",
+                  "display": "Staining method"
+                }
+              ]
+            },
+            "description": "HE-Färbung",
+            "timeDateTime": "2024-01-17T09:15:00+01:00"
+          }
+        ],
+        "container": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "code": "433466003",
+                  "system": "http://snomed.info/sct",
+                  "display": "Microscope slide (physical object)"
+                }
+              ]
+            },
+            "additiveCodeableConcept": {
+              "coding": [
+                {
+                  "code": "430862008",
+                  "system": "http://snomed.info/sct",
+                  "display": "Microscope slide mounting medium (substance)"
+                }
+              ]
+            }
+          }
+        ],
+        "type": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "430856003",
+              "display": "Tissue section (specimen)"
+            }
+          ]
+        },
+        "status": "available",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patho-patient-1"
+        }
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/DiagnosticReport/mii-exa-test-data-patho-report-1",
+      "resource": {
+        "resourceType": "DiagnosticReport",
+        "id": "mii-exa-test-data-patho-report-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-report"
+          ]
+        },
+        "identifier": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "code": "ACSN",
+                  "display": "Accession ID"
+                }
+              ]
+            },
+            "system": "https://www.charite.de/fhir/sid/patho/befundbericht",
+            "value": "E_24_001"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "SP",
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                "display": "Surgical Pathology"
+              }
+            ]
+          }
+        ],
+        "basedOn": [
+          {
+            "reference": "ServiceRequest/mii-exa-test-data-patho-request-1"
+          }
+        ],
+        "performer": [
+          {
+            "reference": "Practitioner/mii-exa-test-data-patho-practitioner-1"
+          }
+        ],
+        "specimen": [
+          {
+            "reference": "Specimen/mii-exa-test-data-patho-specimen-01-part"
+          },
+          {
+            "reference": "Specimen/mii-exa-test-data-patho-specimen-01-block"
+          },
+          {
+            "reference": "Specimen/mii-exa-test-data-patho-specimen-01-slide"
+          },
+          {
+            "reference": "Specimen/mii-exa-test-data-patho-specimen-03-part"
+          },
+          {
+            "reference": "Specimen/mii-exa-test-data-patho-specimen-03-block"
+          },
+          {
+            "reference": "Specimen/mii-exa-test-data-patho-specimen-03-slide"
+          }
+        ],
+        "result": [
+          {
+            "reference": "Observation/mii-exa-test-data-patho-intraop-grouper-1"
+          },
+          {
+            "reference": "Observation/mii-exa-test-data-patho-macro-grouper-1"
+          },
+          {
+            "reference": "Observation/mii-exa-test-data-patho-micro-grouper-1"
+          },
+          {
+            "reference": "Observation/mii-exa-test-data-patho-zusatz-grouper-1"
+          },
+          {
+            "reference": "Observation/mii-exa-test-data-patho-conclusion-grouper-1"
+          }
+        ],
+        "media": [
+          {
+            "link": {
+              "reference": "Media/mii-exa-test-data-patho-image-1"
+            },
+            "comment": "HE-Schnitt der Stanze 01, infiltriert durch Karzinomverbände, fotodokumentiert"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.composition",
+            "valueReference": {
+              "reference": "Composition/mii-exa-test-data-patho-composition-1"
+            }
+          }
+        ],
+        "conclusionCode": [
+          {
+            "coding": [
+              {
+                "code": "399068003",
+                "system": "http://snomed.info/sct",
+                "display": "Malignant tumor of prostate (disorder)"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "60568-3",
+              "display": "Pathology Synoptic report"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patho-patient-1"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-patho-encounter-1"
+        },
+        "effectiveDateTime": "2024-01-20T15:00:00+01:00",
+        "issued": "2024-01-20T15:30:00+01:00",
+        "conclusion": "Azinäres Adenokarzinom der Prostata, Gleason-Score 7a (3+4), ISUP-Gradgruppe 2, Nachweis in 1 von 2 Stanzen (Stanze 01, rechts lateral basal), perineurale Infiltration. Stanze 03 tumorfrei."
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patho-asap",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patho-asap",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "code": "22637-3",
+                "system": "http://loinc.org"
+              }
+            ]
+          }
+        ],
+        "performer": [
+          {
+            "reference": "Practitioner/mii-exa-test-data-patho-practitioner-1"
+          }
+        ],
+        "basedOn": [
+          {
+            "reference": "ServiceRequest/mii-exa-test-data-patho-request-1"
+          }
+        ],
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "16294321000119104",
+              "system": "http://snomed.info/sct",
+              "display": "Atypical small acinar proliferation of prostate (disorder)"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patho-patient-1"
+        },
+        "effectiveDateTime": "2024-01-20",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "373067005",
+              "system": "http://snomed.info/sct",
+              "display": "No (qualifier value)"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patho-conclusion-grouper-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patho-conclusion-grouper-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-diagnostic-conclusion-grouper"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "performer": [
+          {
+            "reference": "Practitioner/mii-exa-test-data-patho-practitioner-1"
+          }
+        ],
+        "basedOn": [
+          {
+            "reference": "ServiceRequest/mii-exa-test-data-patho-request-1"
+          }
+        ],
+        "hasMember": [
+          {
+            "reference": "Observation/mii-exa-test-data-patho-histological-type-icdo-3"
+          },
+          {
+            "reference": "Observation/mii-exa-test-data-patho-morphology-free-text"
+          },
+          {
+            "reference": "Observation/mii-exa-test-data-patho-icdo-version"
+          },
+          {
+            "reference": "Observation/mii-exa-test-data-patho-primary-gleason-pattern"
+          },
+          {
+            "reference": "Observation/mii-exa-test-data-patho-secondary-gleason-pattern"
+          },
+          {
+            "reference": "Observation/mii-exa-test-data-patho-gleason-score-total"
+          },
+          {
+            "reference": "Observation/mii-exa-test-data-patho-percentage-gleason-45"
+          },
+          {
+            "reference": "Observation/mii-exa-test-data-patho-grading-group-isup"
+          },
+          {
+            "reference": "Observation/mii-exa-test-data-patho-histological-grade-who"
+          },
+          {
+            "reference": "Observation/mii-exa-test-data-patho-positive-cores-right"
+          },
+          {
+            "reference": "Observation/mii-exa-test-data-patho-positive-cores-left"
+          },
+          {
+            "reference": "Observation/mii-exa-test-data-patho-ratio-positive-cores"
+          },
+          {
+            "reference": "Observation/mii-exa-test-data-patho-percentage-tumor-total"
+          },
+          {
+            "reference": "Observation/mii-exa-test-data-patho-tumor-length-total"
+          },
+          {
+            "reference": "Observation/mii-exa-test-data-patho-perineural-infiltration"
+          },
+          {
+            "reference": "Observation/mii-exa-test-data-patho-seminal-vesicle-invasion"
+          },
+          {
+            "reference": "Observation/mii-exa-test-data-patho-lymphovascular-invasion"
+          },
+          {
+            "reference": "Observation/mii-exa-test-data-patho-periprostatatic-fat-invasion"
+          },
+          {
+            "reference": "Observation/mii-exa-test-data-patho-intraductal-carcinoma"
+          },
+          {
+            "reference": "Observation/mii-exa-test-data-patho-asap"
+          },
+          {
+            "reference": "Observation/mii-exa-test-data-patho-high-grade-pin"
+          },
+          {
+            "reference": "Observation/mii-exa-test-data-patho-granulomatous-prostatitis"
+          }
+        ],
+        "derivedFrom": [
+          {
+            "reference": "Observation/mii-exa-test-data-patho-primaer-gleason-01"
+          },
+          {
+            "reference": "Observation/mii-exa-test-data-patho-sekundaer-gleason-01"
+          },
+          {
+            "reference": "Observation/mii-exa-test-data-patho-gleason-grading-01"
+          },
+          {
+            "reference": "Observation/mii-exa-test-data-patho-tumoranteil-01"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "22637-3"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patho-patient-1"
+        },
+        "effectiveDateTime": "2024-01-20"
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patho-gleason-grading-01",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patho-gleason-grading-01",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "code": "22635-7",
+                "system": "http://loinc.org"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "1812491000004107",
+              "system": "http://snomed.info/sct",
+              "display": "Histologic grade of primary malignant neoplasm of prostate by International Society of Urological Pathology technique (observable entity)"
+            }
+          ]
+        },
+        "performer": [
+          {
+            "reference": "Practitioner/mii-exa-test-data-patho-practitioner-1"
+          }
+        ],
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patho-patient-1"
+        },
+        "effectiveDateTime": "2024-01-17T10:00:00+01:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "1279714001",
+              "system": "http://snomed.info/sct",
+              "display": "International Society of Urological Pathology grade group 2 (Gleason score 3 + 4 = 7) (qualifier value)"
+            }
+          ]
+        },
+        "bodySite": {
+          "coding": [
+            {
+              "code": "716902004",
+              "system": "http://snomed.info/sct",
+              "display": "Right basal peripheral zone of prostate"
+            }
+          ]
+        },
+        "specimen": {
+          "reference": "Specimen/mii-exa-test-data-patho-specimen-01-slide"
+        }
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patho-gleason-score-total",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patho-gleason-score-total",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "code": "22637-3",
+                "system": "http://loinc.org"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "35266-6",
+              "system": "http://loinc.org",
+              "display": "Gleason score in Specimen Qualitative"
+            },
+            {
+              "code": "385377005",
+              "system": "http://snomed.info/sct",
+              "display": "Gleason grade finding for prostatic cancer"
+            }
+          ]
+        },
+        "performer": [
+          {
+            "reference": "Practitioner/mii-exa-test-data-patho-practitioner-1"
+          }
+        ],
+        "basedOn": [
+          {
+            "reference": "ServiceRequest/mii-exa-test-data-patho-request-1"
+          }
+        ],
+        "derivedFrom": [
+          {
+            "reference": "Observation/mii-exa-test-data-patho-primary-gleason-pattern"
+          },
+          {
+            "reference": "Observation/mii-exa-test-data-patho-secondary-gleason-pattern"
+          }
+        ],
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patho-patient-1"
+        },
+        "effectiveDateTime": "2024-01-20",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "57403001",
+              "system": "http://snomed.info/sct",
+              "display": "Gleason grade score 7"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patho-grading-group-isup",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patho-grading-group-isup",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "code": "22637-3",
+                "system": "http://loinc.org"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "1812491000004107",
+              "system": "http://snomed.info/sct",
+              "display": "Histologic grade of primary malignant neoplasm of prostate by International Society of Urological Pathology technique (observable entity)"
+            }
+          ]
+        },
+        "performer": [
+          {
+            "reference": "Practitioner/mii-exa-test-data-patho-practitioner-1"
+          }
+        ],
+        "basedOn": [
+          {
+            "reference": "ServiceRequest/mii-exa-test-data-patho-request-1"
+          }
+        ],
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patho-patient-1"
+        },
+        "effectiveDateTime": "2024-01-20",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "1279714001",
+              "system": "http://snomed.info/sct",
+              "display": "International Society of Urological Pathology grade group 2 (Gleason score 3 + 4 = 7) (qualifier value)"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patho-granulomatous-prostatitis",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patho-granulomatous-prostatitis",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "code": "22637-3",
+                "system": "http://loinc.org"
+              }
+            ]
+          }
+        ],
+        "performer": [
+          {
+            "reference": "Practitioner/mii-exa-test-data-patho-practitioner-1"
+          }
+        ],
+        "basedOn": [
+          {
+            "reference": "ServiceRequest/mii-exa-test-data-patho-request-1"
+          }
+        ],
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "94665-7",
+              "system": "http://loinc.org",
+              "display": "Granulomatous prostatitis [Presence] in Specimen by Microscopy"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patho-patient-1"
+        },
+        "effectiveDateTime": "2024-01-20",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "47492008",
+              "system": "http://snomed.info/sct",
+              "display": "Not seen (qualifier value)"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patho-high-grade-pin",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patho-high-grade-pin",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "code": "22637-3",
+                "system": "http://loinc.org"
+              }
+            ]
+          }
+        ],
+        "performer": [
+          {
+            "reference": "Practitioner/mii-exa-test-data-patho-practitioner-1"
+          }
+        ],
+        "basedOn": [
+          {
+            "reference": "ServiceRequest/mii-exa-test-data-patho-request-1"
+          }
+        ],
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "94666-5",
+              "system": "http://loinc.org",
+              "display": "High grade prostatic intraepithelial neoplasia [Presence] in Specimen by Microscopy"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patho-patient-1"
+        },
+        "effectiveDateTime": "2024-01-20",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "47492008",
+              "system": "http://snomed.info/sct",
+              "display": "Not seen (qualifier value)"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patho-histo-typ-01",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patho-histo-typ-01",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "code": "22635-7",
+                "system": "http://loinc.org"
+              }
+            ]
+          }
+        ],
+        "performer": [
+          {
+            "reference": "Practitioner/mii-exa-test-data-patho-practitioner-1"
+          }
+        ],
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "59847-4",
+              "system": "http://loinc.org",
+              "display": "Histology and Behavior ICD-O-3 Cancer"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patho-patient-1"
+        },
+        "effectiveDateTime": "2024-01-17T10:00:00+01:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "8140/3",
+              "system": "urn:oid:2.16.840.1.113883.6.43.1",
+              "display": "Azinäres Adenokarzinom"
+            }
+          ]
+        },
+        "bodySite": {
+          "coding": [
+            {
+              "code": "716902004",
+              "system": "http://snomed.info/sct",
+              "display": "Right basal peripheral zone of prostate"
+            }
+          ]
+        },
+        "specimen": {
+          "reference": "Specimen/mii-exa-test-data-patho-specimen-01-slide"
+        }
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patho-histo-typ-03",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patho-histo-typ-03",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "code": "22635-7",
+                "system": "http://loinc.org"
+              }
+            ]
+          }
+        ],
+        "performer": [
+          {
+            "reference": "Practitioner/mii-exa-test-data-patho-practitioner-1"
+          }
+        ],
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "59847-4",
+              "system": "http://loinc.org",
+              "display": "Histology and Behavior ICD-O-3 Cancer"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patho-patient-1"
+        },
+        "effectiveDateTime": "2024-01-17T10:00:00+01:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "110396000",
+              "system": "http://snomed.info/sct",
+              "display": "No evidence of malignant neoplasm (finding)"
+            }
+          ]
+        },
+        "bodySite": {
+          "coding": [
+            {
+              "code": "716904003",
+              "system": "http://snomed.info/sct",
+              "display": "Right anterior basal peripheral zone of prostate"
+            }
+          ]
+        },
+        "specimen": {
+          "reference": "Specimen/mii-exa-test-data-patho-specimen-03-slide"
+        }
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patho-histological-grade-who",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patho-histological-grade-who",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "code": "22637-3",
+                "system": "http://loinc.org"
+              }
+            ]
+          }
+        ],
+        "performer": [
+          {
+            "reference": "Practitioner/mii-exa-test-data-patho-practitioner-1"
+          }
+        ],
+        "basedOn": [
+          {
+            "reference": "ServiceRequest/mii-exa-test-data-patho-request-1"
+          }
+        ],
+        "valueCodeableConcept": {
+          "text": "G2: mäßig differenziert"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "21858-6",
+              "system": "http://loinc.org",
+              "display": "Grade Cancer"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patho-patient-1"
+        },
+        "effectiveDateTime": "2024-01-20"
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patho-histological-type-icdo-3",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patho-histological-type-icdo-3",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "code": "22637-3",
+                "system": "http://loinc.org"
+              }
+            ]
+          }
+        ],
+        "performer": [
+          {
+            "reference": "Practitioner/mii-exa-test-data-patho-practitioner-1"
+          }
+        ],
+        "basedOn": [
+          {
+            "reference": "ServiceRequest/mii-exa-test-data-patho-request-1"
+          }
+        ],
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "59847-4",
+              "system": "http://loinc.org",
+              "display": "Histology and Behavior ICD-O-3 Cancer"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patho-patient-1"
+        },
+        "effectiveDateTime": "2024-01-20",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "8140/3",
+              "system": "urn:oid:2.16.840.1.113883.6.43.1",
+              "display": "Azinäres Adenokarzinom"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patho-icdo-version",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patho-icdo-version",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "code": "22637-3",
+                "system": "http://loinc.org"
+              }
+            ]
+          }
+        ],
+        "performer": [
+          {
+            "reference": "Practitioner/mii-exa-test-data-patho-practitioner-1"
+          }
+        ],
+        "basedOn": [
+          {
+            "reference": "ServiceRequest/mii-exa-test-data-patho-request-1"
+          }
+        ],
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "397005006",
+              "system": "http://snomed.info/sct",
+              "display": "World Health Organization tumor classification (observable entity)"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patho-patient-1"
+        },
+        "effectiveDateTime": "2024-01-20",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "33",
+              "system": "urn:oid:1.2.276.0.76.3.1.131.1.5.153",
+              "display": "ICD-O-3 2. Auflage 2019"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patho-intraductal-carcinoma",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patho-intraductal-carcinoma",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "code": "22637-3",
+                "system": "http://loinc.org"
+              }
+            ]
+          }
+        ],
+        "performer": [
+          {
+            "reference": "Practitioner/mii-exa-test-data-patho-practitioner-1"
+          }
+        ],
+        "basedOn": [
+          {
+            "reference": "ServiceRequest/mii-exa-test-data-patho-request-1"
+          }
+        ],
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "1162814007",
+              "system": "http://snomed.info/sct",
+              "display": "Non-infiltrating intraductal carcinoma (morphologic abnormality)"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patho-patient-1"
+        },
+        "effectiveDateTime": "2024-01-20",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "47492008",
+              "system": "http://snomed.info/sct",
+              "display": "Not seen (qualifier value)"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patho-intraop-befund-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patho-intraop-befund-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "code": "83321-0",
+                "system": "http://loinc.org"
+              }
+            ]
+          }
+        ],
+        "performer": [
+          {
+            "reference": "Practitioner/mii-exa-test-data-patho-practitioner-1"
+          }
+        ],
+        "note": [
+          {
+            "text": "Schnellschnittdiagnose: Nachweis eines azinären Adenokarzinoms, endgültige Gradierung am Paraffinmaterial."
+          }
+        ],
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "371441004",
+              "system": "http://snomed.info/sct",
+              "display": "Histologic type"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patho-patient-1"
+        },
+        "effectiveDateTime": "2024-01-15T11:00:00+01:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "45410002",
+              "system": "http://snomed.info/sct",
+              "display": "Acinar adenocarcinoma"
+            }
+          ]
+        },
+        "specimen": {
+          "reference": "Specimen/mii-exa-test-data-patho-specimen-01-part"
+        }
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patho-intraop-grouper-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patho-intraop-grouper-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-intraoperative-grouper"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "performer": [
+          {
+            "reference": "Practitioner/mii-exa-test-data-patho-practitioner-1"
+          }
+        ],
+        "hasMember": [
+          {
+            "reference": "Observation/mii-exa-test-data-patho-intraop-befund-1"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "83321-0"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patho-patient-1"
+        },
+        "effectiveDateTime": "2024-01-15T11:00:00+01:00"
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patho-lymphovascular-invasion",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patho-lymphovascular-invasion",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "code": "22637-3",
+                "system": "http://loinc.org"
+              }
+            ]
+          }
+        ],
+        "performer": [
+          {
+            "reference": "Practitioner/mii-exa-test-data-patho-practitioner-1"
+          }
+        ],
+        "basedOn": [
+          {
+            "reference": "ServiceRequest/mii-exa-test-data-patho-request-1"
+          }
+        ],
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "33761-8",
+              "system": "http://loinc.org",
+              "display": "Venous + Lymphatic small vessel invasion in Specimen by CAP cancer protocols"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patho-patient-1"
+        },
+        "effectiveDateTime": "2024-01-20",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "47492008",
+              "system": "http://snomed.info/sct",
+              "display": "Not seen (qualifier value)"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patho-macro-grouper-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patho-macro-grouper-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-macroscopic-grouper"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "performer": [
+          {
+            "reference": "Practitioner/mii-exa-test-data-patho-practitioner-1"
+          }
+        ],
+        "hasMember": [
+          {
+            "reference": "Observation/mii-exa-test-data-patho-macroscopic-length-01"
+          },
+          {
+            "reference": "Observation/mii-exa-test-data-patho-macroscopic-length-03"
+          },
+          {
+            "reference": "Observation/mii-exa-test-data-patho-macroscopic-cylinder-count-01"
+          },
+          {
+            "reference": "Observation/mii-exa-test-data-patho-macroscopic-cylinder-count-03"
+          },
+          {
+            "reference": "Observation/mii-exa-test-data-patho-macroscopic-laterality-01"
+          },
+          {
+            "reference": "Observation/mii-exa-test-data-patho-macroscopic-laterality-03"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "22634-0"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patho-patient-1"
+        },
+        "effectiveDateTime": "2024-01-15T14:00:00+01:00",
+        "valueString": "Makroskopische Messungen beider Prostatastanzen",
+        "bodySite": {
+          "coding": [
+            {
+              "code": "41216001",
+              "system": "http://snomed.info/sct",
+              "display": "Prostate"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patho-macroscopic-cylinder-count-01",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patho-macroscopic-cylinder-count-01",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "code": "22634-0",
+                "system": "http://loinc.org"
+              }
+            ]
+          }
+        ],
+        "performer": [
+          {
+            "reference": "Practitioner/mii-exa-test-data-patho-practitioner-1"
+          }
+        ],
+        "note": [
+          {
+            "text": "Ein intakter Stanzzylinder"
+          }
+        ],
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "44652-6",
+              "system": "http://loinc.org",
+              "display": "Total number of cores in Tissue core"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patho-patient-1"
+        },
+        "specimen": {
+          "reference": "Specimen/mii-exa-test-data-patho-specimen-01-part"
+        },
+        "effectiveDateTime": "2024-01-15T14:10:00+01:00",
+        "valueQuantity": {
+          "value": 1,
+          "code": "{count}",
+          "system": "http://unitsofmeasure.org",
+          "unit": "count"
+        },
+        "bodySite": {
+          "coding": [
+            {
+              "code": "716902004",
+              "system": "http://snomed.info/sct",
+              "display": "Right basal peripheral zone of prostate"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patho-macroscopic-cylinder-count-03",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patho-macroscopic-cylinder-count-03",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "code": "22634-0",
+                "system": "http://loinc.org"
+              }
+            ]
+          }
+        ],
+        "performer": [
+          {
+            "reference": "Practitioner/mii-exa-test-data-patho-practitioner-1"
+          }
+        ],
+        "note": [
+          {
+            "text": "Ein intakter Stanzzylinder"
+          }
+        ],
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "44652-6",
+              "system": "http://loinc.org",
+              "display": "Total number of cores in Tissue core"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patho-patient-1"
+        },
+        "specimen": {
+          "reference": "Specimen/mii-exa-test-data-patho-specimen-03-part"
+        },
+        "effectiveDateTime": "2024-01-15T14:14:00+01:00",
+        "valueQuantity": {
+          "value": 1,
+          "code": "{count}",
+          "system": "http://unitsofmeasure.org",
+          "unit": "count"
+        },
+        "bodySite": {
+          "coding": [
+            {
+              "code": "716934008",
+              "system": "http://snomed.info/sct",
+              "display": "Structure of apical part of peripheral zone of right half prostate (body structure)"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patho-macroscopic-laterality-01",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patho-macroscopic-laterality-01",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "code": "22634-0",
+                "system": "http://loinc.org"
+              }
+            ]
+          }
+        ],
+        "performer": [
+          {
+            "reference": "Practitioner/mii-exa-test-data-patho-practitioner-1"
+          }
+        ],
+        "note": [
+          {
+            "text": "Rechte Prostataregion"
+          }
+        ],
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "20228-3",
+              "system": "http://loinc.org",
+              "display": "Anatomic part Laterality"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patho-patient-1"
+        },
+        "specimen": {
+          "reference": "Specimen/mii-exa-test-data-patho-specimen-01-part"
+        },
+        "effectiveDateTime": "2024-01-15T14:05:00+01:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "24028007",
+              "system": "http://snomed.info/sct",
+              "display": "Right (qualifier value)"
+            }
+          ]
+        },
+        "bodySite": {
+          "coding": [
+            {
+              "code": "716902004",
+              "system": "http://snomed.info/sct",
+              "display": "Right basal peripheral zone of prostate"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patho-macroscopic-laterality-03",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patho-macroscopic-laterality-03",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "code": "22634-0",
+                "system": "http://loinc.org"
+              }
+            ]
+          }
+        ],
+        "performer": [
+          {
+            "reference": "Practitioner/mii-exa-test-data-patho-practitioner-1"
+          }
+        ],
+        "note": [
+          {
+            "text": "Rechte Prostataregion"
+          }
+        ],
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "20228-3",
+              "system": "http://loinc.org",
+              "display": "Anatomic part Laterality"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patho-patient-1"
+        },
+        "specimen": {
+          "reference": "Specimen/mii-exa-test-data-patho-specimen-03-part"
+        },
+        "effectiveDateTime": "2024-01-15T14:05:00+01:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "24028007",
+              "system": "http://snomed.info/sct",
+              "display": "Right (qualifier value)"
+            }
+          ]
+        },
+        "bodySite": {
+          "coding": [
+            {
+              "code": "716934008",
+              "system": "http://snomed.info/sct",
+              "display": "Structure of apical part of peripheral zone of right half prostate (body structure)"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patho-macroscopic-length-01",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patho-macroscopic-length-01",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "code": "22634-0",
+                "system": "http://loinc.org"
+              }
+            ]
+          }
+        ],
+        "performer": [
+          {
+            "reference": "Practitioner/mii-exa-test-data-patho-practitioner-1"
+          }
+        ],
+        "note": [
+          {
+            "text": "Stanzzylinder Gesamtlänge 1.8cm"
+          }
+        ],
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "44619-5",
+              "system": "http://loinc.org",
+              "display": "Length of tissue core(s)"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patho-patient-1"
+        },
+        "specimen": {
+          "reference": "Specimen/mii-exa-test-data-patho-specimen-01-part"
+        },
+        "effectiveDateTime": "2024-01-15T14:10:00+01:00",
+        "valueQuantity": {
+          "value": 1.8,
+          "code": "cm",
+          "system": "http://unitsofmeasure.org",
+          "unit": "cm"
+        },
+        "bodySite": {
+          "coding": [
+            {
+              "code": "716902004",
+              "system": "http://snomed.info/sct",
+              "display": "Right basal peripheral zone of prostate"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patho-macroscopic-length-03",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patho-macroscopic-length-03",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "code": "22634-0",
+                "system": "http://loinc.org"
+              }
+            ]
+          }
+        ],
+        "performer": [
+          {
+            "reference": "Practitioner/mii-exa-test-data-patho-practitioner-1"
+          }
+        ],
+        "note": [
+          {
+            "text": "Stanzzylinder Gesamtlänge 1.5cm"
+          }
+        ],
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "44619-5",
+              "system": "http://loinc.org",
+              "display": "Length of tissue core(s)"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patho-patient-1"
+        },
+        "specimen": {
+          "reference": "Specimen/mii-exa-test-data-patho-specimen-03-part"
+        },
+        "effectiveDateTime": "2024-01-15T14:14:00+01:00",
+        "valueQuantity": {
+          "value": 1.5,
+          "code": "cm",
+          "system": "http://unitsofmeasure.org",
+          "unit": "cm"
+        },
+        "bodySite": {
+          "coding": [
+            {
+              "code": "716934008",
+              "system": "http://snomed.info/sct",
+              "display": "Structure of apical part of peripheral zone of right half prostate (body structure)"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patho-micro-grouper-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patho-micro-grouper-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-microscopic-grouper"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "performer": [
+          {
+            "reference": "Practitioner/mii-exa-test-data-patho-practitioner-1"
+          }
+        ],
+        "hasMember": [
+          {
+            "reference": "Observation/mii-exa-test-data-patho-histo-typ-01"
+          },
+          {
+            "reference": "Observation/mii-exa-test-data-patho-morph-text-01"
+          },
+          {
+            "reference": "Observation/mii-exa-test-data-patho-primaer-gleason-01"
+          },
+          {
+            "reference": "Observation/mii-exa-test-data-patho-sekundaer-gleason-01"
+          },
+          {
+            "reference": "Observation/mii-exa-test-data-patho-gleason-grading-01"
+          },
+          {
+            "reference": "Observation/mii-exa-test-data-patho-tumoranteil-01"
+          },
+          {
+            "reference": "Observation/mii-exa-test-data-patho-histo-typ-03"
+          },
+          {
+            "reference": "Observation/mii-exa-test-data-patho-morph-text-03"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "22635-7"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patho-patient-1"
+        },
+        "effectiveDateTime": "2024-01-17T10:00:00+01:00",
+        "valueString": "Mikroskopische Befunde beider Prostatastanzen",
+        "bodySite": {
+          "coding": [
+            {
+              "code": "41216001",
+              "system": "http://snomed.info/sct",
+              "display": "Prostate"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patho-morph-text-01",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patho-morph-text-01",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "code": "22635-7",
+                "system": "http://loinc.org"
+              }
+            ]
+          }
+        ],
+        "performer": [
+          {
+            "reference": "Practitioner/mii-exa-test-data-patho-practitioner-1"
+          }
+        ],
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "33731-1",
+              "system": "http://loinc.org",
+              "display": "Histology type in Cancer specimen Narrative"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patho-patient-1"
+        },
+        "effectiveDateTime": "2024-01-17T10:00:00+01:00",
+        "valueString": "Unregelmäßige, infiltrative Drüsenstrukturen, typisch für das azinäre Adenokarzinom. Gleason Pattern 3 mit fusion pattern (Pattern 4) kombiniert.",
+        "bodySite": {
+          "coding": [
+            {
+              "code": "716902004",
+              "system": "http://snomed.info/sct",
+              "display": "Right basal peripheral zone of prostate"
+            }
+          ]
+        },
+        "specimen": {
+          "reference": "Specimen/mii-exa-test-data-patho-specimen-01-slide"
+        }
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patho-morph-text-03",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patho-morph-text-03",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "code": "22635-7",
+                "system": "http://loinc.org"
+              }
+            ]
+          }
+        ],
+        "performer": [
+          {
+            "reference": "Practitioner/mii-exa-test-data-patho-practitioner-1"
+          }
+        ],
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "33731-1",
+              "system": "http://loinc.org",
+              "display": "Histology type in Cancer specimen Narrative"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patho-patient-1"
+        },
+        "effectiveDateTime": "2024-01-17T10:00:00+01:00",
+        "valueString": "Benigne Prostatadrüsen mit regelrechten azinären Strukturen. Vereinzelt Fibrose. Kein Anhalt für maligne Veränderungen.",
+        "bodySite": {
+          "coding": [
+            {
+              "code": "716904003",
+              "system": "http://snomed.info/sct",
+              "display": "Right anterior basal peripheral zone of prostate"
+            }
+          ]
+        },
+        "specimen": {
+          "reference": "Specimen/mii-exa-test-data-patho-specimen-03-slide"
+        }
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patho-morphology-free-text",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patho-morphology-free-text",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "code": "22637-3",
+                "system": "http://loinc.org"
+              }
+            ]
+          }
+        ],
+        "performer": [
+          {
+            "reference": "Practitioner/mii-exa-test-data-patho-practitioner-1"
+          }
+        ],
+        "basedOn": [
+          {
+            "reference": "ServiceRequest/mii-exa-test-data-patho-request-1"
+          }
+        ],
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "33731-1",
+              "system": "http://loinc.org",
+              "display": "Histology type in Cancer specimen Narrative"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patho-patient-1"
+        },
+        "effectiveDateTime": "2024-01-20",
+        "valueString": "Konventionelles Adenokarzinom der Prostata mit prominenten azidophilen Nukleolen"
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patho-p63-befund-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patho-p63-befund-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "code": "100969-5",
+                "system": "http://loinc.org"
+              }
+            ]
+          }
+        ],
+        "performer": [
+          {
+            "reference": "Practitioner/mii-exa-test-data-patho-practitioner-1"
+          }
+        ],
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "LA11883-8",
+              "system": "http://loinc.org"
+            }
+          ],
+          "text": "Die Tumorzellen sind negativ für p63"
+        },
+        "derivedFrom": [
+          {
+            "reference": "Media/mii-exa-test-data-patho-image-1"
+          }
+        ],
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "101548-6",
+              "system": "http://loinc.org"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patho-patient-1"
+        },
+        "effectiveDateTime": "2024-01-18T09:00:00+01:00",
+        "specimen": {
+          "reference": "Specimen/mii-exa-test-data-patho-specimen-01-slide"
+        }
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patho-percentage-gleason-45",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patho-percentage-gleason-45",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "code": "22637-3",
+                "system": "http://loinc.org"
+              }
+            ]
+          }
+        ],
+        "performer": [
+          {
+            "reference": "Practitioner/mii-exa-test-data-patho-practitioner-1"
+          }
+        ],
+        "basedOn": [
+          {
+            "reference": "ServiceRequest/mii-exa-test-data-patho-request-1"
+          }
+        ],
+        "valueQuantity": {
+          "value": 30,
+          "unit": "%",
+          "system": "http://unitsofmeasure.org",
+          "code": "%"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "94735-8",
+              "system": "http://loinc.org",
+              "display": "Prostate tumor area with Gleason pattern 4+5/Total tumor area [Area Fraction] in Prostate tumor by Microscopy"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patho-patient-1"
+        },
+        "effectiveDateTime": "2024-01-20"
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patho-percentage-tumor-total",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patho-percentage-tumor-total",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "code": "22637-3",
+                "system": "http://loinc.org"
+              }
+            ]
+          }
+        ],
+        "performer": [
+          {
+            "reference": "Practitioner/mii-exa-test-data-patho-practitioner-1"
+          }
+        ],
+        "basedOn": [
+          {
+            "reference": "ServiceRequest/mii-exa-test-data-patho-request-1"
+          }
+        ],
+        "valueQuantity": {
+          "value": 40,
+          "unit": "%",
+          "system": "http://unitsofmeasure.org",
+          "code": "%"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "44651-8",
+              "system": "http://loinc.org",
+              "display": "Tissue cores.positive.carcinoma in Tissue core"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patho-patient-1"
+        },
+        "effectiveDateTime": "2024-01-20"
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patho-perineural-infiltration",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patho-perineural-infiltration",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "code": "22637-3",
+                "system": "http://loinc.org"
+              }
+            ]
+          }
+        ],
+        "performer": [
+          {
+            "reference": "Practitioner/mii-exa-test-data-patho-practitioner-1"
+          }
+        ],
+        "basedOn": [
+          {
+            "reference": "ServiceRequest/mii-exa-test-data-patho-request-1"
+          }
+        ],
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "92837-4",
+              "system": "http://loinc.org",
+              "display": "Perineural invasion [Presence] in Cancer specimen"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patho-patient-1"
+        },
+        "effectiveDateTime": "2024-01-20",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "52101004",
+              "system": "http://snomed.info/sct",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patho-periprostatatic-fat-invasion",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patho-periprostatatic-fat-invasion",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "code": "22637-3",
+                "system": "http://loinc.org"
+              }
+            ]
+          }
+        ],
+        "performer": [
+          {
+            "reference": "Practitioner/mii-exa-test-data-patho-practitioner-1"
+          }
+        ],
+        "basedOn": [
+          {
+            "reference": "ServiceRequest/mii-exa-test-data-patho-request-1"
+          }
+        ],
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "44625-2",
+              "system": "http://loinc.org",
+              "display": "Periprostatic fat invasion [Identifier] in Specimen by CAP cancer protocols"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patho-patient-1"
+        },
+        "effectiveDateTime": "2024-01-20",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "47492008",
+              "system": "http://snomed.info/sct",
+              "display": "Not seen (qualifier value)"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patho-positive-cores-left",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patho-positive-cores-left",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "code": "22637-3",
+                "system": "http://loinc.org"
+              }
+            ]
+          }
+        ],
+        "performer": [
+          {
+            "reference": "Practitioner/mii-exa-test-data-patho-practitioner-1"
+          }
+        ],
+        "basedOn": [
+          {
+            "reference": "ServiceRequest/mii-exa-test-data-patho-request-1"
+          }
+        ],
+        "valueQuantity": {
+          "value": 0
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "44651-8",
+              "system": "http://loinc.org",
+              "display": "Tissue cores.positive.carcinoma in Tissue core"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patho-patient-1"
+        },
+        "effectiveDateTime": "2024-01-20",
+        "bodySite": {
+          "coding": [
+            {
+              "code": "7771000",
+              "system": "http://snomed.info/sct",
+              "display": "Left (qualifier value)"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patho-positive-cores-right",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patho-positive-cores-right",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "code": "22637-3",
+                "system": "http://loinc.org"
+              }
+            ]
+          }
+        ],
+        "performer": [
+          {
+            "reference": "Practitioner/mii-exa-test-data-patho-practitioner-1"
+          }
+        ],
+        "basedOn": [
+          {
+            "reference": "ServiceRequest/mii-exa-test-data-patho-request-1"
+          }
+        ],
+        "valueQuantity": {
+          "value": 1
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "44651-8",
+              "system": "http://loinc.org",
+              "display": "Tissue cores.positive.carcinoma in Tissue core"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patho-patient-1"
+        },
+        "effectiveDateTime": "2024-01-20",
+        "bodySite": {
+          "coding": [
+            {
+              "code": "24028007",
+              "system": "http://snomed.info/sct",
+              "display": "Right (qualifier value)"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patho-primaer-gleason-01",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patho-primaer-gleason-01",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "code": "22635-7",
+                "system": "http://loinc.org"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "44641-9",
+              "system": "http://loinc.org",
+              "display": "Gleason pattern.primary in Prostate tumor"
+            },
+            {
+              "code": "384994009",
+              "system": "http://snomed.info/sct",
+              "display": "Primary Gleason pattern (observable entity)"
+            }
+          ]
+        },
+        "performer": [
+          {
+            "reference": "Practitioner/mii-exa-test-data-patho-practitioner-1"
+          }
+        ],
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patho-patient-1"
+        },
+        "effectiveDateTime": "2024-01-17T10:00:00+01:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "369772003",
+              "system": "http://snomed.info/sct",
+              "display": "Gleason Pattern 3 (finding)"
+            }
+          ]
+        },
+        "bodySite": {
+          "coding": [
+            {
+              "code": "716902004",
+              "system": "http://snomed.info/sct",
+              "display": "Right basal peripheral zone of prostate"
+            }
+          ]
+        },
+        "specimen": {
+          "reference": "Specimen/mii-exa-test-data-patho-specimen-01-slide"
+        }
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patho-primary-gleason-pattern",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patho-primary-gleason-pattern",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "code": "22637-3",
+                "system": "http://loinc.org"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "44641-9",
+              "system": "http://loinc.org",
+              "display": "Gleason pattern.primary in Prostate tumor"
+            },
+            {
+              "code": "384994009",
+              "system": "http://snomed.info/sct",
+              "display": "Primary Gleason pattern (observable entity)"
+            }
+          ]
+        },
+        "performer": [
+          {
+            "reference": "Practitioner/mii-exa-test-data-patho-practitioner-1"
+          }
+        ],
+        "basedOn": [
+          {
+            "reference": "ServiceRequest/mii-exa-test-data-patho-request-1"
+          }
+        ],
+        "derivedFrom": [
+          {
+            "reference": "Observation/mii-exa-test-data-patho-primaer-gleason-01"
+          }
+        ],
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patho-patient-1"
+        },
+        "effectiveDateTime": "2024-01-20",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "369772003",
+              "system": "http://snomed.info/sct",
+              "display": "Gleason Pattern 3 (finding)"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patho-psa-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patho-psa-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-prostate-psa"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "laboratory",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "code": "26436-6",
+                "system": "http://loinc.org",
+                "display": "Laboratory studies (set)"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "code": "LP7839-6",
+                "system": "http://loinc.org",
+                "display": "Pathology"
+              }
+            ]
+          }
+        ],
+        "valueQuantity": {
+          "unit": "ng/ml",
+          "system": "http://unitsofmeasure.org",
+          "code": "ng/mL",
+          "value": 12.8
+        },
+        "referenceRange": [
+          {
+            "low": {
+              "value": 0,
+              "unit": "ng/ml"
+            },
+            "high": {
+              "value": 3,
+              "unit": "ng/ml"
+            },
+            "text": "Normbereich für Männer über 50 Jahre"
+          }
+        ],
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "2857-1",
+              "system": "http://loinc.org",
+              "display": "Prostate specific Ag [Mass/volume] in Serum or Plasma"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patho-patient-1"
+        },
+        "effectiveDateTime": "2024-01-10T08:00:00+01:00"
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patho-ratio-positive-cores",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patho-ratio-positive-cores",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "code": "22637-3",
+                "system": "http://loinc.org"
+              }
+            ]
+          }
+        ],
+        "performer": [
+          {
+            "reference": "Practitioner/mii-exa-test-data-patho-practitioner-1"
+          }
+        ],
+        "basedOn": [
+          {
+            "reference": "ServiceRequest/mii-exa-test-data-patho-request-1"
+          }
+        ],
+        "valueRatio": {
+          "numerator": {
+            "value": 1,
+            "unit": "cores"
+          },
+          "denominator": {
+            "value": 2,
+            "unit": "cores"
+          }
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "372303007",
+              "system": "http://snomed.info/sct",
+              "display": "Ratio of blocks with prostate tumor to total number of blocks obtained (observable entity)"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patho-patient-1"
+        },
+        "effectiveDateTime": "2024-01-20"
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patho-secondary-gleason-pattern",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patho-secondary-gleason-pattern",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "code": "22637-3",
+                "system": "http://loinc.org"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "44642-7",
+              "system": "http://loinc.org",
+              "display": "Gleason pattern.secondary in Prostate tumor"
+            },
+            {
+              "code": "384995005",
+              "system": "http://snomed.info/sct",
+              "display": "Secondary Gleason pattern (observable entity)"
+            }
+          ]
+        },
+        "performer": [
+          {
+            "reference": "Practitioner/mii-exa-test-data-patho-practitioner-1"
+          }
+        ],
+        "basedOn": [
+          {
+            "reference": "ServiceRequest/mii-exa-test-data-patho-request-1"
+          }
+        ],
+        "derivedFrom": [
+          {
+            "reference": "Observation/mii-exa-test-data-patho-sekundaer-gleason-01"
+          }
+        ],
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patho-patient-1"
+        },
+        "effectiveDateTime": "2024-01-20",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "369773008",
+              "system": "http://snomed.info/sct",
+              "display": "Gleason Pattern 4 (finding)"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patho-sekundaer-gleason-01",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patho-sekundaer-gleason-01",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "code": "22635-7",
+                "system": "http://loinc.org"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "44642-7",
+              "system": "http://loinc.org",
+              "display": "Gleason pattern.secondary in Prostate tumor"
+            },
+            {
+              "code": "384995005",
+              "system": "http://snomed.info/sct",
+              "display": "Secondary Gleason pattern (observable entity)"
+            }
+          ]
+        },
+        "performer": [
+          {
+            "reference": "Practitioner/mii-exa-test-data-patho-practitioner-1"
+          }
+        ],
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patho-patient-1"
+        },
+        "effectiveDateTime": "2024-01-17T10:00:00+01:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "369773008",
+              "system": "http://snomed.info/sct",
+              "display": "Gleason Pattern 4 (finding)"
+            }
+          ]
+        },
+        "bodySite": {
+          "coding": [
+            {
+              "code": "716902004",
+              "system": "http://snomed.info/sct",
+              "display": "Right basal peripheral zone of prostate"
+            }
+          ]
+        },
+        "specimen": {
+          "reference": "Specimen/mii-exa-test-data-patho-specimen-01-slide"
+        }
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patho-seminal-vesicle-invasion",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patho-seminal-vesicle-invasion",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "code": "22637-3",
+                "system": "http://loinc.org"
+              }
+            ]
+          }
+        ],
+        "performer": [
+          {
+            "reference": "Practitioner/mii-exa-test-data-patho-practitioner-1"
+          }
+        ],
+        "basedOn": [
+          {
+            "reference": "ServiceRequest/mii-exa-test-data-patho-request-1"
+          }
+        ],
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "44626-0",
+              "system": "http://loinc.org",
+              "display": "Seminal vesicle invasion [Identifier] in Specimen by CAP cancer protocols"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patho-patient-1"
+        },
+        "effectiveDateTime": "2024-01-20",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "47492008",
+              "system": "http://snomed.info/sct",
+              "display": "Not seen (qualifier value)"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patho-tumor-length-total",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patho-tumor-length-total",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "code": "22637-3",
+                "system": "http://loinc.org"
+              }
+            ]
+          }
+        ],
+        "performer": [
+          {
+            "reference": "Practitioner/mii-exa-test-data-patho-practitioner-1"
+          }
+        ],
+        "basedOn": [
+          {
+            "reference": "ServiceRequest/mii-exa-test-data-patho-request-1"
+          }
+        ],
+        "valueQuantity": {
+          "value": 7.2,
+          "unit": "mm",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "44618-7",
+              "system": "http://loinc.org",
+              "display": "Total linear mm of carcinoma"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patho-patient-1"
+        },
+        "effectiveDateTime": "2024-01-20"
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patho-tumoranteil-01",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patho-tumoranteil-01",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "code": "22635-7",
+                "system": "http://loinc.org"
+              }
+            ]
+          }
+        ],
+        "performer": [
+          {
+            "reference": "Practitioner/mii-exa-test-data-patho-practitioner-1"
+          }
+        ],
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "385396009",
+              "system": "http://snomed.info/sct",
+              "display": "Percentage of prostatic tissue, obtained by needle biopsy, involved by carcinoma (observable entity)"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patho-patient-1"
+        },
+        "effectiveDateTime": "2024-01-17T10:00:00+01:00",
+        "valueQuantity": {
+          "value": 40,
+          "code": "%",
+          "system": "http://unitsofmeasure.org",
+          "unit": "%"
+        },
+        "bodySite": {
+          "coding": [
+            {
+              "code": "716902004",
+              "system": "http://snomed.info/sct",
+              "display": "Right basal peripheral zone of prostate"
+            }
+          ]
+        },
+        "specimen": {
+          "reference": "Specimen/mii-exa-test-data-patho-specimen-01-slide"
+        }
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patho-zusatz-grouper-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patho-zusatz-grouper-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-additional-specified-grouper"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "performer": [
+          {
+            "reference": "Practitioner/mii-exa-test-data-patho-practitioner-1"
+          }
+        ],
+        "hasMember": [
+          {
+            "reference": "Observation/mii-exa-test-data-patho-p63-befund-1"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "100969-5"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patho-patient-1"
+        },
+        "effectiveDateTime": "2024-01-18T09:00:00+01:00"
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/Condition/mii-exa-test-data-patho-diagnose-verdacht-1",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "mii-exa-test-data-patho-diagnose-verdacht-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-diagnose-primaertumor"
+          ]
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/condition-assertedDate",
+            "valueDateTime": "2024-01-10"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "55342001",
+                "display": "Neoplastic disease"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "code": "encounter-diagnosis",
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+              "version": "2025",
+              "code": "C61",
+              "display": "Bösartige Neubildung der Prostata"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "126906006",
+              "display": "Neoplasm of prostate (disorder)"
+            },
+            {
+              "code": "C61",
+              "system": "http://id.who.int/icd/release/10",
+              "display": "Malignant neoplasm of prostate"
+            },
+            {
+              "code": "2C82",
+              "system": "http://id.who.int/icd/release/11/mms",
+              "display": "Malignant neoplasms of prostate"
+            }
+          ]
+        },
+        "note": [
+          {
+            "text": "V.a. Prostatakarzinom bei PSA 12,8 ng/ml und PI-RADS 4 Läsion im mpMRT. Biopsie zur Diagnosesicherung indiziert."
+          }
+        ],
+        "clinicalStatus": {
+          "coding": [
+            {
+              "code": "active",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "code": "provisional",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patho-patient-1"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-patho-encounter-1"
+        },
+        "onsetDateTime": "2024-01-10",
+        "recordedDate": "2024-01-10"
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/Media/mii-exa-test-data-patho-image-1",
+      "resource": {
+        "resourceType": "Media",
+        "id": "mii-exa-test-data-patho-image-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-attached-image"
+          ]
+        },
+        "type": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/media-type",
+              "code": "image"
+            }
+          ]
+        },
+        "content": {
+          "contentType": "image/png",
+          "url": "https://www.charite.de/fhir/sid/patho/image/E_24_001_A_1_1HE",
+          "title": "HE-Schnitt Stanze 01"
+        },
+        "status": "completed",
+        "modality": {
+          "coding": [
+            {
+              "code": "706821004",
+              "system": "http://snomed.info/sct"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Specimen/mii-exa-test-data-patho-specimen-01-slide"
+        },
+        "createdDateTime": "2024-01-17T10:30:00+01:00",
+        "operator": {
+          "reference": "Practitioner/mii-exa-test-data-patho-practitioner-1"
+        }
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/Organization/mii-exa-test-data-patho-organization-1",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "mii-exa-test-data-patho-organization-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata"
+        },
+        "identifier": [
+          {
+            "system": "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier",
+            "value": "DIZ-CHA"
+          }
+        ],
+        "name": "Institut für Pathologie, Charité - Universitätsmedizin Berlin",
+        "active": true
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/Practitioner/mii-exa-test-data-patho-practitioner-1",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "mii-exa-test-data-patho-practitioner-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata"
+        },
+        "identifier": [
+          {
+            "system": "https://gematik.de/fhir/sid/telematik-id",
+            "value": "1-patho-test-0001"
+          }
+        ],
+        "name": [
+          {
+            "given": [
+              "Paula"
+            ],
+            "prefix": [
+              "Dr. med."
+            ],
+            "family": "Schnittbild"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/Practitioner/mii-exa-test-data-patho-practitioner-2",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "mii-exa-test-data-patho-practitioner-2",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata"
+        },
+        "identifier": [
+          {
+            "system": "https://gematik.de/fhir/sid/telematik-id",
+            "value": "1-uro-test-0002"
+          }
+        ],
+        "name": [
+          {
+            "given": [
+              "Ulrich"
+            ],
+            "prefix": [
+              "Dr. med."
+            ],
+            "family": "Stanze"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/List/mii-exa-test-data-patient-1-patho-active-problems-1",
+      "resource": {
+        "resourceType": "List",
+        "id": "mii-exa-test-data-patient-1-patho-active-problems-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-active-problems-list"
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "11450-4",
+              "display": "Problem list - Reported"
+            }
+          ]
+        },
+        "entry": [
+          {
+            "item": {
+              "reference": "Condition/mii-exa-test-data-patient-1-patho-problem-list-item-1"
+            }
+          }
+        ],
+        "mode": "snapshot",
+        "status": "current",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patho-patient-1"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-patho-encounter-1"
+        },
+        "date": "2024-02-16"
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/List/mii-exa-test-data-patient-1-patho-hopi-1",
+      "resource": {
+        "resourceType": "List",
+        "id": "mii-exa-test-data-patient-1-patho-hopi-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-history-of-present-illness"
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8684-3",
+              "display": "History of Present illness"
+            }
+          ]
+        },
+        "entry": [
+          {
+            "item": {
+              "reference": "Condition/mii-exa-test-data-patient-1-patho-problem-list-item-1"
+            }
+          }
+        ],
+        "mode": "snapshot",
+        "status": "current",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patho-patient-1"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-patho-encounter-1"
+        },
+        "date": "2024-02-15"
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/Condition/mii-exa-test-data-patient-1-patho-problem-list-item-1",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "mii-exa-test-data-patient-1-patho-problem-list-item-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-problem-list-item"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                "code": "problem-list-item",
+                "display": "Problem List Item"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "399068003",
+              "system": "http://snomed.info/sct",
+              "display": "Malignant neoplasm of prostate"
+            },
+            {
+              "code": "C61",
+              "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+              "display": "Bösartige Neubildung der Prostata"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patho-patient-1"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-patho-encounter-1"
+        },
+        "recordedDate": "2024-02-16"
+      }
+    }
+  ],
+  "type": "document",
+  "timestamp": "2024-01-20T15:30:00+01:00"
+}

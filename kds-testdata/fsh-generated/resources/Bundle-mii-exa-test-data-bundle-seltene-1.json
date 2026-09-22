@@ -393,6 +393,475 @@
     {
       "request": {
         "method": "PUT",
+        "url": "Observation/mii-exa-test-data-patient-3-seltene-geburtsgewicht-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-3-seltene-geburtsgewicht-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-3-seltene-geburtsgewicht-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-geburtsgewicht"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8339-4",
+              "display": "Birth weight Measured"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "system": "http://unitsofmeasure.org",
+          "code": "g",
+          "value": 3240,
+          "unit": "Gramm"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-seltene-patient-1"
+        },
+        "effectiveDateTime": "1995-02-10"
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-patient-3-seltene-geburtslaenge-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-3-seltene-geburtslaenge-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-3-seltene-geburtslaenge-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-geburtslaenge"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "89269-5",
+              "display": "Body height Measured --at birth"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "system": "http://unitsofmeasure.org",
+          "code": "cm",
+          "value": 53,
+          "unit": "Zentimeter"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-seltene-patient-1"
+        },
+        "effectiveDateTime": "1995-02-10"
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-patient-3-seltene-gestationsalter-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-3-seltene-gestationsalter-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-3-seltene-gestationsalter-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-gestationsalter"
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "76516-4",
+              "display": "Gestational age--at birth"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "system": "http://unitsofmeasure.org",
+          "code": "wk",
+          "value": 39,
+          "unit": "Wochen"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-seltene-patient-1"
+        },
+        "effectiveDateTime": "1995-02-10"
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-patient-3-seltene-consanguinity-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-3-seltene-consanguinity-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-3-seltene-consanguinity-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-consanguinity"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "social-history"
+              }
+            ]
+          }
+        ],
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "373067005",
+              "system": "http://snomed.info/sct",
+              "display": "No"
+            }
+          ],
+          "text": "Eltern nicht blutsverwandt"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "842009",
+              "display": "Consanguinity"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-seltene-patient-1"
+        },
+        "effectiveDateTime": "2024-03-05"
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-patient-3-seltene-icf-assessment-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-3-seltene-icf-assessment-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-3-seltene-icf-assessment-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-icf-assessment"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "performer": [
+          {
+            "reference": "Practitioner/mii-exa-test-data-practitioner-physician-1"
+          }
+        ],
+        "note": [
+          {
+            "text": "Leichtgradig reduzierte Muskelkraft der unteren Extremitaet bei Marfan-Syndrom."
+          }
+        ],
+        "component": [
+          {
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": ".1",
+                  "system": "https://terminologien.bfarm.de/fhir/CodeSystem/icf-q-ausmass-der-schaedigung"
+                }
+              ],
+              "text": "Schaedigung leicht ausgepraegt (5-24 %)"
+            },
+            "code": {
+              "coding": [
+                {
+                  "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/CodeSystem/mii-cs-seltene-icf-beurteilungsmerkmal",
+                  "code": "extent-of-impairment"
+                }
+              ]
+            }
+          }
+        ],
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "b730",
+              "system": "http://hl7.org/fhir/sid/icf",
+              "display": "Muscle power functions"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-seltene-patient-1"
+        },
+        "effectiveDateTime": "2024-03-12"
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "ResearchSubject/mii-exa-test-data-patient-3-seltene-registerteilnahme-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/ResearchSubject/mii-exa-test-data-patient-3-seltene-registerteilnahme-1",
+      "resource": {
+        "resourceType": "ResearchSubject",
+        "id": "mii-exa-test-data-patient-3-seltene-registerteilnahme-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-registerteilnahme"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-ex-seltene-register",
+            "valueReference": {
+              "reference": "Library/mii-exa-test-data-seltene-register-katalog-1"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://reconnet.ern-net.eu/fhir/sid/subject",
+            "value": "RCN-DE-001358"
+          }
+        ],
+        "period": {
+          "start": "2024-04-02"
+        },
+        "status": "on-study",
+        "study": {
+          "reference": "ResearchStudy/mii-exa-test-data-seltene-register-study-1"
+        },
+        "individual": {
+          "reference": "Patient/mii-exa-test-data-seltene-patient-1"
+        },
+        "consent": {
+          "reference": "Consent/mii-exa-test-data-seltene-register-consent-1"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Library/mii-exa-test-data-seltene-register-katalog-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Library/mii-exa-test-data-seltene-register-katalog-1",
+      "resource": {
+        "resourceType": "Library",
+        "id": "mii-exa-test-data-seltene-register-katalog-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata"
+        },
+        "identifier": [
+          {
+            "system": "https://reconnet.ern-net.eu/fhir/sid/registry",
+            "value": "RECONNET-REG"
+          }
+        ],
+        "relatedArtifact": [
+          {
+            "document": {
+              "url": "https://reconnet.ern-net.eu/"
+            },
+            "type": "documentation",
+            "url": "https://reconnet.ern-net.eu/"
+          }
+        ],
+        "name": "ERNReCONNETRegistry",
+        "title": "ERN ReCONNET Registry - Katalogeintrag",
+        "status": "active",
+        "type": {
+          "coding": [
+            {
+              "code": "asset-collection",
+              "system": "http://terminology.hl7.org/CodeSystem/library-type"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "ResearchStudy/mii-exa-test-data-seltene-register-study-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/ResearchStudy/mii-exa-test-data-seltene-register-study-1",
+      "resource": {
+        "resourceType": "ResearchStudy",
+        "id": "mii-exa-test-data-seltene-register-study-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata"
+        },
+        "identifier": [
+          {
+            "system": "https://reconnet.ern-net.eu/fhir/sid/registry",
+            "value": "RECONNET-REG"
+          }
+        ],
+        "title": "ERN ReCONNET Registry - Rare Connective Tissue and Musculoskeletal Diseases",
+        "status": "active",
+        "description": "Register des Europaeischen Referenznetzwerks fuer seltene Bindegewebs- und Muskel-Skelett-Erkrankungen."
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Consent/mii-exa-test-data-seltene-register-consent-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Consent/mii-exa-test-data-seltene-register-consent-1",
+      "resource": {
+        "resourceType": "Consent",
+        "id": "mii-exa-test-data-seltene-register-consent-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "research",
+                "system": "http://terminology.hl7.org/CodeSystem/consentcategorycodes"
+              }
+            ]
+          }
+        ],
+        "status": "active",
+        "scope": {
+          "coding": [
+            {
+              "code": "research",
+              "system": "http://terminology.hl7.org/CodeSystem/consentscope"
+            }
+          ]
+        },
+        "patient": {
+          "reference": "Patient/mii-exa-test-data-seltene-patient-1"
+        },
+        "dateTime": "2024-04-02",
+        "policyRule": {
+          "coding": [
+            {
+              "code": "cric",
+              "system": "http://terminology.hl7.org/CodeSystem/consentpolicycodes"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
         "url": "Observation/mii-exa-test-data-patient-3-seltene-hpo-assessment-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-3-seltene-hpo-assessment-1",

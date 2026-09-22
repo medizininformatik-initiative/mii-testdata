@@ -1,0 +1,81 @@
+{
+  "resourceType": "Observation",
+  "id": "mii-exa-test-data-patho-micro-grouper-1",
+  "meta": {
+    "security": [
+      {
+        "code": "HTEST",
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "display": "test health data"
+      }
+    ],
+    "source": "https://www.charite.de/fhir/kds-testdata",
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-microscopic-grouper"
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        }
+      ]
+    }
+  ],
+  "performer": [
+    {
+      "reference": "Practitioner/mii-exa-test-data-patho-practitioner-1"
+    }
+  ],
+  "hasMember": [
+    {
+      "reference": "Observation/mii-exa-test-data-patho-histo-typ-01"
+    },
+    {
+      "reference": "Observation/mii-exa-test-data-patho-morph-text-01"
+    },
+    {
+      "reference": "Observation/mii-exa-test-data-patho-primaer-gleason-01"
+    },
+    {
+      "reference": "Observation/mii-exa-test-data-patho-sekundaer-gleason-01"
+    },
+    {
+      "reference": "Observation/mii-exa-test-data-patho-gleason-grading-01"
+    },
+    {
+      "reference": "Observation/mii-exa-test-data-patho-tumoranteil-01"
+    },
+    {
+      "reference": "Observation/mii-exa-test-data-patho-histo-typ-03"
+    },
+    {
+      "reference": "Observation/mii-exa-test-data-patho-morph-text-03"
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "22635-7"
+      }
+    ]
+  },
+  "status": "final",
+  "subject": {
+    "reference": "Patient/mii-exa-test-data-patho-patient-1"
+  },
+  "effectiveDateTime": "2024-01-17T10:00:00+01:00",
+  "valueString": "Mikroskopische Befunde beider Prostatastanzen",
+  "bodySite": {
+    "coding": [
+      {
+        "code": "41216001",
+        "system": "http://snomed.info/sct",
+        "display": "Prostate"
+      }
+    ]
+  }
+}

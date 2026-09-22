@@ -219,6 +219,539 @@
     {
       "request": {
         "method": "PUT",
+        "url": "ResearchStudy/mii-exa-test-data-studien-studie-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/ResearchStudy/mii-exa-test-data-studien-studie-1",
+      "resource": {
+        "resourceType": "ResearchStudy",
+        "id": "mii-exa-test-data-studien-studie-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-studie/StructureDefinition/mii-pr-studie-studie"
+          ]
+        },
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "value",
+                "valueString": "Biomarker-basierte Verlaufsprognose endokriner Erkrankungen (MII-BIOMARKER-2024)"
+              },
+              {
+                "url": "type",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "code": "scientific",
+                      "system": "http://terminology.hl7.org/CodeSystem/title-type"
+                    }
+                  ]
+                }
+              }
+            ],
+            "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-ResearchStudy.label"
+          },
+          {
+            "extension": [
+              {
+                "url": "role",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "code": "sponsor",
+                      "system": "http://hl7.org/fhir/research-study-party-role"
+                    }
+                  ]
+                }
+              },
+              {
+                "url": "party",
+                "valueReference": {
+                  "reference": "Organization/mii-exa-test-data-organization-charite"
+                }
+              }
+            ],
+            "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-ResearchStudy.associatedParty"
+          },
+          {
+            "extension": [
+              {
+                "url": "status",
+                "valueString": "Zustimmende Bewertung"
+              },
+              {
+                "url": "kommission",
+                "valueString": "Ethikkommission der Charité - Universitätsmedizin Berlin"
+              },
+              {
+                "url": "ethiknummer",
+                "valueString": "EA1/123/24"
+              }
+            ],
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-studie/StructureDefinition/mii-ex-studie-ethikvotum"
+          },
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-studie/StructureDefinition/mii-ex-studie-studienregister",
+            "valueReference": {
+              "reference": "Library/mii-exa-test-data-studien-register-1"
+            }
+          },
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-studie/StructureDefinition/mii-ex-studie-eligibility",
+            "valueReference": {
+              "reference": "Group/mii-exa-test-data-studien-group-1"
+            }
+          },
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-studie/StructureDefinition/mii-ex-studie-akronym",
+            "valueString": "MII-BIOMARKER-2024"
+          },
+          {
+            "extension": [
+              {
+                "url": "rekrutierungsstart",
+                "valueDate": "2024-01-15"
+              },
+              {
+                "url": "rekrutierungsziel",
+                "valueInteger": 200
+              },
+              {
+                "url": "rekrutierungsstand",
+                "valueInteger": 87
+              },
+              {
+                "url": "rekrutierungsstand-genauigkeit",
+                "valueString": "exakt"
+              },
+              {
+                "url": "rekrutierungsstand-datum",
+                "valueDate": "2024-07-01"
+              }
+            ],
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-studie/StructureDefinition/mii-ex-studie-rekrutierung"
+          },
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-studie/StructureDefinition/mii-ex-studie-finanzierung",
+            "valueString": "Öffentliche Förderinstitutionen, aus Steuermitteln getragene Institutionen (DFG, BMBF u. a.)"
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://www.medizininformatik-initiative.de/fhir/sid/drks",
+            "value": "DRKS00034567"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "phase-2",
+                "system": "http://terminology.hl7.org/CodeSystem/research-study-phase"
+              }
+            ]
+          }
+        ],
+        "focus": [
+          {
+            "coding": [
+              {
+                "code": "362969004",
+                "system": "http://snomed.info/sct",
+                "display": "Disorder of endocrine system (disorder)"
+              }
+            ],
+            "text": "Endokrine Erkrankungen"
+          }
+        ],
+        "keyword": [
+          {
+            "text": "Biomarker"
+          }
+        ],
+        "arm": [
+          {
+            "name": "Interventionsarm",
+            "description": "Biomarker-gesteuerte Therapieanpassung"
+          },
+          {
+            "name": "Kontrollarm",
+            "description": "Standardtherapie"
+          }
+        ],
+        "title": "Biomarker-basierte Verlaufsprognose endokriner Erkrankungen",
+        "status": "active"
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Library/mii-exa-test-data-studien-register-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Library/mii-exa-test-data-studien-register-1",
+      "resource": {
+        "resourceType": "Library",
+        "id": "mii-exa-test-data-studien-register-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-studie/StructureDefinition/mii-pr-studie-register"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-studie/StructureDefinition/mii-ex-studie-quell-register",
+            "valueBoolean": true
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://www.medizininformatik-initiative.de/fhir/sid/drks",
+            "value": "DRKS"
+          }
+        ],
+        "relatedArtifact": [
+          {
+            "document": {
+              "url": "https://drks.de/"
+            },
+            "type": "documentation",
+            "url": "https://drks.de/"
+          }
+        ],
+        "type": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/library-type",
+              "code": "asset-collection"
+            }
+          ]
+        },
+        "name": "DRKS",
+        "title": "DRKS - Deutsches Register Klinischer Studien",
+        "status": "active"
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "ResearchSubject/mii-exa-test-data-studien-proband-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/ResearchSubject/mii-exa-test-data-studien-proband-1",
+      "resource": {
+        "resourceType": "ResearchSubject",
+        "id": "mii-exa-test-data-studien-proband-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-studie/StructureDefinition/mii-pr-studie-proband"
+          ]
+        },
+        "identifier": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "code": "ANON"
+                }
+              ]
+            },
+            "system": "https://www.medizininformatik-initiative.de/fhir/core/sid/SubjectIdentificationCode",
+            "value": "123456789"
+          }
+        ],
+        "period": {
+          "start": "2024-03-15",
+          "end": "2025-03-15"
+        },
+        "status": "on-study",
+        "study": {
+          "reference": "ResearchStudy/mii-exa-test-data-studien-studie-1"
+        },
+        "individual": {
+          "reference": "Patient/mii-exa-test-data-studien-patient-1"
+        },
+        "consent": {
+          "reference": "Consent/mii-exa-test-data-studien-consent-1"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Consent/mii-exa-test-data-studien-consent-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Consent/mii-exa-test-data-studien-consent-1",
+      "resource": {
+        "resourceType": "Consent",
+        "id": "mii-exa-test-data-studien-consent-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "research",
+                "system": "http://terminology.hl7.org/CodeSystem/consentcategorycodes"
+              }
+            ]
+          }
+        ],
+        "status": "active",
+        "scope": {
+          "coding": [
+            {
+              "code": "research",
+              "system": "http://terminology.hl7.org/CodeSystem/consentscope"
+            }
+          ]
+        },
+        "patient": {
+          "reference": "Patient/mii-exa-test-data-studien-patient-1"
+        },
+        "dateTime": "2024-03-15",
+        "policyRule": {
+          "coding": [
+            {
+              "code": "cric",
+              "system": "http://terminology.hl7.org/CodeSystem/consentpolicycodes"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "DocumentReference/mii-exa-test-data-studien-dokument-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/DocumentReference/mii-exa-test-data-studien-dokument-1",
+      "resource": {
+        "resourceType": "DocumentReference",
+        "id": "mii-exa-test-data-studien-dokument-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-studie/StructureDefinition/mii-pr-studie-dokument"
+          ]
+        },
+        "author": [
+          {
+            "reference": "Practitioner/mii-exa-test-data-practitioner-physician-1"
+          }
+        ],
+        "content": [
+          {
+            "attachment": {
+              "contentType": "application/pdf",
+              "url": "https://www.charite.de/studien/mii-biomarker-2024/Studienprotokoll_v2.pdf",
+              "size": 1548576,
+              "title": "Studienprotokoll MII-BIOMARKER-2024 v2.0"
+            }
+          }
+        ],
+        "context": {
+          "related": [
+            {
+              "reference": "ResearchStudy/mii-exa-test-data-studien-studie-1"
+            }
+          ]
+        },
+        "status": "current",
+        "custodian": {
+          "reference": "Organization/mii-exa-test-data-organization-charite"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "EvidenceVariable/mii-exa-test-data-studien-kriterium-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/EvidenceVariable/mii-exa-test-data-studien-kriterium-1",
+      "resource": {
+        "resourceType": "EvidenceVariable",
+        "id": "mii-exa-test-data-studien-kriterium-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-studie/StructureDefinition/mii-pr-studie-ein-auschluss-kriterium"
+          ]
+        },
+        "characteristic": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-EvidenceVariable.characteristic.linkId",
+                "valueId": "krit-alter"
+              },
+              {
+                "extension": [
+                  {
+                    "url": "type",
+                    "valueCodeableConcept": {
+                      "coding": [
+                        {
+                          "code": "424144002",
+                          "system": "http://snomed.info/sct",
+                          "display": "Current chronological age"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "valueQuantity": {
+                      "value": 18,
+                      "comparator": ">=",
+                      "unit": "year",
+                      "system": "http://unitsofmeasure.org",
+                      "code": "a"
+                    },
+                    "url": "value"
+                  }
+                ],
+                "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-EvidenceVariable.characteristic.definitionByTypeAndValue"
+              }
+            ],
+            "definitionCodeableConcept": {
+              "text": "Mindestalter"
+            },
+            "description": "Alter mindestens 18 Jahre",
+            "exclude": false
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-EvidenceVariable.characteristic.linkId",
+                "valueId": "krit-endokrin"
+              }
+            ],
+            "description": "Gesicherte Diagnose einer endokrinen Erkrankung (z. B. Diabetes mellitus Typ 2)",
+            "definitionCodeableConcept": {
+              "coding": [
+                {
+                  "code": "44054006",
+                  "system": "http://snomed.info/sct",
+                  "display": "Diabetes mellitus type 2 (disorder)"
+                }
+              ]
+            },
+            "exclude": false
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-EvidenceVariable.characteristic.definitionCanonical",
+                "valueCanonical": "https://www.medizininformatik-initiative.de/fhir/EvidenceVariable/administrative-gender"
+              }
+            ],
+            "definitionCodeableConcept": {
+              "text": "Alle"
+            },
+            "description": "Geschlecht: alle",
+            "exclude": false
+          },
+          {
+            "description": "Bestehende Schwangerschaft",
+            "definitionCodeableConcept": {
+              "coding": [
+                {
+                  "code": "77386006",
+                  "system": "http://snomed.info/sct",
+                  "display": "Pregnancy (finding)"
+                }
+              ]
+            },
+            "exclude": true
+          }
+        ],
+        "status": "active"
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Group/mii-exa-test-data-studien-group-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Group/mii-exa-test-data-studien-group-1",
+      "resource": {
+        "resourceType": "Group",
+        "id": "mii-exa-test-data-studien-group-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata"
+        },
+        "active": true,
+        "type": "person",
+        "actual": false,
+        "code": {
+          "coding": [
+            {
+              "code": "116154003",
+              "system": "http://snomed.info/sct",
+              "display": "Patient (person)"
+            }
+          ]
+        },
+        "managingEntity": {
+          "reference": "Organization/mii-exa-test-data-organization-charite"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
         "url": "Organization/mii-exa-test-data-organization-charite"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Organization/mii-exa-test-data-organization-charite",

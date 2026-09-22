@@ -1,0 +1,105 @@
+{
+  "resourceType": "EvidenceVariable",
+  "id": "mii-exa-test-data-studien-kriterium-1",
+  "meta": {
+    "security": [
+      {
+        "code": "HTEST",
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "display": "test health data"
+      }
+    ],
+    "source": "https://www.charite.de/fhir/kds-testdata",
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/modul-studie/StructureDefinition/mii-pr-studie-ein-auschluss-kriterium"
+    ]
+  },
+  "characteristic": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-EvidenceVariable.characteristic.linkId",
+          "valueId": "krit-alter"
+        },
+        {
+          "extension": [
+            {
+              "url": "type",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "424144002",
+                    "system": "http://snomed.info/sct",
+                    "display": "Current chronological age"
+                  }
+                ]
+              }
+            },
+            {
+              "valueQuantity": {
+                "value": 18,
+                "comparator": ">=",
+                "unit": "year",
+                "system": "http://unitsofmeasure.org",
+                "code": "a"
+              },
+              "url": "value"
+            }
+          ],
+          "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-EvidenceVariable.characteristic.definitionByTypeAndValue"
+        }
+      ],
+      "definitionCodeableConcept": {
+        "text": "Mindestalter"
+      },
+      "description": "Alter mindestens 18 Jahre",
+      "exclude": false
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-EvidenceVariable.characteristic.linkId",
+          "valueId": "krit-endokrin"
+        }
+      ],
+      "description": "Gesicherte Diagnose einer endokrinen Erkrankung (z. B. Diabetes mellitus Typ 2)",
+      "definitionCodeableConcept": {
+        "coding": [
+          {
+            "code": "44054006",
+            "system": "http://snomed.info/sct",
+            "display": "Diabetes mellitus type 2 (disorder)"
+          }
+        ]
+      },
+      "exclude": false
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-EvidenceVariable.characteristic.definitionCanonical",
+          "valueCanonical": "https://www.medizininformatik-initiative.de/fhir/EvidenceVariable/administrative-gender"
+        }
+      ],
+      "definitionCodeableConcept": {
+        "text": "Alle"
+      },
+      "description": "Geschlecht: alle",
+      "exclude": false
+    },
+    {
+      "description": "Bestehende Schwangerschaft",
+      "definitionCodeableConcept": {
+        "coding": [
+          {
+            "code": "77386006",
+            "system": "http://snomed.info/sct",
+            "display": "Pregnancy (finding)"
+          }
+        ]
+      },
+      "exclude": true
+    }
+  ],
+  "status": "active"
+}

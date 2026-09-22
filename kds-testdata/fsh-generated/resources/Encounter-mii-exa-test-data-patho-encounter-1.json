@@ -12,7 +12,7 @@
     "source": "https://www.charite.de/fhir/kds-testdata"
   },
   "period": {
-    "start": "2024-02-01",
+    "start": "2024-01-10",
     "end": "2024-02-20"
   },
   "status": "finished",
