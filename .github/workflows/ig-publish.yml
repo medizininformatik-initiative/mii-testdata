@@ -156,8 +156,13 @@ jobs:
       env:
         TX: ${{ steps.tx.outputs.tx }}
       run: |
+        # -fhir-settings allowlistet den lokalen SU-TermServ-Proxy
+        # (http://127.0.0.1:8090) gegen die SSRF-Haertung des Publishers
+        # (2.3.1+ verweigert sonst plain-HTTP/private-network -tx; Muster
+        # aus dem mii-kds-module-template).
         java -Xmx6g -Dfile.encoding=UTF-8 -jar ../publisher.jar \
-          -ig . -tx "$TX" -packages ../local-packages
+          -ig . -tx "$TX" -packages ../local-packages \
+          -fhir-settings "$GITHUB_WORKSPACE/.github/fhir-settings.json"
 
     - name: Stop SU-TermServ proxy
       if: always()
