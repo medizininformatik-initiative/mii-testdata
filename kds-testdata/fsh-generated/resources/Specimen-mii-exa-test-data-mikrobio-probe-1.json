@@ -1,0 +1,40 @@
+{
+  "resourceType": "Specimen",
+  "id": "mii-exa-test-data-mikrobio-probe-1",
+  "meta": {
+    "security": [
+      {
+        "code": "HTEST",
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "display": "test health data"
+      }
+    ],
+    "source": "https://www.charite.de/fhir/kds-testdata",
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-probe"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "https://www.charite.de/fhir/sid/Probennummer",
+      "value": "SPUTUM-001"
+    }
+  ],
+  "type": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "119334006",
+        "display": "Sputum specimen (specimen)"
+      }
+    ]
+  },
+  "collection": {
+    "collectedDateTime": "2026-04-02T07:45:00+02:00"
+  },
+  "status": "available",
+  "subject": {
+    "reference": "Patient/mii-exa-test-data-mikrobio-patient-1"
+  },
+  "receivedTime": "2026-04-02T08:15:00+02:00"
+}

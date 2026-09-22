@@ -287,6 +287,53 @@
     {
       "request": {
         "method": "PUT",
+        "url": "Specimen/mii-exa-test-data-mikrobio-probe-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Specimen/mii-exa-test-data-mikrobio-probe-1",
+      "resource": {
+        "resourceType": "Specimen",
+        "id": "mii-exa-test-data-mikrobio-probe-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-probe"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://www.charite.de/fhir/sid/Probennummer",
+            "value": "SPUTUM-001"
+          }
+        ],
+        "type": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "119334006",
+              "display": "Sputum specimen (specimen)"
+            }
+          ]
+        },
+        "collection": {
+          "collectedDateTime": "2026-04-02T07:45:00+02:00"
+        },
+        "status": "available",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-mikrobio-patient-1"
+        },
+        "receivedTime": "2026-04-02T08:15:00+02:00"
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
         "url": "Device/mii-exa-test-data-mikrobio-device-maldi-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Device/mii-exa-test-data-mikrobio-device-maldi-1",
@@ -1147,6 +1194,175 @@
           ]
         },
         "issued": "2026-04-02T11:00:00+02:00"
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-mikrobio-spezifische-mikroskopie-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-mikrobio-spezifische-mikroskopie-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-mikrobio-spezifische-mikroskopie-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/mikrobiologie-lab-system",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-spezifische-mikroskopie"
+          ]
+        },
+        "identifier": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "code": "OBI"
+                }
+              ]
+            },
+            "assigner": {
+              "identifier": {
+                "system": "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier",
+                "value": "DIZ-CHA"
+              }
+            },
+            "system": "https://www.charite.de/fhir/sid/test-lab-results",
+            "value": "spezifische-mikroskopie-1"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                "code": "MB",
+                "display": "Microbiology"
+              }
+            ]
+          }
+        ],
+        "subject": {
+          "identifier": {
+            "system": "https://www.charite.de/fhir/sid/patientenidentifikation",
+            "value": "MIKROBIO-TEST-001"
+          },
+          "reference": "Patient/mii-exa-test-data-mikrobio-patient-1"
+        },
+        "encounter": {
+          "identifier": {
+            "system": "https://www.charite.de/fhir/sid/encounter-identifier",
+            "value": "MIKROBIO-ENC-001"
+          },
+          "reference": "Encounter/mii-exa-test-data-mikrobio-encounter-1"
+        },
+        "specimen": {
+          "identifier": {
+            "system": "https://www.charite.de/fhir/sid/Probennummer",
+            "value": "SPUTUM-001"
+          },
+          "reference": "Specimen/mii-exa-test-data-mikrobio-probe-1"
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "72357-7",
+              "system": "http://loinc.org",
+              "display": "Microscopic observation [Presence] in Specimen by Acid fast stain"
+            }
+          ]
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "260373001",
+              "system": "http://snomed.info/sct",
+              "display": "Detected (qualifier value)"
+            }
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-ex-mikrobio-faerbung",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "36878004",
+                  "system": "http://snomed.info/sct",
+                  "display": "Acid fast Kinyoun's cold carbolfuchsin stain method (procedure)"
+                }
+              ]
+            }
+          }
+        ],
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "103392008",
+                  "display": "Semi-quantitative value (qualifier value)"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "441517005",
+                  "system": "http://snomed.info/sct",
+                  "display": "Present two plus out of three plus (qualifier value)"
+                }
+              ]
+            }
+          }
+        ],
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "code": "A",
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "display": "Abnormal"
+              }
+            ]
+          }
+        ],
+        "note": [
+          {
+            "text": "Saeurefeste Staebchen 2+ — V.a. Mykobakterien, Kultur und PCR angefordert."
+          }
+        ],
+        "status": "final",
+        "effectiveDateTime": "2026-04-02T10:00:00+02:00",
+        "_effectiveDateTime": {
+          "extension": [
+            {
+              "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum",
+              "valueCoding": {
+                "code": "399445004",
+                "system": "http://snomed.info/sct",
+                "display": "Specimen collection date (observable entity)"
+              }
+            }
+          ]
+        },
+        "issued": "2026-04-02T11:30:00+02:00"
       }
     },
     {

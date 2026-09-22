@@ -17,6 +17,7 @@ Description: "Bundle: Bildgebung Testdaten Patient-1"
 * insert AddBundleEntry(mii-exa-test-data-bildgebungsprozedur, Procedure)
 * insert AddBundleEntry(mii-exa-test-data-koerperstruktur, BodyStructure)
 * insert AddBundleEntry(mii-exa-test-data-radiologische-beobachtung, Observation)
+* insert AddBundleEntry(mii-exa-test-data-radiologische-messung-1, Observation)
 * insert AddBundleEntry(mii-exa-test-data-befundbericht, DiagnosticReport)
 * insert AddBundleEntry(mii-exa-test-data-geraet, Device)
 * insert AddBundleEntry(mii-exa-test-data-befundungsprozedur, Procedure)

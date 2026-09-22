@@ -31,8 +31,14 @@ Description: "Bundle: Patient-1"
 * timestamp = "2025-06-18T13:51:00+02:00"
 * insert AddBundleEntry(mii-exa-test-data-patient-1, Patient)
 * insert AddBundleEntry(mii-exa-test-data-patient-1-consent-1, Consent)
+* insert AddBundleEntry(mii-exa-test-data-patient-1-consent-docref-1, DocumentReference)
+* insert AddBundleEntry(mii-exa-test-data-patient-1-consent-provenance-1, Provenance)
 * insert AddBundleEntry(mii-exa-test-data-patient-1-vitalstatus-1, Observation)
 * insert AddBundleEntry(mii-exa-test-data-patient-1-todesursache-1, Condition)
+* insert AddBundleEntry(mii-exa-test-data-patient-1-allergie-1, AllergyIntolerance)
+// PatientPseudonymisiert: eigenstaendiger pseudonymisierter Testpatient (keine
+// klinischen Referenzen); Registrierung im Pat-1-Bundle nur fuer den Transport.
+* insert AddBundleEntry(mii-exa-test-data-patient-pseudonym-1, Patient)
 * insert AddBundleEntry(mii-exa-test-data-patient-1-diagnose-1, Condition)
 * insert AddBundleEntry(mii-exa-test-data-patient-1-diagnose-2, Condition)
 * insert AddBundleEntry(mii-exa-test-data-patient-1-encounter-1, Encounter)

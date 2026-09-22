@@ -24,6 +24,8 @@ Description: "Bundle: MTB Testdaten Patient-1"
 * insert AddBundleEntry(mii-exa-test-data-mtb-ngs-bericht-1, DiagnosticReport)
 * insert AddBundleEntry(mii-exa-test-data-mtb-genomic-study-1, Procedure)
 * insert AddBundleEntry(mii-exa-test-data-mtb-genomic-study-analysis-1, Procedure)
+* insert AddBundleEntry(mii-exa-test-data-mtb-device-sequencer-1, Device)
+* insert AddBundleEntry(mii-exa-test-data-mtb-panel-devicedef-1, DeviceDefinition)
 * insert AddBundleEntry(mii-exa-test-data-mtb-einfache-variante-1, Observation)
 * insert AddBundleEntry(mii-exa-test-data-mtb-copy-number-variant-1, Observation)
 * insert AddBundleEntry(mii-exa-test-data-mtb-dna-fusion-1, Observation)

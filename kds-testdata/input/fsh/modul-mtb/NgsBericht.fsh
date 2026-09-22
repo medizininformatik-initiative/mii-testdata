@@ -67,6 +67,11 @@ Description: "Test instance for MTB genomic study analysis with method and chang
 * extension[=].valueCodeableConcept = http://www.sequenceontology.org#SO:0001483 "SNV"
 * extension[+].url = "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-genome-build"
 * extension[=].valueCodeableConcept = $loinc#LA26806-2 "GRCh38"
+* extension[+].url = "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-device"
+* extension[=].extension[+].url = "device"
+* extension[=].extension[=].valueReference = Reference(mii-exa-test-data-mtb-device-sequencer-1)
+* extension[=].extension[+].url = "function"
+* extension[=].extension[=].valueCodeableConcept = https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/CodeSystem/mii-cs-mtb-genomicanalysis-devicefunction#sequencing-device
 
 // =============================================================================
 // 11. MII_PR_MTB_Einfache_Variante (Observation, extends MolGen Variante)

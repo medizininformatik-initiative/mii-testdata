@@ -870,3 +870,44 @@ Description: "Mikrobio: Allgemeine Kultur — Ergebnis fehlt (Probe abgelaufen)"
 * method.coding = $sct#703750006 "Aerobic culture technique (qualifier value)"
 * method.coding.display = "Aerobic culture technique (qualifier value)"
 * note[+].text = "Kultur konnte nicht ausgewertet werden (Probe abgelaufen)."
+
+// ----------------------------------------------------------------------------
+// Spezifische Mikroskopie — Saeurefeste Staebchen im Sputum (Kinyoun-Faerbung)
+// Covers: mii-pr-mikrobio-spezifische-mikroskopie
+// ----------------------------------------------------------------------------
+Instance: mii-exa-test-data-mikrobio-spezifische-mikroskopie-1
+InstanceOf: https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-spezifische-mikroskopie
+Usage: #example
+Description: "Mikrobio: Spezifische Mikroskopie — saeurefeste Staebchen im Sputum nachgewiesen (Kinyoun, 2+)"
+* insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/mikrobiologie-lab-system"
+* identifier[analyseBefundCode].type.coding[observationInstanceV2] = $v2-0203#OBI
+* identifier[analyseBefundCode].system = "https://www.charite.de/fhir/sid/test-lab-results"
+* identifier[analyseBefundCode].value = "spezifische-mikroskopie-1"
+* identifier[analyseBefundCode].assigner.identifier.system = "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"
+* identifier[analyseBefundCode].assigner.identifier.value = "DIZ-CHA"
+* status = #final
+* category[observation-category] = $observation-category#laboratory
+* category[mibi-category] = $v2-0074#MB "Microbiology"
+* subject = Reference(mii-exa-test-data-mikrobio-patient-1)
+* subject.identifier.system = "https://www.charite.de/fhir/sid/patientenidentifikation"
+* subject.identifier.value = "MIKROBIO-TEST-001"
+* encounter = Reference(mii-exa-test-data-mikrobio-encounter-1)
+* encounter.identifier.system = "https://www.charite.de/fhir/sid/encounter-identifier"
+* encounter.identifier.value = "MIKROBIO-ENC-001"
+* effectiveDateTime = "2026-04-02T10:00:00+02:00"
+* effectiveDateTime.extension[+].url = "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum"
+* effectiveDateTime.extension[=].valueCoding = $sct#399445004 "Specimen collection date (observable entity)"
+* issued = "2026-04-02T11:30:00+02:00"
+* specimen = Reference(mii-exa-test-data-mikrobio-probe-1)
+* specimen.identifier.system = "https://www.charite.de/fhir/sid/Probennummer"
+* specimen.identifier.value = "SPUTUM-001"
+* code.coding = $loinc#72357-7 "Microscopic observation [Presence] in Specimen by Acid fast stain"
+* code.coding.display = "Microscopic observation [Presence] in Specimen by Acid fast stain"
+* valueCodeableConcept.coding = $sct#260373001 "Detected (qualifier value)"
+* valueCodeableConcept.coding.display = "Detected (qualifier value)"
+* extension[faerbung].valueCodeableConcept = $sct#36878004 "Acid fast Kinyoun's cold carbolfuchsin stain method (procedure)"
+* component[menge].code = $sct#103392008 "Semi-quantitative value (qualifier value)"
+* component[menge].valueCodeableConcept = $sct#441517005 "Present two plus out of three plus (qualifier value)"
+* interpretation = $v3-ObservationInterpretation#A "Abnormal"
+* note[+].text = "Saeurefeste Staebchen 2+ — V.a. Mykobakterien, Kultur und PCR angefordert."

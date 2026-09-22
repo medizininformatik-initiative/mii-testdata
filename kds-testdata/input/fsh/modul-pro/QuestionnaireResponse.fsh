@@ -103,3 +103,128 @@ Description: "PRO QuestionnaireResponse: PROMIS Depression SF4a for Patient 1 (m
 // T-Score: raw 7 -> T-score 52.7
 * item[+].linkId = "promis-depression-score-tscore"
 * item[=].answer.valueDecimal = 52.7
+
+
+// -----------------------------------------------------------------------------
+// PHQ-15 QuestionnaireResponse (Patient 1, medium somatic symptom severity, score 12)
+// Covers: MII_PR_PRO_QuestionnaireResponse (PHQ-15); Basis fuer PHQ-15 Score Observation
+// -----------------------------------------------------------------------------
+Instance: mii-exa-test-data-patient-1-pro-phq15-response
+InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response
+Usage: #example
+Description: "PRO QuestionnaireResponse: PHQ-15 for Patient 1 (medium somatic symptom severity, score 12)"
+* insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
+* status = #completed
+* language = #de
+* subject = Reference(mii-exa-test-data-pro-patient-1)
+* authored = "2024-03-15T10:30:00+01:00"
+* questionnaire = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-phq-15"
+
+// q1a: Stomach pain - Bothered a little (1)
+* item[+].linkId = "phq-phq1a"
+* item[=].answer[0].valueCoding = $pro-phq15-answers#bothered-a-little "Bothered a little"
+// q1b: Back pain - Bothered a lot (2)
+* item[+].linkId = "phq-phq1b"
+* item[=].answer[0].valueCoding = $pro-phq15-answers#bothered-a-lot "Bothered a lot"
+// q1c: Pain in arms, legs, or joints - Bothered a little (1)
+* item[+].linkId = "phq-phq1c"
+* item[=].answer[0].valueCoding = $pro-phq15-answers#bothered-a-little "Bothered a little"
+// q1d: Menstrual cramps - Not bothered (0)
+* item[+].linkId = "phq-phq1d"
+* item[=].answer[0].valueCoding = $pro-phq15-answers#not-bothered "Not bothered at all"
+// q1e: Headaches - Bothered a little (1)
+* item[+].linkId = "phq-phq1e"
+* item[=].answer[0].valueCoding = $pro-phq15-answers#bothered-a-little "Bothered a little"
+// q1f: Chest pain - Not bothered (0)
+* item[+].linkId = "phq-phq1f"
+* item[=].answer[0].valueCoding = $pro-phq15-answers#not-bothered "Not bothered at all"
+// q1g: Dizziness - Bothered a little (1)
+* item[+].linkId = "phq-phq1g"
+* item[=].answer[0].valueCoding = $pro-phq15-answers#bothered-a-little "Bothered a little"
+// q1h: Fainting spells - Not bothered (0)
+* item[+].linkId = "phq-phq1h"
+* item[=].answer[0].valueCoding = $pro-phq15-answers#not-bothered "Not bothered at all"
+// q1i: Heart pounding or racing - Bothered a little (1)
+* item[+].linkId = "phq-phq1i"
+* item[=].answer[0].valueCoding = $pro-phq15-answers#bothered-a-little "Bothered a little"
+// q1j: Shortness of breath - Not bothered (0)
+* item[+].linkId = "phq-phq1j"
+* item[=].answer[0].valueCoding = $pro-phq15-answers#not-bothered "Not bothered at all"
+// q1k: Pain or problems during intercourse - Not bothered (0)
+* item[+].linkId = "phq-phq1k"
+* item[=].answer[0].valueCoding = $pro-phq15-answers#not-bothered "Not bothered at all"
+// q1l: Constipation, loose bowels, or diarrhea - Bothered a little (1)
+* item[+].linkId = "phq-phq1l"
+* item[=].answer[0].valueCoding = $pro-phq15-answers#bothered-a-little "Bothered a little"
+// q1m: Nausea, gas, or indigestion - Bothered a little (1)
+* item[+].linkId = "phq-phq1m"
+* item[=].answer[0].valueCoding = $pro-phq15-answers#bothered-a-little "Bothered a little"
+// q2d: Feeling tired or having low energy - Bothered a little (1); konsistent mit PHQ-9 q04
+* item[+].linkId = "phq-phq2d"
+* item[=].answer[0].valueCoding = $pro-phq15-answers#bothered-a-little "Bothered a little"
+// q2c: Trouble sleeping - Bothered a lot (2); konsistent mit PHQ-9 q03
+* item[+].linkId = "phq-phq2c"
+* item[=].answer[0].valueCoding = $pro-phq15-answers#bothered-a-lot "Bothered a lot"
+
+// Total score: 1+2+1+0+1+0+1+0+1+0+0+1+1+1+2 = 12 (medium somatic symptom severity, 10-14)
+* item[+].linkId = "phq-phq15-score-total"
+* item[=].answer[0].valueDecimal = 12
+
+
+// -----------------------------------------------------------------------------
+// WHODAS 2.0 12-Item QuestionnaireResponse (Patient 1, mild disability, simple sum 12)
+// Covers: MII_PR_PRO_QuestionnaireResponse (WHODAS-12); Basis fuer WHODAS-12 Score Observation
+// -----------------------------------------------------------------------------
+Instance: mii-exa-test-data-patient-1-pro-whodas12-response
+InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response
+Usage: #example
+Description: "PRO QuestionnaireResponse: WHODAS 2.0 12-Item for Patient 1 (mild disability, simple sum 12)"
+* insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
+* status = #completed
+* language = #de
+* subject = Reference(mii-exa-test-data-pro-patient-1)
+* authored = "2024-03-15T10:45:00+01:00"
+* questionnaire = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-whodas-whodas12"
+
+// q01: Standing for long periods - Mild (1)
+* item[+].linkId = "whodas-whodas12-q01"
+* item[=].answer[0].valueCoding = $pro-whodas12#whodas12-answer-1 "Mild"
+// q02: Household responsibilities - Mild (1)
+* item[+].linkId = "whodas-whodas12-q02"
+* item[=].answer[0].valueCoding = $pro-whodas12#whodas12-answer-1 "Mild"
+// q03: Learning a new task - None (0)
+* item[+].linkId = "whodas-whodas12-q03"
+* item[=].answer[0].valueCoding = $pro-whodas12#whodas12-answer-0 "None"
+// q04: Joining in community activities - Moderate (2)
+* item[+].linkId = "whodas-whodas12-q04"
+* item[=].answer[0].valueCoding = $pro-whodas12#whodas12-answer-2 "Moderate"
+// q05: Emotionally affected by health problems - Moderate (2)
+* item[+].linkId = "whodas-whodas12-q05"
+* item[=].answer[0].valueCoding = $pro-whodas12#whodas12-answer-2 "Moderate"
+// q06: Concentrating for ten minutes - Mild (1)
+* item[+].linkId = "whodas-whodas12-q06"
+* item[=].answer[0].valueCoding = $pro-whodas12#whodas12-answer-1 "Mild"
+// q07: Walking a long distance - Mild (1)
+* item[+].linkId = "whodas-whodas12-q07"
+* item[=].answer[0].valueCoding = $pro-whodas12#whodas12-answer-1 "Mild"
+// q08: Washing whole body - None (0)
+* item[+].linkId = "whodas-whodas12-q08"
+* item[=].answer[0].valueCoding = $pro-whodas12#whodas12-answer-0 "None"
+// q09: Getting dressed - None (0)
+* item[+].linkId = "whodas-whodas12-q09"
+* item[=].answer[0].valueCoding = $pro-whodas12#whodas12-answer-0 "None"
+// q10: Dealing with strangers - Mild (1)
+* item[+].linkId = "whodas-whodas12-q10"
+* item[=].answer[0].valueCoding = $pro-whodas12#whodas12-answer-1 "Mild"
+// q11: Maintaining a friendship - Mild (1)
+* item[+].linkId = "whodas-whodas12-q11"
+* item[=].answer[0].valueCoding = $pro-whodas12#whodas12-answer-1 "Mild"
+// q12: Day-to-day work/school - Moderate (2)
+* item[+].linkId = "whodas-whodas12-q12"
+* item[=].answer[0].valueCoding = $pro-whodas12#whodas12-answer-2 "Moderate"
+
+// Simple sum: 1+1+0+2+2+1+1+0+0+1+1+2 = 12 (range 0-48)
+* item[+].linkId = "whodas-whodas12-score-simple-sum"
+* item[=].answer[0].valueDecimal = 12

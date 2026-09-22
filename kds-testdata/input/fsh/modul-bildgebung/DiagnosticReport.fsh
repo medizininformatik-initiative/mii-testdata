@@ -14,6 +14,7 @@ Description: "DiagnosticReport: Befundbericht"
 * effectiveDateTime = "2024-07-19T12:03:30+02:00"
 * issued = "2024-07-19T12:03:30+02:00"
 * result = Reference (mii-exa-test-data-radiologische-beobachtung)
+* result[+] = Reference(mii-exa-test-data-radiologische-messung-1)
 * imagingStudy = Reference (mii-exa-test-data-bildgebungsstudie)
 * conclusion = "There are suspicious microcalcifications in the upper outer quadrant in the left breast"
 * conclusionCode = $sct#129770009 "Mammographic calcification finding (finding)"

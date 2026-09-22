@@ -2447,6 +2447,14 @@
       },
       {
         "reference": {
+          "reference": "Specimen/mii-exa-test-data-mikrobio-probe-1"
+        },
+        "name": "mii-exa-test-data-mikrobio-probe-1",
+        "description": "Mikrobio Probe: Sputum (fuer spezifische Mikroskopie auf saeurefeste Staebchen)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Observation/mii-exa-test-data-mikrobio-resistenz-mech-alt-1"
         },
         "name": "mii-exa-test-data-mikrobio-resistenz-mech-alt-1",
@@ -2539,6 +2547,14 @@
         },
         "name": "mii-exa-test-data-mikrobio-spezifische-bestimmung-dar-1",
         "description": "Mikrobio: spezifische-bestimmung — Probe nicht auswertbar (dataAbsentReason)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-mikrobio-spezifische-mikroskopie-1"
+        },
+        "name": "mii-exa-test-data-mikrobio-spezifische-mikroskopie-1",
+        "description": "Mikrobio: Spezifische Mikroskopie — saeurefeste Staebchen im Sputum nachgewiesen (Kinyoun, 2+)",
         "exampleBoolean": true
       },
       {
@@ -3615,10 +3631,34 @@
       },
       {
         "reference": {
+          "reference": "AllergyIntolerance/mii-exa-test-data-patient-1-allergie-1"
+        },
+        "name": "mii-exa-test-data-patient-1-allergie-1",
+        "description": "AllergyIntolerance: Penicillin-Allergie (Urtikaria, moderat) fuer Patient 1",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Consent/mii-exa-test-data-patient-1-consent-1"
         },
         "name": "mii-exa-test-data-patient-1-consent-1",
         "description": "Consent: Einwilligung für Patient 1",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "DocumentReference/mii-exa-test-data-patient-1-consent-docref-1"
+        },
+        "name": "mii-exa-test-data-patient-1-consent-docref-1",
+        "description": "DocumentReference: Gescannter, unterschriebener Einwilligungsbogen zu Consent von Patient 1",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Provenance/mii-exa-test-data-patient-1-consent-provenance-1"
+        },
+        "name": "mii-exa-test-data-patient-1-consent-provenance-1",
+        "description": "Provenance: Herkunft der Einwilligung von Patient 1 (aus gescanntem Einwilligungsbogen)",
         "exampleBoolean": true
       },
       {
@@ -4438,6 +4478,30 @@
       },
       {
         "reference": {
+          "reference": "QuestionnaireResponse/mii-exa-test-data-patient-1-pro-phq15-response"
+        },
+        "name": "mii-exa-test-data-patient-1-pro-phq15-response",
+        "description": "PRO QuestionnaireResponse: PHQ-15 for Patient 1 (medium somatic symptom severity, score 12)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-pro-phq15-score"
+        },
+        "name": "mii-exa-test-data-patient-1-pro-phq15-score",
+        "description": "PRO Observation: PHQ-15 Total Score for Patient 1 (medium somatic symptom severity, score 12)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-pro-phq9-obs-1"
+        },
+        "name": "mii-exa-test-data-patient-1-pro-phq9-obs-1",
+        "description": "PRO Observation: PHQ-9 Score (spezifisches Profil) for Patient 1 (mild depression, score 8)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "QuestionnaireResponse/mii-exa-test-data-patient-1-pro-phq9-response"
         },
         "name": "mii-exa-test-data-patient-1-pro-phq9-response",
@@ -4530,6 +4594,22 @@
         },
         "name": "mii-exa-test-data-patient-1-pro-promis29-social-function-tscore",
         "description": "PRO Observation: PROMIS-29 Social Function T-Score for Patient 1",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "QuestionnaireResponse/mii-exa-test-data-patient-1-pro-whodas12-response"
+        },
+        "name": "mii-exa-test-data-patient-1-pro-whodas12-response",
+        "description": "PRO QuestionnaireResponse: WHODAS 2.0 12-Item for Patient 1 (mild disability, simple sum 12)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-pro-whodas12-score"
+        },
+        "name": "mii-exa-test-data-patient-1-pro-whodas12-score",
+        "description": "PRO Observation: WHODAS 2.0 12-Item Simple Sum Score for Patient 1 (mild disability, sum 12)",
         "exampleBoolean": true
       },
       {
@@ -6630,6 +6710,14 @@
       },
       {
         "reference": {
+          "reference": "Patient/mii-exa-test-data-patient-pseudonym-1"
+        },
+        "name": "mii-exa-test-data-patient-pseudonym-1",
+        "description": "Patient (pseudonymisiert): eigenstaendiger Testpatient nur mit Pseudonym, ohne identifizierende Daten",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Practitioner/mii-exa-test-data-practitioner-physician-1"
         },
         "name": "mii-exa-test-data-practitioner-physician-1",
@@ -6682,6 +6770,14 @@
         },
         "name": "mii-exa-test-data-radiologische-beobachtung",
         "description": "Observation: Radiologische Beobachtung",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-radiologische-messung-1"
+        },
+        "name": "mii-exa-test-data-radiologische-messung-1",
+        "description": "Observation: Radiologische Messung (Durchmesser des Herdbefunds, 4.2 mm)",
         "exampleBoolean": true
       },
       {
@@ -7110,6 +7206,14 @@
       },
       {
         "reference": {
+          "reference": "Device/mii-exa-test-data-mtb-device-sequencer-1"
+        },
+        "name": "MTB Genomic Study Device (Sequencer)",
+        "description": "Device: NGS-Sequenzierer (Illumina NovaSeq 6000) des MTB-NGS-Workflows",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "ServiceRequest/mii-exa-test-data-mtb-histologie-evaluation-1"
         },
         "name": "MTB Histologie Evaluation Auftrag",
@@ -7242,6 +7346,14 @@
         },
         "name": "MTB Oncotree Classification",
         "description": "Test instance for Oncotree tumor classification",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "DeviceDefinition/mii-exa-test-data-mtb-panel-devicedef-1"
+        },
+        "name": "MTB Panel DeviceDefinition (TSO 500)",
+        "description": "DeviceDefinition: NGS-Gen-Panel TruSight Oncology 500 des MTB-NGS-Workflows",
         "exampleBoolean": true
       },
       {

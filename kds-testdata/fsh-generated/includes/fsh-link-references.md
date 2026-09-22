@@ -295,6 +295,7 @@
 [mii-exa-test-data-mikrobio-nugent-score-dar-1]: Observation-mii-exa-test-data-mikrobio-nugent-score-dar-1.html
 [mii-exa-test-data-mikrobio-organization-lab-1]: Organization-mii-exa-test-data-mikrobio-organization-lab-1.html
 [mii-exa-test-data-mikrobio-patient-1]: Patient-mii-exa-test-data-mikrobio-patient-1.html
+[mii-exa-test-data-mikrobio-probe-1]: Specimen-mii-exa-test-data-mikrobio-probe-1.html
 [mii-exa-test-data-mikrobio-resistenz-mech-alt-1]: Observation-mii-exa-test-data-mikrobio-resistenz-mech-alt-1.html
 [mii-exa-test-data-mikrobio-resistenz-mech-dar-1]: Observation-mii-exa-test-data-mikrobio-resistenz-mech-dar-1.html
 [mii-exa-test-data-mikrobio-resistenzkategorie-status-1]: Observation-mii-exa-test-data-mikrobio-resistenzkategorie-status-1.html
@@ -307,6 +308,7 @@
 [mii-exa-test-data-mikrobio-spezifische-bestimmung-1]: Observation-mii-exa-test-data-mikrobio-spezifische-bestimmung-1.html
 [mii-exa-test-data-mikrobio-spezifische-bestimmung-alt-1]: Observation-mii-exa-test-data-mikrobio-spezifische-bestimmung-alt-1.html
 [mii-exa-test-data-mikrobio-spezifische-bestimmung-dar-1]: Observation-mii-exa-test-data-mikrobio-spezifische-bestimmung-dar-1.html
+[mii-exa-test-data-mikrobio-spezifische-mikroskopie-1]: Observation-mii-exa-test-data-mikrobio-spezifische-mikroskopie-1.html
 [mii-exa-test-data-mikrobio-titer-1]: Observation-mii-exa-test-data-mikrobio-titer-1.html
 [mii-exa-test-data-mikrobio-titer-alt-1]: Observation-mii-exa-test-data-mikrobio-titer-alt-1.html
 [mii-exa-test-data-mikrobio-titer-dar-1]: Observation-mii-exa-test-data-mikrobio-titer-dar-1.html
@@ -441,7 +443,10 @@
 [mii-exa-test-data-patho-encounter-1]: Encounter-mii-exa-test-data-patho-encounter-1.html
 [mii-exa-test-data-patho-patient-1]: Patient-mii-exa-test-data-patho-patient-1.html
 [mii-exa-test-data-patient-1]: Patient-mii-exa-test-data-patient-1.html
+[mii-exa-test-data-patient-1-allergie-1]: AllergyIntolerance-mii-exa-test-data-patient-1-allergie-1.html
 [mii-exa-test-data-patient-1-consent-1]: Consent-mii-exa-test-data-patient-1-consent-1.html
+[mii-exa-test-data-patient-1-consent-docref-1]: DocumentReference-mii-exa-test-data-patient-1-consent-docref-1.html
+[mii-exa-test-data-patient-1-consent-provenance-1]: Provenance-mii-exa-test-data-patient-1-consent-provenance-1.html
 [mii-exa-test-data-patient-1-diagnose-1]: Condition-mii-exa-test-data-patient-1-diagnose-1.html
 [mii-exa-test-data-patient-1-diagnose-2]: Condition-mii-exa-test-data-patient-1-diagnose-2.html
 [mii-exa-test-data-patient-1-dokument-1]: DocumentReference-mii-exa-test-data-patient-1-dokument-1.html
@@ -544,6 +549,9 @@
 [mii-exa-test-data-patient-1-pro-eq5d5l-index]: Observation-mii-exa-test-data-patient-1-pro-eq5d5l-index.html
 [mii-exa-test-data-patient-1-pro-eq5d5l-profile]: Observation-mii-exa-test-data-patient-1-pro-eq5d5l-profile.html
 [mii-exa-test-data-patient-1-pro-eq5d5l-vas]: Observation-mii-exa-test-data-patient-1-pro-eq5d5l-vas.html
+[mii-exa-test-data-patient-1-pro-phq15-response]: QuestionnaireResponse-mii-exa-test-data-patient-1-pro-phq15-response.html
+[mii-exa-test-data-patient-1-pro-phq15-score]: Observation-mii-exa-test-data-patient-1-pro-phq15-score.html
+[mii-exa-test-data-patient-1-pro-phq9-obs-1]: Observation-mii-exa-test-data-patient-1-pro-phq9-obs-1.html
 [mii-exa-test-data-patient-1-pro-phq9-response]: QuestionnaireResponse-mii-exa-test-data-patient-1-pro-phq9-response.html
 [mii-exa-test-data-patient-1-pro-phq9-score]: Observation-mii-exa-test-data-patient-1-pro-phq9-score.html
 [mii-exa-test-data-patient-1-pro-promis-cogfn-sf4a-raw-score]: Observation-mii-exa-test-data-patient-1-pro-promis-cogfn-sf4a-raw-score.html
@@ -556,6 +564,8 @@
 [mii-exa-test-data-patient-1-pro-promis29-fatigue-tscore]: Observation-mii-exa-test-data-patient-1-pro-promis29-fatigue-tscore.html
 [mii-exa-test-data-patient-1-pro-promis29-pain-intensity]: Observation-mii-exa-test-data-patient-1-pro-promis29-pain-intensity.html
 [mii-exa-test-data-patient-1-pro-promis29-social-function-tscore]: Observation-mii-exa-test-data-patient-1-pro-promis29-social-function-tscore.html
+[mii-exa-test-data-patient-1-pro-whodas12-response]: QuestionnaireResponse-mii-exa-test-data-patient-1-pro-whodas12-response.html
+[mii-exa-test-data-patient-1-pro-whodas12-score]: Observation-mii-exa-test-data-patient-1-pro-whodas12-score.html
 [mii-exa-test-data-patient-1-prozedur-1]: Procedure-mii-exa-test-data-patient-1-prozedur-1.html
 [mii-exa-test-data-patient-1-prozedur-2]: Procedure-mii-exa-test-data-patient-1-prozedur-2.html
 [mii-exa-test-data-patient-1-specimen-1]: Specimen-mii-exa-test-data-patient-1-specimen-1.html
@@ -818,6 +828,7 @@
 [mii-exa-test-data-patient-9-specimen-1]: Specimen-mii-exa-test-data-patient-9-specimen-1.html
 [mii-exa-test-data-patient-9-specimen-2]: Specimen-mii-exa-test-data-patient-9-specimen-2.html
 [mii-exa-test-data-patient-9-vitalstatus-1]: Observation-mii-exa-test-data-patient-9-vitalstatus-1.html
+[mii-exa-test-data-patient-pseudonym-1]: Patient-mii-exa-test-data-patient-pseudonym-1.html
 [mii-exa-test-data-practitioner-physician-1]: Practitioner-mii-exa-test-data-practitioner-physician-1.html
 [mii-exa-test-data-practitioner-physician-2]: Practitioner-mii-exa-test-data-practitioner-physician-2.html
 [mii-exa-test-data-practitioner-role-physician-1]: PractitionerRole-mii-exa-test-data-practitioner-role-physician-1.html
@@ -825,6 +836,7 @@
 [mii-exa-test-data-pro-encounter-1]: Encounter-mii-exa-test-data-pro-encounter-1.html
 [mii-exa-test-data-pro-patient-1]: Patient-mii-exa-test-data-pro-patient-1.html
 [mii-exa-test-data-radiologische-beobachtung]: Observation-mii-exa-test-data-radiologische-beobachtung.html
+[mii-exa-test-data-radiologische-messung-1]: Observation-mii-exa-test-data-radiologische-messung-1.html
 [mii-exa-test-data-seltene-encounter-1]: Encounter-mii-exa-test-data-seltene-encounter-1.html
 [mii-exa-test-data-seltene-labobs-1]: Observation-mii-exa-test-data-seltene-labobs-1.html
 [mii-exa-test-data-seltene-molgen-befundbericht-1]: DiagnosticReport-mii-exa-test-data-seltene-molgen-befundbericht-1.html
@@ -878,6 +890,7 @@
 [mii-exa-test-data-mtb-follow-up-1]: ClinicalImpression-mii-exa-test-data-mtb-follow-up-1.html
 [mii-exa-test-data-mtb-genomic-study-1]: Procedure-mii-exa-test-data-mtb-genomic-study-1.html
 [mii-exa-test-data-mtb-genomic-study-analysis-1]: Procedure-mii-exa-test-data-mtb-genomic-study-analysis-1.html
+[mii-exa-test-data-mtb-device-sequencer-1]: Device-mii-exa-test-data-mtb-device-sequencer-1.html
 [mii-exa-test-data-mtb-histologie-evaluation-1]: ServiceRequest-mii-exa-test-data-mtb-histologie-evaluation-1.html
 [mii-exa-test-data-mtb-hrd-score-1]: Observation-mii-exa-test-data-mtb-hrd-score-1.html
 [mii-exa-test-data-mtb-humangenetische-beratung-1]: ServiceRequest-mii-exa-test-data-mtb-humangenetische-beratung-1.html
@@ -895,6 +908,7 @@
 [mii-exa-test-data-mtb-mutationslast-1]: Observation-mii-exa-test-data-mtb-mutationslast-1.html
 [mii-exa-test-data-mtb-ngs-bericht-1]: DiagnosticReport-mii-exa-test-data-mtb-ngs-bericht-1.html
 [mii-exa-test-data-mtb-oncotree-1]: Observation-mii-exa-test-data-mtb-oncotree-1.html
+[mii-exa-test-data-mtb-panel-devicedef-1]: DeviceDefinition-mii-exa-test-data-mtb-panel-devicedef-1.html
 [mii-exa-test-data-mtb-ploidie-1]: Observation-mii-exa-test-data-mtb-ploidie-1.html
 [mii-exa-test-data-mtb-response-befund-1]: Observation-mii-exa-test-data-mtb-response-befund-1.html
 [mii-exa-test-data-mtb-rna-fusion-1]: Observation-mii-exa-test-data-mtb-rna-fusion-1.html

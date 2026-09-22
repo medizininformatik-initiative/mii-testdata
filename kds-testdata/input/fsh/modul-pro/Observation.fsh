@@ -506,3 +506,102 @@ Description: "PRO Observation: PROMIS Cognitive Function SF4a T-Score for Patien
 * derivedFrom = Reference(mii-exa-test-data-patient-1-pro-phq9-response)
 * extension[instantiatesCanonical].url = "http://hl7.org/fhir/StructureDefinition/workflow-instantiatesCanonical"
 * extension[instantiatesCanonical].valueCanonical = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ObservationDefinition/mii-obsdef-pro-promis-cognitive-function-sf4a-tscore"
+
+
+// -----------------------------------------------------------------------------
+// PHQ-9 Observation (spezifisches Profil, child of Score Instance)
+// Covers: MII_PR_PRO_Observation_PHQ_9
+// Gleicher Score wie mii-exa-test-data-patient-1-pro-phq9-score (Score-Instance-
+// Basisprofil), hier als Instanz des spezifischen PHQ-9-Profils mit derivedFrom
+// auf die vorhandene PHQ-9 QuestionnaireResponse.
+// -----------------------------------------------------------------------------
+Instance: mii-exa-test-data-patient-1-pro-phq9-obs-1
+InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-observation-phq-9
+Usage: #example
+Description: "PRO Observation: PHQ-9 Score (spezifisches Profil) for Patient 1 (mild depression, score 8)"
+* insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
+* identifier[+].system = "https://www.charite.de/fhir/sid/pro-observation-id"
+* identifier[=].value = "PRO-OBS-PHQ9-PROFIL-PAT1-001"
+* status = #final
+* code = $loinc#44261-6 "Patient Health Questionnaire 9 item (PHQ-9) total score [Reported]"
+* subject = Reference(mii-exa-test-data-pro-patient-1)
+* encounter = Reference(mii-exa-test-data-pro-encounter-1)
+* effectiveDateTime = "2024-03-15T10:00:00+01:00"
+* performer = Reference(mii-exa-test-data-pro-patient-1)
+* valueQuantity.value = 8
+* valueQuantity.unit = "{score}"
+* valueQuantity.system = $ucum
+* valueQuantity.code = #{score}
+* interpretation = $v3-ObservationInterpretation#L "Low"
+* interpretation.text = "Mild depression (5-9)"
+* method.coding = $loinc#44249-1 "PHQ-9 quick depression assessment panel [Reported.PHQ]"
+* method.text = "Patient Health Questionnaire-9 (PHQ-9)"
+* derivedFrom = Reference(mii-exa-test-data-patient-1-pro-phq9-response)
+* extension[instantiatesCanonical].url = "http://hl7.org/fhir/StructureDefinition/workflow-instantiatesCanonical"
+* extension[instantiatesCanonical].valueCanonical = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ObservationDefinition/mii-obsdef-pro-score-phq-9"
+
+
+// -----------------------------------------------------------------------------
+// PHQ-15 Observation (child of Score Instance)
+// Covers: MII_PR_PRO_Observation_PHQ_15
+// derivedFrom: PHQ-15 QuestionnaireResponse (score 12, medium severity)
+// -----------------------------------------------------------------------------
+Instance: mii-exa-test-data-patient-1-pro-phq15-score
+InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-observation-phq-15
+Usage: #example
+Description: "PRO Observation: PHQ-15 Total Score for Patient 1 (medium somatic symptom severity, score 12)"
+* insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
+* identifier[+].system = "https://www.charite.de/fhir/sid/pro-observation-id"
+* identifier[=].value = "PRO-OBS-PHQ15-PAT1-001"
+* status = #final
+* code = $loinc#70273-8 "Patient Health Questionnaire 15 item (PHQ-15) total score [Reported]"
+* subject = Reference(mii-exa-test-data-pro-patient-1)
+* encounter = Reference(mii-exa-test-data-pro-encounter-1)
+* effectiveDateTime = "2024-03-15T10:30:00+01:00"
+* performer = Reference(mii-exa-test-data-pro-patient-1)
+* valueQuantity.value = 12
+* valueQuantity.unit = "{score}"
+* valueQuantity.system = $ucum
+* valueQuantity.code = #{score}
+* interpretation = $v3-ObservationInterpretation#N "Normal"
+* interpretation.text = "Medium somatic symptom severity (10-14)"
+* method.coding = $loinc#69728-4 "Patient Health Questionnaire 15 item (PHQ-15) [Reported]"
+* method.text = "Patient Health Questionnaire-15 (PHQ-15)"
+* note[+].text = "PHQ-15 als Ergaenzung zum PHQ-9-Depressionsscreening (somatische Symptomlast)"
+* derivedFrom = Reference(mii-exa-test-data-patient-1-pro-phq15-response)
+* extension[instantiatesCanonical].url = "http://hl7.org/fhir/StructureDefinition/workflow-instantiatesCanonical"
+* extension[instantiatesCanonical].valueCanonical = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ObservationDefinition/mii-obsdef-pro-score-phq-15"
+
+
+// -----------------------------------------------------------------------------
+// WHODAS 2.0 12-Item Simple Sum Score Observation (child of Score Instance)
+// Covers: MII_PR_PRO_Observation_WHODAS12
+// derivedFrom: WHODAS-12 QuestionnaireResponse (simple sum 12)
+// -----------------------------------------------------------------------------
+Instance: mii-exa-test-data-patient-1-pro-whodas12-score
+InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-observation-whodas12
+Usage: #example
+Description: "PRO Observation: WHODAS 2.0 12-Item Simple Sum Score for Patient 1 (mild disability, sum 12)"
+* insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
+* identifier[+].system = "https://www.charite.de/fhir/sid/pro-observation-id"
+* identifier[=].value = "PRO-OBS-WHODAS12-PAT1-001"
+* status = #final
+* code.coding[+] = $sct#715823002 "WHODAS (World Health Organization Disability Assessment Schedule) 2.0 score"
+* code.coding[+] = $pro-sc#whodas12-simple-sum "WHODAS 2.0 12-Item Simple Sum Score (0-48)"
+* subject = Reference(mii-exa-test-data-pro-patient-1)
+* encounter = Reference(mii-exa-test-data-pro-encounter-1)
+* effectiveDateTime = "2024-03-15T10:45:00+01:00"
+* performer = Reference(mii-exa-test-data-pro-patient-1)
+* valueQuantity.value = 12
+* valueQuantity.unit = "{score}"
+* valueQuantity.system = $ucum
+* valueQuantity.code = #{score}
+* interpretation = $v3-ObservationInterpretation#N "Normal"
+* interpretation.text = "Mild disability (simple sum 12 of 48)"
+* method.text = "WHODAS 2.0 12-item simple sum scoring (0-48)"
+* derivedFrom = Reference(mii-exa-test-data-patient-1-pro-whodas12-response)
+* extension[instantiatesCanonical].url = "http://hl7.org/fhir/StructureDefinition/workflow-instantiatesCanonical"
+* extension[instantiatesCanonical].valueCanonical = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ObservationDefinition/mii-obsdef-pro-score-whodas12-simple-sum"
