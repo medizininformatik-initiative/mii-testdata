@@ -88,6 +88,10 @@ dependencies:
 parameters:
   path-resource:
     - input/predefined-resources
+  # Pages-Budget: keine XML-/Turtle-Renderings je Artefakt (JSON bleibt).
+  # Bei >1000 Instanzen spart das Tausende Seiten auf gh-pages.
+  excludexml: true
+  excludettl: true
 #   excludettl: true
 #   validation: [allow-any-extensions, no-broken-links]
 #
