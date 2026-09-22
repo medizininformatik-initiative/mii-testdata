@@ -8,7 +8,8 @@
         "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
         "display": "test health data"
       }
-    ]
+    ],
+    "source": "https://www.charite.de/fhir/kds-testdata"
   },
   "entry": [
     {
@@ -27,24 +28,29 @@
               "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
               "display": "test health data"
             }
-          ]
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata"
         },
         "identifier": [
           {
-            "system": "https://www.charite.de/fhir/sid/patientenidentifikation",
+            "system": "https://www.medizininformatik-initiative.de/fhir/sid/standort-b",
             "value": "ICU-TEST-001"
+          },
+          {
+            "system": "http://fhir.de/sid/gkv/kvid-10",
+            "value": "K220635158"
           }
         ],
         "name": [
           {
             "given": [
-              "Thomas"
+              "Kim"
             ],
-            "family": "Intensiv"
+            "family": "Musterperson"
           }
         ],
-        "birthDate": "1959-01-28",
-        "gender": "male"
+        "birthDate": "1956-03-14",
+        "gender": "female"
       }
     },
     {
@@ -63,12 +69,30 @@
               "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
               "display": "test health data"
             }
-          ]
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata"
         },
         "period": {
           "start": "2024-05-01",
           "end": "2024-05-14"
         },
+        "diagnosis": [
+          {
+            "condition": {
+              "reference": "Condition/mii-exa-test-data-icu-diagnose-1"
+            },
+            "use": {
+              "coding": [
+                {
+                  "code": "AD",
+                  "system": "http://terminology.hl7.org/CodeSystem/diagnosis-role",
+                  "display": "Admission diagnosis"
+                }
+              ]
+            },
+            "rank": 1
+          }
+        ],
         "status": "finished",
         "class": {
           "code": "IMP",
@@ -77,6 +101,67 @@
         },
         "subject": {
           "reference": "Patient/mii-exa-test-data-icu-patient-1"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Condition/mii-exa-test-data-icu-diagnose-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Condition/mii-exa-test-data-icu-diagnose-1",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "mii-exa-test-data-icu-diagnose-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/core/modul-diagnose/StructureDefinition/Diagnose"
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+              "code": "U07.1",
+              "version": "2024"
+            }
+          ]
+        },
+        "note": [
+          {
+            "text": "COVID-19 Virus nachgewiesen"
+          }
+        ],
+        "clinicalStatus": {
+          "coding": [
+            {
+              "code": "active",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "code": "confirmed",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-icu-patient-1"
+        },
+        "recordedDate": "2024-05-01",
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-icu-encounter-1"
         }
       }
     },
@@ -97,6 +182,7 @@
               "display": "test health data"
             }
           ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-haemofiltration-einzelmesswerte"
           ]
@@ -104,10 +190,6 @@
         "category": [
           {
             "coding": [
-              {
-                "code": "exam",
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
-              },
               {
                 "code": "364396009",
                 "system": "http://snomed.info/sct",
@@ -140,7 +222,7 @@
         "subject": {
           "reference": "Patient/mii-exa-test-data-icu-patient-1"
         },
-        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+        "effectiveDateTime": "2024-05-05T08:00:00+02:00"
       }
     },
     {
@@ -160,6 +242,7 @@
               "display": "test health data"
             }
           ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-drainage-generisch"
           ]
@@ -188,8 +271,7 @@
             },
             {
               "system": "urn:iso:std:iso:11073:10101",
-              "code": "26668",
-              "display": "Drainage volume in bag"
+              "code": "157740"
             }
           ]
         },
@@ -203,7 +285,7 @@
         "subject": {
           "reference": "Patient/mii-exa-test-data-icu-patient-1"
         },
-        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+        "effectiveDateTime": "2024-05-05T08:00:00+02:00"
       }
     },
     {
@@ -223,6 +305,7 @@
               "display": "test health data"
             }
           ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-fluessigkeit-gesamt"
           ]
@@ -230,10 +313,6 @@
         "category": [
           {
             "coding": [
-              {
-                "code": "exam",
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
-              },
               {
                 "code": "364396009",
                 "system": "http://snomed.info/sct",
@@ -266,7 +345,7 @@
         "subject": {
           "reference": "Patient/mii-exa-test-data-icu-patient-1"
         },
-        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+        "effectiveDateTime": "2024-05-05T08:00:00+02:00"
       }
     },
     {
@@ -286,6 +365,7 @@
               "display": "test health data"
             }
           ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-gallenfluessigkeit"
           ]
@@ -308,14 +388,14 @@
         "code": {
           "coding": [
             {
-              "system": "http://snomed.info/sct",
-              "code": "1162667009",
-              "display": "Volume of drainage of bile duct (observable entity)"
-            },
-            {
               "system": "http://loinc.org",
               "code": "9113-2",
               "display": "Fluid output biliary drain"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "1162667009",
+              "display": "Volume of drainage of bile duct (observable entity)"
             }
           ]
         },
@@ -329,7 +409,7 @@
         "subject": {
           "reference": "Patient/mii-exa-test-data-icu-patient-1"
         },
-        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+        "effectiveDateTime": "2024-05-05T08:00:00+02:00"
       }
     },
     {
@@ -349,6 +429,7 @@
               "display": "test health data"
             }
           ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-gallenfluessigkeit"
           ]
@@ -371,14 +452,14 @@
         "code": {
           "coding": [
             {
-              "system": "http://snomed.info/sct",
-              "code": "1162667009",
-              "display": "Volume of drainage of bile duct (observable entity)"
-            },
-            {
               "system": "http://loinc.org",
               "code": "9113-2",
               "display": "Fluid output biliary drain"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "1162667009",
+              "display": "Volume of drainage of bile duct (observable entity)"
             }
           ]
         },
@@ -392,7 +473,7 @@
         "subject": {
           "reference": "Patient/mii-exa-test-data-icu-patient-1"
         },
-        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+        "effectiveDateTime": "2024-05-05T08:00:00+02:00"
       }
     },
     {
@@ -412,6 +493,7 @@
               "display": "test health data"
             }
           ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-magensonde"
           ]
@@ -434,14 +516,14 @@
         "code": {
           "coding": [
             {
-              "system": "http://snomed.info/sct",
-              "code": "1162665001",
-              "display": "Volume of drainage of gastric contents (observable entity)"
-            },
-            {
               "system": "http://loinc.org",
               "code": "79561-7",
               "display": "Fluid output enteral tube [Volume] Measured"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "1162665001",
+              "display": "Volume of drainage of gastric contents (observable entity)"
             }
           ]
         },
@@ -455,7 +537,7 @@
         "subject": {
           "reference": "Patient/mii-exa-test-data-icu-patient-1"
         },
-        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+        "effectiveDateTime": "2024-05-05T08:00:00+02:00"
       }
     },
     {
@@ -475,6 +557,7 @@
               "display": "test health data"
             }
           ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-op-drainage"
           ]
@@ -513,7 +596,7 @@
         "subject": {
           "reference": "Patient/mii-exa-test-data-icu-patient-1"
         },
-        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+        "effectiveDateTime": "2024-05-05T08:00:00+02:00"
       }
     },
     {
@@ -533,6 +616,7 @@
               "display": "test health data"
             }
           ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-pankreasdrainage"
           ]
@@ -571,7 +655,7 @@
         "subject": {
           "reference": "Patient/mii-exa-test-data-icu-patient-1"
         },
-        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+        "effectiveDateTime": "2024-05-05T08:00:00+02:00"
       }
     },
     {
@@ -591,6 +675,7 @@
               "display": "test health data"
             }
           ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-stuhlgang"
           ]
@@ -629,7 +714,7 @@
         "subject": {
           "reference": "Patient/mii-exa-test-data-icu-patient-1"
         },
-        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+        "effectiveDateTime": "2024-05-05T08:00:00+02:00"
       }
     },
     {
@@ -649,6 +734,7 @@
               "display": "test health data"
             }
           ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-urin"
           ]
@@ -656,10 +742,6 @@
         "category": [
           {
             "coding": [
-              {
-                "code": "exam",
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
-              },
               {
                 "code": "364396009",
                 "system": "http://snomed.info/sct",
@@ -671,14 +753,14 @@
         "code": {
           "coding": [
             {
-              "system": "http://snomed.info/sct",
-              "code": "364201005",
-              "display": "Urine output observable (observable entity)"
-            },
-            {
               "system": "http://loinc.org",
               "code": "9187-6",
               "display": "Urine output"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "364201005",
+              "display": "Urine output observable (observable entity)"
             }
           ]
         },
@@ -692,7 +774,7 @@
         "subject": {
           "reference": "Patient/mii-exa-test-data-icu-patient-1"
         },
-        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+        "effectiveDateTime": "2024-05-05T08:00:00+02:00"
       }
     },
     {
@@ -712,6 +794,7 @@
               "display": "test health data"
             }
           ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-wunddrainage"
           ]
@@ -755,7 +838,7 @@
         "subject": {
           "reference": "Patient/mii-exa-test-data-icu-patient-1"
         },
-        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+        "effectiveDateTime": "2024-05-05T08:00:00+02:00"
       }
     },
     {
@@ -775,6 +858,7 @@
               "display": "test health data"
             }
           ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-blutverlust"
           ]
@@ -782,10 +866,6 @@
         "category": [
           {
             "coding": [
-              {
-                "code": "exam",
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
-              },
               {
                 "code": "364396009",
                 "system": "http://snomed.info/sct",
@@ -818,7 +898,7 @@
         "subject": {
           "reference": "Patient/mii-exa-test-data-icu-patient-1"
         },
-        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+        "effectiveDateTime": "2024-05-05T08:00:00+02:00"
       }
     },
     {
@@ -838,6 +918,7 @@
               "display": "test health data"
             }
           ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-einfuhr-enterale-fluessigkeit"
           ]
@@ -845,10 +926,6 @@
         "category": [
           {
             "coding": [
-              {
-                "code": "exam",
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
-              },
               {
                 "code": "364396009",
                 "system": "http://snomed.info/sct",
@@ -881,7 +958,7 @@
         "subject": {
           "reference": "Patient/mii-exa-test-data-icu-patient-1"
         },
-        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+        "effectiveDateTime": "2024-05-05T08:00:00+02:00"
       }
     },
     {
@@ -901,6 +978,7 @@
               "display": "test health data"
             }
           ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-einfuhr-fluessigkeit-gesamt"
           ]
@@ -908,10 +986,6 @@
         "category": [
           {
             "coding": [
-              {
-                "code": "exam",
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
-              },
               {
                 "code": "364396009",
                 "system": "http://snomed.info/sct",
@@ -944,7 +1018,7 @@
         "subject": {
           "reference": "Patient/mii-exa-test-data-icu-patient-1"
         },
-        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+        "effectiveDateTime": "2024-05-05T08:00:00+02:00"
       }
     },
     {
@@ -964,6 +1038,7 @@
               "display": "test health data"
             }
           ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-einfuhr-fluessigkeit-gesamt"
           ]
@@ -971,10 +1046,6 @@
         "category": [
           {
             "coding": [
-              {
-                "code": "exam",
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
-              },
               {
                 "code": "364396009",
                 "system": "http://snomed.info/sct",
@@ -1007,7 +1078,7 @@
         "subject": {
           "reference": "Patient/mii-exa-test-data-icu-patient-1"
         },
-        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+        "effectiveDateTime": "2024-05-05T08:00:00+02:00"
       }
     },
     {
@@ -1027,6 +1098,7 @@
               "display": "test health data"
             }
           ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-fluessigkeit-gesamt"
           ]
@@ -1034,10 +1106,6 @@
         "category": [
           {
             "coding": [
-              {
-                "code": "exam",
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
-              },
               {
                 "code": "364396009",
                 "system": "http://snomed.info/sct",
@@ -1070,7 +1138,7 @@
         "subject": {
           "reference": "Patient/mii-exa-test-data-icu-patient-1"
         },
-        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+        "effectiveDateTime": "2024-05-05T08:00:00+02:00"
       }
     },
     {
@@ -1090,6 +1158,7 @@
               "display": "test health data"
             }
           ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-einfuhr-fluessigkeit-gesamt"
           ]
@@ -1097,10 +1166,6 @@
         "category": [
           {
             "coding": [
-              {
-                "code": "exam",
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
-              },
               {
                 "code": "364396009",
                 "system": "http://snomed.info/sct",
@@ -1133,7 +1198,7 @@
         "subject": {
           "reference": "Patient/mii-exa-test-data-icu-patient-1"
         },
-        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+        "effectiveDateTime": "2024-05-05T08:00:00+02:00"
       }
     },
     {
@@ -1153,6 +1218,7 @@
               "display": "test health data"
             }
           ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-tagesbilanz-fluessigkeit"
           ]
@@ -1160,10 +1226,6 @@
         "category": [
           {
             "coding": [
-              {
-                "code": "exam",
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
-              },
               {
                 "code": "364396009",
                 "system": "http://snomed.info/sct",
@@ -1196,7 +1258,7 @@
         "subject": {
           "reference": "Patient/mii-exa-test-data-icu-patient-1"
         },
-        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+        "effectiveDateTime": "2024-05-05T08:00:00+02:00"
       }
     },
     {
@@ -1216,8 +1278,9 @@
               "display": "test health data"
             }
           ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-arterieller-druck"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-ect-arterieller-druck"
           ]
         },
         "partOf": [
@@ -1255,7 +1318,7 @@
         "subject": {
           "reference": "Patient/mii-exa-test-data-icu-patient-1"
         },
-        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+        "effectiveDateTime": "2024-05-05T08:00:00+02:00"
       }
     },
     {
@@ -1275,8 +1338,9 @@
               "display": "test health data"
             }
           ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-blutfluss-cardiovasculaeres-geraet"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-ect-blutfluss-cardiovasculaeres-geraet"
           ]
         },
         "partOf": [
@@ -1303,7 +1367,7 @@
         "subject": {
           "reference": "Patient/mii-exa-test-data-icu-patient-1"
         },
-        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+        "effectiveDateTime": "2024-05-05T08:00:00+02:00"
       }
     },
     {
@@ -1323,8 +1387,9 @@
               "display": "test health data"
             }
           ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-blutfluss-extrakorporaler-gasaustausch"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-ect-blutfluss-extrakorporaler-gasaustausch"
           ]
         },
         "partOf": [
@@ -1344,14 +1409,14 @@
         "valueQuantity": {
           "system": "http://unitsofmeasure.org",
           "code": "L/min",
-          "value": 3,
+          "value": 4.5,
           "unit": "L/min"
         },
         "status": "final",
         "subject": {
           "reference": "Patient/mii-exa-test-data-icu-patient-1"
         },
-        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+        "effectiveDateTime": "2024-05-05T08:00:00+02:00"
       }
     },
     {
@@ -1371,8 +1436,9 @@
               "display": "test health data"
             }
           ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-blutflussindex-extrakorporaler-gasaustausch"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-ect-blutflussindex-extrakorporaler-gasaustausch"
           ]
         },
         "partOf": [
@@ -1410,7 +1476,7 @@
         "subject": {
           "reference": "Patient/mii-exa-test-data-icu-patient-1"
         },
-        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+        "effectiveDateTime": "2024-05-05T08:00:00+02:00"
       }
     },
     {
@@ -1430,8 +1496,9 @@
               "display": "test health data"
             }
           ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-dauer-extrakorporaler-gasaustausch"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-ect-dauer-extrakorporaler-gasaustausch"
           ]
         },
         "partOf": [
@@ -1469,7 +1536,7 @@
         "subject": {
           "reference": "Patient/mii-exa-test-data-icu-patient-1"
         },
-        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+        "effectiveDateTime": "2024-05-05T08:00:00+02:00"
       }
     },
     {
@@ -1489,8 +1556,9 @@
               "display": "test health data"
             }
           ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-dauer-haemodialysesitzung"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-ect-dauer-haemodialysesitzung"
           ]
         },
         "partOf": [
@@ -1528,7 +1596,7 @@
         "subject": {
           "reference": "Patient/mii-exa-test-data-icu-patient-1"
         },
-        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+        "effectiveDateTime": "2024-05-05T08:00:00+02:00"
       }
     },
     {
@@ -1548,8 +1616,9 @@
               "display": "test health data"
             }
           ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-gasfluss"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-ect-gasfluss"
           ]
         },
         "partOf": [
@@ -1569,14 +1638,14 @@
         "valueQuantity": {
           "system": "http://unitsofmeasure.org",
           "code": "L/min",
-          "value": 3,
+          "value": 5,
           "unit": "L/min"
         },
         "status": "final",
         "subject": {
           "reference": "Patient/mii-exa-test-data-icu-patient-1"
         },
-        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+        "effectiveDateTime": "2024-05-05T08:00:00+02:00"
       }
     },
     {
@@ -1596,8 +1665,9 @@
               "display": "test health data"
             }
           ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-haemodialyse-blutfluss"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-ect-haemodialyse-blutfluss"
           ]
         },
         "partOf": [
@@ -1635,7 +1705,7 @@
         "subject": {
           "reference": "Patient/mii-exa-test-data-icu-patient-1"
         },
-        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+        "effectiveDateTime": "2024-05-05T08:00:00+02:00"
       }
     },
     {
@@ -1655,8 +1725,9 @@
               "display": "test health data"
             }
           ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-ionisiertes-kalzium-nierenersatzverfahren"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-ect-ionisiertes-kalzium-nierenersatzverfahren"
           ]
         },
         "partOf": [
@@ -1694,7 +1765,7 @@
         "subject": {
           "reference": "Patient/mii-exa-test-data-icu-patient-1"
         },
-        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+        "effectiveDateTime": "2024-05-05T08:00:00+02:00"
       }
     },
     {
@@ -1714,8 +1785,9 @@
               "display": "test health data"
             }
           ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-substituatfluss"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-ect-substituatfluss"
           ]
         },
         "partOf": [
@@ -1753,7 +1825,7 @@
         "subject": {
           "reference": "Patient/mii-exa-test-data-icu-patient-1"
         },
-        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+        "effectiveDateTime": "2024-05-05T08:00:00+02:00"
       }
     },
     {
@@ -1773,8 +1845,9 @@
               "display": "test health data"
             }
           ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-substituatvolumen"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-ect-substituatvolumen"
           ]
         },
         "partOf": [
@@ -1812,7 +1885,7 @@
         "subject": {
           "reference": "Patient/mii-exa-test-data-icu-patient-1"
         },
-        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+        "effectiveDateTime": "2024-05-05T08:00:00+02:00"
       }
     },
     {
@@ -1832,8 +1905,9 @@
               "display": "test health data"
             }
           ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-venoeser-druck"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-ect-venoeser-druck"
           ]
         },
         "partOf": [
@@ -1860,7 +1934,7 @@
         "subject": {
           "reference": "Patient/mii-exa-test-data-icu-patient-1"
         },
-        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+        "effectiveDateTime": "2024-05-05T08:00:00+02:00"
       }
     },
     {
@@ -1880,8 +1954,9 @@
               "display": "test health data"
             }
           ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-exspiratorischer-sauerstoffpartialdruck"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-exspiratorischer-sauerstoffpartialdruck"
           ]
         },
         "partOf": [
@@ -1893,8 +1968,8 @@
           {
             "coding": [
               {
-                "code": "40617009",
                 "system": "http://snomed.info/sct",
+                "code": "40617009",
                 "display": "Artificial ventilation (regime/therapy)"
               }
             ]
@@ -1905,7 +1980,7 @@
             {
               "system": "http://snomed.info/sct",
               "code": "442720002",
-              "display": "Expired oxygen tension"
+              "display": "Expired oxygen tension (observable entity)"
             },
             {
               "system": "http://loinc.org",
@@ -1915,7 +1990,7 @@
             {
               "system": "urn:iso:std:iso:11073:10101",
               "code": "153132",
-              "display": "MDC_CONC_AWAY_O2_EXP"
+              "display": "Partial pressure of oxygen in airway gas measured during expiration."
             }
           ]
         },
@@ -1929,7 +2004,7 @@
         "subject": {
           "reference": "Patient/mii-exa-test-data-icu-patient-1"
         },
-        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+        "effectiveDateTime": "2024-05-05T08:00:00+02:00"
       }
     },
     {
@@ -1949,6 +2024,7 @@
               "display": "test health data"
             }
           ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-arterieller-blutdruck"
           ]
@@ -2004,7 +2080,7 @@
               "system": "http://unitsofmeasure.org",
               "code": "mm[Hg]",
               "value": 120,
-              "unit": "mmHg"
+              "unit": "millimeter Mercury column"
             }
           },
           {
@@ -2028,7 +2104,7 @@
               "system": "http://unitsofmeasure.org",
               "code": "mm[Hg]",
               "value": 80,
-              "unit": "mmHg"
+              "unit": "millimeter Mercury column"
             }
           }
         ],
@@ -2036,7 +2112,7 @@
         "subject": {
           "reference": "Patient/mii-exa-test-data-icu-patient-1"
         },
-        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+        "effectiveDateTime": "2024-05-05T08:00:00+02:00"
       }
     },
     {
@@ -2056,6 +2132,7 @@
               "display": "test health data"
             }
           ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-atemfrequenz"
           ]
@@ -2094,7 +2171,7 @@
         "subject": {
           "reference": "Patient/mii-exa-test-data-icu-patient-1"
         },
-        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+        "effectiveDateTime": "2024-05-05T08:00:00+02:00"
       }
     },
     {
@@ -2114,6 +2191,7 @@
               "display": "test health data"
             }
           ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-herzfrequenz"
           ]
@@ -2157,7 +2235,7 @@
         "subject": {
           "reference": "Patient/mii-exa-test-data-icu-patient-1"
         },
-        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+        "effectiveDateTime": "2024-05-05T08:00:00+02:00"
       }
     },
     {
@@ -2177,6 +2255,7 @@
               "display": "test health data"
             }
           ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-koerpergewicht"
           ]
@@ -2199,11 +2278,6 @@
               "display": "Body weight"
             },
             {
-              "system": "http://loinc.org",
-              "code": "8339-4",
-              "display": "Birth weight Measured"
-            },
-            {
               "system": "http://snomed.info/sct",
               "code": "27113001",
               "display": "Body weight"
@@ -2220,7 +2294,7 @@
         "subject": {
           "reference": "Patient/mii-exa-test-data-icu-patient-1"
         },
-        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+        "effectiveDateTime": "2024-05-05T08:00:00+02:00"
       }
     },
     {
@@ -2240,6 +2314,7 @@
               "display": "test health data"
             }
           ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-koerpergroesse"
           ]
@@ -2283,7 +2358,7 @@
         "subject": {
           "reference": "Patient/mii-exa-test-data-icu-patient-1"
         },
-        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+        "effectiveDateTime": "2024-05-05T08:00:00+02:00"
       }
     },
     {
@@ -2303,6 +2378,7 @@
               "display": "test health data"
             }
           ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-kopfumfang"
           ]
@@ -2326,10 +2402,12 @@
             },
             {
               "system": "http://snomed.info/sct",
-              "code": "363812007",
-              "display": "Head circumference"
+              "code": "363812007"
             }
           ]
+        },
+        "effectivePeriod": {
+          "start": "2024-02-15T14:30:00+01:00"
         },
         "valueQuantity": {
           "system": "http://unitsofmeasure.org",
@@ -2340,8 +2418,7 @@
         "status": "final",
         "subject": {
           "reference": "Patient/mii-exa-test-data-icu-patient-1"
-        },
-        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+        }
       }
     },
     {
@@ -2361,8 +2438,9 @@
               "display": "test health data"
             }
           ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-inspiratorische-sauerstofffraktion-eingestellt"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-inspiratorische-sauerstofffraktion"
           ]
         },
         "partOf": [
@@ -2374,8 +2452,8 @@
           {
             "coding": [
               {
-                "code": "40617009",
                 "system": "http://snomed.info/sct",
+                "code": "40617009",
                 "display": "Artificial ventilation (regime/therapy)"
               }
             ]
@@ -2386,26 +2464,21 @@
             {
               "system": "http://snomed.info/sct",
               "code": "250774007",
-              "display": "Inspired oxygen concentration"
-            },
-            {
-              "system": "http://loinc.org",
-              "code": "19994-3",
-              "display": "Oxygen/Total gas setting [Volume Fraction] Ventilator"
+              "display": "Inspired oxygen concentration (observable entity)"
             }
           ]
+        },
+        "valueQuantity": {
+          "system": "http://unitsofmeasure.org",
+          "code": "%",
+          "value": 0.5,
+          "unit": "percent"
         },
         "status": "final",
         "subject": {
           "reference": "Patient/mii-exa-test-data-icu-patient-1"
         },
-        "effectiveDateTime": "2024-02-15T14:30:00+01:00",
-        "valueQuantity": {
-          "value": 0.4,
-          "code": "%",
-          "system": "http://unitsofmeasure.org",
-          "unit": "percent"
-        }
+        "effectiveDateTime": "2024-05-05T08:00:00+02:00"
       }
     },
     {
@@ -2425,8 +2498,9 @@
               "display": "test health data"
             }
           ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-atemwegsdruck-bei-null-expiratorischem-gasfluss"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-atemwegsdruck-bei-null-expiratorischem-gasfluss"
           ]
         },
         "partOf": [
@@ -2438,8 +2512,8 @@
           {
             "coding": [
               {
-                "code": "40617009",
                 "system": "http://snomed.info/sct",
+                "code": "40617009",
                 "display": "Artificial ventilation (regime/therapy)"
               }
             ]
@@ -2450,7 +2524,7 @@
             {
               "system": "http://loinc.org",
               "code": "20060-0",
-              "display": "Airway pressure --at zero inspiratory flow on ventilator"
+              "display": "Pressure.airway^at zero inspiratory flow on ventilator"
             }
           ]
         },
@@ -2464,7 +2538,7 @@
         "subject": {
           "reference": "Patient/mii-exa-test-data-icu-patient-1"
         },
-        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+        "effectiveDateTime": "2024-05-05T08:00:00+02:00"
       }
     },
     {
@@ -2484,8 +2558,9 @@
               "display": "test health data"
             }
           ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-atemwegsdruck-bei-mittlerem-expiratorischem-gasfluss"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-atemwegsdruck-bei-mittlerem-expiratorischem-gasfluss"
           ]
         },
         "partOf": [
@@ -2497,8 +2572,8 @@
           {
             "coding": [
               {
-                "code": "40617009",
                 "system": "http://snomed.info/sct",
+                "code": "40617009",
                 "display": "Artificial ventilation (regime/therapy)"
               }
             ]
@@ -2509,7 +2584,7 @@
             {
               "system": "http://loinc.org",
               "code": "20056-8",
-              "display": "Airway pressure --at mean expiratory flow on ventilator"
+              "display": "Pressure.airway^at mean expiratory flow on ventilator"
             }
           ]
         },
@@ -2523,7 +2598,7 @@
         "subject": {
           "reference": "Patient/mii-exa-test-data-icu-patient-1"
         },
-        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+        "effectiveDateTime": "2024-05-05T08:00:00+02:00"
       }
     },
     {
@@ -2543,8 +2618,9 @@
               "display": "test health data"
             }
           ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-atemzugvolumen-einstellung"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-atemzugvolumen-einstellung"
           ]
         },
         "partOf": [
@@ -2556,8 +2632,8 @@
           {
             "coding": [
               {
-                "code": "40617009",
                 "system": "http://snomed.info/sct",
+                "code": "40617009",
                 "display": "Artificial ventilation (regime/therapy)"
               }
             ]
@@ -2568,7 +2644,7 @@
             {
               "system": "http://snomed.info/sct",
               "code": "416811008",
-              "display": "Tidal volume setting"
+              "display": "Tidal volume setting (observable entity)"
             },
             {
               "system": "http://loinc.org",
@@ -2585,14 +2661,14 @@
         "valueQuantity": {
           "system": "http://unitsofmeasure.org",
           "code": "mL",
-          "value": 500,
+          "value": 340,
           "unit": "mL"
         },
         "status": "final",
         "subject": {
           "reference": "Patient/mii-exa-test-data-icu-patient-1"
         },
-        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+        "effectiveDateTime": "2024-05-05T08:00:00+02:00"
       }
     },
     {
@@ -2612,8 +2688,9 @@
               "display": "test health data"
             }
           ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-atemzugvolumen-waehrend-beatmung"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-atemzugvolumen-waehrend-beatmung"
           ]
         },
         "partOf": [
@@ -2625,8 +2702,8 @@
           {
             "coding": [
               {
-                "code": "40617009",
                 "system": "http://snomed.info/sct",
+                "code": "40617009",
                 "display": "Artificial ventilation (regime/therapy)"
               }
             ]
@@ -2637,7 +2714,7 @@
             {
               "system": "http://snomed.info/sct",
               "code": "250874002",
-              "display": "Ventilator delivered tidal volume"
+              "display": "Ventilator delivered tidal volume (observable entity)"
             },
             {
               "system": "http://loinc.org",
@@ -2647,21 +2724,21 @@
             {
               "system": "urn:iso:std:iso:11073:10101",
               "code": "151980",
-              "display": "MDC_VENT_VOL_TIDAL"
+              "display": "Volume of gas delivered through the patient-connection port during a respiratory cycle."
             }
           ]
         },
         "valueQuantity": {
           "system": "http://unitsofmeasure.org",
           "code": "mL",
-          "value": 480,
+          "value": 320,
           "unit": "mL"
         },
         "status": "final",
         "subject": {
           "reference": "Patient/mii-exa-test-data-icu-patient-1"
         },
-        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+        "effectiveDateTime": "2024-05-05T08:00:00+02:00"
       }
     },
     {
@@ -2681,8 +2758,9 @@
               "display": "test health data"
             }
           ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-beatmungsvolumen-pro-minute-maschineller-beatmung"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-beatmungsvolumen-pro-minute-maschineller-beatmung"
           ]
         },
         "partOf": [
@@ -2694,8 +2772,8 @@
           {
             "coding": [
               {
-                "code": "40617009",
                 "system": "http://snomed.info/sct",
+                "code": "40617009",
                 "display": "Artificial ventilation (regime/therapy)"
               }
             ]
@@ -2706,7 +2784,7 @@
             {
               "system": "http://snomed.info/sct",
               "code": "250875001",
-              "display": "Ventilator delivered minute volume"
+              "display": "Ventilator delivered minute volume (observable entity)"
             },
             {
               "system": "http://loinc.org",
@@ -2716,7 +2794,7 @@
             {
               "system": "urn:iso:std:iso:11073:10101",
               "code": "152004",
-              "display": "MDC_VENT_VOL_MINUTE_INSP"
+              "display": "Total volume of gas breathed in during 1 min during mechanical ventilation."
             }
           ]
         },
@@ -2730,7 +2808,7 @@
         "subject": {
           "reference": "Patient/mii-exa-test-data-icu-patient-1"
         },
-        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+        "effectiveDateTime": "2024-05-05T08:00:00+02:00"
       }
     },
     {
@@ -2750,8 +2828,9 @@
               "display": "test health data"
             }
           ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-beatmungszeit-hohem-druck"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-beatmungszeit-hohem-druck"
           ]
         },
         "partOf": [
@@ -2763,8 +2842,8 @@
           {
             "coding": [
               {
-                "code": "40617009",
                 "system": "http://snomed.info/sct",
+                "code": "40617009",
                 "display": "Artificial ventilation (regime/therapy)"
               }
             ]
@@ -2794,7 +2873,7 @@
         "subject": {
           "reference": "Patient/mii-exa-test-data-icu-patient-1"
         },
-        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+        "effectiveDateTime": "2024-05-05T08:00:00+02:00"
       }
     },
     {
@@ -2814,8 +2893,9 @@
               "display": "test health data"
             }
           ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-beatmungszeit-niedrigem-druck"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-beatmungszeit-niedrigem-druck"
           ]
         },
         "partOf": [
@@ -2827,8 +2907,8 @@
           {
             "coding": [
               {
-                "code": "40617009",
                 "system": "http://snomed.info/sct",
+                "code": "40617009",
                 "display": "Artificial ventilation (regime/therapy)"
               }
             ]
@@ -2858,7 +2938,7 @@
         "subject": {
           "reference": "Patient/mii-exa-test-data-icu-patient-1"
         },
-        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+        "effectiveDateTime": "2024-05-05T08:00:00+02:00"
       }
     },
     {
@@ -2878,8 +2958,9 @@
               "display": "test health data"
             }
           ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-eingestellter-inspiratorischer-gasfluss"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-eingestellter-inspiratorischer-gasfluss"
           ]
         },
         "partOf": [
@@ -2891,8 +2972,8 @@
           {
             "coding": [
               {
-                "code": "40617009",
                 "system": "http://snomed.info/sct",
+                "code": "40617009",
                 "display": "Artificial ventilation (regime/therapy)"
               }
             ]
@@ -2917,7 +2998,7 @@
         "subject": {
           "reference": "Patient/mii-exa-test-data-icu-patient-1"
         },
-        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+        "effectiveDateTime": "2024-05-05T08:00:00+02:00"
       }
     },
     {
@@ -2937,8 +3018,9 @@
               "display": "test health data"
             }
           ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-einstellung-ausatmungszeit-beatmung"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-einstellung-ausatmungszeit-beatmung"
           ]
         },
         "partOf": [
@@ -2950,8 +3032,8 @@
           {
             "coding": [
               {
-                "code": "40617009",
                 "system": "http://snomed.info/sct",
+                "code": "40617009",
                 "display": "Artificial ventilation (regime/therapy)"
               }
             ]
@@ -2962,12 +3044,12 @@
             {
               "system": "http://snomed.info/sct",
               "code": "250820008",
-              "display": "Expiratory time"
+              "display": "Expiratory time (observable entity)"
             },
             {
               "system": "http://loinc.org",
               "code": "76187-4",
-              "display": "Expiratory hold time setting Ventilator"
+              "display": "Expiratory hold time setting"
             }
           ]
         },
@@ -2981,7 +3063,7 @@
         "subject": {
           "reference": "Patient/mii-exa-test-data-icu-patient-1"
         },
-        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+        "effectiveDateTime": "2024-05-05T08:00:00+02:00"
       }
     },
     {
@@ -3001,8 +3083,9 @@
               "display": "test health data"
             }
           ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-einstellung-einatmungszeit-beatmung"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-einstellung-einatmungszeit-beatmung"
           ]
         },
         "partOf": [
@@ -3014,8 +3097,8 @@
           {
             "coding": [
               {
-                "code": "40617009",
                 "system": "http://snomed.info/sct",
+                "code": "40617009",
                 "display": "Artificial ventilation (regime/therapy)"
               }
             ]
@@ -3026,12 +3109,12 @@
             {
               "system": "http://snomed.info/sct",
               "code": "250819002",
-              "display": "Inspiratory time"
+              "display": "Inspiratory time (observable entity)"
             },
             {
               "system": "http://loinc.org",
               "code": "76334-2",
-              "display": "Inspiratory time setting Ventilator"
+              "display": "Inspiratory time setting"
             },
             {
               "system": "urn:iso:std:iso:11073:10101",
@@ -3050,7 +3133,7 @@
         "subject": {
           "reference": "Patient/mii-exa-test-data-icu-patient-1"
         },
-        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+        "effectiveDateTime": "2024-05-05T08:00:00+02:00"
       }
     },
     {
@@ -3070,8 +3153,9 @@
               "display": "test health data"
             }
           ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-endexpiratorischer-kohlendioxidpartialdruck"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-endexpiratorischer-kohlendioxidpartialdruck"
           ]
         },
         "partOf": [
@@ -3083,8 +3167,8 @@
           {
             "coding": [
               {
-                "code": "40617009",
                 "system": "http://snomed.info/sct",
+                "code": "40617009",
                 "display": "Artificial ventilation (regime/therapy)"
               }
             ]
@@ -3095,17 +3179,17 @@
             {
               "system": "http://snomed.info/sct",
               "code": "250790007",
-              "display": "End tidal carbon dioxide tension"
+              "display": "End tidal carbon dioxide tension (observable entity)"
             },
             {
               "system": "http://loinc.org",
               "code": "19891-1",
-              "display": "Carbon dioxide [Partial pressure] in Exhaled gas --at end expiration"
+              "display": "Carbon dioxide^at end expiration"
             },
             {
               "system": "urn:iso:std:iso:11073:10101",
               "code": "151708",
-              "display": "MDC_CONC_AWAY_CO2_ET"
+              "display": "Partial pressure of carbon dioxide in airway gas measured at the end of expiration."
             }
           ]
         },
@@ -3119,7 +3203,7 @@
         "subject": {
           "reference": "Patient/mii-exa-test-data-icu-patient-1"
         },
-        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+        "effectiveDateTime": "2024-05-05T08:00:00+02:00"
       }
     },
     {
@@ -3139,8 +3223,9 @@
               "display": "test health data"
             }
           ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-exspiratorischer-gasfluss"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-exspiratorischer-gasfluss"
           ]
         },
         "partOf": [
@@ -3152,8 +3237,8 @@
           {
             "coding": [
               {
-                "code": "40617009",
                 "system": "http://snomed.info/sct",
+                "code": "40617009",
                 "display": "Artificial ventilation (regime/therapy)"
               }
             ]
@@ -3169,7 +3254,7 @@
             {
               "system": "urn:iso:std:iso:11073:10101",
               "code": "151944",
-              "display": "MDC_VENT_FLOW_EXP"
+              "display": "Expiratory gas flow during mechanical ventilation. "
             }
           ]
         },
@@ -3183,7 +3268,7 @@
         "subject": {
           "reference": "Patient/mii-exa-test-data-icu-patient-1"
         },
-        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+        "effectiveDateTime": "2024-05-05T08:00:00+02:00"
       }
     },
     {
@@ -3203,8 +3288,9 @@
               "display": "test health data"
             }
           ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-horowitz-in-arteriellem-blut"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-horowitz-in-arteriellem-blut"
           ]
         },
         "partOf": [
@@ -3216,8 +3302,9 @@
           {
             "coding": [
               {
-                "code": "vital-signs",
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+                "system": "http://snomed.info/sct",
+                "code": "40617009",
+                "display": "Artificial ventilation (regime/therapy)"
               }
             ]
           }
@@ -3232,21 +3319,21 @@
             {
               "system": "urn:iso:std:iso:11073:10101",
               "code": "150656",
-              "display": "MDC_O2_OXYGENATION_RATIO"
+              "display": "Oxygenation Ratio, calculated as the ratio of PaO2 (partial pressure of arterial oxygen) divided by FiO2 (the fractional of inspired oxygen, e.g., FiO2 in air = 0.21)."
             }
           ]
         },
         "valueQuantity": {
           "system": "http://unitsofmeasure.org",
           "code": "mm[Hg]",
-          "value": 350,
+          "value": 68,
           "unit": "mmHg"
         },
         "status": "final",
         "subject": {
           "reference": "Patient/mii-exa-test-data-icu-patient-1"
         },
-        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+        "effectiveDateTime": "2024-05-05T08:00:00+02:00"
       }
     },
     {
@@ -3266,8 +3353,9 @@
               "display": "test health data"
             }
           ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-inspiratorische-sauerstofffraktion-gemessen"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-inspiratorische-sauerstofffraktion"
           ]
         },
         "partOf": [
@@ -3279,8 +3367,8 @@
           {
             "coding": [
               {
-                "code": "40617009",
                 "system": "http://snomed.info/sct",
+                "code": "40617009",
                 "display": "Artificial ventilation (regime/therapy)"
               }
             ]
@@ -3291,26 +3379,21 @@
             {
               "system": "http://snomed.info/sct",
               "code": "250774007",
-              "display": "Inspired oxygen concentration"
-            },
-            {
-              "system": "http://loinc.org",
-              "code": "71835-3",
-              "display": "Oxygen/Gas total [Pure volume fraction] Inhaled gas"
+              "display": "Inspired oxygen concentration (observable entity)"
             }
           ]
+        },
+        "valueQuantity": {
+          "system": "http://unitsofmeasure.org",
+          "code": "%",
+          "value": 0.52,
+          "unit": "percent"
         },
         "status": "final",
         "subject": {
           "reference": "Patient/mii-exa-test-data-icu-patient-1"
         },
-        "effectiveDateTime": "2024-02-15T14:30:00+01:00",
-        "valueQuantity": {
-          "value": 0.42,
-          "code": "%",
-          "system": "http://unitsofmeasure.org",
-          "unit": "percent"
-        }
+        "effectiveDateTime": "2024-05-05T08:00:00+02:00"
       }
     },
     {
@@ -3330,8 +3413,9 @@
               "display": "test health data"
             }
           ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-inspiratorischer-gasfluss"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-inspiratorischer-gasfluss"
           ]
         },
         "partOf": [
@@ -3343,8 +3427,8 @@
           {
             "coding": [
               {
-                "code": "40617009",
                 "system": "http://snomed.info/sct",
+                "code": "40617009",
                 "display": "Artificial ventilation (regime/therapy)"
               }
             ]
@@ -3374,7 +3458,7 @@
         "subject": {
           "reference": "Patient/mii-exa-test-data-icu-patient-1"
         },
-        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+        "effectiveDateTime": "2024-05-05T08:00:00+02:00"
       }
     },
     {
@@ -3394,8 +3478,9 @@
               "display": "test health data"
             }
           ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-maximaler-beatmungsdruck"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-maximaler-beatmungsdruck"
           ]
         },
         "partOf": [
@@ -3407,8 +3492,8 @@
           {
             "coding": [
               {
-                "code": "40617009",
                 "system": "http://snomed.info/sct",
+                "code": "40617009",
                 "display": "Artificial ventilation (regime/therapy)"
               }
             ]
@@ -3428,22 +3513,22 @@
             },
             {
               "system": "urn:iso:std:iso:11073:10101",
-              "code": "151973",
-              "display": "MDC_VENT_PRESS_AWAY_MAX"
+              "code": "151957",
+              "display": "Maximum airway pressure during mechanical ventilation."
             }
           ]
         },
         "valueQuantity": {
           "system": "http://unitsofmeasure.org",
           "code": "cm[H2O]",
-          "value": 25,
+          "value": 27,
           "unit": "cmH2O"
         },
         "status": "final",
         "subject": {
           "reference": "Patient/mii-exa-test-data-icu-patient-1"
         },
-        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+        "effectiveDateTime": "2024-05-05T08:00:00+02:00"
       }
     },
     {
@@ -3463,8 +3548,9 @@
               "display": "test health data"
             }
           ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-mechanische-atemfrequenz-beatmet"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-mechanische-atemfrequenz-beatmet"
           ]
         },
         "partOf": [
@@ -3476,8 +3562,8 @@
           {
             "coding": [
               {
-                "code": "40617009",
                 "system": "http://snomed.info/sct",
+                "code": "40617009",
                 "display": "Artificial ventilation (regime/therapy)"
               }
             ]
@@ -3488,7 +3574,7 @@
             {
               "system": "http://snomed.info/sct",
               "code": "250876000",
-              "display": "Ventilator rate"
+              "display": "Ventilator rate (observable entity)"
             },
             {
               "system": "http://loinc.org",
@@ -3498,21 +3584,21 @@
             {
               "system": "urn:iso:std:iso:11073:10101",
               "code": "151586",
-              "display": "MDC_VENT_RESP_RATE"
+              "display": "Rate of mechanical ventilation; method not specified."
             }
           ]
         },
         "valueQuantity": {
           "system": "http://unitsofmeasure.org",
           "code": "{Breaths}/min",
-          "value": 16,
+          "value": 12,
           "unit": "breaths per minute"
         },
         "status": "final",
         "subject": {
           "reference": "Patient/mii-exa-test-data-icu-patient-1"
         },
-        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+        "effectiveDateTime": "2024-05-05T08:00:00+02:00"
       }
     },
     {
@@ -3532,8 +3618,9 @@
               "display": "test health data"
             }
           ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-mittlerer-beatmungsdruck"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-mittlerer-beatmungsdruck"
           ]
         },
         "partOf": [
@@ -3557,7 +3644,7 @@
             {
               "system": "http://snomed.info/sct",
               "code": "698821009",
-              "display": "Mean inspiratory airway pressure"
+              "display": "Mean inspiratory airway pressure (observable entity)"
             },
             {
               "system": "http://loinc.org",
@@ -3567,21 +3654,21 @@
             {
               "system": "urn:iso:std:iso:11073:10101",
               "code": "151975",
-              "display": "MDC_VENT_PRESS_AWAY_MEAN"
+              "display": "Mean inspiratory airway pressure."
             }
           ]
         },
         "valueQuantity": {
           "system": "http://unitsofmeasure.org",
           "code": "cm[H2O]",
-          "value": 15,
+          "value": 18,
           "unit": "cmH2O"
         },
         "status": "final",
         "subject": {
           "reference": "Patient/mii-exa-test-data-icu-patient-1"
         },
-        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+        "effectiveDateTime": "2024-05-05T08:00:00+02:00"
       }
     },
     {
@@ -3601,8 +3688,9 @@
               "display": "test health data"
             }
           ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-positiv-endexpiratorischer-druck"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-positiv-endexpiratorischer-druck"
           ]
         },
         "partOf": [
@@ -3614,8 +3702,8 @@
           {
             "coding": [
               {
-                "code": "40617009",
                 "system": "http://snomed.info/sct",
+                "code": "40617009",
                 "display": "Artificial ventilation (regime/therapy)"
               }
             ]
@@ -3626,7 +3714,7 @@
             {
               "system": "http://snomed.info/sct",
               "code": "250854009",
-              "display": "Positive end expiratory pressure"
+              "display": "Positive end expiratory pressure (observable entity)"
             },
             {
               "system": "http://loinc.org",
@@ -3636,21 +3724,21 @@
             {
               "system": "urn:iso:std:iso:11073:10101",
               "code": "151976",
-              "display": "MDC_VENT_PRESS_AWAY_END_EXP_POS"
+              "display": "Positive end expiratory pressure applied to the airway."
             }
           ]
         },
         "valueQuantity": {
           "system": "http://unitsofmeasure.org",
           "code": "cm[H2O]",
-          "value": 8,
+          "value": 14,
           "unit": "cmH2O"
         },
         "status": "final",
         "subject": {
           "reference": "Patient/mii-exa-test-data-icu-patient-1"
         },
-        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+        "effectiveDateTime": "2024-05-05T08:00:00+02:00"
       }
     },
     {
@@ -3670,8 +3758,9 @@
               "display": "test health data"
             }
           ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-spontane-atemfrequenz-beatmet"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-spontane-atemfrequenz-beatmet"
           ]
         },
         "partOf": [
@@ -3683,8 +3772,8 @@
           {
             "coding": [
               {
-                "code": "40617009",
                 "system": "http://snomed.info/sct",
+                "code": "40617009",
                 "display": "Artificial ventilation (regime/therapy)"
               }
             ]
@@ -3695,11 +3784,12 @@
             {
               "system": "urn:iso:std:iso:11073:10101",
               "code": "152498",
-              "display": "MDC_VENT_RESP_BTSD_P_RATE"
+              "display": "Rate of breaths or inspiratory gas flow initiated and terminated by the patient where pressure and flow/volume delivery are determined by the patient without support or assistance by the ventilator. Includes unassisted breaths that are superimposed on the intermittently elevated baseline pressure with APRV, bilevel or spontaneous-only modes."
             },
             {
-              "system": "http://snomed.info/sct",
-              "code": "271625008"
+              "system": "http://loinc.org",
+              "code": "19839-0",
+              "display": "Breath rate spontaneous --on ventilator"
             }
           ]
         },
@@ -3713,7 +3803,7 @@
         "subject": {
           "reference": "Patient/mii-exa-test-data-icu-patient-1"
         },
-        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+        "effectiveDateTime": "2024-05-05T08:00:00+02:00"
       }
     },
     {
@@ -3733,8 +3823,9 @@
               "display": "test health data"
             }
           ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-spontane-mechanische-atemfrequenz-beatmet"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-spontane-mechanische-atemfrequenz-beatmet"
           ]
         },
         "partOf": [
@@ -3746,8 +3837,8 @@
           {
             "coding": [
               {
-                "code": "40617009",
                 "system": "http://snomed.info/sct",
+                "code": "40617009",
                 "display": "Artificial ventilation (regime/therapy)"
               }
             ]
@@ -3758,7 +3849,7 @@
             {
               "system": "http://snomed.info/sct",
               "code": "250810003",
-              "display": "Total breath rate"
+              "display": "Total breath rate (observable entity)"
             },
             {
               "system": "http://loinc.org",
@@ -3768,7 +3859,7 @@
             {
               "system": "urn:iso:std:iso:11073:10101",
               "code": "152490",
-              "display": "MDC_VENT_RESP_BTSD_PSAZC_RATE"
+              "display": "Total rate of breaths or inspiratory gas flow comprised of unassisted (P), supported (S), assisted (A), synchronized assisted (Z) and controlled (C) breath types."
             }
           ]
         },
@@ -3782,7 +3873,7 @@
         "subject": {
           "reference": "Patient/mii-exa-test-data-icu-patient-1"
         },
-        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+        "effectiveDateTime": "2024-05-05T08:00:00+02:00"
       }
     },
     {
@@ -3802,8 +3893,9 @@
               "display": "test health data"
             }
           ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-spontanes-atemzugvolumen"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-spontanes-atemzugvolumen"
           ]
         },
         "partOf": [
@@ -3815,8 +3907,8 @@
           {
             "coding": [
               {
-                "code": "40617009",
                 "system": "http://snomed.info/sct",
+                "code": "40617009",
                 "display": "Artificial ventilation (regime/therapy)"
               }
             ]
@@ -3827,12 +3919,7 @@
             {
               "system": "http://snomed.info/sct",
               "code": "250816009",
-              "display": "Spontaneous tidal volume"
-            },
-            {
-              "system": "http://loinc.org",
-              "code": "20116-0",
-              "display": "Tidal volume.spontaneous --on ventilator"
+              "display": "Spontaneous tidal volume (observable entity)"
             }
           ]
         },
@@ -3846,7 +3933,7 @@
         "subject": {
           "reference": "Patient/mii-exa-test-data-icu-patient-1"
         },
-        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+        "effectiveDateTime": "2024-05-05T08:00:00+02:00"
       }
     },
     {
@@ -3866,8 +3953,9 @@
               "display": "test health data"
             }
           ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-spontanes-mechanisches-atemzugvolumen-waehrend-beatmung"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-spontanes-mechanisches-atemzugvolumen-waehrend-beatmung"
           ]
         },
         "partOf": [
@@ -3879,8 +3967,8 @@
           {
             "coding": [
               {
-                "code": "40617009",
                 "system": "http://snomed.info/sct",
+                "code": "40617009",
                 "display": "Artificial ventilation (regime/therapy)"
               }
             ]
@@ -3905,7 +3993,7 @@
         "subject": {
           "reference": "Patient/mii-exa-test-data-icu-patient-1"
         },
-        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+        "effectiveDateTime": "2024-05-05T08:00:00+02:00"
       }
     },
     {
@@ -3925,8 +4013,9 @@
               "display": "test health data"
             }
           ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-unterstuetzungsdruck-beatmung"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-unterstuetzungsdruck-beatmung"
           ]
         },
         "partOf": [
@@ -3938,8 +4027,8 @@
           {
             "coding": [
               {
-                "code": "40617009",
                 "system": "http://snomed.info/sct",
+                "code": "40617009",
                 "display": "Artificial ventilation (regime/therapy)"
               }
             ]
@@ -3964,7 +4053,7 @@
         "subject": {
           "reference": "Patient/mii-exa-test-data-icu-patient-1"
         },
-        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+        "effectiveDateTime": "2024-05-05T08:00:00+02:00"
       }
     },
     {
@@ -3984,8 +4073,9 @@
               "display": "test health data"
             }
           ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-zeitverhaeltnis-ein-ausatmung"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-zeitverhaeltnis-ein-ausatmung"
           ]
         },
         "partOf": [
@@ -3997,8 +4087,8 @@
           {
             "coding": [
               {
-                "code": "40617009",
                 "system": "http://snomed.info/sct",
+                "code": "40617009",
                 "display": "Artificial ventilation (regime/therapy)"
               }
             ]
@@ -4009,7 +4099,7 @@
             {
               "system": "http://snomed.info/sct",
               "code": "250822000",
-              "display": "Inspiration/expiration time ratio"
+              "display": "Inspiration/expiration time ratio (observable entity)"
             },
             {
               "system": "http://loinc.org",
@@ -4019,7 +4109,7 @@
             {
               "system": "urn:iso:std:iso:11073:10101",
               "code": "151832",
-              "display": "MDC_RATIO_IE"
+              "display": "Ratio of durations of inspiratory and expiratory phases."
             }
           ]
         },
@@ -4033,7 +4123,7 @@
         "subject": {
           "reference": "Patient/mii-exa-test-data-icu-patient-1"
         },
-        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+        "effectiveDateTime": "2024-05-05T08:00:00+02:00"
       }
     },
     {
@@ -4053,8 +4143,9 @@
               "display": "test health data"
             }
           ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-dynamische-kompliance"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-dynamische-kompliance"
           ]
         },
         "partOf": [
@@ -4066,8 +4157,8 @@
           {
             "coding": [
               {
-                "code": "40617009",
                 "system": "http://snomed.info/sct",
+                "code": "40617009",
                 "display": "Artificial ventilation (regime/therapy)"
               }
             ]
@@ -4078,17 +4169,17 @@
             {
               "system": "http://snomed.info/sct",
               "code": "250823005",
-              "display": "Total dynamic compliance"
-            },
-            {
-              "system": "http://loinc.org",
-              "code": "0827-3",
-              "display": "Dynamic lung compliance"
+              "display": "Total dynamic compliance (observable entity)"
             },
             {
               "system": "urn:iso:std:iso:11073:10101",
               "code": "151692",
-              "display": "MDC_COMPL_LUNG_DYN"
+              "display": "Change of tidal volume per unit change of transthoracic pressure."
+            },
+            {
+              "system": "http://loinc.org",
+              "code": "60827-3",
+              "display": "Compliance.dynamic"
             }
           ]
         },
@@ -4102,7 +4193,7 @@
         "subject": {
           "reference": "Patient/mii-exa-test-data-icu-patient-1"
         },
-        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+        "effectiveDateTime": "2024-05-05T08:00:00+02:00"
       }
     },
     {
@@ -4122,8 +4213,9 @@
               "display": "test health data"
             }
           ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-druckdifferenz-beatmung"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-druckdifferenz-beatmung"
           ]
         },
         "partOf": [
@@ -4135,8 +4227,8 @@
           {
             "coding": [
               {
-                "code": "40617009",
                 "system": "http://snomed.info/sct",
+                "code": "40617009",
                 "display": "Artificial ventilation (regime/therapy)"
               }
             ]
@@ -4147,12 +4239,12 @@
             {
               "system": "http://loinc.org",
               "code": "76154-4",
-              "display": "Airway pressure delta --on ventilator"
+              "display": "Airway pressure delta^on ventilator"
             },
             {
               "system": "urn:iso:std:iso:11073:10101",
               "code": "152720",
-              "display": "MDC_VENT_PRESS_AWAY_DELTA"
+              "display": "Inspiratory airway pressure relative to PEEP or BAP."
             }
           ]
         },
@@ -4166,7 +4258,7 @@
         "subject": {
           "reference": "Patient/mii-exa-test-data-icu-patient-1"
         },
-        "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+        "effectiveDateTime": "2024-05-05T08:00:00+02:00"
       }
     },
     {
@@ -4186,13 +4278,14 @@
               "display": "test health data"
             }
           ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-extrakorporales-verfahren"
           ]
         },
         "performedPeriod": {
-          "start": "2024-02-12T08:00:00+01:00",
-          "end": "2024-02-18T16:00:00+01:00"
+          "start": "2024-05-03T02:00:00+02:00",
+          "end": "2024-05-11T14:00:00+02:00"
         },
         "status": "completed",
         "subject": {
@@ -4238,13 +4331,14 @@
               "display": "test health data"
             }
           ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-beatmung"
           ]
         },
         "performedPeriod": {
-          "start": "2024-02-12T08:00:00+01:00",
-          "end": "2024-02-18T16:00:00+01:00"
+          "start": "2024-05-01T18:00:00+02:00",
+          "end": "2024-05-13T09:00:00+02:00"
         },
         "status": "completed",
         "subject": {
@@ -4290,8 +4384,9 @@
               "display": "test health data"
             }
           ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-icu-device"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-device"
           ]
         },
         "deviceName": [
@@ -4317,6 +4412,42 @@
     {
       "request": {
         "method": "PUT",
+        "url": "Device/mii-exa-test-data-patient-1-icu-device-ecmo-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Device/mii-exa-test-data-patient-1-icu-device-ecmo-1",
+      "resource": {
+        "resourceType": "Device",
+        "id": "mii-exa-test-data-patient-1-icu-device-ecmo-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-device"
+          ]
+        },
+        "deviceName": [
+          {
+            "name": "Getinge Cardiohelp",
+            "type": "manufacturer-name"
+          }
+        ],
+        "type": {
+          "text": "VV-ECMO-System (extrakorporale Membranoxygenierung)"
+        },
+        "patient": {
+          "reference": "Patient/mii-exa-test-data-icu-patient-1"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
         "url": "DeviceMetric/mii-exa-test-data-patient-1-icu-ect-dm-param-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/DeviceMetric/mii-exa-test-data-patient-1-icu-ect-dm-param-1",
@@ -4331,8 +4462,9 @@
               "display": "test health data"
             }
           ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-devicemetric-eingestellte-gemessene-parameter-extrakorporale-verfahren"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-dm-eingest-gem-parameter-extrakorporale-verfahren"
           ]
         },
         "type": {
@@ -4345,7 +4477,7 @@
           ]
         },
         "source": {
-          "reference": "Device/mii-exa-test-data-patient-1-icu-device-1"
+          "reference": "Device/mii-exa-test-data-patient-1-icu-device-ecmo-1"
         },
         "category": "measurement"
       }
@@ -4367,8 +4499,9 @@
               "display": "test health data"
             }
           ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-devicemetric-eingestellte-gemessene-parameter-beatmung"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-dm-eingestellte-gemessene-parameter-beatmung"
           ]
         },
         "type": {

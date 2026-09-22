@@ -8,7 +8,8 @@
         "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
         "display": "test health data"
       }
-    ]
+    ],
+    "source": "https://www.charite.de/fhir/kds-testdata"
   },
   "entry": [
     {
@@ -27,7 +28,8 @@
               "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
               "display": "test health data"
             }
-          ]
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata"
         },
         "identifier": [
           {
@@ -63,7 +65,8 @@
               "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
               "display": "test health data"
             }
-          ]
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata"
         },
         "period": {
           "start": "2024-06-01",
@@ -77,6 +80,67 @@
         },
         "subject": {
           "reference": "Patient/mii-exa-test-data-pro-patient-1"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Condition/mii-exa-test-data-pro-diagnose-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Condition/mii-exa-test-data-pro-diagnose-1",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "mii-exa-test-data-pro-diagnose-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/core/modul-diagnose/StructureDefinition/Diagnose"
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+              "code": "F32.1",
+              "version": "2024"
+            }
+          ]
+        },
+        "note": [
+          {
+            "text": "Mittelgradige depressive Episode"
+          }
+        ],
+        "clinicalStatus": {
+          "coding": [
+            {
+              "code": "active",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "code": "confirmed",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-pro-patient-1"
+        },
+        "recordedDate": "2024-05-01",
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-pro-encounter-1"
         }
       }
     },
@@ -97,6 +161,7 @@
               "display": "test health data"
             }
           ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"
           ]
@@ -112,7 +177,7 @@
                 }
               }
             ],
-            "linkId": "phq-phq9-q01"
+            "linkId": "phq-phq2a"
           },
           {
             "answer": [
@@ -124,7 +189,7 @@
                 }
               }
             ],
-            "linkId": "phq-phq9-q02"
+            "linkId": "phq-phq2b"
           },
           {
             "answer": [
@@ -136,7 +201,7 @@
                 }
               }
             ],
-            "linkId": "phq-phq9-q03"
+            "linkId": "phq-phq2c"
           },
           {
             "answer": [
@@ -148,7 +213,7 @@
                 }
               }
             ],
-            "linkId": "phq-phq9-q04"
+            "linkId": "phq-phq2d"
           },
           {
             "answer": [
@@ -160,7 +225,7 @@
                 }
               }
             ],
-            "linkId": "phq-phq9-q05"
+            "linkId": "phq-phq2e"
           },
           {
             "answer": [
@@ -172,7 +237,7 @@
                 }
               }
             ],
-            "linkId": "phq-phq9-q06"
+            "linkId": "phq-phq2f"
           },
           {
             "answer": [
@@ -184,7 +249,7 @@
                 }
               }
             ],
-            "linkId": "phq-phq9-q07"
+            "linkId": "phq-phq2g"
           },
           {
             "answer": [
@@ -196,7 +261,7 @@
                 }
               }
             ],
-            "linkId": "phq-phq9-q08"
+            "linkId": "phq-phq2h"
           },
           {
             "answer": [
@@ -208,7 +273,7 @@
                 }
               }
             ],
-            "linkId": "phq-phq9-q09"
+            "linkId": "phq-phq2i"
           },
           {
             "answer": [
@@ -228,7 +293,7 @@
                 }
               }
             ],
-            "linkId": "phq-phq9-q10"
+            "linkId": "phq-phq9-difficulty"
           }
         ],
         "status": "completed",
@@ -257,6 +322,7 @@
               "display": "test health data"
             }
           ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"
           ]
@@ -353,6 +419,7 @@
               "display": "test health data"
             }
           ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance"
           ]
@@ -453,6 +520,7 @@
               "display": "test health data"
             }
           ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-depression-sf4a-raw-score"
           ]
@@ -529,6 +597,7 @@
               "display": "test health data"
             }
           ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-depression-t-score"
           ]
@@ -605,6 +674,7 @@
               "display": "test health data"
             }
           ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-observation-bdi-ii"
           ]
@@ -700,6 +770,7 @@
               "display": "test health data"
             }
           ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-observation-eq5d5l-index"
           ]
@@ -794,6 +865,7 @@
               "display": "test health data"
             }
           ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-observation-eq5d5l-vas"
           ]
@@ -888,6 +960,7 @@
               "display": "test health data"
             }
           ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-observation-eq5d5l-profile"
           ]
@@ -977,6 +1050,7 @@
               "display": "test health data"
             }
           ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-29-anxiety-tscore"
           ]
@@ -1072,6 +1146,7 @@
               "display": "test health data"
             }
           ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-29-depression-tscore"
           ]
@@ -1136,6 +1211,7 @@
               "display": "test health data"
             }
           ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-29-fatigue-tscore"
           ]
@@ -1200,6 +1276,7 @@
               "display": "test health data"
             }
           ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-29-pain-intensity"
           ]
@@ -1276,6 +1353,7 @@
               "display": "test health data"
             }
           ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-29-pain-interference-tscore"
           ]
@@ -1340,6 +1418,7 @@
               "display": "test health data"
             }
           ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-29-physical-function-tscore"
           ]
@@ -1404,6 +1483,7 @@
               "display": "test health data"
             }
           ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-29-sleep-disturbance-tscore"
           ]
@@ -1468,6 +1548,7 @@
               "display": "test health data"
             }
           ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-29-social-function-tscore"
           ]
@@ -1532,6 +1613,7 @@
               "display": "test health data"
             }
           ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-cognitive-function-sf4a-raw-score"
           ]
@@ -1638,6 +1720,7 @@
               "display": "test health data"
             }
           ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-cognitive-function-sf4a-tscore"
           ]

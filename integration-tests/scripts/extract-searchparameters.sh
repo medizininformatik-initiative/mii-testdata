@@ -21,6 +21,9 @@ SP_PACKAGES=(
   "de.medizininformatikinitiative.kerndatensatz.molgen"
   "de.medizininformatikinitiative.kerndatensatz.pros"
   "de.medizininformatikinitiative.kerndatensatz.studie"
+  "de.medizininformatikinitiative.kerndatensatz.mikrobiologie"
+  "de.medizininformatikinitiative.kerndatensatz.consent"
+  "de.medizininformatikinitiative.kerndatensatz.biobank"
 )
 
 total=0

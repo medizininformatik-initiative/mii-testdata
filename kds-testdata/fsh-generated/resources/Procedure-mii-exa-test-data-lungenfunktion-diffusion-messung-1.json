@@ -1,0 +1,60 @@
+{
+  "resourceType": "Procedure",
+  "id": "mii-exa-test-data-lungenfunktion-diffusion-messung-1",
+  "meta": {
+    "security": [
+      {
+        "code": "HTEST",
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "display": "test health data"
+      }
+    ],
+    "source": "https://www.charite.de/fhir/kds-testdata",
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-diffusion-messung"
+    ]
+  },
+  "category": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20260701",
+        "code": "23426006",
+        "display": "Measurement of respiratory function (procedure)"
+      }
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20260701",
+        "code": "36421003",
+        "display": "Carbon monoxide diffusing capacity measurement (procedure)"
+      }
+    ]
+  },
+  "report": [
+    {
+      "reference": "DiagnosticReport/mii-exa-test-data-lungenfunktion-diffusion-befund-1"
+    }
+  ],
+  "status": "completed",
+  "subject": {
+    "reference": "Patient/mii-exa-test-data-lungenfunktion-patient-1"
+  },
+  "encounter": {
+    "reference": "Encounter/mii-exa-test-data-lungenfunktion-encounter-1"
+  },
+  "performedDateTime": "2025-02-18T10:15:00+01:00",
+  "outcome": {
+    "coding": [
+      {
+        "code": "385669000",
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20260701",
+        "display": "Successful (qualifier value)"
+      }
+    ]
+  }
+}

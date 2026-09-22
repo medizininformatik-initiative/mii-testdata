@@ -9,6 +9,7 @@
         "display": "test health data"
       }
     ],
+    "source": "https://www.charite.de/fhir/kds-testdata",
     "profile": [
       "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-arterieller-blutdruck"
     ]
@@ -64,7 +65,7 @@
         "system": "http://unitsofmeasure.org",
         "code": "mm[Hg]",
         "value": 120,
-        "unit": "mmHg"
+        "unit": "millimeter Mercury column"
       }
     },
     {
@@ -88,7 +89,7 @@
         "system": "http://unitsofmeasure.org",
         "code": "mm[Hg]",
         "value": 80,
-        "unit": "mmHg"
+        "unit": "millimeter Mercury column"
       }
     }
   ],
@@ -96,5 +97,5 @@
   "subject": {
     "reference": "Patient/mii-exa-test-data-icu-patient-1"
   },
-  "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+  "effectiveDateTime": "2024-05-05T08:00:00+02:00"
 }

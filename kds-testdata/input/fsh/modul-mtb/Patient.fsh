@@ -7,6 +7,7 @@ InstanceOf: Patient
 Usage: #example
 Description: "MTB Test Patient"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * identifier.system = "https://www.charite.de/fhir/sid/patientenidentifikation"
 * identifier.value = "MTB-TEST-001"
 * name.family = "Tumorfall"
@@ -19,6 +20,7 @@ InstanceOf: Encounter
 Usage: #example
 Description: "MTB Test Encounter"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #finished
 * class = http://terminology.hl7.org/CodeSystem/v3-ActCode#IMP "inpatient encounter"
 * subject = Reference(mii-exa-test-data-mtb-patient-1)
@@ -31,6 +33,7 @@ InstanceOf: Observation
 Usage: #example
 Description: "MTB ECOG Performance Status"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * code = http://loinc.org#89247-1 "ECOG Performance Status score"
 * subject = Reference(mii-exa-test-data-mtb-patient-1)
@@ -41,6 +44,7 @@ InstanceOf: Observation
 Usage: #example
 Description: "MTB Vorbefund Lab"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * code = http://loinc.org#55233-8 "Circulating cell-free genomic DNA [Mass/volume] in Plasma"
 * subject = Reference(mii-exa-test-data-mtb-patient-1)
@@ -51,6 +55,7 @@ InstanceOf: Specimen
 Usage: #example
 Description: "MTB Tumorgewebe"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #available
 * type = http://terminology.hl7.org/CodeSystem/v2-0487#TISS "Tissue"
 * subject = Reference(mii-exa-test-data-mtb-patient-1)

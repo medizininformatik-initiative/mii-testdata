@@ -14,6 +14,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Struc
 Usage: #example
 Description: "PRO Observation: PHQ-9 Score for Patient 1 (mild depression, score 8)"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * identifier[+].system = "https://www.charite.de/fhir/sid/pro-observation-id"
 * identifier[=].value = "PRO-OBS-PHQ9-PAT1-001"
 * status = #final
@@ -48,6 +49,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Struc
 Usage: #example
 Description: "PRO Observation: PROMIS Depression SF4a Raw Score for Patient 1 (mild, raw score 7)"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * category = $observation-category#survey "Survey"
 * code = $loinc#77821-7 "PROMIS short form - emotional distress - depression 4a - version 1.0 raw score"
@@ -76,6 +78,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Struc
 Usage: #example
 Description: "PRO Observation: PROMIS Depression T-Score for Patient 1 (mild, T-score 52.7)"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * category = $observation-category#survey "Survey"
 * code = $loinc#77861-3 "PROMIS emotional distress - depression - version 1.0 Tscore"
@@ -104,6 +107,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Struc
 Usage: #example
 Description: "PRO Observation: BDI-II Total Score for Patient 1 (mild depression, score 12)"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * identifier[+].system = "https://www.charite.de/fhir/sid/pro-observation-id"
 * identifier[=].value = "PRO-OBS-BDI2-PAT1-001"
 * status = #final
@@ -137,6 +141,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Struc
 Usage: #example
 Description: "PRO Observation: EQ-5D-5L Index Value for Patient 1"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * identifier[+].system = "https://www.charite.de/fhir/sid/pro-observation-id"
 * identifier[=].value = "PRO-OBS-EQ5D-IDX-PAT1-001"
 * status = #final
@@ -169,6 +174,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Struc
 Usage: #example
 Description: "PRO Observation: EQ-5D-5L VAS Score for Patient 1"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * identifier[+].system = "https://www.charite.de/fhir/sid/pro-observation-id"
 * identifier[=].value = "PRO-OBS-EQ5D-VAS-PAT1-001"
 * status = #final
@@ -202,6 +208,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Struc
 Usage: #example
 Description: "PRO Observation: EQ-5D-5L Profile String for Patient 1"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * identifier[+].system = "https://www.charite.de/fhir/sid/pro-observation-id"
 * identifier[=].value = "PRO-OBS-EQ5D-PROF-PAT1-001"
 * status = #final
@@ -229,6 +236,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Struc
 Usage: #example
 Description: "PRO Observation: PROMIS-29 Anxiety T-Score for Patient 1"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * identifier[+].system = "https://www.charite.de/fhir/sid/pro-observation-id"
 * identifier[=].value = "PRO-OBS-P29-ANX-PAT1-001"
 * status = #final
@@ -260,6 +268,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Struc
 Usage: #example
 Description: "PRO Observation: PROMIS-29 Depression T-Score for Patient 1"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * code = $loinc#77861-3 "PROMIS emotional distress - depression - version 1.0 Tscore"
 * subject = Reference(mii-exa-test-data-pro-patient-1)
@@ -284,6 +293,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Struc
 Usage: #example
 Description: "PRO Observation: PROMIS-29 Fatigue T-Score for Patient 1"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * code = $loinc#77864-7 "PROMIS fatigue - version 1.0 Tscore"
 * subject = Reference(mii-exa-test-data-pro-patient-1)
@@ -309,6 +319,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Struc
 Usage: #example
 Description: "PRO Observation: PROMIS-29 Pain Intensity for Patient 1"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * code = $loinc#75261-8 "How intense was your average pain in the past 7 days [PROMIS]"
 * subject = Reference(mii-exa-test-data-pro-patient-1)
@@ -335,6 +346,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Struc
 Usage: #example
 Description: "PRO Observation: PROMIS-29 Pain Interference T-Score for Patient 1"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * code = $loinc#77865-4 "PROMIS pain interference - version 1.0 Tscore"
 * subject = Reference(mii-exa-test-data-pro-patient-1)
@@ -359,6 +371,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Struc
 Usage: #example
 Description: "PRO Observation: PROMIS-29 Physical Function T-Score for Patient 1"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * code = $loinc#91721-1 "PROMIS physical function - version 2.0 T-score"
 * subject = Reference(mii-exa-test-data-pro-patient-1)
@@ -383,6 +396,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Struc
 Usage: #example
 Description: "PRO Observation: PROMIS-29 Sleep Disturbance T-Score for Patient 1"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * code = $loinc#77860-5 "PROMIS sleep disturbance - version 1.0 Tscore"
 * subject = Reference(mii-exa-test-data-pro-patient-1)
@@ -407,6 +421,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Struc
 Usage: #example
 Description: "PRO Observation: PROMIS-29 Social Function T-Score for Patient 1"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * code = $loinc#77854-8 "PROMIS ability to participate in social roles and activities - version 2.0 Tscore"
 * subject = Reference(mii-exa-test-data-pro-patient-1)
@@ -433,6 +448,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Struc
 Usage: #example
 Description: "PRO Observation: PROMIS Cognitive Function SF4a Raw Score for Patient 1"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * identifier[+].system = "https://www.charite.de/fhir/sid/pro-observation-id"
 * identifier[=].value = "PRO-OBS-COGFN-RAW-PAT1-001"
 * status = #final
@@ -469,6 +485,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Struc
 Usage: #example
 Description: "PRO Observation: PROMIS Cognitive Function SF4a T-Score for Patient 1"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * identifier[+].system = "https://www.charite.de/fhir/sid/pro-observation-id"
 * identifier[=].value = "PRO-OBS-COGFN-T-PAT1-001"
 * status = #final

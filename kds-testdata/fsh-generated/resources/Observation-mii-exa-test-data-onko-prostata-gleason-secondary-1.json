@@ -9,6 +9,7 @@
         "display": "test health data"
       }
     ],
+    "source": "https://www.charite.de/fhir/kds-testdata",
     "profile": [
       "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-prostate-gleason-patterns"
     ]
@@ -18,16 +19,16 @@
       "reference": "Condition/mii-exa-test-data-onko-diagnose-1"
     }
   ],
-  "status": "final",
   "code": {
     "coding": [
       {
-        "code": "384995005",
         "system": "http://snomed.info/sct",
+        "code": "384995005",
         "display": "Secondary Gleason pattern (observable entity)"
       }
     ]
   },
+  "status": "final",
   "subject": {
     "reference": "Patient/mii-exa-test-data-onko-patient-1"
   },

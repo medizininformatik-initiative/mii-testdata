@@ -9,6 +9,7 @@
         "display": "test health data"
       }
     ],
+    "source": "https://www.charite.de/fhir/kds-testdata",
     "profile": [
       "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-magensonde"
     ]
@@ -31,14 +32,14 @@
   "code": {
     "coding": [
       {
-        "system": "http://snomed.info/sct",
-        "code": "1162665001",
-        "display": "Volume of drainage of gastric contents (observable entity)"
-      },
-      {
         "system": "http://loinc.org",
         "code": "79561-7",
         "display": "Fluid output enteral tube [Volume] Measured"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "1162665001",
+        "display": "Volume of drainage of gastric contents (observable entity)"
       }
     ]
   },
@@ -52,5 +53,5 @@
   "subject": {
     "reference": "Patient/mii-exa-test-data-icu-patient-1"
   },
-  "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+  "effectiveDateTime": "2024-05-05T08:00:00+02:00"
 }

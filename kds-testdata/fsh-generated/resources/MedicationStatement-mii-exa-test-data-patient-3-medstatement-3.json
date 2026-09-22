@@ -9,6 +9,7 @@
         "display": "test health data"
       }
     ],
+    "source": "https://www.charite.de/fhir/kds-testdata",
     "profile": [
       "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement"
     ]
@@ -51,6 +52,13 @@
             "display": "Intravenous use"
           }
         ]
+      },
+      "timing": {
+        "repeat": {
+          "count": 1,
+          "duration": 2,
+          "durationUnit": "h"
+        }
       },
       "doseAndRate": [
         {

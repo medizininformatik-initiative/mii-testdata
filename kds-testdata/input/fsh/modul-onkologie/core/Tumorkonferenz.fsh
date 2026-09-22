@@ -8,6 +8,7 @@ InstanceOf: MII_PR_Onko_Tumorkonferenz
 Usage: #example
 Description: "Onkologie Test Tumorkonferenz - Prätherapeutisch mit OP + Chemo Empfehlung"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * identifier.value = "TK-2021-001"
 * status = #active
 * intent = #plan
@@ -28,6 +29,7 @@ InstanceOf: MII_PR_Onko_Tumorkonferenz
 Usage: #example
 Description: "Onkologie Test Tumorkonferenz - Postoperativ mit Therapieabweichung"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * identifier.value = "TK-2021-002"
 * status = #completed
 * intent = #plan
@@ -47,6 +49,7 @@ InstanceOf: MII_PR_Onko_Therapieempfehlung_Operation
 Usage: #example
 Description: "Onkologie Test Therapieempfehlung Operation - Debulking"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * identifier.value = "TE-OP-2021-001"
 * status = #active
 * intent = #proposal
@@ -65,6 +68,7 @@ InstanceOf: MII_PR_Onko_Therapieempfehlung_Medikation
 Usage: #example
 Description: "Onkologie Test Therapieempfehlung Medikation - Carboplatin"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #active
 * intent = #proposal
 * subject = Reference(mii-exa-test-data-onko-patient-1)
@@ -79,6 +83,7 @@ InstanceOf: MII_PR_Onko_Therapieempfehlung_Medikation
 Usage: #example
 Description: "Onkologie Test Therapieempfehlung Medikation - Paclitaxel"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #active
 * intent = #proposal
 * subject = Reference(mii-exa-test-data-onko-patient-1)
@@ -92,6 +97,7 @@ InstanceOf: MII_PR_Onko_Therapieempfehlung_Kombinationstherapie
 Usage: #example
 Description: "Onkologie Test Therapieempfehlung Kombinationstherapie - CarboTax Schema"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * identifier.value = "TE-KOMBI-2021-001"
 * status = #active
 * intent = #proposal
@@ -113,6 +119,7 @@ InstanceOf: MII_PR_Onko_Tumorkonferenz
 Usage: #example
 Description: "Onkologie Test Molekulares Tumorboard - mit erweiterter Therapieempfehlung"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * identifier.value = "MTB-2022-001"
 * status = #active
 * intent = #plan
@@ -132,6 +139,7 @@ InstanceOf: MII_PR_Onko_Therapieempfehlung_Kombinationstherapie
 Usage: #example
 Description: "Onkologie Test Therapieempfehlung - PARP-Inhibitor Erhaltung"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #active
 * intent = #proposal
 * code = $mii-cs-onko-therapie-typ#ZS "Zielgerichtete Substanzen"
@@ -149,6 +157,7 @@ InstanceOf: MII_PR_Onko_Therapieempfehlung_Medikation
 Usage: #example
 Description: "Onkologie Test Therapieempfehlung Medikation - Niraparib"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #active
 * intent = #option
 * subject = Reference(mii-exa-test-data-onko-patient-1)

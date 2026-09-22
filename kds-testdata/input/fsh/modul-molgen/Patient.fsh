@@ -7,6 +7,7 @@ InstanceOf: Patient
 Usage: #example
 Description: "Molgen Test Patient 1 (Erbliche Tumorerkrankung)"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * identifier.system = "https://www.charite.de/fhir/sid/patientenidentifikation"
 * identifier.value = "MOL-TEST-001"
 * name.family = "Genomisch"
@@ -19,6 +20,7 @@ InstanceOf: Encounter
 Usage: #example
 Description: "Molgen Test Encounter 1"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #finished
 * class = http://terminology.hl7.org/CodeSystem/v3-ActCode#IMP "inpatient encounter"
 * subject = Reference(mii-exa-test-data-molgen-patient-1)
@@ -30,6 +32,7 @@ InstanceOf: Patient
 Usage: #example
 Description: "Molgen Test Patient 2 (NSCLC)"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * identifier.system = "https://www.charite.de/fhir/sid/patientenidentifikation"
 * identifier.value = "MOL-TEST-002"
 * name.family = "Sequenziert"
@@ -42,6 +45,7 @@ InstanceOf: Encounter
 Usage: #example
 Description: "Molgen Test Encounter 2"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #finished
 * class = http://terminology.hl7.org/CodeSystem/v3-ActCode#IMP "inpatient encounter"
 * subject = Reference(mii-exa-test-data-molgen-patient-2)
@@ -54,6 +58,7 @@ InstanceOf: Specimen
 Usage: #example
 Description: "Molgen Specimen 1 - Blutprobe Patient 1"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #available
 * type = http://terminology.hl7.org/CodeSystem/v2-0487#BLD "Whole blood"
 * subject = Reference(mii-exa-test-data-molgen-patient-1)
@@ -64,6 +69,7 @@ InstanceOf: Specimen
 Usage: #example
 Description: "Molgen Specimen 2 - Tumorgewebe Patient 2"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #available
 * type = http://terminology.hl7.org/CodeSystem/v2-0487#TISS "Tissue"
 * subject = Reference(mii-exa-test-data-molgen-patient-2)
@@ -74,6 +80,7 @@ InstanceOf: Specimen
 Usage: #example
 Description: "Molgen Specimen 3 - Blutprobe Patient 2"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #available
 * type = http://terminology.hl7.org/CodeSystem/v2-0487#BLD "Whole blood"
 * subject = Reference(mii-exa-test-data-molgen-patient-2)
@@ -84,6 +91,7 @@ InstanceOf: Condition
 Usage: #example
 Description: "Molgen Diagnose - Erbliches Tumorsyndrom"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * clinicalStatus = http://terminology.hl7.org/CodeSystem/condition-clinical#active
 * verificationStatus = http://terminology.hl7.org/CodeSystem/condition-ver-status#confirmed
 * code.coding = http://fhir.de/CodeSystem/bfarm/icd-10-gm#C18.7 "Bösartige Neubildung: Colon sigmoideum"
@@ -94,6 +102,7 @@ InstanceOf: Condition
 Usage: #example
 Description: "Molgen Diagnose - NSCLC"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * clinicalStatus = http://terminology.hl7.org/CodeSystem/condition-clinical#active
 * verificationStatus = http://terminology.hl7.org/CodeSystem/condition-ver-status#confirmed
 * code.coding = http://fhir.de/CodeSystem/bfarm/icd-10-gm#C34.1 "Bösartige Neubildung: Oberlappen (-Bronchus)"

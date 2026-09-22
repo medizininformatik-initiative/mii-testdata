@@ -8,6 +8,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/St
 Usage: #example
 Description: "RiskAssessment: Polygener Risiko Score fuer kolorektales Karzinom"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * identifier.system = "https://www.charite.de/fhir/sid/risiko-bewertungen"
 * identifier.value = "PRS-CRC-2022-0407-001"
 * status = #final

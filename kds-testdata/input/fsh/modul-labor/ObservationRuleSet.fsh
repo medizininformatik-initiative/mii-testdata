@@ -5,8 +5,8 @@ RuleSet: AddLabObservation(identifierValue, codeCodingCodeLoinc, codeCodingDispl
 * identifier[analyseBefundCode].assigner.identifier.system = "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"
 * identifier[analyseBefundCode].assigner.identifier.value = "Charité"
 * status = #final
-* category.coding[loinc-observation] = $loinc#26436-6 "Laboratory studies (set)"
-* category.coding[observation-category] = $observation-category#laboratory "Laboratory"
+* category[observation-category].coding[0] = $observation-category#laboratory "Laboratory"
+* category[observation-category].coding[+] = $loinc#26436-6 "Laboratory studies (set)"
 * code = $loinc#{codeCodingCodeLoinc} "{codeCodingDisplayLoinc}"
 * subject = Reference({subject})
 * encounter = Reference({encounter})

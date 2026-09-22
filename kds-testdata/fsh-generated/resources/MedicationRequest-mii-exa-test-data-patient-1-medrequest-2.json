@@ -9,6 +9,7 @@
         "display": "test health data"
       }
     ],
+    "source": "https://www.charite.de/fhir/kds-testdata",
     "profile": [
       "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationRequest"
     ]
@@ -48,7 +49,6 @@
           }
         }
       ],
-      "text": "Dalbavancin 1500 mg als 30-minütige Infusion",
       "route": {
         "coding": [
           {

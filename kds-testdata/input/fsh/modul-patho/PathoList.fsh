@@ -10,6 +10,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/Str
 Usage: #example
 Description: "Patho Active Problems List: Prostataerkrankungen bei Patient-1"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #current
 * mode = #snapshot
 * code.coding = $loinc#11450-4 "Problem list - Reported"
@@ -26,6 +27,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/Str
 Usage: #example
 Description: "Patho History of Present Illness: Klinische Anamnese bei Prostata-Stanzbiopsie"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #current
 * mode = #snapshot
 * code.coding = $loinc#8684-3 "History of Present illness"

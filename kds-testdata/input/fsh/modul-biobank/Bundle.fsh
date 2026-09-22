@@ -7,9 +7,11 @@ InstanceOf: Bundle
 Usage: #example
 Description: "Bundle: Biobank Testdaten"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * type = #transaction
 * timestamp = "2025-06-18T13:51:00+02:00"
 * insert AddBundleEntry(mii-exa-test-data-biobank-patient-1, Patient)
+* insert AddBundleEntry(mii-exa-test-data-biobank-encounter-1, Encounter)
 // Organization
 * insert AddBundleEntry(mii-exa-test-data-organization-biobank-charite, Organization)
 // Substance

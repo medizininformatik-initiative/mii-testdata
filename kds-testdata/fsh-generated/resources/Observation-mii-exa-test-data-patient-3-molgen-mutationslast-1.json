@@ -9,9 +9,9 @@
         "display": "test health data"
       }
     ],
+    "source": "https://www.charite.de/fhir/kds-testdata",
     "profile": [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/mutationslast",
-      "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/tmb"
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/mutationslast"
     ]
   },
   "category": [

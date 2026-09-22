@@ -8,7 +8,8 @@
         "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
         "display": "test health data"
       }
-    ]
+    ],
+    "source": "https://www.charite.de/fhir/kds-testdata"
   },
   "entry": [
     {
@@ -27,7 +28,8 @@
               "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
               "display": "test health data"
             }
-          ]
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata"
         },
         "identifier": [
           {
@@ -63,7 +65,8 @@
               "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
               "display": "test health data"
             }
-          ]
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata"
         },
         "period": {
           "start": "2024-01-15",
@@ -99,7 +102,8 @@
           ],
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-behandlungsepisode"
-          ]
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata"
         },
         "effectivePeriod": {
           "start": "2024-01-15",
@@ -212,7 +216,8 @@
           ],
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-consent-given"
-          ]
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata"
         },
         "status": "final",
         "code": {
@@ -258,7 +263,8 @@
           ],
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-diagnose-primaertumor"
-          ]
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata"
         },
         "extension": [
           {
@@ -341,6 +347,17 @@
             }
           }
         ],
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "55342001",
+                "display": "Neoplastic disease"
+              }
+            ]
+          }
+        ],
         "recordedDate": "2024-01-05",
         "subject": {
           "reference": "Patient/mii-exa-test-data-mtb-patient-1"
@@ -366,7 +383,8 @@
           ],
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-oncotree"
-          ]
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata"
         },
         "code": {
           "coding": [
@@ -412,7 +430,8 @@
           ],
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-systemische-vortherapie"
-          ]
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata"
         },
         "extension": [
           {
@@ -486,7 +505,8 @@
           ],
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-tumorausbreitung"
-          ]
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata"
         },
         "category": [
           {
@@ -546,7 +566,8 @@
           ],
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-who-grad-tumor-zns"
-          ]
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata"
         },
         "code": {
           "coding": [
@@ -592,7 +613,8 @@
           ],
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-ngs-bericht"
-          ]
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata"
         },
         "category": [
           {
@@ -683,7 +705,8 @@
           ],
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-genomic-study"
-          ]
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata"
         },
         "extension": [
           {
@@ -726,7 +749,8 @@
           ],
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-genomic-study-analysis"
-          ]
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata"
         },
         "category": {
           "coding": [
@@ -799,7 +823,8 @@
           ],
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-einfache-variante"
-          ]
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata"
         },
         "category": [
           {
@@ -915,7 +940,8 @@
           ],
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-copy-number-variant"
-          ]
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata"
         },
         "category": [
           {
@@ -1062,7 +1088,8 @@
           ],
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-dna-fusion"
-          ]
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata"
         },
         "category": [
           {
@@ -1219,7 +1246,8 @@
           ],
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-rna-fusion"
-          ]
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata"
         },
         "category": [
           {
@@ -1416,7 +1444,8 @@
           ],
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-rna-seq"
-          ]
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata"
         },
         "category": [
           {
@@ -1513,7 +1542,8 @@
           ],
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-diagnostische-implikation"
-          ]
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata"
         },
         "category": [
           {
@@ -1594,7 +1624,8 @@
           ],
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-therapeutische-implikation"
-          ]
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata"
         },
         "category": [
           {
@@ -1700,7 +1731,8 @@
           ],
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-molekularer-biomarker"
-          ]
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata"
         },
         "category": [
           {
@@ -1764,7 +1796,8 @@
           ],
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-mutationslast"
-          ]
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata"
         },
         "category": [
           {
@@ -1836,7 +1869,8 @@
           ],
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-mikrosatelliteninstabilitaet"
-          ]
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata"
         },
         "category": [
           {
@@ -1897,7 +1931,8 @@
           ],
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-hrd-score"
-          ]
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata"
         },
         "category": [
           {
@@ -2001,7 +2036,8 @@
           ],
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-brcaness"
-          ]
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata"
         },
         "category": [
           {
@@ -2071,7 +2107,8 @@
           ],
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-ploidie"
-          ]
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata"
         },
         "category": [
           {
@@ -2136,7 +2173,8 @@
           ],
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-biomarker-her2-status"
-          ]
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata"
         },
         "category": [
           {
@@ -2163,7 +2201,7 @@
             {
               "code": "48676-1",
               "system": "http://loinc.org",
-              "display": "HER2 [Interpretation] in Tissue"
+              "display": "HER2 Ag [Interpretation] in Tissue"
             }
           ]
         },
@@ -2200,7 +2238,8 @@
           ],
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-molecular-pathology-report"
-          ]
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata"
         },
         "result": [
           {
@@ -2241,7 +2280,8 @@
           ],
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-immunohistochemistry"
-          ]
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata"
         },
         "category": [
           {
@@ -2341,7 +2381,8 @@
           ],
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-immunohistochemistry-her2"
-          ]
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata"
         },
         "category": [
           {
@@ -2444,7 +2485,8 @@
           ],
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-immunohistochemistry-pdl1"
-          ]
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata"
         },
         "category": [
           {
@@ -2533,7 +2575,8 @@
           ],
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-immunohistochemistry-phosphorylation"
-          ]
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata"
         },
         "category": [
           {
@@ -2636,7 +2679,8 @@
           ],
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-immunohistochemistry-mmr"
-          ]
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata"
         },
         "category": [
           {
@@ -2702,9 +2746,9 @@
             }
           ],
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-msi",
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-immunohistochemistry-msi"
-          ]
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-msi"
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata"
         },
         "category": [
           {
@@ -2770,9 +2814,9 @@
             }
           ],
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-insituhybridization",
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-biomarker-insituhybridization"
-          ]
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-insituhybridization"
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata"
         },
         "category": [
           {
@@ -2863,7 +2907,8 @@
           ],
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-insituhybridization-her2"
-          ]
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata"
         },
         "category": [
           {
@@ -3001,7 +3046,8 @@
           ],
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-tumorzellgehalt"
-          ]
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata"
         },
         "valueQuantity": {
           "unit": "percent",
@@ -3051,7 +3097,8 @@
           ],
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-therapieplan"
-          ]
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata"
         },
         "category": [
           {
@@ -3133,7 +3180,8 @@
           ],
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-therapieempfehlung"
-          ]
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata"
         },
         "basedOn": [
           {
@@ -3211,7 +3259,8 @@
           ],
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-therapieempfehlung"
-          ]
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata"
         },
         "medicationCodeableConcept": {
           "coding": [
@@ -3255,7 +3304,8 @@
           ],
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-therapieempfehlung"
-          ]
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata"
         },
         "medicationCodeableConcept": {
           "coding": [
@@ -3299,7 +3349,8 @@
           ],
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-therapieempfehlung-kombination"
-          ]
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata"
         },
         "action": [
           {
@@ -3373,7 +3424,8 @@
           ],
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-studieneinschluss-anfrage"
-          ]
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata"
         },
         "supportingInfo": [
           {
@@ -3439,7 +3491,8 @@
           ],
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-studie"
-          ]
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata"
         },
         "identifier": [
           {
@@ -3484,7 +3537,8 @@
           ],
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-humangenetische-beratung-auftrag"
-          ]
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata"
         },
         "code": {
           "coding": [
@@ -3531,7 +3585,8 @@
           ],
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-histologie-evaluation-auftrag"
-          ]
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata"
         },
         "code": {
           "coding": [
@@ -3578,7 +3633,8 @@
           ],
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-biopsie-auftrag"
-          ]
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata"
         },
         "code": {
           "coding": [
@@ -3625,7 +3681,8 @@
           ],
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-follow-up-clinicalimpression"
-          ]
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata"
         },
         "code": {
           "coding": [
@@ -3688,7 +3745,8 @@
           ],
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-systemische-therapie"
-          ]
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata"
         },
         "extension": [
           {
@@ -3766,9 +3824,9 @@
             }
           ],
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-systemtherapie-medication-statement",
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-systemische-therapie-medication-statement"
-          ]
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-systemtherapie-medication-statement"
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata"
         },
         "basedOn": [
           {
@@ -3806,6 +3864,13 @@
         ],
         "dosage": [
           {
+            "timing": {
+              "repeat": {
+                "frequency": 1,
+                "period": 1,
+                "periodUnit": "d"
+              }
+            },
             "doseAndRate": [
               {
                 "doseQuantity": {
@@ -3843,7 +3908,8 @@
           ],
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-response-befund"
-          ]
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata"
         },
         "focus": [
           {
@@ -3930,7 +3996,8 @@
           ],
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-antrag-kostenuebernahme"
-          ]
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata"
         },
         "insurance": [
           {
@@ -4012,7 +4079,8 @@
           ],
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-antwort-kostenuebernahme"
-          ]
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata"
         },
         "status": "active",
         "outcome": "complete",
@@ -4052,7 +4120,8 @@
               "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
               "display": "test health data"
             }
-          ]
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata"
         },
         "status": "final",
         "code": {
@@ -4086,7 +4155,8 @@
               "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
               "display": "test health data"
             }
-          ]
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata"
         },
         "status": "final",
         "code": {
@@ -4124,7 +4194,8 @@
               "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
               "display": "test health data"
             }
-          ]
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata"
         },
         "collection": {
           "collectedDateTime": "2024-01-20"
@@ -4160,7 +4231,8 @@
               "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
               "display": "test health data"
             }
-          ]
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata"
         },
         "type": [
           {

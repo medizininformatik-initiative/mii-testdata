@@ -3,6 +3,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebun
 Usage: #example
 Description: "Composition: semistrukturierter Befundbericht"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 //* meta.profile = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-semistrukt-befundbericht"
 * status = #final
 * type = $loinc#24604-1 "MG Breast Diagnostic Limited Views"

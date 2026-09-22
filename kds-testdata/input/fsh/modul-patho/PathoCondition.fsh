@@ -7,6 +7,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/Str
 Usage: #example
 Description: "Patho Problem List Item: PSA-Erhöhung bei V.a. Prostatakarzinom"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * category[problem-list-item].coding = http://terminology.hl7.org/CodeSystem/condition-category#problem-list-item "Problem List Item"
 * code.coding[+] = $sct#399068003 "Malignant neoplasm of prostate"
 * code.coding[+] = http://fhir.de/CodeSystem/bfarm/icd-10-gm#C61 "Bösartige Neubildung der Prostata"

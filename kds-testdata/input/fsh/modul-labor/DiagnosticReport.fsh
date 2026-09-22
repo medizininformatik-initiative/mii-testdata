@@ -4,6 +4,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-labor/St
 Usage: #example
 Description: "DiagnosticReport: Laborbericht für Patient 1"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 //* meta.profile[0] = "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/DiagnosticReportLab|1.0.7-alpha1"
 * insert AddDiagnosticReport(LDR_000001, mii-exa-test-data-patient-1)
 * basedOn = Reference(mii-exa-test-data-patient-1-labrequest-1)
@@ -26,6 +27,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-labor/St
 Usage: #example
 Description: "DiagnosticReport: Laborbericht für Patient 2"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * insert AddDiagnosticReport(LDR_000002, mii-exa-test-data-patient-2)
 * basedOn = Reference(mii-exa-test-data-patient-2-labrequest-1)
 * encounter = Reference(mii-exa-test-data-patient-2-encounter-1)
@@ -45,6 +47,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-labor/St
 Usage: #example
 Description: "DiagnosticReport: Laborbericht für Patient 3"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * insert AddDiagnosticReport(LDR_000003, mii-exa-test-data-patient-3)
 * basedOn = Reference(mii-exa-test-data-patient-3-labrequest-1)
 * encounter = Reference(mii-exa-test-data-patient-3-encounter-1)
@@ -64,6 +67,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-labor/St
 Usage: #example
 Description: "DiagnosticReport: Laborbericht für Patient 4"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * insert AddDiagnosticReport(LDR_000004, mii-exa-test-data-patient-4)
 * basedOn = Reference(mii-exa-test-data-patient-4-labrequest-1)
 * encounter = Reference(mii-exa-test-data-patient-4-encounter-1)
@@ -83,6 +87,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-labor/St
 Usage: #example
 Description: "DiagnosticReport: Laborbericht für Patient 5"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * insert AddDiagnosticReport(LDR_000005, mii-exa-test-data-patient-5)
 * basedOn = Reference(mii-exa-test-data-patient-5-labrequest-1)
 * encounter = Reference(mii-exa-test-data-patient-5-encounter-1)
@@ -102,6 +107,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-labor/St
 Usage: #example
 Description: "DiagnosticReport: Laborbericht für Patient 6"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * insert AddDiagnosticReport(LDR_000006, mii-exa-test-data-patient-6)
 * basedOn = Reference(mii-exa-test-data-patient-6-labrequest-1)
 * encounter = Reference(mii-exa-test-data-patient-6-encounter-1)
@@ -121,6 +127,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-labor/St
 Usage: #example
 Description: "DiagnosticReport: Laborbericht für Patient 7"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * insert AddDiagnosticReport(LDR_000007, mii-exa-test-data-patient-7)
 * basedOn = Reference(mii-exa-test-data-patient-7-labrequest-1)
 * encounter = Reference(mii-exa-test-data-patient-7-encounter-1)
@@ -140,6 +147,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-labor/St
 Usage: #example
 Description: "DiagnosticReport: Laborbericht für Patient 8"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * insert AddDiagnosticReport(LDR_000008, mii-exa-test-data-patient-8)
 * basedOn = Reference(mii-exa-test-data-patient-8-labrequest-1)
 * encounter = Reference(mii-exa-test-data-patient-8-encounter-1)
@@ -159,6 +167,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-labor/St
 Usage: #example
 Description: "DiagnosticReport: Laborbericht für Patient 9"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * insert AddDiagnosticReport(LDR_000009, mii-exa-test-data-patient-9)
 * basedOn = Reference(mii-exa-test-data-patient-9-labrequest-1)
 * encounter = Reference(mii-exa-test-data-patient-9-encounter-1)
@@ -178,6 +187,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-labor/St
 Usage: #example
 Description: "DiagnosticReport: Laborbericht für Patient 10"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * insert AddDiagnosticReport(LDR_000010, mii-exa-test-data-patient-10)
 * basedOn = Reference(mii-exa-test-data-patient-10-labrequest-1)
 * encounter = Reference(mii-exa-test-data-patient-10-encounter-1)

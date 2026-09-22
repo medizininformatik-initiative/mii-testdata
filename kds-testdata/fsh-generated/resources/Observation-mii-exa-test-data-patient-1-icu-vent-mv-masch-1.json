@@ -9,8 +9,9 @@
         "display": "test health data"
       }
     ],
+    "source": "https://www.charite.de/fhir/kds-testdata",
     "profile": [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-beatmungsvolumen-pro-minute-maschineller-beatmung"
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-beatmungsvolumen-pro-minute-maschineller-beatmung"
     ]
   },
   "partOf": [
@@ -22,8 +23,8 @@
     {
       "coding": [
         {
-          "code": "40617009",
           "system": "http://snomed.info/sct",
+          "code": "40617009",
           "display": "Artificial ventilation (regime/therapy)"
         }
       ]
@@ -34,7 +35,7 @@
       {
         "system": "http://snomed.info/sct",
         "code": "250875001",
-        "display": "Ventilator delivered minute volume"
+        "display": "Ventilator delivered minute volume (observable entity)"
       },
       {
         "system": "http://loinc.org",
@@ -44,7 +45,7 @@
       {
         "system": "urn:iso:std:iso:11073:10101",
         "code": "152004",
-        "display": "MDC_VENT_VOL_MINUTE_INSP"
+        "display": "Total volume of gas breathed in during 1 min during mechanical ventilation."
       }
     ]
   },
@@ -58,5 +59,5 @@
   "subject": {
     "reference": "Patient/mii-exa-test-data-icu-patient-1"
   },
-  "effectiveDateTime": "2024-02-15T14:30:00+01:00"
+  "effectiveDateTime": "2024-05-05T08:00:00+02:00"
 }

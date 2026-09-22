@@ -4,6 +4,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-person/S
 Usage: #example
 Description: "Observation: Todesursache für Patient-1"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 //* meta.profile[0] = "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Todesursache|2024.0.0"
 * insert AddTodesursache(A15.0, 2019, mii-exa-test-data-patient-1, 2024-02-22, Tuberkulose einschließlich ihrer Folgezustände)
 
@@ -13,6 +14,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-person/S
 Usage: #example
 Description: "Observation: Todesursache für Patient-2"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 //* meta.profile[0] = "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Todesursache|2024.0.0"
 * insert AddTodesursache(C34.8, 2019, mii-exa-test-data-patient-2, 2024-03-13, Bösartige Neubildung: Bronchus und Lunge mehrere Teilbereiche überlappend)
 
@@ -22,5 +24,6 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-person/S
 Usage: #example
 Description: "Observation: Todesursache für Patient-8"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 //* meta.profile[0] = "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Todesursache|2024.0.0"
 * insert AddTodesursache(I21.9, 2019, mii-exa-test-data-patient-8, 2023-11-15, Akuter Herzinfarkt)

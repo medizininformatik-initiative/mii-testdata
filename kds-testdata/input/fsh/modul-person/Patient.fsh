@@ -4,6 +4,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-person/S
 Usage: #example
 Description: "Patient: Patient-1"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 //* meta.profile[0] = "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient|2024.0.0"
 * meta.profile[+] = "http://fhir.de/ConsentManagement/StructureDefinition/Patient"
 //* insert AddVersichertenIdGKV(A123456780, 987654321)
@@ -49,6 +50,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-person/S
 Usage: #example
 Description: "Patient: Patient-2"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 //* meta.profile[0] = "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient|2024.0.0"
 * meta.profile[+] = "http://fhir.de/ConsentManagement/StructureDefinition/Patient"
 //* insert AddVersichertenIdGKV(B23456789, 123456789)
@@ -71,6 +73,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-person/S
 Usage: #example
 Description: "Patient: Patient-3"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 //* meta.profile[0] = "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient|2024.0.0"
 * meta.profile[+] = "http://fhir.de/ConsentManagement/StructureDefinition/Patient"
 * identifier[pid].use = #usual
@@ -129,6 +132,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-person/S
 Usage: #example
 Description: "Patient: Patient-4"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 //* meta.profile[0] = "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/PatientPseudonymisiert|2024.0.0"
 * meta.profile[+] = "http://fhir.de/ConsentManagement/StructureDefinition/Patient"
 * identifier[+].type = $v3-ObservationValue#PSEUDED 
@@ -150,6 +154,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-person/S
 Usage: #example
 Description: "Patient: Patient-5"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * meta.profile[+] = "http://fhir.de/ConsentManagement/StructureDefinition/Patient"
 * identifier[pid].use = #usual
 * identifier[pid].type = http://terminology.hl7.org/CodeSystem/v2-0203#MR
@@ -186,6 +191,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-person/S
 Usage: #example
 Description: "Patient: Patient-6"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * meta.profile[+] = "http://fhir.de/ConsentManagement/StructureDefinition/Patient"
 * identifier[pid].use = #usual
 * identifier[pid].type = http://terminology.hl7.org/CodeSystem/v2-0203#MR
@@ -220,6 +226,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-person/S
 Usage: #example
 Description: "Patient: Patient-7"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * meta.profile[+] = "http://fhir.de/ConsentManagement/StructureDefinition/Patient"
 * identifier[pid].use = #usual
 * identifier[pid].type = http://terminology.hl7.org/CodeSystem/v2-0203#MR
@@ -255,6 +262,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-person/S
 Usage: #example
 Description: "Patient: Patient-8"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * meta.profile[+] = "http://fhir.de/ConsentManagement/StructureDefinition/Patient"
 * identifier[pid].use = #usual
 * identifier[pid].type = http://terminology.hl7.org/CodeSystem/v2-0203#MR
@@ -289,6 +297,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-person/S
 Usage: #example
 Description: "Patient: Patient-9"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * meta.profile[+] = "http://fhir.de/ConsentManagement/StructureDefinition/Patient"
 * identifier[pid].use = #usual
 * identifier[pid].type = http://terminology.hl7.org/CodeSystem/v2-0203#MR
@@ -325,6 +334,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-person/S
 Usage: #example
 Description: "Patient: Patient-10"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * meta.profile[+] = "http://fhir.de/ConsentManagement/StructureDefinition/Patient"
 * identifier[pid].use = #usual
 * identifier[pid].type = http://terminology.hl7.org/CodeSystem/v2-0203#MR
@@ -358,6 +368,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-person/S
 Usage: #example
 Description: "Patient: Patient-11"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * meta.profile[+] = "http://fhir.de/ConsentManagement/StructureDefinition/Patient"
 * identifier[pid].use = #usual
 * identifier[pid].type = http://terminology.hl7.org/CodeSystem/v2-0203#MR

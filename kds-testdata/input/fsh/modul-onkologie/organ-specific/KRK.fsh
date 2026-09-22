@@ -8,6 +8,7 @@ InstanceOf: MII_PR_Onko_KRK_Operation
 Usage: #example
 Description: "Onkologie Test KRK Operation - Anteriore Resektion"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #completed
 * category = $SCT#387713003 "Surgical procedure"
 * code.coding[ops] = $OPS#5-484.52 "Rektumresektion unter Sphinktererhaltung: Tiefe anteriore Resektion: Offen chirurgisch mit Enterostoma und Blindverschluss"
@@ -26,6 +27,7 @@ InstanceOf: MII_PR_Onko_KRK_Abstand_Anokutan
 Usage: #example
 Description: "Onkologie Test KRK Abstand Tumor zur Anokutanlinie"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * code.coding = $LNC#33748-5 "Distance from anal verge"
 * subject = Reference(mii-exa-test-data-onko-patient-1)
@@ -42,6 +44,7 @@ InstanceOf: MII_PR_Onko_KRK_Abstand_Circumferelle_Resektionsebene
 Usage: #example
 Description: "Onkologie Test KRK Abstand circumferentielle Resektionsebene (CRM)"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 // TODO: LOINC 44668-2 display per validator is about M stage/CAP cancer protocols, not CRM distance.
 // The code 44668-2 may be incorrect for circumferential resection margin closest distance. Review and replace with correct LOINC code.
@@ -58,6 +61,7 @@ InstanceOf: MII_PR_Onko_KRK_Abstand_Aboral
 Usage: #example
 Description: "Onkologie Test KRK Abstand Resektionsrand aboral"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * code.coding = $LNC#81175-2 "Distance of tumor from closest margin [Length] in Specimen by Macroscopy"
 * subject = Reference(mii-exa-test-data-onko-patient-1)
@@ -74,8 +78,9 @@ InstanceOf: MII_PR_Onko_KRK_MRT_Mesorektale_Faszie
 Usage: #example
 Description: "Onkologie Test KRK MRT Abstand zur mesorektalen Faszie"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
-* code.coding = $RADLEX#RDE96 "Distance to MRF"
+* code.coding = $RADELEMENT#RDE96 "Distance to MRF"
 * subject = Reference(mii-exa-test-data-onko-patient-1)
 * focus = Reference(mii-exa-test-data-onko-diagnose-1)
 * effectiveDateTime = "2021-06-20"
@@ -90,6 +95,7 @@ InstanceOf: MII_PR_Onko_KRK_Anastomoseninsuffizienz
 Usage: #example
 Description: "Onkologie Test KRK Anastomoseninsuffizienz - Keine"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * code.coding = $SCT#236091002 "Large intestine anastomotic leak (disorder)"
 * subject = Reference(mii-exa-test-data-onko-patient-1)
@@ -103,6 +109,7 @@ InstanceOf: MII_PR_Onko_KRK_Stoma_Markierung
 Usage: #example
 Description: "Onkologie Test KRK Stoma Markierung"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #completed
 * category.coding = $SCT#387713003 "Surgical procedure"
 * code.coding = $SCT#225134005 "Marking position of planned stoma site (procedure)"
@@ -117,6 +124,7 @@ InstanceOf: MII_PR_Onko_KRK_Specimen
 Usage: #example
 Description: "Onkologie Test KRK Specimen - Rektumresektat"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #available
 * type = $SCT#119376003 "Tissue specimen"
 * subject = Reference(mii-exa-test-data-onko-patient-1)

@@ -9,6 +9,7 @@
         "display": "test health data"
       }
     ],
+    "source": "https://www.charite.de/fhir/kds-testdata",
     "profile": [
       "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Specimen"
     ]
@@ -36,8 +37,8 @@
   "type": {
     "coding": [
       {
-        "system": "http://snomed.info/sct",
         "code": "122555007",
+        "system": "http://snomed.info/sct",
         "display": "Venous blood specimen (specimen)"
       }
     ]

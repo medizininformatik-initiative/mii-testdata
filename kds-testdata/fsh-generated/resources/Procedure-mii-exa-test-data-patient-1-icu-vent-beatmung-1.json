@@ -9,13 +9,14 @@
         "display": "test health data"
       }
     ],
+    "source": "https://www.charite.de/fhir/kds-testdata",
     "profile": [
       "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-beatmung"
     ]
   },
   "performedPeriod": {
-    "start": "2024-02-12T08:00:00+01:00",
-    "end": "2024-02-18T16:00:00+01:00"
+    "start": "2024-05-01T18:00:00+02:00",
+    "end": "2024-05-13T09:00:00+02:00"
   },
   "status": "completed",
   "subject": {

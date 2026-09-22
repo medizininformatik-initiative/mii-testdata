@@ -3,6 +3,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/St
 Usage: #example
 Description: "Task: Medikationsempfehlung fuer BRAF-Mutation"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * meta.profile[+] = "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/medication-recommendation"
 * status = #requested
 * intent = #proposal

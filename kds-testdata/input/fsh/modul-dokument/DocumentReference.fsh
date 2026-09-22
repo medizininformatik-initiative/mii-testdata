@@ -22,6 +22,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-dokument/
 Usage: #example
 Description: "DocumentReference: Entlassbrief Innere Medizin - alle MS-Elemente"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 // Identifiers
 * masterIdentifier.system = "urn:ietf:rfc:3986"
 * masterIdentifier.value = "urn:oid:1.2.840.113556.1.8000.2554.58783.21864.3474.19410.44358.58254.41281.99901"
@@ -70,6 +71,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-dokument/
 Usage: #example
 Description: "DocumentReference: Befundbericht Radiologie (URL-Verweis) - alle MS-Elemente"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 // Identifiers
 * masterIdentifier.system = "urn:ietf:rfc:3986"
 * masterIdentifier.value = "urn:oid:1.2.840.113556.1.8000.2554.58783.21864.3474.19410.44358.58254.41281.99902"

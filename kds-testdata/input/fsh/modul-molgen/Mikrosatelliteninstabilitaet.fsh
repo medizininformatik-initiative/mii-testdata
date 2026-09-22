@@ -5,7 +5,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/St
 Usage: #example
 Description: "Observation: Mikrosatelliteninstabilitaet fuer BRAF-Mutation"
 * insert TestDataLabel
-* meta.profile[+] = "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/msi"
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * category[labCategory] = $observation-category#laboratory "Laboratory"
 * code = $loinc#81695-9 "Microsatellite instability [Interpretation] in Cancer specimen Qualitative"

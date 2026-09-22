@@ -1,0 +1,59 @@
+{% comment %}
+structure-tabs — an official-FHIR-spec-style tabbed rendering of ONE artifact's
+structure inside a NARRATIVE page (Structure / Differential / XML / JSON),
+backed by the fragments the IG Publisher generates anyway. Bootstrap's tab JS
+is already loaded by the base template, so the tabs work without extra assets.
+
+Usage in input/pagecontent/<page>.md (one line, outside comments):
+
+  {% raw %}{% include structure-tabs.html artifact="StructureDefinition-mii-pr-dokument-dokument" %}{% endraw %}
+
+Optional parameters:
+  lang="de"  — localizes the tab labels (default: en). Pass the language of the
+               page variant the file belongs to (German mirrors pass "de").
+  id="x"     — unique suffix when the same artifact is tabbed twice on a page.
+
+The four fragments <artifact>-snapshot / -diff / -xml-html / -json-html must
+exist under _includes — the publisher generates them for StructureDefinitions.
+Verify before use (ls temp/pages/_includes/ after a build): ONE missing include
+fails the entire Jekyll run. Prefer this include over pasting fragments below
+each other; prefer a plain link to the artifact page when the narrative does
+not need an inline rendering at all.
+
+Full recipe, with the parameter table and the failure modes:
+docs/recipes/tab-an-artifact-structure.md in the ig-template-mii-kds repository.
+{% endcomment %}
+{% assign st_id = include.id | default: include.artifact %}
+{% if include.lang == 'de' %}
+  {% assign st_lbl_snap = 'Struktur (Snapshot)' %}
+  {% assign st_lbl_diff = 'Differential' %}
+{% else %}
+  {% assign st_lbl_snap = 'Structure (snapshot)' %}
+  {% assign st_lbl_diff = 'Differential' %}
+{% endif %}
+<div class="structure-tabs">
+  <ul class="nav nav-tabs" role="tablist">
+    <li class="active" role="presentation"><a href="#st-{{ st_id }}-snap" data-toggle="tab" role="tab">{{ st_lbl_snap }}</a></li>
+    <li role="presentation"><a href="#st-{{ st_id }}-diff" data-toggle="tab" role="tab">{{ st_lbl_diff }}</a></li>
+    <li role="presentation"><a href="#st-{{ st_id }}-xml" data-toggle="tab" role="tab">XML</a></li>
+    <li role="presentation"><a href="#st-{{ st_id }}-json" data-toggle="tab" role="tab">JSON</a></li>
+  </ul>
+  <div class="tab-content">
+    <div class="tab-pane active" id="st-{{ st_id }}-snap" role="tabpanel">
+      {% capture st_frag %}{{ include.artifact }}-snapshot.xhtml{% endcapture %}
+      {% include {{ st_frag }} %}
+    </div>
+    <div class="tab-pane" id="st-{{ st_id }}-diff" role="tabpanel">
+      {% capture st_frag %}{{ include.artifact }}-diff.xhtml{% endcapture %}
+      {% include {{ st_frag }} %}
+    </div>
+    <div class="tab-pane" id="st-{{ st_id }}-xml" role="tabpanel">
+      {% capture st_frag %}{{ include.artifact }}-xml-html.xhtml{% endcapture %}
+      {% include {{ st_frag }} %}
+    </div>
+    <div class="tab-pane" id="st-{{ st_id }}-json" role="tabpanel">
+      {% capture st_frag %}{{ include.artifact }}-json-html.xhtml{% endcapture %}
+      {% include {{ st_frag }} %}
+    </div>
+  </div>
+</div>

@@ -9,6 +9,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/S
 Usage: #example
 Description: "Familienanamnese: Mother with Marfan syndrome - all MS elements including penetrance, mondo, deceased"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 // vonSEBetroffen extension (required min=1)
 * extension[+].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/von-seltene-betroffen"
 * extension[=].valueCodeableConcept = $sct#373066001 "Yes"
@@ -46,6 +47,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/S
 Usage: #example
 Description: "Familienanamnese: Father not affected - tests vonSEBetroffen=No, deceasedAge"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * extension[+].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/von-seltene-betroffen"
 * extension[=].valueCodeableConcept = $sct#373067005 "No"
 * status = #completed

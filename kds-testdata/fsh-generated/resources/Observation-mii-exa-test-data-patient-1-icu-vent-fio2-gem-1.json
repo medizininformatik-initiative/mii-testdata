@@ -9,8 +9,9 @@
         "display": "test health data"
       }
     ],
+    "source": "https://www.charite.de/fhir/kds-testdata",
     "profile": [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-inspiratorische-sauerstofffraktion-gemessen"
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-inspiratorische-sauerstofffraktion"
     ]
   },
   "partOf": [
@@ -22,8 +23,8 @@
     {
       "coding": [
         {
-          "code": "40617009",
           "system": "http://snomed.info/sct",
+          "code": "40617009",
           "display": "Artificial ventilation (regime/therapy)"
         }
       ]
@@ -34,24 +35,19 @@
       {
         "system": "http://snomed.info/sct",
         "code": "250774007",
-        "display": "Inspired oxygen concentration"
-      },
-      {
-        "system": "http://loinc.org",
-        "code": "71835-3",
-        "display": "Oxygen/Gas total [Pure volume fraction] Inhaled gas"
+        "display": "Inspired oxygen concentration (observable entity)"
       }
     ]
+  },
+  "valueQuantity": {
+    "system": "http://unitsofmeasure.org",
+    "code": "%",
+    "value": 0.52,
+    "unit": "percent"
   },
   "status": "final",
   "subject": {
     "reference": "Patient/mii-exa-test-data-icu-patient-1"
   },
-  "effectiveDateTime": "2024-02-15T14:30:00+01:00",
-  "valueQuantity": {
-    "value": 0.42,
-    "code": "%",
-    "system": "http://unitsofmeasure.org",
-    "unit": "percent"
-  }
+  "effectiveDateTime": "2024-05-05T08:00:00+02:00"
 }

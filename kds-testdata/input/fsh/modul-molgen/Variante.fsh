@@ -5,6 +5,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/St
 Usage: #example
 Description: "Observation: Genetische Variante fuer BRAF-Mutation"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * meta.profile[+] = "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/variant"
 * basedOn = Reference(mii-exa-test-data-patient-3-molgen-anforderung-1)
 * status = #final
@@ -54,6 +55,7 @@ InstanceOf: Device
 Usage: #example
 Description: "Device: Sequencer used for BRAF mutation analysis"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #active
 * manufacturer = "Illumina"
 * deviceName.name = "MiSeq"
@@ -65,6 +67,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/St
 Usage: #example
 Description: "Observation: Genetische Variante fuer CTNNA1-Mutation"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * basedOn = Reference(mii-exa-test-data-patient-4-molgen-anforderung-1)
 * status = #final
 * category[labCategory] = $observation-category#laboratory "Laboratory"
@@ -94,6 +97,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/St
 Usage: #example
 Description: "Observation: Genetische Variante EGFR L858R bei NSCLC"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * meta.profile[+] = "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/variant"
 * basedOn = Reference(mii-exa-test-data-patient-3-molgen-anforderung-2)
 * status = #final
@@ -147,6 +151,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/St
 Usage: #example
 Description: "Observation: Genetische Variante EGFR Exon-20-Insertion p.Ala767_Val769dup bei NSCLC"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * meta.profile[+] = "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/variant"
 * basedOn = Reference(mii-exa-test-data-patient-3-molgen-anforderung-2)
 * status = #final

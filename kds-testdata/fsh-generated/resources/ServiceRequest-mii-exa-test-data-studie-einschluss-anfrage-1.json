@@ -9,6 +9,7 @@
         "display": "test health data"
       }
     ],
+    "source": "https://www.charite.de/fhir/kds-testdata",
     "profile": [
       "https://www.medizininformatik-initiative.de/fhir/modul-studie/StructureDefinition/mii-pr-studie-studieneinschluss-anfrage"
     ]
@@ -19,7 +20,7 @@
         {
           "system": "http://snomed.info/sct",
           "code": "110465008",
-          "display": "Clinical trial (procedure)"
+          "display": "Clinical trial"
         }
       ]
     }
@@ -46,7 +47,7 @@
       {
         "system": "http://snomed.info/sct",
         "code": "702475000",
-        "display": "Referral to clinical trial (procedure)"
+        "display": "Referral to clinical trial"
       }
     ]
   },

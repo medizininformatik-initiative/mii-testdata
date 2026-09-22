@@ -9,6 +9,7 @@
         "display": "test health data"
       }
     ],
+    "source": "https://www.charite.de/fhir/kds-testdata",
     "profile": [
       "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement"
     ]
@@ -37,46 +38,19 @@
       }
     ]
   },
+  "medicationCodeableConcept": {
+    "text": "Morphin 10 mg Tabletten"
+  },
   "effectivePeriod": {
     "start": "2024-03-06T08:00:00+01:00",
     "end": "2024-03-13T10:00:00+01:00"
   },
   "dosage": [
     {
-      "route": {
-        "coding": [
-          {
-            "system": "http://standardterms.edqm.eu",
-            "code": "20053000",
-            "display": "Oral use"
-          }
-        ]
-      },
-      "doseAndRate": [
-        {
-          "doseQuantity": {
-            "value": 10,
-            "code": "mg",
-            "system": "http://unitsofmeasure.org",
-            "unit": "mg"
-          }
-        }
-      ],
-      "timing": {
-        "repeat": {
-          "frequency": 4,
-          "period": 1,
-          "periodUnit": "d"
-        }
-      },
-      "text": "Morphin 10mg alle 6 Stunden bei Bedarf",
-      "asNeededBoolean": true
+      "text": "Morphin 10 mg oral, alle 6 Stunden bei Bedarf"
     }
   ],
   "status": "active",
-  "medicationReference": {
-    "reference": "Medication/mii-exa-test-data-medication-morphin"
-  },
   "subject": {
     "reference": "Patient/mii-exa-test-data-patient-2"
   },

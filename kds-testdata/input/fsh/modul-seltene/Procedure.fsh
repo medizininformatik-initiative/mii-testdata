@@ -9,6 +9,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/S
 Usage: #example
 Description: "Therapie durchgefuehrt: Pharmakotherapie (Losartan) - tests performedPeriod, code.display"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #completed
 * code.coding = $seltene-cs-narse#pharmakotherapie "Pharmakotherapie"
 * subject = Reference(mii-exa-test-data-seltene-patient-1)
@@ -21,6 +22,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/S
 Usage: #example
 Description: "Therapie durchgefuehrt: Sonstiges (Physiotherapie) - tests performedDateTime slice"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #completed
 * code.coding = $seltene-cs-narse#sonstiges "Sonstiges"
 * subject = Reference(mii-exa-test-data-seltene-patient-1)

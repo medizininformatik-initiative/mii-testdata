@@ -4,6 +4,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 Usage: #example
 Description: "List: Aufnahmemedikation für Patient 1"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 //* meta.profile[0] = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/medikationsliste|2.0.0"
 * code.coding[medCode] = $list-example-use-codes#medications
 * code.coding[contextCode] = $FallkontextBeiDokumentenerstellung#E210
@@ -18,6 +19,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 Usage: #example
 Description: "List: Medikationsliste während stationärem Aufenthalt für Patient 1"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 //* meta.profile[0] = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/medikationsliste|2.0.0"
 * code.coding[medCode] = $list-example-use-codes#medications
 * code.coding[contextCode] = $FallkontextBeiDokumentenerstellung#E200
@@ -34,6 +36,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 Usage: #example
 Description: "List: Aufnahmemedikation für Patient 2"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * code.coding[medCode] = $list-example-use-codes#medications
 * code.coding[contextCode] = $FallkontextBeiDokumentenerstellung#E210
 * status = #current
@@ -47,6 +50,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 Usage: #example
 Description: "List: Medikationsliste während stationärem Aufenthalt für Patient 2"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * code.coding[medCode] = $list-example-use-codes#medications
 * code.coding[contextCode] = $FallkontextBeiDokumentenerstellung#E200
 * status = #current
@@ -63,6 +67,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 Usage: #example
 Description: "List: Aufnahmemedikation für Patient 3"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * code.coding[medCode] = $list-example-use-codes#medications
 * code.coding[contextCode] = $FallkontextBeiDokumentenerstellung#E210
 * status = #current
@@ -76,6 +81,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 Usage: #example
 Description: "List: Medikationsliste während stationärem Aufenthalt für Patient 3"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * code.coding[medCode] = $list-example-use-codes#medications
 * code.coding[contextCode] = $FallkontextBeiDokumentenerstellung#E200
 * status = #current
@@ -92,6 +98,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 Usage: #example
 Description: "List: Aufnahmemedikation für Patient 4"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * code.coding[medCode] = $list-example-use-codes#medications
 * code.coding[contextCode] = $FallkontextBeiDokumentenerstellung#E210
 * status = #current
@@ -105,6 +112,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 Usage: #example
 Description: "List: Medikationsliste während stationärem Aufenthalt für Patient 4"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * code.coding[medCode] = $list-example-use-codes#medications
 * code.coding[contextCode] = $FallkontextBeiDokumentenerstellung#E200
 * status = #current
@@ -120,6 +128,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 Usage: #example
 Description: "List: Aufnahmemedikation für Patient 5"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * code.coding[medCode] = $list-example-use-codes#medications
 * code.coding[contextCode] = $FallkontextBeiDokumentenerstellung#E210
 * status = #current
@@ -133,6 +142,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 Usage: #example
 Description: "List: Medikationsliste während stationärem Aufenthalt für Patient 5"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * code.coding[medCode] = $list-example-use-codes#medications
 * code.coding[contextCode] = $FallkontextBeiDokumentenerstellung#E200
 * status = #current
@@ -148,6 +158,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 Usage: #example
 Description: "List: Aufnahmemedikation für Patient 6"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * code.coding[medCode] = $list-example-use-codes#medications
 * code.coding[contextCode] = $FallkontextBeiDokumentenerstellung#E210
 * status = #current
@@ -161,6 +172,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 Usage: #example
 Description: "List: Medikationsliste während stationärem Aufenthalt für Patient 6"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * code.coding[medCode] = $list-example-use-codes#medications
 * code.coding[contextCode] = $FallkontextBeiDokumentenerstellung#E200
 * status = #current
@@ -176,6 +188,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 Usage: #example
 Description: "List: Entlassmedikation für Patient 6"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * code.coding[medCode] = $list-example-use-codes#medications
 * code.coding[contextCode] = $FallkontextBeiDokumentenerstellung#E230
 * status = #current
@@ -190,6 +203,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 Usage: #example
 Description: "List: Medikationsliste während stationärem Aufenthalt für Patient 7"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * code.coding[medCode] = $list-example-use-codes#medications
 * code.coding[contextCode] = $FallkontextBeiDokumentenerstellung#E200
 * status = #current
@@ -204,6 +218,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 Usage: #example
 Description: "List: Entlassmedikation für Patient 7"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * code.coding[medCode] = $list-example-use-codes#medications
 * code.coding[contextCode] = $FallkontextBeiDokumentenerstellung#E230
 * status = #current
@@ -218,6 +233,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 Usage: #example
 Description: "List: Medikationsliste während stationärem Aufenthalt für Patient 8"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * code.coding[medCode] = $list-example-use-codes#medications
 * code.coding[contextCode] = $FallkontextBeiDokumentenerstellung#E200
 * status = #current
@@ -234,6 +250,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 Usage: #example
 Description: "List: Aufnahmemedikation für Patient 9"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * code.coding[medCode] = $list-example-use-codes#medications
 * code.coding[contextCode] = $FallkontextBeiDokumentenerstellung#E210
 * status = #current
@@ -247,6 +264,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 Usage: #example
 Description: "List: Medikationsliste während stationärem Aufenthalt für Patient 9"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * code.coding[medCode] = $list-example-use-codes#medications
 * code.coding[contextCode] = $FallkontextBeiDokumentenerstellung#E200
 * status = #current
@@ -260,6 +278,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 Usage: #example
 Description: "List: Entlassmedikation für Patient 9"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * code.coding[medCode] = $list-example-use-codes#medications
 * code.coding[contextCode] = $FallkontextBeiDokumentenerstellung#E230
 * status = #current
@@ -274,6 +293,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 Usage: #example
 Description: "List: Aufnahmemedikation für Patient 10"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * code.coding[medCode] = $list-example-use-codes#medications
 * code.coding[contextCode] = $FallkontextBeiDokumentenerstellung#E210
 * status = #current
@@ -287,6 +307,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 Usage: #example
 Description: "List: Entlassmedikation für Patient 10"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * code.coding[medCode] = $list-example-use-codes#medications
 * code.coding[contextCode] = $FallkontextBeiDokumentenerstellung#E230
 * status = #current

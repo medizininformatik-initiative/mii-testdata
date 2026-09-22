@@ -1,0 +1,83 @@
+# Security scan — adaptiert aus dem mii-kds-module-template (dort
+# Monitoring-Layer C): bekannte Schwachstellen in den TOOLING-Ökosystemen
+# (npm/Container-Manifeste, GitHub Actions, OS-Pakete), IaC-Fehlkonfigurationen
+# und committete Secrets.
+#
+# Zweck:     OSV-Scanner + Trivy (Filesystem-Modus) über das Repo; Findings
+#            landen als SARIF im Security-Tab (Code scanning), Kategorien
+#            "osv-scanner" und "trivy-fs". Der trivy-image-Job des Templates
+#            entfällt hier: das Repo hat keinen Dev-Container; die Docker-
+#            Images (blaze/, validator-docker/) werden über die fs-Scans der
+#            Dockerfiles abgedeckt.
+# Trigger:   schedule (montags 07:00 UTC) + pull_request gegen main +
+#            workflow_dispatch.
+# Toggle:    vars.ENABLE_SECURITY_SCAN — ON per Default; Repo-Variable auf
+#            'false' setzen, um beide Jobs zu überspringen.
+# Human-gated: Triage jedes Findings (Fix vs. dokumentiert akzeptiertes
+#            Risiko). Nichts hier ändert Code oder Dependencies.
+#
+# EHRLICHE ABDECKUNGSGRENZE: Diese Scanner erfassen KEINE FHIR-Content-
+# Packages und keinen Validator-Jar-Inhalt (nicht in Vuln-Datenbanken).
+# Dafür ist der Dependency version check die verfügbare Absicherung.
+name: Security scan
+
+on:
+  schedule:
+    - cron: "0 7 * * 1" # montags 07:00 UTC
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  security-events: write # SARIF-Upload in den Security-Tab
+  actions: read # von codeql-action/upload-sarif auf privaten Repos benötigt
+
+jobs:
+  osv:
+    if: ${{ vars.ENABLE_SECURITY_SCAN != 'false' }} # Toggle: ON per Default
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      # Direct-use Scanner-Action. Achtung: sie liegt im Unterverzeichnis
+      # osv-scanner-action/ von google/osv-scanner-action.
+      - name: OSV-Scanner
+        uses: google/osv-scanner-action/osv-scanner-action@8deb546fdb875b9996d27d4950be7312dac076a1 # v2.5.0
+        # osv-scanner endet non-zero bei Findings (1) oder ohne scannbare
+        # Paketquellen (128). Beides darf den SARIF-Upload nicht blockieren.
+        continue-on-error: true
+        with:
+          scan-args: |-
+            --recursive
+            --format=sarif
+            --output=osv.sarif
+            ./
+
+      - name: Upload OSV SARIF
+        if: ${{ always() && hashFiles('osv.sarif') != '' }}
+        uses: github/codeql-action/upload-sarif@ff2f1c621b7f889edc0d3c761ac2e6a3f8cdb0dd # v4.37.7
+        with:
+          sarif_file: osv.sarif
+          category: osv-scanner
+
+  trivy:
+    if: ${{ vars.ENABLE_SECURITY_SCAN != 'false' }} # Toggle: ON per Default
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Trivy filesystem scan
+        uses: aquasecurity/trivy-action@ed142fd0673e97e23eac54620cfb913e5ce36c25 # v0.36.0
+        with:
+          scan-type: fs
+          scanners: vuln,misconfig,secret
+          format: sarif
+          output: trivy.sarif
+
+      - name: Upload Trivy SARIF
+        if: ${{ always() && hashFiles('trivy.sarif') != '' }}
+        uses: github/codeql-action/upload-sarif@ff2f1c621b7f889edc0d3c761ac2e6a3f8cdb0dd # v4.37.7
+        with:
+          sarif_file: trivy.sarif
+          category: trivy-fs

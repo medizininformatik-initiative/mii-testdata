@@ -1,0 +1,619 @@
+# en -> de
+
+# NO_TRANS
+msgid ""
+msgstr ""
+
+#: NO_TRANS
+msgid "There is no translation page available for the current page, so it has been rendered in the default language"
+msgstr "Für die aktuelle Seite ist keine Übersetzung verfügbar, daher wurde sie in der Standardsprache dargestellt."
+
+# TRANS_HLP
+#: TRANS_HLP
+msgid "This page includes translations from the original source language in which the guide was authored.  Information on these translations and instructions on how to provide feedback on the translations can be found [here](translationinfo.html)."
+msgstr "Diese Seite enthält Übersetzungen aus der Originalsprache, in der der Leitfaden verfasst wurde.  Informationen zu diesen Übersetzungen und Anweisungen zum Abgeben von Feedback zu den Übersetzungen finden Sie <a href='translationinfo.html'>hier</a>."
+
+# Experimental
+#: Experimental
+msgid "Experimental"
+msgstr "Experimentell"
+
+# Swagger
+#: Swagger
+msgid "Raw OpenAPI-Swagger Definition file"
+msgstr "Rohdatei der OpenAPI-/Swagger-Definition"
+
+# Download
+#: Download
+msgid "Download"
+msgstr "Download"
+
+# NoTestPlan
+#: NoTestPlan
+msgid "No test plans are currently available for the %ARTIFACT%."
+msgstr "Für das Artefakt %ARTIFACT% sind derzeit keine TestPlans verfügbar."
+
+# NoTestScript
+#: NoTestScript
+msgid "No test scripts are currently available for the %ARTIFACT%."
+msgstr "Für das Artefakt %ARTIFACT% sind derzeit keine TestScripts verfügbar."
+
+# ChangeHistory
+#: ChangeHistory
+msgid "Change History"
+msgstr "Änderungshistorie"
+
+# HistoryOfChange
+#: HistoryOfChange
+msgid "History of changes for %ARTIFACT%."
+msgstr "Änderungshistorie für %ARTIFACT%."
+
+# CodeSystemValuesets
+#: CodeSystemValuesets
+msgid "This Code system is referenced in the definition of the following value sets:"
+msgstr "Dieses CodeSystem wird in der Definition der folgenden ValueSets referenziert:"
+
+# Contained
+#: Contained
+msgid "Contained resources"
+msgstr "Eingebettete (Contained) Ressourcen"
+
+# FormalExtension
+#: FormalExtension
+msgid "Formal Views of Extension Content"
+msgstr "Formale Ansichten des Extension-Inhalts"
+
+# FormalProfile
+#: FormalProfile
+msgid "Formal Views of Profile Content"
+msgstr "Formale Ansichten des Profilinhalts"
+
+# ReadingStructures
+#: ReadingStructures
+msgid "Description of Profiles, Differentials, Snapshots, and their representations"
+msgstr "Beschreibung von Profilen, Differentials, Snapshots und deren Repräsentationen"
+
+# KeyElementsTable
+#: KeyElementsTable
+msgid "Key Elements Table"
+msgstr "Schlüsselelemente-Tabelle"
+
+# DifferentialTable
+#: DifferentialTable
+msgid "Differential Table"
+msgstr "Differential-Tabelle"
+
+# SnapshotTable
+#: SnapshotTable
+msgid "Snapshot Table"
+msgstr "Snapshot-Tabelle"
+
+# PseudoXML
+#: PseudoXML
+msgid "Pseudo XML"
+msgstr "Pseudo-XML"
+
+# PseudoJSON
+#: PseudoJSON
+msgid "Pseudo JSON"
+msgstr "Pseudo-JSON"
+
+# PseudoTTL
+#: PseudoTTL
+msgid "Pseudo TTL"
+msgstr "Pseudo-TTL"
+
+# StatisticsReferences
+#: StatisticsReferences
+msgid "Statistics/References"
+msgstr "Statistiken/Referenzen"
+
+# AllTables
+#: AllTables
+msgid "All"
+msgstr "Alle"
+
+# Derived
+#: Derived
+msgid "This structure is derived from %ARTIFACT%"
+msgstr "Diese Struktur ist abgeleitet von %ARTIFACT%"
+
+# KeyElementsView
+#: KeyElementsView
+msgid "Key Elements View"
+msgstr "Schlüsselelemente-Ansicht"
+
+# DifferentialView
+#: DifferentialView
+msgid "Differential View"
+msgstr "Differential-Ansicht"
+
+# SnapshotView
+#: SnapshotView
+msgid "Snapshot View"
+msgstr "Snapshot-Ansicht"
+
+# XMLTemplate
+#: XMLTemplate
+msgid "XML Template"
+msgstr "XML-Template"
+
+# JSONTemplate
+#: JSONTemplate
+msgid "JSON Template"
+msgstr "JSON-Template"
+
+# TTLTemplate
+#: TTLTemplate
+msgid "TTL Template"
+msgstr "TTL-Template"
+
+# OtherReps
+#: OtherReps
+msgid "Other representations of profile:"
+msgstr "Weitere Repräsentationen des Profils:"
+
+# CSV
+#: CSV
+msgid "CSV"
+msgstr "CSV"
+
+# Excel
+#: Excel
+msgid "Excel"
+msgstr "Excel"
+
+# Schematron
+#: Schematron
+msgid "Schematron"
+msgstr "Schematron"
+
+# Example
+#: Example
+msgid "Example"
+msgstr "Beispiel"
+
+# Examples
+#: Examples
+msgid "Examples"
+msgstr "Beispiele"
+
+# Raw
+#: Raw
+msgid "Raw %FMT%"
+msgstr "Raw %FMT%"
+
+# Abstract
+#: Abstract
+msgid "Abstract"
+msgstr "Abstrakt"
+
+# DetailedDescriptions
+#: DetailedDescriptions
+msgid "Detailed Descriptions"
+msgstr "Detaillierte Beschreibungen"
+
+# DefinitionsFor
+#: DefinitionsFor
+msgid "Definitions for the %MODEL%"
+msgstr "Definitionen für das %MODEL%"
+
+# ExamplesForProfile
+#: ExamplesForProfile
+msgid "Examples for the %ID% Profile."
+msgstr "Beispiele für das Profil %ID%."
+
+# NoExamples
+#: NoExamples
+msgid "No examples are currently available for the %ID% Profile."
+msgstr "Für das Profil %ID% sind derzeit keine Beispiele verfügbar."
+
+# FormatProfile
+#: FormatProfile
+msgid "%FMT% Profile"
+msgstr "%FMT%-Profil"
+
+# FormatRep
+#: FormatRep
+msgid "%FMT% representation of the %ID% %TYPE%."
+msgstr "%FMT%-Darstellung des %ID% %TYPE%."
+
+# Mappings
+#: Mappings
+msgid "Mappings"
+msgstr "Mappings"
+
+# MappingsFor
+#: MappingsFor
+msgid "Mappings for the %ID% %TYPE%."
+msgstr "Mappings für %ID% %TYPE%."
+
+# ChangesIn
+#: ChangesIn
+msgid "Changes in the %ID% %TYPE%."
+msgstr "Änderungen in %ID% %TYPE%."
+
+# Testing
+#: Testing
+msgid "Testing"
+msgstr "Tests"
+
+# TestScripts
+#: TestScripts
+msgid "Test Scripts"
+msgstr "Testskripte"
+
+# Expansion
+#: Expansion
+msgid "Expansion"
+msgstr "Expansion"
+
+# Content
+#: Content
+msgid "Content"
+msgstr "Inhalt"
+
+# XML
+#: XML
+msgid "XML"
+msgstr "XML"
+
+# JSON
+#: JSON
+msgid "JSON"
+msgstr "JSON"
+
+# TTL
+#: TTL
+msgid "TTL"
+msgstr "TTL"
+
+# History
+#: History
+msgid "History"
+msgstr "Verlauf"
+
+# Extension
+#: Extension
+msgid "Extension"
+msgstr "Extension"
+
+# LogicalModel
+#: LogicalModel
+msgid "Logical Model"
+msgstr "Logisches Modell"
+
+# ResourceProfile
+#: ResourceProfile
+msgid "Resource Profile"
+msgstr "Ressourcenprofil"
+
+# DataTypeProfile
+#: DataTypeProfile
+msgid "Data Type Profile"
+msgstr "Datentyp-Profil"
+
+# Links
+#: Links
+msgid "Links"
+msgstr "Links"
+
+# Notes
+#: Notes
+msgid "Notes"
+msgstr "Notizen"
+
+# VisitFCP
+#: VisitFCP
+msgid "Visit the FHIR Community Process Specification Registry"
+msgstr "Besuchen Sie die FHIR Community Process Specification Registry"
+
+# CountryFlag
+#: CountryFlag
+msgid "flag"
+msgstr "Flagge"
+
+# PrevPage
+#: PrevPage
+msgid "< prev"
+msgstr "< zurück"
+
+# NextPage
+#: NextPage
+msgid "next >"
+msgstr "weiter >"
+
+# PageBottom
+#: PageBottom
+msgid "bottom"
+msgstr "Ende"
+
+# PageTop
+#: PageTop
+msgid "top"
+msgstr "Anfang"
+
+# IGCopyright
+#: IGCopyright
+msgid "IG © %YEAR%"
+msgstr "IG © %YEAR%"
+
+# IGPackage
+#: IGPackage
+msgid "Package %PKG% based on %FHIRVER%."
+msgstr "Package %PKG% basiert auf %FHIRVER%."
+
+# GeneratedDate
+#: GeneratedDate
+msgid "Generated %DATE%"
+msgstr "Erstellt %DATE%"
+
+# PageStandardsStatus
+#: PageStandardsStatus
+msgid "Page standards status"
+msgstr "Standard-Status der Seite"
+
+# StandardsStatus
+#: StandardsStatus
+msgid "Standards Status"
+msgstr "Standard-Status"
+
+# FromNormative
+#: FromNormative
+msgid "from v%NORMVER%"
+msgstr "seit v%NORMVER%"
+
+# MaturityLevel
+#: MaturityLevel
+msgid "Maturity Level"
+msgstr "Maturity Level (Reifegrad)"
+
+# OfficialURL
+#: OfficialURL
+msgid "Official URL"
+msgstr "Offizielle URL"
+
+# CopyURL
+#: CopyURL
+msgid "Click to copy URL"
+msgstr "Klicken zum Kopieren der URL"
+
+# CopyVersioned
+#: CopyVersioned
+msgid "Click to copy versioned URL"
+msgstr "Klicken zum Kopieren der versionierten URL"
+
+# Version
+#: Version
+msgid "Version"
+msgstr "Version"
+
+# ResourceDate
+#: ResourceDate
+msgid "as of %RESDATE%"
+msgstr "Stand: %RESDATE%"
+
+# Responsible
+#: Responsible
+msgid "Responsible"
+msgstr "Verantwortlich"
+
+# Realm
+#: Realm
+msgid "Realm"
+msgstr "Realm"
+
+# ComputableName
+#: ComputableName
+msgid "Computable Name"
+msgstr "Maschinenlesbarer Name"
+
+# OtherIdentifiers
+#: OtherIdentifiers
+msgid "Other Identifiers"
+msgstr "Weitere Identifikatoren"
+
+# Keywords
+#: Keywords
+msgid "Keywords"
+msgstr "Schlüsselwörter"
+
+# Usage
+#: Usage
+msgid "Usage"
+msgstr "Verwendung"
+
+# CopyrightLegal
+#: CopyrightLegal
+msgid "Copyright/Legal"
+msgstr "Copyright/Rechtliches"
+
+# NarrativeContent
+#: NarrativeContent
+msgid "Narrative Content"
+msgstr "Narrativer Inhalt"
+
+# TableOfContents
+#: TableOfContents
+msgid "Table of Contents"
+msgstr "Inhaltsverzeichnis"
+
+# QAReport
+#: QAReport
+msgid "QA Report"
+msgstr "QA-Bericht"
+
+# ReadingTerminology
+#: ReadingTerminology
+msgid "Description of the above table(s)"
+msgstr "Beschreibung der obigen Tabelle(n)"
+
+# TestPlans
+#: TestPlans
+msgid "Test Plans"
+msgstr "Testpläne"
+
+# Actors
+#: Actors
+msgid "Actors"
+msgstr "Akteure"
+
+# Diagram
+#: Diagram
+msgid "Diagram"
+msgstr "Diagramm"
+
+# Processes
+#: Processes
+msgid "Processes"
+msgstr "Prozesse"
+
+# Instances
+#: Instances
+msgid "Instances"
+msgstr "Instanzen"
+
+# WorkInProgress
+#: WorkInProgress
+msgid "The content in this section has not undergone work group review and may be significantly revised prior to the next ballot."
+msgstr "Die Inhalte in diesem Abschnitt wurden nicht durch die Arbeitsgruppe geprüft und können vor dem nächsten Ballot wesentlich geändert werden."
+
+# Contents
+#: Contents
+msgid "Contents"
+msgstr "Inhalt"
+
+# Globals
+#: Globals
+msgid "Globals"
+msgstr "Globale"
+
+# GlobalProfiles
+#: GlobalProfiles
+msgid "Global Profiles"
+msgstr "Globale Profile"
+
+# ArtifactsIntro
+#: ArtifactsIntro
+msgid "This page provides a list of the FHIR artifacts defined as part of this implementation guide."
+msgstr "Diese Seite bietet eine Liste der FHIR-Artefakte, die in diesem Implementierungsleitfaden definiert sind."
+
+# Derive
+#: Derive
+msgid "This structure is derived from %ARTIFACT%"
+msgstr "Diese Struktur ist abgeleitet von %ARTIFACT%"
+
+# ArtifactsSummary
+#: ArtifactsSummary
+msgid "Artifacts Summary"
+msgstr "Artefaktübersicht"
+
+# Language
+#: Language
+msgid "Language"
+msgstr "Sprache"
+
+# UMLDiagram
+#: UMLDiagram
+msgid "UML Diagram"
+msgstr "UML-Diagramm"
+
+# Obligations
+#: Obligations
+msgid "Obligations"
+msgstr "Obligations"
+
+# OpenEHR
+#: OpenEHR
+msgid "openEHR View"
+msgstr "openEHR-Ansicht"
+
+# QuestionnaireTree
+#: QuestionnaireTree
+msgid "Tree view"
+msgstr "Baumansicht"
+
+# QuestionnaireSample
+#: QuestionnaireSample
+msgid "Sample Rendering"
+msgstr "Beispielanzeige"
+
+# QuestionnaireLogic
+#: QuestionnaireLogic
+msgid "Form Logic"
+msgstr "Formularlogik"
+
+# QuestionnaireResponses
+#: QuestionnaireResponses
+msgid "Sample completed form"
+msgstr "Beispiel für ausgefülltes Formular"
+
+# TestQuestionnaire
+#: TestQuestionnaire
+msgid "Test this Questionnaire"
+msgstr "Diesen Fragebogen testen"
+
+# ResponsesQuestionnaire
+#: ResponsesQuestionnaire
+msgid "Responses for this Questionnaire"
+msgstr "Antworten zu diesem Fragebogen"
+
+# NoQuestionnaireResponses
+#: NoQuestionnaireResponses
+msgid "There are currently no QuestionnaireResponse instances for this Questionnaire defined in this IG."
+msgstr "Es sind derzeit keine QuestionnaireResponse-Instanzen für diesen Fragebogen in diesem IG definiert."
+
+# FormalResource
+#: FormalResource
+msgid "Formal Views of Resource Content"
+msgstr "Formale Ansichten des Ressourceninhalts"
+
+# ResourceOtherReps
+#: ResourceOtherReps
+msgid "Other representations of resource:"
+msgstr "Weitere Repräsentationen der Ressource:"
+
+# ExamplesForResource
+#: ExamplesForResource
+msgid "Examples for the %ID% Resource."
+msgstr "Beispiele für die Ressource %ID%."
+
+# ResourceNoExamples
+#: ResourceNoExamples
+msgid "No examples are currently available for the %ID% Resource"
+msgstr "Für die Ressource %ID% sind derzeit keine Beispiele verfügbar"
+
+# FormatResource
+#: FormatResource
+msgid "%FMT% Resource"
+msgstr "%FMT%-Ressource"
+
+# ResourceModel
+#: ResourceModel
+msgid "Resource"
+msgstr "Ressource"
+
+# ADL
+#: ADL
+msgid "ADL"
+msgstr "ADL"
+
+# Structure
+#: Structure
+msgid "Structure"
+msgstr "Struktur"
+
+# SearchParameters
+#: SearchParameters
+msgid "Search Parameters"
+msgstr "Suchparameter"
+
+# ModifiedContent
+#: ModifiedContent
+msgid "Modified Content"
+msgstr "Geänderter Inhalt"
+
+# NewContent
+#: NewContent
+msgid "New Content"
+msgstr "Neuer Inhalt"

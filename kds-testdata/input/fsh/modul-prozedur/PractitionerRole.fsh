@@ -3,6 +3,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/modul-studie/Struct
 Usage: #example
 Description: "PractitionerRole: Physician"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * active = true
 * practitioner = Reference(mii-exa-test-data-practitioner-physician-1)
 * organization = Reference(mii-exa-test-data-organization-charite)

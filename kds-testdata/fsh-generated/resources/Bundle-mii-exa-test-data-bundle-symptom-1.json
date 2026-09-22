@@ -1,0 +1,810 @@
+{
+  "resourceType": "Bundle",
+  "id": "mii-exa-test-data-bundle-symptom-1",
+  "meta": {
+    "security": [
+      {
+        "code": "HTEST",
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "display": "test health data"
+      }
+    ],
+    "source": "https://www.charite.de/fhir/kds-testdata"
+  },
+  "entry": [
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Patient/mii-exa-test-data-symptom-patient-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Patient/mii-exa-test-data-symptom-patient-1",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "mii-exa-test-data-symptom-patient-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata"
+        },
+        "identifier": [
+          {
+            "system": "https://www.charite.de/fhir/sid/patientenidentifikation",
+            "value": "SYMP-TEST-001"
+          }
+        ],
+        "name": [
+          {
+            "given": [
+              "Helene"
+            ],
+            "family": "Symptomatika"
+          }
+        ],
+        "birthDate": "1994-08-21",
+        "gender": "female"
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Encounter/mii-exa-test-data-symptom-encounter-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Encounter/mii-exa-test-data-symptom-encounter-1",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "mii-exa-test-data-symptom-encounter-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata"
+        },
+        "period": {
+          "start": "2025-03-04",
+          "end": "2025-03-04"
+        },
+        "status": "finished",
+        "class": {
+          "code": "AMB",
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "display": "ambulatory"
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-symptom-patient-1"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Condition/mii-exa-test-data-symptom-condition-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Condition/mii-exa-test-data-symptom-condition-1",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "mii-exa-test-data-symptom-condition-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-symptom/StructureDefinition/finding-condition"
+          ]
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/condition-assertedDate",
+            "valueDateTime": "2025-03-04"
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://www.charite.de/fhir/sid/symptom-condition",
+            "value": "SYMP-CON-0001"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "problem-list-item",
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                "display": "Problem List Item"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "398057008",
+              "system": "http://snomed.info/sct",
+              "display": "Tension-type headache"
+            },
+            {
+              "code": "G44.2",
+              "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+              "display": "Spannungskopfschmerz"
+            }
+          ],
+          "text": "Chronische Spannungskopfschmerzen"
+        },
+        "bodySite": [
+          {
+            "coding": [
+              {
+                "code": "69536005",
+                "system": "http://snomed.info/sct",
+                "display": "Head structure"
+              }
+            ]
+          }
+        ],
+        "onsetPeriod": {
+          "start": "2009",
+          "_start": {
+            "extension": [
+              {
+                "url": "http://fhir.de/StructureDefinition/lebensphase",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "code": "263659003",
+                      "system": "http://snomed.info/sct",
+                      "display": "Adolescence (qualifier value)"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "end": "2012",
+          "_end": {
+            "extension": [
+              {
+                "url": "http://fhir.de/StructureDefinition/lebensphase",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "code": "263659003",
+                      "system": "http://snomed.info/sct",
+                      "display": "Adolescence (qualifier value)"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        "evidence": [
+          {
+            "code": [
+              {
+                "coding": [
+                  {
+                    "code": "25064002",
+                    "system": "http://snomed.info/sct",
+                    "display": "Headache"
+                  }
+                ]
+              }
+            ],
+            "detail": [
+              {
+                "reference": "Observation/mii-exa-test-data-symptom-observation-1"
+              }
+            ]
+          }
+        ],
+        "clinicalStatus": {
+          "coding": [
+            {
+              "code": "active",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "display": "Active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "code": "confirmed",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "display": "Confirmed"
+            }
+          ]
+        },
+        "severity": {
+          "coding": [
+            {
+              "code": "6736007",
+              "system": "http://snomed.info/sct",
+              "display": "Moderate (severity modifier)"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-symptom-patient-1"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-symptom-encounter-1"
+        },
+        "recordedDate": "2025-03-04"
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Condition/mii-exa-test-data-symptom-condition-2"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Condition/mii-exa-test-data-symptom-condition-2",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "mii-exa-test-data-symptom-condition-2",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-symptom/StructureDefinition/finding-condition"
+          ]
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/condition-assertedDate",
+            "valueDateTime": "2023-11-20"
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://www.charite.de/fhir/sid/symptom-condition",
+            "value": "SYMP-CON-0002"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "problem-list-item",
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                "display": "Problem List Item"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "84114007",
+              "system": "http://snomed.info/sct",
+              "display": "Heart failure"
+            },
+            {
+              "code": "I50.9",
+              "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+              "display": "Herzinsuffizienz, nicht näher bezeichnet"
+            }
+          ],
+          "text": "Chronische Herzinsuffizienz"
+        },
+        "stage": [
+          {
+            "assessment": [
+              {
+                "reference": "Observation/mii-exa-test-data-symptom-observation-3"
+              }
+            ],
+            "summary": {
+              "coding": [
+                {
+                  "code": "421704003",
+                  "system": "http://snomed.info/sct",
+                  "display": "New York Heart Association Classification - Class II"
+                }
+              ]
+            },
+            "type": {
+              "coding": [
+                {
+                  "code": "260998006",
+                  "system": "http://snomed.info/sct",
+                  "display": "Clinical staging (qualifier value)"
+                }
+              ]
+            }
+          }
+        ],
+        "clinicalStatus": {
+          "coding": [
+            {
+              "code": "active",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "display": "Active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "code": "confirmed",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "display": "Confirmed"
+            }
+          ]
+        },
+        "severity": {
+          "coding": [
+            {
+              "code": "6736007",
+              "system": "http://snomed.info/sct",
+              "display": "Moderate (severity modifier)"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-symptom-patient-1"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-symptom-encounter-1"
+        },
+        "onsetDateTime": "2023-11-20",
+        "recordedDate": "2025-03-04"
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-symptom-observation-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-symptom-observation-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-symptom-observation-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-symptom/StructureDefinition/finding-observation"
+          ]
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo",
+            "valueReference": {
+              "reference": "Condition/mii-exa-test-data-symptom-condition-1"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://www.charite.de/fhir/sid/symptom-observation",
+            "value": "SYMP-OBS-0001"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "exam",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "display": "Exam"
+              }
+            ]
+          }
+        ],
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "25064002",
+              "system": "http://snomed.info/sct",
+              "display": "Headache"
+            }
+          ],
+          "text": "Drueckender, beidseitiger Kopfschmerz"
+        },
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "code": "A",
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "display": "Abnormal"
+              }
+            ]
+          }
+        ],
+        "hasMember": [
+          {
+            "reference": "Observation/mii-exa-test-data-symptom-observation-2"
+          }
+        ],
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "260864003",
+                  "system": "http://snomed.info/sct",
+                  "display": "Frequency (attribute)"
+                }
+              ]
+            },
+            "valueString": "Kopfschmerzen an mehr als 15 Tagen pro Monat"
+          }
+        ],
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "75325-1",
+              "system": "http://loinc.org",
+              "display": "Symptom"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-symptom-patient-1"
+        },
+        "effectiveDateTime": "2025-03-04",
+        "issued": "2025-03-04T10:30:00+01:00",
+        "bodySite": {
+          "coding": [
+            {
+              "code": "69536005",
+              "system": "http://snomed.info/sct",
+              "display": "Head structure"
+            }
+          ]
+        },
+        "method": {
+          "coding": [
+            {
+              "code": "84100007",
+              "system": "http://snomed.info/sct",
+              "display": "History taking"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-symptom-observation-2"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-symptom-observation-2",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-symptom-observation-2",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-symptom/StructureDefinition/finding-observation"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://www.charite.de/fhir/sid/symptom-observation",
+            "value": "SYMP-OBS-0002"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "survey",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "display": "Survey"
+              }
+            ]
+          }
+        ],
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/mii-exa-test-data-symptom-questionnaireresponse-1"
+          }
+        ],
+        "referenceRange": [
+          {
+            "text": "0 (kein Schmerz) bis 10 (staerkster vorstellbarer Schmerz)"
+          }
+        ],
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "72514-3",
+              "system": "http://loinc.org",
+              "display": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-symptom-patient-1"
+        },
+        "effectiveDateTime": "2025-03-03",
+        "issued": "2025-03-04T10:30:00+01:00",
+        "valueInteger": 6,
+        "device": {
+          "reference": "Device/mii-exa-test-data-symptom-device-1"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-symptom-observation-3"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-symptom-observation-3",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-symptom-observation-3",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-symptom/StructureDefinition/finding-observation"
+          ]
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo",
+            "valueReference": {
+              "reference": "Condition/mii-exa-test-data-symptom-condition-2"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://www.charite.de/fhir/sid/symptom-observation",
+            "value": "SYMP-OBS-0003"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "exam",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "display": "Exam"
+              }
+            ]
+          }
+        ],
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "60845006",
+              "system": "http://snomed.info/sct",
+              "display": "Dyspnea on exertion"
+            }
+          ],
+          "text": "Luftnot bei staerkerer Belastung (Treppensteigen ueber zwei Etagen)"
+        },
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "code": "A",
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "display": "Abnormal"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "75325-1",
+              "system": "http://loinc.org",
+              "display": "Symptom"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-symptom-patient-1"
+        },
+        "effectiveDateTime": "2025-03-04",
+        "issued": "2025-03-04T11:00:00+01:00",
+        "method": {
+          "coding": [
+            {
+              "code": "84100007",
+              "system": "http://snomed.info/sct",
+              "display": "History taking"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-symptom-observation-4"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-symptom-observation-4",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-symptom-observation-4",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-symptom/StructureDefinition/finding-observation"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://www.charite.de/fhir/sid/symptom-observation",
+            "value": "SYMP-OBS-0004"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "exam",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "display": "Exam"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "404640003",
+              "system": "http://snomed.info/sct",
+              "display": "Dizziness"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-symptom-patient-1"
+        },
+        "effectiveDateTime": "2025-03-04",
+        "issued": "2025-03-04T11:10:00+01:00",
+        "dataAbsentReason": {
+          "coding": [
+            {
+              "code": "asked-unknown",
+              "system": "http://terminology.hl7.org/CodeSystem/data-absent-reason",
+              "display": "Asked But Unknown"
+            }
+          ]
+        },
+        "method": {
+          "coding": [
+            {
+              "code": "84100007",
+              "system": "http://snomed.info/sct",
+              "display": "History taking"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Device/mii-exa-test-data-symptom-device-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Device/mii-exa-test-data-symptom-device-1",
+      "resource": {
+        "resourceType": "Device",
+        "id": "mii-exa-test-data-symptom-device-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata"
+        },
+        "deviceName": [
+          {
+            "name": "Kopfschmerztagebuch-App",
+            "type": "user-friendly-name"
+          }
+        ],
+        "status": "active",
+        "type": {
+          "coding": [
+            {
+              "code": "706689003",
+              "system": "http://snomed.info/sct",
+              "display": "Application program software"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "QuestionnaireResponse/mii-exa-test-data-symptom-questionnaireresponse-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/QuestionnaireResponse/mii-exa-test-data-symptom-questionnaireresponse-1",
+      "resource": {
+        "resourceType": "QuestionnaireResponse",
+        "id": "mii-exa-test-data-symptom-questionnaireresponse-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata"
+        },
+        "item": [
+          {
+            "answer": [
+              {
+                "valueInteger": 6
+              }
+            ],
+            "linkId": "schmerzintensitaet-nrs",
+            "text": "Wie stark waren Ihre Kopfschmerzen heute (0-10)?"
+          }
+        ],
+        "status": "completed",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-symptom-patient-1"
+        },
+        "authored": "2025-03-03T18:00:00+01:00"
+      }
+    }
+  ],
+  "type": "transaction",
+  "timestamp": "2025-06-18T13:51:00+02:00"
+}

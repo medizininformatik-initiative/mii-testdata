@@ -10,6 +10,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/St
 Usage: #example
 Description: "Observation: Molekulare Konsequenz der BRAF V600E Mutation"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * meta.profile[+] = "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/molecular-consequence"
 * status = #final
 * category[labCategory] = $observation-category#laboratory "Laboratory"
@@ -31,6 +32,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/St
 Usage: #example
 Description: "Observation: Molekulare Konsequenz der CTNNA1 Frameshift-Deletion"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * meta.profile[+] = "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/molecular-consequence"
 * extension[workflow-relatedArtifact].url = "http://hl7.org/fhir/StructureDefinition/workflow-relatedArtifact"
 * extension[workflow-relatedArtifact].valueRelatedArtifact.type = $related-artifact-type#citation "Citation"

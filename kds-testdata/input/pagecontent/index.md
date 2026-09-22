@@ -1,17 +1,18 @@
 # MII KDS Test Data
 
-This Implementation Guide provides comprehensive test data compliant with the German Medical Informatics Initiative (MII) Core Data Set (KDS) modules. The test data is designed to validate and test KDS-compliant systems and implementations.
+This Implementation Guide provides comprehensive test data compliant with the German Medical Informatics Initiative (MII) Core Data Set (KDS) modules — **2027 ballot generation**, built against the BOM package `de.medizininformatikinitiative.kerndatensatz.complete` (all 21 KDS modules pinned coherently).
 
-## Overview
+**829 example instances · 27 transaction bundles · every instance labeled `meta.security = HTEST` and carrying `meta.source`.**
 
-This repository contains **10 patient test cases** covering mainly core MII KDS modules, with each patient representing different medical scenarios and data complexity levels.
+## Two kinds of bundles
+
+- **11 patient bundles** (`mii-exa-test-data-bundle-pat-1 … -pat-11`): clinically coherent cross-module scenarios per patient (core modules: Person, Fall, Diagnose, Prozedur, Labor, Medikation, Consent).
+- **16 module bundles** (`mii-exa-test-data-bundle-<modul>-1`): technically complete, self-contained per-module test sets with their own patients — one per extension module: Bildgebung, Biobank, Dokument, ICU, **Kardiologie**, **Lungenfunktion**, Mikrobiologie, MolGen, MTB, Onkologie, Patho, PRO, Seltene, **Soziodemographie**, Studien, **Symptom** (bold = new with the 2027 generation).
 
 ## Test Patients
 
-Each patient has a complete **Bundle resource** containing all related clinical data:
-
-- **Patient-1**: Comprehensive reference patient
-- **Patient-2**: Lung cancer patient (deceased) with chemotherapy
+- **Patient-1**: Comprehensive reference patient — **fully structured medication dosage** (timing + doseAndRate, coded medications)
+- **Patient-2**: Lung cancer patient (deceased) with chemotherapy — **fully unstructured medication** (free-text dosage and medication, no Medication resources)
 - **Patient-3**: Colorectal cancer patient with extensive molecular genetics data
 - **Patient-4**: Gastric cancer patient with molecular genetics
 - **Patient-5**: Endometriosis patient with hormone therapy
@@ -20,82 +21,24 @@ Each patient has a complete **Bundle resource** containing all related clinical 
 - **Patient-8**: Myocardial infarction patient (deceased) with cardiac interventions
 - **Patient-9**: Ovarian cyst patient with laparoscopic surgery
 - **Patient-10**: Migraine patient with neurological diagnostics
+- **Patient-11**: Additional core-module scenario
 
-## Included MII KDS Modules
+Patients 1 and 2 deliberately form a pair covering both permitted `DosageDE` worlds (structured vs. free-text) of the Medikation module.
 
-### Core Modules (Basis-Module)
-- **Person**: Patient demographics, vital status, cause of death
-- **Consent**: Patient consent information
-- **Encounter**: Hospital encounters 
-- **Condition**: Diagnoses and medical conditions
+## Quality instrumentation
 
-### Clinical Modules
-- **Procedure**: Medical procedures and interventions
-- **Laboratory**: Lab requests, reports, and observations
-- **Medication**: Prescriptions, statements, administrations, and medication lists
-- **Biobank**: Specimen collection and biobanking data
+The repository doubles as a measuring instrument over the KDS profiles. Analyses (regenerated per release) live in the [repository docs](https://github.com/medizininformatik-initiative/mii-testdata/tree/main/docs):
 
-### Extension Modules
-- **Molecular Genetics (Molgen)**: Genomic testing, variants, studied regions, family history
+- **Profile coverage**: 360 of 450 instantiable BOM profiles covered (~80 %)
+- **Must-Support coverage** (`ms-coverage-2027.md`): populated vs. missing MS elements per module, plus populated non-MS paths as ballot feedback candidates
+- **Unfiltered validation master index** (`validation-master-index-2027-unfiltered.md`): all validator findings clustered by message id, classified testdata / upstream / offline artifact
+- **Migration notes** (`2027-dependency-upgrade-errors.md`): every breaking change 2026 → 2027 ballot and its resolution
+- **Per-module research notes** (`research-<modul>.md`): profile inventory and design decisions for newly authored modules
 
-### Supporting Resources
-- **Organization**: Healthcare organizations (hospital, laboratories, biobanks)
-- **Practitioner & PractitionerRole**: Healthcare professionals
-- **Device**: Medical devices and laboratory equipment
-- **Medication**: Drug formulations and substances
+## Delivery
 
-## Resource Statistics
+Generated test data is released as **NDJSON + zipped `fsh-generated`** via [GitHub release assets](https://github.com/medizininformatik-initiative/mii-testdata/releases). The bundles load cleanly into a FHIR server as transactions (verified against Blaze in CI).
 
-The test data includes FHIR resources across all patients:
+## Contributing
 
-| Resource Type | Count | Description |
-|---------------|-------|-------------|
-| Patient | 10 | Test patients with diverse demographics |
-| Bundle | 10 | Transaction bundles (one per patient) |
-| Condition | 20+ | Diagnoses including cancer, gastritis, migraine |
-| Procedure | 25+ | Medical procedures and interventions |
-| Observation | 80+ | Lab results, genomic findings |
-| MedicationRequest | 20+ | Medication prescriptions |
-| MedicationStatement | 25+ | Medication history |
-| MedicationAdministration | 20+ | Drug administrations |
-| Medication | 15+ | Drug formulations |
-| Specimen | 20+ | Biobank samples |
-| ServiceRequest | 15+ | Lab and procedure requests |
-| DiagnosticReport | 15+ | Clinical reports |
-| Organization | 5+ | Healthcare facilities |
-| Practitioner | 5+ | Healthcare professionals |
-
-## Usage
-
-### FHIR Bundle Resources
-
-Each patient's data is packaged in a complete **transaction Bundle** that can be:
-
-1. **Posted to a FHIR server** for testing CRUD operations
-2. **Used for validation** of KDS compliance
-3. **Referenced for implementation examples**
-
-Bundle resource names follow the pattern:
-- `Bundle/mii-exa-test-data-bundle-pat-1` through `Bundle/mii-exa-test-data-bundle-pat-10`
-
-### NDJSON Export
-
-The test data is also available as **NDJSON** (Newline Delimited JSON) format for:
-- Bulk data import/export testing
-- Performance testing
-
-Check the [GitHub repository releases](https://github.com/medizininformatik-initiative/mii-testdata/releases) for downloadable NDJSON files containing all test data bundles.
-
-### Building the Test Data
-
-To regenerate the test data:
-
-1. Install [SUSHI](https://fshschool.org/docs/sushi/installation/)
-2. Navigate to the `kds-testdata` folder
-3. Run `sushi build .`
-
-Generated FHIR resources are available in `/fsh-generated/resources/`
-
----
-
-*This test data is provided for testing and validation purposes only and does not represent real patient information.*
+See the [repository README](https://github.com/medizininformatik-initiative/mii-testdata) for test data requirements (full profile coverage, all Must-Support elements populated, referential integrity) and the contribution workflow.

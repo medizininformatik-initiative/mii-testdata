@@ -1,0 +1,74 @@
+{
+  "resourceType": "Observation",
+  "id": "mii-exa-test-data-lungenfunktion-fev-prov-2",
+  "meta": {
+    "security": [
+      {
+        "code": "HTEST",
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "display": "test health data"
+      }
+    ],
+    "source": "https://www.charite.de/fhir/lungenfunktion-messplatz",
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-fev"
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "procedure",
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "code": "59328004",
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20260701",
+        "display": "Forced expired volume in 1 second (observable entity)"
+      },
+      {
+        "code": "43255-9",
+        "system": "http://loinc.org",
+        "display": "FEV1 --post dose methacholine"
+      }
+    ]
+  },
+  "interpretation": [
+    {
+      "coding": [
+        {
+          "code": "L",
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "display": "Low"
+        }
+      ]
+    }
+  ],
+  "status": "final",
+  "subject": {
+    "reference": "Patient/mii-exa-test-data-lungenfunktion-patient-1"
+  },
+  "issued": "2025-02-18T12:00:00+01:00",
+  "valueQuantity": {
+    "value": 1.55,
+    "code": "L",
+    "system": "http://unitsofmeasure.org",
+    "unit": "L"
+  },
+  "method": {
+    "coding": [
+      {
+        "code": "249862003",
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20260701",
+        "display": "Sitting upright (finding)"
+      }
+    ]
+  }
+}

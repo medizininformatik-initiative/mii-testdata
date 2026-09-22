@@ -11,7 +11,8 @@
     ],
     "profile": [
       "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-diagnose-primaertumor"
-    ]
+    ],
+    "source": "https://www.charite.de/fhir/kds-testdata"
   },
   "extension": [
     {
@@ -92,6 +93,17 @@
           }
         ]
       }
+    }
+  ],
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "55342001",
+          "display": "Neoplastic disease"
+        }
+      ]
     }
   ],
   "recordedDate": "2024-01-05",

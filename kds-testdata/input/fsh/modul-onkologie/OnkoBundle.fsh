@@ -9,6 +9,7 @@ Usage: #example
 Title: "MII Onkologie Test Data Bundle"
 Description: "Vollständiges Transaktionsbundle mit allen Onkologie-Testdaten für den Upload auf einen FHIR-Server"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * type = #transaction
 * timestamp = "2025-01-03T10:00:00+01:00"
 
@@ -65,6 +66,15 @@ Description: "Vollständiges Transaktionsbundle mit allen Onkologie-Testdaten f�
 
 // TNM Klassifikation Grouper
 * insert AddBundleEntry(mii-exa-test-data-onko-tnm-klassifikation-1, Observation)
+* insert AddBundleEntry(mii-exa-test-data-onko-tnm-t-kategorie-2, Observation)
+* insert AddBundleEntry(mii-exa-test-data-onko-tnm-n-kategorie-2, Observation)
+* insert AddBundleEntry(mii-exa-test-data-onko-tnm-m-kategorie-2, Observation)
+* insert AddBundleEntry(mii-exa-test-data-onko-tnm-t-kategorie-3, Observation)
+* insert AddBundleEntry(mii-exa-test-data-onko-tnm-klassifikation-2, Observation)
+* insert AddBundleEntry(mii-exa-test-data-onko-tnm-klassifikation-synthetisiert-1, Observation)
+* insert AddBundleEntry(mii-exa-test-data-onko-prostata-gleason-gesamt-1, Observation)
+* insert AddBundleEntry(mii-exa-test-data-onko-tumormarker-1, Observation)
+* insert AddBundleEntry(mii-exa-test-data-organization-charite, Organization)
 
 // =====================================
 // STAGING (Chapter 9-12)

@@ -5,6 +5,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/St
 Usage: #example
 Description: "FamilyMemberHistory: Familienanamnese fuer BRAF-Mutation"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #completed
 * patient = Reference(mii-exa-test-data-molgen-patient-1)
 * date = "2022-04-07"
@@ -32,6 +33,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/St
 Usage: #example
 Description: "FamilyMemberHistory: Familienanamnese fuer Magenkarzinom"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #completed
 * patient = Reference(mii-exa-test-data-molgen-patient-2)
 * date = "2022-11-30"

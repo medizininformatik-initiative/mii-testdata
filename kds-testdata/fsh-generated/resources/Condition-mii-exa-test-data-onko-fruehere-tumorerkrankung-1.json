@@ -9,6 +9,7 @@
         "display": "test health data"
       }
     ],
+    "source": "https://www.charite.de/fhir/kds-testdata",
     "profile": [
       "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-fruehere-tumorerkrankung"
     ]
@@ -34,6 +35,15 @@
           "system": "http://snomed.info/sct",
           "code": "394593009",
           "display": "Medical oncology (qualifier value)"
+        }
+      ]
+    },
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "55342001",
+          "display": "Neoplastic disease"
         }
       ]
     }

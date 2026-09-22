@@ -9,6 +9,7 @@
         "display": "test health data"
       }
     ],
+    "source": "https://www.charite.de/fhir/kds-testdata",
     "profile": [
       "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-hueftumfang"
     ]
@@ -24,20 +25,25 @@
       ]
     }
   ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "284472007",
+        "display": "Hip circumference"
+      },
+      {
+        "code": "56063-1",
+        "system": "http://loinc.org",
+        "display": "Circumference.at maximal protrusion of gluteus muscles Pelvis"
+      }
+    ]
+  },
   "valueQuantity": {
     "unit": "cm",
     "system": "http://unitsofmeasure.org",
     "code": "cm",
     "value": 88
-  },
-  "code": {
-    "coding": [
-      {
-        "system": "http://loinc.org",
-        "code": "56063-1",
-        "display": "Circumference.at maximal protrusion of gluteus muscles Pelvis"
-      }
-    ]
   },
   "status": "final",
   "subject": {

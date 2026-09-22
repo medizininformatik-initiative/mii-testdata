@@ -4,6 +4,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 Usage: #example
 Description: "MedicationRequest: Dalbavancin 1500 mg IV als 30-minütige Infusion"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 //* meta.profile[0] = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationRequest|2.0.0"
 * identifier[0].system = "https://www.charite.de/fhir/sid/MedicationOrders"
 * identifier[0].value = "MO_0000001"
@@ -13,7 +14,6 @@ Description: "MedicationRequest: Dalbavancin 1500 mg IV als 30-minütige Infusio
 * subject = Reference(mii-exa-test-data-patient-1)
 * encounter = Reference(mii-exa-test-data-patient-1-encounter-1)
 * authoredOn = "2024-02-16T08:37:00+01:00"
-* dosageInstruction.text = "Dalbavancin 1500 mg als 30-minütige Infusion"
 * dosageInstruction.timing.event = "2024-02-16"
 * dosageInstruction.route = $standardterms#20045000 "Intravenous use"
 * dosageInstruction.doseAndRate.doseQuantity = 1500 $ucum#mg "mg"
@@ -27,6 +27,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 Usage: #example
 Description: "MedicationRequest: Dalbavancin 1500 mg IV als 30-minütige Infusion"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 //* meta.profile[0] = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationRequest|2.0.0"
 * identifier[0].system = "https://www.charite.de/fhir/sid/MedicationOrders"
 * identifier[0].value = "MO_0000002"
@@ -36,7 +37,6 @@ Description: "MedicationRequest: Dalbavancin 1500 mg IV als 30-minütige Infusio
 * subject = Reference(mii-exa-test-data-patient-1)
 * encounter = Reference(mii-exa-test-data-patient-1-encounter-1)
 * authoredOn = "2024-02-16T08:37:00+01:00"
-* dosageInstruction.text = "Dalbavancin 1500 mg als 30-minütige Infusion"
 * dosageInstruction.timing.event = "2024-02-16"
 * dosageInstruction.route = $standardterms#20045000 "Intravenous use"
 * dosageInstruction.doseAndRate.doseQuantity = 1500 $ucum#mg "mg"
@@ -49,6 +49,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 Usage: #example
 Description: "MedicationRequest: Propofol 6.5 mg/min IV via Perfusor"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 //* meta.profile[0] = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationRequest|2.0.0"
 * identifier[0].system = "https://www.charite.de/fhir/sid/MedicationOrders"
 * identifier[0].value = "MO_0000003"
@@ -58,7 +59,6 @@ Description: "MedicationRequest: Propofol 6.5 mg/min IV via Perfusor"
 * subject = Reference(mii-exa-test-data-patient-1)
 * encounter = Reference(mii-exa-test-data-patient-1-encounter-2)
 * authoredOn = "2024-02-20T09:55:00+01:00"
-* dosageInstruction.text = "Propofol 6.5 mg/min IV via Perfusor"
 * dosageInstruction.timing.event = "2024-02-20T10:00:00+01:00"
 * dosageInstruction.route = $standardterms#20045000 "Intravenous use"
 * dosageInstruction.method = $sct#129331004 "Perfusion - action (qualifier value)"
@@ -70,6 +70,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 Usage: #example
 Description: "MedicationRequest: Propofol 6.5 mg/min IV via Perfusor"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 //* meta.profile[0] = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationRequest|2.0.0"
 * identifier[0].system = "https://www.charite.de/fhir/sid/MedicationOrders"
 * identifier[0].value = "MO_0000004"
@@ -79,7 +80,6 @@ Description: "MedicationRequest: Propofol 6.5 mg/min IV via Perfusor"
 * subject = Reference(mii-exa-test-data-patient-1)
 * encounter = Reference(mii-exa-test-data-patient-1-encounter-2)
 * authoredOn = "2024-02-20T10:00:00+01:00"
-* dosageInstruction.text = "Propofol 6.5 mg/min IV via Perfusor"
 * dosageInstruction.timing.event = "2024-02-20T10:00:00+01:00"
 * dosageInstruction.route = $standardterms#20045000 "Intravenous use"
 * dosageInstruction.method = $sct#129331004 "Perfusion - action (qualifier value)"
@@ -94,6 +94,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 Usage: #example
 Description: "MedicationRequest: Metamizol 500-1000 mg oral bei Bedarf"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 //* meta.profile[0] = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationRequest|2.0.0"
 * identifier[0].system = "https://www.charite.de/fhir/sid/MedicationOrders"
 * identifier[0].value = "MO_0000005"
@@ -122,21 +123,16 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 Usage: #example
 Description: "MedicationRequest: Morphin 10mg oral alle 6 Stunden bei Bedarf"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * identifier[0].system = "https://www.charite.de/fhir/sid/MedicationOrders"
 * identifier[0].value = "MO_0000006"
 * status = #active
 * intent = #order
-* medicationReference = Reference(mii-exa-test-data-medication-morphin)
+* medicationCodeableConcept.text = "Morphin 10 mg Tabletten"
 * subject = Reference(mii-exa-test-data-patient-2)
 * encounter = Reference(mii-exa-test-data-patient-2-encounter-1)
 * authoredOn = "2024-03-06T08:00:00+01:00"
-* dosageInstruction.text = "Morphin 10mg alle 6 Stunden bei Bedarf"
-* dosageInstruction.route = $standardterms#20053000 "Oral use"
-* dosageInstruction.doseAndRate.doseQuantity = 10 $ucum#mg "mg"
-* dosageInstruction.timing.repeat.frequency = 4
-* dosageInstruction.timing.repeat.period = 1
-* dosageInstruction.timing.repeat.periodUnit = #d
-* dosageInstruction.asNeededBoolean = true
+* dosageInstruction.text = "Morphin 10 mg oral, alle 6 Stunden bei Bedarf"
 * substitution.allowedBoolean = true
 
 Instance: mii-exa-test-data-patient-2-medrequest-2
@@ -144,20 +140,16 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 Usage: #example
 Description: "MedicationRequest: Carboplatin 450mg IV über 1 Stunde"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * identifier[0].system = "https://www.charite.de/fhir/sid/MedicationOrders"
 * identifier[0].value = "MO_0000007"
 * status = #active
 * intent = #order
-* medicationReference = Reference(mii-exa-test-data-medication-carboplatin)
+* medicationCodeableConcept.text = "Carboplatin Infusionsloesung 450 mg"
 * subject = Reference(mii-exa-test-data-patient-2)
 * encounter = Reference(mii-exa-test-data-patient-2-encounter-1)
 * authoredOn = "2024-03-07T10:00:00+01:00"
-* dosageInstruction.text = "Carboplatin 450mg IV über 1 Stunde"
-* dosageInstruction.timing.event = "2024-03-07T10:00:00+01:00"
-* dosageInstruction.route = $standardterms#20045000 "Intravenous use"
-* dosageInstruction.doseAndRate.doseQuantity = 450 $ucum#mg "mg"
-* dosageInstruction.doseAndRate.rateRatio.numerator = 450 $ucum#mg "mg"
-* dosageInstruction.doseAndRate.rateRatio.denominator = 1 $ucum#h "h"
+* dosageInstruction.text = "Carboplatin 450 mg intravenös über 1 Stunde, Gabe am 07.03.2024"
 * substitution.allowedBoolean = false
 
 Instance: mii-exa-test-data-patient-2-medrequest-3
@@ -165,20 +157,16 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 Usage: #example
 Description: "MedicationRequest: Paclitaxel 175mg IV über 3 Stunden"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * identifier[0].system = "https://www.charite.de/fhir/sid/MedicationOrders"
 * identifier[0].value = "MO_0000008"
 * status = #active
 * intent = #order
-* medicationReference = Reference(mii-exa-test-data-medication-paclitaxel)
+* medicationCodeableConcept.text = "Paclitaxel Infusionsloesung 175 mg"
 * subject = Reference(mii-exa-test-data-patient-2)
 * encounter = Reference(mii-exa-test-data-patient-2-encounter-1)
 * authoredOn = "2024-03-07T10:30:00+01:00"
-* dosageInstruction.text = "Paclitaxel 175mg IV über 3 Stunden"
-* dosageInstruction.timing.event = "2024-03-07T10:30:00+01:00"
-* dosageInstruction.route = $standardterms#20045000 "Intravenous use"
-* dosageInstruction.doseAndRate.doseQuantity = 175 $ucum#mg "mg"
-* dosageInstruction.doseAndRate.rateRatio.numerator = 175 $ucum#mg "mg"
-* dosageInstruction.doseAndRate.rateRatio.denominator = 3 $ucum#h "h"
+* dosageInstruction.text = "Paclitaxel 175 mg intravenös über 3 Stunden, Gabe am 07.03.2024"
 * substitution.allowedBoolean = false
 
 // Patient-3 MedicationRequests
@@ -187,6 +175,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 Usage: #example
 Description: "MedicationRequest: 5-FU 1000mg/m² IV über 46 Stunden"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * identifier[0].system = "https://www.charite.de/fhir/sid/MedicationOrders"
 * identifier[0].value = "MO_0000009"
 * status = #active
@@ -208,6 +197,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 Usage: #example
 Description: "MedicationRequest: Oxaliplatin 85mg/m² IV über 2 Stunden"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * identifier[0].system = "https://www.charite.de/fhir/sid/MedicationOrders"
 * identifier[0].value = "MO_0000010"
 * status = #active
@@ -230,6 +220,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 Usage: #example
 Description: "MedicationRequest: Cisplatin 75mg/m² IV über 2 Stunden"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * identifier[0].system = "https://www.charite.de/fhir/sid/MedicationOrders"
 * identifier[0].value = "MO_0000011"
 * status = #active
@@ -251,6 +242,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 Usage: #example
 Description: "MedicationRequest: Omeprazol 20mg 1x täglich morgens"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * identifier[0].system = "https://www.charite.de/fhir/sid/MedicationOrders"
 * identifier[0].value = "MO_0000012"
 * status = #active
@@ -274,6 +266,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 Usage: #example
 Description: "MedicationRequest: Leuprorelin 3,75mg s.c. alle 4 Wochen"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * identifier[0].system = "https://www.charite.de/fhir/sid/MedicationOrders"
 * identifier[0].value = "MO_0000013"
 * status = #active
@@ -295,6 +288,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 Usage: #example
 Description: "MedicationRequest: Ibuprofen 400mg bis zu 3x täglich bei Bedarf"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * identifier[0].system = "https://www.charite.de/fhir/sid/MedicationOrders"
 * identifier[0].value = "MO_0000014"
 * status = #active
@@ -318,6 +312,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 Usage: #example
 Description: "MedicationRequest: Pantoprazol 40mg 1x täglich morgens"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * identifier[0].system = "https://www.charite.de/fhir/sid/MedicationOrders"
 * identifier[0].value = "MO_0000015"
 * status = #active
@@ -340,6 +335,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 Usage: #example
 Description: "MedicationRequest: Amoxicillin 500mg 3x täglich"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * identifier[0].system = "https://www.charite.de/fhir/sid/MedicationOrders"
 * identifier[0].value = "MO_0000016"
 * status = #active
@@ -361,6 +357,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 Usage: #example
 Description: "MedicationRequest: Clarithromycin 250mg 2x täglich"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * identifier[0].system = "https://www.charite.de/fhir/sid/MedicationOrders"
 * identifier[0].value = "MO_0000017"
 * status = #active
@@ -383,6 +380,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 Usage: #example
 Description: "MedicationRequest: Amoxicillin/Clavulansäure 1,2g IV alle 8 Stunden"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * identifier[0].system = "https://www.charite.de/fhir/sid/MedicationOrders"
 * identifier[0].value = "MO_0000018"
 * status = #active
@@ -404,6 +402,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 Usage: #example
 Description: "MedicationRequest: Salbutamol 2 Hubs inhalativ bei Bedarf"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * identifier[0].system = "https://www.charite.de/fhir/sid/MedicationOrders"
 * identifier[0].value = "MO_0000019"
 * status = #active
@@ -427,6 +426,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 Usage: #example
 Description: "MedicationRequest: Heparin 5000 IE s.c. alle 12 Stunden"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * identifier[0].system = "https://www.charite.de/fhir/sid/MedicationOrders"
 * identifier[0].value = "MO_0000020"
 * status = #active
@@ -448,6 +448,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 Usage: #example
 Description: "MedicationRequest: Metoprolol 25mg morgens, 50mg abends (2 dosageInstructions, gleiche Einheit mg)"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * identifier[0].system = "https://www.charite.de/fhir/sid/MedicationOrders"
 * identifier[0].value = "MO_0000021"
 * status = #active
@@ -481,6 +482,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 Usage: #example
 Description: "MedicationRequest: Atorvastatin 40mg 1x täglich abends"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * identifier[0].system = "https://www.charite.de/fhir/sid/MedicationOrders"
 * identifier[0].value = "MO_0000022"
 * status = #active
@@ -504,6 +506,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 Usage: #example
 Description: "MedicationRequest: Verhütungspille 1 Tablette täglich"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * identifier[0].system = "https://www.charite.de/fhir/sid/MedicationOrders"
 * identifier[0].value = "MO_0000023"
 * status = #active
@@ -525,6 +528,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 Usage: #example
 Description: "MedicationRequest: Paracetamol 500mg bis zu 4x täglich bei Bedarf"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * identifier[0].system = "https://www.charite.de/fhir/sid/MedicationOrders"
 * identifier[0].value = "MO_0000020"
 * status = #active
@@ -548,6 +552,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 Usage: #example
 Description: "MedicationRequest: Sumatriptan 50mg bei Migräne-Attacke"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * identifier[0].system = "https://www.charite.de/fhir/sid/MedicationOrders"
 * identifier[0].value = "MO_0000024"
 * status = #active
@@ -570,6 +575,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 Usage: #example
 Description: "MedicationRequest: Topiramat 50mg 2x täglich zur Prophylaxe"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * identifier[0].system = "https://www.charite.de/fhir/sid/MedicationOrders"
 * identifier[0].value = "MO_0000025"
 * status = #active

@@ -47,36 +47,36 @@ jobs:
 
     - name: Install yq
       run: |
-        wget -qO /usr/local/bin/yq https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64
+        wget -qO /usr/local/bin/yq https://github.com/mikefarah/yq/releases/download/${YQ_VERSION}/yq_linux_amd64
         chmod +x /usr/local/bin/yq
+      env:
+        YQ_VERSION: v4.44.3
+
+    # Die complete-BOM selbst in den Cache entpacken: der build-cache-Workflow
+    # des Stores leitet name#version aus dem DATEINAMEN ab und zerlegt
+    # Prerelease-Versionen mit Bindestrich (2027.0.0-ballot.19) falsch.
+    # Wir ziehen das tgz direkt aus main und entpacken es korrekt.
+    - name: Install complete-BOM into package cache
+      run: |
+        pkg="de.medizininformatikinitiative.kerndatensatz.complete"
+        ver="$(yq eval '.dependencies["'$pkg'"].version' kds-testdata/sushi-config.yaml)"
+        target="$HOME/.fhir/packages/${pkg}#${ver}"
+        rm -rf "$target" && mkdir -p "$target"
+        curl -fsSL "https://raw.githubusercontent.com/medizininformatik-initiative/fhir-package-store/main/package-tarballs/${pkg}-${ver}.tgz"           | tar -xz -C "$target"
+        test -f "$target/package/package.json"
 
     - name: Install sushi
-      run: npm install -g fsh-sushi
+      run: npm install -g fsh-sushi@${SUSHI_VERSION}
+      env:
+        SUSHI_VERSION: 3.20.1
 
-    - name: Initial build
-      id: initial-build
-      run: |
-        sushi build --log-level warn . || echo HAD_ERRORS='true' >> "$GITHUB_OUTPUT"
+    # Seit der 2027-Ballot-Generation liefern die KDS-Pakete Snapshots mit;
+    # der fruehere ICU-inflate-Workaround (Firely Terminal) ist entfernt.
+    # Alle MII-Module kommen ueber die BOM de.medizininformatikinitiative.
+    # kerndatensatz.complete aus dem fhir-package-store Cache.
+    - name: Build
+      run: sushi build --log-level warn .
       working-directory: ./kds-testdata
-
-    # - uses: actions/setup-dotnet@v4
-    #   if: ${{ steps.initial-build.outputs.HAD_ERRORS == 'true' }}
-    #   with:
-    #     dotnet-version: '8.0.x'
-
-    # - name: Install firely
-    #   if: ${{ steps.initial-build.outputs.HAD_ERRORS == 'true' }}
-    #   run: dotnet tool install -g firely.terminal
-
-    # - name: Create FHIR package snapshots
-    #   if: ${{ steps.initial-build.outputs.HAD_ERRORS == 'true' }}
-    #   run: for dep in $(yq eval '.' sushi-config.yaml -o json | jq -r '.dependencies | keys[]'); do fhir inflate --package "$dep"; done
-    #   working-directory: ./kds-testdata
-
-    # - name: Final build
-    #   if: ${{ steps.initial-build.outputs.HAD_ERRORS == 'true' }}
-    #   run: sushi build --log-level warn  .
-    #   working-directory: ./kds-testdata
 
     - name: Generate timestamp
       id: timestamp
@@ -159,15 +159,30 @@ jobs:
       if: always()
       run: docker compose -f blaze/blaze.yml down -v
 
-  JAVA_FHIR_VALIDATION:
-    uses: medizininformatik-initiative/kerndatensatz-meta/.github/workflows/ci_java_validation.yml@master
+  # Die aufgerufene Workflow-Definition deklariert ihre Secrets als required;
+  # fehlen sie (z.B. in Forks), stirbt der Job ohne einen einzigen Step.
+  # Der Guard prueft die Verfuegbarkeit vorab (Muster: kerndatensatz-lungenfunktion).
+  java-validation-guard:
+    runs-on: ubuntu-latest
     needs: build-kds-testdata
-    # Only run validation in these scenarios:
     if: |
       (github.event_name == 'workflow_dispatch' && github.event.inputs.run_validation == 'true') ||
       github.event_name == 'pull_request' ||
       startsWith(github.ref, 'refs/tags/v') ||
       contains(github.event.head_commit.message, '[validate]')
+    outputs:
+      has-secrets: ${{ steps.check.outputs.has-secrets }}
+    steps:
+    - id: check
+      run: echo "has-secrets=${{ env.CERT != '' }}" >> "$GITHUB_OUTPUT"
+      env:
+        CERT: ${{ secrets.CDS_DEV_CLIENT_CERT }}
+
+  JAVA_FHIR_VALIDATION:
+    # Auf Commit-SHA gepinnt statt @master (Reproduzierbarkeit; Muster der Modul-Repos)
+    uses: medizininformatik-initiative/kerndatensatz-meta/.github/workflows/ci_java_validation.yml@1db2e534704d92e5ee0cde663ce3e7ccd8825fa7
+    needs: java-validation-guard
+    if: needs.java-validation-guard.outputs.has-secrets == 'true'
     with:
       ref: ${{ github.event_name == 'pull_request' && github.event.pull_request.head.ref || github.ref_name }}
       PATH_TO_CONFORMANCE_RESOURCES: ./kds-testdata/fsh-generated/resources
@@ -177,6 +192,133 @@ jobs:
       JAVA_VALIDATOR_VERSION: ${{ vars.JAVA_VALIDATOR_VERSION }}
       working-directory: ./kds-testdata
     secrets: inherit
+
+
+  # Zwei parallele Validierungslaeufe — MIT und OHNE advisor.json — als
+  # staendige Kontrolle, welche Fehler der Advisor tatsaechlich wegfiltert
+  # (Report in der Job-Summary, Rohdaten als Artefakte). Terminologie laeuft
+  # wie beim meta-Workflow ueber den SU-TermServ (nginx-mTLS-Proxy, Konfig
+  # vendored in su-termserv-nginx.conf); ohne Secrets Fallback auf -tx n/a.
+  # vars.JAVA_VALIDATION_OPTIONS wird wie im meta-Workflow angehaengt.
+  validation-advisor-control:
+    runs-on: ubuntu-latest
+    needs: build-kds-testdata
+    if: |
+      (github.event_name == 'workflow_dispatch' && github.event.inputs.run_validation == 'true') ||
+      github.event_name == 'pull_request' ||
+      startsWith(github.ref, 'refs/tags/v') ||
+      contains(github.event.head_commit.message, '[validate]')
+    env:
+      VALIDATOR_VERSION: 6.7.10
+    steps:
+    - name: Checkout Project
+      uses: actions/checkout@v4
+
+    - name: Download FHIR cache
+      uses: actions/checkout@v4
+      with:
+        repository: medizininformatik-initiative/fhir-package-store
+        ref: cache-store
+        path: .fhir
+
+    - name: Link .fhir cache to ~/.fhir
+      run: |
+        mkdir -p ~/.fhir
+        cp -r .fhir/* ~/.fhir/
+
+    - uses: actions/setup-java@v4
+      with:
+        distribution: temurin
+        java-version: "17"
+
+    - name: Start SU-TermServ proxy (falls Zertifikat vorhanden)
+      id: tx
+      env:
+        CDS_DEV_CLIENT_CERT: ${{ secrets.CDS_DEV_CLIENT_CERT }}
+        CDS_DEV_CLIENT_KEY: ${{ secrets.CDS_DEV_CLIENT_KEY }}
+        CDS_DEV_CLIENT_CERT_PASSWORD: ${{ secrets.CDS_DEV_CLIENT_CERT_PASSWORD }}
+      run: |
+        if [ -z "$CDS_DEV_CLIENT_CERT" ]; then
+          echo "tx=n/a" >> "$GITHUB_OUTPUT"
+          echo "::notice::Kein SU-TermServ-Zertifikat konfiguriert — Advisor-Kontrolle laeuft mit -tx n/a."
+          exit 0
+        fi
+        mkdir -p nginx/certs
+        echo "$CDS_DEV_CLIENT_CERT" | base64 -d > nginx/certs/client-cert.pem
+        echo "$CDS_DEV_CLIENT_KEY" | base64 -d > nginx/certs/client-key-encrypted.key
+        openssl rsa -in nginx/certs/client-key-encrypted.key \
+          -out nginx/certs/client-key.key -passin env:CDS_DEV_CLIENT_CERT_PASSWORD
+        docker run -d --name nginx-proxy \
+          -v "$PWD/.github/workflows/su-termserv-nginx.conf:/etc/nginx/nginx.conf:ro" \
+          -v "$PWD/nginx/certs:/etc/nginx/certs:ro" \
+          -p 8090:80 nginx:alpine
+        sleep 5
+        curl -fsS -o /dev/null "http://127.0.0.1:8090/fhir/metadata" \
+          && echo "tx=http://127.0.0.1:8090/fhir" >> "$GITHUB_OUTPUT" \
+          || { echo "::warning::SU-TermServ-Proxy nicht erreichbar — Fallback -tx n/a"; echo "tx=n/a" >> "$GITHUB_OUTPUT"; }
+
+    - name: Cache validator jar
+      id: cache-validator
+      uses: actions/cache@v4
+      with:
+        path: validator_cli.jar
+        key: validator-jar-${{ env.VALIDATOR_VERSION }}
+
+    - name: Cache terminology responses
+      uses: actions/cache@v4
+      with:
+        path: .txcache
+        key: advisor-txcache-v1-${{ github.run_id }}
+        restore-keys: |
+          advisor-txcache-v1-
+
+    - name: Download validator and complete-BOM tgz
+      run: |
+        if [ ! -f validator_cli.jar ]; then
+        curl -fsSL -o validator_cli.jar \
+          "https://github.com/hapifhir/org.hl7.fhir.core/releases/download/${VALIDATOR_VERSION}/validator_cli.jar"
+        fi
+        pkg="de.medizininformatikinitiative.kerndatensatz.complete"
+        ver="$(yq eval '.dependencies["de.medizininformatikinitiative.kerndatensatz.complete"].version' kds-testdata/sushi-config.yaml)"
+        curl -fsSL -o complete.tgz \
+          "https://raw.githubusercontent.com/medizininformatik-initiative/fhir-package-store/main/package-tarballs/${pkg}-${ver}.tgz"
+
+    - name: Validate (unfiltered + filtered)
+      env:
+        TX: ${{ steps.tx.outputs.tx }}
+        EXTRA_OPTIONS: ${{ vars.JAVA_VALIDATION_OPTIONS }}
+      run: |
+        mkdir -p .txcache
+        common=(fsh-generated/resources -version 4.0.1 \
+          -ig ../complete.tgz -ig de.basisprofil.r4#1.6.0 \
+          -ig de.einwilligungsmanagement#2.0.4 -ig hl7.fhir.uv.sdc#4.0.0 \
+          -ig hl7.fhir.uv.genomics-reporting#3.0.0 -ig eu.miabis.r4#1.3.0 \
+          -tx "$TX" -txCache ../.txcache $EXTRA_OPTIONS)
+        cd kds-testdata
+        java -Xmx6g -jar ../validator_cli.jar "${common[@]}" \
+          -output ../validation-unfiltered.json || true
+        java -Xmx6g -jar ../validator_cli.jar "${common[@]}" \
+          -advisor-file advisor.json -output ../validation-filtered.json || true
+
+    - name: Stop SU-TermServ proxy
+      if: always()
+      run: docker rm -f nginx-proxy 2>/dev/null || true
+
+    - name: Advisor diff report
+      run: |
+        python3 scripts/compare-advisor-runs.py \
+          validation-unfiltered.json validation-filtered.json | tee advisor-diff.md
+        cat advisor-diff.md >> "$GITHUB_STEP_SUMMARY"
+
+    - name: Upload validation outputs
+      uses: actions/upload-artifact@v4
+      with:
+        name: validation-advisor-control
+        path: |
+          validation-unfiltered.json
+          validation-filtered.json
+          advisor-diff.md
+        compression-level: 9
 
   release:
     runs-on: ubuntu-latest

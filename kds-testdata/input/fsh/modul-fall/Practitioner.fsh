@@ -3,6 +3,7 @@ InstanceOf: Practitioner
 Usage: #example
 Description: "Practitioner: Dr. Rahel Hirsch"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * active = true
 * name[0].family = "Hirsch"
 * name[0].given[0] = "Rahel"
@@ -12,6 +13,7 @@ InstanceOf: Practitioner
 Usage: #example
 Description: "Practitioner: Dr. Robert Koch"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * active = true
 * name.use = #official
 * name.family = "Koch"

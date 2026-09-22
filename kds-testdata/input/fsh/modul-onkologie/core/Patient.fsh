@@ -7,6 +7,7 @@ InstanceOf: Patient
 Usage: #example
 Description: "Onkologie Test Patient - Synthetic patient for comprehensive oncology testing"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * identifier.system = "https://www.charite.de/fhir/sid/patientenidentifikation"
 * identifier.value = "ONKO-TEST-001"
 * name.family = "Musterperson"
@@ -19,6 +20,7 @@ InstanceOf: Encounter
 Usage: #example
 Description: "Onkologie Test Encounter - Inpatient oncology encounter"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #finished
 * class = http://terminology.hl7.org/CodeSystem/v3-ActCode#IMP "inpatient encounter"
 * subject = Reference(mii-exa-test-data-onko-patient-1)

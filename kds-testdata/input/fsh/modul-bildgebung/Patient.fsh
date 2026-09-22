@@ -7,6 +7,7 @@ InstanceOf: Patient
 Usage: #example
 Description: "Bildgebung Test Patient"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * identifier.system = "https://www.charite.de/fhir/sid/patientenidentifikation"
 * identifier.value = "BILD-TEST-001"
 * name.family = "Mustermann"
@@ -19,6 +20,7 @@ InstanceOf: Encounter
 Usage: #example
 Description: "Bildgebung Test Encounter"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #finished
 * class = http://terminology.hl7.org/CodeSystem/v3-ActCode#IMP "inpatient encounter"
 * subject = Reference(mii-exa-test-data-bildgebung-patient-1)
@@ -31,6 +33,7 @@ InstanceOf: Condition
 Usage: #example
 Description: "Bildgebung Diagnose - Lungentumor"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * clinicalStatus = http://terminology.hl7.org/CodeSystem/condition-clinical#active
 * verificationStatus = http://terminology.hl7.org/CodeSystem/condition-ver-status#confirmed
 * code.coding = http://fhir.de/CodeSystem/bfarm/icd-10-gm#C34.1 "Bösartige Neubildung: Oberlappen (-Bronchus)"
@@ -41,6 +44,7 @@ InstanceOf: Observation
 Usage: #example
 Description: "Bildgebung Lab - Tumorgröße"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * code = http://loinc.org#21889-1 "Size Tumor"
 * subject = Reference(mii-exa-test-data-bildgebung-patient-1)
@@ -51,6 +55,7 @@ InstanceOf: MedicationRequest
 Usage: #example
 Description: "Bildgebung MedRequest - Kontrastmittel"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #completed
 * intent = #order
 * medicationReference = Reference(mii-exa-test-data-medication-dalbavancin)

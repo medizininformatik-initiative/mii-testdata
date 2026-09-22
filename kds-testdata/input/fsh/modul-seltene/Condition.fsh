@@ -12,6 +12,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/S
 Usage: #example
 Description: "Clinical Diagnosis: Marfan syndrome - maximum MS element coverage"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * clinicalStatus = $condition-clinical#active
 * verificationStatus = $condition-ver-status#confirmed
 * category = $cs-hl7-condition-category#encounter-diagnosis
@@ -51,6 +52,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/S
 Usage: #example
 Description: "Genetic Diagnosis: Marfan syndrome (FBN1 variant) - maximum MS element coverage including penetrance"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 // Penetrance extension (CodeableConcept variant)
 * extension[+].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-ex-seltene-penetrance"
 * extension[=].valueCodeableConcept = $HPO#HP:0003829 "Incomplete penetrance"
@@ -88,6 +90,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/S
 Usage: #example
 Description: "Symptom Condition: Tall stature - all 4 code slices (HPO, SNOMED, ICD-10-GM, MONDO), all MS elements"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * identifier[+].system = "https://www.charite.de/fhir/sid/seltene-symptom"
 * identifier[=].value = "SE-SYMPTOM-2025-001"
 * clinicalStatus = $condition-clinical#active "Active"
@@ -121,6 +124,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/S
 Usage: #example
 Description: "Symptom Condition: Aortic root dilatation - tests onsetDateTime/abatementDateTime slices"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * identifier[+].system = "https://www.charite.de/fhir/sid/seltene-symptom"
 * identifier[=].value = "SE-SYMPTOM-2025-002"
 * clinicalStatus = $condition-clinical#inactive "Inactive"

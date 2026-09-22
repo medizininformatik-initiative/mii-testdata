@@ -4,10 +4,11 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/modul-studie/Struct
 Usage: #example
 Description: "ServiceRequest: Studieneinschluss-Anfrage für Patient-1 in MII-BIOMARKER-2024"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #active
 * intent = #proposal
-* category = $sct#110465008 "Clinical trial (procedure)"
-* code = $sct#702475000 "Referral to clinical trial (procedure)"
+* category = $sct#110465008 "Clinical trial"
+* code = $sct#702475000 "Referral to clinical trial"
 * subject = Reference(mii-exa-test-data-studien-patient-1)
 * encounter = Reference(mii-exa-test-data-studien-encounter-1)
 * authoredOn = "2024-03-10"

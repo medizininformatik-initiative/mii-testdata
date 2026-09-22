@@ -4,6 +4,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/S
 Usage: #example
 Description: "Substance: Edetic acid"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 //* meta.profile[0] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Substance|1.0.8"
 * category = $substance-category#chemical "Chemical"
 * code = $sct#69519002 "Edetic acid (substance)"

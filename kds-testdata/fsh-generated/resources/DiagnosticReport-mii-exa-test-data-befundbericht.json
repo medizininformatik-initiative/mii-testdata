@@ -9,6 +9,7 @@
         "display": "test health data"
       }
     ],
+    "source": "https://www.charite.de/fhir/kds-testdata",
     "profile": [
       "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologischer-befund"
     ]
@@ -23,6 +24,7 @@
       "coding": [
         {
           "system": "http://snomed.info/sct",
+          "version": "http://snomed.info/sct/900000000000207008/version/20260701",
           "code": "4201000179104",
           "display": "Imaging report (record artifact)"
         }

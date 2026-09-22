@@ -3,6 +3,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebun
 Usage: #example
 Description: "Observation: Radiologische Beobachtung"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 //* meta.profile = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologische-beobachtung"
 * extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-series-uid].valueId = "1.2.34.5.6789.1.2.34.5678912.34567891234567891234"
 * extension[https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-sop-instanz-uid].valueId = "1.2.34.5.6789.1.2.3.45678.9123456789123456789123456789"

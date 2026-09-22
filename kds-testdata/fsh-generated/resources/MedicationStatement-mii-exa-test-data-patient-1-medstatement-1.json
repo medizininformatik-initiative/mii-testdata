@@ -9,6 +9,7 @@
         "display": "test health data"
       }
     ],
+    "source": "https://www.charite.de/fhir/kds-testdata",
     "profile": [
       "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement"
     ]
@@ -58,6 +59,16 @@
           "periodUnit": "d"
         }
       },
+      "doseAndRate": [
+        {
+          "doseQuantity": {
+            "value": 100,
+            "code": "mg",
+            "system": "http://unitsofmeasure.org",
+            "unit": "mg"
+          }
+        }
+      ],
       "route": {
         "coding": [
           {
@@ -66,8 +77,7 @@
             "display": "Oral use"
           }
         ]
-      },
-      "text": "ASS 100 mg 1x täglich mittags eine Tablette oral"
+      }
     }
   ],
   "status": "active",

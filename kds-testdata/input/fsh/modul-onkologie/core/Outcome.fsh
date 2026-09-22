@@ -8,6 +8,7 @@ InstanceOf: MII_PR_Onko_Verlauf
 Usage: #example
 Description: "Onkologie Test Verlauf - Vollremission nach Therapie"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * identifier.value = "VERLAUF-001"
 * code = $SCT#396432002 "Status of regression of tumor (observable entity)"
@@ -30,6 +31,7 @@ InstanceOf: MII_PR_Onko_Verlauf
 Usage: #example
 Description: "Onkologie Test Verlauf - Teilremission mit Lymphknotenprogress"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * code = $SCT#396432002 "Status of regression of tumor (observable entity)"
 * subject = Reference(mii-exa-test-data-onko-patient-1)
@@ -49,6 +51,7 @@ InstanceOf: MII_PR_Onko_Nebenwirkung_Adverse_Event
 Usage: #example
 Description: "Onkologie Test Nebenwirkung - Fatigue nach Chemotherapie"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * actuality = #actual
 * event.coding[meddra].system = "https://www.meddra.org"
 * event.coding[meddra].code = #10016256
@@ -68,6 +71,7 @@ InstanceOf: MII_PR_Onko_Nebenwirkung_Adverse_Event
 Usage: #example
 Description: "Onkologie Test Nebenwirkung - Polyneuropathie nach Strahlentherapie"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * actuality = #actual
 * event.coding[meddra].system = "https://www.meddra.org"
 * event.coding[meddra].code = #10032759
@@ -84,6 +88,7 @@ InstanceOf: MII_PR_Onko_Tod
 Usage: #example
 Description: "Onkologie Test Tod - Verstorben an Tumorerkrankung"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * code = $SCT#184305005 "Cause of death"
 * subject = Reference(mii-exa-test-data-onko-patient-1)
@@ -91,7 +96,9 @@ Description: "Onkologie Test Tod - Verstorben an Tumorerkrankung"
 * focus = Reference(mii-exa-test-data-onko-diagnose-1)
 * effectiveDateTime = "2024-05-15"
 * interpretation = $mii-cs-onko-tod#J "Ja, die Person ist an einer Tumorerkrankung oder Folge einer Tumorerkrankung (einschließlich Behandlungskomplikation) verstorben."
-* valueCodeableConcept = $ICD10GM|2024#C56 "Bösartige Neubildung des Ovars"
+// ICD-10-GM-Version muss zur ValueSet-Version der Onko-2027-Profile passen (2026).
+// ICD-10-GM 2027 ist noch nicht veroeffentlicht; bei Erscheinen upstream pruefen.
+* valueCodeableConcept = $ICD10GM|2026#C56 "Bösartige Neubildung des Ovars"
 
 // Alternative Tod - Unknown cause
 Instance: mii-exa-test-data-onko-tod-2
@@ -99,6 +106,7 @@ InstanceOf: MII_PR_Onko_Tod
 Usage: #example
 Description: "Onkologie Test Tod - Todesursache unbekannt"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * code = $SCT#184305005 "Cause of death"
 * subject = Reference(mii-exa-test-data-onko-patient-1)
@@ -111,6 +119,7 @@ InstanceOf: MII_PR_Onko_Genetische_Variante
 Usage: #example
 Description: "Onkologie Test Genetische Variante - BRCA1 Mutation"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * subject = Reference(mii-exa-test-data-onko-patient-1)
 * encounter = Reference(mii-exa-test-data-onko-encounter-1)
@@ -125,6 +134,7 @@ InstanceOf: MII_PR_Onko_Genetische_Variante
 Usage: #example
 Description: "Onkologie Test Genetische Variante - KRAS Wildtyp"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * subject = Reference(mii-exa-test-data-onko-patient-1)
 * effectiveDateTime = "2021-06-15"
@@ -137,6 +147,7 @@ InstanceOf: MII_PR_Onko_Studienteilnahme
 Usage: #example
 Description: "Onkologie Test Studienteilnahme - Patient nimmt an Studie teil"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * code = $SCT#709491003 "Enrollment in clinical trial"
 * subject = Reference(mii-exa-test-data-onko-patient-1)
@@ -151,6 +162,7 @@ InstanceOf: MII_PR_Onko_Studienteilnahme
 Usage: #example
 Description: "Onkologie Test Studienteilnahme - Keine Studienteilnahme"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * code = $SCT#709491003 "Enrollment in clinical trial"
 * subject = Reference(mii-exa-test-data-onko-patient-1)

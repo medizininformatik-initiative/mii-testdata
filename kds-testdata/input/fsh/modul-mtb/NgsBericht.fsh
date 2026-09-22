@@ -11,6 +11,7 @@ Usage: #example
 Title: "MTB NGS Bericht"
 Description: "Test instance for NGS report with all result slices populated"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-ngs-bericht"
 * status = #final
 * category = $hl7-v2-0074#GE "Genetics"
@@ -40,6 +41,7 @@ Usage: #example
 Title: "MTB Genomic Study"
 Description: "Test instance for MTB genomic study procedure"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-genomic-study"
 * status = #completed
 * subject = Reference(mii-exa-test-data-mtb-patient-1)
@@ -54,6 +56,7 @@ Usage: #example
 Title: "MTB Genomic Study Analysis"
 Description: "Test instance for MTB genomic study analysis with method and change types"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-genomic-study-analysis"
 * status = #completed
 * category.coding = http://terminology.hl7.org/CodeSystem/observation-category#laboratory
@@ -74,6 +77,7 @@ Usage: #example
 Title: "MTB Einfache Variante - EGFR"
 Description: "Test instance for simple variant (EGFR L858R) with all MS elements"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-einfache-variante"
 * status = #final
 * category[labCategory] = $fhir-observation-category#laboratory "Laboratory"
@@ -97,6 +101,7 @@ Usage: #example
 Title: "MTB Copy Number Variant - ERBB2"
 Description: "Test instance for CNV (ERBB2 amplification) with all MS component slices"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-copy-number-variant"
 * status = #final
 * category[labCategory] = $fhir-observation-category#laboratory "Laboratory"
@@ -128,6 +133,7 @@ Usage: #example
 Title: "MTB DNA Fusion - EML4-ALK"
 Description: "Test instance for DNA fusion variant (EML4-ALK)"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-dna-fusion"
 * status = #final
 * category[labCategory] = $fhir-observation-category#laboratory "Laboratory"
@@ -149,6 +155,7 @@ Usage: #example
 Title: "MTB RNA Fusion - BCR-ABL1"
 Description: "Test instance for RNA fusion variant (BCR-ABL1)"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-rna-fusion"
 * status = #final
 * category[labCategory] = $fhir-observation-category#laboratory "Laboratory"
@@ -170,6 +177,7 @@ Usage: #example
 Title: "MTB RNA Seq"
 Description: "Test instance for RNA sequencing observation"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-rna-seq"
 * status = #final
 * category[labCategory] = $fhir-observation-category#laboratory "Laboratory"
@@ -191,6 +199,7 @@ Usage: #example
 Title: "MTB Diagnostische Implikation"
 Description: "Test instance for diagnostic implication of EGFR variant"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-diagnostische-implikation"
 * status = #final
 * category[labCategory] = $fhir-observation-category#laboratory "Laboratory"
@@ -209,6 +218,7 @@ Usage: #example
 Title: "MTB Therapeutische Implikation"
 Description: "Test instance for therapeutic implication with evidence grading"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-therapeutische-implikation"
 * status = #final
 * category[labCategory] = $fhir-observation-category#laboratory "Laboratory"
@@ -230,6 +240,7 @@ Usage: #example
 Title: "MTB Molekularer Biomarker"
 Description: "Test instance for molecular biomarker base profile"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-molekularer-biomarker"
 * status = #final
 * category[labCategory] = $fhir-observation-category#laboratory "Laboratory"
@@ -246,6 +257,7 @@ Usage: #example
 Title: "MTB Mutationslast (TMB)"
 Description: "Test instance for tumor mutational burden"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-mutationslast"
 * status = #final
 * category[labCategory] = $fhir-observation-category#laboratory "Laboratory"
@@ -266,6 +278,7 @@ Usage: #example
 Title: "MTB Mikrosatelliteninstabilitaet (MSI)"
 Description: "Test instance for microsatellite instability"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-mikrosatelliteninstabilitaet"
 * status = #final
 * category[labCategory] = $fhir-observation-category#laboratory "Laboratory"
@@ -285,6 +298,7 @@ Usage: #example
 Title: "MTB HRD Score"
 Description: "Test instance for homologous recombination deficiency score with sub-scores"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-hrd-score"
 * status = #final
 * category[labCategory] = $fhir-observation-category#laboratory "Laboratory"
@@ -306,6 +320,7 @@ Usage: #example
 Title: "MTB BRCAness"
 Description: "Test instance for BRCAness assessment"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-brcaness"
 * status = #final
 * category[labCategory] = $fhir-observation-category#laboratory "Laboratory"
@@ -325,6 +340,7 @@ Usage: #example
 Title: "MTB Ploidie"
 Description: "Test instance for ploidy assessment"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-ploidie"
 * status = #final
 * category[labCategory] = $fhir-observation-category#laboratory "Laboratory"
@@ -343,10 +359,11 @@ Usage: #example
 Title: "MTB Biomarker HER2 Status"
 Description: "Test instance for HER2 biomarker status"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-biomarker-her2-status"
 * status = #final
 * category[labCategory] = $fhir-observation-category#laboratory "Laboratory"
-* code = $loinc#48676-1 "HER2 [Interpretation] in Tissue"
+* code = $loinc#48676-1 "HER2 Ag [Interpretation] in Tissue"
 * subject = Reference(mii-exa-test-data-mtb-patient-1)
 * valueCodeableConcept = $loinc#LA6576-8 "Positive"
 
@@ -359,6 +376,7 @@ Usage: #example
 Title: "MTB Molecular Pathology Report"
 Description: "Test instance for molecular pathology report"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-molecular-pathology-report"
 * status = #final
 * code = $loinc#60568-3 "Pathology synoptic report"
@@ -374,6 +392,7 @@ Usage: #example
 Title: "MTB Immunohistochemistry - PD-L1"
 Description: "Test instance for immunohistochemistry observation"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-immunohistochemistry"
 * status = #final
 * category[labCategory] = $fhir-observation-category#laboratory "Laboratory"
@@ -397,6 +416,7 @@ Usage: #example
 Title: "MTB Immunohistochemistry HER2"
 Description: "Test instance for HER2 immunohistochemistry"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-immunohistochemistry-her2"
 * status = #final
 * category[labCategory] = $fhir-observation-category#laboratory "Laboratory"
@@ -417,6 +437,7 @@ Usage: #example
 Title: "MTB Immunohistochemistry PD-L1"
 Description: "Test instance for PD-L1 immunohistochemistry with all MS elements"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-immunohistochemistry-pdl1"
 * status = #final
 * category[labCategory] = $fhir-observation-category#laboratory "Laboratory"
@@ -439,6 +460,7 @@ Usage: #example
 Title: "MTB IHC Phosphorylation"
 Description: "Test instance for phosphorylation immunohistochemistry"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-immunohistochemistry-phosphorylation"
 * status = #final
 * category[labCategory] = $fhir-observation-category#laboratory "Laboratory"
@@ -459,6 +481,7 @@ Usage: #example
 Title: "MTB IHC MMR"
 Description: "Test instance for mismatch repair protein immunohistochemistry"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-immunohistochemistry-mmr"
 * status = #final
 * category[labCategory] = $fhir-observation-category#laboratory "Laboratory"
@@ -478,7 +501,8 @@ Usage: #example
 Title: "MTB IHC MSI"
 Description: "Test instance for MSI by immunohistochemistry"
 * insert TestDataLabel
-* meta.profile = "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-immunohistochemistry-msi"
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
+* meta.profile = "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-msi"
 * status = #final
 * category[labCategory] = $fhir-observation-category#laboratory "Laboratory"
 * code.coding = $loinc#62862-8 "Microsatellite instability [Presence] in Tissue by Immune stain"
@@ -495,7 +519,8 @@ Usage: #example
 Title: "MTB In Situ Hybridization"
 Description: "Test instance for in situ hybridization biomarker"
 * insert TestDataLabel
-* meta.profile = "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-biomarker-insituhybridization"
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
+* meta.profile = "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-insituhybridization"
 * status = #final
 * category[labCategory] = $fhir-observation-category#laboratory "Laboratory"
 * category[mbCategory] = $TBD#biomarker-category
@@ -516,6 +541,7 @@ Usage: #example
 Title: "MTB In Situ Hybridization HER2"
 Description: "Test instance for HER2 FISH with all component slices"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-insituhybridization-her2"
 * status = #final
 * category[labCategory] = $fhir-observation-category#laboratory "Laboratory"
@@ -543,6 +569,7 @@ Usage: #example
 Title: "MTB Tumorzellgehalt"
 Description: "Test instance for tumor cell content measurement"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-tumorzellgehalt"
 * status = #final
 // code inherited from profile pattern (loinc#93356-4)

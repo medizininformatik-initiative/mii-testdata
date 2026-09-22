@@ -8,6 +8,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/S
 Usage: #example
 Description: "Therapieempfehlung: Losartan for Marfan - all MS elements including extensions"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 // Prioritaet extension (decimal/positiveInt)
 * extension[+].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-ex-seltene-empfehlung-prioritaet"
 * extension[=].valuePositiveInt = 1

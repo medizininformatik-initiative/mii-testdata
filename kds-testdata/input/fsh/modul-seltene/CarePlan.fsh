@@ -10,6 +10,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/S
 Usage: #example
 Description: "Therapieplan: Marfan syndrome care plan - all activity slices and MS elements"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #draft
 * intent = #proposal
 * subject = Reference(mii-exa-test-data-seltene-patient-1)

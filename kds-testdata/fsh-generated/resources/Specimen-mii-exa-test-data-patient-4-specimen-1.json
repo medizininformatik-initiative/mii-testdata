@@ -9,6 +9,7 @@
         "display": "test health data"
       }
     ],
+    "source": "https://www.charite.de/fhir/kds-testdata",
     "profile": [
       "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Specimen"
     ]
@@ -47,16 +48,16 @@
       }
     }
   ],
+  "status": "available",
   "type": {
     "coding": [
       {
-        "system": "http://snomed.info/sct",
         "code": "445295009",
+        "system": "http://snomed.info/sct",
         "display": "Blood specimen with edetic acid (specimen)"
       }
     ]
   },
-  "status": "available",
   "subject": {
     "reference": "Patient/mii-exa-test-data-biobank-patient-4"
   },

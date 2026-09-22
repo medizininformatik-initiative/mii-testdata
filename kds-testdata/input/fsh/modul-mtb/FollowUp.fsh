@@ -11,6 +11,7 @@ Usage: #example
 Title: "MTB Follow-Up"
 Description: "Test instance for MTB follow-up clinical impression with all MS elements"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-follow-up-clinicalimpression"
 * status = #completed
 * code.coding = $SCT#390906007 "Follow-up encounter (procedure)"
@@ -31,6 +32,7 @@ Usage: #example
 Title: "MTB Systemische Therapie"
 Description: "Test instance for MTB systemic therapy procedure"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-systemische-therapie"
 * status = #completed
 * statusReason = #regular-completion
@@ -53,7 +55,8 @@ Usage: #example
 Title: "MTB Systemische Therapie MedicationStatement"
 Description: "Test instance for MTB systemic therapy medication statement"
 * insert TestDataLabel
-* meta.profile = "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-systemische-therapie-medication-statement"
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
+* meta.profile = "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-systemtherapie-medication-statement"
 * basedOn = Reference(mii-exa-test-data-mtb-therapieempfehlung-1)
 * partOf = Reference(mii-exa-test-data-mtb-systemische-therapie-1)
 * status = #completed
@@ -64,6 +67,9 @@ Description: "Test instance for MTB systemic therapy medication statement"
 * effectivePeriod.start = "2024-04-15"
 * effectivePeriod.end = "2024-04-15"
 * note.text = "Z1 Osimertinib 80mg oral, daily"
+* dosage.timing.repeat.frequency = 1
+* dosage.timing.repeat.period = 1
+* dosage.timing.repeat.periodUnit = #d
 * dosage.doseAndRate.doseQuantity.value = 80
 * dosage.doseAndRate.doseQuantity.unit = "mg"
 * dosage.doseAndRate.doseQuantity.code = #mg
@@ -78,6 +84,7 @@ Usage: #example
 Title: "MTB Response Befund"
 Description: "Test instance for MTB response assessment with RECIST method"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-response-befund"
 * status = #final
 * code = $SCT#396432002 "Status of regression of tumor (observable entity)"
@@ -99,6 +106,7 @@ Usage: #example
 Title: "MTB Antrag Kostenuebernahme"
 Description: "Test instance for cost coverage application with all MS elements"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-antrag-kostenuebernahme"
 * type = #institutional
 * use = #claim
@@ -123,6 +131,7 @@ Usage: #example
 Title: "MTB Antwort Kostenuebernahme"
 Description: "Test instance for cost coverage response with all MS elements"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-antwort-kostenuebernahme"
 * status = #active
 * type = #institutional

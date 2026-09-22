@@ -8,7 +8,8 @@
         "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
         "display": "test health data"
       }
-    ]
+    ],
+    "source": "https://www.charite.de/fhir/kds-testdata"
   },
   "entry": [
     {
@@ -31,7 +32,8 @@
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient",
             "http://fhir.de/ConsentManagement/StructureDefinition/Patient"
-          ]
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata"
         },
         "identifier": [
           {
@@ -117,6 +119,7 @@
               "display": "test health data"
             }
           ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-einwilligung"
           ]
@@ -316,6 +319,7 @@
               "display": "test health data"
             }
           ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung"
           ]
@@ -435,6 +439,7 @@
               "display": "test health data"
             }
           ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/core/modul-diagnose/StructureDefinition/Diagnose"
           ]
@@ -514,6 +519,7 @@
               "display": "test health data"
             }
           ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Vitalstatus"
           ]
@@ -568,6 +574,7 @@
               "display": "test health data"
             }
           ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Procedure"
           ]
@@ -648,6 +655,7 @@
               "display": "test health data"
             }
           ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Procedure"
           ]
@@ -731,6 +739,7 @@
               "display": "test health data"
             }
           ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ServiceRequestLab"
           ]
@@ -816,6 +825,7 @@
               "display": "test health data"
             }
           ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/DiagnosticReportLab"
           ]
@@ -844,13 +854,13 @@
           {
             "coding": [
               {
-                "system": "http://loinc.org",
-                "code": "26436-6",
-                "display": "Laboratory studies (set)"
-              },
-              {
                 "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
                 "code": "LAB"
+              },
+              {
+                "code": "26436-6",
+                "system": "http://loinc.org",
+                "display": "Laboratory studies (set)"
               }
             ]
           }
@@ -914,6 +924,7 @@
               "display": "test health data"
             }
           ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab"
           ]
@@ -942,14 +953,14 @@
           {
             "coding": [
               {
-                "system": "http://loinc.org",
-                "code": "26436-6",
-                "display": "Laboratory studies (set)"
-              },
-              {
                 "system": "http://terminology.hl7.org/CodeSystem/observation-category",
                 "code": "laboratory",
                 "display": "Laboratory"
+              },
+              {
+                "code": "26436-6",
+                "system": "http://loinc.org",
+                "display": "Laboratory studies (set)"
               }
             ]
           }
@@ -1025,6 +1036,7 @@
               "display": "test health data"
             }
           ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab"
           ]
@@ -1053,14 +1065,14 @@
           {
             "coding": [
               {
-                "system": "http://loinc.org",
-                "code": "26436-6",
-                "display": "Laboratory studies (set)"
-              },
-              {
                 "system": "http://terminology.hl7.org/CodeSystem/observation-category",
                 "code": "laboratory",
                 "display": "Laboratory"
+              },
+              {
+                "code": "26436-6",
+                "system": "http://loinc.org",
+                "display": "Laboratory studies (set)"
               }
             ]
           }
@@ -1136,6 +1148,7 @@
               "display": "test health data"
             }
           ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab"
           ]
@@ -1164,14 +1177,14 @@
           {
             "coding": [
               {
-                "system": "http://loinc.org",
-                "code": "26436-6",
-                "display": "Laboratory studies (set)"
-              },
-              {
                 "system": "http://terminology.hl7.org/CodeSystem/observation-category",
                 "code": "laboratory",
                 "display": "Laboratory"
+              },
+              {
+                "code": "26436-6",
+                "system": "http://loinc.org",
+                "display": "Laboratory studies (set)"
               }
             ]
           }
@@ -1247,6 +1260,7 @@
               "display": "test health data"
             }
           ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationRequest"
           ]
@@ -1323,6 +1337,7 @@
               "display": "test health data"
             }
           ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement"
           ]
@@ -1365,6 +1380,13 @@
                   "display": "Oral use"
                 }
               ]
+            },
+            "timing": {
+              "repeat": {
+                "frequency": 1,
+                "period": 1,
+                "periodUnit": "d"
+              }
             },
             "doseAndRate": [
               {
@@ -1410,6 +1432,7 @@
               "display": "test health data"
             }
           ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationAdministration"
           ]
@@ -1480,6 +1503,7 @@
               "display": "test health data"
             }
           ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationRequest"
           ]
@@ -1555,6 +1579,7 @@
               "display": "test health data"
             }
           ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement"
           ]
@@ -1648,6 +1673,7 @@
               "display": "test health data"
             }
           ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationAdministration"
           ]
@@ -1718,6 +1744,7 @@
               "display": "test health data"
             }
           ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/medikationsliste"
           ]
@@ -1766,6 +1793,7 @@
               "display": "test health data"
             }
           ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/medikationsliste"
           ]
@@ -1814,6 +1842,7 @@
               "display": "test health data"
             }
           ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication"
           ]
@@ -1884,6 +1913,7 @@
               "display": "test health data"
             }
           ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication"
           ]
@@ -1953,7 +1983,8 @@
               "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
               "display": "test health data"
             }
-          ]
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata"
         },
         "type": [
           {
@@ -1985,7 +2016,8 @@
               "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
               "display": "test health data"
             }
-          ]
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata"
         },
         "type": [
           {
@@ -2018,13 +2050,14 @@
               "display": "test health data"
             }
           ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Organization"
           ]
         },
         "extension": [
           {
-            "url": "https://fhir.bbmri-eric.eu/fhir/StructureDefinition/miabis-organization-description-extension",
+            "url": "https://fhir.bbmri-eric.eu/StructureDefinition/miabis-organization-description-extension",
             "valueString": "Zentrale Biobank der Charité"
           }
         ],
@@ -2099,7 +2132,8 @@
               "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
               "display": "test health data"
             }
-          ]
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata"
         },
         "name": [
           {
@@ -2129,6 +2163,7 @@
               "display": "test health data"
             }
           ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/modul-studie/StructureDefinition/mii-pr-studie-beteiligte-person"
           ]
@@ -2169,7 +2204,8 @@
               "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
               "display": "test health data"
             }
-          ]
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata"
         },
         "identifier": [
           {
@@ -2203,7 +2239,8 @@
               "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
               "display": "test health data"
             }
-          ]
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata"
         },
         "identifier": [
           {
@@ -2273,7 +2310,8 @@
               "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
               "display": "test health data"
             }
-          ]
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata"
         },
         "identifier": [
           {
@@ -2323,7 +2361,8 @@
               "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
               "display": "test health data"
             }
-          ]
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata"
         },
         "identifier": [
           {

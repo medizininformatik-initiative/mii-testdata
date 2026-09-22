@@ -9,6 +9,7 @@
         "display": "test health data"
       }
     ],
+    "source": "https://www.charite.de/fhir/kds-testdata",
     "profile": [
       "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationRequest"
     ]
@@ -50,7 +51,6 @@
           }
         }
       ],
-      "text": "Propofol 6.5 mg/min IV via Perfusor",
       "route": {
         "coding": [
           {

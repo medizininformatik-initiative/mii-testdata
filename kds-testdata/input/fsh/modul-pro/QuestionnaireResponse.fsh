@@ -12,6 +12,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Struc
 Usage: #example
 Description: "PRO QuestionnaireResponse: PHQ-9 for Patient 1 (mild depression, score 8)"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #completed
 * language = #de
 * subject = Reference(mii-exa-test-data-pro-patient-1)
@@ -19,39 +20,39 @@ Description: "PRO QuestionnaireResponse: PHQ-9 for Patient 1 (mild depression, s
 * questionnaire = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-phq-9"
 
 // q01: Little interest or pleasure - Several days (1)
-* item[+].linkId = "phq-phq9-q01"
+* item[+].linkId = "phq-phq2a"
 * item[=].answer[0].valueCoding = $loinc#LA6569-3 "Several days"
 
 // q02: Feeling down, depressed - Several days (1)
-* item[+].linkId = "phq-phq9-q02"
+* item[+].linkId = "phq-phq2b"
 * item[=].answer[0].valueCoding = $loinc#LA6569-3 "Several days"
 
 // q03: Sleep problems - More than half the days (2)
-* item[+].linkId = "phq-phq9-q03"
+* item[+].linkId = "phq-phq2c"
 * item[=].answer[0].valueCoding = $loinc#LA6570-1 "More than half the days"
 
 // q04: Feeling tired - Several days (1)
-* item[+].linkId = "phq-phq9-q04"
+* item[+].linkId = "phq-phq2d"
 * item[=].answer[0].valueCoding = $loinc#LA6569-3 "Several days"
 
 // q05: Poor appetite - Not at all (0)
-* item[+].linkId = "phq-phq9-q05"
+* item[+].linkId = "phq-phq2e"
 * item[=].answer[0].valueCoding = $loinc#LA6568-5 "Not at all"
 
 // q06: Feeling bad about yourself - Several days (1)
-* item[+].linkId = "phq-phq9-q06"
+* item[+].linkId = "phq-phq2f"
 * item[=].answer[0].valueCoding = $loinc#LA6569-3 "Several days"
 
 // q07: Trouble concentrating - Several days (1)
-* item[+].linkId = "phq-phq9-q07"
+* item[+].linkId = "phq-phq2g"
 * item[=].answer[0].valueCoding = $loinc#LA6569-3 "Several days"
 
 // q08: Moving/speaking slowly - Not at all (0)
-* item[+].linkId = "phq-phq9-q08"
+* item[+].linkId = "phq-phq2h"
 * item[=].answer[0].valueCoding = $loinc#LA6568-5 "Not at all"
 
 // q09: Thoughts of death - Several days (1)
-* item[+].linkId = "phq-phq9-q09"
+* item[+].linkId = "phq-phq2i"
 * item[=].answer[0].valueCoding = $loinc#LA6569-3 "Several days"
 
 // Total score: 1+1+2+1+0+1+1+0+1 = 8 (mild depression)
@@ -59,7 +60,7 @@ Description: "PRO QuestionnaireResponse: PHQ-9 for Patient 1 (mild depression, s
 * item[=].answer[0].valueDecimal = 8
 
 // q10: Functional impairment
-* item[+].linkId = "phq-phq9-q10"
+* item[+].linkId = "phq-phq9-difficulty"
 * item[=].answer[0].valueCoding = $loinc#LA6573-5 "Somewhat difficult"
 
 
@@ -72,6 +73,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Struc
 Usage: #example
 Description: "PRO QuestionnaireResponse: PROMIS Depression SF4a for Patient 1 (mild, raw score 7)"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #completed
 * language = #de
 * subject = Reference(mii-exa-test-data-pro-patient-1)

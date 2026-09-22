@@ -3,6 +3,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebun
 Usage: #example
 Description: "Procedure: Bildgebungsprozedur"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 //* meta.profile = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-bildgebungsprozedur"
 * basedOn = Reference(mii-exa-test-data-anforderung)
 * status = #completed

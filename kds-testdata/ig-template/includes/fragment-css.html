@@ -1,0 +1,24 @@
+<!-- Branding override for the fhir2.base.template CSS placeholder
+     (base ships includes/fragment-css.html as a single comment; it is included
+     in <head> AFTER all base stylesheets, so the linked files win the
+     cascade).
+     Load model (docs/styleguide.md §1/§10): bootstrap-accessibility.css
+     (PayPal Bootstrap Accessibility Plugin v1.0.7, vendored + pinned - §8)
+     patches Bootstrap-3 component styling for accessibility (focus outlines,
+     alert contrast) and loads FIRST so the template's own rules can override;
+     then template-base.css carries the
+     brand-INDEPENDENT rule blocks and always loads; then EXACTLY ONE palette
+     file follows - num-diz.css, the DEFAULT design, unless the consuming IG
+     ships input/data/brand.json with { "design": "mii" } (read as
+     site.data.brand.design via the base's input/data -> _data pre-process),
+     which selects mii.css instead. Only the exact value 'mii' selects the
+     MII design; anything else - including no brand.json at all and unknown
+     values - renders NUM-DIZ. Both palettes declare the same variable set
+     (scripts/brand-switch.test.mjs). -->
+<link href="{{site.data.info.assets}}assets/css/bootstrap-accessibility.css" rel="stylesheet"/>
+<link href="{{site.data.info.assets}}assets/css/template-base.css" rel="stylesheet"/>
+{% if site.data.brand.design == 'mii' %}
+<link href="{{site.data.info.assets}}assets/css/mii.css" rel="stylesheet"/>
+{% else %}
+<link href="{{site.data.info.assets}}assets/css/num-diz.css" rel="stylesheet"/>
+{% endif %}

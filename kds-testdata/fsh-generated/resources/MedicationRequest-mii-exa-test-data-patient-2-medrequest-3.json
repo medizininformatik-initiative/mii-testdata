@@ -9,6 +9,7 @@
         "display": "test health data"
       }
     ],
+    "source": "https://www.charite.de/fhir/kds-testdata",
     "profile": [
       "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationRequest"
     ]
@@ -19,47 +20,12 @@
       "value": "MO_0000008"
     }
   ],
+  "medicationCodeableConcept": {
+    "text": "Paclitaxel Infusionsloesung 175 mg"
+  },
   "dosageInstruction": [
     {
-      "timing": {
-        "event": [
-          "2024-03-07T10:30:00+01:00"
-        ]
-      },
-      "doseAndRate": [
-        {
-          "rateRatio": {
-            "numerator": {
-              "value": 175,
-              "code": "mg",
-              "system": "http://unitsofmeasure.org",
-              "unit": "mg"
-            },
-            "denominator": {
-              "value": 3,
-              "code": "h",
-              "system": "http://unitsofmeasure.org",
-              "unit": "h"
-            }
-          },
-          "doseQuantity": {
-            "value": 175,
-            "code": "mg",
-            "system": "http://unitsofmeasure.org",
-            "unit": "mg"
-          }
-        }
-      ],
-      "text": "Paclitaxel 175mg IV über 3 Stunden",
-      "route": {
-        "coding": [
-          {
-            "code": "20045000",
-            "system": "http://standardterms.edqm.eu",
-            "display": "Intravenous use"
-          }
-        ]
-      }
+      "text": "Paclitaxel 175 mg intravenös über 3 Stunden, Gabe am 07.03.2024"
     }
   ],
   "substitution": {
@@ -67,9 +33,6 @@
   },
   "status": "active",
   "intent": "order",
-  "medicationReference": {
-    "reference": "Medication/mii-exa-test-data-medication-paclitaxel"
-  },
   "subject": {
     "reference": "Patient/mii-exa-test-data-patient-2"
   },
