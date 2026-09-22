@@ -100,7 +100,7 @@ def main():
     sd_file = {f["url"]: f["filename"] for f in idx["files"]
                if f.get("resourceType") == "StructureDefinition"}
     by_prof = collections.defaultdict(list)
-    for fp in glob.glob("fsh-generated/resources/*.json"):
+    for fp in glob.glob("fsh-generated/resources/*.json") + glob.glob("input/predefined-resources/*.json"):
         r = json.load(open(fp))
         if r.get("resourceType") == "Bundle":
             continue

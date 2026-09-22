@@ -1,0 +1,146 @@
+Instance: mii-exa-pro-phq-9-response
+InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response
+Usage: #example
+* item[0].answer.valueCoding = http://loinc.org#LA6571-9 "Nearly every day"
+* item[=].answer.valueCoding.display.extension.extension[0].url = "lang"
+* item[=].answer.valueCoding.display.extension.extension[=].valueCode = #de
+* item[=].answer.valueCoding.display.extension.extension[+].url = "content"
+* item[=].answer.valueCoding.display.extension.extension[=].valueString = "Beinahe jeden Tag"
+* item[=].answer.valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].linkId = "phq-phq2a"
+* item[=].text = "Little interest or pleasure in doing things"
+* item[=].text.extension.extension[0].url = "lang"
+* item[=].text.extension.extension[=].valueCode = #de
+* item[=].text.extension.extension[+].url = "content"
+* item[=].text.extension.extension[=].valueString = "Wenig Interesse oder Freude an Ihren Tätigkeiten"
+* item[=].text.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[+].answer.valueCoding = http://loinc.org#LA6571-9 "Nearly every day"
+* item[=].answer.valueCoding.display.extension.extension[0].url = "lang"
+* item[=].answer.valueCoding.display.extension.extension[=].valueCode = #de
+* item[=].answer.valueCoding.display.extension.extension[+].url = "content"
+* item[=].answer.valueCoding.display.extension.extension[=].valueString = "Beinahe jeden Tag"
+* item[=].answer.valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].linkId = "phq-phq2b"
+* item[=].text = "Feeling down, depressed, or hopeless"
+* item[=].text.extension.extension[0].url = "lang"
+* item[=].text.extension.extension[=].valueCode = #de
+* item[=].text.extension.extension[+].url = "content"
+* item[=].text.extension.extension[=].valueString = "Niedergeschlagenheit, Schwermut oder Hoffnungslosigkeit"
+* item[=].text.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[+].answer.valueCoding = http://loinc.org#LA6571-9 "Nearly every day"
+* item[=].answer.valueCoding.display.extension.extension[0].url = "lang"
+* item[=].answer.valueCoding.display.extension.extension[=].valueCode = #de
+* item[=].answer.valueCoding.display.extension.extension[+].url = "content"
+* item[=].answer.valueCoding.display.extension.extension[=].valueString = "Beinahe jeden Tag"
+* item[=].answer.valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].linkId = "phq-phq2c"
+* item[=].text = "Trouble falling or staying asleep, or sleeping too much"
+* item[=].text.extension.extension[0].url = "lang"
+* item[=].text.extension.extension[=].valueCode = #de
+* item[=].text.extension.extension[+].url = "content"
+* item[=].text.extension.extension[=].valueString = "Schwierigkeiten ein- oder durchzuschlafen oder vermehrter Schlaf"
+* item[=].text.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[+].answer.valueCoding = http://loinc.org#LA6571-9 "Nearly every day"
+* item[=].answer.valueCoding.display.extension.extension[0].url = "lang"
+* item[=].answer.valueCoding.display.extension.extension[=].valueCode = #de
+* item[=].answer.valueCoding.display.extension.extension[+].url = "content"
+* item[=].answer.valueCoding.display.extension.extension[=].valueString = "Beinahe jeden Tag"
+* item[=].answer.valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].linkId = "phq-phq2d"
+* item[=].text = "Feeling tired or having little energy"
+* item[=].text.extension.extension[0].url = "lang"
+* item[=].text.extension.extension[=].valueCode = #de
+* item[=].text.extension.extension[+].url = "content"
+* item[=].text.extension.extension[=].valueString = "Müdigkeit oder Gefühl, keine Energie zu haben"
+* item[=].text.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[+].answer.valueCoding = http://loinc.org#LA6571-9 "Nearly every day"
+* item[=].answer.valueCoding.display.extension.extension[0].url = "lang"
+* item[=].answer.valueCoding.display.extension.extension[=].valueCode = #de
+* item[=].answer.valueCoding.display.extension.extension[+].url = "content"
+* item[=].answer.valueCoding.display.extension.extension[=].valueString = "Beinahe jeden Tag"
+* item[=].answer.valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].linkId = "phq-phq2e"
+* item[=].text = "Poor appetite or overeating"
+* item[=].text.extension.extension[0].url = "lang"
+* item[=].text.extension.extension[=].valueCode = #de
+* item[=].text.extension.extension[+].url = "content"
+* item[=].text.extension.extension[=].valueString = "Verminderter Appetit oder übermäßiges Bedürfnis zu essen"
+* item[=].text.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[+].answer.valueCoding = http://loinc.org#LA6571-9 "Nearly every day"
+* item[=].answer.valueCoding.display.extension.extension[0].url = "lang"
+* item[=].answer.valueCoding.display.extension.extension[=].valueCode = #de
+* item[=].answer.valueCoding.display.extension.extension[+].url = "content"
+* item[=].answer.valueCoding.display.extension.extension[=].valueString = "Beinahe jeden Tag"
+* item[=].answer.valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].linkId = "phq-phq2f"
+* item[=].text = "Feeling bad about yourself - or that you are a failure or have let yourself or your family down"
+* item[=].text.extension.extension[0].url = "lang"
+* item[=].text.extension.extension[=].valueCode = #de
+* item[=].text.extension.extension[+].url = "content"
+* item[=].text.extension.extension[=].valueString = "Schlechte Meinung von sich selbst; Gefühl, ein Versager zu sein oder die Familie enttäuscht zu haben"
+* item[=].text.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[+].answer.valueCoding = http://loinc.org#LA6571-9 "Nearly every day"
+* item[=].answer.valueCoding.display.extension.extension[0].url = "lang"
+* item[=].answer.valueCoding.display.extension.extension[=].valueCode = #de
+* item[=].answer.valueCoding.display.extension.extension[+].url = "content"
+* item[=].answer.valueCoding.display.extension.extension[=].valueString = "Beinahe jeden Tag"
+* item[=].answer.valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].linkId = "phq-phq2g"
+* item[=].text = "Trouble concentrating on things, such as reading the newspaper or watching television"
+* item[=].text.extension.extension[0].url = "lang"
+* item[=].text.extension.extension[=].valueCode = #de
+* item[=].text.extension.extension[+].url = "content"
+* item[=].text.extension.extension[=].valueString = "Schwierigkeiten, sich auf etwas zu konzentrieren, z.B. beim Zeitunglesen oder Fernsehen"
+* item[=].text.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[+].answer.valueCoding = http://loinc.org#LA6571-9 "Nearly every day"
+* item[=].answer.valueCoding.display.extension.extension[0].url = "lang"
+* item[=].answer.valueCoding.display.extension.extension[=].valueCode = #de
+* item[=].answer.valueCoding.display.extension.extension[+].url = "content"
+* item[=].answer.valueCoding.display.extension.extension[=].valueString = "Beinahe jeden Tag"
+* item[=].answer.valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].linkId = "phq-phq2h"
+* item[=].text = "Moving or speaking so slowly that other people could have noticed? Or the opposite — being so fidgety or restless that you have been moving around a lot more than usual"
+* item[=].text.extension.extension[0].url = "lang"
+* item[=].text.extension.extension[=].valueCode = #de
+* item[=].text.extension.extension[+].url = "content"
+* item[=].text.extension.extension[=].valueString = "Waren Ihre Bewegungen oder Ihre Sprache so verlangsamt, dass es auch anderen auffallen würde? Oder waren Sie im Gegenteil 'zappelig' oder ruhelos und hatten dadurch einen stärkeren Bewegungsdrang als sonst?"
+* item[=].text.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[+].answer.valueCoding = http://loinc.org#LA6571-9 "Nearly every day"
+* item[=].answer.valueCoding.display.extension.extension[0].url = "lang"
+* item[=].answer.valueCoding.display.extension.extension[=].valueCode = #de
+* item[=].answer.valueCoding.display.extension.extension[+].url = "content"
+* item[=].answer.valueCoding.display.extension.extension[=].valueString = "Beinahe jeden Tag"
+* item[=].answer.valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].linkId = "phq-phq2i"
+* item[=].text = "Thoughts that you would be better off dead or of hurting yourself in some way"
+* item[=].text.extension.extension[0].url = "lang"
+* item[=].text.extension.extension[=].valueCode = #de
+* item[=].text.extension.extension[+].url = "content"
+* item[=].text.extension.extension[=].valueString = "Gedanken, dass Sie lieber tot wären oder sich Leid zufügen möchten"
+* item[=].text.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[+].answer.valueDecimal = 27
+* item[=].linkId = "phq-phq9-score-total"
+* item[=].text = "PHQ-9 Total Score"
+* item[=].text.extension.extension[0].url = "lang"
+* item[=].text.extension.extension[=].valueCode = #de
+* item[=].text.extension.extension[+].url = "content"
+* item[=].text.extension.extension[=].valueString = "PHQ-9 Gesamtwert"
+* item[=].text.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[+].answer.valueCoding = http://loinc.org#LA6574-3 "Extremely difficult"
+* item[=].answer.valueCoding.display.extension.extension[0].url = "lang"
+* item[=].answer.valueCoding.display.extension.extension[=].valueCode = #de
+* item[=].answer.valueCoding.display.extension.extension[+].url = "content"
+* item[=].answer.valueCoding.display.extension.extension[=].valueString = "Sehr stark erschwert"
+* item[=].answer.valueCoding.display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].linkId = "phq-phq9-difficulty"
+* item[=].text = "If you checked off any problems, how difficult have these problems made it for you to do your work, take care of things at home, or get along with other people?"
+* item[=].text.extension.extension[0].url = "lang"
+* item[=].text.extension.extension[=].valueCode = #de
+* item[=].text.extension.extension[+].url = "content"
+* item[=].text.extension.extension[=].valueString = "Wenn eines oder mehrere dieser Probleme bei Ihnen vorliegen, geben Sie bitte an, wie sehr diese Probleme es Ihnen erschwert haben, Ihre Arbeit zu erledigen, Ihren Haushalt zu regeln oder mit anderen Menschen zurecht zu kommen"
+* item[=].text.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
+* status = #completed
+* language = #en
+* subject = Reference(mii-exa-pro-patient)
+* authored = "2023-10-01T12:00:00Z"
+* questionnaire = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-phq-9|2027.0.0-ballot.1"

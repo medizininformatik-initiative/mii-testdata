@@ -3673,13 +3673,6 @@
       },
       {
         "reference": {
-          "reference": "Observation/mii-exa-test-data-patient-1-labobs-7"
-        },
-        "exampleBoolean": false,
-        "name": "mii-exa-test-data-patient-1-labobs-7"
-      },
-      {
-        "reference": {
           "reference": "DiagnosticReport/mii-exa-test-data-patient-1-labreport-1"
         },
         "name": "mii-exa-test-data-patient-1-labreport-1",
