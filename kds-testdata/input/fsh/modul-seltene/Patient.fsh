@@ -7,6 +7,7 @@ InstanceOf: Patient
 Usage: #example
 Description: "Seltene Erkrankungen Test Patient"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * identifier.system = "https://www.charite.de/fhir/sid/patientenidentifikation"
 * identifier.value = "SELT-TEST-001"
 * name.family = "Seltenfall"
@@ -19,6 +20,7 @@ InstanceOf: Encounter
 Usage: #example
 Description: "Seltene Erkrankungen Test Encounter"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #finished
 * class = http://terminology.hl7.org/CodeSystem/v3-ActCode#IMP "inpatient encounter"
 * subject = Reference(mii-exa-test-data-seltene-patient-1)
@@ -31,6 +33,7 @@ InstanceOf: Observation
 Usage: #example
 Description: "Seltene Lab Observation - Enzymaktivitaet"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * code = http://loinc.org#2157-6 "Creatine kinase [Enzymatic activity/volume] in Serum or Plasma"
 * subject = Reference(mii-exa-test-data-seltene-patient-1)
@@ -41,6 +44,7 @@ InstanceOf: DiagnosticReport
 Usage: #example
 Description: "Seltene Molgen Befundbericht Stub"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * code = http://loinc.org#51969-4 "Genetic analysis report"
 * subject = Reference(mii-exa-test-data-seltene-patient-1)
@@ -51,6 +55,7 @@ InstanceOf: Observation
 Usage: #example
 Description: "Seltene Molgen Variante Stub"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * code = http://loinc.org#69548-6 "Genetic variant assessment"
 * subject = Reference(mii-exa-test-data-seltene-patient-1)

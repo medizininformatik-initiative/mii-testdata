@@ -3,6 +3,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebun
 Usage: #example
 Description: "BodyStructure: Körperstruktur"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 //* meta.profile = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-koerperstruktur"
 * morphology = $sct#12747003 "Microcalcification, calcified structure (morphologic abnormality)"
 * location = $sct#76752008 "Breast structure (body structure)"

@@ -10,6 +10,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/S
 Usage: #example
 Description: "BMI Observation - all MS elements"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * category = $observation-category#vital-signs "Vital Signs"
 * code = $loinc#39156-5 "Body mass index (BMI) [Ratio]"
@@ -26,6 +27,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/S
 Usage: #example
 Description: "Kopfumfang Observation - all MS elements"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * category = $observation-category#vital-signs "Vital Signs"
 * code = $loinc#9843-4 "Head Occipital-frontal circumference"
@@ -42,6 +44,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/S
 Usage: #example
 Description: "Hueftumfang Observation - all MS elements"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * category = $observation-category#vital-signs "Vital Signs"
 * code.coding[0] = $sct#284472007 "Hip circumference"
@@ -59,6 +62,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/S
 Usage: #example
 Description: "Taillenumfang Observation - all MS elements"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * category = $observation-category#vital-signs "Vital Signs"
 * code.coding[0] = $sct#276361009 "Waist circumference"
@@ -76,6 +80,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/S
 Usage: #example
 Description: "Blutgruppe Observation: A Rh(D) positive - all MS elements, both code and value slices"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-blutgruppe|2026.0.1"
 * status = #final
 * category[laboratory] = $observation-category#laboratory "Laboratory"

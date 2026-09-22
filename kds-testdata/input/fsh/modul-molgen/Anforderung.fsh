@@ -4,6 +4,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/St
 Usage: #example
 Description: "ServiceRequest: Anforderung genetischer Test fuer BRAF-Mutation"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #active
 * intent = #order
 * category = $sct#108252007 "Laboratory procedure (procedure)"
@@ -26,6 +27,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/St
 Usage: #example
 Description: "ServiceRequest: Anforderung molekulargenetische Stufendiagnostik"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * identifier.system = "https://www.charite.de/fhir/auftragsnummern"
 * identifier.value = "7B369EB0"
 * status = #active
@@ -51,6 +53,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/St
 Usage: #example
 Description: "ServiceRequest: Anforderung NGS-Panel bei NSCLC Stadium IV gemaess S3-Leitlinie"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * extension[workflow-relatedArtifact].valueRelatedArtifact.type = $related-artifact-type#citation "Citation"
 * extension[workflow-relatedArtifact].valueRelatedArtifact.citation = "S3-Leitlinie Lungenkarzinom, Version 4.0 (April 2025), Empfehlung 6.60, AWMF 020-007OL"
 * extension[workflow-relatedArtifact].valueRelatedArtifact.url = "https://register.awmf.org/de/leitlinien/detail/020-007OL"

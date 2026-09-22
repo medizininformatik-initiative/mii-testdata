@@ -7,6 +7,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/Struc
 Usage: #example
 Description: "ICU Procedure: MII PR ICU Extrakorporales Verfahren"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #completed
 * subject = Reference(mii-exa-test-data-icu-patient-1)
 * encounter = Reference(mii-exa-test-data-icu-encounter-1)
@@ -21,6 +22,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/Struc
 Usage: #example
 Description: "ICU Procedure: MII PR ICU Beatmung"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #completed
 * subject = Reference(mii-exa-test-data-icu-patient-1)
 * encounter = Reference(mii-exa-test-data-icu-encounter-1)

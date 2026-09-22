@@ -4,6 +4,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/St
 Usage: #example
 Description: "Task: Empfohlene Folgemassnahme fuer BRAF-Mutation"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * meta.profile[+] = "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/followup-recommendation"
 * status = #requested
 * intent = #proposal

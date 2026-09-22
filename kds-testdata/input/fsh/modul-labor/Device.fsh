@@ -3,6 +3,7 @@ InstanceOf: Device
 Usage: #example
 Description: "Device: Roche cobas c 303"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * identifier[+].system = "https://www.charite.de/fhir/sid/Laboratory-device-identifier"
 * identifier[=].value = "RocheCobasC303"
 * status = #active
@@ -20,6 +21,7 @@ InstanceOf: Device
 Usage: #example
 Description: "Device: Roche cobas e 402"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * identifier[+].system = "https://www.charite.de/fhir/sid/Laboratory-device-identifier"
 * identifier[=].value = "RocheCobasE402"
 * status = #active
@@ -35,6 +37,7 @@ InstanceOf: Device
 Usage: #example
 Description: "Device: Roche cobas"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * identifier[+].system = "https://www.charite.de/fhir/sid/Laboratory-device-identifier"
 * identifier[=].value = "RocheCobas"
 * status = #active

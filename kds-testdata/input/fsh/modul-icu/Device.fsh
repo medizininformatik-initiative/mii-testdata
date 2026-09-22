@@ -8,6 +8,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/Struc
 Usage: #example
 Description: "ICU Device: Beatmungsgeraet Draeger Evita V500"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * deviceName[+].name = "Draeger Evita V500"
 * deviceName[=].type = #manufacturer-name
 * type = $sct#706172005 "Ventilator (physical object)"
@@ -19,6 +20,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/Struc
 Usage: #example
 Description: "ICU Device: VV-ECMO-Konsole (Getinge Cardiohelp)"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * deviceName[+].name = "Getinge Cardiohelp"
 * deviceName[=].type = #manufacturer-name
 * type.text = "VV-ECMO-System (extrakorporale Membranoxygenierung)"
@@ -29,6 +31,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/Struc
 Usage: #example
 Description: "ICU DeviceMetric: Eingestellte Gemessene Parameter Extrakorporale Verfahren"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * type = $sct#182744004 "Extracorporeal circulation procedure"
 * source = Reference(mii-exa-test-data-patient-1-icu-device-ecmo-1)
 * category = #measurement
@@ -38,6 +41,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/Struc
 Usage: #example
 Description: "ICU DeviceMetric: Eingestellte Gemessene Parameter Beatmung"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * type = $sct#40617009 "Artificial ventilation (regime/therapy)"
 * source = Reference(mii-exa-test-data-patient-1-icu-device-1)
 * category = #measurement

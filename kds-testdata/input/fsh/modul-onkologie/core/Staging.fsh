@@ -8,6 +8,7 @@ InstanceOf: MII_PR_Onko_Weitere_Klassifikationen
 Usage: #example
 Description: "Onkologie Test Weitere Klassifikationen - FIGO IVB"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * code.coding = $SCT#254386003 "Federation Internationale de gynecologie et d'obstetrique staging of ovarian malignancy"
 * code.text = "FIGO Klassifikation für ovariale Tumore"
@@ -25,6 +26,7 @@ InstanceOf: MII_PR_Onko_Residualstatus
 Usage: #example
 Description: "Onkologie Test Residualstatus - R0"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * code.coding[loinc] = $LNC#84892-9 "Residual tumor classification [Type] in Cancer specimen"
 * code.coding[snomed] = $SCT#445200009 "Status of residual neoplasm"
@@ -40,6 +42,7 @@ InstanceOf: MII_PR_Onko_Fernmetastasen
 Usage: #example
 Description: "Onkologie Test Fernmetastasen - Leber"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * code.coding = $SCT#385421009 "Site of distant metastasis"
 * subject = Reference(mii-exa-test-data-onko-patient-1)
@@ -54,6 +57,7 @@ InstanceOf: MII_PR_Onko_Allgemeiner_Leistungszustand_ECOG
 Usage: #example
 Description: "Onkologie Test ECOG - 1"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * code.coding[snomed] = $SCT#423740007 "ECOG performance status"
 * code.coding[loinc] = $LNC#89262-0 "Physical performance [ECOG]"
@@ -69,6 +73,7 @@ InstanceOf: MII_PR_Onko_Allgemeiner_Leistungszustand_Karnofsky
 Usage: #example
 Description: "Onkologie Test Karnofsky - 80%"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * code.coding[snomed] = $SCT#761869008 "KPS (Karnofsky Performance Status) score"
 * code.coding[loinc] = $LNC#89243-0 "Karnofsky Performance Status score"
@@ -84,6 +89,7 @@ InstanceOf: MII_PR_Onko_ASA_Klassifikation
 Usage: #example
 Description: "Onkologie Test ASA - II"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * code.coding = $LNC#97816-3 "American society of anesthesiologists morbidity state"
 * subject = Reference(mii-exa-test-data-onko-patient-1)

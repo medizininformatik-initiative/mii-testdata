@@ -3,6 +3,7 @@ InstanceOf: DeviceMetric
 Usage: #example
 Description: "DeviceMetric: Roche cobas c 303"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * identifier[+].system = "https://www.charite.de/fhir/sid/Laboratory-device-identifier"
 * identifier[=].value = "RocheCobasC303-160192"
 * type = $11073-10101#160192

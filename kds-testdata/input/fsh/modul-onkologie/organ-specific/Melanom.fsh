@@ -8,6 +8,7 @@ InstanceOf: MII_PR_Onko_Melanom_Breslow_Tiefe
 Usage: #example
 Description: "Onkologie Test Melanom Breslow Tiefe"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * code = $SCT#106243009 "Breslow depth staging for melanoma of skin (observable entity)"
 * subject = Reference(mii-exa-test-data-onko-patient-1)
@@ -26,6 +27,7 @@ InstanceOf: MII_PR_Onko_Melanom_Breslow_Tiefe
 Usage: #example
 Description: "Onkologie Test Melanom Breslow Tiefe - Nicht bestimmbar"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * code = $SCT#106243009 "Breslow depth staging for melanoma of skin (observable entity)"
 * subject = Reference(mii-exa-test-data-onko-patient-1)
@@ -40,6 +42,7 @@ InstanceOf: MII_PR_Onko_Melanom_Ulzeration
 Usage: #example
 Description: "Onkologie Test Melanom Ulzeration - Vorhanden"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * code.coding = $SCT#6270001000004106 "Presence of ulcer in primary malignant melanoma of skin (observable entity)"
 * subject = Reference(mii-exa-test-data-onko-patient-1)
@@ -54,6 +57,7 @@ InstanceOf: MII_PR_Onko_Melanom_Ulzeration
 Usage: #example
 Description: "Onkologie Test Melanom Ulzeration - Nicht vorhanden"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * code.coding = $SCT#6270001000004106 "Presence of ulcer in primary malignant melanoma of skin (observable entity)"
 * subject = Reference(mii-exa-test-data-onko-patient-1)
@@ -67,6 +71,7 @@ InstanceOf: MII_PR_Onko_Melanom_Sicherheitsabstand
 Usage: #example
 Description: "Onkologie Test Melanom Sicherheitsabstand"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * code.coding = $SCT#396511007 "Distance of in situ melanoma from closest lateral surgical margin in excised specimen of skin (observable entity)"
 * subject = Reference(mii-exa-test-data-onko-patient-1)
@@ -84,6 +89,7 @@ InstanceOf: MII_PR_Onko_Melanom_Sicherheitsabstand
 Usage: #example
 Description: "Onkologie Test Melanom Sicherheitsabstand - Nicht bestimmbar"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * code.coding = $SCT#396511007 "Distance of in situ melanoma from closest lateral surgical margin in excised specimen of skin (observable entity)"
 * subject = Reference(mii-exa-test-data-onko-patient-1)
@@ -98,6 +104,7 @@ InstanceOf: MII_PR_Onko_Melanom_LDH
 Usage: #example
 Description: "Onkologie Test Melanom LDH - Normal"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * category.coding = $observation-category#laboratory "Laboratory"
 * code = $LNC#14804-9 "Lactate dehydrogenase [Enzymatic activity/volume] in Serum or Plasma by Lactate to pyruvate reaction"
@@ -115,6 +122,7 @@ InstanceOf: MII_PR_Onko_Melanom_LDH
 Usage: #example
 Description: "Onkologie Test Melanom LDH - Erhöht"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * category.coding = $observation-category#laboratory "Laboratory"
 * code = $LNC#14804-9 "Lactate dehydrogenase [Enzymatic activity/volume] in Serum or Plasma by Lactate to pyruvate reaction"
@@ -134,6 +142,7 @@ InstanceOf: MII_PR_Onko_Melanom_Exzision
 Usage: #example
 Description: "Onkologie Test Melanom Exzision - Oberarm"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #completed
 // category is inherited from parent profile MII_PR_Onko_Operation
 * code.coding[sct] = $SCT#177281002 "Excision of melanoma (procedure)"

@@ -10,6 +10,7 @@ InstanceOf: Patient
 Usage: #example
 Description: "Lungenfunktion Test Patient: Luise Atemwald (V.a. Asthma bronchiale)"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * identifier[+].system = "https://www.charite.de/fhir/sid/patientenidentifikation"
 * identifier[=].value = "LUFU-TEST-001"
 * name.family = "Atemwald"
@@ -22,6 +23,7 @@ InstanceOf: Encounter
 Usage: #example
 Description: "Lungenfunktion Test Encounter: ambulante Lungenfunktionsdiagnostik"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #finished
 * class = $v3-ActCode#AMB "ambulatory"
 * subject = Reference(mii-exa-test-data-lungenfunktion-patient-1)

@@ -8,6 +8,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/St
 Usage: #example
 Description: "Procedure: Genomic Study Analysis BRAF Exon 15 mittels NGS"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #completed
 * subject = Reference(mii-exa-test-data-molgen-patient-1)
 * extension[title].url = "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-title"
@@ -34,6 +35,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/St
 Usage: #example
 Description: "Procedure: Genomic Study BRAF-Analyse bei kolorektalem Adenokarzinom"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #completed
 * code = $sct#405825005 "Molecular genetic test (procedure)"
 * subject = Reference(mii-exa-test-data-molgen-patient-1)
@@ -49,6 +51,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/St
 Usage: #example
 Description: "Procedure: Genomic Study Analysis Stufendiagnostik Magenkarzinom-Panel"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #completed
 * subject = Reference(mii-exa-test-data-molgen-patient-2)
 * extension[title].url = "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-title"
@@ -91,6 +94,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/St
 Usage: #example
 Description: "Procedure: Genomic Study Stufendiagnostik Magenkarzinom"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #completed
 * code = $sct#405825005 "Molecular genetic test (procedure)"
 * subject = Reference(mii-exa-test-data-molgen-patient-2)

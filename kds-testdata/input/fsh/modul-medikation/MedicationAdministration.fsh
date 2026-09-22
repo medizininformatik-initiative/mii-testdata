@@ -4,6 +4,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 Usage: #example
 Description: "MedicationAdministration: Dalbavancin 1500 mg als 30-minütige Infusion"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 //* meta.profile[0] = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationAdministration|2.0.0"
 * identifier[0].system = "https://www.charite.de/fhir/sid/MedicationAdministrations"
 * identifier[0].value = "MA_0000001"
@@ -30,6 +31,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 Usage: #example
 Description: "MedicationAdministration: Abgebrochen - Dalbavancin 1500 mg als 30-minütige Infusion"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 //* meta.profile[0] = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationAdministration|2.0.0"
 * identifier[0].system = "https://www.charite.de/fhir/sid/MedicationAdministrations"
 * identifier[0].value = "MA_0000002"
@@ -55,6 +57,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 Usage: #example
 Description: "MedicationAdministration: Morphin 10 mg oral bei Schmerzen"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * identifier[0].system = "https://www.charite.de/fhir/sid/MedicationAdministrations"
 * identifier[0].value = "MA_0000003"
 * status = #completed
@@ -73,6 +76,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 Usage: #example
 Description: "MedicationAdministration: Carboplatin 450 mg IV über 1 Stunde"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * identifier[0].system = "https://www.charite.de/fhir/sid/MedicationAdministrations"
 * identifier[0].value = "MA_0000004"
 * status = #completed
@@ -94,6 +98,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 Usage: #example
 Description: "MedicationAdministration: Paclitaxel 175 mg IV über 3 Stunden"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * identifier[0].system = "https://www.charite.de/fhir/sid/MedicationAdministrations"
 * identifier[0].value = "MA_0000005"
 * status = #completed
@@ -116,6 +121,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 Usage: #example
 Description: "MedicationAdministration: Metamizol 500 mg oral bei Schmerzen"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * identifier[0].system = "https://www.charite.de/fhir/sid/MedicationAdministrations"
 * identifier[0].value = "MA_0000006"
 * status = #completed
@@ -134,6 +140,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 Usage: #example
 Description: "MedicationAdministration: 5-FU 1000 mg IV über 46 Stunden"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * identifier[0].system = "https://www.charite.de/fhir/sid/MedicationAdministrations"
 * identifier[0].value = "MA_0000007"
 * status = #completed
@@ -155,6 +162,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 Usage: #example
 Description: "MedicationAdministration: Oxaliplatin 85mg IV über 2 Stunden"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * identifier[0].system = "https://www.charite.de/fhir/sid/MedicationAdministrations"
 * identifier[0].value = "MA_0000008"
 * status = #completed
@@ -177,6 +185,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 Usage: #example
 Description: "MedicationAdministration: Cisplatin 75mg IV über 2 Stunden"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * identifier[0].system = "https://www.charite.de/fhir/sid/MedicationAdministrations"
 * identifier[0].value = "MA_0000009"
 * status = #completed
@@ -198,6 +207,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 Usage: #example
 Description: "MedicationAdministration: Omeprazol 20mg oral morgens"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * identifier[0].system = "https://www.charite.de/fhir/sid/MedicationAdministrations"
 * identifier[0].value = "MA_0000010"
 * status = #completed
@@ -217,6 +227,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 Usage: #example
 Description: "MedicationAdministration: Leuprorelin 3,75mg s.c."
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * identifier[0].system = "https://www.charite.de/fhir/sid/MedicationAdministrations"
 * identifier[0].value = "MA_0000011"
 * status = #completed
@@ -235,6 +246,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 Usage: #example
 Description: "MedicationAdministration: Ibuprofen 400mg oral bei Schmerzen"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * identifier[0].system = "https://www.charite.de/fhir/sid/MedicationAdministrations"
 * identifier[0].value = "MA_0000012"
 * status = #completed
@@ -254,6 +266,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 Usage: #example
 Description: "MedicationAdministration: Pantoprazol 40mg oral morgens"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * identifier[0].system = "https://www.charite.de/fhir/sid/MedicationAdministrations"
 * identifier[0].value = "MA_0000013"
 * status = #completed
@@ -272,6 +285,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 Usage: #example
 Description: "MedicationAdministration: Amoxicillin 500mg oral"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * identifier[0].system = "https://www.charite.de/fhir/sid/MedicationAdministrations"
 * identifier[0].value = "MA_0000014"
 * status = #completed
@@ -291,6 +305,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 Usage: #example
 Description: "MedicationAdministration: Amoxicillin/Clavulansäure 1,2g IV"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * identifier[0].system = "https://www.charite.de/fhir/sid/MedicationAdministrations"
 * identifier[0].value = "MA_0000015"
 * status = #completed
@@ -309,6 +324,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 Usage: #example
 Description: "MedicationAdministration: Salbutamol 200μg inhalativ"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * identifier[0].system = "https://www.charite.de/fhir/sid/MedicationAdministrations"
 * identifier[0].value = "MA_0000016"
 * status = #completed
@@ -328,6 +344,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 Usage: #example
 Description: "MedicationAdministration: Heparin 5000 IE s.c."
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * identifier[0].system = "https://www.charite.de/fhir/sid/MedicationAdministrations"
 * identifier[0].value = "MA_0000017"
 * status = #completed
@@ -346,6 +363,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 Usage: #example
 Description: "MedicationAdministration: Metoprolol 50mg oral"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * identifier[0].system = "https://www.charite.de/fhir/sid/MedicationAdministrations"
 * identifier[0].value = "MA_0000018"
 * status = #completed
@@ -364,6 +382,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 Usage: #example
 Description: "MedicationAdministration: Atorvastatin 80mg oral zur Nacht"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * identifier[0].system = "https://www.charite.de/fhir/sid/MedicationAdministrations"
 * identifier[0].value = "MA_0000021"
 * status = #completed
@@ -387,6 +406,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 Usage: #example
 Description: "MedicationAdministration: Verhütungspille 1 Tablette oral"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * identifier[0].system = "https://www.charite.de/fhir/sid/MedicationAdministrations"
 * identifier[0].value = "MA_0000019"
 * status = #completed
@@ -405,6 +425,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 Usage: #example
 Description: "MedicationAdministration: Paracetamol 400mg oral bei Schmerzen"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * identifier[0].system = "https://www.charite.de/fhir/sid/MedicationAdministrations"
 * identifier[0].value = "MA_0000022"
 * status = #completed
@@ -428,6 +449,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 Usage: #example
 Description: "MedicationAdministration: Sumatriptan 50mg oral bei Migräne"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * identifier[0].system = "https://www.charite.de/fhir/sid/MedicationAdministrations"
 * identifier[0].value = "MA_0000020"
 * status = #completed
@@ -446,6 +468,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 Usage: #example
 Description: "MedicationAdministration: Topiramat 50mg oral zur Prophylaxe"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * identifier[0].system = "https://www.charite.de/fhir/sid/MedicationAdministrations"
 * identifier[0].value = "MA_0000021"
 * status = #completed

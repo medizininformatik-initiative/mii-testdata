@@ -12,7 +12,8 @@
     "profile": [
       "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/genotyp",
       "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genotype"
-    ]
+    ],
+    "source": "https://www.charite.de/fhir/kds-testdata"
   },
   "category": [
     {

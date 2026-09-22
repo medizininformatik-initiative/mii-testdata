@@ -12,6 +12,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Struc
 Usage: #example
 Description: "PRO QuestionnaireResponse: PHQ-9 for Patient 1 (mild depression, score 8)"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #completed
 * language = #de
 * subject = Reference(mii-exa-test-data-pro-patient-1)
@@ -72,6 +73,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Struc
 Usage: #example
 Description: "PRO QuestionnaireResponse: PROMIS Depression SF4a for Patient 1 (mild, raw score 7)"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #completed
 * language = #de
 * subject = Reference(mii-exa-test-data-pro-patient-1)

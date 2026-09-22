@@ -12,7 +12,8 @@
     "profile": [
       "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/diagnostische-implikation",
       "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/diagnostic-implication"
-    ]
+    ],
+    "source": "https://www.charite.de/fhir/kds-testdata"
   },
   "category": [
     {

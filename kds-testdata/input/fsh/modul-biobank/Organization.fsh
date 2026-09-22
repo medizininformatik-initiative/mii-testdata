@@ -3,6 +3,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/S
 Usage: #example
 Description: "Organization: Zentrale Biobank der Charité"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 //* meta.profile[0] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Organization|1.0.8"
 * extension[beschreibung].url = "https://fhir.bbmri-eric.eu/StructureDefinition/miabis-organization-description-extension"
 * extension[beschreibung].valueString = "Zentrale Biobank der Charité"

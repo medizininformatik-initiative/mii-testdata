@@ -7,6 +7,7 @@ InstanceOf: Specimen
 Usage: #example
 Description: "Mikrobio Specimen: Blutkultur aerob"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * identifier.system = "https://www.charite.de/fhir/sid/Probennummer"
 * identifier.value = "BLOOD-CULT-001"
 * status = #available
@@ -20,6 +21,7 @@ InstanceOf: Specimen
 Usage: #example
 Description: "Mikrobio Specimen: Mittelstrahlurin"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * identifier.system = "https://www.charite.de/fhir/sid/Probennummer"
 * identifier.value = "URINE-001"
 * status = #available

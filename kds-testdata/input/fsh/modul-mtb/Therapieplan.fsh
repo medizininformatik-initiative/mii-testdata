@@ -11,6 +11,7 @@ Usage: #example
 Title: "MTB Therapieplan"
 Description: "Test instance for MTB therapy plan with all activity slices"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-therapieplan"
 * status = #active
 * intent = #plan
@@ -36,6 +37,7 @@ Usage: #example
 Title: "MTB Therapieempfehlung - Osimertinib"
 Description: "Test instance for therapy recommendation with priority, evidence, and publication"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-therapieempfehlung"
 * status = #draft
 * intent = #proposal
@@ -55,6 +57,7 @@ Usage: #example
 Title: "MTB Therapieempfehlung - Sotorasib"
 Description: "Test instance for second therapy recommendation (part of combination)"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-therapieempfehlung"
 * status = #draft
 * intent = #option
@@ -70,6 +73,7 @@ Usage: #example
 Title: "MTB Therapieempfehlung - Trametinib"
 Description: "Test instance for third therapy recommendation (part of combination)"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-therapieempfehlung"
 * status = #draft
 * intent = #option
@@ -88,6 +92,7 @@ Usage: #example
 Title: "MTB Therapieempfehlung Kombination"
 Description: "Test instance for combination therapy recommendation"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-therapieempfehlung-kombination"
 * status = #draft
 * intent = #proposal
@@ -108,6 +113,7 @@ Usage: #example
 Title: "MTB Studieneinschluss Anfrage"
 Description: "Test instance for study enrollment request with all MS elements"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-studieneinschluss-anfrage"
 * status = #draft
 * intent = #proposal
@@ -125,6 +131,7 @@ Usage: #example
 Title: "MTB Studie"
 Description: "Test instance for MTB research study"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-studie"
 * identifier[+].system = $mii-ns-mtb-nct
 * identifier[=].value = "05252390"
@@ -142,6 +149,7 @@ Usage: #example
 Title: "MTB Humangenetische Beratung Auftrag"
 Description: "Test instance for human genetics counseling order"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-humangenetische-beratung-auftrag"
 * status = #draft
 * intent = #proposal
@@ -158,6 +166,7 @@ Usage: #example
 Title: "MTB Histologie Evaluation Auftrag"
 Description: "Test instance for histology evaluation order"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-histologie-evaluation-auftrag"
 * status = #draft
 * intent = #proposal
@@ -175,6 +184,7 @@ Usage: #example
 Title: "MTB Biopsie Auftrag"
 Description: "Test instance for biopsy order"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-biopsie-auftrag"
 * status = #draft
 * intent = #proposal

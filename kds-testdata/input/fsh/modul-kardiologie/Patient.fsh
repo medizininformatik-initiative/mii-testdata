@@ -10,6 +10,7 @@ InstanceOf: Patient
 Usage: #example
 Description: "Kardiologie Test Patient: Karl Herzmann (KHK, Aortenklappenstenose, Herzinsuffizienz)"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * identifier[+].system = "https://www.charite.de/fhir/sid/patientenidentifikation"
 * identifier[=].value = "KARDIO-TEST-001"
 * name.family = "Herzmann"
@@ -22,6 +23,7 @@ InstanceOf: Encounter
 Usage: #example
 Description: "Kardiologie Test Encounter: stationaere Aufnahme wegen dekompensierter Herzinsuffizienz"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #finished
 * class = $v3-ActCode#IMP "inpatient encounter"
 * subject = Reference(mii-exa-test-data-kardiologie-patient-1)

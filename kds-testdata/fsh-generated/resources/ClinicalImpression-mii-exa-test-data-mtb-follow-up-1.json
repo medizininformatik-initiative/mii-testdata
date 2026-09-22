@@ -11,7 +11,8 @@
     ],
     "profile": [
       "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-follow-up-clinicalimpression"
-    ]
+    ],
+    "source": "https://www.charite.de/fhir/kds-testdata"
   },
   "code": {
     "coding": [

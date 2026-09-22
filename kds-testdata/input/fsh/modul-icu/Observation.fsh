@@ -10,6 +10,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/Struc
 Usage: #example
 Description: "ICU Observation: MII PR ICU Bilanz Abnahme Haemofiltration Einzelmesswerte"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * category.coding[kdsicu-category] = $sct#364396009 "Fluid balance observable (observable entity)"
 * code.coding[sct] = $sct#251850009 "Ultrafiltrate fluid loss (observable entity)"
@@ -23,6 +24,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/Struc
 Usage: #example
 Description: "ICU Observation: MII PR ICU Bilanz Ausfuhr Drainage Generisch"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * category.coding[hl7-category] = http://terminology.hl7.org/CodeSystem/observation-category#exam
 * category.coding[kdsicu-category] = $sct#364396009 "Fluid balance observable (observable entity)"
@@ -36,6 +38,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/Struc
 Usage: #example
 Description: "ICU Observation: MII PR ICU Bilanz Ausfuhr Fluessigkeit Gesamt"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * category.coding[kdsicu-category] = $sct#364396009 "Fluid balance observable (observable entity)"
 * code.coding[sct] = $sct#251847006 "Total fluid loss"
@@ -49,6 +52,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/Struc
 Usage: #example
 Description: "ICU Observation: MII PR ICU Bilanz Ausfuhr Gallenfluessigkeit"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * category.coding[hl7-category] = http://terminology.hl7.org/CodeSystem/observation-category#exam
 * category.coding[kdsicu-category] = $sct#364396009 "Fluid balance observable (observable entity)"
@@ -62,6 +66,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/Struc
 Usage: #example
 Description: "ICU Observation: MII PR ICU Bilanz Ausfuhr Gallengang"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * category.coding[hl7-category] = http://terminology.hl7.org/CodeSystem/observation-category#exam
 * category.coding[kdsicu-category] = $sct#364396009 "Fluid balance observable (observable entity)"
@@ -75,6 +80,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/Struc
 Usage: #example
 Description: "ICU Observation: MII PR ICU Bilanz Ausfuhr Magensonde"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * category.coding[hl7-category] = http://terminology.hl7.org/CodeSystem/observation-category#exam
 * category.coding[kdsicu-category] = $sct#364396009 "Fluid balance observable (observable entity)"
@@ -88,6 +94,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/Struc
 Usage: #example
 Description: "ICU Observation: MII PR ICU Bilanz Ausfuhr Opdrainage"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * category.coding[hl7-category] = http://terminology.hl7.org/CodeSystem/observation-category#exam
 * category.coding[kdsicu-category] = $sct#364396009 "Fluid balance observable (observable entity)"
@@ -101,6 +108,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/Struc
 Usage: #example
 Description: "ICU Observation: MII PR ICU Bilanz Ausfuhr Pankreasdrainage"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * category.coding[hl7-category] = http://terminology.hl7.org/CodeSystem/observation-category#exam
 * category.coding[kdsicu-category] = $sct#364396009 "Fluid balance observable (observable entity)"
@@ -114,6 +122,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/Struc
 Usage: #example
 Description: "ICU Observation: MII PR ICU Bilanz Ausfuhr Stuhlgang"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * category.coding[hl7-category] = http://terminology.hl7.org/CodeSystem/observation-category#exam
 * category.coding[kdsicu-category] = $sct#364396009 "Fluid balance observable (observable entity)"
@@ -126,6 +135,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/Struc
 Usage: #example
 Description: "ICU Observation: MII PR ICU Bilanz Ausfuhr Urin"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * category.coding[kdsicu-category] = $sct#364396009 "Fluid balance observable (observable entity)"
 * code.coding[loinc] = $loinc#9187-6 "Urine output"
@@ -138,6 +148,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/Struc
 Usage: #example
 Description: "ICU Observation: MII PR ICU Bilanz Ausfuhr Wunddrainage"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * category.coding[hl7-category] = http://terminology.hl7.org/CodeSystem/observation-category#exam
 * category.coding[kdsicu-category] = $sct#364396009 "Fluid balance observable (observable entity)"
@@ -152,6 +163,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/Struc
 Usage: #example
 Description: "ICU Observation: MII PR ICU Bilanz Blutverlust"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * category.coding[kdsicu-category] = $sct#364396009 "Fluid balance observable (observable entity)"
 * code.coding[sct] = $sct#250771004 "Actual blood loss"
@@ -165,6 +177,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/Struc
 Usage: #example
 Description: "ICU Observation: MII PR ICU Bilanz Einfuhr Enterale Fluessigkeit"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * category.coding[kdsicu-category] = $sct#364396009 "Fluid balance observable (observable entity)"
 * code.coding[sct] = $sct#251854000 "Enteral fluid input (observable entity)"
@@ -178,6 +191,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/Struc
 Usage: #example
 Description: "ICU Observation: SD MII ICU Bilanz Einfuhr Fluessigkeit Gesamt"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * category.coding[kdsicu-category] = $sct#364396009 "Fluid balance observable (observable entity)"
 * subject = Reference(mii-exa-test-data-icu-patient-1)
@@ -189,6 +203,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/Struc
 Usage: #example
 Description: "ICU Observation: MII PR ICU Bilanz Einfuhr Oraler Fluessigkeit"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * category.coding[kdsicu-category] = $sct#364396009 "Fluid balance observable (observable entity)"
 * subject = Reference(mii-exa-test-data-icu-patient-1)
@@ -200,6 +215,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/Struc
 Usage: #example
 Description: "ICU Observation: MII PR ICU Bilanz Gesamte Ausfuhr"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * category.coding[kdsicu-category] = $sct#364396009 "Fluid balance observable (observable entity)"
 * code.coding[sct] = $sct#251847006 "Total fluid loss"
@@ -213,6 +229,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/Struc
 Usage: #example
 Description: "ICU Observation: MII PR ICU Bilanz Gesamte Einfuhr"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * category.coding[kdsicu-category] = $sct#364396009 "Fluid balance observable (observable entity)"
 * subject = Reference(mii-exa-test-data-icu-patient-1)
@@ -224,6 +241,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/Struc
 Usage: #example
 Description: "ICU Observation: MII PR ICU Bilanz Gesamte Tages Bilanz"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * category.coding[kdsicu-category] = $sct#364396009 "Fluid balance observable (observable entity)"
 * code.coding[sct] = $sct#251856003 "Fluid balance status (observable entity)"
@@ -239,6 +257,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/Struc
 Usage: #example
 Description: "ICU Observation: MII PR ICU Arterieller Druck"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * partOf = Reference(mii-exa-test-data-patient-1-icu-ect-extrakorp-1)
 * category.coding[sct] = $sct#182744004 "Extracorporeal circulation procedure"
@@ -252,6 +271,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/Struc
 Usage: #example
 Description: "ICU Observation: MII PR ICU Blutfluss Cardiovasculaeres Geraet"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * partOf = Reference(mii-exa-test-data-patient-1-icu-ect-extrakorp-1)
 * code.coding[sct] = $sct#444479000 "Rate of blood flow through cardiovascular device"
@@ -264,6 +284,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/Struc
 Usage: #example
 Description: "ICU Observation: MII PR ICU Blutfluss Extrakorporaler Gasaustausch"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * partOf = Reference(mii-exa-test-data-patient-1-icu-ect-extrakorp-1)
 * code.coding[sct] = $sct#251288004 "Extracorporeal gas exchange flow rate"
@@ -276,6 +297,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/Struc
 Usage: #example
 Description: "ICU Observation: MII PR ICU Blutflussindex Extrakorporaler Gasaustausch"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * partOf = Reference(mii-exa-test-data-patient-1-icu-ect-extrakorp-1)
 * category.coding[sct] = $sct#182744004 "Extracorporeal circulation procedure"
@@ -289,6 +311,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/Struc
 Usage: #example
 Description: "ICU Observation: MII PR ICU Dauer Extrakorporaler Gasaustausch"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * partOf = Reference(mii-exa-test-data-patient-1-icu-ect-extrakorp-1)
 * category.coding[sct] = $sct#182744004 "Extracorporeal circulation procedure"
@@ -302,6 +325,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/Struc
 Usage: #example
 Description: "ICU Observation: MII ICU Dauer Haemodialysesitzung"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * partOf = Reference(mii-exa-test-data-patient-1-icu-ect-extrakorp-1)
 * category.coding[sct] = $sct#182744004 "Extracorporeal circulation procedure"
@@ -315,6 +339,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/Struc
 Usage: #example
 Description: "ICU Observation: MII PR ICU Gasfluss"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * partOf = Reference(mii-exa-test-data-patient-1-icu-ect-extrakorp-1)
 * code.coding[sct] = $sct#79063001 "Gas flow rate (v)"
@@ -327,6 +352,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/Struc
 Usage: #example
 Description: "ICU Observation: MII PR ICU Haemodialyse Blutfluss"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * partOf = Reference(mii-exa-test-data-patient-1-icu-ect-extrakorp-1)
 * category.coding[sct] = $sct#182744004 "Extracorporeal circulation procedure"
@@ -340,6 +366,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/Struc
 Usage: #example
 Description: "ICU Observation: MII PR ICU Ionisiertes Kalzium Nierenersatzverfahren"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * partOf = Reference(mii-exa-test-data-patient-1-icu-ect-extrakorp-1)
 * category.coding[sct] = $sct#182744004 "Extracorporeal circulation procedure"
@@ -353,6 +380,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/Struc
 Usage: #example
 Description: "ICU Observation: MII PR ICU Substituatfluss"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * partOf = Reference(mii-exa-test-data-patient-1-icu-ect-extrakorp-1)
 * category.coding[sct] = $sct#182744004 "Extracorporeal circulation procedure"
@@ -366,6 +394,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/Struc
 Usage: #example
 Description: "ICU Observation: MII PR ICU Substituatvolumen"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * partOf = Reference(mii-exa-test-data-patient-1-icu-ect-extrakorp-1)
 * category.coding[sct] = $sct#182744004 "Extracorporeal circulation procedure"
@@ -379,6 +408,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/Struc
 Usage: #example
 Description: "ICU Observation: MII PR ICU Venous Pressure"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * partOf = Reference(mii-exa-test-data-patient-1-icu-ect-extrakorp-1)
 * code.coding[sct] = $sct#252076005 "Venous pressure"
@@ -393,6 +423,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/Struc
 Usage: #example
 Description: "ICU Observation: MII PR ICU Exspiratorischer Sauerstoffpartialdruck"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * partOf = Reference(mii-exa-test-data-patient-1-icu-vent-beatmung-1)
 * category[kuenstlicheBeatmung] = $sct#40617009 "Artificial ventilation (regime/therapy)"
@@ -410,6 +441,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/Struc
 Usage: #example
 Description: "ICU Observation: MII PR ICU Arterieller Blutdruck"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * category[VSCat] = $observation-category#vital-signs
 * code.coding[loinc] = $loinc#85354-9 "Blood pressure panel with all children optional"
@@ -425,6 +457,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/Struc
 Usage: #example
 Description: "ICU Observation: MII PR ICU Atemfrequenz"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * category[VSCat] = $observation-category#vital-signs
 * code.coding[loinc] = $loinc#9279-1 "Respiratory rate"
@@ -438,6 +471,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/Struc
 Usage: #example
 Description: "ICU Observation: MII SD ICU Herzfrequenz"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * category[vs-cat] = $observation-category#vital-signs
 * code.coding[sct] = $sct#364075005 "Heart rate"
@@ -452,6 +486,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/Struc
 Usage: #example
 Description: "ICU Observation: MII PR ICU Koerpergewicht"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * category[VSCat] = $observation-category#vital-signs
 * code.coding[loinc] = $loinc#29463-7 "Body weight"
@@ -465,6 +500,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/Struc
 Usage: #example
 Description: "ICU Observation: MII PR ICU Koerpergroesse"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * category[VSCat] = $observation-category#vital-signs
 * code.coding[loinc] = $loinc#8302-2 "Body height"
@@ -479,6 +515,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/Struc
 Usage: #example
 Description: "ICU Observation: MII PR ICU Kopfumfang"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * category[VSCat] = $observation-category#vital-signs
 * code.coding[loinc] = $loinc#9843-4 "Head Occipital-frontal circumference"
@@ -497,6 +534,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/Struc
 Usage: #example
 Description: "ICU Observation: inspiratorische-sauerstofffraktion-eingestellt"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * partOf = Reference(mii-exa-test-data-patient-1-icu-vent-beatmung-1)
 * category[kuenstlicheBeatmung] = $sct#40617009 "Artificial ventilation (regime/therapy)"
@@ -510,6 +548,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/Struc
 Usage: #example
 Description: "ICU Observation: MII PR ICU Atemwegsdruck Bei Null Expiratorischem Gasfluss"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * partOf = Reference(mii-exa-test-data-patient-1-icu-vent-beatmung-1)
 * category[kuenstlicheBeatmung] = $sct#40617009 "Artificial ventilation (regime/therapy)"
@@ -523,6 +562,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/Struc
 Usage: #example
 Description: "ICU Observation: MII PR ICU Atemwegsdruck Bei Mittlerem Expiratorischem Gasfluss"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * partOf = Reference(mii-exa-test-data-patient-1-icu-vent-beatmung-1)
 * category[kuenstlicheBeatmung] = $sct#40617009 "Artificial ventilation (regime/therapy)"
@@ -536,6 +576,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/Struc
 Usage: #example
 Description: "ICU Observation: MII PR ICU Atemzugvolumen Einstellung"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * partOf = Reference(mii-exa-test-data-patient-1-icu-vent-beatmung-1)
 * category[kuenstlicheBeatmung] = $sct#40617009 "Artificial ventilation (regime/therapy)"
@@ -551,6 +592,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/Struc
 Usage: #example
 Description: "ICU Observation: MII PR ICU Atemzugvolumen Waehrend Beatmung"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * partOf = Reference(mii-exa-test-data-patient-1-icu-vent-beatmung-1)
 * category[kuenstlicheBeatmung] = $sct#40617009 "Artificial ventilation (regime/therapy)"
@@ -566,6 +608,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/Struc
 Usage: #example
 Description: "ICU Observation: MII PR ICU Beatmungsvolumen Pro Minute Maschineller Beatmung"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * partOf = Reference(mii-exa-test-data-patient-1-icu-vent-beatmung-1)
 * category[kuenstlicheBeatmung] = $sct#40617009 "Artificial ventilation (regime/therapy)"
@@ -581,6 +624,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/Struc
 Usage: #example
 Description: "ICU Observation: MII ICU Beatmungszeit Hohem Druck"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * partOf = Reference(mii-exa-test-data-patient-1-icu-vent-beatmung-1)
 * category[kuenstlicheBeatmung] = $sct#40617009 "Artificial ventilation (regime/therapy)"
@@ -595,6 +639,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/Struc
 Usage: #example
 Description: "ICU Observation: MII PR ICU Beatmungszeit Niedrigem Druck"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * partOf = Reference(mii-exa-test-data-patient-1-icu-vent-beatmung-1)
 * category[kuenstlicheBeatmung] = $sct#40617009 "Artificial ventilation (regime/therapy)"
@@ -609,6 +654,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/Struc
 Usage: #example
 Description: "ICU Observation: MII PR ICU Eingestellter Inspiratorischer Gasfluss"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * partOf = Reference(mii-exa-test-data-patient-1-icu-vent-beatmung-1)
 * category[kuenstlicheBeatmung] = $sct#40617009 "Artificial ventilation (regime/therapy)"
@@ -622,6 +668,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/Struc
 Usage: #example
 Description: "ICU Observation: MII PR ICU Einstellung Ausatmungszeit Beatmung"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * partOf = Reference(mii-exa-test-data-patient-1-icu-vent-beatmung-1)
 * category[kuenstlicheBeatmung] = $sct#40617009 "Artificial ventilation (regime/therapy)"
@@ -636,6 +683,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/Struc
 Usage: #example
 Description: "ICU Observation: MII PR ICU Einstellung Einatmungszeit Beatmung"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * partOf = Reference(mii-exa-test-data-patient-1-icu-vent-beatmung-1)
 * category[kuenstlicheBeatmung] = $sct#40617009 "Artificial ventilation (regime/therapy)"
@@ -651,6 +699,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/Struc
 Usage: #example
 Description: "ICU Observation: MII PR ICU Endexpiratorischer Kohlendioxidpartialdruck"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * partOf = Reference(mii-exa-test-data-patient-1-icu-vent-beatmung-1)
 * category[kuenstlicheBeatmung] = $sct#40617009 "Artificial ventilation (regime/therapy)"
@@ -666,6 +715,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/Struc
 Usage: #example
 Description: "ICU Observation: MII PR ICU Exspiratorischer Gasfluss"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * partOf = Reference(mii-exa-test-data-patient-1-icu-vent-beatmung-1)
 * category[kuenstlicheBeatmung] = $sct#40617009 "Artificial ventilation (regime/therapy)"
@@ -680,6 +730,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/Struc
 Usage: #example
 Description: "ICU Observation: MII PR ICU Horowitz In Arteriellem Blut"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * partOf = Reference(mii-exa-test-data-patient-1-icu-vent-beatmung-1)
 * category[kuenstlicheBeatmung] = $sct#40617009 "Artificial ventilation (regime/therapy)"
@@ -694,6 +745,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/Struc
 Usage: #example
 Description: "ICU Observation: MIIm PR ICU Inspiratorische Sauerstofffraktion Gemessen"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * partOf = Reference(mii-exa-test-data-patient-1-icu-vent-beatmung-1)
 * category[kuenstlicheBeatmung] = $sct#40617009 "Artificial ventilation (regime/therapy)"
@@ -707,6 +759,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/Struc
 Usage: #example
 Description: "ICU Observation: MII PR ICU Inspiratorischer Gasfluss"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * partOf = Reference(mii-exa-test-data-patient-1-icu-vent-beatmung-1)
 * category[kuenstlicheBeatmung] = $sct#40617009 "Artificial ventilation (regime/therapy)"
@@ -721,6 +774,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/Struc
 Usage: #example
 Description: "ICU Observation: MII PR ICU Maximaler Beatmungsdruck"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * partOf = Reference(mii-exa-test-data-patient-1-icu-vent-beatmung-1)
 * category[kuenstlicheBeatmung] = $sct#40617009 "Artificial ventilation (regime/therapy)"
@@ -736,6 +790,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/Struc
 Usage: #example
 Description: "ICU Observation: MII PR ICU Mechanische Atemfrequenz Beatmet"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * partOf = Reference(mii-exa-test-data-patient-1-icu-vent-beatmung-1)
 * category[kuenstlicheBeatmung] = $sct#40617009 "Artificial ventilation (regime/therapy)"
@@ -751,6 +806,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/Struc
 Usage: #example
 Description: "ICU Observation: MII PR ICU Mittlerer Beatmungsdruck"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * partOf = Reference(mii-exa-test-data-patient-1-icu-vent-beatmung-1)
 * category = $sct#40617009 "Artificial ventilation (regime/therapy)"
@@ -766,6 +822,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/Struc
 Usage: #example
 Description: "ICU Observation: MII PR ICU Positiv Endexpiratorischer Druck"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * partOf = Reference(mii-exa-test-data-patient-1-icu-vent-beatmung-1)
 * category[kuenstlicheBeatmung] = $sct#40617009 "Artificial ventilation (regime/therapy)"
@@ -781,6 +838,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/Struc
 Usage: #example
 Description: "ICU Observation: MII PR ICU Spontane Atemfrequenz Beatmet"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * partOf = Reference(mii-exa-test-data-patient-1-icu-vent-beatmung-1)
 * category[kuenstlicheBeatmung] = $sct#40617009 "Artificial ventilation (regime/therapy)"
@@ -794,6 +852,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/Struc
 Usage: #example
 Description: "ICU Observation: MII PR ICU Spontane Mechanische Atemfrequenz Beatmet"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * partOf = Reference(mii-exa-test-data-patient-1-icu-vent-beatmung-1)
 * category[kuenstlicheBeatmung] = $sct#40617009 "Artificial ventilation (regime/therapy)"
@@ -809,6 +868,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/Struc
 Usage: #example
 Description: "ICU Observation: MII PR ICU Spontanes Atemzugvolumen"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * partOf = Reference(mii-exa-test-data-patient-1-icu-vent-beatmung-1)
 * category[kuenstlicheBeatmung] = $sct#40617009 "Artificial ventilation (regime/therapy)"
@@ -822,6 +882,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/Struc
 Usage: #example
 Description: "ICU Observation: MII PR ICU Spontanes Plus Mechanisches Atemzugvolumen"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * partOf = Reference(mii-exa-test-data-patient-1-icu-vent-beatmung-1)
 * category[kuenstlicheBeatmung] = $sct#40617009 "Artificial ventilation (regime/therapy)"
@@ -835,6 +896,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/Struc
 Usage: #example
 Description: "ICU Observation: MII PR ICU Unterstuezungsdruck Beatmung"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * partOf = Reference(mii-exa-test-data-patient-1-icu-vent-beatmung-1)
 * category[kuenstlicheBeatmung] = $sct#40617009 "Artificial ventilation (regime/therapy)"
@@ -848,6 +910,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/Struc
 Usage: #example
 Description: "ICU Observation: MII PR ICU Zeitverhaeltnis Ein Ausatmung"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * partOf = Reference(mii-exa-test-data-patient-1-icu-vent-beatmung-1)
 * category[kuenstlicheBeatmung] = $sct#40617009 "Artificial ventilation (regime/therapy)"
@@ -863,6 +926,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/Struc
 Usage: #example
 Description: "ICU Observation: dynamische-kompliance"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * partOf = Reference(mii-exa-test-data-patient-1-icu-vent-beatmung-1)
 * category[kuenstlicheBeatmung] = $sct#40617009 "Artificial ventilation (regime/therapy)"
@@ -877,6 +941,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/Struc
 Usage: #example
 Description: "ICU Observation: MII PR ICU Druckdifferenz Beatmung"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * partOf = Reference(mii-exa-test-data-patient-1-icu-vent-beatmung-1)
 * category[kuenstlicheBeatmung] = $sct#40617009 "Artificial ventilation (regime/therapy)"

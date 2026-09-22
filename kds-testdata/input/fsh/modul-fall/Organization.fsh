@@ -3,6 +3,7 @@ InstanceOf: Organization
 Usage: #example
 Description: "Organization: Charité – Universitätsmedizin Berlin"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * type = $organization-type#prov "Healthcare Provider"
 * name = "Charité – Universitätsmedizin Berlin"
 
@@ -11,5 +12,6 @@ InstanceOf: Organization
 Usage: #example
 Description: "Organization: Labor Berlin – Charité Vivantes GmbH"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * type = $organization-type#prov "Healthcare Provider"
 * name = "Labor Berlin – Charité Vivantes GmbH"

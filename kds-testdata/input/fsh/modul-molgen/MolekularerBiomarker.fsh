@@ -5,6 +5,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/St
 Usage: #example
 Description: "Observation: Molekularer Biomarker (PD-L1 TPS) fuer Patient-3"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * meta.profile[+] = "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/molecular-biomarker"
 * status = #final
 * category[labCategory] = $observation-category#laboratory "Laboratory"

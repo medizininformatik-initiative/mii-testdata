@@ -4,6 +4,7 @@ InstanceOf: Encounter
 Usage: #example
 Description: "Biobank Test Encounter (Probenentnahme)"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #finished
 * class = http://terminology.hl7.org/CodeSystem/v3-ActCode#AMB "ambulatory"
 * subject = Reference(mii-exa-test-data-biobank-patient-1)

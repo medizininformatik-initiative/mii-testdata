@@ -11,6 +11,7 @@ Usage: #example
 Title: "MTB Behandlungsepisode"
 Description: "Test instance for MTB treatment episode with all MS slices populated"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-behandlungsepisode"
 * status = #completed
 * subject = Reference(mii-exa-test-data-mtb-patient-1)
@@ -34,6 +35,7 @@ Usage: #example
 Title: "MTB Consent Given"
 Description: "Test instance for MTB consent/patient education confirmation"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-consent-given"
 * status = #final
 // code inherited from profile pattern (loinc#105511-0 "Was consent given")
@@ -50,6 +52,7 @@ Usage: #example
 Title: "MTB Diagnose Primaertumor"
 Description: "Test instance for MTB primary tumor diagnosis with all MS elements"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-diagnose-primaertumor"
 * extension[Feststellungsdatum].valueDateTime = "2024-01-05"
 * recordedDate = "2024-01-05"
@@ -73,6 +76,7 @@ Usage: #example
 Title: "MTB Oncotree Classification"
 Description: "Test instance for Oncotree tumor classification"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-oncotree"
 * status = #final
 // code inherited from profile (sct#371469007 "Histologic grade of neoplasm")
@@ -89,6 +93,7 @@ Usage: #example
 Title: "MTB Systemische Vortherapie"
 Description: "Test instance for prior systemic therapy"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-systemische-vortherapie"
 * extension[Intention].valueCodeableConcept.coding[0] = $mii-cs-onko-intention#K
 * status = #completed
@@ -109,6 +114,7 @@ Usage: #example
 Title: "MTB Tumorausbreitung"
 Description: "Test instance for tumor spread assessment with all MS elements"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-tumorausbreitung"
 * status = #final
 * category[+] = $SCT#473302008 "Aware of diagnosis"
@@ -126,6 +132,7 @@ Usage: #example
 Title: "MTB WHO Grad Tumor ZNS"
 Description: "Test instance for WHO CNS tumor grading"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-who-grad-tumor-zns"
 * status = #final
 // code inherited from profile pattern (sct#396921005 "WHO grade finding for central nervous system tumor")

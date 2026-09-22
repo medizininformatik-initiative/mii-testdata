@@ -4,6 +4,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 Usage: #example
 Description: "Medication: ASS 100"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 //* meta.profile[0] = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication|2.0.0"
 * code.coding[Pharmazentralnummer] = $pzn#06312077 "ASS 100 - 1a Pharma TAH Tabletten"
 * code.coding[atcClassDe] = $atc|2023#B01AC06 "Acetylsalicylsäure"
@@ -17,6 +18,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 Usage: #example
 Description: "Medication: Dalbavancin"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 //* meta.profile[0] = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication|2.0.0"
 * code.coding[Pharmazentralnummer] = $pzn#15205222 "XYDALBA"
 * code.coding[atcClassDe] = $atc|2023#J01XA04 "Dalbavancin"
@@ -31,6 +33,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 Usage: #example
 Description: "Medication: Propofol"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 //* meta.profile[0] = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication|2.0.0"
 * code.coding[atcClassDe] = $atc|2023#N01AX10 "Propofol"
 * form.coding[EDQM] = $standardterms#50021000 "Emulsion for injection/infusion"
@@ -44,6 +47,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 Usage: #example
 Description: "Medication: Metamizol"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 //* meta.profile[0] = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication|2.0.0"
 * code.coding[Pharmazentralnummer] = $pzn#00651306 "Metamizol HEXAL® 500 mg"
 * code.coding[atcClassDe] = $atc|2023#N02BB02 "Metamizol-Natrium"
@@ -57,6 +61,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 Usage: #example
 Description: "Medication: Rezeptur Doxorubicin"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 //* meta.profile = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication"
 * code.coding[atcClassDe] = $atc|2023#L01DB01 "Doxorubicin"
 * code.text = "Infusion bestehend aus 85mg Doxorubicin aufgeloest zur Verabreichung in 250ml 5-%iger (50 mg/ml) Glucose-Infusionsloesung"
@@ -74,6 +79,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 Usage: #example
 Description: "Medication: Glucoselösung 5%"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication"
 * code.coding[0] = $pzn#03705422 "Glucose 5% B.braun Ecoflac Plus"
 * code.coding[+] = $atc|2023#V06DC01 "Glucose"
@@ -99,6 +105,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 Usage: #example
 Description: "Medication: Morphin"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * code.coding[atcClassDe] = $atc|2024#N02AA01 "Morphin"
 * form = $standardterms#10219000 "Tablet"
 * ingredient.itemCodeableConcept.coding[ASK] = $ask#07651
@@ -111,6 +118,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 Usage: #example
 Description: "Medication: Carboplatin"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * code.coding[atcClassDe] = $atc|2024#L01XA02 "Carboplatin"
 * form = $standardterms#11210000 "Solution for infusion"
 * ingredient.itemCodeableConcept.coding[ASK] = $ask#23168
@@ -123,6 +131,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 Usage: #example
 Description: "Medication: Paclitaxel"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * code.coding[atcClassDe] = $atc|2024#L01CD01 "Paclitaxel"
 * form = $standardterms#11210000 "Solution for infusion"
 * ingredient.itemCodeableConcept.coding[ASK] = $ask#26509
@@ -136,6 +145,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 Usage: #example
 Description: "Medication: 5-Fluorouracil"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * code.coding[atcClassDe] = $atc|2024#L01BC02 "Fluorouracil"
 * form = $standardterms#11210000 "Solution for infusion"
 * ingredient.itemCodeableConcept.coding[ASK] = $ask#07374
@@ -148,6 +158,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 Usage: #example
 Description: "Medication: Oxaliplatin"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * code.coding[atcClassDe] = $atc|2024#L01XA03 "Oxaliplatin"
 * form = $standardterms#11210000 "Solution for infusion"
 * ingredient.itemCodeableConcept.coding[ASK] = $ask#29849
@@ -161,6 +172,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 Usage: #example
 Description: "Medication: Cisplatin"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * code.coding[atcClassDe] = $atc|2024#L01XA01 "Cisplatin"
 * form = $standardterms#11210000 "Solution for infusion"
 * ingredient.itemCodeableConcept.coding[ASK] = $ask#15579
@@ -173,6 +185,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 Usage: #example
 Description: "Medication: Omeprazol"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * code.coding[atcClassDe] = $atc|2024#A02BC01 "Omeprazol"
 * form = $standardterms#10221000 "Film-coated tablet"
 * ingredient.itemCodeableConcept.coding[ASK] = $ask#29052
@@ -186,6 +199,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 Usage: #example
 Description: "Medication: Leuprorelin"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * code.coding[atcClassDe] = $atc|2024#L02AE02 "Leuprorelin"
 * form = $standardterms#11201000 "Solution for injection"
 * ingredient.itemCodeableConcept.coding[ASK] = $ask#34837
@@ -198,6 +212,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 Usage: #example
 Description: "Medication: Ibuprofen"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * code.coding[atcClassDe] = $atc|2024#M01AE01 "Ibuprofen"
 * form = $standardterms#10221000 "Film-coated tablet"
 * ingredient.itemCodeableConcept.coding[ASK] = $ask#23391
@@ -211,6 +226,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 Usage: #example
 Description: "Medication: Pantoprazol"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * code.coding[atcClassDe] = $atc|2024#A02BC02 "Pantoprazol"
 * form = $standardterms#10221000 "Film-coated tablet"
 * ingredient.itemCodeableConcept.coding[ASK] = $ask#24848
@@ -223,6 +239,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 Usage: #example
 Description: "Medication: Amoxicillin"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * code.coding[atcClassDe] = $atc|2024#J01CA04 "Amoxicillin"
 * form = $standardterms#10210000 "Capsule, hard"
 * ingredient.itemCodeableConcept.coding[ASK] = $ask#13209
@@ -235,6 +252,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 Usage: #example
 Description: "Medication: Clarithromycin"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * code.coding[atcClassDe] = $atc|2024#J01FA09 "Clarithromycin"
 * form = $standardterms#10221000 "Film-coated tablet"
 * ingredient.itemCodeableConcept.coding[ASK] = $ask#23929
@@ -248,6 +266,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 Usage: #example
 Description: "Medication: Amoxicillin und Clavulansäure"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * code.coding[atcClassDe] = $atc|2024#J01CR02 "Amoxicillin und Beta-Lactamase-Inhibitoren"
 * form = $standardterms#11210000 "Solution for infusion"
 * ingredient[0].itemCodeableConcept.coding[ASK] = $ask#13209
@@ -263,6 +282,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 Usage: #example
 Description: "Medication: Salbutamol"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * code.coding[atcClassDe] = $atc|2024#R03AC02 "Salbutamol"
 * form = $standardterms#11106000 "Pressurised inhalation, solution"
 * ingredient.itemCodeableConcept.coding[ASK] = $ask#09051
@@ -276,6 +296,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 Usage: #example
 Description: "Medication: Heparin"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * code.coding[atcClassDe] = $atc|2024#B01AB01 "Heparin"
 * form = $standardterms#11201000 "Solution for injection"
 * ingredient.itemCodeableConcept.coding[ASK] = $ask#12545
@@ -288,6 +309,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 Usage: #example
 Description: "Medication: Metoprolol"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * code.coding[atcClassDe] = $atc|2024#C07AB02 "Metoprolol"
 * form = $standardterms#10221000 "Film-coated tablet"
 * ingredient.itemCodeableConcept.coding[ASK] = $ask#11849
@@ -300,6 +322,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 Usage: #example
 Description: "Medication: Atorvastatin"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * code.coding[atcClassDe] = $atc|2024#C10AA05 "Atorvastatin"
 * form = $standardterms#10221000 "Film-coated tablet"
 * ingredient.itemCodeableConcept.coding[ASK] = $ask#28860
@@ -313,6 +336,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 Usage: #example
 Description: "Medication: Ethinylestradiol und Levonorgestrel"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * code.coding[atcClassDe] = $atc|2024#G03AA07 "Levonorgestrel und Ethinylestradiol"
 * form = $standardterms#10221000 "Film-coated tablet"
 * ingredient[0].itemCodeableConcept.coding[ASK] = $ask#02200
@@ -328,6 +352,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 Usage: #example
 Description: "Medication: Paracetamol"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * code.coding[atcClassDe] = $atc|2024#N02BE01 "Paracetamol"
 * form = $standardterms#10219000 "Tablet"
 * ingredient.itemCodeableConcept.coding[ASK] = $ask#01212
@@ -341,6 +366,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 Usage: #example
 Description: "Medication: Sumatriptan"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * code.coding[atcClassDe] = $atc|2024#N02CC01 "Sumatriptan"
 * form = $standardterms#10219000 "Tablet"
 * ingredient.itemCodeableConcept.coding[ASK] = $ask#24065
@@ -353,6 +379,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikati
 Usage: #example
 Description: "Medication: Topiramat"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * code.coding[atcClassDe] = $atc|2024#N03AX11 "Topiramat"
 * form = $standardterms#10221000 "Film-coated tablet"
 * ingredient.itemCodeableConcept.coding[ASK] = $ask#24994

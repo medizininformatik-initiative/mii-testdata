@@ -8,6 +8,7 @@ InstanceOf: MII_PR_Onko_Operation
 Usage: #example
 Description: "Onkologie Test Operation - Debulking Ovarialkarzinom"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #completed
 * category = $SCT#387713003 "Surgical procedure"
 * code = $SCT#86481000 "Laparotomy"
@@ -31,6 +32,7 @@ InstanceOf: MII_PR_Onko_Strahlentherapie
 Usage: #example
 Description: "Onkologie Test Strahlentherapie - Adjuvante Bestrahlung"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #completed
 * category = $SCT#108290001 "Radiation oncology AND/OR radiotherapy"
 * code = $SCT#33195004 "External beam radiation therapy procedure"
@@ -55,6 +57,7 @@ InstanceOf: MII_PR_Onko_Systemische_Therapie
 Usage: #example
 Description: "Onkologie Test Systemische Therapie - Neoadjuvante Chemotherapie CarboTax"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #completed
 * category = $SCT#18629005 "Administration of drug or medicament"
 * code.coding[systemische_therapie_art] = $mii-cs-onko-therapie-typ#CH "Chemotherapie"
@@ -82,6 +85,7 @@ InstanceOf: MII_PR_Onko_Systemische_Therapie_Medikation
 Usage: #example
 Description: "Onkologie Test Medikation - Paclitaxel"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #completed
 * medicationCodeableConcept.coding[atcClassDe] = $ATC_DE#L01CD01 "Paclitaxel"
 * subject = Reference(mii-exa-test-data-onko-patient-1)
@@ -96,6 +100,7 @@ InstanceOf: MII_PR_Onko_Systemische_Therapie_Medikation
 Usage: #example
 Description: "Onkologie Test Medikation - Carboplatin"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #completed
 * medicationCodeableConcept.coding[atcClassDe] = $ATC_DE#L01XA02 "Carboplatin"
 * subject = Reference(mii-exa-test-data-onko-patient-1)
@@ -110,6 +115,7 @@ InstanceOf: MII_PR_Onko_Systemische_Therapie_Medikation
 Usage: #example
 Description: "Onkologie Test Medikation - Niraparib (PARP-Inhibitor)"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #completed
 * medicationCodeableConcept.coding[atcClassDe] = $ATC_DE#L01XK02 "Niraparib"
 * subject = Reference(mii-exa-test-data-onko-patient-1)
@@ -128,6 +134,7 @@ InstanceOf: MII_PR_Onko_Strahlentherapie_Bestrahlung_Strahlentherapie
 Usage: #example
 Description: "Onkologie Test Strahlentherapie Bestrahlung - mit allen Dosisangaben"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #completed
 * category = $SCT#1287742003 "Radiotherapy (procedure)"
 * code.coding[ops] = $OPS#8-522.6 "Hochvoltstrahlentherapie: Linearbeschleuniger mehr als 6 MeV Photonen oder schnelle Elektronen, bis zu 2 Bestrahlungsfelder"
@@ -167,6 +174,7 @@ InstanceOf: MII_PR_Onko_Strahlentherapie_Bestrahlung_Nuklearmedizin
 Usage: #example
 Description: "Onkologie Test Nuklearmedizinische Bestrahlung - Radiojod-Therapie Schilddrüse"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #completed
 * category = $SCT#399315003 "Radionuclide therapy"
 * code.coding[ops] = $OPS#8-531 "Radiojodtherapie"

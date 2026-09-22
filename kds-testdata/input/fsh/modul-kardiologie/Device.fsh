@@ -8,6 +8,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-kardio/St
 Usage: #example
 Description: "Kardio Device: Implantierbarer Kardioverter-Defibrillator (ICD)"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #active
 * expirationDate = "2033-03-12"
 * type = $sct20260701#72506001 "Implantable defibrillator, device (physical object)"
@@ -21,6 +22,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-kardio/St
 Usage: #example
 Description: "Kardio DeviceMetric: NBG-Schrittmachermodus des ICD"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * type = $11073-10101#730752 "MDC_IDC_SET_BRADY_MODE"
 * type.coding.version = "2024-12-05"
 * type.text = "Brady-Stimulationsmodus nach NBG-Standard"

@@ -8,6 +8,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/S
 Usage: #example
 Description: "ClinicalImpression: Rare disease assessment - all MS elements populated"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * identifier[+].system = "https://www.charite.de/fhir/sid/seltene-clinical-impression"
 * identifier[=].value = "SE-CI-2025-001"
 * status = #completed

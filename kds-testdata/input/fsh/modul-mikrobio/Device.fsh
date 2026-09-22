@@ -8,6 +8,7 @@ InstanceOf: Device
 Usage: #example
 Description: "Mikrobio Lab Analyzer: MALDI-TOF Massenspektrometer (Erreger-Identifikation)"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * identifier.system = "https://www.charite.de/fhir/sid/device-identifier"
 * identifier.value = "MALDI-TOF-001"
 * deviceName[+].name = "MALDI Biotyper"
@@ -20,6 +21,7 @@ InstanceOf: Device
 Usage: #example
 Description: "Mikrobio Lab Analyzer: Real-time-PCR-Cycler (molekulare Diagnostik)"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * identifier.system = "https://www.charite.de/fhir/sid/device-identifier"
 * identifier.value = "PCR-CYCLER-001"
 * deviceName[+].name = "Real-Time PCR Cycler"
@@ -31,6 +33,7 @@ InstanceOf: Device
 Usage: #example
 Description: "Mikrobio Lab Analyzer: Immunoassay-Analyzer (Serologie)"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * identifier.system = "https://www.charite.de/fhir/sid/device-identifier"
 * identifier.value = "IMMUNOASSAY-001"
 * deviceName[+].name = "Immunoassay Analyzer"
@@ -41,6 +44,7 @@ InstanceOf: ServiceRequest
 Usage: #example
 Description: "Mikrobio Auftrag: Blutkultur + Erregerdiagnostik"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * identifier.system = "https://www.charite.de/fhir/sid/service-request"
 * identifier.value = "MIKROBIO-SR-001"
 * status = #completed

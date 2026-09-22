@@ -7,6 +7,7 @@ InstanceOf: Bundle
 Usage: #example
 Description: "Bundle: ICU Testdaten Patient-1 (Standort B). COVID-19-Aufnahme."
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * type = #transaction
 * timestamp = "2025-06-18T13:51:00+02:00"
 * insert AddBundleEntry(mii-exa-test-data-icu-patient-1, Patient)

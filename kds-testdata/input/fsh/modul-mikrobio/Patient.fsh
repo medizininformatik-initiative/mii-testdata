@@ -8,6 +8,7 @@ InstanceOf: Patient
 Usage: #example
 Description: "Mikrobio Test Patient: Sepsis-Fall"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * identifier.system = "https://www.charite.de/fhir/sid/patientenidentifikation"
 * identifier.value = "MIKROBIO-TEST-001"
 * name.family = "Sepsis"
@@ -20,6 +21,7 @@ InstanceOf: Encounter
 Usage: #example
 Description: "Mikrobio Test Encounter: Stationärer Sepsis-Aufenthalt"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * identifier.system = "https://www.charite.de/fhir/sid/encounter-identifier"
 * identifier.value = "MIKROBIO-ENC-001"
 * status = #finished
@@ -33,6 +35,7 @@ InstanceOf: Organization
 Usage: #example
 Description: "Mikrobio Lab Organization: Mikrobiologisches Labor Charité"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * identifier.system = "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"
 * identifier.value = "DIZ-CHA"
 * name = "Mikrobiologisches Labor Charité"

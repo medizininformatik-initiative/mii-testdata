@@ -7,6 +7,7 @@ InstanceOf: Bundle
 Usage: #example
 Description: "Bundle: Lungenfunktion Testdaten Patient-1 (Spirometrie, Bodyplethysmographie, Diffusionsmessung und Methacholin-Provokationstest bei V.a. Asthma bronchiale)"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * type = #transaction
 * timestamp = "2025-02-18T13:00:00+01:00"
 * insert AddBundleEntry(mii-exa-test-data-lungenfunktion-patient-1, Patient)

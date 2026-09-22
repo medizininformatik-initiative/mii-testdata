@@ -8,6 +8,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfun
 Usage: #example
 Description: "Lungenfunktion Spirometrie-Messung"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #completed
 * category.coding[sct] = $sct20260701#23426006 "Measurement of respiratory function (procedure)"
 * code.coding[sct] = $sct20260701#127783003 "Spirometry (procedure)"
@@ -22,6 +23,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfun
 Usage: #example
 Description: "Lungenfunktion Bodyplethysmographie-Messung"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #completed
 * category.coding[sct] = $sct20260701#23426006 "Measurement of respiratory function (procedure)"
 * code.coding[sct] = $sct20260701#28275007 "Total body plethysmography (procedure)"
@@ -36,6 +38,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfun
 Usage: #example
 Description: "Lungenfunktion Diffusionsmessung (CO-Diffusionskapazitaet, Single-Breath)"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #completed
 * category.coding[sct] = $sct20260701#23426006 "Measurement of respiratory function (procedure)"
 * code.coding[sct] = $sct20260701#36421003 "Carbon monoxide diffusing capacity measurement (procedure)"
@@ -50,6 +53,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfun
 Usage: #example
 Description: "Lungenfunktion Provokationstest-Messung (Methacholin-Provokation)"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #completed
 * category.coding[sct].system = "http://snomed.info/sct"
 * category.coding[sct].code = #323426006

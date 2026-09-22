@@ -5,6 +5,7 @@ Usage: #example
 Description: "ServiceRequest: Kleines Blutbild für Patient 1"
 //* meta.profile[0] = "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ServiceRequestLab|1.0.7-alpha1"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #completed
 * intent = #order
 * identifier[anforderung].type = $v2-0203#PLAC
@@ -26,6 +27,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-labor/St
 Usage: #example
 Description: "ServiceRequest: Vollständiges Blutbild für Patient 2"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * identifier[anforderung].type = $v2-0203#PLAC
 * identifier[anforderung].system = "https://www.charite.de/fhir/sid/lab-requests"
 * identifier[anforderung].value = "LAB_000002"
@@ -48,6 +50,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-labor/St
 Usage: #example
 Description: "ServiceRequest: Vollständiges Blutbild für Patient 3"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * identifier[anforderung].type = $v2-0203#PLAC
 * identifier[anforderung].system = "https://www.charite.de/fhir/sid/lab-requests"
 * identifier[anforderung].value = "LAB_000003"
@@ -70,6 +73,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-labor/St
 Usage: #example
 Description: "ServiceRequest: Basisstoffwechsel für Patient 4"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * identifier[anforderung].type = $v2-0203#PLAC
 * identifier[anforderung].system = "https://www.charite.de/fhir/sid/lab-requests"
 * identifier[anforderung].value = "LAB_000004"
@@ -92,6 +96,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-labor/St
 Usage: #example
 Description: "ServiceRequest: Kleines Blutbild und Basisstoffwechsel für Patient 5"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * identifier[anforderung].type = $v2-0203#PLAC
 * identifier[anforderung].system = "https://www.charite.de/fhir/sid/lab-requests"
 * identifier[anforderung].value = "LAB_000005"
@@ -114,6 +119,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-labor/St
 Usage: #example
 Description: "ServiceRequest: Leberfunktionstest für Patient 6"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * identifier[anforderung].type = $v2-0203#PLAC
 * identifier[anforderung].system = "https://www.charite.de/fhir/sid/lab-requests"
 * identifier[anforderung].value = "LAB_000006"
@@ -136,6 +142,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-labor/St
 Usage: #example
 Description: "ServiceRequest: Kleines Blutbild und Entzündungsmarker für Patient 7"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * identifier[anforderung].type = $v2-0203#PLAC
 * identifier[anforderung].system = "https://www.charite.de/fhir/sid/lab-requests"
 * identifier[anforderung].value = "LAB_000007"
@@ -158,6 +165,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-labor/St
 Usage: #example
 Description: "ServiceRequest: Herzmarker-Panel für Patient 8"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * identifier[anforderung].type = $v2-0203#PLAC
 * identifier[anforderung].system = "https://www.charite.de/fhir/sid/lab-requests"
 * identifier[anforderung].value = "LAB_000008"
@@ -180,6 +188,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-labor/St
 Usage: #example
 Description: "ServiceRequest: Hormonpanel für Patient 9"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * identifier[anforderung].type = $v2-0203#PLAC
 * identifier[anforderung].system = "https://www.charite.de/fhir/sid/lab-requests"
 * identifier[anforderung].value = "LAB_000009"
@@ -202,6 +211,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-labor/St
 Usage: #example
 Description: "ServiceRequest: Basisstoffwechsel für Patient 10"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * identifier[anforderung].type = $v2-0203#PLAC
 * identifier[anforderung].system = "https://www.charite.de/fhir/sid/lab-requests"
 * identifier[anforderung].value = "LAB_000010"

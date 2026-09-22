@@ -12,6 +12,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/S
 Usage: #example
 Description: "Therapieempfehlung nicht-medikamentoes: Annual cardiac screening - all MS elements"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 // Extensions: Prioritaet, Publikation (Evidenzgraduierung nur auf RequestGroup/MedicationRequest erlaubt)
 * extension[+].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-ex-seltene-empfehlung-prioritaet"
 * extension[=].valuePositiveInt = 2
@@ -48,6 +49,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/S
 Usage: #example
 Description: "Studieneinschluss Anfrage: Clinical trial referral - all MS elements"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 // Extensions: statusReason, Prioritaet, Publikation
 * extension[+].url = "http://hl7.org/fhir/StructureDefinition/request-statusReason"
 * extension[=].valueCodeableConcept.coding = $sct#385645004 "Accepted"

@@ -9,6 +9,7 @@ InstanceOf: Patient
 Usage: #example
 Description: "ICU Test Patient (Standort B). Identisch mit Onko-Patient an Standort A (gemeinsame KVNR)."
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 // Standort-lokale Patienten-ID (Standort B)
 * identifier[+].system = "https://www.medizininformatik-initiative.de/fhir/sid/standort-b"
 * identifier[=].value = "ICU-TEST-001"
@@ -25,6 +26,7 @@ InstanceOf: Encounter
 Usage: #example
 Description: "ICU Test Encounter (Standort B) - Aufnahme wegen COVID-19"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #finished
 * class = http://terminology.hl7.org/CodeSystem/v3-ActCode#IMP "inpatient encounter"
 * subject = Reference(mii-exa-test-data-icu-patient-1)

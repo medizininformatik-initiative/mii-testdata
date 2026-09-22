@@ -7,6 +7,7 @@ InstanceOf: Bundle
 Usage: #example
 Description: "Bundle: Mikrobiologie Testdaten (Sepsis-Patient mit MRSA)"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * type = #transaction
 * timestamp = "2026-04-05T16:00:00+02:00"
 // Infrastructure

@@ -4,6 +4,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/St
 Usage: #example
 Description: "DiagnosticReport: Molekulargenetischer Befundbericht mit BRAF-Mutation"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * meta.profile[+] = "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-report"
 * extension[recommended-action][+].valueReference = Reference(mii-exa-test-data-patient-3-molgen-medikationsempfehlung-1)
 * extension[recommended-action][+].valueReference = Reference(mii-exa-test-data-patient-3-molgen-folgemassnahme-1)
@@ -36,6 +37,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/St
 Usage: #example
 Description: "DiagnosticReport: Molekulargenetischer Befundbericht Magenkarzinom"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * meta.profile[+] = "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-report"
 * extension[supportingInfo].valueReference = Reference(mii-exa-test-data-patient-4-molgen-family-member-history-1)
 * extension[genomic-study].url = "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-reference"

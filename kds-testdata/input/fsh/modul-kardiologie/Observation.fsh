@@ -11,6 +11,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-kardio/St
 Usage: #example
 Description: "Kardio LVEF: 38 % (reduzierte Ejektionsfraktion, HFrEF)"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * category[vs-cat] = $observation-category#imaging
 * code.coding[sct] = $sct20260701#250908004 "Left ventricular ejection fraction (observable entity)"
@@ -32,6 +33,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-kardio/St
 Usage: #example
 Description: "Kardio Score NYHA: Klasse II"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * category = $observation-category#survey
 * code.coding[sct] = $sct20260701#762994006 "New York Heart Association Classification class (observable entity)"
@@ -50,6 +52,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-kardio/St
 Usage: #example
 Description: "Kardio Score mRS: 1 (keine relevante Beeintraechtigung)"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * category = $observation-category#survey
 * code.coding[sct] = $sct20260701#1255866005 "Modified Rankin Scale score (observable entity)"
@@ -68,6 +71,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-kardio/St
 Usage: #example
 Description: "Kardio Anzahl KH-Aufenthalte wegen Herzinsuffizienz: 2 in den letzten 12 Monaten"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * code.coding[sct] = $sct20260701#298060002 "Number of admissions (observable entity)"
 * subject = Reference(mii-exa-test-data-kardiologie-patient-1)
@@ -83,6 +87,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-kardio/St
 Usage: #example
 Description: "Kardio Atherosklerotisches Erstereignis: KHK, Erstdiagnose 03/2020"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * code = $kardio-cs-atherosklerotisches-ereignis#ae "Atherosklerotisches Ereignis"
 * code.coding.version = "2027.0.0-ballot"
@@ -100,6 +105,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-kardio/St
 Usage: #example
 Description: "Kardio Nein/Unbekannt: Herztransplantation - nein"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * category = $observation-category#survey
 * code.coding[prozedurSnomed] = $sct20260701#32413006 "Transplantation of heart (procedure)"
@@ -116,6 +122,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-kardio/St
 Usage: #example
 Description: "Kardio Raucherstatus: Ex-Raucher, 30 Packungsjahre"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * category = $observation-category#social-history
 * code.coding[loinc] = $loinc#72166-2 "Tobacco smoking status"
@@ -139,6 +146,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-kardio/St
 Usage: #example
 Description: "Kardio Geraeteprogrammierung: Brady Pacing Mode VVI"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * code.coding[mdc] = $11073-10101#730752 "MDC_IDC_SET_BRADY_MODE"
 * code.coding[mdc].version = "2024-12-05"

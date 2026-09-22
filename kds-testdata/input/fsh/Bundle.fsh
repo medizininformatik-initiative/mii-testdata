@@ -26,6 +26,7 @@ InstanceOf: Bundle
 Usage: #example
 Description: "Bundle: Patient-1"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * type = #transaction
 * timestamp = "2025-06-18T13:51:00+02:00"
 * insert AddBundleEntry(mii-exa-test-data-patient-1, Patient)
@@ -175,6 +176,7 @@ InstanceOf: Bundle
 Usage: #example
 Description: "Bundle: Patient-2"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * type = #transaction
 * timestamp = "2025-06-18T13:53:00+02:00"
 
@@ -250,6 +252,7 @@ InstanceOf: Bundle
 Usage: #example
 Description: "Bundle: Patient-3"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * type = #transaction
 * timestamp = "2025-06-18T13:51:00+02:00"
 
@@ -368,6 +371,7 @@ InstanceOf: Bundle
 Usage: #example
 Description: "Bundle: Patient-4"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * type = #transaction
 * timestamp = "2025-06-18T13:54:00+02:00"
 
@@ -446,6 +450,7 @@ InstanceOf: Bundle
 Usage: #example
 Description: "Bundle: Patient-5"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * type = #transaction
 * timestamp = "2025-06-18T13:55:00+02:00"
 
@@ -514,6 +519,7 @@ InstanceOf: Bundle
 Usage: #example
 Description: "Bundle: Patient-6"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * type = #transaction
 * timestamp = "2025-06-18T13:56:00+02:00"
 
@@ -586,6 +592,7 @@ InstanceOf: Bundle
 Usage: #example
 Description: "Bundle: Patient-7"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * type = #transaction
 * timestamp = "2025-06-18T13:57:00+02:00"
 
@@ -654,6 +661,7 @@ InstanceOf: Bundle
 Usage: #example
 Description: "Bundle: Patient-8"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * type = #transaction
 * timestamp = "2025-06-18T13:58:00+02:00"
 
@@ -727,6 +735,7 @@ InstanceOf: Bundle
 Usage: #example
 Description: "Bundle: Patient-9"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * type = #transaction
 * timestamp = "2025-06-18T13:59:00+02:00"
 
@@ -795,6 +804,7 @@ InstanceOf: Bundle
 Usage: #example
 Description: "Bundle: Patient-10"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * type = #transaction
 * timestamp = "2025-06-18T14:00:00+02:00"
 
@@ -876,6 +886,7 @@ InstanceOf: Bundle
 Usage: #example
 Description: "Bundle: Patient-11"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * type = #transaction
 * timestamp = "2025-10-31T14:17:00+01:00"
 

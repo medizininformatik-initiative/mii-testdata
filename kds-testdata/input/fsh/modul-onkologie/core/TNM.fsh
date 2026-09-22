@@ -8,6 +8,7 @@ InstanceOf: MII_PR_Onko_TNM_T_Kategorie
 Usage: #example
 Description: "Onkologie Test TNM T-Kategorie - pT3c"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * code.extension[cpPraefix].valueCodeableConcept = $UICC#p "p"
 * code.coding = $SCT#384625004 "pT category"
@@ -24,6 +25,7 @@ InstanceOf: MII_PR_Onko_TNM_N_Kategorie
 Usage: #example
 Description: "Onkologie Test TNM N-Kategorie - pN1"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * code.extension[cpPraefix].valueCodeableConcept = $UICC#p "p"
 * code.coding = $SCT#371494008 "pN category (observable entity)"
@@ -42,6 +44,7 @@ InstanceOf: MII_PR_Onko_TNM_M_Kategorie
 Usage: #example
 Description: "Onkologie Test TNM M-Kategorie - pM1b"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * code.extension[cpPraefix].valueCodeableConcept = $UICC#p "p"
 * code.coding = $SCT#371497001 "pM category"
@@ -61,6 +64,7 @@ InstanceOf: MII_PR_Onko_TNM_L_Kategorie
 Usage: #example
 Description: "Onkologie Test TNM L-Kategorie - L1"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * code.coding = $SCT#395715009 "Status of lymphatic (small vessel) invasion by tumor"
 * subject = Reference(mii-exa-test-data-onko-patient-1)
@@ -76,6 +80,7 @@ InstanceOf: MII_PR_Onko_TNM_V_Kategorie
 Usage: #example
 Description: "Onkologie Test TNM V-Kategorie - V0"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * code.coding = $SCT#371493002 "Status of venous (large vessel) invasion by tumor"
 * subject = Reference(mii-exa-test-data-onko-patient-1)
@@ -91,6 +96,7 @@ InstanceOf: MII_PR_Onko_TNM_Pn_Kategorie
 Usage: #example
 Description: "Onkologie Test TNM Pn-Kategorie - Pn0"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * code.coding = $SCT#371513001 "Presence of direct invasion by primary malignant neoplasm to nerve"
 * subject = Reference(mii-exa-test-data-onko-patient-1)
@@ -106,6 +112,7 @@ InstanceOf: MII_PR_Onko_TNM_S_Kategorie
 Usage: #example
 Description: "Onkologie Test TNM S-Kategorie - S1"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * code.coding = $SCT#399424006 "Serum tumor marker category"
 * subject = Reference(mii-exa-test-data-onko-patient-1)
@@ -121,6 +128,7 @@ InstanceOf: MII_PR_Onko_TNM_y_Symbol
 Usage: #example
 Description: "Onkologie Test TNM y-Symbol - Zustand nach neoadjuvanter Therapie"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * code.coding = $LNC#101658-3 "Cancer staging after multimodality therapy"
 * subject = Reference(mii-exa-test-data-onko-patient-1)
@@ -136,6 +144,7 @@ InstanceOf: MII_PR_Onko_TNM_r_Symbol
 Usage: #example
 Description: "Onkologie Test TNM r-Symbol - kein Rezidiv"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * code.coding = $LNC#101659-1 "Cancer staging after tumor recurrence"
 * subject = Reference(mii-exa-test-data-onko-patient-1)
@@ -151,6 +160,7 @@ InstanceOf: MII_PR_Onko_TNM_a_Symbol
 Usage: #example
 Description: "Onkologie Test TNM a-Symbol - keine Autopsie"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * code.coding = $LNC#101660-9 "Cancer staging during autopsy"
 * subject = Reference(mii-exa-test-data-onko-patient-1)
@@ -166,6 +176,7 @@ InstanceOf: MII_PR_Onko_TNM_m_Symbol
 Usage: #example
 Description: "Onkologie Test TNM m-Symbol - multiple Primärtumoren"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * code.coding = $LNC#42030-7 "Multiple tumors reported as single primary Cancer"
 * subject = Reference(mii-exa-test-data-onko-patient-1)
@@ -181,6 +192,7 @@ InstanceOf: MII_PR_Onko_TNM_Klassifikation
 Usage: #example
 Description: "Onkologie Test TNM Klassifikation - ypT3c pN1 M1b, Stadium IVB"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * code.coding = $SCT#399588009 "Pathologic TNM stage grouping"
 * subject = Reference(mii-exa-test-data-onko-patient-1)
@@ -208,6 +220,7 @@ InstanceOf: MII_PR_Onko_TNM_N_Kategorie
 Usage: #example
 Description: "Onkologie Test TNM N-Kategorie - pN0(i-)(sn) Sentinel Node"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * code.extension[cpPraefix].valueCodeableConcept = $UICC#p "p"
 * code.coding = $SCT#371494008 "pN category (observable entity)"

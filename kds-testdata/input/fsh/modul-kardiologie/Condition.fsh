@@ -9,6 +9,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-kardio/St
 Usage: #example
 Description: "Kardio Diagnose: Akuter transmuraler Myokardinfarkt der Vorderwand"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * clinicalStatus = $condition-clinical#active
 * verificationStatus = $condition-ver-status#confirmed
 * code.coding[icd10-gm] = $icd-10-gm#I21.0 "Akuter transmuraler Myokardinfarkt der Vorderwand"
@@ -29,6 +30,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-kardio/St
 Usage: #example
 Description: "Kardio Diagnose: Hirninfarkt durch embolischen Verschluss zerebraler Arterien (eg-cv)"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * clinicalStatus = $condition-clinical#active
 * verificationStatus = $condition-ver-status#confirmed
 * code.coding[icd10-gm] = $icd-10-gm#I63.4 "Hirninfarkt durch Embolie zerebraler Arterien"
@@ -49,6 +51,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-kardio/St
 Usage: #example
 Description: "Kardio Klappenvitium: hoehergradige Aortenklappenstenose"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * clinicalStatus = $condition-clinical#active
 * verificationStatus = $condition-ver-status#confirmed
 * code.coding[icd10-gm] = $icd-10-gm#I35.0 "Aortenklappenstenose"

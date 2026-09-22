@@ -7,6 +7,7 @@ InstanceOf: Bundle
 Usage: #example
 Description: "Bundle: Kardiologie Testdaten Patient-1 (KHK mit Z.n. Myokardinfarkt, Aortenklappenstenose, Herzinsuffizienz NYHA II, Z.n. embolischem zerebrovaskulaerem Ereignis, ICD-Implantation)"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * type = #transaction
 * timestamp = "2025-03-18T12:00:00+01:00"
 * insert AddBundleEntry(mii-exa-test-data-kardiologie-patient-1, Patient)

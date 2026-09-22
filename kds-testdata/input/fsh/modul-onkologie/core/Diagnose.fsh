@@ -8,6 +8,7 @@ InstanceOf: MII_PR_Onko_Diagnose_Primaertumor
 Usage: #example
 Description: "Onkologie Test Diagnose - Ovarialkarzinom"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * extension[Feststellungsdatum].valueDateTime = "2021-06-10"
 * clinicalStatus = $condition-clinical#active
 * verificationStatus.coding[condition-ver-status] = $condition-ver-status#confirmed
@@ -27,6 +28,7 @@ InstanceOf: MII_PR_Onko_Fruehere_Tumorerkrankung
 Usage: #example
 Description: "Onkologie Test - Frühere Tumorerkrankung"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * extension[assertedDate].valueDateTime = "2015-03-01"
 * clinicalStatus = $condition-clinical#remission
 * verificationStatus = $condition-ver-status#confirmed
@@ -48,6 +50,7 @@ InstanceOf: MII_PR_Onko_Liste_Evidenz_Erstdiagnose
 Usage: #example
 Description: "Onkologie Test - Liste Evidenz Erstdiagnose"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #current
 * mode = #snapshot
 * title = "Liste der Evidenz zum Erstdiagnosezeitpunkt"

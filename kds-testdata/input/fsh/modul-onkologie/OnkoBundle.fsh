@@ -9,6 +9,7 @@ Usage: #example
 Title: "MII Onkologie Test Data Bundle"
 Description: "Vollständiges Transaktionsbundle mit allen Onkologie-Testdaten für den Upload auf einen FHIR-Server"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * type = #transaction
 * timestamp = "2025-01-03T10:00:00+01:00"
 

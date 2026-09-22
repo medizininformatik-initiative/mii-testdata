@@ -11,7 +11,8 @@
     ],
     "profile": [
       "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-behandlungsepisode"
-    ]
+    ],
+    "source": "https://www.charite.de/fhir/kds-testdata"
   },
   "effectivePeriod": {
     "start": "2024-01-15",

@@ -8,6 +8,7 @@ InstanceOf: MII_PR_Onko_Specimen
 Usage: #example
 Description: "Onkologie Test Specimen - Tumorresektat"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * identifier.value = "ONKO-SPECIMEN-001"
 * accessionIdentifier.system = "https://www.charite.de/fhir/sid/accession"
 * accessionIdentifier.value = "PATH-2021-12345"
@@ -22,6 +23,7 @@ InstanceOf: MII_PR_Onko_Befund
 Usage: #example
 Description: "Onkologie Test Befund - Pathologiebericht"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * code.coding[pathology-report] = $LNC#22034-3 "Pathology report Cancer Narrative"
 * subject = Reference(mii-exa-test-data-onko-patient-1)
@@ -36,6 +38,7 @@ InstanceOf: MII_PR_Onko_Grading
 Usage: #example
 Description: "Onkologie Test Grading - G3"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * category[laboratory] = $observation-category#laboratory
 * code.coding[loinc] = $LNC#33732-9 "Histology grade [Identifier] in Cancer specimen"
@@ -52,6 +55,7 @@ InstanceOf: MII_PR_Onko_Tumorgroesse
 Usage: #example
 Description: "Onkologie Test Tumorgröße - 22mm"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * code.coding[loinc] = $LNC#21889-1 "Size Tumor"
 * code.coding[snomed] = $SCT#371479009 "Tumor size, largest dimension (observable entity)"
@@ -72,6 +76,7 @@ InstanceOf: MII_PR_Onko_Histologie_ICDO3
 Usage: #example
 Description: "Onkologie Test Histologie ICD-O-3 - Seröses Adenokarzinom"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * code.coding = $LNC#59847-4 "Histology and Behavior ICD-O-3 Cancer"
 * subject = Reference(mii-exa-test-data-onko-patient-1)
@@ -90,6 +95,7 @@ InstanceOf: MII_PR_Onko_Anzahl_Untersuchte_Lymphknoten
 Usage: #example
 Description: "Onkologie Test - Anzahl untersuchte Lymphknoten"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * category[laboratory] = $observation-category#laboratory
 * code.coding[loinc] = $LNC#21894-1 "Regional lymph nodes examined [#] Specimen"
@@ -108,6 +114,7 @@ InstanceOf: MII_PR_Onko_Anzahl_Befallene_Lymphknoten
 Usage: #example
 Description: "Onkologie Test - Anzahl befallene Lymphknoten"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * category[laboratory] = $observation-category#laboratory
 * code.coding[loinc] = $LNC#21893-3 "Regional lymph nodes positive [#] Specimen"
@@ -126,6 +133,7 @@ InstanceOf: MII_PR_Onko_Anzahl_Untersuchte_Sentinel_Lymphknoten
 Usage: #example
 Description: "Onkologie Test - Anzahl untersuchte Sentinel-Lymphknoten"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * category[laboratory] = $observation-category#laboratory
 * code.coding[loinc] = $LNC#85347-3 "Sentinel lymph nodes examined [#] in Cancer specimen by Light microscopy"
@@ -144,6 +152,7 @@ InstanceOf: MII_PR_Onko_Anzahl_Befallene_Sentinel_Lymphknoten
 Usage: #example
 Description: "Onkologie Test - Anzahl befallene Sentinel-Lymphknoten"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * category[laboratory] = $observation-category#laboratory
 * code.coding[loinc] = $LNC#92832-5 "Sentinel lymph nodes with metastasis [#] in Cancer specimen"

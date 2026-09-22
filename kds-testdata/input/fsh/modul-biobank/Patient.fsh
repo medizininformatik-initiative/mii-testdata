@@ -7,6 +7,7 @@ InstanceOf: Patient
 Usage: #example
 Description: "Biobank Test Patient 1"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * identifier.system = "https://www.charite.de/fhir/sid/patientenidentifikation"
 * identifier.value = "BIO-TEST-001"
 * name.family = "Musterfrau"
@@ -19,6 +20,7 @@ InstanceOf: Patient
 Usage: #example
 Description: "Biobank Test Patient 2"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * identifier.system = "https://www.charite.de/fhir/sid/patientenidentifikation"
 * identifier.value = "BIO-TEST-002"
 * name.family = "Testfall"
@@ -31,6 +33,7 @@ InstanceOf: Patient
 Usage: #example
 Description: "Biobank Test Patient 3"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * identifier.system = "https://www.charite.de/fhir/sid/patientenidentifikation"
 * identifier.value = "BIO-TEST-003"
 * name.family = "Spender"
@@ -43,6 +46,7 @@ InstanceOf: Patient
 Usage: #example
 Description: "Biobank Test Patient 4"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * identifier.system = "https://www.charite.de/fhir/sid/patientenidentifikation"
 * identifier.value = "BIO-TEST-004"
 * name.family = "Probenspender"
@@ -55,6 +59,7 @@ InstanceOf: Patient
 Usage: #example
 Description: "Biobank Test Patient 5"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * identifier.system = "https://www.charite.de/fhir/sid/patientenidentifikation"
 * identifier.value = "BIO-TEST-005"
 * name.family = "Gewebe"
@@ -67,6 +72,7 @@ InstanceOf: Patient
 Usage: #example
 Description: "Biobank Test Patient 6"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * identifier.system = "https://www.charite.de/fhir/sid/patientenidentifikation"
 * identifier.value = "BIO-TEST-006"
 * name.family = "Blutprobe"
@@ -79,6 +85,7 @@ InstanceOf: Patient
 Usage: #example
 Description: "Biobank Test Patient 7"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * identifier.system = "https://www.charite.de/fhir/sid/patientenidentifikation"
 * identifier.value = "BIO-TEST-007"
 * name.family = "Serum"
@@ -91,6 +98,7 @@ InstanceOf: Patient
 Usage: #example
 Description: "Biobank Test Patient 8"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * identifier.system = "https://www.charite.de/fhir/sid/patientenidentifikation"
 * identifier.value = "BIO-TEST-008"
 * name.family = "Plasma"
@@ -103,6 +111,7 @@ InstanceOf: Patient
 Usage: #example
 Description: "Biobank Test Patient 9"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * identifier.system = "https://www.charite.de/fhir/sid/patientenidentifikation"
 * identifier.value = "BIO-TEST-009"
 * name.family = "Biopsie"
@@ -117,6 +126,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-diagnose
 Usage: #example
 Description: "Biobank Diagnose Patient 1: Kolonkarzinom"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * clinicalStatus = $condition-clinical#active
 * verificationStatus = $condition-ver-status#confirmed
 * code.coding[icd10-gm] = $icd-10-gm#C18.9 "Bösartige Neubildung: Kolon, nicht näher bezeichnet"

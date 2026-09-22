@@ -7,6 +7,7 @@ InstanceOf: Patient
 Usage: #example
 Description: "Patho Test Patient"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * identifier.system = "https://www.charite.de/fhir/sid/patientenidentifikation"
 * identifier.value = "PATH-TEST-001"
 * name.family = "Gewebeprobe"
@@ -19,6 +20,7 @@ InstanceOf: Encounter
 Usage: #example
 Description: "Patho Test Encounter"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #finished
 * class = http://terminology.hl7.org/CodeSystem/v3-ActCode#IMP "inpatient encounter"
 * subject = Reference(mii-exa-test-data-patho-patient-1)

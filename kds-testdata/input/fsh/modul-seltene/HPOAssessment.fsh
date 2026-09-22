@@ -11,6 +11,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/S
 Usage: #example
 Description: "HPO Assessment: Aortic root aneurysm (Present) - all optional fields populated"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * code = $HPO#HP:0002616 "Aortic root aneurysm"
 * subject = Reference(mii-exa-test-data-seltene-patient-1)
@@ -29,6 +30,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/S
 Usage: #example
 Description: "HPO Assessment: Arachnodactyly (Absent) - excluded phenotype"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * code = $HPO#HP:0001166 "Arachnodactyly"
 * subject = Reference(mii-exa-test-data-seltene-patient-1)
@@ -45,6 +47,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/S
 Usage: #example
 Description: "HPO Assessment: Ectopia lentis (Present, Moderate severity, with change status interpretation)"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * code = $HPO#HP:0001083 "Ectopia lentis"
 * subject = Reference(mii-exa-test-data-seltene-patient-1)
@@ -65,6 +68,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/S
 Usage: #example
 Description: "HPO Assessment: Tall stature (Present, effectivePeriod) - tests effectivePeriod slice"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * code = $HPO#HP:0000098 "Tall stature"
 * subject = Reference(mii-exa-test-data-seltene-patient-1)

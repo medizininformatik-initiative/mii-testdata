@@ -8,6 +8,7 @@ InstanceOf: MII_PR_Onko_Mamma_Menopausenstatus
 Usage: #example
 Description: "Onkologie Test Mamma Menopausenstatus - Prämenopausal"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * code = $SCT#161712005 "Menopause, function (observable entity)"
 * subject = Reference(mii-exa-test-data-onko-patient-1)
@@ -21,6 +22,7 @@ InstanceOf: MII_PR_Onko_Mamma_Rezeptorstatus_Estrogen
 Usage: #example
 Description: "Onkologie Test Mamma Östrogenrezeptorstatus - Positiv"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * code = $LNC#40556-3 "Estrogen receptor Ag [Presence] in Tissue by Immune stain"
 * subject = Reference(mii-exa-test-data-onko-patient-1)
@@ -40,6 +42,7 @@ InstanceOf: MII_PR_Onko_Mamma_Rezeptorstatus_Progesteron
 Usage: #example
 Description: "Onkologie Test Mamma Progesteronrezeptorstatus - Positiv"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * code = $LNC#85339-0 "Progesterone receptor Ag [Presence] in Breast cancer specimen by Immune stain"
 * subject = Reference(mii-exa-test-data-onko-patient-1)
@@ -58,6 +61,7 @@ InstanceOf: MII_PR_Onko_Mamma_Her2neu_Status
 Usage: #example
 Description: "Onkologie Test Mamma Her2neu Status - Negativ"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * code = $LNC#48676-1 "HER2 Ag [Interpretation] in Tissue"
 * subject = Reference(mii-exa-test-data-onko-patient-1)
@@ -74,6 +78,7 @@ InstanceOf: MII_PR_Onko_Mamma_Her2neu_Status
 Usage: #example
 Description: "Onkologie Test Mamma Her2neu Status - Positiv (3+)"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * code = $LNC#48676-1 "HER2 Ag [Interpretation] in Tissue"
 * subject = Reference(mii-exa-test-data-onko-patient-1)
@@ -92,6 +97,7 @@ InstanceOf: MII_PR_Onko_Mamma_Praeoperative_Markierung
 Usage: #example
 Description: "Onkologie Test Mamma Präoperative Markierung - Drahtmarkierung"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #completed
 * category = $SCT#103693007 "Diagnostic procedure (procedure)"
 * code = $SCT#433222002 "Insertion of guide wire into breast using ultrasound guidance (procedure)"
@@ -106,6 +112,7 @@ InstanceOf: MII_PR_Onko_Mamma_Operation
 Usage: #example
 Description: "Onkologie Test Mamma Operation - Brusterhaltende Therapie"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #completed
 * category = $SCT#387713003 "Surgical procedure"
 * code = $SCT#392021009 "Lumpectomy of breast (procedure)"
@@ -124,6 +131,7 @@ InstanceOf: MII_PR_Onko_Mamma_Sozialdienst
 Usage: #example
 Description: "Onkologie Test Mamma Sozialdienst - Psychosoziale Beratung"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #completed
 * category = $SCT#387713003 "Surgical procedure"
 * subject = Reference(mii-exa-test-data-onko-patient-1)

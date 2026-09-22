@@ -7,6 +7,7 @@ InstanceOf: Bundle
 Usage: #example
 Description: "Bundle: Molekulargenetik Testdaten Patient-3 und Patient-4"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * type = #transaction
 * timestamp = "2025-06-18T13:51:00+02:00"
 * insert AddBundleEntry(mii-exa-test-data-molgen-patient-1, Patient)

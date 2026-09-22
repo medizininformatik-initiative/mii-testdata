@@ -8,6 +8,7 @@ InstanceOf: MII_PR_Onko_Prostata_PSA
 Usage: #example
 Description: "Onkologie Test Prostata PSA bei Diagnose"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * code = $LNC#2857-1 "Prostate specific Ag [Mass/volume] in Serum or Plasma"
 * subject = Reference(mii-exa-test-data-onko-patient-1)
@@ -22,6 +23,7 @@ InstanceOf: MII_PR_Onko_Prostata_Anzahl_Stanzen
 Usage: #example
 Description: "Onkologie Test Prostata Anzahl Stanzen"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * code.coding = $LNC#44652-6 "Total number of cores in Tissue core"
 * subject = Reference(mii-exa-test-data-onko-patient-1)
@@ -35,6 +37,7 @@ InstanceOf: MII_PR_Onko_Prostata_Anzahl_Positive_Stanzen
 Usage: #example
 Description: "Onkologie Test Prostata Anzahl Positiver Stanzen"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * code.coding = $LNC#44651-8 "Tissue cores.positive.carcinoma in Tissue core"
 * subject = Reference(mii-exa-test-data-onko-patient-1)
@@ -48,6 +51,7 @@ InstanceOf: MII_PR_Onko_Prostata_CA_Befall_Stanze
 Usage: #example
 Description: "Onkologie Test Prostata Ca-Befall stärkstbefallene Stanze"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * code.coding = $LNC#44654-2 "Tissue involved by tumor in Prostate tumor"
 * subject = Reference(mii-exa-test-data-onko-patient-1)
@@ -64,6 +68,7 @@ InstanceOf: MII_PR_Onko_Prostata_Gleason_Pattern
 Usage: #example
 Description: "Onkologie Test Prostata Gleason Primary Pattern (3)"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * code = $SCT#384994009 "Primary Gleason pattern (observable entity)"
 * subject = Reference(mii-exa-test-data-onko-patient-1)
@@ -78,6 +83,7 @@ InstanceOf: MII_PR_Onko_Prostata_Gleason_Pattern
 Usage: #example
 Description: "Onkologie Test Prostata Gleason Secondary Pattern (4)"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * code = $SCT#384995005 "Secondary Gleason pattern (observable entity)"
 * subject = Reference(mii-exa-test-data-onko-patient-1)
@@ -91,6 +97,7 @@ InstanceOf: MII_PR_Onko_Prostata_Gleason_Grade_Group
 Usage: #example
 Description: "Onkologie Test Prostata Gleason Grade Group 2 (3+4=7)"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * code = $SCT#1812491000004107 "Histologic grade of primary malignant neoplasm of prostate by International Society of Urological Pathology technique (observable entity)"
 * subject = Reference(mii-exa-test-data-onko-patient-1)
@@ -106,6 +113,7 @@ InstanceOf: MII_PR_Onko_Prostata_Operation
 Usage: #example
 Description: "Onkologie Test Prostata OP - Radikale Prostatektomie"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #completed
 * category = $SCT#387713003 "Surgical procedure"
 * code.coding[ops] = $OPS#5-604.0 "Radikale Prostatovesikulektomie: Retropubisch"
@@ -122,6 +130,7 @@ InstanceOf: MII_PR_Onko_Prostata_Clavien_Dindo
 Usage: #example
 Description: "Onkologie Test Prostata OP Komplikation - Clavien-Dindo IIIa"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
 * code.coding = $SCT#789279006 "Clavien-Dindo classification grade (observable entity)"
 * subject = Reference(mii-exa-test-data-onko-patient-1)

@@ -5,6 +5,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/St
 Usage: #example
 Description: "Observation: Therapeutische Implikation fuer BRAF-Mutation"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * meta.profile[+] = "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/therapeutic-implication"
 * code = $tbd-codes-cs#therapeutic-implication "Therapeutic Implication"
 * category[labCategory] = $observation-category#laboratory "Laboratory"
@@ -36,6 +37,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/St
 Usage: #example
 Description: "Observation: Therapeutische Implikation fuer EGFR L858R bei NSCLC Stadium IV"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * meta.profile[+] = "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/therapeutic-implication"
 * extension[workflow-relatedArtifact].valueRelatedArtifact.type = $related-artifact-type#citation "Citation"
 * extension[workflow-relatedArtifact].valueRelatedArtifact.citation = "Ramalingam SS et al. Overall Survival with Osimertinib in Untreated, EGFR-Mutated Advanced NSCLC. N Engl J Med. 2020;382(1):41-50. PMID 31751012"
@@ -65,6 +67,7 @@ InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/St
 Usage: #example
 Description: "Observation: Therapeutische Implikation fuer EGFR Exon-20-Insertion bei NSCLC - Amivantamab"
 * insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
 * meta.profile[+] = "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/therapeutic-implication"
 * extension[workflow-relatedArtifact].valueRelatedArtifact.type = $related-artifact-type#citation "Citation"
 * extension[workflow-relatedArtifact].valueRelatedArtifact.citation = "Park K et al. Amivantamab in EGFR Exon 20 Insertion-Mutated Non-Small-Cell Lung Cancer Progressing on Platinum Chemotherapy (CHRYSALIS). J Clin Oncol. 2021;39(30):3391-3402. PMID 34339292"
