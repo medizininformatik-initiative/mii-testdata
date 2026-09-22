@@ -8,12 +8,28 @@ To enable reliable development and testing of the Medical Informatics Initiative
 
 ### Test Data Requirements
 
-The following requirements apply to all test data contributions:
+Test data consists of two complementary layers with different goals. Contributions SHOULD state which layer they address.
 
-- **Profile Coverage**: For each published profile, at least one instance conforming to that profile MUST be present in the test data.
-- **Must Support Elements**: Every element marked with Must Support (MS) in a profile MUST be correctly populated in at least one instance.
-- **Referential Integrity**: The referential integrity of the provided instances MUST be ensured. This means references MUST resolve and the target resource of a reference MUST be present in the test data.
-- **Bundle Structure**: Test data is published as one Bundle resource per patient. Instances CAN be added to an existing bundle. Alternatively, a module CAN provide its own complete bundle.
+#### Patient bundles — clinical layer
+
+The numbered patient bundles (`mii-exa-test-data-bundle-pat-*`) represent clinically plausible, longitudinal patient stories. Their purpose is to test the interplay of the CDS modules, not the completeness of any single profile.
+
+- **Clinical Plausibility**: The resources of one patient MUST form a coherent clinical story — a consistent timeline, and diagnoses, procedures, medications and observations that plausibly belong together.
+- **Referential Integrity**: References MUST resolve and the target resource of a reference MUST be present in the test data.
+- **Bundle Structure**: One Bundle resource (type=transaction, request.method=POST) per patient. Instances CAN be added to an existing patient bundle if they fit its clinical story.
+- Profile coverage and Must-Support completeness are explicitly NOT goals of this layer — do not add clinically implausible instances to a patient bundle just to cover a profile.
+
+#### Module bundles — technical layer
+
+Modules provide technical test instances whose purpose is measurable coverage of their published profiles. Clinical plausibility is secondary here; combinations that would never occur in one real patient are acceptable (e.g. instances for all ICU Observation profiles).
+
+- **Profile Coverage**: For each published profile of the module, at least one conforming instance MUST be present.
+- **Must Support Coverage**: Every element marked with Must Support (MS) MUST be correctly populated in at least one instance. Coverage — the share of a module's MS elements populated by its test data — is the completeness metric of this layer and SHOULD be reported per module.
+- **Referential Integrity**: References MUST resolve within the module's test data.
+- **Bundle Structure**: A module CAN provide its own complete bundle(s), one per synthetic patient.
+
+#### Common requirements
+
 - **Repository Structure**: Test data is provided via this GitHub repository under the path `kds-testdata`.
 - **Data Formats**: Test data CAN be created using:
   - FHIR Shorthand (FSH) in `kds-testdata/input/fsh` (recommended)
