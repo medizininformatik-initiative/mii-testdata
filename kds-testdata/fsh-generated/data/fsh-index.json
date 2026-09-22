@@ -56,6 +56,14 @@
     "endLine": 93
   },
   {
+    "outputFile": "Bundle-mii-exa-test-data-bundle-isik-vitalparameter-1.json",
+    "fshName": "mii-exa-test-data-bundle-isik-vitalparameter-1",
+    "fshType": "Instance",
+    "fshFile": "modul-isik-vitalparameter/Bundle.fsh",
+    "startLine": 5,
+    "endLine": 25
+  },
+  {
     "outputFile": "Bundle-mii-exa-test-data-bundle-kardiologie-1.json",
     "fshName": "mii-exa-test-data-bundle-kardiologie-1",
     "fshType": "Instance",
@@ -1054,6 +1062,14 @@
     "fshFile": "modul-icu/Patient.fsh",
     "startLine": 24,
     "endLine": 38
+  },
+  {
+    "outputFile": "Encounter-mii-exa-test-data-isik-vitalparameter-encounter-1.json",
+    "fshName": "mii-exa-test-data-isik-vitalparameter-encounter-1",
+    "fshType": "Instance",
+    "fshFile": "modul-isik-vitalparameter/Patient.fsh",
+    "startLine": 23,
+    "endLine": 33
   },
   {
     "outputFile": "Encounter-mii-exa-test-data-kardiologie-encounter-1.json",
@@ -2454,6 +2470,86 @@
     "fshFile": "modul-bildgebung/Patient.fsh",
     "startLine": 42,
     "endLine": 51
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-isik-vitalparameter-atemfrequenz-1.json",
+    "fshName": "mii-exa-test-data-isik-vitalparameter-atemfrequenz-1",
+    "fshType": "Instance",
+    "fshFile": "modul-isik-vitalparameter/Observation.fsh",
+    "startLine": 11,
+    "endLine": 27
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-isik-vitalparameter-blutdruck-1.json",
+    "fshName": "mii-exa-test-data-isik-vitalparameter-blutdruck-1",
+    "fshType": "Instance",
+    "fshFile": "modul-isik-vitalparameter/Observation.fsh",
+    "startLine": 49,
+    "endLine": 73
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-isik-vitalparameter-ekg-1.json",
+    "fshName": "mii-exa-test-data-isik-vitalparameter-ekg-1",
+    "fshType": "Instance",
+    "fshFile": "modul-isik-vitalparameter/Observation.fsh",
+    "startLine": 199,
+    "endLine": 232
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-isik-vitalparameter-gcs-1.json",
+    "fshName": "mii-exa-test-data-isik-vitalparameter-gcs-1",
+    "fshType": "Instance",
+    "fshFile": "modul-isik-vitalparameter/Observation.fsh",
+    "startLine": 173,
+    "endLine": 195
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-isik-vitalparameter-herzfrequenz-1.json",
+    "fshName": "mii-exa-test-data-isik-vitalparameter-herzfrequenz-1",
+    "fshType": "Instance",
+    "fshFile": "modul-isik-vitalparameter/Observation.fsh",
+    "startLine": 30,
+    "endLine": 46
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-isik-vitalparameter-koerpergewicht-1.json",
+    "fshName": "mii-exa-test-data-isik-vitalparameter-koerpergewicht-1",
+    "fshType": "Instance",
+    "fshFile": "modul-isik-vitalparameter/Observation.fsh",
+    "startLine": 96,
+    "endLine": 112
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-isik-vitalparameter-koerpergroesse-1.json",
+    "fshName": "mii-exa-test-data-isik-vitalparameter-koerpergroesse-1",
+    "fshType": "Instance",
+    "fshFile": "modul-isik-vitalparameter/Observation.fsh",
+    "startLine": 115,
+    "endLine": 131
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-isik-vitalparameter-koerperkerntemperatur-1.json",
+    "fshName": "mii-exa-test-data-isik-vitalparameter-koerperkerntemperatur-1",
+    "fshType": "Instance",
+    "fshFile": "modul-isik-vitalparameter/Observation.fsh",
+    "startLine": 134,
+    "endLine": 151
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-isik-vitalparameter-kopfumfang-1.json",
+    "fshName": "mii-exa-test-data-isik-vitalparameter-kopfumfang-1",
+    "fshType": "Instance",
+    "fshFile": "modul-isik-vitalparameter/Observation.fsh",
+    "startLine": 154,
+    "endLine": 170
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-isik-vitalparameter-sauerstoffsaettigung-1.json",
+    "fshName": "mii-exa-test-data-isik-vitalparameter-sauerstoffsaettigung-1",
+    "fshType": "Instance",
+    "fshFile": "modul-isik-vitalparameter/Observation.fsh",
+    "startLine": 76,
+    "endLine": 93
   },
   {
     "outputFile": "Observation-mii-exa-test-data-kardiologie-erstereignis-1.json",
@@ -5542,6 +5638,14 @@
     "fshFile": "modul-icu/Patient.fsh",
     "startLine": 7,
     "endLine": 22
+  },
+  {
+    "outputFile": "Patient-mii-exa-test-data-isik-vitalparameter-patient-1.json",
+    "fshName": "mii-exa-test-data-isik-vitalparameter-patient-1",
+    "fshType": "Instance",
+    "fshFile": "modul-isik-vitalparameter/Patient.fsh",
+    "startLine": 10,
+    "endLine": 21
   },
   {
     "outputFile": "Patient-mii-exa-test-data-kardiologie-patient-1.json",

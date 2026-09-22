@@ -59,6 +59,12 @@
       "version": "2.0.4",
       "uri": "http://fhir.org/packages/de.einwilligungsmanagement/ImplementationGuide/de.einwilligungsmanagement",
       "id": "de_einwilligungsmanagement"
+    },
+    {
+      "packageId": "de.gematik.isik",
+      "version": "6.0.0",
+      "uri": "http://fhir.org/packages/de.gematik.isik/ImplementationGuide/de.gematik.isik",
+      "id": "de_gematik_isik"
     }
   ],
   "definition": {
@@ -465,6 +471,14 @@
       },
       {
         "reference": {
+          "reference": "Bundle/mii-exa-test-data-bundle-isik-vitalparameter-1"
+        },
+        "name": "mii-exa-test-data-bundle-isik-vitalparameter-1",
+        "description": "Bundle: ISiK 6.0.0 Vitalparameter Testdaten (Atemfrequenz, Blutdruck, EKG, GCS, Herzfrequenz, Koerpergewicht, Koerpergroesse, Koerperkerntemperatur, Kopfumfang, Sauerstoffsaettigung)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Bundle/mii-exa-test-data-bundle-kardiologie-1"
         },
         "name": "mii-exa-test-data-bundle-kardiologie-1",
@@ -725,6 +739,102 @@
         },
         "name": "mii-exa-test-data-icu-patient-1",
         "description": "ICU Test Patient (Standort B). Identisch mit Onko-Patient an Standort A (gemeinsame KVNR).",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-isik-vitalparameter-atemfrequenz-1"
+        },
+        "name": "mii-exa-test-data-isik-vitalparameter-atemfrequenz-1",
+        "description": "ISiK Atemfrequenz: 18/min",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-isik-vitalparameter-blutdruck-1"
+        },
+        "name": "mii-exa-test-data-isik-vitalparameter-blutdruck-1",
+        "description": "ISiK Blutdruck systemisch arteriell: 132/84 mmHg, MAD 100 mmHg",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-isik-vitalparameter-ekg-1"
+        },
+        "name": "mii-exa-test-data-isik-vitalparameter-ekg-1",
+        "description": "ISiK EKG: Ruhe-EKG mit den Ableitungen I, II und III als SampledData-Kanaele (500 Hz)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Encounter/mii-exa-test-data-isik-vitalparameter-encounter-1"
+        },
+        "name": "mii-exa-test-data-isik-vitalparameter-encounter-1",
+        "description": "ISiK Vitalparameter Test Encounter: stationaere Aufnahme zur Synkopenabklaerung",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-isik-vitalparameter-gcs-1"
+        },
+        "name": "mii-exa-test-data-isik-vitalparameter-gcs-1",
+        "description": "ISiK GCS: 12 Punkte (Augen 3, verbal 4, motorisch 5) nach Synkope",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-isik-vitalparameter-herzfrequenz-1"
+        },
+        "name": "mii-exa-test-data-isik-vitalparameter-herzfrequenz-1",
+        "description": "ISiK Herzfrequenz: 76/min",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-isik-vitalparameter-koerpergewicht-1"
+        },
+        "name": "mii-exa-test-data-isik-vitalparameter-koerpergewicht-1",
+        "description": "ISiK Koerpergewicht: 78 kg",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-isik-vitalparameter-koerpergroesse-1"
+        },
+        "name": "mii-exa-test-data-isik-vitalparameter-koerpergroesse-1",
+        "description": "ISiK Koerpergroesse: 172 cm",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-isik-vitalparameter-koerperkerntemperatur-1"
+        },
+        "name": "mii-exa-test-data-isik-vitalparameter-koerperkerntemperatur-1",
+        "description": "ISiK Koerperkerntemperatur: 37.8 Grad Celsius (rektal)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-isik-vitalparameter-kopfumfang-1"
+        },
+        "name": "mii-exa-test-data-isik-vitalparameter-kopfumfang-1",
+        "description": "ISiK Kopfumfang: 56 cm",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Patient/mii-exa-test-data-isik-vitalparameter-patient-1"
+        },
+        "name": "mii-exa-test-data-isik-vitalparameter-patient-1",
+        "description": "ISiK Vitalparameter Test Patient: Viktoria Vogel (Synkope, Vitalparameter-Monitoring)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-isik-vitalparameter-sauerstoffsaettigung-1"
+        },
+        "name": "mii-exa-test-data-isik-vitalparameter-sauerstoffsaettigung-1",
+        "description": "ISiK Sauerstoffsaettigung arteriell: 96 % (pulsoxymetrisch)",
         "exampleBoolean": true
       },
       {

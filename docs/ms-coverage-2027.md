@@ -442,21 +442,21 @@ MS-Elemente über alle genutzten Profile: **11862** · oberste unbefüllte Knote
 
 | Modul | Pfade | Top (Anzahl Profile, die den Pfad befüllen) |
 |---|---|---|
-| modul-bildgebung | 6 | `extension.url`×2, `extension`×2, `extension.valueString`, `extension.valueId` |
+| modul-bildgebung | 6 | `extension`×2, `extension.url`×2, `extension.valueString`, `extension.valueId` |
 | modul-consent | 2 | `scope`, `scope.coding` |
-| modul-fall | 4 | `serviceProvider.identifier`, `serviceProvider.reference`, `serviceProvider`, `serviceProvider.display` |
-| modul-icu | 17 | `status`×15, `patient`, `patient.reference` |
-| modul-kardio | 33 | `status`×7, `performer.display`×2, `performer`×2, `code`, `manufacturer`, `deviceName` |
-| modul-labor | 4 | `requester.reference`, `reasonCode.coding`, `requester`, `reasonCode` |
+| modul-fall | 4 | `serviceProvider`, `serviceProvider.identifier`, `serviceProvider.reference`, `serviceProvider.display` |
+| modul-icu | 17 | `status`×15, `patient.reference`, `patient` |
+| modul-kardio | 33 | `status`×7, `performer.display`×2, `performer`×2, `code`, `deviceName`, `deviceName.type` |
+| modul-labor | 4 | `reasonCode`, `requester.reference`, `reasonCode.coding`, `requester` |
 | modul-lungenfunktion | 2 | `effectiveDateTime`, `name` |
 | modul-medikation | 2 | `status`, `title` |
-| modul-molgen | 56 | `status`×5, `category.coding`×4, `category`×4, `specimen.reference`×4, `specimen`×4, `basedOn`×4 |
+| modul-molgen | 56 | `status`×5, `specimen.reference`×4, `specimen`×4, `category.coding`×4, `category`×4, `basedOn`×4 |
 | modul-mtb | 71 | `status`×24, `subject`×7, `subject.reference`×7, `intent`×4, `effectiveDateTime`×3, `valueCodeableConcept.coding`×2 |
-| modul-onko | 79 | `status`×40, `effectiveDateTime`×9, `method`×4, `method.coding`×4, `type.coding`×2, `type`×2 |
-| modul-patho | 9 | `encounter`×3, `encounter.reference`×3, `date`×2, `recordedDate` |
+| modul-onko | 79 | `status`×40, `effectiveDateTime`×9, `method`×4, `method.coding`×4, `type`×2, `type.coding`×2 |
+| modul-patho | 9 | `encounter.reference`×3, `encounter`×3, `date`×2, `recordedDate` |
 | modul-pro | 46 | `subject`×15, `subject.reference`×15, `encounter`×8, `encounter.reference`×8 |
-| modul-prozedur | 2 | `recorder.reference`, `recorder` |
-| modul-seltene | 25 | `subject`×3, `status`×3, `subject.reference`×3, `code`×2, `code.coding`×2, `intent`×2 |
-| modul-soziodemographie | 17 | `valueCodeableConcept.coding`×6, `valueCodeableConcept`×6, `valueCodeableConcept.text`×2, `code`, `code.coding`, `code.text` |
-| modul-studie | 10 | `active`, `requester.reference`, `authoredOn`, `reasonCode.coding`, `encounter`, `encounter.reference` |
-| modul-symptom | 5 | `extension.valueReference`, `bodySite.coding`, `bodySite`, `extension.url`, `extension` |
+| modul-prozedur | 2 | `recorder`, `recorder.reference` |
+| modul-seltene | 25 | `subject`×3, `status`×3, `subject.reference`×3, `code.coding`×2, `code`×2, `intent`×2 |
+| modul-soziodemographie | 17 | `valueCodeableConcept.coding`×6, `valueCodeableConcept`×6, `valueCodeableConcept.text`×2, `code.coding`, `code`, `code.text` |
+| modul-studie | 10 | `active`, `authoredOn`, `reasonCode`, `note.text`, `encounter`, `requester` |
+| modul-symptom | 5 | `extension.valueReference`, `bodySite`, `extension`, `bodySite.coding`, `extension.url` |

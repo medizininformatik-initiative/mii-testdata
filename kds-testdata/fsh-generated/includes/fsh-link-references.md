@@ -48,6 +48,7 @@
 [mii-exa-test-data-bundle-biobank-1]: Bundle-mii-exa-test-data-bundle-biobank-1.html
 [mii-exa-test-data-bundle-dokument-1]: Bundle-mii-exa-test-data-bundle-dokument-1.html
 [mii-exa-test-data-bundle-icu-1]: Bundle-mii-exa-test-data-bundle-icu-1.html
+[mii-exa-test-data-bundle-isik-vitalparameter-1]: Bundle-mii-exa-test-data-bundle-isik-vitalparameter-1.html
 [mii-exa-test-data-bundle-kardiologie-1]: Bundle-mii-exa-test-data-bundle-kardiologie-1.html
 [mii-exa-test-data-bundle-lungenfunktion-1]: Bundle-mii-exa-test-data-bundle-lungenfunktion-1.html
 [mii-exa-test-data-bundle-mikrobio-1]: Bundle-mii-exa-test-data-bundle-mikrobio-1.html
@@ -81,6 +82,18 @@
 [mii-exa-test-data-icu-diagnose-1]: Condition-mii-exa-test-data-icu-diagnose-1.html
 [mii-exa-test-data-icu-encounter-1]: Encounter-mii-exa-test-data-icu-encounter-1.html
 [mii-exa-test-data-icu-patient-1]: Patient-mii-exa-test-data-icu-patient-1.html
+[mii-exa-test-data-isik-vitalparameter-atemfrequenz-1]: Observation-mii-exa-test-data-isik-vitalparameter-atemfrequenz-1.html
+[mii-exa-test-data-isik-vitalparameter-blutdruck-1]: Observation-mii-exa-test-data-isik-vitalparameter-blutdruck-1.html
+[mii-exa-test-data-isik-vitalparameter-ekg-1]: Observation-mii-exa-test-data-isik-vitalparameter-ekg-1.html
+[mii-exa-test-data-isik-vitalparameter-encounter-1]: Encounter-mii-exa-test-data-isik-vitalparameter-encounter-1.html
+[mii-exa-test-data-isik-vitalparameter-gcs-1]: Observation-mii-exa-test-data-isik-vitalparameter-gcs-1.html
+[mii-exa-test-data-isik-vitalparameter-herzfrequenz-1]: Observation-mii-exa-test-data-isik-vitalparameter-herzfrequenz-1.html
+[mii-exa-test-data-isik-vitalparameter-koerpergewicht-1]: Observation-mii-exa-test-data-isik-vitalparameter-koerpergewicht-1.html
+[mii-exa-test-data-isik-vitalparameter-koerpergroesse-1]: Observation-mii-exa-test-data-isik-vitalparameter-koerpergroesse-1.html
+[mii-exa-test-data-isik-vitalparameter-koerperkerntemperatur-1]: Observation-mii-exa-test-data-isik-vitalparameter-koerperkerntemperatur-1.html
+[mii-exa-test-data-isik-vitalparameter-kopfumfang-1]: Observation-mii-exa-test-data-isik-vitalparameter-kopfumfang-1.html
+[mii-exa-test-data-isik-vitalparameter-patient-1]: Patient-mii-exa-test-data-isik-vitalparameter-patient-1.html
+[mii-exa-test-data-isik-vitalparameter-sauerstoffsaettigung-1]: Observation-mii-exa-test-data-isik-vitalparameter-sauerstoffsaettigung-1.html
 [mii-exa-test-data-kardiologie-device-1]: Device-mii-exa-test-data-kardiologie-device-1.html
 [mii-exa-test-data-kardiologie-deviceimplantation-1]: Procedure-mii-exa-test-data-kardiologie-deviceimplantation-1.html
 [mii-exa-test-data-kardiologie-devicemetric-1]: DeviceMetric-mii-exa-test-data-kardiologie-devicemetric-1.html
