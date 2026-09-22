@@ -3815,10 +3815,50 @@
       },
       {
         "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-bilanz-einf-mumi-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-bilanz-einf-mumi-1",
+        "description": "ICU Observation: MII PR ICU Bilanz Einfuhr Muttermilch (technische Abdeckung)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-bilanz-einf-mumi-abgep-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-bilanz-einf-mumi-abgep-1",
+        "description": "ICU Observation: MII PR ICU Bilanz Einfuhr Abgepumpte Muttermilch (technische Abdeckung)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Observation/mii-exa-test-data-patient-1-icu-bilanz-einf-oral-1"
         },
         "name": "mii-exa-test-data-patient-1-icu-bilanz-einf-oral-1",
         "description": "ICU Observation: MII PR ICU Bilanz Einfuhr Oraler Fluessigkeit",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-bilanz-einf-oral-fluess-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-bilanz-einf-oral-fluess-1",
+        "description": "ICU Observation: MII PR ICU Bilanz Einfuhr Orale Fluessigkeit",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-bilanz-einf-saeugling-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-bilanz-einf-saeugling-1",
+        "description": "ICU Observation: MII PR ICU Bilanz Einfuhr Saeuglingsnahrung (technische Abdeckung)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-bilanz-einf-spendermilch-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-bilanz-einf-spendermilch-1",
+        "description": "ICU Observation: MII PR ICU Bilanz Einfuhr Spendermilch (technische Abdeckung)",
         "exampleBoolean": true
       },
       {
@@ -3843,6 +3883,14 @@
         },
         "name": "mii-exa-test-data-patient-1-icu-bilanz-haemofiltr-1",
         "description": "ICU Observation: MII PR ICU Bilanz Abnahme Haemofiltration Einzelmesswerte",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-bilanz-status-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-bilanz-status-1",
+        "description": "ICU Observation: MII PR ICU Bilanz (generisch) - Fluessigkeitsbilanz-Status",
         "exampleBoolean": true
       },
       {
@@ -3959,6 +4007,14 @@
       },
       {
         "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-ect-param-generisch-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-ect-param-generisch-1",
+        "description": "ICU Observation: MII PR ICU Parameter von Extrakorporalen Verfahren (generisch) - Sweep-Gasfluss abends",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Observation/mii-exa-test-data-patient-1-icu-ect-substituatfl-1"
         },
         "name": "mii-exa-test-data-patient-1-icu-ect-substituatfl-1",
@@ -4035,6 +4091,174 @@
         },
         "name": "mii-exa-test-data-patient-1-icu-muv-kopfumfang-1",
         "description": "ICU Observation: MII PR ICU Kopfumfang",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-muv-laenge-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-muv-laenge-1",
+        "description": "ICU Observation: MII PR ICU Koerperlaenge (liegend, 168 cm bei Aufnahme)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-pupille-befund-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-pupille-befund-1",
+        "description": "ICU Pupillenbefund: Grouper mit 9 Einzelbefunden (Anisokorie)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-pupille-form-li-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-pupille-form-li-1",
+        "description": "ICU Pupillenbefund: Pupillenform links rund",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-pupille-form-re-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-pupille-form-re-1",
+        "description": "ICU Pupillenbefund: Pupillenform rechts rund",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-pupille-groesse-li-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-pupille-groesse-li-1",
+        "description": "ICU Pupillenbefund: Pupillengroesse links 5 mm (Anisokorie)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-pupille-groesse-re-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-pupille-groesse-re-1",
+        "description": "ICU Pupillenbefund: Pupillengroesse rechts 3 mm",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-pupille-licht-dir-li-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-pupille-licht-dir-li-1",
+        "description": "ICU Pupillenbefund: direkte Lichtreaktion links traege",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-pupille-licht-dir-re-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-pupille-licht-dir-re-1",
+        "description": "ICU Pupillenbefund: direkte Lichtreaktion rechts prompt",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-pupille-licht-ind-li-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-pupille-licht-ind-li-1",
+        "description": "ICU Pupillenbefund: indirekte (konsensuelle) Lichtreaktion links traege",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-pupille-licht-ind-re-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-pupille-licht-ind-re-1",
+        "description": "ICU Pupillenbefund: indirekte (konsensuelle) Lichtreaktion rechts prompt",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-pupille-symmetrie-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-pupille-symmetrie-1",
+        "description": "ICU Pupillenbefund: Pupillensymmetrie - Anisokorie",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-score-cam-icu-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-score-cam-icu-1",
+        "description": "ICU Score: CAM-ICU positiv (Feature 1-3 vorhanden, Feature 4 nicht beurteilt positiv)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-score-fpsr-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-score-fpsr-1",
+        "description": "ICU Score: Faces Pain Scale - Revised 6/10",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-score-gcs-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-score-gcs-1",
+        "description": "ICU Score: Glasgow Coma Scale 8 (E2 V2 M4) unter Sedierung",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-score-icdsc-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-score-icdsc-1",
+        "description": "ICU Score: ICDSC 6 (Delir-Schwelle ueberschritten)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-score-nrs-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-score-nrs-1",
+        "description": "ICU Score: Numerische Ratingskala Schmerz 4/10",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-score-rass-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-score-rass-1",
+        "description": "ICU Score: RASS -3 (moderate Sedierung)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-score-sofa-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-score-sofa-1",
+        "description": "ICU Score: SOFA 9 (Respiration 3, Gerinnung 1, Leber 0, Kreislauf 1, ZNS 3, Niere 1)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-score-vas-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-score-vas-1",
+        "description": "ICU Score: Visuelle Analogskala Schmerz 45 mm",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-score-wbf-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-score-wbf-1",
+        "description": "ICU Score: Wong-Baker FACES Schmerzskala 6/10",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-score-zopa-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-score-zopa-1",
+        "description": "ICU Score: ZOPA - Schmerzverhalten vorhanden (sedierte Patientin)",
         "exampleBoolean": true
       },
       {
@@ -4191,6 +4415,14 @@
       },
       {
         "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-vent-param-generisch-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-vent-param-generisch-1",
+        "description": "ICU Observation: MII PR ICU Parameter von Beatmung (generisch) - inspiratorisches Minutenvolumen",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Observation/mii-exa-test-data-patient-1-icu-vent-peep-1"
         },
         "name": "mii-exa-test-data-patient-1-icu-vent-peep-1",
@@ -4203,6 +4435,30 @@
         },
         "name": "mii-exa-test-data-patient-1-icu-vent-pip-1",
         "description": "ICU Observation: MII PR ICU Maximaler Beatmungsdruck",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-vent-pmax-insp-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-vent-pmax-insp-1",
+        "description": "ICU Observation: MII PR ICU Maximaler Inspiratorischer Beatmungsdruck",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-vent-pmean-insp-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-vent-pmean-insp-1",
+        "description": "ICU Observation: MII PR ICU Mittlerer Inspiratorischer Beatmungsdruck",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-vent-pplat-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-vent-pplat-1",
+        "description": "ICU Observation: MII PR ICU Plateau-Beatmungsdruck (lungenprotektiv unter ECMO)",
         "exampleBoolean": true
       },
       {

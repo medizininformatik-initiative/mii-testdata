@@ -1264,6 +1264,2033 @@
     {
       "request": {
         "method": "PUT",
+        "url": "Observation/mii-exa-test-data-patient-1-icu-bilanz-einf-mumi-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-1-icu-bilanz-einf-mumi-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-1-icu-bilanz-einf-mumi-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-einfuhr-muttermilch"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "exam",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              },
+              {
+                "code": "364396009",
+                "system": "http://snomed.info/sct",
+                "display": "Fluid balance observable (observable entity)"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "1204299001",
+              "display": "Measured volume of intake of breast milk (observable entity)"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "unit": "ml",
+          "value": 40,
+          "code": "ml",
+          "system": "http://unitsofmeasure.org"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-icu-patient-1"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-icu-encounter-1"
+        },
+        "effectiveDateTime": "2024-05-06T06:00:00+02:00"
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-patient-1-icu-bilanz-einf-mumi-abgep-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-1-icu-bilanz-einf-mumi-abgep-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-1-icu-bilanz-einf-mumi-abgep-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-einfuhr-abgepumpte-muttermilch"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "exam",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              },
+              {
+                "code": "364396009",
+                "system": "http://snomed.info/sct",
+                "display": "Fluid balance observable (observable entity)"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "819975003",
+              "display": "Intake of maternal expressed breast milk (observable entity)"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "unit": "ml",
+          "value": 35,
+          "code": "ml",
+          "system": "http://unitsofmeasure.org"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-icu-patient-1"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-icu-encounter-1"
+        },
+        "effectiveDateTime": "2024-05-06T06:00:00+02:00"
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-patient-1-icu-bilanz-einf-spendermilch-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-1-icu-bilanz-einf-spendermilch-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-1-icu-bilanz-einf-spendermilch-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-einfuhr-spendermilch"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "exam",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              },
+              {
+                "code": "364396009",
+                "system": "http://snomed.info/sct",
+                "display": "Fluid balance observable (observable entity)"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "819973005",
+              "display": "Donor breastmilk intake (observable entity)"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "unit": "ml",
+          "value": 30,
+          "code": "ml",
+          "system": "http://unitsofmeasure.org"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-icu-patient-1"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-icu-encounter-1"
+        },
+        "effectiveDateTime": "2024-05-06T06:00:00+02:00"
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-patient-1-icu-bilanz-einf-saeugling-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-1-icu-bilanz-einf-saeugling-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-1-icu-bilanz-einf-saeugling-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-einfuhr-saeuglingsnahrung"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "exam",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              },
+              {
+                "code": "364396009",
+                "system": "http://snomed.info/sct",
+                "display": "Fluid balance observable (observable entity)"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "1204305004",
+              "display": "Measured volume of intake of infant formula"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "unit": "ml",
+          "value": 60,
+          "code": "ml",
+          "system": "http://unitsofmeasure.org"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-icu-patient-1"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-icu-encounter-1"
+        },
+        "effectiveDateTime": "2024-05-06T06:00:00+02:00"
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-patient-1-icu-bilanz-einf-oral-fluess-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-1-icu-bilanz-einf-oral-fluess-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-1-icu-bilanz-einf-oral-fluess-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-einfuhr-orale-fluessigkeit"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "exam",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              },
+              {
+                "code": "364396009",
+                "system": "http://snomed.info/sct",
+                "display": "Fluid balance observable (observable entity)"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "251853006",
+              "display": "Oral fluid input (observable entity)"
+            },
+            {
+              "system": "http://loinc.org",
+              "code": "9000-1",
+              "display": "Fluid intake oral Measured"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "unit": "ml",
+          "value": 150,
+          "code": "ml",
+          "system": "http://unitsofmeasure.org"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-icu-patient-1"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-icu-encounter-1"
+        },
+        "effectiveDateTime": "2024-05-06T06:00:00+02:00"
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-patient-1-icu-bilanz-status-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-1-icu-bilanz-status-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-1-icu-bilanz-status-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "exam"
+              },
+              {
+                "code": "364396009",
+                "system": "http://snomed.info/sct",
+                "display": "Fluid balance observable (observable entity)"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "251856003",
+              "display": "Fluid balance status (observable entity)"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-icu-patient-1"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-icu-encounter-1"
+        },
+        "effectiveDateTime": "2024-05-06T06:00:00+02:00",
+        "valueQuantity": {
+          "value": 300,
+          "code": "ml",
+          "system": "http://unitsofmeasure.org",
+          "unit": "ml"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-patient-1-icu-score-gcs-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-1-icu-score-gcs-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-1-icu-score-gcs-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-gcs"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "survey",
+                "display": "Survey"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "273249006",
+                "display": "Assessment scales (assessment scale)"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "9269-2",
+              "display": "Glasgow coma score total"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "248241002"
+            },
+            {
+              "system": "urn:iso:std:iso:11073:10101",
+              "code": "153728"
+            }
+          ]
+        },
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "9267-6",
+                  "display": "Glasgow coma score eye opening"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "LA6554-5",
+                  "system": "http://loinc.org",
+                  "display": "Eye opening to pain"
+                }
+              ]
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "9270-0",
+                  "display": "Glasgow coma score verbal"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "LA6558-6",
+                  "system": "http://loinc.org",
+                  "display": "Incomprehensible sounds"
+                }
+              ]
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "9268-4",
+                  "display": "Glasgow coma score motor"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "LA6565-1",
+                  "system": "http://loinc.org",
+                  "display": "Withdrawal from pain"
+                }
+              ]
+            }
+          }
+        ],
+        "valueQuantity": {
+          "unit": "{score}",
+          "system": "http://unitsofmeasure.org",
+          "code": "{score}",
+          "value": 8
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-icu-patient-1"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-icu-encounter-1"
+        },
+        "effectiveDateTime": "2024-05-06T08:15:00+02:00"
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-patient-1-icu-score-rass-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-1-icu-score-rass-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-1-icu-score-rass-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-rass"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "exam",
+                "display": "Exam"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "1345050000",
+              "system": "http://snomed.info/sct",
+              "display": "Richmond Agitation Sedation Scale score (observable entity)"
+            }
+          ]
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "LA33965-7",
+              "display": "Moderate sedation -3"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-icu-patient-1"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-icu-encounter-1"
+        },
+        "effectiveDateTime": "2024-05-06T08:00:00+02:00"
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-patient-1-icu-score-sofa-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-1-icu-score-sofa-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-1-icu-score-sofa-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-sofa"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "survey",
+                "display": "Survey"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "273249006",
+                "display": "Assessment scales (assessment scale)"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "96789-3",
+              "display": "Sequential Organ Failure Assessment SOFA"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "1187491009",
+              "display": "Sequential Organ Failure Assessment score (observable entity)"
+            }
+          ]
+        },
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "96823-0",
+                  "display": "Respiration [Score] SOFA"
+                },
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "xxxx",
+                  "display": "SOFA Subscore - Respiratory"
+                }
+              ]
+            },
+            "valueInteger": 3
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "96824-8",
+                  "display": "Coagulation [Score] SOFA"
+                },
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "xxx",
+                  "display": "SOFA Subscore - Coagulation"
+                }
+              ]
+            },
+            "valueInteger": 1
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "96825-5",
+                  "display": "Liver [Score] SOFA"
+                },
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "xxx",
+                  "display": "SOFA Subscore - Hepatic"
+                }
+              ]
+            },
+            "valueInteger": 0
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "96826-3",
+                  "display": "Cardiovascular [Score] SOFA"
+                },
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "xxx",
+                  "display": "SOFA Subscore - Cardiovascular"
+                }
+              ]
+            },
+            "valueInteger": 1
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "96827-1",
+                  "display": "Central nervous system [Score] SOFA"
+                },
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "xxxx",
+                  "display": "SOFA Subscore - Neurological"
+                }
+              ]
+            },
+            "valueInteger": 3
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "96828-9",
+                  "display": "Renal [Score] SOFA"
+                },
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "xxx",
+                  "display": "SOFA Subscore - Renal"
+                }
+              ]
+            },
+            "valueInteger": 1
+          }
+        ],
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-icu-patient-1"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-icu-encounter-1"
+        },
+        "effectiveDateTime": "2024-05-06T09:00:00+02:00",
+        "valueInteger": 9
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-patient-1-icu-score-cam-icu-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-1-icu-score-cam-icu-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-1-icu-score-cam-icu-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-cam-icu"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "survey",
+                "display": "Survey"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "273249006",
+                "display": "Assessment scales (assessment scale)"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "99844-5",
+              "display": "Confusion Assessment Method for the ICU"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "450740000",
+              "display": "Confusion Assessment Method for the intensive care unit score"
+            }
+          ]
+        },
+        "component": [
+          {
+            "code": {
+              "text": "Acute change from mental status baseline or Fluctuation in mental status in past 24 hours [CAM.ICU]"
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "52101004",
+                  "system": "http://snomed.info/sct",
+                  "display": "Present (qualifier value)"
+                }
+              ]
+            }
+          },
+          {
+            "code": {
+              "text": "Feature 2: Inattention"
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "52101004",
+                  "system": "http://snomed.info/sct",
+                  "display": "Present (qualifier value)"
+                }
+              ]
+            }
+          },
+          {
+            "code": {
+              "text": "Feature 3: Altered level of consciousness"
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "52101004",
+                  "system": "http://snomed.info/sct",
+                  "display": "Present (qualifier value)"
+                }
+              ]
+            }
+          },
+          {
+            "code": {
+              "text": "Feature 4: Disorganized thinking"
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "2667000",
+                  "system": "http://snomed.info/sct",
+                  "display": "Absent (qualifier value)"
+                }
+              ]
+            }
+          }
+        ],
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-icu-patient-1"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-icu-encounter-1"
+        },
+        "effectiveDateTime": "2024-05-06T08:30:00+02:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "10828004",
+              "system": "http://snomed.info/sct",
+              "display": "Positive (qualifier value)"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-patient-1-icu-score-icdsc-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-1-icu-score-icdsc-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-1-icu-score-icdsc-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-icdsc"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "survey",
+                "display": "Survey"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "273249006",
+                "display": "Assessment scales (assessment scale)"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "1351995008",
+              "display": "Intensive Care Delirium Screening Checklist score (observable entity)"
+            }
+          ]
+        },
+        "component": [
+          {
+            "code": {
+              "text": "Altered level of consciousness"
+            },
+            "valueInteger": 1
+          },
+          {
+            "code": {
+              "text": "Inattention"
+            },
+            "valueInteger": 1
+          },
+          {
+            "code": {
+              "text": "Disorientation"
+            },
+            "valueInteger": 1
+          },
+          {
+            "code": {
+              "text": "Hallucination, delusion, or psychosis"
+            },
+            "valueInteger": 0
+          },
+          {
+            "code": {
+              "text": "Psychomotor agitation or retardation"
+            },
+            "valueInteger": 1
+          },
+          {
+            "code": {
+              "text": "Inappropriate speech or mood"
+            },
+            "valueInteger": 0
+          },
+          {
+            "code": {
+              "text": "Sleep/wake cycle disturbance"
+            },
+            "valueInteger": 1
+          },
+          {
+            "code": {
+              "text": "Symptom fluctuation"
+            },
+            "valueInteger": 1
+          }
+        ],
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-icu-patient-1"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-icu-encounter-1"
+        },
+        "effectiveDateTime": "2024-05-06T20:00:00+02:00",
+        "valueInteger": 6
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-patient-1-icu-score-nrs-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-1-icu-score-nrs-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-1-icu-score-nrs-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-numerische-ratingskala"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "survey",
+                "display": "Survey"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "273249006",
+                "display": "Assessment scales (assessment scale)"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "1284857008"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-icu-patient-1"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-icu-encounter-1"
+        },
+        "effectiveDateTime": "2024-05-06T10:00:00+02:00",
+        "valueInteger": 4
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-patient-1-icu-score-vas-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-1-icu-score-vas-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-1-icu-score-vas-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-visuelle-analogskala"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "survey",
+                "display": "Survey"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "273249006",
+                "display": "Assessment scales (assessment scale)"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "38214-3",
+              "display": "Pain severity [Score] Visual analog score"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "443394008"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "unit": "mm",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm",
+          "value": 45
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-icu-patient-1"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-icu-encounter-1"
+        },
+        "effectiveDateTime": "2024-05-06T10:05:00+02:00"
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-patient-1-icu-score-wbf-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-1-icu-score-wbf-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-1-icu-score-wbf-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-wong-baker-faces-schmerzskala"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "survey",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "display": "Assessment"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "38221-8"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "718581005"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "unit": "{score}",
+          "system": "http://unitsofmeasure.org",
+          "code": "{score}",
+          "value": 6
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-icu-patient-1"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-icu-encounter-1"
+        },
+        "effectiveDateTime": "2024-05-06T10:10:00+02:00"
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-patient-1-icu-score-fpsr-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-1-icu-score-fpsr-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-1-icu-score-fpsr-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-faces-pain-scale-revised"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "survey",
+                "display": "Survey"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "273249006",
+                "display": "Assessment scales (assessment scale)"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "1284909003",
+              "display": "Faces Pain Scale - Revised score (observable entity)"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "unit": "{score}",
+          "system": "http://unitsofmeasure.org",
+          "code": "{score}",
+          "value": 6
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-icu-patient-1"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-icu-encounter-1"
+        },
+        "effectiveDateTime": "2024-05-06T10:15:00+02:00"
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-patient-1-icu-score-zopa-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-1-icu-score-zopa-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-1-icu-score-zopa-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-zopa"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "survey",
+                "display": "Survey"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "273249006",
+                "display": "Assessment scales (assessment scale)"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://dgai.de",
+              "code": "DGAI-ZOPA",
+              "display": "Zuerich Observation Pain Assessment (ZOPA)"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-icu-patient-1"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-icu-encounter-1"
+        },
+        "effectiveDateTime": "2024-05-06T08:45:00+02:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "52101004",
+              "system": "http://snomed.info/sct",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-patient-1-icu-pupille-befund-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-1-icu-pupille-befund-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-1-icu-pupille-befund-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-untersuchung-pupillenbefund"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "exam",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "display": "Exam"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "247010007",
+              "system": "http://snomed.info/sct",
+              "display": "Pupil finding (finding)"
+            },
+            {
+              "code": "80310-6",
+              "system": "http://loinc.org",
+              "display": "Pupil assessment panel"
+            }
+          ]
+        },
+        "hasMember": [
+          {
+            "reference": "Observation/mii-exa-test-data-patient-1-icu-pupille-licht-dir-re-1"
+          },
+          {
+            "reference": "Observation/mii-exa-test-data-patient-1-icu-pupille-licht-dir-li-1"
+          },
+          {
+            "reference": "Observation/mii-exa-test-data-patient-1-icu-pupille-licht-ind-re-1"
+          },
+          {
+            "reference": "Observation/mii-exa-test-data-patient-1-icu-pupille-licht-ind-li-1"
+          },
+          {
+            "reference": "Observation/mii-exa-test-data-patient-1-icu-pupille-groesse-re-1"
+          },
+          {
+            "reference": "Observation/mii-exa-test-data-patient-1-icu-pupille-groesse-li-1"
+          },
+          {
+            "reference": "Observation/mii-exa-test-data-patient-1-icu-pupille-form-re-1"
+          },
+          {
+            "reference": "Observation/mii-exa-test-data-patient-1-icu-pupille-form-li-1"
+          },
+          {
+            "reference": "Observation/mii-exa-test-data-patient-1-icu-pupille-symmetrie-1"
+          }
+        ],
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-icu-patient-1"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-icu-encounter-1"
+        },
+        "effectiveDateTime": "2024-05-06T07:30:00+02:00"
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-patient-1-icu-pupille-form-re-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-1-icu-pupille-form-re-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-1-icu-pupille-form-re-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-untersuchung-pupillenform"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "exam",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "display": "Exam"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "363954009",
+              "system": "http://snomed.info/sct",
+              "display": "Pupil shape"
+            }
+          ]
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "LA24884-1",
+              "system": "http://loinc.org",
+              "display": "Round"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-icu-patient-1"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-icu-encounter-1"
+        },
+        "effectiveDateTime": "2024-05-06T07:30:00+02:00",
+        "bodySite": {
+          "coding": [
+            {
+              "code": "52378001",
+              "system": "http://snomed.info/sct",
+              "display": "Structure of pupil of right eye"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-patient-1-icu-pupille-form-li-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-1-icu-pupille-form-li-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-1-icu-pupille-form-li-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-untersuchung-pupillenform"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "exam",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "display": "Exam"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "363954009",
+              "system": "http://snomed.info/sct",
+              "display": "Pupil shape"
+            }
+          ]
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "LA24884-1",
+              "system": "http://loinc.org",
+              "display": "Round"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-icu-patient-1"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-icu-encounter-1"
+        },
+        "effectiveDateTime": "2024-05-06T07:30:00+02:00",
+        "bodySite": {
+          "coding": [
+            {
+              "code": "16089004",
+              "system": "http://snomed.info/sct",
+              "display": "Structure of pupil of left eye"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-patient-1-icu-pupille-groesse-re-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-1-icu-pupille-groesse-re-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-1-icu-pupille-groesse-re-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-untersuchung-pupillengroesse"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "exam",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "display": "Exam"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "363953003",
+              "system": "http://snomed.info/sct",
+              "display": "Size of pupil"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "unit": "mm",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm",
+          "value": 3
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-icu-patient-1"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-icu-encounter-1"
+        },
+        "effectiveDateTime": "2024-05-06T07:30:00+02:00",
+        "bodySite": {
+          "coding": [
+            {
+              "code": "52378001",
+              "system": "http://snomed.info/sct",
+              "display": "Structure of pupil of right eye"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-patient-1-icu-pupille-groesse-li-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-1-icu-pupille-groesse-li-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-1-icu-pupille-groesse-li-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-untersuchung-pupillengroesse"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "exam",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "display": "Exam"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "363953003",
+              "system": "http://snomed.info/sct",
+              "display": "Size of pupil"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "unit": "mm",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm",
+          "value": 5
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-icu-patient-1"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-icu-encounter-1"
+        },
+        "effectiveDateTime": "2024-05-06T07:30:00+02:00",
+        "bodySite": {
+          "coding": [
+            {
+              "code": "16089004",
+              "system": "http://snomed.info/sct",
+              "display": "Structure of pupil of left eye"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-patient-1-icu-pupille-licht-dir-re-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-1-icu-pupille-licht-dir-re-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-1-icu-pupille-licht-dir-re-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-untersuchung-pupillenlichtreaktion-direkt"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "exam",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "display": "Exam"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "45832002",
+              "system": "http://snomed.info/sct"
+            }
+          ]
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "LA25441-9",
+              "system": "http://loinc.org",
+              "display": "Reactive to light"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-icu-patient-1"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-icu-encounter-1"
+        },
+        "effectiveDateTime": "2024-05-06T07:30:00+02:00",
+        "bodySite": {
+          "coding": [
+            {
+              "code": "52378001",
+              "system": "http://snomed.info/sct",
+              "display": "Structure of pupil of right eye"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-patient-1-icu-pupille-licht-dir-li-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-1-icu-pupille-licht-dir-li-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-1-icu-pupille-licht-dir-li-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-untersuchung-pupillenlichtreaktion-direkt"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "exam",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "display": "Exam"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "45832002",
+              "system": "http://snomed.info/sct"
+            }
+          ]
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "LA24899-9",
+              "system": "http://loinc.org",
+              "display": "Sluggishly reactive to light"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-icu-patient-1"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-icu-encounter-1"
+        },
+        "effectiveDateTime": "2024-05-06T07:30:00+02:00",
+        "bodySite": {
+          "coding": [
+            {
+              "code": "16089004",
+              "system": "http://snomed.info/sct",
+              "display": "Structure of pupil of left eye"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-patient-1-icu-pupille-licht-ind-re-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-1-icu-pupille-licht-ind-re-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-1-icu-pupille-licht-ind-re-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-untersuchung-pupillenlichtreaktion-indirekt"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "exam",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "display": "Exam"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "84917001",
+              "system": "http://snomed.info/sct"
+            }
+          ]
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "LA25441-9",
+              "system": "http://loinc.org",
+              "display": "Reactive to light"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-icu-patient-1"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-icu-encounter-1"
+        },
+        "effectiveDateTime": "2024-05-06T07:30:00+02:00",
+        "bodySite": {
+          "coding": [
+            {
+              "code": "52378001",
+              "system": "http://snomed.info/sct",
+              "display": "Structure of pupil of right eye"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-patient-1-icu-pupille-licht-ind-li-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-1-icu-pupille-licht-ind-li-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-1-icu-pupille-licht-ind-li-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-untersuchung-pupillenlichtreaktion-indirekt"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "exam",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "display": "Exam"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "84917001",
+              "system": "http://snomed.info/sct"
+            }
+          ]
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "LA24899-9",
+              "system": "http://loinc.org",
+              "display": "Sluggishly reactive to light"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-icu-patient-1"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-icu-encounter-1"
+        },
+        "effectiveDateTime": "2024-05-06T07:30:00+02:00",
+        "bodySite": {
+          "coding": [
+            {
+              "code": "16089004",
+              "system": "http://snomed.info/sct",
+              "display": "Structure of pupil of left eye"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-patient-1-icu-pupille-symmetrie-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-1-icu-pupille-symmetrie-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-1-icu-pupille-symmetrie-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-untersuchung-pupillensymmetrie"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "exam",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "display": "Exam"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "301942005",
+              "system": "http://snomed.info/sct",
+              "display": "Finding of proportion of pupil (finding)"
+            }
+          ]
+        },
+        "bodySite": {
+          "coding": [
+            {
+              "code": "67019001",
+              "system": "http://snomed.info/sct",
+              "display": "Structure of pupil of both eyes (body structure)"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-icu-patient-1"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-icu-encounter-1"
+        },
+        "effectiveDateTime": "2024-05-06T07:30:00+02:00",
+        "dataAbsentReason": {
+          "coding": [
+            {
+              "code": "unsupported",
+              "system": "http://terminology.hl7.org/CodeSystem/data-absent-reason",
+              "display": "Unsupported"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
         "url": "Observation/mii-exa-test-data-patient-1-icu-ect-art-druck-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-1-icu-ect-art-druck-1",
@@ -4259,6 +6286,422 @@
           "reference": "Patient/mii-exa-test-data-icu-patient-1"
         },
         "effectiveDateTime": "2024-05-05T08:00:00+02:00"
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-patient-1-icu-vent-pmax-insp-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-1-icu-vent-pmax-insp-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-1-icu-vent-pmax-insp-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-maximaler-inspiratorischer-beatmungsdruck"
+          ]
+        },
+        "partOf": [
+          {
+            "reference": "Procedure/mii-exa-test-data-patient-1-icu-vent-beatmung-1"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "40617009",
+                "display": "Artificial ventilation (regime/therapy)"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "27913002",
+              "display": "Maximum inspiratory pressure (observable entity)"
+            },
+            {
+              "system": "urn:iso:std:iso:11073:10101",
+              "code": "151973",
+              "display": "Maximum inspiratory airway pressure."
+            }
+          ]
+        },
+        "valueQuantity": {
+          "system": "http://unitsofmeasure.org",
+          "code": "cm[H2O]",
+          "value": 28,
+          "unit": "cmH2O"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-icu-patient-1"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-icu-encounter-1"
+        },
+        "effectiveDateTime": "2024-05-05T08:00:00+02:00",
+        "device": {
+          "reference": "DeviceMetric/mii-exa-test-data-patient-1-icu-vent-dm-param-1"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-patient-1-icu-vent-pmean-insp-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-1-icu-vent-pmean-insp-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-1-icu-vent-pmean-insp-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-mittlerer-inspiratorischer-beatmungsdruck"
+          ]
+        },
+        "partOf": [
+          {
+            "reference": "Procedure/mii-exa-test-data-patient-1-icu-vent-beatmung-1"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "40617009",
+                "display": "Artificial ventilation (regime/therapy)"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "698821009",
+              "display": "Mean inspiratory airway pressure (observable entity)"
+            },
+            {
+              "system": "http://loinc.org",
+              "code": "60952-9",
+              "display": "Mean airway pressure --during inspiration"
+            },
+            {
+              "system": "urn:iso:std:iso:11073:10101",
+              "code": "151975",
+              "display": "Mean inspiratory airway pressure."
+            }
+          ]
+        },
+        "valueQuantity": {
+          "system": "http://unitsofmeasure.org",
+          "code": "cm[H2O]",
+          "value": 14,
+          "unit": "cmH2O"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-icu-patient-1"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-icu-encounter-1"
+        },
+        "effectiveDateTime": "2024-05-05T08:00:00+02:00",
+        "device": {
+          "reference": "DeviceMetric/mii-exa-test-data-patient-1-icu-vent-dm-param-1"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-patient-1-icu-vent-pplat-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-1-icu-vent-pplat-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-1-icu-vent-pplat-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-plateau-beatmungsdruck"
+          ]
+        },
+        "partOf": [
+          {
+            "reference": "Procedure/mii-exa-test-data-patient-1-icu-vent-beatmung-1"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "40617009",
+                "display": "Artificial ventilation (regime/therapy)"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "698822002",
+              "display": "Airway plateau pressure (observable entity)"
+            },
+            {
+              "system": "http://loinc.org",
+              "code": "76259-1",
+              "display": "Pressure.plateau Respiratory system airway --on ventilator"
+            },
+            {
+              "system": "urn:iso:std:iso:11073:10101",
+              "code": "152424",
+              "display": "Pressure in airway in plateau phase during mechanical ventilation."
+            }
+          ]
+        },
+        "valueQuantity": {
+          "system": "http://unitsofmeasure.org",
+          "code": "cm[H2O]",
+          "value": 22,
+          "unit": "cmH2O"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-icu-patient-1"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-icu-encounter-1"
+        },
+        "effectiveDateTime": "2024-05-05T08:00:00+02:00",
+        "device": {
+          "reference": "DeviceMetric/mii-exa-test-data-patient-1-icu-vent-dm-param-1"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-patient-1-icu-vent-param-generisch-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-1-icu-vent-param-generisch-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-1-icu-vent-param-generisch-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-parameter-von-beatmung"
+          ]
+        },
+        "partOf": [
+          {
+            "reference": "Procedure/mii-exa-test-data-patient-1-icu-vent-beatmung-1"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "40617009",
+                "system": "http://snomed.info/sct",
+                "display": "Artificial ventilation (regime/therapy)"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "426102006",
+              "display": "Inspiratory minute volume (observable entity)"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "system": "http://unitsofmeasure.org",
+          "value": 7.2,
+          "code": "L/min",
+          "unit": "L/min"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-icu-patient-1"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-icu-encounter-1"
+        },
+        "effectiveDateTime": "2024-05-05T08:00:00+02:00",
+        "device": {
+          "reference": "DeviceMetric/mii-exa-test-data-patient-1-icu-vent-dm-param-1"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-patient-1-icu-ect-param-generisch-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-1-icu-ect-param-generisch-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-1-icu-ect-param-generisch-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-parameter-von-extrakorporalen-verfahren"
+          ]
+        },
+        "partOf": [
+          {
+            "reference": "Procedure/mii-exa-test-data-patient-1-icu-ect-extrakorp-1"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "182744004",
+                "display": "Extracorporeal circulation procedure"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "79063001",
+              "display": "Gas flow rate (v)"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "system": "http://unitsofmeasure.org",
+          "value": 6,
+          "code": "L/min",
+          "unit": "L/min"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-icu-patient-1"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-icu-encounter-1"
+        },
+        "effectiveDateTime": "2024-05-05T20:00:00+02:00",
+        "device": {
+          "reference": "DeviceMetric/mii-exa-test-data-patient-1-icu-ect-dm-param-1"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-patient-1-icu-muv-laenge-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-1-icu-muv-laenge-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patient-1-icu-muv-laenge-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-koerperlaenge"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "1149101003"
+            },
+            {
+              "system": "http://loinc.org",
+              "code": "8306-3",
+              "display": "Body height --lying"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "system": "http://unitsofmeasure.org",
+          "code": "cm",
+          "unit": "centimeter",
+          "value": 168
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-icu-patient-1"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-icu-encounter-1"
+        },
+        "effectiveDateTime": "2024-05-01T12:00:00+02:00"
       }
     },
     {
