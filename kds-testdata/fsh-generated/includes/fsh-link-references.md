@@ -307,6 +307,7 @@
 [mii-exa-test-data-onko-patient-1]: Patient-mii-exa-test-data-onko-patient-1.html
 [mii-exa-test-data-onko-prostata-anzahl-stanzen-1]: Observation-mii-exa-test-data-onko-prostata-anzahl-stanzen-1.html
 [mii-exa-test-data-onko-prostata-ca-befall-1]: Observation-mii-exa-test-data-onko-prostata-ca-befall-1.html
+[mii-exa-test-data-onko-prostata-gleason-gesamt-1]: Observation-mii-exa-test-data-onko-prostata-gleason-gesamt-1.html
 [mii-exa-test-data-onko-prostata-gleason-grade-group-1]: Observation-mii-exa-test-data-onko-prostata-gleason-grade-group-1.html
 [mii-exa-test-data-onko-prostata-gleason-primary-1]: Observation-mii-exa-test-data-onko-prostata-gleason-primary-1.html
 [mii-exa-test-data-onko-prostata-gleason-secondary-1]: Observation-mii-exa-test-data-onko-prostata-gleason-secondary-1.html
@@ -329,15 +330,21 @@
 [mii-exa-test-data-onko-therapieempfehlung-parp-1]: RequestGroup-mii-exa-test-data-onko-therapieempfehlung-parp-1.html
 [mii-exa-test-data-onko-tnm-a-symbol-1]: Observation-mii-exa-test-data-onko-tnm-a-symbol-1.html
 [mii-exa-test-data-onko-tnm-klassifikation-1]: Observation-mii-exa-test-data-onko-tnm-klassifikation-1.html
+[mii-exa-test-data-onko-tnm-klassifikation-2]: Observation-mii-exa-test-data-onko-tnm-klassifikation-2.html
+[mii-exa-test-data-onko-tnm-klassifikation-synthetisiert-1]: Observation-mii-exa-test-data-onko-tnm-klassifikation-synthetisiert-1.html
 [mii-exa-test-data-onko-tnm-l-kategorie-1]: Observation-mii-exa-test-data-onko-tnm-l-kategorie-1.html
 [mii-exa-test-data-onko-tnm-m-kategorie-1]: Observation-mii-exa-test-data-onko-tnm-m-kategorie-1.html
+[mii-exa-test-data-onko-tnm-m-kategorie-2]: Observation-mii-exa-test-data-onko-tnm-m-kategorie-2.html
 [mii-exa-test-data-onko-tnm-m-symbol-1]: Observation-mii-exa-test-data-onko-tnm-m-symbol-1.html
 [mii-exa-test-data-onko-tnm-n-kategorie-1]: Observation-mii-exa-test-data-onko-tnm-n-kategorie-1.html
+[mii-exa-test-data-onko-tnm-n-kategorie-2]: Observation-mii-exa-test-data-onko-tnm-n-kategorie-2.html
 [mii-exa-test-data-onko-tnm-n-kategorie-sn-1]: Observation-mii-exa-test-data-onko-tnm-n-kategorie-sn-1.html
 [mii-exa-test-data-onko-tnm-pn-kategorie-1]: Observation-mii-exa-test-data-onko-tnm-pn-kategorie-1.html
 [mii-exa-test-data-onko-tnm-r-symbol-1]: Observation-mii-exa-test-data-onko-tnm-r-symbol-1.html
 [mii-exa-test-data-onko-tnm-s-kategorie-1]: Observation-mii-exa-test-data-onko-tnm-s-kategorie-1.html
 [mii-exa-test-data-onko-tnm-t-kategorie-1]: Observation-mii-exa-test-data-onko-tnm-t-kategorie-1.html
+[mii-exa-test-data-onko-tnm-t-kategorie-2]: Observation-mii-exa-test-data-onko-tnm-t-kategorie-2.html
+[mii-exa-test-data-onko-tnm-t-kategorie-3]: Observation-mii-exa-test-data-onko-tnm-t-kategorie-3.html
 [mii-exa-test-data-onko-tnm-v-kategorie-1]: Observation-mii-exa-test-data-onko-tnm-v-kategorie-1.html
 [mii-exa-test-data-onko-tnm-y-symbol-1]: Observation-mii-exa-test-data-onko-tnm-y-symbol-1.html
 [mii-exa-test-data-onko-tod-1]: Observation-mii-exa-test-data-onko-tod-1.html
@@ -346,6 +353,7 @@
 [mii-exa-test-data-onko-tumorkonferenz-1]: CarePlan-mii-exa-test-data-onko-tumorkonferenz-1.html
 [mii-exa-test-data-onko-tumorkonferenz-2]: CarePlan-mii-exa-test-data-onko-tumorkonferenz-2.html
 [mii-exa-test-data-onko-tumorkonferenz-molekular-1]: CarePlan-mii-exa-test-data-onko-tumorkonferenz-molekular-1.html
+[mii-exa-test-data-onko-tumormarker-1]: Observation-mii-exa-test-data-onko-tumormarker-1.html
 [mii-exa-test-data-onko-verlauf-1]: Observation-mii-exa-test-data-onko-verlauf-1.html
 [mii-exa-test-data-onko-verlauf-2]: Observation-mii-exa-test-data-onko-verlauf-2.html
 [mii-exa-test-data-organization-biobank-charite]: Organization-mii-exa-test-data-organization-biobank-charite.html

@@ -2,7 +2,7 @@
 
 Generiert von `scripts/ms-coverage.py` gegen `de.medizininformatikinitiative.kerndatensatz.complete#2027.0.0-ballot.19`. Heuristik siehe Skript-Docstring.
 
-MS-Elemente über alle genutzten Profile: **11763** · oberste unbefüllte Knoten: **1596**
+MS-Elemente über alle genutzten Profile: **11862** · oberste unbefüllte Knoten: **1610**
 
 ## Richtung A: unbefüllte MS-Elemente je Modul
 
@@ -22,7 +22,7 @@ MS-Elemente über alle genutzten Profile: **11763** · oberste unbefüllte Knote
 | modul-mikrobio | 163 | `effective[x].extension:QuelleKlinischesBezugsdatum`×19, `basedOn`×18, `code.coding.version`×18, `referenceRange`×11, `value[x]:valueQuantity.code`×11, `value[x]:valueQuantity.comparator`×11 |
 | modul-molgen | 7 | `basedOn`, `relationship.coding:snomed.extension:FamiliareLinie`, `relationship.coding:snomed.extension:Verwandtschaftsgrad`, `relationship.coding:snomed.extension:Verwandtschaftsverhaeltnis`, `derivedFrom`, `media` |
 | modul-mtb | 312 | `encounter`×28, `issued`×23, `effective[x]`×22, `focus`×17, `identifier`×17, `derivedFrom`×15 |
-| modul-onko | 227 | `encounter`×29, `note`×12, `code.coding:ops.extension:Seitenlokalisation`×11, `extension:Dokumentationsdatum`×11, `extension:durchfuehrungsabsicht`×11, `bodySite`×9 |
+| modul-onko | 241 | `encounter`×30, `note`×13, `code.coding:ops.extension:Seitenlokalisation`×11, `extension:Dokumentationsdatum`×11, `extension:durchfuehrungsabsicht`×11, `bodySite`×9 |
 | modul-person | 29 | `encounter`×2, `address:Postfach.city.extension:gemeindeschluessel.url`, `address:Postfach.city.extension:gemeindeschluessel.value[x]`, `address:Postfach.line.extension:Postfach`, `address:Strassenanschrift.city.extension:gemeindeschluessel.url`, `address:Strassenanschrift.city.extension:gemeindeschluessel.value[x]` |
 | modul-pro | 48 | `focus`×14, `identifier`×8, `note`×7, `performer`×7, `interpretation`×6, `author` |
 | modul-prozedur | 1 | `bodySite.coding:snomed-ct.version` |
@@ -325,6 +325,7 @@ MS-Elemente über alle genutzten Profile: **11763** · oberste unbefüllte Knote
 - **mii-pr-onko-prostate-clavien-dindo** (1 Inst.): `Observation.encounter`
 - **mii-pr-onko-prostate-gleason-grade-group** (1 Inst.): `Observation.encounter`
 - **mii-pr-onko-prostate-gleason-patterns** (2 Inst.): `Observation.encounter`
+- **mii-pr-onko-prostate-gleason-score-gesamt** (1 Inst.): `Observation.encounter`, `Observation.focus`, `Observation.specimen`
 - **mii-pr-onko-prostate-psa** (1 Inst.): `Observation.encounter`
 - **mii-pr-onko-strahlentherapie** (1 Inst.): `Procedure.bodySite`, `Procedure.code.coding:ops.extension:Seitenlokalisation`, `Procedure.extension:Dokumentationsdatum`, `Procedure.extension:Intention.value[x].text`, `Procedure.extension:StellungZurOp.value[x].text`, `Procedure.extension:durchfuehrungsabsicht`, `Procedure.note`
 - **mii-pr-onko-strahlentherapie-bestrahlung-nuklearmedizin** (1 Inst.): `Procedure.bodySite.coding:snomed-ct.version`, `Procedure.code.coding:ops.extension:Seitenlokalisation`, `Procedure.encounter`, `Procedure.extension:Dokumentationsdatum`, `Procedure.extension:durchfuehrungsabsicht`, `Procedure.note`
@@ -335,9 +336,8 @@ MS-Elemente über alle genutzten Profile: **11763** · oberste unbefüllte Knote
 - **mii-pr-onko-therapieempfehlung-kombinationstherapie** (2 Inst.): `RequestGroup.action.code`
 - **mii-pr-onko-therapieempfehlung-medikation** (3 Inst.): `MedicationRequest.basedOn`, `MedicationRequest.dosageInstruction`, `MedicationRequest.encounter`, `MedicationRequest.identifier`, `MedicationRequest.medication[x]:medicationCodeableConcept.text`, `MedicationRequest.priorPrescription`, `MedicationRequest.reasonCode`, `MedicationRequest.requester`, `MedicationRequest.substitution`
 - **mii-pr-onko-therapieempfehlung-operation** (1 Inst.): `ServiceRequest.encounter`
-- **mii-pr-onko-tnm-m-kategorie** (1 Inst.): `Observation.modifierExtension:aPraefix`, `Observation.modifierExtension:rPraefix`, `Observation.modifierExtension:yPraefix`
-- **mii-pr-onko-tnm-n-kategorie** (2 Inst.): `Observation.modifierExtension:aPraefix`, `Observation.modifierExtension:rPraefix`, `Observation.modifierExtension:yPraefix`
-- **mii-pr-onko-tnm-t-kategorie** (1 Inst.): `Observation.component:multipleTumoren`, `Observation.modifierExtension:aPraefix`, `Observation.modifierExtension:rPraefix`, `Observation.modifierExtension:yPraefix`
+- **mii-pr-onko-tnm-klassifikation-synthetisiert** (1 Inst.): `Observation.device`, `Observation.hasMember`, `Observation.specimen`
+- **mii-pr-onko-tumormarker** (1 Inst.): `Observation.basedOn`, `Observation.category.coding.display`, `Observation.dataAbsentReason`, `Observation.device`, `Observation.effective[x].extension:QuelleKlinischesBezugsdatum`, `Observation.encounter.identifier`, `Observation.focus`, `Observation.issued`, `Observation.method`, `Observation.modifierExtension`, `Observation.modifierExtension:interpretationsbeeinflussendeEigenschaft`, `Observation.note`, `Observation.referenceRange`, `Observation.specimen`, `Observation.subject.identifier`, `Observation.value[x]:valueCodeableConcept.coding`, `Observation.value[x]:valueQuantity.comparator`, `Observation.value[x]:valueQuantity.value.extension:quantityPrecision`
 
 </details>
 
@@ -412,21 +412,21 @@ MS-Elemente über alle genutzten Profile: **11763** · oberste unbefüllte Knote
 
 | Modul | Pfade | Top (Anzahl Profile, die den Pfad befüllen) |
 |---|---|---|
-| modul-bildgebung | 6 | `extension`×2, `extension.url`×2, `extension.valueString`, `extension.valueId` |
-| modul-consent | 2 | `scope.coding`, `scope` |
-| modul-fall | 4 | `serviceProvider.reference`, `serviceProvider.identifier`, `serviceProvider`, `serviceProvider.display` |
+| modul-bildgebung | 6 | `extension.url`×2, `extension`×2, `extension.valueString`, `extension.valueId` |
+| modul-consent | 2 | `scope`, `scope.coding` |
+| modul-fall | 4 | `serviceProvider`, `serviceProvider.identifier`, `serviceProvider.display`, `serviceProvider.reference` |
 | modul-icu | 17 | `status`×15, `patient.reference`, `patient` |
-| modul-kardio | 33 | `status`×7, `performer.display`×2, `performer`×2, `code`, `deviceName`, `deviceName.type` |
-| modul-labor | 4 | `reasonCode.coding`, `requester.reference`, `requester`, `reasonCode` |
+| modul-kardio | 33 | `status`×7, `performer.display`×2, `performer`×2, `code`, `manufacturer`, `deviceName` |
+| modul-labor | 4 | `requester`, `requester.reference`, `reasonCode.coding`, `reasonCode` |
 | modul-lungenfunktion | 2 | `effectiveDateTime`, `name` |
 | modul-medikation | 2 | `status`, `title` |
-| modul-molgen | 56 | `status`×5, `specimen`×4, `category`×4, `specimen.reference`×4, `category.coding`×4, `basedOn`×4 |
-| modul-mtb | 71 | `status`×24, `subject.reference`×7, `subject`×7, `intent`×4, `effectiveDateTime`×3, `valueCodeableConcept.coding`×2 |
-| modul-onko | 78 | `status`×39, `effectiveDateTime`×9, `method.coding`×4, `method`×4, `type.coding`×2, `type`×2 |
+| modul-molgen | 56 | `status`×5, `category.coding`×4, `specimen`×4, `specimen.reference`×4, `category`×4, `basedOn.reference`×4 |
+| modul-mtb | 71 | `status`×24, `subject`×7, `subject.reference`×7, `intent`×4, `effectiveDateTime`×3, `valueCodeableConcept.coding`×2 |
+| modul-onko | 79 | `status`×40, `effectiveDateTime`×9, `method.coding`×4, `method`×4, `type.coding`×2, `type`×2 |
 | modul-patho | 9 | `encounter.reference`×3, `encounter`×3, `date`×2, `recordedDate` |
-| modul-pro | 46 | `subject.reference`×15, `subject`×15, `encounter.reference`×8, `encounter`×8 |
-| modul-prozedur | 2 | `recorder.reference`, `recorder` |
-| modul-seltene | 25 | `subject.reference`×3, `subject`×3, `status`×3, `code`×2, `code.coding`×2, `intent`×2 |
-| modul-soziodemographie | 17 | `valueCodeableConcept.coding`×6, `valueCodeableConcept`×6, `valueCodeableConcept.text`×2, `code.text`, `code`, `code.coding` |
-| modul-studie | 10 | `active`, `reasonCode.coding`, `requester.reference`, `encounter.reference`, `note.text`, `reasonCode` |
-| modul-symptom | 5 | `extension`, `bodySite.coding`, `extension.url`, `extension.valueReference`, `bodySite` |
+| modul-pro | 46 | `subject`×15, `subject.reference`×15, `encounter.reference`×8, `encounter`×8 |
+| modul-prozedur | 2 | `recorder`, `recorder.reference` |
+| modul-seltene | 25 | `status`×3, `subject.reference`×3, `subject`×3, `code`×2, `code.coding`×2, `intent`×2 |
+| modul-soziodemographie | 17 | `valueCodeableConcept.coding`×6, `valueCodeableConcept`×6, `valueCodeableConcept.text`×2, `code`, `code.coding`, `code.text` |
+| modul-studie | 10 | `active`, `authoredOn`, `requester`, `encounter.reference`, `requester.reference`, `note` |
+| modul-symptom | 5 | `extension.url`, `extension.valueReference`, `extension`, `bodySite.coding`, `bodySite` |

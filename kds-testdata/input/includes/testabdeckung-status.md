@@ -1,6 +1,6 @@
 **Bezugsstand: MII Kerndatensatz complete [`2027.0.0-ballot.19`](https://github.com/medizininformatik-initiative/kerndatensatz-complete/releases/tag/v2027.0.0-ballot.19)** — alle Zahlen dieser Seite beziehen sich auf die Profil-Snapshots dieses BOM-Stands.
 
-11763 MS-Elemente über die genutzten Profile · **1596 oberste unbefüllte Knoten**
+11862 MS-Elemente über die genutzten Profile · **1610 oberste unbefüllte Knoten**
 
 | Modul | offene MS-Lücken | häufigste fehlende Elemente |
 |---|---|---|
@@ -18,7 +18,7 @@
 | mikrobio | 163 | `effective[x].extension:QuelleKlinischesBezugsdatum`, `basedOn`, `code.coding.version`, `referenceRange` |
 | molgen | 7 | `basedOn`, `relationship.coding:snomed.extension:FamiliareLinie`, `relationship.coding:snomed.extension:Verwandtschaftsgrad`, `relationship.coding:snomed.extension:Verwandtschaftsverhaeltnis` |
 | mtb | 312 | `encounter`, `issued`, `effective[x]`, `focus` |
-| onko | 227 | `encounter`, `note`, `code.coding:ops.extension:Seitenlokalisation`, `extension:Dokumentationsdatum` |
+| onko | 241 | `encounter`, `note`, `code.coding:ops.extension:Seitenlokalisation`, `extension:Dokumentationsdatum` |
 | person | 29 | `encounter`, `address:Postfach.city.extension:gemeindeschluessel.url`, `address:Postfach.city.extension:gemeindeschluessel.value[x]`, `address:Postfach.line.extension:Postfach` |
 | pro | 48 | `focus`, `identifier`, `note`, `performer` |
 | prozedur | 1 | `bodySite.coding:snomed-ct.version` |

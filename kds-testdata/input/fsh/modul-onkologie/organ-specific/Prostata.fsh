@@ -141,3 +141,17 @@ Description: "Onkologie Test Prostata OP Komplikation - Clavien-Dindo IIIa"
 * valueCodeableConcept.coding[ClavienDindo] = $SCT#1367522003 "Clavien-Dindo classification grade IIIa (finding)"
 * valueCodeableConcept.coding[OBDSPostOPKompl] = $mii-cs-onko-prostata-postsurgical-complications#J "Ja"
 
+
+// Gleason-Score gesamt (2027-ballot.1: letztes unabgedecktes Prostata-Profil)
+Instance: mii-exa-test-data-onko-prostata-gleason-gesamt-1
+InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-prostate-gleason-score-gesamt
+Usage: #example
+Description: "Onkologie Test Prostata Gleason-Score gesamt - Gleason 7 (3+4)"
+* insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
+* status = #final
+* code.coding[snomed] = $SCT#372278000 "Gleason score (observable entity)"
+* code.coding[loinc] = $loinc#35266-6 "Gleason score in Specimen Qualitative"
+* subject = Reference(mii-exa-test-data-onko-patient-1)
+* effectiveDateTime = "2021-10-05"
+* valueCodeableConcept = $SCT#57403001 "Gleason grade score 7 out of 10 (finding)"

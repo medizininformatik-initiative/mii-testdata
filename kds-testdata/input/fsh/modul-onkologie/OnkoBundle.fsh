@@ -66,6 +66,15 @@ Description: "Vollst√§ndiges Transaktionsbundle mit allen Onkologie-Testdaten f√
 
 // TNM Klassifikation Grouper
 * insert AddBundleEntry(mii-exa-test-data-onko-tnm-klassifikation-1, Observation)
+* insert AddBundleEntry(mii-exa-test-data-onko-tnm-t-kategorie-2, Observation)
+* insert AddBundleEntry(mii-exa-test-data-onko-tnm-n-kategorie-2, Observation)
+* insert AddBundleEntry(mii-exa-test-data-onko-tnm-m-kategorie-2, Observation)
+* insert AddBundleEntry(mii-exa-test-data-onko-tnm-t-kategorie-3, Observation)
+* insert AddBundleEntry(mii-exa-test-data-onko-tnm-klassifikation-2, Observation)
+* insert AddBundleEntry(mii-exa-test-data-onko-tnm-klassifikation-synthetisiert-1, Observation)
+* insert AddBundleEntry(mii-exa-test-data-onko-prostata-gleason-gesamt-1, Observation)
+* insert AddBundleEntry(mii-exa-test-data-onko-tumormarker-1, Observation)
+* insert AddBundleEntry(mii-exa-test-data-organization-charite, Organization)
 
 // =====================================
 // STAGING (Chapter 9-12)

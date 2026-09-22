@@ -2537,6 +2537,14 @@
       },
       {
         "reference": {
+          "reference": "Observation/mii-exa-test-data-onko-prostata-gleason-gesamt-1"
+        },
+        "name": "mii-exa-test-data-onko-prostata-gleason-gesamt-1",
+        "description": "Onkologie Test Prostata Gleason-Score gesamt - Gleason 7 (3+4)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Observation/mii-exa-test-data-onko-prostata-gleason-grade-group-1"
         },
         "name": "mii-exa-test-data-onko-prostata-gleason-grade-group-1",
@@ -2713,6 +2721,22 @@
       },
       {
         "reference": {
+          "reference": "Observation/mii-exa-test-data-onko-tnm-klassifikation-2"
+        },
+        "name": "mii-exa-test-data-onko-tnm-klassifikation-2",
+        "description": "Onkologie Test TNM Klassifikation klinisch - ycT2(m) rcN0 ycM0, Stadium IB",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-onko-tnm-klassifikation-synthetisiert-1"
+        },
+        "name": "mii-exa-test-data-onko-tnm-klassifikation-synthetisiert-1",
+        "description": "Onkologie Test TNM synthetisiert - aus klinischer (IB) und pathologischer (IVB) Klassifikation, Gesamt-Stadium IVB",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Observation/mii-exa-test-data-onko-tnm-l-kategorie-1"
         },
         "name": "mii-exa-test-data-onko-tnm-l-kategorie-1",
@@ -2729,6 +2753,14 @@
       },
       {
         "reference": {
+          "reference": "Observation/mii-exa-test-data-onko-tnm-m-kategorie-2"
+        },
+        "name": "mii-exa-test-data-onko-tnm-m-kategorie-2",
+        "description": "Onkologie Test TNM M-Kategorie klinisch - ycM0",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Observation/mii-exa-test-data-onko-tnm-m-symbol-1"
         },
         "name": "mii-exa-test-data-onko-tnm-m-symbol-1",
@@ -2741,6 +2773,14 @@
         },
         "name": "mii-exa-test-data-onko-tnm-n-kategorie-1",
         "description": "Onkologie Test TNM N-Kategorie - pN1",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-onko-tnm-n-kategorie-2"
+        },
+        "name": "mii-exa-test-data-onko-tnm-n-kategorie-2",
+        "description": "Onkologie Test TNM N-Kategorie klinisch - rcN0 (Rezidiv-Staging)",
         "exampleBoolean": true
       },
       {
@@ -2781,6 +2821,22 @@
         },
         "name": "mii-exa-test-data-onko-tnm-t-kategorie-1",
         "description": "Onkologie Test TNM T-Kategorie - pT3c",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-onko-tnm-t-kategorie-2"
+        },
+        "name": "mii-exa-test-data-onko-tnm-t-kategorie-2",
+        "description": "Onkologie Test TNM T-Kategorie klinisch - ycT2(m), nach neoadjuvanter Therapie, multiple Tumoren",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-onko-tnm-t-kategorie-3"
+        },
+        "name": "mii-exa-test-data-onko-tnm-t-kategorie-3",
+        "description": "Onkologie Test TNM T-Kategorie - aT3 (Autopsiebefund)",
         "exampleBoolean": true
       },
       {
@@ -2845,6 +2901,14 @@
         },
         "name": "mii-exa-test-data-onko-tumorkonferenz-molekular-1",
         "description": "Onkologie Test Molekulares Tumorboard - mit erweiterter Therapieempfehlung",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-onko-tumormarker-1"
+        },
+        "name": "mii-exa-test-data-onko-tumormarker-1",
+        "description": "Onkologie Test Tumormarker - CA-125 erhöht (356 U/mL)",
         "exampleBoolean": true
       },
       {
