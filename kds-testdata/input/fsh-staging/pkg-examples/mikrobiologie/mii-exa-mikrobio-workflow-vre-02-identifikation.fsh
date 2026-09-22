@@ -1,10 +1,10 @@
 Instance: mii-exa-mikrobio-workflow-vre-02-identifikation
 InstanceOf: MII_PR_Mikrobio_Allgemeine_Bestimmung
 Usage: #example
-* identifier.type = http://terminology.hl7.org/CodeSystem/v2-0203#OBI
-* identifier.system = "https://example.org/fhir/sid/test-lab-results"
-* identifier.value = "wf-vre-2"
-* identifier.assigner = Reference(mii-exa-mikrobio-labor)
+* identifier[analyseBefundCode].type = http://terminology.hl7.org/CodeSystem/v2-0203#OBI
+* identifier[analyseBefundCode].system = "https://example.org/fhir/sid/test-lab-results"
+* identifier[analyseBefundCode].value = "wf-vre-2"
+* identifier[analyseBefundCode].assigner = Reference(mii-exa-mikrobio-labor)
 * category[0].coding[0] = http://terminology.hl7.org/CodeSystem/observation-category#laboratory "Laboratory"
 * category[=].coding[+] = http://loinc.org#26436-6 "Laboratory studies (set)"
 * category[=].coding[=].version = "2.82"

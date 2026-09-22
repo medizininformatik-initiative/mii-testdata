@@ -65,3 +65,12 @@ verschieben, `sushi build .` ausführen, Fehler unten abarbeiten
 - 1× Element DiagnosticReport.identifier:Set-ID.system has minimum cardinality N but occurs N time(s).
 - 1× Element DiagnosticReport.identifier:Set-ID.value has minimum cardinality N but occurs N time(s).
 
+
+## Korrektur zur Fehlerliste oben
+
+Der Mikrobiologie-Block (114 Fehler über `identifier:analyseBefundCode`) war
+**kein Modulfehler**, sondern ein Artefakt der GoFSH-Konvertierung: GoFSH
+vergibt keine Slice-Namen, SUSHI matcht Slices nicht per Diskriminator. Die
+Original-JSON-Examples erfüllen den Slice. Fix: Slice-Namen in den FSH-Dateien
+ergänzt (`identifier[analyseBefundCode].…`) — Rest-Fehlerstand Mikrobiologie
+bei Probe-Integration: 21 (statt 114+).

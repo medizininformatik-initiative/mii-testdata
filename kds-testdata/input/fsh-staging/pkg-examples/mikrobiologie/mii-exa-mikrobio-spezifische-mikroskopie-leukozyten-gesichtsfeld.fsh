@@ -1,10 +1,10 @@
 Instance: mii-exa-mikrobio-spezifische-mikroskopie-leukozyten-gesichtsfeld
 InstanceOf: MII_PR_Mikrobio_Spezifische_Mikroskopie
 Usage: #example
-* identifier.type = http://terminology.hl7.org/CodeSystem/v2-0203#OBI
-* identifier.system = "https://example.org/fhir/sid/test-lab-results"
-* identifier.value = "spez-mikroskopie-leuko-1"
-* identifier.assigner = Reference(mii-exa-mikrobio-labor)
+* identifier[analyseBefundCode].type = http://terminology.hl7.org/CodeSystem/v2-0203#OBI
+* identifier[analyseBefundCode].system = "https://example.org/fhir/sid/test-lab-results"
+* identifier[analyseBefundCode].value = "spez-mikroskopie-leuko-1"
+* identifier[analyseBefundCode].assigner = Reference(mii-exa-mikrobio-labor)
 * category[0].coding[0] = http://terminology.hl7.org/CodeSystem/observation-category#laboratory "Laboratory"
 * category[=].coding[+] = http://loinc.org#26436-6 "Laboratory studies (set)"
 * category[=].coding[=].version = "2.82"
