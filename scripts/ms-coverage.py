@@ -160,16 +160,27 @@ def main():
                 ms_paths.add(base_parts(el["id"]))
         tot_ms += len(ms_ids)
         missing = []
+        witnesses = {}  # elementId -> [instanz-ids]
         for eid in ms_ids:
             parts = base_parts(eid)
-            if "extension" in parts and ":" in eid and eid in ext_url:
-                if any(any_extension_with_url(i, ext_url[eid]) for i in instances):
+            if eid in ext_url:  # Extension-/ModifierExtension-Slice via fixedUri
+                w = [i.get("id") for i in instances if any_extension_with_url(i, ext_url[eid])]
+                if w:
+                    witnesses[eid] = w[:5]
                     continue
                 missing.append(eid)
                 continue
-            if any(get_values(i, parts) for i in instances):
+            w = [i.get("id") for i in instances if get_values(i, parts)]
+            if w:
+                witnesses[eid] = w[:5]
                 continue
             missing.append(eid)
+        if INDEX_OUT is not None:
+            INDEX["profiles"][prof] = {
+                "module": mod_of(prof),
+                "instances": sorted({i.get("id") for i in instances}),
+                "ms": {eid: witnesses.get(eid) for eid in ms_ids},
+            }
         top = collapse(missing)
         tot_top += len(top)
         mod = mod_of(prof)
@@ -264,8 +275,28 @@ def main():
         with open(IG_INCLUDE, "w", encoding="utf-8") as f:
             f.write("\n".join(L) + "\n")
 
+    if INDEX_OUT is not None:
+        # Fragile Abdeckung: MS-Elemente mit genau EINEM Zeugen
+        fragile = collections.Counter()
+        for prof, entry in INDEX["profiles"].items():
+            for eid, w in entry["ms"].items():
+                if w is not None and len(entry["instances"]) >= 1 and len(w) == 1:
+                    fragile[entry["module"]] += 1
+        INDEX["fragile_per_module"] = dict(fragile)
+        with open(INDEX_OUT, "w", encoding="utf-8") as f:
+            json.dump(INDEX, f, ensure_ascii=False, indent=1)
+        print(f"\n## Abdeckungs-Index\n")
+        print(f"Maschinenlesbarer Index (MS-Element → Zeugen-Instanzen, max. 5) unter "
+              f"`{INDEX_OUT}`. Einzel-Zeugen sind per Policy ausreichend; die Zählung dient "
+              f"als Regressions-Radar (Instanz löschen → Abdeckung prüfen). Einzel-Zeugen je Modul: "
+              + ", ".join(f"{m.replace('modul-','')} {n}" for m, n in sorted(fragile.items(), key=lambda kv: -kv[1])[:10]) + ".")
+
 IG_INCLUDE = None
+INDEX_OUT = None
+INDEX = {"profiles": {}}
 if __name__ == "__main__":
     if "--ig-include" in sys.argv:
         IG_INCLUDE = sys.argv[sys.argv.index("--ig-include") + 1]
+    if "--index" in sys.argv:
+        INDEX_OUT = sys.argv[sys.argv.index("--index") + 1]
     main()
