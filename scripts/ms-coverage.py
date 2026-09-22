@@ -111,6 +111,14 @@ def main():
     gap_elems = collections.defaultdict(collections.Counter)
     notms = collections.defaultdict(collections.Counter)
     tot_ms = tot_top = 0
+    # Modul-Summen: Quelle ist ausschliesslich das gepinnte Package —
+    # die Snapshot-StructureDefinitions der BOM sind die Source of Truth,
+    # nicht der Branch-/main-Zustand.
+    modsum = collections.defaultdict(lambda: {"prof_total": 0, "prof_used": 0,
+                                              "ms_total": 0, "ms_cov": 0})
+    for f in idx["files"]:
+        if f.get("resourceType") == "StructureDefinition" and f.get("kind") == "resource":
+            modsum[mod_of(f.get("url", ""))]["prof_total"] += 1
 
     for prof, instances in sorted(by_prof.items()):
         fn = sd_file.get(prof)
@@ -144,6 +152,9 @@ def main():
         top = collapse(missing)
         tot_top += len(top)
         mod = mod_of(prof)
+        modsum[mod]["prof_used"] += 1
+        modsum[mod]["ms_total"] += len(ms_ids)
+        modsum[mod]["ms_cov"] += len(ms_ids) - len(missing)
         if top:
             gaps[mod].append((prof.rsplit("/", 1)[-1], len(instances), top))
             for t in top:
@@ -164,8 +175,24 @@ def main():
                 notms[mod][".".join(p)] += 1
 
     print("# Must-Support-Abdeckung der Testdaten (2027-Ballot)\n")
-    print(f"Generiert von `scripts/ms-coverage.py` gegen `{PKG}`. Heuristik siehe Skript-Docstring.\n")
+    print(f"Generiert von `scripts/ms-coverage.py`. **Source of Truth sind die "
+          f"Snapshot-StructureDefinitions des gepinnten Packages `{PKG}`** — "
+          f"nicht der Branch-Zustand. Heuristik siehe Skript-Docstring.\n")
     print(f"MS-Elemente über alle genutzten Profile: **{tot_ms}** · oberste unbefüllte Knoten: **{tot_top}**\n")
+    print("## Übersicht je Modul\n")
+    print("| Modul | Profile genutzt/gesamt | MS befüllt/gesamt | Coverage |")
+    print("|---|---|---|---|")
+    for mod in sorted(modsum):
+        m = modsum[mod]
+        if not m["prof_total"] and not m["prof_used"]:
+            continue
+        pct = f"{100*m['ms_cov']/m['ms_total']:.1f} %" if m["ms_total"] else "–"
+        print(f"| {mod} | {m['prof_used']}/{m['prof_total']} | {m['ms_cov']}/{m['ms_total']} | {pct} |")
+    _tp = sum(m["prof_total"] for m in modsum.values()); _tu = sum(m["prof_used"] for m in modsum.values())
+    _tc = sum(m["ms_cov"] for m in modsum.values())
+    print(f"| **GESAMT** | {_tu}/{_tp} | {_tc}/{tot_ms} | "
+          f"{100*_tc/tot_ms:.1f} % |" if tot_ms else "")
+    print()
     print("## Richtung A: unbefüllte MS-Elemente je Modul\n")
     print("| Modul | Lücken | häufigste fehlende Elemente |")
     print("|---|---|---|")
@@ -195,12 +222,16 @@ def main():
             f"— alle Zahlen dieser Seite beziehen sich auf die Profil-Snapshots dieses BOM-Stands.\n")
         L.append(f"{tot_ms} MS-Elemente über die genutzten Profile · "
                  f"**{tot_top} oberste unbefüllte Knoten**\n")
-        L.append("| Modul | offene MS-Lücken | häufigste fehlende Elemente |")
-        L.append("|---|---|---|")
-        for mod in sorted(gap_elems):
-            c = gap_elems[mod]
-            top = ", ".join(f"`{k}`" for k, _ in c.most_common(4))
-            L.append(f"| {mod.replace('modul-','')} | {sum(c.values())} | {top} |")
+        L.append("| Modul | Profile genutzt/gesamt | MS befüllt/gesamt | Coverage | häufigste Lücken |")
+        L.append("|---|---|---|---|---|")
+        for mod in sorted(modsum):
+            m = modsum[mod]
+            if not m["prof_total"] and not m["prof_used"]:
+                continue
+            pct = f"{100*m['ms_cov']/m['ms_total']:.0f} %" if m["ms_total"] else "–"
+            top = ", ".join(f"`{k}`" for k, _ in gap_elems[mod].most_common(3)) or "—"
+            L.append(f"| {mod.replace('modul-','')} | {m['prof_used']}/{m['prof_total']} | "
+                     f"{m['ms_cov']}/{m['ms_total']} | {pct} | {top} |")
         L.append("")
         L.append("Vollständiger Report (je Profil, plus befüllte Nicht-MS-Pfade als "
                  "Ballot-Feedback-Kandidaten): "

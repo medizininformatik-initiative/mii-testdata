@@ -1,8 +1,38 @@
 # Must-Support-Abdeckung der Testdaten (2027-Ballot)
 
-Generiert von `scripts/ms-coverage.py` gegen `de.medizininformatikinitiative.kerndatensatz.complete#2027.0.0-ballot.19`. Heuristik siehe Skript-Docstring.
+Generiert von `scripts/ms-coverage.py`. **Source of Truth sind die Snapshot-StructureDefinitions des gepinnten Packages `de.medizininformatikinitiative.kerndatensatz.complete#2027.0.0-ballot.19`** — nicht der Branch-Zustand. Heuristik siehe Skript-Docstring.
 
 MS-Elemente über alle genutzten Profile: **11862** · oberste unbefüllte Knoten: **1610**
+
+## Übersicht je Modul
+
+| Modul | Profile genutzt/gesamt | MS befüllt/gesamt | Coverage |
+|---|---|---|---|
+| modul-bildgebung | 11/12 | 250/345 | 72.5 % |
+| modul-biobank | 3/11 | 68/93 | 73.1 % |
+| modul-consent | 1/3 | 41/50 | 82.0 % |
+| modul-diagnose | 1/1 | 62/77 | 80.5 % |
+| modul-dokument | 1/1 | 69/70 | 98.6 % |
+| modul-fall | 1/1 | 92/96 | 95.8 % |
+| modul-icu | 65/94 | 1693/2142 | 79.0 % |
+| modul-kardio | 13/13 | 272/362 | 75.1 % |
+| modul-labor | 3/3 | 120/151 | 79.5 % |
+| modul-lungenfunktion | 39/48 | 1156/1556 | 74.3 % |
+| modul-medikation | 5/5 | 305/437 | 69.8 % |
+| modul-meta | 0/1 | 0/0 | – |
+| modul-mikrobio | 19/21 | 1200/1442 | 83.2 % |
+| modul-molgen | 16/16 | 241/248 | 97.2 % |
+| modul-mtb | 48/50 | 916/1501 | 61.0 % |
+| modul-onko | 76/76 | 1381/2035 | 67.9 % |
+| modul-patho | 3/17 | 25/25 | 100.0 % |
+| modul-person | 3/5 | 113/195 | 57.9 % |
+| modul-pro | 18/23 | 200/249 | 80.3 % |
+| modul-prozedur | 1/1 | 45/46 | 97.8 % |
+| modul-seltene | 17/23 | 328/538 | 61.0 % |
+| modul-soziodemographie | 15/16 | 148/153 | 96.7 % |
+| modul-studie | 2/7 | 8/12 | 66.7 % |
+| modul-symptom | 2/2 | 36/39 | 92.3 % |
+| **GESAMT** | 363/450 | 8769/11862 | 73.9 % |
 
 ## Richtung A: unbefüllte MS-Elemente je Modul
 
@@ -414,19 +444,19 @@ MS-Elemente über alle genutzten Profile: **11862** · oberste unbefüllte Knote
 |---|---|---|
 | modul-bildgebung | 6 | `extension.url`×2, `extension`×2, `extension.valueString`, `extension.valueId` |
 | modul-consent | 2 | `scope`, `scope.coding` |
-| modul-fall | 4 | `serviceProvider`, `serviceProvider.identifier`, `serviceProvider.display`, `serviceProvider.reference` |
-| modul-icu | 17 | `status`×15, `patient.reference`, `patient` |
+| modul-fall | 4 | `serviceProvider.identifier`, `serviceProvider.reference`, `serviceProvider`, `serviceProvider.display` |
+| modul-icu | 17 | `status`×15, `patient`, `patient.reference` |
 | modul-kardio | 33 | `status`×7, `performer.display`×2, `performer`×2, `code`, `manufacturer`, `deviceName` |
-| modul-labor | 4 | `requester`, `requester.reference`, `reasonCode.coding`, `reasonCode` |
+| modul-labor | 4 | `requester.reference`, `reasonCode.coding`, `requester`, `reasonCode` |
 | modul-lungenfunktion | 2 | `effectiveDateTime`, `name` |
 | modul-medikation | 2 | `status`, `title` |
-| modul-molgen | 56 | `status`×5, `category.coding`×4, `specimen`×4, `specimen.reference`×4, `category`×4, `basedOn.reference`×4 |
+| modul-molgen | 56 | `status`×5, `category.coding`×4, `category`×4, `specimen.reference`×4, `specimen`×4, `basedOn`×4 |
 | modul-mtb | 71 | `status`×24, `subject`×7, `subject.reference`×7, `intent`×4, `effectiveDateTime`×3, `valueCodeableConcept.coding`×2 |
-| modul-onko | 79 | `status`×40, `effectiveDateTime`×9, `method.coding`×4, `method`×4, `type.coding`×2, `type`×2 |
-| modul-patho | 9 | `encounter.reference`×3, `encounter`×3, `date`×2, `recordedDate` |
-| modul-pro | 46 | `subject`×15, `subject.reference`×15, `encounter.reference`×8, `encounter`×8 |
-| modul-prozedur | 2 | `recorder`, `recorder.reference` |
-| modul-seltene | 25 | `status`×3, `subject.reference`×3, `subject`×3, `code`×2, `code.coding`×2, `intent`×2 |
+| modul-onko | 79 | `status`×40, `effectiveDateTime`×9, `method`×4, `method.coding`×4, `type.coding`×2, `type`×2 |
+| modul-patho | 9 | `encounter`×3, `encounter.reference`×3, `date`×2, `recordedDate` |
+| modul-pro | 46 | `subject`×15, `subject.reference`×15, `encounter`×8, `encounter.reference`×8 |
+| modul-prozedur | 2 | `recorder.reference`, `recorder` |
+| modul-seltene | 25 | `subject`×3, `status`×3, `subject.reference`×3, `code`×2, `code.coding`×2, `intent`×2 |
 | modul-soziodemographie | 17 | `valueCodeableConcept.coding`×6, `valueCodeableConcept`×6, `valueCodeableConcept.text`×2, `code`, `code.coding`, `code.text` |
-| modul-studie | 10 | `active`, `authoredOn`, `requester`, `encounter.reference`, `requester.reference`, `note` |
-| modul-symptom | 5 | `extension.url`, `extension.valueReference`, `extension`, `bodySite.coding`, `bodySite` |
+| modul-studie | 10 | `active`, `requester.reference`, `authoredOn`, `reasonCode.coding`, `encounter`, `encounter.reference` |
+| modul-symptom | 5 | `extension.valueReference`, `bodySite.coding`, `bodySite`, `extension.url`, `extension` |
