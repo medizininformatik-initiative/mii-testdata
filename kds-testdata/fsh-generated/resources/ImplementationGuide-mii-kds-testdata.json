@@ -474,7 +474,7 @@
           "reference": "Bundle/mii-exa-test-data-bundle-isik-vitalparameter-1"
         },
         "name": "mii-exa-test-data-bundle-isik-vitalparameter-1",
-        "description": "Bundle: ISiK 6.0.0 Vitalparameter Testdaten (Atemfrequenz, Blutdruck, EKG, GCS, Herzfrequenz, Koerpergewicht, Koerpergroesse, Koerperkerntemperatur, Kopfumfang, Sauerstoffsaettigung)",
+        "description": "Bundle: ISiK 6.0.0 Observation-Testdaten - Vitalparameter (10 Profile), LebensZustand-Familie, Laboruntersuchungs-Familie, MII-ICU-Monitoring- und Koerpertemperatur-Familie (sd-mii-icu-*)",
         "exampleBoolean": true
       },
       {
@@ -743,6 +743,14 @@
       },
       {
         "reference": {
+          "reference": "Observation/mii-exa-test-data-isik-vitalparameter-alkoholabusus-1"
+        },
+        "name": "mii-exa-test-data-isik-vitalparameter-alkoholabusus-1",
+        "description": "ISiK AlkoholAbusus: verneint (Aufnahmeanamnese)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Observation/mii-exa-test-data-isik-vitalparameter-atemfrequenz-1"
         },
         "name": "mii-exa-test-data-isik-vitalparameter-atemfrequenz-1",
@@ -775,6 +783,14 @@
       },
       {
         "reference": {
+          "reference": "Observation/mii-exa-test-data-isik-vitalparameter-entbindungstermin-1"
+        },
+        "name": "mii-exa-test-data-isik-vitalparameter-entbindungstermin-1",
+        "description": "ISiK Erwarteter Entbindungstermin: 2026-11-20 (geschaetzt, technische Instanz)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Observation/mii-exa-test-data-isik-vitalparameter-gcs-1"
         },
         "name": "mii-exa-test-data-isik-vitalparameter-gcs-1",
@@ -783,10 +799,58 @@
       },
       {
         "reference": {
+          "reference": "Observation/mii-exa-test-data-isik-vitalparameter-gewicht-percentil-1"
+        },
+        "name": "mii-exa-test-data-isik-vitalparameter-gewicht-percentil-1",
+        "description": "MII-ICU Koerpergewicht-Percentil (altersabhaengig): 45 %",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-isik-vitalparameter-groesse-percentil-1"
+        },
+        "name": "mii-exa-test-data-isik-vitalparameter-groesse-percentil-1",
+        "description": "MII-ICU Koerpergroesse-Percentil (altersabhaengig): 40 %",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Observation/mii-exa-test-data-isik-vitalparameter-herzfrequenz-1"
         },
         "name": "mii-exa-test-data-isik-vitalparameter-herzfrequenz-1",
         "description": "ISiK Herzfrequenz: 76/min",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-isik-vitalparameter-hzv-1"
+        },
+        "name": "mii-exa-test-data-isik-vitalparameter-hzv-1",
+        "description": "MII-ICU Herzzeitvolumen: 4.8 L/min",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-isik-vitalparameter-icp-1"
+        },
+        "name": "mii-exa-test-data-isik-vitalparameter-icp-1",
+        "description": "MII-ICU Intrakranieller Druck (ICP): 12 mmHg",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-isik-vitalparameter-ideales-gewicht-1"
+        },
+        "name": "mii-exa-test-data-isik-vitalparameter-ideales-gewicht-1",
+        "description": "MII-ICU Ideales Koerpergewicht: 63 kg",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-isik-vitalparameter-kerntemp-stirn-1"
+        },
+        "name": "mii-exa-test-data-isik-vitalparameter-kerntemp-stirn-1",
+        "description": "MII-ICU Koerperkerntemperatur Stirn: 36.9 GradC",
         "exampleBoolean": true
       },
       {
@@ -823,6 +887,198 @@
       },
       {
         "reference": {
+          "reference": "Observation/mii-exa-test-data-isik-vitalparameter-labor-crp-1"
+        },
+        "name": "mii-exa-test-data-isik-vitalparameter-labor-crp-1",
+        "description": "ISiK Laboruntersuchung CRP: 4.2 mg/L",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-isik-vitalparameter-labor-generisch-1"
+        },
+        "name": "mii-exa-test-data-isik-vitalparameter-labor-generisch-1",
+        "description": "ISiK Laboruntersuchung (generisch): Kalium im Serum 4.1 mmol/L",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-isik-vitalparameter-labor-gfr-1"
+        },
+        "name": "mii-exa-test-data-isik-vitalparameter-labor-gfr-1",
+        "description": "ISiK Laboruntersuchung GFR: 78 mL/min/1.73m2 (CKD-EPI 2021)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-isik-vitalparameter-labor-hb-1"
+        },
+        "name": "mii-exa-test-data-isik-vitalparameter-labor-hb-1",
+        "description": "ISiK Laboruntersuchung Haemoglobin: 13.2 g/dL",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-isik-vitalparameter-labor-kreatinin-1"
+        },
+        "name": "mii-exa-test-data-isik-vitalparameter-labor-kreatinin-1",
+        "description": "ISiK Laboruntersuchung Serumkreatinin: 0.9 mg/dL",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-isik-vitalparameter-labor-natrium-1"
+        },
+        "name": "mii-exa-test-data-isik-vitalparameter-labor-natrium-1",
+        "description": "ISiK Laboruntersuchung Serumnatrium: 141 mmol/L",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-isik-vitalparameter-labor-pct-1"
+        },
+        "name": "mii-exa-test-data-isik-vitalparameter-labor-pct-1",
+        "description": "ISiK Laboruntersuchung Procalcitonin: 0.08 ng/mL",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-isik-vitalparameter-labor-thrombozyten-1"
+        },
+        "name": "mii-exa-test-data-isik-vitalparameter-labor-thrombozyten-1",
+        "description": "ISiK Laboruntersuchung Thrombozyten: 265 x10^3/uL",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-isik-vitalparameter-labor-troponin-1"
+        },
+        "name": "mii-exa-test-data-isik-vitalparameter-labor-troponin-1",
+        "description": "ISiK Laboruntersuchung Troponin I: 0.02 ng/mL",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-isik-vitalparameter-labor-tsh-1"
+        },
+        "name": "mii-exa-test-data-isik-vitalparameter-labor-tsh-1",
+        "description": "ISiK Laboruntersuchung TSH: 1.8 mIU/L",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-isik-vitalparameter-lap-1"
+        },
+        "name": "mii-exa-test-data-isik-vitalparameter-lap-1",
+        "description": "MII-ICU Linksatrialer Druck: 12/8 mmHg, Mittel 10 mmHg",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-isik-vitalparameter-lv-herzindex-1"
+        },
+        "name": "mii-exa-test-data-isik-vitalparameter-lv-herzindex-1",
+        "description": "MII-ICU Linksventrikulaerer Herzindex: 2.9 L/min/m2",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-isik-vitalparameter-lv-hi-ind-1"
+        },
+        "name": "mii-exa-test-data-isik-vitalparameter-lv-hi-ind-1",
+        "description": "MII-ICU Herzindex durch Indikatorverduennung: 2.8 L/min/m2",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-isik-vitalparameter-lv-hzv-ind-1"
+        },
+        "name": "mii-exa-test-data-isik-vitalparameter-lv-hzv-ind-1",
+        "description": "MII-ICU Herzzeitvolumen durch Indikatorverduennung: 4.9 L/min",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-isik-vitalparameter-lv-schlagvolumen-1"
+        },
+        "name": "mii-exa-test-data-isik-vitalparameter-lv-schlagvolumen-1",
+        "description": "MII-ICU Linksventrikulaeres Schlagvolumen: 70 mL",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-isik-vitalparameter-lv-sv-ind-1"
+        },
+        "name": "mii-exa-test-data-isik-vitalparameter-lv-sv-ind-1",
+        "description": "MII-ICU Schlagvolumen durch Indikatorverduennung: 68 mL",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-isik-vitalparameter-lv-svi-1"
+        },
+        "name": "mii-exa-test-data-isik-vitalparameter-lv-svi-1",
+        "description": "MII-ICU Linksventrikulaerer Schlagvolumenindex: 37 mL/m2",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-isik-vitalparameter-lv-svi-ind-1"
+        },
+        "name": "mii-exa-test-data-isik-vitalparameter-lv-svi-ind-1",
+        "description": "MII-ICU Schlagvolumenindex durch Indikatorverduennung: 36 mL/m2",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-isik-vitalparameter-lvp-1"
+        },
+        "name": "mii-exa-test-data-isik-vitalparameter-lvp-1",
+        "description": "MII-ICU Linksventrikulaerer Druck: 120/10 mmHg, Mittel 47 mmHg",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-isik-vitalparameter-muv-generisch-1"
+        },
+        "name": "mii-exa-test-data-isik-vitalparameter-muv-generisch-1",
+        "description": "MII-ICU Monitoring und Vitaldaten (generisch): Herzfrequenz 82/min",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-isik-vitalparameter-o2sat-art-1"
+        },
+        "name": "mii-exa-test-data-isik-vitalparameter-o2sat-art-1",
+        "description": "MII-ICU O2-Saettigung im arteriellen Blut (Pulsoxymetrie): 96 %",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-isik-vitalparameter-o2sat-postduktal-1"
+        },
+        "name": "mii-exa-test-data-isik-vitalparameter-o2sat-postduktal-1",
+        "description": "MII-ICU O2-Saettigung postduktal (Pulsoxymetrie): 95 %",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-isik-vitalparameter-o2sat-praeduktal-1"
+        },
+        "name": "mii-exa-test-data-isik-vitalparameter-o2sat-praeduktal-1",
+        "description": "MII-ICU O2-Saettigung praeduktal (Pulsoxymetrie): 97 %",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-isik-vitalparameter-pap-1"
+        },
+        "name": "mii-exa-test-data-isik-vitalparameter-pap-1",
+        "description": "MII-ICU Pulmonalarterieller Blutdruck: 25/10 mmHg, Mittel 15 mmHg",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Patient/mii-exa-test-data-isik-vitalparameter-patient-1"
         },
         "name": "mii-exa-test-data-isik-vitalparameter-patient-1",
@@ -831,10 +1087,258 @@
       },
       {
         "reference": {
+          "reference": "Observation/mii-exa-test-data-isik-vitalparameter-puls-1"
+        },
+        "name": "mii-exa-test-data-isik-vitalparameter-puls-1",
+        "description": "MII-ICU Puls: 76/min (palpatorisch A. radialis)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-isik-vitalparameter-pulsatil-generisch-1"
+        },
+        "name": "mii-exa-test-data-isik-vitalparameter-pulsatil-generisch-1",
+        "description": "MII-ICU Sonstige pulsatile Druecke (generisch): systemisch-arteriell 128/76 mmHg, MAD 93 mmHg",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-isik-vitalparameter-pvri-1"
+        },
+        "name": "mii-exa-test-data-isik-vitalparameter-pvri-1",
+        "description": "MII-ICU Pulmonalvaskulaerer Widerstandsindex: 220 dyn.s/cm5/m2",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-isik-vitalparameter-rap-1"
+        },
+        "name": "mii-exa-test-data-isik-vitalparameter-rap-1",
+        "description": "MII-ICU Rechtsatrialer Druck: 8/3 mmHg, Mittel 5 mmHg",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-isik-vitalparameter-rvp-1"
+        },
+        "name": "mii-exa-test-data-isik-vitalparameter-rvp-1",
+        "description": "MII-ICU Rechtsventrikulaerer Druck: 25/4 mmHg, Mittel 14 mmHg",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Observation/mii-exa-test-data-isik-vitalparameter-sauerstoffsaettigung-1"
         },
         "name": "mii-exa-test-data-isik-vitalparameter-sauerstoffsaettigung-1",
         "description": "ISiK Sauerstoffsaettigung arteriell: 96 % (pulsoxymetrisch)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-isik-vitalparameter-schwangerschaft-1"
+        },
+        "name": "mii-exa-test-data-isik-vitalparameter-schwangerschaft-1",
+        "description": "ISiK Schwangerschaftsstatus: nicht schwanger (Aufnahmeanamnese)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-isik-vitalparameter-stillstatus-1"
+        },
+        "name": "mii-exa-test-data-isik-vitalparameter-stillstatus-1",
+        "description": "ISiK Stillstatus: stillt derzeit nicht (Aufnahmeanamnese)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-isik-vitalparameter-svri-1"
+        },
+        "name": "mii-exa-test-data-isik-vitalparameter-svri-1",
+        "description": "MII-ICU Systemischer vaskulaerer Widerstandsindex: 1900 dyn.s/cm5/m2",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-isik-vitalparameter-temp-achsel-1"
+        },
+        "name": "mii-exa-test-data-isik-vitalparameter-temp-achsel-1",
+        "description": "MII-ICU Koerpertemperatur axillaer: 36.6 GradC",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-isik-vitalparameter-temp-atemwege-1"
+        },
+        "name": "mii-exa-test-data-isik-vitalparameter-temp-atemwege-1",
+        "description": "MII-ICU Koerpertemperatur Atemwege: 36.7 GradC",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-isik-vitalparameter-temp-blut-1"
+        },
+        "name": "mii-exa-test-data-isik-vitalparameter-temp-blut-1",
+        "description": "MII-ICU Koerpertemperatur Blut: 37.3 GradC",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-isik-vitalparameter-temp-brust-1"
+        },
+        "name": "mii-exa-test-data-isik-vitalparameter-temp-brust-1",
+        "description": "MII-ICU Koerpertemperatur Brust: 36.4 GradC",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-isik-vitalparameter-temp-bws-1"
+        },
+        "name": "mii-exa-test-data-isik-vitalparameter-temp-bws-1",
+        "description": "MII-ICU Koerpertemperatur Brustwirbelsaeule: 36.9 GradC",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-isik-vitalparameter-temp-gelenk-1"
+        },
+        "name": "mii-exa-test-data-isik-vitalparameter-temp-gelenk-1",
+        "description": "MII-ICU Koerpertemperatur Gelenk: 35.8 GradC",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-isik-vitalparameter-temp-generisch-1"
+        },
+        "name": "mii-exa-test-data-isik-vitalparameter-temp-generisch-1",
+        "description": "MII-ICU Koerpertemperatur (generisch): 37.0 GradC",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-isik-vitalparameter-temp-harnblase-1"
+        },
+        "name": "mii-exa-test-data-isik-vitalparameter-temp-harnblase-1",
+        "description": "MII-ICU Koerpertemperatur Harnblase: 37.4 GradC",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-isik-vitalparameter-temp-hws-1"
+        },
+        "name": "mii-exa-test-data-isik-vitalparameter-temp-hws-1",
+        "description": "MII-ICU Koerpertemperatur Halswirbelsaeule: 36.8 GradC",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-isik-vitalparameter-temp-kern-1"
+        },
+        "name": "mii-exa-test-data-isik-vitalparameter-temp-kern-1",
+        "description": "MII-ICU Koerperkerntemperatur (Kern): 37.2 GradC",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-isik-vitalparameter-temp-leiste-1"
+        },
+        "name": "mii-exa-test-data-isik-vitalparameter-temp-leiste-1",
+        "description": "MII-ICU Koerpertemperatur Leiste: 36.8 GradC",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-isik-vitalparameter-temp-lws-1"
+        },
+        "name": "mii-exa-test-data-isik-vitalparameter-temp-lws-1",
+        "description": "MII-ICU Koerpertemperatur Lendenwirbelsaeule: 36.9 GradC",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-isik-vitalparameter-temp-myokard-1"
+        },
+        "name": "mii-exa-test-data-isik-vitalparameter-temp-myokard-1",
+        "description": "MII-ICU Koerpertemperatur Myokard: 37.0 GradC",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-isik-vitalparameter-temp-nasal-1"
+        },
+        "name": "mii-exa-test-data-isik-vitalparameter-temp-nasal-1",
+        "description": "MII-ICU Koerpertemperatur nasal: 36.5 GradC",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-isik-vitalparameter-temp-nasopharynx-1"
+        },
+        "name": "mii-exa-test-data-isik-vitalparameter-temp-nasopharynx-1",
+        "description": "MII-ICU Koerpertemperatur Nasen-Rachen-Raum: 36.9 GradC",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-isik-vitalparameter-temp-oesophagus-1"
+        },
+        "name": "mii-exa-test-data-isik-vitalparameter-temp-oesophagus-1",
+        "description": "MII-ICU Koerpertemperatur oesophageal: 37.3 GradC",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-isik-vitalparameter-temp-rektal-1"
+        },
+        "name": "mii-exa-test-data-isik-vitalparameter-temp-rektal-1",
+        "description": "MII-ICU Koerpertemperatur rektal: 37.6 GradC",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-isik-vitalparameter-temp-stirn-1"
+        },
+        "name": "mii-exa-test-data-isik-vitalparameter-temp-stirn-1",
+        "description": "MII-ICU Koerpertemperatur Stirn: 36.3 GradC",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-isik-vitalparameter-temp-sublingual-1"
+        },
+        "name": "mii-exa-test-data-isik-vitalparameter-temp-sublingual-1",
+        "description": "MII-ICU Koerpertemperatur sublingual: 36.9 GradC",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-isik-vitalparameter-temp-trommelfell-1"
+        },
+        "name": "mii-exa-test-data-isik-vitalparameter-temp-trommelfell-1",
+        "description": "MII-ICU Koerpertemperatur tympanal: 37.1 GradC",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-isik-vitalparameter-temp-vaginal-1"
+        },
+        "name": "mii-exa-test-data-isik-vitalparameter-temp-vaginal-1",
+        "description": "MII-ICU Koerpertemperatur vaginal: 37.2 GradC",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-isik-vitalparameter-wedge-1"
+        },
+        "name": "mii-exa-test-data-isik-vitalparameter-wedge-1",
+        "description": "MII-ICU Pulmonalarterieller Wedge-Druck: 12 mmHg",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-isik-vitalparameter-zvd-1"
+        },
+        "name": "mii-exa-test-data-isik-vitalparameter-zvd-1",
+        "description": "MII-ICU Zentralvenoeser Blutdruck (ZVD): 8 mmHg",
         "exampleBoolean": true
       },
       {

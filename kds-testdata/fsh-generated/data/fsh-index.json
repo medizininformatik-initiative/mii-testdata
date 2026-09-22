@@ -61,7 +61,7 @@
     "fshType": "Instance",
     "fshFile": "modul-isik-vitalparameter/Bundle.fsh",
     "startLine": 5,
-    "endLine": 25
+    "endLine": 93
   },
   {
     "outputFile": "Bundle-mii-exa-test-data-bundle-kardiologie-1.json",
@@ -2472,6 +2472,14 @@
     "endLine": 51
   },
   {
+    "outputFile": "Observation-mii-exa-test-data-isik-vitalparameter-alkoholabusus-1.json",
+    "fshName": "mii-exa-test-data-isik-vitalparameter-alkoholabusus-1",
+    "fshType": "Instance",
+    "fshFile": "modul-isik-vitalparameter/Lebenszustand.fsh",
+    "startLine": 22,
+    "endLine": 29
+  },
+  {
     "outputFile": "Observation-mii-exa-test-data-isik-vitalparameter-atemfrequenz-1.json",
     "fshName": "mii-exa-test-data-isik-vitalparameter-atemfrequenz-1",
     "fshType": "Instance",
@@ -2496,6 +2504,14 @@
     "endLine": 232
   },
   {
+    "outputFile": "Observation-mii-exa-test-data-isik-vitalparameter-entbindungstermin-1.json",
+    "fshName": "mii-exa-test-data-isik-vitalparameter-entbindungstermin-1",
+    "fshType": "Instance",
+    "fshFile": "modul-isik-vitalparameter/Lebenszustand.fsh",
+    "startLine": 43,
+    "endLine": 49
+  },
+  {
     "outputFile": "Observation-mii-exa-test-data-isik-vitalparameter-gcs-1.json",
     "fshName": "mii-exa-test-data-isik-vitalparameter-gcs-1",
     "fshType": "Instance",
@@ -2504,12 +2520,60 @@
     "endLine": 195
   },
   {
+    "outputFile": "Observation-mii-exa-test-data-isik-vitalparameter-gewicht-percentil-1.json",
+    "fshName": "mii-exa-test-data-isik-vitalparameter-gewicht-percentil-1",
+    "fshType": "Instance",
+    "fshFile": "modul-isik-vitalparameter/Monitoring.fsh",
+    "startLine": 94,
+    "endLine": 102
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-isik-vitalparameter-groesse-percentil-1.json",
+    "fshName": "mii-exa-test-data-isik-vitalparameter-groesse-percentil-1",
+    "fshType": "Instance",
+    "fshFile": "modul-isik-vitalparameter/Monitoring.fsh",
+    "startLine": 105,
+    "endLine": 112
+  },
+  {
     "outputFile": "Observation-mii-exa-test-data-isik-vitalparameter-herzfrequenz-1.json",
     "fshName": "mii-exa-test-data-isik-vitalparameter-herzfrequenz-1",
     "fshType": "Instance",
     "fshFile": "modul-isik-vitalparameter/Observation.fsh",
     "startLine": 30,
     "endLine": 46
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-isik-vitalparameter-hzv-1.json",
+    "fshName": "mii-exa-test-data-isik-vitalparameter-hzv-1",
+    "fshType": "Instance",
+    "fshFile": "modul-isik-vitalparameter/Monitoring.fsh",
+    "startLine": 60,
+    "endLine": 68
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-isik-vitalparameter-icp-1.json",
+    "fshName": "mii-exa-test-data-isik-vitalparameter-icp-1",
+    "fshType": "Instance",
+    "fshFile": "modul-isik-vitalparameter/Monitoring.fsh",
+    "startLine": 82,
+    "endLine": 91
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-isik-vitalparameter-ideales-gewicht-1.json",
+    "fshName": "mii-exa-test-data-isik-vitalparameter-ideales-gewicht-1",
+    "fshType": "Instance",
+    "fshFile": "modul-isik-vitalparameter/Monitoring.fsh",
+    "startLine": 71,
+    "endLine": 79
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-isik-vitalparameter-kerntemp-stirn-1.json",
+    "fshName": "mii-exa-test-data-isik-vitalparameter-kerntemp-stirn-1",
+    "fshType": "Instance",
+    "fshFile": "modul-isik-vitalparameter/Temperatur.fsh",
+    "startLine": 288,
+    "endLine": 297
   },
   {
     "outputFile": "Observation-mii-exa-test-data-isik-vitalparameter-koerpergewicht-1.json",
@@ -2544,12 +2608,452 @@
     "endLine": 170
   },
   {
+    "outputFile": "Observation-mii-exa-test-data-isik-vitalparameter-labor-crp-1.json",
+    "fshName": "mii-exa-test-data-isik-vitalparameter-labor-crp-1",
+    "fshType": "Instance",
+    "fshFile": "modul-isik-vitalparameter/Labor.fsh",
+    "startLine": 43,
+    "endLine": 54
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-isik-vitalparameter-labor-generisch-1.json",
+    "fshName": "mii-exa-test-data-isik-vitalparameter-labor-generisch-1",
+    "fshType": "Instance",
+    "fshFile": "modul-isik-vitalparameter/Labor.fsh",
+    "startLine": 29,
+    "endLine": 40
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-isik-vitalparameter-labor-gfr-1.json",
+    "fshName": "mii-exa-test-data-isik-vitalparameter-labor-gfr-1",
+    "fshType": "Instance",
+    "fshFile": "modul-isik-vitalparameter/Labor.fsh",
+    "startLine": 58,
+    "endLine": 67
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-isik-vitalparameter-labor-hb-1.json",
+    "fshName": "mii-exa-test-data-isik-vitalparameter-labor-hb-1",
+    "fshType": "Instance",
+    "fshFile": "modul-isik-vitalparameter/Labor.fsh",
+    "startLine": 70,
+    "endLine": 82
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-isik-vitalparameter-labor-kreatinin-1.json",
+    "fshName": "mii-exa-test-data-isik-vitalparameter-labor-kreatinin-1",
+    "fshType": "Instance",
+    "fshFile": "modul-isik-vitalparameter/Labor.fsh",
+    "startLine": 97,
+    "endLine": 106
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-isik-vitalparameter-labor-natrium-1.json",
+    "fshName": "mii-exa-test-data-isik-vitalparameter-labor-natrium-1",
+    "fshType": "Instance",
+    "fshFile": "modul-isik-vitalparameter/Labor.fsh",
+    "startLine": 109,
+    "endLine": 117
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-isik-vitalparameter-labor-pct-1.json",
+    "fshName": "mii-exa-test-data-isik-vitalparameter-labor-pct-1",
+    "fshType": "Instance",
+    "fshFile": "modul-isik-vitalparameter/Labor.fsh",
+    "startLine": 85,
+    "endLine": 94
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-isik-vitalparameter-labor-thrombozyten-1.json",
+    "fshName": "mii-exa-test-data-isik-vitalparameter-labor-thrombozyten-1",
+    "fshType": "Instance",
+    "fshFile": "modul-isik-vitalparameter/Labor.fsh",
+    "startLine": 135,
+    "endLine": 144
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-isik-vitalparameter-labor-troponin-1.json",
+    "fshName": "mii-exa-test-data-isik-vitalparameter-labor-troponin-1",
+    "fshType": "Instance",
+    "fshFile": "modul-isik-vitalparameter/Labor.fsh",
+    "startLine": 147,
+    "endLine": 156
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-isik-vitalparameter-labor-tsh-1.json",
+    "fshName": "mii-exa-test-data-isik-vitalparameter-labor-tsh-1",
+    "fshType": "Instance",
+    "fshFile": "modul-isik-vitalparameter/Labor.fsh",
+    "startLine": 120,
+    "endLine": 132
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-isik-vitalparameter-lap-1.json",
+    "fshName": "mii-exa-test-data-isik-vitalparameter-lap-1",
+    "fshType": "Instance",
+    "fshFile": "modul-isik-vitalparameter/Monitoring.fsh",
+    "startLine": 299,
+    "endLine": 320
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-isik-vitalparameter-lv-herzindex-1.json",
+    "fshName": "mii-exa-test-data-isik-vitalparameter-lv-herzindex-1",
+    "fshType": "Instance",
+    "fshFile": "modul-isik-vitalparameter/Monitoring.fsh",
+    "startLine": 119,
+    "endLine": 128
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-isik-vitalparameter-lv-hi-ind-1.json",
+    "fshName": "mii-exa-test-data-isik-vitalparameter-lv-hi-ind-1",
+    "fshType": "Instance",
+    "fshFile": "modul-isik-vitalparameter/Monitoring.fsh",
+    "startLine": 154,
+    "endLine": 160
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-isik-vitalparameter-lv-hzv-ind-1.json",
+    "fshName": "mii-exa-test-data-isik-vitalparameter-lv-hzv-ind-1",
+    "fshType": "Instance",
+    "fshFile": "modul-isik-vitalparameter/Monitoring.fsh",
+    "startLine": 181,
+    "endLine": 187
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-isik-vitalparameter-lv-schlagvolumen-1.json",
+    "fshName": "mii-exa-test-data-isik-vitalparameter-lv-schlagvolumen-1",
+    "fshType": "Instance",
+    "fshFile": "modul-isik-vitalparameter/Monitoring.fsh",
+    "startLine": 131,
+    "endLine": 140
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-isik-vitalparameter-lv-sv-ind-1.json",
+    "fshName": "mii-exa-test-data-isik-vitalparameter-lv-sv-ind-1",
+    "fshType": "Instance",
+    "fshFile": "modul-isik-vitalparameter/Monitoring.fsh",
+    "startLine": 163,
+    "endLine": 169
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-isik-vitalparameter-lv-svi-1.json",
+    "fshName": "mii-exa-test-data-isik-vitalparameter-lv-svi-1",
+    "fshType": "Instance",
+    "fshFile": "modul-isik-vitalparameter/Monitoring.fsh",
+    "startLine": 143,
+    "endLine": 151
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-isik-vitalparameter-lv-svi-ind-1.json",
+    "fshName": "mii-exa-test-data-isik-vitalparameter-lv-svi-ind-1",
+    "fshType": "Instance",
+    "fshFile": "modul-isik-vitalparameter/Monitoring.fsh",
+    "startLine": 172,
+    "endLine": 178
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-isik-vitalparameter-lvp-1.json",
+    "fshName": "mii-exa-test-data-isik-vitalparameter-lvp-1",
+    "fshType": "Instance",
+    "fshFile": "modul-isik-vitalparameter/Monitoring.fsh",
+    "startLine": 323,
+    "endLine": 342
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-isik-vitalparameter-muv-generisch-1.json",
+    "fshName": "mii-exa-test-data-isik-vitalparameter-muv-generisch-1",
+    "fshType": "Instance",
+    "fshFile": "modul-isik-vitalparameter/Monitoring.fsh",
+    "startLine": 39,
+    "endLine": 46
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-isik-vitalparameter-o2sat-art-1.json",
+    "fshName": "mii-exa-test-data-isik-vitalparameter-o2sat-art-1",
+    "fshType": "Instance",
+    "fshFile": "modul-isik-vitalparameter/Monitoring.fsh",
+    "startLine": 194,
+    "endLine": 203
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-isik-vitalparameter-o2sat-postduktal-1.json",
+    "fshName": "mii-exa-test-data-isik-vitalparameter-o2sat-postduktal-1",
+    "fshType": "Instance",
+    "fshFile": "modul-isik-vitalparameter/Monitoring.fsh",
+    "startLine": 216,
+    "endLine": 223
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-isik-vitalparameter-o2sat-praeduktal-1.json",
+    "fshName": "mii-exa-test-data-isik-vitalparameter-o2sat-praeduktal-1",
+    "fshType": "Instance",
+    "fshFile": "modul-isik-vitalparameter/Monitoring.fsh",
+    "startLine": 206,
+    "endLine": 213
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-isik-vitalparameter-pap-1.json",
+    "fshName": "mii-exa-test-data-isik-vitalparameter-pap-1",
+    "fshType": "Instance",
+    "fshFile": "modul-isik-vitalparameter/Monitoring.fsh",
+    "startLine": 392,
+    "endLine": 413
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-isik-vitalparameter-puls-1.json",
+    "fshName": "mii-exa-test-data-isik-vitalparameter-puls-1",
+    "fshType": "Instance",
+    "fshFile": "modul-isik-vitalparameter/Monitoring.fsh",
+    "startLine": 49,
+    "endLine": 57
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-isik-vitalparameter-pulsatil-generisch-1.json",
+    "fshName": "mii-exa-test-data-isik-vitalparameter-pulsatil-generisch-1",
+    "fshType": "Instance",
+    "fshFile": "modul-isik-vitalparameter/Monitoring.fsh",
+    "startLine": 281,
+    "endLine": 296
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-isik-vitalparameter-pvri-1.json",
+    "fshName": "mii-exa-test-data-isik-vitalparameter-pvri-1",
+    "fshType": "Instance",
+    "fshFile": "modul-isik-vitalparameter/Monitoring.fsh",
+    "startLine": 242,
+    "endLine": 250
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-isik-vitalparameter-rap-1.json",
+    "fshName": "mii-exa-test-data-isik-vitalparameter-rap-1",
+    "fshType": "Instance",
+    "fshFile": "modul-isik-vitalparameter/Monitoring.fsh",
+    "startLine": 345,
+    "endLine": 366
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-isik-vitalparameter-rvp-1.json",
+    "fshName": "mii-exa-test-data-isik-vitalparameter-rvp-1",
+    "fshType": "Instance",
+    "fshFile": "modul-isik-vitalparameter/Monitoring.fsh",
+    "startLine": 369,
+    "endLine": 389
+  },
+  {
     "outputFile": "Observation-mii-exa-test-data-isik-vitalparameter-sauerstoffsaettigung-1.json",
     "fshName": "mii-exa-test-data-isik-vitalparameter-sauerstoffsaettigung-1",
     "fshType": "Instance",
     "fshFile": "modul-isik-vitalparameter/Observation.fsh",
     "startLine": 76,
     "endLine": 93
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-isik-vitalparameter-schwangerschaft-1.json",
+    "fshName": "mii-exa-test-data-isik-vitalparameter-schwangerschaft-1",
+    "fshType": "Instance",
+    "fshFile": "modul-isik-vitalparameter/Lebenszustand.fsh",
+    "startLine": 32,
+    "endLine": 38
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-isik-vitalparameter-stillstatus-1.json",
+    "fshName": "mii-exa-test-data-isik-vitalparameter-stillstatus-1",
+    "fshType": "Instance",
+    "fshFile": "modul-isik-vitalparameter/Lebenszustand.fsh",
+    "startLine": 52,
+    "endLine": 59
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-isik-vitalparameter-svri-1.json",
+    "fshName": "mii-exa-test-data-isik-vitalparameter-svri-1",
+    "fshType": "Instance",
+    "fshFile": "modul-isik-vitalparameter/Monitoring.fsh",
+    "startLine": 253,
+    "endLine": 261
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-isik-vitalparameter-temp-achsel-1.json",
+    "fshName": "mii-exa-test-data-isik-vitalparameter-temp-achsel-1",
+    "fshType": "Instance",
+    "fshFile": "modul-isik-vitalparameter/Temperatur.fsh",
+    "startLine": 195,
+    "endLine": 205
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-isik-vitalparameter-temp-atemwege-1.json",
+    "fshName": "mii-exa-test-data-isik-vitalparameter-temp-atemwege-1",
+    "fshType": "Instance",
+    "fshFile": "modul-isik-vitalparameter/Temperatur.fsh",
+    "startLine": 36,
+    "endLine": 45
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-isik-vitalparameter-temp-blut-1.json",
+    "fshName": "mii-exa-test-data-isik-vitalparameter-temp-blut-1",
+    "fshType": "Instance",
+    "fshFile": "modul-isik-vitalparameter/Temperatur.fsh",
+    "startLine": 182,
+    "endLine": 192
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-isik-vitalparameter-temp-brust-1.json",
+    "fshName": "mii-exa-test-data-isik-vitalparameter-temp-brust-1",
+    "fshType": "Instance",
+    "fshFile": "modul-isik-vitalparameter/Temperatur.fsh",
+    "startLine": 48,
+    "endLine": 56
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-isik-vitalparameter-temp-bws-1.json",
+    "fshName": "mii-exa-test-data-isik-vitalparameter-temp-bws-1",
+    "fshType": "Instance",
+    "fshFile": "modul-isik-vitalparameter/Temperatur.fsh",
+    "startLine": 59,
+    "endLine": 67
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-isik-vitalparameter-temp-gelenk-1.json",
+    "fshName": "mii-exa-test-data-isik-vitalparameter-temp-gelenk-1",
+    "fshType": "Instance",
+    "fshFile": "modul-isik-vitalparameter/Temperatur.fsh",
+    "startLine": 70,
+    "endLine": 78
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-isik-vitalparameter-temp-generisch-1.json",
+    "fshName": "mii-exa-test-data-isik-vitalparameter-temp-generisch-1",
+    "fshType": "Instance",
+    "fshFile": "modul-isik-vitalparameter/Temperatur.fsh",
+    "startLine": 27,
+    "endLine": 33
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-isik-vitalparameter-temp-harnblase-1.json",
+    "fshName": "mii-exa-test-data-isik-vitalparameter-temp-harnblase-1",
+    "fshType": "Instance",
+    "fshFile": "modul-isik-vitalparameter/Temperatur.fsh",
+    "startLine": 208,
+    "endLine": 218
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-isik-vitalparameter-temp-hws-1.json",
+    "fshName": "mii-exa-test-data-isik-vitalparameter-temp-hws-1",
+    "fshType": "Instance",
+    "fshFile": "modul-isik-vitalparameter/Temperatur.fsh",
+    "startLine": 81,
+    "endLine": 89
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-isik-vitalparameter-temp-kern-1.json",
+    "fshName": "mii-exa-test-data-isik-vitalparameter-temp-kern-1",
+    "fshType": "Instance",
+    "fshFile": "modul-isik-vitalparameter/Temperatur.fsh",
+    "startLine": 156,
+    "endLine": 165
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-isik-vitalparameter-temp-leiste-1.json",
+    "fshName": "mii-exa-test-data-isik-vitalparameter-temp-leiste-1",
+    "fshType": "Instance",
+    "fshFile": "modul-isik-vitalparameter/Temperatur.fsh",
+    "startLine": 221,
+    "endLine": 231
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-isik-vitalparameter-temp-lws-1.json",
+    "fshName": "mii-exa-test-data-isik-vitalparameter-temp-lws-1",
+    "fshType": "Instance",
+    "fshFile": "modul-isik-vitalparameter/Temperatur.fsh",
+    "startLine": 92,
+    "endLine": 100
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-isik-vitalparameter-temp-myokard-1.json",
+    "fshName": "mii-exa-test-data-isik-vitalparameter-temp-myokard-1",
+    "fshType": "Instance",
+    "fshFile": "modul-isik-vitalparameter/Temperatur.fsh",
+    "startLine": 103,
+    "endLine": 112
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-isik-vitalparameter-temp-nasal-1.json",
+    "fshName": "mii-exa-test-data-isik-vitalparameter-temp-nasal-1",
+    "fshType": "Instance",
+    "fshFile": "modul-isik-vitalparameter/Temperatur.fsh",
+    "startLine": 115,
+    "endLine": 124
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-isik-vitalparameter-temp-nasopharynx-1.json",
+    "fshName": "mii-exa-test-data-isik-vitalparameter-temp-nasopharynx-1",
+    "fshType": "Instance",
+    "fshFile": "modul-isik-vitalparameter/Temperatur.fsh",
+    "startLine": 127,
+    "endLine": 137
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-isik-vitalparameter-temp-oesophagus-1.json",
+    "fshName": "mii-exa-test-data-isik-vitalparameter-temp-oesophagus-1",
+    "fshType": "Instance",
+    "fshFile": "modul-isik-vitalparameter/Temperatur.fsh",
+    "startLine": 234,
+    "endLine": 245
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-isik-vitalparameter-temp-rektal-1.json",
+    "fshName": "mii-exa-test-data-isik-vitalparameter-temp-rektal-1",
+    "fshType": "Instance",
+    "fshFile": "modul-isik-vitalparameter/Temperatur.fsh",
+    "startLine": 168,
+    "endLine": 179
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-isik-vitalparameter-temp-stirn-1.json",
+    "fshName": "mii-exa-test-data-isik-vitalparameter-temp-stirn-1",
+    "fshType": "Instance",
+    "fshFile": "modul-isik-vitalparameter/Temperatur.fsh",
+    "startLine": 140,
+    "endLine": 148
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-isik-vitalparameter-temp-sublingual-1.json",
+    "fshName": "mii-exa-test-data-isik-vitalparameter-temp-sublingual-1",
+    "fshType": "Instance",
+    "fshFile": "modul-isik-vitalparameter/Temperatur.fsh",
+    "startLine": 262,
+    "endLine": 273
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-isik-vitalparameter-temp-trommelfell-1.json",
+    "fshName": "mii-exa-test-data-isik-vitalparameter-temp-trommelfell-1",
+    "fshType": "Instance",
+    "fshFile": "modul-isik-vitalparameter/Temperatur.fsh",
+    "startLine": 248,
+    "endLine": 259
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-isik-vitalparameter-temp-vaginal-1.json",
+    "fshName": "mii-exa-test-data-isik-vitalparameter-temp-vaginal-1",
+    "fshType": "Instance",
+    "fshFile": "modul-isik-vitalparameter/Temperatur.fsh",
+    "startLine": 276,
+    "endLine": 285
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-isik-vitalparameter-wedge-1.json",
+    "fshName": "mii-exa-test-data-isik-vitalparameter-wedge-1",
+    "fshType": "Instance",
+    "fshFile": "modul-isik-vitalparameter/Monitoring.fsh",
+    "startLine": 230,
+    "endLine": 239
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-isik-vitalparameter-zvd-1.json",
+    "fshName": "mii-exa-test-data-isik-vitalparameter-zvd-1",
+    "fshType": "Instance",
+    "fshFile": "modul-isik-vitalparameter/Monitoring.fsh",
+    "startLine": 264,
+    "endLine": 273
   },
   {
     "outputFile": "Observation-mii-exa-test-data-kardiologie-erstereignis-1.json",
