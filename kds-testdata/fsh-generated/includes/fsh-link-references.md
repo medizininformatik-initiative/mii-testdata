@@ -100,7 +100,7 @@
 [mii-exa-test-data-koerperstruktur]: BodyStructure-mii-exa-test-data-koerperstruktur.html
 [mii-exa-test-data-kontrastmittelgabe]: MedicationAdministration-mii-exa-test-data-kontrastmittelgabe.html
 [mii-exa-test-data-lungenfunktion-bf-1]: Observation-mii-exa-test-data-lungenfunktion-bf-1.html
-[mii-exa-test-data-lungenfunktion-bodyplethysmographie-befund-1]: DiagnosticReport-mii-exa-test-data-lungenfunktion-bodyplethysmographie-befund-1.html
+[mii-exa-test-data-lungenfunktion-bodyplethysmografie-befund-1]: DiagnosticReport-mii-exa-test-data-lungenfunktion-bodyplethysmografie-befund-1.html
 [mii-exa-test-data-lungenfunktion-bodyplethysmographie-messung-1]: Procedure-mii-exa-test-data-lungenfunktion-bodyplethysmographie-messung-1.html
 [mii-exa-test-data-lungenfunktion-co2-1]: Observation-mii-exa-test-data-lungenfunktion-co2-1.html
 [mii-exa-test-data-lungenfunktion-diffusion-befund-1]: DiagnosticReport-mii-exa-test-data-lungenfunktion-diffusion-befund-1.html

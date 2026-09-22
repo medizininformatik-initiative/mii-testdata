@@ -31,7 +31,7 @@ Description: "Lungenfunktion Bodyplethysmographie-Messung"
 * encounter = Reference(mii-exa-test-data-lungenfunktion-encounter-1)
 * performedDateTime = "2025-02-18T09:30:00+01:00"
 * outcome = $sct20260701#385669000 "Successful (qualifier value)"
-* report = Reference(mii-exa-test-data-lungenfunktion-bodyplethysmographie-befund-1)
+* report = Reference(mii-exa-test-data-lungenfunktion-bodyplethysmografie-befund-1)
 
 Instance: mii-exa-test-data-lungenfunktion-diffusion-messung-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-diffusion-messung

@@ -47,7 +47,7 @@ Description: "Lungenfunktion Spirometrie-Befund: leichte obstruktive Ventilation
 * presentedForm.title = "Spirometrie-Befund vom 18.02.2025"
 
 // Bodyplethysmographie-Befund
-Instance: mii-exa-test-data-lungenfunktion-bodyplethysmographie-befund-1
+Instance: mii-exa-test-data-lungenfunktion-bodyplethysmografie-befund-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-bodyplethysmographie
 Usage: #example
 Description: "Lungenfunktion Bodyplethysmographie-Befund: erhoehter Atemwegswiderstand, leichte Ueberblaehung"

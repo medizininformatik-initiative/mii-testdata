@@ -881,9 +881,9 @@
       },
       {
         "reference": {
-          "reference": "DiagnosticReport/mii-exa-test-data-lungenfunktion-bodyplethysmographie-befund-1"
+          "reference": "DiagnosticReport/mii-exa-test-data-lungenfunktion-bodyplethysmografie-befund-1"
         },
-        "name": "mii-exa-test-data-lungenfunktion-bodyplethysmographie-befund-1",
+        "name": "mii-exa-test-data-lungenfunktion-bodyplethysmografie-befund-1",
         "description": "Lungenfunktion Bodyplethysmographie-Befund: erhoehter Atemwegswiderstand, leichte Ueberblaehung",
         "exampleBoolean": true
       },

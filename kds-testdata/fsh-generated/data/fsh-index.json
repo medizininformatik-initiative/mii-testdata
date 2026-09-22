@@ -840,8 +840,8 @@
     "endLine": 20
   },
   {
-    "outputFile": "DiagnosticReport-mii-exa-test-data-lungenfunktion-bodyplethysmographie-befund-1.json",
-    "fshName": "mii-exa-test-data-lungenfunktion-bodyplethysmographie-befund-1",
+    "outputFile": "DiagnosticReport-mii-exa-test-data-lungenfunktion-bodyplethysmografie-befund-1.json",
+    "fshName": "mii-exa-test-data-lungenfunktion-bodyplethysmografie-befund-1",
     "fshType": "Instance",
     "fshFile": "modul-lungenfunktion/DiagnosticReport.fsh",
     "startLine": 50,

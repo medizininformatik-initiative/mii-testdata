@@ -20,7 +20,7 @@ Description: "Bundle: Lungenfunktion Testdaten Patient-1 (Spirometrie, Bodypleth
 * insert AddBundleEntry(mii-exa-test-data-lungenfunktion-provokationstest-messung-1, Procedure)
 // Befunde (DiagnosticReports)
 * insert AddBundleEntry(mii-exa-test-data-lungenfunktion-spirometrie-befund-1, DiagnosticReport)
-* insert AddBundleEntry(mii-exa-test-data-lungenfunktion-bodyplethysmographie-befund-1, DiagnosticReport)
+* insert AddBundleEntry(mii-exa-test-data-lungenfunktion-bodyplethysmografie-befund-1, DiagnosticReport)
 * insert AddBundleEntry(mii-exa-test-data-lungenfunktion-diffusion-befund-1, DiagnosticReport)
 * insert AddBundleEntry(mii-exa-test-data-lungenfunktion-provokationstest-befund-1, DiagnosticReport)
 // Spirometrie-Observations

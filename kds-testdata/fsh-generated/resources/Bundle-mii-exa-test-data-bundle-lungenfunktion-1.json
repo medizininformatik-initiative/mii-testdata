@@ -240,7 +240,7 @@
         },
         "report": [
           {
-            "reference": "DiagnosticReport/mii-exa-test-data-lungenfunktion-bodyplethysmographie-befund-1"
+            "reference": "DiagnosticReport/mii-exa-test-data-lungenfunktion-bodyplethysmografie-befund-1"
           }
         ],
         "status": "completed",
@@ -515,12 +515,12 @@
     {
       "request": {
         "method": "PUT",
-        "url": "DiagnosticReport/mii-exa-test-data-lungenfunktion-bodyplethysmographie-befund-1"
+        "url": "DiagnosticReport/mii-exa-test-data-lungenfunktion-bodyplethysmografie-befund-1"
       },
-      "fullUrl": "https://www.medizininformatik-initiative.de/DiagnosticReport/mii-exa-test-data-lungenfunktion-bodyplethysmographie-befund-1",
+      "fullUrl": "https://www.medizininformatik-initiative.de/DiagnosticReport/mii-exa-test-data-lungenfunktion-bodyplethysmografie-befund-1",
       "resource": {
         "resourceType": "DiagnosticReport",
-        "id": "mii-exa-test-data-lungenfunktion-bodyplethysmographie-befund-1",
+        "id": "mii-exa-test-data-lungenfunktion-bodyplethysmografie-befund-1",
         "meta": {
           "security": [
             {
