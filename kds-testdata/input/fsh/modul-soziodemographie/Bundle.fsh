@@ -21,6 +21,7 @@ Description: "Bundle: Soziodemographie Testdaten Patient-1"
 * insert AddBundleEntry(mii-exa-test-data-soziodemographie-haushaltsgroesse-1, Observation)
 * insert AddBundleEntry(mii-exa-test-data-soziodemographie-betreuungssituation-1, Observation)
 * insert AddBundleEntry(mii-exa-test-data-soziodemographie-schwerbehindertenausweis-1, Observation)
+* insert AddBundleEntry(mii-exa-test-data-soziodemographie-schwerbehindertenausweis-2, Observation)
 // Soziooekonomische Faktoren
 * insert AddBundleEntry(mii-exa-test-data-soziodemographie-soziooekonomische-faktoren-1, Observation)
 * insert AddBundleEntry(mii-exa-test-data-soziodemographie-ausbildung-1, Observation)

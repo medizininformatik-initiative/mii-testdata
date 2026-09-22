@@ -762,6 +762,7 @@
 [mii-exa-test-data-soziodemographie-schulabschluss-1]: Observation-mii-exa-test-data-soziodemographie-schulabschluss-1.html
 [mii-exa-test-data-soziodemographie-schuljahre-1]: Observation-mii-exa-test-data-soziodemographie-schuljahre-1.html
 [mii-exa-test-data-soziodemographie-schwerbehindertenausweis-1]: Observation-mii-exa-test-data-soziodemographie-schwerbehindertenausweis-1.html
+[mii-exa-test-data-soziodemographie-schwerbehindertenausweis-2]: Observation-mii-exa-test-data-soziodemographie-schwerbehindertenausweis-2.html
 [mii-exa-test-data-soziodemographie-soziooekonomische-faktoren-1]: Observation-mii-exa-test-data-soziodemographie-soziooekonomische-faktoren-1.html
 [mii-exa-test-data-soziodemographie-vertrauensperson-1]: Observation-mii-exa-test-data-soziodemographie-vertrauensperson-1.html
 [mii-exa-test-data-studie-einschluss-anfrage-1]: ServiceRequest-mii-exa-test-data-studie-einschluss-anfrage-1.html

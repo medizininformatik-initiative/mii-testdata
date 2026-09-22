@@ -89,6 +89,14 @@ jobs:
         curl -fsSL -o publisher.jar \
           "https://github.com/HL7/fhir-ig-publisher/releases/download/${PUBLISHER_VERSION}/publisher.jar"
 
+    - name: Generate Testabdeckung status include
+      # Misst die MS-Abdeckung gegen den in sushi-config gepinnten BOM-Stand
+      # und schreibt den Status-Include fuer testabdeckung.md frisch.
+      working-directory: ./kds-testdata
+      run: |
+        mkdir -p input/includes
+        python3 ../scripts/ms-coverage.py           --ig-include input/includes/testabdeckung-status.md > /dev/null
+
     - name: Start SU-TermServ proxy (falls Zertifikat vorhanden)
       id: tx
       env:

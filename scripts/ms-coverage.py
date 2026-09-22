@@ -14,12 +14,24 @@ Heuristik, bewusst pragmatisch:
 - "Befüllt" heißt: in mindestens EINER Instanz des Profils vorhanden.
 
 Aufruf aus kds-testdata/:  python3 ../scripts/ms-coverage.py > ../docs/ms-coverage-2027.md
+Mit --ig-include <pfad> wird zusätzlich ein kompakter Status als Markdown-
+Include für die IG-Seite testabdeckung.md geschrieben (input/includes/).
 Benötigt das complete-Package im FHIR-Cache (Version unten anpassen bei Bump).
 """
 import json, glob, os, re, sys, collections
 
-PKG = "de.medizininformatikinitiative.kerndatensatz.complete#2027.0.0-ballot.19"
-P = os.path.expanduser(f"~/.fhir/packages/{PKG}/package/")
+def _bom_version():
+    """BOM-Pin aus sushi-config.yaml lesen — der Report referenziert damit
+    immer exakt den Stand des KDS complete, gegen den gebaut wird."""
+    s = open("sushi-config.yaml", encoding="utf-8").read()
+    m = re.search(r"kerndatensatz\.complete:\s*\n\s*version:\s*(\S+)", s)
+    if not m:
+        sys.exit("BOM-Version nicht in sushi-config.yaml gefunden")
+    return m.group(1)
+
+BOM_VERSION = None  # wird in main() gesetzt (braucht cwd=kds-testdata)
+PKG = None
+P = None
 INFRA = {"resourceType","id","meta","text","implicitRules","language","contained","fullUrl"}
 CHOICE = re.compile(r"\[x\]$")
 
@@ -80,6 +92,10 @@ def collapse(ids):
     return [m for m in sorted(ids) if not any(m != o and m.startswith(o + ".") for o in ids)]
 
 def main():
+    global BOM_VERSION, PKG, P
+    BOM_VERSION = _bom_version()
+    PKG = f"de.medizininformatikinitiative.kerndatensatz.complete#{BOM_VERSION}"
+    P = os.path.expanduser(f"~/.fhir/packages/{PKG}/package/")
     idx = json.load(open(P + ".index.json"))
     sd_file = {f["url"]: f["filename"] for f in idx["files"]
                if f.get("resourceType") == "StructureDefinition"}
@@ -171,5 +187,29 @@ def main():
         top = ", ".join(f"`{k}`×{v}" if v > 1 else f"`{k}`" for k, v in c.most_common(6))
         print(f"| {mod} | {sum(c.values())} | {top} |")
 
+    if IG_INCLUDE:
+        L = []
+        L.append(
+            f"**Bezugsstand: MII Kerndatensatz complete "
+            f"[`{BOM_VERSION}`](https://github.com/medizininformatik-initiative/kerndatensatz-complete/releases/tag/v{BOM_VERSION})** "
+            f"— alle Zahlen dieser Seite beziehen sich auf die Profil-Snapshots dieses BOM-Stands.\n")
+        L.append(f"{tot_ms} MS-Elemente über die genutzten Profile · "
+                 f"**{tot_top} oberste unbefüllte Knoten**\n")
+        L.append("| Modul | offene MS-Lücken | häufigste fehlende Elemente |")
+        L.append("|---|---|---|")
+        for mod in sorted(gap_elems):
+            c = gap_elems[mod]
+            top = ", ".join(f"`{k}`" for k, _ in c.most_common(4))
+            L.append(f"| {mod.replace('modul-','')} | {sum(c.values())} | {top} |")
+        L.append("")
+        L.append("Vollständiger Report (je Profil, plus befüllte Nicht-MS-Pfade als "
+                 "Ballot-Feedback-Kandidaten): "
+                 "[docs/ms-coverage-2027.md](https://github.com/medizininformatik-initiative/mii-testdata/blob/main/docs/ms-coverage-2027.md)")
+        with open(IG_INCLUDE, "w", encoding="utf-8") as f:
+            f.write("\n".join(L) + "\n")
+
+IG_INCLUDE = None
 if __name__ == "__main__":
+    if "--ig-include" in sys.argv:
+        IG_INCLUDE = sys.argv[sys.argv.index("--ig-include") + 1]
     main()

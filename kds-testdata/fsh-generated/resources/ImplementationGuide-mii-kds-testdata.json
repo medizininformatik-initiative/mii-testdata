@@ -6176,6 +6176,14 @@
       },
       {
         "reference": {
+          "reference": "Observation/mii-exa-test-data-soziodemographie-schwerbehindertenausweis-2"
+        },
+        "name": "mii-exa-test-data-soziodemographie-schwerbehindertenausweis-2",
+        "description": "Soziodemographie: kein Schwerbehindertenausweis vorhanden (Nein-Zweig sba-1)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Observation/mii-exa-test-data-soziodemographie-soziooekonomische-faktoren-1"
         },
         "name": "mii-exa-test-data-soziodemographie-soziooekonomische-faktoren-1",
@@ -6711,6 +6719,16 @@
         {
           "nameUrl": "index.html",
           "title": "Home",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "nutzung.html",
+          "title": "Nutzung",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "testabdeckung.html",
+          "title": "Testabdeckung",
           "generation": "markdown"
         }
       ]

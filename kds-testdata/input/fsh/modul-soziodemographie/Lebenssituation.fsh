@@ -80,8 +80,22 @@ Description: "Soziodemographie: Schwerbehindertenausweis mit GdB 60 und Merkzeic
 * insert SddObservationBase
 * code.coding = $loinc#101720-1
 * code.text = "Schwerbehindertenausweis vorhanden"
-* valueCodeableConcept.coding = $v2-0136#Y "Yes"
+// Doppeltes Coding noetig: das Profil bindet value required an das
+// v2-0136-ValueSet, die Invariante sba-1 verlangt aber v2-0532#Y —
+// Upstream-Widerspruch, gemeldet am Modul-Repo.
+* valueCodeableConcept.coding[0] = $v2-0136#Y "Yes"
+* valueCodeableConcept.coding[+] = $v2-0532#Y "Yes"
 * component[gradDerBehinderung].valueQuantity = 60 '%' "%"
 * component[merkzeichen].valueCodeableConcept = $sdd-cs-merkzeichen#G "G – erhebliche Gehbehinderung"
 * component[gueltigVon].valueDateTime = "2022-08-01"
 * component[gueltigBis].valueDateTime = "2027-07-31"
+
+// Nein-Zweig der Invariante sba-1: kein Ausweis, daher KEINE components erlaubt.
+Instance: mii-exa-test-data-soziodemographie-schwerbehindertenausweis-2
+InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-soziodemographie/StructureDefinition/mii-pr-sdd-schwerbehindertenausweis
+Usage: #example
+Description: "Soziodemographie: kein Schwerbehindertenausweis vorhanden (Nein-Zweig sba-1)"
+* insert SddObservationBase
+* code.coding = $loinc#101720-1
+* code.text = "Schwerbehindertenausweis vorhanden"
+* valueCodeableConcept.coding = $v2-0136#N "No"

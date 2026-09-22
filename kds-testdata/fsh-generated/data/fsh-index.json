@@ -221,7 +221,7 @@
     "fshType": "Instance",
     "fshFile": "modul-soziodemographie/Bundle.fsh",
     "startLine": 5,
-    "endLine": 33
+    "endLine": 34
   },
   {
     "outputFile": "Bundle-mii-exa-test-data-bundle-studien-1.json",
@@ -5293,7 +5293,15 @@
     "fshType": "Instance",
     "fshFile": "modul-soziodemographie/Lebenssituation.fsh",
     "startLine": 76,
-    "endLine": 87
+    "endLine": 91
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-soziodemographie-schwerbehindertenausweis-2.json",
+    "fshName": "mii-exa-test-data-soziodemographie-schwerbehindertenausweis-2",
+    "fshType": "Instance",
+    "fshFile": "modul-soziodemographie/Lebenssituation.fsh",
+    "startLine": 94,
+    "endLine": 101
   },
   {
     "outputFile": "Observation-mii-exa-test-data-soziodemographie-soziooekonomische-faktoren-1.json",
