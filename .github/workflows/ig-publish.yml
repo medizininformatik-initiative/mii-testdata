@@ -90,10 +90,29 @@ jobs:
     - name: Install jekyll
       run: gem install jekyll --no-document
 
+    - name: Cache IG Publisher jar
+      id: cache-publisher
+      uses: actions/cache@v4
+      with:
+        path: publisher.jar
+        key: publisher-jar-${{ env.PUBLISHER_VERSION }}
+
     - name: Download IG Publisher
+      if: steps.cache-publisher.outputs.cache-hit != 'true'
       run: |
         curl -fsSL -o publisher.jar \
           "https://github.com/HL7/fhir-ig-publisher/releases/download/${PUBLISHER_VERSION}/publisher.jar"
+
+    # Terminologie-Cache des Publishers (kds-testdata/input-cache/txcache)
+    # zwischen Laeufen persistieren — der Grossteil der Buildzeit sind
+    # tx-Roundtrips; der Cache waechst fortlaufend (run_id-Key + Prefix-Restore).
+    - name: Cache terminology responses
+      uses: actions/cache@v4
+      with:
+        path: kds-testdata/input-cache
+        key: ig-txcache-v1-${{ github.run_id }}
+        restore-keys: |
+          ig-txcache-v1-
 
     - name: Generate Testabdeckung status include
       # Misst die MS-Abdeckung gegen den in sushi-config gepinnten BOM-Stand
