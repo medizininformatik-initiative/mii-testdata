@@ -160,9 +160,15 @@ jobs:
         # (http://127.0.0.1:8090) gegen die SSRF-Haertung des Publishers
         # (2.3.1+ verweigert sonst plain-HTTP/private-network -tx; Muster
         # aus dem mii-kds-module-template).
-        java -Xmx6g -Dfile.encoding=UTF-8 -jar ../publisher.jar \
-          -ig . -tx "$TX" -packages ../local-packages \
-          -fhir-settings "$GITHUB_WORKSPACE/.github/fhir-settings.json"
+        build() {
+          java -Xmx6g -Dfile.encoding=UTF-8 -jar ../publisher.jar \
+            -ig . -tx "$1" -packages ../local-packages \
+            -fhir-settings "$GITHUB_WORKSPACE/.github/fhir-settings.json"
+        }
+        # SU-TermServ zeigt gelegentlich Timeouts (CapabilityStatement) —
+        # ein Fehlschlag faellt auf den oeffentlichen HL7-Server zurueck
+        # (QA dann mit unvollstaendigen MII-Expansions, aber Build steht).
+        build "$TX" || { echo "::warning::Build mit $TX fehlgeschlagen — Retry mit https://tx.fhir.org"; build "https://tx.fhir.org"; }
 
     - name: Stop SU-TermServ proxy
       if: always()
