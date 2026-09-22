@@ -63,6 +63,12 @@ jobs:
         curl -fsSL -o "local-packages/${pkg}-${ver}.tgz" \
           "https://raw.githubusercontent.com/medizininformatik-initiative/fhir-package-store/main/package-tarballs/${pkg}-${ver}.tgz"
         tar -tzf "local-packages/${pkg}-${ver}.tgz" >/dev/null
+        # Auch in den SUSHI-Cache entpacken (der eingebettete SUSHI des
+        # Publishers kennt -packages nicht; Store-Extraktion zerlegt
+        # Bindestrich-Versionen falsch)
+        target="$HOME/.fhir/packages/${pkg}#${ver}"
+        rm -rf "$target" && mkdir -p "$target"
+        tar -xzf "local-packages/${pkg}-${ver}.tgz" -C "$target"
 
     - name: Install yq
       run: |

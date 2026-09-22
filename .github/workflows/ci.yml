@@ -52,6 +52,19 @@ jobs:
       env:
         YQ_VERSION: v4.44.3
 
+    # Die complete-BOM selbst in den Cache entpacken: der build-cache-Workflow
+    # des Stores leitet name#version aus dem DATEINAMEN ab und zerlegt
+    # Prerelease-Versionen mit Bindestrich (2027.0.0-ballot.19) falsch.
+    # Wir ziehen das tgz direkt aus main und entpacken es korrekt.
+    - name: Install complete-BOM into package cache
+      run: |
+        pkg="de.medizininformatikinitiative.kerndatensatz.complete"
+        ver="$(yq eval '.dependencies["'$pkg'"].version' kds-testdata/sushi-config.yaml)"
+        target="$HOME/.fhir/packages/${pkg}#${ver}"
+        rm -rf "$target" && mkdir -p "$target"
+        curl -fsSL "https://raw.githubusercontent.com/medizininformatik-initiative/fhir-package-store/main/package-tarballs/${pkg}-${ver}.tgz"           | tar -xz -C "$target"
+        test -f "$target/package/package.json"
+
     - name: Install sushi
       run: npm install -g fsh-sushi@${SUSHI_VERSION}
       env:
