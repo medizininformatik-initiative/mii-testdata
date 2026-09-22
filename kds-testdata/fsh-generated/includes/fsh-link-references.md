@@ -449,7 +449,6 @@
 [mii-exa-test-data-patient-1-labobs-4]: Observation-mii-exa-test-data-patient-1-labobs-4.html
 [mii-exa-test-data-patient-1-labobs-5]: Observation-mii-exa-test-data-patient-1-labobs-5.html
 [mii-exa-test-data-patient-1-labobs-6]: Observation-mii-exa-test-data-patient-1-labobs-6.html
-[mii-exa-test-data-patient-1-labobs-7]: Observation-mii-exa-test-data-patient-1-labobs-7.html
 [mii-exa-test-data-patient-1-labreport-1]: DiagnosticReport-mii-exa-test-data-patient-1-labreport-1.html
 [mii-exa-test-data-patient-1-labrequest-1]: ServiceRequest-mii-exa-test-data-patient-1-labrequest-1.html
 [mii-exa-test-data-patient-1-medadmin-1]: MedicationAdministration-mii-exa-test-data-patient-1-medadmin-1.html
