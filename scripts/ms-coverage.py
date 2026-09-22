@@ -51,9 +51,15 @@ def get_values(obj, parts):
                 continue
             if part.endswith("[x]"):
                 stem = part[:-3]
-                nxt += [v for k, v in o.items() if k.startswith(stem)]
-            elif part in o:
-                nxt.append(o[part])
+                # auch _effectiveDateTime & Co.: Primitive tragen ihre
+                # Extensions im Underscore-Zwilling
+                nxt += [v for k, v in o.items()
+                        if k.startswith(stem) or k.startswith("_" + stem)]
+            else:
+                if part in o:
+                    nxt.append(o[part])
+                if "_" + part in o:  # Extension auf Primitivwert
+                    nxt.append(o["_" + part])
         cur = [x for v in nxt for x in (v if isinstance(v, list) else [v])]
         if not cur:
             return []
@@ -151,6 +157,14 @@ def main():
         els = sd.get("snapshot", {}).get("element", [])
         ext_url = {el["id"][: -len(".url")]: el.get("fixedUri")
                    for el in els if el["id"].endswith(".url") and el.get("fixedUri")}
+        # Extension-Slices ohne .url-Kind im Snapshot: Canonical steht dann
+        # in type[0].profile (z.B. effective[x].extension:QuelleKlinischesBezugsdatum)
+        for el in els:
+            if ".extension:" in el["id"] and el["id"] not in ext_url:
+                for t in el.get("type", []):
+                    if t.get("code") == "Extension" and t.get("profile"):
+                        ext_url[el["id"]] = t["profile"][0]
+                        break
         ms_ids, ms_paths = [], set()
         for el in els:
             if el.get("mustSupport") and el["id"].count(".") >= 1:
