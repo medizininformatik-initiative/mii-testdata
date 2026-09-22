@@ -40,9 +40,15 @@ dependencies:
   # Extras, die die BOM nicht (oder nur transitiv) liefert:
   # - sdc 4.0.0: pros 2027.0.0-ballot.1 und isik 6.0.0 fordern 4.0.0
   # - einwilligungsmanagement 2.0.4: kommt sonst nur transitiv via consent 2027.0.0-ballot
+  # - isik 6.0.0: die BOM pinnt de.gematik.isik nur in package.json, bettet aber
+  #   KEINE ISiK-Conformance-Ressourcen ein; SUSHI laedt transitive Dependencies
+  #   nicht. Direkt benoetigt fuer modul-isik-vitalparameter (InstanceOf
+  #   ISiKAtemfrequenz etc.); behebt nebenbei die ISiKLoincCoding-Warnung
+  #   aus modul-kardiologie (Rauchen basiert auf ISiKRaucherStatus).
   hl7.fhir.uv.sdc: 4.0.0
   hl7.fhir.extensions.r5: 4.0.1
   de.einwilligungsmanagement: 2.0.4
+  de.gematik.isik: 6.0.0
 #   hl7.fhir.us.mcode:
 #     id: mcode
 #     uri: http://hl7.org/fhir/us/mcode/ImplementationGuide/hl7.fhir.us.mcode
