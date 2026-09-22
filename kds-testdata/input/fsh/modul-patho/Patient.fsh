@@ -24,5 +24,5 @@ Description: "Patho Test Encounter"
 * status = #finished
 * class = http://terminology.hl7.org/CodeSystem/v3-ActCode#IMP "inpatient encounter"
 * subject = Reference(mii-exa-test-data-patho-patient-1)
-* period.start = "2024-02-01"
+* period.start = "2024-01-10"
 * period.end = "2024-02-20"

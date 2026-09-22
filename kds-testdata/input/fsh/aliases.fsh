@@ -109,13 +109,22 @@ Alias: $go-obo = http://purl.obolibrary.org/obo/go.owl
 Alias: $clo = http://purl.obolibrary.org/obo/clo.owl
 Alias: $miabis-sample-type = https://fhir.bbmri-eric.eu/CodeSystem/miabis-detailed-samply-type-cs
 Alias: $genenames = http://www.genenames.org
-
 // Seltene Erkrankungen ICF-Assessment
 Alias: $icf = http://hl7.org/fhir/sid/icf
 Alias: $icf-beurteilungsmerkmal = https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/CodeSystem/mii-cs-seltene-icf-beurteilungsmerkmal
 Alias: $icf-q-ausmass = https://terminologien.bfarm.de/fhir/CodeSystem/icf-q-ausmass-der-schaedigung
-
 // Studien
 Alias: $title-type = http://terminology.hl7.org/CodeSystem/title-type
 Alias: $consentcategorycodes = http://terminology.hl7.org/CodeSystem/consentcategorycodes
 Alias: $consentpolicycodes = http://terminology.hl7.org/CodeSystem/consentpolicycodes
+// Pathologie (portierter ProstateCancerSpec-Fall, BIH-CEI)
+Alias: $mii-patho-finding = https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding
+Alias: $mii-patho-specimen = https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen
+Alias: $mii-patho-report = https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-report
+Alias: $mii-tnm-t = https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-tnm-t-kategorie
+Alias: $mii-tnm-n = https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-tnm-n-kategorie
+Alias: $mii-tnm-m = https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-tnm-m-kategorie
+Alias: $ICDO-3 = urn:oid:2.16.840.1.113883.6.43.1
+Alias: $ICDO-3_Auflagen = urn:oid:1.2.276.0.76.3.1.131.1.5.153
+Alias: $condition-category = http://terminology.hl7.org/CodeSystem/condition-category
+Alias: $media-type-cs = http://terminology.hl7.org/CodeSystem/media-type

@@ -1,0 +1,162 @@
+// =============================================================================
+// MIKROSKOPISCHE BEFUNDE GROUPER - PROSTATA STANZEN
+// =============================================================================
+
+// Grouper für mikroskopische Befunde nach MII-Patho-Befund
+Instance: mii-exa-test-data-patho-micro-grouper-1
+InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-microscopic-grouper
+Usage: #example
+Title: "Mikroskopische Befunde Grouper"
+Description: "Gruppierung aller mikroskopischen Befunde der Prostatastanzen" 
+* insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
+* status = #final
+* category[laboratory-category] = $observation-category#laboratory
+* code = $loinc#22635-7
+* subject = Reference(mii-exa-test-data-patho-patient-1)
+* effectiveDateTime = "2024-01-17T10:00:00+01:00"
+* performer = Reference(mii-exa-test-data-patho-practitioner-1)
+* valueString = "Mikroskopische Befunde aller 12 Prostatastanzen"
+* bodySite = $sct#41216001 "Prostate"
+
+* hasMember[+] = Reference(mii-exa-test-data-patho-histo-typ-01)
+* hasMember[+] = Reference(mii-exa-test-data-patho-morph-text-01)
+* hasMember[+] = Reference(mii-exa-test-data-patho-primaer-gleason-01)
+* hasMember[+] = Reference(mii-exa-test-data-patho-sekundaer-gleason-01)
+* hasMember[+] = Reference(mii-exa-test-data-patho-prozent-gleason-01)
+* hasMember[+] = Reference(mii-exa-test-data-patho-gleason-grading-01)
+* hasMember[+] = Reference(mii-exa-test-data-patho-verhaeltnis-positiver-stanzen-01)
+* hasMember[+] = Reference(mii-exa-test-data-patho-tumoranteil-01)
+* hasMember[+] = Reference(mii-exa-test-data-patho-tumorbefallin-laenge-01)
+* hasMember[+] = Reference(mii-exa-test-data-patho-perineurale-infiltration-01)
+* hasMember[+] = Reference(mii-exa-test-data-patho-tumornachweisin-samenblase-01)
+* hasMember[+] = Reference(mii-exa-test-data-patho-lymphovaskulaere-invasion-01)
+* hasMember[+] = Reference(mii-exa-test-data-patho-tumornachweis-in-fettgewebe-01)
+* hasMember[+] = Reference(mii-exa-test-data-patho-intraduktales-karzinom-01)
+* hasMember[+] = Reference(mii-exa-test-data-patho-asap-01)
+* hasMember[+] = Reference(mii-exa-test-data-patho-high-grade-pin-01)
+* hasMember[+] = Reference(mii-exa-test-data-patho-granulomatoese-prostatitis-01)
+
+* hasMember[+] = Reference(mii-exa-test-data-patho-histo-typ-02)
+* hasMember[+] = Reference(mii-exa-test-data-patho-morph-text-02)
+* hasMember[+] = Reference(mii-exa-test-data-patho-primaer-gleason-02)
+* hasMember[+] = Reference(mii-exa-test-data-patho-sekundaer-gleason-02)
+* hasMember[+] = Reference(mii-exa-test-data-patho-prozent-gleason-02)
+* hasMember[+] = Reference(mii-exa-test-data-patho-gleason-grading-02)
+* hasMember[+] = Reference(mii-exa-test-data-patho-verhaeltnis-positiver-stanzen-02)
+* hasMember[+] = Reference(mii-exa-test-data-patho-tumoranteil-02)
+* hasMember[+] = Reference(mii-exa-test-data-patho-tumorbefallin-laenge-02)
+* hasMember[+] = Reference(mii-exa-test-data-patho-perineurale-infiltration-02)
+* hasMember[+] = Reference(mii-exa-test-data-patho-tumornachweisin-samenblase-02)
+* hasMember[+] = Reference(mii-exa-test-data-patho-lymphovaskulaere-invasion-02)
+* hasMember[+] = Reference(mii-exa-test-data-patho-tumornachweis-in-fettgewebe-02)
+* hasMember[+] = Reference(mii-exa-test-data-patho-intraduktales-karzinom-02)
+* hasMember[+] = Reference(mii-exa-test-data-patho-asap-02)
+* hasMember[+] = Reference(mii-exa-test-data-patho-high-grade-pin-02)
+* hasMember[+] = Reference(mii-exa-test-data-patho-granulomatoese-prostatitis-02)
+
+* hasMember[+] = Reference(mii-exa-test-data-patho-histo-typ-03)
+* hasMember[+] = Reference(mii-exa-test-data-patho-morph-text-03)
+
+* hasMember[+] = Reference(mii-exa-test-data-patho-histo-typ-04)
+* hasMember[+] = Reference(mii-exa-test-data-patho-morph-text-04)
+* hasMember[+] = Reference(mii-exa-test-data-patho-primaer-gleason-04)
+* hasMember[+] = Reference(mii-exa-test-data-patho-sekundaer-gleason-04)
+* hasMember[+] = Reference(mii-exa-test-data-patho-prozent-gleason-04)
+* hasMember[+] = Reference(mii-exa-test-data-patho-gleason-grading-04)
+* hasMember[+] = Reference(mii-exa-test-data-patho-verhaeltnis-positiver-stanzen-04)
+* hasMember[+] = Reference(mii-exa-test-data-patho-tumoranteil-04)
+* hasMember[+] = Reference(mii-exa-test-data-patho-tumorbefallin-laenge-04)
+* hasMember[+] = Reference(mii-exa-test-data-patho-perineurale-infiltration-04)
+* hasMember[+] = Reference(mii-exa-test-data-patho-tumornachweisin-samenblase-04)
+* hasMember[+] = Reference(mii-exa-test-data-patho-lymphovaskulaere-invasion-04)
+* hasMember[+] = Reference(mii-exa-test-data-patho-tumornachweis-in-fettgewebe-04)
+* hasMember[+] = Reference(mii-exa-test-data-patho-intraduktales-karzinom-04)
+* hasMember[+] = Reference(mii-exa-test-data-patho-asap-04)
+* hasMember[+] = Reference(mii-exa-test-data-patho-high-grade-pin-04)
+* hasMember[+] = Reference(mii-exa-test-data-patho-granulomatoese-prostatitis-04)
+
+* hasMember[+] = Reference(mii-exa-test-data-patho-histo-typ-05)
+* hasMember[+] = Reference(mii-exa-test-data-patho-morph-text-05)
+
+* hasMember[+] = Reference(mii-exa-test-data-patho-histo-typ-06)
+* hasMember[+] = Reference(mii-exa-test-data-patho-morph-text-06)
+* hasMember[+] = Reference(mii-exa-test-data-patho-primaer-gleason-06)
+* hasMember[+] = Reference(mii-exa-test-data-patho-sekundaer-gleason-06)
+* hasMember[+] = Reference(mii-exa-test-data-patho-prozent-gleason-06)
+* hasMember[+] = Reference(mii-exa-test-data-patho-gleason-grading-06)
+* hasMember[+] = Reference(mii-exa-test-data-patho-verhaeltnis-positiver-stanzen-06)
+* hasMember[+] = Reference(mii-exa-test-data-patho-tumoranteil-06)
+* hasMember[+] = Reference(mii-exa-test-data-patho-tumorbefallin-laenge-06)
+* hasMember[+] = Reference(mii-exa-test-data-patho-perineurale-infiltration-06)
+* hasMember[+] = Reference(mii-exa-test-data-patho-tumornachweisin-samenblase-06)
+* hasMember[+] = Reference(mii-exa-test-data-patho-lymphovaskulaere-invasion-06)
+* hasMember[+] = Reference(mii-exa-test-data-patho-tumornachweis-in-fettgewebe-06)
+* hasMember[+] = Reference(mii-exa-test-data-patho-intraduktales-karzinom-06)
+* hasMember[+] = Reference(mii-exa-test-data-patho-asap-06)
+* hasMember[+] = Reference(mii-exa-test-data-patho-high-grade-pin-06)
+* hasMember[+] = Reference(mii-exa-test-data-patho-granulomatoese-prostatitis-06)
+
+* hasMember[+] = Reference(mii-exa-test-data-patho-histo-typ-07)
+* hasMember[+] = Reference(mii-exa-test-data-patho-morph-text-07)
+* hasMember[+] = Reference(mii-exa-test-data-patho-primaer-gleason-07)
+* hasMember[+] = Reference(mii-exa-test-data-patho-sekundaer-gleason-07)
+* hasMember[+] = Reference(mii-exa-test-data-patho-prozent-gleason-07)
+* hasMember[+] = Reference(mii-exa-test-data-patho-gleason-grading-07)
+* hasMember[+] = Reference(mii-exa-test-data-patho-verhaeltnis-positiver-stanzen-07)
+* hasMember[+] = Reference(mii-exa-test-data-patho-tumoranteil-07)
+* hasMember[+] = Reference(mii-exa-test-data-patho-tumorbefallin-laenge-07)
+* hasMember[+] = Reference(mii-exa-test-data-patho-perineurale-infiltration-07)
+* hasMember[+] = Reference(mii-exa-test-data-patho-tumornachweisin-samenblase-07)
+* hasMember[+] = Reference(mii-exa-test-data-patho-lymphovaskulaere-invasion-07)
+* hasMember[+] = Reference(mii-exa-test-data-patho-tumornachweis-in-fettgewebe-07)
+* hasMember[+] = Reference(mii-exa-test-data-patho-intraduktales-karzinom-07)
+* hasMember[+] = Reference(mii-exa-test-data-patho-asap-07)
+* hasMember[+] = Reference(mii-exa-test-data-patho-high-grade-pin-07)
+* hasMember[+] = Reference(mii-exa-test-data-patho-granulomatoese-prostatitis-07)
+
+* hasMember[+] = Reference(mii-exa-test-data-patho-histo-typ-08)
+* hasMember[+] = Reference(mii-exa-test-data-patho-morph-text-08)
+
+* hasMember[+] = Reference(mii-exa-test-data-patho-histo-typ-09)
+* hasMember[+] = Reference(mii-exa-test-data-patho-morph-text-09)
+* hasMember[+] = Reference(mii-exa-test-data-patho-primaer-gleason-09)
+* hasMember[+] = Reference(mii-exa-test-data-patho-sekundaer-gleason-09)
+* hasMember[+] = Reference(mii-exa-test-data-patho-prozent-gleason-09)
+* hasMember[+] = Reference(mii-exa-test-data-patho-gleason-grading-09)
+* hasMember[+] = Reference(mii-exa-test-data-patho-verhaeltnis-positiver-stanzen-09)
+* hasMember[+] = Reference(mii-exa-test-data-patho-tumoranteil-09)
+* hasMember[+] = Reference(mii-exa-test-data-patho-tumorbefallin-laenge-09)
+* hasMember[+] = Reference(mii-exa-test-data-patho-perineurale-infiltration-09)
+* hasMember[+] = Reference(mii-exa-test-data-patho-tumornachweisin-samenblase-09)
+* hasMember[+] = Reference(mii-exa-test-data-patho-lymphovaskulaere-invasion-09)
+* hasMember[+] = Reference(mii-exa-test-data-patho-tumornachweis-in-fettgewebe-09)
+* hasMember[+] = Reference(mii-exa-test-data-patho-intraduktales-karzinom-09)
+* hasMember[+] = Reference(mii-exa-test-data-patho-asap-09)
+* hasMember[+] = Reference(mii-exa-test-data-patho-high-grade-pin-09)
+* hasMember[+] = Reference(mii-exa-test-data-patho-granulomatoese-prostatitis-09)
+
+* hasMember[+] = Reference(mii-exa-test-data-patho-histo-typ-10)
+* hasMember[+] = Reference(mii-exa-test-data-patho-morph-text-10)
+
+* hasMember[+] = Reference(mii-exa-test-data-patho-histo-typ-11)
+* hasMember[+] = Reference(mii-exa-test-data-patho-morph-text-11)
+* hasMember[+] = Reference(mii-exa-test-data-patho-primaer-gleason-11)
+* hasMember[+] = Reference(mii-exa-test-data-patho-sekundaer-gleason-11)
+* hasMember[+] = Reference(mii-exa-test-data-patho-prozent-gleason-11)
+* hasMember[+] = Reference(mii-exa-test-data-patho-gleason-grading-11)
+* hasMember[+] = Reference(mii-exa-test-data-patho-verhaeltnis-positiver-stanzen-11)
+* hasMember[+] = Reference(mii-exa-test-data-patho-tumoranteil-11)
+* hasMember[+] = Reference(mii-exa-test-data-patho-tumorbefallin-laenge-11)
+* hasMember[+] = Reference(mii-exa-test-data-patho-perineurale-infiltration-11)
+* hasMember[+] = Reference(mii-exa-test-data-patho-tumornachweisin-samenblase-11)
+* hasMember[+] = Reference(mii-exa-test-data-patho-lymphovaskulaere-invasion-11)
+* hasMember[+] = Reference(mii-exa-test-data-patho-tumornachweis-in-fettgewebe-11)
+* hasMember[+] = Reference(mii-exa-test-data-patho-intraduktales-karzinom-11)
+* hasMember[+] = Reference(mii-exa-test-data-patho-asap-11)
+* hasMember[+] = Reference(mii-exa-test-data-patho-high-grade-pin-11)
+* hasMember[+] = Reference(mii-exa-test-data-patho-granulomatoese-prostatitis-11)
+
+* hasMember[+] = Reference(mii-exa-test-data-patho-histo-typ-12)
+* hasMember[+] = Reference(mii-exa-test-data-patho-morph-text-12)
+
