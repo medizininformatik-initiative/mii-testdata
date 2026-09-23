@@ -51,6 +51,12 @@
           "display": "Consent Signature"
         }
       ],
+      "extension": [
+        {
+          "url": "http://fhir.de/ConsentManagement/StructureDefinition/SignatureLocation",
+          "valueString": "Berlin, Charité Campus Mitte"
+        }
+      ],
       "when": "2024-02-23T12:00:00+01:00",
       "who": {
         "reference": "Patient/mii-exa-test-data-patient-1"

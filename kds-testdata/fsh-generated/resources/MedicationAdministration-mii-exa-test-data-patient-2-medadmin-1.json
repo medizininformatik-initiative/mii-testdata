@@ -20,6 +20,27 @@
       "value": "MA_0000003"
     }
   ],
+  "medicationCodeableConcept": {
+    "coding": [
+      {
+        "system": "http://fhir.de/CodeSystem/ifa/pzn",
+        "code": "02746517",
+        "display": "MORPHIN Merck Tropfen 0,5 %"
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/atc",
+        "code": "N02AA01",
+        "version": "2023",
+        "display": "Morphin"
+      },
+      {
+        "system": "http://www.whocc.no/atc",
+        "code": "N02AA01",
+        "display": "morphine"
+      }
+    ],
+    "text": "Morphin 10 mg oral"
+  },
   "dosage": {
     "route": {
       "coding": [
@@ -47,9 +68,6 @@
         "display": "Inpatient"
       }
     ]
-  },
-  "medicationReference": {
-    "reference": "Medication/mii-exa-test-data-medication-morphin"
   },
   "subject": {
     "reference": "Patient/mii-exa-test-data-patient-2"

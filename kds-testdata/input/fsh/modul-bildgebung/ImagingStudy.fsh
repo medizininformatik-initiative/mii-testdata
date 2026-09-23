@@ -13,6 +13,7 @@ Description: "ImagingStudy: MagneticResonance"
 * subject = Reference(mii-exa-test-data-bildgebung-patient-1)
 * encounter = Reference(mii-exa-test-data-bildgebung-encounter-1)
 * basedOn = Reference(mii-exa-test-data-anforderung)
+* endpoint = Reference(mii-exa-test-data-bildgebung-endpoint-1)
 * numberOfSeries = 11
 * numberOfInstances = 294
 * procedureReference = Reference(mii-exa-test-data-bildgebungsprozedur)
@@ -54,3 +55,16 @@ Description: "ImagingStudy: MagneticResonance"
 * series.instance.uid = "1.2.34.5.6789.1.2.3.45678.9123456789123456789123456789"
 * series.instance.sopClass = urn:ietf:rfc:3986#urn:oid:1.2.840.10008.5.1.4.1.1.4
 * series.instance.number = 28
+
+// DICOM-WADO-Endpoint des PACS fuer die Bildgebungsstudie (ImagingStudy.endpoint)
+Instance: mii-exa-test-data-bildgebung-endpoint-1
+InstanceOf: Endpoint
+Usage: #example
+Description: "Endpoint: DICOM WADO-RS Endpunkt des PACS"
+* insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
+* status = #active
+* connectionType = http://terminology.hl7.org/CodeSystem/endpoint-connection-type#dicom-wado-rs "DICOM WADO-RS"
+* name = "Charite PACS WADO-RS"
+* payloadType = http://terminology.hl7.org/CodeSystem/endpoint-payload-type#any "Any"
+* address = "https://pacs.charite.de/wado-rs"

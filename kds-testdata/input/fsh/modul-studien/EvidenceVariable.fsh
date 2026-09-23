@@ -24,6 +24,7 @@ Description: "EvidenceVariable: Ein-/Ausschlusskriterien der Studie MII-BIOMARKE
 * characteristic[0].extension[definitionByTypeAndValue].extension[value].valueQuantity.system = $ucum
 * characteristic[0].extension[definitionByTypeAndValue].extension[value].valueQuantity.code = #a
 * characteristic[0].description = "Alter mindestens 18 Jahre"
+* characteristic[0].definitionCodeableConcept.coding = $sct#424144002 "Current chronological age (observable entity)"
 * characteristic[0].definitionCodeableConcept.text = "Mindestalter"
 * characteristic[0].exclude = false
 // Einschluss: gesicherte endokrine Grunderkrankung
@@ -34,6 +35,7 @@ Description: "EvidenceVariable: Ein-/Ausschlusskriterien der Studie MII-BIOMARKE
 // Einschluss: Geschlecht ohne Einschraenkung (definitionCanonical-Backport)
 * characteristic[2].extension[definitionCanonical].valueCanonical = "https://www.medizininformatik-initiative.de/fhir/EvidenceVariable/administrative-gender"
 * characteristic[2].description = "Geschlecht: alle"
+* characteristic[2].definitionCodeableConcept.coding = $sct#263495000 "Gender (observable entity)"
 * characteristic[2].definitionCodeableConcept.text = "Alle"
 * characteristic[2].exclude = false
 // Ausschluss: Schwangerschaft

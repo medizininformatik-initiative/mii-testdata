@@ -24,6 +24,7 @@ Description: "Symptom Condition: Chronische Spannungskopfschmerzen"
 * severity = $sct#6736007 "Moderate (severity modifier)"
 * code.coding[+] = $sct#398057008 "Tension-type headache"
 * code.coding[+] = $icd-10-gm#G44.2 "Spannungskopfschmerz"
+* code.coding[=].version = "2026"
 * code.text = "Chronische Spannungskopfschmerzen"
 * bodySite = $sct#69536005 "Head structure"
 * subject = Reference(mii-exa-test-data-symptom-patient-1)
@@ -59,6 +60,7 @@ Description: "Symptom Condition: Chronische Herzinsuffizienz, NYHA-Klasse II"
 * severity = $sct#6736007 "Moderate (severity modifier)"
 * code.coding[+] = $sct#84114007 "Heart failure"
 * code.coding[+] = $icd-10-gm#I50.9 "Herzinsuffizienz, nicht näher bezeichnet"
+* code.coding[=].version = "2026"
 * code.text = "Chronische Herzinsuffizienz"
 * subject = Reference(mii-exa-test-data-symptom-patient-1)
 * encounter = Reference(mii-exa-test-data-symptom-encounter-1)

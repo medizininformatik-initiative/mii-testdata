@@ -138,7 +138,8 @@
             {
               "code": "G44.2",
               "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
-              "display": "Spannungskopfschmerz"
+              "display": "Spannungskopfschmerz",
+              "version": "2026"
             }
           ],
           "text": "Chronische Spannungskopfschmerzen"
@@ -301,7 +302,8 @@
             {
               "code": "I50.9",
               "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
-              "display": "Herzinsuffizienz, nicht näher bezeichnet"
+              "display": "Herzinsuffizienz, nicht näher bezeichnet",
+              "version": "2026"
             }
           ],
           "text": "Chronische Herzinsuffizienz"

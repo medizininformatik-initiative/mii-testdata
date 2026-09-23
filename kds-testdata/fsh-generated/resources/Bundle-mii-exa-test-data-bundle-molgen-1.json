@@ -1403,7 +1403,8 @@
                 {
                   "code": "L01EC",
                   "system": "http://fhir.de/CodeSystem/bfarm/atc",
-                  "display": "BRAF-Serin-Threoninkinase-Inhibitoren"
+                  "display": "BRAF-Serin-Threoninkinase-Inhibitoren",
+                  "version": "2026"
                 },
                 {
                   "code": "703645005",
@@ -1424,26 +1425,16 @@
             }
           },
           {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "51963-7",
-                  "display": "Medication assessed [ID]"
-                }
-              ]
-            },
             "valueCodeableConcept": {
               "coding": [
                 {
                   "code": "L01FE",
                   "system": "http://fhir.de/CodeSystem/bfarm/atc",
-                  "display": "EGFR (Epidermaler Wachstumsfaktor-Rezeptor)-Inhibitoren"
+                  "display": "EGFR (Epidermaler Wachstumsfaktor-Rezeptor)-Inhibitoren",
+                  "version": "2026"
                 }
               ]
-            }
-          },
-          {
+            },
             "code": {
               "coding": [
                 {
@@ -1452,13 +1443,25 @@
                   "display": "Medication assessed [ID]"
                 }
               ]
-            },
+            }
+          },
+          {
             "valueCodeableConcept": {
               "coding": [
                 {
                   "code": "L01EE",
                   "system": "http://fhir.de/CodeSystem/bfarm/atc",
-                  "display": "Mitogen-aktivierte Proteinkinase (MEK)-Inhibitoren"
+                  "display": "Mitogen-aktivierte Proteinkinase (MEK)-Inhibitoren",
+                  "version": "2026"
+                }
+              ]
+            },
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "51963-7",
+                  "display": "Medication assessed [ID]"
                 }
               ]
             }
@@ -3787,7 +3790,8 @@
                 {
                   "code": "L01EB04",
                   "system": "http://fhir.de/CodeSystem/bfarm/atc",
-                  "display": "Osimertinib"
+                  "display": "Osimertinib",
+                  "version": "2026"
                 }
               ],
               "text": "Osimertinib (Tagrisso)"
@@ -4212,7 +4216,8 @@
                 {
                   "code": "L01FX18",
                   "system": "http://fhir.de/CodeSystem/bfarm/atc",
-                  "display": "Amivantamab"
+                  "display": "Amivantamab",
+                  "version": "2026"
                 }
               ],
               "text": "Amivantamab (Rybrevant) - EGFR/MET bispezifischer Antikoerper"
@@ -4487,7 +4492,8 @@
             {
               "code": "C18.7",
               "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
-              "display": "Bösartige Neubildung: Colon sigmoideum"
+              "display": "Bösartige Neubildung: Colon sigmoideum",
+              "version": "2026"
             }
           ]
         },
@@ -4536,7 +4542,8 @@
             {
               "code": "C34.1",
               "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
-              "display": "Bösartige Neubildung: Oberlappen (-Bronchus)"
+              "display": "Bösartige Neubildung: Oberlappen (-Bronchus)",
+              "version": "2026"
             }
           ]
         },

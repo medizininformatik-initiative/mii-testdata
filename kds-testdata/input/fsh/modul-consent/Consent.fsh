@@ -7,6 +7,19 @@ Description: "Consent: Einwilligung für Patient 1"
 * meta.source = "https://www.charite.de/fhir/kds-testdata"
 //* meta.profile[0] = "https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-einwilligung|1.0.7"
 * insert AddConsent(mii-exa-test-data-patient-1, 2024-02-23T12:00:00+01:00, mii-exa-test-data-organization-charite)
+* patient.identifier.system = "http://fhir.de/sid/gkv/kvid-10"
+* patient.identifier.value = "A123456780"
+* extension[domainReference].url = "http://fhir.de/ConsentManagement/StructureDefinition/DomainReference"
+* extension[domainReference].extension[domain].url = "domain"
+* extension[domainReference].extension[domain].valueReference = Reference(mii-exa-test-data-organization-charite)
+* extension[domainReference].extension[domain].valueReference.display = "MII Broad Consent Domäne Charité"
+* policyRule.coding = $v3-ActCode#OPTIN "opt-in"
+* policyRule.text = "MII Broad Consent Opt-in"
+// Extension ueber expliziten url statt Slice-Name: das Xacml-Profil in
+// de.einwilligungsmanagement hat keinen Snapshot, SUSHI kann es nicht importieren.
+* policyRule.extension[0].url = "http://fhir.de/ConsentManagement/StructureDefinition/Xacml"
+* policyRule.extension[0].valueBase64Binary = "PFBvbGljeVNldCB4bWxucz0idXJuOm9hc2lzOm5hbWVzOnRjOnhhY21sIi8+"
+* sourceReference = Reference(mii-exa-test-data-patient-1-consent-qr-1)
 * provision.period.start = "2024-02-23"
 * provision.period.end = "2054-01-31"
 * provision.provision[0].type = #permit

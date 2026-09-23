@@ -12,6 +12,9 @@ Description: "Composition: semistrukturierter Befundbericht"
 * author = Reference(mii-exa-test-data-practitioner-physician-1)
 * title = "Mammographic Report"
 * section[diagRep].title = "Diagnostic Report"
+* section[diagRep].author = Reference(mii-exa-test-data-practitioner-physician-1)
+* section[diagRep].text.status = #generated
+* section[diagRep].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Mammographie beidseits: Mikrokalk im oberen aeusseren Quadranten links, Herdbefund 4,2 mm.</div>"
 * section[diagRep].entry = Reference(mii-exa-test-data-befundbericht)
 * section[diagRep].section.title = "Left Breast"
 * section[diagRep].section.code = $loinc#66110-8 "Breast Pathology biopsy report"

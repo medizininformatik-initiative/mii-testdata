@@ -14,13 +14,31 @@ Description: "MedicationRequest: Dalbavancin 1500 mg IV als 30-minütige Infusio
 * subject = Reference(mii-exa-test-data-patient-1)
 * encounter = Reference(mii-exa-test-data-patient-1-encounter-1)
 * authoredOn = "2024-02-16T08:37:00+01:00"
+* requester = Reference(mii-exa-test-data-practitioner-physician-1)
+* reasonCode = $sct#128045006 "Cellulitis (disorder)"
+* reasonReference = Reference(mii-exa-test-data-patient-1-diagnose-1)
+* note.text = "Zweitgabe nach 14 Tagen nur bei klinischem Ansprechen."
 * dosageInstruction.timing.event = "2024-02-16"
+// Strukturiertes Wiederholungsschema (Dalbavancin q14d, 30-60 min Infusionsdauer)
+* dosageInstruction.timing.repeat.boundsDuration = 4 'wk' "Wochen"
+* dosageInstruction.timing.repeat.count = 2
+* dosageInstruction.timing.repeat.countMax = 3
+* dosageInstruction.timing.repeat.duration = 30
+* dosageInstruction.timing.repeat.durationMax = 60
+* dosageInstruction.timing.repeat.durationUnit = #min
+* dosageInstruction.timing.repeat.frequency = 1
+* dosageInstruction.timing.repeat.period = 14
+* dosageInstruction.timing.repeat.periodMax = 16
+* dosageInstruction.timing.repeat.periodUnit = #d
+* dosageInstruction.timing.repeat.dayOfWeek = #fri
+* dosageInstruction.timing.repeat.timeOfDay = "10:00:00"
+* dosageInstruction.site = $sct#789218009 "Structure of dorsum of left hand (body structure)"
 * dosageInstruction.route = $standardterms#20045000 "Intravenous use"
 * dosageInstruction.doseAndRate.doseQuantity = 1500 $ucum#mg "mg"
 * dosageInstruction.doseAndRate.rateRatio.numerator = 1500 $ucum#mg "mg"
 * dosageInstruction.doseAndRate.rateRatio.denominator = 30 $ucum#min "Minuten"
 * dosageInstruction.maxDosePerAdministration = 1500 $ucum#mg "mg"
-* substitution.allowedBoolean = false 
+* substitution.allowedBoolean = false
 
 Instance: mii-exa-test-data-patient-1-medrequest-2
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationRequest
@@ -38,10 +56,16 @@ Description: "MedicationRequest: Dalbavancin 1500 mg IV als 30-minütige Infusio
 * encounter = Reference(mii-exa-test-data-patient-1-encounter-1)
 * authoredOn = "2024-02-16T08:37:00+01:00"
 * dosageInstruction.timing.event = "2024-02-16"
+// boundsRange-Variante: Behandlungsdauer 2-4 Wochen
+* dosageInstruction.timing.repeat.frequency = 1
+* dosageInstruction.timing.repeat.period = 14
+* dosageInstruction.timing.repeat.periodUnit = #d
+* dosageInstruction.timing.repeat.boundsRange.low = 2 'wk' "Wochen"
+* dosageInstruction.timing.repeat.boundsRange.high = 4 'wk' "Wochen"
 * dosageInstruction.route = $standardterms#20045000 "Intravenous use"
 * dosageInstruction.doseAndRate.doseQuantity = 1500 $ucum#mg "mg"
-* dosageInstruction.doseAndRate.rateRange.low = 60 $ucum#mL/h 
-* dosageInstruction.doseAndRate.rateRange.high = 120 $ucum#mL/h
+* dosageInstruction.doseAndRate.rateRange.low = 60 $ucum#mL/h "mL/h"
+* dosageInstruction.doseAndRate.rateRange.high = 120 $ucum#mL/h "mL/h"
 * priorPrescription = Reference(mii-exa-test-data-patient-1-medrequest-1)
 
 Instance: mii-exa-test-data-patient-1-medrequest-3
@@ -60,10 +84,16 @@ Description: "MedicationRequest: Propofol 6.5 mg/min IV via Perfusor"
 * encounter = Reference(mii-exa-test-data-patient-1-encounter-2)
 * authoredOn = "2024-02-20T09:55:00+01:00"
 * dosageInstruction.timing.event = "2024-02-20T10:00:00+01:00"
+// boundsPeriod-Variante: geplanter Anwendungszeitraum
+* dosageInstruction.timing.repeat.frequency = 1
+* dosageInstruction.timing.repeat.period = 1
+* dosageInstruction.timing.repeat.periodUnit = #d
+* dosageInstruction.timing.repeat.boundsPeriod.start = "2024-02-20T10:00:00+01:00"
+* dosageInstruction.timing.repeat.boundsPeriod.end = "2024-02-20T13:00:00+01:00"
 * dosageInstruction.route = $standardterms#20045000 "Intravenous use"
 * dosageInstruction.method = $sct#129331004 "Perfusion - action (qualifier value)"
 * dosageInstruction.doseAndRate.doseQuantity = 200 $ucum#mg "mg"
-* dosageInstruction.doseAndRate.rateQuantity = 5 $ucum#mg/min
+* dosageInstruction.doseAndRate.rateQuantity = 5 $ucum#mg/min "mg/min"
 
 Instance: mii-exa-test-data-patient-1-medrequest-4
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationRequest
@@ -76,11 +106,17 @@ Description: "MedicationRequest: Propofol 6.5 mg/min IV via Perfusor"
 * identifier[0].value = "MO_0000004"
 * status = #active
 * intent = #order
+* basedOn = Reference(mii-exa-test-data-patient-1-medrequest-3)
 * medicationReference = Reference(mii-exa-test-data-medication-propofol)
 * subject = Reference(mii-exa-test-data-patient-1)
 * encounter = Reference(mii-exa-test-data-patient-1-encounter-2)
 * authoredOn = "2024-02-20T10:00:00+01:00"
 * dosageInstruction.timing.event = "2024-02-20T10:00:00+01:00"
+* dosageInstruction.timing.repeat.frequency = 1
+* dosageInstruction.timing.repeat.period = 1
+* dosageInstruction.timing.repeat.periodUnit = #d
+* dosageInstruction.timing.repeat.when = #MORN
+* dosageInstruction.timing.repeat.offset = 60
 * dosageInstruction.route = $standardterms#20045000 "Intravenous use"
 * dosageInstruction.method = $sct#129331004 "Perfusion - action (qualifier value)"
 * dosageInstruction.doseAndRate.doseQuantity = 200 $ucum#mg "mg"
@@ -100,7 +136,12 @@ Description: "MedicationRequest: Metamizol 500-1000 mg oral bei Bedarf"
 * identifier[0].value = "MO_0000005"
 * status = #active
 * intent = #order
-* medicationReference = Reference(mii-exa-test-data-medication-metamizol)
+// medicationCodeableConcept-Variante (statt medicationReference):
+// PZN- und ATC-Codings direkt in der Verordnung
+* medicationCodeableConcept.coding[Pharmazentralnummer] = $pzn#00651306 "Metamizol HEXAL® 500 mg"
+* medicationCodeableConcept.coding[atcClassDe] = $atc|2023#N02BB02 "Metamizol-Natrium"
+* medicationCodeableConcept.coding[atcClassEn] = $atc-who#N02BB02 "metamizole sodium"
+* medicationCodeableConcept.text = "Metamizol 500 mg Filmtabletten"
 * subject = Reference(mii-exa-test-data-patient-3)
 * encounter = Reference(mii-exa-test-data-patient-3-encounter-1)
 * authoredOn = "2022-04-12T11:32:00+01:00"

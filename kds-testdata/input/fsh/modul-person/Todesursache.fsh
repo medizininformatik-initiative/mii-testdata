@@ -7,6 +7,8 @@ Description: "Observation: Todesursache für Patient-1"
 * meta.source = "https://www.charite.de/fhir/kds-testdata"
 //* meta.profile[0] = "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Todesursache|2024.0.0"
 * insert AddTodesursache(A15.0, 2019, mii-exa-test-data-patient-1, 2024-02-22, Tuberkulose einschließlich ihrer Folgezustände)
+* code.text = "Tuberkulose der Lunge als Todesursache"
+* encounter = Reference(mii-exa-test-data-patient-1-encounter-1)
 
 // Todesursache Patient-2
 Instance: mii-exa-test-data-patient-2-todesursache-1

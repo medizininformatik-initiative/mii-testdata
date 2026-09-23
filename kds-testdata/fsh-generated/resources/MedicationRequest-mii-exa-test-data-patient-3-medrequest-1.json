@@ -20,6 +20,27 @@
       "value": "MO_0000005"
     }
   ],
+  "medicationCodeableConcept": {
+    "coding": [
+      {
+        "system": "http://fhir.de/CodeSystem/ifa/pzn",
+        "code": "00651306",
+        "display": "Metamizol HEXAL® 500 mg"
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/atc",
+        "code": "N02BB02",
+        "version": "2023",
+        "display": "Metamizol-Natrium"
+      },
+      {
+        "system": "http://www.whocc.no/atc",
+        "code": "N02BB02",
+        "display": "metamizole sodium"
+      }
+    ],
+    "text": "Metamizol 500 mg Filmtabletten"
+  },
   "dosageInstruction": [
     {
       "timing": {
@@ -85,9 +106,6 @@
   },
   "status": "active",
   "intent": "order",
-  "medicationReference": {
-    "reference": "Medication/mii-exa-test-data-medication-metamizol"
-  },
   "subject": {
     "reference": "Patient/mii-exa-test-data-patient-3"
   },

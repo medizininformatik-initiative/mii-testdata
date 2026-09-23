@@ -25,7 +25,16 @@
       "timing": {
         "event": [
           "2024-02-20T10:00:00+01:00"
-        ]
+        ],
+        "repeat": {
+          "boundsPeriod": {
+            "start": "2024-02-20T10:00:00+01:00",
+            "end": "2024-02-20T13:00:00+01:00"
+          },
+          "frequency": 1,
+          "period": 1,
+          "periodUnit": "d"
+        }
       },
       "doseAndRate": [
         {
@@ -38,7 +47,8 @@
           "rateQuantity": {
             "value": 5,
             "code": "mg/min",
-            "system": "http://unitsofmeasure.org"
+            "system": "http://unitsofmeasure.org",
+            "unit": "mg/min"
           }
         }
       ],

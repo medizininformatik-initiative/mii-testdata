@@ -105,6 +105,102 @@
       }
     }
   ],
+  "extension": [
+    {
+      "valueAddress": {
+        "city": "Potsdam",
+        "country": "DE"
+      },
+      "url": "http://hl7.org/fhir/StructureDefinition/patient-birthPlace"
+    },
+    {
+      "extension": [
+        {
+          "url": "code",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "code": "DE",
+                "system": "urn:iso:std:iso:3166",
+                "display": "Deutschland"
+              }
+            ]
+          }
+        },
+        {
+          "valuePeriod": {
+            "start": "1977-05-24"
+          },
+          "url": "period"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/patient-citizenship"
+    },
+    {
+      "extension": [
+        {
+          "url": "code",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "code": "DE",
+                "system": "urn:iso:std:iso:3166",
+                "display": "Deutschland"
+              }
+            ]
+          }
+        },
+        {
+          "valuePeriod": {
+            "start": "1977-05-24"
+          },
+          "url": "period"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/patient-nationality"
+    },
+    {
+      "extension": [
+        {
+          "url": "value",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "code": "248153007",
+                "system": "http://snomed.info/sct",
+                "display": "Male (finding)"
+              }
+            ]
+          }
+        },
+        {
+          "url": "type",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "code": "76689-9",
+                "system": "http://loinc.org",
+                "display": "Sex assigned at birth"
+              }
+            ]
+          }
+        },
+        {
+          "url": "acquisitionDate",
+          "valueDateTime": "1977-05-24"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/individual-recordedSexOrGender"
+    }
+  ],
+  "link": [
+    {
+      "other": {
+        "reference": "Patient/mii-exa-test-data-patient-pseudonym-1"
+      },
+      "type": "seealso"
+    }
+  ],
   "address": [
     {
       "extension": [

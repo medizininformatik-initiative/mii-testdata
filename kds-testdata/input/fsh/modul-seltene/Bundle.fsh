@@ -37,7 +37,9 @@ Description: "Bundle: Seltene Erkrankungen Testdaten Patient-3"
 * insert AddBundleEntry(mii-exa-test-data-patient-3-seltene-hpo-assessment-4, Observation)
 // Conditions
 * insert AddBundleEntry(mii-exa-test-data-patient-3-seltene-clinical-diagnosis-1, Condition)
+* insert AddBundleEntry(mii-exa-test-data-patient-3-seltene-clinical-diagnosis-2, Condition)
 * insert AddBundleEntry(mii-exa-test-data-patient-3-seltene-genetic-diagnosis-1, Condition)
+* insert AddBundleEntry(mii-exa-test-data-patient-3-seltene-genetic-diagnosis-2, Condition)
 * insert AddBundleEntry(mii-exa-test-data-patient-3-seltene-symptom-condition-1, Condition)
 * insert AddBundleEntry(mii-exa-test-data-patient-3-seltene-symptom-condition-2, Condition)
 // Clinical Impression
@@ -45,6 +47,7 @@ Description: "Bundle: Seltene Erkrankungen Testdaten Patient-3"
 // Family History
 * insert AddBundleEntry(mii-exa-test-data-patient-3-seltene-familienanamnese-1, FamilyMemberHistory)
 * insert AddBundleEntry(mii-exa-test-data-patient-3-seltene-familienanamnese-2, FamilyMemberHistory)
+* insert AddBundleEntry(mii-exa-test-data-patient-3-seltene-familienanamnese-3, FamilyMemberHistory)
 // Therapie
 * insert AddBundleEntry(mii-exa-test-data-patient-3-seltene-therapieplan-1, CarePlan)
 * insert AddBundleEntry(mii-exa-test-data-patient-3-seltene-therapieempfehlung-1, MedicationRequest)

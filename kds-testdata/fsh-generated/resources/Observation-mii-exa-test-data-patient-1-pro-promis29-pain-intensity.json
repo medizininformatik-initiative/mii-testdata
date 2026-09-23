@@ -14,6 +14,27 @@
       "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-29-pain-intensity"
     ]
   },
+  "identifier": [
+    {
+      "system": "https://www.charite.de/fhir/sid/pro-observation-id",
+      "value": "PRO-OBS-P29PIN-PAT1-001"
+    }
+  ],
+  "focus": [
+    {
+      "reference": "Condition/mii-exa-test-data-pro-diagnose-1"
+    }
+  ],
+  "performer": [
+    {
+      "reference": "Patient/mii-exa-test-data-pro-patient-1"
+    }
+  ],
+  "note": [
+    {
+      "text": "Numerische Schmerzintensitaet aus PROMIS-29."
+    }
+  ],
   "valueQuantity": {
     "unit": "1",
     "system": "http://unitsofmeasure.org",

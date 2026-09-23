@@ -12,6 +12,9 @@ Description: "Encounter: Einrichtungskontakt Patient 1"
 * extension[Aufnahmegrund].extension[VierteStelle].valueCoding = $AufnahmegrundVierteStelle#1 "Normalfall"
 * period.start = "2024-02-14"
 * period.end = "2024-02-22"
+* account.identifier.system = "https://www.charite.de/fhir/sid/abrechnungsfallnummern"
+* account.identifier.value = "ABR-0000001"
+* account.display = "Abrechnungsfall MII_0000001"
 * diagnosis[0].condition = Reference(mii-exa-test-data-patient-1-diagnose-1)
 * diagnosis[0].use = $diagnosis-role#AD "Admission diagnosis"
 * diagnosis[0].rank = 1

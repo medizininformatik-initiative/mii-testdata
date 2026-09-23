@@ -113,6 +113,7 @@ Description: "PRO Observation: BDI-II Total Score for Patient 1 (mild depression
 * status = #final
 * code = $loinc#89209-1 "Beck Depression Inventory II total score [BDI]"
 * subject = Reference(mii-exa-test-data-pro-patient-1)
+* focus = Reference(mii-exa-test-data-pro-diagnose-1)
 * encounter = Reference(mii-exa-test-data-pro-encounter-1)
 * effectiveDateTime = "2024-03-15T10:30:00+01:00"
 * performer = Reference(mii-exa-test-data-pro-patient-1)
@@ -147,6 +148,7 @@ Description: "PRO Observation: EQ-5D-5L Index Value for Patient 1"
 * status = #final
 // code inherited from profile pattern (sct#736534008)
 * subject = Reference(mii-exa-test-data-pro-patient-1)
+* focus = Reference(mii-exa-test-data-pro-diagnose-1)
 * encounter = Reference(mii-exa-test-data-pro-encounter-1)
 * effectiveDateTime = "2024-03-15T11:00:00+01:00"
 * performer = Reference(mii-exa-test-data-pro-patient-1)
@@ -180,6 +182,7 @@ Description: "PRO Observation: EQ-5D-5L VAS Score for Patient 1"
 * status = #final
 // code inherited from profile pattern (sct#736535009)
 * subject = Reference(mii-exa-test-data-pro-patient-1)
+* focus = Reference(mii-exa-test-data-pro-diagnose-1)
 * encounter = Reference(mii-exa-test-data-pro-encounter-1)
 * effectiveDateTime = "2024-03-15T11:00:00+01:00"
 * performer = Reference(mii-exa-test-data-pro-patient-1)
@@ -214,6 +217,7 @@ Description: "PRO Observation: EQ-5D-5L Profile String for Patient 1"
 * status = #final
 * code = https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue#euroqol-eq5d5l-profile "EuroQol EQ-5D-5L Profile"
 * subject = Reference(mii-exa-test-data-pro-patient-1)
+* focus = Reference(mii-exa-test-data-pro-diagnose-1)
 * encounter = Reference(mii-exa-test-data-pro-encounter-1)
 * effectiveDateTime = "2024-03-15T11:00:00+01:00"
 * performer = Reference(mii-exa-test-data-pro-patient-1)
@@ -242,6 +246,7 @@ Description: "PRO Observation: PROMIS-29 Anxiety T-Score for Patient 1"
 * status = #final
 * code = $loinc#71967-4 "PROMIS-29 Anxiety score T-score"
 * subject = Reference(mii-exa-test-data-pro-patient-1)
+* focus = Reference(mii-exa-test-data-pro-diagnose-1)
 * encounter = Reference(mii-exa-test-data-pro-encounter-1)
 * effectiveDateTime = "2024-03-15T11:30:00+01:00"
 * performer = Reference(mii-exa-test-data-pro-patient-1)
@@ -272,6 +277,12 @@ Description: "PRO Observation: PROMIS-29 Depression T-Score for Patient 1"
 * status = #final
 * code = $loinc#77861-3 "PROMIS emotional distress - depression - version 1.0 Tscore"
 * subject = Reference(mii-exa-test-data-pro-patient-1)
+* identifier[+].system = "https://www.charite.de/fhir/sid/pro-observation-id"
+* identifier[=].value = "PRO-OBS-P29DEP-PAT1-001"
+* focus = Reference(mii-exa-test-data-pro-diagnose-1)
+* performer = Reference(mii-exa-test-data-pro-patient-1)
+* interpretation = $v3-ObservationInterpretation#N "Normal"
+* note.text = "T-Score im Normbereich der Referenzpopulation."
 * effectiveDateTime = "2024-03-15T11:30:00+01:00"
 * valueQuantity.value = 55.1
 * valueQuantity.unit = "{score}"
@@ -297,6 +308,12 @@ Description: "PRO Observation: PROMIS-29 Fatigue T-Score for Patient 1"
 * status = #final
 * code = $loinc#77864-7 "PROMIS fatigue - version 1.0 Tscore"
 * subject = Reference(mii-exa-test-data-pro-patient-1)
+* identifier[+].system = "https://www.charite.de/fhir/sid/pro-observation-id"
+* identifier[=].value = "PRO-OBS-P29FAT-PAT1-001"
+* focus = Reference(mii-exa-test-data-pro-diagnose-1)
+* performer = Reference(mii-exa-test-data-pro-patient-1)
+* interpretation = $v3-ObservationInterpretation#N "Normal"
+* note.text = "T-Score im Normbereich der Referenzpopulation."
 * effectiveDateTime = "2024-03-15T11:30:00+01:00"
 * valueQuantity.value = 58.3
 * valueQuantity.unit = "{score}"
@@ -323,6 +340,11 @@ Description: "PRO Observation: PROMIS-29 Pain Intensity for Patient 1"
 * status = #final
 * code = $loinc#75261-8 "How intense was your average pain in the past 7 days [PROMIS]"
 * subject = Reference(mii-exa-test-data-pro-patient-1)
+* identifier[+].system = "https://www.charite.de/fhir/sid/pro-observation-id"
+* identifier[=].value = "PRO-OBS-P29PIN-PAT1-001"
+* focus = Reference(mii-exa-test-data-pro-diagnose-1)
+* performer = Reference(mii-exa-test-data-pro-patient-1)
+* note.text = "Numerische Schmerzintensitaet aus PROMIS-29."
 * effectiveDateTime = "2024-03-15T11:30:00+01:00"
 * valueQuantity.value = 3
 * valueQuantity.unit = "1"
@@ -350,6 +372,12 @@ Description: "PRO Observation: PROMIS-29 Pain Interference T-Score for Patient 1
 * status = #final
 * code = $loinc#77865-4 "PROMIS pain interference - version 1.0 Tscore"
 * subject = Reference(mii-exa-test-data-pro-patient-1)
+* identifier[+].system = "https://www.charite.de/fhir/sid/pro-observation-id"
+* identifier[=].value = "PRO-OBS-P29PIF-PAT1-001"
+* focus = Reference(mii-exa-test-data-pro-diagnose-1)
+* performer = Reference(mii-exa-test-data-pro-patient-1)
+* interpretation = $v3-ObservationInterpretation#N "Normal"
+* note.text = "T-Score im Normbereich der Referenzpopulation."
 * effectiveDateTime = "2024-03-15T11:30:00+01:00"
 * valueQuantity.value = 52.4
 * valueQuantity.unit = "{score}"
@@ -375,6 +403,12 @@ Description: "PRO Observation: PROMIS-29 Physical Function T-Score for Patient 1
 * status = #final
 * code = $loinc#91721-1 "PROMIS physical function - version 2.0 T-score"
 * subject = Reference(mii-exa-test-data-pro-patient-1)
+* identifier[+].system = "https://www.charite.de/fhir/sid/pro-observation-id"
+* identifier[=].value = "PRO-OBS-P29PFN-PAT1-001"
+* focus = Reference(mii-exa-test-data-pro-diagnose-1)
+* performer = Reference(mii-exa-test-data-pro-patient-1)
+* interpretation = $v3-ObservationInterpretation#N "Normal"
+* note.text = "T-Score im Normbereich der Referenzpopulation."
 * effectiveDateTime = "2024-03-15T11:30:00+01:00"
 * valueQuantity.value = 48.2
 * valueQuantity.unit = "{score}"
@@ -400,6 +434,12 @@ Description: "PRO Observation: PROMIS-29 Sleep Disturbance T-Score for Patient 1
 * status = #final
 * code = $loinc#77860-5 "PROMIS sleep disturbance - version 1.0 Tscore"
 * subject = Reference(mii-exa-test-data-pro-patient-1)
+* identifier[+].system = "https://www.charite.de/fhir/sid/pro-observation-id"
+* identifier[=].value = "PRO-OBS-P29SLP-PAT1-001"
+* focus = Reference(mii-exa-test-data-pro-diagnose-1)
+* performer = Reference(mii-exa-test-data-pro-patient-1)
+* interpretation = $v3-ObservationInterpretation#N "Normal"
+* note.text = "T-Score im Normbereich der Referenzpopulation."
 * effectiveDateTime = "2024-03-15T11:30:00+01:00"
 * valueQuantity.value = 56.8
 * valueQuantity.unit = "{score}"
@@ -425,6 +465,12 @@ Description: "PRO Observation: PROMIS-29 Social Function T-Score for Patient 1"
 * status = #final
 * code = $loinc#77854-8 "PROMIS ability to participate in social roles and activities - version 2.0 Tscore"
 * subject = Reference(mii-exa-test-data-pro-patient-1)
+* identifier[+].system = "https://www.charite.de/fhir/sid/pro-observation-id"
+* identifier[=].value = "PRO-OBS-P29SOC-PAT1-001"
+* focus = Reference(mii-exa-test-data-pro-diagnose-1)
+* performer = Reference(mii-exa-test-data-pro-patient-1)
+* interpretation = $v3-ObservationInterpretation#N "Normal"
+* note.text = "T-Score im Normbereich der Referenzpopulation."
 * effectiveDateTime = "2024-03-15T11:30:00+01:00"
 * valueQuantity.value = 44.9
 * valueQuantity.unit = "{score}"
@@ -454,6 +500,7 @@ Description: "PRO Observation: PROMIS Cognitive Function SF4a Raw Score for Pati
 * status = #final
 * code = $loinc#81533-2 "PROMIS short form - cognitive function 4a - version 2.0 raw score"
 * subject = Reference(mii-exa-test-data-pro-patient-1)
+* focus = Reference(mii-exa-test-data-pro-diagnose-1)
 * encounter = Reference(mii-exa-test-data-pro-encounter-1)
 * effectiveDateTime = "2024-03-15T12:00:00+01:00"
 * performer = Reference(mii-exa-test-data-pro-patient-1)
@@ -491,6 +538,7 @@ Description: "PRO Observation: PROMIS Cognitive Function SF4a T-Score for Patien
 * status = #final
 * code = $loinc#81538-1 "PROMIS cognitive function - version 2.0 T-score"
 * subject = Reference(mii-exa-test-data-pro-patient-1)
+* focus = Reference(mii-exa-test-data-pro-diagnose-1)
 * encounter = Reference(mii-exa-test-data-pro-encounter-1)
 * effectiveDateTime = "2024-03-15T12:00:00+01:00"
 * performer = Reference(mii-exa-test-data-pro-patient-1)
@@ -526,6 +574,8 @@ Description: "PRO Observation: PHQ-9 Score (spezifisches Profil) for Patient 1 (
 * status = #final
 * code = $loinc#44261-6 "Patient Health Questionnaire 9 item (PHQ-9) total score [Reported]"
 * subject = Reference(mii-exa-test-data-pro-patient-1)
+* focus = Reference(mii-exa-test-data-pro-diagnose-1)
+* note.text = "Selbstauskunft im Rahmen der ambulanten Verlaufskontrolle."
 * encounter = Reference(mii-exa-test-data-pro-encounter-1)
 * effectiveDateTime = "2024-03-15T10:00:00+01:00"
 * performer = Reference(mii-exa-test-data-pro-patient-1)
@@ -558,6 +608,7 @@ Description: "PRO Observation: PHQ-15 Total Score for Patient 1 (medium somatic 
 * status = #final
 * code = $loinc#70273-8 "Patient Health Questionnaire 15 item (PHQ-15) total score [Reported]"
 * subject = Reference(mii-exa-test-data-pro-patient-1)
+* focus = Reference(mii-exa-test-data-pro-diagnose-1)
 * encounter = Reference(mii-exa-test-data-pro-encounter-1)
 * effectiveDateTime = "2024-03-15T10:30:00+01:00"
 * performer = Reference(mii-exa-test-data-pro-patient-1)
@@ -592,6 +643,8 @@ Description: "PRO Observation: WHODAS 2.0 12-Item Simple Sum Score for Patient 1
 * code.coding[+] = $sct#715823002 "WHODAS (World Health Organization Disability Assessment Schedule) 2.0 score"
 * code.coding[+] = $pro-sc#whodas12-simple-sum "WHODAS 2.0 12-Item Simple Sum Score (0-48)"
 * subject = Reference(mii-exa-test-data-pro-patient-1)
+* focus = Reference(mii-exa-test-data-pro-diagnose-1)
+* note.text = "Selbstauskunft im Rahmen der ambulanten Verlaufskontrolle."
 * encounter = Reference(mii-exa-test-data-pro-encounter-1)
 * effectiveDateTime = "2024-03-15T10:45:00+01:00"
 * performer = Reference(mii-exa-test-data-pro-patient-1)
@@ -601,6 +654,7 @@ Description: "PRO Observation: WHODAS 2.0 12-Item Simple Sum Score for Patient 1
 * valueQuantity.code = #{score}
 * interpretation = $v3-ObservationInterpretation#N "Normal"
 * interpretation.text = "Mild disability (simple sum 12 of 48)"
+* method.coding = $pro-sc#whodas12-simple-sum "WHODAS 2.0 12-Item Simple Sum Score (0-48)"
 * method.text = "WHODAS 2.0 12-item simple sum scoring (0-48)"
 * derivedFrom = Reference(mii-exa-test-data-patient-1-pro-whodas12-response)
 * extension[instantiatesCanonical].url = "http://hl7.org/fhir/StructureDefinition/workflow-instantiatesCanonical"

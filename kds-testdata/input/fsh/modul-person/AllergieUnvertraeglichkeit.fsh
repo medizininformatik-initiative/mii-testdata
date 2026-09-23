@@ -9,8 +9,10 @@ Usage: #example
 Description: "AllergyIntolerance: Penicillin-Allergie (Urtikaria, moderat) fuer Patient 1"
 * insert TestDataLabel
 * meta.source = "https://www.charite.de/fhir/kds-testdata"
-* clinicalStatus = http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical#active "Active"
+* clinicalStatus = http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical#inactive "Inactive"
 * verificationStatus = http://terminology.hl7.org/CodeSystem/allergyintolerance-verification#confirmed "Confirmed"
+// Abatement-Extension: Allergie seit 2023 nicht mehr nachweisbar (inaktiv)
+* extension[abatement].valueDateTime = "2023-11-01"
 * type = #allergy
 * category = #medication
 * criticality = #high

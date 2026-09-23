@@ -73,6 +73,25 @@
       "reference": "ImagingStudy/mii-exa-test-data-bildgebungsstudie"
     }
   ],
+  "component": [
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701",
+            "code": "410668003",
+            "display": "Length property (qualifier value)"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 4.2,
+        "code": "mm",
+        "system": "http://unitsofmeasure.org",
+        "unit": "millimeter"
+      }
+    }
+  ],
   "status": "final",
   "code": {
     "coding": [

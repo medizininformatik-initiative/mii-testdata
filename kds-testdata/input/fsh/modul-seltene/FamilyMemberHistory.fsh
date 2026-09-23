@@ -14,8 +14,15 @@ Description: "Familienanamnese: Mother with Marfan syndrome - all MS elements in
 * extension[+].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/von-seltene-betroffen"
 * extension[=].valueCodeableConcept = $sct#373066001 "Yes"
 * status = #completed
+* date = "2025-03-10"
 * patient = Reference(mii-exa-test-data-seltene-patient-1)
-* relationship = $sct#65656005 "Natural mother"
+* relationship.coding[snomed] = $sct#65656005 "Natural mother"
+* relationship.coding[snomed].extension[0].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/mii-ex-molgen-verwandtschaftsgrad"
+* relationship.coding[snomed].extension[0].valueCoding = $sct#125678001 "First degree blood relative (person)"
+* relationship.coding[snomed].extension[1].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/mii-ex-molgen-verwandtschaftsverhaeltnis"
+* relationship.coding[snomed].extension[1].valueCoding = $sct#13646006 "Natural parent (person)"
+* relationship.coding[snomed].extension[2].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/mii-ex-molgen-familiare-linie"
+* relationship.coding[snomed].extension[2].valueCoding = $sct#72705000 "Mother (person)"
 * sex = http://hl7.org/fhir/administrative-gender#female
 * bornDate = "1960"
 * deceasedBoolean = false
@@ -66,3 +73,24 @@ Description: "Familienanamnese: Father not affected - tests vonSEBetroffen=No, d
 * condition[=].onsetAge.unit = "years"
 * condition[=].onsetAge.system = $ucum
 * condition[=].onsetAge.code = #a
+
+// Familienanamnese 3: Bruder - tests age[x] (statt born[x]), date, reasonCode,
+// reasonReference (Anlass: gesicherte Marfan-Diagnose des Patienten)
+Instance: mii-exa-test-data-patient-3-seltene-familienanamnese-3
+InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-familienanamnese
+Usage: #example
+Description: "Familienanamnese: Bruder, bisher nicht betroffen - tests age[x], date, reasonCode, reasonReference"
+* insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
+* extension[+].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/von-seltene-betroffen"
+* extension[=].valueCodeableConcept = $sct#373067005 "No"
+* status = #completed
+* date = "2025-03-10"
+* patient = Reference(mii-exa-test-data-seltene-patient-1)
+* reasonCode.coding[+] = $sct#19346006 "Marfan syndrome"
+* reasonCode.coding[+] = $icd-10-gm#Q87.4 "Marfan-Syndrom"
+* reasonCode.coding[=].version = "2025"
+* reasonReference = Reference(mii-exa-test-data-patient-3-seltene-clinical-diagnosis-1)
+* relationship = $sct#60614009 "Natural brother"
+* sex = http://hl7.org/fhir/administrative-gender#male
+* ageAge = 27 'a' "Jahre"

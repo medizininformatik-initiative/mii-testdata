@@ -20,6 +20,31 @@ Description: "Patient: Patient-1"
 * insert AddGender(male)
 * birthDate = "1977-05-24"
 * deceasedDateTime = "2024-02-22"
+// MS-Extensions (explizite URLs; Sub-Extensions per Index, da die
+// Cross-Version-/Basis-Extensions nicht alle im BOM aufloesbar sind)
+* extension[+].url = "http://hl7.org/fhir/StructureDefinition/patient-birthPlace"
+* extension[=].valueAddress.city = "Potsdam"
+* extension[=].valueAddress.country = "DE"
+* extension[+].url = "http://hl7.org/fhir/StructureDefinition/patient-citizenship"
+* extension[=].extension[0].url = "code"
+* extension[=].extension[0].valueCodeableConcept = $iso3166#DE "Deutschland"
+* extension[=].extension[1].url = "period"
+* extension[=].extension[1].valuePeriod.start = "1977-05-24"
+* extension[+].url = "http://hl7.org/fhir/StructureDefinition/patient-nationality"
+* extension[=].extension[0].url = "code"
+* extension[=].extension[0].valueCodeableConcept = $iso3166#DE "Deutschland"
+* extension[=].extension[1].url = "period"
+* extension[=].extension[1].valuePeriod.start = "1977-05-24"
+* extension[+].url = "http://hl7.org/fhir/StructureDefinition/individual-recordedSexOrGender"
+* extension[=].extension[0].url = "value"
+* extension[=].extension[0].valueCodeableConcept = $sct#248153007 "Male (finding)"
+* extension[=].extension[1].url = "type"
+* extension[=].extension[1].valueCodeableConcept = $loinc#76689-9 "Sex assigned at birth"
+* extension[=].extension[2].url = "acquisitionDate"
+* extension[=].extension[2].valueDateTime = "1977-05-24"
+// Verknuepfung zum pseudonymisierten Datensatz desselben Patienten
+* link.other = Reference(mii-exa-test-data-patient-pseudonym-1)
+* link.type = #seealso
 * address[Strassenanschrift]
   * extension
     * url = "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-precinct"

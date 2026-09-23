@@ -17,6 +17,9 @@ Description: "MedicationAdministration: Dalbavancin 1500 mg als 30-minütige Inf
 * effectivePeriod.start = "2024-02-16T10:20:00.000+01:00"
 * effectivePeriod.end = "2024-02-16T10:50:00.000+01:00"
 * request = Reference(mii-exa-test-data-patient-1-medrequest-1)
+* performer.actor = Reference(mii-exa-test-data-practitioner-physician-1)
+* reasonCode = http://terminology.hl7.org/CodeSystem/reason-medication-given#b "Given as Ordered"
+* reasonReference = Reference(mii-exa-test-data-patient-1-diagnose-1)
 * note.text = "wie angeordnet verabreicht"
 * dosage.text = "Dalbavancin 1500 mg als 30-minütige Infusion"
 * dosage.site.coding[SNOMED] = $sct#789218009 "Structure of dorsum of left hand (body structure)"
@@ -62,7 +65,12 @@ Description: "MedicationAdministration: Morphin 10 mg oral bei Schmerzen"
 * identifier[0].value = "MA_0000003"
 * status = #completed
 * category = $medication-admin-category#inpatient "Inpatient"
-* medicationReference = Reference(mii-exa-test-data-medication-morphin)
+// medicationCodeableConcept-Variante (statt medicationReference):
+// PZN- und ATC-Codings direkt in der Gabe-Dokumentation
+* medicationCodeableConcept.coding[Pharmazentralnummer] = $pzn#02746517 "MORPHIN Merck Tropfen 0,5 %"
+* medicationCodeableConcept.coding[atcClassDe] = $atc|2023#N02AA01 "Morphin"
+* medicationCodeableConcept.coding[atcClassEn] = $atc-who#N02AA01 "morphine"
+* medicationCodeableConcept.text = "Morphin 10 mg oral"
 * subject = Reference(mii-exa-test-data-patient-2)
 * context = Reference(mii-exa-test-data-patient-2-encounter-1)
 * effectiveDateTime = "2024-03-06T14:00:00+01:00"

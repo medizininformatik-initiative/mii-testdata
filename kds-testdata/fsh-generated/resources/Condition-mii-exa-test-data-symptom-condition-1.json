@@ -47,7 +47,8 @@
       {
         "code": "G44.2",
         "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
-        "display": "Spannungskopfschmerz"
+        "display": "Spannungskopfschmerz",
+        "version": "2026"
       }
     ],
     "text": "Chronische Spannungskopfschmerzen"

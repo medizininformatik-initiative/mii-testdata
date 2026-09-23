@@ -24,6 +24,11 @@
       ]
     }
   ],
+  "note": [
+    {
+      "text": "Patient waehrend des stationaeren Aufenthalts verstorben."
+    }
+  ],
   "status": "final",
   "code": {
     "coding": [
@@ -44,5 +49,8 @@
         "system": "https://www.medizininformatik-initiative.de/fhir/core/modul-person/CodeSystem/Vitalstatus"
       }
     ]
+  },
+  "encounter": {
+    "reference": "Encounter/mii-exa-test-data-patient-1-encounter-1"
   }
 }

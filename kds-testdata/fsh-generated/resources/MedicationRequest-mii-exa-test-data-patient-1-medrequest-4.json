@@ -20,12 +20,26 @@
       "value": "MO_0000004"
     }
   ],
+  "basedOn": [
+    {
+      "reference": "MedicationRequest/mii-exa-test-data-patient-1-medrequest-3"
+    }
+  ],
   "dosageInstruction": [
     {
       "timing": {
         "event": [
           "2024-02-20T10:00:00+01:00"
-        ]
+        ],
+        "repeat": {
+          "when": [
+            "MORN"
+          ],
+          "frequency": 1,
+          "period": 1,
+          "periodUnit": "d",
+          "offset": 60
+        }
       },
       "doseAndRate": [
         {

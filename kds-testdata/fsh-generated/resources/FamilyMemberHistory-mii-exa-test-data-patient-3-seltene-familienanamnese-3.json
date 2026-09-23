@@ -1,0 +1,81 @@
+{
+  "resourceType": "FamilyMemberHistory",
+  "id": "mii-exa-test-data-patient-3-seltene-familienanamnese-3",
+  "meta": {
+    "security": [
+      {
+        "code": "HTEST",
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "display": "test health data"
+      }
+    ],
+    "source": "https://www.charite.de/fhir/kds-testdata",
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-familienanamnese"
+    ]
+  },
+  "extension": [
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/von-seltene-betroffen",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "373067005",
+            "system": "http://snomed.info/sct",
+            "display": "No"
+          }
+        ]
+      }
+    }
+  ],
+  "reasonCode": [
+    {
+      "coding": [
+        {
+          "code": "19346006",
+          "system": "http://snomed.info/sct",
+          "display": "Marfan syndrome"
+        },
+        {
+          "code": "Q87.4",
+          "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+          "display": "Marfan-Syndrom",
+          "version": "2025"
+        }
+      ]
+    }
+  ],
+  "reasonReference": [
+    {
+      "reference": "Condition/mii-exa-test-data-patient-3-seltene-clinical-diagnosis-1"
+    }
+  ],
+  "relationship": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "60614009",
+        "display": "Natural brother"
+      }
+    ]
+  },
+  "status": "completed",
+  "date": "2025-03-10",
+  "patient": {
+    "reference": "Patient/mii-exa-test-data-seltene-patient-1"
+  },
+  "sex": {
+    "coding": [
+      {
+        "code": "male",
+        "system": "http://hl7.org/fhir/administrative-gender"
+      }
+    ]
+  },
+  "ageAge": {
+    "value": 27,
+    "code": "a",
+    "system": "http://unitsofmeasure.org",
+    "unit": "Jahre"
+  }
+}

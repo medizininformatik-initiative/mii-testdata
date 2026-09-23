@@ -46,7 +46,8 @@
       {
         "code": "E34.4",
         "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
-        "display": "Konstitutioneller Hochwuchs"
+        "display": "Konstitutioneller Hochwuchs",
+        "version": "2026"
       },
       {
         "code": "MONDO:0007064",

@@ -21,6 +21,15 @@
   ],
   "section": [
     {
+      "author": [
+        {
+          "reference": "Practitioner/mii-exa-test-data-practitioner-physician-1"
+        }
+      ],
+      "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Mammographie beidseits: Mikrokalk im oberen aeusseren Quadranten links, Herdbefund 4,2 mm.</div>"
+      },
       "entry": [
         {
           "reference": "DiagnosticReport/mii-exa-test-data-befundbericht"

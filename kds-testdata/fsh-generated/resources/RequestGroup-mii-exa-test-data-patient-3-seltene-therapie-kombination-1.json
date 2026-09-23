@@ -23,6 +23,7 @@
       "valueCodeableConcept": {
         "coding": [
           {
+            "system": "https://www.cebm.ox.ac.uk/resources/levels-of-evidence",
             "code": "1A",
             "display": "Evidenzgrad 1A"
           }

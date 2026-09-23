@@ -41,6 +41,13 @@
   ],
   "component": [
     {
+      "valueQuantity": {
+        "value": 30,
+        "code": "{pack-years}",
+        "system": "http://unitsofmeasure.org",
+        "unit": "{pack-years}",
+        "comparator": ">="
+      },
       "code": {
         "coding": [
           {
@@ -50,12 +57,6 @@
             "display": "Cigarette pack-years (observable entity)"
           }
         ]
-      },
-      "valueQuantity": {
-        "value": 30,
-        "code": "{pack-years}",
-        "system": "http://unitsofmeasure.org",
-        "unit": "{pack-years}"
       }
     },
     {
@@ -110,6 +111,9 @@
   "status": "final",
   "subject": {
     "reference": "Patient/mii-exa-test-data-kardiologie-patient-1"
+  },
+  "encounter": {
+    "reference": "Encounter/mii-exa-test-data-kardiologie-encounter-1"
   },
   "effectiveDateTime": "2025-03-11T10:40:00+01:00",
   "valueCodeableConcept": {

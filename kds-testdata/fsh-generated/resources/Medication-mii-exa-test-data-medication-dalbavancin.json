@@ -40,6 +40,25 @@
   },
   "ingredient": [
     {
+      "extension": [
+        {
+          "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstofftyp",
+          "valueCoding": {
+            "code": "IN",
+            "system": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/wirkstofftyp",
+            "display": "ingredient"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "ingredientUri",
+              "valueUri": "http://fhir.de/CodeSystem/ask#33395"
+            }
+          ],
+          "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstoffrelation"
+        }
+      ],
       "itemCodeableConcept": {
         "coding": [
           {
@@ -61,7 +80,8 @@
             "code": "703917001",
             "display": "Dalbavancin (substance)"
           }
-        ]
+        ],
+        "text": "Dalbavancin"
       }
     }
   ]

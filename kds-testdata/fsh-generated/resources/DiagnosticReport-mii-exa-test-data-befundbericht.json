@@ -55,6 +55,15 @@
       ]
     }
   ],
+  "presentedForm": [
+    {
+      "contentType": "application/pdf",
+      "language": "de",
+      "url": "https://dms.charite.de/kds-testdata/bildgebung/patient-1/befundbericht-1.pdf",
+      "title": "Mammographie-Befundbericht (PDF)",
+      "creation": "2024-07-19T12:03:30+02:00"
+    }
+  ],
   "extension": [
     {
       "url": "http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo",

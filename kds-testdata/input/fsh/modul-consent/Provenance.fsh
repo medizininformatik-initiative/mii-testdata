@@ -17,6 +17,8 @@ Description: "Provenance: Herkunft der Einwilligung von Patient 1 (aus gescannte
 * entity.role = #source
 * entity.what = Reference(mii-exa-test-data-patient-1-consent-docref-1)
 * signature[+].type = urn:iso-astm:E1762-95:2013#1.2.840.10065.1.12.1.7 "Consent Signature"
+* signature[=].extension[where].url = "http://fhir.de/ConsentManagement/StructureDefinition/SignatureLocation"
+* signature[=].extension[where].valueString = "Berlin, Charité Campus Mitte"
 * signature[=].when = "2024-02-23T12:00:00+01:00"
 * signature[=].who = Reference(mii-exa-test-data-patient-1)
 * signature[=].data = "RGllcyBpc3QgZWluIFBsYXR6aGFsdGVyIGZ1ZXIgZWluZSBnZXNjYW5udGUgVW50ZXJzY2hyaWZ0Lg=="

@@ -61,6 +61,7 @@
 [mii-exa-test-data-behandlungsempfehlung]: CarePlan-mii-exa-test-data-behandlungsempfehlung.html
 [mii-exa-test-data-bildgebung-diagnose-1]: Condition-mii-exa-test-data-bildgebung-diagnose-1.html
 [mii-exa-test-data-bildgebung-encounter-1]: Encounter-mii-exa-test-data-bildgebung-encounter-1.html
+[mii-exa-test-data-bildgebung-endpoint-1]: Endpoint-mii-exa-test-data-bildgebung-endpoint-1.html
 [mii-exa-test-data-bildgebung-labobs-1]: Observation-mii-exa-test-data-bildgebung-labobs-1.html
 [mii-exa-test-data-bildgebung-medrequest-1]: MedicationRequest-mii-exa-test-data-bildgebung-medrequest-1.html
 [mii-exa-test-data-bildgebung-patient-1]: Patient-mii-exa-test-data-bildgebung-patient-1.html
@@ -493,6 +494,7 @@
 [mii-exa-test-data-patient-1-consent-1]: Consent-mii-exa-test-data-patient-1-consent-1.html
 [mii-exa-test-data-patient-1-consent-docref-1]: DocumentReference-mii-exa-test-data-patient-1-consent-docref-1.html
 [mii-exa-test-data-patient-1-consent-provenance-1]: Provenance-mii-exa-test-data-patient-1-consent-provenance-1.html
+[mii-exa-test-data-patient-1-consent-qr-1]: QuestionnaireResponse-mii-exa-test-data-patient-1-consent-qr-1.html
 [mii-exa-test-data-patient-1-diagnose-1]: Condition-mii-exa-test-data-patient-1-diagnose-1.html
 [mii-exa-test-data-patient-1-diagnose-2]: Condition-mii-exa-test-data-patient-1-diagnose-2.html
 [mii-exa-test-data-patient-1-dokument-1]: DocumentReference-mii-exa-test-data-patient-1-dokument-1.html
@@ -609,6 +611,8 @@
 [mii-exa-test-data-patient-1-labobs-5]: Observation-mii-exa-test-data-patient-1-labobs-5.html
 [mii-exa-test-data-patient-1-labobs-6]: Observation-mii-exa-test-data-patient-1-labobs-6.html
 [mii-exa-test-data-patient-1-labobs-7]: Observation-mii-exa-test-data-patient-1-labobs-7.html
+[mii-exa-test-data-patient-1-labobs-8]: Observation-mii-exa-test-data-patient-1-labobs-8.html
+[mii-exa-test-data-patient-1-labobs-9]: Observation-mii-exa-test-data-patient-1-labobs-9.html
 [mii-exa-test-data-patient-1-labreport-1]: DiagnosticReport-mii-exa-test-data-patient-1-labreport-1.html
 [mii-exa-test-data-patient-1-labrequest-1]: ServiceRequest-mii-exa-test-data-patient-1-labrequest-1.html
 [mii-exa-test-data-patient-1-medadmin-1]: MedicationAdministration-mii-exa-test-data-patient-1-medadmin-1.html
@@ -641,6 +645,7 @@
 [mii-exa-test-data-patient-1-pro-promis29-depression-tscore]: Observation-mii-exa-test-data-patient-1-pro-promis29-depression-tscore.html
 [mii-exa-test-data-patient-1-pro-promis29-fatigue-tscore]: Observation-mii-exa-test-data-patient-1-pro-promis29-fatigue-tscore.html
 [mii-exa-test-data-patient-1-pro-promis29-pain-intensity]: Observation-mii-exa-test-data-patient-1-pro-promis29-pain-intensity.html
+[mii-exa-test-data-patient-1-pro-promis29-response]: QuestionnaireResponse-mii-exa-test-data-patient-1-pro-promis29-response.html
 [mii-exa-test-data-patient-1-pro-promis29-social-function-tscore]: Observation-mii-exa-test-data-patient-1-pro-promis29-social-function-tscore.html
 [mii-exa-test-data-patient-1-pro-whodas12-response]: QuestionnaireResponse-mii-exa-test-data-patient-1-pro-whodas12-response.html
 [mii-exa-test-data-patient-1-pro-whodas12-score]: Observation-mii-exa-test-data-patient-1-pro-whodas12-score.html
@@ -745,13 +750,16 @@
 [mii-exa-test-data-patient-3-seltene-blutgruppe-1]: Observation-mii-exa-test-data-patient-3-seltene-blutgruppe-1.html
 [mii-exa-test-data-patient-3-seltene-bmi-1]: Observation-mii-exa-test-data-patient-3-seltene-bmi-1.html
 [mii-exa-test-data-patient-3-seltene-clinical-diagnosis-1]: Condition-mii-exa-test-data-patient-3-seltene-clinical-diagnosis-1.html
+[mii-exa-test-data-patient-3-seltene-clinical-diagnosis-2]: Condition-mii-exa-test-data-patient-3-seltene-clinical-diagnosis-2.html
 [mii-exa-test-data-patient-3-seltene-clinical-impression-1]: ClinicalImpression-mii-exa-test-data-patient-3-seltene-clinical-impression-1.html
 [mii-exa-test-data-patient-3-seltene-consanguinity-1]: Observation-mii-exa-test-data-patient-3-seltene-consanguinity-1.html
 [mii-exa-test-data-patient-3-seltene-familienanamnese-1]: FamilyMemberHistory-mii-exa-test-data-patient-3-seltene-familienanamnese-1.html
 [mii-exa-test-data-patient-3-seltene-familienanamnese-2]: FamilyMemberHistory-mii-exa-test-data-patient-3-seltene-familienanamnese-2.html
+[mii-exa-test-data-patient-3-seltene-familienanamnese-3]: FamilyMemberHistory-mii-exa-test-data-patient-3-seltene-familienanamnese-3.html
 [mii-exa-test-data-patient-3-seltene-geburtsgewicht-1]: Observation-mii-exa-test-data-patient-3-seltene-geburtsgewicht-1.html
 [mii-exa-test-data-patient-3-seltene-geburtslaenge-1]: Observation-mii-exa-test-data-patient-3-seltene-geburtslaenge-1.html
 [mii-exa-test-data-patient-3-seltene-genetic-diagnosis-1]: Condition-mii-exa-test-data-patient-3-seltene-genetic-diagnosis-1.html
+[mii-exa-test-data-patient-3-seltene-genetic-diagnosis-2]: Condition-mii-exa-test-data-patient-3-seltene-genetic-diagnosis-2.html
 [mii-exa-test-data-patient-3-seltene-gestationsalter-1]: Observation-mii-exa-test-data-patient-3-seltene-gestationsalter-1.html
 [mii-exa-test-data-patient-3-seltene-hpo-assessment-1]: Observation-mii-exa-test-data-patient-3-seltene-hpo-assessment-1.html
 [mii-exa-test-data-patient-3-seltene-hpo-assessment-2]: Observation-mii-exa-test-data-patient-3-seltene-hpo-assessment-2.html
@@ -920,7 +928,10 @@
 [mii-exa-test-data-pro-encounter-1]: Encounter-mii-exa-test-data-pro-encounter-1.html
 [mii-exa-test-data-pro-patient-1]: Patient-mii-exa-test-data-pro-patient-1.html
 [mii-exa-test-data-radiologische-beobachtung]: Observation-mii-exa-test-data-radiologische-beobachtung.html
+[mii-exa-test-data-radiologische-beobachtung-2]: Observation-mii-exa-test-data-radiologische-beobachtung-2.html
+[mii-exa-test-data-radiologische-beobachtung-3]: Observation-mii-exa-test-data-radiologische-beobachtung-3.html
 [mii-exa-test-data-radiologische-messung-1]: Observation-mii-exa-test-data-radiologische-messung-1.html
+[mii-exa-test-data-radiologische-messung-2]: Observation-mii-exa-test-data-radiologische-messung-2.html
 [mii-exa-test-data-seltene-encounter-1]: Encounter-mii-exa-test-data-seltene-encounter-1.html
 [mii-exa-test-data-seltene-labobs-1]: Observation-mii-exa-test-data-seltene-labobs-1.html
 [mii-exa-test-data-seltene-molgen-befundbericht-1]: DiagnosticReport-mii-exa-test-data-seltene-molgen-befundbericht-1.html
@@ -944,6 +955,7 @@
 [mii-exa-test-data-soziodemographie-schuljahre-1]: Observation-mii-exa-test-data-soziodemographie-schuljahre-1.html
 [mii-exa-test-data-soziodemographie-schwerbehindertenausweis-1]: Observation-mii-exa-test-data-soziodemographie-schwerbehindertenausweis-1.html
 [mii-exa-test-data-soziodemographie-schwerbehindertenausweis-2]: Observation-mii-exa-test-data-soziodemographie-schwerbehindertenausweis-2.html
+[mii-exa-test-data-soziodemographie-schwerbehindertenausweis-3]: Observation-mii-exa-test-data-soziodemographie-schwerbehindertenausweis-3.html
 [mii-exa-test-data-soziodemographie-soziooekonomische-faktoren-1]: Observation-mii-exa-test-data-soziodemographie-soziooekonomische-faktoren-1.html
 [mii-exa-test-data-soziodemographie-vertrauensperson-1]: Observation-mii-exa-test-data-soziodemographie-vertrauensperson-1.html
 [mii-exa-test-data-studie-einschluss-anfrage-1]: ServiceRequest-mii-exa-test-data-studie-einschluss-anfrage-1.html

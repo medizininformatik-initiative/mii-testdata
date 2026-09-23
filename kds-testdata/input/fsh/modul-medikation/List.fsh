@@ -8,10 +8,14 @@ Description: "List: Aufnahmemedikation für Patient 1"
 //* meta.profile[0] = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/medikationsliste|2.0.0"
 * code.coding[medCode] = $list-example-use-codes#medications
 * code.coding[contextCode] = $FallkontextBeiDokumentenerstellung#E210
+* identifier.system = "https://www.charite.de/fhir/sid/Medikationslisten"
+* identifier.value = "ML_0000001"
 * status = #current
 * mode = #snapshot
 * title = "Aufnahmemedikation"
+* date = "2024-02-14T10:00:00+01:00"
 * subject = Reference(mii-exa-test-data-patient-1)
+* encounter = Reference(mii-exa-test-data-patient-1-encounter-1)
 * entry.item = Reference(mii-exa-test-data-patient-1-medstatement-1)
 
 Instance: mii-exa-test-data-patient-1-list-stat-aufenthalt

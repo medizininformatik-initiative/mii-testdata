@@ -43,6 +43,11 @@
       }
     ]
   },
+  "parent": [
+    {
+      "reference": "Specimen/mii-exa-test-data-patient-3-specimen-3"
+    }
+  ],
   "collection": {
     "bodySite": {
       "coding": [

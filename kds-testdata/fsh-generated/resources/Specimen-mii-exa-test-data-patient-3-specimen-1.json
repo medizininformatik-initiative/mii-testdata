@@ -15,6 +15,12 @@
     ]
   },
   "collection": {
+    "extension": [
+      {
+        "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/EinstellungBlutversorgung",
+        "valueDateTime": "2022-03-24T12:30:00+01:00"
+      }
+    ],
     "bodySite": {
       "coding": [
         {

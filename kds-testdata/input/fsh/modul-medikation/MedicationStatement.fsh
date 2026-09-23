@@ -11,18 +11,30 @@ Description: "MedicationStatement: ASS 100 mg 1x täglich mittags eine Tablette 
 * status = #active
 * category.coding[usageCategory] = $medication-statement-category#outpatient
 * category.coding[contextCode] = $FallkontextBeiDokumentenerstellung#E210 "stationäre Aufnahme"
-* medicationReference = Reference(mii-exa-test-data-medication-ass-100)
+// medicationCodeableConcept-Variante (statt medicationReference):
+// PZN- und ATC-Codings direkt in der Medikationsangabe
+* medicationCodeableConcept.coding[Pharmazentralnummer] = $pzn#06312077 "ASS 100 - 1a Pharma TAH Tabletten"
+* medicationCodeableConcept.coding[atcClassDe] = $atc|2023#B01AC06 "Acetylsalicylsäure"
+* medicationCodeableConcept.coding[atcClassEn] = $atc-who#B01AC06 "acetylsalicylic acid"
+* medicationCodeableConcept.text = "ASS 100 mg Tabletten"
 * subject = Reference(mii-exa-test-data-patient-1)
 * context = Reference(mii-exa-test-data-patient-1-encounter-1)
 * effectivePeriod.start = "2020-08-30"
 * dateAsserted = "2024-02-14"
 * informationSource = Reference(mii-exa-test-data-patient-1)
 * reasonCode = $sct#787930001 "Direct thrombin inhibitor prophylaxis indicated (situation)"
+* note.text = "Dauermedikation, Einnahme 30 Minuten nach dem Mittagessen."
+* dosage.sequence = 1
 * dosage.route = $standardterms#20053000 "Oral use"
+* dosage.timing.repeat.boundsPeriod.start = "2020-08-30"
+* dosage.timing.repeat.boundsPeriod.end = "2024-02-22"
 * dosage.timing.repeat.frequency = 1
+* dosage.timing.repeat.frequencyMax = 2
 * dosage.timing.repeat.period = 1
 * dosage.timing.repeat.periodUnit = #d
-* dosage.timing.repeat.when = #CD
+// PCM + offset statt CD: tim-9 erlaubt offset nicht bei C*-Codes
+* dosage.timing.repeat.when = #PCM
+* dosage.timing.repeat.offset = 30
 * dosage.doseAndRate.doseQuantity = 100 $ucum#mg "mg"
 
 Instance: mii-exa-test-data-patient-1-medstatement-2
@@ -50,6 +62,18 @@ Description: "MedicationStatement: Dalbavancin 1500 mg als 30-minütige Infusion
 * dosage.route.coding[EDQM] = $standardterms#20045000 "Intravenous use"
 * dosage.route.coding[SNOMED] = $sct#47625008 "Intravenous route (qualifier value)"
 * dosage.timing.event = "2024-02-16T10:20:00+01:00"
+// Strukturiertes Wiederholungsschema (Dalbavancin q14d, 30-60 min Infusionsdauer)
+* dosage.timing.repeat.boundsDuration = 8 'wk' "Wochen"
+* dosage.timing.repeat.count = 2
+* dosage.timing.repeat.countMax = 3
+* dosage.timing.repeat.duration = 30
+* dosage.timing.repeat.durationMax = 60
+* dosage.timing.repeat.durationUnit = #min
+* dosage.timing.repeat.frequency = 1
+* dosage.timing.repeat.period = 14
+* dosage.timing.repeat.periodMax = 16
+* dosage.timing.repeat.periodUnit = #d
+* dosage.timing.repeat.dayOfWeek = #fri
 * dosage.doseAndRate.doseQuantity = 1500 $ucum#mg "mg"
 * dosage.doseAndRate.rateRatio.numerator = 1500 $ucum#mg "mg"
 * dosage.doseAndRate.rateRatio.denominator = 30 $ucum#min "Minuten"
@@ -75,8 +99,15 @@ Description: "MedicationStatement: Propofol 5 mg/min intravenös"
 * dosage.route.coding[EDQM] = $standardterms#20045000 "Intravenous use"
 * dosage.route.coding[SNOMED] = $sct#47625008 "Intravenous route (qualifier value)"
 * dosage.timing.event = "2024-02-20T09:55:00+01:00"
-* dosage.doseAndRate.doseQuantity = 200 $ucum#mg "mg"
-* dosage.doseAndRate.rateQuantity = 5 $ucum#mg/min
+* dosage.timing.repeat.timeOfDay = "09:55:00"
+// boundsRange-Variante: Perfusor-Laufzeit 1-2 Stunden
+* dosage.timing.repeat.boundsRange.low = 1 'h' "Stunde"
+* dosage.timing.repeat.boundsRange.high = 2 'h' "Stunden"
+* dosage.doseAndRate[0].doseQuantity = 200 $ucum#mg "mg"
+* dosage.doseAndRate[0].rateQuantity = 5 $ucum#mg/min "mg/min"
+// rateRange-Variante: Perfusor-Laufrate 4-6 mg/min
+* dosage.doseAndRate[1].rateRange.low = 4 $ucum#mg/min "mg/min"
+* dosage.doseAndRate[1].rateRange.high = 6 $ucum#mg/min "mg/min"
 
 // ============================================================================
 // Patient-2 = durchgehend UNSTRUKTURIERTE Medikationsangaben:

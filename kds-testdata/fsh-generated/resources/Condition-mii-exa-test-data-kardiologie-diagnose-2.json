@@ -17,6 +17,16 @@
   "code": {
     "coding": [
       {
+        "extension": [
+          {
+            "url": "http://fhir.de/StructureDefinition/seitenlokalisation",
+            "valueCoding": {
+              "code": "L",
+              "system": "https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_ICD_SEITENLOKALISATION",
+              "display": "links"
+            }
+          }
+        ],
         "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
         "code": "I63.4",
         "display": "Hirninfarkt durch Embolie zerebraler Arterien",
@@ -36,6 +46,14 @@
       }
     ]
   },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/condition-related",
+      "valueReference": {
+        "reference": "Condition/mii-exa-test-data-kardiologie-diagnose-1"
+      }
+    }
+  ],
   "recorder": {
     "display": "Facharzt fuer Neurologie"
   },
@@ -65,6 +83,9 @@
   },
   "subject": {
     "reference": "Patient/mii-exa-test-data-kardiologie-patient-1"
+  },
+  "encounter": {
+    "reference": "Encounter/mii-exa-test-data-kardiologie-encounter-1"
   },
   "onsetDateTime": "2023-08-02",
   "recordedDate": "2025-03-10"

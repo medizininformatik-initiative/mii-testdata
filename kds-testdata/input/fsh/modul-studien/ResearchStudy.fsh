@@ -36,6 +36,10 @@ Description: "ResearchStudy: MII-BIOMARKER-2024 - Biomarker bei endokrinen Erkra
 // Kernattribute
 * title = "Biomarker-basierte Verlaufsprognose endokriner Erkrankungen"
 * status = #active
+// Teilstudie eines uebergeordneten Registerprogramms (logische Referenz)
+* partOf.identifier.system = "https://www.medizininformatik-initiative.de/fhir/sid/drks"
+* partOf.identifier.value = "DRKS00030001"
+* partOf.display = "MII-ENDO-REGISTER Rahmenprogramm"
 * category = $research-study-phase#phase-2
 * focus = $sct#362969004 "Disorder of endocrine system (disorder)"
 * focus.text = "Endokrine Erkrankungen"

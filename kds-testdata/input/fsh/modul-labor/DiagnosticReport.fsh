@@ -7,12 +7,29 @@ Description: "DiagnosticReport: Laborbericht für Patient 1"
 * meta.source = "https://www.charite.de/fhir/kds-testdata"
 //* meta.profile[0] = "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/DiagnosticReportLab|1.0.7-alpha1"
 * insert AddDiagnosticReport(LDR_000001, mii-exa-test-data-patient-1)
+* subject.identifier.system = "https://www.charite.de/fhir/sid/patientenidentifikation"
+* subject.identifier.value = "808439625"
 * basedOn = Reference(mii-exa-test-data-patient-1-labrequest-1)
+* basedOn.identifier.system = "https://www.charite.de/fhir/sid/Laboranforderungen"
+* basedOn.identifier.value = "LA_000001"
 * encounter = Reference(mii-exa-test-data-patient-1-encounter-1)
+* encounter.identifier.system = "https://www.charite.de/fhir/NamingSystem/Aufnahmenummern"
+* encounter.identifier.value = "MII_0000001"
 * effectiveDateTime = "2024-02-15T12:00:00+01:00"
+// Hinweis: Extension auf effectiveDateTime landet in _effectiveDateTime (JSON);
+// ms-coverage.py erkennt sie dort nicht (bekannter False-Negative der Heuristik).
+* effectiveDateTime.extension[+].url = "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum"
+* effectiveDateTime.extension[=].valueCoding = $sct#399445004 "Specimen collection date (observable entity)"
 * issued = "2024-02-15T12:00:00+01:00"
 * performer = Reference(mii-exa-test-data-organization-labor-berlin)
-// * specimen = Reference(mii-exa-test-data-patient-1-specimen-1)
+* performer.identifier.system = "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"
+* performer.identifier.value = "Labor-Berlin"
+// Referenz auf die Bioprobe im Biobank-Modulbundle: absolute URL (= fullUrl
+// des Specimen dort) + Identifier als logische Referenz
+* specimen.reference = "https://www.medizininformatik-initiative.de/Specimen/mii-exa-test-data-patient-1-specimen-1"
+* specimen.identifier.system = "https://www.charite.de/fhir/sid/Bioproben"
+* specimen.identifier.value = "BP_000001"
+* specimen.display = "EDTA-Blut Patient 1"
 * result[0] = Reference(mii-exa-test-data-patient-1-labobs-1)
 * result[1] = Reference(mii-exa-test-data-patient-1-labobs-2)
 * result[2] = Reference(mii-exa-test-data-patient-1-labobs-3)

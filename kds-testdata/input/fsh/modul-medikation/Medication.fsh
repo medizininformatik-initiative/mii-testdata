@@ -23,10 +23,18 @@ Description: "Medication: Dalbavancin"
 * code.coding[Pharmazentralnummer] = $pzn#15205222 "XYDALBA"
 * code.coding[atcClassDe] = $atc|2023#J01XA04 "Dalbavancin"
 * form.coding[EDQM] = $standardterms#50043000 "Powder for concentrate for solution for infusion"
+// MS-Extensions am ingredient: Wirkstofftyp (Coding) und Wirkstoffrelation
+// (komplex, ingredientUri auf die ASK-Substanz)
+* ingredient.extension[0].url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstofftyp"
+* ingredient.extension[0].valueCoding = https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/wirkstofftyp#IN "ingredient"
+* ingredient.extension[1].url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstoffrelation"
+* ingredient.extension[1].extension[0].url = "ingredientUri"
+* ingredient.extension[1].extension[0].valueUri = "http://fhir.de/CodeSystem/ask#33395"
 * ingredient.itemCodeableConcept.coding[ASK] = $ask#33395 "Dalbavancin"
 * ingredient.itemCodeableConcept.coding[UNII] = $unii#808UI9MS5K
 * ingredient.itemCodeableConcept.coding[CAS] = $cas#171500-79-1
 * ingredient.itemCodeableConcept.coding[SNOMED] = $sct#703917001 "Dalbavancin (substance)"
+* ingredient.itemCodeableConcept.text = "Dalbavancin"
 
 Instance: mii-exa-test-data-medication-propofol
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication

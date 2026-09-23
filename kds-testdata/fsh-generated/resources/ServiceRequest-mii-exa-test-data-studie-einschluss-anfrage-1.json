@@ -36,6 +36,14 @@
       ]
     }
   ],
+  "supportingInfo": [
+    {
+      "reference": "ResearchStudy/mii-exa-test-data-studien-studie-1"
+    },
+    {
+      "reference": "ResearchSubject/mii-exa-test-data-studien-proband-1"
+    }
+  ],
   "note": [
     {
       "text": "Patient erfüllt Einschlusskriterien für MII-BIOMARKER-2024 Studie."

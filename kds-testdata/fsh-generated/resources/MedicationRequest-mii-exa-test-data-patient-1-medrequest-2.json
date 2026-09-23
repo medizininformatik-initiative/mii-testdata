@@ -25,7 +25,26 @@
       "timing": {
         "event": [
           "2024-02-16"
-        ]
+        ],
+        "repeat": {
+          "boundsRange": {
+            "low": {
+              "system": "http://unitsofmeasure.org",
+              "value": 2,
+              "code": "wk",
+              "unit": "Wochen"
+            },
+            "high": {
+              "system": "http://unitsofmeasure.org",
+              "value": 4,
+              "code": "wk",
+              "unit": "Wochen"
+            }
+          },
+          "frequency": 1,
+          "period": 14,
+          "periodUnit": "d"
+        }
       },
       "doseAndRate": [
         {
@@ -33,12 +52,14 @@
             "low": {
               "value": 60,
               "code": "mL/h",
-              "system": "http://unitsofmeasure.org"
+              "system": "http://unitsofmeasure.org",
+              "unit": "mL/h"
             },
             "high": {
               "value": 120,
               "code": "mL/h",
-              "system": "http://unitsofmeasure.org"
+              "system": "http://unitsofmeasure.org",
+              "unit": "mL/h"
             }
           },
           "doseQuantity": {

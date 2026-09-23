@@ -26,6 +26,16 @@
           }
         ]
       }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/condition-assertedDate",
+      "valueDateTime": "2025-04-15"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/condition-related",
+      "valueReference": {
+        "reference": "Condition/mii-exa-test-data-patient-3-seltene-clinical-diagnosis-1"
+      }
     }
   ],
   "category": [
@@ -49,17 +59,76 @@
       {
         "code": "19346006",
         "system": "http://snomed.info/sct",
-        "display": "Marfan syndrome"
+        "display": "Marfan syndrome",
+        "version": "http://snomed.info/sct/900000000000207008/version/20240201"
       },
       {
         "code": "558",
         "system": "http://www.orpha.net",
         "display": "Marfan syndrome"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://fhir.de/StructureDefinition/icd-10-gm-diagnosesicherheit",
+            "valueCoding": {
+              "code": "G",
+              "system": "https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_ICD_DIAGNOSESICHERHEIT",
+              "display": "gesicherte Diagnose"
+            }
+          },
+          {
+            "url": "http://fhir.de/StructureDefinition/icd-10-gm-mehrfachcodierungs-kennzeichen",
+            "valueCoding": {
+              "code": "!",
+              "system": "http://fhir.de/CodeSystem/icd-10-gm-mehrfachcodierungs-kennzeichen",
+              "display": "Ausrufezeichen"
+            }
+          },
+          {
+            "url": "http://fhir.de/StructureDefinition/seitenlokalisation",
+            "valueCoding": {
+              "code": "U",
+              "system": "https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_ICD_SEITENLOKALISATION",
+              "display": "unbekannt"
+            }
+          }
+        ],
+        "code": "Q87.4",
+        "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+        "display": "Marfan-Syndrom",
+        "version": "2025"
       }
     ],
     "text": "Marfan-Syndrom, genetisch bestaetigt (FBN1-Variante)"
   },
+  "bodySite": [
+    {
+      "coding": [
+        {
+          "code": "113257007",
+          "system": "http://snomed.info/sct",
+          "display": "Structure of cardiovascular system",
+          "version": "http://snomed.info/sct/900000000000207008/version/20240201"
+        }
+      ]
+    }
+  ],
   "onsetAge": {
+    "extension": [
+      {
+        "url": "http://fhir.de/StructureDefinition/lebensphase",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "41847000",
+              "system": "http://snomed.info/sct",
+              "display": "Adulthood (qualifier value)"
+            }
+          ]
+        }
+      }
+    ],
     "value": 28,
     "unit": "years",
     "system": "http://unitsofmeasure.org",

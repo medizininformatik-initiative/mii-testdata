@@ -8,3 +8,6 @@ Description: "PractitionerRole: Physician"
 * practitioner = Reference(mii-exa-test-data-practitioner-physician-1)
 * organization = Reference(mii-exa-test-data-organization-charite)
 * code = $sct#309343006 "Physician (occupation)"
+* telecom.system = #email
+* telecom.value = "studienteam@charite.de"
+* telecom.use = #work

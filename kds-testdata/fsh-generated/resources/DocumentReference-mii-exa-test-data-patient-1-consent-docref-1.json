@@ -17,7 +17,14 @@
   "content": [
     {
       "attachment": {
+        "extension": [
+          {
+            "url": "http://fhir.de/ConsentManagement/StructureDefinition/PhysicalDocumentLocation",
+            "valueString": "Patientenaktenarchiv Charité, Campus Mitte, Schrank 12, Fach 3"
+          }
+        ],
         "contentType": "application/pdf",
+        "url": "https://dms.charite.de/kds-testdata/consent/patient-1/einwilligungsbogen-1.pdf",
         "data": "YmFzZTY0Q29kaWVydGVzUERGRGVzVW50ZXJzY2hyaWViZW5lblBhdGllbnRlbkVpbndpbGxpZ3VuZ3Nib2dlbnM=",
         "title": "Patienteneinwilligung MII Broad Consent (unterschrieben, Scan)",
         "creation": "2024-02-23T12:00:00+01:00"

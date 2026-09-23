@@ -575,6 +575,14 @@
       },
       {
         "reference": {
+          "reference": "Endpoint/mii-exa-test-data-bildgebung-endpoint-1"
+        },
+        "name": "mii-exa-test-data-bildgebung-endpoint-1",
+        "description": "Endpoint: DICOM WADO-RS Endpunkt des PACS",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Observation/mii-exa-test-data-bildgebung-labobs-1"
         },
         "name": "mii-exa-test-data-bildgebung-labobs-1",
@@ -4031,6 +4039,14 @@
       },
       {
         "reference": {
+          "reference": "QuestionnaireResponse/mii-exa-test-data-patient-1-consent-qr-1"
+        },
+        "name": "mii-exa-test-data-patient-1-consent-qr-1",
+        "description": "QuestionnaireResponse: Erfassung des Einwilligungsbogens zu Consent von Patient 1",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Condition/mii-exa-test-data-patient-1-diagnose-1"
         },
         "name": "mii-exa-test-data-patient-1-diagnose-1",
@@ -4958,6 +4974,22 @@
       },
       {
         "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-labobs-8"
+        },
+        "name": "mii-exa-test-data-patient-1-labobs-8",
+        "description": "Observation: Nitrit im Urin negativ für Patient 1 (valueCodeableConcept-Variante)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-labobs-9"
+        },
+        "name": "mii-exa-test-data-patient-1-labobs-9",
+        "description": "Observation: Troponin T unter Nachweisgrenze für Patient 1 (comparator-Variante)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "DiagnosticReport/mii-exa-test-data-patient-1-labreport-1"
         },
         "name": "mii-exa-test-data-patient-1-labreport-1",
@@ -5210,6 +5242,14 @@
         },
         "name": "mii-exa-test-data-patient-1-pro-promis29-pain-intensity",
         "description": "PRO Observation: PROMIS-29 Pain Intensity for Patient 1",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "QuestionnaireResponse/mii-exa-test-data-patient-1-pro-promis29-response"
+        },
+        "name": "mii-exa-test-data-patient-1-pro-promis29-response",
+        "description": "PRO QuestionnaireResponse: PROMIS-29 (Auszug Angst/Depression) for Patient 1",
         "exampleBoolean": true
       },
       {
@@ -6046,6 +6086,14 @@
       },
       {
         "reference": {
+          "reference": "Condition/mii-exa-test-data-patient-3-seltene-clinical-diagnosis-2"
+        },
+        "name": "mii-exa-test-data-patient-3-seltene-clinical-diagnosis-2",
+        "description": "Clinical Diagnosis: Ectopia lentis bei Marfan-Syndrom, nach Lensektomie behoben (abatementAge-Variante)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "ClinicalImpression/mii-exa-test-data-patient-3-seltene-clinical-impression-1"
         },
         "name": "mii-exa-test-data-patient-3-seltene-clinical-impression-1",
@@ -6078,6 +6126,14 @@
       },
       {
         "reference": {
+          "reference": "FamilyMemberHistory/mii-exa-test-data-patient-3-seltene-familienanamnese-3"
+        },
+        "name": "mii-exa-test-data-patient-3-seltene-familienanamnese-3",
+        "description": "Familienanamnese: Bruder, bisher nicht betroffen - tests age[x], date, reasonCode, reasonReference",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Observation/mii-exa-test-data-patient-3-seltene-geburtsgewicht-1"
         },
         "name": "mii-exa-test-data-patient-3-seltene-geburtsgewicht-1",
@@ -6098,6 +6154,14 @@
         },
         "name": "mii-exa-test-data-patient-3-seltene-genetic-diagnosis-1",
         "description": "Genetic Diagnosis: Marfan syndrome (FBN1 variant) - maximum MS element coverage including penetrance",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Condition/mii-exa-test-data-patient-3-seltene-genetic-diagnosis-2"
+        },
+        "name": "mii-exa-test-data-patient-3-seltene-genetic-diagnosis-2",
+        "description": "Genetic Diagnosis: Transienter neonataler Diabetes mellitus (6q24), im Saeuglingsalter remittiert (abatement-Variante)",
         "exampleBoolean": true
       },
       {
@@ -7446,10 +7510,34 @@
       },
       {
         "reference": {
+          "reference": "Observation/mii-exa-test-data-radiologische-beobachtung-2"
+        },
+        "name": "mii-exa-test-data-radiologische-beobachtung-2",
+        "description": "Observation: Radiologische Beobachtung (Architekturstoerung: nein, valueCodeableConcept)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-radiologische-beobachtung-3"
+        },
+        "name": "mii-exa-test-data-radiologische-beobachtung-3",
+        "description": "Observation: Radiologische Beobachtung (Herddurchmesser 8 mm, valueQuantity)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Observation/mii-exa-test-data-radiologische-messung-1"
         },
         "name": "mii-exa-test-data-radiologische-messung-1",
         "description": "Observation: Radiologische Messung (Durchmesser des Herdbefunds, 4.2 mm)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-radiologische-messung-2"
+        },
+        "name": "mii-exa-test-data-radiologische-messung-2",
+        "description": "Observation: Radiologische Messung (Ergebnisbewertung normal, valueCodeableConcept)",
         "exampleBoolean": true
       },
       {
@@ -7634,6 +7722,14 @@
         },
         "name": "mii-exa-test-data-soziodemographie-schwerbehindertenausweis-2",
         "description": "Soziodemographie: kein Schwerbehindertenausweis vorhanden (Nein-Zweig sba-1)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-soziodemographie-schwerbehindertenausweis-3"
+        },
+        "name": "mii-exa-test-data-soziodemographie-schwerbehindertenausweis-3",
+        "description": "Soziodemographie: Schwerbehindertenausweis erfragt, keine Angabe (dataAbsentReason)",
         "exampleBoolean": true
       },
       {
@@ -8503,6 +8599,14 @@
       {
         "code": "path-resource",
         "value": "input/predefined-resources"
+      },
+      {
+        "code": "excludexml",
+        "value": "true"
+      },
+      {
+        "code": "excludettl",
+        "value": "true"
       }
     ]
   }
