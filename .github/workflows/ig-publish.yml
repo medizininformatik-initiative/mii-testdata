@@ -186,6 +186,9 @@ jobs:
       run: |
         set -euo pipefail
         cd kds-testdata/output
+        # Pages-Budget: schwergewichtige Redundanzen nicht deployen.
+        # qa.html (verlinkt) bleibt; qa.min/qa-tx/qa.xml sind Duplikate (~100 MB).
+        rm -f qa.min.html qa-tx.html qa.xml
         touch .nojekyll
         git init -q -b gh-pages
         git add -A

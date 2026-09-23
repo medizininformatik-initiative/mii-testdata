@@ -13,14 +13,22 @@ errors=0
 
 load_bundle() {
   local bundle_file="$1"
-  local bundle_name
+  local bundle_name bundle_type target
   bundle_name=$(basename "$bundle_file" .json)
+
+  # transaction/batch gehören an den Base-Endpoint; alle anderen Bundle-Typen
+  # (document, collection, …) sind gewöhnliche Ressourcen -> POST /Bundle
+  bundle_type=$(jq -r '.type // empty' "$bundle_file")
+  case "$bundle_type" in
+    transaction|batch) target="${BASE_URL}" ;;
+    *)                 target="${BASE_URL}/Bundle" ;;
+  esac
 
   response=$(curl -sf -w "\n%{http_code}" \
     -X POST \
     -H "Content-Type: application/fhir+json" \
     -d @"$bundle_file" \
-    "${BASE_URL}" 2>&1 || true)
+    "${target}" 2>&1 || true)
 
   http_code=$(echo "$response" | tail -n1)
   body=$(echo "$response" | sed '$d')
