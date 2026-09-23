@@ -37,6 +37,8 @@ env:
 jobs:
   build:
     runs-on: ubuntu-latest
+    # Deckel fuer beide Build-Versuche (2x 50 min) plus Setup/Deploy.
+    timeout-minutes: 140
     steps:
     - name: Checkout Project
       uses: actions/checkout@v4
@@ -160,15 +162,18 @@ jobs:
         # (http://127.0.0.1:8090) gegen die SSRF-Haertung des Publishers
         # (2.3.1+ verweigert sonst plain-HTTP/private-network -tx; Muster
         # aus dem mii-kds-module-template).
+        # Ein gesunder Lauf braucht ~25 min; alles darueber ist ein haengender
+        # Terminologie-Call. Ohne Deckel laeuft der Job ins 6h-Limit und der
+        # Fallback greift nie (er triggert nur bei Exit!=0, nicht bei Haenger).
         build() {
-          java -Xmx6g -Dfile.encoding=UTF-8 -jar ../publisher.jar \
+          timeout 50m java -Xmx6g -Dfile.encoding=UTF-8 -jar ../publisher.jar \
             -ig . -tx "$1" -packages ../local-packages \
             -fhir-settings "$GITHUB_WORKSPACE/.github/fhir-settings.json"
         }
         # SU-TermServ zeigt gelegentlich Timeouts (CapabilityStatement) —
         # ein Fehlschlag faellt auf den oeffentlichen HL7-Server zurueck
         # (QA dann mit unvollstaendigen MII-Expansions, aber Build steht).
-        build "$TX" || { echo "::warning::Build mit $TX fehlgeschlagen — Retry mit https://tx.fhir.org"; build "https://tx.fhir.org"; }
+        build "$TX" || { echo "::warning::Build mit $TX fehlgeschlagen/abgebrochen — Retry mit https://tx.fhir.org"; build "https://tx.fhir.org"; }
 
     - name: Stop SU-TermServ proxy
       if: always()
