@@ -21,3 +21,4 @@ _genonce.sh
 _genonce.bat
 _updatePublisher.bat
 _updatePublisher.sh
+.claude/worktrees/
