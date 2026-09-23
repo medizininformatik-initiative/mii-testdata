@@ -288,17 +288,36 @@ jobs:
         TX: ${{ steps.tx.outputs.tx }}
         EXTRA_OPTIONS: ${{ vars.JAVA_VALIDATION_OPTIONS }}
       run: |
-        mkdir -p .txcache
+        mkdir -p "$GITHUB_WORKSPACE/.txcache"
+        # JAVA_VALIDATION_OPTIONS ist fuer den meta-Workflow gedacht und
+        # enthaelt -advisor-file/-output/-html-output — fuer die Kontrolle
+        # rausfiltern, sonst laeuft der "ungefilterte" Lauf MIT Advisor.
+        extra=(); skip=0
+        for tok in $EXTRA_OPTIONS; do
+          if [ "$skip" = 1 ]; then skip=0; continue; fi
+          case "$tok" in
+            -advisor-file|-output|-html-output) skip=1 ;;
+            *) extra+=("$tok") ;;
+          esac
+        done
+        # -txCache braucht einen absoluten Pfad (relative ../-Pfade crashen
+        # den Validator: "Computed path does not start with first element").
         common=(fsh-generated/resources -version 4.0.1 \
           -ig ../complete.tgz -ig de.basisprofil.r4#1.6.0 \
           -ig de.einwilligungsmanagement#2.0.4 -ig hl7.fhir.uv.sdc#4.0.0 \
           -ig hl7.fhir.uv.genomics-reporting#3.0.0 -ig eu.miabis.r4#1.3.0 \
-          -tx "$TX" -txCache ../.txcache $EXTRA_OPTIONS)
+          -tx "$TX" -txCache "$GITHUB_WORKSPACE/.txcache" "${extra[@]}")
         cd kds-testdata
         java -Xmx6g -jar ../validator_cli.jar "${common[@]}" \
           -output ../validation-unfiltered.json || true
         java -Xmx6g -jar ../validator_cli.jar "${common[@]}" \
           -advisor-file advisor.json -output ../validation-filtered.json || true
+        # || true faengt nur den erwarteten Exit!=0 bei Validierungsfehlern ab.
+        # Ein Crash VOR der Validierung hinterlaesst keine Output-Dateien —
+        # das muss den Job rot machen, sonst ist die Kontrolle wirkungslos.
+        for f in ../validation-unfiltered.json ../validation-filtered.json; do
+          [ -s "$f" ] || { echo "::error::Validator-Lauf ohne Ergebnis ($f fehlt) — Log pruefen"; exit 1; }
+        done
 
     - name: Stop SU-TermServ proxy
       if: always()
@@ -306,6 +325,7 @@ jobs:
 
     - name: Advisor diff report
       run: |
+        set -o pipefail
         python3 scripts/compare-advisor-runs.py \
           validation-unfiltered.json validation-filtered.json | tee advisor-diff.md
         cat advisor-diff.md >> "$GITHUB_STEP_SUMMARY"
