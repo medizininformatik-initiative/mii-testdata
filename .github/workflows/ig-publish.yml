@@ -187,6 +187,21 @@ jobs:
             kds-testdata/output/qa.json >> "$GITHUB_STEP_SUMMARY" || true
         fi
 
+    - name: Archive full QA report
+      if: always()
+      run: |
+        if [ -f kds-testdata/output/qa.html ]; then
+          gzip -9 -c kds-testdata/output/qa.html > qa-full.html.gz
+        fi
+
+    - name: Upload full QA report
+      if: always()
+      uses: actions/upload-artifact@v4
+      with:
+        name: qa-report
+        path: qa-full.html.gz
+        if-no-files-found: ignore
+
     - name: Deploy to gh-pages
       run: |
         set -euo pipefail
@@ -194,6 +209,25 @@ jobs:
         # Pages-Budget: schwergewichtige Redundanzen nicht deployen.
         # qa.html (verlinkt) bleibt; qa.min/qa-tx/qa.xml sind Duplikate (~100 MB).
         rm -f qa.min.html qa-tx.html qa.xml
+        # GitHub lehnt Einzeldateien >100 MB ab (pre-receive hook). Bei
+        # tx-Fallback schwillt qa.html durch nicht-expandierbare MII-ValueSets
+        # auf ~180 MB an -> durch eine Stub-Seite ersetzen, Vollreport haengt
+        # als Artefakt am Workflow-Lauf.
+        if [ -f qa.html ] && [ "$(stat -c%s qa.html)" -gt 94371840 ]; then
+          size_mb=$(( $(stat -c%s qa.html) / 1048576 ))
+          echo "::warning::qa.html ist ${size_mb} MB (>90 MB) — wird durch Stub ersetzt"
+          cat > qa.html <<EOF
+        <!doctype html><meta charset="utf-8"><title>QA-Report zu gross</title>
+        <h1>QA-Report nicht eingebettet</h1>
+        <p>Der vollstaendige QA-Report dieses Builds ist <strong>${size_mb} MB</strong> gross und
+        ueberschreitet das Dateigroessen-Limit von GitHub (100 MB).</p>
+        <p>Er haengt als Artefakt <code>qa-report</code> am erzeugenden Workflow-Lauf:
+        <a href="https://github.com/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}">Run ${GITHUB_RUN_ID}</a>.</p>
+        <p>Ein derart grosser Report entsteht typischerweise, wenn der Build auf den
+        oeffentlichen Terminologieserver zurueckfallen musste und MII-ValueSets
+        nicht expandiert werden konnten — dann erzeugt praktisch jedes Coding eine Warnung.</p>
+        EOF
+        fi
         touch .nojekyll
         git init -q -b gh-pages
         git add -A
