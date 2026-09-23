@@ -22,6 +22,7 @@ Description: "Histologischer Typ ICD-O-3 für Stanze 01"
 * effectiveDateTime = "2024-01-17T10:00:00+01:00"
 * performer = Reference(mii-exa-test-data-patho-practitioner-1)
 * valueCodeableConcept = $ICDO-3#8140/3 "Azinäres Adenokarzinom"
+* valueCodeableConcept.coding.version = "3.2"
 * bodySite = $sct#716902004 "Right basal peripheral zone of prostate"
 * specimen = Reference(mii-exa-test-data-patho-specimen-01-slide)
 

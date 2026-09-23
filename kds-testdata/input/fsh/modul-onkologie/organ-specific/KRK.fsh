@@ -20,6 +20,21 @@ Description: "Onkologie Test KRK Operation - Anteriore Resektion"
 // TODO: SNOMED 76164006 display per validator is "Biopsy of colon", not "Stapling device (physical object)".
 // The code 76164006 may be incorrect if the intent is to reference a surgical stapling device. Review and replace with correct SNOMED code.
 * usedCode.coding = $SCT#76164006 "Biopsy of colon"
+* basedOn[tumorkonferenz] = Reference(mii-exa-test-data-onko-tumorkonferenz-1)
+* bodySite.coding[snomed-ct] = $SCT#34402009 "Rectum structure (body structure)"
+* bodySite.coding[snomed-ct].version = "http://snomed.info/sct/900000000000207008/version/20240201"
+* code.coding[ops].extension[Seitenlokalisation].valueCoding = $icd-seitenlokalisation#T "trifft nicht zu"
+* complication[compl_obds].coding = $mii-cs-onko-operation-komplikation#N "Nein"
+* complication[compl_icd10].coding = $ICD10GM|2021#T81.0 "Blutung und Hämatom als Komplikation eines Eingriffes, anderenorts nicht klassifiziert"
+* encounter = Reference(mii-exa-test-data-onko-encounter-1)
+* extension[Dokumentationsdatum].valueDateTime = "2021-10-01"
+* extension[durchfuehrungsabsicht].valueCoding = $SCT#262202000 "Therapeutic"
+* extension[Intention].valueCodeableConcept.text = "kurativ"
+* extension[Urgency].valueCodeableConcept = $mii-cs-onko-operation-urgency#E "Elektiveingriff"
+* extension[Urgency].valueCodeableConcept.text = "Elektiveingriff"
+* note.text = "Tiefe anteriore Rektumresektion mit protektivem Enterostoma."
+* outcome = $mii-cs-onko-residualstatus#R0 "Kein Residualtumor"
+* partOf = Reference(mii-exa-test-data-onko-systemische-therapie-1)
 
 // Abstand Tumor Anokutanlinie
 Instance: mii-exa-test-data-onko-krk-abstand-anokutan-1
@@ -37,6 +52,7 @@ Description: "Onkologie Test KRK Abstand Tumor zur Anokutanlinie"
 * valueQuantity.unit = "cm"
 * valueQuantity.system = $UCUM
 * valueQuantity.code = #cm
+* encounter = Reference(mii-exa-test-data-onko-encounter-1)
 
 // Abstand circumferentielle Resektionsebene (CRM)
 Instance: mii-exa-test-data-onko-krk-abstand-crm-1
@@ -54,6 +70,7 @@ Description: "Onkologie Test KRK Abstand circumferentielle Resektionsebene (CRM)
 * effectiveDateTime = "2021-10-05"
 * valueQuantity.value = 3.2
 // unit/system/code are fixed by profile
+* encounter = Reference(mii-exa-test-data-onko-encounter-1)
 
 // Abstand Resektionsrand aboral
 Instance: mii-exa-test-data-onko-krk-abstand-aboral-1
@@ -71,6 +88,7 @@ Description: "Onkologie Test KRK Abstand Resektionsrand aboral"
 * valueQuantity.unit = "mm"
 * valueQuantity.system = $UCUM
 * valueQuantity.code = #mm
+* encounter = Reference(mii-exa-test-data-onko-encounter-1)
 
 // Abstand zur mesorektalen Faszie (MRT/CT)
 Instance: mii-exa-test-data-onko-krk-abstand-mesorektal-1
@@ -88,6 +106,7 @@ Description: "Onkologie Test KRK MRT Abstand zur mesorektalen Faszie"
 * valueQuantity.unit = "mm"
 * valueQuantity.system = $UCUM
 * valueQuantity.code = #mm
+* encounter = Reference(mii-exa-test-data-onko-encounter-1)
 
 // Anastomoseninsuffizienz
 Instance: mii-exa-test-data-onko-krk-anastomoseninsuffizienz-1
@@ -102,6 +121,7 @@ Description: "Onkologie Test KRK Anastomoseninsuffizienz - Keine"
 * focus = Reference(mii-exa-test-data-onko-krk-operation-1)
 * effectiveDateTime = "2021-10-15"
 * valueCodeableConcept = $mii-cs-onko-krk-anastomoseninsuffizienz#K "Keine Insuffizienz oder höchstens Grad A"
+* encounter = Reference(mii-exa-test-data-onko-encounter-1)
 
 // Stoma Markierung
 Instance: mii-exa-test-data-onko-krk-stoma-markierung-1
@@ -117,6 +137,15 @@ Description: "Onkologie Test KRK Stoma Markierung"
 * reasonReference = Reference(mii-exa-test-data-onko-diagnose-1)
 * performedDateTime = "2021-09-25T10:00:00+02:00"
 * statusReason = $SCT#397943006 "Planned (qualifier value)"
+* bodySite.coding[snomed-ct] = $SCT#699600004 "Structure of left lower quadrant of abdomen (body structure)"
+* bodySite.coding[snomed-ct].version = "http://snomed.info/sct/900000000000207008/version/20240201"
+* code.coding[ops] = $OPS#5-460 "Anlegen eines Enterostomas, doppelläufig, als selbständiger Eingriff"
+* code.coding[ops].version = "2021"
+* code.coding[ops].extension[Seitenlokalisation].valueCoding = $icd-seitenlokalisation#T "trifft nicht zu"
+* encounter = Reference(mii-exa-test-data-onko-encounter-1)
+* extension[Dokumentationsdatum].valueDateTime = "2021-09-25"
+* extension[durchfuehrungsabsicht].valueCoding = $SCT#262202000 "Therapeutic"
+* note.text = "Stomaposition praeoperativ markiert."
 
 // KRK Specimen
 Instance: mii-exa-test-data-onko-krk-specimen-1
@@ -131,4 +160,6 @@ Description: "Onkologie Test KRK Specimen - Rektumresektat"
 * collection.collectedDateTime = "2021-09-30T11:00:00+02:00"
 * collection.bodySite = $SCT#34402009 "Rectum structure"
 * condition = $SCT#17621005 "Normal (qualifier value)"
+* accessionIdentifier.system = "https://www.charite.de/fhir/sid/patho/befundbericht"
+* accessionIdentifier.value = "E_21_04711"
 

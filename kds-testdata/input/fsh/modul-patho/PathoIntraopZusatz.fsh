@@ -41,6 +41,17 @@ Description: "Gruppierung der intraoperativen Beobachtungen (Schnellschnitt)"
 * effectiveDateTime = "2024-01-15T11:00:00+01:00"
 * performer = Reference(mii-exa-test-data-patho-practitioner-1)
 * hasMember[pathology-finding][+] = Reference(mii-exa-test-data-patho-intraop-befund-1)
+* meta.lastUpdated = "2024-01-20T16:00:00+01:00"
+* text.status = #generated
+* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Intraoperativer Grouper: Schnellschnitt-Befund Stanze 01</div>"
+* identifier.system = "https://www.charite.de/fhir/sid/patho/befund"
+* identifier.value = "E_24_001_INTRAOP"
+* method = $sct#20135006 "Frozen section procedure (procedure)"
+* basedOn = Reference(mii-exa-test-data-patho-request-1)
+* specimen = Reference(mii-exa-test-data-patho-specimen-01-part)
+* bodySite = $sct#41216001 "Prostate"
+* derivedFrom[attached-image] = Reference(mii-exa-test-data-patho-image-1)
+* derivedFrom[dicom-image] = Reference(mii-exa-test-data-patho-imaging-study-1)
 
 // ----------------------------------------------------------------------------
 // Zusätzliche Beobachtung (Immunhistochemie p63) + Grouper
@@ -79,3 +90,29 @@ Description: "Gruppierung der zusätzlichen Beobachtungen (Immunhistochemie)"
 * effectiveDateTime = "2024-01-18T09:00:00+01:00"
 * performer = Reference(mii-exa-test-data-patho-practitioner-1)
 * hasMember[pathology-finding][+] = Reference(mii-exa-test-data-patho-p63-befund-1)
+* meta.lastUpdated = "2024-01-20T16:00:00+01:00"
+* text.status = #generated
+* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Zusatzbefund-Grouper: Immunhistochemie p63</div>"
+* identifier.system = "https://www.charite.de/fhir/sid/patho/befund"
+* identifier.value = "E_24_001_ZUSATZ"
+* method = $sct#117617002 "Immunohistochemistry procedure (procedure)"
+* basedOn = Reference(mii-exa-test-data-patho-request-1)
+* specimen = Reference(mii-exa-test-data-patho-specimen-01-slide)
+* bodySite = $sct#41216001 "Prostate"
+* derivedFrom[attached-image] = Reference(mii-exa-test-data-patho-image-1)
+* derivedFrom[dicom-image] = Reference(mii-exa-test-data-patho-imaging-study-1)
+
+// ImagingStudy (Ziel der dicom-image-Referenzen der Grouper und des Reports)
+Instance: mii-exa-test-data-patho-imaging-study-1
+InstanceOf: ImagingStudy
+Usage: #example
+Title: "Patho Whole-Slide-Imaging Studie"
+Description: "Whole-Slide-Imaging (DICOM) des HE-Schnitts der Prostatastanze 01"
+* insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
+* status = #available
+* subject = Reference(mii-exa-test-data-patho-patient-1)
+* started = "2024-01-17T10:30:00+01:00"
+* modality = http://dicom.nema.org/resources/ontology/DCM#SM "Slide Microscopy"
+* numberOfSeries = 1
+* description = "Whole Slide Imaging HE-Schnitt Stanze 01"

@@ -15,6 +15,7 @@ Description: "Onkologie Test Mamma Menopausenstatus - Prämenopausal"
 * focus = Reference(mii-exa-test-data-onko-diagnose-1)
 * effectiveDateTime = "2021-06-15"
 * valueCodeableConcept = $SCT#22636003 "Premenopausal state (finding)"
+* encounter = Reference(mii-exa-test-data-onko-encounter-1)
 
 // Estrogen Receptor Status
 Instance: mii-exa-test-data-onko-mamma-rezeptorstatus-estrogen-1
@@ -35,6 +36,7 @@ Description: "Onkologie Test Mamma Östrogenrezeptorstatus - Positiv"
 * component[AnteilPositiveZellen].valueQuantity.system = $UCUM
 * component[AnteilPositiveZellen].interpretation = http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation#H "High"
 * component[Faerbeintensitaet].valueCodeableConcept = $LNC#LA13035-3 "Impaired"
+* encounter = Reference(mii-exa-test-data-onko-encounter-1)
 
 // Progesteron Receptor Status
 Instance: mii-exa-test-data-onko-mamma-rezeptorstatus-progesteron-1
@@ -54,6 +56,7 @@ Description: "Onkologie Test Mamma Progesteronrezeptorstatus - Positiv"
 * component[AnteilPositiveZellen].valueQuantity.unit = "%"
 * component[AnteilPositiveZellen].valueQuantity.system = $UCUM
 * component[Faerbeintensitaet].valueCodeableConcept = $LNC#LA13035-3 "Impaired"
+* encounter = Reference(mii-exa-test-data-onko-encounter-1)
 
 // Her2neu Status
 Instance: mii-exa-test-data-onko-mamma-her2neu-status-1
@@ -71,6 +74,7 @@ Description: "Onkologie Test Mamma Her2neu Status - Negativ"
 * valueCodeableConcept.coding[DefinitionLeitlinie] = $mii-cs-onko-mamma-her2neu-status-leitlinie#negativ "HER2-negativ"
 * component[IHCScore].code = $LNC#85319-2 "HER2 Ag [Presence] in Breast cancer specimen by Immune stain"
 * component[IHCScore].valueCodeableConcept = $LNC#LA11840-8 "Mixed"
+* encounter = Reference(mii-exa-test-data-onko-encounter-1)
 
 // Her2neu Status - Positive variant
 Instance: mii-exa-test-data-onko-mamma-her2neu-status-2
@@ -90,6 +94,7 @@ Description: "Onkologie Test Mamma Her2neu Status - Positiv (3+)"
 * component[IHCScore].valueCodeableConcept = $LNC#LA11843-2 "3+"
 * component[ISHResult].code = $LNC#96893-3 "ERBB2 gene duplication in Tumor by FISH"
 * component[ISHResult].valueCodeableConcept = $LNC#LA6576-8 "Positive"
+* encounter = Reference(mii-exa-test-data-onko-encounter-1)
 
 // Präoperative Markierung
 Instance: mii-exa-test-data-onko-mamma-praeop-markierung-1
@@ -105,6 +110,7 @@ Description: "Onkologie Test Mamma Präoperative Markierung - Drahtmarkierung"
 * reasonReference = Reference(mii-exa-test-data-onko-diagnose-1)
 * performedDateTime = "2021-09-28T08:00:00+02:00"
 * partOf = Reference(mii-exa-test-data-onko-mamma-operation-1)
+* encounter = Reference(mii-exa-test-data-onko-encounter-1)
 
 // Mamma Operation
 Instance: mii-exa-test-data-onko-mamma-operation-1
@@ -124,6 +130,21 @@ Description: "Onkologie Test Mamma Operation - Brusterhaltende Therapie"
 * extension[Intention].valueCodeableConcept = $mii-cs-onko-intention#K "kurativ"
 * usedCode[IntraoperativesImaging] = $SCT#168750009 "Mammography abnormal"
 * usedCode[PraeoperativeMarkierung] = $SCT#433222002 "Insertion of guide wire into breast using ultrasound guidance (procedure)"
+* basedOn[tumorkonferenz] = Reference(mii-exa-test-data-onko-tumorkonferenz-1)
+* bodySite.coding[snomed-ct] = $SCT#76752008 "Breast structure (body structure)"
+* bodySite.coding[snomed-ct].version = "http://snomed.info/sct/900000000000207008/version/20240201"
+* code.coding[ops].extension[Seitenlokalisation].valueCoding = $icd-seitenlokalisation#L "links"
+* complication[compl_obds].coding = $mii-cs-onko-operation-komplikation#N "Nein"
+* complication[compl_icd10].coding = $ICD10GM|2021#T81.0 "Blutung und Hämatom als Komplikation eines Eingriffes, anderenorts nicht klassifiziert"
+* encounter = Reference(mii-exa-test-data-onko-encounter-1)
+* extension[Dokumentationsdatum].valueDateTime = "2021-10-01"
+* extension[durchfuehrungsabsicht].valueCoding = $SCT#262202000 "Therapeutic"
+* extension[Intention].valueCodeableConcept.text = "kurativ"
+* extension[Urgency].valueCodeableConcept = $mii-cs-onko-operation-urgency#E "Elektiveingriff"
+* extension[Urgency].valueCodeableConcept.text = "Elektiveingriff"
+* note.text = "Brusterhaltende Exzision mit Drahtmarkierung."
+* outcome = $mii-cs-onko-residualstatus#R0 "Kein Residualtumor"
+* partOf = Reference(mii-exa-test-data-onko-systemische-therapie-1)
 
 // Mamma Sozialdienst
 Instance: mii-exa-test-data-onko-mamma-sozialdienst-1
@@ -138,4 +159,21 @@ Description: "Onkologie Test Mamma Sozialdienst - Psychosoziale Beratung"
 * reasonReference = Reference(mii-exa-test-data-onko-diagnose-1)
 * performedDateTime = "2021-10-05"
 * extension[Intention].valueCodeableConcept = $mii-cs-onko-intention#K "kurativ"
+* extension[Intention].valueCodeableConcept.text = "kurativ"
+* basedOn[tumorkonferenz] = Reference(mii-exa-test-data-onko-tumorkonferenz-1)
+* bodySite.coding[snomed-ct] = $SCT#76752008 "Breast structure (body structure)"
+* bodySite.coding[snomed-ct].version = "http://snomed.info/sct/900000000000207008/version/20240201"
+* code.coding[ops] = $OPS#9-401.5 "(Neuro-)psychologische und psychosoziale Interventionen: Sozialrechtliche Beratung"
+* code.coding[ops].version = "2021"
+* code.coding[ops].extension[Seitenlokalisation].valueCoding = $icd-seitenlokalisation#T "trifft nicht zu"
+* complication[compl_obds].coding = $mii-cs-onko-operation-komplikation#N "Nein"
+* complication[compl_icd10].coding = $ICD10GM|2021#T81.0 "Blutung und Hämatom als Komplikation eines Eingriffes, anderenorts nicht klassifiziert"
+* encounter = Reference(mii-exa-test-data-onko-encounter-1)
+* extension[Dokumentationsdatum].valueDateTime = "2021-10-06"
+* extension[durchfuehrungsabsicht].valueCoding = $SCT#262202000 "Therapeutic"
+* extension[Urgency].valueCodeableConcept = $mii-cs-onko-operation-urgency#E "Elektiveingriff"
+* extension[Urgency].valueCodeableConcept.text = "Elektiveingriff"
+* note.text = "Psychosoziale Beratung durch den Sozialdienst."
+* outcome = $mii-cs-onko-residualstatus#R0 "Kein Residualtumor"
+* partOf = Reference(mii-exa-test-data-onko-mamma-operation-1)
 

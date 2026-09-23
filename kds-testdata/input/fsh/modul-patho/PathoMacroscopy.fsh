@@ -30,6 +30,16 @@ Description: "Gruppierung der makroskopischen Messungen beider Prostatastanzen"
 // Referenzen zu allen Seitenangabe Findings
 * hasMember[+] = Reference(mii-exa-test-data-patho-macroscopic-laterality-01)
 * hasMember[+] = Reference(mii-exa-test-data-patho-macroscopic-laterality-03)
+* meta.lastUpdated = "2024-01-20T16:00:00+01:00"
+* text.status = #generated
+* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Makroskopie-Grouper: Messungen der Prostatastanzen 01 und 03</div>"
+* identifier.system = "https://www.charite.de/fhir/sid/patho/befund"
+* identifier.value = "E_24_001_MAKRO"
+* method = $sct#787377000 "Gross examination and sampling of tissue specimen (procedure)"
+* basedOn = Reference(mii-exa-test-data-patho-request-1)
+* specimen = Reference(mii-exa-test-data-patho-specimen-01-part)
+* derivedFrom[attached-image] = Reference(mii-exa-test-data-patho-image-1)
+* derivedFrom[dicom-image] = Reference(mii-exa-test-data-patho-imaging-study-1)
 
 // =============================================================================
 // MAKROSKOPISCHE MESSUNGEN - PROSTATA STANZEN

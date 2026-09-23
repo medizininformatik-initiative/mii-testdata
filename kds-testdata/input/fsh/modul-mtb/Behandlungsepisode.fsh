@@ -25,6 +25,9 @@ Description: "Test instance for MTB treatment episode with all MS slices populat
 * supportingInfo[Vortherapie][+] = Reference(mii-exa-test-data-mtb-systemische-vortherapie-1)
 * supportingInfo[Vorbefund][+] = Reference(mii-exa-test-data-mtb-labobs-vorbefund-1)
 * supportingInfo[Therapieplan] = Reference(mii-exa-test-data-mtb-therapieplan-1)
+* extension[LeitlinienbehandlungStatus].valueCoding = $mii-cs-mtb-leitlinienbehandlung-status#exhausted "exhausted"
+* supportingInfo[Vortherapie][0].extension[LeitlinieDokumentation].extension[Therapielinie].valueUnsignedInt = 1
+* supportingInfo[Vortherapie][0].extension[LeitlinieDokumentation].extension[Zulassungsstatus].valueCodeableConcept.coding = $mii-cs-mtb-zulassungsstatus#in-label
 
 // =============================================================================
 // 2. MII_PR_MTB_Consent_Given (Observation)
@@ -42,6 +45,7 @@ Description: "Test instance for MTB consent/patient education confirmation"
 * subject = Reference(mii-exa-test-data-mtb-patient-1)
 * effectiveDateTime = "2024-01-10"
 * valueCodeableConcept = $SCT#373066001 "Yes (qualifier value)"
+* encounter = Reference(mii-exa-test-data-mtb-encounter-1)
 
 // =============================================================================
 // 3. MII_PR_MTB_Diagnose_Primaertumor (Condition, extends Onko Diagnose)
@@ -60,12 +64,86 @@ Description: "Test instance for MTB primary tumor diagnosis with all MS elements
 * clinicalStatus.coding = http://terminology.hl7.org/CodeSystem/condition-clinical#active
 * verificationStatus.coding[condition-ver-status][+] = $condition-ver-status#confirmed
 * verificationStatus.coding[primaertumorDiagnosesicherung][+] = $mii-cs-onko-primaertumor-diagnosesicherung#7
-* code.coding[+] = $ICD10GM#C34.1 "Bösartige Neubildung: Oberlappen (-Bronchus)"
-* code.coding[=].version = "2024"
+* code.coding[icd10-gm] = $ICD10GM#C34.1 "Bösartige Neubildung: Oberlappen (-Bronchus)"
+* code.coding[icd10-gm].version = "2024"
+* code.coding[icd10-gm].extension[Diagnosesicherheit].valueCoding = $diagnosesicherheit#G "Gesicherte Diagnose"
+* code.coding[icd10-gm].extension[Seitenlokalisation].valueCoding = $seitenlokalisation#R "rechts"
+* code.coding[icd10-gm].extension[Mehrfachcodierungs-Kennzeichen].valueCoding = $mehrfachcodierungs-kennzeichen#"!"
 * bodySite = $ICDO3#C34.1 "Lungenoberlappen"
+* bodySite.coding[snomed-ct] = $SCT#45653009 "Structure of upper lobe of lung (body structure)"
+* bodySite.coding[snomed-ct].version = "http://snomed.info/sct/900000000000207008/version/20240201"
 * stage[ErstdiagnoseZeitpunkt].assessment[+] = Reference(mii-exa-test-data-mtb-tumorausbreitung-1)
 // type inherited from profile pattern (sct#371469007 "Histologic grade of neoplasm")
 * stage[OncoTree].assessment[+] = Reference(mii-exa-test-data-mtb-oncotree-1)
+* identifier.system = "https://www.charite.de/fhir/sid/mtb-diagnose"
+* identifier.value = "DIAG-2024-001"
+* encounter = Reference(mii-exa-test-data-mtb-encounter-1)
+* onsetDateTime = "2023-12-15"
+* note.text = "Erstdiagnose eines EGFR-mutierten NSCLC des rechten Oberlappens."
+* evidence.code = $SCT#49727002 "Cough (finding)"
+* evidence.detail = Reference(mii-exa-test-data-mtb-evidenz-liste-1)
+* extension[morphology-behavior-icdo3].valueCodeableConcept.coding = $ICDO3#8140/3 "Adenocarcinoma, NOS"
+* extension[morphology-behavior-icdo3].valueCodeableConcept.text = "Adenokarzinom o.n.A."
+* extension[dueTo].valueCodeableConcept = $SCT#77176002 "Smoker (finding)"
+* extension[occurredFollowing].valueCodeableConcept = $SCT#65958008 "Chronic disease of respiratory system (disorder)"
+* extension[ReferenzPrimaerdiagnose].valueReference = Reference(mii-exa-test-data-mtb-diagnose-primaertumor-2)
+
+// Variante: abgeschlossene Diagnose mit abatementDateTime + onsetAge (MS-Choice-Varianten)
+Instance: mii-exa-test-data-mtb-diagnose-primaertumor-2
+InstanceOf: MII_PR_MTB_Diagnose_Primaertumor
+Usage: #example
+Title: "MTB Diagnose Primaertumor (Variante abatementDateTime)"
+Description: "Minimal-Variante fuer die MS-Choice-Alternativen abatementDateTime und onsetAge"
+* insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
+* meta.profile = "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-diagnose-primaertumor"
+* extension[Feststellungsdatum].valueDateTime = "2018-03-01"
+* recordedDate = "2018-03-01"
+* subject = Reference(mii-exa-test-data-mtb-patient-1)
+* clinicalStatus.coding = http://terminology.hl7.org/CodeSystem/condition-clinical#resolved
+* verificationStatus.coding[condition-ver-status][+] = $condition-ver-status#confirmed
+* verificationStatus.coding[primaertumorDiagnosesicherung][+] = $mii-cs-onko-primaertumor-diagnosesicherung#7
+* code.coding[icd10-gm] = $ICD10GM#C61 "Bösartige Neubildung der Prostata"
+* code.coding[icd10-gm].version = "2018"
+* onsetAge = 46 'a'
+* onsetAge.unit = "Jahre"
+* onsetAge.extension[Lebensphase-Beginn].valueCodeableConcept.coding = $SCT#41847000 "Adulthood (qualifier value)"
+* abatementDateTime = "2019-06-30"
+
+// Variante: abgeschlossene Diagnose mit abatementAge (MS-Choice-Variante)
+Instance: mii-exa-test-data-mtb-diagnose-primaertumor-3
+InstanceOf: MII_PR_MTB_Diagnose_Primaertumor
+Usage: #example
+Title: "MTB Diagnose Primaertumor (Variante abatementAge)"
+Description: "Minimal-Variante fuer die MS-Choice-Alternative abatementAge"
+* insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
+* meta.profile = "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-diagnose-primaertumor"
+* extension[Feststellungsdatum].valueDateTime = "2015-05-01"
+* recordedDate = "2015-05-01"
+* subject = Reference(mii-exa-test-data-mtb-patient-1)
+* clinicalStatus.coding = http://terminology.hl7.org/CodeSystem/condition-clinical#resolved
+* verificationStatus.coding[condition-ver-status][+] = $condition-ver-status#confirmed
+* verificationStatus.coding[primaertumorDiagnosesicherung][+] = $mii-cs-onko-primaertumor-diagnosesicherung#7
+* code.coding[icd10-gm] = $ICD10GM#C44.3 "Sonstige bösartige Neubildungen: Haut sonstiger und nicht näher bezeichneter Teile des Gesichtes"
+* code.coding[icd10-gm].version = "2015"
+* abatementAge = 45 'a'
+* abatementAge.unit = "Jahre"
+* abatementAge.extension[Lebensphase-Ende].valueCodeableConcept.coding = $SCT#41847000 "Adulthood (qualifier value)"
+
+// Evidenz-Liste der Erstdiagnose (Ziel von Condition.evidence.detail)
+Instance: mii-exa-test-data-mtb-evidenz-liste-1
+InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-liste-evidenz-erstdiagnose
+Usage: #example
+Title: "MTB Evidenz-Liste Erstdiagnose"
+Description: "Liste der Evidenz-Befunde zur Erstdiagnose des Primaertumors"
+* insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
+* status = #current
+* mode = #snapshot
+* title = "Liste der Evidenz zum Erstdiagnosezeitpunkt"
+* subject = Reference(mii-exa-test-data-mtb-patient-1)
+* entry.item = Reference(mii-exa-test-data-mtb-labobs-vorbefund-1)
 
 // =============================================================================
 // 4. MII_PR_MTB_Oncotree (Observation)
@@ -83,6 +161,7 @@ Description: "Test instance for Oncotree tumor classification"
 * subject = Reference(mii-exa-test-data-mtb-patient-1)
 * effectiveDateTime = "2024-01-05"
 * valueCodeableConcept = $OT#NSCLC "Non-Small Cell Lung Cancer"
+* encounter = Reference(mii-exa-test-data-mtb-encounter-1)
 
 // =============================================================================
 // 5. MII_PR_MTB_Systemische_Vortherapie (Procedure, extends Onko Systemische Therapie)
@@ -104,6 +183,26 @@ Description: "Test instance for prior systemic therapy"
 * performedPeriod.start = "2023-06-01"
 * performedPeriod.end = "2023-11-15"
 * outcome.coding[+] = $mii-cs-onko-therapie-grund-ende#E
+* code.coding[ops] = $OPS#8-54 "Zytostatische Chemotherapie, Immuntherapie und antiretrovirale Therapie"
+* code.coding[ops].version = "2023"
+* code.coding[ops].extension[Seitenlokalisation].valueCoding = $seitenlokalisation#R "rechts"
+* encounter = Reference(mii-exa-test-data-mtb-encounter-1)
+* extension[Dokumentationsdatum].valueDateTime = "2023-11-20"
+* extension[durchfuehrungsabsicht].valueCoding = $SCT#262202000 "Therapeutic"
+* extension[Intention].valueCodeableConcept.text = "kurativ"
+* extension[StellungZurOp].valueCodeableConcept.coding.system = "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-therapie-stellungzurop"
+* extension[StellungZurOp].valueCodeableConcept.coding.code = #O
+* extension[StellungZurOp].valueCodeableConcept.text = "ohne Bezug zur operativen Therapie"
+* bodySite.coding[snomed-ct] = $SCT#39607008 "Lung structure (body structure)"
+* bodySite.coding[snomed-ct].version = "http://snomed.info/sct/900000000000207008/version/20240201"
+* note.text = "Platinbasierte Erstlinien-Chemotherapie vor MTB-Vorstellung."
+* basedOn[tumorkonferenz] = Reference(mii-exa-test-data-mtb-therapieplan-1)
+* partOf = Reference(mii-exa-test-data-mtb-systemische-therapie-1)
+* reasonReference = Reference(mii-exa-test-data-mtb-diagnose-primaertumor-1)
+* statusReason.coding = $mii-cs-mtb-therapie-status-grund#regular-completion
+* usedCode.coding.system = $mii-cs-onko-therapie-protokolle
+* usedCode.coding.code = #CarboTax
+* usedCode.coding.display = "CarboTax"
 
 // =============================================================================
 // 6. MII_PR_MTB_Tumorausbreitung (Observation)
@@ -139,3 +238,4 @@ Description: "Test instance for WHO CNS tumor grading"
 * subject = Reference(mii-exa-test-data-mtb-patient-1)
 * effectiveDateTime = "2024-01-05"
 * valueCodeableConcept = $SCT#1228852002 "World Health Organization grade 4 (qualifier value)"
+* encounter = Reference(mii-exa-test-data-mtb-encounter-1)

@@ -19,6 +19,7 @@ Description: "Device: NGS-Sequenzierer (Illumina NovaSeq 6000) des MTB-NGS-Workf
 * manufacturer = "Illumina"
 * deviceName.name = "Illumina NovaSeq 6000"
 * deviceName.type = #user-friendly-name
+* type.text = "NGS-Sequenzierer"
 * definition = Reference(mii-exa-test-data-mtb-panel-devicedef-1)
 
 // ----------------------------------------------------------------------------
@@ -36,3 +37,8 @@ Description: "DeviceDefinition: NGS-Gen-Panel TruSight Oncology 500 des MTB-NGS-
 * deviceName.type = #user-friendly-name
 * type = $mii-cs-mtb-devicefunction#gene-panel
 * version = "2.0"
+* extension[geneList].extension[geneList].valueCanonical = "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/ValueSet/mii-vs-mtb-panel-cgp"
+* extension[geneList].extension[scope].valueCodeableConcept = $mii-cs-mtb-panel-capability#snv-detection
+* capability.type = $mii-cs-mtb-panel-capability#snv-detection
+* note.text = "Panel deckt SNVs, CNVs, Fusionen und Signaturen ab."
+* onlineInformation = "https://emea.illumina.com/products/by-type/clinical-research-products/trusight-oncology-500.html"

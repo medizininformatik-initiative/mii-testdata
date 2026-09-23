@@ -61,6 +61,7 @@ Description: "Onkologie Test Therapieempfehlung Operation - Debulking"
 * reasonReference = Reference(mii-exa-test-data-onko-diagnose-1)
 * basedOn = Reference(mii-exa-test-data-onko-tumorkonferenz-1)
 * supportingInfo = Reference(mii-exa-test-data-onko-befund-1)
+* encounter = Reference(mii-exa-test-data-onko-encounter-1)
 
 // Therapieempfehlung Medikation (MedicationRequest)
 Instance: mii-exa-test-data-onko-therapieempfehlung-medikation-1
@@ -75,7 +76,58 @@ Description: "Onkologie Test Therapieempfehlung Medikation - Carboplatin"
 * authoredOn = "2021-06-20"
 * reasonReference[Primaertumor] = Reference(mii-exa-test-data-onko-diagnose-1)
 * medicationCodeableConcept.coding[atcClassDe] = $ATC_DE#L01XA02 "Carboplatin"
+* medicationCodeableConcept.coding[atcClassDe].version = "2021"
+* medicationCodeableConcept.text = "Carboplatin AUC5 i.v."
 * supportingInformation = Reference(mii-exa-test-data-onko-genetische-variante-1)
+* basedOn = Reference(mii-exa-test-data-onko-tumorkonferenz-1)
+* encounter = Reference(mii-exa-test-data-onko-encounter-1)
+* identifier.system = "https://www.charite.de/fhir/sid/onko-beschluss"
+* identifier.value = "TE-MED-2021-001"
+* dosageInstruction.text = "AUC5 i.v. Tag 1, alle 21 Tage"
+* dosageInstruction.sequence = 1
+* dosageInstruction.site = $SCT#368049005 "Structure of vein of upper extremity (body structure)"
+* dosageInstruction.route = $SCT#47625008 "Intravenous route (qualifier value)"
+* dosageInstruction.asNeededBoolean = false
+* dosageInstruction.timing.event = "2021-07-05T09:00:00+02:00"
+* dosageInstruction.timing.repeat.frequency = 1
+* dosageInstruction.timing.repeat.period = 21
+* dosageInstruction.timing.repeat.periodUnit = #d
+* dosageInstruction.timing.repeat.periodMax = 28
+* dosageInstruction.timing.repeat.boundsPeriod.start = "2021-07-05"
+* dosageInstruction.timing.repeat.boundsPeriod.end = "2021-09-05"
+* dosageInstruction.timing.repeat.count = 3
+* dosageInstruction.timing.repeat.countMax = 6
+* dosageInstruction.timing.repeat.duration = 60
+* dosageInstruction.timing.repeat.durationMax = 90
+* dosageInstruction.timing.repeat.durationUnit = #min
+* dosageInstruction.timing.repeat.frequencyMax = 1
+* dosageInstruction.timing.repeat.dayOfWeek[+] = #mon
+* dosageInstruction.timing.repeat.timeOfDay[+] = "09:00:00"
+* dosageInstruction.doseAndRate[0].doseQuantity = 450 'mg'
+* dosageInstruction.doseAndRate[0].doseQuantity.unit = "mg"
+* dosageInstruction.doseAndRate[0].rateRatio.numerator = 450 'mg'
+* dosageInstruction.doseAndRate[0].rateRatio.numerator.unit = "mg"
+* dosageInstruction.doseAndRate[0].rateRatio.denominator = 1 'h'
+* dosageInstruction.doseAndRate[0].rateRatio.denominator.unit = "Stunde"
+* dosageInstruction.doseAndRate[1].doseRange.low = 400 'mg'
+* dosageInstruction.doseAndRate[1].doseRange.low.unit = "mg"
+* dosageInstruction.doseAndRate[1].doseRange.high = 450 'mg'
+* dosageInstruction.doseAndRate[1].doseRange.high.unit = "mg"
+* dosageInstruction.doseAndRate[1].rateQuantity = 450 'mg/h'
+* dosageInstruction.doseAndRate[1].rateQuantity.unit = "mg/h"
+* dosageInstruction.doseAndRate[2].rateRange.low = 300 'mg/h'
+* dosageInstruction.doseAndRate[2].rateRange.low.unit = "mg/h"
+* dosageInstruction.doseAndRate[2].rateRange.high = 500 'mg/h'
+* dosageInstruction.doseAndRate[2].rateRange.high.unit = "mg/h"
+* dosageInstruction.maxDosePerAdministration = 450 'mg'
+* dosageInstruction.maxDosePerAdministration.unit = "mg"
+* dosageInstruction.maxDosePerPeriod.numerator = 450 'mg'
+* dosageInstruction.maxDosePerPeriod.numerator.unit = "mg"
+* dosageInstruction.maxDosePerPeriod.denominator = 21 'd'
+* dosageInstruction.maxDosePerPeriod.denominator.unit = "Tage"
+* reasonCode = $ICD10GM|2021#C56 "Bösartige Neubildung des Ovars"
+* requester = Reference(mii-exa-test-data-organization-charite)
+* substitution.allowedBoolean = false
 
 // Second Therapieempfehlung Medikation
 Instance: mii-exa-test-data-onko-therapieempfehlung-medikation-2
@@ -90,6 +142,14 @@ Description: "Onkologie Test Therapieempfehlung Medikation - Paclitaxel"
 * authoredOn = "2021-06-20"
 * reasonReference[Primaertumor] = Reference(mii-exa-test-data-onko-diagnose-1)
 * medicationCodeableConcept.coding[atcClassDe] = $ATC_DE#L01CD01 "Paclitaxel"
+* medicationCodeableConcept.coding[atcClassDe].version = "2021"
+* priorPrescription = Reference(mii-exa-test-data-onko-therapieempfehlung-medikation-1)
+* dosageInstruction.text = "175 mg/m2 i.v. bei Bedarf nach Vertraeglichkeit"
+* dosageInstruction.asNeededCodeableConcept = $SCT#422587007 "Nausea (finding)"
+* dosageInstruction.timing.repeat.boundsDuration = 8 'wk'
+* dosageInstruction.timing.repeat.boundsDuration.unit = "Wochen"
+* dosageInstruction.timing.repeat.when[+] = #MORN
+* dosageInstruction.timing.repeat.offset = 30
 
 // Therapieempfehlung Kombinationstherapie (RequestGroup)
 Instance: mii-exa-test-data-onko-therapieempfehlung-kombi-1
@@ -108,6 +168,7 @@ Description: "Onkologie Test Therapieempfehlung Kombinationstherapie - CarboTax 
 * authoredOn = "2021-06-20"
 * reasonReference = Reference(mii-exa-test-data-onko-diagnose-1)
 * action[+].title = "CarboTax Chemotherapie"
+* action[=].code = $mii-cs-onko-therapie-typ#CH "Chemotherapie"
 * action[=].action[+].title = "Carboplatin"
 * action[=].action[=].resource = Reference(mii-exa-test-data-onko-therapieempfehlung-medikation-1)
 * action[=].action[+].title = "Paclitaxel"
@@ -164,5 +225,11 @@ Description: "Onkologie Test Therapieempfehlung Medikation - Niraparib"
 * authoredOn = "2022-03-10"
 * reasonReference[Primaertumor] = Reference(mii-exa-test-data-onko-diagnose-1)
 * medicationCodeableConcept.coding[atcClassDe] = $ATC_DE#L01XK02 "Niraparib"
+* medicationCodeableConcept.coding[atcClassDe].version = "2022"
 * note.text = "Erhaltungstherapie bei BRCA1-positivem Ovarialkarzinom"
+* dosageInstruction.text = "Einschleichen über 2-4 Wochen"
+* dosageInstruction.timing.repeat.boundsRange.low = 2 'wk'
+* dosageInstruction.timing.repeat.boundsRange.low.unit = "Wochen"
+* dosageInstruction.timing.repeat.boundsRange.high = 4 'wk'
+* dosageInstruction.timing.repeat.boundsRange.high.unit = "Wochen"
 

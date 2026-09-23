@@ -20,7 +20,59 @@ Description: "Onkologie Test Diagnose - Ovarialkarzinom"
 * recordedDate = "2021-06-15"
 * bodySite.coding[primaertumorSeitenlokalisation] = $mii-cs-onko-seitenlokalisation#L "Links"
 * bodySite.coding[icd-o-3] = $ICDO3#C56.9 "Ovar"
+* bodySite.coding[snomed-ct] = $SCT#15497006 "Ovarian structure (body structure)"
+* bodySite.coding[snomed-ct].version = "http://snomed.info/sct/900000000000207008/version/20240201"
 * extension[occurredFollowing].valueReference = Reference(mii-exa-test-data-onko-fruehere-tumorerkrankung-1)
+* code.coding[icd10-gm].extension[Diagnosesicherheit].valueCoding = $diagnosesicherheit#G "Gesicherte Diagnose"
+* code.coding[icd10-gm].extension[Seitenlokalisation].valueCoding = $seitenlokalisation#L "links"
+* code.coding[icd10-gm].extension[Mehrfachcodierungs-Kennzeichen].valueCoding = $mehrfachcodierungs-kennzeichen#"!"
+* identifier.system = "https://www.charite.de/fhir/sid/onko-diagnose"
+* identifier.value = "ONKO-DIAG-2021-001"
+* evidence.code = $SCT#21522001 "Abdominal pain (finding)"
+* evidence.detail = Reference(mii-exa-test-data-onko-liste-evidenz-1)
+* extension[morphology-behavior-icdo3].valueCodeableConcept.coding = $ICDO3#8461/3 "Seröses Oberflächenpapillom"
+* extension[morphology-behavior-icdo3].valueCodeableConcept.text = "High-grade seröses Karzinom"
+* extension[dueTo].valueCodeableConcept = $SCT#726019003 "Hereditary breast and ovarian cancer syndrome (disorder)"
+* extension[ReferenzPrimaerdiagnose].valueReference = Reference(mii-exa-test-data-onko-diagnose-2)
+
+// Variante: abgeschlossene Diagnose mit onsetAge (inkl. Lebensphase) und abatementDateTime
+Instance: mii-exa-test-data-onko-diagnose-2
+InstanceOf: MII_PR_Onko_Diagnose_Primaertumor
+Usage: #example
+Description: "Onkologie Diagnose-Variante - abgeschlossen, onsetAge mit Lebensphase-Beginn und abatementDateTime"
+* insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
+* extension[Feststellungsdatum].valueDateTime = "2015-03-01"
+* clinicalStatus = $condition-clinical#resolved
+* verificationStatus.coding[condition-ver-status] = $condition-ver-status#confirmed
+* verificationStatus.coding[primaertumorDiagnosesicherung] = $mii-cs-onko-primaertumor-diagnosesicherung#7 "histologische Untersuchung eines Primärtumors"
+* code.coding[icd10-gm] = $ICD10GM|2015#C50.4 "Bösartige Neubildung: Oberer äußerer Quadrant der Brustdrüse"
+* code.coding[icd10-gm].version = "2015"
+* subject = Reference(mii-exa-test-data-onko-patient-1)
+* recordedDate = "2015-03-01"
+* onsetAge = 52 'a'
+* onsetAge.unit = "Jahre"
+* onsetAge.extension[Lebensphase-Beginn].valueCodeableConcept.coding = $SCT#41847000 "Adulthood (qualifier value)"
+* abatementDateTime = "2016-06-30"
+
+// Variante: abgeschlossene Diagnose mit abatementAge
+Instance: mii-exa-test-data-onko-diagnose-3
+InstanceOf: MII_PR_Onko_Diagnose_Primaertumor
+Usage: #example
+Description: "Onkologie Diagnose-Variante - abgeschlossen mit abatementAge"
+* insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
+* extension[Feststellungsdatum].valueDateTime = "2010-05-01"
+* clinicalStatus = $condition-clinical#resolved
+* verificationStatus.coding[condition-ver-status] = $condition-ver-status#confirmed
+* verificationStatus.coding[primaertumorDiagnosesicherung] = $mii-cs-onko-primaertumor-diagnosesicherung#7 "histologische Untersuchung eines Primärtumors"
+* code.coding[icd10-gm] = $ICD10GM|2010#C44.3 "Sonstige bösartige Neubildungen: Haut sonstiger und nicht näher bezeichneter Teile des Gesichtes"
+* code.coding[icd10-gm].version = "2010"
+* subject = Reference(mii-exa-test-data-onko-patient-1)
+* recordedDate = "2010-05-01"
+* abatementAge = 48 'a'
+* abatementAge.unit = "Jahre"
+* abatementAge.extension[Lebensphase-Ende].valueCodeableConcept.coding = $SCT#41847000 "Adulthood (qualifier value)"
 
 // Previous Tumor Disease
 Instance: mii-exa-test-data-onko-fruehere-tumorerkrankung-1

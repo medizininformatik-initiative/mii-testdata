@@ -25,6 +25,14 @@ Description: "Onkologie Test Operation - Debulking Ovarialkarzinom"
 * reasonReference = Reference(mii-exa-test-data-onko-diagnose-1)
 * basedOn = Reference(mii-exa-test-data-onko-tumorkonferenz-1)
 * partOf = Reference(mii-exa-test-data-onko-systemische-therapie-1)
+* code.coding[ops].extension[Seitenlokalisation].valueCoding = $icd-seitenlokalisation#L "links"
+* extension[Dokumentationsdatum].valueDateTime = "2021-10-01"
+* extension[durchfuehrungsabsicht].valueCoding = $SCT#262202000 "Therapeutic"
+* extension[Intention].valueCodeableConcept.text = "kurativ"
+* extension[Urgency].valueCodeableConcept.text = "Elektiveingriff"
+* bodySite.coding[snomed-ct] = $SCT#15497006 "Ovarian structure (body structure)"
+* bodySite.coding[snomed-ct].version = "http://snomed.info/sct/900000000000207008/version/20240201"
+* note.text = "Debulking-Operation mit vollständiger makroskopischer Tumorentfernung."
 
 // Strahlentherapie (Chapter 14)
 Instance: mii-exa-test-data-onko-strahlentherapie-1
@@ -50,6 +58,14 @@ Description: "Onkologie Test Strahlentherapie - Adjuvante Bestrahlung"
 * reasonReference = Reference(mii-exa-test-data-onko-diagnose-1)
 * basedOn = Reference(mii-exa-test-data-onko-tumorkonferenz-2)
 * partOf = Reference(mii-exa-test-data-onko-verlauf-1)
+* code.coding[ops].extension[Seitenlokalisation].valueCoding = $icd-seitenlokalisation#T "trifft nicht zu"
+* extension[Dokumentationsdatum].valueDateTime = "2022-03-16"
+* extension[durchfuehrungsabsicht].valueCoding = $SCT#262202000 "Therapeutic"
+* extension[Intention].valueCodeableConcept.text = "kurativ"
+* extension[StellungZurOp].valueCodeableConcept.text = "adjuvant"
+* bodySite.coding[snomed-ct] = $SCT#12921003 "Pelvic structure (body structure)"
+* bodySite.coding[snomed-ct].version = "http://snomed.info/sct/900000000000207008/version/20240201"
+* note.text = "Adjuvante Bestrahlung des Beckens nach Operation."
 
 // Systemische Therapie (Chapter 16)
 Instance: mii-exa-test-data-onko-systemische-therapie-1
@@ -78,6 +94,14 @@ Description: "Onkologie Test Systemische Therapie - Neoadjuvante Chemotherapie C
 * usedCode.coding.system = $mii-cs-onko-systemische-therapie-protokolle
 * usedCode.coding.code = #CarboTax
 * usedCode.coding.display = "CarboTax"
+* code.coding[ops].extension[Seitenlokalisation].valueCoding = $icd-seitenlokalisation#T "trifft nicht zu"
+* extension[Dokumentationsdatum].valueDateTime = "2021-09-06"
+* extension[durchfuehrungsabsicht].valueCoding = $SCT#262202000 "Therapeutic"
+* extension[Intention].valueCodeableConcept.text = "kurativ"
+* extension[StellungZurOp].valueCodeableConcept.text = "neoadjuvant"
+* bodySite.coding[snomed-ct] = $SCT#15497006 "Ovarian structure (body structure)"
+* bodySite.coding[snomed-ct].version = "http://snomed.info/sct/900000000000207008/version/20240201"
+* note.text = "Neoadjuvante Chemotherapie nach CarboTax-Schema."
 
 // Systemische Therapie Medikation - Paclitaxel
 Instance: mii-exa-test-data-onko-medikation-1
@@ -88,11 +112,67 @@ Description: "Onkologie Test Medikation - Paclitaxel"
 * meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #completed
 * medicationCodeableConcept.coding[atcClassDe] = $ATC_DE#L01CD01 "Paclitaxel"
+* medicationCodeableConcept.coding[atcClassDe].version = "2021"
 * subject = Reference(mii-exa-test-data-onko-patient-1)
 * effectivePeriod.start = "2021-07-05"
 * effectivePeriod.end = "2021-09-05"
 * partOf[systemischeTherapie] = Reference(mii-exa-test-data-onko-systemische-therapie-1)
 * note.text = "CarboTax Schema"
+* basedOn[tumorkonferenz] = Reference(mii-exa-test-data-onko-tumorkonferenz-1)
+* basedOn[therapieempfehlung] = Reference(mii-exa-test-data-onko-therapieempfehlung-medikation-2)
+* category = $med-statement-category#inpatient "Inpatient"
+* context = Reference(mii-exa-test-data-onko-encounter-1)
+* dateAsserted = "2021-07-05"
+* identifier.system = "https://www.charite.de/fhir/sid/onko-medikation"
+* identifier.value = "ONKO-MED-2021-001"
+* informationSource = Reference(mii-exa-test-data-onko-patient-1)
+* medicationCodeableConcept.text = "Paclitaxel 175 mg/m2 i.v."
+* reasonCode = $ICD10GM|2021#C56 "Bösartige Neubildung des Ovars"
+* reasonReference = Reference(mii-exa-test-data-onko-diagnose-1)
+* dosage.sequence = 1
+* dosage.text = "175 mg/m2 i.v. über 3 Stunden, Tag 1 des 21-Tage-Zyklus"
+* dosage.site = $SCT#368049005 "Structure of vein of upper extremity (body structure)"
+* dosage.route = $SCT#47625008 "Intravenous route (qualifier value)"
+* dosage.asNeededBoolean = false
+* dosage.timing.event = "2021-07-05T09:00:00+02:00"
+* dosage.timing.repeat.frequency = 1
+* dosage.timing.repeat.period = 21
+* dosage.timing.repeat.periodUnit = #d
+* dosage.timing.repeat.periodMax = 28
+* dosage.timing.repeat.boundsPeriod.start = "2021-07-05"
+* dosage.timing.repeat.boundsPeriod.end = "2021-09-05"
+* dosage.timing.repeat.count = 3
+* dosage.timing.repeat.countMax = 6
+* dosage.timing.repeat.duration = 180
+* dosage.timing.repeat.durationMax = 240
+* dosage.timing.repeat.durationUnit = #min
+* dosage.timing.repeat.frequencyMax = 1
+* dosage.timing.repeat.dayOfWeek[+] = #mon
+* dosage.timing.repeat.timeOfDay[+] = "09:00:00"
+* dosage.doseAndRate[0].doseQuantity = 300 'mg'
+* dosage.doseAndRate[0].doseQuantity.unit = "mg"
+* dosage.doseAndRate[0].rateRatio.numerator = 100 'mg'
+* dosage.doseAndRate[0].rateRatio.numerator.unit = "mg"
+* dosage.doseAndRate[0].rateRatio.denominator = 1 'h'
+* dosage.doseAndRate[0].rateRatio.denominator.unit = "Stunde"
+* dosage.doseAndRate[1].doseRange.low = 250 'mg'
+* dosage.doseAndRate[1].doseRange.low.unit = "mg"
+* dosage.doseAndRate[1].doseRange.high.value = 300
+* dosage.doseAndRate[1].doseRange.high.unit = "mg"
+* dosage.doseAndRate[1].doseRange.high.system = $UCUM
+* dosage.doseAndRate[1].doseRange.high.code = #mg
+* dosage.doseAndRate[1].rateQuantity = 100 'mg/h'
+* dosage.doseAndRate[1].rateQuantity.unit = "mg/h"
+* dosage.doseAndRate[2].rateRange.low = 80 'mg/h'
+* dosage.doseAndRate[2].rateRange.low.unit = "mg/h"
+* dosage.doseAndRate[2].rateRange.high = 120 'mg/h'
+* dosage.doseAndRate[2].rateRange.high.unit = "mg/h"
+* dosage.maxDosePerAdministration = 300 'mg'
+* dosage.maxDosePerAdministration.unit = "mg"
+* dosage.maxDosePerPeriod.numerator = 300 'mg'
+* dosage.maxDosePerPeriod.numerator.unit = "mg"
+* dosage.maxDosePerPeriod.denominator = 21 'd'
+* dosage.maxDosePerPeriod.denominator.unit = "Tage"
 
 // Systemische Therapie Medikation - Carboplatin
 Instance: mii-exa-test-data-onko-medikation-2
@@ -103,11 +183,18 @@ Description: "Onkologie Test Medikation - Carboplatin"
 * meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #completed
 * medicationCodeableConcept.coding[atcClassDe] = $ATC_DE#L01XA02 "Carboplatin"
+* medicationCodeableConcept.coding[atcClassDe].version = "2021"
 * subject = Reference(mii-exa-test-data-onko-patient-1)
 * effectivePeriod.start = "2021-07-05"
 * effectivePeriod.end = "2021-09-05"
 * partOf[systemischeTherapie] = Reference(mii-exa-test-data-onko-systemische-therapie-1)
 * note.text = "CarboTax Schema"
+* dosage.text = "AUC5 i.v. bei Bedarfsanpassung nach Nierenfunktion"
+* dosage.asNeededCodeableConcept = $SCT#428165003 "Renal impairment (disorder)"
+* dosage.timing.repeat.boundsDuration = 8 'wk'
+* dosage.timing.repeat.boundsDuration.unit = "Wochen"
+* dosage.timing.repeat.when[+] = #MORN
+* dosage.timing.repeat.offset = 30
 
 // Systemische Therapie Medikation mit UNII (for drugs without ATC)
 Instance: mii-exa-test-data-onko-medikation-3
@@ -118,10 +205,16 @@ Description: "Onkologie Test Medikation - Niraparib (PARP-Inhibitor)"
 * meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #completed
 * medicationCodeableConcept.coding[atcClassDe] = $ATC_DE#L01XK02 "Niraparib"
+* medicationCodeableConcept.coding[atcClassDe].version = "2022"
 * subject = Reference(mii-exa-test-data-onko-patient-1)
 * effectivePeriod.start = "2022-01-25"
 * partOf[systemischeTherapie] = Reference(mii-exa-test-data-onko-systemische-therapie-1)
 * note.text = "Erhaltungstherapie mit PARP-Inhibitor"
+* dosage.text = "Einschleichen über 2-4 Wochen"
+* dosage.timing.repeat.boundsRange.low = 2 'wk'
+* dosage.timing.repeat.boundsRange.low.unit = "Wochen"
+* dosage.timing.repeat.boundsRange.high = 4 'wk'
+* dosage.timing.repeat.boundsRange.high.unit = "Wochen"
 
 // ============================================================================
 // Strahlentherapie Bestrahlung (for SearchParameter coverage)
@@ -164,6 +257,13 @@ Description: "Onkologie Test Strahlentherapie Bestrahlung - mit allen Dosisangab
 * extension[Einzeldosis].valueQuantity.code = #Gy
 // Boost (covers bestrahlung-boost)
 * extension[Boost].valueCodeableConcept = $mii-cs-onko-strahlentherapie-boost#SIB "simultan integrierter Boost"
+* bodySite.coding[snomed-ct] = $SCT#12921003 "Pelvic structure (body structure)"
+* bodySite.coding[snomed-ct].version = "http://snomed.info/sct/900000000000207008/version/20240201"
+* code.coding[ops].extension[Seitenlokalisation].valueCoding = $icd-seitenlokalisation#T "trifft nicht zu"
+* encounter = Reference(mii-exa-test-data-onko-encounter-1)
+* extension[Dokumentationsdatum].valueDateTime = "2022-03-16"
+* extension[durchfuehrungsabsicht].valueCoding = $SCT#262202000 "Therapeutic"
+* note.text = "Perkutane Bestrahlung des Beckens, 25 Fraktionen à 2 Gy."
 
 // ============================================================================
 // Nuklearmedizinische Bestrahlung (Radionuklidtherapie)
@@ -204,3 +304,10 @@ Description: "Onkologie Test Nuklearmedizinische Bestrahlung - Radiojod-Therapie
 * extension[Einzeldosis].valueQuantity.code = #MBq
 // Boost
 * extension[Boost].valueCodeableConcept = $mii-cs-onko-strahlentherapie-boost#N "nein, ohne Boost"
+* bodySite.coding[snomed-ct] = $SCT#69748006 "Thyroid structure (body structure)"
+* bodySite.coding[snomed-ct].version = "http://snomed.info/sct/900000000000207008/version/20240201"
+* code.coding[ops].extension[Seitenlokalisation].valueCoding = $icd-seitenlokalisation#T "trifft nicht zu"
+* encounter = Reference(mii-exa-test-data-onko-encounter-1)
+* extension[Dokumentationsdatum].valueDateTime = "2022-04-04"
+* extension[durchfuehrungsabsicht].valueCoding = $SCT#262202000 "Therapeutic"
+* note.text = "Radiojodtherapie mit 3700 MBq I-131."
