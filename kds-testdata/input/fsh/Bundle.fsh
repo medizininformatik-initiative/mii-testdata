@@ -33,6 +33,7 @@ Description: "Bundle: Patient-1"
 * insert AddBundleEntry(mii-exa-test-data-patient-1-consent-1, Consent)
 * insert AddBundleEntry(mii-exa-test-data-patient-1-consent-docref-1, DocumentReference)
 * insert AddBundleEntry(mii-exa-test-data-patient-1-consent-provenance-1, Provenance)
+* insert AddBundleEntry(mii-exa-test-data-patient-1-consent-qr-1, QuestionnaireResponse)
 * insert AddBundleEntry(mii-exa-test-data-patient-1-vitalstatus-1, Observation)
 * insert AddBundleEntry(mii-exa-test-data-patient-1-todesursache-1, Condition)
 * insert AddBundleEntry(mii-exa-test-data-patient-1-allergie-1, AllergyIntolerance)
@@ -60,6 +61,8 @@ Description: "Bundle: Patient-1"
 * insert AddBundleEntry(mii-exa-test-data-patient-1-medstatement-1, MedicationStatement)
 * insert AddBundleEntry(mii-exa-test-data-patient-1-medstatement-2, MedicationStatement)
 * insert AddBundleEntry(mii-exa-test-data-patient-1-medstatement-3, MedicationStatement)
+// Specimen bleibt im Biobank-Modulbundle (eigener Patient); Labor referenziert
+// die Probe als logische Referenz (identifier), nicht literal.
 // * insert AddBundleEntry(mii-exa-test-data-patient-1-specimen-1, Specimen)
 // * insert AddBundleEntry(mii-exa-test-data-patient-1-substance-1, Substance)
 * insert AddBundleEntry(mii-exa-test-data-device-roche-cobas, Device)
@@ -81,6 +84,8 @@ Description: "Bundle: Patient-1"
 * insert AddBundleEntry(mii-exa-test-data-patient-1-labobs-5, Observation)
 * insert AddBundleEntry(mii-exa-test-data-patient-1-labobs-6, Observation)
 * insert AddBundleEntry(mii-exa-test-data-patient-1-labobs-7, Observation)
+* insert AddBundleEntry(mii-exa-test-data-patient-1-labobs-8, Observation)
+* insert AddBundleEntry(mii-exa-test-data-patient-1-labobs-9, Observation)
 * insert AddBundleEntry(mii-exa-test-data-practitioner-role-physician-1, PractitionerRole)
 * insert AddBundleEntry(mii-exa-test-data-practitioner-physician-1, Practitioner)
 * insert AddBundleEntry(mii-exa-test-data-practitioner-physician-2, Practitioner)

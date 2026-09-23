@@ -18,7 +18,10 @@ Description: "Kardio Kardiale Deviceimplantation: Implantation eines ICD"
 * code.coding[sct] = $sct20260701#395218007 "Implantation of cardiac defibrillator (procedure)"
 * code.coding[ops] = $ops#5-377.5 "Implantation eines Herzschrittmachers, Defibrillators und Ereignis-Rekorders: Defibrillator mit Einkammer-Stimulation"
 * code.coding[ops].version = "2026"
+* code.coding[ops].extension[0].url = "http://fhir.de/StructureDefinition/seitenlokalisation"
+* code.coding[ops].extension[0].valueCoding = $seitenlokalisation#L "links"
 * subject = Reference(mii-exa-test-data-kardiologie-patient-1)
+* encounter = Reference(mii-exa-test-data-kardiologie-encounter-1)
 * performedDateTime = "2025-03-12"
 * bodySite.coding[snomed-ct] = $sct20260701#80891009 "Heart structure (body structure)"
 * focalDevice.manipulated = Reference(mii-exa-test-data-kardiologie-device-1)

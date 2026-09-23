@@ -19,12 +19,20 @@ Description: "Specimen: EDTA-Blut für Klinische Chemie und Hämatologie"
 * collection.bodySite.coding[sct] = $sct#789218009 "Structure of dorsum of left hand (body structure)"
 * collection.fastingStatusCodeableConcept = $v2-0916#F "Patient was fasting prior to the procedure."
 * collection.method = $sct#129300006
-//* processing[lagerprozess][+].extension[temperaturbedingungen].valueRange.low = 15 'Cel' "°C"
-//* processing[lagerprozess][=].extension[temperaturbedingungen].valueRange.high = 25 'Cel' "°C"
-//* processing[lagerprozess][=].extension[temperaturbedingungen].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Temperaturbedingungen"
-//* processing[lagerprozess][=].procedure = $sct#1186936003 "Storage of specimen (procedure)"
-//* processing[lagerprozess][=].timePeriod.start = "2024-02-15T11:05:00+01:00"
-//* processing[lagerprozess][=].timePeriod.end = "2024-02-15T11:35:00+01:00"
+* collection.quantity = 10 'mL' "mL"
+* note.text = "Probe innerhalb von 30 Minuten nach Entnahme eingelagert."
+// Logische Referenz auf den Laborauftrag (liegt im Pat-1-Bundle)
+* request.identifier.system = "https://www.charite.de/fhir/sid/Laboranforderungen"
+* request.identifier.value = "LA_000001"
+* request.display = "Laborauftrag kleines Blutbild"
+// Lagerprozess (processing-Slice) mit Temperaturbedingungen
+* processing[lagerprozess][+].extension[temperaturbedingungen].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Temperaturbedingungen"
+* processing[lagerprozess][=].extension[temperaturbedingungen].valueRange.low = 15 'Cel' "°C"
+* processing[lagerprozess][=].extension[temperaturbedingungen].valueRange.high = 25 'Cel' "°C"
+* processing[lagerprozess][=].procedure = $sct#1186936003 "Storage of specimen (procedure)"
+* processing[lagerprozess][=].additive = Reference(mii-exa-test-data-patient-1-substance-1)
+* processing[lagerprozess][=].timePeriod.start = "2024-02-15T11:05:00+01:00"
+* processing[lagerprozess][=].timePeriod.end = "2024-02-15T11:35:00+01:00"
 //* processing[1].extension[temperaturbedingungen].valueRange.low = 15 'Cel' "°C"
 //* processing[1].extension[temperaturbedingungen].valueRange.high = 25 'Cel' "°C"
 //* processing[1].extension[temperaturbedingungen].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Temperaturbedingungen"
@@ -84,6 +92,9 @@ Description: "Specimen: Gewebeprobe aus dem Kolon"
 //* meta.profile[0] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore|1.0.8"
 * type = $sct#128159001 "Tissue specimen from colon (specimen)"
 * collection.collectedDateTime = "2022-03-24T12:44:00+01:00"
+// Zeitpunkt der Unterbindung der Blutversorgung (warme Ischaemie, Gewebeprobe)
+* collection.extension[einstellungBlutversorgung].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/EinstellungBlutversorgung"
+* collection.extension[einstellungBlutversorgung].valueDateTime = "2022-03-24T12:30:00+01:00"
 * collection.bodySite.coding[sct] = $sct#71854001 "Colon structure (body structure)"
 * collection.bodySite.coding[icd-o-3] = $icd-o-3#C18.9 "Colon, NOS"
 * identifier.system = "https://www.charite.de/fhir/sid/Bioproben"
@@ -112,6 +123,8 @@ Description: "Specimen: Serum für Klinische Chemie"
 * status = #available
 * type.coding[sct] = $sct#119364003 "Serum specimen (specimen)"
 * subject = Reference(mii-exa-test-data-biobank-patient-3)
+// Aliquot aus der primaeren Blutentnahme
+* parent = Reference(mii-exa-test-data-patient-3-specimen-3)
 * collection.collectedDateTime = "2022-04-05T07:15:00+02:00"
 * collection.bodySite.coding[sct] = $sct#368208006 "Left upper arm structure (body structure)"
 * container.type = $sct#83059008 "Tube, device (physical object)"
@@ -547,14 +560,30 @@ Description: "Specimen: Kolon-Tumor-Organoid, abgeleitet aus der Gewebeprobe von
 * type.coding[+] = $miabis-sample-type#Organoid "Organoids"
 * subject = Reference(mii-exa-test-data-biobank-patient-3)
 * parent = Reference(mii-exa-test-data-patient-3-specimen-1)
+* receivedTime = "2022-03-24T14:00:00+01:00"
 * collection.collectedDateTime = "2022-03-24T12:44:00+01:00"
+* collection.quantity = 1 'mL' "mL"
+* collection.bodySite.coding[0] = $sct#71854001 "Colon structure (body structure)"
+* collection.method = $sct#86273004 "Biopsy (procedure)"
+* collection.fastingStatusCodeableConcept = $v2-0916#NF "The patient indicated they did not fast prior to the procedure."
+* collection.extension[einstellungBlutversorgung].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/EinstellungBlutversorgung"
+* collection.extension[einstellungBlutversorgung].valueDateTime = "2022-03-24T12:30:00+01:00"
+* note.text = "Kolon-Tumor-Organoid, Passage 3, aus der Gewebeprobe etabliert."
+// Logische Referenz auf die Anforderung der Organoid-Kultur
+* request.identifier.system = "https://www.charite.de/fhir/sid/Bioproben-Anforderungen"
+* request.identifier.value = "BPA_000001"
+* request.display = "Anforderung Organoid-Kultur"
 * processing[0].extension[0].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Temperaturbedingungen"
 * processing[0].extension[0].valueRange.low = 37 'Cel' "°C"
 * processing[0].extension[0].valueRange.high = 37 'Cel' "°C"
 * processing[0].procedure = $sct#1186936003 "Storage of specimen (procedure)"
+* processing[0].additive = Reference(mii-exa-test-data-patient-1-substance-1)
 * processing[0].timePeriod.start = "2022-04-01T10:00:00+02:00"
 * processing[0].timePeriod.end = "2022-04-12T10:00:00+02:00"
 * container.type = $sct#83059008 "Tube, device (physical object)"
+* container.capacity = 2 'mL' "mL"
+* container.additiveCodeableConcept.coding = $sct#105590001 "Substance (substance)"
+* container.additiveCodeableConcept.text = "Organoid-Kulturmedium mit Matrigel"
 * container.specimenQuantity = 1 'ml'
 * container.specimenQuantity.unit = "mL"
 
@@ -572,7 +601,19 @@ Description: "Specimen (Core): DNA-Probe, extrahiert aus dem EDTA-Blut von Bioba
 * type.coding[sct] = $sct#258566005 "Deoxyribonucleic acid specimen (specimen)"
 * subject = Reference(mii-exa-test-data-biobank-patient-1)
 * parent = Reference(mii-exa-test-data-patient-1-specimen-1)
+* receivedTime = "2024-02-15T13:30:00+01:00"
 * collection.collectedDateTime = "2024-02-15T11:05:00+01:00"
+* collection.quantity = 10 'mL' "mL"
+* collection.fastingStatusCodeableConcept = $v2-0916#F "Patient was fasting prior to the procedure."
+* collection.extension[einstellungBlutversorgung].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/EinstellungBlutversorgung"
+* collection.extension[einstellungBlutversorgung].valueDateTime = "2024-02-15T11:05:00+01:00"
+* processing.description = "DNA-Extraktion aus EDTA-Vollblut"
+* processing.procedure = $sct#73373003 "Specimen centrifugation (procedure)"
+* processing.additive = Reference(mii-exa-test-data-patient-1-substance-1)
+* processing.timePeriod.start = "2024-02-15T13:45:00+01:00"
+* processing.timePeriod.end = "2024-02-15T14:30:00+01:00"
+* note.text = "DNA-Extraktion aus dem EDTA-Vollblut, Konzentration 50 ng/uL."
 * container.type = $sct#83059008 "Tube, device (physical object)"
+* container.capacity = 0.5 'mL' "mL"
 * container.specimenQuantity = 0.2 'ml'
 * container.specimenQuantity.unit = "mL"

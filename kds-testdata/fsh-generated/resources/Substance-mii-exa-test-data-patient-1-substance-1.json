@@ -25,6 +25,33 @@
       ]
     }
   ],
+  "ingredient": [
+    {
+      "quantity": {
+        "numerator": {
+          "value": 1.8,
+          "code": "mg",
+          "system": "http://unitsofmeasure.org",
+          "unit": "mg"
+        },
+        "denominator": {
+          "value": 1,
+          "code": "mL",
+          "system": "http://unitsofmeasure.org",
+          "unit": "mL"
+        }
+      },
+      "substanceCodeableConcept": {
+        "coding": [
+          {
+            "code": "69519002",
+            "system": "http://snomed.info/sct",
+            "display": "Edetic acid (substance)"
+          }
+        ]
+      }
+    }
+  ],
   "code": {
     "coding": [
       {

@@ -53,6 +53,12 @@
         }
       ]
     },
+    "quantity": {
+      "system": "http://unitsofmeasure.org",
+      "value": 10,
+      "code": "mL",
+      "unit": "mL"
+    },
     "collectedDateTime": "2024-02-15T11:05:00+01:00",
     "fastingStatusCodeableConcept": {
       "coding": [
@@ -72,6 +78,61 @@
       ]
     }
   },
+  "note": [
+    {
+      "text": "Probe innerhalb von 30 Minuten nach Entnahme eingelagert."
+    }
+  ],
+  "request": [
+    {
+      "identifier": {
+        "system": "https://www.charite.de/fhir/sid/Laboranforderungen",
+        "value": "LA_000001"
+      },
+      "display": "Laborauftrag kleines Blutbild"
+    }
+  ],
+  "processing": [
+    {
+      "extension": [
+        {
+          "valueRange": {
+            "low": {
+              "unit": "°C",
+              "system": "http://unitsofmeasure.org",
+              "code": "Cel",
+              "value": 15
+            },
+            "high": {
+              "unit": "°C",
+              "system": "http://unitsofmeasure.org",
+              "code": "Cel",
+              "value": 25
+            }
+          },
+          "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Temperaturbedingungen"
+        }
+      ],
+      "additive": [
+        {
+          "reference": "Substance/mii-exa-test-data-patient-1-substance-1"
+        }
+      ],
+      "timePeriod": {
+        "start": "2024-02-15T11:05:00+01:00",
+        "end": "2024-02-15T11:35:00+01:00"
+      },
+      "procedure": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "1186936003",
+            "display": "Storage of specimen (procedure)"
+          }
+        ]
+      }
+    }
+  ],
   "container": [
     {
       "capacity": {

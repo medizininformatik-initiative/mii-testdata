@@ -95,6 +95,7 @@ Description: "Molgen Diagnose - Erbliches Tumorsyndrom"
 * clinicalStatus = http://terminology.hl7.org/CodeSystem/condition-clinical#active
 * verificationStatus = http://terminology.hl7.org/CodeSystem/condition-ver-status#confirmed
 * code.coding = http://fhir.de/CodeSystem/bfarm/icd-10-gm#C18.7 "Bösartige Neubildung: Colon sigmoideum"
+* code.coding[0].version = "2026"
 * subject = Reference(mii-exa-test-data-molgen-patient-1)
 
 Instance: mii-exa-test-data-molgen-diagnose-2
@@ -106,4 +107,5 @@ Description: "Molgen Diagnose - NSCLC"
 * clinicalStatus = http://terminology.hl7.org/CodeSystem/condition-clinical#active
 * verificationStatus = http://terminology.hl7.org/CodeSystem/condition-ver-status#confirmed
 * code.coding = http://fhir.de/CodeSystem/bfarm/icd-10-gm#C34.1 "Bösartige Neubildung: Oberlappen (-Bronchus)"
+* code.coding[0].version = "2026"
 * subject = Reference(mii-exa-test-data-molgen-patient-2)

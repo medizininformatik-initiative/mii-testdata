@@ -70,15 +70,42 @@
         {
           "system": "http://snomed.info/sct",
           "code": "25342003",
-          "display": "Middle ear structure (body structure)"
+          "display": "Middle ear structure (body structure)",
+          "version": "http://snomed.info/sct/900000000000207008/version/20240201"
         }
       ]
     }
   ],
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/condition-assertedDate",
+      "valueDateTime": "2024-02-21"
+    }
+  ],
+  "abatementAge": {
+    "extension": [
+      {
+        "url": "http://fhir.de/StructureDefinition/lebensphase",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "41847000",
+              "system": "http://snomed.info/sct",
+              "display": "Adulthood (qualifier value)"
+            }
+          ]
+        }
+      }
+    ],
+    "value": 33,
+    "code": "a",
+    "system": "http://unitsofmeasure.org",
+    "unit": "Jahre"
+  },
   "clinicalStatus": {
     "coding": [
       {
-        "code": "active",
+        "code": "resolved",
         "system": "http://terminology.hl7.org/CodeSystem/condition-clinical"
       }
     ]

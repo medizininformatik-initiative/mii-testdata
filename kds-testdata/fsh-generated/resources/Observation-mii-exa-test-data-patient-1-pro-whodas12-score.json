@@ -34,6 +34,16 @@
       }
     ]
   },
+  "focus": [
+    {
+      "reference": "Condition/mii-exa-test-data-pro-diagnose-1"
+    }
+  ],
+  "note": [
+    {
+      "text": "Selbstauskunft im Rahmen der ambulanten Verlaufskontrolle."
+    }
+  ],
   "performer": [
     {
       "reference": "Patient/mii-exa-test-data-pro-patient-1"
@@ -58,6 +68,13 @@
     }
   ],
   "method": {
+    "coding": [
+      {
+        "code": "whodas12-simple-sum",
+        "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue",
+        "display": "WHODAS 2.0 12-Item Simple Sum Score (0-48)"
+      }
+    ],
     "text": "WHODAS 2.0 12-item simple sum scoring (0-48)"
   },
   "derivedFrom": [

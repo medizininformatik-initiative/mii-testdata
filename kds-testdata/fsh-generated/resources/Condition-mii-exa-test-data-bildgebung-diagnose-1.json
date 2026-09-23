@@ -16,7 +16,8 @@
       {
         "code": "C34.1",
         "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
-        "display": "Bösartige Neubildung: Oberlappen (-Bronchus)"
+        "display": "Bösartige Neubildung: Oberlappen (-Bronchus)",
+        "version": "2026"
       }
     ]
   },

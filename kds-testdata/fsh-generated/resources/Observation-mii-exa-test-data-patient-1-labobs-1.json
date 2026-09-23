@@ -50,6 +50,30 @@
       ]
     }
   ],
+  "code": {
+    "coding": [
+      {
+        "code": "26464-8",
+        "system": "http://loinc.org",
+        "display": "Leukocytes [#/volume] in Blood",
+        "version": "2.78"
+      }
+    ]
+  },
+  "subject": {
+    "identifier": {
+      "system": "https://www.charite.de/fhir/sid/patientenidentifikation",
+      "value": "808439625"
+    },
+    "reference": "Patient/mii-exa-test-data-patient-1"
+  },
+  "encounter": {
+    "identifier": {
+      "system": "https://www.charite.de/fhir/NamingSystem/Aufnahmenummern",
+      "value": "MII_0000001"
+    },
+    "reference": "Encounter/mii-exa-test-data-patient-1-encounter-1"
+  },
   "basedOn": [
     {
       "reference": "ServiceRequest/mii-exa-test-data-patient-1-labrequest-1"
@@ -71,6 +95,21 @@
       "text": "Leukozyten EDTA-Blut Impedanzmessung"
     }
   ],
+  "specimen": {
+    "identifier": {
+      "system": "https://www.charite.de/fhir/sid/Bioproben",
+      "value": "BP_000001"
+    },
+    "reference": "https://www.medizininformatik-initiative.de/Specimen/mii-exa-test-data-patient-1-specimen-1",
+    "display": "EDTA-Blut Patient 1"
+  },
+  "device": {
+    "identifier": {
+      "system": "https://www.charite.de/fhir/sid/Laboratory-device-identifier",
+      "value": "RocheCobasC303"
+    },
+    "reference": "Device/mii-exa-test-data-device-roche-cobas-c303"
+  },
   "referenceRange": [
     {
       "appliesTo": [
@@ -128,21 +167,6 @@
     "unit": "/nanoliter"
   },
   "status": "final",
-  "code": {
-    "coding": [
-      {
-        "code": "26464-8",
-        "system": "http://loinc.org",
-        "display": "Leukocytes [#/volume] in Blood"
-      }
-    ]
-  },
-  "subject": {
-    "reference": "Patient/mii-exa-test-data-patient-1"
-  },
-  "encounter": {
-    "reference": "Encounter/mii-exa-test-data-patient-1-encounter-1"
-  },
   "effectiveDateTime": "2024-02-15T12:00:00+01:00",
   "issued": "2024-02-15T12:00:00+01:00",
   "method": {
@@ -153,8 +177,5 @@
         "display": "Electrical impedance technique (qualifier value)"
       }
     ]
-  },
-  "device": {
-    "reference": "Device/mii-exa-test-data-device-roche-cobas-c303"
   }
 }

@@ -14,4 +14,6 @@ Description: "ServiceRequest: Studieneinschluss-Anfrage für Patient-1 in MII-BI
 * authoredOn = "2024-03-10"
 * requester = Reference(mii-exa-test-data-practitioner-physician-1)
 * reasonCode = $sct#363346000 "Malignant neoplastic disease (disorder)"
+* supportingInfo[Studie] = Reference(mii-exa-test-data-studien-studie-1)
+* supportingInfo[Proband] = Reference(mii-exa-test-data-studien-proband-1)
 * note.text = "Patient erfüllt Einschlusskriterien für MII-BIOMARKER-2024 Studie."

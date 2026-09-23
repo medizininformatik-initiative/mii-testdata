@@ -58,14 +58,46 @@
       }
     ]
   },
+  "subject": {
+    "identifier": {
+      "system": "https://www.charite.de/fhir/sid/patientenidentifikation",
+      "value": "808439625"
+    },
+    "reference": "Patient/mii-exa-test-data-patient-1"
+  },
   "basedOn": [
     {
+      "identifier": {
+        "system": "https://www.charite.de/fhir/sid/Laboranforderungen",
+        "value": "LA_000001"
+      },
       "reference": "ServiceRequest/mii-exa-test-data-patient-1-labrequest-1"
     }
   ],
+  "encounter": {
+    "identifier": {
+      "system": "https://www.charite.de/fhir/NamingSystem/Aufnahmenummern",
+      "value": "MII_0000001"
+    },
+    "reference": "Encounter/mii-exa-test-data-patient-1-encounter-1"
+  },
   "performer": [
     {
+      "identifier": {
+        "system": "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier",
+        "value": "Labor-Berlin"
+      },
       "reference": "Organization/mii-exa-test-data-organization-labor-berlin"
+    }
+  ],
+  "specimen": [
+    {
+      "identifier": {
+        "system": "https://www.charite.de/fhir/sid/Bioproben",
+        "value": "BP_000001"
+      },
+      "reference": "https://www.medizininformatik-initiative.de/Specimen/mii-exa-test-data-patient-1-specimen-1",
+      "display": "EDTA-Blut Patient 1"
     }
   ],
   "result": [
@@ -89,13 +121,19 @@
     }
   ],
   "status": "final",
-  "subject": {
-    "reference": "Patient/mii-exa-test-data-patient-1"
-  },
-  "encounter": {
-    "reference": "Encounter/mii-exa-test-data-patient-1-encounter-1"
-  },
   "effectiveDateTime": "2024-02-15T12:00:00+01:00",
+  "_effectiveDateTime": {
+    "extension": [
+      {
+        "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum",
+        "valueCoding": {
+          "code": "399445004",
+          "system": "http://snomed.info/sct",
+          "display": "Specimen collection date (observable entity)"
+        }
+      }
+    ]
+  },
   "issued": "2024-02-15T12:00:00+01:00",
   "conclusion": "Leukozyten hoch"
 }

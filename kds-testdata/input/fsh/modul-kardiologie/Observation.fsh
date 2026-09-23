@@ -128,11 +128,13 @@ Description: "Kardio Raucherstatus: Ex-Raucher, 30 Packungsjahre"
 * code.coding[loinc] = $loinc#72166-2 "Tobacco smoking status"
 * code.coding[loinc].version = "2.83"
 * subject = Reference(mii-exa-test-data-kardiologie-patient-1)
+* encounter = Reference(mii-exa-test-data-kardiologie-encounter-1)
 * effectiveDateTime = "2025-03-11T10:40:00+01:00"
 * performer.display = "Facharzt fuer Kardiologie"
 * valueCodeableConcept = $sct20260701#8517006 "Ex-smoker (finding)"
 * component[packungsjahre].code = $sct20260701#401201003 "Cigarette pack-years (observable entity)"
 * component[packungsjahre].valueQuantity = 30 '{pack-years}' "{pack-years}"
+* component[packungsjahre].valueQuantity.comparator = #>=
 * component[zigarettenProTag].code = $loinc#63640-7 "How many cigarettes do you smoke per day now"
 * component[zigarettenProTag].valueQuantity = 20 '{cigarettes-per-day}' "{cigarettes-per-day}"
 * component[rauchbeginn].code = $sct20260701#266929003 "Smoking started (life style)"

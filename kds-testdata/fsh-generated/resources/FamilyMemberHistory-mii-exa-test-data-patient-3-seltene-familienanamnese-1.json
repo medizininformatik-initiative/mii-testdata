@@ -28,6 +28,41 @@
       }
     }
   ],
+  "relationship": {
+    "coding": [
+      {
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/mii-ex-molgen-verwandtschaftsgrad",
+            "valueCoding": {
+              "code": "125678001",
+              "system": "http://snomed.info/sct",
+              "display": "First degree blood relative (person)"
+            }
+          },
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/mii-ex-molgen-verwandtschaftsverhaeltnis",
+            "valueCoding": {
+              "code": "13646006",
+              "system": "http://snomed.info/sct",
+              "display": "Natural parent (person)"
+            }
+          },
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/mii-ex-molgen-familiare-linie",
+            "valueCoding": {
+              "code": "72705000",
+              "system": "http://snomed.info/sct",
+              "display": "Mother (person)"
+            }
+          }
+        ],
+        "system": "http://snomed.info/sct",
+        "code": "65656005",
+        "display": "Natural mother"
+      }
+    ]
+  },
   "condition": [
     {
       "extension": [
@@ -97,16 +132,8 @@
       "contributedToDeath": false
     }
   ],
-  "relationship": {
-    "coding": [
-      {
-        "system": "http://snomed.info/sct",
-        "code": "65656005",
-        "display": "Natural mother"
-      }
-    ]
-  },
   "status": "completed",
+  "date": "2025-03-10",
   "patient": {
     "reference": "Patient/mii-exa-test-data-seltene-patient-1"
   },

@@ -416,6 +416,26 @@
             "text": "Bösartige Neubildung des Magens nicht näher bezeichnet"
           }
         ],
+        "onsetAge": {
+          "extension": [
+            {
+              "url": "http://fhir.de/StructureDefinition/lebensphase",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "41847000",
+                    "system": "http://snomed.info/sct",
+                    "display": "Adulthood (qualifier value)"
+                  }
+                ]
+              }
+            }
+          ],
+          "value": 61,
+          "code": "a",
+          "system": "http://unitsofmeasure.org",
+          "unit": "Jahre"
+        },
         "clinicalStatus": {
           "coding": [
             {
@@ -2095,6 +2115,13 @@
                 "display": "Physician (occupation)"
               }
             ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "email",
+            "value": "studienteam@charite.de",
+            "use": "work"
           }
         ],
         "active": true,

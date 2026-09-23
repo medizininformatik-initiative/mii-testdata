@@ -7,6 +7,7 @@ Description: "Procedure: Exzision und Resektion an Lunge für Patient-1"
 * meta.source = "https://www.charite.de/fhir/kds-testdata"
 //* meta.profile[0] = "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Procedure|2024.0.0"
 * insert AddProzedur(completed, 387713003, 726427004, 2023, 5-323.51, mii-exa-test-data-patient-1, 44714003, Exzision und Resektion an Lunge)
+* bodySite.coding[0].version = "http://snomed.info/sct/900000000000207008/version/20240201"
 * performedPeriod.start = "2024-02-20T10:14:00+01:00"
 * performedPeriod.end = "2024-02-20T12:47:00+01:00"
 * extension[Dokumentationsdatum].url = "http://fhir.de/StructureDefinition/ProzedurDokumentationsdatum"

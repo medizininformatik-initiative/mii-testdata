@@ -20,6 +20,16 @@
       "value": "PRO-OBS-PHQ9-PROFIL-PAT1-001"
     }
   ],
+  "focus": [
+    {
+      "reference": "Condition/mii-exa-test-data-pro-diagnose-1"
+    }
+  ],
+  "note": [
+    {
+      "text": "Selbstauskunft im Rahmen der ambulanten Verlaufskontrolle."
+    }
+  ],
   "performer": [
     {
       "reference": "Patient/mii-exa-test-data-pro-patient-1"

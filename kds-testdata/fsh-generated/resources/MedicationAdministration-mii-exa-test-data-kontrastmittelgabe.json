@@ -19,6 +19,33 @@
       "reference": "Procedure/mii-exa-test-data-bildgebungsprozedur"
     }
   ],
+  "identifier": [
+    {
+      "system": "https://www.charite.de/fhir/sid/MedicationAdministrations",
+      "value": "MA_KM_0000001"
+    }
+  ],
+  "medicationCodeableConcept": {
+    "coding": [
+      {
+        "system": "http://fhir.de/CodeSystem/ifa/pzn",
+        "code": "01309008",
+        "display": "Ultravist 300 Injektionsloesung"
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/atc",
+        "code": "V08AB05",
+        "version": "2024",
+        "display": "Iopromid"
+      },
+      {
+        "system": "http://www.whocc.no/atc",
+        "code": "V08AB05",
+        "display": "iopromide"
+      }
+    ],
+    "text": "Iopromid 300 mg Iod/mL Injektionsloesung"
+  },
   "effectivePeriod": {
     "end": "2024-07-19T12:22:45+02:00",
     "start": "2024-07-19T12:21:45+02:00"
@@ -28,6 +55,17 @@
       "actor": {
         "reference": "Practitioner/mii-exa-test-data-practitioner-physician-1"
       }
+    }
+  ],
+  "reasonCode": [
+    {
+      "coding": [
+        {
+          "code": "b",
+          "system": "http://terminology.hl7.org/CodeSystem/reason-medication-given",
+          "display": "Given as Ordered"
+        }
+      ]
     }
   ],
   "reasonReference": [
@@ -41,11 +79,36 @@
     }
   ],
   "dosage": {
+    "text": "111 mL Iopromid intravenoes als Bolus ueber 1 Minute",
+    "site": {
+      "coding": [
+        {
+          "code": "368208006",
+          "system": "http://snomed.info/sct",
+          "display": "Left upper arm structure (body structure)"
+        }
+      ]
+    },
+    "route": {
+      "coding": [
+        {
+          "code": "47625008",
+          "system": "http://snomed.info/sct",
+          "display": "Intravenous route (qualifier value)"
+        }
+      ]
+    },
     "dose": {
       "value": 111,
       "code": "mL",
       "system": "http://unitsofmeasure.org",
       "unit": "milliliter"
+    },
+    "rateQuantity": {
+      "value": 111,
+      "code": "mL/min",
+      "system": "http://unitsofmeasure.org",
+      "unit": "mL/min"
     }
   },
   "status": "completed",
@@ -61,8 +124,8 @@
   "subject": {
     "reference": "Patient/mii-exa-test-data-bildgebung-patient-1"
   },
-  "medicationReference": {
-    "reference": "Medication/mii-exa-test-data-medication-dalbavancin"
+  "context": {
+    "reference": "Encounter/mii-exa-test-data-bildgebung-encounter-1"
   },
   "request": {
     "reference": "MedicationRequest/mii-exa-test-data-bildgebung-medrequest-1"

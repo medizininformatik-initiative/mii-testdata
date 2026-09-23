@@ -126,6 +126,15 @@
       "value": "DRKS00034567"
     }
   ],
+  "partOf": [
+    {
+      "identifier": {
+        "system": "https://www.medizininformatik-initiative.de/fhir/sid/drks",
+        "value": "DRKS00030001"
+      },
+      "display": "MII-ENDO-REGISTER Rahmenprogramm"
+    }
+  ],
   "category": [
     {
       "coding": [

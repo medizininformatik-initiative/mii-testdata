@@ -89,6 +89,15 @@
     "start": "2024-02-14",
     "end": "2024-02-22"
   },
+  "account": [
+    {
+      "identifier": {
+        "system": "https://www.charite.de/fhir/sid/abrechnungsfallnummern",
+        "value": "ABR-0000001"
+      },
+      "display": "Abrechnungsfall MII_0000001"
+    }
+  ],
   "diagnosis": [
     {
       "condition": {

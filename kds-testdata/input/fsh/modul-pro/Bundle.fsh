@@ -18,6 +18,7 @@ Description: "Bundle: PRO Testdaten Patient-1"
 * insert AddBundleEntry(mii-exa-test-data-patient-1-pro-promis-dep-sf4a-response, QuestionnaireResponse)
 * insert AddBundleEntry(mii-exa-test-data-patient-1-pro-phq15-response, QuestionnaireResponse)
 * insert AddBundleEntry(mii-exa-test-data-patient-1-pro-whodas12-response, QuestionnaireResponse)
+* insert AddBundleEntry(mii-exa-test-data-patient-1-pro-promis29-response, QuestionnaireResponse)
 // Observation Scores
 * insert AddBundleEntry(mii-exa-test-data-patient-1-pro-phq9-score, Observation)
 * insert AddBundleEntry(mii-exa-test-data-patient-1-pro-promis-dep-sf4a-raw-score, Observation)

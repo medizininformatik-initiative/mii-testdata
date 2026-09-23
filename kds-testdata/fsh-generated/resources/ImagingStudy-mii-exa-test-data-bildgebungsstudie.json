@@ -32,6 +32,11 @@
       "reference": "ServiceRequest/mii-exa-test-data-anforderung"
     }
   ],
+  "endpoint": [
+    {
+      "reference": "Endpoint/mii-exa-test-data-bildgebung-endpoint-1"
+    }
+  ],
   "reasonReference": [
     {
       "reference": "Condition/mii-exa-test-data-bildgebung-diagnose-1"

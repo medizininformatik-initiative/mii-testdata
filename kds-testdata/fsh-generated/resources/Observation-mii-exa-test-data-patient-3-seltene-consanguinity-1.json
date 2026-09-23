@@ -24,6 +24,14 @@
       ]
     }
   ],
+  "focus": [
+    {
+      "reference": "FamilyMemberHistory/mii-exa-test-data-patient-3-seltene-familienanamnese-1"
+    },
+    {
+      "reference": "FamilyMemberHistory/mii-exa-test-data-patient-3-seltene-familienanamnese-2"
+    }
+  ],
   "valueCodeableConcept": {
     "coding": [
       {

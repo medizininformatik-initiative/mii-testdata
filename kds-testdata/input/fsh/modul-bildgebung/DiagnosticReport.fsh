@@ -18,4 +18,9 @@ Description: "DiagnosticReport: Befundbericht"
 * imagingStudy = Reference (mii-exa-test-data-bildgebungsstudie)
 * conclusion = "There are suspicious microcalcifications in the upper outer quadrant in the left breast"
 * conclusionCode = $sct#129770009 "Mammographic calcification finding (finding)"
+* presentedForm.contentType = #application/pdf
+* presentedForm.language = #de
+* presentedForm.url = "https://dms.charite.de/kds-testdata/bildgebung/patient-1/befundbericht-1.pdf"
+* presentedForm.title = "Mammographie-Befundbericht (PDF)"
+* presentedForm.creation = "2024-07-19T12:03:30+02:00"
 * extension[supportingInfo].valueReference = Reference(mii-exa-test-data-befundungsprozedur)

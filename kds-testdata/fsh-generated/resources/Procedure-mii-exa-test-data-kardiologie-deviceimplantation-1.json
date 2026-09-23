@@ -37,6 +37,16 @@
         "display": "Implantation of cardiac defibrillator (procedure)"
       },
       {
+        "extension": [
+          {
+            "url": "http://fhir.de/StructureDefinition/seitenlokalisation",
+            "valueCoding": {
+              "code": "L",
+              "system": "https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_ICD_SEITENLOKALISATION",
+              "display": "links"
+            }
+          }
+        ],
         "system": "http://fhir.de/CodeSystem/bfarm/ops",
         "code": "5-377.5",
         "display": "Implantation eines Herzschrittmachers, Defibrillators und Ereignis-Rekorders: Defibrillator mit Einkammer-Stimulation",
@@ -91,6 +101,9 @@
   },
   "subject": {
     "reference": "Patient/mii-exa-test-data-kardiologie-patient-1"
+  },
+  "encounter": {
+    "reference": "Encounter/mii-exa-test-data-kardiologie-encounter-1"
   },
   "performedDateTime": "2025-03-12"
 }

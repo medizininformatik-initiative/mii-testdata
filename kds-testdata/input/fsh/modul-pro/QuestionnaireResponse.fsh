@@ -228,3 +228,48 @@ Description: "PRO QuestionnaireResponse: WHODAS 2.0 12-Item for Patient 1 (mild 
 // Simple sum: 1+1+0+2+2+1+1+0+0+1+1+2 = 12 (range 0-48)
 * item[+].linkId = "whodas-whodas12-score-simple-sum"
 * item[=].answer[0].valueDecimal = 12
+
+// -----------------------------------------------------------------------------
+// PROMIS-29 QuestionnaireResponse (Patient 1, Auszug Angst + Depression)
+// Covers: identifier, author, item.text, item.item (verschachtelte Gruppen);
+// answer.valueCoding.display mit translation-Extension wie im Questionnaire.
+// Hinweis: item.answer.item bleibt offen - keines der PRO-Questionnaires hat
+// Kind-Items unter Frage-Items, eine solche Antwortstruktur waere invalide.
+// -----------------------------------------------------------------------------
+Instance: mii-exa-test-data-patient-1-pro-promis29-response
+InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response
+Usage: #example
+Description: "PRO QuestionnaireResponse: PROMIS-29 (Auszug Angst/Depression) for Patient 1"
+* insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
+* identifier.system = "https://www.charite.de/fhir/sid/pro-questionnaire-response-id"
+* identifier.value = "PRO-QR-P29-PAT1-001"
+* status = #completed
+* language = #de
+* subject = Reference(mii-exa-test-data-pro-patient-1)
+* author = Reference(mii-exa-test-data-pro-patient-1)
+* authored = "2024-03-15T10:30:00+01:00"
+* questionnaire = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-29-de"
+// Gruppe ANGST mit verschachtelten Frage-Items (item.item)
+* item[+].linkId = "PROMIS-29.Anxiety"
+* item[=].text = "ANGST"
+* item[=].item[+].linkId = "promis-edanx01"
+* item[=].item[=].text = "Ich fürchtete mich."
+* item[=].item[=].answer[0].valueCoding = $loinc#LA6270-8 "Nie"
+* item[=].item[=].answer[0].valueCoding.display.extension[0].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].item[=].answer[0].valueCoding.display.extension[0].extension[0].url = "lang"
+* item[=].item[=].answer[0].valueCoding.display.extension[0].extension[0].valueCode = #en
+* item[=].item[=].answer[0].valueCoding.display.extension[0].extension[1].url = "content"
+* item[=].item[=].answer[0].valueCoding.display.extension[0].extension[1].valueString = "Never"
+* item[=].item[+].linkId = "promis-edanx41"
+* item[=].item[=].text = "Meine Sorgen haben mich überwältigt."
+* item[=].item[=].answer[0].valueCoding = $loinc#LA10066-1 "Selten"
+// Gruppe DEPRESSION mit verschachtelten Frage-Items
+* item[+].linkId = "PROMIS-29.Depression"
+* item[=].text = "DEPRESSION"
+* item[=].item[+].linkId = "promis-eddep04"
+* item[=].item[=].text = "Ich fühlte mich wertlos."
+* item[=].item[=].answer[0].valueCoding = $loinc#LA10066-1 "Selten"
+* item[=].item[+].linkId = "promis-eddep29"
+* item[=].item[=].text = "Ich fühlte mich niedergeschlagen."
+* item[=].item[=].answer[0].valueCoding = $loinc#LA10082-8 "Manchmal"

@@ -37,6 +37,7 @@ Description: "Bildgebung Diagnose - Lungentumor"
 * clinicalStatus = http://terminology.hl7.org/CodeSystem/condition-clinical#active
 * verificationStatus = http://terminology.hl7.org/CodeSystem/condition-ver-status#confirmed
 * code.coding = http://fhir.de/CodeSystem/bfarm/icd-10-gm#C34.1 "Bösartige Neubildung: Oberlappen (-Bronchus)"
+* code.coding[0].version = "2026"
 * subject = Reference(mii-exa-test-data-bildgebung-patient-1)
 
 Instance: mii-exa-test-data-bildgebung-labobs-1

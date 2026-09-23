@@ -415,7 +415,7 @@
         "clinicalStatus": {
           "coding": [
             {
-              "code": "active",
+              "code": "resolved",
               "system": "http://terminology.hl7.org/CodeSystem/condition-clinical"
             }
           ]
@@ -431,7 +431,8 @@
         "subject": {
           "reference": "Patient/mii-exa-test-data-patient-7"
         },
-        "recordedDate": "2024-01-08"
+        "recordedDate": "2024-01-08",
+        "abatementDateTime": "2024-01-20"
       }
     },
     {
@@ -2143,6 +2144,13 @@
                 "display": "Physician (occupation)"
               }
             ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "email",
+            "value": "studienteam@charite.de",
+            "use": "work"
           }
         ],
         "active": true,

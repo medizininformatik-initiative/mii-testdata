@@ -80,7 +80,27 @@
       "timing": {
         "event": [
           "2024-02-16T10:20:00+01:00"
-        ]
+        ],
+        "repeat": {
+          "dayOfWeek": [
+            "fri"
+          ],
+          "boundsDuration": {
+            "system": "http://unitsofmeasure.org",
+            "value": 8,
+            "code": "wk",
+            "unit": "Wochen"
+          },
+          "count": 2,
+          "countMax": 3,
+          "duration": 30,
+          "durationMax": 60,
+          "durationUnit": "min",
+          "frequency": 1,
+          "period": 14,
+          "periodMax": 16,
+          "periodUnit": "d"
+        }
       },
       "doseAndRate": [
         {

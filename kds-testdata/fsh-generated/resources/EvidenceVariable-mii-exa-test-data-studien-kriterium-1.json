@@ -50,6 +50,13 @@
         }
       ],
       "definitionCodeableConcept": {
+        "coding": [
+          {
+            "code": "424144002",
+            "system": "http://snomed.info/sct",
+            "display": "Current chronological age (observable entity)"
+          }
+        ],
         "text": "Mindestalter"
       },
       "description": "Alter mindestens 18 Jahre",
@@ -82,6 +89,13 @@
         }
       ],
       "definitionCodeableConcept": {
+        "coding": [
+          {
+            "code": "263495000",
+            "system": "http://snomed.info/sct",
+            "display": "Gender (observable entity)"
+          }
+        ],
         "text": "Alle"
       },
       "description": "Geschlecht: alle",

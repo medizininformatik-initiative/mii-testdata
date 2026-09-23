@@ -7,6 +7,8 @@ Description: "Observation: Vitalstatus für Patient-1"
 * meta.source = "https://www.charite.de/fhir/kds-testdata"
 //* meta.profile[0] = "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Vitalstatus|2024.0.0"
 * insert AddVitalstatus(mii-exa-test-data-patient-1, 2024-02-21T16:46:17+01:00, T)
+* encounter = Reference(mii-exa-test-data-patient-1-encounter-1)
+* note.text = "Patient waehrend des stationaeren Aufenthalts verstorben."
 
 // Vitalstatus Patient-2
 Instance: mii-exa-test-data-patient-2-vitalstatus-1

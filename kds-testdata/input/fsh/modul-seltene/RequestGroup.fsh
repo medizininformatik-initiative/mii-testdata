@@ -13,7 +13,9 @@ Description: "Therapieempfehlung Kombination: Combined therapy for Marfan - all 
 * extension[+].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-ex-seltene-empfehlung-prioritaet"
 * extension[=].valuePositiveInt = 1
 * extension[+].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-ex-seltene-empfehlung-evidenzgraduierung"
-* extension[=].valueCodeableConcept.coding[+].code = #1A
+// Oxford CEBM Levels of Evidence als System (Extension selbst ist unbindet)
+* extension[=].valueCodeableConcept.coding[+].system = "https://www.cebm.ox.ac.uk/resources/levels-of-evidence"
+* extension[=].valueCodeableConcept.coding[=].code = #1A
 * extension[=].valueCodeableConcept.coding[=].display = "Evidenzgrad 1A"
 * extension[+].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-ex-seltene-empfehlung-publikation"
 * extension[=].valueString = "Marfan-Leitlinie DGK 2024"

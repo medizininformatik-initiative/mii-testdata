@@ -60,7 +60,26 @@
       "timing": {
         "event": [
           "2024-02-20T09:55:00+01:00"
-        ]
+        ],
+        "repeat": {
+          "timeOfDay": [
+            "09:55:00"
+          ],
+          "boundsRange": {
+            "low": {
+              "value": 1,
+              "code": "h",
+              "system": "http://unitsofmeasure.org",
+              "unit": "Stunde"
+            },
+            "high": {
+              "value": 2,
+              "code": "h",
+              "system": "http://unitsofmeasure.org",
+              "unit": "Stunden"
+            }
+          }
+        }
       },
       "doseAndRate": [
         {
@@ -73,7 +92,24 @@
           "rateQuantity": {
             "value": 5,
             "code": "mg/min",
-            "system": "http://unitsofmeasure.org"
+            "system": "http://unitsofmeasure.org",
+            "unit": "mg/min"
+          }
+        },
+        {
+          "rateRange": {
+            "low": {
+              "value": 4,
+              "code": "mg/min",
+              "system": "http://unitsofmeasure.org",
+              "unit": "mg/min"
+            },
+            "high": {
+              "value": 6,
+              "code": "mg/min",
+              "system": "http://unitsofmeasure.org",
+              "unit": "mg/min"
+            }
           }
         }
       ]

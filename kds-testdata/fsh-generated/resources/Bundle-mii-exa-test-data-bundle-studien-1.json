@@ -188,6 +188,14 @@
             ]
           }
         ],
+        "supportingInfo": [
+          {
+            "reference": "ResearchStudy/mii-exa-test-data-studien-studie-1"
+          },
+          {
+            "reference": "ResearchSubject/mii-exa-test-data-studien-proband-1"
+          }
+        ],
         "note": [
           {
             "text": "Patient erfüllt Einschlusskriterien für MII-BIOMARKER-2024 Studie."
@@ -348,6 +356,15 @@
           {
             "system": "https://www.medizininformatik-initiative.de/fhir/sid/drks",
             "value": "DRKS00034567"
+          }
+        ],
+        "partOf": [
+          {
+            "identifier": {
+              "system": "https://www.medizininformatik-initiative.de/fhir/sid/drks",
+              "value": "DRKS00030001"
+            },
+            "display": "MII-ENDO-REGISTER Rahmenprogramm"
           }
         ],
         "category": [
@@ -659,6 +676,13 @@
               }
             ],
             "definitionCodeableConcept": {
+              "coding": [
+                {
+                  "code": "424144002",
+                  "system": "http://snomed.info/sct",
+                  "display": "Current chronological age (observable entity)"
+                }
+              ],
               "text": "Mindestalter"
             },
             "description": "Alter mindestens 18 Jahre",
@@ -691,6 +715,13 @@
               }
             ],
             "definitionCodeableConcept": {
+              "coding": [
+                {
+                  "code": "263495000",
+                  "system": "http://snomed.info/sct",
+                  "display": "Gender (observable entity)"
+                }
+              ],
               "text": "Alle"
             },
             "description": "Geschlecht: alle",

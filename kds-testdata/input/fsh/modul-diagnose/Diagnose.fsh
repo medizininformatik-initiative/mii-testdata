@@ -16,8 +16,16 @@ Description: "Condition: Masern mit Otitis für Patient 1"
 * code.coding[alpha-id] = $alpha-id|2023#I29578 "Masern mit Otitis"
 * code.coding[sct] = $sct#13420004 "Post measles otitis media (disorder)"
 * bodySite.coding[snomed-ct] = $sct#25342003 "Middle ear structure (body structure)"
+* bodySite.coding[snomed-ct].version = "http://snomed.info/sct/900000000000207008/version/20240201"
+* extension[Feststellungsdatum].url = "http://hl7.org/fhir/StructureDefinition/condition-assertedDate"
+* extension[Feststellungsdatum].valueDateTime = "2024-02-21"
 * onsetDateTime = "2024-02-21"
 * recordedDate = "2024-02-21"
+// Abatement-Variante Age: Otitis ausgeheilt (con-4: clinicalStatus resolved)
+* clinicalStatus = $condition-clinical#resolved
+* abatementAge = 33 'a' "Jahre"
+* abatementAge.extension[0].url = "http://fhir.de/StructureDefinition/lebensphase"
+* abatementAge.extension[0].valueCodeableConcept = $sct#41847000 "Adulthood (qualifier value)"
 
 Instance: mii-exa-test-data-patient-1-diagnose-2
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-diagnose/StructureDefinition/Diagnose
@@ -72,6 +80,10 @@ Description: "Condition: Bösartige Neubildung des Magens nicht näher bezeichne
 * meta.source = "https://www.charite.de/fhir/kds-testdata"
 //* meta.profile[0] = "https://www.medizininformatik-initiative.de/fhir/core/modul-diagnose/StructureDefinition/Diagnose|2024.0.0"
 * insert AddDiagnose(C16.9, 2022, mii-exa-test-data-patient-4, 2022-11-30, Bösartige Neubildung des Magens nicht näher bezeichnet)
+// onsetAge-Variante mit Lebensphase-Beginn
+* onsetAge = 61 'a' "Jahre"
+* onsetAge.extension[0].url = "http://fhir.de/StructureDefinition/lebensphase"
+* onsetAge.extension[0].valueCodeableConcept = $sct#41847000 "Adulthood (qualifier value)"
 
 // Patient-5
 Instance: mii-exa-test-data-patient-5-diagnose-1
@@ -114,6 +126,9 @@ Description: "Condition: Bösartige Neubildung des Magens nicht näher bezeichne
 * code.coding[sct] = $sct#10509002 "Acute bronchitis (disorder)"
 * bodySite.coding[snomed-ct] = $sct#955009 "Bronchial structure (body structure)"
 * recordedDate = "2024-01-08"
+// Abatement-Variante DateTime: Bronchitis ausgeheilt (con-4: clinicalStatus resolved)
+* clinicalStatus = $condition-clinical#resolved
+* abatementDateTime = "2024-01-20"
 
 // Patient-8
 Instance: mii-exa-test-data-patient-8-diagnose-1

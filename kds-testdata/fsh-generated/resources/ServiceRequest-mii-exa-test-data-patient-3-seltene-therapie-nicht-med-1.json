@@ -54,7 +54,8 @@
       {
         "code": "3-052",
         "system": "http://fhir.de/CodeSystem/bfarm/ops",
-        "display": "Transthorakale Echokardiographie"
+        "display": "Transthorakale Echokardiographie",
+        "version": "2026"
       },
       {
         "code": "34552-0",

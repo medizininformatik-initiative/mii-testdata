@@ -16,7 +16,8 @@
       {
         "code": "C18.7",
         "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
-        "display": "Bösartige Neubildung: Colon sigmoideum"
+        "display": "Bösartige Neubildung: Colon sigmoideum",
+        "version": "2026"
       }
     ]
   },

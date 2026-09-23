@@ -7,13 +7,25 @@ Description: "Observation: Leukozyten im Blut für Patient 1"
 * meta.source = "https://www.charite.de/fhir/kds-testdata"
 //* meta.profile[0] = "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab|1.0.7-alpha1"
 * insert AddLabObservation(LO_000001, 26464-8, Leukocytes [#/volume] in Blood, mii-exa-test-data-patient-1, mii-exa-test-data-patient-1-encounter-1, 2024-02-15T12:00:00+01:00, 2024-02-15T12:00:00+01:00)
+* code.coding[0].version = "2.78"
+* subject.identifier.system = "https://www.charite.de/fhir/sid/patientenidentifikation"
+* subject.identifier.value = "808439625"
+* encounter.identifier.system = "https://www.charite.de/fhir/NamingSystem/Aufnahmenummern"
+* encounter.identifier.value = "MII_0000001"
 * basedOn = Reference(mii-exa-test-data-patient-1-labrequest-1)
 * valueQuantity = 17.0 $ucum#/nL "/nanoliter"
 * interpretation = $v3-ObservationInterpretation#H "High"
 * method = $sct#703452004 "Electrical impedance technique (qualifier value)"
 * note.text = "Leukozyten EDTA-Blut Impedanzmessung"
-// * specimen = Reference(mii-exa-test-data-patient-1-specimen-1)
+// Referenz auf die Bioprobe im Biobank-Modulbundle: absolute URL (= fullUrl
+// des Specimen dort) + Identifier als logische Referenz
+* specimen.reference = "https://www.medizininformatik-initiative.de/Specimen/mii-exa-test-data-patient-1-specimen-1"
+* specimen.identifier.system = "https://www.charite.de/fhir/sid/Bioproben"
+* specimen.identifier.value = "BP_000001"
+* specimen.display = "EDTA-Blut Patient 1"
 * device = Reference(mii-exa-test-data-device-roche-cobas-c303)
+* device.identifier.system = "https://www.charite.de/fhir/sid/Laboratory-device-identifier"
+* device.identifier.value = "RocheCobasC303"
 * referenceRange.low = 3.9 $ucum#/nL "/nanoliter"
 * referenceRange.high = 10.5 $ucum#/nL "/nanoliter"
 * referenceRange.type = $referencerange-meaning#normal "Normal Range"
@@ -525,3 +537,40 @@ Description: "Observation: Kreatinin im Serum für Patient 10"
 * method = $sct#83561000052101 "Photometry technique (qualifier value)"
 // * specimen = Reference(mii-exa-test-data-patient-10-specimen-1)
 * device = Reference(mii-exa-test-data-device-roche-cobas-c303)
+
+// MS-Varianten Patient-1: valueQuantity.comparator (Wert unter Nachweisgrenze)
+// inkl. modifierExtension interpretationsbeeinflussendeEigenschaft (haemolytisch)
+// (labobs-7 ist als predefined-resource die dataAbsentReason-Variante, labobs-8/-9 sind neu)
+Instance: mii-exa-test-data-patient-1-labobs-9
+InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab
+Usage: #example
+Description: "Observation: Troponin T unter Nachweisgrenze für Patient 1 (comparator-Variante)"
+* insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
+* insert AddLabObservation(LO_000039, 6598-7, Troponin T.cardiac [Mass/volume] in Serum or Plasma, mii-exa-test-data-patient-1, mii-exa-test-data-patient-1-encounter-1, 2024-02-15T12:00:00+01:00, 2024-02-15T13:10:00+01:00)
+* modifierExtension[interpretationsbeeinflussendeEigenschaft].url = "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/InterpretationsbeeinflussendeEigenschaft"
+* modifierExtension[interpretationsbeeinflussendeEigenschaft].valueCoding = $sct#118128002 "Specimen hemolyzed"
+* valueQuantity = 0.014 $ucum#ug/L "microgram per liter"
+* valueQuantity.comparator = #<
+* interpretation = $v3-ObservationInterpretation#N "Normal"
+* method = $sct#414464004 "Immunoassay method (qualifier value)"
+* note.text = "Troponin T unterhalb der Nachweisgrenze; Probe leicht haemolytisch."
+* specimen.reference = "https://www.medizininformatik-initiative.de/Specimen/mii-exa-test-data-patient-1-specimen-1"
+* specimen.identifier.system = "https://www.charite.de/fhir/sid/Bioproben"
+* specimen.identifier.value = "BP_000001"
+* specimen.display = "EDTA-Blut Patient 1"
+* device = Reference(mii-exa-test-data-device-roche-cobas-e402)
+
+// MS-Variante Patient-1: valueCodeableConcept (qualitatives Ergebnis)
+Instance: mii-exa-test-data-patient-1-labobs-8
+InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab
+Usage: #example
+Description: "Observation: Nitrit im Urin negativ für Patient 1 (valueCodeableConcept-Variante)"
+* insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
+* insert AddLabObservation(LO_000036, 5802-4, Nitrite [Presence] in Urine by Test strip, mii-exa-test-data-patient-1, mii-exa-test-data-patient-1-encounter-1, 2024-02-15T12:00:00+01:00, 2024-02-15T13:10:00+01:00)
+* valueCodeableConcept.coding = $sct#260385009 "Negative (qualifier value)"
+* valueCodeableConcept.coding.version = "http://snomed.info/sct/900000000000207008/version/20240201"
+* valueCodeableConcept.text = "negativ"
+* interpretation = $v3-ObservationInterpretation#N "Normal"
+* method = $sct#702659008 "Test strip technique (qualifier value)"

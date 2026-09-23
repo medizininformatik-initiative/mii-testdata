@@ -14,12 +14,23 @@ Description: "ServiceRequest: Kleines Blutbild für Patient 1"
 * identifier[anforderung].assigner.identifier.system = "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"
 * identifier[anforderung].assigner.identifier.value = "Charité"
 * category.coding[laboratory] = $observation-category#laboratory
+* category.coding[laboratory].display = "Laboratory"
 * code = $loinc#55429-5 "Short blood count panel - Blood"
+* code.coding[0].version = "2.78"
 * code.text = "kleines Blutbild"
 * subject = Reference(mii-exa-test-data-patient-1)
+* subject.identifier.system = "https://www.charite.de/fhir/sid/patientenidentifikation"
+* subject.identifier.value = "808439625"
 * encounter = Reference(mii-exa-test-data-patient-1-encounter-1)
+* encounter.identifier.system = "https://www.charite.de/fhir/NamingSystem/Aufnahmenummern"
+* encounter.identifier.value = "MII_0000001"
 * authoredOn = "2024-02-15T10:28:00+01:00"
-// * specimen = Reference(mii-exa-test-data-patient-1-specimen-1)
+// Referenz auf die Bioprobe im Biobank-Modulbundle: absolute URL (= fullUrl
+// des Specimen dort) + Identifier als logische Referenz
+* specimen.reference = "https://www.medizininformatik-initiative.de/Specimen/mii-exa-test-data-patient-1-specimen-1"
+* specimen.identifier.system = "https://www.charite.de/fhir/sid/Bioproben"
+* specimen.identifier.value = "BP_000001"
+* specimen.display = "EDTA-Blut Patient 1"
 
 // Patient-2 ServiceRequest (Complete Blood Count - alle hämatologischen Parameter)
 Instance: mii-exa-test-data-patient-2-labrequest-1

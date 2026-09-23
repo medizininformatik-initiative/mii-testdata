@@ -49,6 +49,7 @@ Description: "Gestationsalter Observation - retrospektive Angabe zur Geburt (tec
 * insert TestDataLabel
 * meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
+* category = $observation-category#survey "Survey"
 * code = $loinc#76516-4 "Gestational age--at birth"
 * subject = Reference(mii-exa-test-data-seltene-patient-1)
 * effectiveDateTime = "1995-02-10"
@@ -65,6 +66,8 @@ Description: "Consanguinity Observation: keine Blutsverwandtschaft der Eltern (M
 * category[socialHistory] = $observation-category#social-history
 * code = $sct#842009 "Consanguinity"
 * subject = Reference(mii-exa-test-data-seltene-patient-1)
+* focus[+] = Reference(mii-exa-test-data-patient-3-seltene-familienanamnese-1)
+* focus[+] = Reference(mii-exa-test-data-patient-3-seltene-familienanamnese-2)
 * effectiveDateTime = "2024-03-05"
 * valueCodeableConcept = $sct#373067005 "No"
 * valueCodeableConcept.text = "Eltern nicht blutsverwandt"

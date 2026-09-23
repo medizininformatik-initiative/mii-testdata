@@ -20,6 +20,11 @@
       "value": "PRO-OBS-EQ5D-IDX-PAT1-001"
     }
   ],
+  "focus": [
+    {
+      "reference": "Condition/mii-exa-test-data-pro-diagnose-1"
+    }
+  ],
   "performer": [
     {
       "reference": "Patient/mii-exa-test-data-pro-patient-1"

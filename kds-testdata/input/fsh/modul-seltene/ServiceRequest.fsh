@@ -27,6 +27,7 @@ Description: "Therapieempfehlung nicht-medikamentoes: Annual cardiac screening -
 // code with SNOMED, OPS, and LOINC slices + required text
 * code.coding[+] = $sct#312851005 "Screening for disorder"
 * code.coding[+] = $ops#3-052 "Transthorakale Echokardiographie"
+* code.coding[=].version = "2026"
 * code.coding[+] = $loinc#34552-0 "Cardiology Diagnostic study"
 * code.text = "Jaehrliche kardiologische Kontrolle mittels Echokardiographie bei Marfan-Syndrom"
 * subject = Reference(mii-exa-test-data-seltene-patient-1)

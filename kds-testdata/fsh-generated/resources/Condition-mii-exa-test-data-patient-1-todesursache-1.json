@@ -21,7 +21,8 @@
         "code": "A15.0",
         "version": "2019"
       }
-    ]
+    ],
+    "text": "Tuberkulose der Lunge als Todesursache"
   },
   "note": [
     {
@@ -61,5 +62,8 @@
   "subject": {
     "reference": "Patient/mii-exa-test-data-patient-1"
   },
-  "recordedDate": "2024-02-22"
+  "recordedDate": "2024-02-22",
+  "encounter": {
+    "reference": "Encounter/mii-exa-test-data-patient-1-encounter-1"
+  }
 }
