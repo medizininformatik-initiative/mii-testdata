@@ -20,7 +20,6 @@ Description: "Bundle: Bildgebung Testdaten Patient-1"
 * insert AddBundleEntry(mii-exa-test-data-radiologische-beobachtung-2, Observation)
 * insert AddBundleEntry(mii-exa-test-data-radiologische-beobachtung-3, Observation)
 * insert AddBundleEntry(mii-exa-test-data-radiologische-messung-1, Observation)
-* insert AddBundleEntry(mii-exa-test-data-radiologische-messung-2, Observation)
 * insert AddBundleEntry(mii-exa-test-data-bildgebung-endpoint-1, Endpoint)
 * insert AddBundleEntry(mii-exa-test-data-befundbericht, DiagnosticReport)
 * insert AddBundleEntry(mii-exa-test-data-geraet, Device)

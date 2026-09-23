@@ -2,28 +2,28 @@
 
 Generiert von `scripts/ms-coverage.py`. **Source of Truth sind die Snapshot-StructureDefinitions des gepinnten Packages `de.medizininformatikinitiative.kerndatensatz.complete#2027.0.0-ballot.19`** — nicht der Branch-Zustand. Heuristik siehe Skript-Docstring.
 
-MS-Elemente über alle genutzten Profile: **13834** · oberste unbefüllte Knoten: **332**
+MS-Elemente über alle genutzten Profile: **13658** · oberste unbefüllte Knoten: **306**
 
 ## Übersicht je Modul
 
 | Modul | Profile genutzt/gesamt | MS befüllt/gesamt | Coverage |
 |---|---|---|---|
-| modul-bildgebung | 12/12 | 373/383 | 97.4 % |
+| modul-bildgebung | 12/12 | 371/381 | 97.4 % |
 | modul-biobank | 11/11 | 293/302 | 97.0 % |
 | modul-consent | 3/3 | 77/77 | 100.0 % |
 | modul-diagnose | 1/1 | 77/77 | 100.0 % |
 | modul-dokument | 1/1 | 69/70 | 98.6 % |
 | modul-fall | 1/1 | 96/96 | 100.0 % |
-| modul-icu | 94/94 | 2787/2996 | 93.0 % |
-| modul-kardio | 13/13 | 362/362 | 100.0 % |
+| modul-icu | 94/94 | 2785/2994 | 93.0 % |
+| modul-kardio | 13/13 | 361/361 | 100.0 % |
 | modul-labor | 3/3 | 151/151 | 100.0 % |
 | modul-lungenfunktion | 39/48 | 1412/1556 | 90.7 % |
 | modul-medikation | 5/5 | 437/437 | 100.0 % |
 | modul-meta | 0/1 | 0/0 | – |
-| modul-mikrobio | 21/21 | 1520/1583 | 96.0 % |
+| modul-mikrobio | 21/21 | 1386/1427 | 97.1 % |
 | modul-molgen | 16/16 | 240/248 | 96.8 % |
-| modul-mtb | 50/50 | 1513/1520 | 99.5 % |
-| modul-onko | 76/76 | 2028/2035 | 99.7 % |
+| modul-mtb | 50/50 | 1510/1517 | 99.5 % |
+| modul-onko | 76/76 | 2016/2023 | 99.7 % |
 | modul-patho | 17/17 | 456/468 | 97.4 % |
 | modul-person | 5/5 | 254/258 | 98.4 % |
 | modul-pro | 21/23 | 290/292 | 99.3 % |
@@ -32,7 +32,7 @@ MS-Elemente über alle genutzten Profile: **13834** · oberste unbefüllte Knote
 | modul-soziodemographie | 16/16 | 149/153 | 97.4 % |
 | modul-studie | 7/7 | 76/78 | 97.4 % |
 | modul-symptom | 2/2 | 38/39 | 97.4 % |
-| **GESAMT** | 438/450 | 13350/13834 | 96.5 % |
+| **GESAMT** | 438/450 | 13196/13658 | 96.6 % |
 
 ## Richtung A: unbefüllte MS-Elemente je Modul
 
@@ -43,7 +43,7 @@ MS-Elemente über alle genutzten Profile: **13834** · oberste unbefüllte Knote
 | modul-dokument | 1 | `extension:nlp-processing-status` |
 | modul-icu | 187 | `dataAbsentReason`×71, `referenceRange`×20, `specimen`×20, `bodySite`×16, `device`×9, `component`×7 |
 | modul-lungenfunktion | 44 | `hasMember`×10, `component`×8, `component:predicted`×8, `component:percentPredicted`×7, `component:z-score`×6, `derivedFrom`×2 |
-| modul-mikrobio | 45 | `referenceRange`×6, `value[x]:valueQuantity.code`×6, `value[x]:valueQuantity.comparator`×6, `value[x]:valueQuantity.system`×6, `value[x]:valueQuantity.unit`×6, `value[x]:valueQuantity.value`×6 |
+| modul-mikrobio | 19 | `referenceRange`×11, `dataAbsentReason`×2, `container.additive[x]`, `extension:focus`, `parent`, `processing.additive` |
 | modul-molgen | 8 | `basedOn`, `extension:focus`, `extension:metrics`, `derivedFrom`, `extension:coded-note`, `extension:recommended-action` |
 | modul-mtb | 6 | `extension:transformationVon`, `extension:focus`, `extension:metrics`, `extension:qc`, `hasMember`, `action.action` |
 | modul-onko | 7 | `modifierExtension:aPraefix`×2, `modifierExtension:rPraefix`×2, `extension:transformationVon`, `dataAbsentReason`, `modifierExtension:yPraefix` |
@@ -179,14 +179,18 @@ MS-Elemente über alle genutzten Profile: **13834** · oberste unbefüllte Knote
 
 <details><summary>modul-mikrobio</summary>
 
-- **mii-pr-mikrobio-bartlett-score** (4 Inst.): `Observation.referenceRange.high`
+- **mii-pr-mikrobio-allgemeine-bestimmung** (3 Inst.): `Observation.referenceRange`
+- **mii-pr-mikrobio-allgemeine-kultur** (3 Inst.): `Observation.referenceRange`
+- **mii-pr-mikrobio-bartlett-score** (3 Inst.): `Observation.referenceRange`
+- **mii-pr-mikrobio-mikroskopie** (3 Inst.): `Observation.referenceRange`
+- **mii-pr-mikrobio-mrgn-klasse** (3 Inst.): `Observation.referenceRange`
 - **mii-pr-mikrobio-probe** (2 Inst.): `Specimen.container.additive[x]`, `Specimen.extension:focus`, `Specimen.parent`, `Specimen.processing.additive`
-- **mii-pr-mikrobio-resistenzkategorie-status** (3 Inst.): `Observation.dataAbsentReason`, `Observation.referenceRange`, `Observation.value[x]:valueQuantity.code`, `Observation.value[x]:valueQuantity.comparator`, `Observation.value[x]:valueQuantity.system`, `Observation.value[x]:valueQuantity.unit`, `Observation.value[x]:valueQuantity.value`
-- **mii-pr-mikrobio-resistenzmechanismen-determinanten** (3 Inst.): `Observation.referenceRange`, `Observation.value[x]:valueQuantity.code`, `Observation.value[x]:valueQuantity.comparator`, `Observation.value[x]:valueQuantity.system`, `Observation.value[x]:valueQuantity.unit`, `Observation.value[x]:valueQuantity.value`
-- **mii-pr-mikrobio-spezifische-bestimmung** (3 Inst.): `Observation.referenceRange`, `Observation.value[x]:valueQuantity.code`, `Observation.value[x]:valueQuantity.comparator`, `Observation.value[x]:valueQuantity.system`, `Observation.value[x]:valueQuantity.unit`, `Observation.value[x]:valueQuantity.value`
-- **mii-pr-mikrobio-spezifische-mikroskopie** (1 Inst.): `Observation.dataAbsentReason`, `Observation.modifierExtension`, `Observation.modifierExtension:interpretationsbeeinflussendeEigenschaft`, `Observation.referenceRange`, `Observation.value[x]:valueQuantity.code`, `Observation.value[x]:valueQuantity.comparator`, `Observation.value[x]:valueQuantity.system`, `Observation.value[x]:valueQuantity.unit`, `Observation.value[x]:valueQuantity.value`
-- **mii-pr-mikrobio-virulenzfaktor** (3 Inst.): `Observation.referenceRange`, `Observation.value[x]:valueQuantity.code`, `Observation.value[x]:valueQuantity.comparator`, `Observation.value[x]:valueQuantity.system`, `Observation.value[x]:valueQuantity.unit`, `Observation.value[x]:valueQuantity.value`
-- **mii-pr-mikrobio-voraussichtliche-empfindlichkeit** (3 Inst.): `Observation.referenceRange`, `Observation.value[x]:valueQuantity.code`, `Observation.value[x]:valueQuantity.comparator`, `Observation.value[x]:valueQuantity.system`, `Observation.value[x]:valueQuantity.unit`, `Observation.value[x]:valueQuantity.value`
+- **mii-pr-mikrobio-resistenzkategorie-status** (3 Inst.): `Observation.dataAbsentReason`, `Observation.referenceRange`
+- **mii-pr-mikrobio-resistenzmechanismen-determinanten** (3 Inst.): `Observation.referenceRange`
+- **mii-pr-mikrobio-spezifische-bestimmung** (3 Inst.): `Observation.referenceRange`
+- **mii-pr-mikrobio-spezifische-mikroskopie** (1 Inst.): `Observation.dataAbsentReason`, `Observation.modifierExtension`, `Observation.modifierExtension:interpretationsbeeinflussendeEigenschaft`, `Observation.referenceRange`
+- **mii-pr-mikrobio-virulenzfaktor** (3 Inst.): `Observation.referenceRange`
+- **mii-pr-mikrobio-voraussichtliche-empfindlichkeit** (3 Inst.): `Observation.referenceRange`
 
 </details>
 
@@ -274,27 +278,27 @@ MS-Elemente über alle genutzten Profile: **13834** · oberste unbefüllte Knote
 
 | Modul | Pfade | Top (Anzahl Profile, die den Pfad befüllen) |
 |---|---|---|
-| modul-bildgebung | 9 | `extension`×3, `extension.url`×3, `extension.valueId`×2, `extension.valueString` |
-| modul-biobank | 12 | `status`×6, `effectiveDateTime`×3, `accessionIdentifier`, `accessionIdentifier.value`, `accessionIdentifier.system` |
+| modul-bildgebung | 9 | `extension.url`×3, `extension`×3, `extension.valueId`×2, `extension.valueString` |
+| modul-biobank | 12 | `status`×6, `effectiveDateTime`×3, `accessionIdentifier.value`, `accessionIdentifier.system`, `accessionIdentifier` |
 | modul-consent | 3 | `date`, `scope`, `scope.coding` |
-| modul-fall | 4 | `serviceProvider.identifier`, `serviceProvider.display`, `serviceProvider`, `serviceProvider.reference` |
-| modul-icu | 73 | `status`×30, `code`×7, `encounter.reference`×7, `encounter`×7, `subject`×6, `subject.reference`×6 |
-| modul-kardio | 33 | `status`×7, `performer.display`×2, `performer`×2, `code`, `deviceName.type`, `deviceName.name` |
-| modul-labor | 4 | `reasonCode.coding`, `requester.reference`, `requester`, `reasonCode` |
+| modul-fall | 4 | `serviceProvider.reference`, `serviceProvider.display`, `serviceProvider`, `serviceProvider.identifier` |
+| modul-icu | 73 | `status`×30, `code`×7, `encounter`×7, `encounter.reference`×7, `subject`×6, `effectiveDateTime`×6 |
+| modul-kardio | 33 | `status`×7, `performer`×2, `performer.display`×2, `code`, `deviceName.name`, `deviceName` |
+| modul-labor | 4 | `reasonCode`, `requester`, `requester.reference`, `reasonCode.coding` |
 | modul-lungenfunktion | 2 | `effectiveDateTime`, `name` |
 | modul-medikation | 2 | `status`, `title` |
-| modul-molgen | 56 | `status`×5, `category.coding`×4, `category`×4, `specimen.reference`×4, `specimen`×4, `basedOn`×4 |
+| modul-molgen | 56 | `status`×5, `specimen.reference`×4, `specimen`×4, `category`×4, `category.coding`×4, `basedOn.reference`×4 |
 | modul-mtb | 73 | `status`×24, `subject`×7, `subject.reference`×7, `intent`×4, `effectiveDateTime`×3, `valueCodeableConcept`×2 |
-| modul-onko | 94 | `status`×40, `effectiveDateTime`×9, `method.coding`×4, `method`×4, `note.text`×3, `note`×3 |
-| modul-patho | 31 | `performer.reference`×6, `performer`×6, `encounter.reference`×3, `encounter`×3, `date`×2, `valueString`×2 |
-| modul-person | 2 | `extension`, `extension.url` |
-| modul-pro | 58 | `subject.reference`×18, `subject`×18, `encounter.reference`×11, `encounter`×11 |
+| modul-onko | 94 | `status`×40, `effectiveDateTime`×9, `method.coding`×4, `method`×4, `note`×3, `note.text`×3 |
+| modul-patho | 31 | `performer`×6, `performer.reference`×6, `encounter`×3, `encounter.reference`×3, `date`×2, `valueString`×2 |
+| modul-person | 2 | `extension.url`, `extension` |
+| modul-pro | 58 | `subject`×18, `subject.reference`×18, `encounter.reference`×11, `encounter`×11 |
 | modul-prozedur | 2 | `recorder.reference`, `recorder` |
-| modul-seltene | 25 | `status`×3, `subject`×3, `subject.reference`×3, `code.coding`×2, `code`×2, `intent`×2 |
-| modul-soziodemographie | 17 | `valueCodeableConcept`×6, `valueCodeableConcept.coding`×6, `valueCodeableConcept.text`×2, `code.coding`, `code`, `code.text` |
-| modul-studie | 15 | `active`, `extension`, `status`, `extension.url`, `extension.valueBoolean`, `title` |
-| modul-symptom | 5 | `extension.valueReference`, `bodySite.coding`, `bodySite`, `extension`, `extension.url` |
+| modul-seltene | 25 | `subject`×3, `subject.reference`×3, `status`×3, `code`×2, `code.coding`×2, `intent`×2 |
+| modul-soziodemographie | 17 | `valueCodeableConcept`×6, `valueCodeableConcept.coding`×6, `valueCodeableConcept.text`×2, `code`, `code.coding`, `code.text` |
+| modul-studie | 15 | `active`, `extension.valueBoolean`, `title`, `extension`, `status`, `extension.url` |
+| modul-symptom | 5 | `bodySite.coding`, `extension.url`, `extension`, `bodySite`, `extension.valueReference` |
 
 ## Abdeckungs-Index
 
-Maschinenlesbarer Index (MS-Element → Zeugen-Instanzen, max. 5) unter `../docs/ms-coverage-index.json`. Einzel-Zeugen sind per Policy ausreichend; die Zählung dient als Regressions-Radar (Instanz löschen → Abdeckung prüfen). Einzel-Zeugen je Modul: icu 2502, onko 1619, mtb 1360, lungenfunktion 1262, seltene 410, mikrobio 338, bildgebung 328, patho 312, kardio 302, pro 279.
+Maschinenlesbarer Index (MS-Element → Zeugen-Instanzen, max. 5) unter `../docs/ms-coverage-index.json`. Einzel-Zeugen sind per Policy ausreichend; die Zählung dient als Regressions-Radar (Instanz löschen → Abdeckung prüfen). Einzel-Zeugen je Modul: icu 2500, onko 1608, mtb 1358, lungenfunktion 1262, seltene 410, bildgebung 350, patho 312, mikrobio 304, kardio 301, pro 279.

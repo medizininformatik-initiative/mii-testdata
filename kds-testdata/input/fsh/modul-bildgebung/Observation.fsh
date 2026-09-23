@@ -90,18 +90,3 @@ Description: "Observation: Radiologische Messung (Durchmesser des Herdbefunds, 4
 * component.valueQuantity = 4.2 'mm' "millimeter"
 
 // Messung 2: valueCodeableConcept-Variante (qualitatives Messergebnis)
-Instance: mii-exa-test-data-radiologische-messung-2
-InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologische-messung
-Usage: #example
-Description: "Observation: Radiologische Messung (Ergebnisbewertung normal, valueCodeableConcept)"
-* insert TestDataLabel
-* meta.source = "https://www.charite.de/fhir/kds-testdata"
-* partOf = Reference(mii-exa-test-data-befundungsprozedur)
-* status = #final
-* category = $sct#122869004 "Measurement procedure (procedure)"
-* code = $sct#439984002 "Diameter of structure by imaging measurement (observable entity)"
-* subject = Reference(mii-exa-test-data-bildgebung-patient-1)
-* issued = "2024-07-19T12:07:00+02:00"
-* valueCodeableConcept.coding = $sct#17621005 "Normal (qualifier value)"
-* valueCodeableConcept.text = "Messwert im Normbereich"
-* bodySite = $sct#76752008 "Breast structure (body structure)"

@@ -2535,14 +2535,6 @@
       },
       {
         "reference": {
-          "reference": "Observation/mii-exa-test-data-mikrobio-allgemeine-bestimmung-quant-1"
-        },
-        "name": "mii-exa-test-data-mikrobio-allgemeine-bestimmung-quant-1",
-        "description": "Mikrobio: allgemeine-bestimmung — semiquantitative Bakterienmenge im Direktpraeparat (valueQuantity-Variante)",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
           "reference": "Observation/mii-exa-test-data-mikrobio-allgemeine-kultur-1"
         },
         "name": "mii-exa-test-data-mikrobio-allgemeine-kultur-1",
@@ -2567,26 +2559,10 @@
       },
       {
         "reference": {
-          "reference": "Observation/mii-exa-test-data-mikrobio-allgemeine-kultur-quant-1"
-        },
-        "name": "mii-exa-test-data-mikrobio-allgemeine-kultur-quant-1",
-        "description": "Mikrobio: allgemeine-kultur — semiquantitativer Wachstumsgrad (valueQuantity-Variante)",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
           "reference": "Observation/mii-exa-test-data-mikrobio-antigen-antikoerper-1"
         },
         "name": "mii-exa-test-data-mikrobio-antigen-antikoerper-1",
         "description": "Mikrobio: Antikörper-Titer (IgG) quantitativ",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "Observation/mii-exa-test-data-mikrobio-antigen-antikoerper-cc-1"
-        },
-        "name": "mii-exa-test-data-mikrobio-antigen-antikoerper-cc-1",
-        "description": "Mikrobio: antigen-antikoerper — qualitatives Ergebnis als valueCodeableConcept",
         "exampleBoolean": true
       },
       {
@@ -2623,26 +2599,10 @@
       },
       {
         "reference": {
-          "reference": "Observation/mii-exa-test-data-mikrobio-aviditaet-cc-1"
-        },
-        "name": "mii-exa-test-data-mikrobio-aviditaet-cc-1",
-        "description": "Mikrobio: aviditaet — kategoriales Ergebnis (valueCodeableConcept-Variante)",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
           "reference": "Observation/mii-exa-test-data-mikrobio-aviditaet-dar-1"
         },
         "name": "mii-exa-test-data-mikrobio-aviditaet-dar-1",
         "description": "Mikrobio: aviditaet — Probe nicht auswertbar (dataAbsentReason)",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "Observation/mii-exa-test-data-mikrobio-bartlett-quant-1"
-        },
-        "name": "mii-exa-test-data-mikrobio-bartlett-quant-1",
-        "description": "Mikrobio: bartlett-score — numerischer Score (valueQuantity-Variante)",
         "exampleBoolean": true
       },
       {
@@ -2683,14 +2643,6 @@
         },
         "name": "mii-exa-test-data-mikrobio-ct-wert-alt-1",
         "description": "Mikrobio: ct-wert — Alt-Variante zur MS-Coverage",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "Observation/mii-exa-test-data-mikrobio-ct-wert-cc-1"
-        },
-        "name": "mii-exa-test-data-mikrobio-ct-wert-cc-1",
-        "description": "Mikrobio: ct-wert — Zielsequenz nicht nachweisbar (valueCodeableConcept-Variante)",
         "exampleBoolean": true
       },
       {
@@ -2823,14 +2775,6 @@
       },
       {
         "reference": {
-          "reference": "Observation/mii-exa-test-data-mikrobio-keimzahl-cc-1"
-        },
-        "name": "mii-exa-test-data-mikrobio-keimzahl-cc-1",
-        "description": "Mikrobio: keimzahl — kein Wachstum (valueCodeableConcept-Variante)",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
           "reference": "Observation/mii-exa-test-data-mikrobio-keimzahl-dar-1"
         },
         "name": "mii-exa-test-data-mikrobio-keimzahl-dar-1",
@@ -2859,14 +2803,6 @@
         },
         "name": "mii-exa-test-data-mikrobio-mikroskopie-dar-1",
         "description": "Mikrobio: mikroskopie — Probe nicht auswertbar (dataAbsentReason)",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "Observation/mii-exa-test-data-mikrobio-mikroskopie-quant-1"
-        },
-        "name": "mii-exa-test-data-mikrobio-mikroskopie-quant-1",
-        "description": "Mikrobio: mikroskopie — quantitatives Ergebnis (Leukozyten/Gesichtsfeld, valueQuantity-Variante)",
         "exampleBoolean": true
       },
       {
@@ -2919,22 +2855,6 @@
       },
       {
         "reference": {
-          "reference": "Observation/mii-exa-test-data-mikrobio-mrgn-klasse-quant-1"
-        },
-        "name": "mii-exa-test-data-mikrobio-mrgn-klasse-quant-1",
-        "description": "Mikrobio: mrgn-klasse — Anzahl resistenter Antibiotikagruppen (valueQuantity-Variante)",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "Observation/mii-exa-test-data-mikrobio-nugent-cc-1"
-        },
-        "name": "mii-exa-test-data-mikrobio-nugent-cc-1",
-        "description": "Mikrobio: nugent-score — kategoriales Ergebnis (valueCodeableConcept-Variante)",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
           "reference": "Observation/mii-exa-test-data-mikrobio-nugent-score-1"
         },
         "name": "mii-exa-test-data-mikrobio-nugent-score-1",
@@ -2963,14 +2883,6 @@
         },
         "name": "mii-exa-test-data-mikrobio-organization-lab-1",
         "description": "Mikrobio Lab Organization: Mikrobiologisches Labor Charité",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "Observation/mii-exa-test-data-mikrobio-pathogenlast-cc-1"
-        },
-        "name": "mii-exa-test-data-mikrobio-pathogenlast-cc-1",
-        "description": "Mikrobio: molekulare-pathogenlast — nicht nachweisbar (valueCodeableConcept-Variante)",
         "exampleBoolean": true
       },
       {
@@ -3119,26 +3031,10 @@
       },
       {
         "reference": {
-          "reference": "Observation/mii-exa-test-data-mikrobio-titer-cc-1"
-        },
-        "name": "mii-exa-test-data-mikrobio-titer-cc-1",
-        "description": "Mikrobio: titer — kein Titer nachweisbar (valueCodeableConcept-Variante)",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
           "reference": "Observation/mii-exa-test-data-mikrobio-titer-dar-1"
         },
         "name": "mii-exa-test-data-mikrobio-titer-dar-1",
         "description": "Mikrobio: titer — Probe nicht auswertbar (dataAbsentReason)",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "Observation/mii-exa-test-data-mikrobio-titer-quant-1"
-        },
-        "name": "mii-exa-test-data-mikrobio-titer-quant-1",
-        "description": "Mikrobio: titer — inverser Titer als valueQuantity-Variante",
         "exampleBoolean": true
       },
       {
@@ -7842,14 +7738,6 @@
         },
         "name": "mii-exa-test-data-radiologische-messung-1",
         "description": "Observation: Radiologische Messung (Durchmesser des Herdbefunds, 4.2 mm)",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "Observation/mii-exa-test-data-radiologische-messung-2"
-        },
-        "name": "mii-exa-test-data-radiologische-messung-2",
-        "description": "Observation: Radiologische Messung (Ergebnisbewertung normal, valueCodeableConcept)",
         "exampleBoolean": true
       },
       {

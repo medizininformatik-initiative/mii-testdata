@@ -65,6 +65,39 @@ def get_values(obj, parts):
             return []
     return cur
 
+# Slice-Name -> FHIR-Typ fuer [x]-Choices (value[x], effective[x], onset[x], ...)
+_CHOICE_TYPE = {
+    "Quantity": "Quantity", "CodeableConcept": "CodeableConcept", "String": "string",
+    "Boolean": "boolean", "Integer": "integer", "Range": "Range", "Ratio": "Ratio",
+    "SampledData": "SampledData", "Time": "time", "DateTime": "dateTime",
+    "Period": "Period", "Age": "Age", "Reference": "Reference", "Duration": "Duration",
+}
+
+def unreachable_slice_prefixes(els):
+    """Element-Ids von [x]-Slices, deren Typ das Profil gar nicht (mehr) zulaesst."""
+    by_id = {e["id"]: e for e in els}
+    out = set()
+    for eid, el in by_id.items():
+        if not eid.endswith("[x]"):
+            continue
+        allowed = {t.get("code") for t in el.get("type", [])}
+        if not allowed:
+            continue
+        base = eid[: -len("[x]")].split(".")[-1]  # z.B. "value"
+        for sid in by_id:
+            if not sid.startswith(eid + ":"):
+                continue
+            top = eid + ":" + sid[len(eid) + 1:].split(".")[0]
+            if top in out:
+                continue
+            name = top[len(eid) + 1:]
+            if not name.lower().startswith(base.lower()):
+                continue
+            need = _CHOICE_TYPE.get(name[len(base):])
+            if need and need not in allowed:
+                out.add(top)
+    return out
+
 def any_extension_with_url(obj, url):
     if isinstance(obj, dict):
         for k, v in obj.items():
@@ -165,10 +198,19 @@ def main():
                     if t.get("code") == "Extension" and t.get("profile"):
                         ext_url[el["id"]] = t["profile"][0]
                         break
+        # Schraenkt ein Profil eine [x]-Choice auf bestimmte Typen ein, bleiben
+        # die geerbten Slices der anderen Typen samt MS-Flag im Snapshot stehen —
+        # obwohl sie strukturell unerreichbar sind. Solche Phantom-Pflichten
+        # duerfen nicht in den Nenner (sonst baut man Instanzen, die gegen die
+        # Typeinschraenkung des Profils verstossen; siehe docs/ballot-findings-2027.md).
+        unreachable = unreachable_slice_prefixes(els)
         ms_ids, ms_paths = [], set()
         for el in els:
             if el.get("mustSupport") and el["id"].count(".") >= 1:
                 if el["id"].endswith(".id") or ".id." in el["id"]:
+                    continue
+                if any(el["id"] == u or el["id"].startswith(u + ".")
+                       for u in unreachable):
                     continue
                 ms_ids.append(el["id"])
                 ms_paths.add(base_parts(el["id"]))

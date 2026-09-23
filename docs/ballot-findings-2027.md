@@ -105,26 +105,39 @@ analog zur bereits erfolgten Harmonisierung von `site`/`route`.
 
 ---
 
-## 4. Must-Support per Vererbung auf semantisch unpassenden Elementen
+## 4. Must-Support-Slices, die das Profil selbst unerreichbar gemacht hat
 
-**Profil:** `mii-pr-mikrobio-resistenzkategorie-status`
+**159 MS-Knoten in 3 Modulen** (Mikrobiologie 156, Bildgebung 2, Kardiologie 1).
 
-Das Profil bindet `Observation.code` an `mii-cs-mikrobio-resistenzkategorie` mit genau
-vier Konzepten (MRSA-, VRE-, LRE-, LVRE-Status). Deren Ergebnis ist rein **nominal**
-(positiv/negativ). Über die Ableitung von `ObservationLab` erbt das Profil aber
-`value[x]:valueQuantity` samt `quantityPrecision`-Extension als Must-Support.
+Schränkt ein abgeleitetes Profil eine `[x]`-Choice auf einen Typ ein, bleiben die vom
+Elternprofil geerbten Slices der **anderen** Typen samt ihrer Must-Support-Flags im
+Snapshot stehen — obwohl keine konforme Instanz sie je befüllen kann.
 
-**Folge:** Ein konformes System müsste eine numerische Messgröße mit Nachkommastellen-
-Präzision für einen Ja/Nein-Befund unterstützen. Die Paket-Beispiele des Moduls nutzen
-`valueQuantity` folgerichtig selbst nicht. Testdaten dafür zu bauen hieße, klinischen
-Inhalt zu erfinden — der Knoten bleibt deshalb bewusst offen.
+Beispiel `mii-pr-mikrobio-resistenzkategorie-status` (abgeleitet von `ObservationLab`):
 
-**Vorschlag:** Im abgeleiteten Profil die nicht zutreffenden `value[x]`-Slices auf
-`0..0` setzen oder das MS-Flag zurücknehmen, statt es aus `ObservationLab` durchzureichen.
+| Element | Kardinalität | Typ | MS |
+|---|---|---|---|
+| `Observation.value[x]` | 1..1 | **nur CodeableConcept** | ✓ |
+| `value[x]:valueCodeableConcept` | 1..1 | CodeableConcept (VS: Positive/Negative) | ✓ |
+| `value[x]:valueQuantity` | 0..1 | Quantity | ✓ ← unerreichbar |
+| `value[x]:valueQuantity.value.extension:quantityPrecision` | 0..1 | Extension | ✓ ← unerreichbar |
+| `value[x]:valueRange`, `:valueRatio` | 0..1 | Range/Ratio | ✓ ← unerreichbar |
 
-Derselbe Mechanismus lohnt eine generelle Prüfung: MS-Flags, die durch Vererbung auf
-Elemente geraten, die das Kindprofil fachlich ausschließt, blähen die Konformitätslast
-auf, ohne Aussagekraft zu gewinnen.
+Der Wert ist auf CodeableConcept festgelegt (Ergebnis: SNOMED *Positive* / *Negative*) —
+`valueQuantity` und Geschwister sind damit tot, tragen aber weiter MS.
+
+**Warum das mehr ist als ein Schönheitsfehler:** Jedes Werkzeug, das Konformitätspflichten
+aus dem Snapshot ableitet, zählt diese Slices mit. In unserer eigenen Testdaten-Erstellung
+hat genau das dazu geführt, dass **14 Beispielinstanzen mit unzulässigem `value[x]`-Typ**
+entstanden sind (z.B. `valueQuantity` auf einem CodeableConcept-only-Profil). SUSHI meldet
+das nicht — erst der Java-Validator hätte es gefunden. Die Instanzen wurden entfernt und
+`scripts/ms-coverage.py` zählt solche Phantom-Pflichten seither nicht mehr mit
+(Nenner 13.834 → 13.658).
+
+**Vorschlag:** Beim Einschränken einer Choice die nicht mehr zutreffenden Slices explizit
+auf `0..0` setzen (bzw. das MS-Flag entfernen), damit der Snapshot keine unerfüllbaren
+Pflichten transportiert. Perspektivisch wäre eine Prüfung im IG Publisher sinnvoll:
+*MS-Slice, dessen Typ die Elternchoice ausschließt.*
 
 ---
 
