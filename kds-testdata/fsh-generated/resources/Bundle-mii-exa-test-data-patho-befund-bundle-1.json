@@ -692,6 +692,26 @@
               }
             ],
             "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-Specimen.feature"
+          },
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/mii-ex-biobank-ebene",
+            "valueCoding": {
+              "code": "PRIMÄRPROBE",
+              "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/CodeSystem/mii-cs-biobank-probenebene",
+              "display": "Primärprobe"
+            }
+          },
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/mii-ex-biobank-infektiositaetsstatus",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "409603009",
+                  "system": "http://snomed.info/sct",
+                  "display": "Biosafety level 2 (qualifier value)"
+                }
+              ]
+            }
           }
         ],
         "identifier": [
@@ -1522,6 +1542,15 @@
             "valueReference": {
               "reference": "Composition/mii-exa-test-data-patho-composition-1"
             }
+          },
+          {
+            "valueRelatedArtifact": {
+              "type": "predecessor",
+              "label": "E_22_318",
+              "display": "Vorbefund: Prostatastanzbiopsie vom 2022-11-08, kein Karzinomnachweis",
+              "url": "https://www.charite.de/fhir/sid/patho/report/E_22_318.pdf"
+            },
+            "url": "http://hl7.org/fhir/StructureDefinition/workflow-relatedArtifact"
           }
         ],
         "conclusionCode": [

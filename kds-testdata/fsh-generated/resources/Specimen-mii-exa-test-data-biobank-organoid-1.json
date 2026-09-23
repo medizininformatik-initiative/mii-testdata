@@ -55,6 +55,38 @@
     {
       "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/mii-ex-biobank-anzahl-passagen",
       "valueInteger": 3
+    },
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/VerwaltendeOrganisation",
+      "valueReference": {
+        "reference": "Organization/mii-exa-test-data-organization-biobank-charite"
+      }
+    },
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Diagnose",
+      "valueReference": {
+        "reference": "Condition/mii-exa-test-data-biobank-diagnose-3"
+      }
+    },
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/mii-ex-biobank-ebene",
+      "valueCoding": {
+        "code": "ALIQUOT",
+        "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/CodeSystem/mii-cs-biobank-probenebene",
+        "display": "Aliquot"
+      }
+    },
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/mii-ex-biobank-infektiositaetsstatus",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "409603009",
+            "system": "http://snomed.info/sct",
+            "display": "Biosafety level 2 (qualifier value)"
+          }
+        ]
+      }
     }
   ],
   "identifier": [

@@ -136,3 +136,21 @@ Description: "Biobank Diagnose Patient 1: Kolonkarzinom"
 * bodySite.coding[snomed-ct] = $sct#71854001 "Colon structure (body structure)"
 * subject = Reference(mii-exa-test-data-biobank-patient-1)
 * recordedDate = "2024-08-15"
+
+// Diagnose zu Patient 3 — Grundlage der Gewebeprobe und des daraus
+// etablierten Kolon-Tumor-Organoids (extension:festgestellteDiagnose)
+Instance: mii-exa-test-data-biobank-diagnose-3
+InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-diagnose/StructureDefinition/Diagnose
+Usage: #example
+Description: "Biobank Diagnose Patient 3: Kolonkarzinom"
+* insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
+* clinicalStatus = $condition-clinical#active
+* verificationStatus = $condition-ver-status#confirmed
+* code.coding[icd10-gm] = $icd-10-gm#C18.9 "Bösartige Neubildung: Kolon, nicht näher bezeichnet"
+* code.coding[icd10-gm].version = "2024"
+* code.coding[alpha-id] = $alpha-id|2024#I29723 "Bösartige Neubildung des Kolons o.n.A."
+* code.coding[sct] = $sct#363406005 "Malignant tumor of colon (disorder)"
+* bodySite.coding[snomed-ct] = $sct#71854001 "Colon structure (body structure)"
+* subject = Reference(mii-exa-test-data-biobank-patient-3)
+* recordedDate = "2022-03-20"

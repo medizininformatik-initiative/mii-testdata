@@ -1580,6 +1580,8 @@ Description: "Mikrobio: mikroskopie — quantitatives Ergebnis (Leukozyten/Gesic
 * code.coding = $loinc#105059-0 "Microscopic observation [Identifier] in Specimen by Light microscopy"
 * code.coding.version = "2.80"
 * valueQuantity.value = 25
+* valueQuantity.value.extension[+].url = "http://hl7.org/fhir/StructureDefinition/quantity-precision"
+* valueQuantity.value.extension[=].valueInteger = 0
 * valueQuantity.comparator = #>
 * valueQuantity.unit = "/[HPF]"
 * valueQuantity.system = $ucum
@@ -1625,6 +1627,8 @@ Description: "Mikrobio: bartlett-score — numerischer Score (valueQuantity-Vari
 * code.coding = $loinc#75371-5 "Bartlett score of Sputum Qualitative by Light microscopy"
 * code.coding.version = "2.80"
 * valueQuantity.value = 1
+* valueQuantity.value.extension[+].url = "http://hl7.org/fhir/StructureDefinition/quantity-precision"
+* valueQuantity.value.extension[=].valueInteger = 0
 * valueQuantity.comparator = #>=
 * valueQuantity.unit = "1"
 * valueQuantity.system = $ucum
@@ -1771,3 +1775,172 @@ Description: "Mikrobio: titer — kein Titer nachweisbar (valueCodeableConcept-V
 * valueCodeableConcept.coding = $sct#260385009 "Negative (qualifier value)"
 * valueCodeableConcept.coding.version = "http://snomed.info/sct/900000000000207008/version/20250401"
 * method.coding = $sct#708104000 "Agglutination technique (qualifier value)"
+
+// ============================================================================
+// valueQuantity-Varianten fuer die semiquantitativ berichtbaren Profile
+// (Wachstumsgrad / Keimmenge / MRGN-Stufe). Fuellen value[x]:valueQuantity
+// inkl. quantityPrecision, das sonst in keiner Instanz dieser Profile vorkommt.
+// ============================================================================
+
+Instance: mii-exa-test-data-mikrobio-allgemeine-kultur-quant-1
+InstanceOf: https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-allgemeine-kultur
+Usage: #example
+Description: "Mikrobio: allgemeine-kultur — semiquantitativer Wachstumsgrad (valueQuantity-Variante)"
+* insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/mikrobiologie-lab-system"
+* identifier[analyseBefundCode].type.coding[observationInstanceV2] = $v2-0203#OBI
+* identifier[analyseBefundCode].system = "https://www.charite.de/fhir/sid/test-lab-results"
+* identifier[analyseBefundCode].value = "allg-kultur-quant-1"
+* identifier[analyseBefundCode].assigner.identifier.system = "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"
+* identifier[analyseBefundCode].assigner.identifier.value = "DIZ-CHA"
+* status = #final
+* category[observation-category] = $observation-category#laboratory
+* category[mibi-category] = $v2-0074#MB "Microbiology"
+* subject = Reference(mii-exa-test-data-mikrobio-patient-1)
+* subject.identifier.system = "https://www.charite.de/fhir/sid/patientenidentifikation"
+* subject.identifier.value = "MIKROBIO-TEST-001"
+* encounter = Reference(mii-exa-test-data-mikrobio-encounter-1)
+* encounter.identifier.system = "https://www.charite.de/fhir/sid/encounter-identifier"
+* encounter.identifier.value = "MIKROBIO-ENC-001"
+* effectiveDateTime = "2026-04-04T09:15:00+02:00"
+* effectiveDateTime.extension[+].url = "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum"
+* effectiveDateTime.extension[=].valueCoding = $sct#399445004 "Specimen collection date (observable entity)"
+* issued = "2026-04-06T08:00:00+02:00"
+* specimen = Reference(mii-exa-test-data-mikrobio-probe-2)
+* specimen.identifier.system = "https://www.charite.de/fhir/sid/Probennummer"
+* specimen.identifier.value = "TISSUE-001"
+* basedOn = Reference(mii-exa-test-data-mikrobio-servicerequest-1)
+* code.coding = $loinc#11475-1 "Microorganism identified in Specimen by Culture"
+* code.coding.version = "2.80"
+* valueQuantity.value = 3
+* valueQuantity.value.extension[+].url = "http://hl7.org/fhir/StructureDefinition/quantity-precision"
+* valueQuantity.value.extension[=].valueInteger = 0
+* valueQuantity.comparator = #>=
+* valueQuantity.unit = "1"
+* valueQuantity.system = $ucum
+* valueQuantity.code = #1
+* referenceRange.low.value = 0
+* referenceRange.low.unit = "1"
+* referenceRange.low.system = $ucum
+* referenceRange.low.code = #1
+* referenceRange.high.value = 0
+* referenceRange.high.unit = "1"
+* referenceRange.high.system = $ucum
+* referenceRange.high.code = #1
+* referenceRange.text = "Primaer steriles Gewebe: erwarteter Wachstumsgrad 0"
+* method.coding = $sct#703750006 "Aerobic culture technique (qualifier value)"
+* method.coding.display = "Aerobic culture technique (qualifier value)"
+* interpretation = $v3-ObservationInterpretation#A "Abnormal"
+* note[+].text = "Semiquantitativer Wachstumsgrad 3 von 4 (reichliches Wachstum) auf der Gewebekultur."
+* device = Reference(mii-exa-test-data-mikrobio-device-bactec-1)
+* device.identifier.system = "https://www.charite.de/fhir/sid/device-identifier"
+* device.identifier.value = "BACTEC-001"
+
+Instance: mii-exa-test-data-mikrobio-allgemeine-bestimmung-quant-1
+InstanceOf: https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-allgemeine-bestimmung
+Usage: #example
+Description: "Mikrobio: allgemeine-bestimmung — semiquantitative Bakterienmenge im Direktpraeparat (valueQuantity-Variante)"
+* insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/mikrobiologie-lab-system"
+* identifier[analyseBefundCode].type.coding[observationInstanceV2] = $v2-0203#OBI
+* identifier[analyseBefundCode].system = "https://www.charite.de/fhir/sid/test-lab-results"
+* identifier[analyseBefundCode].value = "allg-bestimmung-quant-1"
+* identifier[analyseBefundCode].assigner.identifier.system = "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"
+* identifier[analyseBefundCode].assigner.identifier.value = "DIZ-CHA"
+* status = #final
+* category[observation-category] = $observation-category#laboratory
+* category[mibi-category] = $v2-0074#MB "Microbiology"
+* subject = Reference(mii-exa-test-data-mikrobio-patient-1)
+* subject.identifier.system = "https://www.charite.de/fhir/sid/patientenidentifikation"
+* subject.identifier.value = "MIKROBIO-TEST-001"
+* encounter = Reference(mii-exa-test-data-mikrobio-encounter-1)
+* encounter.identifier.system = "https://www.charite.de/fhir/sid/encounter-identifier"
+* encounter.identifier.value = "MIKROBIO-ENC-001"
+* effectiveDateTime = "2026-04-04T09:15:00+02:00"
+* effectiveDateTime.extension[+].url = "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum"
+* effectiveDateTime.extension[=].valueCoding = $sct#399445004 "Specimen collection date (observable entity)"
+* issued = "2026-04-04T11:00:00+02:00"
+* specimen = Reference(mii-exa-test-data-mikrobio-probe-2)
+* specimen.identifier.system = "https://www.charite.de/fhir/sid/Probennummer"
+* specimen.identifier.value = "TISSUE-001"
+* basedOn = Reference(mii-exa-test-data-mikrobio-servicerequest-1)
+* code.coding = $loinc#23667-9 "Bacteria identified in Specimen"
+* code.coding.version = "2.80"
+* valueQuantity.value = 2
+* valueQuantity.value.extension[+].url = "http://hl7.org/fhir/StructureDefinition/quantity-precision"
+* valueQuantity.value.extension[=].valueInteger = 0
+* valueQuantity.comparator = #>=
+* valueQuantity.unit = "1"
+* valueQuantity.system = $ucum
+* valueQuantity.code = #1
+* referenceRange.low.value = 0
+* referenceRange.low.unit = "1"
+* referenceRange.low.system = $ucum
+* referenceRange.low.code = #1
+* referenceRange.high.value = 0
+* referenceRange.high.unit = "1"
+* referenceRange.high.system = $ucum
+* referenceRange.high.code = #1
+* referenceRange.text = "Primaer steriles Gewebe: erwartete Bakterienmenge 0"
+* method.coding = $sct#278289002 "Microscopy technique (qualifier value)"
+* method.coding.display = "Microscopy technique (qualifier value)"
+* interpretation = $v3-ObservationInterpretation#A "Abnormal"
+* note[+].text = "Semiquantitative Bakterienmenge 2 von 4 (maessig) im Gram-Direktpraeparat."
+* device = Reference(mii-exa-test-data-mikrobio-device-mikroskop-1)
+* device.identifier.system = "https://www.charite.de/fhir/sid/device-identifier"
+* device.identifier.value = "MIKROSKOP-001"
+
+Instance: mii-exa-test-data-mikrobio-mrgn-klasse-quant-1
+InstanceOf: https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-mrgn-klasse
+Usage: #example
+Description: "Mikrobio: mrgn-klasse — Anzahl resistenter Antibiotikagruppen (valueQuantity-Variante)"
+* insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/mikrobiologie-lab-system"
+* identifier[analyseBefundCode].type.coding[observationInstanceV2] = $v2-0203#OBI
+* identifier[analyseBefundCode].system = "https://www.charite.de/fhir/sid/test-lab-results"
+* identifier[analyseBefundCode].value = "mrgn-klasse-quant-1"
+* identifier[analyseBefundCode].assigner.identifier.system = "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"
+* identifier[analyseBefundCode].assigner.identifier.value = "DIZ-CHA"
+* status = #final
+* category[observation-category] = $observation-category#laboratory
+* category[mibi-category] = $v2-0074#MB "Microbiology"
+* subject = Reference(mii-exa-test-data-mikrobio-patient-1)
+* subject.identifier.system = "https://www.charite.de/fhir/sid/patientenidentifikation"
+* subject.identifier.value = "MIKROBIO-TEST-001"
+* encounter = Reference(mii-exa-test-data-mikrobio-encounter-1)
+* encounter.identifier.system = "https://www.charite.de/fhir/sid/encounter-identifier"
+* encounter.identifier.value = "MIKROBIO-ENC-001"
+* effectiveDateTime = "2026-04-04T11:00:00+02:00"
+* effectiveDateTime.extension[+].url = "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum"
+* effectiveDateTime.extension[=].valueCoding = $sct#399445004 "Specimen collection date (observable entity)"
+* issued = "2026-04-04T12:00:00+02:00"
+* specimen = Reference(mii-exa-test-data-mikrobio-specimen-2)
+* specimen.identifier.system = "https://www.charite.de/fhir/sid/Probennummer"
+* specimen.identifier.value = "URINE-001"
+* basedOn = Reference(mii-exa-test-data-mikrobio-servicerequest-1)
+* code.coding = $loinc#99780-9 "Multidrug resistant gram-negative organism classification [Type]"
+* code.coding.version = "2.80"
+* valueQuantity.value = 3
+* valueQuantity.value.extension[+].url = "http://hl7.org/fhir/StructureDefinition/quantity-precision"
+* valueQuantity.value.extension[=].valueInteger = 0
+* valueQuantity.comparator = #>=
+* valueQuantity.unit = "1"
+* valueQuantity.system = $ucum
+* valueQuantity.code = #1
+* referenceRange.low.value = 0
+* referenceRange.low.unit = "1"
+* referenceRange.low.system = $ucum
+* referenceRange.low.code = #1
+* referenceRange.high.value = 1
+* referenceRange.high.unit = "1"
+* referenceRange.high.system = $ucum
+* referenceRange.high.code = #1
+* referenceRange.text = "0-1 resistente Antibiotikagruppen: kein MRGN"
+* method.coding = $sct#14788002 "Antimicrobial susceptibility test (procedure)"
+* method.coding.display = "Antimicrobial susceptibility test (procedure)"
+* interpretation = $v3-ObservationInterpretation#R "Resistant"
+* note[+].text = "3 der 4 KRINKO-Leitsubstanzgruppen resistent (3MRGN), numerisch berichtet."
+* derivedFrom = Reference(mii-exa-test-data-mikrobio-empfindlichkeit-1)
+* device = Reference(mii-exa-test-data-mikrobio-device-vitek-1)
+* device.identifier.system = "https://www.charite.de/fhir/sid/device-identifier"
+* device.identifier.value = "VITEK-001"

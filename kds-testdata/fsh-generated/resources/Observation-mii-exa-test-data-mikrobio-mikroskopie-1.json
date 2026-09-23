@@ -74,6 +74,20 @@
     },
     "reference": "Specimen/mii-exa-test-data-mikrobio-specimen-1"
   },
+  "extension": [
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-ex-mikrobio-faerbung",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "62777006",
+            "system": "http://snomed.info/sct",
+            "display": "Gram stain method"
+          }
+        ]
+      }
+    }
+  ],
   "code": {
     "coding": [
       {

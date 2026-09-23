@@ -68,3 +68,4 @@ Description: "Bundle: Biobank Testdaten"
 // Infrastructure
 * insert AddBundleEntry(mii-exa-test-data-organization-charite, Organization)
 * insert AddBundleEntry(mii-exa-test-data-biobank-diagnose-1, Condition)
+* insert AddBundleEntry(mii-exa-test-data-biobank-diagnose-3, Condition)
