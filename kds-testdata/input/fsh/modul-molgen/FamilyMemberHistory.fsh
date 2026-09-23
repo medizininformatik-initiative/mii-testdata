@@ -10,6 +10,11 @@ Description: "FamilyMemberHistory: Familienanamnese fuer BRAF-Mutation"
 * patient = Reference(mii-exa-test-data-molgen-patient-1)
 * date = "2022-04-07"
 * relationship.coding[snomed] = $sct#72705000 "Mother (person)"
+// Praezisierung der Verwandtschaft: muetterliche Linie, Verwandte 1. Grades,
+// leibliches Elternteil
+* relationship.coding[snomed].extension[FamiliareLinie].valueCoding = $sct#72705000 "Mother (person)"
+* relationship.coding[snomed].extension[Verwandtschaftsgrad].valueCoding = $sct#125678001 "First degree blood relative (person)"
+* relationship.coding[snomed].extension[Verwandtschaftsverhaeltnis].valueCoding = $sct#13646006 "Natural parent (person)"
 * relationship.coding[v3-RoleCode] = $v3-RoleCode#MTH "mother"
 * sex.coding[0] = $administrative-gender#female
 * sex.coding[+] = $sct#248152002 "Female (finding)"

@@ -65,6 +65,15 @@
             "code": "IN",
             "display": "ingredient"
           }
+        },
+        {
+          "extension": [
+            {
+              "url": "ingredientUri",
+              "valueUri": "http://snomed.info/sct#109196007"
+            }
+          ],
+          "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstoffrelation"
         }
       ],
       "isActive": true
@@ -89,6 +98,15 @@
             "code": "IN",
             "display": "ingredient"
           }
+        },
+        {
+          "extension": [
+            {
+              "url": "ingredientUri",
+              "valueUri": "http://snomed.info/sct#11713004"
+            }
+          ],
+          "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstoffrelation"
         }
       ],
       "isActive": false

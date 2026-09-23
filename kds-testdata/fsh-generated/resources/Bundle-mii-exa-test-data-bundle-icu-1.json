@@ -8696,6 +8696,31 @@
           "start": "2024-05-03T02:00:00+02:00",
           "end": "2024-05-11T14:00:00+02:00"
         },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "233573008",
+              "display": "Extracorporeal membrane oxygenation (procedure)"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://fhir.de/StructureDefinition/seitenlokalisation",
+                  "valueCoding": {
+                    "code": "R",
+                    "system": "https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_ICD_SEITENLOKALISATION",
+                    "display": "rechts"
+                  }
+                }
+              ],
+              "system": "http://fhir.de/CodeSystem/bfarm/ops",
+              "code": "8-852.05",
+              "display": "Dauer der Behandlung 192 bis unter 240 Stunden",
+              "version": "2024"
+            }
+          ]
+        },
         "extension": [
           {
             "url": "http://fhir.de/StructureDefinition/ProzedurDokumentationsdatum",
@@ -8743,15 +8768,6 @@
             }
           ]
         },
-        "code": {
-          "coding": [
-            {
-              "code": "233573008",
-              "system": "http://snomed.info/sct",
-              "display": "Extracorporeal membrane oxygenation (procedure)"
-            }
-          ]
-        },
         "recorder": {
           "reference": "Practitioner/mii-exa-test-data-icu-practitioner-1"
         }
@@ -8783,6 +8799,30 @@
           "start": "2024-05-01T18:00:00+02:00",
           "end": "2024-05-13T09:00:00+02:00"
         },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "243147009",
+              "display": "Controlled ventilation (procedure)"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://fhir.de/StructureDefinition/seitenlokalisation",
+                  "valueCoding": {
+                    "code": "B",
+                    "system": "https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_ICD_SEITENLOKALISATION"
+                  }
+                }
+              ],
+              "system": "http://fhir.de/CodeSystem/bfarm/ops",
+              "code": "8-718.73",
+              "display": "Mindestens 11 bis höchstens 20 Behandlungstage",
+              "version": "2024"
+            }
+          ]
+        },
         "extension": [
           {
             "url": "http://fhir.de/StructureDefinition/ProzedurDokumentationsdatum",
@@ -8811,7 +8851,7 @@
         ],
         "note": [
           {
-            "text": "Invasive Beatmung mit ultraprotektiver Lungen-Ruhigstellung unter VV-ECMO, Extubation am 13.05."
+            "text": "Invasive Beatmung mit ultraprotektiver Lungen-Ruhigstellung unter VV-ECMO, strukturierte Beatmungsentwoehnung mit taeglichen Spontanatmungsversuchen, Extubation am 13.05."
           }
         ],
         "status": "completed",
@@ -8827,15 +8867,6 @@
               "code": "40617009",
               "system": "http://snomed.info/sct",
               "display": "Artificial ventilation"
-            }
-          ]
-        },
-        "code": {
-          "coding": [
-            {
-              "code": "243147009",
-              "system": "http://snomed.info/sct",
-              "display": "Controlled ventilation (procedure)"
             }
           ]
         },

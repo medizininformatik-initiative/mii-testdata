@@ -18,6 +18,30 @@
     "start": "2024-05-01T18:00:00+02:00",
     "end": "2024-05-13T09:00:00+02:00"
   },
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "243147009",
+        "display": "Controlled ventilation (procedure)"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://fhir.de/StructureDefinition/seitenlokalisation",
+            "valueCoding": {
+              "code": "B",
+              "system": "https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_ICD_SEITENLOKALISATION"
+            }
+          }
+        ],
+        "system": "http://fhir.de/CodeSystem/bfarm/ops",
+        "code": "8-718.73",
+        "display": "Mindestens 11 bis höchstens 20 Behandlungstage",
+        "version": "2024"
+      }
+    ]
+  },
   "extension": [
     {
       "url": "http://fhir.de/StructureDefinition/ProzedurDokumentationsdatum",
@@ -46,7 +70,7 @@
   ],
   "note": [
     {
-      "text": "Invasive Beatmung mit ultraprotektiver Lungen-Ruhigstellung unter VV-ECMO, Extubation am 13.05."
+      "text": "Invasive Beatmung mit ultraprotektiver Lungen-Ruhigstellung unter VV-ECMO, strukturierte Beatmungsentwoehnung mit taeglichen Spontanatmungsversuchen, Extubation am 13.05."
     }
   ],
   "status": "completed",
@@ -62,15 +86,6 @@
         "code": "40617009",
         "system": "http://snomed.info/sct",
         "display": "Artificial ventilation"
-      }
-    ]
-  },
-  "code": {
-    "coding": [
-      {
-        "code": "243147009",
-        "system": "http://snomed.info/sct",
-        "display": "Controlled ventilation (procedure)"
       }
     ]
   },

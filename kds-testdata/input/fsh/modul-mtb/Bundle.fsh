@@ -60,6 +60,7 @@ Description: "Bundle: MTB Testdaten Patient-1"
 * insert AddBundleEntry(mii-exa-test-data-mtb-therapieempfehlung-3, MedicationRequest)
 * insert AddBundleEntry(mii-exa-test-data-mtb-therapieempfehlung-kombination-1, RequestGroup)
 * insert AddBundleEntry(mii-exa-test-data-mtb-studieneinschluss-anfrage-1, ServiceRequest)
+* insert AddBundleEntry(mii-exa-test-data-mtb-studieneinschluss-anfrage-2, ServiceRequest)
 * insert AddBundleEntry(mii-exa-test-data-mtb-studie-1, ResearchStudy)
 * insert AddBundleEntry(mii-exa-test-data-mtb-studie-2, ResearchStudy)
 * insert AddBundleEntry(mii-exa-test-data-mtb-studien-register-1, Library)
