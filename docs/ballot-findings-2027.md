@@ -105,7 +105,45 @@ analog zur bereits erfolgten Harmonisierung von `site`/`route`.
 
 ---
 
-## 4. Bereits gemeldet (Referenz)
+## 4. Must-Support per Vererbung auf semantisch unpassenden Elementen
+
+**Profil:** `mii-pr-mikrobio-resistenzkategorie-status`
+
+Das Profil bindet `Observation.code` an `mii-cs-mikrobio-resistenzkategorie` mit genau
+vier Konzepten (MRSA-, VRE-, LRE-, LVRE-Status). Deren Ergebnis ist rein **nominal**
+(positiv/negativ). Über die Ableitung von `ObservationLab` erbt das Profil aber
+`value[x]:valueQuantity` samt `quantityPrecision`-Extension als Must-Support.
+
+**Folge:** Ein konformes System müsste eine numerische Messgröße mit Nachkommastellen-
+Präzision für einen Ja/Nein-Befund unterstützen. Die Paket-Beispiele des Moduls nutzen
+`valueQuantity` folgerichtig selbst nicht. Testdaten dafür zu bauen hieße, klinischen
+Inhalt zu erfinden — der Knoten bleibt deshalb bewusst offen.
+
+**Vorschlag:** Im abgeleiteten Profil die nicht zutreffenden `value[x]`-Slices auf
+`0..0` setzen oder das MS-Flag zurücknehmen, statt es aus `ObservationLab` durchzureichen.
+
+Derselbe Mechanismus lohnt eine generelle Prüfung: MS-Flags, die durch Vererbung auf
+Elemente geraten, die das Kindprofil fachlich ausschließt, blähen die Konformitätslast
+auf, ohne Aussagekraft zu gewinnen.
+
+---
+
+## 5. Randnotiz: OPS-Lücken (kein Profilfehler)
+
+Beim Kodieren der Testdaten sind zwei Katalog-Lücken aufgefallen, die Implementierer
+betreffen können — sie sind **keine** Fehler der MII-Profile:
+
+- **Invasive Beatmung Erwachsener** hat im OPS 2024 keinen eigenen Kode; `8-713` kennt
+  nur `.0` (HFNC). Die Beatmungsdauer läuft über die DKR-1001-Beatmungsstunden.
+  Die Testdaten kodieren deshalb das Weaning (`8-718.73`) statt eines konstruierten `8-71x`.
+- **Forcierte Spirometrie** hat ebenfalls keinen eigenen Kode; bei `1-710`
+  (Ganzkörperplethysmographie) steht ausdrücklich „Spirometrie und Flussvolumenkurve
+  sind im Kode enthalten". Das MS-Element `code.coding:ops` der
+  `mii-pr-lungenfunktion-spirometrie-messung` bleibt daher offen.
+
+---
+
+## 6. Bereits gemeldet (Referenz)
 
 | Befund | Ticket |
 |---|---|
