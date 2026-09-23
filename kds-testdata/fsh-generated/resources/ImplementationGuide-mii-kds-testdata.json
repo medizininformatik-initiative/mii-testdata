@@ -8574,6 +8574,14 @@
       },
       {
         "reference": {
+          "reference": "ServiceRequest/mii-exa-test-data-mtb-studieneinschluss-anfrage-2"
+        },
+        "name": "MTB Studieneinschluss Anfrage (abgelehnt)",
+        "description": "Test instance for a rejected study enrollment request (statusReason)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Library/mii-exa-test-data-mtb-studien-register-1"
         },
         "name": "MTB Studienregister",

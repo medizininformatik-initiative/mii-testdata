@@ -13,7 +13,14 @@ Description: "Observation: Leukozyten im Blut für Patient 1"
 * encounter.identifier.system = "https://www.charite.de/fhir/NamingSystem/Aufnahmenummern"
 * encounter.identifier.value = "MII_0000001"
 * basedOn = Reference(mii-exa-test-data-patient-1-labrequest-1)
+// Quelle des klinischen Bezugsdatums: effectiveDateTime ist hier das
+// Abnahmedatum der Probe (nicht der Zeitpunkt des Messvorgangs)
+* effectiveDateTime.extension[+].url = "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum"
+* effectiveDateTime.extension[=].valueCoding = $sct#399445004 "Specimen collection date"
 * valueQuantity = 17.0 $ucum#/nL "/nanoliter"
+// Messgenauigkeit des Analysators: eine Nachkommastelle
+* valueQuantity.value.extension[+].url = "http://hl7.org/fhir/StructureDefinition/quantity-precision"
+* valueQuantity.value.extension[=].valueInteger = 1
 * interpretation = $v3-ObservationInterpretation#H "High"
 * method = $sct#703452004 "Electrical impedance technique (qualifier value)"
 * note.text = "Leukozyten EDTA-Blut Impedanzmessung"

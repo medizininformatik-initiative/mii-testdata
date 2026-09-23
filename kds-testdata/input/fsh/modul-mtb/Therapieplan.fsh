@@ -198,6 +198,26 @@ Description: "Test instance for study enrollment request with all MS elements"
 * insert MtbBeschlussEvidenzPublikation(http://www.ncbi.nlm.nih.gov/pubmed, 34726479)
 * reasonReference = Reference(mii-exa-test-data-mtb-diagnose-primaertumor-1)
 
+// Zweite Anfrage: abgelehnter Studieneinschluss - deckt extension:statusReason
+// ("Grund fuer Ablehnung des Studieneinschlusses - z.B. Tod oder Studie
+// geschlossen") ab, der nur bei einem Exception-Status sinnvoll ist.
+Instance: mii-exa-test-data-mtb-studieneinschluss-anfrage-2
+InstanceOf: MII_PR_MTB_Studieneinschluss_Anfrage
+Usage: #example
+Title: "MTB Studieneinschluss Anfrage (abgelehnt)"
+Description: "Test instance for a rejected study enrollment request (statusReason)"
+* insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
+* meta.profile = "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-studieneinschluss-anfrage"
+* status = #revoked
+* intent = #proposal
+* subject = Reference(mii-exa-test-data-mtb-patient-1)
+* supportingInfo = Reference(mii-exa-test-data-mtb-studie-1)
+* extension[statusReason].valueCodeableConcept.coding = https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/CodeSystem/mii-cs-mtb-therapiestatusgrund#patient-death "Tod"
+* extension[statusReason].valueCodeableConcept.text = "Studieneinschluss nicht erfolgt - Patient vor Screening verstorben"
+* insert MtbBeschlussSubPrioritaet(3.2)
+* reasonReference = Reference(mii-exa-test-data-mtb-diagnose-primaertumor-1)
+
 // =============================================================================
 // 39. MII_PR_MTB_Studie (ResearchStudy, extends Studie)
 // =============================================================================

@@ -80,6 +80,49 @@
         }
       ],
       "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-device"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-title",
+      "valueString": "Comprehensive Genomic Profiling Panel (Solid Tumor, 523 Gene)"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-specimen",
+      "valueReference": {
+        "reference": "Specimen/mii-exa-test-data-mtb-specimen-1"
+      }
+    },
+    {
+      "extension": [
+        {
+          "url": "description",
+          "valueString": "Hybrid-Capture-Panel, kodierende Bereiche von 523 Genen (u.a. EGFR, ERBB2, ALK)"
+        },
+        {
+          "url": "studied",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "code": "HGNC:3236",
+                "system": "http://www.genenames.org/geneId",
+                "display": "EGFR"
+              }
+            ]
+          }
+        },
+        {
+          "url": "studied",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "code": "HGNC:3430",
+                "system": "http://www.genenames.org/geneId",
+                "display": "ERBB2"
+              }
+            ]
+          }
+        }
+      ],
+      "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-regions"
     }
   ],
   "identifier": [

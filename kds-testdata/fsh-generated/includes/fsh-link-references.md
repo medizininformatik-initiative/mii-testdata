@@ -1061,6 +1061,7 @@
 [mii-exa-test-data-mtb-studie-2]: ResearchStudy-mii-exa-test-data-mtb-studie-2.html
 [mii-exa-test-data-mtb-studie-group-1]: Group-mii-exa-test-data-mtb-studie-group-1.html
 [mii-exa-test-data-mtb-studieneinschluss-anfrage-1]: ServiceRequest-mii-exa-test-data-mtb-studieneinschluss-anfrage-1.html
+[mii-exa-test-data-mtb-studieneinschluss-anfrage-2]: ServiceRequest-mii-exa-test-data-mtb-studieneinschluss-anfrage-2.html
 [mii-exa-test-data-mtb-studien-register-1]: Library-mii-exa-test-data-mtb-studien-register-1.html
 [mii-exa-test-data-mtb-systemische-therapie-1]: Procedure-mii-exa-test-data-mtb-systemische-therapie-1.html
 [mii-exa-test-data-mtb-systemische-therapie-medstatement-1]: MedicationStatement-mii-exa-test-data-mtb-systemische-therapie-medstatement-1.html

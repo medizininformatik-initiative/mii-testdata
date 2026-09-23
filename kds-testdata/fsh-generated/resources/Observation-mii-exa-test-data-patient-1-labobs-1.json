@@ -79,6 +79,20 @@
       "reference": "ServiceRequest/mii-exa-test-data-patient-1-labrequest-1"
     }
   ],
+  "valueQuantity": {
+    "system": "http://unitsofmeasure.org",
+    "value": 17,
+    "_value": {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/quantity-precision",
+          "valueInteger": 1
+        }
+      ]
+    },
+    "code": "/nL",
+    "unit": "/nanoliter"
+  },
   "interpretation": [
     {
       "coding": [
@@ -160,14 +174,20 @@
       }
     }
   ],
-  "valueQuantity": {
-    "system": "http://unitsofmeasure.org",
-    "value": 17,
-    "code": "/nL",
-    "unit": "/nanoliter"
-  },
   "status": "final",
   "effectiveDateTime": "2024-02-15T12:00:00+01:00",
+  "_effectiveDateTime": {
+    "extension": [
+      {
+        "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum",
+        "valueCoding": {
+          "code": "399445004",
+          "system": "http://snomed.info/sct",
+          "display": "Specimen collection date"
+        }
+      }
+    ]
+  },
   "issued": "2024-02-15T12:00:00+01:00",
   "method": {
     "coding": [

@@ -23,8 +23,13 @@ Description: "Lungenfunktion Medication: Methacholin-Provokationsloesung (Provok
 * form.text = "Loesung fuer einen Vernebler"
 * ingredient[Wirkstoff].extension[Wirkstofftyp].valueCoding = https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/wirkstofftyp#IN "ingredient"
 * ingredient[Wirkstoff].itemCodeableConcept.text = "Methacholinchlorid"
+// Wirkstoffrelation: Bezug auf die Substanz, auf die sich die Staerkeangabe
+// bezieht (hier identisch mit dem angegebenen Wirkstoff selbst) - gleiches
+// Muster wie mii-exa-test-data-medication-dalbavancin im Medikationsmodul
+* ingredient[Wirkstoff].extension[Wirkstoffrelation].extension[ingredientUri].valueUri = "http://snomed.info/sct#109196007"
 * ingredient[Loesung].extension[Wirkstofftyp].valueCoding = https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/wirkstofftyp#IN "ingredient"
 * ingredient[Loesung].itemCodeableConcept.text = "Wasser fuer Injektionszwecke"
+* ingredient[Loesung].extension[Wirkstoffrelation].extension[ingredientUri].valueUri = "http://snomed.info/sct#11713004"
 
 // Erste Dosisstufe
 Instance: mii-exa-test-data-lungenfunktion-dosis-gabe-1

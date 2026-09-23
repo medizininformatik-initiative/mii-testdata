@@ -329,6 +329,14 @@
             "valueReference": {
               "reference": "RiskAssessment/mii-exa-test-data-patient-3-molgen-polygener-risiko-score-1"
             }
+          },
+          {
+            "valueRelatedArtifact": {
+              "type": "citation",
+              "citation": "Richards et al., Standards and guidelines for the interpretation of sequence variants. Genet Med. 2015;17:405-24",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/25741868/"
+            },
+            "url": "http://hl7.org/fhir/StructureDefinition/workflow-relatedArtifact"
           }
         ],
         "basedOn": [
@@ -1869,6 +1877,32 @@
         "relationship": {
           "coding": [
             {
+              "extension": [
+                {
+                  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/mii-ex-molgen-familiare-linie",
+                  "valueCoding": {
+                    "code": "72705000",
+                    "system": "http://snomed.info/sct",
+                    "display": "Mother (person)"
+                  }
+                },
+                {
+                  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/mii-ex-molgen-verwandtschaftsgrad",
+                  "valueCoding": {
+                    "code": "125678001",
+                    "system": "http://snomed.info/sct",
+                    "display": "First degree blood relative (person)"
+                  }
+                },
+                {
+                  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/mii-ex-molgen-verwandtschaftsverhaeltnis",
+                  "valueCoding": {
+                    "code": "13646006",
+                    "system": "http://snomed.info/sct",
+                    "display": "Natural parent (person)"
+                  }
+                }
+              ],
               "system": "http://snomed.info/sct",
               "code": "72705000",
               "display": "Mother (person)"

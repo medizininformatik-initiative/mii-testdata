@@ -196,6 +196,9 @@ Description: "Test instance for prior systemic therapy"
 * bodySite.coding[snomed-ct] = $SCT#39607008 "Lung structure (body structure)"
 * bodySite.coding[snomed-ct].version = "http://snomed.info/sct/900000000000207008/version/20240201"
 * note.text = "Platinbasierte Erstlinien-Chemotherapie vor MTB-Vorstellung."
+// Leitliniendokumentation der Vortherapie: 1. Therapielinie, zugelassene Anwendung
+* extension[Leitlinie].extension[Therapielinie].valueUnsignedInt = 1
+* extension[Leitlinie].extension[Zulassungsstatus].valueCodeableConcept.coding = $mii-cs-mtb-zulassungsstatus#in-label "In-Label"
 * basedOn[tumorkonferenz] = Reference(mii-exa-test-data-mtb-therapieplan-1)
 * partOf = Reference(mii-exa-test-data-mtb-systemische-therapie-1)
 * reasonReference = Reference(mii-exa-test-data-mtb-diagnose-primaertumor-1)

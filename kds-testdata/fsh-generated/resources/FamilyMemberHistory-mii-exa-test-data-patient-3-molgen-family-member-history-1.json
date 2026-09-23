@@ -17,6 +17,32 @@
   "relationship": {
     "coding": [
       {
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/mii-ex-molgen-familiare-linie",
+            "valueCoding": {
+              "code": "72705000",
+              "system": "http://snomed.info/sct",
+              "display": "Mother (person)"
+            }
+          },
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/mii-ex-molgen-verwandtschaftsgrad",
+            "valueCoding": {
+              "code": "125678001",
+              "system": "http://snomed.info/sct",
+              "display": "First degree blood relative (person)"
+            }
+          },
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/mii-ex-molgen-verwandtschaftsverhaeltnis",
+            "valueCoding": {
+              "code": "13646006",
+              "system": "http://snomed.info/sct",
+              "display": "Natural parent (person)"
+            }
+          }
+        ],
         "system": "http://snomed.info/sct",
         "code": "72705000",
         "display": "Mother (person)"

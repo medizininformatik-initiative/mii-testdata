@@ -78,6 +78,20 @@ Description: "Test instance for MTB genomic study analysis with method and chang
 * extension[=].extension[=].valueReference = Reference(mii-exa-test-data-mtb-device-sequencer-1)
 * extension[=].extension[+].url = "function"
 * extension[=].extension[=].valueCodeableConcept = https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/CodeSystem/mii-cs-mtb-genomicanalysis-devicefunction#sequencing-device
+// Bezeichnung der Analyse
+* extension[+].url = "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-title"
+* extension[=].valueString = "Comprehensive Genomic Profiling Panel (Solid Tumor, 523 Gene)"
+// Untersuchtes Material
+* extension[+].url = "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-specimen"
+* extension[=].valueReference = Reference(mii-exa-test-data-mtb-specimen-1)
+// Untersuchte Regionen
+* extension[+].url = "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-regions"
+* extension[=].extension[+].url = "description"
+* extension[=].extension[=].valueString = "Hybrid-Capture-Panel, kodierende Bereiche von 523 Genen (u.a. EGFR, ERBB2, ALK)"
+* extension[=].extension[+].url = "studied"
+* extension[=].extension[=].valueCodeableConcept = $HGNC#HGNC:3236 "EGFR"
+* extension[=].extension[+].url = "studied"
+* extension[=].extension[=].valueCodeableConcept = $HGNC#HGNC:3430 "ERBB2"
 * identifier.system = "https://www.charite.de/fhir/sid/mtb-genomic-study"
 * identifier.value = "GSA-2024-001"
 * performedDateTime = "2024-02-21"

@@ -13,6 +13,11 @@ Description: "DiagnosticReport: Molekulargenetischer Befundbericht mit BRAF-Muta
 * extension[genomic-study].valueReference = Reference(mii-exa-test-data-patient-3-molgen-genomic-study-1)
 * extension[genomic-risk-assessment].url = "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-risk-assessment"
 * extension[genomic-risk-assessment].valueReference = Reference(mii-exa-test-data-patient-3-molgen-polygener-risiko-score-1)
+// Zugrunde liegende Leitlinie/Publikation der Befundinterpretation
+* extension[workflow-relatedArtifact].url = "http://hl7.org/fhir/StructureDefinition/workflow-relatedArtifact"
+* extension[workflow-relatedArtifact].valueRelatedArtifact.type = $related-artifact-type#citation "Citation"
+* extension[workflow-relatedArtifact].valueRelatedArtifact.citation = "Richards et al., Standards and guidelines for the interpretation of sequence variants. Genet Med. 2015;17:405-24"
+* extension[workflow-relatedArtifact].valueRelatedArtifact.url = "https://pubmed.ncbi.nlm.nih.gov/25741868/"
 * basedOn = Reference(mii-exa-test-data-patient-3-molgen-anforderung-1)
 * status = $diagnostic-report-status#final
 * category[Genetics] = $v2-0074#GE "Genetics"
