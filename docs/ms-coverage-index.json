@@ -4,6 +4,7 @@
    "module": "modul-diagnose",
    "instances": [
     "mii-exa-test-data-biobank-diagnose-1",
+    "mii-exa-test-data-biobank-diagnose-3",
     "mii-exa-test-data-dokument-diagnose-1",
     "mii-exa-test-data-icu-diagnose-1",
     "mii-exa-test-data-mikrobio-diagnose-1",
@@ -27,21 +28,21 @@
      "mii-exa-test-data-patient-8-diagnose-1",
      "mii-exa-test-data-patient-1-diagnose-1",
      "mii-exa-test-data-patient-6-diagnose-1",
-     "mii-exa-test-data-patient-9-diagnose-1"
+     "mii-exa-test-data-biobank-diagnose-3"
     ],
     "Condition.meta.source": [
      "mii-exa-test-data-patient-7-diagnose-1",
      "mii-exa-test-data-patient-8-diagnose-1",
      "mii-exa-test-data-patient-1-diagnose-1",
      "mii-exa-test-data-patient-6-diagnose-1",
-     "mii-exa-test-data-patient-9-diagnose-1"
+     "mii-exa-test-data-biobank-diagnose-3"
     ],
     "Condition.meta.profile": [
      "mii-exa-test-data-patient-7-diagnose-1",
      "mii-exa-test-data-patient-8-diagnose-1",
      "mii-exa-test-data-patient-1-diagnose-1",
      "mii-exa-test-data-patient-6-diagnose-1",
-     "mii-exa-test-data-patient-9-diagnose-1"
+     "mii-exa-test-data-biobank-diagnose-3"
     ],
     "Condition.extension:ReferenzPrimaerdiagnose": [
      "mii-exa-test-data-patient-1-diagnose-2"
@@ -70,77 +71,77 @@
      "mii-exa-test-data-patient-8-diagnose-1",
      "mii-exa-test-data-patient-1-diagnose-1",
      "mii-exa-test-data-patient-6-diagnose-1",
-     "mii-exa-test-data-patient-9-diagnose-1"
+     "mii-exa-test-data-biobank-diagnose-3"
     ],
     "Condition.clinicalStatus.coding": [
      "mii-exa-test-data-patient-7-diagnose-1",
      "mii-exa-test-data-patient-8-diagnose-1",
      "mii-exa-test-data-patient-1-diagnose-1",
      "mii-exa-test-data-patient-6-diagnose-1",
-     "mii-exa-test-data-patient-9-diagnose-1"
+     "mii-exa-test-data-biobank-diagnose-3"
     ],
     "Condition.clinicalStatus.coding.system": [
      "mii-exa-test-data-patient-7-diagnose-1",
      "mii-exa-test-data-patient-8-diagnose-1",
      "mii-exa-test-data-patient-1-diagnose-1",
      "mii-exa-test-data-patient-6-diagnose-1",
-     "mii-exa-test-data-patient-9-diagnose-1"
+     "mii-exa-test-data-biobank-diagnose-3"
     ],
     "Condition.clinicalStatus.coding.code": [
      "mii-exa-test-data-patient-7-diagnose-1",
      "mii-exa-test-data-patient-8-diagnose-1",
      "mii-exa-test-data-patient-1-diagnose-1",
      "mii-exa-test-data-patient-6-diagnose-1",
-     "mii-exa-test-data-patient-9-diagnose-1"
+     "mii-exa-test-data-biobank-diagnose-3"
     ],
     "Condition.verificationStatus": [
      "mii-exa-test-data-patient-7-diagnose-1",
      "mii-exa-test-data-patient-8-diagnose-1",
      "mii-exa-test-data-patient-1-diagnose-1",
      "mii-exa-test-data-patient-6-diagnose-1",
-     "mii-exa-test-data-patient-9-diagnose-1"
+     "mii-exa-test-data-biobank-diagnose-3"
     ],
     "Condition.verificationStatus.coding": [
      "mii-exa-test-data-patient-7-diagnose-1",
      "mii-exa-test-data-patient-8-diagnose-1",
      "mii-exa-test-data-patient-1-diagnose-1",
      "mii-exa-test-data-patient-6-diagnose-1",
-     "mii-exa-test-data-patient-9-diagnose-1"
+     "mii-exa-test-data-biobank-diagnose-3"
     ],
     "Condition.verificationStatus.coding.system": [
      "mii-exa-test-data-patient-7-diagnose-1",
      "mii-exa-test-data-patient-8-diagnose-1",
      "mii-exa-test-data-patient-1-diagnose-1",
      "mii-exa-test-data-patient-6-diagnose-1",
-     "mii-exa-test-data-patient-9-diagnose-1"
+     "mii-exa-test-data-biobank-diagnose-3"
     ],
     "Condition.verificationStatus.coding.code": [
      "mii-exa-test-data-patient-7-diagnose-1",
      "mii-exa-test-data-patient-8-diagnose-1",
      "mii-exa-test-data-patient-1-diagnose-1",
      "mii-exa-test-data-patient-6-diagnose-1",
-     "mii-exa-test-data-patient-9-diagnose-1"
+     "mii-exa-test-data-biobank-diagnose-3"
     ],
     "Condition.code": [
      "mii-exa-test-data-patient-7-diagnose-1",
      "mii-exa-test-data-patient-8-diagnose-1",
      "mii-exa-test-data-patient-1-diagnose-1",
      "mii-exa-test-data-patient-6-diagnose-1",
-     "mii-exa-test-data-patient-9-diagnose-1"
+     "mii-exa-test-data-biobank-diagnose-3"
     ],
     "Condition.code.coding": [
      "mii-exa-test-data-patient-7-diagnose-1",
      "mii-exa-test-data-patient-8-diagnose-1",
      "mii-exa-test-data-patient-1-diagnose-1",
      "mii-exa-test-data-patient-6-diagnose-1",
-     "mii-exa-test-data-patient-9-diagnose-1"
+     "mii-exa-test-data-biobank-diagnose-3"
     ],
     "Condition.code.coding:icd10-gm": [
      "mii-exa-test-data-patient-7-diagnose-1",
      "mii-exa-test-data-patient-8-diagnose-1",
      "mii-exa-test-data-patient-1-diagnose-1",
      "mii-exa-test-data-patient-6-diagnose-1",
-     "mii-exa-test-data-patient-9-diagnose-1"
+     "mii-exa-test-data-biobank-diagnose-3"
     ],
     "Condition.code.coding:icd10-gm.extension:Mehrfachcodierungs-Kennzeichen": [
      "mii-exa-test-data-patient-1-diagnose-1"
@@ -192,126 +193,126 @@
      "mii-exa-test-data-patient-8-diagnose-1",
      "mii-exa-test-data-patient-1-diagnose-1",
      "mii-exa-test-data-patient-6-diagnose-1",
-     "mii-exa-test-data-patient-9-diagnose-1"
+     "mii-exa-test-data-biobank-diagnose-3"
     ],
     "Condition.code.coding:icd10-gm.version": [
      "mii-exa-test-data-patient-7-diagnose-1",
      "mii-exa-test-data-patient-8-diagnose-1",
      "mii-exa-test-data-patient-1-diagnose-1",
      "mii-exa-test-data-patient-6-diagnose-1",
-     "mii-exa-test-data-patient-9-diagnose-1"
+     "mii-exa-test-data-biobank-diagnose-3"
     ],
     "Condition.code.coding:icd10-gm.code": [
      "mii-exa-test-data-patient-7-diagnose-1",
      "mii-exa-test-data-patient-8-diagnose-1",
      "mii-exa-test-data-patient-1-diagnose-1",
      "mii-exa-test-data-patient-6-diagnose-1",
-     "mii-exa-test-data-patient-9-diagnose-1"
+     "mii-exa-test-data-biobank-diagnose-3"
     ],
     "Condition.code.coding:alpha-id": [
      "mii-exa-test-data-patient-7-diagnose-1",
      "mii-exa-test-data-patient-8-diagnose-1",
      "mii-exa-test-data-patient-1-diagnose-1",
      "mii-exa-test-data-patient-6-diagnose-1",
-     "mii-exa-test-data-patient-9-diagnose-1"
+     "mii-exa-test-data-biobank-diagnose-3"
     ],
     "Condition.code.coding:alpha-id.system": [
      "mii-exa-test-data-patient-7-diagnose-1",
      "mii-exa-test-data-patient-8-diagnose-1",
      "mii-exa-test-data-patient-1-diagnose-1",
      "mii-exa-test-data-patient-6-diagnose-1",
-     "mii-exa-test-data-patient-9-diagnose-1"
+     "mii-exa-test-data-biobank-diagnose-3"
     ],
     "Condition.code.coding:alpha-id.version": [
      "mii-exa-test-data-patient-7-diagnose-1",
      "mii-exa-test-data-patient-8-diagnose-1",
      "mii-exa-test-data-patient-1-diagnose-1",
      "mii-exa-test-data-patient-6-diagnose-1",
-     "mii-exa-test-data-patient-9-diagnose-1"
+     "mii-exa-test-data-biobank-diagnose-3"
     ],
     "Condition.code.coding:alpha-id.code": [
      "mii-exa-test-data-patient-7-diagnose-1",
      "mii-exa-test-data-patient-8-diagnose-1",
      "mii-exa-test-data-patient-1-diagnose-1",
      "mii-exa-test-data-patient-6-diagnose-1",
-     "mii-exa-test-data-patient-9-diagnose-1"
+     "mii-exa-test-data-biobank-diagnose-3"
     ],
     "Condition.code.coding:sct": [
      "mii-exa-test-data-patient-7-diagnose-1",
      "mii-exa-test-data-patient-8-diagnose-1",
      "mii-exa-test-data-patient-1-diagnose-1",
      "mii-exa-test-data-patient-6-diagnose-1",
-     "mii-exa-test-data-patient-9-diagnose-1"
+     "mii-exa-test-data-biobank-diagnose-3"
     ],
     "Condition.code.coding:sct.system": [
      "mii-exa-test-data-patient-7-diagnose-1",
      "mii-exa-test-data-patient-8-diagnose-1",
      "mii-exa-test-data-patient-1-diagnose-1",
      "mii-exa-test-data-patient-6-diagnose-1",
-     "mii-exa-test-data-patient-9-diagnose-1"
+     "mii-exa-test-data-biobank-diagnose-3"
     ],
     "Condition.code.coding:sct.version": [
      "mii-exa-test-data-patient-7-diagnose-1",
      "mii-exa-test-data-patient-8-diagnose-1",
      "mii-exa-test-data-patient-1-diagnose-1",
      "mii-exa-test-data-patient-6-diagnose-1",
-     "mii-exa-test-data-patient-9-diagnose-1"
+     "mii-exa-test-data-biobank-diagnose-3"
     ],
     "Condition.code.coding:sct.code": [
      "mii-exa-test-data-patient-7-diagnose-1",
      "mii-exa-test-data-patient-8-diagnose-1",
      "mii-exa-test-data-patient-1-diagnose-1",
      "mii-exa-test-data-patient-6-diagnose-1",
-     "mii-exa-test-data-patient-9-diagnose-1"
+     "mii-exa-test-data-biobank-diagnose-3"
     ],
     "Condition.code.coding:orphanet": [
      "mii-exa-test-data-patient-7-diagnose-1",
      "mii-exa-test-data-patient-8-diagnose-1",
      "mii-exa-test-data-patient-1-diagnose-1",
      "mii-exa-test-data-patient-6-diagnose-1",
-     "mii-exa-test-data-patient-9-diagnose-1"
+     "mii-exa-test-data-biobank-diagnose-3"
     ],
     "Condition.code.coding:orphanet.system": [
      "mii-exa-test-data-patient-7-diagnose-1",
      "mii-exa-test-data-patient-8-diagnose-1",
      "mii-exa-test-data-patient-1-diagnose-1",
      "mii-exa-test-data-patient-6-diagnose-1",
-     "mii-exa-test-data-patient-9-diagnose-1"
+     "mii-exa-test-data-biobank-diagnose-3"
     ],
     "Condition.code.coding:orphanet.code": [
      "mii-exa-test-data-patient-7-diagnose-1",
      "mii-exa-test-data-patient-8-diagnose-1",
      "mii-exa-test-data-patient-1-diagnose-1",
      "mii-exa-test-data-patient-6-diagnose-1",
-     "mii-exa-test-data-patient-9-diagnose-1"
+     "mii-exa-test-data-biobank-diagnose-3"
     ],
     "Condition.bodySite": [
      "mii-exa-test-data-patient-7-diagnose-1",
      "mii-exa-test-data-patient-8-diagnose-1",
      "mii-exa-test-data-patient-1-diagnose-1",
      "mii-exa-test-data-patient-6-diagnose-1",
-     "mii-exa-test-data-patient-9-diagnose-1"
+     "mii-exa-test-data-biobank-diagnose-3"
     ],
     "Condition.bodySite.coding": [
      "mii-exa-test-data-patient-7-diagnose-1",
      "mii-exa-test-data-patient-8-diagnose-1",
      "mii-exa-test-data-patient-1-diagnose-1",
      "mii-exa-test-data-patient-6-diagnose-1",
-     "mii-exa-test-data-patient-9-diagnose-1"
+     "mii-exa-test-data-biobank-diagnose-3"
     ],
     "Condition.bodySite.coding:snomed-ct": [
      "mii-exa-test-data-patient-7-diagnose-1",
      "mii-exa-test-data-patient-8-diagnose-1",
      "mii-exa-test-data-patient-1-diagnose-1",
      "mii-exa-test-data-patient-6-diagnose-1",
-     "mii-exa-test-data-patient-9-diagnose-1"
+     "mii-exa-test-data-biobank-diagnose-3"
     ],
     "Condition.bodySite.coding:snomed-ct.system": [
      "mii-exa-test-data-patient-7-diagnose-1",
      "mii-exa-test-data-patient-8-diagnose-1",
      "mii-exa-test-data-patient-1-diagnose-1",
      "mii-exa-test-data-patient-6-diagnose-1",
-     "mii-exa-test-data-patient-9-diagnose-1"
+     "mii-exa-test-data-biobank-diagnose-3"
     ],
     "Condition.bodySite.coding:snomed-ct.version": [
      "mii-exa-test-data-patient-1-diagnose-1"
@@ -321,21 +322,21 @@
      "mii-exa-test-data-patient-8-diagnose-1",
      "mii-exa-test-data-patient-1-diagnose-1",
      "mii-exa-test-data-patient-6-diagnose-1",
-     "mii-exa-test-data-patient-9-diagnose-1"
+     "mii-exa-test-data-biobank-diagnose-3"
     ],
     "Condition.subject": [
      "mii-exa-test-data-patient-7-diagnose-1",
      "mii-exa-test-data-patient-8-diagnose-1",
      "mii-exa-test-data-patient-1-diagnose-1",
      "mii-exa-test-data-patient-6-diagnose-1",
-     "mii-exa-test-data-patient-9-diagnose-1"
+     "mii-exa-test-data-biobank-diagnose-3"
     ],
     "Condition.subject.reference": [
      "mii-exa-test-data-patient-7-diagnose-1",
      "mii-exa-test-data-patient-8-diagnose-1",
      "mii-exa-test-data-patient-1-diagnose-1",
      "mii-exa-test-data-patient-6-diagnose-1",
-     "mii-exa-test-data-patient-9-diagnose-1"
+     "mii-exa-test-data-biobank-diagnose-3"
     ],
     "Condition.encounter": [
      "mii-exa-test-data-studien-diagnose-1",
@@ -413,7 +414,7 @@
      "mii-exa-test-data-patient-8-diagnose-1",
      "mii-exa-test-data-patient-1-diagnose-1",
      "mii-exa-test-data-patient-6-diagnose-1",
-     "mii-exa-test-data-patient-9-diagnose-1"
+     "mii-exa-test-data-biobank-diagnose-3"
     ],
     "Condition.note": [
      "mii-exa-test-data-patient-7-diagnose-1",
@@ -1527,7 +1528,9 @@
      "mii-exa-test-data-patient-6-labobs-3",
      "mii-exa-test-data-patient-5-labobs-2"
     ],
-    "Observation.effective[x].extension:QuelleKlinischesBezugsdatum": null,
+    "Observation.effective[x].extension:QuelleKlinischesBezugsdatum": [
+     "mii-exa-test-data-patient-1-labobs-1"
+    ],
     "Observation.issued": [
      "mii-exa-test-data-patient-4-labobs-1",
      "mii-exa-test-data-patient-10-labobs-1",
@@ -1556,7 +1559,9 @@
      "mii-exa-test-data-patient-6-labobs-3",
      "mii-exa-test-data-patient-5-labobs-2"
     ],
-    "Observation.value[x]:valueQuantity.value.extension:quantityPrecision": null,
+    "Observation.value[x]:valueQuantity.value.extension:quantityPrecision": [
+     "mii-exa-test-data-patient-1-labobs-1"
+    ],
     "Observation.value[x]:valueQuantity.comparator": [
      "mii-exa-test-data-patient-1-labobs-9"
     ],
@@ -7106,8 +7111,12 @@
      "mii-exa-test-data-patient-8-specimen-2",
      "mii-exa-test-data-patient-3-specimen-1"
     ],
-    "Specimen.extension:probenebene": null,
-    "Specimen.extension:infektiositaetsstatus": null,
+    "Specimen.extension:probenebene": [
+     "mii-exa-test-data-patient-1-specimen-1"
+    ],
+    "Specimen.extension:infektiositaetsstatus": [
+     "mii-exa-test-data-patient-1-specimen-1"
+    ],
     "Specimen.extension:focus": null,
     "Specimen.extension:festgestellteDiagnose": [
      "mii-exa-test-data-patient-5-specimen-1",
@@ -7456,8 +7465,14 @@
      "mii-exa-test-data-patho-specimen-01-slide",
      "mii-exa-test-data-patho-specimen-01-block"
     ],
-    "Specimen.extension:probenebene": null,
-    "Specimen.extension:infektiositaetsstatus": null,
+    "Specimen.extension:probenebene": [
+     "mii-exa-test-data-patho-specimen-01-part",
+     "mii-exa-test-data-biobank-specimen-dna-1"
+    ],
+    "Specimen.extension:infektiositaetsstatus": [
+     "mii-exa-test-data-patho-specimen-01-part",
+     "mii-exa-test-data-biobank-specimen-dna-1"
+    ],
     "Specimen.extension:focus": null,
     "Specimen.identifier": [
      "mii-exa-test-data-patho-specimen-03-block",
@@ -8071,11 +8086,19 @@
     "Specimen.meta.profile": [
      "mii-exa-test-data-biobank-organoid-1"
     ],
-    "Specimen.extension:probenebene": null,
-    "Specimen.extension:infektiositaetsstatus": null,
+    "Specimen.extension:probenebene": [
+     "mii-exa-test-data-biobank-organoid-1"
+    ],
+    "Specimen.extension:infektiositaetsstatus": [
+     "mii-exa-test-data-biobank-organoid-1"
+    ],
     "Specimen.extension:focus": null,
-    "Specimen.extension:festgestellteDiagnose": null,
-    "Specimen.extension:gehoertZu": null,
+    "Specimen.extension:festgestellteDiagnose": [
+     "mii-exa-test-data-biobank-organoid-1"
+    ],
+    "Specimen.extension:gehoertZu": [
+     "mii-exa-test-data-biobank-organoid-1"
+    ],
     "Specimen.extension:anzahlAliquots": null,
     "Specimen.extension:kulturprotokoll": [
      "mii-exa-test-data-biobank-organoid-1"
@@ -8624,15 +8647,27 @@
     "Procedure.code.coding:ops": [
      "mii-exa-test-data-patient-1-icu-vent-beatmung-1"
     ],
-    "Procedure.code.coding:ops.extension:Seitenlokalisation": null,
-    "Procedure.code.coding:ops.extension:Seitenlokalisation.url": null,
-    "Procedure.code.coding:ops.extension:Seitenlokalisation.value[x]": null,
-    "Procedure.code.coding:ops.extension:Seitenlokalisation.value[x].system": null,
-    "Procedure.code.coding:ops.extension:Seitenlokalisation.value[x].code": null,
+    "Procedure.code.coding:ops.extension:Seitenlokalisation": [
+     "mii-exa-test-data-patient-1-icu-vent-beatmung-1"
+    ],
+    "Procedure.code.coding:ops.extension:Seitenlokalisation.url": [
+     "mii-exa-test-data-patient-1-icu-vent-beatmung-1"
+    ],
+    "Procedure.code.coding:ops.extension:Seitenlokalisation.value[x]": [
+     "mii-exa-test-data-patient-1-icu-vent-beatmung-1"
+    ],
+    "Procedure.code.coding:ops.extension:Seitenlokalisation.value[x].system": [
+     "mii-exa-test-data-patient-1-icu-vent-beatmung-1"
+    ],
+    "Procedure.code.coding:ops.extension:Seitenlokalisation.value[x].code": [
+     "mii-exa-test-data-patient-1-icu-vent-beatmung-1"
+    ],
     "Procedure.code.coding:ops.system": [
      "mii-exa-test-data-patient-1-icu-vent-beatmung-1"
     ],
-    "Procedure.code.coding:ops.version": null,
+    "Procedure.code.coding:ops.version": [
+     "mii-exa-test-data-patient-1-icu-vent-beatmung-1"
+    ],
     "Procedure.code.coding:ops.code": [
      "mii-exa-test-data-patient-1-icu-vent-beatmung-1"
     ],
@@ -12415,15 +12450,27 @@
     "Procedure.code.coding:ops": [
      "mii-exa-test-data-patient-1-icu-ect-extrakorp-1"
     ],
-    "Procedure.code.coding:ops.extension:Seitenlokalisation": null,
-    "Procedure.code.coding:ops.extension:Seitenlokalisation.url": null,
-    "Procedure.code.coding:ops.extension:Seitenlokalisation.value[x]": null,
-    "Procedure.code.coding:ops.extension:Seitenlokalisation.value[x].system": null,
-    "Procedure.code.coding:ops.extension:Seitenlokalisation.value[x].code": null,
+    "Procedure.code.coding:ops.extension:Seitenlokalisation": [
+     "mii-exa-test-data-patient-1-icu-ect-extrakorp-1"
+    ],
+    "Procedure.code.coding:ops.extension:Seitenlokalisation.url": [
+     "mii-exa-test-data-patient-1-icu-ect-extrakorp-1"
+    ],
+    "Procedure.code.coding:ops.extension:Seitenlokalisation.value[x]": [
+     "mii-exa-test-data-patient-1-icu-ect-extrakorp-1"
+    ],
+    "Procedure.code.coding:ops.extension:Seitenlokalisation.value[x].system": [
+     "mii-exa-test-data-patient-1-icu-ect-extrakorp-1"
+    ],
+    "Procedure.code.coding:ops.extension:Seitenlokalisation.value[x].code": [
+     "mii-exa-test-data-patient-1-icu-ect-extrakorp-1"
+    ],
     "Procedure.code.coding:ops.system": [
      "mii-exa-test-data-patient-1-icu-ect-extrakorp-1"
     ],
-    "Procedure.code.coding:ops.version": null,
+    "Procedure.code.coding:ops.version": [
+     "mii-exa-test-data-patient-1-icu-ect-extrakorp-1"
+    ],
     "Procedure.code.coding:ops.code": [
      "mii-exa-test-data-patient-1-icu-ect-extrakorp-1"
     ],
@@ -22308,7 +22355,9 @@
     "Medication.ingredient.extension:Wirkstofftyp": [
      "mii-exa-test-data-lungenfunktion-methacholine-1"
     ],
-    "Medication.ingredient.extension:Wirkstoffrelation": null,
+    "Medication.ingredient.extension:Wirkstoffrelation": [
+     "mii-exa-test-data-lungenfunktion-methacholine-1"
+    ],
     "Medication.ingredient.item[x]:itemReference": [
      "mii-exa-test-data-lungenfunktion-methacholine-1"
     ],
@@ -22375,7 +22424,9 @@
     "Medication.ingredient:Wirkstoff.extension:Wirkstofftyp": [
      "mii-exa-test-data-lungenfunktion-methacholine-1"
     ],
-    "Medication.ingredient:Wirkstoff.extension:Wirkstoffrelation": null,
+    "Medication.ingredient:Wirkstoff.extension:Wirkstoffrelation": [
+     "mii-exa-test-data-lungenfunktion-methacholine-1"
+    ],
     "Medication.ingredient:Wirkstoff.item[x]:itemReference": [
      "mii-exa-test-data-lungenfunktion-methacholine-1"
     ],
@@ -22442,7 +22493,9 @@
     "Medication.ingredient:Loesung.extension:Wirkstofftyp": [
      "mii-exa-test-data-lungenfunktion-methacholine-1"
     ],
-    "Medication.ingredient:Loesung.extension:Wirkstoffrelation": null,
+    "Medication.ingredient:Loesung.extension:Wirkstoffrelation": [
+     "mii-exa-test-data-lungenfunktion-methacholine-1"
+    ],
     "Medication.ingredient:Loesung.item[x]:itemReference": [
      "mii-exa-test-data-lungenfunktion-methacholine-1"
     ],
@@ -24499,9 +24552,15 @@
      "mii-exa-test-data-patient-3-molgen-family-member-history-1",
      "mii-exa-test-data-patient-4-molgen-family-member-history-1"
     ],
-    "FamilyMemberHistory.relationship.coding:snomed.extension:Verwandtschaftsgrad": null,
-    "FamilyMemberHistory.relationship.coding:snomed.extension:Verwandtschaftsverhaeltnis": null,
-    "FamilyMemberHistory.relationship.coding:snomed.extension:FamiliareLinie": null,
+    "FamilyMemberHistory.relationship.coding:snomed.extension:Verwandtschaftsgrad": [
+     "mii-exa-test-data-patient-3-molgen-family-member-history-1"
+    ],
+    "FamilyMemberHistory.relationship.coding:snomed.extension:Verwandtschaftsverhaeltnis": [
+     "mii-exa-test-data-patient-3-molgen-family-member-history-1"
+    ],
+    "FamilyMemberHistory.relationship.coding:snomed.extension:FamiliareLinie": [
+     "mii-exa-test-data-patient-3-molgen-family-member-history-1"
+    ],
     "FamilyMemberHistory.sex": [
      "mii-exa-test-data-patient-3-molgen-family-member-history-1",
      "mii-exa-test-data-patient-4-molgen-family-member-history-1"
@@ -24949,7 +25008,9 @@
      "mii-exa-test-data-patient-3-molgen-befundbericht-1",
      "mii-exa-test-data-patient-4-molgen-befundbericht-1"
     ],
-    "DiagnosticReport.extension:workflow-relatedArtifact": null,
+    "DiagnosticReport.extension:workflow-relatedArtifact": [
+     "mii-exa-test-data-patient-3-molgen-befundbericht-1"
+    ],
     "DiagnosticReport.status": [
      "mii-exa-test-data-patient-3-molgen-befundbericht-1",
      "mii-exa-test-data-patient-4-molgen-befundbericht-1"
@@ -26975,11 +27036,17 @@
     "Procedure.extension:genome-build": [
      "mii-exa-test-data-mtb-genomic-study-analysis-1"
     ],
-    "Procedure.extension:title": null,
+    "Procedure.extension:title": [
+     "mii-exa-test-data-mtb-genomic-study-analysis-1"
+    ],
     "Procedure.extension:focus": null,
-    "Procedure.extension:specimen": null,
+    "Procedure.extension:specimen": [
+     "mii-exa-test-data-mtb-genomic-study-analysis-1"
+    ],
     "Procedure.extension:metrics": null,
-    "Procedure.extension:regions": null,
+    "Procedure.extension:regions": [
+     "mii-exa-test-data-mtb-genomic-study-analysis-1"
+    ],
     "Procedure.extension:device": [
      "mii-exa-test-data-mtb-genomic-study-analysis-1"
     ],
@@ -28722,39 +28789,51 @@
   "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-studieneinschluss-anfrage": {
    "module": "modul-mtb",
    "instances": [
-    "mii-exa-test-data-mtb-studieneinschluss-anfrage-1"
+    "mii-exa-test-data-mtb-studieneinschluss-anfrage-1",
+    "mii-exa-test-data-mtb-studieneinschluss-anfrage-2"
    ],
    "ms": {
     "ServiceRequest.meta": [
-     "mii-exa-test-data-mtb-studieneinschluss-anfrage-1"
+     "mii-exa-test-data-mtb-studieneinschluss-anfrage-1",
+     "mii-exa-test-data-mtb-studieneinschluss-anfrage-2"
     ],
     "ServiceRequest.meta.profile": [
-     "mii-exa-test-data-mtb-studieneinschluss-anfrage-1"
+     "mii-exa-test-data-mtb-studieneinschluss-anfrage-1",
+     "mii-exa-test-data-mtb-studieneinschluss-anfrage-2"
     ],
-    "ServiceRequest.extension:statusReason": null,
+    "ServiceRequest.extension:statusReason": [
+     "mii-exa-test-data-mtb-studieneinschluss-anfrage-2"
+    ],
     "ServiceRequest.extension:Prioritaet": [
-     "mii-exa-test-data-mtb-studieneinschluss-anfrage-1"
+     "mii-exa-test-data-mtb-studieneinschluss-anfrage-1",
+     "mii-exa-test-data-mtb-studieneinschluss-anfrage-2"
     ],
     "ServiceRequest.extension:Publikation": [
      "mii-exa-test-data-mtb-studieneinschluss-anfrage-1"
     ],
     "ServiceRequest.status": [
-     "mii-exa-test-data-mtb-studieneinschluss-anfrage-1"
+     "mii-exa-test-data-mtb-studieneinschluss-anfrage-1",
+     "mii-exa-test-data-mtb-studieneinschluss-anfrage-2"
     ],
     "ServiceRequest.category": [
-     "mii-exa-test-data-mtb-studieneinschluss-anfrage-1"
+     "mii-exa-test-data-mtb-studieneinschluss-anfrage-1",
+     "mii-exa-test-data-mtb-studieneinschluss-anfrage-2"
     ],
     "ServiceRequest.code": [
-     "mii-exa-test-data-mtb-studieneinschluss-anfrage-1"
+     "mii-exa-test-data-mtb-studieneinschluss-anfrage-1",
+     "mii-exa-test-data-mtb-studieneinschluss-anfrage-2"
     ],
     "ServiceRequest.reasonReference": [
-     "mii-exa-test-data-mtb-studieneinschluss-anfrage-1"
+     "mii-exa-test-data-mtb-studieneinschluss-anfrage-1",
+     "mii-exa-test-data-mtb-studieneinschluss-anfrage-2"
     ],
     "ServiceRequest.supportingInfo": [
-     "mii-exa-test-data-mtb-studieneinschluss-anfrage-1"
+     "mii-exa-test-data-mtb-studieneinschluss-anfrage-1",
+     "mii-exa-test-data-mtb-studieneinschluss-anfrage-2"
     ],
     "ServiceRequest.supportingInfo:Studie": [
-     "mii-exa-test-data-mtb-studieneinschluss-anfrage-1"
+     "mii-exa-test-data-mtb-studieneinschluss-anfrage-1",
+     "mii-exa-test-data-mtb-studieneinschluss-anfrage-2"
     ]
    }
   },
@@ -29018,7 +29097,9 @@
     "Procedure.extension:StellungZurOp.value[x].text": [
      "mii-exa-test-data-mtb-systemische-vortherapie-1"
     ],
-    "Procedure.extension:Leitlinie": null,
+    "Procedure.extension:Leitlinie": [
+     "mii-exa-test-data-mtb-systemische-vortherapie-1"
+    ],
     "Procedure.basedOn": [
      "mii-exa-test-data-mtb-systemische-vortherapie-1"
     ],
@@ -31623,7 +31704,9 @@
     "Condition.extension:assertedDate": [
      "mii-exa-test-data-onko-fruehere-tumorerkrankung-1"
     ],
-    "Condition.extension:morphology-behavior-icdo3": null,
+    "Condition.extension:morphology-behavior-icdo3": [
+     "mii-exa-test-data-onko-fruehere-tumorerkrankung-1"
+    ],
     "Condition.clinicalStatus": [
      "mii-exa-test-data-onko-fruehere-tumorerkrankung-1"
     ],
@@ -39412,7 +39495,9 @@
     "DiagnosticReport.text": [
      "mii-exa-test-data-patho-report-1"
     ],
-    "DiagnosticReport.extension:related-report": null,
+    "DiagnosticReport.extension:related-report": [
+     "mii-exa-test-data-patho-report-1"
+    ],
     "DiagnosticReport.extension:composition": [
      "mii-exa-test-data-patho-report-1"
     ],
@@ -39674,8 +39759,12 @@
     "Specimen.text": [
      "mii-exa-test-data-patho-specimen-01-part"
     ],
-    "Specimen.extension:probenebene": null,
-    "Specimen.extension:infektiositaetsstatus": null,
+    "Specimen.extension:probenebene": [
+     "mii-exa-test-data-patho-specimen-01-part"
+    ],
+    "Specimen.extension:infektiositaetsstatus": [
+     "mii-exa-test-data-patho-specimen-01-part"
+    ],
     "Specimen.extension:focus": null,
     "Specimen.identifier": [
      "mii-exa-test-data-patho-specimen-03-block",
@@ -44415,23 +44504,27 @@
    "instances": [
     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-1",
     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-alt-1",
-    "mii-exa-test-data-mikrobio-allgemeine-bestimmung-dar-1"
+    "mii-exa-test-data-mikrobio-allgemeine-bestimmung-dar-1",
+    "mii-exa-test-data-mikrobio-allgemeine-bestimmung-quant-1"
    ],
    "ms": {
     "Observation.meta": [
      "mii-exa-test-data-mikrobio-allgemeine-bestimmung-alt-1",
      "mii-exa-test-data-mikrobio-allgemeine-bestimmung-1",
-     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-dar-1"
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-dar-1",
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-quant-1"
     ],
     "Observation.meta.source": [
      "mii-exa-test-data-mikrobio-allgemeine-bestimmung-alt-1",
      "mii-exa-test-data-mikrobio-allgemeine-bestimmung-1",
-     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-dar-1"
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-dar-1",
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-quant-1"
     ],
     "Observation.meta.profile": [
      "mii-exa-test-data-mikrobio-allgemeine-bestimmung-alt-1",
      "mii-exa-test-data-mikrobio-allgemeine-bestimmung-1",
-     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-dar-1"
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-dar-1",
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-quant-1"
     ],
     "Observation.extension:triggeredBy-r5": [
      "mii-exa-test-data-mikrobio-allgemeine-bestimmung-alt-1"
@@ -44445,209 +44538,263 @@
     "Observation.identifier": [
      "mii-exa-test-data-mikrobio-allgemeine-bestimmung-alt-1",
      "mii-exa-test-data-mikrobio-allgemeine-bestimmung-1",
-     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-dar-1"
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-dar-1",
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-quant-1"
     ],
     "Observation.identifier:analyseBefundCode": [
      "mii-exa-test-data-mikrobio-allgemeine-bestimmung-alt-1",
      "mii-exa-test-data-mikrobio-allgemeine-bestimmung-1",
-     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-dar-1"
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-dar-1",
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-quant-1"
     ],
     "Observation.identifier:analyseBefundCode.type": [
      "mii-exa-test-data-mikrobio-allgemeine-bestimmung-alt-1",
      "mii-exa-test-data-mikrobio-allgemeine-bestimmung-1",
-     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-dar-1"
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-dar-1",
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-quant-1"
     ],
     "Observation.identifier:analyseBefundCode.type.coding": [
      "mii-exa-test-data-mikrobio-allgemeine-bestimmung-alt-1",
      "mii-exa-test-data-mikrobio-allgemeine-bestimmung-1",
-     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-dar-1"
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-dar-1",
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-quant-1"
     ],
     "Observation.identifier:analyseBefundCode.type.coding:observationInstanceV2": [
      "mii-exa-test-data-mikrobio-allgemeine-bestimmung-alt-1",
      "mii-exa-test-data-mikrobio-allgemeine-bestimmung-1",
-     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-dar-1"
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-dar-1",
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-quant-1"
     ],
     "Observation.identifier:analyseBefundCode.type.coding:observationInstanceV2.system": [
      "mii-exa-test-data-mikrobio-allgemeine-bestimmung-alt-1",
      "mii-exa-test-data-mikrobio-allgemeine-bestimmung-1",
-     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-dar-1"
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-dar-1",
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-quant-1"
     ],
     "Observation.identifier:analyseBefundCode.type.coding:observationInstanceV2.code": [
      "mii-exa-test-data-mikrobio-allgemeine-bestimmung-alt-1",
      "mii-exa-test-data-mikrobio-allgemeine-bestimmung-1",
-     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-dar-1"
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-dar-1",
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-quant-1"
     ],
     "Observation.identifier:analyseBefundCode.system": [
      "mii-exa-test-data-mikrobio-allgemeine-bestimmung-alt-1",
      "mii-exa-test-data-mikrobio-allgemeine-bestimmung-1",
-     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-dar-1"
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-dar-1",
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-quant-1"
     ],
     "Observation.identifier:analyseBefundCode.value": [
      "mii-exa-test-data-mikrobio-allgemeine-bestimmung-alt-1",
      "mii-exa-test-data-mikrobio-allgemeine-bestimmung-1",
-     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-dar-1"
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-dar-1",
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-quant-1"
     ],
     "Observation.identifier:analyseBefundCode.assigner": [
      "mii-exa-test-data-mikrobio-allgemeine-bestimmung-alt-1",
      "mii-exa-test-data-mikrobio-allgemeine-bestimmung-1",
-     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-dar-1"
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-dar-1",
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-quant-1"
     ],
     "Observation.basedOn": [
-     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-1"
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-1",
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-quant-1"
     ],
     "Observation.status": [
      "mii-exa-test-data-mikrobio-allgemeine-bestimmung-alt-1",
      "mii-exa-test-data-mikrobio-allgemeine-bestimmung-1",
-     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-dar-1"
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-dar-1",
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-quant-1"
     ],
     "Observation.category": [
      "mii-exa-test-data-mikrobio-allgemeine-bestimmung-alt-1",
      "mii-exa-test-data-mikrobio-allgemeine-bestimmung-1",
-     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-dar-1"
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-dar-1",
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-quant-1"
     ],
     "Observation.category.coding": [
      "mii-exa-test-data-mikrobio-allgemeine-bestimmung-alt-1",
      "mii-exa-test-data-mikrobio-allgemeine-bestimmung-1",
-     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-dar-1"
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-dar-1",
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-quant-1"
     ],
     "Observation.category.coding.system": [
      "mii-exa-test-data-mikrobio-allgemeine-bestimmung-alt-1",
      "mii-exa-test-data-mikrobio-allgemeine-bestimmung-1",
-     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-dar-1"
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-dar-1",
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-quant-1"
     ],
     "Observation.category.coding.code": [
      "mii-exa-test-data-mikrobio-allgemeine-bestimmung-alt-1",
      "mii-exa-test-data-mikrobio-allgemeine-bestimmung-1",
-     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-dar-1"
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-dar-1",
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-quant-1"
     ],
     "Observation.category.coding.display": [
      "mii-exa-test-data-mikrobio-allgemeine-bestimmung-alt-1",
      "mii-exa-test-data-mikrobio-allgemeine-bestimmung-1",
-     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-dar-1"
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-dar-1",
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-quant-1"
     ],
     "Observation.category:observation-category": [
      "mii-exa-test-data-mikrobio-allgemeine-bestimmung-alt-1",
      "mii-exa-test-data-mikrobio-allgemeine-bestimmung-1",
-     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-dar-1"
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-dar-1",
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-quant-1"
     ],
     "Observation.category:mibi-category": [
      "mii-exa-test-data-mikrobio-allgemeine-bestimmung-alt-1",
      "mii-exa-test-data-mikrobio-allgemeine-bestimmung-1",
-     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-dar-1"
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-dar-1",
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-quant-1"
     ],
     "Observation.category:mibi-category.coding": [
      "mii-exa-test-data-mikrobio-allgemeine-bestimmung-alt-1",
      "mii-exa-test-data-mikrobio-allgemeine-bestimmung-1",
-     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-dar-1"
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-dar-1",
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-quant-1"
     ],
     "Observation.category:mibi-category.coding.system": [
      "mii-exa-test-data-mikrobio-allgemeine-bestimmung-alt-1",
      "mii-exa-test-data-mikrobio-allgemeine-bestimmung-1",
-     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-dar-1"
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-dar-1",
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-quant-1"
     ],
     "Observation.category:mibi-category.coding.code": [
      "mii-exa-test-data-mikrobio-allgemeine-bestimmung-alt-1",
      "mii-exa-test-data-mikrobio-allgemeine-bestimmung-1",
-     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-dar-1"
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-dar-1",
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-quant-1"
     ],
     "Observation.category:mibi-category.coding.display": [
      "mii-exa-test-data-mikrobio-allgemeine-bestimmung-alt-1",
      "mii-exa-test-data-mikrobio-allgemeine-bestimmung-1",
-     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-dar-1"
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-dar-1",
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-quant-1"
     ],
     "Observation.code": [
      "mii-exa-test-data-mikrobio-allgemeine-bestimmung-alt-1",
      "mii-exa-test-data-mikrobio-allgemeine-bestimmung-1",
-     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-dar-1"
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-dar-1",
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-quant-1"
     ],
     "Observation.code.coding": [
      "mii-exa-test-data-mikrobio-allgemeine-bestimmung-alt-1",
      "mii-exa-test-data-mikrobio-allgemeine-bestimmung-1",
-     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-dar-1"
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-dar-1",
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-quant-1"
     ],
     "Observation.code.coding.system": [
      "mii-exa-test-data-mikrobio-allgemeine-bestimmung-alt-1",
      "mii-exa-test-data-mikrobio-allgemeine-bestimmung-1",
-     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-dar-1"
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-dar-1",
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-quant-1"
     ],
     "Observation.code.coding.version": [
-     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-1"
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-1",
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-quant-1"
     ],
     "Observation.code.coding.code": [
      "mii-exa-test-data-mikrobio-allgemeine-bestimmung-alt-1",
      "mii-exa-test-data-mikrobio-allgemeine-bestimmung-1",
-     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-dar-1"
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-dar-1",
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-quant-1"
     ],
     "Observation.code.coding.display": [
-     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-1"
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-1",
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-quant-1"
     ],
     "Observation.code.coding:loinc": [
      "mii-exa-test-data-mikrobio-allgemeine-bestimmung-alt-1",
      "mii-exa-test-data-mikrobio-allgemeine-bestimmung-1",
-     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-dar-1"
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-dar-1",
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-quant-1"
     ],
     "Observation.subject": [
      "mii-exa-test-data-mikrobio-allgemeine-bestimmung-alt-1",
      "mii-exa-test-data-mikrobio-allgemeine-bestimmung-1",
-     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-dar-1"
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-dar-1",
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-quant-1"
     ],
     "Observation.subject.reference": [
      "mii-exa-test-data-mikrobio-allgemeine-bestimmung-alt-1",
      "mii-exa-test-data-mikrobio-allgemeine-bestimmung-1",
-     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-dar-1"
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-dar-1",
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-quant-1"
     ],
     "Observation.subject.identifier": [
      "mii-exa-test-data-mikrobio-allgemeine-bestimmung-alt-1",
      "mii-exa-test-data-mikrobio-allgemeine-bestimmung-1",
-     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-dar-1"
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-dar-1",
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-quant-1"
     ],
     "Observation.encounter": [
      "mii-exa-test-data-mikrobio-allgemeine-bestimmung-alt-1",
      "mii-exa-test-data-mikrobio-allgemeine-bestimmung-1",
-     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-dar-1"
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-dar-1",
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-quant-1"
     ],
     "Observation.encounter.reference": [
      "mii-exa-test-data-mikrobio-allgemeine-bestimmung-alt-1",
      "mii-exa-test-data-mikrobio-allgemeine-bestimmung-1",
-     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-dar-1"
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-dar-1",
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-quant-1"
     ],
     "Observation.encounter.identifier": [
      "mii-exa-test-data-mikrobio-allgemeine-bestimmung-alt-1",
      "mii-exa-test-data-mikrobio-allgemeine-bestimmung-1",
-     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-dar-1"
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-dar-1",
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-quant-1"
     ],
     "Observation.effective[x]": [
      "mii-exa-test-data-mikrobio-allgemeine-bestimmung-alt-1",
      "mii-exa-test-data-mikrobio-allgemeine-bestimmung-1",
-     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-dar-1"
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-dar-1",
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-quant-1"
     ],
     "Observation.effective[x].extension:QuelleKlinischesBezugsdatum": [
      "mii-exa-test-data-mikrobio-allgemeine-bestimmung-alt-1",
      "mii-exa-test-data-mikrobio-allgemeine-bestimmung-1",
-     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-dar-1"
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-dar-1",
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-quant-1"
     ],
     "Observation.issued": [
      "mii-exa-test-data-mikrobio-allgemeine-bestimmung-alt-1",
      "mii-exa-test-data-mikrobio-allgemeine-bestimmung-1",
-     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-dar-1"
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-dar-1",
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-quant-1"
     ],
     "Observation.value[x]": [
      "mii-exa-test-data-mikrobio-allgemeine-bestimmung-alt-1",
-     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-1"
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-1",
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-quant-1"
     ],
     "Observation.value[x]:valueQuantity": [
      "mii-exa-test-data-mikrobio-allgemeine-bestimmung-alt-1",
-     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-1"
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-1",
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-quant-1"
     ],
-    "Observation.value[x]:valueQuantity.value": null,
-    "Observation.value[x]:valueQuantity.value.extension:quantityPrecision": null,
-    "Observation.value[x]:valueQuantity.comparator": null,
-    "Observation.value[x]:valueQuantity.unit": null,
-    "Observation.value[x]:valueQuantity.system": null,
-    "Observation.value[x]:valueQuantity.code": null,
+    "Observation.value[x]:valueQuantity.value": [
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-quant-1"
+    ],
+    "Observation.value[x]:valueQuantity.value.extension:quantityPrecision": [
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-quant-1"
+    ],
+    "Observation.value[x]:valueQuantity.comparator": [
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-quant-1"
+    ],
+    "Observation.value[x]:valueQuantity.unit": [
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-quant-1"
+    ],
+    "Observation.value[x]:valueQuantity.system": [
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-quant-1"
+    ],
+    "Observation.value[x]:valueQuantity.code": [
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-quant-1"
+    ],
     "Observation.value[x]:valueCodeableConcept": [
      "mii-exa-test-data-mikrobio-allgemeine-bestimmung-alt-1",
-     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-1"
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-1",
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-quant-1"
     ],
     "Observation.value[x]:valueCodeableConcept.coding": [
      "mii-exa-test-data-mikrobio-allgemeine-bestimmung-alt-1",
@@ -44666,75 +44813,96 @@
     ],
     "Observation.value[x]:valueRange": [
      "mii-exa-test-data-mikrobio-allgemeine-bestimmung-alt-1",
-     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-1"
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-1",
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-quant-1"
     ],
     "Observation.value[x]:valueRatio": [
      "mii-exa-test-data-mikrobio-allgemeine-bestimmung-alt-1",
-     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-1"
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-1",
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-quant-1"
     ],
     "Observation.dataAbsentReason": [
      "mii-exa-test-data-mikrobio-allgemeine-bestimmung-dar-1"
     ],
     "Observation.interpretation": [
      "mii-exa-test-data-mikrobio-allgemeine-bestimmung-alt-1",
-     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-1"
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-1",
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-quant-1"
     ],
     "Observation.note": [
      "mii-exa-test-data-mikrobio-allgemeine-bestimmung-alt-1",
      "mii-exa-test-data-mikrobio-allgemeine-bestimmung-1",
-     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-dar-1"
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-dar-1",
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-quant-1"
     ],
     "Observation.method": [
      "mii-exa-test-data-mikrobio-allgemeine-bestimmung-alt-1",
      "mii-exa-test-data-mikrobio-allgemeine-bestimmung-1",
-     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-dar-1"
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-dar-1",
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-quant-1"
     ],
     "Observation.method.coding": [
      "mii-exa-test-data-mikrobio-allgemeine-bestimmung-alt-1",
      "mii-exa-test-data-mikrobio-allgemeine-bestimmung-1",
-     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-dar-1"
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-dar-1",
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-quant-1"
     ],
     "Observation.method.coding.system": [
      "mii-exa-test-data-mikrobio-allgemeine-bestimmung-alt-1",
      "mii-exa-test-data-mikrobio-allgemeine-bestimmung-1",
-     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-dar-1"
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-dar-1",
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-quant-1"
     ],
     "Observation.method.coding.code": [
      "mii-exa-test-data-mikrobio-allgemeine-bestimmung-alt-1",
      "mii-exa-test-data-mikrobio-allgemeine-bestimmung-1",
-     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-dar-1"
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-dar-1",
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-quant-1"
     ],
     "Observation.method.coding.display": [
      "mii-exa-test-data-mikrobio-allgemeine-bestimmung-alt-1",
-     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-1"
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-1",
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-quant-1"
     ],
     "Observation.specimen": [
      "mii-exa-test-data-mikrobio-allgemeine-bestimmung-alt-1",
      "mii-exa-test-data-mikrobio-allgemeine-bestimmung-1",
-     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-dar-1"
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-dar-1",
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-quant-1"
     ],
     "Observation.specimen.reference": [
      "mii-exa-test-data-mikrobio-allgemeine-bestimmung-alt-1",
      "mii-exa-test-data-mikrobio-allgemeine-bestimmung-1",
-     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-dar-1"
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-dar-1",
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-quant-1"
     ],
     "Observation.specimen.identifier": [
      "mii-exa-test-data-mikrobio-allgemeine-bestimmung-alt-1",
      "mii-exa-test-data-mikrobio-allgemeine-bestimmung-1",
-     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-dar-1"
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-dar-1",
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-quant-1"
     ],
     "Observation.device": [
-     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-1"
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-1",
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-quant-1"
     ],
     "Observation.device.reference": [
-     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-1"
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-1",
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-quant-1"
     ],
     "Observation.device.identifier": [
-     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-1"
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-1",
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-quant-1"
     ],
-    "Observation.referenceRange": null,
-    "Observation.referenceRange.low": null,
-    "Observation.referenceRange.high": null
+    "Observation.referenceRange": [
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-quant-1"
+    ],
+    "Observation.referenceRange.low": [
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-quant-1"
+    ],
+    "Observation.referenceRange.high": [
+     "mii-exa-test-data-mikrobio-allgemeine-bestimmung-quant-1"
+    ]
    }
   },
   "https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-allgemeine-kultur": {
@@ -44742,23 +44910,27 @@
    "instances": [
     "mii-exa-test-data-mikrobio-allgemeine-kultur-1",
     "mii-exa-test-data-mikrobio-allgemeine-kultur-alt-1",
-    "mii-exa-test-data-mikrobio-allgemeine-kultur-dar-1"
+    "mii-exa-test-data-mikrobio-allgemeine-kultur-dar-1",
+    "mii-exa-test-data-mikrobio-allgemeine-kultur-quant-1"
    ],
    "ms": {
     "Observation.meta": [
      "mii-exa-test-data-mikrobio-allgemeine-kultur-alt-1",
      "mii-exa-test-data-mikrobio-allgemeine-kultur-dar-1",
-     "mii-exa-test-data-mikrobio-allgemeine-kultur-1"
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-1",
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-quant-1"
     ],
     "Observation.meta.source": [
      "mii-exa-test-data-mikrobio-allgemeine-kultur-alt-1",
      "mii-exa-test-data-mikrobio-allgemeine-kultur-dar-1",
-     "mii-exa-test-data-mikrobio-allgemeine-kultur-1"
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-1",
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-quant-1"
     ],
     "Observation.meta.profile": [
      "mii-exa-test-data-mikrobio-allgemeine-kultur-alt-1",
      "mii-exa-test-data-mikrobio-allgemeine-kultur-dar-1",
-     "mii-exa-test-data-mikrobio-allgemeine-kultur-1"
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-1",
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-quant-1"
     ],
     "Observation.extension:triggeredBy-r5": [
      "mii-exa-test-data-mikrobio-allgemeine-kultur-alt-1"
@@ -44772,210 +44944,264 @@
     "Observation.identifier": [
      "mii-exa-test-data-mikrobio-allgemeine-kultur-alt-1",
      "mii-exa-test-data-mikrobio-allgemeine-kultur-dar-1",
-     "mii-exa-test-data-mikrobio-allgemeine-kultur-1"
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-1",
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-quant-1"
     ],
     "Observation.identifier:analyseBefundCode": [
      "mii-exa-test-data-mikrobio-allgemeine-kultur-alt-1",
      "mii-exa-test-data-mikrobio-allgemeine-kultur-dar-1",
-     "mii-exa-test-data-mikrobio-allgemeine-kultur-1"
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-1",
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-quant-1"
     ],
     "Observation.identifier:analyseBefundCode.type": [
      "mii-exa-test-data-mikrobio-allgemeine-kultur-alt-1",
      "mii-exa-test-data-mikrobio-allgemeine-kultur-dar-1",
-     "mii-exa-test-data-mikrobio-allgemeine-kultur-1"
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-1",
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-quant-1"
     ],
     "Observation.identifier:analyseBefundCode.type.coding": [
      "mii-exa-test-data-mikrobio-allgemeine-kultur-alt-1",
      "mii-exa-test-data-mikrobio-allgemeine-kultur-dar-1",
-     "mii-exa-test-data-mikrobio-allgemeine-kultur-1"
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-1",
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-quant-1"
     ],
     "Observation.identifier:analyseBefundCode.type.coding:observationInstanceV2": [
      "mii-exa-test-data-mikrobio-allgemeine-kultur-alt-1",
      "mii-exa-test-data-mikrobio-allgemeine-kultur-dar-1",
-     "mii-exa-test-data-mikrobio-allgemeine-kultur-1"
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-1",
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-quant-1"
     ],
     "Observation.identifier:analyseBefundCode.type.coding:observationInstanceV2.system": [
      "mii-exa-test-data-mikrobio-allgemeine-kultur-alt-1",
      "mii-exa-test-data-mikrobio-allgemeine-kultur-dar-1",
-     "mii-exa-test-data-mikrobio-allgemeine-kultur-1"
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-1",
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-quant-1"
     ],
     "Observation.identifier:analyseBefundCode.type.coding:observationInstanceV2.code": [
      "mii-exa-test-data-mikrobio-allgemeine-kultur-alt-1",
      "mii-exa-test-data-mikrobio-allgemeine-kultur-dar-1",
-     "mii-exa-test-data-mikrobio-allgemeine-kultur-1"
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-1",
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-quant-1"
     ],
     "Observation.identifier:analyseBefundCode.system": [
      "mii-exa-test-data-mikrobio-allgemeine-kultur-alt-1",
      "mii-exa-test-data-mikrobio-allgemeine-kultur-dar-1",
-     "mii-exa-test-data-mikrobio-allgemeine-kultur-1"
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-1",
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-quant-1"
     ],
     "Observation.identifier:analyseBefundCode.value": [
      "mii-exa-test-data-mikrobio-allgemeine-kultur-alt-1",
      "mii-exa-test-data-mikrobio-allgemeine-kultur-dar-1",
-     "mii-exa-test-data-mikrobio-allgemeine-kultur-1"
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-1",
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-quant-1"
     ],
     "Observation.identifier:analyseBefundCode.assigner": [
      "mii-exa-test-data-mikrobio-allgemeine-kultur-alt-1",
      "mii-exa-test-data-mikrobio-allgemeine-kultur-dar-1",
-     "mii-exa-test-data-mikrobio-allgemeine-kultur-1"
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-1",
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-quant-1"
     ],
     "Observation.basedOn": [
-     "mii-exa-test-data-mikrobio-allgemeine-kultur-1"
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-1",
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-quant-1"
     ],
     "Observation.status": [
      "mii-exa-test-data-mikrobio-allgemeine-kultur-alt-1",
      "mii-exa-test-data-mikrobio-allgemeine-kultur-dar-1",
-     "mii-exa-test-data-mikrobio-allgemeine-kultur-1"
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-1",
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-quant-1"
     ],
     "Observation.category": [
      "mii-exa-test-data-mikrobio-allgemeine-kultur-alt-1",
      "mii-exa-test-data-mikrobio-allgemeine-kultur-dar-1",
-     "mii-exa-test-data-mikrobio-allgemeine-kultur-1"
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-1",
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-quant-1"
     ],
     "Observation.category.coding": [
      "mii-exa-test-data-mikrobio-allgemeine-kultur-alt-1",
      "mii-exa-test-data-mikrobio-allgemeine-kultur-dar-1",
-     "mii-exa-test-data-mikrobio-allgemeine-kultur-1"
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-1",
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-quant-1"
     ],
     "Observation.category.coding.system": [
      "mii-exa-test-data-mikrobio-allgemeine-kultur-alt-1",
      "mii-exa-test-data-mikrobio-allgemeine-kultur-dar-1",
-     "mii-exa-test-data-mikrobio-allgemeine-kultur-1"
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-1",
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-quant-1"
     ],
     "Observation.category.coding.code": [
      "mii-exa-test-data-mikrobio-allgemeine-kultur-alt-1",
      "mii-exa-test-data-mikrobio-allgemeine-kultur-dar-1",
-     "mii-exa-test-data-mikrobio-allgemeine-kultur-1"
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-1",
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-quant-1"
     ],
     "Observation.category.coding.display": [
      "mii-exa-test-data-mikrobio-allgemeine-kultur-alt-1",
      "mii-exa-test-data-mikrobio-allgemeine-kultur-dar-1",
-     "mii-exa-test-data-mikrobio-allgemeine-kultur-1"
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-1",
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-quant-1"
     ],
     "Observation.category:observation-category": [
      "mii-exa-test-data-mikrobio-allgemeine-kultur-alt-1",
      "mii-exa-test-data-mikrobio-allgemeine-kultur-dar-1",
-     "mii-exa-test-data-mikrobio-allgemeine-kultur-1"
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-1",
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-quant-1"
     ],
     "Observation.category:mibi-category": [
      "mii-exa-test-data-mikrobio-allgemeine-kultur-alt-1",
      "mii-exa-test-data-mikrobio-allgemeine-kultur-dar-1",
-     "mii-exa-test-data-mikrobio-allgemeine-kultur-1"
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-1",
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-quant-1"
     ],
     "Observation.category:mibi-category.coding": [
      "mii-exa-test-data-mikrobio-allgemeine-kultur-alt-1",
      "mii-exa-test-data-mikrobio-allgemeine-kultur-dar-1",
-     "mii-exa-test-data-mikrobio-allgemeine-kultur-1"
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-1",
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-quant-1"
     ],
     "Observation.category:mibi-category.coding.system": [
      "mii-exa-test-data-mikrobio-allgemeine-kultur-alt-1",
      "mii-exa-test-data-mikrobio-allgemeine-kultur-dar-1",
-     "mii-exa-test-data-mikrobio-allgemeine-kultur-1"
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-1",
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-quant-1"
     ],
     "Observation.category:mibi-category.coding.code": [
      "mii-exa-test-data-mikrobio-allgemeine-kultur-alt-1",
      "mii-exa-test-data-mikrobio-allgemeine-kultur-dar-1",
-     "mii-exa-test-data-mikrobio-allgemeine-kultur-1"
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-1",
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-quant-1"
     ],
     "Observation.category:mibi-category.coding.display": [
      "mii-exa-test-data-mikrobio-allgemeine-kultur-alt-1",
      "mii-exa-test-data-mikrobio-allgemeine-kultur-dar-1",
-     "mii-exa-test-data-mikrobio-allgemeine-kultur-1"
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-1",
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-quant-1"
     ],
     "Observation.code": [
      "mii-exa-test-data-mikrobio-allgemeine-kultur-alt-1",
      "mii-exa-test-data-mikrobio-allgemeine-kultur-dar-1",
-     "mii-exa-test-data-mikrobio-allgemeine-kultur-1"
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-1",
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-quant-1"
     ],
     "Observation.code.coding": [
      "mii-exa-test-data-mikrobio-allgemeine-kultur-alt-1",
      "mii-exa-test-data-mikrobio-allgemeine-kultur-dar-1",
-     "mii-exa-test-data-mikrobio-allgemeine-kultur-1"
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-1",
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-quant-1"
     ],
     "Observation.code.coding.system": [
      "mii-exa-test-data-mikrobio-allgemeine-kultur-alt-1",
      "mii-exa-test-data-mikrobio-allgemeine-kultur-dar-1",
-     "mii-exa-test-data-mikrobio-allgemeine-kultur-1"
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-1",
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-quant-1"
     ],
     "Observation.code.coding.version": [
-     "mii-exa-test-data-mikrobio-allgemeine-kultur-1"
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-1",
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-quant-1"
     ],
     "Observation.code.coding.code": [
      "mii-exa-test-data-mikrobio-allgemeine-kultur-alt-1",
      "mii-exa-test-data-mikrobio-allgemeine-kultur-dar-1",
-     "mii-exa-test-data-mikrobio-allgemeine-kultur-1"
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-1",
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-quant-1"
     ],
     "Observation.code.coding.display": [
      "mii-exa-test-data-mikrobio-allgemeine-kultur-dar-1",
-     "mii-exa-test-data-mikrobio-allgemeine-kultur-1"
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-1",
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-quant-1"
     ],
     "Observation.code.coding:loinc": [
      "mii-exa-test-data-mikrobio-allgemeine-kultur-alt-1",
      "mii-exa-test-data-mikrobio-allgemeine-kultur-dar-1",
-     "mii-exa-test-data-mikrobio-allgemeine-kultur-1"
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-1",
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-quant-1"
     ],
     "Observation.subject": [
      "mii-exa-test-data-mikrobio-allgemeine-kultur-alt-1",
      "mii-exa-test-data-mikrobio-allgemeine-kultur-dar-1",
-     "mii-exa-test-data-mikrobio-allgemeine-kultur-1"
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-1",
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-quant-1"
     ],
     "Observation.subject.reference": [
      "mii-exa-test-data-mikrobio-allgemeine-kultur-alt-1",
      "mii-exa-test-data-mikrobio-allgemeine-kultur-dar-1",
-     "mii-exa-test-data-mikrobio-allgemeine-kultur-1"
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-1",
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-quant-1"
     ],
     "Observation.subject.identifier": [
      "mii-exa-test-data-mikrobio-allgemeine-kultur-alt-1",
      "mii-exa-test-data-mikrobio-allgemeine-kultur-dar-1",
-     "mii-exa-test-data-mikrobio-allgemeine-kultur-1"
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-1",
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-quant-1"
     ],
     "Observation.encounter": [
      "mii-exa-test-data-mikrobio-allgemeine-kultur-alt-1",
      "mii-exa-test-data-mikrobio-allgemeine-kultur-dar-1",
-     "mii-exa-test-data-mikrobio-allgemeine-kultur-1"
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-1",
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-quant-1"
     ],
     "Observation.encounter.reference": [
      "mii-exa-test-data-mikrobio-allgemeine-kultur-alt-1",
      "mii-exa-test-data-mikrobio-allgemeine-kultur-dar-1",
-     "mii-exa-test-data-mikrobio-allgemeine-kultur-1"
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-1",
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-quant-1"
     ],
     "Observation.encounter.identifier": [
      "mii-exa-test-data-mikrobio-allgemeine-kultur-alt-1",
      "mii-exa-test-data-mikrobio-allgemeine-kultur-dar-1",
-     "mii-exa-test-data-mikrobio-allgemeine-kultur-1"
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-1",
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-quant-1"
     ],
     "Observation.effective[x]": [
      "mii-exa-test-data-mikrobio-allgemeine-kultur-alt-1",
      "mii-exa-test-data-mikrobio-allgemeine-kultur-dar-1",
-     "mii-exa-test-data-mikrobio-allgemeine-kultur-1"
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-1",
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-quant-1"
     ],
     "Observation.effective[x].extension:QuelleKlinischesBezugsdatum": [
      "mii-exa-test-data-mikrobio-allgemeine-kultur-alt-1",
      "mii-exa-test-data-mikrobio-allgemeine-kultur-dar-1",
-     "mii-exa-test-data-mikrobio-allgemeine-kultur-1"
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-1",
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-quant-1"
     ],
     "Observation.issued": [
      "mii-exa-test-data-mikrobio-allgemeine-kultur-alt-1",
      "mii-exa-test-data-mikrobio-allgemeine-kultur-dar-1",
-     "mii-exa-test-data-mikrobio-allgemeine-kultur-1"
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-1",
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-quant-1"
     ],
     "Observation.value[x]": [
      "mii-exa-test-data-mikrobio-allgemeine-kultur-alt-1",
-     "mii-exa-test-data-mikrobio-allgemeine-kultur-1"
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-1",
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-quant-1"
     ],
     "Observation.value[x]:valueQuantity": [
      "mii-exa-test-data-mikrobio-allgemeine-kultur-alt-1",
-     "mii-exa-test-data-mikrobio-allgemeine-kultur-1"
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-1",
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-quant-1"
     ],
-    "Observation.value[x]:valueQuantity.value": null,
-    "Observation.value[x]:valueQuantity.value.extension:quantityPrecision": null,
-    "Observation.value[x]:valueQuantity.comparator": null,
-    "Observation.value[x]:valueQuantity.unit": null,
-    "Observation.value[x]:valueQuantity.system": null,
-    "Observation.value[x]:valueQuantity.code": null,
+    "Observation.value[x]:valueQuantity.value": [
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-quant-1"
+    ],
+    "Observation.value[x]:valueQuantity.value.extension:quantityPrecision": [
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-quant-1"
+    ],
+    "Observation.value[x]:valueQuantity.comparator": [
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-quant-1"
+    ],
+    "Observation.value[x]:valueQuantity.unit": [
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-quant-1"
+    ],
+    "Observation.value[x]:valueQuantity.system": [
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-quant-1"
+    ],
+    "Observation.value[x]:valueQuantity.code": [
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-quant-1"
+    ],
     "Observation.value[x]:valueCodeableConcept": [
      "mii-exa-test-data-mikrobio-allgemeine-kultur-alt-1",
-     "mii-exa-test-data-mikrobio-allgemeine-kultur-1"
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-1",
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-quant-1"
     ],
     "Observation.value[x]:valueCodeableConcept.coding": [
      "mii-exa-test-data-mikrobio-allgemeine-kultur-alt-1",
@@ -44994,76 +45220,97 @@
     ],
     "Observation.value[x]:valueRange": [
      "mii-exa-test-data-mikrobio-allgemeine-kultur-alt-1",
-     "mii-exa-test-data-mikrobio-allgemeine-kultur-1"
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-1",
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-quant-1"
     ],
     "Observation.value[x]:valueRatio": [
      "mii-exa-test-data-mikrobio-allgemeine-kultur-alt-1",
-     "mii-exa-test-data-mikrobio-allgemeine-kultur-1"
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-1",
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-quant-1"
     ],
     "Observation.dataAbsentReason": [
      "mii-exa-test-data-mikrobio-allgemeine-kultur-dar-1"
     ],
     "Observation.interpretation": [
      "mii-exa-test-data-mikrobio-allgemeine-kultur-alt-1",
-     "mii-exa-test-data-mikrobio-allgemeine-kultur-1"
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-1",
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-quant-1"
     ],
     "Observation.note": [
      "mii-exa-test-data-mikrobio-allgemeine-kultur-alt-1",
      "mii-exa-test-data-mikrobio-allgemeine-kultur-dar-1",
-     "mii-exa-test-data-mikrobio-allgemeine-kultur-1"
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-1",
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-quant-1"
     ],
     "Observation.method": [
      "mii-exa-test-data-mikrobio-allgemeine-kultur-alt-1",
      "mii-exa-test-data-mikrobio-allgemeine-kultur-dar-1",
-     "mii-exa-test-data-mikrobio-allgemeine-kultur-1"
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-1",
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-quant-1"
     ],
     "Observation.method.coding": [
      "mii-exa-test-data-mikrobio-allgemeine-kultur-alt-1",
      "mii-exa-test-data-mikrobio-allgemeine-kultur-dar-1",
-     "mii-exa-test-data-mikrobio-allgemeine-kultur-1"
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-1",
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-quant-1"
     ],
     "Observation.method.coding.system": [
      "mii-exa-test-data-mikrobio-allgemeine-kultur-alt-1",
      "mii-exa-test-data-mikrobio-allgemeine-kultur-dar-1",
-     "mii-exa-test-data-mikrobio-allgemeine-kultur-1"
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-1",
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-quant-1"
     ],
     "Observation.method.coding.code": [
      "mii-exa-test-data-mikrobio-allgemeine-kultur-alt-1",
      "mii-exa-test-data-mikrobio-allgemeine-kultur-dar-1",
-     "mii-exa-test-data-mikrobio-allgemeine-kultur-1"
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-1",
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-quant-1"
     ],
     "Observation.method.coding.display": [
      "mii-exa-test-data-mikrobio-allgemeine-kultur-alt-1",
      "mii-exa-test-data-mikrobio-allgemeine-kultur-dar-1",
-     "mii-exa-test-data-mikrobio-allgemeine-kultur-1"
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-1",
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-quant-1"
     ],
     "Observation.specimen": [
      "mii-exa-test-data-mikrobio-allgemeine-kultur-alt-1",
      "mii-exa-test-data-mikrobio-allgemeine-kultur-dar-1",
-     "mii-exa-test-data-mikrobio-allgemeine-kultur-1"
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-1",
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-quant-1"
     ],
     "Observation.specimen.reference": [
      "mii-exa-test-data-mikrobio-allgemeine-kultur-alt-1",
      "mii-exa-test-data-mikrobio-allgemeine-kultur-dar-1",
-     "mii-exa-test-data-mikrobio-allgemeine-kultur-1"
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-1",
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-quant-1"
     ],
     "Observation.specimen.identifier": [
      "mii-exa-test-data-mikrobio-allgemeine-kultur-alt-1",
      "mii-exa-test-data-mikrobio-allgemeine-kultur-dar-1",
-     "mii-exa-test-data-mikrobio-allgemeine-kultur-1"
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-1",
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-quant-1"
     ],
     "Observation.device": [
-     "mii-exa-test-data-mikrobio-allgemeine-kultur-1"
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-1",
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-quant-1"
     ],
     "Observation.device.reference": [
-     "mii-exa-test-data-mikrobio-allgemeine-kultur-1"
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-1",
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-quant-1"
     ],
     "Observation.device.identifier": [
-     "mii-exa-test-data-mikrobio-allgemeine-kultur-1"
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-1",
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-quant-1"
     ],
-    "Observation.referenceRange": null,
-    "Observation.referenceRange.low": null,
-    "Observation.referenceRange.high": null
+    "Observation.referenceRange": [
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-quant-1"
+    ],
+    "Observation.referenceRange.low": [
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-quant-1"
+    ],
+    "Observation.referenceRange.high": [
+     "mii-exa-test-data-mikrobio-allgemeine-kultur-quant-1"
+    ]
    }
   },
   "https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-antigen-antikoerper-quantitativ": {
@@ -46167,7 +46414,9 @@
     "Observation.value[x]:valueQuantity.value": [
      "mii-exa-test-data-mikrobio-bartlett-quant-1"
     ],
-    "Observation.value[x]:valueQuantity.value.extension:quantityPrecision": null,
+    "Observation.value[x]:valueQuantity.value.extension:quantityPrecision": [
+     "mii-exa-test-data-mikrobio-bartlett-quant-1"
+    ],
     "Observation.value[x]:valueQuantity.comparator": [
      "mii-exa-test-data-mikrobio-bartlett-quant-1"
     ],
@@ -47697,7 +47946,9 @@
     "Observation.extension:triggeredBy-r5": [
      "mii-exa-test-data-mikrobio-mikroskopie-alt-1"
     ],
-    "Observation.extension:faerbung": null,
+    "Observation.extension:faerbung": [
+     "mii-exa-test-data-mikrobio-mikroskopie-1"
+    ],
     "Observation.modifierExtension": [
      "mii-exa-test-data-mikrobio-mikroskopie-alt-1"
     ],
@@ -47945,7 +48196,9 @@
     "Observation.value[x]:valueQuantity.value": [
      "mii-exa-test-data-mikrobio-mikroskopie-quant-1"
     ],
-    "Observation.value[x]:valueQuantity.value.extension:quantityPrecision": null,
+    "Observation.value[x]:valueQuantity.value.extension:quantityPrecision": [
+     "mii-exa-test-data-mikrobio-mikroskopie-quant-1"
+    ],
     "Observation.value[x]:valueQuantity.comparator": [
      "mii-exa-test-data-mikrobio-mikroskopie-quant-1"
     ],
@@ -48486,23 +48739,27 @@
    "instances": [
     "mii-exa-test-data-mikrobio-mrgn-klasse-1",
     "mii-exa-test-data-mikrobio-mrgn-klasse-alt-1",
-    "mii-exa-test-data-mikrobio-mrgn-klasse-dar-1"
+    "mii-exa-test-data-mikrobio-mrgn-klasse-dar-1",
+    "mii-exa-test-data-mikrobio-mrgn-klasse-quant-1"
    ],
    "ms": {
     "Observation.meta": [
      "mii-exa-test-data-mikrobio-mrgn-klasse-dar-1",
      "mii-exa-test-data-mikrobio-mrgn-klasse-1",
-     "mii-exa-test-data-mikrobio-mrgn-klasse-alt-1"
+     "mii-exa-test-data-mikrobio-mrgn-klasse-alt-1",
+     "mii-exa-test-data-mikrobio-mrgn-klasse-quant-1"
     ],
     "Observation.meta.source": [
      "mii-exa-test-data-mikrobio-mrgn-klasse-dar-1",
      "mii-exa-test-data-mikrobio-mrgn-klasse-1",
-     "mii-exa-test-data-mikrobio-mrgn-klasse-alt-1"
+     "mii-exa-test-data-mikrobio-mrgn-klasse-alt-1",
+     "mii-exa-test-data-mikrobio-mrgn-klasse-quant-1"
     ],
     "Observation.meta.profile": [
      "mii-exa-test-data-mikrobio-mrgn-klasse-dar-1",
      "mii-exa-test-data-mikrobio-mrgn-klasse-1",
-     "mii-exa-test-data-mikrobio-mrgn-klasse-alt-1"
+     "mii-exa-test-data-mikrobio-mrgn-klasse-alt-1",
+     "mii-exa-test-data-mikrobio-mrgn-klasse-quant-1"
     ],
     "Observation.extension:triggeredBy-r5": [
      "mii-exa-test-data-mikrobio-mrgn-klasse-alt-1"
@@ -48516,209 +48773,263 @@
     "Observation.identifier": [
      "mii-exa-test-data-mikrobio-mrgn-klasse-dar-1",
      "mii-exa-test-data-mikrobio-mrgn-klasse-1",
-     "mii-exa-test-data-mikrobio-mrgn-klasse-alt-1"
+     "mii-exa-test-data-mikrobio-mrgn-klasse-alt-1",
+     "mii-exa-test-data-mikrobio-mrgn-klasse-quant-1"
     ],
     "Observation.identifier:analyseBefundCode": [
      "mii-exa-test-data-mikrobio-mrgn-klasse-dar-1",
      "mii-exa-test-data-mikrobio-mrgn-klasse-1",
-     "mii-exa-test-data-mikrobio-mrgn-klasse-alt-1"
+     "mii-exa-test-data-mikrobio-mrgn-klasse-alt-1",
+     "mii-exa-test-data-mikrobio-mrgn-klasse-quant-1"
     ],
     "Observation.identifier:analyseBefundCode.type": [
      "mii-exa-test-data-mikrobio-mrgn-klasse-dar-1",
      "mii-exa-test-data-mikrobio-mrgn-klasse-1",
-     "mii-exa-test-data-mikrobio-mrgn-klasse-alt-1"
+     "mii-exa-test-data-mikrobio-mrgn-klasse-alt-1",
+     "mii-exa-test-data-mikrobio-mrgn-klasse-quant-1"
     ],
     "Observation.identifier:analyseBefundCode.type.coding": [
      "mii-exa-test-data-mikrobio-mrgn-klasse-dar-1",
      "mii-exa-test-data-mikrobio-mrgn-klasse-1",
-     "mii-exa-test-data-mikrobio-mrgn-klasse-alt-1"
+     "mii-exa-test-data-mikrobio-mrgn-klasse-alt-1",
+     "mii-exa-test-data-mikrobio-mrgn-klasse-quant-1"
     ],
     "Observation.identifier:analyseBefundCode.type.coding:observationInstanceV2": [
      "mii-exa-test-data-mikrobio-mrgn-klasse-dar-1",
      "mii-exa-test-data-mikrobio-mrgn-klasse-1",
-     "mii-exa-test-data-mikrobio-mrgn-klasse-alt-1"
+     "mii-exa-test-data-mikrobio-mrgn-klasse-alt-1",
+     "mii-exa-test-data-mikrobio-mrgn-klasse-quant-1"
     ],
     "Observation.identifier:analyseBefundCode.type.coding:observationInstanceV2.system": [
      "mii-exa-test-data-mikrobio-mrgn-klasse-dar-1",
      "mii-exa-test-data-mikrobio-mrgn-klasse-1",
-     "mii-exa-test-data-mikrobio-mrgn-klasse-alt-1"
+     "mii-exa-test-data-mikrobio-mrgn-klasse-alt-1",
+     "mii-exa-test-data-mikrobio-mrgn-klasse-quant-1"
     ],
     "Observation.identifier:analyseBefundCode.type.coding:observationInstanceV2.code": [
      "mii-exa-test-data-mikrobio-mrgn-klasse-dar-1",
      "mii-exa-test-data-mikrobio-mrgn-klasse-1",
-     "mii-exa-test-data-mikrobio-mrgn-klasse-alt-1"
+     "mii-exa-test-data-mikrobio-mrgn-klasse-alt-1",
+     "mii-exa-test-data-mikrobio-mrgn-klasse-quant-1"
     ],
     "Observation.identifier:analyseBefundCode.system": [
      "mii-exa-test-data-mikrobio-mrgn-klasse-dar-1",
      "mii-exa-test-data-mikrobio-mrgn-klasse-1",
-     "mii-exa-test-data-mikrobio-mrgn-klasse-alt-1"
+     "mii-exa-test-data-mikrobio-mrgn-klasse-alt-1",
+     "mii-exa-test-data-mikrobio-mrgn-klasse-quant-1"
     ],
     "Observation.identifier:analyseBefundCode.value": [
      "mii-exa-test-data-mikrobio-mrgn-klasse-dar-1",
      "mii-exa-test-data-mikrobio-mrgn-klasse-1",
-     "mii-exa-test-data-mikrobio-mrgn-klasse-alt-1"
+     "mii-exa-test-data-mikrobio-mrgn-klasse-alt-1",
+     "mii-exa-test-data-mikrobio-mrgn-klasse-quant-1"
     ],
     "Observation.identifier:analyseBefundCode.assigner": [
      "mii-exa-test-data-mikrobio-mrgn-klasse-dar-1",
      "mii-exa-test-data-mikrobio-mrgn-klasse-1",
-     "mii-exa-test-data-mikrobio-mrgn-klasse-alt-1"
+     "mii-exa-test-data-mikrobio-mrgn-klasse-alt-1",
+     "mii-exa-test-data-mikrobio-mrgn-klasse-quant-1"
     ],
     "Observation.basedOn": [
-     "mii-exa-test-data-mikrobio-mrgn-klasse-1"
+     "mii-exa-test-data-mikrobio-mrgn-klasse-1",
+     "mii-exa-test-data-mikrobio-mrgn-klasse-quant-1"
     ],
     "Observation.status": [
      "mii-exa-test-data-mikrobio-mrgn-klasse-dar-1",
      "mii-exa-test-data-mikrobio-mrgn-klasse-1",
-     "mii-exa-test-data-mikrobio-mrgn-klasse-alt-1"
+     "mii-exa-test-data-mikrobio-mrgn-klasse-alt-1",
+     "mii-exa-test-data-mikrobio-mrgn-klasse-quant-1"
     ],
     "Observation.category": [
      "mii-exa-test-data-mikrobio-mrgn-klasse-dar-1",
      "mii-exa-test-data-mikrobio-mrgn-klasse-1",
-     "mii-exa-test-data-mikrobio-mrgn-klasse-alt-1"
+     "mii-exa-test-data-mikrobio-mrgn-klasse-alt-1",
+     "mii-exa-test-data-mikrobio-mrgn-klasse-quant-1"
     ],
     "Observation.category.coding": [
      "mii-exa-test-data-mikrobio-mrgn-klasse-dar-1",
      "mii-exa-test-data-mikrobio-mrgn-klasse-1",
-     "mii-exa-test-data-mikrobio-mrgn-klasse-alt-1"
+     "mii-exa-test-data-mikrobio-mrgn-klasse-alt-1",
+     "mii-exa-test-data-mikrobio-mrgn-klasse-quant-1"
     ],
     "Observation.category.coding.system": [
      "mii-exa-test-data-mikrobio-mrgn-klasse-dar-1",
      "mii-exa-test-data-mikrobio-mrgn-klasse-1",
-     "mii-exa-test-data-mikrobio-mrgn-klasse-alt-1"
+     "mii-exa-test-data-mikrobio-mrgn-klasse-alt-1",
+     "mii-exa-test-data-mikrobio-mrgn-klasse-quant-1"
     ],
     "Observation.category.coding.code": [
      "mii-exa-test-data-mikrobio-mrgn-klasse-dar-1",
      "mii-exa-test-data-mikrobio-mrgn-klasse-1",
-     "mii-exa-test-data-mikrobio-mrgn-klasse-alt-1"
+     "mii-exa-test-data-mikrobio-mrgn-klasse-alt-1",
+     "mii-exa-test-data-mikrobio-mrgn-klasse-quant-1"
     ],
     "Observation.category.coding.display": [
      "mii-exa-test-data-mikrobio-mrgn-klasse-dar-1",
      "mii-exa-test-data-mikrobio-mrgn-klasse-1",
-     "mii-exa-test-data-mikrobio-mrgn-klasse-alt-1"
+     "mii-exa-test-data-mikrobio-mrgn-klasse-alt-1",
+     "mii-exa-test-data-mikrobio-mrgn-klasse-quant-1"
     ],
     "Observation.category:observation-category": [
      "mii-exa-test-data-mikrobio-mrgn-klasse-dar-1",
      "mii-exa-test-data-mikrobio-mrgn-klasse-1",
-     "mii-exa-test-data-mikrobio-mrgn-klasse-alt-1"
+     "mii-exa-test-data-mikrobio-mrgn-klasse-alt-1",
+     "mii-exa-test-data-mikrobio-mrgn-klasse-quant-1"
     ],
     "Observation.category:mibi-category": [
      "mii-exa-test-data-mikrobio-mrgn-klasse-dar-1",
      "mii-exa-test-data-mikrobio-mrgn-klasse-1",
-     "mii-exa-test-data-mikrobio-mrgn-klasse-alt-1"
+     "mii-exa-test-data-mikrobio-mrgn-klasse-alt-1",
+     "mii-exa-test-data-mikrobio-mrgn-klasse-quant-1"
     ],
     "Observation.category:mibi-category.coding": [
      "mii-exa-test-data-mikrobio-mrgn-klasse-dar-1",
      "mii-exa-test-data-mikrobio-mrgn-klasse-1",
-     "mii-exa-test-data-mikrobio-mrgn-klasse-alt-1"
+     "mii-exa-test-data-mikrobio-mrgn-klasse-alt-1",
+     "mii-exa-test-data-mikrobio-mrgn-klasse-quant-1"
     ],
     "Observation.category:mibi-category.coding.system": [
      "mii-exa-test-data-mikrobio-mrgn-klasse-dar-1",
      "mii-exa-test-data-mikrobio-mrgn-klasse-1",
-     "mii-exa-test-data-mikrobio-mrgn-klasse-alt-1"
+     "mii-exa-test-data-mikrobio-mrgn-klasse-alt-1",
+     "mii-exa-test-data-mikrobio-mrgn-klasse-quant-1"
     ],
     "Observation.category:mibi-category.coding.code": [
      "mii-exa-test-data-mikrobio-mrgn-klasse-dar-1",
      "mii-exa-test-data-mikrobio-mrgn-klasse-1",
-     "mii-exa-test-data-mikrobio-mrgn-klasse-alt-1"
+     "mii-exa-test-data-mikrobio-mrgn-klasse-alt-1",
+     "mii-exa-test-data-mikrobio-mrgn-klasse-quant-1"
     ],
     "Observation.category:mibi-category.coding.display": [
      "mii-exa-test-data-mikrobio-mrgn-klasse-dar-1",
      "mii-exa-test-data-mikrobio-mrgn-klasse-1",
-     "mii-exa-test-data-mikrobio-mrgn-klasse-alt-1"
+     "mii-exa-test-data-mikrobio-mrgn-klasse-alt-1",
+     "mii-exa-test-data-mikrobio-mrgn-klasse-quant-1"
     ],
     "Observation.code": [
      "mii-exa-test-data-mikrobio-mrgn-klasse-dar-1",
      "mii-exa-test-data-mikrobio-mrgn-klasse-1",
-     "mii-exa-test-data-mikrobio-mrgn-klasse-alt-1"
+     "mii-exa-test-data-mikrobio-mrgn-klasse-alt-1",
+     "mii-exa-test-data-mikrobio-mrgn-klasse-quant-1"
     ],
     "Observation.code.coding": [
      "mii-exa-test-data-mikrobio-mrgn-klasse-dar-1",
      "mii-exa-test-data-mikrobio-mrgn-klasse-1",
-     "mii-exa-test-data-mikrobio-mrgn-klasse-alt-1"
+     "mii-exa-test-data-mikrobio-mrgn-klasse-alt-1",
+     "mii-exa-test-data-mikrobio-mrgn-klasse-quant-1"
     ],
     "Observation.code.coding.system": [
      "mii-exa-test-data-mikrobio-mrgn-klasse-dar-1",
      "mii-exa-test-data-mikrobio-mrgn-klasse-1",
-     "mii-exa-test-data-mikrobio-mrgn-klasse-alt-1"
+     "mii-exa-test-data-mikrobio-mrgn-klasse-alt-1",
+     "mii-exa-test-data-mikrobio-mrgn-klasse-quant-1"
     ],
     "Observation.code.coding.version": [
-     "mii-exa-test-data-mikrobio-mrgn-klasse-1"
+     "mii-exa-test-data-mikrobio-mrgn-klasse-1",
+     "mii-exa-test-data-mikrobio-mrgn-klasse-quant-1"
     ],
     "Observation.code.coding.code": [
      "mii-exa-test-data-mikrobio-mrgn-klasse-dar-1",
      "mii-exa-test-data-mikrobio-mrgn-klasse-1",
-     "mii-exa-test-data-mikrobio-mrgn-klasse-alt-1"
+     "mii-exa-test-data-mikrobio-mrgn-klasse-alt-1",
+     "mii-exa-test-data-mikrobio-mrgn-klasse-quant-1"
     ],
     "Observation.code.coding.display": [
-     "mii-exa-test-data-mikrobio-mrgn-klasse-1"
+     "mii-exa-test-data-mikrobio-mrgn-klasse-1",
+     "mii-exa-test-data-mikrobio-mrgn-klasse-quant-1"
     ],
     "Observation.code.coding:loinc": [
      "mii-exa-test-data-mikrobio-mrgn-klasse-dar-1",
      "mii-exa-test-data-mikrobio-mrgn-klasse-1",
-     "mii-exa-test-data-mikrobio-mrgn-klasse-alt-1"
+     "mii-exa-test-data-mikrobio-mrgn-klasse-alt-1",
+     "mii-exa-test-data-mikrobio-mrgn-klasse-quant-1"
     ],
     "Observation.subject": [
      "mii-exa-test-data-mikrobio-mrgn-klasse-dar-1",
      "mii-exa-test-data-mikrobio-mrgn-klasse-1",
-     "mii-exa-test-data-mikrobio-mrgn-klasse-alt-1"
+     "mii-exa-test-data-mikrobio-mrgn-klasse-alt-1",
+     "mii-exa-test-data-mikrobio-mrgn-klasse-quant-1"
     ],
     "Observation.subject.reference": [
      "mii-exa-test-data-mikrobio-mrgn-klasse-dar-1",
      "mii-exa-test-data-mikrobio-mrgn-klasse-1",
-     "mii-exa-test-data-mikrobio-mrgn-klasse-alt-1"
+     "mii-exa-test-data-mikrobio-mrgn-klasse-alt-1",
+     "mii-exa-test-data-mikrobio-mrgn-klasse-quant-1"
     ],
     "Observation.subject.identifier": [
      "mii-exa-test-data-mikrobio-mrgn-klasse-dar-1",
      "mii-exa-test-data-mikrobio-mrgn-klasse-1",
-     "mii-exa-test-data-mikrobio-mrgn-klasse-alt-1"
+     "mii-exa-test-data-mikrobio-mrgn-klasse-alt-1",
+     "mii-exa-test-data-mikrobio-mrgn-klasse-quant-1"
     ],
     "Observation.encounter": [
      "mii-exa-test-data-mikrobio-mrgn-klasse-dar-1",
      "mii-exa-test-data-mikrobio-mrgn-klasse-1",
-     "mii-exa-test-data-mikrobio-mrgn-klasse-alt-1"
+     "mii-exa-test-data-mikrobio-mrgn-klasse-alt-1",
+     "mii-exa-test-data-mikrobio-mrgn-klasse-quant-1"
     ],
     "Observation.encounter.reference": [
      "mii-exa-test-data-mikrobio-mrgn-klasse-dar-1",
      "mii-exa-test-data-mikrobio-mrgn-klasse-1",
-     "mii-exa-test-data-mikrobio-mrgn-klasse-alt-1"
+     "mii-exa-test-data-mikrobio-mrgn-klasse-alt-1",
+     "mii-exa-test-data-mikrobio-mrgn-klasse-quant-1"
     ],
     "Observation.encounter.identifier": [
      "mii-exa-test-data-mikrobio-mrgn-klasse-dar-1",
      "mii-exa-test-data-mikrobio-mrgn-klasse-1",
-     "mii-exa-test-data-mikrobio-mrgn-klasse-alt-1"
+     "mii-exa-test-data-mikrobio-mrgn-klasse-alt-1",
+     "mii-exa-test-data-mikrobio-mrgn-klasse-quant-1"
     ],
     "Observation.effective[x]": [
      "mii-exa-test-data-mikrobio-mrgn-klasse-dar-1",
      "mii-exa-test-data-mikrobio-mrgn-klasse-1",
-     "mii-exa-test-data-mikrobio-mrgn-klasse-alt-1"
+     "mii-exa-test-data-mikrobio-mrgn-klasse-alt-1",
+     "mii-exa-test-data-mikrobio-mrgn-klasse-quant-1"
     ],
     "Observation.effective[x].extension:QuelleKlinischesBezugsdatum": [
      "mii-exa-test-data-mikrobio-mrgn-klasse-dar-1",
      "mii-exa-test-data-mikrobio-mrgn-klasse-1",
-     "mii-exa-test-data-mikrobio-mrgn-klasse-alt-1"
+     "mii-exa-test-data-mikrobio-mrgn-klasse-alt-1",
+     "mii-exa-test-data-mikrobio-mrgn-klasse-quant-1"
     ],
     "Observation.issued": [
      "mii-exa-test-data-mikrobio-mrgn-klasse-dar-1",
      "mii-exa-test-data-mikrobio-mrgn-klasse-1",
-     "mii-exa-test-data-mikrobio-mrgn-klasse-alt-1"
+     "mii-exa-test-data-mikrobio-mrgn-klasse-alt-1",
+     "mii-exa-test-data-mikrobio-mrgn-klasse-quant-1"
     ],
     "Observation.value[x]": [
      "mii-exa-test-data-mikrobio-mrgn-klasse-1",
-     "mii-exa-test-data-mikrobio-mrgn-klasse-alt-1"
+     "mii-exa-test-data-mikrobio-mrgn-klasse-alt-1",
+     "mii-exa-test-data-mikrobio-mrgn-klasse-quant-1"
     ],
     "Observation.value[x]:valueQuantity": [
      "mii-exa-test-data-mikrobio-mrgn-klasse-1",
-     "mii-exa-test-data-mikrobio-mrgn-klasse-alt-1"
+     "mii-exa-test-data-mikrobio-mrgn-klasse-alt-1",
+     "mii-exa-test-data-mikrobio-mrgn-klasse-quant-1"
     ],
-    "Observation.value[x]:valueQuantity.value": null,
-    "Observation.value[x]:valueQuantity.value.extension:quantityPrecision": null,
-    "Observation.value[x]:valueQuantity.comparator": null,
-    "Observation.value[x]:valueQuantity.unit": null,
-    "Observation.value[x]:valueQuantity.system": null,
-    "Observation.value[x]:valueQuantity.code": null,
+    "Observation.value[x]:valueQuantity.value": [
+     "mii-exa-test-data-mikrobio-mrgn-klasse-quant-1"
+    ],
+    "Observation.value[x]:valueQuantity.value.extension:quantityPrecision": [
+     "mii-exa-test-data-mikrobio-mrgn-klasse-quant-1"
+    ],
+    "Observation.value[x]:valueQuantity.comparator": [
+     "mii-exa-test-data-mikrobio-mrgn-klasse-quant-1"
+    ],
+    "Observation.value[x]:valueQuantity.unit": [
+     "mii-exa-test-data-mikrobio-mrgn-klasse-quant-1"
+    ],
+    "Observation.value[x]:valueQuantity.system": [
+     "mii-exa-test-data-mikrobio-mrgn-klasse-quant-1"
+    ],
+    "Observation.value[x]:valueQuantity.code": [
+     "mii-exa-test-data-mikrobio-mrgn-klasse-quant-1"
+    ],
     "Observation.value[x]:valueCodeableConcept": [
      "mii-exa-test-data-mikrobio-mrgn-klasse-1",
-     "mii-exa-test-data-mikrobio-mrgn-klasse-alt-1"
+     "mii-exa-test-data-mikrobio-mrgn-klasse-alt-1",
+     "mii-exa-test-data-mikrobio-mrgn-klasse-quant-1"
     ],
     "Observation.value[x]:valueCodeableConcept.coding": [
      "mii-exa-test-data-mikrobio-mrgn-klasse-1",
@@ -48737,67 +49048,89 @@
     ],
     "Observation.value[x]:valueRange": [
      "mii-exa-test-data-mikrobio-mrgn-klasse-1",
-     "mii-exa-test-data-mikrobio-mrgn-klasse-alt-1"
+     "mii-exa-test-data-mikrobio-mrgn-klasse-alt-1",
+     "mii-exa-test-data-mikrobio-mrgn-klasse-quant-1"
     ],
     "Observation.value[x]:valueRatio": [
      "mii-exa-test-data-mikrobio-mrgn-klasse-1",
-     "mii-exa-test-data-mikrobio-mrgn-klasse-alt-1"
+     "mii-exa-test-data-mikrobio-mrgn-klasse-alt-1",
+     "mii-exa-test-data-mikrobio-mrgn-klasse-quant-1"
     ],
     "Observation.dataAbsentReason": [
      "mii-exa-test-data-mikrobio-mrgn-klasse-dar-1"
     ],
     "Observation.interpretation": [
-     "mii-exa-test-data-mikrobio-mrgn-klasse-1"
+     "mii-exa-test-data-mikrobio-mrgn-klasse-1",
+     "mii-exa-test-data-mikrobio-mrgn-klasse-quant-1"
     ],
     "Observation.note": [
      "mii-exa-test-data-mikrobio-mrgn-klasse-dar-1",
      "mii-exa-test-data-mikrobio-mrgn-klasse-1",
-     "mii-exa-test-data-mikrobio-mrgn-klasse-alt-1"
+     "mii-exa-test-data-mikrobio-mrgn-klasse-alt-1",
+     "mii-exa-test-data-mikrobio-mrgn-klasse-quant-1"
     ],
     "Observation.method": [
-     "mii-exa-test-data-mikrobio-mrgn-klasse-1"
+     "mii-exa-test-data-mikrobio-mrgn-klasse-1",
+     "mii-exa-test-data-mikrobio-mrgn-klasse-quant-1"
     ],
     "Observation.method.coding": [
-     "mii-exa-test-data-mikrobio-mrgn-klasse-1"
+     "mii-exa-test-data-mikrobio-mrgn-klasse-1",
+     "mii-exa-test-data-mikrobio-mrgn-klasse-quant-1"
     ],
     "Observation.method.coding.system": [
-     "mii-exa-test-data-mikrobio-mrgn-klasse-1"
+     "mii-exa-test-data-mikrobio-mrgn-klasse-1",
+     "mii-exa-test-data-mikrobio-mrgn-klasse-quant-1"
     ],
     "Observation.method.coding.code": [
-     "mii-exa-test-data-mikrobio-mrgn-klasse-1"
+     "mii-exa-test-data-mikrobio-mrgn-klasse-1",
+     "mii-exa-test-data-mikrobio-mrgn-klasse-quant-1"
     ],
     "Observation.method.coding.display": [
-     "mii-exa-test-data-mikrobio-mrgn-klasse-1"
+     "mii-exa-test-data-mikrobio-mrgn-klasse-1",
+     "mii-exa-test-data-mikrobio-mrgn-klasse-quant-1"
     ],
     "Observation.specimen": [
      "mii-exa-test-data-mikrobio-mrgn-klasse-dar-1",
      "mii-exa-test-data-mikrobio-mrgn-klasse-1",
-     "mii-exa-test-data-mikrobio-mrgn-klasse-alt-1"
+     "mii-exa-test-data-mikrobio-mrgn-klasse-alt-1",
+     "mii-exa-test-data-mikrobio-mrgn-klasse-quant-1"
     ],
     "Observation.specimen.reference": [
      "mii-exa-test-data-mikrobio-mrgn-klasse-dar-1",
      "mii-exa-test-data-mikrobio-mrgn-klasse-1",
-     "mii-exa-test-data-mikrobio-mrgn-klasse-alt-1"
+     "mii-exa-test-data-mikrobio-mrgn-klasse-alt-1",
+     "mii-exa-test-data-mikrobio-mrgn-klasse-quant-1"
     ],
     "Observation.specimen.identifier": [
      "mii-exa-test-data-mikrobio-mrgn-klasse-dar-1",
      "mii-exa-test-data-mikrobio-mrgn-klasse-1",
-     "mii-exa-test-data-mikrobio-mrgn-klasse-alt-1"
+     "mii-exa-test-data-mikrobio-mrgn-klasse-alt-1",
+     "mii-exa-test-data-mikrobio-mrgn-klasse-quant-1"
     ],
     "Observation.device": [
-     "mii-exa-test-data-mikrobio-mrgn-klasse-1"
+     "mii-exa-test-data-mikrobio-mrgn-klasse-1",
+     "mii-exa-test-data-mikrobio-mrgn-klasse-quant-1"
     ],
     "Observation.device.reference": [
-     "mii-exa-test-data-mikrobio-mrgn-klasse-1"
+     "mii-exa-test-data-mikrobio-mrgn-klasse-1",
+     "mii-exa-test-data-mikrobio-mrgn-klasse-quant-1"
     ],
     "Observation.device.identifier": [
-     "mii-exa-test-data-mikrobio-mrgn-klasse-1"
+     "mii-exa-test-data-mikrobio-mrgn-klasse-1",
+     "mii-exa-test-data-mikrobio-mrgn-klasse-quant-1"
     ],
-    "Observation.referenceRange": null,
-    "Observation.referenceRange.low": null,
-    "Observation.referenceRange.high": null,
+    "Observation.referenceRange": [
+     "mii-exa-test-data-mikrobio-mrgn-klasse-quant-1"
+    ],
+    "Observation.referenceRange.low": [
+     "mii-exa-test-data-mikrobio-mrgn-klasse-quant-1"
+    ],
+    "Observation.referenceRange.high": [
+     "mii-exa-test-data-mikrobio-mrgn-klasse-quant-1"
+    ],
     "Observation.derivedFrom": [
-     "mii-exa-test-data-mikrobio-mrgn-klasse-1"
+     "mii-exa-test-data-mikrobio-mrgn-klasse-1",
+     "mii-exa-test-data-mikrobio-mrgn-klasse-quant-1"
     ]
    }
   },
@@ -49207,89 +49540,118 @@
   "https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-probe": {
    "module": "modul-mikrobio",
    "instances": [
-    "mii-exa-test-data-mikrobio-probe-1"
+    "mii-exa-test-data-mikrobio-probe-1",
+    "mii-exa-test-data-mikrobio-probe-2"
    ],
    "ms": {
     "Specimen.meta": [
-     "mii-exa-test-data-mikrobio-probe-1"
+     "mii-exa-test-data-mikrobio-probe-1",
+     "mii-exa-test-data-mikrobio-probe-2"
     ],
     "Specimen.meta.source": [
-     "mii-exa-test-data-mikrobio-probe-1"
+     "mii-exa-test-data-mikrobio-probe-1",
+     "mii-exa-test-data-mikrobio-probe-2"
     ],
     "Specimen.meta.profile": [
-     "mii-exa-test-data-mikrobio-probe-1"
+     "mii-exa-test-data-mikrobio-probe-1",
+     "mii-exa-test-data-mikrobio-probe-2"
     ],
     "Specimen.extension:probenebene": [
-     "mii-exa-test-data-mikrobio-probe-1"
+     "mii-exa-test-data-mikrobio-probe-1",
+     "mii-exa-test-data-mikrobio-probe-2"
     ],
     "Specimen.extension:infektiositaetsstatus": [
-     "mii-exa-test-data-mikrobio-probe-1"
+     "mii-exa-test-data-mikrobio-probe-1",
+     "mii-exa-test-data-mikrobio-probe-2"
     ],
     "Specimen.extension:focus": null,
     "Specimen.identifier": [
-     "mii-exa-test-data-mikrobio-probe-1"
+     "mii-exa-test-data-mikrobio-probe-1",
+     "mii-exa-test-data-mikrobio-probe-2"
     ],
     "Specimen.status": [
-     "mii-exa-test-data-mikrobio-probe-1"
+     "mii-exa-test-data-mikrobio-probe-1",
+     "mii-exa-test-data-mikrobio-probe-2"
     ],
     "Specimen.type": [
-     "mii-exa-test-data-mikrobio-probe-1"
+     "mii-exa-test-data-mikrobio-probe-1",
+     "mii-exa-test-data-mikrobio-probe-2"
     ],
     "Specimen.type.coding.system": [
-     "mii-exa-test-data-mikrobio-probe-1"
+     "mii-exa-test-data-mikrobio-probe-1",
+     "mii-exa-test-data-mikrobio-probe-2"
     ],
     "Specimen.type.coding.code": [
-     "mii-exa-test-data-mikrobio-probe-1"
+     "mii-exa-test-data-mikrobio-probe-1",
+     "mii-exa-test-data-mikrobio-probe-2"
     ],
     "Specimen.type.coding:sct": [
-     "mii-exa-test-data-mikrobio-probe-1"
+     "mii-exa-test-data-mikrobio-probe-1",
+     "mii-exa-test-data-mikrobio-probe-2"
     ],
     "Specimen.subject": [
-     "mii-exa-test-data-mikrobio-probe-1"
+     "mii-exa-test-data-mikrobio-probe-1",
+     "mii-exa-test-data-mikrobio-probe-2"
     ],
     "Specimen.receivedTime": [
-     "mii-exa-test-data-mikrobio-probe-1"
+     "mii-exa-test-data-mikrobio-probe-1",
+     "mii-exa-test-data-mikrobio-probe-2"
     ],
     "Specimen.parent": null,
     "Specimen.request": [
-     "mii-exa-test-data-mikrobio-probe-1"
+     "mii-exa-test-data-mikrobio-probe-1",
+     "mii-exa-test-data-mikrobio-probe-2"
     ],
     "Specimen.collection": [
-     "mii-exa-test-data-mikrobio-probe-1"
+     "mii-exa-test-data-mikrobio-probe-1",
+     "mii-exa-test-data-mikrobio-probe-2"
     ],
-    "Specimen.collection.extension:einstellungBlutversorgung": null,
+    "Specimen.collection.extension:einstellungBlutversorgung": [
+     "mii-exa-test-data-mikrobio-probe-2"
+    ],
     "Specimen.collection.collected[x]": [
-     "mii-exa-test-data-mikrobio-probe-1"
+     "mii-exa-test-data-mikrobio-probe-1",
+     "mii-exa-test-data-mikrobio-probe-2"
     ],
     "Specimen.collection.quantity": [
-     "mii-exa-test-data-mikrobio-probe-1"
+     "mii-exa-test-data-mikrobio-probe-1",
+     "mii-exa-test-data-mikrobio-probe-2"
     ],
     "Specimen.collection.quantity.value": [
-     "mii-exa-test-data-mikrobio-probe-1"
+     "mii-exa-test-data-mikrobio-probe-1",
+     "mii-exa-test-data-mikrobio-probe-2"
     ],
     "Specimen.collection.quantity.unit": [
-     "mii-exa-test-data-mikrobio-probe-1"
+     "mii-exa-test-data-mikrobio-probe-1",
+     "mii-exa-test-data-mikrobio-probe-2"
     ],
     "Specimen.collection.quantity.system": [
-     "mii-exa-test-data-mikrobio-probe-1"
+     "mii-exa-test-data-mikrobio-probe-1",
+     "mii-exa-test-data-mikrobio-probe-2"
     ],
     "Specimen.collection.quantity.code": [
-     "mii-exa-test-data-mikrobio-probe-1"
+     "mii-exa-test-data-mikrobio-probe-1",
+     "mii-exa-test-data-mikrobio-probe-2"
     ],
     "Specimen.collection.bodySite": [
-     "mii-exa-test-data-mikrobio-probe-1"
+     "mii-exa-test-data-mikrobio-probe-1",
+     "mii-exa-test-data-mikrobio-probe-2"
     ],
     "Specimen.collection.bodySite.coding.system": [
-     "mii-exa-test-data-mikrobio-probe-1"
+     "mii-exa-test-data-mikrobio-probe-1",
+     "mii-exa-test-data-mikrobio-probe-2"
     ],
     "Specimen.collection.bodySite.coding.code": [
-     "mii-exa-test-data-mikrobio-probe-1"
+     "mii-exa-test-data-mikrobio-probe-1",
+     "mii-exa-test-data-mikrobio-probe-2"
     ],
     "Specimen.collection.bodySite.coding:sct": [
-     "mii-exa-test-data-mikrobio-probe-1"
+     "mii-exa-test-data-mikrobio-probe-1",
+     "mii-exa-test-data-mikrobio-probe-2"
     ],
     "Specimen.collection.bodySite.coding:icd-o-3": [
-     "mii-exa-test-data-mikrobio-probe-1"
+     "mii-exa-test-data-mikrobio-probe-1",
+     "mii-exa-test-data-mikrobio-probe-2"
     ],
     "Specimen.collection.fastingStatus[x]": [
      "mii-exa-test-data-mikrobio-probe-1"
@@ -49301,90 +49663,118 @@
      "mii-exa-test-data-mikrobio-probe-1"
     ],
     "Specimen.processing": [
-     "mii-exa-test-data-mikrobio-probe-1"
+     "mii-exa-test-data-mikrobio-probe-1",
+     "mii-exa-test-data-mikrobio-probe-2"
     ],
     "Specimen.processing.extension:temperaturbedingungen": [
-     "mii-exa-test-data-mikrobio-probe-1"
+     "mii-exa-test-data-mikrobio-probe-1",
+     "mii-exa-test-data-mikrobio-probe-2"
     ],
     "Specimen.processing.procedure": [
-     "mii-exa-test-data-mikrobio-probe-1"
+     "mii-exa-test-data-mikrobio-probe-1",
+     "mii-exa-test-data-mikrobio-probe-2"
     ],
     "Specimen.processing.procedure.coding.system": [
-     "mii-exa-test-data-mikrobio-probe-1"
+     "mii-exa-test-data-mikrobio-probe-1",
+     "mii-exa-test-data-mikrobio-probe-2"
     ],
     "Specimen.processing.procedure.coding.code": [
-     "mii-exa-test-data-mikrobio-probe-1"
+     "mii-exa-test-data-mikrobio-probe-1",
+     "mii-exa-test-data-mikrobio-probe-2"
     ],
     "Specimen.processing.procedure.coding:sct": [
-     "mii-exa-test-data-mikrobio-probe-1"
+     "mii-exa-test-data-mikrobio-probe-1",
+     "mii-exa-test-data-mikrobio-probe-2"
     ],
     "Specimen.processing.additive": null,
     "Specimen.processing.time[x]": [
-     "mii-exa-test-data-mikrobio-probe-1"
+     "mii-exa-test-data-mikrobio-probe-1",
+     "mii-exa-test-data-mikrobio-probe-2"
     ],
     "Specimen.processing.time[x]:timePeriod": [
-     "mii-exa-test-data-mikrobio-probe-1"
+     "mii-exa-test-data-mikrobio-probe-1",
+     "mii-exa-test-data-mikrobio-probe-2"
     ],
     "Specimen.processing.time[x]:timePeriod.start": [
-     "mii-exa-test-data-mikrobio-probe-1"
+     "mii-exa-test-data-mikrobio-probe-1",
+     "mii-exa-test-data-mikrobio-probe-2"
     ],
     "Specimen.processing.time[x]:timePeriod.end": [
-     "mii-exa-test-data-mikrobio-probe-1"
+     "mii-exa-test-data-mikrobio-probe-1",
+     "mii-exa-test-data-mikrobio-probe-2"
     ],
     "Specimen.processing:lagerprozess": [
-     "mii-exa-test-data-mikrobio-probe-1"
+     "mii-exa-test-data-mikrobio-probe-1",
+     "mii-exa-test-data-mikrobio-probe-2"
     ],
     "Specimen.processing:lagerprozess.extension": [
-     "mii-exa-test-data-mikrobio-probe-1"
+     "mii-exa-test-data-mikrobio-probe-1",
+     "mii-exa-test-data-mikrobio-probe-2"
     ],
     "Specimen.processing:lagerprozess.extension:temperaturbedingungen": [
-     "mii-exa-test-data-mikrobio-probe-1"
+     "mii-exa-test-data-mikrobio-probe-1",
+     "mii-exa-test-data-mikrobio-probe-2"
     ],
     "Specimen.container": [
-     "mii-exa-test-data-mikrobio-probe-1"
+     "mii-exa-test-data-mikrobio-probe-1",
+     "mii-exa-test-data-mikrobio-probe-2"
     ],
     "Specimen.container.type": [
-     "mii-exa-test-data-mikrobio-probe-1"
+     "mii-exa-test-data-mikrobio-probe-1",
+     "mii-exa-test-data-mikrobio-probe-2"
     ],
     "Specimen.container.type.coding.system": [
-     "mii-exa-test-data-mikrobio-probe-1"
+     "mii-exa-test-data-mikrobio-probe-1",
+     "mii-exa-test-data-mikrobio-probe-2"
     ],
     "Specimen.container.type.coding.code": [
-     "mii-exa-test-data-mikrobio-probe-1"
+     "mii-exa-test-data-mikrobio-probe-1",
+     "mii-exa-test-data-mikrobio-probe-2"
     ],
     "Specimen.container.capacity": [
-     "mii-exa-test-data-mikrobio-probe-1"
+     "mii-exa-test-data-mikrobio-probe-1",
+     "mii-exa-test-data-mikrobio-probe-2"
     ],
     "Specimen.container.capacity.value": [
-     "mii-exa-test-data-mikrobio-probe-1"
+     "mii-exa-test-data-mikrobio-probe-1",
+     "mii-exa-test-data-mikrobio-probe-2"
     ],
     "Specimen.container.capacity.unit": [
-     "mii-exa-test-data-mikrobio-probe-1"
+     "mii-exa-test-data-mikrobio-probe-1",
+     "mii-exa-test-data-mikrobio-probe-2"
     ],
     "Specimen.container.capacity.system": [
-     "mii-exa-test-data-mikrobio-probe-1"
+     "mii-exa-test-data-mikrobio-probe-1",
+     "mii-exa-test-data-mikrobio-probe-2"
     ],
     "Specimen.container.capacity.code": [
-     "mii-exa-test-data-mikrobio-probe-1"
+     "mii-exa-test-data-mikrobio-probe-1",
+     "mii-exa-test-data-mikrobio-probe-2"
     ],
     "Specimen.container.specimenQuantity": [
-     "mii-exa-test-data-mikrobio-probe-1"
+     "mii-exa-test-data-mikrobio-probe-1",
+     "mii-exa-test-data-mikrobio-probe-2"
     ],
     "Specimen.container.specimenQuantity.value": [
-     "mii-exa-test-data-mikrobio-probe-1"
+     "mii-exa-test-data-mikrobio-probe-1",
+     "mii-exa-test-data-mikrobio-probe-2"
     ],
     "Specimen.container.specimenQuantity.unit": [
-     "mii-exa-test-data-mikrobio-probe-1"
+     "mii-exa-test-data-mikrobio-probe-1",
+     "mii-exa-test-data-mikrobio-probe-2"
     ],
     "Specimen.container.specimenQuantity.system": [
-     "mii-exa-test-data-mikrobio-probe-1"
+     "mii-exa-test-data-mikrobio-probe-1",
+     "mii-exa-test-data-mikrobio-probe-2"
     ],
     "Specimen.container.specimenQuantity.code": [
-     "mii-exa-test-data-mikrobio-probe-1"
+     "mii-exa-test-data-mikrobio-probe-1",
+     "mii-exa-test-data-mikrobio-probe-2"
     ],
     "Specimen.container.additive[x]": null,
     "Specimen.note": [
-     "mii-exa-test-data-mikrobio-probe-1"
+     "mii-exa-test-data-mikrobio-probe-1",
+     "mii-exa-test-data-mikrobio-probe-2"
     ]
    }
   },
@@ -52339,25 +52729,25 @@
  "fragile_per_module": {
   "modul-diagnose": 28,
   "modul-fall": 33,
-  "modul-labor": 27,
+  "modul-labor": 29,
   "modul-medikation": 199,
   "modul-person": 141,
   "modul-prozedur": 7,
   "modul-bildgebung": 328,
-  "modul-biobank": 189,
+  "modul-biobank": 195,
   "modul-dokument": 3,
-  "modul-icu": 2490,
+  "modul-icu": 2502,
   "modul-kardio": 302,
-  "modul-lungenfunktion": 1259,
-  "modul-molgen": 84,
-  "modul-mtb": 1364,
-  "modul-onko": 1618,
-  "modul-patho": 309,
+  "modul-lungenfunktion": 1262,
+  "modul-molgen": 88,
+  "modul-mtb": 1360,
+  "modul-onko": 1619,
+  "modul-patho": 312,
   "modul-pro": 279,
   "modul-seltene": 410,
   "modul-soziodemographie": 115,
   "modul-consent": 36,
-  "modul-mikrobio": 385,
+  "modul-mikrobio": 338,
   "modul-studie": 76,
   "modul-symptom": 16
  }
