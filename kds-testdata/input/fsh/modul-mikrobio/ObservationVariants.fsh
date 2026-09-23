@@ -44,7 +44,6 @@ Description: "Mikrobio: allgemeine-bestimmung — Alt-Variante zur MS-Coverage"
 * interpretation = $v3-ObservationInterpretation#A "Abnormal"
 * note[+].text = "Alt-Variante zur MS-Coverage (allgemeine-bestimmung)"
 
-
 Instance: mii-exa-test-data-mikrobio-allgemeine-bestimmung-dar-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-allgemeine-bestimmung
 Usage: #example
@@ -76,7 +75,6 @@ Description: "Mikrobio: allgemeine-bestimmung — Probe nicht auswertbar (dataAb
 * dataAbsentReason.coding = $data-absent-reason#unknown "Unknown"
 * method.coding = $sct#278289002
 * note[+].text = "Probe nicht auswertbar — Ergebnis nicht verfügbar."
-
 
 // allgemeine-kultur: dataAbsentReason variant already exists as mii-exa-test-data-mikrobio-allgemeine-kultur-dar-1
 Instance: mii-exa-test-data-mikrobio-allgemeine-kultur-alt-1
@@ -119,7 +117,6 @@ Description: "Mikrobio: allgemeine-kultur — Alt-Variante zur MS-Coverage"
 * method.coding.display = "Aerobic culture technique (qualifier value)"
 * interpretation = $v3-ObservationInterpretation#A "Abnormal"
 * note[+].text = "Alt-Variante zur MS-Coverage (allgemeine-kultur)"
-
 
 Instance: mii-exa-test-data-mikrobio-antigen-antikoerper-quantitativ-alt-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-antigen-antikoerper-quantitativ
@@ -169,7 +166,6 @@ Description: "Mikrobio: antigen-antikoerper-quantitativ — Alt-Variante zur MS-
 * interpretation = $v3-ObservationInterpretation#A "Abnormal"
 * note[+].text = "Alt-Variante zur MS-Coverage (antigen-antikoerper-quantitativ)"
 
-
 Instance: mii-exa-test-data-mikrobio-antigen-antikoerper-quantitativ-dar-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-antigen-antikoerper-quantitativ
 Usage: #example
@@ -204,7 +200,6 @@ Description: "Mikrobio: antigen-antikoerper-quantitativ — Probe nicht auswertb
 * dataAbsentReason.coding = $data-absent-reason#unknown "Unknown"
 * method.coding = $sct#726449005
 * note[+].text = "Probe nicht auswertbar — Ergebnis nicht verfügbar."
-
 
 Instance: mii-exa-test-data-mikrobio-aviditaet-alt-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-aviditaet
@@ -254,7 +249,6 @@ Description: "Mikrobio: aviditaet — Alt-Variante zur MS-Coverage"
 * interpretation = $v3-ObservationInterpretation#A "Abnormal"
 * note[+].text = "Alt-Variante zur MS-Coverage (aviditaet)"
 
-
 Instance: mii-exa-test-data-mikrobio-aviditaet-dar-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-aviditaet
 Usage: #example
@@ -289,7 +283,6 @@ Description: "Mikrobio: aviditaet — Probe nicht auswertbar (dataAbsentReason)"
 * dataAbsentReason.coding = $data-absent-reason#unknown "Unknown"
 * method.coding = $sct#726449005
 * note[+].text = "Probe nicht auswertbar — Ergebnis nicht verfügbar."
-
 
 Instance: mii-exa-test-data-mikrobio-bartlett-score-alt-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-bartlett-score
@@ -332,7 +325,6 @@ Description: "Mikrobio: bartlett-score — Alt-Variante zur MS-Coverage"
 * interpretation = $v3-ObservationInterpretation#A "Abnormal"
 * note[+].text = "Alt-Variante zur MS-Coverage (bartlett-score)"
 
-
 Instance: mii-exa-test-data-mikrobio-bartlett-score-dar-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-bartlett-score
 Usage: #example
@@ -364,7 +356,6 @@ Description: "Mikrobio: bartlett-score — Probe nicht auswertbar (dataAbsentRea
 * dataAbsentReason.coding = $data-absent-reason#unknown "Unknown"
 * method.coding = $sct#702661004
 * note[+].text = "Probe nicht auswertbar — Ergebnis nicht verfügbar."
-
 
 Instance: mii-exa-test-data-mikrobio-ct-wert-alt-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-ct-wert
@@ -414,7 +405,6 @@ Description: "Mikrobio: ct-wert — Alt-Variante zur MS-Coverage"
 * interpretation = $v3-ObservationInterpretation#A "Abnormal"
 * note[+].text = "Alt-Variante zur MS-Coverage (ct-wert)"
 
-
 Instance: mii-exa-test-data-mikrobio-ct-wert-dar-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-ct-wert
 Usage: #example
@@ -449,7 +439,6 @@ Description: "Mikrobio: ct-wert — Probe nicht auswertbar (dataAbsentReason)"
 * dataAbsentReason.coding = $data-absent-reason#unknown "Unknown"
 * method.coding = $sct#70601000052104
 * note[+].text = "Probe nicht auswertbar — Ergebnis nicht verfügbar."
-
 
 Instance: mii-exa-test-data-mikrobio-empfindlichkeit-alt-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-empfindlichkeit
@@ -498,7 +487,6 @@ Description: "Mikrobio: empfindlichkeit — Alt-Variante zur MS-Coverage"
 * interpretation.coding = $v3-ObservationInterpretation#R "Resistant"
 * note[+].text = "Alt-Variante zur MS-Coverage (empfindlichkeit)"
 
-
 Instance: mii-exa-test-data-mikrobio-empfindlichkeit-dar-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-empfindlichkeit
 Usage: #example
@@ -530,7 +518,6 @@ Description: "Mikrobio: empfindlichkeit — Probe nicht auswertbar (dataAbsentRe
 * dataAbsentReason.coding = $data-absent-reason#unknown "Unknown"
 * method.coding = $sct#708073008
 * note[+].text = "Probe nicht auswertbar — Ergebnis nicht verfügbar."
-
 
 Instance: mii-exa-test-data-mikrobio-keimzahl-alt-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-keimzahl
@@ -577,7 +564,6 @@ Description: "Mikrobio: keimzahl — Alt-Variante zur MS-Coverage"
 * interpretation = $v3-ObservationInterpretation#A "Abnormal"
 * note[+].text = "Alt-Variante zur MS-Coverage (keimzahl)"
 
-
 Instance: mii-exa-test-data-mikrobio-keimzahl-dar-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-keimzahl
 Usage: #example
@@ -609,7 +595,6 @@ Description: "Mikrobio: keimzahl — Probe nicht auswertbar (dataAbsentReason)"
 * dataAbsentReason.coding = $data-absent-reason#unknown "Unknown"
 * method.coding = $sct#410681005
 * note[+].text = "Probe nicht auswertbar — Ergebnis nicht verfügbar."
-
 
 Instance: mii-exa-test-data-mikrobio-mikroskopie-alt-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-mikroskopie
@@ -652,7 +637,6 @@ Description: "Mikrobio: mikroskopie — Alt-Variante zur MS-Coverage"
 * interpretation = $v3-ObservationInterpretation#A "Abnormal"
 * note[+].text = "Alt-Variante zur MS-Coverage (mikroskopie)"
 
-
 Instance: mii-exa-test-data-mikrobio-mikroskopie-dar-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-mikroskopie
 Usage: #example
@@ -684,7 +668,6 @@ Description: "Mikrobio: mikroskopie — Probe nicht auswertbar (dataAbsentReason
 * dataAbsentReason.coding = $data-absent-reason#unknown "Unknown"
 * method.coding = $sct#702661004
 * note[+].text = "Probe nicht auswertbar — Ergebnis nicht verfügbar."
-
 
 Instance: mii-exa-test-data-mikrobio-molekulare-pathogenlast-alt-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-molekulare-pathogenlast
@@ -734,7 +717,6 @@ Description: "Mikrobio: molekulare-pathogenlast — Alt-Variante zur MS-Coverage
 * interpretation = $v3-ObservationInterpretation#A "Abnormal"
 * note[+].text = "Alt-Variante zur MS-Coverage (molekulare-pathogenlast)"
 
-
 Instance: mii-exa-test-data-mikrobio-molekulare-pathogenlast-dar-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-molekulare-pathogenlast
 Usage: #example
@@ -769,7 +751,6 @@ Description: "Mikrobio: molekulare-pathogenlast — Probe nicht auswertbar (data
 * dataAbsentReason.coding = $data-absent-reason#unknown "Unknown"
 * method.coding = $sct#70601000052104
 * note[+].text = "Probe nicht auswertbar — Ergebnis nicht verfügbar."
-
 
 Instance: mii-exa-test-data-mikrobio-resistenzkategorie-status-alt-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-resistenzkategorie-status
@@ -814,7 +795,6 @@ Description: "Mikrobio: resistenzkategorie-status — Alt-Variante zur MS-Covera
 * method.coding.display = "Molecular genetics technique (qualifier value)"
 * note[+].text = "Alt-Variante zur MS-Coverage (resistenzkategorie-status)"
 
-
 Instance: mii-exa-test-data-mikrobio-resistenzkategorie-status-neg-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-resistenzkategorie-status
 Usage: #example
@@ -849,7 +829,6 @@ Description: "Mikrobio: resistenzkategorie-status — negatives Ergebnis (MRSA n
 * valueCodeableConcept.coding = $sct#260385009 "Negative"
 * method.coding = $sct#708068002
 * note[+].text = "MRSA nicht nachgewiesen (negatives Screening-Ergebnis)."
-
 
 Instance: mii-exa-test-data-mikrobio-mrgn-klasse-alt-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-mrgn-klasse
@@ -889,7 +868,6 @@ Description: "Mikrobio: mrgn-klasse — Alt-Variante zur MS-Coverage"
 * valueCodeableConcept.coding = $loinc#LA33214-0 "2MRGN"
 * note[+].text = "Alt-Variante zur MS-Coverage (mrgn-klasse)"
 
-
 Instance: mii-exa-test-data-mikrobio-mrgn-klasse-dar-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-mrgn-klasse
 Usage: #example
@@ -920,7 +898,6 @@ Description: "Mikrobio: mrgn-klasse — Probe nicht auswertbar (dataAbsentReason
 * code.coding = $loinc#99780-9
 * dataAbsentReason.coding = $data-absent-reason#unknown "Unknown"
 * note[+].text = "Probe nicht auswertbar — Ergebnis nicht verfügbar."
-
 
 Instance: mii-exa-test-data-mikrobio-nugent-score-alt-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-nugent-score
@@ -967,7 +944,6 @@ Description: "Mikrobio: nugent-score — Alt-Variante zur MS-Coverage"
 * interpretation = $v3-ObservationInterpretation#A "Abnormal"
 * note[+].text = "Alt-Variante zur MS-Coverage (nugent-score)"
 
-
 Instance: mii-exa-test-data-mikrobio-nugent-score-dar-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-nugent-score
 Usage: #example
@@ -999,7 +975,6 @@ Description: "Mikrobio: nugent-score — Probe nicht auswertbar (dataAbsentReaso
 * dataAbsentReason.coding = $data-absent-reason#unknown "Unknown"
 * method.coding = $sct#702661004
 * note[+].text = "Probe nicht auswertbar — Ergebnis nicht verfügbar."
-
 
 Instance: mii-exa-test-data-mikrobio-resistenz-mech-alt-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-resistenzmechanismen-determinanten
@@ -1045,7 +1020,6 @@ Description: "Mikrobio: resistenzmechanismen-determinanten — Alt-Variante zur 
 * interpretation = $v3-ObservationInterpretation#A "Abnormal"
 * note[+].text = "Alt-Variante zur MS-Coverage (resistenzmechanismen-determinanten)"
 
-
 Instance: mii-exa-test-data-mikrobio-resistenz-mech-dar-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-resistenzmechanismen-determinanten
 Usage: #example
@@ -1080,7 +1054,6 @@ Description: "Mikrobio: resistenzmechanismen-determinanten — Probe nicht auswe
 * dataAbsentReason.coding = $data-absent-reason#unknown "Unknown"
 * method.coding = $sct#708068002
 * note[+].text = "Probe nicht auswertbar — Ergebnis nicht verfügbar."
-
 
 Instance: mii-exa-test-data-mikrobio-spezifische-bestimmung-alt-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-spezifische-bestimmung
@@ -1126,7 +1099,6 @@ Description: "Mikrobio: spezifische-bestimmung — Alt-Variante zur MS-Coverage"
 * interpretation = $v3-ObservationInterpretation#A "Abnormal"
 * note[+].text = "Alt-Variante zur MS-Coverage (spezifische-bestimmung)"
 
-
 Instance: mii-exa-test-data-mikrobio-spezifische-bestimmung-dar-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-spezifische-bestimmung
 Usage: #example
@@ -1161,7 +1133,6 @@ Description: "Mikrobio: spezifische-bestimmung — Probe nicht auswertbar (dataA
 * dataAbsentReason.coding = $data-absent-reason#unknown "Unknown"
 * method.coding = $sct#70601000052104
 * note[+].text = "Probe nicht auswertbar — Ergebnis nicht verfügbar."
-
 
 Instance: mii-exa-test-data-mikrobio-titer-alt-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-titer
@@ -1211,7 +1182,6 @@ Description: "Mikrobio: titer — Alt-Variante zur MS-Coverage"
 * interpretation = $v3-ObservationInterpretation#A "Abnormal"
 * note[+].text = "Alt-Variante zur MS-Coverage (titer)"
 
-
 Instance: mii-exa-test-data-mikrobio-titer-dar-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-titer
 Usage: #example
@@ -1243,7 +1213,6 @@ Description: "Mikrobio: titer — Probe nicht auswertbar (dataAbsentReason)"
 * dataAbsentReason.coding = $data-absent-reason#unknown "Unknown"
 * method.coding = $sct#708104000
 * note[+].text = "Probe nicht auswertbar — Ergebnis nicht verfügbar."
-
 
 Instance: mii-exa-test-data-mikrobio-virulenzfaktor-alt-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-virulenzfaktor
@@ -1289,7 +1258,6 @@ Description: "Mikrobio: virulenzfaktor — Alt-Variante zur MS-Coverage"
 * interpretation = $v3-ObservationInterpretation#A "Abnormal"
 * note[+].text = "Alt-Variante zur MS-Coverage (virulenzfaktor)"
 
-
 Instance: mii-exa-test-data-mikrobio-virulenzfaktor-dar-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-virulenzfaktor
 Usage: #example
@@ -1324,7 +1292,6 @@ Description: "Mikrobio: virulenzfaktor — Probe nicht auswertbar (dataAbsentRea
 * dataAbsentReason.coding = $data-absent-reason#unknown "Unknown"
 * method.coding = $sct#70601000052104
 * note[+].text = "Probe nicht auswertbar — Ergebnis nicht verfügbar."
-
 
 Instance: mii-exa-test-data-mikrobio-voraus-empf-alt-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-voraussichtliche-empfindlichkeit
@@ -1370,7 +1337,6 @@ Description: "Mikrobio: voraussichtliche-empfindlichkeit — Alt-Variante zur MS
 * interpretation = $v3-ObservationInterpretation#A "Abnormal"
 * note[+].text = "Alt-Variante zur MS-Coverage (voraussichtliche-empfindlichkeit)"
 
-
 Instance: mii-exa-test-data-mikrobio-voraus-empf-dar-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-voraussichtliche-empfindlichkeit
 Usage: #example
@@ -1406,3 +1372,402 @@ Description: "Mikrobio: voraussichtliche-empfindlichkeit — Probe nicht auswert
 * method.coding = $sct#708060009
 * note[+].text = "Probe nicht auswertbar — Ergebnis nicht verfügbar."
 
+Instance: mii-exa-test-data-mikrobio-empfindlichkeit-sir-1
+InstanceOf: https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-empfindlichkeit
+Usage: #example
+Description: "Mikrobio: empfindlichkeit — SIR-Ergebnis als valueCodeableConcept (EUCAST)"
+* insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/mikrobiologie-lab-system"
+* identifier[analyseBefundCode].type.coding[observationInstanceV2] = $v2-0203#OBI
+* identifier[analyseBefundCode].system = "https://www.charite.de/fhir/sid/test-lab-results"
+* identifier[analyseBefundCode].value = "empfindlichkeit-sir-1"
+* identifier[analyseBefundCode].assigner.identifier.system = "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"
+* identifier[analyseBefundCode].assigner.identifier.value = "DIZ-CHA"
+* status = #final
+* category[observation-category] = $observation-category#laboratory
+* category[mibi-category] = $v2-0074#MB "Microbiology"
+* subject = Reference(mii-exa-test-data-mikrobio-patient-1)
+* subject.identifier.system = "https://www.charite.de/fhir/sid/patientenidentifikation"
+* subject.identifier.value = "MIKROBIO-TEST-001"
+* encounter = Reference(mii-exa-test-data-mikrobio-encounter-1)
+* encounter.identifier.system = "https://www.charite.de/fhir/sid/encounter-identifier"
+* encounter.identifier.value = "MIKROBIO-ENC-001"
+* effectiveDateTime = "2026-04-05T10:00:00+02:00"
+* effectiveDateTime.extension[+].url = "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum"
+* effectiveDateTime.extension[=].valueCoding = $sct#399445004 "Specimen collection date (observable entity)"
+* issued = "2026-04-05T11:00:00+02:00"
+* specimen = Reference(mii-exa-test-data-mikrobio-specimen-1)
+* specimen.identifier.system = "https://www.charite.de/fhir/sid/Probennummer"
+* specimen.identifier.value = "BLOOD-CULT-001"
+* basedOn = Reference(mii-exa-test-data-mikrobio-servicerequest-1)
+* code.coding = $loinc#18928-2 "Gentamicin [Susceptibility]"
+* code.coding.version = "2.80"
+* valueCodeableConcept.extension[Norm].url = "https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-ex-mikrobio-empfindlichkeit-norm"
+* valueCodeableConcept.extension[Norm].valueCodeableConcept = https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/CodeSystem/mii-cs-mikrobio-susceptibility-norm#EUCAST "EUCAST"
+* valueCodeableConcept.coding = $v3-ObservationInterpretation#S "Susceptible"
+* valueCodeableConcept.coding.version = "3.0.0"
+* method.coding = $sct#14788002 "Antimicrobial susceptibility test (procedure)"
+* note[+].text = "SIR-Kategorisierung nach EUCAST-Grenzwerten."
+
+Instance: mii-exa-test-data-mikrobio-antigen-antikoerper-cc-1
+InstanceOf: https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-antigen-antikoerper-quantitativ
+Usage: #example
+Description: "Mikrobio: antigen-antikoerper — qualitatives Ergebnis als valueCodeableConcept"
+* insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/mikrobiologie-lab-system"
+* identifier[analyseBefundCode].type.coding[observationInstanceV2] = $v2-0203#OBI
+* identifier[analyseBefundCode].system = "https://www.charite.de/fhir/sid/test-lab-results"
+* identifier[analyseBefundCode].value = "antigen-antikoerper-cc-1"
+* identifier[analyseBefundCode].assigner.identifier.system = "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"
+* identifier[analyseBefundCode].assigner.identifier.value = "DIZ-CHA"
+* status = #final
+* category[observation-category] = $observation-category#laboratory
+* category[mibi-category] = $v2-0074#MB "Microbiology"
+* subject = Reference(mii-exa-test-data-mikrobio-patient-1)
+* subject.identifier.system = "https://www.charite.de/fhir/sid/patientenidentifikation"
+* subject.identifier.value = "MIKROBIO-TEST-001"
+* encounter = Reference(mii-exa-test-data-mikrobio-encounter-1)
+* encounter.identifier.system = "https://www.charite.de/fhir/sid/encounter-identifier"
+* encounter.identifier.value = "MIKROBIO-ENC-001"
+* effectiveDateTime = "2026-04-05T10:00:00+02:00"
+* effectiveDateTime.extension[+].url = "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum"
+* effectiveDateTime.extension[=].valueCoding = $sct#399445004 "Specimen collection date (observable entity)"
+* issued = "2026-04-05T11:00:00+02:00"
+* specimen = Reference(mii-exa-test-data-mikrobio-specimen-1)
+* specimen.identifier.system = "https://www.charite.de/fhir/sid/Probennummer"
+* specimen.identifier.value = "BLOOD-CULT-001"
+* basedOn = Reference(mii-exa-test-data-mikrobio-servicerequest-1)
+* code.coding = $loinc#5060-9 "Borrelia burgdorferi Ab [Units/volume] in Serum by Immunoassay"
+* code.coding.version = "2.80"
+* valueCodeableConcept.coding = $sct#10828004 "Positive (qualifier value)"
+* valueCodeableConcept.coding.version = "http://snomed.info/sct/900000000000207008/version/20250401"
+* method.coding = $sct#726449005 "Immunoassay technique (qualifier value)"
+
+Instance: mii-exa-test-data-mikrobio-keimzahl-cc-1
+InstanceOf: https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-keimzahl
+Usage: #example
+Description: "Mikrobio: keimzahl — kein Wachstum (valueCodeableConcept-Variante)"
+* insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/mikrobiologie-lab-system"
+* identifier[analyseBefundCode].type.coding[observationInstanceV2] = $v2-0203#OBI
+* identifier[analyseBefundCode].system = "https://www.charite.de/fhir/sid/test-lab-results"
+* identifier[analyseBefundCode].value = "keimzahl-cc-1"
+* identifier[analyseBefundCode].assigner.identifier.system = "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"
+* identifier[analyseBefundCode].assigner.identifier.value = "DIZ-CHA"
+* status = #final
+* category[observation-category] = $observation-category#laboratory
+* category[mibi-category] = $v2-0074#MB "Microbiology"
+* subject = Reference(mii-exa-test-data-mikrobio-patient-1)
+* subject.identifier.system = "https://www.charite.de/fhir/sid/patientenidentifikation"
+* subject.identifier.value = "MIKROBIO-TEST-001"
+* encounter = Reference(mii-exa-test-data-mikrobio-encounter-1)
+* encounter.identifier.system = "https://www.charite.de/fhir/sid/encounter-identifier"
+* encounter.identifier.value = "MIKROBIO-ENC-001"
+* effectiveDateTime = "2026-04-05T10:00:00+02:00"
+* effectiveDateTime.extension[+].url = "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum"
+* effectiveDateTime.extension[=].valueCoding = $sct#399445004 "Specimen collection date (observable entity)"
+* issued = "2026-04-05T11:00:00+02:00"
+* specimen = Reference(mii-exa-test-data-mikrobio-specimen-1)
+* specimen.identifier.system = "https://www.charite.de/fhir/sid/Probennummer"
+* specimen.identifier.value = "BLOOD-CULT-001"
+* basedOn = Reference(mii-exa-test-data-mikrobio-servicerequest-1)
+* code.coding = $loinc#49223-1 "Colony count [#/volume] in Specimen by Visual count"
+* code.coding.version = "2.80"
+* valueCodeableConcept.coding = $sct#260385009 "Negative (qualifier value)"
+* valueCodeableConcept.coding.version = "http://snomed.info/sct/900000000000207008/version/20250401"
+* method.coding = $sct#410681005 "Count of entities (property) (qualifier value)"
+
+Instance: mii-exa-test-data-mikrobio-pathogenlast-cc-1
+InstanceOf: https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-molekulare-pathogenlast
+Usage: #example
+Description: "Mikrobio: molekulare-pathogenlast — nicht nachweisbar (valueCodeableConcept-Variante)"
+* insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/mikrobiologie-lab-system"
+* identifier[analyseBefundCode].type.coding[observationInstanceV2] = $v2-0203#OBI
+* identifier[analyseBefundCode].system = "https://www.charite.de/fhir/sid/test-lab-results"
+* identifier[analyseBefundCode].value = "pathogenlast-cc-1"
+* identifier[analyseBefundCode].assigner.identifier.system = "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"
+* identifier[analyseBefundCode].assigner.identifier.value = "DIZ-CHA"
+* status = #final
+* category[observation-category] = $observation-category#laboratory
+* category[mibi-category] = $v2-0074#MB "Microbiology"
+* subject = Reference(mii-exa-test-data-mikrobio-patient-1)
+* subject.identifier.system = "https://www.charite.de/fhir/sid/patientenidentifikation"
+* subject.identifier.value = "MIKROBIO-TEST-001"
+* encounter = Reference(mii-exa-test-data-mikrobio-encounter-1)
+* encounter.identifier.system = "https://www.charite.de/fhir/sid/encounter-identifier"
+* encounter.identifier.value = "MIKROBIO-ENC-001"
+* effectiveDateTime = "2026-04-05T10:00:00+02:00"
+* effectiveDateTime.extension[+].url = "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum"
+* effectiveDateTime.extension[=].valueCoding = $sct#399445004 "Specimen collection date (observable entity)"
+* issued = "2026-04-05T11:00:00+02:00"
+* specimen = Reference(mii-exa-test-data-mikrobio-specimen-1)
+* specimen.identifier.system = "https://www.charite.de/fhir/sid/Probennummer"
+* specimen.identifier.value = "BLOOD-CULT-001"
+* basedOn = Reference(mii-exa-test-data-mikrobio-servicerequest-1)
+* code.coding = $loinc#95521-1 "SARS-CoV-2 (COVID-19) N gene [#/volume] (viral load) in Respiratory system specimen by NAA with probe detection"
+* code.coding.version = "2.80"
+* valueCodeableConcept.coding = $sct#260415000 "Not detected (qualifier value)"
+* valueCodeableConcept.coding.version = "http://snomed.info/sct/900000000000207008/version/20250401"
+* method.coding = $sct#70601000052104 "Real-time polymerase chain reaction technique (qualifier value)"
+
+Instance: mii-exa-test-data-mikrobio-titer-quant-1
+InstanceOf: https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-titer
+Usage: #example
+Description: "Mikrobio: titer — inverser Titer als valueQuantity-Variante"
+* insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/mikrobiologie-lab-system"
+* identifier[analyseBefundCode].type.coding[observationInstanceV2] = $v2-0203#OBI
+* identifier[analyseBefundCode].system = "https://www.charite.de/fhir/sid/test-lab-results"
+* identifier[analyseBefundCode].value = "titer-quant-1"
+* identifier[analyseBefundCode].assigner.identifier.system = "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"
+* identifier[analyseBefundCode].assigner.identifier.value = "DIZ-CHA"
+* status = #final
+* category[observation-category] = $observation-category#laboratory
+* category[mibi-category] = $v2-0074#MB "Microbiology"
+* subject = Reference(mii-exa-test-data-mikrobio-patient-1)
+* subject.identifier.system = "https://www.charite.de/fhir/sid/patientenidentifikation"
+* subject.identifier.value = "MIKROBIO-TEST-001"
+* encounter = Reference(mii-exa-test-data-mikrobio-encounter-1)
+* encounter.identifier.system = "https://www.charite.de/fhir/sid/encounter-identifier"
+* encounter.identifier.value = "MIKROBIO-ENC-001"
+* effectiveDateTime = "2026-04-05T10:00:00+02:00"
+* effectiveDateTime.extension[+].url = "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum"
+* effectiveDateTime.extension[=].valueCoding = $sct#399445004 "Specimen collection date (observable entity)"
+* issued = "2026-04-05T11:00:00+02:00"
+* specimen = Reference(mii-exa-test-data-mikrobio-specimen-1)
+* specimen.identifier.system = "https://www.charite.de/fhir/sid/Probennummer"
+* specimen.identifier.value = "BLOOD-CULT-001"
+* basedOn = Reference(mii-exa-test-data-mikrobio-servicerequest-1)
+* code.coding = $loinc#22080-6 "Adenovirus Ab [Titer] in Serum"
+* code.coding.version = "2.80"
+* valueQuantity.value = 128
+* valueQuantity.value.extension[+].url = "http://hl7.org/fhir/StructureDefinition/quantity-precision"
+* valueQuantity.value.extension[=].valueInteger = 0
+* valueQuantity.comparator = #>=
+* valueQuantity.unit = "{titer}"
+* valueQuantity.system = $ucum
+* valueQuantity.code = #{titer}
+* method.coding = $sct#708104000 "Agglutination technique (qualifier value)"
+Instance: mii-exa-test-data-mikrobio-mikroskopie-quant-1
+InstanceOf: https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-mikroskopie
+Usage: #example
+Description: "Mikrobio: mikroskopie — quantitatives Ergebnis (Leukozyten/Gesichtsfeld, valueQuantity-Variante)"
+* insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/mikrobiologie-lab-system"
+* identifier[analyseBefundCode].type.coding[observationInstanceV2] = $v2-0203#OBI
+* identifier[analyseBefundCode].system = "https://www.charite.de/fhir/sid/test-lab-results"
+* identifier[analyseBefundCode].value = "mikroskopie-quant-1"
+* identifier[analyseBefundCode].assigner.identifier.system = "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"
+* identifier[analyseBefundCode].assigner.identifier.value = "DIZ-CHA"
+* status = #final
+* category[observation-category] = $observation-category#laboratory
+* category[mibi-category] = $v2-0074#MB "Microbiology"
+* subject = Reference(mii-exa-test-data-mikrobio-patient-1)
+* subject.identifier.system = "https://www.charite.de/fhir/sid/patientenidentifikation"
+* subject.identifier.value = "MIKROBIO-TEST-001"
+* encounter = Reference(mii-exa-test-data-mikrobio-encounter-1)
+* encounter.identifier.system = "https://www.charite.de/fhir/sid/encounter-identifier"
+* encounter.identifier.value = "MIKROBIO-ENC-001"
+* effectiveDateTime = "2026-04-05T10:00:00+02:00"
+* effectiveDateTime.extension[+].url = "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum"
+* effectiveDateTime.extension[=].valueCoding = $sct#399445004 "Specimen collection date (observable entity)"
+* issued = "2026-04-05T11:00:00+02:00"
+* specimen = Reference(mii-exa-test-data-mikrobio-specimen-1)
+* specimen.identifier.system = "https://www.charite.de/fhir/sid/Probennummer"
+* specimen.identifier.value = "BLOOD-CULT-001"
+* basedOn = Reference(mii-exa-test-data-mikrobio-servicerequest-1)
+* code.coding = $loinc#105059-0 "Microscopic observation [Identifier] in Specimen by Light microscopy"
+* code.coding.version = "2.80"
+* valueQuantity.value = 25
+* valueQuantity.comparator = #>
+* valueQuantity.unit = "/[HPF]"
+* valueQuantity.system = $ucum
+* valueQuantity.code = #/[HPF]
+* referenceRange.low.value = 0
+* referenceRange.low.unit = "/[HPF]"
+* referenceRange.low.system = $ucum
+* referenceRange.low.code = #/[HPF]
+* referenceRange.high.value = 5
+* referenceRange.high.unit = "/[HPF]"
+* referenceRange.high.system = $ucum
+* referenceRange.high.code = #/[HPF]
+* method.coding = $sct#702661004 "Light microscopy technique (qualifier value)"
+
+Instance: mii-exa-test-data-mikrobio-bartlett-quant-1
+InstanceOf: https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-bartlett-score
+Usage: #example
+Description: "Mikrobio: bartlett-score — numerischer Score (valueQuantity-Variante)"
+* insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/mikrobiologie-lab-system"
+* identifier[analyseBefundCode].type.coding[observationInstanceV2] = $v2-0203#OBI
+* identifier[analyseBefundCode].system = "https://www.charite.de/fhir/sid/test-lab-results"
+* identifier[analyseBefundCode].value = "bartlett-quant-1"
+* identifier[analyseBefundCode].assigner.identifier.system = "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"
+* identifier[analyseBefundCode].assigner.identifier.value = "DIZ-CHA"
+* status = #final
+* category[observation-category] = $observation-category#laboratory
+* category[mibi-category] = $v2-0074#MB "Microbiology"
+* subject = Reference(mii-exa-test-data-mikrobio-patient-1)
+* subject.identifier.system = "https://www.charite.de/fhir/sid/patientenidentifikation"
+* subject.identifier.value = "MIKROBIO-TEST-001"
+* encounter = Reference(mii-exa-test-data-mikrobio-encounter-1)
+* encounter.identifier.system = "https://www.charite.de/fhir/sid/encounter-identifier"
+* encounter.identifier.value = "MIKROBIO-ENC-001"
+* effectiveDateTime = "2026-04-05T10:00:00+02:00"
+* effectiveDateTime.extension[+].url = "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum"
+* effectiveDateTime.extension[=].valueCoding = $sct#399445004 "Specimen collection date (observable entity)"
+* issued = "2026-04-05T11:00:00+02:00"
+* specimen = Reference(mii-exa-test-data-mikrobio-specimen-1)
+* specimen.identifier.system = "https://www.charite.de/fhir/sid/Probennummer"
+* specimen.identifier.value = "BLOOD-CULT-001"
+* basedOn = Reference(mii-exa-test-data-mikrobio-servicerequest-1)
+* code.coding = $loinc#75371-5 "Bartlett score of Sputum Qualitative by Light microscopy"
+* code.coding.version = "2.80"
+* valueQuantity.value = 1
+* valueQuantity.comparator = #>=
+* valueQuantity.unit = "1"
+* valueQuantity.system = $ucum
+* valueQuantity.code = #1
+* referenceRange.low.value = 1
+* referenceRange.low.unit = "1"
+* referenceRange.low.system = $ucum
+* referenceRange.low.code = #1
+* referenceRange.text = "Score >= 1: Probe fuer Kultur geeignet"
+* method.coding = $sct#702661004 "Light microscopy technique (qualifier value)"
+
+Instance: mii-exa-test-data-mikrobio-aviditaet-cc-1
+InstanceOf: https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-aviditaet
+Usage: #example
+Description: "Mikrobio: aviditaet — kategoriales Ergebnis (valueCodeableConcept-Variante)"
+* insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/mikrobiologie-lab-system"
+* identifier[analyseBefundCode].type.coding[observationInstanceV2] = $v2-0203#OBI
+* identifier[analyseBefundCode].system = "https://www.charite.de/fhir/sid/test-lab-results"
+* identifier[analyseBefundCode].value = "aviditaet-cc-1"
+* identifier[analyseBefundCode].assigner.identifier.system = "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"
+* identifier[analyseBefundCode].assigner.identifier.value = "DIZ-CHA"
+* status = #final
+* category[observation-category] = $observation-category#laboratory
+* category[mibi-category] = $v2-0074#MB "Microbiology"
+* subject = Reference(mii-exa-test-data-mikrobio-patient-1)
+* subject.identifier.system = "https://www.charite.de/fhir/sid/patientenidentifikation"
+* subject.identifier.value = "MIKROBIO-TEST-001"
+* encounter = Reference(mii-exa-test-data-mikrobio-encounter-1)
+* encounter.identifier.system = "https://www.charite.de/fhir/sid/encounter-identifier"
+* encounter.identifier.value = "MIKROBIO-ENC-001"
+* effectiveDateTime = "2026-04-05T10:00:00+02:00"
+* effectiveDateTime.extension[+].url = "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum"
+* effectiveDateTime.extension[=].valueCoding = $sct#399445004 "Specimen collection date (observable entity)"
+* issued = "2026-04-05T11:00:00+02:00"
+* specimen = Reference(mii-exa-test-data-mikrobio-specimen-1)
+* specimen.identifier.system = "https://www.charite.de/fhir/sid/Probennummer"
+* specimen.identifier.value = "BLOOD-CULT-001"
+* basedOn = Reference(mii-exa-test-data-mikrobio-servicerequest-1)
+* code.coding = $loinc#56990-5 "Toxoplasma gondii IgG Ab avidity [Ratio] in Serum by Immunoassay"
+* code.coding.version = "2.80"
+* valueCodeableConcept.coding = $v3-ObservationInterpretation#H "High"
+* valueCodeableConcept.coding.version = "3.0.0"
+* method.coding = $sct#726449005 "Immunoassay technique (qualifier value)"
+
+Instance: mii-exa-test-data-mikrobio-ct-wert-cc-1
+InstanceOf: https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-ct-wert
+Usage: #example
+Description: "Mikrobio: ct-wert — Zielsequenz nicht nachweisbar (valueCodeableConcept-Variante)"
+* insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/mikrobiologie-lab-system"
+* identifier[analyseBefundCode].type.coding[observationInstanceV2] = $v2-0203#OBI
+* identifier[analyseBefundCode].system = "https://www.charite.de/fhir/sid/test-lab-results"
+* identifier[analyseBefundCode].value = "ct-wert-cc-1"
+* identifier[analyseBefundCode].assigner.identifier.system = "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"
+* identifier[analyseBefundCode].assigner.identifier.value = "DIZ-CHA"
+* status = #final
+* category[observation-category] = $observation-category#laboratory
+* category[mibi-category] = $v2-0074#MB "Microbiology"
+* subject = Reference(mii-exa-test-data-mikrobio-patient-1)
+* subject.identifier.system = "https://www.charite.de/fhir/sid/patientenidentifikation"
+* subject.identifier.value = "MIKROBIO-TEST-001"
+* encounter = Reference(mii-exa-test-data-mikrobio-encounter-1)
+* encounter.identifier.system = "https://www.charite.de/fhir/sid/encounter-identifier"
+* encounter.identifier.value = "MIKROBIO-ENC-001"
+* effectiveDateTime = "2026-04-05T10:00:00+02:00"
+* effectiveDateTime.extension[+].url = "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum"
+* effectiveDateTime.extension[=].valueCoding = $sct#399445004 "Specimen collection date (observable entity)"
+* issued = "2026-04-05T11:00:00+02:00"
+* specimen = Reference(mii-exa-test-data-mikrobio-specimen-1)
+* specimen.identifier.system = "https://www.charite.de/fhir/sid/Probennummer"
+* specimen.identifier.value = "BLOOD-CULT-001"
+* basedOn = Reference(mii-exa-test-data-mikrobio-servicerequest-1)
+* code.coding = $loinc#74039-9 "Influenza virus A H3 RNA [Cycle Threshold #] in Specimen by NAA with probe detection"
+* code.coding.version = "2.80"
+* valueCodeableConcept.coding = $sct#260415000 "Not detected (qualifier value)"
+* valueCodeableConcept.coding.version = "http://snomed.info/sct/900000000000207008/version/20250401"
+* method.coding = $sct#70601000052104 "Real-time polymerase chain reaction technique (qualifier value)"
+
+Instance: mii-exa-test-data-mikrobio-nugent-cc-1
+InstanceOf: https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-nugent-score
+Usage: #example
+Description: "Mikrobio: nugent-score — kategoriales Ergebnis (valueCodeableConcept-Variante)"
+* insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/mikrobiologie-lab-system"
+* identifier[analyseBefundCode].type.coding[observationInstanceV2] = $v2-0203#OBI
+* identifier[analyseBefundCode].system = "https://www.charite.de/fhir/sid/test-lab-results"
+* identifier[analyseBefundCode].value = "nugent-cc-1"
+* identifier[analyseBefundCode].assigner.identifier.system = "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"
+* identifier[analyseBefundCode].assigner.identifier.value = "DIZ-CHA"
+* status = #final
+* category[observation-category] = $observation-category#laboratory
+* category[mibi-category] = $v2-0074#MB "Microbiology"
+* subject = Reference(mii-exa-test-data-mikrobio-patient-1)
+* subject.identifier.system = "https://www.charite.de/fhir/sid/patientenidentifikation"
+* subject.identifier.value = "MIKROBIO-TEST-001"
+* encounter = Reference(mii-exa-test-data-mikrobio-encounter-1)
+* encounter.identifier.system = "https://www.charite.de/fhir/sid/encounter-identifier"
+* encounter.identifier.value = "MIKROBIO-ENC-001"
+* effectiveDateTime = "2026-04-05T10:00:00+02:00"
+* effectiveDateTime.extension[+].url = "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum"
+* effectiveDateTime.extension[=].valueCoding = $sct#399445004 "Specimen collection date (observable entity)"
+* issued = "2026-04-05T11:00:00+02:00"
+* specimen = Reference(mii-exa-test-data-mikrobio-specimen-1)
+* specimen.identifier.system = "https://www.charite.de/fhir/sid/Probennummer"
+* specimen.identifier.value = "BLOOD-CULT-001"
+* basedOn = Reference(mii-exa-test-data-mikrobio-servicerequest-1)
+* code.coding = $loinc#101433-1 "Bacterial vaginosis score in Vaginal fluid Qualitative by Nugent"
+* code.coding.version = "2.80"
+* valueCodeableConcept.coding = $sct#10828004 "Positive (qualifier value)"
+* valueCodeableConcept.coding.version = "http://snomed.info/sct/900000000000207008/version/20250401"
+* method.coding = $sct#702661004 "Light microscopy technique (qualifier value)"
+
+Instance: mii-exa-test-data-mikrobio-titer-cc-1
+InstanceOf: https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-titer
+Usage: #example
+Description: "Mikrobio: titer — kein Titer nachweisbar (valueCodeableConcept-Variante)"
+* insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/mikrobiologie-lab-system"
+* identifier[analyseBefundCode].type.coding[observationInstanceV2] = $v2-0203#OBI
+* identifier[analyseBefundCode].system = "https://www.charite.de/fhir/sid/test-lab-results"
+* identifier[analyseBefundCode].value = "titer-cc-1"
+* identifier[analyseBefundCode].assigner.identifier.system = "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"
+* identifier[analyseBefundCode].assigner.identifier.value = "DIZ-CHA"
+* status = #final
+* category[observation-category] = $observation-category#laboratory
+* category[mibi-category] = $v2-0074#MB "Microbiology"
+* subject = Reference(mii-exa-test-data-mikrobio-patient-1)
+* subject.identifier.system = "https://www.charite.de/fhir/sid/patientenidentifikation"
+* subject.identifier.value = "MIKROBIO-TEST-001"
+* encounter = Reference(mii-exa-test-data-mikrobio-encounter-1)
+* encounter.identifier.system = "https://www.charite.de/fhir/sid/encounter-identifier"
+* encounter.identifier.value = "MIKROBIO-ENC-001"
+* effectiveDateTime = "2026-04-05T10:00:00+02:00"
+* effectiveDateTime.extension[+].url = "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum"
+* effectiveDateTime.extension[=].valueCoding = $sct#399445004 "Specimen collection date (observable entity)"
+* issued = "2026-04-05T11:00:00+02:00"
+* specimen = Reference(mii-exa-test-data-mikrobio-specimen-1)
+* specimen.identifier.system = "https://www.charite.de/fhir/sid/Probennummer"
+* specimen.identifier.value = "BLOOD-CULT-001"
+* basedOn = Reference(mii-exa-test-data-mikrobio-servicerequest-1)
+* code.coding = $loinc#22080-6 "Adenovirus Ab [Titer] in Serum"
+* code.coding.version = "2.80"
+* valueCodeableConcept.coding = $sct#260385009 "Negative (qualifier value)"
+* valueCodeableConcept.coding.version = "http://snomed.info/sct/900000000000207008/version/20250401"
+* method.coding = $sct#708104000 "Agglutination technique (qualifier value)"

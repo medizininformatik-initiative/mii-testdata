@@ -28,9 +28,10 @@ Description: "ICU Pupillenbefund: Grouper mit 9 Einzelbefunden (Anisokorie)"
 * hasMember[Pupillenform][+] = Reference(mii-exa-test-data-patient-1-icu-pupille-form-re-1)
 * hasMember[Pupillenform][+] = Reference(mii-exa-test-data-patient-1-icu-pupille-form-li-1)
 * hasMember[Pupillensymmetrie] = Reference(mii-exa-test-data-patient-1-icu-pupille-symmetrie-1)
+* identifier.system = "https://www.charite.de/fhir/sid/icu-observation-id"
+* identifier.value = "icu-pupille-befund-1"
 
 // --- Pupillenform (rechts / links) ---
-
 Instance: mii-exa-test-data-patient-1-icu-pupille-form-re-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-untersuchung-pupillenform
 Usage: #example
@@ -45,6 +46,8 @@ Description: "ICU Pupillenbefund: Pupillenform rechts rund"
 * effectiveDateTime = "2024-05-06T07:30:00+02:00"
 * valueCodeableConcept.coding[Loinc] = $loinc#LA24884-1 "Round"
 * bodySite = $sct#52378001 "Structure of pupil of right eye"
+* identifier.system = "https://www.charite.de/fhir/sid/icu-observation-id"
+* identifier.value = "icu-pupille-form-re-1"
 
 Instance: mii-exa-test-data-patient-1-icu-pupille-form-li-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-untersuchung-pupillenform
@@ -60,9 +63,10 @@ Description: "ICU Pupillenbefund: Pupillenform links rund"
 * effectiveDateTime = "2024-05-06T07:30:00+02:00"
 * valueCodeableConcept.coding[Loinc] = $loinc#LA24884-1 "Round"
 * bodySite = $sct#16089004 "Structure of pupil of left eye"
+* identifier.system = "https://www.charite.de/fhir/sid/icu-observation-id"
+* identifier.value = "icu-pupille-form-li-1"
 
 // --- Pupillengroesse (rechts / links) ---
-
 Instance: mii-exa-test-data-patient-1-icu-pupille-groesse-re-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-untersuchung-pupillengroesse
 Usage: #example
@@ -77,6 +81,8 @@ Description: "ICU Pupillenbefund: Pupillengroesse rechts 3 mm"
 * effectiveDateTime = "2024-05-06T07:30:00+02:00"
 * valueQuantity = 3 'mm' "mm"
 * bodySite = $sct#52378001 "Structure of pupil of right eye"
+* identifier.system = "https://www.charite.de/fhir/sid/icu-observation-id"
+* identifier.value = "icu-pupille-groesse-re-1"
 
 Instance: mii-exa-test-data-patient-1-icu-pupille-groesse-li-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-untersuchung-pupillengroesse
@@ -92,9 +98,10 @@ Description: "ICU Pupillenbefund: Pupillengroesse links 5 mm (Anisokorie)"
 * effectiveDateTime = "2024-05-06T07:30:00+02:00"
 * valueQuantity = 5 'mm' "mm"
 * bodySite = $sct#16089004 "Structure of pupil of left eye"
+* identifier.system = "https://www.charite.de/fhir/sid/icu-observation-id"
+* identifier.value = "icu-pupille-groesse-li-1"
 
 // --- Pupillenlichtreaktion direkt (rechts / links) ---
-
 Instance: mii-exa-test-data-patient-1-icu-pupille-licht-dir-re-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-untersuchung-pupillenlichtreaktion-direkt
 Usage: #example
@@ -109,6 +116,8 @@ Description: "ICU Pupillenbefund: direkte Lichtreaktion rechts prompt"
 * effectiveDateTime = "2024-05-06T07:30:00+02:00"
 * valueCodeableConcept.coding[Loinc] = $loinc#LA25441-9 "Reactive to light"
 * bodySite = $sct#52378001 "Structure of pupil of right eye"
+* identifier.system = "https://www.charite.de/fhir/sid/icu-observation-id"
+* identifier.value = "icu-pupille-licht-dir-re-1"
 
 Instance: mii-exa-test-data-patient-1-icu-pupille-licht-dir-li-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-untersuchung-pupillenlichtreaktion-direkt
@@ -124,9 +133,10 @@ Description: "ICU Pupillenbefund: direkte Lichtreaktion links traege"
 * effectiveDateTime = "2024-05-06T07:30:00+02:00"
 * valueCodeableConcept.coding[Loinc] = $loinc#LA24899-9 "Sluggishly reactive to light"
 * bodySite = $sct#16089004 "Structure of pupil of left eye"
+* identifier.system = "https://www.charite.de/fhir/sid/icu-observation-id"
+* identifier.value = "icu-pupille-licht-dir-li-1"
 
 // --- Pupillenlichtreaktion indirekt (rechts / links) ---
-
 Instance: mii-exa-test-data-patient-1-icu-pupille-licht-ind-re-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-untersuchung-pupillenlichtreaktion-indirekt
 Usage: #example
@@ -141,6 +151,8 @@ Description: "ICU Pupillenbefund: indirekte (konsensuelle) Lichtreaktion rechts 
 * effectiveDateTime = "2024-05-06T07:30:00+02:00"
 * valueCodeableConcept.coding[Loinc] = $loinc#LA25441-9 "Reactive to light"
 * bodySite = $sct#52378001 "Structure of pupil of right eye"
+* identifier.system = "https://www.charite.de/fhir/sid/icu-observation-id"
+* identifier.value = "icu-pupille-licht-ind-re-1"
 
 Instance: mii-exa-test-data-patient-1-icu-pupille-licht-ind-li-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-untersuchung-pupillenlichtreaktion-indirekt
@@ -156,9 +168,10 @@ Description: "ICU Pupillenbefund: indirekte (konsensuelle) Lichtreaktion links t
 * effectiveDateTime = "2024-05-06T07:30:00+02:00"
 * valueCodeableConcept.coding[Loinc] = $loinc#LA24899-9 "Sluggishly reactive to light"
 * bodySite = $sct#16089004 "Structure of pupil of left eye"
+* identifier.system = "https://www.charite.de/fhir/sid/icu-observation-id"
+* identifier.value = "icu-pupille-licht-ind-li-1"
 
 // --- Pupillensymmetrie ---
-
 Instance: mii-exa-test-data-patient-1-icu-pupille-symmetrie-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-untersuchung-pupillensymmetrie
 Usage: #example
@@ -178,3 +191,5 @@ Description: "ICU Pupillenbefund: Pupillensymmetrie - Anisokorie"
 // Details: docs/research-icu-scores.md
 * dataAbsentReason = $data-absent-reason#unsupported "Unsupported"
 * bodySite.coding = $sct#67019001 "Structure of pupil of both eyes (body structure)"
+* identifier.system = "https://www.charite.de/fhir/sid/icu-observation-id"
+* identifier.value = "icu-pupille-symmetrie-1"

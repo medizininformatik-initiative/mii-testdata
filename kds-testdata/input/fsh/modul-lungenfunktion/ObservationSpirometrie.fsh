@@ -24,6 +24,7 @@ Description: "Lungenfunktion BF: Atemfrequenz 14/min"
 * method = $sct20260701#249862003 "Sitting upright (finding)"
 * referenceRange.low = 12 '/min' "/min"
 * referenceRange.high = 18 '/min' "/min"
+* derivedFrom[+] = Reference(mii-exa-test-data-lungenfunktion-docref-rohdaten-1)
 
 // FEV1 (forciertes exspiratorisches Volumen in 1 Sekunde)
 Instance: mii-exa-test-data-lungenfunktion-fev-1
@@ -46,6 +47,10 @@ Description: "Lungenfunktion FEV1: 2.10 L (74 % vom Soll)"
 * component[percentPredicted].valueQuantity = 74 '%' "%"
 * component[z-score].code.coding[sct] = $sct20260701#1078210003 "Z-score calculation technique (qualifier value)"
 * component[z-score].valueQuantity.value = -1.9
+* derivedFrom[+] = Reference(mii-exa-test-data-lungenfunktion-docref-rohdaten-1)
+* hasMember[+] = Reference(mii-exa-test-data-lungenfunktion-fev-prov-1)
+* hasMember[+] = Reference(mii-exa-test-data-lungenfunktion-fev-prov-2)
+* referenceRange.high = 3.39 'L' "L"
 
 // FVC (forcierte Vitalkapazitaet)
 Instance: mii-exa-test-data-lungenfunktion-fvc-1
@@ -65,6 +70,9 @@ Description: "Lungenfunktion FVC: 3.10 L (86 % vom Soll)"
 * component[percentPredicted].code.coding[sct] = $sct20260701#445210000 "Percentage of predicted forced vital capacity (observable entity)"
 * component[percentPredicted].code.coding[loinc] = $loinc#19872-1 "FVC measured/predicted"
 * component[percentPredicted].valueQuantity = 86 '%' "%"
+* derivedFrom[+] = Reference(mii-exa-test-data-lungenfunktion-docref-rohdaten-1)
+* referenceRange.low = 2.90 'L' "L"
+* referenceRange.high = 4.30 'L' "L"
 
 // FEV1/FVC (Tiffeneau-Index)
 Instance: mii-exa-test-data-lungenfunktion-fev-fvc-1
@@ -83,6 +91,10 @@ Description: "Lungenfunktion FEV1/FVC: 67.7 % (leichte Obstruktion)"
 * component[predicted].code.coding[sct] = $sct20260701#310360002 "Expected forced expiratory volume in one second/Forced vital capacity ratio (observable entity)"
 * component[predicted].code.coding[loinc] = $loinc#19925-7 "FEV1/FVC Predicted"
 * component[predicted].valueQuantity = 78 '%' "%"
+* hasMember[+] = Reference(mii-exa-test-data-lungenfunktion-fev-1)
+* hasMember[+] = Reference(mii-exa-test-data-lungenfunktion-fvc-1)
+* referenceRange.low = 70 '%' "%"
+* referenceRange.high = 85 '%' "%"
 
 // IC (inspiratorische Kapazitaet)
 Instance: mii-exa-test-data-lungenfunktion-ic-1
@@ -100,6 +112,9 @@ Description: "Lungenfunktion IC: 2.40 L"
 * component[predicted].valueQuantity = 2.60 'L' "L"
 * component[percentPredicted].code.coding[loinc] = $loinc#19855-6 "Inspiratory capacity measured/predicted by Spirometry"
 * component[percentPredicted].valueQuantity = 92 '%' "%"
+* derivedFrom[+] = Reference(mii-exa-test-data-lungenfunktion-docref-rohdaten-1)
+* referenceRange.low = 2.10 'L' "L"
+* referenceRange.high = 3.10 'L' "L"
 
 // ERV (exspiratorisches Reservevolumen, Profil IRV/ERV)
 Instance: mii-exa-test-data-lungenfunktion-irv-erv-1
@@ -115,6 +130,9 @@ Description: "Lungenfunktion ERV: 0.90 L"
 * method = $sct20260701#249862003 "Sitting upright (finding)"
 * component[predicted].code.coding[loinc] = $loinc#19923-2 "Expiratory reserve Predicted"
 * component[predicted].valueQuantity = 1.10 'L' "L"
+* derivedFrom[+] = Reference(mii-exa-test-data-lungenfunktion-docref-rohdaten-1)
+* referenceRange.low = 0.70 'L' "L"
+* referenceRange.high = 1.50 'L' "L"
 
 // MEF50 (maximaler exspiratorischer Fluss bei 50 % der VC)
 Instance: mii-exa-test-data-lungenfunktion-mef-1
@@ -128,6 +146,9 @@ Description: "Lungenfunktion MEF50: 1.90 L/s (deutlich reduziert)"
 * valueQuantity = 1.90 'L/s' "L/s"
 * interpretation = $v3-ObservationInterpretation#L "Low"
 * method = $sct20260701#249862003 "Sitting upright (finding)"
+* derivedFrom[+] = Reference(mii-exa-test-data-lungenfunktion-docref-rohdaten-1)
+* referenceRange.low = 2.70 'L/s' "L/s"
+* referenceRange.high = 5.20 'L/s' "L/s"
 
 // PEF (Peak Exspiratory Flow)
 Instance: mii-exa-test-data-lungenfunktion-pef-1
@@ -146,6 +167,10 @@ Description: "Lungenfunktion PEF: 5.20 L/s (75 % vom Soll)"
 * component[predicted].valueQuantity = 6.90 'L/s' "L/s"
 * component[percentPredicted].code.coding[loinc] = $loinc#69977-7 "Maximum expiratory gas flow/Predicted maximum expiratory gas flow Respiratory system airway --pre bronchodilation"
 * component[percentPredicted].valueQuantity = 75 '%' "%"
+* derivedFrom[+] = Reference(mii-exa-test-data-lungenfunktion-docref-rohdaten-1)
+* hasMember = Reference(mii-exa-test-data-lungenfunktion-pef-prov-1)
+* referenceRange.low = 5.50 'L/s' "L/s"
+* referenceRange.high = 8.30 'L/s' "L/s"
 
 // VC (Vitalkapazitaet, langsam)
 Instance: mii-exa-test-data-lungenfunktion-vc-1
@@ -165,3 +190,6 @@ Description: "Lungenfunktion VC: 3.30 L (89 % vom Soll)"
 * component[percentPredicted].code.coding[sct] = $sct20260701#445389005 "Percentage of predicted vital capacity (observable entity)"
 * component[percentPredicted].code.coding[loinc] = $loinc#98088-8 "Vital capacity/predicted VC Respiratory system by Spirometry"
 * component[percentPredicted].valueQuantity = 89 '%' "%"
+* derivedFrom[+] = Reference(mii-exa-test-data-lungenfunktion-docref-rohdaten-1)
+* referenceRange.low = 2.96 'L' "L"
+* referenceRange.high = 4.44 'L' "L"

@@ -39,6 +39,12 @@ Description: "Mikrobio: Allgemeine Kultur (Blutkultur) — positiv"
 * method.coding.display = "Aerobic culture technique (qualifier value)"
 * interpretation = $v3-ObservationInterpretation#POS "Positive"
 * note[+].text = "Wuchs nach 18h aerob; weitere Differenzierung folgt."
+* basedOn = Reference(mii-exa-test-data-mikrobio-servicerequest-1)
+* code.coding.version = "2.80"
+* valueCodeableConcept.coding.version = "http://snomed.info/sct/900000000000207008/version/20250401"
+* device = Reference(mii-exa-test-data-mikrobio-device-bactec-1)
+* device.identifier.system = "https://www.charite.de/fhir/sid/device-identifier"
+* device.identifier.value = "BACTEC-001"
 
 // ----------------------------------------------------------------------------
 // 2. Spezifische Bestimmung — S. aureus Identifikation
@@ -83,6 +89,9 @@ Description: "Mikrobio: Spezifische Bestimmung — S. aureus identifiziert"
 * method.coding = $sct#703752003 "Organism specific culture technique (qualifier value)"
 * method.coding.display = "Organism specific culture technique (qualifier value)"
 * note[+].text = "Identifikation via spezifische Kultur."
+* basedOn = Reference(mii-exa-test-data-mikrobio-servicerequest-1)
+* code.coding.version = "2.80"
+* valueCodeableConcept.coding.version = "http://snomed.info/sct/900000000000207008/version/20250401"
 
 // ----------------------------------------------------------------------------
 // 3. Allgemeine Bestimmung — Erreger-Nachweis (qualitativ)
@@ -121,6 +130,12 @@ Description: "Mikrobio: Allgemeine Bestimmung — Bakterien-Nachweis"
 * method.coding.display = "Microscopy technique (qualifier value)"
 * interpretation = $v3-ObservationInterpretation#A "Abnormal"
 * note[+].text = "Bakteriennachweis in Gram-Faerbung; weitere Typisierung folgt."
+* basedOn = Reference(mii-exa-test-data-mikrobio-servicerequest-1)
+* code.coding.version = "2.80"
+* valueCodeableConcept.coding.version = "http://snomed.info/sct/900000000000207008/version/20250401"
+* device = Reference(mii-exa-test-data-mikrobio-device-maldi-1)
+* device.identifier.system = "https://www.charite.de/fhir/sid/device-identifier"
+* device.identifier.value = "MALDI-TOF-001"
 
 // ----------------------------------------------------------------------------
 // 4. Mikroskopie — Gram-positive Kokken in Haufen
@@ -160,6 +175,14 @@ Description: "Mikrobio: Mikroskopie — Gram-positive Kokken in Haufen"
 * method.coding.display = "Light microscopy technique (qualifier value)"
 * interpretation = $v3-ObservationInterpretation#A "Abnormal"
 * note[+].text = "Mikroskopisch typisches Bild fuer S. aureus."
+* basedOn = Reference(mii-exa-test-data-mikrobio-servicerequest-1)
+* code.coding.version = "2.80"
+* valueCodeableConcept.coding.version = "http://snomed.info/sct/900000000000207008/version/20250401"
+* device = Reference(mii-exa-test-data-mikrobio-device-mikroskop-1)
+* device.identifier.system = "https://www.charite.de/fhir/sid/device-identifier"
+* device.identifier.value = "MIKROSKOP-001"
+* component[menge].code = $sct#103392008 "Semi-quantitative value (qualifier value)"
+* component[menge].valueCodeableConcept = $sct#441517005 "Present two plus out of three plus (qualifier value)"
 
 // ----------------------------------------------------------------------------
 // 5. Keimzahl — Quantitative Urinkultur (E. coli, signifikant)
@@ -214,6 +237,11 @@ Description: "Mikrobio: Keimzahl Urinkultur (E. coli, signifikant)"
 * referenceRange.high.system = $ucum
 * referenceRange.high.code = #/mL
 * note[+].text = "Signifikante Bakteriurie."
+* basedOn = Reference(mii-exa-test-data-mikrobio-servicerequest-1)
+* code.coding.version = "2.80"
+* device = Reference(mii-exa-test-data-mikrobio-device-bactec-1)
+* device.identifier.system = "https://www.charite.de/fhir/sid/device-identifier"
+* device.identifier.value = "BACTEC-001"
 
 // ----------------------------------------------------------------------------
 // 6. Empfindlichkeit — Antibiogramm Vancomycin (MHK, S)
@@ -273,6 +301,11 @@ Description: "Mikrobio: Empfindlichkeit Vancomycin (MHK 1 mg/L, S)"
 * referenceRange.high.system = $ucum
 * referenceRange.high.code = #mg/L
 * note[+].text = "Vancomycin als empirische Therapie geeignet; gemaess EUCAST-Kriterien empfindlich."
+* basedOn = Reference(mii-exa-test-data-mikrobio-servicerequest-1)
+* code.coding.version = "2.80"
+* device = Reference(mii-exa-test-data-mikrobio-device-vitek-1)
+* device.identifier.system = "https://www.charite.de/fhir/sid/device-identifier"
+* device.identifier.value = "VITEK-001"
 
 // ----------------------------------------------------------------------------
 // 7. Voraussichtliche Empfindlichkeit — Genotype-basiert
@@ -318,6 +351,9 @@ Description: "Mikrobio: Voraussichtliche Empfindlichkeit Methicillin (R via mecA
 * method.coding = $sct#708060009 "Genotype determination technique (qualifier value)"
 * method.coding.display = "Genotype determination technique (qualifier value)"
 * note[+].text = "Prognose der Methicillin-Resistenz aufgrund mecA-Nachweis."
+* basedOn = Reference(mii-exa-test-data-mikrobio-servicerequest-1)
+* code.coding.version = "2.80"
+* valueCodeableConcept.coding.version = "3.0.0"
 
 // ----------------------------------------------------------------------------
 // 8. Resistenzkategorie-Status — MRSA-Status (positiv)
@@ -362,6 +398,11 @@ Description: "Mikrobio: Resistenzkategorie-Status — MRSA-Status positiv"
 * method.coding = $sct#708068002 "Molecular genetics technique (qualifier value)"
 * method.coding.display = "Molecular genetics technique (qualifier value)"
 * note[+].text = "MRSA-Befund (Methicillin-resistenter Staphylococcus aureus nachgewiesen) — Isolation noetig."
+* basedOn = Reference(mii-exa-test-data-mikrobio-servicerequest-1)
+* code.coding.version = "2027.0.0-ballot2"
+* valueCodeableConcept.coding.version = "http://snomed.info/sct/900000000000207008/version/20250401"
+* derivedFrom = Reference(mii-exa-test-data-mikrobio-resistenzmechanismen-1)
+* interpretation = $v3-ObservationInterpretation#POS "Positive"
 
 // ----------------------------------------------------------------------------
 // 9. MRGN-Klasse — E. coli (2MRGN)
@@ -396,6 +437,16 @@ Description: "Mikrobio: MRGN-Klasse 3MRGN (E. coli)"
 * code.coding = $loinc#99780-9 "Multidrug resistant gram-negative organism classification [Type]"
 * valueCodeableConcept.coding = $loinc#LA33215-7 "3MRGN"
 * note[+].text = "3MRGN gemaess KRINKO 2012; Cephalosporin, Acylureidopenicilline, Fluorchinolone -Resistenz nachgewiesen."
+* basedOn = Reference(mii-exa-test-data-mikrobio-servicerequest-1)
+* code.coding.version = "2.80"
+* valueCodeableConcept.coding.version = "2.80"
+* device = Reference(mii-exa-test-data-mikrobio-device-vitek-1)
+* device.identifier.system = "https://www.charite.de/fhir/sid/device-identifier"
+* device.identifier.value = "VITEK-001"
+* derivedFrom = Reference(mii-exa-test-data-mikrobio-empfindlichkeit-1)
+* interpretation = $v3-ObservationInterpretation#R "Resistant"
+* method.coding = $sct#14788002 "Antimicrobial susceptibility test (procedure)"
+* method.coding.display = "Antimicrobial susceptibility test (procedure)"
 
 // ----------------------------------------------------------------------------
 // 10. Resistenzmechanismen / Determinanten — mecA-Gen
@@ -443,6 +494,9 @@ Description: "Mikrobio: Resistenzmechanismus mecA nachgewiesen"
 * method.coding.display = "Molecular genetics technique (qualifier value)"
 * interpretation = $v3-ObservationInterpretation#POS "Positive"
 * note[+].text = "mecA-Gen via PCR nachgewiesen."
+* basedOn = Reference(mii-exa-test-data-mikrobio-servicerequest-1)
+* code.coding.version = "2.80"
+* valueCodeableConcept.coding.version = "http://snomed.info/sct/900000000000207008/version/20250401"
 
 // ----------------------------------------------------------------------------
 // 11. Virulenzfaktor — PVL nicht nachgewiesen
@@ -485,6 +539,9 @@ Description: "Mikrobio: Virulenzfaktor PVL nicht nachgewiesen"
 * method.coding.display = "Real-time polymerase chain reaction technique (qualifier value)"
 * interpretation = $v3-ObservationInterpretation#NEG "Negative"
 * note[+].text = "Panton-Valentine-Leukocidin (PVL) nicht nachgewiesen — kein Hinweis auf erhoehte Virulenz."
+* basedOn = Reference(mii-exa-test-data-mikrobio-servicerequest-1)
+* code.coding.version = "2.80"
+* valueCodeableConcept.coding.version = "http://snomed.info/sct/900000000000207008/version/20250401"
 
 // ----------------------------------------------------------------------------
 // 12. Antigen-/Antikörper-Bestimmung (quantitativ)
@@ -540,6 +597,10 @@ Description: "Mikrobio: Antikörper-Titer (IgG) quantitativ"
 * referenceRange.high.system = $ucum
 * referenceRange.high.code = #[IU]/mL
 * note[+].text = "Borrelien-Antikörper nachweisbar. Klinische Korrelation empfohlen."
+* basedOn = Reference(mii-exa-test-data-mikrobio-servicerequest-1)
+* code.coding.version = "2.80"
+* valueQuantity.value.extension[+].url = "http://hl7.org/fhir/StructureDefinition/quantity-precision"
+* valueQuantity.value.extension[=].valueInteger = 0
 
 // ----------------------------------------------------------------------------
 // 13. Avidität
@@ -593,6 +654,10 @@ Description: "Mikrobio: Avidität IgG niedrig (frische Infektion)"
 * referenceRange.high.system = $ucum
 * referenceRange.high.code = #%
 * note[+].text = "Niedrige Avidität spricht fuer kuerzlich durchgemachte Infektion."
+* basedOn = Reference(mii-exa-test-data-mikrobio-servicerequest-1)
+* code.coding.version = "2.80"
+* valueQuantity.value.extension[+].url = "http://hl7.org/fhir/StructureDefinition/quantity-precision"
+* valueQuantity.value.extension[=].valueInteger = 0
 
 // ----------------------------------------------------------------------------
 // 14. Titer
@@ -643,6 +708,11 @@ Description: "Mikrobio: Antikörper-Titer (1:128)"
 * referenceRange.high.system = $ucum
 * referenceRange.high.code = #{titer}
 * note[+].text = "Titerstufe 1:128"
+* basedOn = Reference(mii-exa-test-data-mikrobio-servicerequest-1)
+* code.coding.version = "2.80"
+* device = Reference(mii-exa-test-data-mikrobio-device-immunoassay-1)
+* device.identifier.system = "https://www.charite.de/fhir/sid/device-identifier"
+* device.identifier.value = "IMMUNOASSAY-001"
 
 // ----------------------------------------------------------------------------
 // 15. CT-Wert (PCR)
@@ -699,6 +769,8 @@ Description: "Mikrobio: CT-Wert PCR (21.3)"
 * referenceRange.high.system = $ucum
 * referenceRange.high.code = #1
 * note[+].text = "Niedriger CT-Wert (21.3) spricht fuer hohe Erregerlast."
+* basedOn = Reference(mii-exa-test-data-mikrobio-servicerequest-1)
+* code.coding.version = "2.80"
 
 // ----------------------------------------------------------------------------
 // 16. Molekulare Pathogenlast
@@ -744,6 +816,13 @@ Description: "Mikrobio: Molekulare Pathogenlast (350.000 Copies/mL)"
 * method.coding.display = "Real-time PCR technique"
 * interpretation = $v3-ObservationInterpretation#H "High"
 * note[+].text = "Hohe Pathogenlast — klinische Relevanz mit Behandelndem besprechen."
+* basedOn = Reference(mii-exa-test-data-mikrobio-servicerequest-1)
+* code.coding.version = "2.80"
+* valueQuantity.value.extension[+].url = "http://hl7.org/fhir/StructureDefinition/quantity-precision"
+* valueQuantity.value.extension[=].valueInteger = 0
+* referenceRange.low = 0 '1/mL' "Copies/mL"
+* referenceRange.high = 500 '1/mL' "Copies/mL"
+* referenceRange.text = "Nachweisgrenze des Assays"
 
 // ----------------------------------------------------------------------------
 // 17. Bartlett-Score
@@ -782,6 +861,12 @@ Description: "Mikrobio: Bartlett-Score (verwertbar)"
 * method.coding.display = "Light microscopy technique (qualifier value)"
 * interpretation = $v3-ObservationInterpretation#A "Abnormal"
 * note[+].text = "Sputum-Probe verwertbar (Bartlett-Score positiv)."
+* basedOn = Reference(mii-exa-test-data-mikrobio-servicerequest-1)
+* code.coding.version = "2.80"
+* valueCodeableConcept.coding.version = "2.80"
+* device = Reference(mii-exa-test-data-mikrobio-device-mikroskop-1)
+* device.identifier.system = "https://www.charite.de/fhir/sid/device-identifier"
+* device.identifier.value = "MIKROSKOP-001"
 
 // ----------------------------------------------------------------------------
 // 18. Nugent-Score
@@ -832,6 +917,13 @@ Description: "Mikrobio: Nugent-Score (7 — bakterielle Vaginose)"
 * referenceRange.high.system = $ucum
 * referenceRange.high.code = #1
 * note[+].text = "Nugent-Score 7 spricht fuer bakterielle Vaginose."
+* basedOn = Reference(mii-exa-test-data-mikrobio-servicerequest-1)
+* code.coding.version = "2.80"
+* device = Reference(mii-exa-test-data-mikrobio-device-mikroskop-1)
+* device.identifier.system = "https://www.charite.de/fhir/sid/device-identifier"
+* device.identifier.value = "MIKROSKOP-001"
+* valueQuantity.value.extension[+].url = "http://hl7.org/fhir/StructureDefinition/quantity-precision"
+* valueQuantity.value.extension[=].valueInteger = 0
 
 // ----------------------------------------------------------------------------
 // 19. Variante: dataAbsentReason (anstelle value[x]) für allgemeine-kultur
@@ -911,3 +1003,16 @@ Description: "Mikrobio: Spezifische Mikroskopie — saeurefeste Staebchen im Spu
 * component[menge].valueCodeableConcept = $sct#441517005 "Present two plus out of three plus (qualifier value)"
 * interpretation = $v3-ObservationInterpretation#A "Abnormal"
 * note[+].text = "Saeurefeste Staebchen 2+ — V.a. Mykobakterien, Kultur und PCR angefordert."
+* basedOn = Reference(mii-exa-test-data-mikrobio-servicerequest-1)
+* code.coding.version = "2.80"
+* valueCodeableConcept.coding.version = "http://snomed.info/sct/900000000000207008/version/20250401"
+* device = Reference(mii-exa-test-data-mikrobio-device-mikroskop-1)
+* device.identifier.system = "https://www.charite.de/fhir/sid/device-identifier"
+* device.identifier.value = "MIKROSKOP-001"
+* method.coding = $sct#702661004 "Light microscopy technique (qualifier value)"
+* method.coding.display = "Light microscopy technique (qualifier value)"
+* extension[+].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-Observation.triggeredBy"
+* extension[=].extension[+].url = "observation"
+* extension[=].extension[=].valueReference = Reference(mii-exa-test-data-mikrobio-mikroskopie-1)
+* extension[=].extension[+].url = "type"
+* extension[=].extension[=].valueCode = #reflex

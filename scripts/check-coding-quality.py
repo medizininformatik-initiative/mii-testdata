@@ -21,6 +21,9 @@ RES_DIR = sys.argv[1] if len(sys.argv) > 1 else "kds-testdata/fsh-generated/reso
 # (Instanz-id-Präfix, Element-Pfad-Suffix): absichtlich text-only
 ALLOWLIST = [
     ("mii-exa-test-data-patient-2-med", "medicationCodeableConcept"),
+    # ICDSC: das Profil fixiert component.code.text (englische Item-Namen);
+    # fuer die 8 Einzelitems existieren keine LOINC-/SNOMED-Codes.
+    ("mii-exa-test-data-patient-1-icu-score-icdsc", "component.code"),
 ]
 
 CC_FIELDS = {

@@ -18,6 +18,10 @@ Description: "Lungenfunktion FRC: 3.40 L (bodyplethysmographisch)"
 * method = $sct20260701#249862003 "Sitting upright (finding)"
 * component[predicted].code.coding[loinc] = $loinc#19847-3 "Functional residual capacity Predicted"
 * component[predicted].valueQuantity = 3.00 'L' "L"
+* derivedFrom[+] = Reference(mii-exa-test-data-lungenfunktion-docref-rohdaten-1)
+* hasMember = Reference(mii-exa-test-data-lungenfunktion-frc-prov-1)
+* referenceRange.low = 2.40 'L' "L"
+* referenceRange.high = 3.60 'L' "L"
 
 // R_tot (totaler Atemwegswiderstand)
 Instance: mii-exa-test-data-lungenfunktion-r-1
@@ -34,6 +38,9 @@ Description: "Lungenfunktion R_tot: 0.42 kPa/(L/s) (erhoeht)"
 * referenceRange.high = 0.30 'kPa/(L/s)' "kPa/(L/s)"
 * component[percentPredicted].code.coding[loinc] = $loinc#91981-1 "Airway resistance measured/predicted by Plethysmograph body box"
 * component[percentPredicted].valueQuantity = 140 '%' "%"
+* derivedFrom[+] = Reference(mii-exa-test-data-lungenfunktion-docref-rohdaten-1)
+* hasMember = Reference(mii-exa-test-data-lungenfunktion-r-prov-1)
+* referenceRange.low = 0.05 'kPa/(L/s)' "kPa/(L/s)"
 
 // sR_tot (spezifischer Atemwegswiderstand)
 Instance: mii-exa-test-data-lungenfunktion-sr-1
@@ -49,6 +56,10 @@ Description: "Lungenfunktion sR_tot: 1.35 kPa.s (erhoeht)"
 * method = $sct20260701#249862003 "Sitting upright (finding)"
 * component[percentPredicted].code.coding[loinc] = $loinc#91982-9 "Specific airway resistance measured/predicted by Plethysmograph body box"
 * component[percentPredicted].valueQuantity = 125 '%' "%"
+* derivedFrom[+] = Reference(mii-exa-test-data-lungenfunktion-docref-rohdaten-1)
+* hasMember = Reference(mii-exa-test-data-lungenfunktion-sr-prov-1)
+* referenceRange.low = 0.20 'kPa.s' "kPa.s"
+* referenceRange.high = 1.20 'kPa.s' "kPa.s"
 
 // sR_eff (spezifischer effektiver Atemwegswiderstand)
 Instance: mii-exa-test-data-lungenfunktion-sr-eff-1
@@ -64,6 +75,10 @@ Description: "Lungenfunktion sR_eff: 1.10 kPa.s (leicht erhoeht)"
 * method = $sct20260701#249862003 "Sitting upright (finding)"
 * component[percentPredicted].code.coding[loinc] = $loinc#98087-0 "Specific effective resistance.airway/Predicted mean"
 * component[percentPredicted].valueQuantity = 115 '%' "%"
+* derivedFrom[+] = Reference(mii-exa-test-data-lungenfunktion-docref-rohdaten-1)
+* hasMember = Reference(mii-exa-test-data-lungenfunktion-r-1)
+* referenceRange.low = 0.20 'kPa.s' "kPa.s"
+* referenceRange.high = 1.20 'kPa.s' "kPa.s"
 
 // sG_tot (spezifische Atemwegs-Conductance)
 Instance: mii-exa-test-data-lungenfunktion-sg-total-1
@@ -76,6 +91,11 @@ Description: "Lungenfunktion sG_tot: 0.74 /kPa.s (erniedrigt)"
 * valueQuantity = 0.74 '/kPA.s' "/kPA*s"
 * interpretation = $v3-ObservationInterpretation#L "Low"
 * method = $sct20260701#249862003 "Sitting upright (finding)"
+* derivedFrom = Reference(mii-exa-test-data-lungenfunktion-sr-1)
+* hasMember[+] = Reference(mii-exa-test-data-lungenfunktion-r-1)
+* hasMember[+] = Reference(mii-exa-test-data-lungenfunktion-frc-1)
+* referenceRange.low = 0.85 '1/(kPa.s)' "1/(kPa.s)"
+* referenceRange.high = 2.10 '1/(kPa.s)' "1/(kPa.s)"
 
 // TLC (totale Lungenkapazitaet)
 Instance: mii-exa-test-data-lungenfunktion-tlc-1
@@ -93,6 +113,11 @@ Description: "Lungenfunktion TLC: 5.90 L (107 % vom Soll)"
 * component[predicted].valueQuantity = 5.50 'L' "L"
 * component[percentPredicted].code.coding[loinc] = $loinc#89085-5 "Total lung capacity measured/predicted by Plethysmograph body box"
 * component[percentPredicted].valueQuantity = 107 '%' "%"
+* derivedFrom[+] = Reference(mii-exa-test-data-lungenfunktion-docref-rohdaten-1)
+* hasMember[+] = Reference(mii-exa-test-data-lungenfunktion-rv-1)
+* hasMember[+] = Reference(mii-exa-test-data-lungenfunktion-vc-1)
+* referenceRange.low = 5.00 'L' "L"
+* referenceRange.high = 7.40 'L' "L"
 
 // RV (Residualvolumen)
 Instance: mii-exa-test-data-lungenfunktion-rv-1
@@ -110,6 +135,9 @@ Description: "Lungenfunktion RV: 2.60 L (130 % vom Soll, Ueberblaehung)"
 * component[predicted].valueQuantity = 2.00 'L' "L"
 * component[percentPredicted].code.coding[loinc] = $loinc#94125-2 "Residual volume/Predicted by Plethysmograph body box"
 * component[percentPredicted].valueQuantity = 130 '%' "%"
+* derivedFrom[+] = Reference(mii-exa-test-data-lungenfunktion-docref-rohdaten-1)
+* referenceRange.low = 1.40 'L' "L"
+* referenceRange.high = 2.20 'L' "L"
 
 // RV/TLC
 Instance: mii-exa-test-data-lungenfunktion-rv-tlc-1
@@ -125,3 +153,9 @@ Description: "Lungenfunktion RV/TLC: 44 % (erhoeht)"
 * method = $sct20260701#249862003 "Sitting upright (finding)"
 * component[predicted].code.coding[loinc] = $loinc#43252-6 "Residual volume/Total capacity Predicted"
 * component[predicted].valueQuantity = 36 '%' "%"
+* derivedFrom[+] = Reference(mii-exa-test-data-lungenfunktion-rv-1)
+* derivedFrom[+] = Reference(mii-exa-test-data-lungenfunktion-tlc-1)
+* hasMember[+] = Reference(mii-exa-test-data-lungenfunktion-rv-1)
+* hasMember[+] = Reference(mii-exa-test-data-lungenfunktion-tlc-1)
+* referenceRange.low = 25 '%' "%"
+* referenceRange.high = 35 '%' "%"

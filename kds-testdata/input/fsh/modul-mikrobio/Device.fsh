@@ -53,3 +53,38 @@ Description: "Mikrobio Auftrag: Blutkultur + Erregerdiagnostik"
 * subject = Reference(mii-exa-test-data-mikrobio-patient-1)
 * encounter = Reference(mii-exa-test-data-mikrobio-encounter-1)
 * authoredOn = "2026-04-02T08:00:00+02:00"
+// Blutkultur-Automat (Inkubation/Detektion)
+Instance: mii-exa-test-data-mikrobio-device-bactec-1
+InstanceOf: Device
+Usage: #example
+Description: "Mikrobio Lab Analyzer: Blutkultur-Automat (Inkubation und Wachstumsdetektion)"
+* insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
+* identifier.system = "https://www.charite.de/fhir/sid/device-identifier"
+* identifier.value = "BACTEC-001"
+* deviceName[+].name = "Blutkultur-Automat"
+* deviceName[=].type = #user-friendly-name
+
+// Lichtmikroskop (Mikroskopie/Scores)
+Instance: mii-exa-test-data-mikrobio-device-mikroskop-1
+InstanceOf: Device
+Usage: #example
+Description: "Mikrobio Lab Analyzer: Lichtmikroskop (Gram-/Spezialfaerbungen, Scores)"
+* insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
+* identifier.system = "https://www.charite.de/fhir/sid/device-identifier"
+* identifier.value = "MIKROSKOP-001"
+* deviceName[+].name = "Lichtmikroskop Labor 2"
+* deviceName[=].type = #user-friendly-name
+
+// Antibiogramm-Automat (MHK-Bestimmung)
+Instance: mii-exa-test-data-mikrobio-device-vitek-1
+InstanceOf: Device
+Usage: #example
+Description: "Mikrobio Lab Analyzer: Antibiogramm-Automat (MHK-Bestimmung)"
+* insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
+* identifier.system = "https://www.charite.de/fhir/sid/device-identifier"
+* identifier.value = "VITEK-001"
+* deviceName[+].name = "VITEK 2"
+* deviceName[=].type = #model-name

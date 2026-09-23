@@ -20,6 +20,9 @@ Description: "Lungenfunktion DLCO: 7.20 mmol/(min.kPa) (92 % vom Soll)"
 * component[predicted].valueQuantity = 7.80 'mmol/(min.kPa)' "mmol/(min.kPa)"
 * component[percentPredicted].code.coding[loinc] = $loinc#98130-8 "Diffusion capacity.carbon monoxide/Predicted"
 * component[percentPredicted].valueQuantity = 92 '%' "%"
+* derivedFrom[+] = Reference(mii-exa-test-data-lungenfunktion-docref-rohdaten-1)
+* referenceRange.low = 6.20 'mmol/(min.kPa)' "mmol/(min.kPa)"
+* referenceRange.high = 9.40 'mmol/(min.kPa)' "mmol/(min.kPa)"
 
 // DLCOc (Haemoglobin-korrigierte CO-Diffusionskapazitaet)
 Instance: mii-exa-test-data-lungenfunktion-dlcoc-1
@@ -33,6 +36,10 @@ Description: "Lungenfunktion DLCOc: 7.45 mmol/(min.kPa) (Hb-korrigiert)"
 * valueQuantity = 7.45 'mmol/(min.kPa)' "mmol/(min.kPa)"
 * interpretation = $v3-ObservationInterpretation#N "Normal"
 * method = $sct20260701#264284001 "Single-breath technique (qualifier value)"
+* hasMember[+] = Reference(mii-exa-test-data-lungenfunktion-dlco-1)
+* hasMember[+] = Reference(mii-exa-test-data-lungenfunktion-hb-1)
+* referenceRange.low = 6.20 'mmol/(min.kPa)' "mmol/(min.kPa)"
+* referenceRange.high = 9.40 'mmol/(min.kPa)' "mmol/(min.kPa)"
 
 // KCO (Transferkoeffizient, DLCO/VA)
 Instance: mii-exa-test-data-lungenfunktion-kco-1
@@ -52,6 +59,10 @@ Description: "Lungenfunktion KCO: 1.45 mmol/(min.kPa.L) (95 % vom Soll)"
 * component[predicted].valueQuantity = 1.52 'mmol/(min.kPa.L)' "mmol/(min.kPa.L)"
 * component[percentPredicted].code.coding[loinc] = $loinc#98203-3 "(Diffusion capacity/Alveolar volume)/predicted"
 * component[percentPredicted].valueQuantity = 95 '%' "%"
+* hasMember[+] = Reference(mii-exa-test-data-lungenfunktion-dlco-1)
+* hasMember[+] = Reference(mii-exa-test-data-lungenfunktion-va-1)
+* referenceRange.low = 1.20 'mmol/(min.kPa.L)' "mmol/(min.kPa.L)"
+* referenceRange.high = 1.80 'mmol/(min.kPa.L)' "mmol/(min.kPa.L)"
 
 // KCOc (Hb-korrigierter Transferkoeffizient)
 Instance: mii-exa-test-data-lungenfunktion-kcoc-1
@@ -67,6 +78,10 @@ Description: "Lungenfunktion KCOc: 1.50 mmol/(min.kPa.L) (Hb-korrigiert)"
 * valueQuantity = 1.50 'mmol/(min.kPa.L)' "mmol/(min.kPa.L)"
 * interpretation = $v3-ObservationInterpretation#N "Normal"
 * method = $sct20260701#264284001 "Single-breath technique (qualifier value)"
+* hasMember[+] = Reference(mii-exa-test-data-lungenfunktion-kco-1)
+* hasMember[+] = Reference(mii-exa-test-data-lungenfunktion-hb-1)
+* referenceRange.low = 1.20 'mmol/(min.kPa.L)' "mmol/(min.kPa.L)"
+* referenceRange.high = 1.80 'mmol/(min.kPa.L)' "mmol/(min.kPa.L)"
 
 // VA (Alveolarvolumen)
 Instance: mii-exa-test-data-lungenfunktion-va-1
@@ -79,6 +94,9 @@ Description: "Lungenfunktion VA: 4.95 L"
 * valueQuantity = 4.95 'L' "L"
 * interpretation = $v3-ObservationInterpretation#N "Normal"
 * method = $sct20260701#264284001 "Single-breath technique (qualifier value)"
+* derivedFrom[+] = Reference(mii-exa-test-data-lungenfunktion-docref-rohdaten-1)
+* referenceRange.low = 4.50 'L' "L"
+* referenceRange.high = 6.90 'L' "L"
 
 // Hb (Haemoglobin fuer die Hb-Korrektur)
 Instance: mii-exa-test-data-lungenfunktion-hb-1
@@ -93,3 +111,4 @@ Description: "Lungenfunktion Hb: 13.8 g/dL"
 * interpretation = $v3-ObservationInterpretation#N "Normal"
 * referenceRange.low = 12.0 'g{Hemoglobin}/dL' "g{Hemoglobin}/dL"
 * referenceRange.high = 15.5 'g{Hemoglobin}/dL' "g{Hemoglobin}/dL"
+* method = $sct#258104002 "Measured (qualifier value)"

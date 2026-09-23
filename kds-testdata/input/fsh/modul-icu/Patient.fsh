@@ -38,3 +38,15 @@ Description: "ICU Test Encounter (Standort B) - Aufnahme wegen COVID-19"
 * diagnosis[=].rank = 1
 // Hinweis: Das standortuebergreifende Crossmodul-Szenario (Onko-Nebendiagnose,
 // Organization Standort B) ist auf Branch wip/icu2026-crossmodul geparkt.
+// Dokumentierende aerztliche Person der Intensivstation (performer/recorder)
+Instance: mii-exa-test-data-icu-practitioner-1
+InstanceOf: Practitioner
+Usage: #example
+Description: "ICU Practitioner: Intensivmedizinerin (Dokumentation der Scores und Prozeduren)"
+* insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
+* identifier.system = "https://www.charite.de/fhir/sid/practitioner-identifier"
+* identifier.value = "ICU-ARZT-001"
+* name.family = "Weber"
+* name.given = "Katharina"
+* name.prefix = "Dr. med."

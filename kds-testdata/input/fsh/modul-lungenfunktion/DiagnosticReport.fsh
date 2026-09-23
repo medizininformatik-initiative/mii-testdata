@@ -71,6 +71,11 @@ Description: "Lungenfunktion Bodyplethysmographie-Befund: erhoehter Atemwegswide
 * result[RV] = Reference(mii-exa-test-data-lungenfunktion-rv-1)
 * result[RV_TLC] = Reference(mii-exa-test-data-lungenfunktion-rv-tlc-1)
 * conclusion = "Erhoehter totaler und spezifischer Atemwegswiderstand, RV und RV/TLC erhoeht im Sinne einer leichten Ueberblaehung. TLC normwertig."
+* conclusionCode.coding[icd10-gm] = $icd-10-gm#J45.9 "Asthma bronchiale, nicht näher bezeichnet"
+* conclusionCode.coding[icd10-gm].version = "2026"
+* presentedForm.contentType = #application/pdf
+* presentedForm.url = "https://www.charite.de/fhir/lungenfunktion/befunde/bodyplethysmographie-2025-02-18.pdf"
+* presentedForm.title = "Bodyplethysmographie-Befund vom 18.02.2025"
 
 // Diffusions-Befund
 Instance: mii-exa-test-data-lungenfunktion-diffusion-befund-1
@@ -87,6 +92,11 @@ Description: "Lungenfunktion Diffusions-Befund: normale CO-Diffusionskapazitaet"
 * result[VA] = Reference(mii-exa-test-data-lungenfunktion-va-1)
 * result[Hb] = Reference(mii-exa-test-data-lungenfunktion-hb-1)
 * conclusion = "Normale CO-Diffusionskapazitaet (DLCO 92 % vom Soll), auch nach Hb-Korrektur unauffaellig."
+* conclusionCode.coding[icd10-gm] = $icd-10-gm#J45.9 "Asthma bronchiale, nicht näher bezeichnet"
+* conclusionCode.coding[icd10-gm].version = "2026"
+* presentedForm.contentType = #application/pdf
+* presentedForm.url = "https://www.charite.de/fhir/lungenfunktion/befunde/diffusion-2025-02-18.pdf"
+* presentedForm.title = "Diffusions-Befund vom 18.02.2025"
 
 // Provokationstest-Befund
 Instance: mii-exa-test-data-lungenfunktion-provokationstest-befund-1
@@ -107,3 +117,21 @@ Description: "Lungenfunktion Provokationstest-Befund: positiver Methacholin-Prov
 * conclusion = "Positiver Methacholin-Provokationstest: FEV1-Abfall um 26 % bei kumulativer Dosis von 0.34 mg (PD20 = 0.30 mg). Befund vereinbar mit bronchialer Hyperreagibilitaet bei Asthma bronchiale."
 * conclusionCode.coding[icd10-gm] = $icd-10-gm#J45.0 "Vorwiegend allergisches Asthma bronchiale"
 * conclusionCode.coding[icd10-gm].version = "2026"
+* presentedForm.contentType = #application/pdf
+* presentedForm.url = "https://www.charite.de/fhir/lungenfunktion/befunde/provokationstest-2025-02-18.pdf"
+* presentedForm.title = "Provokationstest-Befund vom 18.02.2025"
+// Rohdaten-Dokument (Fluss-Volumen-Kurven) als derivedFrom-Ziel der Messwerte
+Instance: mii-exa-test-data-lungenfunktion-docref-rohdaten-1
+InstanceOf: DocumentReference
+Usage: #example
+Description: "Lungenfunktion DocumentReference: Rohdaten der Messungen (Fluss-Volumen-Kurven)"
+* insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/lungenfunktion-messplatz"
+* status = #current
+* type.coding[+] = $sct#720449003 "Pulmonary function report (record artifact)"
+* type.text = "Lungenfunktions-Rohdaten (Fluss-Volumen-Kurven)"
+* subject = Reference(mii-exa-test-data-lungenfunktion-patient-1)
+* date = "2025-02-18T11:45:00+01:00"
+* content.attachment.contentType = #application/pdf
+* content.attachment.url = "https://www.charite.de/fhir/lungenfunktion/rohdaten/messreihe-2025-02-18.pdf"
+* content.attachment.title = "Rohdaten Lungenfunktionsmessung 18.02.2025"

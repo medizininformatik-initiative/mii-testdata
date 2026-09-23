@@ -18,6 +18,12 @@ Description: "ICU Observation: MII PR ICU Bilanz Einfuhr Muttermilch (technische
 * encounter = Reference(mii-exa-test-data-icu-encounter-1)
 * effectiveDateTime = "2024-05-06T06:00:00+02:00"
 * valueQuantity = 40 'ml' "ml"
+* identifier.system = "https://www.charite.de/fhir/sid/icu-observation-id"
+* identifier.value = "icu-bilanz-einf-mumi-1"
+* issued = "2024-05-06T08:00:00+02:00"
+* device = Reference(mii-exa-test-data-patient-1-icu-device-pdms-1)
+* interpretation = $v3-ObservationInterpretation#N "Normal"
+* method = $sct#258104002 "Measured (qualifier value)"
 
 // Technische Abdeckung — klinisch plausibles NICU-Szenario ist als eigenes Patientenbundle vorgemerkt (.claude/todo)
 Instance: mii-exa-test-data-patient-1-icu-bilanz-einf-mumi-abgep-1
@@ -34,6 +40,12 @@ Description: "ICU Observation: MII PR ICU Bilanz Einfuhr Abgepumpte Muttermilch 
 * encounter = Reference(mii-exa-test-data-icu-encounter-1)
 * effectiveDateTime = "2024-05-06T06:00:00+02:00"
 * valueQuantity = 35 'ml' "ml"
+* identifier.system = "https://www.charite.de/fhir/sid/icu-observation-id"
+* identifier.value = "icu-bilanz-einf-mumi-abgep-1"
+* issued = "2024-05-06T08:00:00+02:00"
+* device = Reference(mii-exa-test-data-patient-1-icu-device-pdms-1)
+* interpretation = $v3-ObservationInterpretation#N "Normal"
+* method = $sct#258104002 "Measured (qualifier value)"
 
 // Technische Abdeckung — klinisch plausibles NICU-Szenario ist als eigenes Patientenbundle vorgemerkt (.claude/todo)
 Instance: mii-exa-test-data-patient-1-icu-bilanz-einf-spendermilch-1
@@ -50,6 +62,12 @@ Description: "ICU Observation: MII PR ICU Bilanz Einfuhr Spendermilch (technisch
 * encounter = Reference(mii-exa-test-data-icu-encounter-1)
 * effectiveDateTime = "2024-05-06T06:00:00+02:00"
 * valueQuantity = 30 'ml' "ml"
+* identifier.system = "https://www.charite.de/fhir/sid/icu-observation-id"
+* identifier.value = "icu-bilanz-einf-spendermilch-1"
+* issued = "2024-05-06T08:00:00+02:00"
+* device = Reference(mii-exa-test-data-patient-1-icu-device-pdms-1)
+* interpretation = $v3-ObservationInterpretation#N "Normal"
+* method = $sct#258104002 "Measured (qualifier value)"
 
 // Technische Abdeckung — klinisch plausibles NICU-Szenario ist als eigenes Patientenbundle vorgemerkt (.claude/todo)
 Instance: mii-exa-test-data-patient-1-icu-bilanz-einf-saeugling-1
@@ -66,6 +84,12 @@ Description: "ICU Observation: MII PR ICU Bilanz Einfuhr Saeuglingsnahrung (tech
 * encounter = Reference(mii-exa-test-data-icu-encounter-1)
 * effectiveDateTime = "2024-05-06T06:00:00+02:00"
 * valueQuantity = 60 'ml' "ml"
+* identifier.system = "https://www.charite.de/fhir/sid/icu-observation-id"
+* identifier.value = "icu-bilanz-einf-saeugling-1"
+* issued = "2024-05-06T08:00:00+02:00"
+* device = Reference(mii-exa-test-data-patient-1-icu-device-pdms-1)
+* interpretation = $v3-ObservationInterpretation#N "Normal"
+* method = $sct#258104002 "Measured (qualifier value)"
 
 Instance: mii-exa-test-data-patient-1-icu-bilanz-einf-oral-fluess-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-einfuhr-orale-fluessigkeit
@@ -82,6 +106,12 @@ Description: "ICU Observation: MII PR ICU Bilanz Einfuhr Orale Fluessigkeit"
 * encounter = Reference(mii-exa-test-data-icu-encounter-1)
 * effectiveDateTime = "2024-05-06T06:00:00+02:00"
 * valueQuantity = 150 'ml' "ml"
+* identifier.system = "https://www.charite.de/fhir/sid/icu-observation-id"
+* identifier.value = "icu-bilanz-einf-oral-fluess-1"
+* issued = "2024-05-06T08:00:00+02:00"
+* device = Reference(mii-exa-test-data-patient-1-icu-device-pdms-1)
+* interpretation = $v3-ObservationInterpretation#N "Normal"
+* method = $sct#258104002 "Measured (qualifier value)"
 
 // Generisches Bilanz-Profil (Elternprofil, abstract=false -> direkte Instanz)
 Instance: mii-exa-test-data-patient-1-icu-bilanz-status-1
@@ -98,3 +128,9 @@ Description: "ICU Observation: MII PR ICU Bilanz (generisch) - Fluessigkeitsbila
 * encounter = Reference(mii-exa-test-data-icu-encounter-1)
 * effectiveDateTime = "2024-05-06T06:00:00+02:00"
 * valueQuantity = 300 'ml' "ml"
+* identifier.system = "https://www.charite.de/fhir/sid/icu-observation-id"
+* identifier.value = "icu-bilanz-status-1"
+* issued = "2024-05-06T08:00:00+02:00"
+* device = Reference(mii-exa-test-data-patient-1-icu-device-pdms-1)
+* interpretation = $v3-ObservationInterpretation#N "Normal"
+* method = $sct#258104002 "Measured (qualifier value)"

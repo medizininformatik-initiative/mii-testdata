@@ -127,3 +127,11 @@ Description: "Bundle: ICU Testdaten Patient-1 (Standort B). COVID-19-Aufnahme."
 * insert AddBundleEntry(mii-exa-test-data-patient-1-icu-device-ecmo-1, Device)
 * insert AddBundleEntry(mii-exa-test-data-patient-1-icu-ect-dm-param-1, DeviceMetric)
 * insert AddBundleEntry(mii-exa-test-data-patient-1-icu-vent-dm-param-1, DeviceMetric)
+// MS-Fill: neue Geraete, Practitioner und Varianten
+* insert AddBundleEntry(mii-exa-test-data-patient-1-icu-device-monitor-1, Device)
+* insert AddBundleEntry(mii-exa-test-data-patient-1-icu-device-pdms-1, Device)
+* insert AddBundleEntry(mii-exa-test-data-icu-practitioner-1, Practitioner)
+* insert AddBundleEntry(mii-exa-test-data-patient-1-icu-score-nrs-dar-1, Observation)
+* insert AddBundleEntry(mii-exa-test-data-patient-1-icu-muv-gewicht-var-1, Observation)
+* insert AddBundleEntry(mii-exa-test-data-patient-1-icu-muv-groesse-var-1, Observation)
+* insert AddBundleEntry(mii-exa-test-data-patient-1-icu-muv-laenge-var-1, Observation)

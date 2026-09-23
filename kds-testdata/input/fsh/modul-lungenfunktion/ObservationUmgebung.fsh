@@ -66,3 +66,4 @@ Description: "Lungenfunktion Koerpergewicht: 68 (Einheit 'ug' durch Profil-Patte
 * code.coding[loinc] = $loinc#29463-7 "Body weight"
 * valueQuantity = 68 'ug' "ug"
 * interpretation = $v3-ObservationInterpretation#N "Normal"
+* method = $sct#39857003 "Weighing patient (procedure)"

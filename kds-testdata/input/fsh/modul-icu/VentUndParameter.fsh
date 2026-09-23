@@ -21,9 +21,11 @@ Description: "ICU Observation: MII PR ICU Maximaler Inspiratorischer Beatmungsdr
 * effectiveDateTime = "2024-05-05T08:00:00+02:00"
 * valueQuantity = 28 'cm[H2O]' "cmH2O"
 * device = Reference(mii-exa-test-data-patient-1-icu-vent-dm-param-1)
+* identifier.system = "https://www.charite.de/fhir/sid/icu-observation-id"
+* identifier.value = "icu-vent-pmax-insp-1"
+* issued = "2024-05-05T11:00:00+02:00"
 
 // --- Mittlerer inspiratorischer Beatmungsdruck ---
-
 Instance: mii-exa-test-data-patient-1-icu-vent-pmean-insp-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-mittlerer-inspiratorischer-beatmungsdruck
 Usage: #example
@@ -41,9 +43,11 @@ Description: "ICU Observation: MII PR ICU Mittlerer Inspiratorischer Beatmungsdr
 * effectiveDateTime = "2024-05-05T08:00:00+02:00"
 * valueQuantity = 14 'cm[H2O]' "cmH2O"
 * device = Reference(mii-exa-test-data-patient-1-icu-vent-dm-param-1)
+* identifier.system = "https://www.charite.de/fhir/sid/icu-observation-id"
+* identifier.value = "icu-vent-pmean-insp-1"
+* issued = "2024-05-05T11:00:00+02:00"
 
 // --- Plateau-Beatmungsdruck ---
-
 Instance: mii-exa-test-data-patient-1-icu-vent-pplat-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-plateau-beatmungsdruck
 Usage: #example
@@ -61,9 +65,11 @@ Description: "ICU Observation: MII PR ICU Plateau-Beatmungsdruck (lungenprotekti
 * effectiveDateTime = "2024-05-05T08:00:00+02:00"
 * valueQuantity = 22 'cm[H2O]' "cmH2O"
 * device = Reference(mii-exa-test-data-patient-1-icu-vent-dm-param-1)
+* identifier.system = "https://www.charite.de/fhir/sid/icu-observation-id"
+* identifier.value = "icu-vent-pplat-1"
+* issued = "2024-05-05T11:00:00+02:00"
 
 // --- Generisches Elternprofil: Parameter von Beatmung (abstract=false) ---
-
 Instance: mii-exa-test-data-patient-1-icu-vent-param-generisch-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-parameter-von-beatmung
 Usage: #example
@@ -79,9 +85,11 @@ Description: "ICU Observation: MII PR ICU Parameter von Beatmung (generisch) - i
 * effectiveDateTime = "2024-05-05T08:00:00+02:00"
 * valueQuantity = 7.2 'L/min' "L/min"
 * device = Reference(mii-exa-test-data-patient-1-icu-vent-dm-param-1)
+* identifier.system = "https://www.charite.de/fhir/sid/icu-observation-id"
+* identifier.value = "icu-vent-param-generisch-1"
+* issued = "2024-05-05T11:00:00+02:00"
 
 // --- Generisches Elternprofil: Parameter von extrakorporalen Verfahren (abstract=false) ---
-
 Instance: mii-exa-test-data-patient-1-icu-ect-param-generisch-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-parameter-von-extrakorporalen-verfahren
 Usage: #example
@@ -97,9 +105,10 @@ Description: "ICU Observation: MII PR ICU Parameter von Extrakorporalen Verfahre
 * effectiveDateTime = "2024-05-05T20:00:00+02:00"
 * valueQuantity = 6 'L/min' "L/min"
 * device = Reference(mii-exa-test-data-patient-1-icu-ect-dm-param-1)
+* identifier.system = "https://www.charite.de/fhir/sid/icu-observation-id"
+* identifier.value = "icu-ect-param-generisch-1"
 
 // --- Koerperlaenge (liegend gemessen) ---
-
 Instance: mii-exa-test-data-patient-1-icu-muv-laenge-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-koerperlaenge
 Usage: #example
@@ -113,4 +122,56 @@ Description: "ICU Observation: MII PR ICU Koerperlaenge (liegend, 168 cm bei Auf
 * subject = Reference(mii-exa-test-data-icu-patient-1)
 * encounter = Reference(mii-exa-test-data-icu-encounter-1)
 * effectiveDateTime = "2024-05-01T12:00:00+02:00"
+* valueQuantity = 168 'cm' "centimeter"
+* identifier.system = "https://www.charite.de/fhir/sid/icu-observation-id"
+* identifier.value = "icu-muv-laenge-1"
+* interpretation = $v3-ObservationInterpretation#N "Normal"
+* performer = Reference(mii-exa-test-data-icu-practitioner-1)
+* method = $sct#102538003 "Recumbent body position (finding)"
+// --- effectivePeriod-Varianten (MS-Slice effective[x]:effectivePeriod schliesst
+//     effectiveDateTime in derselben Instanz aus -> je eine minimale Variante) ---
+
+Instance: mii-exa-test-data-patient-1-icu-muv-gewicht-var-1
+InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-koerpergewicht
+Usage: #example
+Description: "ICU Observation: Koerpergewicht (effectivePeriod-Variante)"
+* insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
+* status = #final
+* category[VSCat] = $observation-category#vital-signs "Vital Signs"
+* code.coding[loinc] = $loinc#29463-7 "Body weight"
+* code.coding[snomed] = $sct#27113001 "Body weight"
+* subject = Reference(mii-exa-test-data-icu-patient-1)
+* effectivePeriod.start = "2024-05-06T08:00:00+02:00"
+* effectivePeriod.end = "2024-05-06T08:05:00+02:00"
+* valueQuantity = 79.5 'kg' "kilogram"
+
+Instance: mii-exa-test-data-patient-1-icu-muv-groesse-var-1
+InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-koerpergroesse
+Usage: #example
+Description: "ICU Observation: Koerpergroesse (effectivePeriod-Variante)"
+* insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
+* status = #final
+* category[VSCat] = $observation-category#vital-signs "Vital Signs"
+* code.coding[loinc] = $loinc#8302-2 "Body height"
+* code.coding[snomed] = $sct#1153637007 "Body height"
+* subject = Reference(mii-exa-test-data-icu-patient-1)
+* effectivePeriod.start = "2024-05-06T08:05:00+02:00"
+* effectivePeriod.end = "2024-05-06T08:10:00+02:00"
+* valueQuantity = 175 'cm' "centimeter"
+
+Instance: mii-exa-test-data-patient-1-icu-muv-laenge-var-1
+InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-koerperlaenge
+Usage: #example
+Description: "ICU Observation: Koerperlaenge liegend (effectivePeriod-Variante)"
+* insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
+* status = #final
+* category[vs-cat] = $observation-category#vital-signs
+* code.coding[sct] = $sct#1149101003
+* code.coding[loinc] = $loinc#8306-3 "Body height --lying"
+* subject = Reference(mii-exa-test-data-icu-patient-1)
+* effectivePeriod.start = "2024-05-06T08:10:00+02:00"
+* effectivePeriod.end = "2024-05-06T08:15:00+02:00"
 * valueQuantity = 168 'cm' "centimeter"

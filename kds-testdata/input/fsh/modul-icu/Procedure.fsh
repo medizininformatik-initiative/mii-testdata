@@ -16,6 +16,12 @@ Description: "ICU Procedure: MII PR ICU Extrakorporales Verfahren"
 * performedPeriod.end = "2024-05-11T14:00:00+02:00"
 * category = $sct#182744004 "Extracorporeal circulation procedure"
 * code = $sct#233573008 "Extracorporeal membrane oxygenation (procedure)"
+* extension[Dokumentationsdatum].valueDateTime = "2024-05-11T15:00:00+02:00"
+* extension[durchfuehrungsabsicht].valueCoding = $sct#262202000 "Therapeutic"
+* recorder = Reference(mii-exa-test-data-icu-practitioner-1)
+* bodySite.coding[snomed-ct] = $sct#83419000 "Femoral vein structure (body structure)"
+* bodySite.coding[snomed-ct].version = "http://snomed.info/sct/900000000000207008/version/20260701"
+* note.text = "VV-ECMO ueber femoro-jugulaere Kanuelierung bei schwerem COVID-ARDS, komplikationsloser Lauf ueber 8 Tage."
 
 Instance: mii-exa-test-data-patient-1-icu-vent-beatmung-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-beatmung
@@ -31,4 +37,9 @@ Description: "ICU Procedure: MII PR ICU Beatmung"
 * performedPeriod.end = "2024-05-13T09:00:00+02:00"
 * category = $sct#40617009 "Artificial ventilation"
 * code = $sct#243147009 "Controlled ventilation (procedure)"
-
+* extension[Dokumentationsdatum].valueDateTime = "2024-05-13T10:00:00+02:00"
+* extension[durchfuehrungsabsicht].valueCoding = $sct#262202000 "Therapeutic"
+* recorder = Reference(mii-exa-test-data-icu-practitioner-1)
+* bodySite.coding[snomed-ct] = $sct#44567001 "Trachea structure (body structure)"
+* bodySite.coding[snomed-ct].version = "http://snomed.info/sct/900000000000207008/version/20260701"
+* note.text = "Invasive Beatmung mit ultraprotektiver Lungen-Ruhigstellung unter VV-ECMO, Extubation am 13.05."
