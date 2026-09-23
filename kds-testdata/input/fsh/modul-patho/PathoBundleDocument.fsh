@@ -24,6 +24,7 @@ Title: "Befunddokument Prostatabiopsie"
 Description: "Dokument-Bundle: vollstaendiger Prostatabiopsie-Befundbericht (2 Stanzen) nach mii-pr-patho-bundle"
 * insert TestDataLabel
 * meta.source = "https://www.charite.de/fhir/kds-testdata"
+* meta.lastUpdated = "2024-01-20T16:00:00+01:00"
 * identifier.system = "https://www.charite.de/fhir/sid/patho/befundbericht"
 * identifier.value = "E_24_001-DOC"
 * type = #document

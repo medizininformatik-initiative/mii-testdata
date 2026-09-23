@@ -18,6 +18,16 @@ Description: "Gruppierung der mikroskopischen Befunde beider Prostatastanzen"
 * performer = Reference(mii-exa-test-data-patho-practitioner-1)
 * valueString = "Mikroskopische Befunde beider Prostatastanzen"
 * bodySite = $sct#41216001 "Prostate"
+* meta.lastUpdated = "2024-01-20T16:00:00+01:00"
+* text.status = #generated
+* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Mikroskopie-Grouper: Befunde der Prostatastanzen 01 und 03</div>"
+* identifier.system = "https://www.charite.de/fhir/sid/patho/befund"
+* identifier.value = "E_24_001_MIKRO"
+* method = $sct#104157003 "Light microscopy (procedure)"
+* basedOn = Reference(mii-exa-test-data-patho-request-1)
+* specimen = Reference(mii-exa-test-data-patho-specimen-01-slide)
+* derivedFrom[attached-image] = Reference(mii-exa-test-data-patho-image-1)
+* derivedFrom[dicom-image] = Reference(mii-exa-test-data-patho-imaging-study-1)
 
 * hasMember[+] = Reference(mii-exa-test-data-patho-histo-typ-01)
 * hasMember[+] = Reference(mii-exa-test-data-patho-morph-text-01)

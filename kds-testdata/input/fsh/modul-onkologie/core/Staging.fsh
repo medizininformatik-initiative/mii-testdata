@@ -50,6 +50,7 @@ Description: "Onkologie Test Fernmetastasen - Leber"
 * effectiveDateTime = "2021-06-22"
 * valueCodeableConcept.coding = $mii-cs-onko-fernmetastasen#HEP "Leber"
 * focus = Reference(mii-exa-test-data-onko-diagnose-1)
+* bodySite = $SCT#10200004 "Liver structure (body structure)"
 
 // Allgemeiner Leistungszustand ECOG (Chapter 12)
 Instance: mii-exa-test-data-onko-ecog-1
@@ -66,6 +67,7 @@ Description: "Onkologie Test ECOG - 1"
 * effectiveDateTime = "2021-06-15"
 * valueCodeableConcept.coding[obds] = $mii-cs-onko-allgemeiner-leistungszustand-ecog#1 "Einschränkung bei körperlicher Anstrengung, aber gehfähig; leichte körperliche Arbeit bzw. Arbeit im Sitzen (z. B. leichte Hausarbeit oder Büroarbeit) möglich (70 - 80 % nach Karnofsky)"
 * valueCodeableConcept.coding[loinc] = $LNC#LA9623-5 "Restricted in physically strenuous activity"
+* focus = Reference(mii-exa-test-data-onko-diagnose-1)
 
 // Allgemeiner Leistungszustand Karnofsky (Chapter 12)
 Instance: mii-exa-test-data-onko-karnofsky-1
@@ -82,6 +84,7 @@ Description: "Onkologie Test Karnofsky - 80%"
 * effectiveDateTime = "2021-06-15"
 * valueCodeableConcept.coding[obds] = $mii-cs-onko-allgemeiner-leistungszustand-karnofsky#80% "80%"
 * valueCodeableConcept.coding[loinc] = $LNC#LA29177-5 "Normal activity with effort"
+* focus = Reference(mii-exa-test-data-onko-diagnose-1)
 
 // ASA Klassifikation (Chapter 12)
 Instance: mii-exa-test-data-onko-asa-1

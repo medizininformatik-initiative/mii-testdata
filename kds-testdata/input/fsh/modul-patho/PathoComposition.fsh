@@ -41,9 +41,16 @@ Description: "Composition für den strukturierten Prostatabiopsie-Befundbericht 
 * event.period.start = "2024-01-15"
 * event.period.end = "2024-01-20"
 * event.detail = Reference(mii-exa-test-data-patho-request-1)
+* meta.lastUpdated = "2024-01-20T16:00:00+01:00"
+* type.text = "Histopathologischer Befundbericht"
+* relatesTo.code = #replaces
+* relatesTo.targetReference = Reference(mii-exa-test-data-patho-composition-0)
 
 // Sektion: Gesamter Befundbericht
 * section[patho-diagnostic-report]
+  * section[+].title = "Vorläufige Mitteilung"
+  * section[=].text.status = #additional
+  * section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Vorabmitteilung des Schnellschnittergebnisses am 2024-01-15.</p></div>"
   * title = "Pathologiebefundbericht"
   * code = $loinc#60567-5 "Comprehensive pathology report panel"
   * text.status = #additional
@@ -57,6 +64,9 @@ Description: "Composition für den strukturierten Prostatabiopsie-Befundbericht 
   * text.status = #additional
   * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Makroskopische Messungen beider Prostatastanzen, je 1 Zylinder pro Specimen.</p><table><thead><tr><th>Stanze</th><th>Lokalisation</th><th>Stanzenlänge (cm)</th></tr></thead><tbody><tr><td>01</td><td>Rechts lateral basal</td><td>1.8</td></tr><tr><td>03</td><td>Rechts lateral apikal</td><td>1.5</td></tr></tbody></table></div>"
   * entry = Reference(mii-exa-test-data-patho-macro-grouper-1)
+  * section[+].title = "Makroskopie Stanze 01"
+  * section[=].text.status = #additional
+  * section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Stanze 01: 1 Zylinder, 1,8 cm, rechts lateral basal.</p></div>"
 
 // Sektion: Mikroskopie
 * section[mikroskopie]
@@ -65,6 +75,9 @@ Description: "Composition für den strukturierten Prostatabiopsie-Befundbericht 
   * text.status = #additional
   * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Adenokarzinom in Stanze 01 nachgewiesen: azinäres Adenokarzinom, Gleason-Score 3+4=7, ISUP-Gradgruppe 2, Tumoranteil 40%. Stanze 03 benigne (fibröse und glatte Muskulatur mit vereinzelten benignen Prostatadrüsen, keine Atypien).</p></div>"
   * entry = Reference(mii-exa-test-data-patho-micro-grouper-1)
+  * section[+].title = "Mikroskopie Stanze 01"
+  * section[=].text.status = #additional
+  * section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Stanze 01: azinäres Adenokarzinom, Gleason 3+4=7.</p></div>"
 
 // Sektion: Intraoperative Beobachtung (Schnellschnitt)
 * section[intraoperativ]
@@ -73,6 +86,9 @@ Description: "Composition für den strukturierten Prostatabiopsie-Befundbericht 
   * text.status = #additional
   * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Schnellschnitt Stanze 01: Nachweis eines azinären Adenokarzinoms; endgültige Gradierung am Paraffinmaterial.</p></div>"
   * entry = Reference(mii-exa-test-data-patho-intraop-grouper-1)
+  * section[+].title = "Schnellschnitt Stanze 01"
+  * section[=].text.status = #additional
+  * section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Schnellschnitt: Nachweis eines azinären Adenokarzinoms.</p></div>"
 
 // Sektion: Diagnostische Schlussfolgerung
 * section[diagnostische-schlussfolgerung]
@@ -81,6 +97,9 @@ Description: "Composition für den strukturierten Prostatabiopsie-Befundbericht 
   * text.status = #additional
   * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>1 von 2 Stanzen tumorbefallen (Stanze 01, rechts lateral basal). Prozentualer Tumoranteil 40%, Tumorlänge gesamt 7,2 mm. Perineurale Infiltration nachgewiesen. Infiltration des periprostatischen Fettgewebes, Samenblaseninfiltration, lymphovaskuläre Invasion, intraduktales Karzinom, ASAP, High-grade-PIN und granulomatöse Prostatitis nicht nachgewiesen.</p><p><b>Diagnose:</b> Azinäres Adenokarzinom der Prostata (ICD-O 8140/3), Gleason-Score 3+4=7, ISUP-Gradgruppe 2.</p></div>"
   * entry = Reference(mii-exa-test-data-patho-conclusion-grouper-1)
+  * section[+].title = "Diagnose"
+  * section[=].text.status = #additional
+  * section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Azinäres Adenokarzinom der Prostata (ICD-O 8140/3), ISUP-Gradgruppe 2.</p></div>"
 
 // Sektion: Zusätzliche Beobachtungen
 * section[zusaetzliche-beobachtung]
@@ -89,3 +108,44 @@ Description: "Composition für den strukturierten Prostatabiopsie-Befundbericht 
   * text.status = #additional
   * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Immunhistochemie: Die Tumorzellen sind negativ für p63.</p></div>"
   * entry = Reference(mii-exa-test-data-patho-zusatz-grouper-1)
+  * section[+].title = "Immunhistochemie"
+  * section[=].text.status = #additional
+  * section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Immunhistochemie: Tumorzellen negativ für p63.</p></div>"
+
+// Vorgaenger-Composition (Ziel der relatesTo-Referenz, minimal)
+Instance: mii-exa-test-data-patho-composition-0
+InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-composition
+Usage: #example
+Title: "Vorlaeufiger Befundbericht Prostatabiopsie"
+Description: "Vorlaeufige Composition (Schnellschnitt-Vorabmitteilung), ersetzt durch die finale Composition"
+* insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
+* text.status = #extensions
+* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div id=\"befund-titel\"><b>Vorlaeufiger Befundbericht - Prostatabiopsie</b></div><table><tr id=\"befund-eingangsnummer\"><td>Eingangsnummer</td><td>E_24_001</td></tr><tr id=\"befund-status\"><td>Status</td><td>preliminary</td></tr><tr id=\"befund-patient\"><td>Patient</td><td>Klaus Gewebeprobe (PATH-TEST-001)</td></tr><tr id=\"befund-datum\"><td>Datum</td><td>2024-01-15</td></tr></table></div>"
+* extension[document-version].valueString = "0"
+* identifier.type = $v2-0203#ACSN "Accession ID"
+* identifier.system = "https://www.charite.de/fhir/sid/patho/befundbericht"
+* identifier.value = "E_24_001"
+* status = #final
+* type.coding[+] = $loinc#11526-1 "Pathology study"
+* type.coding[XDS] = http://ihe-d.de/CodeSystems/IHEXDStypeCode#PATH
+* type.coding[sct] = $sct#721967005 "Tissue pathology biopsy report"
+* category.coding[IHE] = http://ihe-d.de/CodeSystems/IHEXDSclassCode#BEF
+* subject = Reference(mii-exa-test-data-patho-patient-1)
+* encounter = Reference(mii-exa-test-data-patho-encounter-1)
+* date = "2024-01-15T12:00:00+01:00"
+* author = Reference(mii-exa-test-data-patho-organization-1)
+* author.display = "Institut für Pathologie"
+* title = "Vorlaeufiger Befundbericht - Prostatabiopsie"
+* attester[legal].mode = #legal
+* attester[legal].party = Reference(mii-exa-test-data-patho-organization-1)
+* custodian = Reference(mii-exa-test-data-patho-organization-1)
+* event.period.start = "2024-01-15"
+* event.period.end = "2024-01-15"
+* event.detail = Reference(mii-exa-test-data-patho-request-1)
+* section[patho-diagnostic-report]
+  * title = "Vorlaeufige Mitteilung"
+  * code = $loinc#60567-5 "Comprehensive pathology report panel"
+  * text.status = #additional
+  * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Schnellschnitt Stanze 01: Nachweis eines azinären Adenokarzinoms. Endgültige Beurteilung folgt.</p></div>"
+  * entry = Reference(mii-exa-test-data-patho-report-1)

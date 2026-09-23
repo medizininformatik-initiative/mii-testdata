@@ -44,6 +44,15 @@ Description: "Grouper for all diagnostic conclusion findings in biopsy specimens
 * derivedFrom[+] = Reference(mii-exa-test-data-patho-sekundaer-gleason-01)
 * derivedFrom[+] = Reference(mii-exa-test-data-patho-gleason-grading-01)
 * derivedFrom[+] = Reference(mii-exa-test-data-patho-tumoranteil-01)
+* meta.lastUpdated = "2024-01-20T16:00:00+01:00"
+* text.status = #generated
+* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Diagnostische Schlussfolgerung: Azinäres Adenokarzinom der Prostata, Gleason 3+4=7, ISUP 2</div>"
+* identifier.system = "https://www.charite.de/fhir/sid/patho/befund"
+* identifier.value = "E_24_001_CONCLUSION"
+* method = $sct#104157003 "Light microscopy (procedure)"
+* note.text = "Diagnose auf Basis von Mikroskopie und Immunhistochemie beider Stanzen."
+* specimen = Reference(mii-exa-test-data-patho-specimen-01-slide)
+* bodySite = $sct#41216001 "Prostate"
 
 // Histological Type (ICD-O-3)
 Instance: mii-exa-test-data-patho-histological-type-icdo-3
@@ -62,6 +71,7 @@ Description: "Histological type according to ICD-O-3 classification"
 * performer = Reference(mii-exa-test-data-patho-practitioner-1)
 * basedOn = Reference(mii-exa-test-data-patho-request-1)
 * valueCodeableConcept = $ICDO-3#8140/3 "Azinäres Adenokarzinom"
+* valueCodeableConcept.coding.version = "3.2"
 
 // Morphology Free Text
 Instance: mii-exa-test-data-patho-morphology-free-text
@@ -159,6 +169,16 @@ Description: "Total Gleason score in biopsy specimens"
 * performer = Reference(mii-exa-test-data-patho-practitioner-1)
 * basedOn = Reference(mii-exa-test-data-patho-request-1)
 * valueCodeableConcept = $sct#57403001 "Gleason grade score 7"
+* meta.lastUpdated = "2024-01-20T16:00:00+01:00"
+* identifier.system = "https://www.charite.de/fhir/sid/patho/befund"
+* identifier.value = "E_24_001_GLEASON"
+* method = $sct#104157003 "Light microscopy (procedure)"
+* hasMember[+] = Reference(mii-exa-test-data-patho-primary-gleason-pattern)
+* hasMember[+] = Reference(mii-exa-test-data-patho-secondary-gleason-pattern)
+// Repraesentative component-DAR-Instanz (Testdaten-Policy: genau eine je Modul):
+// Anteil Gleason-Muster 4/5 als Komponente nicht bestimmbar
+* component.code = $loinc#44641-9 "Percent of Gleason pattern 4 and 5 in Prostate tumor"
+* component.dataAbsentReason = http://terminology.hl7.org/CodeSystem/data-absent-reason#cannot-be-obtained "Cannot Be Obtained"
 * derivedFrom[0] = Reference(mii-exa-test-data-patho-primary-gleason-pattern)
 * derivedFrom[+] = Reference(mii-exa-test-data-patho-secondary-gleason-pattern)
 
@@ -217,6 +237,7 @@ Description: "Histological differentiation grade according to WHO"
 * effectiveDateTime = "2024-01-20"
 * performer = Reference(mii-exa-test-data-patho-practitioner-1)
 * basedOn = Reference(mii-exa-test-data-patho-request-1)
+* valueCodeableConcept.coding = $sct#1663004 "Moderately differentiated (qualifier value)"
 * valueCodeableConcept.text = "G2: mäßig differenziert"
 
 // Number of Positive Cores Right

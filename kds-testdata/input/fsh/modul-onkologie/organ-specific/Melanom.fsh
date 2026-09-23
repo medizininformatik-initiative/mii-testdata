@@ -50,6 +50,7 @@ Description: "Onkologie Test Melanom Ulzeration - Vorhanden"
 * focus = Reference(mii-exa-test-data-onko-diagnose-1)
 * effectiveDateTime = "2021-06-20"
 * valueCodeableConcept = $mii-cs-onko-melanom-ulzeration#J "Ja"
+* method = $SCT#117617002 "Immunohistochemistry procedure"
 
 // Ulzeration - keine
 Instance: mii-exa-test-data-onko-melanom-ulzeration-2
@@ -64,6 +65,7 @@ Description: "Onkologie Test Melanom Ulzeration - Nicht vorhanden"
 * focus = Reference(mii-exa-test-data-onko-diagnose-1)
 * effectiveDateTime = "2021-06-22"
 * valueCodeableConcept = $mii-cs-onko-melanom-ulzeration#N "Nein"
+* method = $SCT#117617002 "Immunohistochemistry procedure"
 
 // Sicherheitsabstand
 Instance: mii-exa-test-data-onko-melanom-sicherheitsabstand-1
@@ -115,6 +117,7 @@ Description: "Onkologie Test Melanom LDH - Normal"
 * valueQuantity.unit = "U/L"
 * valueQuantity.system = $UCUM
 * valueQuantity.code = #U/L
+* encounter = Reference(mii-exa-test-data-onko-encounter-1)
 
 // LDH - erhöht
 Instance: mii-exa-test-data-onko-melanom-ldh-2
@@ -146,9 +149,26 @@ Description: "Onkologie Test Melanom Exzision - Oberarm"
 * status = #completed
 // category is inherited from parent profile MII_PR_Onko_Operation
 * code.coding[sct] = $SCT#177281002 "Excision of melanoma (procedure)"
+* code.coding[ops] = $OPS#5-895.34 "Radikale und ausgedehnte Exzision von erkranktem Gewebe an Haut und Unterhaut: Ohne primären Wundverschluss: Oberarm und Ellenbogen"
+* code.coding[ops].version = "2021"
+* code.coding[ops].extension[Seitenlokalisation].valueCoding = $icd-seitenlokalisation#L "links"
 * subject = Reference(mii-exa-test-data-onko-patient-1)
 * performedDateTime = "2021-07-05"
 * reasonReference = Reference(mii-exa-test-data-onko-diagnose-1)
-* bodySite = $SCT#368208006 "Left upper arm structure"
+* category = $SCT#387713003 "Surgical procedure"
+* bodySite.coding[snomed-ct] = $SCT#368208006 "Left upper arm structure"
+* bodySite.coding[snomed-ct].version = "http://snomed.info/sct/900000000000207008/version/20240201"
 * extension[Intention].valueCodeableConcept = $mii-cs-onko-intention#K "kurativ"
+* extension[Intention].valueCodeableConcept.text = "kurativ"
+* basedOn[tumorkonferenz] = Reference(mii-exa-test-data-onko-tumorkonferenz-1)
+* complication[compl_obds].coding = $mii-cs-onko-operation-komplikation#N "Nein"
+* complication[compl_icd10].coding = $ICD10GM|2021#T81.0 "Blutung und Hämatom als Komplikation eines Eingriffes, anderenorts nicht klassifiziert"
+* encounter = Reference(mii-exa-test-data-onko-encounter-1)
+* extension[Dokumentationsdatum].valueDateTime = "2021-07-06"
+* extension[durchfuehrungsabsicht].valueCoding = $SCT#262202000 "Therapeutic"
+* extension[Urgency].valueCodeableConcept = $mii-cs-onko-operation-urgency#E "Elektiveingriff"
+* extension[Urgency].valueCodeableConcept.text = "Elektiveingriff"
+* note.text = "Exzision des Melanoms am linken Oberarm mit Sicherheitsabstand."
+* outcome = $mii-cs-onko-residualstatus#R0 "Kein Residualtumor"
+* partOf = Reference(mii-exa-test-data-onko-systemische-therapie-1)
 

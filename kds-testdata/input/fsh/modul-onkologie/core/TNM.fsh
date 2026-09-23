@@ -355,3 +355,6 @@ Description: "Onkologie Test TNM synthetisiert - aus klinischer (IB) und patholo
 * derivedFrom[0] = Reference(mii-exa-test-data-onko-tnm-klassifikation-1)
 * derivedFrom[1] = Reference(mii-exa-test-data-onko-tnm-klassifikation-2)
 * component[tnmFormel].valueString = "ypT3c pN1 M1b (Stadium IVB)"
+* device = Reference(mii-exa-test-data-onko-sequencer-1)
+* hasMember = Reference(mii-exa-test-data-onko-tnm-m-kategorie-1)
+* specimen = Reference(mii-exa-test-data-onko-specimen-1)

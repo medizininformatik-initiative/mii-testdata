@@ -27,3 +27,6 @@ Description: "Anforderung für die 2-Stanzen-Prostatabiopsie (Testdaten-Szenario
 * supportingInfo[codedCondition][+] = Reference(mii-exa-test-data-patho-diagnose-verdacht-1)
 * supportingInfo[anamnesis][+] = Reference(mii-exa-test-data-patient-1-patho-hopi-1)
 * supportingInfo[activeProblems][+] = Reference(mii-exa-test-data-patient-1-patho-active-problems-1)
+* meta.lastUpdated = "2024-01-20T16:00:00+01:00"
+* requisition.system = "https://www.charite.de/fhir/sid/patho/untersuchungsauftrag"
+* requisition.value = "REQ-2024-001"

@@ -44,6 +44,56 @@ Description: "Tru-cut Biopsie aus der rechten lateralen Basis (periphere Zone)"
   * type = $sct#434746001 "Specimen vial (physical object)"
   * additiveCodeableConcept = $sct#434162003 "Neutral buffered formalin (substance)"
 
+// MS-Auffuellung: Detail-Elemente des Patho-Specimen-Profils
+* meta.lastUpdated = "2024-01-20T16:00:00+01:00"
+* text.status = #generated
+* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Prostatastanze 01, rechts lateral basal, Tru-cut-Biopsie in Formalin</div>"
+* note.text = "Stanze mit roter Tinte markiert, sofort in Formalin fixiert."
+* receivedTime = "2024-01-15T16:00:00+01:00"
+* collection.quantity.value = 1
+* collection.quantity.unit = "Stanzzylinder"
+* collection.quantity.system = $ucum
+* collection.quantity.code = #1
+* collection.extension[einstellungBlutversorgung].valueDateTime = "2024-01-15T10:29:00+01:00"
+* collection.bodySite.extension[bodyStructure].valueReference = Reference(mii-exa-test-data-patho-body-structure-1)
+* collection.fastingStatusCodeableConcept.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0916"
+* collection.fastingStatusCodeableConcept.coding.code = #NF
+* processing[+].description = "Formalinfixierung"
+* processing[=].procedure = $sct#787376009 "Preparation of formalin fixed paraffin embedded tissue specimen"
+* processing[=].additive = Reference(mii-exa-test-data-patho-substance-formalin-1)
+* processing[=].timePeriod.start = "2024-01-15T11:00:00+01:00"
+* processing[=].timePeriod.end = "2024-01-16T07:30:00+01:00"
+* container.capacity.value = 10
+* container.capacity.unit = "mL"
+* container.capacity.system = $ucum
+* container.capacity.code = #mL
+* container.specimenQuantity.value = 2
+* container.specimenQuantity.unit = "mL"
+* container.specimenQuantity.system = $ucum
+* container.specimenQuantity.code = #mL
+
+// BodyStructure (Ziel der bodyStructure-Extension der Entnahmestelle)
+Instance: mii-exa-test-data-patho-body-structure-1
+InstanceOf: BodyStructure
+Usage: #example
+Title: "Entnahmestelle Prostatastanze 01"
+Description: "BodyStructure: rechte basale periphere Zone der Prostata"
+* insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
+* active = true
+* location = $sct#716902004 "Right basal peripheral zone of prostate"
+* patient = Reference(mii-exa-test-data-patho-patient-1)
+
+// Substance (Ziel der processing.additive-Referenz)
+Instance: mii-exa-test-data-patho-substance-formalin-1
+InstanceOf: Substance
+Usage: #example
+Title: "Formalin (Fixativ)"
+Description: "Substance: neutral gepuffertes Formalin als Fixierungs-Additiv"
+* insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
+* status = #active
+* code = $sct#434162003 "Neutral buffered formalin (substance)"
 
 // Block für Stanze 01
 Instance: mii-exa-test-data-patho-specimen-01-block

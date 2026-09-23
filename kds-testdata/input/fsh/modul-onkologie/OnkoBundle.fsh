@@ -28,7 +28,10 @@ Description: "Vollst√§ndiges Transaktionsbundle mit allen Onkologie-Testdaten f√
 // =====================================
 
 * insert AddBundleEntry(mii-exa-test-data-onko-diagnose-1, Condition)
+* insert AddBundleEntry(mii-exa-test-data-onko-diagnose-2, Condition)
+* insert AddBundleEntry(mii-exa-test-data-onko-diagnose-3, Condition)
 * insert AddBundleEntry(mii-exa-test-data-onko-fruehere-tumorerkrankung-1, Condition)
+* insert AddBundleEntry(mii-exa-test-data-onko-liste-evidenz-1, List)
 
 // =====================================
 // HISTOLOGIE (Chapter 6)
@@ -74,6 +77,11 @@ Description: "Vollst√§ndiges Transaktionsbundle mit allen Onkologie-Testdaten f√
 * insert AddBundleEntry(mii-exa-test-data-onko-tnm-klassifikation-synthetisiert-1, Observation)
 * insert AddBundleEntry(mii-exa-test-data-onko-prostata-gleason-gesamt-1, Observation)
 * insert AddBundleEntry(mii-exa-test-data-onko-tumormarker-1, Observation)
+* insert AddBundleEntry(mii-exa-test-data-onko-tumormarker-2, Observation)
+* insert AddBundleEntry(mii-exa-test-data-onko-tumormarker-3, Observation)
+* insert AddBundleEntry(mii-exa-test-data-onko-tumormarker-4, Observation)
+* insert AddBundleEntry(mii-exa-test-data-onko-tumormarker-5, Observation)
+* insert AddBundleEntry(mii-exa-test-data-onko-sequencer-1, Device)
 * insert AddBundleEntry(mii-exa-test-data-organization-charite, Organization)
 
 // =====================================

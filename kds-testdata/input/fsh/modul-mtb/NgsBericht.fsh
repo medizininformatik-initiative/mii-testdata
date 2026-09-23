@@ -46,6 +46,12 @@ Description: "Test instance for MTB genomic study procedure"
 * status = #completed
 * subject = Reference(mii-exa-test-data-mtb-patient-1)
 * extension[genomic-study-analysis][+].valueReference = Reference(mii-exa-test-data-mtb-genomic-study-analysis-1)
+* code = $genomic-study-type#func-var "Functional variation detection"
+* identifier.system = "https://www.charite.de/fhir/sid/mtb-genomic-study"
+* identifier.value = "GS-2024-001"
+* encounter = Reference(mii-exa-test-data-mtb-encounter-1)
+* performedDateTime = "2024-02-20"
+* reasonReference = Reference(mii-exa-test-data-mtb-diagnose-primaertumor-1)
 
 // =============================================================================
 // 10. MII_PR_MTB_Genomic_Study_Analysis (Procedure)
@@ -72,6 +78,9 @@ Description: "Test instance for MTB genomic study analysis with method and chang
 * extension[=].extension[=].valueReference = Reference(mii-exa-test-data-mtb-device-sequencer-1)
 * extension[=].extension[+].url = "function"
 * extension[=].extension[=].valueCodeableConcept = https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/CodeSystem/mii-cs-mtb-genomicanalysis-devicefunction#sequencing-device
+* identifier.system = "https://www.charite.de/fhir/sid/mtb-genomic-study"
+* identifier.value = "GSA-2024-001"
+* performedDateTime = "2024-02-21"
 
 // =============================================================================
 // 11. MII_PR_MTB_Einfache_Variante (Observation, extends MolGen Variante)
@@ -96,6 +105,11 @@ Description: "Test instance for simple variant (EGFR L858R) with all MS elements
 * component[gene-studied].valueCodeableConcept = $HGNC#HGNC:3236 "EGFR"
 * component[representative-protein-hgvs].code = $loinc#48005-3 "Amino acid change (pHGVS)"
 * component[representative-protein-hgvs].valueCodeableConcept = $HGVS#NP_005219.2:p.Leu858Arg
+* effectiveDateTime = "2024-02-25"
+* issued = "2024-03-01T09:00:00+01:00"
+* specimen = Reference(mii-exa-test-data-mtb-specimen-1)
+* device = Reference(mii-exa-test-data-mtb-device-sequencer-1)
+* method = $loinc#LA26398-0 "Sequencing"
 
 // =============================================================================
 // 12. MII_PR_MTB_Copy_Number_Variant (Observation, extends MolGen Variante)
@@ -128,6 +142,11 @@ Description: "Test instance for CNV (ERBB2 amplification) with all MS component 
 * component[relative-copy-number].valueQuantity.value = 3.8
 * component[relative-copy-number].valueQuantity.system = $ucum
 * component[relative-copy-number].valueQuantity.code = #1
+* effectiveDateTime = "2024-02-25"
+* issued = "2024-03-01T09:00:00+01:00"
+* specimen = Reference(mii-exa-test-data-mtb-specimen-1)
+* device = Reference(mii-exa-test-data-mtb-device-sequencer-1)
+* method = $loinc#LA26398-0 "Sequencing"
 
 // =============================================================================
 // 13. MII_PR_MTB_DNA_Fusion (Observation, extends MolGen Variante)
@@ -150,6 +169,11 @@ Description: "Test instance for DNA fusion variant (EML4-ALK)"
 * focus = Reference(mii-exa-test-data-mtb-diagnose-primaertumor-1)
 * component[gene-studied][+].code = $loinc#48018-6 "Gene studied [ID]"
 * component[gene-studied][=].valueCodeableConcept = $HGNC#HGNC:427 "ALK"
+* effectiveDateTime = "2024-02-25"
+* issued = "2024-03-01T09:00:00+01:00"
+* specimen = Reference(mii-exa-test-data-mtb-specimen-1)
+* device = Reference(mii-exa-test-data-mtb-device-sequencer-1)
+* method = $loinc#LA26398-0 "Sequencing"
 
 // =============================================================================
 // 14. MII_PR_MTB_RNA_Fusion (Observation, extends MolGen Variante)
@@ -172,6 +196,11 @@ Description: "Test instance for RNA fusion variant (BCR-ABL1)"
 * focus = Reference(mii-exa-test-data-mtb-diagnose-primaertumor-1)
 * component[gene-studied][+].code = $loinc#48018-6 "Gene studied [ID]"
 * component[gene-studied][=].valueCodeableConcept = $HGNC#HGNC:76 "ABL1"
+* effectiveDateTime = "2024-02-25"
+* issued = "2024-03-01T09:00:00+01:00"
+* specimen = Reference(mii-exa-test-data-mtb-specimen-1)
+* device = Reference(mii-exa-test-data-mtb-device-sequencer-1)
+* method = $loinc#LA26398-0 "Sequencing"
 
 // =============================================================================
 // 15. MII_PR_MTB_RNA_Seq (Observation, extends MolGen Variante)
@@ -194,6 +223,11 @@ Description: "Test instance for RNA sequencing observation"
 * focus = Reference(mii-exa-test-data-mtb-diagnose-primaertumor-1)
 * component[gene-studied].code = $loinc#48018-6 "Gene studied [ID]"
 * component[gene-studied].valueCodeableConcept = $HGNC#HGNC:7989 "NRAS"
+* effectiveDateTime = "2024-02-25"
+* issued = "2024-03-01T09:00:00+01:00"
+* specimen = Reference(mii-exa-test-data-mtb-specimen-1)
+* device = Reference(mii-exa-test-data-mtb-device-sequencer-1)
+* method = $loinc#LA26398-0 "Sequencing"
 
 // =============================================================================
 // 16. MII_PR_MTB_Diagnostische_Implikation (Observation, extends MolGen)
@@ -213,6 +247,12 @@ Description: "Test instance for diagnostic implication of EGFR variant"
 * derivedFrom = Reference(mii-exa-test-data-mtb-einfache-variante-1)
 * component[clinical-significance].code = $loinc#53037-8
 * component[clinical-significance].valueCodeableConcept = $loinc#LA6668-3 "Pathogenic"
+* effectiveDateTime = "2024-03-05"
+* issued = "2024-03-05T12:00:00+01:00"
+* encounter = Reference(mii-exa-test-data-mtb-encounter-1)
+* focus = Reference(mii-exa-test-data-mtb-diagnose-primaertumor-1)
+* extension[workflow-relatedArtifact].valueRelatedArtifact.type = #citation
+* extension[workflow-relatedArtifact].valueRelatedArtifact.citation = "Soria JC et al. Osimertinib in Untreated EGFR-Mutated Advanced NSCLC. N Engl J Med 2018. PMID 29151359"
 
 // =============================================================================
 // 17. MII_PR_MTB_Therapeutische_Implikation (Observation, extends MolGen)
@@ -234,7 +274,12 @@ Description: "Test instance for therapeutic implication with evidence grading"
 * component[conclusion-string].valueString = "EGFR L858R mutation predicts sensitivity to EGFR TKI therapy (EL m1A)."
 * component[medication-assessed].code = $loinc#51963-7 "Medication assessed [ID]"
 * component[medication-assessed].valueCodeableConcept = $atc#L01EB01 "Gefitinib"
+* component[medication-assessed].valueCodeableConcept.coding.version = "2024"
 * extension[Evidenzgraduierung].valueCodeableConcept.coding[Evidenzgrad] = #m1A
+* effectiveDateTime = "2024-03-05"
+* issued = "2024-03-05T12:00:00+01:00"
+* encounter = Reference(mii-exa-test-data-mtb-encounter-1)
+* focus = Reference(mii-exa-test-data-mtb-diagnose-primaertumor-1)
 
 // =============================================================================
 // 18. MII_PR_MTB_Molekularer_Biomarker (Observation, extends MolGen)
@@ -252,6 +297,13 @@ Description: "Test instance for molecular biomarker base profile"
 * code = $loinc#69548-6 "Genetic variant assessment"
 * subject = Reference(mii-exa-test-data-mtb-patient-1)
 * valueCodeableConcept = $loinc#LA9633-4 "Present"
+* effectiveDateTime = "2024-03-01"
+* issued = "2024-03-01T10:00:00+01:00"
+* encounter = Reference(mii-exa-test-data-mtb-encounter-1)
+* focus = Reference(mii-exa-test-data-mtb-diagnose-primaertumor-1)
+* derivedFrom = Reference(mii-exa-test-data-mtb-einfache-variante-1)
+* component[gene-studied].valueCodeableConcept = $HGNC#HGNC:3236 "EGFR"
+* component[biomarker-category].valueCodeableConcept = $mbo-category#protein "protein category"
 
 // =============================================================================
 // 19. MII_PR_MTB_Mutationslast (Observation, extends MTB Molekularer Biomarker)
@@ -273,6 +325,14 @@ Description: "Test instance for tumor mutational burden"
 * valueQuantity.system = $ucum
 * valueQuantity.code = #{Mutations}/1000000{Base}
 * interpretation = http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation#H "High"
+* effectiveDateTime = "2024-03-01"
+* issued = "2024-03-01T10:00:00+01:00"
+* encounter = Reference(mii-exa-test-data-mtb-encounter-1)
+* focus = Reference(mii-exa-test-data-mtb-diagnose-primaertumor-1)
+* specimen = Reference(mii-exa-test-data-mtb-specimen-1)
+* derivedFrom = Reference(mii-exa-test-data-mtb-einfache-variante-1)
+* component[gene-studied].valueCodeableConcept = $HGNC#HGNC:3236 "EGFR"
+* component[biomarker-category].valueCodeableConcept = $mbo-category#nucleicAcid "nucleic acid category"
 
 // =============================================================================
 // 20. MII_PR_MTB_Mikrosatelliteninstabilitaet (Observation, extends MTB Molekularer Biomarker)
@@ -293,6 +353,16 @@ Description: "Test instance for microsatellite instability"
 * valueQuantity.unit = "ratio"
 * valueQuantity.system = $ucum
 * valueQuantity.code = #1
+* effectiveDateTime = "2024-03-01"
+* issued = "2024-03-01T10:00:00+01:00"
+* encounter = Reference(mii-exa-test-data-mtb-encounter-1)
+* focus = Reference(mii-exa-test-data-mtb-diagnose-primaertumor-1)
+* interpretation = $v3-interpretation#N "Normal"
+* method = $loinc#LA26398-0 "Sequencing"
+* specimen = Reference(mii-exa-test-data-mtb-specimen-1)
+* derivedFrom = Reference(mii-exa-test-data-mtb-einfache-variante-1)
+* component[gene-studied].valueCodeableConcept = $HGNC#HGNC:3236 "EGFR"
+* component[biomarker-category].valueCodeableConcept = $mbo-category#nucleicAcid "nucleic acid category"
 
 // =============================================================================
 // 21. MII_PR_MTB_HRD_Score (Observation, extends MTB Molekularer Biomarker)
@@ -315,6 +385,14 @@ Description: "Test instance for homologous recombination deficiency score with s
 * component[LST].valueInteger = 15
 * component[TAI].valueInteger = 14
 * component[LOH].valueInteger = 13
+* effectiveDateTime = "2024-03-01"
+* issued = "2024-03-01T10:00:00+01:00"
+* encounter = Reference(mii-exa-test-data-mtb-encounter-1)
+* focus = Reference(mii-exa-test-data-mtb-diagnose-primaertumor-1)
+* identifier.system = "https://www.charite.de/fhir/sid/mtb-befund"
+* identifier.value = "HRD-2024-001"
+* specimen = Reference(mii-exa-test-data-mtb-specimen-1)
+* derivedFrom = Reference(mii-exa-test-data-mtb-einfache-variante-1)
 
 // =============================================================================
 // 22. MII_PR_MTB_BRCAness (Observation, extends MTB Molekularer Biomarker)
@@ -335,6 +413,16 @@ Description: "Test instance for BRCAness assessment"
 * valueQuantity.system = $ucum
 * valueQuantity.code = #1
 * interpretation = http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation#POS "Positive"
+* effectiveDateTime = "2024-03-01"
+* issued = "2024-03-01T10:00:00+01:00"
+* encounter = Reference(mii-exa-test-data-mtb-encounter-1)
+* focus = Reference(mii-exa-test-data-mtb-diagnose-primaertumor-1)
+* identifier.system = "https://www.charite.de/fhir/sid/mtb-befund"
+* identifier.value = "BRCANESS-2024-001"
+* specimen = Reference(mii-exa-test-data-mtb-specimen-1)
+* derivedFrom = Reference(mii-exa-test-data-mtb-einfache-variante-1)
+* component[gene-studied].valueCodeableConcept = $HGNC#HGNC:1100 "BRCA1"
+* component[biomarker-category].valueCodeableConcept = $mbo-category#nucleicAcid "nucleic acid category"
 
 // =============================================================================
 // 23. MII_PR_MTB_Ploidie (Observation, extends MTB Molekularer Biomarker)
@@ -354,6 +442,14 @@ Description: "Test instance for ploidy assessment"
 * valueQuantity.value = 2.3
 * valueQuantity.system = $ucum
 * valueQuantity.code = #1
+* effectiveDateTime = "2024-03-01"
+* issued = "2024-03-01T10:00:00+01:00"
+* encounter = Reference(mii-exa-test-data-mtb-encounter-1)
+* focus = Reference(mii-exa-test-data-mtb-diagnose-primaertumor-1)
+* interpretation = $v3-interpretation#N "Normal"
+* derivedFrom = Reference(mii-exa-test-data-mtb-einfache-variante-1)
+* component[gene-studied].valueCodeableConcept = $HGNC#HGNC:3236 "EGFR"
+* component[biomarker-category].valueCodeableConcept = $mbo-category#nucleicAcid "nucleic acid category"
 
 // =============================================================================
 // 24. MII_PR_MTB_BIOMARKER_HER2_STATUS (Observation, extends MTB Molekularer Biomarker)
@@ -371,6 +467,13 @@ Description: "Test instance for HER2 biomarker status"
 * code = $loinc#48676-1 "HER2 Ag [Interpretation] in Tissue"
 * subject = Reference(mii-exa-test-data-mtb-patient-1)
 * valueCodeableConcept = $loinc#LA6576-8 "Positive"
+* effectiveDateTime = "2024-03-01"
+* issued = "2024-03-01T10:00:00+01:00"
+* encounter = Reference(mii-exa-test-data-mtb-encounter-1)
+* focus = Reference(mii-exa-test-data-mtb-diagnose-primaertumor-1)
+* derivedFrom = Reference(mii-exa-test-data-mtb-einfache-variante-1)
+* component[gene-studied].valueCodeableConcept = $HGNC#HGNC:3430 "ERBB2"
+* component[biomarker-category].valueCodeableConcept = $mbo-category#molgen "molecular sequence adjacent category"
 
 // =============================================================================
 // 25. MII_PR_MTB_Molecular_Pathology_Report (DiagnosticReport)
@@ -387,6 +490,8 @@ Description: "Test instance for molecular pathology report"
 * code = $loinc#60568-3 "Pathology synoptic report"
 * subject = Reference(mii-exa-test-data-mtb-patient-1)
 * result[+] = Reference(mii-exa-test-data-mtb-immunohistochemistry-1)
+* issued = "2024-03-10T09:00:00+01:00"
+* specimen = Reference(mii-exa-test-data-mtb-specimen-1)
 
 // =============================================================================
 // 26. MII_PR_MTB_Immunohistochemistry (Observation, extends MTB Molekularer Biomarker)
@@ -411,6 +516,14 @@ Description: "Test instance for immunohistochemistry observation"
 * valueQuantity.system = $ucum
 * component[gene-studied].code.coding = $loinc#48018-6 "Gene studied [ID]"
 * component[gene-studied].valueCodeableConcept.coding = $HGNC#HGNC:17635 "CD274"
+* effectiveDateTime = "2024-03-08"
+* issued = "2024-03-10T09:00:00+01:00"
+* encounter = Reference(mii-exa-test-data-mtb-encounter-1)
+* focus = Reference(mii-exa-test-data-mtb-diagnose-primaertumor-1)
+* identifier.system = "https://www.charite.de/fhir/sid/mtb-befund"
+* identifier.value = "IHC-2024-001"
+* interpretation = $v3-interpretation#POS "Positive"
+* derivedFrom = Reference(mii-exa-test-data-mtb-einfache-variante-1)
 
 // =============================================================================
 // 27. MII_PR_MTB_IMMUNOHISTOCHEMISTRY_HER2 (Observation, extends MTB Immunohistochemistry)
@@ -432,6 +545,14 @@ Description: "Test instance for HER2 immunohistochemistry"
 * valueCodeableConcept = $loinc#LA6576-8 "Positive"
 * component[gene-studied].code.coding = $loinc#48018-6 "Gene studied [ID]"
 * component[gene-studied].valueCodeableConcept.coding = $HGNC#HGNC:3430 "ERBB2"
+* effectiveDateTime = "2024-03-08"
+* issued = "2024-03-10T09:00:00+01:00"
+* encounter = Reference(mii-exa-test-data-mtb-encounter-1)
+* focus = Reference(mii-exa-test-data-mtb-diagnose-primaertumor-1)
+* identifier.system = "https://www.charite.de/fhir/sid/mtb-befund"
+* identifier.value = "IHC-2024-002"
+* interpretation = $v3-interpretation#POS "Positive"
+* derivedFrom = Reference(mii-exa-test-data-mtb-einfache-variante-1)
 
 // =============================================================================
 // 28. MII_PR_MTB_Immunohistochemistry_PDL1 (Observation, extends MTB Immunohistochemistry)
@@ -455,6 +576,35 @@ Description: "Test instance for PD-L1 immunohistochemistry with all MS elements"
 * valueQuantity.code = #{/100}
 * valueQuantity.system = $ucum
 * interpretation = http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation#POS "Positive"
+* effectiveDateTime = "2024-03-08"
+* issued = "2024-03-10T09:00:00+01:00"
+* encounter = Reference(mii-exa-test-data-mtb-encounter-1)
+* focus = Reference(mii-exa-test-data-mtb-diagnose-primaertumor-1)
+* identifier.system = "https://www.charite.de/fhir/sid/mtb-befund"
+* identifier.value = "IHC-2024-003"
+* derivedFrom = Reference(mii-exa-test-data-mtb-einfache-variante-1)
+* component[gene-studied].valueCodeableConcept = $HGNC#HGNC:17635 "CD274"
+* component[biomarker-category].valueCodeableConcept = $mbo-category#immuneStain "immune stain category"
+* component[tps-score].valueQuantity.value = 80
+* component[tps-score].valueQuantity.unit = "%"
+* component[tps-score].valueQuantity.system = $ucum
+* component[tps-score].valueQuantity.code = #%
+* component[tps-score].interpretation = $v3-interpretation#POS "Positive"
+* component[cps-score].valueQuantity.value = 85
+* component[cps-score].valueQuantity.unit = "{score}"
+* component[cps-score].valueQuantity.system = $ucum
+* component[cps-score].valueQuantity.code = #{score}
+* component[cps-score].interpretation = $v3-interpretation#POS "Positive"
+* component[ics-score].valueQuantity.value = 5
+* component[ics-score].valueQuantity.unit = "%"
+* component[ics-score].valueQuantity.system = $ucum
+* component[ics-score].valueQuantity.code = #%
+* component[ics-score].interpretation = $v3-interpretation#POS "Positive"
+* component[tc-score].valueQuantity.value = 80
+* component[tc-score].valueQuantity.unit = "%"
+* component[tc-score].valueQuantity.system = $ucum
+* component[tc-score].valueQuantity.code = #%
+* component[tc-score].interpretation = $v3-interpretation#POS "Positive"
 
 // =============================================================================
 // 29. MII_PR_MTB_Immunohistochemistry_Phosphorylation (Observation, extends MTB IHC)
@@ -476,6 +626,14 @@ Description: "Test instance for phosphorylation immunohistochemistry"
 * valueCodeableConcept = $loinc#LA6576-8 "Positive"
 * component[gene-studied].code.coding = $loinc#48018-6 "Gene studied [ID]"
 * component[gene-studied].valueCodeableConcept.coding = $HGNC#HGNC:3236 "EGFR"
+* effectiveDateTime = "2024-03-08"
+* issued = "2024-03-10T09:00:00+01:00"
+* encounter = Reference(mii-exa-test-data-mtb-encounter-1)
+* focus = Reference(mii-exa-test-data-mtb-diagnose-primaertumor-1)
+* identifier.system = "https://www.charite.de/fhir/sid/mtb-befund"
+* identifier.value = "IHC-2024-004"
+* interpretation = $v3-interpretation#POS "Positive"
+* derivedFrom = Reference(mii-exa-test-data-mtb-einfache-variante-1)
 
 // =============================================================================
 // 30. MII_PR_MTB_Immunohistochemistry_MMR (Observation, extends MTB Molekularer Biomarker)
@@ -496,6 +654,27 @@ Description: "Test instance for mismatch repair protein immunohistochemistry"
 * subject = Reference(mii-exa-test-data-mtb-patient-1)
 * specimen = Reference(mii-exa-test-data-mtb-specimen-1)
 * valueCodeableConcept.coding = $loinc#LA6576-8 "Positive"
+* effectiveDateTime = "2024-03-08"
+* issued = "2024-03-10T09:00:00+01:00"
+* encounter = Reference(mii-exa-test-data-mtb-encounter-1)
+* focus = Reference(mii-exa-test-data-mtb-diagnose-primaertumor-1)
+* identifier.system = "https://www.charite.de/fhir/sid/mtb-befund"
+* identifier.value = "IHC-2024-005"
+* derivedFrom = Reference(mii-exa-test-data-mtb-einfache-variante-1)
+* component[gene-studied].valueCodeableConcept = $HGNC#HGNC:7127 "MLH1"
+* component[biomarker-category].valueCodeableConcept = $mbo-category#immuneStain "immune stain category"
+* component[mmr-mlh1].code.coding = $loinc#81691-8 "MLH-1 Ag [Presence] in Cancer specimen by Immune stain"
+* component[mmr-mlh1].valueCodeableConcept.coding = $loinc#LA26197-6 "Intact nuclear expression"
+* component[mmr-mlh3].code.coding = $loinc#96272-0 "DNA mismatch repair protein Mlh3 Ag [Presence] in Cancer specimen by Immune stain"
+* component[mmr-mlh3].valueCodeableConcept.coding = $loinc#LA26197-6 "Intact nuclear expression"
+* component[mmr-msh2].code.coding = $loinc#81692-6 "MSH-2 Ag [Presence] in Cancer specimen by Immune stain"
+* component[mmr-msh2].valueCodeableConcept.coding = $loinc#LA26197-6 "Intact nuclear expression"
+* component[mmr-msh3].code.coding = $loinc#96271-2 "DNA mismatch repair protein Msh3 Ag [Presence] in Cancer specimen by Immune stain"
+* component[mmr-msh3].valueCodeableConcept.coding = $loinc#LA26197-6 "Intact nuclear expression"
+* component[mmr-msh6].code.coding = $loinc#81693-4 "MSH-6 Ag [Presence] in Cancer specimen by Immune stain"
+* component[mmr-msh6].valueCodeableConcept.coding = $loinc#LA26197-6 "Intact nuclear expression"
+* component[mmr-pms2].code.coding = $loinc#81694-2 "PMS2 Ag [Presence] in Cancer specimen by Immune stain"
+* component[mmr-pms2].valueCodeableConcept.coding = $loinc#LA26197-6 "Intact nuclear expression"
 
 // =============================================================================
 // 31. MII_PR_MTB_Immunohistochemistry_MSI (Observation, extends MolGen MSI)
@@ -514,6 +693,14 @@ Description: "Test instance for MSI by immunohistochemistry"
 * subject = Reference(mii-exa-test-data-mtb-patient-1)
 * specimen = Reference(mii-exa-test-data-mtb-specimen-1)
 * valueCodeableConcept = $loinc#LA14122-8 "Stable"
+* effectiveDateTime = "2024-03-08"
+* issued = "2024-03-10T09:00:00+01:00"
+* encounter = Reference(mii-exa-test-data-mtb-encounter-1)
+* identifier.system = "https://www.charite.de/fhir/sid/mtb-befund"
+* identifier.value = "IHC-2024-006"
+* derivedFrom = Reference(mii-exa-test-data-mtb-einfache-variante-1)
+* component[gene-studied].valueCodeableConcept = $HGNC#HGNC:7127 "MLH1"
+* component[biomarker-category].valueCodeableConcept = $mbo-category#immuneStain "immune stain category"
 
 // =============================================================================
 // 32. MII_PR_MTB_Biomarker_InSituHybridization (Observation, extends MTB Molekularer Biomarker)
@@ -536,6 +723,15 @@ Description: "Test instance for in situ hybridization biomarker"
 * valueRatio.numerator.value = 2.4
 * valueRatio.denominator.value = 1
 * interpretation = $SCT#260385009 "Negative (qualifier value)"
+* effectiveDateTime = "2024-03-08"
+* issued = "2024-03-10T09:00:00+01:00"
+* encounter = Reference(mii-exa-test-data-mtb-encounter-1)
+* focus = Reference(mii-exa-test-data-mtb-diagnose-primaertumor-1)
+* identifier.system = "https://www.charite.de/fhir/sid/mtb-befund"
+* identifier.value = "ISH-2024-001"
+* derivedFrom = Reference(mii-exa-test-data-mtb-einfache-variante-1)
+* component[gene-studied].valueCodeableConcept = $HGNC#HGNC:3430 "ERBB2"
+* component[biomarker-category].valueCodeableConcept = $mbo-category#nucleicAcid "nucleic acid category"
 
 // =============================================================================
 // 33. MII_PR_MTB_INSITUHYBRIDIZATION_HER2 (Observation, extends MTB InSituHybridization)
@@ -564,6 +760,13 @@ Description: "Test instance for HER2 FISH with all component slices"
 * component[reference-signals].valueQuantity.unit = "#"
 * component[cells-counted].valueQuantity.value = 60
 * component[cells-counted].valueQuantity.unit = "#"
+* effectiveDateTime = "2024-03-08"
+* issued = "2024-03-10T09:00:00+01:00"
+* encounter = Reference(mii-exa-test-data-mtb-encounter-1)
+* focus = Reference(mii-exa-test-data-mtb-diagnose-primaertumor-1)
+* identifier.system = "https://www.charite.de/fhir/sid/mtb-befund"
+* identifier.value = "ISH-2024-002"
+* derivedFrom = Reference(mii-exa-test-data-mtb-einfache-variante-1)
 
 // =============================================================================
 // 34. MII_PR_MTB_Tumorzellgehalt (Observation)
