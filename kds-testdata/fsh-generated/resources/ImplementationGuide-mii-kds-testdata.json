@@ -655,6 +655,14 @@
       },
       {
         "reference": {
+          "reference": "Condition/mii-exa-test-data-biobank-diagnose-3"
+        },
+        "name": "mii-exa-test-data-biobank-diagnose-3",
+        "description": "Biobank Diagnose Patient 3: Kolonkarzinom",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Observation/mii-exa-test-data-biobank-dna-konzentration-1"
         },
         "name": "mii-exa-test-data-biobank-dna-konzentration-1",
@@ -2527,6 +2535,14 @@
       },
       {
         "reference": {
+          "reference": "Observation/mii-exa-test-data-mikrobio-allgemeine-bestimmung-quant-1"
+        },
+        "name": "mii-exa-test-data-mikrobio-allgemeine-bestimmung-quant-1",
+        "description": "Mikrobio: allgemeine-bestimmung — semiquantitative Bakterienmenge im Direktpraeparat (valueQuantity-Variante)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Observation/mii-exa-test-data-mikrobio-allgemeine-kultur-1"
         },
         "name": "mii-exa-test-data-mikrobio-allgemeine-kultur-1",
@@ -2547,6 +2563,14 @@
         },
         "name": "mii-exa-test-data-mikrobio-allgemeine-kultur-dar-1",
         "description": "Mikrobio: Allgemeine Kultur — Ergebnis fehlt (Probe abgelaufen)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-mikrobio-allgemeine-kultur-quant-1"
+        },
+        "name": "mii-exa-test-data-mikrobio-allgemeine-kultur-quant-1",
+        "description": "Mikrobio: allgemeine-kultur — semiquantitativer Wachstumsgrad (valueQuantity-Variante)",
         "exampleBoolean": true
       },
       {
@@ -2895,6 +2919,14 @@
       },
       {
         "reference": {
+          "reference": "Observation/mii-exa-test-data-mikrobio-mrgn-klasse-quant-1"
+        },
+        "name": "mii-exa-test-data-mikrobio-mrgn-klasse-quant-1",
+        "description": "Mikrobio: mrgn-klasse — Anzahl resistenter Antibiotikagruppen (valueQuantity-Variante)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Observation/mii-exa-test-data-mikrobio-nugent-cc-1"
         },
         "name": "mii-exa-test-data-mikrobio-nugent-cc-1",
@@ -2955,6 +2987,14 @@
         },
         "name": "mii-exa-test-data-mikrobio-probe-1",
         "description": "Mikrobio Probe: Sputum (fuer spezifische Mikroskopie auf saeurefeste Staebchen)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Specimen/mii-exa-test-data-mikrobio-probe-2"
+        },
+        "name": "mii-exa-test-data-mikrobio-probe-2",
+        "description": "Mikrobio Probe: intraoperative Kolon-Gewebeprobe zur Erregerdiagnostik",
         "exampleBoolean": true
       },
       {

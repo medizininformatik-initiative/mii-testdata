@@ -10,6 +10,9 @@ Description: "Specimen: EDTA-Blut für Klinische Chemie und Hämatologie"
 * extension[gehoertZu].valueReference = Reference(mii-exa-test-data-organization-biobank-charite)
 * extension[festgestellteDiagnose].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Diagnose"
 * extension[festgestellteDiagnose].valueReference = Reference(mii-exa-test-data-biobank-diagnose-1)
+// Probenebene und Infektiositaetsstatus (SpecimenCore-Extensions)
+* extension[probenebene].valueCoding = https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/CodeSystem/mii-cs-biobank-probenebene#PRIMÄRPROBE "Primärprobe"
+* extension[infektiositaetsstatus].valueCodeableConcept = $sct#409603009 "Biosafety level 2 (qualifier value)"
 * identifier.system = "https://www.charite.de/fhir/sid/Bioproben"
 * identifier.value = "BP_000001"
 * status = #available
@@ -553,6 +556,14 @@ Description: "Specimen: Kolon-Tumor-Organoid, abgeleitet aus der Gewebeprobe von
 * extension[modifikationen].extension[zielGen].valueCoding = $genenames#TP53 "tumor protein p53"
 * extension[modifikationen].extension[protokoll].valueReference = Reference(mii-exa-test-data-biobank-crispr-protokoll-1)
 * extension[anzahlPassagen].valueInteger = 3
+// Verwaltende Organisation und zugrundeliegende Diagnose (Biobank-Specimen-Extensions)
+* extension[gehoertZu].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/VerwaltendeOrganisation"
+* extension[gehoertZu].valueReference = Reference(mii-exa-test-data-organization-biobank-charite)
+* extension[festgestellteDiagnose].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Diagnose"
+* extension[festgestellteDiagnose].valueReference = Reference(mii-exa-test-data-biobank-diagnose-3)
+// Probenebene und Infektiositaetsstatus (SpecimenCore-Extensions)
+* extension[probenebene].valueCoding = https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/CodeSystem/mii-cs-biobank-probenebene#ALIQUOT "Aliquot"
+* extension[infektiositaetsstatus].valueCodeableConcept = $sct#409603009 "Biosafety level 2 (qualifier value)"
 * identifier.system = "https://www.charite.de/fhir/sid/Bioproben"
 * identifier.value = "BP_000020"
 * status = #available
@@ -595,6 +606,9 @@ Usage: #example
 Description: "Specimen (Core): DNA-Probe, extrahiert aus dem EDTA-Blut von Biobank-Patient 1"
 * insert TestDataLabel
 * meta.source = "https://www.charite.de/fhir/kds-testdata"
+// Probenebene und Infektiositaetsstatus (SpecimenCore-Extensions)
+* extension[probenebene].valueCoding = https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/CodeSystem/mii-cs-biobank-probenebene#ALIQUOT "Aliquot"
+* extension[infektiositaetsstatus].valueCodeableConcept = $sct#409603009 "Biosafety level 2 (qualifier value)"
 * identifier.system = "https://www.charite.de/fhir/sid/Bioproben"
 * identifier.value = "BP_000021"
 * status = #available

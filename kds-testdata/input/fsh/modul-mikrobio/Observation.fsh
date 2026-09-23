@@ -167,6 +167,7 @@ Description: "Mikrobio: Mikroskopie — Gram-positive Kokken in Haufen"
 * specimen = Reference(mii-exa-test-data-mikrobio-specimen-1)
 * specimen.identifier.system = "https://www.charite.de/fhir/sid/Probennummer"
 * specimen.identifier.value = "BLOOD-CULT-001"
+* extension[faerbung].valueCodeableConcept = $sct#62777006 "Gram stain method"
 * code.coding = $loinc#105059-0 "Microscopic observation [Identifier] in Specimen by Light microscopy"
 * code.coding.display = "Microscopic observation [Identifier] in Specimen"
 * valueCodeableConcept.coding = $sct#70003006 "Gram-positive cocci in clusters (finding)"

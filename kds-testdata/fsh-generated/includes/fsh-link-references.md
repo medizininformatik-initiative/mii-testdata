@@ -71,6 +71,7 @@
 [mii-exa-test-data-bildgebungsstudie]: ImagingStudy-mii-exa-test-data-bildgebungsstudie.html
 [mii-exa-test-data-biobank-crispr-protokoll-1]: DocumentReference-mii-exa-test-data-biobank-crispr-protokoll-1.html
 [mii-exa-test-data-biobank-diagnose-1]: Condition-mii-exa-test-data-biobank-diagnose-1.html
+[mii-exa-test-data-biobank-diagnose-3]: Condition-mii-exa-test-data-biobank-diagnose-3.html
 [mii-exa-test-data-biobank-dna-konzentration-1]: Observation-mii-exa-test-data-biobank-dna-konzentration-1.html
 [mii-exa-test-data-biobank-encounter-1]: Encounter-mii-exa-test-data-biobank-encounter-1.html
 [mii-exa-test-data-biobank-karyotyp-1]: Observation-mii-exa-test-data-biobank-karyotyp-1.html
@@ -305,9 +306,11 @@
 [mii-exa-test-data-mikrobio-allgemeine-bestimmung-1]: Observation-mii-exa-test-data-mikrobio-allgemeine-bestimmung-1.html
 [mii-exa-test-data-mikrobio-allgemeine-bestimmung-alt-1]: Observation-mii-exa-test-data-mikrobio-allgemeine-bestimmung-alt-1.html
 [mii-exa-test-data-mikrobio-allgemeine-bestimmung-dar-1]: Observation-mii-exa-test-data-mikrobio-allgemeine-bestimmung-dar-1.html
+[mii-exa-test-data-mikrobio-allgemeine-bestimmung-quant-1]: Observation-mii-exa-test-data-mikrobio-allgemeine-bestimmung-quant-1.html
 [mii-exa-test-data-mikrobio-allgemeine-kultur-1]: Observation-mii-exa-test-data-mikrobio-allgemeine-kultur-1.html
 [mii-exa-test-data-mikrobio-allgemeine-kultur-alt-1]: Observation-mii-exa-test-data-mikrobio-allgemeine-kultur-alt-1.html
 [mii-exa-test-data-mikrobio-allgemeine-kultur-dar-1]: Observation-mii-exa-test-data-mikrobio-allgemeine-kultur-dar-1.html
+[mii-exa-test-data-mikrobio-allgemeine-kultur-quant-1]: Observation-mii-exa-test-data-mikrobio-allgemeine-kultur-quant-1.html
 [mii-exa-test-data-mikrobio-antigen-antikoerper-1]: Observation-mii-exa-test-data-mikrobio-antigen-antikoerper-1.html
 [mii-exa-test-data-mikrobio-antigen-antikoerper-cc-1]: Observation-mii-exa-test-data-mikrobio-antigen-antikoerper-cc-1.html
 [mii-exa-test-data-mikrobio-antigen-antikoerper-quantitativ-alt-1]: Observation-mii-exa-test-data-mikrobio-antigen-antikoerper-quantitativ-alt-1.html
@@ -351,6 +354,7 @@
 [mii-exa-test-data-mikrobio-mrgn-klasse-1]: Observation-mii-exa-test-data-mikrobio-mrgn-klasse-1.html
 [mii-exa-test-data-mikrobio-mrgn-klasse-alt-1]: Observation-mii-exa-test-data-mikrobio-mrgn-klasse-alt-1.html
 [mii-exa-test-data-mikrobio-mrgn-klasse-dar-1]: Observation-mii-exa-test-data-mikrobio-mrgn-klasse-dar-1.html
+[mii-exa-test-data-mikrobio-mrgn-klasse-quant-1]: Observation-mii-exa-test-data-mikrobio-mrgn-klasse-quant-1.html
 [mii-exa-test-data-mikrobio-nugent-cc-1]: Observation-mii-exa-test-data-mikrobio-nugent-cc-1.html
 [mii-exa-test-data-mikrobio-nugent-score-1]: Observation-mii-exa-test-data-mikrobio-nugent-score-1.html
 [mii-exa-test-data-mikrobio-nugent-score-alt-1]: Observation-mii-exa-test-data-mikrobio-nugent-score-alt-1.html
@@ -359,6 +363,7 @@
 [mii-exa-test-data-mikrobio-pathogenlast-cc-1]: Observation-mii-exa-test-data-mikrobio-pathogenlast-cc-1.html
 [mii-exa-test-data-mikrobio-patient-1]: Patient-mii-exa-test-data-mikrobio-patient-1.html
 [mii-exa-test-data-mikrobio-probe-1]: Specimen-mii-exa-test-data-mikrobio-probe-1.html
+[mii-exa-test-data-mikrobio-probe-2]: Specimen-mii-exa-test-data-mikrobio-probe-2.html
 [mii-exa-test-data-mikrobio-resistenz-mech-alt-1]: Observation-mii-exa-test-data-mikrobio-resistenz-mech-alt-1.html
 [mii-exa-test-data-mikrobio-resistenz-mech-dar-1]: Observation-mii-exa-test-data-mikrobio-resistenz-mech-dar-1.html
 [mii-exa-test-data-mikrobio-resistenzkategorie-status-1]: Observation-mii-exa-test-data-mikrobio-resistenzkategorie-status-1.html

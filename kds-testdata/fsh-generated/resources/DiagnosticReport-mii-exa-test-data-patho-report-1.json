@@ -102,6 +102,15 @@
       "valueReference": {
         "reference": "Composition/mii-exa-test-data-patho-composition-1"
       }
+    },
+    {
+      "valueRelatedArtifact": {
+        "type": "predecessor",
+        "label": "E_22_318",
+        "display": "Vorbefund: Prostatastanzbiopsie vom 2022-11-08, kein Karzinomnachweis",
+        "url": "https://www.charite.de/fhir/sid/patho/report/E_22_318.pdf"
+      },
+      "url": "http://hl7.org/fhir/StructureDefinition/workflow-relatedArtifact"
     }
   ],
   "conclusionCode": [

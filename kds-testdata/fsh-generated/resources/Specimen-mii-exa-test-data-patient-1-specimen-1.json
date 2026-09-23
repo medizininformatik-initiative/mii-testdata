@@ -26,6 +26,26 @@
       "valueReference": {
         "reference": "Condition/mii-exa-test-data-biobank-diagnose-1"
       }
+    },
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/mii-ex-biobank-ebene",
+      "valueCoding": {
+        "code": "PRIMÄRPROBE",
+        "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/CodeSystem/mii-cs-biobank-probenebene",
+        "display": "Primärprobe"
+      }
+    },
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/mii-ex-biobank-infektiositaetsstatus",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "409603009",
+            "system": "http://snomed.info/sct",
+            "display": "Biosafety level 2 (qualifier value)"
+          }
+        ]
+      }
     }
   ],
   "identifier": [

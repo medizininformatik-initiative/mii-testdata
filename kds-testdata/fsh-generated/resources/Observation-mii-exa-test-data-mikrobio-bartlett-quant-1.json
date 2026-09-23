@@ -92,6 +92,14 @@
   "valueQuantity": {
     "system": "http://unitsofmeasure.org",
     "value": 1,
+    "_value": {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/quantity-precision",
+          "valueInteger": 0
+        }
+      ]
+    },
     "comparator": ">=",
     "unit": "1",
     "code": "1"

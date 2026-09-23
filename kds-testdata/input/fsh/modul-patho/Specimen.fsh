@@ -16,6 +16,10 @@ Description: "Tru-cut Biopsie aus der rechten lateralen Basis (periphere Zone)"
 * extension[=].extension[+].url = "description"
 * extension[=].extension[=].valueString = "Markiert mit roter Tinte"
 
+// Probenebene und Infektiositaetsstatus (aus SpecimenCore geerbt)
+* extension[probenebene].valueCoding = https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/CodeSystem/mii-cs-biobank-probenebene#PRIMÄRPROBE "Primärprobe"
+* extension[infektiositaetsstatus].valueCodeableConcept = $sct#409603009 "Biosafety level 2 (qualifier value)"
+
 * identifier[+]
   * type = http://terminology.hl7.org/CodeSystem/v2-0203#PLAC
   * system = "https://www.charite.de/fhir/sid/patho/untersuchungsauftrag"

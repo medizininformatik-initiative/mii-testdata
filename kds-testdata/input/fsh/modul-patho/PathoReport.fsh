@@ -52,6 +52,12 @@ Description: "Pathologiebericht für die 2-Stanzen-Prostatabiopsie (Stanze 01 po
 // Verweis auf die zugehörige Composition (R5-Backport-Extension)
 * extension[composition].valueReference = Reference(mii-exa-test-data-patho-composition-1)
 
+// Verweis auf den Vorbefund derselben Prostata (workflow-relatedArtifact)
+* extension[related-report].valueRelatedArtifact.type = $related-artifact-type#predecessor "Predecessor"
+* extension[related-report].valueRelatedArtifact.label = "E_22_318"
+* extension[related-report].valueRelatedArtifact.display = "Vorbefund: Prostatastanzbiopsie vom 2022-11-08, kein Karzinomnachweis"
+* extension[related-report].valueRelatedArtifact.url = "https://www.charite.de/fhir/sid/patho/report/E_22_318.pdf"
+
 * conclusion = "Azinäres Adenokarzinom der Prostata, Gleason-Score 7a (3+4), ISUP-Gradgruppe 2, Nachweis in 1 von 2 Stanzen (Stanze 01, rechts lateral basal), perineurale Infiltration. Stanze 03 tumorfrei."
 * conclusionCode = $sct#399068003 "Malignant tumor of prostate (disorder)"
 * meta.lastUpdated = "2024-01-20T16:00:00+01:00"

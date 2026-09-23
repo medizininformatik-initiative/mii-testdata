@@ -14,6 +14,28 @@
       "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore"
     ]
   },
+  "extension": [
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/mii-ex-biobank-ebene",
+      "valueCoding": {
+        "code": "ALIQUOT",
+        "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/CodeSystem/mii-cs-biobank-probenebene",
+        "display": "Aliquot"
+      }
+    },
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/mii-ex-biobank-infektiositaetsstatus",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "409603009",
+            "system": "http://snomed.info/sct",
+            "display": "Biosafety level 2 (qualifier value)"
+          }
+        ]
+      }
+    }
+  ],
   "identifier": [
     {
       "system": "https://www.charite.de/fhir/sid/Bioproben",
