@@ -10,6 +10,7 @@
       }
     ],
     "source": "https://www.charite.de/fhir/kds-testdata",
+    "lastUpdated": "2024-01-20T16:00:00+01:00",
     "profile": [
       "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding"
     ]
@@ -56,6 +57,42 @@
       "reference": "ServiceRequest/mii-exa-test-data-patho-request-1"
     }
   ],
+  "identifier": [
+    {
+      "system": "https://www.charite.de/fhir/sid/patho/befund",
+      "value": "E_24_001_GLEASON"
+    }
+  ],
+  "hasMember": [
+    {
+      "reference": "Observation/mii-exa-test-data-patho-primary-gleason-pattern"
+    },
+    {
+      "reference": "Observation/mii-exa-test-data-patho-secondary-gleason-pattern"
+    }
+  ],
+  "component": [
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "44641-9",
+            "system": "http://loinc.org",
+            "display": "Percent of Gleason pattern 4 and 5 in Prostate tumor"
+          }
+        ]
+      },
+      "dataAbsentReason": {
+        "coding": [
+          {
+            "code": "cannot-be-obtained",
+            "system": "http://terminology.hl7.org/CodeSystem/data-absent-reason",
+            "display": "Cannot Be Obtained"
+          }
+        ]
+      }
+    }
+  ],
   "derivedFrom": [
     {
       "reference": "Observation/mii-exa-test-data-patho-primary-gleason-pattern"
@@ -75,6 +112,15 @@
         "code": "57403001",
         "system": "http://snomed.info/sct",
         "display": "Gleason grade score 7"
+      }
+    ]
+  },
+  "method": {
+    "coding": [
+      {
+        "code": "104157003",
+        "system": "http://snomed.info/sct",
+        "display": "Light microscopy (procedure)"
       }
     ]
   }

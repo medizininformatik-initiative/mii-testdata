@@ -24,14 +24,46 @@
       {
         "system": "http://fhir.de/CodeSystem/bfarm/atc",
         "code": "L01CD01",
-        "display": "Paclitaxel"
+        "display": "Paclitaxel",
+        "version": "2021"
       }
     ]
   },
+  "dosageInstruction": [
+    {
+      "timing": {
+        "repeat": {
+          "boundsDuration": {
+            "system": "http://unitsofmeasure.org",
+            "value": 8,
+            "code": "wk",
+            "unit": "Wochen"
+          },
+          "when": [
+            "MORN"
+          ],
+          "offset": 30
+        }
+      },
+      "text": "175 mg/m2 i.v. bei Bedarf nach Vertraeglichkeit",
+      "asNeededCodeableConcept": {
+        "coding": [
+          {
+            "code": "422587007",
+            "system": "http://snomed.info/sct",
+            "display": "Nausea (finding)"
+          }
+        ]
+      }
+    }
+  ],
   "status": "active",
   "intent": "proposal",
   "subject": {
     "reference": "Patient/mii-exa-test-data-onko-patient-1"
   },
-  "authoredOn": "2021-06-20"
+  "authoredOn": "2021-06-20",
+  "priorPrescription": {
+    "reference": "MedicationRequest/mii-exa-test-data-onko-therapieempfehlung-medikation-1"
+  }
 }

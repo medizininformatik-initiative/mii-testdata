@@ -89,7 +89,8 @@
       {
         "code": "49223-1",
         "system": "http://loinc.org",
-        "display": "Colony count [#/volume] in Specimen by Visual count"
+        "display": "Colony count [#/volume] in Specimen by Visual count",
+        "version": "2.80"
       }
     ]
   },
@@ -149,6 +150,18 @@
       "text": "Signifikante Bakteriurie."
     }
   ],
+  "basedOn": [
+    {
+      "reference": "ServiceRequest/mii-exa-test-data-mikrobio-servicerequest-1"
+    }
+  ],
+  "device": {
+    "identifier": {
+      "system": "https://www.charite.de/fhir/sid/device-identifier",
+      "value": "BACTEC-001"
+    },
+    "reference": "Device/mii-exa-test-data-mikrobio-device-bactec-1"
+  },
   "status": "final",
   "effectiveDateTime": "2026-04-03T14:00:00+02:00",
   "_effectiveDateTime": {

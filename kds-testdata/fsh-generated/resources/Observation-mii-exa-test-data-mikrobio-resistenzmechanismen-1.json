@@ -103,7 +103,8 @@
       {
         "code": "48813-0",
         "system": "http://loinc.org",
-        "display": "Methicillin resistance mecA gene [Presence] by Molecular method"
+        "display": "Methicillin resistance mecA gene [Presence] by Molecular method",
+        "version": "2.80"
       }
     ]
   },
@@ -112,7 +113,8 @@
       {
         "code": "260373001",
         "system": "http://snomed.info/sct",
-        "display": "Detected (qualifier value)"
+        "display": "Detected (qualifier value)",
+        "version": "http://snomed.info/sct/900000000000207008/version/20250401"
       }
     ]
   },
@@ -139,6 +141,11 @@
   "note": [
     {
       "text": "mecA-Gen via PCR nachgewiesen."
+    }
+  ],
+  "basedOn": [
+    {
+      "reference": "ServiceRequest/mii-exa-test-data-mikrobio-servicerequest-1"
     }
   ],
   "status": "final",

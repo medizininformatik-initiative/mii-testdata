@@ -43,6 +43,7 @@
       },
       {
         "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20260701",
         "code": "1187491009",
         "display": "Sequential Organ Failure Assessment score (observable entity)"
       }
@@ -152,6 +153,35 @@
       "valueInteger": 1
     }
   ],
+  "performer": [
+    {
+      "reference": "Practitioner/mii-exa-test-data-icu-practitioner-1"
+    }
+  ],
+  "interpretation": [
+    {
+      "coding": [
+        {
+          "code": "H",
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "display": "High"
+        }
+      ]
+    }
+  ],
+  "hasMember": [
+    {
+      "reference": "Observation/mii-exa-test-data-patient-1-icu-score-gcs-1"
+    }
+  ],
+  "derivedFrom": [
+    {
+      "reference": "Observation/mii-exa-test-data-patient-1-icu-score-gcs-1"
+    },
+    {
+      "reference": "Observation/mii-exa-test-data-patient-1-icu-vent-horowitz-1"
+    }
+  ],
   "status": "final",
   "subject": {
     "reference": "Patient/mii-exa-test-data-icu-patient-1"
@@ -160,5 +190,6 @@
     "reference": "Encounter/mii-exa-test-data-icu-encounter-1"
   },
   "effectiveDateTime": "2024-05-06T09:00:00+02:00",
-  "valueInteger": 9
+  "valueInteger": 9,
+  "issued": "2024-05-06T11:00:00+02:00"
 }

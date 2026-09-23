@@ -17,6 +17,16 @@
   "code": {
     "coding": [
       {
+        "extension": [
+          {
+            "url": "http://fhir.de/StructureDefinition/seitenlokalisation",
+            "valueCoding": {
+              "code": "T",
+              "system": "https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_ICD_SEITENLOKALISATION",
+              "display": "trifft nicht zu"
+            }
+          }
+        ],
         "system": "http://fhir.de/CodeSystem/bfarm/ops",
         "code": "5-484.52",
         "display": "Rektumresektion unter Sphinktererhaltung: Tiefe anteriore Resektion: Offen chirurgisch mit Enterostoma und Blindverschluss",
@@ -31,7 +41,6 @@
   ],
   "extension": [
     {
-      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-operation-intention",
       "valueCodeableConcept": {
         "coding": [
           {
@@ -39,8 +48,35 @@
             "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-intention",
             "display": "kurativ"
           }
-        ]
+        ],
+        "text": "kurativ"
+      },
+      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-operation-intention"
+    },
+    {
+      "url": "http://fhir.de/StructureDefinition/ProzedurDokumentationsdatum",
+      "valueDateTime": "2021-10-01"
+    },
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Durchfuehrungsabsicht",
+      "valueCoding": {
+        "system": "http://snomed.info/sct",
+        "code": "262202000",
+        "display": "Therapeutic"
       }
+    },
+    {
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "E",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-operation-urgency",
+            "display": "Elektiveingriff"
+          }
+        ],
+        "text": "Elektiveingriff"
+      },
+      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-operation-urgency"
     }
   ],
   "usedCode": [
@@ -52,6 +88,54 @@
           "display": "Biopsy of colon"
         }
       ]
+    }
+  ],
+  "basedOn": [
+    {
+      "reference": "CarePlan/mii-exa-test-data-onko-tumorkonferenz-1"
+    }
+  ],
+  "bodySite": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "34402009",
+          "display": "Rectum structure (body structure)",
+          "version": "http://snomed.info/sct/900000000000207008/version/20240201"
+        }
+      ]
+    }
+  ],
+  "complication": [
+    {
+      "coding": [
+        {
+          "code": "N",
+          "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-operation-komplikation",
+          "display": "Nein"
+        }
+      ]
+    },
+    {
+      "coding": [
+        {
+          "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+          "code": "T81.0",
+          "version": "2021",
+          "display": "Blutung und Hämatom als Komplikation eines Eingriffes, anderenorts nicht klassifiziert"
+        }
+      ]
+    }
+  ],
+  "note": [
+    {
+      "text": "Tiefe anteriore Rektumresektion mit protektivem Enterostoma."
+    }
+  ],
+  "partOf": [
+    {
+      "reference": "Procedure/mii-exa-test-data-onko-systemische-therapie-1"
     }
   ],
   "status": "completed",
@@ -67,5 +151,17 @@
   "subject": {
     "reference": "Patient/mii-exa-test-data-onko-patient-1"
   },
-  "performedDateTime": "2021-09-30"
+  "performedDateTime": "2021-09-30",
+  "encounter": {
+    "reference": "Encounter/mii-exa-test-data-onko-encounter-1"
+  },
+  "outcome": {
+    "coding": [
+      {
+        "code": "R0",
+        "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-residualstatus",
+        "display": "Kein Residualtumor"
+      }
+    ]
+  }
 }

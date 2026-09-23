@@ -20,6 +20,16 @@
       "name": "Illumina NovaSeq 6000"
     }
   ],
+  "type": {
+    "coding": [
+      {
+        "code": "303607000",
+        "system": "http://snomed.info/sct",
+        "display": "Biomedical equipment"
+      }
+    ],
+    "text": "NGS-Sequenzierer"
+  },
   "manufacturer": "Illumina",
   "definition": {
     "reference": "DeviceDefinition/mii-exa-test-data-mtb-panel-devicedef-1"

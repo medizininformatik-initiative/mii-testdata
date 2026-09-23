@@ -43,6 +43,13 @@
     }
   ],
   "valueCodeableConcept": {
+    "coding": [
+      {
+        "code": "1663004",
+        "system": "http://snomed.info/sct",
+        "display": "Moderately differentiated (qualifier value)"
+      }
+    ],
     "text": "G2: mäßig differenziert"
   },
   "status": "final",

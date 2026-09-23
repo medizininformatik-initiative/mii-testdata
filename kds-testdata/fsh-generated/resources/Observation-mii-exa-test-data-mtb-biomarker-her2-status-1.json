@@ -33,6 +33,56 @@
       ]
     }
   ],
+  "focus": [
+    {
+      "reference": "Condition/mii-exa-test-data-mtb-diagnose-primaertumor-1"
+    }
+  ],
+  "derivedFrom": [
+    {
+      "reference": "Observation/mii-exa-test-data-mtb-einfache-variante-1"
+    }
+  ],
+  "component": [
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "48018-6"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://www.genenames.org/geneId",
+            "code": "HGNC:3430",
+            "display": "ERBB2"
+          }
+        ]
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs",
+            "code": "biomarker-category"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "molgen",
+            "system": "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/molecular-biomarker-ontology-cs",
+            "display": "molecular sequence adjacent category"
+          }
+        ]
+      }
+    }
+  ],
   "status": "final",
   "code": {
     "coding": [
@@ -54,5 +104,10 @@
         "display": "Positive"
       }
     ]
+  },
+  "effectiveDateTime": "2024-03-01",
+  "issued": "2024-03-01T10:00:00+01:00",
+  "encounter": {
+    "reference": "Encounter/mii-exa-test-data-mtb-encounter-1"
   }
 }

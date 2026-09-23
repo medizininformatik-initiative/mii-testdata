@@ -10,6 +10,7 @@
       }
     ],
     "source": "https://www.charite.de/fhir/kds-testdata",
+    "lastUpdated": "2024-01-20T16:00:00+01:00",
     "profile": [
       "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-attached-image"
     ]
@@ -27,6 +28,15 @@
     "url": "https://www.charite.de/fhir/sid/patho/image/E_24_001_A_1_1HE",
     "title": "HE-Schnitt Stanze 01"
   },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Fotodokumentation des HE-Schnitts der Prostatastanze 01</div>"
+  },
+  "partOf": [
+    {
+      "reference": "Media/mii-exa-test-data-patho-image-2"
+    }
+  ],
   "status": "completed",
   "modality": {
     "coding": [

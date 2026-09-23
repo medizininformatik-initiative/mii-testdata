@@ -103,7 +103,8 @@
       {
         "code": "100897-8",
         "system": "http://loinc.org",
-        "display": "Staphylococcus aureus [Presence] in Specimen by Organism specific culture"
+        "display": "Staphylococcus aureus [Presence] in Specimen by Organism specific culture",
+        "version": "2.80"
       }
     ]
   },
@@ -112,7 +113,8 @@
       {
         "code": "3092008",
         "system": "http://snomed.info/sct",
-        "display": "Staphylococcus aureus (organism)"
+        "display": "Staphylococcus aureus (organism)",
+        "version": "http://snomed.info/sct/900000000000207008/version/20250401"
       }
     ]
   },
@@ -128,6 +130,11 @@
   "note": [
     {
       "text": "Identifikation via spezifische Kultur."
+    }
+  ],
+  "basedOn": [
+    {
+      "reference": "ServiceRequest/mii-exa-test-data-mikrobio-servicerequest-1"
     }
   ],
   "status": "final",

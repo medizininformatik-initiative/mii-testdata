@@ -60,6 +60,30 @@
       ]
     }
   ],
+  "hasMember": [
+    {
+      "reference": "Observation/mii-exa-test-data-lungenfunktion-kco-1"
+    },
+    {
+      "reference": "Observation/mii-exa-test-data-lungenfunktion-hb-1"
+    }
+  ],
+  "referenceRange": [
+    {
+      "low": {
+        "value": 1.2,
+        "code": "mmol/(min.kPa.L)",
+        "system": "http://unitsofmeasure.org",
+        "unit": "mmol/(min.kPa.L)"
+      },
+      "high": {
+        "value": 1.8,
+        "code": "mmol/(min.kPa.L)",
+        "system": "http://unitsofmeasure.org",
+        "unit": "mmol/(min.kPa.L)"
+      }
+    }
+  ],
   "status": "final",
   "subject": {
     "reference": "Patient/mii-exa-test-data-lungenfunktion-patient-1"

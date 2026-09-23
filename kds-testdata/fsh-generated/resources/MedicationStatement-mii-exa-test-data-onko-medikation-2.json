@@ -19,7 +19,8 @@
       {
         "system": "http://fhir.de/CodeSystem/bfarm/atc",
         "code": "L01XA02",
-        "display": "Carboplatin"
+        "display": "Carboplatin",
+        "version": "2021"
       }
     ]
   },
@@ -35,6 +36,34 @@
   "note": [
     {
       "text": "CarboTax Schema"
+    }
+  ],
+  "dosage": [
+    {
+      "timing": {
+        "repeat": {
+          "boundsDuration": {
+            "system": "http://unitsofmeasure.org",
+            "value": 8,
+            "code": "wk",
+            "unit": "Wochen"
+          },
+          "when": [
+            "MORN"
+          ],
+          "offset": 30
+        }
+      },
+      "text": "AUC5 i.v. bei Bedarfsanpassung nach Nierenfunktion",
+      "asNeededCodeableConcept": {
+        "coding": [
+          {
+            "code": "428165003",
+            "system": "http://snomed.info/sct",
+            "display": "Renal impairment (disorder)"
+          }
+        ]
+      }
     }
   ],
   "status": "completed",

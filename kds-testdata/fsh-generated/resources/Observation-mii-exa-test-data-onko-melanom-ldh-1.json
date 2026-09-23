@@ -49,5 +49,8 @@
   "subject": {
     "reference": "Patient/mii-exa-test-data-onko-patient-1"
   },
-  "effectiveDateTime": "2021-06-18"
+  "effectiveDateTime": "2021-06-18",
+  "encounter": {
+    "reference": "Encounter/mii-exa-test-data-onko-encounter-1"
+  }
 }

@@ -51,21 +51,22 @@
       "valueString": "EGFR L858R mutation predicts sensitivity to EGFR TKI therapy (EL m1A)."
     },
     {
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "L01EB01",
+            "system": "http://fhir.de/CodeSystem/bfarm/atc",
+            "display": "Gefitinib",
+            "version": "2024"
+          }
+        ]
+      },
       "code": {
         "coding": [
           {
             "system": "http://loinc.org",
             "code": "51963-7",
             "display": "Medication assessed [ID]"
-          }
-        ]
-      },
-      "valueCodeableConcept": {
-        "coding": [
-          {
-            "code": "L01EB01",
-            "system": "http://fhir.de/CodeSystem/bfarm/atc",
-            "display": "Gefitinib"
           }
         ]
       }
@@ -84,6 +85,11 @@
       "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-ex-mtb-empfehlung-evidenzgraduierung"
     }
   ],
+  "focus": [
+    {
+      "reference": "Condition/mii-exa-test-data-mtb-diagnose-primaertumor-1"
+    }
+  ],
   "code": {
     "coding": [
       {
@@ -96,5 +102,10 @@
   "status": "final",
   "subject": {
     "reference": "Patient/mii-exa-test-data-mtb-patient-1"
+  },
+  "effectiveDateTime": "2024-03-05",
+  "issued": "2024-03-05T12:00:00+01:00",
+  "encounter": {
+    "reference": "Encounter/mii-exa-test-data-mtb-encounter-1"
   }
 }

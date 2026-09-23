@@ -18,6 +18,37 @@
     "start": "2024-05-01T18:00:00+02:00",
     "end": "2024-05-13T09:00:00+02:00"
   },
+  "extension": [
+    {
+      "url": "http://fhir.de/StructureDefinition/ProzedurDokumentationsdatum",
+      "valueDateTime": "2024-05-13T10:00:00+02:00"
+    },
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Durchfuehrungsabsicht",
+      "valueCoding": {
+        "system": "http://snomed.info/sct",
+        "code": "262202000",
+        "display": "Therapeutic"
+      }
+    }
+  ],
+  "bodySite": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "44567001",
+          "display": "Trachea structure (body structure)",
+          "version": "http://snomed.info/sct/900000000000207008/version/20260701"
+        }
+      ]
+    }
+  ],
+  "note": [
+    {
+      "text": "Invasive Beatmung mit ultraprotektiver Lungen-Ruhigstellung unter VV-ECMO, Extubation am 13.05."
+    }
+  ],
   "status": "completed",
   "subject": {
     "reference": "Patient/mii-exa-test-data-icu-patient-1"
@@ -42,5 +73,8 @@
         "display": "Controlled ventilation (procedure)"
       }
     ]
+  },
+  "recorder": {
+    "reference": "Practitioner/mii-exa-test-data-icu-practitioner-1"
   }
 }

@@ -79,7 +79,8 @@
       {
         "system": "http://loinc.org",
         "code": "101433-1",
-        "display": "Bacterial vaginosis score in Vaginal fluid Qualitative by Nugent"
+        "display": "Bacterial vaginosis score in Vaginal fluid Qualitative by Nugent",
+        "version": "2.80"
       }
     ]
   },
@@ -87,6 +88,14 @@
     "system": "http://unitsofmeasure.org",
     "code": "1",
     "value": 7,
+    "_value": {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/quantity-precision",
+          "valueInteger": 0
+        }
+      ]
+    },
     "comparator": ">=",
     "unit": "1"
   },
@@ -131,6 +140,18 @@
       "text": "Nugent-Score 7 spricht fuer bakterielle Vaginose."
     }
   ],
+  "basedOn": [
+    {
+      "reference": "ServiceRequest/mii-exa-test-data-mikrobio-servicerequest-1"
+    }
+  ],
+  "device": {
+    "identifier": {
+      "system": "https://www.charite.de/fhir/sid/device-identifier",
+      "value": "MIKROSKOP-001"
+    },
+    "reference": "Device/mii-exa-test-data-mikrobio-device-mikroskop-1"
+  },
   "status": "final",
   "effectiveDateTime": "2026-04-02T11:30:00+02:00",
   "_effectiveDateTime": {

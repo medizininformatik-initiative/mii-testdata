@@ -96,7 +96,8 @@
       {
         "code": "19000-9",
         "system": "http://loinc.org",
-        "display": "Vancomycin [Susceptibility]"
+        "display": "Vancomycin [Susceptibility]",
+        "version": "2.80"
       }
     ]
   },
@@ -170,6 +171,18 @@
       "text": "Vancomycin als empirische Therapie geeignet; gemaess EUCAST-Kriterien empfindlich."
     }
   ],
+  "basedOn": [
+    {
+      "reference": "ServiceRequest/mii-exa-test-data-mikrobio-servicerequest-1"
+    }
+  ],
+  "device": {
+    "identifier": {
+      "system": "https://www.charite.de/fhir/sid/device-identifier",
+      "value": "VITEK-001"
+    },
+    "reference": "Device/mii-exa-test-data-mikrobio-device-vitek-1"
+  },
   "status": "final",
   "effectiveDateTime": "2026-04-04T09:00:00+02:00",
   "_effectiveDateTime": {

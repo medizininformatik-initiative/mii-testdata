@@ -96,13 +96,22 @@
       {
         "code": "5060-9",
         "system": "http://loinc.org",
-        "display": "Borrelia burgdorferi Ab [Units/volume] in Serum by Immunoassay"
+        "display": "Borrelia burgdorferi Ab [Units/volume] in Serum by Immunoassay",
+        "version": "2.80"
       }
     ]
   },
   "valueQuantity": {
     "system": "http://unitsofmeasure.org",
     "value": 42,
+    "_value": {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/quantity-precision",
+          "valueInteger": 0
+        }
+      ]
+    },
     "comparator": ">",
     "unit": "[IU]/mL",
     "code": "[IU]/mL"
@@ -146,6 +155,11 @@
   "note": [
     {
       "text": "Borrelien-Antikörper nachweisbar. Klinische Korrelation empfohlen."
+    }
+  ],
+  "basedOn": [
+    {
+      "reference": "ServiceRequest/mii-exa-test-data-mikrobio-servicerequest-1"
     }
   ],
   "status": "final",

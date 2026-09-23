@@ -37,6 +37,16 @@
       "reference": "Practitioner/mii-exa-test-data-patho-practitioner-1"
     }
   ],
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "code": "8140/3",
+        "system": "urn:oid:2.16.840.1.113883.6.43.1",
+        "display": "Azinäres Adenokarzinom",
+        "version": "3.2"
+      }
+    ]
+  },
   "status": "final",
   "code": {
     "coding": [
@@ -51,15 +61,6 @@
     "reference": "Patient/mii-exa-test-data-patho-patient-1"
   },
   "effectiveDateTime": "2024-01-17T10:00:00+01:00",
-  "valueCodeableConcept": {
-    "coding": [
-      {
-        "code": "8140/3",
-        "system": "urn:oid:2.16.840.1.113883.6.43.1",
-        "display": "Azinäres Adenokarzinom"
-      }
-    ]
-  },
   "bodySite": {
     "coding": [
       {

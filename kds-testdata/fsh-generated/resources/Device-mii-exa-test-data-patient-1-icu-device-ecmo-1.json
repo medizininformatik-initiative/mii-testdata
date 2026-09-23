@@ -21,9 +21,49 @@
     }
   ],
   "type": {
+    "coding": [
+      {
+        "code": "303607000",
+        "system": "http://snomed.info/sct",
+        "display": "Biomedical equipment (physical object)"
+      }
+    ],
     "text": "VV-ECMO-System (extrakorporale Membranoxygenierung)"
   },
+  "identifier": [
+    {
+      "system": "https://www.charite.de/fhir/sid/device-identifier",
+      "value": "ICU-ECMO-001"
+    }
+  ],
+  "version": [
+    {
+      "value": "SW 4.1"
+    }
+  ],
+  "property": [
+    {
+      "valueQuantity": [
+        {
+          "value": 4.5,
+          "code": "L/min",
+          "system": "http://unitsofmeasure.org",
+          "unit": "L/min"
+        }
+      ],
+      "type": {
+        "coding": [
+          {
+            "code": "251288004",
+            "system": "http://snomed.info/sct",
+            "display": "Extracorporeal gas exchange flow rate (observable entity)"
+          }
+        ]
+      }
+    }
+  ],
   "patient": {
     "reference": "Patient/mii-exa-test-data-icu-patient-1"
-  }
+  },
+  "status": "active"
 }

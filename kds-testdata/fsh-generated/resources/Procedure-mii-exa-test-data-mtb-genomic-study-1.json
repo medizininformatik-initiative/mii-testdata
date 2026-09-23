@@ -22,6 +22,17 @@
       }
     }
   ],
+  "identifier": [
+    {
+      "system": "https://www.charite.de/fhir/sid/mtb-genomic-study",
+      "value": "GS-2024-001"
+    }
+  ],
+  "reasonReference": [
+    {
+      "reference": "Condition/mii-exa-test-data-mtb-diagnose-primaertumor-1"
+    }
+  ],
   "category": {
     "coding": [
       {
@@ -33,5 +44,18 @@
   "status": "completed",
   "subject": {
     "reference": "Patient/mii-exa-test-data-mtb-patient-1"
-  }
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "func-var",
+        "system": "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/genomic-study-type-cs",
+        "display": "Functional variation detection"
+      }
+    ]
+  },
+  "encounter": {
+    "reference": "Encounter/mii-exa-test-data-mtb-encounter-1"
+  },
+  "performedDateTime": "2024-02-20"
 }

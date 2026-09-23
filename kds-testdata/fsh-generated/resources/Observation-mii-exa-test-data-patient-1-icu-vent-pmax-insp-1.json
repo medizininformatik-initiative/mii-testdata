@@ -44,6 +44,12 @@
       }
     ]
   },
+  "identifier": [
+    {
+      "system": "https://www.charite.de/fhir/sid/icu-observation-id",
+      "value": "icu-vent-pmax-insp-1"
+    }
+  ],
   "valueQuantity": {
     "system": "http://unitsofmeasure.org",
     "code": "cm[H2O]",
@@ -60,5 +66,6 @@
   "effectiveDateTime": "2024-05-05T08:00:00+02:00",
   "device": {
     "reference": "DeviceMetric/mii-exa-test-data-patient-1-icu-vent-dm-param-1"
-  }
+  },
+  "issued": "2024-05-05T11:00:00+02:00"
 }

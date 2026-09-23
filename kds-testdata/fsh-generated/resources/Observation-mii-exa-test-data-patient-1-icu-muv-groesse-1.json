@@ -19,7 +19,17 @@
       "coding": [
         {
           "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs"
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        }
+      ]
+    },
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "248326004",
+          "display": "Body measure (observable entity)"
         }
       ]
     }

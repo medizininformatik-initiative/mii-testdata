@@ -19,6 +19,7 @@ Description: "Device: NGS-Sequenzierer (Illumina NovaSeq 6000) des MTB-NGS-Workf
 * manufacturer = "Illumina"
 * deviceName.name = "Illumina NovaSeq 6000"
 * deviceName.type = #user-friendly-name
+* type = $sct#303607000 "Biomedical equipment"
 * type.text = "NGS-Sequenzierer"
 * definition = Reference(mii-exa-test-data-mtb-panel-devicedef-1)
 

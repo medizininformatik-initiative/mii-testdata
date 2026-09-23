@@ -74,6 +74,38 @@
       }
     }
   ],
+  "derivedFrom": [
+    {
+      "reference": "Observation/mii-exa-test-data-lungenfunktion-rv-1"
+    },
+    {
+      "reference": "Observation/mii-exa-test-data-lungenfunktion-tlc-1"
+    }
+  ],
+  "hasMember": [
+    {
+      "reference": "Observation/mii-exa-test-data-lungenfunktion-rv-1"
+    },
+    {
+      "reference": "Observation/mii-exa-test-data-lungenfunktion-tlc-1"
+    }
+  ],
+  "referenceRange": [
+    {
+      "low": {
+        "value": 25,
+        "code": "%",
+        "system": "http://unitsofmeasure.org",
+        "unit": "%"
+      },
+      "high": {
+        "value": 35,
+        "code": "%",
+        "system": "http://unitsofmeasure.org",
+        "unit": "%"
+      }
+    }
+  ],
   "status": "final",
   "subject": {
     "reference": "Patient/mii-exa-test-data-lungenfunktion-patient-1"

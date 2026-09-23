@@ -36,5 +36,8 @@
   "subject": {
     "reference": "Patient/mii-exa-test-data-mtb-patient-1"
   },
-  "effectiveDateTime": "2024-01-10"
+  "effectiveDateTime": "2024-01-10",
+  "encounter": {
+    "reference": "Encounter/mii-exa-test-data-mtb-encounter-1"
+  }
 }

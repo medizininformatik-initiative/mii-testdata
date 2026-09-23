@@ -60,5 +60,8 @@
   "subject": {
     "reference": "Patient/mii-exa-test-data-onko-patient-1"
   },
-  "authoredOn": "2021-06-20"
+  "authoredOn": "2021-06-20",
+  "encounter": {
+    "reference": "Encounter/mii-exa-test-data-onko-encounter-1"
+  }
 }

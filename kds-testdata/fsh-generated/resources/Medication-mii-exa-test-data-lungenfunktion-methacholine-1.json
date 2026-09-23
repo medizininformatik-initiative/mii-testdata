@@ -27,7 +27,8 @@
         "display": "Methacholin",
         "version": "2026"
       }
-    ]
+    ],
+    "text": "Methacholinchlorid 0,33% Loesung zur Inhalation (Provokit)"
   },
   "ingredient": [
     {
@@ -39,7 +40,8 @@
             "code": "109196007",
             "display": "Methacholine chloride (substance)"
           }
-        ]
+        ],
+        "text": "Methacholinchlorid"
       },
       "strength": {
         "numerator": {
@@ -55,6 +57,16 @@
           "code": "ml"
         }
       },
+      "extension": [
+        {
+          "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstofftyp",
+          "valueCoding": {
+            "system": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/wirkstofftyp",
+            "code": "IN",
+            "display": "ingredient"
+          }
+        }
+      ],
       "isActive": true
     },
     {
@@ -66,9 +78,30 @@
             "code": "11713004",
             "display": "Water (substance)"
           }
-        ]
+        ],
+        "text": "Wasser fuer Injektionszwecke"
       },
+      "extension": [
+        {
+          "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstofftyp",
+          "valueCoding": {
+            "system": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/wirkstofftyp",
+            "code": "IN",
+            "display": "ingredient"
+          }
+        }
+      ],
       "isActive": false
     }
-  ]
+  ],
+  "form": {
+    "coding": [
+      {
+        "system": "http://standardterms.edqm.eu",
+        "code": "11101000",
+        "display": "Nebuliser solution"
+      }
+    ],
+    "text": "Loesung fuer einen Vernebler"
+  }
 }

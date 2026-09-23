@@ -79,7 +79,8 @@
       {
         "system": "http://loinc.org",
         "code": "75371-5",
-        "display": "Bartlett score of Sputum Qualitative by Light microscopy"
+        "display": "Bartlett score of Sputum Qualitative by Light microscopy",
+        "version": "2.80"
       }
     ]
   },
@@ -88,7 +89,8 @@
       {
         "code": "LA21390-2",
         "system": "http://loinc.org",
-        "display": "+1 Active inflammation"
+        "display": "+1 Active inflammation",
+        "version": "2.80"
       }
     ]
   },
@@ -117,6 +119,18 @@
       "text": "Sputum-Probe verwertbar (Bartlett-Score positiv)."
     }
   ],
+  "basedOn": [
+    {
+      "reference": "ServiceRequest/mii-exa-test-data-mikrobio-servicerequest-1"
+    }
+  ],
+  "device": {
+    "identifier": {
+      "system": "https://www.charite.de/fhir/sid/device-identifier",
+      "value": "MIKROSKOP-001"
+    },
+    "reference": "Device/mii-exa-test-data-mikrobio-device-mikroskop-1"
+  },
   "status": "final",
   "effectiveDateTime": "2026-04-02T11:15:00+02:00",
   "_effectiveDateTime": {

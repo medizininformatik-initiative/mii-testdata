@@ -79,7 +79,8 @@
       {
         "code": "41852-5",
         "system": "http://loinc.org",
-        "display": "Microorganism or agent identified in Specimen"
+        "display": "Microorganism or agent identified in Specimen",
+        "version": "2.80"
       }
     ]
   },
@@ -88,7 +89,8 @@
       {
         "code": "3092008",
         "system": "http://snomed.info/sct",
-        "display": "Staphylococcus aureus (organism)"
+        "display": "Staphylococcus aureus (organism)",
+        "version": "http://snomed.info/sct/900000000000207008/version/20250401"
       }
     ]
   },
@@ -117,6 +119,18 @@
       "text": "Bakteriennachweis in Gram-Faerbung; weitere Typisierung folgt."
     }
   ],
+  "basedOn": [
+    {
+      "reference": "ServiceRequest/mii-exa-test-data-mikrobio-servicerequest-1"
+    }
+  ],
+  "device": {
+    "identifier": {
+      "system": "https://www.charite.de/fhir/sid/device-identifier",
+      "value": "MALDI-TOF-001"
+    },
+    "reference": "Device/mii-exa-test-data-mikrobio-device-maldi-1"
+  },
   "status": "final",
   "effectiveDateTime": "2026-04-03T15:30:00+02:00",
   "_effectiveDateTime": {

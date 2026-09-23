@@ -86,7 +86,8 @@
       {
         "code": "56990-5",
         "system": "http://loinc.org",
-        "display": "Toxoplasma gondii IgG Ab avidity [Ratio] in Serum by Immunoassay"
+        "display": "Toxoplasma gondii IgG Ab avidity [Ratio] in Serum by Immunoassay",
+        "version": "2.80"
       }
     ]
   },
@@ -95,6 +96,14 @@
     "system": "http://unitsofmeasure.org",
     "code": "%",
     "value": 14,
+    "_value": {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/quantity-precision",
+          "valueInteger": 0
+        }
+      ]
+    },
     "comparator": "<"
   },
   "method": {
@@ -136,6 +145,11 @@
   "note": [
     {
       "text": "Niedrige Avidität spricht fuer kuerzlich durchgemachte Infektion."
+    }
+  ],
+  "basedOn": [
+    {
+      "reference": "ServiceRequest/mii-exa-test-data-mikrobio-servicerequest-1"
     }
   ],
   "status": "final",

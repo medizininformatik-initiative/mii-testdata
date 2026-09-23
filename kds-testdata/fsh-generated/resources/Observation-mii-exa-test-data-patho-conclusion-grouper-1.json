@@ -10,6 +10,7 @@
       }
     ],
     "source": "https://www.charite.de/fhir/kds-testdata",
+    "lastUpdated": "2024-01-20T16:00:00+01:00",
     "profile": [
       "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-diagnostic-conclusion-grouper"
     ]
@@ -116,6 +117,21 @@
       "reference": "Observation/mii-exa-test-data-patho-tumoranteil-01"
     }
   ],
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Diagnostische Schlussfolgerung: Azinäres Adenokarzinom der Prostata, Gleason 3+4=7, ISUP 2</div>"
+  },
+  "identifier": [
+    {
+      "system": "https://www.charite.de/fhir/sid/patho/befund",
+      "value": "E_24_001_CONCLUSION"
+    }
+  ],
+  "note": [
+    {
+      "text": "Diagnose auf Basis von Mikroskopie und Immunhistochemie beider Stanzen."
+    }
+  ],
   "code": {
     "coding": [
       {
@@ -128,5 +144,26 @@
   "subject": {
     "reference": "Patient/mii-exa-test-data-patho-patient-1"
   },
-  "effectiveDateTime": "2024-01-20"
+  "effectiveDateTime": "2024-01-20",
+  "method": {
+    "coding": [
+      {
+        "code": "104157003",
+        "system": "http://snomed.info/sct",
+        "display": "Light microscopy (procedure)"
+      }
+    ]
+  },
+  "specimen": {
+    "reference": "Specimen/mii-exa-test-data-patho-specimen-01-slide"
+  },
+  "bodySite": {
+    "coding": [
+      {
+        "code": "41216001",
+        "system": "http://snomed.info/sct",
+        "display": "Prostate"
+      }
+    ]
+  }
 }

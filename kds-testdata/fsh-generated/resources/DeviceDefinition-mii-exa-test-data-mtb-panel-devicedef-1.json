@@ -23,6 +23,45 @@
   "version": [
     "2.0"
   ],
+  "extension": [
+    {
+      "extension": [
+        {
+          "url": "geneList",
+          "valueCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/ValueSet/mii-vs-mtb-panel-cgp"
+        },
+        {
+          "url": "scope",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "code": "snv-detection",
+                "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/CodeSystem/mii-cs-mtb-panel-capability"
+              }
+            ]
+          }
+        }
+      ],
+      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-ex-mtb-panel-gene-list"
+    }
+  ],
+  "capability": [
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "snv-detection",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/CodeSystem/mii-cs-mtb-panel-capability"
+          }
+        ]
+      }
+    }
+  ],
+  "note": [
+    {
+      "text": "Panel deckt SNVs, CNVs, Fusionen und Signaturen ab."
+    }
+  ],
   "type": {
     "coding": [
       {
@@ -31,5 +70,6 @@
       }
     ]
   },
-  "manufacturerString": "Illumina"
+  "manufacturerString": "Illumina",
+  "onlineInformation": "https://emea.illumina.com/products/by-type/clinical-research-products/trusight-oncology-500.html"
 }

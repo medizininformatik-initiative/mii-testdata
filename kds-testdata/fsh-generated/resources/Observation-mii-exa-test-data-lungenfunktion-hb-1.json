@@ -81,5 +81,14 @@
     "code": "g{Hemoglobin}/dL",
     "system": "http://unitsofmeasure.org",
     "unit": "g{Hemoglobin}/dL"
+  },
+  "method": {
+    "coding": [
+      {
+        "code": "258104002",
+        "system": "http://snomed.info/sct",
+        "display": "Measured (qualifier value)"
+      }
+    ]
   }
 }

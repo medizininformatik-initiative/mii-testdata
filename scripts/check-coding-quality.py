@@ -24,6 +24,12 @@ ALLOWLIST = [
     # ICDSC: das Profil fixiert component.code.text (englische Item-Namen);
     # fuer die 8 Einzelitems existieren keine LOINC-/SNOMED-Codes.
     ("mii-exa-test-data-patient-1-icu-score-icdsc", "component.code"),
+    # Zytogenetik: fuer Chromosomen-Banden (17q21.31) und Chromosomen-Identität
+    # existiert kein offline verifizierbares Standard-CS (GR 3.0.0 bindet keins).
+    ("mii-exa-test-data-onko-genetische-variante-1", "component.valueCodeableConcept"),
+    # ResearchStudy.category ist ungebunden; kein etabliertes CS fuer
+    # "Interventionelle Arzneimittelstudie" (DRKS-/obDS-Sprachgebrauch).
+    ("mii-exa-test-data-mtb-studie-1", "category"),
 ]
 
 CC_FIELDS = {

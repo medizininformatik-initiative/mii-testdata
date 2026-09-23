@@ -97,6 +97,32 @@
       }
     }
   ],
+  "derivedFrom": [
+    {
+      "reference": "DocumentReference/mii-exa-test-data-lungenfunktion-docref-rohdaten-1"
+    }
+  ],
+  "hasMember": [
+    {
+      "reference": "Observation/mii-exa-test-data-lungenfunktion-pef-prov-1"
+    }
+  ],
+  "referenceRange": [
+    {
+      "low": {
+        "value": 5.5,
+        "code": "L/s",
+        "system": "http://unitsofmeasure.org",
+        "unit": "L/s"
+      },
+      "high": {
+        "value": 8.3,
+        "code": "L/s",
+        "system": "http://unitsofmeasure.org",
+        "unit": "L/s"
+      }
+    }
+  ],
   "status": "final",
   "subject": {
     "reference": "Patient/mii-exa-test-data-lungenfunktion-patient-1"

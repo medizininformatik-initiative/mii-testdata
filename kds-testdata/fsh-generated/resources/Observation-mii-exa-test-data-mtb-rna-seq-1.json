@@ -87,5 +87,22 @@
   },
   "subject": {
     "reference": "Patient/mii-exa-test-data-mtb-patient-1"
+  },
+  "effectiveDateTime": "2024-02-25",
+  "issued": "2024-03-01T09:00:00+01:00",
+  "specimen": {
+    "reference": "Specimen/mii-exa-test-data-mtb-specimen-1"
+  },
+  "device": {
+    "reference": "Device/mii-exa-test-data-mtb-device-sequencer-1"
+  },
+  "method": {
+    "coding": [
+      {
+        "code": "LA26398-0",
+        "system": "http://loinc.org",
+        "display": "Sequencing"
+      }
+    ]
   }
 }

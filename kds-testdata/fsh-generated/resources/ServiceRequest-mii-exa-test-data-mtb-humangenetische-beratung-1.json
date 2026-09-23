@@ -33,6 +33,11 @@
       ]
     }
   ],
+  "specimen": [
+    {
+      "reference": "Specimen/mii-exa-test-data-mtb-specimen-1"
+    }
+  ],
   "intent": "proposal",
   "status": "draft",
   "subject": {

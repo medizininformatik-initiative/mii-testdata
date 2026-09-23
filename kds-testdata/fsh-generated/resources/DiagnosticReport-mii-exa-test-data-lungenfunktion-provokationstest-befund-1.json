@@ -83,6 +83,13 @@
       ]
     }
   ],
+  "presentedForm": [
+    {
+      "contentType": "application/pdf",
+      "url": "https://www.charite.de/fhir/lungenfunktion/befunde/provokationstest-2025-02-18.pdf",
+      "title": "Provokationstest-Befund vom 18.02.2025"
+    }
+  ],
   "status": "final",
   "subject": {
     "reference": "Patient/mii-exa-test-data-lungenfunktion-patient-1"

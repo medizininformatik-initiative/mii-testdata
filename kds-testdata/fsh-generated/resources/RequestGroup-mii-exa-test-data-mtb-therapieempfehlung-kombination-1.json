@@ -16,6 +16,17 @@
   },
   "action": [
     {
+      "code": [
+        {
+          "coding": [
+            {
+              "code": "ZS",
+              "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-therapie-typ",
+              "display": "zielgerichtete Substanzen"
+            }
+          ]
+        }
+      ],
       "resource": {
         "reference": "MedicationRequest/mii-exa-test-data-mtb-therapieempfehlung-2"
       }
@@ -50,6 +61,17 @@
       "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-ex-mtb-empfehlung-publikation"
     }
   ],
+  "identifier": [
+    {
+      "system": "https://www.charite.de/fhir/sid/mtb-beschluss",
+      "value": "KOMBI-2024-001"
+    }
+  ],
+  "reasonReference": [
+    {
+      "reference": "Condition/mii-exa-test-data-mtb-diagnose-primaertumor-1"
+    }
+  ],
   "intent": "proposal",
   "status": "draft",
   "authoredOn": "2024-03-28",
@@ -64,5 +86,8 @@
         "display": "zielgerichtete Substanzen"
       }
     ]
+  },
+  "encounter": {
+    "reference": "Encounter/mii-exa-test-data-mtb-encounter-1"
   }
 }

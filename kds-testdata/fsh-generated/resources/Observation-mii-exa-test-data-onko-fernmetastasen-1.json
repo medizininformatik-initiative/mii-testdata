@@ -44,5 +44,14 @@
   "encounter": {
     "reference": "Encounter/mii-exa-test-data-onko-encounter-1"
   },
-  "effectiveDateTime": "2021-06-22"
+  "effectiveDateTime": "2021-06-22",
+  "bodySite": {
+    "coding": [
+      {
+        "code": "10200004",
+        "system": "http://snomed.info/sct",
+        "display": "Liver structure (body structure)"
+      }
+    ]
+  }
 }

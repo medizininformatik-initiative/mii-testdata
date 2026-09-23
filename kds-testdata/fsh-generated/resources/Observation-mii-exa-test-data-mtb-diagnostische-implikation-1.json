@@ -59,6 +59,20 @@
       }
     }
   ],
+  "focus": [
+    {
+      "reference": "Condition/mii-exa-test-data-mtb-diagnose-primaertumor-1"
+    }
+  ],
+  "extension": [
+    {
+      "valueRelatedArtifact": {
+        "type": "citation",
+        "citation": "Soria JC et al. Osimertinib in Untreated EGFR-Mutated Advanced NSCLC. N Engl J Med 2018. PMID 29151359"
+      },
+      "url": "http://hl7.org/fhir/StructureDefinition/workflow-relatedArtifact"
+    }
+  ],
   "code": {
     "coding": [
       {
@@ -71,5 +85,10 @@
   "status": "final",
   "subject": {
     "reference": "Patient/mii-exa-test-data-mtb-patient-1"
+  },
+  "effectiveDateTime": "2024-03-05",
+  "issued": "2024-03-05T12:00:00+01:00",
+  "encounter": {
+    "reference": "Encounter/mii-exa-test-data-mtb-encounter-1"
   }
 }

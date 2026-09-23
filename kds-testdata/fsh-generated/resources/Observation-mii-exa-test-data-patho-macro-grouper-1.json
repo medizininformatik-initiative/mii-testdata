@@ -10,6 +10,7 @@
       }
     ],
     "source": "https://www.charite.de/fhir/kds-testdata",
+    "lastUpdated": "2024-01-20T16:00:00+01:00",
     "profile": [
       "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-macroscopic-grouper"
     ]
@@ -49,6 +50,29 @@
       "reference": "Observation/mii-exa-test-data-patho-macroscopic-laterality-03"
     }
   ],
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Makroskopie-Grouper: Messungen der Prostatastanzen 01 und 03</div>"
+  },
+  "identifier": [
+    {
+      "system": "https://www.charite.de/fhir/sid/patho/befund",
+      "value": "E_24_001_MAKRO"
+    }
+  ],
+  "basedOn": [
+    {
+      "reference": "ServiceRequest/mii-exa-test-data-patho-request-1"
+    }
+  ],
+  "derivedFrom": [
+    {
+      "reference": "Media/mii-exa-test-data-patho-image-1"
+    },
+    {
+      "reference": "ImagingStudy/mii-exa-test-data-patho-imaging-study-1"
+    }
+  ],
   "code": {
     "coding": [
       {
@@ -71,5 +95,17 @@
         "display": "Prostate"
       }
     ]
+  },
+  "method": {
+    "coding": [
+      {
+        "code": "787377000",
+        "system": "http://snomed.info/sct",
+        "display": "Gross examination and sampling of tissue specimen (procedure)"
+      }
+    ]
+  },
+  "specimen": {
+    "reference": "Specimen/mii-exa-test-data-patho-specimen-01-part"
   }
 }

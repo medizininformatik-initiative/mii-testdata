@@ -44,5 +44,8 @@
         "display": "Ja"
       }
     ]
+  },
+  "encounter": {
+    "reference": "Encounter/mii-exa-test-data-onko-encounter-1"
   }
 }

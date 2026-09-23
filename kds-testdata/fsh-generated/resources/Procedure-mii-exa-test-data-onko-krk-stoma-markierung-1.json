@@ -29,12 +29,59 @@
         "system": "http://snomed.info/sct",
         "code": "225134005",
         "display": "Marking position of planned stoma site (procedure)"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://fhir.de/StructureDefinition/seitenlokalisation",
+            "valueCoding": {
+              "code": "T",
+              "system": "https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_ICD_SEITENLOKALISATION",
+              "display": "trifft nicht zu"
+            }
+          }
+        ],
+        "system": "http://fhir.de/CodeSystem/bfarm/ops",
+        "code": "5-460",
+        "display": "Anlegen eines Enterostomas, doppelläufig, als selbständiger Eingriff",
+        "version": "2021"
       }
     ]
   },
   "reasonReference": [
     {
       "reference": "Condition/mii-exa-test-data-onko-diagnose-1"
+    }
+  ],
+  "bodySite": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "699600004",
+          "display": "Structure of left lower quadrant of abdomen (body structure)",
+          "version": "http://snomed.info/sct/900000000000207008/version/20240201"
+        }
+      ]
+    }
+  ],
+  "extension": [
+    {
+      "url": "http://fhir.de/StructureDefinition/ProzedurDokumentationsdatum",
+      "valueDateTime": "2021-09-25"
+    },
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Durchfuehrungsabsicht",
+      "valueCoding": {
+        "system": "http://snomed.info/sct",
+        "code": "262202000",
+        "display": "Therapeutic"
+      }
+    }
+  ],
+  "note": [
+    {
+      "text": "Stomaposition praeoperativ markiert."
     }
   ],
   "status": "completed",
@@ -50,5 +97,8 @@
         "display": "Planned (qualifier value)"
       }
     ]
+  },
+  "encounter": {
+    "reference": "Encounter/mii-exa-test-data-onko-encounter-1"
   }
 }

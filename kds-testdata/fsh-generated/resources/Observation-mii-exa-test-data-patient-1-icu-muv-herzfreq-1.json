@@ -43,6 +43,44 @@
       }
     ]
   },
+  "identifier": [
+    {
+      "system": "https://www.charite.de/fhir/sid/icu-observation-id",
+      "value": "icu-muv-herzfreq-1"
+    }
+  ],
+  "interpretation": [
+    {
+      "coding": [
+        {
+          "code": "N",
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "display": "Normal"
+        }
+      ]
+    }
+  ],
+  "performer": [
+    {
+      "reference": "Practitioner/mii-exa-test-data-icu-practitioner-1"
+    }
+  ],
+  "referenceRange": [
+    {
+      "low": {
+        "value": 60,
+        "code": "/min",
+        "system": "http://unitsofmeasure.org",
+        "unit": "beats per minute"
+      },
+      "high": {
+        "value": 100,
+        "code": "/min",
+        "system": "http://unitsofmeasure.org",
+        "unit": "beats per minute"
+      }
+    }
+  ],
   "valueQuantity": {
     "system": "http://unitsofmeasure.org",
     "unit": "beats per minute",
@@ -53,5 +91,29 @@
   "subject": {
     "reference": "Patient/mii-exa-test-data-icu-patient-1"
   },
-  "effectiveDateTime": "2024-05-05T08:00:00+02:00"
+  "effectiveDateTime": "2024-05-05T08:00:00+02:00",
+  "encounter": {
+    "reference": "Encounter/mii-exa-test-data-icu-encounter-1"
+  },
+  "device": {
+    "reference": "Device/mii-exa-test-data-patient-1-icu-device-monitor-1"
+  },
+  "method": {
+    "coding": [
+      {
+        "code": "29303009",
+        "system": "http://snomed.info/sct",
+        "display": "Electrocardiographic procedure"
+      }
+    ]
+  },
+  "bodySite": {
+    "coding": [
+      {
+        "code": "80891009",
+        "system": "http://snomed.info/sct",
+        "display": "Heart structure (body structure)"
+      }
+    ]
+  }
 }

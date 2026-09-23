@@ -79,7 +79,8 @@
       {
         "code": "11475-1",
         "system": "http://loinc.org",
-        "display": "Microorganism identified in Specimen by Culture"
+        "display": "Microorganism identified in Specimen by Culture",
+        "version": "2.80"
       }
     ]
   },
@@ -88,7 +89,8 @@
       {
         "code": "10828004",
         "system": "http://snomed.info/sct",
-        "display": "Positive (qualifier value)"
+        "display": "Positive (qualifier value)",
+        "version": "http://snomed.info/sct/900000000000207008/version/20250401"
       }
     ]
   },
@@ -117,6 +119,18 @@
       "text": "Wuchs nach 18h aerob; weitere Differenzierung folgt."
     }
   ],
+  "basedOn": [
+    {
+      "reference": "ServiceRequest/mii-exa-test-data-mikrobio-servicerequest-1"
+    }
+  ],
+  "device": {
+    "identifier": {
+      "system": "https://www.charite.de/fhir/sid/device-identifier",
+      "value": "BACTEC-001"
+    },
+    "reference": "Device/mii-exa-test-data-mikrobio-device-bactec-1"
+  },
   "status": "final",
   "effectiveDateTime": "2026-04-02T10:00:00+02:00",
   "_effectiveDateTime": {

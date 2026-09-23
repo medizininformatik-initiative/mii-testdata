@@ -79,7 +79,8 @@
       {
         "code": "105059-0",
         "system": "http://loinc.org",
-        "display": "Microscopic observation [Identifier] in Specimen"
+        "display": "Microscopic observation [Identifier] in Specimen",
+        "version": "2.80"
       }
     ]
   },
@@ -88,7 +89,8 @@
       {
         "code": "70003006",
         "system": "http://snomed.info/sct",
-        "display": "Gram-positive cocci in clusters (finding)"
+        "display": "Gram-positive cocci in clusters (finding)",
+        "version": "http://snomed.info/sct/900000000000207008/version/20250401"
       }
     ]
   },
@@ -115,6 +117,40 @@
   "note": [
     {
       "text": "Mikroskopisch typisches Bild fuer S. aureus."
+    }
+  ],
+  "basedOn": [
+    {
+      "reference": "ServiceRequest/mii-exa-test-data-mikrobio-servicerequest-1"
+    }
+  ],
+  "device": {
+    "identifier": {
+      "system": "https://www.charite.de/fhir/sid/device-identifier",
+      "value": "MIKROSKOP-001"
+    },
+    "reference": "Device/mii-exa-test-data-mikrobio-device-mikroskop-1"
+  },
+  "component": [
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "103392008",
+            "display": "Semi-quantitative value (qualifier value)"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "441517005",
+            "system": "http://snomed.info/sct",
+            "display": "Present two plus out of three plus (qualifier value)"
+          }
+        ]
+      }
     }
   ],
   "status": "final",

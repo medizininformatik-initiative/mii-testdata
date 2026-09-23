@@ -22,6 +22,15 @@
           "code": "vital-signs"
         }
       ]
+    },
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "248326004",
+          "display": "Body measure (observable entity)"
+        }
+      ]
     }
   ],
   "code": {
@@ -38,13 +47,23 @@
     ]
   },
   "effectivePeriod": {
-    "start": "2024-02-15T14:30:00+01:00"
+    "start": "2024-02-15T14:30:00+01:00",
+    "end": "2024-02-15T14:35:00+01:00"
   },
   "valueQuantity": {
     "system": "http://unitsofmeasure.org",
     "unit": "centimeter",
     "code": "cm",
     "value": 57
+  },
+  "bodySite": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "69536005",
+        "display": "Head structure (body structure)"
+      }
+    ]
   },
   "status": "final",
   "subject": {

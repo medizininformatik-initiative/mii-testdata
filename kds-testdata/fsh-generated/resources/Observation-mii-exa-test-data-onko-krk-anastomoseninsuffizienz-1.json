@@ -41,5 +41,8 @@
         "display": "Keine Insuffizienz oder höchstens Grad A"
       }
     ]
+  },
+  "encounter": {
+    "reference": "Encounter/mii-exa-test-data-onko-encounter-1"
   }
 }

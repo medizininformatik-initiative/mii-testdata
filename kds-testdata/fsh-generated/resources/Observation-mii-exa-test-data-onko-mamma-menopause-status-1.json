@@ -41,5 +41,8 @@
         "display": "Premenopausal state (finding)"
       }
     ]
+  },
+  "encounter": {
+    "reference": "Encounter/mii-exa-test-data-onko-encounter-1"
   }
 }

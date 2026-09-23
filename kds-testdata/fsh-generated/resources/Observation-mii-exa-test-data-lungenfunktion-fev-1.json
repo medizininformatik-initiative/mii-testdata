@@ -62,6 +62,12 @@
         "code": "L",
         "system": "http://unitsofmeasure.org",
         "unit": "L"
+      },
+      "high": {
+        "value": 3.39,
+        "code": "L",
+        "system": "http://unitsofmeasure.org",
+        "unit": "L"
       }
     }
   ],
@@ -126,6 +132,19 @@
       "valueQuantity": {
         "value": -1.9
       }
+    }
+  ],
+  "derivedFrom": [
+    {
+      "reference": "DocumentReference/mii-exa-test-data-lungenfunktion-docref-rohdaten-1"
+    }
+  ],
+  "hasMember": [
+    {
+      "reference": "Observation/mii-exa-test-data-lungenfunktion-fev-prov-1"
+    },
+    {
+      "reference": "Observation/mii-exa-test-data-lungenfunktion-fev-prov-2"
     }
   ],
   "status": "final",

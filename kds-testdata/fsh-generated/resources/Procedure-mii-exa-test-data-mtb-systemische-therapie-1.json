@@ -14,6 +14,14 @@
     ],
     "source": "https://www.charite.de/fhir/kds-testdata"
   },
+  "statusReason": {
+    "coding": [
+      {
+        "code": "regular-completion",
+        "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/CodeSystem/mii-cs-mtb-therapiestatusgrund"
+      }
+    ]
+  },
   "extension": [
     {
       "valueCodeableConcept": {
@@ -22,9 +30,40 @@
             "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-intention",
             "code": "K"
           }
-        ]
+        ],
+        "text": "kurativ"
       },
       "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-systemische-therapie-intention"
+    },
+    {
+      "url": "http://fhir.de/StructureDefinition/ProzedurDokumentationsdatum",
+      "valueDateTime": "2024-08-30"
+    },
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Durchfuehrungsabsicht",
+      "valueCoding": {
+        "system": "http://snomed.info/sct",
+        "code": "262202000",
+        "display": "Therapeutic"
+      }
+    },
+    {
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-therapie-stellungzurop",
+            "code": "O"
+          }
+        ],
+        "text": "ohne Bezug zur operativen Therapie"
+      },
+      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-systemische-therapie-stellungzurop"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/procedure-causedBy",
+      "valueReference": {
+        "reference": "MedicationRequest/mii-exa-test-data-mtb-therapieempfehlung-1"
+      }
     }
   ],
   "code": {
@@ -34,6 +73,16 @@
         "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-therapie-typ"
       },
       {
+        "extension": [
+          {
+            "url": "http://fhir.de/StructureDefinition/seitenlokalisation",
+            "valueCoding": {
+              "code": "R",
+              "system": "https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_ICD_SEITENLOKALISATION",
+              "display": "rechts"
+            }
+          }
+        ],
         "system": "http://fhir.de/CodeSystem/bfarm/ops",
         "code": "8-54",
         "display": "Zytostatische Chemotherapie, Immuntherapie und antiretrovirale Therapie",
@@ -50,14 +99,53 @@
       "reference": "CarePlan/mii-exa-test-data-mtb-therapieplan-1"
     }
   ],
-  "status": "completed",
-  "statusReason": {
+  "bodySite": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "39607008",
+          "display": "Lung structure (body structure)",
+          "version": "http://snomed.info/sct/900000000000207008/version/20240201"
+        }
+      ]
+    }
+  ],
+  "note": [
+    {
+      "text": "Zielgerichtete Therapie mit Osimertinib gemaess MTB-Beschluss."
+    }
+  ],
+  "outcome": {
     "coding": [
       {
-        "code": "regular-completion"
+        "code": "E",
+        "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-therapie-ende-grund"
       }
     ]
   },
+  "partOf": [
+    {
+      "reference": "Procedure/mii-exa-test-data-mtb-systemische-vortherapie-1"
+    }
+  ],
+  "reasonReference": [
+    {
+      "reference": "Condition/mii-exa-test-data-mtb-diagnose-primaertumor-1"
+    }
+  ],
+  "usedCode": [
+    {
+      "coding": [
+        {
+          "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-systemische-therapie-protokolle",
+          "code": "CarboTax",
+          "display": "CarboTax"
+        }
+      ]
+    }
+  ],
+  "status": "completed",
   "category": {
     "coding": [
       {
@@ -69,5 +157,8 @@
   },
   "subject": {
     "reference": "Patient/mii-exa-test-data-mtb-patient-1"
+  },
+  "encounter": {
+    "reference": "Encounter/mii-exa-test-data-mtb-encounter-1"
   }
 }

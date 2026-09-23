@@ -86,13 +86,22 @@
       {
         "code": "95521-1",
         "system": "http://loinc.org",
-        "display": "SARS-CoV-2 (COVID-19) N gene [#/volume] (viral load) in Respiratory system specimen by NAA with probe detection"
+        "display": "SARS-CoV-2 (COVID-19) N gene [#/volume] (viral load) in Respiratory system specimen by NAA with probe detection",
+        "version": "2.80"
       }
     ]
   },
   "valueQuantity": {
     "system": "http://unitsofmeasure.org",
     "value": 350000,
+    "_value": {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/quantity-precision",
+          "valueInteger": 0
+        }
+      ]
+    },
     "comparator": ">=",
     "unit": "Copies/mL",
     "code": "1/mL"
@@ -120,6 +129,28 @@
   "note": [
     {
       "text": "Hohe Pathogenlast — klinische Relevanz mit Behandelndem besprechen."
+    }
+  ],
+  "basedOn": [
+    {
+      "reference": "ServiceRequest/mii-exa-test-data-mikrobio-servicerequest-1"
+    }
+  ],
+  "referenceRange": [
+    {
+      "low": {
+        "value": 0,
+        "code": "1/mL",
+        "system": "http://unitsofmeasure.org",
+        "unit": "Copies/mL"
+      },
+      "high": {
+        "value": 500,
+        "code": "1/mL",
+        "system": "http://unitsofmeasure.org",
+        "unit": "Copies/mL"
+      },
+      "text": "Nachweisgrenze des Assays"
     }
   ],
   "status": "final",

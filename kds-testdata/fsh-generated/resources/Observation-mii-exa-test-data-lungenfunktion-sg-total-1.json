@@ -50,6 +50,35 @@
       ]
     }
   ],
+  "derivedFrom": [
+    {
+      "reference": "Observation/mii-exa-test-data-lungenfunktion-sr-1"
+    }
+  ],
+  "hasMember": [
+    {
+      "reference": "Observation/mii-exa-test-data-lungenfunktion-r-1"
+    },
+    {
+      "reference": "Observation/mii-exa-test-data-lungenfunktion-frc-1"
+    }
+  ],
+  "referenceRange": [
+    {
+      "low": {
+        "value": 0.85,
+        "code": "1/(kPa.s)",
+        "system": "http://unitsofmeasure.org",
+        "unit": "1/(kPa.s)"
+      },
+      "high": {
+        "value": 2.1,
+        "code": "1/(kPa.s)",
+        "system": "http://unitsofmeasure.org",
+        "unit": "1/(kPa.s)"
+      }
+    }
+  ],
   "status": "final",
   "subject": {
     "reference": "Patient/mii-exa-test-data-lungenfunktion-patient-1"

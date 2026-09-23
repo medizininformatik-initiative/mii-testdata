@@ -95,6 +95,25 @@
       "reference": "Observation/mii-exa-test-data-lungenfunktion-rv-tlc-1"
     }
   ],
+  "conclusionCode": [
+    {
+      "coding": [
+        {
+          "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+          "code": "J45.9",
+          "display": "Asthma bronchiale, nicht näher bezeichnet",
+          "version": "2026"
+        }
+      ]
+    }
+  ],
+  "presentedForm": [
+    {
+      "contentType": "application/pdf",
+      "url": "https://www.charite.de/fhir/lungenfunktion/befunde/bodyplethysmographie-2025-02-18.pdf",
+      "title": "Bodyplethysmographie-Befund vom 18.02.2025"
+    }
+  ],
   "status": "final",
   "subject": {
     "reference": "Patient/mii-exa-test-data-lungenfunktion-patient-1"

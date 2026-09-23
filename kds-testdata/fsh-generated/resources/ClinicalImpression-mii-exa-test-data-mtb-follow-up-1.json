@@ -46,6 +46,14 @@
       "reference": "ClaimResponse/mii-exa-test-data-mtb-antwort-kostenuebernahme-1"
     }
   ],
+  "statusReason": {
+    "coding": [
+      {
+        "code": "medical-reason",
+        "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/CodeSystem/mii-cs-mtb-systemische-therapie-status-grund"
+      }
+    ]
+  },
   "status": "completed",
   "subject": {
     "reference": "Patient/mii-exa-test-data-mtb-patient-1"

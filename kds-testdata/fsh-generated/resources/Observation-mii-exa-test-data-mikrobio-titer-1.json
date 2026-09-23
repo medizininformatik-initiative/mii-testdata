@@ -79,7 +79,8 @@
       {
         "code": "22080-6",
         "system": "http://loinc.org",
-        "display": "Adenovirus Ab [Titer] in Serum"
+        "display": "Adenovirus Ab [Titer] in Serum",
+        "version": "2.80"
       }
     ]
   },
@@ -135,6 +136,18 @@
       "text": "Titerstufe 1:128"
     }
   ],
+  "basedOn": [
+    {
+      "reference": "ServiceRequest/mii-exa-test-data-mikrobio-servicerequest-1"
+    }
+  ],
+  "device": {
+    "identifier": {
+      "system": "https://www.charite.de/fhir/sid/device-identifier",
+      "value": "IMMUNOASSAY-001"
+    },
+    "reference": "Device/mii-exa-test-data-mikrobio-device-immunoassay-1"
+  },
   "status": "final",
   "effectiveDateTime": "2026-04-05T11:00:00+02:00",
   "_effectiveDateTime": {

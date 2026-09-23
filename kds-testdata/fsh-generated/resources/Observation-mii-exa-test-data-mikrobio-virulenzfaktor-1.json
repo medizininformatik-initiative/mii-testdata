@@ -86,7 +86,8 @@
       {
         "code": "48816-3",
         "system": "http://loinc.org",
-        "display": "Staphylococcus aureus Panton-Valentine leukocidin gene [Presence] in Isolate or Specimen by Molecular genetics method"
+        "display": "Staphylococcus aureus Panton-Valentine leukocidin gene [Presence] in Isolate or Specimen by Molecular genetics method",
+        "version": "2.80"
       }
     ]
   },
@@ -95,7 +96,8 @@
       {
         "code": "260415000",
         "system": "http://snomed.info/sct",
-        "display": "Not detected (qualifier value)"
+        "display": "Not detected (qualifier value)",
+        "version": "http://snomed.info/sct/900000000000207008/version/20250401"
       }
     ]
   },
@@ -122,6 +124,11 @@
   "note": [
     {
       "text": "Panton-Valentine-Leukocidin (PVL) nicht nachgewiesen — kein Hinweis auf erhoehte Virulenz."
+    }
+  ],
+  "basedOn": [
+    {
+      "reference": "ServiceRequest/mii-exa-test-data-mikrobio-servicerequest-1"
     }
   ],
   "status": "final",

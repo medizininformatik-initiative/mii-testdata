@@ -71,6 +71,11 @@
       }
     }
   ],
+  "derivedFrom": [
+    {
+      "reference": "DocumentReference/mii-exa-test-data-lungenfunktion-docref-rohdaten-1"
+    }
+  ],
   "valueQuantity": {
     "system": "http://unitsofmeasure.org",
     "code": "/min",

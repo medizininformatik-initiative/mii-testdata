@@ -17,6 +17,16 @@
   "code": {
     "coding": [
       {
+        "extension": [
+          {
+            "url": "http://fhir.de/StructureDefinition/seitenlokalisation",
+            "valueCoding": {
+              "code": "L",
+              "system": "https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_ICD_SEITENLOKALISATION",
+              "display": "links"
+            }
+          }
+        ],
         "system": "http://fhir.de/CodeSystem/bfarm/ops",
         "code": "5-547.0",
         "display": "Resektion von Gewebe in der Bauchregion ohne sichere Organzuordnung: Intraperitoneal",
@@ -31,7 +41,6 @@
   },
   "extension": [
     {
-      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-operation-intention",
       "valueCodeableConcept": {
         "coding": [
           {
@@ -39,11 +48,12 @@
             "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-intention",
             "display": "kurativ"
           }
-        ]
-      }
+        ],
+        "text": "kurativ"
+      },
+      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-operation-intention"
     },
     {
-      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-operation-urgency",
       "valueCodeableConcept": {
         "coding": [
           {
@@ -51,7 +61,21 @@
             "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-operation-urgency",
             "display": "Elektiveingriff"
           }
-        ]
+        ],
+        "text": "Elektiveingriff"
+      },
+      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-operation-urgency"
+    },
+    {
+      "url": "http://fhir.de/StructureDefinition/ProzedurDokumentationsdatum",
+      "valueDateTime": "2021-10-01"
+    },
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Durchfuehrungsabsicht",
+      "valueCoding": {
+        "system": "http://snomed.info/sct",
+        "code": "262202000",
+        "display": "Therapeutic"
       }
     }
   ],
@@ -89,6 +113,23 @@
   "partOf": [
     {
       "reference": "Procedure/mii-exa-test-data-onko-systemische-therapie-1"
+    }
+  ],
+  "bodySite": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "15497006",
+          "display": "Ovarian structure (body structure)",
+          "version": "http://snomed.info/sct/900000000000207008/version/20240201"
+        }
+      ]
+    }
+  ],
+  "note": [
+    {
+      "text": "Debulking-Operation mit vollständiger makroskopischer Tumorentfernung."
     }
   ],
   "status": "completed",

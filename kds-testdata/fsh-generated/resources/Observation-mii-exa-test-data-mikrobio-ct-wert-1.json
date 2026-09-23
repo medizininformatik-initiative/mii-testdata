@@ -91,7 +91,8 @@
       {
         "code": "74039-9",
         "system": "http://loinc.org",
-        "display": "Influenza virus A H3 RNA [Cycle Threshold #] in Specimen by NAA with probe detection"
+        "display": "Influenza virus A H3 RNA [Cycle Threshold #] in Specimen by NAA with probe detection",
+        "version": "2.80"
       }
     ]
   },
@@ -149,6 +150,11 @@
   "note": [
     {
       "text": "Niedriger CT-Wert (21.3) spricht fuer hohe Erregerlast."
+    }
+  ],
+  "basedOn": [
+    {
+      "reference": "ServiceRequest/mii-exa-test-data-mikrobio-servicerequest-1"
     }
   ],
   "status": "final",

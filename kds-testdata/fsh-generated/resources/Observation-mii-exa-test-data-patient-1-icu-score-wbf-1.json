@@ -37,6 +37,11 @@
       }
     ]
   },
+  "performer": [
+    {
+      "reference": "Practitioner/mii-exa-test-data-icu-practitioner-1"
+    }
+  ],
   "valueQuantity": {
     "unit": "{score}",
     "system": "http://unitsofmeasure.org",

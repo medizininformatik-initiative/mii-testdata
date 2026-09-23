@@ -39,6 +39,12 @@
       }
     ]
   },
+  "identifier": [
+    {
+      "system": "https://www.charite.de/fhir/sid/icu-observation-id",
+      "value": "icu-vent-ps-1"
+    }
+  ],
   "valueQuantity": {
     "system": "http://unitsofmeasure.org",
     "code": "cm[H2O]",
@@ -49,5 +55,12 @@
   "subject": {
     "reference": "Patient/mii-exa-test-data-icu-patient-1"
   },
-  "effectiveDateTime": "2024-05-05T08:00:00+02:00"
+  "effectiveDateTime": "2024-05-05T08:00:00+02:00",
+  "encounter": {
+    "reference": "Encounter/mii-exa-test-data-icu-encounter-1"
+  },
+  "issued": "2024-05-05T11:00:00+02:00",
+  "device": {
+    "reference": "DeviceMetric/mii-exa-test-data-patient-1-icu-vent-dm-param-1"
+  }
 }

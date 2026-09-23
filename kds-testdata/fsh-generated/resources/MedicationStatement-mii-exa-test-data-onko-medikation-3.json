@@ -19,7 +19,8 @@
       {
         "system": "http://fhir.de/CodeSystem/bfarm/atc",
         "code": "L01XK02",
-        "display": "Niraparib"
+        "display": "Niraparib",
+        "version": "2022"
       }
     ]
   },
@@ -34,6 +35,29 @@
   "note": [
     {
       "text": "Erhaltungstherapie mit PARP-Inhibitor"
+    }
+  ],
+  "dosage": [
+    {
+      "timing": {
+        "repeat": {
+          "boundsRange": {
+            "low": {
+              "value": 2,
+              "code": "wk",
+              "system": "http://unitsofmeasure.org",
+              "unit": "Wochen"
+            },
+            "high": {
+              "value": 4,
+              "code": "wk",
+              "system": "http://unitsofmeasure.org",
+              "unit": "Wochen"
+            }
+          }
+        }
+      },
+      "text": "Einschleichen über 2-4 Wochen"
     }
   ],
   "status": "completed",

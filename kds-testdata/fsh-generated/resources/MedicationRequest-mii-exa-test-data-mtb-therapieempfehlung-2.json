@@ -29,10 +29,40 @@
       "reference": "Condition/mii-exa-test-data-mtb-diagnose-primaertumor-1"
     }
   ],
+  "dosageInstruction": [
+    {
+      "timing": {
+        "repeat": {
+          "boundsDuration": {
+            "system": "http://unitsofmeasure.org",
+            "value": 7,
+            "code": "d",
+            "unit": "Tage"
+          },
+          "when": [
+            "MORN"
+          ],
+          "offset": 30
+        }
+      },
+      "asNeededCodeableConcept": {
+        "coding": [
+          {
+            "code": "422587007",
+            "system": "http://snomed.info/sct",
+            "display": "Nausea (finding)"
+          }
+        ]
+      }
+    }
+  ],
   "status": "draft",
   "intent": "option",
   "authoredOn": "2024-03-28",
   "subject": {
     "reference": "Patient/mii-exa-test-data-mtb-patient-1"
+  },
+  "priorPrescription": {
+    "reference": "MedicationRequest/mii-exa-test-data-mtb-therapieempfehlung-1"
   }
 }

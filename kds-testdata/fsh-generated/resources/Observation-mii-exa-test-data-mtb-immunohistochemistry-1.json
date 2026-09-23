@@ -84,11 +84,43 @@
       }
     }
   ],
+  "focus": [
+    {
+      "reference": "Condition/mii-exa-test-data-mtb-diagnose-primaertumor-1"
+    }
+  ],
+  "identifier": [
+    {
+      "system": "https://www.charite.de/fhir/sid/mtb-befund",
+      "value": "IHC-2024-001"
+    }
+  ],
+  "interpretation": [
+    {
+      "coding": [
+        {
+          "code": "POS",
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "display": "Positive"
+        }
+      ]
+    }
+  ],
+  "derivedFrom": [
+    {
+      "reference": "Observation/mii-exa-test-data-mtb-einfache-variante-1"
+    }
+  ],
   "status": "final",
   "subject": {
     "reference": "Patient/mii-exa-test-data-mtb-patient-1"
   },
   "specimen": {
     "reference": "Specimen/mii-exa-test-data-mtb-specimen-1"
+  },
+  "effectiveDateTime": "2024-03-08",
+  "issued": "2024-03-10T09:00:00+01:00",
+  "encounter": {
+    "reference": "Encounter/mii-exa-test-data-mtb-encounter-1"
   }
 }

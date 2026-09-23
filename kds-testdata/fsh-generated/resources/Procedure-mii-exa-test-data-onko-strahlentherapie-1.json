@@ -17,6 +17,16 @@
   "code": {
     "coding": [
       {
+        "extension": [
+          {
+            "url": "http://fhir.de/StructureDefinition/seitenlokalisation",
+            "valueCoding": {
+              "code": "T",
+              "system": "https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_ICD_SEITENLOKALISATION",
+              "display": "trifft nicht zu"
+            }
+          }
+        ],
         "system": "http://fhir.de/CodeSystem/bfarm/ops",
         "code": "8-522",
         "display": "Hochvoltstrahlentherapie",
@@ -35,7 +45,6 @@
   },
   "extension": [
     {
-      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-strahlentherapie-intention",
       "valueCodeableConcept": {
         "coding": [
           {
@@ -43,8 +52,10 @@
             "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-intention",
             "display": "kurativ"
           }
-        ]
-      }
+        ],
+        "text": "kurativ"
+      },
+      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-strahlentherapie-intention"
     },
     {
       "valueCodeableConcept": {
@@ -54,9 +65,22 @@
             "code": "A",
             "display": "adjuvant"
           }
-        ]
+        ],
+        "text": "adjuvant"
       },
       "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-strahlentherapie-stellungzurop"
+    },
+    {
+      "url": "http://fhir.de/StructureDefinition/ProzedurDokumentationsdatum",
+      "valueDateTime": "2022-03-16"
+    },
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Durchfuehrungsabsicht",
+      "valueCoding": {
+        "system": "http://snomed.info/sct",
+        "code": "262202000",
+        "display": "Therapeutic"
+      }
     }
   ],
   "outcome": {
@@ -81,6 +105,23 @@
   "partOf": [
     {
       "reference": "Observation/mii-exa-test-data-onko-verlauf-1"
+    }
+  ],
+  "bodySite": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "12921003",
+          "display": "Pelvic structure (body structure)",
+          "version": "http://snomed.info/sct/900000000000207008/version/20240201"
+        }
+      ]
+    }
+  ],
+  "note": [
+    {
+      "text": "Adjuvante Bestrahlung des Beckens nach Operation."
     }
   ],
   "status": "completed",

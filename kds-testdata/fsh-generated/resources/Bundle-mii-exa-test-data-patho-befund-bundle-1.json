@@ -10,6 +10,7 @@
       }
     ],
     "source": "https://www.charite.de/fhir/kds-testdata",
+    "lastUpdated": "2024-01-20T16:00:00+01:00",
     "profile": [
       "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-bundle"
     ]
@@ -50,6 +51,7 @@
             }
           ],
           "source": "https://www.charite.de/fhir/kds-testdata",
+          "lastUpdated": "2024-01-20T16:00:00+01:00",
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-composition"
           ]
@@ -89,7 +91,8 @@
               "code": "721967005",
               "display": "Tissue pathology biopsy report"
             }
-          ]
+          ],
+          "text": "Histopathologischer Befundbericht"
         },
         "category": [
           {
@@ -134,8 +137,25 @@
             ]
           }
         ],
+        "relatesTo": [
+          {
+            "code": "replaces",
+            "targetReference": {
+              "reference": "Composition/mii-exa-test-data-patho-composition-0"
+            }
+          }
+        ],
         "section": [
           {
+            "section": [
+              {
+                "text": {
+                  "status": "additional",
+                  "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Vorabmitteilung des Schnellschnittergebnisses am 2024-01-15.</p></div>"
+                },
+                "title": "Vorläufige Mitteilung"
+              }
+            ],
             "text": {
               "status": "additional",
               "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h3>Klinische Angaben</h3><p>Erhöhter PSA-Wert (12,8 ng/ml). V.a. Prostatakarzinom. Bitte histologische Abklärung. Stanzbiopsie der rechten Prostata (2 Stanzen).</p><p>Der vollständige strukturierte Befund gliedert sich in die Sektionen Makroskopie, Mikroskopie, Intraoperative Beobachtung, Diagnostische Schlussfolgerung und Zusätzliche Beobachtungen.</p></div>"
@@ -166,6 +186,15 @@
                 "reference": "Observation/mii-exa-test-data-patho-macro-grouper-1"
               }
             ],
+            "section": [
+              {
+                "text": {
+                  "status": "additional",
+                  "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Stanze 01: 1 Zylinder, 1,8 cm, rechts lateral basal.</p></div>"
+                },
+                "title": "Makroskopie Stanze 01"
+              }
+            ],
             "code": {
               "coding": [
                 {
@@ -185,6 +214,15 @@
             "entry": [
               {
                 "reference": "Observation/mii-exa-test-data-patho-micro-grouper-1"
+              }
+            ],
+            "section": [
+              {
+                "text": {
+                  "status": "additional",
+                  "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Stanze 01: azinäres Adenokarzinom, Gleason 3+4=7.</p></div>"
+                },
+                "title": "Mikroskopie Stanze 01"
               }
             ],
             "code": {
@@ -208,6 +246,15 @@
                 "reference": "Observation/mii-exa-test-data-patho-intraop-grouper-1"
               }
             ],
+            "section": [
+              {
+                "text": {
+                  "status": "additional",
+                  "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Schnellschnitt: Nachweis eines azinären Adenokarzinoms.</p></div>"
+                },
+                "title": "Schnellschnitt Stanze 01"
+              }
+            ],
             "code": {
               "coding": [
                 {
@@ -229,6 +276,15 @@
                 "reference": "Observation/mii-exa-test-data-patho-conclusion-grouper-1"
               }
             ],
+            "section": [
+              {
+                "text": {
+                  "status": "additional",
+                  "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Azinäres Adenokarzinom der Prostata (ICD-O 8140/3), ISUP-Gradgruppe 2.</p></div>"
+                },
+                "title": "Diagnose"
+              }
+            ],
             "code": {
               "coding": [
                 {
@@ -248,6 +304,15 @@
             "entry": [
               {
                 "reference": "Observation/mii-exa-test-data-patho-zusatz-grouper-1"
+              }
+            ],
+            "section": [
+              {
+                "text": {
+                  "status": "additional",
+                  "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Immunhistochemie: Tumorzellen negativ für p63.</p></div>"
+                },
+                "title": "Immunhistochemie"
               }
             ],
             "code": {
@@ -353,6 +418,7 @@
             }
           ],
           "source": "https://www.charite.de/fhir/kds-testdata",
+          "lastUpdated": "2024-01-20T16:00:00+01:00",
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-service-request"
           ]
@@ -433,6 +499,19 @@
             "reference": "List/mii-exa-test-data-patient-1-patho-active-problems-1"
           }
         ],
+        "requisition": {
+          "type": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                "code": "PGN",
+                "display": "Placer Group Number"
+              }
+            ]
+          },
+          "system": "https://www.charite.de/fhir/sid/patho/untersuchungsauftrag",
+          "value": "REQ-2024-001"
+        },
         "intent": "order",
         "status": "completed",
         "code": {
@@ -589,7 +668,8 @@
               "display": "test health data"
             }
           ],
-          "source": "https://www.charite.de/fhir/kds-testdata"
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "lastUpdated": "2024-01-20T16:00:00+01:00"
         },
         "extension": [
           {
@@ -650,6 +730,43 @@
           }
         ],
         "collection": {
+          "quantity": {
+            "system": "http://unitsofmeasure.org",
+            "value": 1,
+            "unit": "Stanzzylinder",
+            "code": "1"
+          },
+          "extension": [
+            {
+              "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/EinstellungBlutversorgung",
+              "valueDateTime": "2024-01-15T10:29:00+01:00"
+            }
+          ],
+          "bodySite": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-Specimen.collection.bodySite",
+                "valueReference": {
+                  "reference": "BodyStructure/mii-exa-test-data-patho-body-structure-1"
+                }
+              }
+            ],
+            "coding": [
+              {
+                "code": "716902004",
+                "system": "http://snomed.info/sct",
+                "display": "Right basal peripheral zone of prostate"
+              }
+            ]
+          },
+          "fastingStatusCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0916",
+                "code": "NF"
+              }
+            ]
+          },
           "collector": {
             "reference": "Practitioner/mii-exa-test-data-patho-practitioner-2"
           },
@@ -662,19 +779,22 @@
                 "display": "Tru-cut biopsy of prostate (procedure)"
               }
             ]
-          },
-          "bodySite": {
-            "coding": [
-              {
-                "code": "716902004",
-                "system": "http://snomed.info/sct",
-                "display": "Right basal peripheral zone of prostate"
-              }
-            ]
           }
         },
         "container": [
           {
+            "capacity": {
+              "system": "http://unitsofmeasure.org",
+              "value": 10,
+              "unit": "mL",
+              "code": "mL"
+            },
+            "specimenQuantity": {
+              "system": "http://unitsofmeasure.org",
+              "value": 2,
+              "unit": "mL",
+              "code": "mL"
+            },
             "type": {
               "coding": [
                 {
@@ -695,6 +815,38 @@
             }
           }
         ],
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Prostatastanze 01, rechts lateral basal, Tru-cut-Biopsie in Formalin</div>"
+        },
+        "note": [
+          {
+            "text": "Stanze mit roter Tinte markiert, sofort in Formalin fixiert."
+          }
+        ],
+        "processing": [
+          {
+            "additive": [
+              {
+                "reference": "Substance/mii-exa-test-data-patho-substance-formalin-1"
+              }
+            ],
+            "timePeriod": {
+              "start": "2024-01-15T11:00:00+01:00",
+              "end": "2024-01-16T07:30:00+01:00"
+            },
+            "procedure": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "787376009",
+                  "display": "Preparation of formalin fixed paraffin embedded tissue specimen"
+                }
+              ]
+            },
+            "description": "Formalinfixierung"
+          }
+        ],
         "type": {
           "coding": [
             {
@@ -707,7 +859,8 @@
         "status": "available",
         "subject": {
           "reference": "Patient/mii-exa-test-data-patho-patient-1"
-        }
+        },
+        "receivedTime": "2024-01-15T16:00:00+01:00"
       }
     },
     {
@@ -1277,6 +1430,7 @@
             }
           ],
           "source": "https://www.charite.de/fhir/kds-testdata",
+          "lastUpdated": "2024-01-20T16:00:00+01:00",
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-report"
           ]
@@ -1379,6 +1533,23 @@
                 "display": "Malignant tumor of prostate (disorder)"
               }
             ]
+          }
+        ],
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Pathologiebericht Prostatastanzen E_24_001: Azinäres Adenokarzinom, Gleason 3+4=7, ISUP 2</div>"
+        },
+        "imagingStudy": [
+          {
+            "reference": "ImagingStudy/mii-exa-test-data-patho-imaging-study-1"
+          }
+        ],
+        "presentedForm": [
+          {
+            "contentType": "application/pdf",
+            "language": "de",
+            "url": "https://www.charite.de/fhir/sid/patho/report/E_24_001.pdf",
+            "title": "Histopathologischer Befundbericht E_24_001 (PDF)"
           }
         ],
         "code": {
@@ -1487,6 +1658,7 @@
             }
           ],
           "source": "https://www.charite.de/fhir/kds-testdata",
+          "lastUpdated": "2024-01-20T16:00:00+01:00",
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-diagnostic-conclusion-grouper"
           ]
@@ -1593,6 +1765,21 @@
             "reference": "Observation/mii-exa-test-data-patho-tumoranteil-01"
           }
         ],
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Diagnostische Schlussfolgerung: Azinäres Adenokarzinom der Prostata, Gleason 3+4=7, ISUP 2</div>"
+        },
+        "identifier": [
+          {
+            "system": "https://www.charite.de/fhir/sid/patho/befund",
+            "value": "E_24_001_CONCLUSION"
+          }
+        ],
+        "note": [
+          {
+            "text": "Diagnose auf Basis von Mikroskopie und Immunhistochemie beider Stanzen."
+          }
+        ],
         "code": {
           "coding": [
             {
@@ -1605,7 +1792,28 @@
         "subject": {
           "reference": "Patient/mii-exa-test-data-patho-patient-1"
         },
-        "effectiveDateTime": "2024-01-20"
+        "effectiveDateTime": "2024-01-20",
+        "method": {
+          "coding": [
+            {
+              "code": "104157003",
+              "system": "http://snomed.info/sct",
+              "display": "Light microscopy (procedure)"
+            }
+          ]
+        },
+        "specimen": {
+          "reference": "Specimen/mii-exa-test-data-patho-specimen-01-slide"
+        },
+        "bodySite": {
+          "coding": [
+            {
+              "code": "41216001",
+              "system": "http://snomed.info/sct",
+              "display": "Prostate"
+            }
+          ]
+        }
       }
     },
     {
@@ -1700,6 +1908,7 @@
             }
           ],
           "source": "https://www.charite.de/fhir/kds-testdata",
+          "lastUpdated": "2024-01-20T16:00:00+01:00",
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding"
           ]
@@ -1746,6 +1955,42 @@
             "reference": "ServiceRequest/mii-exa-test-data-patho-request-1"
           }
         ],
+        "identifier": [
+          {
+            "system": "https://www.charite.de/fhir/sid/patho/befund",
+            "value": "E_24_001_GLEASON"
+          }
+        ],
+        "hasMember": [
+          {
+            "reference": "Observation/mii-exa-test-data-patho-primary-gleason-pattern"
+          },
+          {
+            "reference": "Observation/mii-exa-test-data-patho-secondary-gleason-pattern"
+          }
+        ],
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "44641-9",
+                  "system": "http://loinc.org",
+                  "display": "Percent of Gleason pattern 4 and 5 in Prostate tumor"
+                }
+              ]
+            },
+            "dataAbsentReason": {
+              "coding": [
+                {
+                  "code": "cannot-be-obtained",
+                  "system": "http://terminology.hl7.org/CodeSystem/data-absent-reason",
+                  "display": "Cannot Be Obtained"
+                }
+              ]
+            }
+          }
+        ],
         "derivedFrom": [
           {
             "reference": "Observation/mii-exa-test-data-patho-primary-gleason-pattern"
@@ -1765,6 +2010,15 @@
               "code": "57403001",
               "system": "http://snomed.info/sct",
               "display": "Gleason grade score 7"
+            }
+          ]
+        },
+        "method": {
+          "coding": [
+            {
+              "code": "104157003",
+              "system": "http://snomed.info/sct",
+              "display": "Light microscopy (procedure)"
             }
           ]
         }
@@ -2024,6 +2278,16 @@
             "reference": "Practitioner/mii-exa-test-data-patho-practitioner-1"
           }
         ],
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "8140/3",
+              "system": "urn:oid:2.16.840.1.113883.6.43.1",
+              "display": "Azinäres Adenokarzinom",
+              "version": "3.2"
+            }
+          ]
+        },
         "status": "final",
         "code": {
           "coding": [
@@ -2038,15 +2302,6 @@
           "reference": "Patient/mii-exa-test-data-patho-patient-1"
         },
         "effectiveDateTime": "2024-01-17T10:00:00+01:00",
-        "valueCodeableConcept": {
-          "coding": [
-            {
-              "code": "8140/3",
-              "system": "urn:oid:2.16.840.1.113883.6.43.1",
-              "display": "Azinäres Adenokarzinom"
-            }
-          ]
-        },
         "bodySite": {
           "coding": [
             {
@@ -2186,6 +2441,13 @@
           }
         ],
         "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "1663004",
+              "system": "http://snomed.info/sct",
+              "display": "Moderately differentiated (qualifier value)"
+            }
+          ],
           "text": "G2: mäßig differenziert"
         },
         "status": "final",
@@ -2250,6 +2512,16 @@
             "reference": "ServiceRequest/mii-exa-test-data-patho-request-1"
           }
         ],
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "8140/3",
+              "system": "urn:oid:2.16.840.1.113883.6.43.1",
+              "display": "Azinäres Adenokarzinom",
+              "version": "3.2"
+            }
+          ]
+        },
         "status": "final",
         "code": {
           "coding": [
@@ -2263,16 +2535,7 @@
         "subject": {
           "reference": "Patient/mii-exa-test-data-patho-patient-1"
         },
-        "effectiveDateTime": "2024-01-20",
-        "valueCodeableConcept": {
-          "coding": [
-            {
-              "code": "8140/3",
-              "system": "urn:oid:2.16.840.1.113883.6.43.1",
-              "display": "Azinäres Adenokarzinom"
-            }
-          ]
-        }
+        "effectiveDateTime": "2024-01-20"
       }
     },
     {
@@ -2505,6 +2768,7 @@
             }
           ],
           "source": "https://www.charite.de/fhir/kds-testdata",
+          "lastUpdated": "2024-01-20T16:00:00+01:00",
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-intraoperative-grouper"
           ]
@@ -2529,6 +2793,29 @@
             "reference": "Observation/mii-exa-test-data-patho-intraop-befund-1"
           }
         ],
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Intraoperativer Grouper: Schnellschnitt-Befund Stanze 01</div>"
+        },
+        "identifier": [
+          {
+            "system": "https://www.charite.de/fhir/sid/patho/befund",
+            "value": "E_24_001_INTRAOP"
+          }
+        ],
+        "basedOn": [
+          {
+            "reference": "ServiceRequest/mii-exa-test-data-patho-request-1"
+          }
+        ],
+        "derivedFrom": [
+          {
+            "reference": "Media/mii-exa-test-data-patho-image-1"
+          },
+          {
+            "reference": "ImagingStudy/mii-exa-test-data-patho-imaging-study-1"
+          }
+        ],
         "code": {
           "coding": [
             {
@@ -2541,7 +2828,28 @@
         "subject": {
           "reference": "Patient/mii-exa-test-data-patho-patient-1"
         },
-        "effectiveDateTime": "2024-01-15T11:00:00+01:00"
+        "effectiveDateTime": "2024-01-15T11:00:00+01:00",
+        "method": {
+          "coding": [
+            {
+              "code": "20135006",
+              "system": "http://snomed.info/sct",
+              "display": "Frozen section procedure (procedure)"
+            }
+          ]
+        },
+        "specimen": {
+          "reference": "Specimen/mii-exa-test-data-patho-specimen-01-part"
+        },
+        "bodySite": {
+          "coding": [
+            {
+              "code": "41216001",
+              "system": "http://snomed.info/sct",
+              "display": "Prostate"
+            }
+          ]
+        }
       }
     },
     {
@@ -2629,6 +2937,7 @@
             }
           ],
           "source": "https://www.charite.de/fhir/kds-testdata",
+          "lastUpdated": "2024-01-20T16:00:00+01:00",
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-macroscopic-grouper"
           ]
@@ -2668,6 +2977,29 @@
             "reference": "Observation/mii-exa-test-data-patho-macroscopic-laterality-03"
           }
         ],
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Makroskopie-Grouper: Messungen der Prostatastanzen 01 und 03</div>"
+        },
+        "identifier": [
+          {
+            "system": "https://www.charite.de/fhir/sid/patho/befund",
+            "value": "E_24_001_MAKRO"
+          }
+        ],
+        "basedOn": [
+          {
+            "reference": "ServiceRequest/mii-exa-test-data-patho-request-1"
+          }
+        ],
+        "derivedFrom": [
+          {
+            "reference": "Media/mii-exa-test-data-patho-image-1"
+          },
+          {
+            "reference": "ImagingStudy/mii-exa-test-data-patho-imaging-study-1"
+          }
+        ],
         "code": {
           "coding": [
             {
@@ -2690,6 +3022,18 @@
               "display": "Prostate"
             }
           ]
+        },
+        "method": {
+          "coding": [
+            {
+              "code": "787377000",
+              "system": "http://snomed.info/sct",
+              "display": "Gross examination and sampling of tissue specimen (procedure)"
+            }
+          ]
+        },
+        "specimen": {
+          "reference": "Specimen/mii-exa-test-data-patho-specimen-01-part"
         }
       }
     },
@@ -3193,6 +3537,7 @@
             }
           ],
           "source": "https://www.charite.de/fhir/kds-testdata",
+          "lastUpdated": "2024-01-20T16:00:00+01:00",
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-microscopic-grouper"
           ]
@@ -3210,6 +3555,29 @@
         "performer": [
           {
             "reference": "Practitioner/mii-exa-test-data-patho-practitioner-1"
+          }
+        ],
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Mikroskopie-Grouper: Befunde der Prostatastanzen 01 und 03</div>"
+        },
+        "identifier": [
+          {
+            "system": "https://www.charite.de/fhir/sid/patho/befund",
+            "value": "E_24_001_MIKRO"
+          }
+        ],
+        "basedOn": [
+          {
+            "reference": "ServiceRequest/mii-exa-test-data-patho-request-1"
+          }
+        ],
+        "derivedFrom": [
+          {
+            "reference": "Media/mii-exa-test-data-patho-image-1"
+          },
+          {
+            "reference": "ImagingStudy/mii-exa-test-data-patho-imaging-study-1"
           }
         ],
         "hasMember": [
@@ -3260,6 +3628,18 @@
               "display": "Prostate"
             }
           ]
+        },
+        "method": {
+          "coding": [
+            {
+              "code": "104157003",
+              "system": "http://snomed.info/sct",
+              "display": "Light microscopy (procedure)"
+            }
+          ]
+        },
+        "specimen": {
+          "reference": "Specimen/mii-exa-test-data-patho-specimen-01-slide"
         }
       }
     },
@@ -4674,6 +5054,7 @@
             }
           ],
           "source": "https://www.charite.de/fhir/kds-testdata",
+          "lastUpdated": "2024-01-20T16:00:00+01:00",
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-additional-specified-grouper"
           ]
@@ -4698,6 +5079,29 @@
             "reference": "Observation/mii-exa-test-data-patho-p63-befund-1"
           }
         ],
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Zusatzbefund-Grouper: Immunhistochemie p63</div>"
+        },
+        "identifier": [
+          {
+            "system": "https://www.charite.de/fhir/sid/patho/befund",
+            "value": "E_24_001_ZUSATZ"
+          }
+        ],
+        "basedOn": [
+          {
+            "reference": "ServiceRequest/mii-exa-test-data-patho-request-1"
+          }
+        ],
+        "derivedFrom": [
+          {
+            "reference": "Media/mii-exa-test-data-patho-image-1"
+          },
+          {
+            "reference": "ImagingStudy/mii-exa-test-data-patho-imaging-study-1"
+          }
+        ],
         "code": {
           "coding": [
             {
@@ -4710,7 +5114,28 @@
         "subject": {
           "reference": "Patient/mii-exa-test-data-patho-patient-1"
         },
-        "effectiveDateTime": "2024-01-18T09:00:00+01:00"
+        "effectiveDateTime": "2024-01-18T09:00:00+01:00",
+        "method": {
+          "coding": [
+            {
+              "code": "117617002",
+              "system": "http://snomed.info/sct",
+              "display": "Immunohistochemistry procedure (procedure)"
+            }
+          ]
+        },
+        "specimen": {
+          "reference": "Specimen/mii-exa-test-data-patho-specimen-01-slide"
+        },
+        "bodySite": {
+          "coding": [
+            {
+              "code": "41216001",
+              "system": "http://snomed.info/sct",
+              "display": "Prostate"
+            }
+          ]
+        }
       }
     },
     {
@@ -4826,6 +5251,7 @@
             }
           ],
           "source": "https://www.charite.de/fhir/kds-testdata",
+          "lastUpdated": "2024-01-20T16:00:00+01:00",
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-attached-image"
           ]
@@ -4843,6 +5269,15 @@
           "url": "https://www.charite.de/fhir/sid/patho/image/E_24_001_A_1_1HE",
           "title": "HE-Schnitt Stanze 01"
         },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Fotodokumentation des HE-Schnitts der Prostatastanze 01</div>"
+        },
+        "partOf": [
+          {
+            "reference": "Media/mii-exa-test-data-patho-image-2"
+          }
+        ],
         "status": "completed",
         "modality": {
           "coding": [
@@ -5083,7 +5518,8 @@
             {
               "code": "C61",
               "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
-              "display": "Bösartige Neubildung der Prostata"
+              "display": "Bösartige Neubildung der Prostata",
+              "version": "2026"
             }
           ]
         },

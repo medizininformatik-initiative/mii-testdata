@@ -10,6 +10,7 @@
       }
     ],
     "source": "https://www.charite.de/fhir/kds-testdata",
+    "lastUpdated": "2024-01-20T16:00:00+01:00",
     "profile": [
       "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-composition"
     ]
@@ -53,7 +54,8 @@
         "code": "721967005",
         "display": "Tissue pathology biopsy report"
       }
-    ]
+    ],
+    "text": "Histopathologischer Befundbericht"
   },
   "category": [
     {
@@ -98,8 +100,25 @@
       ]
     }
   ],
+  "relatesTo": [
+    {
+      "code": "replaces",
+      "targetReference": {
+        "reference": "Composition/mii-exa-test-data-patho-composition-0"
+      }
+    }
+  ],
   "section": [
     {
+      "section": [
+        {
+          "text": {
+            "status": "additional",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Vorabmitteilung des Schnellschnittergebnisses am 2024-01-15.</p></div>"
+          },
+          "title": "Vorläufige Mitteilung"
+        }
+      ],
       "text": {
         "status": "additional",
         "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h3>Klinische Angaben</h3><p>Erhöhter PSA-Wert (12,8 ng/ml). V.a. Prostatakarzinom. Bitte histologische Abklärung. Stanzbiopsie der rechten Prostata (2 Stanzen).</p><p>Der vollständige strukturierte Befund gliedert sich in die Sektionen Makroskopie, Mikroskopie, Intraoperative Beobachtung, Diagnostische Schlussfolgerung und Zusätzliche Beobachtungen.</p></div>"
@@ -130,6 +149,15 @@
           "reference": "Observation/mii-exa-test-data-patho-macro-grouper-1"
         }
       ],
+      "section": [
+        {
+          "text": {
+            "status": "additional",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Stanze 01: 1 Zylinder, 1,8 cm, rechts lateral basal.</p></div>"
+          },
+          "title": "Makroskopie Stanze 01"
+        }
+      ],
       "code": {
         "coding": [
           {
@@ -149,6 +177,15 @@
       "entry": [
         {
           "reference": "Observation/mii-exa-test-data-patho-micro-grouper-1"
+        }
+      ],
+      "section": [
+        {
+          "text": {
+            "status": "additional",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Stanze 01: azinäres Adenokarzinom, Gleason 3+4=7.</p></div>"
+          },
+          "title": "Mikroskopie Stanze 01"
         }
       ],
       "code": {
@@ -172,6 +209,15 @@
           "reference": "Observation/mii-exa-test-data-patho-intraop-grouper-1"
         }
       ],
+      "section": [
+        {
+          "text": {
+            "status": "additional",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Schnellschnitt: Nachweis eines azinären Adenokarzinoms.</p></div>"
+          },
+          "title": "Schnellschnitt Stanze 01"
+        }
+      ],
       "code": {
         "coding": [
           {
@@ -193,6 +239,15 @@
           "reference": "Observation/mii-exa-test-data-patho-conclusion-grouper-1"
         }
       ],
+      "section": [
+        {
+          "text": {
+            "status": "additional",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Azinäres Adenokarzinom der Prostata (ICD-O 8140/3), ISUP-Gradgruppe 2.</p></div>"
+          },
+          "title": "Diagnose"
+        }
+      ],
       "code": {
         "coding": [
           {
@@ -212,6 +267,15 @@
       "entry": [
         {
           "reference": "Observation/mii-exa-test-data-patho-zusatz-grouper-1"
+        }
+      ],
+      "section": [
+        {
+          "text": {
+            "status": "additional",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Immunhistochemie: Tumorzellen negativ für p63.</p></div>"
+          },
+          "title": "Immunhistochemie"
         }
       ],
       "code": {

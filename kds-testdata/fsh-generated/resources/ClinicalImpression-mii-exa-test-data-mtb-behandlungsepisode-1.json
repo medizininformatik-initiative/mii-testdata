@@ -91,6 +91,28 @@
   ],
   "supportingInfo": [
     {
+      "extension": [
+        {
+          "extension": [
+            {
+              "url": "Therapielinie",
+              "valueUnsignedInt": 1
+            },
+            {
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "in-label",
+                    "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/CodeSystem/mii-cs-mtb-zulassungsstatus"
+                  }
+                ]
+              },
+              "url": "Zulassungsstatus"
+            }
+          ],
+          "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-ex-mtb-leitlinie-dokumentation"
+        }
+      ],
       "reference": "Procedure/mii-exa-test-data-mtb-systemische-vortherapie-1"
     },
     {
@@ -98,6 +120,16 @@
     },
     {
       "reference": "CarePlan/mii-exa-test-data-mtb-therapieplan-1"
+    }
+  ],
+  "extension": [
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-ex-mtb-leitlinienbehandlung-status",
+      "valueCoding": {
+        "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/CodeSystem/mii-cs-mtb-leitlinienbehandlung-status",
+        "code": "exhausted",
+        "display": "exhausted"
+      }
     }
   ],
   "status": "completed",

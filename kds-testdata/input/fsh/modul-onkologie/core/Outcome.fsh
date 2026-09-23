@@ -158,13 +158,16 @@ Description: "Onkologie Test Genetische Variante - BRCA1 Mutation"
 * component[sample-allelic-frequency].valueQuantity.unit = "%"
 * component[allelic-read-depth].valueQuantity.value = 120
 * component[allelic-state].valueCodeableConcept = $LNC#LA6706-1 "Heterozygous"
+* component[variant-inheritance].valueCodeableConcept = $loinc#LA6684-0 "Somatic"
 * component[variant-inheritance].valueCodeableConcept.text = "Somatisch"
 * component[variation-code].valueCodeableConcept.coding = http://www.ncbi.nlm.nih.gov/clinvar#17662 "NM_007294.4(BRCA1):c.68_69del"
 * component[copy-number].valueQuantity.value = 2
+* component[variant-confidence-status].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/variant-confidence-status-cs#high "High"
 * component[variant-confidence-status].valueCodeableConcept.text = "hohe Konfidenz"
 * component[detection-limit].valueQuantity = 5 '%'
 * component[detection-limit].valueQuantity.unit = "%"
 * component[dna-region].valueString = "Exon 2"
+* component[gene-fusion].valueCodeableConcept = $sct#260415000 "Not detected"
 * component[gene-fusion].valueCodeableConcept.text = "keine Genfusion nachweisbar"
 
 // Sequenzierer (Ziel der device-Referenzen von Genetischer Variante, TNM synthetisiert und Tumormarker)

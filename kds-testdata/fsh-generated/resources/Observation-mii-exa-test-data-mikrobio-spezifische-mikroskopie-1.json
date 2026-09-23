@@ -79,7 +79,8 @@
       {
         "code": "72357-7",
         "system": "http://loinc.org",
-        "display": "Microscopic observation [Presence] in Specimen by Acid fast stain"
+        "display": "Microscopic observation [Presence] in Specimen by Acid fast stain",
+        "version": "2.80"
       }
     ]
   },
@@ -88,7 +89,8 @@
       {
         "code": "260373001",
         "system": "http://snomed.info/sct",
-        "display": "Detected (qualifier value)"
+        "display": "Detected (qualifier value)",
+        "version": "http://snomed.info/sct/900000000000207008/version/20250401"
       }
     ]
   },
@@ -104,6 +106,21 @@
           }
         ]
       }
+    },
+    {
+      "extension": [
+        {
+          "url": "observation",
+          "valueReference": {
+            "reference": "Observation/mii-exa-test-data-mikrobio-mikroskopie-1"
+          }
+        },
+        {
+          "url": "type",
+          "valueCode": "reflex"
+        }
+      ],
+      "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-Observation.triggeredBy"
     }
   ],
   "component": [
@@ -144,6 +161,27 @@
       "text": "Saeurefeste Staebchen 2+ — V.a. Mykobakterien, Kultur und PCR angefordert."
     }
   ],
+  "basedOn": [
+    {
+      "reference": "ServiceRequest/mii-exa-test-data-mikrobio-servicerequest-1"
+    }
+  ],
+  "device": {
+    "identifier": {
+      "system": "https://www.charite.de/fhir/sid/device-identifier",
+      "value": "MIKROSKOP-001"
+    },
+    "reference": "Device/mii-exa-test-data-mikrobio-device-mikroskop-1"
+  },
+  "method": {
+    "coding": [
+      {
+        "code": "702661004",
+        "system": "http://snomed.info/sct",
+        "display": "Light microscopy technique (qualifier value)"
+      }
+    ]
+  },
   "status": "final",
   "effectiveDateTime": "2026-04-02T10:00:00+02:00",
   "_effectiveDateTime": {

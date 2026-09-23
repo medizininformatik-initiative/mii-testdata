@@ -32,7 +32,8 @@
         "system": "http://fdasis.nlm.nih.gov",
         "display": "OSIMERTINIB"
       }
-    ]
+    ],
+    "text": "Osimertinib 80 mg"
   },
   "reasonReference": [
     {
@@ -63,10 +64,180 @@
       "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-ex-mtb-empfehlung-publikation"
     }
   ],
+  "identifier": [
+    {
+      "system": "https://www.charite.de/fhir/sid/mtb-beschluss",
+      "value": "TE-2024-001"
+    }
+  ],
+  "dosageInstruction": [
+    {
+      "timing": {
+        "event": [
+          "2024-04-15T08:00:00+02:00"
+        ],
+        "repeat": {
+          "boundsPeriod": {
+            "start": "2024-04-15",
+            "end": "2024-08-30"
+          },
+          "dayOfWeek": [
+            "mon"
+          ],
+          "timeOfDay": [
+            "08:00:00"
+          ],
+          "frequency": 1,
+          "period": 1,
+          "periodUnit": "d",
+          "periodMax": 2,
+          "count": 130,
+          "countMax": 140,
+          "duration": 5,
+          "durationMax": 10,
+          "durationUnit": "min",
+          "frequencyMax": 2
+        }
+      },
+      "doseAndRate": [
+        {
+          "doseQuantity": {
+            "value": 80,
+            "code": "mg",
+            "system": "http://unitsofmeasure.org",
+            "unit": "mg"
+          },
+          "rateRatio": {
+            "numerator": {
+              "value": 80,
+              "code": "mg",
+              "system": "http://unitsofmeasure.org",
+              "unit": "mg"
+            },
+            "denominator": {
+              "value": 1,
+              "code": "d",
+              "system": "http://unitsofmeasure.org",
+              "unit": "Tag"
+            }
+          }
+        },
+        {
+          "doseRange": {
+            "low": {
+              "value": 40,
+              "code": "mg",
+              "system": "http://unitsofmeasure.org",
+              "unit": "mg"
+            },
+            "high": {
+              "value": 80,
+              "code": "mg",
+              "system": "http://unitsofmeasure.org",
+              "unit": "mg"
+            }
+          },
+          "rateQuantity": {
+            "value": 3.3,
+            "code": "mg/h",
+            "system": "http://unitsofmeasure.org",
+            "unit": "mg/h"
+          }
+        },
+        {
+          "rateRange": {
+            "low": {
+              "value": 2,
+              "code": "mg/h",
+              "system": "http://unitsofmeasure.org",
+              "unit": "mg/h"
+            },
+            "high": {
+              "value": 4,
+              "code": "mg/h",
+              "system": "http://unitsofmeasure.org",
+              "unit": "mg/h"
+            }
+          }
+        }
+      ],
+      "maxDosePerAdministration": {
+        "value": 80,
+        "code": "mg",
+        "system": "http://unitsofmeasure.org",
+        "unit": "mg"
+      },
+      "maxDosePerPeriod": {
+        "numerator": {
+          "value": 160,
+          "code": "mg",
+          "system": "http://unitsofmeasure.org",
+          "unit": "mg"
+        },
+        "denominator": {
+          "value": 1,
+          "code": "d",
+          "system": "http://unitsofmeasure.org",
+          "unit": "Tag"
+        }
+      },
+      "text": "80 mg einmal täglich oral",
+      "sequence": 1,
+      "route": {
+        "coding": [
+          {
+            "code": "26643006",
+            "system": "http://snomed.info/sct",
+            "display": "Oral route (qualifier value)"
+          }
+        ]
+      },
+      "site": {
+        "coding": [
+          {
+            "code": "123851003",
+            "system": "http://snomed.info/sct",
+            "display": "Mouth region structure (body structure)"
+          }
+        ]
+      },
+      "asNeededBoolean": false
+    }
+  ],
+  "note": [
+    {
+      "text": "Empfehlung mit Evidenzgrad m1A auf Basis der EGFR-L858R-Variante."
+    }
+  ],
+  "reasonCode": [
+    {
+      "coding": [
+        {
+          "code": "C34.1",
+          "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+          "display": "Bösartige Neubildung: Oberlappen (-Bronchus)"
+        }
+      ]
+    }
+  ],
+  "substitution": {
+    "allowedBoolean": false
+  },
+  "supportingInformation": [
+    {
+      "reference": "DiagnosticReport/mii-exa-test-data-mtb-ngs-bericht-1"
+    }
+  ],
   "status": "draft",
   "intent": "proposal",
   "authoredOn": "2024-03-28",
   "subject": {
     "reference": "Patient/mii-exa-test-data-mtb-patient-1"
+  },
+  "encounter": {
+    "reference": "Encounter/mii-exa-test-data-mtb-encounter-1"
+  },
+  "requester": {
+    "reference": "Organization/mii-exa-test-data-organization-charite"
   }
 }

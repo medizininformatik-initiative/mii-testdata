@@ -42,6 +42,182 @@
       }
     ]
   },
+  "focus": [
+    {
+      "reference": "Condition/mii-exa-test-data-mtb-diagnose-primaertumor-1"
+    }
+  ],
+  "identifier": [
+    {
+      "system": "https://www.charite.de/fhir/sid/mtb-befund",
+      "value": "IHC-2024-005"
+    }
+  ],
+  "derivedFrom": [
+    {
+      "reference": "Observation/mii-exa-test-data-mtb-einfache-variante-1"
+    }
+  ],
+  "component": [
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "48018-6"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "HGNC:7127",
+            "system": "http://www.genenames.org/geneId",
+            "display": "MLH1"
+          }
+        ]
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs",
+            "code": "biomarker-category"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "immuneStain",
+            "system": "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/molecular-biomarker-ontology-cs",
+            "display": "immune stain category"
+          }
+        ]
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "81691-8",
+            "display": "MLH-1 Ag [Presence] in Cancer specimen by Immune stain"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "LA26197-6",
+            "system": "http://loinc.org",
+            "display": "Intact nuclear expression"
+          }
+        ]
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "96272-0",
+            "display": "DNA mismatch repair protein Mlh3 Ag [Presence] in Cancer specimen by Immune stain"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "LA26197-6",
+            "system": "http://loinc.org",
+            "display": "Intact nuclear expression"
+          }
+        ]
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "81692-6",
+            "display": "MSH-2 Ag [Presence] in Cancer specimen by Immune stain"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "LA26197-6",
+            "system": "http://loinc.org",
+            "display": "Intact nuclear expression"
+          }
+        ]
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "96271-2",
+            "display": "DNA mismatch repair protein Msh3 Ag [Presence] in Cancer specimen by Immune stain"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "LA26197-6",
+            "system": "http://loinc.org",
+            "display": "Intact nuclear expression"
+          }
+        ]
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "81693-4",
+            "display": "MSH-6 Ag [Presence] in Cancer specimen by Immune stain"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "LA26197-6",
+            "system": "http://loinc.org",
+            "display": "Intact nuclear expression"
+          }
+        ]
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "81694-2",
+            "display": "PMS2 Ag [Presence] in Cancer specimen by Immune stain"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "LA26197-6",
+            "system": "http://loinc.org",
+            "display": "Intact nuclear expression"
+          }
+        ]
+      }
+    }
+  ],
   "status": "final",
   "code": {
     "coding": [
@@ -57,5 +233,10 @@
   },
   "specimen": {
     "reference": "Specimen/mii-exa-test-data-mtb-specimen-1"
+  },
+  "effectiveDateTime": "2024-03-08",
+  "issued": "2024-03-10T09:00:00+01:00",
+  "encounter": {
+    "reference": "Encounter/mii-exa-test-data-mtb-encounter-1"
   }
 }

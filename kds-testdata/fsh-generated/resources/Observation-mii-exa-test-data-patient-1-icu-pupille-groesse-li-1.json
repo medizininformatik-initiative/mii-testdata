@@ -34,6 +34,12 @@
       }
     ]
   },
+  "identifier": [
+    {
+      "system": "https://www.charite.de/fhir/sid/icu-observation-id",
+      "value": "icu-pupille-groesse-li-1"
+    }
+  ],
   "valueQuantity": {
     "unit": "mm",
     "system": "http://unitsofmeasure.org",

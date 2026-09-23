@@ -65,5 +65,14 @@
     "code": "ug",
     "system": "http://unitsofmeasure.org",
     "unit": "ug"
+  },
+  "method": {
+    "coding": [
+      {
+        "code": "39857003",
+        "system": "http://snomed.info/sct",
+        "display": "Weighing patient (procedure)"
+      }
+    ]
   }
 }

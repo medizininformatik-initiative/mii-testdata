@@ -52,5 +52,8 @@
   "effectiveDateTime": "2021-10-15",
   "specimen": {
     "reference": "Specimen/mii-exa-test-data-onko-specimen-1"
+  },
+  "encounter": {
+    "reference": "Encounter/mii-exa-test-data-onko-encounter-1"
   }
 }

@@ -36,6 +36,17 @@
   ],
   "action": [
     {
+      "code": [
+        {
+          "coding": [
+            {
+              "code": "CH",
+              "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-therapie-typ",
+              "display": "Chemotherapie"
+            }
+          ]
+        }
+      ],
       "action": [
         {
           "title": "Carboplatin",

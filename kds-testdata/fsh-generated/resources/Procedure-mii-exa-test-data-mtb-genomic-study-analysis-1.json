@@ -82,8 +82,15 @@
       "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-device"
     }
   ],
+  "identifier": [
+    {
+      "system": "https://www.charite.de/fhir/sid/mtb-genomic-study",
+      "value": "GSA-2024-001"
+    }
+  ],
   "status": "completed",
   "subject": {
     "reference": "Patient/mii-exa-test-data-mtb-patient-1"
-  }
+  },
+  "performedDateTime": "2024-02-21"
 }

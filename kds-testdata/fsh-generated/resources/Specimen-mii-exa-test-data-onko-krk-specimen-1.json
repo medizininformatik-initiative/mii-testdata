@@ -37,6 +37,10 @@
       ]
     }
   ],
+  "accessionIdentifier": {
+    "system": "https://www.charite.de/fhir/sid/patho/befundbericht",
+    "value": "E_21_04711"
+  },
   "status": "available",
   "type": {
     "coding": [

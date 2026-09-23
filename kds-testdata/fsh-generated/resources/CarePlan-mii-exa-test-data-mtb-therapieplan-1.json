@@ -36,6 +36,11 @@
   ],
   "activity": [
     {
+      "progress": [
+        {
+          "text": "Therapieempfehlung in Umsetzung"
+        }
+      ],
       "reference": {
         "reference": "MedicationRequest/mii-exa-test-data-mtb-therapieempfehlung-1"
       }
@@ -64,6 +69,29 @@
       "reference": {
         "reference": "ServiceRequest/mii-exa-test-data-mtb-biopsie-auftrag-1"
       }
+    },
+    {
+      "detail": {
+        "code": {
+          "coding": [
+            {
+              "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-therapie-typ",
+              "code": "CH",
+              "display": "Chemotherapie"
+            }
+          ]
+        },
+        "statusReason": {
+          "coding": [
+            {
+              "code": "N",
+              "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-therapieabweichung"
+            }
+          ],
+          "text": "regulär abgeschlossen"
+        },
+        "status": "completed"
+      }
     }
   ],
   "intent": "plan",
@@ -72,5 +100,8 @@
     "reference": "Patient/mii-exa-test-data-mtb-patient-1"
   },
   "created": "2024-03-28",
-  "description": "MTB-Beschluss mit Therapieempfehlungen und Studieneinschluss"
+  "description": "MTB-Beschluss mit Therapieempfehlungen und Studieneinschluss",
+  "encounter": {
+    "reference": "Encounter/mii-exa-test-data-mtb-encounter-1"
+  }
 }

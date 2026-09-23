@@ -223,6 +223,14 @@
       },
       {
         "reference": {
+          "reference": "BodyStructure/mii-exa-test-data-patho-body-structure-1"
+        },
+        "name": "Entnahmestelle Prostatastanze 01",
+        "description": "BodyStructure: rechte basale periphere Zone der Prostata",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Library/mii-exa-test-data-seltene-register-katalog-1"
         },
         "name": "ERN ReCONNET Registry - Katalogeintrag",
@@ -235,6 +243,14 @@
         },
         "name": "ERN ReCONNET Registry - Rare Connective Tissue and Musculoskeletal Diseases",
         "description": "ResearchStudy: ERN ReCONNET Register fuer seltene Bindegewebserkrankungen",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Substance/mii-exa-test-data-patho-substance-formalin-1"
+        },
+        "name": "Formalin (Fixativ)",
+        "description": "Substance: neutral gepuffertes Formalin als Fixierungs-Additiv",
         "exampleBoolean": true
       },
       {
@@ -1095,6 +1111,14 @@
       },
       {
         "reference": {
+          "reference": "Practitioner/mii-exa-test-data-icu-practitioner-1"
+        },
+        "name": "mii-exa-test-data-icu-practitioner-1",
+        "description": "ICU Practitioner: Intensivmedizinerin (Dokumentation der Scores und Prozeduren)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Observation/mii-exa-test-data-isik-vitalparameter-alkoholabusus-1"
         },
         "name": "mii-exa-test-data-isik-vitalparameter-alkoholabusus-1",
@@ -1903,6 +1927,14 @@
       },
       {
         "reference": {
+          "reference": "DocumentReference/mii-exa-test-data-lungenfunktion-docref-rohdaten-1"
+        },
+        "name": "mii-exa-test-data-lungenfunktion-docref-rohdaten-1",
+        "description": "Lungenfunktion DocumentReference: Rohdaten der Messungen (Fluss-Volumen-Kurven)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "MedicationAdministration/mii-exa-test-data-lungenfunktion-dosis-gabe-1"
         },
         "name": "mii-exa-test-data-lungenfunktion-dosis-gabe-1",
@@ -1915,6 +1947,14 @@
         },
         "name": "mii-exa-test-data-lungenfunktion-dosis-gabe-2",
         "description": "Lungenfunktion Dosisgabe 2: 0.30 mg Methacholin inhalativ",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "MedicationAdministration/mii-exa-test-data-lungenfunktion-dosis-gabe-var-1"
+        },
+        "name": "mii-exa-test-data-lungenfunktion-dosis-gabe-var-1",
+        "description": "Lungenfunktion Dosisgabe (Variante): medicationCodeableConcept 0.10 mg Methacholin",
         "exampleBoolean": true
       },
       {
@@ -2079,6 +2119,14 @@
       },
       {
         "reference": {
+          "reference": "MedicationRequest/mii-exa-test-data-lungenfunktion-methacholine-anordnung-1"
+        },
+        "name": "mii-exa-test-data-lungenfunktion-methacholine-anordnung-1",
+        "description": "Lungenfunktion MedicationRequest: Anordnung Methacholin-Provokationsprotokoll",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Patient/mii-exa-test-data-lungenfunktion-patient-1"
         },
         "name": "mii-exa-test-data-lungenfunktion-patient-1",
@@ -2211,6 +2259,14 @@
         },
         "name": "mii-exa-test-data-lungenfunktion-umgebung-1",
         "description": "Lungenfunktion Umgebung: Lungenfunktionslabor (Raum innerhalb eines Gebaeudes)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Procedure/mii-exa-test-data-lungenfunktion-untersuchung-1"
+        },
+        "name": "mii-exa-test-data-lungenfunktion-untersuchung-1",
+        "description": "Lungenfunktion Procedure: komplette Lungenfunktionsdiagnostik (Gesamtuntersuchung)",
         "exampleBoolean": true
       },
       {
@@ -2503,6 +2559,14 @@
       },
       {
         "reference": {
+          "reference": "Observation/mii-exa-test-data-mikrobio-antigen-antikoerper-cc-1"
+        },
+        "name": "mii-exa-test-data-mikrobio-antigen-antikoerper-cc-1",
+        "description": "Mikrobio: antigen-antikoerper — qualitatives Ergebnis als valueCodeableConcept",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Observation/mii-exa-test-data-mikrobio-antigen-antikoerper-quantitativ-alt-1"
         },
         "name": "mii-exa-test-data-mikrobio-antigen-antikoerper-quantitativ-alt-1",
@@ -2535,10 +2599,26 @@
       },
       {
         "reference": {
+          "reference": "Observation/mii-exa-test-data-mikrobio-aviditaet-cc-1"
+        },
+        "name": "mii-exa-test-data-mikrobio-aviditaet-cc-1",
+        "description": "Mikrobio: aviditaet — kategoriales Ergebnis (valueCodeableConcept-Variante)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Observation/mii-exa-test-data-mikrobio-aviditaet-dar-1"
         },
         "name": "mii-exa-test-data-mikrobio-aviditaet-dar-1",
         "description": "Mikrobio: aviditaet — Probe nicht auswertbar (dataAbsentReason)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-mikrobio-bartlett-quant-1"
+        },
+        "name": "mii-exa-test-data-mikrobio-bartlett-quant-1",
+        "description": "Mikrobio: bartlett-score — numerischer Score (valueQuantity-Variante)",
         "exampleBoolean": true
       },
       {
@@ -2583,10 +2663,26 @@
       },
       {
         "reference": {
+          "reference": "Observation/mii-exa-test-data-mikrobio-ct-wert-cc-1"
+        },
+        "name": "mii-exa-test-data-mikrobio-ct-wert-cc-1",
+        "description": "Mikrobio: ct-wert — Zielsequenz nicht nachweisbar (valueCodeableConcept-Variante)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Observation/mii-exa-test-data-mikrobio-ct-wert-dar-1"
         },
         "name": "mii-exa-test-data-mikrobio-ct-wert-dar-1",
         "description": "Mikrobio: ct-wert — Probe nicht auswertbar (dataAbsentReason)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Device/mii-exa-test-data-mikrobio-device-bactec-1"
+        },
+        "name": "mii-exa-test-data-mikrobio-device-bactec-1",
+        "description": "Mikrobio Lab Analyzer: Blutkultur-Automat (Inkubation und Wachstumsdetektion)",
         "exampleBoolean": true
       },
       {
@@ -2607,10 +2703,26 @@
       },
       {
         "reference": {
+          "reference": "Device/mii-exa-test-data-mikrobio-device-mikroskop-1"
+        },
+        "name": "mii-exa-test-data-mikrobio-device-mikroskop-1",
+        "description": "Mikrobio Lab Analyzer: Lichtmikroskop (Gram-/Spezialfaerbungen, Scores)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Device/mii-exa-test-data-mikrobio-device-pcr-1"
         },
         "name": "mii-exa-test-data-mikrobio-device-pcr-1",
         "description": "Mikrobio Lab Analyzer: Real-time-PCR-Cycler (molekulare Diagnostik)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Device/mii-exa-test-data-mikrobio-device-vitek-1"
+        },
+        "name": "mii-exa-test-data-mikrobio-device-vitek-1",
+        "description": "Mikrobio Lab Analyzer: Antibiogramm-Automat (MHK-Bestimmung)",
         "exampleBoolean": true
       },
       {
@@ -2655,6 +2767,14 @@
       },
       {
         "reference": {
+          "reference": "Observation/mii-exa-test-data-mikrobio-empfindlichkeit-sir-1"
+        },
+        "name": "mii-exa-test-data-mikrobio-empfindlichkeit-sir-1",
+        "description": "Mikrobio: empfindlichkeit — SIR-Ergebnis als valueCodeableConcept (EUCAST)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Encounter/mii-exa-test-data-mikrobio-encounter-1"
         },
         "name": "mii-exa-test-data-mikrobio-encounter-1",
@@ -2675,6 +2795,14 @@
         },
         "name": "mii-exa-test-data-mikrobio-keimzahl-alt-1",
         "description": "Mikrobio: keimzahl — Alt-Variante zur MS-Coverage",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-mikrobio-keimzahl-cc-1"
+        },
+        "name": "mii-exa-test-data-mikrobio-keimzahl-cc-1",
+        "description": "Mikrobio: keimzahl — kein Wachstum (valueCodeableConcept-Variante)",
         "exampleBoolean": true
       },
       {
@@ -2707,6 +2835,14 @@
         },
         "name": "mii-exa-test-data-mikrobio-mikroskopie-dar-1",
         "description": "Mikrobio: mikroskopie — Probe nicht auswertbar (dataAbsentReason)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-mikrobio-mikroskopie-quant-1"
+        },
+        "name": "mii-exa-test-data-mikrobio-mikroskopie-quant-1",
+        "description": "Mikrobio: mikroskopie — quantitatives Ergebnis (Leukozyten/Gesichtsfeld, valueQuantity-Variante)",
         "exampleBoolean": true
       },
       {
@@ -2759,6 +2895,14 @@
       },
       {
         "reference": {
+          "reference": "Observation/mii-exa-test-data-mikrobio-nugent-cc-1"
+        },
+        "name": "mii-exa-test-data-mikrobio-nugent-cc-1",
+        "description": "Mikrobio: nugent-score — kategoriales Ergebnis (valueCodeableConcept-Variante)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Observation/mii-exa-test-data-mikrobio-nugent-score-1"
         },
         "name": "mii-exa-test-data-mikrobio-nugent-score-1",
@@ -2787,6 +2931,14 @@
         },
         "name": "mii-exa-test-data-mikrobio-organization-lab-1",
         "description": "Mikrobio Lab Organization: Mikrobiologisches Labor Charité",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-mikrobio-pathogenlast-cc-1"
+        },
+        "name": "mii-exa-test-data-mikrobio-pathogenlast-cc-1",
+        "description": "Mikrobio: molekulare-pathogenlast — nicht nachweisbar (valueCodeableConcept-Variante)",
         "exampleBoolean": true
       },
       {
@@ -2927,10 +3079,26 @@
       },
       {
         "reference": {
+          "reference": "Observation/mii-exa-test-data-mikrobio-titer-cc-1"
+        },
+        "name": "mii-exa-test-data-mikrobio-titer-cc-1",
+        "description": "Mikrobio: titer — kein Titer nachweisbar (valueCodeableConcept-Variante)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Observation/mii-exa-test-data-mikrobio-titer-dar-1"
         },
         "name": "mii-exa-test-data-mikrobio-titer-dar-1",
         "description": "Mikrobio: titer — Probe nicht auswertbar (dataAbsentReason)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-mikrobio-titer-quant-1"
+        },
+        "name": "mii-exa-test-data-mikrobio-titer-quant-1",
+        "description": "Mikrobio: titer — inverser Titer als valueQuantity-Variante",
         "exampleBoolean": true
       },
       {
@@ -3163,6 +3331,22 @@
         },
         "name": "mii-exa-test-data-onko-diagnose-1",
         "description": "Onkologie Test Diagnose - Ovarialkarzinom",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Condition/mii-exa-test-data-onko-diagnose-2"
+        },
+        "name": "mii-exa-test-data-onko-diagnose-2",
+        "description": "Onkologie Diagnose-Variante - abgeschlossen, onsetAge mit Lebensphase-Beginn und abatementDateTime",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Condition/mii-exa-test-data-onko-diagnose-3"
+        },
+        "name": "mii-exa-test-data-onko-diagnose-3",
+        "description": "Onkologie Diagnose-Variante - abgeschlossen mit abatementAge",
         "exampleBoolean": true
       },
       {
@@ -3591,6 +3775,14 @@
       },
       {
         "reference": {
+          "reference": "Device/mii-exa-test-data-onko-sequencer-1"
+        },
+        "name": "mii-exa-test-data-onko-sequencer-1",
+        "description": "Onkologie Test Device - NGS-Sequenzierer",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Specimen/mii-exa-test-data-onko-specimen-1"
         },
         "name": "mii-exa-test-data-onko-specimen-1",
@@ -3891,6 +4083,38 @@
         },
         "name": "mii-exa-test-data-onko-tumormarker-1",
         "description": "Onkologie Test Tumormarker - CA-125 erhöht (356 U/mL)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-onko-tumormarker-2"
+        },
+        "name": "mii-exa-test-data-onko-tumormarker-2",
+        "description": "Onkologie Test Tumormarker - semiquantitatives Ergebnis (valueCodeableConcept)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-onko-tumormarker-3"
+        },
+        "name": "mii-exa-test-data-onko-tumormarker-3",
+        "description": "Onkologie Test Tumormarker - Bereichsangabe (valueRange)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-onko-tumormarker-4"
+        },
+        "name": "mii-exa-test-data-onko-tumormarker-4",
+        "description": "Onkologie Test Tumormarker - Verhaeltnisangabe (valueRatio)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-onko-tumormarker-5"
+        },
+        "name": "mii-exa-test-data-onko-tumormarker-5",
+        "description": "Onkologie Test Tumormarker - nicht bestimmbar (dataAbsentReason)",
         "exampleBoolean": true
       },
       {
@@ -4303,6 +4527,22 @@
       },
       {
         "reference": {
+          "reference": "Device/mii-exa-test-data-patient-1-icu-device-monitor-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-device-monitor-1",
+        "description": "ICU Device: Patientenmonitor (Multiparameter, Bett 3)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Device/mii-exa-test-data-patient-1-icu-device-pdms-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-device-pdms-1",
+        "description": "ICU Device: Patientendaten-Management-System (Fluessigkeitsbilanzierung)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Observation/mii-exa-test-data-patient-1-icu-ect-art-druck-1"
         },
         "name": "mii-exa-test-data-patient-1-icu-ect-art-druck-1",
@@ -4455,10 +4695,26 @@
       },
       {
         "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-muv-gewicht-var-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-muv-gewicht-var-1",
+        "description": "ICU Observation: Koerpergewicht (effectivePeriod-Variante)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Observation/mii-exa-test-data-patient-1-icu-muv-groesse-1"
         },
         "name": "mii-exa-test-data-patient-1-icu-muv-groesse-1",
         "description": "ICU Observation: MII PR ICU Koerpergroesse",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-muv-groesse-var-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-muv-groesse-var-1",
+        "description": "ICU Observation: Koerpergroesse (effectivePeriod-Variante)",
         "exampleBoolean": true
       },
       {
@@ -4483,6 +4739,14 @@
         },
         "name": "mii-exa-test-data-patient-1-icu-muv-laenge-1",
         "description": "ICU Observation: MII PR ICU Koerperlaenge (liegend, 168 cm bei Aufnahme)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-muv-laenge-var-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-muv-laenge-var-1",
+        "description": "ICU Observation: Koerperlaenge liegend (effectivePeriod-Variante)",
         "exampleBoolean": true
       },
       {
@@ -4603,6 +4867,14 @@
         },
         "name": "mii-exa-test-data-patient-1-icu-score-nrs-1",
         "description": "ICU Score: Numerische Ratingskala Schmerz 4/10",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-score-nrs-dar-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-score-nrs-dar-1",
+        "description": "ICU Score: Numerische Ratingskala nicht erhebbar (Sedierung, dataAbsentReason)",
         "exampleBoolean": true
       },
       {
@@ -7942,6 +8214,14 @@
       },
       {
         "reference": {
+          "reference": "Claim/mii-exa-test-data-mtb-antrag-kostenuebernahme-2"
+        },
+        "name": "MTB Antrag Kostenuebernahme (Erstantrag)",
+        "description": "Minimaler Erstantrag als Ziel der related.claim-Referenz des Folgeantrags",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "ClaimResponse/mii-exa-test-data-mtb-antwort-kostenuebernahme-1"
         },
         "name": "MTB Antwort Kostenuebernahme",
@@ -8006,6 +8286,22 @@
       },
       {
         "reference": {
+          "reference": "Condition/mii-exa-test-data-mtb-diagnose-primaertumor-3"
+        },
+        "name": "MTB Diagnose Primaertumor (Variante abatementAge)",
+        "description": "Minimal-Variante fuer die MS-Choice-Alternative abatementAge",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Condition/mii-exa-test-data-mtb-diagnose-primaertumor-2"
+        },
+        "name": "MTB Diagnose Primaertumor (Variante abatementDateTime)",
+        "description": "Minimal-Variante fuer die MS-Choice-Alternativen abatementDateTime und onsetAge",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Observation/mii-exa-test-data-mtb-diagnostische-implikation-1"
         },
         "name": "MTB Diagnostische Implikation",
@@ -8026,6 +8322,14 @@
         },
         "name": "MTB Einfache Variante - EGFR",
         "description": "Test instance for simple variant (EGFR L858R) with all MS elements",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "List/mii-exa-test-data-mtb-evidenz-liste-1"
+        },
+        "name": "MTB Evidenz-Liste Erstdiagnose",
+        "description": "Liste der Evidenz-Befunde zur Erstdiagnose des Primaertumors",
         "exampleBoolean": true
       },
       {
@@ -8246,10 +8550,34 @@
       },
       {
         "reference": {
+          "reference": "ResearchStudy/mii-exa-test-data-mtb-studie-2"
+        },
+        "name": "MTB Studie (Dachstudie)",
+        "description": "Minimales Studien-Stub als Ziel der partOf-Referenz der MTB-Studie",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Group/mii-exa-test-data-mtb-studie-group-1"
+        },
+        "name": "MTB Studien-Eligibility-Gruppe",
+        "description": "Eligibility-Population der MTB-Studie",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "ServiceRequest/mii-exa-test-data-mtb-studieneinschluss-anfrage-1"
         },
         "name": "MTB Studieneinschluss Anfrage",
         "description": "Test instance for study enrollment request with all MS elements",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Library/mii-exa-test-data-mtb-studien-register-1"
+        },
+        "name": "MTB Studienregister",
+        "description": "Studienregister-Eintrag (ClinicalTrials.gov) der MTB-Studie",
         "exampleBoolean": true
       },
       {
@@ -8274,6 +8602,22 @@
         },
         "name": "MTB Systemische Vortherapie",
         "description": "Test instance for prior systemic therapy",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "MedicationStatement/mii-exa-test-data-mtb-systemische-therapie-medstatement-2"
+        },
+        "name": "MTB Systemtherapie MedicationStatement (Variante asNeededCodeableConcept)",
+        "description": "Minimal-Variante fuer die MS-Choice-Alternativen asNeededCodeableConcept, boundsDuration und timing.when",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "MedicationStatement/mii-exa-test-data-mtb-systemische-therapie-medstatement-3"
+        },
+        "name": "MTB Systemtherapie MedicationStatement (Variante boundsRange)",
+        "description": "Minimal-Variante fuer die MS-Choice-Alternative timing.repeat.boundsRange",
         "exampleBoolean": true
       },
       {
@@ -8378,6 +8722,14 @@
         },
         "name": "Paraffinblock Stanze 03",
         "description": "Paraffineinbettung der Prostatastanze 03",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "ImagingStudy/mii-exa-test-data-patho-imaging-study-1"
+        },
+        "name": "Patho Whole-Slide-Imaging Studie",
+        "description": "Whole-Slide-Imaging (DICOM) des HE-Schnitts der Prostatastanze 01",
         "exampleBoolean": true
       },
       {
@@ -8550,10 +8902,26 @@
       },
       {
         "reference": {
+          "reference": "Media/mii-exa-test-data-patho-image-2"
+        },
+        "name": "Uebersichtsaufnahme HE-Schnitt Stanze 01",
+        "description": "Attached Image: Uebersichtsaufnahme (geringe Vergroesserung) des HE-Schnitts der Prostatastanze 01",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Condition/mii-exa-test-data-patho-diagnose-verdacht-1"
         },
         "name": "Verdachtsdiagnose Prostatakarzinom vor Biopsie",
         "description": "Verdacht auf Prostatakarzinom basierend auf erhöhtem PSA und auffälligem MRT-Befund",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Composition/mii-exa-test-data-patho-composition-0"
+        },
+        "name": "Vorlaeufiger Befundbericht Prostatabiopsie",
+        "description": "Vorlaeufige Composition (Schnellschnitt-Vorabmitteilung), ersetzt durch die finale Composition",
         "exampleBoolean": true
       },
       {

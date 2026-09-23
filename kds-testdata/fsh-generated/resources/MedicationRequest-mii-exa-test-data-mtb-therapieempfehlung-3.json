@@ -29,6 +29,29 @@
       "reference": "Condition/mii-exa-test-data-mtb-diagnose-primaertumor-1"
     }
   ],
+  "dosageInstruction": [
+    {
+      "timing": {
+        "repeat": {
+          "boundsRange": {
+            "low": {
+              "system": "http://unitsofmeasure.org",
+              "value": 1,
+              "code": "wk",
+              "unit": "Wochen"
+            },
+            "high": {
+              "system": "http://unitsofmeasure.org",
+              "value": 2,
+              "code": "wk",
+              "unit": "Wochen"
+            }
+          }
+        }
+      },
+      "text": "Ausschleichen über 1-2 Wochen"
+    }
+  ],
   "status": "draft",
   "intent": "option",
   "authoredOn": "2024-03-28",

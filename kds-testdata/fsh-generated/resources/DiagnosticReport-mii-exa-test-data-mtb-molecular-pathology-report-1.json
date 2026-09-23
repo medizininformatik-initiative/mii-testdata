@@ -19,6 +19,11 @@
       "reference": "Observation/mii-exa-test-data-mtb-immunohistochemistry-1"
     }
   ],
+  "specimen": [
+    {
+      "reference": "Specimen/mii-exa-test-data-mtb-specimen-1"
+    }
+  ],
   "status": "final",
   "code": {
     "coding": [
@@ -31,5 +36,6 @@
   },
   "subject": {
     "reference": "Patient/mii-exa-test-data-mtb-patient-1"
-  }
+  },
+  "issued": "2024-03-10T09:00:00+01:00"
 }

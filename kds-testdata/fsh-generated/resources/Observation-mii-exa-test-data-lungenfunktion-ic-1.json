@@ -91,6 +91,27 @@
       }
     }
   ],
+  "derivedFrom": [
+    {
+      "reference": "DocumentReference/mii-exa-test-data-lungenfunktion-docref-rohdaten-1"
+    }
+  ],
+  "referenceRange": [
+    {
+      "low": {
+        "value": 2.1,
+        "code": "L",
+        "system": "http://unitsofmeasure.org",
+        "unit": "L"
+      },
+      "high": {
+        "value": 3.1,
+        "code": "L",
+        "system": "http://unitsofmeasure.org",
+        "unit": "L"
+      }
+    }
+  ],
   "status": "final",
   "subject": {
     "reference": "Patient/mii-exa-test-data-lungenfunktion-patient-1"

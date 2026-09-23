@@ -44,5 +44,14 @@
         "display": "Ja"
       }
     ]
+  },
+  "method": {
+    "coding": [
+      {
+        "code": "117617002",
+        "system": "http://snomed.info/sct",
+        "display": "Immunohistochemistry procedure"
+      }
+    ]
   }
 }

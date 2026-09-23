@@ -59,6 +59,11 @@
       "valueString": "ypT3c pN1 M1b (Stadium IVB)"
     }
   ],
+  "hasMember": [
+    {
+      "reference": "Observation/mii-exa-test-data-onko-tnm-m-kategorie-1"
+    }
+  ],
   "status": "final",
   "subject": {
     "reference": "Patient/mii-exa-test-data-onko-patient-1"
@@ -75,5 +80,11 @@
         "display": "8. Auflage"
       }
     ]
+  },
+  "device": {
+    "reference": "Device/mii-exa-test-data-onko-sequencer-1"
+  },
+  "specimen": {
+    "reference": "Specimen/mii-exa-test-data-onko-specimen-1"
   }
 }

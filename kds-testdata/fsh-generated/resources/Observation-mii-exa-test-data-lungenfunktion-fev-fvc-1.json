@@ -88,6 +88,30 @@
       }
     }
   ],
+  "hasMember": [
+    {
+      "reference": "Observation/mii-exa-test-data-lungenfunktion-fev-1"
+    },
+    {
+      "reference": "Observation/mii-exa-test-data-lungenfunktion-fvc-1"
+    }
+  ],
+  "referenceRange": [
+    {
+      "low": {
+        "value": 70,
+        "code": "%",
+        "system": "http://unitsofmeasure.org",
+        "unit": "%"
+      },
+      "high": {
+        "value": 85,
+        "code": "%",
+        "system": "http://unitsofmeasure.org",
+        "unit": "%"
+      }
+    }
+  ],
   "status": "final",
   "subject": {
     "reference": "Patient/mii-exa-test-data-lungenfunktion-patient-1"

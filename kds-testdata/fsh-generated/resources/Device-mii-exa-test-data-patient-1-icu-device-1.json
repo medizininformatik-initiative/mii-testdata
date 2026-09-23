@@ -20,6 +20,38 @@
       "type": "manufacturer-name"
     }
   ],
+  "identifier": [
+    {
+      "system": "https://www.charite.de/fhir/sid/device-identifier",
+      "value": "ICU-VENT-001"
+    }
+  ],
+  "version": [
+    {
+      "value": "SW 2.64"
+    }
+  ],
+  "property": [
+    {
+      "valueQuantity": [
+        {
+          "value": 340,
+          "code": "mL",
+          "system": "http://unitsofmeasure.org",
+          "unit": "mL"
+        }
+      ],
+      "type": {
+        "coding": [
+          {
+            "code": "16929196",
+            "system": "urn:iso:std:iso:11073:10101",
+            "display": "MDC_VENT_VOL_TIDAL_SETTING"
+          }
+        ]
+      }
+    }
+  ],
   "type": {
     "coding": [
       {
@@ -31,5 +63,6 @@
   },
   "patient": {
     "reference": "Patient/mii-exa-test-data-icu-patient-1"
-  }
+  },
+  "status": "active"
 }
