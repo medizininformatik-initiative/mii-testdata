@@ -7765,23 +7765,23 @@
     "fshType": "Instance",
     "fshFile": "modul-lungenfunktion/Procedure.fsh",
     "startLine": 27,
-    "endLine": 46
+    "endLine": 49
   },
   {
     "outputFile": "Procedure-mii-exa-test-data-lungenfunktion-diffusion-messung-1.json",
     "fshName": "mii-exa-test-data-lungenfunktion-diffusion-messung-1",
     "fshType": "Instance",
     "fshFile": "modul-lungenfunktion/Procedure.fsh",
-    "startLine": 48,
-    "endLine": 67
+    "startLine": 51,
+    "endLine": 73
   },
   {
     "outputFile": "Procedure-mii-exa-test-data-lungenfunktion-provokationstest-messung-1.json",
     "fshName": "mii-exa-test-data-lungenfunktion-provokationstest-messung-1",
     "fshType": "Instance",
     "fshFile": "modul-lungenfunktion/Procedure.fsh",
-    "startLine": 69,
-    "endLine": 91
+    "startLine": 75,
+    "endLine": 100
   },
   {
     "outputFile": "Procedure-mii-exa-test-data-lungenfunktion-spirometrie-messung-1.json",
@@ -7796,8 +7796,8 @@
     "fshName": "mii-exa-test-data-lungenfunktion-untersuchung-1",
     "fshType": "Instance",
     "fshFile": "modul-lungenfunktion/Procedure.fsh",
-    "startLine": 93,
-    "endLine": 104
+    "startLine": 102,
+    "endLine": 113
   },
   {
     "outputFile": "Procedure-mii-exa-test-data-mtb-genomic-study-1.json",

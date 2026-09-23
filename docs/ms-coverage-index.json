@@ -19767,11 +19767,21 @@
     "Procedure.code.coding:ops": [
      "mii-exa-test-data-lungenfunktion-bodyplethysmographie-messung-1"
     ],
-    "Procedure.code.coding:ops.extension:Seitenlokalisation": null,
-    "Procedure.code.coding:ops.extension:Seitenlokalisation.url": null,
-    "Procedure.code.coding:ops.extension:Seitenlokalisation.value[x]": null,
-    "Procedure.code.coding:ops.extension:Seitenlokalisation.value[x].system": null,
-    "Procedure.code.coding:ops.extension:Seitenlokalisation.value[x].code": null,
+    "Procedure.code.coding:ops.extension:Seitenlokalisation": [
+     "mii-exa-test-data-lungenfunktion-bodyplethysmographie-messung-1"
+    ],
+    "Procedure.code.coding:ops.extension:Seitenlokalisation.url": [
+     "mii-exa-test-data-lungenfunktion-bodyplethysmographie-messung-1"
+    ],
+    "Procedure.code.coding:ops.extension:Seitenlokalisation.value[x]": [
+     "mii-exa-test-data-lungenfunktion-bodyplethysmographie-messung-1"
+    ],
+    "Procedure.code.coding:ops.extension:Seitenlokalisation.value[x].system": [
+     "mii-exa-test-data-lungenfunktion-bodyplethysmographie-messung-1"
+    ],
+    "Procedure.code.coding:ops.extension:Seitenlokalisation.value[x].code": [
+     "mii-exa-test-data-lungenfunktion-bodyplethysmographie-messung-1"
+    ],
     "Procedure.code.coding:ops.system": [
      "mii-exa-test-data-lungenfunktion-bodyplethysmographie-messung-1"
     ],
@@ -20093,11 +20103,21 @@
     "Procedure.code.coding:ops": [
      "mii-exa-test-data-lungenfunktion-diffusion-messung-1"
     ],
-    "Procedure.code.coding:ops.extension:Seitenlokalisation": null,
-    "Procedure.code.coding:ops.extension:Seitenlokalisation.url": null,
-    "Procedure.code.coding:ops.extension:Seitenlokalisation.value[x]": null,
-    "Procedure.code.coding:ops.extension:Seitenlokalisation.value[x].system": null,
-    "Procedure.code.coding:ops.extension:Seitenlokalisation.value[x].code": null,
+    "Procedure.code.coding:ops.extension:Seitenlokalisation": [
+     "mii-exa-test-data-lungenfunktion-diffusion-messung-1"
+    ],
+    "Procedure.code.coding:ops.extension:Seitenlokalisation.url": [
+     "mii-exa-test-data-lungenfunktion-diffusion-messung-1"
+    ],
+    "Procedure.code.coding:ops.extension:Seitenlokalisation.value[x]": [
+     "mii-exa-test-data-lungenfunktion-diffusion-messung-1"
+    ],
+    "Procedure.code.coding:ops.extension:Seitenlokalisation.value[x].system": [
+     "mii-exa-test-data-lungenfunktion-diffusion-messung-1"
+    ],
+    "Procedure.code.coding:ops.extension:Seitenlokalisation.value[x].code": [
+     "mii-exa-test-data-lungenfunktion-diffusion-messung-1"
+    ],
     "Procedure.code.coding:ops.system": [
      "mii-exa-test-data-lungenfunktion-diffusion-messung-1"
     ],
@@ -22808,11 +22828,21 @@
     "Procedure.code.coding:ops": [
      "mii-exa-test-data-lungenfunktion-provokationstest-messung-1"
     ],
-    "Procedure.code.coding:ops.extension:Seitenlokalisation": null,
-    "Procedure.code.coding:ops.extension:Seitenlokalisation.url": null,
-    "Procedure.code.coding:ops.extension:Seitenlokalisation.value[x]": null,
-    "Procedure.code.coding:ops.extension:Seitenlokalisation.value[x].system": null,
-    "Procedure.code.coding:ops.extension:Seitenlokalisation.value[x].code": null,
+    "Procedure.code.coding:ops.extension:Seitenlokalisation": [
+     "mii-exa-test-data-lungenfunktion-provokationstest-messung-1"
+    ],
+    "Procedure.code.coding:ops.extension:Seitenlokalisation.url": [
+     "mii-exa-test-data-lungenfunktion-provokationstest-messung-1"
+    ],
+    "Procedure.code.coding:ops.extension:Seitenlokalisation.value[x]": [
+     "mii-exa-test-data-lungenfunktion-provokationstest-messung-1"
+    ],
+    "Procedure.code.coding:ops.extension:Seitenlokalisation.value[x].system": [
+     "mii-exa-test-data-lungenfunktion-provokationstest-messung-1"
+    ],
+    "Procedure.code.coding:ops.extension:Seitenlokalisation.value[x].code": [
+     "mii-exa-test-data-lungenfunktion-provokationstest-messung-1"
+    ],
     "Procedure.code.coding:ops.system": [
      "mii-exa-test-data-lungenfunktion-provokationstest-messung-1"
     ],
@@ -52318,7 +52348,7 @@
   "modul-dokument": 3,
   "modul-icu": 2490,
   "modul-kardio": 302,
-  "modul-lungenfunktion": 1244,
+  "modul-lungenfunktion": 1259,
   "modul-molgen": 84,
   "modul-mtb": 1364,
   "modul-onko": 1618,

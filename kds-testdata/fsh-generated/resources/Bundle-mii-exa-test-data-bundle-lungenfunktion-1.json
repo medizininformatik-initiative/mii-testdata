@@ -271,6 +271,21 @@
               "version": "http://snomed.info/sct/900000000000207008/version/20260701",
               "code": "28275007",
               "display": "Total body plethysmography (procedure)"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://fhir.de/StructureDefinition/seitenlokalisation",
+                  "valueCoding": {
+                    "code": "B",
+                    "system": "https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_ICD_SEITENLOKALISATION"
+                  }
+                }
+              ],
+              "system": "http://fhir.de/CodeSystem/bfarm/ops",
+              "code": "1-710",
+              "display": "Ganzkörperplethysmographie",
+              "version": "2024"
             }
           ]
         },
@@ -374,6 +389,21 @@
               "version": "http://snomed.info/sct/900000000000207008/version/20260701",
               "code": "36421003",
               "display": "Carbon monoxide diffusing capacity measurement (procedure)"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://fhir.de/StructureDefinition/seitenlokalisation",
+                  "valueCoding": {
+                    "code": "B",
+                    "system": "https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_ICD_SEITENLOKALISATION"
+                  }
+                }
+              ],
+              "system": "http://fhir.de/CodeSystem/bfarm/ops",
+              "code": "1-711",
+              "display": "Bestimmung der CO-Diffusionskapazität",
+              "version": "2024"
             }
           ]
         },
@@ -477,6 +507,21 @@
               "version": "http://snomed.info/sct/900000000000207008/version/20260701",
               "code": "252520007",
               "display": "Methacholine challenge (procedure)"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://fhir.de/StructureDefinition/seitenlokalisation",
+                  "valueCoding": {
+                    "code": "B",
+                    "system": "https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_ICD_SEITENLOKALISATION"
+                  }
+                }
+              ],
+              "system": "http://fhir.de/CodeSystem/bfarm/ops",
+              "code": "1-714",
+              "display": "Messung der bronchialen Reaktivität",
+              "version": "2024"
             }
           ]
         },

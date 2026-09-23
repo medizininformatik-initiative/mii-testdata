@@ -33,6 +33,9 @@ Description: "Lungenfunktion Bodyplethysmographie-Messung"
 * status = #completed
 * category.coding[sct] = $sct20260701#23426006 "Measurement of respiratory function (procedure)"
 * code.coding[sct] = $sct20260701#28275007 "Total body plethysmography (procedure)"
+* code.coding[ops] = $ops#1-710 "Ganzkörperplethysmographie"
+* code.coding[ops].version = "2024"
+* code.coding[ops].extension[Seitenlokalisation].valueCoding = $seitenlokalisation#B
 * subject = Reference(mii-exa-test-data-lungenfunktion-patient-1)
 * encounter = Reference(mii-exa-test-data-lungenfunktion-encounter-1)
 * performedDateTime = "2025-02-18T09:30:00+01:00"
@@ -54,6 +57,9 @@ Description: "Lungenfunktion Diffusionsmessung (CO-Diffusionskapazitaet, Single-
 * status = #completed
 * category.coding[sct] = $sct20260701#23426006 "Measurement of respiratory function (procedure)"
 * code.coding[sct] = $sct20260701#36421003 "Carbon monoxide diffusing capacity measurement (procedure)"
+* code.coding[ops] = $ops#1-711 "Bestimmung der CO-Diffusionskapazität"
+* code.coding[ops].version = "2024"
+* code.coding[ops].extension[Seitenlokalisation].valueCoding = $seitenlokalisation#B
 * subject = Reference(mii-exa-test-data-lungenfunktion-patient-1)
 * encounter = Reference(mii-exa-test-data-lungenfunktion-encounter-1)
 * performedDateTime = "2025-02-18T10:15:00+01:00"
@@ -78,6 +84,9 @@ Description: "Lungenfunktion Provokationstest-Messung (Methacholin-Provokation)"
 * category.coding[sct].display = "Measurement of respiratory function (procedure)"
 * category.coding[sct] insert SCT20260701
 * code.coding[sct] = $sct20260701#252520007 "Methacholine challenge (procedure)"
+* code.coding[ops] = $ops#1-714 "Messung der bronchialen Reaktivität"
+* code.coding[ops].version = "2024"
+* code.coding[ops].extension[Seitenlokalisation].valueCoding = $seitenlokalisation#B
 * subject = Reference(mii-exa-test-data-lungenfunktion-patient-1)
 * encounter = Reference(mii-exa-test-data-lungenfunktion-encounter-1)
 * performedDateTime = "2025-02-18T11:00:00+01:00"

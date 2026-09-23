@@ -1,6 +1,6 @@
 **Bezugsstand: MII Kerndatensatz complete [`2027.0.0-ballot.19`](https://github.com/medizininformatik-initiative/kerndatensatz-complete/releases/tag/v2027.0.0-ballot.19)** — alle Zahlen dieser Seite beziehen sich auf die Profil-Snapshots dieses BOM-Stands.
 
-13834 MS-Elemente über die genutzten Profile · **387 oberste unbefüllte Knoten**
+13834 MS-Elemente über die genutzten Profile · **384 oberste unbefüllte Knoten**
 
 | Modul | Profile genutzt/gesamt | MS befüllt/gesamt | Coverage | häufigste Lücken |
 |---|---|---|---|---|
@@ -13,7 +13,7 @@
 | icu | 94/94 | 2775/2996 | 93 % | `dataAbsentReason`, `referenceRange`, `specimen` |
 | kardio | 13/13 | 362/362 | 100 % | — |
 | labor | 3/3 | 149/151 | 99 % | `effective[x].extension:QuelleKlinischesBezugsdatum`, `value[x]:valueQuantity.value.extension:quantityPrecision` |
-| lungenfunktion | 39/48 | 1394/1556 | 90 % | `hasMember`, `component`, `component:predicted` |
+| lungenfunktion | 39/48 | 1409/1556 | 91 % | `hasMember`, `component`, `component:predicted` |
 | medikation | 5/5 | 437/437 | 100 % | — |
 | meta | 0/1 | 0/0 | – | — |
 | mikrobio | 21/21 | 1489/1583 | 94 % | `referenceRange`, `value[x]:valueQuantity.code`, `value[x]:valueQuantity.comparator` |
