@@ -262,7 +262,11 @@ jobs:
           -v "$PWD/nginx/certs:/etc/nginx/certs:ro" \
           -p 8090:80 nginx:alpine
         sleep 5
-        curl -fsS -o /dev/null "http://127.0.0.1:8090/fhir/metadata" \
+        # Warmlauf MIT dem Accept-Header des Validators: nginx respektiert ein
+          # Vary: Accept des Servers, sonst landen Readiness-Check und
+          # Validator in getrennten Cache-Eintraegen und der Warmlauf verpufft.
+          curl -fsS -o /dev/null -H "Accept: application/fhir+json" \
+            --max-time 300 "http://127.0.0.1:8090/fhir/metadata" \
           && echo "tx=http://127.0.0.1:8090/fhir" >> "$GITHUB_OUTPUT" \
           || { echo "::warning::SU-TermServ-Proxy nicht erreichbar — Fallback -tx n/a"; echo "tx=n/a" >> "$GITHUB_OUTPUT"; }
 
@@ -301,11 +305,19 @@ jobs:
         # JAVA_VALIDATION_OPTIONS ist fuer den meta-Workflow gedacht und
         # enthaelt -advisor-file/-output/-html-output — fuer die Kontrolle
         # rausfiltern, sonst laeuft der "ungefilterte" Lauf MIT Advisor.
+        #
+        # UND -tx: Die Variable setzt http://127.0.0.1:8090/fhir, also den
+        # nginx-Proxy des meta-Workflows. Weil sie ANGEHAENGT wird, gewinnt sie
+        # gegen unser eigenes -tx. Ohne Zertifikat starten wir den Proxy aber
+        # nie — der Validator lief dann gegen einen Port, auf dem nichts
+        # horcht, und meldete "Error fetching the server's capability
+        # statement: timeout". Das sah nach einem ueberlasteten Ontoserver aus
+        # und war in Wahrheit ein leerer Port.
         extra=(); skip=0
         for tok in $EXTRA_OPTIONS; do
           if [ "$skip" = 1 ]; then skip=0; continue; fi
           case "$tok" in
-            -advisor-file|-output|-html-output) skip=1 ;;
+            -advisor-file|-output|-html-output|-tx|-txCache) skip=1 ;;
             *) extra+=("$tok") ;;
           esac
         done
@@ -316,15 +328,24 @@ jobs:
           -ig de.einwilligungsmanagement#2.0.4 -ig hl7.fhir.uv.sdc#4.0.0 \
           -ig hl7.fhir.uv.genomics-reporting#3.0.0 -ig eu.miabis.r4#1.3.0 \
           -tx "$TX" -txCache "$GITHUB_WORKSPACE/.txcache" "${extra[@]}")
+        # Absolute Ausgabepfade: Der Validator lehnt relative ../-Pfade ab
+        # ("Computed path does not start with first element") — derselbe
+        # Fallstrick wie zuvor bei -txCache.
+        # -Xmx14g, weil der Validator beim Bauen der Slicing-Fehleruebersicht
+        # (errorSummaryForSlicingAsHtml) in den OutOfMemoryError laeuft; ein
+        # lokaler Lauf ueber nur vier Bundles brauchte bereits 9 GB, und die
+        # Profile erzeugen sehr viele Slicing-Meldungen.
+        unf="$GITHUB_WORKSPACE/validation-unfiltered.json"
+        fil="$GITHUB_WORKSPACE/validation-filtered.json"
         cd kds-testdata
-        java -Xmx6g -jar ../validator_cli.jar "${common[@]}" \
-          -output ../validation-unfiltered.json || true
-        java -Xmx6g -jar ../validator_cli.jar "${common[@]}" \
-          -advisor-file advisor.json -output ../validation-filtered.json || true
+        java -Xmx14g -jar ../validator_cli.jar "${common[@]}" \
+          -output "$unf" || true
+        java -Xmx14g -jar ../validator_cli.jar "${common[@]}" \
+          -advisor-file advisor.json -output "$fil" || true
         # || true faengt nur den erwarteten Exit!=0 bei Validierungsfehlern ab.
         # Ein Crash VOR der Validierung hinterlaesst keine Output-Dateien —
         # das muss den Job rot machen, sonst ist die Kontrolle wirkungslos.
-        for f in ../validation-unfiltered.json ../validation-filtered.json; do
+        for f in "$unf" "$fil"; do
           [ -s "$f" ] || { echo "::error::Validator-Lauf ohne Ergebnis ($f fehlt) — Log pruefen"; exit 1; }
         done
 

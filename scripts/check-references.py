@@ -58,6 +58,14 @@ def classify(ref):
     return "weder relativ noch urn: noch absolut"
 
 
+# `system` traegt keine Referenz, aber dieselbe Fehlerklasse: Der Validator
+# meldet "Beispiel-URLs sind in diesem Zusammenhang nicht zulaessig", wenn ein
+# identifier.system auf example.org zeigt. Deshalb hier mitgeprueft.
+def _example_host(u):
+    return (isinstance(u, str) and u.startswith(("http://", "https://"))
+            and any(h in u.split("/")[2].lower() for h in EXAMPLE_HOSTS))
+
+
 def walk(node, path, out):
     if isinstance(node, dict):
         ref = node.get("reference")
@@ -65,6 +73,10 @@ def walk(node, path, out):
             why = classify(ref)
             if why:
                 out.append((path or "(root)", ref, why))
+        sysu = node.get("system")
+        if _example_host(sysu):
+            out.append((f"{path}.system" if path else "system", sysu,
+                        "Beispiel-Domain als system-URI"))
         for k, v in node.items():
             walk(v, f"{path}.{k}" if path else k, out)
     elif isinstance(node, list):

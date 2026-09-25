@@ -74,7 +74,11 @@ jobs:
             -v "$PWD/nginx/certs:/etc/nginx/certs:ro" \
             -p 8090:80 nginx:alpine
           sleep 5
-          curl -fsS -o /dev/null "http://127.0.0.1:8090/fhir/metadata" \
+          # Warmlauf MIT dem Accept-Header des Validators: nginx respektiert ein
+          # Vary: Accept des Servers, sonst landen Readiness-Check und
+          # Validator in getrennten Cache-Eintraegen und der Warmlauf verpufft.
+          curl -fsS -o /dev/null -H "Accept: application/fhir+json" \
+            --max-time 300 "http://127.0.0.1:8090/fhir/metadata" \
             && echo "tx=http://127.0.0.1:8090/fhir" >> "$GITHUB_OUTPUT" \
             || { echo "::warning::Proxy nicht erreichbar"; echo "tx=" >> "$GITHUB_OUTPUT"; }
 
