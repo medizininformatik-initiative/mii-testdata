@@ -14,14 +14,21 @@
 // ESBL-Phänotyp im Text geführt.
 // ============================================================================
 
+// ZURUECKGENOMMEN: Die vererbte Konformitaet war hier zusaetzlich deklariert
+// (meta.profile mit mii-pr-mikrobio-* UND ObservationLab), damit der Validator
+// gegen die ganze Vererbungskette prueft. Fachlich richtig — das Mikrobio-Modul
+// erbt durchgaengig vom Labor-Modul — aber der CI-Validierungsjob lief danach
+// statt 13 Minuten ueber 46 Minuten ohne Ergebnis und musste abgebrochen
+// werden. Vermutung: Jede Ressource wird zweimal slicing-ausgewertet, und
+// Slicing ist bei den ICU-/Mikrobio-Profilen die teuerste Operation (derselbe
+// Codepfad, der zuvor mit OutOfMemoryError in errorSummaryForSlicingAsHtml
+// starb). Bewiesen ist es nicht; die Serverlast kann mitgespielt haben.
+// Wer es erneut versucht, sollte mit EINER Ressource anfangen und die
+// Laufzeit vergleichen — die Aussage "Mikrobio erfuellt ObservationLab" ist
+// an einer Instanz genauso belegt wie an neun.
 RuleSet: JourneyMibiBase
 * insert TestDataLabel
 * meta.source = "https://www.charite.de/fhir/kds-testdata"
-// Vererbte Konformitaet explizit mittragen: alle Mikrobio-Observation-Profile
-// erben von ObservationLab (Labor-Modul). Beide Profile in meta.profile zu
-// nennen laesst den Validator gegen die ganze Kette pruefen — damit belegen
-// die Testdaten, dass die Mikrobio-auf-Labor-Vererbung praktisch traegt.
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab"
 * status = #final
 * category[observation-category] = $observation-category#laboratory
 * category[mibi-category] = $v2-0074#MB "Microbiology"
@@ -71,7 +78,6 @@ Usage: #example
 Description: "Mikrobio Probe: Blutkultur aerob/anaerob (Patient 12)"
 * insert TestDataLabel
 * meta.source = "https://www.charite.de/fhir/kds-testdata"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore"
 * identifier.system = "https://www.charite.de/fhir/sid/Probennummer"
 * identifier.value = "BK-012-001"
 * status = #available
@@ -92,7 +98,6 @@ Usage: #example
 Description: "Mikrobio Probe: Trachealsekret (Patient 12)"
 * insert TestDataLabel
 * meta.source = "https://www.charite.de/fhir/kds-testdata"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore"
 * identifier.system = "https://www.charite.de/fhir/sid/Probennummer"
 * identifier.value = "TS-012-001"
 * status = #available
@@ -310,7 +315,6 @@ Usage: #example
 Description: "Mikrobio Befund: Blutkultur mit 3MRGN Klebsiella pneumoniae (Patient 12)"
 * insert TestDataLabel
 * meta.source = "https://www.charite.de/fhir/kds-testdata"
-* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/DiagnosticReportLab"
 * identifier[befund].type.coding[fillerV2] = $v2-0203#FILL
 * identifier[befund].system = "https://www.charite.de/fhir/sid/diagnostic-report"
 * identifier[befund].value = "MIKROBIO-DR-012"
