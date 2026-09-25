@@ -13,7 +13,7 @@
   },
   "identifier": [
     {
-      "system": "https://www.fabryregistry.example.org/fhir/sid/registry",
+      "system": "https://www.charite.de/fhir/sid/fabry-register",
       "value": "FABRY-REG-DE"
     }
   ],

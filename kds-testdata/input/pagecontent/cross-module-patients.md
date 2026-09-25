@@ -100,3 +100,50 @@ The pre-therapeutic tumor conference records the deferred chemotherapy explicitl
 **Verified state.** `sushi build` runs without errors; referential integrity within each of the four bundles is closed; `check-coding-quality.py` reports no text-only CodeableConcepts and no codings without system/code; all bundles load into both Blaze and HAPI without error or divergence.
 
 > **Coding disclaimer:** The test data is synthetic. The ICD, OPS and ICD-O-3 codings are plausibility-checked but must not be read as coding guidance.
+
+---
+
+## Known issues against the 2027 ballot
+
+Two profile invariants in the ICU module cannot be satisfied by **any** instance, because their FHIRPath expressions are defective. Both were confirmed against the ICU module's *own* examples, not just against these journeys — so they are upstream defects, not journey defects.
+
+### `sofa-score-range` (MII_PR_ICU_Score_SOFA)
+
+```
+expression: valueInteger >= 0 and valueInteger <= 24
+path:       Observation.value[x]:valueInteger
+```
+
+The expression is anchored **on** the sliced element `valueInteger` and from there looks for a *child* named `valueInteger`, which cannot exist. The expression evaluates to empty, `and` yields empty, and the constraint fails for every conforming instance. The working form at this path is `$this >= 0 and $this <= 24`.
+
+Affected here: the three SOFA observations of the sepsis course (values 12, 9, 4 — all inside the intended range). Also affected: `mii-exa-test-data-patient-1-icu-score-sofa-1` in the ICU module bundle.
+
+### `gcs-total-range` (MII_PR_ICU_Score_GCS)
+
+```
+expression: value.exists() implies (value.ofType(Quantity) >= 3 and value.ofType(Quantity) <= 15)
+path:       Observation
+```
+
+A `Quantity` is compared directly against an integer. The comparison does not resolve, so the constraint fails. The working form is `value.ofType(Quantity).value >= 3 and … <= 15`.
+
+Affected here: the GCS observation of the sepsis course (value 10, inside the intended range). Also affected: the ICU module's own GCS example.
+
+### Component slicing without a discriminating pattern (MII_PR_ICU_Score_SOFA, …_GCS)
+
+The score profiles slice `Observation.component` by `code`, but the slices carry **no** `patternCodeableConcept` and no `fixedCodeableConcept` on `component.code`. A discriminator is declared without anything to discriminate by, so slice resolution cannot succeed and the validator reports one error per component:
+
+```
+Slicing kann nicht ausgewertet werden: Konnte nicht mit dem Diskriminator (1)
+für Slice code in Profil Observation.component:respiratory übereinstimmen
+```
+
+This is the single largest error class in these journeys: **132 of the errors**, and all of them on exactly four resources — 114 on the three SOFA observations, 18 on the GCS observation of the sepsis course. It is not a terminology artefact; the count is byte-identical whether the validator runs with `-tx n/a` or against a live terminology server.
+
+Related: the ICU module's own FSH already notes that the SNOMED patterns of these subscore slices contain the placeholder code `xxx` (see `docs/research-icu-scores.md`). The missing pattern in the published snapshot is the same defect seen from the validator's side.
+
+### Codings that cannot be validated offline
+
+The BfArM systems — ICD-10-GM, OPS, Alpha-ID — and ICD-O-3 are not part of any package in the dependency graph, and the local Blaze terminology server ships only LOINC and SNOMED CT. Codings against them are therefore reported as unvalidatable whenever no Ontoserver is reachable. Every such code in these journeys was instead verified individually against the MII terminology server while authoring; `8140/3` in ICD-O-3, for example, resolves to "Adenokarzinom o.n.A." in the 2019 edition.
+
+This is a tooling gap, not a data defect — but it means a validation run without the MII Ontoserver cannot confirm those bindings either way.

@@ -68,7 +68,7 @@
       "valueCoding": {
         "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/CodeSystem/mii-cs-mtb-leitlinienbehandlung-status",
         "code": "non-exhausted",
-        "display": "non-exhausted"
+        "display": "Leitlinien nicht ausgeschöpft"
       }
     }
   ],

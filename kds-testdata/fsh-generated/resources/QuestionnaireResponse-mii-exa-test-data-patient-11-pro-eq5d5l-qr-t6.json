@@ -33,7 +33,7 @@
           "valueCoding": {
             "code": "2",
             "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eq-5d-value-set",
-            "display": "Ich habe leichte Probleme, mich selbst zu waschen oder mich anzuziehen"
+            "display": "Ich habe leichte Probleme, mich selbst zu waschen oder anzuziehen"
           }
         }
       ],
@@ -45,7 +45,7 @@
           "valueCoding": {
             "code": "1",
             "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eq-5d-value-set",
-            "display": "Ich habe keine Probleme, meinen alltäglichen Tätigkeiten nachzukommen"
+            "display": "Ich habe keine Probleme, meinen alltäglichen Tätigkeiten nachzugehen"
           }
         }
       ],

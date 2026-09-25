@@ -223,7 +223,9 @@ Description: "List: Medikation während des Intensivaufenthalts für Patient 12"
 * identifier.system = "https://www.charite.de/fhir/sid/Medikationslisten"
 * identifier.value = "ML_0000031"
 * status = #current
-* mode = #snapshot
+// Invariante medication-list-context-2: bei Kontext "stationaerer Aufenthalt"
+// muss mode "working" sein, nicht "snapshot".
+* mode = #working
 * title = "Antiinfektive Therapie Intensivaufenthalt"
 * date = "2025-03-18T12:00:00+01:00"
 * subject = Reference(mii-exa-test-data-patient-12)

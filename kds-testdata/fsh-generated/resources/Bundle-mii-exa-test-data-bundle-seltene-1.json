@@ -2492,6 +2492,9 @@
                 }
               ]
             }
+          },
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-ex-seltene-von-se-betroffen"
           }
         ],
         "relationship": {
@@ -2649,6 +2652,9 @@
                 }
               ]
             }
+          },
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-ex-seltene-von-se-betroffen"
           }
         ],
         "deceasedAge": {
@@ -2736,6 +2742,9 @@
                 }
               ]
             }
+          },
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-ex-seltene-von-se-betroffen"
           }
         ],
         "reasonCode": [

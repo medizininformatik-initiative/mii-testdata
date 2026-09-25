@@ -36,7 +36,7 @@ Description: "MTB Behandlungsepisode: Fallvorstellung Patient 14"
 * investigation[NgsBericht][+].item = Reference(mii-exa-test-data-patient-14-mtb-ngs-bericht-1)
 * investigation[ECOG][+].item = Reference(mii-exa-test-data-patient-14-onko-ecog-1)
 * supportingInfo[Therapieplan] = Reference(mii-exa-test-data-patient-14-mtb-therapieplan-1)
-* extension[LeitlinienbehandlungStatus].valueCoding = $mii-cs-mtb-leitlinienbehandlung-status#non-exhausted "non-exhausted"
+* extension[LeitlinienbehandlungStatus].valueCoding = $mii-cs-mtb-leitlinienbehandlung-status#non-exhausted "Leitlinien nicht ausgeschöpft"
 * encounter = Reference(mii-exa-test-data-patient-14-encounter-2)
 
 // ----------------------------------------------------------------------------
@@ -92,7 +92,9 @@ Description: "MTB MSI: Mikrosatelliteninstabilität hoch (MSI-H, Patient 14)"
 * valueQuantity.code = #1
 * effectiveDateTime = "2024-04-09"
 * issued = "2024-04-09T15:00:00+02:00"
-* interpretation = $v3-interpretation#H "High"
+// interpretation bindet required auf mii-vs-mtb-msi (LOINC), nicht auf die
+// allgemeine v3-ObservationInterpretation.
+* interpretation = $loinc#LA26203-2 "MSI-H"
 * method = $loinc#LA26398-0 "Sequencing"
 * component[gene-studied].valueCodeableConcept = $HGNC#HGNC:7127 "MLH1"
 * component[biomarker-category].valueCodeableConcept = $mbo-category#nucleicAcid "nucleic acid category"
@@ -176,9 +178,13 @@ Description: "MTB Therapieempfehlung: Pembrolizumab 200 mg alle drei Wochen (Pat
 * authoredOn = "2024-04-18"
 * subject = Reference(mii-exa-test-data-patient-14)
 * encounter = Reference(mii-exa-test-data-patient-14-encounter-2)
-* medicationReference = Reference(mii-exa-test-data-medication-pembrolizumab)
-* reasonReference[0] = Reference(mii-exa-test-data-patient-14-onko-diagnose-1)
-* reasonReference[1] = Reference(mii-exa-test-data-patient-14-mtb-implikation-1)
+// Das Profil bindet medication[x] auf 1..1 CodeableConcept — eine Reference ist
+// hier nicht zulaessig, anders als bei der Onko-Systemtherapie.
+* medicationCodeableConcept.coding[atcClassDe] = $atc|2023#L01FF02 "Pembrolizumab"
+* medicationCodeableConcept.text = "Pembrolizumab 200 mg alle drei Wochen i.v."
+// reasonReference ist gesliced: Primaertumor 1..1, StuetzendeMolekulareAlteration 0..*
+* reasonReference[Primaertumor] = Reference(mii-exa-test-data-patient-14-onko-diagnose-1)
+* reasonReference[StuetzendeMolekulareAlteration][+] = Reference(mii-exa-test-data-patient-14-mtb-implikation-1)
 * insert MtbBeschlussPrioritaet(1)
 * insert MtbBeschlussEvidenz(m1A, https://pubmed.ncbi.nlm.nih.gov, 33264544)
 * note.text = "Erstlinientherapie. Ansprechkontrolle per CT nach drei Monaten."

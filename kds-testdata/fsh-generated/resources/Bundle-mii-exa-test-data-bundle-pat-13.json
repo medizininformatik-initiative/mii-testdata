@@ -2523,20 +2523,6 @@
           "text": "Morbus Fabry (Alpha-Galaktosidase-A-Mangel), heterozygot"
         },
         "onsetAge": {
-          "extension": [
-            {
-              "url": "http://fhir.de/StructureDefinition/lebensphase",
-              "valueCodeableConcept": {
-                "coding": [
-                  {
-                    "code": "263659003",
-                    "system": "http://snomed.info/sct",
-                    "display": "Adolescence (qualifier value)"
-                  }
-                ]
-              }
-            }
-          ],
           "value": 22,
           "unit": "years",
           "system": "http://unitsofmeasure.org",
@@ -2899,7 +2885,7 @@
         },
         "extension": [
           {
-            "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/von-seltene-betroffen",
+            "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-ex-seltene-von-se-betroffen",
             "valueCodeableConcept": {
               "coding": [
                 {
@@ -3004,7 +2990,7 @@
         },
         "extension": [
           {
-            "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/von-seltene-betroffen",
+            "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-ex-seltene-von-se-betroffen",
             "valueCodeableConcept": {
               "coding": [
                 {
@@ -3164,7 +3150,7 @@
         ],
         "identifier": [
           {
-            "system": "https://www.fabryregistry.example.org/fhir/sid/subject",
+            "system": "https://www.charite.de/fhir/sid/fabry-register-proband",
             "value": "FR-DE-004217"
           }
         ],
@@ -3204,7 +3190,7 @@
         },
         "identifier": [
           {
-            "system": "https://www.fabryregistry.example.org/fhir/sid/registry",
+            "system": "https://www.charite.de/fhir/sid/fabry-register",
             "value": "FABRY-REG-DE"
           }
         ],
@@ -3251,7 +3237,7 @@
         },
         "identifier": [
           {
-            "system": "https://www.fabryregistry.example.org/fhir/sid/registry",
+            "system": "https://www.charite.de/fhir/sid/fabry-register",
             "value": "FABRY-REG-DE"
           }
         ],

@@ -14,6 +14,17 @@
       "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-therapieempfehlung"
     ]
   },
+  "medicationCodeableConcept": {
+    "coding": [
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/atc",
+        "code": "L01FF02",
+        "version": "2023",
+        "display": "Pembrolizumab"
+      }
+    ],
+    "text": "Pembrolizumab 200 mg alle drei Wochen i.v."
+  },
   "reasonReference": [
     {
       "reference": "Condition/mii-exa-test-data-patient-14-onko-diagnose-1"
@@ -59,8 +70,5 @@
   },
   "encounter": {
     "reference": "Encounter/mii-exa-test-data-patient-14-encounter-2"
-  },
-  "medicationReference": {
-    "reference": "Medication/mii-exa-test-data-medication-pembrolizumab"
   }
 }

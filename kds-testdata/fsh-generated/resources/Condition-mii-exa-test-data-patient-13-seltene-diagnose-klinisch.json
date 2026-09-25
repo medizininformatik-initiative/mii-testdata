@@ -62,20 +62,6 @@
     "text": "Morbus Fabry (Alpha-Galaktosidase-A-Mangel), heterozygot"
   },
   "onsetAge": {
-    "extension": [
-      {
-        "url": "http://fhir.de/StructureDefinition/lebensphase",
-        "valueCodeableConcept": {
-          "coding": [
-            {
-              "code": "263659003",
-              "system": "http://snomed.info/sct",
-              "display": "Adolescence (qualifier value)"
-            }
-          ]
-        }
-      }
-    ],
     "value": 22,
     "unit": "years",
     "system": "http://unitsofmeasure.org",

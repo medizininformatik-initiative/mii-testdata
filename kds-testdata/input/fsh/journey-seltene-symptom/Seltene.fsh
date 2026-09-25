@@ -108,8 +108,6 @@ Description: "Clinical Diagnosis: Morbus Fabry (Patient 13, 12 Jahre nach Erstsy
 * onsetAge.unit = "years"
 * onsetAge.system = $ucum
 * onsetAge.code = #a
-* onsetAge.extension[0].url = "http://fhir.de/StructureDefinition/lebensphase"
-* onsetAge.extension[0].valueCodeableConcept = $sct#263659003 "Adolescence (qualifier value)"
 * recordedDate = "2023-12-08"
 * recorder = Reference(mii-exa-test-data-practitioner-physician-1)
 * asserter = Reference(mii-exa-test-data-practitioner-physician-2)
@@ -166,8 +164,7 @@ Usage: #example
 Description: "Familienanamnese: Mutter mit Morbus Fabry (Patient 13)"
 * insert TestDataLabel
 * meta.source = "https://www.charite.de/fhir/kds-testdata"
-* extension[+].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/von-seltene-betroffen"
-* extension[=].valueCodeableConcept = $sct#373066001 "Yes"
+* extension[vonSEBetroffen].valueCodeableConcept = $sct#373066001 "Yes"
 * status = #completed
 * date = "2024-01-15"
 * patient = Reference(mii-exa-test-data-patient-13)
@@ -191,8 +188,7 @@ Usage: #example
 Description: "Familienanamnese: Verstorbener Onkel mütterlicherseits (Niereninsuffizienz, retrospektiv Fabry-verdächtig)"
 * insert TestDataLabel
 * meta.source = "https://www.charite.de/fhir/kds-testdata"
-* extension[+].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/von-seltene-betroffen"
-* extension[=].valueCodeableConcept = $sct#373068000 "Undetermined"
+* extension[vonSEBetroffen].valueCodeableConcept = $sct#373068000 "Undetermined"
 * status = #completed
 * date = "2024-01-15"
 * patient = Reference(mii-exa-test-data-patient-13)
@@ -236,7 +232,7 @@ Description: "Registerteilnahme: Einschluss in das Fabry-Register (Patient 13)"
 * insert TestDataLabel
 * meta.source = "https://www.charite.de/fhir/kds-testdata"
 * extension[register].valueReference = Reference(mii-exa-test-data-patient-13-register-katalog)
-* identifier.system = "https://www.fabryregistry.example.org/fhir/sid/subject"
+* identifier.system = "https://www.charite.de/fhir/sid/fabry-register-proband"
 * identifier.value = "FR-DE-004217"
 * status = #on-study
 * period.start = "2024-02-05"
@@ -250,7 +246,7 @@ Usage: #example
 Description: "Library: Katalogeintrag Fabry-Register"
 * insert TestDataLabel
 * meta.source = "https://www.charite.de/fhir/kds-testdata"
-* identifier.system = "https://www.fabryregistry.example.org/fhir/sid/registry"
+* identifier.system = "https://www.charite.de/fhir/sid/fabry-register"
 * identifier.value = "FABRY-REG-DE"
 * name = "FabryRegistryDE"
 * title = "Fabry-Register Deutschland - Katalogeintrag"
@@ -266,7 +262,7 @@ Usage: #example
 Description: "ResearchStudy: Fabry-Register Deutschland"
 * insert TestDataLabel
 * meta.source = "https://www.charite.de/fhir/kds-testdata"
-* identifier.system = "https://www.fabryregistry.example.org/fhir/sid/registry"
+* identifier.system = "https://www.charite.de/fhir/sid/fabry-register"
 * identifier.value = "FABRY-REG-DE"
 * title = "Fabry-Register Deutschland"
 * status = #active

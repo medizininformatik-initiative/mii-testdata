@@ -249,7 +249,7 @@ Description: "Onko Systemische Therapie: Pembrolizumab-Immuntherapie (Patient 14
 * meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #in-progress
 * category = $SCT#18629005 "Administration of drug or medicament"
-* code.coding[systemische_therapie_art] = $mii-cs-onko-therapie-typ#IM "Immuntherapie"
+* code.coding[systemische_therapie_art] = $mii-cs-onko-therapie-typ#IM "Immun-/Antikörpertherapie"
 * code.coding[ops] = $OPS#8-54 "Zytostatische Chemotherapie, Immuntherapie und antiretrovirale Therapie"
 * code.coding[ops].version = "2024"
 * code.coding[ops].extension[Seitenlokalisation].valueCoding = $icd-seitenlokalisation#T "trifft nicht zu"
@@ -290,5 +290,7 @@ Description: "Onko Verlauf: Teilremission nach drei Monaten Immuntherapie (Patie
 * component[Tumor_Verlauf].code.coding = $SCT#445200009 "Status of residual neoplasm (observable entity)"
 * component[Tumor_Verlauf].valueCodeableConcept = $mii-cs-onko-verlauf-primaertumor#K "kein Tumor nachweisbar"
 * component[Fernmetastasen_Verlauf].code.coding = $SCT#399608002 "Status of distant metastasis (observable entity)"
-* component[Fernmetastasen_Verlauf].valueCodeableConcept = $mii-cs-onko-verlauf-fernmetastasen#R "Rückbildung von Fernmetastasen"
+// #R bedeutet "neu aufgetretene Fernmetastase(n)" — fuer eine Teilremission mit
+// schrumpfenden Lebermetastasen ist #T "Fernmetastasen Residuen" korrekt.
+* component[Fernmetastasen_Verlauf].valueCodeableConcept = $mii-cs-onko-verlauf-fernmetastasen#T "Fernmetastasen Residuen"
 * note.text = "Lebermetastasen im Re-Staging-CT um 48 Prozent regredient (RECIST 1.1: partielle Remission). Ansprechen unter Checkpoint-Inhibition bei MSI-high wie erwartet."

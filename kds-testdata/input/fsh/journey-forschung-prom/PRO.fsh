@@ -21,6 +21,11 @@
 // könnte.
 // ============================================================================
 
+// Hinweis zu den Displays: Das CodeSystem mii-cs-pro-eq-5d-value-set fuehrt je
+// Antwortstufe FUENF deutsche Designations — eine pro EQ-5D-Dimension. Der
+// Validator akzeptiert nur die Designation der jeweils passenden Dimension,
+// wortgleich. Zwei Fallen dabei: es heisst "... oder anzuziehen" (nicht "oder
+// mich anzuziehen") und "Taetigkeiten nachzugehen" (nicht "nachzukommen").
 Alias: $pro-eq5d-vs = https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eq-5d-value-set
 
 RuleSet: JourneyProBase
@@ -50,9 +55,9 @@ Description: "PRO QuestionnaireResponse: EQ-5D-5L T0 (Patient 11, Profil 33232)"
 * item[+].linkId = "euroqol-eq5d5l-q01-MO"
 * item[=].answer.valueCoding = $pro-eq5d-vs#3 "Ich habe mäßige Probleme herumzugehen"
 * item[+].linkId = "euroqol-eq5d5l-q02-SC"
-* item[=].answer.valueCoding = $pro-eq5d-vs#3 "Ich habe mäßige Probleme, mich selbst zu waschen oder mich anzuziehen"
+* item[=].answer.valueCoding = $pro-eq5d-vs#3 "Ich habe mäßige Probleme, mich selbst zu waschen oder anzuziehen"
 * item[+].linkId = "euroqol-eq5d5l-q03-UA"
-* item[=].answer.valueCoding = $pro-eq5d-vs#2 "Ich habe leichte Probleme, meinen alltäglichen Tätigkeiten nachzukommen"
+* item[=].answer.valueCoding = $pro-eq5d-vs#2 "Ich habe leichte Probleme, meinen alltäglichen Tätigkeiten nachzugehen"
 * item[+].linkId = "euroqol-eq5d5l-q04-PD"
 * item[=].answer.valueCoding = $pro-eq5d-vs#3 "Ich habe mäßige Schmerzen oder Beschwerden"
 * item[+].linkId = "euroqol-eq5d5l-q05-AD"
@@ -200,9 +205,9 @@ Description: "PRO QuestionnaireResponse: EQ-5D-5L T3 (Patient 11, Profil 22222)"
 * item[+].linkId = "euroqol-eq5d5l-q01-MO"
 * item[=].answer.valueCoding = $pro-eq5d-vs#2 "Ich habe leichte Probleme herumzugehen"
 * item[+].linkId = "euroqol-eq5d5l-q02-SC"
-* item[=].answer.valueCoding = $pro-eq5d-vs#2 "Ich habe leichte Probleme, mich selbst zu waschen oder mich anzuziehen"
+* item[=].answer.valueCoding = $pro-eq5d-vs#2 "Ich habe leichte Probleme, mich selbst zu waschen oder anzuziehen"
 * item[+].linkId = "euroqol-eq5d5l-q03-UA"
-* item[=].answer.valueCoding = $pro-eq5d-vs#2 "Ich habe leichte Probleme, meinen alltäglichen Tätigkeiten nachzukommen"
+* item[=].answer.valueCoding = $pro-eq5d-vs#2 "Ich habe leichte Probleme, meinen alltäglichen Tätigkeiten nachzugehen"
 * item[+].linkId = "euroqol-eq5d5l-q04-PD"
 * item[=].answer.valueCoding = $pro-eq5d-vs#2 "Ich habe leichte Schmerzen oder Beschwerden"
 * item[+].linkId = "euroqol-eq5d5l-q05-AD"
@@ -292,9 +297,9 @@ Description: "PRO QuestionnaireResponse: EQ-5D-5L T6 (Patient 11, Profil 22121)"
 * item[+].linkId = "euroqol-eq5d5l-q01-MO"
 * item[=].answer.valueCoding = $pro-eq5d-vs#2 "Ich habe leichte Probleme herumzugehen"
 * item[+].linkId = "euroqol-eq5d5l-q02-SC"
-* item[=].answer.valueCoding = $pro-eq5d-vs#2 "Ich habe leichte Probleme, mich selbst zu waschen oder mich anzuziehen"
+* item[=].answer.valueCoding = $pro-eq5d-vs#2 "Ich habe leichte Probleme, mich selbst zu waschen oder anzuziehen"
 * item[+].linkId = "euroqol-eq5d5l-q03-UA"
-* item[=].answer.valueCoding = $pro-eq5d-vs#1 "Ich habe keine Probleme, meinen alltäglichen Tätigkeiten nachzukommen"
+* item[=].answer.valueCoding = $pro-eq5d-vs#1 "Ich habe keine Probleme, meinen alltäglichen Tätigkeiten nachzugehen"
 * item[+].linkId = "euroqol-eq5d5l-q04-PD"
 * item[=].answer.valueCoding = $pro-eq5d-vs#2 "Ich habe leichte Schmerzen oder Beschwerden"
 * item[+].linkId = "euroqol-eq5d5l-q05-AD"

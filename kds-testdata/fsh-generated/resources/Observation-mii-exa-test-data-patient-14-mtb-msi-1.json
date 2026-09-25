@@ -48,9 +48,9 @@
     {
       "coding": [
         {
-          "code": "H",
-          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
-          "display": "High"
+          "code": "LA26203-2",
+          "system": "http://loinc.org",
+          "display": "MSI-H"
         }
       ]
     }

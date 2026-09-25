@@ -58,9 +58,9 @@
       "valueCodeableConcept": {
         "coding": [
           {
-            "code": "R",
+            "code": "T",
             "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-verlauf-fernmetastasen",
-            "display": "Rückbildung von Fernmetastasen"
+            "display": "Fernmetastasen Residuen"
           }
         ]
       }
