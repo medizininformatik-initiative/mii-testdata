@@ -122,7 +122,9 @@ jobs:
       working-directory: ./kds-testdata
       run: |
         mkdir -p input/includes
-        python3 ../scripts/ms-coverage.py           --ig-include input/includes/testabdeckung-status.md > /dev/null
+        python3 ../scripts/ms-coverage.py           --ig-include input/includes/testabdeckung-status.md           --index ../docs/ms-coverage-index.json > /dev/null
+        # Interaktive Luecken-Uebersicht aus demselben Index
+        python3 ../scripts/build-gap-page.py input/includes/ms-luecken.html
 
     - name: Start SU-TermServ proxy (falls Zertifikat vorhanden)
       id: tx
