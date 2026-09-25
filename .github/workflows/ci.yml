@@ -328,15 +328,24 @@ jobs:
           -ig de.einwilligungsmanagement#2.0.4 -ig hl7.fhir.uv.sdc#4.0.0 \
           -ig hl7.fhir.uv.genomics-reporting#3.0.0 -ig eu.miabis.r4#1.3.0 \
           -tx "$TX" -txCache "$GITHUB_WORKSPACE/.txcache" "${extra[@]}")
+        # Absolute Ausgabepfade: Der Validator lehnt relative ../-Pfade ab
+        # ("Computed path does not start with first element") — derselbe
+        # Fallstrick wie zuvor bei -txCache.
+        # -Xmx14g, weil der Validator beim Bauen der Slicing-Fehleruebersicht
+        # (errorSummaryForSlicingAsHtml) in den OutOfMemoryError laeuft; ein
+        # lokaler Lauf ueber nur vier Bundles brauchte bereits 9 GB, und die
+        # Profile erzeugen sehr viele Slicing-Meldungen.
+        unf="$GITHUB_WORKSPACE/validation-unfiltered.json"
+        fil="$GITHUB_WORKSPACE/validation-filtered.json"
         cd kds-testdata
-        java -Xmx6g -jar ../validator_cli.jar "${common[@]}" \
-          -output ../validation-unfiltered.json || true
-        java -Xmx6g -jar ../validator_cli.jar "${common[@]}" \
-          -advisor-file advisor.json -output ../validation-filtered.json || true
+        java -Xmx14g -jar ../validator_cli.jar "${common[@]}" \
+          -output "$unf" || true
+        java -Xmx14g -jar ../validator_cli.jar "${common[@]}" \
+          -advisor-file advisor.json -output "$fil" || true
         # || true faengt nur den erwarteten Exit!=0 bei Validierungsfehlern ab.
         # Ein Crash VOR der Validierung hinterlaesst keine Output-Dateien —
         # das muss den Job rot machen, sonst ist die Kontrolle wirkungslos.
-        for f in ../validation-unfiltered.json ../validation-filtered.json; do
+        for f in "$unf" "$fil"; do
           [ -s "$f" ] || { echo "::error::Validator-Lauf ohne Ergebnis ($f fehlt) — Log pruefen"; exit 1; }
         done
 
