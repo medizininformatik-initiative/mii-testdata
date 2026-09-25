@@ -114,6 +114,7 @@ menu:
   Home: index.html
   Usage: usage.html
   Test coverage: test-coverage.html
+  Known issues: known-issues.html
   Artifacts: artifacts.html
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮

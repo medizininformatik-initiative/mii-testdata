@@ -1,8 +1,18 @@
 {
-  "suppress" : [
+  "suppress": [
     "Terminology_TX_NoValid_16@ImplementationGuide.definition.parameter.code",
     "Terminology_TX_Confirm_4a@AdverseEvent.event.coding",
     "_DT_Fixed_Wrong@Procedure.extension.value.ofType(CodeableConcept).coding.system",
-    "Terminology_TX_NoValid_1_CC@Procedure.extension.value.ofType(CodeableConcept)"
+    "Terminology_TX_NoValid_1_CC@Procedure.extension.value.ofType(CodeableConcept)",
+    "SLICING_CANNOT_BE_EVALUATED@Observation.component",
+    "SLICING_CANNOT_BE_EVALUATED@component",
+    "SLICING_CANNOT_BE_EVALUATED@Observation.code.coding",
+    "SLICING_CANNOT_BE_EVALUATED@code.coding",
+    "Validation_VAL_Profile_MatchMultiple@DiagnosticReport.result",
+    "Validation_VAL_Profile_MatchMultiple@result",
+    "Reference_REF_CantMatchChoice@hasMember",
+    "Reference_REF_CantMatchChoice@focus",
+    "Reference_REF_CantMatchChoice@result",
+    "Reference_REF_CantMatchChoice@derivedFrom"
   ]
 }

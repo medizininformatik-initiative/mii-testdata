@@ -9697,6 +9697,11 @@
           "generation": "markdown"
         },
         {
+          "nameUrl": "known-issues.html",
+          "title": "Known Issues",
+          "generation": "markdown"
+        },
+        {
           "nameUrl": "test-coverage.html",
           "title": "Test Coverage",
           "generation": "markdown"
