@@ -51,6 +51,24 @@ XOR-Invariante durchsetzen — für die Score-Profile bereits vorhanden, für Bi
 Mikrobio- und sdd-Profile analog ergänzen. Das erhält die inhaltliche Pflicht
 (eines von beidem muss da sein), macht MS-`dataAbsentReason` aber erfüllbar.
 
+### Nachtrag: Der konforme Weg existiert — er ist nur nicht der markierte
+
+Abwesenheit *lässt* sich in diesen Profilen ausdrücken, nur über einen anderen
+Mechanismus: Da `value[x].value` auf `0..1` steht (Pflicht sind nur `unit` und `code`),
+ist eine Quantity ohne Zahl, aber mit der Standard-Extension
+`http://hl7.org/fhir/StructureDefinition/data-absent-reason`, vollständig konform.
+Am Java-Validator gegen `mii-pr-icu-bilanz-ausfuhr-urin` geprüft:
+
+| Variante | Ergebnis |
+|---|---|
+| `Observation.dataAbsentReason` gesetzt, `value[x]` weggelassen | **Fehler** — `value[x]: mindestens erforderlich = 1, aber nur gefunden 0` |
+| `valueQuantity` mit `unit` + `code`, ohne Zahl, mit DAR-**Extension** | **0 Fehler** |
+
+Das verschiebt die Bewertung: Es ist nicht nur eine widersprüchliche Kardinalität,
+sondern ein Modell, das den **unbenutzbaren** Weg als Must-Support markiert und den
+benutzbaren ungeflaggt danebenstehen lässt. Wer die Konformitätspflichten aus dem
+Snapshot ableitet, wird auf den falschen Mechanismus gelenkt.
+
 ### Auswirkung auf die Testdaten
 
 50 MS-Knoten bleiben dauerhaft offen (≈9 % aller offenen Knoten). Versuche, DAR-Varianten
@@ -196,7 +214,43 @@ prüft — der Fund lässt sich mit dem Skript unten in Sekunden reproduzieren.
 
 ---
 
-## 6. Randnotiz: OPS-Lücken (kein Profilfehler)
+## 6. Physikalisch falsche Einheiten-Pattern in der Lungenfunktion
+
+Mehrere Profile fixieren per `patternString`/`patternCode` eine Einheit, die zur
+gemessenen Größe nicht passt. Weil es ein **Pattern** ist, muss jede konforme Instanz
+sie übernehmen — die Testdaten tragen die falschen Einheiten also zwangsläufig.
+
+| Profil | Element | Pattern | fachlich richtig |
+|---|---|---|---|
+| `mii-pr-lungenfunktion-gewicht` | `value[x].unit` **und** `component:predicted…unit` | `ug` | `kg` |
+| `mii-pr-lungenfunktion-bf` (Atemfrequenz) | `component:predicted…unit` | `L` | `/min` |
+| `mii-pr-lungenfunktion-hb` (Hämoglobin) | `component:predicted…unit` | `L` | `g/dL` (wie am Messwert korrekt gesetzt) |
+| `mii-pr-lungenfunktion-sg-total` | `value[x].unit` / `component:predicted…unit` | `/kPA*s` / `/kPA.s` | `/(kPa.s)` |
+
+Drei Beobachtungen dazu:
+
+**Das Muster verrät die Ursache.** `L` ist die Einheit des Elternprofils
+`MII_PR_Lungenfunktion_Volumen`. Bei Atemfrequenz und Hämoglobin wurde sie offenbar
+beim Ableiten mitgeschleppt, ohne überschrieben zu werden — beim Hämoglobin sogar
+sichtbar inkonsistent: Der Messwert trägt korrekt `g{Hemoglobin}/dL`, nur der Sollwert
+steht auf `L`.
+
+**Beim Körpergewicht ist es keine falsche Einheit, sondern ein Faktor 10⁹.** `ug`
+(Mikrogramm) ist gültiges UCUM, ein Patient wiegt damit rechnerisch Mikrogramm.
+
+**Bei `sg-total` kommen zwei Fehler zusammen:** `kPA` statt `kPa` — UCUM ist
+case-sensitiv, `Pa` ist das Pascal, `PA` existiert nicht — und zusätzlich schreiben
+Messwert und Sollwert den Ausdruck unterschiedlich (`*` gegen `.`). Selbst nach
+Korrektur der Groß-/Kleinschreibung wäre die Klammerung zu prüfen; der korrekte
+Ausdruck für die spezifische Conductance ist `/(kPa.s)`.
+
+**Vorschlag:** Die Einheiten-Pattern der abgeleiteten Profile gegen die jeweilige
+Größe prüfen. Ergänzend ein Release-Gate, das jedes `patternString` auf
+`Quantity.unit` gegen UCUM validiert — das hätte alle vier Fälle gefunden.
+
+---
+
+## 7. Randnotiz: OPS-Lücken (kein Profilfehler)
 
 Beim Kodieren der Testdaten sind zwei Katalog-Lücken aufgefallen, die Implementierer
 betreffen können — sie sind **keine** Fehler der MII-Profile:
@@ -211,7 +265,7 @@ betreffen können — sie sind **keine** Fehler der MII-Profile:
 
 ---
 
-## 7. Bereits gemeldet (Referenz)
+## 8. Bereits gemeldet (Referenz)
 
 | Befund | Ticket |
 |---|---|
