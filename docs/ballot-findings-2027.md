@@ -178,7 +178,9 @@ und das Modul verwendet sie an anderer Stelle bereits:
   capacity.carbon monoxide Predicted", `98130-8`, `19915-8`, `98088-8`
   „Vital capacity/predicted VC".
 
-Die Codes müssten also nur aus den vorhandenen ValueSets in die Pattern übernommen werden.
+Die Codes müssten also nur aus den vorhandenen ValueSets in die Pattern übernommen
+werden. Eine konkrete Zuordnung je Parameter steht in
+[vorschlag-lufu-codes.md](vorschlag-lufu-codes.md).
 
 **Vorschlag:** Vor dem Ballot-Abschluss die 56 Platzhalter auflösen. Ergänzend ein
 Release-Gate, das publizierte Pakete auf `TODO`/`xxx`/`TBD` in `fixed*`/`pattern*`
