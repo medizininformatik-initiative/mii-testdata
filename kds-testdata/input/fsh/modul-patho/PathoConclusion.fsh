@@ -175,10 +175,11 @@ Description: "Total Gleason score in biopsy specimens"
 * method = $sct#104157003 "Light microscopy (procedure)"
 * hasMember[+] = Reference(mii-exa-test-data-patho-primary-gleason-pattern)
 * hasMember[+] = Reference(mii-exa-test-data-patho-secondary-gleason-pattern)
-// Repraesentative component-DAR-Instanz (Testdaten-Policy: genau eine je Modul):
-// Anteil Gleason-Muster 4/5 als Komponente nicht bestimmbar
+// component-DAR auf Finding-Ebene: Anteil Gleason-Muster 4/5 nicht bestimmbar.
+// (Die Grouper-Profile tragen ihre eigenen component-DAR-Instanzen, siehe
+//  PathoGrouperDataAbsent.fsh.)
 * component.code = $loinc#44641-9 "Percent of Gleason pattern 4 and 5 in Prostate tumor"
-* component.dataAbsentReason = http://terminology.hl7.org/CodeSystem/data-absent-reason#cannot-be-obtained "Cannot Be Obtained"
+* component.dataAbsentReason = $data-absent-reason#unknown "Unknown"
 * derivedFrom[0] = Reference(mii-exa-test-data-patho-primary-gleason-pattern)
 * derivedFrom[+] = Reference(mii-exa-test-data-patho-secondary-gleason-pattern)
 

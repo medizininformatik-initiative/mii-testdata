@@ -199,6 +199,7 @@ Description: "Vollst√§ndiges Transaktionsbundle mit allen Onkologie-Testdaten f√
 * insert AddBundleEntry(mii-exa-test-data-onko-melanom-breslow-tiefe-2, Observation)
 * insert AddBundleEntry(mii-exa-test-data-onko-melanom-ulzeration-1, Observation)
 * insert AddBundleEntry(mii-exa-test-data-onko-melanom-ulzeration-2, Observation)
+* insert AddBundleEntry(mii-exa-test-data-onko-melanom-ulzeration-dar-1, Observation)
 * insert AddBundleEntry(mii-exa-test-data-onko-melanom-sicherheitsabstand-1, Observation)
 * insert AddBundleEntry(mii-exa-test-data-onko-melanom-sicherheitsabstand-2, Observation)
 * insert AddBundleEntry(mii-exa-test-data-onko-melanom-ldh-1, Observation)

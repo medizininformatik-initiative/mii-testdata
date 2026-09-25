@@ -85,9 +85,9 @@
       "dataAbsentReason": {
         "coding": [
           {
-            "code": "cannot-be-obtained",
+            "code": "unknown",
             "system": "http://terminology.hl7.org/CodeSystem/data-absent-reason",
-            "display": "Cannot Be Obtained"
+            "display": "Unknown"
           }
         ]
       }

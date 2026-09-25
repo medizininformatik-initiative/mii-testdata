@@ -669,6 +669,47 @@ Description: "Mikrobio: mikroskopie — Probe nicht auswertbar (dataAbsentReason
 * method.coding = $sct#702661004
 * note[+].text = "Probe nicht auswertbar — Ergebnis nicht verfügbar."
 
+// spezifische-mikroskopie: dataAbsentReason (obs-6 — kein value[x] gesetzt).
+// DAR-Code aus dem profilgebundenen ValueSet mii-vs-mikrobio-data-absent-reason,
+// das neben data-absent-reason zusaetzlich SNOMED 82334004 "Indeterminate" fuehrt.
+Instance: mii-exa-test-data-mikrobio-spezifische-mikroskopie-dar-1
+InstanceOf: https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-spezifische-mikroskopie
+Usage: #example
+Description: "Mikrobio: spezifische-mikroskopie — Material nicht ausreichend, Ausstrich nicht beurteilbar (dataAbsentReason)"
+* insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/mikrobiologie-lab-system"
+* identifier[analyseBefundCode].type.coding[observationInstanceV2] = $v2-0203#OBI
+* identifier[analyseBefundCode].system = "https://www.charite.de/fhir/sid/test-lab-results"
+* identifier[analyseBefundCode].value = "spezifische-mikroskopie-dar-1"
+* identifier[analyseBefundCode].assigner.identifier.system = "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"
+* identifier[analyseBefundCode].assigner.identifier.value = "DIZ-CHA"
+* status = #final
+* category[observation-category] = $observation-category#laboratory
+* category[mibi-category] = $v2-0074#MB "Microbiology"
+* subject = Reference(mii-exa-test-data-mikrobio-patient-1)
+* subject.identifier.system = "https://www.charite.de/fhir/sid/patientenidentifikation"
+* subject.identifier.value = "MIKROBIO-TEST-001"
+* encounter = Reference(mii-exa-test-data-mikrobio-encounter-1)
+* encounter.identifier.system = "https://www.charite.de/fhir/sid/encounter-identifier"
+* encounter.identifier.value = "MIKROBIO-ENC-001"
+* effectiveDateTime = "2026-04-05T09:30:00+02:00"
+* effectiveDateTime.extension[+].url = "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum"
+* effectiveDateTime.extension[=].valueCoding = $sct#399445004 "Specimen collection date (observable entity)"
+* issued = "2026-04-05T10:45:00+02:00"
+* specimen = Reference(mii-exa-test-data-mikrobio-probe-1)
+* specimen.identifier.system = "https://www.charite.de/fhir/sid/Probennummer"
+* specimen.identifier.value = "SPUTUM-001"
+* code.coding = $loinc#72357-7 "Microscopic observation [Presence] in Specimen by Acid fast stain"
+* code.coding.display = "Microscopic observation [Presence] in Specimen by Acid fast stain"
+* dataAbsentReason.coding = $sct#82334004 "Indeterminate (qualifier value)"
+* extension[faerbung].valueCodeableConcept = $sct#36878004 "Acid fast Kinyoun's cold carbolfuchsin stain method (procedure)"
+* device = Reference(mii-exa-test-data-mikrobio-device-mikroskop-1)
+* device.identifier.system = "https://www.charite.de/fhir/sid/device-identifier"
+* device.identifier.value = "MIKROSKOP-001"
+* method.coding = $sct#702661004 "Light microscopy technique (qualifier value)"
+* basedOn = Reference(mii-exa-test-data-mikrobio-servicerequest-1)
+* note[+].text = "Materialmenge nicht ausreichend — Ausstrich zu zellarm, saeurefeste Staebchen nicht beurteilbar. Neue Probe angefordert."
+
 Instance: mii-exa-test-data-mikrobio-molekulare-pathogenlast-alt-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-molekulare-pathogenlast
 Usage: #example

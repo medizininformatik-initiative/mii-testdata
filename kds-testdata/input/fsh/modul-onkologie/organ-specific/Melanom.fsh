@@ -67,6 +67,22 @@ Description: "Onkologie Test Melanom Ulzeration - Nicht vorhanden"
 * valueCodeableConcept = $mii-cs-onko-melanom-ulzeration#N "Nein"
 * method = $SCT#117617002 "Immunohistochemistry procedure"
 
+// Ulzeration - dataAbsentReason variant (obs-6: kein value[x], daher DAR)
+Instance: mii-exa-test-data-onko-melanom-ulzeration-dar-1
+InstanceOf: MII_PR_Onko_Melanom_Ulzeration
+Usage: #example
+Description: "Onkologie Test Melanom Ulzeration - nicht beurteilbar (dataAbsentReason)"
+* insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
+* status = #final
+* code.coding = $SCT#6270001000004106 "Presence of ulcer in primary malignant melanoma of skin (observable entity)"
+* subject = Reference(mii-exa-test-data-onko-patient-1)
+* encounter = Reference(mii-exa-test-data-onko-encounter-1)
+* focus = Reference(mii-exa-test-data-onko-diagnose-1)
+* effectiveDateTime = "2021-06-20"
+* dataAbsentReason = $data-absent-reason#unknown "Unknown"
+* note.text = "Ulzerationsstatus nicht beurteilbar: Praeparat fragmentiert, Oberflaeche nicht vollstaendig erhalten."
+
 // Sicherheitsabstand
 Instance: mii-exa-test-data-onko-melanom-sicherheitsabstand-1
 InstanceOf: MII_PR_Onko_Melanom_Sicherheitsabstand

@@ -77,6 +77,7 @@ Description: "Bundle: Mikrobiologie Testdaten (Sepsis-Patient mit MRSA)"
 * insert AddBundleEntry(mii-exa-test-data-mikrobio-resistenz-mech-dar-1, Observation)
 * insert AddBundleEntry(mii-exa-test-data-mikrobio-spezifische-bestimmung-alt-1, Observation)
 * insert AddBundleEntry(mii-exa-test-data-mikrobio-spezifische-bestimmung-dar-1, Observation)
+* insert AddBundleEntry(mii-exa-test-data-mikrobio-spezifische-mikroskopie-dar-1, Observation)
 * insert AddBundleEntry(mii-exa-test-data-mikrobio-titer-alt-1, Observation)
 * insert AddBundleEntry(mii-exa-test-data-mikrobio-titer-dar-1, Observation)
 * insert AddBundleEntry(mii-exa-test-data-mikrobio-virulenzfaktor-alt-1, Observation)

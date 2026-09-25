@@ -1490,9 +1490,9 @@
             "dataAbsentReason": {
               "coding": [
                 {
-                  "code": "cannot-be-obtained",
+                  "code": "unknown",
                   "system": "http://terminology.hl7.org/CodeSystem/data-absent-reason",
-                  "display": "Cannot Be Obtained"
+                  "display": "Unknown"
                 }
               ]
             }
@@ -6366,6 +6366,560 @@
     {
       "request": {
         "method": "PUT",
+        "url": "Observation/mii-exa-test-data-patho-macro-grouper-dar-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patho-macro-grouper-dar-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patho-macro-grouper-dar-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-macroscopic-grouper"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "performer": [
+          {
+            "reference": "Practitioner/mii-exa-test-data-patho-practitioner-1"
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://www.charite.de/fhir/sid/patho/befund",
+            "value": "E_24_001_MAKRO_DAR"
+          }
+        ],
+        "basedOn": [
+          {
+            "reference": "ServiceRequest/mii-exa-test-data-patho-request-1"
+          }
+        ],
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "44619-5",
+                  "system": "http://loinc.org",
+                  "display": "Length of tissue core(s)"
+                }
+              ]
+            },
+            "dataAbsentReason": {
+              "coding": [
+                {
+                  "code": "unknown",
+                  "system": "http://terminology.hl7.org/CodeSystem/data-absent-reason",
+                  "display": "Unknown"
+                }
+              ]
+            }
+          }
+        ],
+        "note": [
+          {
+            "text": "Stanzzylinder mehrfach fragmentiert — Gesamtlaenge makroskopisch nicht bestimmbar."
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "22634-0"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patho-patient-1"
+        },
+        "effectiveDateTime": "2024-01-15T14:20:00+01:00",
+        "method": {
+          "coding": [
+            {
+              "code": "787377000",
+              "system": "http://snomed.info/sct",
+              "display": "Gross examination and sampling of tissue specimen (procedure)"
+            }
+          ]
+        },
+        "specimen": {
+          "reference": "Specimen/mii-exa-test-data-patho-specimen-03-part"
+        },
+        "bodySite": {
+          "coding": [
+            {
+              "code": "41216001",
+              "system": "http://snomed.info/sct",
+              "display": "Prostate"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-patho-micro-grouper-dar-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patho-micro-grouper-dar-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patho-micro-grouper-dar-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-microscopic-grouper"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "performer": [
+          {
+            "reference": "Practitioner/mii-exa-test-data-patho-practitioner-1"
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://www.charite.de/fhir/sid/patho/befund",
+            "value": "E_24_001_MIKRO_DAR"
+          }
+        ],
+        "basedOn": [
+          {
+            "reference": "ServiceRequest/mii-exa-test-data-patho-request-1"
+          }
+        ],
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "92837-4",
+                  "system": "http://loinc.org",
+                  "display": "Perineural invasion [Presence] in Cancer specimen"
+                }
+              ]
+            },
+            "dataAbsentReason": {
+              "coding": [
+                {
+                  "code": "unknown",
+                  "system": "http://terminology.hl7.org/CodeSystem/data-absent-reason",
+                  "display": "Unknown"
+                }
+              ]
+            }
+          }
+        ],
+        "note": [
+          {
+            "text": "Kein Nervengewebe im Anschnitt erfasst — perineurale Infiltration nicht beurteilbar."
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "22635-7"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patho-patient-1"
+        },
+        "effectiveDateTime": "2024-01-17T10:30:00+01:00",
+        "method": {
+          "coding": [
+            {
+              "code": "104157003",
+              "system": "http://snomed.info/sct",
+              "display": "Light microscopy (procedure)"
+            }
+          ]
+        },
+        "specimen": {
+          "reference": "Specimen/mii-exa-test-data-patho-specimen-03-slide"
+        },
+        "bodySite": {
+          "coding": [
+            {
+              "code": "41216001",
+              "system": "http://snomed.info/sct",
+              "display": "Prostate"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-patho-intraop-grouper-dar-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patho-intraop-grouper-dar-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patho-intraop-grouper-dar-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-intraoperative-grouper"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "performer": [
+          {
+            "reference": "Practitioner/mii-exa-test-data-patho-practitioner-1"
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://www.charite.de/fhir/sid/patho/befund",
+            "value": "E_24_001_INTRAOP_DAR"
+          }
+        ],
+        "basedOn": [
+          {
+            "reference": "ServiceRequest/mii-exa-test-data-patho-request-1"
+          }
+        ],
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "371441004",
+                  "system": "http://snomed.info/sct",
+                  "display": "Histologic type"
+                }
+              ]
+            },
+            "dataAbsentReason": {
+              "coding": [
+                {
+                  "code": "temp-unknown",
+                  "system": "http://terminology.hl7.org/CodeSystem/data-absent-reason",
+                  "display": "Temporarily Unknown"
+                }
+              ]
+            }
+          }
+        ],
+        "note": [
+          {
+            "text": "Gefrierartefakte — histologische Typisierung erst am Paraffinmaterial moeglich."
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "83321-0"
+            }
+          ]
+        },
+        "status": "preliminary",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patho-patient-1"
+        },
+        "effectiveDateTime": "2024-01-15T11:20:00+01:00",
+        "method": {
+          "coding": [
+            {
+              "code": "20135006",
+              "system": "http://snomed.info/sct",
+              "display": "Frozen section procedure (procedure)"
+            }
+          ]
+        },
+        "specimen": {
+          "reference": "Specimen/mii-exa-test-data-patho-specimen-03-part"
+        },
+        "bodySite": {
+          "coding": [
+            {
+              "code": "41216001",
+              "system": "http://snomed.info/sct",
+              "display": "Prostate"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-patho-conclusion-grouper-dar-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patho-conclusion-grouper-dar-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patho-conclusion-grouper-dar-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-diagnostic-conclusion-grouper"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "performer": [
+          {
+            "reference": "Practitioner/mii-exa-test-data-patho-practitioner-1"
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://www.charite.de/fhir/sid/patho/befund",
+            "value": "E_24_001_CONCLUSION_DAR"
+          }
+        ],
+        "basedOn": [
+          {
+            "reference": "ServiceRequest/mii-exa-test-data-patho-request-1"
+          }
+        ],
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "44618-7",
+                  "system": "http://loinc.org",
+                  "display": "Total linear mm of carcinoma"
+                }
+              ]
+            },
+            "dataAbsentReason": {
+              "coding": [
+                {
+                  "code": "unknown",
+                  "system": "http://terminology.hl7.org/CodeSystem/data-absent-reason",
+                  "display": "Unknown"
+                }
+              ]
+            }
+          }
+        ],
+        "note": [
+          {
+            "text": "Tumorbefall auf mehrere Fragmente verteilt — lineare Gesamtausdehnung nicht ermittelbar."
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "22637-3"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patho-patient-1"
+        },
+        "effectiveDateTime": "2024-01-20",
+        "method": {
+          "coding": [
+            {
+              "code": "104157003",
+              "system": "http://snomed.info/sct",
+              "display": "Light microscopy (procedure)"
+            }
+          ]
+        },
+        "specimen": {
+          "reference": "Specimen/mii-exa-test-data-patho-specimen-03-slide"
+        },
+        "bodySite": {
+          "coding": [
+            {
+              "code": "41216001",
+              "system": "http://snomed.info/sct",
+              "display": "Prostate"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-patho-zusatz-grouper-dar-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patho-zusatz-grouper-dar-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-patho-zusatz-grouper-dar-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-additional-specified-grouper"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "performer": [
+          {
+            "reference": "Practitioner/mii-exa-test-data-patho-practitioner-1"
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://www.charite.de/fhir/sid/patho/befund",
+            "value": "E_24_001_ZUSATZ_DAR"
+          }
+        ],
+        "basedOn": [
+          {
+            "reference": "ServiceRequest/mii-exa-test-data-patho-request-1"
+          }
+        ],
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "101548-6",
+                  "system": "http://loinc.org"
+                }
+              ]
+            },
+            "dataAbsentReason": {
+              "coding": [
+                {
+                  "code": "not-performed",
+                  "system": "http://terminology.hl7.org/CodeSystem/data-absent-reason",
+                  "display": "Not Performed"
+                }
+              ]
+            }
+          }
+        ],
+        "note": [
+          {
+            "text": "Paraffinblock erschoepft — weiterfuehrende Immunhistochemie nicht mehr durchfuehrbar."
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "100969-5"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-patho-patient-1"
+        },
+        "effectiveDateTime": "2024-01-18T09:30:00+01:00",
+        "method": {
+          "coding": [
+            {
+              "code": "117617002",
+              "system": "http://snomed.info/sct",
+              "display": "Immunohistochemistry procedure (procedure)"
+            }
+          ]
+        },
+        "specimen": {
+          "reference": "Specimen/mii-exa-test-data-patho-specimen-03-slide"
+        },
+        "bodySite": {
+          "coding": [
+            {
+              "code": "41216001",
+              "system": "http://snomed.info/sct",
+              "display": "Prostate"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
         "url": "Bundle/mii-exa-test-data-patho-befund-bundle-1"
       },
       "fullUrl": "https://www.medizininformatik-initiative.de/Bundle/mii-exa-test-data-patho-befund-bundle-1",
@@ -8383,9 +8937,9 @@
                   "dataAbsentReason": {
                     "coding": [
                       {
-                        "code": "cannot-be-obtained",
+                        "code": "unknown",
                         "system": "http://terminology.hl7.org/CodeSystem/data-absent-reason",
-                        "display": "Cannot Be Obtained"
+                        "display": "Unknown"
                       }
                     ]
                   }
