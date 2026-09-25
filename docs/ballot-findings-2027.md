@@ -253,9 +253,13 @@ naheliegende Vermutung: `-gewicht` und `-hb` basieren direkt auf `Observation`, 
 beim Hämoglobin sichtbar inkonsistent innerhalb desselben Profils: Der Messwert trägt
 korrekt `g{Hemoglobin}/dL`, nur der Sollwert steht auf `L`.
 
-**Beim Körpergewicht kommt hinzu, dass ein passendes Profil existiert und umgangen wird.**
-`de.basisprofil.r4` enthält `observation-de-vitalsign-koerpergewicht`, und das Modul nutzt
-die deutschen Vitalparameter-Profile nachweislich — `-bf` leitet von
+**Beim Körpergewicht kommt hinzu, dass gleich zwei passende Profile existieren und beide
+umgangen werden.** FHIR-Core `bodyweight` (aus `vitalsigns`) bindet
+`Observation.valueQuantity.code` **required** an `ucum-bodyweight` — ein ValueSet mit genau
+drei Codes: `kg`, `g`, `[lb_av]`. `ug` wäre dort **abgelehnt** worden. Alternativ bietet
+`de.basisprofil.r4` das Profil `observation-de-vitalsign-koerpergewicht` mit den Bindungen
+`VitalSignDE_Body_Weigth_UCUM` und `UcumVitalsCommonDE`. Dass das Modul die
+Vitalparameter-Profile kennt, ist belegt — `-bf` leitet von
 `observation-de-vitalsign-atemfrequenz` ab. Beim Gewicht wurde stattdessen von blankem
 `Observation` abgeleitet und die Einheit neu deklariert; dabei ist `ug` entstanden.
 Das Profil hat zudem keine Code-Bindung (nur das breite `-observable`-ValueSet), eine
