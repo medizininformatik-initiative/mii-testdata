@@ -246,11 +246,21 @@ bereits.)
 
 Drei weitere Beobachtungen:
 
-**Das Muster verrät die Ursache.** `L` ist die Einheit des Elternprofils
-`MII_PR_Lungenfunktion_Volumen`. Bei Atemfrequenz und Hämoglobin wurde sie offenbar
-beim Ableiten mitgeschleppt, ohne überschrieben zu werden — beim Hämoglobin sogar
-sichtbar inkonsistent: Der Messwert trägt korrekt `g{Hemoglobin}/dL`, nur der Sollwert
-steht auf `L`.
+**Nicht geerbt, sondern je Profil einzeln gesetzt.** Die Ableitungskette widerlegt die
+naheliegende Vermutung: `-gewicht` und `-hb` basieren direkt auf `Observation`, `-bf` auf
+`observation-de-vitalsign-atemfrequenz`; keines der drei leitet von
+`MII_PR_Lungenfunktion_Volumen` ab. Die Einheiten stehen also in jedem Profil einzeln —
+beim Hämoglobin sichtbar inkonsistent innerhalb desselben Profils: Der Messwert trägt
+korrekt `g{Hemoglobin}/dL`, nur der Sollwert steht auf `L`.
+
+**Beim Körpergewicht kommt hinzu, dass ein passendes Profil existiert und umgangen wird.**
+`de.basisprofil.r4` enthält `observation-de-vitalsign-koerpergewicht`, und das Modul nutzt
+die deutschen Vitalparameter-Profile nachweislich — `-bf` leitet von
+`observation-de-vitalsign-atemfrequenz` ab. Beim Gewicht wurde stattdessen von blankem
+`Observation` abgeleitet und die Einheit neu deklariert; dabei ist `ug` entstanden.
+Das Profil hat zudem keine Code-Bindung (nur das breite `-observable`-ValueSet), eine
+nichtssagende Beschreibung („Dieses Beobachtung beschreibt eine Gewichtsressource") und
+**kein anderes Profil verweist darauf**.
 
 **Beim Körpergewicht ist es keine falsche Einheit, sondern ein Faktor 10⁹.** `ug`
 (Mikrogramm) ist gültiges UCUM, ein Patient wiegt damit rechnerisch Mikrogramm.
