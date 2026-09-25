@@ -48,6 +48,46 @@ jobs:
         # nie im Exit-Code.
         run: node scripts/check-updates.mjs --format=markdown > drift.md
 
+      # Zweite Drift-Achse: die Terminologie. Paket-Pins sagen nichts darueber,
+      # welche CodeSystem-Fassung bei der Validierung zugrunde liegt — das
+      # entscheidet allein der Terminologieserver. Laeuft nur, wenn die
+      # SU-TermServ-Zertifikate hinterlegt sind; sonst uebersprungen.
+      - name: Start SU-TermServ proxy (falls Zertifikat vorhanden)
+        id: tx
+        env:
+          CDS_DEV_CLIENT_CERT: ${{ secrets.CDS_DEV_CLIENT_CERT }}
+          CDS_DEV_CLIENT_KEY: ${{ secrets.CDS_DEV_CLIENT_KEY }}
+          CDS_DEV_CLIENT_CERT_PASSWORD: ${{ secrets.CDS_DEV_CLIENT_CERT_PASSWORD }}
+        run: |
+          if [ -z "$CDS_DEV_CLIENT_CERT" ]; then
+            echo "tx=" >> "$GITHUB_OUTPUT"
+            echo "::notice::Kein SU-TermServ-Zertifikat — Terminologie-Drift uebersprungen."
+            exit 0
+          fi
+          mkdir -p nginx/certs
+          echo "$CDS_DEV_CLIENT_CERT" | base64 -d > nginx/certs/client-cert.pem
+          echo "$CDS_DEV_CLIENT_KEY" | base64 -d > nginx/certs/client-key-encrypted.key
+          openssl rsa -in nginx/certs/client-key-encrypted.key \
+            -out nginx/certs/client-key.key -passin env:CDS_DEV_CLIENT_CERT_PASSWORD
+          docker run -d --name nginx-proxy \
+            -v "$PWD/.github/workflows/su-termserv-nginx.conf:/etc/nginx/nginx.conf:ro" \
+            -v "$PWD/nginx/certs:/etc/nginx/certs:ro" \
+            -p 8090:80 nginx:alpine
+          sleep 5
+          curl -fsS -o /dev/null "http://127.0.0.1:8090/fhir/metadata" \
+            && echo "tx=http://127.0.0.1:8090/fhir" >> "$GITHUB_OUTPUT" \
+            || { echo "::warning::Proxy nicht erreichbar"; echo "tx=" >> "$GITHUB_OUTPUT"; }
+
+      - name: Terminology version drift
+        if: steps.tx.outputs.tx != ''
+        run: |
+          python3 scripts/check-terminology-versions.py --tx "${{ steps.tx.outputs.tx }}" \
+            >> drift.md || true
+
+      - name: Stop SU-TermServ proxy
+        if: always()
+        run: docker rm -f nginx-proxy 2>/dev/null || true
+
       - name: Upload drift report
         uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
         with:
