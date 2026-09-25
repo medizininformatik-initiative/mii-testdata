@@ -149,7 +149,31 @@
     "fshType": "Instance",
     "fshFile": "Bundle.fsh",
     "startLine": 895,
-    "endLine": 905
+    "endLine": 972
+  },
+  {
+    "outputFile": "Bundle-mii-exa-test-data-bundle-pat-12.json",
+    "fshName": "mii-exa-test-data-bundle-pat-12",
+    "fshType": "Instance",
+    "fshFile": "Bundle.fsh",
+    "startLine": 978,
+    "endLine": 1051
+  },
+  {
+    "outputFile": "Bundle-mii-exa-test-data-bundle-pat-13.json",
+    "fshName": "mii-exa-test-data-bundle-pat-13",
+    "fshType": "Instance",
+    "fshFile": "Bundle.fsh",
+    "startLine": 1058,
+    "endLine": 1111
+  },
+  {
+    "outputFile": "Bundle-mii-exa-test-data-bundle-pat-14.json",
+    "fshName": "mii-exa-test-data-bundle-pat-14",
+    "fshType": "Instance",
+    "fshFile": "Bundle.fsh",
+    "startLine": 1117,
+    "endLine": 1163
   },
   {
     "outputFile": "Bundle-mii-exa-test-data-bundle-pat-2.json",
@@ -312,6 +336,30 @@
     "endLine": 195
   },
   {
+    "outputFile": "CarePlan-mii-exa-test-data-patient-13-seltene-therapieplan.json",
+    "fshName": "mii-exa-test-data-patient-13-seltene-therapieplan",
+    "fshType": "Instance",
+    "fshFile": "journey-seltene-symptom/Seltene.fsh",
+    "startLine": 215,
+    "endLine": 230
+  },
+  {
+    "outputFile": "CarePlan-mii-exa-test-data-patient-14-mtb-therapieplan-1.json",
+    "fshName": "mii-exa-test-data-patient-14-mtb-therapieplan-1",
+    "fshType": "Instance",
+    "fshFile": "journey-onkologie-mtb/MTB.fsh",
+    "startLine": 147,
+    "endLine": 166
+  },
+  {
+    "outputFile": "CarePlan-mii-exa-test-data-patient-14-onko-tumorkonferenz-1.json",
+    "fshName": "mii-exa-test-data-patient-14-onko-tumorkonferenz-1",
+    "fshType": "Instance",
+    "fshFile": "journey-onkologie-mtb/Onkologie.fsh",
+    "startLine": 221,
+    "endLine": 239
+  },
+  {
     "outputFile": "CarePlan-mii-exa-test-data-patient-3-seltene-therapieplan-1.json",
     "fshName": "mii-exa-test-data-patient-3-seltene-therapieplan-1",
     "fshType": "Instance",
@@ -358,6 +406,14 @@
     "fshFile": "modul-mtb/FollowUp.fsh",
     "startLine": 8,
     "endLine": 25
+  },
+  {
+    "outputFile": "ClinicalImpression-mii-exa-test-data-patient-14-mtb-episode-1.json",
+    "fshName": "mii-exa-test-data-patient-14-mtb-episode-1",
+    "fshType": "Instance",
+    "fshFile": "journey-onkologie-mtb/MTB.fsh",
+    "startLine": 25,
+    "endLine": 40
   },
   {
     "outputFile": "ClinicalImpression-mii-exa-test-data-patient-3-seltene-clinical-impression-1.json",
@@ -592,6 +648,86 @@
     "endLine": 173
   },
   {
+    "outputFile": "Condition-mii-exa-test-data-patient-11-diagnose-1.json",
+    "fshName": "mii-exa-test-data-patient-11-diagnose-1",
+    "fshType": "Instance",
+    "fshFile": "journey-forschung-prom/Basis.fsh",
+    "startLine": 105,
+    "endLine": 115
+  },
+  {
+    "outputFile": "Condition-mii-exa-test-data-patient-11-diagnose-2.json",
+    "fshName": "mii-exa-test-data-patient-11-diagnose-2",
+    "fshType": "Instance",
+    "fshFile": "journey-forschung-prom/Basis.fsh",
+    "startLine": 117,
+    "endLine": 124
+  },
+  {
+    "outputFile": "Condition-mii-exa-test-data-patient-12-diagnose-1.json",
+    "fshName": "mii-exa-test-data-patient-12-diagnose-1",
+    "fshType": "Instance",
+    "fshFile": "journey-sepsis-icu/Basis.fsh",
+    "startLine": 120,
+    "endLine": 130
+  },
+  {
+    "outputFile": "Condition-mii-exa-test-data-patient-12-diagnose-2.json",
+    "fshName": "mii-exa-test-data-patient-12-diagnose-2",
+    "fshType": "Instance",
+    "fshFile": "journey-sepsis-icu/Basis.fsh",
+    "startLine": 132,
+    "endLine": 141
+  },
+  {
+    "outputFile": "Condition-mii-exa-test-data-patient-13-seltene-diagnose-genetisch.json",
+    "fshName": "mii-exa-test-data-patient-13-seltene-diagnose-genetisch",
+    "fshType": "Instance",
+    "fshFile": "journey-seltene-symptom/Seltene.fsh",
+    "startLine": 131,
+    "endLine": 158
+  },
+  {
+    "outputFile": "Condition-mii-exa-test-data-patient-13-seltene-diagnose-klinisch.json",
+    "fshName": "mii-exa-test-data-patient-13-seltene-diagnose-klinisch",
+    "fshType": "Instance",
+    "fshFile": "journey-seltene-symptom/Seltene.fsh",
+    "startLine": 86,
+    "endLine": 126
+  },
+  {
+    "outputFile": "Condition-mii-exa-test-data-patient-13-symptom-abdominal.json",
+    "fshName": "mii-exa-test-data-patient-13-symptom-abdominal",
+    "fshType": "Instance",
+    "fshFile": "journey-seltene-symptom/Symptom.fsh",
+    "startLine": 73,
+    "endLine": 89
+  },
+  {
+    "outputFile": "Condition-mii-exa-test-data-patient-13-symptom-akroparaesthesie.json",
+    "fshName": "mii-exa-test-data-patient-13-symptom-akroparaesthesie",
+    "fshType": "Instance",
+    "fshFile": "journey-seltene-symptom/Symptom.fsh",
+    "startLine": 30,
+    "endLine": 47
+  },
+  {
+    "outputFile": "Condition-mii-exa-test-data-patient-13-symptom-hypohidrose.json",
+    "fshName": "mii-exa-test-data-patient-13-symptom-hypohidrose",
+    "fshType": "Instance",
+    "fshFile": "journey-seltene-symptom/Symptom.fsh",
+    "startLine": 52,
+    "endLine": 68
+  },
+  {
+    "outputFile": "Condition-mii-exa-test-data-patient-14-onko-diagnose-1.json",
+    "fshName": "mii-exa-test-data-patient-14-onko-diagnose-1",
+    "fshType": "Instance",
+    "fshFile": "journey-onkologie-mtb/Onkologie.fsh",
+    "startLine": 9,
+    "endLine": 30
+  },
+  {
     "outputFile": "Condition-mii-exa-test-data-patient-2-diagnose-1.json",
     "fshName": "mii-exa-test-data-patient-2-diagnose-1",
     "fshType": "Instance",
@@ -766,6 +902,54 @@
     "fshFile": "modul-consent/Consent.fsh",
     "startLine": 323,
     "endLine": 360
+  },
+  {
+    "outputFile": "Consent-mii-exa-test-data-patient-11-consent-1.json",
+    "fshName": "mii-exa-test-data-patient-11-consent-1",
+    "fshType": "Instance",
+    "fshFile": "journey-forschung-prom/Basis.fsh",
+    "startLine": 147,
+    "endLine": 175
+  },
+  {
+    "outputFile": "Consent-mii-exa-test-data-patient-11-studien-consent-1.json",
+    "fshName": "mii-exa-test-data-patient-11-studien-consent-1",
+    "fshType": "Instance",
+    "fshFile": "journey-forschung-prom/Studien.fsh",
+    "startLine": 121,
+    "endLine": 132
+  },
+  {
+    "outputFile": "Consent-mii-exa-test-data-patient-12-consent-1.json",
+    "fshName": "mii-exa-test-data-patient-12-consent-1",
+    "fshType": "Instance",
+    "fshFile": "journey-sepsis-icu/Basis.fsh",
+    "startLine": 166,
+    "endLine": 194
+  },
+  {
+    "outputFile": "Consent-mii-exa-test-data-patient-13-consent-1.json",
+    "fshName": "mii-exa-test-data-patient-13-consent-1",
+    "fshType": "Instance",
+    "fshFile": "journey-seltene-symptom/Basis.fsh",
+    "startLine": 113,
+    "endLine": 141
+  },
+  {
+    "outputFile": "Consent-mii-exa-test-data-patient-13-register-consent.json",
+    "fshName": "mii-exa-test-data-patient-13-register-consent",
+    "fshType": "Instance",
+    "fshFile": "journey-seltene-symptom/Seltene.fsh",
+    "startLine": 275,
+    "endLine": 286
+  },
+  {
+    "outputFile": "Consent-mii-exa-test-data-patient-14-consent-1.json",
+    "fshName": "mii-exa-test-data-patient-14-consent-1",
+    "fshType": "Instance",
+    "fshFile": "journey-onkologie-mtb/Basis.fsh",
+    "startLine": 127,
+    "endLine": 159
   },
   {
     "outputFile": "Consent-mii-exa-test-data-patient-2-consent-1.json",
@@ -992,6 +1176,14 @@
     "endLine": 97
   },
   {
+    "outputFile": "Device-mii-exa-test-data-patient-12-icu-device-vent.json",
+    "fshName": "mii-exa-test-data-patient-12-icu-device-vent",
+    "fshType": "Instance",
+    "fshFile": "journey-sepsis-icu/ICU.fsh",
+    "startLine": 20,
+    "endLine": 33
+  },
+  {
     "outputFile": "Device-mii-exa-test-data-symptom-device-1.json",
     "fshName": "mii-exa-test-data-symptom-device-1",
     "fshType": "Instance",
@@ -1038,6 +1230,14 @@
     "fshFile": "modul-icu/Device.fsh",
     "startLine": 52,
     "endLine": 60
+  },
+  {
+    "outputFile": "DeviceMetric-mii-exa-test-data-patient-12-icu-dm-vent.json",
+    "fshName": "mii-exa-test-data-patient-12-icu-dm-vent",
+    "fshType": "Instance",
+    "fshFile": "journey-sepsis-icu/ICU.fsh",
+    "startLine": 35,
+    "endLine": 43
   },
   {
     "outputFile": "DiagnosticReport-mii-exa-test-data-befundbericht.json",
@@ -1134,6 +1334,54 @@
     "fshFile": "modul-labor/DiagnosticReport.fsh",
     "startLine": 202,
     "endLine": 219
+  },
+  {
+    "outputFile": "DiagnosticReport-mii-exa-test-data-patient-11-labreport-1.json",
+    "fshName": "mii-exa-test-data-patient-11-labreport-1",
+    "fshType": "Instance",
+    "fshFile": "journey-forschung-prom/Labor.fsh",
+    "startLine": 30,
+    "endLine": 45
+  },
+  {
+    "outputFile": "DiagnosticReport-mii-exa-test-data-patient-12-labreport-1.json",
+    "fshName": "mii-exa-test-data-patient-12-labreport-1",
+    "fshType": "Instance",
+    "fshFile": "journey-sepsis-icu/Labor.fsh",
+    "startLine": 30,
+    "endLine": 46
+  },
+  {
+    "outputFile": "DiagnosticReport-mii-exa-test-data-patient-12-mibi-report-1.json",
+    "fshName": "mii-exa-test-data-patient-12-mibi-report-1",
+    "fshType": "Instance",
+    "fshFile": "journey-sepsis-icu/Mikrobiologie.fsh",
+    "startLine": 282,
+    "endLine": 316
+  },
+  {
+    "outputFile": "DiagnosticReport-mii-exa-test-data-patient-13-labreport-1.json",
+    "fshName": "mii-exa-test-data-patient-13-labreport-1",
+    "fshType": "Instance",
+    "fshFile": "journey-seltene-symptom/LaborUndTherapie.fsh",
+    "startLine": 33,
+    "endLine": 48
+  },
+  {
+    "outputFile": "DiagnosticReport-mii-exa-test-data-patient-14-mtb-ngs-bericht-1.json",
+    "fshName": "mii-exa-test-data-patient-14-mtb-ngs-bericht-1",
+    "fshType": "Instance",
+    "fshFile": "journey-onkologie-mtb/MTB.fsh",
+    "startLine": 45,
+    "endLine": 64
+  },
+  {
+    "outputFile": "DiagnosticReport-mii-exa-test-data-patient-14-onko-befund-1.json",
+    "fshName": "mii-exa-test-data-patient-14-onko-befund-1",
+    "fshType": "Instance",
+    "fshFile": "journey-onkologie-mtb/Onkologie.fsh",
+    "startLine": 49,
+    "endLine": 60
   },
   {
     "outputFile": "DiagnosticReport-mii-exa-test-data-patient-2-labreport-1.json",
@@ -1272,6 +1520,14 @@
     "endLine": 110
   },
   {
+    "outputFile": "DocumentReference-mii-exa-test-data-patient-11-studien-dokument-1.json",
+    "fshName": "mii-exa-test-data-patient-11-studien-dokument-1",
+    "fshType": "Instance",
+    "fshFile": "journey-forschung-prom/Studien.fsh",
+    "startLine": 153,
+    "endLine": 166
+  },
+  {
     "outputFile": "DocumentReference-mii-exa-test-data-studien-dokument-1.json",
     "fshName": "mii-exa-test-data-studien-dokument-1",
     "fshType": "Instance",
@@ -1408,6 +1664,94 @@
     "endLine": 281
   },
   {
+    "outputFile": "Encounter-mii-exa-test-data-patient-11-encounter-1.json",
+    "fshName": "mii-exa-test-data-patient-11-encounter-1",
+    "fshType": "Instance",
+    "fshFile": "journey-forschung-prom/Basis.fsh",
+    "startLine": 36,
+    "endLine": 58
+  },
+  {
+    "outputFile": "Encounter-mii-exa-test-data-patient-11-encounter-2.json",
+    "fshName": "mii-exa-test-data-patient-11-encounter-2",
+    "fshType": "Instance",
+    "fshFile": "journey-forschung-prom/Basis.fsh",
+    "startLine": 66,
+    "endLine": 76
+  },
+  {
+    "outputFile": "Encounter-mii-exa-test-data-patient-11-encounter-3.json",
+    "fshName": "mii-exa-test-data-patient-11-encounter-3",
+    "fshType": "Instance",
+    "fshFile": "journey-forschung-prom/Basis.fsh",
+    "startLine": 78,
+    "endLine": 88
+  },
+  {
+    "outputFile": "Encounter-mii-exa-test-data-patient-11-encounter-4.json",
+    "fshName": "mii-exa-test-data-patient-11-encounter-4",
+    "fshType": "Instance",
+    "fshFile": "journey-forschung-prom/Basis.fsh",
+    "startLine": 90,
+    "endLine": 100
+  },
+  {
+    "outputFile": "Encounter-mii-exa-test-data-patient-12-encounter-1.json",
+    "fshName": "mii-exa-test-data-patient-12-encounter-1",
+    "fshType": "Instance",
+    "fshFile": "journey-sepsis-icu/Basis.fsh",
+    "startLine": 74,
+    "endLine": 97
+  },
+  {
+    "outputFile": "Encounter-mii-exa-test-data-patient-12-encounter-2.json",
+    "fshName": "mii-exa-test-data-patient-12-encounter-2",
+    "fshType": "Instance",
+    "fshFile": "journey-sepsis-icu/Basis.fsh",
+    "startLine": 104,
+    "endLine": 115
+  },
+  {
+    "outputFile": "Encounter-mii-exa-test-data-patient-13-encounter-1.json",
+    "fshName": "mii-exa-test-data-patient-13-encounter-1",
+    "fshType": "Instance",
+    "fshFile": "journey-seltene-symptom/Basis.fsh",
+    "startLine": 68,
+    "endLine": 78
+  },
+  {
+    "outputFile": "Encounter-mii-exa-test-data-patient-13-encounter-2.json",
+    "fshName": "mii-exa-test-data-patient-13-encounter-2",
+    "fshType": "Instance",
+    "fshFile": "journey-seltene-symptom/Basis.fsh",
+    "startLine": 83,
+    "endLine": 93
+  },
+  {
+    "outputFile": "Encounter-mii-exa-test-data-patient-13-encounter-3.json",
+    "fshName": "mii-exa-test-data-patient-13-encounter-3",
+    "fshType": "Instance",
+    "fshFile": "journey-seltene-symptom/Basis.fsh",
+    "startLine": 98,
+    "endLine": 108
+  },
+  {
+    "outputFile": "Encounter-mii-exa-test-data-patient-14-encounter-1.json",
+    "fshName": "mii-exa-test-data-patient-14-encounter-1",
+    "fshType": "Instance",
+    "fshFile": "journey-onkologie-mtb/Basis.fsh",
+    "startLine": 68,
+    "endLine": 87
+  },
+  {
+    "outputFile": "Encounter-mii-exa-test-data-patient-14-encounter-2.json",
+    "fshName": "mii-exa-test-data-patient-14-encounter-2",
+    "fshType": "Instance",
+    "fshFile": "journey-onkologie-mtb/Basis.fsh",
+    "startLine": 92,
+    "endLine": 102
+  },
+  {
     "outputFile": "Encounter-mii-exa-test-data-patient-2-encounter-1.json",
     "fshName": "mii-exa-test-data-patient-2-encounter-1",
     "fshType": "Instance",
@@ -1520,12 +1864,36 @@
     "endLine": 70
   },
   {
+    "outputFile": "EvidenceVariable-mii-exa-test-data-patient-11-studien-kriterium-1.json",
+    "fshName": "mii-exa-test-data-patient-11-studien-kriterium-1",
+    "fshType": "Instance",
+    "fshFile": "journey-forschung-prom/Studien.fsh",
+    "startLine": 62,
+    "endLine": 90
+  },
+  {
     "outputFile": "EvidenceVariable-mii-exa-test-data-studien-kriterium-1.json",
     "fshName": "mii-exa-test-data-studien-kriterium-1",
     "fshType": "Instance",
     "fshFile": "modul-studien/EvidenceVariable.fsh",
     "startLine": 11,
     "endLine": 44
+  },
+  {
+    "outputFile": "FamilyMemberHistory-mii-exa-test-data-patient-13-familienanamnese-mutter.json",
+    "fshName": "mii-exa-test-data-patient-13-familienanamnese-mutter",
+    "fshType": "Instance",
+    "fshFile": "journey-seltene-symptom/Seltene.fsh",
+    "startLine": 163,
+    "endLine": 186
+  },
+  {
+    "outputFile": "FamilyMemberHistory-mii-exa-test-data-patient-13-familienanamnese-onkel.json",
+    "fshName": "mii-exa-test-data-patient-13-familienanamnese-onkel",
+    "fshType": "Instance",
+    "fshFile": "journey-seltene-symptom/Seltene.fsh",
+    "startLine": 188,
+    "endLine": 210
   },
   {
     "outputFile": "FamilyMemberHistory-mii-exa-test-data-patient-3-molgen-family-member-history-1.json",
@@ -1576,6 +1944,14 @@
     "endLine": 294
   },
   {
+    "outputFile": "Group-mii-exa-test-data-patient-11-studien-group-1.json",
+    "fshName": "mii-exa-test-data-patient-11-studien-group-1",
+    "fshType": "Instance",
+    "fshFile": "journey-forschung-prom/Studien.fsh",
+    "startLine": 45,
+    "endLine": 55
+  },
+  {
     "outputFile": "Group-mii-exa-test-data-studien-group-1.json",
     "fshName": "mii-exa-test-data-studien-group-1",
     "fshType": "Instance",
@@ -1606,6 +1982,14 @@
     "fshFile": "modul-mtb/Therapieplan.fsh",
     "startLine": 271,
     "endLine": 282
+  },
+  {
+    "outputFile": "Library-mii-exa-test-data-patient-13-register-katalog.json",
+    "fshName": "mii-exa-test-data-patient-13-register-katalog",
+    "fshType": "Instance",
+    "fshFile": "journey-seltene-symptom/Seltene.fsh",
+    "startLine": 247,
+    "endLine": 261
   },
   {
     "outputFile": "Library-mii-exa-test-data-seltene-register-katalog-1.json",
@@ -1686,6 +2070,22 @@
     "fshFile": "modul-medikation/List.fsh",
     "startLine": 309,
     "endLine": 321
+  },
+  {
+    "outputFile": "List-mii-exa-test-data-patient-11-list-entlassmedikation.json",
+    "fshName": "mii-exa-test-data-patient-11-list-entlassmedikation",
+    "fshType": "Instance",
+    "fshFile": "journey-forschung-prom/Medikation.fsh",
+    "startLine": 191,
+    "endLine": 208
+  },
+  {
+    "outputFile": "List-mii-exa-test-data-patient-12-list-stat-aufenthalt.json",
+    "fshName": "mii-exa-test-data-patient-12-list-stat-aufenthalt",
+    "fshType": "Instance",
+    "fshFile": "journey-sepsis-icu/Medikation.fsh",
+    "startLine": 215,
+    "endLine": 231
   },
   {
     "outputFile": "List-mii-exa-test-data-patient-2-list-aufnahmemedikation.json",
@@ -1864,6 +2264,14 @@
     "endLine": 162
   },
   {
+    "outputFile": "Medication-mii-exa-test-data-medication-agalsidase-beta.json",
+    "fshName": "mii-exa-test-data-medication-agalsidase-beta",
+    "fshType": "Instance",
+    "fshFile": "journey-seltene-symptom/LaborUndTherapie.fsh",
+    "startLine": 101,
+    "endLine": 113
+  },
+  {
     "outputFile": "Medication-mii-exa-test-data-medication-amoxicillin-clavulansaeure.json",
     "fshName": "mii-exa-test-data-medication-amoxicillin-clavulansaeure",
     "fshType": "Instance",
@@ -1928,6 +2336,14 @@
     "endLine": 37
   },
   {
+    "outputFile": "Medication-mii-exa-test-data-medication-empagliflozin.json",
+    "fshName": "mii-exa-test-data-medication-empagliflozin",
+    "fshType": "Instance",
+    "fshFile": "journey-forschung-prom/Medikation.fsh",
+    "startLine": 30,
+    "endLine": 42
+  },
+  {
     "outputFile": "Medication-mii-exa-test-data-medication-ethinylestradiol-levonorgestrel.json",
     "fshName": "mii-exa-test-data-medication-ethinylestradiol-levonorgestrel",
     "fshType": "Instance",
@@ -1968,6 +2384,14 @@
     "endLine": 216
   },
   {
+    "outputFile": "Medication-mii-exa-test-data-medication-meropenem.json",
+    "fshName": "mii-exa-test-data-medication-meropenem",
+    "fshType": "Instance",
+    "fshFile": "journey-sepsis-icu/Medikation.fsh",
+    "startLine": 37,
+    "endLine": 49
+  },
+  {
     "outputFile": "Medication-mii-exa-test-data-medication-metamizol.json",
     "fshName": "mii-exa-test-data-medication-metamizol",
     "fshType": "Instance",
@@ -1990,6 +2414,14 @@
     "fshFile": "modul-medikation/Medication.fsh",
     "startLine": 111,
     "endLine": 122
+  },
+  {
+    "outputFile": "Medication-mii-exa-test-data-medication-noradrenalin.json",
+    "fshName": "mii-exa-test-data-medication-noradrenalin",
+    "fshType": "Instance",
+    "fshFile": "journey-sepsis-icu/Medikation.fsh",
+    "startLine": 51,
+    "endLine": 63
   },
   {
     "outputFile": "Medication-mii-exa-test-data-medication-omeprazol.json",
@@ -2032,6 +2464,22 @@
     "endLine": 369
   },
   {
+    "outputFile": "Medication-mii-exa-test-data-medication-pembrolizumab.json",
+    "fshName": "mii-exa-test-data-medication-pembrolizumab",
+    "fshType": "Instance",
+    "fshFile": "journey-onkologie-mtb/MTB.fsh",
+    "startLine": 189,
+    "endLine": 201
+  },
+  {
+    "outputFile": "Medication-mii-exa-test-data-medication-piperacillin-tazobactam.json",
+    "fshName": "mii-exa-test-data-medication-piperacillin-tazobactam",
+    "fshType": "Instance",
+    "fshFile": "journey-sepsis-icu/Medikation.fsh",
+    "startLine": 19,
+    "endLine": 35
+  },
+  {
     "outputFile": "Medication-mii-exa-test-data-medication-propofol.json",
     "fshName": "mii-exa-test-data-medication-propofol",
     "fshType": "Instance",
@@ -2046,6 +2494,14 @@
     "fshFile": "modul-medikation/Medication.fsh",
     "startLine": 67,
     "endLine": 83
+  },
+  {
+    "outputFile": "Medication-mii-exa-test-data-medication-sacubitril-valsartan.json",
+    "fshName": "mii-exa-test-data-medication-sacubitril-valsartan",
+    "fshType": "Instance",
+    "fshFile": "journey-forschung-prom/Medikation.fsh",
+    "startLine": 12,
+    "endLine": 28
   },
   {
     "outputFile": "Medication-mii-exa-test-data-medication-salbutamol.json",
@@ -2134,6 +2590,38 @@
     "fshFile": "modul-medikation/MedicationAdministration.fsh",
     "startLine": 474,
     "endLine": 491
+  },
+  {
+    "outputFile": "MedicationAdministration-mii-exa-test-data-patient-12-medadmin-1.json",
+    "fshName": "mii-exa-test-data-patient-12-medadmin-1",
+    "fshType": "Instance",
+    "fshFile": "journey-sepsis-icu/Medikation.fsh",
+    "startLine": 137,
+    "endLine": 159
+  },
+  {
+    "outputFile": "MedicationAdministration-mii-exa-test-data-patient-12-medadmin-2.json",
+    "fshName": "mii-exa-test-data-patient-12-medadmin-2",
+    "fshType": "Instance",
+    "fshFile": "journey-sepsis-icu/Medikation.fsh",
+    "startLine": 164,
+    "endLine": 183
+  },
+  {
+    "outputFile": "MedicationAdministration-mii-exa-test-data-patient-13-medadmin-1.json",
+    "fshName": "mii-exa-test-data-patient-13-medadmin-1",
+    "fshType": "Instance",
+    "fshFile": "journey-seltene-symptom/LaborUndTherapie.fsh",
+    "startLine": 143,
+    "endLine": 163
+  },
+  {
+    "outputFile": "MedicationAdministration-mii-exa-test-data-patient-14-medadmin-1.json",
+    "fshName": "mii-exa-test-data-patient-14-medadmin-1",
+    "fshType": "Instance",
+    "fshFile": "journey-onkologie-mtb/MTB.fsh",
+    "startLine": 203,
+    "endLine": 223
   },
   {
     "outputFile": "MedicationAdministration-mii-exa-test-data-patient-2-medadmin-1.json",
@@ -2400,6 +2888,54 @@
     "endLine": 634
   },
   {
+    "outputFile": "MedicationRequest-mii-exa-test-data-patient-11-medrequest-1.json",
+    "fshName": "mii-exa-test-data-patient-11-medrequest-1",
+    "fshType": "Instance",
+    "fshFile": "journey-forschung-prom/Medikation.fsh",
+    "startLine": 47,
+    "endLine": 71
+  },
+  {
+    "outputFile": "MedicationRequest-mii-exa-test-data-patient-11-medrequest-2.json",
+    "fshName": "mii-exa-test-data-patient-11-medrequest-2",
+    "fshType": "Instance",
+    "fshFile": "journey-forschung-prom/Medikation.fsh",
+    "startLine": 73,
+    "endLine": 98
+  },
+  {
+    "outputFile": "MedicationRequest-mii-exa-test-data-patient-12-medrequest-1.json",
+    "fshName": "mii-exa-test-data-patient-12-medrequest-1",
+    "fshType": "Instance",
+    "fshFile": "journey-sepsis-icu/Medikation.fsh",
+    "startLine": 68,
+    "endLine": 96
+  },
+  {
+    "outputFile": "MedicationRequest-mii-exa-test-data-patient-12-medrequest-2.json",
+    "fshName": "mii-exa-test-data-patient-12-medrequest-2",
+    "fshType": "Instance",
+    "fshFile": "journey-sepsis-icu/Medikation.fsh",
+    "startLine": 101,
+    "endLine": 135
+  },
+  {
+    "outputFile": "MedicationRequest-mii-exa-test-data-patient-13-medrequest-1.json",
+    "fshName": "mii-exa-test-data-patient-13-medrequest-1",
+    "fshType": "Instance",
+    "fshFile": "journey-seltene-symptom/LaborUndTherapie.fsh",
+    "startLine": 115,
+    "endLine": 141
+  },
+  {
+    "outputFile": "MedicationRequest-mii-exa-test-data-patient-14-mtb-empfehlung-1.json",
+    "fshName": "mii-exa-test-data-patient-14-mtb-empfehlung-1",
+    "fshType": "Instance",
+    "fshFile": "journey-onkologie-mtb/MTB.fsh",
+    "startLine": 168,
+    "endLine": 184
+  },
+  {
     "outputFile": "MedicationRequest-mii-exa-test-data-patient-2-medrequest-1.json",
     "fshName": "mii-exa-test-data-patient-2-medrequest-1",
     "fshType": "Instance",
@@ -2654,6 +3190,38 @@
     "fshFile": "modul-medikation/MedicationStatement.fsh",
     "startLine": 716,
     "endLine": 739
+  },
+  {
+    "outputFile": "MedicationStatement-mii-exa-test-data-patient-11-medstatement-1.json",
+    "fshName": "mii-exa-test-data-patient-11-medstatement-1",
+    "fshType": "Instance",
+    "fshFile": "journey-forschung-prom/Medikation.fsh",
+    "startLine": 104,
+    "endLine": 129
+  },
+  {
+    "outputFile": "MedicationStatement-mii-exa-test-data-patient-11-medstatement-2.json",
+    "fshName": "mii-exa-test-data-patient-11-medstatement-2",
+    "fshType": "Instance",
+    "fshFile": "journey-forschung-prom/Medikation.fsh",
+    "startLine": 138,
+    "endLine": 162
+  },
+  {
+    "outputFile": "MedicationStatement-mii-exa-test-data-patient-11-medstatement-3.json",
+    "fshName": "mii-exa-test-data-patient-11-medstatement-3",
+    "fshType": "Instance",
+    "fshFile": "journey-forschung-prom/Medikation.fsh",
+    "startLine": 164,
+    "endLine": 189
+  },
+  {
+    "outputFile": "MedicationStatement-mii-exa-test-data-patient-12-medstatement-1.json",
+    "fshName": "mii-exa-test-data-patient-12-medstatement-1",
+    "fshType": "Instance",
+    "fshFile": "journey-sepsis-icu/Medikation.fsh",
+    "startLine": 188,
+    "endLine": 213
   },
   {
     "outputFile": "MedicationStatement-mii-exa-test-data-patient-2-medstatement-1.json",
@@ -7032,6 +7600,574 @@
     "endLine": 101
   },
   {
+    "outputFile": "Observation-mii-exa-test-data-patient-11-labobs-1.json",
+    "fshName": "mii-exa-test-data-patient-11-labobs-1",
+    "fshType": "Instance",
+    "fshFile": "journey-forschung-prom/Labor.fsh",
+    "startLine": 48,
+    "endLine": 61
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-11-labobs-2.json",
+    "fshName": "mii-exa-test-data-patient-11-labobs-2",
+    "fshType": "Instance",
+    "fshFile": "journey-forschung-prom/Labor.fsh",
+    "startLine": 64,
+    "endLine": 78
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-11-labobs-3.json",
+    "fshName": "mii-exa-test-data-patient-11-labobs-3",
+    "fshType": "Instance",
+    "fshFile": "journey-forschung-prom/Labor.fsh",
+    "startLine": 81,
+    "endLine": 94
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-11-pro-eq5d5l-index-t0.json",
+    "fshName": "mii-exa-test-data-patient-11-pro-eq5d5l-index-t0",
+    "fshType": "Instance",
+    "fshFile": "journey-forschung-prom/PRO.fsh",
+    "startLine": 67,
+    "endLine": 86
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-11-pro-eq5d5l-index-t3.json",
+    "fshName": "mii-exa-test-data-patient-11-pro-eq5d5l-index-t3",
+    "fshType": "Instance",
+    "fshFile": "journey-forschung-prom/PRO.fsh",
+    "startLine": 217,
+    "endLine": 235
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-11-pro-eq5d5l-index-t6.json",
+    "fshName": "mii-exa-test-data-patient-11-pro-eq5d5l-index-t6",
+    "fshType": "Instance",
+    "fshFile": "journey-forschung-prom/PRO.fsh",
+    "startLine": 309,
+    "endLine": 327
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-11-pro-eq5d5l-profil-t0.json",
+    "fshName": "mii-exa-test-data-patient-11-pro-eq5d5l-profil-t0",
+    "fshType": "Instance",
+    "fshFile": "journey-forschung-prom/PRO.fsh",
+    "startLine": 109,
+    "endLine": 126
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-11-pro-eq5d5l-profil-t3.json",
+    "fshName": "mii-exa-test-data-patient-11-pro-eq5d5l-profil-t3",
+    "fshType": "Instance",
+    "fshFile": "journey-forschung-prom/PRO.fsh",
+    "startLine": 257,
+    "endLine": 274
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-11-pro-eq5d5l-profil-t6.json",
+    "fshName": "mii-exa-test-data-patient-11-pro-eq5d5l-profil-t6",
+    "fshType": "Instance",
+    "fshFile": "journey-forschung-prom/PRO.fsh",
+    "startLine": 349,
+    "endLine": 366
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-11-pro-eq5d5l-vas-t0.json",
+    "fshName": "mii-exa-test-data-patient-11-pro-eq5d5l-vas-t0",
+    "fshType": "Instance",
+    "fshFile": "journey-forschung-prom/PRO.fsh",
+    "startLine": 88,
+    "endLine": 107
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-11-pro-eq5d5l-vas-t3.json",
+    "fshName": "mii-exa-test-data-patient-11-pro-eq5d5l-vas-t3",
+    "fshType": "Instance",
+    "fshFile": "journey-forschung-prom/PRO.fsh",
+    "startLine": 237,
+    "endLine": 255
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-11-pro-eq5d5l-vas-t6.json",
+    "fshName": "mii-exa-test-data-patient-11-pro-eq5d5l-vas-t6",
+    "fshType": "Instance",
+    "fshFile": "journey-forschung-prom/PRO.fsh",
+    "startLine": 329,
+    "endLine": 347
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-11-pro-phq9-score-t0.json",
+    "fshName": "mii-exa-test-data-patient-11-pro-phq9-score-t0",
+    "fshType": "Instance",
+    "fshFile": "journey-forschung-prom/PRO.fsh",
+    "startLine": 164,
+    "endLine": 182
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-11-pro-phq9-score-t6.json",
+    "fshName": "mii-exa-test-data-patient-11-pro-phq9-score-t6",
+    "fshType": "Instance",
+    "fshFile": "journey-forschung-prom/PRO.fsh",
+    "startLine": 404,
+    "endLine": 422
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-11-sdd-ausbildung-1.json",
+    "fshName": "mii-exa-test-data-patient-11-sdd-ausbildung-1",
+    "fshType": "Instance",
+    "fshFile": "journey-forschung-prom/Soziodemographie.fsh",
+    "startLine": 89,
+    "endLine": 97
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-11-sdd-beschaeftigung-1.json",
+    "fshName": "mii-exa-test-data-patient-11-sdd-beschaeftigung-1",
+    "fshType": "Instance",
+    "fshFile": "journey-forschung-prom/Soziodemographie.fsh",
+    "startLine": 99,
+    "endLine": 107
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-11-sdd-einkommen-1.json",
+    "fshName": "mii-exa-test-data-patient-11-sdd-einkommen-1",
+    "fshType": "Instance",
+    "fshFile": "journey-forschung-prom/Soziodemographie.fsh",
+    "startLine": 119,
+    "endLine": 126
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-11-sdd-erhebung-1.json",
+    "fshName": "mii-exa-test-data-patient-11-sdd-erhebung-1",
+    "fshType": "Instance",
+    "fshFile": "journey-forschung-prom/Soziodemographie.fsh",
+    "startLine": 25,
+    "endLine": 43
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-11-sdd-haushaltsgroesse-1.json",
+    "fshName": "mii-exa-test-data-patient-11-sdd-haushaltsgroesse-1",
+    "fshType": "Instance",
+    "fshFile": "journey-forschung-prom/Soziodemographie.fsh",
+    "startLine": 58,
+    "endLine": 65
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-11-sdd-partnerschaft-1.json",
+    "fshName": "mii-exa-test-data-patient-11-sdd-partnerschaft-1",
+    "fshType": "Instance",
+    "fshFile": "journey-forschung-prom/Soziodemographie.fsh",
+    "startLine": 48,
+    "endLine": 56
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-11-sdd-schulabschluss-1.json",
+    "fshName": "mii-exa-test-data-patient-11-sdd-schulabschluss-1",
+    "fshType": "Instance",
+    "fshFile": "journey-forschung-prom/Soziodemographie.fsh",
+    "startLine": 70,
+    "endLine": 78
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-11-sdd-schuljahre-1.json",
+    "fshName": "mii-exa-test-data-patient-11-sdd-schuljahre-1",
+    "fshType": "Instance",
+    "fshFile": "journey-forschung-prom/Soziodemographie.fsh",
+    "startLine": 80,
+    "endLine": 87
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-11-sdd-stellung-1.json",
+    "fshName": "mii-exa-test-data-patient-11-sdd-stellung-1",
+    "fshType": "Instance",
+    "fshFile": "journey-forschung-prom/Soziodemographie.fsh",
+    "startLine": 109,
+    "endLine": 117
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-12-icu-bilanz-tages-1.json",
+    "fshName": "mii-exa-test-data-patient-12-icu-bilanz-tages-1",
+    "fshType": "Instance",
+    "fshFile": "journey-sepsis-icu/ICU.fsh",
+    "startLine": 271,
+    "endLine": 285
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-12-icu-bilanz-urin-1.json",
+    "fshName": "mii-exa-test-data-patient-12-icu-bilanz-urin-1",
+    "fshType": "Instance",
+    "fshFile": "journey-sepsis-icu/ICU.fsh",
+    "startLine": 254,
+    "endLine": 269
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-12-icu-gcs-1.json",
+    "fshName": "mii-exa-test-data-patient-12-icu-gcs-1",
+    "fshType": "Instance",
+    "fshFile": "journey-sepsis-icu/ICU.fsh",
+    "startLine": 215,
+    "endLine": 235
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-12-icu-rass-1.json",
+    "fshName": "mii-exa-test-data-patient-12-icu-rass-1",
+    "fshType": "Instance",
+    "fshFile": "journey-sepsis-icu/ICU.fsh",
+    "startLine": 237,
+    "endLine": 249
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-12-icu-sofa-t1.json",
+    "fshName": "mii-exa-test-data-patient-12-icu-sofa-t1",
+    "fshType": "Instance",
+    "fshFile": "journey-sepsis-icu/ICU.fsh",
+    "startLine": 128,
+    "endLine": 154
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-12-icu-sofa-t5.json",
+    "fshName": "mii-exa-test-data-patient-12-icu-sofa-t5",
+    "fshType": "Instance",
+    "fshFile": "journey-sepsis-icu/ICU.fsh",
+    "startLine": 156,
+    "endLine": 182
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-12-icu-sofa-t8.json",
+    "fshName": "mii-exa-test-data-patient-12-icu-sofa-t8",
+    "fshType": "Instance",
+    "fshFile": "journey-sepsis-icu/ICU.fsh",
+    "startLine": 184,
+    "endLine": 210
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-12-icu-vent-fio2-1.json",
+    "fshName": "mii-exa-test-data-patient-12-icu-vent-fio2-1",
+    "fshType": "Instance",
+    "fshFile": "journey-sepsis-icu/ICU.fsh",
+    "startLine": 92,
+    "endLine": 105
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-12-icu-vent-peep-1.json",
+    "fshName": "mii-exa-test-data-patient-12-icu-vent-peep-1",
+    "fshType": "Instance",
+    "fshFile": "journey-sepsis-icu/ICU.fsh",
+    "startLine": 75,
+    "endLine": 90
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-12-icu-vent-vt-1.json",
+    "fshName": "mii-exa-test-data-patient-12-icu-vent-vt-1",
+    "fshType": "Instance",
+    "fshFile": "journey-sepsis-icu/ICU.fsh",
+    "startLine": 107,
+    "endLine": 123
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-12-labobs-1.json",
+    "fshName": "mii-exa-test-data-patient-12-labobs-1",
+    "fshType": "Instance",
+    "fshFile": "journey-sepsis-icu/Labor.fsh",
+    "startLine": 48,
+    "endLine": 62
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-12-labobs-2.json",
+    "fshName": "mii-exa-test-data-patient-12-labobs-2",
+    "fshType": "Instance",
+    "fshFile": "journey-sepsis-icu/Labor.fsh",
+    "startLine": 64,
+    "endLine": 77
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-12-labobs-3.json",
+    "fshName": "mii-exa-test-data-patient-12-labobs-3",
+    "fshType": "Instance",
+    "fshFile": "journey-sepsis-icu/Labor.fsh",
+    "startLine": 79,
+    "endLine": 91
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-12-labobs-4.json",
+    "fshName": "mii-exa-test-data-patient-12-labobs-4",
+    "fshType": "Instance",
+    "fshFile": "journey-sepsis-icu/Labor.fsh",
+    "startLine": 93,
+    "endLine": 107
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-12-mibi-ast-ceftazidim.json",
+    "fshName": "mii-exa-test-data-patient-12-mibi-ast-ceftazidim",
+    "fshType": "Instance",
+    "fshFile": "journey-sepsis-icu/Mikrobiologie.fsh",
+    "startLine": 191,
+    "endLine": 201
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-12-mibi-ast-cipro.json",
+    "fshName": "mii-exa-test-data-patient-12-mibi-ast-cipro",
+    "fshType": "Instance",
+    "fshFile": "journey-sepsis-icu/Mikrobiologie.fsh",
+    "startLine": 203,
+    "endLine": 213
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-12-mibi-ast-meropenem.json",
+    "fshName": "mii-exa-test-data-patient-12-mibi-ast-meropenem",
+    "fshType": "Instance",
+    "fshFile": "journey-sepsis-icu/Mikrobiologie.fsh",
+    "startLine": 215,
+    "endLine": 231
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-12-mibi-ast-piptazo.json",
+    "fshName": "mii-exa-test-data-patient-12-mibi-ast-piptazo",
+    "fshType": "Instance",
+    "fshFile": "journey-sepsis-icu/Mikrobiologie.fsh",
+    "startLine": 177,
+    "endLine": 189
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-12-mibi-erreger-1.json",
+    "fshName": "mii-exa-test-data-patient-12-mibi-erreger-1",
+    "fshType": "Instance",
+    "fshFile": "journey-sepsis-icu/Mikrobiologie.fsh",
+    "startLine": 130,
+    "endLine": 152
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-12-mibi-esbl-1.json",
+    "fshName": "mii-exa-test-data-patient-12-mibi-esbl-1",
+    "fshType": "Instance",
+    "fshFile": "journey-sepsis-icu/Mikrobiologie.fsh",
+    "startLine": 259,
+    "endLine": 277
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-12-mibi-kultur-1.json",
+    "fshName": "mii-exa-test-data-patient-12-mibi-kultur-1",
+    "fshType": "Instance",
+    "fshFile": "journey-sepsis-icu/Mikrobiologie.fsh",
+    "startLine": 89,
+    "endLine": 109
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-12-mibi-mikroskopie-1.json",
+    "fshName": "mii-exa-test-data-patient-12-mibi-mikroskopie-1",
+    "fshType": "Instance",
+    "fshFile": "journey-sepsis-icu/Mikrobiologie.fsh",
+    "startLine": 111,
+    "endLine": 128
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-12-mibi-mrgn-1.json",
+    "fshName": "mii-exa-test-data-patient-12-mibi-mrgn-1",
+    "fshType": "Instance",
+    "fshFile": "journey-sepsis-icu/Mikrobiologie.fsh",
+    "startLine": 236,
+    "endLine": 257
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-13-hpo-akroparaesthesie.json",
+    "fshName": "mii-exa-test-data-patient-13-hpo-akroparaesthesie",
+    "fshType": "Instance",
+    "fshFile": "journey-seltene-symptom/Seltene.fsh",
+    "startLine": 24,
+    "endLine": 33
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-13-hpo-angiokeratom.json",
+    "fshName": "mii-exa-test-data-patient-13-hpo-angiokeratom",
+    "fshType": "Instance",
+    "fshFile": "journey-seltene-symptom/Seltene.fsh",
+    "startLine": 72,
+    "endLine": 81
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-13-hpo-cornea.json",
+    "fshName": "mii-exa-test-data-patient-13-hpo-cornea",
+    "fshType": "Instance",
+    "fshFile": "journey-seltene-symptom/Seltene.fsh",
+    "startLine": 59,
+    "endLine": 70
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-13-hpo-hypohidrose.json",
+    "fshName": "mii-exa-test-data-patient-13-hpo-hypohidrose",
+    "fshType": "Instance",
+    "fshFile": "journey-seltene-symptom/Seltene.fsh",
+    "startLine": 35,
+    "endLine": 43
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-13-hpo-proteinurie.json",
+    "fshName": "mii-exa-test-data-patient-13-hpo-proteinurie",
+    "fshType": "Instance",
+    "fshFile": "journey-seltene-symptom/Seltene.fsh",
+    "startLine": 45,
+    "endLine": 57
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-13-labobs-agalsidase.json",
+    "fshName": "mii-exa-test-data-patient-13-labobs-agalsidase",
+    "fshType": "Instance",
+    "fshFile": "journey-seltene-symptom/LaborUndTherapie.fsh",
+    "startLine": 82,
+    "endLine": 96
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-13-labobs-kreatinin.json",
+    "fshName": "mii-exa-test-data-patient-13-labobs-kreatinin",
+    "fshType": "Instance",
+    "fshFile": "journey-seltene-symptom/LaborUndTherapie.fsh",
+    "startLine": 65,
+    "endLine": 80
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-13-labobs-protein.json",
+    "fshName": "mii-exa-test-data-patient-13-labobs-protein",
+    "fshType": "Instance",
+    "fshFile": "journey-seltene-symptom/LaborUndTherapie.fsh",
+    "startLine": 50,
+    "endLine": 63
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-13-molgen-variante.json",
+    "fshName": "mii-exa-test-data-patient-13-molgen-variante",
+    "fshType": "Instance",
+    "fshFile": "journey-seltene-symptom/Seltene.fsh",
+    "startLine": 295,
+    "endLine": 311
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-13-symptom-obs-hitzeintoleranz.json",
+    "fshName": "mii-exa-test-data-patient-13-symptom-obs-hitzeintoleranz",
+    "fshType": "Instance",
+    "fshFile": "journey-seltene-symptom/Symptom.fsh",
+    "startLine": 116,
+    "endLine": 137
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-13-symptom-obs-schmerz.json",
+    "fshName": "mii-exa-test-data-patient-13-symptom-obs-schmerz",
+    "fshType": "Instance",
+    "fshFile": "journey-seltene-symptom/Symptom.fsh",
+    "startLine": 94,
+    "endLine": 114
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-14-mtb-implikation-1.json",
+    "fshName": "mii-exa-test-data-patient-14-mtb-implikation-1",
+    "fshType": "Instance",
+    "fshFile": "journey-onkologie-mtb/MTB.fsh",
+    "startLine": 119,
+    "endLine": 142
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-14-mtb-msi-1.json",
+    "fshName": "mii-exa-test-data-patient-14-mtb-msi-1",
+    "fshType": "Instance",
+    "fshFile": "journey-onkologie-mtb/MTB.fsh",
+    "startLine": 83,
+    "endLine": 98
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-14-mtb-tmb-1.json",
+    "fshName": "mii-exa-test-data-patient-14-mtb-tmb-1",
+    "fshType": "Instance",
+    "fshFile": "journey-onkologie-mtb/MTB.fsh",
+    "startLine": 100,
+    "endLine": 114
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-14-mtb-variante-braf.json",
+    "fshName": "mii-exa-test-data-patient-14-mtb-variante-braf",
+    "fshType": "Instance",
+    "fshFile": "journey-onkologie-mtb/MTB.fsh",
+    "startLine": 66,
+    "endLine": 81
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-14-onko-ecog-1.json",
+    "fshName": "mii-exa-test-data-patient-14-onko-ecog-1",
+    "fshType": "Instance",
+    "fshFile": "journey-onkologie-mtb/Onkologie.fsh",
+    "startLine": 202,
+    "endLine": 216
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-14-onko-fernmetastasen-1.json",
+    "fshName": "mii-exa-test-data-patient-14-onko-fernmetastasen-1",
+    "fshType": "Instance",
+    "fshFile": "journey-onkologie-mtb/Onkologie.fsh",
+    "startLine": 187,
+    "endLine": 200
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-14-onko-grading-1.json",
+    "fshName": "mii-exa-test-data-patient-14-onko-grading-1",
+    "fshType": "Instance",
+    "fshFile": "journey-onkologie-mtb/Onkologie.fsh",
+    "startLine": 77,
+    "endLine": 89
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-14-onko-histologie-1.json",
+    "fshName": "mii-exa-test-data-patient-14-onko-histologie-1",
+    "fshType": "Instance",
+    "fshFile": "journey-onkologie-mtb/Onkologie.fsh",
+    "startLine": 62,
+    "endLine": 75
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-14-onko-lk-befallen.json",
+    "fshName": "mii-exa-test-data-patient-14-onko-lk-befallen",
+    "fshType": "Instance",
+    "fshFile": "journey-onkologie-mtb/Onkologie.fsh",
+    "startLine": 164,
+    "endLine": 182
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-14-onko-lk-untersucht.json",
+    "fshName": "mii-exa-test-data-patient-14-onko-lk-untersucht",
+    "fshType": "Instance",
+    "fshFile": "journey-onkologie-mtb/Onkologie.fsh",
+    "startLine": 144,
+    "endLine": 162
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-14-onko-tnm-m.json",
+    "fshName": "mii-exa-test-data-patient-14-onko-tnm-m",
+    "fshType": "Instance",
+    "fshFile": "journey-onkologie-mtb/Onkologie.fsh",
+    "startLine": 128,
+    "endLine": 142
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-14-onko-tnm-n.json",
+    "fshName": "mii-exa-test-data-patient-14-onko-tnm-n",
+    "fshType": "Instance",
+    "fshFile": "journey-onkologie-mtb/Onkologie.fsh",
+    "startLine": 110,
+    "endLine": 126
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-14-onko-tnm-t.json",
+    "fshName": "mii-exa-test-data-patient-14-onko-tnm-t",
+    "fshType": "Instance",
+    "fshFile": "journey-onkologie-mtb/Onkologie.fsh",
+    "startLine": 94,
+    "endLine": 108
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patient-14-onko-verlauf-1.json",
+    "fshName": "mii-exa-test-data-patient-14-onko-verlauf-1",
+    "fshType": "Instance",
+    "fshFile": "journey-onkologie-mtb/Onkologie.fsh",
+    "startLine": 276,
+    "endLine": 294
+  },
+  {
     "outputFile": "Observation-mii-exa-test-data-patient-2-labobs-1.json",
     "fshName": "mii-exa-test-data-patient-2-labobs-1",
     "fshType": "Instance",
@@ -7989,7 +9125,31 @@
     "fshType": "Instance",
     "fshFile": "modul-person/Patient.fsh",
     "startLine": 391,
-    "endLine": 405
+    "endLine": 430
+  },
+  {
+    "outputFile": "Patient-mii-exa-test-data-patient-12.json",
+    "fshName": "mii-exa-test-data-patient-12",
+    "fshType": "Instance",
+    "fshFile": "journey-sepsis-icu/Basis.fsh",
+    "startLine": 39,
+    "endLine": 69
+  },
+  {
+    "outputFile": "Patient-mii-exa-test-data-patient-13.json",
+    "fshName": "mii-exa-test-data-patient-13",
+    "fshType": "Instance",
+    "fshFile": "journey-seltene-symptom/Basis.fsh",
+    "startLine": 33,
+    "endLine": 63
+  },
+  {
+    "outputFile": "Patient-mii-exa-test-data-patient-14.json",
+    "fshName": "mii-exa-test-data-patient-14",
+    "fshType": "Instance",
+    "fshFile": "journey-onkologie-mtb/Basis.fsh",
+    "startLine": 33,
+    "endLine": 63
   },
   {
     "outputFile": "Patient-mii-exa-test-data-patient-2.json",
@@ -8392,6 +9552,46 @@
     "endLine": 348
   },
   {
+    "outputFile": "Procedure-mii-exa-test-data-patient-11-prozedur-1.json",
+    "fshName": "mii-exa-test-data-patient-11-prozedur-1",
+    "fshType": "Instance",
+    "fshFile": "journey-forschung-prom/Basis.fsh",
+    "startLine": 129,
+    "endLine": 142
+  },
+  {
+    "outputFile": "Procedure-mii-exa-test-data-patient-12-icu-beatmung-1.json",
+    "fshName": "mii-exa-test-data-patient-12-icu-beatmung-1",
+    "fshType": "Instance",
+    "fshFile": "journey-sepsis-icu/ICU.fsh",
+    "startLine": 48,
+    "endLine": 70
+  },
+  {
+    "outputFile": "Procedure-mii-exa-test-data-patient-12-prozedur-1.json",
+    "fshName": "mii-exa-test-data-patient-12-prozedur-1",
+    "fshType": "Instance",
+    "fshFile": "journey-sepsis-icu/Basis.fsh",
+    "startLine": 146,
+    "endLine": 159
+  },
+  {
+    "outputFile": "Procedure-mii-exa-test-data-patient-14-onko-systemtherapie-1.json",
+    "fshName": "mii-exa-test-data-patient-14-onko-systemtherapie-1",
+    "fshType": "Instance",
+    "fshFile": "journey-onkologie-mtb/Onkologie.fsh",
+    "startLine": 244,
+    "endLine": 271
+  },
+  {
+    "outputFile": "Procedure-mii-exa-test-data-patient-14-prozedur-1.json",
+    "fshName": "mii-exa-test-data-patient-14-prozedur-1",
+    "fshType": "Instance",
+    "fshFile": "journey-onkologie-mtb/Basis.fsh",
+    "startLine": 107,
+    "endLine": 121
+  },
+  {
     "outputFile": "Procedure-mii-exa-test-data-patient-2-prozedur-1.json",
     "fshName": "mii-exa-test-data-patient-2-prozedur-1",
     "fshType": "Instance",
@@ -8648,6 +9848,46 @@
     "endLine": 230
   },
   {
+    "outputFile": "QuestionnaireResponse-mii-exa-test-data-patient-11-pro-eq5d5l-qr-t0.json",
+    "fshName": "mii-exa-test-data-patient-11-pro-eq5d5l-qr-t0",
+    "fshType": "Instance",
+    "fshFile": "journey-forschung-prom/PRO.fsh",
+    "startLine": 38,
+    "endLine": 65
+  },
+  {
+    "outputFile": "QuestionnaireResponse-mii-exa-test-data-patient-11-pro-eq5d5l-qr-t3.json",
+    "fshName": "mii-exa-test-data-patient-11-pro-eq5d5l-qr-t3",
+    "fshType": "Instance",
+    "fshFile": "journey-forschung-prom/PRO.fsh",
+    "startLine": 188,
+    "endLine": 215
+  },
+  {
+    "outputFile": "QuestionnaireResponse-mii-exa-test-data-patient-11-pro-eq5d5l-qr-t6.json",
+    "fshName": "mii-exa-test-data-patient-11-pro-eq5d5l-qr-t6",
+    "fshType": "Instance",
+    "fshFile": "journey-forschung-prom/PRO.fsh",
+    "startLine": 280,
+    "endLine": 307
+  },
+  {
+    "outputFile": "QuestionnaireResponse-mii-exa-test-data-patient-11-pro-phq9-qr-t0.json",
+    "fshName": "mii-exa-test-data-patient-11-pro-phq9-qr-t0",
+    "fshType": "Instance",
+    "fshFile": "journey-forschung-prom/PRO.fsh",
+    "startLine": 128,
+    "endLine": 162
+  },
+  {
+    "outputFile": "QuestionnaireResponse-mii-exa-test-data-patient-11-pro-phq9-qr-t6.json",
+    "fshName": "mii-exa-test-data-patient-11-pro-phq9-qr-t6",
+    "fshType": "Instance",
+    "fshFile": "journey-forschung-prom/PRO.fsh",
+    "startLine": 368,
+    "endLine": 402
+  },
+  {
     "outputFile": "QuestionnaireResponse-mii-exa-test-data-symptom-questionnaireresponse-1.json",
     "fshName": "mii-exa-test-data-symptom-questionnaireresponse-1",
     "fshType": "Instance",
@@ -8704,6 +9944,22 @@
     "endLine": 268
   },
   {
+    "outputFile": "ResearchStudy-mii-exa-test-data-patient-11-studie-1.json",
+    "fshName": "mii-exa-test-data-patient-11-studie-1",
+    "fshType": "Instance",
+    "fshFile": "journey-forschung-prom/Studien.fsh",
+    "startLine": 9,
+    "endLine": 40
+  },
+  {
+    "outputFile": "ResearchStudy-mii-exa-test-data-patient-13-register-study.json",
+    "fshName": "mii-exa-test-data-patient-13-register-study",
+    "fshType": "Instance",
+    "fshFile": "journey-seltene-symptom/Seltene.fsh",
+    "startLine": 263,
+    "endLine": 273
+  },
+  {
     "outputFile": "ResearchStudy-mii-exa-test-data-seltene-register-study-1.json",
     "fshName": "mii-exa-test-data-seltene-register-study-1",
     "fshType": "Instance",
@@ -8718,6 +9974,22 @@
     "fshFile": "modul-studien/ResearchStudy.fsh",
     "startLine": 10,
     "endLine": 51
+  },
+  {
+    "outputFile": "ResearchSubject-mii-exa-test-data-patient-11-proband-1.json",
+    "fshName": "mii-exa-test-data-patient-11-proband-1",
+    "fshType": "Instance",
+    "fshFile": "journey-forschung-prom/Studien.fsh",
+    "startLine": 134,
+    "endLine": 148
+  },
+  {
+    "outputFile": "ResearchSubject-mii-exa-test-data-patient-13-registerteilnahme.json",
+    "fshName": "mii-exa-test-data-patient-13-registerteilnahme",
+    "fshType": "Instance",
+    "fshFile": "journey-seltene-symptom/Seltene.fsh",
+    "startLine": 232,
+    "endLine": 245
   },
   {
     "outputFile": "ResearchSubject-mii-exa-test-data-patient-3-seltene-registerteilnahme-1.json",
@@ -8830,6 +10102,46 @@
     "fshFile": "modul-labor/ServiceRequest.fsh",
     "startLine": 220,
     "endLine": 239
+  },
+  {
+    "outputFile": "ServiceRequest-mii-exa-test-data-patient-11-labrequest-1.json",
+    "fshName": "mii-exa-test-data-patient-11-labrequest-1",
+    "fshType": "Instance",
+    "fshFile": "journey-forschung-prom/Labor.fsh",
+    "startLine": 8,
+    "endLine": 28
+  },
+  {
+    "outputFile": "ServiceRequest-mii-exa-test-data-patient-11-studien-anfrage-1.json",
+    "fshName": "mii-exa-test-data-patient-11-studien-anfrage-1",
+    "fshType": "Instance",
+    "fshFile": "journey-forschung-prom/Studien.fsh",
+    "startLine": 95,
+    "endLine": 112
+  },
+  {
+    "outputFile": "ServiceRequest-mii-exa-test-data-patient-12-labrequest-1.json",
+    "fshName": "mii-exa-test-data-patient-12-labrequest-1",
+    "fshType": "Instance",
+    "fshFile": "journey-sepsis-icu/Labor.fsh",
+    "startLine": 7,
+    "endLine": 28
+  },
+  {
+    "outputFile": "ServiceRequest-mii-exa-test-data-patient-12-mibi-anforderung-1.json",
+    "fshName": "mii-exa-test-data-patient-12-mibi-anforderung-1",
+    "fshType": "Instance",
+    "fshFile": "journey-sepsis-icu/Mikrobiologie.fsh",
+    "startLine": 30,
+    "endLine": 46
+  },
+  {
+    "outputFile": "ServiceRequest-mii-exa-test-data-patient-13-labrequest-1.json",
+    "fshName": "mii-exa-test-data-patient-13-labrequest-1",
+    "fshType": "Instance",
+    "fshFile": "journey-seltene-symptom/LaborUndTherapie.fsh",
+    "startLine": 11,
+    "endLine": 31
   },
   {
     "outputFile": "ServiceRequest-mii-exa-test-data-patient-2-labrequest-1.json",
@@ -9110,6 +10422,30 @@
     "fshFile": "modul-biobank/Specimen.fsh",
     "startLine": 516,
     "endLine": 537
+  },
+  {
+    "outputFile": "Specimen-mii-exa-test-data-patient-12-mibi-specimen-bk.json",
+    "fshName": "mii-exa-test-data-patient-12-mibi-specimen-bk",
+    "fshType": "Instance",
+    "fshFile": "journey-sepsis-icu/Mikrobiologie.fsh",
+    "startLine": 48,
+    "endLine": 63
+  },
+  {
+    "outputFile": "Specimen-mii-exa-test-data-patient-12-mibi-specimen-ts.json",
+    "fshName": "mii-exa-test-data-patient-12-mibi-specimen-ts",
+    "fshType": "Instance",
+    "fshFile": "journey-sepsis-icu/Mikrobiologie.fsh",
+    "startLine": 65,
+    "endLine": 84
+  },
+  {
+    "outputFile": "Specimen-mii-exa-test-data-patient-14-onko-specimen-1.json",
+    "fshName": "mii-exa-test-data-patient-14-onko-specimen-1",
+    "fshType": "Instance",
+    "fshFile": "journey-onkologie-mtb/Onkologie.fsh",
+    "startLine": 35,
+    "endLine": 47
   },
   {
     "outputFile": "Specimen-mii-exa-test-data-patient-2-specimen-1.json",

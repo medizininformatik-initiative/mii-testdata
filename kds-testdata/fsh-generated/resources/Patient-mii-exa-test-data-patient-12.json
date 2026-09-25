@@ -1,0 +1,113 @@
+{
+  "resourceType": "Patient",
+  "id": "mii-exa-test-data-patient-12",
+  "meta": {
+    "security": [
+      {
+        "code": "HTEST",
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "display": "test health data"
+      }
+    ],
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient",
+      "http://fhir.de/ConsentManagement/StructureDefinition/Patient"
+    ],
+    "source": "https://www.charite.de/fhir/kds-testdata"
+  },
+  "identifier": [
+    {
+      "assigner": {
+        "identifier": {
+          "system": "http://fhir.de/sid/arge-ik/iknr",
+          "use": "official",
+          "value": "109519005"
+        }
+      },
+      "system": "http://fhir.de/sid/gkv/kvid-10",
+      "type": {
+        "coding": [
+          {
+            "system": "http://fhir.de/CodeSystem/identifier-type-de-basis",
+            "code": "KVZ10"
+          }
+        ]
+      },
+      "use": "official",
+      "value": "G345678901"
+    },
+    {
+      "assigner": {
+        "identifier": {
+          "type": {
+            "coding": [
+              {
+                "code": "XX",
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0203"
+              }
+            ]
+          },
+          "system": "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier",
+          "value": "Charité"
+        }
+      },
+      "type": {
+        "coding": [
+          {
+            "code": "MR",
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203"
+          }
+        ]
+      },
+      "system": "https://www.charite.de/fhir/sid/patientenidentifikation",
+      "value": "733815094"
+    }
+  ],
+  "name": [
+    {
+      "given": [
+        "Gerhard"
+      ],
+      "use": "official",
+      "family": "Woltmann"
+    }
+  ],
+  "address": [
+    {
+      "line": [
+        "Gubener Straße 31"
+      ],
+      "_line": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName",
+              "valueString": "Gubener Straße"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber",
+              "valueString": "31"
+            }
+          ]
+        }
+      ],
+      "type": "both",
+      "city": "Berlin",
+      "_city": {
+        "extension": [
+          {
+            "url": "http://fhir.de/StructureDefinition/destatis/ags",
+            "valueCoding": {
+              "code": "11000000",
+              "system": "http://fhir.de/sid/destatis/ags"
+            }
+          }
+        ]
+      },
+      "postalCode": "10243",
+      "country": "DE"
+    }
+  ],
+  "gender": "male",
+  "birthDate": "1953-04-22"
+}

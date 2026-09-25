@@ -1,0 +1,113 @@
+{
+  "resourceType": "QuestionnaireResponse",
+  "id": "mii-exa-test-data-patient-11-pro-eq5d5l-qr-t6",
+  "meta": {
+    "security": [
+      {
+        "code": "HTEST",
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "display": "test health data"
+      }
+    ],
+    "source": "https://www.charite.de/fhir/kds-testdata",
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"
+    ]
+  },
+  "item": [
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "2",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eq-5d-value-set",
+            "display": "Ich habe leichte Probleme herumzugehen"
+          }
+        }
+      ],
+      "linkId": "euroqol-eq5d5l-q01-MO"
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "2",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eq-5d-value-set",
+            "display": "Ich habe leichte Probleme, mich selbst zu waschen oder mich anzuziehen"
+          }
+        }
+      ],
+      "linkId": "euroqol-eq5d5l-q02-SC"
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "1",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eq-5d-value-set",
+            "display": "Ich habe keine Probleme, meinen alltäglichen Tätigkeiten nachzukommen"
+          }
+        }
+      ],
+      "linkId": "euroqol-eq5d5l-q03-UA"
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "2",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eq-5d-value-set",
+            "display": "Ich habe leichte Schmerzen oder Beschwerden"
+          }
+        }
+      ],
+      "linkId": "euroqol-eq5d5l-q04-PD"
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "1",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eq-5d-value-set",
+            "display": "Ich bin nicht ängstlich oder deprimiert"
+          }
+        }
+      ],
+      "linkId": "euroqol-eq5d5l-q05-AD"
+    },
+    {
+      "answer": [
+        {
+          "valueInteger": 22121
+        }
+      ],
+      "linkId": "euroqol-eq5d5l-score-profile"
+    },
+    {
+      "answer": [
+        {
+          "valueDecimal": 0.823
+        }
+      ],
+      "linkId": "euroqol-eq5d5l-score-index"
+    },
+    {
+      "answer": [
+        {
+          "valueInteger": 70
+        }
+      ],
+      "linkId": "euroqol-eq5d5l-vas"
+    }
+  ],
+  "status": "completed",
+  "language": "de",
+  "subject": {
+    "reference": "Patient/mii-exa-test-data-patient-11"
+  },
+  "encounter": {
+    "reference": "Encounter/mii-exa-test-data-patient-11-encounter-4"
+  },
+  "authored": "2025-08-11T09:10:00+02:00",
+  "questionnaire": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-euroqol-eq5d5l-collectable"
+}

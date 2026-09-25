@@ -903,3 +903,261 @@ Description: "Bundle: Patient-11"
 
 // Basis-Module
 * insert AddBundleEntry(mii-exa-test-data-patient-11, Patient)
+* insert AddBundleEntry(mii-exa-test-data-patient-11-encounter-1, Encounter)
+* insert AddBundleEntry(mii-exa-test-data-patient-11-encounter-2, Encounter)
+* insert AddBundleEntry(mii-exa-test-data-patient-11-encounter-3, Encounter)
+* insert AddBundleEntry(mii-exa-test-data-patient-11-encounter-4, Encounter)
+* insert AddBundleEntry(mii-exa-test-data-patient-11-diagnose-1, Condition)
+* insert AddBundleEntry(mii-exa-test-data-patient-11-diagnose-2, Condition)
+* insert AddBundleEntry(mii-exa-test-data-patient-11-prozedur-1, Procedure)
+* insert AddBundleEntry(mii-exa-test-data-patient-11-consent-1, Consent)
+// Labor
+* insert AddBundleEntry(mii-exa-test-data-patient-11-labrequest-1, ServiceRequest)
+* insert AddBundleEntry(mii-exa-test-data-patient-11-labreport-1, DiagnosticReport)
+* insert AddBundleEntry(mii-exa-test-data-patient-11-labobs-1, Observation)
+* insert AddBundleEntry(mii-exa-test-data-patient-11-labobs-2, Observation)
+* insert AddBundleEntry(mii-exa-test-data-patient-11-labobs-3, Observation)
+// Medikation
+* insert AddBundleEntry(mii-exa-test-data-medication-sacubitril-valsartan, Medication)
+* insert AddBundleEntry(mii-exa-test-data-medication-empagliflozin, Medication)
+* insert AddBundleEntry(mii-exa-test-data-patient-11-medrequest-1, MedicationRequest)
+* insert AddBundleEntry(mii-exa-test-data-patient-11-medrequest-2, MedicationRequest)
+* insert AddBundleEntry(mii-exa-test-data-patient-11-medstatement-1, MedicationStatement)
+* insert AddBundleEntry(mii-exa-test-data-patient-11-medstatement-2, MedicationStatement)
+* insert AddBundleEntry(mii-exa-test-data-patient-11-medstatement-3, MedicationStatement)
+* insert AddBundleEntry(mii-exa-test-data-patient-11-list-entlassmedikation, List)
+// Gemeinsame Infrastruktur
+* insert AddBundleEntry(mii-exa-test-data-organization-charite, Organization)
+* insert AddBundleEntry(mii-exa-test-data-organization-labor-berlin, Organization)
+* insert AddBundleEntry(mii-exa-test-data-practitioner-physician-1, Practitioner)
+* insert AddBundleEntry(mii-exa-test-data-practitioner-role-physician-1, PractitionerRole)
+
+// Erweiterungsmodul Studie — das Forschungsvorhaben
+* insert AddBundleEntry(mii-exa-test-data-patient-11-studie-1, ResearchStudy)
+* insert AddBundleEntry(mii-exa-test-data-studien-register-1, Library)
+* insert AddBundleEntry(mii-exa-test-data-patient-11-studien-group-1, Group)
+* insert AddBundleEntry(mii-exa-test-data-patient-11-studien-kriterium-1, EvidenceVariable)
+* insert AddBundleEntry(mii-exa-test-data-patient-11-studien-anfrage-1, ServiceRequest)
+* insert AddBundleEntry(mii-exa-test-data-patient-11-studien-consent-1, Consent)
+* insert AddBundleEntry(mii-exa-test-data-patient-11-proband-1, ResearchSubject)
+* insert AddBundleEntry(mii-exa-test-data-patient-11-studien-dokument-1, DocumentReference)
+
+// Erweiterungsmodul Soziodemographie — Baseline-Erhebung T0
+* insert AddBundleEntry(mii-exa-test-data-patient-11-sdd-erhebung-1, Observation)
+* insert AddBundleEntry(mii-exa-test-data-patient-11-sdd-partnerschaft-1, Observation)
+* insert AddBundleEntry(mii-exa-test-data-patient-11-sdd-haushaltsgroesse-1, Observation)
+* insert AddBundleEntry(mii-exa-test-data-patient-11-sdd-schulabschluss-1, Observation)
+* insert AddBundleEntry(mii-exa-test-data-patient-11-sdd-schuljahre-1, Observation)
+* insert AddBundleEntry(mii-exa-test-data-patient-11-sdd-ausbildung-1, Observation)
+* insert AddBundleEntry(mii-exa-test-data-patient-11-sdd-beschaeftigung-1, Observation)
+* insert AddBundleEntry(mii-exa-test-data-patient-11-sdd-stellung-1, Observation)
+* insert AddBundleEntry(mii-exa-test-data-patient-11-sdd-einkommen-1, Observation)
+
+// Erweiterungsmodul PRO — longitudinaler Verlauf T0 / T3 / T6
+* insert AddBundleEntry(mii-exa-test-data-patient-11-pro-eq5d5l-qr-t0, QuestionnaireResponse)
+* insert AddBundleEntry(mii-exa-test-data-patient-11-pro-eq5d5l-index-t0, Observation)
+* insert AddBundleEntry(mii-exa-test-data-patient-11-pro-eq5d5l-vas-t0, Observation)
+* insert AddBundleEntry(mii-exa-test-data-patient-11-pro-eq5d5l-profil-t0, Observation)
+* insert AddBundleEntry(mii-exa-test-data-patient-11-pro-phq9-qr-t0, QuestionnaireResponse)
+* insert AddBundleEntry(mii-exa-test-data-patient-11-pro-phq9-score-t0, Observation)
+* insert AddBundleEntry(mii-exa-test-data-patient-11-pro-eq5d5l-qr-t3, QuestionnaireResponse)
+* insert AddBundleEntry(mii-exa-test-data-patient-11-pro-eq5d5l-index-t3, Observation)
+* insert AddBundleEntry(mii-exa-test-data-patient-11-pro-eq5d5l-vas-t3, Observation)
+* insert AddBundleEntry(mii-exa-test-data-patient-11-pro-eq5d5l-profil-t3, Observation)
+* insert AddBundleEntry(mii-exa-test-data-patient-11-pro-eq5d5l-qr-t6, QuestionnaireResponse)
+* insert AddBundleEntry(mii-exa-test-data-patient-11-pro-eq5d5l-index-t6, Observation)
+* insert AddBundleEntry(mii-exa-test-data-patient-11-pro-eq5d5l-vas-t6, Observation)
+* insert AddBundleEntry(mii-exa-test-data-patient-11-pro-eq5d5l-profil-t6, Observation)
+* insert AddBundleEntry(mii-exa-test-data-patient-11-pro-phq9-qr-t6, QuestionnaireResponse)
+* insert AddBundleEntry(mii-exa-test-data-patient-11-pro-phq9-score-t6, Observation)
+
+// =============================================================================
+// Patient-12 — Journey "Sepsis auf der Intensivstation"
+// Basismodule + ICU + Mikrobiologie; Ressourcen in journey-sepsis-icu/
+// =============================================================================
+Instance: mii-exa-test-data-bundle-pat-12
+InstanceOf: Bundle
+Usage: #example
+Description: "Bundle: Patient-12 (Journey Sepsis/Intensivstation)"
+* insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
+* type = #transaction
+* timestamp = "2025-03-25T12:00:00+01:00"
+
+// Basis-Module
+* insert AddBundleEntry(mii-exa-test-data-patient-12, Patient)
+* insert AddBundleEntry(mii-exa-test-data-patient-12-encounter-1, Encounter)
+* insert AddBundleEntry(mii-exa-test-data-patient-12-encounter-2, Encounter)
+* insert AddBundleEntry(mii-exa-test-data-patient-12-diagnose-1, Condition)
+* insert AddBundleEntry(mii-exa-test-data-patient-12-diagnose-2, Condition)
+* insert AddBundleEntry(mii-exa-test-data-patient-12-prozedur-1, Procedure)
+* insert AddBundleEntry(mii-exa-test-data-patient-12-consent-1, Consent)
+// Labor
+* insert AddBundleEntry(mii-exa-test-data-patient-12-labrequest-1, ServiceRequest)
+* insert AddBundleEntry(mii-exa-test-data-patient-12-labreport-1, DiagnosticReport)
+* insert AddBundleEntry(mii-exa-test-data-patient-12-labobs-1, Observation)
+* insert AddBundleEntry(mii-exa-test-data-patient-12-labobs-2, Observation)
+* insert AddBundleEntry(mii-exa-test-data-patient-12-labobs-3, Observation)
+* insert AddBundleEntry(mii-exa-test-data-patient-12-labobs-4, Observation)
+// Medikation
+* insert AddBundleEntry(mii-exa-test-data-medication-piperacillin-tazobactam, Medication)
+* insert AddBundleEntry(mii-exa-test-data-medication-meropenem, Medication)
+* insert AddBundleEntry(mii-exa-test-data-medication-noradrenalin, Medication)
+* insert AddBundleEntry(mii-exa-test-data-patient-12-medrequest-1, MedicationRequest)
+* insert AddBundleEntry(mii-exa-test-data-patient-12-medrequest-2, MedicationRequest)
+* insert AddBundleEntry(mii-exa-test-data-patient-12-medadmin-1, MedicationAdministration)
+* insert AddBundleEntry(mii-exa-test-data-patient-12-medadmin-2, MedicationAdministration)
+* insert AddBundleEntry(mii-exa-test-data-patient-12-medstatement-1, MedicationStatement)
+* insert AddBundleEntry(mii-exa-test-data-patient-12-list-stat-aufenthalt, List)
+// Gemeinsame Infrastruktur
+* insert AddBundleEntry(mii-exa-test-data-organization-charite, Organization)
+* insert AddBundleEntry(mii-exa-test-data-organization-labor-berlin, Organization)
+* insert AddBundleEntry(mii-exa-test-data-practitioner-physician-1, Practitioner)
+* insert AddBundleEntry(mii-exa-test-data-practitioner-role-physician-1, PractitionerRole)
+* insert AddBundleEntry(mii-exa-test-data-mikrobio-organization-lab-1, Organization)
+* insert AddBundleEntry(mii-exa-test-data-mikrobio-device-bactec-1, Device)
+* insert AddBundleEntry(mii-exa-test-data-mikrobio-device-maldi-1, Device)
+* insert AddBundleEntry(mii-exa-test-data-mikrobio-device-vitek-1, Device)
+* insert AddBundleEntry(mii-exa-test-data-mikrobio-device-mikroskop-1, Device)
+
+// Erweiterungsmodul ICU — Beatmung und SOFA-Verlauf
+* insert AddBundleEntry(mii-exa-test-data-patient-12-icu-device-vent, Device)
+* insert AddBundleEntry(mii-exa-test-data-patient-12-icu-dm-vent, DeviceMetric)
+* insert AddBundleEntry(mii-exa-test-data-patient-12-icu-beatmung-1, Procedure)
+* insert AddBundleEntry(mii-exa-test-data-patient-12-icu-vent-peep-1, Observation)
+* insert AddBundleEntry(mii-exa-test-data-patient-12-icu-vent-fio2-1, Observation)
+* insert AddBundleEntry(mii-exa-test-data-patient-12-icu-vent-vt-1, Observation)
+* insert AddBundleEntry(mii-exa-test-data-patient-12-icu-sofa-t1, Observation)
+* insert AddBundleEntry(mii-exa-test-data-patient-12-icu-sofa-t5, Observation)
+* insert AddBundleEntry(mii-exa-test-data-patient-12-icu-sofa-t8, Observation)
+* insert AddBundleEntry(mii-exa-test-data-patient-12-icu-gcs-1, Observation)
+* insert AddBundleEntry(mii-exa-test-data-patient-12-icu-rass-1, Observation)
+* insert AddBundleEntry(mii-exa-test-data-patient-12-icu-bilanz-urin-1, Observation)
+* insert AddBundleEntry(mii-exa-test-data-patient-12-icu-bilanz-tages-1, Observation)
+
+// Erweiterungsmodul Mikrobiologie — Blutkultur bis Antibiogramm
+* insert AddBundleEntry(mii-exa-test-data-patient-12-mibi-anforderung-1, ServiceRequest)
+* insert AddBundleEntry(mii-exa-test-data-patient-12-mibi-specimen-bk, Specimen)
+* insert AddBundleEntry(mii-exa-test-data-patient-12-mibi-specimen-ts, Specimen)
+* insert AddBundleEntry(mii-exa-test-data-patient-12-mibi-kultur-1, Observation)
+* insert AddBundleEntry(mii-exa-test-data-patient-12-mibi-mikroskopie-1, Observation)
+* insert AddBundleEntry(mii-exa-test-data-patient-12-mibi-erreger-1, Observation)
+* insert AddBundleEntry(mii-exa-test-data-patient-12-mibi-ast-piptazo, Observation)
+* insert AddBundleEntry(mii-exa-test-data-patient-12-mibi-ast-ceftazidim, Observation)
+* insert AddBundleEntry(mii-exa-test-data-patient-12-mibi-ast-cipro, Observation)
+* insert AddBundleEntry(mii-exa-test-data-patient-12-mibi-ast-meropenem, Observation)
+* insert AddBundleEntry(mii-exa-test-data-patient-12-mibi-mrgn-1, Observation)
+* insert AddBundleEntry(mii-exa-test-data-patient-12-mibi-esbl-1, Observation)
+* insert AddBundleEntry(mii-exa-test-data-patient-12-mibi-report-1, DiagnosticReport)
+
+// =============================================================================
+// Patient-13 — Journey "Diagnostische Odyssee (Morbus Fabry)"
+// Basismodule + Symptom + Seltene Erkrankungen; Ressourcen in
+// journey-seltene-symptom/
+// =============================================================================
+Instance: mii-exa-test-data-bundle-pat-13
+InstanceOf: Bundle
+Usage: #example
+Description: "Bundle: Patient-13 (Journey Seltene Erkrankung / diagnostische Odyssee)"
+* insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
+* type = #transaction
+* timestamp = "2024-02-05T12:00:00+01:00"
+
+// Basis-Module
+* insert AddBundleEntry(mii-exa-test-data-patient-13, Patient)
+* insert AddBundleEntry(mii-exa-test-data-patient-13-encounter-1, Encounter)
+* insert AddBundleEntry(mii-exa-test-data-patient-13-encounter-2, Encounter)
+* insert AddBundleEntry(mii-exa-test-data-patient-13-encounter-3, Encounter)
+* insert AddBundleEntry(mii-exa-test-data-patient-13-consent-1, Consent)
+// Labor
+* insert AddBundleEntry(mii-exa-test-data-patient-13-labrequest-1, ServiceRequest)
+* insert AddBundleEntry(mii-exa-test-data-patient-13-labreport-1, DiagnosticReport)
+* insert AddBundleEntry(mii-exa-test-data-patient-13-labobs-protein, Observation)
+* insert AddBundleEntry(mii-exa-test-data-patient-13-labobs-kreatinin, Observation)
+* insert AddBundleEntry(mii-exa-test-data-patient-13-labobs-agalsidase, Observation)
+// Medikation
+* insert AddBundleEntry(mii-exa-test-data-medication-agalsidase-beta, Medication)
+* insert AddBundleEntry(mii-exa-test-data-patient-13-medrequest-1, MedicationRequest)
+* insert AddBundleEntry(mii-exa-test-data-patient-13-medadmin-1, MedicationAdministration)
+// Gemeinsame Infrastruktur
+* insert AddBundleEntry(mii-exa-test-data-organization-charite, Organization)
+* insert AddBundleEntry(mii-exa-test-data-organization-labor-berlin, Organization)
+* insert AddBundleEntry(mii-exa-test-data-practitioner-physician-1, Practitioner)
+* insert AddBundleEntry(mii-exa-test-data-practitioner-physician-2, Practitioner)
+
+// Erweiterungsmodul Symptom — die Odyssee 2011-2019
+* insert AddBundleEntry(mii-exa-test-data-patient-13-symptom-akroparaesthesie, Condition)
+* insert AddBundleEntry(mii-exa-test-data-patient-13-symptom-hypohidrose, Condition)
+* insert AddBundleEntry(mii-exa-test-data-patient-13-symptom-abdominal, Condition)
+* insert AddBundleEntry(mii-exa-test-data-patient-13-symptom-obs-schmerz, Observation)
+* insert AddBundleEntry(mii-exa-test-data-patient-13-symptom-obs-hitzeintoleranz, Observation)
+
+// Erweiterungsmodul Seltene Erkrankungen — Diagnose 2023, Therapie 2024
+* insert AddBundleEntry(mii-exa-test-data-patient-13-hpo-akroparaesthesie, Observation)
+* insert AddBundleEntry(mii-exa-test-data-patient-13-hpo-hypohidrose, Observation)
+* insert AddBundleEntry(mii-exa-test-data-patient-13-hpo-proteinurie, Observation)
+* insert AddBundleEntry(mii-exa-test-data-patient-13-hpo-cornea, Observation)
+* insert AddBundleEntry(mii-exa-test-data-patient-13-hpo-angiokeratom, Observation)
+* insert AddBundleEntry(mii-exa-test-data-patient-13-seltene-diagnose-klinisch, Condition)
+* insert AddBundleEntry(mii-exa-test-data-patient-13-seltene-diagnose-genetisch, Condition)
+* insert AddBundleEntry(mii-exa-test-data-patient-13-molgen-variante, Observation)
+* insert AddBundleEntry(mii-exa-test-data-patient-13-familienanamnese-mutter, FamilyMemberHistory)
+* insert AddBundleEntry(mii-exa-test-data-patient-13-familienanamnese-onkel, FamilyMemberHistory)
+* insert AddBundleEntry(mii-exa-test-data-patient-13-seltene-therapieplan, CarePlan)
+* insert AddBundleEntry(mii-exa-test-data-patient-13-registerteilnahme, ResearchSubject)
+* insert AddBundleEntry(mii-exa-test-data-patient-13-register-katalog, Library)
+* insert AddBundleEntry(mii-exa-test-data-patient-13-register-study, ResearchStudy)
+* insert AddBundleEntry(mii-exa-test-data-patient-13-register-consent, Consent)
+
+// =============================================================================
+// Patient-14 — Journey "Personalisierte Onkologie (MSI-high Kolonkarzinom)"
+// Basismodule + Onkologie + MTB; Ressourcen in journey-onkologie-mtb/
+// =============================================================================
+Instance: mii-exa-test-data-bundle-pat-14
+InstanceOf: Bundle
+Usage: #example
+Description: "Bundle: Patient-14 (Journey Personalisierte Onkologie)"
+* insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
+* type = #transaction
+* timestamp = "2024-08-14T12:00:00+02:00"
+
+// Basis-Module
+* insert AddBundleEntry(mii-exa-test-data-patient-14, Patient)
+* insert AddBundleEntry(mii-exa-test-data-patient-14-encounter-1, Encounter)
+* insert AddBundleEntry(mii-exa-test-data-patient-14-encounter-2, Encounter)
+* insert AddBundleEntry(mii-exa-test-data-patient-14-prozedur-1, Procedure)
+* insert AddBundleEntry(mii-exa-test-data-patient-14-consent-1, Consent)
+* insert AddBundleEntry(mii-exa-test-data-organization-charite, Organization)
+* insert AddBundleEntry(mii-exa-test-data-practitioner-physician-1, Practitioner)
+* insert AddBundleEntry(mii-exa-test-data-practitioner-role-physician-1, PractitionerRole)
+
+// Erweiterungsmodul Onkologie
+* insert AddBundleEntry(mii-exa-test-data-patient-14-onko-diagnose-1, Condition)
+* insert AddBundleEntry(mii-exa-test-data-patient-14-onko-specimen-1, Specimen)
+* insert AddBundleEntry(mii-exa-test-data-patient-14-onko-befund-1, DiagnosticReport)
+* insert AddBundleEntry(mii-exa-test-data-patient-14-onko-histologie-1, Observation)
+* insert AddBundleEntry(mii-exa-test-data-patient-14-onko-grading-1, Observation)
+* insert AddBundleEntry(mii-exa-test-data-patient-14-onko-tnm-t, Observation)
+* insert AddBundleEntry(mii-exa-test-data-patient-14-onko-tnm-n, Observation)
+* insert AddBundleEntry(mii-exa-test-data-patient-14-onko-tnm-m, Observation)
+* insert AddBundleEntry(mii-exa-test-data-patient-14-onko-lk-untersucht, Observation)
+* insert AddBundleEntry(mii-exa-test-data-patient-14-onko-lk-befallen, Observation)
+* insert AddBundleEntry(mii-exa-test-data-patient-14-onko-fernmetastasen-1, Observation)
+* insert AddBundleEntry(mii-exa-test-data-patient-14-onko-ecog-1, Observation)
+* insert AddBundleEntry(mii-exa-test-data-patient-14-onko-tumorkonferenz-1, CarePlan)
+* insert AddBundleEntry(mii-exa-test-data-patient-14-onko-systemtherapie-1, Procedure)
+* insert AddBundleEntry(mii-exa-test-data-patient-14-onko-verlauf-1, Observation)
+
+// Erweiterungsmodul MTB — molekulare Begründung der Therapie
+* insert AddBundleEntry(mii-exa-test-data-patient-14-mtb-episode-1, ClinicalImpression)
+* insert AddBundleEntry(mii-exa-test-data-patient-14-mtb-ngs-bericht-1, DiagnosticReport)
+* insert AddBundleEntry(mii-exa-test-data-patient-14-mtb-variante-braf, Observation)
+* insert AddBundleEntry(mii-exa-test-data-patient-14-mtb-msi-1, Observation)
+* insert AddBundleEntry(mii-exa-test-data-patient-14-mtb-tmb-1, Observation)
+* insert AddBundleEntry(mii-exa-test-data-patient-14-mtb-implikation-1, Observation)
+* insert AddBundleEntry(mii-exa-test-data-patient-14-mtb-therapieplan-1, CarePlan)
+* insert AddBundleEntry(mii-exa-test-data-patient-14-mtb-empfehlung-1, MedicationRequest)
+* insert AddBundleEntry(mii-exa-test-data-medication-pembrolizumab, Medication)
+* insert AddBundleEntry(mii-exa-test-data-patient-14-medadmin-1, MedicationAdministration)
