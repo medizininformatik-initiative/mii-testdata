@@ -45,6 +45,28 @@ The distinction in the status column is the important part. **Feasible** means t
 
 {% include ms-luecken.html %}
 
+### Reading a validation result
+
+Two conditions decide what a validation run means, and both are easy to get wrong.
+
+**Which terminology server was used.** Counter-intuitively, an *incomplete* terminology
+server is worse than none at all. Without one, unknown code systems produce warnings;
+with one, they become hard errors. Measured on four bundles: 185 errors with `-tx n/a`
+against 382 with a server carrying only LOINC and SNOMED. Of the 2,266 required bindings
+in the BOM only 73 point at BfArM systems (OPS, ICD-10-GM, ATC, Alpha-ID, ICD-O-3) — but
+those are the axes on which test data codes most densely, so every diagnosis, procedure
+and medication turns into an error at once.
+
+**How many errors belong to the data.** A large share does not. The 132 slicing errors on
+the ICU score profiles are byte-identical with and without a terminology server: the
+profiles slice `Observation.component` on a discriminator that no slice defines a pattern
+for. No instance can satisfy that, and it is also what drives the validator into an
+`OutOfMemoryError` while assembling its slicing summary.
+
+So a bare error count says little. The number worth reporting is how many errors remain
+after separating terminology conditions from structural defects in the profiles — and
+those defects are filed as [ballot findings](https://github.com/medizininformatik-initiative/mii-testdata/blob/main/docs/ballot-findings-2027.md).
+
 ### Limits and next steps
 
 The MS measurement is heuristic (base path matching, extension slices via their URL; details in the script docstring). Invariant coverage is **curated** rather than measured — evaluating each constraint in FHIRPath against all instances, including branch detection, is the next step.
