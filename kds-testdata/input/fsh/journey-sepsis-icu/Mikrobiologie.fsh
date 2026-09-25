@@ -17,6 +17,11 @@
 RuleSet: JourneyMibiBase
 * insert TestDataLabel
 * meta.source = "https://www.charite.de/fhir/kds-testdata"
+// Vererbte Konformitaet explizit mittragen: alle Mikrobio-Observation-Profile
+// erben von ObservationLab (Labor-Modul). Beide Profile in meta.profile zu
+// nennen laesst den Validator gegen die ganze Kette pruefen — damit belegen
+// die Testdaten, dass die Mikrobio-auf-Labor-Vererbung praktisch traegt.
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab"
 * status = #final
 * category[observation-category] = $observation-category#laboratory
 * category[mibi-category] = $v2-0074#MB "Microbiology"
@@ -27,38 +32,57 @@ RuleSet: JourneyMibiBase
 // ----------------------------------------------------------------------------
 // Anforderung und Proben
 // ----------------------------------------------------------------------------
+// Auf ServiceRequestLab profiliert: Das Mikrobio-Modul ist durchgaengig auf dem
+// Labor-Modul gebaut — mii-pr-mikrobio-allgemeine-kultur und -empfindlichkeit
+// erben von ObservationLab, mii-pr-mikrobio-diagnostic-report von
+// DiagnosticReportLab. Die Anforderung als Labor-Anforderung zu fuehren ist
+// damit die konsequente Fortsetzung derselben Achse.
 Instance: mii-exa-test-data-patient-12-mibi-anforderung-1
-InstanceOf: ServiceRequest
+InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ServiceRequestLab
 Usage: #example
 Description: "Mikrobio Auftrag: Blutkultur und Trachealsekret bei Sepsisverdacht (Patient 12)"
 * insert TestDataLabel
 * meta.source = "https://www.charite.de/fhir/kds-testdata"
-* identifier.system = "https://www.charite.de/fhir/sid/service-request"
-* identifier.value = "MIKROBIO-SR-012"
+* identifier[anforderung].type = $v2-0203#PLAC
+* identifier[anforderung].system = "https://www.charite.de/fhir/sid/service-request"
+* identifier[anforderung].value = "MIKROBIO-SR-012"
+* identifier[anforderung].assigner.identifier.system = "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"
+* identifier[anforderung].assigner.identifier.value = "Charité"
 * status = #completed
 * intent = #order
 * priority = #urgent
+* category.coding[laboratory] = $observation-category#laboratory
+* category.coding[laboratory].display = "Laboratory"
 * code = $sct#252418007 "Microbiology procedure (procedure)"
+* code.text = "Blutkultur und Trachealsekret, Erregerdiagnostik mit Antibiogramm"
 * subject = Reference(mii-exa-test-data-patient-12)
 * encounter = Reference(mii-exa-test-data-patient-12-encounter-2)
 * authoredOn = "2025-03-08T18:25:00+01:00"
 * requester = Reference(mii-exa-test-data-practitioner-physician-1)
 * reasonReference = Reference(mii-exa-test-data-patient-12-diagnose-2)
 
+// Auf mii-pr-mikrobio-probe profiliert wie das Trachealsekret derselben
+// Anforderung: An dieser Probe haengen alle mikrobiologischen Observations,
+// sie traegt Abnahmezeit, Koerperstelle und Behaelter — keine Dummy-Ressource,
+// die nur Referenzen aufloesen soll.
 Instance: mii-exa-test-data-patient-12-mibi-specimen-bk
-InstanceOf: Specimen
+InstanceOf: https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-probe
 Usage: #example
-Description: "Mikrobio Specimen: Blutkultur aerob/anaerob (Patient 12)"
+Description: "Mikrobio Probe: Blutkultur aerob/anaerob (Patient 12)"
 * insert TestDataLabel
 * meta.source = "https://www.charite.de/fhir/kds-testdata"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore"
 * identifier.system = "https://www.charite.de/fhir/sid/Probennummer"
 * identifier.value = "BK-012-001"
 * status = #available
-* type = $sct#119297000 "Blood specimen (specimen)"
+* type.coding[sct] = $sct#119297000 "Blood specimen (specimen)"
+* extension[probenebene].valueCoding = https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/CodeSystem/mii-cs-biobank-probenebene#PRIMÄRPROBE "Primärprobe"
+* extension[infektiositaetsstatus].valueCodeableConcept = $sct#409603009 "Biosafety level 2 (qualifier value)"
 * subject = Reference(mii-exa-test-data-patient-12)
 * request = Reference(mii-exa-test-data-patient-12-mibi-anforderung-1)
 * collection.collectedDateTime = "2025-03-08T18:30:00+01:00"
-* collection.bodySite.coding[+] = $sct#28273000 "Bilateral antecubital fossae (body structure)"
+* collection.bodySite.coding[sct] = $sct#28273000 "Bilateral antecubital fossae (body structure)"
+* container.type = $sct#83059008 "Tube, device (physical object)"
 * receivedTime = "2025-03-08T19:05:00+01:00"
 * note.text = "Zwei Paerchen vor Beginn der empirischen Antibiose abgenommen."
 
@@ -68,6 +92,7 @@ Usage: #example
 Description: "Mikrobio Probe: Trachealsekret (Patient 12)"
 * insert TestDataLabel
 * meta.source = "https://www.charite.de/fhir/kds-testdata"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore"
 * identifier.system = "https://www.charite.de/fhir/sid/Probennummer"
 * identifier.value = "TS-012-001"
 * status = #available
@@ -285,6 +310,7 @@ Usage: #example
 Description: "Mikrobio Befund: Blutkultur mit 3MRGN Klebsiella pneumoniae (Patient 12)"
 * insert TestDataLabel
 * meta.source = "https://www.charite.de/fhir/kds-testdata"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/DiagnosticReportLab"
 * identifier[befund].type.coding[fillerV2] = $v2-0203#FILL
 * identifier[befund].system = "https://www.charite.de/fhir/sid/diagnostic-report"
 * identifier[befund].value = "MIKROBIO-DR-012"

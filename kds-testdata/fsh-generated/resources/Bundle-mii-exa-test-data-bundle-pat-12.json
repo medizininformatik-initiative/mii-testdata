@@ -4014,14 +4014,52 @@
               "display": "test health data"
             }
           ],
-          "source": "https://www.charite.de/fhir/kds-testdata"
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ServiceRequestLab"
+          ]
         },
         "identifier": [
           {
+            "assigner": {
+              "identifier": {
+                "system": "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier",
+                "value": "Charité"
+              }
+            },
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "code": "PLAC"
+                }
+              ]
+            },
             "system": "https://www.charite.de/fhir/sid/service-request",
             "value": "MIKROBIO-SR-012"
           }
         ],
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "252418007",
+              "system": "http://snomed.info/sct",
+              "display": "Microbiology procedure (procedure)"
+            }
+          ],
+          "text": "Blutkultur und Trachealsekret, Erregerdiagnostik mit Antibiogramm"
+        },
         "reasonReference": [
           {
             "reference": "Condition/mii-exa-test-data-patient-12-diagnose-2"
@@ -4030,15 +4068,6 @@
         "status": "completed",
         "intent": "order",
         "priority": "urgent",
-        "code": {
-          "coding": [
-            {
-              "code": "252418007",
-              "system": "http://snomed.info/sct",
-              "display": "Microbiology procedure (procedure)"
-            }
-          ]
-        },
         "subject": {
           "reference": "Patient/mii-exa-test-data-patient-12"
         },
@@ -4068,12 +4097,47 @@
               "display": "test health data"
             }
           ],
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-probe",
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore"
+          ],
           "source": "https://www.charite.de/fhir/kds-testdata"
         },
         "identifier": [
           {
             "system": "https://www.charite.de/fhir/sid/Probennummer",
             "value": "BK-012-001"
+          }
+        ],
+        "type": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "119297000",
+              "display": "Blood specimen (specimen)"
+            }
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/mii-ex-biobank-ebene",
+            "valueCoding": {
+              "code": "PRIMÄRPROBE",
+              "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/CodeSystem/mii-cs-biobank-probenebene",
+              "display": "Primärprobe"
+            }
+          },
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/mii-ex-biobank-infektiositaetsstatus",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "409603009",
+                  "system": "http://snomed.info/sct",
+                  "display": "Biosafety level 2 (qualifier value)"
+                }
+              ]
+            }
           }
         ],
         "request": [
@@ -4093,21 +4157,25 @@
           },
           "collectedDateTime": "2025-03-08T18:30:00+01:00"
         },
+        "container": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "code": "83059008",
+                  "system": "http://snomed.info/sct",
+                  "display": "Tube, device (physical object)"
+                }
+              ]
+            }
+          }
+        ],
         "note": [
           {
             "text": "Zwei Paerchen vor Beginn der empirischen Antibiose abgenommen."
           }
         ],
         "status": "available",
-        "type": {
-          "coding": [
-            {
-              "code": "119297000",
-              "system": "http://snomed.info/sct",
-              "display": "Blood specimen (specimen)"
-            }
-          ]
-        },
         "subject": {
           "reference": "Patient/mii-exa-test-data-patient-12"
         },
@@ -4131,10 +4199,11 @@
               "display": "test health data"
             }
           ],
-          "source": "https://www.charite.de/fhir/kds-testdata",
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-probe"
-          ]
+            "https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-probe",
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore"
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata"
         },
         "identifier": [
           {
@@ -4238,10 +4307,11 @@
               "display": "test health data"
             }
           ],
-          "source": "https://www.charite.de/fhir/kds-testdata",
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-allgemeine-kultur"
-          ]
+            "https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-allgemeine-kultur",
+            "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab"
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata"
         },
         "category": [
           {
@@ -4376,10 +4446,11 @@
               "display": "test health data"
             }
           ],
-          "source": "https://www.charite.de/fhir/kds-testdata",
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-mikroskopie"
-          ]
+            "https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-mikroskopie",
+            "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab"
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata"
         },
         "category": [
           {
@@ -4491,10 +4562,11 @@
               "display": "test health data"
             }
           ],
-          "source": "https://www.charite.de/fhir/kds-testdata",
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-spezifische-bestimmung"
-          ]
+            "https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-spezifische-bestimmung",
+            "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab"
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata"
         },
         "category": [
           {
@@ -4623,10 +4695,11 @@
               "display": "test health data"
             }
           ],
-          "source": "https://www.charite.de/fhir/kds-testdata",
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-empfindlichkeit"
-          ]
+            "https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-empfindlichkeit",
+            "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab"
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata"
         },
         "category": [
           {
@@ -4778,10 +4851,11 @@
               "display": "test health data"
             }
           ],
-          "source": "https://www.charite.de/fhir/kds-testdata",
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-empfindlichkeit"
-          ]
+            "https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-empfindlichkeit",
+            "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab"
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata"
         },
         "category": [
           {
@@ -4927,10 +5001,11 @@
               "display": "test health data"
             }
           ],
-          "source": "https://www.charite.de/fhir/kds-testdata",
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-empfindlichkeit"
-          ]
+            "https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-empfindlichkeit",
+            "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab"
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata"
         },
         "category": [
           {
@@ -5076,10 +5151,11 @@
               "display": "test health data"
             }
           ],
-          "source": "https://www.charite.de/fhir/kds-testdata",
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-empfindlichkeit"
-          ]
+            "https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-empfindlichkeit",
+            "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab"
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata"
         },
         "category": [
           {
@@ -5241,10 +5317,11 @@
               "display": "test health data"
             }
           ],
-          "source": "https://www.charite.de/fhir/kds-testdata",
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-mrgn-klasse"
-          ]
+            "https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-mrgn-klasse",
+            "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab"
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata"
         },
         "category": [
           {
@@ -5378,10 +5455,11 @@
               "display": "test health data"
             }
           ],
-          "source": "https://www.charite.de/fhir/kds-testdata",
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-resistenzmechanismen-determinanten"
-          ]
+            "https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-resistenzmechanismen-determinanten",
+            "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab"
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata"
         },
         "category": [
           {
@@ -5504,10 +5582,11 @@
               "display": "test health data"
             }
           ],
-          "source": "https://www.charite.de/fhir/kds-testdata",
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-diagnostic-report"
-          ]
+            "https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-diagnostic-report",
+            "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/DiagnosticReportLab"
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata"
         },
         "identifier": [
           {

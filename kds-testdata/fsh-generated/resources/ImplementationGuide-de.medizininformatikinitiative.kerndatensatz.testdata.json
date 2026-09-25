@@ -7266,7 +7266,7 @@
           "reference": "Specimen/mii-exa-test-data-patient-12-mibi-specimen-bk"
         },
         "name": "mii-exa-test-data-patient-12-mibi-specimen-bk",
-        "description": "Mikrobio Specimen: Blutkultur aerob/anaerob (Patient 12)",
+        "description": "Mikrobio Probe: Blutkultur aerob/anaerob (Patient 12)",
         "exampleBoolean": true
       },
       {

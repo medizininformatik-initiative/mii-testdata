@@ -147,3 +147,19 @@ Related: the ICU module's own FSH already notes that the SNOMED patterns of thes
 The BfArM systems — ICD-10-GM, OPS, Alpha-ID — and ICD-O-3 are not part of any package in the dependency graph, and the local Blaze terminology server ships only LOINC and SNOMED CT. Codings against them are therefore reported as unvalidatable whenever no Ontoserver is reachable. Every such code in these journeys was instead verified individually against the MII terminology server while authoring; `8140/3` in ICD-O-3, for example, resolves to "Adenokarzinom o.n.A." in the 2019 edition.
 
 This is a tooling gap, not a data defect — but it means a validation run without the MII Ontoserver cannot confirm those bindings either way.
+
+**A partial terminology server is worse than none.** This is counter-intuitive and was measured, not assumed. Validating the four journeys twice off the same build:
+
+| | `-tx n/a` | local Blaze (LOINC + SNOMED, no BfArM) |
+|---|---|---|
+| Slicing discriminator without a pattern | 132 | 132 — byte-identical |
+| Unknown code system | warning | **64 errors** |
+| No matching profile among the choices | ~25 | ~60 |
+| Code not in value set | 3 | 13 |
+| Total | **185** | **382** |
+
+With `-tx n/a` an unresolvable code system produces a warning; with a terminology server present but incomplete it produces a hard error. Profile selection degrades the same way: where several profiles are allowed, the validator picks by coding — if a code system cannot be resolved, the choice fails outright instead of passing with a warning.
+
+The MII dependency graph has 2266 required bindings across 413 value sets; only 73 of them sit on BfArM systems, but those are the axes test data codes densely on — OPS, ATC, ICD-10-GM, Alpha-ID, ICD-O-3. Few bindings, thousands of codings against them. That is why the error count doubles.
+
+The practical consequence for anyone validating this test data: either use a terminology server that knows the BfArM systems, or use none at all and read unresolvable code systems as warnings. A half-complete server yields the least usable result.

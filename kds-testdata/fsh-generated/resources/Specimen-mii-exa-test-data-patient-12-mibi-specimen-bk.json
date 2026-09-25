@@ -9,12 +9,47 @@
         "display": "test health data"
       }
     ],
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-probe",
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore"
+    ],
     "source": "https://www.charite.de/fhir/kds-testdata"
   },
   "identifier": [
     {
       "system": "https://www.charite.de/fhir/sid/Probennummer",
       "value": "BK-012-001"
+    }
+  ],
+  "type": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "119297000",
+        "display": "Blood specimen (specimen)"
+      }
+    ]
+  },
+  "extension": [
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/mii-ex-biobank-ebene",
+      "valueCoding": {
+        "code": "PRIMÄRPROBE",
+        "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/CodeSystem/mii-cs-biobank-probenebene",
+        "display": "Primärprobe"
+      }
+    },
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/mii-ex-biobank-infektiositaetsstatus",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "409603009",
+            "system": "http://snomed.info/sct",
+            "display": "Biosafety level 2 (qualifier value)"
+          }
+        ]
+      }
     }
   ],
   "request": [
@@ -34,21 +69,25 @@
     },
     "collectedDateTime": "2025-03-08T18:30:00+01:00"
   },
+  "container": [
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "83059008",
+            "system": "http://snomed.info/sct",
+            "display": "Tube, device (physical object)"
+          }
+        ]
+      }
+    }
+  ],
   "note": [
     {
       "text": "Zwei Paerchen vor Beginn der empirischen Antibiose abgenommen."
     }
   ],
   "status": "available",
-  "type": {
-    "coding": [
-      {
-        "code": "119297000",
-        "system": "http://snomed.info/sct",
-        "display": "Blood specimen (specimen)"
-      }
-    ]
-  },
   "subject": {
     "reference": "Patient/mii-exa-test-data-patient-12"
   },
