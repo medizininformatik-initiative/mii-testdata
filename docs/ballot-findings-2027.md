@@ -208,6 +208,44 @@ abgeleitete Größe der Ausweg. Die Diffusionsparameter (DLCO, KCO und ihre
 Hb-korrigierten Varianten) sind in MDC gar nicht darstellbar, weil die Nomenklatur kein
 Kohlenmonoxid als Atemgas kennt.
 
+### Die Platzhalter blockieren nicht nur Coverage — sie machen Profile unvalidierbar
+
+Bei den ICU-Scores kommt ein zweiter Defekt hinzu, und zusammen ergeben sie einen
+Totalausfall. `mii-pr-icu-score-sofa` und `-gcs` slicen `Observation.component` mit
+
+```
+discriminator: { type: pattern, path: code }   rules: open
+```
+
+Kein einziger Slice definiert jedoch ein `patternCodeableConcept` auf
+`component.code` selbst — die Muster sitzen eine Ebene tiefer auf
+`code.coding:loinc` und `code.coding:sct`. Der Validator kann die Komponenten keinem
+Slice zuordnen und meldet für **jede** „Slicing kann nicht ausgewertet werden".
+
+Gemessen an vier Bundles: **132 Fehler, davon 114 auf drei SOFA-Observations und 18 auf
+GCS** — identisch mit und ohne Terminologieserver. Es ist also kein
+Terminologie-Artefakt, sondern ein reiner Strukturdefekt. Nebenwirkung: Der Validator
+baut über alle Bundles eine Slicing-Fehlerübersicht auf und läuft dabei in den
+`OutOfMemoryError` (`errorSummaryForSlicingAsHtml`); unsere CI musste den Heap auf 14 GB
+heben, um überhaupt ein Ergebnis zu bekommen.
+
+**Die Codes sind vorhanden und korrekt.** Jeder Slice trägt bereits den passenden
+LOINC-Code für seinen Subscore:
+
+| Slice | LOINC | SNOMED |
+|---|---|---|
+| respiratory | `96823-0` | `xxxx` |
+| coagulation | `96824-8` | `xxx` |
+| hepatic | `96825-5` | `xxx` |
+| cardiovascular | `96826-3` | `xxx` |
+| neurological | `96827-1` | `xxxx` |
+| renal | `96828-9` | `xxx` |
+
+Den Diskriminator auf `code.coding.code` zu ziehen — oder ein
+`patternCodeableConcept` mit dem LOINC-Coding direkt auf `component:*.code` zu setzen —
+und die SNOMED-Slices zu entfernen macht aus 132 Fehlern null, ohne dass ein einziger
+Code recherchiert werden muss.
+
 **Vorschlag:** Vor dem Ballot-Abschluss die 56 Platzhalter auflösen. Ergänzend ein
 Release-Gate, das publizierte Pakete auf `TODO`/`xxx`/`TBD` in `fixed*`/`pattern*`
 prüft — der Fund lässt sich mit dem Skript unten in Sekunden reproduzieren.
