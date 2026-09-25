@@ -183,6 +183,14 @@
       },
       {
         "reference": {
+          "reference": "Observation/mii-exa-test-data-patho-conclusion-grouper-dar-1"
+        },
+        "name": "Diagnostic Conclusion Grouper - Gesamttumorlaenge nicht ermittelbar",
+        "description": "Conclusion-Grouper mit Komponente ohne Wert: Gesamttumorlaenge wegen fragmentierter Stanze nicht ermittelbar (component.dataAbsentReason)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Library/mii-exa-test-data-studien-register-1"
         },
         "name": "DRKS - Deutsches Register Klinischer Studien",
@@ -391,6 +399,14 @@
       },
       {
         "reference": {
+          "reference": "Observation/mii-exa-test-data-patho-intraop-grouper-dar-1"
+        },
+        "name": "Intraoperative Befunde Grouper - Typisierung am Schnellschnitt offen",
+        "description": "Intraoperativ-Grouper mit Komponente ohne Wert: histologischer Typ am Schnellschnitt noch nicht klassifizierbar (component.dataAbsentReason)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Observation/mii-exa-test-data-patho-tnm-m-1"
         },
         "name": "Klinisches M-Staging",
@@ -435,6 +451,14 @@
         },
         "name": "Makroskopische Befunde Grouper",
         "description": "Gruppierung der makroskopischen Messungen beider Prostatastanzen",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patho-macro-grouper-dar-1"
+        },
+        "name": "Makroskopische Befunde Grouper - Laenge nicht messbar",
+        "description": "Makroskopie-Grouper mit Komponente ohne Wert: Zylinderlaenge am fragmentierten Material nicht messbar (component.dataAbsentReason)",
         "exampleBoolean": true
       },
       {
@@ -3015,6 +3039,14 @@
       },
       {
         "reference": {
+          "reference": "Observation/mii-exa-test-data-mikrobio-spezifische-mikroskopie-dar-1"
+        },
+        "name": "mii-exa-test-data-mikrobio-spezifische-mikroskopie-dar-1",
+        "description": "Mikrobio: spezifische-mikroskopie — Material nicht ausreichend, Ausstrich nicht beurteilbar (dataAbsentReason)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Observation/mii-exa-test-data-mikrobio-titer-1"
         },
         "name": "mii-exa-test-data-mikrobio-titer-1",
@@ -3587,6 +3619,14 @@
         },
         "name": "mii-exa-test-data-onko-melanom-ulzeration-2",
         "description": "Onkologie Test Melanom Ulzeration - Nicht vorhanden",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-onko-melanom-ulzeration-dar-1"
+        },
+        "name": "mii-exa-test-data-onko-melanom-ulzeration-dar-1",
+        "description": "Onkologie Test Melanom Ulzeration - nicht beurteilbar (dataAbsentReason)",
         "exampleBoolean": true
       },
       {
@@ -8110,6 +8150,14 @@
       },
       {
         "reference": {
+          "reference": "Observation/mii-exa-test-data-patho-micro-grouper-dar-1"
+        },
+        "name": "Mikroskopische Befunde Grouper - perineurale Infiltration nicht beurteilbar",
+        "description": "Mikroskopie-Grouper mit Komponente ohne Wert: perineurale Infiltration am vorliegenden Schnitt nicht beurteilbar (component.dataAbsentReason)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Observation/mii-exa-test-data-patho-morph-text-01"
         },
         "name": "Morphologie Freitext Stanze 01",
@@ -8858,6 +8906,14 @@
         },
         "name": "Vorlaeufiger Befundbericht Prostatabiopsie",
         "description": "Vorlaeufige Composition (Schnellschnitt-Vorabmitteilung), ersetzt durch die finale Composition",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patho-zusatz-grouper-dar-1"
+        },
+        "name": "Zusaetzliche Beobachtungen Grouper - Immunhistochemie nicht durchgefuehrt",
+        "description": "Zusatzbefund-Grouper mit Komponente ohne Wert: weiterfuehrende Immunhistochemie am erschoepften Block nicht durchgefuehrt (component.dataAbsentReason)",
         "exampleBoolean": true
       },
       {

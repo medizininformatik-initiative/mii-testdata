@@ -12,6 +12,7 @@
 [mii-exa-test-data-patho-befund-bundle-1]: Bundle-mii-exa-test-data-patho-befund-bundle-1.html
 [mii-exa-test-data-studien-studie-1]: ResearchStudy-mii-exa-test-data-studien-studie-1.html
 [mii-exa-test-data-patho-conclusion-grouper-1]: Observation-mii-exa-test-data-patho-conclusion-grouper-1.html
+[mii-exa-test-data-patho-conclusion-grouper-dar-1]: Observation-mii-exa-test-data-patho-conclusion-grouper-dar-1.html
 [mii-exa-test-data-studien-register-1]: Library-mii-exa-test-data-studien-register-1.html
 [mii-exa-test-data-patient-6-list-entlassmedikation]: List-mii-exa-test-data-patient-6-list-entlassmedikation.html
 [mii-exa-test-data-patient-7-list-entlassmedikation]: List-mii-exa-test-data-patient-7-list-entlassmedikation.html
@@ -38,12 +39,14 @@
 [mii-exa-test-data-patho-p63-befund-1]: Observation-mii-exa-test-data-patho-p63-befund-1.html
 [mii-exa-test-data-patho-intraductal-carcinoma]: Observation-mii-exa-test-data-patho-intraductal-carcinoma.html
 [mii-exa-test-data-patho-intraop-grouper-1]: Observation-mii-exa-test-data-patho-intraop-grouper-1.html
+[mii-exa-test-data-patho-intraop-grouper-dar-1]: Observation-mii-exa-test-data-patho-intraop-grouper-dar-1.html
 [mii-exa-test-data-patho-tnm-m-1]: Observation-mii-exa-test-data-patho-tnm-m-1.html
 [mii-exa-test-data-patho-tnm-n-1]: Observation-mii-exa-test-data-patho-tnm-n-1.html
 [mii-exa-test-data-patho-tnm-t-1]: Observation-mii-exa-test-data-patho-tnm-t-1.html
 [mii-exa-test-data-onko-liste-evidenz-1]: List-mii-exa-test-data-onko-liste-evidenz-1.html
 [mii-exa-test-data-patho-lymphovascular-invasion]: Observation-mii-exa-test-data-patho-lymphovascular-invasion.html
 [mii-exa-test-data-patho-macro-grouper-1]: Observation-mii-exa-test-data-patho-macro-grouper-1.html
+[mii-exa-test-data-patho-macro-grouper-dar-1]: Observation-mii-exa-test-data-patho-macro-grouper-dar-1.html
 [mii-exa-test-data-patho-macroscopic-length-01]: Observation-mii-exa-test-data-patho-macroscopic-length-01.html
 [mii-exa-test-data-patho-macroscopic-length-03]: Observation-mii-exa-test-data-patho-macroscopic-length-03.html
 [mii-exa-test-data-semistrukt-befundbericht]: Composition-mii-exa-test-data-semistrukt-befundbericht.html
@@ -366,6 +369,7 @@
 [mii-exa-test-data-mikrobio-spezifische-bestimmung-alt-1]: Observation-mii-exa-test-data-mikrobio-spezifische-bestimmung-alt-1.html
 [mii-exa-test-data-mikrobio-spezifische-bestimmung-dar-1]: Observation-mii-exa-test-data-mikrobio-spezifische-bestimmung-dar-1.html
 [mii-exa-test-data-mikrobio-spezifische-mikroskopie-1]: Observation-mii-exa-test-data-mikrobio-spezifische-mikroskopie-1.html
+[mii-exa-test-data-mikrobio-spezifische-mikroskopie-dar-1]: Observation-mii-exa-test-data-mikrobio-spezifische-mikroskopie-dar-1.html
 [mii-exa-test-data-mikrobio-titer-1]: Observation-mii-exa-test-data-mikrobio-titer-1.html
 [mii-exa-test-data-mikrobio-titer-alt-1]: Observation-mii-exa-test-data-mikrobio-titer-alt-1.html
 [mii-exa-test-data-mikrobio-titer-dar-1]: Observation-mii-exa-test-data-mikrobio-titer-dar-1.html
@@ -438,6 +442,7 @@
 [mii-exa-test-data-onko-melanom-sicherheitsabstand-2]: Observation-mii-exa-test-data-onko-melanom-sicherheitsabstand-2.html
 [mii-exa-test-data-onko-melanom-ulzeration-1]: Observation-mii-exa-test-data-onko-melanom-ulzeration-1.html
 [mii-exa-test-data-onko-melanom-ulzeration-2]: Observation-mii-exa-test-data-onko-melanom-ulzeration-2.html
+[mii-exa-test-data-onko-melanom-ulzeration-dar-1]: Observation-mii-exa-test-data-onko-melanom-ulzeration-dar-1.html
 [mii-exa-test-data-onko-nebenwirkung-1]: AdverseEvent-mii-exa-test-data-onko-nebenwirkung-1.html
 [mii-exa-test-data-onko-nebenwirkung-2]: AdverseEvent-mii-exa-test-data-onko-nebenwirkung-2.html
 [mii-exa-test-data-onko-operation-1]: Procedure-mii-exa-test-data-onko-operation-1.html
@@ -1003,6 +1008,7 @@
 [mii-exa-test-data-symptom-patient-1]: Patient-mii-exa-test-data-symptom-patient-1.html
 [mii-exa-test-data-symptom-questionnaireresponse-1]: QuestionnaireResponse-mii-exa-test-data-symptom-questionnaireresponse-1.html
 [mii-exa-test-data-patho-micro-grouper-1]: Observation-mii-exa-test-data-patho-micro-grouper-1.html
+[mii-exa-test-data-patho-micro-grouper-dar-1]: Observation-mii-exa-test-data-patho-micro-grouper-dar-1.html
 [mii-exa-test-data-patho-morph-text-01]: Observation-mii-exa-test-data-patho-morph-text-01.html
 [mii-exa-test-data-patho-morph-text-03]: Observation-mii-exa-test-data-patho-morph-text-03.html
 [mii-exa-test-data-patho-morphology-free-text]: Observation-mii-exa-test-data-patho-morphology-free-text.html
@@ -1097,4 +1103,5 @@
 [mii-exa-test-data-patho-image-2]: Media-mii-exa-test-data-patho-image-2.html
 [mii-exa-test-data-patho-diagnose-verdacht-1]: Condition-mii-exa-test-data-patho-diagnose-verdacht-1.html
 [mii-exa-test-data-patho-composition-0]: Composition-mii-exa-test-data-patho-composition-0.html
+[mii-exa-test-data-patho-zusatz-grouper-dar-1]: Observation-mii-exa-test-data-patho-zusatz-grouper-dar-1.html
 [mii-exa-test-data-patho-zusatz-grouper-1]: Observation-mii-exa-test-data-patho-zusatz-grouper-1.html

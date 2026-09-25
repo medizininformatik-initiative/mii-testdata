@@ -101,7 +101,7 @@
     "fshType": "Instance",
     "fshFile": "modul-mikrobio/Bundle.fsh",
     "startLine": 5,
-    "endLine": 88
+    "endLine": 89
   },
   {
     "outputFile": "Bundle-mii-exa-test-data-bundle-molgen-1.json",
@@ -125,7 +125,7 @@
     "fshType": "Instance",
     "fshFile": "modul-onkologie/OnkoBundle.fsh",
     "startLine": 6,
-    "endLine": 206
+    "endLine": 207
   },
   {
     "outputFile": "Bundle-mii-exa-test-data-bundle-pat-1.json",
@@ -221,7 +221,7 @@
     "fshType": "Instance",
     "fshFile": "modul-patho/Bundle.fsh",
     "startLine": 5,
-    "endLine": 86
+    "endLine": 92
   },
   {
     "outputFile": "Bundle-mii-exa-test-data-bundle-pro-1.json",
@@ -3996,8 +3996,8 @@
     "fshName": "mii-exa-test-data-mikrobio-empfindlichkeit-sir-1",
     "fshType": "Instance",
     "fshFile": "modul-mikrobio/ObservationVariants.fsh",
-    "startLine": 1375,
-    "endLine": 1410
+    "startLine": 1416,
+    "endLine": 1451
   },
   {
     "outputFile": "Observation-mii-exa-test-data-mikrobio-keimzahl-1.json",
@@ -4060,16 +4060,16 @@
     "fshName": "mii-exa-test-data-mikrobio-molekulare-pathogenlast-alt-1",
     "fshType": "Instance",
     "fshFile": "modul-mikrobio/ObservationVariants.fsh",
-    "startLine": 672,
-    "endLine": 718
+    "startLine": 713,
+    "endLine": 759
   },
   {
     "outputFile": "Observation-mii-exa-test-data-mikrobio-molekulare-pathogenlast-dar-1.json",
     "fshName": "mii-exa-test-data-mikrobio-molekulare-pathogenlast-dar-1",
     "fshType": "Instance",
     "fshFile": "modul-mikrobio/ObservationVariants.fsh",
-    "startLine": 720,
-    "endLine": 753
+    "startLine": 761,
+    "endLine": 794
   },
   {
     "outputFile": "Observation-mii-exa-test-data-mikrobio-mrgn-klasse-1.json",
@@ -4084,16 +4084,16 @@
     "fshName": "mii-exa-test-data-mikrobio-mrgn-klasse-alt-1",
     "fshType": "Instance",
     "fshFile": "modul-mikrobio/ObservationVariants.fsh",
-    "startLine": 833,
-    "endLine": 869
+    "startLine": 874,
+    "endLine": 910
   },
   {
     "outputFile": "Observation-mii-exa-test-data-mikrobio-mrgn-klasse-dar-1.json",
     "fshName": "mii-exa-test-data-mikrobio-mrgn-klasse-dar-1",
     "fshType": "Instance",
     "fshFile": "modul-mikrobio/ObservationVariants.fsh",
-    "startLine": 871,
-    "endLine": 900
+    "startLine": 912,
+    "endLine": 941
   },
   {
     "outputFile": "Observation-mii-exa-test-data-mikrobio-nugent-score-1.json",
@@ -4108,32 +4108,32 @@
     "fshName": "mii-exa-test-data-mikrobio-nugent-score-alt-1",
     "fshType": "Instance",
     "fshFile": "modul-mikrobio/ObservationVariants.fsh",
-    "startLine": 902,
-    "endLine": 945
+    "startLine": 943,
+    "endLine": 986
   },
   {
     "outputFile": "Observation-mii-exa-test-data-mikrobio-nugent-score-dar-1.json",
     "fshName": "mii-exa-test-data-mikrobio-nugent-score-dar-1",
     "fshType": "Instance",
     "fshFile": "modul-mikrobio/ObservationVariants.fsh",
-    "startLine": 947,
-    "endLine": 977
+    "startLine": 988,
+    "endLine": 1018
   },
   {
     "outputFile": "Observation-mii-exa-test-data-mikrobio-resistenz-mech-alt-1.json",
     "fshName": "mii-exa-test-data-mikrobio-resistenz-mech-alt-1",
     "fshType": "Instance",
     "fshFile": "modul-mikrobio/ObservationVariants.fsh",
-    "startLine": 979,
-    "endLine": 1021
+    "startLine": 1020,
+    "endLine": 1062
   },
   {
     "outputFile": "Observation-mii-exa-test-data-mikrobio-resistenz-mech-dar-1.json",
     "fshName": "mii-exa-test-data-mikrobio-resistenz-mech-dar-1",
     "fshType": "Instance",
     "fshFile": "modul-mikrobio/ObservationVariants.fsh",
-    "startLine": 1023,
-    "endLine": 1056
+    "startLine": 1064,
+    "endLine": 1097
   },
   {
     "outputFile": "Observation-mii-exa-test-data-mikrobio-resistenzkategorie-status-1.json",
@@ -4148,16 +4148,16 @@
     "fshName": "mii-exa-test-data-mikrobio-resistenzkategorie-status-alt-1",
     "fshType": "Instance",
     "fshFile": "modul-mikrobio/ObservationVariants.fsh",
-    "startLine": 755,
-    "endLine": 796
+    "startLine": 796,
+    "endLine": 837
   },
   {
     "outputFile": "Observation-mii-exa-test-data-mikrobio-resistenzkategorie-status-neg-1.json",
     "fshName": "mii-exa-test-data-mikrobio-resistenzkategorie-status-neg-1",
     "fshType": "Instance",
     "fshFile": "modul-mikrobio/ObservationVariants.fsh",
-    "startLine": 798,
-    "endLine": 831
+    "startLine": 839,
+    "endLine": 872
   },
   {
     "outputFile": "Observation-mii-exa-test-data-mikrobio-resistenzmechanismen-1.json",
@@ -4180,16 +4180,16 @@
     "fshName": "mii-exa-test-data-mikrobio-spezifische-bestimmung-alt-1",
     "fshType": "Instance",
     "fshFile": "modul-mikrobio/ObservationVariants.fsh",
-    "startLine": 1058,
-    "endLine": 1100
+    "startLine": 1099,
+    "endLine": 1141
   },
   {
     "outputFile": "Observation-mii-exa-test-data-mikrobio-spezifische-bestimmung-dar-1.json",
     "fshName": "mii-exa-test-data-mikrobio-spezifische-bestimmung-dar-1",
     "fshType": "Instance",
     "fshFile": "modul-mikrobio/ObservationVariants.fsh",
-    "startLine": 1102,
-    "endLine": 1135
+    "startLine": 1143,
+    "endLine": 1176
   },
   {
     "outputFile": "Observation-mii-exa-test-data-mikrobio-spezifische-mikroskopie-1.json",
@@ -4198,6 +4198,14 @@
     "fshFile": "modul-mikrobio/Observation.fsh",
     "startLine": 971,
     "endLine": 1019
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-mikrobio-spezifische-mikroskopie-dar-1.json",
+    "fshName": "mii-exa-test-data-mikrobio-spezifische-mikroskopie-dar-1",
+    "fshType": "Instance",
+    "fshFile": "modul-mikrobio/ObservationVariants.fsh",
+    "startLine": 675,
+    "endLine": 711
   },
   {
     "outputFile": "Observation-mii-exa-test-data-mikrobio-titer-1.json",
@@ -4212,16 +4220,16 @@
     "fshName": "mii-exa-test-data-mikrobio-titer-alt-1",
     "fshType": "Instance",
     "fshFile": "modul-mikrobio/ObservationVariants.fsh",
-    "startLine": 1137,
-    "endLine": 1183
+    "startLine": 1178,
+    "endLine": 1224
   },
   {
     "outputFile": "Observation-mii-exa-test-data-mikrobio-titer-dar-1.json",
     "fshName": "mii-exa-test-data-mikrobio-titer-dar-1",
     "fshType": "Instance",
     "fshFile": "modul-mikrobio/ObservationVariants.fsh",
-    "startLine": 1185,
-    "endLine": 1215
+    "startLine": 1226,
+    "endLine": 1256
   },
   {
     "outputFile": "Observation-mii-exa-test-data-mikrobio-virulenzfaktor-1.json",
@@ -4236,32 +4244,32 @@
     "fshName": "mii-exa-test-data-mikrobio-virulenzfaktor-alt-1",
     "fshType": "Instance",
     "fshFile": "modul-mikrobio/ObservationVariants.fsh",
-    "startLine": 1217,
-    "endLine": 1259
+    "startLine": 1258,
+    "endLine": 1300
   },
   {
     "outputFile": "Observation-mii-exa-test-data-mikrobio-virulenzfaktor-dar-1.json",
     "fshName": "mii-exa-test-data-mikrobio-virulenzfaktor-dar-1",
     "fshType": "Instance",
     "fshFile": "modul-mikrobio/ObservationVariants.fsh",
-    "startLine": 1261,
-    "endLine": 1294
+    "startLine": 1302,
+    "endLine": 1335
   },
   {
     "outputFile": "Observation-mii-exa-test-data-mikrobio-voraus-empf-alt-1.json",
     "fshName": "mii-exa-test-data-mikrobio-voraus-empf-alt-1",
     "fshType": "Instance",
     "fshFile": "modul-mikrobio/ObservationVariants.fsh",
-    "startLine": 1296,
-    "endLine": 1338
+    "startLine": 1337,
+    "endLine": 1379
   },
   {
     "outputFile": "Observation-mii-exa-test-data-mikrobio-voraus-empf-dar-1.json",
     "fshName": "mii-exa-test-data-mikrobio-voraus-empf-dar-1",
     "fshType": "Instance",
     "fshFile": "modul-mikrobio/ObservationVariants.fsh",
-    "startLine": 1340,
-    "endLine": 1373
+    "startLine": 1381,
+    "endLine": 1414
   },
   {
     "outputFile": "Observation-mii-exa-test-data-mikrobio-voraussichtliche-empfindlichkeit-1.json",
@@ -4716,32 +4724,32 @@
     "fshName": "mii-exa-test-data-onko-melanom-ldh-1",
     "fshType": "Instance",
     "fshFile": "modul-onkologie/organ-specific/Melanom.fsh",
-    "startLine": 104,
-    "endLine": 120
+    "startLine": 120,
+    "endLine": 136
   },
   {
     "outputFile": "Observation-mii-exa-test-data-onko-melanom-ldh-2.json",
     "fshName": "mii-exa-test-data-onko-melanom-ldh-2",
     "fshType": "Instance",
     "fshFile": "modul-onkologie/organ-specific/Melanom.fsh",
-    "startLine": 123,
-    "endLine": 140
+    "startLine": 139,
+    "endLine": 156
   },
   {
     "outputFile": "Observation-mii-exa-test-data-onko-melanom-sicherheitsabstand-1.json",
     "fshName": "mii-exa-test-data-onko-melanom-sicherheitsabstand-1",
     "fshType": "Instance",
     "fshFile": "modul-onkologie/organ-specific/Melanom.fsh",
-    "startLine": 71,
-    "endLine": 86
+    "startLine": 87,
+    "endLine": 102
   },
   {
     "outputFile": "Observation-mii-exa-test-data-onko-melanom-sicherheitsabstand-2.json",
     "fshName": "mii-exa-test-data-onko-melanom-sicherheitsabstand-2",
     "fshType": "Instance",
     "fshFile": "modul-onkologie/organ-specific/Melanom.fsh",
-    "startLine": 89,
-    "endLine": 101
+    "startLine": 105,
+    "endLine": 117
   },
   {
     "outputFile": "Observation-mii-exa-test-data-onko-melanom-ulzeration-1.json",
@@ -4758,6 +4766,14 @@
     "fshFile": "modul-onkologie/organ-specific/Melanom.fsh",
     "startLine": 56,
     "endLine": 68
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-onko-melanom-ulzeration-dar-1.json",
+    "fshName": "mii-exa-test-data-onko-melanom-ulzeration-dar-1",
+    "fshType": "Instance",
+    "fshFile": "modul-onkologie/organ-specific/Melanom.fsh",
+    "startLine": 71,
+    "endLine": 84
   },
   {
     "outputFile": "Observation-mii-exa-test-data-onko-prostata-anzahl-stanzen-1.json",
@@ -5116,8 +5132,8 @@
     "fshName": "mii-exa-test-data-patho-asap",
     "fshType": "Instance",
     "fshFile": "modul-patho/PathoConclusion.fsh",
-    "startLine": 438,
-    "endLine": 453
+    "startLine": 439,
+    "endLine": 454
   },
   {
     "outputFile": "Observation-mii-exa-test-data-patho-conclusion-grouper-1.json",
@@ -5126,6 +5142,14 @@
     "fshFile": "modul-patho/PathoConclusion.fsh",
     "startLine": 6,
     "endLine": 55
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patho-conclusion-grouper-dar-1.json",
+    "fshName": "mii-exa-test-data-patho-conclusion-grouper-dar-1",
+    "fshType": "Instance",
+    "fshFile": "modul-patho/PathoGrouperDataAbsent.fsh",
+    "startLine": 93,
+    "endLine": 114
   },
   {
     "outputFile": "Observation-mii-exa-test-data-patho-gleason-grading-01.json",
@@ -5141,31 +5165,31 @@
     "fshType": "Instance",
     "fshFile": "modul-patho/PathoConclusion.fsh",
     "startLine": 155,
-    "endLine": 183
+    "endLine": 184
   },
   {
     "outputFile": "Observation-mii-exa-test-data-patho-grading-group-isup.json",
     "fshName": "mii-exa-test-data-patho-grading-group-isup",
     "fshType": "Instance",
     "fshFile": "modul-patho/PathoConclusion.fsh",
-    "startLine": 207,
-    "endLine": 222
+    "startLine": 208,
+    "endLine": 223
   },
   {
     "outputFile": "Observation-mii-exa-test-data-patho-granulomatous-prostatitis.json",
     "fshName": "mii-exa-test-data-patho-granulomatous-prostatitis",
     "fshType": "Instance",
     "fshFile": "modul-patho/PathoConclusion.fsh",
-    "startLine": 474,
-    "endLine": 489
+    "startLine": 475,
+    "endLine": 490
   },
   {
     "outputFile": "Observation-mii-exa-test-data-patho-high-grade-pin.json",
     "fshName": "mii-exa-test-data-patho-high-grade-pin",
     "fshType": "Instance",
     "fshFile": "modul-patho/PathoConclusion.fsh",
-    "startLine": 456,
-    "endLine": 471
+    "startLine": 457,
+    "endLine": 472
   },
   {
     "outputFile": "Observation-mii-exa-test-data-patho-histo-typ-01.json",
@@ -5188,8 +5212,8 @@
     "fshName": "mii-exa-test-data-patho-histological-grade-who",
     "fshType": "Instance",
     "fshFile": "modul-patho/PathoConclusion.fsh",
-    "startLine": 225,
-    "endLine": 241
+    "startLine": 226,
+    "endLine": 242
   },
   {
     "outputFile": "Observation-mii-exa-test-data-patho-histological-type-icdo-3.json",
@@ -5212,8 +5236,8 @@
     "fshName": "mii-exa-test-data-patho-intraductal-carcinoma",
     "fshType": "Instance",
     "fshFile": "modul-patho/PathoConclusion.fsh",
-    "startLine": 420,
-    "endLine": 435
+    "startLine": 421,
+    "endLine": 436
   },
   {
     "outputFile": "Observation-mii-exa-test-data-patho-intraop-befund-1.json",
@@ -5232,12 +5256,20 @@
     "endLine": 54
   },
   {
+    "outputFile": "Observation-mii-exa-test-data-patho-intraop-grouper-dar-1.json",
+    "fshName": "mii-exa-test-data-patho-intraop-grouper-dar-1",
+    "fshType": "Instance",
+    "fshFile": "modul-patho/PathoGrouperDataAbsent.fsh",
+    "startLine": 67,
+    "endLine": 88
+  },
+  {
     "outputFile": "Observation-mii-exa-test-data-patho-lymphovascular-invasion.json",
     "fshName": "mii-exa-test-data-patho-lymphovascular-invasion",
     "fshType": "Instance",
     "fshFile": "modul-patho/PathoConclusion.fsh",
-    "startLine": 384,
-    "endLine": 399
+    "startLine": 385,
+    "endLine": 400
   },
   {
     "outputFile": "Observation-mii-exa-test-data-patho-macro-grouper-1.json",
@@ -5246,6 +5278,14 @@
     "fshFile": "modul-patho/PathoMacroscopy.fsh",
     "startLine": 6,
     "endLine": 42
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patho-macro-grouper-dar-1.json",
+    "fshName": "mii-exa-test-data-patho-macro-grouper-dar-1",
+    "fshType": "Instance",
+    "fshFile": "modul-patho/PathoGrouperDataAbsent.fsh",
+    "startLine": 15,
+    "endLine": 36
   },
   {
     "outputFile": "Observation-mii-exa-test-data-patho-macroscopic-cylinder-count-01.json",
@@ -5304,6 +5344,14 @@
     "endLine": 41
   },
   {
+    "outputFile": "Observation-mii-exa-test-data-patho-micro-grouper-dar-1.json",
+    "fshName": "mii-exa-test-data-patho-micro-grouper-dar-1",
+    "fshType": "Instance",
+    "fshFile": "modul-patho/PathoGrouperDataAbsent.fsh",
+    "startLine": 41,
+    "endLine": 62
+  },
+  {
     "outputFile": "Observation-mii-exa-test-data-patho-morph-text-01.json",
     "fshName": "mii-exa-test-data-patho-morph-text-01",
     "fshType": "Instance",
@@ -5340,48 +5388,48 @@
     "fshName": "mii-exa-test-data-patho-percentage-gleason-45",
     "fshType": "Instance",
     "fshFile": "modul-patho/PathoConclusion.fsh",
-    "startLine": 186,
-    "endLine": 204
+    "startLine": 187,
+    "endLine": 205
   },
   {
     "outputFile": "Observation-mii-exa-test-data-patho-percentage-tumor-total.json",
     "fshName": "mii-exa-test-data-patho-percentage-tumor-total",
     "fshType": "Instance",
     "fshFile": "modul-patho/PathoConclusion.fsh",
-    "startLine": 306,
-    "endLine": 324
+    "startLine": 307,
+    "endLine": 325
   },
   {
     "outputFile": "Observation-mii-exa-test-data-patho-perineural-infiltration.json",
     "fshName": "mii-exa-test-data-patho-perineural-infiltration",
     "fshType": "Instance",
     "fshFile": "modul-patho/PathoConclusion.fsh",
-    "startLine": 348,
-    "endLine": 363
+    "startLine": 349,
+    "endLine": 364
   },
   {
     "outputFile": "Observation-mii-exa-test-data-patho-periprostatatic-fat-invasion.json",
     "fshName": "mii-exa-test-data-patho-periprostatatic-fat-invasion",
     "fshType": "Instance",
     "fshFile": "modul-patho/PathoConclusion.fsh",
-    "startLine": 402,
-    "endLine": 417
+    "startLine": 403,
+    "endLine": 418
   },
   {
     "outputFile": "Observation-mii-exa-test-data-patho-positive-cores-left.json",
     "fshName": "mii-exa-test-data-patho-positive-cores-left",
     "fshType": "Instance",
     "fshFile": "modul-patho/PathoConclusion.fsh",
-    "startLine": 265,
-    "endLine": 282
+    "startLine": 266,
+    "endLine": 283
   },
   {
     "outputFile": "Observation-mii-exa-test-data-patho-positive-cores-right.json",
     "fshName": "mii-exa-test-data-patho-positive-cores-right",
     "fshType": "Instance",
     "fshFile": "modul-patho/PathoConclusion.fsh",
-    "startLine": 244,
-    "endLine": 261
+    "startLine": 245,
+    "endLine": 262
   },
   {
     "outputFile": "Observation-mii-exa-test-data-patho-primaer-gleason-01.json",
@@ -5412,8 +5460,8 @@
     "fshName": "mii-exa-test-data-patho-ratio-positive-cores",
     "fshType": "Instance",
     "fshFile": "modul-patho/PathoConclusion.fsh",
-    "startLine": 285,
-    "endLine": 303
+    "startLine": 286,
+    "endLine": 304
   },
   {
     "outputFile": "Observation-mii-exa-test-data-patho-secondary-gleason-pattern.json",
@@ -5436,8 +5484,8 @@
     "fshName": "mii-exa-test-data-patho-seminal-vesicle-invasion",
     "fshType": "Instance",
     "fshFile": "modul-patho/PathoConclusion.fsh",
-    "startLine": 366,
-    "endLine": 381
+    "startLine": 367,
+    "endLine": 382
   },
   {
     "outputFile": "Observation-mii-exa-test-data-patho-tnm-m-1.json",
@@ -5468,8 +5516,8 @@
     "fshName": "mii-exa-test-data-patho-tumor-length-total",
     "fshType": "Instance",
     "fshFile": "modul-patho/PathoConclusion.fsh",
-    "startLine": 327,
-    "endLine": 345
+    "startLine": 328,
+    "endLine": 346
   },
   {
     "outputFile": "Observation-mii-exa-test-data-patho-tumoranteil-01.json",
@@ -5486,6 +5534,14 @@
     "fshFile": "modul-patho/PathoIntraopZusatz.fsh",
     "startLine": 79,
     "endLine": 103
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-patho-zusatz-grouper-dar-1.json",
+    "fshName": "mii-exa-test-data-patho-zusatz-grouper-dar-1",
+    "fshType": "Instance",
+    "fshFile": "modul-patho/PathoGrouperDataAbsent.fsh",
+    "startLine": 119,
+    "endLine": 140
   },
   {
     "outputFile": "Observation-mii-exa-test-data-patient-1-icu-bilanz-ausf-fluess-1.json",
@@ -7804,8 +7860,8 @@
     "fshName": "mii-exa-test-data-onko-melanom-exzision-1",
     "fshType": "Instance",
     "fshFile": "modul-onkologie/organ-specific/Melanom.fsh",
-    "startLine": 143,
-    "endLine": 173
+    "startLine": 159,
+    "endLine": 189
   },
   {
     "outputFile": "Procedure-mii-exa-test-data-onko-operation-1.json",
