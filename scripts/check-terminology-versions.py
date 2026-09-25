@@ -21,7 +21,6 @@ Der Report ist das Ergebnis, kein Gate: Exit immer 0.
 """
 import argparse
 import glob
-import re
 import json
 import os
 import sys
@@ -141,16 +140,16 @@ def other_declarations(pkgs):
     return out
 
 
-def _datelike(v):
-    """Ist der Versionswert eine Datums-/Jahresangabe?
-
-    THO fuehrt fuer extern gepflegte CodeSystems (`content: not-present`) teils
-    die ECHTE Terminologie-Version (MDC: `20250520`), teils nur die eigene
-    Ressourcen-Version (LOINC: `3.1.0` — LOINC-Releases sind 2.x). Nur wenn
-    Server- und Paketwert dasselbe Schema haben, ist ein Vergleich zulaessig.
-    """
-    v = str(v or "")
-    return bool(re.fullmatch(r"(19|20)\d{2}([-.]?\d{2}[-.]?\d{2})?", v))
+# WARUM HIER NICHT AUTOMATISCH GEURTEILT WIRD
+#
+# Fuer extern gepflegte CodeSystems (`content: not-present`) ist die `version`
+# der HL7-Deklaration NICHT die Version der Terminologie, sondern die der
+# Deklarations-Ressource. Belegt am MDC-Eintrag: von THO 5.0.0 bis 6.3.0
+# konstant `2.0.1` (Stand 2019), dann in 6.5.0 `20250520` — ein Schemawechsel
+# anlaesslich einer Copyright-Aktualisierung, nicht einer Nomenklatur-Release
+# (siehe Aenderungshistorie auf terminology.hl7.org). Ein Vergleich gegen den
+# Server ergibt deshalb auch dann keinen Sinn, wenn beide Werte datumsfoermig
+# sind. Der Report nennt die Fakten; die Bewertung bleibt beim Menschen.
 
 
 def _post(url, payload, timeout):
@@ -256,19 +255,18 @@ def main():
     if undeclared:
         print(f"\n**{len(undeclared)} Systeme existieren nur serverseitig** — kein gepinntes Paket "
               "deklariert eine Version. Damit ist die zugrunde liegende Fassung allein eine "
-              "Eigenschaft des Servers und in keinem Pin sichtbar:\n")
+              "Eigenschaft des Servers und in keinem Pin sichtbar. Ob ein Update noetig ist, "
+              "laesst sich NICHT aus den Paketwerten ableiten (s.o.) — dafuer braucht es die "
+              "Release-Info der jeweiligen Terminologie (SNOMED/LOINC/BfArM-Kalender, "
+              "fuer MDC das RTMMS):\n")
         for s in undeclared:
             sv = server_ver.get(s)
-            cand = [(v, p) for v, p in other.get(s, {}).items()
-                    if _datelike(v) and _datelike(sv)]
-            if cand:
-                v, pkg = sorted(cand)[-1]
-                flag = " **→ Server ist aelter, Update anfragen**" if str(v) > str(sv).replace("-", "") else ""
-                print(f"- `{s}` — Server `{sv}`; `{pkg}` deklariert `{v}`{flag}")
-            elif other.get(s):
-                print(f"- `{s}` — Server `{sv}`; Paket-Deklarationen vorhanden, aber in "
-                      "anderem Versionsschema (Ressourcen- statt Terminologieversion) — "
-                      "nicht vergleichbar")
+            hint = other.get(s, {})
+            if hint:
+                newest = sorted(hint.items())[-1]
+                print(f"- `{s}` — Server `{sv}`; zum Vergleich deklariert "
+                      f"`{newest[1]}` den Wert `{newest[0]}` *(Version der "
+                      "Deklarations-Ressource, nicht der Terminologie — siehe Kopf)*")
             else:
                 print(f"- `{s}` — Server `{sv}`; keine Paket-Deklaration bekannt")
     if unreachable:
