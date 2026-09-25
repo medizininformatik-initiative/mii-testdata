@@ -4647,6 +4647,14 @@
       },
       {
         "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-event-o2-partial-dar-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-event-o2-partial-dar-1",
+        "description": "ICU Observation (dataAbsentReason): Exspiratorischer Sauerstoffpartialdruck - waehrend Diskonnektion nicht erhoben",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Observation/mii-exa-test-data-patient-1-icu-muv-atemfreq-1"
         },
         "name": "mii-exa-test-data-patient-1-icu-muv-atemfreq-1",
@@ -4659,6 +4667,14 @@
         },
         "name": "mii-exa-test-data-patient-1-icu-muv-blutdruck-1",
         "description": "ICU Observation: MII PR ICU Arterieller Blutdruck",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-muv-blutdruck-dar-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-muv-blutdruck-dar-1",
+        "description": "ICU Observation (dataAbsentReason): Arterieller Blutdruck beim Wechsel des Druckaufnehmers nicht verfuegbar",
         "exampleBoolean": true
       },
       {
@@ -4687,6 +4703,14 @@
       },
       {
         "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-muv-groesse-dar-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-muv-groesse-dar-1",
+        "description": "ICU Observation (dataAbsentReason): Koerpergroesse bei beatmeter Patientin nicht messbar",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Observation/mii-exa-test-data-patient-1-icu-muv-groesse-var-1"
         },
         "name": "mii-exa-test-data-patient-1-icu-muv-groesse-var-1",
@@ -4703,6 +4727,14 @@
       },
       {
         "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-muv-herzfreq-dar-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-muv-herzfreq-dar-1",
+        "description": "ICU Observation (dataAbsentReason): Herzfrequenz waehrend Transport nicht abgeleitet",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Observation/mii-exa-test-data-patient-1-icu-muv-kopfumfang-1"
         },
         "name": "mii-exa-test-data-patient-1-icu-muv-kopfumfang-1",
@@ -4711,10 +4743,26 @@
       },
       {
         "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-muv-kopfumfang-dar-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-muv-kopfumfang-dar-1",
+        "description": "ICU Observation (dataAbsentReason): Kopfumfang nicht erhoben",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Observation/mii-exa-test-data-patient-1-icu-muv-laenge-1"
         },
         "name": "mii-exa-test-data-patient-1-icu-muv-laenge-1",
         "description": "ICU Observation: MII PR ICU Koerperlaenge (liegend, 168 cm bei Aufnahme)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-muv-laenge-dar-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-muv-laenge-dar-1",
+        "description": "ICU Observation (dataAbsentReason): Koerperlaenge in Bauchlage nicht messbar",
         "exampleBoolean": true
       },
       {
@@ -4735,10 +4783,26 @@
       },
       {
         "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-pupille-befund-dar-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-pupille-befund-dar-1",
+        "description": "ICU Pupillenbefund (dataAbsentReason): Grouper - Pupillen bei Lidoedem nicht beurteilbar",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Observation/mii-exa-test-data-patient-1-icu-pupille-form-li-1"
         },
         "name": "mii-exa-test-data-patient-1-icu-pupille-form-li-1",
         "description": "ICU Pupillenbefund: Pupillenform links rund",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-pupille-form-li-dar-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-pupille-form-li-dar-1",
+        "description": "ICU Pupillenbefund (dataAbsentReason): Pupillenform links nicht beurteilbar",
         "exampleBoolean": true
       },
       {
@@ -4751,10 +4815,26 @@
       },
       {
         "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-pupille-form-re-dar-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-pupille-form-re-dar-1",
+        "description": "ICU Pupillenbefund (dataAbsentReason): Pupillenform rechts nicht beurteilbar",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Observation/mii-exa-test-data-patient-1-icu-pupille-groesse-li-1"
         },
         "name": "mii-exa-test-data-patient-1-icu-pupille-groesse-li-1",
         "description": "ICU Pupillenbefund: Pupillengroesse links 5 mm (Anisokorie)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-pupille-groesse-li-dar-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-pupille-groesse-li-dar-1",
+        "description": "ICU Pupillenbefund (dataAbsentReason): Pupillengroesse links nicht messbar",
         "exampleBoolean": true
       },
       {
@@ -4767,10 +4847,26 @@
       },
       {
         "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-pupille-groesse-re-dar-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-pupille-groesse-re-dar-1",
+        "description": "ICU Pupillenbefund (dataAbsentReason): Pupillengroesse rechts nicht messbar",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Observation/mii-exa-test-data-patient-1-icu-pupille-licht-dir-li-1"
         },
         "name": "mii-exa-test-data-patient-1-icu-pupille-licht-dir-li-1",
         "description": "ICU Pupillenbefund: direkte Lichtreaktion links traege",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-pupille-licht-dir-li-dar-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-pupille-licht-dir-li-dar-1",
+        "description": "ICU Pupillenbefund (dataAbsentReason): direkte Lichtreaktion links nicht pruefbar",
         "exampleBoolean": true
       },
       {
@@ -4783,10 +4879,26 @@
       },
       {
         "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-pupille-licht-dir-re-dar-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-pupille-licht-dir-re-dar-1",
+        "description": "ICU Pupillenbefund (dataAbsentReason): direkte Lichtreaktion rechts nicht pruefbar",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Observation/mii-exa-test-data-patient-1-icu-pupille-licht-ind-li-1"
         },
         "name": "mii-exa-test-data-patient-1-icu-pupille-licht-ind-li-1",
         "description": "ICU Pupillenbefund: indirekte (konsensuelle) Lichtreaktion links traege",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-pupille-licht-ind-li-dar-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-pupille-licht-ind-li-dar-1",
+        "description": "ICU Pupillenbefund (dataAbsentReason): indirekte Lichtreaktion links nicht pruefbar",
         "exampleBoolean": true
       },
       {
@@ -4799,10 +4911,26 @@
       },
       {
         "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-pupille-licht-ind-re-dar-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-pupille-licht-ind-re-dar-1",
+        "description": "ICU Pupillenbefund (dataAbsentReason): indirekte Lichtreaktion rechts nicht pruefbar",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Observation/mii-exa-test-data-patient-1-icu-pupille-symmetrie-1"
         },
         "name": "mii-exa-test-data-patient-1-icu-pupille-symmetrie-1",
         "description": "ICU Pupillenbefund: Pupillensymmetrie - Anisokorie",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-pupille-symmetrie-dar-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-pupille-symmetrie-dar-1",
+        "description": "ICU Pupillenbefund (dataAbsentReason): Pupillensymmetrie nicht beurteilbar",
         "exampleBoolean": true
       },
       {
@@ -4823,10 +4951,26 @@
       },
       {
         "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-score-fpsr-dar-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-score-fpsr-dar-1",
+        "description": "ICU Score (dataAbsentReason): FPS-R 4/10, NRS-Gegenprobe nicht erhoben",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Observation/mii-exa-test-data-patient-1-icu-score-gcs-1"
         },
         "name": "mii-exa-test-data-patient-1-icu-score-gcs-1",
         "description": "ICU Score: Glasgow Coma Scale 8 (E2 V2 M4) unter Sedierung",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-score-gcs-dar-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-score-gcs-dar-1",
+        "description": "ICU Score (dataAbsentReason): GCS 6T - verbale Reaktion bei intubierter Patientin nicht beurteilbar",
         "exampleBoolean": true
       },
       {
@@ -4863,6 +5007,14 @@
       },
       {
         "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-score-rass-dar-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-score-rass-dar-1",
+        "description": "ICU Score (dataAbsentReason): RASS unter Muskelrelaxierung nicht beurteilbar",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Observation/mii-exa-test-data-patient-1-icu-score-sofa-1"
         },
         "name": "mii-exa-test-data-patient-1-icu-score-sofa-1",
@@ -4875,6 +5027,14 @@
         },
         "name": "mii-exa-test-data-patient-1-icu-score-vas-1",
         "description": "ICU Score: Visuelle Analogskala Schmerz 45 mm",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-score-vas-dar-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-score-vas-dar-1",
+        "description": "ICU Score (dataAbsentReason): Visuelle Analogskala unter Analgosedierung nicht erhebbar",
         "exampleBoolean": true
       },
       {
@@ -4895,6 +5055,14 @@
       },
       {
         "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-score-zopa-dar-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-score-zopa-dar-1",
+        "description": "ICU Score (dataAbsentReason): ZOPA erhoben, NRS-Selbsteinschaetzung nicht moeglich",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Observation/mii-exa-test-data-patient-1-icu-vent-atemdr-mitt-1"
         },
         "name": "mii-exa-test-data-patient-1-icu-vent-atemdr-mitt-1",
@@ -4903,10 +5071,26 @@
       },
       {
         "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-vent-atemdr-mitt-dar-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-vent-atemdr-mitt-dar-1",
+        "description": "ICU Observation (dataAbsentReason): Atemwegsdruck bei mittlerem expiratorischem Gasfluss - waehrend Diskonnektion nicht erhoben",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Observation/mii-exa-test-data-patient-1-icu-vent-atemdr-null-1"
         },
         "name": "mii-exa-test-data-patient-1-icu-vent-atemdr-null-1",
         "description": "ICU Observation: MII PR ICU Atemwegsdruck Bei Null Expiratorischem Gasfluss",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-vent-atemdr-null-dar-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-vent-atemdr-null-dar-1",
+        "description": "ICU Observation (dataAbsentReason): Atemwegsdruck bei Null-Gasfluss (exspiratorisch) - waehrend Diskonnektion nicht erhoben",
         "exampleBoolean": true
       },
       {
@@ -4927,6 +5111,14 @@
       },
       {
         "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-vent-compliance-dar-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-vent-compliance-dar-1",
+        "description": "ICU Observation (dataAbsentReason): Dynamische Kompliance - waehrend Diskonnektion nicht erhoben",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "DeviceMetric/mii-exa-test-data-patient-1-icu-vent-dm-param-1"
         },
         "name": "mii-exa-test-data-patient-1-icu-vent-dm-param-1",
@@ -4943,6 +5135,14 @@
       },
       {
         "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-vent-dp-dar-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-vent-dp-dar-1",
+        "description": "ICU Observation (dataAbsentReason): Druckdifferenz der Beatmung - waehrend Diskonnektion nicht erhoben",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Observation/mii-exa-test-data-patient-1-icu-vent-etco2-1"
         },
         "name": "mii-exa-test-data-patient-1-icu-vent-etco2-1",
@@ -4951,10 +5151,26 @@
       },
       {
         "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-vent-etco2-dar-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-vent-etco2-dar-1",
+        "description": "ICU Observation (dataAbsentReason): Endexspiratorischer Kohlendioxidpartialdruck - waehrend Diskonnektion nicht erhoben",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Observation/mii-exa-test-data-patient-1-icu-vent-exp-flow-1"
         },
         "name": "mii-exa-test-data-patient-1-icu-vent-exp-flow-1",
         "description": "ICU Observation: MII PR ICU Exspiratorischer Gasfluss",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-vent-exp-flow-dar-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-vent-exp-flow-dar-1",
+        "description": "ICU Observation (dataAbsentReason): Exspiratorischer Gasfluss - waehrend Diskonnektion nicht erhoben",
         "exampleBoolean": true
       },
       {
@@ -4975,10 +5191,26 @@
       },
       {
         "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-vent-fio2-gem-dar-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-vent-fio2-gem-dar-1",
+        "description": "ICU Observation (dataAbsentReason): Inspiratorische Sauerstofffraktion (gemessen) - waehrend Diskonnektion nicht erhoben",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Observation/mii-exa-test-data-patient-1-icu-vent-freq-mech-1"
         },
         "name": "mii-exa-test-data-patient-1-icu-vent-freq-mech-1",
         "description": "ICU Observation: MII PR ICU Mechanische Atemfrequenz Beatmet",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-vent-freq-mech-dar-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-vent-freq-mech-dar-1",
+        "description": "ICU Observation (dataAbsentReason): Mechanische Atemfrequenz - waehrend Diskonnektion nicht erhoben",
         "exampleBoolean": true
       },
       {
@@ -4991,10 +5223,26 @@
       },
       {
         "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-vent-freq-spont-dar-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-vent-freq-spont-dar-1",
+        "description": "ICU Observation (dataAbsentReason): Spontane Atemfrequenz (beatmet) - waehrend Diskonnektion nicht erhoben",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Observation/mii-exa-test-data-patient-1-icu-vent-freq-spont-mech-1"
         },
         "name": "mii-exa-test-data-patient-1-icu-vent-freq-spont-mech-1",
         "description": "ICU Observation: MII PR ICU Spontane Mechanische Atemfrequenz Beatmet",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-vent-freq-spont-mech-dar-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-vent-freq-spont-mech-dar-1",
+        "description": "ICU Observation (dataAbsentReason): Spontane und mechanische Atemfrequenz (beatmet) - waehrend Diskonnektion nicht erhoben",
         "exampleBoolean": true
       },
       {
@@ -5007,10 +5255,26 @@
       },
       {
         "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-vent-horowitz-dar-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-vent-horowitz-dar-1",
+        "description": "ICU Observation (dataAbsentReason): Horowitz-Index in arteriellem Blut - waehrend Diskonnektion nicht erhoben",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Observation/mii-exa-test-data-patient-1-icu-vent-ie-ratio-1"
         },
         "name": "mii-exa-test-data-patient-1-icu-vent-ie-ratio-1",
         "description": "ICU Observation: MII PR ICU Zeitverhaeltnis Ein Ausatmung",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-vent-ie-ratio-dar-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-vent-ie-ratio-dar-1",
+        "description": "ICU Observation (dataAbsentReason): Zeitverhaeltnis Ein-/Ausatmung (I:E) - waehrend Diskonnektion nicht erhoben",
         "exampleBoolean": true
       },
       {
@@ -5023,10 +5287,26 @@
       },
       {
         "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-vent-insp-flow-dar-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-vent-insp-flow-dar-1",
+        "description": "ICU Observation (dataAbsentReason): Inspiratorischer Gasfluss - waehrend Diskonnektion nicht erhoben",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Observation/mii-exa-test-data-patient-1-icu-vent-insp-flow-set-1"
         },
         "name": "mii-exa-test-data-patient-1-icu-vent-insp-flow-set-1",
         "description": "ICU Observation: MII PR ICU Eingestellter Inspiratorischer Gasfluss",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-vent-insp-flow-set-dar-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-vent-insp-flow-set-dar-1",
+        "description": "ICU Observation (dataAbsentReason): Eingestellter inspiratorischer Gasfluss - waehrend Diskonnektion nicht erhoben",
         "exampleBoolean": true
       },
       {
@@ -5039,10 +5319,26 @@
       },
       {
         "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-vent-map-dar-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-vent-map-dar-1",
+        "description": "ICU Observation (dataAbsentReason): Mittlerer Beatmungsdruck - waehrend Diskonnektion nicht erhoben",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Observation/mii-exa-test-data-patient-1-icu-vent-mv-masch-1"
         },
         "name": "mii-exa-test-data-patient-1-icu-vent-mv-masch-1",
         "description": "ICU Observation: MII PR ICU Beatmungsvolumen Pro Minute Maschineller Beatmung",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-vent-mv-masch-dar-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-vent-mv-masch-dar-1",
+        "description": "ICU Observation (dataAbsentReason): Beatmungsvolumen pro Minute (maschinelle Beatmung) - waehrend Diskonnektion nicht erhoben",
         "exampleBoolean": true
       },
       {
@@ -5055,10 +5351,26 @@
       },
       {
         "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-vent-param-generisch-dar-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-vent-param-generisch-dar-1",
+        "description": "ICU Observation (dataAbsentReason): Parameter von Beatmung (generisch, inspiratorisches Minutenvolumen) - waehrend Diskonnektion nicht erhoben",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Observation/mii-exa-test-data-patient-1-icu-vent-peep-1"
         },
         "name": "mii-exa-test-data-patient-1-icu-vent-peep-1",
         "description": "ICU Observation: MII PR ICU Positiv Endexpiratorischer Druck",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-vent-peep-dar-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-vent-peep-dar-1",
+        "description": "ICU Observation (dataAbsentReason): Positiv-endexspiratorischer Druck (PEEP) - waehrend Diskonnektion nicht erhoben",
         "exampleBoolean": true
       },
       {
@@ -5071,10 +5383,26 @@
       },
       {
         "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-vent-pip-dar-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-vent-pip-dar-1",
+        "description": "ICU Observation (dataAbsentReason): Maximaler Beatmungsdruck - waehrend Diskonnektion nicht erhoben",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Observation/mii-exa-test-data-patient-1-icu-vent-pmax-insp-1"
         },
         "name": "mii-exa-test-data-patient-1-icu-vent-pmax-insp-1",
         "description": "ICU Observation: MII PR ICU Maximaler Inspiratorischer Beatmungsdruck",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-vent-pmax-insp-dar-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-vent-pmax-insp-dar-1",
+        "description": "ICU Observation (dataAbsentReason): Maximaler inspiratorischer Beatmungsdruck - waehrend Diskonnektion nicht erhoben",
         "exampleBoolean": true
       },
       {
@@ -5087,10 +5415,26 @@
       },
       {
         "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-vent-pmean-insp-dar-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-vent-pmean-insp-dar-1",
+        "description": "ICU Observation (dataAbsentReason): Mittlerer inspiratorischer Beatmungsdruck - waehrend Diskonnektion nicht erhoben",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Observation/mii-exa-test-data-patient-1-icu-vent-pplat-1"
         },
         "name": "mii-exa-test-data-patient-1-icu-vent-pplat-1",
         "description": "ICU Observation: MII PR ICU Plateau-Beatmungsdruck (lungenprotektiv unter ECMO)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-vent-pplat-dar-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-vent-pplat-dar-1",
+        "description": "ICU Observation (dataAbsentReason): Plateau-Beatmungsdruck - waehrend Diskonnektion nicht erhoben",
         "exampleBoolean": true
       },
       {
@@ -5103,10 +5447,26 @@
       },
       {
         "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-vent-ps-dar-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-vent-ps-dar-1",
+        "description": "ICU Observation (dataAbsentReason): Unterstuetzungsdruck der Beatmung - waehrend Diskonnektion nicht erhoben",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Observation/mii-exa-test-data-patient-1-icu-vent-te-1"
         },
         "name": "mii-exa-test-data-patient-1-icu-vent-te-1",
         "description": "ICU Observation: MII PR ICU Einstellung Ausatmungszeit Beatmung",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-vent-te-dar-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-vent-te-dar-1",
+        "description": "ICU Observation (dataAbsentReason): Einstellung Ausatmungszeit - waehrend Diskonnektion nicht erhoben",
         "exampleBoolean": true
       },
       {
@@ -5119,10 +5479,26 @@
       },
       {
         "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-vent-ti-dar-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-vent-ti-dar-1",
+        "description": "ICU Observation (dataAbsentReason): Einstellung Einatmungszeit - waehrend Diskonnektion nicht erhoben",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Observation/mii-exa-test-data-patient-1-icu-vent-vt-beat-1"
         },
         "name": "mii-exa-test-data-patient-1-icu-vent-vt-beat-1",
         "description": "ICU Observation: MII PR ICU Atemzugvolumen Waehrend Beatmung",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-vent-vt-beat-dar-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-vent-vt-beat-dar-1",
+        "description": "ICU Observation (dataAbsentReason): Atemzugvolumen waehrend Beatmung - waehrend Diskonnektion nicht erhoben",
         "exampleBoolean": true
       },
       {
@@ -5135,10 +5511,26 @@
       },
       {
         "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-vent-vt-einst-dar-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-vent-vt-einst-dar-1",
+        "description": "ICU Observation (dataAbsentReason): Atemzugvolumen (Einstellung) - waehrend Diskonnektion nicht erhoben",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Observation/mii-exa-test-data-patient-1-icu-vent-vt-spont-1"
         },
         "name": "mii-exa-test-data-patient-1-icu-vent-vt-spont-1",
         "description": "ICU Observation: MII PR ICU Spontanes Atemzugvolumen",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-vent-vt-spont-dar-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-vent-vt-spont-dar-1",
+        "description": "ICU Observation (dataAbsentReason): Spontanes Atemzugvolumen - waehrend Diskonnektion nicht erhoben",
         "exampleBoolean": true
       },
       {
@@ -5151,6 +5543,14 @@
       },
       {
         "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-vent-vt-spont-mech-dar-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-vent-vt-spont-mech-dar-1",
+        "description": "ICU Observation (dataAbsentReason): Spontanes und mechanisches Atemzugvolumen - waehrend Diskonnektion nicht erhoben",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Observation/mii-exa-test-data-patient-1-icu-vent-zeit-hoch-1"
         },
         "name": "mii-exa-test-data-patient-1-icu-vent-zeit-hoch-1",
@@ -5159,10 +5559,26 @@
       },
       {
         "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-vent-zeit-hoch-dar-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-vent-zeit-hoch-dar-1",
+        "description": "ICU Observation (dataAbsentReason): Beatmungszeit bei hohem Druck - waehrend Diskonnektion nicht erhoben",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Observation/mii-exa-test-data-patient-1-icu-vent-zeit-niedrig-1"
         },
         "name": "mii-exa-test-data-patient-1-icu-vent-zeit-niedrig-1",
         "description": "ICU Observation: MII PR ICU Beatmungszeit Niedrigem Druck",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-1-icu-vent-zeit-niedrig-dar-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-vent-zeit-niedrig-dar-1",
+        "description": "ICU Observation (dataAbsentReason): Beatmungszeit bei niedrigem Druck - waehrend Diskonnektion nicht erhoben",
         "exampleBoolean": true
       },
       {

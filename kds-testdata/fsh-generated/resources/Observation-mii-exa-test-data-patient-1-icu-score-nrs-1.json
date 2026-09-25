@@ -43,6 +43,26 @@
       }
     ]
   },
+  "component": [
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "38214-3",
+            "system": "http://loinc.org",
+            "display": "Pain severity [Score] Visual analog score"
+          }
+        ],
+        "text": "Visuelle Analogskala als Gegenprobe"
+      },
+      "valueQuantity": {
+        "value": 45,
+        "code": "mm",
+        "system": "http://unitsofmeasure.org",
+        "unit": "mm"
+      }
+    }
+  ],
   "performer": [
     {
       "reference": "Practitioner/mii-exa-test-data-icu-practitioner-1"

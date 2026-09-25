@@ -59,6 +59,53 @@
       "reference": "Practitioner/mii-exa-test-data-icu-practitioner-1"
     }
   ],
+  "component": [
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "8302-2",
+            "system": "http://loinc.org",
+            "display": "Body height"
+          }
+        ],
+        "text": "Stehend gemessene Koerpergroesse (anamnestisch)"
+      },
+      "interpretation": [
+        {
+          "coding": [
+            {
+              "code": "N",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+              "display": "Normal"
+            }
+          ]
+        }
+      ],
+      "referenceRange": [
+        {
+          "low": {
+            "value": 150,
+            "code": "cm",
+            "system": "http://unitsofmeasure.org",
+            "unit": "centimeter"
+          },
+          "high": {
+            "value": 190,
+            "code": "cm",
+            "system": "http://unitsofmeasure.org",
+            "unit": "centimeter"
+          }
+        }
+      ],
+      "valueQuantity": {
+        "value": 170,
+        "code": "cm",
+        "system": "http://unitsofmeasure.org",
+        "unit": "centimeter"
+      }
+    }
+  ],
   "valueQuantity": {
     "system": "http://unitsofmeasure.org",
     "code": "cm",

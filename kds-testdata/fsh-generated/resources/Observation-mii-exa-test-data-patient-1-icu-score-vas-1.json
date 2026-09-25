@@ -48,6 +48,21 @@
       }
     ]
   },
+  "component": [
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "72514-3",
+            "system": "http://loinc.org",
+            "display": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
+          }
+        ],
+        "text": "Numerische Ratingskala als Gegenprobe"
+      },
+      "valueInteger": 4
+    }
+  ],
   "performer": [
     {
       "reference": "Practitioner/mii-exa-test-data-icu-practitioner-1"

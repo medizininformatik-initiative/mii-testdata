@@ -1,0 +1,74 @@
+{
+  "resourceType": "Observation",
+  "id": "mii-exa-test-data-patient-1-icu-vent-vt-spont-mech-dar-1",
+  "meta": {
+    "security": [
+      {
+        "code": "HTEST",
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "display": "test health data"
+      }
+    ],
+    "source": "https://www.charite.de/fhir/kds-testdata",
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-spontanes-mechanisches-atemzugvolumen-waehrend-beatmung"
+    ]
+  },
+  "partOf": [
+    {
+      "reference": "Procedure/mii-exa-test-data-patient-1-icu-vent-beatmung-1"
+    }
+  ],
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "40617009",
+          "display": "Artificial ventilation (regime/therapy)"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "20118-6",
+        "display": "Tidal volume.spontaneous+mechanical --on ventilator"
+      }
+    ]
+  },
+  "identifier": [
+    {
+      "system": "https://www.charite.de/fhir/sid/icu-observation-id",
+      "value": "icu-vent-vt-spont-mech-dar-1"
+    }
+  ],
+  "note": [
+    {
+      "text": "Nicht erhoben: Patientin war am 07.05.2024 um 06:00 Uhr fuer den Spontanatmungsversuch am T-Stueck vom Respirator diskonnektiert, das Beatmungsgeraet lieferte keinen Messwert."
+    }
+  ],
+  "status": "final",
+  "subject": {
+    "reference": "Patient/mii-exa-test-data-icu-patient-1"
+  },
+  "encounter": {
+    "reference": "Encounter/mii-exa-test-data-icu-encounter-1"
+  },
+  "device": {
+    "reference": "DeviceMetric/mii-exa-test-data-patient-1-icu-vent-dm-param-1"
+  },
+  "effectiveDateTime": "2024-05-07T06:00:00+02:00",
+  "issued": "2024-05-07T06:10:00+02:00",
+  "dataAbsentReason": {
+    "coding": [
+      {
+        "code": "not-performed",
+        "system": "http://terminology.hl7.org/CodeSystem/data-absent-reason",
+        "display": "Not Performed"
+      }
+    ]
+  }
+}

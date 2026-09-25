@@ -1,6 +1,6 @@
 {
   "resourceType": "Observation",
-  "id": "mii-exa-test-data-patient-1-icu-score-nrs-dar-1",
+  "id": "mii-exa-test-data-patient-1-icu-score-vas-dar-1",
   "meta": {
     "security": [
       {
@@ -11,7 +11,7 @@
     ],
     "source": "https://www.charite.de/fhir/kds-testdata",
     "profile": [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-numerische-ratingskala"
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-visuelle-analogskala"
     ]
   },
   "category": [
@@ -37,8 +37,14 @@
   "code": {
     "coding": [
       {
+        "system": "http://loinc.org",
+        "code": "38214-3",
+        "display": "Pain severity [Score] Visual analog score"
+      },
+      {
         "system": "http://snomed.info/sct",
-        "code": "1284857008"
+        "version": "http://snomed.info/sct/900000000000207008/version/20260701",
+        "code": "443394008"
       }
     ]
   },
@@ -52,12 +58,12 @@
       "code": {
         "coding": [
           {
-            "code": "38214-3",
+            "code": "72514-3",
             "system": "http://loinc.org",
-            "display": "Pain severity [Score] Visual analog score"
+            "display": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
           }
         ],
-        "text": "Visuelle Analogskala als Gegenprobe"
+        "text": "Numerische Ratingskala als Gegenprobe"
       },
       "dataAbsentReason": {
         "coding": [
@@ -70,9 +76,15 @@
       }
     }
   ],
+  "identifier": [
+    {
+      "system": "https://www.charite.de/fhir/sid/icu-observation-id",
+      "value": "icu-score-vas-dar-1"
+    }
+  ],
   "note": [
     {
-      "text": "Selbstauskunft unter Sedierung (RASS -3) nicht erhebbar; Fremdeinschaetzung via ZOPA."
+      "text": "Selbsteinschaetzung unter Analgosedierung (RASS -4) weder per VAS noch per NRS erhebbar; Fremdeinschaetzung erfolgte ueber ZOPA."
     }
   ],
   "status": "final",
@@ -82,7 +94,8 @@
   "encounter": {
     "reference": "Encounter/mii-exa-test-data-icu-encounter-1"
   },
-  "effectiveDateTime": "2024-05-05T10:00:00+02:00",
+  "effectiveDateTime": "2024-05-06T12:00:00+02:00",
+  "issued": "2024-05-06T12:10:00+02:00",
   "dataAbsentReason": {
     "coding": [
       {

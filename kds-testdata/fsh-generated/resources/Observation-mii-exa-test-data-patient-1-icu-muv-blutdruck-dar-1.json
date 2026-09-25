@@ -1,0 +1,178 @@
+{
+  "resourceType": "Observation",
+  "id": "mii-exa-test-data-patient-1-icu-muv-blutdruck-dar-1",
+  "meta": {
+    "security": [
+      {
+        "code": "HTEST",
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "display": "test health data"
+      }
+    ],
+    "source": "https://www.charite.de/fhir/kds-testdata",
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-arterieller-blutdruck"
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "85354-9",
+        "display": "Blood pressure panel with all children optional"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "75367002",
+        "display": "Blood pressure"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "364090009",
+        "display": "Systemic arterial pressure"
+      }
+    ]
+  },
+  "component": [
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "8480-6",
+            "display": "Systolic blood pressure"
+          },
+          {
+            "system": "http://snomed.info/sct",
+            "code": "271649006",
+            "display": "Systolic blood pressure"
+          },
+          {
+            "system": "urn:iso:std:iso:11073:10101",
+            "code": "150017",
+            "display": "MDC_PRESS_BLD_NONINV_SYS"
+          }
+        ]
+      },
+      "dataAbsentReason": {
+        "coding": [
+          {
+            "code": "temp-unknown",
+            "system": "http://terminology.hl7.org/CodeSystem/data-absent-reason",
+            "display": "Temporarily Unknown"
+          }
+        ]
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "8462-4",
+            "display": "Diastolic blood pressure"
+          },
+          {
+            "system": "http://snomed.info/sct",
+            "code": "271650006",
+            "display": "Diastolic blood pressure"
+          },
+          {
+            "system": "urn:iso:std:iso:11073:10101",
+            "code": "150018",
+            "display": "MDC_PRESS_BLD_NONINV_DIA"
+          }
+        ]
+      },
+      "dataAbsentReason": {
+        "coding": [
+          {
+            "code": "temp-unknown",
+            "system": "http://terminology.hl7.org/CodeSystem/data-absent-reason",
+            "display": "Temporarily Unknown"
+          }
+        ]
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "8478-0",
+            "display": "Mean blood pressure"
+          },
+          {
+            "system": "http://snomed.info/sct",
+            "code": "6797001",
+            "display": "Mean blood pressure"
+          },
+          {
+            "system": "urn:iso:std:iso:11073:10101",
+            "code": "150019",
+            "display": "MDC_PRESS_BLD_NONINV_MEAN"
+          }
+        ]
+      },
+      "dataAbsentReason": {
+        "coding": [
+          {
+            "code": "temp-unknown",
+            "system": "http://terminology.hl7.org/CodeSystem/data-absent-reason",
+            "display": "Temporarily Unknown"
+          }
+        ]
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "system": "https://www.charite.de/fhir/sid/icu-observation-id",
+      "value": "icu-muv-blutdruck-dar-1"
+    }
+  ],
+  "note": [
+    {
+      "text": "Arterielle Druckmessung waehrend des Wechsels von Druckaufnehmer und Spuelsystem (14:00 Uhr) fuer ca. 5 Minuten unterbrochen; nicht-invasive Ersatzmessung erst um 14:10 Uhr."
+    }
+  ],
+  "status": "final",
+  "subject": {
+    "reference": "Patient/mii-exa-test-data-icu-patient-1"
+  },
+  "encounter": {
+    "reference": "Encounter/mii-exa-test-data-icu-encounter-1"
+  },
+  "effectiveDateTime": "2024-05-06T14:00:00+02:00",
+  "device": {
+    "reference": "Device/mii-exa-test-data-patient-1-icu-device-monitor-1"
+  },
+  "method": {
+    "coding": [
+      {
+        "code": "17146006",
+        "system": "http://snomed.info/sct",
+        "display": "Arterial pressure monitoring, invasive method (regime/therapy)"
+      }
+    ]
+  },
+  "bodySite": {
+    "coding": [
+      {
+        "code": "45631007",
+        "system": "http://snomed.info/sct",
+        "display": "Structure of radial artery (body structure)"
+      }
+    ]
+  }
+}

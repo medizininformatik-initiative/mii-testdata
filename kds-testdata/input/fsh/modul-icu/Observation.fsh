@@ -700,6 +700,13 @@ Description: "ICU Observation: MII SD ICU Herzfrequenz"
 * bodySite = $sct#80891009 "Heart structure (body structure)"
 * referenceRange.low = 60 '/min' "beats per minute"
 * referenceRange.high = 100 '/min' "beats per minute"
+// Komponente: palpatorische Kontrollmessung der Herzfrequenz (Pulsdefizit-Check)
+* component[+].code.coding = $loinc#8867-4 "Heart rate"
+* component[=].code.text = "Herzfrequenz, palpatorische Kontrollmessung"
+* component[=].valueQuantity = 72 '/min' "beats per minute"
+* component[=].interpretation = $v3-ObservationInterpretation#N "Normal"
+* component[=].referenceRange.low = 60 '/min' "beats per minute"
+* component[=].referenceRange.high = 100 '/min' "beats per minute"
 
 Instance: mii-exa-test-data-patient-1-icu-muv-gewicht-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-koerpergewicht
