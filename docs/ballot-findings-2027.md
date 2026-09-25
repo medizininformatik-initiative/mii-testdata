@@ -227,7 +227,24 @@ sie übernehmen — die Testdaten tragen die falschen Einheiten also zwangsläuf
 | `mii-pr-lungenfunktion-hb` (Hämoglobin) | `component:predicted…unit` | `L` | `g/dL` (wie am Messwert korrekt gesetzt) |
 | `mii-pr-lungenfunktion-sg-total` | `value[x].unit` / `component:predicted…unit` | `/kPA*s` / `/kPA.s` | `/(kPa.s)` |
 
-Drei Beobachtungen dazu:
+### Die Profile widersprechen ihrem eigenen LOINC-Code
+
+Bei zwei der Fälle pinnt dasselbe Profil einen LOINC-Code, dessen Langname die
+physikalische Property benennt — und die widerspricht der gesetzten Einheit:
+
+| Profil | gepinnter LOINC-Code | LOINC-Langname | Einheit im Profil |
+|---|---|---|---|
+| `…-hb` | `718-7` | Hemoglobin **[Mass/volume]** in Blood | Sollwert `L` (reines Volumen) |
+| `…-bf` | `9279-1` | Respiratory **rate** | Sollwert `L` (Volumen statt Rate) |
+
+Der Code sagt also selbst, welche Art von Größe gemeint ist. Für das Hämoglobin hat das
+Profil die Einheit am **Messwert** folgerichtig auf `g{Hemoglobin}/dL` gesetzt und nur
+am **Sollwert** vergessen — der Widerspruch ist damit innerhalb desselben Profils
+sichtbar. (Geprüft gegen LOINC 2.83 auf dem SU-TermServ; die Property
+`EXAMPLE_UCUM_UNITS` ist dort nicht geladen, der Langname trägt die Aussage aber
+bereits.)
+
+Drei weitere Beobachtungen:
 
 **Das Muster verrät die Ursache.** `L` ist die Einheit des Elternprofils
 `MII_PR_Lungenfunktion_Volumen`. Bei Atemfrequenz und Hämoglobin wurde sie offenbar
