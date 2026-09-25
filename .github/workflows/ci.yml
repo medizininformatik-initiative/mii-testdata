@@ -188,6 +188,12 @@ jobs:
         CERT: ${{ secrets.CDS_DEV_CLIENT_CERT }}
 
   JAVA_FHIR_VALIDATION:
+    # ACHTUNG: Hier ist KEIN timeout-minutes moeglich — GitHub erlaubt das Feld
+    # nicht an Jobs, die einen wiederverwendbaren Workflow aufrufen (uses:).
+    # Der Deckel muesste im meta-Repo gesetzt werden; bis dahin laeuft ein
+    # haengender Validator hier bis zum 6-Stunden-Default. Der Job entfernt
+    # ausserdem bei jedem Lauf den Paket-Cache, um Snapshots neu zu bauen —
+    # er ist also strukturell teuer, unabhaengig von der Terminologie.
     # Auf Commit-SHA gepinnt statt @master (Reproduzierbarkeit; Muster der Modul-Repos)
     uses: medizininformatik-initiative/kerndatensatz-meta/.github/workflows/ci_java_validation.yml@1db2e534704d92e5ee0cde663ce3e7ccd8825fa7
     needs: java-validation-guard
@@ -211,6 +217,11 @@ jobs:
   # vars.JAVA_VALIDATION_OPTIONS wird wie im meta-Workflow angehaengt.
   validation-advisor-control:
     runs-on: ubuntu-latest
+    # Normallaufzeit ~13 min. Ohne Deckel haengt ein blockierter Validator bis
+    # zum 6-Stunden-Default und blockiert dabei den PR. Ein Job, der in ein
+    # Timeout laeuft, ist eine klare Aussage; einer, der stundenlang steht,
+    # ist keine.
+    timeout-minutes: 45
     needs: build-kds-testdata
     if: |
       (github.event_name == 'workflow_dispatch' && github.event.inputs.run_validation == 'true') ||
