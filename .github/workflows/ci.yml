@@ -305,11 +305,19 @@ jobs:
         # JAVA_VALIDATION_OPTIONS ist fuer den meta-Workflow gedacht und
         # enthaelt -advisor-file/-output/-html-output — fuer die Kontrolle
         # rausfiltern, sonst laeuft der "ungefilterte" Lauf MIT Advisor.
+        #
+        # UND -tx: Die Variable setzt http://127.0.0.1:8090/fhir, also den
+        # nginx-Proxy des meta-Workflows. Weil sie ANGEHAENGT wird, gewinnt sie
+        # gegen unser eigenes -tx. Ohne Zertifikat starten wir den Proxy aber
+        # nie — der Validator lief dann gegen einen Port, auf dem nichts
+        # horcht, und meldete "Error fetching the server's capability
+        # statement: timeout". Das sah nach einem ueberlasteten Ontoserver aus
+        # und war in Wahrheit ein leerer Port.
         extra=(); skip=0
         for tok in $EXTRA_OPTIONS; do
           if [ "$skip" = 1 ]; then skip=0; continue; fi
           case "$tok" in
-            -advisor-file|-output|-html-output) skip=1 ;;
+            -advisor-file|-output|-html-output|-tx|-txCache) skip=1 ;;
             *) extra+=("$tok") ;;
           esac
         done
