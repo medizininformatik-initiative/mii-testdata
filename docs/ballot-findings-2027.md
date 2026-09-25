@@ -244,9 +244,29 @@ Messwert und Sollwert den Ausdruck unterschiedlich (`*` gegen `.`). Selbst nach
 Korrektur der Groß-/Kleinschreibung wäre die Klammerung zu prüfen; der korrekte
 Ausdruck für die spezifische Conductance ist `/(kPa.s)`.
 
-**Vorschlag:** Die Einheiten-Pattern der abgeleiteten Profile gegen die jeweilige
-Größe prüfen. Ergänzend ein Release-Gate, das jedes `patternString` auf
-`Quantity.unit` gegen UCUM validiert — das hätte alle vier Fälle gefunden.
+### Warum ein simples Terminologie-Gate hier nicht reicht
+
+Naheliegend wäre, `patternString` auf `Quantity.unit` gegen UCUM zu validieren. Der
+Terminologieserver prüft an dieser Stelle aber gegen die **enumerierte Liste
+`ucum-common`** (1.364 Codes), nicht gegen die UCUM-Grammatik. Das trennt die vier
+Fälle in zwei Gruppen:
+
+| Einheit | in `ucum-common`? | Befund |
+|---|---|---|
+| `/kPA*s`, `/kPA.s` | nein | **syntaktisch** falsch — ein Gate fängt es |
+| `ug` (Körpergewicht), `L` (Atemfrequenz, Hb-Soll) | **ja** | syntaktisch tadellos, **semantisch** falsch — ein Gate sieht nichts |
+
+Umgekehrt erzeugt die Liste Fehlalarme: Der **korrekte** Hämoglobin-Messwert
+`g{Hemoglobin}/dL` steht nicht darin, weil annotierte UCUM-Ausdrücke in der
+Kurzliste fehlen — ebenso `/(kPa.s)` und `{score}`.
+
+**Vorschlag:** Erstens die Einheiten-Pattern der abgeleiteten Profile fachlich gegen
+die jeweilige Größe prüfen — das ist der eigentliche Fehler und keine Maschine nimmt
+ihn ab. Zweitens ein Release-Gate mit einem echten UCUM-Parser statt einer
+Listenprüfung, sonst tauscht man übersehene Fehler gegen Fehlalarme. Drittens, als
+billige Ergänzung mit hoher Trefferquote: eine Plausibilitätsregel, die meldet, wenn
+ein abgeleitetes Profil die Einheit seines Elternprofils **unverändert** übernimmt,
+obwohl es die Größe wechselt — genau das ist hier dreimal passiert.
 
 ---
 
