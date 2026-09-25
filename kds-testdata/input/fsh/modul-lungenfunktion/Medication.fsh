@@ -54,6 +54,8 @@ Description: "Lungenfunktion Dosisgabe 1: 0.04 mg Methacholin inhalativ"
 * dosage.rateQuantity = 0.5 'mL/min' "mL/min"
 * performer.actor.display = "MTA Lungenfunktionslabor"
 * reasonCode = $sct#252520007 "Methacholine challenge (procedure)"
+// Indikation: der erniedrigte Tiffeneau-Index der Ausgangsspirometrie.
+* reasonReference = Reference(mii-exa-test-data-lungenfunktion-fev-fvc-1)
 * request = Reference(mii-exa-test-data-lungenfunktion-methacholine-anordnung-1)
 * note.text = "Erste Dosisstufe des Provokationsprotokolls."
 

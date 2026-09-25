@@ -1,6 +1,6 @@
 {
   "resourceType": "Observation",
-  "id": "mii-exa-test-data-lungenfunktion-hb-1",
+  "id": "mii-exa-test-data-lungenfunktion-gewicht-2",
   "meta": {
     "security": [
       {
@@ -11,7 +11,7 @@
     ],
     "source": "https://www.charite.de/fhir/lungenfunktion-messplatz",
     "profile": [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-hb"
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-gewicht"
     ]
   },
   "category": [
@@ -26,21 +26,21 @@
   ],
   "partOf": [
     {
-      "reference": "Procedure/mii-exa-test-data-lungenfunktion-diffusion-messung-1"
+      "reference": "Procedure/mii-exa-test-data-lungenfunktion-bodyplethysmographie-messung-1"
     }
   ],
   "code": {
     "coding": [
       {
+        "code": "27113001",
         "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/900000000000207008/version/20260701",
-        "code": "38082009",
-        "display": "Hemoglobin (substance)"
+        "display": "Body weight (observable entity)"
       },
       {
+        "code": "29463-7",
         "system": "http://loinc.org",
-        "code": "718-7",
-        "display": "Hemoglobin [Mass/volume] in Blood"
+        "display": "Body weight"
       }
     ]
   },
@@ -55,49 +55,23 @@
       ]
     }
   ],
-  "referenceRange": [
-    {
-      "low": {
-        "value": 12,
-        "code": "g{Hemoglobin}/dL",
-        "system": "http://unitsofmeasure.org",
-        "unit": "g{Hemoglobin}/dL"
-      },
-      "high": {
-        "value": 15.5,
-        "code": "g{Hemoglobin}/dL",
-        "system": "http://unitsofmeasure.org",
-        "unit": "g{Hemoglobin}/dL"
-      }
-    }
-  ],
-  "derivedFrom": [
-    {
-      "reference": "DocumentReference/mii-exa-test-data-lungenfunktion-docref-rohdaten-1"
-    }
-  ],
-  "hasMember": [
-    {
-      "reference": "Observation/mii-exa-test-data-lungenfunktion-hb-2"
-    }
-  ],
   "status": "final",
   "subject": {
     "reference": "Patient/mii-exa-test-data-lungenfunktion-patient-1"
   },
   "issued": "2025-02-18T12:00:00+01:00",
   "valueQuantity": {
-    "value": 13.8,
-    "code": "g{Hemoglobin}/dL",
+    "value": 68.4,
+    "code": "ug",
     "system": "http://unitsofmeasure.org",
-    "unit": "g{Hemoglobin}/dL"
+    "unit": "ug"
   },
   "method": {
     "coding": [
       {
-        "code": "258104002",
+        "code": "39857003",
         "system": "http://snomed.info/sct",
-        "display": "Measured (qualifier value)"
+        "display": "Weighing patient (procedure)"
       }
     ]
   }

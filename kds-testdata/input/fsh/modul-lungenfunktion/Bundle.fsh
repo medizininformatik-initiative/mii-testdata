@@ -52,7 +52,9 @@ Description: "Bundle: Lungenfunktion Testdaten Patient-1 (Spirometrie, Bodypleth
 * insert AddBundleEntry(mii-exa-test-data-lungenfunktion-kcoc-1, Observation)
 * insert AddBundleEntry(mii-exa-test-data-lungenfunktion-va-1, Observation)
 * insert AddBundleEntry(mii-exa-test-data-lungenfunktion-hb-1, Observation)
+* insert AddBundleEntry(mii-exa-test-data-lungenfunktion-hb-2, Observation)
 // Provokationstest-Observations
+* insert AddBundleEntry(mii-exa-test-data-lungenfunktion-bf-prov-1, Observation)
 * insert AddBundleEntry(mii-exa-test-data-lungenfunktion-fev-prov-1, Observation)
 * insert AddBundleEntry(mii-exa-test-data-lungenfunktion-fev-prov-2, Observation)
 * insert AddBundleEntry(mii-exa-test-data-lungenfunktion-pef-prov-1, Observation)
@@ -66,6 +68,7 @@ Description: "Bundle: Lungenfunktion Testdaten Patient-1 (Spirometrie, Bodypleth
 * insert AddBundleEntry(mii-exa-test-data-lungenfunktion-lufttemperatur-1, Observation)
 * insert AddBundleEntry(mii-exa-test-data-lungenfunktion-luftfeuchtigkeit-1, Observation)
 * insert AddBundleEntry(mii-exa-test-data-lungenfunktion-gewicht-1, Observation)
+* insert AddBundleEntry(mii-exa-test-data-lungenfunktion-gewicht-2, Observation)
 // Methacholin (Medication + Dosisgaben)
 * insert AddBundleEntry(mii-exa-test-data-lungenfunktion-methacholine-1, Medication)
 * insert AddBundleEntry(mii-exa-test-data-lungenfunktion-dosis-gabe-1, MedicationAdministration)

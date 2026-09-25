@@ -227,6 +227,7 @@
 [mii-exa-test-data-koerperstruktur]: BodyStructure-mii-exa-test-data-koerperstruktur.html
 [mii-exa-test-data-kontrastmittelgabe]: MedicationAdministration-mii-exa-test-data-kontrastmittelgabe.html
 [mii-exa-test-data-lungenfunktion-bf-1]: Observation-mii-exa-test-data-lungenfunktion-bf-1.html
+[mii-exa-test-data-lungenfunktion-bf-prov-1]: Observation-mii-exa-test-data-lungenfunktion-bf-prov-1.html
 [mii-exa-test-data-lungenfunktion-bodyplethysmografie-befund-1]: DiagnosticReport-mii-exa-test-data-lungenfunktion-bodyplethysmografie-befund-1.html
 [mii-exa-test-data-lungenfunktion-bodyplethysmographie-messung-1]: Procedure-mii-exa-test-data-lungenfunktion-bodyplethysmographie-messung-1.html
 [mii-exa-test-data-lungenfunktion-co2-1]: Observation-mii-exa-test-data-lungenfunktion-co2-1.html
@@ -249,7 +250,9 @@
 [mii-exa-test-data-lungenfunktion-frc-prov-1]: Observation-mii-exa-test-data-lungenfunktion-frc-prov-1.html
 [mii-exa-test-data-lungenfunktion-fvc-1]: Observation-mii-exa-test-data-lungenfunktion-fvc-1.html
 [mii-exa-test-data-lungenfunktion-gewicht-1]: Observation-mii-exa-test-data-lungenfunktion-gewicht-1.html
+[mii-exa-test-data-lungenfunktion-gewicht-2]: Observation-mii-exa-test-data-lungenfunktion-gewicht-2.html
 [mii-exa-test-data-lungenfunktion-hb-1]: Observation-mii-exa-test-data-lungenfunktion-hb-1.html
+[mii-exa-test-data-lungenfunktion-hb-2]: Observation-mii-exa-test-data-lungenfunktion-hb-2.html
 [mii-exa-test-data-lungenfunktion-ic-1]: Observation-mii-exa-test-data-lungenfunktion-ic-1.html
 [mii-exa-test-data-lungenfunktion-irv-erv-1]: Observation-mii-exa-test-data-lungenfunktion-irv-erv-1.html
 [mii-exa-test-data-lungenfunktion-kco-1]: Observation-mii-exa-test-data-lungenfunktion-kco-1.html

@@ -1,6 +1,6 @@
 {
   "resourceType": "Observation",
-  "id": "mii-exa-test-data-lungenfunktion-hb-1",
+  "id": "mii-exa-test-data-lungenfunktion-hb-2",
   "meta": {
     "security": [
       {
@@ -71,23 +71,13 @@
       }
     }
   ],
-  "derivedFrom": [
-    {
-      "reference": "DocumentReference/mii-exa-test-data-lungenfunktion-docref-rohdaten-1"
-    }
-  ],
-  "hasMember": [
-    {
-      "reference": "Observation/mii-exa-test-data-lungenfunktion-hb-2"
-    }
-  ],
   "status": "final",
   "subject": {
     "reference": "Patient/mii-exa-test-data-lungenfunktion-patient-1"
   },
   "issued": "2025-02-18T12:00:00+01:00",
   "valueQuantity": {
-    "value": 13.8,
+    "value": 13.6,
     "code": "g{Hemoglobin}/dL",
     "system": "http://unitsofmeasure.org",
     "unit": "g{Hemoglobin}/dL"

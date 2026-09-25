@@ -96,6 +96,10 @@ Description: "Lungenfunktion sG_tot: 0.74 /kPa.s (erniedrigt)"
 * hasMember[+] = Reference(mii-exa-test-data-lungenfunktion-frc-1)
 * referenceRange.low = 0.85 '1/(kPa.s)' "1/(kPa.s)"
 * referenceRange.high = 2.10 '1/(kPa.s)' "1/(kPa.s)"
+// Z-Score. predicted/percentPredicted sind blockiert: ihre
+// code.coding[sct|loinc] tragen im Profil ein patternCoding mit code = "TODO".
+* component[z-score].code.coding[sct] = $sct20260701#1078210003 "Z-score calculation technique (qualifier value)"
+* component[z-score].valueQuantity = -1.6 '1' "SD"
 
 // TLC (totale Lungenkapazitaet)
 Instance: mii-exa-test-data-lungenfunktion-tlc-1
@@ -138,6 +142,9 @@ Description: "Lungenfunktion RV: 2.60 L (130 % vom Soll, Ueberblaehung)"
 * derivedFrom[+] = Reference(mii-exa-test-data-lungenfunktion-docref-rohdaten-1)
 * referenceRange.low = 1.40 'L' "L"
 * referenceRange.high = 2.20 'L' "L"
+// RV = TLC - VC: beide Bestimmungsgroessen als Mitglieder.
+* hasMember[+] = Reference(mii-exa-test-data-lungenfunktion-tlc-1)
+* hasMember[+] = Reference(mii-exa-test-data-lungenfunktion-vc-1)
 
 // RV/TLC
 Instance: mii-exa-test-data-lungenfunktion-rv-tlc-1

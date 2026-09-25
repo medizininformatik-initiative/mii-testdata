@@ -1903,6 +1903,14 @@
       },
       {
         "reference": {
+          "reference": "Observation/mii-exa-test-data-lungenfunktion-bf-prov-1"
+        },
+        "name": "mii-exa-test-data-lungenfunktion-bf-prov-1",
+        "description": "Lungenfunktion BF (Provokation, nach Methacholin): 20/min",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "DiagnosticReport/mii-exa-test-data-lungenfunktion-bodyplethysmografie-befund-1"
         },
         "name": "mii-exa-test-data-lungenfunktion-bodyplethysmografie-befund-1",
@@ -2079,10 +2087,26 @@
       },
       {
         "reference": {
+          "reference": "Observation/mii-exa-test-data-lungenfunktion-gewicht-2"
+        },
+        "name": "mii-exa-test-data-lungenfunktion-gewicht-2",
+        "description": "Lungenfunktion Koerpergewicht, zweite Waegung (Einheit 'ug' durch Profil-Pattern vorgegeben, fachlich 'kg')",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Observation/mii-exa-test-data-lungenfunktion-hb-1"
         },
         "name": "mii-exa-test-data-lungenfunktion-hb-1",
         "description": "Lungenfunktion Hb: 13.8 g/dL",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-lungenfunktion-hb-2"
+        },
+        "name": "mii-exa-test-data-lungenfunktion-hb-2",
+        "description": "Lungenfunktion Hb (kapillaere Kontrollbestimmung): 13.6 g/dL",
         "exampleBoolean": true
       },
       {

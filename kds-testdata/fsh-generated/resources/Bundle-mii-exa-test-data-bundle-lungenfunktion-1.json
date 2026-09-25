@@ -168,6 +168,21 @@
               "version": "http://snomed.info/sct/900000000000207008/version/20260701",
               "code": "127783003",
               "display": "Spirometry (procedure)"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://fhir.de/StructureDefinition/seitenlokalisation",
+                  "valueCoding": {
+                    "code": "B",
+                    "system": "https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_ICD_SEITENLOKALISATION"
+                  }
+                }
+              ],
+              "system": "http://fhir.de/CodeSystem/bfarm/ops",
+              "code": "1-710",
+              "display": "Ganzkörperplethysmographie",
+              "version": "2024"
             }
           ]
         },
@@ -1253,6 +1268,11 @@
             "reference": "DocumentReference/mii-exa-test-data-lungenfunktion-docref-rohdaten-1"
           }
         ],
+        "hasMember": [
+          {
+            "reference": "Observation/mii-exa-test-data-lungenfunktion-bf-prov-1"
+          }
+        ],
         "valueQuantity": {
           "system": "http://unitsofmeasure.org",
           "code": "/min",
@@ -1587,6 +1607,14 @@
             }
           }
         ],
+        "hasMember": [
+          {
+            "reference": "Observation/mii-exa-test-data-lungenfunktion-fev-1"
+          },
+          {
+            "reference": "Observation/mii-exa-test-data-lungenfunktion-pef-1"
+          }
+        ],
         "status": "final",
         "subject": {
           "reference": "Patient/mii-exa-test-data-lungenfunktion-patient-1"
@@ -1873,6 +1901,14 @@
             }
           }
         ],
+        "hasMember": [
+          {
+            "reference": "Observation/mii-exa-test-data-lungenfunktion-tlc-1"
+          },
+          {
+            "reference": "Observation/mii-exa-test-data-lungenfunktion-frc-1"
+          }
+        ],
         "status": "final",
         "subject": {
           "reference": "Patient/mii-exa-test-data-lungenfunktion-patient-1"
@@ -1999,6 +2035,14 @@
             }
           }
         ],
+        "hasMember": [
+          {
+            "reference": "Observation/mii-exa-test-data-lungenfunktion-frc-1"
+          },
+          {
+            "reference": "Observation/mii-exa-test-data-lungenfunktion-rv-1"
+          }
+        ],
         "status": "final",
         "subject": {
           "reference": "Patient/mii-exa-test-data-lungenfunktion-patient-1"
@@ -2103,6 +2147,31 @@
               "code": "L/s",
               "system": "http://unitsofmeasure.org",
               "unit": "L/s"
+            }
+          }
+        ],
+        "hasMember": [
+          {
+            "reference": "Observation/mii-exa-test-data-lungenfunktion-fvc-1"
+          }
+        ],
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "version": "http://snomed.info/sct/900000000000207008/version/20260701",
+                  "code": "1078210003",
+                  "display": "Z-score calculation technique (qualifier value)"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": -2.1,
+              "code": "1",
+              "system": "http://unitsofmeasure.org",
+              "unit": "SD"
             }
           }
         ],
@@ -3048,6 +3117,26 @@
             }
           }
         ],
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "version": "http://snomed.info/sct/900000000000207008/version/20260701",
+                  "code": "1078210003",
+                  "display": "Z-score calculation technique (qualifier value)"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": -1.6,
+              "code": "1",
+              "system": "http://unitsofmeasure.org",
+              "unit": "SD"
+            }
+          }
+        ],
         "status": "final",
         "subject": {
           "reference": "Patient/mii-exa-test-data-lungenfunktion-patient-1"
@@ -3342,6 +3431,14 @@
             }
           }
         ],
+        "hasMember": [
+          {
+            "reference": "Observation/mii-exa-test-data-lungenfunktion-tlc-1"
+          },
+          {
+            "reference": "Observation/mii-exa-test-data-lungenfunktion-vc-1"
+          }
+        ],
         "status": "final",
         "subject": {
           "reference": "Patient/mii-exa-test-data-lungenfunktion-patient-1"
@@ -3622,6 +3719,11 @@
             }
           }
         ],
+        "hasMember": [
+          {
+            "reference": "Observation/mii-exa-test-data-lungenfunktion-va-1"
+          }
+        ],
         "status": "final",
         "subject": {
           "reference": "Patient/mii-exa-test-data-lungenfunktion-patient-1"
@@ -3728,6 +3830,26 @@
               "code": "mmol/(min.kPa)",
               "system": "http://unitsofmeasure.org",
               "unit": "mmol/(min.kPa)"
+            }
+          }
+        ],
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "version": "http://snomed.info/sct/900000000000207008/version/20260701",
+                  "code": "1078210003",
+                  "display": "Z-score calculation technique (qualifier value)"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": -0.4,
+              "code": "1",
+              "system": "http://unitsofmeasure.org",
+              "unit": "SD"
             }
           }
         ],
@@ -4000,6 +4122,26 @@
             }
           }
         ],
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "version": "http://snomed.info/sct/900000000000207008/version/20260701",
+                  "code": "1078210003",
+                  "display": "Z-score calculation technique (qualifier value)"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": -0.2,
+              "code": "1",
+              "system": "http://unitsofmeasure.org",
+              "unit": "SD"
+            }
+          }
+        ],
         "status": "final",
         "subject": {
           "reference": "Patient/mii-exa-test-data-lungenfunktion-patient-1"
@@ -4099,6 +4241,31 @@
               "code": "L",
               "system": "http://unitsofmeasure.org",
               "unit": "L"
+            }
+          }
+        ],
+        "hasMember": [
+          {
+            "reference": "Observation/mii-exa-test-data-lungenfunktion-tlc-1"
+          }
+        ],
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "version": "http://snomed.info/sct/900000000000207008/version/20260701",
+                  "code": "1078210003",
+                  "display": "Z-score calculation technique (qualifier value)"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": -0.6,
+              "code": "1",
+              "system": "http://unitsofmeasure.org",
+              "unit": "SD"
             }
           }
         ],
@@ -4204,6 +4371,16 @@
             }
           }
         ],
+        "derivedFrom": [
+          {
+            "reference": "DocumentReference/mii-exa-test-data-lungenfunktion-docref-rohdaten-1"
+          }
+        ],
+        "hasMember": [
+          {
+            "reference": "Observation/mii-exa-test-data-lungenfunktion-hb-2"
+          }
+        ],
         "status": "final",
         "subject": {
           "reference": "Patient/mii-exa-test-data-lungenfunktion-patient-1"
@@ -4221,6 +4398,210 @@
               "code": "258104002",
               "system": "http://snomed.info/sct",
               "display": "Measured (qualifier value)"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-lungenfunktion-hb-2"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-lungenfunktion-hb-2",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-lungenfunktion-hb-2",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/lungenfunktion-messplatz",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-hb"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "procedure",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              }
+            ]
+          }
+        ],
+        "partOf": [
+          {
+            "reference": "Procedure/mii-exa-test-data-lungenfunktion-diffusion-messung-1"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "version": "http://snomed.info/sct/900000000000207008/version/20260701",
+              "code": "38082009",
+              "display": "Hemoglobin (substance)"
+            },
+            {
+              "system": "http://loinc.org",
+              "code": "718-7",
+              "display": "Hemoglobin [Mass/volume] in Blood"
+            }
+          ]
+        },
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "code": "N",
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "display": "Normal"
+              }
+            ]
+          }
+        ],
+        "referenceRange": [
+          {
+            "low": {
+              "value": 12,
+              "code": "g{Hemoglobin}/dL",
+              "system": "http://unitsofmeasure.org",
+              "unit": "g{Hemoglobin}/dL"
+            },
+            "high": {
+              "value": 15.5,
+              "code": "g{Hemoglobin}/dL",
+              "system": "http://unitsofmeasure.org",
+              "unit": "g{Hemoglobin}/dL"
+            }
+          }
+        ],
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-lungenfunktion-patient-1"
+        },
+        "issued": "2025-02-18T12:00:00+01:00",
+        "valueQuantity": {
+          "value": 13.6,
+          "code": "g{Hemoglobin}/dL",
+          "system": "http://unitsofmeasure.org",
+          "unit": "g{Hemoglobin}/dL"
+        },
+        "method": {
+          "coding": [
+            {
+              "code": "258104002",
+              "system": "http://snomed.info/sct",
+              "display": "Measured (qualifier value)"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-lungenfunktion-bf-prov-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-lungenfunktion-bf-prov-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-lungenfunktion-bf-prov-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/lungenfunktion-messplatz",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-bf"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "9279-1",
+              "display": "Respiratory rate"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "version": "http://snomed.info/sct/900000000000207008/version/20260701",
+              "code": "271625008",
+              "display": "Rate of spontaneous respiration (observable entity)"
+            }
+          ]
+        },
+        "partOf": [
+          {
+            "reference": "Procedure/mii-exa-test-data-lungenfunktion-provokationstest-messung-1"
+          }
+        ],
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "code": "H",
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "display": "High"
+              }
+            ]
+          }
+        ],
+        "referenceRange": [
+          {
+            "low": {
+              "value": 12,
+              "code": "/min",
+              "system": "http://unitsofmeasure.org",
+              "unit": "/min"
+            },
+            "high": {
+              "value": 18,
+              "code": "/min",
+              "system": "http://unitsofmeasure.org",
+              "unit": "/min"
+            }
+          }
+        ],
+        "valueQuantity": {
+          "system": "http://unitsofmeasure.org",
+          "code": "/min",
+          "value": 20,
+          "unit": "/min"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-lungenfunktion-patient-1"
+        },
+        "effectiveDateTime": "2025-02-18T11:30:00+01:00",
+        "issued": "2025-02-18T12:00:00+01:00",
+        "method": {
+          "coding": [
+            {
+              "code": "249862003",
+              "system": "http://snomed.info/sct",
+              "version": "http://snomed.info/sct/900000000000207008/version/20260701",
+              "display": "Sitting upright (finding)"
             }
           ]
         }
@@ -5140,6 +5521,69 @@
             ]
           }
         ],
+        "derivedFrom": [
+          {
+            "reference": "DocumentReference/mii-exa-test-data-lungenfunktion-docref-rohdaten-1"
+          }
+        ],
+        "hasMember": [
+          {
+            "reference": "Observation/mii-exa-test-data-lungenfunktion-gewicht-2"
+          }
+        ],
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "50064-5",
+                  "system": "http://loinc.org",
+                  "display": "Ideal body weight"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 65,
+              "code": "ug",
+              "system": "http://unitsofmeasure.org",
+              "unit": "ug"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "version": "http://snomed.info/sct/900000000000207008/version/20260701",
+                  "code": "1078210003",
+                  "display": "Z-score calculation technique (qualifier value)"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 0.3,
+              "code": "1",
+              "system": "http://unitsofmeasure.org",
+              "unit": "SD"
+            }
+          }
+        ],
+        "referenceRange": [
+          {
+            "low": {
+              "value": 55,
+              "code": "ug",
+              "system": "http://unitsofmeasure.org",
+              "unit": "ug"
+            },
+            "high": {
+              "value": 85,
+              "code": "ug",
+              "system": "http://unitsofmeasure.org",
+              "unit": "ug"
+            }
+          }
+        ],
         "status": "final",
         "subject": {
           "reference": "Patient/mii-exa-test-data-lungenfunktion-patient-1"
@@ -5147,6 +5591,91 @@
         "issued": "2025-02-18T12:00:00+01:00",
         "valueQuantity": {
           "value": 68,
+          "code": "ug",
+          "system": "http://unitsofmeasure.org",
+          "unit": "ug"
+        },
+        "method": {
+          "coding": [
+            {
+              "code": "39857003",
+              "system": "http://snomed.info/sct",
+              "display": "Weighing patient (procedure)"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-lungenfunktion-gewicht-2"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-lungenfunktion-gewicht-2",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-lungenfunktion-gewicht-2",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/lungenfunktion-messplatz",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-gewicht"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "procedure",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              }
+            ]
+          }
+        ],
+        "partOf": [
+          {
+            "reference": "Procedure/mii-exa-test-data-lungenfunktion-bodyplethysmographie-messung-1"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "27113001",
+              "system": "http://snomed.info/sct",
+              "version": "http://snomed.info/sct/900000000000207008/version/20260701",
+              "display": "Body weight (observable entity)"
+            },
+            {
+              "code": "29463-7",
+              "system": "http://loinc.org",
+              "display": "Body weight"
+            }
+          ]
+        },
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "code": "N",
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "display": "Normal"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-lungenfunktion-patient-1"
+        },
+        "issued": "2025-02-18T12:00:00+01:00",
+        "valueQuantity": {
+          "value": 68.4,
           "code": "ug",
           "system": "http://unitsofmeasure.org",
           "unit": "ug"
@@ -5376,6 +5905,11 @@
                 "display": "Methacholine challenge (procedure)"
               }
             ]
+          }
+        ],
+        "reasonReference": [
+          {
+            "reference": "Observation/mii-exa-test-data-lungenfunktion-fev-fvc-1"
           }
         ],
         "note": [

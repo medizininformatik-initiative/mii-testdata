@@ -12,6 +12,12 @@ Description: "Lungenfunktion Spirometrie-Messung"
 * status = #completed
 * category.coding[sct] = $sct20260701#23426006 "Measurement of respiratory function (procedure)"
 * code.coding[sct] = $sct20260701#127783003 "Spirometry (procedure)"
+// OPS kennt keinen eigenen Kode fuer die Spirometrie; sie ist laut Inklusivum
+// des Blocks 1-71 im Kode 1-710 enthalten ("Inkl.: Spirometrie,
+// Fluss-Volumen-Kurve").
+* code.coding[ops] = $ops#1-710 "Ganzkörperplethysmographie"
+* code.coding[ops].version = "2024"
+* code.coding[ops].extension[Seitenlokalisation].valueCoding = $seitenlokalisation#B
 * subject = Reference(mii-exa-test-data-lungenfunktion-patient-1)
 * encounter = Reference(mii-exa-test-data-lungenfunktion-encounter-1)
 * performedDateTime = "2025-02-18T09:00:00+01:00"

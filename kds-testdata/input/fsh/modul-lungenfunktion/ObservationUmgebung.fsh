@@ -67,3 +67,29 @@ Description: "Lungenfunktion Koerpergewicht: 68 (Einheit 'ug' durch Profil-Patte
 * valueQuantity = 68 'ug' "ug"
 * interpretation = $v3-ObservationInterpretation#N "Normal"
 * method = $sct#39857003 "Weighing patient (procedure)"
+* derivedFrom = Reference(mii-exa-test-data-lungenfunktion-docref-rohdaten-1)
+// Doppelwaegung: der fuer die Sollwertberechnung verwendete Wert fasst die
+// beiden Einzelwaegungen zusammen.
+* hasMember = Reference(mii-exa-test-data-lungenfunktion-gewicht-2)
+// Sollgewicht (Ideal Body Weight) als predicted-Komponente. Die Einheit ist
+// - wie beim Messwert selbst - durch das Profil-Pattern auf "ug" fixiert.
+* component[predicted].code.coding[loinc] = $loinc#50064-5 "Ideal body weight"
+* component[predicted].valueQuantity = 65 'ug' "ug"
+// Gewichts-Z-Score (SDS); der SNOMED-Code ist im Profil per Pattern fixiert.
+* component[z-score].code.coding[sct] = $sct20260701#1078210003 "Z-score calculation technique (qualifier value)"
+* component[z-score].valueQuantity = 0.3 '1' "SD"
+* referenceRange.low = 55 'ug' "ug"
+* referenceRange.high = 85 'ug' "ug"
+
+// Zweite Waegung (Einzelmessung, Mitglied der zusammengefassten Waegung oben)
+Instance: mii-exa-test-data-lungenfunktion-gewicht-2
+InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-gewicht
+Usage: #example
+Description: "Lungenfunktion Koerpergewicht, zweite Waegung (Einheit 'ug' durch Profil-Pattern vorgegeben, fachlich 'kg')"
+* insert LufuObsBase
+* partOf = Reference(mii-exa-test-data-lungenfunktion-bodyplethysmographie-messung-1)
+* code.coding[sct] = $sct20260701#27113001 "Body weight (observable entity)"
+* code.coding[loinc] = $loinc#29463-7 "Body weight"
+* valueQuantity = 68.4 'ug' "ug"
+* interpretation = $v3-ObservationInterpretation#N "Normal"
+* method = $sct#39857003 "Weighing patient (procedure)"

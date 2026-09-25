@@ -112,6 +112,14 @@
       }
     }
   ],
+  "hasMember": [
+    {
+      "reference": "Observation/mii-exa-test-data-lungenfunktion-tlc-1"
+    },
+    {
+      "reference": "Observation/mii-exa-test-data-lungenfunktion-frc-1"
+    }
+  ],
   "status": "final",
   "subject": {
     "reference": "Patient/mii-exa-test-data-lungenfunktion-patient-1"

@@ -55,6 +55,69 @@
       ]
     }
   ],
+  "derivedFrom": [
+    {
+      "reference": "DocumentReference/mii-exa-test-data-lungenfunktion-docref-rohdaten-1"
+    }
+  ],
+  "hasMember": [
+    {
+      "reference": "Observation/mii-exa-test-data-lungenfunktion-gewicht-2"
+    }
+  ],
+  "component": [
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "50064-5",
+            "system": "http://loinc.org",
+            "display": "Ideal body weight"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 65,
+        "code": "ug",
+        "system": "http://unitsofmeasure.org",
+        "unit": "ug"
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "version": "http://snomed.info/sct/900000000000207008/version/20260701",
+            "code": "1078210003",
+            "display": "Z-score calculation technique (qualifier value)"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 0.3,
+        "code": "1",
+        "system": "http://unitsofmeasure.org",
+        "unit": "SD"
+      }
+    }
+  ],
+  "referenceRange": [
+    {
+      "low": {
+        "value": 55,
+        "code": "ug",
+        "system": "http://unitsofmeasure.org",
+        "unit": "ug"
+      },
+      "high": {
+        "value": 85,
+        "code": "ug",
+        "system": "http://unitsofmeasure.org",
+        "unit": "ug"
+      }
+    }
+  ],
   "status": "final",
   "subject": {
     "reference": "Patient/mii-exa-test-data-lungenfunktion-patient-1"

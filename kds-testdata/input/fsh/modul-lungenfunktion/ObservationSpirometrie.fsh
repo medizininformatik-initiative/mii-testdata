@@ -25,6 +25,14 @@ Description: "Lungenfunktion BF: Atemfrequenz 14/min"
 * referenceRange.low = 12 '/min' "/min"
 * referenceRange.high = 18 '/min' "/min"
 * derivedFrom[+] = Reference(mii-exa-test-data-lungenfunktion-docref-rohdaten-1)
+// Serienmessung: Atemfrequenz vor und nach der Methacholin-Provokation
+// (gleiches Muster wie bei FEV1/PEF/R_tot).
+* hasMember = Reference(mii-exa-test-data-lungenfunktion-bf-prov-1)
+// HINWEIS: component[predicted]/[percentPredicted] bleiben leer. Fuer die
+// Atemfrequenz existiert weder in LOINC noch in SNOMED CT ein Soll- oder
+// Prozent-vom-Soll-Konzept; das Modul liefert fuer BF auch kein
+// parameterspezifisches ValueSet. Dass das Profil fuer den Soll-Wert die
+// Einheit "L" vorgibt, zeigt, dass die beiden Slices geerbte Vorlage sind.
 
 // FEV1 (forciertes exspiratorisches Volumen in 1 Sekunde)
 Instance: mii-exa-test-data-lungenfunktion-fev-1
@@ -73,6 +81,9 @@ Description: "Lungenfunktion FVC: 3.10 L (86 % vom Soll)"
 * derivedFrom[+] = Reference(mii-exa-test-data-lungenfunktion-docref-rohdaten-1)
 * referenceRange.low = 2.90 'L' "L"
 * referenceRange.high = 4.30 'L' "L"
+// FEV1 und PEF stammen aus demselben forcierten Exspirationsmanoever.
+* hasMember[+] = Reference(mii-exa-test-data-lungenfunktion-fev-1)
+* hasMember[+] = Reference(mii-exa-test-data-lungenfunktion-pef-1)
 
 // FEV1/FVC (Tiffeneau-Index)
 Instance: mii-exa-test-data-lungenfunktion-fev-fvc-1
@@ -115,6 +126,9 @@ Description: "Lungenfunktion IC: 2.40 L"
 * derivedFrom[+] = Reference(mii-exa-test-data-lungenfunktion-docref-rohdaten-1)
 * referenceRange.low = 2.10 'L' "L"
 * referenceRange.high = 3.10 'L' "L"
+// IC = TLC - FRC: beide Bestimmungsgroessen als Mitglieder.
+* hasMember[+] = Reference(mii-exa-test-data-lungenfunktion-tlc-1)
+* hasMember[+] = Reference(mii-exa-test-data-lungenfunktion-frc-1)
 
 // ERV (exspiratorisches Reservevolumen, Profil IRV/ERV)
 Instance: mii-exa-test-data-lungenfunktion-irv-erv-1
@@ -133,6 +147,9 @@ Description: "Lungenfunktion ERV: 0.90 L"
 * derivedFrom[+] = Reference(mii-exa-test-data-lungenfunktion-docref-rohdaten-1)
 * referenceRange.low = 0.70 'L' "L"
 * referenceRange.high = 1.50 'L' "L"
+// ERV = FRC - RV: beide Bestimmungsgroessen als Mitglieder.
+* hasMember[+] = Reference(mii-exa-test-data-lungenfunktion-frc-1)
+* hasMember[+] = Reference(mii-exa-test-data-lungenfunktion-rv-1)
 
 // MEF50 (maximaler exspiratorischer Fluss bei 50 % der VC)
 Instance: mii-exa-test-data-lungenfunktion-mef-1
@@ -149,6 +166,12 @@ Description: "Lungenfunktion MEF50: 1.90 L/s (deutlich reduziert)"
 * derivedFrom[+] = Reference(mii-exa-test-data-lungenfunktion-docref-rohdaten-1)
 * referenceRange.low = 2.70 'L/s' "L/s"
 * referenceRange.high = 5.20 'L/s' "L/s"
+// MEF50 wird aus der Fluss-Volumen-Kurve desselben FVC-Manoevers abgelesen.
+* hasMember = Reference(mii-exa-test-data-lungenfunktion-fvc-1)
+// Z-Score (GLI). predicted/percentPredicted sind blockiert: ihre
+// code.coding[sct|loinc] tragen im Profil ein patternCoding mit code = "TODO".
+* component[z-score].code.coding[sct] = $sct20260701#1078210003 "Z-score calculation technique (qualifier value)"
+* component[z-score].valueQuantity = -2.1 '1' "SD"
 
 // PEF (Peak Exspiratory Flow)
 Instance: mii-exa-test-data-lungenfunktion-pef-1

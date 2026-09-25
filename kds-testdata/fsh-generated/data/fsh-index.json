@@ -93,7 +93,7 @@
     "fshType": "Instance",
     "fshFile": "modul-lungenfunktion/Bundle.fsh",
     "startLine": 5,
-    "endLine": 72
+    "endLine": 75
   },
   {
     "outputFile": "Bundle-mii-exa-test-data-bundle-mikrobio-1.json",
@@ -2085,23 +2085,23 @@
     "fshType": "Instance",
     "fshFile": "modul-lungenfunktion/Medication.fsh",
     "startLine": 35,
-    "endLine": 58
+    "endLine": 60
   },
   {
     "outputFile": "MedicationAdministration-mii-exa-test-data-lungenfunktion-dosis-gabe-2.json",
     "fshName": "mii-exa-test-data-lungenfunktion-dosis-gabe-2",
     "fshType": "Instance",
     "fshFile": "modul-lungenfunktion/Medication.fsh",
-    "startLine": 61,
-    "endLine": 86
+    "startLine": 63,
+    "endLine": 88
   },
   {
     "outputFile": "MedicationAdministration-mii-exa-test-data-lungenfunktion-dosis-gabe-var-1.json",
     "fshName": "mii-exa-test-data-lungenfunktion-dosis-gabe-var-1",
     "fshType": "Instance",
     "fshFile": "modul-lungenfunktion/Medication.fsh",
-    "startLine": 89,
-    "endLine": 103
+    "startLine": 91,
+    "endLine": 105
   },
   {
     "outputFile": "MedicationAdministration-mii-exa-test-data-patient-1-medadmin-1.json",
@@ -2300,8 +2300,8 @@
     "fshName": "mii-exa-test-data-lungenfunktion-methacholine-anordnung-1",
     "fshType": "Instance",
     "fshFile": "modul-lungenfunktion/Medication.fsh",
-    "startLine": 105,
-    "endLine": 116
+    "startLine": 107,
+    "endLine": 118
   },
   {
     "outputFile": "MedicationRequest-mii-exa-test-data-mtb-therapieempfehlung-1.json",
@@ -3549,6 +3549,14 @@
     "fshType": "Instance",
     "fshFile": "modul-lungenfunktion/ObservationSpirometrie.fsh",
     "startLine": 8,
+    "endLine": 30
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-lungenfunktion-bf-prov-1.json",
+    "fshName": "mii-exa-test-data-lungenfunktion-bf-prov-1",
+    "fshType": "Instance",
+    "fshFile": "modul-lungenfunktion/ObservationProvokation.fsh",
+    "startLine": 9,
     "endLine": 27
   },
   {
@@ -3565,63 +3573,63 @@
     "fshType": "Instance",
     "fshFile": "modul-lungenfunktion/ObservationDiffusion.fsh",
     "startLine": 8,
-    "endLine": 25
+    "endLine": 28
   },
   {
     "outputFile": "Observation-mii-exa-test-data-lungenfunktion-dlcoc-1.json",
     "fshName": "mii-exa-test-data-lungenfunktion-dlcoc-1",
     "fshType": "Instance",
     "fshFile": "modul-lungenfunktion/ObservationDiffusion.fsh",
-    "startLine": 28,
-    "endLine": 42
+    "startLine": 31,
+    "endLine": 51
   },
   {
     "outputFile": "Observation-mii-exa-test-data-lungenfunktion-dosis-kumuliert-1.json",
     "fshName": "mii-exa-test-data-lungenfunktion-dosis-kumuliert-1",
     "fshType": "Instance",
     "fshFile": "modul-lungenfunktion/ObservationProvokation.fsh",
-    "startLine": 93,
-    "endLine": 102
+    "startLine": 114,
+    "endLine": 123
   },
   {
     "outputFile": "Observation-mii-exa-test-data-lungenfunktion-dosis-schwellwert-1.json",
     "fshName": "mii-exa-test-data-lungenfunktion-dosis-schwellwert-1",
     "fshType": "Instance",
     "fshFile": "modul-lungenfunktion/ObservationProvokation.fsh",
-    "startLine": 81,
-    "endLine": 90
+    "startLine": 102,
+    "endLine": 111
   },
   {
     "outputFile": "Observation-mii-exa-test-data-lungenfunktion-fev-1.json",
     "fshName": "mii-exa-test-data-lungenfunktion-fev-1",
     "fshType": "Instance",
     "fshFile": "modul-lungenfunktion/ObservationSpirometrie.fsh",
-    "startLine": 30,
-    "endLine": 53
+    "startLine": 38,
+    "endLine": 61
   },
   {
     "outputFile": "Observation-mii-exa-test-data-lungenfunktion-fev-fvc-1.json",
     "fshName": "mii-exa-test-data-lungenfunktion-fev-fvc-1",
     "fshType": "Instance",
     "fshFile": "modul-lungenfunktion/ObservationSpirometrie.fsh",
-    "startLine": 78,
-    "endLine": 97
+    "startLine": 89,
+    "endLine": 108
   },
   {
     "outputFile": "Observation-mii-exa-test-data-lungenfunktion-fev-prov-1.json",
     "fshName": "mii-exa-test-data-lungenfunktion-fev-prov-1",
     "fshType": "Instance",
     "fshFile": "modul-lungenfunktion/ObservationProvokation.fsh",
-    "startLine": 9,
-    "endLine": 18
+    "startLine": 30,
+    "endLine": 39
   },
   {
     "outputFile": "Observation-mii-exa-test-data-lungenfunktion-fev-prov-2.json",
     "fshName": "mii-exa-test-data-lungenfunktion-fev-prov-2",
     "fshType": "Instance",
     "fshFile": "modul-lungenfunktion/ObservationProvokation.fsh",
-    "startLine": 21,
-    "endLine": 30
+    "startLine": 42,
+    "endLine": 51
   },
   {
     "outputFile": "Observation-mii-exa-test-data-lungenfunktion-frc-1.json",
@@ -3636,16 +3644,16 @@
     "fshName": "mii-exa-test-data-lungenfunktion-frc-prov-1",
     "fshType": "Instance",
     "fshFile": "modul-lungenfunktion/ObservationProvokation.fsh",
-    "startLine": 69,
-    "endLine": 78
+    "startLine": 90,
+    "endLine": 99
   },
   {
     "outputFile": "Observation-mii-exa-test-data-lungenfunktion-fvc-1.json",
     "fshName": "mii-exa-test-data-lungenfunktion-fvc-1",
     "fshType": "Instance",
     "fshFile": "modul-lungenfunktion/ObservationSpirometrie.fsh",
-    "startLine": 56,
-    "endLine": 75
+    "startLine": 64,
+    "endLine": 86
   },
   {
     "outputFile": "Observation-mii-exa-test-data-lungenfunktion-gewicht-1.json",
@@ -3653,47 +3661,63 @@
     "fshType": "Instance",
     "fshFile": "modul-lungenfunktion/ObservationUmgebung.fsh",
     "startLine": 59,
-    "endLine": 69
+    "endLine": 82
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-lungenfunktion-gewicht-2.json",
+    "fshName": "mii-exa-test-data-lungenfunktion-gewicht-2",
+    "fshType": "Instance",
+    "fshFile": "modul-lungenfunktion/ObservationUmgebung.fsh",
+    "startLine": 85,
+    "endLine": 95
   },
   {
     "outputFile": "Observation-mii-exa-test-data-lungenfunktion-hb-1.json",
     "fshName": "mii-exa-test-data-lungenfunktion-hb-1",
     "fshType": "Instance",
     "fshFile": "modul-lungenfunktion/ObservationDiffusion.fsh",
-    "startLine": 102,
-    "endLine": 114
+    "startLine": 121,
+    "endLine": 137
+  },
+  {
+    "outputFile": "Observation-mii-exa-test-data-lungenfunktion-hb-2.json",
+    "fshName": "mii-exa-test-data-lungenfunktion-hb-2",
+    "fshType": "Instance",
+    "fshFile": "modul-lungenfunktion/ObservationDiffusion.fsh",
+    "startLine": 140,
+    "endLine": 152
   },
   {
     "outputFile": "Observation-mii-exa-test-data-lungenfunktion-ic-1.json",
     "fshName": "mii-exa-test-data-lungenfunktion-ic-1",
     "fshType": "Instance",
     "fshFile": "modul-lungenfunktion/ObservationSpirometrie.fsh",
-    "startLine": 100,
-    "endLine": 117
+    "startLine": 111,
+    "endLine": 131
   },
   {
     "outputFile": "Observation-mii-exa-test-data-lungenfunktion-irv-erv-1.json",
     "fshName": "mii-exa-test-data-lungenfunktion-irv-erv-1",
     "fshType": "Instance",
     "fshFile": "modul-lungenfunktion/ObservationSpirometrie.fsh",
-    "startLine": 120,
-    "endLine": 135
+    "startLine": 134,
+    "endLine": 152
   },
   {
     "outputFile": "Observation-mii-exa-test-data-lungenfunktion-kco-1.json",
     "fshName": "mii-exa-test-data-lungenfunktion-kco-1",
     "fshType": "Instance",
     "fshFile": "modul-lungenfunktion/ObservationDiffusion.fsh",
-    "startLine": 45,
-    "endLine": 65
+    "startLine": 54,
+    "endLine": 74
   },
   {
     "outputFile": "Observation-mii-exa-test-data-lungenfunktion-kcoc-1.json",
     "fshName": "mii-exa-test-data-lungenfunktion-kcoc-1",
     "fshType": "Instance",
     "fshFile": "modul-lungenfunktion/ObservationDiffusion.fsh",
-    "startLine": 68,
-    "endLine": 84
+    "startLine": 77,
+    "endLine": 97
   },
   {
     "outputFile": "Observation-mii-exa-test-data-lungenfunktion-luftfeuchtigkeit-1.json",
@@ -3716,24 +3740,24 @@
     "fshName": "mii-exa-test-data-lungenfunktion-mef-1",
     "fshType": "Instance",
     "fshFile": "modul-lungenfunktion/ObservationSpirometrie.fsh",
-    "startLine": 138,
-    "endLine": 151
+    "startLine": 155,
+    "endLine": 174
   },
   {
     "outputFile": "Observation-mii-exa-test-data-lungenfunktion-pef-1.json",
     "fshName": "mii-exa-test-data-lungenfunktion-pef-1",
     "fshType": "Instance",
     "fshFile": "modul-lungenfunktion/ObservationSpirometrie.fsh",
-    "startLine": 154,
-    "endLine": 173
+    "startLine": 177,
+    "endLine": 196
   },
   {
     "outputFile": "Observation-mii-exa-test-data-lungenfunktion-pef-prov-1.json",
     "fshName": "mii-exa-test-data-lungenfunktion-pef-prov-1",
     "fshType": "Instance",
     "fshFile": "modul-lungenfunktion/ObservationProvokation.fsh",
-    "startLine": 33,
-    "endLine": 42
+    "startLine": 54,
+    "endLine": 63
   },
   {
     "outputFile": "Observation-mii-exa-test-data-lungenfunktion-r-1.json",
@@ -3748,24 +3772,24 @@
     "fshName": "mii-exa-test-data-lungenfunktion-r-prov-1",
     "fshType": "Instance",
     "fshFile": "modul-lungenfunktion/ObservationProvokation.fsh",
-    "startLine": 45,
-    "endLine": 54
+    "startLine": 66,
+    "endLine": 75
   },
   {
     "outputFile": "Observation-mii-exa-test-data-lungenfunktion-rv-1.json",
     "fshName": "mii-exa-test-data-lungenfunktion-rv-1",
     "fshType": "Instance",
     "fshFile": "modul-lungenfunktion/ObservationBodyplethysmographie.fsh",
-    "startLine": 123,
-    "endLine": 140
+    "startLine": 127,
+    "endLine": 147
   },
   {
     "outputFile": "Observation-mii-exa-test-data-lungenfunktion-rv-tlc-1.json",
     "fshName": "mii-exa-test-data-lungenfunktion-rv-tlc-1",
     "fshType": "Instance",
     "fshFile": "modul-lungenfunktion/ObservationBodyplethysmographie.fsh",
-    "startLine": 143,
-    "endLine": 161
+    "startLine": 150,
+    "endLine": 168
   },
   {
     "outputFile": "Observation-mii-exa-test-data-lungenfunktion-sg-total-1.json",
@@ -3773,7 +3797,7 @@
     "fshType": "Instance",
     "fshFile": "modul-lungenfunktion/ObservationBodyplethysmographie.fsh",
     "startLine": 84,
-    "endLine": 98
+    "endLine": 102
   },
   {
     "outputFile": "Observation-mii-exa-test-data-lungenfunktion-sr-1.json",
@@ -3796,32 +3820,32 @@
     "fshName": "mii-exa-test-data-lungenfunktion-sr-prov-1",
     "fshType": "Instance",
     "fshFile": "modul-lungenfunktion/ObservationProvokation.fsh",
-    "startLine": 57,
-    "endLine": 66
+    "startLine": 78,
+    "endLine": 87
   },
   {
     "outputFile": "Observation-mii-exa-test-data-lungenfunktion-tlc-1.json",
     "fshName": "mii-exa-test-data-lungenfunktion-tlc-1",
     "fshType": "Instance",
     "fshFile": "modul-lungenfunktion/ObservationBodyplethysmographie.fsh",
-    "startLine": 101,
-    "endLine": 120
+    "startLine": 105,
+    "endLine": 124
   },
   {
     "outputFile": "Observation-mii-exa-test-data-lungenfunktion-va-1.json",
     "fshName": "mii-exa-test-data-lungenfunktion-va-1",
     "fshType": "Instance",
     "fshFile": "modul-lungenfunktion/ObservationDiffusion.fsh",
-    "startLine": 87,
-    "endLine": 99
+    "startLine": 100,
+    "endLine": 118
   },
   {
     "outputFile": "Observation-mii-exa-test-data-lungenfunktion-vc-1.json",
     "fshName": "mii-exa-test-data-lungenfunktion-vc-1",
     "fshType": "Instance",
     "fshFile": "modul-lungenfunktion/ObservationSpirometrie.fsh",
-    "startLine": 176,
-    "endLine": 195
+    "startLine": 199,
+    "endLine": 218
   },
   {
     "outputFile": "Observation-mii-exa-test-data-mikrobio-allgemeine-bestimmung-1.json",
@@ -8156,24 +8180,24 @@
     "fshName": "mii-exa-test-data-lungenfunktion-bodyplethysmographie-messung-1",
     "fshType": "Instance",
     "fshFile": "modul-lungenfunktion/Procedure.fsh",
-    "startLine": 27,
-    "endLine": 49
+    "startLine": 33,
+    "endLine": 55
   },
   {
     "outputFile": "Procedure-mii-exa-test-data-lungenfunktion-diffusion-messung-1.json",
     "fshName": "mii-exa-test-data-lungenfunktion-diffusion-messung-1",
     "fshType": "Instance",
     "fshFile": "modul-lungenfunktion/Procedure.fsh",
-    "startLine": 51,
-    "endLine": 73
+    "startLine": 57,
+    "endLine": 79
   },
   {
     "outputFile": "Procedure-mii-exa-test-data-lungenfunktion-provokationstest-messung-1.json",
     "fshName": "mii-exa-test-data-lungenfunktion-provokationstest-messung-1",
     "fshType": "Instance",
     "fshFile": "modul-lungenfunktion/Procedure.fsh",
-    "startLine": 75,
-    "endLine": 100
+    "startLine": 81,
+    "endLine": 106
   },
   {
     "outputFile": "Procedure-mii-exa-test-data-lungenfunktion-spirometrie-messung-1.json",
@@ -8181,15 +8205,15 @@
     "fshType": "Instance",
     "fshFile": "modul-lungenfunktion/Procedure.fsh",
     "startLine": 6,
-    "endLine": 25
+    "endLine": 31
   },
   {
     "outputFile": "Procedure-mii-exa-test-data-lungenfunktion-untersuchung-1.json",
     "fshName": "mii-exa-test-data-lungenfunktion-untersuchung-1",
     "fshType": "Instance",
     "fshFile": "modul-lungenfunktion/Procedure.fsh",
-    "startLine": 102,
-    "endLine": 113
+    "startLine": 108,
+    "endLine": 119
   },
   {
     "outputFile": "Procedure-mii-exa-test-data-mtb-genomic-study-1.json",

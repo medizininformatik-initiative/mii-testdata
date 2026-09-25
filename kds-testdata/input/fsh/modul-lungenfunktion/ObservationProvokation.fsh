@@ -5,6 +5,27 @@
 // Befund: positiver Provokationstest (FEV1-Abfall > 20 %)
 // ============================================================================
 
+// Atemfrequenz nach Methacholin-Gabe
+Instance: mii-exa-test-data-lungenfunktion-bf-prov-1
+InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-bf
+Usage: #example
+Description: "Lungenfunktion BF (Provokation, nach Methacholin): 20/min"
+* insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/lungenfunktion-messplatz"
+* status = #final
+* category[VSCat] = $observation-category#vital-signs
+* code.coding[loinc] = $loinc#9279-1 "Respiratory rate"
+* code.coding[snomed] = $sct20260701#271625008 "Rate of spontaneous respiration (observable entity)"
+* subject = Reference(mii-exa-test-data-lungenfunktion-patient-1)
+* partOf = Reference(mii-exa-test-data-lungenfunktion-provokationstest-messung-1)
+* effectiveDateTime = "2025-02-18T11:30:00+01:00"
+* issued = "2025-02-18T12:00:00+01:00"
+* valueQuantity = 20 '/min' "/min"
+* interpretation = $v3-ObservationInterpretation#H "High"
+* method = $sct20260701#249862003 "Sitting upright (finding)"
+* referenceRange.low = 12 '/min' "/min"
+* referenceRange.high = 18 '/min' "/min"
+
 // FEV1 vor Methacholin-Gabe (Baseline)
 Instance: mii-exa-test-data-lungenfunktion-fev-prov-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-fev

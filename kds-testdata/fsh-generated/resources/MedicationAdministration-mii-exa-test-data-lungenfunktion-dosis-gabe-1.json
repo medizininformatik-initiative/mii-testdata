@@ -76,6 +76,11 @@
       ]
     }
   ],
+  "reasonReference": [
+    {
+      "reference": "Observation/mii-exa-test-data-lungenfunktion-fev-fvc-1"
+    }
+  ],
   "note": [
     {
       "text": "Erste Dosisstufe des Provokationsprotokolls."
