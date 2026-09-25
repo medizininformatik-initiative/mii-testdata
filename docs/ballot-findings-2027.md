@@ -180,7 +180,15 @@ und das Modul verwendet sie an anderer Stelle bereits:
 
 Die Codes müssten also nur aus den vorhandenen ValueSets in die Pattern übernommen
 werden. Eine konkrete Zuordnung je Parameter steht in
-[vorschlag-lufu-codes.md](vorschlag-lufu-codes.md).
+[vorschlag-lufu-codes.md](vorschlag-lufu-codes.md); die am Terminologieserver
+erhobene IEEE-11073-Alternative in [ieee11073-lufu-mapping.md](ieee11073-lufu-mapping.md).
+
+Wichtig für die Bewertung: Ein Teil der Platzhalter lässt sich **durch kein Codesystem**
+auflösen. *Prozent vom Soll* existiert weder in MDC noch — für die
+bodyplethysmographischen Größen — in SNOMED oder LOINC; dort ist die Modellierung als
+abgeleitete Größe der Ausweg. Die Diffusionsparameter (DLCO, KCO und ihre
+Hb-korrigierten Varianten) sind in MDC gar nicht darstellbar, weil die Nomenklatur kein
+Kohlenmonoxid als Atemgas kennt.
 
 **Vorschlag:** Vor dem Ballot-Abschluss die 56 Platzhalter auflösen. Ergänzend ein
 Release-Gate, das publizierte Pakete auf `TODO`/`xxx`/`TBD` in `fixed*`/`pattern*`

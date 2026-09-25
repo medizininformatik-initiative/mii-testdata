@@ -73,21 +73,44 @@ Außerdem: Die drei DiagnosticReport-Profile **Bodyplethysmographie**, **Diffusi
 Code enthält — `18759-1 Spirometry study`. Für Bodyplethysmographie und
 Diffusionsmessung ist das fachlich falsch; hier fehlen eigene Studien-Codes.
 
-## Prüfen: IEEE 11073 als dritte Codierung
+## IEEE 11073: geprüft — lohnt sich, aber aus einem anderen Grund als vermutet
 
-Lungenfunktionsparameter entstehen an Geräten (Spirometer, Bodyplethysmograph). Das
-**ICU-Modul hat dafür bereits ein Muster etabliert**: Neben SNOMED und LOINC führt es
-`urn:iso:std:iso:11073:10101` als eigenes Coding-Slice, mit drei kuratierten ValueSets —
-`MII_VS_ICU_Code_Monitoring_und_Vitaldaten_ISO11073` (46 Codes),
-`MII_VS_ICU_Code_Observation_Beatmung_ISO11073` (20 Codes) und
-`…_Bilanzen_ISO11073`. Insgesamt erscheint 11073 in **85 ICU-Dateien**.
+Die Frage wurde inzwischen gegen den Terminologieserver erhoben und dokumentiert in
+[ieee11073-lufu-mapping.md](ieee11073-lufu-mapping.md) (CodeSystem-Version `2024-12-05`,
+48.287 Konzepte vollständig expandiert). Die Antwort fällt differenziert aus:
 
-Die Lungenfunktion verwendet IEEE 11073 in **null** Dateien.
+| | Abdeckung |
+|---|---|
+| Messgrößen gesamt (22 Modulparameter) | 9 (41 %) |
+| … Spirometrie | **8 von 8** |
+| … Bodyplethysmographie | 1 von 8 |
+| … Diffusion | **0 von 5** |
+| **Sollwerte** (Partition 514 „Predicted Values") | **51 Codes** |
+| Prozent vom Soll | **0** |
 
-Da die Nomenklatur laut IEEE ausdrücklich *respiration* und *ventilation* abdeckt, lohnt
-die Prüfung, ob sie auch die spirometrischen und bodyplethysmographischen Größen führt —
-gerade für die Sollwert-Komponenten, für die SNOMED nichts hergibt. Das ließe sich am
-ICU-Modul abschauen, statt eine neue Konvention zu erfinden.
+**Der Gewinn liegt bei den Sollwerten, nicht bei den Messgrößen.** SNOMED kennt Sollwerte
+nur für FEV1, FVC und PEF; MDC deckt zusätzlich FEV1/FVC, VC, IC, IRV, ERV und die ganze
+MEF-Reihe ab — also genau Stellen, an denen heute `sct#TODO` steht. Empfehlung deshalb:
+optionales drittes Slice `0..1`, begründet mit der Sollwert-Abdeckung.
+
+**Zwei Grenzen, die kein weiteres Codesystem aufhebt:**
+
+*Prozent vom Soll* gibt es in MDC für keine einzige Lungenfunktionsgröße — und in SNOMED
+und LOINC für die bodyplethysmographischen Größen ebenfalls nicht. Statt einen
+Terminologie-Neuantrag zu stellen, wäre die saubere Lösung, die Größe als **abgeleitet**
+zu modellieren: Messwert und Sollwert stehen ohnehin beide als Komponenten in der
+Ressource.
+
+*Die Diffusionsmessung ist in MDC terminologisch nicht darstellbar.* Die Nomenklatur
+kennt kein Kohlenmonoxid als Atemgas — die einzigen CO-Konzepte betreffen
+Carboxyhämoglobin im Blut. Ohne CO-Atemgaskonzentration gibt es kein DLCO und kein KCO.
+`152020` `MDC_COEF_GAS_TRAN` klingt passend, benennt aber kein Gas und trägt keine
+Hb-Korrektur. Auch TLC, RV, RV/TLC und FRC fehlen; FRC existiert ausschließlich in vier
+*Alarm*codes („Unable to calculate Functional Residual Capacity") — also genau
+andersherum als gebraucht.
+
+Für Bodyplethysmographie und Diffusion bleibt `0..0` damit die ehrliche Lösung, in MDC
+wie in SNOMED.
 
 ## Randnotiz ICU: SOFA-Subscores
 
