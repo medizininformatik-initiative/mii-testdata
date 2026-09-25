@@ -2,7 +2,7 @@
 
 This Implementation Guide provides comprehensive test data compliant with the German Medical Informatics Initiative (MII) Core Data Set (KDS) modules — **2027 ballot generation**, built against the BOM package `de.medizininformatikinitiative.kerndatensatz.complete` (all 21 KDS modules pinned coherently).
 
-**1328 example instances · 31 transaction bundles · every instance labeled `meta.security = HTEST` and carrying `meta.source`.**
+**1369 example instances · 31 transaction bundles · every instance labeled `meta.security = HTEST` and carrying `meta.source`.**
 
 ## Three kinds of bundles
 

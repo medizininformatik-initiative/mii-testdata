@@ -57,16 +57,16 @@ def collect():
                 vals = [v for k, v in els.items()
                         if k == par + ".value[x]" or k.startswith(par + ".value[x]:")]
                 if vals and vals[0].get("min", 0) >= 1:
-                    reason = "obs-6: value[x] ist Pflicht"
+                    reason = "obs-6: value[x] is required"
             if el.get("max") == "0":
-                reason = "max=0 trotz Must-Support"
+                reason = "max=0 despite Must-Support"
             if not reason:
                 anc = [eid] + [eid.rsplit(".", i)[0]
                                for i in range(1, 4) if eid.count(".") >= i]
                 for a in anc:
                     pc = els.get(a, {}).get("patternCoding") or {}
                     if isinstance(pc.get("code"), str) and PLACEHOLDER.fullmatch(pc["code"]):
-                        reason = "Platzhalter-Code im Profil"
+                        reason = "placeholder code in the profile"
                         break
             mods[mod]["blocked" if reason else "feasible"] += 1
             gaps.append({"m": mod, "p": prof.split("/")[-1],
@@ -135,32 +135,32 @@ FRAGMENT = """<div class="gapv">
 </style>
 
 <div class="g-figs">
-  <div class="g-fig"><span class="g-k">belegt</span>
+  <div class="g-fig"><span class="g-k">covered</span>
     <span class="g-n" style="color:var(--g-teal)">__COVPCT__&thinsp;%</span>
-    <span class="g-d">__COV__ von __TOTAL__ MS-Elementen</span></div>
-  <div class="g-fig"><span class="g-k">machbar</span>
+    <span class="g-d">__COV__ of __TOTAL__ MS elements</span></div>
+  <div class="g-fig"><span class="g-k">feasible</span>
     <span class="g-n" style="color:var(--g-amber)">__FEAS__</span>
-    <span class="g-d">offen, aber befüllbar</span></div>
-  <div class="g-fig"><span class="g-k">blockiert</span>
+    <span class="g-d">open, but populatable</span></div>
+  <div class="g-fig"><span class="g-k">blocked</span>
     <span class="g-n" style="color:var(--g-rust)">__BLOCK__</span>
-    <span class="g-d">Profil verhindert die Befüllung</span></div>
+    <span class="g-d">the profile prevents population</span></div>
 </div>
 
 <div class="g-bars" id="g-bars"></div>
 <div class="g-legend">
-  <span><i class="g-sw g-c"></i>belegt</span>
-  <span><i class="g-sw g-f"></i>machbar</span>
-  <span><i class="g-sw g-b"></i>blockiert</span>
+  <span><i class="g-sw g-c"></i>covered</span>
+  <span><i class="g-sw g-f"></i>feasible</span>
+  <span><i class="g-sw g-b"></i>blocked</span>
 </div>
 
 <div class="g-ctl">
-  <input type="search" id="g-q" placeholder="Element, Profil oder Modul suchen" aria-label="Suchen">
-  <button class="g-chip" id="g-all" aria-pressed="true">alle</button>
-  <button class="g-chip" id="g-onlyf" aria-pressed="false">nur machbar</button>
-  <button class="g-chip" id="g-onlyb" aria-pressed="false">nur blockiert</button>
+  <input type="search" id="g-q" placeholder="Search element, profile or module" aria-label="Search">
+  <button class="g-chip" id="g-all" aria-pressed="true">all</button>
+  <button class="g-chip" id="g-onlyf" aria-pressed="false">feasible only</button>
+  <button class="g-chip" id="g-onlyb" aria-pressed="false">blocked only</button>
 </div>
 <div class="g-tw">
-  <table><thead><tr><th>Modul</th><th>Profil</th><th>Element</th><th>Status</th></tr></thead>
+  <table><thead><tr><th>Module</th><th>Profile</th><th>Element</th><th>Status</th></tr></thead>
   <tbody id="g-tb"></tbody></table>
 </div>
 <p class="g-cnt" id="g-cnt"></p>
@@ -177,14 +177,14 @@ FRAGMENT = """<div class="gapv">
     var open = m.feasible + m.blocked;
     var b = document.createElement("button");
     b.className = "g-row"; b.setAttribute("aria-pressed","false");
-    b.title = m.name + ": " + m.covered + "/" + m.total + " belegt, "
-            + m.feasible + " machbar, " + m.blocked + " blockiert";
+    b.title = m.name + ": " + m.covered + "/" + m.total + " covered, "
+            + m.feasible + " feasible, " + m.blocked + " blocked";
     b.innerHTML = '<span class="g-name">' + esc(m.name) + '</span>'
       + '<span class="g-track">'
       + '<span class="g-seg g-c" style="width:' + (100*m.covered/m.total) + '%"></span>'
       + '<span class="g-seg g-f" style="width:' + (100*m.feasible/m.total) + '%"></span>'
       + '<span class="g-seg g-b" style="width:' + (100*m.blocked/m.total) + '%"></span>'
-      + '</span><span class="g-pct">' + (open ? open + " offen" : "vollst\\u00e4ndig") + '</span>';
+      + '</span><span class="g-pct">' + (open ? open + " open" : "complete") + '</span>';
     b.onclick = function(){
       mod = (mod === m.name) ? null : m.name;
       Array.prototype.forEach.call(bars.children, function(c){
@@ -218,11 +218,11 @@ FRAGMENT = """<div class="gapv">
         + '<td class="g-pr">' + esc(g.p) + '</td>'
         + '<td class="g-el">' + esc(g.e) + '</td><td>'
         + (g.r ? '<span class="g-tag g-tagb">' + esc(g.r) + '</span>'
-               : '<span class="g-tag g-tagf">machbar</span>') + '</td></tr>';
+               : '<span class="g-tag g-tagf">feasible</span>') + '</td></tr>';
     }).join("");
-    cnt.textContent = rows.length + " von " + DATA.gaps.length + " offenen Knoten"
-      + (rows.length > 400 ? " \\u00b7 erste 400 gezeigt" : "")
-      + (mod ? " \\u00b7 Modul " + mod : "");
+    cnt.textContent = rows.length + " of " + DATA.gaps.length + " open nodes"
+      + (rows.length > 400 ? " \\u00b7 first 400 shown" : "")
+      + (mod ? " \\u00b7 module " + mod : "");
   }
   render();
 })();

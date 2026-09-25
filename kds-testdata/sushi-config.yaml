@@ -4,12 +4,14 @@
 # │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: de.medizininformatikinitiative.kerndatensatz.testdata
+# en-first wie die Modulguides (11 von 14 KDS-Module deklarieren language=en)
+language: en
 canonical: https://www.medizininformatik-initiative.de/fhir/testdata
 name: MIIKDSTestData
 title: MII KDS Test Data
 description: This project contains example MII KDS data for testing purposes.
 status: draft # draft | active | retired | unknown
-version: 2027.0.0-ballot
+version: 2027.0.0-ballot.rc1
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2019+
 releaseLabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
@@ -86,6 +88,11 @@ dependencies:
 # http://build.fhir.org/ig/FHIR/fhir-tools-ig/branches/master/CodeSystem-ig-parameters.html
 #
 parameters:
+  # en-first, wie die Modulguides: 11 der 14 KDS-Module deklarieren in ihrer
+  # ImplementationGuide-Ressource language=en, darunter Onkologie. Die
+  # Aggregator-BOM kerndatensatz-complete fuehrt dagegen de — das ist die
+  # Ausnahme, nicht die Regel.
+  i18n-default-lang: en
   path-resource:
     - input/predefined-resources
   # Pages-Budget: keine XML-/Turtle-Renderings je Artefakt (JSON bleibt).
@@ -105,8 +112,8 @@ parameters:
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 menu:
   Home: index.html
-  Nutzung: nutzung.html
-  Testabdeckung: testabdeckung.html
+  Usage: usage.html
+  Test coverage: test-coverage.html
   Artifacts: artifacts.html
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮

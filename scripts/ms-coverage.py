@@ -309,12 +309,12 @@ def main():
     if IG_INCLUDE:
         L = []
         L.append(
-            f"**Bezugsstand: MII Kerndatensatz complete "
+            f"**Reference version: MII Kerndatensatz complete "
             f"[`{BOM_VERSION}`](https://github.com/medizininformatik-initiative/kerndatensatz-complete/releases/tag/v{BOM_VERSION})** "
-            f"— alle Zahlen dieser Seite beziehen sich auf die Profil-Snapshots dieses BOM-Stands.\n")
-        L.append(f"{tot_ms} MS-Elemente über die genutzten Profile · "
-                 f"**{tot_top} oberste unbefüllte Knoten**\n")
-        L.append("| Modul | Profile genutzt/gesamt | MS befüllt/gesamt | Coverage | häufigste Lücken |")
+            f"— every figure on this page refers to the profile snapshots of that BOM version.\n")
+        L.append(f"{tot_ms} MS elements across the profiles in use · "
+                 f"**{tot_top} top-level unpopulated nodes**\n")
+        L.append("| Module | Profiles used/total | MS populated/total | Coverage | most frequent gaps |")
         L.append("|---|---|---|---|---|")
         for mod in sorted(modsum):
             m = modsum[mod]
@@ -325,8 +325,8 @@ def main():
             L.append(f"| {mod.replace('modul-','')} | {m['prof_used']}/{m['prof_total']} | "
                      f"{m['ms_cov']}/{m['ms_total']} | {pct} | {top} |")
         L.append("")
-        L.append("Vollständiger Report (je Profil, plus befüllte Nicht-MS-Pfade als "
-                 "Ballot-Feedback-Kandidaten): "
+        L.append("Full report (per profile, plus populated non-MS paths as "
+                 "ballot feedback candidates): "
                  "[docs/ms-coverage-2027.md](https://github.com/medizininformatik-initiative/mii-testdata/blob/main/docs/ms-coverage-2027.md)")
         with open(IG_INCLUDE, "w", encoding="utf-8") as f:
             f.write("\n".join(L) + "\n")

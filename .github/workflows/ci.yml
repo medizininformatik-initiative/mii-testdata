@@ -78,6 +78,14 @@ jobs:
       run: sushi build --log-level warn .
       working-directory: ./kds-testdata
 
+    # Statische Gates: kosten Sekunden und brauchen kein Docker.
+    # check-references faengt absolute Referenzen in Kanonikalraeume — genau
+    # den Fall, an dem HAPI scheiterte und Blaze nichts merkte.
+    - name: Static checks (codings, references)
+      run: |
+        python3 scripts/check-coding-quality.py kds-testdata/fsh-generated/resources
+        python3 scripts/check-references.py kds-testdata/fsh-generated/resources
+
     - name: Generate timestamp
       id: timestamp
       run: echo "timestamp=$(date -u +'%Y%m%d-%H%M%S')" >> "$GITHUB_OUTPUT"
@@ -135,7 +143,11 @@ jobs:
         compression-level: 9
         if-no-files-found: error
 
-  blaze-transaction-test:
+  # Ladetest gegen ZWEI Server. Ein einzelner Server uebersieht Datenfehler,
+  # die er selbst toleriert: Blaze akzeptierte bundle-pat-1 mit einer absoluten
+  # URL als Specimen-Referenz, HAPI wies dasselbe Bundle mit HTTP 400 zurueck
+  # (HAPI-0507, externe Referenz). Erst der Vergleich macht solche Faelle sichtbar.
+  server-load-test:
     runs-on: ubuntu-latest
     needs: build-kds-testdata
     steps:
@@ -149,15 +161,12 @@ jobs:
         path: ./kds-testdata/fsh-generated
         merge-multiple: true
 
-    - name: Start Blaze FHIR server
-      run: docker compose -f blaze/blaze.yml up -d --wait
+    - name: Load all bundles into Blaze and HAPI
+      run: ./scripts/check-servers.sh ./kds-testdata/fsh-generated/resources
 
-    - name: POST bundles as transactions
-      run: blaze/load-bundles.sh ./kds-testdata/fsh-generated/resources
-
-    - name: Stop Blaze
+    - name: Stop servers
       if: always()
-      run: docker compose -f blaze/blaze.yml down -v
+      run: docker compose -f scripts/servers-smoke.yml down -v 2>/dev/null || true
 
   # Die aufgerufene Workflow-Definition deklariert ihre Secrets als required;
   # fehlen sie (z.B. in Forks), stirbt der Job ohne einen einzigen Step.

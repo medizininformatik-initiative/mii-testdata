@@ -1,8 +1,9 @@
 {
   "resourceType": "ImplementationGuide",
   "id": "de.medizininformatikinitiative.kerndatensatz.testdata",
+  "language": "en",
   "url": "https://www.medizininformatik-initiative.de/fhir/testdata/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.testdata",
-  "version": "2027.0.0-ballot",
+  "version": "2027.0.0-ballot.rc1",
   "name": "MIIKDSTestData",
   "title": "MII KDS Test Data",
   "status": "draft",
@@ -11037,13 +11038,13 @@
           "generation": "markdown"
         },
         {
-          "nameUrl": "nutzung.html",
-          "title": "Nutzung",
+          "nameUrl": "test-coverage.html",
+          "title": "Test Coverage",
           "generation": "markdown"
         },
         {
-          "nameUrl": "testabdeckung.html",
-          "title": "Testabdeckung",
+          "nameUrl": "usage.html",
+          "title": "Usage",
           "generation": "markdown"
         }
       ]
@@ -11056,6 +11057,10 @@
       {
         "code": "releaselabel",
         "value": "ci-build"
+      },
+      {
+        "code": "i18n-default-lang",
+        "value": "en"
       },
       {
         "code": "path-resource",

@@ -14,10 +14,10 @@
     <a href="index.html">Home</a>
   </li>
   <li>
-    <a href="nutzung.html">Nutzung</a>
+    <a href="usage.html">Usage</a>
   </li>
   <li>
-    <a href="testabdeckung.html">Testabdeckung</a>
+    <a href="test-coverage.html">Test coverage</a>
   </li>
   <li>
     <a href="artifacts.html">Artifacts</a>
