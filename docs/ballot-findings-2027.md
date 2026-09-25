@@ -141,7 +141,52 @@ Pflichten transportiert. Perspektivisch wäre eine Prüfung im IG Publisher sinn
 
 ---
 
-## 5. Randnotiz: OPS-Lücken (kein Profilfehler)
+## 5. Platzhalter-Codes (`TODO`, `xxx`) in publizierten Ballot-Profilen
+
+**62 Elemente in 21 Profilen** tragen als `patternCoding` einen Platzhalter statt eines
+echten Codes:
+
+| System | Platzhalter | Vorkommen |
+|---|---|---:|
+| `http://snomed.info/sct` | `TODO` | 35 |
+| `http://loinc.org` | `TODO` | 21 |
+| `http://snomed.info/sct` | `xxx` | 4 |
+| `http://snomed.info/sct` | `xxxx` | 2 |
+
+Betroffen sind **Lungenfunktion** (56 Elemente, u.a. `VA`, `KCOc`, `DLCOc`, `sG_Total`,
+`MEF`, `R_Effektiv`, `R_Spezifisch`, `RV_TLC`, `Diffusion`, `Bodyplethysmographie`,
+`Provokationstest`) und **ICU** (6 Elemente: **alle sechs SOFA-Subscores** tragen
+`sct#xxx` bzw. `sct#xxxx`, bei korrekt ausformulierten Displays wie
+„SOFA Subscore - Cardiovascular").
+
+Schwerpunkt sind die Komponenten `predicted` und `percentPredicted` sowie einzelne
+Hauptcodes.
+
+**Warum das die Elemente unbenutzbar macht:** Ein `patternCoding` verlangt, dass jede
+Codierung im Slice dem Muster entspricht. Wer die Komponente befüllt, müsste also
+wörtlich `code: "TODO"` schreiben — was jede Terminologieprüfung zu Recht ablehnt. Die
+einzige konforme Alternative ist, das Element wegzulassen. Die betroffenen
+Must-Support-Elemente sind damit nicht erfüllbar.
+
+**Es ist keine Terminologielücke, sondern unfertige Redaktion.** Die Codes existieren,
+und das Modul verwendet sie an anderer Stelle bereits:
+
+- `mii-pr-lungenfunktion-va` hat den SNOMED-Code korrekt gesetzt
+  (`251953007` „Alveolar volume (observable entity)") — nur das LOINC-Slice steht auf `TODO`.
+- Für die Predicted-Komponenten führt das Modul in seinen eigenen ValueSets reale
+  LOINC-Codes: `19861-4` „Total lung capacity Predicted", `19910-9` „Diffusion
+  capacity.carbon monoxide Predicted", `98130-8`, `19915-8`, `98088-8`
+  „Vital capacity/predicted VC".
+
+Die Codes müssten also nur aus den vorhandenen ValueSets in die Pattern übernommen werden.
+
+**Vorschlag:** Vor dem Ballot-Abschluss die 56 Platzhalter auflösen. Ergänzend ein
+Release-Gate, das publizierte Pakete auf `TODO`/`xxx`/`TBD` in `fixed*`/`pattern*`
+prüft — der Fund lässt sich mit dem Skript unten in Sekunden reproduzieren.
+
+---
+
+## 6. Randnotiz: OPS-Lücken (kein Profilfehler)
 
 Beim Kodieren der Testdaten sind zwei Katalog-Lücken aufgefallen, die Implementierer
 betreffen können — sie sind **keine** Fehler der MII-Profile:
@@ -156,7 +201,7 @@ betreffen können — sie sind **keine** Fehler der MII-Profile:
 
 ---
 
-## 6. Bereits gemeldet (Referenz)
+## 7. Bereits gemeldet (Referenz)
 
 | Befund | Ticket |
 |---|---|
@@ -174,7 +219,7 @@ Befund 1 und 2 lassen sich gegen jeden BOM-Stand nachrechnen:
 ```bash
 # Profile mit MS-dataAbsentReason bei value[x] min>=1
 python3 - <<'EOF'
-import json, glob, os
+import json, glob, os, re
 P = os.path.expanduser("~/.fhir/packages/"
     "de.medizininformatikinitiative.kerndatensatz.complete#2027.0.0-ballot.19/package")
 for f in glob.glob(P + "/StructureDefinition-*.json"):

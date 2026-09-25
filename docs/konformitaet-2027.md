@@ -83,14 +83,30 @@ und beide systematisch, nicht einzelfallweise zu beheben.
 
 ## Offene Abdeckungslücken (Ergänzung zur Coverage-Seite)
 
-12 Profile ohne Instanz. Der größte Block ist **kein Arbeitsvorrat, sondern ein
-Modellierungsproblem**: Alle neun offenen Lungenfunktions-Profile (`Fluss`, `Volumen`,
+12 Profile ohne Instanz, davon neun aus der Lungenfunktion (`Fluss`, `Volumen`,
 `Widerstand`, `Viskositaet`, `1_Viskositaet`, `Prozent`, `Transferkoeffizient`,
-`Diffusionskapzitaet`, `Befund`) haben **abgeleitete Kindprofile** — zwischen einem und
-neun — und sind damit faktisch Basisprofile, aber nicht als `abstract: true` markiert.
-Würden sie korrekt als abstrakt deklariert, stünde Lungenfunktion bei 48/48 statt 39/48,
-ohne dass eine einzige Instanz entsteht. Ballot-Kandidat, siehe
-[ballot-findings-2027.md](ballot-findings-2027.md).
+`Diffusionskapzitaet`, `Befund`). Sie haben je ein bis neun abgeleitete Kindprofile.
+
+**Das sind keine quasi-abstrakten Templates, sondern Größenart-Profile mit
+Auffangfunktion** — und damit unser Arbeitsvorrat, nicht ein Upstream-Problem:
+Jedes fixiert eine physikalische Einheit (`Volumen` → `L`, `Fluss` → `L/s`,
+`Widerstand` → `kPa/(L/s)`, `Prozent` → `%`, `Transferkoeffizient` →
+`mmol/(min.kPa.L)`, `Diffusionskapzitaet` → `mmol/(min.kPa)`, `Viskositaet` → `kPa.s`)
+und bindet `code.coding:loinc` an `mii-vs-lufu-lnc-observable` — ein **filterbasiertes**
+ValueSet über alle quantitativen LOINC-Codes der Klasse `LP7840-4` (Pulmonologie).
+Die Kinder erben die gesamte Struktur und verengen ausschließlich den Code
+(`mii-vs-lufu-lnc-fev`, `-tlc`, …).
+
+Eine Instanz des Elternprofils ist also semantisch vollständig: „eine
+Lungenfunktions-Volumenmessung in Litern mit quantitativem pulmonalem LOINC-Code, die
+keiner der neun benannten Parameter ist". Genau dafür sind sie gedacht — als
+Erweiterungspunkt für Geräteparameter, die der KDS nicht einzeln benannt hat.
+Testdaten dafür sind machbar: je eine Instanz mit einem Code aus dem breiten
+ValueSet, der nicht in den Kinder-ValueSets liegt.
+
+Ausnahme `Befund` (DiagnosticReport): ohne Einheit und ohne Code-Bindung, vier Kinder
+(Spirometrie-, Bodyplethysmographie-, Diffusions-, Provokationsbefund). Hier ist die
+Auffangfunktion weniger eindeutig.
 
 Lokal schließbar sind vier Lücken: ein **Questionnaire** (bisher existiert keine einzige
 Questionnaire-Instanz, nur QuestionnaireResponses), ein **SearchParameter** fürs
