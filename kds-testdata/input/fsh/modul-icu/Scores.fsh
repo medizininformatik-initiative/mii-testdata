@@ -183,6 +183,10 @@ Description: "ICU Score: Numerische Ratingskala Schmerz 4/10"
 * encounter = Reference(mii-exa-test-data-icu-encounter-1)
 * effectiveDateTime = "2024-05-06T10:00:00+02:00"
 * valueInteger = 4
+// Komponente: VAS-Gegenprobe derselben Erhebung
+* component[+].code.coding = $loinc#38214-3 "Pain severity [Score] Visual analog score"
+* component[=].code.text = "Visuelle Analogskala als Gegenprobe"
+* component[=].valueQuantity = 45 'mm' "mm"
 * issued = "2024-05-06T12:00:00+02:00"
 * performer = Reference(mii-exa-test-data-icu-practitioner-1)
 * interpretation = $v3-ObservationInterpretation#A "Abnormal"
@@ -204,6 +208,10 @@ Description: "ICU Score: Visuelle Analogskala Schmerz 45 mm"
 * encounter = Reference(mii-exa-test-data-icu-encounter-1)
 * effectiveDateTime = "2024-05-06T10:05:00+02:00"
 * valueQuantity = 45 'mm' "mm"
+// Komponente: NRS-Gegenprobe derselben Erhebung
+* component[+].code.coding = $loinc#72514-3 "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
+* component[=].code.text = "Numerische Ratingskala als Gegenprobe"
+* component[=].valueInteger = 4
 * issued = "2024-05-06T12:05:00+02:00"
 * performer = Reference(mii-exa-test-data-icu-practitioner-1)
 * interpretation = $v3-ObservationInterpretation#A "Abnormal"
@@ -241,6 +249,10 @@ Description: "ICU Score: Faces Pain Scale - Revised 6/10"
 * encounter = Reference(mii-exa-test-data-icu-encounter-1)
 * effectiveDateTime = "2024-05-06T10:15:00+02:00"
 * valueQuantity = 6 '{score}' "{score}"
+// Komponente: NRS-Gegenprobe derselben Erhebung
+* component[+].code.coding = $loinc#72514-3 "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
+* component[=].code.text = "Numerische Ratingskala als Gegenprobe"
+* component[=].valueInteger = 6
 * issued = "2024-05-06T12:15:00+02:00"
 * performer = Reference(mii-exa-test-data-icu-practitioner-1)
 * interpretation = $v3-ObservationInterpretation#A "Abnormal"
@@ -281,4 +293,8 @@ Description: "ICU Score: Numerische Ratingskala nicht erhebbar (Sedierung, dataA
 * effectiveDateTime = "2024-05-05T10:00:00+02:00"
 * performer = Reference(mii-exa-test-data-icu-practitioner-1)
 * dataAbsentReason = $data-absent-reason#temp-unknown "Temporarily Unknown"
+// Komponenten-dataAbsentReason: auch die VAS-Gegenprobe war nicht erhebbar
+* component[+].code.coding = $loinc#38214-3 "Pain severity [Score] Visual analog score"
+* component[=].code.text = "Visuelle Analogskala als Gegenprobe"
+* component[=].dataAbsentReason = $data-absent-reason#not-performed "Not Performed"
 * note.text = "Selbstauskunft unter Sedierung (RASS -3) nicht erhebbar; Fremdeinschaetzung via ZOPA."

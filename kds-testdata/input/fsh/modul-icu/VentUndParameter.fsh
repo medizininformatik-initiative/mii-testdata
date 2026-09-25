@@ -128,6 +128,13 @@ Description: "ICU Observation: MII PR ICU Koerperlaenge (liegend, 168 cm bei Auf
 * interpretation = $v3-ObservationInterpretation#N "Normal"
 * performer = Reference(mii-exa-test-data-icu-practitioner-1)
 * method = $sct#102538003 "Recumbent body position (finding)"
+// Komponente: anamnestisch angegebene, stehend gemessene Koerpergroesse
+* component[+].code.coding = $loinc#8302-2 "Body height"
+* component[=].code.text = "Stehend gemessene Koerpergroesse (anamnestisch)"
+* component[=].valueQuantity = 170 'cm' "centimeter"
+* component[=].interpretation = $v3-ObservationInterpretation#N "Normal"
+* component[=].referenceRange.low = 150 'cm' "centimeter"
+* component[=].referenceRange.high = 190 'cm' "centimeter"
 // --- effectivePeriod-Varianten (MS-Slice effective[x]:effectivePeriod schliesst
 //     effectiveDateTime in derselben Instanz aus -> je eine minimale Variante) ---
 

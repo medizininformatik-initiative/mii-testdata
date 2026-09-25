@@ -1,6 +1,6 @@
 {
   "resourceType": "Observation",
-  "id": "mii-exa-test-data-patient-1-icu-score-nrs-dar-1",
+  "id": "mii-exa-test-data-patient-1-icu-muv-laenge-dar-1",
   "meta": {
     "security": [
       {
@@ -11,7 +11,7 @@
     ],
     "source": "https://www.charite.de/fhir/kds-testdata",
     "profile": [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-numerische-ratingskala"
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-koerperlaenge"
     ]
   },
   "category": [
@@ -19,17 +19,7 @@
       "coding": [
         {
           "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "survey",
-          "display": "Survey"
-        }
-      ]
-    },
-    {
-      "coding": [
-        {
-          "system": "http://snomed.info/sct",
-          "code": "273249006",
-          "display": "Assessment scales (assessment scale)"
+          "code": "vital-signs"
         }
       ]
     }
@@ -38,7 +28,12 @@
     "coding": [
       {
         "system": "http://snomed.info/sct",
-        "code": "1284857008"
+        "code": "1149101003"
+      },
+      {
+        "system": "http://loinc.org",
+        "code": "8306-3",
+        "display": "Body height --lying"
       }
     ]
   },
@@ -47,17 +42,23 @@
       "reference": "Practitioner/mii-exa-test-data-icu-practitioner-1"
     }
   ],
+  "identifier": [
+    {
+      "system": "https://www.charite.de/fhir/sid/icu-observation-id",
+      "value": "icu-muv-laenge-dar-1"
+    }
+  ],
   "component": [
     {
       "code": {
         "coding": [
           {
-            "code": "38214-3",
+            "code": "8302-2",
             "system": "http://loinc.org",
-            "display": "Pain severity [Score] Visual analog score"
+            "display": "Body height"
           }
         ],
-        "text": "Visuelle Analogskala als Gegenprobe"
+        "text": "Stehend gemessene Koerpergroesse"
       },
       "dataAbsentReason": {
         "coding": [
@@ -72,7 +73,7 @@
   ],
   "note": [
     {
-      "text": "Selbstauskunft unter Sedierung (RASS -3) nicht erhebbar; Fremdeinschaetzung via ZOPA."
+      "text": "Laengenmessung waehrend der 16-stuendigen Bauchlagerung nicht durchfuehrbar; die stehende Koerpergroesse ist bei beatmeter Patientin ebenfalls nicht erhebbar."
     }
   ],
   "status": "final",
@@ -82,13 +83,22 @@
   "encounter": {
     "reference": "Encounter/mii-exa-test-data-icu-encounter-1"
   },
-  "effectiveDateTime": "2024-05-05T10:00:00+02:00",
+  "effectiveDateTime": "2024-05-06T14:00:00+02:00",
+  "method": {
+    "coding": [
+      {
+        "code": "102538003",
+        "system": "http://snomed.info/sct",
+        "display": "Recumbent body position (finding)"
+      }
+    ]
+  },
   "dataAbsentReason": {
     "coding": [
       {
-        "code": "temp-unknown",
+        "code": "not-performed",
         "system": "http://terminology.hl7.org/CodeSystem/data-absent-reason",
-        "display": "Temporarily Unknown"
+        "display": "Not Performed"
       }
     ]
   }
