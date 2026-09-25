@@ -55,6 +55,23 @@
       ]
     }
   ],
+  "referenceRange": [
+    {
+      "low": {
+        "value": -500,
+        "code": "mL",
+        "system": "http://unitsofmeasure.org",
+        "unit": "mL"
+      },
+      "high": {
+        "value": 500,
+        "code": "mL",
+        "system": "http://unitsofmeasure.org",
+        "unit": "mL"
+      },
+      "text": "ausgeglichene Fluessigkeitsbilanz"
+    }
+  ],
   "status": "final",
   "subject": {
     "reference": "Patient/mii-exa-test-data-icu-patient-1"
@@ -81,5 +98,17 @@
         "display": "Measured (qualifier value)"
       }
     ]
+  },
+  "bodySite": {
+    "coding": [
+      {
+        "code": "38266002",
+        "system": "http://snomed.info/sct",
+        "display": "Entire body as a whole"
+      }
+    ]
+  },
+  "specimen": {
+    "reference": "Specimen/mii-exa-test-data-patient-1-icu-spec-koerperfluessigkeit-1"
   }
 }

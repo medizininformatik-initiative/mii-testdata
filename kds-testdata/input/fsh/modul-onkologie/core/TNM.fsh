@@ -317,6 +317,93 @@ Description: "Onkologie Test TNM T-Kategorie - aT3 (Autopsiebefund)"
 * valueCodeableConcept.coding[uicc] = $UICC#T3
 * focus = Reference(mii-exa-test-data-onko-diagnose-1)
 
+// Klinisches Restaging der Lymphknoten nach Abschluss der neoadjuvanten
+// Chemotherapie (vor der OP am 2021-10-05): ycN1
+Instance: mii-exa-test-data-onko-tnm-n-kategorie-3
+InstanceOf: MII_PR_Onko_TNM_N_Kategorie
+Usage: #example
+Description: "Onkologie Test TNM N-Kategorie klinisch - ycN1 (Restaging nach neoadjuvanter Therapie)"
+* insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
+* status = #final
+* modifierExtension[yPraefix].valueCodeableConcept = $UICC#y "y"
+* code.extension[cpPraefix].valueCodeableConcept = $UICC#c "c"
+* code.coding = $SCT#399534004 "cN category (observable entity)"
+* subject = Reference(mii-exa-test-data-onko-patient-1)
+* encounter = Reference(mii-exa-test-data-onko-encounter-1)
+* effectiveDateTime = "2021-09-28"
+* method = $mii-cs-onko-tnm-version#8 "8. Auflage"
+* valueCodeableConcept.coding[uicc] = $UICC#N1 "N1"
+* focus = Reference(mii-exa-test-data-onko-diagnose-1)
+
+// Rezidiv-Staging 2023 (r-Präfix), Gegenstück zur bestehenden rcN0:
+// rcT3 und rcM1
+Instance: mii-exa-test-data-onko-tnm-t-kategorie-4
+InstanceOf: MII_PR_Onko_TNM_T_Kategorie
+Usage: #example
+Description: "Onkologie Test TNM T-Kategorie klinisch - rcT3 (Rezidiv-Staging 2023)"
+* insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
+* status = #final
+* modifierExtension[rPraefix].valueCodeableConcept = $UICC#r "r"
+* code.extension[cpPraefix].valueCodeableConcept = $UICC#c "c"
+* code.coding = $SCT#399504009 "cT category (observable entity)"
+* subject = Reference(mii-exa-test-data-onko-patient-1)
+* effectiveDateTime = "2023-02-10"
+* method = $mii-cs-onko-tnm-version#8 "8. Auflage"
+* valueCodeableConcept.coding[uicc] = $UICC#T3 "T3"
+* focus = Reference(mii-exa-test-data-onko-diagnose-1)
+
+Instance: mii-exa-test-data-onko-tnm-m-kategorie-3
+InstanceOf: MII_PR_Onko_TNM_M_Kategorie
+Usage: #example
+Description: "Onkologie Test TNM M-Kategorie klinisch - rcM1 (Rezidiv-Staging 2023)"
+* insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
+* status = #final
+* modifierExtension[rPraefix].valueCodeableConcept = $UICC#r "r"
+* code.extension[cpPraefix].valueCodeableConcept = $UICC#c "c"
+* code.coding = $SCT#399387003 "cM category (observable entity)"
+* subject = Reference(mii-exa-test-data-onko-patient-1)
+* effectiveDateTime = "2023-02-10"
+* method = $mii-cs-onko-tnm-version#8 "8. Auflage"
+* valueCodeableConcept.coding[uicc] = $UICC#M1 "M1"
+* focus = Reference(mii-exa-test-data-onko-diagnose-1)
+
+// Autopsie-Staging 2024 (a-Präfix), Gegenstück zur bestehenden aT3:
+// apN2 und apM1
+Instance: mii-exa-test-data-onko-tnm-n-kategorie-4
+InstanceOf: MII_PR_Onko_TNM_N_Kategorie
+Usage: #example
+Description: "Onkologie Test TNM N-Kategorie - apN2 (Autopsiebefund)"
+* insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
+* status = #final
+* modifierExtension[aPraefix].valueCodeableConcept = $UICC#a "a"
+* code.extension[cpPraefix].valueCodeableConcept = $UICC#p "p"
+* code.coding = $SCT#371494008 "pN category (observable entity)"
+* subject = Reference(mii-exa-test-data-onko-patient-1)
+* effectiveDateTime = "2024-05-15"
+* method = $mii-cs-onko-tnm-version#8 "8. Auflage"
+* valueCodeableConcept.coding[uicc] = $UICC#N2 "N2"
+* focus = Reference(mii-exa-test-data-onko-diagnose-1)
+
+Instance: mii-exa-test-data-onko-tnm-m-kategorie-4
+InstanceOf: MII_PR_Onko_TNM_M_Kategorie
+Usage: #example
+Description: "Onkologie Test TNM M-Kategorie - apM1 (Autopsiebefund)"
+* insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
+* status = #final
+* modifierExtension[aPraefix].valueCodeableConcept = $UICC#a "a"
+* code.extension[cpPraefix].valueCodeableConcept = $UICC#p "p"
+* code.coding = $SCT#371497001 "pM category"
+* subject = Reference(mii-exa-test-data-onko-patient-1)
+* effectiveDateTime = "2024-05-15"
+* method = $mii-cs-onko-tnm-version#8 "8. Auflage"
+* valueCodeableConcept.coding[uicc] = $UICC#M1 "M1"
+* focus = Reference(mii-exa-test-data-onko-diagnose-1)
+
 // Klinische Gesamt-Klassifikation (Gegenstück zur pathologischen -1)
 Instance: mii-exa-test-data-onko-tnm-klassifikation-2
 InstanceOf: MII_PR_Onko_TNM_Klassifikation

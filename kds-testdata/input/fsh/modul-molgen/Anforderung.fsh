@@ -47,6 +47,28 @@ Description: "ServiceRequest: Anforderung molekulargenetische Stufendiagnostik"
 * reasonReference[0] = Reference(mii-exa-test-data-molgen-diagnose-2)
 * supportingInfo[familienanamnese] = Reference(mii-exa-test-data-patient-4-molgen-family-member-history-1)
 
+// Patient-3 NSCLC: uebergeordnete Empfehlung der Tumorkonferenz, aus der die
+// konkrete NGS-Panel-Anforderung abgeleitet wird (ServiceRequest.basedOn)
+Instance: mii-exa-test-data-patient-3-molgen-anforderung-3
+InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/anforderung-genetischer-test
+Usage: #example
+Description: "ServiceRequest: Empfehlung der Tumorkonferenz zur molekularpathologischen Diagnostik bei NSCLC"
+* insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
+* identifier.system = "https://www.charite.de/fhir/auftragsnummern"
+* identifier.value = "TK-2024-0314-NSCLC"
+* status = #completed
+* intent = #proposal
+* category = $sct#108252007 "Laboratory procedure (procedure)"
+* code.coding[0] = $sct#405825005 "Molecular genetic test (procedure)"
+* code.text = "Molekularpathologische Diagnostik vor Erstlinientherapie"
+* subject = Reference(mii-exa-test-data-molgen-patient-1)
+* encounter = Reference(mii-exa-test-data-molgen-encounter-1)
+* authoredOn = "2024-03-14"
+* requester = Reference(mii-exa-test-data-practitioner-physician-1)
+* reasonCode = $sct#254637007 "Non-small cell lung cancer"
+* note.text = "Beschluss der interdisziplinaeren Tumorkonferenz vom 14.03.2024: molekularpathologische Diagnostik vor Einleitung der Erstlinientherapie."
+
 // Patient-3 NSCLC Stadium IV
 Instance: mii-exa-test-data-patient-3-molgen-anforderung-2
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/anforderung-genetischer-test
@@ -57,6 +79,8 @@ Description: "ServiceRequest: Anforderung NGS-Panel bei NSCLC Stadium IV gemaess
 * extension[workflow-relatedArtifact].valueRelatedArtifact.type = $related-artifact-type#citation "Citation"
 * extension[workflow-relatedArtifact].valueRelatedArtifact.citation = "S3-Leitlinie Lungenkarzinom, Version 4.0 (April 2025), Empfehlung 6.60, AWMF 020-007OL"
 * extension[workflow-relatedArtifact].valueRelatedArtifact.url = "https://register.awmf.org/de/leitlinien/detail/020-007OL"
+// Leitet sich aus der Empfehlung der Tumorkonferenz ab
+* basedOn = Reference(mii-exa-test-data-patient-3-molgen-anforderung-3)
 * status = #active
 * intent = #order
 * category = $sct#108252007 "Laboratory procedure (procedure)"

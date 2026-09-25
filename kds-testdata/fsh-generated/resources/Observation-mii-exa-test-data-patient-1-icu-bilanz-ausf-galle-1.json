@@ -60,6 +60,23 @@
       ]
     }
   ],
+  "referenceRange": [
+    {
+      "low": {
+        "value": 100,
+        "code": "mL",
+        "system": "http://unitsofmeasure.org",
+        "unit": "mL"
+      },
+      "high": {
+        "value": 800,
+        "code": "mL",
+        "system": "http://unitsofmeasure.org",
+        "unit": "mL"
+      },
+      "text": "Gallefoerderung ueber die biliaere Drainage pro 24h"
+    }
+  ],
   "valueQuantity": {
     "unit": "ml",
     "value": 30,
@@ -95,5 +112,8 @@
         "display": "Bile duct structure (body structure)"
       }
     ]
+  },
+  "specimen": {
+    "reference": "Specimen/mii-exa-test-data-patient-1-icu-spec-galle-1"
   }
 }

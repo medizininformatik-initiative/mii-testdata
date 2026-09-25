@@ -43,6 +43,7 @@
 [mii-exa-test-data-patho-tnm-m-1]: Observation-mii-exa-test-data-patho-tnm-m-1.html
 [mii-exa-test-data-patho-tnm-n-1]: Observation-mii-exa-test-data-patho-tnm-n-1.html
 [mii-exa-test-data-patho-tnm-t-1]: Observation-mii-exa-test-data-patho-tnm-t-1.html
+[mii-exa-test-data-patho-specimen-p63-kontrolle]: Specimen-mii-exa-test-data-patho-specimen-p63-kontrolle.html
 [mii-exa-test-data-onko-liste-evidenz-1]: List-mii-exa-test-data-onko-liste-evidenz-1.html
 [mii-exa-test-data-patho-lymphovascular-invasion]: Observation-mii-exa-test-data-patho-lymphovascular-invasion.html
 [mii-exa-test-data-patho-macro-grouper-1]: Observation-mii-exa-test-data-patho-macro-grouper-1.html
@@ -73,6 +74,7 @@
 [mii-exa-test-data-bildgebungsprozedur]: Procedure-mii-exa-test-data-bildgebungsprozedur.html
 [mii-exa-test-data-bildgebungsstudie]: ImagingStudy-mii-exa-test-data-bildgebungsstudie.html
 [mii-exa-test-data-biobank-crispr-protokoll-1]: DocumentReference-mii-exa-test-data-biobank-crispr-protokoll-1.html
+[mii-exa-test-data-biobank-device-inkubator-1]: Device-mii-exa-test-data-biobank-device-inkubator-1.html
 [mii-exa-test-data-biobank-diagnose-1]: Condition-mii-exa-test-data-biobank-diagnose-1.html
 [mii-exa-test-data-biobank-diagnose-3]: Condition-mii-exa-test-data-biobank-diagnose-3.html
 [mii-exa-test-data-biobank-dna-konzentration-1]: Observation-mii-exa-test-data-biobank-dna-konzentration-1.html
@@ -93,6 +95,9 @@
 [mii-exa-test-data-biobank-proliferation-1]: Observation-mii-exa-test-data-biobank-proliferation-1.html
 [mii-exa-test-data-biobank-qualitaetspruefung-1]: Observation-mii-exa-test-data-biobank-qualitaetspruefung-1.html
 [mii-exa-test-data-biobank-specimen-dna-1]: Specimen-mii-exa-test-data-biobank-specimen-dna-1.html
+[mii-exa-test-data-biobank-specimen-inkubator-abstrich-1]: Specimen-mii-exa-test-data-biobank-specimen-inkubator-abstrich-1.html
+[mii-exa-test-data-biobank-specimen-zellkultur-1]: Specimen-mii-exa-test-data-biobank-specimen-zellkultur-1.html
+[mii-exa-test-data-biobank-substance-kulturmedium-1]: Substance-mii-exa-test-data-biobank-substance-kulturmedium-1.html
 [mii-exa-test-data-biobank-wachstumstyp-1]: Observation-mii-exa-test-data-biobank-wachstumstyp-1.html
 [mii-exa-test-data-bundle-bildgebung-1]: Bundle-mii-exa-test-data-bundle-bildgebung-1.html
 [mii-exa-test-data-bundle-biobank-1]: Bundle-mii-exa-test-data-bundle-biobank-1.html
@@ -133,6 +138,7 @@
 [mii-exa-test-data-icu-encounter-1]: Encounter-mii-exa-test-data-icu-encounter-1.html
 [mii-exa-test-data-icu-patient-1]: Patient-mii-exa-test-data-icu-patient-1.html
 [mii-exa-test-data-icu-practitioner-1]: Practitioner-mii-exa-test-data-icu-practitioner-1.html
+[mii-exa-test-data-icu-servicerequest-monitoring-1]: ServiceRequest-mii-exa-test-data-icu-servicerequest-monitoring-1.html
 [mii-exa-test-data-isik-vitalparameter-alkoholabusus-1]: Observation-mii-exa-test-data-isik-vitalparameter-alkoholabusus-1.html
 [mii-exa-test-data-isik-vitalparameter-atemfrequenz-1]: Observation-mii-exa-test-data-isik-vitalparameter-atemfrequenz-1.html
 [mii-exa-test-data-isik-vitalparameter-blutdruck-1]: Observation-mii-exa-test-data-isik-vitalparameter-blutdruck-1.html
@@ -226,6 +232,7 @@
 [mii-exa-test-data-kardiologie-rauchen-1]: Observation-mii-exa-test-data-kardiologie-rauchen-1.html
 [mii-exa-test-data-koerperstruktur]: BodyStructure-mii-exa-test-data-koerperstruktur.html
 [mii-exa-test-data-kontrastmittelgabe]: MedicationAdministration-mii-exa-test-data-kontrastmittelgabe.html
+[mii-exa-test-data-kontrastmittelgabe-2]: MedicationAdministration-mii-exa-test-data-kontrastmittelgabe-2.html
 [mii-exa-test-data-lungenfunktion-bf-1]: Observation-mii-exa-test-data-lungenfunktion-bf-1.html
 [mii-exa-test-data-lungenfunktion-bf-prov-1]: Observation-mii-exa-test-data-lungenfunktion-bf-prov-1.html
 [mii-exa-test-data-lungenfunktion-bodyplethysmografie-befund-1]: DiagnosticReport-mii-exa-test-data-lungenfunktion-bodyplethysmografie-befund-1.html
@@ -407,6 +414,7 @@
 [mii-exa-test-data-onko-diagnose-1]: Condition-mii-exa-test-data-onko-diagnose-1.html
 [mii-exa-test-data-onko-diagnose-2]: Condition-mii-exa-test-data-onko-diagnose-2.html
 [mii-exa-test-data-onko-diagnose-3]: Condition-mii-exa-test-data-onko-diagnose-3.html
+[mii-exa-test-data-onko-diagnose-4]: Condition-mii-exa-test-data-onko-diagnose-4.html
 [mii-exa-test-data-onko-ecog-1]: Observation-mii-exa-test-data-onko-ecog-1.html
 [mii-exa-test-data-onko-encounter-1]: Encounter-mii-exa-test-data-onko-encounter-1.html
 [mii-exa-test-data-onko-fernmetastasen-1]: Observation-mii-exa-test-data-onko-fernmetastasen-1.html
@@ -481,9 +489,13 @@
 [mii-exa-test-data-onko-tnm-l-kategorie-1]: Observation-mii-exa-test-data-onko-tnm-l-kategorie-1.html
 [mii-exa-test-data-onko-tnm-m-kategorie-1]: Observation-mii-exa-test-data-onko-tnm-m-kategorie-1.html
 [mii-exa-test-data-onko-tnm-m-kategorie-2]: Observation-mii-exa-test-data-onko-tnm-m-kategorie-2.html
+[mii-exa-test-data-onko-tnm-m-kategorie-3]: Observation-mii-exa-test-data-onko-tnm-m-kategorie-3.html
+[mii-exa-test-data-onko-tnm-m-kategorie-4]: Observation-mii-exa-test-data-onko-tnm-m-kategorie-4.html
 [mii-exa-test-data-onko-tnm-m-symbol-1]: Observation-mii-exa-test-data-onko-tnm-m-symbol-1.html
 [mii-exa-test-data-onko-tnm-n-kategorie-1]: Observation-mii-exa-test-data-onko-tnm-n-kategorie-1.html
 [mii-exa-test-data-onko-tnm-n-kategorie-2]: Observation-mii-exa-test-data-onko-tnm-n-kategorie-2.html
+[mii-exa-test-data-onko-tnm-n-kategorie-3]: Observation-mii-exa-test-data-onko-tnm-n-kategorie-3.html
+[mii-exa-test-data-onko-tnm-n-kategorie-4]: Observation-mii-exa-test-data-onko-tnm-n-kategorie-4.html
 [mii-exa-test-data-onko-tnm-n-kategorie-sn-1]: Observation-mii-exa-test-data-onko-tnm-n-kategorie-sn-1.html
 [mii-exa-test-data-onko-tnm-pn-kategorie-1]: Observation-mii-exa-test-data-onko-tnm-pn-kategorie-1.html
 [mii-exa-test-data-onko-tnm-r-symbol-1]: Observation-mii-exa-test-data-onko-tnm-r-symbol-1.html
@@ -491,6 +503,7 @@
 [mii-exa-test-data-onko-tnm-t-kategorie-1]: Observation-mii-exa-test-data-onko-tnm-t-kategorie-1.html
 [mii-exa-test-data-onko-tnm-t-kategorie-2]: Observation-mii-exa-test-data-onko-tnm-t-kategorie-2.html
 [mii-exa-test-data-onko-tnm-t-kategorie-3]: Observation-mii-exa-test-data-onko-tnm-t-kategorie-3.html
+[mii-exa-test-data-onko-tnm-t-kategorie-4]: Observation-mii-exa-test-data-onko-tnm-t-kategorie-4.html
 [mii-exa-test-data-onko-tnm-v-kategorie-1]: Observation-mii-exa-test-data-onko-tnm-v-kategorie-1.html
 [mii-exa-test-data-onko-tnm-y-symbol-1]: Observation-mii-exa-test-data-onko-tnm-y-symbol-1.html
 [mii-exa-test-data-onko-tod-1]: Observation-mii-exa-test-data-onko-tod-1.html
@@ -554,6 +567,7 @@
 [mii-exa-test-data-patient-1-icu-bilanz-status-1]: Observation-mii-exa-test-data-patient-1-icu-bilanz-status-1.html
 [mii-exa-test-data-patient-1-icu-bilanz-tages-1]: Observation-mii-exa-test-data-patient-1-icu-bilanz-tages-1.html
 [mii-exa-test-data-patient-1-icu-device-1]: Device-mii-exa-test-data-patient-1-icu-device-1.html
+[mii-exa-test-data-patient-1-icu-device-assessment-1]: Device-mii-exa-test-data-patient-1-icu-device-assessment-1.html
 [mii-exa-test-data-patient-1-icu-device-ecmo-1]: Device-mii-exa-test-data-patient-1-icu-device-ecmo-1.html
 [mii-exa-test-data-patient-1-icu-device-monitor-1]: Device-mii-exa-test-data-patient-1-icu-device-monitor-1.html
 [mii-exa-test-data-patient-1-icu-device-pdms-1]: Device-mii-exa-test-data-patient-1-icu-device-pdms-1.html
@@ -625,6 +639,22 @@
 [mii-exa-test-data-patient-1-icu-score-wbf-1]: Observation-mii-exa-test-data-patient-1-icu-score-wbf-1.html
 [mii-exa-test-data-patient-1-icu-score-zopa-1]: Observation-mii-exa-test-data-patient-1-icu-score-zopa-1.html
 [mii-exa-test-data-patient-1-icu-score-zopa-dar-1]: Observation-mii-exa-test-data-patient-1-icu-score-zopa-dar-1.html
+[mii-exa-test-data-patient-1-icu-spec-blut-1]: Specimen-mii-exa-test-data-patient-1-icu-spec-blut-1.html
+[mii-exa-test-data-patient-1-icu-spec-drainagesekret-1]: Specimen-mii-exa-test-data-patient-1-icu-spec-drainagesekret-1.html
+[mii-exa-test-data-patient-1-icu-spec-galle-1]: Specimen-mii-exa-test-data-patient-1-icu-spec-galle-1.html
+[mii-exa-test-data-patient-1-icu-spec-haemofiltrat-1]: Specimen-mii-exa-test-data-patient-1-icu-spec-haemofiltrat-1.html
+[mii-exa-test-data-patient-1-icu-spec-koerperfluessigkeit-1]: Specimen-mii-exa-test-data-patient-1-icu-spec-koerperfluessigkeit-1.html
+[mii-exa-test-data-patient-1-icu-spec-magensaft-1]: Specimen-mii-exa-test-data-patient-1-icu-spec-magensaft-1.html
+[mii-exa-test-data-patient-1-icu-spec-muttermilch-1]: Specimen-mii-exa-test-data-patient-1-icu-spec-muttermilch-1.html
+[mii-exa-test-data-patient-1-icu-spec-muttermilch-abgep-1]: Specimen-mii-exa-test-data-patient-1-icu-spec-muttermilch-abgep-1.html
+[mii-exa-test-data-patient-1-icu-spec-pankreassekret-1]: Specimen-mii-exa-test-data-patient-1-icu-spec-pankreassekret-1.html
+[mii-exa-test-data-patient-1-icu-spec-saeuglingsnahrung-1]: Specimen-mii-exa-test-data-patient-1-icu-spec-saeuglingsnahrung-1.html
+[mii-exa-test-data-patient-1-icu-spec-sondennahrung-1]: Specimen-mii-exa-test-data-patient-1-icu-spec-sondennahrung-1.html
+[mii-exa-test-data-patient-1-icu-spec-spendermilch-1]: Specimen-mii-exa-test-data-patient-1-icu-spec-spendermilch-1.html
+[mii-exa-test-data-patient-1-icu-spec-stuhl-1]: Specimen-mii-exa-test-data-patient-1-icu-spec-stuhl-1.html
+[mii-exa-test-data-patient-1-icu-spec-trinkwasser-1]: Specimen-mii-exa-test-data-patient-1-icu-spec-trinkwasser-1.html
+[mii-exa-test-data-patient-1-icu-spec-urin-1]: Specimen-mii-exa-test-data-patient-1-icu-spec-urin-1.html
+[mii-exa-test-data-patient-1-icu-spec-wundsekret-1]: Specimen-mii-exa-test-data-patient-1-icu-spec-wundsekret-1.html
 [mii-exa-test-data-patient-1-icu-vent-atemdr-mitt-1]: Observation-mii-exa-test-data-patient-1-icu-vent-atemdr-mitt-1.html
 [mii-exa-test-data-patient-1-icu-vent-atemdr-mitt-dar-1]: Observation-mii-exa-test-data-patient-1-icu-vent-atemdr-mitt-dar-1.html
 [mii-exa-test-data-patient-1-icu-vent-atemdr-null-1]: Observation-mii-exa-test-data-patient-1-icu-vent-atemdr-null-1.html
@@ -733,6 +763,7 @@
 [mii-exa-test-data-patient-1-pro-promis29-pain-intensity]: Observation-mii-exa-test-data-patient-1-pro-promis29-pain-intensity.html
 [mii-exa-test-data-patient-1-pro-promis29-response]: QuestionnaireResponse-mii-exa-test-data-patient-1-pro-promis29-response.html
 [mii-exa-test-data-patient-1-pro-promis29-social-function-tscore]: Observation-mii-exa-test-data-patient-1-pro-promis29-social-function-tscore.html
+[mii-exa-test-data-patient-1-pro-schmerz-zusatz-response]: QuestionnaireResponse-mii-exa-test-data-patient-1-pro-schmerz-zusatz-response.html
 [mii-exa-test-data-patient-1-pro-whodas12-response]: QuestionnaireResponse-mii-exa-test-data-patient-1-pro-whodas12-response.html
 [mii-exa-test-data-patient-1-pro-whodas12-score]: Observation-mii-exa-test-data-patient-1-pro-whodas12-score.html
 [mii-exa-test-data-patient-1-prozedur-1]: Procedure-mii-exa-test-data-patient-1-prozedur-1.html
@@ -811,6 +842,7 @@
 [mii-exa-test-data-patient-3-medstatement-4]: MedicationStatement-mii-exa-test-data-patient-3-medstatement-4.html
 [mii-exa-test-data-patient-3-molgen-anforderung-1]: ServiceRequest-mii-exa-test-data-patient-3-molgen-anforderung-1.html
 [mii-exa-test-data-patient-3-molgen-anforderung-2]: ServiceRequest-mii-exa-test-data-patient-3-molgen-anforderung-2.html
+[mii-exa-test-data-patient-3-molgen-anforderung-3]: ServiceRequest-mii-exa-test-data-patient-3-molgen-anforderung-3.html
 [mii-exa-test-data-patient-3-molgen-befundbericht-1]: DiagnosticReport-mii-exa-test-data-patient-3-molgen-befundbericht-1.html
 [mii-exa-test-data-patient-3-molgen-biomarker-1]: Observation-mii-exa-test-data-patient-3-molgen-biomarker-1.html
 [mii-exa-test-data-patient-3-molgen-diagnostische-implikation-1]: Observation-mii-exa-test-data-patient-3-molgen-diagnostische-implikation-1.html
@@ -819,6 +851,8 @@
 [mii-exa-test-data-patient-3-molgen-genomic-study-1]: Procedure-mii-exa-test-data-patient-3-molgen-genomic-study-1.html
 [mii-exa-test-data-patient-3-molgen-genomic-study-analysis-1]: Procedure-mii-exa-test-data-patient-3-molgen-genomic-study-analysis-1.html
 [mii-exa-test-data-patient-3-molgen-genotyp-1]: Observation-mii-exa-test-data-patient-3-molgen-genotyp-1.html
+[mii-exa-test-data-patient-3-molgen-media-igv-1]: Media-mii-exa-test-data-patient-3-molgen-media-igv-1.html
+[mii-exa-test-data-patient-3-molgen-media-ihc-1]: Media-mii-exa-test-data-patient-3-molgen-media-ihc-1.html
 [mii-exa-test-data-patient-3-molgen-medikationsempfehlung-1]: Task-mii-exa-test-data-patient-3-molgen-medikationsempfehlung-1.html
 [mii-exa-test-data-patient-3-molgen-molekulare-konsequenz-1]: Observation-mii-exa-test-data-patient-3-molgen-molekulare-konsequenz-1.html
 [mii-exa-test-data-patient-3-molgen-msi-1]: Observation-mii-exa-test-data-patient-3-molgen-msi-1.html
@@ -1060,8 +1094,10 @@
 [mii-exa-test-data-symptom-observation-2]: Observation-mii-exa-test-data-symptom-observation-2.html
 [mii-exa-test-data-symptom-observation-3]: Observation-mii-exa-test-data-symptom-observation-3.html
 [mii-exa-test-data-symptom-observation-4]: Observation-mii-exa-test-data-symptom-observation-4.html
+[mii-exa-test-data-symptom-observation-5]: Observation-mii-exa-test-data-symptom-observation-5.html
 [mii-exa-test-data-symptom-patient-1]: Patient-mii-exa-test-data-symptom-patient-1.html
 [mii-exa-test-data-symptom-questionnaireresponse-1]: QuestionnaireResponse-mii-exa-test-data-symptom-questionnaireresponse-1.html
+[mii-exa-test-data-symptom-specimen-1]: Specimen-mii-exa-test-data-symptom-specimen-1.html
 [mii-exa-test-data-patho-micro-grouper-1]: Observation-mii-exa-test-data-patho-micro-grouper-1.html
 [mii-exa-test-data-patho-micro-grouper-dar-1]: Observation-mii-exa-test-data-patho-micro-grouper-dar-1.html
 [mii-exa-test-data-patho-morph-text-01]: Observation-mii-exa-test-data-patho-morph-text-01.html
@@ -1077,12 +1113,14 @@
 [mii-exa-test-data-mtb-consent-given-1]: Observation-mii-exa-test-data-mtb-consent-given-1.html
 [mii-exa-test-data-mtb-copy-number-variant-1]: Observation-mii-exa-test-data-mtb-copy-number-variant-1.html
 [mii-exa-test-data-mtb-diagnose-primaertumor-1]: Condition-mii-exa-test-data-mtb-diagnose-primaertumor-1.html
+[mii-exa-test-data-mtb-diagnose-primaertumor-4]: Condition-mii-exa-test-data-mtb-diagnose-primaertumor-4.html
 [mii-exa-test-data-mtb-diagnose-primaertumor-3]: Condition-mii-exa-test-data-mtb-diagnose-primaertumor-3.html
 [mii-exa-test-data-mtb-diagnose-primaertumor-2]: Condition-mii-exa-test-data-mtb-diagnose-primaertumor-2.html
 [mii-exa-test-data-mtb-diagnostische-implikation-1]: Observation-mii-exa-test-data-mtb-diagnostische-implikation-1.html
 [mii-exa-test-data-mtb-dna-fusion-1]: Observation-mii-exa-test-data-mtb-dna-fusion-1.html
 [mii-exa-test-data-mtb-einfache-variante-1]: Observation-mii-exa-test-data-mtb-einfache-variante-1.html
 [mii-exa-test-data-mtb-evidenz-liste-1]: List-mii-exa-test-data-mtb-evidenz-liste-1.html
+[mii-exa-test-data-mtb-fernmetastasen-1]: Observation-mii-exa-test-data-mtb-fernmetastasen-1.html
 [mii-exa-test-data-mtb-follow-up-1]: ClinicalImpression-mii-exa-test-data-mtb-follow-up-1.html
 [mii-exa-test-data-mtb-genomic-study-1]: Procedure-mii-exa-test-data-mtb-genomic-study-1.html
 [mii-exa-test-data-mtb-genomic-study-analysis-1]: Procedure-mii-exa-test-data-mtb-genomic-study-analysis-1.html
@@ -1141,6 +1179,7 @@
 [mii-exa-test-data-patho-periprostatatic-fat-invasion]: Observation-mii-exa-test-data-patho-periprostatatic-fat-invasion.html
 [mii-exa-test-data-patho-primary-gleason-pattern]: Observation-mii-exa-test-data-patho-primary-gleason-pattern.html
 [mii-exa-test-data-patho-primaer-gleason-01]: Observation-mii-exa-test-data-patho-primaer-gleason-01.html
+[mii-exa-test-data-pro-questionnaire-schmerz-zusatz]: Questionnaire-mii-exa-test-data-pro-questionnaire-schmerz-zusatz.html
 [mii-exa-test-data-patho-request-1]: ServiceRequest-mii-exa-test-data-patho-request-1.html
 [mii-exa-test-data-patho-specimen-01-part]: Specimen-mii-exa-test-data-patho-specimen-01-part.html
 [mii-exa-test-data-patho-specimen-03-part]: Specimen-mii-exa-test-data-patho-specimen-03-part.html
@@ -1153,6 +1192,7 @@
 [mii-exa-test-data-patho-macroscopic-laterality-03]: Observation-mii-exa-test-data-patho-macroscopic-laterality-03.html
 [mii-exa-test-data-patho-sekundaer-gleason-01]: Observation-mii-exa-test-data-patho-sekundaer-gleason-01.html
 [mii-exa-test-data-patho-seminal-vesicle-invasion]: Observation-mii-exa-test-data-patho-seminal-vesicle-invasion.html
+[mii-exa-test-data-patho-relatedperson-kontrollspender-1]: RelatedPerson-mii-exa-test-data-patho-relatedperson-kontrollspender-1.html
 [mii-exa-test-data-patho-gleason-score-total]: Observation-mii-exa-test-data-patho-gleason-score-total.html
 [mii-exa-test-data-patho-tumor-length-total]: Observation-mii-exa-test-data-patho-tumor-length-total.html
 [mii-exa-test-data-patho-image-2]: Media-mii-exa-test-data-patho-image-2.html

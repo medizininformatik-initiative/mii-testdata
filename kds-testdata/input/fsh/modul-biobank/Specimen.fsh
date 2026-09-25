@@ -556,6 +556,13 @@ Description: "Specimen: Kolon-Tumor-Organoid, abgeleitet aus der Gewebeprobe von
 * extension[modifikationen].extension[zielGen].valueCoding = $genenames#TP53 "tumor protein p53"
 * extension[modifikationen].extension[protokoll].valueReference = Reference(mii-exa-test-data-biobank-crispr-protokoll-1)
 * extension[anzahlPassagen].valueInteger = 3
+// Anzahl der eingelagerten Aliquots dieser Organoid-Passage
+* extension[anzahlAliquots].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/mii-ex-biobank-anzahl-aliquots"
+* extension[anzahlAliquots].valueInteger = 6
+// Entnommen wurde das Aliquot nicht am Patienten, sondern aus der laufenden
+// Organoid-Kultur -> focus verweist auf das Kulturmedium der Kultur
+* extension[focus].url = "http://hl7.eu/fhir/laboratory/StructureDefinition/specimen-focus"
+* extension[focus].valueReference = Reference(mii-exa-test-data-biobank-substance-kulturmedium-1)
 // Verwaltende Organisation und zugrundeliegende Diagnose (Biobank-Specimen-Extensions)
 * extension[gehoertZu].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/VerwaltendeOrganisation"
 * extension[gehoertZu].valueReference = Reference(mii-exa-test-data-organization-biobank-charite)
@@ -584,13 +591,23 @@ Description: "Specimen: Kolon-Tumor-Organoid, abgeleitet aus der Gewebeprobe von
 * request.identifier.system = "https://www.charite.de/fhir/sid/Bioproben-Anforderungen"
 * request.identifier.value = "BPA_000001"
 * request.display = "Anforderung Organoid-Kultur"
-* processing[0].extension[0].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Temperaturbedingungen"
-* processing[0].extension[0].valueRange.low = 37 'Cel' "°C"
-* processing[0].extension[0].valueRange.high = 37 'Cel' "°C"
+* processing[0].extension[temperaturbedingungen].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Temperaturbedingungen"
+* processing[0].extension[temperaturbedingungen].valueRange.low = 37 'Cel' "°C"
+* processing[0].extension[temperaturbedingungen].valueRange.high = 37 'Cel' "°C"
 * processing[0].procedure = $sct#1186936003 "Storage of specimen (procedure)"
 * processing[0].additive = Reference(mii-exa-test-data-patient-1-substance-1)
 * processing[0].timePeriod.start = "2022-04-01T10:00:00+02:00"
 * processing[0].timePeriod.end = "2022-04-12T10:00:00+02:00"
+// Kryokonservierung der Aliquots in der Gasphase ueber fluessigem Stickstoff;
+// die Langzeit-Lagertemperatur zusaetzlich MIABIS-kodiert
+* processing[1].extension[temperaturbedingungen].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Temperaturbedingungen"
+* processing[1].extension[temperaturbedingungen].valueRange.low = -196 'Cel' "°C"
+* processing[1].extension[temperaturbedingungen].valueRange.high = -150 'Cel' "°C"
+* processing[1].extension[temperature-miabis].url = "https://fhir.bbmri-eric.eu/StructureDefinition/miabis-sample-storage-temperature-extension"
+* processing[1].extension[temperature-miabis].valueCodeableConcept = $miabis-storage-temperature#LN "liquid nitrogen, -150 to -196 degrees Celsius"
+* processing[1].description = "Kryokonservierung der Organoid-Aliquots"
+* processing[1].procedure = $sct#27872000 "Specimen freezing (procedure)"
+* processing[1].timePeriod.start = "2022-04-12T11:00:00+02:00"
 * container.type = $sct#83059008 "Tube, device (physical object)"
 * container.capacity = 2 'mL' "mL"
 * container.additiveCodeableConcept.coding = $sct#105590001 "Substance (substance)"
@@ -631,3 +648,77 @@ Description: "Specimen (Core): DNA-Probe, extrahiert aus dem EDTA-Blut von Bioba
 * container.capacity = 0.5 'mL' "mL"
 * container.specimenQuantity = 0.2 'ml'
 * container.specimenQuantity.unit = "mL"
+
+// --- Zellkultur-Lysat aus der Organoid-Kultur (Specimen-Vollprofil) ---
+//     Gewonnen wurde das Material nicht am Patienten, sondern an der Kultur;
+//     focus zeigt deshalb auf das Zellkulturmedium.
+Instance: mii-exa-test-data-biobank-specimen-zellkultur-1
+InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Specimen
+Usage: #example
+Description: "Specimen: Zellkultur-Lysat aus der Kolon-Organoid-Kultur von Biobank-Patient 3"
+* insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
+* extension[gehoertZu].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/VerwaltendeOrganisation"
+* extension[gehoertZu].valueReference = Reference(mii-exa-test-data-organization-biobank-charite)
+* extension[festgestellteDiagnose].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Diagnose"
+* extension[festgestellteDiagnose].valueReference = Reference(mii-exa-test-data-biobank-diagnose-3)
+* extension[probenebene].valueCoding = https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/CodeSystem/mii-cs-biobank-probenebene#ALIQUOT "Aliquot"
+* extension[infektiositaetsstatus].valueCodeableConcept = $sct#409603009 "Biosafety level 2 (qualifier value)"
+* extension[focus].url = "http://hl7.eu/fhir/laboratory/StructureDefinition/specimen-focus"
+* extension[focus].valueReference = Reference(mii-exa-test-data-biobank-substance-kulturmedium-1)
+* extension[anzahlAliquots].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/mii-ex-biobank-anzahl-aliquots"
+* extension[anzahlAliquots].valueInteger = 4
+* identifier.system = "https://www.charite.de/fhir/sid/Bioproben"
+* identifier.value = "BP_000022"
+* status = #available
+* type.coding[sct] = $sct#1404538009 "Cell culture lysate specimen"
+* subject = Reference(mii-exa-test-data-biobank-patient-3)
+* parent = Reference(mii-exa-test-data-biobank-organoid-1)
+* receivedTime = "2022-04-12T12:00:00+02:00"
+* collection.collectedDateTime = "2022-04-12T10:30:00+02:00"
+* collection.quantity = 1 'mL' "mL"
+* note.text = "Lysat aus Passage 3 der Organoid-Kultur, fuer RNA-Extraktion vorgesehen."
+// Kryokonservierung, Langzeit-Lagertemperatur zusaetzlich MIABIS-kodiert
+* processing[0].extension[temperaturbedingungen].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Temperaturbedingungen"
+* processing[0].extension[temperaturbedingungen].valueRange.low = -85 'Cel' "°C"
+* processing[0].extension[temperaturbedingungen].valueRange.high = -60 'Cel' "°C"
+* processing[0].extension[temperature-miabis].url = "https://fhir.bbmri-eric.eu/StructureDefinition/miabis-sample-storage-temperature-extension"
+* processing[0].extension[temperature-miabis].valueCodeableConcept = $miabis-storage-temperature#-60to-85 "between -60 and -85 degrees Celsius"
+* processing[0].description = "Einfrieren des Lysats bei -80 °C"
+* processing[0].procedure = $sct#27872000 "Specimen freezing (procedure)"
+* processing[0].timePeriod.start = "2022-04-12T12:15:00+02:00"
+* container.type = $sct#83059008 "Tube, device (physical object)"
+* container.capacity = 2 'mL' "mL"
+* container.specimenQuantity = 1 'ml'
+* container.specimenQuantity.unit = "mL"
+
+// --- Umgebungsabstrich aus dem CO2-Inkubator der Zellkulturbank (SpecimenCore) ---
+//     Sterilitaetskontrolle; das Material stammt vom Geraet, nicht vom Patienten,
+//     daher focus auf den Inkubator.
+Instance: mii-exa-test-data-biobank-specimen-inkubator-abstrich-1
+InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore
+Usage: #example
+Description: "Specimen (Core): Umgebungsabstrich aus dem CO2-Inkubator der Zellkulturbank"
+* insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
+* extension[probenebene].valueCoding = https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/CodeSystem/mii-cs-biobank-probenebene#PRIMÄRPROBE "Primärprobe"
+* extension[infektiositaetsstatus].valueCodeableConcept = $sct#409603009 "Biosafety level 2 (qualifier value)"
+* extension[focus].url = "http://hl7.eu/fhir/laboratory/StructureDefinition/specimen-focus"
+* extension[focus].valueReference = Reference(mii-exa-test-data-biobank-device-inkubator-1)
+* identifier.system = "https://www.charite.de/fhir/sid/Bioproben"
+* identifier.value = "BP_000023"
+* status = #available
+* type.coding[sct] = $sct#419695002 "Environmental swab"
+* type.coding[+] = $miabis-sample-type#SpecimenEnvironment "Specimen from environment"
+* subject = Reference(mii-exa-test-data-biobank-patient-3)
+* receivedTime = "2022-04-12T11:30:00+02:00"
+* collection.collectedDateTime = "2022-04-12T11:00:00+02:00"
+* note.text = "Routinemaessige Sterilitaetskontrolle des Inkubators, in dem die Organoid-Kultur gehalten wird."
+* processing.extension[temperaturbedingungen].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Temperaturbedingungen"
+* processing.extension[temperaturbedingungen].valueRange.low = 15 'Cel' "°C"
+* processing.extension[temperaturbedingungen].valueRange.high = 25 'Cel' "°C"
+* processing.description = "Transport zum Mikrobiologie-Labor bei Raumtemperatur"
+* processing.procedure = $sct#1186936003 "Storage of specimen (procedure)"
+* processing.timePeriod.start = "2022-04-12T11:05:00+02:00"
+* processing.timePeriod.end = "2022-04-12T11:30:00+02:00"
+* container.type = $sct#83059008 "Tube, device (physical object)"

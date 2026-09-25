@@ -15,10 +15,13 @@ Description: "Composition für den strukturierten Prostatabiopsie-Befundbericht 
 * meta.source = "https://www.charite.de/fhir/kds-testdata"
 * text.status = #extensions
 * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div id=\"befund-titel\"><b>Histopathologischer Befundbericht - Prostatabiopsie</b></div><table><tr id=\"befund-eingangsnummer\"><td>Eingangsnummer</td><td>E_24_001</td></tr><tr id=\"befund-status\"><td>Status</td><td>final</td></tr><tr id=\"befund-patient\"><td>Patient</td><td>Klaus Gewebeprobe (PATH-TEST-001)</td></tr><tr id=\"befund-datum\"><td>Datum</td><td>2024-01-20</td></tr></table></div>"
+// extension[diagnosticReport] (hl7.eu composition-diagnosticReportReference):
+// per expliziter URL gesetzt, weil das hl7.eu-Extension-Package nicht Teil des
+// BOM-Abhaengigkeitsgraphen ist und SUSHI den Slice-Namen nicht aufloesen kann.
+// Ergaenzt die Gegenrichtung DiagnosticReport.extension[composition].
+* extension[+].url = "http://hl7.eu/fhir/extensions/StructureDefinition/composition-diagnosticReportReference"
+* extension[=].valueReference = Reference(mii-exa-test-data-patho-report-1)
 * extension[document-version].valueString = "1"
-// extension[diagnosticReport] (hl7.eu composition-diagnosticReportReference) bewusst nicht belegt:
-// das Extension-Package ist nicht Teil des BOM-Abhaengigkeitsgraphen (SUSHI kann die URL nicht aufloesen).
-// Die Verknuepfung Report<->Composition laeuft ueber DiagnosticReport.extension[composition].
 * identifier.type = $v2-0203#ACSN "Accession ID"
 * identifier.system = "https://www.charite.de/fhir/sid/patho/befundbericht"
 * identifier.value = "E_24_001"

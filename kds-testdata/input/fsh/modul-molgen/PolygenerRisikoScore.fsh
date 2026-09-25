@@ -19,6 +19,9 @@ Description: "RiskAssessment: Polygener Risiko Score fuer kolorektales Karzinom"
 * occurrenceDateTime = "2022-04-07"
 * condition = Reference(mii-exa-test-data-molgen-diagnose-1)
 * basis = Reference(mii-exa-test-data-patient-3-molgen-variante-1)
+// Zusaetzlicher Einflussfaktor, der in die Risikoberechnung eingegangen ist
+* prediction[0].extension[whenCodeableConcept].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/risk-assessment-einflussfaktor"
+* prediction[0].extension[whenCodeableConcept].valueCodeableConcept = $sct#154051000119101 "Family history of malignant neoplasm of colon over age 50"
 * prediction[0].outcome = $sct#363510005 "Malignant neoplasm of large intestine"
 * prediction[0].outcome.text = "Kolorektales Karzinom"
 * prediction[0].probabilityDecimal = 0.32

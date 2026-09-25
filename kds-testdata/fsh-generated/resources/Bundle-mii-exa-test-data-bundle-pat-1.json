@@ -129,7 +129,19 @@
           {
             "valueAddress": {
               "city": "Potsdam",
-              "country": "DE"
+              "country": "DE",
+              "_country": {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/iso21090-codedString",
+                    "valueCoding": {
+                      "code": "DE",
+                      "system": "urn:iso:std:iso:3166",
+                      "display": "Deutschland"
+                    }
+                  }
+                ]
+              }
             },
             "url": "http://hl7.org/fhir/StructureDefinition/patient-birthPlace"
           },
@@ -3451,6 +3463,30 @@
           {
             "url": "https://fhir.bbmri-eric.eu/StructureDefinition/miabis-organization-description-extension",
             "valueString": "Zentrale Biobank der Charité"
+          },
+          {
+            "url": "https://fhir.bbmri-eric.eu/StructureDefinition/miabis-sample-collection-setting-extension",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "RoutineHealthCare",
+                  "system": "https://fhir.bbmri-eric.eu/CodeSystem/miabis-sample-collection-setting-cs",
+                  "display": "Routine health care setting"
+                }
+              ]
+            }
+          },
+          {
+            "url": "https://fhir.bbmri-eric.eu/StructureDefinition/miabis-collection-design-extension",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "DiseaseSpecificCohort",
+                  "system": "https://fhir.bbmri-eric.eu/CodeSystem/miabis-collection-design-cs",
+                  "display": "Disease-specific cohort"
+                }
+              ]
+            }
           }
         ],
         "identifier": [

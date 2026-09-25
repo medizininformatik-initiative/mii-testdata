@@ -35,6 +35,9 @@ Description: "ICU Score: Glasgow Coma Scale 8 (E2 V2 M4) unter Sedierung"
 * interpretation = $v3-ObservationInterpretation#A "Abnormal"
 * code.coding[sct].version = "http://snomed.info/sct/900000000000207008/version/20260701"
 * hasMember = Reference(mii-exa-test-data-patient-1-icu-pupille-befund-1)
+* device = Reference(mii-exa-test-data-patient-1-icu-device-assessment-1)
+// Der GCS wurde im Kontext des dokumentierten Sedierungsgrades erhoben
+* derivedFrom = Reference(mii-exa-test-data-patient-1-icu-score-rass-1)
 
 // --- Richmond Agitation-Sedation Scale ---
 Instance: mii-exa-test-data-patient-1-icu-score-rass-1
@@ -92,6 +95,7 @@ Description: "ICU Score: SOFA 9 (Respiration 3, Gerinnung 1, Leber 0, Kreislauf 
 * hasMember = Reference(mii-exa-test-data-patient-1-icu-score-gcs-1)
 * derivedFrom[+] = Reference(mii-exa-test-data-patient-1-icu-score-gcs-1)
 * derivedFrom[+] = Reference(mii-exa-test-data-patient-1-icu-vent-horowitz-1)
+* device = Reference(mii-exa-test-data-patient-1-icu-device-assessment-1)
 
 // --- Confusion Assessment Method for the ICU ---
 Instance: mii-exa-test-data-patient-1-icu-score-cam-icu-1
@@ -128,6 +132,7 @@ Description: "ICU Score: CAM-ICU positiv (Feature 1-3 vorhanden, Feature 4 nicht
 * code.coding[sct].version = "http://snomed.info/sct/900000000000207008/version/20260701"
 * hasMember = Reference(mii-exa-test-data-patient-1-icu-score-rass-1)
 * derivedFrom = Reference(mii-exa-test-data-patient-1-icu-score-rass-1)
+* device = Reference(mii-exa-test-data-patient-1-icu-device-assessment-1)
 
 // --- Intensive Care Delirium Screening Checklist ---
 Instance: mii-exa-test-data-patient-1-icu-score-icdsc-1
@@ -167,6 +172,7 @@ Description: "ICU Score: ICDSC 6 (Delir-Schwelle ueberschritten)"
 * code.coding[sct].version = "http://snomed.info/sct/900000000000207008/version/20260701"
 * hasMember = Reference(mii-exa-test-data-patient-1-icu-score-rass-1)
 * derivedFrom = Reference(mii-exa-test-data-patient-1-icu-score-rass-1)
+* device = Reference(mii-exa-test-data-patient-1-icu-device-assessment-1)
 
 // --- Numerische Ratingskala (Schmerz) ---
 Instance: mii-exa-test-data-patient-1-icu-score-nrs-1
@@ -191,6 +197,11 @@ Description: "ICU Score: Numerische Ratingskala Schmerz 4/10"
 * performer = Reference(mii-exa-test-data-icu-practitioner-1)
 * interpretation = $v3-ObservationInterpretation#A "Abnormal"
 * code.coding[sct].version = "http://snomed.info/sct/900000000000207008/version/20260701"
+* device = Reference(mii-exa-test-data-patient-1-icu-device-assessment-1)
+// Gegenprobe derselben Erhebung als eigenstaendige Observation
+* hasMember = Reference(mii-exa-test-data-patient-1-icu-score-vas-1)
+// Erhebbarkeit der Selbstauskunft haengt am dokumentierten Sedierungsgrad
+* derivedFrom = Reference(mii-exa-test-data-patient-1-icu-score-rass-1)
 
 // --- Visuelle Analogskala (Schmerz) ---
 Instance: mii-exa-test-data-patient-1-icu-score-vas-1
@@ -216,6 +227,11 @@ Description: "ICU Score: Visuelle Analogskala Schmerz 45 mm"
 * performer = Reference(mii-exa-test-data-icu-practitioner-1)
 * interpretation = $v3-ObservationInterpretation#A "Abnormal"
 * code.coding[sct].version = "http://snomed.info/sct/900000000000207008/version/20260701"
+* device = Reference(mii-exa-test-data-patient-1-icu-device-assessment-1)
+// Gegenprobe derselben Erhebung als eigenstaendige Observation
+* hasMember = Reference(mii-exa-test-data-patient-1-icu-score-wbf-1)
+// Erhebbarkeit der Selbstauskunft haengt am dokumentierten Sedierungsgrad
+* derivedFrom = Reference(mii-exa-test-data-patient-1-icu-score-rass-1)
 
 // --- Wong-Baker FACES Schmerzskala ---
 Instance: mii-exa-test-data-patient-1-icu-score-wbf-1
@@ -257,6 +273,11 @@ Description: "ICU Score: Faces Pain Scale - Revised 6/10"
 * performer = Reference(mii-exa-test-data-icu-practitioner-1)
 * interpretation = $v3-ObservationInterpretation#A "Abnormal"
 * code.coding[sct].version = "http://snomed.info/sct/900000000000207008/version/20260701"
+* device = Reference(mii-exa-test-data-patient-1-icu-device-assessment-1)
+// Gegenprobe derselben Erhebung als eigenstaendige Observation
+* hasMember = Reference(mii-exa-test-data-patient-1-icu-score-nrs-1)
+// Erhebbarkeit der Selbstauskunft haengt am dokumentierten Sedierungsgrad
+* derivedFrom = Reference(mii-exa-test-data-patient-1-icu-score-rass-1)
 
 // --- Zurich Observation Pain Assessment ---
 Instance: mii-exa-test-data-patient-1-icu-score-zopa-1
@@ -276,6 +297,24 @@ Description: "ICU Score: ZOPA - Schmerzverhalten vorhanden (sedierte Patientin)"
 * issued = "2024-05-06T10:45:00+02:00"
 * performer = Reference(mii-exa-test-data-icu-practitioner-1)
 * interpretation = $v3-ObservationInterpretation#A "Abnormal"
+* device = Reference(mii-exa-test-data-patient-1-icu-device-assessment-1)
+// Fremdeinschaetzung ersetzt die unter Sedierung nicht erhebbare Selbstauskunft
+* hasMember = Reference(mii-exa-test-data-patient-1-icu-score-rass-1)
+* derivedFrom = Reference(mii-exa-test-data-patient-1-icu-score-nrs-dar-1)
+// Beobachtungskategorien der ZOPA (Verhaltensmerkmale; kein LOINC-Panel
+// vorhanden, daher SNOMED-Observables fuer die Einzelmerkmale)
+* component[+].code.coding = $sct#248148002 "Facial expression"
+* component[=].code.text = "ZOPA: Gesichtsausdruck (schmerzassoziiert)"
+* component[=].valueCodeableConcept = $sct#52101004 "Present (qualifier value)"
+* component[+].code.coding = $sct#6918002 "Muscle tone"
+* component[=].code.text = "ZOPA: Muskelanspannung (schmerzassoziiert)"
+* component[=].valueCodeableConcept = $sct#52101004 "Present (qualifier value)"
+* component[+].code.coding = $sct#278288005 "Vocalisation"
+* component[=].code.text = "ZOPA: Lautaeusserung (schmerzassoziiert)"
+* component[=].valueCodeableConcept = $sct#2667000 "Absent (qualifier value)"
+// Hinweis: Observation.code.coding:sct bleibt leer - fuer die ZOPA existiert
+// kein SNOMED-CT-Konzept; das Profil fixiert den DGAI-Code als einzige Quelle.
+
 // dataAbsentReason-Variante (repraesentativ fuer die Score-Profilfamilie):
 // NRS bei sedierter Patientin nicht erhebbar
 Instance: mii-exa-test-data-patient-1-icu-score-nrs-dar-1

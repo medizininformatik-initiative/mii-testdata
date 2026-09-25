@@ -1,0 +1,103 @@
+{
+  "resourceType": "Specimen",
+  "id": "mii-exa-test-data-patho-specimen-p63-kontrolle",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen",
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore"
+    ],
+    "security": [
+      {
+        "code": "HTEST",
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "display": "test health data"
+      }
+    ],
+    "source": "https://www.charite.de/fhir/kds-testdata"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.eu/fhir/laboratory/StructureDefinition/specimen-focus",
+      "valueReference": {
+        "reference": "RelatedPerson/mii-exa-test-data-patho-relatedperson-kontrollspender-1"
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "system": "https://www.charite.de/fhir/sid/patho/befundbericht",
+      "value": "E_24_001_KTR_P63"
+    }
+  ],
+  "accessionIdentifier": {
+    "system": "https://www.charite.de/fhir/sid/patho/befundbericht",
+    "value": "E_24_001"
+  },
+  "note": [
+    {
+      "text": "Tonsillengewebe eines Kontrollspenders, mitgefuehrt als Positivkontrolle der p63-Faerbung."
+    }
+  ],
+  "collection": {
+    "collectedDateTime": "2024-01-18T08:00:00+01:00",
+    "method": {
+      "coding": [
+        {
+          "code": "13283003",
+          "system": "http://snomed.info/sct",
+          "display": "Tissue processing technique (procedure)"
+        }
+      ]
+    }
+  },
+  "processing": [
+    {
+      "procedure": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "127790008",
+            "display": "Staining method"
+          }
+        ]
+      },
+      "description": "p63-Immunhistochemie (Positivkontrolle)",
+      "timeDateTime": "2024-01-18T09:00:00+01:00"
+    }
+  ],
+  "container": [
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "433466003",
+            "system": "http://snomed.info/sct",
+            "display": "Microscope slide (physical object)"
+          }
+        ]
+      },
+      "additiveCodeableConcept": {
+        "coding": [
+          {
+            "code": "430862008",
+            "system": "http://snomed.info/sct",
+            "display": "Microscope slide mounting medium (substance)"
+          }
+        ]
+      }
+    }
+  ],
+  "type": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "430856003",
+        "display": "Tissue section (specimen)"
+      }
+    ]
+  },
+  "status": "available",
+  "subject": {
+    "reference": "Patient/mii-exa-test-data-patho-patient-1"
+  }
+}

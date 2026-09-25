@@ -42,10 +42,25 @@ Description: "EvidenceVariable: Ein-/Ausschlusskriterien der Studie MII-BIOMARKE
 * characteristic[3].description = "Bestehende Schwangerschaft"
 * characteristic[3].definitionCodeableConcept = $sct#77386006 "Pregnancy (finding)"
 * characteristic[3].exclude = true
-// Hinweis: Die definitionByCombination-Backport-Extension (0..1 MS) laesst sich
-// mit SUSHI derzeit nicht abbilden: SUSHI loest http://hl7.org/fhir/5.0/...-URLs
-// ueber seinen eigenen Cross-Version-Mechanismus auf; die Sub-Extension
-// "characteristic" ist dort ein verschachteltes BackboneElement, sodass die
-// valueId-Form des Modul-Backports (mii-ex-studie-backport-definition-by-
-// combination) nicht adressierbar ist. Siehe docs/research-biobank-seltene-
-// studie-gapfill.md.
+// Einschluss: Kombination der beiden oben per linkId benannten Kriterien
+// (definitionByCombination-Backport, any-of). Die Sub-Extensions werden per
+// expliziter URL gesetzt: SUSHI kann den Slice-Namen nicht ueber die
+// Cross-Version-URL aufloesen, das Ergebnis-JSON entspricht aber exakt dem
+// Modul-Beispiel EvidenceVariable-mii-exa-studie-ein-auschluss-kriterium.
+* characteristic[4].extension[+].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-EvidenceVariable.characteristic.definitionByCombination"
+* characteristic[4].extension[=].extension[0].url = "code"
+* characteristic[4].extension[=].extension[0].valueCode = #any-of
+* characteristic[4].extension[=].extension[1].url = "characteristic"
+* characteristic[4].extension[=].extension[1].valueId = "krit-alter"
+* characteristic[4].extension[=].extension[2].url = "characteristic"
+* characteristic[4].extension[=].extension[2].valueId = "krit-endokrin"
+* characteristic[4].description = "Weitere Einschlusskriterien: Mindestalter ODER gesicherte endokrine Erkrankung"
+* characteristic[4].definitionCodeableConcept = $data-absent-reason#unknown "Unknown"
+* characteristic[4].exclude = false
+// Einschluss: vordefinierte Eligibility-Population als Referenz
+// (definitionReference-Backport, Ziel ist die Group im selben Bundle)
+* characteristic[5].extension[+].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-EvidenceVariable.characteristic.definitionReference"
+* characteristic[5].extension[=].valueReference = Reference(mii-exa-test-data-studien-group-1)
+* characteristic[5].description = "Zugehoerigkeit zur definierten Eligibility-Population der Studie"
+* characteristic[5].definitionCodeableConcept = $sct#116154003 "Patient (person)"
+* characteristic[5].exclude = false

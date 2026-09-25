@@ -110,5 +110,13 @@
     "reference": "Patient/mii-exa-test-data-pro-patient-1"
   },
   "authored": "2024-03-15T10:30:00+01:00",
-  "questionnaire": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-29-de"
+  "questionnaire": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-29-de",
+  "_questionnaire": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/display",
+        "valueString": "PROMIS-29 Profile v2.1 (deutsche Fassung)"
+      }
+    ]
+  }
 }

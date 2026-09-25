@@ -59,6 +59,81 @@
       ]
     }
   ],
+  "hasMember": [
+    {
+      "reference": "Observation/mii-exa-test-data-patient-1-icu-score-rass-1"
+    }
+  ],
+  "derivedFrom": [
+    {
+      "reference": "Observation/mii-exa-test-data-patient-1-icu-score-nrs-dar-1"
+    }
+  ],
+  "component": [
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "248148002",
+            "system": "http://snomed.info/sct",
+            "display": "Facial expression"
+          }
+        ],
+        "text": "ZOPA: Gesichtsausdruck (schmerzassoziiert)"
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "52101004",
+            "system": "http://snomed.info/sct",
+            "display": "Present (qualifier value)"
+          }
+        ]
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "6918002",
+            "system": "http://snomed.info/sct",
+            "display": "Muscle tone"
+          }
+        ],
+        "text": "ZOPA: Muskelanspannung (schmerzassoziiert)"
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "52101004",
+            "system": "http://snomed.info/sct",
+            "display": "Present (qualifier value)"
+          }
+        ]
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "278288005",
+            "system": "http://snomed.info/sct",
+            "display": "Vocalisation"
+          }
+        ],
+        "text": "ZOPA: Lautaeusserung (schmerzassoziiert)"
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "2667000",
+            "system": "http://snomed.info/sct",
+            "display": "Absent (qualifier value)"
+          }
+        ]
+      }
+    }
+  ],
   "status": "final",
   "subject": {
     "reference": "Patient/mii-exa-test-data-icu-patient-1"
@@ -76,5 +151,8 @@
       }
     ]
   },
-  "issued": "2024-05-06T10:45:00+02:00"
+  "issued": "2024-05-06T10:45:00+02:00",
+  "device": {
+    "reference": "Device/mii-exa-test-data-patient-1-icu-device-assessment-1"
+  }
 }
