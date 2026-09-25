@@ -106,6 +106,28 @@
       }
     }
   ],
+  "basedOn": [
+    {
+      "reference": "ServiceRequest/mii-exa-test-data-icu-servicerequest-monitoring-1"
+    }
+  ],
+  "referenceRange": [
+    {
+      "low": {
+        "value": 150,
+        "code": "cm",
+        "system": "http://unitsofmeasure.org",
+        "unit": "centimeter"
+      },
+      "high": {
+        "value": 190,
+        "code": "cm",
+        "system": "http://unitsofmeasure.org",
+        "unit": "centimeter"
+      },
+      "text": "Koerperlaenge Erwachsene"
+    }
+  ],
   "valueQuantity": {
     "system": "http://unitsofmeasure.org",
     "code": "cm",
@@ -128,5 +150,17 @@
         "display": "Recumbent body position (finding)"
       }
     ]
+  },
+  "bodySite": {
+    "coding": [
+      {
+        "code": "38266002",
+        "system": "http://snomed.info/sct",
+        "display": "Entire body as a whole"
+      }
+    ]
+  },
+  "device": {
+    "reference": "Device/mii-exa-test-data-patient-1-icu-device-assessment-1"
   }
 }

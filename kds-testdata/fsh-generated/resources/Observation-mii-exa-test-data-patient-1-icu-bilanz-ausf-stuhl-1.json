@@ -46,6 +46,23 @@
       ]
     }
   ],
+  "referenceRange": [
+    {
+      "low": {
+        "value": 100,
+        "code": "mL",
+        "system": "http://unitsofmeasure.org",
+        "unit": "mL"
+      },
+      "high": {
+        "value": 300,
+        "code": "mL",
+        "system": "http://unitsofmeasure.org",
+        "unit": "mL"
+      },
+      "text": "unauffaellige Stuhlmenge pro 24h"
+    }
+  ],
   "code": {
     "coding": [
       {
@@ -90,5 +107,8 @@
         "display": "Colon structure (body structure)"
       }
     ]
+  },
+  "specimen": {
+    "reference": "Specimen/mii-exa-test-data-patient-1-icu-spec-stuhl-1"
   }
 }

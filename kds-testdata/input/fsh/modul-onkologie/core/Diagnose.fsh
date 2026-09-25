@@ -54,6 +54,26 @@ Description: "Onkologie Diagnose-Variante - abgeschlossen, onsetAge mit Lebensph
 * onsetAge.unit = "Jahre"
 * onsetAge.extension[Lebensphase-Beginn].valueCodeableConcept.coding = $SCT#41847000 "Adulthood (qualifier value)"
 * abatementDateTime = "2016-06-30"
+// Das invasive Mammakarzinom ist aus dem 2014 diagnostizierten DCIS hervorgegangen
+* extension[transformationVon].valueReference = Reference(mii-exa-test-data-onko-diagnose-4)
+
+// Vorstufe zu Diagnose-2: DCIS, Ausgangspunkt der Transformation
+Instance: mii-exa-test-data-onko-diagnose-4
+InstanceOf: MII_PR_Onko_Diagnose_Primaertumor
+Usage: #example
+Description: "Onkologie Diagnose - DCIS (Vorstufe, Ziel der transformationVon-Extension von Diagnose-2)"
+* insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
+* extension[Feststellungsdatum].valueDateTime = "2014-11-20"
+* clinicalStatus = $condition-clinical#resolved
+* verificationStatus.coding[condition-ver-status] = $condition-ver-status#confirmed
+* verificationStatus.coding[primaertumorDiagnosesicherung] = $mii-cs-onko-primaertumor-diagnosesicherung#7 "histologische Untersuchung eines Primärtumors"
+* code.coding[icd10-gm] = $ICD10GM|2014#D05.1 "Carcinoma in situ der Milchgänge"
+* code.coding[icd10-gm].version = "2014"
+* code.text = "Duktales Carcinoma in situ (DCIS), oberer äußerer Quadrant links"
+* subject = Reference(mii-exa-test-data-onko-patient-1)
+* recordedDate = "2014-11-20"
+* bodySite.coding[icd-o-3] = $ICDO3#C50.4 "Oberer äußerer Quadrant der Brust"
 
 // Variante: abgeschlossene Diagnose mit abatementAge
 Instance: mii-exa-test-data-onko-diagnose-3

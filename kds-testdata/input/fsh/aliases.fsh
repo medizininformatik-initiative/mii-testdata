@@ -111,6 +111,9 @@ Alias: $pato = http://purl.obolibrary.org/obo/pato.owl
 Alias: $go-obo = http://purl.obolibrary.org/obo/go.owl
 Alias: $clo = http://purl.obolibrary.org/obo/clo.owl
 Alias: $miabis-sample-type = https://fhir.bbmri-eric.eu/CodeSystem/miabis-detailed-samply-type-cs
+Alias: $miabis-collection-setting = https://fhir.bbmri-eric.eu/CodeSystem/miabis-sample-collection-setting-cs
+Alias: $miabis-collection-design = https://fhir.bbmri-eric.eu/CodeSystem/miabis-collection-design-cs
+Alias: $miabis-storage-temperature = https://fhir.bbmri-eric.eu/CodeSystem/miabis-storage-temperature-cs
 Alias: $genenames = http://www.genenames.org
 // Seltene Erkrankungen ICF-Assessment
 Alias: $icf = http://hl7.org/fhir/sid/icf

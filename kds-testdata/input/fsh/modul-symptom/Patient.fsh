@@ -41,6 +41,23 @@ Description: "Symptom Test Device: digitales Symptomtagebuch (ePRO-App)"
 * deviceName.type = #user-friendly-name
 * type = $sct#706689003 "Application program software"
 
+// Probe zur Abklaerung der berichteten Haematurie (Ziel von
+// Observation.specimen der Symptom-Observation 5)
+Instance: mii-exa-test-data-symptom-specimen-1
+InstanceOf: Specimen
+Usage: #example
+Description: "Symptom Test Specimen: Mittelstrahlurin zur Abklaerung der berichteten Haematurie"
+* insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
+* identifier.system = "https://www.charite.de/fhir/sid/symptom-specimen"
+* identifier.value = "SYMP-SPEC-0001"
+* status = #available
+* type = $sct#122575003 "Urine specimen"
+* subject = Reference(mii-exa-test-data-symptom-patient-1)
+* receivedTime = "2025-03-04T10:15:00+01:00"
+* collection.collectedDateTime = "2025-03-04T09:50:00+01:00"
+* collection.method = $sct#225271002 "Collection of mid-stream specimen of urine"
+
 Instance: mii-exa-test-data-symptom-questionnaireresponse-1
 InstanceOf: QuestionnaireResponse
 Usage: #example

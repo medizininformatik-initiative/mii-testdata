@@ -92,6 +92,39 @@
         }
       ],
       "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-regions"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-focus",
+      "valueReference": {
+        "reference": "Condition/mii-exa-test-data-molgen-diagnose-1"
+      }
+    },
+    {
+      "extension": [
+        {
+          "url": "read-depth",
+          "valueQuantity": {
+            "value": 1200,
+            "code": "1",
+            "system": "http://unitsofmeasure.org",
+            "unit": "x"
+          }
+        },
+        {
+          "url": "sequencing-coverage",
+          "valueQuantity": {
+            "value": 99.4,
+            "code": "%",
+            "system": "http://unitsofmeasure.org",
+            "unit": "percent"
+          }
+        },
+        {
+          "url": "metrics-description",
+          "valueString": "Mittlere Lesetiefe 1200x, 99,4 % der Zielregion mit mindestens 100x abgedeckt"
+        }
+      ],
+      "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-metrics"
     }
   ],
   "status": "completed",

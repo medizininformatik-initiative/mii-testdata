@@ -91,9 +91,12 @@ Description: "Soziodemographie: Schwerbehindertenausweis mit GdB 60 und Merkzeic
 * component[gueltigBis].valueDateTime = "2027-07-31"
 
 // dataAbsentReason-Variante: Frage nach Schwerbehindertenausweis nicht beantwortet.
-// (Bei den uebrigen Lebenssituation-Profilen mit MS-dataAbsentReason ist value[x]
-// 1..1 — dort ist eine DAR-Variante wegen obs-6 strukturell unmoeglich;
-// Upstream-Widerspruch, Kandidat fuer Ballot-Feedback.)
+// Nur hier moeglich: bei mii-pr-sdd-betreuungssituation, -haushaltsgroesse,
+// -partnerschaft und -vertrauensperson ist value[x] auf 1..1 gesetzt, waehrend
+// dataAbsentReason als MS gefuehrt wird. obs-6 ("dataAbsentReason SHALL only be
+// present if value[x] is not present") macht eine DAR-Instanz dort strukturell
+// unmoeglich — der MS-Knoten bleibt in diesen vier Profilen offen.
+// Upstream-Widerspruch, Kandidat fuer Ballot-Feedback (Fix: value[x] auf 0..1).
 Instance: mii-exa-test-data-soziodemographie-schwerbehindertenausweis-3
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-soziodemographie/StructureDefinition/mii-pr-sdd-schwerbehindertenausweis
 Usage: #example

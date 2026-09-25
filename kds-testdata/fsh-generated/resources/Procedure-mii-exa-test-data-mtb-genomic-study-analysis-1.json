@@ -123,6 +123,84 @@
         }
       ],
       "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-regions"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-focus",
+      "valueReference": {
+        "reference": "Condition/mii-exa-test-data-mtb-diagnose-primaertumor-1"
+      }
+    },
+    {
+      "extension": [
+        {
+          "url": "read-depth",
+          "valueQuantity": {
+            "value": 850,
+            "code": "1",
+            "system": "http://unitsofmeasure.org",
+            "unit": "x"
+          }
+        },
+        {
+          "url": "sequencing-coverage",
+          "valueQuantity": {
+            "value": 98.7,
+            "code": "%",
+            "system": "http://unitsofmeasure.org",
+            "unit": "percent"
+          }
+        },
+        {
+          "url": "metrics-description",
+          "valueString": "Mittlere Lesetiefe 850x, 98,7 % der Zielregion mit mindestens 100x abgedeckt"
+        }
+      ],
+      "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-metrics"
+    },
+    {
+      "extension": [
+        {
+          "url": "read-depth",
+          "valueQuantity": {
+            "value": 850,
+            "code": "1",
+            "system": "http://unitsofmeasure.org",
+            "unit": "x"
+          }
+        },
+        {
+          "url": "read-length",
+          "valueQuantity": {
+            "value": 150,
+            "code": "1",
+            "system": "http://unitsofmeasure.org",
+            "unit": "bp"
+          }
+        },
+        {
+          "url": "sequencing-coverage",
+          "valueQuantity": {
+            "value": 98.7,
+            "code": "%",
+            "system": "http://unitsofmeasure.org",
+            "unit": "percent"
+          }
+        },
+        {
+          "url": "gap-statistics",
+          "valueQuantity": {
+            "value": 1.3,
+            "code": "%",
+            "system": "http://unitsofmeasure.org",
+            "unit": "percent"
+          }
+        },
+        {
+          "url": "metrics-description",
+          "valueString": "Paired-End-Sequenzierung 2x150 bp; 1,3 % der Zielregion unterhalb der geforderten Mindesttiefe"
+        }
+      ],
+      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-ex-mtb-genomic-study-analysis-qc"
     }
   ],
   "identifier": [

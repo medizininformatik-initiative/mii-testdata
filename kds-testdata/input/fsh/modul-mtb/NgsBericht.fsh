@@ -92,6 +92,31 @@ Description: "Test instance for MTB genomic study analysis with method and chang
 * extension[=].extension[=].valueCodeableConcept = $HGNC#HGNC:3236 "EGFR"
 * extension[=].extension[+].url = "studied"
 * extension[=].extension[=].valueCodeableConcept = $HGNC#HGNC:3430 "ERBB2"
+// Fokus der Analyse: die zugrunde liegende Tumorerkrankung
+* extension[+].url = "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-focus"
+* extension[=].valueReference = Reference(mii-exa-test-data-mtb-diagnose-primaertumor-1)
+// Qualitaetsmetriken nach Genomics-Reporting
+* extension[+].url = "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-metrics"
+* extension[=].extension[+].url = "read-depth"
+* extension[=].extension[=].valueQuantity = 850 $ucum#1 "x"
+* extension[=].extension[+].url = "sequencing-coverage"
+* extension[=].extension[=].valueQuantity = 98.7 $ucum#% "percent"
+* extension[=].extension[+].url = "metrics-description"
+* extension[=].extension[=].valueString = "Mittlere Lesetiefe 850x, 98,7 % der Zielregion mit mindestens 100x abgedeckt"
+// Erweiterte MTB-Qualitaetsmetriken der Analyse
+* extension[+].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-ex-mtb-genomic-study-analysis-qc"
+* extension[=].extension[+].url = "read-depth"
+* extension[=].extension[=].valueQuantity = 850 $ucum#1 "x"
+* extension[=].extension[+].url = "read-length"
+* extension[=].extension[=].valueQuantity = 150 $ucum#1 "bp"
+* extension[=].extension[+].url = "sequencing-coverage"
+* extension[=].extension[=].valueQuantity = 98.7 $ucum#% "percent"
+// sequencing-read-type bleibt leer: fuer "paired-end" existiert kein Code in den
+// hier verwendeten Terminologien (SNOMED CT kennt nur allgemeine Sequenzierverfahren)
+* extension[=].extension[+].url = "gap-statistics"
+* extension[=].extension[=].valueQuantity = 1.3 $ucum#% "percent"
+* extension[=].extension[+].url = "metrics-description"
+* extension[=].extension[=].valueString = "Paired-End-Sequenzierung 2x150 bp; 1,3 % der Zielregion unterhalb der geforderten Mindesttiefe"
 * identifier.system = "https://www.charite.de/fhir/sid/mtb-genomic-study"
 * identifier.value = "GSA-2024-001"
 * performedDateTime = "2024-02-21"

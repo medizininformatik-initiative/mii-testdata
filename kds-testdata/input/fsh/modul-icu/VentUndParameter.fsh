@@ -135,6 +135,13 @@ Description: "ICU Observation: MII PR ICU Koerperlaenge (liegend, 168 cm bei Auf
 * component[=].interpretation = $v3-ObservationInterpretation#N "Normal"
 * component[=].referenceRange.low = 150 'cm' "centimeter"
 * component[=].referenceRange.high = 190 'cm' "centimeter"
+* basedOn = Reference(mii-exa-test-data-icu-servicerequest-monitoring-1)
+// Scheitel-Ferse-Messung am liegenden Patienten
+* bodySite = $sct#38266002 "Entire body as a whole"
+* device = Reference(mii-exa-test-data-patient-1-icu-device-assessment-1)
+* referenceRange.low = 150 'cm' "centimeter"
+* referenceRange.high = 190 'cm' "centimeter"
+* referenceRange.text = "Koerperlaenge Erwachsene"
 // --- effectivePeriod-Varianten (MS-Slice effective[x]:effectivePeriod schliesst
 //     effectiveDateTime in derselben Instanz aus -> je eine minimale Variante) ---
 

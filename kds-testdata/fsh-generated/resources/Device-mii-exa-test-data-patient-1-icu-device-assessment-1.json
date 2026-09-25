@@ -1,0 +1,72 @@
+{
+  "resourceType": "Device",
+  "id": "mii-exa-test-data-patient-1-icu-device-assessment-1",
+  "meta": {
+    "security": [
+      {
+        "code": "HTEST",
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "display": "test health data"
+      }
+    ],
+    "source": "https://www.charite.de/fhir/kds-testdata",
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-device"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "https://www.charite.de/fhir/sid/device-identifier",
+      "value": "ICU-ASSESS-001"
+    }
+  ],
+  "deviceName": [
+    {
+      "name": "ICU-PDMS Assessmentmodul",
+      "type": "user-friendly-name"
+    }
+  ],
+  "type": {
+    "coding": [
+      {
+        "code": "706687001",
+        "system": "http://snomed.info/sct",
+        "display": "Software"
+      }
+    ],
+    "text": "Patientendaten-Management-System (Score- und Assessmentdokumentation)"
+  },
+  "version": [
+    {
+      "value": "R2024.1"
+    }
+  ],
+  "property": [
+    {
+      "valueCode": [
+        {
+          "coding": [
+            {
+              "code": "7087005",
+              "system": "http://snomed.info/sct",
+              "display": "Intermittent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "type": {
+        "coding": [
+          {
+            "code": "273249006",
+            "system": "http://snomed.info/sct",
+            "display": "Assessment scales (assessment scale)"
+          }
+        ]
+      }
+    }
+  ],
+  "status": "active",
+  "patient": {
+    "reference": "Patient/mii-exa-test-data-icu-patient-1"
+  }
+}

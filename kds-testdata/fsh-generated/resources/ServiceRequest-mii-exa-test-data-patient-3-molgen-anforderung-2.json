@@ -24,6 +24,11 @@
       "url": "http://hl7.org/fhir/StructureDefinition/workflow-relatedArtifact"
     }
   ],
+  "basedOn": [
+    {
+      "reference": "ServiceRequest/mii-exa-test-data-patient-3-molgen-anforderung-3"
+    }
+  ],
   "category": [
     {
       "coding": [

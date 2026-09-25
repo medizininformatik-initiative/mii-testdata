@@ -83,6 +83,9 @@ Description: "Bundle: Pathologie Testdaten Patient-1"
 * insert AddBundleEntry(mii-exa-test-data-patho-specimen-03-block, Specimen)
 * insert AddBundleEntry(mii-exa-test-data-patho-specimen-03-part, Specimen)
 * insert AddBundleEntry(mii-exa-test-data-patho-specimen-03-slide, Specimen)
+// Kontrollschnitt mit Specimen.extension[focus] + zugehoeriger Kontrollspender
+* insert AddBundleEntry(mii-exa-test-data-patho-specimen-p63-kontrolle, Specimen)
+* insert AddBundleEntry(mii-exa-test-data-patho-relatedperson-kontrollspender-1, RelatedPerson)
 // Grouper-Varianten mit component.dataAbsentReason (MS-Coverage)
 * insert AddBundleEntry(mii-exa-test-data-patho-macro-grouper-dar-1, Observation)
 * insert AddBundleEntry(mii-exa-test-data-patho-micro-grouper-dar-1, Observation)

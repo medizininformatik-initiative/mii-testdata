@@ -131,6 +131,36 @@ Description: "Minimal-Variante fuer die MS-Choice-Alternative abatementAge"
 * abatementAge.unit = "Jahre"
 * abatementAge.extension[Lebensphase-Ende].valueCodeableConcept.coding = $SCT#41847000 "Adulthood (qualifier value)"
 
+// Variante: histologische Transformation des EGFR-mutierten Adenokarzinoms in ein
+// kleinzelliges Lungenkarzinom unter TKI-Therapie (Condition.extension:transformationVon)
+Instance: mii-exa-test-data-mtb-diagnose-primaertumor-4
+InstanceOf: MII_PR_MTB_Diagnose_Primaertumor
+Usage: #example
+Title: "MTB Diagnose Primaertumor (SCLC-Transformation)"
+Description: "Kleinzellige Transformation des EGFR-mutierten Adenokarzinoms unter TKI-Therapie"
+* insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
+* meta.profile = "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-diagnose-primaertumor"
+* extension[Feststellungsdatum].valueDateTime = "2024-09-12"
+* recordedDate = "2024-09-12"
+* subject = Reference(mii-exa-test-data-mtb-patient-1)
+* clinicalStatus.coding = http://terminology.hl7.org/CodeSystem/condition-clinical#active "Active"
+* verificationStatus.coding[condition-ver-status][+] = $condition-ver-status#confirmed "Confirmed"
+* verificationStatus.coding[primaertumorDiagnosesicherung][+] = $mii-cs-onko-primaertumor-diagnosesicherung#7 "histologische Untersuchung eines Primärtumors"
+* code.coding[icd10-gm] = $ICD10GM#C34.1 "Bösartige Neubildung: Oberlappen (-Bronchus)"
+* code.coding[icd10-gm].version = "2024"
+* code.coding[icd10-gm].extension[Diagnosesicherheit].valueCoding = $diagnosesicherheit#G "Gesicherte Diagnose"
+* code.coding[icd10-gm].extension[Seitenlokalisation].valueCoding = $seitenlokalisation#R "rechts"
+* bodySite = $ICDO3#C34.1 "Lungenoberlappen"
+* bodySite.coding[snomed-ct] = $SCT#45653009 "Structure of upper lobe of lung (body structure)"
+* bodySite.coding[snomed-ct].version = "http://snomed.info/sct/900000000000207008/version/20240201"
+* extension[morphology-behavior-icdo3].valueCodeableConcept.coding = $ICDO3#8041/3 "Small cell carcinoma, NOS"
+* extension[morphology-behavior-icdo3].valueCodeableConcept.text = "Kleinzelliges Karzinom o.n.A."
+// Hervorgegangen aus dem EGFR-mutierten Adenokarzinom der Erstdiagnose
+* extension[transformationVon].valueReference = Reference(mii-exa-test-data-mtb-diagnose-primaertumor-1)
+* onsetDateTime = "2024-09-12"
+* note.text = "Rebiopsie bei Progress unter Osimertinib: histologische Transformation in ein kleinzelliges Lungenkarzinom."
+
 // Evidenz-Liste der Erstdiagnose (Ziel von Condition.evidence.detail)
 Instance: mii-exa-test-data-mtb-evidenz-liste-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-liste-evidenz-erstdiagnose

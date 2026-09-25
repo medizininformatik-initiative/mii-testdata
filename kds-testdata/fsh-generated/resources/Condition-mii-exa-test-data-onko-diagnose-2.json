@@ -18,6 +18,12 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/condition-assertedDate",
       "valueDateTime": "2015-03-01"
+    },
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-transformation-von",
+      "valueReference": {
+        "reference": "Condition/mii-exa-test-data-onko-diagnose-4"
+      }
     }
   ],
   "verificationStatus": {

@@ -60,6 +60,23 @@
       ]
     }
   ],
+  "referenceRange": [
+    {
+      "low": {
+        "value": 0,
+        "code": "mL",
+        "system": "http://unitsofmeasure.org",
+        "unit": "mL"
+      },
+      "high": {
+        "value": 500,
+        "code": "mL",
+        "system": "http://unitsofmeasure.org",
+        "unit": "mL"
+      },
+      "text": "toleriertes Magenrestvolumen ueber die Sonde pro 24h"
+    }
+  ],
   "valueQuantity": {
     "unit": "ml",
     "value": 100,
@@ -95,5 +112,8 @@
         "display": "Stomach structure (body structure)"
       }
     ]
+  },
+  "specimen": {
+    "reference": "Specimen/mii-exa-test-data-patient-1-icu-spec-magensaft-1"
   }
 }

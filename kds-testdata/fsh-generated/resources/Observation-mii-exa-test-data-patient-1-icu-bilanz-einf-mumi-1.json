@@ -55,6 +55,23 @@
       ]
     }
   ],
+  "referenceRange": [
+    {
+      "low": {
+        "value": 20,
+        "code": "mL",
+        "system": "http://unitsofmeasure.org",
+        "unit": "mL"
+      },
+      "high": {
+        "value": 60,
+        "code": "mL",
+        "system": "http://unitsofmeasure.org",
+        "unit": "mL"
+      },
+      "text": "Zielkorridor je Mahlzeit"
+    }
+  ],
   "valueQuantity": {
     "unit": "ml",
     "value": 40,
@@ -81,5 +98,17 @@
         "display": "Measured (qualifier value)"
       }
     ]
+  },
+  "bodySite": {
+    "coding": [
+      {
+        "code": "123851003",
+        "system": "http://snomed.info/sct",
+        "display": "Structure of mouth region"
+      }
+    ]
+  },
+  "specimen": {
+    "reference": "Specimen/mii-exa-test-data-patient-1-icu-spec-muttermilch-1"
   }
 }

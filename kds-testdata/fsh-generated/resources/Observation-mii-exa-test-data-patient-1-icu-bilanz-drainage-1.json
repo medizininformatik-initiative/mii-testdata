@@ -59,6 +59,23 @@
       ]
     }
   ],
+  "referenceRange": [
+    {
+      "low": {
+        "value": 0,
+        "code": "mL",
+        "system": "http://unitsofmeasure.org",
+        "unit": "mL"
+      },
+      "high": {
+        "value": 200,
+        "code": "mL",
+        "system": "http://unitsofmeasure.org",
+        "unit": "mL"
+      },
+      "text": "unauffaellige Drainagefoerderung pro 24h"
+    }
+  ],
   "valueQuantity": {
     "unit": "ml",
     "value": 50,
@@ -85,5 +102,17 @@
         "display": "Measured (qualifier value)"
       }
     ]
+  },
+  "bodySite": {
+    "coding": [
+      {
+        "code": "818983003",
+        "system": "http://snomed.info/sct",
+        "display": "Structure of abdomen"
+      }
+    ]
+  },
+  "specimen": {
+    "reference": "Specimen/mii-exa-test-data-patient-1-icu-spec-drainagesekret-1"
   }
 }

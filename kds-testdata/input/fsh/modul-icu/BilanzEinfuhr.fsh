@@ -24,6 +24,11 @@ Description: "ICU Observation: MII PR ICU Bilanz Einfuhr Muttermilch (technische
 * device = Reference(mii-exa-test-data-patient-1-icu-device-pdms-1)
 * interpretation = $v3-ObservationInterpretation#N "Normal"
 * method = $sct#258104002 "Measured (qualifier value)"
+* bodySite = $sct#123851003 "Structure of mouth region"
+* specimen = Reference(mii-exa-test-data-patient-1-icu-spec-muttermilch-1)
+* referenceRange.low = 20 'mL' "mL"
+* referenceRange.high = 60 'mL' "mL"
+* referenceRange.text = "Zielkorridor je Mahlzeit"
 
 // Technische Abdeckung — klinisch plausibles NICU-Szenario ist als eigenes Patientenbundle vorgemerkt (.claude/todo)
 Instance: mii-exa-test-data-patient-1-icu-bilanz-einf-mumi-abgep-1
@@ -46,6 +51,11 @@ Description: "ICU Observation: MII PR ICU Bilanz Einfuhr Abgepumpte Muttermilch 
 * device = Reference(mii-exa-test-data-patient-1-icu-device-pdms-1)
 * interpretation = $v3-ObservationInterpretation#N "Normal"
 * method = $sct#258104002 "Measured (qualifier value)"
+* bodySite = $sct#123851003 "Structure of mouth region"
+* specimen = Reference(mii-exa-test-data-patient-1-icu-spec-muttermilch-abgep-1)
+* referenceRange.low = 20 'mL' "mL"
+* referenceRange.high = 60 'mL' "mL"
+* referenceRange.text = "Zielkorridor je Mahlzeit"
 
 // Technische Abdeckung — klinisch plausibles NICU-Szenario ist als eigenes Patientenbundle vorgemerkt (.claude/todo)
 Instance: mii-exa-test-data-patient-1-icu-bilanz-einf-spendermilch-1
@@ -68,6 +78,11 @@ Description: "ICU Observation: MII PR ICU Bilanz Einfuhr Spendermilch (technisch
 * device = Reference(mii-exa-test-data-patient-1-icu-device-pdms-1)
 * interpretation = $v3-ObservationInterpretation#N "Normal"
 * method = $sct#258104002 "Measured (qualifier value)"
+* bodySite = $sct#123851003 "Structure of mouth region"
+* specimen = Reference(mii-exa-test-data-patient-1-icu-spec-spendermilch-1)
+* referenceRange.low = 20 'mL' "mL"
+* referenceRange.high = 60 'mL' "mL"
+* referenceRange.text = "Zielkorridor je Mahlzeit"
 
 // Technische Abdeckung — klinisch plausibles NICU-Szenario ist als eigenes Patientenbundle vorgemerkt (.claude/todo)
 Instance: mii-exa-test-data-patient-1-icu-bilanz-einf-saeugling-1
@@ -90,6 +105,11 @@ Description: "ICU Observation: MII PR ICU Bilanz Einfuhr Saeuglingsnahrung (tech
 * device = Reference(mii-exa-test-data-patient-1-icu-device-pdms-1)
 * interpretation = $v3-ObservationInterpretation#N "Normal"
 * method = $sct#258104002 "Measured (qualifier value)"
+* bodySite = $sct#123851003 "Structure of mouth region"
+* specimen = Reference(mii-exa-test-data-patient-1-icu-spec-saeuglingsnahrung-1)
+* referenceRange.low = 40 'mL' "mL"
+* referenceRange.high = 80 'mL' "mL"
+* referenceRange.text = "Zielkorridor je Mahlzeit"
 
 Instance: mii-exa-test-data-patient-1-icu-bilanz-einf-oral-fluess-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-einfuhr-orale-fluessigkeit
@@ -112,6 +132,11 @@ Description: "ICU Observation: MII PR ICU Bilanz Einfuhr Orale Fluessigkeit"
 * device = Reference(mii-exa-test-data-patient-1-icu-device-pdms-1)
 * interpretation = $v3-ObservationInterpretation#N "Normal"
 * method = $sct#258104002 "Measured (qualifier value)"
+* bodySite = $sct#123851003 "Structure of mouth region"
+* specimen = Reference(mii-exa-test-data-patient-1-icu-spec-trinkwasser-1)
+* referenceRange.low = 100 'mL' "mL"
+* referenceRange.high = 300 'mL' "mL"
+* referenceRange.text = "Zielkorridor orale Trinkmenge je Portion"
 
 // Generisches Bilanz-Profil (Elternprofil, abstract=false -> direkte Instanz)
 Instance: mii-exa-test-data-patient-1-icu-bilanz-status-1
@@ -134,3 +159,8 @@ Description: "ICU Observation: MII PR ICU Bilanz (generisch) - Fluessigkeitsbila
 * device = Reference(mii-exa-test-data-patient-1-icu-device-pdms-1)
 * interpretation = $v3-ObservationInterpretation#N "Normal"
 * method = $sct#258104002 "Measured (qualifier value)"
+* bodySite = $sct#38266002 "Entire body as a whole"
+* specimen = Reference(mii-exa-test-data-patient-1-icu-spec-koerperfluessigkeit-1)
+* referenceRange.low = -500 'mL' "mL"
+* referenceRange.high = 500 'mL' "mL"
+* referenceRange.text = "ausgeglichene Fluessigkeitsbilanz"

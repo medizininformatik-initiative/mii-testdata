@@ -95,3 +95,23 @@ Description: "ICU Device: Patientendaten-Management-System (Fluessigkeitsbilanzi
 * property.type = $sct#364396009 "Fluid balance observable (observable entity)"
 * property.valueCode = $sct#255238004 "Continuous (qualifier value)"
 * patient = Reference(mii-exa-test-data-icu-patient-1)
+
+// PDMS-Assessmentmodul: elektronische Erfassung der Scores und Koerpermasse
+// (Observation.device der Score-/MUV-Profile)
+Instance: mii-exa-test-data-patient-1-icu-device-assessment-1
+InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-device
+Usage: #example
+Description: "ICU Device: PDMS-Assessmentmodul (Score- und Messwertdokumentation)"
+* insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
+* identifier.system = "https://www.charite.de/fhir/sid/device-identifier"
+* identifier.value = "ICU-ASSESS-001"
+* status = #active
+* deviceName[+].name = "ICU-PDMS Assessmentmodul"
+* deviceName[=].type = #user-friendly-name
+* type.coding[+] = $sct#706687001 "Software"
+* type.text = "Patientendaten-Management-System (Score- und Assessmentdokumentation)"
+* version.value = "R2024.1"
+* property.type = $sct#273249006 "Assessment scales (assessment scale)"
+* property.valueCode = $sct#7087005 "Intermittent (qualifier value)"
+* patient = Reference(mii-exa-test-data-icu-patient-1)

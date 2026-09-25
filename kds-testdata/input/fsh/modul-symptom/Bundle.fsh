@@ -20,6 +20,8 @@ Description: "Bundle: Symptom Testdaten Patient-1"
 * insert AddBundleEntry(mii-exa-test-data-symptom-observation-2, Observation)
 * insert AddBundleEntry(mii-exa-test-data-symptom-observation-3, Observation)
 * insert AddBundleEntry(mii-exa-test-data-symptom-observation-4, Observation)
+* insert AddBundleEntry(mii-exa-test-data-symptom-observation-5, Observation)
 // Supporting resources
+* insert AddBundleEntry(mii-exa-test-data-symptom-specimen-1, Specimen)
 * insert AddBundleEntry(mii-exa-test-data-symptom-device-1, Device)
 * insert AddBundleEntry(mii-exa-test-data-symptom-questionnaireresponse-1, QuestionnaireResponse)

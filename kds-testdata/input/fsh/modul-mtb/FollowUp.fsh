@@ -209,9 +209,28 @@ Description: "Test instance for MTB response assessment with RECIST method"
 * valueCodeableConcept.coding = $mii-cs-mtb-response-befund-beurteilung#PR "Partial Response"
 * component[Lymphknoten_Verlauf].code.coding = $SCT#399656008 "Presence of metastatic neoplasm in regional lymph node (observable entity)"
 * component[Lymphknoten_Verlauf].valueCodeableConcept.coding = $mii-cs-onko-verlauf-lymphknoten#K "kein Lymphknotenbefall nachweisbar"
+// Zugehoeriger Metastasen-Befund der gleichen Verlaufsbeurteilung
+* hasMember = Reference(mii-exa-test-data-mtb-fernmetastasen-1)
 * encounter = Reference(mii-exa-test-data-mtb-encounter-1)
 * identifier.system = "https://www.charite.de/fhir/sid/mtb-befund"
 * identifier.value = "RESPONSE-2024-001"
+
+// Fernmetastasen-Befund zur Verlaufsbeurteilung (Ziel von Observation.hasMember)
+Instance: mii-exa-test-data-mtb-fernmetastasen-1
+InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-fernmetastasen
+Usage: #example
+Title: "MTB Fernmetastasen"
+Description: "Fernmetastasen-Befund (Leber) zum RECIST-Verlauf unter Osimertinib"
+* insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
+* status = #final
+* code.coding = $SCT#385421009 "Site of distant metastasis"
+* subject = Reference(mii-exa-test-data-mtb-patient-1)
+* encounter = Reference(mii-exa-test-data-mtb-encounter-1)
+* effectiveDateTime = "2024-07-20"
+* focus = Reference(mii-exa-test-data-mtb-diagnose-primaertumor-1)
+* valueCodeableConcept.coding = $mii-cs-onko-fernmetastasen#HEP "Leber"
+* bodySite = $SCT#10200004 "Liver structure (body structure)"
 
 // =============================================================================
 // 47. MII_PR_MTB_Antrag_Kostenuebernahme (Claim)

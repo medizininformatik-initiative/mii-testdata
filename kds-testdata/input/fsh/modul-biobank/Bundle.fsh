@@ -16,6 +16,9 @@ Description: "Bundle: Biobank Testdaten"
 * insert AddBundleEntry(mii-exa-test-data-organization-biobank-charite, Organization)
 // Substance
 * insert AddBundleEntry(mii-exa-test-data-patient-1-substance-1, Substance)
+* insert AddBundleEntry(mii-exa-test-data-biobank-substance-kulturmedium-1, Substance)
+// Device (focus-Ziel des Umgebungsabstrichs)
+* insert AddBundleEntry(mii-exa-test-data-biobank-device-inkubator-1, Device)
 // Specimens Patient-1
 * insert AddBundleEntry(mii-exa-test-data-patient-1-specimen-1, Specimen)
 // Specimens Patient-3
@@ -56,6 +59,8 @@ Description: "Bundle: Biobank Testdaten"
 // Zelllinie/Organoid + SpecimenCore (Profilluecken-Abdeckung, Paket-Beispiele adaptiert)
 * insert AddBundleEntry(mii-exa-test-data-biobank-organoid-1, Specimen)
 * insert AddBundleEntry(mii-exa-test-data-biobank-specimen-dna-1, Specimen)
+* insert AddBundleEntry(mii-exa-test-data-biobank-specimen-zellkultur-1, Specimen)
+* insert AddBundleEntry(mii-exa-test-data-biobank-specimen-inkubator-abstrich-1, Specimen)
 * insert AddBundleEntry(mii-exa-test-data-biobank-kulturprotokoll-1, DocumentReference)
 * insert AddBundleEntry(mii-exa-test-data-biobank-crispr-protokoll-1, DocumentReference)
 // Observations zu Bioproben (Profilluecken-Abdeckung, Paket-Beispiele adaptiert)

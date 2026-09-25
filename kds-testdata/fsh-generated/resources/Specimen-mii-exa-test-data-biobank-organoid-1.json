@@ -57,6 +57,16 @@
       "valueInteger": 3
     },
     {
+      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/mii-ex-biobank-anzahl-aliquots",
+      "valueInteger": 6
+    },
+    {
+      "url": "http://hl7.eu/fhir/laboratory/StructureDefinition/specimen-focus",
+      "valueReference": {
+        "reference": "Substance/mii-exa-test-data-biobank-substance-kulturmedium-1"
+      }
+    },
+    {
       "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/VerwaltendeOrganisation",
       "valueReference": {
         "reference": "Organization/mii-exa-test-data-organization-biobank-charite"
@@ -176,16 +186,16 @@
         {
           "valueRange": {
             "low": {
-              "value": 37,
-              "code": "Cel",
+              "unit": "°C",
               "system": "http://unitsofmeasure.org",
-              "unit": "°C"
+              "code": "Cel",
+              "value": 37
             },
             "high": {
-              "value": 37,
-              "code": "Cel",
+              "unit": "°C",
               "system": "http://unitsofmeasure.org",
-              "unit": "°C"
+              "code": "Cel",
+              "value": 37
             }
           },
           "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Temperaturbedingungen"
@@ -209,6 +219,52 @@
           }
         ]
       }
+    },
+    {
+      "extension": [
+        {
+          "valueRange": {
+            "low": {
+              "unit": "°C",
+              "system": "http://unitsofmeasure.org",
+              "code": "Cel",
+              "value": -196
+            },
+            "high": {
+              "unit": "°C",
+              "system": "http://unitsofmeasure.org",
+              "code": "Cel",
+              "value": -150
+            }
+          },
+          "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Temperaturbedingungen"
+        },
+        {
+          "url": "https://fhir.bbmri-eric.eu/StructureDefinition/miabis-sample-storage-temperature-extension",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "code": "LN",
+                "system": "https://fhir.bbmri-eric.eu/CodeSystem/miabis-storage-temperature-cs",
+                "display": "liquid nitrogen, -150 to -196 degrees Celsius"
+              }
+            ]
+          }
+        }
+      ],
+      "timePeriod": {
+        "start": "2022-04-12T11:00:00+02:00"
+      },
+      "procedure": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "27872000",
+            "display": "Specimen freezing (procedure)"
+          }
+        ]
+      },
+      "description": "Kryokonservierung der Organoid-Aliquots"
     }
   ],
   "container": [

@@ -55,6 +55,23 @@
       ]
     }
   ],
+  "referenceRange": [
+    {
+      "low": {
+        "value": 0,
+        "code": "mL",
+        "system": "http://unitsofmeasure.org",
+        "unit": "mL"
+      },
+      "high": {
+        "value": 200,
+        "code": "mL",
+        "system": "http://unitsofmeasure.org",
+        "unit": "mL"
+      },
+      "text": "unauffaellige Foerderung der OP-Drainage pro 24h"
+    }
+  ],
   "valueQuantity": {
     "unit": "ml",
     "value": 75,
@@ -81,5 +98,17 @@
         "display": "Measured (qualifier value)"
       }
     ]
+  },
+  "bodySite": {
+    "coding": [
+      {
+        "code": "51185008",
+        "system": "http://snomed.info/sct",
+        "display": "Structure of thorax"
+      }
+    ]
+  },
+  "specimen": {
+    "reference": "Specimen/mii-exa-test-data-patient-1-icu-spec-drainagesekret-1"
   }
 }

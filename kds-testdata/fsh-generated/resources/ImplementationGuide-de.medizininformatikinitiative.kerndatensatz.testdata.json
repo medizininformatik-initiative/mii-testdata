@@ -431,6 +431,14 @@
       },
       {
         "reference": {
+          "reference": "Specimen/mii-exa-test-data-patho-specimen-p63-kontrolle"
+        },
+        "name": "Kontrollschnitt p63-Immunhistochemie",
+        "description": "Externe Positivkontrolle (Tonsillengewebe eines Kontrollspenders) fuer die p63-Immunhistochemie des Falls E_24_001",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "List/mii-exa-test-data-onko-liste-evidenz-1"
         },
         "name": "Liste der Evidenz zum Erstdiagnosezeitpunkt",
@@ -671,6 +679,14 @@
       },
       {
         "reference": {
+          "reference": "Device/mii-exa-test-data-biobank-device-inkubator-1"
+        },
+        "name": "mii-exa-test-data-biobank-device-inkubator-1",
+        "description": "Device: CO2-Inkubator der Zellkulturbank",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Condition/mii-exa-test-data-biobank-diagnose-1"
         },
         "name": "mii-exa-test-data-biobank-diagnose-1",
@@ -827,6 +843,30 @@
         },
         "name": "mii-exa-test-data-biobank-specimen-dna-1",
         "description": "Specimen (Core): DNA-Probe, extrahiert aus dem EDTA-Blut von Biobank-Patient 1",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Specimen/mii-exa-test-data-biobank-specimen-inkubator-abstrich-1"
+        },
+        "name": "mii-exa-test-data-biobank-specimen-inkubator-abstrich-1",
+        "description": "Specimen (Core): Umgebungsabstrich aus dem CO2-Inkubator der Zellkulturbank",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Specimen/mii-exa-test-data-biobank-specimen-zellkultur-1"
+        },
+        "name": "mii-exa-test-data-biobank-specimen-zellkultur-1",
+        "description": "Specimen: Zellkultur-Lysat aus der Kolon-Organoid-Kultur von Biobank-Patient 3",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Substance/mii-exa-test-data-biobank-substance-kulturmedium-1"
+        },
+        "name": "mii-exa-test-data-biobank-substance-kulturmedium-1",
+        "description": "Substance: Zellkulturmedium der Organoid-Kultur",
         "exampleBoolean": true
       },
       {
@@ -1147,6 +1187,14 @@
         },
         "name": "mii-exa-test-data-icu-practitioner-1",
         "description": "ICU Practitioner: Intensivmedizinerin (Dokumentation der Scores und Prozeduren)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "ServiceRequest/mii-exa-test-data-icu-servicerequest-monitoring-1"
+        },
+        "name": "mii-exa-test-data-icu-servicerequest-monitoring-1",
+        "description": "ICU ServiceRequest: Anordnung kontinuierliches Vitaldaten-Monitoring und taegliche Koerpermasse",
         "exampleBoolean": true
       },
       {
@@ -1891,6 +1939,14 @@
         },
         "name": "mii-exa-test-data-kontrastmittelgabe",
         "description": "MedicationAdministration: kontrastmittelgabe",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "MedicationAdministration/mii-exa-test-data-kontrastmittelgabe-2"
+        },
+        "name": "mii-exa-test-data-kontrastmittelgabe-2",
+        "description": "MedicationAdministration: NaCl-Nachspuelung nach Kontrastmittelgabe",
         "exampleBoolean": true
       },
       {
@@ -3319,6 +3375,14 @@
       },
       {
         "reference": {
+          "reference": "Condition/mii-exa-test-data-onko-diagnose-4"
+        },
+        "name": "mii-exa-test-data-onko-diagnose-4",
+        "description": "Onkologie Diagnose - DCIS (Vorstufe, Ziel der transformationVon-Extension von Diagnose-2)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Observation/mii-exa-test-data-onko-ecog-1"
         },
         "name": "mii-exa-test-data-onko-ecog-1",
@@ -3911,6 +3975,22 @@
       },
       {
         "reference": {
+          "reference": "Observation/mii-exa-test-data-onko-tnm-m-kategorie-3"
+        },
+        "name": "mii-exa-test-data-onko-tnm-m-kategorie-3",
+        "description": "Onkologie Test TNM M-Kategorie klinisch - rcM1 (Rezidiv-Staging 2023)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-onko-tnm-m-kategorie-4"
+        },
+        "name": "mii-exa-test-data-onko-tnm-m-kategorie-4",
+        "description": "Onkologie Test TNM M-Kategorie - apM1 (Autopsiebefund)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Observation/mii-exa-test-data-onko-tnm-m-symbol-1"
         },
         "name": "mii-exa-test-data-onko-tnm-m-symbol-1",
@@ -3931,6 +4011,22 @@
         },
         "name": "mii-exa-test-data-onko-tnm-n-kategorie-2",
         "description": "Onkologie Test TNM N-Kategorie klinisch - rcN0 (Rezidiv-Staging)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-onko-tnm-n-kategorie-3"
+        },
+        "name": "mii-exa-test-data-onko-tnm-n-kategorie-3",
+        "description": "Onkologie Test TNM N-Kategorie klinisch - ycN1 (Restaging nach neoadjuvanter Therapie)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-onko-tnm-n-kategorie-4"
+        },
+        "name": "mii-exa-test-data-onko-tnm-n-kategorie-4",
+        "description": "Onkologie Test TNM N-Kategorie - apN2 (Autopsiebefund)",
         "exampleBoolean": true
       },
       {
@@ -3987,6 +4083,14 @@
         },
         "name": "mii-exa-test-data-onko-tnm-t-kategorie-3",
         "description": "Onkologie Test TNM T-Kategorie - aT3 (Autopsiebefund)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-onko-tnm-t-kategorie-4"
+        },
+        "name": "mii-exa-test-data-onko-tnm-t-kategorie-4",
+        "description": "Onkologie Test TNM T-Kategorie klinisch - rcT3 (Rezidiv-Staging 2023)",
         "exampleBoolean": true
       },
       {
@@ -4491,6 +4595,14 @@
         },
         "name": "mii-exa-test-data-patient-1-icu-device-1",
         "description": "ICU Device: Beatmungsgeraet Draeger Evita V500",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Device/mii-exa-test-data-patient-1-icu-device-assessment-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-device-assessment-1",
+        "description": "ICU Device: PDMS-Assessmentmodul (Score- und Messwertdokumentation)",
         "exampleBoolean": true
       },
       {
@@ -5059,6 +5171,134 @@
         },
         "name": "mii-exa-test-data-patient-1-icu-score-zopa-dar-1",
         "description": "ICU Score (dataAbsentReason): ZOPA erhoben, NRS-Selbsteinschaetzung nicht moeglich",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Specimen/mii-exa-test-data-patient-1-icu-spec-blut-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-spec-blut-1",
+        "description": "ICU Specimen: blutiges Trachealsekret / Blutprobe zur Quantifizierung des Blutverlusts",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Specimen/mii-exa-test-data-patient-1-icu-spec-drainagesekret-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-spec-drainagesekret-1",
+        "description": "ICU Specimen: Drainagesekret (generische Drainage und OP-Drainage)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Specimen/mii-exa-test-data-patient-1-icu-spec-galle-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-spec-galle-1",
+        "description": "ICU Specimen: Gallefluessigkeit aus der biliaeren Drainage (Bilanz Ausfuhr Gallenfluessigkeit)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Specimen/mii-exa-test-data-patient-1-icu-spec-haemofiltrat-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-spec-haemofiltrat-1",
+        "description": "ICU Specimen: Effluat/Ultrafiltrat aus dem Haemofiltrationskreislauf",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Specimen/mii-exa-test-data-patient-1-icu-spec-koerperfluessigkeit-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-spec-koerperfluessigkeit-1",
+        "description": "ICU Specimen: Sammelprobe Koerperfluessigkeit (Gesamtbilanz / Tagesbilanz)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Specimen/mii-exa-test-data-patient-1-icu-spec-magensaft-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-spec-magensaft-1",
+        "description": "ICU Specimen: Magensaft aus der Ableitung ueber die Magensonde (Bilanz Ausfuhr Magensonde)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Specimen/mii-exa-test-data-patient-1-icu-spec-muttermilch-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-spec-muttermilch-1",
+        "description": "ICU Specimen: Rueckstellprobe Muttermilch (Bilanz Einfuhr Muttermilch)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Specimen/mii-exa-test-data-patient-1-icu-spec-muttermilch-abgep-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-spec-muttermilch-abgep-1",
+        "description": "ICU Specimen: Rueckstellprobe abgepumpte Muttermilch (Bilanz Einfuhr abgepumpte Muttermilch)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Specimen/mii-exa-test-data-patient-1-icu-spec-pankreassekret-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-spec-pankreassekret-1",
+        "description": "ICU Specimen: Pankreassekret aus der Pankreasdrainage (Bilanz Ausfuhr Pankreasdrainage)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Specimen/mii-exa-test-data-patient-1-icu-spec-saeuglingsnahrung-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-spec-saeuglingsnahrung-1",
+        "description": "ICU Specimen: Chargenprobe Saeuglingsnahrung (Bilanz Einfuhr Saeuglingsnahrung)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Specimen/mii-exa-test-data-patient-1-icu-spec-sondennahrung-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-spec-sondennahrung-1",
+        "description": "ICU Specimen: Chargenprobe Sondennahrung (Bilanz Einfuhr enterale Fluessigkeit)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Specimen/mii-exa-test-data-patient-1-icu-spec-spendermilch-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-spec-spendermilch-1",
+        "description": "ICU Specimen: Chargenprobe Spendermilch aus der Frauenmilchbank (Bilanz Einfuhr Spendermilch)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Specimen/mii-exa-test-data-patient-1-icu-spec-stuhl-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-spec-stuhl-1",
+        "description": "ICU Specimen: Stuhlprobe aus dem Faekalkollektor (Bilanz Ausfuhr Stuhlgang)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Specimen/mii-exa-test-data-patient-1-icu-spec-trinkwasser-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-spec-trinkwasser-1",
+        "description": "ICU Specimen: Probe des oral verabreichten Trinkwassers (Bilanz Einfuhr orale Fluessigkeit)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Specimen/mii-exa-test-data-patient-1-icu-spec-urin-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-spec-urin-1",
+        "description": "ICU Specimen: Urinprobe aus dem Dauerkatheter-Sammelsystem (Bilanz Ausfuhr Urin)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Specimen/mii-exa-test-data-patient-1-icu-spec-wundsekret-1"
+        },
+        "name": "mii-exa-test-data-patient-1-icu-spec-wundsekret-1",
+        "description": "ICU Specimen: Wundsekret aus der Wunddrainage (Bilanz Ausfuhr Wunddrainage)",
         "exampleBoolean": true
       },
       {
@@ -5926,6 +6166,14 @@
       },
       {
         "reference": {
+          "reference": "QuestionnaireResponse/mii-exa-test-data-patient-1-pro-schmerz-zusatz-response"
+        },
+        "name": "mii-exa-test-data-patient-1-pro-schmerz-zusatz-response",
+        "description": "PRO QuestionnaireResponse: Zusatzfragen Schmerz fuer Patient 1 (Folgefragen unter der Antwort)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "QuestionnaireResponse/mii-exa-test-data-patient-1-pro-whodas12-response"
         },
         "name": "mii-exa-test-data-patient-1-pro-whodas12-response",
@@ -6550,6 +6798,14 @@
       },
       {
         "reference": {
+          "reference": "ServiceRequest/mii-exa-test-data-patient-3-molgen-anforderung-3"
+        },
+        "name": "mii-exa-test-data-patient-3-molgen-anforderung-3",
+        "description": "ServiceRequest: Empfehlung der Tumorkonferenz zur molekularpathologischen Diagnostik bei NSCLC",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "DiagnosticReport/mii-exa-test-data-patient-3-molgen-befundbericht-1"
         },
         "name": "mii-exa-test-data-patient-3-molgen-befundbericht-1",
@@ -6610,6 +6866,22 @@
         },
         "name": "mii-exa-test-data-patient-3-molgen-genotyp-1",
         "description": "Observation: Genotyp fuer BRAF-Mutation",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Media/mii-exa-test-data-patient-3-molgen-media-igv-1"
+        },
+        "name": "mii-exa-test-data-patient-3-molgen-media-igv-1",
+        "description": "Media: IGV-Screenshot der BRAF p.V600E Variante",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Media/mii-exa-test-data-patient-3-molgen-media-ihc-1"
+        },
+        "name": "mii-exa-test-data-patient-3-molgen-media-ihc-1",
+        "description": "Media: Uebersichtsaufnahme der PD-L1-Immunhistochemie",
         "exampleBoolean": true
       },
       {
@@ -8542,6 +8814,14 @@
       },
       {
         "reference": {
+          "reference": "Observation/mii-exa-test-data-symptom-observation-5"
+        },
+        "name": "mii-exa-test-data-symptom-observation-5",
+        "description": "Symptom Observation: Haematurie, am Mittelstrahlurin bestaetigt (mit specimen)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Patient/mii-exa-test-data-symptom-patient-1"
         },
         "name": "mii-exa-test-data-symptom-patient-1",
@@ -8554,6 +8834,14 @@
         },
         "name": "mii-exa-test-data-symptom-questionnaireresponse-1",
         "description": "Symptom Test QuestionnaireResponse: Kopfschmerztagebuch",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Specimen/mii-exa-test-data-symptom-specimen-1"
+        },
+        "name": "mii-exa-test-data-symptom-specimen-1",
+        "description": "Symptom Test Specimen: Mittelstrahlurin zur Abklaerung der berichteten Haematurie",
         "exampleBoolean": true
       },
       {
@@ -8678,6 +8966,14 @@
       },
       {
         "reference": {
+          "reference": "Condition/mii-exa-test-data-mtb-diagnose-primaertumor-4"
+        },
+        "name": "MTB Diagnose Primaertumor (SCLC-Transformation)",
+        "description": "Kleinzellige Transformation des EGFR-mutierten Adenokarzinoms unter TKI-Therapie",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Condition/mii-exa-test-data-mtb-diagnose-primaertumor-3"
         },
         "name": "MTB Diagnose Primaertumor (Variante abatementAge)",
@@ -8722,6 +9018,14 @@
         },
         "name": "MTB Evidenz-Liste Erstdiagnose",
         "description": "Liste der Evidenz-Befunde zur Erstdiagnose des Primaertumors",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-mtb-fernmetastasen-1"
+        },
+        "name": "MTB Fernmetastasen",
+        "description": "Fernmetastasen-Befund (Leber) zum RECIST-Verlauf unter Osimertinib",
         "exampleBoolean": true
       },
       {
@@ -9190,6 +9494,14 @@
       },
       {
         "reference": {
+          "reference": "Questionnaire/mii-exa-test-data-pro-questionnaire-schmerz-zusatz"
+        },
+        "name": "PRO-Zusatzfragen Schmerz (Testdaten)",
+        "description": "Hauseigener PRO-Zusatzfragebogen mit Folgefragen unterhalb einer Antwort (Grundlage fuer answer.item)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "ServiceRequest/mii-exa-test-data-patho-request-1"
         },
         "name": "Prostatabiopsie Anforderung (2 Stanzen)",
@@ -9282,6 +9594,14 @@
         },
         "name": "Seminal Vesicle Invasion - Biopsy",
         "description": "Tumor invasion into seminal vesicles (typically not assessable in biopsy)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "RelatedPerson/mii-exa-test-data-patho-relatedperson-kontrollspender-1"
+        },
+        "name": "Spender des Kontrollgewebes",
+        "description": "RelatedPerson: anonymer Spender des Tonsillengewebes, das als externe Positivkontrolle der p63-Immunhistochemie dient",
         "exampleBoolean": true
       },
       {
