@@ -16,5 +16,7 @@ Description: "Observation: Molekularer Biomarker (PD-L1 TPS) fuer Patient-3"
 * issued = "2022-04-12T11:00:00+02:00"
 * valueQuantity = 60 $ucum#% "percent"
 * specimen = Reference(mii-exa-test-data-molgen-specimen-1)
+// Der TPS wurde an der immunhistochemischen Uebersichtsaufnahme ausgezaehlt
+* derivedFrom = Reference(mii-exa-test-data-patient-3-molgen-media-ihc-1)
 * component[biomarker-category].valueCodeableConcept.coding = $ncit#C184941 "PD-L1 Tumor Proportion Score"
 * component[biomarker-category].valueCodeableConcept.text = "PD-L1 Tumor Proportion Score"

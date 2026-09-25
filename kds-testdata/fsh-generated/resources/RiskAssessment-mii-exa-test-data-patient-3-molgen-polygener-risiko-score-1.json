@@ -37,6 +37,20 @@
   ],
   "prediction": [
     {
+      "extension": [
+        {
+          "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/risk-assessment-einflussfaktor",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "code": "154051000119101",
+                "system": "http://snomed.info/sct",
+                "display": "Family history of malignant neoplasm of colon over age 50"
+              }
+            ]
+          }
+        }
+      ],
       "outcome": {
         "coding": [
           {

@@ -231,10 +231,10 @@ Description: "PRO QuestionnaireResponse: WHODAS 2.0 12-Item for Patient 1 (mild 
 
 // -----------------------------------------------------------------------------
 // PROMIS-29 QuestionnaireResponse (Patient 1, Auszug Angst + Depression)
-// Covers: identifier, author, item.text, item.item (verschachtelte Gruppen);
+// Covers: identifier, author, item.text, item.item (verschachtelte Gruppen),
+// questionnaire.extension[questionnaireDisplay];
 // answer.valueCoding.display mit translation-Extension wie im Questionnaire.
-// Hinweis: item.answer.item bleibt offen - keines der PRO-Questionnaires hat
-// Kind-Items unter Frage-Items, eine solche Antwortstruktur waere invalide.
+// (item.answer.item deckt die Zusatzfragen-Response weiter unten ab.)
 // -----------------------------------------------------------------------------
 Instance: mii-exa-test-data-patient-1-pro-promis29-response
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response
@@ -250,6 +250,10 @@ Description: "PRO QuestionnaireResponse: PROMIS-29 (Auszug Angst/Depression) for
 * author = Reference(mii-exa-test-data-pro-patient-1)
 * authored = "2024-03-15T10:30:00+01:00"
 * questionnaire = "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-29-de"
+// Anzeigetext des Instruments (questionnaireDisplay); per expliziter URL, da
+// die display-Extension auf dem canonical-Primitiv sitzt
+* questionnaire.extension[0].url = "http://hl7.org/fhir/StructureDefinition/display"
+* questionnaire.extension[0].valueString = "PROMIS-29 Profile v2.1 (deutsche Fassung)"
 // Gruppe ANGST mit verschachtelten Frage-Items (item.item)
 * item[+].linkId = "PROMIS-29.Anxiety"
 * item[=].text = "ANGST"
@@ -273,3 +277,37 @@ Description: "PRO QuestionnaireResponse: PROMIS-29 (Auszug Angst/Depression) for
 * item[=].item[+].linkId = "promis-eddep29"
 * item[=].item[=].text = "Ich fühlte mich niedergeschlagen."
 * item[=].item[=].answer[0].valueCoding = $loinc#LA10082-8 "Manchmal"
+
+
+// -----------------------------------------------------------------------------
+// Zusatzfragen Schmerz (hauseigener Fragebogen, siehe Questionnaire.fsh)
+// Covers: QuestionnaireResponse.item.answer.item - die Folgefragen haengen
+// unter der Antwort "Ja", nicht unter dem Frage-Item selbst.
+// Inhaltlich konsistent zu PHQ-15 q1b (Rueckenschmerzen, "Bothered a lot").
+// -----------------------------------------------------------------------------
+Instance: mii-exa-test-data-patient-1-pro-schmerz-zusatz-response
+InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response
+Usage: #example
+Description: "PRO QuestionnaireResponse: Zusatzfragen Schmerz fuer Patient 1 (Folgefragen unter der Antwort)"
+* insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
+* identifier.system = "https://www.charite.de/fhir/sid/pro-questionnaire-response-id"
+* identifier.value = "PRO-QR-SZ-PAT1-001"
+* status = #completed
+* language = #de
+* subject = Reference(mii-exa-test-data-pro-patient-1)
+* author = Reference(mii-exa-test-data-pro-patient-1)
+* authored = "2024-03-15T10:50:00+01:00"
+* questionnaire = "https://www.charite.de/fhir/kds-testdata/Questionnaire/pro-zusatzfragen-schmerz"
+* questionnaire.extension[0].url = "http://hl7.org/fhir/StructureDefinition/display"
+* questionnaire.extension[0].valueString = "PRO-Zusatzfragen Schmerz"
+* item[0].linkId = "zusatz-schmerz-vorhanden"
+* item[0].text = "Hatten Sie in den letzten 7 Tagen Schmerzen?"
+* item[0].answer[0].valueCoding = $sct#373066001 "Yes"
+// Folgefragen unterhalb der Antwort
+* item[0].answer[0].item[0].linkId = "zusatz-schmerz-lokalisation"
+* item[0].answer[0].item[0].text = "Wo hatten Sie diese Schmerzen hauptsächlich?"
+* item[0].answer[0].item[0].answer[0].valueString = "Unterer Rücken"
+* item[0].answer[0].item[1].linkId = "zusatz-schmerz-intensitaet"
+* item[0].answer[0].item[1].text = "Wie stark waren die Schmerzen im Durchschnitt (0 = kein Schmerz, 10 = stärkster vorstellbarer Schmerz)?"
+* item[0].answer[0].item[1].answer[0].valueInteger = 6

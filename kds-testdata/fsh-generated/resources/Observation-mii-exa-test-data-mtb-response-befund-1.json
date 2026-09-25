@@ -55,6 +55,11 @@
       }
     }
   ],
+  "hasMember": [
+    {
+      "reference": "Observation/mii-exa-test-data-mtb-fernmetastasen-1"
+    }
+  ],
   "identifier": [
     {
       "system": "https://www.charite.de/fhir/sid/mtb-befund",

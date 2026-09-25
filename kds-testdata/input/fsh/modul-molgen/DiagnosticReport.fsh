@@ -18,6 +18,11 @@ Description: "DiagnosticReport: Molekulargenetischer Befundbericht mit BRAF-Muta
 * extension[workflow-relatedArtifact].valueRelatedArtifact.type = $related-artifact-type#citation "Citation"
 * extension[workflow-relatedArtifact].valueRelatedArtifact.citation = "Richards et al., Standards and guidelines for the interpretation of sequence variants. Genet Med. 2015;17:405-24"
 * extension[workflow-relatedArtifact].valueRelatedArtifact.url = "https://pubmed.ncbi.nlm.nih.gov/25741868/"
+// Kodierte Zusatznotiz zum Befund
+* extension[coded-note].url = "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-report-note"
+* extension[coded-note].valueAnnotation.text = "Die Variante wurde nach ACMG/AMP-Kriterien als pathogen (Klasse 5) eingestuft. Eine Keimbahnabklaerung ist nicht erforderlich."
+* extension[coded-note].valueAnnotation.time = "2022-04-12T10:30:00+02:00"
+* extension[coded-note].valueAnnotation.authorReference = Reference(mii-exa-test-data-practitioner-physician-1)
 * basedOn = Reference(mii-exa-test-data-patient-3-molgen-anforderung-1)
 * status = $diagnostic-report-status#final
 * category[Genetics] = $v2-0074#GE "Genetics"
@@ -33,6 +38,8 @@ Description: "DiagnosticReport: Molekulargenetischer Befundbericht mit BRAF-Muta
 * result[genotype] = Reference(mii-exa-test-data-patient-3-molgen-genotyp-1)
 * result[+] = Reference(mii-exa-test-data-patient-3-molgen-mutationslast-1)
 * result[+] = Reference(mii-exa-test-data-patient-3-molgen-msi-1)
+* media.comment = "IGV-Screenshot der BRAF-Zielregion mit der nachgewiesenen Variante"
+* media.link = Reference(mii-exa-test-data-patient-3-molgen-media-igv-1)
 * conclusion = "BRAF p.V600E Mutation liegt vor. Bitte Therapieoption mit einem BRAF-Inhibitor pruefen."
 * conclusionCode = $sct#10828004 "Positive (qualifier value)"
 

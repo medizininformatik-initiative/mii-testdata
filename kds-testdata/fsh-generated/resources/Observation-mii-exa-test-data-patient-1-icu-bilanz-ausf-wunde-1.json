@@ -60,6 +60,23 @@
       ]
     }
   ],
+  "referenceRange": [
+    {
+      "low": {
+        "value": 0,
+        "code": "mL",
+        "system": "http://unitsofmeasure.org",
+        "unit": "mL"
+      },
+      "high": {
+        "value": 150,
+        "code": "mL",
+        "system": "http://unitsofmeasure.org",
+        "unit": "mL"
+      },
+      "text": "unauffaellige Foerderung der Wunddrainage pro 24h"
+    }
+  ],
   "valueQuantity": {
     "unit": "ml",
     "value": 45,
@@ -86,5 +103,17 @@
         "display": "Measured (qualifier value)"
       }
     ]
+  },
+  "bodySite": {
+    "coding": [
+      {
+        "code": "59380008",
+        "system": "http://snomed.info/sct",
+        "display": "Anterior abdominal wall structure"
+      }
+    ]
+  },
+  "specimen": {
+    "reference": "Specimen/mii-exa-test-data-patient-1-icu-spec-wundsekret-1"
   }
 }

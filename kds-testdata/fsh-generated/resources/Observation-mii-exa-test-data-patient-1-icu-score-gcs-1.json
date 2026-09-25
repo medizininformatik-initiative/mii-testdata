@@ -135,6 +135,11 @@
       "reference": "Observation/mii-exa-test-data-patient-1-icu-pupille-befund-1"
     }
   ],
+  "derivedFrom": [
+    {
+      "reference": "Observation/mii-exa-test-data-patient-1-icu-score-rass-1"
+    }
+  ],
   "valueQuantity": {
     "unit": "{score}",
     "system": "http://unitsofmeasure.org",
@@ -149,5 +154,8 @@
     "reference": "Encounter/mii-exa-test-data-icu-encounter-1"
   },
   "effectiveDateTime": "2024-05-06T08:15:00+02:00",
-  "issued": "2024-05-06T10:15:00+02:00"
+  "issued": "2024-05-06T10:15:00+02:00",
+  "device": {
+    "reference": "Device/mii-exa-test-data-patient-1-icu-device-assessment-1"
+  }
 }

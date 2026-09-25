@@ -25,6 +25,12 @@ Description: "ICU Observation: MII PR ICU Bilanz Abnahme Haemofiltration Einzelm
 * device = Reference(mii-exa-test-data-patient-1-icu-device-pdms-1)
 * interpretation = $v3-ObservationInterpretation#N "Normal"
 * method = $sct#258104002 "Measured (qualifier value)"
+// Gefaesszugang des CVVH-Kreislaufs (Shaldon-Katheter V. jugularis interna re.)
+* bodySite = $sct#771195007 "Structure of right internal jugular vein"
+* specimen = Reference(mii-exa-test-data-patient-1-icu-spec-haemofiltrat-1)
+* referenceRange.low = 1000 'mL' "mL"
+* referenceRange.high = 3000 'mL' "mL"
+* referenceRange.text = "angestrebtes Ultrafiltratvolumen pro 24h unter CVVH"
 
 Instance: mii-exa-test-data-patient-1-icu-bilanz-drainage-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-drainage-generisch
@@ -46,6 +52,11 @@ Description: "ICU Observation: MII PR ICU Bilanz Ausfuhr Drainage Generisch"
 * device = Reference(mii-exa-test-data-patient-1-icu-device-pdms-1)
 * interpretation = $v3-ObservationInterpretation#N "Normal"
 * method = $sct#258104002 "Measured (qualifier value)"
+* bodySite = $sct#818983003 "Structure of abdomen"
+* specimen = Reference(mii-exa-test-data-patient-1-icu-spec-drainagesekret-1)
+* referenceRange.low = 0 'mL' "mL"
+* referenceRange.high = 200 'mL' "mL"
+* referenceRange.text = "unauffaellige Drainagefoerderung pro 24h"
 
 Instance: mii-exa-test-data-patient-1-icu-bilanz-ausf-fluess-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-fluessigkeit-gesamt
@@ -67,6 +78,11 @@ Description: "ICU Observation: MII PR ICU Bilanz Ausfuhr Fluessigkeit Gesamt"
 * device = Reference(mii-exa-test-data-patient-1-icu-device-pdms-1)
 * interpretation = $v3-ObservationInterpretation#N "Normal"
 * method = $sct#258104002 "Measured (qualifier value)"
+* bodySite = $sct#38266002 "Entire body as a whole"
+* specimen = Reference(mii-exa-test-data-patient-1-icu-spec-koerperfluessigkeit-1)
+* referenceRange.low = 1500 'mL' "mL"
+* referenceRange.high = 2500 'mL' "mL"
+* referenceRange.text = "Gesamtausfuhr Erwachsene pro 24h"
 
 Instance: mii-exa-test-data-patient-1-icu-bilanz-ausf-galle-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-gallenfluessigkeit
@@ -89,6 +105,10 @@ Description: "ICU Observation: MII PR ICU Bilanz Ausfuhr Gallenfluessigkeit"
 * interpretation = $v3-ObservationInterpretation#N "Normal"
 * method = $sct#258104002 "Measured (qualifier value)"
 * bodySite = $sct#28273000 "Bile duct structure (body structure)"
+* specimen = Reference(mii-exa-test-data-patient-1-icu-spec-galle-1)
+* referenceRange.low = 100 'mL' "mL"
+* referenceRange.high = 800 'mL' "mL"
+* referenceRange.text = "Gallefoerderung ueber die biliaere Drainage pro 24h"
 
 Instance: mii-exa-test-data-patient-1-icu-bilanz-ausf-gallengang-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-gallenfluessigkeit
@@ -133,6 +153,10 @@ Description: "ICU Observation: MII PR ICU Bilanz Ausfuhr Magensonde"
 * interpretation = $v3-ObservationInterpretation#N "Normal"
 * method = $sct#258104002 "Measured (qualifier value)"
 * bodySite = $sct#69695003 "Stomach structure (body structure)"
+* specimen = Reference(mii-exa-test-data-patient-1-icu-spec-magensaft-1)
+* referenceRange.low = 0 'mL' "mL"
+* referenceRange.high = 500 'mL' "mL"
+* referenceRange.text = "toleriertes Magenrestvolumen ueber die Sonde pro 24h"
 
 Instance: mii-exa-test-data-patient-1-icu-bilanz-ausf-opdrain-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-op-drainage
@@ -154,6 +178,11 @@ Description: "ICU Observation: MII PR ICU Bilanz Ausfuhr Opdrainage"
 * device = Reference(mii-exa-test-data-patient-1-icu-device-pdms-1)
 * interpretation = $v3-ObservationInterpretation#N "Normal"
 * method = $sct#258104002 "Measured (qualifier value)"
+* bodySite = $sct#51185008 "Structure of thorax"
+* specimen = Reference(mii-exa-test-data-patient-1-icu-spec-drainagesekret-1)
+* referenceRange.low = 0 'mL' "mL"
+* referenceRange.high = 200 'mL' "mL"
+* referenceRange.text = "unauffaellige Foerderung der OP-Drainage pro 24h"
 
 Instance: mii-exa-test-data-patient-1-icu-bilanz-ausf-pankreas-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-pankreasdrainage
@@ -176,6 +205,10 @@ Description: "ICU Observation: MII PR ICU Bilanz Ausfuhr Pankreasdrainage"
 * interpretation = $v3-ObservationInterpretation#N "Normal"
 * method = $sct#258104002 "Measured (qualifier value)"
 * bodySite = $sct#15776009 "Pancreatic structure (body structure)"
+* specimen = Reference(mii-exa-test-data-patient-1-icu-spec-pankreassekret-1)
+* referenceRange.low = 0 'mL' "mL"
+* referenceRange.high = 100 'mL' "mL"
+* referenceRange.text = "unauffaellige Foerderung der Pankreasdrainage pro 24h"
 
 Instance: mii-exa-test-data-patient-1-icu-bilanz-ausf-stuhl-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-stuhlgang
@@ -197,6 +230,10 @@ Description: "ICU Observation: MII PR ICU Bilanz Ausfuhr Stuhlgang"
 * interpretation = $v3-ObservationInterpretation#N "Normal"
 * method = $sct#258104002 "Measured (qualifier value)"
 * bodySite = $sct#71854001 "Colon structure (body structure)"
+* specimen = Reference(mii-exa-test-data-patient-1-icu-spec-stuhl-1)
+* referenceRange.low = 100 'mL' "mL"
+* referenceRange.high = 300 'mL' "mL"
+* referenceRange.text = "unauffaellige Stuhlmenge pro 24h"
 
 Instance: mii-exa-test-data-patient-1-icu-bilanz-ausf-urin-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-urin
@@ -218,6 +255,7 @@ Description: "ICU Observation: MII PR ICU Bilanz Ausfuhr Urin"
 * interpretation = $v3-ObservationInterpretation#N "Normal"
 * method = $sct#258104002 "Measured (qualifier value)"
 * bodySite = $sct#89837001 "Urinary bladder structure (body structure)"
+* specimen = Reference(mii-exa-test-data-patient-1-icu-spec-urin-1)
 * referenceRange.low = 800 'mL' "mL"
 * referenceRange.high = 2000 'mL' "mL"
 * referenceRange.text = "Urinausfuhr Erwachsene pro 24h"
@@ -243,6 +281,11 @@ Description: "ICU Observation: MII PR ICU Bilanz Ausfuhr Wunddrainage"
 * device = Reference(mii-exa-test-data-patient-1-icu-device-pdms-1)
 * interpretation = $v3-ObservationInterpretation#N "Normal"
 * method = $sct#258104002 "Measured (qualifier value)"
+* bodySite = $sct#59380008 "Anterior abdominal wall structure"
+* specimen = Reference(mii-exa-test-data-patient-1-icu-spec-wundsekret-1)
+* referenceRange.low = 0 'mL' "mL"
+* referenceRange.high = 150 'mL' "mL"
+* referenceRange.text = "unauffaellige Foerderung der Wunddrainage pro 24h"
 
 Instance: mii-exa-test-data-patient-1-icu-bilanz-blutverlust-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-blutverlust
@@ -264,6 +307,12 @@ Description: "ICU Observation: MII PR ICU Bilanz Blutverlust"
 * device = Reference(mii-exa-test-data-patient-1-icu-device-pdms-1)
 * interpretation = $v3-ObservationInterpretation#N "Normal"
 * method = $sct#258104002 "Measured (qualifier value)"
+// Blutiges Trachealsekret unter therapeutischer Antikoagulation bei VV-ECMO
+* bodySite = $sct#89187006 "Structure of airway"
+* specimen = Reference(mii-exa-test-data-patient-1-icu-spec-blut-1)
+* referenceRange.low = 0 'mL' "mL"
+* referenceRange.high = 200 'mL' "mL"
+* referenceRange.text = "tolerierter Blutverlust pro 24h unter Antikoagulation"
 
 Instance: mii-exa-test-data-patient-1-icu-bilanz-einf-enteral-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-einfuhr-enterale-fluessigkeit
@@ -285,6 +334,11 @@ Description: "ICU Observation: MII PR ICU Bilanz Einfuhr Enterale Fluessigkeit"
 * device = Reference(mii-exa-test-data-patient-1-icu-device-pdms-1)
 * interpretation = $v3-ObservationInterpretation#N "Normal"
 * method = $sct#258104002 "Measured (qualifier value)"
+* bodySite = $sct#69695003 "Stomach structure (body structure)"
+* specimen = Reference(mii-exa-test-data-patient-1-icu-spec-sondennahrung-1)
+* referenceRange.low = 1000 'mL' "mL"
+* referenceRange.high = 2000 'mL' "mL"
+* referenceRange.text = "Zielkorridor enterale Zufuhr pro 24h"
 
 Instance: mii-exa-test-data-patient-1-icu-bilanz-einf-fluess-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-einfuhr-fluessigkeit-gesamt
@@ -304,6 +358,11 @@ Description: "ICU Observation: SD MII ICU Bilanz Einfuhr Fluessigkeit Gesamt"
 * device = Reference(mii-exa-test-data-patient-1-icu-device-pdms-1)
 * interpretation = $v3-ObservationInterpretation#N "Normal"
 * method = $sct#258104002 "Measured (qualifier value)"
+* bodySite = $sct#38266002 "Entire body as a whole"
+* specimen = Reference(mii-exa-test-data-patient-1-icu-spec-koerperfluessigkeit-1)
+* referenceRange.low = 2000 'mL' "mL"
+* referenceRange.high = 3000 'mL' "mL"
+* referenceRange.text = "Zielkorridor Gesamteinfuhr Erwachsene pro 24h"
 
 Instance: mii-exa-test-data-patient-1-icu-bilanz-einf-oral-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-einfuhr-fluessigkeit-gesamt
@@ -344,6 +403,9 @@ Description: "ICU Observation: MII PR ICU Bilanz Gesamte Ausfuhr"
 * device = Reference(mii-exa-test-data-patient-1-icu-device-pdms-1)
 * interpretation = $v3-ObservationInterpretation#N "Normal"
 * method = $sct#258104002 "Measured (qualifier value)"
+* referenceRange.low = 1500 'mL' "mL"
+* referenceRange.high = 2500 'mL' "mL"
+* referenceRange.text = "Gesamtausfuhr Erwachsene pro 24h"
 
 Instance: mii-exa-test-data-patient-1-icu-bilanz-ges-einf-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-einfuhr-fluessigkeit-gesamt
@@ -384,6 +446,8 @@ Description: "ICU Observation: MII PR ICU Bilanz Gesamte Tages Bilanz"
 * device = Reference(mii-exa-test-data-patient-1-icu-device-pdms-1)
 * interpretation = $v3-ObservationInterpretation#N "Normal"
 * method = $sct#258104002 "Measured (qualifier value)"
+* bodySite = $sct#38266002 "Entire body as a whole"
+* specimen = Reference(mii-exa-test-data-patient-1-icu-spec-koerperfluessigkeit-1)
 * referenceRange.low = -500 'mL' "mL"
 * referenceRange.high = 500 'mL' "mL"
 * referenceRange.text = "ausgeglichene Tagesbilanz"
@@ -658,6 +722,10 @@ Description: "ICU Observation: MII PR ICU Arterieller Blutdruck"
 * component[meanBP].code.coding[sct] = $sct#6797001 "Mean blood pressure"
 * component[meanBP].code.coding[IEEE-11073] = $11073-10101#150019 "MDC_PRESS_BLD_NONINV_MEAN"
 * component[meanBP].valueQuantity = 93 'mm[Hg]' "millimeter Mercury column"
+// Zielkorridor des mittleren arteriellen Drucks unter Katecholamintherapie
+* referenceRange.low = 65 'mm[Hg]' "millimeter Mercury column"
+* referenceRange.high = 90 'mm[Hg]' "millimeter Mercury column"
+* referenceRange.text = "MAD-Zielkorridor unter Kreislaufunterstuetzung"
 
 Instance: mii-exa-test-data-patient-1-icu-muv-atemfreq-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-atemfrequenz
@@ -707,6 +775,7 @@ Description: "ICU Observation: MII SD ICU Herzfrequenz"
 * component[=].interpretation = $v3-ObservationInterpretation#N "Normal"
 * component[=].referenceRange.low = 60 '/min' "beats per minute"
 * component[=].referenceRange.high = 100 '/min' "beats per minute"
+* basedOn = Reference(mii-exa-test-data-icu-servicerequest-monitoring-1)
 
 Instance: mii-exa-test-data-patient-1-icu-muv-gewicht-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-koerpergewicht
@@ -723,6 +792,11 @@ Description: "ICU Observation: MII PR ICU Koerpergewicht"
 * valueQuantity = 80 'kg' "kilogram"
 * category[VSCat].coding.display = "Vital Signs"
 * category[sct] = $sct#248326004 "Body measure (observable entity)"
+// Komponente: geschaetztes Gewicht (Bettwaage nicht verfuegbar, Angehoerigenangabe)
+* component[+].code.coding = $loinc#8335-2 "Body weight Estimated"
+* component[=].code.text = "Geschaetztes Koerpergewicht (Angehoerigenangabe bei Aufnahme)"
+* component[=].valueQuantity = 78 'kg' "kilogram"
+* component[=].interpretation = $v3-ObservationInterpretation#N "Normal"
 
 Instance: mii-exa-test-data-patient-1-icu-muv-groesse-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-koerpergroesse

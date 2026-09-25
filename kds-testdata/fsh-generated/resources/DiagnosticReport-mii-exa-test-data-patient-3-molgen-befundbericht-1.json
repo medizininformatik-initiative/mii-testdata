@@ -53,6 +53,16 @@
         "url": "https://pubmed.ncbi.nlm.nih.gov/25741868/"
       },
       "url": "http://hl7.org/fhir/StructureDefinition/workflow-relatedArtifact"
+    },
+    {
+      "valueAnnotation": {
+        "text": "Die Variante wurde nach ACMG/AMP-Kriterien als pathogen (Klasse 5) eingestuft. Eine Keimbahnabklaerung ist nicht erforderlich.",
+        "time": "2022-04-12T10:30:00+02:00",
+        "authorReference": {
+          "reference": "Practitioner/mii-exa-test-data-practitioner-physician-1"
+        }
+      },
+      "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-report-note"
     }
   ],
   "basedOn": [
@@ -99,6 +109,14 @@
     },
     {
       "reference": "Observation/mii-exa-test-data-patient-3-molgen-msi-1"
+    }
+  ],
+  "media": [
+    {
+      "comment": "IGV-Screenshot der BRAF-Zielregion mit der nachgewiesenen Variante",
+      "link": {
+        "reference": "Media/mii-exa-test-data-patient-3-molgen-media-igv-1"
+      }
     }
   ],
   "conclusionCode": [

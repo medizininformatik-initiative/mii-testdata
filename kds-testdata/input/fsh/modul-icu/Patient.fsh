@@ -50,3 +50,24 @@ Description: "ICU Practitioner: Intensivmedizinerin (Dokumentation der Scores un
 * name.family = "Weber"
 * name.given = "Katharina"
 * name.prefix = "Dr. med."
+
+// Anordnung des kontinuierlichen Monitorings (Observation.basedOn der
+// Monitoring-und-Vitaldaten-Profile)
+Instance: mii-exa-test-data-icu-servicerequest-monitoring-1
+InstanceOf: ServiceRequest
+Usage: #example
+Description: "ICU ServiceRequest: Anordnung kontinuierliches Vitaldaten-Monitoring und taegliche Koerpermasse"
+* insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
+* identifier.system = "https://www.charite.de/fhir/sid/icu-servicerequest-id"
+* identifier.value = "icu-sr-monitoring-1"
+* status = #active
+* intent = #order
+* category = $sct#182777000 "Monitoring of patient"
+* code = $sct#304495004 "Monitoring of blood pressure, temperature, pulse rate and respiratory rate"
+* subject = Reference(mii-exa-test-data-icu-patient-1)
+* encounter = Reference(mii-exa-test-data-icu-encounter-1)
+* authoredOn = "2024-05-01T12:00:00+02:00"
+* requester = Reference(mii-exa-test-data-icu-practitioner-1)
+* occurrencePeriod.start = "2024-05-01T12:00:00+02:00"
+* occurrencePeriod.end = "2024-05-14T12:00:00+02:00"

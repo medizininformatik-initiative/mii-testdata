@@ -3,9 +3,7 @@
 // MS-Abdeckung ueber vier Instanzen: identifier, status, category, code,
 // subject, effective[x], issued, value[x], dataAbsentReason, interpretation,
 // method, device, referenceRange, hasMember, derivedFrom, component sowie
-// die Extension associatedSymptomOrCondition.
-// Nicht befuellt: specimen (fuer anamnestisch erhobene Symptome klinisch
-// nicht sinnvoll; probenbasierte Befunde liegen im Modul Labor).
+// die Extension associatedSymptomOrCondition sowie specimen.
 // ============================================================================
 
 // Observation 1: Symptom Kopfschmerz (kodiertes Symptom mit Begleitsymptom)
@@ -91,3 +89,24 @@ Description: "Symptom Observation: Schwindel erfragt, keine verwertbare Angabe (
 * issued = "2025-03-04T11:10:00+01:00"
 * dataAbsentReason = $data-absent-reason#asked-unknown "Asked But Unknown"
 * method = $sct#84100007 "History taking"
+
+// Observation 5: Haematurie - berichtetes Symptom, am Urin verifiziert
+// (deckt Observation.specimen ab)
+Instance: mii-exa-test-data-symptom-observation-5
+InstanceOf: https://www.medizininformatik-initiative.de/fhir/modul-symptom/StructureDefinition/finding-observation
+Usage: #example
+Description: "Symptom Observation: Haematurie, am Mittelstrahlurin bestaetigt (mit specimen)"
+* insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
+* identifier.system = "https://www.charite.de/fhir/sid/symptom-observation"
+* identifier.value = "SYMP-OBS-0005"
+* status = #final
+* category = $observation-category#exam "Exam"
+* code = $loinc#75325-1 "Symptom"
+* subject = Reference(mii-exa-test-data-symptom-patient-1)
+* effectiveDateTime = "2025-03-04"
+* issued = "2025-03-04T11:20:00+01:00"
+* valueCodeableConcept.coding = $sct#34436003 "Haematuria"
+* valueCodeableConcept.text = "Rotverfaerbter Urin, vom Patienten berichtet und im Mittelstrahlurin bestaetigt"
+* interpretation = $v3-ObservationInterpretation#A "Abnormal"
+* specimen = Reference(mii-exa-test-data-symptom-specimen-1)

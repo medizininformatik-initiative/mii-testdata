@@ -113,6 +113,59 @@
         ]
       },
       "exclude": true
+    },
+    {
+      "extension": [
+        {
+          "extension": [
+            {
+              "url": "code",
+              "valueCode": "any-of"
+            },
+            {
+              "url": "characteristic",
+              "valueId": "krit-alter"
+            },
+            {
+              "url": "characteristic",
+              "valueId": "krit-endokrin"
+            }
+          ],
+          "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-EvidenceVariable.characteristic.definitionByCombination"
+        }
+      ],
+      "description": "Weitere Einschlusskriterien: Mindestalter ODER gesicherte endokrine Erkrankung",
+      "definitionCodeableConcept": {
+        "coding": [
+          {
+            "code": "unknown",
+            "system": "http://terminology.hl7.org/CodeSystem/data-absent-reason",
+            "display": "Unknown"
+          }
+        ]
+      },
+      "exclude": false
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-EvidenceVariable.characteristic.definitionReference",
+          "valueReference": {
+            "reference": "Group/mii-exa-test-data-studien-group-1"
+          }
+        }
+      ],
+      "description": "Zugehoerigkeit zur definierten Eligibility-Population der Studie",
+      "definitionCodeableConcept": {
+        "coding": [
+          {
+            "code": "116154003",
+            "system": "http://snomed.info/sct",
+            "display": "Patient (person)"
+          }
+        ]
+      },
+      "exclude": false
     }
   ],
   "status": "active"

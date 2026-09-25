@@ -137,6 +137,23 @@
       ]
     }
   ],
+  "referenceRange": [
+    {
+      "low": {
+        "value": 65,
+        "code": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "unit": "millimeter Mercury column"
+      },
+      "high": {
+        "value": 90,
+        "code": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "unit": "millimeter Mercury column"
+      },
+      "text": "MAD-Zielkorridor unter Kreislaufunterstuetzung"
+    }
+  ],
   "status": "final",
   "subject": {
     "reference": "Patient/mii-exa-test-data-icu-patient-1"

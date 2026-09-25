@@ -27,6 +27,7 @@ Description: "Bundle: Bildgebung Testdaten Patient-1"
 * insert AddBundleEntry(mii-exa-test-data-behandlungsempfehlung, CarePlan)
 * insert AddBundleEntry(mii-exa-test-data-bildgebungsstudie, ImagingStudy)
 * insert AddBundleEntry(mii-exa-test-data-kontrastmittelgabe, MedicationAdministration)
+* insert AddBundleEntry(mii-exa-test-data-kontrastmittelgabe-2, MedicationAdministration)
 * insert AddBundleEntry(mii-exa-test-data-semistrukt-befundbericht, Composition)
 // Infrastructure
 * insert AddBundleEntry(mii-exa-test-data-organization-biobank-charite, Organization)

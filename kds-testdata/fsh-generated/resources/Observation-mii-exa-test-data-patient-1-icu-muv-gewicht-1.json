@@ -48,6 +48,37 @@
       }
     ]
   },
+  "component": [
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "8335-2",
+            "system": "http://loinc.org",
+            "display": "Body weight Estimated"
+          }
+        ],
+        "text": "Geschaetztes Koerpergewicht (Angehoerigenangabe bei Aufnahme)"
+      },
+      "interpretation": [
+        {
+          "coding": [
+            {
+              "code": "N",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+              "display": "Normal"
+            }
+          ]
+        }
+      ],
+      "valueQuantity": {
+        "system": "http://unitsofmeasure.org",
+        "value": 78,
+        "code": "kg",
+        "unit": "kilogram"
+      }
+    }
+  ],
   "valueQuantity": {
     "system": "http://unitsofmeasure.org",
     "unit": "kilogram",

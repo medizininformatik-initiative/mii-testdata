@@ -129,5 +129,8 @@
   },
   "effectiveDateTime": "2024-05-06T20:00:00+02:00",
   "valueInteger": 6,
-  "issued": "2024-05-06T22:00:00+02:00"
+  "issued": "2024-05-06T22:00:00+02:00",
+  "device": {
+    "reference": "Device/mii-exa-test-data-patient-1-icu-device-assessment-1"
+  }
 }

@@ -29,6 +29,17 @@ Description: "Procedure: Genomic Study Analysis BRAF Exon 15 mittels NGS"
 * extension[regions].extension[=].valueString = "BRAF: Exon 15 (Codon 582-612)"
 * extension[regions].extension[+].url = "studied"
 * extension[regions].extension[=].valueCodeableConcept = $HGNC#HGNC:1097 "BRAF"
+// Fokus der Analyse: die zugrunde liegende Krebserkrankung
+* extension[focus].url = "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-focus"
+* extension[focus].valueReference = Reference(mii-exa-test-data-molgen-diagnose-1)
+// Qualitaetsmetriken des Sequenzierlaufs
+* extension[metrics].url = "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-metrics"
+* extension[metrics].extension[+].url = "read-depth"
+* extension[metrics].extension[=].valueQuantity = 1200 $ucum#1 "x"
+* extension[metrics].extension[+].url = "sequencing-coverage"
+* extension[metrics].extension[=].valueQuantity = 99.4 $ucum#% "percent"
+* extension[metrics].extension[+].url = "metrics-description"
+* extension[metrics].extension[=].valueString = "Mittlere Lesetiefe 1200x, 99,4 % der Zielregion mit mindestens 100x abgedeckt"
 
 Instance: mii-exa-test-data-patient-3-molgen-genomic-study-1
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/mii-pr-molgen-genomic-study

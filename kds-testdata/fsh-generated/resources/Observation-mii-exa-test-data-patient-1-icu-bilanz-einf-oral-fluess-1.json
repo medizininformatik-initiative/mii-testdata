@@ -60,6 +60,23 @@
       ]
     }
   ],
+  "referenceRange": [
+    {
+      "low": {
+        "value": 100,
+        "code": "mL",
+        "system": "http://unitsofmeasure.org",
+        "unit": "mL"
+      },
+      "high": {
+        "value": 300,
+        "code": "mL",
+        "system": "http://unitsofmeasure.org",
+        "unit": "mL"
+      },
+      "text": "Zielkorridor orale Trinkmenge je Portion"
+    }
+  ],
   "valueQuantity": {
     "unit": "ml",
     "value": 150,
@@ -86,5 +103,17 @@
         "display": "Measured (qualifier value)"
       }
     ]
+  },
+  "bodySite": {
+    "coding": [
+      {
+        "code": "123851003",
+        "system": "http://snomed.info/sct",
+        "display": "Structure of mouth region"
+      }
+    ]
+  },
+  "specimen": {
+    "reference": "Specimen/mii-exa-test-data-patient-1-icu-spec-trinkwasser-1"
   }
 }

@@ -56,6 +56,23 @@
       ]
     }
   ],
+  "referenceRange": [
+    {
+      "low": {
+        "value": 1500,
+        "code": "mL",
+        "system": "http://unitsofmeasure.org",
+        "unit": "mL"
+      },
+      "high": {
+        "value": 2500,
+        "code": "mL",
+        "system": "http://unitsofmeasure.org",
+        "unit": "mL"
+      },
+      "text": "Gesamtausfuhr Erwachsene pro 24h"
+    }
+  ],
   "valueQuantity": {
     "unit": "ml",
     "value": 2400,

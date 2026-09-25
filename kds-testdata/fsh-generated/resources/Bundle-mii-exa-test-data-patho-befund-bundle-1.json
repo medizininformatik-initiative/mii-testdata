@@ -58,6 +58,12 @@
         },
         "extension": [
           {
+            "url": "http://hl7.eu/fhir/extensions/StructureDefinition/composition-diagnosticReportReference",
+            "valueReference": {
+              "reference": "DiagnosticReport/mii-exa-test-data-patho-report-1"
+            }
+          },
+          {
             "url": "http://hl7.org/fhir/StructureDefinition/composition-clinicaldocument-versionNumber",
             "valueString": "1"
           }

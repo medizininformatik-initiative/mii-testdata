@@ -34,6 +34,11 @@
       ]
     }
   ],
+  "derivedFrom": [
+    {
+      "reference": "Media/mii-exa-test-data-patient-3-molgen-media-ihc-1"
+    }
+  ],
   "component": [
     {
       "valueCodeableConcept": {

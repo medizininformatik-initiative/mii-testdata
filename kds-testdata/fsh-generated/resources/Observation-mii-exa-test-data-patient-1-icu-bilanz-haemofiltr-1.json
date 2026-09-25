@@ -56,6 +56,23 @@
       ]
     }
   ],
+  "referenceRange": [
+    {
+      "low": {
+        "value": 1000,
+        "code": "mL",
+        "system": "http://unitsofmeasure.org",
+        "unit": "mL"
+      },
+      "high": {
+        "value": 3000,
+        "code": "mL",
+        "system": "http://unitsofmeasure.org",
+        "unit": "mL"
+      },
+      "text": "angestrebtes Ultrafiltratvolumen pro 24h unter CVVH"
+    }
+  ],
   "valueQuantity": {
     "unit": "ml",
     "value": 120,
@@ -82,5 +99,17 @@
         "display": "Measured (qualifier value)"
       }
     ]
+  },
+  "bodySite": {
+    "coding": [
+      {
+        "code": "771195007",
+        "system": "http://snomed.info/sct",
+        "display": "Structure of right internal jugular vein"
+      }
+    ]
+  },
+  "specimen": {
+    "reference": "Specimen/mii-exa-test-data-patient-1-icu-spec-haemofiltrat-1"
   }
 }

@@ -173,6 +173,56 @@ Description: "Hämatoxylin-Eosin gefärbter Schnitt der Prostatastanze 01"
   * additiveCodeableConcept = $sct#430862008 "Microscope slide mounting medium (substance)"
 
 // =============================================================================
+// KONTROLLSCHNITT p63-Immunhistochemie (Fremdgewebe)
+// Deckt Specimen.extension[focus] ab: das Material stammt nicht vom Patienten
+// des Falls (subject), sondern von einem Spender von Kontrollmaterial.
+// Die hl7.eu-Extension wird per expliziter URL gesetzt, weil das
+// hl7.eu-Laboratory-Package nicht Teil des BOM-Abhaengigkeitsgraphen ist.
+// =============================================================================
+
+Instance: mii-exa-test-data-patho-relatedperson-kontrollspender-1
+InstanceOf: RelatedPerson
+Usage: #example
+Title: "Spender des Kontrollgewebes"
+Description: "RelatedPerson: anonymer Spender des Tonsillengewebes, das als externe Positivkontrolle der p63-Immunhistochemie dient"
+* insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
+* active = true
+* patient = Reference(mii-exa-test-data-patho-patient-1)
+* relationship = $sct#116153009 "Donor of control material"
+
+Instance: mii-exa-test-data-patho-specimen-p63-kontrolle
+InstanceOf: $mii-patho-specimen
+Usage: #example
+Title: "Kontrollschnitt p63-Immunhistochemie"
+Description: "Externe Positivkontrolle (Tonsillengewebe eines Kontrollspenders) fuer die p63-Immunhistochemie des Falls E_24_001"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore"
+* insert TestDataLabel
+* meta.source = "https://www.charite.de/fhir/kds-testdata"
+* extension[+].url = "http://hl7.eu/fhir/laboratory/StructureDefinition/specimen-focus"
+* extension[=].valueReference = Reference(mii-exa-test-data-patho-relatedperson-kontrollspender-1)
+* identifier
+  * system = "https://www.charite.de/fhir/sid/patho/befundbericht"
+  * value = "E_24_001_KTR_P63"
+* accessionIdentifier
+  * system = "https://www.charite.de/fhir/sid/patho/befundbericht"
+  * value = "E_24_001"
+* status = #available
+* type = $sct#430856003 "Tissue section (specimen)"
+* subject = Reference(mii-exa-test-data-patho-patient-1)
+* note.text = "Tonsillengewebe eines Kontrollspenders, mitgefuehrt als Positivkontrolle der p63-Faerbung."
+* collection
+  * collectedDateTime = "2024-01-18T08:00:00+01:00"
+  * method = $sct#13283003 "Tissue processing technique (procedure)"
+* processing[+]
+  * description = "p63-Immunhistochemie (Positivkontrolle)"
+  * procedure = $sct#127790008 "Staining method"
+  * timeDateTime = "2024-01-18T09:00:00+01:00"
+* container
+  * type = $sct#433466003 "Microscope slide (physical object)"
+  * additiveCodeableConcept = $sct#430862008 "Microscope slide mounting medium (substance)"
+
+// =============================================================================
 // STANZE 03 - Rechts lateral apikal (BENIGNE)
 // =============================================================================
 

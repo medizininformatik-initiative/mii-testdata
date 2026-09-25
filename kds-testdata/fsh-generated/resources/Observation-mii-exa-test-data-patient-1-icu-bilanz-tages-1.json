@@ -99,5 +99,17 @@
         "display": "Measured (qualifier value)"
       }
     ]
+  },
+  "bodySite": {
+    "coding": [
+      {
+        "code": "38266002",
+        "system": "http://snomed.info/sct",
+        "display": "Entire body as a whole"
+      }
+    ]
+  },
+  "specimen": {
+    "reference": "Specimen/mii-exa-test-data-patient-1-icu-spec-koerperfluessigkeit-1"
   }
 }

@@ -79,6 +79,16 @@
       ]
     }
   ],
+  "hasMember": [
+    {
+      "reference": "Observation/mii-exa-test-data-patient-1-icu-score-vas-1"
+    }
+  ],
+  "derivedFrom": [
+    {
+      "reference": "Observation/mii-exa-test-data-patient-1-icu-score-rass-1"
+    }
+  ],
   "status": "final",
   "subject": {
     "reference": "Patient/mii-exa-test-data-icu-patient-1"
@@ -88,5 +98,8 @@
   },
   "effectiveDateTime": "2024-05-06T10:00:00+02:00",
   "valueInteger": 4,
-  "issued": "2024-05-06T12:00:00+02:00"
+  "issued": "2024-05-06T12:00:00+02:00",
+  "device": {
+    "reference": "Device/mii-exa-test-data-patient-1-icu-device-assessment-1"
+  }
 }

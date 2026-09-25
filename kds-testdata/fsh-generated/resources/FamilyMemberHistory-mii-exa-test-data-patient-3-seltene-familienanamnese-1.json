@@ -16,7 +16,7 @@
   },
   "extension": [
     {
-      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/von-seltene-betroffen",
+      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-ex-seltene-von-se-betroffen",
       "valueCodeableConcept": {
         "coding": [
           {

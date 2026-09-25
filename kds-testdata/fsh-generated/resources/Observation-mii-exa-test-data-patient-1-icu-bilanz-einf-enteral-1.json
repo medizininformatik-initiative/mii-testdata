@@ -56,6 +56,23 @@
       ]
     }
   ],
+  "referenceRange": [
+    {
+      "low": {
+        "value": 1000,
+        "code": "mL",
+        "system": "http://unitsofmeasure.org",
+        "unit": "mL"
+      },
+      "high": {
+        "value": 2000,
+        "code": "mL",
+        "system": "http://unitsofmeasure.org",
+        "unit": "mL"
+      },
+      "text": "Zielkorridor enterale Zufuhr pro 24h"
+    }
+  ],
   "valueQuantity": {
     "unit": "ml",
     "value": 1500,
@@ -82,5 +99,17 @@
         "display": "Measured (qualifier value)"
       }
     ]
+  },
+  "bodySite": {
+    "coding": [
+      {
+        "code": "69695003",
+        "system": "http://snomed.info/sct",
+        "display": "Stomach structure (body structure)"
+      }
+    ]
+  },
+  "specimen": {
+    "reference": "Specimen/mii-exa-test-data-patient-1-icu-spec-sondennahrung-1"
   }
 }
