@@ -3,7 +3,7 @@
 # │  used properties are included. For a list of all supported properties and their functions,     │
 # │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-id: mii-kds-testdata
+id: de.medizininformatikinitiative.kerndatensatz.testdata
 canonical: https://www.medizininformatik-initiative.de/fhir/testdata
 name: MIIKDSTestData
 title: MII KDS Test Data
@@ -106,6 +106,7 @@ parameters:
 menu:
   Home: index.html
   Nutzung: nutzung.html
+  Testabdeckung: testabdeckung.html
   Artifacts: artifacts.html
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮

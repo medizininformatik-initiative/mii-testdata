@@ -22,3 +22,4 @@ _genonce.bat
 _updatePublisher.bat
 _updatePublisher.sh
 .claude/worktrees/
+dist/

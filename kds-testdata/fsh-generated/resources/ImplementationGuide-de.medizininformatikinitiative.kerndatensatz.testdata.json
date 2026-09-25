@@ -1,7 +1,7 @@
 {
   "resourceType": "ImplementationGuide",
-  "id": "mii-kds-testdata",
-  "url": "https://www.medizininformatik-initiative.de/fhir/testdata/ImplementationGuide/mii-kds-testdata",
+  "id": "de.medizininformatikinitiative.kerndatensatz.testdata",
+  "url": "https://www.medizininformatik-initiative.de/fhir/testdata/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.testdata",
   "version": "2027.0.0-ballot",
   "name": "MIIKDSTestData",
   "title": "MII KDS Test Data",
@@ -30,7 +30,7 @@
       ]
     }
   ],
-  "packageId": "mii-kds-testdata",
+  "packageId": "de.medizininformatikinitiative.kerndatensatz.testdata",
   "license": "CC0-1.0",
   "fhirVersion": [
     "4.0.1"

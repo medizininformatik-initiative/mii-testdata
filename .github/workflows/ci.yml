@@ -375,6 +375,17 @@ jobs:
       id: prep-version
       run: echo "version=${GITHUB_REF#refs/tags/}" >> $GITHUB_OUTPUT
 
+    # FHIR-NPM-Paket als drittes Asset: NDJSON ist das Konsumformat, das
+    # fsh-generated-ZIP der Rohstand — das Paket ist die Werkzeugform
+    # (`-ig` beim Validator, Aufloesung ueber den Package-Cache).
+    # Bewusst hier gebaut und nicht aus ig-publish uebernommen: dort landet es
+    # nur auf gh-pages und wird bei jedem Build ueberschrieben, waere also nicht
+    # an den getaggten Stand gebunden.
+    - name: Build FHIR package
+      run: |
+        python3 scripts/build-fhir-package.py \
+          --version "${{ steps.prep-version.outputs.version }}" --out artifacts
+
     - name: Release
       uses: softprops/action-gh-release@v1
       with:
@@ -384,4 +395,5 @@ jobs:
         generate_release_notes: true
         files: |
           artifacts/*.zip
+          artifacts/*.tgz
         fail_on_unmatched_files: true
