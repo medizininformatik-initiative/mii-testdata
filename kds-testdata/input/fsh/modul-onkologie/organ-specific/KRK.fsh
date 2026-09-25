@@ -24,7 +24,7 @@ Description: "Onkologie Test KRK Operation - Anteriore Resektion"
 * bodySite.coding[snomed-ct] = $SCT#34402009 "Rectum structure (body structure)"
 * bodySite.coding[snomed-ct].version = "http://snomed.info/sct/900000000000207008/version/20240201"
 * code.coding[ops].extension[Seitenlokalisation].valueCoding = $icd-seitenlokalisation#T "trifft nicht zu"
-* complication[compl_obds].coding = $mii-cs-onko-operation-komplikation#N "Nein"
+* complication[compl_obds].coding = $mii-cs-onko-operation-komplikation#N "nein"
 * complication[compl_icd10].coding = $ICD10GM|2021#T81.0 "Blutung und Hämatom als Komplikation eines Eingriffes, anderenorts nicht klassifiziert"
 * encounter = Reference(mii-exa-test-data-onko-encounter-1)
 * extension[Dokumentationsdatum].valueDateTime = "2021-10-01"

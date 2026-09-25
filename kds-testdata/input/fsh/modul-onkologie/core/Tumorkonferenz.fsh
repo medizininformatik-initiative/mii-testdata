@@ -189,7 +189,7 @@ Description: "Onkologie Test Molekulares Tumorboard - mit erweiterter Therapieem
 * category.text = "Molekulares Tumorboard"
 * created = "2022-03-10"
 * addresses = Reference(mii-exa-test-data-onko-diagnose-1)
-* activity[obds][+].detail.code = $mii-cs-onko-therapie-typ#ZS "Zielgerichtete Substanzen"
+* activity[obds][+].detail.code = $mii-cs-onko-therapie-typ#ZS "zielgerichtete Substanzen"
 * activity[obds][=].detail.status = #scheduled
 * activity[extended][+].reference = Reference(mii-exa-test-data-onko-therapieempfehlung-parp-1)
 * activity[extended][=].progress.text = "BRCA1 mutation detected - PARP inhibitor recommended"
@@ -203,7 +203,7 @@ Description: "Onkologie Test Therapieempfehlung - PARP-Inhibitor Erhaltung"
 * meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #active
 * intent = #proposal
-* code = $mii-cs-onko-therapie-typ#ZS "Zielgerichtete Substanzen"
+* code = $mii-cs-onko-therapie-typ#ZS "zielgerichtete Substanzen"
 * code.text = "PARP-Inhibitor Erhaltungstherapie"
 * subject = Reference(mii-exa-test-data-onko-patient-1)
 * authoredOn = "2022-03-10"

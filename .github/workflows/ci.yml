@@ -81,10 +81,15 @@ jobs:
     # Statische Gates: kosten Sekunden und brauchen kein Docker.
     # check-references faengt absolute Referenzen in Kanonikalraeume — genau
     # den Fall, an dem HAPI scheiterte und Blaze nichts merkte.
-    - name: Static checks (codings, references)
+    - name: Static checks (codings, references, displays)
       run: |
         python3 scripts/check-coding-quality.py kds-testdata/fsh-generated/resources
         python3 scripts/check-references.py kds-testdata/fsh-generated/resources
+        # Die Display-Pruefung braucht den Paket-Cache, den der Schritt davor
+        # schon nach ~/.fhir gelegt hat. Sie laeuft in Sekunden, weil sie ueber
+        # das .index.json jedes Pakets nur dessen CodeSystems oeffnet.
+        python3 scripts/check-displays.py kds-testdata/fsh-generated/resources \
+          --lang "$(yq eval '.parameters["i18n-default-lang"] // "en"' kds-testdata/sushi-config.yaml)"
 
     - name: Generate timestamp
       id: timestamp

@@ -18,7 +18,7 @@ Description: "Onkologie Test Diagnose - Ovarialkarzinom"
 * subject = Reference(mii-exa-test-data-onko-patient-1)
 * encounter = Reference(mii-exa-test-data-onko-encounter-1)
 * recordedDate = "2021-06-15"
-* bodySite.coding[primaertumorSeitenlokalisation] = $mii-cs-onko-seitenlokalisation#L "Links"
+* bodySite.coding[primaertumorSeitenlokalisation] = $mii-cs-onko-seitenlokalisation#L "links"
 * bodySite.coding[icd-o-3] = $ICDO3#C56.9 "Ovar"
 * bodySite.coding[snomed-ct] = $SCT#15497006 "Ovarian structure (body structure)"
 * bodySite.coding[snomed-ct].version = "http://snomed.info/sct/900000000000207008/version/20240201"

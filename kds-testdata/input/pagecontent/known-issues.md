@@ -40,13 +40,36 @@ normally — and among them are the ones that belong to the test data.
 
 ### What is *not* suppressed
 
-Findings that belong to the data stay visible and get fixed:
+Findings that belong to the data stay visible — and these have been fixed rather than
+hidden:
 
-- **Display names** that do not match the code system (`Assessment` instead of `Survey`,
-  `Deutschland` instead of `Germany`, English labels where the MII code system defines
-  German ones)
-- **Questionnaire answer codes** outside the answer value set bound by the questionnaire
-- **Mime types** and LOINC answer codes that cannot be resolved
+- **Display names** that did not match the code system. The cause turned out to be
+  language, not carelessness: the validator accepts a display in the language of its
+  *context* — `Resource.language`, or this IG's default (`en`) where the resource
+  carries none. That is why the same run demanded the *German* designations for the
+  PHQ-15 answers (their QuestionnaireResponse is `language: de`) and the *English* ones
+  for the document status (no `language` at all). `scripts/check-displays.py` models
+  exactly that rule and now runs as a build gate, in seconds.
+- **Questionnaire answer codes** rejected as outside the bound answer value set. These
+  were the same defect seen from the other side — the terminology error on the display
+  cascaded into the option check — and disappeared with the display fix.
+- **Mime types** and LOINC answer codes that cannot be resolved.
+
+#### One error that stays, and is not suppressed either
+
+`mii-exa-test-data-patient-1-icu-score-wbf-1` reports a wrong display for
+`observation-category#survey` and will keep reporting it.
+`mii-pr-icu-score-wong-baker-faces-schmerzskala` pins
+`Observation.category.coding.display` to the `patternString` `"Assessment"`, while the
+code it binds is called `"Survey"` in HL7 terminology. Writing `Survey` violates the
+pattern and SUSHI refuses to build; writing `Assessment` produces the terminology error.
+**No conformant instance exists** — which is how the defect was found: the correct fix
+broke the build.
+
+It would be easy to silence with a rule. It is deliberately left visible: a suppression
+on `Display_Name…@Observation.category.coding.display` would also hide every future,
+genuine display error on that path, and one named error is worth more than a quiet rule.
+Filed as ballot finding 8.
 
 Nor are the structural contradictions suppressed that make coverage impossible rather than
 noisy — `dataAbsentReason` marked Must-Support next to a required `value[x]`, elements at

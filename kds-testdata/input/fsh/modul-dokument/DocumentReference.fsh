@@ -25,7 +25,7 @@ Description: "DocumentReference: Entlassbrief Innere Medizin - alle MS-Elemente"
 * meta.source = "https://www.charite.de/fhir/kds-testdata"
 // NLP-Verarbeitungsstatus: Originaldokument, noch nicht NLP-vorverarbeitet
 * extension[nlp-processing-status].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-dokument/StructureDefinition/mii-ex-dokument-nlp-processing-status"
-* extension[nlp-processing-status].valueCodeableConcept.coding = $nlp-status-cs#unprocessed "Original"
+* extension[nlp-processing-status].valueCodeableConcept.coding = $nlp-status-cs#unprocessed "Original document"
 // Identifiers
 * masterIdentifier.system = "urn:ietf:rfc:3986"
 * masterIdentifier.value = "urn:oid:1.2.840.113556.1.8000.2554.58783.21864.3474.19410.44358.58254.41281.99901"
@@ -77,7 +77,7 @@ Description: "DocumentReference: Befundbericht Radiologie (URL-Verweis) - alle M
 * meta.source = "https://www.charite.de/fhir/kds-testdata"
 // NLP-Verarbeitungsstatus: Befundtext wurde annotiert
 * extension[nlp-processing-status].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-dokument/StructureDefinition/mii-ex-dokument-nlp-processing-status"
-* extension[nlp-processing-status].valueCodeableConcept.coding = $nlp-status-cs#annotated "Annotiertes Dokument"
+* extension[nlp-processing-status].valueCodeableConcept.coding = $nlp-status-cs#annotated "Annotated document"
 // Identifiers
 * masterIdentifier.system = "urn:ietf:rfc:3986"
 * masterIdentifier.value = "urn:oid:1.2.840.113556.1.8000.2554.58783.21864.3474.19410.44358.58254.41281.99902"

@@ -202,7 +202,7 @@
               {
                 "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-seitenlokalisation",
                 "code": "L",
-                "display": "Links"
+                "display": "links"
               },
               {
                 "system": "http://terminology.hl7.org/CodeSystem/icd-o-3",
@@ -1020,7 +1020,7 @@
             {
               "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-seitenlokalisation",
               "code": "L",
-              "display": "Links"
+              "display": "links"
             },
             {
               "system": "http://terminology.hl7.org/CodeSystem/icd-o-3",
@@ -4376,7 +4376,7 @@
               {
                 "code": "N",
                 "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-operation-komplikation",
-                "display": "Nein"
+                "display": "nein"
               }
             ]
           },
@@ -5745,7 +5745,7 @@
                   {
                     "code": "ZS",
                     "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-therapie-typ",
-                    "display": "Zielgerichtete Substanzen"
+                    "display": "zielgerichtete Substanzen"
                   }
                 ]
               },
@@ -6248,7 +6248,7 @@
             {
               "code": "ZS",
               "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-therapie-typ",
-              "display": "Zielgerichtete Substanzen"
+              "display": "zielgerichtete Substanzen"
             }
           ],
           "text": "PARP-Inhibitor Erhaltungstherapie"
@@ -8222,7 +8222,7 @@
               {
                 "code": "N",
                 "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-operation-komplikation",
-                "display": "Nein"
+                "display": "nein"
               }
             ]
           },
@@ -8385,7 +8385,7 @@
               {
                 "code": "N",
                 "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-operation-komplikation",
-                "display": "Nein"
+                "display": "nein"
               }
             ]
           },
@@ -8924,7 +8924,7 @@
               {
                 "code": "N",
                 "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-operation-komplikation",
-                "display": "Nein"
+                "display": "nein"
               }
             ]
           },
@@ -9538,7 +9538,7 @@
               {
                 "code": "N",
                 "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-operation-komplikation",
-                "display": "Nein"
+                "display": "nein"
               }
             ]
           },
@@ -10317,7 +10317,7 @@
               {
                 "code": "N",
                 "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-operation-komplikation",
-                "display": "Nein"
+                "display": "nein"
               }
             ]
           },

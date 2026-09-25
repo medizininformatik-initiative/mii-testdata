@@ -431,7 +431,7 @@
                 "valueCoding": {
                   "code": "bothered-a-little",
                   "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-phq-15-answers",
-                  "display": "Bothered a little"
+                  "display": "Wenig beeinträchtigt"
                 }
               }
             ],
@@ -443,7 +443,7 @@
                 "valueCoding": {
                   "code": "bothered-a-lot",
                   "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-phq-15-answers",
-                  "display": "Bothered a lot"
+                  "display": "Stark beeinträchtigt"
                 }
               }
             ],
@@ -455,7 +455,7 @@
                 "valueCoding": {
                   "code": "bothered-a-little",
                   "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-phq-15-answers",
-                  "display": "Bothered a little"
+                  "display": "Wenig beeinträchtigt"
                 }
               }
             ],
@@ -467,7 +467,7 @@
                 "valueCoding": {
                   "code": "not-bothered",
                   "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-phq-15-answers",
-                  "display": "Not bothered at all"
+                  "display": "Nicht beeinträchtigt"
                 }
               }
             ],
@@ -479,7 +479,7 @@
                 "valueCoding": {
                   "code": "bothered-a-little",
                   "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-phq-15-answers",
-                  "display": "Bothered a little"
+                  "display": "Wenig beeinträchtigt"
                 }
               }
             ],
@@ -491,7 +491,7 @@
                 "valueCoding": {
                   "code": "not-bothered",
                   "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-phq-15-answers",
-                  "display": "Not bothered at all"
+                  "display": "Nicht beeinträchtigt"
                 }
               }
             ],
@@ -503,7 +503,7 @@
                 "valueCoding": {
                   "code": "bothered-a-little",
                   "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-phq-15-answers",
-                  "display": "Bothered a little"
+                  "display": "Wenig beeinträchtigt"
                 }
               }
             ],
@@ -515,7 +515,7 @@
                 "valueCoding": {
                   "code": "not-bothered",
                   "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-phq-15-answers",
-                  "display": "Not bothered at all"
+                  "display": "Nicht beeinträchtigt"
                 }
               }
             ],
@@ -527,7 +527,7 @@
                 "valueCoding": {
                   "code": "bothered-a-little",
                   "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-phq-15-answers",
-                  "display": "Bothered a little"
+                  "display": "Wenig beeinträchtigt"
                 }
               }
             ],
@@ -539,7 +539,7 @@
                 "valueCoding": {
                   "code": "not-bothered",
                   "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-phq-15-answers",
-                  "display": "Not bothered at all"
+                  "display": "Nicht beeinträchtigt"
                 }
               }
             ],
@@ -551,7 +551,7 @@
                 "valueCoding": {
                   "code": "not-bothered",
                   "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-phq-15-answers",
-                  "display": "Not bothered at all"
+                  "display": "Nicht beeinträchtigt"
                 }
               }
             ],
@@ -563,7 +563,7 @@
                 "valueCoding": {
                   "code": "bothered-a-little",
                   "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-phq-15-answers",
-                  "display": "Bothered a little"
+                  "display": "Wenig beeinträchtigt"
                 }
               }
             ],
@@ -575,7 +575,7 @@
                 "valueCoding": {
                   "code": "bothered-a-little",
                   "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-phq-15-answers",
-                  "display": "Bothered a little"
+                  "display": "Wenig beeinträchtigt"
                 }
               }
             ],
@@ -587,7 +587,7 @@
                 "valueCoding": {
                   "code": "bothered-a-little",
                   "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-phq-15-answers",
-                  "display": "Bothered a little"
+                  "display": "Wenig beeinträchtigt"
                 }
               }
             ],
@@ -599,7 +599,7 @@
                 "valueCoding": {
                   "code": "bothered-a-lot",
                   "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-phq-15-answers",
-                  "display": "Bothered a lot"
+                  "display": "Stark beeinträchtigt"
                 }
               }
             ],
@@ -652,7 +652,7 @@
                 "valueCoding": {
                   "code": "whodas12-answer-1",
                   "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-whodas-12",
-                  "display": "Mild"
+                  "display": "geringe"
                 }
               }
             ],
@@ -664,7 +664,7 @@
                 "valueCoding": {
                   "code": "whodas12-answer-1",
                   "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-whodas-12",
-                  "display": "Mild"
+                  "display": "geringe"
                 }
               }
             ],
@@ -676,7 +676,7 @@
                 "valueCoding": {
                   "code": "whodas12-answer-0",
                   "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-whodas-12",
-                  "display": "None"
+                  "display": "keine"
                 }
               }
             ],
@@ -688,7 +688,7 @@
                 "valueCoding": {
                   "code": "whodas12-answer-2",
                   "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-whodas-12",
-                  "display": "Moderate"
+                  "display": "mäßige"
                 }
               }
             ],
@@ -700,7 +700,7 @@
                 "valueCoding": {
                   "code": "whodas12-answer-2",
                   "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-whodas-12",
-                  "display": "Moderate"
+                  "display": "mäßige"
                 }
               }
             ],
@@ -712,7 +712,7 @@
                 "valueCoding": {
                   "code": "whodas12-answer-1",
                   "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-whodas-12",
-                  "display": "Mild"
+                  "display": "geringe"
                 }
               }
             ],
@@ -724,7 +724,7 @@
                 "valueCoding": {
                   "code": "whodas12-answer-1",
                   "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-whodas-12",
-                  "display": "Mild"
+                  "display": "geringe"
                 }
               }
             ],
@@ -736,7 +736,7 @@
                 "valueCoding": {
                   "code": "whodas12-answer-0",
                   "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-whodas-12",
-                  "display": "None"
+                  "display": "keine"
                 }
               }
             ],
@@ -748,7 +748,7 @@
                 "valueCoding": {
                   "code": "whodas12-answer-0",
                   "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-whodas-12",
-                  "display": "None"
+                  "display": "keine"
                 }
               }
             ],
@@ -760,7 +760,7 @@
                 "valueCoding": {
                   "code": "whodas12-answer-1",
                   "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-whodas-12",
-                  "display": "Mild"
+                  "display": "geringe"
                 }
               }
             ],
@@ -772,7 +772,7 @@
                 "valueCoding": {
                   "code": "whodas12-answer-1",
                   "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-whodas-12",
-                  "display": "Mild"
+                  "display": "geringe"
                 }
               }
             ],
@@ -784,7 +784,7 @@
                 "valueCoding": {
                   "code": "whodas12-answer-2",
                   "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-whodas-12",
-                  "display": "Moderate"
+                  "display": "mäßige"
                 }
               }
             ],

@@ -20,7 +20,7 @@ Description: "Onkologie Test Operation - Debulking Ovarialkarzinom"
 * extension[Intention].valueCodeableConcept = $mii-cs-onko-intention#K "kurativ"
 * extension[Urgency].valueCodeableConcept = $mii-cs-onko-operation-urgency#E "Elektiveingriff"
 * outcome = $mii-cs-onko-residualstatus#R0 "Kein Residualtumor"
-* complication[compl_obds].coding = $mii-cs-onko-operation-komplikation#N "Nein"
+* complication[compl_obds].coding = $mii-cs-onko-operation-komplikation#N "nein"
 * complication[compl_icd10].coding = $ICD10GM|2021#T81.0 "Blutung und Hämatom als Komplikation eines Eingriffes, anderenorts nicht klassifiziert"
 * reasonReference = Reference(mii-exa-test-data-onko-diagnose-1)
 * basedOn = Reference(mii-exa-test-data-onko-tumorkonferenz-1)

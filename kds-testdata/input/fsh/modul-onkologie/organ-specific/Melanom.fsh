@@ -177,7 +177,7 @@ Description: "Onkologie Test Melanom Exzision - Oberarm"
 * extension[Intention].valueCodeableConcept = $mii-cs-onko-intention#K "kurativ"
 * extension[Intention].valueCodeableConcept.text = "kurativ"
 * basedOn[tumorkonferenz] = Reference(mii-exa-test-data-onko-tumorkonferenz-1)
-* complication[compl_obds].coding = $mii-cs-onko-operation-komplikation#N "Nein"
+* complication[compl_obds].coding = $mii-cs-onko-operation-komplikation#N "nein"
 * complication[compl_icd10].coding = $ICD10GM|2021#T81.0 "Blutung und Hämatom als Komplikation eines Eingriffes, anderenorts nicht klassifiziert"
 * encounter = Reference(mii-exa-test-data-onko-encounter-1)
 * extension[Dokumentationsdatum].valueDateTime = "2021-07-06"

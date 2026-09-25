@@ -123,49 +123,49 @@ Description: "PRO QuestionnaireResponse: PHQ-15 for Patient 1 (medium somatic sy
 
 // q1a: Stomach pain - Bothered a little (1)
 * item[+].linkId = "phq-phq1a"
-* item[=].answer[0].valueCoding = $pro-phq15-answers#bothered-a-little "Bothered a little"
+* item[=].answer[0].valueCoding = $pro-phq15-answers#bothered-a-little "Wenig beeinträchtigt"
 // q1b: Back pain - Bothered a lot (2)
 * item[+].linkId = "phq-phq1b"
-* item[=].answer[0].valueCoding = $pro-phq15-answers#bothered-a-lot "Bothered a lot"
+* item[=].answer[0].valueCoding = $pro-phq15-answers#bothered-a-lot "Stark beeinträchtigt"
 // q1c: Pain in arms, legs, or joints - Bothered a little (1)
 * item[+].linkId = "phq-phq1c"
-* item[=].answer[0].valueCoding = $pro-phq15-answers#bothered-a-little "Bothered a little"
+* item[=].answer[0].valueCoding = $pro-phq15-answers#bothered-a-little "Wenig beeinträchtigt"
 // q1d: Menstrual cramps - Not bothered (0)
 * item[+].linkId = "phq-phq1d"
-* item[=].answer[0].valueCoding = $pro-phq15-answers#not-bothered "Not bothered at all"
+* item[=].answer[0].valueCoding = $pro-phq15-answers#not-bothered "Nicht beeinträchtigt"
 // q1e: Headaches - Bothered a little (1)
 * item[+].linkId = "phq-phq1e"
-* item[=].answer[0].valueCoding = $pro-phq15-answers#bothered-a-little "Bothered a little"
+* item[=].answer[0].valueCoding = $pro-phq15-answers#bothered-a-little "Wenig beeinträchtigt"
 // q1f: Chest pain - Not bothered (0)
 * item[+].linkId = "phq-phq1f"
-* item[=].answer[0].valueCoding = $pro-phq15-answers#not-bothered "Not bothered at all"
+* item[=].answer[0].valueCoding = $pro-phq15-answers#not-bothered "Nicht beeinträchtigt"
 // q1g: Dizziness - Bothered a little (1)
 * item[+].linkId = "phq-phq1g"
-* item[=].answer[0].valueCoding = $pro-phq15-answers#bothered-a-little "Bothered a little"
+* item[=].answer[0].valueCoding = $pro-phq15-answers#bothered-a-little "Wenig beeinträchtigt"
 // q1h: Fainting spells - Not bothered (0)
 * item[+].linkId = "phq-phq1h"
-* item[=].answer[0].valueCoding = $pro-phq15-answers#not-bothered "Not bothered at all"
+* item[=].answer[0].valueCoding = $pro-phq15-answers#not-bothered "Nicht beeinträchtigt"
 // q1i: Heart pounding or racing - Bothered a little (1)
 * item[+].linkId = "phq-phq1i"
-* item[=].answer[0].valueCoding = $pro-phq15-answers#bothered-a-little "Bothered a little"
+* item[=].answer[0].valueCoding = $pro-phq15-answers#bothered-a-little "Wenig beeinträchtigt"
 // q1j: Shortness of breath - Not bothered (0)
 * item[+].linkId = "phq-phq1j"
-* item[=].answer[0].valueCoding = $pro-phq15-answers#not-bothered "Not bothered at all"
+* item[=].answer[0].valueCoding = $pro-phq15-answers#not-bothered "Nicht beeinträchtigt"
 // q1k: Pain or problems during intercourse - Not bothered (0)
 * item[+].linkId = "phq-phq1k"
-* item[=].answer[0].valueCoding = $pro-phq15-answers#not-bothered "Not bothered at all"
+* item[=].answer[0].valueCoding = $pro-phq15-answers#not-bothered "Nicht beeinträchtigt"
 // q1l: Constipation, loose bowels, or diarrhea - Bothered a little (1)
 * item[+].linkId = "phq-phq1l"
-* item[=].answer[0].valueCoding = $pro-phq15-answers#bothered-a-little "Bothered a little"
+* item[=].answer[0].valueCoding = $pro-phq15-answers#bothered-a-little "Wenig beeinträchtigt"
 // q1m: Nausea, gas, or indigestion - Bothered a little (1)
 * item[+].linkId = "phq-phq1m"
-* item[=].answer[0].valueCoding = $pro-phq15-answers#bothered-a-little "Bothered a little"
+* item[=].answer[0].valueCoding = $pro-phq15-answers#bothered-a-little "Wenig beeinträchtigt"
 // q2d: Feeling tired or having low energy - Bothered a little (1); konsistent mit PHQ-9 q04
 * item[+].linkId = "phq-phq2d"
-* item[=].answer[0].valueCoding = $pro-phq15-answers#bothered-a-little "Bothered a little"
+* item[=].answer[0].valueCoding = $pro-phq15-answers#bothered-a-little "Wenig beeinträchtigt"
 // q2c: Trouble sleeping - Bothered a lot (2); konsistent mit PHQ-9 q03
 * item[+].linkId = "phq-phq2c"
-* item[=].answer[0].valueCoding = $pro-phq15-answers#bothered-a-lot "Bothered a lot"
+* item[=].answer[0].valueCoding = $pro-phq15-answers#bothered-a-lot "Stark beeinträchtigt"
 
 // Total score: 1+2+1+0+1+0+1+0+1+0+0+1+1+1+2 = 12 (medium somatic symptom severity, 10-14)
 * item[+].linkId = "phq-phq15-score-total"
@@ -190,40 +190,40 @@ Description: "PRO QuestionnaireResponse: WHODAS 2.0 12-Item for Patient 1 (mild 
 
 // q01: Standing for long periods - Mild (1)
 * item[+].linkId = "whodas-whodas12-q01"
-* item[=].answer[0].valueCoding = $pro-whodas12#whodas12-answer-1 "Mild"
+* item[=].answer[0].valueCoding = $pro-whodas12#whodas12-answer-1 "geringe"
 // q02: Household responsibilities - Mild (1)
 * item[+].linkId = "whodas-whodas12-q02"
-* item[=].answer[0].valueCoding = $pro-whodas12#whodas12-answer-1 "Mild"
+* item[=].answer[0].valueCoding = $pro-whodas12#whodas12-answer-1 "geringe"
 // q03: Learning a new task - None (0)
 * item[+].linkId = "whodas-whodas12-q03"
-* item[=].answer[0].valueCoding = $pro-whodas12#whodas12-answer-0 "None"
+* item[=].answer[0].valueCoding = $pro-whodas12#whodas12-answer-0 "keine"
 // q04: Joining in community activities - Moderate (2)
 * item[+].linkId = "whodas-whodas12-q04"
-* item[=].answer[0].valueCoding = $pro-whodas12#whodas12-answer-2 "Moderate"
+* item[=].answer[0].valueCoding = $pro-whodas12#whodas12-answer-2 "mäßige"
 // q05: Emotionally affected by health problems - Moderate (2)
 * item[+].linkId = "whodas-whodas12-q05"
-* item[=].answer[0].valueCoding = $pro-whodas12#whodas12-answer-2 "Moderate"
+* item[=].answer[0].valueCoding = $pro-whodas12#whodas12-answer-2 "mäßige"
 // q06: Concentrating for ten minutes - Mild (1)
 * item[+].linkId = "whodas-whodas12-q06"
-* item[=].answer[0].valueCoding = $pro-whodas12#whodas12-answer-1 "Mild"
+* item[=].answer[0].valueCoding = $pro-whodas12#whodas12-answer-1 "geringe"
 // q07: Walking a long distance - Mild (1)
 * item[+].linkId = "whodas-whodas12-q07"
-* item[=].answer[0].valueCoding = $pro-whodas12#whodas12-answer-1 "Mild"
+* item[=].answer[0].valueCoding = $pro-whodas12#whodas12-answer-1 "geringe"
 // q08: Washing whole body - None (0)
 * item[+].linkId = "whodas-whodas12-q08"
-* item[=].answer[0].valueCoding = $pro-whodas12#whodas12-answer-0 "None"
+* item[=].answer[0].valueCoding = $pro-whodas12#whodas12-answer-0 "keine"
 // q09: Getting dressed - None (0)
 * item[+].linkId = "whodas-whodas12-q09"
-* item[=].answer[0].valueCoding = $pro-whodas12#whodas12-answer-0 "None"
+* item[=].answer[0].valueCoding = $pro-whodas12#whodas12-answer-0 "keine"
 // q10: Dealing with strangers - Mild (1)
 * item[+].linkId = "whodas-whodas12-q10"
-* item[=].answer[0].valueCoding = $pro-whodas12#whodas12-answer-1 "Mild"
+* item[=].answer[0].valueCoding = $pro-whodas12#whodas12-answer-1 "geringe"
 // q11: Maintaining a friendship - Mild (1)
 * item[+].linkId = "whodas-whodas12-q11"
-* item[=].answer[0].valueCoding = $pro-whodas12#whodas12-answer-1 "Mild"
+* item[=].answer[0].valueCoding = $pro-whodas12#whodas12-answer-1 "geringe"
 // q12: Day-to-day work/school - Moderate (2)
 * item[+].linkId = "whodas-whodas12-q12"
-* item[=].answer[0].valueCoding = $pro-whodas12#whodas12-answer-2 "Moderate"
+* item[=].answer[0].valueCoding = $pro-whodas12#whodas12-answer-2 "mäßige"
 
 // Simple sum: 1+1+0+2+2+1+1+0+0+1+1+2 = 12 (range 0-48)
 * item[+].linkId = "whodas-whodas12-score-simple-sum"

@@ -354,7 +354,55 @@ betreffen können — sie sind **keine** Fehler der MII-Profile:
 
 ---
 
-## 8. Bereits gemeldet (Referenz)
+## 8. `patternString` auf `category.coding.display` fixiert ein falsches Display
+
+`mii-pr-icu-score-wong-baker-faces-schmerzskala` legt im Differential fest:
+
+```json
+{ "path": "Observation.category.coding.display", "patternString": "Assessment" }
+```
+
+Das Profil bindet `Observation.category` aber an `observation-category`, und der
+dort einzig sinnvolle Code `survey` heisst in THO **`Survey`**. Damit stehen sich
+zwei Anforderungen desselben Profils gegenueber:
+
+- Wer `"Survey"` schreibt, verletzt den `patternString` — SUSHI bricht mit
+  *„Cannot assign Survey to this element; a different string is already assigned"*
+  ab, das Profil laesst die Instanz also gar nicht erst entstehen.
+- Wer `"Assessment"` schreibt, erfuellt das Pattern und bekommt vom Validator
+  *„Wrong Display Name 'Assessment' for …#survey. Valid display is 'Survey'"*.
+
+**Es gibt keine konforme Instanz.** Genau dieser Widerspruch ist uns beim Beheben
+der Display-Fehler aufgefallen: Die Korrektur `Assessment` → `Survey` war die
+richtige und hat den Build zerbrochen.
+
+Der Fehler ist zugleich ein Muster, das grundsaetzlich nicht in ein Profil
+gehoert. `display` ist eine Anzeigehilfe des Terminologieservers, keine
+Datenzusage; sobald ein Profil sie festschreibt, konkurriert es mit dem
+CodeSystem — und verliert, wann immer dort eine andere Schreibweise oder eine
+Uebersetzung gepflegt wird. Das Pattern haengt hier ausserdem an
+`category.coding.display` ohne Slice-Bezug, trifft also **jede** Kategorie-Codierung
+der Ressource, auch die SNOMED-Codierung `273249006`.
+
+### Vorschlag
+
+`Observation.category.coding.display` ersatzlos aus dem Differential entfernen.
+Wer die Kategorie festlegen will, tut das ueber `patternCodeableConcept` am
+Slice — so, wie es die uebrigen ICU-Score-Profile (`mii-pr-icu-score`,
+`-sofa`, `-gcs`, `-cam-icu`, …) bereits tun.
+
+### Auswirkung auf die Testdaten
+
+`mii-exa-test-data-patient-1-icu-score-wbf-1` schreibt `"Assessment"`, weil das
+die einzige baubare Variante ist, und traegt den Validierungsfehler sichtbar mit.
+Er ist in den [Known Issues](https://medizininformatik-initiative.github.io/mii-testdata/known-issues.html)
+als nicht behebbar ausgewiesen und **nicht** per Advisor unterdrueckt — ein
+einzelner, benannter Fehler ist ehrlicher als eine Regel, die kuenftige echte
+Display-Fehler mitverdeckt.
+
+---
+
+## 9. Bereits gemeldet (Referenz)
 
 | Befund | Ticket |
 |---|---|

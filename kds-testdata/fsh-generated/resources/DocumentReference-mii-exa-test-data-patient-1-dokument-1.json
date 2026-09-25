@@ -21,7 +21,7 @@
           {
             "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-dokument/CodeSystem/mii-cs-dokument-nlp-processing-status",
             "code": "unprocessed",
-            "display": "Original"
+            "display": "Original document"
           }
         ]
       },
