@@ -24,9 +24,9 @@ Description: "DiagnosticReport: Laborbericht für Patient 1"
 * performer = Reference(mii-exa-test-data-organization-labor-berlin)
 * performer.identifier.system = "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"
 * performer.identifier.value = "Labor-Berlin"
-// Referenz auf die Bioprobe im Biobank-Modulbundle: absolute URL (= fullUrl
-// des Specimen dort) + Identifier als logische Referenz
-* specimen.reference = "https://www.medizininformatik-initiative.de/Specimen/mii-exa-test-data-patient-1-specimen-1"
+// Relative Referenz auf die Bioprobe, die in diesem Bundle mitgeliefert wird,
+// plus Identifier als zusaetzliche logische Aufloesung.
+* specimen.reference = "Specimen/mii-exa-test-data-patient-1-specimen-1"
 * specimen.identifier.system = "https://www.charite.de/fhir/sid/Bioproben"
 * specimen.identifier.value = "BP_000001"
 * specimen.display = "EDTA-Blut Patient 1"

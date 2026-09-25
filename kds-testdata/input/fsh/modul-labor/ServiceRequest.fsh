@@ -25,9 +25,9 @@ Description: "ServiceRequest: Kleines Blutbild für Patient 1"
 * encounter.identifier.system = "https://www.charite.de/fhir/NamingSystem/Aufnahmenummern"
 * encounter.identifier.value = "MII_0000001"
 * authoredOn = "2024-02-15T10:28:00+01:00"
-// Referenz auf die Bioprobe im Biobank-Modulbundle: absolute URL (= fullUrl
-// des Specimen dort) + Identifier als logische Referenz
-* specimen.reference = "https://www.medizininformatik-initiative.de/Specimen/mii-exa-test-data-patient-1-specimen-1"
+// Relative Referenz auf die Bioprobe, die in diesem Bundle mitgeliefert wird,
+// plus Identifier als zusaetzliche logische Aufloesung.
+* specimen.reference = "Specimen/mii-exa-test-data-patient-1-specimen-1"
 * specimen.identifier.system = "https://www.charite.de/fhir/sid/Bioproben"
 * specimen.identifier.value = "BP_000001"
 * specimen.display = "EDTA-Blut Patient 1"

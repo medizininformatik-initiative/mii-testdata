@@ -133,87 +133,87 @@
     "fshType": "Instance",
     "fshFile": "Bundle.fsh",
     "startLine": 24,
-    "endLine": 91
+    "endLine": 94
   },
   {
     "outputFile": "Bundle-mii-exa-test-data-bundle-pat-10.json",
     "fshName": "mii-exa-test-data-bundle-pat-10",
     "fshType": "Instance",
     "fshFile": "Bundle.fsh",
-    "startLine": 813,
-    "endLine": 873
+    "startLine": 816,
+    "endLine": 876
   },
   {
     "outputFile": "Bundle-mii-exa-test-data-bundle-pat-11.json",
     "fshName": "mii-exa-test-data-bundle-pat-11",
     "fshType": "Instance",
     "fshFile": "Bundle.fsh",
-    "startLine": 895,
-    "endLine": 905
+    "startLine": 898,
+    "endLine": 908
   },
   {
     "outputFile": "Bundle-mii-exa-test-data-bundle-pat-2.json",
     "fshName": "mii-exa-test-data-bundle-pat-2",
     "fshType": "Instance",
     "fshFile": "Bundle.fsh",
-    "startLine": 185,
-    "endLine": 252
+    "startLine": 188,
+    "endLine": 255
   },
   {
     "outputFile": "Bundle-mii-exa-test-data-bundle-pat-3.json",
     "fshName": "mii-exa-test-data-bundle-pat-3",
     "fshType": "Instance",
     "fshFile": "Bundle.fsh",
-    "startLine": 261,
-    "endLine": 371
+    "startLine": 264,
+    "endLine": 374
   },
   {
     "outputFile": "Bundle-mii-exa-test-data-bundle-pat-4.json",
     "fshName": "mii-exa-test-data-bundle-pat-4",
     "fshType": "Instance",
     "fshFile": "Bundle.fsh",
-    "startLine": 380,
-    "endLine": 450
+    "startLine": 383,
+    "endLine": 453
   },
   {
     "outputFile": "Bundle-mii-exa-test-data-bundle-pat-5.json",
     "fshName": "mii-exa-test-data-bundle-pat-5",
     "fshType": "Instance",
     "fshFile": "Bundle.fsh",
-    "startLine": 459,
-    "endLine": 519
+    "startLine": 462,
+    "endLine": 522
   },
   {
     "outputFile": "Bundle-mii-exa-test-data-bundle-pat-6.json",
     "fshName": "mii-exa-test-data-bundle-pat-6",
     "fshType": "Instance",
     "fshFile": "Bundle.fsh",
-    "startLine": 528,
-    "endLine": 592
+    "startLine": 531,
+    "endLine": 595
   },
   {
     "outputFile": "Bundle-mii-exa-test-data-bundle-pat-7.json",
     "fshName": "mii-exa-test-data-bundle-pat-7",
     "fshType": "Instance",
     "fshFile": "Bundle.fsh",
-    "startLine": 601,
-    "endLine": 661
+    "startLine": 604,
+    "endLine": 664
   },
   {
     "outputFile": "Bundle-mii-exa-test-data-bundle-pat-8.json",
     "fshName": "mii-exa-test-data-bundle-pat-8",
     "fshType": "Instance",
     "fshFile": "Bundle.fsh",
-    "startLine": 670,
-    "endLine": 735
+    "startLine": 673,
+    "endLine": 738
   },
   {
     "outputFile": "Bundle-mii-exa-test-data-bundle-pat-9.json",
     "fshName": "mii-exa-test-data-bundle-pat-9",
     "fshType": "Instance",
     "fshFile": "Bundle.fsh",
-    "startLine": 744,
-    "endLine": 804
+    "startLine": 747,
+    "endLine": 807
   },
   {
     "outputFile": "Bundle-mii-exa-test-data-bundle-patho-1.json",

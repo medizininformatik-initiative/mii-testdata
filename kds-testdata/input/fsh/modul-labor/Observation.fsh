@@ -24,9 +24,9 @@ Description: "Observation: Leukozyten im Blut für Patient 1"
 * interpretation = $v3-ObservationInterpretation#H "High"
 * method = $sct#703452004 "Electrical impedance technique (qualifier value)"
 * note.text = "Leukozyten EDTA-Blut Impedanzmessung"
-// Referenz auf die Bioprobe im Biobank-Modulbundle: absolute URL (= fullUrl
-// des Specimen dort) + Identifier als logische Referenz
-* specimen.reference = "https://www.medizininformatik-initiative.de/Specimen/mii-exa-test-data-patient-1-specimen-1"
+// Relative Referenz auf die Bioprobe, die in diesem Bundle mitgeliefert wird,
+// plus Identifier als zusaetzliche logische Aufloesung.
+* specimen.reference = "Specimen/mii-exa-test-data-patient-1-specimen-1"
 * specimen.identifier.system = "https://www.charite.de/fhir/sid/Bioproben"
 * specimen.identifier.value = "BP_000001"
 * specimen.display = "EDTA-Blut Patient 1"
@@ -562,7 +562,7 @@ Description: "Observation: Troponin T unter Nachweisgrenze für Patient 1 (compa
 * interpretation = $v3-ObservationInterpretation#N "Normal"
 * method = $sct#414464004 "Immunoassay method (qualifier value)"
 * note.text = "Troponin T unterhalb der Nachweisgrenze; Probe leicht haemolytisch."
-* specimen.reference = "https://www.medizininformatik-initiative.de/Specimen/mii-exa-test-data-patient-1-specimen-1"
+* specimen.reference = "Specimen/mii-exa-test-data-patient-1-specimen-1"
 * specimen.identifier.system = "https://www.charite.de/fhir/sid/Bioproben"
 * specimen.identifier.value = "BP_000001"
 * specimen.display = "EDTA-Blut Patient 1"

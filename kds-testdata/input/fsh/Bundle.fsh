@@ -61,9 +61,12 @@ Description: "Bundle: Patient-1"
 * insert AddBundleEntry(mii-exa-test-data-patient-1-medstatement-1, MedicationStatement)
 * insert AddBundleEntry(mii-exa-test-data-patient-1-medstatement-2, MedicationStatement)
 * insert AddBundleEntry(mii-exa-test-data-patient-1-medstatement-3, MedicationStatement)
-// Specimen bleibt im Biobank-Modulbundle (eigener Patient); Labor referenziert
-// die Probe als logische Referenz (identifier), nicht literal.
-// * insert AddBundleEntry(mii-exa-test-data-patient-1-specimen-1, Specimen)
+// Die Bioprobe gehoert Patient 1 und wird deshalb hier mitgeliefert — das
+// Bundle bleibt self-contained. Eine literale Referenz auf eine Ressource
+// ausserhalb des Bundles (frueher: absolute URL auf den MII-Kanonikalraum)
+// weist HAPI als externe Referenz zurueck (HAPI-0507), waehrend Blaze sie
+// durchwinkt; gefunden mit scripts/check-servers.sh.
+* insert AddBundleEntry(mii-exa-test-data-patient-1-specimen-1, Specimen)
 // * insert AddBundleEntry(mii-exa-test-data-patient-1-substance-1, Substance)
 * insert AddBundleEntry(mii-exa-test-data-device-roche-cobas, Device)
 * insert AddBundleEntry(mii-exa-test-data-device-roche-cobas-c303, Device)
