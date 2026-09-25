@@ -8,7 +8,7 @@ This Implementation Guide provides comprehensive test data compliant with the Ge
 
 - **16 module bundles** (`mii-exa-test-data-bundle-<modul>-1`): technically complete, self-contained per-module test sets with their own patients — one per extension module: Bildgebung, Biobank, Dokument, ICU, **Kardiologie**, **Lungenfunktion**, Mikrobiologie, MolGen, MTB, Onkologie, Patho, PRO, Seltene, **Soziodemographie**, Studien, **Symptom** (bold = new with the 2027 generation).
 - **10 patient bundles** (`mii-exa-test-data-bundle-pat-1 … -pat-10`): clinically coherent scenarios per patient across the **core** modules (Person, Fall, Diagnose, Prozedur, Labor, Medikation, Consent).
-- **4 cross-module example patients** (`mii-exa-test-data-bundle-pat-11 … -pat-14`): one patient carrying core modules **and** extension modules, so that cross-module joins become testable. Each is modelled on a real MII research project — see [Modulübergreifende Beispielpatienten](beispielpatienten.html).
+- **4 cross-module example patients** (`mii-exa-test-data-bundle-pat-11 … -pat-14`): one patient carrying core modules **and** extension modules, so that cross-module joins become testable. Each is modelled on a real MII research project — see [Cross-Module Example Patients](cross-module-patients.html).
 
 The third kind closes a gap the first two leave open by construction: module bundles are complete but each has its **own** patient, so nothing joins across them; patient bundles 1–10 do join, but only across the core modules.
 
@@ -32,7 +32,7 @@ The third kind closes a gap the first two leave open by construction: module bun
 - **Patient-13**: Morbus Fabry — symptoms from 2011, diagnosis in 2023: a **12-year diagnostic delay** measurable from the data
 - **Patient-14**: MSI-high colorectal cancer — pathology → NGS → molecular tumor board → immunotherapy → response
 
-Details: [Modulübergreifende Beispielpatienten](beispielpatienten.html).
+Details: [Cross-Module Example Patients](cross-module-patients.html).
 
 Patients 1 and 2 deliberately form a pair covering both permitted `DosageDE` worlds (structured vs. free-text) of the Medikation module.
 
