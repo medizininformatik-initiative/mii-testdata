@@ -1,0 +1,37 @@
+# Zwei FHIR-Server fuer den Ladetest der Testdaten.
+#
+# Bewusst strenger konfiguriert als integration-tests/docker-compose.yml:
+# Blaze erzwingt hier referentielle Integritaet, damit unaufgeloeste
+# Referenzen auffallen statt stillschweigend akzeptiert zu werden.
+#
+# Andere Ports als die Entwicklungs-Setups (8380/8382), damit ein laufendes
+# Blaze oder HAPI nicht kollidiert.
+services:
+  blaze:
+    image: "samply/blaze:latest"
+    environment:
+      ENFORCE_REFERENTIAL_INTEGRITY: "true"
+      JAVA_TOOL_OPTIONS: "-Xmx2g"
+    ports:
+      - "8380:8080"
+    healthcheck:
+      test: ["CMD", "wget", "-q", "--spider", "http://localhost:8080/health"]
+      interval: 5s
+      timeout: 5s
+      retries: 24
+      start_period: 15s
+
+  hapi:
+    image: hapiproject/hapi:v7.6.0
+    ports:
+      - "8382:8080"
+    environment:
+      JAVA_OPTS: "-Xmx2g"
+      # H2 in-memory: nichts wird persistiert, der Container bleibt schlank.
+      SPRING_DATASOURCE_URL: "jdbc:h2:mem:hapi;DB_CLOSE_DELAY=-1"
+      SPRING_DATASOURCE_DRIVERCLASSNAME: "org.h2.Driver"
+      HAPI_FHIR_FHIR_VERSION: "R4"
+    # Kein healthcheck: Das HAPI-Image bringt weder curl noch wget mit,
+    # weshalb die Healthchecks der bestehenden Compose-Dateien dauerhaft
+    # fehlschlagen und der Container als "unhealthy" gilt, obwohl er laeuft.
+    # Das Skript pollt stattdessen /fhir/metadata vom Host aus.
