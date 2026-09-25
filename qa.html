@@ -1,0 +1,9 @@
+<!doctype html><meta charset="utf-8"><title>QA-Report zu gross</title>
+<h1>QA-Report nicht eingebettet</h1>
+<p>Der vollstaendige QA-Report dieses Builds ist <strong>184 MB</strong> gross und
+ueberschreitet das Dateigroessen-Limit von GitHub (100 MB).</p>
+<p>Er haengt als Artefakt <code>qa-report</code> am erzeugenden Workflow-Lauf:
+<a href="https://github.com/medizininformatik-initiative/mii-testdata/actions/runs/36105534502">Run 36105534502</a>.</p>
+<p>Ein derart grosser Report entsteht typischerweise, wenn der Build auf den
+oeffentlichen Terminologieserver zurueckfallen musste und MII-ValueSets
+nicht expandiert werden konnten — dann erzeugt praktisch jedes Coding eine Warnung.</p>

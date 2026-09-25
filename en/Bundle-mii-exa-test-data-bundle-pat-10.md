@@ -1,0 +1,2078 @@
+# mii-exa-test-data-bundle-pat-10 - MII KDS Test Data v2027.0.0-ballot
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **mii-exa-test-data-bundle-pat-10**
+
+## Example Bundle: mii-exa-test-data-bundle-pat-10
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "Bundle",
+  "id" : "mii-exa-test-data-bundle-pat-10",
+  "meta" : {
+    "source" : "https://www.charite.de/fhir/kds-testdata",
+    "security" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "code" : "HTEST",
+      "display" : "test health data"
+    }]
+  },
+  "type" : "transaction",
+  "timestamp" : "2025-06-18T14:00:00+02:00",
+  "entry" : [{
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Patient/mii-exa-test-data-patient-10",
+    "resource" : {
+      "resourceType" : "Patient",
+      "id" : "mii-exa-test-data-patient-10",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient",
+        "http://fhir.de/ConsentManagement/StructureDefinition/Patient"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Patient_mii-exa-test-data-patient-10\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Patient mii-exa-test-data-patient-10</b></p><a name=\"mii-exa-test-data-patient-10\"> </a><a name=\"hcmii-exa-test-data-patient-10\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profiles: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient\">MII PR Person Patient</a>, <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.consent@2027.0.0-ballot&amp;canonical=http://fhir.de/ConsentManagement/StructureDefinition/Patient\">Consent Management: Patient</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Markus Wolf (official) Male, DoB: 1969-09-17 ( Medical record number (use: usual, ))</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Known status of Patient\">Deceased:</td><td colspan=\"3\">false</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Other Id (see the one above)\">Other Id:</td><td colspan=\"3\">Krankenversichertennummer/H789012345 (use: official, )</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Detail</td><td colspan=\"3\">Am Park 12 Frankfurt am Main 60311 DE </td></tr></table></div>"
+      },
+      "identifier" : [{
+        "use" : "usual",
+        "type" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code" : "MR"
+          }]
+        },
+        "system" : "https://www.medizininformatik-initiative.de/fhir/sid/patienten",
+        "value" : "654987321",
+        "assigner" : {
+          "identifier" : {
+            "system" : "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier",
+            "value" : "Charité"
+          },
+          "display" : "Charité - Universitätsmedizin Berlin"
+        }
+      },
+      {
+        "use" : "official",
+        "type" : {
+          "coding" : [{
+            "system" : "http://fhir.de/CodeSystem/identifier-type-de-basis",
+            "code" : "KVZ10"
+          }]
+        },
+        "system" : "http://fhir.de/sid/gkv/kvid-10",
+        "value" : "H789012345",
+        "assigner" : {
+          "identifier" : {
+            "use" : "official",
+            "system" : "http://fhir.de/sid/arge-ik/iknr",
+            "value" : "456789012"
+          }
+        }
+      }],
+      "name" : [{
+        "use" : "official",
+        "family" : "Wolf",
+        "given" : ["Markus"]
+      }],
+      "gender" : "male",
+      "birthDate" : "1969-09-17",
+      "deceasedBoolean" : false,
+      "address" : [{
+        "type" : "both",
+        "line" : ["Am Park 12"],
+        "city" : "Frankfurt am Main",
+        "postalCode" : "60311",
+        "country" : "DE"
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Patient/mii-exa-test-data-patient-10"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Consent/mii-exa-test-data-patient-10-consent-1",
+    "resource" : {
+      "resourceType" : "Consent",
+      "id" : "mii-exa-test-data-patient-10-consent-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-einwilligung"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Consent_mii-exa-test-data-patient-10-consent-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Consent mii-exa-test-data-patient-10-consent-1</b></p><a name=\"mii-exa-test-data-patient-10-consent-1\"> </a><a name=\"hcmii-exa-test-data-patient-10-consent-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-einwilligung\">Profile - MI-I - Consent - Einwilligung</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><h2>Participants</h2><table class=\"grid\"><tr><td><b>Role</b></td><td><b>Details</b></td></tr><tr><td title=\"Who the consent applies to\">Patient</td><td><a href=\"Patient-mii-exa-test-data-patient-10.html\">Markus Wolf (official) Male, DoB: 1969-09-17 ( Medical record number (use: usual, ))</a></td></tr><tr><td title=\"Who manages the consent through its lifecycle.\">Manager</td><td><a href=\"Organization-mii-exa-test-data-organization-charite.html\">Organization Charité – Universitätsmedizin Berlin</a></td></tr></table><p>This consent is made under the policy <code>urn:oid:2.16.840.1.113883.3.1937.777.24.2.1791</code> .</p><table border=\"1\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 2px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Applicable Rule\">Rule</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Applicable Period\">Time Period</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Applicable Data\">What</a><span style=\"float: right\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_extension.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Consent Provision\" class=\"hierarchy\"/> permit</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck01.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-qi-hidden.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Consent Provision\" class=\"hierarchy\"/> deny</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><ul><li>Period: 2019-05-10 --&gt; 2049-05-31</li></ul></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_extension.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Consent Provision\" class=\"hierarchy\"/> permit</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><ul><li>Period: 2019-05-10 --&gt; 2049-05-31</li></ul></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><ul><li>Code: <span title=\"Codes:{urn:oid:2.16.840.1.113883.3.1937.777.24.5.3 2.16.840.1.113883.3.1937.777.24.5.3.6}\">MDAT erheben</span></li></ul></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_extension.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Consent Provision\" class=\"hierarchy\"/> permit</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><ul><li>Period: 2019-05-10 --&gt; 2049-05-31</li></ul></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><ul><li>Code: <span title=\"Codes:{urn:oid:2.16.840.1.113883.3.1937.777.24.5.3 2.16.840.1.113883.3.1937.777.24.5.3.7}\">MDAT speichern, verarbeiten</span></li></ul></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_extension.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Consent Provision\" class=\"hierarchy\"/> permit</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><ul><li>Period: 2019-05-10 --&gt; 2049-05-31</li></ul></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><ul><li>Code: <span title=\"Codes:{urn:oid:2.16.840.1.113883.3.1937.777.24.5.3 2.16.840.1.113883.3.1937.777.24.5.3.8}\">MDAT wissenschaftlich nutzen</span></li></ul></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_extension.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Consent Provision\" class=\"hierarchy\"/> permit</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><ul><li>Period: 2019-05-10 --&gt; 2049-05-31</li></ul></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><ul><li>Code: <span title=\"Codes:{urn:oid:2.16.840.1.113883.3.1937.777.24.5.3 2.16.840.1.113883.3.1937.777.24.5.3.9}\">MDAT zusammenfuehren Dritte</span></li></ul></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_extension.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Consent Provision\" class=\"hierarchy\"/> permit</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><ul><li>Period: 2019-05-10 --&gt; 2049-05-31</li></ul></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><ul><li>Code: <span title=\"Codes:{urn:oid:2.16.840.1.113883.3.1937.777.24.5.3 2.16.840.1.113883.3.1937.777.24.5.3.19}\">BIOMAT erheben</span></li></ul></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_extension.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Consent Provision\" class=\"hierarchy\"/> permit</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><ul><li>Period: 2019-05-10 --&gt; 2049-05-31</li></ul></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><ul><li>Code: <span title=\"Codes:{urn:oid:2.16.840.1.113883.3.1937.777.24.5.3 2.16.840.1.113883.3.1937.777.24.5.3.20}\">BIOMAT lagern verarbeiten</span></li></ul></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck000.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_extension.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Consent Provision\" class=\"hierarchy\"/> permit</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><ul><li>Period: 2019-05-10 --&gt; 2049-05-31</li></ul></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><ul><li>Code: <span title=\"Codes:{urn:oid:2.16.840.1.113883.3.1937.777.24.5.3 2.16.840.1.113883.3.1937.777.24.5.3.22}\">BIOMAT wissenschaftlich nutzen</span></li></ul></td></tr>\r\n<tr><td colspan=\"3\" class=\"hierarchy\"><br/><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"
+      },
+      "status" : "active",
+      "scope" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/consentscope",
+          "code" : "research"
+        }]
+      },
+      "category" : [{
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "57016-8"
+        }]
+      },
+      {
+        "coding" : [{
+          "system" : "https://www.medizininformatik-initiative.de/fhir/modul-consent/CodeSystem/mii-cs-consent-version-modules",
+          "code" : "2.16.840.1.113883.3.1937.777.24.2.184"
+        }]
+      }],
+      "patient" : {
+        "reference" : "Patient/mii-exa-test-data-patient-10"
+      },
+      "dateTime" : "2019-05-10T10:00:00+02:00",
+      "organization" : [{
+        "reference" : "Organization/mii-exa-test-data-organization-charite"
+      }],
+      "policy" : [{
+        "uri" : "urn:oid:2.16.840.1.113883.3.1937.777.24.2.1791"
+      }],
+      "provision" : {
+        "type" : "deny",
+        "period" : {
+          "start" : "2019-05-10",
+          "end" : "2049-05-31"
+        },
+        "provision" : [{
+          "type" : "permit",
+          "period" : {
+            "start" : "2019-05-10",
+            "end" : "2049-05-31"
+          },
+          "code" : [{
+            "coding" : [{
+              "system" : "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3",
+              "code" : "2.16.840.1.113883.3.1937.777.24.5.3.6",
+              "display" : "MDAT erheben"
+            }]
+          }]
+        },
+        {
+          "type" : "permit",
+          "period" : {
+            "start" : "2019-05-10",
+            "end" : "2049-05-31"
+          },
+          "code" : [{
+            "coding" : [{
+              "system" : "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3",
+              "code" : "2.16.840.1.113883.3.1937.777.24.5.3.7",
+              "display" : "MDAT speichern, verarbeiten"
+            }]
+          }]
+        },
+        {
+          "type" : "permit",
+          "period" : {
+            "start" : "2019-05-10",
+            "end" : "2049-05-31"
+          },
+          "code" : [{
+            "coding" : [{
+              "system" : "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3",
+              "code" : "2.16.840.1.113883.3.1937.777.24.5.3.8",
+              "display" : "MDAT wissenschaftlich nutzen"
+            }]
+          }]
+        },
+        {
+          "type" : "permit",
+          "period" : {
+            "start" : "2019-05-10",
+            "end" : "2049-05-31"
+          },
+          "code" : [{
+            "coding" : [{
+              "system" : "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3",
+              "code" : "2.16.840.1.113883.3.1937.777.24.5.3.9",
+              "display" : "MDAT zusammenfuehren Dritte"
+            }]
+          }]
+        },
+        {
+          "type" : "permit",
+          "period" : {
+            "start" : "2019-05-10",
+            "end" : "2049-05-31"
+          },
+          "code" : [{
+            "coding" : [{
+              "system" : "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3",
+              "code" : "2.16.840.1.113883.3.1937.777.24.5.3.19",
+              "display" : "BIOMAT erheben"
+            }]
+          }]
+        },
+        {
+          "type" : "permit",
+          "period" : {
+            "start" : "2019-05-10",
+            "end" : "2049-05-31"
+          },
+          "code" : [{
+            "coding" : [{
+              "system" : "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3",
+              "code" : "2.16.840.1.113883.3.1937.777.24.5.3.20",
+              "display" : "BIOMAT lagern verarbeiten"
+            }]
+          }]
+        },
+        {
+          "type" : "permit",
+          "period" : {
+            "start" : "2019-05-10",
+            "end" : "2049-05-31"
+          },
+          "code" : [{
+            "coding" : [{
+              "system" : "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3",
+              "code" : "2.16.840.1.113883.3.1937.777.24.5.3.22",
+              "display" : "BIOMAT wissenschaftlich nutzen"
+            }]
+          }]
+        }]
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Consent/mii-exa-test-data-patient-10-consent-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Encounter/mii-exa-test-data-patient-10-encounter-1",
+    "resource" : {
+      "resourceType" : "Encounter",
+      "id" : "mii-exa-test-data-patient-10-encounter-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Encounter_mii-exa-test-data-patient-10-encounter-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Encounter mii-exa-test-data-patient-10-encounter-1</b></p><a name=\"mii-exa-test-data-patient-10-encounter-1\"> </a><a name=\"hcmii-exa-test-data-patient-10-encounter-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung\">MII PR Fall Kontakt mit einer Gesundheitseinrichtung</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>identifier</b>: Visit number/MII_0000011</p><p><b>status</b>: Finished</p><p><b>class</b>: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActCode.html#v3-ActCode-IMP\">ActCode: IMP</a> (inpatient encounter)</p><p><b>type</b>: <span title=\"Codes:{http://fhir.de/CodeSystem/Kontaktebene einrichtungskontakt}\">Einrichtungskontakt</span>, <span title=\"Codes:{http://fhir.de/CodeSystem/kontaktart-de normalstationaer}\">Normalstationär</span></p><p><b>serviceType</b>: <span title=\"Codes:{http://fhir.de/CodeSystem/dkgev/Fachabteilungsschluessel 2800}\">Neurologie</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-patient-10.html\">Markus Wolf (official) Male, DoB: 1969-09-17 ( Medical record number (use: usual, ))</a></p><p><b>period</b>: 2019-05-14 --&gt; 2019-05-22</p><h3>Hospitalizations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>AdmitSource</b></td><td><b>DischargeDisposition</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://fhir.de/CodeSystem/dgkev/Aufnahmeanlass E}\">Einweisung durch einen Arzt</span></td><td><span title=\"Codes:\"></span></td></tr></table><p><b>serviceProvider</b>: <a href=\"Organization-mii-exa-test-data-organization-charite.html\">Charité - Universitätsmedizin Berlin</a></p></div>"
+      },
+      "identifier" : [{
+        "type" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code" : "VN"
+          }]
+        },
+        "system" : "https://www.charite.de/fhir/NamingSystem/Aufnahmenummern",
+        "value" : "MII_0000011"
+      }],
+      "status" : "finished",
+      "class" : {
+        "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "code" : "IMP"
+      },
+      "type" : [{
+        "coding" : [{
+          "system" : "http://fhir.de/CodeSystem/Kontaktebene",
+          "code" : "einrichtungskontakt"
+        }]
+      },
+      {
+        "coding" : [{
+          "system" : "http://fhir.de/CodeSystem/kontaktart-de",
+          "code" : "normalstationaer"
+        }]
+      }],
+      "serviceType" : {
+        "coding" : [{
+          "system" : "http://fhir.de/CodeSystem/dkgev/Fachabteilungsschluessel",
+          "code" : "2800"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-patient-10"
+      },
+      "period" : {
+        "start" : "2019-05-14",
+        "end" : "2019-05-22"
+      },
+      "hospitalization" : {
+        "admitSource" : {
+          "coding" : [{
+            "system" : "http://fhir.de/CodeSystem/dgkev/Aufnahmeanlass",
+            "code" : "E",
+            "display" : "Einweisung durch einen Arzt"
+          }]
+        },
+        "dischargeDisposition" : {
+          "extension" : [{
+            "extension" : [{
+              "url" : "ErsteUndZweiteStelle",
+              "valueCoding" : {
+                "system" : "http://fhir.de/CodeSystem/dkgev/EntlassungsgrundErsteUndZweiteStelle",
+                "code" : "01",
+                "display" : "Behandlung regulär beendet"
+              }
+            },
+            {
+              "url" : "DritteStelle",
+              "valueCoding" : {
+                "system" : "http://fhir.de/CodeSystem/dkgev/EntlassungsgrundDritteStelle",
+                "code" : "1",
+                "display" : "arbeitsfähig entlassen"
+              }
+            }],
+            "url" : "http://fhir.de/StructureDefinition/Entlassungsgrund"
+          }]
+        }
+      },
+      "serviceProvider" : {
+        "reference" : "Organization/mii-exa-test-data-organization-charite",
+        "identifier" : {
+          "system" : "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier",
+          "value" : "Charité"
+        },
+        "display" : "Charité - Universitätsmedizin Berlin"
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Encounter/mii-exa-test-data-patient-10-encounter-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Condition/mii-exa-test-data-patient-10-diagnose-1",
+    "resource" : {
+      "resourceType" : "Condition",
+      "id" : "mii-exa-test-data-patient-10-diagnose-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/core/modul-diagnose/StructureDefinition/Diagnose"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Condition_mii-exa-test-data-patient-10-diagnose-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Condition mii-exa-test-data-patient-10-diagnose-1</b></p><a name=\"mii-exa-test-data-patient-10-diagnose-1\"> </a><a name=\"hcmii-exa-test-data-patient-10-diagnose-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/core/modul-diagnose/StructureDefinition/Diagnose\">MII PR Diagnose Condition</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}\">Active</span></p><p><b>verificationStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}\">Confirmed</span></p><p><b>code</b>: <span title=\"Codes:{http://fhir.de/CodeSystem/bfarm/icd-10-gm G43.9}, {http://fhir.de/CodeSystem/bfarm/alpha-id I18412}, {http://snomed.info/sct 37796009}\">Migräne</span></p><p><b>bodySite</b>: <span title=\"Codes:{http://snomed.info/sct 281231009}\">Vascular structure of head (body structure)</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-patient-10.html\">Markus Wolf (official) Male, DoB: 1969-09-17 ( Medical record number (use: usual, ))</a></p><p><b>recordedDate</b>: 2019-05-14</p><p><b>note</b>: </p><blockquote><div><p>Migräne, nicht näher bezeichnet</p>\n</div></blockquote></div>"
+      },
+      "clinicalStatus" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code" : "active"
+        }]
+      },
+      "verificationStatus" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code" : "confirmed"
+        }]
+      },
+      "code" : {
+        "coding" : [{
+          "system" : "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+          "version" : "2019",
+          "code" : "G43.9"
+        },
+        {
+          "system" : "http://fhir.de/CodeSystem/bfarm/alpha-id",
+          "version" : "2019",
+          "code" : "I18412",
+          "display" : "Migräne"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "37796009",
+          "display" : "Migraine (disorder)"
+        }]
+      },
+      "bodySite" : [{
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "281231009",
+          "display" : "Vascular structure of head (body structure)"
+        }]
+      }],
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-patient-10"
+      },
+      "recordedDate" : "2019-05-14",
+      "note" : [{
+        "text" : "Migräne, nicht näher bezeichnet"
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Condition/mii-exa-test-data-patient-10-diagnose-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-10-vitalstatus-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-patient-10-vitalstatus-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Vitalstatus"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-patient-10-vitalstatus-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-patient-10-vitalstatus-1</b></p><a name=\"mii-exa-test-data-patient-10-vitalstatus-1\"> </a><a name=\"hcmii-exa-test-data-patient-10-vitalstatus-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Vitalstatus\">MII PR Person Vitalstatus</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category survey}\">Survey</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 67162-8}\">Patient Disposition</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-patient-10.html\">Markus Wolf (official) Male, DoB: 1969-09-17 ( Medical record number (use: usual, ))</a></p><p><b>effective</b>: 2023-09-14</p><p><b>value</b>: <span title=\"Codes:{https://www.medizininformatik-initiative.de/fhir/core/modul-person/CodeSystem/Vitalstatus L}\">Patient lebt</span></p></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "survey"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "67162-8"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-patient-10"
+      },
+      "effectiveDateTime" : "2023-09-14",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "https://www.medizininformatik-initiative.de/fhir/core/modul-person/CodeSystem/Vitalstatus",
+          "code" : "L"
+        }]
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-patient-10-vitalstatus-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Procedure/mii-exa-test-data-patient-10-prozedur-1",
+    "resource" : {
+      "resourceType" : "Procedure",
+      "id" : "mii-exa-test-data-patient-10-prozedur-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Procedure"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Procedure_mii-exa-test-data-patient-10-prozedur-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Procedure mii-exa-test-data-patient-10-prozedur-1</b></p><a name=\"mii-exa-test-data-patient-10-prozedur-1\"> </a><a name=\"hcmii-exa-test-data-patient-10-prozedur-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Procedure\">MII PR Prozedur Procedure</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>MII EX Prozedur Durchführungsabsicht</b>: <a href=\"http://snomed.info/id/261004008\">SNOMED CT: 261004008</a> (Diagnostic intent)</p><p><b>status</b>: Completed</p><p><b>category</b>: <span title=\"Codes:{http://snomed.info/sct 165197003}\">Diagnostic assessment</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 169066007}, {http://fhir.de/CodeSystem/bfarm/ops 3-200}\">CT of skull</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-patient-10.html\">Markus Wolf (official) Male, DoB: 1969-09-17 ( Medical record number (use: usual, ))</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-patient-10-encounter-1.html\">Encounter: identifier = Visit number; status = finished; class = inpatient encounter (ActCode#IMP); type = Einrichtungskontakt,Normalstationär; serviceType = Neurologie; period = 2019-05-14 --&gt; 2019-05-22</a></p><p><b>performed</b>: 2019-05-15 16:30:00+0200</p><p><b>recorder</b>: <a href=\"PractitionerRole-mii-exa-test-data-practitioner-role-physician-1.html\">PractitionerRole Physician (occupation)</a></p><p><b>bodySite</b>: <span title=\"Codes:{http://snomed.info/sct 89546000}\">Bone structure of cranium</span></p><p><b>note</b>: </p><blockquote><div><p>Kraniale CT zum Ausschluss struktureller Ursachen der Kopfschmerzen</p>\n</div></blockquote></div>"
+      },
+      "extension" : [{
+        "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Durchfuehrungsabsicht",
+        "valueCoding" : {
+          "system" : "http://snomed.info/sct",
+          "code" : "261004008",
+          "display" : "Diagnostic intent"
+        }
+      }],
+      "status" : "completed",
+      "category" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "165197003"
+        }]
+      },
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "169066007"
+        },
+        {
+          "system" : "http://fhir.de/CodeSystem/bfarm/ops",
+          "version" : "2019",
+          "code" : "3-200"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-patient-10"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-patient-10-encounter-1"
+      },
+      "performedDateTime" : "2019-05-15T16:30:00+02:00",
+      "recorder" : {
+        "reference" : "PractitionerRole/mii-exa-test-data-practitioner-role-physician-1"
+      },
+      "bodySite" : [{
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "89546000"
+        }]
+      }],
+      "note" : [{
+        "text" : "Kraniale CT zum Ausschluss struktureller Ursachen der Kopfschmerzen"
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Procedure/mii-exa-test-data-patient-10-prozedur-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Procedure/mii-exa-test-data-patient-10-prozedur-2",
+    "resource" : {
+      "resourceType" : "Procedure",
+      "id" : "mii-exa-test-data-patient-10-prozedur-2",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Procedure"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Procedure_mii-exa-test-data-patient-10-prozedur-2\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Procedure mii-exa-test-data-patient-10-prozedur-2</b></p><a name=\"mii-exa-test-data-patient-10-prozedur-2\"> </a><a name=\"hcmii-exa-test-data-patient-10-prozedur-2\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Procedure\">MII PR Prozedur Procedure</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>MII EX Prozedur Durchführungsabsicht</b>: <a href=\"http://snomed.info/id/262202000\">SNOMED CT: 262202000</a> (Therapeutic)</p><p><b>status</b>: Completed</p><p><b>category</b>: <span title=\"Codes:{http://snomed.info/sct 277132007}\">Therapeutic procedure</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 408381007}, {http://fhir.de/CodeSystem/bfarm/ops 8-918.00}\">Migraine prophylaxis</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-patient-10.html\">Markus Wolf (official) Male, DoB: 1969-09-17 ( Medical record number (use: usual, ))</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-patient-10-encounter-1.html\">Encounter: identifier = Visit number; status = finished; class = inpatient encounter (ActCode#IMP); type = Einrichtungskontakt,Normalstationär; serviceType = Neurologie; period = 2019-05-14 --&gt; 2019-05-22</a></p><p><b>performed</b>: 2019-05-16 12:00:00+0200 --&gt; 2019-05-22 10:00:00+0200</p><p><b>recorder</b>: <a href=\"PractitionerRole-mii-exa-test-data-practitioner-role-physician-1.html\">PractitionerRole Physician (occupation)</a></p><p><b>bodySite</b>: <span title=\"Codes:{http://snomed.info/sct 86762007}\">Structure of digestive system</span></p><p><b>note</b>: </p><blockquote><div><p>Einstellung auf Migräne-Prophylaxe mit Topiramat</p>\n</div></blockquote></div>"
+      },
+      "extension" : [{
+        "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Durchfuehrungsabsicht",
+        "valueCoding" : {
+          "system" : "http://snomed.info/sct",
+          "code" : "262202000",
+          "display" : "Therapeutic"
+        }
+      }],
+      "status" : "completed",
+      "category" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "277132007"
+        }]
+      },
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "408381007"
+        },
+        {
+          "system" : "http://fhir.de/CodeSystem/bfarm/ops",
+          "version" : "2019",
+          "code" : "8-918.00"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-patient-10"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-patient-10-encounter-1"
+      },
+      "performedPeriod" : {
+        "start" : "2019-05-16T12:00:00+02:00",
+        "end" : "2019-05-22T10:00:00+02:00"
+      },
+      "recorder" : {
+        "reference" : "PractitionerRole/mii-exa-test-data-practitioner-role-physician-1"
+      },
+      "bodySite" : [{
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "86762007"
+        }]
+      }],
+      "note" : [{
+        "text" : "Einstellung auf Migräne-Prophylaxe mit Topiramat"
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Procedure/mii-exa-test-data-patient-10-prozedur-2"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/ServiceRequest/mii-exa-test-data-patient-10-labrequest-1",
+    "resource" : {
+      "resourceType" : "ServiceRequest",
+      "id" : "mii-exa-test-data-patient-10-labrequest-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ServiceRequestLab"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"ServiceRequest_mii-exa-test-data-patient-10-labrequest-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: ServiceRequest mii-exa-test-data-patient-10-labrequest-1</b></p><a name=\"mii-exa-test-data-patient-10-labrequest-1\"> </a><a name=\"hcmii-exa-test-data-patient-10-labrequest-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ServiceRequestLab\">MII PR Labor Laboranforderung</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>identifier</b>: Placer Identifier/LAB_000010</p><p><b>status</b>: Completed</p><p><b>intent</b>: Order</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 24323-8}\">Comprehensive metabolic 2000 panel - Serum or Plasma</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-patient-10.html\">Markus Wolf (official) Male, DoB: 1969-09-17 ( Medical record number (use: usual, ))</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-patient-10-encounter-1.html\">Encounter: identifier = Visit number; status = finished; class = inpatient encounter (ActCode#IMP); type = Einrichtungskontakt,Normalstationär; serviceType = Neurologie; period = 2019-05-14 --&gt; 2019-05-22</a></p><p><b>authoredOn</b>: 2019-05-16 08:00:00+0200</p><p><b>requester</b>: <a href=\"Practitioner-mii-exa-test-data-practitioner-physician-1.html\">Practitioner Rahel Hirsch </a></p><p><b>reasonCode</b>: <span title=\"Codes:{http://snomed.info/sct 37796009}\">Migraine</span></p></div>"
+      },
+      "identifier" : [{
+        "type" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code" : "PLAC"
+          }]
+        },
+        "system" : "https://www.charite.de/fhir/sid/lab-requests",
+        "value" : "LAB_000010",
+        "assigner" : {
+          "identifier" : {
+            "system" : "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier",
+            "value" : "Charité"
+          }
+        }
+      }],
+      "status" : "completed",
+      "intent" : "order",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "laboratory"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "24323-8",
+          "display" : "Comprehensive metabolic 2000 panel - Serum or Plasma"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-patient-10"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-patient-10-encounter-1"
+      },
+      "authoredOn" : "2019-05-16T08:00:00+02:00",
+      "requester" : {
+        "reference" : "Practitioner/mii-exa-test-data-practitioner-physician-1"
+      },
+      "reasonCode" : [{
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "37796009",
+          "display" : "Migraine"
+        }]
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "ServiceRequest/mii-exa-test-data-patient-10-labrequest-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/DiagnosticReport/mii-exa-test-data-patient-10-labreport-1",
+    "resource" : {
+      "resourceType" : "DiagnosticReport",
+      "id" : "mii-exa-test-data-patient-10-labreport-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/DiagnosticReportLab"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"DiagnosticReport_mii-exa-test-data-patient-10-labreport-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: DiagnosticReport mii-exa-test-data-patient-10-labreport-1</b></p><a name=\"mii-exa-test-data-patient-10-labreport-1\"> </a><a name=\"hcmii-exa-test-data-patient-10-labreport-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/DiagnosticReportLab\">MII PR Labor Laborbefund</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><h2><span title=\"Codes:{http://loinc.org 11502-2}\">Laboratory report</span> (<span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v2-0074 LAB}, {http://loinc.org 26436-6}\">Laboratory studies (set)</span>) </h2><table class=\"grid\"><tr><td>Subject</td><td>Markus Wolf (official) Male, DoB: 1969-09-17 ( Medical record number (use: usual, ))</td></tr><tr><td>Relevant Time</td><td>2019-05-16 08:30:00+0200</td></tr><tr><td>Reported</td><td>2019-05-16 13:15:00+0200</td></tr><tr><td>Performer</td><td> <a href=\"Organization-mii-exa-test-data-organization-labor-berlin.html\">Organization Labor Berlin – Charité Vivantes GmbH</a></td></tr><tr><td>Identifier</td><td> Filler Identifier/LDR_000010</td></tr></table><p><b>Report Details</b></p><table class=\"grid\"><tr><td><b>Code</b></td><td><b>Value</b></td><td><b>Flags</b></td><td><b>Reported</b></td></tr><tr><td><a href=\"Observation-mii-exa-test-data-patient-10-labobs-1.html\"><span title=\"Codes:{http://loinc.org 26464-8}\">Leukocytes [#/volume] in Blood</span></a></td><td>8.9 /nanoliter<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code/nL = '/nL')</span></td><td>Final, <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}\">Normal</span></td><td>2019-05-16 10:45:00+0200</td></tr><tr><td><a href=\"Observation-mii-exa-test-data-patient-10-labobs-2.html\"><span title=\"Codes:{http://loinc.org 718-7}\">Hemoglobin [Mass/volume] in Blood</span></a></td><td>14.2 gram per deciliter<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeg/dL = 'g/dL')</span></td><td>Final, <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}\">Normal</span></td><td>2019-05-16 10:45:00+0200</td></tr><tr><td><a href=\"Observation-mii-exa-test-data-patient-10-labobs-3.html\"><span title=\"Codes:{http://loinc.org 2160-0}\">Creatinine [Mass/volume] in Serum or Plasma</span></a></td><td>1.1 milligram per deciliter<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg/dL = 'mg/dL')</span></td><td>Final, <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}\">Normal</span></td><td>2019-05-16 10:45:00+0200</td></tr></table><p>Unauffällige Routine-Laborwerte bei Migräne-Patientin: Blutbild und Nierenfunktion (Kreatinin 1,1 mg/dL) im Normbereich. Keine sekundäre Ursache der Kopfschmerzen erkennbar.</p></div>"
+      },
+      "identifier" : [{
+        "type" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code" : "FILL"
+          }]
+        },
+        "system" : "https://www.charite.de/fhir/sid/lab-results",
+        "value" : "LDR_000010",
+        "assigner" : {
+          "identifier" : {
+            "system" : "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier",
+            "value" : "Charité"
+          }
+        }
+      }],
+      "basedOn" : [{
+        "reference" : "ServiceRequest/mii-exa-test-data-patient-10-labrequest-1"
+      }],
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code" : "LAB"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "26436-6",
+          "display" : "Laboratory studies (set)"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "11502-2",
+          "display" : "Laboratory report"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-patient-10"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-patient-10-encounter-1"
+      },
+      "effectiveDateTime" : "2019-05-16T08:30:00+02:00",
+      "issued" : "2019-05-16T13:15:00+02:00",
+      "performer" : [{
+        "reference" : "Organization/mii-exa-test-data-organization-labor-berlin"
+      }],
+      "result" : [{
+        "reference" : "Observation/mii-exa-test-data-patient-10-labobs-1"
+      },
+      {
+        "reference" : "Observation/mii-exa-test-data-patient-10-labobs-2"
+      },
+      {
+        "reference" : "Observation/mii-exa-test-data-patient-10-labobs-3"
+      }],
+      "conclusion" : "Unauffällige Routine-Laborwerte bei Migräne-Patientin: Blutbild und Nierenfunktion (Kreatinin 1,1 mg/dL) im Normbereich. Keine sekundäre Ursache der Kopfschmerzen erkennbar."
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "DiagnosticReport/mii-exa-test-data-patient-10-labreport-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-10-labobs-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-patient-10-labobs-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-patient-10-labobs-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-patient-10-labobs-1</b></p><a name=\"mii-exa-test-data-patient-10-labobs-1\"> </a><a name=\"hcmii-exa-test-data-patient-10-labobs-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab\">MII PR Labor Laboruntersuchung</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>identifier</b>: Observation Instance Identifier/LO_000032</p><p><b>basedOn</b>: <a href=\"ServiceRequest-mii-exa-test-data-patient-10-labrequest-1.html\">ServiceRequest Comprehensive metabolic 2000 panel - Serum or Plasma</a></p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}, {http://loinc.org 26436-6}\">Laboratory</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 26464-8}\">Leukocytes [#/volume] in Blood</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-patient-10.html\">Markus Wolf (official) Male, DoB: 1969-09-17 ( Medical record number (use: usual, ))</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-patient-10-encounter-1.html\">Encounter: identifier = Visit number; status = finished; class = inpatient encounter (ActCode#IMP); type = Einrichtungskontakt,Normalstationär; serviceType = Neurologie; period = 2019-05-14 --&gt; 2019-05-22</a></p><p><b>effective</b>: 2019-05-16 08:30:00+0200</p><p><b>issued</b>: 2019-05-16 10:45:00+0200</p><p><b>value</b>: 8.9 /nanoliter<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code/nL = '/nL')</span></p><p><b>interpretation</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}\">Normal</span></p><p><b>method</b>: <span title=\"Codes:{http://snomed.info/sct 703452004}\">Electrical impedance technique (qualifier value)</span></p><p><b>device</b>: <a href=\"Device-mii-exa-test-data-device-roche-cobas-c303.html\">Device: identifier = https://www.charite.de/fhir/sid/Laboratory-device-identifier#RocheCobasC303; status = active; manufacturer = Roche; modelNumber = c 303</a></p></div>"
+      },
+      "identifier" : [{
+        "type" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code" : "OBI"
+          }]
+        },
+        "system" : "https://www.charite.de/fhir/sid/lab-results",
+        "value" : "LO_000032",
+        "assigner" : {
+          "identifier" : {
+            "system" : "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier",
+            "value" : "Charité"
+          }
+        }
+      }],
+      "basedOn" : [{
+        "reference" : "ServiceRequest/mii-exa-test-data-patient-10-labrequest-1"
+      }],
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "laboratory",
+          "display" : "Laboratory"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "26436-6",
+          "display" : "Laboratory studies (set)"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "26464-8",
+          "display" : "Leukocytes [#/volume] in Blood"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-patient-10"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-patient-10-encounter-1"
+      },
+      "effectiveDateTime" : "2019-05-16T08:30:00+02:00",
+      "issued" : "2019-05-16T10:45:00+02:00",
+      "valueQuantity" : {
+        "value" : 8.9,
+        "unit" : "/nanoliter",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "/nL"
+      },
+      "interpretation" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code" : "N",
+          "display" : "Normal"
+        }]
+      }],
+      "method" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "703452004",
+          "display" : "Electrical impedance technique (qualifier value)"
+        }]
+      },
+      "device" : {
+        "reference" : "Device/mii-exa-test-data-device-roche-cobas-c303"
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-patient-10-labobs-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-10-labobs-2",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-patient-10-labobs-2",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-patient-10-labobs-2\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-patient-10-labobs-2</b></p><a name=\"mii-exa-test-data-patient-10-labobs-2\"> </a><a name=\"hcmii-exa-test-data-patient-10-labobs-2\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab\">MII PR Labor Laboruntersuchung</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>identifier</b>: Observation Instance Identifier/LO_000033</p><p><b>basedOn</b>: <a href=\"ServiceRequest-mii-exa-test-data-patient-10-labrequest-1.html\">ServiceRequest Comprehensive metabolic 2000 panel - Serum or Plasma</a></p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}, {http://loinc.org 26436-6}\">Laboratory</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 718-7}\">Hemoglobin [Mass/volume] in Blood</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-patient-10.html\">Markus Wolf (official) Male, DoB: 1969-09-17 ( Medical record number (use: usual, ))</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-patient-10-encounter-1.html\">Encounter: identifier = Visit number; status = finished; class = inpatient encounter (ActCode#IMP); type = Einrichtungskontakt,Normalstationär; serviceType = Neurologie; period = 2019-05-14 --&gt; 2019-05-22</a></p><p><b>effective</b>: 2019-05-16 08:30:00+0200</p><p><b>issued</b>: 2019-05-16 10:45:00+0200</p><p><b>value</b>: 14.2 gram per deciliter<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeg/dL = 'g/dL')</span></p><p><b>interpretation</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}\">Normal</span></p><p><b>method</b>: <span title=\"Codes:{http://snomed.info/sct 83561000052101}\">Photometry technique (qualifier value)</span></p><p><b>device</b>: <a href=\"Device-mii-exa-test-data-device-roche-cobas-c303.html\">Device: identifier = https://www.charite.de/fhir/sid/Laboratory-device-identifier#RocheCobasC303; status = active; manufacturer = Roche; modelNumber = c 303</a></p></div>"
+      },
+      "identifier" : [{
+        "type" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code" : "OBI"
+          }]
+        },
+        "system" : "https://www.charite.de/fhir/sid/lab-results",
+        "value" : "LO_000033",
+        "assigner" : {
+          "identifier" : {
+            "system" : "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier",
+            "value" : "Charité"
+          }
+        }
+      }],
+      "basedOn" : [{
+        "reference" : "ServiceRequest/mii-exa-test-data-patient-10-labrequest-1"
+      }],
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "laboratory",
+          "display" : "Laboratory"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "26436-6",
+          "display" : "Laboratory studies (set)"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "718-7",
+          "display" : "Hemoglobin [Mass/volume] in Blood"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-patient-10"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-patient-10-encounter-1"
+      },
+      "effectiveDateTime" : "2019-05-16T08:30:00+02:00",
+      "issued" : "2019-05-16T10:45:00+02:00",
+      "valueQuantity" : {
+        "value" : 14.2,
+        "unit" : "gram per deciliter",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "g/dL"
+      },
+      "interpretation" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code" : "N",
+          "display" : "Normal"
+        }]
+      }],
+      "method" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "83561000052101",
+          "display" : "Photometry technique (qualifier value)"
+        }]
+      },
+      "device" : {
+        "reference" : "Device/mii-exa-test-data-device-roche-cobas-c303"
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-patient-10-labobs-2"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-10-labobs-3",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-patient-10-labobs-3",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-patient-10-labobs-3\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-patient-10-labobs-3</b></p><a name=\"mii-exa-test-data-patient-10-labobs-3\"> </a><a name=\"hcmii-exa-test-data-patient-10-labobs-3\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab\">MII PR Labor Laboruntersuchung</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>identifier</b>: Observation Instance Identifier/LO_000034</p><p><b>basedOn</b>: <a href=\"ServiceRequest-mii-exa-test-data-patient-10-labrequest-1.html\">ServiceRequest Comprehensive metabolic 2000 panel - Serum or Plasma</a></p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}, {http://loinc.org 26436-6}\">Laboratory</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 2160-0}\">Creatinine [Mass/volume] in Serum or Plasma</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-patient-10.html\">Markus Wolf (official) Male, DoB: 1969-09-17 ( Medical record number (use: usual, ))</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-patient-10-encounter-1.html\">Encounter: identifier = Visit number; status = finished; class = inpatient encounter (ActCode#IMP); type = Einrichtungskontakt,Normalstationär; serviceType = Neurologie; period = 2019-05-14 --&gt; 2019-05-22</a></p><p><b>effective</b>: 2019-05-16 08:30:00+0200</p><p><b>issued</b>: 2019-05-16 10:45:00+0200</p><p><b>value</b>: 1.1 milligram per deciliter<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg/dL = 'mg/dL')</span></p><p><b>interpretation</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}\">Normal</span></p><p><b>method</b>: <span title=\"Codes:{http://snomed.info/sct 83561000052101}\">Photometry technique (qualifier value)</span></p><p><b>device</b>: <a href=\"Device-mii-exa-test-data-device-roche-cobas-c303.html\">Device: identifier = https://www.charite.de/fhir/sid/Laboratory-device-identifier#RocheCobasC303; status = active; manufacturer = Roche; modelNumber = c 303</a></p></div>"
+      },
+      "identifier" : [{
+        "type" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code" : "OBI"
+          }]
+        },
+        "system" : "https://www.charite.de/fhir/sid/lab-results",
+        "value" : "LO_000034",
+        "assigner" : {
+          "identifier" : {
+            "system" : "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier",
+            "value" : "Charité"
+          }
+        }
+      }],
+      "basedOn" : [{
+        "reference" : "ServiceRequest/mii-exa-test-data-patient-10-labrequest-1"
+      }],
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "laboratory",
+          "display" : "Laboratory"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "26436-6",
+          "display" : "Laboratory studies (set)"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "2160-0",
+          "display" : "Creatinine [Mass/volume] in Serum or Plasma"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-patient-10"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-patient-10-encounter-1"
+      },
+      "effectiveDateTime" : "2019-05-16T08:30:00+02:00",
+      "issued" : "2019-05-16T10:45:00+02:00",
+      "valueQuantity" : {
+        "value" : 1.1,
+        "unit" : "milligram per deciliter",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "mg/dL"
+      },
+      "interpretation" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code" : "N",
+          "display" : "Normal"
+        }]
+      }],
+      "method" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "83561000052101",
+          "display" : "Photometry technique (qualifier value)"
+        }]
+      },
+      "device" : {
+        "reference" : "Device/mii-exa-test-data-device-roche-cobas-c303"
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-patient-10-labobs-3"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/MedicationRequest/mii-exa-test-data-patient-10-medrequest-1",
+    "resource" : {
+      "resourceType" : "MedicationRequest",
+      "id" : "mii-exa-test-data-patient-10-medrequest-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationRequest"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"MedicationRequest_mii-exa-test-data-patient-10-medrequest-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: MedicationRequest mii-exa-test-data-patient-10-medrequest-1</b></p><a name=\"mii-exa-test-data-patient-10-medrequest-1\"> </a><a name=\"hcmii-exa-test-data-patient-10-medrequest-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationRequest\">MII PR Medikation MedicationRequest</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>identifier</b>: <code>https://www.charite.de/fhir/sid/MedicationOrders</code>/MO_0000024</p><p><b>status</b>: Active</p><p><b>intent</b>: Order</p><p><b>medication</b>: <a href=\"Medication-mii-exa-test-data-medication-sumatriptan.html\">Medication Sumatriptan</a></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-patient-10.html\">Markus Wolf (official) Male, DoB: 1969-09-17 ( Medical record number (use: usual, ))</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-patient-10-encounter-1.html\">Encounter: identifier = Visit number; status = finished; class = inpatient encounter (ActCode#IMP); type = Einrichtungskontakt,Normalstationär; serviceType = Neurologie; period = 2019-05-14 --&gt; 2019-05-22</a></p><p><b>authoredOn</b>: 2019-05-15 14:00:00+0200</p><blockquote><p><b>dosageInstruction</b></p><p><b>text</b>: Sumatriptan 50mg bei Migräne-Attacke</p><p><b>timing</b>: Once per 1 day</p><p><b>asNeeded</b>: true</p><p><b>route</b>: <span title=\"Codes:{http://standardterms.edqm.eu 20053000}\">Oral use</span></p><h3>DoseAndRates</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Dose[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>50 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span></td></tr></table></blockquote><h3>Substitutions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Allowed[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>true</td></tr></table></div>"
+      },
+      "identifier" : [{
+        "system" : "https://www.charite.de/fhir/sid/MedicationOrders",
+        "value" : "MO_0000024"
+      }],
+      "status" : "active",
+      "intent" : "order",
+      "medicationReference" : {
+        "reference" : "Medication/mii-exa-test-data-medication-sumatriptan"
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-patient-10"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-patient-10-encounter-1"
+      },
+      "authoredOn" : "2019-05-15T14:00:00+02:00",
+      "dosageInstruction" : [{
+        "text" : "Sumatriptan 50mg bei Migräne-Attacke",
+        "timing" : {
+          "repeat" : {
+            "frequencyMax" : 2,
+            "period" : 1,
+            "periodUnit" : "d"
+          }
+        },
+        "asNeededBoolean" : true,
+        "route" : {
+          "coding" : [{
+            "system" : "http://standardterms.edqm.eu",
+            "code" : "20053000",
+            "display" : "Oral use"
+          }]
+        },
+        "doseAndRate" : [{
+          "doseQuantity" : {
+            "value" : 50,
+            "unit" : "mg",
+            "system" : "http://unitsofmeasure.org",
+            "code" : "mg"
+          }
+        }]
+      }],
+      "substitution" : {
+        "allowedBoolean" : true
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "MedicationRequest/mii-exa-test-data-patient-10-medrequest-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/MedicationStatement/mii-exa-test-data-patient-10-medstatement-1",
+    "resource" : {
+      "resourceType" : "MedicationStatement",
+      "id" : "mii-exa-test-data-patient-10-medstatement-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"MedicationStatement_mii-exa-test-data-patient-10-medstatement-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: MedicationStatement mii-exa-test-data-patient-10-medstatement-1</b></p><a name=\"mii-exa-test-data-patient-10-medstatement-1\"> </a><a name=\"hcmii-exa-test-data-patient-10-medstatement-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement\">MII PR Medikation MedicationStatement</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>identifier</b>: <code>https://www.charite.de/fhir/sid/MedicationStatements</code>/MS_0000025</p><p><b>basedOn</b>: <a href=\"MedicationRequest-mii-exa-test-data-patient-10-medrequest-1.html\">MedicationRequest: identifier = https://www.charite.de/fhir/sid/MedicationOrders#MO_0000024; status = active; intent = order; medication[x] = -&gt;Medication Sumatriptan; authoredOn = 2019-05-15 14:00:00+0200</a></p><p><b>status</b>: Active</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/medication-statement-category inpatient}, {http://ihe-d.de/CodeSystems/FallkontextBeiDokumentenerstellung E200}\">stationärer Aufenthalt</span></p><p><b>medication</b>: <a href=\"Medication-mii-exa-test-data-medication-sumatriptan.html\">Medication Sumatriptan</a></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-patient-10.html\">Markus Wolf (official) Male, DoB: 1969-09-17 ( Medical record number (use: usual, ))</a></p><p><b>context</b>: <a href=\"Encounter-mii-exa-test-data-patient-10-encounter-1.html\">Encounter: identifier = Visit number; status = finished; class = inpatient encounter (ActCode#IMP); type = Einrichtungskontakt,Normalstationär; serviceType = Neurologie; period = 2019-05-14 --&gt; 2019-05-22</a></p><p><b>effective</b>: 2019-05-15 14:00:00+0200 --&gt; 2019-05-22 10:00:00+0200</p><p><b>dateAsserted</b>: 2019-05-15</p><blockquote><p><b>dosage</b></p><p><b>text</b>: Sumatriptan 50mg bei Migräne-Attacke</p><p><b>timing</b>: Once per 1 day</p><p><b>asNeeded</b>: true</p><p><b>route</b>: <span title=\"Codes:{http://standardterms.edqm.eu 20053000}\">Oral use</span></p><h3>DoseAndRates</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Dose[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>50 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span></td></tr></table></blockquote></div>"
+      },
+      "identifier" : [{
+        "system" : "https://www.charite.de/fhir/sid/MedicationStatements",
+        "value" : "MS_0000025"
+      }],
+      "basedOn" : [{
+        "reference" : "MedicationRequest/mii-exa-test-data-patient-10-medrequest-1"
+      }],
+      "status" : "active",
+      "category" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/medication-statement-category",
+          "code" : "inpatient"
+        },
+        {
+          "system" : "http://ihe-d.de/CodeSystems/FallkontextBeiDokumentenerstellung",
+          "code" : "E200",
+          "display" : "stationärer Aufenthalt"
+        }]
+      },
+      "medicationReference" : {
+        "reference" : "Medication/mii-exa-test-data-medication-sumatriptan"
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-patient-10"
+      },
+      "context" : {
+        "reference" : "Encounter/mii-exa-test-data-patient-10-encounter-1"
+      },
+      "effectivePeriod" : {
+        "start" : "2019-05-15T14:00:00+02:00",
+        "end" : "2019-05-22T10:00:00+02:00"
+      },
+      "dateAsserted" : "2019-05-15",
+      "dosage" : [{
+        "text" : "Sumatriptan 50mg bei Migräne-Attacke",
+        "timing" : {
+          "repeat" : {
+            "frequency" : 1,
+            "period" : 1,
+            "periodUnit" : "d"
+          }
+        },
+        "asNeededBoolean" : true,
+        "route" : {
+          "coding" : [{
+            "system" : "http://standardterms.edqm.eu",
+            "code" : "20053000",
+            "display" : "Oral use"
+          }]
+        },
+        "doseAndRate" : [{
+          "doseQuantity" : {
+            "value" : 50,
+            "unit" : "mg",
+            "system" : "http://unitsofmeasure.org",
+            "code" : "mg"
+          }
+        }]
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "MedicationStatement/mii-exa-test-data-patient-10-medstatement-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/MedicationAdministration/mii-exa-test-data-patient-10-medadmin-1",
+    "resource" : {
+      "resourceType" : "MedicationAdministration",
+      "id" : "mii-exa-test-data-patient-10-medadmin-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationAdministration"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"MedicationAdministration_mii-exa-test-data-patient-10-medadmin-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: MedicationAdministration mii-exa-test-data-patient-10-medadmin-1</b></p><a name=\"mii-exa-test-data-patient-10-medadmin-1\"> </a><a name=\"hcmii-exa-test-data-patient-10-medadmin-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationAdministration\">MII PR Medikation MedicationAdministration</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>identifier</b>: <code>https://www.charite.de/fhir/sid/MedicationAdministrations</code>/MA_0000020</p><p><b>status</b>: Completed</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/medication-admin-category inpatient}\">Inpatient</span></p><p><b>medication</b>: <a href=\"Medication-mii-exa-test-data-medication-sumatriptan.html\">Medication Sumatriptan</a></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-patient-10.html\">Markus Wolf (official) Male, DoB: 1969-09-17 ( Medical record number (use: usual, ))</a></p><p><b>context</b>: <a href=\"Encounter-mii-exa-test-data-patient-10-encounter-1.html\">Encounter: identifier = Visit number; status = finished; class = inpatient encounter (ActCode#IMP); type = Einrichtungskontakt,Normalstationär; serviceType = Neurologie; period = 2019-05-14 --&gt; 2019-05-22</a></p><p><b>effective</b>: 2019-05-15 16:00:00+0200</p><p><b>request</b>: <a href=\"MedicationRequest-mii-exa-test-data-patient-10-medrequest-1.html\">MedicationRequest: identifier = https://www.charite.de/fhir/sid/MedicationOrders#MO_0000024; status = active; intent = order; medication[x] = -&gt;Medication Sumatriptan; authoredOn = 2019-05-15 14:00:00+0200</a></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td><td><b>Route</b></td><td><b>Dose</b></td></tr><tr><td style=\"display: none\">*</td><td>Sumatriptan 50mg oral bei Migräne</td><td><span title=\"Codes:{http://standardterms.edqm.eu 20053000}\">Oral use</span></td><td>50 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span></td></tr></table></div>"
+      },
+      "identifier" : [{
+        "system" : "https://www.charite.de/fhir/sid/MedicationAdministrations",
+        "value" : "MA_0000020"
+      }],
+      "status" : "completed",
+      "category" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/medication-admin-category",
+          "code" : "inpatient",
+          "display" : "Inpatient"
+        }]
+      },
+      "medicationReference" : {
+        "reference" : "Medication/mii-exa-test-data-medication-sumatriptan"
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-patient-10"
+      },
+      "context" : {
+        "reference" : "Encounter/mii-exa-test-data-patient-10-encounter-1"
+      },
+      "effectiveDateTime" : "2019-05-15T16:00:00+02:00",
+      "request" : {
+        "reference" : "MedicationRequest/mii-exa-test-data-patient-10-medrequest-1"
+      },
+      "dosage" : {
+        "text" : "Sumatriptan 50mg oral bei Migräne",
+        "route" : {
+          "coding" : [{
+            "system" : "http://standardterms.edqm.eu",
+            "code" : "20053000",
+            "display" : "Oral use"
+          }]
+        },
+        "dose" : {
+          "value" : 50,
+          "unit" : "mg",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "mg"
+        }
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "MedicationAdministration/mii-exa-test-data-patient-10-medadmin-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/MedicationRequest/mii-exa-test-data-patient-10-medrequest-2",
+    "resource" : {
+      "resourceType" : "MedicationRequest",
+      "id" : "mii-exa-test-data-patient-10-medrequest-2",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationRequest"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"MedicationRequest_mii-exa-test-data-patient-10-medrequest-2\"> </a><p class=\"res-header-id\"><b>Generated Narrative: MedicationRequest mii-exa-test-data-patient-10-medrequest-2</b></p><a name=\"mii-exa-test-data-patient-10-medrequest-2\"> </a><a name=\"hcmii-exa-test-data-patient-10-medrequest-2\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationRequest\">MII PR Medikation MedicationRequest</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>identifier</b>: <code>https://www.charite.de/fhir/sid/MedicationOrders</code>/MO_0000025</p><p><b>status</b>: Active</p><p><b>intent</b>: Order</p><p><b>medication</b>: <a href=\"Medication-mii-exa-test-data-medication-topiramat.html\">Medication Topiramat</a></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-patient-10.html\">Markus Wolf (official) Male, DoB: 1969-09-17 ( Medical record number (use: usual, ))</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-patient-10-encounter-1.html\">Encounter: identifier = Visit number; status = finished; class = inpatient encounter (ActCode#IMP); type = Einrichtungskontakt,Normalstationär; serviceType = Neurologie; period = 2019-05-14 --&gt; 2019-05-22</a></p><p><b>authoredOn</b>: 2019-05-16 09:00:00+0200</p><blockquote><p><b>dosageInstruction</b></p><p><b>text</b>: Topiramat 50mg 2x täglich zur Prophylaxe</p><p><b>timing</b>: 2 per 1 day</p><p><b>route</b>: <span title=\"Codes:{http://standardterms.edqm.eu 20053000}\">Oral use</span></p><h3>DoseAndRates</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Dose[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>50 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span></td></tr></table></blockquote><h3>Substitutions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Allowed[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>true</td></tr></table></div>"
+      },
+      "identifier" : [{
+        "system" : "https://www.charite.de/fhir/sid/MedicationOrders",
+        "value" : "MO_0000025"
+      }],
+      "status" : "active",
+      "intent" : "order",
+      "medicationReference" : {
+        "reference" : "Medication/mii-exa-test-data-medication-topiramat"
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-patient-10"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-patient-10-encounter-1"
+      },
+      "authoredOn" : "2019-05-16T09:00:00+02:00",
+      "dosageInstruction" : [{
+        "text" : "Topiramat 50mg 2x täglich zur Prophylaxe",
+        "timing" : {
+          "repeat" : {
+            "frequency" : 2,
+            "period" : 1,
+            "periodUnit" : "d"
+          }
+        },
+        "route" : {
+          "coding" : [{
+            "system" : "http://standardterms.edqm.eu",
+            "code" : "20053000",
+            "display" : "Oral use"
+          }]
+        },
+        "doseAndRate" : [{
+          "doseQuantity" : {
+            "value" : 50,
+            "unit" : "mg",
+            "system" : "http://unitsofmeasure.org",
+            "code" : "mg"
+          }
+        }]
+      }],
+      "substitution" : {
+        "allowedBoolean" : true
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "MedicationRequest/mii-exa-test-data-patient-10-medrequest-2"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/MedicationStatement/mii-exa-test-data-patient-10-medstatement-2",
+    "resource" : {
+      "resourceType" : "MedicationStatement",
+      "id" : "mii-exa-test-data-patient-10-medstatement-2",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"MedicationStatement_mii-exa-test-data-patient-10-medstatement-2\"> </a><p class=\"res-header-id\"><b>Generated Narrative: MedicationStatement mii-exa-test-data-patient-10-medstatement-2</b></p><a name=\"mii-exa-test-data-patient-10-medstatement-2\"> </a><a name=\"hcmii-exa-test-data-patient-10-medstatement-2\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement\">MII PR Medikation MedicationStatement</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>identifier</b>: <code>https://www.charite.de/fhir/sid/MedicationStatements</code>/MS_0000026</p><p><b>basedOn</b>: <a href=\"MedicationRequest-mii-exa-test-data-patient-10-medrequest-2.html\">MedicationRequest: identifier = https://www.charite.de/fhir/sid/MedicationOrders#MO_0000025; status = active; intent = order; medication[x] = -&gt;Medication Topiramat; authoredOn = 2019-05-16 09:00:00+0200</a></p><p><b>status</b>: Active</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/medication-statement-category inpatient}, {http://ihe-d.de/CodeSystems/FallkontextBeiDokumentenerstellung E200}\">stationärer Aufenthalt</span></p><p><b>medication</b>: <a href=\"Medication-mii-exa-test-data-medication-topiramat.html\">Medication Topiramat</a></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-patient-10.html\">Markus Wolf (official) Male, DoB: 1969-09-17 ( Medical record number (use: usual, ))</a></p><p><b>context</b>: <a href=\"Encounter-mii-exa-test-data-patient-10-encounter-1.html\">Encounter: identifier = Visit number; status = finished; class = inpatient encounter (ActCode#IMP); type = Einrichtungskontakt,Normalstationär; serviceType = Neurologie; period = 2019-05-14 --&gt; 2019-05-22</a></p><p><b>effective</b>: 2019-05-16 09:00:00+0200 --&gt; 2019-05-22 10:00:00+0200</p><p><b>dateAsserted</b>: 2019-05-16</p><blockquote><p><b>dosage</b></p><p><b>text</b>: Topiramat 50mg 2x täglich zur Prophylaxe</p><p><b>timing</b>: 2 per 1 day</p><p><b>route</b>: <span title=\"Codes:{http://standardterms.edqm.eu 20053000}\">Oral use</span></p><h3>DoseAndRates</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Dose[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>50 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span></td></tr></table></blockquote></div>"
+      },
+      "identifier" : [{
+        "system" : "https://www.charite.de/fhir/sid/MedicationStatements",
+        "value" : "MS_0000026"
+      }],
+      "basedOn" : [{
+        "reference" : "MedicationRequest/mii-exa-test-data-patient-10-medrequest-2"
+      }],
+      "status" : "active",
+      "category" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/medication-statement-category",
+          "code" : "inpatient"
+        },
+        {
+          "system" : "http://ihe-d.de/CodeSystems/FallkontextBeiDokumentenerstellung",
+          "code" : "E200",
+          "display" : "stationärer Aufenthalt"
+        }]
+      },
+      "medicationReference" : {
+        "reference" : "Medication/mii-exa-test-data-medication-topiramat"
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-patient-10"
+      },
+      "context" : {
+        "reference" : "Encounter/mii-exa-test-data-patient-10-encounter-1"
+      },
+      "effectivePeriod" : {
+        "start" : "2019-05-16T09:00:00+02:00",
+        "end" : "2019-05-22T10:00:00+02:00"
+      },
+      "dateAsserted" : "2019-05-16",
+      "dosage" : [{
+        "text" : "Topiramat 50mg 2x täglich zur Prophylaxe",
+        "timing" : {
+          "repeat" : {
+            "frequency" : 2,
+            "period" : 1,
+            "periodUnit" : "d"
+          }
+        },
+        "route" : {
+          "coding" : [{
+            "system" : "http://standardterms.edqm.eu",
+            "code" : "20053000",
+            "display" : "Oral use"
+          }]
+        },
+        "doseAndRate" : [{
+          "doseQuantity" : {
+            "value" : 50,
+            "unit" : "mg",
+            "system" : "http://unitsofmeasure.org",
+            "code" : "mg"
+          }
+        }]
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "MedicationStatement/mii-exa-test-data-patient-10-medstatement-2"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/MedicationAdministration/mii-exa-test-data-patient-10-medadmin-2",
+    "resource" : {
+      "resourceType" : "MedicationAdministration",
+      "id" : "mii-exa-test-data-patient-10-medadmin-2",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationAdministration"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"MedicationAdministration_mii-exa-test-data-patient-10-medadmin-2\"> </a><p class=\"res-header-id\"><b>Generated Narrative: MedicationAdministration mii-exa-test-data-patient-10-medadmin-2</b></p><a name=\"mii-exa-test-data-patient-10-medadmin-2\"> </a><a name=\"hcmii-exa-test-data-patient-10-medadmin-2\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationAdministration\">MII PR Medikation MedicationAdministration</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>identifier</b>: <code>https://www.charite.de/fhir/sid/MedicationAdministrations</code>/MA_0000021</p><p><b>status</b>: Completed</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/medication-admin-category inpatient}\">Inpatient</span></p><p><b>medication</b>: <a href=\"Medication-mii-exa-test-data-medication-topiramat.html\">Medication Topiramat</a></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-patient-10.html\">Markus Wolf (official) Male, DoB: 1969-09-17 ( Medical record number (use: usual, ))</a></p><p><b>context</b>: <a href=\"Encounter-mii-exa-test-data-patient-10-encounter-1.html\">Encounter: identifier = Visit number; status = finished; class = inpatient encounter (ActCode#IMP); type = Einrichtungskontakt,Normalstationär; serviceType = Neurologie; period = 2019-05-14 --&gt; 2019-05-22</a></p><p><b>effective</b>: 2019-05-16 09:00:00+0200</p><p><b>request</b>: <a href=\"MedicationRequest-mii-exa-test-data-patient-10-medrequest-2.html\">MedicationRequest: identifier = https://www.charite.de/fhir/sid/MedicationOrders#MO_0000025; status = active; intent = order; medication[x] = -&gt;Medication Topiramat; authoredOn = 2019-05-16 09:00:00+0200</a></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td><td><b>Route</b></td><td><b>Dose</b></td></tr><tr><td style=\"display: none\">*</td><td>Topiramat 50mg oral zur Prophylaxe</td><td><span title=\"Codes:{http://standardterms.edqm.eu 20053000}\">Oral use</span></td><td>50 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span></td></tr></table></div>"
+      },
+      "identifier" : [{
+        "system" : "https://www.charite.de/fhir/sid/MedicationAdministrations",
+        "value" : "MA_0000021"
+      }],
+      "status" : "completed",
+      "category" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/medication-admin-category",
+          "code" : "inpatient",
+          "display" : "Inpatient"
+        }]
+      },
+      "medicationReference" : {
+        "reference" : "Medication/mii-exa-test-data-medication-topiramat"
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-patient-10"
+      },
+      "context" : {
+        "reference" : "Encounter/mii-exa-test-data-patient-10-encounter-1"
+      },
+      "effectiveDateTime" : "2019-05-16T09:00:00+02:00",
+      "request" : {
+        "reference" : "MedicationRequest/mii-exa-test-data-patient-10-medrequest-2"
+      },
+      "dosage" : {
+        "text" : "Topiramat 50mg oral zur Prophylaxe",
+        "route" : {
+          "coding" : [{
+            "system" : "http://standardterms.edqm.eu",
+            "code" : "20053000",
+            "display" : "Oral use"
+          }]
+        },
+        "dose" : {
+          "value" : 50,
+          "unit" : "mg",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "mg"
+        }
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "MedicationAdministration/mii-exa-test-data-patient-10-medadmin-2"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/List/mii-exa-test-data-patient-10-list-aufnahmemedikation",
+    "resource" : {
+      "resourceType" : "List",
+      "id" : "mii-exa-test-data-patient-10-list-aufnahmemedikation",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/medikationsliste"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"List_mii-exa-test-data-patient-10-list-aufnahmemedikation\"> </a><p class=\"res-header-id\"><b>Generated Narrative: List mii-exa-test-data-patient-10-list-aufnahmemedikation</b></p><a name=\"mii-exa-test-data-patient-10-list-aufnahmemedikation\"> </a><a name=\"hcmii-exa-test-data-patient-10-list-aufnahmemedikation\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/medikationsliste\">MII PR Medikation Medikationsliste</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><h2>Aufnahmemedikation</h2><table class=\"clstu\"><tr><td>Mode: Snapshot List </td><td>Status: Current </td><td>Code: Medication List </td></tr><tr><td>Subject: <a href=\"Patient-mii-exa-test-data-patient-10.html\">Markus Wolf (official) Male, DoB: 1969-09-17 ( Medical record number (use: usual, ))</a></td></tr></table><table class=\"grid\"><tr style=\"backgound-color: #eeeeee\"><td><b>Items</b></td></tr><tr><td><a href=\"MedicationStatement-mii-exa-test-data-patient-10-medstatement-1.html\">MedicationStatement: identifier = https://www.charite.de/fhir/sid/MedicationStatements#MS_0000025; status = active; category = stationärer Aufenthalt; medication[x] = -&gt;Medication Sumatriptan; effective[x] = 2019-05-15 14:00:00+0200 --&gt; 2019-05-22 10:00:00+0200; dateAsserted = 2019-05-15</a></td></tr></table></div>"
+      },
+      "status" : "current",
+      "mode" : "snapshot",
+      "title" : "Aufnahmemedikation",
+      "code" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/list-example-use-codes",
+          "code" : "medications"
+        },
+        {
+          "system" : "http://ihe-d.de/CodeSystems/FallkontextBeiDokumentenerstellung",
+          "code" : "E210"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-patient-10"
+      },
+      "entry" : [{
+        "item" : {
+          "reference" : "MedicationStatement/mii-exa-test-data-patient-10-medstatement-1"
+        }
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "List/mii-exa-test-data-patient-10-list-aufnahmemedikation"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/List/mii-exa-test-data-patient-10-list-entlassmedikation",
+    "resource" : {
+      "resourceType" : "List",
+      "id" : "mii-exa-test-data-patient-10-list-entlassmedikation",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/medikationsliste"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"List_mii-exa-test-data-patient-10-list-entlassmedikation\"> </a><p class=\"res-header-id\"><b>Generated Narrative: List mii-exa-test-data-patient-10-list-entlassmedikation</b></p><a name=\"mii-exa-test-data-patient-10-list-entlassmedikation\"> </a><a name=\"hcmii-exa-test-data-patient-10-list-entlassmedikation\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/medikationsliste\">MII PR Medikation Medikationsliste</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><h2>Entlassmedikation</h2><table class=\"clstu\"><tr><td>Mode: Snapshot List </td><td>Status: Current </td><td>Code: Medication List </td></tr><tr><td>Subject: <a href=\"Patient-mii-exa-test-data-patient-10.html\">Markus Wolf (official) Male, DoB: 1969-09-17 ( Medical record number (use: usual, ))</a></td></tr></table><table class=\"grid\"><tr style=\"backgound-color: #eeeeee\"><td><b>Items</b></td></tr><tr><td><a href=\"MedicationStatement-mii-exa-test-data-patient-10-medstatement-1.html\">MedicationStatement: identifier = https://www.charite.de/fhir/sid/MedicationStatements#MS_0000025; status = active; category = stationärer Aufenthalt; medication[x] = -&gt;Medication Sumatriptan; effective[x] = 2019-05-15 14:00:00+0200 --&gt; 2019-05-22 10:00:00+0200; dateAsserted = 2019-05-15</a></td></tr></table></div>"
+      },
+      "status" : "current",
+      "mode" : "snapshot",
+      "title" : "Entlassmedikation",
+      "code" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/list-example-use-codes",
+          "code" : "medications"
+        },
+        {
+          "system" : "http://ihe-d.de/CodeSystems/FallkontextBeiDokumentenerstellung",
+          "code" : "E230"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-patient-10"
+      },
+      "entry" : [{
+        "item" : {
+          "reference" : "MedicationStatement/mii-exa-test-data-patient-10-medstatement-1"
+        }
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "List/mii-exa-test-data-patient-10-list-entlassmedikation"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Medication/mii-exa-test-data-medication-sumatriptan",
+    "resource" : {
+      "resourceType" : "Medication",
+      "id" : "mii-exa-test-data-medication-sumatriptan",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Medication_mii-exa-test-data-medication-sumatriptan\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Medication mii-exa-test-data-medication-sumatriptan</b></p><a name=\"mii-exa-test-data-medication-sumatriptan\"> </a><a name=\"hcmii-exa-test-data-medication-sumatriptan\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication\">MII PR Medikation Medication</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>code</b>: <span title=\"Codes:{http://fhir.de/CodeSystem/bfarm/atc N02CC01}\">Sumatriptan</span></p><p><b>status</b>: Active</p><p><b>form</b>: <span title=\"Codes:{http://standardterms.edqm.eu 10219000}\">Tablet</span></p><h3>Ingredients</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Item[x]</b></td><td><b>Strength</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://fhir.de/CodeSystem/ask 24065}\">Sumatriptansuccinat</span></td><td>50 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span>/1 1<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code1 = '1')</span></td></tr></table></div>"
+      },
+      "code" : {
+        "coding" : [{
+          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
+          "version" : "2024",
+          "code" : "N02CC01",
+          "display" : "Sumatriptan"
+        }]
+      },
+      "status" : "active",
+      "form" : {
+        "coding" : [{
+          "system" : "http://standardterms.edqm.eu",
+          "code" : "10219000",
+          "display" : "Tablet"
+        }]
+      },
+      "ingredient" : [{
+        "itemCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://fhir.de/CodeSystem/ask",
+            "version" : "20260105",
+            "code" : "24065"
+          }]
+        },
+        "strength" : {
+          "numerator" : {
+            "value" : 50,
+            "unit" : "mg",
+            "system" : "http://unitsofmeasure.org",
+            "code" : "mg"
+          },
+          "denominator" : {
+            "value" : 1,
+            "unit" : "1",
+            "system" : "http://unitsofmeasure.org",
+            "code" : "1"
+          }
+        }
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Medication/mii-exa-test-data-medication-sumatriptan"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Medication/mii-exa-test-data-medication-topiramat",
+    "resource" : {
+      "resourceType" : "Medication",
+      "id" : "mii-exa-test-data-medication-topiramat",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Medication_mii-exa-test-data-medication-topiramat\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Medication mii-exa-test-data-medication-topiramat</b></p><a name=\"mii-exa-test-data-medication-topiramat\"> </a><a name=\"hcmii-exa-test-data-medication-topiramat\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication\">MII PR Medikation Medication</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>code</b>: <span title=\"Codes:{http://fhir.de/CodeSystem/bfarm/atc N03AX11}\">Topiramat</span></p><p><b>status</b>: Active</p><p><b>form</b>: <span title=\"Codes:{http://standardterms.edqm.eu 10221000}\">Film-coated tablet</span></p><h3>Ingredients</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Item[x]</b></td><td><b>Strength</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://fhir.de/CodeSystem/ask 24994}\">Topiramat</span></td><td>50 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span>/1 1<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code1 = '1')</span></td></tr></table></div>"
+      },
+      "code" : {
+        "coding" : [{
+          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
+          "version" : "2024",
+          "code" : "N03AX11",
+          "display" : "Topiramat"
+        }]
+      },
+      "status" : "active",
+      "form" : {
+        "coding" : [{
+          "system" : "http://standardterms.edqm.eu",
+          "code" : "10221000",
+          "display" : "Film-coated tablet"
+        }]
+      },
+      "ingredient" : [{
+        "itemCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://fhir.de/CodeSystem/ask",
+            "version" : "20260105",
+            "code" : "24994"
+          }]
+        },
+        "strength" : {
+          "numerator" : {
+            "value" : 50,
+            "unit" : "mg",
+            "system" : "http://unitsofmeasure.org",
+            "code" : "mg"
+          },
+          "denominator" : {
+            "value" : 1,
+            "unit" : "1",
+            "system" : "http://unitsofmeasure.org",
+            "code" : "1"
+          }
+        }
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Medication/mii-exa-test-data-medication-topiramat"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Organization/mii-exa-test-data-organization-charite",
+    "resource" : {
+      "resourceType" : "Organization",
+      "id" : "mii-exa-test-data-organization-charite",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Organization_mii-exa-test-data-organization-charite\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Organization mii-exa-test-data-organization-charite</b></p><a name=\"mii-exa-test-data-organization-charite\"> </a><a name=\"hcmii-exa-test-data-organization-charite\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/organization-type prov}\">Healthcare Provider</span></p><p><b>name</b>: Charité – Universitätsmedizin Berlin</p></div>"
+      },
+      "type" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/organization-type",
+          "code" : "prov",
+          "display" : "Healthcare Provider"
+        }]
+      }],
+      "name" : "Charité – Universitätsmedizin Berlin"
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Organization/mii-exa-test-data-organization-charite"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Organization/mii-exa-test-data-organization-labor-berlin",
+    "resource" : {
+      "resourceType" : "Organization",
+      "id" : "mii-exa-test-data-organization-labor-berlin",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Organization_mii-exa-test-data-organization-labor-berlin\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Organization mii-exa-test-data-organization-labor-berlin</b></p><a name=\"mii-exa-test-data-organization-labor-berlin\"> </a><a name=\"hcmii-exa-test-data-organization-labor-berlin\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/organization-type prov}\">Healthcare Provider</span></p><p><b>name</b>: Labor Berlin – Charité Vivantes GmbH</p></div>"
+      },
+      "type" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/organization-type",
+          "code" : "prov",
+          "display" : "Healthcare Provider"
+        }]
+      }],
+      "name" : "Labor Berlin – Charité Vivantes GmbH"
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Organization/mii-exa-test-data-organization-labor-berlin"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Organization/mii-exa-test-data-organization-biobank-charite",
+    "resource" : {
+      "resourceType" : "Organization",
+      "id" : "mii-exa-test-data-organization-biobank-charite",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Organization"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Organization_mii-exa-test-data-organization-biobank-charite\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Organization mii-exa-test-data-organization-biobank-charite</b></p><a name=\"mii-exa-test-data-organization-biobank-charite\"> </a><a name=\"hcmii-exa-test-data-organization-biobank-charite\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Organization\">MII PR Biobank Organization Sammlung Biobank</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>Description extension</b>: Zentrale Biobank der Charité</p><p><b>identifier</b>: <code>http://www.bbmri-eric.eu/</code>/de-12345</p><p><b>name</b>: Zentrale Biobank der Charité</p><p><b>alias</b>: ZeBanC</p><p><b>partOf</b>: <a href=\"Organization-mii-exa-test-data-organization-charite.html\">Organization Charité – Universitätsmedizin Berlin</a></p><h3>Contacts</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Extension</b></td><td><b>Purpose</b></td><td><b>Name</b></td><td><b>Telecom</b></td><td><b>Address</b></td></tr><tr><td style=\"display: none\">*</td><td/><td><span title=\"Codes:{https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/CodeSystem/ContactType RESEARCH}\">Research</span></td><td>Koch Robert </td><td><a href=\"mailto:robert.koch@charite.de\">robert.koch@charite.de</a></td><td>Südring 7 Berlin 13353 </td></tr></table></div>"
+      },
+      "extension" : [{
+        "url" : "https://fhir.bbmri-eric.eu/StructureDefinition/miabis-organization-description-extension",
+        "valueString" : "Zentrale Biobank der Charité"
+      }],
+      "identifier" : [{
+        "system" : "http://www.bbmri-eric.eu/",
+        "value" : "de-12345"
+      }],
+      "name" : "Zentrale Biobank der Charité",
+      "alias" : ["ZeBanC"],
+      "partOf" : {
+        "reference" : "Organization/mii-exa-test-data-organization-charite"
+      },
+      "contact" : [{
+        "extension" : [{
+          "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/KontaktRolle",
+          "valueString" : "Direktor"
+        }],
+        "purpose" : {
+          "coding" : [{
+            "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/CodeSystem/ContactType",
+            "code" : "RESEARCH"
+          }]
+        },
+        "name" : {
+          "family" : "Robert",
+          "given" : ["Koch"],
+          "prefix" : ["Prof."]
+        },
+        "telecom" : [{
+          "system" : "email",
+          "value" : "robert.koch@charite.de"
+        }],
+        "address" : {
+          "line" : ["Südring 7"],
+          "city" : "Berlin",
+          "postalCode" : "13353"
+        }
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Organization/mii-exa-test-data-organization-biobank-charite"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Practitioner/mii-exa-test-data-practitioner-physician-1",
+    "resource" : {
+      "resourceType" : "Practitioner",
+      "id" : "mii-exa-test-data-practitioner-physician-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Practitioner_mii-exa-test-data-practitioner-physician-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Practitioner mii-exa-test-data-practitioner-physician-1</b></p><a name=\"mii-exa-test-data-practitioner-physician-1\"> </a><a name=\"hcmii-exa-test-data-practitioner-physician-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>active</b>: true</p><p><b>name</b>: Rahel Hirsch </p></div>"
+      },
+      "active" : true,
+      "name" : [{
+        "family" : "Hirsch",
+        "given" : ["Rahel"]
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Practitioner/mii-exa-test-data-practitioner-physician-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/PractitionerRole/mii-exa-test-data-practitioner-role-physician-1",
+    "resource" : {
+      "resourceType" : "PractitionerRole",
+      "id" : "mii-exa-test-data-practitioner-role-physician-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-studie/StructureDefinition/mii-pr-studie-beteiligte-person"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"PractitionerRole_mii-exa-test-data-practitioner-role-physician-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: PractitionerRole mii-exa-test-data-practitioner-role-physician-1</b></p><a name=\"mii-exa-test-data-practitioner-role-physician-1\"> </a><a name=\"hcmii-exa-test-data-practitioner-role-physician-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/modul-studie/StructureDefinition/mii-pr-studie-beteiligte-person\">MII PR Studie Beteiligte Person</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>active</b>: true</p><p><b>practitioner</b>: <a href=\"Practitioner-mii-exa-test-data-practitioner-physician-1.html\">Practitioner Rahel Hirsch </a></p><p><b>organization</b>: <a href=\"Organization-mii-exa-test-data-organization-charite.html\">Organization Charité – Universitätsmedizin Berlin</a></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 309343006}\">Physician (occupation)</span></p><p><b>telecom</b>: <a href=\"mailto:studienteam@charite.de\">studienteam@charite.de</a></p></div>"
+      },
+      "active" : true,
+      "practitioner" : {
+        "reference" : "Practitioner/mii-exa-test-data-practitioner-physician-1"
+      },
+      "organization" : {
+        "reference" : "Organization/mii-exa-test-data-organization-charite"
+      },
+      "code" : [{
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "309343006",
+          "display" : "Physician (occupation)"
+        }]
+      }],
+      "telecom" : [{
+        "system" : "email",
+        "value" : "studienteam@charite.de",
+        "use" : "work"
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "PractitionerRole/mii-exa-test-data-practitioner-role-physician-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Device/mii-exa-test-data-device-roche-cobas",
+    "resource" : {
+      "resourceType" : "Device",
+      "id" : "mii-exa-test-data-device-roche-cobas",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Device_mii-exa-test-data-device-roche-cobas\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Device mii-exa-test-data-device-roche-cobas</b></p><a name=\"mii-exa-test-data-device-roche-cobas\"> </a><a name=\"hcmii-exa-test-data-device-roche-cobas\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>identifier</b>: <code>https://www.charite.de/fhir/sid/Laboratory-device-identifier</code>/RocheCobas</p><p><b>status</b>: Active</p><p><b>manufacturer</b>: Roche</p><h3>DeviceNames</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Name</b></td><td><b>Type</b></td></tr><tr><td style=\"display: none\">*</td><td>cobas</td><td>Manufacturer name</td></tr></table></div>"
+      },
+      "identifier" : [{
+        "system" : "https://www.charite.de/fhir/sid/Laboratory-device-identifier",
+        "value" : "RocheCobas"
+      }],
+      "status" : "active",
+      "manufacturer" : "Roche",
+      "deviceName" : [{
+        "name" : "cobas",
+        "type" : "manufacturer-name"
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Device/mii-exa-test-data-device-roche-cobas"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Device/mii-exa-test-data-device-roche-cobas-c303",
+    "resource" : {
+      "resourceType" : "Device",
+      "id" : "mii-exa-test-data-device-roche-cobas-c303",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Device_mii-exa-test-data-device-roche-cobas-c303\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Device mii-exa-test-data-device-roche-cobas-c303</b></p><a name=\"mii-exa-test-data-device-roche-cobas-c303\"> </a><a name=\"hcmii-exa-test-data-device-roche-cobas-c303\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>identifier</b>: <code>https://www.charite.de/fhir/sid/Laboratory-device-identifier</code>/RocheCobasC303</p><p><b>status</b>: Active</p><p><b>manufacturer</b>: Roche</p><h3>DeviceNames</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Name</b></td><td><b>Type</b></td></tr><tr><td style=\"display: none\">*</td><td>cobas</td><td>Manufacturer name</td></tr></table><p><b>modelNumber</b>: c 303</p><blockquote><p><b>property</b></p><p><b>type</b>: <span title=\"Codes:{urn:iso:std:iso:11073:10101 69684}\">MDC_DEV_ANALY_BLD_CHEM_MULTI_PARAM</span></p></blockquote><blockquote><p><b>property</b></p><p><b>type</b>: <span title=\"Codes:{urn:iso:std:iso:11073:10101 69652}\">MDC_DEV_ANALY_URINE_CHEM</span></p></blockquote><blockquote><p><b>property</b></p><p><b>type</b>: <span title=\"Codes:{urn:iso:std:iso:11073:10101 69844}\">MDC_DEV_METER_BLD_CHEM</span></p></blockquote><p><b>parent</b>: <a href=\"Device-mii-exa-test-data-device-roche-cobas.html\">Device: identifier = https://www.charite.de/fhir/sid/Laboratory-device-identifier#RocheCobas; status = active; manufacturer = Roche</a></p></div>"
+      },
+      "identifier" : [{
+        "system" : "https://www.charite.de/fhir/sid/Laboratory-device-identifier",
+        "value" : "RocheCobasC303"
+      }],
+      "status" : "active",
+      "manufacturer" : "Roche",
+      "deviceName" : [{
+        "name" : "cobas",
+        "type" : "manufacturer-name"
+      }],
+      "modelNumber" : "c 303",
+      "property" : [{
+        "type" : {
+          "coding" : [{
+            "system" : "urn:iso:std:iso:11073:10101",
+            "code" : "69684"
+          }]
+        }
+      },
+      {
+        "type" : {
+          "coding" : [{
+            "system" : "urn:iso:std:iso:11073:10101",
+            "code" : "69652"
+          }]
+        }
+      },
+      {
+        "type" : {
+          "coding" : [{
+            "system" : "urn:iso:std:iso:11073:10101",
+            "code" : "69844"
+          }]
+        }
+      }],
+      "parent" : {
+        "reference" : "Device/mii-exa-test-data-device-roche-cobas"
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Device/mii-exa-test-data-device-roche-cobas-c303"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Device/mii-exa-test-data-device-roche-cobas-e402",
+    "resource" : {
+      "resourceType" : "Device",
+      "id" : "mii-exa-test-data-device-roche-cobas-e402",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Device_mii-exa-test-data-device-roche-cobas-e402\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Device mii-exa-test-data-device-roche-cobas-e402</b></p><a name=\"mii-exa-test-data-device-roche-cobas-e402\"> </a><a name=\"hcmii-exa-test-data-device-roche-cobas-e402\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>identifier</b>: <code>https://www.charite.de/fhir/sid/Laboratory-device-identifier</code>/RocheCobasE402</p><p><b>status</b>: Active</p><p><b>manufacturer</b>: Roche</p><h3>DeviceNames</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Name</b></td><td><b>Type</b></td></tr><tr><td style=\"display: none\">*</td><td>cobas</td><td>Manufacturer name</td></tr></table><p><b>modelNumber</b>: e 402</p><h3>Properties</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{urn:iso:std:iso:11073:10101 160220}\">MDC_CONC_HBA1C</span></td></tr></table><p><b>parent</b>: <a href=\"Device-mii-exa-test-data-device-roche-cobas.html\">Device: identifier = https://www.charite.de/fhir/sid/Laboratory-device-identifier#RocheCobas; status = active; manufacturer = Roche</a></p></div>"
+      },
+      "identifier" : [{
+        "system" : "https://www.charite.de/fhir/sid/Laboratory-device-identifier",
+        "value" : "RocheCobasE402"
+      }],
+      "status" : "active",
+      "manufacturer" : "Roche",
+      "deviceName" : [{
+        "name" : "cobas",
+        "type" : "manufacturer-name"
+      }],
+      "modelNumber" : "e 402",
+      "property" : [{
+        "type" : {
+          "coding" : [{
+            "system" : "urn:iso:std:iso:11073:10101",
+            "code" : "160220"
+          }]
+        }
+      }],
+      "parent" : {
+        "reference" : "Device/mii-exa-test-data-device-roche-cobas"
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Device/mii-exa-test-data-device-roche-cobas-e402"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/DeviceMetric/mii-exa-test-data-devicemetric-roche-cobas-c303-1",
+    "resource" : {
+      "resourceType" : "DeviceMetric",
+      "id" : "mii-exa-test-data-devicemetric-roche-cobas-c303-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"DeviceMetric_mii-exa-test-data-devicemetric-roche-cobas-c303-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: DeviceMetric mii-exa-test-data-devicemetric-roche-cobas-c303-1</b></p><a name=\"mii-exa-test-data-devicemetric-roche-cobas-c303-1\"> </a><a name=\"hcmii-exa-test-data-devicemetric-roche-cobas-c303-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>identifier</b>: <code>https://www.charite.de/fhir/sid/Laboratory-device-identifier</code>/RocheCobasC303-160192</p><p><b>type</b>: <span title=\"Codes:{urn:iso:std:iso:11073:10101 160192}\">MDC_CONC_GLU_VENOUS_WHOLEBLOOD</span></p><p><b>source</b>: <a href=\"Device-mii-exa-test-data-device-roche-cobas-c303.html\">Device: identifier = https://www.charite.de/fhir/sid/Laboratory-device-identifier#RocheCobasC303; status = active; manufacturer = Roche; modelNumber = c 303</a></p><p><b>category</b>: Measurement</p></div>"
+      },
+      "identifier" : [{
+        "system" : "https://www.charite.de/fhir/sid/Laboratory-device-identifier",
+        "value" : "RocheCobasC303-160192"
+      }],
+      "type" : {
+        "coding" : [{
+          "system" : "urn:iso:std:iso:11073:10101",
+          "code" : "160192"
+        }]
+      },
+      "source" : {
+        "reference" : "Device/mii-exa-test-data-device-roche-cobas-c303"
+      },
+      "category" : "measurement"
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "DeviceMetric/mii-exa-test-data-devicemetric-roche-cobas-c303-1"
+    }
+  }]
+}
+
+```

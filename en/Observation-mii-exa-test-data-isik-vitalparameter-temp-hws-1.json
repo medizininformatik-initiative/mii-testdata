@@ -1,0 +1,60 @@
+{
+  "resourceType" : "Observation",
+  "id" : "mii-exa-test-data-isik-vitalparameter-temp-hws-1",
+  "meta" : {
+    "source" : "https://www.charite.de/fhir/kds-testdata",
+    "profile" : ["https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-halswirbelsaeule"],
+    "security" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "code" : "HTEST",
+      "display" : "test health data"
+    }]
+  },
+  "language" : "en",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-isik-vitalparameter-temp-hws-1</b></p><a name=\"mii-exa-test-data-isik-vitalparameter-temp-hws-1\"> </a><a name=\"hcmii-exa-test-data-isik-vitalparameter-temp-hws-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.icu@2027.0.0-ballot.3&amp;canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-halswirbelsaeule\">SD MII ICU Koerpertemperatur Halswirbelsaeule</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 364419004}, {http://loinc.org 8310-5}\">Cervical spine temperature (observable entity)</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-isik-vitalparameter-patient-1.html\">Viktoria Vogel  Female, DoB: 1968-04-17 ( https://www.charite.de/fhir/sid/patientenidentifikation#ISIK-VITAL-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-isik-vitalparameter-encounter-1.html\">Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2026-05-11 --&gt; 2026-05-14</a></p><p><b>effective</b>: 2026-05-12 11:05:00+0200</p><p><b>performer</b>: Pflegefachkraft Station 14i</p><p><b>value</b>: 36.8 Grad Celsius<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeCel = 'Cel')</span></p><p><b>bodySite</b>: <span title=\"Codes:{http://snomed.info/sct 122494005}\">Cervical vertebral column structure (body structure)</span></p></div>"
+  },
+  "status" : "final",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "vital-signs"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "364419004",
+      "display" : "Cervical spine temperature (observable entity)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "8310-5",
+      "display" : "Body temperature"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/mii-exa-test-data-isik-vitalparameter-patient-1"
+  },
+  "encounter" : {
+    "reference" : "Encounter/mii-exa-test-data-isik-vitalparameter-encounter-1"
+  },
+  "effectiveDateTime" : "2026-05-12T11:05:00+02:00",
+  "performer" : [{
+    "display" : "Pflegefachkraft Station 14i"
+  }],
+  "valueQuantity" : {
+    "value" : 36.8,
+    "unit" : "Grad Celsius",
+    "system" : "http://unitsofmeasure.org",
+    "code" : "Cel"
+  },
+  "bodySite" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "122494005",
+      "display" : "Cervical vertebral column structure (body structure)"
+    }]
+  }
+}

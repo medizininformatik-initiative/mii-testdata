@@ -1,0 +1,106 @@
+# Mikroskopische Befunde Grouper - MII KDS Test Data v2027.0.0-ballot
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **Mikroskopische Befunde Grouper**
+
+## Example Observation: Mikroskopische Befunde Grouper
+
+Mikroskopie-Grouper: Befunde der Prostatastanzen 01 und 03
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "Observation",
+  "id" : "mii-exa-test-data-patho-micro-grouper-1",
+  "meta" : {
+    "lastUpdated" : "2024-01-20T16:00:00+01:00",
+    "source" : "https://www.charite.de/fhir/kds-testdata",
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-microscopic-grouper"],
+    "security" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "code" : "HTEST",
+      "display" : "test health data"
+    }]
+  },
+  "identifier" : [{
+    "system" : "https://www.charite.de/fhir/sid/patho/befund",
+    "value" : "E_24_001_MIKRO"
+  }],
+  "basedOn" : [{
+    "reference" : "ServiceRequest/mii-exa-test-data-patho-request-1"
+  }],
+  "status" : "final",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "laboratory"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "22635-7"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/mii-exa-test-data-patho-patient-1"
+  },
+  "effectiveDateTime" : "2024-01-17T10:00:00+01:00",
+  "performer" : [{
+    "reference" : "Practitioner/mii-exa-test-data-patho-practitioner-1"
+  }],
+  "valueString" : "Mikroskopische Befunde beider Prostatastanzen",
+  "bodySite" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "41216001",
+      "display" : "Prostate"
+    }]
+  },
+  "method" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "104157003",
+      "display" : "Light microscopy (procedure)"
+    }]
+  },
+  "specimen" : {
+    "reference" : "Specimen/mii-exa-test-data-patho-specimen-01-slide"
+  },
+  "hasMember" : [{
+    "reference" : "Observation/mii-exa-test-data-patho-histo-typ-01"
+  },
+  {
+    "reference" : "Observation/mii-exa-test-data-patho-morph-text-01"
+  },
+  {
+    "reference" : "Observation/mii-exa-test-data-patho-primaer-gleason-01"
+  },
+  {
+    "reference" : "Observation/mii-exa-test-data-patho-sekundaer-gleason-01"
+  },
+  {
+    "reference" : "Observation/mii-exa-test-data-patho-gleason-grading-01"
+  },
+  {
+    "reference" : "Observation/mii-exa-test-data-patho-tumoranteil-01"
+  },
+  {
+    "reference" : "Observation/mii-exa-test-data-patho-histo-typ-03"
+  },
+  {
+    "reference" : "Observation/mii-exa-test-data-patho-morph-text-03"
+  }],
+  "derivedFrom" : [{
+    "reference" : "Media/mii-exa-test-data-patho-image-1"
+  },
+  {
+    "reference" : "ImagingStudy/mii-exa-test-data-patho-imaging-study-1"
+  }]
+}
+
+```

@@ -1,0 +1,206 @@
+# mii-exa-test-data-mikrobio-ct-wert-1 - MII KDS Test Data v2027.0.0-ballot
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **mii-exa-test-data-mikrobio-ct-wert-1**
+
+## Example Observation: mii-exa-test-data-mikrobio-ct-wert-1
+
+Information Source: [https://www.charite.de/fhir/mikrobiologie-lab-system](https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&canonical=https://www.charite.de/fhir/mikrobiologie-lab-system)
+
+Profile: [MII PR Mikrobio CT Wert](https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&canonical=https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-ct-wert)
+
+Security Label: [test health data (Details: ActReason code HTEST = 'test health data')](http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html)
+
+**identifier**: Observation Instance Identifier/ct-wert-1
+
+**basedOn**: [ServiceRequest Microbiology procedure (procedure)](ServiceRequest-mii-exa-test-data-mikrobio-servicerequest-1.md)
+
+**status**: Final
+
+**category**: Laboratory, Microbiology
+
+**code**: Influenza virus A H3 RNA [Cycle Threshold #] in Specimen by NAA with probe detection
+
+**subject**: [Sigmund Sepsis Male, DoB: 1957-08-14 ( https://www.charite.de/fhir/sid/patientenidentifikation#MIKROBIO-TEST-001)](Patient-mii-exa-test-data-mikrobio-patient-1.md)
+
+**encounter**: [Encounter: identifier = https://www.charite.de/fhir/sid/encounter-identifier#MIKROBIO-ENC-001; status = finished; class = inpatient encounter (ActCode#IMP); period = 2026-04-01 --> 2026-04-14](Encounter-mii-exa-test-data-mikrobio-encounter-1.md)
+
+**effective**: 2026-04-03 17:00:00+0200
+
+**issued**: 2026-04-03 18:00:00+0200
+
+**value**: <21.3 Ct (Details: UCUM code1 = '1')
+
+**interpretation**: High
+
+**note**: 
+
+> 
+
+Niedriger CT-Wert (21.3) spricht fuer hohe Erregerlast.
+
+
+**method**: Real-time PCR technique
+
+**specimen**: [Specimen: identifier = https://www.charite.de/fhir/sid/Probennummer#BLOOD-CULT-001; status = available; type = Blood specimen (specimen)](Specimen-mii-exa-test-data-mikrobio-specimen-1.md)
+
+**device**: [Device: identifier = https://www.charite.de/fhir/sid/device-identifier#PCR-CYCLER-001](Device-mii-exa-test-data-mikrobio-device-pcr-1.md)
+
+### ReferenceRanges
+
+| | | |
+| :--- | :--- | :--- |
+| - | **Low** | **High** |
+| * | 0 Ct (Details: UCUM code1 = '1') | 35 Ct (Details: UCUM code1 = '1') |
+
+**derivedFrom**: [Observation SARS-CoV-2 (COVID-19) N gene [#/volume] (viral load) in Respiratory system specimen by NAA with probe detection](Observation-mii-exa-test-data-mikrobio-molekulare-pathogenlast-1.md)
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "Observation",
+  "id" : "mii-exa-test-data-mikrobio-ct-wert-1",
+  "meta" : {
+    "source" : "https://www.charite.de/fhir/mikrobiologie-lab-system",
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-ct-wert"],
+    "security" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "code" : "HTEST",
+      "display" : "test health data"
+    }]
+  },
+  "identifier" : [{
+    "type" : {
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+        "code" : "OBI"
+      }]
+    },
+    "system" : "https://www.charite.de/fhir/sid/test-lab-results",
+    "value" : "ct-wert-1",
+    "assigner" : {
+      "identifier" : {
+        "system" : "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier",
+        "value" : "DIZ-CHA"
+      }
+    }
+  }],
+  "basedOn" : [{
+    "reference" : "ServiceRequest/mii-exa-test-data-mikrobio-servicerequest-1"
+  }],
+  "status" : "final",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "laboratory"
+    }]
+  },
+  {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v2-0074",
+      "code" : "MB",
+      "display" : "Microbiology"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "version" : "2.80",
+      "code" : "74039-9",
+      "display" : "Influenza virus A H3 RNA [Cycle Threshold #] in Specimen by NAA with probe detection"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/mii-exa-test-data-mikrobio-patient-1",
+    "identifier" : {
+      "system" : "https://www.charite.de/fhir/sid/patientenidentifikation",
+      "value" : "MIKROBIO-TEST-001"
+    }
+  },
+  "encounter" : {
+    "reference" : "Encounter/mii-exa-test-data-mikrobio-encounter-1",
+    "identifier" : {
+      "system" : "https://www.charite.de/fhir/sid/encounter-identifier",
+      "value" : "MIKROBIO-ENC-001"
+    }
+  },
+  "effectiveDateTime" : "2026-04-03T17:00:00+02:00",
+  "_effectiveDateTime" : {
+    "extension" : [{
+      "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum",
+      "valueCoding" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "399445004",
+        "display" : "Specimen collection date (observable entity)"
+      }
+    }]
+  },
+  "issued" : "2026-04-03T18:00:00+02:00",
+  "valueQuantity" : {
+    "value" : 21.3,
+    "_value" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/quantity-precision",
+        "valueInteger" : 1
+      }]
+    },
+    "comparator" : "<",
+    "unit" : "Ct",
+    "system" : "http://unitsofmeasure.org",
+    "code" : "1"
+  },
+  "interpretation" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+      "code" : "H",
+      "display" : "High"
+    }]
+  }],
+  "note" : [{
+    "text" : "Niedriger CT-Wert (21.3) spricht fuer hohe Erregerlast."
+  }],
+  "method" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "70601000052104",
+      "display" : "Real-time PCR technique"
+    }]
+  },
+  "specimen" : {
+    "reference" : "Specimen/mii-exa-test-data-mikrobio-specimen-1",
+    "identifier" : {
+      "system" : "https://www.charite.de/fhir/sid/Probennummer",
+      "value" : "BLOOD-CULT-001"
+    }
+  },
+  "device" : {
+    "reference" : "Device/mii-exa-test-data-mikrobio-device-pcr-1",
+    "identifier" : {
+      "system" : "https://www.charite.de/fhir/sid/device-identifier",
+      "value" : "PCR-CYCLER-001"
+    }
+  },
+  "referenceRange" : [{
+    "low" : {
+      "value" : 0,
+      "unit" : "Ct",
+      "system" : "http://unitsofmeasure.org",
+      "code" : "1"
+    },
+    "high" : {
+      "value" : 35,
+      "unit" : "Ct",
+      "system" : "http://unitsofmeasure.org",
+      "code" : "1"
+    }
+  }],
+  "derivedFrom" : [{
+    "reference" : "Observation/mii-exa-test-data-mikrobio-molekulare-pathogenlast-1"
+  }]
+}
+
+```

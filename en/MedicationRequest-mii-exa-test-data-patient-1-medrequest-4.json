@@ -1,0 +1,88 @@
+{
+  "resourceType" : "MedicationRequest",
+  "id" : "mii-exa-test-data-patient-1-medrequest-4",
+  "meta" : {
+    "source" : "https://www.charite.de/fhir/kds-testdata",
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationRequest"],
+    "security" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "code" : "HTEST",
+      "display" : "test health data"
+    }]
+  },
+  "language" : "en",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: MedicationRequest mii-exa-test-data-patient-1-medrequest-4</b></p><a name=\"mii-exa-test-data-patient-1-medrequest-4\"> </a><a name=\"hcmii-exa-test-data-patient-1-medrequest-4\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationRequest\">MII PR Medikation MedicationRequest</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>identifier</b>: <code>https://www.charite.de/fhir/sid/MedicationOrders</code>/MO_0000004</p><p><b>status</b>: Active</p><p><b>intent</b>: Order</p><p><b>medication</b>: <a href=\"Medication-mii-exa-test-data-medication-propofol.html\">Medication Propofol</a></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-patient-1.html\">Christian Ludwig Markgraf von Brandenburg-Schwedt (official) Male, DoB: 1977-05-24 ( Medical record number)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-patient-1-encounter-2.html\">Encounter: identifier = Visit number; status = finished; class = inpatient encounter (ActCode#IMP); type = Versorgungsstellenkontakt,Operation; serviceType = Thoraxchirurgie; period = 2024-02-20 10:00:00+0100 --&gt; 2024-02-20 13:00:00+0100</a></p><p><b>authoredOn</b>: 2024-02-20 10:00:00+0100</p><p><b>basedOn</b>: <a href=\"MedicationRequest-mii-exa-test-data-patient-1-medrequest-3.html\">MedicationRequest: identifier = https://www.charite.de/fhir/sid/MedicationOrders#MO_0000003; status = cancelled; intent = order; medication[x] = -&gt;Medication Propofol; authoredOn = 2024-02-20 09:55:00+0100</a></p><blockquote><p><b>dosageInstruction</b></p><p><b>timing</b>: Events: 2024-02-20 10:00:00+0100 , 60min , Morning, Once per 1 day</p><p><b>route</b>: <span title=\"Codes:{http://standardterms.edqm.eu 20045000}\">Intravenous use</span></p><p><b>method</b>: <span title=\"Codes:{http://snomed.info/sct 129331004}\">Perfusion - action (qualifier value)</span></p><h3>DoseAndRates</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Dose[x]</b></td><td><b>Rate[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>200 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span></td><td>6.5 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span>/1 Minuten<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemin = 'min')</span></td></tr></table></blockquote><p><b>priorPrescription</b>: <a href=\"MedicationRequest-mii-exa-test-data-patient-1-medrequest-2.html\">MedicationRequest: identifier = https://www.charite.de/fhir/sid/MedicationOrders#MO_0000002; status = active; intent = option; medication[x] = -&gt;Medication XYDALBA; authoredOn = 2024-02-16 08:37:00+0100</a></p></div>"
+  },
+  "identifier" : [{
+    "system" : "https://www.charite.de/fhir/sid/MedicationOrders",
+    "value" : "MO_0000004"
+  }],
+  "status" : "active",
+  "intent" : "order",
+  "medicationReference" : {
+    "reference" : "Medication/mii-exa-test-data-medication-propofol"
+  },
+  "subject" : {
+    "reference" : "Patient/mii-exa-test-data-patient-1"
+  },
+  "encounter" : {
+    "reference" : "Encounter/mii-exa-test-data-patient-1-encounter-2"
+  },
+  "authoredOn" : "2024-02-20T10:00:00+01:00",
+  "basedOn" : [{
+    "reference" : "MedicationRequest/mii-exa-test-data-patient-1-medrequest-3"
+  }],
+  "dosageInstruction" : [{
+    "timing" : {
+      "event" : ["2024-02-20T10:00:00+01:00"],
+      "repeat" : {
+        "frequency" : 1,
+        "period" : 1,
+        "periodUnit" : "d",
+        "when" : ["MORN"],
+        "offset" : 60
+      }
+    },
+    "route" : {
+      "coding" : [{
+        "system" : "http://standardterms.edqm.eu",
+        "code" : "20045000",
+        "display" : "Intravenous use"
+      }]
+    },
+    "method" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "129331004",
+        "display" : "Perfusion - action (qualifier value)"
+      }]
+    },
+    "doseAndRate" : [{
+      "doseQuantity" : {
+        "value" : 200,
+        "unit" : "mg",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "mg"
+      },
+      "rateRatio" : {
+        "numerator" : {
+          "value" : 6.5,
+          "unit" : "mg",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "mg"
+        },
+        "denominator" : {
+          "value" : 1,
+          "unit" : "Minuten",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "min"
+        }
+      }
+    }]
+  }],
+  "priorPrescription" : {
+    "reference" : "MedicationRequest/mii-exa-test-data-patient-1-medrequest-2"
+  }
+}

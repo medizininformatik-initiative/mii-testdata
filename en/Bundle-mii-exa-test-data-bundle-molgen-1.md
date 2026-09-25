@@ -1,0 +1,3887 @@
+# mii-exa-test-data-bundle-molgen-1 - MII KDS Test Data v2027.0.0-ballot
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **mii-exa-test-data-bundle-molgen-1**
+
+## Example Bundle: mii-exa-test-data-bundle-molgen-1
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "Bundle",
+  "id" : "mii-exa-test-data-bundle-molgen-1",
+  "meta" : {
+    "source" : "https://www.charite.de/fhir/kds-testdata",
+    "security" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "code" : "HTEST",
+      "display" : "test health data"
+    }]
+  },
+  "type" : "transaction",
+  "timestamp" : "2025-06-18T13:51:00+02:00",
+  "entry" : [{
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Patient/mii-exa-test-data-molgen-patient-1",
+    "resource" : {
+      "resourceType" : "Patient",
+      "id" : "mii-exa-test-data-molgen-patient-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Patient_mii-exa-test-data-molgen-patient-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Patient mii-exa-test-data-molgen-patient-1</b></p><a name=\"mii-exa-test-data-molgen-patient-1\"> </a><a name=\"hcmii-exa-test-data-molgen-patient-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Petra Genomisch  Female, DoB: 1985-08-14 ( https://www.charite.de/fhir/sid/patientenidentifikation#MOL-TEST-001)</p><hr/></div>"
+      },
+      "identifier" : [{
+        "system" : "https://www.charite.de/fhir/sid/patientenidentifikation",
+        "value" : "MOL-TEST-001"
+      }],
+      "name" : [{
+        "family" : "Genomisch",
+        "given" : ["Petra"]
+      }],
+      "gender" : "female",
+      "birthDate" : "1985-08-14"
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Patient/mii-exa-test-data-molgen-patient-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Encounter/mii-exa-test-data-molgen-encounter-1",
+    "resource" : {
+      "resourceType" : "Encounter",
+      "id" : "mii-exa-test-data-molgen-encounter-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Encounter_mii-exa-test-data-molgen-encounter-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Encounter mii-exa-test-data-molgen-encounter-1</b></p><a name=\"mii-exa-test-data-molgen-encounter-1\"> </a><a name=\"hcmii-exa-test-data-molgen-encounter-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Finished</p><p><b>class</b>: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActCode.html#v3-ActCode-IMP\">ActCode: IMP</a> (inpatient encounter)</p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-molgen-patient-1.html\">Petra Genomisch  Female, DoB: 1985-08-14 ( https://www.charite.de/fhir/sid/patientenidentifikation#MOL-TEST-001)</a></p><p><b>period</b>: 2024-03-01 --&gt; 2024-03-20</p></div>"
+      },
+      "status" : "finished",
+      "class" : {
+        "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "code" : "IMP",
+        "display" : "inpatient encounter"
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-molgen-patient-1"
+      },
+      "period" : {
+        "start" : "2024-03-01",
+        "end" : "2024-03-20"
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Encounter/mii-exa-test-data-molgen-encounter-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Patient/mii-exa-test-data-molgen-patient-2",
+    "resource" : {
+      "resourceType" : "Patient",
+      "id" : "mii-exa-test-data-molgen-patient-2",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Patient_mii-exa-test-data-molgen-patient-2\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Patient mii-exa-test-data-molgen-patient-2</b></p><a name=\"mii-exa-test-data-molgen-patient-2\"> </a><a name=\"hcmii-exa-test-data-molgen-patient-2\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Markus Sequenziert  Male, DoB: 1972-11-25 ( https://www.charite.de/fhir/sid/patientenidentifikation#MOL-TEST-002)</p><hr/></div>"
+      },
+      "identifier" : [{
+        "system" : "https://www.charite.de/fhir/sid/patientenidentifikation",
+        "value" : "MOL-TEST-002"
+      }],
+      "name" : [{
+        "family" : "Sequenziert",
+        "given" : ["Markus"]
+      }],
+      "gender" : "male",
+      "birthDate" : "1972-11-25"
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Patient/mii-exa-test-data-molgen-patient-2"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Encounter/mii-exa-test-data-molgen-encounter-2",
+    "resource" : {
+      "resourceType" : "Encounter",
+      "id" : "mii-exa-test-data-molgen-encounter-2",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Encounter_mii-exa-test-data-molgen-encounter-2\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Encounter mii-exa-test-data-molgen-encounter-2</b></p><a name=\"mii-exa-test-data-molgen-encounter-2\"> </a><a name=\"hcmii-exa-test-data-molgen-encounter-2\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Finished</p><p><b>class</b>: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActCode.html#v3-ActCode-IMP\">ActCode: IMP</a> (inpatient encounter)</p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-molgen-patient-2.html\">Markus Sequenziert  Male, DoB: 1972-11-25 ( https://www.charite.de/fhir/sid/patientenidentifikation#MOL-TEST-002)</a></p><p><b>period</b>: 2024-04-01 --&gt; 2024-04-15</p></div>"
+      },
+      "status" : "finished",
+      "class" : {
+        "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "code" : "IMP",
+        "display" : "inpatient encounter"
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-molgen-patient-2"
+      },
+      "period" : {
+        "start" : "2024-04-01",
+        "end" : "2024-04-15"
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Encounter/mii-exa-test-data-molgen-encounter-2"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Device/mii-exa-test-data-molgen-device-sequencer",
+    "resource" : {
+      "resourceType" : "Device",
+      "id" : "mii-exa-test-data-molgen-device-sequencer",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Device_mii-exa-test-data-molgen-device-sequencer\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Device mii-exa-test-data-molgen-device-sequencer</b></p><a name=\"mii-exa-test-data-molgen-device-sequencer\"> </a><a name=\"hcmii-exa-test-data-molgen-device-sequencer\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Active</p><p><b>manufacturer</b>: Illumina</p><h3>DeviceNames</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Name</b></td><td><b>Type</b></td></tr><tr><td style=\"display: none\">*</td><td>MiSeq</td><td>Manufacturer name</td></tr></table></div>"
+      },
+      "status" : "active",
+      "manufacturer" : "Illumina",
+      "deviceName" : [{
+        "name" : "MiSeq",
+        "type" : "manufacturer-name"
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Device/mii-exa-test-data-molgen-device-sequencer"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/ServiceRequest/mii-exa-test-data-patient-3-molgen-anforderung-1",
+    "resource" : {
+      "resourceType" : "ServiceRequest",
+      "id" : "mii-exa-test-data-patient-3-molgen-anforderung-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/anforderung-genetischer-test"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"ServiceRequest_mii-exa-test-data-patient-3-molgen-anforderung-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: ServiceRequest mii-exa-test-data-patient-3-molgen-anforderung-1</b></p><a name=\"mii-exa-test-data-patient-3-molgen-anforderung-1\"> </a><a name=\"hcmii-exa-test-data-patient-3-molgen-anforderung-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/anforderung-genetischer-test\">MII PR MolGen Anforderung genetischer Test</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Active</p><p><b>intent</b>: Order</p><p><b>category</b>: <span title=\"Codes:{http://snomed.info/sct 108252007}\">Laboratory procedure (procedure)</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 405825005}, {http://loinc.org 53844-7}, {http://www.genenames.org/geneId HGNC:1097}\">BRAF: Exon 15 (Codon 600)</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-molgen-patient-1.html\">Petra Genomisch  Female, DoB: 1985-08-14 ( https://www.charite.de/fhir/sid/patientenidentifikation#MOL-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-molgen-encounter-1.html\">Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2024-03-01 --&gt; 2024-03-20</a></p><p><b>authoredOn</b>: 2022-04-07</p><p><b>requester</b>: <a href=\"Practitioner-mii-exa-test-data-practitioner-physician-1.html\">Practitioner Rahel Hirsch </a></p><p><b>reasonCode</b>: <span title=\"Codes:{http://snomed.info/sct 447886005}\">Adenocarcinoma of anorectum (disorder)</span></p><p><b>supportingInfo</b>: <a href=\"FamilyMemberHistory-mii-exa-test-data-patient-3-molgen-family-member-history-1.html\">FamilyMemberHistory: status = completed; date = 2022-04-07; relationship = Mother (person); sex = Female (finding); deceased[x] = true; reasonCode = Adenocarcinoma of anorectum (disorder)</a></p><p><b>specimen</b>: <a href=\"Specimen-mii-exa-test-data-molgen-specimen-1.html\">Specimen: status = available; type = Whole blood</a></p><p><b>note</b>: </p><blockquote><div><p>Dringender Verdacht auf BRAF V600E bei bekanntem kolorektalem Karzinom. Therapieentscheidung abhaengig von Ergebnis.</p>\n</div></blockquote></div>"
+      },
+      "status" : "active",
+      "intent" : "order",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "108252007",
+          "display" : "Laboratory procedure (procedure)"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "405825005",
+          "display" : "Molecular genetic test (procedure)"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "53844-7",
+          "display" : "BRAF gene targeted mutation analysis in Blood or Tissue by Molecular genetics method"
+        },
+        {
+          "system" : "http://www.genenames.org/geneId",
+          "code" : "HGNC:1097",
+          "display" : "BRAF"
+        }],
+        "text" : "BRAF: Exon 15 (Codon 600)"
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-molgen-patient-1"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-molgen-encounter-1"
+      },
+      "authoredOn" : "2022-04-07",
+      "requester" : {
+        "reference" : "Practitioner/mii-exa-test-data-practitioner-physician-1"
+      },
+      "reasonCode" : [{
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "447886005",
+          "display" : "Adenocarcinoma of anorectum (disorder)"
+        }]
+      }],
+      "supportingInfo" : [{
+        "reference" : "FamilyMemberHistory/mii-exa-test-data-patient-3-molgen-family-member-history-1"
+      }],
+      "specimen" : [{
+        "reference" : "Specimen/mii-exa-test-data-molgen-specimen-1"
+      }],
+      "note" : [{
+        "text" : "Dringender Verdacht auf BRAF V600E bei bekanntem kolorektalem Karzinom. Therapieentscheidung abhaengig von Ergebnis."
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "ServiceRequest/mii-exa-test-data-patient-3-molgen-anforderung-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/DiagnosticReport/mii-exa-test-data-patient-3-molgen-befundbericht-1",
+    "resource" : {
+      "resourceType" : "DiagnosticReport",
+      "id" : "mii-exa-test-data-patient-3-molgen-befundbericht-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/molekulargenetischer-befundbericht",
+        "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-report"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"DiagnosticReport_mii-exa-test-data-patient-3-molgen-befundbericht-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: DiagnosticReport mii-exa-test-data-patient-3-molgen-befundbericht-1</b></p><a name=\"mii-exa-test-data-patient-3-molgen-befundbericht-1\"> </a><a name=\"hcmii-exa-test-data-patient-3-molgen-befundbericht-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profiles: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/molekulargenetischer-befundbericht\">MII PR MolGen Molekulargenetischer Befundbericht</a>, <a href=\"http://hl7.org/fhir/uv/genomics-reporting/STU3/StructureDefinition-genomic-report.html\">Genomic Report</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><h2><span title=\"Codes:{http://loinc.org 51969-4}\">Genetic analysis report</span> (<span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v2-0074 GE}\">Genetics</span>) </h2><table class=\"grid\"><tr><td>Subject</td><td>Petra Genomisch  Female, DoB: 1985-08-14 ( https://www.charite.de/fhir/sid/patientenidentifikation#MOL-TEST-001)</td></tr><tr><td>Reported</td><td>2022-04-12 10:30:00+0200</td></tr><tr><td>Performer</td><td> <a href=\"Practitioner-mii-exa-test-data-practitioner-physician-1.html\">Practitioner Rahel Hirsch </a></td></tr></table><p><b>Report Details</b></p><table class=\"grid\"><tr><td><b>Code</b></td><td><b>Value</b></td><td><b>Flags</b></td><td><b>Relevant Time</b></td></tr><tr><td><a href=\"Observation-mii-exa-test-data-patient-3-molgen-diagnostische-implikation-1.html\"><span title=\"Codes:{http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs diagnostic-implication}\">Diagnostic Implication</span></a></td><td/><td>Final</td><td>2022-04-07</td></tr><tr><td><a href=\"Observation-mii-exa-test-data-patient-3-molgen-therapeutische-implikation-1.html\"><span title=\"Codes:{http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs therapeutic-implication}\">Therapeutic Implication</span></a></td><td/><td>Final</td><td>2022-04-07</td></tr><tr><td><a href=\"Observation-mii-exa-test-data-patient-3-molgen-variante-1.html\"><span title=\"Codes:{http://loinc.org 69548-6}\">Genetic variant assessment</span></a></td><td><span title=\"Codes:{http://loinc.org LA9633-4}\">Present</span></td><td>Final</td><td>2022-04-07</td></tr><tr><td><a href=\"Observation-mii-exa-test-data-patient-3-molgen-genotyp-1.html\"><span title=\"Codes:{http://loinc.org 84413-4}\">Genotype display name</span></a></td><td><span title=\"Codes:{http://www.ncbi.nlm.nih.gov/projects/SNP rs113488022}\">BRAF rs113488022 T&gt;A</span></td><td>Final</td><td>2022-04-07</td></tr><tr><td><a href=\"Observation-mii-exa-test-data-patient-3-molgen-mutationslast-1.html\"><span title=\"Codes:{http://loinc.org 94076-7}\">Mutations/Megabase [# Ratio] in Tumor</span></a></td><td>12 Mutations/Megabase<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code1/1000000{Base} = '1/1000000{Base}')</span></td><td>Final</td><td>2022-04-07</td></tr><tr><td><a href=\"Observation-mii-exa-test-data-patient-3-molgen-msi-1.html\"><span title=\"Codes:{http://loinc.org 81695-9}\">Microsatellite instability [Interpretation] in Cancer specimen Qualitative</span></a></td><td><span title=\"Codes:{http://loinc.org LA14122-8}\">Stable</span></td><td>Final</td><td>2022-04-07</td></tr></table><p>BRAF p.V600E Mutation liegt vor. Bitte Therapieoption mit einem BRAF-Inhibitor pruefen.</p><p><b>Coded Conclusions:</b></p><ul><li><span title=\"Codes:{http://snomed.info/sct 10828004}\">Positive (qualifier value)</span></li></ul></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/recommended-action",
+        "valueReference" : {
+          "reference" : "Task/mii-exa-test-data-patient-3-molgen-medikationsempfehlung-1"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/recommended-action",
+        "valueReference" : {
+          "reference" : "Task/mii-exa-test-data-patient-3-molgen-folgemassnahme-1"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo",
+        "valueReference" : {
+          "reference" : "FamilyMemberHistory/mii-exa-test-data-patient-3-molgen-family-member-history-1"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-reference",
+        "valueReference" : {
+          "reference" : "Procedure/mii-exa-test-data-patient-3-molgen-genomic-study-1"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-risk-assessment",
+        "valueReference" : {
+          "reference" : "RiskAssessment/mii-exa-test-data-patient-3-molgen-polygener-risiko-score-1"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/workflow-relatedArtifact",
+        "valueRelatedArtifact" : {
+          "type" : "citation",
+          "citation" : "Richards et al., Standards and guidelines for the interpretation of sequence variants. Genet Med. 2015;17:405-24",
+          "url" : "https://pubmed.ncbi.nlm.nih.gov/25741868/"
+        }
+      }],
+      "basedOn" : [{
+        "reference" : "ServiceRequest/mii-exa-test-data-patient-3-molgen-anforderung-1"
+      }],
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code" : "GE",
+          "display" : "Genetics"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "51969-4",
+          "display" : "Genetic analysis report"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-molgen-patient-1"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-molgen-encounter-1"
+      },
+      "issued" : "2022-04-12T10:30:00+02:00",
+      "performer" : [{
+        "reference" : "Practitioner/mii-exa-test-data-practitioner-physician-1"
+      }],
+      "specimen" : [{
+        "reference" : "Specimen/mii-exa-test-data-molgen-specimen-1"
+      }],
+      "result" : [{
+        "reference" : "Observation/mii-exa-test-data-patient-3-molgen-diagnostische-implikation-1"
+      },
+      {
+        "reference" : "Observation/mii-exa-test-data-patient-3-molgen-therapeutische-implikation-1"
+      },
+      {
+        "reference" : "Observation/mii-exa-test-data-patient-3-molgen-variante-1"
+      },
+      {
+        "reference" : "Observation/mii-exa-test-data-patient-3-molgen-genotyp-1"
+      },
+      {
+        "reference" : "Observation/mii-exa-test-data-patient-3-molgen-mutationslast-1"
+      },
+      {
+        "reference" : "Observation/mii-exa-test-data-patient-3-molgen-msi-1"
+      }],
+      "conclusion" : "BRAF p.V600E Mutation liegt vor. Bitte Therapieoption mit einem BRAF-Inhibitor pruefen.",
+      "conclusionCode" : [{
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "10828004",
+          "display" : "Positive (qualifier value)"
+        }]
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "DiagnosticReport/mii-exa-test-data-patient-3-molgen-befundbericht-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-3-molgen-variante-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-patient-3-molgen-variante-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/variante",
+        "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/variant"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-patient-3-molgen-variante-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-patient-3-molgen-variante-1</b></p><a name=\"mii-exa-test-data-patient-3-molgen-variante-1\"> </a><a name=\"hcmii-exa-test-data-patient-3-molgen-variante-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profiles: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/variante\">MII PR MolGen Variante</a>, <a href=\"http://hl7.org/fhir/uv/genomics-reporting/STU3/StructureDefinition-variant.html\">Variant</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>basedOn</b>: <a href=\"ServiceRequest-mii-exa-test-data-patient-3-molgen-anforderung-1.html\">ServiceRequest Molecular genetic test (procedure)</a></p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span>, <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v2-0074 GE}\">Genetics</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 69548-6}\">Genetic variant assessment</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-molgen-patient-1.html\">Petra Genomisch  Female, DoB: 1985-08-14 ( https://www.charite.de/fhir/sid/patientenidentifikation#MOL-TEST-001)</a></p><p><b>effective</b>: 2022-04-07</p><p><b>issued</b>: 2022-04-12 10:30:00+0200</p><p><b>value</b>: <span title=\"Codes:{http://loinc.org LA9633-4}\">Present</span></p><p><b>method</b>: <span title=\"Codes:{http://loinc.org LA26398-0}\">Sequencing</span></p><p><b>specimen</b>: <a href=\"Specimen-mii-exa-test-data-molgen-specimen-1.html\">Specimen: status = available; type = Whole blood</a></p><p><b>device</b>: <a href=\"Device-mii-exa-test-data-molgen-device-sequencer.html\">Device: status = active; manufacturer = Illumina</a></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 48018-6}\">Gene studied [ID]</span></p><p><b>value</b>: <span title=\"Codes:{http://www.genenames.org/geneId HGNC:1097}\">BRAF</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 48013-7}\">Genomic reference sequence [ID]</span></p><p><b>value</b>: <span title=\"Codes:{http://www.ncbi.nlm.nih.gov/refseq NM_004333.4}\">NM_004333.4</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 47999-8}\">DNA region name [Identifier]</span></p><p><b>value</b>: Exon #15</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 47999-8}\">DNA region name [Identifier]</span></p><p><b>value</b>: Codon #582 - #612</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 48004-6}\">DNA change (c.HGVS)</span></p><p><b>value</b>: <span title=\"Codes:{http://varnomen.hgvs.org NM_004333.4:c.1799T&gt;A}\">NM_004333.4:c.1799T&gt;A</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 48005-3}\">Amino acid change (pHGVS)</span></p><p><b>value</b>: <span title=\"Codes:{http://varnomen.hgvs.org p.(Val600Glu)}\">p.(Val600Glu)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 81258-6}\">Sample variant allelic frequency [NFr]</span></p><p><b>value</b>: 30.25 %<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code% = '%')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 48001-2}\">Cytogenetic (chromosome) location</span></p><p><b>value</b>: <span title=\"Codes:{urn:oid:2.16.840.1.113883.6.335 7q34}\">7q34</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 48019-4}\">DNA change type</span></p><p><b>value</b>: <span title=\"Codes:{http://sequenceontology.org SO:1000008}\">point_mutation</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 81252-9}\">Discrete genetic variant</span></p><p><b>value</b>: <span title=\"Codes:{http://www.ncbi.nlm.nih.gov/projects/SNP rs113488022}\">rs113488022</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 62374-4}\">Human reference sequence assembly version</span></p><p><b>value</b>: <span title=\"Codes:{http://loinc.org LA26806-2}\">GRCh38</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 81254-5}\">Genomic allele start-end</span></p><p><b>value</b>: 140753336-140753336</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 69547-8}\">Genomic ref allele [ID]</span></p><p><b>value</b>: T</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 69551-0}\">Genomic alt allele [ID]</span></p><p><b>value</b>: A</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 48002-0}\">Genomic source class [Type]</span></p><p><b>value</b>: <span title=\"Codes:{http://loinc.org LA6684-0}\">Somatic</span></p></blockquote></div>"
+      },
+      "basedOn" : [{
+        "reference" : "ServiceRequest/mii-exa-test-data-patient-3-molgen-anforderung-1"
+      }],
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "laboratory",
+          "display" : "Laboratory"
+        }]
+      },
+      {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code" : "GE"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "69548-6",
+          "display" : "Genetic variant assessment"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-molgen-patient-1"
+      },
+      "effectiveDateTime" : "2022-04-07",
+      "issued" : "2022-04-12T10:30:00+02:00",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "LA9633-4",
+          "display" : "Present"
+        }]
+      },
+      "method" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "LA26398-0",
+          "display" : "Sequencing"
+        }]
+      },
+      "specimen" : {
+        "reference" : "Specimen/mii-exa-test-data-molgen-specimen-1"
+      },
+      "device" : {
+        "reference" : "Device/mii-exa-test-data-molgen-device-sequencer"
+      },
+      "component" : [{
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "48018-6",
+            "display" : "Gene studied [ID]"
+          }]
+        },
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://www.genenames.org/geneId",
+            "code" : "HGNC:1097",
+            "display" : "BRAF"
+          }]
+        }
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "48013-7",
+            "display" : "Genomic reference sequence [ID]"
+          }]
+        },
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://www.ncbi.nlm.nih.gov/refseq",
+            "code" : "NM_004333.4"
+          }]
+        }
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "47999-8",
+            "display" : "DNA region name [Identifier]"
+          }]
+        },
+        "valueString" : "Exon #15"
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "47999-8",
+            "display" : "DNA region name [Identifier]"
+          }]
+        },
+        "valueString" : "Codon #582 - #612"
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "48004-6",
+            "display" : "DNA change (c.HGVS)"
+          }]
+        },
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://varnomen.hgvs.org",
+            "code" : "NM_004333.4:c.1799T>A"
+          }]
+        }
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "48005-3",
+            "display" : "Amino acid change (pHGVS)"
+          }]
+        },
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://varnomen.hgvs.org",
+            "code" : "p.(Val600Glu)"
+          }]
+        }
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "81258-6",
+            "display" : "Sample variant allelic frequency [NFr]"
+          }]
+        },
+        "valueQuantity" : {
+          "value" : 30.25,
+          "system" : "http://unitsofmeasure.org",
+          "code" : "%"
+        }
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "48001-2",
+            "display" : "Cytogenetic (chromosome) location"
+          }]
+        },
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "urn:oid:2.16.840.1.113883.6.335",
+            "code" : "7q34"
+          }]
+        }
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "48019-4",
+            "display" : "DNA change type"
+          }]
+        },
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://sequenceontology.org",
+            "code" : "SO:1000008",
+            "display" : "point_mutation"
+          }]
+        }
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "81252-9",
+            "display" : "Discrete genetic variant"
+          }]
+        },
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://www.ncbi.nlm.nih.gov/projects/SNP",
+            "code" : "rs113488022"
+          }]
+        }
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "62374-4",
+            "display" : "Human reference sequence assembly version"
+          }]
+        },
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "LA26806-2",
+            "display" : "GRCh38"
+          }]
+        }
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "81254-5",
+            "display" : "Genomic allele start-end"
+          }]
+        },
+        "valueRange" : {
+          "low" : {
+            "value" : 140753336
+          },
+          "high" : {
+            "value" : 140753336
+          }
+        }
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "69547-8",
+            "display" : "Genomic ref allele [ID]"
+          }]
+        },
+        "valueString" : "T"
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "69551-0",
+            "display" : "Genomic alt allele [ID]"
+          }]
+        },
+        "valueString" : "A"
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "48002-0",
+            "display" : "Genomic source class [Type]"
+          }]
+        },
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "LA6684-0",
+            "display" : "Somatic"
+          }]
+        }
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-patient-3-molgen-variante-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-3-molgen-genotyp-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-patient-3-molgen-genotyp-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/genotyp",
+        "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genotype"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-patient-3-molgen-genotyp-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-patient-3-molgen-genotyp-1</b></p><a name=\"mii-exa-test-data-patient-3-molgen-genotyp-1\"> </a><a name=\"hcmii-exa-test-data-patient-3-molgen-genotyp-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profiles: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/genotyp\">MII PR MolGen Genotyp</a>, <a href=\"http://hl7.org/fhir/uv/genomics-reporting/STU3/StructureDefinition-genotype.html\">Genotype</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span>, <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v2-0074 GE}\">Genetics</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 84413-4}\">Genotype display name</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-molgen-patient-1.html\">Petra Genomisch  Female, DoB: 1985-08-14 ( https://www.charite.de/fhir/sid/patientenidentifikation#MOL-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-molgen-encounter-1.html\">Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2024-03-01 --&gt; 2024-03-20</a></p><p><b>effective</b>: 2022-04-07</p><p><b>issued</b>: 2022-04-12 10:30:00+0200</p><p><b>value</b>: <span title=\"Codes:{http://www.ncbi.nlm.nih.gov/projects/SNP rs113488022}\">BRAF rs113488022 T&gt;A</span></p><p><b>method</b>: <span title=\"Codes:{http://loinc.org LA26398-0}\">Sequencing</span></p><p><b>specimen</b>: <a href=\"Specimen-mii-exa-test-data-molgen-specimen-1.html\">Specimen: status = available; type = Whole blood</a></p><p><b>device</b>: <a href=\"Device-mii-exa-test-data-molgen-device-sequencer.html\">Device: status = active; manufacturer = Illumina</a></p><p><b>derivedFrom</b>: <a href=\"Observation-mii-exa-test-data-patient-3-molgen-variante-1.html\">Observation Genetic variant assessment</a></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 48018-6}\">Gene studied [ID]</span></p><p><b>value</b>: <span title=\"Codes:{http://www.genenames.org/geneId HGNC:1097}\">BRAF</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 48001-2}\">Cytogenetic (chromosome) location</span></p><p><b>value</b>: <span title=\"Codes:{urn:oid:2.16.840.1.113883.6.335 7q34}\">7q34</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs conclusion-string}\">Conclusion Text</span></p><p><b>value</b>: Heterozygote BRAF V600E Mutation nachgewiesen</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 62374-4}\">Human reference sequence assembly version</span></p><p><b>value</b>: <span title=\"Codes:{http://loinc.org LA26806-2}\">GRCh38</span></p></blockquote></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "laboratory",
+          "display" : "Laboratory"
+        }]
+      },
+      {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code" : "GE"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "84413-4",
+          "display" : "Genotype display name"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-molgen-patient-1"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-molgen-encounter-1"
+      },
+      "effectiveDateTime" : "2022-04-07",
+      "issued" : "2022-04-12T10:30:00+02:00",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://www.ncbi.nlm.nih.gov/projects/SNP",
+          "code" : "rs113488022",
+          "display" : "BRAF V600E (c.1799T>A)"
+        }],
+        "text" : "BRAF rs113488022 T>A"
+      },
+      "method" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "LA26398-0",
+          "display" : "Sequencing"
+        }]
+      },
+      "specimen" : {
+        "reference" : "Specimen/mii-exa-test-data-molgen-specimen-1"
+      },
+      "device" : {
+        "reference" : "Device/mii-exa-test-data-molgen-device-sequencer"
+      },
+      "derivedFrom" : [{
+        "reference" : "Observation/mii-exa-test-data-patient-3-molgen-variante-1"
+      }],
+      "component" : [{
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "48018-6",
+            "display" : "Gene studied [ID]"
+          }]
+        },
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://www.genenames.org/geneId",
+            "code" : "HGNC:1097",
+            "display" : "BRAF"
+          }]
+        }
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "48001-2",
+            "display" : "Cytogenetic (chromosome) location"
+          }]
+        },
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "urn:oid:2.16.840.1.113883.6.335",
+            "code" : "7q34"
+          }]
+        }
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs",
+            "code" : "conclusion-string"
+          }]
+        },
+        "valueString" : "Heterozygote BRAF V600E Mutation nachgewiesen"
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "62374-4",
+            "display" : "Human reference sequence assembly version"
+          }]
+        },
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "LA26806-2",
+            "display" : "GRCh38"
+          }]
+        }
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-patient-3-molgen-genotyp-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Procedure/mii-exa-test-data-patient-3-molgen-genomic-study-1",
+    "resource" : {
+      "resourceType" : "Procedure",
+      "id" : "mii-exa-test-data-patient-3-molgen-genomic-study-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/mii-pr-molgen-genomic-study"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Procedure_mii-exa-test-data-patient-3-molgen-genomic-study-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Procedure mii-exa-test-data-patient-3-molgen-genomic-study-1</b></p><a name=\"mii-exa-test-data-patient-3-molgen-genomic-study-1\"> </a><a name=\"hcmii-exa-test-data-patient-3-molgen-genomic-study-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/mii-pr-molgen-genomic-study\">MII PR MolGen Genomic Study</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>Genomic Study Analysis Extension</b>: <a href=\"Procedure-mii-exa-test-data-patient-3-molgen-genomic-study-analysis-1.html\">Procedure: extension = BRAF Exon 15 Analyse,Sequencing,point_mutation,GRCh38,-&gt;Specimen: status = available; type = Whole blood,,; status = completed; category = Laboratory</a></p><p><b>status</b>: Completed</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 405825005}\">Molecular genetic test (procedure)</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-molgen-patient-1.html\">Petra Genomisch  Female, DoB: 1985-08-14 ( https://www.charite.de/fhir/sid/patientenidentifikation#MOL-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-molgen-encounter-1.html\">Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2024-03-01 --&gt; 2024-03-20</a></p><p><b>performed</b>: 2022-04-07</p><p><b>reasonReference</b>: <a href=\"Condition-mii-exa-test-data-molgen-diagnose-1.html\">Condition Bösartige Neubildung: Colon sigmoideum</a></p></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-ext",
+        "valueReference" : {
+          "reference" : "Procedure/mii-exa-test-data-patient-3-molgen-genomic-study-analysis-1"
+        }
+      }],
+      "status" : "completed",
+      "category" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "laboratory"
+        }]
+      },
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "405825005",
+          "display" : "Molecular genetic test (procedure)"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-molgen-patient-1"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-molgen-encounter-1"
+      },
+      "performedDateTime" : "2022-04-07",
+      "reasonReference" : [{
+        "reference" : "Condition/mii-exa-test-data-molgen-diagnose-1"
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Procedure/mii-exa-test-data-patient-3-molgen-genomic-study-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Procedure/mii-exa-test-data-patient-3-molgen-genomic-study-analysis-1",
+    "resource" : {
+      "resourceType" : "Procedure",
+      "id" : "mii-exa-test-data-patient-3-molgen-genomic-study-analysis-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/mii-pr-molgen-genomic-study-analysis"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Procedure_mii-exa-test-data-patient-3-molgen-genomic-study-analysis-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Procedure mii-exa-test-data-patient-3-molgen-genomic-study-analysis-1</b></p><a name=\"mii-exa-test-data-patient-3-molgen-genomic-study-analysis-1\"> </a><a name=\"hcmii-exa-test-data-patient-3-molgen-genomic-study-analysis-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/mii-pr-molgen-genomic-study-analysis\">MII PR MolGen Genomic Study Analysis</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>Genomic Study Analysis Title</b>: BRAF Exon 15 Analyse</p><p><b>Genomic Study Analysis Method Type</b>: <span title=\"Codes:{http://loinc.org LA26398-0}\">Sequencing</span></p><p><b>Genomic Study Analysis Change Type</b>: <span title=\"Codes:{http://sequenceontology.org SO:1000008}\">point_mutation</span></p><p><b>Genomic Study Analysis Genome Build</b>: <span title=\"Codes:{http://loinc.org LA26806-2}\">GRCh38</span></p><p><b>Genomic Study Analysis Specimen</b>: <a href=\"Specimen-mii-exa-test-data-molgen-specimen-1.html\">Specimen: status = available; type = Whole blood</a></p><blockquote><p><b>Genomic Study Analysis Device</b></p><ul><li>device: <a href=\"Device-mii-exa-test-data-molgen-device-sequencer.html\">Device: status = active; manufacturer = Illumina</a></li></ul></blockquote><blockquote><p><b>Genomic Study Analysis Regions</b></p><ul><li>description: BRAF: Exon 15 (Codon 582-612)</li><li>studied: <span title=\"Codes:{http://www.genenames.org/geneId HGNC:1097}\">BRAF</span></li></ul></blockquote><p><b>status</b>: Completed</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-molgen-patient-1.html\">Petra Genomisch  Female, DoB: 1985-08-14 ( https://www.charite.de/fhir/sid/patientenidentifikation#MOL-TEST-001)</a></p></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-title",
+        "valueString" : "BRAF Exon 15 Analyse"
+      },
+      {
+        "url" : "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-method-type",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "LA26398-0",
+            "display" : "Sequencing"
+          }]
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-change-type",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://sequenceontology.org",
+            "code" : "SO:1000008",
+            "display" : "point_mutation"
+          }]
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-genome-build",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "LA26806-2",
+            "display" : "GRCh38"
+          }]
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-specimen",
+        "valueReference" : {
+          "reference" : "Specimen/mii-exa-test-data-molgen-specimen-1"
+        }
+      },
+      {
+        "extension" : [{
+          "url" : "device",
+          "valueReference" : {
+            "reference" : "Device/mii-exa-test-data-molgen-device-sequencer"
+          }
+        }],
+        "url" : "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-device"
+      },
+      {
+        "extension" : [{
+          "url" : "description",
+          "valueString" : "BRAF: Exon 15 (Codon 582-612)"
+        },
+        {
+          "url" : "studied",
+          "valueCodeableConcept" : {
+            "coding" : [{
+              "system" : "http://www.genenames.org/geneId",
+              "code" : "HGNC:1097",
+              "display" : "BRAF"
+            }]
+          }
+        }],
+        "url" : "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-regions"
+      }],
+      "status" : "completed",
+      "category" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "laboratory"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-molgen-patient-1"
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Procedure/mii-exa-test-data-patient-3-molgen-genomic-study-analysis-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-3-molgen-molekulare-konsequenz-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-patient-3-molgen-molekulare-konsequenz-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/mii-pr-molgen-molekulare-konsequenz",
+        "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/molecular-consequence"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-patient-3-molgen-molekulare-konsequenz-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-patient-3-molgen-molekulare-konsequenz-1</b></p><a name=\"mii-exa-test-data-patient-3-molgen-molekulare-konsequenz-1\"> </a><a name=\"hcmii-exa-test-data-patient-3-molgen-molekulare-konsequenz-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profiles: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/mii-pr-molgen-molekulare-konsequenz\">MII PR MolGen Molekulare Konsequenz</a>, <a href=\"http://hl7.org/fhir/uv/genomics-reporting/STU3/StructureDefinition-molecular-consequence.html\">Molecular Consequence</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span>, <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v2-0074 GE}\">Genetics</span></p><p><b>code</b>: <span title=\"Codes:{http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs molecular-consequence}\">Molecular Consequence</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-molgen-patient-1.html\">Petra Genomisch  Female, DoB: 1985-08-14 ( https://www.charite.de/fhir/sid/patientenidentifikation#MOL-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-molgen-encounter-1.html\">Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2024-03-01 --&gt; 2024-03-20</a></p><p><b>effective</b>: 2022-04-07</p><p><b>issued</b>: 2022-04-12 10:30:00+0200</p><p><b>derivedFrom</b>: <a href=\"Observation-mii-exa-test-data-patient-3-molgen-variante-1.html\">Observation Genetic variant assessment</a></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs conclusion-string}\">Conclusion Text</span></p><p><b>value</b>: Aktivierende Missense-Mutation im BRAF-Gen. Austausch von Valin zu Glutaminsaeure an Position 600 fuehrt zu konstitutiver Aktivierung der BRAF-Kinase.</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs functional-effect}\">Functional Effect</span></p><p><b>value</b>: <span title=\"Codes:{http://sequenceontology.org SO:0002053}\">Konstitutive Aktivierung der BRAF-Kinase</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 53037-8}\">Genetic variation clinical significance [Imp]</span></p><p><b>value</b>: <span title=\"Codes:{http://loinc.org LA6668-3}\">Pathogenic</span></p></blockquote></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "laboratory",
+          "display" : "Laboratory"
+        }]
+      },
+      {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code" : "GE"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs",
+          "code" : "molecular-consequence",
+          "display" : "Molecular Consequence"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-molgen-patient-1"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-molgen-encounter-1"
+      },
+      "effectiveDateTime" : "2022-04-07",
+      "issued" : "2022-04-12T10:30:00+02:00",
+      "derivedFrom" : [{
+        "reference" : "Observation/mii-exa-test-data-patient-3-molgen-variante-1"
+      }],
+      "component" : [{
+        "code" : {
+          "coding" : [{
+            "system" : "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs",
+            "code" : "conclusion-string"
+          }]
+        },
+        "valueString" : "Aktivierende Missense-Mutation im BRAF-Gen. Austausch von Valin zu Glutaminsaeure an Position 600 fuehrt zu konstitutiver Aktivierung der BRAF-Kinase."
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs",
+            "code" : "functional-effect"
+          }]
+        },
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://sequenceontology.org",
+            "code" : "SO:0002053",
+            "display" : "gain_of_function_variant"
+          }],
+          "text" : "Konstitutive Aktivierung der BRAF-Kinase"
+        }
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "53037-8"
+          }]
+        },
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "LA6668-3",
+            "display" : "Pathogenic"
+          }]
+        }
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-patient-3-molgen-molekulare-konsequenz-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-3-molgen-diagnostische-implikation-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-patient-3-molgen-diagnostische-implikation-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/diagnostische-implikation",
+        "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/diagnostic-implication"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-patient-3-molgen-diagnostische-implikation-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-patient-3-molgen-diagnostische-implikation-1</b></p><a name=\"mii-exa-test-data-patient-3-molgen-diagnostische-implikation-1\"> </a><a name=\"hcmii-exa-test-data-patient-3-molgen-diagnostische-implikation-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profiles: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/diagnostische-implikation\">MII PR MolGen Diagnostische Implikation</a>, <a href=\"http://hl7.org/fhir/uv/genomics-reporting/STU3/StructureDefinition-diagnostic-implication.html\">Diagnostic Implication</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span>, <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v2-0074 GE}\">Genetics</span></p><p><b>code</b>: <span title=\"Codes:{http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs diagnostic-implication}\">Diagnostic Implication</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-molgen-patient-1.html\">Petra Genomisch  Female, DoB: 1985-08-14 ( https://www.charite.de/fhir/sid/patientenidentifikation#MOL-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-molgen-encounter-1.html\">Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2024-03-01 --&gt; 2024-03-20</a></p><p><b>effective</b>: 2022-04-07</p><p><b>issued</b>: 2022-04-12 10:30:00+0200</p><p><b>derivedFrom</b>: <a href=\"Observation-mii-exa-test-data-patient-3-molgen-variante-1.html\">Observation Genetic variant assessment</a></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs conclusion-string}\">Conclusion Text</span></p><p><b>value</b>: Nachweis einer aktivierenden Mutation BRAF V600E</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 93044-6}\">Level of evidence</span></p><p><b>value</b>: <span title=\"Codes:{http://loinc.org LA30200-2}\">Tier I - Level A (AMP/ASCO/CAP)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs condition-inheritance}\">Condition Inheritance</span></p><p><b>value</b>: <span title=\"Codes:{http://human-phenotype-ontology.org HP:0001442}\">Somatisch erworben</span></p></blockquote></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "laboratory",
+          "display" : "Laboratory"
+        }]
+      },
+      {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code" : "GE"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs",
+          "code" : "diagnostic-implication",
+          "display" : "Diagnostic Implication"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-molgen-patient-1"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-molgen-encounter-1"
+      },
+      "effectiveDateTime" : "2022-04-07",
+      "issued" : "2022-04-12T10:30:00+02:00",
+      "derivedFrom" : [{
+        "reference" : "Observation/mii-exa-test-data-patient-3-molgen-variante-1"
+      }],
+      "component" : [{
+        "code" : {
+          "coding" : [{
+            "system" : "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs",
+            "code" : "conclusion-string"
+          }]
+        },
+        "valueString" : "Nachweis einer aktivierenden Mutation BRAF V600E"
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "93044-6",
+            "display" : "Level of evidence"
+          }]
+        },
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "LA30200-2",
+            "display" : "Very strong evidence pathogenic"
+          }],
+          "text" : "Tier I - Level A (AMP/ASCO/CAP)"
+        }
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs",
+            "code" : "condition-inheritance"
+          }]
+        },
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://human-phenotype-ontology.org",
+            "code" : "HP:0001442",
+            "display" : "Typified by somatic mosaicism"
+          }],
+          "text" : "Somatisch erworben"
+        }
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-patient-3-molgen-diagnostische-implikation-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-3-molgen-therapeutische-implikation-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-patient-3-molgen-therapeutische-implikation-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/therapeutische-implikation",
+        "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/therapeutic-implication"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-patient-3-molgen-therapeutische-implikation-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-patient-3-molgen-therapeutische-implikation-1</b></p><a name=\"mii-exa-test-data-patient-3-molgen-therapeutische-implikation-1\"> </a><a name=\"hcmii-exa-test-data-patient-3-molgen-therapeutische-implikation-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profiles: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/therapeutische-implikation\">MII PR MolGen Therapeutische Implikation</a>, <a href=\"http://hl7.org/fhir/uv/genomics-reporting/STU3/StructureDefinition-therapeutic-implication.html\">Therapeutic Implication</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span>, <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v2-0074 GE}\">Genetics</span></p><p><b>code</b>: <span title=\"Codes:{http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs therapeutic-implication}\">Therapeutic Implication</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-molgen-patient-1.html\">Petra Genomisch  Female, DoB: 1985-08-14 ( https://www.charite.de/fhir/sid/patientenidentifikation#MOL-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-molgen-encounter-1.html\">Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2024-03-01 --&gt; 2024-03-20</a></p><p><b>effective</b>: 2022-04-07</p><p><b>issued</b>: 2022-04-12 10:30:00+0200</p><p><b>derivedFrom</b>: <a href=\"Observation-mii-exa-test-data-patient-3-molgen-variante-1.html\">Observation Genetic variant assessment</a></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs conclusion-string}\">Conclusion Text</span></p><p><b>value</b>: Nachweis einer aktivierenden Mutation BRAF V600E. Triple-Therapie mit einem EGFR-Antikoerper sowie einem BRAF- und einem MEK-Inhibitor pruefen.</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 51963-7}\">Medication assessed [ID]</span></p><p><b>value</b>: <span title=\"Codes:{http://fhir.de/CodeSystem/bfarm/atc L01EC}, {http://snomed.info/sct 703645005}\">BRAF Inhibitor</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 51963-7}\">Medication assessed [ID]</span></p><p><b>value</b>: <span title=\"Codes:{http://fhir.de/CodeSystem/bfarm/atc L01FE}\">EGFR (Epidermaler Wachstumsfaktor-Rezeptor)-Inhibitoren</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 51963-7}\">Medication assessed [ID]</span></p><p><b>value</b>: <span title=\"Codes:{http://fhir.de/CodeSystem/bfarm/atc L01EE}\">Mitogen-aktivierte Proteinkinase (MEK)-Inhibitoren</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 93044-6}\">Level of evidence</span></p><p><b>value</b>: <span title=\"Codes:{http://loinc.org LA30200-2}\">Tier I - Level A (AMP/ASCO/CAP, FDA-approved therapy)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 81259-4}\">Associated phenotype</span></p><p><b>value</b>: <span title=\"Codes:{http://snomed.info/sct 447886005}\">Adenocarcinoma of anorectum (disorder)</span></p></blockquote></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "laboratory",
+          "display" : "Laboratory"
+        }]
+      },
+      {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code" : "GE"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs",
+          "code" : "therapeutic-implication",
+          "display" : "Therapeutic Implication"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-molgen-patient-1"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-molgen-encounter-1"
+      },
+      "effectiveDateTime" : "2022-04-07",
+      "issued" : "2022-04-12T10:30:00+02:00",
+      "derivedFrom" : [{
+        "reference" : "Observation/mii-exa-test-data-patient-3-molgen-variante-1"
+      }],
+      "component" : [{
+        "code" : {
+          "coding" : [{
+            "system" : "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs",
+            "code" : "conclusion-string"
+          }]
+        },
+        "valueString" : "Nachweis einer aktivierenden Mutation BRAF V600E. Triple-Therapie mit einem EGFR-Antikoerper sowie einem BRAF- und einem MEK-Inhibitor pruefen."
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "51963-7",
+            "display" : "Medication assessed [ID]"
+          }]
+        },
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://fhir.de/CodeSystem/bfarm/atc",
+            "version" : "2026",
+            "code" : "L01EC",
+            "display" : "BRAF-Serin-Threoninkinase-Inhibitoren"
+          },
+          {
+            "system" : "http://snomed.info/sct",
+            "code" : "703645005",
+            "display" : "Product containing B-Raf inhibitor (product)"
+          }],
+          "text" : "BRAF Inhibitor"
+        }
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "51963-7",
+            "display" : "Medication assessed [ID]"
+          }]
+        },
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://fhir.de/CodeSystem/bfarm/atc",
+            "version" : "2026",
+            "code" : "L01FE",
+            "display" : "EGFR (Epidermaler Wachstumsfaktor-Rezeptor)-Inhibitoren"
+          }]
+        }
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "51963-7",
+            "display" : "Medication assessed [ID]"
+          }]
+        },
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://fhir.de/CodeSystem/bfarm/atc",
+            "version" : "2026",
+            "code" : "L01EE",
+            "display" : "Mitogen-aktivierte Proteinkinase (MEK)-Inhibitoren"
+          }]
+        }
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "93044-6",
+            "display" : "Level of evidence"
+          }]
+        },
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "LA30200-2",
+            "display" : "Very strong evidence pathogenic"
+          }],
+          "text" : "Tier I - Level A (AMP/ASCO/CAP, FDA-approved therapy)"
+        }
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "81259-4"
+          }]
+        },
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "447886005",
+            "display" : "Adenocarcinoma of anorectum (disorder)"
+          }]
+        }
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-patient-3-molgen-therapeutische-implikation-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-3-molgen-mutationslast-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-patient-3-molgen-mutationslast-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/mutationslast"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-patient-3-molgen-mutationslast-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-patient-3-molgen-mutationslast-1</b></p><a name=\"mii-exa-test-data-patient-3-molgen-mutationslast-1\"> </a><a name=\"hcmii-exa-test-data-patient-3-molgen-mutationslast-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/mutationslast\">MII PR MolGen Mutationslast</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span>, <span title=\"Codes:{http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs biomarker-category}\">A characterization of a given biomarker observation.</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 94076-7}\">Mutations/Megabase [# Ratio] in Tumor</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-molgen-patient-1.html\">Petra Genomisch  Female, DoB: 1985-08-14 ( https://www.charite.de/fhir/sid/patientenidentifikation#MOL-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-molgen-encounter-1.html\">Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2024-03-01 --&gt; 2024-03-20</a></p><p><b>effective</b>: 2022-04-07</p><p><b>issued</b>: 2022-04-12 10:30:00+0200</p><p><b>value</b>: 12 Mutations/Megabase<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code1/1000000{Base} = '1/1000000{Base}')</span></p><p><b>specimen</b>: <a href=\"Specimen-mii-exa-test-data-molgen-specimen-1.html\">Specimen: status = available; type = Whole blood</a></p><p><b>derivedFrom</b>: <a href=\"Observation-mii-exa-test-data-patient-3-molgen-variante-1.html\">Observation Genetic variant assessment</a></p><h3>Components</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs biomarker-category}\">A characterization of a given biomarker observation.</span></td><td><span title=\"Codes:{http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl C150128}\">Tumor Mutational Burden</span></td></tr></table></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "laboratory",
+          "display" : "Laboratory"
+        }]
+      },
+      {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs",
+          "code" : "biomarker-category"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "94076-7",
+          "display" : "Mutations/Megabase [# Ratio] in Tumor"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-molgen-patient-1"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-molgen-encounter-1"
+      },
+      "effectiveDateTime" : "2022-04-07",
+      "issued" : "2022-04-12T10:30:00+02:00",
+      "valueQuantity" : {
+        "value" : 12,
+        "unit" : "Mutations/Megabase",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "1/1000000{Base}"
+      },
+      "specimen" : {
+        "reference" : "Specimen/mii-exa-test-data-molgen-specimen-1"
+      },
+      "derivedFrom" : [{
+        "reference" : "Observation/mii-exa-test-data-patient-3-molgen-variante-1"
+      }],
+      "component" : [{
+        "code" : {
+          "coding" : [{
+            "system" : "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs",
+            "code" : "biomarker-category"
+          }]
+        },
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+            "code" : "C150128",
+            "display" : "Tumor Mutation Burden"
+          }],
+          "text" : "Tumor Mutational Burden"
+        }
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-patient-3-molgen-mutationslast-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-3-molgen-msi-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-patient-3-molgen-msi-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/mikrosatelliteninstabilitaet"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-patient-3-molgen-msi-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-patient-3-molgen-msi-1</b></p><a name=\"mii-exa-test-data-patient-3-molgen-msi-1\"> </a><a name=\"hcmii-exa-test-data-patient-3-molgen-msi-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/mikrosatelliteninstabilitaet\">MII PR MolGen Mikrosatelliteninstabilität</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span>, <span title=\"Codes:{http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs biomarker-category}\">A characterization of a given biomarker observation.</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 81695-9}\">Microsatellite instability [Interpretation] in Cancer specimen Qualitative</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-molgen-patient-1.html\">Petra Genomisch  Female, DoB: 1985-08-14 ( https://www.charite.de/fhir/sid/patientenidentifikation#MOL-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-molgen-encounter-1.html\">Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2024-03-01 --&gt; 2024-03-20</a></p><p><b>effective</b>: 2022-04-07</p><p><b>issued</b>: 2022-04-12 10:30:00+0200</p><p><b>value</b>: <span title=\"Codes:{http://loinc.org LA14122-8}\">Stable</span></p><p><b>specimen</b>: <a href=\"Specimen-mii-exa-test-data-molgen-specimen-1.html\">Specimen: status = available; type = Whole blood</a></p><p><b>derivedFrom</b>: <a href=\"Observation-mii-exa-test-data-patient-3-molgen-variante-1.html\">Observation Genetic variant assessment</a></p><h3>Components</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs biomarker-category}\">A characterization of a given biomarker observation.</span></td><td><span title=\"Codes:{http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl C36318}\">Microsatellite Instability</span></td></tr></table></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "laboratory",
+          "display" : "Laboratory"
+        }]
+      },
+      {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs",
+          "code" : "biomarker-category"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "81695-9",
+          "display" : "Microsatellite instability [Interpretation] in Cancer specimen Qualitative"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-molgen-patient-1"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-molgen-encounter-1"
+      },
+      "effectiveDateTime" : "2022-04-07",
+      "issued" : "2022-04-12T10:30:00+02:00",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "LA14122-8",
+          "display" : "Stable"
+        }]
+      },
+      "specimen" : {
+        "reference" : "Specimen/mii-exa-test-data-molgen-specimen-1"
+      },
+      "derivedFrom" : [{
+        "reference" : "Observation/mii-exa-test-data-patient-3-molgen-variante-1"
+      }],
+      "component" : [{
+        "code" : {
+          "coding" : [{
+            "system" : "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs",
+            "code" : "biomarker-category"
+          }]
+        },
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+            "code" : "C36318",
+            "display" : "Microsatellite Instability"
+          }],
+          "text" : "Microsatellite Instability"
+        }
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-patient-3-molgen-msi-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Task/mii-exa-test-data-patient-3-molgen-medikationsempfehlung-1",
+    "resource" : {
+      "resourceType" : "Task",
+      "id" : "mii-exa-test-data-patient-3-molgen-medikationsempfehlung-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/medikationsempfehlung",
+        "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/medication-recommendation"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Task_mii-exa-test-data-patient-3-molgen-medikationsempfehlung-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Task mii-exa-test-data-patient-3-molgen-medikationsempfehlung-1</b></p><a name=\"mii-exa-test-data-patient-3-molgen-medikationsempfehlung-1\"> </a><a name=\"hcmii-exa-test-data-patient-3-molgen-medikationsempfehlung-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profiles: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/medikationsempfehlung\">MII PR MolGen Medikationsempfehlung</a>, <a href=\"http://hl7.org/fhir/uv/genomics-reporting/STU3/StructureDefinition-medication-recommendation.html\">Medication Recommendation</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>basedOn</b>: <a href=\"ServiceRequest-mii-exa-test-data-patient-3-molgen-anforderung-1.html\">ServiceRequest Molecular genetic test (procedure)</a></p><p><b>status</b>: Requested</p><p><b>intent</b>: proposal</p><p><b>code</b>: <span title=\"Codes:{http://loinc.org LA26421-0}\">Alternative Medikation in Erwaegung ziehen</span></p><p><b>for</b>: <a href=\"Patient-mii-exa-test-data-molgen-patient-1.html\">Petra Genomisch  Female, DoB: 1985-08-14 ( https://www.charite.de/fhir/sid/patientenidentifikation#MOL-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-molgen-encounter-1.html\">Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2024-03-01 --&gt; 2024-03-20</a></p><p><b>reasonCode</b>: <span title=\"Codes:{http://snomed.info/sct 447886005}\">Adenocarcinoma of anorectum (disorder)</span></p><p><b>reasonReference</b>: <a href=\"Observation-mii-exa-test-data-patient-3-molgen-therapeutische-implikation-1.html\">Observation Therapeutic Implication</a></p></div>"
+      },
+      "basedOn" : [{
+        "reference" : "ServiceRequest/mii-exa-test-data-patient-3-molgen-anforderung-1"
+      }],
+      "status" : "requested",
+      "intent" : "proposal",
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "LA26421-0",
+          "display" : "Consider alternative medication"
+        }],
+        "text" : "Alternative Medikation in Erwaegung ziehen"
+      },
+      "for" : {
+        "reference" : "Patient/mii-exa-test-data-molgen-patient-1"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-molgen-encounter-1"
+      },
+      "reasonCode" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "447886005",
+          "display" : "Adenocarcinoma of anorectum (disorder)"
+        }]
+      },
+      "reasonReference" : {
+        "reference" : "Observation/mii-exa-test-data-patient-3-molgen-therapeutische-implikation-1"
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Task/mii-exa-test-data-patient-3-molgen-medikationsempfehlung-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Task/mii-exa-test-data-patient-3-molgen-folgemassnahme-1",
+    "resource" : {
+      "resourceType" : "Task",
+      "id" : "mii-exa-test-data-patient-3-molgen-folgemassnahme-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/empfohlene-folgemassnahme",
+        "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/followup-recommendation"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Task_mii-exa-test-data-patient-3-molgen-folgemassnahme-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Task mii-exa-test-data-patient-3-molgen-folgemassnahme-1</b></p><a name=\"mii-exa-test-data-patient-3-molgen-folgemassnahme-1\"> </a><a name=\"hcmii-exa-test-data-patient-3-molgen-folgemassnahme-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profiles: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/empfohlene-folgemassnahme\">MII PR MolGen Empfohlene Folgemaßnahme</a>, <a href=\"http://hl7.org/fhir/uv/genomics-reporting/STU3/StructureDefinition-followup-recommendation.html\">Followup Recommendation</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>basedOn</b>: <a href=\"ServiceRequest-mii-exa-test-data-patient-3-molgen-anforderung-1.html\">ServiceRequest Molecular genetic test (procedure)</a></p><p><b>status</b>: Requested</p><p><b>intent</b>: proposal</p><p><b>code</b>: <span title=\"Codes:{http://loinc.org LA14020-4}\">Genetic counseling recommended</span></p><p><b>description</b>: Genetische Beratung empfohlen mit Dr. Rosalind Franklin</p><p><b>for</b>: <a href=\"Patient-mii-exa-test-data-molgen-patient-1.html\">Petra Genomisch  Female, DoB: 1985-08-14 ( https://www.charite.de/fhir/sid/patientenidentifikation#MOL-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-molgen-encounter-1.html\">Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2024-03-01 --&gt; 2024-03-20</a></p><p><b>reasonCode</b>: <span title=\"Codes:{http://snomed.info/sct 447886005}\">Adenocarcinoma of anorectum (disorder)</span></p><p><b>reasonReference</b>: <a href=\"Observation-mii-exa-test-data-patient-3-molgen-therapeutische-implikation-1.html\">Observation Therapeutic Implication</a></p></div>"
+      },
+      "basedOn" : [{
+        "reference" : "ServiceRequest/mii-exa-test-data-patient-3-molgen-anforderung-1"
+      }],
+      "status" : "requested",
+      "intent" : "proposal",
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "LA14020-4",
+          "display" : "Genetic counseling recommended"
+        }]
+      },
+      "description" : "Genetische Beratung empfohlen mit Dr. Rosalind Franklin",
+      "for" : {
+        "reference" : "Patient/mii-exa-test-data-molgen-patient-1"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-molgen-encounter-1"
+      },
+      "reasonCode" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "447886005",
+          "display" : "Adenocarcinoma of anorectum (disorder)"
+        }]
+      },
+      "reasonReference" : {
+        "reference" : "Observation/mii-exa-test-data-patient-3-molgen-therapeutische-implikation-1"
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Task/mii-exa-test-data-patient-3-molgen-folgemassnahme-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/FamilyMemberHistory/mii-exa-test-data-patient-3-molgen-family-member-history-1",
+    "resource" : {
+      "resourceType" : "FamilyMemberHistory",
+      "id" : "mii-exa-test-data-patient-3-molgen-family-member-history-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/familienanamnese"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"FamilyMemberHistory_mii-exa-test-data-patient-3-molgen-family-member-history-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: FamilyMemberHistory mii-exa-test-data-patient-3-molgen-family-member-history-1</b></p><a name=\"mii-exa-test-data-patient-3-molgen-family-member-history-1\"> </a><a name=\"hcmii-exa-test-data-patient-3-molgen-family-member-history-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/familienanamnese\">MII PR MolGen Familienanamnese</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Completed</p><p><b>patient</b>: <a href=\"Patient-mii-exa-test-data-molgen-patient-1.html\">Petra Genomisch  Female, DoB: 1985-08-14 ( https://www.charite.de/fhir/sid/patientenidentifikation#MOL-TEST-001)</a></p><p><b>date</b>: 2022-04-07</p><p><b>relationship</b>: <span title=\"Codes:{http://snomed.info/sct 72705000}, {http://terminology.hl7.org/CodeSystem/v3-RoleCode MTH}\">Mother (person)</span></p><p><b>sex</b>: <span title=\"Codes:{http://hl7.org/fhir/administrative-gender female}, {http://snomed.info/sct 248152002}\">Female (finding)</span></p><p><b>deceased</b>: true</p><p><b>reasonCode</b>: <span title=\"Codes:{http://snomed.info/sct 447886005}, {http://fhir.de/CodeSystem/bfarm/icd-10-gm C21.8}\">Adenocarcinoma of anorectum (disorder)</span></p><p><b>reasonReference</b>: <a href=\"Condition-mii-exa-test-data-molgen-diagnose-1.html\">Condition Bösartige Neubildung: Colon sigmoideum</a></p><h3>Conditions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>ContributedToDeath</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 830150003}, {http://fhir.de/CodeSystem/bfarm/icd-10-gm C43.9}\">Malignant melanoma with B-Raf proto-oncogene, serine/threonine kinase V600E mutation (disorder)</span></td><td>true</td></tr></table></div>"
+      },
+      "status" : "completed",
+      "patient" : {
+        "reference" : "Patient/mii-exa-test-data-molgen-patient-1"
+      },
+      "date" : "2022-04-07",
+      "relationship" : {
+        "coding" : [{
+          "extension" : [{
+            "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/mii-ex-molgen-familiare-linie",
+            "valueCoding" : {
+              "system" : "http://snomed.info/sct",
+              "code" : "72705000",
+              "display" : "Mother (person)"
+            }
+          },
+          {
+            "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/mii-ex-molgen-verwandtschaftsgrad",
+            "valueCoding" : {
+              "system" : "http://snomed.info/sct",
+              "code" : "125678001",
+              "display" : "First degree blood relative (person)"
+            }
+          },
+          {
+            "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/mii-ex-molgen-verwandtschaftsverhaeltnis",
+            "valueCoding" : {
+              "system" : "http://snomed.info/sct",
+              "code" : "13646006",
+              "display" : "Natural parent (person)"
+            }
+          }],
+          "system" : "http://snomed.info/sct",
+          "code" : "72705000",
+          "display" : "Mother (person)"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "MTH",
+          "display" : "mother"
+        }]
+      },
+      "sex" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/administrative-gender",
+          "code" : "female"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "248152002",
+          "display" : "Female (finding)"
+        }]
+      },
+      "deceasedBoolean" : true,
+      "reasonCode" : [{
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "447886005",
+          "display" : "Adenocarcinoma of anorectum (disorder)"
+        },
+        {
+          "system" : "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+          "version" : "2022",
+          "code" : "C21.8",
+          "display" : "Bösartige Neubildung: Rektum, Anus und Analkanal, mehrere Teilbereiche überlappend"
+        }]
+      }],
+      "reasonReference" : [{
+        "reference" : "Condition/mii-exa-test-data-molgen-diagnose-1"
+      }],
+      "condition" : [{
+        "code" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "830150003",
+            "display" : "Malignant melanoma with B-Raf proto-oncogene, serine/threonine kinase V600E mutation (disorder)"
+          },
+          {
+            "system" : "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+            "version" : "2022",
+            "code" : "C43.9",
+            "display" : "Bösartiges Melanom der Haut, nicht näher bezeichnet"
+          }]
+        },
+        "contributedToDeath" : true
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "FamilyMemberHistory/mii-exa-test-data-patient-3-molgen-family-member-history-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/RiskAssessment/mii-exa-test-data-patient-3-molgen-polygener-risiko-score-1",
+    "resource" : {
+      "resourceType" : "RiskAssessment",
+      "id" : "mii-exa-test-data-patient-3-molgen-polygener-risiko-score-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/polygener-risiko-score"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"RiskAssessment_mii-exa-test-data-patient-3-molgen-polygener-risiko-score-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: RiskAssessment mii-exa-test-data-patient-3-molgen-polygener-risiko-score-1</b></p><a name=\"mii-exa-test-data-patient-3-molgen-polygener-risiko-score-1\"> </a><a name=\"hcmii-exa-test-data-patient-3-molgen-polygener-risiko-score-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/polygener-risiko-score\">MII PR MolGen Polygener Risiko Score</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>identifier</b>: <code>https://www.charite.de/fhir/sid/risiko-bewertungen</code>/PRS-CRC-2022-0407-001</p><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 721961004}\">Polygener Risiko Score (PRS)</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-molgen-patient-1.html\">Petra Genomisch  Female, DoB: 1985-08-14 ( https://www.charite.de/fhir/sid/patientenidentifikation#MOL-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-molgen-encounter-1.html\">Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2024-03-01 --&gt; 2024-03-20</a></p><p><b>occurrence</b>: 2022-04-07</p><p><b>condition</b>: <a href=\"Condition-mii-exa-test-data-molgen-diagnose-1.html\">Condition Bösartige Neubildung: Colon sigmoideum</a></p><p><b>basis</b>: <a href=\"Observation-mii-exa-test-data-patient-3-molgen-variante-1.html\">Observation Genetic variant assessment</a></p><h3>Predictions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Outcome</b></td><td><b>Probability[x]</b></td><td><b>QualitativeRisk</b></td><td><b>RelativeRisk</b></td><td><b>When[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 363510005}\">Kolorektales Karzinom</span></td><td>0.32</td><td><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/risk-probability high}\">High likelihood</span></td><td>2.8</td><td>50-80 years</td></tr></table></div>"
+      },
+      "identifier" : [{
+        "system" : "https://www.charite.de/fhir/sid/risiko-bewertungen",
+        "value" : "PRS-CRC-2022-0407-001"
+      }],
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "721961004",
+          "display" : "Risk assessment score (observable entity)"
+        }],
+        "text" : "Polygener Risiko Score (PRS)"
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-molgen-patient-1"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-molgen-encounter-1"
+      },
+      "occurrenceDateTime" : "2022-04-07",
+      "condition" : {
+        "reference" : "Condition/mii-exa-test-data-molgen-diagnose-1"
+      },
+      "basis" : [{
+        "reference" : "Observation/mii-exa-test-data-patient-3-molgen-variante-1"
+      }],
+      "prediction" : [{
+        "outcome" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "363510005",
+            "display" : "Malignant neoplasm of large intestine"
+          }],
+          "text" : "Kolorektales Karzinom"
+        },
+        "probabilityDecimal" : 0.32,
+        "qualitativeRisk" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/risk-probability",
+            "code" : "high",
+            "display" : "High likelihood"
+          }]
+        },
+        "relativeRisk" : 2.8,
+        "whenRange" : {
+          "low" : {
+            "value" : 50,
+            "unit" : "years",
+            "system" : "http://unitsofmeasure.org",
+            "code" : "a"
+          },
+          "high" : {
+            "value" : 80,
+            "unit" : "years",
+            "system" : "http://unitsofmeasure.org",
+            "code" : "a"
+          }
+        }
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "RiskAssessment/mii-exa-test-data-patient-3-molgen-polygener-risiko-score-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-3-molgen-biomarker-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-patient-3-molgen-biomarker-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/mii-pr-molgen-molekularer-biomarker",
+        "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/molecular-biomarker"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-patient-3-molgen-biomarker-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-patient-3-molgen-biomarker-1</b></p><a name=\"mii-exa-test-data-patient-3-molgen-biomarker-1\"> </a><a name=\"hcmii-exa-test-data-patient-3-molgen-biomarker-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profiles: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/mii-pr-molgen-molekularer-biomarker\">MII PR MolGen Molekularer Biomarker</a>, <a href=\"http://hl7.org/fhir/uv/genomics-reporting/STU3/StructureDefinition-molecular-biomarker.html\">Molecular Biomarker</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span>, <span title=\"Codes:{http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs biomarker-category}\">A characterization of a given biomarker observation.</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 85147-0}\">PD-L1 by clone 22C3 [Interpretation] in Tissue by Immune stain</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-molgen-patient-1.html\">Petra Genomisch  Female, DoB: 1985-08-14 ( https://www.charite.de/fhir/sid/patientenidentifikation#MOL-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-molgen-encounter-1.html\">Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2024-03-01 --&gt; 2024-03-20</a></p><p><b>effective</b>: 2022-04-07</p><p><b>issued</b>: 2022-04-12 11:00:00+0200</p><p><b>value</b>: 60 percent<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code% = '%')</span></p><p><b>specimen</b>: <a href=\"Specimen-mii-exa-test-data-molgen-specimen-1.html\">Specimen: status = available; type = Whole blood</a></p><h3>Components</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs biomarker-category}\">A characterization of a given biomarker observation.</span></td><td><span title=\"Codes:{http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl C184941}\">PD-L1 Tumor Proportion Score</span></td></tr></table></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "laboratory",
+          "display" : "Laboratory"
+        }]
+      },
+      {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs",
+          "code" : "biomarker-category"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "85147-0",
+          "display" : "PD-L1 by clone 22C3 [Interpretation] in Tissue by Immune stain"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-molgen-patient-1"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-molgen-encounter-1"
+      },
+      "effectiveDateTime" : "2022-04-07",
+      "issued" : "2022-04-12T11:00:00+02:00",
+      "valueQuantity" : {
+        "value" : 60,
+        "unit" : "percent",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "%"
+      },
+      "specimen" : {
+        "reference" : "Specimen/mii-exa-test-data-molgen-specimen-1"
+      },
+      "component" : [{
+        "code" : {
+          "coding" : [{
+            "system" : "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs",
+            "code" : "biomarker-category"
+          }]
+        },
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+            "code" : "C184941",
+            "display" : "PD-L1 Tumor Proportion Score"
+          }],
+          "text" : "PD-L1 Tumor Proportion Score"
+        }
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-patient-3-molgen-biomarker-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/ServiceRequest/mii-exa-test-data-patient-4-molgen-anforderung-1",
+    "resource" : {
+      "resourceType" : "ServiceRequest",
+      "id" : "mii-exa-test-data-patient-4-molgen-anforderung-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/anforderung-genetischer-test"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"ServiceRequest_mii-exa-test-data-patient-4-molgen-anforderung-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: ServiceRequest mii-exa-test-data-patient-4-molgen-anforderung-1</b></p><a name=\"mii-exa-test-data-patient-4-molgen-anforderung-1\"> </a><a name=\"hcmii-exa-test-data-patient-4-molgen-anforderung-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/anforderung-genetischer-test\">MII PR MolGen Anforderung genetischer Test</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>identifier</b>: <code>https://www.charite.de/fhir/auftragsnummern</code>/7B369EB0</p><p><b>status</b>: Active</p><p><b>intent</b>: Order</p><p><b>category</b>: <span title=\"Codes:{http://snomed.info/sct 108252007}\">Laboratory procedure (procedure)</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 405825005}\">Molekulargenetische Untersuchung (Stufendiagnostik) der relevanten Gene</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-molgen-patient-2.html\">Markus Sequenziert  Male, DoB: 1972-11-25 ( https://www.charite.de/fhir/sid/patientenidentifikation#MOL-TEST-002)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-molgen-encounter-2.html\">Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2024-04-01 --&gt; 2024-04-15</a></p><p><b>authoredOn</b>: 2022-11-30</p><p><b>requester</b>: <a href=\"Practitioner-mii-exa-test-data-practitioner-physician-2.html\">Practitioner Robert Koch (official)</a></p><p><b>reasonCode</b>: <span title=\"Codes:{http://snomed.info/sct 87737001}\">Eigenanamnese: Siegelringkarzinom des Magens, diffus wachsend</span>, <span title=\"Codes:{http://snomed.info/sct 429740004}\">Mutter an Brustkrebs verstorben</span></p><p><b>reasonReference</b>: <a href=\"Condition-mii-exa-test-data-molgen-diagnose-2.html\">Condition Bösartige Neubildung: Oberlappen (-Bronchus)</a></p><p><b>supportingInfo</b>: <a href=\"FamilyMemberHistory-mii-exa-test-data-patient-4-molgen-family-member-history-1.html\">FamilyMemberHistory: status = completed; date = 2022-11-30; relationship = Mother (person); sex = Female (finding); deceased[x] = true; reasonCode = Malignant adenomatous neoplasm (disorder)</a></p><p><b>specimen</b>: <a href=\"Specimen-mii-exa-test-data-molgen-specimen-2.html\">Specimen: status = available; type = Tissue</a></p></div>"
+      },
+      "identifier" : [{
+        "system" : "https://www.charite.de/fhir/auftragsnummern",
+        "value" : "7B369EB0"
+      }],
+      "status" : "active",
+      "intent" : "order",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "108252007",
+          "display" : "Laboratory procedure (procedure)"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "405825005",
+          "display" : "Molecular genetic test (procedure)"
+        }],
+        "text" : "Molekulargenetische Untersuchung (Stufendiagnostik) der relevanten Gene"
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-molgen-patient-2"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-molgen-encounter-2"
+      },
+      "authoredOn" : "2022-11-30",
+      "requester" : {
+        "reference" : "Practitioner/mii-exa-test-data-practitioner-physician-2"
+      },
+      "reasonCode" : [{
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "87737001",
+          "display" : "Signet ring cell carcinoma (morphologic abnormality)"
+        }],
+        "text" : "Eigenanamnese: Siegelringkarzinom des Magens, diffus wachsend"
+      },
+      {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "429740004",
+          "display" : "Family history of malignant neoplasm of breast (situation)"
+        }],
+        "text" : "Mutter an Brustkrebs verstorben"
+      }],
+      "reasonReference" : [{
+        "reference" : "Condition/mii-exa-test-data-molgen-diagnose-2"
+      }],
+      "supportingInfo" : [{
+        "reference" : "FamilyMemberHistory/mii-exa-test-data-patient-4-molgen-family-member-history-1"
+      }],
+      "specimen" : [{
+        "reference" : "Specimen/mii-exa-test-data-molgen-specimen-2"
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "ServiceRequest/mii-exa-test-data-patient-4-molgen-anforderung-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/DiagnosticReport/mii-exa-test-data-patient-4-molgen-befundbericht-1",
+    "resource" : {
+      "resourceType" : "DiagnosticReport",
+      "id" : "mii-exa-test-data-patient-4-molgen-befundbericht-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/molekulargenetischer-befundbericht",
+        "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-report"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"DiagnosticReport_mii-exa-test-data-patient-4-molgen-befundbericht-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: DiagnosticReport mii-exa-test-data-patient-4-molgen-befundbericht-1</b></p><a name=\"mii-exa-test-data-patient-4-molgen-befundbericht-1\"> </a><a name=\"hcmii-exa-test-data-patient-4-molgen-befundbericht-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profiles: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/molekulargenetischer-befundbericht\">MII PR MolGen Molekulargenetischer Befundbericht</a>, <a href=\"http://hl7.org/fhir/uv/genomics-reporting/STU3/StructureDefinition-genomic-report.html\">Genomic Report</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><h2><span title=\"Codes:{http://loinc.org 51969-4}\">Genetic analysis report</span> (<span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v2-0074 GE}\">Genetics</span>) </h2><table class=\"grid\"><tr><td>Subject</td><td>Markus Sequenziert  Male, DoB: 1972-11-25 ( https://www.charite.de/fhir/sid/patientenidentifikation#MOL-TEST-002)</td></tr><tr><td>Reported</td><td>2022-12-05 14:00:00+0100</td></tr><tr><td>Performer</td><td> <a href=\"Practitioner-mii-exa-test-data-practitioner-physician-2.html\">Practitioner Robert Koch (official)</a></td></tr></table><p><b>Report Details</b></p><table class=\"grid\"><tr><td><b>Code</b></td><td><b>Value</b></td><td><b>Flags</b></td><td><b>Relevant Time</b></td></tr><tr><td><a href=\"Observation-mii-exa-test-data-patient-4-molgen-diagnostische-implikation-1.html\"><span title=\"Codes:{http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs diagnostic-implication}\">Diagnostic Implication</span></a></td><td/><td>Final</td><td>2022-11-30</td></tr><tr><td><a href=\"Observation-mii-exa-test-data-patient-4-molgen-variante-1.html\"><span title=\"Codes:{http://loinc.org 69548-6}\">Genetic variant assessment</span></a></td><td><span title=\"Codes:{http://loinc.org LA9633-4}\">Present</span></td><td>Final</td><td>2022-11-30</td></tr></table><p>Nachweis der pathogenen Variante im CTNNA1-Gen.</p></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo",
+        "valueReference" : {
+          "reference" : "FamilyMemberHistory/mii-exa-test-data-patient-4-molgen-family-member-history-1"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-reference",
+        "valueReference" : {
+          "reference" : "Procedure/mii-exa-test-data-patient-4-molgen-genomic-study-1"
+        }
+      }],
+      "basedOn" : [{
+        "reference" : "ServiceRequest/mii-exa-test-data-patient-4-molgen-anforderung-1"
+      }],
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code" : "GE",
+          "display" : "Genetics"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "51969-4",
+          "display" : "Genetic analysis report"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-molgen-patient-2"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-molgen-encounter-2"
+      },
+      "issued" : "2022-12-05T14:00:00+01:00",
+      "performer" : [{
+        "reference" : "Practitioner/mii-exa-test-data-practitioner-physician-2"
+      }],
+      "resultsInterpreter" : [{
+        "reference" : "Practitioner/mii-exa-test-data-practitioner-physician-2"
+      }],
+      "specimen" : [{
+        "reference" : "Specimen/mii-exa-test-data-molgen-specimen-2"
+      },
+      {
+        "reference" : "Specimen/mii-exa-test-data-molgen-specimen-3"
+      }],
+      "result" : [{
+        "reference" : "Observation/mii-exa-test-data-patient-4-molgen-diagnostische-implikation-1"
+      },
+      {
+        "reference" : "Observation/mii-exa-test-data-patient-4-molgen-variante-1"
+      }],
+      "conclusion" : "Nachweis der pathogenen Variante im CTNNA1-Gen."
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "DiagnosticReport/mii-exa-test-data-patient-4-molgen-befundbericht-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-4-molgen-variante-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-patient-4-molgen-variante-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/variante"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-patient-4-molgen-variante-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-patient-4-molgen-variante-1</b></p><a name=\"mii-exa-test-data-patient-4-molgen-variante-1\"> </a><a name=\"hcmii-exa-test-data-patient-4-molgen-variante-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/variante\">MII PR MolGen Variante</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>basedOn</b>: <a href=\"ServiceRequest-mii-exa-test-data-patient-4-molgen-anforderung-1.html\">ServiceRequest Molecular genetic test (procedure)</a></p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span>, <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v2-0074 GE}\">Genetics</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 69548-6}\">Genetic variant assessment</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-molgen-patient-2.html\">Markus Sequenziert  Male, DoB: 1972-11-25 ( https://www.charite.de/fhir/sid/patientenidentifikation#MOL-TEST-002)</a></p><p><b>effective</b>: 2022-11-30</p><p><b>issued</b>: 2022-12-05 14:00:00+0100</p><p><b>value</b>: <span title=\"Codes:{http://loinc.org LA9633-4}\">Present</span></p><p><b>method</b>: <span title=\"Codes:{http://loinc.org LA26398-0}\">Sequencing</span></p><p><b>specimen</b>: <a href=\"Specimen-mii-exa-test-data-molgen-specimen-2.html\">Specimen: status = available; type = Tissue</a></p><p><b>device</b>: <a href=\"Device-mii-exa-test-data-molgen-device-sequencer.html\">Device: status = active; manufacturer = Illumina</a></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 48018-6}\">Gene studied [ID]</span></p><p><b>value</b>: <span title=\"Codes:{http://www.genenames.org/geneId HGNC:2509}\">CTNNA1</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 51958-7}\">Transcript reference sequence [ID]</span></p><p><b>value</b>: <span title=\"Codes:{http://www.ncbi.nlm.nih.gov/refseq NM_001903.5}\">NM_001903.5</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 48004-6}\">DNA change (c.HGVS)</span></p><p><b>value</b>: <span title=\"Codes:{http://varnomen.hgvs.org NM_001903.5:c.1030del}\">NM_001903.5:c.1030del</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 81290-9}\">Genomic DNA change (gHGVS)</span></p><p><b>value</b>: <span title=\"Codes:{http://varnomen.hgvs.org NC_000005.9:g.138163372del}\">NC_000005.9:g.138163372del</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 48013-7}\">Genomic reference sequence [ID]</span></p><p><b>value</b>: <span title=\"Codes:{http://www.ncbi.nlm.nih.gov/refseq NC_000005.9}\">NC_000005.9</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 48005-3}\">Amino acid change (pHGVS)</span></p><p><b>value</b>: <span title=\"Codes:{http://varnomen.hgvs.org p.(Leu344CysfsTer25)}\">p.(Leu344CysfsTer25)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 53034-5}\">Allelic state</span></p><p><b>value</b>: <span title=\"Codes:{http://loinc.org LA6706-1}\">Heterozygous</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 48019-4}\">DNA change type</span></p><p><b>value</b>: <span title=\"Codes:{http://sequenceontology.org SO:0000159}\">Deletion</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 48001-2}\">Cytogenetic (chromosome) location</span></p><p><b>value</b>: <span title=\"Codes:{urn:oid:2.16.840.1.113883.6.335 5q31.2}\">5q31.2</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 48000-4}\">Chromosome [Identifier] in Blood or Tissue by Molecular genetics method</span></p><p><b>value</b>: <span title=\"Codes:{http://loinc.org LA21257-8}\">Chromosome 5</span></p></blockquote></div>"
+      },
+      "basedOn" : [{
+        "reference" : "ServiceRequest/mii-exa-test-data-patient-4-molgen-anforderung-1"
+      }],
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "laboratory",
+          "display" : "Laboratory"
+        }]
+      },
+      {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code" : "GE"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "69548-6",
+          "display" : "Genetic variant assessment"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-molgen-patient-2"
+      },
+      "effectiveDateTime" : "2022-11-30",
+      "issued" : "2022-12-05T14:00:00+01:00",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "LA9633-4",
+          "display" : "Present"
+        }]
+      },
+      "method" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "LA26398-0",
+          "display" : "Sequencing"
+        }]
+      },
+      "specimen" : {
+        "reference" : "Specimen/mii-exa-test-data-molgen-specimen-2"
+      },
+      "device" : {
+        "reference" : "Device/mii-exa-test-data-molgen-device-sequencer"
+      },
+      "component" : [{
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "48018-6"
+          }]
+        },
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://www.genenames.org/geneId",
+            "code" : "HGNC:2509",
+            "display" : "CTNNA1"
+          }]
+        }
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "51958-7"
+          }]
+        },
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://www.ncbi.nlm.nih.gov/refseq",
+            "code" : "NM_001903.5"
+          }]
+        }
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "48004-6"
+          }]
+        },
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://varnomen.hgvs.org",
+            "code" : "NM_001903.5:c.1030del"
+          }]
+        }
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "81290-9"
+          }]
+        },
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://varnomen.hgvs.org",
+            "code" : "NC_000005.9:g.138163372del"
+          }]
+        }
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "48013-7"
+          }]
+        },
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://www.ncbi.nlm.nih.gov/refseq",
+            "code" : "NC_000005.9"
+          }]
+        }
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "48005-3"
+          }]
+        },
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://varnomen.hgvs.org",
+            "code" : "p.(Leu344CysfsTer25)"
+          }]
+        }
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "53034-5"
+          }]
+        },
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "LA6706-1",
+            "display" : "Heterozygous"
+          }]
+        }
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "48019-4"
+          }]
+        },
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://sequenceontology.org",
+            "code" : "SO:0000159",
+            "display" : "Deletion"
+          }]
+        }
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "48001-2"
+          }]
+        },
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "urn:oid:2.16.840.1.113883.6.335",
+            "code" : "5q31.2"
+          }]
+        }
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "48000-4",
+            "display" : "Chromosome [Identifier] in Blood or Tissue by Molecular genetics method"
+          }]
+        },
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "LA21257-8",
+            "display" : "Chromosome 5"
+          }]
+        }
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-patient-4-molgen-variante-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Procedure/mii-exa-test-data-patient-4-molgen-genomic-study-1",
+    "resource" : {
+      "resourceType" : "Procedure",
+      "id" : "mii-exa-test-data-patient-4-molgen-genomic-study-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/mii-pr-molgen-genomic-study"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Procedure_mii-exa-test-data-patient-4-molgen-genomic-study-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Procedure mii-exa-test-data-patient-4-molgen-genomic-study-1</b></p><a name=\"mii-exa-test-data-patient-4-molgen-genomic-study-1\"> </a><a name=\"hcmii-exa-test-data-patient-4-molgen-genomic-study-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/mii-pr-molgen-genomic-study\">MII PR MolGen Genomic Study</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>Genomic Study Analysis Extension</b>: <a href=\"Procedure-mii-exa-test-data-patient-4-molgen-genomic-study-analysis-1.html\">Procedure: extension = Stufendiagnostik hereditaeres Magenkarzinom,Sequencing,GRCh38,-&gt;Specimen: status = available; type = Tissue,,; status = completed; category = Laboratory</a></p><p><b>status</b>: Completed</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 405825005}\">Molecular genetic test (procedure)</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-molgen-patient-2.html\">Markus Sequenziert  Male, DoB: 1972-11-25 ( https://www.charite.de/fhir/sid/patientenidentifikation#MOL-TEST-002)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-molgen-encounter-2.html\">Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2024-04-01 --&gt; 2024-04-15</a></p><p><b>performed</b>: 2022-11-30</p><p><b>reasonReference</b>: <a href=\"Condition-mii-exa-test-data-molgen-diagnose-2.html\">Condition Bösartige Neubildung: Oberlappen (-Bronchus)</a></p></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-ext",
+        "valueReference" : {
+          "reference" : "Procedure/mii-exa-test-data-patient-4-molgen-genomic-study-analysis-1"
+        }
+      }],
+      "status" : "completed",
+      "category" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "laboratory"
+        }]
+      },
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "405825005",
+          "display" : "Molecular genetic test (procedure)"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-molgen-patient-2"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-molgen-encounter-2"
+      },
+      "performedDateTime" : "2022-11-30",
+      "reasonReference" : [{
+        "reference" : "Condition/mii-exa-test-data-molgen-diagnose-2"
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Procedure/mii-exa-test-data-patient-4-molgen-genomic-study-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Procedure/mii-exa-test-data-patient-4-molgen-genomic-study-analysis-1",
+    "resource" : {
+      "resourceType" : "Procedure",
+      "id" : "mii-exa-test-data-patient-4-molgen-genomic-study-analysis-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/mii-pr-molgen-genomic-study-analysis"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Procedure_mii-exa-test-data-patient-4-molgen-genomic-study-analysis-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Procedure mii-exa-test-data-patient-4-molgen-genomic-study-analysis-1</b></p><a name=\"mii-exa-test-data-patient-4-molgen-genomic-study-analysis-1\"> </a><a name=\"hcmii-exa-test-data-patient-4-molgen-genomic-study-analysis-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/mii-pr-molgen-genomic-study-analysis\">MII PR MolGen Genomic Study Analysis</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>Genomic Study Analysis Title</b>: Stufendiagnostik hereditaeres Magenkarzinom</p><p><b>Genomic Study Analysis Method Type</b>: <span title=\"Codes:{http://loinc.org LA26398-0}\">Sequencing</span></p><p><b>Genomic Study Analysis Genome Build</b>: <span title=\"Codes:{http://loinc.org LA26806-2}\">GRCh38</span></p><p><b>Genomic Study Analysis Specimen</b>: <a href=\"Specimen-mii-exa-test-data-molgen-specimen-2.html\">Specimen: status = available; type = Tissue</a></p><blockquote><p><b>Genomic Study Analysis Device</b></p><ul><li>device: <a href=\"Device-mii-exa-test-data-molgen-device-sequencer.html\">Device: status = active; manufacturer = Illumina</a></li></ul></blockquote><blockquote><p><b>Genomic Study Analysis Regions</b></p><ul><li>description: Direkte Sequenzierung der codierenden Exons inkl. flankierender intronischer Bereiche</li><li>studied: <span title=\"Codes:{http://www.genenames.org/geneId HGNC:583}\">APC</span></li><li>studied: <span title=\"Codes:{http://www.genenames.org/geneId HGNC:795}\">ATM</span></li><li>studied: <span title=\"Codes:{http://www.genenames.org/geneId HGNC:1100}\">BRCA1</span></li><li>studied: <span title=\"Codes:{http://www.genenames.org/geneId HGNC:1101}\">BRCA2</span></li><li>studied: <span title=\"Codes:{http://www.genenames.org/geneId HGNC:1748}\">CDH1</span></li><li>studied: <span title=\"Codes:{http://www.genenames.org/geneId HGNC:2509}\">CTNNA1</span></li><li>studied: <span title=\"Codes:{http://www.genenames.org/geneId HGNC:7127}\">MLH1</span></li><li>studied: <span title=\"Codes:{http://www.genenames.org/geneId HGNC:7325}\">MSH2</span></li><li>studied: <span title=\"Codes:{http://www.genenames.org/geneId HGNC:7329}\">MSH6</span></li><li>studied: <span title=\"Codes:{http://www.genenames.org/geneId HGNC:11998}\">TP53</span></li></ul></blockquote><p><b>status</b>: Completed</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-molgen-patient-2.html\">Markus Sequenziert  Male, DoB: 1972-11-25 ( https://www.charite.de/fhir/sid/patientenidentifikation#MOL-TEST-002)</a></p></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-title",
+        "valueString" : "Stufendiagnostik hereditaeres Magenkarzinom"
+      },
+      {
+        "url" : "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-method-type",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "LA26398-0",
+            "display" : "Sequencing"
+          }]
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-genome-build",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "LA26806-2",
+            "display" : "GRCh38"
+          }]
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-specimen",
+        "valueReference" : {
+          "reference" : "Specimen/mii-exa-test-data-molgen-specimen-2"
+        }
+      },
+      {
+        "extension" : [{
+          "url" : "device",
+          "valueReference" : {
+            "reference" : "Device/mii-exa-test-data-molgen-device-sequencer"
+          }
+        }],
+        "url" : "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-device"
+      },
+      {
+        "extension" : [{
+          "url" : "description",
+          "valueString" : "Direkte Sequenzierung der codierenden Exons inkl. flankierender intronischer Bereiche"
+        },
+        {
+          "url" : "studied",
+          "valueCodeableConcept" : {
+            "coding" : [{
+              "system" : "http://www.genenames.org/geneId",
+              "code" : "HGNC:583",
+              "display" : "APC"
+            }]
+          }
+        },
+        {
+          "url" : "studied",
+          "valueCodeableConcept" : {
+            "coding" : [{
+              "system" : "http://www.genenames.org/geneId",
+              "code" : "HGNC:795",
+              "display" : "ATM"
+            }]
+          }
+        },
+        {
+          "url" : "studied",
+          "valueCodeableConcept" : {
+            "coding" : [{
+              "system" : "http://www.genenames.org/geneId",
+              "code" : "HGNC:1100",
+              "display" : "BRCA1"
+            }]
+          }
+        },
+        {
+          "url" : "studied",
+          "valueCodeableConcept" : {
+            "coding" : [{
+              "system" : "http://www.genenames.org/geneId",
+              "code" : "HGNC:1101",
+              "display" : "BRCA2"
+            }]
+          }
+        },
+        {
+          "url" : "studied",
+          "valueCodeableConcept" : {
+            "coding" : [{
+              "system" : "http://www.genenames.org/geneId",
+              "code" : "HGNC:1748",
+              "display" : "CDH1"
+            }]
+          }
+        },
+        {
+          "url" : "studied",
+          "valueCodeableConcept" : {
+            "coding" : [{
+              "system" : "http://www.genenames.org/geneId",
+              "code" : "HGNC:2509",
+              "display" : "CTNNA1"
+            }]
+          }
+        },
+        {
+          "url" : "studied",
+          "valueCodeableConcept" : {
+            "coding" : [{
+              "system" : "http://www.genenames.org/geneId",
+              "code" : "HGNC:7127",
+              "display" : "MLH1"
+            }]
+          }
+        },
+        {
+          "url" : "studied",
+          "valueCodeableConcept" : {
+            "coding" : [{
+              "system" : "http://www.genenames.org/geneId",
+              "code" : "HGNC:7325",
+              "display" : "MSH2"
+            }]
+          }
+        },
+        {
+          "url" : "studied",
+          "valueCodeableConcept" : {
+            "coding" : [{
+              "system" : "http://www.genenames.org/geneId",
+              "code" : "HGNC:7329",
+              "display" : "MSH6"
+            }]
+          }
+        },
+        {
+          "url" : "studied",
+          "valueCodeableConcept" : {
+            "coding" : [{
+              "system" : "http://www.genenames.org/geneId",
+              "code" : "HGNC:11998",
+              "display" : "TP53"
+            }]
+          }
+        }],
+        "url" : "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-regions"
+      }],
+      "status" : "completed",
+      "category" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "laboratory"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-molgen-patient-2"
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Procedure/mii-exa-test-data-patient-4-molgen-genomic-study-analysis-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-4-molgen-molekulare-konsequenz-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-patient-4-molgen-molekulare-konsequenz-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/mii-pr-molgen-molekulare-konsequenz",
+        "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/molecular-consequence"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-patient-4-molgen-molekulare-konsequenz-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-patient-4-molgen-molekulare-konsequenz-1</b></p><a name=\"mii-exa-test-data-patient-4-molgen-molekulare-konsequenz-1\"> </a><a name=\"hcmii-exa-test-data-patient-4-molgen-molekulare-konsequenz-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profiles: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/mii-pr-molgen-molekulare-konsequenz\">MII PR MolGen Molekulare Konsequenz</a>, <a href=\"http://hl7.org/fhir/uv/genomics-reporting/STU3/StructureDefinition-molecular-consequence.html\">Molecular Consequence</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>Related artifact</b>: No display for RelatedArtifact  (type: citation; citation: Richards et al., Genet Med. 2015; 17:405-24; url: https://pubmed.ncbi.nlm.nih.gov/25741868/)</p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span>, <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v2-0074 GE}\">Genetics</span></p><p><b>code</b>: <span title=\"Codes:{http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs molecular-consequence}\">Molecular Consequence</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-molgen-patient-2.html\">Markus Sequenziert  Male, DoB: 1972-11-25 ( https://www.charite.de/fhir/sid/patientenidentifikation#MOL-TEST-002)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-molgen-encounter-2.html\">Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2024-04-01 --&gt; 2024-04-15</a></p><p><b>effective</b>: 2022-11-30</p><p><b>issued</b>: 2022-12-05 14:00:00+0100</p><p><b>derivedFrom</b>: <a href=\"Observation-mii-exa-test-data-patient-4-molgen-variante-1.html\">Observation Genetic variant assessment</a></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs conclusion-string}\">Conclusion Text</span></p><p><b>value</b>: Frameshift-Deletion fuehrt zu vorzeitigem Stopp-Codon und Verlust des alpha-E-Catenin-Proteins.</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs functional-effect}\">Functional Effect</span></p><p><b>value</b>: <span title=\"Codes:{http://sequenceontology.org SO:0002054}\">Funktionsverlust des alpha-E-Catenin-Proteins</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 53037-8}\">Genetic variation clinical significance [Imp]</span></p><p><b>value</b>: <span title=\"Codes:{http://loinc.org LA6668-3}\">Pathogenic</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 93044-6}\">Level of evidence</span></p><p><b>value</b>: <span title=\"Codes:{http://loinc.org LA30200-2}\">Very strong evidence pathogenic</span></p></blockquote></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/workflow-relatedArtifact",
+        "valueRelatedArtifact" : {
+          "type" : "citation",
+          "citation" : "Richards et al., Genet Med. 2015; 17:405-24",
+          "url" : "https://pubmed.ncbi.nlm.nih.gov/25741868/"
+        }
+      }],
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "laboratory",
+          "display" : "Laboratory"
+        }]
+      },
+      {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code" : "GE"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs",
+          "code" : "molecular-consequence",
+          "display" : "Molecular Consequence"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-molgen-patient-2"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-molgen-encounter-2"
+      },
+      "effectiveDateTime" : "2022-11-30",
+      "issued" : "2022-12-05T14:00:00+01:00",
+      "derivedFrom" : [{
+        "reference" : "Observation/mii-exa-test-data-patient-4-molgen-variante-1"
+      }],
+      "component" : [{
+        "code" : {
+          "coding" : [{
+            "system" : "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs",
+            "code" : "conclusion-string"
+          }]
+        },
+        "valueString" : "Frameshift-Deletion fuehrt zu vorzeitigem Stopp-Codon und Verlust des alpha-E-Catenin-Proteins."
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs",
+            "code" : "functional-effect"
+          }]
+        },
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://sequenceontology.org",
+            "code" : "SO:0002054",
+            "display" : "loss_of_function_variant"
+          }],
+          "text" : "Funktionsverlust des alpha-E-Catenin-Proteins"
+        }
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "53037-8"
+          }]
+        },
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "LA6668-3",
+            "display" : "Pathogenic"
+          }]
+        }
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "93044-6"
+          }]
+        },
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "LA30200-2",
+            "display" : "Very strong evidence pathogenic"
+          }]
+        }
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-patient-4-molgen-molekulare-konsequenz-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-4-molgen-diagnostische-implikation-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-patient-4-molgen-diagnostische-implikation-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/diagnostische-implikation"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-patient-4-molgen-diagnostische-implikation-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-patient-4-molgen-diagnostische-implikation-1</b></p><a name=\"mii-exa-test-data-patient-4-molgen-diagnostische-implikation-1\"> </a><a name=\"hcmii-exa-test-data-patient-4-molgen-diagnostische-implikation-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/diagnostische-implikation\">MII PR MolGen Diagnostische Implikation</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>Related artifact</b>: No display for RelatedArtifact  (type: citation; citation: ClinGen; url: https://search.clinicalgenome.org/kb/gene-dosage/HGNC:2509)</p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span>, <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v2-0074 GE}\">Genetics</span></p><p><b>code</b>: <span title=\"Codes:{http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs diagnostic-implication}\">Diagnostic Implication</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-molgen-patient-2.html\">Markus Sequenziert  Male, DoB: 1972-11-25 ( https://www.charite.de/fhir/sid/patientenidentifikation#MOL-TEST-002)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-molgen-encounter-2.html\">Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2024-04-01 --&gt; 2024-04-15</a></p><p><b>effective</b>: 2022-11-30</p><p><b>issued</b>: 2022-12-05 14:00:00+0100</p><p><b>performer</b>: <a href=\"Practitioner-mii-exa-test-data-practitioner-physician-2.html\">Practitioner Robert Koch (official)</a></p><p><b>derivedFrom</b>: <a href=\"Observation-mii-exa-test-data-patient-4-molgen-variante-1.html\">Observation Genetic variant assessment</a></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs conclusion-string}\">Conclusion Text</span></p><p><b>value</b>: Diese Variante wird nach den ACMG/AMP-Kriterien zusammenfassend als pathogen bewertet entsprechend IARC Class 5.</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 53037-8}\">Genetic variation clinical significance [Imp]</span></p><p><b>value</b>: <span title=\"Codes:{http://loinc.org LA6668-3}\">Pathogenic</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 81259-4}\">Associated phenotype</span></p><p><b>value</b>: <span title=\"Codes:{http://snomed.info/sct 716859000}\">Hereditary diffuse carcinoma of stomach (disorder)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 93044-6}\">Level of evidence</span></p><p><b>value</b>: <span title=\"Codes:{http://loinc.org LA30200-2}\">Very strong evidence pathogenic</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs condition-inheritance}\">Condition Inheritance</span></p><p><b>value</b>: <span title=\"Codes:{http://human-phenotype-ontology.org HP:0000006}\">Autosomal dominant inheritance</span></p></blockquote></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/workflow-relatedArtifact",
+        "valueRelatedArtifact" : {
+          "type" : "citation",
+          "citation" : "ClinGen",
+          "url" : "https://search.clinicalgenome.org/kb/gene-dosage/HGNC:2509"
+        }
+      }],
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "laboratory",
+          "display" : "Laboratory"
+        }]
+      },
+      {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code" : "GE"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs",
+          "code" : "diagnostic-implication",
+          "display" : "Diagnostic Implication"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-molgen-patient-2"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-molgen-encounter-2"
+      },
+      "effectiveDateTime" : "2022-11-30",
+      "issued" : "2022-12-05T14:00:00+01:00",
+      "performer" : [{
+        "reference" : "Practitioner/mii-exa-test-data-practitioner-physician-2"
+      }],
+      "derivedFrom" : [{
+        "reference" : "Observation/mii-exa-test-data-patient-4-molgen-variante-1"
+      }],
+      "component" : [{
+        "code" : {
+          "coding" : [{
+            "system" : "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs",
+            "code" : "conclusion-string"
+          }]
+        },
+        "valueString" : "Diese Variante wird nach den ACMG/AMP-Kriterien zusammenfassend als pathogen bewertet entsprechend IARC Class 5."
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "53037-8"
+          }]
+        },
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "LA6668-3",
+            "display" : "Pathogenic"
+          }]
+        }
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "81259-4"
+          }]
+        },
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "716859000",
+            "display" : "Hereditary diffuse carcinoma of stomach (disorder)"
+          }]
+        }
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "93044-6",
+            "display" : "Level of evidence"
+          }]
+        },
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "LA30200-2",
+            "display" : "Very strong evidence pathogenic"
+          }]
+        }
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs",
+            "code" : "condition-inheritance"
+          }]
+        },
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://human-phenotype-ontology.org",
+            "code" : "HP:0000006",
+            "display" : "Autosomal dominant inheritance"
+          }]
+        }
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-patient-4-molgen-diagnostische-implikation-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/FamilyMemberHistory/mii-exa-test-data-patient-4-molgen-family-member-history-1",
+    "resource" : {
+      "resourceType" : "FamilyMemberHistory",
+      "id" : "mii-exa-test-data-patient-4-molgen-family-member-history-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/familienanamnese"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"FamilyMemberHistory_mii-exa-test-data-patient-4-molgen-family-member-history-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: FamilyMemberHistory mii-exa-test-data-patient-4-molgen-family-member-history-1</b></p><a name=\"mii-exa-test-data-patient-4-molgen-family-member-history-1\"> </a><a name=\"hcmii-exa-test-data-patient-4-molgen-family-member-history-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/familienanamnese\">MII PR MolGen Familienanamnese</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Completed</p><p><b>patient</b>: <a href=\"Patient-mii-exa-test-data-molgen-patient-2.html\">Markus Sequenziert  Male, DoB: 1972-11-25 ( https://www.charite.de/fhir/sid/patientenidentifikation#MOL-TEST-002)</a></p><p><b>date</b>: 2022-11-30</p><p><b>relationship</b>: <span title=\"Codes:{http://snomed.info/sct 72705000}, {http://terminology.hl7.org/CodeSystem/v3-RoleCode MTH}\">Mother (person)</span></p><p><b>sex</b>: <span title=\"Codes:{http://hl7.org/fhir/administrative-gender female}, {http://snomed.info/sct 248152002}\">Female (finding)</span></p><p><b>deceased</b>: true</p><p><b>reasonCode</b>: <span title=\"Codes:{http://snomed.info/sct 443961001}, {http://fhir.de/CodeSystem/bfarm/icd-10-gm C16.9}\">Malignant adenomatous neoplasm (disorder)</span></p><h3>Conditions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>ContributedToDeath</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 254837009}, {http://fhir.de/CodeSystem/bfarm/icd-10-gm C50.9}\">Malignant neoplasm of breast (disorder)</span></td><td>true</td></tr></table></div>"
+      },
+      "status" : "completed",
+      "patient" : {
+        "reference" : "Patient/mii-exa-test-data-molgen-patient-2"
+      },
+      "date" : "2022-11-30",
+      "relationship" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "72705000",
+          "display" : "Mother (person)"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "MTH",
+          "display" : "mother"
+        }]
+      },
+      "sex" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/administrative-gender",
+          "code" : "female"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "248152002",
+          "display" : "Female (finding)"
+        }]
+      },
+      "deceasedBoolean" : true,
+      "reasonCode" : [{
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "443961001",
+          "display" : "Malignant adenomatous neoplasm (disorder)"
+        },
+        {
+          "system" : "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+          "version" : "2022",
+          "code" : "C16.9",
+          "display" : "Bösartige Neubildung: Magen, nicht näher bezeichnet"
+        }]
+      }],
+      "condition" : [{
+        "code" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "254837009",
+            "display" : "Malignant neoplasm of breast (disorder)"
+          },
+          {
+            "system" : "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+            "version" : "2022",
+            "code" : "C50.9",
+            "display" : "Bösartige Neubildung: Brustdrüse, nicht näher bezeichnet"
+          }]
+        },
+        "contributedToDeath" : true
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "FamilyMemberHistory/mii-exa-test-data-patient-4-molgen-family-member-history-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/ServiceRequest/mii-exa-test-data-patient-3-molgen-anforderung-2",
+    "resource" : {
+      "resourceType" : "ServiceRequest",
+      "id" : "mii-exa-test-data-patient-3-molgen-anforderung-2",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/anforderung-genetischer-test"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"ServiceRequest_mii-exa-test-data-patient-3-molgen-anforderung-2\"> </a><p class=\"res-header-id\"><b>Generated Narrative: ServiceRequest mii-exa-test-data-patient-3-molgen-anforderung-2</b></p><a name=\"mii-exa-test-data-patient-3-molgen-anforderung-2\"> </a><a name=\"hcmii-exa-test-data-patient-3-molgen-anforderung-2\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/anforderung-genetischer-test\">MII PR MolGen Anforderung genetischer Test</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>Related artifact</b>: No display for RelatedArtifact  (type: citation; citation: S3-Leitlinie Lungenkarzinom, Version 4.0 (April 2025), Empfehlung 6.60, AWMF 020-007OL; url: https://register.awmf.org/de/leitlinien/detail/020-007OL)</p><p><b>status</b>: Active</p><p><b>intent</b>: Order</p><p><b>category</b>: <span title=\"Codes:{http://snomed.info/sct 108252007}\">Laboratory procedure (procedure)</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 405825005}\">NGS-Panel NSCLC: EGFR Exon 18-21, BRAF V600, ALK, ROS1, RET, NTRK 1-3, KRAS G12C, MET Exon 14, NRG1, HER2 Exon 8/18-21</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-molgen-patient-1.html\">Petra Genomisch  Female, DoB: 1985-08-14 ( https://www.charite.de/fhir/sid/patientenidentifikation#MOL-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-molgen-encounter-1.html\">Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2024-03-01 --&gt; 2024-03-20</a></p><p><b>authoredOn</b>: 2024-03-15</p><p><b>requester</b>: <a href=\"Practitioner-mii-exa-test-data-practitioner-physician-1.html\">Practitioner Rahel Hirsch </a></p><p><b>reasonCode</b>: <span title=\"Codes:{http://snomed.info/sct 254637007}\">Non-small cell lung cancer</span></p><p><b>specimen</b>: <a href=\"Specimen-mii-exa-test-data-molgen-specimen-1.html\">Specimen: status = available; type = Whole blood</a></p><p><b>note</b>: </p><blockquote><div><p>NSCLC Stadium IV. Molekularpathologische Untersuchung gemaess S3-Leitlinie Empfehlung 6.60 vor Einleitung der Erstlinientherapie.</p>\n</div></blockquote></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/workflow-relatedArtifact",
+        "valueRelatedArtifact" : {
+          "type" : "citation",
+          "citation" : "S3-Leitlinie Lungenkarzinom, Version 4.0 (April 2025), Empfehlung 6.60, AWMF 020-007OL",
+          "url" : "https://register.awmf.org/de/leitlinien/detail/020-007OL"
+        }
+      }],
+      "status" : "active",
+      "intent" : "order",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "108252007",
+          "display" : "Laboratory procedure (procedure)"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "405825005",
+          "display" : "Molecular genetic test (procedure)"
+        }],
+        "text" : "NGS-Panel NSCLC: EGFR Exon 18-21, BRAF V600, ALK, ROS1, RET, NTRK 1-3, KRAS G12C, MET Exon 14, NRG1, HER2 Exon 8/18-21"
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-molgen-patient-1"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-molgen-encounter-1"
+      },
+      "authoredOn" : "2024-03-15",
+      "requester" : {
+        "reference" : "Practitioner/mii-exa-test-data-practitioner-physician-1"
+      },
+      "reasonCode" : [{
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "254637007",
+          "display" : "Non-small cell lung cancer"
+        }]
+      }],
+      "specimen" : [{
+        "reference" : "Specimen/mii-exa-test-data-molgen-specimen-1"
+      }],
+      "note" : [{
+        "text" : "NSCLC Stadium IV. Molekularpathologische Untersuchung gemaess S3-Leitlinie Empfehlung 6.60 vor Einleitung der Erstlinientherapie."
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "ServiceRequest/mii-exa-test-data-patient-3-molgen-anforderung-2"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-3-molgen-variante-2",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-patient-3-molgen-variante-2",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/variante",
+        "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/variant"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-patient-3-molgen-variante-2\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-patient-3-molgen-variante-2</b></p><a name=\"mii-exa-test-data-patient-3-molgen-variante-2\"> </a><a name=\"hcmii-exa-test-data-patient-3-molgen-variante-2\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profiles: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/variante\">MII PR MolGen Variante</a>, <a href=\"http://hl7.org/fhir/uv/genomics-reporting/STU3/StructureDefinition-variant.html\">Variant</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>basedOn</b>: <a href=\"ServiceRequest-mii-exa-test-data-patient-3-molgen-anforderung-2.html\">ServiceRequest Molecular genetic test (procedure)</a></p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span>, <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v2-0074 GE}\">Genetics</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 69548-6}\">Genetic variant assessment</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-molgen-patient-1.html\">Petra Genomisch  Female, DoB: 1985-08-14 ( https://www.charite.de/fhir/sid/patientenidentifikation#MOL-TEST-001)</a></p><p><b>effective</b>: 2024-03-20</p><p><b>issued</b>: 2024-03-25 10:00:00+0100</p><p><b>value</b>: <span title=\"Codes:{http://loinc.org LA9633-4}\">Present</span></p><p><b>method</b>: <span title=\"Codes:{http://loinc.org LA26398-0}\">Sequencing</span></p><p><b>specimen</b>: <a href=\"Specimen-mii-exa-test-data-molgen-specimen-1.html\">Specimen: status = available; type = Whole blood</a></p><p><b>device</b>: <a href=\"Device-mii-exa-test-data-molgen-device-sequencer.html\">Device: status = active; manufacturer = Illumina</a></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 48018-6}\">Gene studied [ID]</span></p><p><b>value</b>: <span title=\"Codes:{http://www.genenames.org/geneId HGNC:3236}\">EGFR</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 48013-7}\">Genomic reference sequence [ID]</span></p><p><b>value</b>: <span title=\"Codes:{http://www.ncbi.nlm.nih.gov/refseq NM_005228.5}\">NM_005228.5</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 47999-8}\">DNA region name [Identifier]</span></p><p><b>value</b>: Exon 21</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 48004-6}\">DNA change (c.HGVS)</span></p><p><b>value</b>: <span title=\"Codes:{http://varnomen.hgvs.org NM_005228.5:c.2573T&gt;G}\">NM_005228.5:c.2573T&gt;G</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 48005-3}\">Amino acid change (pHGVS)</span></p><p><b>value</b>: <span title=\"Codes:{http://varnomen.hgvs.org p.(Leu858Arg)}\">p.(Leu858Arg)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 81258-6}\">Sample variant allelic frequency [NFr]</span></p><p><b>value</b>: 42.3 %<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code% = '%')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 48001-2}\">Cytogenetic (chromosome) location</span></p><p><b>value</b>: <span title=\"Codes:{urn:oid:2.16.840.1.113883.6.335 7p11.2}\">7p11.2</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 48019-4}\">DNA change type</span></p><p><b>value</b>: <span title=\"Codes:{http://sequenceontology.org SO:1000008}\">point_mutation</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 81252-9}\">Discrete genetic variant</span></p><p><b>value</b>: <span title=\"Codes:{http://www.ncbi.nlm.nih.gov/projects/SNP rs121434568}\">rs121434568</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 62374-4}\">Human reference sequence assembly version</span></p><p><b>value</b>: <span title=\"Codes:{http://loinc.org LA26806-2}\">GRCh38</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 81254-5}\">Genomic allele start-end</span></p><p><b>value</b>: 55191822-55191822</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 69547-8}\">Genomic ref allele [ID]</span></p><p><b>value</b>: T</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 69551-0}\">Genomic alt allele [ID]</span></p><p><b>value</b>: G</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 48002-0}\">Genomic source class [Type]</span></p><p><b>value</b>: <span title=\"Codes:{http://loinc.org LA6684-0}\">Somatic</span></p></blockquote></div>"
+      },
+      "basedOn" : [{
+        "reference" : "ServiceRequest/mii-exa-test-data-patient-3-molgen-anforderung-2"
+      }],
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "laboratory",
+          "display" : "Laboratory"
+        }]
+      },
+      {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code" : "GE"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "69548-6",
+          "display" : "Genetic variant assessment"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-molgen-patient-1"
+      },
+      "effectiveDateTime" : "2024-03-20",
+      "issued" : "2024-03-25T10:00:00+01:00",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "LA9633-4",
+          "display" : "Present"
+        }]
+      },
+      "method" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "LA26398-0",
+          "display" : "Sequencing"
+        }]
+      },
+      "specimen" : {
+        "reference" : "Specimen/mii-exa-test-data-molgen-specimen-1"
+      },
+      "device" : {
+        "reference" : "Device/mii-exa-test-data-molgen-device-sequencer"
+      },
+      "component" : [{
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "48018-6",
+            "display" : "Gene studied [ID]"
+          }]
+        },
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://www.genenames.org/geneId",
+            "code" : "HGNC:3236",
+            "display" : "EGFR"
+          }]
+        }
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "48013-7",
+            "display" : "Genomic reference sequence [ID]"
+          }]
+        },
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://www.ncbi.nlm.nih.gov/refseq",
+            "code" : "NM_005228.5"
+          }]
+        }
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "47999-8",
+            "display" : "DNA region name [Identifier]"
+          }]
+        },
+        "valueString" : "Exon 21"
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "48004-6",
+            "display" : "DNA change (c.HGVS)"
+          }]
+        },
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://varnomen.hgvs.org",
+            "code" : "NM_005228.5:c.2573T>G"
+          }]
+        }
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "48005-3",
+            "display" : "Amino acid change (pHGVS)"
+          }]
+        },
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://varnomen.hgvs.org",
+            "code" : "p.(Leu858Arg)"
+          }]
+        }
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "81258-6",
+            "display" : "Sample variant allelic frequency [NFr]"
+          }]
+        },
+        "valueQuantity" : {
+          "value" : 42.3,
+          "system" : "http://unitsofmeasure.org",
+          "code" : "%"
+        }
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "48001-2",
+            "display" : "Cytogenetic (chromosome) location"
+          }]
+        },
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "urn:oid:2.16.840.1.113883.6.335",
+            "code" : "7p11.2"
+          }]
+        }
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "48019-4",
+            "display" : "DNA change type"
+          }]
+        },
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://sequenceontology.org",
+            "code" : "SO:1000008",
+            "display" : "point_mutation"
+          }]
+        }
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "81252-9",
+            "display" : "Discrete genetic variant"
+          }]
+        },
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://www.ncbi.nlm.nih.gov/projects/SNP",
+            "code" : "rs121434568"
+          }]
+        }
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "62374-4",
+            "display" : "Human reference sequence assembly version"
+          }]
+        },
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "LA26806-2",
+            "display" : "GRCh38"
+          }]
+        }
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "81254-5",
+            "display" : "Genomic allele start-end"
+          }]
+        },
+        "valueRange" : {
+          "low" : {
+            "value" : 55191822
+          },
+          "high" : {
+            "value" : 55191822
+          }
+        }
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "69547-8",
+            "display" : "Genomic ref allele [ID]"
+          }]
+        },
+        "valueString" : "T"
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "69551-0",
+            "display" : "Genomic alt allele [ID]"
+          }]
+        },
+        "valueString" : "G"
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "48002-0",
+            "display" : "Genomic source class [Type]"
+          }]
+        },
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "LA6684-0",
+            "display" : "Somatic"
+          }]
+        }
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-patient-3-molgen-variante-2"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-3-molgen-therapeutische-implikation-2",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-patient-3-molgen-therapeutische-implikation-2",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/therapeutische-implikation",
+        "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/therapeutic-implication"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-patient-3-molgen-therapeutische-implikation-2\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-patient-3-molgen-therapeutische-implikation-2</b></p><a name=\"mii-exa-test-data-patient-3-molgen-therapeutische-implikation-2\"> </a><a name=\"hcmii-exa-test-data-patient-3-molgen-therapeutische-implikation-2\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profiles: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/therapeutische-implikation\">MII PR MolGen Therapeutische Implikation</a>, <a href=\"http://hl7.org/fhir/uv/genomics-reporting/STU3/StructureDefinition-therapeutic-implication.html\">Therapeutic Implication</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>Related artifact</b>: No display for RelatedArtifact  (type: citation; citation: Ramalingam SS et al. Overall Survival with Osimertinib in Untreated, EGFR-Mutated Advanced NSCLC. N Engl J Med. 2020;382(1):41-50. PMID 31751012; url: https://pubmed.ncbi.nlm.nih.gov/31751012/)</p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span>, <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v2-0074 GE}\">Genetics</span></p><p><b>code</b>: <span title=\"Codes:{http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs therapeutic-implication}\">Therapeutic Implication</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-molgen-patient-1.html\">Petra Genomisch  Female, DoB: 1985-08-14 ( https://www.charite.de/fhir/sid/patientenidentifikation#MOL-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-molgen-encounter-1.html\">Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2024-03-01 --&gt; 2024-03-20</a></p><p><b>effective</b>: 2024-03-20</p><p><b>issued</b>: 2024-03-25 10:00:00+0100</p><p><b>derivedFrom</b>: <a href=\"Observation-mii-exa-test-data-patient-3-molgen-variante-2.html\">Observation Genetic variant assessment</a></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs conclusion-string}\">Conclusion Text</span></p><p><b>value</b>: Nachweis einer aktivierenden EGFR-Punktmutation p.(Leu858Arg) in Exon 21 (L858R). Osimertinib (Tagrisso) als Erstlinientherapie empfohlen gemaess FLAURA-Studie und aktueller Zulassung.</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 51963-7}\">Medication assessed [ID]</span></p><p><b>value</b>: <span title=\"Codes:{http://fhir.de/CodeSystem/bfarm/atc L01EB04}\">Osimertinib (Tagrisso)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 93044-6}\">Level of evidence</span></p><p><b>value</b>: <span title=\"Codes:{http://loinc.org LA30200-2}\">Tier I - Level A (AMP/ASCO/CAP, EMA/FDA-zugelassen, FLAURA)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 81259-4}\">Associated phenotype</span></p><p><b>value</b>: <span title=\"Codes:{http://snomed.info/sct 254637007}\">Non-small cell lung cancer</span></p></blockquote></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/workflow-relatedArtifact",
+        "valueRelatedArtifact" : {
+          "type" : "citation",
+          "citation" : "Ramalingam SS et al. Overall Survival with Osimertinib in Untreated, EGFR-Mutated Advanced NSCLC. N Engl J Med. 2020;382(1):41-50. PMID 31751012",
+          "url" : "https://pubmed.ncbi.nlm.nih.gov/31751012/"
+        }
+      }],
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "laboratory",
+          "display" : "Laboratory"
+        }]
+      },
+      {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code" : "GE"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs",
+          "code" : "therapeutic-implication",
+          "display" : "Therapeutic Implication"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-molgen-patient-1"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-molgen-encounter-1"
+      },
+      "effectiveDateTime" : "2024-03-20",
+      "issued" : "2024-03-25T10:00:00+01:00",
+      "derivedFrom" : [{
+        "reference" : "Observation/mii-exa-test-data-patient-3-molgen-variante-2"
+      }],
+      "component" : [{
+        "code" : {
+          "coding" : [{
+            "system" : "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs",
+            "code" : "conclusion-string"
+          }]
+        },
+        "valueString" : "Nachweis einer aktivierenden EGFR-Punktmutation p.(Leu858Arg) in Exon 21 (L858R). Osimertinib (Tagrisso) als Erstlinientherapie empfohlen gemaess FLAURA-Studie und aktueller Zulassung."
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "51963-7",
+            "display" : "Medication assessed [ID]"
+          }]
+        },
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://fhir.de/CodeSystem/bfarm/atc",
+            "version" : "2026",
+            "code" : "L01EB04",
+            "display" : "Osimertinib"
+          }],
+          "text" : "Osimertinib (Tagrisso)"
+        }
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "93044-6",
+            "display" : "Level of evidence"
+          }]
+        },
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "LA30200-2",
+            "display" : "Very strong evidence pathogenic"
+          }],
+          "text" : "Tier I - Level A (AMP/ASCO/CAP, EMA/FDA-zugelassen, FLAURA)"
+        }
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "81259-4"
+          }]
+        },
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "254637007",
+            "display" : "Non-small cell lung cancer"
+          }]
+        }
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-patient-3-molgen-therapeutische-implikation-2"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-3-molgen-variante-3",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-patient-3-molgen-variante-3",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/variante",
+        "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/variant"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-patient-3-molgen-variante-3\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-patient-3-molgen-variante-3</b></p><a name=\"mii-exa-test-data-patient-3-molgen-variante-3\"> </a><a name=\"hcmii-exa-test-data-patient-3-molgen-variante-3\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profiles: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/variante\">MII PR MolGen Variante</a>, <a href=\"http://hl7.org/fhir/uv/genomics-reporting/STU3/StructureDefinition-variant.html\">Variant</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>basedOn</b>: <a href=\"ServiceRequest-mii-exa-test-data-patient-3-molgen-anforderung-2.html\">ServiceRequest Molecular genetic test (procedure)</a></p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span>, <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v2-0074 GE}\">Genetics</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 69548-6}\">Genetic variant assessment</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-molgen-patient-1.html\">Petra Genomisch  Female, DoB: 1985-08-14 ( https://www.charite.de/fhir/sid/patientenidentifikation#MOL-TEST-001)</a></p><p><b>effective</b>: 2024-03-20</p><p><b>issued</b>: 2024-03-25 10:00:00+0100</p><p><b>value</b>: <span title=\"Codes:{http://loinc.org LA9633-4}\">Present</span></p><p><b>method</b>: <span title=\"Codes:{http://loinc.org LA26398-0}\">Sequencing</span></p><p><b>specimen</b>: <a href=\"Specimen-mii-exa-test-data-molgen-specimen-1.html\">Specimen: status = available; type = Whole blood</a></p><p><b>device</b>: <a href=\"Device-mii-exa-test-data-molgen-device-sequencer.html\">Device: status = active; manufacturer = Illumina</a></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 48018-6}\">Gene studied [ID]</span></p><p><b>value</b>: <span title=\"Codes:{http://www.genenames.org/geneId HGNC:3236}\">EGFR</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 48013-7}\">Genomic reference sequence [ID]</span></p><p><b>value</b>: <span title=\"Codes:{http://www.ncbi.nlm.nih.gov/refseq NM_005228.5}\">NM_005228.5</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 47999-8}\">DNA region name [Identifier]</span></p><p><b>value</b>: Exon 20</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 48004-6}\">DNA change (c.HGVS)</span></p><p><b>value</b>: <span title=\"Codes:{http://varnomen.hgvs.org NM_005228.5:c.2300_2308dup}\">NM_005228.5:c.2300_2308dup</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 48005-3}\">Amino acid change (pHGVS)</span></p><p><b>value</b>: <span title=\"Codes:{http://varnomen.hgvs.org p.(Ala767_Val769dup)}\">p.(Ala767_Val769dup)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 81258-6}\">Sample variant allelic frequency [NFr]</span></p><p><b>value</b>: 18.7 %<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code% = '%')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 48001-2}\">Cytogenetic (chromosome) location</span></p><p><b>value</b>: <span title=\"Codes:{urn:oid:2.16.840.1.113883.6.335 7p11.2}\">7p11.2</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 48019-4}\">DNA change type</span></p><p><b>value</b>: <span title=\"Codes:{http://sequenceontology.org SO:1000035}\">Duplication</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 62374-4}\">Human reference sequence assembly version</span></p><p><b>value</b>: <span title=\"Codes:{http://loinc.org LA26806-2}\">GRCh38</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 48002-0}\">Genomic source class [Type]</span></p><p><b>value</b>: <span title=\"Codes:{http://loinc.org LA6684-0}\">Somatic</span></p></blockquote></div>"
+      },
+      "basedOn" : [{
+        "reference" : "ServiceRequest/mii-exa-test-data-patient-3-molgen-anforderung-2"
+      }],
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "laboratory",
+          "display" : "Laboratory"
+        }]
+      },
+      {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code" : "GE"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "69548-6",
+          "display" : "Genetic variant assessment"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-molgen-patient-1"
+      },
+      "effectiveDateTime" : "2024-03-20",
+      "issued" : "2024-03-25T10:00:00+01:00",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "LA9633-4",
+          "display" : "Present"
+        }]
+      },
+      "method" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "LA26398-0",
+          "display" : "Sequencing"
+        }]
+      },
+      "specimen" : {
+        "reference" : "Specimen/mii-exa-test-data-molgen-specimen-1"
+      },
+      "device" : {
+        "reference" : "Device/mii-exa-test-data-molgen-device-sequencer"
+      },
+      "component" : [{
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "48018-6",
+            "display" : "Gene studied [ID]"
+          }]
+        },
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://www.genenames.org/geneId",
+            "code" : "HGNC:3236",
+            "display" : "EGFR"
+          }]
+        }
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "48013-7",
+            "display" : "Genomic reference sequence [ID]"
+          }]
+        },
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://www.ncbi.nlm.nih.gov/refseq",
+            "code" : "NM_005228.5"
+          }]
+        }
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "47999-8",
+            "display" : "DNA region name [Identifier]"
+          }]
+        },
+        "valueString" : "Exon 20"
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "48004-6",
+            "display" : "DNA change (c.HGVS)"
+          }]
+        },
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://varnomen.hgvs.org",
+            "code" : "NM_005228.5:c.2300_2308dup"
+          }]
+        }
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "48005-3",
+            "display" : "Amino acid change (pHGVS)"
+          }]
+        },
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://varnomen.hgvs.org",
+            "code" : "p.(Ala767_Val769dup)"
+          }]
+        }
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "81258-6",
+            "display" : "Sample variant allelic frequency [NFr]"
+          }]
+        },
+        "valueQuantity" : {
+          "value" : 18.7,
+          "system" : "http://unitsofmeasure.org",
+          "code" : "%"
+        }
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "48001-2",
+            "display" : "Cytogenetic (chromosome) location"
+          }]
+        },
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "urn:oid:2.16.840.1.113883.6.335",
+            "code" : "7p11.2"
+          }]
+        }
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "48019-4",
+            "display" : "DNA change type"
+          }]
+        },
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://sequenceontology.org",
+            "code" : "SO:1000035",
+            "display" : "Duplication"
+          }]
+        }
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "62374-4",
+            "display" : "Human reference sequence assembly version"
+          }]
+        },
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "LA26806-2",
+            "display" : "GRCh38"
+          }]
+        }
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "48002-0",
+            "display" : "Genomic source class [Type]"
+          }]
+        },
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "LA6684-0",
+            "display" : "Somatic"
+          }]
+        }
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-patient-3-molgen-variante-3"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-3-molgen-therapeutische-implikation-3",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-patient-3-molgen-therapeutische-implikation-3",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/therapeutische-implikation",
+        "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/therapeutic-implication"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-patient-3-molgen-therapeutische-implikation-3\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-patient-3-molgen-therapeutische-implikation-3</b></p><a name=\"mii-exa-test-data-patient-3-molgen-therapeutische-implikation-3\"> </a><a name=\"hcmii-exa-test-data-patient-3-molgen-therapeutische-implikation-3\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profiles: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/therapeutische-implikation\">MII PR MolGen Therapeutische Implikation</a>, <a href=\"http://hl7.org/fhir/uv/genomics-reporting/STU3/StructureDefinition-therapeutic-implication.html\">Therapeutic Implication</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>Related artifact</b>: No display for RelatedArtifact  (type: citation; citation: Park K et al. Amivantamab in EGFR Exon 20 Insertion-Mutated Non-Small-Cell Lung Cancer Progressing on Platinum Chemotherapy (CHRYSALIS). J Clin Oncol. 2021;39(30):3391-3402. PMID 34339292; url: https://pubmed.ncbi.nlm.nih.gov/34339292/)</p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span>, <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v2-0074 GE}\">Genetics</span></p><p><b>code</b>: <span title=\"Codes:{http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs therapeutic-implication}\">Therapeutic Implication</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-molgen-patient-1.html\">Petra Genomisch  Female, DoB: 1985-08-14 ( https://www.charite.de/fhir/sid/patientenidentifikation#MOL-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-molgen-encounter-1.html\">Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2024-03-01 --&gt; 2024-03-20</a></p><p><b>effective</b>: 2024-03-20</p><p><b>issued</b>: 2024-03-25 10:00:00+0100</p><p><b>derivedFrom</b>: <a href=\"Observation-mii-exa-test-data-patient-3-molgen-variante-3.html\">Observation Genetic variant assessment</a></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs conclusion-string}\">Conclusion Text</span></p><p><b>value</b>: Nachweis einer EGFR-Exon-20-Insertion p.(Ala767_Val769dup). Diese Variante zeigt primaere Resistenz gegenueber gaengigen EGFR-TKIs (inkl. Osimertinib). Amivantamab (Rybrevant) ist EMA-zugelassen nach Versagen platinbasierter Chemotherapie (2L). Einsatz in der Erstlinie (PAPILLON-Schema: Amivantamab + Carboplatin/Pemetrexed) derzeit in Deutschland off-label.</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 51963-7}\">Medication assessed [ID]</span></p><p><b>value</b>: <span title=\"Codes:{http://fhir.de/CodeSystem/bfarm/atc L01FX18}\">Amivantamab (Rybrevant) - EGFR/MET bispezifischer Antikoerper</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 93044-6}\">Level of evidence</span></p><p><b>value</b>: <span title=\"Codes:{http://loinc.org LA30201-0}\">Tier I - Level B (AMP/ASCO/CAP, EMA-zugelassen 2L; 1L off-label, PAPILLON-Studie)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 81259-4}\">Associated phenotype</span></p><p><b>value</b>: <span title=\"Codes:{http://snomed.info/sct 254637007}\">Non-small cell lung cancer</span></p></blockquote></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/workflow-relatedArtifact",
+        "valueRelatedArtifact" : {
+          "type" : "citation",
+          "citation" : "Park K et al. Amivantamab in EGFR Exon 20 Insertion-Mutated Non-Small-Cell Lung Cancer Progressing on Platinum Chemotherapy (CHRYSALIS). J Clin Oncol. 2021;39(30):3391-3402. PMID 34339292",
+          "url" : "https://pubmed.ncbi.nlm.nih.gov/34339292/"
+        }
+      }],
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "laboratory",
+          "display" : "Laboratory"
+        }]
+      },
+      {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code" : "GE"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs",
+          "code" : "therapeutic-implication",
+          "display" : "Therapeutic Implication"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-molgen-patient-1"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-molgen-encounter-1"
+      },
+      "effectiveDateTime" : "2024-03-20",
+      "issued" : "2024-03-25T10:00:00+01:00",
+      "derivedFrom" : [{
+        "reference" : "Observation/mii-exa-test-data-patient-3-molgen-variante-3"
+      }],
+      "component" : [{
+        "code" : {
+          "coding" : [{
+            "system" : "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs",
+            "code" : "conclusion-string"
+          }]
+        },
+        "valueString" : "Nachweis einer EGFR-Exon-20-Insertion p.(Ala767_Val769dup). Diese Variante zeigt primaere Resistenz gegenueber gaengigen EGFR-TKIs (inkl. Osimertinib). Amivantamab (Rybrevant) ist EMA-zugelassen nach Versagen platinbasierter Chemotherapie (2L). Einsatz in der Erstlinie (PAPILLON-Schema: Amivantamab + Carboplatin/Pemetrexed) derzeit in Deutschland off-label."
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "51963-7",
+            "display" : "Medication assessed [ID]"
+          }]
+        },
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://fhir.de/CodeSystem/bfarm/atc",
+            "version" : "2026",
+            "code" : "L01FX18",
+            "display" : "Amivantamab"
+          }],
+          "text" : "Amivantamab (Rybrevant) - EGFR/MET bispezifischer Antikoerper"
+        }
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "93044-6",
+            "display" : "Level of evidence"
+          }]
+        },
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "LA30201-0",
+            "display" : "Strong evidence pathogenic"
+          }],
+          "text" : "Tier I - Level B (AMP/ASCO/CAP, EMA-zugelassen 2L; 1L off-label, PAPILLON-Studie)"
+        }
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "81259-4"
+          }]
+        },
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "254637007",
+            "display" : "Non-small cell lung cancer"
+          }]
+        }
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-patient-3-molgen-therapeutische-implikation-3"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Specimen/mii-exa-test-data-molgen-specimen-1",
+    "resource" : {
+      "resourceType" : "Specimen",
+      "id" : "mii-exa-test-data-molgen-specimen-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Specimen_mii-exa-test-data-molgen-specimen-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Specimen mii-exa-test-data-molgen-specimen-1</b></p><a name=\"mii-exa-test-data-molgen-specimen-1\"> </a><a name=\"hcmii-exa-test-data-molgen-specimen-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Available</p><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v2-0487 BLD}\">Whole blood</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-molgen-patient-1.html\">Petra Genomisch  Female, DoB: 1985-08-14 ( https://www.charite.de/fhir/sid/patientenidentifikation#MOL-TEST-001)</a></p><h3>Collections</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Collected[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>2024-03-05</td></tr></table></div>"
+      },
+      "status" : "available",
+      "type" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v2-0487",
+          "code" : "BLD",
+          "display" : "Whole blood"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-molgen-patient-1"
+      },
+      "collection" : {
+        "collectedDateTime" : "2024-03-05"
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Specimen/mii-exa-test-data-molgen-specimen-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Specimen/mii-exa-test-data-molgen-specimen-2",
+    "resource" : {
+      "resourceType" : "Specimen",
+      "id" : "mii-exa-test-data-molgen-specimen-2",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Specimen_mii-exa-test-data-molgen-specimen-2\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Specimen mii-exa-test-data-molgen-specimen-2</b></p><a name=\"mii-exa-test-data-molgen-specimen-2\"> </a><a name=\"hcmii-exa-test-data-molgen-specimen-2\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Available</p><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v2-0487 TISS}\">Tissue</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-molgen-patient-2.html\">Markus Sequenziert  Male, DoB: 1972-11-25 ( https://www.charite.de/fhir/sid/patientenidentifikation#MOL-TEST-002)</a></p><h3>Collections</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Collected[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>2024-04-03</td></tr></table></div>"
+      },
+      "status" : "available",
+      "type" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v2-0487",
+          "code" : "TISS",
+          "display" : "Tissue"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-molgen-patient-2"
+      },
+      "collection" : {
+        "collectedDateTime" : "2024-04-03"
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Specimen/mii-exa-test-data-molgen-specimen-2"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Specimen/mii-exa-test-data-molgen-specimen-3",
+    "resource" : {
+      "resourceType" : "Specimen",
+      "id" : "mii-exa-test-data-molgen-specimen-3",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Specimen_mii-exa-test-data-molgen-specimen-3\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Specimen mii-exa-test-data-molgen-specimen-3</b></p><a name=\"mii-exa-test-data-molgen-specimen-3\"> </a><a name=\"hcmii-exa-test-data-molgen-specimen-3\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Available</p><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v2-0487 BLD}\">Whole blood</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-molgen-patient-2.html\">Markus Sequenziert  Male, DoB: 1972-11-25 ( https://www.charite.de/fhir/sid/patientenidentifikation#MOL-TEST-002)</a></p><h3>Collections</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Collected[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>2024-04-03</td></tr></table></div>"
+      },
+      "status" : "available",
+      "type" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v2-0487",
+          "code" : "BLD",
+          "display" : "Whole blood"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-molgen-patient-2"
+      },
+      "collection" : {
+        "collectedDateTime" : "2024-04-03"
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Specimen/mii-exa-test-data-molgen-specimen-3"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Practitioner/mii-exa-test-data-practitioner-physician-1",
+    "resource" : {
+      "resourceType" : "Practitioner",
+      "id" : "mii-exa-test-data-practitioner-physician-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Practitioner_mii-exa-test-data-practitioner-physician-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Practitioner mii-exa-test-data-practitioner-physician-1</b></p><a name=\"mii-exa-test-data-practitioner-physician-1\"> </a><a name=\"hcmii-exa-test-data-practitioner-physician-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>active</b>: true</p><p><b>name</b>: Rahel Hirsch </p></div>"
+      },
+      "active" : true,
+      "name" : [{
+        "family" : "Hirsch",
+        "given" : ["Rahel"]
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Practitioner/mii-exa-test-data-practitioner-physician-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Practitioner/mii-exa-test-data-practitioner-physician-2",
+    "resource" : {
+      "resourceType" : "Practitioner",
+      "id" : "mii-exa-test-data-practitioner-physician-2",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Practitioner_mii-exa-test-data-practitioner-physician-2\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Practitioner mii-exa-test-data-practitioner-physician-2</b></p><a name=\"mii-exa-test-data-practitioner-physician-2\"> </a><a name=\"hcmii-exa-test-data-practitioner-physician-2\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>active</b>: true</p><p><b>name</b>: Robert Koch (Official)</p></div>"
+      },
+      "active" : true,
+      "name" : [{
+        "use" : "official",
+        "family" : "Koch",
+        "given" : ["Robert"],
+        "prefix" : ["Dr."]
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Practitioner/mii-exa-test-data-practitioner-physician-2"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Condition/mii-exa-test-data-molgen-diagnose-1",
+    "resource" : {
+      "resourceType" : "Condition",
+      "id" : "mii-exa-test-data-molgen-diagnose-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Condition_mii-exa-test-data-molgen-diagnose-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Condition mii-exa-test-data-molgen-diagnose-1</b></p><a name=\"mii-exa-test-data-molgen-diagnose-1\"> </a><a name=\"hcmii-exa-test-data-molgen-diagnose-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}\">Active</span></p><p><b>verificationStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}\">Confirmed</span></p><p><b>code</b>: <span title=\"Codes:{http://fhir.de/CodeSystem/bfarm/icd-10-gm C18.7}\">Bösartige Neubildung: Colon sigmoideum</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-molgen-patient-1.html\">Petra Genomisch  Female, DoB: 1985-08-14 ( https://www.charite.de/fhir/sid/patientenidentifikation#MOL-TEST-001)</a></p></div>"
+      },
+      "clinicalStatus" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code" : "active"
+        }]
+      },
+      "verificationStatus" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code" : "confirmed"
+        }]
+      },
+      "code" : {
+        "coding" : [{
+          "system" : "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+          "version" : "2026",
+          "code" : "C18.7",
+          "display" : "Bösartige Neubildung: Colon sigmoideum"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-molgen-patient-1"
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Condition/mii-exa-test-data-molgen-diagnose-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Condition/mii-exa-test-data-molgen-diagnose-2",
+    "resource" : {
+      "resourceType" : "Condition",
+      "id" : "mii-exa-test-data-molgen-diagnose-2",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Condition_mii-exa-test-data-molgen-diagnose-2\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Condition mii-exa-test-data-molgen-diagnose-2</b></p><a name=\"mii-exa-test-data-molgen-diagnose-2\"> </a><a name=\"hcmii-exa-test-data-molgen-diagnose-2\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}\">Active</span></p><p><b>verificationStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}\">Confirmed</span></p><p><b>code</b>: <span title=\"Codes:{http://fhir.de/CodeSystem/bfarm/icd-10-gm C34.1}\">Bösartige Neubildung: Oberlappen (-Bronchus)</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-molgen-patient-2.html\">Markus Sequenziert  Male, DoB: 1972-11-25 ( https://www.charite.de/fhir/sid/patientenidentifikation#MOL-TEST-002)</a></p></div>"
+      },
+      "clinicalStatus" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code" : "active"
+        }]
+      },
+      "verificationStatus" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code" : "confirmed"
+        }]
+      },
+      "code" : {
+        "coding" : [{
+          "system" : "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+          "version" : "2026",
+          "code" : "C34.1",
+          "display" : "Bösartige Neubildung: Oberlappen (-Bronchus)"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-molgen-patient-2"
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Condition/mii-exa-test-data-molgen-diagnose-2"
+    }
+  }]
+}
+
+```

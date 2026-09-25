@@ -1,0 +1,28 @@
+[{
+  "id" : "mii-exa-test-data-mtb-studien-register-1",
+  "type" : "Library",
+  "url" : "https://clinicaltrials.gov/study/NCT05252390",
+  "version" : "2027.0.0-ballot",
+  "name" : "ClinicalTrials_gov"
+},
+{
+  "id" : "mii-kds-testdata",
+  "type" : "ImplementationGuide",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/testdata/ImplementationGuide/mii-kds-testdata",
+  "version" : "2027.0.0-ballot",
+  "name" : "MIIKDSTestData"
+},
+{
+  "id" : "mii-exa-test-data-seltene-register-katalog-1",
+  "type" : "Library",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/testdata/Library/mii-exa-test-data-seltene-register-katalog-1",
+  "version" : "2027.0.0-ballot",
+  "name" : "ERNReCONNETRegistry"
+},
+{
+  "id" : "mii-exa-test-data-studien-register-1",
+  "type" : "Library",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/testdata/Library/mii-exa-test-data-studien-register-1",
+  "version" : "2027.0.0-ballot",
+  "name" : "DRKS"
+}]

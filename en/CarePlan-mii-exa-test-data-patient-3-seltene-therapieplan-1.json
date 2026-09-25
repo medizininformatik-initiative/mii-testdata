@@ -1,0 +1,50 @@
+{
+  "resourceType" : "CarePlan",
+  "id" : "mii-exa-test-data-patient-3-seltene-therapieplan-1",
+  "meta" : {
+    "source" : "https://www.charite.de/fhir/kds-testdata",
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-therapieplan"],
+    "security" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "code" : "HTEST",
+      "display" : "test health data"
+    }]
+  },
+  "language" : "en",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CarePlan mii-exa-test-data-patient-3-seltene-therapieplan-1</b></p><a name=\"mii-exa-test-data-patient-3-seltene-therapieplan-1\"> </a><a name=\"hcmii-exa-test-data-patient-3-seltene-therapieplan-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-therapieplan\">MII PR SE Therapieplan</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Draft</p><p><b>intent</b>: Proposal</p><p><b>description</b>: Therapieplan fuer Patient mit Marfan-Syndrom: Medikamentoese Therapie mit Losartan, kardiologische Frueherkennung und Studieneinschluss</p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-seltene-patient-1.html\">Luisa Seltenfall  Female, DoB: 1995-02-10 ( https://www.charite.de/fhir/sid/patientenidentifikation#SELT-TEST-001)</a></p><p><b>created</b>: 2025-03-10</p><p><b>supportingInfo</b>: <a href=\"DiagnosticReport-mii-exa-test-data-seltene-molgen-befundbericht-1.html\">Diagnostic Report for 'Genetic analysis report' for '-&gt;Luisa Seltenfall  Female, DoB: 1995-02-10 ( https://www.charite.de/fhir/sid/patientenidentifikation#SELT-TEST-001)'</a></p><blockquote><p><b>activity</b></p><h3>Details</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Status</b></td><td><b>StatusReason</b></td></tr><tr><td style=\"display: none\">*</td><td>Not Started</td><td><span title=\"Codes:{https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/CodeSystem/mii-cs-seltene-empfehlung-status-begruendung no-target}\">Keine therapeutische Konsequenz</span></td></tr></table></blockquote><blockquote><p><b>activity</b></p><h3>Details</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Status</b></td></tr><tr><td style=\"display: none\">*</td><td>Scheduled</td></tr></table></blockquote><blockquote><p><b>activity</b></p><p><b>reference</b>: <a href=\"ServiceRequest-mii-exa-test-data-patient-3-seltene-studieneinschluss-1.html\">ServiceRequest Referral to clinical trial (procedure)</a></p></blockquote></div>"
+  },
+  "status" : "draft",
+  "intent" : "proposal",
+  "description" : "Therapieplan fuer Patient mit Marfan-Syndrom: Medikamentoese Therapie mit Losartan, kardiologische Frueherkennung und Studieneinschluss",
+  "subject" : {
+    "reference" : "Patient/mii-exa-test-data-seltene-patient-1"
+  },
+  "created" : "2025-03-10",
+  "supportingInfo" : [{
+    "reference" : "DiagnosticReport/mii-exa-test-data-seltene-molgen-befundbericht-1"
+  }],
+  "activity" : [{
+    "detail" : {
+      "status" : "not-started",
+      "statusReason" : {
+        "coding" : [{
+          "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/CodeSystem/mii-cs-seltene-empfehlung-status-begruendung",
+          "code" : "no-target",
+          "display" : "Keine therapeutische Konsequenz"
+        }]
+      }
+    }
+  },
+  {
+    "detail" : {
+      "status" : "scheduled"
+    }
+  },
+  {
+    "reference" : {
+      "reference" : "ServiceRequest/mii-exa-test-data-patient-3-seltene-studieneinschluss-1"
+    }
+  }]
+}

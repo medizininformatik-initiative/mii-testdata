@@ -1,0 +1,5729 @@
+# mii-exa-test-data-bundle-isik-vitalparameter-1 - MII KDS Test Data v2027.0.0-ballot
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **mii-exa-test-data-bundle-isik-vitalparameter-1**
+
+## Example Bundle: mii-exa-test-data-bundle-isik-vitalparameter-1
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "Bundle",
+  "id" : "mii-exa-test-data-bundle-isik-vitalparameter-1",
+  "meta" : {
+    "source" : "https://www.charite.de/fhir/kds-testdata",
+    "security" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "code" : "HTEST",
+      "display" : "test health data"
+    }]
+  },
+  "type" : "transaction",
+  "timestamp" : "2026-05-14T12:00:00+02:00",
+  "entry" : [{
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Patient/mii-exa-test-data-isik-vitalparameter-patient-1",
+    "resource" : {
+      "resourceType" : "Patient",
+      "id" : "mii-exa-test-data-isik-vitalparameter-patient-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Patient_mii-exa-test-data-isik-vitalparameter-patient-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Patient mii-exa-test-data-isik-vitalparameter-patient-1</b></p><a name=\"mii-exa-test-data-isik-vitalparameter-patient-1\"> </a><a name=\"hcmii-exa-test-data-isik-vitalparameter-patient-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Viktoria Vogel  Female, DoB: 1968-04-17 ( https://www.charite.de/fhir/sid/patientenidentifikation#ISIK-VITAL-TEST-001)</p><hr/></div>"
+      },
+      "identifier" : [{
+        "system" : "https://www.charite.de/fhir/sid/patientenidentifikation",
+        "value" : "ISIK-VITAL-TEST-001"
+      }],
+      "name" : [{
+        "family" : "Vogel",
+        "given" : ["Viktoria"]
+      }],
+      "gender" : "female",
+      "birthDate" : "1968-04-17"
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Patient/mii-exa-test-data-isik-vitalparameter-patient-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Encounter/mii-exa-test-data-isik-vitalparameter-encounter-1",
+    "resource" : {
+      "resourceType" : "Encounter",
+      "id" : "mii-exa-test-data-isik-vitalparameter-encounter-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Encounter_mii-exa-test-data-isik-vitalparameter-encounter-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Encounter mii-exa-test-data-isik-vitalparameter-encounter-1</b></p><a name=\"mii-exa-test-data-isik-vitalparameter-encounter-1\"> </a><a name=\"hcmii-exa-test-data-isik-vitalparameter-encounter-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Finished</p><p><b>class</b>: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActCode.html#v3-ActCode-IMP\">ActCode: IMP</a> (inpatient encounter)</p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-isik-vitalparameter-patient-1.html\">Viktoria Vogel  Female, DoB: 1968-04-17 ( https://www.charite.de/fhir/sid/patientenidentifikation#ISIK-VITAL-TEST-001)</a></p><p><b>period</b>: 2026-05-11 --&gt; 2026-05-14</p></div>"
+      },
+      "status" : "finished",
+      "class" : {
+        "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "code" : "IMP",
+        "display" : "inpatient encounter"
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-isik-vitalparameter-patient-1"
+      },
+      "period" : {
+        "start" : "2026-05-11",
+        "end" : "2026-05-14"
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Encounter/mii-exa-test-data-isik-vitalparameter-encounter-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-isik-vitalparameter-atemfrequenz-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-isik-vitalparameter-atemfrequenz-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://gematik.de/fhir/isik/StructureDefinition/ISiKAtemfrequenz"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-isik-vitalparameter-atemfrequenz-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-isik-vitalparameter-atemfrequenz-1</b></p><a name=\"mii-exa-test-data-isik-vitalparameter-atemfrequenz-1\"> </a><a name=\"hcmii-exa-test-data-isik-vitalparameter-atemfrequenz-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.icu@2027.0.0-ballot.3&amp;canonical=https://gematik.de/fhir/isik/StructureDefinition/ISiKAtemfrequenz\">ISiKAtemfrequenz</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 9279-1}, {http://snomed.info/sct 86290005}\">Respiratory rate</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-isik-vitalparameter-patient-1.html\">Viktoria Vogel  Female, DoB: 1968-04-17 ( https://www.charite.de/fhir/sid/patientenidentifikation#ISIK-VITAL-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-isik-vitalparameter-encounter-1.html\">Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2026-05-11 --&gt; 2026-05-14</a></p><p><b>effective</b>: 2026-05-12 08:00:00+0200</p><p><b>performer</b>: Pflegefachkraft Station 14i</p><p><b>value</b>: 18 /min<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code/min = '/min')</span></p><p><b>method</b>: <span title=\"Codes:{http://snomed.info/sct 32750006}\">Inspection (procedure)</span></p><p><b>device</b>: Vitaldatenmonitor Bettplatz 3</p></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "vital-signs"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "9279-1",
+          "display" : "Respiratory rate"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "86290005",
+          "display" : "Respiratory rate (observable entity)"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-isik-vitalparameter-patient-1"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-isik-vitalparameter-encounter-1"
+      },
+      "effectiveDateTime" : "2026-05-12T08:00:00+02:00",
+      "performer" : [{
+        "display" : "Pflegefachkraft Station 14i"
+      }],
+      "valueQuantity" : {
+        "value" : 18,
+        "unit" : "/min",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "/min"
+      },
+      "method" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "32750006",
+          "display" : "Inspection (procedure)"
+        }]
+      },
+      "device" : {
+        "display" : "Vitaldatenmonitor Bettplatz 3"
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-isik-vitalparameter-atemfrequenz-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-isik-vitalparameter-herzfrequenz-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-isik-vitalparameter-herzfrequenz-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://gematik.de/fhir/isik/StructureDefinition/ISiKHerzfrequenz"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-isik-vitalparameter-herzfrequenz-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-isik-vitalparameter-herzfrequenz-1</b></p><a name=\"mii-exa-test-data-isik-vitalparameter-herzfrequenz-1\"> </a><a name=\"hcmii-exa-test-data-isik-vitalparameter-herzfrequenz-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.icu@2027.0.0-ballot.3&amp;canonical=https://gematik.de/fhir/isik/StructureDefinition/ISiKHerzfrequenz\">ISiKHerzfrequenz</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 8867-4}, {http://snomed.info/sct 364075005}\">Heart rate</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-isik-vitalparameter-patient-1.html\">Viktoria Vogel  Female, DoB: 1968-04-17 ( https://www.charite.de/fhir/sid/patientenidentifikation#ISIK-VITAL-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-isik-vitalparameter-encounter-1.html\">Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2026-05-11 --&gt; 2026-05-14</a></p><p><b>effective</b>: 2026-05-12 08:00:00+0200</p><p><b>performer</b>: Pflegefachkraft Station 14i</p><p><b>value</b>: 76 /min<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code/min = '/min')</span></p><p><b>method</b>: <span title=\"Codes:{http://snomed.info/sct 113011001}\">Palpation (procedure)</span></p><p><b>device</b>: Vitaldatenmonitor Bettplatz 3</p></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "vital-signs"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "8867-4",
+          "display" : "Heart rate"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "364075005",
+          "display" : "Heart rate (observable entity)"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-isik-vitalparameter-patient-1"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-isik-vitalparameter-encounter-1"
+      },
+      "effectiveDateTime" : "2026-05-12T08:00:00+02:00",
+      "performer" : [{
+        "display" : "Pflegefachkraft Station 14i"
+      }],
+      "valueQuantity" : {
+        "value" : 76,
+        "unit" : "/min",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "/min"
+      },
+      "method" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "113011001",
+          "display" : "Palpation (procedure)"
+        }]
+      },
+      "device" : {
+        "display" : "Vitaldatenmonitor Bettplatz 3"
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-isik-vitalparameter-herzfrequenz-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-isik-vitalparameter-blutdruck-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-isik-vitalparameter-blutdruck-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://gematik.de/fhir/isik/StructureDefinition/ISiKBlutdruckSystemischArteriell"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-isik-vitalparameter-blutdruck-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-isik-vitalparameter-blutdruck-1</b></p><a name=\"mii-exa-test-data-isik-vitalparameter-blutdruck-1\"> </a><a name=\"hcmii-exa-test-data-isik-vitalparameter-blutdruck-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.icu@2027.0.0-ballot.3&amp;canonical=https://gematik.de/fhir/isik/StructureDefinition/ISiKBlutdruckSystemischArteriell\">ISiKBlutdruckSystemischArteriell</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 85354-9}, {http://snomed.info/sct 75367002}\">Blood pressure panel with all children optional</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-isik-vitalparameter-patient-1.html\">Viktoria Vogel  Female, DoB: 1968-04-17 ( https://www.charite.de/fhir/sid/patientenidentifikation#ISIK-VITAL-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-isik-vitalparameter-encounter-1.html\">Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2026-05-11 --&gt; 2026-05-14</a></p><p><b>effective</b>: 2026-05-12 08:05:00+0200</p><p><b>performer</b>: Pflegefachkraft Station 14i</p><p><b>method</b>: <span title=\"Codes:{http://snomed.info/sct 371911009}\">Measurement of blood pressure using cuff method (procedure)</span></p><p><b>device</b>: Oberarm-Blutdruckmessgeraet, Manschette Groesse M</p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 8480-6}, {http://snomed.info/sct 271649006}\">Systolic blood pressure</span></p><p><b>value</b>: 132 mmHg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemm[Hg] = 'mm[Hg]')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 8462-4}, {http://snomed.info/sct 271650006}\">Diastolic blood pressure</span></p><p><b>value</b>: 84 mmHg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemm[Hg] = 'mm[Hg]')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 8478-0}, {http://snomed.info/sct 6797001}\">Mean blood pressure</span></p><p><b>value</b>: 100 mmHg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemm[Hg] = 'mm[Hg]')</span></p></blockquote></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "vital-signs"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "85354-9",
+          "display" : "Blood pressure panel with all children optional"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "75367002",
+          "display" : "Blood pressure (observable entity)"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-isik-vitalparameter-patient-1"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-isik-vitalparameter-encounter-1"
+      },
+      "effectiveDateTime" : "2026-05-12T08:05:00+02:00",
+      "performer" : [{
+        "display" : "Pflegefachkraft Station 14i"
+      }],
+      "method" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "371911009",
+          "display" : "Measurement of blood pressure using cuff method (procedure)"
+        }]
+      },
+      "device" : {
+        "display" : "Oberarm-Blutdruckmessgeraet, Manschette Groesse M"
+      },
+      "component" : [{
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "8480-6",
+            "display" : "Systolic blood pressure"
+          },
+          {
+            "system" : "http://snomed.info/sct",
+            "code" : "271649006",
+            "display" : "Systolic blood pressure (observable entity)"
+          }]
+        },
+        "valueQuantity" : {
+          "value" : 132,
+          "unit" : "mmHg",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "mm[Hg]"
+        }
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "8462-4",
+            "display" : "Diastolic blood pressure"
+          },
+          {
+            "system" : "http://snomed.info/sct",
+            "code" : "271650006",
+            "display" : "Diastolic blood pressure (observable entity)"
+          }]
+        },
+        "valueQuantity" : {
+          "value" : 84,
+          "unit" : "mmHg",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "mm[Hg]"
+        }
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "8478-0",
+            "display" : "Mean blood pressure"
+          },
+          {
+            "system" : "http://snomed.info/sct",
+            "code" : "6797001",
+            "display" : "Mean blood pressure (observable entity)"
+          }]
+        },
+        "valueQuantity" : {
+          "value" : 100,
+          "unit" : "mmHg",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "mm[Hg]"
+        }
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-isik-vitalparameter-blutdruck-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-isik-vitalparameter-sauerstoffsaettigung-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-isik-vitalparameter-sauerstoffsaettigung-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://gematik.de/fhir/isik/StructureDefinition/ISiKSauerstoffsaettigungArteriell"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-isik-vitalparameter-sauerstoffsaettigung-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-isik-vitalparameter-sauerstoffsaettigung-1</b></p><a name=\"mii-exa-test-data-isik-vitalparameter-sauerstoffsaettigung-1\"> </a><a name=\"hcmii-exa-test-data-isik-vitalparameter-sauerstoffsaettigung-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.icu@2027.0.0-ballot.3&amp;canonical=https://gematik.de/fhir/isik/StructureDefinition/ISiKSauerstoffsaettigungArteriell\">ISiKSauerstoffsaettigungArteriell</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 2708-6}, {http://snomed.info/sct 431314004}, {http://loinc.org 59408-5}\">Oxygen saturation in Arterial blood</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-isik-vitalparameter-patient-1.html\">Viktoria Vogel  Female, DoB: 1968-04-17 ( https://www.charite.de/fhir/sid/patientenidentifikation#ISIK-VITAL-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-isik-vitalparameter-encounter-1.html\">Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2026-05-11 --&gt; 2026-05-14</a></p><p><b>effective</b>: 2026-05-12 08:00:00+0200</p><p><b>performer</b>: Pflegefachkraft Station 14i</p><p><b>value</b>: 96 %<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code% = '%')</span></p><p><b>method</b>: <span title=\"Codes:{http://snomed.info/sct 252465000}\">Pulse oximetry (procedure)</span></p><p><b>device</b>: Pulsoximeter, Fingersensor</p></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "vital-signs"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "2708-6",
+          "display" : "Oxygen saturation in Arterial blood"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "431314004",
+          "display" : "Peripheral oxygen saturation (observable entity)"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "59408-5",
+          "display" : "Oxygen saturation in Arterial blood by Pulse oximetry"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-isik-vitalparameter-patient-1"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-isik-vitalparameter-encounter-1"
+      },
+      "effectiveDateTime" : "2026-05-12T08:00:00+02:00",
+      "performer" : [{
+        "display" : "Pflegefachkraft Station 14i"
+      }],
+      "valueQuantity" : {
+        "value" : 96,
+        "unit" : "%",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "%"
+      },
+      "method" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "252465000",
+          "display" : "Pulse oximetry (procedure)"
+        }]
+      },
+      "device" : {
+        "display" : "Pulsoximeter, Fingersensor"
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-isik-vitalparameter-sauerstoffsaettigung-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-isik-vitalparameter-koerpergewicht-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-isik-vitalparameter-koerpergewicht-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://gematik.de/fhir/isik/StructureDefinition/ISiKKoerpergewicht"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-isik-vitalparameter-koerpergewicht-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-isik-vitalparameter-koerpergewicht-1</b></p><a name=\"mii-exa-test-data-isik-vitalparameter-koerpergewicht-1\"> </a><a name=\"hcmii-exa-test-data-isik-vitalparameter-koerpergewicht-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.icu@2027.0.0-ballot.3&amp;canonical=https://gematik.de/fhir/isik/StructureDefinition/ISiKKoerpergewicht\">ISiKKoerpergewicht</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 29463-7}, {http://snomed.info/sct 27113001}\">Body weight</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-isik-vitalparameter-patient-1.html\">Viktoria Vogel  Female, DoB: 1968-04-17 ( https://www.charite.de/fhir/sid/patientenidentifikation#ISIK-VITAL-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-isik-vitalparameter-encounter-1.html\">Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2026-05-11 --&gt; 2026-05-14</a></p><p><b>effective</b>: 2026-05-11 18:30:00+0200</p><p><b>performer</b>: Pflegefachkraft Station 14i</p><p><b>value</b>: 78 kg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codekg = 'kg')</span></p><p><b>method</b>: <span title=\"Codes:{http://snomed.info/sct 39857003}\">Weighing patient (procedure)</span></p><p><b>device</b>: Standwaage, geeicht</p></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "vital-signs"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "29463-7",
+          "display" : "Body weight"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "27113001",
+          "display" : "Body weight (observable entity)"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-isik-vitalparameter-patient-1"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-isik-vitalparameter-encounter-1"
+      },
+      "effectiveDateTime" : "2026-05-11T18:30:00+02:00",
+      "performer" : [{
+        "display" : "Pflegefachkraft Station 14i"
+      }],
+      "valueQuantity" : {
+        "value" : 78,
+        "unit" : "kg",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "kg"
+      },
+      "method" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "39857003",
+          "display" : "Weighing patient (procedure)"
+        }]
+      },
+      "device" : {
+        "display" : "Standwaage, geeicht"
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-isik-vitalparameter-koerpergewicht-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-isik-vitalparameter-koerpergroesse-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-isik-vitalparameter-koerpergroesse-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://gematik.de/fhir/isik/StructureDefinition/ISiKKoerpergroesse"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-isik-vitalparameter-koerpergroesse-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-isik-vitalparameter-koerpergroesse-1</b></p><a name=\"mii-exa-test-data-isik-vitalparameter-koerpergroesse-1\"> </a><a name=\"hcmii-exa-test-data-isik-vitalparameter-koerpergroesse-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.icu@2027.0.0-ballot.3&amp;canonical=https://gematik.de/fhir/isik/StructureDefinition/ISiKKoerpergroesse\">ISiKKoerpergroesse</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 8302-2}, {http://snomed.info/sct 1153637007}\">Body height</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-isik-vitalparameter-patient-1.html\">Viktoria Vogel  Female, DoB: 1968-04-17 ( https://www.charite.de/fhir/sid/patientenidentifikation#ISIK-VITAL-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-isik-vitalparameter-encounter-1.html\">Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2026-05-11 --&gt; 2026-05-14</a></p><p><b>effective</b>: 2026-05-11 18:30:00+0200</p><p><b>performer</b>: Pflegefachkraft Station 14i</p><p><b>value</b>: 172 cm<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codecm = 'cm')</span></p><p><b>method</b>: <span title=\"Codes:{http://snomed.info/sct 14456009}\">Measuring height of patient (procedure)</span></p><p><b>device</b>: Stadiometer</p></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "vital-signs"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "8302-2",
+          "display" : "Body height"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "1153637007",
+          "display" : "Body height (observable entity)"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-isik-vitalparameter-patient-1"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-isik-vitalparameter-encounter-1"
+      },
+      "effectiveDateTime" : "2026-05-11T18:30:00+02:00",
+      "performer" : [{
+        "display" : "Pflegefachkraft Station 14i"
+      }],
+      "valueQuantity" : {
+        "value" : 172,
+        "unit" : "cm",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "cm"
+      },
+      "method" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "14456009",
+          "display" : "Measuring height of patient (procedure)"
+        }]
+      },
+      "device" : {
+        "display" : "Stadiometer"
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-isik-vitalparameter-koerpergroesse-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-isik-vitalparameter-koerperkerntemperatur-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-isik-vitalparameter-koerperkerntemperatur-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://gematik.de/fhir/isik/StructureDefinition/ISiKKoerperkerntemperatur"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-isik-vitalparameter-koerperkerntemperatur-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-isik-vitalparameter-koerperkerntemperatur-1</b></p><a name=\"mii-exa-test-data-isik-vitalparameter-koerperkerntemperatur-1\"> </a><a name=\"hcmii-exa-test-data-isik-vitalparameter-koerperkerntemperatur-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.icu@2027.0.0-ballot.3&amp;canonical=https://gematik.de/fhir/isik/StructureDefinition/ISiKKoerperkerntemperatur\">ISiKKoerperkerntemperatur</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 8310-5}, {http://loinc.org 8329-5}, {http://snomed.info/sct 307047009}\">Body temperature</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-isik-vitalparameter-patient-1.html\">Viktoria Vogel  Female, DoB: 1968-04-17 ( https://www.charite.de/fhir/sid/patientenidentifikation#ISIK-VITAL-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-isik-vitalparameter-encounter-1.html\">Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2026-05-11 --&gt; 2026-05-14</a></p><p><b>effective</b>: 2026-05-12 08:10:00+0200</p><p><b>performer</b>: Pflegefachkraft Station 14i</p><p><b>value</b>: 37.8 °C<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeCel = 'Cel')</span></p><p><b>method</b>: <span title=\"Codes:{http://snomed.info/sct 18649001}\">Rectal temperature taking (procedure)</span></p><p><b>device</b>: Digitalthermometer</p></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "vital-signs"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "8310-5",
+          "display" : "Body temperature"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "8329-5",
+          "display" : "Body temperature - Core"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "307047009",
+          "display" : "Rectal temperature (observable entity)"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-isik-vitalparameter-patient-1"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-isik-vitalparameter-encounter-1"
+      },
+      "effectiveDateTime" : "2026-05-12T08:10:00+02:00",
+      "performer" : [{
+        "display" : "Pflegefachkraft Station 14i"
+      }],
+      "valueQuantity" : {
+        "value" : 37.8,
+        "unit" : "°C",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "Cel"
+      },
+      "method" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "18649001",
+          "display" : "Rectal temperature taking (procedure)"
+        }]
+      },
+      "device" : {
+        "display" : "Digitalthermometer"
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-isik-vitalparameter-koerperkerntemperatur-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-isik-vitalparameter-kopfumfang-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-isik-vitalparameter-kopfumfang-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://gematik.de/fhir/isik/StructureDefinition/ISiKKopfumfang"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-isik-vitalparameter-kopfumfang-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-isik-vitalparameter-kopfumfang-1</b></p><a name=\"mii-exa-test-data-isik-vitalparameter-kopfumfang-1\"> </a><a name=\"hcmii-exa-test-data-isik-vitalparameter-kopfumfang-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.icu@2027.0.0-ballot.3&amp;canonical=https://gematik.de/fhir/isik/StructureDefinition/ISiKKopfumfang\">ISiKKopfumfang</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 9843-4}, {http://snomed.info/sct 363812007}\">Head Occipital-frontal circumference</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-isik-vitalparameter-patient-1.html\">Viktoria Vogel  Female, DoB: 1968-04-17 ( https://www.charite.de/fhir/sid/patientenidentifikation#ISIK-VITAL-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-isik-vitalparameter-encounter-1.html\">Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2026-05-11 --&gt; 2026-05-14</a></p><p><b>effective</b>: 2026-05-11 18:35:00+0200</p><p><b>performer</b>: Pflegefachkraft Station 14i</p><p><b>value</b>: 56 cm<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codecm = 'cm')</span></p><p><b>method</b>: <span title=\"Codes:{http://snomed.info/sct 170112004}\">Head circumference measured (procedure)</span></p><p><b>device</b>: Massband</p></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "vital-signs"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "9843-4",
+          "display" : "Head Occipital-frontal circumference"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "363812007",
+          "display" : "Head circumference (observable entity)"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-isik-vitalparameter-patient-1"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-isik-vitalparameter-encounter-1"
+      },
+      "effectiveDateTime" : "2026-05-11T18:35:00+02:00",
+      "performer" : [{
+        "display" : "Pflegefachkraft Station 14i"
+      }],
+      "valueQuantity" : {
+        "value" : 56,
+        "unit" : "cm",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "cm"
+      },
+      "method" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "170112004",
+          "display" : "Head circumference measured (procedure)"
+        }]
+      },
+      "device" : {
+        "display" : "Massband"
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-isik-vitalparameter-kopfumfang-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-isik-vitalparameter-gcs-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-isik-vitalparameter-gcs-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://gematik.de/fhir/isik/StructureDefinition/ISiKGCS"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-isik-vitalparameter-gcs-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-isik-vitalparameter-gcs-1</b></p><a name=\"mii-exa-test-data-isik-vitalparameter-gcs-1\"> </a><a name=\"hcmii-exa-test-data-isik-vitalparameter-gcs-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.icu@2027.0.0-ballot.3&amp;canonical=https://gematik.de/fhir/isik/StructureDefinition/ISiKGCS\">ISiKGCS</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category survey}\">Survey</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 9269-2}, {http://snomed.info/sct 248241002}\">Glasgow coma score total</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-isik-vitalparameter-patient-1.html\">Viktoria Vogel  Female, DoB: 1968-04-17 ( https://www.charite.de/fhir/sid/patientenidentifikation#ISIK-VITAL-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-isik-vitalparameter-encounter-1.html\">Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2026-05-11 --&gt; 2026-05-14</a></p><p><b>effective</b>: 2026-05-11 17:45:00+0200</p><p><b>performer</b>: Dienstarzt Notaufnahme</p><p><b>value</b>: 12 Punkte<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code1 = '1')</span></p><p><b>method</b>: <span title=\"Codes:{http://snomed.info/sct 225398001}\">Neurological assessment (procedure)</span></p><p><b>device</b>: Klinisches Dokumentationssystem der Notaufnahme</p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 9267-6}\">Glasgow coma score eye opening</span></p><p><b>value</b>: <span title=\"Codes:{http://loinc.org LA6555-2}\">Eye opening to verbal command</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 9270-0}\">Glasgow coma score verbal</span></p><p><b>value</b>: <span title=\"Codes:{http://loinc.org LA6560-2}\">Confused</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 9268-4}\">Glasgow coma score motor</span></p><p><b>value</b>: <span title=\"Codes:{http://loinc.org LA6566-9}\">Localizing pain</span></p></blockquote></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "survey"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "9269-2",
+          "display" : "Glasgow coma score total"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "248241002",
+          "display" : "Glasgow coma score (observable entity)"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-isik-vitalparameter-patient-1"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-isik-vitalparameter-encounter-1"
+      },
+      "effectiveDateTime" : "2026-05-11T17:45:00+02:00",
+      "performer" : [{
+        "display" : "Dienstarzt Notaufnahme"
+      }],
+      "valueQuantity" : {
+        "value" : 12,
+        "unit" : "Punkte",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "1"
+      },
+      "method" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "225398001",
+          "display" : "Neurological assessment (procedure)"
+        }]
+      },
+      "device" : {
+        "display" : "Klinisches Dokumentationssystem der Notaufnahme"
+      },
+      "component" : [{
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "9267-6",
+            "display" : "Glasgow coma score eye opening"
+          }]
+        },
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "LA6555-2",
+            "display" : "Eye opening to verbal command"
+          }]
+        }
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "9270-0",
+            "display" : "Glasgow coma score verbal"
+          }]
+        },
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "LA6560-2",
+            "display" : "Confused"
+          }]
+        }
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "9268-4",
+            "display" : "Glasgow coma score motor"
+          }]
+        },
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "LA6566-9",
+            "display" : "Localizing pain"
+          }]
+        }
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-isik-vitalparameter-gcs-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-isik-vitalparameter-ekg-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-isik-vitalparameter-ekg-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://gematik.de/fhir/isik/StructureDefinition/ISiKEKG"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-isik-vitalparameter-ekg-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-isik-vitalparameter-ekg-1</b></p><a name=\"mii-exa-test-data-isik-vitalparameter-ekg-1\"> </a><a name=\"hcmii-exa-test-data-isik-vitalparameter-ekg-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.icu@2027.0.0-ballot.3&amp;canonical=https://gematik.de/fhir/isik/StructureDefinition/ISiKEKG\">ISiKEKG</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category procedure}\">Procedure</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 11524-6}, {http://snomed.info/sct 106073009}\">EKG study</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-isik-vitalparameter-patient-1.html\">Viktoria Vogel  Female, DoB: 1968-04-17 ( https://www.charite.de/fhir/sid/patientenidentifikation#ISIK-VITAL-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-isik-vitalparameter-encounter-1.html\">Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2026-05-11 --&gt; 2026-05-14</a></p><p><b>effective</b>: 2026-05-12 09:15:00+0200</p><p><b>performer</b>: MTA Funktionsdiagnostik</p><p><b>method</b>: <span title=\"Codes:{http://snomed.info/sct 29303009}\">Electrocardiographic procedure (procedure)</span></p><p><b>device</b>: 12-Kanal-EKG-Schreiber</p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 272729005}\">Lead I</span></p><p><b>value</b>: Origin: 0 uV , Factor: 4.88 , Dimensions: 1 , Data: 0 -1 0 2 4 3 1 0 -6 42 118 36 -12 -2 0 1 3 6 9 11 9 6 3 1 0 </p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 272730000}\">Lead II</span></p><p><b>value</b>: Origin: 0 uV , Factor: 4.88 , Dimensions: 1 , Data: 0 1 2 4 6 4 2 0 -8 64 176 52 -16 -3 0 2 5 9 13 15 13 8 4 2 0 </p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 272731001}\">Lead III</span></p><p><b>value</b>: Origin: 0 uV , Factor: 4.88 , Dimensions: 1 , Data: 0 1 1 2 3 2 1 0 -4 24 60 18 -6 -1 0 1 2 3 5 6 5 3 2 1 0 </p></blockquote></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "procedure"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "11524-6",
+          "display" : "EKG study"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "106073009"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-isik-vitalparameter-patient-1"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-isik-vitalparameter-encounter-1"
+      },
+      "effectiveDateTime" : "2026-05-12T09:15:00+02:00",
+      "performer" : [{
+        "display" : "MTA Funktionsdiagnostik"
+      }],
+      "method" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "29303009",
+          "display" : "Electrocardiographic procedure (procedure)"
+        }]
+      },
+      "device" : {
+        "display" : "12-Kanal-EKG-Schreiber"
+      },
+      "component" : [{
+        "code" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "272729005",
+            "display" : "Lead I"
+          }]
+        },
+        "valueSampledData" : {
+          "origin" : {
+            "value" : 0,
+            "unit" : "uV",
+            "system" : "http://unitsofmeasure.org",
+            "code" : "uV"
+          },
+          "period" : 2,
+          "factor" : 4.88,
+          "dimensions" : 1,
+          "data" : "0 -1 0 2 4 3 1 0 -6 42 118 36 -12 -2 0 1 3 6 9 11 9 6 3 1 0"
+        }
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "272730000",
+            "display" : "Lead II"
+          }]
+        },
+        "valueSampledData" : {
+          "origin" : {
+            "value" : 0,
+            "unit" : "uV",
+            "system" : "http://unitsofmeasure.org",
+            "code" : "uV"
+          },
+          "period" : 2,
+          "factor" : 4.88,
+          "dimensions" : 1,
+          "data" : "0 1 2 4 6 4 2 0 -8 64 176 52 -16 -3 0 2 5 9 13 15 13 8 4 2 0"
+        }
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "272731001",
+            "display" : "Lead III"
+          }]
+        },
+        "valueSampledData" : {
+          "origin" : {
+            "value" : 0,
+            "unit" : "uV",
+            "system" : "http://unitsofmeasure.org",
+            "code" : "uV"
+          },
+          "period" : 2,
+          "factor" : 4.88,
+          "dimensions" : 1,
+          "data" : "0 1 1 2 3 2 1 0 -4 24 60 18 -6 -1 0 1 2 3 5 6 5 3 2 1 0"
+        }
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-isik-vitalparameter-ekg-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-isik-vitalparameter-alkoholabusus-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-isik-vitalparameter-alkoholabusus-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://gematik.de/fhir/isik/StructureDefinition/ISiKAlkoholAbusus"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-isik-vitalparameter-alkoholabusus-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-isik-vitalparameter-alkoholabusus-1</b></p><a name=\"mii-exa-test-data-isik-vitalparameter-alkoholabusus-1\"> </a><a name=\"hcmii-exa-test-data-isik-vitalparameter-alkoholabusus-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.icu@2027.0.0-ballot.3&amp;canonical=https://gematik.de/fhir/isik/StructureDefinition/ISiKAlkoholAbusus\">ISiK Alkohol Abusus</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category social-history}\">Social History</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 74043-1}, {http://snomed.info/sct 15167005}\">Alcohol use disorder</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-isik-vitalparameter-patient-1.html\">Viktoria Vogel  Female, DoB: 1968-04-17 ( https://www.charite.de/fhir/sid/patientenidentifikation#ISIK-VITAL-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-isik-vitalparameter-encounter-1.html\">Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2026-05-11 --&gt; 2026-05-14</a></p><p><b>effective</b>: 2026-05-11 18:15:00+0200</p><p><b>performer</b>: Dienstarzt Notaufnahme</p><p><b>value</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v2-0532 N}\">No</span></p></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "social-history"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "74043-1",
+          "display" : "Alcohol use disorder"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "15167005",
+          "display" : "Alcohol abuse (disorder)"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-isik-vitalparameter-patient-1"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-isik-vitalparameter-encounter-1"
+      },
+      "effectiveDateTime" : "2026-05-11T18:15:00+02:00",
+      "performer" : [{
+        "display" : "Dienstarzt Notaufnahme"
+      }],
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v2-0532",
+          "code" : "N",
+          "display" : "No"
+        }]
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-isik-vitalparameter-alkoholabusus-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-isik-vitalparameter-schwangerschaft-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-isik-vitalparameter-schwangerschaft-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://gematik.de/fhir/isik/StructureDefinition/ISiKSchwangerschaftsstatus"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-isik-vitalparameter-schwangerschaft-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-isik-vitalparameter-schwangerschaft-1</b></p><a name=\"mii-exa-test-data-isik-vitalparameter-schwangerschaft-1\"> </a><a name=\"hcmii-exa-test-data-isik-vitalparameter-schwangerschaft-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.icu@2027.0.0-ballot.3&amp;canonical=https://gematik.de/fhir/isik/StructureDefinition/ISiKSchwangerschaftsstatus\">ISiK Schwangerschaftsstatus</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category social-history}\">Social History</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 82810-3}\">Pregnancy status</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-isik-vitalparameter-patient-1.html\">Viktoria Vogel  Female, DoB: 1968-04-17 ( https://www.charite.de/fhir/sid/patientenidentifikation#ISIK-VITAL-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-isik-vitalparameter-encounter-1.html\">Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2026-05-11 --&gt; 2026-05-14</a></p><p><b>effective</b>: 2026-05-11 18:15:00+0200</p><p><b>performer</b>: Dienstarzt Notaufnahme</p><p><b>value</b>: <span title=\"Codes:{http://loinc.org LA26683-5}\">Not pregnant</span></p></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "social-history"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "82810-3",
+          "display" : "Pregnancy status"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-isik-vitalparameter-patient-1"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-isik-vitalparameter-encounter-1"
+      },
+      "effectiveDateTime" : "2026-05-11T18:15:00+02:00",
+      "performer" : [{
+        "display" : "Dienstarzt Notaufnahme"
+      }],
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "LA26683-5",
+          "display" : "Not pregnant"
+        }]
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-isik-vitalparameter-schwangerschaft-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-isik-vitalparameter-entbindungstermin-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-isik-vitalparameter-entbindungstermin-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://gematik.de/fhir/isik/StructureDefinition/ISiKSchwangerschaftErwarteterEntbindungstermin"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-isik-vitalparameter-entbindungstermin-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-isik-vitalparameter-entbindungstermin-1</b></p><a name=\"mii-exa-test-data-isik-vitalparameter-entbindungstermin-1\"> </a><a name=\"hcmii-exa-test-data-isik-vitalparameter-entbindungstermin-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.icu@2027.0.0-ballot.3&amp;canonical=https://gematik.de/fhir/isik/StructureDefinition/ISiKSchwangerschaftErwarteterEntbindungstermin\">ISiK Schwangerschaft - Erwarteter Entbindungstermin</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category social-history}\">Social History</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 11778-8}\">Delivery date Estimated</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-isik-vitalparameter-patient-1.html\">Viktoria Vogel  Female, DoB: 1968-04-17 ( https://www.charite.de/fhir/sid/patientenidentifikation#ISIK-VITAL-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-isik-vitalparameter-encounter-1.html\">Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2026-05-11 --&gt; 2026-05-14</a></p><p><b>effective</b>: 2026-05-11 18:15:00+0200</p><p><b>performer</b>: Dienstarzt Notaufnahme</p><p><b>value</b>: 2026-11-20</p></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "social-history"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "11778-8",
+          "display" : "Delivery date Estimated"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-isik-vitalparameter-patient-1"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-isik-vitalparameter-encounter-1"
+      },
+      "effectiveDateTime" : "2026-05-11T18:15:00+02:00",
+      "performer" : [{
+        "display" : "Dienstarzt Notaufnahme"
+      }],
+      "valueDateTime" : "2026-11-20"
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-isik-vitalparameter-entbindungstermin-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-isik-vitalparameter-stillstatus-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-isik-vitalparameter-stillstatus-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://gematik.de/fhir/isik/StructureDefinition/ISiKStillstatus"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-isik-vitalparameter-stillstatus-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-isik-vitalparameter-stillstatus-1</b></p><a name=\"mii-exa-test-data-isik-vitalparameter-stillstatus-1\"> </a><a name=\"hcmii-exa-test-data-isik-vitalparameter-stillstatus-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.icu@2027.0.0-ballot.3&amp;canonical=https://gematik.de/fhir/isik/StructureDefinition/ISiKStillstatus\">ISiKStillstatus</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category social-history}\">Social History</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 63895-7}, {http://snomed.info/sct 413712001}\">Breastfeeding status</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-isik-vitalparameter-patient-1.html\">Viktoria Vogel  Female, DoB: 1968-04-17 ( https://www.charite.de/fhir/sid/patientenidentifikation#ISIK-VITAL-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-isik-vitalparameter-encounter-1.html\">Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2026-05-11 --&gt; 2026-05-14</a></p><p><b>effective</b>: 2026-05-11 18:15:00+0200</p><p><b>performer</b>: Dienstarzt Notaufnahme</p><p><b>value</b>: <span title=\"Codes:{http://loinc.org LA29253-4}\">Not currently breastfeeding</span></p></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "social-history"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "63895-7",
+          "display" : "Breastfeeding status"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "413712001",
+          "display" : "Breastfeeding (mother) (finding)"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-isik-vitalparameter-patient-1"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-isik-vitalparameter-encounter-1"
+      },
+      "effectiveDateTime" : "2026-05-11T18:15:00+02:00",
+      "performer" : [{
+        "display" : "Dienstarzt Notaufnahme"
+      }],
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "LA29253-4",
+          "display" : "Not currently breastfeeding"
+        }]
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-isik-vitalparameter-stillstatus-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-isik-vitalparameter-labor-generisch-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-isik-vitalparameter-labor-generisch-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://gematik.de/fhir/isik/StructureDefinition/ISiKLaboruntersuchung"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-isik-vitalparameter-labor-generisch-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-isik-vitalparameter-labor-generisch-1</b></p><a name=\"mii-exa-test-data-isik-vitalparameter-labor-generisch-1\"> </a><a name=\"hcmii-exa-test-data-isik-vitalparameter-labor-generisch-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.icu@2027.0.0-ballot.3&amp;canonical=https://gematik.de/fhir/isik/StructureDefinition/ISiKLaboruntersuchung\">ISiKLaboruntersuchung</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>identifier</b>: Observation Instance Identifier/ISIK-VITAL-LAB-000</p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 2823-3}\">Kalium (Serum)</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-isik-vitalparameter-patient-1.html\">Viktoria Vogel  Female, DoB: 1968-04-17 ( https://www.charite.de/fhir/sid/patientenidentifikation#ISIK-VITAL-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-isik-vitalparameter-encounter-1.html\">Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2026-05-11 --&gt; 2026-05-14</a></p><p><b>effective</b>: 2026-05-12 07:30:00+0200</p><p><b>issued</b>: 2026-05-12 09:00:00+0200</p><p><b>performer</b>: Zentrallabor Charite</p><p><b>value</b>: 4.1 mmol/L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemmol/L = 'mmol/L')</span></p><p><b>interpretation</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}\">Normal</span></p><h3>ReferenceRanges</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Low</b></td><td><b>High</b></td><td><b>Type</b></td></tr><tr><td style=\"display: none\">*</td><td>3.5 mmol/L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemmol/L = 'mmol/L')</span></td><td>5.1 mmol/L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemmol/L = 'mmol/L')</span></td><td><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/referencerange-meaning normal}\">Normal Range</span></td></tr></table></div>"
+      },
+      "identifier" : [{
+        "type" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code" : "OBI"
+          }]
+        },
+        "system" : "https://www.charite.de/fhir/sid/lab-results",
+        "value" : "ISIK-VITAL-LAB-000"
+      }],
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "laboratory",
+          "display" : "Laboratory"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "2823-3",
+          "display" : "Potassium [Moles/volume] in Serum or Plasma"
+        }],
+        "text" : "Kalium (Serum)"
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-isik-vitalparameter-patient-1"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-isik-vitalparameter-encounter-1"
+      },
+      "effectiveDateTime" : "2026-05-12T07:30:00+02:00",
+      "issued" : "2026-05-12T09:00:00+02:00",
+      "performer" : [{
+        "display" : "Zentrallabor Charite"
+      }],
+      "valueQuantity" : {
+        "value" : 4.1,
+        "unit" : "mmol/L",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "mmol/L"
+      },
+      "interpretation" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code" : "N",
+          "display" : "Normal"
+        }]
+      }],
+      "referenceRange" : [{
+        "low" : {
+          "value" : 3.5,
+          "unit" : "mmol/L",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "mmol/L"
+        },
+        "high" : {
+          "value" : 5.1,
+          "unit" : "mmol/L",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "mmol/L"
+        },
+        "type" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/referencerange-meaning",
+            "code" : "normal",
+            "display" : "Normal Range"
+          }]
+        }
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-isik-vitalparameter-labor-generisch-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-isik-vitalparameter-labor-crp-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-isik-vitalparameter-labor-crp-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://gematik.de/fhir/isik/StructureDefinition/ISiKLaboruntersuchungCRP"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-isik-vitalparameter-labor-crp-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-isik-vitalparameter-labor-crp-1</b></p><a name=\"mii-exa-test-data-isik-vitalparameter-labor-crp-1\"> </a><a name=\"hcmii-exa-test-data-isik-vitalparameter-labor-crp-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.icu@2027.0.0-ballot.3&amp;canonical=https://gematik.de/fhir/isik/StructureDefinition/ISiKLaboruntersuchungCRP\">ISiKLaboruntersuchungCRP</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>identifier</b>: Observation Instance Identifier/ISIK-VITAL-LAB-001</p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 1988-5}, {http://snomed.info/sct 55235003}\">C-reaktives Protein (Serum)</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-isik-vitalparameter-patient-1.html\">Viktoria Vogel  Female, DoB: 1968-04-17 ( https://www.charite.de/fhir/sid/patientenidentifikation#ISIK-VITAL-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-isik-vitalparameter-encounter-1.html\">Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2026-05-11 --&gt; 2026-05-14</a></p><p><b>effective</b>: 2026-05-12 07:30:00+0200</p><p><b>issued</b>: 2026-05-12 09:00:00+0200</p><p><b>performer</b>: Zentrallabor Charite</p><p><b>value</b>: 4.2 milligram per liter<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg/L = 'mg/L')</span></p><p><b>interpretation</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}\">Normal</span></p><h3>ReferenceRanges</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>High</b></td><td><b>Type</b></td></tr><tr><td style=\"display: none\">*</td><td>5 milligram per liter<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg/L = 'mg/L')</span></td><td><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/referencerange-meaning normal}\">Normal Range</span></td></tr></table></div>"
+      },
+      "identifier" : [{
+        "type" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code" : "OBI"
+          }]
+        },
+        "system" : "https://www.charite.de/fhir/sid/lab-results",
+        "value" : "ISIK-VITAL-LAB-001"
+      }],
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "laboratory",
+          "display" : "Laboratory"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "1988-5",
+          "display" : "C reactive protein [Mass/volume] in Serum or Plasma"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "55235003",
+          "display" : "C-reactive protein measurement (procedure)"
+        }],
+        "text" : "C-reaktives Protein (Serum)"
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-isik-vitalparameter-patient-1"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-isik-vitalparameter-encounter-1"
+      },
+      "effectiveDateTime" : "2026-05-12T07:30:00+02:00",
+      "issued" : "2026-05-12T09:00:00+02:00",
+      "performer" : [{
+        "display" : "Zentrallabor Charite"
+      }],
+      "valueQuantity" : {
+        "value" : 4.2,
+        "unit" : "milligram per liter",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "mg/L"
+      },
+      "interpretation" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code" : "N",
+          "display" : "Normal"
+        }]
+      }],
+      "referenceRange" : [{
+        "high" : {
+          "value" : 5,
+          "unit" : "milligram per liter",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "mg/L"
+        },
+        "type" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/referencerange-meaning",
+            "code" : "normal",
+            "display" : "Normal Range"
+          }]
+        }
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-isik-vitalparameter-labor-crp-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-isik-vitalparameter-labor-gfr-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-isik-vitalparameter-labor-gfr-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://gematik.de/fhir/isik/StructureDefinition/ISiKLaboruntersuchungGFR"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-isik-vitalparameter-labor-gfr-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-isik-vitalparameter-labor-gfr-1</b></p><a name=\"mii-exa-test-data-isik-vitalparameter-labor-gfr-1\"> </a><a name=\"hcmii-exa-test-data-isik-vitalparameter-labor-gfr-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.icu@2027.0.0-ballot.3&amp;canonical=https://gematik.de/fhir/isik/StructureDefinition/ISiKLaboruntersuchungGFR\">ISiKLaboruntersuchungGFR</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>identifier</b>: Observation Instance Identifier/ISIK-VITAL-LAB-002</p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 98979-8}, {http://snomed.info/sct 80274001}\">eGFR (CKD-EPI 2021)</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-isik-vitalparameter-patient-1.html\">Viktoria Vogel  Female, DoB: 1968-04-17 ( https://www.charite.de/fhir/sid/patientenidentifikation#ISIK-VITAL-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-isik-vitalparameter-encounter-1.html\">Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2026-05-11 --&gt; 2026-05-14</a></p><p><b>effective</b>: 2026-05-12 07:30:00+0200</p><p><b>issued</b>: 2026-05-12 09:00:00+0200</p><p><b>performer</b>: Zentrallabor Charite</p><p><b>value</b>: 78 milliliter pro Minute pro Koerperoberflaeche von 1,73 m2<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemL/min/(1.73) = 'mL/min/(1.73)')</span></p><p><b>interpretation</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}\">Normal</span></p></div>"
+      },
+      "identifier" : [{
+        "type" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code" : "OBI"
+          }]
+        },
+        "system" : "https://www.charite.de/fhir/sid/lab-results",
+        "value" : "ISIK-VITAL-LAB-002"
+      }],
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "laboratory",
+          "display" : "Laboratory"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "98979-8",
+          "display" : "Glomerular filtration rate/1.73 sq M.predicted [Volume Rate/Area] in Serum, Plasma or Blood by Creatinine-based formula (CKD-EPI 2021)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "80274001",
+          "display" : "Glomerular filtration rate (observable entity)"
+        }],
+        "text" : "eGFR (CKD-EPI 2021)"
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-isik-vitalparameter-patient-1"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-isik-vitalparameter-encounter-1"
+      },
+      "effectiveDateTime" : "2026-05-12T07:30:00+02:00",
+      "issued" : "2026-05-12T09:00:00+02:00",
+      "performer" : [{
+        "display" : "Zentrallabor Charite"
+      }],
+      "valueQuantity" : {
+        "value" : 78,
+        "unit" : "milliliter pro Minute pro Koerperoberflaeche von 1,73 m2",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "mL/min/(1.73)"
+      },
+      "interpretation" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code" : "N",
+          "display" : "Normal"
+        }]
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-isik-vitalparameter-labor-gfr-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-isik-vitalparameter-labor-hb-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-isik-vitalparameter-labor-hb-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://gematik.de/fhir/isik/StructureDefinition/ISiKLaboruntersuchungHb"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-isik-vitalparameter-labor-hb-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-isik-vitalparameter-labor-hb-1</b></p><a name=\"mii-exa-test-data-isik-vitalparameter-labor-hb-1\"> </a><a name=\"hcmii-exa-test-data-isik-vitalparameter-labor-hb-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.icu@2027.0.0-ballot.3&amp;canonical=https://gematik.de/fhir/isik/StructureDefinition/ISiKLaboruntersuchungHb\">ISiKLaboruntersuchungHb</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>identifier</b>: Observation Instance Identifier/ISIK-VITAL-LAB-003</p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 718-7}, {http://snomed.info/sct 416125006}\">Haemoglobin (EDTA-Blut)</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-isik-vitalparameter-patient-1.html\">Viktoria Vogel  Female, DoB: 1968-04-17 ( https://www.charite.de/fhir/sid/patientenidentifikation#ISIK-VITAL-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-isik-vitalparameter-encounter-1.html\">Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2026-05-11 --&gt; 2026-05-14</a></p><p><b>effective</b>: 2026-05-12 07:30:00+0200</p><p><b>issued</b>: 2026-05-12 09:00:00+0200</p><p><b>performer</b>: Zentrallabor Charite</p><p><b>value</b>: 13.2 gram per deciliter<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeg/dL = 'g/dL')</span></p><p><b>interpretation</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}\">Normal</span></p><h3>ReferenceRanges</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Low</b></td><td><b>High</b></td><td><b>Type</b></td></tr><tr><td style=\"display: none\">*</td><td>12 gram per deciliter<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeg/dL = 'g/dL')</span></td><td>16 gram per deciliter<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeg/dL = 'g/dL')</span></td><td><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/referencerange-meaning normal}\">Normal Range</span></td></tr></table></div>"
+      },
+      "identifier" : [{
+        "type" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code" : "OBI"
+          }]
+        },
+        "system" : "https://www.charite.de/fhir/sid/lab-results",
+        "value" : "ISIK-VITAL-LAB-003"
+      }],
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "laboratory",
+          "display" : "Laboratory"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "718-7",
+          "display" : "Hemoglobin [Mass/volume] in Blood"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "416125006",
+          "display" : "Hemoglobin level (observable entity)"
+        }],
+        "text" : "Haemoglobin (EDTA-Blut)"
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-isik-vitalparameter-patient-1"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-isik-vitalparameter-encounter-1"
+      },
+      "effectiveDateTime" : "2026-05-12T07:30:00+02:00",
+      "issued" : "2026-05-12T09:00:00+02:00",
+      "performer" : [{
+        "display" : "Zentrallabor Charite"
+      }],
+      "valueQuantity" : {
+        "value" : 13.2,
+        "unit" : "gram per deciliter",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "g/dL"
+      },
+      "interpretation" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code" : "N",
+          "display" : "Normal"
+        }]
+      }],
+      "referenceRange" : [{
+        "low" : {
+          "value" : 12,
+          "unit" : "gram per deciliter",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "g/dL"
+        },
+        "high" : {
+          "value" : 16,
+          "unit" : "gram per deciliter",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "g/dL"
+        },
+        "type" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/referencerange-meaning",
+            "code" : "normal",
+            "display" : "Normal Range"
+          }]
+        }
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-isik-vitalparameter-labor-hb-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-isik-vitalparameter-labor-pct-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-isik-vitalparameter-labor-pct-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://gematik.de/fhir/isik/StructureDefinition/ISiKLaboruntersuchungPCT"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-isik-vitalparameter-labor-pct-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-isik-vitalparameter-labor-pct-1</b></p><a name=\"mii-exa-test-data-isik-vitalparameter-labor-pct-1\"> </a><a name=\"hcmii-exa-test-data-isik-vitalparameter-labor-pct-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.icu@2027.0.0-ballot.3&amp;canonical=https://gematik.de/fhir/isik/StructureDefinition/ISiKLaboruntersuchungPCT\">ISiKLaboruntersuchungPCT</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>identifier</b>: Observation Instance Identifier/ISIK-VITAL-LAB-004</p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 33959-8}, {http://snomed.info/sct 418752001}\">Procalcitonin (Serum)</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-isik-vitalparameter-patient-1.html\">Viktoria Vogel  Female, DoB: 1968-04-17 ( https://www.charite.de/fhir/sid/patientenidentifikation#ISIK-VITAL-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-isik-vitalparameter-encounter-1.html\">Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2026-05-11 --&gt; 2026-05-14</a></p><p><b>effective</b>: 2026-05-12 07:30:00+0200</p><p><b>issued</b>: 2026-05-12 09:00:00+0200</p><p><b>performer</b>: Zentrallabor Charite</p><p><b>value</b>: 0.08 nanogram per milliliter<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeng/mL = 'ng/mL')</span></p><p><b>interpretation</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}\">Normal</span></p></div>"
+      },
+      "identifier" : [{
+        "type" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code" : "OBI"
+          }]
+        },
+        "system" : "https://www.charite.de/fhir/sid/lab-results",
+        "value" : "ISIK-VITAL-LAB-004"
+      }],
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "laboratory",
+          "display" : "Laboratory"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "33959-8",
+          "display" : "Procalcitonin [Mass/volume] in Serum or Plasma"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "418752001",
+          "display" : "Procalcitonin measurement (procedure)"
+        }],
+        "text" : "Procalcitonin (Serum)"
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-isik-vitalparameter-patient-1"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-isik-vitalparameter-encounter-1"
+      },
+      "effectiveDateTime" : "2026-05-12T07:30:00+02:00",
+      "issued" : "2026-05-12T09:00:00+02:00",
+      "performer" : [{
+        "display" : "Zentrallabor Charite"
+      }],
+      "valueQuantity" : {
+        "value" : 0.08,
+        "unit" : "nanogram per milliliter",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "ng/mL"
+      },
+      "interpretation" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code" : "N",
+          "display" : "Normal"
+        }]
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-isik-vitalparameter-labor-pct-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-isik-vitalparameter-labor-kreatinin-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-isik-vitalparameter-labor-kreatinin-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://gematik.de/fhir/isik/StructureDefinition/ISiKLaboruntersuchungSerumkreatinin"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-isik-vitalparameter-labor-kreatinin-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-isik-vitalparameter-labor-kreatinin-1</b></p><a name=\"mii-exa-test-data-isik-vitalparameter-labor-kreatinin-1\"> </a><a name=\"hcmii-exa-test-data-isik-vitalparameter-labor-kreatinin-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.icu@2027.0.0-ballot.3&amp;canonical=https://gematik.de/fhir/isik/StructureDefinition/ISiKLaboruntersuchungSerumkreatinin\">ISiKLaboruntersuchungSerumkreatinin</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>identifier</b>: Observation Instance Identifier/ISIK-VITAL-LAB-005</p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 2160-0}, {http://snomed.info/sct 70901006}\">Kreatinin (Serum)</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-isik-vitalparameter-patient-1.html\">Viktoria Vogel  Female, DoB: 1968-04-17 ( https://www.charite.de/fhir/sid/patientenidentifikation#ISIK-VITAL-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-isik-vitalparameter-encounter-1.html\">Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2026-05-11 --&gt; 2026-05-14</a></p><p><b>effective</b>: 2026-05-12 07:30:00+0200</p><p><b>issued</b>: 2026-05-12 09:00:00+0200</p><p><b>performer</b>: Zentrallabor Charite</p><p><b>value</b>: 0.9 milligram per deciliter<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg/dL = 'mg/dL')</span></p><p><b>interpretation</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}\">Normal</span></p></div>"
+      },
+      "identifier" : [{
+        "type" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code" : "OBI"
+          }]
+        },
+        "system" : "https://www.charite.de/fhir/sid/lab-results",
+        "value" : "ISIK-VITAL-LAB-005"
+      }],
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "laboratory",
+          "display" : "Laboratory"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "2160-0",
+          "display" : "Creatinine [Mass/volume] in Serum or Plasma"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "70901006",
+          "display" : "Creatinine measurement (procedure)"
+        }],
+        "text" : "Kreatinin (Serum)"
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-isik-vitalparameter-patient-1"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-isik-vitalparameter-encounter-1"
+      },
+      "effectiveDateTime" : "2026-05-12T07:30:00+02:00",
+      "issued" : "2026-05-12T09:00:00+02:00",
+      "performer" : [{
+        "display" : "Zentrallabor Charite"
+      }],
+      "valueQuantity" : {
+        "value" : 0.9,
+        "unit" : "milligram per deciliter",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "mg/dL"
+      },
+      "interpretation" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code" : "N",
+          "display" : "Normal"
+        }]
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-isik-vitalparameter-labor-kreatinin-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-isik-vitalparameter-labor-natrium-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-isik-vitalparameter-labor-natrium-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://gematik.de/fhir/isik/StructureDefinition/ISiKLaboruntersuchungSerumnatrium"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-isik-vitalparameter-labor-natrium-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-isik-vitalparameter-labor-natrium-1</b></p><a name=\"mii-exa-test-data-isik-vitalparameter-labor-natrium-1\"> </a><a name=\"hcmii-exa-test-data-isik-vitalparameter-labor-natrium-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.icu@2027.0.0-ballot.3&amp;canonical=https://gematik.de/fhir/isik/StructureDefinition/ISiKLaboruntersuchungSerumnatrium\">ISiKLaboruntersuchungSerumnatrium</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>identifier</b>: Observation Instance Identifier/ISIK-VITAL-LAB-006</p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 2951-2}\">Natrium (Serum)</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-isik-vitalparameter-patient-1.html\">Viktoria Vogel  Female, DoB: 1968-04-17 ( https://www.charite.de/fhir/sid/patientenidentifikation#ISIK-VITAL-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-isik-vitalparameter-encounter-1.html\">Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2026-05-11 --&gt; 2026-05-14</a></p><p><b>effective</b>: 2026-05-12 07:30:00+0200</p><p><b>issued</b>: 2026-05-12 09:00:00+0200</p><p><b>performer</b>: Zentrallabor Charite</p><p><b>value</b>: 141 millimol per liter<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemmol/L = 'mmol/L')</span></p><p><b>interpretation</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}\">Normal</span></p></div>"
+      },
+      "identifier" : [{
+        "type" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code" : "OBI"
+          }]
+        },
+        "system" : "https://www.charite.de/fhir/sid/lab-results",
+        "value" : "ISIK-VITAL-LAB-006"
+      }],
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "laboratory",
+          "display" : "Laboratory"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "2951-2",
+          "display" : "Sodium [Moles/volume] in Serum or Plasma"
+        }],
+        "text" : "Natrium (Serum)"
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-isik-vitalparameter-patient-1"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-isik-vitalparameter-encounter-1"
+      },
+      "effectiveDateTime" : "2026-05-12T07:30:00+02:00",
+      "issued" : "2026-05-12T09:00:00+02:00",
+      "performer" : [{
+        "display" : "Zentrallabor Charite"
+      }],
+      "valueQuantity" : {
+        "value" : 141,
+        "unit" : "millimol per liter",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "mmol/L"
+      },
+      "interpretation" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code" : "N",
+          "display" : "Normal"
+        }]
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-isik-vitalparameter-labor-natrium-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-isik-vitalparameter-labor-tsh-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-isik-vitalparameter-labor-tsh-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://gematik.de/fhir/isik/StructureDefinition/ISiKLaboruntersuchungTSH"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-isik-vitalparameter-labor-tsh-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-isik-vitalparameter-labor-tsh-1</b></p><a name=\"mii-exa-test-data-isik-vitalparameter-labor-tsh-1\"> </a><a name=\"hcmii-exa-test-data-isik-vitalparameter-labor-tsh-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.icu@2027.0.0-ballot.3&amp;canonical=https://gematik.de/fhir/isik/StructureDefinition/ISiKLaboruntersuchungTSH\">ISiKLaboruntersuchungTSH</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>identifier</b>: Observation Instance Identifier/ISIK-VITAL-LAB-007</p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 3016-3}, {http://snomed.info/sct 61167004}\">TSH basal (Serum)</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-isik-vitalparameter-patient-1.html\">Viktoria Vogel  Female, DoB: 1968-04-17 ( https://www.charite.de/fhir/sid/patientenidentifikation#ISIK-VITAL-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-isik-vitalparameter-encounter-1.html\">Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2026-05-11 --&gt; 2026-05-14</a></p><p><b>effective</b>: 2026-05-12 07:30:00+0200</p><p><b>issued</b>: 2026-05-12 09:00:00+0200</p><p><b>performer</b>: Zentrallabor Charite</p><p><b>value</b>: 1.8 milli IU per liter<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codem[IU]/L = 'm[IU]/L')</span></p><p><b>interpretation</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}\">Normal</span></p><h3>ReferenceRanges</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Low</b></td><td><b>High</b></td><td><b>Type</b></td></tr><tr><td style=\"display: none\">*</td><td>0.4 milli IU per liter<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codem[IU]/L = 'm[IU]/L')</span></td><td>4 milli IU per liter<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codem[IU]/L = 'm[IU]/L')</span></td><td><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/referencerange-meaning normal}\">Normal Range</span></td></tr></table></div>"
+      },
+      "identifier" : [{
+        "type" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code" : "OBI"
+          }]
+        },
+        "system" : "https://www.charite.de/fhir/sid/lab-results",
+        "value" : "ISIK-VITAL-LAB-007"
+      }],
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "laboratory",
+          "display" : "Laboratory"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "3016-3",
+          "display" : "Thyrotropin [Units/volume] in Serum or Plasma"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "61167004",
+          "display" : "Thyroid stimulating hormone measurement (procedure)"
+        }],
+        "text" : "TSH basal (Serum)"
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-isik-vitalparameter-patient-1"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-isik-vitalparameter-encounter-1"
+      },
+      "effectiveDateTime" : "2026-05-12T07:30:00+02:00",
+      "issued" : "2026-05-12T09:00:00+02:00",
+      "performer" : [{
+        "display" : "Zentrallabor Charite"
+      }],
+      "valueQuantity" : {
+        "value" : 1.8,
+        "unit" : "milli IU per liter",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "m[IU]/L"
+      },
+      "interpretation" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code" : "N",
+          "display" : "Normal"
+        }]
+      }],
+      "referenceRange" : [{
+        "low" : {
+          "value" : 0.4,
+          "unit" : "milli IU per liter",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "m[IU]/L"
+        },
+        "high" : {
+          "value" : 4,
+          "unit" : "milli IU per liter",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "m[IU]/L"
+        },
+        "type" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/referencerange-meaning",
+            "code" : "normal",
+            "display" : "Normal Range"
+          }]
+        }
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-isik-vitalparameter-labor-tsh-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-isik-vitalparameter-labor-thrombozyten-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-isik-vitalparameter-labor-thrombozyten-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://gematik.de/fhir/isik/StructureDefinition/ISiKLaboruntersuchungThrombozyten"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-isik-vitalparameter-labor-thrombozyten-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-isik-vitalparameter-labor-thrombozyten-1</b></p><a name=\"mii-exa-test-data-isik-vitalparameter-labor-thrombozyten-1\"> </a><a name=\"hcmii-exa-test-data-isik-vitalparameter-labor-thrombozyten-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.icu@2027.0.0-ballot.3&amp;canonical=https://gematik.de/fhir/isik/StructureDefinition/ISiKLaboruntersuchungThrombozyten\">ISiKLaboruntersuchungThrombozyten</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>identifier</b>: Observation Instance Identifier/ISIK-VITAL-LAB-008</p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 777-3}, {http://snomed.info/sct 365632008}\">Thrombozyten (EDTA-Blut)</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-isik-vitalparameter-patient-1.html\">Viktoria Vogel  Female, DoB: 1968-04-17 ( https://www.charite.de/fhir/sid/patientenidentifikation#ISIK-VITAL-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-isik-vitalparameter-encounter-1.html\">Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2026-05-11 --&gt; 2026-05-14</a></p><p><b>effective</b>: 2026-05-12 07:30:00+0200</p><p><b>issued</b>: 2026-05-12 09:00:00+0200</p><p><b>performer</b>: Zentrallabor Charite</p><p><b>value</b>: 265 10^3 per microliter<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code10*3/uL = '10*3/uL')</span></p><p><b>interpretation</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}\">Normal</span></p></div>"
+      },
+      "identifier" : [{
+        "type" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code" : "OBI"
+          }]
+        },
+        "system" : "https://www.charite.de/fhir/sid/lab-results",
+        "value" : "ISIK-VITAL-LAB-008"
+      }],
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "laboratory",
+          "display" : "Laboratory"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "777-3",
+          "display" : "Platelets [#/volume] in Blood by Automated count"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "365632008",
+          "display" : "Finding of platelet count (finding)"
+        }],
+        "text" : "Thrombozyten (EDTA-Blut)"
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-isik-vitalparameter-patient-1"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-isik-vitalparameter-encounter-1"
+      },
+      "effectiveDateTime" : "2026-05-12T07:30:00+02:00",
+      "issued" : "2026-05-12T09:00:00+02:00",
+      "performer" : [{
+        "display" : "Zentrallabor Charite"
+      }],
+      "valueQuantity" : {
+        "value" : 265,
+        "unit" : "10^3 per microliter",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "10*3/uL"
+      },
+      "interpretation" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code" : "N",
+          "display" : "Normal"
+        }]
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-isik-vitalparameter-labor-thrombozyten-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-isik-vitalparameter-labor-troponin-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-isik-vitalparameter-labor-troponin-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://gematik.de/fhir/isik/StructureDefinition/ISiKLaboruntersuchungTroponin"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-isik-vitalparameter-labor-troponin-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-isik-vitalparameter-labor-troponin-1</b></p><a name=\"mii-exa-test-data-isik-vitalparameter-labor-troponin-1\"> </a><a name=\"hcmii-exa-test-data-isik-vitalparameter-labor-troponin-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.icu@2027.0.0-ballot.3&amp;canonical=https://gematik.de/fhir/isik/StructureDefinition/ISiKLaboruntersuchungTroponin\">ISiKLaboruntersuchungTroponin</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>identifier</b>: Observation Instance Identifier/ISIK-VITAL-LAB-009</p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 10839-9}, {http://snomed.info/sct 105000003}\">Troponin I (Serum)</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-isik-vitalparameter-patient-1.html\">Viktoria Vogel  Female, DoB: 1968-04-17 ( https://www.charite.de/fhir/sid/patientenidentifikation#ISIK-VITAL-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-isik-vitalparameter-encounter-1.html\">Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2026-05-11 --&gt; 2026-05-14</a></p><p><b>effective</b>: 2026-05-12 07:30:00+0200</p><p><b>issued</b>: 2026-05-12 09:00:00+0200</p><p><b>performer</b>: Zentrallabor Charite</p><p><b>value</b>: 0.02 nanogram per milliliter<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeng/mL = 'ng/mL')</span></p><p><b>interpretation</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}\">Normal</span></p></div>"
+      },
+      "identifier" : [{
+        "type" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code" : "OBI"
+          }]
+        },
+        "system" : "https://www.charite.de/fhir/sid/lab-results",
+        "value" : "ISIK-VITAL-LAB-009"
+      }],
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "laboratory",
+          "display" : "Laboratory"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "10839-9",
+          "display" : "Troponin I.cardiac [Mass/volume] in Serum or Plasma"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "105000003",
+          "display" : "Troponin measurement (procedure)"
+        }],
+        "text" : "Troponin I (Serum)"
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-isik-vitalparameter-patient-1"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-isik-vitalparameter-encounter-1"
+      },
+      "effectiveDateTime" : "2026-05-12T07:30:00+02:00",
+      "issued" : "2026-05-12T09:00:00+02:00",
+      "performer" : [{
+        "display" : "Zentrallabor Charite"
+      }],
+      "valueQuantity" : {
+        "value" : 0.02,
+        "unit" : "nanogram per milliliter",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "ng/mL"
+      },
+      "interpretation" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code" : "N",
+          "display" : "Normal"
+        }]
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-isik-vitalparameter-labor-troponin-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-isik-vitalparameter-muv-generisch-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-isik-vitalparameter-muv-generisch-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-monitoring-und-vitaldaten"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-isik-vitalparameter-muv-generisch-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-isik-vitalparameter-muv-generisch-1</b></p><a name=\"mii-exa-test-data-isik-vitalparameter-muv-generisch-1\"> </a><a name=\"hcmii-exa-test-data-isik-vitalparameter-muv-generisch-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.icu@2027.0.0-ballot.3&amp;canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-monitoring-und-vitaldaten\">SD MII ICU Monitoring und Vitaldaten</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 364075005}, {http://loinc.org 8867-4}\">Heart rate (observable entity)</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-isik-vitalparameter-patient-1.html\">Viktoria Vogel  Female, DoB: 1968-04-17 ( https://www.charite.de/fhir/sid/patientenidentifikation#ISIK-VITAL-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-isik-vitalparameter-encounter-1.html\">Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2026-05-11 --&gt; 2026-05-14</a></p><p><b>effective</b>: 2026-05-12 10:00:00+0200</p><p><b>performer</b>: Pflegefachkraft Station 14i</p><p><b>value</b>: 82 beats per minute<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code/min = '/min')</span></p></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "vital-signs"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "364075005",
+          "display" : "Heart rate (observable entity)"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "8867-4",
+          "display" : "Heart rate"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-isik-vitalparameter-patient-1"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-isik-vitalparameter-encounter-1"
+      },
+      "effectiveDateTime" : "2026-05-12T10:00:00+02:00",
+      "performer" : [{
+        "display" : "Pflegefachkraft Station 14i"
+      }],
+      "valueQuantity" : {
+        "value" : 82,
+        "unit" : "beats per minute",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "/min"
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-isik-vitalparameter-muv-generisch-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-isik-vitalparameter-puls-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-isik-vitalparameter-puls-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-puls"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-isik-vitalparameter-puls-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-isik-vitalparameter-puls-1</b></p><a name=\"mii-exa-test-data-isik-vitalparameter-puls-1\"> </a><a name=\"hcmii-exa-test-data-isik-vitalparameter-puls-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.icu@2027.0.0-ballot.3&amp;canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-puls\">SD MII ICU Puls</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 8499008}, {urn:iso:std:iso:11073:10101 149514}\">Pulse, function (observable entity)</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-isik-vitalparameter-patient-1.html\">Viktoria Vogel  Female, DoB: 1968-04-17 ( https://www.charite.de/fhir/sid/patientenidentifikation#ISIK-VITAL-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-isik-vitalparameter-encounter-1.html\">Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2026-05-11 --&gt; 2026-05-14</a></p><p><b>effective</b>: 2026-05-12 10:00:00+0200</p><p><b>performer</b>: Pflegefachkraft Station 14i</p><p><b>value</b>: 76 beats per minute<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code/min = '/min')</span></p><p><b>bodySite</b>: <span title=\"Codes:{http://snomed.info/sct 11527006}\">Structure of radial artery (body structure)</span></p></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "vital-signs"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "8499008",
+          "display" : "Pulse, function (observable entity)"
+        },
+        {
+          "system" : "urn:iso:std:iso:11073:10101",
+          "code" : "149514"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-isik-vitalparameter-patient-1"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-isik-vitalparameter-encounter-1"
+      },
+      "effectiveDateTime" : "2026-05-12T10:00:00+02:00",
+      "performer" : [{
+        "display" : "Pflegefachkraft Station 14i"
+      }],
+      "valueQuantity" : {
+        "value" : 76,
+        "unit" : "beats per minute",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "/min"
+      },
+      "bodySite" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "11527006",
+          "display" : "Structure of radial artery (body structure)"
+        }]
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-isik-vitalparameter-puls-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-isik-vitalparameter-hzv-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-isik-vitalparameter-hzv-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-herzzeitvolumen"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-isik-vitalparameter-hzv-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-isik-vitalparameter-hzv-1</b></p><a name=\"mii-exa-test-data-isik-vitalparameter-hzv-1\"> </a><a name=\"hcmii-exa-test-data-isik-vitalparameter-hzv-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.icu@2027.0.0-ballot.3&amp;canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-herzzeitvolumen\">SD MII ICU Herzzeitvolumen</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 82799009}, {http://loinc.org 8741-1}, {urn:iso:std:iso:11073:10101 150276}\">Cardiac output (observable entity)</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-isik-vitalparameter-patient-1.html\">Viktoria Vogel  Female, DoB: 1968-04-17 ( https://www.charite.de/fhir/sid/patientenidentifikation#ISIK-VITAL-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-isik-vitalparameter-encounter-1.html\">Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2026-05-11 --&gt; 2026-05-14</a></p><p><b>effective</b>: 2026-05-12 10:05:00+0200</p><p><b>performer</b>: Pflegefachkraft Station 14i</p><p><b>value</b>: 4.8 liter per minute<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL/min = 'L/min')</span></p></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "vital-signs"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "82799009",
+          "display" : "Cardiac output (observable entity)"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "8741-1",
+          "display" : "Cardiac output"
+        },
+        {
+          "system" : "urn:iso:std:iso:11073:10101",
+          "code" : "150276"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-isik-vitalparameter-patient-1"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-isik-vitalparameter-encounter-1"
+      },
+      "effectiveDateTime" : "2026-05-12T10:05:00+02:00",
+      "performer" : [{
+        "display" : "Pflegefachkraft Station 14i"
+      }],
+      "valueQuantity" : {
+        "value" : 4.8,
+        "unit" : "liter per minute",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "L/min"
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-isik-vitalparameter-hzv-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-isik-vitalparameter-ideales-gewicht-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-isik-vitalparameter-ideales-gewicht-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-ideales-koerpergewicht"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-isik-vitalparameter-ideales-gewicht-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-isik-vitalparameter-ideales-gewicht-1</b></p><a name=\"mii-exa-test-data-isik-vitalparameter-ideales-gewicht-1\"> </a><a name=\"hcmii-exa-test-data-isik-vitalparameter-ideales-gewicht-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.icu@2027.0.0-ballot.3&amp;canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-ideales-koerpergewicht\">SD MII ICU Ideales Koerpergewicht</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 170804003}, {http://loinc.org 50064-5}, {urn:iso:std:iso:11073:10101 188796}\">Ideal body weight (observable entity)</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-isik-vitalparameter-patient-1.html\">Viktoria Vogel  Female, DoB: 1968-04-17 ( https://www.charite.de/fhir/sid/patientenidentifikation#ISIK-VITAL-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-isik-vitalparameter-encounter-1.html\">Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2026-05-11 --&gt; 2026-05-14</a></p><p><b>effective</b>: 2026-05-12 10:05:00+0200</p><p><b>performer</b>: Pflegefachkraft Station 14i</p><p><b>value</b>: 63 kilogram<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codekg = 'kg')</span></p></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "vital-signs"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "170804003",
+          "display" : "Ideal body weight (observable entity)"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "50064-5",
+          "display" : "Ideal body weight"
+        },
+        {
+          "system" : "urn:iso:std:iso:11073:10101",
+          "code" : "188796"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-isik-vitalparameter-patient-1"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-isik-vitalparameter-encounter-1"
+      },
+      "effectiveDateTime" : "2026-05-12T10:05:00+02:00",
+      "performer" : [{
+        "display" : "Pflegefachkraft Station 14i"
+      }],
+      "valueQuantity" : {
+        "value" : 63,
+        "unit" : "kilogram",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "kg"
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-isik-vitalparameter-ideales-gewicht-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-isik-vitalparameter-icp-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-isik-vitalparameter-icp-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-intrakranieller-druck-icp"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-isik-vitalparameter-icp-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-isik-vitalparameter-icp-1</b></p><a name=\"mii-exa-test-data-isik-vitalparameter-icp-1\"> </a><a name=\"hcmii-exa-test-data-isik-vitalparameter-icp-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.icu@2027.0.0-ballot.3&amp;canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-intrakranieller-druck-icp\">SD MII ICU Intrakranieller Druck ICP</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 250844005}, {http://loinc.org 60956-0}, {urn:iso:std:iso:11073:10101 153608}\">Intracranial pressure (observable entity)</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-isik-vitalparameter-patient-1.html\">Viktoria Vogel  Female, DoB: 1968-04-17 ( https://www.charite.de/fhir/sid/patientenidentifikation#ISIK-VITAL-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-isik-vitalparameter-encounter-1.html\">Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2026-05-11 --&gt; 2026-05-14</a></p><p><b>effective</b>: 2026-05-12 10:10:00+0200</p><p><b>performer</b>: Pflegefachkraft Station 14i</p><p><b>value</b>: 12 millimeter Mercury column<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemm[Hg] = 'mm[Hg]')</span></p><p><b>bodySite</b>: <span title=\"Codes:{http://snomed.info/sct 731998000}\">Entire intracranial subarachnoid space (body structure)</span></p></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "vital-signs"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "250844005",
+          "display" : "Intracranial pressure (observable entity)"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "60956-0",
+          "display" : "Intracranial pressure"
+        },
+        {
+          "system" : "urn:iso:std:iso:11073:10101",
+          "code" : "153608"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-isik-vitalparameter-patient-1"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-isik-vitalparameter-encounter-1"
+      },
+      "effectiveDateTime" : "2026-05-12T10:10:00+02:00",
+      "performer" : [{
+        "display" : "Pflegefachkraft Station 14i"
+      }],
+      "valueQuantity" : {
+        "value" : 12,
+        "unit" : "millimeter Mercury column",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "mm[Hg]"
+      },
+      "bodySite" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "731998000",
+          "display" : "Entire intracranial subarachnoid space (body structure)"
+        }]
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-isik-vitalparameter-icp-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-isik-vitalparameter-gewicht-percentil-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-isik-vitalparameter-gewicht-percentil-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpergewicht-percentil-altersabhaengig"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-isik-vitalparameter-gewicht-percentil-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-isik-vitalparameter-gewicht-percentil-1</b></p><a name=\"mii-exa-test-data-isik-vitalparameter-gewicht-percentil-1\"> </a><a name=\"hcmii-exa-test-data-isik-vitalparameter-gewicht-percentil-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.icu@2027.0.0-ballot.3&amp;canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpergewicht-percentil-altersabhaengig\">SD MII ICU Koerpergewicht Percentil Altersabhaengig</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span>, <span title=\"Codes:{http://snomed.info/sct 248326004}\">Body measure (observable entity)</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 1153592008}, {http://loinc.org 8336-0}\">Weight for age percentile (observable entity)</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-isik-vitalparameter-patient-1.html\">Viktoria Vogel  Female, DoB: 1968-04-17 ( https://www.charite.de/fhir/sid/patientenidentifikation#ISIK-VITAL-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-isik-vitalparameter-encounter-1.html\">Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2026-05-11 --&gt; 2026-05-14</a></p><p><b>effective</b>: 2026-05-12 10:10:00+0200</p><p><b>performer</b>: Pflegefachkraft Station 14i</p><p><b>value</b>: 45 percent<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code% = '%')</span></p></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "vital-signs"
+        }]
+      },
+      {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "248326004",
+          "display" : "Body measure (observable entity)"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "1153592008",
+          "display" : "Weight for age percentile (observable entity)"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "8336-0",
+          "display" : "Body weight [Percentile] Per age"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-isik-vitalparameter-patient-1"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-isik-vitalparameter-encounter-1"
+      },
+      "effectiveDateTime" : "2026-05-12T10:10:00+02:00",
+      "performer" : [{
+        "display" : "Pflegefachkraft Station 14i"
+      }],
+      "valueQuantity" : {
+        "value" : 45,
+        "unit" : "percent",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "%"
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-isik-vitalparameter-gewicht-percentil-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-isik-vitalparameter-groesse-percentil-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-isik-vitalparameter-groesse-percentil-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpergroesse-percentil-altersabhaengig"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-isik-vitalparameter-groesse-percentil-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-isik-vitalparameter-groesse-percentil-1</b></p><a name=\"mii-exa-test-data-isik-vitalparameter-groesse-percentil-1\"> </a><a name=\"hcmii-exa-test-data-isik-vitalparameter-groesse-percentil-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.icu@2027.0.0-ballot.3&amp;canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpergroesse-percentil-altersabhaengig\">SD MII ICU Koerpergroesse Percentil</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span>, <span title=\"Codes:{http://snomed.info/sct 248326004}\">Body measure (observable entity)</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 1153605006}\">Body height for age percentile (observable entity)</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-isik-vitalparameter-patient-1.html\">Viktoria Vogel  Female, DoB: 1968-04-17 ( https://www.charite.de/fhir/sid/patientenidentifikation#ISIK-VITAL-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-isik-vitalparameter-encounter-1.html\">Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2026-05-11 --&gt; 2026-05-14</a></p><p><b>effective</b>: 2026-05-12 10:10:00+0200</p><p><b>performer</b>: Pflegefachkraft Station 14i</p><p><b>value</b>: 40 percent<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code% = '%')</span></p></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "vital-signs"
+        }]
+      },
+      {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "248326004",
+          "display" : "Body measure (observable entity)"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "1153605006",
+          "display" : "Body height for age percentile (observable entity)"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-isik-vitalparameter-patient-1"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-isik-vitalparameter-encounter-1"
+      },
+      "effectiveDateTime" : "2026-05-12T10:10:00+02:00",
+      "performer" : [{
+        "display" : "Pflegefachkraft Station 14i"
+      }],
+      "valueQuantity" : {
+        "value" : 40,
+        "unit" : "percent",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "%"
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-isik-vitalparameter-groesse-percentil-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-isik-vitalparameter-lv-herzindex-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-isik-vitalparameter-lv-herzindex-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-linksventrikulaerer-herzindex"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-isik-vitalparameter-lv-herzindex-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-isik-vitalparameter-lv-herzindex-1</b></p><a name=\"mii-exa-test-data-isik-vitalparameter-lv-herzindex-1\"> </a><a name=\"hcmii-exa-test-data-isik-vitalparameter-lv-herzindex-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.icu@2027.0.0-ballot.3&amp;canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-linksventrikulaerer-herzindex\">SD MII ICU Linksventrikulaerer Herzindex</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 54993008}, {http://loinc.org 75919-1}, {urn:iso:std:iso:11073:10101 149772}\">Cardiac index (observable entity)</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-isik-vitalparameter-patient-1.html\">Viktoria Vogel  Female, DoB: 1968-04-17 ( https://www.charite.de/fhir/sid/patientenidentifikation#ISIK-VITAL-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-isik-vitalparameter-encounter-1.html\">Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2026-05-11 --&gt; 2026-05-14</a></p><p><b>effective</b>: 2026-05-12 10:15:00+0200</p><p><b>performer</b>: Pflegefachkraft Station 14i</p><p><b>value</b>: 2.9 liter per minute and square meter<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL/min/m2 = 'L/min/m2')</span></p><p><b>bodySite</b>: <span title=\"Codes:{http://snomed.info/sct 87878005}\">Left cardiac ventricular structure (body structure)</span></p></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "vital-signs"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "54993008",
+          "display" : "Cardiac index (observable entity)"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "75919-1",
+          "display" : "Cardiac index by Indicator dilution"
+        },
+        {
+          "system" : "urn:iso:std:iso:11073:10101",
+          "code" : "149772"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-isik-vitalparameter-patient-1"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-isik-vitalparameter-encounter-1"
+      },
+      "effectiveDateTime" : "2026-05-12T10:15:00+02:00",
+      "performer" : [{
+        "display" : "Pflegefachkraft Station 14i"
+      }],
+      "valueQuantity" : {
+        "value" : 2.9,
+        "unit" : "liter per minute and square meter",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "L/min/m2"
+      },
+      "bodySite" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "87878005",
+          "display" : "Left cardiac ventricular structure (body structure)"
+        }]
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-isik-vitalparameter-lv-herzindex-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-isik-vitalparameter-lv-schlagvolumen-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-isik-vitalparameter-lv-schlagvolumen-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-linksventrikulaeres-schlagvolumen"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-isik-vitalparameter-lv-schlagvolumen-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-isik-vitalparameter-lv-schlagvolumen-1</b></p><a name=\"mii-exa-test-data-isik-vitalparameter-lv-schlagvolumen-1\"> </a><a name=\"hcmii-exa-test-data-isik-vitalparameter-lv-schlagvolumen-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.icu@2027.0.0-ballot.3&amp;canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-linksventrikulaeres-schlagvolumen\">SD MII ICU Linksventrikulaeres Schlagvolumen</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 90096001}, {http://loinc.org 20562-5}, {urn:iso:std:iso:11073:10101 150408}\">Cardiac stroke volume (observable entity)</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-isik-vitalparameter-patient-1.html\">Viktoria Vogel  Female, DoB: 1968-04-17 ( https://www.charite.de/fhir/sid/patientenidentifikation#ISIK-VITAL-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-isik-vitalparameter-encounter-1.html\">Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2026-05-11 --&gt; 2026-05-14</a></p><p><b>effective</b>: 2026-05-12 10:15:00+0200</p><p><b>performer</b>: Pflegefachkraft Station 14i</p><p><b>value</b>: 70 milliliter<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemL = 'mL')</span></p><p><b>bodySite</b>: <span title=\"Codes:{http://snomed.info/sct 244385005}\">Entire left ventricle (body structure)</span></p></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "vital-signs"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "90096001",
+          "display" : "Cardiac stroke volume (observable entity)"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "20562-5",
+          "display" : "Left ventricular Stroke volume"
+        },
+        {
+          "system" : "urn:iso:std:iso:11073:10101",
+          "code" : "150408"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-isik-vitalparameter-patient-1"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-isik-vitalparameter-encounter-1"
+      },
+      "effectiveDateTime" : "2026-05-12T10:15:00+02:00",
+      "performer" : [{
+        "display" : "Pflegefachkraft Station 14i"
+      }],
+      "valueQuantity" : {
+        "value" : 70,
+        "unit" : "milliliter",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "mL"
+      },
+      "bodySite" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "244385005",
+          "display" : "Entire left ventricle (body structure)"
+        }]
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-isik-vitalparameter-lv-schlagvolumen-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-isik-vitalparameter-lv-svi-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-isik-vitalparameter-lv-svi-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-linksventrikulaeres-schlagvolumenindex"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-isik-vitalparameter-lv-svi-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-isik-vitalparameter-lv-svi-1</b></p><a name=\"mii-exa-test-data-isik-vitalparameter-lv-svi-1\"> </a><a name=\"hcmii-exa-test-data-isik-vitalparameter-lv-svi-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.icu@2027.0.0-ballot.3&amp;canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-linksventrikulaeres-schlagvolumenindex\">SD MII ICU Linksventrikulaeres Schlagvolumenindex</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 76297-1}, {urn:iso:std:iso:11073:10101 150636}\">Stroke volume index</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-isik-vitalparameter-patient-1.html\">Viktoria Vogel  Female, DoB: 1968-04-17 ( https://www.charite.de/fhir/sid/patientenidentifikation#ISIK-VITAL-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-isik-vitalparameter-encounter-1.html\">Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2026-05-11 --&gt; 2026-05-14</a></p><p><b>effective</b>: 2026-05-12 10:15:00+0200</p><p><b>performer</b>: Pflegefachkraft Station 14i</p><p><b>value</b>: 37 milliliter per square meter<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemL/m2 = 'mL/m2')</span></p><p><b>bodySite</b>: <span title=\"Codes:{http://snomed.info/sct 87878005}\">Left cardiac ventricular structure (body structure)</span></p></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "vital-signs"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "76297-1",
+          "display" : "Stroke volume index"
+        },
+        {
+          "system" : "urn:iso:std:iso:11073:10101",
+          "code" : "150636"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-isik-vitalparameter-patient-1"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-isik-vitalparameter-encounter-1"
+      },
+      "effectiveDateTime" : "2026-05-12T10:15:00+02:00",
+      "performer" : [{
+        "display" : "Pflegefachkraft Station 14i"
+      }],
+      "valueQuantity" : {
+        "value" : 37,
+        "unit" : "milliliter per square meter",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "mL/m2"
+      },
+      "bodySite" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "87878005",
+          "display" : "Left cardiac ventricular structure (body structure)"
+        }]
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-isik-vitalparameter-lv-svi-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-isik-vitalparameter-lv-hi-ind-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-isik-vitalparameter-lv-hi-ind-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-linksventri-herzindex-durch-indikatorverduennung"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-isik-vitalparameter-lv-hi-ind-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-isik-vitalparameter-lv-hi-ind-1</b></p><a name=\"mii-exa-test-data-isik-vitalparameter-lv-hi-ind-1\"> </a><a name=\"hcmii-exa-test-data-isik-vitalparameter-lv-hi-ind-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.icu@2027.0.0-ballot.3&amp;canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-linksventri-herzindex-durch-indikatorverduennung\">SD MII ICU Linksventrikulaerer Herzindex durch Indikatorverduennung</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 8751-0}\">Cardiac index by Indicator dilution</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-isik-vitalparameter-patient-1.html\">Viktoria Vogel  Female, DoB: 1968-04-17 ( https://www.charite.de/fhir/sid/patientenidentifikation#ISIK-VITAL-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-isik-vitalparameter-encounter-1.html\">Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2026-05-11 --&gt; 2026-05-14</a></p><p><b>effective</b>: 2026-05-12 10:20:00+0200</p><p><b>performer</b>: Pflegefachkraft Station 14i</p><p><b>value</b>: 2.8 liter per minute and square meter<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL/min/m2 = 'L/min/m2')</span></p></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "vital-signs"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "8751-0",
+          "display" : "Cardiac index by Indicator dilution"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-isik-vitalparameter-patient-1"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-isik-vitalparameter-encounter-1"
+      },
+      "effectiveDateTime" : "2026-05-12T10:20:00+02:00",
+      "performer" : [{
+        "display" : "Pflegefachkraft Station 14i"
+      }],
+      "valueQuantity" : {
+        "value" : 2.8,
+        "unit" : "liter per minute and square meter",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "L/min/m2"
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-isik-vitalparameter-lv-hi-ind-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-isik-vitalparameter-lv-sv-ind-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-isik-vitalparameter-lv-sv-ind-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-linksventri-schlagvolumen-durch-indikatorverduennung"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-isik-vitalparameter-lv-sv-ind-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-isik-vitalparameter-lv-sv-ind-1</b></p><a name=\"mii-exa-test-data-isik-vitalparameter-lv-sv-ind-1\"> </a><a name=\"hcmii-exa-test-data-isik-vitalparameter-lv-sv-ind-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.icu@2027.0.0-ballot.3&amp;canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-linksventri-schlagvolumen-durch-indikatorverduennung\">SD MII ICU Linksventrikulaeres Schlagvolumen Durch Indikatorverduennung</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 8771-8}\">Stroke volume by Indicator dilution</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-isik-vitalparameter-patient-1.html\">Viktoria Vogel  Female, DoB: 1968-04-17 ( https://www.charite.de/fhir/sid/patientenidentifikation#ISIK-VITAL-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-isik-vitalparameter-encounter-1.html\">Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2026-05-11 --&gt; 2026-05-14</a></p><p><b>effective</b>: 2026-05-12 10:20:00+0200</p><p><b>performer</b>: Pflegefachkraft Station 14i</p><p><b>value</b>: 68 milliliter<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemL = 'mL')</span></p></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "vital-signs"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "8771-8",
+          "display" : "Stroke volume by Indicator dilution"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-isik-vitalparameter-patient-1"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-isik-vitalparameter-encounter-1"
+      },
+      "effectiveDateTime" : "2026-05-12T10:20:00+02:00",
+      "performer" : [{
+        "display" : "Pflegefachkraft Station 14i"
+      }],
+      "valueQuantity" : {
+        "value" : 68,
+        "unit" : "milliliter",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "mL"
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-isik-vitalparameter-lv-sv-ind-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-isik-vitalparameter-lv-svi-ind-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-isik-vitalparameter-lv-svi-ind-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-linksventri-schlagvolumenindex-durch-indikatorverd"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-isik-vitalparameter-lv-svi-ind-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-isik-vitalparameter-lv-svi-ind-1</b></p><a name=\"mii-exa-test-data-isik-vitalparameter-lv-svi-ind-1\"> </a><a name=\"hcmii-exa-test-data-isik-vitalparameter-lv-svi-ind-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.icu@2027.0.0-ballot.3&amp;canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-linksventri-schlagvolumenindex-durch-indikatorverd\">SD MII ICU Linksventrikulaerer Schlagvolumenindex Durch Indikatorverduennung</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 8791-6}\">Stroke volume index by Indicator dilution</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-isik-vitalparameter-patient-1.html\">Viktoria Vogel  Female, DoB: 1968-04-17 ( https://www.charite.de/fhir/sid/patientenidentifikation#ISIK-VITAL-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-isik-vitalparameter-encounter-1.html\">Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2026-05-11 --&gt; 2026-05-14</a></p><p><b>effective</b>: 2026-05-12 10:20:00+0200</p><p><b>performer</b>: Pflegefachkraft Station 14i</p><p><b>value</b>: 36 milliliter per square meter<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemL/m2 = 'mL/m2')</span></p></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "vital-signs"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "8791-6",
+          "display" : "Stroke volume index by Indicator dilution"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-isik-vitalparameter-patient-1"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-isik-vitalparameter-encounter-1"
+      },
+      "effectiveDateTime" : "2026-05-12T10:20:00+02:00",
+      "performer" : [{
+        "display" : "Pflegefachkraft Station 14i"
+      }],
+      "valueQuantity" : {
+        "value" : 36,
+        "unit" : "milliliter per square meter",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "mL/m2"
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-isik-vitalparameter-lv-svi-ind-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-isik-vitalparameter-lv-hzv-ind-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-isik-vitalparameter-lv-hzv-ind-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-linksventri-herzzeitvolumen-durch-indikatorverd"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-isik-vitalparameter-lv-hzv-ind-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-isik-vitalparameter-lv-hzv-ind-1</b></p><a name=\"mii-exa-test-data-isik-vitalparameter-lv-hzv-ind-1\"> </a><a name=\"hcmii-exa-test-data-isik-vitalparameter-lv-hzv-ind-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.icu@2027.0.0-ballot.3&amp;canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-linksventri-herzzeitvolumen-durch-indikatorverd\">SD MII ICU Linksventrikulaeres Herzzeitvolumen Durch Indikatorverduennung</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 8737-9}\">Cardiac output by Indicator dilution</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-isik-vitalparameter-patient-1.html\">Viktoria Vogel  Female, DoB: 1968-04-17 ( https://www.charite.de/fhir/sid/patientenidentifikation#ISIK-VITAL-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-isik-vitalparameter-encounter-1.html\">Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2026-05-11 --&gt; 2026-05-14</a></p><p><b>effective</b>: 2026-05-12 10:20:00+0200</p><p><b>performer</b>: Pflegefachkraft Station 14i</p><p><b>value</b>: 4.9 liter per minute<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL/min = 'L/min')</span></p></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "vital-signs"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "8737-9",
+          "display" : "Cardiac output by Indicator dilution"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-isik-vitalparameter-patient-1"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-isik-vitalparameter-encounter-1"
+      },
+      "effectiveDateTime" : "2026-05-12T10:20:00+02:00",
+      "performer" : [{
+        "display" : "Pflegefachkraft Station 14i"
+      }],
+      "valueQuantity" : {
+        "value" : 4.9,
+        "unit" : "liter per minute",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "L/min"
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-isik-vitalparameter-lv-hzv-ind-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-isik-vitalparameter-o2sat-art-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-isik-vitalparameter-o2sat-art-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-o2saettigung-im-arteriellen-blut-durch-pulsoxymetrie"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-isik-vitalparameter-o2sat-art-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-isik-vitalparameter-o2sat-art-1</b></p><a name=\"mii-exa-test-data-isik-vitalparameter-o2sat-art-1\"> </a><a name=\"hcmii-exa-test-data-isik-vitalparameter-o2sat-art-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.icu@2027.0.0-ballot.3&amp;canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-o2saettigung-im-arteriellen-blut-durch-pulsoxymetrie\">SD MII ICU Sauerstoffsaettigung Im Arteriellen Blut Durch Pulsoxymetrie</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 442476006}, {http://loinc.org 59408-5}, {urn:iso:std:iso:11073:10101 150324}, {http://loinc.org 2708-6}\">Oxygen saturation in arterial blood (observable entity)</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-isik-vitalparameter-patient-1.html\">Viktoria Vogel  Female, DoB: 1968-04-17 ( https://www.charite.de/fhir/sid/patientenidentifikation#ISIK-VITAL-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-isik-vitalparameter-encounter-1.html\">Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2026-05-11 --&gt; 2026-05-14</a></p><p><b>effective</b>: 2026-05-12 10:25:00+0200</p><p><b>performer</b>: Pflegefachkraft Station 14i</p><p><b>value</b>: 96 percent<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code% = '%')</span></p><p><b>bodySite</b>: <span title=\"Codes:{http://snomed.info/sct 11527006}\">Structure of radial artery (body structure)</span></p></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "vital-signs"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "442476006",
+          "display" : "Oxygen saturation in arterial blood (observable entity)"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "59408-5",
+          "display" : "Oxygen saturation in Arterial blood by Pulse oximetry"
+        },
+        {
+          "system" : "urn:iso:std:iso:11073:10101",
+          "code" : "150324"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "2708-6"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-isik-vitalparameter-patient-1"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-isik-vitalparameter-encounter-1"
+      },
+      "effectiveDateTime" : "2026-05-12T10:25:00+02:00",
+      "performer" : [{
+        "display" : "Pflegefachkraft Station 14i"
+      }],
+      "valueQuantity" : {
+        "value" : 96,
+        "unit" : "percent",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "%"
+      },
+      "bodySite" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "11527006",
+          "display" : "Structure of radial artery (body structure)"
+        }]
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-isik-vitalparameter-o2sat-art-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-isik-vitalparameter-o2sat-praeduktal-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-isik-vitalparameter-o2sat-praeduktal-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-o2saettigung-im-blut-preduktal-durch-pulsoxymetrie"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-isik-vitalparameter-o2sat-praeduktal-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-isik-vitalparameter-o2sat-praeduktal-1</b></p><a name=\"mii-exa-test-data-isik-vitalparameter-o2sat-praeduktal-1\"> </a><a name=\"hcmii-exa-test-data-isik-vitalparameter-o2sat-praeduktal-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.icu@2027.0.0-ballot.3&amp;canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-o2saettigung-im-blut-preduktal-durch-pulsoxymetrie\">SD MII ICU Sauerstoffsaettigung Im Blut Preduktal Durch Pulsoxymetrie</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 59407-7}, {urn:iso:std:iso:11073:10101 160296}\">Oxygen saturation in Blood Preductal by Pulse oximetry</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-isik-vitalparameter-patient-1.html\">Viktoria Vogel  Female, DoB: 1968-04-17 ( https://www.charite.de/fhir/sid/patientenidentifikation#ISIK-VITAL-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-isik-vitalparameter-encounter-1.html\">Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2026-05-11 --&gt; 2026-05-14</a></p><p><b>effective</b>: 2026-05-12 10:25:00+0200</p><p><b>performer</b>: Pflegefachkraft Station 14i</p><p><b>value</b>: 97 percent<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code% = '%')</span></p></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "vital-signs"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "59407-7",
+          "display" : "Oxygen saturation in Blood Preductal by Pulse oximetry"
+        },
+        {
+          "system" : "urn:iso:std:iso:11073:10101",
+          "code" : "160296"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-isik-vitalparameter-patient-1"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-isik-vitalparameter-encounter-1"
+      },
+      "effectiveDateTime" : "2026-05-12T10:25:00+02:00",
+      "performer" : [{
+        "display" : "Pflegefachkraft Station 14i"
+      }],
+      "valueQuantity" : {
+        "value" : 97,
+        "unit" : "percent",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "%"
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-isik-vitalparameter-o2sat-praeduktal-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-isik-vitalparameter-o2sat-postduktal-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-isik-vitalparameter-o2sat-postduktal-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-o2saettigung-im-blut-postduktal-durch-pulsoxymetrie"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-isik-vitalparameter-o2sat-postduktal-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-isik-vitalparameter-o2sat-postduktal-1</b></p><a name=\"mii-exa-test-data-isik-vitalparameter-o2sat-postduktal-1\"> </a><a name=\"hcmii-exa-test-data-isik-vitalparameter-o2sat-postduktal-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.icu@2027.0.0-ballot.3&amp;canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-o2saettigung-im-blut-postduktal-durch-pulsoxymetrie\">SD MII ICU Sauerstoffsaettigung Im Blut Postduktal Durch Pulsoxymetrie</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 59418-4}, {urn:iso:std:iso:11073:10101 160300}\">Oxygen saturation in Blood Postductal by Pulse oximetry</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-isik-vitalparameter-patient-1.html\">Viktoria Vogel  Female, DoB: 1968-04-17 ( https://www.charite.de/fhir/sid/patientenidentifikation#ISIK-VITAL-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-isik-vitalparameter-encounter-1.html\">Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2026-05-11 --&gt; 2026-05-14</a></p><p><b>effective</b>: 2026-05-12 10:25:00+0200</p><p><b>performer</b>: Pflegefachkraft Station 14i</p><p><b>value</b>: 95 percent<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code% = '%')</span></p></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "vital-signs"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "59418-4",
+          "display" : "Oxygen saturation in Blood Postductal by Pulse oximetry"
+        },
+        {
+          "system" : "urn:iso:std:iso:11073:10101",
+          "code" : "160300"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-isik-vitalparameter-patient-1"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-isik-vitalparameter-encounter-1"
+      },
+      "effectiveDateTime" : "2026-05-12T10:25:00+02:00",
+      "performer" : [{
+        "display" : "Pflegefachkraft Station 14i"
+      }],
+      "valueQuantity" : {
+        "value" : 95,
+        "unit" : "percent",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "%"
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-isik-vitalparameter-o2sat-postduktal-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-isik-vitalparameter-wedge-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-isik-vitalparameter-wedge-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-pulmonalarterieller-wedge-druck"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-isik-vitalparameter-wedge-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-isik-vitalparameter-wedge-1</b></p><a name=\"mii-exa-test-data-isik-vitalparameter-wedge-1\"> </a><a name=\"hcmii-exa-test-data-isik-vitalparameter-wedge-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.icu@2027.0.0-ballot.3&amp;canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-pulmonalarterieller-wedge-druck\">SD MII ICU Pulmonalarterieller Wedge Druck</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 118433006}, {http://loinc.org 75994-4}, {urn:iso:std:iso:11073:10101 150052}\">Pulmonary artery wedge pressure (observable entity)</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-isik-vitalparameter-patient-1.html\">Viktoria Vogel  Female, DoB: 1968-04-17 ( https://www.charite.de/fhir/sid/patientenidentifikation#ISIK-VITAL-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-isik-vitalparameter-encounter-1.html\">Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2026-05-11 --&gt; 2026-05-14</a></p><p><b>effective</b>: 2026-05-12 10:30:00+0200</p><p><b>performer</b>: Pflegefachkraft Station 14i</p><p><b>value</b>: 12 millimeter Mercury column<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemm[Hg] = 'mm[Hg]')</span></p><p><b>bodySite</b>: <span title=\"Codes:{http://snomed.info/sct 430160002}\">Structure of branch of pulmonary artery (body structure)</span></p></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "vital-signs"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "118433006",
+          "display" : "Pulmonary artery wedge pressure (observable entity)"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "75994-4",
+          "display" : "Pulmonary artery Wedge pressure"
+        },
+        {
+          "system" : "urn:iso:std:iso:11073:10101",
+          "code" : "150052"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-isik-vitalparameter-patient-1"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-isik-vitalparameter-encounter-1"
+      },
+      "effectiveDateTime" : "2026-05-12T10:30:00+02:00",
+      "performer" : [{
+        "display" : "Pflegefachkraft Station 14i"
+      }],
+      "valueQuantity" : {
+        "value" : 12,
+        "unit" : "millimeter Mercury column",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "mm[Hg]"
+      },
+      "bodySite" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "430160002",
+          "display" : "Structure of branch of pulmonary artery (body structure)"
+        }]
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-isik-vitalparameter-wedge-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-isik-vitalparameter-pvri-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-isik-vitalparameter-pvri-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-pulmonalvaskulaerer-widerstandsindex"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-isik-vitalparameter-pvri-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-isik-vitalparameter-pvri-1</b></p><a name=\"mii-exa-test-data-isik-vitalparameter-pvri-1\"> </a><a name=\"hcmii-exa-test-data-isik-vitalparameter-pvri-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.icu@2027.0.0-ballot.3&amp;canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-pulmonalvaskulaerer-widerstandsindex\">SD MII ICU Pulmonalvaskulaerer Widerstandsindex</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 276902009}, {http://loinc.org 8834-4}, {urn:iso:std:iso:11073:10101 152852}\">Pulmonary vascular resistance index (observable entity)</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-isik-vitalparameter-patient-1.html\">Viktoria Vogel  Female, DoB: 1968-04-17 ( https://www.charite.de/fhir/sid/patientenidentifikation#ISIK-VITAL-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-isik-vitalparameter-encounter-1.html\">Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2026-05-11 --&gt; 2026-05-14</a></p><p><b>effective</b>: 2026-05-12 10:30:00+0200</p><p><b>performer</b>: Pflegefachkraft Station 14i</p><p><b>value</b>: 220 dyne second per centimeter5 and square meter<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codedyn.s/cm5/m2 = 'dyn.s/cm5/m2')</span></p></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "vital-signs"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "276902009",
+          "display" : "Pulmonary vascular resistance index (observable entity)"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "8834-4",
+          "display" : "Pulmonary vascular resistance index"
+        },
+        {
+          "system" : "urn:iso:std:iso:11073:10101",
+          "code" : "152852"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-isik-vitalparameter-patient-1"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-isik-vitalparameter-encounter-1"
+      },
+      "effectiveDateTime" : "2026-05-12T10:30:00+02:00",
+      "performer" : [{
+        "display" : "Pflegefachkraft Station 14i"
+      }],
+      "valueQuantity" : {
+        "value" : 220,
+        "unit" : "dyne second per centimeter5 and square meter",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "dyn.s/cm5/m2"
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-isik-vitalparameter-pvri-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-isik-vitalparameter-svri-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-isik-vitalparameter-svri-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-systemischer-vaskulaerer-widerstandsindex"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-isik-vitalparameter-svri-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-isik-vitalparameter-svri-1</b></p><a name=\"mii-exa-test-data-isik-vitalparameter-svri-1\"> </a><a name=\"hcmii-exa-test-data-isik-vitalparameter-svri-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.icu@2027.0.0-ballot.3&amp;canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-systemischer-vaskulaerer-widerstandsindex\">SD MII ICU Systemischer Vaskulaerer Widerstandsindex</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 276900001}, {http://loinc.org 8837-7}, {urn:iso:std:iso:11073:10101 149760}\">Systemic vascular resistance index (observable entity)</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-isik-vitalparameter-patient-1.html\">Viktoria Vogel  Female, DoB: 1968-04-17 ( https://www.charite.de/fhir/sid/patientenidentifikation#ISIK-VITAL-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-isik-vitalparameter-encounter-1.html\">Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2026-05-11 --&gt; 2026-05-14</a></p><p><b>effective</b>: 2026-05-12 10:30:00+0200</p><p><b>performer</b>: Pflegefachkraft Station 14i</p><p><b>value</b>: 1900 dyne second per centimeter5 and square meter<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codedyn.s/cm5/m2 = 'dyn.s/cm5/m2')</span></p></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "vital-signs"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "276900001",
+          "display" : "Systemic vascular resistance index (observable entity)"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "8837-7",
+          "display" : "Systemic vascular resistance index"
+        },
+        {
+          "system" : "urn:iso:std:iso:11073:10101",
+          "code" : "149760"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-isik-vitalparameter-patient-1"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-isik-vitalparameter-encounter-1"
+      },
+      "effectiveDateTime" : "2026-05-12T10:30:00+02:00",
+      "performer" : [{
+        "display" : "Pflegefachkraft Station 14i"
+      }],
+      "valueQuantity" : {
+        "value" : 1900,
+        "unit" : "dyne second per centimeter5 and square meter",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "dyn.s/cm5/m2"
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-isik-vitalparameter-svri-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-isik-vitalparameter-zvd-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-isik-vitalparameter-zvd-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-zentralvenoeser-blutdruck"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-isik-vitalparameter-zvd-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-isik-vitalparameter-zvd-1</b></p><a name=\"mii-exa-test-data-isik-vitalparameter-zvd-1\"> </a><a name=\"hcmii-exa-test-data-isik-vitalparameter-zvd-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.icu@2027.0.0-ballot.3&amp;canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-zentralvenoeser-blutdruck\">SD MII ICU Zentralvenoeser Blutdruck</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 71420008}, {http://loinc.org 60985-9}, {urn:iso:std:iso:11073:10101 150084}\">Central venous pressure (observable entity)</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-isik-vitalparameter-patient-1.html\">Viktoria Vogel  Female, DoB: 1968-04-17 ( https://www.charite.de/fhir/sid/patientenidentifikation#ISIK-VITAL-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-isik-vitalparameter-encounter-1.html\">Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2026-05-11 --&gt; 2026-05-14</a></p><p><b>effective</b>: 2026-05-12 10:30:00+0200</p><p><b>performer</b>: Pflegefachkraft Station 14i</p><p><b>value</b>: 8 millimeter Mercury column<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemm[Hg] = 'mm[Hg]')</span></p><p><b>bodySite</b>: <span title=\"Codes:{http://snomed.info/sct 73829009}\">Right atrial structure (body structure)</span></p></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "vital-signs"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "71420008",
+          "display" : "Central venous pressure (observable entity)"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "60985-9",
+          "display" : "Central venous pressure (CVP)"
+        },
+        {
+          "system" : "urn:iso:std:iso:11073:10101",
+          "code" : "150084"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-isik-vitalparameter-patient-1"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-isik-vitalparameter-encounter-1"
+      },
+      "effectiveDateTime" : "2026-05-12T10:30:00+02:00",
+      "performer" : [{
+        "display" : "Pflegefachkraft Station 14i"
+      }],
+      "valueQuantity" : {
+        "value" : 8,
+        "unit" : "millimeter Mercury column",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "mm[Hg]"
+      },
+      "bodySite" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "73829009",
+          "display" : "Right atrial structure (body structure)"
+        }]
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-isik-vitalparameter-zvd-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-isik-vitalparameter-pulsatil-generisch-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-isik-vitalparameter-pulsatil-generisch-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-sonstige-pulsatile-druecke-generisch"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-isik-vitalparameter-pulsatil-generisch-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-isik-vitalparameter-pulsatil-generisch-1</b></p><a name=\"mii-exa-test-data-isik-vitalparameter-pulsatil-generisch-1\"> </a><a name=\"hcmii-exa-test-data-isik-vitalparameter-pulsatil-generisch-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.icu@2027.0.0-ballot.3&amp;canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-sonstige-pulsatile-druecke-generisch\">SD MII ICU Sonstige pulsatile Druecke Generisch</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 75367002}, {http://snomed.info/sct 364090009}\">Blood pressure (observable entity)</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-isik-vitalparameter-patient-1.html\">Viktoria Vogel  Female, DoB: 1968-04-17 ( https://www.charite.de/fhir/sid/patientenidentifikation#ISIK-VITAL-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-isik-vitalparameter-encounter-1.html\">Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2026-05-11 --&gt; 2026-05-14</a></p><p><b>effective</b>: 2026-05-12 10:35:00+0200</p><p><b>performer</b>: Pflegefachkraft Station 14i</p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 8480-6}, {http://snomed.info/sct 271649006}\">Systolic blood pressure</span></p><p><b>value</b>: 128 millimeter Mercury column<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemm[Hg] = 'mm[Hg]')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 8462-4}, {http://snomed.info/sct 271650006}\">Diastolic blood pressure</span></p><p><b>value</b>: 76 millimeter Mercury column<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemm[Hg] = 'mm[Hg]')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 8478-0}, {http://snomed.info/sct 6797001}\">Mean blood pressure</span></p><p><b>value</b>: 93 millimeter Mercury column<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemm[Hg] = 'mm[Hg]')</span></p></blockquote></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "vital-signs"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "75367002",
+          "display" : "Blood pressure (observable entity)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "364090009",
+          "display" : "Systemic arterial pressure (observable entity)"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-isik-vitalparameter-patient-1"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-isik-vitalparameter-encounter-1"
+      },
+      "effectiveDateTime" : "2026-05-12T10:35:00+02:00",
+      "performer" : [{
+        "display" : "Pflegefachkraft Station 14i"
+      }],
+      "component" : [{
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "8480-6",
+            "display" : "Systolic blood pressure"
+          },
+          {
+            "system" : "http://snomed.info/sct",
+            "code" : "271649006",
+            "display" : "Systolic blood pressure (observable entity)"
+          }]
+        },
+        "valueQuantity" : {
+          "value" : 128,
+          "unit" : "millimeter Mercury column",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "mm[Hg]"
+        }
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "8462-4",
+            "display" : "Diastolic blood pressure"
+          },
+          {
+            "system" : "http://snomed.info/sct",
+            "code" : "271650006",
+            "display" : "Diastolic blood pressure (observable entity)"
+          }]
+        },
+        "valueQuantity" : {
+          "value" : 76,
+          "unit" : "millimeter Mercury column",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "mm[Hg]"
+        }
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "8478-0",
+            "display" : "Mean blood pressure"
+          },
+          {
+            "system" : "http://snomed.info/sct",
+            "code" : "6797001",
+            "display" : "Mean blood pressure (observable entity)"
+          }]
+        },
+        "valueQuantity" : {
+          "value" : 93,
+          "unit" : "millimeter Mercury column",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "mm[Hg]"
+        }
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-isik-vitalparameter-pulsatil-generisch-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-isik-vitalparameter-lap-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-isik-vitalparameter-lap-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-linksatrialer-druck"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-isik-vitalparameter-lap-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-isik-vitalparameter-lap-1</b></p><a name=\"mii-exa-test-data-isik-vitalparameter-lap-1\"> </a><a name=\"hcmii-exa-test-data-isik-vitalparameter-lap-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.icu@2027.0.0-ballot.3&amp;canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-linksatrialer-druck\">SD MII ICU Linksatrialer Druck</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 75367002}, {http://snomed.info/sct 276760007}, {http://loinc.org 60988-3}, {urn:iso:std:iso:11073:10101 150064}\">Blood pressure (observable entity)</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-isik-vitalparameter-patient-1.html\">Viktoria Vogel  Female, DoB: 1968-04-17 ( https://www.charite.de/fhir/sid/patientenidentifikation#ISIK-VITAL-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-isik-vitalparameter-encounter-1.html\">Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2026-05-11 --&gt; 2026-05-14</a></p><p><b>effective</b>: 2026-05-12 10:35:00+0200</p><p><b>performer</b>: Pflegefachkraft Station 14i</p><p><b>bodySite</b>: <span title=\"Codes:{http://snomed.info/sct 82471001}\">Left atrial structure (body structure)</span></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 8480-6}, {http://snomed.info/sct 271649006}, {urn:iso:std:iso:11073:10101 150065}\">Systolic blood pressure</span></p><p><b>value</b>: 12 millimeter Mercury column<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemm[Hg] = 'mm[Hg]')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 8462-4}, {http://snomed.info/sct 271650006}, {urn:iso:std:iso:11073:10101 150066}\">Diastolic blood pressure</span></p><p><b>value</b>: 8 millimeter Mercury column<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemm[Hg] = 'mm[Hg]')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 8478-0}, {http://snomed.info/sct 6797001}, {urn:iso:std:iso:11073:10101 150067}\">Mean blood pressure</span></p><p><b>value</b>: 10 millimeter Mercury column<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemm[Hg] = 'mm[Hg]')</span></p></blockquote></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "vital-signs"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "75367002",
+          "display" : "Blood pressure (observable entity)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "276760007",
+          "display" : "Left atrial pressure (observable entity)"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "60988-3",
+          "display" : "Left atrial pressure"
+        },
+        {
+          "system" : "urn:iso:std:iso:11073:10101",
+          "code" : "150064"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-isik-vitalparameter-patient-1"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-isik-vitalparameter-encounter-1"
+      },
+      "effectiveDateTime" : "2026-05-12T10:35:00+02:00",
+      "performer" : [{
+        "display" : "Pflegefachkraft Station 14i"
+      }],
+      "bodySite" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "82471001",
+          "display" : "Left atrial structure (body structure)"
+        }]
+      },
+      "component" : [{
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "8480-6",
+            "display" : "Systolic blood pressure"
+          },
+          {
+            "system" : "http://snomed.info/sct",
+            "code" : "271649006",
+            "display" : "Systolic blood pressure (observable entity)"
+          },
+          {
+            "system" : "urn:iso:std:iso:11073:10101",
+            "code" : "150065"
+          }]
+        },
+        "valueQuantity" : {
+          "value" : 12,
+          "unit" : "millimeter Mercury column",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "mm[Hg]"
+        }
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "8462-4",
+            "display" : "Diastolic blood pressure"
+          },
+          {
+            "system" : "http://snomed.info/sct",
+            "code" : "271650006",
+            "display" : "Diastolic blood pressure (observable entity)"
+          },
+          {
+            "system" : "urn:iso:std:iso:11073:10101",
+            "code" : "150066"
+          }]
+        },
+        "valueQuantity" : {
+          "value" : 8,
+          "unit" : "millimeter Mercury column",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "mm[Hg]"
+        }
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "8478-0",
+            "display" : "Mean blood pressure"
+          },
+          {
+            "system" : "http://snomed.info/sct",
+            "code" : "6797001",
+            "display" : "Mean blood pressure (observable entity)"
+          },
+          {
+            "system" : "urn:iso:std:iso:11073:10101",
+            "code" : "150067"
+          }]
+        },
+        "valueQuantity" : {
+          "value" : 10,
+          "unit" : "millimeter Mercury column",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "mm[Hg]"
+        }
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-isik-vitalparameter-lap-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-isik-vitalparameter-lvp-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-isik-vitalparameter-lvp-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-linksventrikulaerer-druck"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-isik-vitalparameter-lvp-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-isik-vitalparameter-lvp-1</b></p><a name=\"mii-exa-test-data-isik-vitalparameter-lvp-1\"> </a><a name=\"hcmii-exa-test-data-isik-vitalparameter-lvp-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.icu@2027.0.0-ballot.3&amp;canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-linksventrikulaerer-druck\">SD MII ICU Linksventrikulaerer Druck</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 75367002}, {http://snomed.info/sct 276769008}, {urn:iso:std:iso:11073:10101 150100}\">Blood pressure (observable entity)</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-isik-vitalparameter-patient-1.html\">Viktoria Vogel  Female, DoB: 1968-04-17 ( https://www.charite.de/fhir/sid/patientenidentifikation#ISIK-VITAL-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-isik-vitalparameter-encounter-1.html\">Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2026-05-11 --&gt; 2026-05-14</a></p><p><b>effective</b>: 2026-05-12 10:35:00+0200</p><p><b>performer</b>: Pflegefachkraft Station 14i</p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 8480-6}, {http://snomed.info/sct 271649006}, {urn:iso:std:iso:11073:10101 150101}\">Systolic blood pressure</span></p><p><b>value</b>: 120 millimeter Mercury column<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemm[Hg] = 'mm[Hg]')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 8462-4}, {http://snomed.info/sct 271650006}, {urn:iso:std:iso:11073:10101 150102}\">Diastolic blood pressure</span></p><p><b>value</b>: 10 millimeter Mercury column<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemm[Hg] = 'mm[Hg]')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 8478-0}, {http://snomed.info/sct 6797001}, {urn:iso:std:iso:11073:10101 150103}\">Mean blood pressure</span></p><p><b>value</b>: 47 millimeter Mercury column<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemm[Hg] = 'mm[Hg]')</span></p></blockquote></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "vital-signs"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "75367002",
+          "display" : "Blood pressure (observable entity)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "276769008",
+          "display" : "Left ventricular pressure (observable entity)"
+        },
+        {
+          "system" : "urn:iso:std:iso:11073:10101",
+          "code" : "150100"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-isik-vitalparameter-patient-1"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-isik-vitalparameter-encounter-1"
+      },
+      "effectiveDateTime" : "2026-05-12T10:35:00+02:00",
+      "performer" : [{
+        "display" : "Pflegefachkraft Station 14i"
+      }],
+      "component" : [{
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "8480-6",
+            "display" : "Systolic blood pressure"
+          },
+          {
+            "system" : "http://snomed.info/sct",
+            "code" : "271649006",
+            "display" : "Systolic blood pressure (observable entity)"
+          },
+          {
+            "system" : "urn:iso:std:iso:11073:10101",
+            "code" : "150101"
+          }]
+        },
+        "valueQuantity" : {
+          "value" : 120,
+          "unit" : "millimeter Mercury column",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "mm[Hg]"
+        }
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "8462-4",
+            "display" : "Diastolic blood pressure"
+          },
+          {
+            "system" : "http://snomed.info/sct",
+            "code" : "271650006",
+            "display" : "Diastolic blood pressure (observable entity)"
+          },
+          {
+            "system" : "urn:iso:std:iso:11073:10101",
+            "code" : "150102"
+          }]
+        },
+        "valueQuantity" : {
+          "value" : 10,
+          "unit" : "millimeter Mercury column",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "mm[Hg]"
+        }
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "8478-0",
+            "display" : "Mean blood pressure"
+          },
+          {
+            "system" : "http://snomed.info/sct",
+            "code" : "6797001",
+            "display" : "Mean blood pressure (observable entity)"
+          },
+          {
+            "system" : "urn:iso:std:iso:11073:10101",
+            "code" : "150103"
+          }]
+        },
+        "valueQuantity" : {
+          "value" : 47,
+          "unit" : "millimeter Mercury column",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "mm[Hg]"
+        }
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-isik-vitalparameter-lvp-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-isik-vitalparameter-rap-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-isik-vitalparameter-rap-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-rechtsatrialer-druck"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-isik-vitalparameter-rap-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-isik-vitalparameter-rap-1</b></p><a name=\"mii-exa-test-data-isik-vitalparameter-rap-1\"> </a><a name=\"hcmii-exa-test-data-isik-vitalparameter-rap-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.icu@2027.0.0-ballot.3&amp;canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-rechtsatrialer-druck\">SD MII ICU Rechtsatrialer Druck</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 75367002}, {http://snomed.info/sct 276755008}, {http://loinc.org 60996-6}, {urn:iso:std:iso:11073:10101 150068}\">Blood pressure (observable entity)</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-isik-vitalparameter-patient-1.html\">Viktoria Vogel  Female, DoB: 1968-04-17 ( https://www.charite.de/fhir/sid/patientenidentifikation#ISIK-VITAL-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-isik-vitalparameter-encounter-1.html\">Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2026-05-11 --&gt; 2026-05-14</a></p><p><b>effective</b>: 2026-05-12 10:40:00+0200</p><p><b>performer</b>: Pflegefachkraft Station 14i</p><p><b>bodySite</b>: <span title=\"Codes:{http://snomed.info/sct 73829009}\">Right atrial structure (body structure)</span></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 8480-6}, {http://snomed.info/sct 271649006}, {urn:iso:std:iso:11073:10101 150069}\">Systolic blood pressure</span></p><p><b>value</b>: 8 millimeter Mercury column<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemm[Hg] = 'mm[Hg]')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 8462-4}, {http://snomed.info/sct 271650006}, {urn:iso:std:iso:11073:10101 150070}\">Diastolic blood pressure</span></p><p><b>value</b>: 3 millimeter Mercury column<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemm[Hg] = 'mm[Hg]')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 8478-0}, {http://snomed.info/sct 6797001}, {urn:iso:std:iso:11073:10101 150071}\">Mean blood pressure</span></p><p><b>value</b>: 5 millimeter Mercury column<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemm[Hg] = 'mm[Hg]')</span></p></blockquote></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "vital-signs"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "75367002",
+          "display" : "Blood pressure (observable entity)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "276755008",
+          "display" : "Right atrial pressure (observable entity)"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "60996-6",
+          "display" : "Right atrial pressure"
+        },
+        {
+          "system" : "urn:iso:std:iso:11073:10101",
+          "code" : "150068"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-isik-vitalparameter-patient-1"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-isik-vitalparameter-encounter-1"
+      },
+      "effectiveDateTime" : "2026-05-12T10:40:00+02:00",
+      "performer" : [{
+        "display" : "Pflegefachkraft Station 14i"
+      }],
+      "bodySite" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "73829009",
+          "display" : "Right atrial structure (body structure)"
+        }]
+      },
+      "component" : [{
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "8480-6",
+            "display" : "Systolic blood pressure"
+          },
+          {
+            "system" : "http://snomed.info/sct",
+            "code" : "271649006",
+            "display" : "Systolic blood pressure (observable entity)"
+          },
+          {
+            "system" : "urn:iso:std:iso:11073:10101",
+            "code" : "150069"
+          }]
+        },
+        "valueQuantity" : {
+          "value" : 8,
+          "unit" : "millimeter Mercury column",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "mm[Hg]"
+        }
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "8462-4",
+            "display" : "Diastolic blood pressure"
+          },
+          {
+            "system" : "http://snomed.info/sct",
+            "code" : "271650006",
+            "display" : "Diastolic blood pressure (observable entity)"
+          },
+          {
+            "system" : "urn:iso:std:iso:11073:10101",
+            "code" : "150070"
+          }]
+        },
+        "valueQuantity" : {
+          "value" : 3,
+          "unit" : "millimeter Mercury column",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "mm[Hg]"
+        }
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "8478-0",
+            "display" : "Mean blood pressure"
+          },
+          {
+            "system" : "http://snomed.info/sct",
+            "code" : "6797001",
+            "display" : "Mean blood pressure (observable entity)"
+          },
+          {
+            "system" : "urn:iso:std:iso:11073:10101",
+            "code" : "150071"
+          }]
+        },
+        "valueQuantity" : {
+          "value" : 5,
+          "unit" : "millimeter Mercury column",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "mm[Hg]"
+        }
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-isik-vitalparameter-rap-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-isik-vitalparameter-rvp-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-isik-vitalparameter-rvp-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-rechtsventrikulaerer-druck"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-isik-vitalparameter-rvp-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-isik-vitalparameter-rvp-1</b></p><a name=\"mii-exa-test-data-isik-vitalparameter-rvp-1\"> </a><a name=\"hcmii-exa-test-data-isik-vitalparameter-rvp-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.icu@2027.0.0-ballot.3&amp;canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-rechtsventrikulaerer-druck\">SD MII ICU Rechtsventrikulaerer Druck</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 75367002}, {http://snomed.info/sct 276756009}, {urn:iso:std:iso:11073:10101 150104}\">Blood pressure (observable entity)</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-isik-vitalparameter-patient-1.html\">Viktoria Vogel  Female, DoB: 1968-04-17 ( https://www.charite.de/fhir/sid/patientenidentifikation#ISIK-VITAL-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-isik-vitalparameter-encounter-1.html\">Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2026-05-11 --&gt; 2026-05-14</a></p><p><b>effective</b>: 2026-05-12 10:40:00+0200</p><p><b>performer</b>: Pflegefachkraft Station 14i</p><p><b>bodySite</b>: <span title=\"Codes:{http://snomed.info/sct 53085002}\">Right cardiac ventricular structure (body structure)</span></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 8480-6}, {http://snomed.info/sct 271649006}, {urn:iso:std:iso:11073:10101 150105}\">Systolic blood pressure</span></p><p><b>value</b>: 25 millimeter Mercury column<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemm[Hg] = 'mm[Hg]')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 8462-4}, {http://snomed.info/sct 271650006}, {urn:iso:std:iso:11073:10101 150106}\">Diastolic blood pressure</span></p><p><b>value</b>: 4 millimeter Mercury column<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemm[Hg] = 'mm[Hg]')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 8478-0}, {http://snomed.info/sct 6797001}, {urn:iso:std:iso:11073:10101 150107}\">Mean blood pressure</span></p><p><b>value</b>: 14 millimeter Mercury column<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemm[Hg] = 'mm[Hg]')</span></p></blockquote></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "vital-signs"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "75367002",
+          "display" : "Blood pressure (observable entity)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "276756009",
+          "display" : "Right ventricular pressure (observable entity)"
+        },
+        {
+          "system" : "urn:iso:std:iso:11073:10101",
+          "code" : "150104"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-isik-vitalparameter-patient-1"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-isik-vitalparameter-encounter-1"
+      },
+      "effectiveDateTime" : "2026-05-12T10:40:00+02:00",
+      "performer" : [{
+        "display" : "Pflegefachkraft Station 14i"
+      }],
+      "bodySite" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "53085002",
+          "display" : "Right cardiac ventricular structure (body structure)"
+        }]
+      },
+      "component" : [{
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "8480-6",
+            "display" : "Systolic blood pressure"
+          },
+          {
+            "system" : "http://snomed.info/sct",
+            "code" : "271649006",
+            "display" : "Systolic blood pressure (observable entity)"
+          },
+          {
+            "system" : "urn:iso:std:iso:11073:10101",
+            "code" : "150105"
+          }]
+        },
+        "valueQuantity" : {
+          "value" : 25,
+          "unit" : "millimeter Mercury column",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "mm[Hg]"
+        }
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "8462-4",
+            "display" : "Diastolic blood pressure"
+          },
+          {
+            "system" : "http://snomed.info/sct",
+            "code" : "271650006",
+            "display" : "Diastolic blood pressure (observable entity)"
+          },
+          {
+            "system" : "urn:iso:std:iso:11073:10101",
+            "code" : "150106"
+          }]
+        },
+        "valueQuantity" : {
+          "value" : 4,
+          "unit" : "millimeter Mercury column",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "mm[Hg]"
+        }
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "8478-0",
+            "display" : "Mean blood pressure"
+          },
+          {
+            "system" : "http://snomed.info/sct",
+            "code" : "6797001",
+            "display" : "Mean blood pressure (observable entity)"
+          },
+          {
+            "system" : "urn:iso:std:iso:11073:10101",
+            "code" : "150107"
+          }]
+        },
+        "valueQuantity" : {
+          "value" : 14,
+          "unit" : "millimeter Mercury column",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "mm[Hg]"
+        }
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-isik-vitalparameter-rvp-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-isik-vitalparameter-pap-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-isik-vitalparameter-pap-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-pulmonalarterieller-blutdruck"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-isik-vitalparameter-pap-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-isik-vitalparameter-pap-1</b></p><a name=\"mii-exa-test-data-isik-vitalparameter-pap-1\"> </a><a name=\"hcmii-exa-test-data-isik-vitalparameter-pap-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.icu@2027.0.0-ballot.3&amp;canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-pulmonalarterieller-blutdruck\">SD MII ICU Pulmonalarterieller Blutdruck</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 75367002}, {http://snomed.info/sct 250767002}, {http://loinc.org 76284-9}, {urn:iso:std:iso:11073:10101 150044}\">Blood pressure (observable entity)</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-isik-vitalparameter-patient-1.html\">Viktoria Vogel  Female, DoB: 1968-04-17 ( https://www.charite.de/fhir/sid/patientenidentifikation#ISIK-VITAL-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-isik-vitalparameter-encounter-1.html\">Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2026-05-11 --&gt; 2026-05-14</a></p><p><b>effective</b>: 2026-05-12 10:40:00+0200</p><p><b>performer</b>: Pflegefachkraft Station 14i</p><p><b>bodySite</b>: <span title=\"Codes:{http://snomed.info/sct 81040000}\">Pulmonary artery structure (body structure)</span></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 8480-6}, {http://snomed.info/sct 271649006}, {urn:iso:std:iso:11073:10101 150045}\">Systolic blood pressure</span></p><p><b>value</b>: 25 millimeter Mercury column<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemm[Hg] = 'mm[Hg]')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 8462-4}, {http://snomed.info/sct 271650006}, {urn:iso:std:iso:11073:10101 150046}\">Diastolic blood pressure</span></p><p><b>value</b>: 10 millimeter Mercury column<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemm[Hg] = 'mm[Hg]')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 8478-0}, {http://snomed.info/sct 6797001}, {urn:iso:std:iso:11073:10101 150047}\">Mean blood pressure</span></p><p><b>value</b>: 15 millimeter Mercury column<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemm[Hg] = 'mm[Hg]')</span></p></blockquote></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "vital-signs"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "75367002",
+          "display" : "Blood pressure (observable entity)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "250767002",
+          "display" : "Pulmonary artery pressure (observable entity)"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "76284-9",
+          "display" : "Pulmonary artery Blood pressure panel"
+        },
+        {
+          "system" : "urn:iso:std:iso:11073:10101",
+          "code" : "150044"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-isik-vitalparameter-patient-1"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-isik-vitalparameter-encounter-1"
+      },
+      "effectiveDateTime" : "2026-05-12T10:40:00+02:00",
+      "performer" : [{
+        "display" : "Pflegefachkraft Station 14i"
+      }],
+      "bodySite" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "81040000",
+          "display" : "Pulmonary artery structure (body structure)"
+        }]
+      },
+      "component" : [{
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "8480-6",
+            "display" : "Systolic blood pressure"
+          },
+          {
+            "system" : "http://snomed.info/sct",
+            "code" : "271649006",
+            "display" : "Systolic blood pressure (observable entity)"
+          },
+          {
+            "system" : "urn:iso:std:iso:11073:10101",
+            "code" : "150045"
+          }]
+        },
+        "valueQuantity" : {
+          "value" : 25,
+          "unit" : "millimeter Mercury column",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "mm[Hg]"
+        }
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "8462-4",
+            "display" : "Diastolic blood pressure"
+          },
+          {
+            "system" : "http://snomed.info/sct",
+            "code" : "271650006",
+            "display" : "Diastolic blood pressure (observable entity)"
+          },
+          {
+            "system" : "urn:iso:std:iso:11073:10101",
+            "code" : "150046"
+          }]
+        },
+        "valueQuantity" : {
+          "value" : 10,
+          "unit" : "millimeter Mercury column",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "mm[Hg]"
+        }
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "8478-0",
+            "display" : "Mean blood pressure"
+          },
+          {
+            "system" : "http://snomed.info/sct",
+            "code" : "6797001",
+            "display" : "Mean blood pressure (observable entity)"
+          },
+          {
+            "system" : "urn:iso:std:iso:11073:10101",
+            "code" : "150047"
+          }]
+        },
+        "valueQuantity" : {
+          "value" : 15,
+          "unit" : "millimeter Mercury column",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "mm[Hg]"
+        }
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-isik-vitalparameter-pap-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-isik-vitalparameter-temp-generisch-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-isik-vitalparameter-temp-generisch-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-generisch"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-isik-vitalparameter-temp-generisch-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-isik-vitalparameter-temp-generisch-1</b></p><a name=\"mii-exa-test-data-isik-vitalparameter-temp-generisch-1\"> </a><a name=\"hcmii-exa-test-data-isik-vitalparameter-temp-generisch-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.icu@2027.0.0-ballot.3&amp;canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-generisch\">SD MII ICU Koerpertemperatur Generisch</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 8310-5}\">Body temperature</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-isik-vitalparameter-patient-1.html\">Viktoria Vogel  Female, DoB: 1968-04-17 ( https://www.charite.de/fhir/sid/patientenidentifikation#ISIK-VITAL-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-isik-vitalparameter-encounter-1.html\">Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2026-05-11 --&gt; 2026-05-14</a></p><p><b>effective</b>: 2026-05-12 11:00:00+0200</p><p><b>performer</b>: Pflegefachkraft Station 14i</p><p><b>value</b>: 37 Grad Celsius<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeCel = 'Cel')</span></p></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "vital-signs"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "8310-5",
+          "display" : "Body temperature"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-isik-vitalparameter-patient-1"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-isik-vitalparameter-encounter-1"
+      },
+      "effectiveDateTime" : "2026-05-12T11:00:00+02:00",
+      "performer" : [{
+        "display" : "Pflegefachkraft Station 14i"
+      }],
+      "valueQuantity" : {
+        "value" : 37,
+        "unit" : "Grad Celsius",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "Cel"
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-isik-vitalparameter-temp-generisch-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-isik-vitalparameter-temp-atemwege-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-isik-vitalparameter-temp-atemwege-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-atemwege"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-isik-vitalparameter-temp-atemwege-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-isik-vitalparameter-temp-atemwege-1</b></p><a name=\"mii-exa-test-data-isik-vitalparameter-temp-atemwege-1\"> </a><a name=\"hcmii-exa-test-data-isik-vitalparameter-temp-atemwege-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.icu@2027.0.0-ballot.3&amp;canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-atemwege\">SD MII ICU Koerpertemperatur Atemwege</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 8310-5}, {urn:iso:std:iso:11073:10101 150356}, {http://loinc.org 60955-2}\">Body temperature</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-isik-vitalparameter-patient-1.html\">Viktoria Vogel  Female, DoB: 1968-04-17 ( https://www.charite.de/fhir/sid/patientenidentifikation#ISIK-VITAL-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-isik-vitalparameter-encounter-1.html\">Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2026-05-11 --&gt; 2026-05-14</a></p><p><b>effective</b>: 2026-05-12 11:00:00+0200</p><p><b>performer</b>: Pflegefachkraft Station 14i</p><p><b>value</b>: 36.7 Grad Celsius<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeCel = 'Cel')</span></p><p><b>bodySite</b>: <span title=\"Codes:{http://snomed.info/sct 89187006}\">Airway structure (body structure)</span></p></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "vital-signs"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "8310-5",
+          "display" : "Body temperature"
+        },
+        {
+          "system" : "urn:iso:std:iso:11073:10101",
+          "code" : "150356"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "60955-2",
+          "display" : "Airway temperature"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-isik-vitalparameter-patient-1"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-isik-vitalparameter-encounter-1"
+      },
+      "effectiveDateTime" : "2026-05-12T11:00:00+02:00",
+      "performer" : [{
+        "display" : "Pflegefachkraft Station 14i"
+      }],
+      "valueQuantity" : {
+        "value" : 36.7,
+        "unit" : "Grad Celsius",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "Cel"
+      },
+      "bodySite" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "89187006",
+          "display" : "Airway structure (body structure)"
+        }]
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-isik-vitalparameter-temp-atemwege-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-isik-vitalparameter-temp-brust-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-isik-vitalparameter-temp-brust-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-brust"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-isik-vitalparameter-temp-brust-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-isik-vitalparameter-temp-brust-1</b></p><a name=\"mii-exa-test-data-isik-vitalparameter-temp-brust-1\"> </a><a name=\"hcmii-exa-test-data-isik-vitalparameter-temp-brust-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.icu@2027.0.0-ballot.3&amp;canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-brust\">SD MII ICU Koerpertemperatur Brust</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 248835004}, {http://loinc.org 8310-5}\">Breast temperature (observable entity)</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-isik-vitalparameter-patient-1.html\">Viktoria Vogel  Female, DoB: 1968-04-17 ( https://www.charite.de/fhir/sid/patientenidentifikation#ISIK-VITAL-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-isik-vitalparameter-encounter-1.html\">Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2026-05-11 --&gt; 2026-05-14</a></p><p><b>effective</b>: 2026-05-12 11:00:00+0200</p><p><b>performer</b>: Pflegefachkraft Station 14i</p><p><b>value</b>: 36.4 Grad Celsius<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeCel = 'Cel')</span></p><p><b>bodySite</b>: <span title=\"Codes:{http://snomed.info/sct 76752008}\">Breast structure (body structure)</span></p></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "vital-signs"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "248835004",
+          "display" : "Breast temperature (observable entity)"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "8310-5",
+          "display" : "Body temperature"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-isik-vitalparameter-patient-1"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-isik-vitalparameter-encounter-1"
+      },
+      "effectiveDateTime" : "2026-05-12T11:00:00+02:00",
+      "performer" : [{
+        "display" : "Pflegefachkraft Station 14i"
+      }],
+      "valueQuantity" : {
+        "value" : 36.4,
+        "unit" : "Grad Celsius",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "Cel"
+      },
+      "bodySite" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "76752008",
+          "display" : "Breast structure (body structure)"
+        }]
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-isik-vitalparameter-temp-brust-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-isik-vitalparameter-temp-bws-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-isik-vitalparameter-temp-bws-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-brustwirbelsaeule"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-isik-vitalparameter-temp-bws-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-isik-vitalparameter-temp-bws-1</b></p><a name=\"mii-exa-test-data-isik-vitalparameter-temp-bws-1\"> </a><a name=\"hcmii-exa-test-data-isik-vitalparameter-temp-bws-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.icu@2027.0.0-ballot.3&amp;canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-brustwirbelsaeule\">SD MII ICU Koerpertemperatur Brustwirbelsaeule</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 364424001}, {http://loinc.org 8310-5}\">Thoracic spine temperature (observable entity)</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-isik-vitalparameter-patient-1.html\">Viktoria Vogel  Female, DoB: 1968-04-17 ( https://www.charite.de/fhir/sid/patientenidentifikation#ISIK-VITAL-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-isik-vitalparameter-encounter-1.html\">Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2026-05-11 --&gt; 2026-05-14</a></p><p><b>effective</b>: 2026-05-12 11:00:00+0200</p><p><b>performer</b>: Pflegefachkraft Station 14i</p><p><b>value</b>: 36.9 Grad Celsius<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeCel = 'Cel')</span></p><p><b>bodySite</b>: <span title=\"Codes:{http://snomed.info/sct 122495006}\">Thoracic vertebral column structure (body structure)</span></p></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "vital-signs"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "364424001",
+          "display" : "Thoracic spine temperature (observable entity)"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "8310-5",
+          "display" : "Body temperature"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-isik-vitalparameter-patient-1"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-isik-vitalparameter-encounter-1"
+      },
+      "effectiveDateTime" : "2026-05-12T11:00:00+02:00",
+      "performer" : [{
+        "display" : "Pflegefachkraft Station 14i"
+      }],
+      "valueQuantity" : {
+        "value" : 36.9,
+        "unit" : "Grad Celsius",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "Cel"
+      },
+      "bodySite" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "122495006",
+          "display" : "Thoracic vertebral column structure (body structure)"
+        }]
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-isik-vitalparameter-temp-bws-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-isik-vitalparameter-temp-gelenk-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-isik-vitalparameter-temp-gelenk-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-gelenk"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-isik-vitalparameter-temp-gelenk-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-isik-vitalparameter-temp-gelenk-1</b></p><a name=\"mii-exa-test-data-isik-vitalparameter-temp-gelenk-1\"> </a><a name=\"hcmii-exa-test-data-isik-vitalparameter-temp-gelenk-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.icu@2027.0.0-ballot.3&amp;canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-gelenk\">SD MII ICU Koerpertemperatur Gelenk</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 250124002}, {http://loinc.org 8310-5}\">Joint temperature (observable entity)</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-isik-vitalparameter-patient-1.html\">Viktoria Vogel  Female, DoB: 1968-04-17 ( https://www.charite.de/fhir/sid/patientenidentifikation#ISIK-VITAL-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-isik-vitalparameter-encounter-1.html\">Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2026-05-11 --&gt; 2026-05-14</a></p><p><b>effective</b>: 2026-05-12 11:05:00+0200</p><p><b>performer</b>: Pflegefachkraft Station 14i</p><p><b>value</b>: 35.8 Grad Celsius<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeCel = 'Cel')</span></p><p><b>bodySite</b>: <span title=\"Codes:{http://snomed.info/sct 39352004}\">Joint structure (body structure)</span></p></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "vital-signs"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "250124002",
+          "display" : "Joint temperature (observable entity)"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "8310-5",
+          "display" : "Body temperature"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-isik-vitalparameter-patient-1"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-isik-vitalparameter-encounter-1"
+      },
+      "effectiveDateTime" : "2026-05-12T11:05:00+02:00",
+      "performer" : [{
+        "display" : "Pflegefachkraft Station 14i"
+      }],
+      "valueQuantity" : {
+        "value" : 35.8,
+        "unit" : "Grad Celsius",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "Cel"
+      },
+      "bodySite" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "39352004",
+          "display" : "Joint structure (body structure)"
+        }]
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-isik-vitalparameter-temp-gelenk-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-isik-vitalparameter-temp-hws-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-isik-vitalparameter-temp-hws-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-halswirbelsaeule"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-isik-vitalparameter-temp-hws-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-isik-vitalparameter-temp-hws-1</b></p><a name=\"mii-exa-test-data-isik-vitalparameter-temp-hws-1\"> </a><a name=\"hcmii-exa-test-data-isik-vitalparameter-temp-hws-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.icu@2027.0.0-ballot.3&amp;canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-halswirbelsaeule\">SD MII ICU Koerpertemperatur Halswirbelsaeule</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 364419004}, {http://loinc.org 8310-5}\">Cervical spine temperature (observable entity)</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-isik-vitalparameter-patient-1.html\">Viktoria Vogel  Female, DoB: 1968-04-17 ( https://www.charite.de/fhir/sid/patientenidentifikation#ISIK-VITAL-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-isik-vitalparameter-encounter-1.html\">Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2026-05-11 --&gt; 2026-05-14</a></p><p><b>effective</b>: 2026-05-12 11:05:00+0200</p><p><b>performer</b>: Pflegefachkraft Station 14i</p><p><b>value</b>: 36.8 Grad Celsius<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeCel = 'Cel')</span></p><p><b>bodySite</b>: <span title=\"Codes:{http://snomed.info/sct 122494005}\">Cervical vertebral column structure (body structure)</span></p></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "vital-signs"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "364419004",
+          "display" : "Cervical spine temperature (observable entity)"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "8310-5",
+          "display" : "Body temperature"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-isik-vitalparameter-patient-1"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-isik-vitalparameter-encounter-1"
+      },
+      "effectiveDateTime" : "2026-05-12T11:05:00+02:00",
+      "performer" : [{
+        "display" : "Pflegefachkraft Station 14i"
+      }],
+      "valueQuantity" : {
+        "value" : 36.8,
+        "unit" : "Grad Celsius",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "Cel"
+      },
+      "bodySite" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "122494005",
+          "display" : "Cervical vertebral column structure (body structure)"
+        }]
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-isik-vitalparameter-temp-hws-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-isik-vitalparameter-temp-lws-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-isik-vitalparameter-temp-lws-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-lendenwirbelsaeule"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-isik-vitalparameter-temp-lws-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-isik-vitalparameter-temp-lws-1</b></p><a name=\"mii-exa-test-data-isik-vitalparameter-temp-lws-1\"> </a><a name=\"hcmii-exa-test-data-isik-vitalparameter-temp-lws-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.icu@2027.0.0-ballot.3&amp;canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-lendenwirbelsaeule\">SD MII ICU Koerpertemperatur Lendenwirbelsaeule</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 364429006}, {http://loinc.org 8310-5}\">Temperature of lumbar spine (observable entity)</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-isik-vitalparameter-patient-1.html\">Viktoria Vogel  Female, DoB: 1968-04-17 ( https://www.charite.de/fhir/sid/patientenidentifikation#ISIK-VITAL-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-isik-vitalparameter-encounter-1.html\">Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2026-05-11 --&gt; 2026-05-14</a></p><p><b>effective</b>: 2026-05-12 11:05:00+0200</p><p><b>performer</b>: Pflegefachkraft Station 14i</p><p><b>value</b>: 36.9 Grad Celsius<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeCel = 'Cel')</span></p><p><b>bodySite</b>: <span title=\"Codes:{http://snomed.info/sct 122496007}\">Lumbar vertebral column structure (body structure)</span></p></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "vital-signs"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "364429006",
+          "display" : "Temperature of lumbar spine (observable entity)"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "8310-5",
+          "display" : "Body temperature"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-isik-vitalparameter-patient-1"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-isik-vitalparameter-encounter-1"
+      },
+      "effectiveDateTime" : "2026-05-12T11:05:00+02:00",
+      "performer" : [{
+        "display" : "Pflegefachkraft Station 14i"
+      }],
+      "valueQuantity" : {
+        "value" : 36.9,
+        "unit" : "Grad Celsius",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "Cel"
+      },
+      "bodySite" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "122496007",
+          "display" : "Lumbar vertebral column structure (body structure)"
+        }]
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-isik-vitalparameter-temp-lws-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-isik-vitalparameter-temp-myokard-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-isik-vitalparameter-temp-myokard-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-myokard"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-isik-vitalparameter-temp-myokard-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-isik-vitalparameter-temp-myokard-1</b></p><a name=\"mii-exa-test-data-isik-vitalparameter-temp-myokard-1\"> </a><a name=\"hcmii-exa-test-data-isik-vitalparameter-temp-myokard-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.icu@2027.0.0-ballot.3&amp;canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-myokard\">SD MII ICU Koerpertemperatur Myokard</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 8310-5}, {urn:iso:std:iso:11073:10101 188500}, {http://loinc.org 61009-7}\">Body temperature</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-isik-vitalparameter-patient-1.html\">Viktoria Vogel  Female, DoB: 1968-04-17 ( https://www.charite.de/fhir/sid/patientenidentifikation#ISIK-VITAL-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-isik-vitalparameter-encounter-1.html\">Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2026-05-11 --&gt; 2026-05-14</a></p><p><b>effective</b>: 2026-05-12 11:05:00+0200</p><p><b>performer</b>: Pflegefachkraft Station 14i</p><p><b>value</b>: 37 Grad Celsius<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeCel = 'Cel')</span></p><p><b>bodySite</b>: <span title=\"Codes:{http://snomed.info/sct 74281007}\">Myocardium structure (body structure)</span></p></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "vital-signs"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "8310-5",
+          "display" : "Body temperature"
+        },
+        {
+          "system" : "urn:iso:std:iso:11073:10101",
+          "code" : "188500"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "61009-7",
+          "display" : "Myocardium temperature"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-isik-vitalparameter-patient-1"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-isik-vitalparameter-encounter-1"
+      },
+      "effectiveDateTime" : "2026-05-12T11:05:00+02:00",
+      "performer" : [{
+        "display" : "Pflegefachkraft Station 14i"
+      }],
+      "valueQuantity" : {
+        "value" : 37,
+        "unit" : "Grad Celsius",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "Cel"
+      },
+      "bodySite" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "74281007",
+          "display" : "Myocardium structure (body structure)"
+        }]
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-isik-vitalparameter-temp-myokard-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-isik-vitalparameter-temp-nasal-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-isik-vitalparameter-temp-nasal-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-nasal"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-isik-vitalparameter-temp-nasal-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-isik-vitalparameter-temp-nasal-1</b></p><a name=\"mii-exa-test-data-isik-vitalparameter-temp-nasal-1\"> </a><a name=\"hcmii-exa-test-data-isik-vitalparameter-temp-nasal-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.icu@2027.0.0-ballot.3&amp;canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-nasal\">SD MII ICU Koerpertemperatur nasal</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 8310-5}, {urn:iso:std:iso:11073:10101 188504}, {http://loinc.org 76010-8}\">Body temperature</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-isik-vitalparameter-patient-1.html\">Viktoria Vogel  Female, DoB: 1968-04-17 ( https://www.charite.de/fhir/sid/patientenidentifikation#ISIK-VITAL-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-isik-vitalparameter-encounter-1.html\">Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2026-05-11 --&gt; 2026-05-14</a></p><p><b>effective</b>: 2026-05-12 11:10:00+0200</p><p><b>performer</b>: Pflegefachkraft Station 14i</p><p><b>value</b>: 36.5 Grad Celsius<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeCel = 'Cel')</span></p><p><b>bodySite</b>: <span title=\"Codes:{http://snomed.info/sct 45206002}\">Nasal structure (body structure)</span></p></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "vital-signs"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "8310-5",
+          "display" : "Body temperature"
+        },
+        {
+          "system" : "urn:iso:std:iso:11073:10101",
+          "code" : "188504"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "76010-8",
+          "display" : "Nasal temperature"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-isik-vitalparameter-patient-1"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-isik-vitalparameter-encounter-1"
+      },
+      "effectiveDateTime" : "2026-05-12T11:10:00+02:00",
+      "performer" : [{
+        "display" : "Pflegefachkraft Station 14i"
+      }],
+      "valueQuantity" : {
+        "value" : 36.5,
+        "unit" : "Grad Celsius",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "Cel"
+      },
+      "bodySite" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "45206002",
+          "display" : "Nasal structure (body structure)"
+        }]
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-isik-vitalparameter-temp-nasal-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-isik-vitalparameter-temp-nasopharynx-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-isik-vitalparameter-temp-nasopharynx-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-nasen-rachen-raum"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-isik-vitalparameter-temp-nasopharynx-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-isik-vitalparameter-temp-nasopharynx-1</b></p><a name=\"mii-exa-test-data-isik-vitalparameter-temp-nasopharynx-1\"> </a><a name=\"hcmii-exa-test-data-isik-vitalparameter-temp-nasopharynx-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.icu@2027.0.0-ballot.3&amp;canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-nasen-rachen-raum\">SD MII ICU Koerpertemperatur Nasen-Rachen-Raum</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 698831002}, {http://loinc.org 8310-5}, {urn:iso:std:iso:11073:10101 150380}, {http://loinc.org 60838-0}\">Core body temperature measured at nasopharynx (observable entity)</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-isik-vitalparameter-patient-1.html\">Viktoria Vogel  Female, DoB: 1968-04-17 ( https://www.charite.de/fhir/sid/patientenidentifikation#ISIK-VITAL-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-isik-vitalparameter-encounter-1.html\">Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2026-05-11 --&gt; 2026-05-14</a></p><p><b>effective</b>: 2026-05-12 11:10:00+0200</p><p><b>performer</b>: Pflegefachkraft Station 14i</p><p><b>value</b>: 36.9 Grad Celsius<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeCel = 'Cel')</span></p><p><b>bodySite</b>: <span title=\"Codes:{http://snomed.info/sct 71836000}\">Nasopharyngeal structure (body structure)</span></p></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "vital-signs"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "698831002",
+          "display" : "Core body temperature measured at nasopharynx (observable entity)"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "8310-5",
+          "display" : "Body temperature"
+        },
+        {
+          "system" : "urn:iso:std:iso:11073:10101",
+          "code" : "150380"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "60838-0",
+          "display" : "Nasopharyngeal temperature"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-isik-vitalparameter-patient-1"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-isik-vitalparameter-encounter-1"
+      },
+      "effectiveDateTime" : "2026-05-12T11:10:00+02:00",
+      "performer" : [{
+        "display" : "Pflegefachkraft Station 14i"
+      }],
+      "valueQuantity" : {
+        "value" : 36.9,
+        "unit" : "Grad Celsius",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "Cel"
+      },
+      "bodySite" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "71836000",
+          "display" : "Nasopharyngeal structure (body structure)"
+        }]
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-isik-vitalparameter-temp-nasopharynx-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-isik-vitalparameter-temp-stirn-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-isik-vitalparameter-temp-stirn-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-stirn"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-isik-vitalparameter-temp-stirn-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-isik-vitalparameter-temp-stirn-1</b></p><a name=\"mii-exa-test-data-isik-vitalparameter-temp-stirn-1\"> </a><a name=\"hcmii-exa-test-data-isik-vitalparameter-temp-stirn-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.icu@2027.0.0-ballot.3&amp;canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-stirn\">SD MII ICU Koerpertemperatur Stirn</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 415922000}, {http://loinc.org 8310-5}\">Forehead temperature (observable entity)</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-isik-vitalparameter-patient-1.html\">Viktoria Vogel  Female, DoB: 1968-04-17 ( https://www.charite.de/fhir/sid/patientenidentifikation#ISIK-VITAL-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-isik-vitalparameter-encounter-1.html\">Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2026-05-11 --&gt; 2026-05-14</a></p><p><b>effective</b>: 2026-05-12 11:10:00+0200</p><p><b>performer</b>: Pflegefachkraft Station 14i</p><p><b>value</b>: 36.3 Grad Celsius<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeCel = 'Cel')</span></p><p><b>bodySite</b>: <span title=\"Codes:{http://snomed.info/sct 52795006}\">Forehead structure (body structure)</span></p></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "vital-signs"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "415922000",
+          "display" : "Forehead temperature (observable entity)"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "8310-5",
+          "display" : "Body temperature"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-isik-vitalparameter-patient-1"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-isik-vitalparameter-encounter-1"
+      },
+      "effectiveDateTime" : "2026-05-12T11:10:00+02:00",
+      "performer" : [{
+        "display" : "Pflegefachkraft Station 14i"
+      }],
+      "valueQuantity" : {
+        "value" : 36.3,
+        "unit" : "Grad Celsius",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "Cel"
+      },
+      "bodySite" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "52795006",
+          "display" : "Forehead structure (body structure)"
+        }]
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-isik-vitalparameter-temp-stirn-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-isik-vitalparameter-temp-kern-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-isik-vitalparameter-temp-kern-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-kern"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-isik-vitalparameter-temp-kern-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-isik-vitalparameter-temp-kern-1</b></p><a name=\"mii-exa-test-data-isik-vitalparameter-temp-kern-1\"> </a><a name=\"hcmii-exa-test-data-isik-vitalparameter-temp-kern-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.icu@2027.0.0-ballot.3&amp;canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-kern\">SD MII ICU Koerpertemperatur Kern</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 8310-5}, {http://loinc.org 8329-5}, {http://snomed.info/sct 276885007}, {urn:iso:std:iso:11073:10101 150364}\">Body temperature</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-isik-vitalparameter-patient-1.html\">Viktoria Vogel  Female, DoB: 1968-04-17 ( https://www.charite.de/fhir/sid/patientenidentifikation#ISIK-VITAL-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-isik-vitalparameter-encounter-1.html\">Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2026-05-11 --&gt; 2026-05-14</a></p><p><b>effective</b>: 2026-05-12 11:15:00+0200</p><p><b>performer</b>: Pflegefachkraft Station 14i</p><p><b>value</b>: 37.2 Grad Celsius<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeCel = 'Cel')</span></p></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "vital-signs"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "8310-5",
+          "display" : "Body temperature"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "8329-5",
+          "display" : "Body temperature - Core"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "276885007",
+          "display" : "Core body temperature (observable entity)"
+        },
+        {
+          "system" : "urn:iso:std:iso:11073:10101",
+          "code" : "150364"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-isik-vitalparameter-patient-1"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-isik-vitalparameter-encounter-1"
+      },
+      "effectiveDateTime" : "2026-05-12T11:15:00+02:00",
+      "performer" : [{
+        "display" : "Pflegefachkraft Station 14i"
+      }],
+      "valueQuantity" : {
+        "value" : 37.2,
+        "unit" : "Grad Celsius",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "Cel"
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-isik-vitalparameter-temp-kern-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-isik-vitalparameter-temp-rektal-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-isik-vitalparameter-temp-rektal-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-rektal"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-isik-vitalparameter-temp-rektal-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-isik-vitalparameter-temp-rektal-1</b></p><a name=\"mii-exa-test-data-isik-vitalparameter-temp-rektal-1\"> </a><a name=\"hcmii-exa-test-data-isik-vitalparameter-temp-rektal-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.icu@2027.0.0-ballot.3&amp;canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-rektal\">SD MII ICU Koerpertemperatur rektal</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 8310-5}, {http://loinc.org 8329-5}, {http://snomed.info/sct 307047009}, {http://loinc.org 8332-9}, {urn:iso:std:iso:11073:10101 188420}\">Body temperature</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-isik-vitalparameter-patient-1.html\">Viktoria Vogel  Female, DoB: 1968-04-17 ( https://www.charite.de/fhir/sid/patientenidentifikation#ISIK-VITAL-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-isik-vitalparameter-encounter-1.html\">Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2026-05-11 --&gt; 2026-05-14</a></p><p><b>effective</b>: 2026-05-12 11:15:00+0200</p><p><b>performer</b>: Pflegefachkraft Station 14i</p><p><b>value</b>: 37.6 Grad Celsius<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeCel = 'Cel')</span></p><p><b>bodySite</b>: <span title=\"Codes:{http://snomed.info/sct 34402009}\">Rectum structure (body structure)</span></p></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "vital-signs"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "8310-5",
+          "display" : "Body temperature"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "8329-5",
+          "display" : "Body temperature - Core"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "307047009",
+          "display" : "Rectal temperature (observable entity)"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "8332-9",
+          "display" : "Rectal temperature"
+        },
+        {
+          "system" : "urn:iso:std:iso:11073:10101",
+          "code" : "188420"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-isik-vitalparameter-patient-1"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-isik-vitalparameter-encounter-1"
+      },
+      "effectiveDateTime" : "2026-05-12T11:15:00+02:00",
+      "performer" : [{
+        "display" : "Pflegefachkraft Station 14i"
+      }],
+      "valueQuantity" : {
+        "value" : 37.6,
+        "unit" : "Grad Celsius",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "Cel"
+      },
+      "bodySite" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "34402009",
+          "display" : "Rectum structure (body structure)"
+        }]
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-isik-vitalparameter-temp-rektal-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-isik-vitalparameter-temp-blut-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-isik-vitalparameter-temp-blut-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-blut"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-isik-vitalparameter-temp-blut-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-isik-vitalparameter-temp-blut-1</b></p><a name=\"mii-exa-test-data-isik-vitalparameter-temp-blut-1\"> </a><a name=\"hcmii-exa-test-data-isik-vitalparameter-temp-blut-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.icu@2027.0.0-ballot.3&amp;canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-blut\">SD MII ICU Koerpertemperatur Blut</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 8310-5}, {http://loinc.org 8329-5}, {http://snomed.info/sct 1222808002}, {http://loinc.org 60834-9}, {urn:iso:std:iso:11073:10101 188436}\">Body temperature</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-isik-vitalparameter-patient-1.html\">Viktoria Vogel  Female, DoB: 1968-04-17 ( https://www.charite.de/fhir/sid/patientenidentifikation#ISIK-VITAL-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-isik-vitalparameter-encounter-1.html\">Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2026-05-11 --&gt; 2026-05-14</a></p><p><b>effective</b>: 2026-05-12 11:15:00+0200</p><p><b>performer</b>: Pflegefachkraft Station 14i</p><p><b>value</b>: 37.3 Grad Celsius<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeCel = 'Cel')</span></p></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "vital-signs"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "8310-5",
+          "display" : "Body temperature"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "8329-5",
+          "display" : "Body temperature - Core"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "1222808002",
+          "display" : "Core body temperature measured in blood (observable entity)"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "60834-9",
+          "display" : "Blood temperature"
+        },
+        {
+          "system" : "urn:iso:std:iso:11073:10101",
+          "code" : "188436"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-isik-vitalparameter-patient-1"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-isik-vitalparameter-encounter-1"
+      },
+      "effectiveDateTime" : "2026-05-12T11:15:00+02:00",
+      "performer" : [{
+        "display" : "Pflegefachkraft Station 14i"
+      }],
+      "valueQuantity" : {
+        "value" : 37.3,
+        "unit" : "Grad Celsius",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "Cel"
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-isik-vitalparameter-temp-blut-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-isik-vitalparameter-temp-achsel-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-isik-vitalparameter-temp-achsel-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-achsel"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-isik-vitalparameter-temp-achsel-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-isik-vitalparameter-temp-achsel-1</b></p><a name=\"mii-exa-test-data-isik-vitalparameter-temp-achsel-1\"> </a><a name=\"hcmii-exa-test-data-isik-vitalparameter-temp-achsel-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.icu@2027.0.0-ballot.3&amp;canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-achsel\">SD MII ICU Koerpertemperatur Achsel</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 8310-5}, {http://loinc.org 8329-5}, {http://snomed.info/sct 415882003}, {http://loinc.org 8328-7}\">Body temperature</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-isik-vitalparameter-patient-1.html\">Viktoria Vogel  Female, DoB: 1968-04-17 ( https://www.charite.de/fhir/sid/patientenidentifikation#ISIK-VITAL-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-isik-vitalparameter-encounter-1.html\">Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2026-05-11 --&gt; 2026-05-14</a></p><p><b>effective</b>: 2026-05-12 11:20:00+0200</p><p><b>performer</b>: Pflegefachkraft Station 14i</p><p><b>value</b>: 36.6 Grad Celsius<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeCel = 'Cel')</span></p><p><b>bodySite</b>: <span title=\"Codes:{http://snomed.info/sct 91470000}\">Axillary fossa structure (body structure)</span></p></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "vital-signs"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "8310-5",
+          "display" : "Body temperature"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "8329-5",
+          "display" : "Body temperature - Core"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "415882003",
+          "display" : "Axillary temperature (observable entity)"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "8328-7",
+          "display" : "Axillary temperature"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-isik-vitalparameter-patient-1"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-isik-vitalparameter-encounter-1"
+      },
+      "effectiveDateTime" : "2026-05-12T11:20:00+02:00",
+      "performer" : [{
+        "display" : "Pflegefachkraft Station 14i"
+      }],
+      "valueQuantity" : {
+        "value" : 36.6,
+        "unit" : "Grad Celsius",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "Cel"
+      },
+      "bodySite" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "91470000",
+          "display" : "Axillary fossa structure (body structure)"
+        }]
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-isik-vitalparameter-temp-achsel-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-isik-vitalparameter-temp-harnblase-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-isik-vitalparameter-temp-harnblase-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-harnblase"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-isik-vitalparameter-temp-harnblase-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-isik-vitalparameter-temp-harnblase-1</b></p><a name=\"mii-exa-test-data-isik-vitalparameter-temp-harnblase-1\"> </a><a name=\"hcmii-exa-test-data-isik-vitalparameter-temp-harnblase-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.icu@2027.0.0-ballot.3&amp;canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-harnblase\">SD MII ICU Koerpertemperatur Harnblase</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 8310-5}, {http://loinc.org 8329-5}, {http://snomed.info/sct 698832009}, {http://loinc.org 8334-5}\">Body temperature</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-isik-vitalparameter-patient-1.html\">Viktoria Vogel  Female, DoB: 1968-04-17 ( https://www.charite.de/fhir/sid/patientenidentifikation#ISIK-VITAL-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-isik-vitalparameter-encounter-1.html\">Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2026-05-11 --&gt; 2026-05-14</a></p><p><b>effective</b>: 2026-05-12 11:20:00+0200</p><p><b>performer</b>: Pflegefachkraft Station 14i</p><p><b>value</b>: 37.4 Grad Celsius<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeCel = 'Cel')</span></p><p><b>bodySite</b>: <span title=\"Codes:{http://snomed.info/sct 89837001}\">Urinary bladder structure (body structure)</span></p></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "vital-signs"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "8310-5",
+          "display" : "Body temperature"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "8329-5",
+          "display" : "Body temperature - Core"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "698832009",
+          "display" : "Core body temperature measured in urinary bladder (observable entity)"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "8334-5",
+          "display" : "Body temperature - Urinary bladder"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-isik-vitalparameter-patient-1"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-isik-vitalparameter-encounter-1"
+      },
+      "effectiveDateTime" : "2026-05-12T11:20:00+02:00",
+      "performer" : [{
+        "display" : "Pflegefachkraft Station 14i"
+      }],
+      "valueQuantity" : {
+        "value" : 37.4,
+        "unit" : "Grad Celsius",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "Cel"
+      },
+      "bodySite" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "89837001",
+          "display" : "Urinary bladder structure (body structure)"
+        }]
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-isik-vitalparameter-temp-harnblase-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-isik-vitalparameter-temp-leiste-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-isik-vitalparameter-temp-leiste-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-leiste"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-isik-vitalparameter-temp-leiste-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-isik-vitalparameter-temp-leiste-1</b></p><a name=\"mii-exa-test-data-isik-vitalparameter-temp-leiste-1\"> </a><a name=\"hcmii-exa-test-data-isik-vitalparameter-temp-leiste-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.icu@2027.0.0-ballot.3&amp;canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-leiste\">SD MII ICU Koerpertemperatur Leiste</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 8310-5}, {http://loinc.org 8329-5}, {http://snomed.info/sct 415929009}, {http://loinc.org 104063-3}\">Body temperature</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-isik-vitalparameter-patient-1.html\">Viktoria Vogel  Female, DoB: 1968-04-17 ( https://www.charite.de/fhir/sid/patientenidentifikation#ISIK-VITAL-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-isik-vitalparameter-encounter-1.html\">Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2026-05-11 --&gt; 2026-05-14</a></p><p><b>effective</b>: 2026-05-12 11:20:00+0200</p><p><b>performer</b>: Pflegefachkraft Station 14i</p><p><b>value</b>: 36.8 Grad Celsius<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeCel = 'Cel')</span></p><p><b>bodySite</b>: <span title=\"Codes:{http://snomed.info/sct 26893007}\">Inguinal region structure (body structure)</span></p></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "vital-signs"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "8310-5",
+          "display" : "Body temperature"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "8329-5",
+          "display" : "Body temperature - Core"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "415929009",
+          "display" : "Groin temperature (observable entity)"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "104063-3",
+          "display" : "Groin temperature"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-isik-vitalparameter-patient-1"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-isik-vitalparameter-encounter-1"
+      },
+      "effectiveDateTime" : "2026-05-12T11:20:00+02:00",
+      "performer" : [{
+        "display" : "Pflegefachkraft Station 14i"
+      }],
+      "valueQuantity" : {
+        "value" : 36.8,
+        "unit" : "Grad Celsius",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "Cel"
+      },
+      "bodySite" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "26893007",
+          "display" : "Inguinal region structure (body structure)"
+        }]
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-isik-vitalparameter-temp-leiste-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-isik-vitalparameter-temp-oesophagus-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-isik-vitalparameter-temp-oesophagus-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-speiseroehre"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-isik-vitalparameter-temp-oesophagus-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-isik-vitalparameter-temp-oesophagus-1</b></p><a name=\"mii-exa-test-data-isik-vitalparameter-temp-oesophagus-1\"> </a><a name=\"hcmii-exa-test-data-isik-vitalparameter-temp-oesophagus-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.icu@2027.0.0-ballot.3&amp;canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-speiseroehre\">SD MII ICU Koerpertemperatur Speiseroehre</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 8310-5}, {http://loinc.org 8329-5}, {http://snomed.info/sct 431598003}, {http://loinc.org 60836-4}, {urn:iso:std:iso:11073:10101 150372}\">Body temperature</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-isik-vitalparameter-patient-1.html\">Viktoria Vogel  Female, DoB: 1968-04-17 ( https://www.charite.de/fhir/sid/patientenidentifikation#ISIK-VITAL-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-isik-vitalparameter-encounter-1.html\">Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2026-05-11 --&gt; 2026-05-14</a></p><p><b>effective</b>: 2026-05-12 11:25:00+0200</p><p><b>performer</b>: Pflegefachkraft Station 14i</p><p><b>value</b>: 37.3 Grad Celsius<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeCel = 'Cel')</span></p><p><b>bodySite</b>: <span title=\"Codes:{http://snomed.info/sct 32849002}\">Esophageal structure (body structure)</span></p></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "vital-signs"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "8310-5",
+          "display" : "Body temperature"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "8329-5",
+          "display" : "Body temperature - Core"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "431598003",
+          "display" : "Core body temperature measured in esophagus (observable entity)"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "60836-4",
+          "display" : "Esophageal temperature"
+        },
+        {
+          "system" : "urn:iso:std:iso:11073:10101",
+          "code" : "150372"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-isik-vitalparameter-patient-1"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-isik-vitalparameter-encounter-1"
+      },
+      "effectiveDateTime" : "2026-05-12T11:25:00+02:00",
+      "performer" : [{
+        "display" : "Pflegefachkraft Station 14i"
+      }],
+      "valueQuantity" : {
+        "value" : 37.3,
+        "unit" : "Grad Celsius",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "Cel"
+      },
+      "bodySite" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "32849002",
+          "display" : "Esophageal structure (body structure)"
+        }]
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-isik-vitalparameter-temp-oesophagus-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-isik-vitalparameter-temp-trommelfell-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-isik-vitalparameter-temp-trommelfell-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-trommelfell"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-isik-vitalparameter-temp-trommelfell-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-isik-vitalparameter-temp-trommelfell-1</b></p><a name=\"mii-exa-test-data-isik-vitalparameter-temp-trommelfell-1\"> </a><a name=\"hcmii-exa-test-data-isik-vitalparameter-temp-trommelfell-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.icu@2027.0.0-ballot.3&amp;canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-trommelfell\">SD MII ICU Koerpertemperatur Trommelfell</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 8310-5}, {http://loinc.org 8329-5}, {http://snomed.info/sct 415974002}, {http://loinc.org 8333-7}, {urn:iso:std:iso:11073:10101 150392}\">Body temperature</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-isik-vitalparameter-patient-1.html\">Viktoria Vogel  Female, DoB: 1968-04-17 ( https://www.charite.de/fhir/sid/patientenidentifikation#ISIK-VITAL-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-isik-vitalparameter-encounter-1.html\">Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2026-05-11 --&gt; 2026-05-14</a></p><p><b>effective</b>: 2026-05-12 11:25:00+0200</p><p><b>performer</b>: Pflegefachkraft Station 14i</p><p><b>value</b>: 37.1 Grad Celsius<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeCel = 'Cel')</span></p><p><b>bodySite</b>: <span title=\"Codes:{http://snomed.info/sct 42859004}\">Tympanic membrane structure (body structure)</span></p></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "vital-signs"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "8310-5",
+          "display" : "Body temperature"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "8329-5",
+          "display" : "Body temperature - Core"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "415974002",
+          "display" : "Core body temperature measured at tympanic membrane (observable entity)"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "8333-7",
+          "display" : "Tympanic membrane temperature"
+        },
+        {
+          "system" : "urn:iso:std:iso:11073:10101",
+          "code" : "150392"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-isik-vitalparameter-patient-1"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-isik-vitalparameter-encounter-1"
+      },
+      "effectiveDateTime" : "2026-05-12T11:25:00+02:00",
+      "performer" : [{
+        "display" : "Pflegefachkraft Station 14i"
+      }],
+      "valueQuantity" : {
+        "value" : 37.1,
+        "unit" : "Grad Celsius",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "Cel"
+      },
+      "bodySite" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "42859004",
+          "display" : "Tympanic membrane structure (body structure)"
+        }]
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-isik-vitalparameter-temp-trommelfell-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-isik-vitalparameter-temp-sublingual-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-isik-vitalparameter-temp-sublingual-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-unter-der-zunge"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-isik-vitalparameter-temp-sublingual-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-isik-vitalparameter-temp-sublingual-1</b></p><a name=\"mii-exa-test-data-isik-vitalparameter-temp-sublingual-1\"> </a><a name=\"hcmii-exa-test-data-isik-vitalparameter-temp-sublingual-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.icu@2027.0.0-ballot.3&amp;canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-unter-der-zunge\">SD MII ICU Koerpertemperatur unter der Zunge</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 8310-5}, {http://loinc.org 8329-5}, {http://snomed.info/sct 415945006}, {http://loinc.org 8331-1}, {urn:iso:std:iso:11073:10101 188424}\">Body temperature</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-isik-vitalparameter-patient-1.html\">Viktoria Vogel  Female, DoB: 1968-04-17 ( https://www.charite.de/fhir/sid/patientenidentifikation#ISIK-VITAL-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-isik-vitalparameter-encounter-1.html\">Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2026-05-11 --&gt; 2026-05-14</a></p><p><b>effective</b>: 2026-05-12 11:25:00+0200</p><p><b>performer</b>: Pflegefachkraft Station 14i</p><p><b>value</b>: 36.9 Grad Celsius<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeCel = 'Cel')</span></p><p><b>bodySite</b>: <span title=\"Codes:{http://snomed.info/sct 123851003}\">Region of oral cavity (body structure)</span></p></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "vital-signs"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "8310-5",
+          "display" : "Body temperature"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "8329-5",
+          "display" : "Body temperature - Core"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "415945006",
+          "display" : "Oral temperature (observable entity)"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "8331-1",
+          "display" : "Oral temperature"
+        },
+        {
+          "system" : "urn:iso:std:iso:11073:10101",
+          "code" : "188424"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-isik-vitalparameter-patient-1"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-isik-vitalparameter-encounter-1"
+      },
+      "effectiveDateTime" : "2026-05-12T11:25:00+02:00",
+      "performer" : [{
+        "display" : "Pflegefachkraft Station 14i"
+      }],
+      "valueQuantity" : {
+        "value" : 36.9,
+        "unit" : "Grad Celsius",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "Cel"
+      },
+      "bodySite" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "123851003",
+          "display" : "Region of oral cavity (body structure)"
+        }]
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-isik-vitalparameter-temp-sublingual-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-isik-vitalparameter-temp-vaginal-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-isik-vitalparameter-temp-vaginal-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-vaginal"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-isik-vitalparameter-temp-vaginal-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-isik-vitalparameter-temp-vaginal-1</b></p><a name=\"mii-exa-test-data-isik-vitalparameter-temp-vaginal-1\"> </a><a name=\"hcmii-exa-test-data-isik-vitalparameter-temp-vaginal-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.icu@2027.0.0-ballot.3&amp;canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-vaginal\">SD MII ICU Koerpertemperatur vaginal</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 8310-5}, {http://loinc.org 8329-5}, {http://snomed.info/sct 364246006}\">Body temperature</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-isik-vitalparameter-patient-1.html\">Viktoria Vogel  Female, DoB: 1968-04-17 ( https://www.charite.de/fhir/sid/patientenidentifikation#ISIK-VITAL-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-isik-vitalparameter-encounter-1.html\">Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2026-05-11 --&gt; 2026-05-14</a></p><p><b>effective</b>: 2026-05-12 11:30:00+0200</p><p><b>performer</b>: Pflegefachkraft Station 14i</p><p><b>value</b>: 37.2 Grad Celsius<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeCel = 'Cel')</span></p><p><b>bodySite</b>: <span title=\"Codes:{http://snomed.info/sct 76784001}\">Vaginal structure (body structure)</span></p></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "vital-signs"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "8310-5",
+          "display" : "Body temperature"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "8329-5",
+          "display" : "Body temperature - Core"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "364246006",
+          "display" : "Vaginal temperature (observable entity)"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-isik-vitalparameter-patient-1"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-isik-vitalparameter-encounter-1"
+      },
+      "effectiveDateTime" : "2026-05-12T11:30:00+02:00",
+      "performer" : [{
+        "display" : "Pflegefachkraft Station 14i"
+      }],
+      "valueQuantity" : {
+        "value" : 37.2,
+        "unit" : "Grad Celsius",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "Cel"
+      },
+      "bodySite" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "76784001",
+          "display" : "Vaginal structure (body structure)"
+        }]
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-isik-vitalparameter-temp-vaginal-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-isik-vitalparameter-kerntemp-stirn-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-isik-vitalparameter-kerntemp-stirn-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerperkerntemperatur-stirn"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-isik-vitalparameter-kerntemp-stirn-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-isik-vitalparameter-kerntemp-stirn-1</b></p><a name=\"mii-exa-test-data-isik-vitalparameter-kerntemp-stirn-1\"> </a><a name=\"hcmii-exa-test-data-isik-vitalparameter-kerntemp-stirn-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.icu@2027.0.0-ballot.3&amp;canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerperkerntemperatur-stirn\">SD MII ICU Koerperkerntemperatur Stirn</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 8310-5}, {http://loinc.org 8329-5}, {http://snomed.info/sct 1366425007}\">Body temperature</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-isik-vitalparameter-patient-1.html\">Viktoria Vogel  Female, DoB: 1968-04-17 ( https://www.charite.de/fhir/sid/patientenidentifikation#ISIK-VITAL-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-isik-vitalparameter-encounter-1.html\">Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2026-05-11 --&gt; 2026-05-14</a></p><p><b>effective</b>: 2026-05-12 11:30:00+0200</p><p><b>performer</b>: Pflegefachkraft Station 14i</p><p><b>value</b>: 36.9 Grad Celsius<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeCel = 'Cel')</span></p><p><b>bodySite</b>: <span title=\"Codes:{http://snomed.info/sct 52795006}\">Forehead structure (body structure)</span></p></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "vital-signs"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "8310-5",
+          "display" : "Body temperature"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "8329-5",
+          "display" : "Body temperature - Core"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "1366425007",
+          "display" : "Core body temperature measured at forehead (observable entity)"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-isik-vitalparameter-patient-1"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-isik-vitalparameter-encounter-1"
+      },
+      "effectiveDateTime" : "2026-05-12T11:30:00+02:00",
+      "performer" : [{
+        "display" : "Pflegefachkraft Station 14i"
+      }],
+      "valueQuantity" : {
+        "value" : 36.9,
+        "unit" : "Grad Celsius",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "Cel"
+      },
+      "bodySite" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "52795006",
+          "display" : "Forehead structure (body structure)"
+        }]
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-isik-vitalparameter-kerntemp-stirn-1"
+    }
+  }]
+}
+
+```

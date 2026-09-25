@@ -1,0 +1,314 @@
+{
+  "resourceType" : "MedicationRequest",
+  "id" : "mii-exa-test-data-patient-3-seltene-therapieempfehlung-1",
+  "meta" : {
+    "source" : "https://www.charite.de/fhir/kds-testdata",
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-therapieempfehlung"],
+    "security" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "code" : "HTEST",
+      "display" : "test health data"
+    }]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: MedicationRequest mii-exa-test-data-patient-3-seltene-therapieempfehlung-1</b></p><a name=\"mii-exa-test-data-patient-3-seltene-therapieempfehlung-1\"> </a><a name=\"hcmii-exa-test-data-patient-3-seltene-therapieempfehlung-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-therapieempfehlung\">MII PR SE Therapieempfehlung Systemische Therapie</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>MII EX SE Empfehlung Priorität</b>: 1</p><p><b>de/fhir/ext/modul-seltene/StructureDefinition/mii-ex-seltene-empfehlung-evidenzgraduierung</b>: <span title=\"Codes:{https://www.cebm.ox.ac.uk/resources/levels-of-evidence 1A}\">Evidenzgrad 1A</span></p><p><b>MII EX SE Empfehlung Publikation</b>: <code>https://doi.org</code>/10.1016/j.ejphar.2015.03.048</p><p><b>identifier</b>: <code>https://www.charite.de/fhir/sid/therapieempfehlungen</code>/SE-TE-2025-0001</p><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>category</b>: <span title=\"Codes:{https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/CodeSystem/mii-cs-seltene-therapieempfehlung-strategie prevention-medication}\">Präventive Medikation</span>, <span title=\"Codes:{https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/CodeSystem/mii-cs-seltene-therapieempfehlung-typ symptomatic}\">Symptomatisch</span></p><p><b>medication</b>: <span title=\"Codes:{http://fhir.de/CodeSystem/bfarm/atc C09CA01}\">Losartan 50 mg Filmtabletten</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-seltene-patient-1.html\">Luisa Seltenfall  Female, DoB: 1995-02-10 ( https://www.charite.de/fhir/sid/patientenidentifikation#SELT-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-seltene-encounter-1.html\">Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2024-03-01 --&gt; 2024-03-25</a></p><p><b>authoredOn</b>: 2025-03-10</p><p><b>requester</b>: <a href=\"Practitioner-mii-exa-test-data-practitioner-physician-1.html\">Practitioner Rahel Hirsch </a></p><p><b>reasonCode</b>: <span title=\"Codes:{http://snomed.info/sct 19346006}\">Marfan syndrome</span></p><p><b>reasonReference</b>: <a href=\"Condition-mii-exa-test-data-patient-3-seltene-clinical-diagnosis-1.html\">Condition Marfan syndrome</a></p><p><b>basedOn</b>: <a href=\"CarePlan-mii-exa-test-data-patient-3-seltene-therapieplan-1.html\">CarePlan: status = draft; intent = proposal; description = Therapieplan fuer Patient mit Marfan-Syndrom: Medikamentoese Therapie mit Losartan, kardiologische Frueherkennung und Studieneinschluss; created = 2025-03-10</a></p><p><b>note</b>: </p><blockquote><div><p>Zieldosis 50 mg erreicht; Blutdruck- und Aortenwurzel-Kontrolle alle 6 Monate.</p>\n</div></blockquote><blockquote><p><b>dosageInstruction</b></p><p><b>sequence</b>: 1</p><p><b>text</b>: 50mg 1x taeglich morgens</p><p><b>timing</b>: Events: 2025-03-10 08:00:00+0100 , Count 365  times, Duration 5days , 1-2 per 1 day</p><p><b>asNeeded</b>: false</p><p><b>site</b>: <span title=\"Codes:{http://snomed.info/sct 123851003}\">Mouth region structure (body structure)</span></p><p><b>route</b>: <span title=\"Codes:{http://snomed.info/sct 26643006}\">Oral route (qualifier value)</span></p><blockquote><p><b>doseAndRate</b></p><p><b>dose</b>: 50 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span></p><p><b>rate</b>: 50 mg/Tag<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg/d = 'mg/d')</span></p></blockquote><blockquote><p><b>doseAndRate</b></p><p><b>dose</b>: 25-50 mg</p><p><b>rate</b>: 25-50 mg/Tag</p></blockquote><p><b>maxDosePerPeriod</b>: 100 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span>/1 Tag<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  coded = 'd')</span></p><p><b>maxDosePerAdministration</b>: 100 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span></p></blockquote><blockquote><p><b>dosageInstruction</b></p><p><b>sequence</b>: 2</p><p><b>text</b>: Zusaetzliche Einnahme montags 30 Minuten vor dem Fruehstueck bei Blutdruckspitzen, max. alle 1-2 Wochen</p><p><b>timing</b>: 30min , before breakfast, Once per 1-2 week</p><p><b>asNeeded</b>: <span title=\"Codes:{http://snomed.info/sct 38341003}\">Hypertensive disorder, systemic arterial (disorder)</span></p><p><b>route</b>: <span title=\"Codes:{http://snomed.info/sct 26643006}\">Oral route (qualifier value)</span></p><h3>DoseAndRates</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Dose[x]</b></td><td><b>Rate[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>25 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span></td><td>25 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span>/1 Woche<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codewk = 'wk')</span></td></tr></table></blockquote><blockquote><p><b>dosageInstruction</b></p><p><b>sequence</b>: 3</p><p><b>text</b>: Ausschleichen bei Therapieende: 25 mg taeglich ueber 1-2 Wochen</p><p><b>timing</b>: Once per 1 day</p><h3>DoseAndRates</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Dose[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>25 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span></td></tr></table></blockquote><blockquote><p><b>dosageInstruction</b></p><p><b>sequence</b>: 4</p><p><b>text</b>: Begleitende Einnahme im Beobachtungszeitraum der Studie</p><p><b>timing</b>: Once per 1 day</p><h3>DoseAndRates</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Dose[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>50 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span></td></tr></table></blockquote><h3>Substitutions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Allowed[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>true</td></tr></table><p><b>priorPrescription</b>: Losartan 25 mg Aufdosierungsphase (Identifier: <code>https://www.charite.de/fhir/sid/therapieempfehlungen</code>/SE-TE-2024-0117)</p></div>"
+  },
+  "extension" : [{
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-ex-seltene-empfehlung-prioritaet",
+    "valuePositiveInt" : 1
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-ex-seltene-empfehlung-evidenzgraduierung",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "https://www.cebm.ox.ac.uk/resources/levels-of-evidence",
+        "code" : "1A",
+        "display" : "Evidenzgrad 1A"
+      }]
+    }
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-ex-seltene-empfehlung-publikation",
+    "valueIdentifier" : {
+      "system" : "https://doi.org",
+      "value" : "10.1016/j.ejphar.2015.03.048"
+    }
+  }],
+  "identifier" : [{
+    "system" : "https://www.charite.de/fhir/sid/therapieempfehlungen",
+    "value" : "SE-TE-2025-0001"
+  }],
+  "status" : "active",
+  "intent" : "proposal",
+  "category" : [{
+    "coding" : [{
+      "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/CodeSystem/mii-cs-seltene-therapieempfehlung-strategie",
+      "code" : "prevention-medication",
+      "display" : "Präventive Medikation"
+    }]
+  },
+  {
+    "coding" : [{
+      "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/CodeSystem/mii-cs-seltene-therapieempfehlung-typ",
+      "code" : "symptomatic",
+      "display" : "Symptomatisch"
+    }]
+  }],
+  "medicationCodeableConcept" : {
+    "coding" : [{
+      "system" : "http://fhir.de/CodeSystem/bfarm/atc",
+      "version" : "2026",
+      "code" : "C09CA01",
+      "display" : "Losartan"
+    }],
+    "text" : "Losartan 50 mg Filmtabletten"
+  },
+  "subject" : {
+    "reference" : "Patient/mii-exa-test-data-seltene-patient-1"
+  },
+  "encounter" : {
+    "reference" : "Encounter/mii-exa-test-data-seltene-encounter-1"
+  },
+  "authoredOn" : "2025-03-10",
+  "requester" : {
+    "reference" : "Practitioner/mii-exa-test-data-practitioner-physician-1"
+  },
+  "reasonCode" : [{
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "19346006",
+      "display" : "Marfan syndrome"
+    }]
+  }],
+  "reasonReference" : [{
+    "reference" : "Condition/mii-exa-test-data-patient-3-seltene-clinical-diagnosis-1"
+  }],
+  "basedOn" : [{
+    "reference" : "CarePlan/mii-exa-test-data-patient-3-seltene-therapieplan-1"
+  }],
+  "note" : [{
+    "text" : "Zieldosis 50 mg erreicht; Blutdruck- und Aortenwurzel-Kontrolle alle 6 Monate."
+  }],
+  "dosageInstruction" : [{
+    "sequence" : 1,
+    "text" : "50mg 1x taeglich morgens",
+    "timing" : {
+      "event" : ["2025-03-10T08:00:00+01:00"],
+      "repeat" : {
+        "boundsDuration" : {
+          "value" : 12,
+          "unit" : "Monate",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "mo"
+        },
+        "count" : 365,
+        "countMax" : 400,
+        "duration" : 5,
+        "durationMax" : 10,
+        "durationUnit" : "min",
+        "frequency" : 1,
+        "frequencyMax" : 2,
+        "period" : 1,
+        "periodUnit" : "d",
+        "timeOfDay" : ["08:00:00"]
+      }
+    },
+    "asNeededBoolean" : false,
+    "site" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "123851003",
+        "display" : "Mouth region structure (body structure)"
+      }]
+    },
+    "route" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "26643006",
+        "display" : "Oral route (qualifier value)"
+      }]
+    },
+    "doseAndRate" : [{
+      "doseQuantity" : {
+        "value" : 50,
+        "unit" : "mg",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "mg"
+      },
+      "rateQuantity" : {
+        "value" : 50,
+        "unit" : "mg/Tag",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "mg/d"
+      }
+    },
+    {
+      "doseRange" : {
+        "low" : {
+          "value" : 25,
+          "unit" : "mg",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "mg"
+        },
+        "high" : {
+          "value" : 50,
+          "unit" : "mg",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "mg"
+        }
+      },
+      "rateRange" : {
+        "low" : {
+          "value" : 25,
+          "unit" : "mg/Tag",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "mg/d"
+        },
+        "high" : {
+          "value" : 50,
+          "unit" : "mg/Tag",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "mg/d"
+        }
+      }
+    }],
+    "maxDosePerPeriod" : {
+      "numerator" : {
+        "value" : 100,
+        "unit" : "mg",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "mg"
+      },
+      "denominator" : {
+        "value" : 1,
+        "unit" : "Tag",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "d"
+      }
+    },
+    "maxDosePerAdministration" : {
+      "value" : 100,
+      "unit" : "mg",
+      "system" : "http://unitsofmeasure.org",
+      "code" : "mg"
+    }
+  },
+  {
+    "sequence" : 2,
+    "text" : "Zusaetzliche Einnahme montags 30 Minuten vor dem Fruehstueck bei Blutdruckspitzen, max. alle 1-2 Wochen",
+    "timing" : {
+      "repeat" : {
+        "frequency" : 1,
+        "period" : 1,
+        "periodMax" : 2,
+        "periodUnit" : "wk",
+        "dayOfWeek" : ["mon"],
+        "when" : ["ACM"],
+        "offset" : 30
+      }
+    },
+    "asNeededCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "38341003",
+        "display" : "Hypertensive disorder, systemic arterial (disorder)"
+      }]
+    },
+    "route" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "26643006",
+        "display" : "Oral route (qualifier value)"
+      }]
+    },
+    "doseAndRate" : [{
+      "doseQuantity" : {
+        "value" : 25,
+        "unit" : "mg",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "mg"
+      },
+      "rateRatio" : {
+        "numerator" : {
+          "value" : 25,
+          "unit" : "mg",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "mg"
+        },
+        "denominator" : {
+          "value" : 1,
+          "unit" : "Woche",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "wk"
+        }
+      }
+    }]
+  },
+  {
+    "sequence" : 3,
+    "text" : "Ausschleichen bei Therapieende: 25 mg taeglich ueber 1-2 Wochen",
+    "timing" : {
+      "repeat" : {
+        "boundsRange" : {
+          "low" : {
+            "value" : 1,
+            "unit" : "Woche",
+            "system" : "http://unitsofmeasure.org",
+            "code" : "wk"
+          },
+          "high" : {
+            "value" : 2,
+            "unit" : "Wochen",
+            "system" : "http://unitsofmeasure.org",
+            "code" : "wk"
+          }
+        },
+        "frequency" : 1,
+        "period" : 1,
+        "periodUnit" : "d"
+      }
+    },
+    "doseAndRate" : [{
+      "doseQuantity" : {
+        "value" : 25,
+        "unit" : "mg",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "mg"
+      }
+    }]
+  },
+  {
+    "sequence" : 4,
+    "text" : "Begleitende Einnahme im Beobachtungszeitraum der Studie",
+    "timing" : {
+      "repeat" : {
+        "boundsPeriod" : {
+          "start" : "2025-03-10",
+          "end" : "2026-03-09"
+        },
+        "frequency" : 1,
+        "period" : 1,
+        "periodUnit" : "d"
+      }
+    },
+    "doseAndRate" : [{
+      "doseQuantity" : {
+        "value" : 50,
+        "unit" : "mg",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "mg"
+      }
+    }]
+  }],
+  "substitution" : {
+    "allowedBoolean" : true
+  },
+  "priorPrescription" : {
+    "identifier" : {
+      "system" : "https://www.charite.de/fhir/sid/therapieempfehlungen",
+      "value" : "SE-TE-2024-0117"
+    },
+    "display" : "Losartan 25 mg Aufdosierungsphase"
+  }
+}

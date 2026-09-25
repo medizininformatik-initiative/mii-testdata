@@ -1,0 +1,3221 @@
+# mii-exa-test-data-bundle-seltene-1 - MII KDS Test Data v2027.0.0-ballot
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **mii-exa-test-data-bundle-seltene-1**
+
+## Example Bundle: mii-exa-test-data-bundle-seltene-1
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "Bundle",
+  "id" : "mii-exa-test-data-bundle-seltene-1",
+  "meta" : {
+    "source" : "https://www.charite.de/fhir/kds-testdata",
+    "security" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "code" : "HTEST",
+      "display" : "test health data"
+    }]
+  },
+  "type" : "transaction",
+  "timestamp" : "2025-06-18T13:51:00+02:00",
+  "entry" : [{
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Patient/mii-exa-test-data-seltene-patient-1",
+    "resource" : {
+      "resourceType" : "Patient",
+      "id" : "mii-exa-test-data-seltene-patient-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Patient_mii-exa-test-data-seltene-patient-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Patient mii-exa-test-data-seltene-patient-1</b></p><a name=\"mii-exa-test-data-seltene-patient-1\"> </a><a name=\"hcmii-exa-test-data-seltene-patient-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Luisa Seltenfall  Female, DoB: 1995-02-10 ( https://www.charite.de/fhir/sid/patientenidentifikation#SELT-TEST-001)</p><hr/></div>"
+      },
+      "identifier" : [{
+        "system" : "https://www.charite.de/fhir/sid/patientenidentifikation",
+        "value" : "SELT-TEST-001"
+      }],
+      "name" : [{
+        "family" : "Seltenfall",
+        "given" : ["Luisa"]
+      }],
+      "gender" : "female",
+      "birthDate" : "1995-02-10"
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Patient/mii-exa-test-data-seltene-patient-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Encounter/mii-exa-test-data-seltene-encounter-1",
+    "resource" : {
+      "resourceType" : "Encounter",
+      "id" : "mii-exa-test-data-seltene-encounter-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Encounter_mii-exa-test-data-seltene-encounter-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Encounter mii-exa-test-data-seltene-encounter-1</b></p><a name=\"mii-exa-test-data-seltene-encounter-1\"> </a><a name=\"hcmii-exa-test-data-seltene-encounter-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Finished</p><p><b>class</b>: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActCode.html#v3-ActCode-IMP\">ActCode: IMP</a> (inpatient encounter)</p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-seltene-patient-1.html\">Luisa Seltenfall  Female, DoB: 1995-02-10 ( https://www.charite.de/fhir/sid/patientenidentifikation#SELT-TEST-001)</a></p><p><b>period</b>: 2024-03-01 --&gt; 2024-03-25</p></div>"
+      },
+      "status" : "finished",
+      "class" : {
+        "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "code" : "IMP",
+        "display" : "inpatient encounter"
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-seltene-patient-1"
+      },
+      "period" : {
+        "start" : "2024-03-01",
+        "end" : "2024-03-25"
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Encounter/mii-exa-test-data-seltene-encounter-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-3-seltene-bmi-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-patient-3-seltene-bmi-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-bodymassindex"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-patient-3-seltene-bmi-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-patient-3-seltene-bmi-1</b></p><a name=\"mii-exa-test-data-patient-3-seltene-bmi-1\"> </a><a name=\"hcmii-exa-test-data-patient-3-seltene-bmi-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-bodymassindex\">Body Mass Index (BMI) of the patient</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 39156-5}\">Body mass index (BMI) [Ratio]</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-seltene-patient-1.html\">Luisa Seltenfall  Female, DoB: 1995-02-10 ( https://www.charite.de/fhir/sid/patientenidentifikation#SELT-TEST-001)</a></p><p><b>effective</b>: 2025-03-10 10:00:00+0100</p><p><b>value</b>: 19.2 kg/m2<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codekg/m2 = 'kg/m2')</span></p></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "vital-signs",
+          "display" : "Vital Signs"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "39156-5",
+          "display" : "Body mass index (BMI) [Ratio]"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-seltene-patient-1"
+      },
+      "effectiveDateTime" : "2025-03-10T10:00:00+01:00",
+      "valueQuantity" : {
+        "value" : 19.2,
+        "unit" : "kg/m2",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "kg/m2"
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-patient-3-seltene-bmi-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-3-seltene-kopfumfang-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-patient-3-seltene-kopfumfang-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-kopfumfang"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-patient-3-seltene-kopfumfang-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-patient-3-seltene-kopfumfang-1</b></p><a name=\"mii-exa-test-data-patient-3-seltene-kopfumfang-1\"> </a><a name=\"hcmii-exa-test-data-patient-3-seltene-kopfumfang-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-kopfumfang\">MII PR SE Kopfumfang</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span>, <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 9843-4}\">Head Occipital-frontal circumference</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-seltene-patient-1.html\">Luisa Seltenfall  Female, DoB: 1995-02-10 ( https://www.charite.de/fhir/sid/patientenidentifikation#SELT-TEST-001)</a></p><p><b>effective</b>: 2025-03-10 10:00:00+0100</p><p><b>value</b>: 57.5 cm<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codecm = 'cm')</span></p></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "vital-signs",
+          "display" : "Vital Signs"
+        }]
+      },
+      {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "vital-signs"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "9843-4",
+          "display" : "Head Occipital-frontal circumference"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-seltene-patient-1"
+      },
+      "effectiveDateTime" : "2025-03-10T10:00:00+01:00",
+      "valueQuantity" : {
+        "value" : 57.5,
+        "unit" : "cm",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "cm"
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-patient-3-seltene-kopfumfang-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-3-seltene-hueftumfang-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-patient-3-seltene-hueftumfang-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-hueftumfang"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-patient-3-seltene-hueftumfang-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-patient-3-seltene-hueftumfang-1</b></p><a name=\"mii-exa-test-data-patient-3-seltene-hueftumfang-1\"> </a><a name=\"hcmii-exa-test-data-patient-3-seltene-hueftumfang-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-hueftumfang\">MII PR SE Hüftumfang</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 284472007}, {http://loinc.org 56063-1}\">Hip circumference</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-seltene-patient-1.html\">Luisa Seltenfall  Female, DoB: 1995-02-10 ( https://www.charite.de/fhir/sid/patientenidentifikation#SELT-TEST-001)</a></p><p><b>effective</b>: 2025-03-10 10:00:00+0100</p><p><b>value</b>: 88 cm<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codecm = 'cm')</span></p></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "vital-signs",
+          "display" : "Vital Signs"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "284472007",
+          "display" : "Hip circumference"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "56063-1",
+          "display" : "Circumference.at maximal protrusion of gluteus muscles Pelvis"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-seltene-patient-1"
+      },
+      "effectiveDateTime" : "2025-03-10T10:00:00+01:00",
+      "valueQuantity" : {
+        "value" : 88,
+        "unit" : "cm",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "cm"
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-patient-3-seltene-hueftumfang-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-3-seltene-taillenumfang-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-patient-3-seltene-taillenumfang-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-taillenumfang"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-patient-3-seltene-taillenumfang-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-patient-3-seltene-taillenumfang-1</b></p><a name=\"mii-exa-test-data-patient-3-seltene-taillenumfang-1\"> </a><a name=\"hcmii-exa-test-data-patient-3-seltene-taillenumfang-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-taillenumfang\">MII PR SE Taillenumfang</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 276361009}, {http://loinc.org 8280-0}\">Waist circumference</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-seltene-patient-1.html\">Luisa Seltenfall  Female, DoB: 1995-02-10 ( https://www.charite.de/fhir/sid/patientenidentifikation#SELT-TEST-001)</a></p><p><b>effective</b>: 2025-03-10 10:00:00+0100</p><p><b>value</b>: 74 cm<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codecm = 'cm')</span></p></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "vital-signs",
+          "display" : "Vital Signs"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "276361009",
+          "display" : "Waist circumference"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "8280-0",
+          "display" : "Waist Circumference at umbilicus by Tape measure"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-seltene-patient-1"
+      },
+      "effectiveDateTime" : "2025-03-10T10:00:00+01:00",
+      "valueQuantity" : {
+        "value" : 74,
+        "unit" : "cm",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "cm"
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-patient-3-seltene-taillenumfang-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-3-seltene-blutgruppe-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-patient-3-seltene-blutgruppe-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-blutgruppe|2026.0.1"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-patient-3-seltene-blutgruppe-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-patient-3-seltene-blutgruppe-1</b></p><a name=\"mii-exa-test-data-patient-3-seltene-blutgruppe-1\"> </a><a name=\"hcmii-exa-test-data-patient-3-seltene-blutgruppe-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-blutgruppe|2026.0.1\">https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-blutgruppe|2026.0.1</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 882-1}, {http://loinc.org 883-9}\">ABO and Rh group [Type] in Blood</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-seltene-patient-1.html\">Luisa Seltenfall  Female, DoB: 1995-02-10 ( https://www.charite.de/fhir/sid/patientenidentifikation#SELT-TEST-001)</a></p><p><b>effective</b>: 2025-03-10 10:00:00+0100</p><p><b>value</b>: <span title=\"Codes:{http://loinc.org LA21325-8}, {http://snomed.info/sct 278149003}\">A Rh(D) positiv</span></p></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "laboratory",
+          "display" : "Laboratory"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "882-1",
+          "display" : "ABO and Rh group [Type] in Blood"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "883-9",
+          "display" : "ABO group [Type] in Blood"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-seltene-patient-1"
+      },
+      "effectiveDateTime" : "2025-03-10T10:00:00+01:00",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "LA21325-8",
+          "display" : "A Pos"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "278149003",
+          "display" : "Blood group A Rh(D) positive (finding)"
+        }],
+        "text" : "A Rh(D) positiv"
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-patient-3-seltene-blutgruppe-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-3-seltene-geburtsgewicht-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-patient-3-seltene-geburtsgewicht-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-geburtsgewicht"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-patient-3-seltene-geburtsgewicht-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-patient-3-seltene-geburtsgewicht-1</b></p><a name=\"mii-exa-test-data-patient-3-seltene-geburtsgewicht-1\"> </a><a name=\"hcmii-exa-test-data-patient-3-seltene-geburtsgewicht-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-geburtsgewicht\">MII PR SE Geburtsgewicht</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 8339-4}\">Birth weight Measured</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-seltene-patient-1.html\">Luisa Seltenfall  Female, DoB: 1995-02-10 ( https://www.charite.de/fhir/sid/patientenidentifikation#SELT-TEST-001)</a></p><p><b>effective</b>: 1995-02-10</p><p><b>value</b>: 3240 Gramm<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeg = 'g')</span></p></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "vital-signs"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "8339-4",
+          "display" : "Birth weight Measured"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-seltene-patient-1"
+      },
+      "effectiveDateTime" : "1995-02-10",
+      "valueQuantity" : {
+        "value" : 3240,
+        "unit" : "Gramm",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "g"
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-patient-3-seltene-geburtsgewicht-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-3-seltene-geburtslaenge-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-patient-3-seltene-geburtslaenge-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-geburtslaenge"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-patient-3-seltene-geburtslaenge-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-patient-3-seltene-geburtslaenge-1</b></p><a name=\"mii-exa-test-data-patient-3-seltene-geburtslaenge-1\"> </a><a name=\"hcmii-exa-test-data-patient-3-seltene-geburtslaenge-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-geburtslaenge\">MII PR SE Geburtslänge</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 89269-5}\">Body height Measured --at birth</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-seltene-patient-1.html\">Luisa Seltenfall  Female, DoB: 1995-02-10 ( https://www.charite.de/fhir/sid/patientenidentifikation#SELT-TEST-001)</a></p><p><b>effective</b>: 1995-02-10</p><p><b>value</b>: 53 Zentimeter<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codecm = 'cm')</span></p></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "vital-signs"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "89269-5",
+          "display" : "Body height Measured --at birth"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-seltene-patient-1"
+      },
+      "effectiveDateTime" : "1995-02-10",
+      "valueQuantity" : {
+        "value" : 53,
+        "unit" : "Zentimeter",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "cm"
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-patient-3-seltene-geburtslaenge-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-3-seltene-gestationsalter-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-patient-3-seltene-gestationsalter-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-gestationsalter"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-patient-3-seltene-gestationsalter-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-patient-3-seltene-gestationsalter-1</b></p><a name=\"mii-exa-test-data-patient-3-seltene-gestationsalter-1\"> </a><a name=\"hcmii-exa-test-data-patient-3-seltene-gestationsalter-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-gestationsalter\">MII PR SE Gestationsalter bei Geburt</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category survey}\">Survey</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 76516-4}\">Gestational age--at birth</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-seltene-patient-1.html\">Luisa Seltenfall  Female, DoB: 1995-02-10 ( https://www.charite.de/fhir/sid/patientenidentifikation#SELT-TEST-001)</a></p><p><b>effective</b>: 1995-02-10</p><p><b>value</b>: 39 Wochen<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codewk = 'wk')</span></p></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "survey",
+          "display" : "Survey"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "76516-4",
+          "display" : "Gestational age--at birth"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-seltene-patient-1"
+      },
+      "effectiveDateTime" : "1995-02-10",
+      "valueQuantity" : {
+        "value" : 39,
+        "unit" : "Wochen",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "wk"
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-patient-3-seltene-gestationsalter-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-3-seltene-consanguinity-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-patient-3-seltene-consanguinity-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-consanguinity"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-patient-3-seltene-consanguinity-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-patient-3-seltene-consanguinity-1</b></p><a name=\"mii-exa-test-data-patient-3-seltene-consanguinity-1\"> </a><a name=\"hcmii-exa-test-data-patient-3-seltene-consanguinity-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-consanguinity\">MII PR SE Consanguinity</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category social-history}\">Social History</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 842009}\">Consanguinity</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-seltene-patient-1.html\">Luisa Seltenfall  Female, DoB: 1995-02-10 ( https://www.charite.de/fhir/sid/patientenidentifikation#SELT-TEST-001)</a></p><p><b>focus</b>: </p><ul><li><a href=\"FamilyMemberHistory-mii-exa-test-data-patient-3-seltene-familienanamnese-1.html\">FamilyMemberHistory: extension = Yes; status = completed; date = 2025-03-10; relationship = Natural mother; sex = Female; born[x] = 1960; deceased[x] = false</a></li><li><a href=\"FamilyMemberHistory-mii-exa-test-data-patient-3-seltene-familienanamnese-2.html\">FamilyMemberHistory: extension = No; status = completed; relationship = Father; sex = Male; born[x] = 1957; deceased[x] = No display for Age </a></li></ul><p><b>effective</b>: 2024-03-05</p><p><b>value</b>: <span title=\"Codes:{http://snomed.info/sct 373067005}\">Eltern nicht blutsverwandt</span></p></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "social-history"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "842009",
+          "display" : "Consanguinity"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-seltene-patient-1"
+      },
+      "focus" : [{
+        "reference" : "FamilyMemberHistory/mii-exa-test-data-patient-3-seltene-familienanamnese-1"
+      },
+      {
+        "reference" : "FamilyMemberHistory/mii-exa-test-data-patient-3-seltene-familienanamnese-2"
+      }],
+      "effectiveDateTime" : "2024-03-05",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "373067005",
+          "display" : "No"
+        }],
+        "text" : "Eltern nicht blutsverwandt"
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-patient-3-seltene-consanguinity-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-3-seltene-icf-assessment-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-patient-3-seltene-icf-assessment-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-icf-assessment"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-patient-3-seltene-icf-assessment-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-patient-3-seltene-icf-assessment-1</b></p><a name=\"mii-exa-test-data-patient-3-seltene-icf-assessment-1\"> </a><a name=\"hcmii-exa-test-data-patient-3-seltene-icf-assessment-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-icf-assessment\">MII PR SE ICF Assessment</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category survey}\">Survey</span></p><p><b>code</b>: <span title=\"Codes:{http://hl7.org/fhir/sid/icf b730}\">Muscle power functions</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-seltene-patient-1.html\">Luisa Seltenfall  Female, DoB: 1995-02-10 ( https://www.charite.de/fhir/sid/patientenidentifikation#SELT-TEST-001)</a></p><p><b>effective</b>: 2024-03-12</p><p><b>performer</b>: <a href=\"Practitioner-mii-exa-test-data-practitioner-physician-1.html\">Practitioner Rahel Hirsch </a></p><p><b>note</b>: </p><blockquote><div><p>Leichtgradig reduzierte Muskelkraft der unteren Extremitaet bei Marfan-Syndrom.</p>\n</div></blockquote><h3>Components</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/CodeSystem/mii-cs-seltene-icf-beurteilungsmerkmal extent-of-impairment}\">Extent of impairment (body functions)</span></td><td><span title=\"Codes:{https://terminologien.bfarm.de/fhir/CodeSystem/icf-q-ausmass-der-schaedigung .1}\">Schaedigung leicht ausgepraegt (5-24 %)</span></td></tr></table></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "survey"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/sid/icf",
+          "code" : "b730",
+          "display" : "Muscle power functions"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-seltene-patient-1"
+      },
+      "effectiveDateTime" : "2024-03-12",
+      "performer" : [{
+        "reference" : "Practitioner/mii-exa-test-data-practitioner-physician-1"
+      }],
+      "note" : [{
+        "text" : "Leichtgradig reduzierte Muskelkraft der unteren Extremitaet bei Marfan-Syndrom."
+      }],
+      "component" : [{
+        "code" : {
+          "coding" : [{
+            "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/CodeSystem/mii-cs-seltene-icf-beurteilungsmerkmal",
+            "code" : "extent-of-impairment"
+          }]
+        },
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "https://terminologien.bfarm.de/fhir/CodeSystem/icf-q-ausmass-der-schaedigung",
+            "code" : ".1"
+          }],
+          "text" : "Schaedigung leicht ausgepraegt (5-24 %)"
+        }
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-patient-3-seltene-icf-assessment-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/ResearchSubject/mii-exa-test-data-patient-3-seltene-registerteilnahme-1",
+    "resource" : {
+      "resourceType" : "ResearchSubject",
+      "id" : "mii-exa-test-data-patient-3-seltene-registerteilnahme-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-registerteilnahme"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"ResearchSubject_mii-exa-test-data-patient-3-seltene-registerteilnahme-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: ResearchSubject mii-exa-test-data-patient-3-seltene-registerteilnahme-1</b></p><a name=\"mii-exa-test-data-patient-3-seltene-registerteilnahme-1\"> </a><a name=\"hcmii-exa-test-data-patient-3-seltene-registerteilnahme-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-registerteilnahme\">MII PR SE Registerteilnahme</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>MII EX SE Register</b>: <a href=\"Library-mii-exa-test-data-seltene-register-katalog-1.html\">ERN ReCONNET Registry - Katalogeintrag</a></p><p><b>identifier</b>: <code>https://reconnet.ern-net.eu/fhir/sid/subject</code>/RCN-DE-001358</p><p><b>status</b>: On-study</p><p><b>period</b>: 2024-04-02 --&gt; (ongoing)</p><p><b>study</b>: <a href=\"ResearchStudy-mii-exa-test-data-seltene-register-study-1.html\">ResearchStudy ERN ReCONNET Registry - Rare Connective Tissue and Musculoskeletal Diseases</a></p><p><b>individual</b>: <a href=\"Patient-mii-exa-test-data-seltene-patient-1.html\">Luisa Seltenfall  Female, DoB: 1995-02-10 ( https://www.charite.de/fhir/sid/patientenidentifikation#SELT-TEST-001)</a></p><p><b>consent</b>: <a href=\"Consent-mii-exa-test-data-seltene-register-consent-1.html\">mii-exa-test-data-seltene-register-consent-1</a></p></div>"
+      },
+      "extension" : [{
+        "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-ex-seltene-register",
+        "valueReference" : {
+          "reference" : "Library/mii-exa-test-data-seltene-register-katalog-1"
+        }
+      }],
+      "identifier" : [{
+        "system" : "https://reconnet.ern-net.eu/fhir/sid/subject",
+        "value" : "RCN-DE-001358"
+      }],
+      "status" : "on-study",
+      "period" : {
+        "start" : "2024-04-02"
+      },
+      "study" : {
+        "reference" : "ResearchStudy/mii-exa-test-data-seltene-register-study-1"
+      },
+      "individual" : {
+        "reference" : "Patient/mii-exa-test-data-seltene-patient-1"
+      },
+      "consent" : {
+        "reference" : "Consent/mii-exa-test-data-seltene-register-consent-1"
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "ResearchSubject/mii-exa-test-data-patient-3-seltene-registerteilnahme-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Library/mii-exa-test-data-seltene-register-katalog-1",
+    "resource" : {
+      "resourceType" : "Library",
+      "id" : "mii-exa-test-data-seltene-register-katalog-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Library_mii-exa-test-data-seltene-register-katalog-1\"> </a><p><b style=\"color: maroon\">Exception parsing generated Narrative (see /tmp/liquid-44bef535-d820-4ac4-bf0a-d19ae2a7bcea.html): unexpected non-end of element null::a  at line 110 column 50</b></p></div>"
+      },
+      "identifier" : [{
+        "system" : "https://reconnet.ern-net.eu/fhir/sid/registry",
+        "value" : "RECONNET-REG"
+      }],
+      "name" : "ERNReCONNETRegistry",
+      "title" : "ERN ReCONNET Registry - Katalogeintrag",
+      "status" : "active",
+      "type" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/library-type",
+          "code" : "asset-collection"
+        }]
+      },
+      "relatedArtifact" : [{
+        "type" : "documentation",
+        "url" : "https://reconnet.ern-net.eu/",
+        "document" : {
+          "url" : "https://reconnet.ern-net.eu/"
+        }
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Library/mii-exa-test-data-seltene-register-katalog-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/ResearchStudy/mii-exa-test-data-seltene-register-study-1",
+    "resource" : {
+      "resourceType" : "ResearchStudy",
+      "id" : "mii-exa-test-data-seltene-register-study-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"ResearchStudy_mii-exa-test-data-seltene-register-study-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: ResearchStudy mii-exa-test-data-seltene-register-study-1</b></p><a name=\"mii-exa-test-data-seltene-register-study-1\"> </a><a name=\"hcmii-exa-test-data-seltene-register-study-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>identifier</b>: <code>https://reconnet.ern-net.eu/fhir/sid/registry</code>/RECONNET-REG</p><p><b>title</b>: ERN ReCONNET Registry - Rare Connective Tissue and Musculoskeletal Diseases</p><p><b>status</b>: Active</p><p><b>description</b>: </p><div><p>Register des Europaeischen Referenznetzwerks fuer seltene Bindegewebs- und Muskel-Skelett-Erkrankungen.</p>\n</div></div>"
+      },
+      "identifier" : [{
+        "system" : "https://reconnet.ern-net.eu/fhir/sid/registry",
+        "value" : "RECONNET-REG"
+      }],
+      "title" : "ERN ReCONNET Registry - Rare Connective Tissue and Musculoskeletal Diseases",
+      "status" : "active",
+      "description" : "Register des Europaeischen Referenznetzwerks fuer seltene Bindegewebs- und Muskel-Skelett-Erkrankungen."
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "ResearchStudy/mii-exa-test-data-seltene-register-study-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Consent/mii-exa-test-data-seltene-register-consent-1",
+    "resource" : {
+      "resourceType" : "Consent",
+      "id" : "mii-exa-test-data-seltene-register-consent-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Consent_mii-exa-test-data-seltene-register-consent-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Consent mii-exa-test-data-seltene-register-consent-1</b></p><a name=\"mii-exa-test-data-seltene-register-consent-1\"> </a><a name=\"hcmii-exa-test-data-seltene-register-consent-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><h2>Participants</h2><table class=\"grid\"><tr><td><b>Role</b></td><td><b>Details</b></td></tr><tr><td title=\"Who the consent applies to\">Patient</td><td><a href=\"Patient-mii-exa-test-data-seltene-patient-1.html\">Luisa Seltenfall  Female, DoB: 1995-02-10 ( https://www.charite.de/fhir/sid/patientenidentifikation#SELT-TEST-001)</a></td></tr></table><p>This consent is made under the regulation <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/consentpolicycodes cric}\">Common Rule Informed Consent</span> .</p><p>The subject has given their consent.</p></div>"
+      },
+      "status" : "active",
+      "scope" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/consentscope",
+          "code" : "research"
+        }]
+      },
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/consentcategorycodes",
+          "code" : "research"
+        }]
+      }],
+      "patient" : {
+        "reference" : "Patient/mii-exa-test-data-seltene-patient-1"
+      },
+      "dateTime" : "2024-04-02",
+      "policyRule" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/consentpolicycodes",
+          "code" : "cric"
+        }]
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Consent/mii-exa-test-data-seltene-register-consent-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-3-seltene-hpo-assessment-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-patient-3-seltene-hpo-assessment-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-hpo-assessment"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-patient-3-seltene-hpo-assessment-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-patient-3-seltene-hpo-assessment-1</b></p><a name=\"mii-exa-test-data-patient-3-seltene-hpo-assessment-1\"> </a><a name=\"hcmii-exa-test-data-patient-3-seltene-hpo-assessment-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-hpo-assessment\">MII Profile SE HPO Assessment</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://human-phenotype-ontology.org HP:0002616}\">Aortic root aneurysm</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-seltene-patient-1.html\">Luisa Seltenfall  Female, DoB: 1995-02-10 ( https://www.charite.de/fhir/sid/patientenidentifikation#SELT-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-seltene-encounter-1.html\">Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2024-03-01 --&gt; 2024-03-25</a></p><p><b>effective</b>: 2025-03-10</p><p><b>note</b>: </p><blockquote><div><p>Aortenwurzeldilatation bei Echokardiographie festgestellt, Z-Score &gt; 3.</p>\n</div></blockquote><p><b>bodySite</b>: <span title=\"Codes:{http://snomed.info/sct 57034009}\">Aortic arch structure</span></p><p><b>method</b>: <span title=\"Codes:{http://snomed.info/sct 278292003}\">Ultrasound imaging</span></p><p><b>derivedFrom</b>: <a href=\"Observation-mii-exa-test-data-seltene-labobs-1.html\">Observation Creatine kinase [Enzymatic activity/volume] in Serum or Plasma</a></p><h3>Components</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 260411009}\">Presence findings</span></td><td><span title=\"Codes:{http://loinc.org LA9633-4}\">Present</span></td></tr></table></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://human-phenotype-ontology.org",
+          "code" : "HP:0002616",
+          "display" : "Aortic root aneurysm"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-seltene-patient-1"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-seltene-encounter-1"
+      },
+      "effectiveDateTime" : "2025-03-10",
+      "note" : [{
+        "text" : "Aortenwurzeldilatation bei Echokardiographie festgestellt, Z-Score > 3."
+      }],
+      "bodySite" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "57034009",
+          "display" : "Aortic arch structure"
+        }]
+      },
+      "method" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "278292003",
+          "display" : "Ultrasound imaging"
+        }]
+      },
+      "derivedFrom" : [{
+        "reference" : "Observation/mii-exa-test-data-seltene-labobs-1"
+      }],
+      "component" : [{
+        "code" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "260411009",
+            "display" : "Presence findings"
+          }]
+        },
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "LA9633-4",
+            "display" : "Present"
+          }]
+        }
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-patient-3-seltene-hpo-assessment-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-3-seltene-hpo-assessment-2",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-patient-3-seltene-hpo-assessment-2",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-hpo-assessment"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-patient-3-seltene-hpo-assessment-2\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-patient-3-seltene-hpo-assessment-2</b></p><a name=\"mii-exa-test-data-patient-3-seltene-hpo-assessment-2\"> </a><a name=\"hcmii-exa-test-data-patient-3-seltene-hpo-assessment-2\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-hpo-assessment\">MII Profile SE HPO Assessment</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://human-phenotype-ontology.org HP:0001166}\">Arachnodactyly</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-seltene-patient-1.html\">Luisa Seltenfall  Female, DoB: 1995-02-10 ( https://www.charite.de/fhir/sid/patientenidentifikation#SELT-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-seltene-encounter-1.html\">Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2024-03-01 --&gt; 2024-03-25</a></p><p><b>effective</b>: 2025-03-10</p><p><b>note</b>: </p><blockquote><div><p>Arachnodaktylie bei klinischer Untersuchung nicht nachweisbar. Armspanne/Koerpergroesse-Verhaeltnis im Normbereich.</p>\n</div></blockquote><p><b>method</b>: <span title=\"Codes:{http://snomed.info/sct 5880005}\">Physical examination procedure</span></p><h3>Components</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 260411009}\">Presence findings</span></td><td><span title=\"Codes:{http://loinc.org LA9634-2}\">Absent</span></td></tr></table></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://human-phenotype-ontology.org",
+          "code" : "HP:0001166",
+          "display" : "Arachnodactyly"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-seltene-patient-1"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-seltene-encounter-1"
+      },
+      "effectiveDateTime" : "2025-03-10",
+      "note" : [{
+        "text" : "Arachnodaktylie bei klinischer Untersuchung nicht nachweisbar. Armspanne/Koerpergroesse-Verhaeltnis im Normbereich."
+      }],
+      "method" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "5880005",
+          "display" : "Physical examination procedure"
+        }]
+      },
+      "component" : [{
+        "code" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "260411009",
+            "display" : "Presence findings"
+          }]
+        },
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "LA9634-2",
+            "display" : "Absent"
+          }]
+        }
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-patient-3-seltene-hpo-assessment-2"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-3-seltene-hpo-assessment-3",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-patient-3-seltene-hpo-assessment-3",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-hpo-assessment"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-patient-3-seltene-hpo-assessment-3\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-patient-3-seltene-hpo-assessment-3</b></p><a name=\"mii-exa-test-data-patient-3-seltene-hpo-assessment-3\"> </a><a name=\"hcmii-exa-test-data-patient-3-seltene-hpo-assessment-3\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-hpo-assessment\">MII Profile SE HPO Assessment</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://human-phenotype-ontology.org HP:0001083}\">Ectopia lentis</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-seltene-patient-1.html\">Luisa Seltenfall  Female, DoB: 1995-02-10 ( https://www.charite.de/fhir/sid/patientenidentifikation#SELT-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-seltene-encounter-1.html\">Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2024-03-01 --&gt; 2024-03-25</a></p><p><b>effective</b>: 2025-03-10</p><p><b>note</b>: </p><blockquote><div><p>Moderate Linsensubluxation bilateral, ophthalmologisch dokumentiert.</p>\n</div></blockquote><p><b>bodySite</b>: <span title=\"Codes:{http://snomed.info/sct 78076003}\">Lens structure</span></p><p><b>method</b>: <span title=\"Codes:{http://snomed.info/sct 36228007}\">Ophthalmic examination</span></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 260411009}\">Presence findings</span></p><p><b>value</b>: <span title=\"Codes:{http://loinc.org LA9633-4}\">Present</span></p><p><b>interpretation</b>: <span title=\"Codes:{https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/CodeSystem/mii-cs-seltene-hpo-change-status newly-added}\">Neu hinzugefügt</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://human-phenotype-ontology.org HP:0012824}\">Severity</span></p><p><b>value</b>: <span title=\"Codes:{http://human-phenotype-ontology.org HP:0012826}\">Moderate</span></p></blockquote></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://human-phenotype-ontology.org",
+          "code" : "HP:0001083",
+          "display" : "Ectopia lentis"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-seltene-patient-1"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-seltene-encounter-1"
+      },
+      "effectiveDateTime" : "2025-03-10",
+      "note" : [{
+        "text" : "Moderate Linsensubluxation bilateral, ophthalmologisch dokumentiert."
+      }],
+      "bodySite" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "78076003",
+          "display" : "Lens structure"
+        }]
+      },
+      "method" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "36228007",
+          "display" : "Ophthalmic examination"
+        }]
+      },
+      "component" : [{
+        "code" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "260411009",
+            "display" : "Presence findings"
+          }]
+        },
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "LA9633-4",
+            "display" : "Present"
+          }]
+        },
+        "interpretation" : [{
+          "coding" : [{
+            "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/CodeSystem/mii-cs-seltene-hpo-change-status",
+            "code" : "newly-added",
+            "display" : "Neu hinzugefügt"
+          }]
+        }]
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://human-phenotype-ontology.org",
+            "code" : "HP:0012824",
+            "display" : "Severity"
+          }]
+        },
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://human-phenotype-ontology.org",
+            "code" : "HP:0012826",
+            "display" : "Moderate"
+          }]
+        }
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-patient-3-seltene-hpo-assessment-3"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-3-seltene-hpo-assessment-4",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-patient-3-seltene-hpo-assessment-4",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-hpo-assessment"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-patient-3-seltene-hpo-assessment-4\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-patient-3-seltene-hpo-assessment-4</b></p><a name=\"mii-exa-test-data-patient-3-seltene-hpo-assessment-4\"> </a><a name=\"hcmii-exa-test-data-patient-3-seltene-hpo-assessment-4\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-hpo-assessment\">MII Profile SE HPO Assessment</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://human-phenotype-ontology.org HP:0000098}\">Tall stature</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-seltene-patient-1.html\">Luisa Seltenfall  Female, DoB: 1995-02-10 ( https://www.charite.de/fhir/sid/patientenidentifikation#SELT-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-seltene-encounter-1.html\">Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2024-03-01 --&gt; 2024-03-25</a></p><p><b>effective</b>: 2011-01-01 --&gt; 2025-03-10</p><p><b>note</b>: </p><blockquote><div><p>Hochwuchs seit Adoleszenz, typisch fuer Marfan-Syndrom. Koerpergroesse 195 cm.</p>\n</div></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 260411009}\">Presence findings</span></p><p><b>value</b>: <span title=\"Codes:{http://loinc.org LA9633-4}\">Present</span></p><p><b>interpretation</b>: <span title=\"Codes:{https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/CodeSystem/mii-cs-seltene-hpo-change-status unchanged}\">Unverändert</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://human-phenotype-ontology.org HP:0012824}\">Severity</span></p><p><b>value</b>: <span title=\"Codes:{http://human-phenotype-ontology.org HP:0012825}\">Mild</span></p></blockquote></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://human-phenotype-ontology.org",
+          "code" : "HP:0000098",
+          "display" : "Tall stature"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-seltene-patient-1"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-seltene-encounter-1"
+      },
+      "effectivePeriod" : {
+        "start" : "2011-01-01",
+        "end" : "2025-03-10"
+      },
+      "note" : [{
+        "text" : "Hochwuchs seit Adoleszenz, typisch fuer Marfan-Syndrom. Koerpergroesse 195 cm."
+      }],
+      "component" : [{
+        "code" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "260411009",
+            "display" : "Presence findings"
+          }]
+        },
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "LA9633-4",
+            "display" : "Present"
+          }]
+        },
+        "interpretation" : [{
+          "coding" : [{
+            "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/CodeSystem/mii-cs-seltene-hpo-change-status",
+            "code" : "unchanged",
+            "display" : "Unverändert"
+          }]
+        }]
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://human-phenotype-ontology.org",
+            "code" : "HP:0012824",
+            "display" : "Severity"
+          }]
+        },
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://human-phenotype-ontology.org",
+            "code" : "HP:0012825",
+            "display" : "Mild"
+          }]
+        }
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-patient-3-seltene-hpo-assessment-4"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Condition/mii-exa-test-data-patient-3-seltene-clinical-diagnosis-1",
+    "resource" : {
+      "resourceType" : "Condition",
+      "id" : "mii-exa-test-data-patient-3-seltene-clinical-diagnosis-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-clinical-diagnosis"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Condition_mii-exa-test-data-patient-3-seltene-clinical-diagnosis-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Condition mii-exa-test-data-patient-3-seltene-clinical-diagnosis-1</b></p><a name=\"mii-exa-test-data-patient-3-seltene-clinical-diagnosis-1\"> </a><a name=\"hcmii-exa-test-data-patient-3-seltene-clinical-diagnosis-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-clinical-diagnosis\">MII PR SE Clinical Diagnosis</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>Condition Asserted Date</b>: 2025-03-10</p><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}\">Active</span></p><p><b>verificationStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}\">Confirmed</span></p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-category encounter-diagnosis}\">Encounter Diagnosis</span></p><p><b>severity</b>: <span title=\"Codes:{http://snomed.info/sct 24484000}\">Severe</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 19346006}, {http://www.orpha.net 558}, {http://fhir.de/CodeSystem/bfarm/icd-10-gm Q87.4}, {http://human-phenotype-ontology.org HP:0003549}\">Marfan-Syndrom, klinisch diagnostiziert nach Ghent-Kriterien</span></p><p><b>bodySite</b>: <span title=\"Codes:{http://snomed.info/sct 113257007}\">Structure of cardiovascular system</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-seltene-patient-1.html\">Luisa Seltenfall  Female, DoB: 1995-02-10 ( https://www.charite.de/fhir/sid/patientenidentifikation#SELT-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-seltene-encounter-1.html\">Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2024-03-01 --&gt; 2024-03-25</a></p><p><b>onset</b>: 28 years<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codea = 'a')</span></p><p><b>recordedDate</b>: 2025-03-10</p><p><b>recorder</b>: <a href=\"Practitioner-mii-exa-test-data-practitioner-physician-1.html\">Practitioner Rahel Hirsch </a></p><p><b>asserter</b>: <a href=\"Practitioner-mii-exa-test-data-practitioner-physician-2.html\">Practitioner Robert Koch (official)</a></p><h3>Stages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Assessment</b></td><td><b>Type</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"ClinicalImpression-mii-exa-test-data-patient-3-seltene-clinical-impression-1.html\">ClinicalImpression Community health procedure</a></td><td><span title=\"Codes:{http://snomed.info/sct 260998006}\">Clinical staging</span></td></tr></table><blockquote><p><b>evidence</b></p><p><b>code</b>: <span title=\"Codes:{http://human-phenotype-ontology.org HP:0002616}\">Aortic root aneurysm</span></p><p><b>detail</b>: <a href=\"Observation-mii-exa-test-data-patient-3-seltene-hpo-assessment-1.html\">Observation Aortic root aneurysm</a></p></blockquote><blockquote><p><b>evidence</b></p><p><b>code</b>: <span title=\"Codes:{http://human-phenotype-ontology.org HP:0001083}\">Ectopia lentis</span></p><p><b>detail</b>: <a href=\"Observation-mii-exa-test-data-patient-3-seltene-hpo-assessment-3.html\">Observation Ectopia lentis</a></p></blockquote><blockquote><p><b>evidence</b></p><p><b>code</b>: <span title=\"Codes:{http://human-phenotype-ontology.org HP:0000098}\">Tall stature</span></p><p><b>detail</b>: <a href=\"Observation-mii-exa-test-data-patient-3-seltene-hpo-assessment-4.html\">Observation Tall stature</a></p></blockquote><p><b>note</b>: </p><blockquote><div><p>Klinische Diagnose basierend auf Ghent-Kriterien. Patient erfuellt Major-Kriterien im kardiovaskulaeren und ophthalmologischen System.</p>\n</div></blockquote></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/condition-assertedDate",
+        "valueDateTime" : "2025-03-10"
+      }],
+      "clinicalStatus" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code" : "active"
+        }]
+      },
+      "verificationStatus" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code" : "confirmed"
+        }]
+      },
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code" : "encounter-diagnosis"
+        }]
+      }],
+      "severity" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "24484000",
+          "display" : "Severe"
+        }]
+      },
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "19346006",
+          "display" : "Marfan syndrome"
+        },
+        {
+          "system" : "http://www.orpha.net",
+          "code" : "558",
+          "display" : "Marfan syndrome"
+        },
+        {
+          "extension" : [{
+            "url" : "http://fhir.de/StructureDefinition/icd-10-gm-diagnosesicherheit",
+            "valueCoding" : {
+              "system" : "https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_ICD_DIAGNOSESICHERHEIT",
+              "code" : "G",
+              "display" : "gesicherte Diagnose"
+            }
+          },
+          {
+            "url" : "http://fhir.de/StructureDefinition/icd-10-gm-mehrfachcodierungs-kennzeichen",
+            "valueCoding" : {
+              "system" : "http://fhir.de/CodeSystem/icd-10-gm-mehrfachcodierungs-kennzeichen",
+              "code" : "!",
+              "display" : "Ausrufezeichen"
+            }
+          },
+          {
+            "url" : "http://fhir.de/StructureDefinition/seitenlokalisation",
+            "valueCoding" : {
+              "system" : "https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_ICD_SEITENLOKALISATION",
+              "code" : "U",
+              "display" : "unbekannt"
+            }
+          }],
+          "system" : "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+          "version" : "2024",
+          "code" : "Q87.4",
+          "display" : "Marfan-Syndrom"
+        },
+        {
+          "system" : "http://human-phenotype-ontology.org",
+          "code" : "HP:0003549",
+          "display" : "Abnormality of connective tissue"
+        }],
+        "text" : "Marfan-Syndrom, klinisch diagnostiziert nach Ghent-Kriterien"
+      },
+      "bodySite" : [{
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20240201",
+          "code" : "113257007",
+          "display" : "Structure of cardiovascular system"
+        }]
+      }],
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-seltene-patient-1"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-seltene-encounter-1"
+      },
+      "onsetAge" : {
+        "extension" : [{
+          "url" : "http://fhir.de/StructureDefinition/lebensphase",
+          "valueCodeableConcept" : {
+            "coding" : [{
+              "system" : "http://snomed.info/sct",
+              "code" : "41847000",
+              "display" : "Adulthood (qualifier value)"
+            }]
+          }
+        }],
+        "value" : 28,
+        "unit" : "years",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "a"
+      },
+      "recordedDate" : "2025-03-10",
+      "recorder" : {
+        "reference" : "Practitioner/mii-exa-test-data-practitioner-physician-1"
+      },
+      "asserter" : {
+        "reference" : "Practitioner/mii-exa-test-data-practitioner-physician-2"
+      },
+      "stage" : [{
+        "assessment" : [{
+          "reference" : "ClinicalImpression/mii-exa-test-data-patient-3-seltene-clinical-impression-1"
+        }],
+        "type" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "260998006",
+            "display" : "Clinical staging"
+          }]
+        }
+      }],
+      "evidence" : [{
+        "code" : [{
+          "coding" : [{
+            "system" : "http://human-phenotype-ontology.org",
+            "code" : "HP:0002616",
+            "display" : "Aortic root aneurysm"
+          }]
+        }],
+        "detail" : [{
+          "reference" : "Observation/mii-exa-test-data-patient-3-seltene-hpo-assessment-1"
+        }]
+      },
+      {
+        "code" : [{
+          "coding" : [{
+            "system" : "http://human-phenotype-ontology.org",
+            "code" : "HP:0001083",
+            "display" : "Ectopia lentis"
+          }]
+        }],
+        "detail" : [{
+          "reference" : "Observation/mii-exa-test-data-patient-3-seltene-hpo-assessment-3"
+        }]
+      },
+      {
+        "code" : [{
+          "coding" : [{
+            "system" : "http://human-phenotype-ontology.org",
+            "code" : "HP:0000098",
+            "display" : "Tall stature"
+          }]
+        }],
+        "detail" : [{
+          "reference" : "Observation/mii-exa-test-data-patient-3-seltene-hpo-assessment-4"
+        }]
+      }],
+      "note" : [{
+        "text" : "Klinische Diagnose basierend auf Ghent-Kriterien. Patient erfuellt Major-Kriterien im kardiovaskulaeren und ophthalmologischen System."
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Condition/mii-exa-test-data-patient-3-seltene-clinical-diagnosis-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Condition/mii-exa-test-data-patient-3-seltene-clinical-diagnosis-2",
+    "resource" : {
+      "resourceType" : "Condition",
+      "id" : "mii-exa-test-data-patient-3-seltene-clinical-diagnosis-2",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-clinical-diagnosis"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Condition_mii-exa-test-data-patient-3-seltene-clinical-diagnosis-2\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Condition mii-exa-test-data-patient-3-seltene-clinical-diagnosis-2</b></p><a name=\"mii-exa-test-data-patient-3-seltene-clinical-diagnosis-2\"> </a><a name=\"hcmii-exa-test-data-patient-3-seltene-clinical-diagnosis-2\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-clinical-diagnosis\">MII PR SE Clinical Diagnosis</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>Condition Asserted Date</b>: 2023-05-04</p><p><b>Condition Related</b>: <a href=\"Condition-mii-exa-test-data-patient-3-seltene-clinical-diagnosis-1.html\">Condition Marfan syndrome</a></p><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical resolved}\">Resolved</span></p><p><b>verificationStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}\">Confirmed</span></p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-category encounter-diagnosis}\">Encounter Diagnosis</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 77638001}, {http://fhir.de/CodeSystem/bfarm/icd-10-gm H27.1}\">Linsenluxation beidseits bei Marfan-Syndrom, nach Lensektomie behoben</span></p><p><b>bodySite</b>: <span title=\"Codes:{http://snomed.info/sct 78076003}\">Structure of crystalline lens (body structure)</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-seltene-patient-1.html\">Luisa Seltenfall  Female, DoB: 1995-02-10 ( https://www.charite.de/fhir/sid/patientenidentifikation#SELT-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-seltene-encounter-1.html\">Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2024-03-01 --&gt; 2024-03-25</a></p><p><b>onset</b>: 25 Jahre<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codea = 'a')</span></p><p><b>abatement</b>: 29 Jahre<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codea = 'a')</span></p><p><b>recordedDate</b>: 2023-05-04</p><p><b>note</b>: </p><blockquote><div><p>Beidseitige Linsenluxation, operativ versorgt (Lensektomie mit IOL); seither behoben.</p>\n</div></blockquote></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/condition-assertedDate",
+        "valueDateTime" : "2023-05-04"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/condition-related",
+        "valueReference" : {
+          "reference" : "Condition/mii-exa-test-data-patient-3-seltene-clinical-diagnosis-1"
+        }
+      }],
+      "clinicalStatus" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code" : "resolved"
+        }]
+      },
+      "verificationStatus" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code" : "confirmed"
+        }]
+      },
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code" : "encounter-diagnosis"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "77638001",
+          "display" : "Ectopia lentis (disorder)"
+        },
+        {
+          "extension" : [{
+            "url" : "http://fhir.de/StructureDefinition/seitenlokalisation",
+            "valueCoding" : {
+              "system" : "https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_ICD_SEITENLOKALISATION",
+              "code" : "B",
+              "display" : "beiderseits"
+            }
+          }],
+          "system" : "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+          "version" : "2023",
+          "code" : "H27.1",
+          "display" : "Linsenluxation"
+        }],
+        "text" : "Linsenluxation beidseits bei Marfan-Syndrom, nach Lensektomie behoben"
+      },
+      "bodySite" : [{
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "78076003",
+          "display" : "Structure of crystalline lens (body structure)"
+        }]
+      }],
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-seltene-patient-1"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-seltene-encounter-1"
+      },
+      "onsetAge" : {
+        "value" : 25,
+        "unit" : "Jahre",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "a"
+      },
+      "abatementAge" : {
+        "extension" : [{
+          "url" : "http://fhir.de/StructureDefinition/lebensphase",
+          "valueCodeableConcept" : {
+            "coding" : [{
+              "system" : "http://snomed.info/sct",
+              "code" : "41847000",
+              "display" : "Adulthood (qualifier value)"
+            }]
+          }
+        }],
+        "value" : 29,
+        "unit" : "Jahre",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "a"
+      },
+      "recordedDate" : "2023-05-04",
+      "note" : [{
+        "text" : "Beidseitige Linsenluxation, operativ versorgt (Lensektomie mit IOL); seither behoben."
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Condition/mii-exa-test-data-patient-3-seltene-clinical-diagnosis-2"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Condition/mii-exa-test-data-patient-3-seltene-genetic-diagnosis-1",
+    "resource" : {
+      "resourceType" : "Condition",
+      "id" : "mii-exa-test-data-patient-3-seltene-genetic-diagnosis-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-genetic-diagnosis"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Condition_mii-exa-test-data-patient-3-seltene-genetic-diagnosis-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Condition mii-exa-test-data-patient-3-seltene-genetic-diagnosis-1</b></p><a name=\"mii-exa-test-data-patient-3-seltene-genetic-diagnosis-1\"> </a><a name=\"hcmii-exa-test-data-patient-3-seltene-genetic-diagnosis-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-genetic-diagnosis\">MII PR SE Genetic Diagnosis</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>MII EX SE Penetrance</b>: <span title=\"Codes:{http://human-phenotype-ontology.org HP:0003829}\">Incomplete penetrance</span></p><p><b>Condition Asserted Date</b>: 2025-04-15</p><p><b>Condition Related</b>: <a href=\"Condition-mii-exa-test-data-patient-3-seltene-clinical-diagnosis-1.html\">Condition Marfan syndrome</a></p><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}\">Active</span></p><p><b>verificationStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}\">Confirmed</span></p><p><b>category</b>: <span title=\"Codes:{http://snomed.info/sct 782964007}\">Genetic disease</span></p><p><b>severity</b>: <span title=\"Codes:{http://snomed.info/sct 6736007}\">Moderate severity</span></p><p><b>code</b>: <span title=\"Codes:{http://omim.org 154700}, {http://snomed.info/sct 19346006}, {http://www.orpha.net 558}, {http://fhir.de/CodeSystem/bfarm/icd-10-gm Q87.4}\">Marfan-Syndrom, genetisch bestaetigt (FBN1-Variante)</span></p><p><b>bodySite</b>: <span title=\"Codes:{http://snomed.info/sct 113257007}\">Structure of cardiovascular system</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-seltene-patient-1.html\">Luisa Seltenfall  Female, DoB: 1995-02-10 ( https://www.charite.de/fhir/sid/patientenidentifikation#SELT-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-seltene-encounter-1.html\">Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2024-03-01 --&gt; 2024-03-25</a></p><p><b>onset</b>: 28 years<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codea = 'a')</span></p><p><b>recordedDate</b>: 2025-04-15</p><p><b>recorder</b>: <a href=\"Practitioner-mii-exa-test-data-practitioner-physician-1.html\">Practitioner Rahel Hirsch </a></p><p><b>asserter</b>: <a href=\"Practitioner-mii-exa-test-data-practitioner-physician-2.html\">Practitioner Robert Koch (official)</a></p><h3>Stages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Assessment</b></td><td><b>Type</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"ClinicalImpression-mii-exa-test-data-patient-3-seltene-clinical-impression-1.html\">ClinicalImpression Community health procedure</a></td><td><span title=\"Codes:{http://snomed.info/sct 260998006}\">Clinical staging</span></td></tr></table><blockquote><p><b>evidence</b></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 106221001}\">Genetic finding</span></p><p><b>detail</b>: </p><ul><li><a href=\"Observation-mii-exa-test-data-seltene-molgen-variante-1.html\">Observation Genetic variant assessment</a></li><li><a href=\"DiagnosticReport-mii-exa-test-data-seltene-molgen-befundbericht-1.html\">Diagnostic Report for 'Genetic analysis report' for '-&gt;Luisa Seltenfall  Female, DoB: 1995-02-10 ( https://www.charite.de/fhir/sid/patientenidentifikation#SELT-TEST-001)'</a></li></ul></blockquote><p><b>note</b>: </p><blockquote><div><p>Pathogene Variante im FBN1-Gen molekulargenetisch nachgewiesen. Diagnose genetisch gesichert. Unvollstaendige Penetranz dokumentiert.</p>\n</div></blockquote></div>"
+      },
+      "extension" : [{
+        "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-ex-seltene-penetrance",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://human-phenotype-ontology.org",
+            "code" : "HP:0003829",
+            "display" : "Incomplete penetrance"
+          }]
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/condition-assertedDate",
+        "valueDateTime" : "2025-04-15"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/condition-related",
+        "valueReference" : {
+          "reference" : "Condition/mii-exa-test-data-patient-3-seltene-clinical-diagnosis-1"
+        }
+      }],
+      "clinicalStatus" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code" : "active"
+        }]
+      },
+      "verificationStatus" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code" : "confirmed"
+        }]
+      },
+      "category" : [{
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "782964007",
+          "display" : "Genetic disease"
+        }]
+      }],
+      "severity" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "6736007",
+          "display" : "Moderate severity"
+        }]
+      },
+      "code" : {
+        "coding" : [{
+          "system" : "http://omim.org",
+          "code" : "154700",
+          "display" : "Marfan syndrome"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20240201",
+          "code" : "19346006",
+          "display" : "Marfan syndrome"
+        },
+        {
+          "system" : "http://www.orpha.net",
+          "code" : "558",
+          "display" : "Marfan syndrome"
+        },
+        {
+          "extension" : [{
+            "url" : "http://fhir.de/StructureDefinition/icd-10-gm-diagnosesicherheit",
+            "valueCoding" : {
+              "system" : "https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_ICD_DIAGNOSESICHERHEIT",
+              "code" : "G",
+              "display" : "gesicherte Diagnose"
+            }
+          },
+          {
+            "url" : "http://fhir.de/StructureDefinition/icd-10-gm-mehrfachcodierungs-kennzeichen",
+            "valueCoding" : {
+              "system" : "http://fhir.de/CodeSystem/icd-10-gm-mehrfachcodierungs-kennzeichen",
+              "code" : "!",
+              "display" : "Ausrufezeichen"
+            }
+          },
+          {
+            "url" : "http://fhir.de/StructureDefinition/seitenlokalisation",
+            "valueCoding" : {
+              "system" : "https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_ICD_SEITENLOKALISATION",
+              "code" : "U",
+              "display" : "unbekannt"
+            }
+          }],
+          "system" : "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+          "version" : "2025",
+          "code" : "Q87.4",
+          "display" : "Marfan-Syndrom"
+        }],
+        "text" : "Marfan-Syndrom, genetisch bestaetigt (FBN1-Variante)"
+      },
+      "bodySite" : [{
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20240201",
+          "code" : "113257007",
+          "display" : "Structure of cardiovascular system"
+        }]
+      }],
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-seltene-patient-1"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-seltene-encounter-1"
+      },
+      "onsetAge" : {
+        "extension" : [{
+          "url" : "http://fhir.de/StructureDefinition/lebensphase",
+          "valueCodeableConcept" : {
+            "coding" : [{
+              "system" : "http://snomed.info/sct",
+              "code" : "41847000",
+              "display" : "Adulthood (qualifier value)"
+            }]
+          }
+        }],
+        "value" : 28,
+        "unit" : "years",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "a"
+      },
+      "recordedDate" : "2025-04-15",
+      "recorder" : {
+        "reference" : "Practitioner/mii-exa-test-data-practitioner-physician-1"
+      },
+      "asserter" : {
+        "reference" : "Practitioner/mii-exa-test-data-practitioner-physician-2"
+      },
+      "stage" : [{
+        "assessment" : [{
+          "reference" : "ClinicalImpression/mii-exa-test-data-patient-3-seltene-clinical-impression-1"
+        }],
+        "type" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "260998006",
+            "display" : "Clinical staging"
+          }]
+        }
+      }],
+      "evidence" : [{
+        "code" : [{
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "106221001",
+            "display" : "Genetic finding"
+          }]
+        }],
+        "detail" : [{
+          "reference" : "Observation/mii-exa-test-data-seltene-molgen-variante-1"
+        },
+        {
+          "reference" : "DiagnosticReport/mii-exa-test-data-seltene-molgen-befundbericht-1"
+        }]
+      }],
+      "note" : [{
+        "text" : "Pathogene Variante im FBN1-Gen molekulargenetisch nachgewiesen. Diagnose genetisch gesichert. Unvollstaendige Penetranz dokumentiert."
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Condition/mii-exa-test-data-patient-3-seltene-genetic-diagnosis-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Condition/mii-exa-test-data-patient-3-seltene-genetic-diagnosis-2",
+    "resource" : {
+      "resourceType" : "Condition",
+      "id" : "mii-exa-test-data-patient-3-seltene-genetic-diagnosis-2",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-genetic-diagnosis"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Condition_mii-exa-test-data-patient-3-seltene-genetic-diagnosis-2\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Condition mii-exa-test-data-patient-3-seltene-genetic-diagnosis-2</b></p><a name=\"mii-exa-test-data-patient-3-seltene-genetic-diagnosis-2\"> </a><a name=\"hcmii-exa-test-data-patient-3-seltene-genetic-diagnosis-2\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-genetic-diagnosis\">MII PR SE Genetic Diagnosis</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>Condition Asserted Date</b>: 1995-03-01</p><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical resolved}\">Resolved</span></p><p><b>verificationStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}\">Confirmed</span></p><p><b>category</b>: <span title=\"Codes:{http://snomed.info/sct 782964007}\">Genetic disease</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 609569007}, {http://www.orpha.net 99886}, {http://fhir.de/CodeSystem/bfarm/icd-10-gm P70.2}\">Transienter neonataler Diabetes mellitus (6q24), remittiert</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-seltene-patient-1.html\">Luisa Seltenfall  Female, DoB: 1995-02-10 ( https://www.charite.de/fhir/sid/patientenidentifikation#SELT-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-seltene-encounter-1.html\">Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2024-03-01 --&gt; 2024-03-25</a></p><p><b>onset</b>: 2 Wochen<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codewk = 'wk')</span></p><p><b>abatement</b>: 9 Monate<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemo = 'mo')</span></p><p><b>recordedDate</b>: 2025-04-15</p><h3>Evidences</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Detail</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 106221001}\">Genetic finding</span></td><td><a href=\"DiagnosticReport-mii-exa-test-data-seltene-molgen-befundbericht-1.html\">Diagnostic Report for 'Genetic analysis report' for '-&gt;Luisa Seltenfall  Female, DoB: 1995-02-10 ( https://www.charite.de/fhir/sid/patientenidentifikation#SELT-TEST-001)'</a></td></tr></table><p><b>note</b>: </p><blockquote><div><p>Anamnestisch transienter neonataler Diabetes mellitus, unter Insulintherapie im Saeuglingsalter remittiert.</p>\n</div></blockquote></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/condition-assertedDate",
+        "valueDateTime" : "1995-03-01"
+      }],
+      "clinicalStatus" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code" : "resolved"
+        }]
+      },
+      "verificationStatus" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code" : "confirmed"
+        }]
+      },
+      "category" : [{
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "782964007",
+          "display" : "Genetic disease"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "609569007",
+          "display" : "Diabetes mellitus due to genetic defect in beta cell function (disorder)"
+        },
+        {
+          "system" : "http://www.orpha.net",
+          "code" : "99886",
+          "display" : "Transient neonatal diabetes mellitus"
+        },
+        {
+          "system" : "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+          "version" : "2025",
+          "code" : "P70.2",
+          "display" : "Diabetes mellitus beim Neugeborenen"
+        }],
+        "text" : "Transienter neonataler Diabetes mellitus (6q24), remittiert"
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-seltene-patient-1"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-seltene-encounter-1"
+      },
+      "onsetAge" : {
+        "extension" : [{
+          "url" : "http://fhir.de/StructureDefinition/lebensphase",
+          "valueCodeableConcept" : {
+            "coding" : [{
+              "system" : "http://snomed.info/sct",
+              "code" : "255407002",
+              "display" : "Neonatal (qualifier value)"
+            }]
+          }
+        }],
+        "value" : 2,
+        "unit" : "Wochen",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "wk"
+      },
+      "abatementAge" : {
+        "extension" : [{
+          "url" : "http://fhir.de/StructureDefinition/lebensphase",
+          "valueCodeableConcept" : {
+            "coding" : [{
+              "system" : "http://snomed.info/sct",
+              "code" : "3658006",
+              "display" : "Infancy (qualifier value)"
+            }]
+          }
+        }],
+        "value" : 9,
+        "unit" : "Monate",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "mo"
+      },
+      "recordedDate" : "2025-04-15",
+      "evidence" : [{
+        "code" : [{
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "106221001",
+            "display" : "Genetic finding"
+          }]
+        }],
+        "detail" : [{
+          "reference" : "DiagnosticReport/mii-exa-test-data-seltene-molgen-befundbericht-1"
+        }]
+      }],
+      "note" : [{
+        "text" : "Anamnestisch transienter neonataler Diabetes mellitus, unter Insulintherapie im Saeuglingsalter remittiert."
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Condition/mii-exa-test-data-patient-3-seltene-genetic-diagnosis-2"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Condition/mii-exa-test-data-patient-3-seltene-symptom-condition-1",
+    "resource" : {
+      "resourceType" : "Condition",
+      "id" : "mii-exa-test-data-patient-3-seltene-symptom-condition-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-symptom-condition"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Condition_mii-exa-test-data-patient-3-seltene-symptom-condition-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Condition mii-exa-test-data-patient-3-seltene-symptom-condition-1</b></p><a name=\"mii-exa-test-data-patient-3-seltene-symptom-condition-1\"> </a><a name=\"hcmii-exa-test-data-patient-3-seltene-symptom-condition-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-symptom-condition\">MII Profile SE Symptom Condition</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>identifier</b>: <code>https://www.charite.de/fhir/sid/seltene-symptom</code>/SE-SYMPTOM-2025-001</p><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}\">Active</span></p><p><b>verificationStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}\">Confirmed</span></p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-category problem-list-item}\">Problem List Item</span></p><p><b>severity</b>: <span title=\"Codes:{http://human-phenotype-ontology.org HP:0012825}\">Mild</span></p><p><b>code</b>: <span title=\"Codes:{http://purl.obolibrary.org/obo/hp.owl HP:0000098}, {http://snomed.info/sct 15456002}, {http://fhir.de/CodeSystem/bfarm/icd-10-gm E34.4}, {http://purl.obolibrary.org/obo/mondo.owl MONDO:0007064}\">Hochwuchs bei Marfan-Syndrom</span></p><p><b>bodySite</b>: <span title=\"Codes:{http://snomed.info/sct 38266002}\">Entire body as a whole</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-seltene-patient-1.html\">Luisa Seltenfall  Female, DoB: 1995-02-10 ( https://www.charite.de/fhir/sid/patientenidentifikation#SELT-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-seltene-encounter-1.html\">Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2024-03-01 --&gt; 2024-03-25</a></p><p><b>onset</b>: 14 years<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codea = 'a')</span></p><p><b>recordedDate</b>: 2025-03-10</p><h3>Stages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Summary</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://human-phenotype-ontology.org HP:0012825}\">Mild</span></td></tr></table><h3>Evidences</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Detail</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://human-phenotype-ontology.org HP:0000098}\">Tall stature</span></td><td><a href=\"Observation-mii-exa-test-data-patient-3-seltene-hpo-assessment-4.html\">Observation Tall stature</a></td></tr></table><p><b>note</b>: </p><blockquote><div><p>Hochwuchs seit der Adoleszenz, typisch fuer Marfan-Syndrom. 195 cm bei Alter 30.</p>\n</div></blockquote></div>"
+      },
+      "identifier" : [{
+        "system" : "https://www.charite.de/fhir/sid/seltene-symptom",
+        "value" : "SE-SYMPTOM-2025-001"
+      }],
+      "clinicalStatus" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code" : "active",
+          "display" : "Active"
+        }]
+      },
+      "verificationStatus" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code" : "confirmed",
+          "display" : "Confirmed"
+        }]
+      },
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code" : "problem-list-item",
+          "display" : "Problem List Item"
+        }]
+      }],
+      "severity" : {
+        "coding" : [{
+          "system" : "http://human-phenotype-ontology.org",
+          "code" : "HP:0012825",
+          "display" : "Mild"
+        }]
+      },
+      "code" : {
+        "coding" : [{
+          "system" : "http://purl.obolibrary.org/obo/hp.owl",
+          "code" : "HP:0000098",
+          "display" : "Tall stature"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "15456002",
+          "display" : "Tall stature"
+        },
+        {
+          "system" : "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+          "version" : "2026",
+          "code" : "E34.4",
+          "display" : "Konstitutioneller Hochwuchs"
+        },
+        {
+          "system" : "http://purl.obolibrary.org/obo/mondo.owl",
+          "code" : "MONDO:0007064",
+          "display" : "Marfan syndrome"
+        }],
+        "text" : "Hochwuchs bei Marfan-Syndrom"
+      },
+      "bodySite" : [{
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "38266002",
+          "display" : "Entire body as a whole"
+        }]
+      }],
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-seltene-patient-1"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-seltene-encounter-1"
+      },
+      "onsetAge" : {
+        "value" : 14,
+        "unit" : "years",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "a"
+      },
+      "recordedDate" : "2025-03-10",
+      "stage" : [{
+        "summary" : {
+          "coding" : [{
+            "system" : "http://human-phenotype-ontology.org",
+            "code" : "HP:0012825",
+            "display" : "Mild"
+          }]
+        }
+      }],
+      "evidence" : [{
+        "code" : [{
+          "coding" : [{
+            "system" : "http://human-phenotype-ontology.org",
+            "code" : "HP:0000098",
+            "display" : "Tall stature"
+          }]
+        }],
+        "detail" : [{
+          "reference" : "Observation/mii-exa-test-data-patient-3-seltene-hpo-assessment-4"
+        }]
+      }],
+      "note" : [{
+        "text" : "Hochwuchs seit der Adoleszenz, typisch fuer Marfan-Syndrom. 195 cm bei Alter 30."
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Condition/mii-exa-test-data-patient-3-seltene-symptom-condition-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Condition/mii-exa-test-data-patient-3-seltene-symptom-condition-2",
+    "resource" : {
+      "resourceType" : "Condition",
+      "id" : "mii-exa-test-data-patient-3-seltene-symptom-condition-2",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-symptom-condition"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Condition_mii-exa-test-data-patient-3-seltene-symptom-condition-2\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Condition mii-exa-test-data-patient-3-seltene-symptom-condition-2</b></p><a name=\"mii-exa-test-data-patient-3-seltene-symptom-condition-2\"> </a><a name=\"hcmii-exa-test-data-patient-3-seltene-symptom-condition-2\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-symptom-condition\">MII Profile SE Symptom Condition</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>identifier</b>: <code>https://www.charite.de/fhir/sid/seltene-symptom</code>/SE-SYMPTOM-2025-002</p><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical inactive}\">Inactive</span></p><p><b>verificationStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}\">Confirmed</span></p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-category problem-list-item}\">Problem List Item</span></p><p><b>severity</b>: <span title=\"Codes:{http://human-phenotype-ontology.org HP:0012828}\">Severe</span></p><p><b>code</b>: <span title=\"Codes:{http://purl.obolibrary.org/obo/hp.owl HP:0002616}, {http://snomed.info/sct 128599005}\">Aortenwurzeldilatation</span></p><p><b>bodySite</b>: <span title=\"Codes:{http://snomed.info/sct 57034009}\">Aortic arch structure</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-seltene-patient-1.html\">Luisa Seltenfall  Female, DoB: 1995-02-10 ( https://www.charite.de/fhir/sid/patientenidentifikation#SELT-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-seltene-encounter-1.html\">Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2024-03-01 --&gt; 2024-03-25</a></p><p><b>onset</b>: 2024-06-15</p><p><b>abatement</b>: 2025-06-01</p><p><b>recordedDate</b>: 2024-06-15</p><h3>Stages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Summary</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://human-phenotype-ontology.org HP:0012828}\">Severe</span></td></tr></table><h3>Evidences</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Detail</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://human-phenotype-ontology.org HP:0002616}\">Aortic root aneurysm</span></td><td><a href=\"Observation-mii-exa-test-data-patient-3-seltene-hpo-assessment-1.html\">Observation Aortic root aneurysm</a></td></tr></table><p><b>note</b>: </p><blockquote><div><p>Nach operativer Korrektur inaktiv.</p>\n</div></blockquote></div>"
+      },
+      "identifier" : [{
+        "system" : "https://www.charite.de/fhir/sid/seltene-symptom",
+        "value" : "SE-SYMPTOM-2025-002"
+      }],
+      "clinicalStatus" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code" : "inactive",
+          "display" : "Inactive"
+        }]
+      },
+      "verificationStatus" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code" : "confirmed",
+          "display" : "Confirmed"
+        }]
+      },
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code" : "problem-list-item",
+          "display" : "Problem List Item"
+        }]
+      }],
+      "severity" : {
+        "coding" : [{
+          "system" : "http://human-phenotype-ontology.org",
+          "code" : "HP:0012828",
+          "display" : "Severe"
+        }]
+      },
+      "code" : {
+        "coding" : [{
+          "system" : "http://purl.obolibrary.org/obo/hp.owl",
+          "code" : "HP:0002616",
+          "display" : "Aortic root aneurysm"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "128599005",
+          "display" : "Structural disorder of heart"
+        }],
+        "text" : "Aortenwurzeldilatation"
+      },
+      "bodySite" : [{
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "57034009",
+          "display" : "Aortic arch structure"
+        }]
+      }],
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-seltene-patient-1"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-seltene-encounter-1"
+      },
+      "onsetDateTime" : "2024-06-15",
+      "abatementDateTime" : "2025-06-01",
+      "recordedDate" : "2024-06-15",
+      "stage" : [{
+        "summary" : {
+          "coding" : [{
+            "system" : "http://human-phenotype-ontology.org",
+            "code" : "HP:0012828",
+            "display" : "Severe"
+          }]
+        }
+      }],
+      "evidence" : [{
+        "code" : [{
+          "coding" : [{
+            "system" : "http://human-phenotype-ontology.org",
+            "code" : "HP:0002616",
+            "display" : "Aortic root aneurysm"
+          }]
+        }],
+        "detail" : [{
+          "reference" : "Observation/mii-exa-test-data-patient-3-seltene-hpo-assessment-1"
+        }]
+      }],
+      "note" : [{
+        "text" : "Nach operativer Korrektur inaktiv."
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Condition/mii-exa-test-data-patient-3-seltene-symptom-condition-2"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/ClinicalImpression/mii-exa-test-data-patient-3-seltene-clinical-impression-1",
+    "resource" : {
+      "resourceType" : "ClinicalImpression",
+      "id" : "mii-exa-test-data-patient-3-seltene-clinical-impression-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-clinical-impression"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"ClinicalImpression_mii-exa-test-data-patient-3-seltene-clinical-impression-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: ClinicalImpression mii-exa-test-data-patient-3-seltene-clinical-impression-1</b></p><a name=\"mii-exa-test-data-patient-3-seltene-clinical-impression-1\"> </a><a name=\"hcmii-exa-test-data-patient-3-seltene-clinical-impression-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-clinical-impression\">MII Profile SE Clinical Impression</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>identifier</b>: <code>https://www.charite.de/fhir/sid/seltene-clinical-impression</code>/SE-CI-2025-001</p><p><b>status</b>: Completed</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 389067005}\">Community health procedure</span></p><p><b>description</b>: Marfan-Sprechstunde: Erstvorstellung zur Abklaerung erblicher Bindegewebserkrankung</p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-seltene-patient-1.html\">Luisa Seltenfall  Female, DoB: 1995-02-10 ( https://www.charite.de/fhir/sid/patientenidentifikation#SELT-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-seltene-encounter-1.html\">Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2024-03-01 --&gt; 2024-03-25</a></p><p><b>effective</b>: 2025-03-10</p><p><b>date</b>: 2025-03-10</p><p><b>problem</b>: <a href=\"Condition-mii-exa-test-data-patient-3-seltene-clinical-diagnosis-1.html\">Condition Marfan syndrome</a></p><blockquote><p><b>investigation</b></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 271336007}\">Klinische Untersuchung und Bildgebung</span></p><p><b>item</b>: </p><ul><li><a href=\"Observation-mii-exa-test-data-patient-3-seltene-hpo-assessment-1.html\">Observation Aortic root aneurysm</a></li><li><a href=\"Observation-mii-exa-test-data-patient-3-seltene-hpo-assessment-3.html\">Observation Ectopia lentis</a></li><li><a href=\"Observation-mii-exa-test-data-patient-3-seltene-hpo-assessment-4.html\">Observation Tall stature</a></li></ul></blockquote><p><b>summary</b>: Patient mit V.a. Marfan-Syndrom vorgestellt. Aortenwurzeldilatation und Linsensubluxation nachgewiesen. Ghent-Kriterien erfuellt. Genetische Testung veranlasst.</p><blockquote><p><b>finding</b></p><p><b>itemCodeableConcept</b>: <span title=\"Codes:{http://human-phenotype-ontology.org HP:0002616}\">Aortic root aneurysm</span></p><p><b>itemReference</b>: <a href=\"Observation-mii-exa-test-data-patient-3-seltene-hpo-assessment-1.html\">Observation Aortic root aneurysm</a></p></blockquote><blockquote><p><b>finding</b></p><p><b>itemCodeableConcept</b>: <span title=\"Codes:{http://human-phenotype-ontology.org HP:0001083}\">Ectopia lentis</span></p><p><b>itemReference</b>: <a href=\"Observation-mii-exa-test-data-patient-3-seltene-hpo-assessment-3.html\">Observation Ectopia lentis</a></p></blockquote><blockquote><p><b>finding</b></p><p><b>itemCodeableConcept</b>: <span title=\"Codes:{http://human-phenotype-ontology.org HP:0000098}\">Tall stature</span></p><p><b>itemReference</b>: <a href=\"Observation-mii-exa-test-data-patient-3-seltene-hpo-assessment-4.html\">Observation Tall stature</a></p></blockquote><p><b>supportingInfo</b>: </p><ul><li><a href=\"DiagnosticReport-mii-exa-test-data-seltene-molgen-befundbericht-1.html\">Diagnostic Report for 'Genetic analysis report' for '-&gt;Luisa Seltenfall  Female, DoB: 1995-02-10 ( https://www.charite.de/fhir/sid/patientenidentifikation#SELT-TEST-001)'</a></li><li><a href=\"Condition-mii-exa-test-data-patient-3-seltene-symptom-condition-1.html\">Condition Tall stature</a></li></ul><p><b>note</b>: , </p><blockquote><div><p>Erstvorstellung in der Marfan-Sprechstunde. Klinische Diagnose gesichert, molekulargenetische Bestaetigung ausstehend.</p>\n</div></blockquote><blockquote><div><p>Therapieplan erstellt: Losartan 50mg taeglich, jaehrliche Echokardiographie.</p>\n</div></blockquote></div>"
+      },
+      "identifier" : [{
+        "system" : "https://www.charite.de/fhir/sid/seltene-clinical-impression",
+        "value" : "SE-CI-2025-001"
+      }],
+      "status" : "completed",
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "389067005",
+          "display" : "Community health procedure"
+        }]
+      },
+      "description" : "Marfan-Sprechstunde: Erstvorstellung zur Abklaerung erblicher Bindegewebserkrankung",
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-seltene-patient-1"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-seltene-encounter-1"
+      },
+      "effectiveDateTime" : "2025-03-10",
+      "date" : "2025-03-10",
+      "problem" : [{
+        "reference" : "Condition/mii-exa-test-data-patient-3-seltene-clinical-diagnosis-1"
+      }],
+      "investigation" : [{
+        "code" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "271336007",
+            "display" : "Examination / signs"
+          }],
+          "text" : "Klinische Untersuchung und Bildgebung"
+        },
+        "item" : [{
+          "reference" : "Observation/mii-exa-test-data-patient-3-seltene-hpo-assessment-1"
+        },
+        {
+          "reference" : "Observation/mii-exa-test-data-patient-3-seltene-hpo-assessment-3"
+        },
+        {
+          "reference" : "Observation/mii-exa-test-data-patient-3-seltene-hpo-assessment-4"
+        }]
+      }],
+      "summary" : "Patient mit V.a. Marfan-Syndrom vorgestellt. Aortenwurzeldilatation und Linsensubluxation nachgewiesen. Ghent-Kriterien erfuellt. Genetische Testung veranlasst.",
+      "finding" : [{
+        "itemCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://human-phenotype-ontology.org",
+            "code" : "HP:0002616",
+            "display" : "Aortic root aneurysm"
+          }]
+        },
+        "itemReference" : {
+          "reference" : "Observation/mii-exa-test-data-patient-3-seltene-hpo-assessment-1"
+        }
+      },
+      {
+        "itemCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://human-phenotype-ontology.org",
+            "code" : "HP:0001083",
+            "display" : "Ectopia lentis"
+          }]
+        },
+        "itemReference" : {
+          "reference" : "Observation/mii-exa-test-data-patient-3-seltene-hpo-assessment-3"
+        }
+      },
+      {
+        "itemCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://human-phenotype-ontology.org",
+            "code" : "HP:0000098",
+            "display" : "Tall stature"
+          }]
+        },
+        "itemReference" : {
+          "reference" : "Observation/mii-exa-test-data-patient-3-seltene-hpo-assessment-4"
+        }
+      }],
+      "supportingInfo" : [{
+        "reference" : "DiagnosticReport/mii-exa-test-data-seltene-molgen-befundbericht-1"
+      },
+      {
+        "reference" : "Condition/mii-exa-test-data-patient-3-seltene-symptom-condition-1"
+      }],
+      "note" : [{
+        "text" : "Erstvorstellung in der Marfan-Sprechstunde. Klinische Diagnose gesichert, molekulargenetische Bestaetigung ausstehend."
+      },
+      {
+        "text" : "Therapieplan erstellt: Losartan 50mg taeglich, jaehrliche Echokardiographie."
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "ClinicalImpression/mii-exa-test-data-patient-3-seltene-clinical-impression-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/FamilyMemberHistory/mii-exa-test-data-patient-3-seltene-familienanamnese-1",
+    "resource" : {
+      "resourceType" : "FamilyMemberHistory",
+      "id" : "mii-exa-test-data-patient-3-seltene-familienanamnese-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-familienanamnese"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"FamilyMemberHistory_mii-exa-test-data-patient-3-seltene-familienanamnese-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: FamilyMemberHistory mii-exa-test-data-patient-3-seltene-familienanamnese-1</b></p><a name=\"mii-exa-test-data-patient-3-seltene-familienanamnese-1\"> </a><a name=\"hcmii-exa-test-data-patient-3-seltene-familienanamnese-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-familienanamnese\">MII PR SE Familienanamnese</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>de/fhir/ext/modul-seltene/StructureDefinition/von-seltene-betroffen</b>: <span title=\"Codes:{http://snomed.info/sct 373066001}\">Yes</span></p><p><b>status</b>: Completed</p><p><b>patient</b>: <a href=\"Patient-mii-exa-test-data-seltene-patient-1.html\">Luisa Seltenfall  Female, DoB: 1995-02-10 ( https://www.charite.de/fhir/sid/patientenidentifikation#SELT-TEST-001)</a></p><p><b>date</b>: 2025-03-10</p><p><b>relationship</b>: <span title=\"Codes:{http://snomed.info/sct 65656005}\">Natural mother</span></p><p><b>sex</b>: <span title=\"Codes:{http://hl7.org/fhir/administrative-gender female}\">Female</span></p><p><b>born</b>: 1960</p><p><b>deceased</b>: false</p><blockquote><p><b>condition</b></p><p><b>MII EX SE Penetrance</b>: <span title=\"Codes:{http://human-phenotype-ontology.org HP:0003829}\">Incomplete penetrance</span></p><p><b>code</b>: <span title=\"Codes:{http://fhir.de/CodeSystem/bfarm/icd-10-gm Q87.4}, {http://www.orpha.net 558}, {http://purl.obolibrary.org/obo/mondo.owl MONDO:0007064}\">Marfan-Syndrom</span></p><p><b>contributedToDeath</b>: false</p><p><b>onset</b>: 25 years<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codea = 'a')</span></p></blockquote><blockquote><p><b>condition</b></p><p><b>code</b>: <span title=\"Codes:{http://fhir.de/CodeSystem/bfarm/icd-10-gm I71.2}, {http://snomed.info/sct 233985008}\">Aneurysma der Aorta thoracica, ohne Angabe einer Ruptur</span></p><p><b>contributedToDeath</b>: false</p><p><b>onset</b>: 50 years<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codea = 'a')</span></p></blockquote></div>"
+      },
+      "extension" : [{
+        "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/von-seltene-betroffen",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "373066001",
+            "display" : "Yes"
+          }]
+        }
+      }],
+      "status" : "completed",
+      "patient" : {
+        "reference" : "Patient/mii-exa-test-data-seltene-patient-1"
+      },
+      "date" : "2025-03-10",
+      "relationship" : {
+        "coding" : [{
+          "extension" : [{
+            "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/mii-ex-molgen-verwandtschaftsgrad",
+            "valueCoding" : {
+              "system" : "http://snomed.info/sct",
+              "code" : "125678001",
+              "display" : "First degree blood relative (person)"
+            }
+          },
+          {
+            "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/mii-ex-molgen-verwandtschaftsverhaeltnis",
+            "valueCoding" : {
+              "system" : "http://snomed.info/sct",
+              "code" : "13646006",
+              "display" : "Natural parent (person)"
+            }
+          },
+          {
+            "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/mii-ex-molgen-familiare-linie",
+            "valueCoding" : {
+              "system" : "http://snomed.info/sct",
+              "code" : "72705000",
+              "display" : "Mother (person)"
+            }
+          }],
+          "system" : "http://snomed.info/sct",
+          "code" : "65656005",
+          "display" : "Natural mother"
+        }]
+      },
+      "sex" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/administrative-gender",
+          "code" : "female"
+        }]
+      },
+      "bornDate" : "1960",
+      "deceasedBoolean" : false,
+      "condition" : [{
+        "extension" : [{
+          "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-ex-seltene-penetrance",
+          "valueCodeableConcept" : {
+            "coding" : [{
+              "system" : "http://human-phenotype-ontology.org",
+              "code" : "HP:0003829",
+              "display" : "Incomplete penetrance"
+            }]
+          }
+        }],
+        "code" : {
+          "coding" : [{
+            "system" : "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+            "version" : "2024",
+            "code" : "Q87.4",
+            "display" : "Marfan-Syndrom"
+          },
+          {
+            "system" : "http://www.orpha.net",
+            "code" : "558",
+            "display" : "Marfan syndrome"
+          },
+          {
+            "system" : "http://purl.obolibrary.org/obo/mondo.owl",
+            "code" : "MONDO:0007064",
+            "display" : "Marfan syndrome"
+          }]
+        },
+        "contributedToDeath" : false,
+        "onsetAge" : {
+          "value" : 25,
+          "unit" : "years",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "a"
+        }
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+            "version" : "2024",
+            "code" : "I71.2",
+            "display" : "Aneurysma der Aorta thoracica, ohne Angabe einer Ruptur"
+          },
+          {
+            "system" : "http://snomed.info/sct",
+            "code" : "233985008",
+            "display" : "Abdominal aortic aneurysm"
+          }]
+        },
+        "contributedToDeath" : false,
+        "onsetAge" : {
+          "value" : 50,
+          "unit" : "years",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "a"
+        }
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "FamilyMemberHistory/mii-exa-test-data-patient-3-seltene-familienanamnese-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/FamilyMemberHistory/mii-exa-test-data-patient-3-seltene-familienanamnese-2",
+    "resource" : {
+      "resourceType" : "FamilyMemberHistory",
+      "id" : "mii-exa-test-data-patient-3-seltene-familienanamnese-2",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-familienanamnese"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"FamilyMemberHistory_mii-exa-test-data-patient-3-seltene-familienanamnese-2\"> </a><p class=\"res-header-id\"><b>Generated Narrative: FamilyMemberHistory mii-exa-test-data-patient-3-seltene-familienanamnese-2</b></p><a name=\"mii-exa-test-data-patient-3-seltene-familienanamnese-2\"> </a><a name=\"hcmii-exa-test-data-patient-3-seltene-familienanamnese-2\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-familienanamnese\">MII PR SE Familienanamnese</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>de/fhir/ext/modul-seltene/StructureDefinition/von-seltene-betroffen</b>: <span title=\"Codes:{http://snomed.info/sct 373067005}\">No</span></p><p><b>status</b>: Completed</p><p><b>patient</b>: <a href=\"Patient-mii-exa-test-data-seltene-patient-1.html\">Luisa Seltenfall  Female, DoB: 1995-02-10 ( https://www.charite.de/fhir/sid/patientenidentifikation#SELT-TEST-001)</a></p><p><b>relationship</b>: <span title=\"Codes:{http://snomed.info/sct 66839005}\">Father</span></p><p><b>sex</b>: <span title=\"Codes:{http://hl7.org/fhir/administrative-gender male}\">Male</span></p><p><b>born</b>: 1957</p><p><b>deceased</b>: 72 years<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codea = 'a')</span></p><h3>Conditions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>ContributedToDeath</b></td><td><b>Onset[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://fhir.de/CodeSystem/bfarm/icd-10-gm I25.1}\">Atherosklerotische Herzkrankheit</span></td><td>true</td><td>60 years<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codea = 'a')</span></td></tr></table></div>"
+      },
+      "extension" : [{
+        "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/von-seltene-betroffen",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "373067005",
+            "display" : "No"
+          }]
+        }
+      }],
+      "status" : "completed",
+      "patient" : {
+        "reference" : "Patient/mii-exa-test-data-seltene-patient-1"
+      },
+      "relationship" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "66839005",
+          "display" : "Father"
+        }]
+      },
+      "sex" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/administrative-gender",
+          "code" : "male"
+        }]
+      },
+      "bornDate" : "1957",
+      "deceasedAge" : {
+        "value" : 72,
+        "unit" : "years",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "a"
+      },
+      "condition" : [{
+        "code" : {
+          "coding" : [{
+            "system" : "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+            "version" : "2024",
+            "code" : "I25.1",
+            "display" : "Atherosklerotische Herzkrankheit"
+          }]
+        },
+        "contributedToDeath" : true,
+        "onsetAge" : {
+          "value" : 60,
+          "unit" : "years",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "a"
+        }
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "FamilyMemberHistory/mii-exa-test-data-patient-3-seltene-familienanamnese-2"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/FamilyMemberHistory/mii-exa-test-data-patient-3-seltene-familienanamnese-3",
+    "resource" : {
+      "resourceType" : "FamilyMemberHistory",
+      "id" : "mii-exa-test-data-patient-3-seltene-familienanamnese-3",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-familienanamnese"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"FamilyMemberHistory_mii-exa-test-data-patient-3-seltene-familienanamnese-3\"> </a><p class=\"res-header-id\"><b>Generated Narrative: FamilyMemberHistory mii-exa-test-data-patient-3-seltene-familienanamnese-3</b></p><a name=\"mii-exa-test-data-patient-3-seltene-familienanamnese-3\"> </a><a name=\"hcmii-exa-test-data-patient-3-seltene-familienanamnese-3\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-familienanamnese\">MII PR SE Familienanamnese</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>de/fhir/ext/modul-seltene/StructureDefinition/von-seltene-betroffen</b>: <span title=\"Codes:{http://snomed.info/sct 373067005}\">No</span></p><p><b>status</b>: Completed</p><p><b>patient</b>: <a href=\"Patient-mii-exa-test-data-seltene-patient-1.html\">Luisa Seltenfall  Female, DoB: 1995-02-10 ( https://www.charite.de/fhir/sid/patientenidentifikation#SELT-TEST-001)</a></p><p><b>date</b>: 2025-03-10</p><p><b>relationship</b>: <span title=\"Codes:{http://snomed.info/sct 60614009}\">Natural brother</span></p><p><b>sex</b>: <span title=\"Codes:{http://hl7.org/fhir/administrative-gender male}\">Male</span></p><p><b>age</b>: 27 Jahre<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codea = 'a')</span></p><p><b>reasonCode</b>: <span title=\"Codes:{http://snomed.info/sct 19346006}, {http://fhir.de/CodeSystem/bfarm/icd-10-gm Q87.4}\">Marfan syndrome</span></p><p><b>reasonReference</b>: <a href=\"Condition-mii-exa-test-data-patient-3-seltene-clinical-diagnosis-1.html\">Condition Marfan syndrome</a></p></div>"
+      },
+      "extension" : [{
+        "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/von-seltene-betroffen",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "373067005",
+            "display" : "No"
+          }]
+        }
+      }],
+      "status" : "completed",
+      "patient" : {
+        "reference" : "Patient/mii-exa-test-data-seltene-patient-1"
+      },
+      "date" : "2025-03-10",
+      "relationship" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "60614009",
+          "display" : "Natural brother"
+        }]
+      },
+      "sex" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/administrative-gender",
+          "code" : "male"
+        }]
+      },
+      "ageAge" : {
+        "value" : 27,
+        "unit" : "Jahre",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "a"
+      },
+      "reasonCode" : [{
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "19346006",
+          "display" : "Marfan syndrome"
+        },
+        {
+          "system" : "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+          "version" : "2025",
+          "code" : "Q87.4",
+          "display" : "Marfan-Syndrom"
+        }]
+      }],
+      "reasonReference" : [{
+        "reference" : "Condition/mii-exa-test-data-patient-3-seltene-clinical-diagnosis-1"
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "FamilyMemberHistory/mii-exa-test-data-patient-3-seltene-familienanamnese-3"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/CarePlan/mii-exa-test-data-patient-3-seltene-therapieplan-1",
+    "resource" : {
+      "resourceType" : "CarePlan",
+      "id" : "mii-exa-test-data-patient-3-seltene-therapieplan-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-therapieplan"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"CarePlan_mii-exa-test-data-patient-3-seltene-therapieplan-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: CarePlan mii-exa-test-data-patient-3-seltene-therapieplan-1</b></p><a name=\"mii-exa-test-data-patient-3-seltene-therapieplan-1\"> </a><a name=\"hcmii-exa-test-data-patient-3-seltene-therapieplan-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-therapieplan\">MII PR SE Therapieplan</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Draft</p><p><b>intent</b>: Proposal</p><p><b>description</b>: Therapieplan fuer Patient mit Marfan-Syndrom: Medikamentoese Therapie mit Losartan, kardiologische Frueherkennung und Studieneinschluss</p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-seltene-patient-1.html\">Luisa Seltenfall  Female, DoB: 1995-02-10 ( https://www.charite.de/fhir/sid/patientenidentifikation#SELT-TEST-001)</a></p><p><b>created</b>: 2025-03-10</p><p><b>supportingInfo</b>: <a href=\"DiagnosticReport-mii-exa-test-data-seltene-molgen-befundbericht-1.html\">Diagnostic Report for 'Genetic analysis report' for '-&gt;Luisa Seltenfall  Female, DoB: 1995-02-10 ( https://www.charite.de/fhir/sid/patientenidentifikation#SELT-TEST-001)'</a></p><blockquote><p><b>activity</b></p><h3>Details</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Status</b></td><td><b>StatusReason</b></td></tr><tr><td style=\"display: none\">*</td><td>Not Started</td><td><span title=\"Codes:{https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/CodeSystem/mii-cs-seltene-empfehlung-status-begruendung no-target}\">Keine therapeutische Konsequenz</span></td></tr></table></blockquote><blockquote><p><b>activity</b></p><h3>Details</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Status</b></td></tr><tr><td style=\"display: none\">*</td><td>Scheduled</td></tr></table></blockquote><blockquote><p><b>activity</b></p><p><b>reference</b>: <a href=\"ServiceRequest-mii-exa-test-data-patient-3-seltene-studieneinschluss-1.html\">ServiceRequest Referral to clinical trial (procedure)</a></p></blockquote></div>"
+      },
+      "status" : "draft",
+      "intent" : "proposal",
+      "description" : "Therapieplan fuer Patient mit Marfan-Syndrom: Medikamentoese Therapie mit Losartan, kardiologische Frueherkennung und Studieneinschluss",
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-seltene-patient-1"
+      },
+      "created" : "2025-03-10",
+      "supportingInfo" : [{
+        "reference" : "DiagnosticReport/mii-exa-test-data-seltene-molgen-befundbericht-1"
+      }],
+      "activity" : [{
+        "detail" : {
+          "status" : "not-started",
+          "statusReason" : {
+            "coding" : [{
+              "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/CodeSystem/mii-cs-seltene-empfehlung-status-begruendung",
+              "code" : "no-target",
+              "display" : "Keine therapeutische Konsequenz"
+            }]
+          }
+        }
+      },
+      {
+        "detail" : {
+          "status" : "scheduled"
+        }
+      },
+      {
+        "reference" : {
+          "reference" : "ServiceRequest/mii-exa-test-data-patient-3-seltene-studieneinschluss-1"
+        }
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "CarePlan/mii-exa-test-data-patient-3-seltene-therapieplan-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/MedicationRequest/mii-exa-test-data-patient-3-seltene-therapieempfehlung-1",
+    "resource" : {
+      "resourceType" : "MedicationRequest",
+      "id" : "mii-exa-test-data-patient-3-seltene-therapieempfehlung-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-therapieempfehlung"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"MedicationRequest_mii-exa-test-data-patient-3-seltene-therapieempfehlung-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: MedicationRequest mii-exa-test-data-patient-3-seltene-therapieempfehlung-1</b></p><a name=\"mii-exa-test-data-patient-3-seltene-therapieempfehlung-1\"> </a><a name=\"hcmii-exa-test-data-patient-3-seltene-therapieempfehlung-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-therapieempfehlung\">MII PR SE Therapieempfehlung Systemische Therapie</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>MII EX SE Empfehlung Priorität</b>: 1</p><p><b>de/fhir/ext/modul-seltene/StructureDefinition/mii-ex-seltene-empfehlung-evidenzgraduierung</b>: <span title=\"Codes:{https://www.cebm.ox.ac.uk/resources/levels-of-evidence 1A}\">Evidenzgrad 1A</span></p><p><b>MII EX SE Empfehlung Publikation</b>: <code>https://doi.org</code>/10.1016/j.ejphar.2015.03.048</p><p><b>identifier</b>: <code>https://www.charite.de/fhir/sid/therapieempfehlungen</code>/SE-TE-2025-0001</p><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>category</b>: <span title=\"Codes:{https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/CodeSystem/mii-cs-seltene-therapieempfehlung-strategie prevention-medication}\">Präventive Medikation</span>, <span title=\"Codes:{https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/CodeSystem/mii-cs-seltene-therapieempfehlung-typ symptomatic}\">Symptomatisch</span></p><p><b>medication</b>: <span title=\"Codes:{http://fhir.de/CodeSystem/bfarm/atc C09CA01}\">Losartan 50 mg Filmtabletten</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-seltene-patient-1.html\">Luisa Seltenfall  Female, DoB: 1995-02-10 ( https://www.charite.de/fhir/sid/patientenidentifikation#SELT-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-seltene-encounter-1.html\">Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2024-03-01 --&gt; 2024-03-25</a></p><p><b>authoredOn</b>: 2025-03-10</p><p><b>requester</b>: <a href=\"Practitioner-mii-exa-test-data-practitioner-physician-1.html\">Practitioner Rahel Hirsch </a></p><p><b>reasonCode</b>: <span title=\"Codes:{http://snomed.info/sct 19346006}\">Marfan syndrome</span></p><p><b>reasonReference</b>: <a href=\"Condition-mii-exa-test-data-patient-3-seltene-clinical-diagnosis-1.html\">Condition Marfan syndrome</a></p><p><b>basedOn</b>: <a href=\"CarePlan-mii-exa-test-data-patient-3-seltene-therapieplan-1.html\">CarePlan: status = draft; intent = proposal; description = Therapieplan fuer Patient mit Marfan-Syndrom: Medikamentoese Therapie mit Losartan, kardiologische Frueherkennung und Studieneinschluss; created = 2025-03-10</a></p><p><b>note</b>: </p><blockquote><div><p>Zieldosis 50 mg erreicht; Blutdruck- und Aortenwurzel-Kontrolle alle 6 Monate.</p>\n</div></blockquote><blockquote><p><b>dosageInstruction</b></p><p><b>sequence</b>: 1</p><p><b>text</b>: 50mg 1x taeglich morgens</p><p><b>timing</b>: Events: 2025-03-10 08:00:00+0100 , Count 365  times, Duration 5days , 1-2 per 1 day</p><p><b>asNeeded</b>: false</p><p><b>site</b>: <span title=\"Codes:{http://snomed.info/sct 123851003}\">Mouth region structure (body structure)</span></p><p><b>route</b>: <span title=\"Codes:{http://snomed.info/sct 26643006}\">Oral route (qualifier value)</span></p><blockquote><p><b>doseAndRate</b></p><p><b>dose</b>: 50 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span></p><p><b>rate</b>: 50 mg/Tag<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg/d = 'mg/d')</span></p></blockquote><blockquote><p><b>doseAndRate</b></p><p><b>dose</b>: 25-50 mg</p><p><b>rate</b>: 25-50 mg/Tag</p></blockquote><p><b>maxDosePerPeriod</b>: 100 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span>/1 Tag<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  coded = 'd')</span></p><p><b>maxDosePerAdministration</b>: 100 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span></p></blockquote><blockquote><p><b>dosageInstruction</b></p><p><b>sequence</b>: 2</p><p><b>text</b>: Zusaetzliche Einnahme montags 30 Minuten vor dem Fruehstueck bei Blutdruckspitzen, max. alle 1-2 Wochen</p><p><b>timing</b>: 30min , before breakfast, Once per 1-2 week</p><p><b>asNeeded</b>: <span title=\"Codes:{http://snomed.info/sct 38341003}\">Hypertensive disorder, systemic arterial (disorder)</span></p><p><b>route</b>: <span title=\"Codes:{http://snomed.info/sct 26643006}\">Oral route (qualifier value)</span></p><h3>DoseAndRates</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Dose[x]</b></td><td><b>Rate[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>25 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span></td><td>25 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span>/1 Woche<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codewk = 'wk')</span></td></tr></table></blockquote><blockquote><p><b>dosageInstruction</b></p><p><b>sequence</b>: 3</p><p><b>text</b>: Ausschleichen bei Therapieende: 25 mg taeglich ueber 1-2 Wochen</p><p><b>timing</b>: Once per 1 day</p><h3>DoseAndRates</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Dose[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>25 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span></td></tr></table></blockquote><blockquote><p><b>dosageInstruction</b></p><p><b>sequence</b>: 4</p><p><b>text</b>: Begleitende Einnahme im Beobachtungszeitraum der Studie</p><p><b>timing</b>: Once per 1 day</p><h3>DoseAndRates</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Dose[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>50 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span></td></tr></table></blockquote><h3>Substitutions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Allowed[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>true</td></tr></table><p><b>priorPrescription</b>: Losartan 25 mg Aufdosierungsphase (Identifier: <code>https://www.charite.de/fhir/sid/therapieempfehlungen</code>/SE-TE-2024-0117)</p></div>"
+      },
+      "extension" : [{
+        "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-ex-seltene-empfehlung-prioritaet",
+        "valuePositiveInt" : 1
+      },
+      {
+        "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-ex-seltene-empfehlung-evidenzgraduierung",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "https://www.cebm.ox.ac.uk/resources/levels-of-evidence",
+            "code" : "1A",
+            "display" : "Evidenzgrad 1A"
+          }]
+        }
+      },
+      {
+        "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-ex-seltene-empfehlung-publikation",
+        "valueIdentifier" : {
+          "system" : "https://doi.org",
+          "value" : "10.1016/j.ejphar.2015.03.048"
+        }
+      }],
+      "identifier" : [{
+        "system" : "https://www.charite.de/fhir/sid/therapieempfehlungen",
+        "value" : "SE-TE-2025-0001"
+      }],
+      "status" : "active",
+      "intent" : "proposal",
+      "category" : [{
+        "coding" : [{
+          "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/CodeSystem/mii-cs-seltene-therapieempfehlung-strategie",
+          "code" : "prevention-medication",
+          "display" : "Präventive Medikation"
+        }]
+      },
+      {
+        "coding" : [{
+          "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/CodeSystem/mii-cs-seltene-therapieempfehlung-typ",
+          "code" : "symptomatic",
+          "display" : "Symptomatisch"
+        }]
+      }],
+      "medicationCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
+          "version" : "2026",
+          "code" : "C09CA01",
+          "display" : "Losartan"
+        }],
+        "text" : "Losartan 50 mg Filmtabletten"
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-seltene-patient-1"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-seltene-encounter-1"
+      },
+      "authoredOn" : "2025-03-10",
+      "requester" : {
+        "reference" : "Practitioner/mii-exa-test-data-practitioner-physician-1"
+      },
+      "reasonCode" : [{
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "19346006",
+          "display" : "Marfan syndrome"
+        }]
+      }],
+      "reasonReference" : [{
+        "reference" : "Condition/mii-exa-test-data-patient-3-seltene-clinical-diagnosis-1"
+      }],
+      "basedOn" : [{
+        "reference" : "CarePlan/mii-exa-test-data-patient-3-seltene-therapieplan-1"
+      }],
+      "note" : [{
+        "text" : "Zieldosis 50 mg erreicht; Blutdruck- und Aortenwurzel-Kontrolle alle 6 Monate."
+      }],
+      "dosageInstruction" : [{
+        "sequence" : 1,
+        "text" : "50mg 1x taeglich morgens",
+        "timing" : {
+          "event" : ["2025-03-10T08:00:00+01:00"],
+          "repeat" : {
+            "boundsDuration" : {
+              "value" : 12,
+              "unit" : "Monate",
+              "system" : "http://unitsofmeasure.org",
+              "code" : "mo"
+            },
+            "count" : 365,
+            "countMax" : 400,
+            "duration" : 5,
+            "durationMax" : 10,
+            "durationUnit" : "min",
+            "frequency" : 1,
+            "frequencyMax" : 2,
+            "period" : 1,
+            "periodUnit" : "d",
+            "timeOfDay" : ["08:00:00"]
+          }
+        },
+        "asNeededBoolean" : false,
+        "site" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "123851003",
+            "display" : "Mouth region structure (body structure)"
+          }]
+        },
+        "route" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "26643006",
+            "display" : "Oral route (qualifier value)"
+          }]
+        },
+        "doseAndRate" : [{
+          "doseQuantity" : {
+            "value" : 50,
+            "unit" : "mg",
+            "system" : "http://unitsofmeasure.org",
+            "code" : "mg"
+          },
+          "rateQuantity" : {
+            "value" : 50,
+            "unit" : "mg/Tag",
+            "system" : "http://unitsofmeasure.org",
+            "code" : "mg/d"
+          }
+        },
+        {
+          "doseRange" : {
+            "low" : {
+              "value" : 25,
+              "unit" : "mg",
+              "system" : "http://unitsofmeasure.org",
+              "code" : "mg"
+            },
+            "high" : {
+              "value" : 50,
+              "unit" : "mg",
+              "system" : "http://unitsofmeasure.org",
+              "code" : "mg"
+            }
+          },
+          "rateRange" : {
+            "low" : {
+              "value" : 25,
+              "unit" : "mg/Tag",
+              "system" : "http://unitsofmeasure.org",
+              "code" : "mg/d"
+            },
+            "high" : {
+              "value" : 50,
+              "unit" : "mg/Tag",
+              "system" : "http://unitsofmeasure.org",
+              "code" : "mg/d"
+            }
+          }
+        }],
+        "maxDosePerPeriod" : {
+          "numerator" : {
+            "value" : 100,
+            "unit" : "mg",
+            "system" : "http://unitsofmeasure.org",
+            "code" : "mg"
+          },
+          "denominator" : {
+            "value" : 1,
+            "unit" : "Tag",
+            "system" : "http://unitsofmeasure.org",
+            "code" : "d"
+          }
+        },
+        "maxDosePerAdministration" : {
+          "value" : 100,
+          "unit" : "mg",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "mg"
+        }
+      },
+      {
+        "sequence" : 2,
+        "text" : "Zusaetzliche Einnahme montags 30 Minuten vor dem Fruehstueck bei Blutdruckspitzen, max. alle 1-2 Wochen",
+        "timing" : {
+          "repeat" : {
+            "frequency" : 1,
+            "period" : 1,
+            "periodMax" : 2,
+            "periodUnit" : "wk",
+            "dayOfWeek" : ["mon"],
+            "when" : ["ACM"],
+            "offset" : 30
+          }
+        },
+        "asNeededCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "38341003",
+            "display" : "Hypertensive disorder, systemic arterial (disorder)"
+          }]
+        },
+        "route" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "26643006",
+            "display" : "Oral route (qualifier value)"
+          }]
+        },
+        "doseAndRate" : [{
+          "doseQuantity" : {
+            "value" : 25,
+            "unit" : "mg",
+            "system" : "http://unitsofmeasure.org",
+            "code" : "mg"
+          },
+          "rateRatio" : {
+            "numerator" : {
+              "value" : 25,
+              "unit" : "mg",
+              "system" : "http://unitsofmeasure.org",
+              "code" : "mg"
+            },
+            "denominator" : {
+              "value" : 1,
+              "unit" : "Woche",
+              "system" : "http://unitsofmeasure.org",
+              "code" : "wk"
+            }
+          }
+        }]
+      },
+      {
+        "sequence" : 3,
+        "text" : "Ausschleichen bei Therapieende: 25 mg taeglich ueber 1-2 Wochen",
+        "timing" : {
+          "repeat" : {
+            "boundsRange" : {
+              "low" : {
+                "value" : 1,
+                "unit" : "Woche",
+                "system" : "http://unitsofmeasure.org",
+                "code" : "wk"
+              },
+              "high" : {
+                "value" : 2,
+                "unit" : "Wochen",
+                "system" : "http://unitsofmeasure.org",
+                "code" : "wk"
+              }
+            },
+            "frequency" : 1,
+            "period" : 1,
+            "periodUnit" : "d"
+          }
+        },
+        "doseAndRate" : [{
+          "doseQuantity" : {
+            "value" : 25,
+            "unit" : "mg",
+            "system" : "http://unitsofmeasure.org",
+            "code" : "mg"
+          }
+        }]
+      },
+      {
+        "sequence" : 4,
+        "text" : "Begleitende Einnahme im Beobachtungszeitraum der Studie",
+        "timing" : {
+          "repeat" : {
+            "boundsPeriod" : {
+              "start" : "2025-03-10",
+              "end" : "2026-03-09"
+            },
+            "frequency" : 1,
+            "period" : 1,
+            "periodUnit" : "d"
+          }
+        },
+        "doseAndRate" : [{
+          "doseQuantity" : {
+            "value" : 50,
+            "unit" : "mg",
+            "system" : "http://unitsofmeasure.org",
+            "code" : "mg"
+          }
+        }]
+      }],
+      "substitution" : {
+        "allowedBoolean" : true
+      },
+      "priorPrescription" : {
+        "identifier" : {
+          "system" : "https://www.charite.de/fhir/sid/therapieempfehlungen",
+          "value" : "SE-TE-2024-0117"
+        },
+        "display" : "Losartan 25 mg Aufdosierungsphase"
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "MedicationRequest/mii-exa-test-data-patient-3-seltene-therapieempfehlung-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/ServiceRequest/mii-exa-test-data-patient-3-seltene-therapie-nicht-med-1",
+    "resource" : {
+      "resourceType" : "ServiceRequest",
+      "id" : "mii-exa-test-data-patient-3-seltene-therapie-nicht-med-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-therapieempfehlung-nicht-medikamentoes"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"ServiceRequest_mii-exa-test-data-patient-3-seltene-therapie-nicht-med-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: ServiceRequest mii-exa-test-data-patient-3-seltene-therapie-nicht-med-1</b></p><a name=\"mii-exa-test-data-patient-3-seltene-therapie-nicht-med-1\"> </a><a name=\"hcmii-exa-test-data-patient-3-seltene-therapie-nicht-med-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-therapieempfehlung-nicht-medikamentoes\">MII PR SE Therapieempfehlung Nicht-Medikamentös</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>MII EX SE Empfehlung Priorität</b>: 2</p><p><b>MII EX SE Empfehlung Publikation</b>: ESC Guidelines on Marfan Syndrome 2024</p><p><b>status</b>: Draft</p><p><b>intent</b>: Proposal</p><p><b>category</b>: <span title=\"Codes:{https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/CodeSystem/mii-cs-seltene-therapieempfehlung-strategie early-detection}\">Früherkennung</span>, <span title=\"Codes:{https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/CodeSystem/mii-cs-seltene-therapieempfehlung-typ symptomatic}\">Symptomatisch</span></p><p><b>priority</b>: Routine</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 312851005}, {http://fhir.de/CodeSystem/bfarm/ops 3-052}, {http://loinc.org 34552-0}\">Jaehrliche kardiologische Kontrolle mittels Echokardiographie bei Marfan-Syndrom</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-seltene-patient-1.html\">Luisa Seltenfall  Female, DoB: 1995-02-10 ( https://www.charite.de/fhir/sid/patientenidentifikation#SELT-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-seltene-encounter-1.html\">Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2024-03-01 --&gt; 2024-03-25</a></p><p><b>occurrence</b>: Once per 1 year</p><p><b>requester</b>: <a href=\"Practitioner-mii-exa-test-data-practitioner-physician-1.html\">Practitioner Rahel Hirsch </a></p><p><b>performer</b>: <a href=\"Practitioner-mii-exa-test-data-practitioner-physician-2.html\">Practitioner Robert Koch (official)</a></p><p><b>reasonCode</b>: <span title=\"Codes:{http://snomed.info/sct 19346006}\">Marfan syndrome</span></p><p><b>reasonReference</b>: <a href=\"Condition-mii-exa-test-data-patient-3-seltene-clinical-diagnosis-1.html\">Condition Marfan syndrome</a></p><p><b>supportingInfo</b>: <a href=\"DiagnosticReport-mii-exa-test-data-seltene-molgen-befundbericht-1.html\">Diagnostic Report for 'Genetic analysis report' for '-&gt;Luisa Seltenfall  Female, DoB: 1995-02-10 ( https://www.charite.de/fhir/sid/patientenidentifikation#SELT-TEST-001)'</a></p><p><b>note</b>: </p><blockquote><div><p>Jaehrliche Echokardiographie zur Frueherkennung von Aortenwurzeldilatation empfohlen gemaess aktueller Leitlinie.</p>\n</div></blockquote></div>"
+      },
+      "extension" : [{
+        "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-ex-seltene-empfehlung-prioritaet",
+        "valuePositiveInt" : 2
+      },
+      {
+        "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-ex-seltene-empfehlung-publikation",
+        "valueString" : "ESC Guidelines on Marfan Syndrome 2024"
+      }],
+      "status" : "draft",
+      "intent" : "proposal",
+      "category" : [{
+        "coding" : [{
+          "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/CodeSystem/mii-cs-seltene-therapieempfehlung-strategie",
+          "code" : "early-detection",
+          "display" : "Früherkennung"
+        }]
+      },
+      {
+        "coding" : [{
+          "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/CodeSystem/mii-cs-seltene-therapieempfehlung-typ",
+          "code" : "symptomatic",
+          "display" : "Symptomatisch"
+        }]
+      }],
+      "priority" : "routine",
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "312851005",
+          "display" : "Screening for disorder"
+        },
+        {
+          "system" : "http://fhir.de/CodeSystem/bfarm/ops",
+          "version" : "2026",
+          "code" : "3-052",
+          "display" : "Transthorakale Echokardiographie"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "34552-0",
+          "display" : "Cardiology Diagnostic study"
+        }],
+        "text" : "Jaehrliche kardiologische Kontrolle mittels Echokardiographie bei Marfan-Syndrom"
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-seltene-patient-1"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-seltene-encounter-1"
+      },
+      "occurrenceTiming" : {
+        "repeat" : {
+          "frequency" : 1,
+          "period" : 1,
+          "periodUnit" : "a"
+        }
+      },
+      "requester" : {
+        "reference" : "Practitioner/mii-exa-test-data-practitioner-physician-1"
+      },
+      "performer" : [{
+        "reference" : "Practitioner/mii-exa-test-data-practitioner-physician-2"
+      }],
+      "reasonCode" : [{
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "19346006",
+          "display" : "Marfan syndrome"
+        }]
+      }],
+      "reasonReference" : [{
+        "reference" : "Condition/mii-exa-test-data-patient-3-seltene-clinical-diagnosis-1"
+      }],
+      "supportingInfo" : [{
+        "reference" : "DiagnosticReport/mii-exa-test-data-seltene-molgen-befundbericht-1"
+      }],
+      "note" : [{
+        "text" : "Jaehrliche Echokardiographie zur Frueherkennung von Aortenwurzeldilatation empfohlen gemaess aktueller Leitlinie."
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "ServiceRequest/mii-exa-test-data-patient-3-seltene-therapie-nicht-med-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/ServiceRequest/mii-exa-test-data-patient-3-seltene-studieneinschluss-1",
+    "resource" : {
+      "resourceType" : "ServiceRequest",
+      "id" : "mii-exa-test-data-patient-3-seltene-studieneinschluss-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-studieneinschluss-anfrage"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"ServiceRequest_mii-exa-test-data-patient-3-seltene-studieneinschluss-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: ServiceRequest mii-exa-test-data-patient-3-seltene-studieneinschluss-1</b></p><a name=\"mii-exa-test-data-patient-3-seltene-studieneinschluss-1\"> </a><a name=\"hcmii-exa-test-data-patient-3-seltene-studieneinschluss-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-studieneinschluss-anfrage\">MII PR SE Studieneinschluss Anfrage</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>Request status reason</b>: <span title=\"Codes:{http://snomed.info/sct 385645004}\">Patient erfuellt Einschlusskriterien der Studie</span></p><p><b>MII EX SE Empfehlung Priorität</b>: 1</p><p><b>MII EX SE Empfehlung Publikation</b>: <code>https://doi.org</code>/10.1016/j.ahj.2020.09.005</p><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>category</b>: <span title=\"Codes:{http://snomed.info/sct 110465008}\">Clinical trial (procedure)</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 702475000}\">Referral to clinical trial (procedure)</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-seltene-patient-1.html\">Luisa Seltenfall  Female, DoB: 1995-02-10 ( https://www.charite.de/fhir/sid/patientenidentifikation#SELT-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-seltene-encounter-1.html\">Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2024-03-01 --&gt; 2024-03-25</a></p><p><b>reasonReference</b>: <a href=\"Condition-mii-exa-test-data-patient-3-seltene-clinical-diagnosis-1.html\">Condition Marfan syndrome</a></p><p><b>supportingInfo</b>: <a href=\"DiagnosticReport-mii-exa-test-data-seltene-molgen-befundbericht-1.html\">Diagnostic Report for 'Genetic analysis report' for '-&gt;Luisa Seltenfall  Female, DoB: 1995-02-10 ( https://www.charite.de/fhir/sid/patientenidentifikation#SELT-TEST-001)'</a></p></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/request-statusReason",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "385645004",
+            "display" : "Accepted"
+          }],
+          "text" : "Patient erfuellt Einschlusskriterien der Studie"
+        }
+      },
+      {
+        "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-ex-seltene-empfehlung-prioritaet",
+        "valuePositiveInt" : 1
+      },
+      {
+        "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-ex-seltene-empfehlung-publikation",
+        "valueIdentifier" : {
+          "system" : "https://doi.org",
+          "value" : "10.1016/j.ahj.2020.09.005"
+        }
+      }],
+      "status" : "active",
+      "intent" : "proposal",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "110465008",
+          "display" : "Clinical trial (procedure)"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "702475000",
+          "display" : "Referral to clinical trial (procedure)"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-seltene-patient-1"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-seltene-encounter-1"
+      },
+      "reasonReference" : [{
+        "reference" : "Condition/mii-exa-test-data-patient-3-seltene-clinical-diagnosis-1"
+      }],
+      "supportingInfo" : [{
+        "reference" : "DiagnosticReport/mii-exa-test-data-seltene-molgen-befundbericht-1"
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "ServiceRequest/mii-exa-test-data-patient-3-seltene-studieneinschluss-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/RequestGroup/mii-exa-test-data-patient-3-seltene-therapie-kombination-1",
+    "resource" : {
+      "resourceType" : "RequestGroup",
+      "id" : "mii-exa-test-data-patient-3-seltene-therapie-kombination-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-therapieempfehlung-kombination"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"RequestGroup_mii-exa-test-data-patient-3-seltene-therapie-kombination-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: RequestGroup mii-exa-test-data-patient-3-seltene-therapie-kombination-1</b></p><a name=\"mii-exa-test-data-patient-3-seltene-therapie-kombination-1\"> </a><a name=\"hcmii-exa-test-data-patient-3-seltene-therapie-kombination-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-therapieempfehlung-kombination\">MII PR SE Therapieempfehlung Kombinationstherapie</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>MII EX SE Empfehlung Priorität</b>: 1</p><p><b>de/fhir/ext/modul-seltene/StructureDefinition/mii-ex-seltene-empfehlung-evidenzgraduierung</b>: <span title=\"Codes:{https://www.cebm.ox.ac.uk/resources/levels-of-evidence 1A}\">Evidenzgrad 1A</span></p><p><b>MII EX SE Empfehlung Publikation</b>: Marfan-Leitlinie DGK 2024</p><p><b>identifier</b>: <code>https://www.charite.de/fhir/sid/seltene-kombination</code>/SE-KOMBI-2025-001</p><p><b>status</b>: Draft</p><p><b>intent</b>: Proposal</p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-seltene-patient-1.html\">Luisa Seltenfall  Female, DoB: 1995-02-10 ( https://www.charite.de/fhir/sid/patientenidentifikation#SELT-TEST-001)</a></p><h3>Actions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Resource</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"MedicationRequest-mii-exa-test-data-patient-3-seltene-therapieempfehlung-1.html\">MedicationRequest: extension = 1,Evidenzgrad 1A,https://doi.org#10.1016/j.ejphar.2015.03.048; identifier = https://www.charite.de/fhir/sid/therapieempfehlungen#SE-TE-2025-0001; status = active; intent = proposal; category = Präventive Medikation,Symptomatisch; medication[x] = Losartan; authoredOn = 2025-03-10; reasonCode = Marfan syndrome; note = Zieldosis 50 mg erreicht; Blutdruck- und Aortenwurzel-Kontrolle alle 6 Monate.</a></td></tr></table></div>"
+      },
+      "extension" : [{
+        "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-ex-seltene-empfehlung-prioritaet",
+        "valuePositiveInt" : 1
+      },
+      {
+        "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-ex-seltene-empfehlung-evidenzgraduierung",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "https://www.cebm.ox.ac.uk/resources/levels-of-evidence",
+            "code" : "1A",
+            "display" : "Evidenzgrad 1A"
+          }]
+        }
+      },
+      {
+        "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-ex-seltene-empfehlung-publikation",
+        "valueString" : "Marfan-Leitlinie DGK 2024"
+      }],
+      "identifier" : [{
+        "system" : "https://www.charite.de/fhir/sid/seltene-kombination",
+        "value" : "SE-KOMBI-2025-001"
+      }],
+      "status" : "draft",
+      "intent" : "proposal",
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-seltene-patient-1"
+      },
+      "action" : [{
+        "resource" : {
+          "reference" : "MedicationRequest/mii-exa-test-data-patient-3-seltene-therapieempfehlung-1"
+        }
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "RequestGroup/mii-exa-test-data-patient-3-seltene-therapie-kombination-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Procedure/mii-exa-test-data-patient-3-seltene-therapie-durchgefuehrt-1",
+    "resource" : {
+      "resourceType" : "Procedure",
+      "id" : "mii-exa-test-data-patient-3-seltene-therapie-durchgefuehrt-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-therapie-durchgefuehrt"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Procedure_mii-exa-test-data-patient-3-seltene-therapie-durchgefuehrt-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Procedure mii-exa-test-data-patient-3-seltene-therapie-durchgefuehrt-1</b></p><a name=\"mii-exa-test-data-patient-3-seltene-therapie-durchgefuehrt-1\"> </a><a name=\"hcmii-exa-test-data-patient-3-seltene-therapie-durchgefuehrt-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-therapie-durchgefuehrt\">MII PR Seltene Erkrankungen Therapie Durchgeführt</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Completed</p><p><b>code</b>: <span title=\"Codes:{https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/CodeSystem/mii-cs-seltene-narse-therapietyp pharmakotherapie}\">Pharmakotherapie</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-seltene-patient-1.html\">Luisa Seltenfall  Female, DoB: 1995-02-10 ( https://www.charite.de/fhir/sid/patientenidentifikation#SELT-TEST-001)</a></p><p><b>performed</b>: 2025-03-15 --&gt; 2025-09-15</p></div>"
+      },
+      "status" : "completed",
+      "code" : {
+        "coding" : [{
+          "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/CodeSystem/mii-cs-seltene-narse-therapietyp",
+          "code" : "pharmakotherapie",
+          "display" : "Pharmakotherapie"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-seltene-patient-1"
+      },
+      "performedPeriod" : {
+        "start" : "2025-03-15",
+        "end" : "2025-09-15"
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Procedure/mii-exa-test-data-patient-3-seltene-therapie-durchgefuehrt-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Procedure/mii-exa-test-data-patient-3-seltene-therapie-durchgefuehrt-2",
+    "resource" : {
+      "resourceType" : "Procedure",
+      "id" : "mii-exa-test-data-patient-3-seltene-therapie-durchgefuehrt-2",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-therapie-durchgefuehrt"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Procedure_mii-exa-test-data-patient-3-seltene-therapie-durchgefuehrt-2\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Procedure mii-exa-test-data-patient-3-seltene-therapie-durchgefuehrt-2</b></p><a name=\"mii-exa-test-data-patient-3-seltene-therapie-durchgefuehrt-2\"> </a><a name=\"hcmii-exa-test-data-patient-3-seltene-therapie-durchgefuehrt-2\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-therapie-durchgefuehrt\">MII PR Seltene Erkrankungen Therapie Durchgeführt</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Completed</p><p><b>code</b>: <span title=\"Codes:{https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/CodeSystem/mii-cs-seltene-narse-therapietyp sonstiges}\">Sonstiges</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-seltene-patient-1.html\">Luisa Seltenfall  Female, DoB: 1995-02-10 ( https://www.charite.de/fhir/sid/patientenidentifikation#SELT-TEST-001)</a></p><p><b>performed</b>: 2025-05-20</p></div>"
+      },
+      "status" : "completed",
+      "code" : {
+        "coding" : [{
+          "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/CodeSystem/mii-cs-seltene-narse-therapietyp",
+          "code" : "sonstiges",
+          "display" : "Sonstiges"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-seltene-patient-1"
+      },
+      "performedDateTime" : "2025-05-20"
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Procedure/mii-exa-test-data-patient-3-seltene-therapie-durchgefuehrt-2"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-seltene-labobs-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-seltene-labobs-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-seltene-labobs-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-seltene-labobs-1</b></p><a name=\"mii-exa-test-data-seltene-labobs-1\"> </a><a name=\"hcmii-exa-test-data-seltene-labobs-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 2157-6}\">Creatine kinase [Enzymatic activity/volume] in Serum or Plasma</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-seltene-patient-1.html\">Luisa Seltenfall  Female, DoB: 1995-02-10 ( https://www.charite.de/fhir/sid/patientenidentifikation#SELT-TEST-001)</a></p><p><b>value</b>: 450 U/L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeU/L = 'U/L')</span></p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "2157-6",
+          "display" : "Creatine kinase [Enzymatic activity/volume] in Serum or Plasma"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-seltene-patient-1"
+      },
+      "valueQuantity" : {
+        "value" : 450,
+        "system" : "http://unitsofmeasure.org",
+        "code" : "U/L"
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-seltene-labobs-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/DiagnosticReport/mii-exa-test-data-seltene-molgen-befundbericht-1",
+    "resource" : {
+      "resourceType" : "DiagnosticReport",
+      "id" : "mii-exa-test-data-seltene-molgen-befundbericht-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"DiagnosticReport_mii-exa-test-data-seltene-molgen-befundbericht-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: DiagnosticReport mii-exa-test-data-seltene-molgen-befundbericht-1</b></p><a name=\"mii-exa-test-data-seltene-molgen-befundbericht-1\"> </a><a name=\"hcmii-exa-test-data-seltene-molgen-befundbericht-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><h2><span title=\"Codes:{http://loinc.org 51969-4}\">Genetic analysis report</span> </h2><table class=\"grid\"><tr><td>Subject</td><td>Luisa Seltenfall  Female, DoB: 1995-02-10 ( https://www.charite.de/fhir/sid/patientenidentifikation#SELT-TEST-001)</td></tr><tr><td>Relevant Time</td><td>2024-03-15</td></tr></table><p><b>Report Details</b></p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "51969-4",
+          "display" : "Genetic analysis report"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-seltene-patient-1"
+      },
+      "effectiveDateTime" : "2024-03-15"
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "DiagnosticReport/mii-exa-test-data-seltene-molgen-befundbericht-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-seltene-molgen-variante-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-seltene-molgen-variante-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-seltene-molgen-variante-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-seltene-molgen-variante-1</b></p><a name=\"mii-exa-test-data-seltene-molgen-variante-1\"> </a><a name=\"hcmii-exa-test-data-seltene-molgen-variante-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 69548-6}\">Genetic variant assessment</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-seltene-patient-1.html\">Luisa Seltenfall  Female, DoB: 1995-02-10 ( https://www.charite.de/fhir/sid/patientenidentifikation#SELT-TEST-001)</a></p><p><b>value</b>: <span title=\"Codes:{http://loinc.org LA6576-8}\">Positive</span></p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "69548-6",
+          "display" : "Genetic variant assessment"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-seltene-patient-1"
+      },
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "LA6576-8",
+          "display" : "Positive"
+        }]
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-seltene-molgen-variante-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Practitioner/mii-exa-test-data-practitioner-physician-1",
+    "resource" : {
+      "resourceType" : "Practitioner",
+      "id" : "mii-exa-test-data-practitioner-physician-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Practitioner_mii-exa-test-data-practitioner-physician-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Practitioner mii-exa-test-data-practitioner-physician-1</b></p><a name=\"mii-exa-test-data-practitioner-physician-1\"> </a><a name=\"hcmii-exa-test-data-practitioner-physician-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>active</b>: true</p><p><b>name</b>: Rahel Hirsch </p></div>"
+      },
+      "active" : true,
+      "name" : [{
+        "family" : "Hirsch",
+        "given" : ["Rahel"]
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Practitioner/mii-exa-test-data-practitioner-physician-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Practitioner/mii-exa-test-data-practitioner-physician-2",
+    "resource" : {
+      "resourceType" : "Practitioner",
+      "id" : "mii-exa-test-data-practitioner-physician-2",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Practitioner_mii-exa-test-data-practitioner-physician-2\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Practitioner mii-exa-test-data-practitioner-physician-2</b></p><a name=\"mii-exa-test-data-practitioner-physician-2\"> </a><a name=\"hcmii-exa-test-data-practitioner-physician-2\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>active</b>: true</p><p><b>name</b>: Robert Koch (Official)</p></div>"
+      },
+      "active" : true,
+      "name" : [{
+        "use" : "official",
+        "family" : "Koch",
+        "given" : ["Robert"],
+        "prefix" : ["Dr."]
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Practitioner/mii-exa-test-data-practitioner-physician-2"
+    }
+  }]
+}
+
+```

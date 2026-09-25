@@ -1,0 +1,106 @@
+{
+  "resourceType" : "Condition",
+  "id" : "mii-exa-test-data-patient-3-seltene-clinical-diagnosis-2",
+  "meta" : {
+    "source" : "https://www.charite.de/fhir/kds-testdata",
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-clinical-diagnosis"],
+    "security" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "code" : "HTEST",
+      "display" : "test health data"
+    }]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Condition mii-exa-test-data-patient-3-seltene-clinical-diagnosis-2</b></p><a name=\"mii-exa-test-data-patient-3-seltene-clinical-diagnosis-2\"> </a><a name=\"hcmii-exa-test-data-patient-3-seltene-clinical-diagnosis-2\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-clinical-diagnosis\">MII PR SE Clinical Diagnosis</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>Condition Asserted Date</b>: 2023-05-04</p><p><b>Condition Related</b>: <a href=\"Condition-mii-exa-test-data-patient-3-seltene-clinical-diagnosis-1.html\">Condition Marfan syndrome</a></p><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical resolved}\">Resolved</span></p><p><b>verificationStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}\">Confirmed</span></p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-category encounter-diagnosis}\">Encounter Diagnosis</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 77638001}, {http://fhir.de/CodeSystem/bfarm/icd-10-gm H27.1}\">Linsenluxation beidseits bei Marfan-Syndrom, nach Lensektomie behoben</span></p><p><b>bodySite</b>: <span title=\"Codes:{http://snomed.info/sct 78076003}\">Structure of crystalline lens (body structure)</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-seltene-patient-1.html\">Luisa Seltenfall  Female, DoB: 1995-02-10 ( https://www.charite.de/fhir/sid/patientenidentifikation#SELT-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-seltene-encounter-1.html\">Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2024-03-01 --&gt; 2024-03-25</a></p><p><b>onset</b>: 25 Jahre<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codea = 'a')</span></p><p><b>abatement</b>: 29 Jahre<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codea = 'a')</span></p><p><b>recordedDate</b>: 2023-05-04</p><p><b>note</b>: </p><blockquote><div><p>Beidseitige Linsenluxation, operativ versorgt (Lensektomie mit IOL); seither behoben.</p>\n</div></blockquote></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/condition-assertedDate",
+    "valueDateTime" : "2023-05-04"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/condition-related",
+    "valueReference" : {
+      "reference" : "Condition/mii-exa-test-data-patient-3-seltene-clinical-diagnosis-1"
+    }
+  }],
+  "clinicalStatus" : {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
+      "code" : "resolved"
+    }]
+  },
+  "verificationStatus" : {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+      "code" : "confirmed"
+    }]
+  },
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/condition-category",
+      "code" : "encounter-diagnosis"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "77638001",
+      "display" : "Ectopia lentis (disorder)"
+    },
+    {
+      "extension" : [{
+        "url" : "http://fhir.de/StructureDefinition/seitenlokalisation",
+        "valueCoding" : {
+          "system" : "https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_ICD_SEITENLOKALISATION",
+          "code" : "B",
+          "display" : "beiderseits"
+        }
+      }],
+      "system" : "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+      "version" : "2023",
+      "code" : "H27.1",
+      "display" : "Linsenluxation"
+    }],
+    "text" : "Linsenluxation beidseits bei Marfan-Syndrom, nach Lensektomie behoben"
+  },
+  "bodySite" : [{
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "78076003",
+      "display" : "Structure of crystalline lens (body structure)"
+    }]
+  }],
+  "subject" : {
+    "reference" : "Patient/mii-exa-test-data-seltene-patient-1"
+  },
+  "encounter" : {
+    "reference" : "Encounter/mii-exa-test-data-seltene-encounter-1"
+  },
+  "onsetAge" : {
+    "value" : 25,
+    "unit" : "Jahre",
+    "system" : "http://unitsofmeasure.org",
+    "code" : "a"
+  },
+  "abatementAge" : {
+    "extension" : [{
+      "url" : "http://fhir.de/StructureDefinition/lebensphase",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "41847000",
+          "display" : "Adulthood (qualifier value)"
+        }]
+      }
+    }],
+    "value" : 29,
+    "unit" : "Jahre",
+    "system" : "http://unitsofmeasure.org",
+    "code" : "a"
+  },
+  "recordedDate" : "2023-05-04",
+  "note" : [{
+    "text" : "Beidseitige Linsenluxation, operativ versorgt (Lensektomie mit IOL); seither behoben."
+  }]
+}

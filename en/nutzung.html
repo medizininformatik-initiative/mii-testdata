@@ -1,0 +1,407 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+
+
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Nutzung - MII KDS Test Data v2027.0.0-ballot</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <link href="assets/css/project.css" rel="stylesheet"/>
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Branding override for the fhir2.base.template CSS placeholder
+     (base ships includes/fragment-css.html as a single comment; it is included
+     in <head> AFTER all base stylesheets, so the linked files win the
+     cascade).
+     Load model (docs/styleguide.md §1/§10): bootstrap-accessibility.css
+     (PayPal Bootstrap Accessibility Plugin v1.0.7, vendored + pinned - §8)
+     patches Bootstrap-3 component styling for accessibility (focus outlines,
+     alert contrast) and loads FIRST so the template's own rules can override;
+     then template-base.css carries the
+     brand-INDEPENDENT rule blocks and always loads; then EXACTLY ONE palette
+     file follows - num-diz.css, the DEFAULT design, unless the consuming IG
+     ships input/data/brand.json with { "design": "mii" } (read as
+     site.data.brand.design via the base's input/data -> _data pre-process),
+     which selects mii.css instead. Only the exact value 'mii' selects the
+     MII design; anything else - including no brand.json at all and unknown
+     values - renders NUM-DIZ. Both palettes declare the same variable set
+     (scripts/brand-switch.test.mjs). -->
+<link href="assets/css/bootstrap-accessibility.css" rel="stylesheet"/>
+<link href="assets/css/template-base.css" rel="stylesheet"/>
+
+<link href="assets/css/num-diz.css" rel="stylesheet"/>
+
+
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+    <script type="text/javascript" src="assets/js/direction-management.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"2"}
+    h3,h4,h5,h6{--heading-prefix:"2"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Branding override for the fhir2.base.template header placeholder
+     (base ships includes/fragment-header.html as a single comment; it is included
+     inside "#segment-header > .container", before the #ig-status block).
+     Language handling: only the asset and its descriptive alt text switch on
+     include.lang (the pattern kerndatensatz-basis uses); no translatable UI
+     strings are hard-coded.
+     Brand handling: the project logo additionally switches on
+     site.data.brand.design (input/data/brand.json in the consuming IG, see
+     docs/styleguide.md §10). Only the exact value 'mii' selects the MII
+     logos - anything else, including no brand.json at all, falls through to
+     the NUM-DIZ default.
+     Two logos, mirroring kerndatensatz-basis: the HL7 FHIR logo (links to the
+     FHIR spec) in #family-nav, and the project logo in #project-nav.
+     fhir-logo-www.png is shipped by fhir2.base.template
+     (content/assets/images/), so it resolves from the inherited assets without
+     shipping it here. -->
+<div id="family-nav">
+  <a id="family-logo" no-external="true" href="https://hl7.org/fhir">
+    <img height="50" alt="HL7 FHIR" src="assets/images/fhir-logo-www.png"/>
+  </a>
+</div>
+<div id="project-nav">
+
+  <a id="project-logo" no-external="true" href="https://www.netzwerk-universitaetsmedizin.de/forschung/num-diz">
+
+    <img height="50" alt="NUM-DIZ (Network of University Medicine — Data Integration Center)" src="assets/images/logo-num-diz-en.svg"/>
+
+  </a>
+
+</div>
+<!-- Font-size control (A / A+ / A++): three reader-selectable levels; level A
+     is the untouched default. Logic in assets/js/font-size-control.js, the
+     zoom mapping + button styling in template-base.css ("font-size control"
+     block). All three buttons read "A" — the button's own font size shows the level; labels are language-neutral; only the aria texts switch
+     on include.lang. REMOVAL: delete this block, the js file and the CSS
+     block - one commit, styleguide §5a. -->
+
+<div class="ig-fontsize" role="group" aria-label="Font size">
+  <button type="button" data-level="0" aria-pressed="true" aria-label="Font size: default">A</button>
+  <button type="button" data-level="1" aria-pressed="false" aria-label="Font size: larger">A</button>
+  <button type="button" data-level="2" aria-pressed="false" aria-label="Font size: largest">A</button>
+</div>
+
+<script src="assets/js/font-size-control.js" defer></script>
+<!-- PayPal Bootstrap Accessibility Plugin v1.0.7 (vendored + pinned, §8):
+     patches the Bootstrap-3 components the publisher renders - navbar
+     dropdowns gain ARIA menu semantics + arrow-key navigation, tab panels
+     (structure-tabs) the full ARIA tabs pattern, alerts live-region
+     announcements. `defer` guarantees it executes AFTER the parser-inserted
+     bootstrap.min.js at the end of the body. Vendored from
+     paypal/bootstrap-accessibility-plugin @ v1.0.7 (the admin-ch fork was
+     evaluated and rejected: 151 commits behind upstream, its 6 deltas are
+     site-specific tab tweaks). REMOVAL: delete this tag, both vendored
+     assets and the fragment-css link - guard test pins the hashes. -->
+<script src="assets/js/bootstrap-accessibility.min.js" defer></script>
+<!-- Back-to-top button: appears after one viewport of scrolling (logic in
+     assets/js/back-to-top.js, styling in template-base.css "back-to-top"
+     block). Rendered here inside #segment-header, which is OUTSIDE the
+     data-fontsize zoom regions, so the fixed button never scales. REMOVAL:
+     this block, the js file and the CSS block - one commit, styleguide §8. -->
+
+<button type="button" class="ig-back-to-top" aria-label="Back to top">↑</button>
+
+<script src="assets/js/back-to-top.js" defer></script>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">MII KDS Test Data</span>
+            <br/>
+            <span style="display:inline-block;">2027.0.0-ballot - 
+
+
+
+  Deutschland
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="nutzung.html">Nutzung</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+
+              
+
+
+
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Nutzung</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">MII KDS Test Data - Local Development build (v2027.0.0-ballot) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://www.medizininformatik-initiative.de/fhir/testdata/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Nutzung</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#nutzung" id="markdown-toc-nutzung">Nutzung</a>    <ul>
+      <li><a href="#bezug-der-testdaten" id="markdown-toc-bezug-der-testdaten">Bezug der Testdaten</a></li>
+      <li><a href="#lokale-fhir-server-im-repository-enthalten" id="markdown-toc-lokale-fhir-server-im-repository-enthalten">Lokale FHIR-Server (im Repository enthalten)</a></li>
+      <li><a href="#kennzeichnung" id="markdown-toc-kennzeichnung">Kennzeichnung</a></li>
+      <li><a href="#lizenz" id="markdown-toc-lizenz">Lizenz</a></li>
+      <li><a href="#haftungsausschluss" id="markdown-toc-haftungsausschluss">Haftungsausschluss</a></li>
+    </ul>
+  </li>
+</ul>
+
+</div>
+<h1 id="nutzung">Nutzung</h1>
+
+<h3 id="bezug-der-testdaten">Bezug der Testdaten</h3>
+
+<p>Jedes <a href="https://github.com/medizininformatik-initiative/mii-testdata/releases">GitHub-Release</a> enthält zwei Assets:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Asset</th>
+      <th>Inhalt</th>
+      <th>Wofür</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">testdata-bundles-ndjson-*.zip</code></td>
+      <td>Alle Transaction-Bundles als <strong>NDJSON</strong> (ein Bundle pro Zeile)</td>
+      <td>Konsumformat: Bulk-Load, Pipelines, Import-Skripte</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">kds-testdata-*.zip</code></td>
+      <td>Das komplette <code class="language-plaintext highlighter-rouge">fsh-generated</code> (alle Einzelressourcen + Bundles als JSON)</td>
+      <td>Einzelressourcen, Validierung, Entwicklung</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Beispiel — neuestes Release beziehen und in einen FHIR-Server laden:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># NDJSON des neuesten Releases herunterladen</span>
+gh release download <span class="nt">--repo</span> medizininformatik-initiative/mii-testdata <span class="se">\</span>
+  <span class="nt">--pattern</span> <span class="s1">'testdata-bundles-ndjson-*.zip'</span> <span class="o">&amp;&amp;</span> unzip testdata-bundles-ndjson-<span class="k">*</span>.zip
+
+<span class="c"># Jedes Bundle als Transaction an einen FHIR-Server POSTen</span>
+<span class="k">while </span><span class="nv">IFS</span><span class="o">=</span> <span class="nb">read</span> <span class="nt">-r</span> bundle<span class="p">;</span> <span class="k">do
+  </span>curl <span class="nt">-sf</span> <span class="nt">-X</span> POST <span class="nt">-H</span> <span class="s2">"Content-Type: application/fhir+json"</span> <span class="se">\</span>
+    <span class="nt">-d</span> <span class="s2">"</span><span class="nv">$bundle</span><span class="s2">"</span> <span class="s2">"http://localhost:8080/fhir"</span> <span class="o">&gt;</span> /dev/null <span class="o">&amp;&amp;</span> <span class="nb">echo</span> <span class="s2">"OK"</span>
+<span class="k">done</span> &lt; testdata-bundles-<span class="k">*</span>.ndjson
+</code></pre></div></div>
+
+<h3 id="lokale-fhir-server-im-repository-enthalten">Lokale FHIR-Server (im Repository enthalten)</h3>
+
+<ul>
+  <li><strong>Blaze-Smoke-Test</strong> (<code class="language-plaintext highlighter-rouge">blaze/</code>): <code class="language-plaintext highlighter-rouge">docker compose -f blaze/blaze.yml up -d --wait</code>, dann <code class="language-plaintext highlighter-rouge">blaze/load-bundles.sh kds-testdata/fsh-generated/resources</code> — lädt alle Bundles als Transactions <strong>mit erzwungener Referenzintegrität</strong>. Läuft identisch in der CI bei jedem Push.</li>
+  <li><strong>Integrationstests</strong> (<code class="language-plaintext highlighter-rouge">integration-tests/</code>): docker-compose mit <strong>HAPI</strong> (Port 8080) und <strong>Blaze</strong> (Port 8082) plus SearchParameter-Testsuite (<code class="language-plaintext highlighter-rouge">make help</code> zeigt alle Targets).</li>
+  <li><strong>Validator</strong> (<code class="language-plaintext highlighter-rouge">validator-docker/</code>): HL7 Java-Validator als Docker-Image mit vorgeladenen KDS-Paketen zur Offline-Validierung eigener Ressourcen gegen die 2027-Ballot-Profile.</li>
+</ul>
+
+<p>Ein fertig <strong>vorbefülltes Server-Image</strong> (Testdaten bereits geladen) wird derzeit nicht publiziert — die o.g. Compose-Setups laden die Daten in wenigen Sekunden.</p>
+
+<h3 id="kennzeichnung">Kennzeichnung</h3>
+
+<p>Jede Instanz trägt <code class="language-plaintext highlighter-rouge">meta.security = HTEST</code> („test health data", <code class="language-plaintext highlighter-rouge">v3-ActReason</code>) und <code class="language-plaintext highlighter-rouge">meta.source</code> mit dem simulierten Quellsystem. Empfangende Systeme können Testdaten darüber zuverlässig filtern.</p>
+
+<h3 id="lizenz">Lizenz</h3>
+
+<p>Die Testdaten stehen unter <strong><a href="https://creativecommons.org/publicdomain/zero/1.0/deed.de">CC0 1.0</a></strong> (Public-Domain-Widmung) — Nutzung, Veränderung und Weitergabe ohne Einschränkung, auch kommerziell.</p>
+
+<p>Davon unberührt bleiben die Lizenzbedingungen der <strong>verwendeten Terminologien</strong>: Die Instanzen enthalten Codes aus u.a. SNOMED CT, LOINC, ICD-10-GM, OPS, ATC und UCUM. Für deren produktive Nutzung gelten die jeweiligen Lizenz-/Nutzungsbedingungen (z.B. SNOMED-CT-Affiliate-Lizenz bzw. der deutsche NLC-Rahmen, BfArM-Bedingungen für ICD-10-GM/OPS).</p>
+
+<h3 id="haftungsausschluss">Haftungsausschluss</h3>
+
+<p>Alle Daten sind <strong>vollständig synthetisch</strong>. Es bestehen keine Bezüge zu realen Personen; Übereinstimmungen mit realen Personen, Fällen oder Identifikatoren wären zufällig. Die dargestellten klinischen Verläufe dienen ausschließlich dem technischen Test von KDS-konformen Systemen — sie sind <strong>nicht zur klinischen Nutzung, Diagnostik oder Therapieentscheidung geeignet</strong> und erheben keinen Anspruch auf medizinische Korrektheit oder Vollständigkeit. Die Bereitstellung erfolgt ohne Gewähr; jegliche Haftung für Schäden aus der Nutzung ist im gesetzlich zulässigen Rahmen ausgeschlossen.</p>
+
+<p>Das gilt ausdrücklich auch für die <strong>Kodierungen</strong>: Codes (u.a. ICD-10-GM, OPS, SNOMED CT, LOINC, ATC) und deren Kombinationen wurden für Zwecke der technischen Strukturprüfung gewählt. Sie sind syntaktisch gültig und stammen aus den realen Katalogen, stellen aber <strong>keine Kodier-, Abrechnungs- oder Dokumentationsempfehlung</strong> dar — weder die klinische Passung eines Codes zum dargestellten Fall noch die Vollständigkeit der Kodierung ist zugesichert. Die Testdaten sind keine Referenz für korrektes Kodieren und <strong>nicht als Grundlage für Forschung oder Versorgung geeignet</strong>.</p>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+  <script type="text/javascript" src="assets/js/flags.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+
+
+
+          IG © 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik Initiative</a>.  
+          Package mii-kds-testdata#2027.0.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Generated <span title="Fri, Sep 25, 2026 07:02+0000">2026-09-25</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+            <!-- Branding override for the fhir2.base.template footer fragment.
+     Unlike header/css, the base footer fragment is NOT an empty placeholder: it
+     renders "Links: Table of Contents | QA Report [| feedback dashboards]".
+     The base uses site.data.stringsBase[include.lang][...] for the labels. The
+     reason this override supplies its own is the Imprint label: the base ships no
+     stringsBase key for it and a child template cannot add one (docs/styleguide.md
+     section 6), and the same include.lang branch then has to carry the other
+     labels too. (The blank-label problem that first motivated this is separately
+     mitigated: this repo vendors the base's own German catalogs into
+     translations/ — see translations/README.md.) The override preserves the base
+     links (TOC, QA, feedback dashboards) and appends the project information links.
+     NUM-DIZ takes over IG development and maintenance when MII funding ends
+     (end-2026), so the NUM-DIZ website link renders BEFORE the MII website link —
+     in BOTH brand designs and both languages; the MII links stay because the
+     modules remain MII content. Both anchors are the SITE ROOTS with the bare
+     domain as anchor text (TF-KDS feedback 2026-08-14: aligned anchor style;
+     domains are language-neutral, styleguide §6).
+     Imprint: points at the NUM-DIZ website's legal pages since 2026-08-14
+     (TF-KDS: NUM-DIZ takes over from MII in 2027, so legal-aspect links use
+     the NUM-DIZ counterpart where one exists) - German /impressum and English
+     /en/legal-notice (both verified HTTP 200 on 2026-08-14). -->
+
+          Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="../qa.html">QA Report</a>
+                 
+                 | <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://www.netzwerk-universitaetsmedizin.de/">netzwerk-universitaetsmedizin.de</a>
+                 | <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://www.medizininformatik-initiative.de/">medizininformatik-initiative.de</a>
+                 | <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://www.netzwerk-universitaetsmedizin.de/en/legal-notice">Legal notice</a>
+                 <br/>
+                 <!-- HL7 trademark attribution (required wherever the FHIR flame
+                      renders - the header shows it on every page; see HL7's
+                      trademark guidelines; permission request tracked in issue #109). The sentence is
+                      HL7's prescribed formula and stays in English on every
+                      language's pages (legal wording, styleguide §6). -->
+                 <span>HL7®, FHIR® and the FHIR flame design are registered trademarks of Health Level Seven International. Their use does not constitute endorsement by HL7.</span>
+
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

@@ -1,0 +1,86 @@
+{
+  "resourceType" : "Observation",
+  "id" : "mii-exa-test-data-mtb-rna-seq-1",
+  "meta" : {
+    "source" : "https://www.charite.de/fhir/kds-testdata",
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-rna-seq"],
+    "security" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "code" : "HTEST",
+      "display" : "test health data"
+    }]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-mtb-rna-seq-1</b></p><a name=\"mii-exa-test-data-mtb-rna-seq-1\"> </a><a name=\"hcmii-exa-test-data-mtb-rna-seq-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-rna-seq\">MII PR MTB RNA Seq</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>identifier</b>: <code>https://www.charite.de/fhir/sid/mtb-variante</code>/RNASEQ-001</p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span>, <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v2-0074 GE}\">Genetics</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 69548-6}\">Genetic variant assessment</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-mtb-patient-1.html\">Elena Tumorfall  Female, DoB: 1971-04-12 ( https://www.charite.de/fhir/sid/patientenidentifikation#MTB-TEST-001)</a></p><p><b>focus</b>: <a href=\"Condition-mii-exa-test-data-mtb-diagnose-primaertumor-1.html\">Condition Bösartige Neubildung: Oberlappen (-Bronchus)</a></p><p><b>effective</b>: 2024-02-25</p><p><b>issued</b>: 2024-03-01 09:00:00+0100</p><p><b>value</b>: <span title=\"Codes:{http://loinc.org LA9633-4}\">Present</span></p><p><b>method</b>: <span title=\"Codes:{http://loinc.org LA26398-0}\">Sequencing</span></p><p><b>specimen</b>: <a href=\"Specimen-mii-exa-test-data-mtb-specimen-1.html\">Specimen: status = available; type = Tissue</a></p><p><b>device</b>: <a href=\"Device-mii-exa-test-data-mtb-device-sequencer-1.html\">Device: manufacturer = Illumina; type = Biomedical equipment</a></p><h3>Components</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://loinc.org 48018-6}\">Gene studied [ID]</span></td><td><span title=\"Codes:{http://www.genenames.org/geneId HGNC:7989}\">NRAS</span></td></tr></table></div>"
+  },
+  "identifier" : [{
+    "system" : "https://www.charite.de/fhir/sid/mtb-variante",
+    "value" : "RNASEQ-001"
+  }],
+  "status" : "final",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "laboratory",
+      "display" : "Laboratory"
+    }]
+  },
+  {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v2-0074",
+      "code" : "GE"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "69548-6",
+      "display" : "Genetic variant assessment"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/mii-exa-test-data-mtb-patient-1"
+  },
+  "focus" : [{
+    "reference" : "Condition/mii-exa-test-data-mtb-diagnose-primaertumor-1"
+  }],
+  "effectiveDateTime" : "2024-02-25",
+  "issued" : "2024-03-01T09:00:00+01:00",
+  "valueCodeableConcept" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "LA9633-4",
+      "display" : "Present"
+    }]
+  },
+  "method" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "LA26398-0",
+      "display" : "Sequencing"
+    }]
+  },
+  "specimen" : {
+    "reference" : "Specimen/mii-exa-test-data-mtb-specimen-1"
+  },
+  "device" : {
+    "reference" : "Device/mii-exa-test-data-mtb-device-sequencer-1"
+  },
+  "component" : [{
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "48018-6",
+        "display" : "Gene studied [ID]"
+      }]
+    },
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://www.genenames.org/geneId",
+        "code" : "HGNC:7989",
+        "display" : "NRAS"
+      }]
+    }
+  }]
+}

@@ -1,0 +1,131 @@
+{
+  "resourceType" : "FamilyMemberHistory",
+  "id" : "mii-exa-test-data-patient-3-seltene-familienanamnese-1",
+  "meta" : {
+    "source" : "https://www.charite.de/fhir/kds-testdata",
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-familienanamnese"],
+    "security" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "code" : "HTEST",
+      "display" : "test health data"
+    }]
+  },
+  "language" : "en",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: FamilyMemberHistory mii-exa-test-data-patient-3-seltene-familienanamnese-1</b></p><a name=\"mii-exa-test-data-patient-3-seltene-familienanamnese-1\"> </a><a name=\"hcmii-exa-test-data-patient-3-seltene-familienanamnese-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-familienanamnese\">MII PR SE Familienanamnese</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>de/fhir/ext/modul-seltene/StructureDefinition/von-seltene-betroffen</b>: <span title=\"Codes:{http://snomed.info/sct 373066001}\">Yes</span></p><p><b>status</b>: Completed</p><p><b>patient</b>: <a href=\"Patient-mii-exa-test-data-seltene-patient-1.html\">Luisa Seltenfall  Female, DoB: 1995-02-10 ( https://www.charite.de/fhir/sid/patientenidentifikation#SELT-TEST-001)</a></p><p><b>date</b>: 2025-03-10</p><p><b>relationship</b>: <span title=\"Codes:{http://snomed.info/sct 65656005}\">Natural mother</span></p><p><b>sex</b>: <span title=\"Codes:{http://hl7.org/fhir/administrative-gender female}\">Female</span></p><p><b>born</b>: 1960</p><p><b>deceased</b>: false</p><blockquote><p><b>condition</b></p><p><b>MII EX SE Penetrance</b>: <span title=\"Codes:{http://human-phenotype-ontology.org HP:0003829}\">Incomplete penetrance</span></p><p><b>code</b>: <span title=\"Codes:{http://fhir.de/CodeSystem/bfarm/icd-10-gm Q87.4}, {http://www.orpha.net 558}, {http://purl.obolibrary.org/obo/mondo.owl MONDO:0007064}\">Marfan-Syndrom</span></p><p><b>contributedToDeath</b>: false</p><p><b>onset</b>: 25 years<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codea = 'a')</span></p></blockquote><blockquote><p><b>condition</b></p><p><b>code</b>: <span title=\"Codes:{http://fhir.de/CodeSystem/bfarm/icd-10-gm I71.2}, {http://snomed.info/sct 233985008}\">Aneurysma der Aorta thoracica, ohne Angabe einer Ruptur</span></p><p><b>contributedToDeath</b>: false</p><p><b>onset</b>: 50 years<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codea = 'a')</span></p></blockquote></div>"
+  },
+  "extension" : [{
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/von-seltene-betroffen",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "373066001",
+        "display" : "Yes"
+      }]
+    }
+  }],
+  "status" : "completed",
+  "patient" : {
+    "reference" : "Patient/mii-exa-test-data-seltene-patient-1"
+  },
+  "date" : "2025-03-10",
+  "relationship" : {
+    "coding" : [{
+      "extension" : [{
+        "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/mii-ex-molgen-verwandtschaftsgrad",
+        "valueCoding" : {
+          "system" : "http://snomed.info/sct",
+          "code" : "125678001",
+          "display" : "First degree blood relative (person)"
+        }
+      },
+      {
+        "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/mii-ex-molgen-verwandtschaftsverhaeltnis",
+        "valueCoding" : {
+          "system" : "http://snomed.info/sct",
+          "code" : "13646006",
+          "display" : "Natural parent (person)"
+        }
+      },
+      {
+        "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/mii-ex-molgen-familiare-linie",
+        "valueCoding" : {
+          "system" : "http://snomed.info/sct",
+          "code" : "72705000",
+          "display" : "Mother (person)"
+        }
+      }],
+      "system" : "http://snomed.info/sct",
+      "code" : "65656005",
+      "display" : "Natural mother"
+    }]
+  },
+  "sex" : {
+    "coding" : [{
+      "system" : "http://hl7.org/fhir/administrative-gender",
+      "code" : "female"
+    }]
+  },
+  "bornDate" : "1960",
+  "deceasedBoolean" : false,
+  "condition" : [{
+    "extension" : [{
+      "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-ex-seltene-penetrance",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://human-phenotype-ontology.org",
+          "code" : "HP:0003829",
+          "display" : "Incomplete penetrance"
+        }]
+      }
+    }],
+    "code" : {
+      "coding" : [{
+        "system" : "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+        "version" : "2024",
+        "code" : "Q87.4",
+        "display" : "Marfan-Syndrom"
+      },
+      {
+        "system" : "http://www.orpha.net",
+        "code" : "558",
+        "display" : "Marfan syndrome"
+      },
+      {
+        "system" : "http://purl.obolibrary.org/obo/mondo.owl",
+        "code" : "MONDO:0007064",
+        "display" : "Marfan syndrome"
+      }]
+    },
+    "contributedToDeath" : false,
+    "onsetAge" : {
+      "value" : 25,
+      "unit" : "years",
+      "system" : "http://unitsofmeasure.org",
+      "code" : "a"
+    }
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+        "version" : "2024",
+        "code" : "I71.2",
+        "display" : "Aneurysma der Aorta thoracica, ohne Angabe einer Ruptur"
+      },
+      {
+        "system" : "http://snomed.info/sct",
+        "code" : "233985008",
+        "display" : "Abdominal aortic aneurysm"
+      }]
+    },
+    "contributedToDeath" : false,
+    "onsetAge" : {
+      "value" : 50,
+      "unit" : "years",
+      "system" : "http://unitsofmeasure.org",
+      "code" : "a"
+    }
+  }]
+}

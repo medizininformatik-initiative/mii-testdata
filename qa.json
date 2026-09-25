@@ -1,0 +1,19 @@
+{
+  "url" : "https://www.medizininformatik-initiative.de/fhir/testdata/ImplementationGuide/mii-kds-testdata",
+  "name" : "MIIKDSTestData",
+  "title" : "MII KDS Test Data",
+  "description" : "This project contains example MII KDS data for testing purposes.",
+  "status" : "draft",
+  "package-id" : "mii-kds-testdata",
+  "ig-ver" : "2027.0.0-ballot",
+  "date" : "Fri, 25 Sep, 2026 07:02:09 +0000",
+  "dateISO8601" : "2026-09-25T07:02:09+00:00",
+  "errs" : 3249,
+  "warnings" : 5555,
+  "hints" : 6043,
+  "suppressed-hints" : 0,
+  "suppressed-warnings" : 0,
+  "version" : "4.0.1",
+  "tool" : "5.0.0 (3)",
+  "maxMemory" : 5852226968
+}

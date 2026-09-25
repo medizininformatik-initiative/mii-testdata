@@ -1,0 +1,196 @@
+# Prostatastanze 01 - Rechts lateral basal - MII KDS Test Data v2027.0.0-ballot
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **Prostatastanze 01 - Rechts lateral basal**
+
+## Example Specimen: Prostatastanze 01 - Rechts lateral basal
+
+Prostatastanze 01, rechts lateral basal, Tru-cut-Biopsie in Formalin
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "Specimen",
+  "id" : "mii-exa-test-data-patho-specimen-01-part",
+  "meta" : {
+    "lastUpdated" : "2024-01-20T16:00:00+01:00",
+    "source" : "https://www.charite.de/fhir/kds-testdata",
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen",
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore"],
+    "security" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "code" : "HTEST",
+      "display" : "test health data"
+    }]
+  },
+  "extension" : [{
+    "extension" : [{
+      "url" : "type",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "716902004",
+          "display" : "Right basal peripheral zone of prostate"
+        }]
+      }
+    },
+    {
+      "url" : "description",
+      "valueString" : "Markiert mit roter Tinte"
+    }],
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-Specimen.feature"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/mii-ex-biobank-ebene",
+    "valueCoding" : {
+      "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/CodeSystem/mii-cs-biobank-probenebene",
+      "code" : "PRIMÄRPROBE",
+      "display" : "Primärprobe"
+    }
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/mii-ex-biobank-infektiositaetsstatus",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "409603009",
+        "display" : "Biosafety level 2 (qualifier value)"
+      }]
+    }
+  }],
+  "identifier" : [{
+    "type" : {
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+        "code" : "PLAC"
+      }]
+    },
+    "system" : "https://www.charite.de/fhir/sid/patho/untersuchungsauftrag",
+    "value" : "BX24_001_01_A"
+  },
+  {
+    "type" : {
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+        "code" : "FILL"
+      }]
+    },
+    "system" : "https://www.charite.de/fhir/sid/patho/befundbericht",
+    "value" : "E_24_001_A"
+  }],
+  "accessionIdentifier" : {
+    "system" : "https://www.charite.de/fhir/sid/patho/befundbericht",
+    "value" : "E_24_001"
+  },
+  "status" : "available",
+  "type" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "309134005",
+      "display" : "Prostate tru-cut biopsy sample"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/mii-exa-test-data-patho-patient-1"
+  },
+  "receivedTime" : "2024-01-15T16:00:00+01:00",
+  "request" : [{
+    "reference" : "ServiceRequest/mii-exa-test-data-patho-request-1"
+  }],
+  "collection" : {
+    "extension" : [{
+      "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/EinstellungBlutversorgung",
+      "valueDateTime" : "2024-01-15T10:29:00+01:00"
+    }],
+    "collector" : {
+      "reference" : "Practitioner/mii-exa-test-data-patho-practitioner-2"
+    },
+    "collectedDateTime" : "2024-01-15T10:30:00+01:00",
+    "quantity" : {
+      "value" : 1,
+      "unit" : "Stanzzylinder",
+      "system" : "http://unitsofmeasure.org",
+      "code" : "1"
+    },
+    "method" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "301759007",
+        "display" : "Tru-cut biopsy of prostate (procedure)"
+      }]
+    },
+    "bodySite" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-Specimen.collection.bodySite",
+        "valueReference" : {
+          "reference" : "BodyStructure/mii-exa-test-data-patho-body-structure-1"
+        }
+      }],
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "716902004",
+        "display" : "Right basal peripheral zone of prostate"
+      }]
+    },
+    "fastingStatusCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/v2-0916",
+        "code" : "NF"
+      }]
+    }
+  },
+  "processing" : [{
+    "description" : "Formalinfixierung",
+    "procedure" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "787376009",
+        "display" : "Preparation of formalin fixed paraffin embedded tissue specimen"
+      }]
+    },
+    "additive" : [{
+      "reference" : "Substance/mii-exa-test-data-patho-substance-formalin-1"
+    }],
+    "timePeriod" : {
+      "start" : "2024-01-15T11:00:00+01:00",
+      "end" : "2024-01-16T07:30:00+01:00"
+    }
+  }],
+  "container" : [{
+    "type" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "434746001",
+        "display" : "Specimen vial (physical object)"
+      }]
+    },
+    "capacity" : {
+      "value" : 10,
+      "unit" : "mL",
+      "system" : "http://unitsofmeasure.org",
+      "code" : "mL"
+    },
+    "specimenQuantity" : {
+      "value" : 2,
+      "unit" : "mL",
+      "system" : "http://unitsofmeasure.org",
+      "code" : "mL"
+    },
+    "additiveCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "434162003",
+        "display" : "Neutral buffered formalin (substance)"
+      }]
+    }
+  }],
+  "note" : [{
+    "text" : "Stanze mit roter Tinte markiert, sofort in Formalin fixiert."
+  }]
+}
+
+```

@@ -1,0 +1,89 @@
+{
+  "resourceType" : "Observation",
+  "id" : "mii-exa-test-data-patient-3-seltene-hpo-assessment-3",
+  "meta" : {
+    "source" : "https://www.charite.de/fhir/kds-testdata",
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-hpo-assessment"],
+    "security" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "code" : "HTEST",
+      "display" : "test health data"
+    }]
+  },
+  "language" : "en",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-patient-3-seltene-hpo-assessment-3</b></p><a name=\"mii-exa-test-data-patient-3-seltene-hpo-assessment-3\"> </a><a name=\"hcmii-exa-test-data-patient-3-seltene-hpo-assessment-3\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-hpo-assessment\">MII Profile SE HPO Assessment</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://human-phenotype-ontology.org HP:0001083}\">Ectopia lentis</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-seltene-patient-1.html\">Luisa Seltenfall  Female, DoB: 1995-02-10 ( https://www.charite.de/fhir/sid/patientenidentifikation#SELT-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-seltene-encounter-1.html\">Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2024-03-01 --&gt; 2024-03-25</a></p><p><b>effective</b>: 2025-03-10</p><p><b>note</b>: </p><blockquote><div><p>Moderate Linsensubluxation bilateral, ophthalmologisch dokumentiert.</p>\n</div></blockquote><p><b>bodySite</b>: <span title=\"Codes:{http://snomed.info/sct 78076003}\">Lens structure</span></p><p><b>method</b>: <span title=\"Codes:{http://snomed.info/sct 36228007}\">Ophthalmic examination</span></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 260411009}\">Presence findings</span></p><p><b>value</b>: <span title=\"Codes:{http://loinc.org LA9633-4}\">Present</span></p><p><b>interpretation</b>: <span title=\"Codes:{https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/CodeSystem/mii-cs-seltene-hpo-change-status newly-added}\">Neu hinzugefügt</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://human-phenotype-ontology.org HP:0012824}\">Severity</span></p><p><b>value</b>: <span title=\"Codes:{http://human-phenotype-ontology.org HP:0012826}\">Moderate</span></p></blockquote></div>"
+  },
+  "status" : "final",
+  "code" : {
+    "coding" : [{
+      "system" : "http://human-phenotype-ontology.org",
+      "code" : "HP:0001083",
+      "display" : "Ectopia lentis"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/mii-exa-test-data-seltene-patient-1"
+  },
+  "encounter" : {
+    "reference" : "Encounter/mii-exa-test-data-seltene-encounter-1"
+  },
+  "effectiveDateTime" : "2025-03-10",
+  "note" : [{
+    "text" : "Moderate Linsensubluxation bilateral, ophthalmologisch dokumentiert."
+  }],
+  "bodySite" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "78076003",
+      "display" : "Lens structure"
+    }]
+  },
+  "method" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "36228007",
+      "display" : "Ophthalmic examination"
+    }]
+  },
+  "component" : [{
+    "code" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "260411009",
+        "display" : "Presence findings"
+      }]
+    },
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "LA9633-4",
+        "display" : "Present"
+      }]
+    },
+    "interpretation" : [{
+      "coding" : [{
+        "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/CodeSystem/mii-cs-seltene-hpo-change-status",
+        "code" : "newly-added",
+        "display" : "Neu hinzugefügt"
+      }]
+    }]
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "http://human-phenotype-ontology.org",
+        "code" : "HP:0012824",
+        "display" : "Severity"
+      }]
+    },
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://human-phenotype-ontology.org",
+        "code" : "HP:0012826",
+        "display" : "Moderate"
+      }]
+    }
+  }]
+}

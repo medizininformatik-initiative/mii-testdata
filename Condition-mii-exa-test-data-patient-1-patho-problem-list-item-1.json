@@ -1,0 +1,44 @@
+{
+  "resourceType" : "Condition",
+  "id" : "mii-exa-test-data-patient-1-patho-problem-list-item-1",
+  "meta" : {
+    "source" : "https://www.charite.de/fhir/kds-testdata",
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-problem-list-item"],
+    "security" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "code" : "HTEST",
+      "display" : "test health data"
+    }]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Condition mii-exa-test-data-patient-1-patho-problem-list-item-1</b></p><a name=\"mii-exa-test-data-patient-1-patho-problem-list-item-1\"> </a><a name=\"hcmii-exa-test-data-patient-1-patho-problem-list-item-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-problem-list-item\">MII PR Patho Problem List Item</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-category problem-list-item}\">Problem List Item</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 399068003}, {http://fhir.de/CodeSystem/bfarm/icd-10-gm C61}\">Malignant neoplasm of prostate</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-patho-patient-1.html\">Klaus Gewebeprobe  Male, DoB: 1963-06-30 ( https://www.charite.de/fhir/sid/patientenidentifikation#PATH-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-patho-encounter-1.html\">Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2024-01-10 --&gt; 2024-02-20</a></p><p><b>recordedDate</b>: 2024-02-16</p></div>"
+  },
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/condition-category",
+      "code" : "problem-list-item",
+      "display" : "Problem List Item"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "399068003",
+      "display" : "Malignant neoplasm of prostate"
+    },
+    {
+      "system" : "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+      "version" : "2026",
+      "code" : "C61",
+      "display" : "Bösartige Neubildung der Prostata"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/mii-exa-test-data-patho-patient-1"
+  },
+  "encounter" : {
+    "reference" : "Encounter/mii-exa-test-data-patho-encounter-1"
+  },
+  "recordedDate" : "2024-02-16"
+}

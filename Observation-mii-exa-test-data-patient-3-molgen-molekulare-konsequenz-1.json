@@ -1,0 +1,90 @@
+{
+  "resourceType" : "Observation",
+  "id" : "mii-exa-test-data-patient-3-molgen-molekulare-konsequenz-1",
+  "meta" : {
+    "source" : "https://www.charite.de/fhir/kds-testdata",
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/mii-pr-molgen-molekulare-konsequenz",
+    "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/molecular-consequence"],
+    "security" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "code" : "HTEST",
+      "display" : "test health data"
+    }]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-patient-3-molgen-molekulare-konsequenz-1</b></p><a name=\"mii-exa-test-data-patient-3-molgen-molekulare-konsequenz-1\"> </a><a name=\"hcmii-exa-test-data-patient-3-molgen-molekulare-konsequenz-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profiles: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/mii-pr-molgen-molekulare-konsequenz\">MII PR MolGen Molekulare Konsequenz</a>, <a href=\"http://hl7.org/fhir/uv/genomics-reporting/STU3/StructureDefinition-molecular-consequence.html\">Molecular Consequence</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span>, <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v2-0074 GE}\">Genetics</span></p><p><b>code</b>: <span title=\"Codes:{http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs molecular-consequence}\">Molecular Consequence</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-molgen-patient-1.html\">Petra Genomisch  Female, DoB: 1985-08-14 ( https://www.charite.de/fhir/sid/patientenidentifikation#MOL-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-molgen-encounter-1.html\">Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2024-03-01 --&gt; 2024-03-20</a></p><p><b>effective</b>: 2022-04-07</p><p><b>issued</b>: 2022-04-12 10:30:00+0200</p><p><b>derivedFrom</b>: <a href=\"Observation-mii-exa-test-data-patient-3-molgen-variante-1.html\">Observation Genetic variant assessment</a></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs conclusion-string}\">Conclusion Text</span></p><p><b>value</b>: Aktivierende Missense-Mutation im BRAF-Gen. Austausch von Valin zu Glutaminsaeure an Position 600 fuehrt zu konstitutiver Aktivierung der BRAF-Kinase.</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs functional-effect}\">Functional Effect</span></p><p><b>value</b>: <span title=\"Codes:{http://sequenceontology.org SO:0002053}\">Konstitutive Aktivierung der BRAF-Kinase</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 53037-8}\">Genetic variation clinical significance [Imp]</span></p><p><b>value</b>: <span title=\"Codes:{http://loinc.org LA6668-3}\">Pathogenic</span></p></blockquote></div>"
+  },
+  "status" : "final",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "laboratory",
+      "display" : "Laboratory"
+    }]
+  },
+  {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v2-0074",
+      "code" : "GE"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs",
+      "code" : "molecular-consequence",
+      "display" : "Molecular Consequence"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/mii-exa-test-data-molgen-patient-1"
+  },
+  "encounter" : {
+    "reference" : "Encounter/mii-exa-test-data-molgen-encounter-1"
+  },
+  "effectiveDateTime" : "2022-04-07",
+  "issued" : "2022-04-12T10:30:00+02:00",
+  "derivedFrom" : [{
+    "reference" : "Observation/mii-exa-test-data-patient-3-molgen-variante-1"
+  }],
+  "component" : [{
+    "code" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs",
+        "code" : "conclusion-string"
+      }]
+    },
+    "valueString" : "Aktivierende Missense-Mutation im BRAF-Gen. Austausch von Valin zu Glutaminsaeure an Position 600 fuehrt zu konstitutiver Aktivierung der BRAF-Kinase."
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs",
+        "code" : "functional-effect"
+      }]
+    },
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://sequenceontology.org",
+        "code" : "SO:0002053",
+        "display" : "gain_of_function_variant"
+      }],
+      "text" : "Konstitutive Aktivierung der BRAF-Kinase"
+    }
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "53037-8"
+      }]
+    },
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "LA6668-3",
+        "display" : "Pathogenic"
+      }]
+    }
+  }]
+}

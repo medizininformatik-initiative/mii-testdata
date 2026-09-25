@@ -1,0 +1,109 @@
+{
+  "resourceType" : "ClinicalImpression",
+  "id" : "mii-exa-test-data-patient-3-seltene-clinical-impression-1",
+  "meta" : {
+    "source" : "https://www.charite.de/fhir/kds-testdata",
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-clinical-impression"],
+    "security" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "code" : "HTEST",
+      "display" : "test health data"
+    }]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ClinicalImpression mii-exa-test-data-patient-3-seltene-clinical-impression-1</b></p><a name=\"mii-exa-test-data-patient-3-seltene-clinical-impression-1\"> </a><a name=\"hcmii-exa-test-data-patient-3-seltene-clinical-impression-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-clinical-impression\">MII Profile SE Clinical Impression</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>identifier</b>: <code>https://www.charite.de/fhir/sid/seltene-clinical-impression</code>/SE-CI-2025-001</p><p><b>status</b>: Completed</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 389067005}\">Community health procedure</span></p><p><b>description</b>: Marfan-Sprechstunde: Erstvorstellung zur Abklaerung erblicher Bindegewebserkrankung</p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-seltene-patient-1.html\">Luisa Seltenfall  Female, DoB: 1995-02-10 ( https://www.charite.de/fhir/sid/patientenidentifikation#SELT-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-seltene-encounter-1.html\">Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2024-03-01 --&gt; 2024-03-25</a></p><p><b>effective</b>: 2025-03-10</p><p><b>date</b>: 2025-03-10</p><p><b>problem</b>: <a href=\"Condition-mii-exa-test-data-patient-3-seltene-clinical-diagnosis-1.html\">Condition Marfan syndrome</a></p><blockquote><p><b>investigation</b></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 271336007}\">Klinische Untersuchung und Bildgebung</span></p><p><b>item</b>: </p><ul><li><a href=\"Observation-mii-exa-test-data-patient-3-seltene-hpo-assessment-1.html\">Observation Aortic root aneurysm</a></li><li><a href=\"Observation-mii-exa-test-data-patient-3-seltene-hpo-assessment-3.html\">Observation Ectopia lentis</a></li><li><a href=\"Observation-mii-exa-test-data-patient-3-seltene-hpo-assessment-4.html\">Observation Tall stature</a></li></ul></blockquote><p><b>summary</b>: Patient mit V.a. Marfan-Syndrom vorgestellt. Aortenwurzeldilatation und Linsensubluxation nachgewiesen. Ghent-Kriterien erfuellt. Genetische Testung veranlasst.</p><blockquote><p><b>finding</b></p><p><b>itemCodeableConcept</b>: <span title=\"Codes:{http://human-phenotype-ontology.org HP:0002616}\">Aortic root aneurysm</span></p><p><b>itemReference</b>: <a href=\"Observation-mii-exa-test-data-patient-3-seltene-hpo-assessment-1.html\">Observation Aortic root aneurysm</a></p></blockquote><blockquote><p><b>finding</b></p><p><b>itemCodeableConcept</b>: <span title=\"Codes:{http://human-phenotype-ontology.org HP:0001083}\">Ectopia lentis</span></p><p><b>itemReference</b>: <a href=\"Observation-mii-exa-test-data-patient-3-seltene-hpo-assessment-3.html\">Observation Ectopia lentis</a></p></blockquote><blockquote><p><b>finding</b></p><p><b>itemCodeableConcept</b>: <span title=\"Codes:{http://human-phenotype-ontology.org HP:0000098}\">Tall stature</span></p><p><b>itemReference</b>: <a href=\"Observation-mii-exa-test-data-patient-3-seltene-hpo-assessment-4.html\">Observation Tall stature</a></p></blockquote><p><b>supportingInfo</b>: </p><ul><li><a href=\"DiagnosticReport-mii-exa-test-data-seltene-molgen-befundbericht-1.html\">Diagnostic Report for 'Genetic analysis report' for '-&gt;Luisa Seltenfall  Female, DoB: 1995-02-10 ( https://www.charite.de/fhir/sid/patientenidentifikation#SELT-TEST-001)'</a></li><li><a href=\"Condition-mii-exa-test-data-patient-3-seltene-symptom-condition-1.html\">Condition Tall stature</a></li></ul><p><b>note</b>: , </p><blockquote><div><p>Erstvorstellung in der Marfan-Sprechstunde. Klinische Diagnose gesichert, molekulargenetische Bestaetigung ausstehend.</p>\n</div></blockquote><blockquote><div><p>Therapieplan erstellt: Losartan 50mg taeglich, jaehrliche Echokardiographie.</p>\n</div></blockquote></div>"
+  },
+  "identifier" : [{
+    "system" : "https://www.charite.de/fhir/sid/seltene-clinical-impression",
+    "value" : "SE-CI-2025-001"
+  }],
+  "status" : "completed",
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "389067005",
+      "display" : "Community health procedure"
+    }]
+  },
+  "description" : "Marfan-Sprechstunde: Erstvorstellung zur Abklaerung erblicher Bindegewebserkrankung",
+  "subject" : {
+    "reference" : "Patient/mii-exa-test-data-seltene-patient-1"
+  },
+  "encounter" : {
+    "reference" : "Encounter/mii-exa-test-data-seltene-encounter-1"
+  },
+  "effectiveDateTime" : "2025-03-10",
+  "date" : "2025-03-10",
+  "problem" : [{
+    "reference" : "Condition/mii-exa-test-data-patient-3-seltene-clinical-diagnosis-1"
+  }],
+  "investigation" : [{
+    "code" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "271336007",
+        "display" : "Examination / signs"
+      }],
+      "text" : "Klinische Untersuchung und Bildgebung"
+    },
+    "item" : [{
+      "reference" : "Observation/mii-exa-test-data-patient-3-seltene-hpo-assessment-1"
+    },
+    {
+      "reference" : "Observation/mii-exa-test-data-patient-3-seltene-hpo-assessment-3"
+    },
+    {
+      "reference" : "Observation/mii-exa-test-data-patient-3-seltene-hpo-assessment-4"
+    }]
+  }],
+  "summary" : "Patient mit V.a. Marfan-Syndrom vorgestellt. Aortenwurzeldilatation und Linsensubluxation nachgewiesen. Ghent-Kriterien erfuellt. Genetische Testung veranlasst.",
+  "finding" : [{
+    "itemCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://human-phenotype-ontology.org",
+        "code" : "HP:0002616",
+        "display" : "Aortic root aneurysm"
+      }]
+    },
+    "itemReference" : {
+      "reference" : "Observation/mii-exa-test-data-patient-3-seltene-hpo-assessment-1"
+    }
+  },
+  {
+    "itemCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://human-phenotype-ontology.org",
+        "code" : "HP:0001083",
+        "display" : "Ectopia lentis"
+      }]
+    },
+    "itemReference" : {
+      "reference" : "Observation/mii-exa-test-data-patient-3-seltene-hpo-assessment-3"
+    }
+  },
+  {
+    "itemCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://human-phenotype-ontology.org",
+        "code" : "HP:0000098",
+        "display" : "Tall stature"
+      }]
+    },
+    "itemReference" : {
+      "reference" : "Observation/mii-exa-test-data-patient-3-seltene-hpo-assessment-4"
+    }
+  }],
+  "supportingInfo" : [{
+    "reference" : "DiagnosticReport/mii-exa-test-data-seltene-molgen-befundbericht-1"
+  },
+  {
+    "reference" : "Condition/mii-exa-test-data-patient-3-seltene-symptom-condition-1"
+  }],
+  "note" : [{
+    "text" : "Erstvorstellung in der Marfan-Sprechstunde. Klinische Diagnose gesichert, molekulargenetische Bestaetigung ausstehend."
+  },
+  {
+    "text" : "Therapieplan erstellt: Losartan 50mg taeglich, jaehrliche Echokardiographie."
+  }]
+}

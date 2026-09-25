@@ -1,0 +1,147 @@
+{
+  "resourceType" : "Observation",
+  "id" : "mii-exa-test-data-patient-1-icu-muv-blutdruck-1",
+  "meta" : {
+    "source" : "https://www.charite.de/fhir/kds-testdata",
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-arterieller-blutdruck"],
+    "security" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "code" : "HTEST",
+      "display" : "test health data"
+    }]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-patient-1-icu-muv-blutdruck-1</b></p><a name=\"mii-exa-test-data-patient-1-icu-muv-blutdruck-1\"> </a><a name=\"hcmii-exa-test-data-patient-1-icu-muv-blutdruck-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-arterieller-blutdruck\">MII PR ICU MUV Arterieller Blutdruck</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 85354-9}, {http://snomed.info/sct 75367002}, {http://snomed.info/sct 364090009}\">Blood pressure panel with all children optional</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-icu-patient-1.html\">Kim Musterperson  Female, DoB: 1956-03-14 ( https://www.medizininformatik-initiative.de/fhir/sid/standort-b#ICU-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-icu-encounter-1.html\">Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2024-05-01 --&gt; 2024-05-14</a></p><p><b>effective</b>: 2024-05-05 08:00:00+0200</p><p><b>interpretation</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}\">Normal</span></p><p><b>bodySite</b>: <span title=\"Codes:{http://snomed.info/sct 45631007}\">Structure of radial artery (body structure)</span></p><p><b>method</b>: <span title=\"Codes:{http://snomed.info/sct 17146006}\">Arterial pressure monitoring, invasive method (regime/therapy)</span></p><p><b>device</b>: <a href=\"Device-mii-exa-test-data-patient-1-icu-device-monitor-1.html\">Device: identifier = https://www.charite.de/fhir/sid/device-identifier#ICU-MONITOR-001; status = active; type = Biomedical equipment (physical object)</a></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 8480-6}, {http://snomed.info/sct 271649006}, {urn:iso:std:iso:11073:10101 150017}\">Systolic blood pressure</span></p><p><b>value</b>: 120 millimeter Mercury column<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemm[Hg] = 'mm[Hg]')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 8462-4}, {http://snomed.info/sct 271650006}, {urn:iso:std:iso:11073:10101 150018}\">Diastolic blood pressure</span></p><p><b>value</b>: 80 millimeter Mercury column<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemm[Hg] = 'mm[Hg]')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 8478-0}, {http://snomed.info/sct 6797001}, {urn:iso:std:iso:11073:10101 150019}\">Mean blood pressure</span></p><p><b>value</b>: 93 millimeter Mercury column<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemm[Hg] = 'mm[Hg]')</span></p></blockquote></div>"
+  },
+  "status" : "final",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "vital-signs"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "85354-9",
+      "display" : "Blood pressure panel with all children optional"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "75367002",
+      "display" : "Blood pressure"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "364090009",
+      "display" : "Systemic arterial pressure"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/mii-exa-test-data-icu-patient-1"
+  },
+  "encounter" : {
+    "reference" : "Encounter/mii-exa-test-data-icu-encounter-1"
+  },
+  "effectiveDateTime" : "2024-05-05T08:00:00+02:00",
+  "interpretation" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+      "code" : "N",
+      "display" : "Normal"
+    }]
+  }],
+  "bodySite" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "45631007",
+      "display" : "Structure of radial artery (body structure)"
+    }]
+  },
+  "method" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "17146006",
+      "display" : "Arterial pressure monitoring, invasive method (regime/therapy)"
+    }]
+  },
+  "device" : {
+    "reference" : "Device/mii-exa-test-data-patient-1-icu-device-monitor-1"
+  },
+  "component" : [{
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "8480-6",
+        "display" : "Systolic blood pressure"
+      },
+      {
+        "system" : "http://snomed.info/sct",
+        "code" : "271649006",
+        "display" : "Systolic blood pressure"
+      },
+      {
+        "system" : "urn:iso:std:iso:11073:10101",
+        "code" : "150017",
+        "display" : "MDC_PRESS_BLD_NONINV_SYS"
+      }]
+    },
+    "valueQuantity" : {
+      "value" : 120,
+      "unit" : "millimeter Mercury column",
+      "system" : "http://unitsofmeasure.org",
+      "code" : "mm[Hg]"
+    }
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "8462-4",
+        "display" : "Diastolic blood pressure"
+      },
+      {
+        "system" : "http://snomed.info/sct",
+        "code" : "271650006",
+        "display" : "Diastolic blood pressure"
+      },
+      {
+        "system" : "urn:iso:std:iso:11073:10101",
+        "code" : "150018",
+        "display" : "MDC_PRESS_BLD_NONINV_DIA"
+      }]
+    },
+    "valueQuantity" : {
+      "value" : 80,
+      "unit" : "millimeter Mercury column",
+      "system" : "http://unitsofmeasure.org",
+      "code" : "mm[Hg]"
+    }
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "8478-0",
+        "display" : "Mean blood pressure"
+      },
+      {
+        "system" : "http://snomed.info/sct",
+        "code" : "6797001",
+        "display" : "Mean blood pressure"
+      },
+      {
+        "system" : "urn:iso:std:iso:11073:10101",
+        "code" : "150019",
+        "display" : "MDC_PRESS_BLD_NONINV_MEAN"
+      }]
+    },
+    "valueQuantity" : {
+      "value" : 93,
+      "unit" : "millimeter Mercury column",
+      "system" : "http://unitsofmeasure.org",
+      "code" : "mm[Hg]"
+    }
+  }]
+}

@@ -1,0 +1,72 @@
+{
+  "resourceType" : "Observation",
+  "id" : "mii-exa-test-data-isik-vitalparameter-labor-pct-1",
+  "meta" : {
+    "source" : "https://www.charite.de/fhir/kds-testdata",
+    "profile" : ["https://gematik.de/fhir/isik/StructureDefinition/ISiKLaboruntersuchungPCT"],
+    "security" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "code" : "HTEST",
+      "display" : "test health data"
+    }]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-isik-vitalparameter-labor-pct-1</b></p><a name=\"mii-exa-test-data-isik-vitalparameter-labor-pct-1\"> </a><a name=\"hcmii-exa-test-data-isik-vitalparameter-labor-pct-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.icu@2027.0.0-ballot.3&amp;canonical=https://gematik.de/fhir/isik/StructureDefinition/ISiKLaboruntersuchungPCT\">ISiKLaboruntersuchungPCT</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>identifier</b>: Observation Instance Identifier/ISIK-VITAL-LAB-004</p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 33959-8}, {http://snomed.info/sct 418752001}\">Procalcitonin (Serum)</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-isik-vitalparameter-patient-1.html\">Viktoria Vogel  Female, DoB: 1968-04-17 ( https://www.charite.de/fhir/sid/patientenidentifikation#ISIK-VITAL-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-isik-vitalparameter-encounter-1.html\">Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2026-05-11 --&gt; 2026-05-14</a></p><p><b>effective</b>: 2026-05-12 07:30:00+0200</p><p><b>issued</b>: 2026-05-12 09:00:00+0200</p><p><b>performer</b>: Zentrallabor Charite</p><p><b>value</b>: 0.08 nanogram per milliliter<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeng/mL = 'ng/mL')</span></p><p><b>interpretation</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}\">Normal</span></p></div>"
+  },
+  "identifier" : [{
+    "type" : {
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+        "code" : "OBI"
+      }]
+    },
+    "system" : "https://www.charite.de/fhir/sid/lab-results",
+    "value" : "ISIK-VITAL-LAB-004"
+  }],
+  "status" : "final",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "laboratory",
+      "display" : "Laboratory"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "33959-8",
+      "display" : "Procalcitonin [Mass/volume] in Serum or Plasma"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "418752001",
+      "display" : "Procalcitonin measurement (procedure)"
+    }],
+    "text" : "Procalcitonin (Serum)"
+  },
+  "subject" : {
+    "reference" : "Patient/mii-exa-test-data-isik-vitalparameter-patient-1"
+  },
+  "encounter" : {
+    "reference" : "Encounter/mii-exa-test-data-isik-vitalparameter-encounter-1"
+  },
+  "effectiveDateTime" : "2026-05-12T07:30:00+02:00",
+  "issued" : "2026-05-12T09:00:00+02:00",
+  "performer" : [{
+    "display" : "Zentrallabor Charite"
+  }],
+  "valueQuantity" : {
+    "value" : 0.08,
+    "unit" : "nanogram per milliliter",
+    "system" : "http://unitsofmeasure.org",
+    "code" : "ng/mL"
+  },
+  "interpretation" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+      "code" : "N",
+      "display" : "Normal"
+    }]
+  }]
+}

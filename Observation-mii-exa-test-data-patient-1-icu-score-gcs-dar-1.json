@@ -1,0 +1,120 @@
+{
+  "resourceType" : "Observation",
+  "id" : "mii-exa-test-data-patient-1-icu-score-gcs-dar-1",
+  "meta" : {
+    "source" : "https://www.charite.de/fhir/kds-testdata",
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-gcs"],
+    "security" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "code" : "HTEST",
+      "display" : "test health data"
+    }]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-patient-1-icu-score-gcs-dar-1</b></p><a name=\"mii-exa-test-data-patient-1-icu-score-gcs-dar-1\"> </a><a name=\"hcmii-exa-test-data-patient-1-icu-score-gcs-dar-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-gcs\">MII PR ICU Score GCS</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>identifier</b>: <code>https://www.charite.de/fhir/sid/icu-observation-id</code>/icu-score-gcs-dar-1</p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category survey}\">Survey</span>, <span title=\"Codes:{http://snomed.info/sct 273249006}\">Assessment scales (assessment scale)</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 9269-2}, {http://snomed.info/sct 248241002}, {urn:iso:std:iso:11073:10101 153728}\">Glasgow coma score total</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-icu-patient-1.html\">Kim Musterperson  Female, DoB: 1956-03-14 ( https://www.medizininformatik-initiative.de/fhir/sid/standort-b#ICU-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-icu-encounter-1.html\">Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2024-05-01 --&gt; 2024-05-14</a></p><p><b>effective</b>: 2024-05-06 12:00:00+0200</p><p><b>issued</b>: 2024-05-06 12:10:00+0200</p><p><b>performer</b>: <a href=\"Practitioner-mii-exa-test-data-icu-practitioner-1.html\">Practitioner Katharina Weber </a></p><p><b>value</b>: 6 {score}<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code{score} = '{score}')</span></p><p><b>note</b>: </p><blockquote><div><p>Verbale Reaktion bei orotracheal intubierter und beatmeter Patientin nicht beurteilbar; Gesamtscore als Summe aus Augenoeffnen (2) und motorischer Reaktion (4) = 6T dokumentiert.</p>\n</div></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 9267-6}\">Glasgow coma score eye opening</span></p><p><b>value</b>: <span title=\"Codes:{http://loinc.org LA6554-5}\">Eye opening to pain</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 9268-4}\">Glasgow coma score motor</span></p><p><b>value</b>: <span title=\"Codes:{http://loinc.org LA6565-1}\">Withdrawal from pain</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 9270-0}\">Glasgow coma score verbal</span></p><p><b>dataAbsentReason</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/data-absent-reason not-applicable}\">Not Applicable</span></p></blockquote></div>"
+  },
+  "identifier" : [{
+    "system" : "https://www.charite.de/fhir/sid/icu-observation-id",
+    "value" : "icu-score-gcs-dar-1"
+  }],
+  "status" : "final",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "survey",
+      "display" : "Survey"
+    }]
+  },
+  {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "273249006",
+      "display" : "Assessment scales (assessment scale)"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "9269-2",
+      "display" : "Glasgow coma score total"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+      "code" : "248241002"
+    },
+    {
+      "system" : "urn:iso:std:iso:11073:10101",
+      "code" : "153728"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/mii-exa-test-data-icu-patient-1"
+  },
+  "encounter" : {
+    "reference" : "Encounter/mii-exa-test-data-icu-encounter-1"
+  },
+  "effectiveDateTime" : "2024-05-06T12:00:00+02:00",
+  "issued" : "2024-05-06T12:10:00+02:00",
+  "performer" : [{
+    "reference" : "Practitioner/mii-exa-test-data-icu-practitioner-1"
+  }],
+  "valueQuantity" : {
+    "value" : 6,
+    "unit" : "{score}",
+    "system" : "http://unitsofmeasure.org",
+    "code" : "{score}"
+  },
+  "note" : [{
+    "text" : "Verbale Reaktion bei orotracheal intubierter und beatmeter Patientin nicht beurteilbar; Gesamtscore als Summe aus Augenoeffnen (2) und motorischer Reaktion (4) = 6T dokumentiert."
+  }],
+  "component" : [{
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "9267-6",
+        "display" : "Glasgow coma score eye opening"
+      }]
+    },
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "LA6554-5",
+        "display" : "Eye opening to pain"
+      }]
+    }
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "9268-4",
+        "display" : "Glasgow coma score motor"
+      }]
+    },
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "LA6565-1",
+        "display" : "Withdrawal from pain"
+      }]
+    }
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "9270-0",
+        "display" : "Glasgow coma score verbal"
+      }]
+    },
+    "dataAbsentReason" : {
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/data-absent-reason",
+        "code" : "not-applicable",
+        "display" : "Not Applicable"
+      }]
+    }
+  }]
+}

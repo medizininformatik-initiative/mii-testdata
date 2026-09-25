@@ -1,0 +1,77 @@
+{
+  "resourceType" : "DiagnosticReport",
+  "id" : "mii-exa-test-data-patient-3-labreport-1",
+  "meta" : {
+    "source" : "https://www.charite.de/fhir/kds-testdata",
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/DiagnosticReportLab"],
+    "security" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "code" : "HTEST",
+      "display" : "test health data"
+    }]
+  },
+  "language" : "en",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: DiagnosticReport mii-exa-test-data-patient-3-labreport-1</b></p><a name=\"mii-exa-test-data-patient-3-labreport-1\"> </a><a name=\"hcmii-exa-test-data-patient-3-labreport-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/DiagnosticReportLab\">MII PR Labor Laborbefund</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><h2><span title=\"Codes:{http://loinc.org 11502-2}\">Laboratory report</span> (<span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v2-0074 LAB}, {http://loinc.org 26436-6}\">Laboratory studies (set)</span>) </h2><table class=\"grid\"><tr><td>Subject</td><td>Clara Josephine Schumann (official) Female, DoB: 1968-09-13 ( Medical record number\u00a0(use:\u00a0usual,\u00a0))</td></tr><tr><td>Relevant Time</td><td>2022-04-05 08:00:00+0200</td></tr><tr><td>Reported</td><td>2022-04-05 13:00:00+0200</td></tr><tr><td>Performer</td><td> <a href=\"Organization-mii-exa-test-data-organization-labor-berlin.html\">Organization Labor Berlin – Charité Vivantes GmbH</a></td></tr><tr><td>Identifier</td><td> Filler Identifier/LDR_000003</td></tr></table><p><b>Report Details</b></p><table class=\"grid\"><tr><td><b>Code</b></td><td><b>Value</b></td><td><b>Flags</b></td><td><b>Reported</b></td></tr><tr><td><a href=\"Observation-mii-exa-test-data-patient-3-labobs-1.html\"><span title=\"Codes:{http://loinc.org 26464-8}\">Leukocytes [#/volume] in Blood</span></a></td><td>12.5 /nanoliter<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code/nL = '/nL')</span></td><td>Final, <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation H}\">High</span></td><td>2022-04-05 10:30:00+0200</td></tr><tr><td><a href=\"Observation-mii-exa-test-data-patient-3-labobs-2.html\"><span title=\"Codes:{http://loinc.org 6768-6}\">Alkaline phosphatase [Enzymatic activity/volume] in Serum or Plasma</span></a></td><td>156 unit per liter<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeU/L = 'U/L')</span></td><td>Final, <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation H}\">High</span></td><td>2022-04-05 10:30:00+0200</td></tr><tr><td><a href=\"Observation-mii-exa-test-data-patient-3-labobs-3.html\"><span title=\"Codes:{http://loinc.org 1975-2}\">Bilirubin.total [Mass/volume] in Serum or Plasma</span></a></td><td>2.8 milligram per deciliter<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg/dL = 'mg/dL')</span></td><td>Final, <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation H}\">High</span></td><td>2022-04-05 10:30:00+0200</td></tr></table><p>Cholestatisches Leberschädigungsmuster: Erhöhte alkalische Phosphatase (156 U/L) und Hyperbilirubinämie (2,8 mg/dL). Leukozytose (12,5/nL). Vereinbar mit maligner Infiltration bei bekanntem Anorektalkarzinom.</p></div>"
+  },
+  "identifier" : [{
+    "type" : {
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+        "code" : "FILL"
+      }]
+    },
+    "system" : "https://www.charite.de/fhir/sid/lab-results",
+    "value" : "LDR_000003",
+    "assigner" : {
+      "identifier" : {
+        "system" : "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier",
+        "value" : "Charité"
+      }
+    }
+  }],
+  "basedOn" : [{
+    "reference" : "ServiceRequest/mii-exa-test-data-patient-3-labrequest-1"
+  }],
+  "status" : "final",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v2-0074",
+      "code" : "LAB"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "26436-6",
+      "display" : "Laboratory studies (set)"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "11502-2",
+      "display" : "Laboratory report"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/mii-exa-test-data-patient-3"
+  },
+  "encounter" : {
+    "reference" : "Encounter/mii-exa-test-data-patient-3-encounter-1"
+  },
+  "effectiveDateTime" : "2022-04-05T08:00:00+02:00",
+  "issued" : "2022-04-05T13:00:00+02:00",
+  "performer" : [{
+    "reference" : "Organization/mii-exa-test-data-organization-labor-berlin"
+  }],
+  "result" : [{
+    "reference" : "Observation/mii-exa-test-data-patient-3-labobs-1"
+  },
+  {
+    "reference" : "Observation/mii-exa-test-data-patient-3-labobs-2"
+  },
+  {
+    "reference" : "Observation/mii-exa-test-data-patient-3-labobs-3"
+  }],
+  "conclusion" : "Cholestatisches Leberschädigungsmuster: Erhöhte alkalische Phosphatase (156 U/L) und Hyperbilirubinämie (2,8 mg/dL). Leukozytose (12,5/nL). Vereinbar mit maligner Infiltration bei bekanntem Anorektalkarzinom."
+}

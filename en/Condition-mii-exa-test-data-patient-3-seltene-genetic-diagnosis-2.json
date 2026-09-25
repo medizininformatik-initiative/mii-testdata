@@ -1,0 +1,114 @@
+{
+  "resourceType" : "Condition",
+  "id" : "mii-exa-test-data-patient-3-seltene-genetic-diagnosis-2",
+  "meta" : {
+    "source" : "https://www.charite.de/fhir/kds-testdata",
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-genetic-diagnosis"],
+    "security" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "code" : "HTEST",
+      "display" : "test health data"
+    }]
+  },
+  "language" : "en",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Condition mii-exa-test-data-patient-3-seltene-genetic-diagnosis-2</b></p><a name=\"mii-exa-test-data-patient-3-seltene-genetic-diagnosis-2\"> </a><a name=\"hcmii-exa-test-data-patient-3-seltene-genetic-diagnosis-2\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-genetic-diagnosis\">MII PR SE Genetic Diagnosis</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>Condition Asserted Date</b>: 1995-03-01</p><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical resolved}\">Resolved</span></p><p><b>verificationStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}\">Confirmed</span></p><p><b>category</b>: <span title=\"Codes:{http://snomed.info/sct 782964007}\">Genetic disease</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 609569007}, {http://www.orpha.net 99886}, {http://fhir.de/CodeSystem/bfarm/icd-10-gm P70.2}\">Transienter neonataler Diabetes mellitus (6q24), remittiert</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-seltene-patient-1.html\">Luisa Seltenfall  Female, DoB: 1995-02-10 ( https://www.charite.de/fhir/sid/patientenidentifikation#SELT-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-seltene-encounter-1.html\">Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2024-03-01 --&gt; 2024-03-25</a></p><p><b>onset</b>: 2 Wochen<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codewk = 'wk')</span></p><p><b>abatement</b>: 9 Monate<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemo = 'mo')</span></p><p><b>recordedDate</b>: 2025-04-15</p><h3>Evidences</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Detail</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 106221001}\">Genetic finding</span></td><td><a href=\"DiagnosticReport-mii-exa-test-data-seltene-molgen-befundbericht-1.html\">Diagnostic Report for 'Genetic analysis report' for '-&gt;Luisa Seltenfall  Female, DoB: 1995-02-10 ( https://www.charite.de/fhir/sid/patientenidentifikation#SELT-TEST-001)'</a></td></tr></table><p><b>note</b>: </p><blockquote><div><p>Anamnestisch transienter neonataler Diabetes mellitus, unter Insulintherapie im Saeuglingsalter remittiert.</p>\n</div></blockquote></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/condition-assertedDate",
+    "valueDateTime" : "1995-03-01"
+  }],
+  "clinicalStatus" : {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
+      "code" : "resolved"
+    }]
+  },
+  "verificationStatus" : {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+      "code" : "confirmed"
+    }]
+  },
+  "category" : [{
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "782964007",
+      "display" : "Genetic disease"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "609569007",
+      "display" : "Diabetes mellitus due to genetic defect in beta cell function (disorder)"
+    },
+    {
+      "system" : "http://www.orpha.net",
+      "code" : "99886",
+      "display" : "Transient neonatal diabetes mellitus"
+    },
+    {
+      "system" : "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+      "version" : "2025",
+      "code" : "P70.2",
+      "display" : "Diabetes mellitus beim Neugeborenen"
+    }],
+    "text" : "Transienter neonataler Diabetes mellitus (6q24), remittiert"
+  },
+  "subject" : {
+    "reference" : "Patient/mii-exa-test-data-seltene-patient-1"
+  },
+  "encounter" : {
+    "reference" : "Encounter/mii-exa-test-data-seltene-encounter-1"
+  },
+  "onsetAge" : {
+    "extension" : [{
+      "url" : "http://fhir.de/StructureDefinition/lebensphase",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "255407002",
+          "display" : "Neonatal (qualifier value)"
+        }]
+      }
+    }],
+    "value" : 2,
+    "unit" : "Wochen",
+    "system" : "http://unitsofmeasure.org",
+    "code" : "wk"
+  },
+  "abatementAge" : {
+    "extension" : [{
+      "url" : "http://fhir.de/StructureDefinition/lebensphase",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "3658006",
+          "display" : "Infancy (qualifier value)"
+        }]
+      }
+    }],
+    "value" : 9,
+    "unit" : "Monate",
+    "system" : "http://unitsofmeasure.org",
+    "code" : "mo"
+  },
+  "recordedDate" : "2025-04-15",
+  "evidence" : [{
+    "code" : [{
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "106221001",
+        "display" : "Genetic finding"
+      }]
+    }],
+    "detail" : [{
+      "reference" : "DiagnosticReport/mii-exa-test-data-seltene-molgen-befundbericht-1"
+    }]
+  }],
+  "note" : [{
+    "text" : "Anamnestisch transienter neonataler Diabetes mellitus, unter Insulintherapie im Saeuglingsalter remittiert."
+  }]
+}

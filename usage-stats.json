@@ -1,0 +1,576 @@
+{
+  "package": "mii-kds-testdata",
+  "version": "2027.0.0-ballot",
+  "fhirVersion": "4.0.1",
+  "jurisdiction": "DE",
+  "extensions": [],
+  "profiles": {},
+  "usage": {
+    "http://fhir.de/ConsentManagement/StructureDefinition/DomainReference": [
+      "Bundle.entry.resource",
+      "Consent"
+    ],
+    "http://fhir.de/ConsentManagement/StructureDefinition/PhysicalDocumentLocation": [
+      "Bundle.entry.resource.content.attachment",
+      "DocumentReference.content.attachment"
+    ],
+    "http://fhir.de/ConsentManagement/StructureDefinition/SignatureLocation": [
+      "Bundle.entry.resource.signature",
+      "Provenance.signature"
+    ],
+    "http://fhir.de/ConsentManagement/StructureDefinition/Xacml": [
+      "Bundle.entry.resource.policyRule",
+      "Consent.policyRule"
+    ],
+    "http://fhir.de/StructureDefinition/Aufnahmegrund": [
+      "Bundle.entry.resource",
+      "Encounter"
+    ],
+    "http://fhir.de/StructureDefinition/Entlassungsgrund": [
+      "Bundle.entry.resource.hospitalization.dischargeDisposition",
+      "Encounter.hospitalization.dischargeDisposition"
+    ],
+    "http://fhir.de/StructureDefinition/ProzedurDokumentationsdatum": [
+      "Bundle.entry.resource",
+      "Procedure"
+    ],
+    "http://fhir.de/StructureDefinition/destatis/ags": [
+      "Bundle.entry.resource.address.city",
+      "Patient.address.city"
+    ],
+    "http://fhir.de/StructureDefinition/gender-amtlich-de": [
+      "Bundle.entry.resource.gender",
+      "Patient.gender"
+    ],
+    "http://fhir.de/StructureDefinition/humanname-namenszusatz": [
+      "Bundle.entry.resource.name.family",
+      "Patient.name.family"
+    ],
+    "http://fhir.de/StructureDefinition/icd-10-gm-diagnosesicherheit": [
+      "Bundle.entry.resource.code.coding",
+      "Condition.code.coding"
+    ],
+    "http://fhir.de/StructureDefinition/icd-10-gm-mehrfachcodierungs-kennzeichen": [
+      "Bundle.entry.resource.code.coding",
+      "Condition.code.coding"
+    ],
+    "http://fhir.de/StructureDefinition/lebensphase": [
+      "Bundle.entry.resource.abatementAge",
+      "Bundle.entry.resource.onsetAge",
+      "Bundle.entry.resource.onsetPeriod.end",
+      "Bundle.entry.resource.onsetPeriod.start",
+      "Condition.abatementAge",
+      "Condition.onsetAge",
+      "Condition.onsetPeriod.end",
+      "Condition.onsetPeriod.start"
+    ],
+    "http://fhir.de/StructureDefinition/seitenlokalisation": [
+      "Bundle.entry.resource.code.coding",
+      "Condition.code.coding",
+      "Procedure.code.coding"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.composition": [
+      "Bundle.entry.resource",
+      "Bundle.entry.resource.entry.resource",
+      "DiagnosticReport"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-EvidenceVariable.characteristic.definitionByTypeAndValue": [
+      "Bundle.entry.resource.characteristic",
+      "EvidenceVariable.characteristic"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-EvidenceVariable.characteristic.definitionCanonical": [
+      "Bundle.entry.resource.characteristic",
+      "EvidenceVariable.characteristic"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-EvidenceVariable.characteristic.linkId": [
+      "Bundle.entry.resource.characteristic",
+      "EvidenceVariable.characteristic"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-Observation.triggeredBy": [
+      "Bundle.entry.resource",
+      "Observation"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-ResearchStudy.associatedParty": [
+      "Bundle.entry.resource",
+      "ResearchStudy"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-ResearchStudy.label": [
+      "Bundle.entry.resource",
+      "ResearchStudy"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-Specimen.collection.bodySite": [
+      "Bundle.entry.resource.collection.bodySite",
+      "Bundle.entry.resource.entry.resource.collection.bodySite",
+      "Specimen.collection.bodySite"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-Specimen.feature": [
+      "Bundle.entry.resource",
+      "Bundle.entry.resource.entry.resource",
+      "Specimen"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/allergyintolerance-abatement": [
+      "AllergyIntolerance",
+      "Bundle.entry.resource"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/bodySite": [
+      "Bundle.entry.resource.bodySite",
+      "Observation.bodySite"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/composition-clinicaldocument-versionNumber": [
+      "Bundle.entry.resource",
+      "Bundle.entry.resource.entry.resource",
+      "Composition"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/condition-assertedDate": [
+      "Bundle.entry.resource",
+      "Bundle.entry.resource.entry.resource",
+      "Condition"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/condition-dueTo": [
+      "Bundle.entry.resource",
+      "Condition"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/condition-occurredFollowing": [
+      "Bundle.entry.resource",
+      "Condition"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/condition-related": [
+      "Bundle.entry.resource",
+      "Condition"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/data-absent-reason": [
+      "Bundle.entry.resource.address.city",
+      "Bundle.entry.resource.address.line",
+      "Bundle.entry.resource.identifier.value",
+      "Patient.address.city",
+      "Patient.address.line",
+      "Patient.identifier.value"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/humanname-own-name": [
+      "Bundle.entry.resource.name.family",
+      "Patient.name.family"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/humanname-own-prefix": [
+      "Bundle.entry.resource.name.family",
+      "Patient.name.family"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/individual-recordedSexOrGender": [
+      "Bundle.entry.resource",
+      "Patient"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator": [
+      "Bundle.entry.resource.address.line",
+      "Patient.address.line"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber": [
+      "Bundle.entry.resource.address.line",
+      "Patient.address.line"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox": [
+      "Bundle.entry.resource.address.line",
+      "Patient.address.line"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-precinct": [
+      "Bundle.entry.resource.address",
+      "Patient.address"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName": [
+      "Bundle.entry.resource.address.line",
+      "Patient.address.line"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier": [
+      "Bundle.entry.resource.name.prefix",
+      "Patient.name.prefix"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/patient-birthPlace": [
+      "Bundle.entry.resource",
+      "Patient"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/patient-citizenship": [
+      "Bundle.entry.resource",
+      "Patient"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/patient-nationality": [
+      "Bundle.entry.resource",
+      "Patient"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/procedure-causedBy": [
+      "Bundle.entry.resource",
+      "Procedure"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/procedure-method": [
+      "Bundle.entry.resource",
+      "Procedure"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/quantity-precision": [
+      "Bundle.entry.resource.valueQuantity.value",
+      "Observation.valueQuantity.value"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/request-statusReason": [
+      "Bundle.entry.resource",
+      "ServiceRequest"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/translation": [
+      "Bundle.entry.resource.item.item.answer.valueCoding.display",
+      "QuestionnaireResponse.item.item.answer.valueCoding.display"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/workflow-instantiatesCanonical": [
+      "Bundle.entry.resource",
+      "Observation"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/workflow-relatedArtifact": [
+      "Bundle.entry.resource",
+      "Bundle.entry.resource.entry.resource",
+      "DiagnosticReport",
+      "Observation",
+      "ServiceRequest"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo": [
+      "Bundle.entry.resource",
+      "DiagnosticReport",
+      "Observation"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name": [
+      "ImplementationGuide.definition.page",
+      "ImplementationGuide.definition.page.page"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment": [
+      "ImplementationGuide.dependsOn"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
+      "ImplementationGuide.definition.resource"
+    ],
+    "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-risk-assessment": [
+      "Bundle.entry.resource",
+      "DiagnosticReport"
+    ],
+    "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-change-type": [
+      "Bundle.entry.resource",
+      "Procedure"
+    ],
+    "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-device": [
+      "Bundle.entry.resource",
+      "Procedure"
+    ],
+    "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-ext": [
+      "Bundle.entry.resource",
+      "Procedure"
+    ],
+    "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-genome-build": [
+      "Bundle.entry.resource",
+      "Procedure"
+    ],
+    "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-method-type": [
+      "Bundle.entry.resource",
+      "Procedure"
+    ],
+    "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-regions": [
+      "Bundle.entry.resource",
+      "Procedure"
+    ],
+    "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-specimen": [
+      "Bundle.entry.resource",
+      "Procedure"
+    ],
+    "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-title": [
+      "Bundle.entry.resource",
+      "Procedure"
+    ],
+    "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-reference": [
+      "Bundle.entry.resource",
+      "DiagnosticReport"
+    ],
+    "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/recommended-action": [
+      "Bundle.entry.resource",
+      "DiagnosticReport"
+    ],
+    "https://fhir.bbmri-eric.eu/StructureDefinition/miabis-organization-description-extension": [
+      "Bundle.entry.resource",
+      "Organization"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/InterpretationsbeeinflussendeEigenschaft": [
+      "Bundle.entry.resource",
+      "Observation"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum": [
+      "Bundle.entry.resource.effectiveDateTime",
+      "DiagnosticReport.effectiveDateTime",
+      "Observation.effectiveDateTime"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstoffrelation": [
+      "Bundle.entry.resource.ingredient",
+      "Medication.ingredient"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstofftyp": [
+      "Bundle.entry.resource.ingredient",
+      "Medication.ingredient"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Durchfuehrungsabsicht": [
+      "Bundle.entry.resource",
+      "Procedure"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-bildgebungsgrund": [
+      "Bundle.entry.resource",
+      "ImagingStudy"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-details": [
+      "Bundle.entry.resource.series.instance",
+      "ImagingStudy.series.instance"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-kontrastmittel": [
+      "Bundle.entry.resource.series",
+      "ImagingStudy.series"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mr": [
+      "Bundle.entry.resource.series",
+      "ImagingStudy.series"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-series-uid": [
+      "Bundle.entry.resource",
+      "Observation"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-sop-instanz-uid": [
+      "Bundle.entry.resource",
+      "Observation"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Diagnose": [
+      "Bundle.entry.resource",
+      "Specimen"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/EinstellungBlutversorgung": [
+      "Bundle.entry.resource.collection",
+      "Bundle.entry.resource.entry.resource.collection",
+      "Specimen.collection"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/KontaktRolle": [
+      "Bundle.entry.resource.contact",
+      "Organization.contact"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Temperaturbedingungen": [
+      "Bundle.entry.resource.entry.resource.processing",
+      "Bundle.entry.resource.processing",
+      "Specimen.processing"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/VerwaltendeOrganisation": [
+      "Bundle.entry.resource",
+      "Specimen"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/mii-ex-biobank-anzahl-passagen": [
+      "Bundle.entry.resource",
+      "Specimen"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/mii-ex-biobank-ebene": [
+      "Bundle.entry.resource",
+      "Bundle.entry.resource.entry.resource",
+      "Specimen"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/mii-ex-biobank-infektiositaetsstatus": [
+      "Bundle.entry.resource",
+      "Bundle.entry.resource.entry.resource",
+      "Specimen"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/mii-ex-biobank-kulturprotokoll": [
+      "Bundle.entry.resource",
+      "Specimen"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/mii-ex-biobank-modifikationen": [
+      "Bundle.entry.resource",
+      "Specimen"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/mii-ex-molgen-familiare-linie": [
+      "Bundle.entry.resource.relationship.coding",
+      "FamilyMemberHistory.relationship.coding"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/mii-ex-molgen-verwandtschaftsgrad": [
+      "Bundle.entry.resource.relationship.coding",
+      "FamilyMemberHistory.relationship.coding"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/mii-ex-molgen-verwandtschaftsverhaeltnis": [
+      "Bundle.entry.resource.relationship.coding",
+      "FamilyMemberHistory.relationship.coding"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-ex-mtb-antwort-kostenuebernahme-entscheidung": [
+      "Bundle.entry.resource",
+      "ClaimResponse"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-ex-mtb-empfehlung-evidenzgraduierung": [
+      "Bundle.entry.resource",
+      "MedicationRequest",
+      "Observation",
+      "RequestGroup"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-ex-mtb-empfehlung-prioritaet": [
+      "Bundle.entry.resource",
+      "MedicationRequest",
+      "RequestGroup",
+      "ServiceRequest"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-ex-mtb-empfehlung-publikation": [
+      "Bundle.entry.resource",
+      "MedicationRequest",
+      "RequestGroup",
+      "ServiceRequest"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-ex-mtb-leitlinie-dokumentation": [
+      "Bundle.entry.resource",
+      "Bundle.entry.resource.supportingInfo",
+      "ClinicalImpression.supportingInfo",
+      "Procedure"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-ex-mtb-leitlinienbehandlung-status": [
+      "Bundle.entry.resource",
+      "ClinicalImpression"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-ex-mtb-panel-gene-list": [
+      "Bundle.entry.resource",
+      "DeviceDefinition"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-histology-morphology-behavior-icdo3": [
+      "Bundle.entry.resource",
+      "Condition"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-nebenwirkung-ctcae-version": [
+      "AdverseEvent",
+      "Bundle.entry.resource"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-operation-intention": [
+      "Bundle.entry.resource",
+      "Procedure"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-operation-urgency": [
+      "Bundle.entry.resource",
+      "Procedure"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-strahlentherapie-bestrahlung-boost": [
+      "Bundle.entry.resource",
+      "Procedure"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-strahlentherapie-bestrahlung-einzeldosis": [
+      "Bundle.entry.resource",
+      "Procedure"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-strahlentherapie-bestrahlung-gesamtdosis": [
+      "Bundle.entry.resource",
+      "Procedure"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-strahlentherapie-bestrahlung-seitenlokalisation": [
+      "Bundle.entry.resource.bodySite",
+      "Procedure.bodySite"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-strahlentherapie-intention": [
+      "Bundle.entry.resource",
+      "Procedure"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-strahlentherapie-stellungzurop": [
+      "Bundle.entry.resource",
+      "Procedure"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-systemische-therapie-intention": [
+      "Bundle.entry.resource",
+      "Procedure"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-systemische-therapie-stellungzurop": [
+      "Bundle.entry.resource",
+      "Procedure"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-tnm-a-praefix": [
+      "Bundle.entry.resource",
+      "Observation"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-tnm-cp-praefix": [
+      "Bundle.entry.resource.code",
+      "Observation.code"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-tnm-itc-suffix": [
+      "Bundle.entry.resource.valueCodeableConcept",
+      "Observation.valueCodeableConcept"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-tnm-r-praefix": [
+      "Bundle.entry.resource",
+      "Observation"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-tnm-sn-suffix": [
+      "Bundle.entry.resource.valueCodeableConcept",
+      "Observation.valueCodeableConcept"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-tnm-y-praefix": [
+      "Bundle.entry.resource",
+      "Observation"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-ex-seltene-empfehlung-evidenzgraduierung": [
+      "Bundle.entry.resource",
+      "MedicationRequest",
+      "RequestGroup"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-ex-seltene-empfehlung-prioritaet": [
+      "Bundle.entry.resource",
+      "MedicationRequest",
+      "RequestGroup",
+      "ServiceRequest"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-ex-seltene-empfehlung-publikation": [
+      "Bundle.entry.resource",
+      "MedicationRequest",
+      "RequestGroup",
+      "ServiceRequest"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-ex-seltene-penetrance": [
+      "Bundle.entry.resource",
+      "Bundle.entry.resource.condition",
+      "Condition",
+      "FamilyMemberHistory.condition"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-ex-seltene-register": [
+      "Bundle.entry.resource",
+      "ResearchSubject"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/von-seltene-betroffen": [
+      "Bundle.entry.resource",
+      "FamilyMemberHistory"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-ex-mikrobio-empfindlichkeit-norm": [
+      "Bundle.entry.resource.interpretation",
+      "Bundle.entry.resource.valueCodeableConcept",
+      "Observation.interpretation",
+      "Observation.valueCodeableConcept"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-ex-mikrobio-faerbung": [
+      "Bundle.entry.resource",
+      "Observation"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/modul-studie/StructureDefinition/mii-ex-studie-akronym": [
+      "Bundle.entry.resource",
+      "ResearchStudy"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/modul-studie/StructureDefinition/mii-ex-studie-eligibility": [
+      "Bundle.entry.resource",
+      "ResearchStudy"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/modul-studie/StructureDefinition/mii-ex-studie-ethikvotum": [
+      "Bundle.entry.resource",
+      "ResearchStudy"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/modul-studie/StructureDefinition/mii-ex-studie-finanzierung": [
+      "Bundle.entry.resource",
+      "ResearchStudy"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/modul-studie/StructureDefinition/mii-ex-studie-quell-register": [
+      "Bundle.entry.resource",
+      "Library"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/modul-studie/StructureDefinition/mii-ex-studie-rekrutierung": [
+      "Bundle.entry.resource",
+      "ResearchStudy"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/modul-studie/StructureDefinition/mii-ex-studie-studienregister": [
+      "Bundle.entry.resource",
+      "ResearchStudy"
+    ]
+  }
+}

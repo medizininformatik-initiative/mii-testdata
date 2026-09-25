@@ -1,0 +1,58 @@
+{
+  "resourceType" : "MedicationRequest",
+  "id" : "mii-exa-test-data-mtb-therapieempfehlung-2",
+  "meta" : {
+    "source" : "https://www.charite.de/fhir/kds-testdata",
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-therapieempfehlung"],
+    "security" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "code" : "HTEST",
+      "display" : "test health data"
+    }]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: MedicationRequest mii-exa-test-data-mtb-therapieempfehlung-2</b></p><a name=\"mii-exa-test-data-mtb-therapieempfehlung-2\"> </a><a name=\"hcmii-exa-test-data-mtb-therapieempfehlung-2\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-therapieempfehlung\">MII PR MTB Therapieempfehlung Systemische Therapie</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Draft</p><p><b>intent</b>: Option</p><p><b>medication</b>: <span title=\"Codes:{http://fhir.de/CodeSystem/bfarm/atc L01XX73}\">Sotorasib</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-mtb-patient-1.html\">Elena Tumorfall  Female, DoB: 1971-04-12 ( https://www.charite.de/fhir/sid/patientenidentifikation#MTB-TEST-001)</a></p><p><b>authoredOn</b>: 2024-03-28</p><p><b>reasonReference</b>: <a href=\"Condition-mii-exa-test-data-mtb-diagnose-primaertumor-1.html\">Condition Bösartige Neubildung: Oberlappen (-Bronchus)</a></p><h3>DosageInstructions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Timing</b></td><td><b>AsNeeded[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>30min , Morning, Once</td><td><span title=\"Codes:{http://snomed.info/sct 422587007}\">Nausea (finding)</span></td></tr></table><p><b>priorPrescription</b>: <a href=\"MedicationRequest-mii-exa-test-data-mtb-therapieempfehlung-1.html\">MedicationRequest: extension = 1,Predictive value of the biomarker or clinical effectiveness of the corresponding drug in a molecularly stratified cohort was demonstrated in a prospective study or a meta-analysis in the same tumor type.,http://www.ncbi.nlm.nih.gov/pubmed#29151359; identifier = https://www.charite.de/fhir/sid/mtb-beschluss#TE-2024-001; status = draft; intent = proposal; medication[x] = Osimertinib; authoredOn = 2024-03-28; reasonCode = Bösartige Neubildung: Oberlappen (-Bronchus); note = Empfehlung mit Evidenzgrad m1A auf Basis der EGFR-L858R-Variante.</a></p></div>"
+  },
+  "status" : "draft",
+  "intent" : "option",
+  "medicationCodeableConcept" : {
+    "coding" : [{
+      "system" : "http://fhir.de/CodeSystem/bfarm/atc",
+      "version" : "2024",
+      "code" : "L01XX73",
+      "display" : "Sotorasib"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/mii-exa-test-data-mtb-patient-1"
+  },
+  "authoredOn" : "2024-03-28",
+  "reasonReference" : [{
+    "reference" : "Condition/mii-exa-test-data-mtb-diagnose-primaertumor-1"
+  }],
+  "dosageInstruction" : [{
+    "timing" : {
+      "repeat" : {
+        "boundsDuration" : {
+          "value" : 7,
+          "unit" : "Tage",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "d"
+        },
+        "when" : ["MORN"],
+        "offset" : 30
+      }
+    },
+    "asNeededCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "422587007",
+        "display" : "Nausea (finding)"
+      }]
+    }
+  }],
+  "priorPrescription" : {
+    "reference" : "MedicationRequest/mii-exa-test-data-mtb-therapieempfehlung-1"
+  }
+}

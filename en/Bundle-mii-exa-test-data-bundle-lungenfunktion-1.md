@@ -1,0 +1,4682 @@
+# mii-exa-test-data-bundle-lungenfunktion-1 - MII KDS Test Data v2027.0.0-ballot
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **mii-exa-test-data-bundle-lungenfunktion-1**
+
+## Example Bundle: mii-exa-test-data-bundle-lungenfunktion-1
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "Bundle",
+  "id" : "mii-exa-test-data-bundle-lungenfunktion-1",
+  "meta" : {
+    "source" : "https://www.charite.de/fhir/kds-testdata",
+    "security" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "code" : "HTEST",
+      "display" : "test health data"
+    }]
+  },
+  "type" : "transaction",
+  "timestamp" : "2025-02-18T13:00:00+01:00",
+  "entry" : [{
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Patient/mii-exa-test-data-lungenfunktion-patient-1",
+    "resource" : {
+      "resourceType" : "Patient",
+      "id" : "mii-exa-test-data-lungenfunktion-patient-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Patient_mii-exa-test-data-lungenfunktion-patient-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Patient mii-exa-test-data-lungenfunktion-patient-1</b></p><a name=\"mii-exa-test-data-lungenfunktion-patient-1\"> </a><a name=\"hcmii-exa-test-data-lungenfunktion-patient-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Luise Atemwald  Female, DoB: 1972-06-30 ( https://www.charite.de/fhir/sid/patientenidentifikation#LUFU-TEST-001)</p><hr/></div>"
+      },
+      "identifier" : [{
+        "system" : "https://www.charite.de/fhir/sid/patientenidentifikation",
+        "value" : "LUFU-TEST-001"
+      }],
+      "name" : [{
+        "family" : "Atemwald",
+        "given" : ["Luise"]
+      }],
+      "gender" : "female",
+      "birthDate" : "1972-06-30"
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Patient/mii-exa-test-data-lungenfunktion-patient-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Encounter/mii-exa-test-data-lungenfunktion-encounter-1",
+    "resource" : {
+      "resourceType" : "Encounter",
+      "id" : "mii-exa-test-data-lungenfunktion-encounter-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Encounter_mii-exa-test-data-lungenfunktion-encounter-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Encounter mii-exa-test-data-lungenfunktion-encounter-1</b></p><a name=\"mii-exa-test-data-lungenfunktion-encounter-1\"> </a><a name=\"hcmii-exa-test-data-lungenfunktion-encounter-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Finished</p><p><b>class</b>: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActCode.html#v3-ActCode-AMB\">ActCode: AMB</a> (ambulatory)</p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-lungenfunktion-patient-1.html\">Luise Atemwald  Female, DoB: 1972-06-30 ( https://www.charite.de/fhir/sid/patientenidentifikation#LUFU-TEST-001)</a></p><p><b>period</b>: 2025-02-18 08:30:00+0100 --&gt; 2025-02-18 12:30:00+0100</p></div>"
+      },
+      "status" : "finished",
+      "class" : {
+        "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "code" : "AMB",
+        "display" : "ambulatory"
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-lungenfunktion-patient-1"
+      },
+      "period" : {
+        "start" : "2025-02-18T08:30:00+01:00",
+        "end" : "2025-02-18T12:30:00+01:00"
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Encounter/mii-exa-test-data-lungenfunktion-encounter-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Location/mii-exa-test-data-lungenfunktion-umgebung-1",
+    "resource" : {
+      "resourceType" : "Location",
+      "id" : "mii-exa-test-data-lungenfunktion-umgebung-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/lungenfunktion-messplatz",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-umgebung"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Location_mii-exa-test-data-lungenfunktion-umgebung-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Location mii-exa-test-data-lungenfunktion-umgebung-1</b></p><a name=\"mii-exa-test-data-lungenfunktion-umgebung-1\"> </a><a name=\"hcmii-exa-test-data-lungenfunktion-umgebung-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/lungenfunktion-messplatz\">https://www.charite.de/fhir/lungenfunktion-messplatz</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-umgebung\">MII PR Lungenfunktion Umgebung</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>name</b>: Lungenfunktionslabor 2, Charite Campus Mitte</p><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleCode HOSP}\">Hospital</span></p><p><b>physicalType</b>: <span title=\"Codes:{http://snomed.info/sct 224709006}\">Location inside building (environment)</span></p></div>"
+      },
+      "name" : "Lungenfunktionslabor 2, Charite Campus Mitte",
+      "type" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "HOSP",
+          "display" : "Hospital"
+        }]
+      }],
+      "physicalType" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+          "code" : "224709006",
+          "display" : "Location inside building (environment)"
+        }]
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Location/mii-exa-test-data-lungenfunktion-umgebung-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Procedure/mii-exa-test-data-lungenfunktion-spirometrie-messung-1",
+    "resource" : {
+      "resourceType" : "Procedure",
+      "id" : "mii-exa-test-data-lungenfunktion-spirometrie-messung-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-spirometrie-messung"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Procedure_mii-exa-test-data-lungenfunktion-spirometrie-messung-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Procedure mii-exa-test-data-lungenfunktion-spirometrie-messung-1</b></p><a name=\"mii-exa-test-data-lungenfunktion-spirometrie-messung-1\"> </a><a name=\"hcmii-exa-test-data-lungenfunktion-spirometrie-messung-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-spirometrie-messung\">MII PR Lungenfunktion Spirometire Messung</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>ExtensionProzedurDokumentationsdatum</b>: 2025-02-18 09:20:00+0100</p><p><b>MII EX Prozedur Durchführungsabsicht</b>: <a href=\"http://snomed.info/id/261004008\">SNOMED CT: 261004008</a> (Diagnostic intent)</p><p><b>partOf</b>: <a href=\"Procedure-mii-exa-test-data-lungenfunktion-untersuchung-1.html\">Procedure Measurement of respiratory function (procedure)</a></p><p><b>status</b>: Completed</p><p><b>category</b>: <span title=\"Codes:{http://snomed.info/sct 23426006}\">Measurement of respiratory function (procedure)</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 127783003}\">Spirometry (procedure)</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-lungenfunktion-patient-1.html\">Luise Atemwald  Female, DoB: 1972-06-30 ( https://www.charite.de/fhir/sid/patientenidentifikation#LUFU-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-lungenfunktion-encounter-1.html\">Encounter: status = finished; class = ambulatory (ActCode#AMB); period = 2025-02-18 08:30:00+0100 --&gt; 2025-02-18 12:30:00+0100</a></p><p><b>performed</b>: 2025-02-18 09:00:00+0100</p><p><b>bodySite</b>: <span title=\"Codes:{http://snomed.info/sct 39607008}\">Lung structure (body structure)</span></p><p><b>outcome</b>: <span title=\"Codes:{http://snomed.info/sct 385669000}\">Successful (qualifier value)</span></p><p><b>report</b>: <a href=\"DiagnosticReport-mii-exa-test-data-lungenfunktion-spirometrie-befund-1.html\">Diagnostic Report for 'Spirometry (procedure)' for '-&gt;Luise Atemwald  Female, DoB: 1972-06-30 ( https://www.charite.de/fhir/sid/patientenidentifikation#LUFU-TEST-001)'</a></p><p><b>note</b>: </p><blockquote><div><p>Spirometrie in sitzender Position, gute Mitarbeit, 3 akzeptable Manoever.</p>\n</div></blockquote></div>"
+      },
+      "extension" : [{
+        "url" : "http://fhir.de/StructureDefinition/ProzedurDokumentationsdatum",
+        "valueDateTime" : "2025-02-18T09:20:00+01:00"
+      },
+      {
+        "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Durchfuehrungsabsicht",
+        "valueCoding" : {
+          "system" : "http://snomed.info/sct",
+          "code" : "261004008",
+          "display" : "Diagnostic intent"
+        }
+      }],
+      "partOf" : [{
+        "reference" : "Procedure/mii-exa-test-data-lungenfunktion-untersuchung-1"
+      }],
+      "status" : "completed",
+      "category" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+          "code" : "23426006",
+          "display" : "Measurement of respiratory function (procedure)"
+        }]
+      },
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+          "code" : "127783003",
+          "display" : "Spirometry (procedure)"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-lungenfunktion-patient-1"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-lungenfunktion-encounter-1"
+      },
+      "performedDateTime" : "2025-02-18T09:00:00+01:00",
+      "bodySite" : [{
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+          "code" : "39607008",
+          "display" : "Lung structure (body structure)"
+        }]
+      }],
+      "outcome" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+          "code" : "385669000",
+          "display" : "Successful (qualifier value)"
+        }]
+      },
+      "report" : [{
+        "reference" : "DiagnosticReport/mii-exa-test-data-lungenfunktion-spirometrie-befund-1"
+      }],
+      "note" : [{
+        "text" : "Spirometrie in sitzender Position, gute Mitarbeit, 3 akzeptable Manoever."
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Procedure/mii-exa-test-data-lungenfunktion-spirometrie-messung-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Procedure/mii-exa-test-data-lungenfunktion-bodyplethysmographie-messung-1",
+    "resource" : {
+      "resourceType" : "Procedure",
+      "id" : "mii-exa-test-data-lungenfunktion-bodyplethysmographie-messung-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-bodyplethysmographie-messung"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Procedure_mii-exa-test-data-lungenfunktion-bodyplethysmographie-messung-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Procedure mii-exa-test-data-lungenfunktion-bodyplethysmographie-messung-1</b></p><a name=\"mii-exa-test-data-lungenfunktion-bodyplethysmographie-messung-1\"> </a><a name=\"hcmii-exa-test-data-lungenfunktion-bodyplethysmographie-messung-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-bodyplethysmographie-messung\">MII PR Lungenfunktion Bodyplethysmographie Messung</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>ExtensionProzedurDokumentationsdatum</b>: 2025-02-18 09:50:00+0100</p><p><b>MII EX Prozedur Durchführungsabsicht</b>: <a href=\"http://snomed.info/id/261004008\">SNOMED CT: 261004008</a> (Diagnostic intent)</p><p><b>partOf</b>: <a href=\"Procedure-mii-exa-test-data-lungenfunktion-untersuchung-1.html\">Procedure Measurement of respiratory function (procedure)</a></p><p><b>status</b>: Completed</p><p><b>category</b>: <span title=\"Codes:{http://snomed.info/sct 23426006}\">Measurement of respiratory function (procedure)</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 28275007}, {http://fhir.de/CodeSystem/bfarm/ops 1-710}\">Total body plethysmography (procedure)</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-lungenfunktion-patient-1.html\">Luise Atemwald  Female, DoB: 1972-06-30 ( https://www.charite.de/fhir/sid/patientenidentifikation#LUFU-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-lungenfunktion-encounter-1.html\">Encounter: status = finished; class = ambulatory (ActCode#AMB); period = 2025-02-18 08:30:00+0100 --&gt; 2025-02-18 12:30:00+0100</a></p><p><b>performed</b>: 2025-02-18 09:30:00+0100</p><p><b>bodySite</b>: <span title=\"Codes:{http://snomed.info/sct 39607008}\">Lung structure (body structure)</span></p><p><b>outcome</b>: <span title=\"Codes:{http://snomed.info/sct 385669000}\">Successful (qualifier value)</span></p><p><b>report</b>: <a href=\"DiagnosticReport-mii-exa-test-data-lungenfunktion-bodyplethysmografie-befund-1.html\">Diagnostic Report for 'Total body plethysmography (procedure)' for '-&gt;Luise Atemwald  Female, DoB: 1972-06-30 ( https://www.charite.de/fhir/sid/patientenidentifikation#LUFU-TEST-001)'</a></p><p><b>note</b>: </p><blockquote><div><p>Bodyplethysmographie in geschlossener Kabine, stabile Atemschleifen.</p>\n</div></blockquote></div>"
+      },
+      "extension" : [{
+        "url" : "http://fhir.de/StructureDefinition/ProzedurDokumentationsdatum",
+        "valueDateTime" : "2025-02-18T09:50:00+01:00"
+      },
+      {
+        "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Durchfuehrungsabsicht",
+        "valueCoding" : {
+          "system" : "http://snomed.info/sct",
+          "code" : "261004008",
+          "display" : "Diagnostic intent"
+        }
+      }],
+      "partOf" : [{
+        "reference" : "Procedure/mii-exa-test-data-lungenfunktion-untersuchung-1"
+      }],
+      "status" : "completed",
+      "category" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+          "code" : "23426006",
+          "display" : "Measurement of respiratory function (procedure)"
+        }]
+      },
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+          "code" : "28275007",
+          "display" : "Total body plethysmography (procedure)"
+        },
+        {
+          "extension" : [{
+            "url" : "http://fhir.de/StructureDefinition/seitenlokalisation",
+            "valueCoding" : {
+              "system" : "https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_ICD_SEITENLOKALISATION",
+              "code" : "B"
+            }
+          }],
+          "system" : "http://fhir.de/CodeSystem/bfarm/ops",
+          "version" : "2024",
+          "code" : "1-710",
+          "display" : "Ganzkörperplethysmographie"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-lungenfunktion-patient-1"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-lungenfunktion-encounter-1"
+      },
+      "performedDateTime" : "2025-02-18T09:30:00+01:00",
+      "bodySite" : [{
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+          "code" : "39607008",
+          "display" : "Lung structure (body structure)"
+        }]
+      }],
+      "outcome" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+          "code" : "385669000",
+          "display" : "Successful (qualifier value)"
+        }]
+      },
+      "report" : [{
+        "reference" : "DiagnosticReport/mii-exa-test-data-lungenfunktion-bodyplethysmografie-befund-1"
+      }],
+      "note" : [{
+        "text" : "Bodyplethysmographie in geschlossener Kabine, stabile Atemschleifen."
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Procedure/mii-exa-test-data-lungenfunktion-bodyplethysmographie-messung-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Procedure/mii-exa-test-data-lungenfunktion-diffusion-messung-1",
+    "resource" : {
+      "resourceType" : "Procedure",
+      "id" : "mii-exa-test-data-lungenfunktion-diffusion-messung-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-diffusion-messung"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Procedure_mii-exa-test-data-lungenfunktion-diffusion-messung-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Procedure mii-exa-test-data-lungenfunktion-diffusion-messung-1</b></p><a name=\"mii-exa-test-data-lungenfunktion-diffusion-messung-1\"> </a><a name=\"hcmii-exa-test-data-lungenfunktion-diffusion-messung-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-diffusion-messung\">MII PR Lungenfunktion Diffusion Messung</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>ExtensionProzedurDokumentationsdatum</b>: 2025-02-18 10:35:00+0100</p><p><b>MII EX Prozedur Durchführungsabsicht</b>: <a href=\"http://snomed.info/id/261004008\">SNOMED CT: 261004008</a> (Diagnostic intent)</p><p><b>partOf</b>: <a href=\"Procedure-mii-exa-test-data-lungenfunktion-untersuchung-1.html\">Procedure Measurement of respiratory function (procedure)</a></p><p><b>status</b>: Completed</p><p><b>category</b>: <span title=\"Codes:{http://snomed.info/sct 23426006}\">Measurement of respiratory function (procedure)</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 36421003}, {http://fhir.de/CodeSystem/bfarm/ops 1-711}\">Carbon monoxide diffusing capacity measurement (procedure)</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-lungenfunktion-patient-1.html\">Luise Atemwald  Female, DoB: 1972-06-30 ( https://www.charite.de/fhir/sid/patientenidentifikation#LUFU-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-lungenfunktion-encounter-1.html\">Encounter: status = finished; class = ambulatory (ActCode#AMB); period = 2025-02-18 08:30:00+0100 --&gt; 2025-02-18 12:30:00+0100</a></p><p><b>performed</b>: 2025-02-18 10:15:00+0100</p><p><b>bodySite</b>: <span title=\"Codes:{http://snomed.info/sct 39607008}\">Lung structure (body structure)</span></p><p><b>outcome</b>: <span title=\"Codes:{http://snomed.info/sct 385669000}\">Successful (qualifier value)</span></p><p><b>report</b>: <a href=\"DiagnosticReport-mii-exa-test-data-lungenfunktion-diffusion-befund-1.html\">Diagnostic Report for 'Carbon monoxide diffusing capacity measurement (procedure)' for '-&gt;Luise Atemwald  Female, DoB: 1972-06-30 ( https://www.charite.de/fhir/sid/patientenidentifikation#LUFU-TEST-001)'</a></p><p><b>note</b>: </p><blockquote><div><p>Single-Breath-CO-Diffusionsmessung, zwei uebereinstimmende Messungen.</p>\n</div></blockquote></div>"
+      },
+      "extension" : [{
+        "url" : "http://fhir.de/StructureDefinition/ProzedurDokumentationsdatum",
+        "valueDateTime" : "2025-02-18T10:35:00+01:00"
+      },
+      {
+        "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Durchfuehrungsabsicht",
+        "valueCoding" : {
+          "system" : "http://snomed.info/sct",
+          "code" : "261004008",
+          "display" : "Diagnostic intent"
+        }
+      }],
+      "partOf" : [{
+        "reference" : "Procedure/mii-exa-test-data-lungenfunktion-untersuchung-1"
+      }],
+      "status" : "completed",
+      "category" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+          "code" : "23426006",
+          "display" : "Measurement of respiratory function (procedure)"
+        }]
+      },
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+          "code" : "36421003",
+          "display" : "Carbon monoxide diffusing capacity measurement (procedure)"
+        },
+        {
+          "extension" : [{
+            "url" : "http://fhir.de/StructureDefinition/seitenlokalisation",
+            "valueCoding" : {
+              "system" : "https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_ICD_SEITENLOKALISATION",
+              "code" : "B"
+            }
+          }],
+          "system" : "http://fhir.de/CodeSystem/bfarm/ops",
+          "version" : "2024",
+          "code" : "1-711",
+          "display" : "Bestimmung der CO-Diffusionskapazität"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-lungenfunktion-patient-1"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-lungenfunktion-encounter-1"
+      },
+      "performedDateTime" : "2025-02-18T10:15:00+01:00",
+      "bodySite" : [{
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+          "code" : "39607008",
+          "display" : "Lung structure (body structure)"
+        }]
+      }],
+      "outcome" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+          "code" : "385669000",
+          "display" : "Successful (qualifier value)"
+        }]
+      },
+      "report" : [{
+        "reference" : "DiagnosticReport/mii-exa-test-data-lungenfunktion-diffusion-befund-1"
+      }],
+      "note" : [{
+        "text" : "Single-Breath-CO-Diffusionsmessung, zwei uebereinstimmende Messungen."
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Procedure/mii-exa-test-data-lungenfunktion-diffusion-messung-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Procedure/mii-exa-test-data-lungenfunktion-provokationstest-messung-1",
+    "resource" : {
+      "resourceType" : "Procedure",
+      "id" : "mii-exa-test-data-lungenfunktion-provokationstest-messung-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-provokationstest-messung"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Procedure_mii-exa-test-data-lungenfunktion-provokationstest-messung-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Procedure mii-exa-test-data-lungenfunktion-provokationstest-messung-1</b></p><a name=\"mii-exa-test-data-lungenfunktion-provokationstest-messung-1\"> </a><a name=\"hcmii-exa-test-data-lungenfunktion-provokationstest-messung-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-provokationstest-messung\">MII PR Lungenfunktion Provokations Messung</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>ExtensionProzedurDokumentationsdatum</b>: 2025-02-18 11:45:00+0100</p><p><b>MII EX Prozedur Durchführungsabsicht</b>: <a href=\"http://snomed.info/id/261004008\">SNOMED CT: 261004008</a> (Diagnostic intent)</p><p><b>partOf</b>: <a href=\"Procedure-mii-exa-test-data-lungenfunktion-untersuchung-1.html\">Procedure Measurement of respiratory function (procedure)</a></p><p><b>status</b>: Completed</p><p><b>category</b>: <span title=\"Codes:{http://snomed.info/sct 323426006}\">Measurement of respiratory function (procedure)</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 252520007}, {http://fhir.de/CodeSystem/bfarm/ops 1-714}\">Methacholine challenge (procedure)</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-lungenfunktion-patient-1.html\">Luise Atemwald  Female, DoB: 1972-06-30 ( https://www.charite.de/fhir/sid/patientenidentifikation#LUFU-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-lungenfunktion-encounter-1.html\">Encounter: status = finished; class = ambulatory (ActCode#AMB); period = 2025-02-18 08:30:00+0100 --&gt; 2025-02-18 12:30:00+0100</a></p><p><b>performed</b>: 2025-02-18 11:00:00+0100</p><p><b>bodySite</b>: <span title=\"Codes:{http://snomed.info/sct 39607008}\">Lung structure (body structure)</span></p><p><b>outcome</b>: <span title=\"Codes:{http://snomed.info/sct 385669000}\">Successful (qualifier value)</span></p><p><b>report</b>: <a href=\"DiagnosticReport-mii-exa-test-data-lungenfunktion-provokationstest-befund-1.html\">Diagnostic Report for 'Methacholine challenge (procedure)' for '-&gt;Luise Atemwald  Female, DoB: 1972-06-30 ( https://www.charite.de/fhir/sid/patientenidentifikation#LUFU-TEST-001)'</a></p><p><b>note</b>: </p><blockquote><div><p>Methacholin-Provokation nach Dosimeter-Protokoll, Abbruch bei PD20.</p>\n</div></blockquote></div>"
+      },
+      "extension" : [{
+        "url" : "http://fhir.de/StructureDefinition/ProzedurDokumentationsdatum",
+        "valueDateTime" : "2025-02-18T11:45:00+01:00"
+      },
+      {
+        "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Durchfuehrungsabsicht",
+        "valueCoding" : {
+          "system" : "http://snomed.info/sct",
+          "code" : "261004008",
+          "display" : "Diagnostic intent"
+        }
+      }],
+      "partOf" : [{
+        "reference" : "Procedure/mii-exa-test-data-lungenfunktion-untersuchung-1"
+      }],
+      "status" : "completed",
+      "category" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+          "code" : "323426006",
+          "display" : "Measurement of respiratory function (procedure)"
+        }]
+      },
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+          "code" : "252520007",
+          "display" : "Methacholine challenge (procedure)"
+        },
+        {
+          "extension" : [{
+            "url" : "http://fhir.de/StructureDefinition/seitenlokalisation",
+            "valueCoding" : {
+              "system" : "https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_ICD_SEITENLOKALISATION",
+              "code" : "B"
+            }
+          }],
+          "system" : "http://fhir.de/CodeSystem/bfarm/ops",
+          "version" : "2024",
+          "code" : "1-714",
+          "display" : "Messung der bronchialen Reaktivität"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-lungenfunktion-patient-1"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-lungenfunktion-encounter-1"
+      },
+      "performedDateTime" : "2025-02-18T11:00:00+01:00",
+      "bodySite" : [{
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+          "code" : "39607008",
+          "display" : "Lung structure (body structure)"
+        }]
+      }],
+      "outcome" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+          "code" : "385669000",
+          "display" : "Successful (qualifier value)"
+        }]
+      },
+      "report" : [{
+        "reference" : "DiagnosticReport/mii-exa-test-data-lungenfunktion-provokationstest-befund-1"
+      }],
+      "note" : [{
+        "text" : "Methacholin-Provokation nach Dosimeter-Protokoll, Abbruch bei PD20."
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Procedure/mii-exa-test-data-lungenfunktion-provokationstest-messung-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Procedure/mii-exa-test-data-lungenfunktion-untersuchung-1",
+    "resource" : {
+      "resourceType" : "Procedure",
+      "id" : "mii-exa-test-data-lungenfunktion-untersuchung-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Procedure_mii-exa-test-data-lungenfunktion-untersuchung-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Procedure mii-exa-test-data-lungenfunktion-untersuchung-1</b></p><a name=\"mii-exa-test-data-lungenfunktion-untersuchung-1\"> </a><a name=\"hcmii-exa-test-data-lungenfunktion-untersuchung-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Completed</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 23426006}\">Measurement of respiratory function (procedure)</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-lungenfunktion-patient-1.html\">Luise Atemwald  Female, DoB: 1972-06-30 ( https://www.charite.de/fhir/sid/patientenidentifikation#LUFU-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-lungenfunktion-encounter-1.html\">Encounter: status = finished; class = ambulatory (ActCode#AMB); period = 2025-02-18 08:30:00+0100 --&gt; 2025-02-18 12:30:00+0100</a></p><p><b>performed</b>: 2025-02-18 09:00:00+0100 --&gt; 2025-02-18 11:45:00+0100</p></div>"
+      },
+      "status" : "completed",
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+          "code" : "23426006",
+          "display" : "Measurement of respiratory function (procedure)"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-lungenfunktion-patient-1"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-lungenfunktion-encounter-1"
+      },
+      "performedPeriod" : {
+        "start" : "2025-02-18T09:00:00+01:00",
+        "end" : "2025-02-18T11:45:00+01:00"
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Procedure/mii-exa-test-data-lungenfunktion-untersuchung-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/DocumentReference/mii-exa-test-data-lungenfunktion-docref-rohdaten-1",
+    "resource" : {
+      "resourceType" : "DocumentReference",
+      "id" : "mii-exa-test-data-lungenfunktion-docref-rohdaten-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/lungenfunktion-messplatz",
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"DocumentReference_mii-exa-test-data-lungenfunktion-docref-rohdaten-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: DocumentReference mii-exa-test-data-lungenfunktion-docref-rohdaten-1</b></p><a name=\"mii-exa-test-data-lungenfunktion-docref-rohdaten-1\"> </a><a name=\"hcmii-exa-test-data-lungenfunktion-docref-rohdaten-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/lungenfunktion-messplatz\">https://www.charite.de/fhir/lungenfunktion-messplatz</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Current</p><p><b>type</b>: <span title=\"Codes:{http://snomed.info/sct 720449003}\">Lungenfunktions-Rohdaten (Fluss-Volumen-Kurven)</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-lungenfunktion-patient-1.html\">Luise Atemwald  Female, DoB: 1972-06-30 ( https://www.charite.de/fhir/sid/patientenidentifikation#LUFU-TEST-001)</a></p><p><b>date</b>: 2025-02-18 11:45:00+0100</p><blockquote><p><b>content</b></p><h3>Attachments</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>ContentType</b></td><td><b>Url</b></td><td><b>Title</b></td></tr><tr><td style=\"display: none\">*</td><td>PDF</td><td><a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/lungenfunktion/rohdaten/messreihe-2025-02-18.pdf\">https://www.charite.de/fhir/lungenfunktion/rohdaten/messreihe-2025-02-18.pdf</a></td><td>Rohdaten Lungenfunktionsmessung 18.02.2025</td></tr></table></blockquote></div>"
+      },
+      "status" : "current",
+      "type" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "720449003",
+          "display" : "Pulmonary function report (record artifact)"
+        }],
+        "text" : "Lungenfunktions-Rohdaten (Fluss-Volumen-Kurven)"
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-lungenfunktion-patient-1"
+      },
+      "date" : "2025-02-18T11:45:00+01:00",
+      "content" : [{
+        "attachment" : {
+          "contentType" : "application/pdf",
+          "url" : "https://www.charite.de/fhir/lungenfunktion/rohdaten/messreihe-2025-02-18.pdf",
+          "title" : "Rohdaten Lungenfunktionsmessung 18.02.2025"
+        }
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "DocumentReference/mii-exa-test-data-lungenfunktion-docref-rohdaten-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/MedicationRequest/mii-exa-test-data-lungenfunktion-methacholine-anordnung-1",
+    "resource" : {
+      "resourceType" : "MedicationRequest",
+      "id" : "mii-exa-test-data-lungenfunktion-methacholine-anordnung-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"MedicationRequest_mii-exa-test-data-lungenfunktion-methacholine-anordnung-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: MedicationRequest mii-exa-test-data-lungenfunktion-methacholine-anordnung-1</b></p><a name=\"mii-exa-test-data-lungenfunktion-methacholine-anordnung-1\"> </a><a name=\"hcmii-exa-test-data-lungenfunktion-methacholine-anordnung-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Completed</p><p><b>intent</b>: Order</p><p><b>medication</b>: <a href=\"Medication-mii-exa-test-data-lungenfunktion-methacholine-1.html\">Medication Provokit® 0,33%</a></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-lungenfunktion-patient-1.html\">Luise Atemwald  Female, DoB: 1972-06-30 ( https://www.charite.de/fhir/sid/patientenidentifikation#LUFU-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-lungenfunktion-encounter-1.html\">Encounter: status = finished; class = ambulatory (ActCode#AMB); period = 2025-02-18 08:30:00+0100 --&gt; 2025-02-18 12:30:00+0100</a></p><p><b>authoredOn</b>: 2025-02-18 10:50:00+0100</p></div>"
+      },
+      "status" : "completed",
+      "intent" : "order",
+      "medicationReference" : {
+        "reference" : "Medication/mii-exa-test-data-lungenfunktion-methacholine-1"
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-lungenfunktion-patient-1"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-lungenfunktion-encounter-1"
+      },
+      "authoredOn" : "2025-02-18T10:50:00+01:00"
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "MedicationRequest/mii-exa-test-data-lungenfunktion-methacholine-anordnung-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/DiagnosticReport/mii-exa-test-data-lungenfunktion-spirometrie-befund-1",
+    "resource" : {
+      "resourceType" : "DiagnosticReport",
+      "id" : "mii-exa-test-data-lungenfunktion-spirometrie-befund-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/lungenfunktion-messplatz",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-spirometrie"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"DiagnosticReport_mii-exa-test-data-lungenfunktion-spirometrie-befund-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: DiagnosticReport mii-exa-test-data-lungenfunktion-spirometrie-befund-1</b></p><a name=\"mii-exa-test-data-lungenfunktion-spirometrie-befund-1\"> </a><a name=\"hcmii-exa-test-data-lungenfunktion-spirometrie-befund-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/lungenfunktion-messplatz\">https://www.charite.de/fhir/lungenfunktion-messplatz</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-spirometrie\">MII PR Lungenfunktion Spirometrie</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><h2><span title=\"Codes:{http://snomed.info/sct 127783003}, {http://loinc.org 18759-1}\">Spirometry (procedure)</span> (<span title=\"Codes:{http://loinc.org 58477-1}, {http://terminology.hl7.org/CodeSystem/v2-0074 PF}, {http://snomed.info/sct 720449003}\">Pulmonary function study</span>) </h2><table class=\"grid\"><tr><td>Subject</td><td>Luise Atemwald  Female, DoB: 1972-06-30 ( https://www.charite.de/fhir/sid/patientenidentifikation#LUFU-TEST-001)</td></tr><tr><td>Relevant Time</td><td>2025-02-18 09:00:00+0100</td></tr><tr><td>Reported</td><td>2025-02-18 12:15:00+0100</td></tr><tr><td>Presented Form</td><td> application/pdf @ <a href=\"https://www.charite.de/fhir/lungenfunktion/befunde/spirometrie-2025-02-18.pdf\">https://www.charite.de/fhir/lungenfunktion/befunde/spirometrie-2025-02-18.pdf <img src=\"external.png\" alt=\"icon\" style=\"vertical-align: baseline\"/></a></td></tr></table><p><b>Report Details</b></p><table class=\"grid\"><tr><td><b>Code</b></td><td><b>Value</b></td><td><b>Reference Range</b></td><td><b>Flags</b></td><td><b>Reported</b></td></tr><tr><td><a href=\"Observation-mii-exa-test-data-lungenfunktion-fev-fvc-1.html\"><span title=\"Codes:{http://snomed.info/sct 251944000}, {http://loinc.org 19926-5}\">Forced expired volume in one second/forced vital capacity ratio (observable entity)</span></a></td><td>67.7 %<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code% = '%')</span></td><td>70 %<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code% = '%')</span> - 85 %<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code% = '%')</span></td><td>Final, <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation L}\">Low</span></td><td>2025-02-18 12:00:00+0100</td></tr><tr><td><a href=\"Observation-mii-exa-test-data-lungenfunktion-fev-1.html\"><span title=\"Codes:{http://snomed.info/sct 59328004}, {http://loinc.org 20150-9}\">Forced expired volume in 1 second (observable entity)</span></a></td><td>2.1 L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL = 'L')</span></td><td>2.31 L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL = 'L')</span> - 3.39 L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL = 'L')</span></td><td>Final, <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation L}\">Low</span></td><td>2025-02-18 12:00:00+0100</td></tr><tr><td><a href=\"Observation-mii-exa-test-data-lungenfunktion-fvc-1.html\"><span title=\"Codes:{http://snomed.info/sct 50834005}, {http://loinc.org 19868-9}\">Forced vital capacity (observable entity)</span></a></td><td>3.1 L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL = 'L')</span></td><td>2.9 L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL = 'L')</span> - 4.3 L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL = 'L')</span></td><td>Final, <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}\">Normal</span></td><td>2025-02-18 12:00:00+0100</td></tr><tr><td><a href=\"Observation-mii-exa-test-data-lungenfunktion-ic-1.html\"><span title=\"Codes:{http://snomed.info/sct 29533001}, {http://loinc.org 19852-3}\">Inspiratory capacity (observable entity)</span></a></td><td>2.4 L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL = 'L')</span></td><td>2.1 L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL = 'L')</span> - 3.1 L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL = 'L')</span></td><td>Final, <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}\">Normal</span></td><td>2025-02-18 12:00:00+0100</td></tr><tr><td><a href=\"Observation-mii-exa-test-data-lungenfunktion-mef-1.html\"><span title=\"Codes:{http://snomed.info/sct 251920002}, {http://loinc.org 65822-9}\">Maximum expiratory flow rate at 50 percent of vital capacity (observable entity)</span></a></td><td>1.9 L/s<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL/s = 'L/s')</span></td><td>2.7 L/s<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL/s = 'L/s')</span> - 5.2 L/s<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL/s = 'L/s')</span></td><td>Final, <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation L}\">Low</span></td><td>2025-02-18 12:00:00+0100</td></tr><tr><td><a href=\"Observation-mii-exa-test-data-lungenfunktion-pef-1.html\"><span title=\"Codes:{http://snomed.info/sct 18491006}, {http://loinc.org 33452-4}\">Peak expiratory flow rate (observable entity)</span></a></td><td>5.2 L/s<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL/s = 'L/s')</span></td><td>5.5 L/s<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL/s = 'L/s')</span> - 8.3 L/s<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL/s = 'L/s')</span></td><td>Final, <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation L}\">Low</span></td><td>2025-02-18 12:00:00+0100</td></tr><tr><td><a href=\"Observation-mii-exa-test-data-lungenfunktion-irv-erv-1.html\"><span title=\"Codes:{http://snomed.info/sct 55532004}, {http://loinc.org 19924-0}\">Expiratory reserve volume (observable entity)</span></a></td><td>0.9 L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL = 'L')</span></td><td>0.7 L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL = 'L')</span> - 1.5 L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL = 'L')</span></td><td>Final, <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}\">Normal</span></td><td>2025-02-18 12:00:00+0100</td></tr><tr><td><a href=\"Observation-mii-exa-test-data-lungenfunktion-vc-1.html\"><span title=\"Codes:{http://snomed.info/sct 83411002}, {http://loinc.org 19866-3}\">Slow vital capacity (observable entity)</span></a></td><td>3.3 L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL = 'L')</span></td><td>2.96 L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL = 'L')</span> - 4.44 L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL = 'L')</span></td><td>Final, <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}\">Normal</span></td><td>2025-02-18 12:00:00+0100</td></tr></table><p>Leichte obstruktive Ventilationsstoerung (FEV1/FVC 67.7 %, FEV1 74 % vom Soll) bei normaler Vitalkapazitaet.</p><p><b>Coded Conclusions:</b></p><ul><li><span title=\"Codes:{http://fhir.de/CodeSystem/bfarm/icd-10-gm J45.9}\">Asthma bronchiale, nicht näher bezeichnet</span></li></ul></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "58477-1",
+          "display" : "Pulmonary function study"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code" : "PF"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+          "code" : "720449003",
+          "display" : "Pulmonary function report (record artifact)"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+          "code" : "127783003",
+          "display" : "Spirometry (procedure)"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "18759-1",
+          "display" : "Spirometry study"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-lungenfunktion-patient-1"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-lungenfunktion-encounter-1"
+      },
+      "effectiveDateTime" : "2025-02-18T09:00:00+01:00",
+      "issued" : "2025-02-18T12:15:00+01:00",
+      "result" : [{
+        "reference" : "Observation/mii-exa-test-data-lungenfunktion-fev-fvc-1"
+      },
+      {
+        "reference" : "Observation/mii-exa-test-data-lungenfunktion-fev-1"
+      },
+      {
+        "reference" : "Observation/mii-exa-test-data-lungenfunktion-fvc-1"
+      },
+      {
+        "reference" : "Observation/mii-exa-test-data-lungenfunktion-ic-1"
+      },
+      {
+        "reference" : "Observation/mii-exa-test-data-lungenfunktion-mef-1"
+      },
+      {
+        "reference" : "Observation/mii-exa-test-data-lungenfunktion-pef-1"
+      },
+      {
+        "reference" : "Observation/mii-exa-test-data-lungenfunktion-irv-erv-1"
+      },
+      {
+        "reference" : "Observation/mii-exa-test-data-lungenfunktion-vc-1"
+      }],
+      "conclusion" : "Leichte obstruktive Ventilationsstoerung (FEV1/FVC 67.7 %, FEV1 74 % vom Soll) bei normaler Vitalkapazitaet.",
+      "conclusionCode" : [{
+        "coding" : [{
+          "system" : "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+          "version" : "2026",
+          "code" : "J45.9",
+          "display" : "Asthma bronchiale, nicht näher bezeichnet"
+        }]
+      }],
+      "presentedForm" : [{
+        "contentType" : "application/pdf",
+        "url" : "https://www.charite.de/fhir/lungenfunktion/befunde/spirometrie-2025-02-18.pdf",
+        "title" : "Spirometrie-Befund vom 18.02.2025"
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "DiagnosticReport/mii-exa-test-data-lungenfunktion-spirometrie-befund-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/DiagnosticReport/mii-exa-test-data-lungenfunktion-bodyplethysmografie-befund-1",
+    "resource" : {
+      "resourceType" : "DiagnosticReport",
+      "id" : "mii-exa-test-data-lungenfunktion-bodyplethysmografie-befund-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/lungenfunktion-messplatz",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-bodyplethysmographie"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"DiagnosticReport_mii-exa-test-data-lungenfunktion-bodyplethysmografie-befund-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: DiagnosticReport mii-exa-test-data-lungenfunktion-bodyplethysmografie-befund-1</b></p><a name=\"mii-exa-test-data-lungenfunktion-bodyplethysmografie-befund-1\"> </a><a name=\"hcmii-exa-test-data-lungenfunktion-bodyplethysmografie-befund-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/lungenfunktion-messplatz\">https://www.charite.de/fhir/lungenfunktion-messplatz</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-bodyplethysmographie\">MII PR Lungenfunktion Bodyplethysmographie</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><h2><span title=\"Codes:{http://snomed.info/sct 28275007}\">Total body plethysmography (procedure)</span> (<span title=\"Codes:{http://loinc.org 58477-1}, {http://terminology.hl7.org/CodeSystem/v2-0074 PF}, {http://snomed.info/sct 720449003}\">Pulmonary function study</span>) </h2><table class=\"grid\"><tr><td>Subject</td><td>Luise Atemwald  Female, DoB: 1972-06-30 ( https://www.charite.de/fhir/sid/patientenidentifikation#LUFU-TEST-001)</td></tr><tr><td>Relevant Time</td><td>2025-02-18 09:30:00+0100</td></tr><tr><td>Reported</td><td>2025-02-18 12:15:00+0100</td></tr><tr><td>Presented Form</td><td> application/pdf @ <a href=\"https://www.charite.de/fhir/lungenfunktion/befunde/bodyplethysmographie-2025-02-18.pdf\">https://www.charite.de/fhir/lungenfunktion/befunde/bodyplethysmographie-2025-02-18.pdf <img src=\"external.png\" alt=\"icon\" style=\"vertical-align: baseline\"/></a></td></tr></table><p><b>Report Details</b></p><table class=\"grid\"><tr><td><b>Code</b></td><td><b>Value</b></td><td><b>Reference Range</b></td><td><b>Flags</b></td><td><b>Reported</b></td></tr><tr><td><a href=\"Observation-mii-exa-test-data-lungenfunktion-bf-1.html\"><span title=\"Codes:{http://loinc.org 9279-1}, {http://snomed.info/sct 271625008}\">Respiratory rate</span></a></td><td>14 /min<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code/min = '/min')</span></td><td>12 /min<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code/min = '/min')</span> - 18 /min<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code/min = '/min')</span></td><td>Final, <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}\">Normal</span></td><td>2025-02-18 12:00:00+0100</td></tr><tr><td><a href=\"Observation-mii-exa-test-data-lungenfunktion-fev-1.html\"><span title=\"Codes:{http://snomed.info/sct 59328004}, {http://loinc.org 20150-9}\">Forced expired volume in 1 second (observable entity)</span></a></td><td>2.1 L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL = 'L')</span></td><td>2.31 L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL = 'L')</span> - 3.39 L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL = 'L')</span></td><td>Final, <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation L}\">Low</span></td><td>2025-02-18 12:00:00+0100</td></tr><tr><td><a href=\"Observation-mii-exa-test-data-lungenfunktion-fvc-1.html\"><span title=\"Codes:{http://snomed.info/sct 50834005}, {http://loinc.org 19868-9}\">Forced vital capacity (observable entity)</span></a></td><td>3.1 L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL = 'L')</span></td><td>2.9 L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL = 'L')</span> - 4.3 L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL = 'L')</span></td><td>Final, <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}\">Normal</span></td><td>2025-02-18 12:00:00+0100</td></tr><tr><td><a href=\"Observation-mii-exa-test-data-lungenfunktion-ic-1.html\"><span title=\"Codes:{http://snomed.info/sct 29533001}, {http://loinc.org 19852-3}\">Inspiratory capacity (observable entity)</span></a></td><td>2.4 L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL = 'L')</span></td><td>2.1 L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL = 'L')</span> - 3.1 L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL = 'L')</span></td><td>Final, <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}\">Normal</span></td><td>2025-02-18 12:00:00+0100</td></tr><tr><td><a href=\"Observation-mii-exa-test-data-lungenfunktion-mef-1.html\"><span title=\"Codes:{http://snomed.info/sct 251920002}, {http://loinc.org 65822-9}\">Maximum expiratory flow rate at 50 percent of vital capacity (observable entity)</span></a></td><td>1.9 L/s<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL/s = 'L/s')</span></td><td>2.7 L/s<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL/s = 'L/s')</span> - 5.2 L/s<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL/s = 'L/s')</span></td><td>Final, <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation L}\">Low</span></td><td>2025-02-18 12:00:00+0100</td></tr><tr><td><a href=\"Observation-mii-exa-test-data-lungenfunktion-pef-1.html\"><span title=\"Codes:{http://snomed.info/sct 18491006}, {http://loinc.org 33452-4}\">Peak expiratory flow rate (observable entity)</span></a></td><td>5.2 L/s<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL/s = 'L/s')</span></td><td>5.5 L/s<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL/s = 'L/s')</span> - 8.3 L/s<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL/s = 'L/s')</span></td><td>Final, <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation L}\">Low</span></td><td>2025-02-18 12:00:00+0100</td></tr><tr><td><a href=\"Observation-mii-exa-test-data-lungenfunktion-irv-erv-1.html\"><span title=\"Codes:{http://snomed.info/sct 55532004}, {http://loinc.org 19924-0}\">Expiratory reserve volume (observable entity)</span></a></td><td>0.9 L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL = 'L')</span></td><td>0.7 L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL = 'L')</span> - 1.5 L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL = 'L')</span></td><td>Final, <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}\">Normal</span></td><td>2025-02-18 12:00:00+0100</td></tr><tr><td><a href=\"Observation-mii-exa-test-data-lungenfunktion-vc-1.html\"><span title=\"Codes:{http://snomed.info/sct 83411002}, {http://loinc.org 19866-3}\">Slow vital capacity (observable entity)</span></a></td><td>3.3 L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL = 'L')</span></td><td>2.96 L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL = 'L')</span> - 4.44 L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL = 'L')</span></td><td>Final, <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}\">Normal</span></td><td>2025-02-18 12:00:00+0100</td></tr><tr><td><a href=\"Observation-mii-exa-test-data-lungenfunktion-frc-1.html\"><span title=\"Codes:{http://snomed.info/sct 65825000}, {http://loinc.org 19846-5}\">Functional residual capacity (observable entity)</span></a></td><td>3.4 L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL = 'L')</span></td><td>2.4 L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL = 'L')</span> - 3.6 L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL = 'L')</span></td><td>Final, <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation H}\">High</span></td><td>2025-02-18 12:00:00+0100</td></tr><tr><td><a href=\"Observation-mii-exa-test-data-lungenfunktion-r-1.html\"><span title=\"Codes:{http://snomed.info/sct 16162007}, {http://loinc.org 20083-2}\">Total airway resistance (observable entity)</span></a></td><td>0.42 kPa/(L/s)<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codekPa/(L/s) = 'kPa/(L/s)')</span></td><td>0.05 kPa/(L/s)<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codekPa/(L/s) = 'kPa/(L/s)')</span> - 0.3 kPa/(L/s)<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codekPa/(L/s) = 'kPa/(L/s)')</span></td><td>Final, <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation H}\">High</span></td><td>2025-02-18 12:00:00+0100</td></tr><tr><td><a href=\"Observation-mii-exa-test-data-lungenfunktion-sr-1.html\"><span title=\"Codes:{http://snomed.info/sct 1366667009}, {http://loinc.org 91980-3}\">Specific airway resistance (observable entity)</span></a></td><td>1.35 kPa.s<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codekPa.s = 'kPa.s')</span></td><td>0.2 kPa.s<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codekPa.s = 'kPa.s')</span> - 1.2 kPa.s<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codekPa.s = 'kPa.s')</span></td><td>Final, <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation H}\">High</span></td><td>2025-02-18 12:00:00+0100</td></tr><tr><td><a href=\"Observation-mii-exa-test-data-lungenfunktion-sr-eff-1.html\"><span title=\"Codes:{http://snomed.info/sct 1366667009}, {http://loinc.org 98084-7}\">Specific airway resistance (observable entity)</span></a></td><td>1.1 kPa.s<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codekPa.s = 'kPa.s')</span></td><td>0.2 kPa.s<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codekPa.s = 'kPa.s')</span> - 1.2 kPa.s<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codekPa.s = 'kPa.s')</span></td><td>Final, <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation H}\">High</span></td><td>2025-02-18 12:00:00+0100</td></tr><tr><td><a href=\"Observation-mii-exa-test-data-lungenfunktion-sg-total-1.html\"><span title=\"Codes:{http://snomed.info/sct 79412009}\">Specific airway conductance (observable entity)</span></a></td><td>0.74 /kPA*s<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code/kPA.s = '/kPA.s')</span></td><td>0.85 1/(kPa.s)<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code1/(kPa.s) = '1/(kPa.s)')</span> - 2.1 1/(kPa.s)<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code1/(kPa.s) = '1/(kPa.s)')</span></td><td>Final, <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation L}\">Low</span></td><td>2025-02-18 12:00:00+0100</td></tr><tr><td><a href=\"Observation-mii-exa-test-data-lungenfunktion-tlc-1.html\"><span title=\"Codes:{http://snomed.info/sct 57566009}, {http://loinc.org 19859-8}\">Total lung capacity (observable entity)</span></a></td><td>5.9 L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL = 'L')</span></td><td>5 L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL = 'L')</span> - 7.4 L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL = 'L')</span></td><td>Final, <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}\">Normal</span></td><td>2025-02-18 12:00:00+0100</td></tr><tr><td><a href=\"Observation-mii-exa-test-data-lungenfunktion-rv-1.html\"><span title=\"Codes:{http://snomed.info/sct 42457008}, {http://loinc.org 20146-7}\">Residual respiratory volume (observable entity)</span></a></td><td>2.6 L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL = 'L')</span></td><td>1.4 L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL = 'L')</span> - 2.2 L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL = 'L')</span></td><td>Final, <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation H}\">High</span></td><td>2025-02-18 12:00:00+0100</td></tr><tr><td><a href=\"Observation-mii-exa-test-data-lungenfunktion-rv-tlc-1.html\"><span title=\"Codes:{http://snomed.info/sct 1366666000}, {http://loinc.org 81454-1}\">Residual volume/total lung capacity ratio (observable entity)</span></a></td><td>44 %<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code% = '%')</span></td><td>25 %<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code% = '%')</span> - 35 %<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code% = '%')</span></td><td>Final, <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation H}\">High</span></td><td>2025-02-18 12:00:00+0100</td></tr></table><p>Erhoehter totaler und spezifischer Atemwegswiderstand, RV und RV/TLC erhoeht im Sinne einer leichten Ueberblaehung. TLC normwertig.</p><p><b>Coded Conclusions:</b></p><ul><li><span title=\"Codes:{http://fhir.de/CodeSystem/bfarm/icd-10-gm J45.9}\">Asthma bronchiale, nicht näher bezeichnet</span></li></ul></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "58477-1",
+          "display" : "Pulmonary function study"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code" : "PF"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+          "code" : "720449003",
+          "display" : "Pulmonary function report (record artifact)"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+          "code" : "28275007",
+          "display" : "Total body plethysmography (procedure)"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-lungenfunktion-patient-1"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-lungenfunktion-encounter-1"
+      },
+      "effectiveDateTime" : "2025-02-18T09:30:00+01:00",
+      "issued" : "2025-02-18T12:15:00+01:00",
+      "result" : [{
+        "reference" : "Observation/mii-exa-test-data-lungenfunktion-bf-1"
+      },
+      {
+        "reference" : "Observation/mii-exa-test-data-lungenfunktion-fev-1"
+      },
+      {
+        "reference" : "Observation/mii-exa-test-data-lungenfunktion-fvc-1"
+      },
+      {
+        "reference" : "Observation/mii-exa-test-data-lungenfunktion-ic-1"
+      },
+      {
+        "reference" : "Observation/mii-exa-test-data-lungenfunktion-mef-1"
+      },
+      {
+        "reference" : "Observation/mii-exa-test-data-lungenfunktion-pef-1"
+      },
+      {
+        "reference" : "Observation/mii-exa-test-data-lungenfunktion-irv-erv-1"
+      },
+      {
+        "reference" : "Observation/mii-exa-test-data-lungenfunktion-vc-1"
+      },
+      {
+        "reference" : "Observation/mii-exa-test-data-lungenfunktion-frc-1"
+      },
+      {
+        "reference" : "Observation/mii-exa-test-data-lungenfunktion-r-1"
+      },
+      {
+        "reference" : "Observation/mii-exa-test-data-lungenfunktion-sr-1"
+      },
+      {
+        "reference" : "Observation/mii-exa-test-data-lungenfunktion-sr-eff-1"
+      },
+      {
+        "reference" : "Observation/mii-exa-test-data-lungenfunktion-sg-total-1"
+      },
+      {
+        "reference" : "Observation/mii-exa-test-data-lungenfunktion-tlc-1"
+      },
+      {
+        "reference" : "Observation/mii-exa-test-data-lungenfunktion-rv-1"
+      },
+      {
+        "reference" : "Observation/mii-exa-test-data-lungenfunktion-rv-tlc-1"
+      }],
+      "conclusion" : "Erhoehter totaler und spezifischer Atemwegswiderstand, RV und RV/TLC erhoeht im Sinne einer leichten Ueberblaehung. TLC normwertig.",
+      "conclusionCode" : [{
+        "coding" : [{
+          "system" : "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+          "version" : "2026",
+          "code" : "J45.9",
+          "display" : "Asthma bronchiale, nicht näher bezeichnet"
+        }]
+      }],
+      "presentedForm" : [{
+        "contentType" : "application/pdf",
+        "url" : "https://www.charite.de/fhir/lungenfunktion/befunde/bodyplethysmographie-2025-02-18.pdf",
+        "title" : "Bodyplethysmographie-Befund vom 18.02.2025"
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "DiagnosticReport/mii-exa-test-data-lungenfunktion-bodyplethysmografie-befund-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/DiagnosticReport/mii-exa-test-data-lungenfunktion-diffusion-befund-1",
+    "resource" : {
+      "resourceType" : "DiagnosticReport",
+      "id" : "mii-exa-test-data-lungenfunktion-diffusion-befund-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/lungenfunktion-messplatz",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-diffusion"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"DiagnosticReport_mii-exa-test-data-lungenfunktion-diffusion-befund-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: DiagnosticReport mii-exa-test-data-lungenfunktion-diffusion-befund-1</b></p><a name=\"mii-exa-test-data-lungenfunktion-diffusion-befund-1\"> </a><a name=\"hcmii-exa-test-data-lungenfunktion-diffusion-befund-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/lungenfunktion-messplatz\">https://www.charite.de/fhir/lungenfunktion-messplatz</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-diffusion\">MII PR Lungenfunktion Diffusion</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><h2><span title=\"Codes:{http://snomed.info/sct 36421003}\">Carbon monoxide diffusing capacity measurement (procedure)</span> (<span title=\"Codes:{http://loinc.org 58477-1}, {http://terminology.hl7.org/CodeSystem/v2-0074 PF}, {http://snomed.info/sct 720449003}\">Pulmonary function study</span>) </h2><table class=\"grid\"><tr><td>Subject</td><td>Luise Atemwald  Female, DoB: 1972-06-30 ( https://www.charite.de/fhir/sid/patientenidentifikation#LUFU-TEST-001)</td></tr><tr><td>Relevant Time</td><td>2025-02-18 10:15:00+0100</td></tr><tr><td>Reported</td><td>2025-02-18 12:15:00+0100</td></tr><tr><td>Presented Form</td><td> application/pdf @ <a href=\"https://www.charite.de/fhir/lungenfunktion/befunde/diffusion-2025-02-18.pdf\">https://www.charite.de/fhir/lungenfunktion/befunde/diffusion-2025-02-18.pdf <img src=\"external.png\" alt=\"icon\" style=\"vertical-align: baseline\"/></a></td></tr></table><p><b>Report Details</b></p><table class=\"grid\"><tr><td><b>Code</b></td><td><b>Value</b></td><td><b>Reference Range</b></td><td><b>Flags</b></td><td><b>Reported</b></td></tr><tr><td><a href=\"Observation-mii-exa-test-data-lungenfunktion-dlco-1.html\"><span title=\"Codes:{http://snomed.info/sct 1366665001}, {http://loinc.org 19911-7}\">Single breath carbon monoxide diffusing capacity (observable entity)</span></a></td><td>7.2 mmol/(min.kPa)<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemmol/(min.kPa) = 'mmol/(min.kPa)')</span></td><td>6.2 mmol/(min.kPa)<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemmol/(min.kPa) = 'mmol/(min.kPa)')</span> - 9.4 mmol/(min.kPa)<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemmol/(min.kPa) = 'mmol/(min.kPa)')</span></td><td>Final, <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}\">Normal</span></td><td>2025-02-18 12:00:00+0100</td></tr><tr><td><a href=\"Observation-mii-exa-test-data-lungenfunktion-dlcoc-1.html\"><span title=\"Codes:{http://loinc.org 19913-3}\">Diffusion capacity.carbon monoxide adjusted for hemoglobin</span></a></td><td>7.45 mmol/(min.kPa)<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemmol/(min.kPa) = 'mmol/(min.kPa)')</span></td><td>6.2 mmol/(min.kPa)<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemmol/(min.kPa) = 'mmol/(min.kPa)')</span> - 9.4 mmol/(min.kPa)<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemmol/(min.kPa) = 'mmol/(min.kPa)')</span></td><td>Final, <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}\">Normal</span></td><td>2025-02-18 12:00:00+0100</td></tr><tr><td><a href=\"Observation-mii-exa-test-data-lungenfunktion-kco-1.html\"><span title=\"Codes:{http://snomed.info/sct 251952002}, {http://loinc.org 19916-6}\">Transfer coefficient (respiratory measure) (observable entity)</span></a></td><td>1.45 mmol/(min.kPa.L)<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemmol/(min.kPa.L) = 'mmol/(min.kPa.L)')</span></td><td>1.2 mmol/(min.kPa.L)<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemmol/(min.kPa.L) = 'mmol/(min.kPa.L)')</span> - 1.8 mmol/(min.kPa.L)<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemmol/(min.kPa.L) = 'mmol/(min.kPa.L)')</span></td><td>Final, <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}\">Normal</span></td><td>2025-02-18 12:00:00+0100</td></tr><tr><td><a href=\"Observation-mii-exa-test-data-lungenfunktion-kcoc-1.html\"><span title=\"Codes:{http://loinc.org 69578-3}\">Diffusion capacity.carbon monoxide/Alveolar volume adjusted for hemoglobin</span></a></td><td>1.5 mmol/(min.kPa.L)<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemmol/(min.kPa.L) = 'mmol/(min.kPa.L)')</span></td><td>1.2 mmol/(min.kPa.L)<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemmol/(min.kPa.L) = 'mmol/(min.kPa.L)')</span> - 1.8 mmol/(min.kPa.L)<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemmol/(min.kPa.L) = 'mmol/(min.kPa.L)')</span></td><td>Final, <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}\">Normal</span></td><td>2025-02-18 12:00:00+0100</td></tr><tr><td><a href=\"Observation-mii-exa-test-data-lungenfunktion-va-1.html\"><span title=\"Codes:{http://snomed.info/sct 251953007}\">Alveolar volume (observable entity)</span></a></td><td>4.95 L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL = 'L')</span></td><td>4.5 L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL = 'L')</span> - 6.9 L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL = 'L')</span></td><td>Final, <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}\">Normal</span></td><td>2025-02-18 12:00:00+0100</td></tr><tr><td><a href=\"Observation-mii-exa-test-data-lungenfunktion-hb-1.html\"><span title=\"Codes:{http://snomed.info/sct 38082009}, {http://loinc.org 718-7}\">Hemoglobin (substance)</span></a></td><td>13.8 g{Hemoglobin}/dL<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeg{Hemoglobin}/dL = 'g{Hemoglobin}/dL')</span></td><td>12 g{Hemoglobin}/dL<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeg{Hemoglobin}/dL = 'g{Hemoglobin}/dL')</span> - 15.5 g{Hemoglobin}/dL<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeg{Hemoglobin}/dL = 'g{Hemoglobin}/dL')</span></td><td>Final, <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}\">Normal</span></td><td>2025-02-18 12:00:00+0100</td></tr></table><p>Normale CO-Diffusionskapazitaet (DLCO 92 % vom Soll), auch nach Hb-Korrektur unauffaellig.</p><p><b>Coded Conclusions:</b></p><ul><li><span title=\"Codes:{http://fhir.de/CodeSystem/bfarm/icd-10-gm J45.9}\">Asthma bronchiale, nicht näher bezeichnet</span></li></ul></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "58477-1",
+          "display" : "Pulmonary function study"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code" : "PF"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+          "code" : "720449003",
+          "display" : "Pulmonary function report (record artifact)"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+          "code" : "36421003",
+          "display" : "Carbon monoxide diffusing capacity measurement (procedure)"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-lungenfunktion-patient-1"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-lungenfunktion-encounter-1"
+      },
+      "effectiveDateTime" : "2025-02-18T10:15:00+01:00",
+      "issued" : "2025-02-18T12:15:00+01:00",
+      "result" : [{
+        "reference" : "Observation/mii-exa-test-data-lungenfunktion-dlco-1"
+      },
+      {
+        "reference" : "Observation/mii-exa-test-data-lungenfunktion-dlcoc-1"
+      },
+      {
+        "reference" : "Observation/mii-exa-test-data-lungenfunktion-kco-1"
+      },
+      {
+        "reference" : "Observation/mii-exa-test-data-lungenfunktion-kcoc-1"
+      },
+      {
+        "reference" : "Observation/mii-exa-test-data-lungenfunktion-va-1"
+      },
+      {
+        "reference" : "Observation/mii-exa-test-data-lungenfunktion-hb-1"
+      }],
+      "conclusion" : "Normale CO-Diffusionskapazitaet (DLCO 92 % vom Soll), auch nach Hb-Korrektur unauffaellig.",
+      "conclusionCode" : [{
+        "coding" : [{
+          "system" : "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+          "version" : "2026",
+          "code" : "J45.9",
+          "display" : "Asthma bronchiale, nicht näher bezeichnet"
+        }]
+      }],
+      "presentedForm" : [{
+        "contentType" : "application/pdf",
+        "url" : "https://www.charite.de/fhir/lungenfunktion/befunde/diffusion-2025-02-18.pdf",
+        "title" : "Diffusions-Befund vom 18.02.2025"
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "DiagnosticReport/mii-exa-test-data-lungenfunktion-diffusion-befund-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/DiagnosticReport/mii-exa-test-data-lungenfunktion-provokationstest-befund-1",
+    "resource" : {
+      "resourceType" : "DiagnosticReport",
+      "id" : "mii-exa-test-data-lungenfunktion-provokationstest-befund-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/lungenfunktion-messplatz",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-provokationstest"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"DiagnosticReport_mii-exa-test-data-lungenfunktion-provokationstest-befund-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: DiagnosticReport mii-exa-test-data-lungenfunktion-provokationstest-befund-1</b></p><a name=\"mii-exa-test-data-lungenfunktion-provokationstest-befund-1\"> </a><a name=\"hcmii-exa-test-data-lungenfunktion-provokationstest-befund-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/lungenfunktion-messplatz\">https://www.charite.de/fhir/lungenfunktion-messplatz</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-provokationstest\">MII PR Lungenfunktion Provokationstest</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><h2><span title=\"Codes:{http://snomed.info/sct 252520007}\">Methacholine challenge (procedure)</span> (<span title=\"Codes:{http://loinc.org 58477-1}, {http://terminology.hl7.org/CodeSystem/v2-0074 PF}, {http://snomed.info/sct 720449003}\">Pulmonary function study</span>) </h2><table class=\"grid\"><tr><td>Subject</td><td>Luise Atemwald  Female, DoB: 1972-06-30 ( https://www.charite.de/fhir/sid/patientenidentifikation#LUFU-TEST-001)</td></tr><tr><td>Relevant Time</td><td>2025-02-18 11:00:00+0100</td></tr><tr><td>Reported</td><td>2025-02-18 12:15:00+0100</td></tr><tr><td>Presented Form</td><td> application/pdf @ <a href=\"https://www.charite.de/fhir/lungenfunktion/befunde/provokationstest-2025-02-18.pdf\">https://www.charite.de/fhir/lungenfunktion/befunde/provokationstest-2025-02-18.pdf <img src=\"external.png\" alt=\"icon\" style=\"vertical-align: baseline\"/></a></td></tr></table><p><b>Report Details</b></p><table class=\"grid\"><tr><td><b>Code</b></td><td><b>Value</b></td><td><b>Flags</b></td><td><b>Reported</b></td></tr><tr><td><a href=\"Observation-mii-exa-test-data-lungenfunktion-dosis-schwellwert-1.html\"><span title=\"Codes:{http://snomed.info/sct 1376040001}, {http://loinc.org 65866-6}\">Dose of methacholine to achieve maximal drop of forced expired volume in 1 second (observable entity)</span></a></td><td>0.3 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span></td><td>Final, <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation A}\">Abnormal</span></td><td>2025-02-18 12:00:00+0100</td></tr><tr><td><a href=\"Observation-mii-exa-test-data-lungenfunktion-dosis-kumuliert-1.html\"><span title=\"Codes:{http://snomed.info/sct 1376040001}, {http://loinc.org 65866-6}\">Dose of methacholine to achieve maximal drop of forced expired volume in 1 second (observable entity)</span></a></td><td>0.34 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span></td><td>Final, <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation A}\">Abnormal</span></td><td>2025-02-18 12:00:00+0100</td></tr><tr><td><a href=\"Observation-mii-exa-test-data-lungenfunktion-fev-prov-1.html\"><span title=\"Codes:{http://snomed.info/sct 59328004}, {http://loinc.org 43253-4}\">Forced expired volume in 1 second (observable entity)</span></a></td><td>2.1 L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL = 'L')</span></td><td>Final, <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}\">Normal</span></td><td>2025-02-18 12:00:00+0100</td></tr><tr><td><a href=\"Observation-mii-exa-test-data-lungenfunktion-fev-prov-2.html\"><span title=\"Codes:{http://snomed.info/sct 59328004}, {http://loinc.org 43255-9}\">Forced expired volume in 1 second (observable entity)</span></a></td><td>1.55 L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL = 'L')</span></td><td>Final, <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation L}\">Low</span></td><td>2025-02-18 12:00:00+0100</td></tr><tr><td><a href=\"Observation-mii-exa-test-data-lungenfunktion-pef-prov-1.html\"><span title=\"Codes:{http://snomed.info/sct 18491006}, {http://loinc.org 33452-4}\">Peak expiratory flow rate (observable entity)</span></a></td><td>4.1 L/s<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL/s = 'L/s')</span></td><td>Final, <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation L}\">Low</span></td><td>2025-02-18 12:00:00+0100</td></tr><tr><td><a href=\"Observation-mii-exa-test-data-lungenfunktion-r-prov-1.html\"><span title=\"Codes:{http://snomed.info/sct 16162007}, {http://loinc.org 20083-2}\">Total airway resistance (observable entity)</span></a></td><td>0.55 kPa/(L/s)<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codekPa/(L/s) = 'kPa/(L/s)')</span></td><td>Final, <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation H}\">High</span></td><td>2025-02-18 12:00:00+0100</td></tr><tr><td><a href=\"Observation-mii-exa-test-data-lungenfunktion-sr-prov-1.html\"><span title=\"Codes:{http://snomed.info/sct 1366667009}, {http://loinc.org 91980-3}\">Specific airway resistance (observable entity)</span></a></td><td>1.8 kPa.s<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codekPa.s = 'kPa.s')</span></td><td>Final, <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation H}\">High</span></td><td>2025-02-18 12:00:00+0100</td></tr><tr><td><a href=\"Observation-mii-exa-test-data-lungenfunktion-frc-prov-1.html\"><span title=\"Codes:{http://snomed.info/sct 65825000}, {http://loinc.org 19846-5}\">Functional residual capacity (observable entity)</span></a></td><td>3.6 L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL = 'L')</span></td><td>Final, <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation H}\">High</span></td><td>2025-02-18 12:00:00+0100</td></tr></table><p>Positiver Methacholin-Provokationstest: FEV1-Abfall um 26 % bei kumulativer Dosis von 0.34 mg (PD20 = 0.30 mg). Befund vereinbar mit bronchialer Hyperreagibilitaet bei Asthma bronchiale.</p><p><b>Coded Conclusions:</b></p><ul><li><span title=\"Codes:{http://fhir.de/CodeSystem/bfarm/icd-10-gm J45.0}\">Vorwiegend allergisches Asthma bronchiale</span></li></ul></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "58477-1",
+          "display" : "Pulmonary function study"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code" : "PF"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+          "code" : "720449003",
+          "display" : "Pulmonary function report (record artifact)"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+          "code" : "252520007",
+          "display" : "Methacholine challenge (procedure)"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-lungenfunktion-patient-1"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-lungenfunktion-encounter-1"
+      },
+      "effectiveDateTime" : "2025-02-18T11:00:00+01:00",
+      "issued" : "2025-02-18T12:15:00+01:00",
+      "result" : [{
+        "reference" : "Observation/mii-exa-test-data-lungenfunktion-dosis-schwellwert-1"
+      },
+      {
+        "reference" : "Observation/mii-exa-test-data-lungenfunktion-dosis-kumuliert-1"
+      },
+      {
+        "reference" : "Observation/mii-exa-test-data-lungenfunktion-fev-prov-1"
+      },
+      {
+        "reference" : "Observation/mii-exa-test-data-lungenfunktion-fev-prov-2"
+      },
+      {
+        "reference" : "Observation/mii-exa-test-data-lungenfunktion-pef-prov-1"
+      },
+      {
+        "reference" : "Observation/mii-exa-test-data-lungenfunktion-r-prov-1"
+      },
+      {
+        "reference" : "Observation/mii-exa-test-data-lungenfunktion-sr-prov-1"
+      },
+      {
+        "reference" : "Observation/mii-exa-test-data-lungenfunktion-frc-prov-1"
+      }],
+      "conclusion" : "Positiver Methacholin-Provokationstest: FEV1-Abfall um 26 % bei kumulativer Dosis von 0.34 mg (PD20 = 0.30 mg). Befund vereinbar mit bronchialer Hyperreagibilitaet bei Asthma bronchiale.",
+      "conclusionCode" : [{
+        "coding" : [{
+          "system" : "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+          "version" : "2026",
+          "code" : "J45.0",
+          "display" : "Vorwiegend allergisches Asthma bronchiale"
+        }]
+      }],
+      "presentedForm" : [{
+        "contentType" : "application/pdf",
+        "url" : "https://www.charite.de/fhir/lungenfunktion/befunde/provokationstest-2025-02-18.pdf",
+        "title" : "Provokationstest-Befund vom 18.02.2025"
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "DiagnosticReport/mii-exa-test-data-lungenfunktion-provokationstest-befund-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-lungenfunktion-bf-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-lungenfunktion-bf-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/lungenfunktion-messplatz",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-bf"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-lungenfunktion-bf-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-lungenfunktion-bf-1</b></p><a name=\"mii-exa-test-data-lungenfunktion-bf-1\"> </a><a name=\"hcmii-exa-test-data-lungenfunktion-bf-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/lungenfunktion-messplatz\">https://www.charite.de/fhir/lungenfunktion-messplatz</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-bf\">MII PR Lungenfunktion BF</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>partOf</b>: <a href=\"Procedure-mii-exa-test-data-lungenfunktion-bodyplethysmographie-messung-1.html\">Procedure Total body plethysmography (procedure)</a></p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 9279-1}, {http://snomed.info/sct 271625008}\">Respiratory rate</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-lungenfunktion-patient-1.html\">Luise Atemwald  Female, DoB: 1972-06-30 ( https://www.charite.de/fhir/sid/patientenidentifikation#LUFU-TEST-001)</a></p><p><b>effective</b>: 2025-02-18 09:30:00+0100</p><p><b>issued</b>: 2025-02-18 12:00:00+0100</p><p><b>value</b>: 14 /min<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code/min = '/min')</span></p><p><b>interpretation</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}\">Normal</span></p><p><b>method</b>: <span title=\"Codes:{http://snomed.info/sct 249862003}\">Sitting upright (finding)</span></p><h3>ReferenceRanges</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td style=\"display: none\">*</td><td>12 /min<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code/min = '/min')</span></td><td>18 /min<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code/min = '/min')</span></td></tr></table><p><b>derivedFrom</b>: <a href=\"DocumentReference-mii-exa-test-data-lungenfunktion-docref-rohdaten-1.html\">DocumentReference: status = current; type = Pulmonary function report (record artifact); date = 2025-02-18 11:45:00+0100</a></p></div>"
+      },
+      "partOf" : [{
+        "reference" : "Procedure/mii-exa-test-data-lungenfunktion-bodyplethysmographie-messung-1"
+      }],
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "vital-signs"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "9279-1",
+          "display" : "Respiratory rate"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+          "code" : "271625008",
+          "display" : "Rate of spontaneous respiration (observable entity)"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-lungenfunktion-patient-1"
+      },
+      "effectiveDateTime" : "2025-02-18T09:30:00+01:00",
+      "issued" : "2025-02-18T12:00:00+01:00",
+      "valueQuantity" : {
+        "value" : 14,
+        "unit" : "/min",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "/min"
+      },
+      "interpretation" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code" : "N",
+          "display" : "Normal"
+        }]
+      }],
+      "method" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+          "code" : "249862003",
+          "display" : "Sitting upright (finding)"
+        }]
+      },
+      "referenceRange" : [{
+        "low" : {
+          "value" : 12,
+          "unit" : "/min",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "/min"
+        },
+        "high" : {
+          "value" : 18,
+          "unit" : "/min",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "/min"
+        }
+      }],
+      "derivedFrom" : [{
+        "reference" : "DocumentReference/mii-exa-test-data-lungenfunktion-docref-rohdaten-1"
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-lungenfunktion-bf-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-lungenfunktion-fev-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-lungenfunktion-fev-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/lungenfunktion-messplatz",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-fev"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-lungenfunktion-fev-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-lungenfunktion-fev-1</b></p><a name=\"mii-exa-test-data-lungenfunktion-fev-1\"> </a><a name=\"hcmii-exa-test-data-lungenfunktion-fev-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/lungenfunktion-messplatz\">https://www.charite.de/fhir/lungenfunktion-messplatz</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-fev\">MII PR Lungenfunktion FEV</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>partOf</b>: <a href=\"Procedure-mii-exa-test-data-lungenfunktion-spirometrie-messung-1.html\">Procedure Spirometry (procedure)</a></p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category procedure}\">Procedure</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 59328004}, {http://loinc.org 20150-9}\">Forced expired volume in 1 second (observable entity)</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-lungenfunktion-patient-1.html\">Luise Atemwald  Female, DoB: 1972-06-30 ( https://www.charite.de/fhir/sid/patientenidentifikation#LUFU-TEST-001)</a></p><p><b>issued</b>: 2025-02-18 12:00:00+0100</p><p><b>value</b>: 2.1 L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL = 'L')</span></p><p><b>interpretation</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation L}\">Low</span></p><p><b>method</b>: <span title=\"Codes:{http://snomed.info/sct 249862003}\">Sitting upright (finding)</span></p><h3>ReferenceRanges</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td style=\"display: none\">*</td><td>2.31 L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL = 'L')</span></td><td>3.39 L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL = 'L')</span></td></tr></table><p><b>hasMember</b>: </p><ul><li><a href=\"Observation-mii-exa-test-data-lungenfunktion-fev-prov-1.html\">Observation Forced expired volume in 1 second (observable entity)</a></li><li><a href=\"Observation-mii-exa-test-data-lungenfunktion-fev-prov-2.html\">Observation Forced expired volume in 1 second (observable entity)</a></li></ul><p><b>derivedFrom</b>: <a href=\"DocumentReference-mii-exa-test-data-lungenfunktion-docref-rohdaten-1.html\">DocumentReference: status = current; type = Pulmonary function report (record artifact); date = 2025-02-18 11:45:00+0100</a></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 310520004}, {http://loinc.org 20149-1}\">Expected forced expired volume in 1 second (observable entity)</span></p><p><b>value</b>: 2.85 L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL = 'L')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 313223002}, {http://loinc.org 20152-5}\">Percent predicted forced expired volume in one second (observable entity)</span></p><p><b>value</b>: 74 %<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code% = '%')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 1078210003}\">Z-score calculation technique (qualifier value)</span></p><p><b>value</b>: -1.9</p></blockquote></div>"
+      },
+      "partOf" : [{
+        "reference" : "Procedure/mii-exa-test-data-lungenfunktion-spirometrie-messung-1"
+      }],
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "procedure"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+          "code" : "59328004",
+          "display" : "Forced expired volume in 1 second (observable entity)"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "20150-9",
+          "display" : "FEV1"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-lungenfunktion-patient-1"
+      },
+      "issued" : "2025-02-18T12:00:00+01:00",
+      "valueQuantity" : {
+        "value" : 2.1,
+        "unit" : "L",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "L"
+      },
+      "interpretation" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code" : "L",
+          "display" : "Low"
+        }]
+      }],
+      "method" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+          "code" : "249862003",
+          "display" : "Sitting upright (finding)"
+        }]
+      },
+      "referenceRange" : [{
+        "low" : {
+          "value" : 2.31,
+          "unit" : "L",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "L"
+        },
+        "high" : {
+          "value" : 3.39,
+          "unit" : "L",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "L"
+        }
+      }],
+      "hasMember" : [{
+        "reference" : "Observation/mii-exa-test-data-lungenfunktion-fev-prov-1"
+      },
+      {
+        "reference" : "Observation/mii-exa-test-data-lungenfunktion-fev-prov-2"
+      }],
+      "derivedFrom" : [{
+        "reference" : "DocumentReference/mii-exa-test-data-lungenfunktion-docref-rohdaten-1"
+      }],
+      "component" : [{
+        "code" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+            "code" : "310520004",
+            "display" : "Expected forced expired volume in 1 second (observable entity)"
+          },
+          {
+            "system" : "http://loinc.org",
+            "code" : "20149-1",
+            "display" : "FEV1 Predicted"
+          }]
+        },
+        "valueQuantity" : {
+          "value" : 2.85,
+          "unit" : "L",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "L"
+        }
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+            "code" : "313223002",
+            "display" : "Percent predicted forced expired volume in one second (observable entity)"
+          },
+          {
+            "system" : "http://loinc.org",
+            "code" : "20152-5",
+            "display" : "FEV1 measured/predicted"
+          }]
+        },
+        "valueQuantity" : {
+          "value" : 74,
+          "unit" : "%",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "%"
+        }
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+            "code" : "1078210003",
+            "display" : "Z-score calculation technique (qualifier value)"
+          }]
+        },
+        "valueQuantity" : {
+          "value" : -1.9
+        }
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-lungenfunktion-fev-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-lungenfunktion-fvc-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-lungenfunktion-fvc-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/lungenfunktion-messplatz",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-fvc"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-lungenfunktion-fvc-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-lungenfunktion-fvc-1</b></p><a name=\"mii-exa-test-data-lungenfunktion-fvc-1\"> </a><a name=\"hcmii-exa-test-data-lungenfunktion-fvc-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/lungenfunktion-messplatz\">https://www.charite.de/fhir/lungenfunktion-messplatz</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-fvc\">MII PR Lungenfunktion FVC</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>partOf</b>: <a href=\"Procedure-mii-exa-test-data-lungenfunktion-spirometrie-messung-1.html\">Procedure Spirometry (procedure)</a></p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category procedure}\">Procedure</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 50834005}, {http://loinc.org 19868-9}\">Forced vital capacity (observable entity)</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-lungenfunktion-patient-1.html\">Luise Atemwald  Female, DoB: 1972-06-30 ( https://www.charite.de/fhir/sid/patientenidentifikation#LUFU-TEST-001)</a></p><p><b>issued</b>: 2025-02-18 12:00:00+0100</p><p><b>value</b>: 3.1 L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL = 'L')</span></p><p><b>interpretation</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}\">Normal</span></p><p><b>method</b>: <span title=\"Codes:{http://snomed.info/sct 249862003}\">Sitting upright (finding)</span></p><h3>ReferenceRanges</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td style=\"display: none\">*</td><td>2.9 L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL = 'L')</span></td><td>4.3 L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL = 'L')</span></td></tr></table><p><b>derivedFrom</b>: <a href=\"DocumentReference-mii-exa-test-data-lungenfunktion-docref-rohdaten-1.html\">DocumentReference: status = current; type = Pulmonary function report (record artifact); date = 2025-02-18 11:45:00+0100</a></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 310521000}, {http://loinc.org 19869-7}\">Expected forced vital capacity (observable entity)</span></p><p><b>value</b>: 3.6 L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL = 'L')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 445210000}, {http://loinc.org 19872-1}\">Percentage of predicted forced vital capacity (observable entity)</span></p><p><b>value</b>: 86 %<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code% = '%')</span></p></blockquote></div>"
+      },
+      "partOf" : [{
+        "reference" : "Procedure/mii-exa-test-data-lungenfunktion-spirometrie-messung-1"
+      }],
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "procedure"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+          "code" : "50834005",
+          "display" : "Forced vital capacity (observable entity)"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "19868-9",
+          "display" : "Forced vital capacity [Volume] Respiratory system by Spirometry"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-lungenfunktion-patient-1"
+      },
+      "issued" : "2025-02-18T12:00:00+01:00",
+      "valueQuantity" : {
+        "value" : 3.1,
+        "unit" : "L",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "L"
+      },
+      "interpretation" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code" : "N",
+          "display" : "Normal"
+        }]
+      }],
+      "method" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+          "code" : "249862003",
+          "display" : "Sitting upright (finding)"
+        }]
+      },
+      "referenceRange" : [{
+        "low" : {
+          "value" : 2.9,
+          "unit" : "L",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "L"
+        },
+        "high" : {
+          "value" : 4.3,
+          "unit" : "L",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "L"
+        }
+      }],
+      "derivedFrom" : [{
+        "reference" : "DocumentReference/mii-exa-test-data-lungenfunktion-docref-rohdaten-1"
+      }],
+      "component" : [{
+        "code" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+            "code" : "310521000",
+            "display" : "Expected forced vital capacity (observable entity)"
+          },
+          {
+            "system" : "http://loinc.org",
+            "code" : "19869-7",
+            "display" : "Forced vital capacity [Volume] Respiratory system Predicted"
+          }]
+        },
+        "valueQuantity" : {
+          "value" : 3.6,
+          "unit" : "L",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "L"
+        }
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+            "code" : "445210000",
+            "display" : "Percentage of predicted forced vital capacity (observable entity)"
+          },
+          {
+            "system" : "http://loinc.org",
+            "code" : "19872-1",
+            "display" : "FVC measured/predicted"
+          }]
+        },
+        "valueQuantity" : {
+          "value" : 86,
+          "unit" : "%",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "%"
+        }
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-lungenfunktion-fvc-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-lungenfunktion-fev-fvc-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-lungenfunktion-fev-fvc-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/lungenfunktion-messplatz",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-fev-fvc"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-lungenfunktion-fev-fvc-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-lungenfunktion-fev-fvc-1</b></p><a name=\"mii-exa-test-data-lungenfunktion-fev-fvc-1\"> </a><a name=\"hcmii-exa-test-data-lungenfunktion-fev-fvc-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/lungenfunktion-messplatz\">https://www.charite.de/fhir/lungenfunktion-messplatz</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-fev-fvc\">MII PR Lungenfunktion FEV/FVC</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>partOf</b>: <a href=\"Procedure-mii-exa-test-data-lungenfunktion-spirometrie-messung-1.html\">Procedure Spirometry (procedure)</a></p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category procedure}\">Procedure</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 251944000}, {http://loinc.org 19926-5}\">Forced expired volume in one second/forced vital capacity ratio (observable entity)</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-lungenfunktion-patient-1.html\">Luise Atemwald  Female, DoB: 1972-06-30 ( https://www.charite.de/fhir/sid/patientenidentifikation#LUFU-TEST-001)</a></p><p><b>issued</b>: 2025-02-18 12:00:00+0100</p><p><b>value</b>: 67.7 %<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code% = '%')</span></p><p><b>interpretation</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation L}\">Low</span></p><p><b>method</b>: <span title=\"Codes:{http://snomed.info/sct 249862003}\">Sitting upright (finding)</span></p><h3>ReferenceRanges</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td style=\"display: none\">*</td><td>70 %<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code% = '%')</span></td><td>85 %<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code% = '%')</span></td></tr></table><p><b>hasMember</b>: </p><ul><li><a href=\"Observation-mii-exa-test-data-lungenfunktion-fev-1.html\">Observation Forced expired volume in 1 second (observable entity)</a></li><li><a href=\"Observation-mii-exa-test-data-lungenfunktion-fvc-1.html\">Observation Forced vital capacity (observable entity)</a></li></ul><p><b>derivedFrom</b>: </p><ul><li><a href=\"Observation-mii-exa-test-data-lungenfunktion-fev-1.html\">Observation Forced expired volume in 1 second (observable entity)</a></li><li><a href=\"Observation-mii-exa-test-data-lungenfunktion-fvc-1.html\">Observation Forced vital capacity (observable entity)</a></li></ul><h3>Components</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 310360002}, {http://loinc.org 19925-7}\">Expected forced expiratory volume in one second/Forced vital capacity ratio (observable entity)</span></td><td>78 %<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code% = '%')</span></td></tr></table></div>"
+      },
+      "partOf" : [{
+        "reference" : "Procedure/mii-exa-test-data-lungenfunktion-spirometrie-messung-1"
+      }],
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "procedure"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+          "code" : "251944000",
+          "display" : "Forced expired volume in one second/forced vital capacity ratio (observable entity)"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "19926-5",
+          "display" : "FEV1/FVC"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-lungenfunktion-patient-1"
+      },
+      "issued" : "2025-02-18T12:00:00+01:00",
+      "valueQuantity" : {
+        "value" : 67.7,
+        "unit" : "%",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "%"
+      },
+      "interpretation" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code" : "L",
+          "display" : "Low"
+        }]
+      }],
+      "method" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+          "code" : "249862003",
+          "display" : "Sitting upright (finding)"
+        }]
+      },
+      "referenceRange" : [{
+        "low" : {
+          "value" : 70,
+          "unit" : "%",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "%"
+        },
+        "high" : {
+          "value" : 85,
+          "unit" : "%",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "%"
+        }
+      }],
+      "hasMember" : [{
+        "reference" : "Observation/mii-exa-test-data-lungenfunktion-fev-1"
+      },
+      {
+        "reference" : "Observation/mii-exa-test-data-lungenfunktion-fvc-1"
+      }],
+      "derivedFrom" : [{
+        "reference" : "Observation/mii-exa-test-data-lungenfunktion-fev-1"
+      },
+      {
+        "reference" : "Observation/mii-exa-test-data-lungenfunktion-fvc-1"
+      }],
+      "component" : [{
+        "code" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+            "code" : "310360002",
+            "display" : "Expected forced expiratory volume in one second/Forced vital capacity ratio (observable entity)"
+          },
+          {
+            "system" : "http://loinc.org",
+            "code" : "19925-7",
+            "display" : "FEV1/FVC Predicted"
+          }]
+        },
+        "valueQuantity" : {
+          "value" : 78,
+          "unit" : "%",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "%"
+        }
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-lungenfunktion-fev-fvc-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-lungenfunktion-ic-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-lungenfunktion-ic-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/lungenfunktion-messplatz",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-ic"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-lungenfunktion-ic-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-lungenfunktion-ic-1</b></p><a name=\"mii-exa-test-data-lungenfunktion-ic-1\"> </a><a name=\"hcmii-exa-test-data-lungenfunktion-ic-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/lungenfunktion-messplatz\">https://www.charite.de/fhir/lungenfunktion-messplatz</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-ic\">MII PR Lungenfunktion IC</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>partOf</b>: <a href=\"Procedure-mii-exa-test-data-lungenfunktion-spirometrie-messung-1.html\">Procedure Spirometry (procedure)</a></p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category procedure}\">Procedure</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 29533001}, {http://loinc.org 19852-3}\">Inspiratory capacity (observable entity)</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-lungenfunktion-patient-1.html\">Luise Atemwald  Female, DoB: 1972-06-30 ( https://www.charite.de/fhir/sid/patientenidentifikation#LUFU-TEST-001)</a></p><p><b>issued</b>: 2025-02-18 12:00:00+0100</p><p><b>value</b>: 2.4 L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL = 'L')</span></p><p><b>interpretation</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}\">Normal</span></p><p><b>method</b>: <span title=\"Codes:{http://snomed.info/sct 249862003}\">Sitting upright (finding)</span></p><h3>ReferenceRanges</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td style=\"display: none\">*</td><td>2.1 L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL = 'L')</span></td><td>3.1 L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL = 'L')</span></td></tr></table><p><b>derivedFrom</b>: <a href=\"DocumentReference-mii-exa-test-data-lungenfunktion-docref-rohdaten-1.html\">DocumentReference: status = current; type = Pulmonary function report (record artifact); date = 2025-02-18 11:45:00+0100</a></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 19851-5}\">Inspiratory capacity Predicted</span></p><p><b>value</b>: 2.6 L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL = 'L')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 19855-6}\">Inspiratory capacity measured/predicted by Spirometry</span></p><p><b>value</b>: 92 %<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code% = '%')</span></p></blockquote></div>"
+      },
+      "partOf" : [{
+        "reference" : "Procedure/mii-exa-test-data-lungenfunktion-spirometrie-messung-1"
+      }],
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "procedure"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+          "code" : "29533001",
+          "display" : "Inspiratory capacity (observable entity)"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "19852-3",
+          "display" : "Inspiratory capacity by Spirometry"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-lungenfunktion-patient-1"
+      },
+      "issued" : "2025-02-18T12:00:00+01:00",
+      "valueQuantity" : {
+        "value" : 2.4,
+        "unit" : "L",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "L"
+      },
+      "interpretation" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code" : "N",
+          "display" : "Normal"
+        }]
+      }],
+      "method" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+          "code" : "249862003",
+          "display" : "Sitting upright (finding)"
+        }]
+      },
+      "referenceRange" : [{
+        "low" : {
+          "value" : 2.1,
+          "unit" : "L",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "L"
+        },
+        "high" : {
+          "value" : 3.1,
+          "unit" : "L",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "L"
+        }
+      }],
+      "derivedFrom" : [{
+        "reference" : "DocumentReference/mii-exa-test-data-lungenfunktion-docref-rohdaten-1"
+      }],
+      "component" : [{
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "19851-5",
+            "display" : "Inspiratory capacity Predicted"
+          }]
+        },
+        "valueQuantity" : {
+          "value" : 2.6,
+          "unit" : "L",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "L"
+        }
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "19855-6",
+            "display" : "Inspiratory capacity measured/predicted by Spirometry"
+          }]
+        },
+        "valueQuantity" : {
+          "value" : 92,
+          "unit" : "%",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "%"
+        }
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-lungenfunktion-ic-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-lungenfunktion-irv-erv-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-lungenfunktion-irv-erv-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/lungenfunktion-messplatz",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-irv-erv"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-lungenfunktion-irv-erv-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-lungenfunktion-irv-erv-1</b></p><a name=\"mii-exa-test-data-lungenfunktion-irv-erv-1\"> </a><a name=\"hcmii-exa-test-data-lungenfunktion-irv-erv-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/lungenfunktion-messplatz\">https://www.charite.de/fhir/lungenfunktion-messplatz</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-irv-erv\">MII PR Lungenfunktion Reserve Volumen</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>partOf</b>: <a href=\"Procedure-mii-exa-test-data-lungenfunktion-spirometrie-messung-1.html\">Procedure Spirometry (procedure)</a></p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category procedure}\">Procedure</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 55532004}, {http://loinc.org 19924-0}\">Expiratory reserve volume (observable entity)</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-lungenfunktion-patient-1.html\">Luise Atemwald  Female, DoB: 1972-06-30 ( https://www.charite.de/fhir/sid/patientenidentifikation#LUFU-TEST-001)</a></p><p><b>issued</b>: 2025-02-18 12:00:00+0100</p><p><b>value</b>: 0.9 L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL = 'L')</span></p><p><b>interpretation</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}\">Normal</span></p><p><b>method</b>: <span title=\"Codes:{http://snomed.info/sct 249862003}\">Sitting upright (finding)</span></p><h3>ReferenceRanges</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td style=\"display: none\">*</td><td>0.7 L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL = 'L')</span></td><td>1.5 L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL = 'L')</span></td></tr></table><p><b>derivedFrom</b>: <a href=\"DocumentReference-mii-exa-test-data-lungenfunktion-docref-rohdaten-1.html\">DocumentReference: status = current; type = Pulmonary function report (record artifact); date = 2025-02-18 11:45:00+0100</a></p><h3>Components</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://loinc.org 19923-2}\">Expiratory reserve Predicted</span></td><td>1.1 L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL = 'L')</span></td></tr></table></div>"
+      },
+      "partOf" : [{
+        "reference" : "Procedure/mii-exa-test-data-lungenfunktion-spirometrie-messung-1"
+      }],
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "procedure"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+          "code" : "55532004",
+          "display" : "Expiratory reserve volume (observable entity)"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "19924-0",
+          "display" : "Expiratory reserve"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-lungenfunktion-patient-1"
+      },
+      "issued" : "2025-02-18T12:00:00+01:00",
+      "valueQuantity" : {
+        "value" : 0.9,
+        "unit" : "L",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "L"
+      },
+      "interpretation" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code" : "N",
+          "display" : "Normal"
+        }]
+      }],
+      "method" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+          "code" : "249862003",
+          "display" : "Sitting upright (finding)"
+        }]
+      },
+      "referenceRange" : [{
+        "low" : {
+          "value" : 0.7,
+          "unit" : "L",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "L"
+        },
+        "high" : {
+          "value" : 1.5,
+          "unit" : "L",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "L"
+        }
+      }],
+      "derivedFrom" : [{
+        "reference" : "DocumentReference/mii-exa-test-data-lungenfunktion-docref-rohdaten-1"
+      }],
+      "component" : [{
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "19923-2",
+            "display" : "Expiratory reserve Predicted"
+          }]
+        },
+        "valueQuantity" : {
+          "value" : 1.1,
+          "unit" : "L",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "L"
+        }
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-lungenfunktion-irv-erv-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-lungenfunktion-mef-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-lungenfunktion-mef-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/lungenfunktion-messplatz",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-mef"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-lungenfunktion-mef-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-lungenfunktion-mef-1</b></p><a name=\"mii-exa-test-data-lungenfunktion-mef-1\"> </a><a name=\"hcmii-exa-test-data-lungenfunktion-mef-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/lungenfunktion-messplatz\">https://www.charite.de/fhir/lungenfunktion-messplatz</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-mef\">MII PR Lungenfunktion MEF</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>partOf</b>: <a href=\"Procedure-mii-exa-test-data-lungenfunktion-spirometrie-messung-1.html\">Procedure Spirometry (procedure)</a></p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category procedure}\">Procedure</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 251920002}, {http://loinc.org 65822-9}\">Maximum expiratory flow rate at 50 percent of vital capacity (observable entity)</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-lungenfunktion-patient-1.html\">Luise Atemwald  Female, DoB: 1972-06-30 ( https://www.charite.de/fhir/sid/patientenidentifikation#LUFU-TEST-001)</a></p><p><b>issued</b>: 2025-02-18 12:00:00+0100</p><p><b>value</b>: 1.9 L/s<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL/s = 'L/s')</span></p><p><b>interpretation</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation L}\">Low</span></p><p><b>method</b>: <span title=\"Codes:{http://snomed.info/sct 249862003}\">Sitting upright (finding)</span></p><h3>ReferenceRanges</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td style=\"display: none\">*</td><td>2.7 L/s<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL/s = 'L/s')</span></td><td>5.2 L/s<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL/s = 'L/s')</span></td></tr></table><p><b>derivedFrom</b>: <a href=\"DocumentReference-mii-exa-test-data-lungenfunktion-docref-rohdaten-1.html\">DocumentReference: status = current; type = Pulmonary function report (record artifact); date = 2025-02-18 11:45:00+0100</a></p></div>"
+      },
+      "partOf" : [{
+        "reference" : "Procedure/mii-exa-test-data-lungenfunktion-spirometrie-messung-1"
+      }],
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "procedure"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+          "code" : "251920002",
+          "display" : "Maximum expiratory flow rate at 50 percent of vital capacity (observable entity)"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "65822-9",
+          "display" : "Gas flow FEV 50%"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-lungenfunktion-patient-1"
+      },
+      "issued" : "2025-02-18T12:00:00+01:00",
+      "valueQuantity" : {
+        "value" : 1.9,
+        "unit" : "L/s",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "L/s"
+      },
+      "interpretation" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code" : "L",
+          "display" : "Low"
+        }]
+      }],
+      "method" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+          "code" : "249862003",
+          "display" : "Sitting upright (finding)"
+        }]
+      },
+      "referenceRange" : [{
+        "low" : {
+          "value" : 2.7,
+          "unit" : "L/s",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "L/s"
+        },
+        "high" : {
+          "value" : 5.2,
+          "unit" : "L/s",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "L/s"
+        }
+      }],
+      "derivedFrom" : [{
+        "reference" : "DocumentReference/mii-exa-test-data-lungenfunktion-docref-rohdaten-1"
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-lungenfunktion-mef-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-lungenfunktion-pef-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-lungenfunktion-pef-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/lungenfunktion-messplatz",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-pef"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-lungenfunktion-pef-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-lungenfunktion-pef-1</b></p><a name=\"mii-exa-test-data-lungenfunktion-pef-1\"> </a><a name=\"hcmii-exa-test-data-lungenfunktion-pef-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/lungenfunktion-messplatz\">https://www.charite.de/fhir/lungenfunktion-messplatz</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-pef\">MII PR Lungenfunktion PEF</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>partOf</b>: <a href=\"Procedure-mii-exa-test-data-lungenfunktion-spirometrie-messung-1.html\">Procedure Spirometry (procedure)</a></p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category procedure}\">Procedure</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 18491006}, {http://loinc.org 33452-4}\">Peak expiratory flow rate (observable entity)</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-lungenfunktion-patient-1.html\">Luise Atemwald  Female, DoB: 1972-06-30 ( https://www.charite.de/fhir/sid/patientenidentifikation#LUFU-TEST-001)</a></p><p><b>issued</b>: 2025-02-18 12:00:00+0100</p><p><b>value</b>: 5.2 L/s<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL/s = 'L/s')</span></p><p><b>interpretation</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation L}\">Low</span></p><p><b>method</b>: <span title=\"Codes:{http://snomed.info/sct 249862003}\">Sitting upright (finding)</span></p><h3>ReferenceRanges</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td style=\"display: none\">*</td><td>5.5 L/s<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL/s = 'L/s')</span></td><td>8.3 L/s<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL/s = 'L/s')</span></td></tr></table><p><b>hasMember</b>: <a href=\"Observation-mii-exa-test-data-lungenfunktion-pef-prov-1.html\">Observation Peak expiratory flow rate (observable entity)</a></p><p><b>derivedFrom</b>: <a href=\"DocumentReference-mii-exa-test-data-lungenfunktion-docref-rohdaten-1.html\">DocumentReference: status = current; type = Pulmonary function report (record artifact); date = 2025-02-18 11:45:00+0100</a></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 313192007}, {http://loinc.org 69974-4}\">Expected peak expiratory flow rate (observable entity)</span></p><p><b>value</b>: 6.9 L/s<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL/s = 'L/s')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 69977-7}\">Maximum expiratory gas flow/Predicted maximum expiratory gas flow Respiratory system airway --pre bronchodilation</span></p><p><b>value</b>: 75 %<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code% = '%')</span></p></blockquote></div>"
+      },
+      "partOf" : [{
+        "reference" : "Procedure/mii-exa-test-data-lungenfunktion-spirometrie-messung-1"
+      }],
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "procedure"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+          "code" : "18491006",
+          "display" : "Peak expiratory flow rate (observable entity)"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "33452-4",
+          "display" : "Maximum expiratory gas flow Respiratory system airway"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-lungenfunktion-patient-1"
+      },
+      "issued" : "2025-02-18T12:00:00+01:00",
+      "valueQuantity" : {
+        "value" : 5.2,
+        "unit" : "L/s",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "L/s"
+      },
+      "interpretation" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code" : "L",
+          "display" : "Low"
+        }]
+      }],
+      "method" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+          "code" : "249862003",
+          "display" : "Sitting upright (finding)"
+        }]
+      },
+      "referenceRange" : [{
+        "low" : {
+          "value" : 5.5,
+          "unit" : "L/s",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "L/s"
+        },
+        "high" : {
+          "value" : 8.3,
+          "unit" : "L/s",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "L/s"
+        }
+      }],
+      "hasMember" : [{
+        "reference" : "Observation/mii-exa-test-data-lungenfunktion-pef-prov-1"
+      }],
+      "derivedFrom" : [{
+        "reference" : "DocumentReference/mii-exa-test-data-lungenfunktion-docref-rohdaten-1"
+      }],
+      "component" : [{
+        "code" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+            "code" : "313192007",
+            "display" : "Expected peak expiratory flow rate (observable entity)"
+          },
+          {
+            "system" : "http://loinc.org",
+            "code" : "69974-4",
+            "display" : "Maximum expiratory gas flow Respiratory system airway Predicted"
+          }]
+        },
+        "valueQuantity" : {
+          "value" : 6.9,
+          "unit" : "L/s",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "L/s"
+        }
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "69977-7",
+            "display" : "Maximum expiratory gas flow/Predicted maximum expiratory gas flow Respiratory system airway --pre bronchodilation"
+          }]
+        },
+        "valueQuantity" : {
+          "value" : 75,
+          "unit" : "%",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "%"
+        }
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-lungenfunktion-pef-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-lungenfunktion-vc-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-lungenfunktion-vc-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/lungenfunktion-messplatz",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-vc"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-lungenfunktion-vc-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-lungenfunktion-vc-1</b></p><a name=\"mii-exa-test-data-lungenfunktion-vc-1\"> </a><a name=\"hcmii-exa-test-data-lungenfunktion-vc-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/lungenfunktion-messplatz\">https://www.charite.de/fhir/lungenfunktion-messplatz</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-vc\">MII PR Lungenfunktion VC</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>partOf</b>: <a href=\"Procedure-mii-exa-test-data-lungenfunktion-spirometrie-messung-1.html\">Procedure Spirometry (procedure)</a></p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category procedure}\">Procedure</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 83411002}, {http://loinc.org 19866-3}\">Slow vital capacity (observable entity)</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-lungenfunktion-patient-1.html\">Luise Atemwald  Female, DoB: 1972-06-30 ( https://www.charite.de/fhir/sid/patientenidentifikation#LUFU-TEST-001)</a></p><p><b>issued</b>: 2025-02-18 12:00:00+0100</p><p><b>value</b>: 3.3 L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL = 'L')</span></p><p><b>interpretation</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}\">Normal</span></p><p><b>method</b>: <span title=\"Codes:{http://snomed.info/sct 249862003}\">Sitting upright (finding)</span></p><h3>ReferenceRanges</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td style=\"display: none\">*</td><td>2.96 L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL = 'L')</span></td><td>4.44 L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL = 'L')</span></td></tr></table><p><b>hasMember</b>: <a href=\"Observation-mii-exa-test-data-lungenfunktion-irv-erv-1.html\">Observation Expiratory reserve volume (observable entity)</a></p><p><b>derivedFrom</b>: <a href=\"DocumentReference-mii-exa-test-data-lungenfunktion-docref-rohdaten-1.html\">DocumentReference: status = current; type = Pulmonary function report (record artifact); date = 2025-02-18 11:45:00+0100</a></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 19865-5}\">Vital capacity [Volume] Respiratory system Predicted</span></p><p><b>value</b>: 3.7 L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL = 'L')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 445389005}, {http://loinc.org 98088-8}\">Percentage of predicted vital capacity (observable entity)</span></p><p><b>value</b>: 89 %<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code% = '%')</span></p></blockquote></div>"
+      },
+      "partOf" : [{
+        "reference" : "Procedure/mii-exa-test-data-lungenfunktion-spirometrie-messung-1"
+      }],
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "procedure"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+          "code" : "83411002",
+          "display" : "Slow vital capacity (observable entity)"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "19866-3",
+          "display" : "Vital capacity [Volume] Respiratory system by Spirometry"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-lungenfunktion-patient-1"
+      },
+      "issued" : "2025-02-18T12:00:00+01:00",
+      "valueQuantity" : {
+        "value" : 3.3,
+        "unit" : "L",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "L"
+      },
+      "interpretation" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code" : "N",
+          "display" : "Normal"
+        }]
+      }],
+      "method" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+          "code" : "249862003",
+          "display" : "Sitting upright (finding)"
+        }]
+      },
+      "referenceRange" : [{
+        "low" : {
+          "value" : 2.96,
+          "unit" : "L",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "L"
+        },
+        "high" : {
+          "value" : 4.44,
+          "unit" : "L",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "L"
+        }
+      }],
+      "hasMember" : [{
+        "reference" : "Observation/mii-exa-test-data-lungenfunktion-irv-erv-1"
+      }],
+      "derivedFrom" : [{
+        "reference" : "DocumentReference/mii-exa-test-data-lungenfunktion-docref-rohdaten-1"
+      }],
+      "component" : [{
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "19865-5",
+            "display" : "Vital capacity [Volume] Respiratory system Predicted"
+          }]
+        },
+        "valueQuantity" : {
+          "value" : 3.7,
+          "unit" : "L",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "L"
+        }
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+            "code" : "445389005",
+            "display" : "Percentage of predicted vital capacity (observable entity)"
+          },
+          {
+            "system" : "http://loinc.org",
+            "code" : "98088-8",
+            "display" : "Vital capacity/predicted VC Respiratory system by Spirometry"
+          }]
+        },
+        "valueQuantity" : {
+          "value" : 89,
+          "unit" : "%",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "%"
+        }
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-lungenfunktion-vc-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-lungenfunktion-frc-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-lungenfunktion-frc-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/lungenfunktion-messplatz",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-frc"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-lungenfunktion-frc-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-lungenfunktion-frc-1</b></p><a name=\"mii-exa-test-data-lungenfunktion-frc-1\"> </a><a name=\"hcmii-exa-test-data-lungenfunktion-frc-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/lungenfunktion-messplatz\">https://www.charite.de/fhir/lungenfunktion-messplatz</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-frc\">MII PR Lungenfunktion FRC</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>partOf</b>: <a href=\"Procedure-mii-exa-test-data-lungenfunktion-bodyplethysmographie-messung-1.html\">Procedure Total body plethysmography (procedure)</a></p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category procedure}\">Procedure</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 65825000}, {http://loinc.org 19846-5}\">Functional residual capacity (observable entity)</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-lungenfunktion-patient-1.html\">Luise Atemwald  Female, DoB: 1972-06-30 ( https://www.charite.de/fhir/sid/patientenidentifikation#LUFU-TEST-001)</a></p><p><b>issued</b>: 2025-02-18 12:00:00+0100</p><p><b>value</b>: 3.4 L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL = 'L')</span></p><p><b>interpretation</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation H}\">High</span></p><p><b>method</b>: <span title=\"Codes:{http://snomed.info/sct 249862003}\">Sitting upright (finding)</span></p><h3>ReferenceRanges</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td style=\"display: none\">*</td><td>2.4 L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL = 'L')</span></td><td>3.6 L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL = 'L')</span></td></tr></table><p><b>hasMember</b>: <a href=\"Observation-mii-exa-test-data-lungenfunktion-frc-prov-1.html\">Observation Functional residual capacity (observable entity)</a></p><p><b>derivedFrom</b>: <a href=\"DocumentReference-mii-exa-test-data-lungenfunktion-docref-rohdaten-1.html\">DocumentReference: status = current; type = Pulmonary function report (record artifact); date = 2025-02-18 11:45:00+0100</a></p><h3>Components</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://loinc.org 19847-3}\">Functional residual capacity Predicted</span></td><td>3 L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL = 'L')</span></td></tr></table></div>"
+      },
+      "partOf" : [{
+        "reference" : "Procedure/mii-exa-test-data-lungenfunktion-bodyplethysmographie-messung-1"
+      }],
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "procedure"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+          "code" : "65825000",
+          "display" : "Functional residual capacity (observable entity)"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "19846-5",
+          "display" : "Functional residual capacity by Plethysmograph body box"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-lungenfunktion-patient-1"
+      },
+      "issued" : "2025-02-18T12:00:00+01:00",
+      "valueQuantity" : {
+        "value" : 3.4,
+        "unit" : "L",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "L"
+      },
+      "interpretation" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code" : "H",
+          "display" : "High"
+        }]
+      }],
+      "method" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+          "code" : "249862003",
+          "display" : "Sitting upright (finding)"
+        }]
+      },
+      "referenceRange" : [{
+        "low" : {
+          "value" : 2.4,
+          "unit" : "L",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "L"
+        },
+        "high" : {
+          "value" : 3.6,
+          "unit" : "L",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "L"
+        }
+      }],
+      "hasMember" : [{
+        "reference" : "Observation/mii-exa-test-data-lungenfunktion-frc-prov-1"
+      }],
+      "derivedFrom" : [{
+        "reference" : "DocumentReference/mii-exa-test-data-lungenfunktion-docref-rohdaten-1"
+      }],
+      "component" : [{
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "19847-3",
+            "display" : "Functional residual capacity Predicted"
+          }]
+        },
+        "valueQuantity" : {
+          "value" : 3,
+          "unit" : "L",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "L"
+        }
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-lungenfunktion-frc-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-lungenfunktion-r-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-lungenfunktion-r-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/lungenfunktion-messplatz",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-r"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-lungenfunktion-r-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-lungenfunktion-r-1</b></p><a name=\"mii-exa-test-data-lungenfunktion-r-1\"> </a><a name=\"hcmii-exa-test-data-lungenfunktion-r-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/lungenfunktion-messplatz\">https://www.charite.de/fhir/lungenfunktion-messplatz</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-r\">MII PR Lungenfunktion R</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>partOf</b>: <a href=\"Procedure-mii-exa-test-data-lungenfunktion-bodyplethysmographie-messung-1.html\">Procedure Total body plethysmography (procedure)</a></p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category procedure}\">Procedure</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 16162007}, {http://loinc.org 20083-2}\">Total airway resistance (observable entity)</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-lungenfunktion-patient-1.html\">Luise Atemwald  Female, DoB: 1972-06-30 ( https://www.charite.de/fhir/sid/patientenidentifikation#LUFU-TEST-001)</a></p><p><b>issued</b>: 2025-02-18 12:00:00+0100</p><p><b>value</b>: 0.42 kPa/(L/s)<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codekPa/(L/s) = 'kPa/(L/s)')</span></p><p><b>interpretation</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation H}\">High</span></p><p><b>method</b>: <span title=\"Codes:{http://snomed.info/sct 249862003}\">Sitting upright (finding)</span></p><h3>ReferenceRanges</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td style=\"display: none\">*</td><td>0.05 kPa/(L/s)<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codekPa/(L/s) = 'kPa/(L/s)')</span></td><td>0.3 kPa/(L/s)<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codekPa/(L/s) = 'kPa/(L/s)')</span></td></tr></table><p><b>hasMember</b>: <a href=\"Observation-mii-exa-test-data-lungenfunktion-r-prov-1.html\">Observation Total airway resistance (observable entity)</a></p><p><b>derivedFrom</b>: <a href=\"DocumentReference-mii-exa-test-data-lungenfunktion-docref-rohdaten-1.html\">DocumentReference: status = current; type = Pulmonary function report (record artifact); date = 2025-02-18 11:45:00+0100</a></p><h3>Components</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://loinc.org 91981-1}\">Airway resistance measured/predicted by Plethysmograph body box</span></td><td>140 %<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code% = '%')</span></td></tr></table></div>"
+      },
+      "partOf" : [{
+        "reference" : "Procedure/mii-exa-test-data-lungenfunktion-bodyplethysmographie-messung-1"
+      }],
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "procedure"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+          "code" : "16162007",
+          "display" : "Total airway resistance (observable entity)"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "20083-2",
+          "display" : "Airway resistance mean by Plethysmograph body box"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-lungenfunktion-patient-1"
+      },
+      "issued" : "2025-02-18T12:00:00+01:00",
+      "valueQuantity" : {
+        "value" : 0.42,
+        "unit" : "kPa/(L/s)",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "kPa/(L/s)"
+      },
+      "interpretation" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code" : "H",
+          "display" : "High"
+        }]
+      }],
+      "method" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+          "code" : "249862003",
+          "display" : "Sitting upright (finding)"
+        }]
+      },
+      "referenceRange" : [{
+        "low" : {
+          "value" : 0.05,
+          "unit" : "kPa/(L/s)",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "kPa/(L/s)"
+        },
+        "high" : {
+          "value" : 0.3,
+          "unit" : "kPa/(L/s)",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "kPa/(L/s)"
+        }
+      }],
+      "hasMember" : [{
+        "reference" : "Observation/mii-exa-test-data-lungenfunktion-r-prov-1"
+      }],
+      "derivedFrom" : [{
+        "reference" : "DocumentReference/mii-exa-test-data-lungenfunktion-docref-rohdaten-1"
+      }],
+      "component" : [{
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "91981-1",
+            "display" : "Airway resistance measured/predicted by Plethysmograph body box"
+          }]
+        },
+        "valueQuantity" : {
+          "value" : 140,
+          "unit" : "%",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "%"
+        }
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-lungenfunktion-r-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-lungenfunktion-sr-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-lungenfunktion-sr-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/lungenfunktion-messplatz",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-r-spezifisch"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-lungenfunktion-sr-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-lungenfunktion-sr-1</b></p><a name=\"mii-exa-test-data-lungenfunktion-sr-1\"> </a><a name=\"hcmii-exa-test-data-lungenfunktion-sr-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/lungenfunktion-messplatz\">https://www.charite.de/fhir/lungenfunktion-messplatz</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-r-spezifisch\">MII PR Lungenfunktion R Spezifisch</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>partOf</b>: <a href=\"Procedure-mii-exa-test-data-lungenfunktion-bodyplethysmographie-messung-1.html\">Procedure Total body plethysmography (procedure)</a></p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category procedure}\">Procedure</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 1366667009}, {http://loinc.org 91980-3}\">Specific airway resistance (observable entity)</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-lungenfunktion-patient-1.html\">Luise Atemwald  Female, DoB: 1972-06-30 ( https://www.charite.de/fhir/sid/patientenidentifikation#LUFU-TEST-001)</a></p><p><b>issued</b>: 2025-02-18 12:00:00+0100</p><p><b>value</b>: 1.35 kPa.s<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codekPa.s = 'kPa.s')</span></p><p><b>interpretation</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation H}\">High</span></p><p><b>method</b>: <span title=\"Codes:{http://snomed.info/sct 249862003}\">Sitting upright (finding)</span></p><h3>ReferenceRanges</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td style=\"display: none\">*</td><td>0.2 kPa.s<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codekPa.s = 'kPa.s')</span></td><td>1.2 kPa.s<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codekPa.s = 'kPa.s')</span></td></tr></table><p><b>hasMember</b>: <a href=\"Observation-mii-exa-test-data-lungenfunktion-sr-prov-1.html\">Observation Specific airway resistance (observable entity)</a></p><p><b>derivedFrom</b>: <a href=\"DocumentReference-mii-exa-test-data-lungenfunktion-docref-rohdaten-1.html\">DocumentReference: status = current; type = Pulmonary function report (record artifact); date = 2025-02-18 11:45:00+0100</a></p><h3>Components</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://loinc.org 91982-9}\">Specific airway resistance measured/predicted by Plethysmograph body box</span></td><td>125 %<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code% = '%')</span></td></tr></table></div>"
+      },
+      "partOf" : [{
+        "reference" : "Procedure/mii-exa-test-data-lungenfunktion-bodyplethysmographie-messung-1"
+      }],
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "procedure"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+          "code" : "1366667009",
+          "display" : "Specific airway resistance (observable entity)"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "91980-3",
+          "display" : "Specific airway resistance by Plethysmograph body box"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-lungenfunktion-patient-1"
+      },
+      "issued" : "2025-02-18T12:00:00+01:00",
+      "valueQuantity" : {
+        "value" : 1.35,
+        "unit" : "kPa.s",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "kPa.s"
+      },
+      "interpretation" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code" : "H",
+          "display" : "High"
+        }]
+      }],
+      "method" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+          "code" : "249862003",
+          "display" : "Sitting upright (finding)"
+        }]
+      },
+      "referenceRange" : [{
+        "low" : {
+          "value" : 0.2,
+          "unit" : "kPa.s",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "kPa.s"
+        },
+        "high" : {
+          "value" : 1.2,
+          "unit" : "kPa.s",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "kPa.s"
+        }
+      }],
+      "hasMember" : [{
+        "reference" : "Observation/mii-exa-test-data-lungenfunktion-sr-prov-1"
+      }],
+      "derivedFrom" : [{
+        "reference" : "DocumentReference/mii-exa-test-data-lungenfunktion-docref-rohdaten-1"
+      }],
+      "component" : [{
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "91982-9",
+            "display" : "Specific airway resistance measured/predicted by Plethysmograph body box"
+          }]
+        },
+        "valueQuantity" : {
+          "value" : 125,
+          "unit" : "%",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "%"
+        }
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-lungenfunktion-sr-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-lungenfunktion-sr-eff-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-lungenfunktion-sr-eff-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/lungenfunktion-messplatz",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-r-effektiv"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-lungenfunktion-sr-eff-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-lungenfunktion-sr-eff-1</b></p><a name=\"mii-exa-test-data-lungenfunktion-sr-eff-1\"> </a><a name=\"hcmii-exa-test-data-lungenfunktion-sr-eff-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/lungenfunktion-messplatz\">https://www.charite.de/fhir/lungenfunktion-messplatz</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-r-effektiv\">MII PR Lungenfunktion R Effektiv</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>partOf</b>: <a href=\"Procedure-mii-exa-test-data-lungenfunktion-bodyplethysmographie-messung-1.html\">Procedure Total body plethysmography (procedure)</a></p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category procedure}\">Procedure</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 1366667009}, {http://loinc.org 98084-7}\">Specific airway resistance (observable entity)</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-lungenfunktion-patient-1.html\">Luise Atemwald  Female, DoB: 1972-06-30 ( https://www.charite.de/fhir/sid/patientenidentifikation#LUFU-TEST-001)</a></p><p><b>issued</b>: 2025-02-18 12:00:00+0100</p><p><b>value</b>: 1.1 kPa.s<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codekPa.s = 'kPa.s')</span></p><p><b>interpretation</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation H}\">High</span></p><p><b>method</b>: <span title=\"Codes:{http://snomed.info/sct 249862003}\">Sitting upright (finding)</span></p><h3>ReferenceRanges</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td style=\"display: none\">*</td><td>0.2 kPa.s<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codekPa.s = 'kPa.s')</span></td><td>1.2 kPa.s<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codekPa.s = 'kPa.s')</span></td></tr></table><p><b>hasMember</b>: <a href=\"Observation-mii-exa-test-data-lungenfunktion-r-1.html\">Observation Total airway resistance (observable entity)</a></p><p><b>derivedFrom</b>: <a href=\"DocumentReference-mii-exa-test-data-lungenfunktion-docref-rohdaten-1.html\">DocumentReference: status = current; type = Pulmonary function report (record artifact); date = 2025-02-18 11:45:00+0100</a></p><h3>Components</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://loinc.org 98087-0}\">Specific effective resistance.airway/Predicted mean</span></td><td>115 %<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code% = '%')</span></td></tr></table></div>"
+      },
+      "partOf" : [{
+        "reference" : "Procedure/mii-exa-test-data-lungenfunktion-bodyplethysmographie-messung-1"
+      }],
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "procedure"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+          "code" : "1366667009",
+          "display" : "Specific airway resistance (observable entity)"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "98084-7",
+          "display" : "Specific effective resistance.airway mean Calculated"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-lungenfunktion-patient-1"
+      },
+      "issued" : "2025-02-18T12:00:00+01:00",
+      "valueQuantity" : {
+        "value" : 1.1,
+        "unit" : "kPa.s",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "kPa.s"
+      },
+      "interpretation" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code" : "H",
+          "display" : "High"
+        }]
+      }],
+      "method" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+          "code" : "249862003",
+          "display" : "Sitting upright (finding)"
+        }]
+      },
+      "referenceRange" : [{
+        "low" : {
+          "value" : 0.2,
+          "unit" : "kPa.s",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "kPa.s"
+        },
+        "high" : {
+          "value" : 1.2,
+          "unit" : "kPa.s",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "kPa.s"
+        }
+      }],
+      "hasMember" : [{
+        "reference" : "Observation/mii-exa-test-data-lungenfunktion-r-1"
+      }],
+      "derivedFrom" : [{
+        "reference" : "DocumentReference/mii-exa-test-data-lungenfunktion-docref-rohdaten-1"
+      }],
+      "component" : [{
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "98087-0",
+            "display" : "Specific effective resistance.airway/Predicted mean"
+          }]
+        },
+        "valueQuantity" : {
+          "value" : 115,
+          "unit" : "%",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "%"
+        }
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-lungenfunktion-sr-eff-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-lungenfunktion-sg-total-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-lungenfunktion-sg-total-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/lungenfunktion-messplatz",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-sg-total"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-lungenfunktion-sg-total-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-lungenfunktion-sg-total-1</b></p><a name=\"mii-exa-test-data-lungenfunktion-sg-total-1\"> </a><a name=\"hcmii-exa-test-data-lungenfunktion-sg-total-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/lungenfunktion-messplatz\">https://www.charite.de/fhir/lungenfunktion-messplatz</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-sg-total\">MII PR Lungenfunktion sG Total</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>partOf</b>: <a href=\"Procedure-mii-exa-test-data-lungenfunktion-bodyplethysmographie-messung-1.html\">Procedure Total body plethysmography (procedure)</a></p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category procedure}\">Procedure</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 79412009}\">Specific airway conductance (observable entity)</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-lungenfunktion-patient-1.html\">Luise Atemwald  Female, DoB: 1972-06-30 ( https://www.charite.de/fhir/sid/patientenidentifikation#LUFU-TEST-001)</a></p><p><b>issued</b>: 2025-02-18 12:00:00+0100</p><p><b>value</b>: 0.74 /kPA*s<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code/kPA.s = '/kPA.s')</span></p><p><b>interpretation</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation L}\">Low</span></p><p><b>method</b>: <span title=\"Codes:{http://snomed.info/sct 249862003}\">Sitting upright (finding)</span></p><h3>ReferenceRanges</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td style=\"display: none\">*</td><td>0.85 1/(kPa.s)<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code1/(kPa.s) = '1/(kPa.s)')</span></td><td>2.1 1/(kPa.s)<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code1/(kPa.s) = '1/(kPa.s)')</span></td></tr></table><p><b>hasMember</b>: </p><ul><li><a href=\"Observation-mii-exa-test-data-lungenfunktion-r-1.html\">Observation Total airway resistance (observable entity)</a></li><li><a href=\"Observation-mii-exa-test-data-lungenfunktion-frc-1.html\">Observation Functional residual capacity (observable entity)</a></li></ul><p><b>derivedFrom</b>: <a href=\"Observation-mii-exa-test-data-lungenfunktion-sr-1.html\">Observation Specific airway resistance (observable entity)</a></p></div>"
+      },
+      "partOf" : [{
+        "reference" : "Procedure/mii-exa-test-data-lungenfunktion-bodyplethysmographie-messung-1"
+      }],
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "procedure"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+          "code" : "79412009",
+          "display" : "Specific airway conductance (observable entity)"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-lungenfunktion-patient-1"
+      },
+      "issued" : "2025-02-18T12:00:00+01:00",
+      "valueQuantity" : {
+        "value" : 0.74,
+        "unit" : "/kPA*s",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "/kPA.s"
+      },
+      "interpretation" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code" : "L",
+          "display" : "Low"
+        }]
+      }],
+      "method" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+          "code" : "249862003",
+          "display" : "Sitting upright (finding)"
+        }]
+      },
+      "referenceRange" : [{
+        "low" : {
+          "value" : 0.85,
+          "unit" : "1/(kPa.s)",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "1/(kPa.s)"
+        },
+        "high" : {
+          "value" : 2.1,
+          "unit" : "1/(kPa.s)",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "1/(kPa.s)"
+        }
+      }],
+      "hasMember" : [{
+        "reference" : "Observation/mii-exa-test-data-lungenfunktion-r-1"
+      },
+      {
+        "reference" : "Observation/mii-exa-test-data-lungenfunktion-frc-1"
+      }],
+      "derivedFrom" : [{
+        "reference" : "Observation/mii-exa-test-data-lungenfunktion-sr-1"
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-lungenfunktion-sg-total-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-lungenfunktion-tlc-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-lungenfunktion-tlc-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/lungenfunktion-messplatz",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-tlc"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-lungenfunktion-tlc-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-lungenfunktion-tlc-1</b></p><a name=\"mii-exa-test-data-lungenfunktion-tlc-1\"> </a><a name=\"hcmii-exa-test-data-lungenfunktion-tlc-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/lungenfunktion-messplatz\">https://www.charite.de/fhir/lungenfunktion-messplatz</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-tlc\">MII PR Lungenfunktion TLC</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>partOf</b>: <a href=\"Procedure-mii-exa-test-data-lungenfunktion-bodyplethysmographie-messung-1.html\">Procedure Total body plethysmography (procedure)</a></p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category procedure}\">Procedure</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 57566009}, {http://loinc.org 19859-8}\">Total lung capacity (observable entity)</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-lungenfunktion-patient-1.html\">Luise Atemwald  Female, DoB: 1972-06-30 ( https://www.charite.de/fhir/sid/patientenidentifikation#LUFU-TEST-001)</a></p><p><b>issued</b>: 2025-02-18 12:00:00+0100</p><p><b>value</b>: 5.9 L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL = 'L')</span></p><p><b>interpretation</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}\">Normal</span></p><p><b>method</b>: <span title=\"Codes:{http://snomed.info/sct 249862003}\">Sitting upright (finding)</span></p><h3>ReferenceRanges</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td style=\"display: none\">*</td><td>5 L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL = 'L')</span></td><td>7.4 L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL = 'L')</span></td></tr></table><p><b>hasMember</b>: </p><ul><li><a href=\"Observation-mii-exa-test-data-lungenfunktion-rv-1.html\">Observation Residual respiratory volume (observable entity)</a></li><li><a href=\"Observation-mii-exa-test-data-lungenfunktion-vc-1.html\">Observation Slow vital capacity (observable entity)</a></li></ul><p><b>derivedFrom</b>: <a href=\"DocumentReference-mii-exa-test-data-lungenfunktion-docref-rohdaten-1.html\">DocumentReference: status = current; type = Pulmonary function report (record artifact); date = 2025-02-18 11:45:00+0100</a></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 19861-4}\">Total lung capacity Predicted</span></p><p><b>value</b>: 5.5 L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL = 'L')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 89085-5}\">Total lung capacity measured/predicted by Plethysmograph body box</span></p><p><b>value</b>: 107 %<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code% = '%')</span></p></blockquote></div>"
+      },
+      "partOf" : [{
+        "reference" : "Procedure/mii-exa-test-data-lungenfunktion-bodyplethysmographie-messung-1"
+      }],
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "procedure"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+          "code" : "57566009",
+          "display" : "Total lung capacity (observable entity)"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "19859-8",
+          "display" : "Total lung capacity by Plethysmograph body box"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-lungenfunktion-patient-1"
+      },
+      "issued" : "2025-02-18T12:00:00+01:00",
+      "valueQuantity" : {
+        "value" : 5.9,
+        "unit" : "L",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "L"
+      },
+      "interpretation" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code" : "N",
+          "display" : "Normal"
+        }]
+      }],
+      "method" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+          "code" : "249862003",
+          "display" : "Sitting upright (finding)"
+        }]
+      },
+      "referenceRange" : [{
+        "low" : {
+          "value" : 5,
+          "unit" : "L",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "L"
+        },
+        "high" : {
+          "value" : 7.4,
+          "unit" : "L",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "L"
+        }
+      }],
+      "hasMember" : [{
+        "reference" : "Observation/mii-exa-test-data-lungenfunktion-rv-1"
+      },
+      {
+        "reference" : "Observation/mii-exa-test-data-lungenfunktion-vc-1"
+      }],
+      "derivedFrom" : [{
+        "reference" : "DocumentReference/mii-exa-test-data-lungenfunktion-docref-rohdaten-1"
+      }],
+      "component" : [{
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "19861-4",
+            "display" : "Total lung capacity Predicted"
+          }]
+        },
+        "valueQuantity" : {
+          "value" : 5.5,
+          "unit" : "L",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "L"
+        }
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "89085-5",
+            "display" : "Total lung capacity measured/predicted by Plethysmograph body box"
+          }]
+        },
+        "valueQuantity" : {
+          "value" : 107,
+          "unit" : "%",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "%"
+        }
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-lungenfunktion-tlc-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-lungenfunktion-rv-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-lungenfunktion-rv-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/lungenfunktion-messplatz",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-rv"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-lungenfunktion-rv-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-lungenfunktion-rv-1</b></p><a name=\"mii-exa-test-data-lungenfunktion-rv-1\"> </a><a name=\"hcmii-exa-test-data-lungenfunktion-rv-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/lungenfunktion-messplatz\">https://www.charite.de/fhir/lungenfunktion-messplatz</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-rv\">MII PR Lungenfunktion RV</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>partOf</b>: <a href=\"Procedure-mii-exa-test-data-lungenfunktion-bodyplethysmographie-messung-1.html\">Procedure Total body plethysmography (procedure)</a></p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category procedure}\">Procedure</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 42457008}, {http://loinc.org 20146-7}\">Residual respiratory volume (observable entity)</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-lungenfunktion-patient-1.html\">Luise Atemwald  Female, DoB: 1972-06-30 ( https://www.charite.de/fhir/sid/patientenidentifikation#LUFU-TEST-001)</a></p><p><b>issued</b>: 2025-02-18 12:00:00+0100</p><p><b>value</b>: 2.6 L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL = 'L')</span></p><p><b>interpretation</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation H}\">High</span></p><p><b>method</b>: <span title=\"Codes:{http://snomed.info/sct 249862003}\">Sitting upright (finding)</span></p><h3>ReferenceRanges</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td style=\"display: none\">*</td><td>1.4 L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL = 'L')</span></td><td>2.2 L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL = 'L')</span></td></tr></table><p><b>derivedFrom</b>: <a href=\"DocumentReference-mii-exa-test-data-lungenfunktion-docref-rohdaten-1.html\">DocumentReference: status = current; type = Pulmonary function report (record artifact); date = 2025-02-18 11:45:00+0100</a></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 20145-9}\">Residual volume Predicted</span></p><p><b>value</b>: 2 L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL = 'L')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 94125-2}\">Residual volume/Predicted by Plethysmograph body box</span></p><p><b>value</b>: 130 %<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code% = '%')</span></p></blockquote></div>"
+      },
+      "partOf" : [{
+        "reference" : "Procedure/mii-exa-test-data-lungenfunktion-bodyplethysmographie-messung-1"
+      }],
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "procedure"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+          "code" : "42457008",
+          "display" : "Residual respiratory volume (observable entity)"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "20146-7",
+          "display" : "Residual volume"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-lungenfunktion-patient-1"
+      },
+      "issued" : "2025-02-18T12:00:00+01:00",
+      "valueQuantity" : {
+        "value" : 2.6,
+        "unit" : "L",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "L"
+      },
+      "interpretation" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code" : "H",
+          "display" : "High"
+        }]
+      }],
+      "method" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+          "code" : "249862003",
+          "display" : "Sitting upright (finding)"
+        }]
+      },
+      "referenceRange" : [{
+        "low" : {
+          "value" : 1.4,
+          "unit" : "L",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "L"
+        },
+        "high" : {
+          "value" : 2.2,
+          "unit" : "L",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "L"
+        }
+      }],
+      "derivedFrom" : [{
+        "reference" : "DocumentReference/mii-exa-test-data-lungenfunktion-docref-rohdaten-1"
+      }],
+      "component" : [{
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "20145-9",
+            "display" : "Residual volume Predicted"
+          }]
+        },
+        "valueQuantity" : {
+          "value" : 2,
+          "unit" : "L",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "L"
+        }
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "94125-2",
+            "display" : "Residual volume/Predicted by Plethysmograph body box"
+          }]
+        },
+        "valueQuantity" : {
+          "value" : 130,
+          "unit" : "%",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "%"
+        }
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-lungenfunktion-rv-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-lungenfunktion-rv-tlc-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-lungenfunktion-rv-tlc-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/lungenfunktion-messplatz",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-rvl-tlc"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-lungenfunktion-rv-tlc-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-lungenfunktion-rv-tlc-1</b></p><a name=\"mii-exa-test-data-lungenfunktion-rv-tlc-1\"> </a><a name=\"hcmii-exa-test-data-lungenfunktion-rv-tlc-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/lungenfunktion-messplatz\">https://www.charite.de/fhir/lungenfunktion-messplatz</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-rvl-tlc\">MII PR Lungenfunktion Anteil Residualvolumen an Lungenkapazität</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>partOf</b>: <a href=\"Procedure-mii-exa-test-data-lungenfunktion-bodyplethysmographie-messung-1.html\">Procedure Total body plethysmography (procedure)</a></p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category procedure}\">Procedure</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 1366666000}, {http://loinc.org 81454-1}\">Residual volume/total lung capacity ratio (observable entity)</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-lungenfunktion-patient-1.html\">Luise Atemwald  Female, DoB: 1972-06-30 ( https://www.charite.de/fhir/sid/patientenidentifikation#LUFU-TEST-001)</a></p><p><b>issued</b>: 2025-02-18 12:00:00+0100</p><p><b>value</b>: 44 %<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code% = '%')</span></p><p><b>interpretation</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation H}\">High</span></p><p><b>method</b>: <span title=\"Codes:{http://snomed.info/sct 249862003}\">Sitting upright (finding)</span></p><h3>ReferenceRanges</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td style=\"display: none\">*</td><td>25 %<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code% = '%')</span></td><td>35 %<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code% = '%')</span></td></tr></table><p><b>hasMember</b>: </p><ul><li><a href=\"Observation-mii-exa-test-data-lungenfunktion-rv-1.html\">Observation Residual respiratory volume (observable entity)</a></li><li><a href=\"Observation-mii-exa-test-data-lungenfunktion-tlc-1.html\">Observation Total lung capacity (observable entity)</a></li></ul><p><b>derivedFrom</b>: </p><ul><li><a href=\"Observation-mii-exa-test-data-lungenfunktion-rv-1.html\">Observation Residual respiratory volume (observable entity)</a></li><li><a href=\"Observation-mii-exa-test-data-lungenfunktion-tlc-1.html\">Observation Total lung capacity (observable entity)</a></li></ul><h3>Components</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://loinc.org 43252-6}\">Residual volume/Total capacity Predicted</span></td><td>36 %<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code% = '%')</span></td></tr></table></div>"
+      },
+      "partOf" : [{
+        "reference" : "Procedure/mii-exa-test-data-lungenfunktion-bodyplethysmographie-messung-1"
+      }],
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "procedure"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+          "code" : "1366666000",
+          "display" : "Residual volume/total lung capacity ratio (observable entity)"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "81454-1",
+          "display" : "Residual volume/Total capacity --pre bronchodilation"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-lungenfunktion-patient-1"
+      },
+      "issued" : "2025-02-18T12:00:00+01:00",
+      "valueQuantity" : {
+        "value" : 44,
+        "unit" : "%",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "%"
+      },
+      "interpretation" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code" : "H",
+          "display" : "High"
+        }]
+      }],
+      "method" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+          "code" : "249862003",
+          "display" : "Sitting upright (finding)"
+        }]
+      },
+      "referenceRange" : [{
+        "low" : {
+          "value" : 25,
+          "unit" : "%",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "%"
+        },
+        "high" : {
+          "value" : 35,
+          "unit" : "%",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "%"
+        }
+      }],
+      "hasMember" : [{
+        "reference" : "Observation/mii-exa-test-data-lungenfunktion-rv-1"
+      },
+      {
+        "reference" : "Observation/mii-exa-test-data-lungenfunktion-tlc-1"
+      }],
+      "derivedFrom" : [{
+        "reference" : "Observation/mii-exa-test-data-lungenfunktion-rv-1"
+      },
+      {
+        "reference" : "Observation/mii-exa-test-data-lungenfunktion-tlc-1"
+      }],
+      "component" : [{
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "43252-6",
+            "display" : "Residual volume/Total capacity Predicted"
+          }]
+        },
+        "valueQuantity" : {
+          "value" : 36,
+          "unit" : "%",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "%"
+        }
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-lungenfunktion-rv-tlc-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-lungenfunktion-dlco-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-lungenfunktion-dlco-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/lungenfunktion-messplatz",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-dlco"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-lungenfunktion-dlco-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-lungenfunktion-dlco-1</b></p><a name=\"mii-exa-test-data-lungenfunktion-dlco-1\"> </a><a name=\"hcmii-exa-test-data-lungenfunktion-dlco-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/lungenfunktion-messplatz\">https://www.charite.de/fhir/lungenfunktion-messplatz</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-dlco\">MII PR Lungenfunktion DLCO</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>partOf</b>: <a href=\"Procedure-mii-exa-test-data-lungenfunktion-diffusion-messung-1.html\">Procedure Carbon monoxide diffusing capacity measurement (procedure)</a></p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category procedure}\">Procedure</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 1366665001}, {http://loinc.org 19911-7}\">Single breath carbon monoxide diffusing capacity (observable entity)</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-lungenfunktion-patient-1.html\">Luise Atemwald  Female, DoB: 1972-06-30 ( https://www.charite.de/fhir/sid/patientenidentifikation#LUFU-TEST-001)</a></p><p><b>issued</b>: 2025-02-18 12:00:00+0100</p><p><b>value</b>: 7.2 mmol/(min.kPa)<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemmol/(min.kPa) = 'mmol/(min.kPa)')</span></p><p><b>interpretation</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}\">Normal</span></p><p><b>method</b>: <span title=\"Codes:{http://snomed.info/sct 264284001}\">Single-breath technique (qualifier value)</span></p><h3>ReferenceRanges</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td style=\"display: none\">*</td><td>6.2 mmol/(min.kPa)<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemmol/(min.kPa) = 'mmol/(min.kPa)')</span></td><td>9.4 mmol/(min.kPa)<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemmol/(min.kPa) = 'mmol/(min.kPa)')</span></td></tr></table><p><b>derivedFrom</b>: <a href=\"DocumentReference-mii-exa-test-data-lungenfunktion-docref-rohdaten-1.html\">DocumentReference: status = current; type = Pulmonary function report (record artifact); date = 2025-02-18 11:45:00+0100</a></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 19910-9}\">Diffusion capacity.carbon monoxide Predicted</span></p><p><b>value</b>: 7.8 mmol/(min.kPa)<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemmol/(min.kPa) = 'mmol/(min.kPa)')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 98130-8}\">Diffusion capacity.carbon monoxide/Predicted</span></p><p><b>value</b>: 92 %<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code% = '%')</span></p></blockquote></div>"
+      },
+      "partOf" : [{
+        "reference" : "Procedure/mii-exa-test-data-lungenfunktion-diffusion-messung-1"
+      }],
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "procedure"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+          "code" : "1366665001",
+          "display" : "Single breath carbon monoxide diffusing capacity (observable entity)"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "19911-7",
+          "display" : "Diffusion capacity.carbon monoxide"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-lungenfunktion-patient-1"
+      },
+      "issued" : "2025-02-18T12:00:00+01:00",
+      "valueQuantity" : {
+        "value" : 7.2,
+        "unit" : "mmol/(min.kPa)",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "mmol/(min.kPa)"
+      },
+      "interpretation" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code" : "N",
+          "display" : "Normal"
+        }]
+      }],
+      "method" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+          "code" : "264284001",
+          "display" : "Single-breath technique (qualifier value)"
+        }]
+      },
+      "referenceRange" : [{
+        "low" : {
+          "value" : 6.2,
+          "unit" : "mmol/(min.kPa)",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "mmol/(min.kPa)"
+        },
+        "high" : {
+          "value" : 9.4,
+          "unit" : "mmol/(min.kPa)",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "mmol/(min.kPa)"
+        }
+      }],
+      "derivedFrom" : [{
+        "reference" : "DocumentReference/mii-exa-test-data-lungenfunktion-docref-rohdaten-1"
+      }],
+      "component" : [{
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "19910-9",
+            "display" : "Diffusion capacity.carbon monoxide Predicted"
+          }]
+        },
+        "valueQuantity" : {
+          "value" : 7.8,
+          "unit" : "mmol/(min.kPa)",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "mmol/(min.kPa)"
+        }
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "98130-8",
+            "display" : "Diffusion capacity.carbon monoxide/Predicted"
+          }]
+        },
+        "valueQuantity" : {
+          "value" : 92,
+          "unit" : "%",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "%"
+        }
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-lungenfunktion-dlco-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-lungenfunktion-dlcoc-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-lungenfunktion-dlcoc-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/lungenfunktion-messplatz",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-dlcoc"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-lungenfunktion-dlcoc-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-lungenfunktion-dlcoc-1</b></p><a name=\"mii-exa-test-data-lungenfunktion-dlcoc-1\"> </a><a name=\"hcmii-exa-test-data-lungenfunktion-dlcoc-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/lungenfunktion-messplatz\">https://www.charite.de/fhir/lungenfunktion-messplatz</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-dlcoc\">MII PR Lungenfunktion DLCOc</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>partOf</b>: <a href=\"Procedure-mii-exa-test-data-lungenfunktion-diffusion-messung-1.html\">Procedure Carbon monoxide diffusing capacity measurement (procedure)</a></p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category procedure}\">Procedure</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 19913-3}\">Diffusion capacity.carbon monoxide adjusted for hemoglobin</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-lungenfunktion-patient-1.html\">Luise Atemwald  Female, DoB: 1972-06-30 ( https://www.charite.de/fhir/sid/patientenidentifikation#LUFU-TEST-001)</a></p><p><b>issued</b>: 2025-02-18 12:00:00+0100</p><p><b>value</b>: 7.45 mmol/(min.kPa)<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemmol/(min.kPa) = 'mmol/(min.kPa)')</span></p><p><b>interpretation</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}\">Normal</span></p><p><b>method</b>: <span title=\"Codes:{http://snomed.info/sct 264284001}\">Single-breath technique (qualifier value)</span></p><h3>ReferenceRanges</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td style=\"display: none\">*</td><td>6.2 mmol/(min.kPa)<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemmol/(min.kPa) = 'mmol/(min.kPa)')</span></td><td>9.4 mmol/(min.kPa)<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemmol/(min.kPa) = 'mmol/(min.kPa)')</span></td></tr></table><p><b>hasMember</b>: </p><ul><li><a href=\"Observation-mii-exa-test-data-lungenfunktion-dlco-1.html\">Observation Single breath carbon monoxide diffusing capacity (observable entity)</a></li><li><a href=\"Observation-mii-exa-test-data-lungenfunktion-hb-1.html\">Observation Hemoglobin (substance)</a></li></ul><p><b>derivedFrom</b>: <a href=\"Observation-mii-exa-test-data-lungenfunktion-hb-1.html\">Observation Hemoglobin (substance)</a></p></div>"
+      },
+      "partOf" : [{
+        "reference" : "Procedure/mii-exa-test-data-lungenfunktion-diffusion-messung-1"
+      }],
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "procedure"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "19913-3",
+          "display" : "Diffusion capacity.carbon monoxide adjusted for hemoglobin"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-lungenfunktion-patient-1"
+      },
+      "issued" : "2025-02-18T12:00:00+01:00",
+      "valueQuantity" : {
+        "value" : 7.45,
+        "unit" : "mmol/(min.kPa)",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "mmol/(min.kPa)"
+      },
+      "interpretation" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code" : "N",
+          "display" : "Normal"
+        }]
+      }],
+      "method" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+          "code" : "264284001",
+          "display" : "Single-breath technique (qualifier value)"
+        }]
+      },
+      "referenceRange" : [{
+        "low" : {
+          "value" : 6.2,
+          "unit" : "mmol/(min.kPa)",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "mmol/(min.kPa)"
+        },
+        "high" : {
+          "value" : 9.4,
+          "unit" : "mmol/(min.kPa)",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "mmol/(min.kPa)"
+        }
+      }],
+      "hasMember" : [{
+        "reference" : "Observation/mii-exa-test-data-lungenfunktion-dlco-1"
+      },
+      {
+        "reference" : "Observation/mii-exa-test-data-lungenfunktion-hb-1"
+      }],
+      "derivedFrom" : [{
+        "reference" : "Observation/mii-exa-test-data-lungenfunktion-hb-1"
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-lungenfunktion-dlcoc-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-lungenfunktion-kco-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-lungenfunktion-kco-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/lungenfunktion-messplatz",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-kco"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-lungenfunktion-kco-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-lungenfunktion-kco-1</b></p><a name=\"mii-exa-test-data-lungenfunktion-kco-1\"> </a><a name=\"hcmii-exa-test-data-lungenfunktion-kco-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/lungenfunktion-messplatz\">https://www.charite.de/fhir/lungenfunktion-messplatz</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-kco\">MII PR Lungenfunktion KCO</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>partOf</b>: <a href=\"Procedure-mii-exa-test-data-lungenfunktion-diffusion-messung-1.html\">Procedure Carbon monoxide diffusing capacity measurement (procedure)</a></p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category procedure}\">Procedure</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 251952002}, {http://loinc.org 19916-6}\">Transfer coefficient (respiratory measure) (observable entity)</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-lungenfunktion-patient-1.html\">Luise Atemwald  Female, DoB: 1972-06-30 ( https://www.charite.de/fhir/sid/patientenidentifikation#LUFU-TEST-001)</a></p><p><b>issued</b>: 2025-02-18 12:00:00+0100</p><p><b>value</b>: 1.45 mmol/(min.kPa.L)<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemmol/(min.kPa.L) = 'mmol/(min.kPa.L)')</span></p><p><b>interpretation</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}\">Normal</span></p><p><b>method</b>: <span title=\"Codes:{http://snomed.info/sct 264284001}\">Single-breath technique (qualifier value)</span></p><h3>ReferenceRanges</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td style=\"display: none\">*</td><td>1.2 mmol/(min.kPa.L)<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemmol/(min.kPa.L) = 'mmol/(min.kPa.L)')</span></td><td>1.8 mmol/(min.kPa.L)<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemmol/(min.kPa.L) = 'mmol/(min.kPa.L)')</span></td></tr></table><p><b>hasMember</b>: </p><ul><li><a href=\"Observation-mii-exa-test-data-lungenfunktion-dlco-1.html\">Observation Single breath carbon monoxide diffusing capacity (observable entity)</a></li><li><a href=\"Observation-mii-exa-test-data-lungenfunktion-va-1.html\">Observation Alveolar volume (observable entity)</a></li></ul><p><b>derivedFrom</b>: </p><ul><li><a href=\"Observation-mii-exa-test-data-lungenfunktion-dlco-1.html\">Observation Single breath carbon monoxide diffusing capacity (observable entity)</a></li><li><a href=\"Observation-mii-exa-test-data-lungenfunktion-va-1.html\">Observation Alveolar volume (observable entity)</a></li></ul><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 19915-8}\">Diffusion capacity/Alveolar volume Predicted</span></p><p><b>value</b>: 1.52 mmol/(min.kPa.L)<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemmol/(min.kPa.L) = 'mmol/(min.kPa.L)')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 98203-3}\">(Diffusion capacity/Alveolar volume)/predicted</span></p><p><b>value</b>: 95 %<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code% = '%')</span></p></blockquote></div>"
+      },
+      "partOf" : [{
+        "reference" : "Procedure/mii-exa-test-data-lungenfunktion-diffusion-messung-1"
+      }],
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "procedure"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+          "code" : "251952002",
+          "display" : "Transfer coefficient (respiratory measure) (observable entity)"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "19916-6",
+          "display" : "Diffusion capacity/Alveolar volume"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-lungenfunktion-patient-1"
+      },
+      "issued" : "2025-02-18T12:00:00+01:00",
+      "valueQuantity" : {
+        "value" : 1.45,
+        "unit" : "mmol/(min.kPa.L)",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "mmol/(min.kPa.L)"
+      },
+      "interpretation" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code" : "N",
+          "display" : "Normal"
+        }]
+      }],
+      "method" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+          "code" : "264284001",
+          "display" : "Single-breath technique (qualifier value)"
+        }]
+      },
+      "referenceRange" : [{
+        "low" : {
+          "value" : 1.2,
+          "unit" : "mmol/(min.kPa.L)",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "mmol/(min.kPa.L)"
+        },
+        "high" : {
+          "value" : 1.8,
+          "unit" : "mmol/(min.kPa.L)",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "mmol/(min.kPa.L)"
+        }
+      }],
+      "hasMember" : [{
+        "reference" : "Observation/mii-exa-test-data-lungenfunktion-dlco-1"
+      },
+      {
+        "reference" : "Observation/mii-exa-test-data-lungenfunktion-va-1"
+      }],
+      "derivedFrom" : [{
+        "reference" : "Observation/mii-exa-test-data-lungenfunktion-dlco-1"
+      },
+      {
+        "reference" : "Observation/mii-exa-test-data-lungenfunktion-va-1"
+      }],
+      "component" : [{
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "19915-8",
+            "display" : "Diffusion capacity/Alveolar volume Predicted"
+          }]
+        },
+        "valueQuantity" : {
+          "value" : 1.52,
+          "unit" : "mmol/(min.kPa.L)",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "mmol/(min.kPa.L)"
+        }
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "98203-3",
+            "display" : "(Diffusion capacity/Alveolar volume)/predicted"
+          }]
+        },
+        "valueQuantity" : {
+          "value" : 95,
+          "unit" : "%",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "%"
+        }
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-lungenfunktion-kco-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-lungenfunktion-kcoc-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-lungenfunktion-kcoc-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/lungenfunktion-messplatz",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-kcoc"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-lungenfunktion-kcoc-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-lungenfunktion-kcoc-1</b></p><a name=\"mii-exa-test-data-lungenfunktion-kcoc-1\"> </a><a name=\"hcmii-exa-test-data-lungenfunktion-kcoc-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/lungenfunktion-messplatz\">https://www.charite.de/fhir/lungenfunktion-messplatz</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-kcoc\">MII PR Lungenfunktion KCOc</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>partOf</b>: <a href=\"Procedure-mii-exa-test-data-lungenfunktion-diffusion-messung-1.html\">Procedure Carbon monoxide diffusing capacity measurement (procedure)</a></p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category procedure}\">Procedure</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 69578-3}\">Diffusion capacity.carbon monoxide/Alveolar volume adjusted for hemoglobin</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-lungenfunktion-patient-1.html\">Luise Atemwald  Female, DoB: 1972-06-30 ( https://www.charite.de/fhir/sid/patientenidentifikation#LUFU-TEST-001)</a></p><p><b>issued</b>: 2025-02-18 12:00:00+0100</p><p><b>value</b>: 1.5 mmol/(min.kPa.L)<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemmol/(min.kPa.L) = 'mmol/(min.kPa.L)')</span></p><p><b>interpretation</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}\">Normal</span></p><p><b>method</b>: <span title=\"Codes:{http://snomed.info/sct 264284001}\">Single-breath technique (qualifier value)</span></p><h3>ReferenceRanges</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td style=\"display: none\">*</td><td>1.2 mmol/(min.kPa.L)<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemmol/(min.kPa.L) = 'mmol/(min.kPa.L)')</span></td><td>1.8 mmol/(min.kPa.L)<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemmol/(min.kPa.L) = 'mmol/(min.kPa.L)')</span></td></tr></table><p><b>hasMember</b>: </p><ul><li><a href=\"Observation-mii-exa-test-data-lungenfunktion-kco-1.html\">Observation Transfer coefficient (respiratory measure) (observable entity)</a></li><li><a href=\"Observation-mii-exa-test-data-lungenfunktion-hb-1.html\">Observation Hemoglobin (substance)</a></li></ul><p><b>derivedFrom</b>: </p><ul><li><a href=\"Observation-mii-exa-test-data-lungenfunktion-dlco-1.html\">Observation Single breath carbon monoxide diffusing capacity (observable entity)</a></li><li><a href=\"Observation-mii-exa-test-data-lungenfunktion-va-1.html\">Observation Alveolar volume (observable entity)</a></li><li><a href=\"Observation-mii-exa-test-data-lungenfunktion-hb-1.html\">Observation Hemoglobin (substance)</a></li></ul></div>"
+      },
+      "partOf" : [{
+        "reference" : "Procedure/mii-exa-test-data-lungenfunktion-diffusion-messung-1"
+      }],
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "procedure"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "69578-3",
+          "display" : "Diffusion capacity.carbon monoxide/Alveolar volume adjusted for hemoglobin"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-lungenfunktion-patient-1"
+      },
+      "issued" : "2025-02-18T12:00:00+01:00",
+      "valueQuantity" : {
+        "value" : 1.5,
+        "unit" : "mmol/(min.kPa.L)",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "mmol/(min.kPa.L)"
+      },
+      "interpretation" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code" : "N",
+          "display" : "Normal"
+        }]
+      }],
+      "method" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+          "code" : "264284001",
+          "display" : "Single-breath technique (qualifier value)"
+        }]
+      },
+      "referenceRange" : [{
+        "low" : {
+          "value" : 1.2,
+          "unit" : "mmol/(min.kPa.L)",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "mmol/(min.kPa.L)"
+        },
+        "high" : {
+          "value" : 1.8,
+          "unit" : "mmol/(min.kPa.L)",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "mmol/(min.kPa.L)"
+        }
+      }],
+      "hasMember" : [{
+        "reference" : "Observation/mii-exa-test-data-lungenfunktion-kco-1"
+      },
+      {
+        "reference" : "Observation/mii-exa-test-data-lungenfunktion-hb-1"
+      }],
+      "derivedFrom" : [{
+        "reference" : "Observation/mii-exa-test-data-lungenfunktion-dlco-1"
+      },
+      {
+        "reference" : "Observation/mii-exa-test-data-lungenfunktion-va-1"
+      },
+      {
+        "reference" : "Observation/mii-exa-test-data-lungenfunktion-hb-1"
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-lungenfunktion-kcoc-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-lungenfunktion-va-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-lungenfunktion-va-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/lungenfunktion-messplatz",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-va"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-lungenfunktion-va-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-lungenfunktion-va-1</b></p><a name=\"mii-exa-test-data-lungenfunktion-va-1\"> </a><a name=\"hcmii-exa-test-data-lungenfunktion-va-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/lungenfunktion-messplatz\">https://www.charite.de/fhir/lungenfunktion-messplatz</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-va\">MII PR Lungenfunktion VA</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>partOf</b>: <a href=\"Procedure-mii-exa-test-data-lungenfunktion-diffusion-messung-1.html\">Procedure Carbon monoxide diffusing capacity measurement (procedure)</a></p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category procedure}\">Procedure</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 251953007}\">Alveolar volume (observable entity)</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-lungenfunktion-patient-1.html\">Luise Atemwald  Female, DoB: 1972-06-30 ( https://www.charite.de/fhir/sid/patientenidentifikation#LUFU-TEST-001)</a></p><p><b>issued</b>: 2025-02-18 12:00:00+0100</p><p><b>value</b>: 4.95 L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL = 'L')</span></p><p><b>interpretation</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}\">Normal</span></p><p><b>method</b>: <span title=\"Codes:{http://snomed.info/sct 264284001}\">Single-breath technique (qualifier value)</span></p><h3>ReferenceRanges</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td style=\"display: none\">*</td><td>4.5 L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL = 'L')</span></td><td>6.9 L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL = 'L')</span></td></tr></table><p><b>derivedFrom</b>: <a href=\"DocumentReference-mii-exa-test-data-lungenfunktion-docref-rohdaten-1.html\">DocumentReference: status = current; type = Pulmonary function report (record artifact); date = 2025-02-18 11:45:00+0100</a></p></div>"
+      },
+      "partOf" : [{
+        "reference" : "Procedure/mii-exa-test-data-lungenfunktion-diffusion-messung-1"
+      }],
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "procedure"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+          "code" : "251953007",
+          "display" : "Alveolar volume (observable entity)"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-lungenfunktion-patient-1"
+      },
+      "issued" : "2025-02-18T12:00:00+01:00",
+      "valueQuantity" : {
+        "value" : 4.95,
+        "unit" : "L",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "L"
+      },
+      "interpretation" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code" : "N",
+          "display" : "Normal"
+        }]
+      }],
+      "method" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+          "code" : "264284001",
+          "display" : "Single-breath technique (qualifier value)"
+        }]
+      },
+      "referenceRange" : [{
+        "low" : {
+          "value" : 4.5,
+          "unit" : "L",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "L"
+        },
+        "high" : {
+          "value" : 6.9,
+          "unit" : "L",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "L"
+        }
+      }],
+      "derivedFrom" : [{
+        "reference" : "DocumentReference/mii-exa-test-data-lungenfunktion-docref-rohdaten-1"
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-lungenfunktion-va-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-lungenfunktion-hb-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-lungenfunktion-hb-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/lungenfunktion-messplatz",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-hb"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-lungenfunktion-hb-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-lungenfunktion-hb-1</b></p><a name=\"mii-exa-test-data-lungenfunktion-hb-1\"> </a><a name=\"hcmii-exa-test-data-lungenfunktion-hb-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/lungenfunktion-messplatz\">https://www.charite.de/fhir/lungenfunktion-messplatz</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-hb\">MII PR Lungenfunktion Hb</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>partOf</b>: <a href=\"Procedure-mii-exa-test-data-lungenfunktion-diffusion-messung-1.html\">Procedure Carbon monoxide diffusing capacity measurement (procedure)</a></p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category procedure}\">Procedure</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 38082009}, {http://loinc.org 718-7}\">Hemoglobin (substance)</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-lungenfunktion-patient-1.html\">Luise Atemwald  Female, DoB: 1972-06-30 ( https://www.charite.de/fhir/sid/patientenidentifikation#LUFU-TEST-001)</a></p><p><b>issued</b>: 2025-02-18 12:00:00+0100</p><p><b>value</b>: 13.8 g{Hemoglobin}/dL<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeg{Hemoglobin}/dL = 'g{Hemoglobin}/dL')</span></p><p><b>interpretation</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}\">Normal</span></p><p><b>method</b>: <span title=\"Codes:{http://snomed.info/sct 258104002}\">Measured (qualifier value)</span></p><h3>ReferenceRanges</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td style=\"display: none\">*</td><td>12 g{Hemoglobin}/dL<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeg{Hemoglobin}/dL = 'g{Hemoglobin}/dL')</span></td><td>15.5 g{Hemoglobin}/dL<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeg{Hemoglobin}/dL = 'g{Hemoglobin}/dL')</span></td></tr></table></div>"
+      },
+      "partOf" : [{
+        "reference" : "Procedure/mii-exa-test-data-lungenfunktion-diffusion-messung-1"
+      }],
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "procedure"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+          "code" : "38082009",
+          "display" : "Hemoglobin (substance)"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "718-7",
+          "display" : "Hemoglobin [Mass/volume] in Blood"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-lungenfunktion-patient-1"
+      },
+      "issued" : "2025-02-18T12:00:00+01:00",
+      "valueQuantity" : {
+        "value" : 13.8,
+        "unit" : "g{Hemoglobin}/dL",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "g{Hemoglobin}/dL"
+      },
+      "interpretation" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code" : "N",
+          "display" : "Normal"
+        }]
+      }],
+      "method" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "258104002",
+          "display" : "Measured (qualifier value)"
+        }]
+      },
+      "referenceRange" : [{
+        "low" : {
+          "value" : 12,
+          "unit" : "g{Hemoglobin}/dL",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "g{Hemoglobin}/dL"
+        },
+        "high" : {
+          "value" : 15.5,
+          "unit" : "g{Hemoglobin}/dL",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "g{Hemoglobin}/dL"
+        }
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-lungenfunktion-hb-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-lungenfunktion-fev-prov-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-lungenfunktion-fev-prov-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/lungenfunktion-messplatz",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-fev"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-lungenfunktion-fev-prov-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-lungenfunktion-fev-prov-1</b></p><a name=\"mii-exa-test-data-lungenfunktion-fev-prov-1\"> </a><a name=\"hcmii-exa-test-data-lungenfunktion-fev-prov-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/lungenfunktion-messplatz\">https://www.charite.de/fhir/lungenfunktion-messplatz</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-fev\">MII PR Lungenfunktion FEV</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category procedure}\">Procedure</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 59328004}, {http://loinc.org 43253-4}\">Forced expired volume in 1 second (observable entity)</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-lungenfunktion-patient-1.html\">Luise Atemwald  Female, DoB: 1972-06-30 ( https://www.charite.de/fhir/sid/patientenidentifikation#LUFU-TEST-001)</a></p><p><b>issued</b>: 2025-02-18 12:00:00+0100</p><p><b>value</b>: 2.1 L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL = 'L')</span></p><p><b>interpretation</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}\">Normal</span></p><p><b>method</b>: <span title=\"Codes:{http://snomed.info/sct 249862003}\">Sitting upright (finding)</span></p></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "procedure"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+          "code" : "59328004",
+          "display" : "Forced expired volume in 1 second (observable entity)"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "43253-4",
+          "display" : "FEV1 --pre dose methacholine"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-lungenfunktion-patient-1"
+      },
+      "issued" : "2025-02-18T12:00:00+01:00",
+      "valueQuantity" : {
+        "value" : 2.1,
+        "unit" : "L",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "L"
+      },
+      "interpretation" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code" : "N",
+          "display" : "Normal"
+        }]
+      }],
+      "method" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+          "code" : "249862003",
+          "display" : "Sitting upright (finding)"
+        }]
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-lungenfunktion-fev-prov-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-lungenfunktion-fev-prov-2",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-lungenfunktion-fev-prov-2",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/lungenfunktion-messplatz",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-fev"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-lungenfunktion-fev-prov-2\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-lungenfunktion-fev-prov-2</b></p><a name=\"mii-exa-test-data-lungenfunktion-fev-prov-2\"> </a><a name=\"hcmii-exa-test-data-lungenfunktion-fev-prov-2\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/lungenfunktion-messplatz\">https://www.charite.de/fhir/lungenfunktion-messplatz</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-fev\">MII PR Lungenfunktion FEV</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category procedure}\">Procedure</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 59328004}, {http://loinc.org 43255-9}\">Forced expired volume in 1 second (observable entity)</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-lungenfunktion-patient-1.html\">Luise Atemwald  Female, DoB: 1972-06-30 ( https://www.charite.de/fhir/sid/patientenidentifikation#LUFU-TEST-001)</a></p><p><b>issued</b>: 2025-02-18 12:00:00+0100</p><p><b>value</b>: 1.55 L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL = 'L')</span></p><p><b>interpretation</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation L}\">Low</span></p><p><b>method</b>: <span title=\"Codes:{http://snomed.info/sct 249862003}\">Sitting upright (finding)</span></p></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "procedure"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+          "code" : "59328004",
+          "display" : "Forced expired volume in 1 second (observable entity)"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "43255-9",
+          "display" : "FEV1 --post dose methacholine"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-lungenfunktion-patient-1"
+      },
+      "issued" : "2025-02-18T12:00:00+01:00",
+      "valueQuantity" : {
+        "value" : 1.55,
+        "unit" : "L",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "L"
+      },
+      "interpretation" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code" : "L",
+          "display" : "Low"
+        }]
+      }],
+      "method" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+          "code" : "249862003",
+          "display" : "Sitting upright (finding)"
+        }]
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-lungenfunktion-fev-prov-2"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-lungenfunktion-pef-prov-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-lungenfunktion-pef-prov-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/lungenfunktion-messplatz",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-pef"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-lungenfunktion-pef-prov-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-lungenfunktion-pef-prov-1</b></p><a name=\"mii-exa-test-data-lungenfunktion-pef-prov-1\"> </a><a name=\"hcmii-exa-test-data-lungenfunktion-pef-prov-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/lungenfunktion-messplatz\">https://www.charite.de/fhir/lungenfunktion-messplatz</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-pef\">MII PR Lungenfunktion PEF</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category procedure}\">Procedure</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 18491006}, {http://loinc.org 33452-4}\">Peak expiratory flow rate (observable entity)</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-lungenfunktion-patient-1.html\">Luise Atemwald  Female, DoB: 1972-06-30 ( https://www.charite.de/fhir/sid/patientenidentifikation#LUFU-TEST-001)</a></p><p><b>issued</b>: 2025-02-18 12:00:00+0100</p><p><b>value</b>: 4.1 L/s<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL/s = 'L/s')</span></p><p><b>interpretation</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation L}\">Low</span></p><p><b>method</b>: <span title=\"Codes:{http://snomed.info/sct 249862003}\">Sitting upright (finding)</span></p></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "procedure"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+          "code" : "18491006",
+          "display" : "Peak expiratory flow rate (observable entity)"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "33452-4",
+          "display" : "Maximum expiratory gas flow Respiratory system airway"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-lungenfunktion-patient-1"
+      },
+      "issued" : "2025-02-18T12:00:00+01:00",
+      "valueQuantity" : {
+        "value" : 4.1,
+        "unit" : "L/s",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "L/s"
+      },
+      "interpretation" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code" : "L",
+          "display" : "Low"
+        }]
+      }],
+      "method" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+          "code" : "249862003",
+          "display" : "Sitting upright (finding)"
+        }]
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-lungenfunktion-pef-prov-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-lungenfunktion-r-prov-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-lungenfunktion-r-prov-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/lungenfunktion-messplatz",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-r"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-lungenfunktion-r-prov-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-lungenfunktion-r-prov-1</b></p><a name=\"mii-exa-test-data-lungenfunktion-r-prov-1\"> </a><a name=\"hcmii-exa-test-data-lungenfunktion-r-prov-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/lungenfunktion-messplatz\">https://www.charite.de/fhir/lungenfunktion-messplatz</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-r\">MII PR Lungenfunktion R</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category procedure}\">Procedure</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 16162007}, {http://loinc.org 20083-2}\">Total airway resistance (observable entity)</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-lungenfunktion-patient-1.html\">Luise Atemwald  Female, DoB: 1972-06-30 ( https://www.charite.de/fhir/sid/patientenidentifikation#LUFU-TEST-001)</a></p><p><b>issued</b>: 2025-02-18 12:00:00+0100</p><p><b>value</b>: 0.55 kPa/(L/s)<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codekPa/(L/s) = 'kPa/(L/s)')</span></p><p><b>interpretation</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation H}\">High</span></p><p><b>method</b>: <span title=\"Codes:{http://snomed.info/sct 249862003}\">Sitting upright (finding)</span></p></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "procedure"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+          "code" : "16162007",
+          "display" : "Total airway resistance (observable entity)"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "20083-2",
+          "display" : "Airway resistance mean by Plethysmograph body box"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-lungenfunktion-patient-1"
+      },
+      "issued" : "2025-02-18T12:00:00+01:00",
+      "valueQuantity" : {
+        "value" : 0.55,
+        "unit" : "kPa/(L/s)",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "kPa/(L/s)"
+      },
+      "interpretation" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code" : "H",
+          "display" : "High"
+        }]
+      }],
+      "method" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+          "code" : "249862003",
+          "display" : "Sitting upright (finding)"
+        }]
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-lungenfunktion-r-prov-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-lungenfunktion-sr-prov-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-lungenfunktion-sr-prov-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/lungenfunktion-messplatz",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-r-spezifisch"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-lungenfunktion-sr-prov-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-lungenfunktion-sr-prov-1</b></p><a name=\"mii-exa-test-data-lungenfunktion-sr-prov-1\"> </a><a name=\"hcmii-exa-test-data-lungenfunktion-sr-prov-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/lungenfunktion-messplatz\">https://www.charite.de/fhir/lungenfunktion-messplatz</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-r-spezifisch\">MII PR Lungenfunktion R Spezifisch</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category procedure}\">Procedure</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 1366667009}, {http://loinc.org 91980-3}\">Specific airway resistance (observable entity)</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-lungenfunktion-patient-1.html\">Luise Atemwald  Female, DoB: 1972-06-30 ( https://www.charite.de/fhir/sid/patientenidentifikation#LUFU-TEST-001)</a></p><p><b>issued</b>: 2025-02-18 12:00:00+0100</p><p><b>value</b>: 1.8 kPa.s<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codekPa.s = 'kPa.s')</span></p><p><b>interpretation</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation H}\">High</span></p><p><b>method</b>: <span title=\"Codes:{http://snomed.info/sct 249862003}\">Sitting upright (finding)</span></p></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "procedure"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+          "code" : "1366667009",
+          "display" : "Specific airway resistance (observable entity)"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "91980-3",
+          "display" : "Specific airway resistance by Plethysmograph body box"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-lungenfunktion-patient-1"
+      },
+      "issued" : "2025-02-18T12:00:00+01:00",
+      "valueQuantity" : {
+        "value" : 1.8,
+        "unit" : "kPa.s",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "kPa.s"
+      },
+      "interpretation" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code" : "H",
+          "display" : "High"
+        }]
+      }],
+      "method" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+          "code" : "249862003",
+          "display" : "Sitting upright (finding)"
+        }]
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-lungenfunktion-sr-prov-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-lungenfunktion-frc-prov-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-lungenfunktion-frc-prov-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/lungenfunktion-messplatz",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-frc"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-lungenfunktion-frc-prov-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-lungenfunktion-frc-prov-1</b></p><a name=\"mii-exa-test-data-lungenfunktion-frc-prov-1\"> </a><a name=\"hcmii-exa-test-data-lungenfunktion-frc-prov-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/lungenfunktion-messplatz\">https://www.charite.de/fhir/lungenfunktion-messplatz</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-frc\">MII PR Lungenfunktion FRC</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category procedure}\">Procedure</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 65825000}, {http://loinc.org 19846-5}\">Functional residual capacity (observable entity)</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-lungenfunktion-patient-1.html\">Luise Atemwald  Female, DoB: 1972-06-30 ( https://www.charite.de/fhir/sid/patientenidentifikation#LUFU-TEST-001)</a></p><p><b>issued</b>: 2025-02-18 12:00:00+0100</p><p><b>value</b>: 3.6 L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL = 'L')</span></p><p><b>interpretation</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation H}\">High</span></p><p><b>method</b>: <span title=\"Codes:{http://snomed.info/sct 249862003}\">Sitting upright (finding)</span></p></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "procedure"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+          "code" : "65825000",
+          "display" : "Functional residual capacity (observable entity)"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "19846-5",
+          "display" : "Functional residual capacity by Plethysmograph body box"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-lungenfunktion-patient-1"
+      },
+      "issued" : "2025-02-18T12:00:00+01:00",
+      "valueQuantity" : {
+        "value" : 3.6,
+        "unit" : "L",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "L"
+      },
+      "interpretation" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code" : "H",
+          "display" : "High"
+        }]
+      }],
+      "method" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+          "code" : "249862003",
+          "display" : "Sitting upright (finding)"
+        }]
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-lungenfunktion-frc-prov-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-lungenfunktion-dosis-schwellwert-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-lungenfunktion-dosis-schwellwert-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/lungenfunktion-messplatz",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-dosis"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-lungenfunktion-dosis-schwellwert-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-lungenfunktion-dosis-schwellwert-1</b></p><a name=\"mii-exa-test-data-lungenfunktion-dosis-schwellwert-1\"> </a><a name=\"hcmii-exa-test-data-lungenfunktion-dosis-schwellwert-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/lungenfunktion-messplatz\">https://www.charite.de/fhir/lungenfunktion-messplatz</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-dosis\">MII PR Lungenfunktion Dosis</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>partOf</b>: <a href=\"MedicationAdministration-mii-exa-test-data-lungenfunktion-dosis-gabe-2.html\">MedicationAdministration: identifier = https://www.charite.de/fhir/sid/MedicationAdministrations#lufu-dosis-gabe-2; status = completed; category = Inpatient; medication[x] = -&gt;Medication Provokit® 0,33%; effective[x] = 2025-02-18 11:25:00+0100; reasonCode = Methacholine challenge (procedure); note = Abbruchdosis: PD20 erreicht (FEV1-Abfall 26 %).</a></p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category procedure}\">Procedure</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 1376040001}, {http://loinc.org 65866-6}\">Dose of methacholine to achieve maximal drop of forced expired volume in 1 second (observable entity)</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-lungenfunktion-patient-1.html\">Luise Atemwald  Female, DoB: 1972-06-30 ( https://www.charite.de/fhir/sid/patientenidentifikation#LUFU-TEST-001)</a></p><p><b>issued</b>: 2025-02-18 12:00:00+0100</p><p><b>value</b>: 0.3 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span></p><p><b>interpretation</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation A}\">Abnormal</span></p></div>"
+      },
+      "partOf" : [{
+        "reference" : "MedicationAdministration/mii-exa-test-data-lungenfunktion-dosis-gabe-2"
+      }],
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "procedure"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+          "code" : "1376040001",
+          "display" : "Dose of methacholine to achieve maximal drop of forced expired volume in 1 second (observable entity)"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "65866-6",
+          "display" : "Methacholine [Mass] of Dose"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-lungenfunktion-patient-1"
+      },
+      "issued" : "2025-02-18T12:00:00+01:00",
+      "valueQuantity" : {
+        "value" : 0.3,
+        "unit" : "mg",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "mg"
+      },
+      "interpretation" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code" : "A",
+          "display" : "Abnormal"
+        }]
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-lungenfunktion-dosis-schwellwert-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-lungenfunktion-dosis-kumuliert-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-lungenfunktion-dosis-kumuliert-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/lungenfunktion-messplatz",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-dosis"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-lungenfunktion-dosis-kumuliert-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-lungenfunktion-dosis-kumuliert-1</b></p><a name=\"mii-exa-test-data-lungenfunktion-dosis-kumuliert-1\"> </a><a name=\"hcmii-exa-test-data-lungenfunktion-dosis-kumuliert-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/lungenfunktion-messplatz\">https://www.charite.de/fhir/lungenfunktion-messplatz</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-dosis\">MII PR Lungenfunktion Dosis</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>partOf</b>: <a href=\"MedicationAdministration-mii-exa-test-data-lungenfunktion-dosis-gabe-2.html\">MedicationAdministration: identifier = https://www.charite.de/fhir/sid/MedicationAdministrations#lufu-dosis-gabe-2; status = completed; category = Inpatient; medication[x] = -&gt;Medication Provokit® 0,33%; effective[x] = 2025-02-18 11:25:00+0100; reasonCode = Methacholine challenge (procedure); note = Abbruchdosis: PD20 erreicht (FEV1-Abfall 26 %).</a></p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category procedure}\">Procedure</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 1376040001}, {http://loinc.org 65866-6}\">Dose of methacholine to achieve maximal drop of forced expired volume in 1 second (observable entity)</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-lungenfunktion-patient-1.html\">Luise Atemwald  Female, DoB: 1972-06-30 ( https://www.charite.de/fhir/sid/patientenidentifikation#LUFU-TEST-001)</a></p><p><b>issued</b>: 2025-02-18 12:00:00+0100</p><p><b>value</b>: 0.34 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span></p><p><b>interpretation</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation A}\">Abnormal</span></p></div>"
+      },
+      "partOf" : [{
+        "reference" : "MedicationAdministration/mii-exa-test-data-lungenfunktion-dosis-gabe-2"
+      }],
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "procedure"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+          "code" : "1376040001",
+          "display" : "Dose of methacholine to achieve maximal drop of forced expired volume in 1 second (observable entity)"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "65866-6",
+          "display" : "Methacholine [Mass] of Dose"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-lungenfunktion-patient-1"
+      },
+      "issued" : "2025-02-18T12:00:00+01:00",
+      "valueQuantity" : {
+        "value" : 0.34,
+        "unit" : "mg",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "mg"
+      },
+      "interpretation" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code" : "A",
+          "display" : "Abnormal"
+        }]
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-lungenfunktion-dosis-kumuliert-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-lungenfunktion-co2-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-lungenfunktion-co2-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/lungenfunktion-messplatz",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-co2-konzentration"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-lungenfunktion-co2-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-lungenfunktion-co2-1</b></p><a name=\"mii-exa-test-data-lungenfunktion-co2-1\"> </a><a name=\"hcmii-exa-test-data-lungenfunktion-co2-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/lungenfunktion-messplatz\">https://www.charite.de/fhir/lungenfunktion-messplatz</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-co2-konzentration\">MII PR Lungenfunktion CO2 Konzentration</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category social-history}\">Social History</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 250780004}\">Carbon dioxide concentration (observable entity)</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-lungenfunktion-patient-1.html\">Luise Atemwald  Female, DoB: 1972-06-30 ( https://www.charite.de/fhir/sid/patientenidentifikation#LUFU-TEST-001)</a></p><p><b>focus</b>: <a href=\"Location-mii-exa-test-data-lungenfunktion-umgebung-1.html\">Location Lungenfunktionslabor 2, Charite Campus Mitte</a></p><p><b>issued</b>: 2025-02-18 12:00:00+0100</p><p><b>value</b>: 0.05 %<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code% = '%')</span></p><p><b>interpretation</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}\">Normal</span></p></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "social-history"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+          "code" : "250780004",
+          "display" : "Carbon dioxide concentration (observable entity)"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-lungenfunktion-patient-1"
+      },
+      "focus" : [{
+        "reference" : "Location/mii-exa-test-data-lungenfunktion-umgebung-1"
+      }],
+      "issued" : "2025-02-18T12:00:00+01:00",
+      "valueQuantity" : {
+        "value" : 0.05,
+        "unit" : "%",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "%"
+      },
+      "interpretation" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code" : "N",
+          "display" : "Normal"
+        }]
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-lungenfunktion-co2-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-lungenfunktion-lufttemperatur-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-lungenfunktion-lufttemperatur-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/lungenfunktion-messplatz",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-lufttemperatur"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-lungenfunktion-lufttemperatur-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-lungenfunktion-lufttemperatur-1</b></p><a name=\"mii-exa-test-data-lungenfunktion-lufttemperatur-1\"> </a><a name=\"hcmii-exa-test-data-lungenfunktion-lufttemperatur-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/lungenfunktion-messplatz\">https://www.charite.de/fhir/lungenfunktion-messplatz</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-lufttemperatur\">MII PR Lungenfunktion Lufttemperatur</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category social-history}\">Social History</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 250825003}\">Ambient temperature (observable entity)</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-lungenfunktion-patient-1.html\">Luise Atemwald  Female, DoB: 1972-06-30 ( https://www.charite.de/fhir/sid/patientenidentifikation#LUFU-TEST-001)</a></p><p><b>focus</b>: <a href=\"Location-mii-exa-test-data-lungenfunktion-umgebung-1.html\">Location Lungenfunktionslabor 2, Charite Campus Mitte</a></p><p><b>issued</b>: 2025-02-18 12:00:00+0100</p><p><b>value</b>: 21.5 Cel<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeCel = 'Cel')</span></p><p><b>interpretation</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}\">Normal</span></p></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "social-history"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+          "code" : "250825003",
+          "display" : "Ambient temperature (observable entity)"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-lungenfunktion-patient-1"
+      },
+      "focus" : [{
+        "reference" : "Location/mii-exa-test-data-lungenfunktion-umgebung-1"
+      }],
+      "issued" : "2025-02-18T12:00:00+01:00",
+      "valueQuantity" : {
+        "value" : 21.5,
+        "unit" : "Cel",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "Cel"
+      },
+      "interpretation" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code" : "N",
+          "display" : "Normal"
+        }]
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-lungenfunktion-lufttemperatur-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-lungenfunktion-luftfeuchtigkeit-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-lungenfunktion-luftfeuchtigkeit-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/lungenfunktion-messplatz",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-luftfeuchtigkeit"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-lungenfunktion-luftfeuchtigkeit-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-lungenfunktion-luftfeuchtigkeit-1</b></p><a name=\"mii-exa-test-data-lungenfunktion-luftfeuchtigkeit-1\"> </a><a name=\"hcmii-exa-test-data-lungenfunktion-luftfeuchtigkeit-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/lungenfunktion-messplatz\">https://www.charite.de/fhir/lungenfunktion-messplatz</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-luftfeuchtigkeit\">MII PR Lungenfunktion Luftfeuchtigkeit</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category social-history}\">Social History</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 3525006}\">Humidity (physical force)</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-lungenfunktion-patient-1.html\">Luise Atemwald  Female, DoB: 1972-06-30 ( https://www.charite.de/fhir/sid/patientenidentifikation#LUFU-TEST-001)</a></p><p><b>focus</b>: <a href=\"Location-mii-exa-test-data-lungenfunktion-umgebung-1.html\">Location Lungenfunktionslabor 2, Charite Campus Mitte</a></p><p><b>issued</b>: 2025-02-18 12:00:00+0100</p><p><b>value</b>: 45 %<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code% = '%')</span></p><p><b>interpretation</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}\">Normal</span></p></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "social-history"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+          "code" : "3525006",
+          "display" : "Humidity (physical force)"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-lungenfunktion-patient-1"
+      },
+      "focus" : [{
+        "reference" : "Location/mii-exa-test-data-lungenfunktion-umgebung-1"
+      }],
+      "issued" : "2025-02-18T12:00:00+01:00",
+      "valueQuantity" : {
+        "value" : 45,
+        "unit" : "%",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "%"
+      },
+      "interpretation" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code" : "N",
+          "display" : "Normal"
+        }]
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-lungenfunktion-luftfeuchtigkeit-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-lungenfunktion-gewicht-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-lungenfunktion-gewicht-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/lungenfunktion-messplatz",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-gewicht"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-lungenfunktion-gewicht-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-lungenfunktion-gewicht-1</b></p><a name=\"mii-exa-test-data-lungenfunktion-gewicht-1\"> </a><a name=\"hcmii-exa-test-data-lungenfunktion-gewicht-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/lungenfunktion-messplatz\">https://www.charite.de/fhir/lungenfunktion-messplatz</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-gewicht\">MII PR Lungenfunktion Gewicht</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>partOf</b>: <a href=\"Procedure-mii-exa-test-data-lungenfunktion-bodyplethysmographie-messung-1.html\">Procedure Total body plethysmography (procedure)</a></p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category procedure}\">Procedure</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 27113001}, {http://loinc.org 29463-7}\">Body weight (observable entity)</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-lungenfunktion-patient-1.html\">Luise Atemwald  Female, DoB: 1972-06-30 ( https://www.charite.de/fhir/sid/patientenidentifikation#LUFU-TEST-001)</a></p><p><b>issued</b>: 2025-02-18 12:00:00+0100</p><p><b>value</b>: 68 ug<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeug = 'ug')</span></p><p><b>interpretation</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}\">Normal</span></p><p><b>method</b>: <span title=\"Codes:{http://snomed.info/sct 39857003}\">Weighing patient (procedure)</span></p></div>"
+      },
+      "partOf" : [{
+        "reference" : "Procedure/mii-exa-test-data-lungenfunktion-bodyplethysmographie-messung-1"
+      }],
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "procedure"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+          "code" : "27113001",
+          "display" : "Body weight (observable entity)"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "29463-7",
+          "display" : "Body weight"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-lungenfunktion-patient-1"
+      },
+      "issued" : "2025-02-18T12:00:00+01:00",
+      "valueQuantity" : {
+        "value" : 68,
+        "unit" : "ug",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "ug"
+      },
+      "interpretation" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code" : "N",
+          "display" : "Normal"
+        }]
+      }],
+      "method" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "39857003",
+          "display" : "Weighing patient (procedure)"
+        }]
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-lungenfunktion-gewicht-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Medication/mii-exa-test-data-lungenfunktion-methacholine-1",
+    "resource" : {
+      "resourceType" : "Medication",
+      "id" : "mii-exa-test-data-lungenfunktion-methacholine-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/lungenfunktion-messplatz",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-methacholine"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Medication_mii-exa-test-data-lungenfunktion-methacholine-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Medication mii-exa-test-data-lungenfunktion-methacholine-1</b></p><a name=\"mii-exa-test-data-lungenfunktion-methacholine-1\"> </a><a name=\"hcmii-exa-test-data-lungenfunktion-methacholine-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/lungenfunktion-messplatz\">https://www.charite.de/fhir/lungenfunktion-messplatz</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-methacholine\">MII PR Lungenfunktion Methacholine</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>code</b>: <span title=\"Codes:{http://fhir.de/CodeSystem/ifa/pzn 00171345}, {http://fhir.de/CodeSystem/bfarm/atc V04CX03}\">Methacholinchlorid 0,33% Loesung zur Inhalation (Provokit)</span></p><p><b>form</b>: <span title=\"Codes:{http://standardterms.edqm.eu 11101000}\">Loesung fuer einen Vernebler</span></p><blockquote><p><b>ingredient</b></p><p><b>MII EX Medikation Wirkstofftyp</b>: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/wirkstofftyp#mii-cs-medikation-wirkstofftyp-IN\">MII CS Medikation Wirkstofftyp: IN</a> (ingredient)</p><blockquote><p><b>MII EX Medikation Wirkstoffrelation</b></p><ul><li>ingredientUri: <a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\">http://snomed.info/sct#109196007</a></li></ul></blockquote><p><b>item</b>: <span title=\"Codes:{http://snomed.info/sct 109196007}\">Methacholinchlorid</span></p><p><b>isActive</b>: true</p><p><b>strength</b>: 33 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span>/10 ml<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeml = 'ml')</span></p></blockquote><blockquote><p><b>ingredient</b></p><p><b>MII EX Medikation Wirkstofftyp</b>: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/wirkstofftyp#mii-cs-medikation-wirkstofftyp-IN\">MII CS Medikation Wirkstofftyp: IN</a> (ingredient)</p><blockquote><p><b>MII EX Medikation Wirkstoffrelation</b></p><ul><li>ingredientUri: <a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\">http://snomed.info/sct#11713004</a></li></ul></blockquote><p><b>item</b>: <span title=\"Codes:{http://snomed.info/sct 11713004}\">Wasser fuer Injektionszwecke</span></p><p><b>isActive</b>: false</p></blockquote></div>"
+      },
+      "code" : {
+        "coding" : [{
+          "system" : "http://fhir.de/CodeSystem/ifa/pzn",
+          "code" : "00171345",
+          "display" : "Provokit® 0,33%"
+        },
+        {
+          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
+          "version" : "2026",
+          "code" : "V04CX03",
+          "display" : "Methacholin"
+        }],
+        "text" : "Methacholinchlorid 0,33% Loesung zur Inhalation (Provokit)"
+      },
+      "form" : {
+        "coding" : [{
+          "system" : "http://standardterms.edqm.eu",
+          "code" : "11101000",
+          "display" : "Nebuliser solution"
+        }],
+        "text" : "Loesung fuer einen Vernebler"
+      },
+      "ingredient" : [{
+        "extension" : [{
+          "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstofftyp",
+          "valueCoding" : {
+            "system" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/wirkstofftyp",
+            "code" : "IN",
+            "display" : "ingredient"
+          }
+        },
+        {
+          "extension" : [{
+            "url" : "ingredientUri",
+            "valueUri" : "http://snomed.info/sct#109196007"
+          }],
+          "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstoffrelation"
+        }],
+        "itemCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+            "code" : "109196007",
+            "display" : "Methacholine chloride (substance)"
+          }],
+          "text" : "Methacholinchlorid"
+        },
+        "isActive" : true,
+        "strength" : {
+          "numerator" : {
+            "value" : 33,
+            "unit" : "mg",
+            "system" : "http://unitsofmeasure.org",
+            "code" : "mg"
+          },
+          "denominator" : {
+            "value" : 10,
+            "unit" : "ml",
+            "system" : "http://unitsofmeasure.org",
+            "code" : "ml"
+          }
+        }
+      },
+      {
+        "extension" : [{
+          "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstofftyp",
+          "valueCoding" : {
+            "system" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/wirkstofftyp",
+            "code" : "IN",
+            "display" : "ingredient"
+          }
+        },
+        {
+          "extension" : [{
+            "url" : "ingredientUri",
+            "valueUri" : "http://snomed.info/sct#11713004"
+          }],
+          "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstoffrelation"
+        }],
+        "itemCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+            "code" : "11713004",
+            "display" : "Water (substance)"
+          }],
+          "text" : "Wasser fuer Injektionszwecke"
+        },
+        "isActive" : false
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Medication/mii-exa-test-data-lungenfunktion-methacholine-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/MedicationAdministration/mii-exa-test-data-lungenfunktion-dosis-gabe-1",
+    "resource" : {
+      "resourceType" : "MedicationAdministration",
+      "id" : "mii-exa-test-data-lungenfunktion-dosis-gabe-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/lungenfunktion-messplatz",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-dosis-gabe"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"MedicationAdministration_mii-exa-test-data-lungenfunktion-dosis-gabe-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: MedicationAdministration mii-exa-test-data-lungenfunktion-dosis-gabe-1</b></p><a name=\"mii-exa-test-data-lungenfunktion-dosis-gabe-1\"> </a><a name=\"hcmii-exa-test-data-lungenfunktion-dosis-gabe-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/lungenfunktion-messplatz\">https://www.charite.de/fhir/lungenfunktion-messplatz</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-dosis-gabe\">MII PR Lungenfunktion Dosisgabe</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>identifier</b>: <code>https://www.charite.de/fhir/sid/MedicationAdministrations</code>/lufu-dosis-gabe-1</p><p><b>partOf</b>: <a href=\"Procedure-mii-exa-test-data-lungenfunktion-provokationstest-messung-1.html\">Procedure Methacholine challenge (procedure)</a></p><p><b>status</b>: Completed</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/medication-admin-category inpatient}\">Inpatient</span></p><p><b>medication</b>: <a href=\"Medication-mii-exa-test-data-lungenfunktion-methacholine-1.html\">Medication Provokit® 0,33%</a></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-lungenfunktion-patient-1.html\">Luise Atemwald  Female, DoB: 1972-06-30 ( https://www.charite.de/fhir/sid/patientenidentifikation#LUFU-TEST-001)</a></p><p><b>context</b>: <a href=\"Encounter-mii-exa-test-data-lungenfunktion-encounter-1.html\">Encounter: status = finished; class = ambulatory (ActCode#AMB); period = 2025-02-18 08:30:00+0100 --&gt; 2025-02-18 12:30:00+0100</a></p><p><b>effective</b>: 2025-02-18 11:05:00+0100</p><h3>Performers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Actor</b></td></tr><tr><td style=\"display: none\">*</td><td>MTA Lungenfunktionslabor</td></tr></table><p><b>reasonCode</b>: <span title=\"Codes:{http://snomed.info/sct 252520007}\">Methacholine challenge (procedure)</span></p><p><b>request</b>: <a href=\"MedicationRequest-mii-exa-test-data-lungenfunktion-methacholine-anordnung-1.html\">MedicationRequest: status = completed; intent = order; medication[x] = -&gt;Medication Provokit® 0,33%; authoredOn = 2025-02-18 10:50:00+0100</a></p><p><b>note</b>: </p><blockquote><div><p>Erste Dosisstufe des Provokationsprotokolls.</p>\n</div></blockquote><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td><td><b>Site</b></td><td><b>Route</b></td><td><b>Dose</b></td><td><b>Rate[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>0,04 mg Methacholin inhalativ ueber Dosimeter-Vernebler</td><td><span title=\"Codes:{http://snomed.info/sct 123851003}\">Mouth region structure (body structure)</span></td><td><span title=\"Codes:{http://snomed.info/sct 447694001}\">Respiratory tract route (qualifier value)</span></td><td>0.04 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span></td><td>0.5 mL/min<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemL/min = 'mL/min')</span></td></tr></table></div>"
+      },
+      "identifier" : [{
+        "system" : "https://www.charite.de/fhir/sid/MedicationAdministrations",
+        "value" : "lufu-dosis-gabe-1"
+      }],
+      "partOf" : [{
+        "reference" : "Procedure/mii-exa-test-data-lungenfunktion-provokationstest-messung-1"
+      }],
+      "status" : "completed",
+      "category" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/medication-admin-category",
+          "code" : "inpatient"
+        }]
+      },
+      "medicationReference" : {
+        "reference" : "Medication/mii-exa-test-data-lungenfunktion-methacholine-1"
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-lungenfunktion-patient-1"
+      },
+      "context" : {
+        "reference" : "Encounter/mii-exa-test-data-lungenfunktion-encounter-1"
+      },
+      "effectiveDateTime" : "2025-02-18T11:05:00+01:00",
+      "performer" : [{
+        "actor" : {
+          "display" : "MTA Lungenfunktionslabor"
+        }
+      }],
+      "reasonCode" : [{
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "252520007",
+          "display" : "Methacholine challenge (procedure)"
+        }]
+      }],
+      "request" : {
+        "reference" : "MedicationRequest/mii-exa-test-data-lungenfunktion-methacholine-anordnung-1"
+      },
+      "note" : [{
+        "text" : "Erste Dosisstufe des Provokationsprotokolls."
+      }],
+      "dosage" : {
+        "text" : "0,04 mg Methacholin inhalativ ueber Dosimeter-Vernebler",
+        "site" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "123851003",
+            "display" : "Mouth region structure (body structure)"
+          }]
+        },
+        "route" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "447694001",
+            "display" : "Respiratory tract route (qualifier value)"
+          }]
+        },
+        "dose" : {
+          "value" : 0.04,
+          "unit" : "mg",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "mg"
+        },
+        "rateQuantity" : {
+          "value" : 0.5,
+          "unit" : "mL/min",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "mL/min"
+        }
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "MedicationAdministration/mii-exa-test-data-lungenfunktion-dosis-gabe-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/MedicationAdministration/mii-exa-test-data-lungenfunktion-dosis-gabe-2",
+    "resource" : {
+      "resourceType" : "MedicationAdministration",
+      "id" : "mii-exa-test-data-lungenfunktion-dosis-gabe-2",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/lungenfunktion-messplatz",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-dosis-gabe"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"MedicationAdministration_mii-exa-test-data-lungenfunktion-dosis-gabe-2\"> </a><p class=\"res-header-id\"><b>Generated Narrative: MedicationAdministration mii-exa-test-data-lungenfunktion-dosis-gabe-2</b></p><a name=\"mii-exa-test-data-lungenfunktion-dosis-gabe-2\"> </a><a name=\"hcmii-exa-test-data-lungenfunktion-dosis-gabe-2\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/lungenfunktion-messplatz\">https://www.charite.de/fhir/lungenfunktion-messplatz</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-dosis-gabe\">MII PR Lungenfunktion Dosisgabe</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>identifier</b>: <code>https://www.charite.de/fhir/sid/MedicationAdministrations</code>/lufu-dosis-gabe-2</p><p><b>partOf</b>: </p><ul><li><a href=\"Procedure-mii-exa-test-data-lungenfunktion-provokationstest-messung-1.html\">Procedure Methacholine challenge (procedure)</a></li><li><a href=\"MedicationAdministration-mii-exa-test-data-lungenfunktion-dosis-gabe-1.html\">MedicationAdministration: identifier = https://www.charite.de/fhir/sid/MedicationAdministrations#lufu-dosis-gabe-1; status = completed; category = Inpatient; medication[x] = -&gt;Medication Provokit® 0,33%; effective[x] = 2025-02-18 11:05:00+0100; reasonCode = Methacholine challenge (procedure); note = Erste Dosisstufe des Provokationsprotokolls.</a></li></ul><p><b>status</b>: Completed</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/medication-admin-category inpatient}\">Inpatient</span></p><p><b>medication</b>: <a href=\"Medication-mii-exa-test-data-lungenfunktion-methacholine-1.html\">Medication Provokit® 0,33%</a></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-lungenfunktion-patient-1.html\">Luise Atemwald  Female, DoB: 1972-06-30 ( https://www.charite.de/fhir/sid/patientenidentifikation#LUFU-TEST-001)</a></p><p><b>context</b>: <a href=\"Encounter-mii-exa-test-data-lungenfunktion-encounter-1.html\">Encounter: status = finished; class = ambulatory (ActCode#AMB); period = 2025-02-18 08:30:00+0100 --&gt; 2025-02-18 12:30:00+0100</a></p><p><b>effective</b>: 2025-02-18 11:25:00+0100</p><h3>Performers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Actor</b></td></tr><tr><td style=\"display: none\">*</td><td>MTA Lungenfunktionslabor</td></tr></table><p><b>reasonCode</b>: <span title=\"Codes:{http://snomed.info/sct 252520007}\">Methacholine challenge (procedure)</span></p><p><b>request</b>: <a href=\"MedicationRequest-mii-exa-test-data-lungenfunktion-methacholine-anordnung-1.html\">MedicationRequest: status = completed; intent = order; medication[x] = -&gt;Medication Provokit® 0,33%; authoredOn = 2025-02-18 10:50:00+0100</a></p><p><b>note</b>: </p><blockquote><div><p>Abbruchdosis: PD20 erreicht (FEV1-Abfall 26 %).</p>\n</div></blockquote><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td><td><b>Site</b></td><td><b>Route</b></td><td><b>Dose</b></td><td><b>Rate[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>0,30 mg Methacholin inhalativ ueber Dosimeter-Vernebler (Abbruchdosis)</td><td><span title=\"Codes:{http://snomed.info/sct 123851003}\">Mouth region structure (body structure)</span></td><td><span title=\"Codes:{http://snomed.info/sct 447694001}\">Respiratory tract route (qualifier value)</span></td><td>0.3 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span></td><td>0.3 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span>/2 min<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemin = 'min')</span></td></tr></table></div>"
+      },
+      "identifier" : [{
+        "system" : "https://www.charite.de/fhir/sid/MedicationAdministrations",
+        "value" : "lufu-dosis-gabe-2"
+      }],
+      "partOf" : [{
+        "reference" : "Procedure/mii-exa-test-data-lungenfunktion-provokationstest-messung-1"
+      },
+      {
+        "reference" : "MedicationAdministration/mii-exa-test-data-lungenfunktion-dosis-gabe-1"
+      }],
+      "status" : "completed",
+      "category" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/medication-admin-category",
+          "code" : "inpatient"
+        }]
+      },
+      "medicationReference" : {
+        "reference" : "Medication/mii-exa-test-data-lungenfunktion-methacholine-1"
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-lungenfunktion-patient-1"
+      },
+      "context" : {
+        "reference" : "Encounter/mii-exa-test-data-lungenfunktion-encounter-1"
+      },
+      "effectiveDateTime" : "2025-02-18T11:25:00+01:00",
+      "performer" : [{
+        "actor" : {
+          "display" : "MTA Lungenfunktionslabor"
+        }
+      }],
+      "reasonCode" : [{
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "252520007",
+          "display" : "Methacholine challenge (procedure)"
+        }]
+      }],
+      "request" : {
+        "reference" : "MedicationRequest/mii-exa-test-data-lungenfunktion-methacholine-anordnung-1"
+      },
+      "note" : [{
+        "text" : "Abbruchdosis: PD20 erreicht (FEV1-Abfall 26 %)."
+      }],
+      "dosage" : {
+        "text" : "0,30 mg Methacholin inhalativ ueber Dosimeter-Vernebler (Abbruchdosis)",
+        "site" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "123851003",
+            "display" : "Mouth region structure (body structure)"
+          }]
+        },
+        "route" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "447694001",
+            "display" : "Respiratory tract route (qualifier value)"
+          }]
+        },
+        "dose" : {
+          "value" : 0.3,
+          "unit" : "mg",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "mg"
+        },
+        "rateRatio" : {
+          "numerator" : {
+            "value" : 0.3,
+            "unit" : "mg",
+            "system" : "http://unitsofmeasure.org",
+            "code" : "mg"
+          },
+          "denominator" : {
+            "value" : 2,
+            "unit" : "min",
+            "system" : "http://unitsofmeasure.org",
+            "code" : "min"
+          }
+        }
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "MedicationAdministration/mii-exa-test-data-lungenfunktion-dosis-gabe-2"
+    }
+  }]
+}
+
+```

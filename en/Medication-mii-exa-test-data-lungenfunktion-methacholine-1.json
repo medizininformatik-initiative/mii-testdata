@@ -1,0 +1,108 @@
+{
+  "resourceType" : "Medication",
+  "id" : "mii-exa-test-data-lungenfunktion-methacholine-1",
+  "meta" : {
+    "source" : "https://www.charite.de/fhir/lungenfunktion-messplatz",
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-methacholine"],
+    "security" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "code" : "HTEST",
+      "display" : "test health data"
+    }]
+  },
+  "language" : "en",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Medication mii-exa-test-data-lungenfunktion-methacholine-1</b></p><a name=\"mii-exa-test-data-lungenfunktion-methacholine-1\"> </a><a name=\"hcmii-exa-test-data-lungenfunktion-methacholine-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/lungenfunktion-messplatz\">https://www.charite.de/fhir/lungenfunktion-messplatz</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-methacholine\">MII PR Lungenfunktion Methacholine</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>code</b>: <span title=\"Codes:{http://fhir.de/CodeSystem/ifa/pzn 00171345}, {http://fhir.de/CodeSystem/bfarm/atc V04CX03}\">Methacholinchlorid 0,33% Loesung zur Inhalation (Provokit)</span></p><p><b>form</b>: <span title=\"Codes:{http://standardterms.edqm.eu 11101000}\">Loesung fuer einen Vernebler</span></p><blockquote><p><b>ingredient</b></p><p><b>MII EX Medikation Wirkstofftyp</b>: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/wirkstofftyp#mii-cs-medikation-wirkstofftyp-IN\">MII CS Medikation Wirkstofftyp: IN</a> (ingredient)</p><blockquote><p><b>MII EX Medikation Wirkstoffrelation</b></p><ul><li>ingredientUri: <a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\">http://snomed.info/sct#109196007</a></li></ul></blockquote><p><b>item</b>: <span title=\"Codes:{http://snomed.info/sct 109196007}\">Methacholinchlorid</span></p><p><b>isActive</b>: true</p><p><b>strength</b>: 33 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span>/10 ml<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeml = 'ml')</span></p></blockquote><blockquote><p><b>ingredient</b></p><p><b>MII EX Medikation Wirkstofftyp</b>: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/wirkstofftyp#mii-cs-medikation-wirkstofftyp-IN\">MII CS Medikation Wirkstofftyp: IN</a> (ingredient)</p><blockquote><p><b>MII EX Medikation Wirkstoffrelation</b></p><ul><li>ingredientUri: <a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\">http://snomed.info/sct#11713004</a></li></ul></blockquote><p><b>item</b>: <span title=\"Codes:{http://snomed.info/sct 11713004}\">Wasser fuer Injektionszwecke</span></p><p><b>isActive</b>: false</p></blockquote></div>"
+  },
+  "code" : {
+    "coding" : [{
+      "system" : "http://fhir.de/CodeSystem/ifa/pzn",
+      "code" : "00171345",
+      "display" : "Provokit® 0,33%"
+    },
+    {
+      "system" : "http://fhir.de/CodeSystem/bfarm/atc",
+      "version" : "2026",
+      "code" : "V04CX03",
+      "display" : "Methacholin"
+    }],
+    "text" : "Methacholinchlorid 0,33% Loesung zur Inhalation (Provokit)"
+  },
+  "form" : {
+    "coding" : [{
+      "system" : "http://standardterms.edqm.eu",
+      "code" : "11101000",
+      "display" : "Nebuliser solution"
+    }],
+    "text" : "Loesung fuer einen Vernebler"
+  },
+  "ingredient" : [{
+    "extension" : [{
+      "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstofftyp",
+      "valueCoding" : {
+        "system" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/wirkstofftyp",
+        "code" : "IN",
+        "display" : "ingredient"
+      }
+    },
+    {
+      "extension" : [{
+        "url" : "ingredientUri",
+        "valueUri" : "http://snomed.info/sct#109196007"
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstoffrelation"
+    }],
+    "itemCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+        "code" : "109196007",
+        "display" : "Methacholine chloride (substance)"
+      }],
+      "text" : "Methacholinchlorid"
+    },
+    "isActive" : true,
+    "strength" : {
+      "numerator" : {
+        "value" : 33,
+        "unit" : "mg",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "mg"
+      },
+      "denominator" : {
+        "value" : 10,
+        "unit" : "ml",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "ml"
+      }
+    }
+  },
+  {
+    "extension" : [{
+      "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstofftyp",
+      "valueCoding" : {
+        "system" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/wirkstofftyp",
+        "code" : "IN",
+        "display" : "ingredient"
+      }
+    },
+    {
+      "extension" : [{
+        "url" : "ingredientUri",
+        "valueUri" : "http://snomed.info/sct#11713004"
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstoffrelation"
+    }],
+    "itemCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+        "code" : "11713004",
+        "display" : "Water (substance)"
+      }],
+      "text" : "Wasser fuer Injektionszwecke"
+    },
+    "isActive" : false
+  }]
+}

@@ -1,0 +1,100 @@
+{
+  "resourceType" : "EvidenceVariable",
+  "id" : "mii-exa-test-data-studien-kriterium-1",
+  "meta" : {
+    "source" : "https://www.charite.de/fhir/kds-testdata",
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-studie/StructureDefinition/mii-pr-studie-ein-auschluss-kriterium"],
+    "security" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "code" : "HTEST",
+      "display" : "test health data"
+    }]
+  },
+  "language" : "en",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: EvidenceVariable mii-exa-test-data-studien-kriterium-1</b></p><a name=\"mii-exa-test-data-studien-kriterium-1\"> </a><a name=\"hcmii-exa-test-data-studien-kriterium-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/modul-studie/StructureDefinition/mii-pr-studie-ein-auschluss-kriterium\">MII PR Studie EinAuschlussKriterium</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Active</p><blockquote><p><b>characteristic</b></p><p><b>MII EX Studie Backport linkId</b>: krit-alter</p><blockquote><p><b>MII EX Studie Backport DefinitionByTypeAndValue</b></p><ul><li>type: <span title=\"Codes:{http://snomed.info/sct 424144002}\">Current chronological age</span></li><li>value: &gt;=18 year<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codea = 'a')</span></li></ul></blockquote><p><b>description</b>: Alter mindestens 18 Jahre</p><p><b>definition</b>: <span title=\"Codes:{http://snomed.info/sct 424144002}\">Mindestalter</span></p><p><b>exclude</b>: false</p></blockquote><blockquote><p><b>characteristic</b></p><p><b>MII EX Studie Backport linkId</b>: krit-endokrin</p><p><b>description</b>: Gesicherte Diagnose einer endokrinen Erkrankung (z. B. Diabetes mellitus Typ 2)</p><p><b>definition</b>: <span title=\"Codes:{http://snomed.info/sct 44054006}\">Diabetes mellitus type 2 (disorder)</span></p><p><b>exclude</b>: false</p></blockquote><blockquote><p><b>characteristic</b></p><p><b>MII EX Studie Backport definitionCanonical</b>: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/EvidenceVariable/administrative-gender\">https://www.medizininformatik-initiative.de/fhir/EvidenceVariable/administrative-gender</a></p><p><b>description</b>: Geschlecht: alle</p><p><b>definition</b>: <span title=\"Codes:{http://snomed.info/sct 263495000}\">Alle</span></p><p><b>exclude</b>: false</p></blockquote><blockquote><p><b>characteristic</b></p><p><b>description</b>: Bestehende Schwangerschaft</p><p><b>definition</b>: <span title=\"Codes:{http://snomed.info/sct 77386006}\">Pregnancy (finding)</span></p><p><b>exclude</b>: true</p></blockquote></div>"
+  },
+  "status" : "active",
+  "characteristic" : [{
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-EvidenceVariable.characteristic.linkId",
+      "valueId" : "krit-alter"
+    },
+    {
+      "extension" : [{
+        "url" : "type",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "424144002",
+            "display" : "Current chronological age"
+          }]
+        }
+      },
+      {
+        "url" : "value",
+        "valueQuantity" : {
+          "value" : 18,
+          "comparator" : ">=",
+          "unit" : "year",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "a"
+        }
+      }],
+      "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-EvidenceVariable.characteristic.definitionByTypeAndValue"
+    }],
+    "description" : "Alter mindestens 18 Jahre",
+    "definitionCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "424144002",
+        "display" : "Current chronological age (observable entity)"
+      }],
+      "text" : "Mindestalter"
+    },
+    "exclude" : false
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-EvidenceVariable.characteristic.linkId",
+      "valueId" : "krit-endokrin"
+    }],
+    "description" : "Gesicherte Diagnose einer endokrinen Erkrankung (z. B. Diabetes mellitus Typ 2)",
+    "definitionCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "44054006",
+        "display" : "Diabetes mellitus type 2 (disorder)"
+      }]
+    },
+    "exclude" : false
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-EvidenceVariable.characteristic.definitionCanonical",
+      "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/EvidenceVariable/administrative-gender"
+    }],
+    "description" : "Geschlecht: alle",
+    "definitionCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "263495000",
+        "display" : "Gender (observable entity)"
+      }],
+      "text" : "Alle"
+    },
+    "exclude" : false
+  },
+  {
+    "description" : "Bestehende Schwangerschaft",
+    "definitionCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "77386006",
+        "display" : "Pregnancy (finding)"
+      }]
+    },
+    "exclude" : true
+  }]
+}

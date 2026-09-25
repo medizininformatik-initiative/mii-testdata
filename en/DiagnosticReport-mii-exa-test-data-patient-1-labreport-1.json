@@ -1,0 +1,120 @@
+{
+  "resourceType" : "DiagnosticReport",
+  "id" : "mii-exa-test-data-patient-1-labreport-1",
+  "meta" : {
+    "source" : "https://www.charite.de/fhir/kds-testdata",
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/DiagnosticReportLab"],
+    "security" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "code" : "HTEST",
+      "display" : "test health data"
+    }]
+  },
+  "language" : "en",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: DiagnosticReport mii-exa-test-data-patient-1-labreport-1</b></p><a name=\"mii-exa-test-data-patient-1-labreport-1\"> </a><a name=\"hcmii-exa-test-data-patient-1-labreport-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/DiagnosticReportLab\">MII PR Labor Laborbefund</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><h2><span title=\"Codes:{http://loinc.org 11502-2}\">Laboratory report</span> (<span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v2-0074 LAB}, {http://loinc.org 26436-6}\">Laboratory studies (set)</span>) </h2><table class=\"grid\"><tr><td>Subject</td><td>Christian Ludwig Markgraf von Brandenburg-Schwedt (official) Male, DoB: 1977-05-24 ( Medical record number)</td></tr><tr><td>Relevant Time</td><td>2024-02-15 12:00:00+0100</td></tr><tr><td>Reported</td><td>2024-02-15 12:00:00+0100</td></tr><tr><td>Performer</td><td> <a href=\"Organization-mii-exa-test-data-organization-labor-berlin.html\">Organization Labor Berlin – Charité Vivantes GmbH</a></td></tr><tr><td>Identifier</td><td> Filler Identifier/LDR_000001</td></tr></table><p><b>Report Details</b></p><table class=\"grid\"><tr><td><b>Code</b></td><td><b>Value</b></td><td><b>Reference Range</b></td><td><b>Flags</b></td><td><b>Note</b></td><td><b>Relevant Time</b></td></tr><tr><td><a href=\"Observation-mii-exa-test-data-patient-1-labobs-1.html\"><span title=\"Codes:{http://loinc.org 26464-8}\">Leukocytes [#/volume] in Blood</span></a></td><td>17 /nanoliter<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code/nL = '/nL')</span></td><td><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/referencerange-meaning normal}\">Normal Range</span>: 3.9 /nanoliter<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code/nL = '/nL')</span> - 10.5 /nanoliter<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code/nL = '/nL')</span> for <span title=\"Codes:{http://snomed.info/sct 248153007}\">Male (finding)</span>, Age 18-65 year</td><td>Final, <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation H}\">High</span></td><td><blockquote><div><p>Leukozyten EDTA-Blut Impedanzmessung</p>\n</div></blockquote></td><td>2024-02-15 12:00:00+0100</td></tr><tr><td><a href=\"Observation-mii-exa-test-data-patient-1-labobs-2.html\"><span title=\"Codes:{http://loinc.org 26453-1}\">Erythrocytes [#/volume] in Blood</span></a></td><td>5 /nanoLiters<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code/pL = '/pL')</span></td><td><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/referencerange-meaning normal}\">Normal Range</span>: 4.3 /picoliter<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code/pL = '/pL')</span> - 5.8 /picoliter<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code/pL = '/pL')</span> for <span title=\"Codes:{http://snomed.info/sct 248153007}\">Male (finding)</span>, Age 18-65 year</td><td>Final, <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}\">Normal</span></td><td><blockquote><div><p>Erythrozyten EDTA-Blut Impedanzmessung</p>\n</div></blockquote></td><td>2024-02-15 12:00:00+0100</td></tr><tr><td><a href=\"Observation-mii-exa-test-data-patient-1-labobs-3.html\"><span title=\"Codes:{http://loinc.org 20570-8}\">Hematocrit [Volume Fraction] of Blood by calculation</span></a></td><td>45 percent<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code% = '%')</span></td><td><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/referencerange-meaning normal}\">Normal Range</span>: 40 percent<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code% = '%')</span> - 51 percent<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code% = '%')</span> for <span title=\"Codes:{http://snomed.info/sct 248153007}\">Male (finding)</span>, Age 18-65 year</td><td>Final, <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}\">Normal</span></td><td><blockquote><div><p>Hämatokrit EDTA-Blut Impedanzmessung</p>\n</div></blockquote></td><td>2024-02-15 12:00:00+0100</td></tr><tr><td><a href=\"Observation-mii-exa-test-data-patient-1-labobs-4.html\"><span title=\"Codes:{http://loinc.org 718-7}\">Hemoglobin [Mass/volume] in Blood</span></a></td><td>45 gram per deciliter<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeg/dL = 'g/dL')</span></td><td><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/referencerange-meaning normal}\">Normal Range</span>: 13.5 gram per deciliter<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeg/dL = 'g/dL')</span> - 17 gram per deciliter<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeg/dL = 'g/dL')</span> for <span title=\"Codes:{http://snomed.info/sct 248153007}\">Male (finding)</span>, Age 18-65 year</td><td>Final, <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}\">Normal</span></td><td><blockquote><div><p>Hämoglobin EDTA-Blut Photometrie</p>\n</div></blockquote></td><td>2024-02-15 12:00:00+0100</td></tr><tr><td><a href=\"Observation-mii-exa-test-data-patient-1-labobs-5.html\"><span title=\"Codes:{http://loinc.org 26515-7}\">Platelets [#/volume] in Blood</span></a></td><td>355 /nanoliter<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code/nL = '/nL')</span></td><td><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/referencerange-meaning normal}\">Normal Range</span>: 150 /nanoliter<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code/nL = '/nL')</span> - 370 /nanoliter<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code/nL = '/nL')</span> for <span title=\"Codes:{http://snomed.info/sct 248153007}\">Male (finding)</span>, Age 18-65 year</td><td>Final, <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}\">Normal</span></td><td><blockquote><div><p>Thrombozyten EDTA-Blut Impedanzmessung</p>\n</div></blockquote></td><td>2024-02-15 12:00:00+0100</td></tr><tr><td><a href=\"Observation-mii-exa-test-data-patient-1-labobs-6.html\"><span title=\"Codes:{http://loinc.org 788-0}\">Erythrocyte distribution width [Entitic volume] by Automated count</span></a></td><td><span style=\"color: maroon\" title=\"Error\">Error: <b><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/data-absent-reason not-performed}\">Not Performed</span></b></span></td><td/><td>Final</td><td/><td>2024-02-15 12:00:00+0100</td></tr></table><p>Leukozyten hoch</p></div>"
+  },
+  "identifier" : [{
+    "type" : {
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+        "code" : "FILL"
+      }]
+    },
+    "system" : "https://www.charite.de/fhir/sid/lab-results",
+    "value" : "LDR_000001",
+    "assigner" : {
+      "identifier" : {
+        "system" : "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier",
+        "value" : "Charité"
+      }
+    }
+  }],
+  "basedOn" : [{
+    "reference" : "ServiceRequest/mii-exa-test-data-patient-1-labrequest-1",
+    "identifier" : {
+      "system" : "https://www.charite.de/fhir/sid/Laboranforderungen",
+      "value" : "LA_000001"
+    }
+  }],
+  "status" : "final",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v2-0074",
+      "code" : "LAB"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "26436-6",
+      "display" : "Laboratory studies (set)"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "11502-2",
+      "display" : "Laboratory report"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/mii-exa-test-data-patient-1",
+    "identifier" : {
+      "system" : "https://www.charite.de/fhir/sid/patientenidentifikation",
+      "value" : "808439625"
+    }
+  },
+  "encounter" : {
+    "reference" : "Encounter/mii-exa-test-data-patient-1-encounter-1",
+    "identifier" : {
+      "system" : "https://www.charite.de/fhir/NamingSystem/Aufnahmenummern",
+      "value" : "MII_0000001"
+    }
+  },
+  "effectiveDateTime" : "2024-02-15T12:00:00+01:00",
+  "_effectiveDateTime" : {
+    "extension" : [{
+      "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum",
+      "valueCoding" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "399445004",
+        "display" : "Specimen collection date (observable entity)"
+      }
+    }]
+  },
+  "issued" : "2024-02-15T12:00:00+01:00",
+  "performer" : [{
+    "reference" : "Organization/mii-exa-test-data-organization-labor-berlin",
+    "identifier" : {
+      "system" : "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier",
+      "value" : "Labor-Berlin"
+    }
+  }],
+  "specimen" : [{
+    "reference" : "https://www.medizininformatik-initiative.de/Specimen/mii-exa-test-data-patient-1-specimen-1",
+    "identifier" : {
+      "system" : "https://www.charite.de/fhir/sid/Bioproben",
+      "value" : "BP_000001"
+    },
+    "display" : "EDTA-Blut Patient 1"
+  }],
+  "result" : [{
+    "reference" : "Observation/mii-exa-test-data-patient-1-labobs-1"
+  },
+  {
+    "reference" : "Observation/mii-exa-test-data-patient-1-labobs-2"
+  },
+  {
+    "reference" : "Observation/mii-exa-test-data-patient-1-labobs-3"
+  },
+  {
+    "reference" : "Observation/mii-exa-test-data-patient-1-labobs-4"
+  },
+  {
+    "reference" : "Observation/mii-exa-test-data-patient-1-labobs-5"
+  },
+  {
+    "reference" : "Observation/mii-exa-test-data-patient-1-labobs-6"
+  }],
+  "conclusion" : "Leukozyten hoch"
+}

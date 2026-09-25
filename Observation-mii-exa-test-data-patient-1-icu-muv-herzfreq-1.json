@@ -1,0 +1,136 @@
+{
+  "resourceType" : "Observation",
+  "id" : "mii-exa-test-data-patient-1-icu-muv-herzfreq-1",
+  "meta" : {
+    "source" : "https://www.charite.de/fhir/kds-testdata",
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-herzfrequenz"],
+    "security" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "code" : "HTEST",
+      "display" : "test health data"
+    }]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-patient-1-icu-muv-herzfreq-1</b></p><a name=\"mii-exa-test-data-patient-1-icu-muv-herzfreq-1\"> </a><a name=\"hcmii-exa-test-data-patient-1-icu-muv-herzfreq-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-herzfrequenz\">MII PR ICU MUV Herzfrequenz</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>identifier</b>: <code>https://www.charite.de/fhir/sid/icu-observation-id</code>/icu-muv-herzfreq-1</p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 364075005}, {http://loinc.org 8867-4}, {urn:iso:std:iso:11073:10101 147842}\">Heart rate</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-icu-patient-1.html\">Kim Musterperson  Female, DoB: 1956-03-14 ( https://www.medizininformatik-initiative.de/fhir/sid/standort-b#ICU-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-icu-encounter-1.html\">Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2024-05-01 --&gt; 2024-05-14</a></p><p><b>effective</b>: 2024-05-05 08:00:00+0200</p><p><b>performer</b>: <a href=\"Practitioner-mii-exa-test-data-icu-practitioner-1.html\">Practitioner Katharina Weber </a></p><p><b>value</b>: 72 beats per minute<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code/min = '/min')</span></p><p><b>interpretation</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}\">Normal</span></p><p><b>bodySite</b>: <span title=\"Codes:{http://snomed.info/sct 80891009}\">Heart structure (body structure)</span></p><p><b>method</b>: <span title=\"Codes:{http://snomed.info/sct 29303009}\">Electrocardiographic procedure</span></p><p><b>device</b>: <a href=\"Device-mii-exa-test-data-patient-1-icu-device-monitor-1.html\">Device: identifier = https://www.charite.de/fhir/sid/device-identifier#ICU-MONITOR-001; status = active; type = Biomedical equipment (physical object)</a></p><h3>ReferenceRanges</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td style=\"display: none\">*</td><td>60 beats per minute<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code/min = '/min')</span></td><td>100 beats per minute<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code/min = '/min')</span></td></tr></table><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 8867-4}\">Herzfrequenz, palpatorische Kontrollmessung</span></p><p><b>value</b>: 72 beats per minute<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code/min = '/min')</span></p><p><b>interpretation</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}\">Normal</span></p><h3>ReferenceRanges</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td style=\"display: none\">*</td><td>60 beats per minute<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code/min = '/min')</span></td><td>100 beats per minute<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code/min = '/min')</span></td></tr></table></blockquote></div>"
+  },
+  "identifier" : [{
+    "system" : "https://www.charite.de/fhir/sid/icu-observation-id",
+    "value" : "icu-muv-herzfreq-1"
+  }],
+  "status" : "final",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "vital-signs"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "364075005",
+      "display" : "Heart rate"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "8867-4",
+      "display" : "Heart rate"
+    },
+    {
+      "system" : "urn:iso:std:iso:11073:10101",
+      "code" : "147842",
+      "display" : "MDC_ECG_HEART_RATE"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/mii-exa-test-data-icu-patient-1"
+  },
+  "encounter" : {
+    "reference" : "Encounter/mii-exa-test-data-icu-encounter-1"
+  },
+  "effectiveDateTime" : "2024-05-05T08:00:00+02:00",
+  "performer" : [{
+    "reference" : "Practitioner/mii-exa-test-data-icu-practitioner-1"
+  }],
+  "valueQuantity" : {
+    "value" : 72,
+    "unit" : "beats per minute",
+    "system" : "http://unitsofmeasure.org",
+    "code" : "/min"
+  },
+  "interpretation" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+      "code" : "N",
+      "display" : "Normal"
+    }]
+  }],
+  "bodySite" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "80891009",
+      "display" : "Heart structure (body structure)"
+    }]
+  },
+  "method" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "29303009",
+      "display" : "Electrocardiographic procedure"
+    }]
+  },
+  "device" : {
+    "reference" : "Device/mii-exa-test-data-patient-1-icu-device-monitor-1"
+  },
+  "referenceRange" : [{
+    "low" : {
+      "value" : 60,
+      "unit" : "beats per minute",
+      "system" : "http://unitsofmeasure.org",
+      "code" : "/min"
+    },
+    "high" : {
+      "value" : 100,
+      "unit" : "beats per minute",
+      "system" : "http://unitsofmeasure.org",
+      "code" : "/min"
+    }
+  }],
+  "component" : [{
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "8867-4",
+        "display" : "Heart rate"
+      }],
+      "text" : "Herzfrequenz, palpatorische Kontrollmessung"
+    },
+    "valueQuantity" : {
+      "value" : 72,
+      "unit" : "beats per minute",
+      "system" : "http://unitsofmeasure.org",
+      "code" : "/min"
+    },
+    "interpretation" : [{
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+        "code" : "N",
+        "display" : "Normal"
+      }]
+    }],
+    "referenceRange" : [{
+      "low" : {
+        "value" : 60,
+        "unit" : "beats per minute",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "/min"
+      },
+      "high" : {
+        "value" : 100,
+        "unit" : "beats per minute",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "/min"
+      }
+    }]
+  }]
+}

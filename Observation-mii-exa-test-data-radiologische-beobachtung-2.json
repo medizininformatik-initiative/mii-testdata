@@ -1,0 +1,54 @@
+{
+  "resourceType" : "Observation",
+  "id" : "mii-exa-test-data-radiologische-beobachtung-2",
+  "meta" : {
+    "source" : "https://www.charite.de/fhir/kds-testdata",
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologische-beobachtung"],
+    "security" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "code" : "HTEST",
+      "display" : "test health data"
+    }]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-radiologische-beobachtung-2</b></p><a name=\"mii-exa-test-data-radiologische-beobachtung-2\"> </a><a name=\"hcmii-exa-test-data-radiologische-beobachtung-2\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologische-beobachtung\">MII PR Bildgebung Radiologische Beobachtung</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>partOf</b>: <a href=\"Procedure-mii-exa-test-data-befundungsprozedur.html\">Procedure Native Computertomographie, sonstige</a></p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category imaging}\">Imaging</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 32422-8}\">Physical findings of Breast</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-bildgebung-patient-1.html\">Andreas Mustermann  Male, DoB: 1968-07-22 ( https://www.charite.de/fhir/sid/patientenidentifikation#BILD-TEST-001)</a></p><p><b>issued</b>: 2024-07-19 12:05:00+0200</p><p><b>value</b>: <span title=\"Codes:{http://snomed.info/sct 373067005}\">Architekturstoerung: nein</span></p><p><b>bodySite</b>: <span title=\"Codes:{http://snomed.info/sct 76752008}\">Breast structure (body structure)</span></p></div>"
+  },
+  "partOf" : [{
+    "reference" : "Procedure/mii-exa-test-data-befundungsprozedur"
+  }],
+  "status" : "final",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "imaging",
+      "display" : "Imaging"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "32422-8",
+      "display" : "Physical findings of Breast"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/mii-exa-test-data-bildgebung-patient-1"
+  },
+  "issued" : "2024-07-19T12:05:00+02:00",
+  "valueCodeableConcept" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "373067005",
+      "display" : "No (qualifier value)"
+    }],
+    "text" : "Architekturstoerung: nein"
+  },
+  "bodySite" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "76752008",
+      "display" : "Breast structure (body structure)"
+    }]
+  }
+}

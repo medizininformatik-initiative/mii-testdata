@@ -1,0 +1,62 @@
+{
+  "resourceType" : "Condition",
+  "id" : "mii-exa-test-data-patient-7-diagnose-1",
+  "meta" : {
+    "source" : "https://www.charite.de/fhir/kds-testdata",
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/core/modul-diagnose/StructureDefinition/Diagnose"],
+    "security" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "code" : "HTEST",
+      "display" : "test health data"
+    }]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Condition mii-exa-test-data-patient-7-diagnose-1</b></p><a name=\"mii-exa-test-data-patient-7-diagnose-1\"> </a><a name=\"hcmii-exa-test-data-patient-7-diagnose-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/core/modul-diagnose/StructureDefinition/Diagnose\">MII PR Diagnose Condition</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical resolved}\">Resolved</span></p><p><b>verificationStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}\">Confirmed</span></p><p><b>code</b>: <span title=\"Codes:{http://fhir.de/CodeSystem/bfarm/icd-10-gm J20.9}, {http://fhir.de/CodeSystem/bfarm/alpha-id I25780}, {http://snomed.info/sct 10509002}\">Akute Bronchitis</span></p><p><b>bodySite</b>: <span title=\"Codes:{http://snomed.info/sct 955009}\">Bronchial structure (body structure)</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-patient-7.html\">Anna Hoffmann (official) Female, DoB: 1992-07-15 ( Medical record number\u00a0(use:\u00a0usual,\u00a0))</a></p><p><b>abatement</b>: 2024-01-20</p><p><b>recordedDate</b>: 2024-01-08</p><p><b>note</b>: </p><blockquote><div><p>Akute Bronchitis, nicht näher bezeichnet</p>\n</div></blockquote></div>"
+  },
+  "clinicalStatus" : {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
+      "code" : "resolved"
+    }]
+  },
+  "verificationStatus" : {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+      "code" : "confirmed"
+    }]
+  },
+  "code" : {
+    "coding" : [{
+      "system" : "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+      "version" : "2024",
+      "code" : "J20.9"
+    },
+    {
+      "system" : "http://fhir.de/CodeSystem/bfarm/alpha-id",
+      "version" : "2024",
+      "code" : "I25780",
+      "display" : "Akute Bronchitis"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "10509002",
+      "display" : "Acute bronchitis (disorder)"
+    }]
+  },
+  "bodySite" : [{
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "955009",
+      "display" : "Bronchial structure (body structure)"
+    }]
+  }],
+  "subject" : {
+    "reference" : "Patient/mii-exa-test-data-patient-7"
+  },
+  "abatementDateTime" : "2024-01-20",
+  "recordedDate" : "2024-01-08",
+  "note" : [{
+    "text" : "Akute Bronchitis, nicht näher bezeichnet"
+  }]
+}

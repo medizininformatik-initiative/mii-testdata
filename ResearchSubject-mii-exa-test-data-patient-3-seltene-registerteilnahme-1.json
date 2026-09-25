@@ -1,0 +1,40 @@
+{
+  "resourceType" : "ResearchSubject",
+  "id" : "mii-exa-test-data-patient-3-seltene-registerteilnahme-1",
+  "meta" : {
+    "source" : "https://www.charite.de/fhir/kds-testdata",
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-registerteilnahme"],
+    "security" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "code" : "HTEST",
+      "display" : "test health data"
+    }]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ResearchSubject mii-exa-test-data-patient-3-seltene-registerteilnahme-1</b></p><a name=\"mii-exa-test-data-patient-3-seltene-registerteilnahme-1\"> </a><a name=\"hcmii-exa-test-data-patient-3-seltene-registerteilnahme-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-registerteilnahme\">MII PR SE Registerteilnahme</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>MII EX SE Register</b>: <a href=\"Library-mii-exa-test-data-seltene-register-katalog-1.html\">ERN ReCONNET Registry - Katalogeintrag</a></p><p><b>identifier</b>: <code>https://reconnet.ern-net.eu/fhir/sid/subject</code>/RCN-DE-001358</p><p><b>status</b>: On-study</p><p><b>period</b>: 2024-04-02 --&gt; (ongoing)</p><p><b>study</b>: <a href=\"ResearchStudy-mii-exa-test-data-seltene-register-study-1.html\">ResearchStudy ERN ReCONNET Registry - Rare Connective Tissue and Musculoskeletal Diseases</a></p><p><b>individual</b>: <a href=\"Patient-mii-exa-test-data-seltene-patient-1.html\">Luisa Seltenfall  Female, DoB: 1995-02-10 ( https://www.charite.de/fhir/sid/patientenidentifikation#SELT-TEST-001)</a></p><p><b>consent</b>: <a href=\"Consent-mii-exa-test-data-seltene-register-consent-1.html\">mii-exa-test-data-seltene-register-consent-1</a></p></div>"
+  },
+  "extension" : [{
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-ex-seltene-register",
+    "valueReference" : {
+      "reference" : "Library/mii-exa-test-data-seltene-register-katalog-1"
+    }
+  }],
+  "identifier" : [{
+    "system" : "https://reconnet.ern-net.eu/fhir/sid/subject",
+    "value" : "RCN-DE-001358"
+  }],
+  "status" : "on-study",
+  "period" : {
+    "start" : "2024-04-02"
+  },
+  "study" : {
+    "reference" : "ResearchStudy/mii-exa-test-data-seltene-register-study-1"
+  },
+  "individual" : {
+    "reference" : "Patient/mii-exa-test-data-seltene-patient-1"
+  },
+  "consent" : {
+    "reference" : "Consent/mii-exa-test-data-seltene-register-consent-1"
+  }
+}

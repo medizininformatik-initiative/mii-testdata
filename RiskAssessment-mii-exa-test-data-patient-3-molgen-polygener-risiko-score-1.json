@@ -1,0 +1,76 @@
+{
+  "resourceType" : "RiskAssessment",
+  "id" : "mii-exa-test-data-patient-3-molgen-polygener-risiko-score-1",
+  "meta" : {
+    "source" : "https://www.charite.de/fhir/kds-testdata",
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/polygener-risiko-score"],
+    "security" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "code" : "HTEST",
+      "display" : "test health data"
+    }]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: RiskAssessment mii-exa-test-data-patient-3-molgen-polygener-risiko-score-1</b></p><a name=\"mii-exa-test-data-patient-3-molgen-polygener-risiko-score-1\"> </a><a name=\"hcmii-exa-test-data-patient-3-molgen-polygener-risiko-score-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/polygener-risiko-score\">MII PR MolGen Polygener Risiko Score</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>identifier</b>: <code>https://www.charite.de/fhir/sid/risiko-bewertungen</code>/PRS-CRC-2022-0407-001</p><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 721961004}\">Polygener Risiko Score (PRS)</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-molgen-patient-1.html\">Petra Genomisch  Female, DoB: 1985-08-14 ( https://www.charite.de/fhir/sid/patientenidentifikation#MOL-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-molgen-encounter-1.html\">Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2024-03-01 --&gt; 2024-03-20</a></p><p><b>occurrence</b>: 2022-04-07</p><p><b>condition</b>: <a href=\"Condition-mii-exa-test-data-molgen-diagnose-1.html\">Condition Bösartige Neubildung: Colon sigmoideum</a></p><p><b>basis</b>: <a href=\"Observation-mii-exa-test-data-patient-3-molgen-variante-1.html\">Observation Genetic variant assessment</a></p><h3>Predictions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Outcome</b></td><td><b>Probability[x]</b></td><td><b>QualitativeRisk</b></td><td><b>RelativeRisk</b></td><td><b>When[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 363510005}\">Kolorektales Karzinom</span></td><td>0.32</td><td><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/risk-probability high}\">High likelihood</span></td><td>2.8</td><td>50-80 years</td></tr></table></div>"
+  },
+  "identifier" : [{
+    "system" : "https://www.charite.de/fhir/sid/risiko-bewertungen",
+    "value" : "PRS-CRC-2022-0407-001"
+  }],
+  "status" : "final",
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "721961004",
+      "display" : "Risk assessment score (observable entity)"
+    }],
+    "text" : "Polygener Risiko Score (PRS)"
+  },
+  "subject" : {
+    "reference" : "Patient/mii-exa-test-data-molgen-patient-1"
+  },
+  "encounter" : {
+    "reference" : "Encounter/mii-exa-test-data-molgen-encounter-1"
+  },
+  "occurrenceDateTime" : "2022-04-07",
+  "condition" : {
+    "reference" : "Condition/mii-exa-test-data-molgen-diagnose-1"
+  },
+  "basis" : [{
+    "reference" : "Observation/mii-exa-test-data-patient-3-molgen-variante-1"
+  }],
+  "prediction" : [{
+    "outcome" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "363510005",
+        "display" : "Malignant neoplasm of large intestine"
+      }],
+      "text" : "Kolorektales Karzinom"
+    },
+    "probabilityDecimal" : 0.32,
+    "qualitativeRisk" : {
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/risk-probability",
+        "code" : "high",
+        "display" : "High likelihood"
+      }]
+    },
+    "relativeRisk" : 2.8,
+    "whenRange" : {
+      "low" : {
+        "value" : 50,
+        "unit" : "years",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "a"
+      },
+      "high" : {
+        "value" : 80,
+        "unit" : "years",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "a"
+      }
+    }
+  }]
+}

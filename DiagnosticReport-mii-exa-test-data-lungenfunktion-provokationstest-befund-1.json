@@ -1,0 +1,89 @@
+{
+  "resourceType" : "DiagnosticReport",
+  "id" : "mii-exa-test-data-lungenfunktion-provokationstest-befund-1",
+  "meta" : {
+    "source" : "https://www.charite.de/fhir/lungenfunktion-messplatz",
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-provokationstest"],
+    "security" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "code" : "HTEST",
+      "display" : "test health data"
+    }]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: DiagnosticReport mii-exa-test-data-lungenfunktion-provokationstest-befund-1</b></p><a name=\"mii-exa-test-data-lungenfunktion-provokationstest-befund-1\"> </a><a name=\"hcmii-exa-test-data-lungenfunktion-provokationstest-befund-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/lungenfunktion-messplatz\">https://www.charite.de/fhir/lungenfunktion-messplatz</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-provokationstest\">MII PR Lungenfunktion Provokationstest</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><h2><span title=\"Codes:{http://snomed.info/sct 252520007}\">Methacholine challenge (procedure)</span> (<span title=\"Codes:{http://loinc.org 58477-1}, {http://terminology.hl7.org/CodeSystem/v2-0074 PF}, {http://snomed.info/sct 720449003}\">Pulmonary function study</span>) </h2><table class=\"grid\"><tr><td>Subject</td><td>Luise Atemwald  Female, DoB: 1972-06-30 ( https://www.charite.de/fhir/sid/patientenidentifikation#LUFU-TEST-001)</td></tr><tr><td>Relevant Time</td><td>2025-02-18 11:00:00+0100</td></tr><tr><td>Reported</td><td>2025-02-18 12:15:00+0100</td></tr><tr><td>Presented Form</td><td> application/pdf @ <a href=\"https://www.charite.de/fhir/lungenfunktion/befunde/provokationstest-2025-02-18.pdf\">https://www.charite.de/fhir/lungenfunktion/befunde/provokationstest-2025-02-18.pdf <img src=\"external.png\" alt=\"icon\" style=\"vertical-align: baseline\"/></a></td></tr></table><p><b>Report Details</b></p><table class=\"grid\"><tr><td><b>Code</b></td><td><b>Value</b></td><td><b>Flags</b></td><td><b>Reported</b></td></tr><tr><td><a href=\"Observation-mii-exa-test-data-lungenfunktion-dosis-schwellwert-1.html\"><span title=\"Codes:{http://snomed.info/sct 1376040001}, {http://loinc.org 65866-6}\">Dose of methacholine to achieve maximal drop of forced expired volume in 1 second (observable entity)</span></a></td><td>0.3 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span></td><td>Final, <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation A}\">Abnormal</span></td><td>2025-02-18 12:00:00+0100</td></tr><tr><td><a href=\"Observation-mii-exa-test-data-lungenfunktion-dosis-kumuliert-1.html\"><span title=\"Codes:{http://snomed.info/sct 1376040001}, {http://loinc.org 65866-6}\">Dose of methacholine to achieve maximal drop of forced expired volume in 1 second (observable entity)</span></a></td><td>0.34 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span></td><td>Final, <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation A}\">Abnormal</span></td><td>2025-02-18 12:00:00+0100</td></tr><tr><td><a href=\"Observation-mii-exa-test-data-lungenfunktion-fev-prov-1.html\"><span title=\"Codes:{http://snomed.info/sct 59328004}, {http://loinc.org 43253-4}\">Forced expired volume in 1 second (observable entity)</span></a></td><td>2.1 L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL = 'L')</span></td><td>Final, <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}\">Normal</span></td><td>2025-02-18 12:00:00+0100</td></tr><tr><td><a href=\"Observation-mii-exa-test-data-lungenfunktion-fev-prov-2.html\"><span title=\"Codes:{http://snomed.info/sct 59328004}, {http://loinc.org 43255-9}\">Forced expired volume in 1 second (observable entity)</span></a></td><td>1.55 L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL = 'L')</span></td><td>Final, <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation L}\">Low</span></td><td>2025-02-18 12:00:00+0100</td></tr><tr><td><a href=\"Observation-mii-exa-test-data-lungenfunktion-pef-prov-1.html\"><span title=\"Codes:{http://snomed.info/sct 18491006}, {http://loinc.org 33452-4}\">Peak expiratory flow rate (observable entity)</span></a></td><td>4.1 L/s<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL/s = 'L/s')</span></td><td>Final, <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation L}\">Low</span></td><td>2025-02-18 12:00:00+0100</td></tr><tr><td><a href=\"Observation-mii-exa-test-data-lungenfunktion-r-prov-1.html\"><span title=\"Codes:{http://snomed.info/sct 16162007}, {http://loinc.org 20083-2}\">Total airway resistance (observable entity)</span></a></td><td>0.55 kPa/(L/s)<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codekPa/(L/s) = 'kPa/(L/s)')</span></td><td>Final, <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation H}\">High</span></td><td>2025-02-18 12:00:00+0100</td></tr><tr><td><a href=\"Observation-mii-exa-test-data-lungenfunktion-sr-prov-1.html\"><span title=\"Codes:{http://snomed.info/sct 1366667009}, {http://loinc.org 91980-3}\">Specific airway resistance (observable entity)</span></a></td><td>1.8 kPa.s<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codekPa.s = 'kPa.s')</span></td><td>Final, <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation H}\">High</span></td><td>2025-02-18 12:00:00+0100</td></tr><tr><td><a href=\"Observation-mii-exa-test-data-lungenfunktion-frc-prov-1.html\"><span title=\"Codes:{http://snomed.info/sct 65825000}, {http://loinc.org 19846-5}\">Functional residual capacity (observable entity)</span></a></td><td>3.6 L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL = 'L')</span></td><td>Final, <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation H}\">High</span></td><td>2025-02-18 12:00:00+0100</td></tr></table><p>Positiver Methacholin-Provokationstest: FEV1-Abfall um 26 % bei kumulativer Dosis von 0.34 mg (PD20 = 0.30 mg). Befund vereinbar mit bronchialer Hyperreagibilitaet bei Asthma bronchiale.</p><p><b>Coded Conclusions:</b></p><ul><li><span title=\"Codes:{http://fhir.de/CodeSystem/bfarm/icd-10-gm J45.0}\">Vorwiegend allergisches Asthma bronchiale</span></li></ul></div>"
+  },
+  "status" : "final",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "58477-1",
+      "display" : "Pulmonary function study"
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/v2-0074",
+      "code" : "PF"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+      "code" : "720449003",
+      "display" : "Pulmonary function report (record artifact)"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+      "code" : "252520007",
+      "display" : "Methacholine challenge (procedure)"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/mii-exa-test-data-lungenfunktion-patient-1"
+  },
+  "encounter" : {
+    "reference" : "Encounter/mii-exa-test-data-lungenfunktion-encounter-1"
+  },
+  "effectiveDateTime" : "2025-02-18T11:00:00+01:00",
+  "issued" : "2025-02-18T12:15:00+01:00",
+  "result" : [{
+    "reference" : "Observation/mii-exa-test-data-lungenfunktion-dosis-schwellwert-1"
+  },
+  {
+    "reference" : "Observation/mii-exa-test-data-lungenfunktion-dosis-kumuliert-1"
+  },
+  {
+    "reference" : "Observation/mii-exa-test-data-lungenfunktion-fev-prov-1"
+  },
+  {
+    "reference" : "Observation/mii-exa-test-data-lungenfunktion-fev-prov-2"
+  },
+  {
+    "reference" : "Observation/mii-exa-test-data-lungenfunktion-pef-prov-1"
+  },
+  {
+    "reference" : "Observation/mii-exa-test-data-lungenfunktion-r-prov-1"
+  },
+  {
+    "reference" : "Observation/mii-exa-test-data-lungenfunktion-sr-prov-1"
+  },
+  {
+    "reference" : "Observation/mii-exa-test-data-lungenfunktion-frc-prov-1"
+  }],
+  "conclusion" : "Positiver Methacholin-Provokationstest: FEV1-Abfall um 26 % bei kumulativer Dosis von 0.34 mg (PD20 = 0.30 mg). Befund vereinbar mit bronchialer Hyperreagibilitaet bei Asthma bronchiale.",
+  "conclusionCode" : [{
+    "coding" : [{
+      "system" : "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+      "version" : "2026",
+      "code" : "J45.0",
+      "display" : "Vorwiegend allergisches Asthma bronchiale"
+    }]
+  }],
+  "presentedForm" : [{
+    "contentType" : "application/pdf",
+    "url" : "https://www.charite.de/fhir/lungenfunktion/befunde/provokationstest-2025-02-18.pdf",
+    "title" : "Provokationstest-Befund vom 18.02.2025"
+  }]
+}

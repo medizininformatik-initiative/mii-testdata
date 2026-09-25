@@ -1,0 +1,75 @@
+{
+  "resourceType" : "MedicationStatement",
+  "id" : "mii-exa-test-data-patient-10-medstatement-2",
+  "meta" : {
+    "source" : "https://www.charite.de/fhir/kds-testdata",
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement"],
+    "security" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "code" : "HTEST",
+      "display" : "test health data"
+    }]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: MedicationStatement mii-exa-test-data-patient-10-medstatement-2</b></p><a name=\"mii-exa-test-data-patient-10-medstatement-2\"> </a><a name=\"hcmii-exa-test-data-patient-10-medstatement-2\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement\">MII PR Medikation MedicationStatement</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>identifier</b>: <code>https://www.charite.de/fhir/sid/MedicationStatements</code>/MS_0000026</p><p><b>basedOn</b>: <a href=\"MedicationRequest-mii-exa-test-data-patient-10-medrequest-2.html\">MedicationRequest: identifier = https://www.charite.de/fhir/sid/MedicationOrders#MO_0000025; status = active; intent = order; medication[x] = -&gt;Medication Topiramat; authoredOn = 2019-05-16 09:00:00+0200</a></p><p><b>status</b>: Active</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/medication-statement-category inpatient}, {http://ihe-d.de/CodeSystems/FallkontextBeiDokumentenerstellung E200}\">stationärer Aufenthalt</span></p><p><b>medication</b>: <a href=\"Medication-mii-exa-test-data-medication-topiramat.html\">Medication Topiramat</a></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-patient-10.html\">Markus Wolf (official) Male, DoB: 1969-09-17 ( Medical record number\u00a0(use:\u00a0usual,\u00a0))</a></p><p><b>context</b>: <a href=\"Encounter-mii-exa-test-data-patient-10-encounter-1.html\">Encounter: identifier = Visit number; status = finished; class = inpatient encounter (ActCode#IMP); type = Einrichtungskontakt,Normalstationär; serviceType = Neurologie; period = 2019-05-14 --&gt; 2019-05-22</a></p><p><b>effective</b>: 2019-05-16 09:00:00+0200 --&gt; 2019-05-22 10:00:00+0200</p><p><b>dateAsserted</b>: 2019-05-16</p><blockquote><p><b>dosage</b></p><p><b>text</b>: Topiramat 50mg 2x täglich zur Prophylaxe</p><p><b>timing</b>: 2 per 1 day</p><p><b>route</b>: <span title=\"Codes:{http://standardterms.edqm.eu 20053000}\">Oral use</span></p><h3>DoseAndRates</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Dose[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>50 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span></td></tr></table></blockquote></div>"
+  },
+  "identifier" : [{
+    "system" : "https://www.charite.de/fhir/sid/MedicationStatements",
+    "value" : "MS_0000026"
+  }],
+  "basedOn" : [{
+    "reference" : "MedicationRequest/mii-exa-test-data-patient-10-medrequest-2"
+  }],
+  "status" : "active",
+  "category" : {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/medication-statement-category",
+      "code" : "inpatient"
+    },
+    {
+      "system" : "http://ihe-d.de/CodeSystems/FallkontextBeiDokumentenerstellung",
+      "code" : "E200",
+      "display" : "stationärer Aufenthalt"
+    }]
+  },
+  "medicationReference" : {
+    "reference" : "Medication/mii-exa-test-data-medication-topiramat"
+  },
+  "subject" : {
+    "reference" : "Patient/mii-exa-test-data-patient-10"
+  },
+  "context" : {
+    "reference" : "Encounter/mii-exa-test-data-patient-10-encounter-1"
+  },
+  "effectivePeriod" : {
+    "start" : "2019-05-16T09:00:00+02:00",
+    "end" : "2019-05-22T10:00:00+02:00"
+  },
+  "dateAsserted" : "2019-05-16",
+  "dosage" : [{
+    "text" : "Topiramat 50mg 2x täglich zur Prophylaxe",
+    "timing" : {
+      "repeat" : {
+        "frequency" : 2,
+        "period" : 1,
+        "periodUnit" : "d"
+      }
+    },
+    "route" : {
+      "coding" : [{
+        "system" : "http://standardterms.edqm.eu",
+        "code" : "20053000",
+        "display" : "Oral use"
+      }]
+    },
+    "doseAndRate" : [{
+      "doseQuantity" : {
+        "value" : 50,
+        "unit" : "mg",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "mg"
+      }
+    }]
+  }]
+}

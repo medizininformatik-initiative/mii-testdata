@@ -1,0 +1,7 @@
+{
+  "version" : "2027.0.0-ballot",
+  "fhirVersion" : ["4.0.1"],
+  "date" : "20260925070209",
+  "name" : "mii-kds-testdata",
+  "jurisdiction" : "urn:iso:std:iso:3166#DE"
+}

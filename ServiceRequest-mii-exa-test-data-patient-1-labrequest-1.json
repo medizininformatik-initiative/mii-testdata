@@ -1,0 +1,74 @@
+{
+  "resourceType" : "ServiceRequest",
+  "id" : "mii-exa-test-data-patient-1-labrequest-1",
+  "meta" : {
+    "source" : "https://www.charite.de/fhir/kds-testdata",
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ServiceRequestLab"],
+    "security" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "code" : "HTEST",
+      "display" : "test health data"
+    }]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ServiceRequest mii-exa-test-data-patient-1-labrequest-1</b></p><a name=\"mii-exa-test-data-patient-1-labrequest-1\"> </a><a name=\"hcmii-exa-test-data-patient-1-labrequest-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ServiceRequestLab\">MII PR Labor Laboranforderung</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>identifier</b>: Placer Identifier/LA_000001</p><p><b>status</b>: Completed</p><p><b>intent</b>: Order</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 55429-5}\">kleines Blutbild</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-patient-1.html\">Christian Ludwig Markgraf von Brandenburg-Schwedt (official) Male, DoB: 1977-05-24 ( Medical record number)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-patient-1-encounter-1.html\">Encounter: extension = ; identifier = Visit number; status = finished; class = inpatient encounter (ActCode#IMP); type = Einrichtungskontakt,Normalstationär; serviceType = Innere Medizin; period = 2024-02-14 --&gt; 2024-02-22</a></p><p><b>authoredOn</b>: 2024-02-15 10:28:00+0100</p><p><b>specimen</b>: <a href=\"Bundle-mii-exa-test-data-bundle-biobank-1.html#https-//www.medizininformatik-initiative.de/Specimen/mii-exa-test-data-patient-1-specimen-1\">EDTA-Blut Patient 1</a></p></div>"
+  },
+  "identifier" : [{
+    "type" : {
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+        "code" : "PLAC"
+      }]
+    },
+    "system" : "https://www.charite.de/fhir/sid/Laboranforderungen",
+    "value" : "LA_000001",
+    "assigner" : {
+      "identifier" : {
+        "system" : "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier",
+        "value" : "Charité"
+      }
+    }
+  }],
+  "status" : "completed",
+  "intent" : "order",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "laboratory",
+      "display" : "Laboratory"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "version" : "2.78",
+      "code" : "55429-5",
+      "display" : "Short blood count panel - Blood"
+    }],
+    "text" : "kleines Blutbild"
+  },
+  "subject" : {
+    "reference" : "Patient/mii-exa-test-data-patient-1",
+    "identifier" : {
+      "system" : "https://www.charite.de/fhir/sid/patientenidentifikation",
+      "value" : "808439625"
+    }
+  },
+  "encounter" : {
+    "reference" : "Encounter/mii-exa-test-data-patient-1-encounter-1",
+    "identifier" : {
+      "system" : "https://www.charite.de/fhir/NamingSystem/Aufnahmenummern",
+      "value" : "MII_0000001"
+    }
+  },
+  "authoredOn" : "2024-02-15T10:28:00+01:00",
+  "specimen" : [{
+    "reference" : "https://www.medizininformatik-initiative.de/Specimen/mii-exa-test-data-patient-1-specimen-1",
+    "identifier" : {
+      "system" : "https://www.charite.de/fhir/sid/Bioproben",
+      "value" : "BP_000001"
+    },
+    "display" : "EDTA-Blut Patient 1"
+  }]
+}

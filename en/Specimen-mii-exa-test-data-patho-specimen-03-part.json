@@ -1,0 +1,110 @@
+{
+  "resourceType" : "Specimen",
+  "id" : "mii-exa-test-data-patho-specimen-03-part",
+  "meta" : {
+    "source" : "https://www.charite.de/fhir/kds-testdata",
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen",
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore"],
+    "security" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "code" : "HTEST",
+      "display" : "test health data"
+    }]
+  },
+  "language" : "en",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Specimen mii-exa-test-data-patho-specimen-03-part</b></p><a name=\"mii-exa-test-data-patho-specimen-03-part\"> </a><a name=\"hcmii-exa-test-data-patho-specimen-03-part\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profiles: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen\">MII PR Patho Specimen</a>, <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore\">MII PR Biobank Specimen Bioprobe Core</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><blockquote><p><b>MII EX Biobank Feature R5</b></p><ul><li>type: <span title=\"Codes:{http://snomed.info/sct 716934008}\">Structure of apical part of peripheral zone of right half prostate (body structure)</span></li><li>description: Markiert mit grüner Tinte</li></ul></blockquote><p><b>identifier</b>: Placer Identifier/BX24_001_03_A, Filler Identifier/E_24_001_C</p><p><b>accessionIdentifier</b>: <code>https://www.charite.de/fhir/sid/patho/befundbericht</code>/E_24_001</p><p><b>status</b>: Available</p><p><b>type</b>: <span title=\"Codes:{http://snomed.info/sct 309134005}\">Prostate tru-cut biopsy sample</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-patho-patient-1.html\">Klaus Gewebeprobe  Male, DoB: 1963-06-30 ( https://www.charite.de/fhir/sid/patientenidentifikation#PATH-TEST-001)</a></p><p><b>request</b>: <a href=\"ServiceRequest-mii-exa-test-data-patho-request-1.html\">ServiceRequest Prostate Pathology biopsy report</a></p><h3>Collections</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Collector</b></td><td><b>Collected[x]</b></td><td><b>Method</b></td><td><b>BodySite</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Practitioner-mii-exa-test-data-patho-practitioner-2.html\">Practitioner Ulrich Stanze </a></td><td>2024-01-15 10:34:00+0100</td><td><span title=\"Codes:{http://snomed.info/sct 301759007}\">Tru-cut biopsy of prostate (procedure)</span></td><td><span title=\"Codes:{http://snomed.info/sct 716934008}\">Structure of apical part of peripheral zone of right half prostate (body structure)</span></td></tr></table><h3>Containers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Additive[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 434746001}\">Specimen vial (physical object)</span></td><td><span title=\"Codes:{http://snomed.info/sct 434162003}\">Neutral buffered formalin (substance)</span></td></tr></table></div>"
+  },
+  "extension" : [{
+    "extension" : [{
+      "url" : "type",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "716934008",
+          "display" : "Structure of apical part of peripheral zone of right half prostate (body structure)"
+        }]
+      }
+    },
+    {
+      "url" : "description",
+      "valueString" : "Markiert mit grüner Tinte"
+    }],
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-Specimen.feature"
+  }],
+  "identifier" : [{
+    "type" : {
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+        "code" : "PLAC"
+      }]
+    },
+    "system" : "https://www.charite.de/fhir/sid/patho/untersuchungsauftrag",
+    "value" : "BX24_001_03_A"
+  },
+  {
+    "type" : {
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+        "code" : "FILL"
+      }]
+    },
+    "system" : "https://www.charite.de/fhir/sid/patho/befundbericht",
+    "value" : "E_24_001_C"
+  }],
+  "accessionIdentifier" : {
+    "system" : "https://www.charite.de/fhir/sid/patho/befundbericht",
+    "value" : "E_24_001"
+  },
+  "status" : "available",
+  "type" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "309134005",
+      "display" : "Prostate tru-cut biopsy sample"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/mii-exa-test-data-patho-patient-1"
+  },
+  "request" : [{
+    "reference" : "ServiceRequest/mii-exa-test-data-patho-request-1"
+  }],
+  "collection" : {
+    "collector" : {
+      "reference" : "Practitioner/mii-exa-test-data-patho-practitioner-2"
+    },
+    "collectedDateTime" : "2024-01-15T10:34:00+01:00",
+    "method" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "301759007",
+        "display" : "Tru-cut biopsy of prostate (procedure)"
+      }]
+    },
+    "bodySite" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "716934008",
+        "display" : "Structure of apical part of peripheral zone of right half prostate (body structure)"
+      }]
+    }
+  },
+  "container" : [{
+    "type" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "434746001",
+        "display" : "Specimen vial (physical object)"
+      }]
+    },
+    "additiveCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "434162003",
+        "display" : "Neutral buffered formalin (substance)"
+      }]
+    }
+  }]
+}

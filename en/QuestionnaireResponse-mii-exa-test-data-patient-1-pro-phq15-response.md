@@ -1,0 +1,191 @@
+# mii-exa-test-data-patient-1-pro-phq15-response - MII KDS Test Data v2027.0.0-ballot
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **mii-exa-test-data-patient-1-pro-phq15-response**
+
+## Example QuestionnaireResponse: mii-exa-test-data-patient-1-pro-phq15-response
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "QuestionnaireResponse",
+  "id" : "mii-exa-test-data-patient-1-pro-phq15-response",
+  "meta" : {
+    "source" : "https://www.charite.de/fhir/kds-testdata",
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response"],
+    "security" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "code" : "HTEST",
+      "display" : "test health data"
+    }]
+  },
+  "language" : "de",
+  "questionnaire" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-phq-15",
+  "status" : "completed",
+  "subject" : {
+    "reference" : "Patient/mii-exa-test-data-pro-patient-1"
+  },
+  "authored" : "2024-03-15T10:30:00+01:00",
+  "item" : [{
+    "linkId" : "phq-phq1a",
+    "answer" : [{
+      "valueCoding" : {
+        "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-phq-15-answers",
+        "code" : "bothered-a-little",
+        "display" : "Bothered a little"
+      }
+    }]
+  },
+  {
+    "linkId" : "phq-phq1b",
+    "answer" : [{
+      "valueCoding" : {
+        "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-phq-15-answers",
+        "code" : "bothered-a-lot",
+        "display" : "Bothered a lot"
+      }
+    }]
+  },
+  {
+    "linkId" : "phq-phq1c",
+    "answer" : [{
+      "valueCoding" : {
+        "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-phq-15-answers",
+        "code" : "bothered-a-little",
+        "display" : "Bothered a little"
+      }
+    }]
+  },
+  {
+    "linkId" : "phq-phq1d",
+    "answer" : [{
+      "valueCoding" : {
+        "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-phq-15-answers",
+        "code" : "not-bothered",
+        "display" : "Not bothered at all"
+      }
+    }]
+  },
+  {
+    "linkId" : "phq-phq1e",
+    "answer" : [{
+      "valueCoding" : {
+        "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-phq-15-answers",
+        "code" : "bothered-a-little",
+        "display" : "Bothered a little"
+      }
+    }]
+  },
+  {
+    "linkId" : "phq-phq1f",
+    "answer" : [{
+      "valueCoding" : {
+        "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-phq-15-answers",
+        "code" : "not-bothered",
+        "display" : "Not bothered at all"
+      }
+    }]
+  },
+  {
+    "linkId" : "phq-phq1g",
+    "answer" : [{
+      "valueCoding" : {
+        "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-phq-15-answers",
+        "code" : "bothered-a-little",
+        "display" : "Bothered a little"
+      }
+    }]
+  },
+  {
+    "linkId" : "phq-phq1h",
+    "answer" : [{
+      "valueCoding" : {
+        "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-phq-15-answers",
+        "code" : "not-bothered",
+        "display" : "Not bothered at all"
+      }
+    }]
+  },
+  {
+    "linkId" : "phq-phq1i",
+    "answer" : [{
+      "valueCoding" : {
+        "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-phq-15-answers",
+        "code" : "bothered-a-little",
+        "display" : "Bothered a little"
+      }
+    }]
+  },
+  {
+    "linkId" : "phq-phq1j",
+    "answer" : [{
+      "valueCoding" : {
+        "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-phq-15-answers",
+        "code" : "not-bothered",
+        "display" : "Not bothered at all"
+      }
+    }]
+  },
+  {
+    "linkId" : "phq-phq1k",
+    "answer" : [{
+      "valueCoding" : {
+        "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-phq-15-answers",
+        "code" : "not-bothered",
+        "display" : "Not bothered at all"
+      }
+    }]
+  },
+  {
+    "linkId" : "phq-phq1l",
+    "answer" : [{
+      "valueCoding" : {
+        "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-phq-15-answers",
+        "code" : "bothered-a-little",
+        "display" : "Bothered a little"
+      }
+    }]
+  },
+  {
+    "linkId" : "phq-phq1m",
+    "answer" : [{
+      "valueCoding" : {
+        "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-phq-15-answers",
+        "code" : "bothered-a-little",
+        "display" : "Bothered a little"
+      }
+    }]
+  },
+  {
+    "linkId" : "phq-phq2d",
+    "answer" : [{
+      "valueCoding" : {
+        "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-phq-15-answers",
+        "code" : "bothered-a-little",
+        "display" : "Bothered a little"
+      }
+    }]
+  },
+  {
+    "linkId" : "phq-phq2c",
+    "answer" : [{
+      "valueCoding" : {
+        "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-phq-15-answers",
+        "code" : "bothered-a-lot",
+        "display" : "Bothered a lot"
+      }
+    }]
+  },
+  {
+    "linkId" : "phq-phq15-score-total",
+    "answer" : [{
+      "valueDecimal" : 12
+    }]
+  }]
+}
+
+```
