@@ -1,6 +1,6 @@
 **Bezugsstand: MII Kerndatensatz complete [`2027.0.0-ballot.19`](https://github.com/medizininformatik-initiative/kerndatensatz-complete/releases/tag/v2027.0.0-ballot.19)** — alle Zahlen dieser Seite beziehen sich auf die Profil-Snapshots dieses BOM-Stands.
 
-13658 MS-Elemente über die genutzten Profile · **306 oberste unbefüllte Knoten**
+13658 MS-Elemente über die genutzten Profile · **240 oberste unbefüllte Knoten**
 
 | Modul | Profile genutzt/gesamt | MS befüllt/gesamt | Coverage | häufigste Lücken |
 |---|---|---|---|---|
@@ -10,17 +10,17 @@
 | diagnose | 1/1 | 77/77 | 100 % | — |
 | dokument | 1/1 | 69/70 | 99 % | `extension:nlp-processing-status` |
 | fall | 1/1 | 96/96 | 100 % | — |
-| icu | 94/94 | 2785/2994 | 93 % | `dataAbsentReason`, `referenceRange`, `specimen` |
+| icu | 94/94 | 2861/2994 | 96 % | `dataAbsentReason`, `referenceRange`, `specimen` |
 | kardio | 13/13 | 361/361 | 100 % | — |
 | labor | 3/3 | 151/151 | 100 % | — |
 | lungenfunktion | 39/48 | 1412/1556 | 91 % | `hasMember`, `component`, `component:predicted` |
 | medikation | 5/5 | 437/437 | 100 % | — |
 | meta | 0/1 | 0/0 | – | — |
-| mikrobio | 21/21 | 1386/1427 | 97 % | `referenceRange`, `dataAbsentReason`, `container.additive[x]` |
+| mikrobio | 21/21 | 1387/1427 | 97 % | `referenceRange`, `container.additive[x]`, `extension:focus` |
 | molgen | 16/16 | 240/248 | 97 % | `basedOn`, `extension:focus`, `extension:metrics` |
 | mtb | 50/50 | 1510/1517 | 100 % | `extension:transformationVon`, `extension:focus`, `extension:metrics` |
-| onko | 76/76 | 2016/2023 | 100 % | `modifierExtension:aPraefix`, `modifierExtension:rPraefix`, `extension:transformationVon` |
-| patho | 17/17 | 456/468 | 97 % | `component.code`, `component.dataAbsentReason`, `extension:diagnosticReport` |
+| onko | 76/76 | 2017/2023 | 100 % | `modifierExtension:aPraefix`, `modifierExtension:rPraefix`, `extension:transformationVon` |
+| patho | 17/17 | 466/468 | 100 % | `extension:diagnosticReport`, `extension:focus` |
 | person | 5/5 | 254/258 | 98 % | `extension:birthPlace.value[x].country.extension:countryCode` |
 | pro | 21/23 | 290/292 | 99 % | `item.answer.item`, `questionnaire.extension:questionnaireDisplay` |
 | prozedur | 1/1 | 46/46 | 100 % | — |
