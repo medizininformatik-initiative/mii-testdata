@@ -27,9 +27,13 @@ Gemeldet wird in zwei Klassen, weil sie verschiedene Konsequenzen haben:
            der Fehler in den Daten nicht beheben, nur durch `language` an der
            Ressource oder eine Designation im CodeSystem.
 
-Geprueft wird nur gegen CodeSystems mit `content: complete` aus dem lokalen
-Paket-Cache — bei `not-present`/`fragment` weiss niemand, was gueltig waere,
-und eine Vermutung waere schlechter als kein Befund.
+Geprueft wird nur gegen CodeSystems mit `content: complete`, und nur aus den
+Paketversionen, die `kds-testdata/package.json` pinnt (`--manifest`). Beides ist
+Erfahrung: Bei `not-present`/`fragment` weiss niemand, was gueltig waere; und der
+Paket-Cache ist geteilte Infrastruktur, in der mehrere Versionen desselben
+CodeSystems liegen. Ohne die Einschraenkung gewann die Version mit den meisten
+Konzepten — was einen Fehlalarm erzeugte, dessen 'Korrektur' der Validator
+anschliessend als Fehler meldete.
 
 Usage: check-displays.py [resources-dir] [--lang en] [--quiet]
 Exit 1, sobald ein FALSCH-Befund existiert (FEHLT allein bricht nicht).
@@ -71,10 +75,34 @@ def codesystem_files(pkg):
             if e.get("resourceType") == "CodeSystem"]
 
 
-def load_codesystems():
-    """code -> (display, {lang: designation}) je CodeSystem-URL, nur content=complete."""
+def pinned_packages(manifest):
+    """Verzeichnisnamen `name#version` der Pakete, die das Projekt deklariert.
+
+    Ohne diese Einschraenkung liest die Pruefung JEDE Version im geteilten
+    Cache und nimmt die mit den meisten Konzepten. Das hat einen echten
+    Fehlalarm erzeugt: In `de.basisprofil.r4#1.6.0` — der gepinnten Version —
+    heisst `KontaktDiagnoseProzedur#secondary-DRG` 'DRG-Nebendiagnose'. Im
+    CI-Cache lag eine andere Fassung mit 'Sekundaer-DRG', die Pruefung
+    verlangte die und der Validator, der nur die gepinnte Version laedt,
+    meldete die Korrektur anschliessend als Fehler. Der Cache ist geteilte
+    Infrastruktur; was das Projekt nicht pinnt, darf hier nicht mitreden.
+
+    Rueckgabe None, wenn kein Manifest lesbar ist — dann bleibt das alte
+    Verhalten, damit die Pruefung auch ohne Projektkontext etwas sagt.
+    """
+    try:
+        deps = json.load(open(manifest, encoding="utf-8"))["dependencies"]
+    except (OSError, json.JSONDecodeError, KeyError, TypeError):
+        return None
+    return {f"{n}#{v}" for n, v in deps.items()}
+
+
+def load_codesystems(allowed=None):
+    """code -> (display, {lang: {designation}}) je CodeSystem-URL, nur content=complete."""
     out = {}
     for pkg in sorted(glob.glob(os.path.join(PKG_ROOT, "*", "package"))):
+        if allowed is not None and os.path.basename(os.path.dirname(pkg)) not in allowed:
+            continue
         for f in codesystem_files(pkg):
             try:
                 d = json.load(open(f, encoding="utf-8"))
@@ -138,13 +166,20 @@ def main():
                     default="kds-testdata/fsh-generated/resources")
     ap.add_argument("--lang", default="en", help="Default-Sprache des IG")
     ap.add_argument("--quiet", action="store_true", help="nur FALSCH melden")
+    ap.add_argument("--manifest", default="kds-testdata/package.json",
+                    help="FHIR-Manifest, dessen Pins die CodeSystem-Quellen begrenzen")
     a = ap.parse_args()
 
     if not os.path.isdir(a.resources):
         print(f"Verzeichnis nicht gefunden: {a.resources}", file=sys.stderr)
         sys.exit(2)
 
-    cs = load_codesystems()
+    allowed = pinned_packages(a.manifest)
+    if allowed is None:
+        print(f"> Kein Manifest unter {a.manifest} — es werden ALLE Pakete im Cache "
+              f"gelesen; Displays koennen aus einer Version stammen, die das Projekt "
+              f"nicht pinnt.\n")
+    cs = load_codesystems(allowed)
     wrong, case_only, missing, blocked, n = [], [], [], [], 0
     for f in sorted(glob.glob(os.path.join(a.resources, "*.json"))):
         try:

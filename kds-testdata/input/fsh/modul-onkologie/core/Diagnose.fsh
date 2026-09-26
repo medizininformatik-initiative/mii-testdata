@@ -23,7 +23,7 @@ Description: "Onkologie Test Diagnose - Ovarialkarzinom"
 * bodySite.coding[snomed-ct] = $SCT#15497006 "Ovarian structure (body structure)"
 * bodySite.coding[snomed-ct].version = "http://snomed.info/sct/900000000000207008/version/20240201"
 * extension[occurredFollowing].valueReference = Reference(mii-exa-test-data-onko-fruehere-tumorerkrankung-1)
-* code.coding[icd10-gm].extension[Diagnosesicherheit].valueCoding = $diagnosesicherheit#G "gesicherte Diagnose"
+* code.coding[icd10-gm].extension[Diagnosesicherheit].valueCoding = $diagnosesicherheit#G "Gesicherte Diagnose"
 * code.coding[icd10-gm].extension[Seitenlokalisation].valueCoding = $seitenlokalisation#L "links"
 * code.coding[icd10-gm].extension[Mehrfachcodierungs-Kennzeichen].valueCoding = $mehrfachcodierungs-kennzeichen#"!"
 * identifier.system = "https://www.charite.de/fhir/sid/onko-diagnose"

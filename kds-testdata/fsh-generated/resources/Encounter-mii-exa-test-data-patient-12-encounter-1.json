@@ -85,7 +85,7 @@
           {
             "code": "secondary-DRG",
             "system": "http://fhir.de/CodeSystem/KontaktDiagnoseProzedur",
-            "display": "Sekundär-DRG"
+            "display": "DRG-Nebendiagnose"
           }
         ]
       },
