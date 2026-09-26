@@ -72,6 +72,23 @@ jobs:
       run: sushi build --log-level warn .
       working-directory: ./kds-testdata
 
+    # fsh-generated ist im Repo kommittiert (Konvention dieses Repos), und der
+    # Validierungs-Workflow prueft GENAU diesen kommittierten Stand. Wer die
+    # FSH-Quellen aendert und den Neubau nicht mitcommittet, laesst also einen
+    # Stand validieren, den es nicht mehr gibt — und nichts faellt auf. Diese
+    # Pruefung macht daraus einen roten Job.
+    # Nebeneffekt, auf den der Ladetest baut: Ist der kommittierte Stand
+    # nachweislich der gebaute, braucht kein anderer Job mehr auf das
+    # Build-Artefakt zu warten.
+    - name: Verify committed fsh-generated is up to date
+      run: |
+        if ! git diff --quiet -- kds-testdata/fsh-generated; then
+          echo "::error::kds-testdata/fsh-generated weicht vom Neubau ab — bitte 'sushi build .' laufen lassen und das Ergebnis mitcommitten. Abweichende Dateien:"
+          git diff --name-only -- kds-testdata/fsh-generated | head -40
+          exit 1
+        fi
+        echo "::notice::Kommittiertes fsh-generated entspricht dem Neubau."
+
     # Statische Gates: kosten Sekunden und brauchen kein Docker.
     # check-references faengt absolute Referenzen in Kanonikalraeume — genau
     # den Fall, an dem HAPI scheiterte und Blaze nichts merkte.
@@ -146,19 +163,16 @@ jobs:
   # die er selbst toleriert: Blaze akzeptierte bundle-pat-1 mit einer absoluten
   # URL als Specimen-Referenz, HAPI wies dasselbe Bundle mit HTTP 400 zurueck
   # (HAPI-0507, externe Referenz). Erst der Vergleich macht solche Faelle sichtbar.
+  # Laeuft PARALLEL zum Build, nicht danach: Er prueft den kommittierten Stand
+  # von fsh-generated, und dass der dem Neubau entspricht, stellt die
+  # Frischepruefung im Build-Job sicher. Vorher hing er am Build-Artefakt und
+  # verlaengerte damit den kritischen Pfad um seine eigene Laufzeit, ohne
+  # etwas anderes zu pruefen.
   server-load-test:
     runs-on: ubuntu-latest
-    needs: build-kds-testdata
     steps:
     - name: Checkout Project
       uses: actions/checkout@v4
-
-    - name: Download FHIR resources artifact
-      uses: actions/download-artifact@v4
-      with:
-        pattern: "kds-testdata-*"
-        path: ./kds-testdata/fsh-generated
-        merge-multiple: true
 
     - name: Load all bundles into Blaze and HAPI
       run: ./scripts/check-servers.sh ./kds-testdata/fsh-generated/resources

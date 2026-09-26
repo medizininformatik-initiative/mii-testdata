@@ -23,6 +23,15 @@ CI runner) the validator dies with `OutOfMemoryError` at the first resource, aft
 a hundred seconds and without writing a report. With enough heap the whole set takes
 **85 seconds**.
 
+One caveat on absolute counts: they depend on the package cache, not only on the data. The
+same validator over the same resources reports 1,867 errors against a hand-maintained
+`~/.fhir` and 1,696 in CI, which resolves packages from the
+[MII package store](https://github.com/medizininformatik-initiative/fhir-package-store) and
+therefore sees different snapshot variants. Only figures measured in one and the same
+environment can be compared — which is why the regression gate in CI compares a CI run
+against a CI run, never against a number from a laptop. The pair quoted above (2,687 and
+1,867, hence 820 suppressed) comes from one local environment.
+
 ### Two views of the same data, and they are not redundant
 
 Before reading any count, know what it counts. The resource directory holds both the

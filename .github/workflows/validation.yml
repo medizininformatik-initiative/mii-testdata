@@ -51,11 +51,22 @@ permissions:
 
 env:
   VALIDATOR_VERSION: 6.9.11
-  # Gemessene Obergrenze der letzten Laeufe: 2687 Errors ohne advisor.json,
-  # 1867 mit. Der Job schlaegt an, wenn die Zahl STEIGT — die absolute Hoehe ist
-  # eine Aussage ueber die Ballot-Profile, keine ueber die Testdaten, und ein
-  # dauerhaft roter Job wird ignoriert statt gelesen.
-  ERROR_BASELINE: 1867
+  # Zahl aus Lauf 36230924064 in DIESER Umgebung. Der Job schlaegt an, wenn sie
+  # STEIGT — die absolute Hoehe ist eine Aussage ueber die Ballot-Profile, keine
+  # ueber die Testdaten, und ein dauerhaft roter Job wird ignoriert statt
+  # gelesen.
+  #
+  # Die Zahl ist an den Paket-Cache gebunden, nicht nur an die Daten: derselbe
+  # Validator (6.9.11) und dieselben Ressourcen ergeben lokal 1887 und hier
+  # 1696, weil der fhir-package-store andere Snapshot-Varianten mitbringt als
+  # ein von Hand gepflegter ~/.fhir. Verglichen wird deshalb ausschliesslich
+  # CI-Lauf gegen CI-Lauf; eine lokale Zahl taugt zur Orientierung, nicht als
+  # Baseline.
+  #
+  # Nach jeder Aenderung am Datenbestand oder an den Paket-Pins neu erheben:
+  # den Lauf ansehen, die gemeldete Zahl hier eintragen, und im Commit sagen
+  # warum sie sich bewegt hat.
+  ERROR_BASELINE: 1696
 
 jobs:
   java-validation:
