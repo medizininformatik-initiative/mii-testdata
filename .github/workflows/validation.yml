@@ -51,7 +51,16 @@ permissions:
 
 env:
   VALIDATOR_VERSION: 6.9.11
-  # Zahl aus Lauf 36230924064 in DIESER Umgebung. Der Job schlaegt an, wenn sie
+  # Zahl aus Lauf 36249210298 in DIESER Umgebung (vorher 1696, Lauf
+  # 36230924064). Gestiegen durch den Merge von PR #48: vier
+  # modulübergreifende Patienten bringen 187 Fehler mit, praktisch
+  # ausschliesslich dieselben Profildefekte an neuen Instanzen.
+  #
+  # Die Zahl ist zweimal gemessen worden, und der Umweg lohnt die Notiz: Ein
+  # Zwischenstand meldete 1885, weil eine Display-'Korrektur' von mir zwei
+  # Fehler HINZUFUEGTE (siehe 2b2388cc). Haette ich die Baseline damals auf die
+  # gemeldete Zahl gesetzt, waeren die beiden Fehler zum Normalzustand
+  # geworden. Eine Baseline gehoert auf eine Zahl, die man versteht. Der Job schlaegt an, wenn sie
   # STEIGT — die absolute Hoehe ist eine Aussage ueber die Ballot-Profile, keine
   # ueber die Testdaten, und ein dauerhaft roter Job wird ignoriert statt
   # gelesen.
@@ -79,7 +88,7 @@ env:
   # Nach jeder Aenderung am Datenbestand oder an den Paket-Pins neu erheben:
   # den Lauf ansehen, die gemeldete Zahl hier eintragen, und im Commit sagen
   # warum sie sich bewegt hat.
-  ERROR_BASELINE: 1696
+  ERROR_BASELINE: 1883
 
 jobs:
   java-validation:
