@@ -201,41 +201,60 @@ jobs:
   # ICD-O-3-Wertemengen der Onkologie, definiert ueber
   # `filter: concept descendent-of 'T'` auf einem CodeSystem mit
   # `content: not-present` — sie koennen ohne Terminologieserver NIE expandieren,
-  # also ist per Konstruktion kein Code darin. Der SU-TermServ hat ICD-O-3.
-  # Dazu kommt die Verstaerkung: Eine Condition mit zwei solchen Fehlern
-  # erzeugte 89 Referenzfehler an anderen Stellen.
+  # also ist per Konstruktion kein Code darin, auch ein voellig korrekter nicht.
+  # Dazu die Verstaerkung: Eine Condition mit zwei solchen Fehlern erzeugte 89
+  # Referenzfehler an anderen Stellen.
   #
-  # Warum eine STICHPROBE und nicht der ganze Bestand: Ein Vollauf schaffte in
-  # 120 Minuten elf von 1369 Ressourcen (Lauf 36258544207), einzelne brauchten
-  # bis zu 8:48. Das ist keine Frage des Deckels — hochgerechnet waeren es Tage,
-  # und GitHub erlaubt je Job hoechstens sechs Stunden. Der Job prueft deshalb
-  # die vier terminologisch dichtesten Bundles; die Auswahl und ihre Zahlen
-  # stehen am Validierungsschritt.
+  # EIN BUNDLE JE JOB, und das loest genau das Problem, an dem der erste Versuch
+  # gescheitert ist. Gemessen (Lauf 36258544207): In 120 Minuten schaffte ein
+  # Vollauf ELF von 1369 Ressourcen, einzelne brauchten bis zu 8:48;
+  # hochgerechnet waeren das Tage. GitHub deckelt einen Job bei sechs Stunden —
+  # die Grenze gilt aber PRO JOB. Die Arbeit zu zerlegen umgeht sie also, ohne
+  # etwas wegzulassen.
+  #
+  # Und sie halbiert die Arbeit. Der Validator prueft die Eintraege eines
+  # Bundles mit; von 1336 Einzelressourcen stecken 1327 auch in einem Bundle.
+  # Der uebliche Lauf ueber beides validiert also praktisch jede Ressource
+  # zweimal. Die 32 Bundles plus ein Paket fuer die 9 Ressourcen ohne Bundle
+  # decken denselben Bestand ab: 41 Dateien statt 1369, vollstaendig.
+  #
+  # max-parallel: 1 ist Absicht und keine Sparmassnahme. Der SU-TermServ ist
+  # geteilte Infrastruktur; 33 gleichzeitige Validatoren waeren unhoeflich und
+  # wuerden die Antwortzeiten fuer alle verschlechtern — also genau das
+  # verstaerken, weswegen dieser Job ueberhaupt zerlegt werden musste. Serialisiert
+  # sieht der Server immer nur einen Client, und jedes Paket hat seinen eigenen
+  # Deckel.
   #
   # Naechtlich, auf Abruf und NICHT blockierend: Er berichtet, er verhindert
   # nicht. Ein Tor kann er nicht werden, solange seine Laufzeit an der
   # Antwortzeit eines fremden Servers haengt.
-  #
-  # Ein Antwort-Cache im Proxy war der naheliegende Versuch, die Laufzeit zu
-  # senken, und er ist GEMESSEN gescheitert. Eine erste Messung an fuenf
-  # Anfragen ergab 42 % Trefferquote und sah vielversprechend aus; unter
-  # realistischer Last (Onkologie- und MTB-Bundle, frischer Cache, POST-Caching
-  # mit Body im Schluessel) sind es 1,6 % — 3 HIT gegen 186 MISS, davon 184
-  # POST-MISS. Der Grund liegt im Arbeitsablauf: Die Grundlast sind lauter
-  # VERSCHIEDENE Codes, jeder genau einmal validiert. Ein Cache senkt den
-  # Ueberhang wiederholter Systemabfragen, nicht die Grundlast.
-  #
-  # Der Job benutzt deshalb denselben schlichten Proxy wie die uebrigen
-  # Workflows. Die Laufzeit wird nicht wegoptimiert, sondern ausgehalten: 330
-  # Minuten Deckel, naechtlich, nicht blockierend. Vier Minuten fuer zwei
-  # Bundles rechnen sich so hoch — jede Beschleunigung muesste beim
-  # Terminologieserver ansetzen, nicht bei uns.
-  java-validation-tx:
-    name: HL7 Java validator (mit SU-TermServ)
+  tx-pakete:
+    name: Arbeitspakete bestimmen
     if: ${{ vars.ENABLE_VALIDATION != 'false' && (github.event_name == 'schedule' || github.event_name == 'workflow_dispatch') }}
     runs-on: ubuntu-latest
-    timeout-minutes: 150
+    outputs:
+      pakete: ${{ steps.m.outputs.pakete }}
+    steps:
+    - uses: actions/checkout@v4
+    - id: m
+      run: |
+        echo "pakete=$(python3 scripts/tx-matrix.py kds-testdata/fsh-generated/resources)" \
+          >> "$GITHUB_OUTPUT"
+
+  java-validation-tx:
+    name: "tx: ${{ matrix.paket.name }}"
+    needs: tx-pakete
+    runs-on: ubuntu-latest
+    # Je Paket. Das groesste Bundle (icu-1, 183 Eintraege) lag beim Vollauf bei
+    # rund einer halben Stunde; 120 Minuten lassen reichlich Luft, ohne einen
+    # Haenger unbegrenzt stehen zu lassen.
+    timeout-minutes: 120
     continue-on-error: true
+    strategy:
+      fail-fast: false
+      max-parallel: 1
+      matrix:
+        paket: ${{ fromJSON(needs.tx-pakete.outputs.pakete) }}
     steps:
     - name: Checkout Project
       uses: actions/checkout@v4
@@ -265,7 +284,7 @@ jobs:
         PASS: ${{ secrets.CDS_DEV_CLIENT_CERT_PASSWORD }}
       run: |
         if [ -z "$CERT" ] || [ -z "$KEY" ] || [ -z "$PASS" ]; then
-          echo "::warning::Kein SU-TermServ-Zertifikat — dieser Job hat ohne Terminologieserver keinen Zweck und wird uebersprungen."
+          echo "::warning::Kein SU-TermServ-Zertifikat — dieser Job hat ohne Terminologieserver keinen Zweck."
           echo "tx=" >> "$GITHUB_OUTPUT"; exit 0
         fi
         mkdir -p nginx/certs
@@ -278,14 +297,11 @@ jobs:
           -v "$PWD/nginx/certs:/etc/nginx/certs:ro" \
           -p 8090:80 nginx:alpine
         sleep 5
-        # Warmlauf mit dem Accept-Header des Validators, damit Readiness-Check
-        # und Validator denselben Cache-Eintrag treffen (der Server schickt
-        # `Vary: Accept`).
         if curl -fsS -o /dev/null -H "Accept: application/fhir+json" \
              --max-time 300 "http://127.0.0.1:8090/fhir/metadata"; then
           echo "tx=http://127.0.0.1:8090/fhir" >> "$GITHUB_OUTPUT"
         else
-          echo "::warning::SU-TermServ nicht erreichbar — Job ohne Aussage."
+          echo "::warning::SU-TermServ nicht erreichbar — Paket ohne Aussage."
           echo "tx=" >> "$GITHUB_OUTPUT"
         fi
 
@@ -306,40 +322,26 @@ jobs:
       if: steps.tx.outputs.tx != ''
       env:
         TX: ${{ steps.tx.outputs.tx }}
+        FILES: ${{ matrix.paket.files }}
       run: |
         IGS=$(jq -r '.dependencies | to_entries | map("-ig " + .key + "#" + .value) | join(" ")' \
                 kds-testdata/package.json)
         RES="$GITHUB_WORKSPACE/kds-testdata/fsh-generated/resources"
-        # NUR eine Teilmenge, und das ist gemessen notwendig: Der Lauf ueber
-        # ALLE 1369 Ressourcen schaffte in 120 Minuten elf davon, einzelne
-        # brauchten bis zu 8:48 (Lauf 36258544207). Hochgerechnet waeren das
-        # Tage; GitHubs Maximum je Job liegt bei sechs Stunden. Gegen
-        # tx.fhir.org dauerte dieselbe Arbeit etwa ein Siebtel — die Laufzeit
-        # haengt an der Antwortzeit des SU-TermServ, nicht an der Datenmenge.
-        #
-        # Ausgewaehlt sind die vier Bundles mit der hoechsten Dichte an
-        # BfArM- und MII-Codes, denn genau die kann der schnelle Lauf nicht
-        # pruefen (gezaehlt wurden Codes aus bfarm/*, icd-o-3, ask, atc und
-        # medizininformatik-initiative-Systemen):
-        #
-        #   onkologie-1  158 Codes / 117 Entries   ICD-O-3, ICD-10-GM, OPS
-        #   mtb-1         81 Codes /  70 Entries   ICD-O-3, MII-MTB-Systeme
-        #   mikrobio-1    69 Codes /  73 Entries   MII-Mikrobiologie
-        #   pro-1         41 Codes /  30 Entries   MII-PRO-Instrumente
-        #
-        # Das ist ausdruecklich eine STICHPROBE, keine Vollpruefung. Was in den
-        # uebrigen Bundles terminologisch falsch ist, findet dieser Job nicht.
-        java -Xmx14g -jar validator_cli.jar \
-          "$RES"/Bundle-mii-exa-test-data-bundle-onkologie-1.json \
-          "$RES"/Bundle-mii-exa-test-data-bundle-mtb-1.json \
-          "$RES"/Bundle-mii-exa-test-data-bundle-mikrobio-1.json \
-          "$RES"/Bundle-mii-exa-test-data-bundle-pro-1.json \
+        # Die Dateien dieses Pakets, absolut. FILES ist leerzeichengetrennt und
+        # enthaelt nur von tx-matrix.py erzeugte Dateinamen — kein Nutzereingabe.
+        ziele=""
+        for f in $FILES; do ziele="$ziele $RES/$f"; done
+        # -ig auf das ganze Verzeichnis, damit Referenzen ausserhalb des Pakets
+        # aufloesen; validiert wird aber nur, was in $ziele steht.
+        # -authorise-non-conformant-tx-servers, weil validator_cli den
+        # SU-TermServ sonst ablehnt und mit 1 endet.
+        java -Xmx14g -jar validator_cli.jar $ziele \
           -version 4.0.1 $IGS -ig "$RES" \
           -tx "$TX" -authorise-non-conformant-tx-servers \
           -advisor-file kds-testdata/advisor.json \
           -output "$GITHUB_WORKSPACE/validation-tx.json" || true
         [ -s validation-tx.json ] || {
-          echo "::warning::Kein Ergebnis — Terminologieserver zu langsam oder Lauf abgebrochen."
+          echo "::warning::Kein Ergebnis fuer ${{ matrix.paket.name }} — Server zu langsam oder Lauf abgebrochen."
           exit 0
         }
 
@@ -354,68 +356,20 @@ jobs:
                   if i.get("severity") in ("error", "fatal")))
         PY
         )
-        {
-          echo "### Mit SU-TermServ: $N Errors"
-          echo
-          echo "Stichprobe: onkologie-1, mtb-1, mikrobio-1, pro-1 — die vier Bundles mit"
-          echo "der hoechsten Dichte an BfArM- und MII-Codes. NICHT mit der Baseline"
-          echo "${ERROR_BASELINE} des schnellen Laufs vergleichbar, die ueber alle 1369"
-          echo "Ressourcen geht. Die Aussage dieses Jobs sind die Befunde selbst: was nur"
-          echo "mit Terminologieserver sichtbar wird, in beide Richtungen —"
-          echo "Bindungsverletzungen, die dort auffallen, und Wertemengen, die ohne Server"
-          echo "gar nicht expandieren koennen."
-        } >> "$GITHUB_STEP_SUMMARY"
-        python3 scripts/advisor-rules.py validation-tx.json --top 14 >> "$GITHUB_STEP_SUMMARY"
+        echo "### ${{ matrix.paket.name }} — $N Errors mit SU-TermServ" >> "$GITHUB_STEP_SUMMARY"
+        python3 scripts/advisor-rules.py validation-tx.json --top 8 >> "$GITHUB_STEP_SUMMARY"
 
-    # Das Zugriffsprotokoll des Proxys landet im Container, nicht im Job-Log —
-    # damit waere genau das unbeobachtbar, worum es bei dieser Konfiguration
-    # geht: ob der POST-Cache greift. Deshalb vor dem Abraeumen auswerten.
-    - name: Proxy-Statistik und Abbau
+    - name: Stop proxy
       if: always()
-      run: |
-        if docker inspect nginx-tx >/dev/null 2>&1; then
-          docker logs nginx-tx > /tmp/nginx-tx.log 2>&1 || true
-          {
-            echo "### Terminologie-Proxy"
-            echo
-            echo '| Methode | Cache | Anfragen |'
-            echo '|---|---|---:|'
-            awk '$1 ~ /^(GET|POST|HEAD)$/ {
-                   split($3, c, "="); print $1 "\t" (c[2] == "" ? "-" : c[2])
-                 }' /tmp/nginx-tx.log \
-              | sort | uniq -c | sort -rn \
-              | awk '{ printf "| %s | %s | %s |\n", $2, $3, $1 }'
-            echo
-            hit=$(grep -c "cache=HIT" /tmp/nginx-tx.log || true)
-            mis=$(grep -c "cache=MISS" /tmp/nginx-tx.log || true)
-            tot=$((hit + mis))
-            if [ "$tot" -gt 0 ]; then
-              echo "Trefferquote: $hit von $tot ($((100 * hit / tot)) %)."
-              echo "Ohne POST-Caching waere sie fuer die \$validate-code-Aufrufe null —"
-              echo "siehe su-termserv-nginx.conf."
-            else
-              echo "Keine cache-Zeilen im Protokoll: Der Validator hat den Proxy nicht benutzt."
-            fi
-          } >> "$GITHUB_STEP_SUMMARY"
-          docker rm -f nginx-tx >/dev/null 2>&1 || true
-        fi
-
-    - name: Upload proxy log
-      if: always()
-      uses: actions/upload-artifact@v4
-      with:
-        name: nginx-tx-log
-        path: /tmp/nginx-tx.log
-        retention-days: 7
-        if-no-files-found: ignore
+      run: docker rm -f nginx-tx 2>/dev/null || true
 
     - name: Upload report
       if: always()
       uses: actions/upload-artifact@v4
       with:
-        name: validation-report-tx
-        path: |
-          validation-tx.json
+        # Artefaktname je Paket eindeutig, sonst kollidieren die Matrix-Jobs.
+        name: validation-tx-${{ strategy.job-index }}
+        path: validation-tx.json
         retention-days: 14
-        if-no-files-found: warn
+        if-no-files-found: ignore
         compression-level: 9
