@@ -171,8 +171,16 @@ jobs:
         # Ein gesunder Lauf braucht ~25 min; alles darueber ist ein haengender
         # Terminologie-Call. Ohne Deckel laeuft der Job ins 6h-Limit und der
         # Fallback greift nie (er triggert nur bei Exit!=0, nicht bei Haenger).
+        #
+        # -Xmx14g statt 6g: Mit 6g ist der Lauf am 2026-09-26 nach 50 Minuten in
+        # `OutOfMemoryError: Java heap space` gelaufen. Der IG umfasst inzwischen
+        # 1369 Ressourcen, und der Publisher rendert je Ressource eine Seite.
+        # 14g ist das praktische Maximum auf einem Standard-Runner (16 GB);
+        # derselbe Wert wie beim Validator, aus demselben Grund.
+        # Deckel entsprechend von 50 auf 100 Minuten — er soll Haenger fangen,
+        # nicht gesunde Laeufe abschneiden.
         build() {
-          timeout 50m java -Xmx6g -Dfile.encoding=UTF-8 -jar ../publisher.jar \
+          timeout 100m java -Xmx14g -Dfile.encoding=UTF-8 -jar ../publisher.jar \
             -ig . -tx "$1" -packages ../local-packages \
             -fhir-settings "$GITHUB_WORKSPACE/.github/fhir-settings.json"
         }

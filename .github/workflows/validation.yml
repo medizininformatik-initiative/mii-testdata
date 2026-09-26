@@ -212,15 +212,25 @@ jobs:
   # verhindert nicht. Sobald seine Laufzeit ueber mehrere Wochen stabil ist,
   # kann er ein Tor mit eigener Baseline werden.
   #
-  # Der Proxy ist ein anderer als in den uebrigen Workflows: Er cacht auch
-  # POST-Antworten und fuehrt abgebrochene Upstream-Anfragen zu Ende. Beides ist
-  # notwendig und beides war im ersten Versuch falsch — die Begruendung steht in
-  # su-termserv-nginx-cache.conf.
+  # Ein Antwort-Cache im Proxy war der naheliegende Versuch, die Laufzeit zu
+  # senken, und er ist GEMESSEN gescheitert. Eine erste Messung an fuenf
+  # Anfragen ergab 42 % Trefferquote und sah vielversprechend aus; unter
+  # realistischer Last (Onkologie- und MTB-Bundle, frischer Cache, POST-Caching
+  # mit Body im Schluessel) sind es 1,6 % — 3 HIT gegen 186 MISS, davon 184
+  # POST-MISS. Der Grund liegt im Arbeitsablauf: Die Grundlast sind lauter
+  # VERSCHIEDENE Codes, jeder genau einmal validiert. Ein Cache senkt den
+  # Ueberhang wiederholter Systemabfragen, nicht die Grundlast.
+  #
+  # Der Job benutzt deshalb denselben schlichten Proxy wie die uebrigen
+  # Workflows. Die Laufzeit wird nicht wegoptimiert, sondern ausgehalten: 330
+  # Minuten Deckel, naechtlich, nicht blockierend. Vier Minuten fuer zwei
+  # Bundles rechnen sich so hoch — jede Beschleunigung muesste beim
+  # Terminologieserver ansetzen, nicht bei uns.
   java-validation-tx:
     name: HL7 Java validator (mit SU-TermServ)
     if: ${{ vars.ENABLE_VALIDATION != 'false' && (github.event_name == 'schedule' || github.event_name == 'workflow_dispatch') }}
     runs-on: ubuntu-latest
-    timeout-minutes: 120
+    timeout-minutes: 330
     continue-on-error: true
     steps:
     - name: Checkout Project
@@ -260,7 +270,7 @@ jobs:
         openssl rsa -in nginx/certs/client-key-encrypted.key \
           -out nginx/certs/client-key.key -passin env:PASS
         docker run -d --name nginx-tx \
-          -v "$PWD/.github/workflows/su-termserv-nginx-cache.conf:/etc/nginx/nginx.conf:ro" \
+          -v "$PWD/.github/workflows/su-termserv-nginx.conf:/etc/nginx/nginx.conf:ro" \
           -v "$PWD/nginx/certs:/etc/nginx/certs:ro" \
           -p 8090:80 nginx:alpine
         sleep 5
@@ -354,7 +364,7 @@ jobs:
             if [ "$tot" -gt 0 ]; then
               echo "Trefferquote: $hit von $tot ($((100 * hit / tot)) %)."
               echo "Ohne POST-Caching waere sie fuer die \$validate-code-Aufrufe null —"
-              echo "siehe su-termserv-nginx-cache.conf."
+              echo "siehe su-termserv-nginx.conf."
             else
               echo "Keine cache-Zeilen im Protokoll: Der Validator hat den Proxy nicht benutzt."
             fi
