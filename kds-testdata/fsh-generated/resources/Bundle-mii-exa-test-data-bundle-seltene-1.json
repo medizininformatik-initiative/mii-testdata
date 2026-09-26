@@ -164,17 +164,9 @@
           {
             "coding": [
               {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
                 "code": "vital-signs",
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
                 "display": "Vital Signs"
-              }
-            ]
-          },
-          {
-            "coding": [
-              {
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-                "code": "vital-signs"
               }
             ]
           }

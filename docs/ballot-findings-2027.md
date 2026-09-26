@@ -402,7 +402,120 @@ Display-Fehler mitverdeckt.
 
 ---
 
-## 9. Bereits gemeldet (Referenz)
+## 9. ICU-Beatmungsparameter widersprechen ihren eigenen Basisprofilen
+
+Die Beatmungs-Observations leiten (über `mii-pr-icu-parameter-von-beatmung`) von den
+FHIR-Vitalparameter-Profilen ab und verengen danach genau die Elemente, die das Basisprofil
+fordert. Zwei Fälle, beide **unerfüllbar**:
+
+### `mii-pr-icu-vent-mechanische-atemfrequenz-beatmet` gegen `resprate`
+
+```
+Observation.category                     [1..1]   discriminator pattern:$this
+Observation.category:kuenstlicheBeatmung [1..1]   pattern = sct#40617009
+Observation.code.coding:loinc            [1..1]   pattern = loinc#33438-3
+```
+
+`http://hl7.org/fhir/StructureDefinition/resprate` verlangt zwei Dinge, die damit beide
+ausgeschlossen sind:
+
+- einen `category:VSCat`-Slice mit `observation-category#vital-signs`. `category` ist aber
+  auf **`1..1`** verengt, und der einzige Platz ist von `kuenstlicheBeatmung` belegt. Der
+  Validator meldet *„Slice 'Observation.category:VSCat': a matching slice is required, but
+  not found"* — und es gibt keinen Weg, ihn zu erfüllen.
+- den „magic code" `loinc#9279-1` an `Observation.code`. Der `loinc`-Slice ist auf
+  **`1..1`** mit dem Muster `33438-3` festgelegt; eine zweite LOINC-Codierung passt in
+  keinen Slot. Der Hinweis der Meldung, weitere Codes seien „allowed in addition", trifft
+  hier also nicht zu.
+
+Und drittens fixiert das Profil die Einheit auf `{Breaths}/min`, während `resprate`
+`/min` fixiert. Dieser Widerspruch ist der handgreiflichste, weil er die Werkzeuge
+gegeneinander stellt: Mit `/min` bricht **SUSHI** den Build ab
+
+```
+Cannot assign 12 '/min' to this element; a different Quantity is already assigned:
+{"system":"http://unitsofmeasure.org","code":"{Breaths}/min"}
+```
+
+und mit `{Breaths}/min` meldet der **Validator**
+
+```
+Value is '{Breaths}/min' but is fixed to '/min' in the profile
+http://hl7.org/fhir/StructureDefinition/resprate|4.0.1#Observation.value[x]:valueQuantity.code
+```
+
+Es gibt keine Variante, die beide Werkzeuge passieren lässt. Die Testdaten schreiben
+`{Breaths}/min`, weil nur so überhaupt eine Instanz entsteht.
+
+Dieselbe Klasse wie Befund 6 bei der Lungenfunktion: Ein Standard-Vitalparameterprofil wird
+als Basis gewählt und anschliessend gebrochen. Für die Beatmungsfrequenz ist die Ableitung
+von `resprate` inhaltlich ohnehin fraglich — eine Beatmungsfrequenz am Gerät ist keine
+Atemfrequenz des Patienten.
+
+### `mii-pr-icu-vent-maximaler-beatmungsdruck`: ein Slice ohne Muster verschluckt den geforderten
+
+```
+Observation.code.coding        [2..*]  discriminator pattern:$this
+Observation.code.coding:sct    [0..*]  KEIN Muster, aber system fixiert auf snomed.info/sct
+Observation.code.coding:loinc  [1..1]  pattern = loinc#76531-3
+Observation.code.coding:IEEE-11073 [1..1] pattern = 151957
+```
+
+Der `sct`-Slice definiert an `$this` kein Muster, obwohl der Diskriminator genau dort
+hinsieht. Er trifft damit **jede** Codierung. Die geforderte IEEE-11073-Codierung landet in
+ihm, und der Validator meldet gleich dreifach:
+
+```
+Observation.code.coding[2]         Element matches more than one slice - sct, IEEE-11073
+Observation.code                   Slice 'Observation.code.coding:IEEE-11073': a matching
+                                   slice is required, but not found
+Observation.code.coding[2].system  Value is 'urn:iso:std:iso:11073:10101' but is fixed to
+                                   'http://snomed.info/sct'
+```
+
+Das Profil verlangt also eine Codierung und macht sie sich selbst unmöglich. Betroffen sind
+alle Beatmungsprofile mit `IEEE-11073`-Slice.
+
+### Vorschlag
+
+`coding:sct` ein Muster geben (`system` **und** `code`), wie `loinc` und `IEEE-11073` es
+haben — ein Slice unter einem `pattern:$this`-Diskriminator ohne Muster ist immer ein
+Fehler. `Observation.category` auf `1..*` öffnen und den `VSCat`-Slice der Basis erben statt
+ihn zu verdrängen. Und für die Atemfrequenz entweder den magic code zulassen (`loinc`-Slice
+auf `1..*`) oder nicht von `resprate` ableiten.
+
+---
+
+## 10. `Medication.ingredient`: `type`-Diskriminator kann die Slices nicht trennen
+
+`mii-pr-lungenfunktion-methacholine` sliced `Medication.ingredient` mit
+`discriminator type:$this` und definiert zwei Slices, die sich inhaltlich unterscheiden:
+
+```
+Medication.ingredient:Wirkstoff.isActive  [0..1]  pattern = true
+Medication.ingredient:Loesung.isActive    [0..1]  pattern = false
+```
+
+`Medication.ingredient` ist ein BackboneElement — beide Slices haben denselben Typ, und ein
+`type`-Diskriminator kann sie deshalb grundsätzlich nicht unterscheiden. Beide Zutaten
+fallen in den ersten Slice, was zwei Fehler nach sich zieht:
+
+```
+Medication.ingredient:Wirkstoff: max allowed = 1, but found 2
+Medication.ingredient[1].isActive: Value is 'false' but is fixed to 'true'
+```
+
+Die Testdaten sind hier korrekt gedacht (Methacholin als Wirkstoff, Wasser als Lösung, genau
+wie die Slices es vorsehen) und dennoch nicht validierbar.
+
+**Vorschlag:** Diskriminator auf `pattern` mit `path: isActive` umstellen — das ist das
+Merkmal, in dem sich die Slices tatsächlich unterscheiden. Verwandt mit
+[kerndatensatz-lungenfunktion#45](https://github.com/medizininformatik-initiative/kerndatensatz-lungenfunktion/issues/45),
+wo `type`/`$this` auf Reference-Slices dasselbe Problem erzeugt.
+
+---
+
+## 11. Bereits gemeldet (Referenz)
 
 | Befund | Ticket |
 |---|---|

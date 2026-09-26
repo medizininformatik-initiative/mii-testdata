@@ -23,14 +23,23 @@ CI runner) the validator dies with `OutOfMemoryError` at the first resource, aft
 a hundred seconds and without writing a report. With enough heap the whole set takes
 **85 seconds**.
 
-One caveat on absolute counts: they depend on the package cache, not only on the data. The
-same validator over the same resources reports 1,867 errors against a hand-maintained
-`~/.fhir` and 1,696 in CI, which resolves packages from the
-[MII package store](https://github.com/medizininformatik-initiative/fhir-package-store) and
-therefore sees different snapshot variants. Only figures measured in one and the same
-environment can be compared — which is why the regression gate in CI compares a CI run
-against a CI run, never against a number from a laptop. The pair quoted above (2,687 and
-1,867, hence 820 suppressed) comes from one local environment.
+One caveat on absolute counts: whether a terminology cache is present changes them. The
+same validator over the same resources reports 1,887 errors on a developer machine and
+1,696 in CI, and the 191-error gap is entirely terminological — 131 communication failures
+against `tx.fhir.org` (socket timeouts, a stale `cache-id`), 38 value-set membership checks,
+16 display checks. A local `~/.fhir` that carries a terminology cache reaches out to
+`tx.fhir.org` even under `-tx n/a`; the freshly cloned cache in CI does not.
+
+The structural classes are identical down to the count — `SLICING_CANNOT_BE_EVALUATED`
+379/379, `Validation_VAL_Profile_MatchMultiple` 446/446,
+`Validation_VAL_Profile_Minimum_SLICE` 232/232. That is the premise the terminology-free
+run rests on, and it is measured rather than assumed.
+
+What such a run cannot see is value-set membership: 38 codes that violate their binding stay
+invisible without a server, among them 26 against *MII VS Prozedur Durchführungsabsicht*.
+That is the price of a reproducible baseline, and it is not a claim that the data is
+terminologically clean. Compare CI runs with CI runs only; a figure from a laptop is an
+orientation, never the baseline.
 
 ### Two views of the same data, and they are not redundant
 

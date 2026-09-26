@@ -139,9 +139,10 @@ Description: "Onkologie Test KRK Stoma Markierung"
 * statusReason = $SCT#397943006 "Planned (qualifier value)"
 * bodySite.coding[snomed-ct] = $SCT#699600004 "Structure of left lower quadrant of abdomen (body structure)"
 * bodySite.coding[snomed-ct].version = "http://snomed.info/sct/900000000000207008/version/20240201"
-* code.coding[ops] = $OPS#5-460 "Anlegen eines Enterostomas, doppelläufig, als selbständiger Eingriff"
-* code.coding[ops].version = "2021"
-* code.coding[ops].extension[Seitenlokalisation].valueCoding = $icd-seitenlokalisation#T "trifft nicht zu"
+// Kein OPS-Kode: mii-pr-onko-krk-stoma-markierung FIXIERT Procedure.code auf die
+// SNOMED-Codierung, jede weitere Codierung verletzt das. Der bisherige Kode war
+// ausserdem der falsche Sachverhalt — 5-460 ist das ANLEGEN eines Enterostomas,
+// hier geht es um das Markieren der geplanten Stelle.
 * encounter = Reference(mii-exa-test-data-onko-encounter-1)
 * extension[Dokumentationsdatum].valueDateTime = "2021-09-25"
 * extension[durchfuehrungsabsicht].valueCoding = $SCT#262202000 "Therapeutic"

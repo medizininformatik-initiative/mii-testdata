@@ -6428,8 +6428,8 @@
     "fshName": "mii-exa-test-data-patient-1-icu-vent-compliance-1",
     "fshType": "Instance",
     "fshFile": "modul-icu/Observation.fsh",
-    "startLine": 1361,
-    "endLine": 1379
+    "startLine": 1364,
+    "endLine": 1382
   },
   {
     "outputFile": "Observation-mii-exa-test-data-patient-1-icu-vent-compliance-dar-1.json",
@@ -6444,8 +6444,8 @@
     "fshName": "mii-exa-test-data-patient-1-icu-vent-dp-1",
     "fshType": "Instance",
     "fshFile": "modul-icu/Observation.fsh",
-    "startLine": 1381,
-    "endLine": 1399
+    "startLine": 1384,
+    "endLine": 1402
   },
   {
     "outputFile": "Observation-mii-exa-test-data-patient-1-icu-vent-dp-dar-1.json",
@@ -6517,7 +6517,7 @@
     "fshType": "Instance",
     "fshFile": "modul-icu/Observation.fsh",
     "startLine": 1180,
-    "endLine": 1199
+    "endLine": 1202
   },
   {
     "outputFile": "Observation-mii-exa-test-data-patient-1-icu-vent-freq-mech-dar-1.json",
@@ -6532,8 +6532,8 @@
     "fshName": "mii-exa-test-data-patient-1-icu-vent-freq-spont-1",
     "fshType": "Instance",
     "fshFile": "modul-icu/Observation.fsh",
-    "startLine": 1243,
-    "endLine": 1260
+    "startLine": 1246,
+    "endLine": 1263
   },
   {
     "outputFile": "Observation-mii-exa-test-data-patient-1-icu-vent-freq-spont-dar-1.json",
@@ -6548,8 +6548,8 @@
     "fshName": "mii-exa-test-data-patient-1-icu-vent-freq-spont-mech-1",
     "fshType": "Instance",
     "fshFile": "modul-icu/Observation.fsh",
-    "startLine": 1262,
-    "endLine": 1281
+    "startLine": 1265,
+    "endLine": 1284
   },
   {
     "outputFile": "Observation-mii-exa-test-data-patient-1-icu-vent-freq-spont-mech-dar-1.json",
@@ -6580,8 +6580,8 @@
     "fshName": "mii-exa-test-data-patient-1-icu-vent-ie-ratio-1",
     "fshType": "Instance",
     "fshFile": "modul-icu/Observation.fsh",
-    "startLine": 1340,
-    "endLine": 1359
+    "startLine": 1343,
+    "endLine": 1362
   },
   {
     "outputFile": "Observation-mii-exa-test-data-patient-1-icu-vent-ie-ratio-dar-1.json",
@@ -6628,8 +6628,8 @@
     "fshName": "mii-exa-test-data-patient-1-icu-vent-map-1",
     "fshType": "Instance",
     "fshFile": "modul-icu/Observation.fsh",
-    "startLine": 1201,
-    "endLine": 1220
+    "startLine": 1204,
+    "endLine": 1223
   },
   {
     "outputFile": "Observation-mii-exa-test-data-patient-1-icu-vent-map-dar-1.json",
@@ -6676,8 +6676,8 @@
     "fshName": "mii-exa-test-data-patient-1-icu-vent-peep-1",
     "fshType": "Instance",
     "fshFile": "modul-icu/Observation.fsh",
-    "startLine": 1222,
-    "endLine": 1241
+    "startLine": 1225,
+    "endLine": 1244
   },
   {
     "outputFile": "Observation-mii-exa-test-data-patient-1-icu-vent-peep-dar-1.json",
@@ -6756,8 +6756,8 @@
     "fshName": "mii-exa-test-data-patient-1-icu-vent-ps-1",
     "fshType": "Instance",
     "fshFile": "modul-icu/Observation.fsh",
-    "startLine": 1321,
-    "endLine": 1338
+    "startLine": 1324,
+    "endLine": 1341
   },
   {
     "outputFile": "Observation-mii-exa-test-data-patient-1-icu-vent-ps-dar-1.json",
@@ -6836,8 +6836,8 @@
     "fshName": "mii-exa-test-data-patient-1-icu-vent-vt-spont-1",
     "fshType": "Instance",
     "fshFile": "modul-icu/Observation.fsh",
-    "startLine": 1283,
-    "endLine": 1300
+    "startLine": 1286,
+    "endLine": 1303
   },
   {
     "outputFile": "Observation-mii-exa-test-data-patient-1-icu-vent-vt-spont-dar-1.json",
@@ -6852,8 +6852,8 @@
     "fshName": "mii-exa-test-data-patient-1-icu-vent-vt-spont-mech-1",
     "fshType": "Instance",
     "fshFile": "modul-icu/Observation.fsh",
-    "startLine": 1302,
-    "endLine": 1319
+    "startLine": 1305,
+    "endLine": 1322
   },
   {
     "outputFile": "Observation-mii-exa-test-data-patient-1-icu-vent-vt-spont-mech-dar-1.json",
@@ -8381,7 +8381,7 @@
     "fshType": "Instance",
     "fshFile": "modul-onkologie/organ-specific/KRK.fsh",
     "startLine": 127,
-    "endLine": 148
+    "endLine": 149
   },
   {
     "outputFile": "Procedure-mii-exa-test-data-onko-mamma-operation-1.json",
@@ -9196,8 +9196,8 @@
     "fshName": "mii-exa-test-data-onko-krk-specimen-1",
     "fshType": "Instance",
     "fshFile": "modul-onkologie/organ-specific/KRK.fsh",
-    "startLine": 151,
-    "endLine": 164
+    "startLine": 152,
+    "endLine": 165
   },
   {
     "outputFile": "Specimen-mii-exa-test-data-onko-specimen-1.json",

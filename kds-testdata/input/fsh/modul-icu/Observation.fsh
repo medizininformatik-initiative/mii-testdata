@@ -1192,6 +1192,9 @@ Description: "ICU Observation: MII PR ICU Mechanische Atemfrequenz Beatmet"
 * subject = Reference(mii-exa-test-data-icu-patient-1)
 * effectiveDateTime = "2024-05-05T08:00:00+02:00"
 * valueQuantity = 12 '{Breaths}/min' "breaths per minute"
+// Das ICU-Profil fixiert '{Breaths}/min', sein Basisprofil resprate fixiert
+// '/min'. Ein Wechsel auf '/min' bricht den SUSHI-Build, '{Breaths}/min'
+// bricht die Validierung — es gibt keine konforme Variante (Ballot-Befund 9).
 * identifier.system = "https://www.charite.de/fhir/sid/icu-observation-id"
 * identifier.value = "icu-vent-freq-mech-1"
 * encounter = Reference(mii-exa-test-data-icu-encounter-1)

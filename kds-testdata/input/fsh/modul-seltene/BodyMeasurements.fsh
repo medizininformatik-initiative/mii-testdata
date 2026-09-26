@@ -29,7 +29,7 @@ Description: "Kopfumfang Observation - all MS elements"
 * insert TestDataLabel
 * meta.source = "https://www.charite.de/fhir/kds-testdata"
 * status = #final
-* category = $observation-category#vital-signs "Vital Signs"
+* category[VSCat].coding.display = "Vital Signs"
 * code = $loinc#9843-4 "Head Occipital-frontal circumference"
 * subject = Reference(mii-exa-test-data-seltene-patient-1)
 * effectiveDateTime = "2025-03-10T10:00:00+01:00"

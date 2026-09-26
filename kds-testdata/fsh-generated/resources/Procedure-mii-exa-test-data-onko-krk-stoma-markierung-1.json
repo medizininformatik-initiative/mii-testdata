@@ -29,22 +29,6 @@
         "system": "http://snomed.info/sct",
         "code": "225134005",
         "display": "Marking position of planned stoma site (procedure)"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://fhir.de/StructureDefinition/seitenlokalisation",
-            "valueCoding": {
-              "code": "T",
-              "system": "https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_ICD_SEITENLOKALISATION",
-              "display": "trifft nicht zu"
-            }
-          }
-        ],
-        "system": "http://fhir.de/CodeSystem/bfarm/ops",
-        "code": "5-460",
-        "display": "Anlegen eines Enterostomas, doppelläufig, als selbständiger Eingriff",
-        "version": "2021"
       }
     ]
   },

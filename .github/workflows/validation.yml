@@ -56,12 +56,25 @@ env:
   # ueber die Testdaten, und ein dauerhaft roter Job wird ignoriert statt
   # gelesen.
   #
-  # Die Zahl ist an den Paket-Cache gebunden, nicht nur an die Daten: derselbe
-  # Validator (6.9.11) und dieselben Ressourcen ergeben lokal 1887 und hier
-  # 1696, weil der fhir-package-store andere Snapshot-Varianten mitbringt als
-  # ein von Hand gepflegter ~/.fhir. Verglichen wird deshalb ausschliesslich
-  # CI-Lauf gegen CI-Lauf; eine lokale Zahl taugt zur Orientierung, nicht als
-  # Baseline.
+  # Die Zahl gilt nur fuer einen Lauf OHNE Terminologieserver, und das ist
+  # ueberpruefbar: Derselbe Validator (6.9.11) ueber dieselben Ressourcen ergibt
+  # lokal 1887 und hier 1696. Die 191 Fehler Differenz sind restlos
+  # terminologischer Natur — 131 Kommunikationsfehler gegen tx.fhir.org
+  # (SocketTimeout, verwaiste cache-id), 38 ValueSet-Mitgliedschaftspruefungen,
+  # 16 Display-Pruefungen. Ein lokaler `~/.fhir` mit Terminologie-Cache
+  # kontaktiert tx.fhir.org auch bei `-tx n/a`; der frische Cache hier nicht.
+  #
+  # Die strukturellen Klassen sind dabei bis auf die Zahl identisch (SLICING
+  # 379/379, MatchMultiple 446/446, Minimum_SLICE 232/232) — genau das ist die
+  # Annahme, auf der dieser Job beruht, und sie ist damit gemessen.
+  #
+  # Was dieser Lauf dafuer NICHT sieht: ValueSet-Mitgliedschaft. 38 Codes, die
+  # ihre Bindung verletzen, bleiben hier unsichtbar (u.a. 26x 'MII VS Prozedur
+  # Durchfuehrungsabsicht'). Das ist der Preis der Reproduzierbarkeit und keine
+  # Behauptung, die Daten seien terminologisch sauber.
+  #
+  # Verglichen wird deshalb ausschliesslich CI-Lauf gegen CI-Lauf; eine lokale
+  # Zahl taugt zur Orientierung, nicht als Baseline.
   #
   # Nach jeder Aenderung am Datenbestand oder an den Paket-Pins neu erheben:
   # den Lauf ansehen, die gemeldete Zahl hier eintragen, und im Commit sagen
