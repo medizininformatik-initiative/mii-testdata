@@ -1,7 +1,7 @@
 # Known issues
 
-Validating the test data produces **2,687 errors**, and `advisor.json` suppresses about
-**1,490** of them. Almost none of the remainder are defects in the data: they come from the profiles
+Validating the test data leaves **917 errors** in CI, down from **1,883** before the two
+path-free rules below reached the bundle view as well. Almost none of the remainder are defects in the data: they come from the profiles
 the data is built against, and no conformant instance can avoid them. This page states what
 is suppressed, why the rest cannot be, and what would remove either.
 

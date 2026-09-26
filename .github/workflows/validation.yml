@@ -51,10 +51,11 @@ permissions:
 
 env:
   VALIDATOR_VERSION: 6.9.11
-  # Zahl aus Lauf 36249210298 in DIESER Umgebung (vorher 1696, Lauf
-  # 36230924064). Gestiegen durch den Merge von PR #48: vier
-  # modulübergreifende Patienten bringen 187 Fehler mit, praktisch
-  # ausschliesslich dieselben Profildefekte an neuen Instanzen.
+  # Zahl aus Lauf 36255001163 in DIESER Umgebung. Verlauf: 1696 vor dem
+  # Merge von PR #48, 1883 danach (vier modulübergreifende Patienten bringen
+  # 187 Fehler mit, praktisch ausschliesslich dieselben Profildefekte an neuen
+  # Instanzen), 917 seit die beiden pfadlosen Advisor-Regeln auch die
+  # Bundle-Sicht erreichen.
   #
   # Die Zahl ist zweimal gemessen worden, und der Umweg lohnt die Notiz: Ein
   # Zwischenstand meldete 1885, weil eine Display-'Korrektur' von mir zwei
@@ -88,7 +89,7 @@ env:
   # Nach jeder Aenderung am Datenbestand oder an den Paket-Pins neu erheben:
   # den Lauf ansehen, die gemeldete Zahl hier eintragen, und im Commit sagen
   # warum sie sich bewegt hat.
-  ERROR_BASELINE: 1883
+  ERROR_BASELINE: 917
 
 jobs:
   java-validation:
