@@ -85,7 +85,7 @@ Description: "Encounter: Einrichtungskontakt Patient 12 (Sepsis bei Pneumonie)"
 * diagnosis[0].use.coding[DiagnosesubTyp] = $diagnosis-role#DD "Discharge diagnosis"
 * diagnosis[0].rank = 1
 * diagnosis[1].condition = Reference(mii-exa-test-data-patient-12-diagnose-2)
-* diagnosis[1].use.coding[Diagnosetyp] = $KontaktDiagnoseProzedur#secondary-DRG "DRG-Nebendiagnose"
+* diagnosis[1].use.coding[Diagnosetyp] = $KontaktDiagnoseProzedur#secondary-DRG "Sekundär-DRG"
 * diagnosis[1].rank = 2
 * hospitalization.admitSource = $Aufnahmeanlass#N "Notfall"
 * hospitalization.dischargeDisposition.extension[Entlassungsgrund].url = "http://fhir.de/StructureDefinition/Entlassungsgrund"

@@ -225,7 +225,7 @@
                 {
                   "code": "secondary-DRG",
                   "system": "http://fhir.de/CodeSystem/KontaktDiagnoseProzedur",
-                  "display": "DRG-Nebendiagnose"
+                  "display": "Sekundär-DRG"
                 }
               ]
             },
