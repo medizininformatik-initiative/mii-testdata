@@ -1,7 +1,7 @@
 # Known issues
 
-Validating the test data produces **2,687 errors**, and `advisor.json` suppresses **820**
-of them. Almost none of the remainder are defects in the data: they come from the profiles
+Validating the test data produces **2,687 errors**, and `advisor.json` suppresses about
+**1,490** of them. Almost none of the remainder are defects in the data: they come from the profiles
 the data is built against, and no conformant instance can avoid them. This page states what
 is suppressed, why the rest cannot be, and what would remove either.
 
@@ -73,39 +73,49 @@ So the two views overlap for structural findings and complement each other for r
 findings. Both are worth validating, and neither count should be read as the number of
 distinct defects.
 
-### Why only 820 are suppressed
+### Why a rule sometimes has no path
 
-Because `advisor.json` can only reach the file copy. A rule is a fixed
-`MessageId@FHIRPath` pair, and the path of a bundle-embedded finding looks like
+`advisor.json` knows only `MessageId@FHIRPath` pairs, and a rule with a path reaches the
+file view of a resource but never its copy inside a bundle. The bundle path looks like
 
 ```
 Bundle.entry[82].resource/*Observation/mii-exa-test-data-patient-1-icu-vent-pip-1*/.result
 ```
 
-It carries the entry index and the identity of the resource, so it cannot be written as a
-fixed string, and the advisor matches the whole path rather than a suffix. The measurement
-shows the consequence exactly: of the 440 `MatchMultiple` findings on files, 434 are
-suppressed; of the 440 identical ones inside bundles, **none** are.
+It carries the entry index and the identity of the resource, so no fixed string matches it.
+Measured against one bundle, every path-shaped attempt changes nothing:
 
-The practical ceiling for this format is therefore around 50 %, and the 820 suppressed
-errors are essentially all of the file-side findings that rules exist for. An earlier
-version of this page claimed 66 %; that figure came from a model of how rule matching
-works, and the measurement refuted it. Reported as a validator limitation rather than a
-ballot issue — a rule that could anchor on a path suffix would close the gap.
+| Rule form | Errors |
+|---|---:|
+| `SLICING_CANNOT_BE_EVALUATED@Bundle.entry.resource.component` | 256 (unchanged) |
+| `…@Bundle.entry.resource.ofType(Observation).component` | 256 (unchanged) |
+| `…@*.component`, `…@**.component`, `…@Bundle.entry[*]…` | 256 (unchanged) |
+| `SLICING_CANNOT_BE_EVALUATED` — **message id alone, no path** | **59** |
+
+Only dropping the path works, and then the rule applies everywhere: every path, every
+resource, and every future finding of that class. That is a blunt instrument, so it is used
+for exactly two message ids, chosen because **no instance can cause or avoid them**:
+
+- `SLICING_CANNOT_BE_EVALUATED` is emitted when the validator cannot evaluate a slicing
+  discriminator. That is a statement about the profile; data has no influence on it.
+- `Validation_VAL_Profile_MatchMultiple` is emitted when an element matches more than one
+  slice. With disjoint slices this cannot happen whatever the data says.
+
+Two neighbouring classes are deliberately **not** suppressed this way, and the reason is
+concrete rather than theoretical. `Reference_REF_CantMatchChoice` would hide a genuinely
+wrong reference target alongside the overlapping-`targetProfile` defects. And
+`Validation_VAL_Profile_Minimum_SLICE` caught a real defect in this very repository — a
+missing `category:VSCat` slice on an ICU observation. A path-free rule on that id would
+have swallowed it.
 
 ### What the rules cover
 
-| Rule | Suppressed | Affected profiles | Cause |
-|---|---:|---|---|
-| `Validation_VAL_Profile_MatchMultiple@DiagnosticReport.result` | 434 | `mii-pr-lungenfunktion-bodyplethysmographie`, `-diffusion`, `-spirometrie` and 1 more | The `result` slices are not disjoint: several carry the same `targetProfile`, so one entry matches more than one slice. Upstream: [kerndatensatz-lungenfunktion#45](https://github.com/medizininformatik-initiative/kerndatensatz-lungenfunktion/issues/45). |
-| `SLICING_CANNOT_BE_EVALUATED@Observation.component` | 289 | `mii-pr-icu-score-sofa`, `-gcs`, `-icdsc`, `mii-pr-mtb-immunohistochemistry-mmr` and 26 more | The profiles slice `Observation.component` with `discriminator: pattern on code`, but no slice defines a pattern at `component.code` — the patterns sit one level lower, on `code.coding:loinc`/`:sct`, where the discriminator does not look. |
-| `SLICING_CANNOT_BE_EVALUATED@Observation.code.coding` | 70 | `mii-pr-icu-score-gcs`, `-visuelle-analogskala`, `mii-pr-icu-untersuchung-pupillenbefund` and 8 more | Same class, on the coding slices — among them an `ieee11073` slice whose discriminator cannot be resolved. |
-| `Reference_REF_CantMatchChoice@…` (4 paths) | 4 | `mii-pr-lungenfunktion-spirometrie-messung` and others | Reference slices whose allowed target profiles overlap, so the validator cannot decide which slice a reference satisfies. Nearly all occurrences of this class sit inside bundles and are therefore out of reach. |
-| 3 further rules (terminology, fixed values) | 23 | ImplementationGuide parameters, `AdverseEvent.event`, `Procedure` extensions | Inherited from the pre-2027 test data. |
-
-The rules deliberately name one path each rather than a broad prefix. Broadening them would
-raise the suppressed count and hide future, genuine defects on the same paths — the point
-of the exercise was the opposite.
+| Rule | Affected profiles | Cause |
+|---|---|---|
+| `SLICING_CANNOT_BE_EVALUATED` *(no path)* | `mii-pr-icu-score-sofa`, `-gcs`, `-icdsc`, `mii-pr-mtb-immunohistochemistry-mmr`, `mii-pr-icu-vent-*` and ~30 more | The profiles slice on a `pattern` discriminator while the slice defines no pattern at the discriminator's path — often because the patterns sit one level lower, on `code.coding:loinc`/`:sct`. |
+| `Validation_VAL_Profile_MatchMultiple` *(no path)* | `mii-pr-lungenfunktion-bodyplethysmographie`, `-diffusion`, `-spirometrie`, `-provokationstest` | Slices that are not disjoint: several carry the same `targetProfile`, so one entry matches more than one. Upstream: [kerndatensatz-lungenfunktion#45](https://github.com/medizininformatik-initiative/kerndatensatz-lungenfunktion/issues/45). |
+| `Reference_REF_CantMatchChoice@hasMember`, `@focus`, `@result`, `@derivedFrom` | `mii-pr-lungenfunktion-spirometrie-messung` and others | Reference slices whose allowed target profiles overlap. Kept path-bound on purpose — see above. |
+| 4 further rules (terminology, fixed values) | ImplementationGuide parameters, `AdverseEvent.event`, `Procedure` extensions | Inherited from the pre-2027 test data. |
 
 ### What is *not* suppressed
 
