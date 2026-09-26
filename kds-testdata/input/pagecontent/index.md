@@ -2,12 +2,15 @@
 
 This Implementation Guide provides comprehensive test data compliant with the German Medical Informatics Initiative (MII) Core Data Set (KDS) modules — **2027 ballot generation**, built against the BOM package `de.medizininformatikinitiative.kerndatensatz.complete` (all 21 KDS modules pinned coherently).
 
-**829 example instances · 27 transaction bundles · every instance labeled `meta.security = HTEST` and carrying `meta.source`.**
+**1369 example instances · 31 transaction bundles · every instance labeled `meta.security = HTEST` and carrying `meta.source`.**
 
-## Two kinds of bundles
+## Three kinds of bundles
 
-- **11 patient bundles** (`mii-exa-test-data-bundle-pat-1 … -pat-11`): clinically coherent cross-module scenarios per patient (core modules: Person, Fall, Diagnose, Prozedur, Labor, Medikation, Consent).
 - **16 module bundles** (`mii-exa-test-data-bundle-<modul>-1`): technically complete, self-contained per-module test sets with their own patients — one per extension module: Bildgebung, Biobank, Dokument, ICU, **Kardiologie**, **Lungenfunktion**, Mikrobiologie, MolGen, MTB, Onkologie, Patho, PRO, Seltene, **Soziodemographie**, Studien, **Symptom** (bold = new with the 2027 generation).
+- **10 patient bundles** (`mii-exa-test-data-bundle-pat-1 … -pat-10`): clinically coherent scenarios per patient across the **core** modules (Person, Fall, Diagnose, Prozedur, Labor, Medikation, Consent).
+- **4 cross-module example patients** (`mii-exa-test-data-bundle-pat-11 … -pat-14`): one patient carrying core modules **and** extension modules, so that cross-module joins become testable. Each is modelled on a real MII research project — see [Cross-Module Example Patients](cross-module-patients.html).
+
+The third kind closes a gap the first two leave open by construction: module bundles are complete but each has its **own** patient, so nothing joins across them; patient bundles 1–10 do join, but only across the core modules.
 
 ## Test Patients
 
@@ -21,7 +24,15 @@ This Implementation Guide provides comprehensive test data compliant with the Ge
 - **Patient-8**: Myocardial infarction patient (deceased) with cardiac interventions
 - **Patient-9**: Ovarian cyst patient with laparoscopic surgery
 - **Patient-10**: Migraine patient with neurological diagnostics
-- **Patient-11**: Additional core-module scenario
+
+### Cross-module example patients
+
+- **Patient-11**: Heart failure — research study + sociodemographics + **longitudinal PROMs** (T0/T3/T6)
+- **Patient-12**: Sepsis on ICU — ventilation + SOFA course + microbiology, with the antibiotic switch causally linked to the resistance finding
+- **Patient-13**: Morbus Fabry — symptoms from 2011, diagnosis in 2023: a **12-year diagnostic delay** measurable from the data
+- **Patient-14**: MSI-high colorectal cancer — pathology → NGS → molecular tumor board → immunotherapy → response
+
+Details: [Cross-Module Example Patients](cross-module-patients.html).
 
 Patients 1 and 2 deliberately form a pair covering both permitted `DosageDE` worlds (structured vs. free-text) of the Medikation module.
 

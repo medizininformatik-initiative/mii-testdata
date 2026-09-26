@@ -89,11 +89,18 @@ def load_codesystems():
 
             def walk(cs):
                 for c in cs:
-                    concepts[c["code"]] = (
-                        c.get("display"),
-                        {g.get("language"): g.get("value")
-                         for g in c.get("designation", []) if g.get("language")},
-                    )
+                    # Je Sprache MEHRERE Designations: EQ-5D fuehrt fuenf deutsche
+                    # Bezeichnungen pro Level, eine je Dimension ('Ich habe
+                    # maessige Probleme herumzugehen' neben 'Ich habe maessige
+                    # Schmerzen oder Beschwerden'). Ein {Sprache: Wert}-Dict
+                    # behielte nur die letzte und wuerde die anderen vier als
+                    # falsch melden — genau dieser Fehler hat 12 korrekte
+                    # Antworten als Fehler ausgewiesen.
+                    desigs = {}
+                    for g in c.get("designation", []):
+                        if g.get("language"):
+                            desigs.setdefault(g["language"], set()).add(g.get("value"))
+                    concepts[c["code"]] = (c.get("display"), desigs)
                     walk(c.get("concept", []))
 
             walk(d.get("concept", []))
@@ -105,7 +112,9 @@ def load_codesystems():
 
 
 def acceptable(cs_lang, display, desigs, ctx):
-    ok = {v for lang, v in desigs.items() if lang == ctx or lang.split("-")[0] == ctx}
+    ok = {v for lang, vals in desigs.items()
+          if lang == ctx or lang.split("-")[0] == ctx
+          for v in vals}
     if display and (cs_lang is None or cs_lang == ctx or cs_lang.split("-")[0] == ctx):
         ok.add(display)
     return ok
@@ -142,8 +151,12 @@ def main():
             d = json.load(open(f, encoding="utf-8"))
         except (json.JSONDecodeError, UnicodeDecodeError):
             continue
-        # Bundles wiederholen nur, was als Einzelressource schon dasteht.
-        if d.get("resourceType") in ("Bundle", "ImplementationGuide"):
+        # Bundles wiederholen nur, was als Einzelressource schon dasteht. Die
+        # ImplementationGuide-Ressource stand hier faelschlich mit in der
+        # Ausnahme — der Validator prueft sie mit, und dort steckte ein echter
+        # Fehler (jurisdiction trug 'Deutschland' statt 'Germany'), den diese
+        # Pruefung deshalb nie gesehen hat.
+        if d.get("resourceType") == "Bundle":
             continue
         n += 1
         ctx = d.get("language") or a.lang

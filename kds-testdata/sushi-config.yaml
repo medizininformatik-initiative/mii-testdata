@@ -16,7 +16,9 @@ fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2019+
 releaseLabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
 license: CC0-1.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
-jurisdiction: urn:iso:std:iso:3166#DE "Deutschland" # https://www.hl7.org/fhir/valueset-jurisdiction.html
+jurisdiction: urn:iso:std:iso:3166#DE "Germany" # https://www.hl7.org/fhir/valueset-jurisdiction.html
+# "Germany", nicht "Deutschland": Der IG ist en-first (i18n-default-lang unten),
+# und ISO 3166 fuehrt fuer DE keine deutsche Bezeichnung.
 publisher:
   name: Medizininformatik Initiative
   url: https://www.medizininformatik-initiative.de

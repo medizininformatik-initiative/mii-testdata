@@ -35,7 +35,74 @@
       "use": "usual",
       "system": "https://www.medizininformatik-initiative.de/fhir/sid/patienten",
       "value": "689923402"
+    },
+    {
+      "assigner": {
+        "identifier": {
+          "system": "http://fhir.de/sid/arge-ik/iknr",
+          "use": "official",
+          "value": "109519005"
+        }
+      },
+      "system": "http://fhir.de/sid/gkv/kvid-10",
+      "type": {
+        "coding": [
+          {
+            "system": "http://fhir.de/CodeSystem/identifier-type-de-basis",
+            "code": "KVZ10"
+          }
+        ]
+      },
+      "use": "official",
+      "value": "K234567890"
     }
   ],
-  "gender": "male"
+  "name": [
+    {
+      "given": [
+        "Ingrid",
+        "Margarete"
+      ],
+      "use": "official",
+      "family": "Hallermann"
+    }
+  ],
+  "address": [
+    {
+      "line": [
+        "Schönhauser Allee 142"
+      ],
+      "_line": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName",
+              "valueString": "Schönhauser Allee"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber",
+              "valueString": "142"
+            }
+          ]
+        }
+      ],
+      "type": "both",
+      "city": "Berlin",
+      "_city": {
+        "extension": [
+          {
+            "url": "http://fhir.de/StructureDefinition/destatis/ags",
+            "valueCoding": {
+              "code": "11000000",
+              "system": "http://fhir.de/sid/destatis/ags"
+            }
+          }
+        ]
+      },
+      "postalCode": "10437",
+      "country": "DE"
+    }
+  ],
+  "gender": "female",
+  "birthDate": "1959-11-08"
 }

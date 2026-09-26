@@ -26,7 +26,7 @@
         {
           "code": "DE",
           "system": "urn:iso:std:iso:3166",
-          "display": "Deutschland"
+          "display": "Germany"
         }
       ]
     }
@@ -70,6 +70,14 @@
   ],
   "definition": {
     "resource": [
+      {
+        "reference": {
+          "reference": "List/mii-exa-test-data-patient-12-list-stat-aufenthalt"
+        },
+        "name": "Antiinfektive Therapie Intensivaufenthalt",
+        "description": "List: Medikation während des Intensivaufenthalts für Patient 12",
+        "exampleBoolean": true
+      },
       {
         "reference": {
           "reference": "Observation/mii-exa-test-data-patho-macroscopic-cylinder-count-01"
@@ -232,6 +240,14 @@
       },
       {
         "reference": {
+          "reference": "List/mii-exa-test-data-patient-11-list-entlassmedikation"
+        },
+        "name": "Entlassmedikation",
+        "description": "List: Entlassmedikation für Patient 11",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "BodyStructure/mii-exa-test-data-patho-body-structure-1"
         },
         "name": "Entnahmestelle Prostatastanze 01",
@@ -252,6 +268,22 @@
         },
         "name": "ERN ReCONNET Registry - Rare Connective Tissue and Musculoskeletal Diseases",
         "description": "ResearchStudy: ERN ReCONNET Register fuer seltene Bindegewebserkrankungen",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "ResearchStudy/mii-exa-test-data-patient-13-register-study"
+        },
+        "name": "Fabry-Register Deutschland",
+        "description": "ResearchStudy: Fabry-Register Deutschland",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Library/mii-exa-test-data-patient-13-register-katalog"
+        },
+        "name": "Fabry-Register Deutschland - Katalogeintrag",
+        "description": "Library: Katalogeintrag Fabry-Register",
         "exampleBoolean": true
       },
       {
@@ -980,6 +1012,30 @@
         },
         "name": "mii-exa-test-data-bundle-pat-11",
         "description": "Bundle: Patient-11",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Bundle/mii-exa-test-data-bundle-pat-12"
+        },
+        "name": "mii-exa-test-data-bundle-pat-12",
+        "description": "Bundle: Patient-12 (Journey Sepsis/Intensivstation)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Bundle/mii-exa-test-data-bundle-pat-13"
+        },
+        "name": "mii-exa-test-data-bundle-pat-13",
+        "description": "Bundle: Patient-13 (Journey Seltene Erkrankung / diagnostische Odyssee)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Bundle/mii-exa-test-data-bundle-pat-14"
+        },
+        "name": "mii-exa-test-data-bundle-pat-14",
+        "description": "Bundle: Patient-14 (Journey Personalisierte Onkologie)",
         "exampleBoolean": true
       },
       {
@@ -2408,6 +2464,14 @@
       },
       {
         "reference": {
+          "reference": "Medication/mii-exa-test-data-medication-agalsidase-beta"
+        },
+        "name": "mii-exa-test-data-medication-agalsidase-beta",
+        "description": "Medication: Agalsidase beta 35 mg Pulver für Infusionslösung",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Medication/mii-exa-test-data-medication-amoxicillin"
         },
         "name": "mii-exa-test-data-medication-amoxicillin",
@@ -2472,6 +2536,14 @@
       },
       {
         "reference": {
+          "reference": "Medication/mii-exa-test-data-medication-empagliflozin"
+        },
+        "name": "mii-exa-test-data-medication-empagliflozin",
+        "description": "Medication: Empagliflozin 10 mg Tabletten",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Medication/mii-exa-test-data-medication-ethinylestradiol-levonorgestrel"
         },
         "name": "mii-exa-test-data-medication-ethinylestradiol-levonorgestrel",
@@ -2512,6 +2584,14 @@
       },
       {
         "reference": {
+          "reference": "Medication/mii-exa-test-data-medication-meropenem"
+        },
+        "name": "mii-exa-test-data-medication-meropenem",
+        "description": "Medication: Meropenem 1 g Pulver für Injektions-/Infusionslösung",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Medication/mii-exa-test-data-medication-metamizol"
         },
         "name": "mii-exa-test-data-medication-metamizol",
@@ -2532,6 +2612,14 @@
         },
         "name": "mii-exa-test-data-medication-morphin",
         "description": "Medication: Morphin",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Medication/mii-exa-test-data-medication-noradrenalin"
+        },
+        "name": "mii-exa-test-data-medication-noradrenalin",
+        "description": "Medication: Noradrenalin 1 mg/mL Konzentrat zur Infusion",
         "exampleBoolean": true
       },
       {
@@ -2576,6 +2664,22 @@
       },
       {
         "reference": {
+          "reference": "Medication/mii-exa-test-data-medication-pembrolizumab"
+        },
+        "name": "mii-exa-test-data-medication-pembrolizumab",
+        "description": "Medication: Pembrolizumab 100 mg/4 mL Konzentrat zur Infusion",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Medication/mii-exa-test-data-medication-piperacillin-tazobactam"
+        },
+        "name": "mii-exa-test-data-medication-piperacillin-tazobactam",
+        "description": "Medication: Piperacillin/Tazobactam 4 g/0,5 g Pulver für Infusionslösung",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Medication/mii-exa-test-data-medication-propofol"
         },
         "name": "mii-exa-test-data-medication-propofol",
@@ -2588,6 +2692,14 @@
         },
         "name": "mii-exa-test-data-medication-rezeptur-doxorubicin",
         "description": "Medication: Rezeptur Doxorubicin",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Medication/mii-exa-test-data-medication-sacubitril-valsartan"
+        },
+        "name": "mii-exa-test-data-medication-sacubitril-valsartan",
+        "description": "Medication: Sacubitril/Valsartan 49 mg/51 mg Tabletten",
         "exampleBoolean": true
       },
       {
@@ -6431,6 +6543,1222 @@
       },
       {
         "reference": {
+          "reference": "Consent/mii-exa-test-data-patient-11-consent-1"
+        },
+        "name": "mii-exa-test-data-patient-11-consent-1",
+        "description": "Consent: MII Broad Consent für Patient 11",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Condition/mii-exa-test-data-patient-11-diagnose-1"
+        },
+        "name": "mii-exa-test-data-patient-11-diagnose-1",
+        "description": "Condition: Linksherzinsuffizienz NYHA III für Patient 11",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Condition/mii-exa-test-data-patient-11-diagnose-2"
+        },
+        "name": "mii-exa-test-data-patient-11-diagnose-2",
+        "description": "Condition: Diabetes mellitus Typ 2 (Komorbidität) für Patient 11",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Encounter/mii-exa-test-data-patient-11-encounter-1"
+        },
+        "name": "mii-exa-test-data-patient-11-encounter-1",
+        "description": "Encounter: Stationärer Index-Aufenthalt Patient 11 (kardiale Dekompensation)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Encounter/mii-exa-test-data-patient-11-encounter-2"
+        },
+        "name": "mii-exa-test-data-patient-11-encounter-2",
+        "description": "Encounter: Ambulante Studien-Baseline-Visite T0 Patient 11",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Encounter/mii-exa-test-data-patient-11-encounter-3"
+        },
+        "name": "mii-exa-test-data-patient-11-encounter-3",
+        "description": "Encounter: Ambulante Studienvisite T3 Patient 11",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Encounter/mii-exa-test-data-patient-11-encounter-4"
+        },
+        "name": "mii-exa-test-data-patient-11-encounter-4",
+        "description": "Encounter: Ambulante Studienvisite T6 Patient 11",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-11-labobs-1"
+        },
+        "name": "mii-exa-test-data-patient-11-labobs-1",
+        "description": "Observation: NT-proBNP für Patient 11",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-11-labobs-2"
+        },
+        "name": "mii-exa-test-data-patient-11-labobs-2",
+        "description": "Observation: Kreatinin im Serum für Patient 11",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-11-labobs-3"
+        },
+        "name": "mii-exa-test-data-patient-11-labobs-3",
+        "description": "Observation: Kalium im Serum für Patient 11",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "DiagnosticReport/mii-exa-test-data-patient-11-labreport-1"
+        },
+        "name": "mii-exa-test-data-patient-11-labreport-1",
+        "description": "DiagnosticReport: Herzinsuffizienz-Basislabor Patient 11",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "ServiceRequest/mii-exa-test-data-patient-11-labrequest-1"
+        },
+        "name": "mii-exa-test-data-patient-11-labrequest-1",
+        "description": "ServiceRequest: Herzinsuffizienz-Basislabor für Patient 11",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "MedicationRequest/mii-exa-test-data-patient-11-medrequest-1"
+        },
+        "name": "mii-exa-test-data-patient-11-medrequest-1",
+        "description": "MedicationRequest: Sacubitril/Valsartan 49/51 mg 2x täglich oral",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "MedicationRequest/mii-exa-test-data-patient-11-medrequest-2"
+        },
+        "name": "mii-exa-test-data-patient-11-medrequest-2",
+        "description": "MedicationRequest: Empagliflozin 10 mg 1x täglich oral",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "MedicationStatement/mii-exa-test-data-patient-11-medstatement-1"
+        },
+        "name": "mii-exa-test-data-patient-11-medstatement-1",
+        "description": "MedicationStatement: Sacubitril/Valsartan Dauermedikation (Selbstauskunft T0)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "MedicationStatement/mii-exa-test-data-patient-11-medstatement-2"
+        },
+        "name": "mii-exa-test-data-patient-11-medstatement-2",
+        "description": "MedicationStatement: Sacubitril/Valsartan zur Entlassung",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "MedicationStatement/mii-exa-test-data-patient-11-medstatement-3"
+        },
+        "name": "mii-exa-test-data-patient-11-medstatement-3",
+        "description": "MedicationStatement: Empagliflozin zur Entlassung",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-11-pro-eq5d5l-index-t0"
+        },
+        "name": "mii-exa-test-data-patient-11-pro-eq5d5l-index-t0",
+        "description": "PRO Observation: EQ-5D-5L Indexwert T0 (Patient 11, 0.512)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-11-pro-eq5d5l-index-t3"
+        },
+        "name": "mii-exa-test-data-patient-11-pro-eq5d5l-index-t3",
+        "description": "PRO Observation: EQ-5D-5L Indexwert T3 (Patient 11, 0.712)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-11-pro-eq5d5l-index-t6"
+        },
+        "name": "mii-exa-test-data-patient-11-pro-eq5d5l-index-t6",
+        "description": "PRO Observation: EQ-5D-5L Indexwert T6 (Patient 11, 0.823)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-11-pro-eq5d5l-profil-t0"
+        },
+        "name": "mii-exa-test-data-patient-11-pro-eq5d5l-profil-t0",
+        "description": "PRO Observation: EQ-5D-5L Profil T0 (Patient 11, 33232)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-11-pro-eq5d5l-profil-t3"
+        },
+        "name": "mii-exa-test-data-patient-11-pro-eq5d5l-profil-t3",
+        "description": "PRO Observation: EQ-5D-5L Profil T3 (Patient 11, 22222)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-11-pro-eq5d5l-profil-t6"
+        },
+        "name": "mii-exa-test-data-patient-11-pro-eq5d5l-profil-t6",
+        "description": "PRO Observation: EQ-5D-5L Profil T6 (Patient 11, 22121)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "QuestionnaireResponse/mii-exa-test-data-patient-11-pro-eq5d5l-qr-t0"
+        },
+        "name": "mii-exa-test-data-patient-11-pro-eq5d5l-qr-t0",
+        "description": "PRO QuestionnaireResponse: EQ-5D-5L T0 (Patient 11, Profil 33232)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "QuestionnaireResponse/mii-exa-test-data-patient-11-pro-eq5d5l-qr-t3"
+        },
+        "name": "mii-exa-test-data-patient-11-pro-eq5d5l-qr-t3",
+        "description": "PRO QuestionnaireResponse: EQ-5D-5L T3 (Patient 11, Profil 22222)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "QuestionnaireResponse/mii-exa-test-data-patient-11-pro-eq5d5l-qr-t6"
+        },
+        "name": "mii-exa-test-data-patient-11-pro-eq5d5l-qr-t6",
+        "description": "PRO QuestionnaireResponse: EQ-5D-5L T6 (Patient 11, Profil 22121)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-11-pro-eq5d5l-vas-t0"
+        },
+        "name": "mii-exa-test-data-patient-11-pro-eq5d5l-vas-t0",
+        "description": "PRO Observation: EQ-5D-5L VAS T0 (Patient 11, 45)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-11-pro-eq5d5l-vas-t3"
+        },
+        "name": "mii-exa-test-data-patient-11-pro-eq5d5l-vas-t3",
+        "description": "PRO Observation: EQ-5D-5L VAS T3 (Patient 11, 60)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-11-pro-eq5d5l-vas-t6"
+        },
+        "name": "mii-exa-test-data-patient-11-pro-eq5d5l-vas-t6",
+        "description": "PRO Observation: EQ-5D-5L VAS T6 (Patient 11, 70)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "QuestionnaireResponse/mii-exa-test-data-patient-11-pro-phq9-qr-t0"
+        },
+        "name": "mii-exa-test-data-patient-11-pro-phq9-qr-t0",
+        "description": "PRO QuestionnaireResponse: PHQ-9 T0 (Patient 11, Summenwert 14)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "QuestionnaireResponse/mii-exa-test-data-patient-11-pro-phq9-qr-t6"
+        },
+        "name": "mii-exa-test-data-patient-11-pro-phq9-qr-t6",
+        "description": "PRO QuestionnaireResponse: PHQ-9 T6 (Patient 11, Summenwert 8)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-11-pro-phq9-score-t0"
+        },
+        "name": "mii-exa-test-data-patient-11-pro-phq9-score-t0",
+        "description": "PRO Observation: PHQ-9 Summenwert T0 (Patient 11, 14 - moderate Depression)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-11-pro-phq9-score-t6"
+        },
+        "name": "mii-exa-test-data-patient-11-pro-phq9-score-t6",
+        "description": "PRO Observation: PHQ-9 Summenwert T6 (Patient 11, 8 - leichte Depression)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "ResearchSubject/mii-exa-test-data-patient-11-proband-1"
+        },
+        "name": "mii-exa-test-data-patient-11-proband-1",
+        "description": "ResearchSubject: Patient 11 als Proband in MII-CARE-PRO-2025",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Procedure/mii-exa-test-data-patient-11-prozedur-1"
+        },
+        "name": "mii-exa-test-data-patient-11-prozedur-1",
+        "description": "Procedure: Transösophageale Echokardiographie für Patient 11",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-11-sdd-ausbildung-1"
+        },
+        "name": "mii-exa-test-data-patient-11-sdd-ausbildung-1",
+        "description": "Soziodemographie: abgeschlossene Lehre (Patient 11)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-11-sdd-beschaeftigung-1"
+        },
+        "name": "mii-exa-test-data-patient-11-sdd-beschaeftigung-1",
+        "description": "Soziodemographie: Rentnerin (Patient 11)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-11-sdd-einkommen-1"
+        },
+        "name": "mii-exa-test-data-patient-11-sdd-einkommen-1",
+        "description": "Soziodemographie: Haushaltsnettoeinkommen 1.000 bis unter 1.500 Euro (Patient 11)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-11-sdd-erhebung-1"
+        },
+        "name": "mii-exa-test-data-patient-11-sdd-erhebung-1",
+        "description": "Soziodemographie: Baseline-Erhebung Patient 11 (Selbstauskunft zur Studienvisite T0)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-11-sdd-haushaltsgroesse-1"
+        },
+        "name": "mii-exa-test-data-patient-11-sdd-haushaltsgroesse-1",
+        "description": "Soziodemographie: Einpersonenhaushalt (Patient 11)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-11-sdd-partnerschaft-1"
+        },
+        "name": "mii-exa-test-data-patient-11-sdd-partnerschaft-1",
+        "description": "Soziodemographie: keine aktuelle Partnerschaft (Patient 11)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-11-sdd-schulabschluss-1"
+        },
+        "name": "mii-exa-test-data-patient-11-sdd-schulabschluss-1",
+        "description": "Soziodemographie: Hauptschulabschluss (Patient 11)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-11-sdd-schuljahre-1"
+        },
+        "name": "mii-exa-test-data-patient-11-sdd-schuljahre-1",
+        "description": "Soziodemographie: 9 Schuljahre (Patient 11)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-11-sdd-stellung-1"
+        },
+        "name": "mii-exa-test-data-patient-11-sdd-stellung-1",
+        "description": "Soziodemographie: zuletzt Arbeiterin (Patient 11)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "ServiceRequest/mii-exa-test-data-patient-11-studien-anfrage-1"
+        },
+        "name": "mii-exa-test-data-patient-11-studien-anfrage-1",
+        "description": "ServiceRequest: Studieneinschluss-Anfrage Patient 11 in MII-CARE-PRO-2025",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Consent/mii-exa-test-data-patient-11-studien-consent-1"
+        },
+        "name": "mii-exa-test-data-patient-11-studien-consent-1",
+        "description": "Consent: Einwilligung in die Teilnahme an MII-CARE-PRO-2025",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "DocumentReference/mii-exa-test-data-patient-11-studien-dokument-1"
+        },
+        "name": "mii-exa-test-data-patient-11-studien-dokument-1",
+        "description": "DocumentReference: Studienprotokoll MII-CARE-PRO-2025",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Group/mii-exa-test-data-patient-11-studien-group-1"
+        },
+        "name": "mii-exa-test-data-patient-11-studien-group-1",
+        "description": "Group: Eligibility-Population der Studie MII-CARE-PRO-2025",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "EvidenceVariable/mii-exa-test-data-patient-11-studien-kriterium-1"
+        },
+        "name": "mii-exa-test-data-patient-11-studien-kriterium-1",
+        "description": "EvidenceVariable: Ein-/Ausschlusskriterien der Studie MII-CARE-PRO-2025",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Patient/mii-exa-test-data-patient-12"
+        },
+        "name": "mii-exa-test-data-patient-12",
+        "description": "Patient: Patient-12 (Journey Sepsis/Intensivstation)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Consent/mii-exa-test-data-patient-12-consent-1"
+        },
+        "name": "mii-exa-test-data-patient-12-consent-1",
+        "description": "Consent: MII Broad Consent für Patient 12 (nach Extubation nachgeholt)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Condition/mii-exa-test-data-patient-12-diagnose-1"
+        },
+        "name": "mii-exa-test-data-patient-12-diagnose-1",
+        "description": "Condition: Pneumonie durch Klebsiella pneumoniae für Patient 12",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Condition/mii-exa-test-data-patient-12-diagnose-2"
+        },
+        "name": "mii-exa-test-data-patient-12-diagnose-2",
+        "description": "Condition: Sepsis durch gramnegative Erreger für Patient 12",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Encounter/mii-exa-test-data-patient-12-encounter-1"
+        },
+        "name": "mii-exa-test-data-patient-12-encounter-1",
+        "description": "Encounter: Einrichtungskontakt Patient 12 (Sepsis bei Pneumonie)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Encounter/mii-exa-test-data-patient-12-encounter-2"
+        },
+        "name": "mii-exa-test-data-patient-12-encounter-2",
+        "description": "Encounter: Abteilungskontakt Intensivstation Patient 12",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Procedure/mii-exa-test-data-patient-12-icu-beatmung-1"
+        },
+        "name": "mii-exa-test-data-patient-12-icu-beatmung-1",
+        "description": "ICU Procedure: Invasive Beatmung Patient 12 (08.03.-16.03., 187 Stunden)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-12-icu-bilanz-tages-1"
+        },
+        "name": "mii-exa-test-data-patient-12-icu-bilanz-tages-1",
+        "description": "ICU Observation: Tagesbilanz +3250 mL (Patient 12, Tag 1)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-12-icu-bilanz-urin-1"
+        },
+        "name": "mii-exa-test-data-patient-12-icu-bilanz-urin-1",
+        "description": "ICU Observation: Urinausfuhr 620 mL/24h (Patient 12, Tag 1 — Oligurie)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Device/mii-exa-test-data-patient-12-icu-device-vent"
+        },
+        "name": "mii-exa-test-data-patient-12-icu-device-vent",
+        "description": "ICU Device: Beatmungsgerät Patient 12",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "DeviceMetric/mii-exa-test-data-patient-12-icu-dm-vent"
+        },
+        "name": "mii-exa-test-data-patient-12-icu-dm-vent",
+        "description": "ICU DeviceMetric: Beatmungsparameter Patient 12",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-12-icu-gcs-1"
+        },
+        "name": "mii-exa-test-data-patient-12-icu-gcs-1",
+        "description": "ICU Score: Glasgow Coma Scale 10 (E3 V2 M5, Patient 12 unter Sedierung)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-12-icu-rass-1"
+        },
+        "name": "mii-exa-test-data-patient-12-icu-rass-1",
+        "description": "ICU Score: RASS -2 (Patient 12, leichte Sedierung im Weaning)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-12-icu-sofa-t1"
+        },
+        "name": "mii-exa-test-data-patient-12-icu-sofa-t1",
+        "description": "ICU Score: SOFA 12 (Patient 12, Tag 1 — septischer Schock)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-12-icu-sofa-t5"
+        },
+        "name": "mii-exa-test-data-patient-12-icu-sofa-t5",
+        "description": "ICU Score: SOFA 9 (Patient 12, Tag 5 — zwei Tage nach Therapieumstellung)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-12-icu-sofa-t8"
+        },
+        "name": "mii-exa-test-data-patient-12-icu-sofa-t8",
+        "description": "ICU Score: SOFA 4 (Patient 12, Tag 8 — Extubationstag)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-12-icu-vent-fio2-1"
+        },
+        "name": "mii-exa-test-data-patient-12-icu-vent-fio2-1",
+        "description": "ICU Observation: FiO2 0.6 (Patient 12, Tag 1)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-12-icu-vent-peep-1"
+        },
+        "name": "mii-exa-test-data-patient-12-icu-vent-peep-1",
+        "description": "ICU Observation: PEEP 12 cmH2O (Patient 12, Tag 1)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-12-icu-vent-vt-1"
+        },
+        "name": "mii-exa-test-data-patient-12-icu-vent-vt-1",
+        "description": "ICU Observation: Atemzugvolumen 430 mL (Patient 12, lungenprotektiv)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-12-labobs-1"
+        },
+        "name": "mii-exa-test-data-patient-12-labobs-1",
+        "description": "Observation: Laktat im Plasma für Patient 12",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-12-labobs-2"
+        },
+        "name": "mii-exa-test-data-patient-12-labobs-2",
+        "description": "Observation: Procalcitonin im Serum für Patient 12",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-12-labobs-3"
+        },
+        "name": "mii-exa-test-data-patient-12-labobs-3",
+        "description": "Observation: C-reaktives Protein für Patient 12",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-12-labobs-4"
+        },
+        "name": "mii-exa-test-data-patient-12-labobs-4",
+        "description": "Observation: Leukozyten im Blut für Patient 12",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "DiagnosticReport/mii-exa-test-data-patient-12-labreport-1"
+        },
+        "name": "mii-exa-test-data-patient-12-labreport-1",
+        "description": "DiagnosticReport: Sepsis-Basislabor Patient 12",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "ServiceRequest/mii-exa-test-data-patient-12-labrequest-1"
+        },
+        "name": "mii-exa-test-data-patient-12-labrequest-1",
+        "description": "ServiceRequest: Sepsis-Basislabor für Patient 12",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "MedicationAdministration/mii-exa-test-data-patient-12-medadmin-1"
+        },
+        "name": "mii-exa-test-data-patient-12-medadmin-1",
+        "description": "MedicationAdministration: Erste Meropenem-Gabe (Patient 12, 11.03. 11:00)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "MedicationAdministration/mii-exa-test-data-patient-12-medadmin-2"
+        },
+        "name": "mii-exa-test-data-patient-12-medadmin-2",
+        "description": "MedicationAdministration: Noradrenalin-Perfusor (Patient 12, septischer Schock)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "MedicationRequest/mii-exa-test-data-patient-12-medrequest-1"
+        },
+        "name": "mii-exa-test-data-patient-12-medrequest-1",
+        "description": "MedicationRequest: Piperacillin/Tazobactam 4,5 g 3x täglich i.v. (empirisch, am 11.03. wegen Resistenz beendet)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "MedicationRequest/mii-exa-test-data-patient-12-medrequest-2"
+        },
+        "name": "mii-exa-test-data-patient-12-medrequest-2",
+        "description": "MedicationRequest: Meropenem 1 g 3x täglich i.v. — Umstellung auf Basis des 3MRGN-Befunds",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "MedicationStatement/mii-exa-test-data-patient-12-medstatement-1"
+        },
+        "name": "mii-exa-test-data-patient-12-medstatement-1",
+        "description": "MedicationStatement: Meropenem-Therapie während des Intensivaufenthalts",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "ServiceRequest/mii-exa-test-data-patient-12-mibi-anforderung-1"
+        },
+        "name": "mii-exa-test-data-patient-12-mibi-anforderung-1",
+        "description": "Mikrobio Auftrag: Blutkultur und Trachealsekret bei Sepsisverdacht (Patient 12)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-12-mibi-ast-ceftazidim"
+        },
+        "name": "mii-exa-test-data-patient-12-mibi-ast-ceftazidim",
+        "description": "Mikrobio: Ceftazidim MHK 32 mg/L — resistent (Patient 12)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-12-mibi-ast-cipro"
+        },
+        "name": "mii-exa-test-data-patient-12-mibi-ast-cipro",
+        "description": "Mikrobio: Ciprofloxacin MHK 4 mg/L — resistent (Patient 12)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-12-mibi-ast-meropenem"
+        },
+        "name": "mii-exa-test-data-patient-12-mibi-ast-meropenem",
+        "description": "Mikrobio: Meropenem MHK <= 0.25 mg/L — empfindlich (Patient 12)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-12-mibi-ast-piptazo"
+        },
+        "name": "mii-exa-test-data-patient-12-mibi-ast-piptazo",
+        "description": "Mikrobio: Piperacillin/Tazobactam MHK > 64 mg/L — resistent (Patient 12)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-12-mibi-erreger-1"
+        },
+        "name": "mii-exa-test-data-patient-12-mibi-erreger-1",
+        "description": "Mikrobio: Klebsiella pneumoniae identifiziert (Patient 12)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-12-mibi-esbl-1"
+        },
+        "name": "mii-exa-test-data-patient-12-mibi-esbl-1",
+        "description": "Mikrobio: Beta-Laktamase nachgewiesen (ESBL-Phänotyp, Patient 12)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-12-mibi-kultur-1"
+        },
+        "name": "mii-exa-test-data-patient-12-mibi-kultur-1",
+        "description": "Mikrobio: Blutkultur positiv (Patient 12)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-12-mibi-mikroskopie-1"
+        },
+        "name": "mii-exa-test-data-patient-12-mibi-mikroskopie-1",
+        "description": "Mikrobio: Gramfärbung — gramnegative Stäbchen (Patient 12)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-12-mibi-mrgn-1"
+        },
+        "name": "mii-exa-test-data-patient-12-mibi-mrgn-1",
+        "description": "Mikrobio: 3MRGN Klebsiella pneumoniae (Patient 12)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "DiagnosticReport/mii-exa-test-data-patient-12-mibi-report-1"
+        },
+        "name": "mii-exa-test-data-patient-12-mibi-report-1",
+        "description": "Mikrobio Befund: Blutkultur mit 3MRGN Klebsiella pneumoniae (Patient 12)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Specimen/mii-exa-test-data-patient-12-mibi-specimen-bk"
+        },
+        "name": "mii-exa-test-data-patient-12-mibi-specimen-bk",
+        "description": "Mikrobio Probe: Blutkultur aerob/anaerob (Patient 12)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Specimen/mii-exa-test-data-patient-12-mibi-specimen-ts"
+        },
+        "name": "mii-exa-test-data-patient-12-mibi-specimen-ts",
+        "description": "Mikrobio Probe: Trachealsekret (Patient 12)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Procedure/mii-exa-test-data-patient-12-prozedur-1"
+        },
+        "name": "mii-exa-test-data-patient-12-prozedur-1",
+        "description": "Procedure: Endotracheale Intubation für Patient 12",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Patient/mii-exa-test-data-patient-13"
+        },
+        "name": "mii-exa-test-data-patient-13",
+        "description": "Patient: Patient-13 (Journey Seltene Erkrankung / diagnostische Odyssee)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Consent/mii-exa-test-data-patient-13-consent-1"
+        },
+        "name": "mii-exa-test-data-patient-13-consent-1",
+        "description": "Consent: MII Broad Consent für Patient 13",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Encounter/mii-exa-test-data-patient-13-encounter-1"
+        },
+        "name": "mii-exa-test-data-patient-13-encounter-1",
+        "description": "Encounter: Nephrologische Ambulanz Patient 13 (Abklärung Proteinurie)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Encounter/mii-exa-test-data-patient-13-encounter-2"
+        },
+        "name": "mii-exa-test-data-patient-13-encounter-2",
+        "description": "Encounter: Humangenetische Ambulanz Patient 13 (Diagnosemitteilung Morbus Fabry)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Encounter/mii-exa-test-data-patient-13-encounter-3"
+        },
+        "name": "mii-exa-test-data-patient-13-encounter-3",
+        "description": "Encounter: Zentrum für Seltene Erkrankungen Patient 13 (Therapieeinleitung)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "FamilyMemberHistory/mii-exa-test-data-patient-13-familienanamnese-mutter"
+        },
+        "name": "mii-exa-test-data-patient-13-familienanamnese-mutter",
+        "description": "Familienanamnese: Mutter mit Morbus Fabry (Patient 13)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "FamilyMemberHistory/mii-exa-test-data-patient-13-familienanamnese-onkel"
+        },
+        "name": "mii-exa-test-data-patient-13-familienanamnese-onkel",
+        "description": "Familienanamnese: Verstorbener Onkel mütterlicherseits (Niereninsuffizienz, retrospektiv Fabry-verdächtig)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-13-hpo-akroparaesthesie"
+        },
+        "name": "mii-exa-test-data-patient-13-hpo-akroparaesthesie",
+        "description": "HPO Assessment: Acroparesthesia (vorhanden) — Patient 13",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-13-hpo-angiokeratom"
+        },
+        "name": "mii-exa-test-data-patient-13-hpo-angiokeratom",
+        "description": "HPO Assessment: Angiokeratoma (nicht vorhanden) — ausgeschlossener Phänotyp",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-13-hpo-cornea"
+        },
+        "name": "mii-exa-test-data-patient-13-hpo-cornea",
+        "description": "HPO Assessment: Corneal opacity (Cornea verticillata, vorhanden) — Patient 13",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-13-hpo-hypohidrose"
+        },
+        "name": "mii-exa-test-data-patient-13-hpo-hypohidrose",
+        "description": "HPO Assessment: Hypohidrosis (vorhanden) — Patient 13",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-13-hpo-proteinurie"
+        },
+        "name": "mii-exa-test-data-patient-13-hpo-proteinurie",
+        "description": "HPO Assessment: Proteinuria (vorhanden) — der Befund, der zur Diagnose führte",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-13-labobs-agalsidase"
+        },
+        "name": "mii-exa-test-data-patient-13-labobs-agalsidase",
+        "description": "Observation: Alpha-Galaktosidase-A-Aktivität in Leukozyten (Patient 13) — erniedrigt",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-13-labobs-kreatinin"
+        },
+        "name": "mii-exa-test-data-patient-13-labobs-kreatinin",
+        "description": "Observation: Kreatinin im Serum (Patient 13)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-13-labobs-protein"
+        },
+        "name": "mii-exa-test-data-patient-13-labobs-protein",
+        "description": "Observation: Protein-Kreatinin-Ratio im Urin (Patient 13) — der Zufallsbefund",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "DiagnosticReport/mii-exa-test-data-patient-13-labreport-1"
+        },
+        "name": "mii-exa-test-data-patient-13-labreport-1",
+        "description": "DiagnosticReport: Nephrologisches Labor und Enzymdiagnostik (Patient 13)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "ServiceRequest/mii-exa-test-data-patient-13-labrequest-1"
+        },
+        "name": "mii-exa-test-data-patient-13-labrequest-1",
+        "description": "ServiceRequest: Nierenfunktion und Proteinurie-Abklärung (Patient 13)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "MedicationAdministration/mii-exa-test-data-patient-13-medadmin-1"
+        },
+        "name": "mii-exa-test-data-patient-13-medadmin-1",
+        "description": "MedicationAdministration: Erste Agalsidase-beta-Infusion (Patient 13)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "MedicationRequest/mii-exa-test-data-patient-13-medrequest-1"
+        },
+        "name": "mii-exa-test-data-patient-13-medrequest-1",
+        "description": "MedicationRequest: Agalsidase beta 1 mg/kg alle zwei Wochen i.v. (Enzymersatztherapie)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-13-molgen-variante"
+        },
+        "name": "mii-exa-test-data-patient-13-molgen-variante",
+        "description": "Genetische Variante: heterozygote pathogene GLA-Variante (Patient 13)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Consent/mii-exa-test-data-patient-13-register-consent"
+        },
+        "name": "mii-exa-test-data-patient-13-register-consent",
+        "description": "Consent: Einwilligung in die Teilnahme am Fabry-Register",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "ResearchSubject/mii-exa-test-data-patient-13-registerteilnahme"
+        },
+        "name": "mii-exa-test-data-patient-13-registerteilnahme",
+        "description": "Registerteilnahme: Einschluss in das Fabry-Register (Patient 13)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Condition/mii-exa-test-data-patient-13-seltene-diagnose-genetisch"
+        },
+        "name": "mii-exa-test-data-patient-13-seltene-diagnose-genetisch",
+        "description": "Genetic Diagnosis: GLA-Variante, molekulargenetisch bestätigter Morbus Fabry",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Condition/mii-exa-test-data-patient-13-seltene-diagnose-klinisch"
+        },
+        "name": "mii-exa-test-data-patient-13-seltene-diagnose-klinisch",
+        "description": "Clinical Diagnosis: Morbus Fabry (Patient 13, 12 Jahre nach Erstsymptom)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "CarePlan/mii-exa-test-data-patient-13-seltene-therapieplan"
+        },
+        "name": "mii-exa-test-data-patient-13-seltene-therapieplan",
+        "description": "CarePlan: Therapieplan Morbus Fabry (Patient 13)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Condition/mii-exa-test-data-patient-13-symptom-abdominal"
+        },
+        "name": "mii-exa-test-data-patient-13-symptom-abdominal",
+        "description": "Symptom Condition: Rezidivierende abdominelle Schmerzattacken 2016-2019 (Patient 13)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Condition/mii-exa-test-data-patient-13-symptom-akroparaesthesie"
+        },
+        "name": "mii-exa-test-data-patient-13-symptom-akroparaesthesie",
+        "description": "Symptom Condition: Akroparästhesien seit 2011 (Patient 13)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Condition/mii-exa-test-data-patient-13-symptom-hypohidrose"
+        },
+        "name": "mii-exa-test-data-patient-13-symptom-hypohidrose",
+        "description": "Symptom Condition: Hypohidrose mit Hitzeintoleranz seit 2014 (Patient 13)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-13-symptom-obs-hitzeintoleranz"
+        },
+        "name": "mii-exa-test-data-patient-13-symptom-obs-hitzeintoleranz",
+        "description": "Symptom Observation: Hitzeintoleranz (anamnestisch erhoben)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-13-symptom-obs-schmerz"
+        },
+        "name": "mii-exa-test-data-patient-13-symptom-obs-schmerz",
+        "description": "Symptom Observation: Schmerzintensität der Akroparästhesien (NRS 7)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Patient/mii-exa-test-data-patient-14"
+        },
+        "name": "mii-exa-test-data-patient-14",
+        "description": "Patient: Patient-14 (Journey Personalisierte Onkologie)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Consent/mii-exa-test-data-patient-14-consent-1"
+        },
+        "name": "mii-exa-test-data-patient-14-consent-1",
+        "description": "Consent: MII Broad Consent für Patient 14",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Encounter/mii-exa-test-data-patient-14-encounter-1"
+        },
+        "name": "mii-exa-test-data-patient-14-encounter-1",
+        "description": "Encounter: Stationäre Sigmaresektion Patient 14",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Encounter/mii-exa-test-data-patient-14-encounter-2"
+        },
+        "name": "mii-exa-test-data-patient-14-encounter-2",
+        "description": "Encounter: Onkologische Tagesklinik Patient 14 (Immuntherapie)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "MedicationAdministration/mii-exa-test-data-patient-14-medadmin-1"
+        },
+        "name": "mii-exa-test-data-patient-14-medadmin-1",
+        "description": "MedicationAdministration: Erste Pembrolizumab-Gabe (Patient 14)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "MedicationRequest/mii-exa-test-data-patient-14-mtb-empfehlung-1"
+        },
+        "name": "mii-exa-test-data-patient-14-mtb-empfehlung-1",
+        "description": "MTB Therapieempfehlung: Pembrolizumab 200 mg alle drei Wochen (Patient 14)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "ClinicalImpression/mii-exa-test-data-patient-14-mtb-episode-1"
+        },
+        "name": "mii-exa-test-data-patient-14-mtb-episode-1",
+        "description": "MTB Behandlungsepisode: Fallvorstellung Patient 14",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-14-mtb-implikation-1"
+        },
+        "name": "mii-exa-test-data-patient-14-mtb-implikation-1",
+        "description": "MTB Therapeutische Implikation: MSI-H/TMB-hoch → Checkpoint-Inhibition (Patient 14)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-14-mtb-msi-1"
+        },
+        "name": "mii-exa-test-data-patient-14-mtb-msi-1",
+        "description": "MTB MSI: Mikrosatelliteninstabilität hoch (MSI-H, Patient 14)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "DiagnosticReport/mii-exa-test-data-patient-14-mtb-ngs-bericht-1"
+        },
+        "name": "mii-exa-test-data-patient-14-mtb-ngs-bericht-1",
+        "description": "MTB NGS-Bericht: Comprehensive Genomic Profiling am Sigmaresektat (Patient 14)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "CarePlan/mii-exa-test-data-patient-14-mtb-therapieplan-1"
+        },
+        "name": "mii-exa-test-data-patient-14-mtb-therapieplan-1",
+        "description": "MTB Therapieplan: Beschluss Pembrolizumab statt Chemotherapie (Patient 14)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-14-mtb-tmb-1"
+        },
+        "name": "mii-exa-test-data-patient-14-mtb-tmb-1",
+        "description": "MTB TMB: Tumormutationslast 41,3 Mut/Mb (Patient 14)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-14-mtb-variante-braf"
+        },
+        "name": "mii-exa-test-data-patient-14-mtb-variante-braf",
+        "description": "MTB Variante: BRAF p.Val600Glu (Patient 14)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "DiagnosticReport/mii-exa-test-data-patient-14-onko-befund-1"
+        },
+        "name": "mii-exa-test-data-patient-14-onko-befund-1",
+        "description": "Onko Befund: Pathologiebericht Sigmaresektat (Patient 14)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Condition/mii-exa-test-data-patient-14-onko-diagnose-1"
+        },
+        "name": "mii-exa-test-data-patient-14-onko-diagnose-1",
+        "description": "Onko Diagnose: Adenokarzinom des Colon sigmoideum, Erstdiagnose 2024-03 (Patient 14)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-14-onko-ecog-1"
+        },
+        "name": "mii-exa-test-data-patient-14-onko-ecog-1",
+        "description": "Onko ECOG: 1 (Patient 14, vor Therapiebeginn)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-14-onko-fernmetastasen-1"
+        },
+        "name": "mii-exa-test-data-patient-14-onko-fernmetastasen-1",
+        "description": "Onko Fernmetastasen: Lebermetastasen (Patient 14)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-14-onko-grading-1"
+        },
+        "name": "mii-exa-test-data-patient-14-onko-grading-1",
+        "description": "Onko Grading: G2 (mäßig differenziert, Patient 14)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-14-onko-histologie-1"
+        },
+        "name": "mii-exa-test-data-patient-14-onko-histologie-1",
+        "description": "Onko Histologie ICD-O-3: Adenokarzinom o.n.A. (Patient 14)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-14-onko-lk-befallen"
+        },
+        "name": "mii-exa-test-data-patient-14-onko-lk-befallen",
+        "description": "Onko: 7 befallene Lymphknoten (Patient 14)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-14-onko-lk-untersucht"
+        },
+        "name": "mii-exa-test-data-patient-14-onko-lk-untersucht",
+        "description": "Onko: 21 untersuchte Lymphknoten (Patient 14)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Specimen/mii-exa-test-data-patient-14-onko-specimen-1"
+        },
+        "name": "mii-exa-test-data-patient-14-onko-specimen-1",
+        "description": "Onko Specimen: Sigmaresektat (Patient 14)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Procedure/mii-exa-test-data-patient-14-onko-systemtherapie-1"
+        },
+        "name": "mii-exa-test-data-patient-14-onko-systemtherapie-1",
+        "description": "Onko Systemische Therapie: Pembrolizumab-Immuntherapie (Patient 14)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-14-onko-tnm-m"
+        },
+        "name": "mii-exa-test-data-patient-14-onko-tnm-m",
+        "description": "Onko TNM: pM1 (Lebermetastasen, Patient 14)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-14-onko-tnm-n"
+        },
+        "name": "mii-exa-test-data-patient-14-onko-tnm-n",
+        "description": "Onko TNM: pN2 (7 von 21 Lymphknoten befallen, Patient 14)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-14-onko-tnm-t"
+        },
+        "name": "mii-exa-test-data-patient-14-onko-tnm-t",
+        "description": "Onko TNM: pT3 (Patient 14)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "CarePlan/mii-exa-test-data-patient-14-onko-tumorkonferenz-1"
+        },
+        "name": "mii-exa-test-data-patient-14-onko-tumorkonferenz-1",
+        "description": "Onko Tumorkonferenz: prätherapeutisch, Beschluss Molekulardiagnostik (Patient 14)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-test-data-patient-14-onko-verlauf-1"
+        },
+        "name": "mii-exa-test-data-patient-14-onko-verlauf-1",
+        "description": "Onko Verlauf: Teilremission nach drei Monaten Immuntherapie (Patient 14)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Procedure/mii-exa-test-data-patient-14-prozedur-1"
+        },
+        "name": "mii-exa-test-data-patient-14-prozedur-1",
+        "description": "Procedure: Offene Sigmaresektion mit Anastomose (Patient 14)",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Patient/mii-exa-test-data-patient-2"
         },
         "name": "mii-exa-test-data-patient-2",
@@ -9527,6 +10855,14 @@
       },
       {
         "reference": {
+          "reference": "ResearchStudy/mii-exa-test-data-patient-11-studie-1"
+        },
+        "name": "PROM-gestützte Verlaufsbeobachtung bei chronischer Herzinsuffizienz",
+        "description": "ResearchStudy: MII-CARE-PRO-2025 - PROM-gestützte Verlaufsbeobachtung bei Herzinsuffizienz",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "ServiceRequest/mii-exa-test-data-patho-request-1"
         },
         "name": "Prostatabiopsie Anforderung (2 Stanzen)",
@@ -9694,6 +11030,11 @@
         {
           "nameUrl": "index.html",
           "title": "Home",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "cross-module-patients.html",
+          "title": "Cross Module Patients",
           "generation": "markdown"
         },
         {

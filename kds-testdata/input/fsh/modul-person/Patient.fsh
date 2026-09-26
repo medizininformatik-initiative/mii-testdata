@@ -111,13 +111,13 @@ Description: "Patient: Patient-3"
 * identifier[pid].assigner.display = "Charité - Universitätsmedizin Berlin"
 * identifier[pid].assigner.identifier.system = "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"
 * identifier[pid].assigner.identifier.value = "Charité"
-//* identifier[versichertenId_GKV].use = #official
-//* identifier[versichertenId_GKV].type = http://fhir.de/CodeSystem/identifier-type-de-basis#GKV
-//* identifier[versichertenId_GKV].system = "http://fhir.de/sid/gkv/kvid-10"
-//* identifier[versichertenId_GKV].value = "Z234567890"
-//* identifier[versichertenId_GKV].assigner.identifier.use = #official
-//* identifier[versichertenId_GKV].assigner.identifier.value = "109519005"
-//* identifier[versichertenId_GKV].assigner.identifier.system = "http://fhir.de/sid/arge-ik/iknr"
+//* identifier[versichertenId].use = #official
+//* identifier[versichertenId].type = http://fhir.de/CodeSystem/identifier-type-de-basis#GKV
+//* identifier[versichertenId].system = "http://fhir.de/sid/gkv/kvid-10"
+//* identifier[versichertenId].value = "Z234567890"
+//* identifier[versichertenId].assigner.identifier.use = #official
+//* identifier[versichertenId].assigner.identifier.value = "109519005"
+//* identifier[versichertenId].assigner.identifier.system = "http://fhir.de/sid/arge-ik/iknr"
 //* identifier[versichertennummer_pkv].use = #secondary
 //* identifier[versichertennummer_pkv].type = http://fhir.de/CodeSystem/identifier-type-de-basis#PKV
 //* identifier[versichertennummer_pkv].system = "https://www.signal-iduna.de/fhir/sid/pkv"
@@ -405,4 +405,29 @@ Description: "Patient: Patient-11"
 * identifier[pid].assigner.display = "Charité - Universitätsmedizin Berlin"
 * identifier[pid].assigner.identifier.system = "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"
 * identifier[pid].assigner.identifier.value = "Charité"
-* gender = #male
+// Demographie der Journey "Forschungsvorhaben + Soziodemographie + PROM-Verlauf"
+// (Ressourcen: journey-forschung-prom/, Bundle: bundle-pat-11)
+* identifier[versichertenId].use = #official
+* identifier[versichertenId].type = $identifier-type-de-basis#KVZ10
+* identifier[versichertenId].system = "http://fhir.de/sid/gkv/kvid-10"
+* identifier[versichertenId].value = "K234567890"
+* identifier[versichertenId].assigner.identifier.use = #official
+* identifier[versichertenId].assigner.identifier.system = "http://fhir.de/sid/arge-ik/iknr"
+* identifier[versichertenId].assigner.identifier.value = "109519005"
+* name.use = #official
+* name.family = "Hallermann"
+* name.given[0] = "Ingrid"
+* name.given[1] = "Margarete"
+* insert AddGender(female)
+* birthDate = "1959-11-08"
+* address[Strassenanschrift].type = #both
+* address[Strassenanschrift].line[0] = "Schönhauser Allee 142"
+* address[Strassenanschrift].line[0].extension[0].url = "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName"
+* address[Strassenanschrift].line[0].extension[0].valueString = "Schönhauser Allee"
+* address[Strassenanschrift].line[0].extension[1].url = "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber"
+* address[Strassenanschrift].line[0].extension[1].valueString = "142"
+* address[Strassenanschrift].city = "Berlin"
+* address[Strassenanschrift].city.extension[0].url = "http://fhir.de/StructureDefinition/destatis/ags"
+* address[Strassenanschrift].city.extension[0].valueCoding = http://fhir.de/sid/destatis/ags#11000000
+* address[Strassenanschrift].postalCode = "10437"
+* address[Strassenanschrift].country = "DE"
