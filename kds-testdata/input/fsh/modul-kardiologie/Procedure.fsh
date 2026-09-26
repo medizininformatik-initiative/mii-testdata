@@ -17,7 +17,7 @@ Description: "Kardio Kardiale Deviceimplantation: Implantation eines ICD"
 * category = $sct20260701#387713003 "Surgical procedure (procedure)"
 * code.coding[sct] = $sct20260701#395218007 "Implantation of cardiac defibrillator (procedure)"
 * code.coding[ops] = $ops#5-377.5 "Implantation eines Herzschrittmachers, Defibrillators und Ereignis-Rekorders: Defibrillator mit Einkammer-Stimulation"
-* code.coding[ops].version = "2026"
+* code.coding[ops].version = "2025"
 * code.coding[ops].extension[0].url = "http://fhir.de/StructureDefinition/seitenlokalisation"
 * code.coding[ops].extension[0].valueCoding = $seitenlokalisation#L "links"
 * subject = Reference(mii-exa-test-data-kardiologie-patient-1)

@@ -1,0 +1,221 @@
+{
+  "resourceType": "Condition",
+  "id": "mii-exa-test-data-patient-3-seltene-genetic-diagnosis-1",
+  "meta": {
+    "security": [
+      {
+        "code": "HTEST",
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "display": "test health data"
+      }
+    ],
+    "source": "https://www.charite.de/fhir/kds-testdata",
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-genetic-diagnosis"
+    ]
+  },
+  "extension": [
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-ex-seltene-penetrance",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "HP:0003829",
+            "system": "http://human-phenotype-ontology.org",
+            "display": "Incomplete penetrance"
+          }
+        ]
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/condition-assertedDate",
+      "valueDateTime": "2025-04-15"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/condition-related",
+      "valueReference": {
+        "reference": "Condition/mii-exa-test-data-patient-3-seltene-clinical-diagnosis-1"
+      }
+    }
+  ],
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "782964007",
+          "display": "Genetic disease"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "code": "154700",
+        "system": "http://omim.org",
+        "display": "Marfan syndrome"
+      },
+      {
+        "code": "19346006",
+        "system": "http://snomed.info/sct",
+        "display": "Marfan syndrome",
+        "version": "http://snomed.info/sct/900000000000207008/version/20240201"
+      },
+      {
+        "code": "558",
+        "system": "http://www.orpha.net",
+        "display": "Marfan syndrome"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://fhir.de/StructureDefinition/icd-10-gm-diagnosesicherheit",
+            "valueCoding": {
+              "code": "G",
+              "system": "https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_ICD_DIAGNOSESICHERHEIT",
+              "display": "gesicherte Diagnose"
+            }
+          },
+          {
+            "url": "http://fhir.de/StructureDefinition/icd-10-gm-mehrfachcodierungs-kennzeichen",
+            "valueCoding": {
+              "code": "!",
+              "system": "http://fhir.de/CodeSystem/icd-10-gm-mehrfachcodierungs-kennzeichen",
+              "display": "!"
+            }
+          },
+          {
+            "url": "http://fhir.de/StructureDefinition/seitenlokalisation",
+            "valueCoding": {
+              "code": "U",
+              "system": "https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_ICD_SEITENLOKALISATION",
+              "display": "unbekannt"
+            }
+          }
+        ],
+        "code": "Q87.4",
+        "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+        "display": "Marfan-Syndrom",
+        "version": "2025"
+      }
+    ],
+    "text": "Marfan-Syndrom, genetisch bestaetigt (FBN1-Variante)"
+  },
+  "bodySite": [
+    {
+      "coding": [
+        {
+          "code": "113257007",
+          "system": "http://snomed.info/sct",
+          "display": "Structure of cardiovascular system",
+          "version": "http://snomed.info/sct/900000000000207008/version/20240201"
+        }
+      ]
+    }
+  ],
+  "onsetAge": {
+    "extension": [
+      {
+        "url": "http://fhir.de/StructureDefinition/lebensphase",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "41847000",
+              "system": "http://snomed.info/sct",
+              "display": "Adulthood (qualifier value)"
+            }
+          ]
+        }
+      }
+    ],
+    "value": 28,
+    "unit": "years",
+    "system": "http://unitsofmeasure.org",
+    "code": "a"
+  },
+  "stage": [
+    {
+      "assessment": [
+        {
+          "reference": "ClinicalImpression/mii-exa-test-data-patient-3-seltene-clinical-impression-1"
+        }
+      ],
+      "type": {
+        "coding": [
+          {
+            "code": "260998006",
+            "system": "http://snomed.info/sct",
+            "display": "Clinical staging"
+          }
+        ]
+      }
+    }
+  ],
+  "evidence": [
+    {
+      "code": [
+        {
+          "coding": [
+            {
+              "code": "106221001",
+              "system": "http://snomed.info/sct",
+              "display": "Genetic finding"
+            }
+          ]
+        }
+      ],
+      "detail": [
+        {
+          "reference": "Observation/mii-exa-test-data-seltene-molgen-variante-1"
+        },
+        {
+          "reference": "DiagnosticReport/mii-exa-test-data-seltene-molgen-befundbericht-1"
+        }
+      ]
+    }
+  ],
+  "note": [
+    {
+      "text": "Pathogene Variante im FBN1-Gen molekulargenetisch nachgewiesen. Diagnose genetisch gesichert. Unvollstaendige Penetranz dokumentiert."
+    }
+  ],
+  "clinicalStatus": {
+    "coding": [
+      {
+        "code": "active",
+        "system": "http://terminology.hl7.org/CodeSystem/condition-clinical"
+      }
+    ]
+  },
+  "verificationStatus": {
+    "coding": [
+      {
+        "code": "confirmed",
+        "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status"
+      }
+    ]
+  },
+  "severity": {
+    "coding": [
+      {
+        "code": "6736007",
+        "system": "http://snomed.info/sct",
+        "display": "Moderate severity"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/mii-exa-test-data-seltene-patient-1"
+  },
+  "encounter": {
+    "reference": "Encounter/mii-exa-test-data-seltene-encounter-1"
+  },
+  "recordedDate": "2025-04-15",
+  "recorder": {
+    "reference": "Practitioner/mii-exa-test-data-practitioner-physician-1"
+  },
+  "asserter": {
+    "reference": "Practitioner/mii-exa-test-data-practitioner-physician-2"
+  }
+}

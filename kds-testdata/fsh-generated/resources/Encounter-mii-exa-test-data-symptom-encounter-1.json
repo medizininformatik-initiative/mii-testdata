@@ -1,0 +1,27 @@
+{
+  "resourceType": "Encounter",
+  "id": "mii-exa-test-data-symptom-encounter-1",
+  "meta": {
+    "security": [
+      {
+        "code": "HTEST",
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "display": "test health data"
+      }
+    ],
+    "source": "https://www.charite.de/fhir/kds-testdata"
+  },
+  "period": {
+    "start": "2025-03-04",
+    "end": "2025-03-04"
+  },
+  "status": "finished",
+  "class": {
+    "code": "AMB",
+    "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+    "display": "ambulatory"
+  },
+  "subject": {
+    "reference": "Patient/mii-exa-test-data-symptom-patient-1"
+  }
+}

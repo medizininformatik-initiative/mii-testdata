@@ -108,7 +108,7 @@ Usage: #example
 Description: "Condition: Linksherzinsuffizienz NYHA III für Patient 11"
 * insert TestDataLabel
 * meta.source = "https://www.charite.de/fhir/kds-testdata"
-* insert AddDiagnose(I50.13, 2024, mii-exa-test-data-patient-11, 2025-01-20, Linksherzinsuffizienz NYHA III mit Beschwerden bei leichterer Belastung)
+* insert AddDiagnose(I50.13, 2023, mii-exa-test-data-patient-11, 2025-01-20, Linksherzinsuffizienz NYHA III mit Beschwerden bei leichterer Belastung)
 * code.coding[sct] = $sct#84114007 "Heart failure"
 * code.text = "Herzinsuffizienz NYHA III"
 * encounter = Reference(mii-exa-test-data-patient-11-encounter-1)

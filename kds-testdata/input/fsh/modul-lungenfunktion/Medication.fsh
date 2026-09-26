@@ -98,7 +98,7 @@ Description: "Lungenfunktion Dosisgabe (Variante): medicationCodeableConcept 0.1
 * partOf = Reference(mii-exa-test-data-lungenfunktion-provokationstest-messung-1)
 * medicationCodeableConcept.coding[Pharmazentralnummer] = $pzn#00171345 "Provokit® 0,33%"
 * medicationCodeableConcept.coding[atcClassDe] = http://fhir.de/CodeSystem/bfarm/atc#V04CX03 "Methacholin"
-* medicationCodeableConcept.coding[atcClassDe].version = "2026"
+* medicationCodeableConcept.coding[atcClassDe].version = "2025"
 * medicationCodeableConcept.text = "Methacholinchlorid 0,33% Loesung zur Inhalation"
 * subject = Reference(mii-exa-test-data-lungenfunktion-patient-1)
 * effectiveDateTime = "2025-02-18T11:15:00+01:00"

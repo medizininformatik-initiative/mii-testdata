@@ -100,7 +100,7 @@ Description: "Onkologie Test Tod - Verstorben an Tumorerkrankung"
 * interpretation = $mii-cs-onko-tod#J "Ja, die Person ist an einer Tumorerkrankung oder Folge einer Tumorerkrankung (einschließlich Behandlungskomplikation) verstorben."
 // ICD-10-GM-Version muss zur ValueSet-Version der Onko-2027-Profile passen (2026).
 // ICD-10-GM 2027 ist noch nicht veroeffentlicht; bei Erscheinen upstream pruefen.
-* valueCodeableConcept = $ICD10GM|2026#C56 "Bösartige Neubildung des Ovars"
+* valueCodeableConcept = $ICD10GM|2024#C56 "Bösartige Neubildung des Ovars"
 
 // Alternative Tod - Unknown cause
 Instance: mii-exa-test-data-onko-tod-2

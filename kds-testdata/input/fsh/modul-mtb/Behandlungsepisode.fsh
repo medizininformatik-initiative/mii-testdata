@@ -65,7 +65,7 @@ Description: "Test instance for MTB primary tumor diagnosis with all MS elements
 * verificationStatus.coding[condition-ver-status][+] = $condition-ver-status#confirmed
 * verificationStatus.coding[primaertumorDiagnosesicherung][+] = $mii-cs-onko-primaertumor-diagnosesicherung#7
 * code.coding[icd10-gm] = $ICD10GM#C34.1 "Bösartige Neubildung: Oberlappen (-Bronchus)"
-* code.coding[icd10-gm].version = "2024"
+* code.coding[icd10-gm].version = "2023"
 * code.coding[icd10-gm].extension[Diagnosesicherheit].valueCoding = $diagnosesicherheit#G "Gesicherte Diagnose"
 * code.coding[icd10-gm].extension[Seitenlokalisation].valueCoding = $seitenlokalisation#R "rechts"
 * code.coding[icd10-gm].extension[Mehrfachcodierungs-Kennzeichen].valueCoding = $mehrfachcodierungs-kennzeichen#"!"

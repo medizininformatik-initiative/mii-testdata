@@ -139,7 +139,7 @@ Description: "MedicationRequest: Metamizol 500-1000 mg oral bei Bedarf"
 // medicationCodeableConcept-Variante (statt medicationReference):
 // PZN- und ATC-Codings direkt in der Verordnung
 * medicationCodeableConcept.coding[Pharmazentralnummer] = $pzn#00651306 "Metamizol HEXAL® 500 mg"
-* medicationCodeableConcept.coding[atcClassDe] = $atc|2023#N02BB02 "Metamizol-Natrium"
+* medicationCodeableConcept.coding[atcClassDe] = $atc|2022#N02BB02 "Metamizol-Natrium"
 * medicationCodeableConcept.coding[atcClassEn] = $atc-who#N02BB02 "metamizole sodium"
 * medicationCodeableConcept.text = "Metamizol 500 mg Filmtabletten"
 * subject = Reference(mii-exa-test-data-patient-3)

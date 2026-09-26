@@ -1,0 +1,118 @@
+{
+  "resourceType": "Condition",
+  "id": "mii-exa-test-data-patho-diagnose-gesichert-1",
+  "meta": {
+    "security": [
+      {
+        "code": "HTEST",
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "display": "test health data"
+      }
+    ],
+    "source": "https://www.charite.de/fhir/kds-testdata",
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-diagnose-primaertumor"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/condition-assertedDate",
+      "valueDateTime": "2024-01-17"
+    }
+  ],
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "55342001",
+          "display": "Neoplastic disease"
+        }
+      ]
+    },
+    {
+      "coding": [
+        {
+          "code": "encounter-diagnosis",
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+        "version": "2024",
+        "code": "C61",
+        "display": "Bösartige Neubildung der Prostata"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "126906006",
+        "display": "Neoplasm of prostate (disorder)"
+      },
+      {
+        "code": "C61",
+        "system": "http://id.who.int/icd/release/10",
+        "display": "Malignant neoplasm of prostate"
+      },
+      {
+        "code": "2C82",
+        "system": "http://id.who.int/icd/release/11/mms",
+        "display": "Malignant neoplasms of prostate"
+      }
+    ]
+  },
+  "stage": [
+    {
+      "summary": {
+        "coding": [
+          {
+            "code": "1222766008",
+            "system": "http://snomed.info/sct",
+            "display": "IIA (AJCC)"
+          }
+        ]
+      },
+      "type": {
+        "coding": [
+          {
+            "code": "260998006",
+            "system": "http://snomed.info/sct",
+            "display": "Clinical staging (qualifier value)"
+          }
+        ]
+      }
+    }
+  ],
+  "note": [
+    {
+      "text": "Prostatakarzinom mit ISUP Grade Group 2 (Gleason 3+4=7), nachgewiesen in 1 von 2 Stanzen (rechts lateral basal). Klinisches Stadium cT2a cN0 cM0. Intermediäres Risiko nach D'Amico."
+    }
+  ],
+  "clinicalStatus": {
+    "coding": [
+      {
+        "code": "active",
+        "system": "http://terminology.hl7.org/CodeSystem/condition-clinical"
+      }
+    ]
+  },
+  "verificationStatus": {
+    "coding": [
+      {
+        "code": "confirmed",
+        "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/mii-exa-test-data-patho-patient-1"
+  },
+  "encounter": {
+    "reference": "Encounter/mii-exa-test-data-patho-encounter-1"
+  },
+  "onsetDateTime": "2024-01-17",
+  "recordedDate": "2024-01-17"
+}

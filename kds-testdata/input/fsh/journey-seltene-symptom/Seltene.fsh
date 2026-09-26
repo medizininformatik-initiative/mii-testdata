@@ -98,7 +98,7 @@ Description: "Clinical Diagnosis: Morbus Fabry (Patient 13, 12 Jahre nach Erstsy
 * code.coding[+] = $sct#16652001 "Fabry's disease"
 * code.coding[+] = $orpha#324 "Fabry disease"
 * code.coding[+] = $icd-10-gm#E75.2 "Sonstige Sphingolipidosen"
-* code.coding[=].version = "2024"
+* code.coding[=].version = "2023"
 * code.coding[=].extension[0].url = "http://fhir.de/StructureDefinition/icd-10-gm-diagnosesicherheit"
 * code.coding[=].extension[0].valueCoding = $diagnosesicherheit#G "gesicherte Diagnose"
 * code.text = "Morbus Fabry (Alpha-Galaktosidase-A-Mangel), heterozygot"
@@ -144,7 +144,7 @@ Description: "Genetic Diagnosis: GLA-Variante, molekulargenetisch bestätigter M
 * code.coding[+] = $sct#16652001 "Fabry's disease"
 * code.coding[+] = $orpha#324 "Fabry disease"
 * code.coding[+] = $icd-10-gm#E75.2 "Sonstige Sphingolipidosen"
-* code.coding[=].version = "2024"
+* code.coding[=].version = "2023"
 * code.text = "Morbus Fabry, molekulargenetisch gesichert (GLA, heterozygot)"
 * subject = Reference(mii-exa-test-data-patient-13)
 * encounter = Reference(mii-exa-test-data-patient-13-encounter-2)

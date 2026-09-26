@@ -1,0 +1,34 @@
+{
+  "resourceType": "Specimen",
+  "id": "mii-exa-test-data-patient-1-icu-spec-trinkwasser-1",
+  "meta": {
+    "security": [
+      {
+        "code": "HTEST",
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "display": "test health data"
+      }
+    ],
+    "source": "https://www.charite.de/fhir/kds-testdata"
+  },
+  "identifier": [
+    {
+      "system": "https://www.charite.de/fhir/sid/icu-specimen-id",
+      "value": "icu-spec-trinkwasser-1"
+    }
+  ],
+  "collection": {
+    "collectedDateTime": "2024-05-05T07:30:00+02:00"
+  },
+  "status": "available",
+  "type": {
+    "coding": [
+      {
+        "code": "119318008",
+        "system": "http://snomed.info/sct",
+        "display": "Water specimen"
+      }
+    ]
+  },
+  "receivedTime": "2024-05-05T07:45:00+02:00"
+}

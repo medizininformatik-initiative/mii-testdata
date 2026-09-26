@@ -12,7 +12,7 @@ Description: "Verdacht auf Prostatakarzinom basierend auf erhöhtem PSA und auff
 * category[onkologie] = $sct#55342001 "Neoplastic disease"
 * category[+] = $condition-category#encounter-diagnosis
 * code.coding[icd10-gm].system = "http://fhir.de/CodeSystem/bfarm/icd-10-gm"
-* code.coding[icd10-gm].version = "2025"
+* code.coding[icd10-gm].version = "2024"
 * code.coding[icd10-gm].code = #C61
 * code.coding[icd10-gm].display = "Bösartige Neubildung der Prostata"
 * code.coding[sct] = $sct#126906006 "Neoplasm of prostate (disorder)"
@@ -38,7 +38,7 @@ Description: "Gesicherte Diagnose eines Prostatakarzinoms nach 2-Stanzen-Biopsie
 * category[onkologie] = $sct#55342001 "Neoplastic disease"
 * category[+] = $condition-category#encounter-diagnosis
 * code.coding[icd10-gm].system = "http://fhir.de/CodeSystem/bfarm/icd-10-gm"
-* code.coding[icd10-gm].version = "2026"
+* code.coding[icd10-gm].version = "2024"
 * code.coding[icd10-gm].code = #C61
 * code.coding[icd10-gm].display = "Bösartige Neubildung der Prostata"
 * code.coding[sct] = $sct#126906006 "Neoplasm of prostate (disorder)"

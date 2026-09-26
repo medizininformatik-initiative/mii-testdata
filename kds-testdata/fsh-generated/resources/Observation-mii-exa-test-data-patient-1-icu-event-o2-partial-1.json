@@ -1,0 +1,76 @@
+{
+  "resourceType": "Observation",
+  "id": "mii-exa-test-data-patient-1-icu-event-o2-partial-1",
+  "meta": {
+    "security": [
+      {
+        "code": "HTEST",
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "display": "test health data"
+      }
+    ],
+    "source": "https://www.charite.de/fhir/kds-testdata",
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-exspiratorischer-sauerstoffpartialdruck"
+    ]
+  },
+  "partOf": [
+    {
+      "reference": "Procedure/mii-exa-test-data-patient-1-icu-vent-beatmung-1"
+    }
+  ],
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "40617009",
+          "display": "Artificial ventilation (regime/therapy)"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "442720002",
+        "display": "Expired oxygen tension (observable entity)"
+      },
+      {
+        "system": "http://loinc.org",
+        "code": "3147-6",
+        "display": "Oxygen [Partial pressure] in Exhaled gas"
+      },
+      {
+        "system": "urn:iso:std:iso:11073:10101",
+        "code": "153132",
+        "display": "Partial pressure of oxygen in airway gas measured during expiration."
+      }
+    ]
+  },
+  "identifier": [
+    {
+      "system": "https://www.charite.de/fhir/sid/icu-observation-id",
+      "value": "icu-event-o2-partial-1"
+    }
+  ],
+  "valueQuantity": {
+    "system": "http://unitsofmeasure.org",
+    "code": "mm[Hg]",
+    "value": 40,
+    "unit": "mmHg"
+  },
+  "status": "final",
+  "subject": {
+    "reference": "Patient/mii-exa-test-data-icu-patient-1"
+  },
+  "effectiveDateTime": "2024-05-05T08:00:00+02:00",
+  "encounter": {
+    "reference": "Encounter/mii-exa-test-data-icu-encounter-1"
+  },
+  "issued": "2024-05-05T11:00:00+02:00",
+  "device": {
+    "reference": "DeviceMetric/mii-exa-test-data-patient-1-icu-vent-dm-param-1"
+  }
+}

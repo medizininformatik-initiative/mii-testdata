@@ -1,0 +1,84 @@
+{
+  "resourceType": "Observation",
+  "id": "mii-exa-test-data-patient-1-icu-vent-pip-dar-1",
+  "meta": {
+    "security": [
+      {
+        "code": "HTEST",
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "display": "test health data"
+      }
+    ],
+    "source": "https://www.charite.de/fhir/kds-testdata",
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-maximaler-beatmungsdruck"
+    ]
+  },
+  "partOf": [
+    {
+      "reference": "Procedure/mii-exa-test-data-patient-1-icu-vent-beatmung-1"
+    }
+  ],
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "40617009",
+          "display": "Artificial ventilation (regime/therapy)"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "27913002",
+        "display": "Maximum inspiratory pressure"
+      },
+      {
+        "system": "http://loinc.org",
+        "code": "76531-3",
+        "display": "Pressure.max Respiratory system airway --on ventilator"
+      },
+      {
+        "system": "urn:iso:std:iso:11073:10101",
+        "code": "151957",
+        "display": "Maximum airway pressure during mechanical ventilation."
+      }
+    ]
+  },
+  "identifier": [
+    {
+      "system": "https://www.charite.de/fhir/sid/icu-observation-id",
+      "value": "icu-vent-pip-dar-1"
+    }
+  ],
+  "note": [
+    {
+      "text": "Nicht erhoben: Patientin war am 07.05.2024 um 06:00 Uhr fuer den Spontanatmungsversuch am T-Stueck vom Respirator diskonnektiert, das Beatmungsgeraet lieferte keinen Messwert."
+    }
+  ],
+  "status": "final",
+  "subject": {
+    "reference": "Patient/mii-exa-test-data-icu-patient-1"
+  },
+  "encounter": {
+    "reference": "Encounter/mii-exa-test-data-icu-encounter-1"
+  },
+  "device": {
+    "reference": "DeviceMetric/mii-exa-test-data-patient-1-icu-vent-dm-param-1"
+  },
+  "effectiveDateTime": "2024-05-07T06:00:00+02:00",
+  "issued": "2024-05-07T06:10:00+02:00",
+  "dataAbsentReason": {
+    "coding": [
+      {
+        "code": "not-performed",
+        "system": "http://terminology.hl7.org/CodeSystem/data-absent-reason",
+        "display": "Not Performed"
+      }
+    ]
+  }
+}

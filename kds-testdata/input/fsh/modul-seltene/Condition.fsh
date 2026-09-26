@@ -195,7 +195,7 @@ Description: "Symptom Condition: Tall stature - all 4 code slices (HPO, SNOMED, 
 * code.coding[+] = $HPO-OBO#HP:0000098 "Tall stature"
 * code.coding[+] = $sct#15456002 "Tall stature"
 * code.coding[+] = $icd-10-gm#E34.4 "Konstitutioneller Hochwuchs"
-* code.coding[=].version = "2026"
+* code.coding[=].version = "2025"
 * code.coding[+] = $MONDO#MONDO:0007064 "Marfan syndrome"
 * code.text = "Hochwuchs bei Marfan-Syndrom"
 * bodySite = $sct#38266002 "Entire body as a whole"

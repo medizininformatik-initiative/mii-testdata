@@ -1,0 +1,124 @@
+{
+  "resourceType": "Observation",
+  "id": "mii-exa-test-data-patient-12-labobs-1",
+  "meta": {
+    "security": [
+      {
+        "code": "HTEST",
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "display": "test health data"
+      }
+    ],
+    "source": "https://www.charite.de/fhir/kds-testdata",
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab"
+    ]
+  },
+  "identifier": [
+    {
+      "assigner": {
+        "identifier": {
+          "system": "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier",
+          "value": "Charité"
+        }
+      },
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "OBI"
+          }
+        ]
+      },
+      "system": "https://www.charite.de/fhir/sid/lab-results",
+      "value": "LO_000041"
+    }
+  ],
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "Laboratory"
+        },
+        {
+          "code": "26436-6",
+          "system": "http://loinc.org",
+          "display": "Laboratory studies (set)"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "code": "2524-7",
+        "system": "http://loinc.org",
+        "display": "Lactate [Moles/volume] in Serum or Plasma",
+        "version": "2.78"
+      }
+    ]
+  },
+  "basedOn": [
+    {
+      "reference": "ServiceRequest/mii-exa-test-data-patient-12-labrequest-1"
+    }
+  ],
+  "interpretation": [
+    {
+      "coding": [
+        {
+          "code": "HH",
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "display": "Critical high"
+        }
+      ]
+    }
+  ],
+  "referenceRange": [
+    {
+      "low": {
+        "value": 0.5,
+        "code": "mmol/L",
+        "system": "http://unitsofmeasure.org",
+        "unit": "millimole per liter"
+      },
+      "high": {
+        "value": 1.6,
+        "code": "mmol/L",
+        "system": "http://unitsofmeasure.org",
+        "unit": "millimole per liter"
+      },
+      "type": {
+        "coding": [
+          {
+            "code": "normal",
+            "system": "http://terminology.hl7.org/CodeSystem/referencerange-meaning",
+            "display": "Normal Range"
+          }
+        ]
+      }
+    }
+  ],
+  "note": [
+    {
+      "text": "Laktat > 2 mmol/L trotz Volumengabe — Kriterium des septischen Schocks (Sepsis-3)."
+    }
+  ],
+  "valueQuantity": {
+    "system": "http://unitsofmeasure.org",
+    "value": 4.8,
+    "code": "mmol/L",
+    "unit": "millimole per liter"
+  },
+  "status": "final",
+  "subject": {
+    "reference": "Patient/mii-exa-test-data-patient-12"
+  },
+  "encounter": {
+    "reference": "Encounter/mii-exa-test-data-patient-12-encounter-1"
+  },
+  "effectiveDateTime": "2025-03-08T14:45:00+01:00",
+  "issued": "2025-03-08T15:20:00+01:00"
+}

@@ -148,8 +148,8 @@ Description: "Biobank Diagnose Patient 3: Kolonkarzinom"
 * clinicalStatus = $condition-clinical#active
 * verificationStatus = $condition-ver-status#confirmed
 * code.coding[icd10-gm] = $icd-10-gm#C18.9 "Bösartige Neubildung: Kolon, nicht näher bezeichnet"
-* code.coding[icd10-gm].version = "2024"
-* code.coding[alpha-id] = $alpha-id|2024#I29723 "Bösartige Neubildung des Kolons o.n.A."
+* code.coding[icd10-gm].version = "2022"
+* code.coding[alpha-id] = $alpha-id|2022#I29723 "Bösartige Neubildung des Kolons o.n.A."
 * code.coding[sct] = $sct#363406005 "Malignant tumor of colon (disorder)"
 * bodySite.coding[snomed-ct] = $sct#71854001 "Colon structure (body structure)"
 * subject = Reference(mii-exa-test-data-biobank-patient-3)

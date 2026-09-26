@@ -14,7 +14,7 @@ Description: "MedicationStatement: ASS 100 mg 1x täglich mittags eine Tablette 
 // medicationCodeableConcept-Variante (statt medicationReference):
 // PZN- und ATC-Codings direkt in der Medikationsangabe
 * medicationCodeableConcept.coding[Pharmazentralnummer] = $pzn#06312077 "ASS 100 - 1a Pharma TAH Tabletten"
-* medicationCodeableConcept.coding[atcClassDe] = $atc|2023#B01AC06 "Acetylsalicylsäure"
+* medicationCodeableConcept.coding[atcClassDe] = $atc|2020#B01AC06 "Acetylsalicylsäure"
 * medicationCodeableConcept.coding[atcClassEn] = $atc-who#B01AC06 "acetylsalicylic acid"
 * medicationCodeableConcept.text = "ASS 100 mg Tabletten"
 * subject = Reference(mii-exa-test-data-patient-1)

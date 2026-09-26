@@ -1,0 +1,59 @@
+{
+  "resourceType": "Observation",
+  "id": "mii-exa-test-data-patient-3-seltene-consanguinity-1",
+  "meta": {
+    "security": [
+      {
+        "code": "HTEST",
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "display": "test health data"
+      }
+    ],
+    "source": "https://www.charite.de/fhir/kds-testdata",
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-consanguinity"
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "social-history"
+        }
+      ]
+    }
+  ],
+  "focus": [
+    {
+      "reference": "FamilyMemberHistory/mii-exa-test-data-patient-3-seltene-familienanamnese-1"
+    },
+    {
+      "reference": "FamilyMemberHistory/mii-exa-test-data-patient-3-seltene-familienanamnese-2"
+    }
+  ],
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "code": "373067005",
+        "system": "http://snomed.info/sct",
+        "display": "No"
+      }
+    ],
+    "text": "Eltern nicht blutsverwandt"
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "842009",
+        "display": "Consanguinity"
+      }
+    ]
+  },
+  "status": "final",
+  "subject": {
+    "reference": "Patient/mii-exa-test-data-seltene-patient-1"
+  },
+  "effectiveDateTime": "2024-03-05"
+}

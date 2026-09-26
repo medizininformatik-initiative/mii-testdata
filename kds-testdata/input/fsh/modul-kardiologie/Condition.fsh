@@ -16,7 +16,7 @@ Description: "Kardio Diagnose: Akuter transmuraler Myokardinfarkt der Vorderwand
 * extension[Feststellungsdatum].url = "http://hl7.org/fhir/StructureDefinition/condition-assertedDate"
 * extension[Feststellungsdatum].valueDateTime = "2020-03-15"
 * code.coding[icd10-gm] = $icd-10-gm#I21.0 "Akuter transmuraler Myokardinfarkt der Vorderwand"
-* code.coding[icd10-gm].version = "2026"
+* code.coding[icd10-gm].version = "2025"
 * code.coding[icd10-gm].extension[0].url = "http://fhir.de/StructureDefinition/icd-10-gm-diagnosesicherheit"
 * code.coding[icd10-gm].extension[0].valueCoding = $diagnosesicherheit#G "gesicherte Diagnose"
 * code.coding[icd10-gm].extension[1].url = "http://fhir.de/StructureDefinition/icd-10-gm-mehrfachcodierungs-kennzeichen"
@@ -50,7 +50,7 @@ Description: "Kardio Diagnose: Hirninfarkt durch embolischen Verschluss zerebral
 * clinicalStatus = $condition-clinical#active
 * verificationStatus = $condition-ver-status#confirmed
 * code.coding[icd10-gm] = $icd-10-gm#I63.4 "Hirninfarkt durch Embolie zerebraler Arterien"
-* code.coding[icd10-gm].version = "2026"
+* code.coding[icd10-gm].version = "2023"
 * code.coding[icd10-gm].extension[0].url = "http://fhir.de/StructureDefinition/seitenlokalisation"
 * code.coding[icd10-gm].extension[0].valueCoding = $seitenlokalisation#L "links"
 * code.coding[sct] = $sct20260701#75543006 "Cerebral embolism (disorder)"
@@ -81,7 +81,7 @@ Description: "Kardio Klappenvitium: hoehergradige Aortenklappenstenose"
 * extension[ReferenzPrimaerdiagnose].url = "http://hl7.org/fhir/StructureDefinition/condition-related"
 * extension[ReferenzPrimaerdiagnose].valueReference = Reference(mii-exa-test-data-kardiologie-diagnose-1)
 * code.coding[icd10-gm] = $icd-10-gm#I35.0 "Aortenklappenstenose"
-* code.coding[icd10-gm].version = "2026"
+* code.coding[icd10-gm].version = "2025"
 * code.coding[icd10-gm].extension[0].url = "http://fhir.de/StructureDefinition/icd-10-gm-diagnosesicherheit"
 * code.coding[icd10-gm].extension[0].valueCoding = $diagnosesicherheit#G "gesicherte Diagnose"
 * code.coding[icd10-gm].extension[1].url = "http://fhir.de/StructureDefinition/icd-10-gm-mehrfachcodierungs-kennzeichen"

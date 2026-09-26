@@ -1,0 +1,98 @@
+{
+  "resourceType": "Patient",
+  "id": "mii-exa-test-data-patient-pseudonym-1",
+  "meta": {
+    "security": [
+      {
+        "code": "HTEST",
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "display": "test health data"
+      }
+    ],
+    "source": "https://www.charite.de/fhir/kds-testdata",
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/PatientPseudonymisiert"
+    ]
+  },
+  "identifier": [
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+            "code": "PSEUDED"
+          }
+        ]
+      },
+      "system": "https://www.charite.de/fhir/sid/pseudonym",
+      "value": "PSN-TEST-0001"
+    },
+    {
+      "assigner": {
+        "identifier": {
+          "type": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                "code": "XX"
+              }
+            ]
+          },
+          "system": "http://fhir.de/sid/arge-ik/iknr",
+          "value": "987654321"
+        }
+      },
+      "system": "http://fhir.de/sid/gkv/kvid-10",
+      "type": {
+        "coding": [
+          {
+            "system": "http://fhir.de/CodeSystem/identifier-type-de-basis",
+            "code": "KVZ10"
+          }
+        ]
+      },
+      "_value": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+            "valueCode": "masked"
+          }
+        ]
+      }
+    }
+  ],
+  "address": [
+    {
+      "type": "both",
+      "city": "Berlin",
+      "_city": {
+        "extension": [
+          {
+            "url": "http://fhir.de/StructureDefinition/destatis/ags",
+            "valueCoding": {
+              "code": "11000000",
+              "system": "http://fhir.de/sid/destatis/ags"
+            }
+          }
+        ]
+      },
+      "postalCode": "13051",
+      "country": "DE"
+    }
+  ],
+  "active": true,
+  "gender": "other",
+  "_gender": {
+    "extension": [
+      {
+        "url": "http://fhir.de/StructureDefinition/gender-amtlich-de",
+        "valueCoding": {
+          "code": "X",
+          "system": "http://fhir.de/CodeSystem/gender-amtlich-de",
+          "display": "unbestimmt"
+        }
+      }
+    ]
+  },
+  "birthDate": "1975"
+}

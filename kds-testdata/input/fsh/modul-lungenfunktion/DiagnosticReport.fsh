@@ -41,7 +41,7 @@ Description: "Lungenfunktion Spirometrie-Befund: leichte obstruktive Ventilation
 * result[VC] = Reference(mii-exa-test-data-lungenfunktion-vc-1)
 * conclusion = "Leichte obstruktive Ventilationsstoerung (FEV1/FVC 67.7 %, FEV1 74 % vom Soll) bei normaler Vitalkapazitaet."
 * conclusionCode.coding[icd10-gm] = $icd-10-gm#J45.9 "Asthma bronchiale, nicht näher bezeichnet"
-* conclusionCode.coding[icd10-gm].version = "2026"
+* conclusionCode.coding[icd10-gm].version = "2025"
 * presentedForm.contentType = #application/pdf
 * presentedForm.url = "https://www.charite.de/fhir/lungenfunktion/befunde/spirometrie-2025-02-18.pdf"
 * presentedForm.title = "Spirometrie-Befund vom 18.02.2025"
@@ -72,7 +72,7 @@ Description: "Lungenfunktion Bodyplethysmographie-Befund: erhoehter Atemwegswide
 * result[RV_TLC] = Reference(mii-exa-test-data-lungenfunktion-rv-tlc-1)
 * conclusion = "Erhoehter totaler und spezifischer Atemwegswiderstand, RV und RV/TLC erhoeht im Sinne einer leichten Ueberblaehung. TLC normwertig."
 * conclusionCode.coding[icd10-gm] = $icd-10-gm#J45.9 "Asthma bronchiale, nicht näher bezeichnet"
-* conclusionCode.coding[icd10-gm].version = "2026"
+* conclusionCode.coding[icd10-gm].version = "2025"
 * presentedForm.contentType = #application/pdf
 * presentedForm.url = "https://www.charite.de/fhir/lungenfunktion/befunde/bodyplethysmographie-2025-02-18.pdf"
 * presentedForm.title = "Bodyplethysmographie-Befund vom 18.02.2025"
@@ -93,7 +93,7 @@ Description: "Lungenfunktion Diffusions-Befund: normale CO-Diffusionskapazitaet"
 * result[Hb] = Reference(mii-exa-test-data-lungenfunktion-hb-1)
 * conclusion = "Normale CO-Diffusionskapazitaet (DLCO 92 % vom Soll), auch nach Hb-Korrektur unauffaellig."
 * conclusionCode.coding[icd10-gm] = $icd-10-gm#J45.9 "Asthma bronchiale, nicht näher bezeichnet"
-* conclusionCode.coding[icd10-gm].version = "2026"
+* conclusionCode.coding[icd10-gm].version = "2025"
 * presentedForm.contentType = #application/pdf
 * presentedForm.url = "https://www.charite.de/fhir/lungenfunktion/befunde/diffusion-2025-02-18.pdf"
 * presentedForm.title = "Diffusions-Befund vom 18.02.2025"
@@ -116,7 +116,7 @@ Description: "Lungenfunktion Provokationstest-Befund: positiver Methacholin-Prov
 * result[FRC] = Reference(mii-exa-test-data-lungenfunktion-frc-prov-1)
 * conclusion = "Positiver Methacholin-Provokationstest: FEV1-Abfall um 26 % bei kumulativer Dosis von 0.34 mg (PD20 = 0.30 mg). Befund vereinbar mit bronchialer Hyperreagibilitaet bei Asthma bronchiale."
 * conclusionCode.coding[icd10-gm] = $icd-10-gm#J45.0 "Vorwiegend allergisches Asthma bronchiale"
-* conclusionCode.coding[icd10-gm].version = "2026"
+* conclusionCode.coding[icd10-gm].version = "2025"
 * presentedForm.contentType = #application/pdf
 * presentedForm.url = "https://www.charite.de/fhir/lungenfunktion/befunde/provokationstest-2025-02-18.pdf"
 * presentedForm.title = "Provokationstest-Befund vom 18.02.2025"

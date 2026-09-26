@@ -1,0 +1,1411 @@
+{
+  "resourceType": "Bundle",
+  "id": "mii-exa-test-data-bundle-kardiologie-1",
+  "meta": {
+    "security": [
+      {
+        "code": "HTEST",
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "display": "test health data"
+      }
+    ],
+    "source": "https://www.charite.de/fhir/kds-testdata"
+  },
+  "entry": [
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Patient/mii-exa-test-data-kardiologie-patient-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Patient/mii-exa-test-data-kardiologie-patient-1",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "mii-exa-test-data-kardiologie-patient-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata"
+        },
+        "identifier": [
+          {
+            "system": "https://www.charite.de/fhir/sid/patientenidentifikation",
+            "value": "KARDIO-TEST-001"
+          }
+        ],
+        "name": [
+          {
+            "given": [
+              "Karl"
+            ],
+            "family": "Herzmann"
+          }
+        ],
+        "birthDate": "1949-11-02",
+        "gender": "male"
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Encounter/mii-exa-test-data-kardiologie-encounter-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Encounter/mii-exa-test-data-kardiologie-encounter-1",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "mii-exa-test-data-kardiologie-encounter-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata"
+        },
+        "period": {
+          "start": "2025-03-10",
+          "end": "2025-03-18"
+        },
+        "diagnosis": [
+          {
+            "condition": {
+              "reference": "Condition/mii-exa-test-data-kardiologie-diagnose-1"
+            },
+            "use": {
+              "coding": [
+                {
+                  "code": "AD",
+                  "system": "http://terminology.hl7.org/CodeSystem/diagnosis-role",
+                  "display": "Admission diagnosis"
+                }
+              ]
+            },
+            "rank": 1
+          }
+        ],
+        "status": "finished",
+        "class": {
+          "code": "IMP",
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "display": "inpatient encounter"
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-kardiologie-patient-1"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Condition/mii-exa-test-data-kardiologie-diagnose-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Condition/mii-exa-test-data-kardiologie-diagnose-1",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "mii-exa-test-data-kardiologie-diagnose-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-kardio/StructureDefinition/mii-pr-kardio-diagnose"
+          ]
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/condition-assertedDate",
+            "valueDateTime": "2020-03-15"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "extension": [
+                {
+                  "url": "http://fhir.de/StructureDefinition/icd-10-gm-diagnosesicherheit",
+                  "valueCoding": {
+                    "code": "G",
+                    "system": "https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_ICD_DIAGNOSESICHERHEIT",
+                    "display": "gesicherte Diagnose"
+                  }
+                },
+                {
+                  "url": "http://fhir.de/StructureDefinition/icd-10-gm-mehrfachcodierungs-kennzeichen",
+                  "valueCoding": {
+                    "code": "!",
+                    "system": "http://fhir.de/CodeSystem/icd-10-gm-mehrfachcodierungs-kennzeichen",
+                    "display": "!"
+                  }
+                }
+              ],
+              "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+              "code": "I21.0",
+              "display": "Akuter transmuraler Myokardinfarkt der Vorderwand",
+              "version": "2025"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "22298006",
+              "version": "http://snomed.info/sct/900000000000207008/version/20260701",
+              "display": "Myocardial infarction (disorder)"
+            }
+          ]
+        },
+        "bodySite": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "87878005",
+                "version": "http://snomed.info/sct/900000000000207008/version/20260701",
+                "display": "Left ventricular structure (body structure)"
+              }
+            ]
+          }
+        ],
+        "recorder": {
+          "display": "Facharzt fuer Kardiologie"
+        },
+        "asserter": {
+          "display": "Facharzt fuer Kardiologie"
+        },
+        "onsetAge": {
+          "extension": [
+            {
+              "url": "http://fhir.de/StructureDefinition/lebensphase",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "41847000",
+                    "system": "http://snomed.info/sct",
+                    "display": "Adulthood (qualifier value)"
+                  }
+                ]
+              }
+            }
+          ],
+          "value": 51,
+          "code": "a",
+          "system": "http://unitsofmeasure.org",
+          "unit": "Jahre"
+        },
+        "abatementAge": {
+          "extension": [
+            {
+              "url": "http://fhir.de/StructureDefinition/lebensphase",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "41847000",
+                    "system": "http://snomed.info/sct",
+                    "display": "Adulthood (qualifier value)"
+                  }
+                ]
+              }
+            }
+          ],
+          "value": 51,
+          "code": "a",
+          "system": "http://unitsofmeasure.org",
+          "unit": "Jahre"
+        },
+        "note": [
+          {
+            "text": "Z.n. Vorderwandinfarkt 03/2020 mit PCI und Stentimplantation RIVA."
+          }
+        ],
+        "clinicalStatus": {
+          "coding": [
+            {
+              "code": "resolved",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "code": "confirmed",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status"
+            }
+          ]
+        },
+        "severity": {
+          "coding": [
+            {
+              "code": "24484000",
+              "system": "http://snomed.info/sct",
+              "version": "http://snomed.info/sct/900000000000207008/version/20260701",
+              "display": "Severe (severity modifier) (qualifier value)"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-kardiologie-patient-1"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-kardiologie-encounter-1"
+        },
+        "recordedDate": "2025-03-10"
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Condition/mii-exa-test-data-kardiologie-diagnose-2"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Condition/mii-exa-test-data-kardiologie-diagnose-2",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "mii-exa-test-data-kardiologie-diagnose-2",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-kardio/StructureDefinition/mii-pr-kardio-diagnose"
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "extension": [
+                {
+                  "url": "http://fhir.de/StructureDefinition/seitenlokalisation",
+                  "valueCoding": {
+                    "code": "L",
+                    "system": "https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_ICD_SEITENLOKALISATION",
+                    "display": "links"
+                  }
+                }
+              ],
+              "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+              "code": "I63.4",
+              "display": "Hirninfarkt durch Embolie zerebraler Arterien",
+              "version": "2023"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "75543006",
+              "version": "http://snomed.info/sct/900000000000207008/version/20260701",
+              "display": "Cerebral embolism (disorder)"
+            },
+            {
+              "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-kardio/CodeSystem/mii-cs-kardio-atherosklerotisches-ereignis",
+              "code": "eg-cv",
+              "display": "Embolischer Gefäßverschluss cerebro-vaskulär",
+              "version": "2027.0.0-ballot"
+            }
+          ]
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/condition-related",
+            "valueReference": {
+              "reference": "Condition/mii-exa-test-data-kardiologie-diagnose-1"
+            }
+          }
+        ],
+        "recorder": {
+          "display": "Facharzt fuer Neurologie"
+        },
+        "asserter": {
+          "display": "Facharzt fuer Neurologie"
+        },
+        "note": [
+          {
+            "text": "Embolischer Mediainfarkt links 08/2023 bei intermittierendem Vorhofflimmern."
+          }
+        ],
+        "clinicalStatus": {
+          "coding": [
+            {
+              "code": "active",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "code": "confirmed",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-kardiologie-patient-1"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-kardiologie-encounter-1"
+        },
+        "onsetDateTime": "2023-08-02",
+        "recordedDate": "2025-03-10"
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Condition/mii-exa-test-data-kardiologie-klappenvitium-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Condition/mii-exa-test-data-kardiologie-klappenvitium-1",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "mii-exa-test-data-kardiologie-klappenvitium-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-kardio/StructureDefinition/mii-pr-kardio-klappenvitium"
+          ]
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/condition-assertedDate",
+            "valueDateTime": "2024-06-11"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/condition-related",
+            "valueReference": {
+              "reference": "Condition/mii-exa-test-data-kardiologie-diagnose-1"
+            }
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "extension": [
+                {
+                  "url": "http://fhir.de/StructureDefinition/icd-10-gm-diagnosesicherheit",
+                  "valueCoding": {
+                    "code": "G",
+                    "system": "https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_ICD_DIAGNOSESICHERHEIT",
+                    "display": "gesicherte Diagnose"
+                  }
+                },
+                {
+                  "url": "http://fhir.de/StructureDefinition/icd-10-gm-mehrfachcodierungs-kennzeichen",
+                  "valueCoding": {
+                    "code": "!",
+                    "system": "http://fhir.de/CodeSystem/icd-10-gm-mehrfachcodierungs-kennzeichen",
+                    "display": "!"
+                  }
+                },
+                {
+                  "url": "http://fhir.de/StructureDefinition/seitenlokalisation",
+                  "valueCoding": {
+                    "code": "U",
+                    "system": "https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_ICD_SEITENLOKALISATION",
+                    "display": "unbekannt"
+                  }
+                }
+              ],
+              "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+              "code": "I35.0",
+              "display": "Aortenklappenstenose",
+              "version": "2025"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "60573004",
+              "version": "http://snomed.info/sct/900000000000207008/version/20260701",
+              "display": "Aortic valve stenosis (disorder)"
+            }
+          ]
+        },
+        "bodySite": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "34202007",
+                "version": "http://snomed.info/sct/900000000000207008/version/20260701",
+                "display": "Aortic valve structure (body structure)"
+              }
+            ]
+          }
+        ],
+        "recorder": {
+          "display": "Facharzt fuer Kardiologie"
+        },
+        "asserter": {
+          "display": "Facharzt fuer Kardiologie"
+        },
+        "onsetAge": {
+          "extension": [
+            {
+              "url": "http://fhir.de/StructureDefinition/lebensphase",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "271872005",
+                    "system": "http://snomed.info/sct",
+                    "display": "Old age (qualifier value)"
+                  }
+                ]
+              }
+            }
+          ],
+          "value": 74,
+          "code": "a",
+          "system": "http://unitsofmeasure.org",
+          "unit": "Jahre"
+        },
+        "abatementAge": {
+          "extension": [
+            {
+              "url": "http://fhir.de/StructureDefinition/lebensphase",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "271872005",
+                    "system": "http://snomed.info/sct",
+                    "display": "Old age (qualifier value)"
+                  }
+                ]
+              }
+            }
+          ],
+          "value": 75,
+          "code": "a",
+          "system": "http://unitsofmeasure.org",
+          "unit": "Jahre"
+        },
+        "note": [
+          {
+            "text": "Echokardiographisch hochgradige Aortenklappenstenose (AOeF 0,9 cm2), nach Klappenersatz 03/2025 behoben."
+          }
+        ],
+        "clinicalStatus": {
+          "coding": [
+            {
+              "code": "resolved",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "code": "confirmed",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status"
+            }
+          ]
+        },
+        "severity": {
+          "coding": [
+            {
+              "code": "423343006",
+              "system": "http://snomed.info/sct",
+              "version": "http://snomed.info/sct/900000000000207008/version/20260701",
+              "display": "Grade 3 on a scale of 1 to 3 (qualifier value)"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-kardiologie-patient-1"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-kardiologie-encounter-1"
+        },
+        "recordedDate": "2025-03-10"
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-kardiologie-lvef-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-kardiologie-lvef-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-kardiologie-lvef-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-kardio/StructureDefinition/mii-pr-kardio-linksventrikulaere-ejektionsfraktion"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "imaging"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "250908004",
+              "version": "http://snomed.info/sct/900000000000207008/version/20260701",
+              "display": "Left ventricular ejection fraction (observable entity)"
+            },
+            {
+              "system": "http://loinc.org",
+              "code": "10230-1",
+              "display": "Left ventricular Ejection fraction",
+              "version": "2.83"
+            }
+          ]
+        },
+        "performer": [
+          {
+            "display": "Facharzt fuer Kardiologie"
+          }
+        ],
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "code": "L",
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "display": "Low"
+              }
+            ]
+          }
+        ],
+        "referenceRange": [
+          {
+            "text": "Reduced",
+            "high": {
+              "value": 40,
+              "code": "%",
+              "system": "http://unitsofmeasure.org",
+              "unit": "%"
+            }
+          }
+        ],
+        "valueQuantity": {
+          "unit": "%",
+          "system": "http://unitsofmeasure.org",
+          "code": "%",
+          "value": 38
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-kardiologie-patient-1"
+        },
+        "effectiveDateTime": "2025-03-11T09:30:00+01:00",
+        "bodySite": {
+          "coding": [
+            {
+              "code": "87878005",
+              "system": "http://snomed.info/sct",
+              "version": "http://snomed.info/sct/900000000000207008/version/20260701",
+              "display": "Left cardiac ventricular structure (body structure)"
+            }
+          ]
+        },
+        "method": {
+          "coding": [
+            {
+              "code": "433236007",
+              "system": "http://snomed.info/sct",
+              "version": "http://snomed.info/sct/900000000000207008/version/20260701",
+              "display": "Transthoracic echocardiography (procedure)"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-kardiologie-nyha-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-kardiologie-nyha-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-kardiologie-nyha-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-kardio/StructureDefinition/mii-pr-kardio-score-nyha"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "762994006",
+              "version": "http://snomed.info/sct/900000000000207008/version/20260701",
+              "display": "New York Heart Association Classification class (observable entity)"
+            },
+            {
+              "system": "http://loinc.org",
+              "code": "93124-6",
+              "display": "New York Heart Association Functional Classification panel",
+              "version": "2.83"
+            }
+          ]
+        },
+        "performer": [
+          {
+            "display": "Facharzt fuer Kardiologie"
+          }
+        ],
+        "note": [
+          {
+            "text": "Leichte Einschraenkung bei staerkerer koerperlicher Belastung, keine Ruhebeschwerden."
+          }
+        ],
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-kardiologie-patient-1"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-kardiologie-encounter-1"
+        },
+        "effectiveDateTime": "2025-03-11T10:00:00+01:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "421704003",
+              "system": "http://snomed.info/sct",
+              "version": "http://snomed.info/sct/900000000000207008/version/20260701",
+              "display": "New York Heart Association Classification - Class II (finding)"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-kardiologie-mrs-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-kardiologie-mrs-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-kardiologie-mrs-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-kardio/StructureDefinition/mii-pr-kardio-score-modifizierte-rankin-skala"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "1255866005",
+              "version": "http://snomed.info/sct/900000000000207008/version/20260701",
+              "display": "Modified Rankin Scale score (observable entity)"
+            },
+            {
+              "system": "http://loinc.org",
+              "code": "75859-9",
+              "display": "Modified Rankin scale",
+              "version": "2.83"
+            }
+          ]
+        },
+        "performer": [
+          {
+            "display": "Facharzt fuer Neurologie"
+          }
+        ],
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "mRS1",
+              "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-kardio/CodeSystem/mii-cs-kardio-modifizierte-rankin-skala",
+              "version": "2027.0.0-ballot"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-kardiologie-patient-1"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-kardiologie-encounter-1"
+        },
+        "effectiveDateTime": "2025-03-11T10:15:00+01:00"
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-kardiologie-kh-aufenthalte-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-kardiologie-kh-aufenthalte-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-kardiologie-kh-aufenthalte-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-kardio/StructureDefinition/mii-pr-kardio-anzahl-kh-aufenthalte-wg-hf"
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "298060002",
+              "version": "http://snomed.info/sct/900000000000207008/version/20260701",
+              "display": "Number of admissions (observable entity)"
+            }
+          ]
+        },
+        "effectivePeriod": {
+          "start": "2024-03-10",
+          "end": "2025-03-10"
+        },
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "406524005",
+                  "version": "http://snomed.info/sct/900000000000207008/version/20260701",
+                  "display": "Reason for visit diagnosis (contextual qualifier) (qualifier value)"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "84114007",
+                  "version": "http://snomed.info/sct/900000000000207008/version/20260701",
+                  "display": "Heart failure (disorder)"
+                }
+              ]
+            }
+          }
+        ],
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-kardiologie-patient-1"
+        },
+        "valueInteger": 2
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-kardiologie-erstereignis-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-kardiologie-erstereignis-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-kardiologie-erstereignis-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-kardio/StructureDefinition/mii-pr-kardio-atherosklerotisches-erstereignis"
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-kardio/CodeSystem/mii-cs-kardio-atherosklerotisches-ereignis",
+              "code": "ae",
+              "display": "Atherosklerotisches Ereignis",
+              "version": "2027.0.0-ballot"
+            }
+          ]
+        },
+        "performer": [
+          {
+            "display": "Facharzt fuer Kardiologie"
+          }
+        ],
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "439401001",
+                  "display": "Diagnosis",
+                  "version": "http://snomed.info/sct/900000000000207008/version/20260701"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "53741008",
+                  "system": "http://snomed.info/sct",
+                  "version": "http://snomed.info/sct/900000000000207008/version/20260701",
+                  "display": "Coronary arteriosclerosis (disorder)"
+                }
+              ]
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "432213005",
+                  "display": "Date of diagnosis",
+                  "version": "http://snomed.info/sct/900000000000207008/version/20260701"
+                }
+              ]
+            },
+            "valueDateTime": "2020-03"
+          }
+        ],
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-kardiologie-patient-1"
+        },
+        "effectiveDateTime": "2025-03-11T10:30:00+01:00"
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-kardiologie-htx-nein-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-kardiologie-htx-nein-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-kardiologie-htx-nein-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-kardio/StructureDefinition/mii-pr-kardio-diagnose-prozedur-nein-unbekannt"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "survey",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "32413006",
+              "version": "http://snomed.info/sct/900000000000207008/version/20260701",
+              "display": "Transplantation of heart (procedure)"
+            }
+          ],
+          "text": "Herztransplantation"
+        },
+        "derivedFrom": [
+          {
+            "display": "Anamnesebogen Kardiologie"
+          }
+        ],
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-kardiologie-patient-1"
+        },
+        "effectiveDateTime": "2025-03-11T10:35:00+01:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "N",
+              "system": "http://terminology.hl7.org/CodeSystem/v2-0532",
+              "display": "No"
+            }
+          ]
+        },
+        "method": {
+          "coding": [
+            {
+              "code": "129431000",
+              "system": "http://snomed.info/sct",
+              "version": "http://snomed.info/sct/900000000000207008/version/20260701",
+              "display": "History taking - action (qualifier value)"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-kardiologie-rauchen-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-kardiologie-rauchen-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-kardiologie-rauchen-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-kardio/StructureDefinition/mii-pr-kardio-observation-rauchen"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "social-history"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "72166-2",
+              "display": "Tobacco smoking status",
+              "version": "2.83"
+            }
+          ]
+        },
+        "performer": [
+          {
+            "display": "Facharzt fuer Kardiologie"
+          }
+        ],
+        "component": [
+          {
+            "valueQuantity": {
+              "value": 30,
+              "code": "{pack-years}",
+              "system": "http://unitsofmeasure.org",
+              "unit": "{pack-years}",
+              "comparator": ">="
+            },
+            "code": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "401201003",
+                  "version": "http://snomed.info/sct/900000000000207008/version/20260701",
+                  "display": "Cigarette pack-years (observable entity)"
+                }
+              ]
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "63640-7",
+                  "display": "How many cigarettes do you smoke per day now"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 20,
+              "code": "{cigarettes-per-day}",
+              "system": "http://unitsofmeasure.org",
+              "unit": "{cigarettes-per-day}"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "266929003",
+                  "version": "http://snomed.info/sct/900000000000207008/version/20260701",
+                  "display": "Smoking started (life style)"
+                }
+              ]
+            },
+            "valueDateTime": "1975-01-01"
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "228487000",
+                  "version": "http://snomed.info/sct/900000000000207008/version/20260701",
+                  "display": "Time since stopped smoking (observable entity)"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 30,
+              "code": "a",
+              "system": "http://unitsofmeasure.org",
+              "unit": "year"
+            }
+          }
+        ],
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-kardiologie-patient-1"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-kardiologie-encounter-1"
+        },
+        "effectiveDateTime": "2025-03-11T10:40:00+01:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "8517006",
+              "system": "http://snomed.info/sct",
+              "version": "http://snomed.info/sct/900000000000207008/version/20260701",
+              "display": "Ex-smoker (finding)"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/mii-exa-test-data-kardiologie-geraeteprogrammierung-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-kardiologie-geraeteprogrammierung-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-test-data-kardiologie-geraeteprogrammierung-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-kardio/StructureDefinition/mii-pr-kardio-geraeteprogrammierung"
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "urn:iso:std:iso:11073:10101",
+              "code": "730752",
+              "display": "MDC_IDC_SET_BRADY_MODE",
+              "version": "2024-12-05"
+            }
+          ],
+          "text": "Programmierter Brady-Stimulationsmodus (NBG)"
+        },
+        "focus": [
+          {
+            "reference": "DeviceMetric/mii-exa-test-data-kardiologie-devicemetric-1"
+          }
+        ],
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "754773",
+              "system": "urn:iso:std:iso:11073:10101",
+              "display": "MDC_IDC_ENUM_BRADY_MODE_VVI",
+              "version": "2024-12-05"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Device/mii-exa-test-data-kardiologie-device-1"
+        },
+        "effectiveDateTime": "2025-03-12T14:00:00+01:00"
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Device/mii-exa-test-data-kardiologie-device-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Device/mii-exa-test-data-kardiologie-device-1",
+      "resource": {
+        "resourceType": "Device",
+        "id": "mii-exa-test-data-kardiologie-device-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-kardio/StructureDefinition/mii-pr-kardio-device"
+          ]
+        },
+        "deviceName": [
+          {
+            "name": "Medtronic Evera MRI XT VR",
+            "type": "manufacturer-name"
+          }
+        ],
+        "status": "active",
+        "expirationDate": "2033-03-12",
+        "type": {
+          "coding": [
+            {
+              "code": "72506001",
+              "system": "http://snomed.info/sct",
+              "version": "http://snomed.info/sct/900000000000207008/version/20260701",
+              "display": "Implantable defibrillator, device (physical object)"
+            }
+          ]
+        },
+        "manufacturer": "Medtronic",
+        "patient": {
+          "reference": "Patient/mii-exa-test-data-kardiologie-patient-1"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "DeviceMetric/mii-exa-test-data-kardiologie-devicemetric-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/DeviceMetric/mii-exa-test-data-kardiologie-devicemetric-1",
+      "resource": {
+        "resourceType": "DeviceMetric",
+        "id": "mii-exa-test-data-kardiologie-devicemetric-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-kardio/StructureDefinition/mii-pr-kardio-nbg-schrittmachermodus"
+          ]
+        },
+        "type": {
+          "coding": [
+            {
+              "system": "urn:iso:std:iso:11073:10101",
+              "code": "730752",
+              "display": "MDC_IDC_SET_BRADY_MODE",
+              "version": "2024-12-05"
+            }
+          ],
+          "text": "Brady-Stimulationsmodus nach NBG-Standard"
+        },
+        "category": "setting",
+        "source": {
+          "reference": "Device/mii-exa-test-data-kardiologie-device-1"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Procedure/mii-exa-test-data-kardiologie-deviceimplantation-1"
+      },
+      "fullUrl": "https://www.medizininformatik-initiative.de/Procedure/mii-exa-test-data-kardiologie-deviceimplantation-1",
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "mii-exa-test-data-kardiologie-deviceimplantation-1",
+        "meta": {
+          "security": [
+            {
+              "code": "HTEST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "display": "test health data"
+            }
+          ],
+          "source": "https://www.charite.de/fhir/kds-testdata",
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-kardio/StructureDefinition/mii-pr-kardio-kardiale-deviceimplantation"
+          ]
+        },
+        "extension": [
+          {
+            "url": "http://fhir.de/StructureDefinition/ProzedurDokumentationsdatum",
+            "valueDateTime": "2025-03-12T16:30:00+01:00"
+          },
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Durchfuehrungsabsicht",
+            "valueCoding": {
+              "system": "http://snomed.info/sct",
+              "code": "262202000",
+              "display": "Therapeutic (qualifier value)"
+            }
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "395218007",
+              "version": "http://snomed.info/sct/900000000000207008/version/20260701",
+              "display": "Implantation of cardiac defibrillator (procedure)"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://fhir.de/StructureDefinition/seitenlokalisation",
+                  "valueCoding": {
+                    "code": "L",
+                    "system": "https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_ICD_SEITENLOKALISATION",
+                    "display": "links"
+                  }
+                }
+              ],
+              "system": "http://fhir.de/CodeSystem/bfarm/ops",
+              "code": "5-377.5",
+              "display": "Implantation eines Herzschrittmachers, Defibrillators und Ereignis-Rekorders: Defibrillator mit Einkammer-Stimulation",
+              "version": "2025"
+            }
+          ]
+        },
+        "bodySite": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "80891009",
+                "version": "http://snomed.info/sct/900000000000207008/version/20260701",
+                "display": "Heart structure (body structure)"
+              }
+            ]
+          }
+        ],
+        "focalDevice": [
+          {
+            "manipulated": {
+              "reference": "Device/mii-exa-test-data-kardiologie-device-1"
+            },
+            "action": {
+              "coding": [
+                {
+                  "code": "129338005",
+                  "system": "http://snomed.info/sct",
+                  "version": "http://snomed.info/sct/900000000000207008/version/20260701",
+                  "display": "Implantation - action (qualifier value)"
+                }
+              ]
+            }
+          }
+        ],
+        "note": [
+          {
+            "text": "Komplikationslose ICD-Implantation bei hochgradig reduzierter LVEF (Primaerpraevention)."
+          }
+        ],
+        "status": "completed",
+        "category": {
+          "coding": [
+            {
+              "code": "387713003",
+              "system": "http://snomed.info/sct",
+              "version": "http://snomed.info/sct/900000000000207008/version/20260701",
+              "display": "Surgical procedure (procedure)"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-test-data-kardiologie-patient-1"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-test-data-kardiologie-encounter-1"
+        },
+        "performedDateTime": "2025-03-12"
+      }
+    }
+  ],
+  "type": "transaction",
+  "timestamp": "2025-03-18T12:00:00+01:00"
+}

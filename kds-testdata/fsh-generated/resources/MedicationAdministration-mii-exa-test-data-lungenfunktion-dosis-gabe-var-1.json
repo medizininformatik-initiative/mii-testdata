@@ -1,0 +1,51 @@
+{
+  "resourceType": "MedicationAdministration",
+  "id": "mii-exa-test-data-lungenfunktion-dosis-gabe-var-1",
+  "meta": {
+    "security": [
+      {
+        "code": "HTEST",
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "display": "test health data"
+      }
+    ],
+    "source": "https://www.charite.de/fhir/lungenfunktion-messplatz",
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-dosis-gabe"
+    ]
+  },
+  "partOf": [
+    {
+      "reference": "Procedure/mii-exa-test-data-lungenfunktion-provokationstest-messung-1"
+    }
+  ],
+  "medicationCodeableConcept": {
+    "coding": [
+      {
+        "system": "http://fhir.de/CodeSystem/ifa/pzn",
+        "code": "00171345",
+        "display": "Provokit® 0,33%"
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/atc",
+        "code": "V04CX03",
+        "display": "Methacholin",
+        "version": "2025"
+      }
+    ],
+    "text": "Methacholinchlorid 0,33% Loesung zur Inhalation"
+  },
+  "dosage": {
+    "dose": {
+      "system": "http://unitsofmeasure.org",
+      "code": "mg",
+      "value": 0.1,
+      "unit": "mg"
+    }
+  },
+  "status": "completed",
+  "subject": {
+    "reference": "Patient/mii-exa-test-data-lungenfunktion-patient-1"
+  },
+  "effectiveDateTime": "2025-02-18T11:15:00+01:00"
+}

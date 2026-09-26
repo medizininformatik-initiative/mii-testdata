@@ -92,7 +92,7 @@ jobs:
     # Statische Gates: kosten Sekunden und brauchen kein Docker.
     # check-references faengt absolute Referenzen in Kanonikalraeume — genau
     # den Fall, an dem HAPI scheiterte und Blaze nichts merkte.
-    - name: Static checks (codings, references, displays)
+    - name: Static checks (codings, references, displays, catalogue versions)
       run: |
         python3 scripts/check-coding-quality.py kds-testdata/fsh-generated/resources
         python3 scripts/check-references.py kds-testdata/fsh-generated/resources
@@ -101,6 +101,10 @@ jobs:
         # das .index.json jedes Pakets nur dessen CodeSystems oeffnet.
         python3 scripts/check-displays.py kds-testdata/fsh-generated/resources \
           --lang "$(yq eval '.parameters["i18n-default-lang"] // "en"' kds-testdata/sushi-config.yaml)"
+        # Katalogjahrgang gegen das klinische Datum. Kein Validator prueft das,
+        # weil es zwei Elemente in Beziehung setzt statt einen Code zu bewerten —
+        # und eine Diagnose von 2023 kann nicht mit ICD-10-GM 2026 kodiert sein.
+        python3 scripts/check-catalogue-versions.py kds-testdata/fsh-generated/resources
 
     - name: Generate timestamp
       id: timestamp
