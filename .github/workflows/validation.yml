@@ -205,12 +205,16 @@ jobs:
   # Dazu kommt die Verstaerkung: Eine Condition mit zwei solchen Fehlern
   # erzeugte 89 Referenzfehler an anderen Stellen.
   #
-  # Warum NICHT bei jedem Push: Die Laufzeit haengt an der Antwortzeit des
-  # Servers und schwankte am 2026-09-25 zwischen 12 Minuten und ueber sechs
-  # Stunden (GitHub-Deckel, ohne Ergebnis). Deshalb naechtlich und auf Abruf,
-  # mit eigenem Deckel, und vorerst NICHT blockierend — er berichtet, er
-  # verhindert nicht. Sobald seine Laufzeit ueber mehrere Wochen stabil ist,
-  # kann er ein Tor mit eigener Baseline werden.
+  # Warum eine STICHPROBE und nicht der ganze Bestand: Ein Vollauf schaffte in
+  # 120 Minuten elf von 1369 Ressourcen (Lauf 36258544207), einzelne brauchten
+  # bis zu 8:48. Das ist keine Frage des Deckels — hochgerechnet waeren es Tage,
+  # und GitHub erlaubt je Job hoechstens sechs Stunden. Der Job prueft deshalb
+  # die vier terminologisch dichtesten Bundles; die Auswahl und ihre Zahlen
+  # stehen am Validierungsschritt.
+  #
+  # Naechtlich, auf Abruf und NICHT blockierend: Er berichtet, er verhindert
+  # nicht. Ein Tor kann er nicht werden, solange seine Laufzeit an der
+  # Antwortzeit eines fremden Servers haengt.
   #
   # Ein Antwort-Cache im Proxy war der naheliegende Versuch, die Laufzeit zu
   # senken, und er ist GEMESSEN gescheitert. Eine erste Messung an fuenf
@@ -230,7 +234,7 @@ jobs:
     name: HL7 Java validator (mit SU-TermServ)
     if: ${{ vars.ENABLE_VALIDATION != 'false' && (github.event_name == 'schedule' || github.event_name == 'workflow_dispatch') }}
     runs-on: ubuntu-latest
-    timeout-minutes: 330
+    timeout-minutes: 150
     continue-on-error: true
     steps:
     - name: Checkout Project
@@ -306,9 +310,30 @@ jobs:
         IGS=$(jq -r '.dependencies | to_entries | map("-ig " + .key + "#" + .value) | join(" ")' \
                 kds-testdata/package.json)
         RES="$GITHUB_WORKSPACE/kds-testdata/fsh-generated/resources"
-        # -Xmx14g wie beim schnellen Lauf; -authorise-non-conformant-tx-servers,
-        # weil validator_cli den SU-TermServ sonst ablehnt und mit 1 endet.
-        java -Xmx14g -jar validator_cli.jar "$RES"/*.json \
+        # NUR eine Teilmenge, und das ist gemessen notwendig: Der Lauf ueber
+        # ALLE 1369 Ressourcen schaffte in 120 Minuten elf davon, einzelne
+        # brauchten bis zu 8:48 (Lauf 36258544207). Hochgerechnet waeren das
+        # Tage; GitHubs Maximum je Job liegt bei sechs Stunden. Gegen
+        # tx.fhir.org dauerte dieselbe Arbeit etwa ein Siebtel — die Laufzeit
+        # haengt an der Antwortzeit des SU-TermServ, nicht an der Datenmenge.
+        #
+        # Ausgewaehlt sind die vier Bundles mit der hoechsten Dichte an
+        # BfArM- und MII-Codes, denn genau die kann der schnelle Lauf nicht
+        # pruefen (gezaehlt wurden Codes aus bfarm/*, icd-o-3, ask, atc und
+        # medizininformatik-initiative-Systemen):
+        #
+        #   onkologie-1  158 Codes / 117 Entries   ICD-O-3, ICD-10-GM, OPS
+        #   mtb-1         81 Codes /  70 Entries   ICD-O-3, MII-MTB-Systeme
+        #   mikrobio-1    69 Codes /  73 Entries   MII-Mikrobiologie
+        #   pro-1         41 Codes /  30 Entries   MII-PRO-Instrumente
+        #
+        # Das ist ausdruecklich eine STICHPROBE, keine Vollpruefung. Was in den
+        # uebrigen Bundles terminologisch falsch ist, findet dieser Job nicht.
+        java -Xmx14g -jar validator_cli.jar \
+          "$RES"/Bundle-mii-exa-test-data-bundle-onkologie-1.json \
+          "$RES"/Bundle-mii-exa-test-data-bundle-mtb-1.json \
+          "$RES"/Bundle-mii-exa-test-data-bundle-mikrobio-1.json \
+          "$RES"/Bundle-mii-exa-test-data-bundle-pro-1.json \
           -version 4.0.1 $IGS -ig "$RES" \
           -tx "$TX" -authorise-non-conformant-tx-servers \
           -advisor-file kds-testdata/advisor.json \
@@ -332,10 +357,13 @@ jobs:
         {
           echo "### Mit SU-TermServ: $N Errors"
           echo
-          echo "Der terminologiefreie Lauf meldet ${ERROR_BASELINE}. Die Differenz ist die"
-          echo "Aussage dieses Jobs — was nur mit Terminologieserver sichtbar ist, in beide"
-          echo "Richtungen: Bindungsverletzungen, die dort auffallen, und Wertemengen, die"
-          echo "ohne Server gar nicht expandieren koennen."
+          echo "Stichprobe: onkologie-1, mtb-1, mikrobio-1, pro-1 — die vier Bundles mit"
+          echo "der hoechsten Dichte an BfArM- und MII-Codes. NICHT mit der Baseline"
+          echo "${ERROR_BASELINE} des schnellen Laufs vergleichbar, die ueber alle 1369"
+          echo "Ressourcen geht. Die Aussage dieses Jobs sind die Befunde selbst: was nur"
+          echo "mit Terminologieserver sichtbar wird, in beide Richtungen —"
+          echo "Bindungsverletzungen, die dort auffallen, und Wertemengen, die ohne Server"
+          echo "gar nicht expandieren koennen."
         } >> "$GITHUB_STEP_SUMMARY"
         python3 scripts/advisor-rules.py validation-tx.json --top 14 >> "$GITHUB_STEP_SUMMARY"
 
