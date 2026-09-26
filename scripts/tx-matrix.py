@@ -48,7 +48,7 @@ GLOBAL = (
     "kds-testdata/fhirpkg.lock.json",     # aufgeloeste Pins
     "kds-testdata/advisor.json",          # was unterdrueckt wird
     "scripts/tx-matrix.py",               # die Paketbildung selbst
-    ".github/workflows/validation.yml",   # der Job
+    ".github/workflows/validation-terminology.yml",  # der Job selbst
 )
 
 

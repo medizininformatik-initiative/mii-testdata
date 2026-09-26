@@ -1,0 +1,249 @@
+# Terminologiegestuetzte Validierung gegen den SU-TermServ.
+#
+# EIGENER WORKFLOW und nicht Teil von validation.yml, aus zwei beobachteten
+# Gruenden:
+#
+#   1. Der Status am Commit. Der schnelle Prueflauf ist nach fuenf Minuten
+#      fertig, diese Matrix braucht Stunden. Solange beide im selben Workflow
+#      stecken, bleibt dessen Status stundenlang offen und das Tor ist nicht
+#      ablesbar. Beobachtet an Lauf 36266671490: `HL7 Java validator` grün um
+#      19:37, der Workflow noch um 20:27 auf `queued`.
+#
+#   2. Die Last auf dem Terminologieserver. `max-parallel: 1` begrenzt nur
+#      INNERHALB eines Laufs. Am 2026-09-26 liefen zwei Laeufe von
+#      validation.yml gleichzeitig (ein Dispatch und ein Push) — also zwei
+#      gleichzeitige Validatoren gegen den SU-TermServ, obwohl die Absicht
+#      genau das Gegenteil war. Die `concurrency`-Gruppe unten stellt sicher,
+#      dass es repoweit nur einen gibt.
+#
+# Warum die Arbeit ueberhaupt zerlegt wird und warum nur die Bundles laufen:
+# siehe scripts/tx-matrix.py — dort stehen die Messungen.
+#
+# NICHT blockierend: Der Job berichtet, er verhindert nicht. Ein Tor kann er
+# nicht werden, solange seine Laufzeit an der Antwortzeit eines fremden Servers
+# haengt (beobachtet: 10 Minuten fuer ein Bundle, ueber 50 fuer ein anderes
+# ähnlicher Groesse).
+name: FHIR validation (terminology)
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 2 * * *"
+
+permissions:
+  contents: read
+
+# Repoweit nur ein terminologiegestuetzter Lauf. `cancel-in-progress: false`,
+# weil ein halb fertiger naechtlicher Lauf mehr wert ist als ein neu
+# gestarteter — der Push wartet, statt den laufenden abzuraeumen.
+concurrency:
+  group: validation-terminology
+  cancel-in-progress: false
+
+env:
+  VALIDATOR_VERSION: 6.9.11
+
+jobs:
+  # INKREMENTELL bei Push und PR, VOLLSTAENDIG naechtlich und auf Abruf.
+  #
+  # Das ist zulaessig, weil ein Bundle seine Ressourcen vollstaendig einbettet:
+  # Wer eine Ressource aendert, aendert auch jedes Bundle, das sie enthaelt —
+  # nachgeprueft an 716fdee4, der die Observation UND Bundle-…-seltene-1.json
+  # anfasste. Ein Paket, dessen Dateien unveraendert sind, kann kein neues
+  # Ergebnis liefern.
+  #
+  # Ausnahme sind Aenderungen, die jedes Paket betreffen: die -ig-Liste und
+  # damit alle Profil- und Terminologieversionen (package.json), die
+  # Projektkonfiguration, die Unterdrueckungen, die Paketbildung selbst. Genau
+  # dort sitzen auch die SNOMED- und LOINC-Pins. Die Liste steht in
+  # scripts/tx-matrix.py, damit die Regel an einer Stelle gepflegt wird.
+  #
+  # Erst dadurch ist dieser Job auf einem PR ueberhaupt bezahlbar: ein
+  # geaendertes Bundle kostet rund eine Viertelstunde statt neun Stunden.
+  tx-pakete:
+    name: Arbeitspakete bestimmen
+    if: ${{ vars.ENABLE_VALIDATION != 'false' }}
+    runs-on: ubuntu-latest
+    outputs:
+      pakete: ${{ steps.m.outputs.pakete }}
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        # Fuer den Vergleich mit dem Vorzustand; ohne Historie kein Diff.
+        fetch-depth: 0
+
+    - name: Geaenderte Dateien bestimmen
+      id: diff
+      env:
+        EVENT: ${{ github.event_name }}
+        BASE: ${{ github.base_ref }}
+        BEFORE: ${{ github.event.before }}
+      run: |
+        case "$EVENT" in
+          schedule|workflow_dispatch)
+            echo "::notice::Vollstaendiger Lauf ($EVENT)."
+            exit 0 ;;
+          pull_request)
+            git fetch --quiet origin "$BASE"
+            git diff --name-only "origin/$BASE...HEAD" > /tmp/changed.txt ;;
+          *)
+            # Bei einem neuen Branch ist `before` der Null-SHA; dann gibt es
+            # keinen Vorzustand und alles muss laufen.
+            if [ -z "$BEFORE" ] || [ "$BEFORE" = "0000000000000000000000000000000000000000" ]; then
+              echo "::notice::Kein Vorzustand (neuer Branch) — vollstaendiger Lauf."
+              exit 0
+            fi
+            git diff --name-only "$BEFORE" "$GITHUB_SHA" > /tmp/changed.txt ;;
+        esac
+        echo "liste=/tmp/changed.txt" >> "$GITHUB_OUTPUT"
+        echo "$(wc -l < /tmp/changed.txt) Dateien geaendert:"
+        cat /tmp/changed.txt
+
+    - id: m
+      env:
+        LISTE: ${{ steps.diff.outputs.liste }}
+      run: |
+        if [ -n "$LISTE" ]; then
+          set -- --changed "$LISTE"
+        fi
+        echo "pakete=$(python3 scripts/tx-matrix.py kds-testdata/fsh-generated/resources "$@")" \
+          >> "$GITHUB_OUTPUT"
+
+  java-validation-tx:
+    name: "tx: ${{ matrix.paket.name }}"
+    needs: tx-pakete
+    # Eine leere Matrix ist ein Fehler bei GitHub, kein Ueberspringen — also
+    # hier abfangen. Tritt ein, sobald ein Commit keine Testdaten beruehrt.
+    if: ${{ needs.tx-pakete.outputs.pakete != '[]' }}
+    runs-on: ubuntu-latest
+    # Je Paket. Das groesste Bundle (icu-1, 183 Eintraege) lag beim Vollauf bei
+    # rund einer halben Stunde; 120 Minuten lassen reichlich Luft, ohne einen
+    # Haenger unbegrenzt stehen zu lassen.
+    timeout-minutes: 120
+    continue-on-error: true
+    strategy:
+      fail-fast: false
+      max-parallel: 1
+      matrix:
+        paket: ${{ fromJSON(needs.tx-pakete.outputs.pakete) }}
+    steps:
+    - name: Checkout Project
+      uses: actions/checkout@v4
+
+    - name: Download FHIR cache
+      uses: actions/checkout@v4
+      with:
+        repository: medizininformatik-initiative/fhir-package-store
+        ref: cache-store
+        path: .fhir
+
+    - name: Link .fhir cache to ~/.fhir
+      run: |
+        mkdir -p ~/.fhir
+        cp -r .fhir/* ~/.fhir/
+
+    - uses: actions/setup-java@v4
+      with:
+        distribution: temurin
+        java-version: "17"
+
+    - name: Start SU-TermServ proxy
+      id: tx
+      env:
+        CERT: ${{ secrets.CDS_DEV_CLIENT_CERT }}
+        KEY: ${{ secrets.CDS_DEV_CLIENT_KEY }}
+        PASS: ${{ secrets.CDS_DEV_CLIENT_CERT_PASSWORD }}
+      run: |
+        if [ -z "$CERT" ] || [ -z "$KEY" ] || [ -z "$PASS" ]; then
+          echo "::warning::Kein SU-TermServ-Zertifikat — dieser Job hat ohne Terminologieserver keinen Zweck."
+          echo "tx=" >> "$GITHUB_OUTPUT"; exit 0
+        fi
+        mkdir -p nginx/certs
+        echo "$CERT" | base64 -d > nginx/certs/client-cert.pem
+        echo "$KEY"  | base64 -d > nginx/certs/client-key-encrypted.key
+        openssl rsa -in nginx/certs/client-key-encrypted.key \
+          -out nginx/certs/client-key.key -passin env:PASS
+        docker run -d --name nginx-tx \
+          -v "$PWD/.github/workflows/su-termserv-nginx.conf:/etc/nginx/nginx.conf:ro" \
+          -v "$PWD/nginx/certs:/etc/nginx/certs:ro" \
+          -p 8090:80 nginx:alpine
+        sleep 5
+        if curl -fsS -o /dev/null -H "Accept: application/fhir+json" \
+             --max-time 300 "http://127.0.0.1:8090/fhir/metadata"; then
+          echo "tx=http://127.0.0.1:8090/fhir" >> "$GITHUB_OUTPUT"
+        else
+          echo "::warning::SU-TermServ nicht erreichbar — Paket ohne Aussage."
+          echo "tx=" >> "$GITHUB_OUTPUT"
+        fi
+
+    - name: Cache validator jar
+      if: steps.tx.outputs.tx != ''
+      uses: actions/cache@v4
+      with:
+        path: validator_cli.jar
+        key: validator-jar-${{ env.VALIDATOR_VERSION }}
+
+    - name: Download validator
+      if: steps.tx.outputs.tx != ''
+      run: |
+        [ -f validator_cli.jar ] || curl -fsSL -o validator_cli.jar \
+          "https://github.com/hapifhir/org.hl7.fhir.core/releases/download/${VALIDATOR_VERSION}/validator_cli.jar"
+
+    - name: Validate with terminology
+      if: steps.tx.outputs.tx != ''
+      env:
+        TX: ${{ steps.tx.outputs.tx }}
+        FILES: ${{ matrix.paket.files }}
+      run: |
+        IGS=$(jq -r '.dependencies | to_entries | map("-ig " + .key + "#" + .value) | join(" ")' \
+                kds-testdata/package.json)
+        RES="$GITHUB_WORKSPACE/kds-testdata/fsh-generated/resources"
+        # Die Dateien dieses Pakets, absolut. FILES ist leerzeichengetrennt und
+        # enthaelt nur von tx-matrix.py erzeugte Dateinamen — kein Nutzereingabe.
+        ziele=""
+        for f in $FILES; do ziele="$ziele $RES/$f"; done
+        # -ig auf das ganze Verzeichnis, damit Referenzen ausserhalb des Pakets
+        # aufloesen; validiert wird aber nur, was in $ziele steht.
+        # -authorise-non-conformant-tx-servers, weil validator_cli den
+        # SU-TermServ sonst ablehnt und mit 1 endet.
+        java -Xmx14g -jar validator_cli.jar $ziele \
+          -version 4.0.1 $IGS -ig "$RES" \
+          -tx "$TX" -authorise-non-conformant-tx-servers \
+          -advisor-file kds-testdata/advisor.json \
+          -output "$GITHUB_WORKSPACE/validation-tx.json" || true
+        [ -s validation-tx.json ] || {
+          echo "::warning::Kein Ergebnis fuer ${{ matrix.paket.name }} — Server zu langsam oder Lauf abgebrochen."
+          exit 0
+        }
+
+    - name: Report
+      if: steps.tx.outputs.tx != '' && hashFiles('validation-tx.json') != ''
+      run: |
+        N=$(python3 - <<'PY'
+        import json
+        d = json.load(open("validation-tx.json"))
+        entries = d.get("entry", []) if d.get("resourceType") == "Bundle" else [{"resource": d}]
+        print(sum(1 for e in entries for i in e["resource"].get("issue", [])
+                  if i.get("severity") in ("error", "fatal")))
+        PY
+        )
+        echo "### ${{ matrix.paket.name }} — $N Errors mit SU-TermServ" >> "$GITHUB_STEP_SUMMARY"
+        python3 scripts/advisor-rules.py validation-tx.json --top 8 >> "$GITHUB_STEP_SUMMARY"
+
+    - name: Stop proxy
+      if: always()
+      run: docker rm -f nginx-tx 2>/dev/null || true
+
+    - name: Upload report
+      if: always()
+      uses: actions/upload-artifact@v4
+      with:
+        # Artefaktname je Paket eindeutig, sonst kollidieren die Matrix-Jobs.
+        name: validation-tx-${{ strategy.job-index }}
+        path: validation-tx.json
+        retention-days: 14
+        if-no-files-found: ignore
+        compression-level: 9
