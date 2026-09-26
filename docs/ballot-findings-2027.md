@@ -410,6 +410,8 @@ Display-Fehler mitverdeckt.
 | Soziodemographie: `sba-1` widerspricht der Wertebindung (VS `v2-0136` vs. Invariante auf `v2-0532#Y`) | [kerndatensatz-soziodemographie#24](https://github.com/medizininformatik-initiative/kerndatensatz-soziodemographie/issues/24) |
 | IG Publisher: `example/` (Singular) vs. `examples/` (Plural) — Paket-Layout divergiert von der Spezifikation | [HL7/fhir-ig-publisher#1373](https://github.com/HL7/fhir-ig-publisher/issues/1373) |
 | fhir-package-store: Name/Version-Split am letzten Bindestrich bricht bei Prerelease-Versionen | [fhir-package-store#15](https://github.com/medizininformatik-initiative/fhir-package-store/pull/15) (PR) |
+| HL7 Java-Validator: `advisor.json` kann Fehler in Bundle-Eintraegen nicht adressieren — der Pfad lautet dort `Bundle.entry[82].resource/*Observation/<id>*/.result` und traegt Index und Ressourcenidentitaet, laesst sich also nicht als feste Regel schreiben; der Advisor vergleicht den ganzen Pfad, kein Suffix. Gemessen: von 440 `MatchMultiple`-Fehlern an Einzeldateien werden 434 unterdrueckt, von den 440 gleichartigen in Bundles **keiner**. Damit liegt die Obergrenze des Formats bei rund 50 %. | noch zu melden (org.hl7.fhir.core) |
+| HL7 Java-Validator: laeuft ohne `-Xmx` beim Validieren von 1202 Instanzen gegen 33 IGs in `OutOfMemoryError` (JVM-Default = ¼ RAM, also 4 GB auf einem CI-Runner). Der wiederverwendbare MII-Workflow `ci_java_validation.yml` setzt keinen Heap und laesst sich von aussen keinen setzen (`uses:`-Jobs nehmen kein `env:`), weshalb dieses Repo einen eigenen Validierungs-Workflow braucht. Mit `-Xmx14g` laeuft derselbe Satz in 85 Sekunden. | noch zu melden (kerndatensatz-meta) |
 
 ---
 

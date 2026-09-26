@@ -1,48 +1,93 @@
 # Known issues
 
-Validating the test data currently produces about 2,800 errors. **Most of them are not
-defects in the data** — they come from the profiles the data is built against, and no
-conformant instance can avoid them. This page lists what is suppressed during validation,
-why, and what would remove the suppression.
+Validating the test data produces **2,687 errors**, and `advisor.json` suppresses **820**
+of them. Almost none of the remainder are defects in the data: they come from the profiles
+the data is built against, and no conformant instance can avoid them. This page states what
+is suppressed, why the rest cannot be, and what would remove either.
 
-Every entry here is also filed as a [ballot comment](https://github.com/medizininformatik-initiative/mii-testdata/blob/main/docs/ballot-kommentare-2027.csv)
-with the module maintainers. The suppressions are meant to be **temporary**: once a
-profile is fixed, the corresponding rule should be deleted, and the error count should
-stay where it is.
+The numbers here are measured, not estimated — one validation run with `advisor.json` and
+one without, both with `-tx n/a`, both reproducible without a terminology certificate:
 
-### Why suppress at all
+```bash
+IGS=$(jq -r '.dependencies|to_entries|map("-ig "+.key+"#"+.value)|join(" ")' kds-testdata/package.json)
+RES=kds-testdata/fsh-generated/resources
+java -Xmx14g -jar validator_cli.jar $RES/*.json -version 4.0.1 $IGS -ig $RES -tx n/a \
+  -output unfiltered.json
+java -Xmx14g -jar validator_cli.jar $RES/*.json -version 4.0.1 $IGS -ig $RES -tx n/a \
+  -advisor-file kds-testdata/advisor.json -output filtered.json
+./scripts/compare-advisor-runs.py unfiltered.json filtered.json
+```
 
-An error list in which 66 % of entries cannot be acted on is not a quality signal — it
-buries the 954 remaining findings that *are* actionable. Suppression restores the signal.
+`-Xmx14g` is not optional: with the JVM default (a quarter of RAM, so 4 GB on a standard
+CI runner) the validator dies with `OutOfMemoryError` at the first resource, after about
+a hundred seconds and without writing a report. With enough heap the whole set takes
+**85 seconds**.
 
-The risk is obvious: a rule written too broadly hides future, genuine defects. What
-addresses that:
+### Two views of the same data, and they are not redundant
 
-- **Every rule was measured before it was added.** `scripts/advisor-rules.py` reports, for
-  a candidate rule, how many errors it hits, in which files and on which profiles. No rule
-  entered `advisor.json` without that number, and the table below is that measurement.
-- **The measurement is repeatable by anyone.** `scripts/compare-advisor-runs.py` diffs a
-  validation report produced with `advisor.json` against one produced without it, so the
-  suppressed set can be re-derived from any validation run rather than taken on trust.
+Before reading any count, know what it counts. The resource directory holds both the
+individual instances and the bundles that contain them, so the validator sees each instance
+twice — once as a file, once as `Bundle.entry[n]`. The obvious conclusion would be that
+half the errors are duplicates and could simply be filtered away. Measured per message
+class, that is only half true:
 
-Being straight about the limit: this is a measurement taken at a point in time, not a
-standing gate. An earlier version of this page promised a CI job that validated twice on
-every run and reported the delta. That job was removed — validation here follows the same
-reusable MII workflow as the KDS modules, and a second, bespoke validation pass alongside
-it was more machinery than the repository should carry. So when a profile changes upstream,
-re-running `advisor-rules.py` is a deliberate step, not something CI does for you.
+| Message id | only as a file | in both views | **only inside a bundle** |
+|---|---:|---:|---:|
+| `SLICING_CANNOT_BE_EVALUATED` | 0 | 53 | 1 |
+| `Terminology_TX_NoValid_12` | 0 | 18 | 0 |
+| `_DT_Fixed_Wrong` | 0 | 12 | 0 |
+| `Reference_REF_CantMatchChoice` | 2 | 0 | **193** |
+| `Validation_VAL_Profile_Minimum_SLICE` | 56 | 10 | **92** |
 
-### The suppressed rules
+For slicing, terminology and fixed-value findings the bundle view really is a repetition —
+53 of 54 appear in both.
 
-| Rule | Hits | Affected profiles | Cause |
+For **references it is the only view that sees anything at all**: 193 of 195 findings exist
+*only* inside the bundle. That is mechanics, not coincidence. A `Reference(Observation/xy)`
+resolves to a target only when the target sits in the same bundle; validated as a lone file,
+the validator cannot resolve it and therefore never checks the target's profile. Filtering
+bundle findings would not tidy up a duplicate — it would discard the entire class of
+reference defects, which is where the overlapping `targetProfile` slices show up.
+`Validation_VAL_Profile_Minimum_SLICE` splits both ways: 56 findings only as files, 92 only
+in bundles.
+
+So the two views overlap for structural findings and complement each other for reference
+findings. Both are worth validating, and neither count should be read as the number of
+distinct defects.
+
+### Why only 820 are suppressed
+
+Because `advisor.json` can only reach the file copy. A rule is a fixed
+`MessageId@FHIRPath` pair, and the path of a bundle-embedded finding looks like
+
+```
+Bundle.entry[82].resource/*Observation/mii-exa-test-data-patient-1-icu-vent-pip-1*/.result
+```
+
+It carries the entry index and the identity of the resource, so it cannot be written as a
+fixed string, and the advisor matches the whole path rather than a suffix. The measurement
+shows the consequence exactly: of the 440 `MatchMultiple` findings on files, 434 are
+suppressed; of the 440 identical ones inside bundles, **none** are.
+
+The practical ceiling for this format is therefore around 50 %, and the 820 suppressed
+errors are essentially all of the file-side findings that rules exist for. An earlier
+version of this page claimed 66 %; that figure came from a model of how rule matching
+works, and the measurement refuted it. Reported as a validator limitation rather than a
+ballot issue — a rule that could anchor on a path suffix would close the gap.
+
+### What the rules cover
+
+| Rule | Suppressed | Affected profiles | Cause |
 |---|---:|---|---|
-| `SLICING_CANNOT_BE_EVALUATED@Observation.component`<br>`…@component` | 578 | `mii-pr-icu-score-sofa`, `-gcs`, `-icdsc`, `mii-pr-mtb-immunohistochemistry-*` and 26 more | The profiles slice `Observation.component` with `discriminator: pattern on code`, but no slice defines a pattern at `component.code`. The patterns sit one level lower on `code.coding:loinc`/`:sct`, where the discriminator does not look. |
-| `SLICING_CANNOT_BE_EVALUATED@Observation.code.coding`<br>`…@code.coding` | 140 | `mii-pr-icu-score-gcs`, `-visuelle-analogskala`, `mii-pr-lungenfunktion-gewicht` and 8 more | Same class, on the coding slices — among them an `ieee11073` slice whose discriminator cannot be resolved. |
-| `Validation_VAL_Profile_MatchMultiple@DiagnosticReport.result`<br>`…@result` | 880 | `mii-pr-lungenfunktion-bodyplethysmographie`, `-diffusion`, `-spirometrie` and 2 more | The `result` slices are not disjoint: several slices carry the same `targetProfile`, so one entry matches more than one slice. Reported upstream as [kerndatensatz-lungenfunktion#45](https://github.com/medizininformatik-initiative/kerndatensatz-lungenfunktion/issues/45). |
-| `Reference_REF_CantMatchChoice@hasMember`, `@focus`,<br>`@result`, `@derivedFrom` | 263 | `mii-pr-onko-diagnose-primaertumor`, `mii-pr-patho-finding`, `mii-pr-seltene-familienanamnese` and more | Reference slices whose allowed target profiles overlap, so the validator cannot decide which one a reference satisfies. |
+| `Validation_VAL_Profile_MatchMultiple@DiagnosticReport.result` | 434 | `mii-pr-lungenfunktion-bodyplethysmographie`, `-diffusion`, `-spirometrie` and 1 more | The `result` slices are not disjoint: several carry the same `targetProfile`, so one entry matches more than one slice. Upstream: [kerndatensatz-lungenfunktion#45](https://github.com/medizininformatik-initiative/kerndatensatz-lungenfunktion/issues/45). |
+| `SLICING_CANNOT_BE_EVALUATED@Observation.component` | 289 | `mii-pr-icu-score-sofa`, `-gcs`, `-icdsc`, `mii-pr-mtb-immunohistochemistry-mmr` and 26 more | The profiles slice `Observation.component` with `discriminator: pattern on code`, but no slice defines a pattern at `component.code` — the patterns sit one level lower, on `code.coding:loinc`/`:sct`, where the discriminator does not look. |
+| `SLICING_CANNOT_BE_EVALUATED@Observation.code.coding` | 70 | `mii-pr-icu-score-gcs`, `-visuelle-analogskala`, `mii-pr-icu-untersuchung-pupillenbefund` and 8 more | Same class, on the coding slices — among them an `ieee11073` slice whose discriminator cannot be resolved. |
+| `Reference_REF_CantMatchChoice@…` (4 paths) | 4 | `mii-pr-lungenfunktion-spirometrie-messung` and others | Reference slices whose allowed target profiles overlap, so the validator cannot decide which slice a reference satisfies. Nearly all occurrences of this class sit inside bundles and are therefore out of reach. |
+| 3 further rules (terminology, fixed values) | 23 | ImplementationGuide parameters, `AdverseEvent.event`, `Procedure` extensions | Inherited from the pre-2027 test data. |
 
-Together these hide **1,861 of 2,815 errors (66 %)**. The remaining 954 are reported
-normally — and among them are the ones that belong to the test data.
+The rules deliberately name one path each rather than a broad prefix. Broadening them would
+raise the suppressed count and hide future, genuine defects on the same paths — the point
+of the exercise was the opposite.
 
 ### What is *not* suppressed
 

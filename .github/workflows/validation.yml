@@ -1,28 +1,43 @@
-# FHIR-Validierung ueber den wiederverwendbaren MII-Workflow.
+# FHIR-Validierung mit dem HL7-Java-Validator.
 #
-# Aufbau wie in den KDS-Modulen (Vorbild: kerndatensatz-lungenfunktion/
-# .github/workflows/validation.yml): ein Guard-Job, der die Secrets vorab
-# prueft, und ein direkter Aufruf von ci_java_validation.yml. Keine eigene
-# Validierungsmechanik — der Meta-Workflow bringt seinen mTLS-Proxy zum
-# SU-TermServ selbst mit, setzt die Validator-Version und rendert den Report.
+# WARUM NICHT der wiederverwendbare MII-Workflow (ci_java_validation.yml), wie
+# in den Modulen:
 #
-# Der Unterschied zu einem Modul ist nur der Pfad: Hier liegen Conformance-
-# Ressourcen und Beispiele gemeinsam unter kds-testdata/fsh-generated/resources,
-# weil das Repo Testdaten und keinen Profilbestand fuehrt. Validiert wird der
-# KOMMITTIERTE Stand von fsh-generated — dieser Workflow baut nicht selbst.
-# Ein PR muss also frisch gebaute Ressourcen mitbringen; das leistet
-# ci.yml ("Build and Validate Testdata").
+# Er ruft `java -jar validator_cli.jar` ohne Heap-Angabe auf, es gilt also der
+# JVM-Default von einem Viertel des Arbeitsspeichers — auf einem Standard-Runner
+# mit 16 GB sind das 4 GB. Fuer dieses Repo reicht das nicht: 1202 Instanzen
+# gegen 33 IGs in einem Aufruf brauchen ~14 GB. Reproduziert am 2026-09-26,
+# Lauf 36228145711:
 #
-# Der .NET-Job der Module (SUSHI + Simplifier Quality Control) fehlt hier
-# absichtlich: Er prueft MII-Namenskonventionen fuer Profile, und Profile gibt
-# es in diesem Repo nicht. Ausserdem committet er fsh-generated automatisch,
-# was mit unserem Build kollidieren wuerde.
+#     Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
+#         at InstanceValidator.start(InstanceValidator.java:6625)
 #
-# Bekannte Fehler werden ueber kds-testdata/advisor.json unterdrueckt; welche
-# und warum, steht auf der Known-Issues-Seite des IG.
+# Der Validator stirbt nach 1:44 beim ersten Datensatz, ohne Ausgabedatei. Lokal
+# mit -Xmx4g exakt derselbe Abbruch, mit -Xmx14g laeuft derselbe Satz in 85
+# Sekunden durch. Ein `uses:`-Job nimmt kein `env:`, und `env` des aufrufenden
+# Workflows wird nicht weitergegeben — es gibt von hier aus also keinen Weg,
+# -Xmx oder JAVA_TOOL_OPTIONS hineinzureichen. Die Module laufen durch, weil ein
+# Modul rund 300 Conformance-Ressourcen hat statt 1200 Instanzen.
 #
-# Schalter: vars.ENABLE_VALIDATION — standardmaessig an. Auf 'false' setzen,
-#           um die Validierung zu ueberspringen (Jobs erscheinen als skipped).
+# Sobald ci_java_validation.yml eine Heap-Einstellung erlaubt, kann dieser
+# Workflow durch den Aufruf ersetzt werden; bis dahin ist er die Bedingung
+# dafuer, dass hier ueberhaupt validiert wird.
+#
+# OHNE Terminologieserver (`-tx n/a`), und das ist eine Entscheidung, keine
+# Ausrede: Mit dem SU-TermServ dominierte dessen Expansions-Latenz alles. Am
+# 2026-09-25 lief die Validierung sechs Stunden und wurde von GitHubs Deckel
+# abgeschnitten, ohne Ergebnis; einzelne Ressourcen brauchten ueber sechs
+# Minuten, waehrend der Rest in ein bis zwei Sekunden durchlief. Ein Ergebnis
+# nach 85 Sekunden, das jeder ohne Zertifikat nachrechnen kann, ist mehr wert
+# als eines, das von der Tageslaune eines Servers abhaengt.
+# Terminologische Fehler bleiben nicht unbemerkt: Die haeufigste Klasse —
+# falsche Displays — faengt das statische Gate scripts/check-displays.py in
+# ci.yml ab, und zwar in Sekunden.
+#
+# Bekannte Profildefekte werden ueber kds-testdata/advisor.json unterdrueckt;
+# welche und warum, steht auf der Known-Issues-Seite des IG.
+#
+# Schalter: vars.ENABLE_VALIDATION — standardmaessig an, 'false' schaltet ab.
 name: FHIR validation
 
 on:
@@ -34,63 +49,109 @@ on:
 permissions:
   contents: read
 
+env:
+  VALIDATOR_VERSION: 6.9.11
+  # Gemessene Obergrenze der letzten Laeufe: 2687 Errors ohne advisor.json,
+  # 1867 mit. Der Job schlaegt an, wenn die Zahl STEIGT — die absolute Hoehe ist
+  # eine Aussage ueber die Ballot-Profile, keine ueber die Testdaten, und ein
+  # dauerhaft roter Job wird ignoriert statt gelesen.
+  ERROR_BASELINE: 1867
+
 jobs:
-  # Der aufgerufene Workflow deklariert CDS_DEV_CLIENT_CERT/_KEY/_CERT_PASSWORD
-  # als required und baut seinen Terminologie-Proxy bedingungslos daraus. Fehlen
-  # sie (Fork, neu aufgesetztes Repo), stirbt der Job bei der Workflow-Auswertung
-  # ohne einen einzigen Step — eine Fehlermeldung, die nach einem Defekt aussieht
-  # und keiner ist. Ein Job-`if:` kann keine Secrets lesen, deshalb dieser Guard.
-  java-validation-guard:
-    name: SU-TermServ certificate present?
+  java-validation:
+    name: HL7 Java validator
     if: ${{ vars.ENABLE_VALIDATION != 'false' }}
     runs-on: ubuntu-latest
-    outputs:
-      has-secrets: ${{ steps.probe.outputs.has-secrets }}
+    # Ohne Terminologieserver liegt die Laufzeit bei ~2 min inkl. Setup. Der
+    # knappe Deckel macht aus einem haengenden Validator eine klare Aussage,
+    # statt ihn bis zum 6-Stunden-Default stehen zu lassen.
+    timeout-minutes: 20
     steps:
-    - name: Probe
-      id: probe
-      env:
-        C: ${{ secrets.CDS_DEV_CLIENT_CERT }}
-        K: ${{ secrets.CDS_DEV_CLIENT_KEY }}
-        P: ${{ secrets.CDS_DEV_CLIENT_CERT_PASSWORD }}
-      run: |
-        if [ -n "$C" ] && [ -n "$K" ] && [ -n "$P" ]; then
-          echo "has-secrets=true" >> "$GITHUB_OUTPUT"
-        else
-          echo "has-secrets=false" >> "$GITHUB_OUTPUT"
-          echo "::notice::Kein SU-TermServ-Zertifikat konfiguriert — der HL7-Java-Validator wird uebersprungen (der aufgerufene Workflow hat keinen Terminologie-Fallback). Build, statische Gates und der Ladetest gegen Blaze/HAPI laufen unabhaengig davon."
-        fi
+    - name: Checkout Project
+      uses: actions/checkout@v4
 
-  java-validation:
-    name: HL7 Java validator (SU-TermServ)
-    needs: java-validation-guard
-    if: ${{ vars.ENABLE_VALIDATION != 'false' && needs.java-validation-guard.outputs.has-secrets == 'true' }}
-    # Auf Commit-SHA gepinnt statt @master, damit kein Lauf von einer
-    # Aenderung im Meta-Repo abhaengt (Muster der Modul-Repos).
-    uses: medizininformatik-initiative/kerndatensatz-meta/.github/workflows/ci_java_validation.yml@1db2e534704d92e5ee0cde663ce3e7ccd8825fa7
-    with:
-      ref: ${{ github.event.pull_request.head.ref || github.ref }}
-      # Diese Pfade werden im aufgerufenen Workflow als "$GITHUB_WORKSPACE/$p"
-      # aufgeloest, also WORKSPACE-relativ — das `working-directory` unten gilt
-      # fuer sie nicht. Deshalb steht hier das kds-testdata-Praefix, obwohl es
-      # doppelt aussieht. Ein Modul, dessen fsh-generated im Wurzelverzeichnis
-      # liegt, schreibt hier schlicht `fsh-generated/resources`.
-      PATH_TO_CONFORMANCE_RESOURCES: ./kds-testdata/fsh-generated/resources
-      PATH_TO_EXAMPLES: ./kds-testdata/fsh-generated/resources
-      JAVA_VALIDATION_ENABLED: true
-      JAVA_VALIDATOR_VERSION: ${{ vars.JAVA_VALIDATOR_VERSION || '6.7.10' }}
-      # Die Optionen kommen aus der ORG-Variable. Sie tragen
-      # -advisor-file advisor.json, -authorise-non-conformant-tx-servers (ohne
-      # das lehnt validator_cli den SU-TermServ ab und beendet sich mit 1) und
-      # -output validation.json (ohne das scheitert der Renderer-Step des
-      # aufgerufenen Workflows mit ENOENT). Eine Teilmenge hier hart zu
-      # verdrahten hat genau diesen Job schon einmal zerlegt — immer den
-      # zentralen Wert erben.
-      JAVA_VALIDATION_OPTIONS: ${{ vars.JAVA_VALIDATION_OPTIONS }}
-      # Gilt fuer die Shell-Schritte, nicht fuer die Pfade oben. Gebraucht wird
-      # es, weil der aufgerufene Workflow die -ig-Liste aus `package.json` im
-      # Arbeitsverzeichnis zieht — und die liegt hier unter kds-testdata/.
-      working-directory: ./kds-testdata
-      VALIDATION_REPORT_FILTERS: |
-        filename | messageId | detailsWildcard | location
-    secrets: inherit
+    # Die Pakete kommen aus dem MII-Paketspeicher statt aus der Registry: Die
+    # BOM ist nirgends publiziert, und der Speicher haelt ausserdem die
+    # Snapshot-Varianten (z.B. de.gematik.isik#6.0.0), die die Registry nicht
+    # liefert.
+    - name: Download FHIR cache
+      uses: actions/checkout@v4
+      with:
+        repository: medizininformatik-initiative/fhir-package-store
+        ref: cache-store
+        path: .fhir
+
+    - name: Link .fhir cache to ~/.fhir
+      run: |
+        mkdir -p ~/.fhir
+        cp -r .fhir/* ~/.fhir/
+
+    - uses: actions/setup-java@v4
+      with:
+        distribution: temurin
+        java-version: "17"
+
+    - name: Cache validator jar
+      uses: actions/cache@v4
+      with:
+        path: validator_cli.jar
+        key: validator-jar-${{ env.VALIDATOR_VERSION }}
+
+    - name: Download validator
+      run: |
+        [ -f validator_cli.jar ] || curl -fsSL -o validator_cli.jar \
+          "https://github.com/hapifhir/org.hl7.fhir.core/releases/download/${VALIDATOR_VERSION}/validator_cli.jar"
+
+    - name: Validate
+      run: |
+        set -o pipefail
+        # Die -ig-Liste kommt aus package.json — dieselbe Quelle, die der
+        # MII-Workflow benutzt. sushi-config.yaml deklariert stattdessen die BOM;
+        # der Validator kann sie nicht aus einer Registry ziehen, deshalb zaehlt
+        # package.json die Module einzeln auf. Beide Dateien muessen daher im
+        # Gleichschritt gepflegt werden.
+        IGS=$(jq -r '.dependencies | to_entries | map("-ig " + .key + "#" + .value) | join(" ")' \
+                kds-testdata/package.json)
+        RES="$GITHUB_WORKSPACE/kds-testdata/fsh-generated/resources"
+        # -Xmx14g: siehe Kopf dieser Datei. Mit dem Default stirbt der Lauf.
+        java -Xmx14g -jar validator_cli.jar "$RES"/*.json \
+          -version 4.0.1 $IGS -ig "$RES" -tx n/a \
+          -advisor-file kds-testdata/advisor.json \
+          -output "$GITHUB_WORKSPACE/validation.json" || true
+        # `|| true` faengt nur den erwarteten Exit!=0 bei Validierungsfehlern ab.
+        # Ein Abbruch VOR der Validierung hinterlaesst keine Ausgabedatei — und
+        # genau das muss den Job rot machen, sonst laeuft er ins Leere. Der
+        # OutOfMemoryError oben hat exakt so ausgesehen.
+        [ -s validation.json ] || {
+          echo "::error::Validator ohne Ergebnis — validation.json fehlt. Log pruefen (Heap? Paket nicht aufloesbar?)"
+          exit 1
+        }
+
+    - name: Report and compare against baseline
+      run: |
+        set -o pipefail
+        N=$(python3 - <<'PY'
+        import json
+        d = json.load(open("validation.json"))
+        entries = d.get("entry", []) if d.get("resourceType") == "Bundle" else [{"resource": d}]
+        n = sum(1 for e in entries for i in e["resource"].get("issue", [])
+                if i.get("severity") in ("error", "fatal"))
+        print(n)
+        PY
+        )
+        echo "### FHIR validation: $N Errors (Baseline $ERROR_BASELINE)" >> "$GITHUB_STEP_SUMMARY"
+        python3 scripts/advisor-rules.py validation.json --top 12 >> "$GITHUB_STEP_SUMMARY"
+        if [ "$N" -gt "$ERROR_BASELINE" ]; then
+          echo "::error::$N Errors, Baseline ist $ERROR_BASELINE — die Zahl ist GESTIEGEN. Entweder eine echte Regression, oder ein Profil-Update hat neue Fehler gebracht; dann die Baseline mit Begruendung anheben."
+          exit 1
+        fi
+        echo "::notice::$N Errors (Baseline $ERROR_BASELINE) — nicht gestiegen."
+
+    - name: Upload validation report
+      if: always()
+      uses: actions/upload-artifact@v4
+      with:
+        name: validation-report
+        path: validation.json
+        retention-days: 14
+        compression-level: 9
