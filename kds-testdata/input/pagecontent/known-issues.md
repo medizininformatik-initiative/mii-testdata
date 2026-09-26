@@ -15,16 +15,22 @@ stay where it is.
 An error list in which 66 % of entries cannot be acted on is not a quality signal — it
 buries the 954 remaining findings that *are* actionable. Suppression restores the signal.
 
-The risk is obvious: a rule written too broadly hides future, genuine defects. Two
-safeguards address that:
+The risk is obvious: a rule written too broadly hides future, genuine defects. What
+addresses that:
 
 - **Every rule was measured before it was added.** `scripts/advisor-rules.py` reports, for
   a candidate rule, how many errors it hits, in which files and on which profiles. No rule
-  entered `advisor.json` without that number.
-- **CI validates twice, with and without `advisor.json`,** and reports the difference on
-  every run (`validation-advisor-control`). If a suppression starts hiding more than it
-  did, the delta shows it. That job exists precisely so that this page cannot quietly
-  become a lie.
+  entered `advisor.json` without that number, and the table below is that measurement.
+- **The measurement is repeatable by anyone.** `scripts/compare-advisor-runs.py` diffs a
+  validation report produced with `advisor.json` against one produced without it, so the
+  suppressed set can be re-derived from any validation run rather than taken on trust.
+
+Being straight about the limit: this is a measurement taken at a point in time, not a
+standing gate. An earlier version of this page promised a CI job that validated twice on
+every run and reported the delta. That job was removed — validation here follows the same
+reusable MII workflow as the KDS modules, and a second, bespoke validation pass alongside
+it was more machinery than the repository should carry. So when a profile changes upstream,
+re-running `advisor-rules.py` is a deliberate step, not something CI does for you.
 
 ### The suppressed rules
 
@@ -89,6 +95,6 @@ than hidden.
 ```
 
 One caveat on the tooling: `advisor-rules.py` models how the validator matches a rule
-against an element path. The authoritative number is the difference reported by the
-`validation-advisor-control` job in CI — if it disagrees with the prediction, trust the
-job and fix the model.
+against an element path — it is a model, not the validator. The authoritative number is
+the difference between two real validation runs, which `compare-advisor-runs.py` computes
+from their reports. Where the two disagree, trust the runs and fix the model.

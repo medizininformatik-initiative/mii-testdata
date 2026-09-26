@@ -1,0 +1,96 @@
+# FHIR-Validierung ueber den wiederverwendbaren MII-Workflow.
+#
+# Aufbau wie in den KDS-Modulen (Vorbild: kerndatensatz-lungenfunktion/
+# .github/workflows/validation.yml): ein Guard-Job, der die Secrets vorab
+# prueft, und ein direkter Aufruf von ci_java_validation.yml. Keine eigene
+# Validierungsmechanik — der Meta-Workflow bringt seinen mTLS-Proxy zum
+# SU-TermServ selbst mit, setzt die Validator-Version und rendert den Report.
+#
+# Der Unterschied zu einem Modul ist nur der Pfad: Hier liegen Conformance-
+# Ressourcen und Beispiele gemeinsam unter kds-testdata/fsh-generated/resources,
+# weil das Repo Testdaten und keinen Profilbestand fuehrt. Validiert wird der
+# KOMMITTIERTE Stand von fsh-generated — dieser Workflow baut nicht selbst.
+# Ein PR muss also frisch gebaute Ressourcen mitbringen; das leistet
+# ci.yml ("Build and Validate Testdata").
+#
+# Der .NET-Job der Module (SUSHI + Simplifier Quality Control) fehlt hier
+# absichtlich: Er prueft MII-Namenskonventionen fuer Profile, und Profile gibt
+# es in diesem Repo nicht. Ausserdem committet er fsh-generated automatisch,
+# was mit unserem Build kollidieren wuerde.
+#
+# Bekannte Fehler werden ueber kds-testdata/advisor.json unterdrueckt; welche
+# und warum, steht auf der Known-Issues-Seite des IG.
+#
+# Schalter: vars.ENABLE_VALIDATION — standardmaessig an. Auf 'false' setzen,
+#           um die Validierung zu ueberspringen (Jobs erscheinen als skipped).
+name: FHIR validation
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  # Der aufgerufene Workflow deklariert CDS_DEV_CLIENT_CERT/_KEY/_CERT_PASSWORD
+  # als required und baut seinen Terminologie-Proxy bedingungslos daraus. Fehlen
+  # sie (Fork, neu aufgesetztes Repo), stirbt der Job bei der Workflow-Auswertung
+  # ohne einen einzigen Step — eine Fehlermeldung, die nach einem Defekt aussieht
+  # und keiner ist. Ein Job-`if:` kann keine Secrets lesen, deshalb dieser Guard.
+  java-validation-guard:
+    name: SU-TermServ certificate present?
+    if: ${{ vars.ENABLE_VALIDATION != 'false' }}
+    runs-on: ubuntu-latest
+    outputs:
+      has-secrets: ${{ steps.probe.outputs.has-secrets }}
+    steps:
+    - name: Probe
+      id: probe
+      env:
+        C: ${{ secrets.CDS_DEV_CLIENT_CERT }}
+        K: ${{ secrets.CDS_DEV_CLIENT_KEY }}
+        P: ${{ secrets.CDS_DEV_CLIENT_CERT_PASSWORD }}
+      run: |
+        if [ -n "$C" ] && [ -n "$K" ] && [ -n "$P" ]; then
+          echo "has-secrets=true" >> "$GITHUB_OUTPUT"
+        else
+          echo "has-secrets=false" >> "$GITHUB_OUTPUT"
+          echo "::notice::Kein SU-TermServ-Zertifikat konfiguriert — der HL7-Java-Validator wird uebersprungen (der aufgerufene Workflow hat keinen Terminologie-Fallback). Build, statische Gates und der Ladetest gegen Blaze/HAPI laufen unabhaengig davon."
+        fi
+
+  java-validation:
+    name: HL7 Java validator (SU-TermServ)
+    needs: java-validation-guard
+    if: ${{ vars.ENABLE_VALIDATION != 'false' && needs.java-validation-guard.outputs.has-secrets == 'true' }}
+    # Auf Commit-SHA gepinnt statt @master, damit kein Lauf von einer
+    # Aenderung im Meta-Repo abhaengt (Muster der Modul-Repos).
+    uses: medizininformatik-initiative/kerndatensatz-meta/.github/workflows/ci_java_validation.yml@1db2e534704d92e5ee0cde663ce3e7ccd8825fa7
+    with:
+      ref: ${{ github.event.pull_request.head.ref || github.ref }}
+      # Diese Pfade werden im aufgerufenen Workflow als "$GITHUB_WORKSPACE/$p"
+      # aufgeloest, also WORKSPACE-relativ — das `working-directory` unten gilt
+      # fuer sie nicht. Deshalb steht hier das kds-testdata-Praefix, obwohl es
+      # doppelt aussieht. Ein Modul, dessen fsh-generated im Wurzelverzeichnis
+      # liegt, schreibt hier schlicht `fsh-generated/resources`.
+      PATH_TO_CONFORMANCE_RESOURCES: ./kds-testdata/fsh-generated/resources
+      PATH_TO_EXAMPLES: ./kds-testdata/fsh-generated/resources
+      JAVA_VALIDATION_ENABLED: true
+      JAVA_VALIDATOR_VERSION: ${{ vars.JAVA_VALIDATOR_VERSION || '6.7.10' }}
+      # Die Optionen kommen aus der ORG-Variable. Sie tragen
+      # -advisor-file advisor.json, -authorise-non-conformant-tx-servers (ohne
+      # das lehnt validator_cli den SU-TermServ ab und beendet sich mit 1) und
+      # -output validation.json (ohne das scheitert der Renderer-Step des
+      # aufgerufenen Workflows mit ENOENT). Eine Teilmenge hier hart zu
+      # verdrahten hat genau diesen Job schon einmal zerlegt — immer den
+      # zentralen Wert erben.
+      JAVA_VALIDATION_OPTIONS: ${{ vars.JAVA_VALIDATION_OPTIONS }}
+      # Gilt fuer die Shell-Schritte, nicht fuer die Pfade oben. Gebraucht wird
+      # es, weil der aufgerufene Workflow die -ig-Liste aus `package.json` im
+      # Arbeitsverzeichnis zieht — und die liegt hier unter kds-testdata/.
+      working-directory: ./kds-testdata
+      VALIDATION_REPORT_FILTERS: |
+        filename | messageId | detailsWildcard | location
+    secrets: inherit
