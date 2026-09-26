@@ -228,22 +228,77 @@ jobs:
   # Naechtlich, auf Abruf und NICHT blockierend: Er berichtet, er verhindert
   # nicht. Ein Tor kann er nicht werden, solange seine Laufzeit an der
   # Antwortzeit eines fremden Servers haengt.
+  # INKREMENTELL bei Push und PR, VOLLSTAENDIG naechtlich und auf Abruf.
+  #
+  # Das ist zulaessig, weil ein Bundle seine Ressourcen vollstaendig einbettet:
+  # Wer eine Ressource aendert, aendert auch jedes Bundle, das sie enthaelt —
+  # nachgeprueft an 716fdee4, der die Observation UND Bundle-…-seltene-1.json
+  # anfasste. Ein Paket, dessen Dateien unveraendert sind, kann kein neues
+  # Ergebnis liefern.
+  #
+  # Ausnahme sind Aenderungen, die jedes Paket betreffen: die -ig-Liste und
+  # damit alle Profil- und Terminologieversionen (package.json), die
+  # Projektkonfiguration, die Unterdrueckungen, die Paketbildung selbst. Genau
+  # dort sitzen auch die SNOMED- und LOINC-Pins. Die Liste steht in
+  # scripts/tx-matrix.py, damit die Regel an einer Stelle gepflegt wird.
+  #
+  # Erst dadurch ist dieser Job auf einem PR ueberhaupt bezahlbar: ein
+  # geaendertes Bundle kostet rund eine Viertelstunde statt neun Stunden.
   tx-pakete:
     name: Arbeitspakete bestimmen
-    if: ${{ vars.ENABLE_VALIDATION != 'false' && (github.event_name == 'schedule' || github.event_name == 'workflow_dispatch') }}
+    if: ${{ vars.ENABLE_VALIDATION != 'false' }}
     runs-on: ubuntu-latest
     outputs:
       pakete: ${{ steps.m.outputs.pakete }}
     steps:
     - uses: actions/checkout@v4
-    - id: m
+      with:
+        # Fuer den Vergleich mit dem Vorzustand; ohne Historie kein Diff.
+        fetch-depth: 0
+
+    - name: Geaenderte Dateien bestimmen
+      id: diff
+      env:
+        EVENT: ${{ github.event_name }}
+        BASE: ${{ github.base_ref }}
+        BEFORE: ${{ github.event.before }}
       run: |
-        echo "pakete=$(python3 scripts/tx-matrix.py kds-testdata/fsh-generated/resources)" \
+        case "$EVENT" in
+          schedule|workflow_dispatch)
+            echo "::notice::Vollstaendiger Lauf ($EVENT)."
+            exit 0 ;;
+          pull_request)
+            git fetch --quiet origin "$BASE"
+            git diff --name-only "origin/$BASE...HEAD" > /tmp/changed.txt ;;
+          *)
+            # Bei einem neuen Branch ist `before` der Null-SHA; dann gibt es
+            # keinen Vorzustand und alles muss laufen.
+            if [ -z "$BEFORE" ] || [ "$BEFORE" = "0000000000000000000000000000000000000000" ]; then
+              echo "::notice::Kein Vorzustand (neuer Branch) — vollstaendiger Lauf."
+              exit 0
+            fi
+            git diff --name-only "$BEFORE" "$GITHUB_SHA" > /tmp/changed.txt ;;
+        esac
+        echo "liste=/tmp/changed.txt" >> "$GITHUB_OUTPUT"
+        echo "$(wc -l < /tmp/changed.txt) Dateien geaendert:"
+        cat /tmp/changed.txt
+
+    - id: m
+      env:
+        LISTE: ${{ steps.diff.outputs.liste }}
+      run: |
+        if [ -n "$LISTE" ]; then
+          set -- --changed "$LISTE"
+        fi
+        echo "pakete=$(python3 scripts/tx-matrix.py kds-testdata/fsh-generated/resources "$@")" \
           >> "$GITHUB_OUTPUT"
 
   java-validation-tx:
     name: "tx: ${{ matrix.paket.name }}"
     needs: tx-pakete
+    # Eine leere Matrix ist ein Fehler bei GitHub, kein Ueberspringen — also
+    # hier abfangen. Tritt ein, sobald ein Commit keine Testdaten beruehrt.
+    if: ${{ needs.tx-pakete.outputs.pakete != '[]' }}
     runs-on: ubuntu-latest
     # Je Paket. Das groesste Bundle (icu-1, 183 Eintraege) lag beim Vollauf bei
     # rund einer halben Stunde; 120 Minuten lassen reichlich Luft, ohne einen
