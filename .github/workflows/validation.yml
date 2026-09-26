@@ -329,9 +329,47 @@ jobs:
         } >> "$GITHUB_STEP_SUMMARY"
         python3 scripts/advisor-rules.py validation-tx.json --top 14 >> "$GITHUB_STEP_SUMMARY"
 
-    - name: Stop proxy
+    # Das Zugriffsprotokoll des Proxys landet im Container, nicht im Job-Log —
+    # damit waere genau das unbeobachtbar, worum es bei dieser Konfiguration
+    # geht: ob der POST-Cache greift. Deshalb vor dem Abraeumen auswerten.
+    - name: Proxy-Statistik und Abbau
       if: always()
-      run: docker rm -f nginx-tx 2>/dev/null || true
+      run: |
+        if docker inspect nginx-tx >/dev/null 2>&1; then
+          docker logs nginx-tx > /tmp/nginx-tx.log 2>&1 || true
+          {
+            echo "### Terminologie-Proxy"
+            echo
+            echo '| Methode | Cache | Anfragen |'
+            echo '|---|---|---:|'
+            awk '$1 ~ /^(GET|POST|HEAD)$/ {
+                   split($3, c, "="); print $1 "\t" (c[2] == "" ? "-" : c[2])
+                 }' /tmp/nginx-tx.log \
+              | sort | uniq -c | sort -rn \
+              | awk '{ printf "| %s | %s | %s |\n", $2, $3, $1 }'
+            echo
+            hit=$(grep -c "cache=HIT" /tmp/nginx-tx.log || true)
+            mis=$(grep -c "cache=MISS" /tmp/nginx-tx.log || true)
+            tot=$((hit + mis))
+            if [ "$tot" -gt 0 ]; then
+              echo "Trefferquote: $hit von $tot ($((100 * hit / tot)) %)."
+              echo "Ohne POST-Caching waere sie fuer die \$validate-code-Aufrufe null —"
+              echo "siehe su-termserv-nginx-cache.conf."
+            else
+              echo "Keine cache-Zeilen im Protokoll: Der Validator hat den Proxy nicht benutzt."
+            fi
+          } >> "$GITHUB_STEP_SUMMARY"
+          docker rm -f nginx-tx >/dev/null 2>&1 || true
+        fi
+
+    - name: Upload proxy log
+      if: always()
+      uses: actions/upload-artifact@v4
+      with:
+        name: nginx-tx-log
+        path: /tmp/nginx-tx.log
+        retention-days: 7
+        if-no-files-found: ignore
 
     - name: Upload report
       if: always()
