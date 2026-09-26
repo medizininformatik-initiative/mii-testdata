@@ -45,6 +45,9 @@ on:
     branches: [main]
   pull_request:
   workflow_dispatch:
+  schedule:
+    # Nachts fuer den terminologiegestuetzten Lauf (siehe Job java-validation-tx).
+    - cron: "17 2 * * *"
 
 permissions:
   contents: read
@@ -188,4 +191,155 @@ jobs:
         name: validation-report
         path: validation.json
         retention-days: 14
+        compression-level: 9
+
+  # Derselbe Datenbestand, aber MIT dem SU-TermServ. Der schnelle Lauf oben ist
+  # das Tor; dieser hier holt zurueck, was das Tor nicht sehen kann.
+  #
+  # Wie viel das ist, ist gemessen: Von 917 Fehlern des terminologiefreien Laufs
+  # sind 231 (25 %) terminologiebedingt. Der Kern davon sind die
+  # ICD-O-3-Wertemengen der Onkologie, definiert ueber
+  # `filter: concept descendent-of 'T'` auf einem CodeSystem mit
+  # `content: not-present` — sie koennen ohne Terminologieserver NIE expandieren,
+  # also ist per Konstruktion kein Code darin. Der SU-TermServ hat ICD-O-3.
+  # Dazu kommt die Verstaerkung: Eine Condition mit zwei solchen Fehlern
+  # erzeugte 89 Referenzfehler an anderen Stellen.
+  #
+  # Warum NICHT bei jedem Push: Die Laufzeit haengt an der Antwortzeit des
+  # Servers und schwankte am 2026-09-25 zwischen 12 Minuten und ueber sechs
+  # Stunden (GitHub-Deckel, ohne Ergebnis). Deshalb naechtlich und auf Abruf,
+  # mit eigenem Deckel, und vorerst NICHT blockierend — er berichtet, er
+  # verhindert nicht. Sobald seine Laufzeit ueber mehrere Wochen stabil ist,
+  # kann er ein Tor mit eigener Baseline werden.
+  #
+  # Der Proxy ist ein anderer als in den uebrigen Workflows: Er cacht auch
+  # POST-Antworten und fuehrt abgebrochene Upstream-Anfragen zu Ende. Beides ist
+  # notwendig und beides war im ersten Versuch falsch — die Begruendung steht in
+  # su-termserv-nginx-cache.conf.
+  java-validation-tx:
+    name: HL7 Java validator (mit SU-TermServ)
+    if: ${{ vars.ENABLE_VALIDATION != 'false' && (github.event_name == 'schedule' || github.event_name == 'workflow_dispatch') }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    continue-on-error: true
+    steps:
+    - name: Checkout Project
+      uses: actions/checkout@v4
+
+    - name: Download FHIR cache
+      uses: actions/checkout@v4
+      with:
+        repository: medizininformatik-initiative/fhir-package-store
+        ref: cache-store
+        path: .fhir
+
+    - name: Link .fhir cache to ~/.fhir
+      run: |
+        mkdir -p ~/.fhir
+        cp -r .fhir/* ~/.fhir/
+
+    - uses: actions/setup-java@v4
+      with:
+        distribution: temurin
+        java-version: "17"
+
+    - name: Start SU-TermServ proxy
+      id: tx
+      env:
+        CERT: ${{ secrets.CDS_DEV_CLIENT_CERT }}
+        KEY: ${{ secrets.CDS_DEV_CLIENT_KEY }}
+        PASS: ${{ secrets.CDS_DEV_CLIENT_CERT_PASSWORD }}
+      run: |
+        if [ -z "$CERT" ] || [ -z "$KEY" ] || [ -z "$PASS" ]; then
+          echo "::warning::Kein SU-TermServ-Zertifikat — dieser Job hat ohne Terminologieserver keinen Zweck und wird uebersprungen."
+          echo "tx=" >> "$GITHUB_OUTPUT"; exit 0
+        fi
+        mkdir -p nginx/certs
+        echo "$CERT" | base64 -d > nginx/certs/client-cert.pem
+        echo "$KEY"  | base64 -d > nginx/certs/client-key-encrypted.key
+        openssl rsa -in nginx/certs/client-key-encrypted.key \
+          -out nginx/certs/client-key.key -passin env:PASS
+        docker run -d --name nginx-tx \
+          -v "$PWD/.github/workflows/su-termserv-nginx-cache.conf:/etc/nginx/nginx.conf:ro" \
+          -v "$PWD/nginx/certs:/etc/nginx/certs:ro" \
+          -p 8090:80 nginx:alpine
+        sleep 5
+        # Warmlauf mit dem Accept-Header des Validators, damit Readiness-Check
+        # und Validator denselben Cache-Eintrag treffen (der Server schickt
+        # `Vary: Accept`).
+        if curl -fsS -o /dev/null -H "Accept: application/fhir+json" \
+             --max-time 300 "http://127.0.0.1:8090/fhir/metadata"; then
+          echo "tx=http://127.0.0.1:8090/fhir" >> "$GITHUB_OUTPUT"
+        else
+          echo "::warning::SU-TermServ nicht erreichbar — Job ohne Aussage."
+          echo "tx=" >> "$GITHUB_OUTPUT"
+        fi
+
+    - name: Cache validator jar
+      if: steps.tx.outputs.tx != ''
+      uses: actions/cache@v4
+      with:
+        path: validator_cli.jar
+        key: validator-jar-${{ env.VALIDATOR_VERSION }}
+
+    - name: Download validator
+      if: steps.tx.outputs.tx != ''
+      run: |
+        [ -f validator_cli.jar ] || curl -fsSL -o validator_cli.jar \
+          "https://github.com/hapifhir/org.hl7.fhir.core/releases/download/${VALIDATOR_VERSION}/validator_cli.jar"
+
+    - name: Validate with terminology
+      if: steps.tx.outputs.tx != ''
+      env:
+        TX: ${{ steps.tx.outputs.tx }}
+      run: |
+        IGS=$(jq -r '.dependencies | to_entries | map("-ig " + .key + "#" + .value) | join(" ")' \
+                kds-testdata/package.json)
+        RES="$GITHUB_WORKSPACE/kds-testdata/fsh-generated/resources"
+        # -Xmx14g wie beim schnellen Lauf; -authorise-non-conformant-tx-servers,
+        # weil validator_cli den SU-TermServ sonst ablehnt und mit 1 endet.
+        java -Xmx14g -jar validator_cli.jar "$RES"/*.json \
+          -version 4.0.1 $IGS -ig "$RES" \
+          -tx "$TX" -authorise-non-conformant-tx-servers \
+          -advisor-file kds-testdata/advisor.json \
+          -output "$GITHUB_WORKSPACE/validation-tx.json" || true
+        [ -s validation-tx.json ] || {
+          echo "::warning::Kein Ergebnis — Terminologieserver zu langsam oder Lauf abgebrochen."
+          exit 0
+        }
+
+    - name: Report
+      if: steps.tx.outputs.tx != '' && hashFiles('validation-tx.json') != ''
+      run: |
+        N=$(python3 - <<'PY'
+        import json
+        d = json.load(open("validation-tx.json"))
+        entries = d.get("entry", []) if d.get("resourceType") == "Bundle" else [{"resource": d}]
+        print(sum(1 for e in entries for i in e["resource"].get("issue", [])
+                  if i.get("severity") in ("error", "fatal")))
+        PY
+        )
+        {
+          echo "### Mit SU-TermServ: $N Errors"
+          echo
+          echo "Der terminologiefreie Lauf meldet ${ERROR_BASELINE}. Die Differenz ist die"
+          echo "Aussage dieses Jobs — was nur mit Terminologieserver sichtbar ist, in beide"
+          echo "Richtungen: Bindungsverletzungen, die dort auffallen, und Wertemengen, die"
+          echo "ohne Server gar nicht expandieren koennen."
+        } >> "$GITHUB_STEP_SUMMARY"
+        python3 scripts/advisor-rules.py validation-tx.json --top 14 >> "$GITHUB_STEP_SUMMARY"
+
+    - name: Stop proxy
+      if: always()
+      run: docker rm -f nginx-tx 2>/dev/null || true
+
+    - name: Upload report
+      if: always()
+      uses: actions/upload-artifact@v4
+      with:
+        name: validation-report-tx
+        path: |
+          validation-tx.json
+        retention-days: 14
+        if-no-files-found: warn
         compression-level: 9
