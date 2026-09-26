@@ -30,9 +30,12 @@
 # Minuten, waehrend der Rest in ein bis zwei Sekunden durchlief. Ein Ergebnis
 # nach 85 Sekunden, das jeder ohne Zertifikat nachrechnen kann, ist mehr wert
 # als eines, das von der Tageslaune eines Servers abhaengt.
-# Terminologische Fehler bleiben nicht unbemerkt: Die haeufigste Klasse —
-# falsche Displays — faengt das statische Gate scripts/check-displays.py in
-# ci.yml ab, und zwar in Sekunden.
+# Terminologische Fehler bleiben nicht unbemerkt, sondern verteilen sich auf
+# zwei andere Stellen: Die haeufigste Klasse — falsche Displays — faengt das
+# statische Gate scripts/check-displays.py in ci.yml in Sekunden ab. Alles
+# weitere prueft validation-terminology.yml gegen den SU-TermServ; als eigener
+# Workflow, damit dessen Stundenlaufzeit den Status DIESES Tores nicht
+# verdeckt.
 #
 # Bekannte Profildefekte werden ueber kds-testdata/advisor.json unterdrueckt;
 # welche und warum, steht auf der Known-Issues-Seite des IG.
