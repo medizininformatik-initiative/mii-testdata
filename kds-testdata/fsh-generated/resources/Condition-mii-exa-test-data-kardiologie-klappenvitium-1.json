@@ -58,7 +58,7 @@
         "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
         "code": "I35.0",
         "display": "Aortenklappenstenose",
-        "version": "2025"
+        "version": "2026"
       },
       {
         "system": "http://snomed.info/sct",

@@ -42,7 +42,7 @@
         "code": "E75.2",
         "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
         "display": "Sonstige Sphingolipidosen",
-        "version": "2023"
+        "version": "2024"
       }
     ],
     "text": "Morbus Fabry, molekulargenetisch gesichert (GLA, heterozygot)"

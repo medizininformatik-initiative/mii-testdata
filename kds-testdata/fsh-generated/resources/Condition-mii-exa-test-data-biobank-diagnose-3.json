@@ -20,12 +20,12 @@
         "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
         "code": "C18.9",
         "display": "Bösartige Neubildung: Kolon, nicht näher bezeichnet",
-        "version": "2022"
+        "version": "2024"
       },
       {
         "system": "http://fhir.de/CodeSystem/bfarm/alpha-id",
         "code": "I29723",
-        "version": "2022",
+        "version": "2024",
         "display": "Bösartige Neubildung des Kolons o.n.A."
       },
       {

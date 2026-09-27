@@ -152,7 +152,7 @@
               "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
               "code": "I21.0",
               "display": "Akuter transmuraler Myokardinfarkt der Vorderwand",
-              "version": "2025"
+              "version": "2026"
             },
             {
               "system": "http://snomed.info/sct",
@@ -298,7 +298,7 @@
               "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
               "code": "I63.4",
               "display": "Hirninfarkt durch Embolie zerebraler Arterien",
-              "version": "2023"
+              "version": "2026"
             },
             {
               "system": "http://snomed.info/sct",
@@ -425,7 +425,7 @@
               "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
               "code": "I35.0",
               "display": "Aortenklappenstenose",
-              "version": "2025"
+              "version": "2026"
             },
             {
               "system": "http://snomed.info/sct",
@@ -1347,7 +1347,7 @@
               "system": "http://fhir.de/CodeSystem/bfarm/ops",
               "code": "5-377.5",
               "display": "Implantation eines Herzschrittmachers, Defibrillators und Ereignis-Rekorders: Defibrillator mit Einkammer-Stimulation",
-              "version": "2025"
+              "version": "2026"
             }
           ]
         },

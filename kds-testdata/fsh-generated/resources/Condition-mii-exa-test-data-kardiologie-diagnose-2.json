@@ -30,7 +30,7 @@
         "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
         "code": "I63.4",
         "display": "Hirninfarkt durch Embolie zerebraler Arterien",
-        "version": "2023"
+        "version": "2026"
       },
       {
         "system": "http://snomed.info/sct",

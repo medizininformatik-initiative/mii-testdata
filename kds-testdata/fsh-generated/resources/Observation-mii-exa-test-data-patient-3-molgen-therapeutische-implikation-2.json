@@ -68,7 +68,7 @@
             "code": "L01EB04",
             "system": "http://fhir.de/CodeSystem/bfarm/atc",
             "display": "Osimertinib",
-            "version": "2024"
+            "version": "2026"
           }
         ],
         "text": "Osimertinib (Tagrisso)"

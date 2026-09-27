@@ -92,7 +92,7 @@ jobs:
     # Statische Gates: kosten Sekunden und brauchen kein Docker.
     # check-references faengt absolute Referenzen in Kanonikalraeume — genau
     # den Fall, an dem HAPI scheiterte und Blaze nichts merkte.
-    - name: Static checks (codings, references, displays, catalogue versions)
+    - name: Static checks (codings, references, displays)
       run: |
         python3 scripts/check-coding-quality.py kds-testdata/fsh-generated/resources
         python3 scripts/check-references.py kds-testdata/fsh-generated/resources
@@ -101,10 +101,16 @@ jobs:
         # das .index.json jedes Pakets nur dessen CodeSystems oeffnet.
         python3 scripts/check-displays.py kds-testdata/fsh-generated/resources \
           --lang "$(yq eval '.parameters["i18n-default-lang"] // "en"' kds-testdata/sushi-config.yaml)"
-        # Katalogjahrgang gegen das klinische Datum. Kein Validator prueft das,
-        # weil es zwei Elemente in Beziehung setzt statt einen Code zu bewerten —
-        # und eine Diagnose von 2023 kann nicht mit ICD-10-GM 2026 kodiert sein.
-        python3 scripts/check-catalogue-versions.py kds-testdata/fsh-generated/resources
+
+    # KEIN Gate, sondern ein Hinweis, und deshalb ein eigener Schritt: Die Regel
+    # (Katalogjahrgang nicht nach dem Erfassungsdatum) ist eine Plausibilitaets-
+    # heuristik. Retrospektive Erschliessung ist in der Forschung normal, und ein
+    # Gate, das dabei rot wird, erzieht dazu, richtige Daten falsch zu machen.
+    # Zwischen den scharfen Pruefungen oben waere die Aussage missverstaendlich.
+    - name: Hint - catalogue versions vs. recording date
+      run: |
+        python3 scripts/check-catalogue-versions.py kds-testdata/fsh-generated/resources \
+          | tee -a "$GITHUB_STEP_SUMMARY"
 
     - name: Generate timestamp
       id: timestamp

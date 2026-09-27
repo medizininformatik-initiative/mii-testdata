@@ -68,7 +68,7 @@
             "code": "L01FX18",
             "system": "http://fhir.de/CodeSystem/bfarm/atc",
             "display": "Amivantamab",
-            "version": "2024"
+            "version": "2026"
           }
         ],
         "text": "Amivantamab (Rybrevant) - EGFR/MET bispezifischer Antikoerper"

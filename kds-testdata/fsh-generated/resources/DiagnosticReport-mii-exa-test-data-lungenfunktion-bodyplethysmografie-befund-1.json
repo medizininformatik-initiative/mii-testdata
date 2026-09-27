@@ -102,7 +102,7 @@
           "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
           "code": "J45.9",
           "display": "Asthma bronchiale, nicht näher bezeichnet",
-          "version": "2025"
+          "version": "2026"
         }
       ]
     }

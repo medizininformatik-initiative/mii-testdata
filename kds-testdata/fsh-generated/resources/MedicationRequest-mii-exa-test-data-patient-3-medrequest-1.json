@@ -30,7 +30,7 @@
       {
         "system": "http://fhir.de/CodeSystem/bfarm/atc",
         "code": "N02BB02",
-        "version": "2022",
+        "version": "2023",
         "display": "Metamizol-Natrium"
       },
       {

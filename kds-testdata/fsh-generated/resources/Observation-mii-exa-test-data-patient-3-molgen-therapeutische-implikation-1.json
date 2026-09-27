@@ -58,7 +58,7 @@
             "code": "L01EC",
             "system": "http://fhir.de/CodeSystem/bfarm/atc",
             "display": "BRAF-Serin-Threoninkinase-Inhibitoren",
-            "version": "2022"
+            "version": "2026"
           },
           {
             "code": "703645005",
@@ -85,7 +85,7 @@
             "code": "L01FE",
             "system": "http://fhir.de/CodeSystem/bfarm/atc",
             "display": "EGFR (Epidermaler Wachstumsfaktor-Rezeptor)-Inhibitoren",
-            "version": "2022"
+            "version": "2026"
           }
         ]
       },
@@ -106,7 +106,7 @@
             "code": "L01EE",
             "system": "http://fhir.de/CodeSystem/bfarm/atc",
             "display": "Mitogen-aktivierte Proteinkinase (MEK)-Inhibitoren",
-            "version": "2022"
+            "version": "2026"
           }
         ]
       },

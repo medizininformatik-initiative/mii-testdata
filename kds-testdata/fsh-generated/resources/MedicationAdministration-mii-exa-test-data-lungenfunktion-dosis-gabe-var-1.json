@@ -30,7 +30,7 @@
         "system": "http://fhir.de/CodeSystem/bfarm/atc",
         "code": "V04CX03",
         "display": "Methacholin",
-        "version": "2025"
+        "version": "2026"
       }
     ],
     "text": "Methacholinchlorid 0,33% Loesung zur Inhalation"

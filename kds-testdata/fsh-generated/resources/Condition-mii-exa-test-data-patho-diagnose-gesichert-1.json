@@ -43,7 +43,7 @@
     "coding": [
       {
         "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
-        "version": "2024",
+        "version": "2026",
         "code": "C61",
         "display": "Bösartige Neubildung der Prostata"
       },

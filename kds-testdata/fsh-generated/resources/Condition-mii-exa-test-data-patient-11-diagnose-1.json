@@ -19,7 +19,7 @@
       {
         "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
         "code": "I50.13",
-        "version": "2023"
+        "version": "2024"
       },
       {
         "system": "http://snomed.info/sct",

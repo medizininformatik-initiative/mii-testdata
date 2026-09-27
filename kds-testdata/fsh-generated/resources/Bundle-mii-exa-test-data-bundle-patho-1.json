@@ -225,7 +225,7 @@
               "code": "C61",
               "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
               "display": "Bösartige Neubildung der Prostata",
-              "version": "2024"
+              "version": "2026"
             }
           ]
         },
@@ -607,7 +607,7 @@
           "coding": [
             {
               "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
-              "version": "2024",
+              "version": "2026",
               "code": "C61",
               "display": "Bösartige Neubildung der Prostata"
             },
@@ -732,7 +732,7 @@
           "coding": [
             {
               "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
-              "version": "2024",
+              "version": "2025",
               "code": "C61",
               "display": "Bösartige Neubildung der Prostata"
             },
@@ -12297,7 +12297,7 @@
                 "coding": [
                   {
                     "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
-                    "version": "2024",
+                    "version": "2025",
                     "code": "C61",
                     "display": "Bösartige Neubildung der Prostata"
                   },
@@ -12631,7 +12631,7 @@
                     "code": "C61",
                     "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
                     "display": "Bösartige Neubildung der Prostata",
-                    "version": "2024"
+                    "version": "2026"
                   }
                 ]
               },

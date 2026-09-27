@@ -2068,7 +2068,7 @@
               "code": "E34.4",
               "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
               "display": "Konstitutioneller Hochwuchs",
-              "version": "2025"
+              "version": "2026"
             },
             {
               "code": "MONDO:0007064",
@@ -2932,7 +2932,7 @@
               "code": "C09CA01",
               "system": "http://fhir.de/CodeSystem/bfarm/atc",
               "display": "Losartan",
-              "version": "2025"
+              "version": "2026"
             }
           ],
           "text": "Losartan 50 mg Filmtabletten"

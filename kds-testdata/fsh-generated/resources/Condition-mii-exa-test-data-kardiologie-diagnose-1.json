@@ -44,7 +44,7 @@
         "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
         "code": "I21.0",
         "display": "Akuter transmuraler Myokardinfarkt der Vorderwand",
-        "version": "2025"
+        "version": "2026"
       },
       {
         "system": "http://snomed.info/sct",

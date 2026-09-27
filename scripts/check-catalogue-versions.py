@@ -1,17 +1,38 @@
 #!/usr/bin/env python3
-"""check-catalogue-versions.py — Katalogjahrgang gegen das klinische Datum.
+"""check-catalogue-versions.py — Katalogjahrgang gegen das Erfassungsdatum.
 
-Die BfArM-Kataloge (ICD-10-GM, OPS, ATC, Alpha-ID) erscheinen jaehrlich, und
-kodiert wird mit dem Jahrgang, der zum Zeitpunkt des Geschehens gilt. Daraus
-folgt eine Regel, die kein Validator prueft, weil sie zwei Elemente in Beziehung
-setzt statt einen Code zu bewerten:
+Die BfArM-Kataloge (ICD-10-GM, OPS, ATC, Alpha-ID) erscheinen jaehrlich. Kodiert
+wird mit dem Jahrgang, der zum Zeitpunkt der ERFASSUNG gilt — nicht zu dem des
+Geschehens. Daraus folgt eine Plausibilitaetsregel, die kein Validator prueft,
+weil sie zwei Elemente in Beziehung setzt statt einen Code zu bewerten:
 
-    Coding.version darf NICHT juenger sein als das klinische Datum der Ressource.
+    Coding.version soll nicht juenger sein als das ERFASSUNGSDATUM der Ressource.
 
-Eine Diagnose von 2023 kann nicht mit ICD-10-GM 2026 kodiert sein — den Katalog
-gab es noch nicht. Der umgekehrte Fall ist dagegen normal und wird NICHT
-gemeldet: Wer 2025 nachkodiert, benutzt womoeglich noch den Katalog von 2024,
-und laengsschnittliche Daten tragen ohnehin alte Jahrgaenge.
+Der Anker ist absichtlich das Erfassungsdatum und nicht das klinische, und diese
+Unterscheidung ist der Kern der Regel. Eine Diagnose mit `onsetDateTime`
+2023-08-02 und `recordedDate` 2025-03-10 ist 2025 erfasst worden; ICD-10-GM 2025
+ist dafuer richtig, obwohl das Geschehen aelter ist. Retrospektive Erschliessung
+ist in der Forschung der Normalfall: Ein Register kodiert Altfaelle mit dem
+heutigen Katalog, ein molekulares Tumorboard leitet aus einer Therapie von 2022
+heute eine Implikation ab, NLP erschliesst alte Befunde. Ein Katalog, der JUENGER
+als das Geschehen ist, ist deshalb kein Fehler — nur einer, der juenger als die
+Erfassung ist, verdient einen Blick.
+
+Eine FRUEHERE Erstfassung dieser Pruefung nahm das erste gefundene Datumsfeld und
+bevorzugte damit `onsetDateTime`. Sie hat dadurch korrekt nachtraeglich erschlossene
+Ressourcen als fehlerhaft gemeldet, und die daraufhin "korrigierten" Jahrgaenge
+waren falscher als die urspruenglichen. Daher der Maximalwert.
+
+Wo die Ressource kein Erfassungsdatum nennt, wird NICHT geurteilt. Eine zweite
+Fassung dieser Pruefung nahm dort das spaeteste vorhandene Datum und meldete
+daraufhin 28 Faelle, von denen alle harmlos waren: Testdaten, die 2026
+geschrieben wurden und klinische Daten von 2022 bis 2025 tragen. Eine Liste, in
+der jeder Eintrag harmlos ist, verdeckt die Eintraege, die es nicht sind.
+
+Gemeldet wird trotzdem als HINWEIS mit Exit 0, nicht als Fehler: Auch ein
+nachlaufendes Erfassungsdatum ist denkbar, und ein Gate, das bei legitimer
+retrospektiver Erschliessung rot wird, erzieht dazu, richtige Daten falsch zu
+machen.
 
 Dass die alten Jahrgaenge Absicht sind, ist nachgerechnet: Von 53
 ICD-10-GM-Codierungen im Bestand tragen 30 genau den Jahrgang ihres eigenen
@@ -19,13 +40,8 @@ Datums — eine Diagnose von 2010 fuehrt ICD-10-GM 2010. Das ist der Grund, waru
 diese Testdaten einen Terminologieserver mit historischen Katalogen brauchen und
 nicht nur mit dem aktuellen.
 
-Als klinisches Datum gilt das erste gefundene aus: onsetDateTime, recordedDate,
-effectiveDateTime, performedDateTime, authoredOn, occurrenceDateTime, date,
-issued, created — sonst der Beginn bzw. das Ende einer Period. Ressourcen ohne
-Datum werden uebersprungen; ohne Bezugspunkt gibt es nichts zu vergleichen.
-
 Usage: check-catalogue-versions.py [resources-dir]
-Exit 1, sobald ein Jahrgang in der Zukunft seiner Ressource liegt.
+Exit immer 0 — das Ergebnis ist der Hinweis, nicht ein Urteil.
 """
 import glob
 import json
@@ -39,24 +55,22 @@ import collections
 # ihre Gueltigkeit folgt einer anderen Logik.
 JAEHRLICH = ("bfarm/icd-10-gm", "bfarm/ops", "bfarm/atc", "bfarm/alpha-id")
 
-DATUMSFELDER = ("onsetDateTime", "recordedDate", "effectiveDateTime",
-                "performedDateTime", "authoredOn", "occurrenceDateTime",
-                "date", "issued", "created")
-PERIODEN = ("onsetPeriod", "performedPeriod", "effectivePeriod")
+# NUR Felder, die sagen, wann die Ressource ERFASST wurde. Klinische Daten
+# (onsetDateTime, effectiveDateTime, performedDateTime, Perioden) stehen
+# absichtlich NICHT hier: Sie sagen, wann etwas geschah, und der Katalog richtet
+# sich nicht danach. Genau diese Verwechslung war der Fehler der Erstfassung.
+ERFASSUNGSFELDER = ("recordedDate", "issued", "authoredOn", "created")
 
 
-def klinisches_jahr(doc):
-    for k in DATUMSFELDER:
-        v = doc.get(k)
-        if isinstance(v, str) and re.match(r"^\d{4}", v):
-            return int(v[:4])
-    for k in PERIODEN:
-        p = doc.get(k) or {}
-        for grenze in ("start", "end"):
-            v = p.get(grenze)
-            if isinstance(v, str) and re.match(r"^\d{4}", v):
-                return int(v[:4])
-    return None
+def erfassungsjahr(doc):
+    """Das spaeteste Jahr, in dem die Ressource nach eigener Angabe erfasst wurde.
+
+    None, wenn sie dazu nichts sagt — dann ist die Regel nicht anwendbar, und
+    Schweigen ist besser als Raten.
+    """
+    jahre = [int(doc[k][:4]) for k in ERFASSUNGSFELDER
+             if isinstance(doc.get(k), str) and re.match(r"^\d{4}", doc[k])]
+    return max(jahre) if jahre else None
 
 
 def codings(node):
@@ -85,7 +99,7 @@ def main():
         # Bundles wiederholen nur, was als Einzelressource schon dasteht.
         if doc.get("resourceType") in ("Bundle", "ImplementationGuide"):
             continue
-        jahr = klinisches_jahr(doc)
+        jahr = erfassungsjahr(doc)
         for c in codings(doc):
             system = c.get("system") or ""
             version = c.get("version")
@@ -94,6 +108,8 @@ def main():
             if not (isinstance(version, str) and re.fullmatch(r"\d{4}", version)):
                 continue
             if jahr is None:
+                # Kein Erfassungsdatum — nicht beurteilbar. Der haeufigste Fall,
+                # und kein Mangel: Viele Ressourcen tragen nur klinische Daten.
                 ohne_datum += 1
                 continue
             geprueft += 1
@@ -102,15 +118,16 @@ def main():
                                 system.rsplit("/", 1)[-1], version, jahr,
                                 c.get("code")))
 
-    print(f"# Katalogjahrgaenge ({geprueft} datierte Codierungen geprueft, "
-          f"{ohne_datum} ohne Datum uebersprungen)\n")
+    print(f"# Katalogjahrgaenge ({geprueft} Codierungen mit Erfassungsdatum "
+          f"geprueft, {ohne_datum} ohne Erfassungsdatum uebersprungen)\n")
     if not befunde:
-        print("Kein Jahrgang liegt in der Zukunft seiner Ressource.")
+        print("Kein Jahrgang liegt nach dem Erfassungsdatum seiner Ressource.")
         sys.exit(0)
 
-    print(f"**{len(befunde)} Codierungen mit einem Katalog, der juenger ist als "
-          f"das klinische Datum.** Den Jahrgang gab es zu diesem Zeitpunkt noch "
-          f"nicht.\n")
+    print(f"**{len(befunde)} Codierungen mit einem Katalog, der NACH dem "
+          f"selbst angegebenen Erfassungsdatum erschienen ist.** Hier widerspricht "
+          f"die Ressource sich selbst — mit einem Katalog kodiert, den es zum "
+          f"Erfassungszeitpunkt noch nicht gab.\n")
     print("| Ressource | Katalog | Jahrgang | Datum | Code |")
     print("|---|---|---:|---:|---|")
     for rid, system, version, jahr, code in sorted(befunde, key=lambda x: (-int(x[2]), x[0])):
@@ -118,11 +135,14 @@ def main():
     n = collections.Counter(s for _, s, _, _, _ in befunde)
     print(f"\nNach Katalog: " + ", ".join(f"{k} {v}" for k, v in n.most_common()))
     print("\nZwei Wege zur Korrektur, und die Wahl ist eine fachliche: entweder "
-          "traegt die Ressource den falschen Jahrgang, oder sie traegt das falsche "
-          "Datum. Vor dem Aendern des Jahrgangs pruefen, ob der Code im "
+          "traegt die Ressource den falschen Jahrgang, oder das falsche "
+          "Erfassungsdatum. Vor dem Aendern des Jahrgangs pruefen, ob der Code im "
           "aelteren Katalog ueberhaupt existiert — sonst entsteht aus einem "
           "Zeitfehler ein Terminologiefehler.")
-    sys.exit(1)
+    # Bewusst 0: Die Regel ist eine Plausibilitaetsheuristik, kein Invariant.
+    # Ein Gate, das bei legitimer retrospektiver Erschliessung rot wird, wuerde
+    # dazu erziehen, richtige Daten falsch zu machen.
+    sys.exit(0)
 
 
 if __name__ == "__main__":

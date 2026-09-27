@@ -50,7 +50,7 @@
         "system": "http://fhir.de/CodeSystem/bfarm/ops",
         "code": "5-377.5",
         "display": "Implantation eines Herzschrittmachers, Defibrillators und Ereignis-Rekorders: Defibrillator mit Einkammer-Stimulation",
-        "version": "2025"
+        "version": "2026"
       }
     ]
   },
