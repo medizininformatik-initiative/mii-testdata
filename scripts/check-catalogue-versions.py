@@ -6,7 +6,7 @@ wird mit dem Jahrgang, der zum Zeitpunkt der ERFASSUNG gilt — nicht zu dem des
 Geschehens. Daraus folgt eine Plausibilitaetsregel, die kein Validator prueft,
 weil sie zwei Elemente in Beziehung setzt statt einen Code zu bewerten:
 
-    Coding.version soll nicht juenger sein als das ERFASSUNGSDATUM der Ressource.
+    Coding.version soll nicht juenger sein als das SPAETESTE Datum der Ressource.
 
 Der Anker ist absichtlich das Erfassungsdatum und nicht das klinische, und diese
 Unterscheidung ist der Kern der Regel. Eine Diagnose mit `onsetDateTime`
@@ -55,21 +55,56 @@ import collections
 # ihre Gueltigkeit folgt einer anderen Logik.
 JAEHRLICH = ("bfarm/icd-10-gm", "bfarm/ops", "bfarm/atc", "bfarm/alpha-id")
 
-# NUR Felder, die sagen, wann die Ressource ERFASST wurde. Klinische Daten
-# (onsetDateTime, effectiveDateTime, performedDateTime, Perioden) stehen
-# absichtlich NICHT hier: Sie sagen, wann etwas geschah, und der Katalog richtet
-# sich nicht danach. Genau diese Verwechslung war der Fehler der Erstfassung.
-ERFASSUNGSFELDER = ("recordedDate", "issued", "authoredOn", "created")
+# JEDES Datum der Ressource zaehlt, und das ist Absicht. Kein einzelnes Feld
+# markiert verlaesslich den Moment des Kodierens:
+#
+#   onsetDateTime       wann es begann — der Katalog richtet sich nicht danach
+#   recordedDate        wann der Datensatz IN DIESEM SYSTEM entstand; laut
+#                       FHIR "often a system-generated date". Bei einer Migration
+#                       steht dort das Migrationsdatum, der Code ist aelter.
+#   assertedDate        wann der Asserter die Diagnose gestellt hat — dem
+#                       Kodierzeitpunkt am naechsten, aber nicht immer vorhanden
+#   meta.lastUpdated    eine spaetere Nachkodierung
+#
+# Deshalb wird gegen das SPAETESTE aller Daten geprueft: Liegt der Katalog
+# darueber, gibt es in der Zeitachse der Ressource KEINEN Moment, in dem er
+# existierte. Das ist die einzige Aussage, die sich aus der Ressource allein
+# begruenden laesst.
+DATUMSFELDER = ("onsetDateTime", "recordedDate", "effectiveDateTime",
+                "performedDateTime", "authoredOn", "occurrenceDateTime",
+                "date", "issued", "created", "deceasedDateTime")
+PERIODEN = ("onsetPeriod", "performedPeriod", "effectivePeriod")
+# Extensions, die ein Datum tragen — assertedDate ist die wichtigste.
+DATUM_EXT = ("assertedDate",)
 
 
-def erfassungsjahr(doc):
-    """Das spaeteste Jahr, in dem die Ressource nach eigener Angabe erfasst wurde.
+def spaetestes_jahr(doc):
+    """Das spaeteste Jahr, das die Ressource irgendwo nennt — inklusive
+    meta.lastUpdated und der assertedDate-Extension."""
+    jahre = []
 
-    None, wenn sie dazu nichts sagt — dann ist die Regel nicht anwendbar, und
-    Schweigen ist besser als Raten.
-    """
-    jahre = [int(doc[k][:4]) for k in ERFASSUNGSFELDER
-             if isinstance(doc.get(k), str) and re.match(r"^\d{4}", doc[k])]
+    def merke(v):
+        if isinstance(v, str) and re.match(r"^\d{4}", v):
+            jahre.append(int(v[:4]))
+
+    for k in DATUMSFELDER:
+        merke(doc.get(k))
+    for k in PERIODEN:
+        p = doc.get(k) or {}
+        merke(p.get("start")); merke(p.get("end"))
+    merke((doc.get("meta") or {}).get("lastUpdated"))
+
+    def ext(node):
+        if isinstance(node, dict):
+            url = node.get("url") or ""
+            if any(e in url for e in DATUM_EXT):
+                merke(node.get("valueDateTime") or node.get("valueDate"))
+            for v in node.values():
+                ext(v)
+        elif isinstance(node, list):
+            for v in node:
+                ext(v)
+    ext(doc)
     return max(jahre) if jahre else None
 
 
@@ -99,7 +134,7 @@ def main():
         # Bundles wiederholen nur, was als Einzelressource schon dasteht.
         if doc.get("resourceType") in ("Bundle", "ImplementationGuide"):
             continue
-        jahr = erfassungsjahr(doc)
+        jahr = spaetestes_jahr(doc)
         for c in codings(doc):
             system = c.get("system") or ""
             version = c.get("version")
@@ -108,8 +143,7 @@ def main():
             if not (isinstance(version, str) and re.fullmatch(r"\d{4}", version)):
                 continue
             if jahr is None:
-                # Kein Erfassungsdatum — nicht beurteilbar. Der haeufigste Fall,
-                # und kein Mangel: Viele Ressourcen tragen nur klinische Daten.
+                # Ueberhaupt kein Datum — nicht beurteilbar.
                 ohne_datum += 1
                 continue
             geprueft += 1
@@ -118,16 +152,15 @@ def main():
                                 system.rsplit("/", 1)[-1], version, jahr,
                                 c.get("code")))
 
-    print(f"# Katalogjahrgaenge ({geprueft} Codierungen mit Erfassungsdatum "
-          f"geprueft, {ohne_datum} ohne Erfassungsdatum uebersprungen)\n")
+    print(f"# Katalogjahrgaenge ({geprueft} datierte Codierungen geprueft, "
+          f"{ohne_datum} ohne jedes Datum uebersprungen)\n")
     if not befunde:
-        print("Kein Jahrgang liegt nach dem Erfassungsdatum seiner Ressource.")
+        print("Kein Jahrgang liegt nach allen Daten seiner Ressource.")
         sys.exit(0)
 
-    print(f"**{len(befunde)} Codierungen mit einem Katalog, der NACH dem "
-          f"selbst angegebenen Erfassungsdatum erschienen ist.** Hier widerspricht "
-          f"die Ressource sich selbst — mit einem Katalog kodiert, den es zum "
-          f"Erfassungszeitpunkt noch nicht gab.\n")
+    print(f"**{len(befunde)} Codierungen mit einem Katalog, der nach JEDEM Datum "
+          f"der Ressource erschienen ist.** In ihrer eigenen Zeitachse gibt es "
+          f"keinen Moment, in dem dieser Jahrgang existierte.\n")
     print("| Ressource | Katalog | Jahrgang | Datum | Code |")
     print("|---|---|---:|---:|---|")
     for rid, system, version, jahr, code in sorted(befunde, key=lambda x: (-int(x[2]), x[0])):
