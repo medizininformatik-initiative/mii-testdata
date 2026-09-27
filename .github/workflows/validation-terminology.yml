@@ -259,6 +259,20 @@ jobs:
       run: |
         if docker inspect nginx-tx >/dev/null 2>&1; then
           docker logs nginx-tx > /tmp/nginx-tx.log 2>&1 || true
+          # Der Body steht in einer Datei IM Container, nicht auf stdout.
+          docker cp nginx-tx:/tmp/tx-bodies.log /tmp/tx-bodies.log 2>/dev/null || true
+          # Welche Wertemengen liefen in den 60-Sekunden-Timeout?
+          if [ -s /tmp/tx-bodies.log ]; then
+            {
+              echo
+              echo "Wertemengen mit Antwortzeit >= 60 s:"
+              echo '```'
+              grep 'response=6[0-9]\.' /tmp/tx-bodies.log \
+                | grep -oE '"valueUri":"[^"]*ValueSet[^"]*"' \
+                | cut -d'"' -f4 | sort | uniq -c | sort -rn | head -12
+              echo '```'
+            } >> "$GITHUB_STEP_SUMMARY"
+          fi
           n=$(grep -cE '"(GET|POST|HEAD) ' /tmp/nginx-tx.log || true)
           {
             echo "### Terminologie-Proxy — ${{ matrix.paket.name }}"
@@ -285,7 +299,9 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: nginx-tx-${{ strategy.job-index }}
-        path: /tmp/nginx-tx.log
+        path: |
+          /tmp/nginx-tx.log
+          /tmp/tx-bodies.log
         retention-days: 7
         if-no-files-found: ignore
 
