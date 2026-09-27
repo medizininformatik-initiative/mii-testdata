@@ -843,7 +843,7 @@ Description: "ICU Observation (dataAbsentReason): Arterieller Blutdruck beim Wec
 * encounter = Reference(mii-exa-test-data-icu-encounter-1)
 * effectiveDateTime = "2024-05-06T14:00:00+02:00"
 * device = Reference(mii-exa-test-data-patient-1-icu-device-monitor-1)
-* method = $sct#17146006 "Arterial pressure monitoring, invasive method (regime/therapy)"
+* method = $sct#77938009 "Arterial pressure monitoring, invasive method"
 * bodySite = $sct#45631007 "Structure of radial artery (body structure)"
 * component[SystolicBP].code.coding[loinc] = $loinc#8480-6 "Systolic blood pressure"
 * component[SystolicBP].code.coding[sct] = $sct#271649006 "Systolic blood pressure"

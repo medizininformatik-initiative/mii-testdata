@@ -2503,7 +2503,7 @@
             {
               "code": "11527006",
               "system": "http://snomed.info/sct",
-              "display": "Structure of radial artery (body structure)"
+              "display": "Arterial system structure"
             }
           ]
         }
@@ -3431,7 +3431,7 @@
             {
               "system": "http://snomed.info/sct",
               "code": "11527006",
-              "display": "Structure of radial artery (body structure)"
+              "display": "Arterial system structure"
             }
           ]
         },
@@ -3643,7 +3643,7 @@
             {
               "system": "http://snomed.info/sct",
               "code": "430160002",
-              "display": "Structure of branch of pulmonary artery (body structure)"
+              "display": "Entire vein of lung"
             }
           ]
         },

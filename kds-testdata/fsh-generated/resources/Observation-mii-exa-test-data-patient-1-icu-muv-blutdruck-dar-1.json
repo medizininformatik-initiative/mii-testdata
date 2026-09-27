@@ -160,9 +160,9 @@
   "method": {
     "coding": [
       {
-        "code": "17146006",
+        "code": "77938009",
         "system": "http://snomed.info/sct",
-        "display": "Arterial pressure monitoring, invasive method (regime/therapy)"
+        "display": "Arterial pressure monitoring, invasive method"
       }
     ]
   },

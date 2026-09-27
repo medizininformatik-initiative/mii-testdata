@@ -54,7 +54,7 @@ Description: "MII-ICU Puls: 76/min (palpatorisch A. radialis)"
 * code.coding[sct] = $sct#8499008 "Pulse, function (observable entity)"
 * code.coding[IEEE-11073] = $11073-10101#149514
 * valueQuantity = 76 '/min' "beats per minute"
-* bodySite = $sct#11527006 "Structure of radial artery (body structure)"
+* bodySite = $sct#11527006 "Arterial system structure"
 
 // Herzzeitvolumen: 4.8 L/min
 Instance: mii-exa-test-data-isik-vitalparameter-hzv-1
@@ -200,7 +200,7 @@ Description: "MII-ICU O2-Saettigung im arteriellen Blut (Pulsoxymetrie): 96 %"
 * code.coding[loinc] = $loinc#59408-5 "Oxygen saturation in Arterial blood by Pulse oximetry"
 * code.coding[IEEE-11073] = $11073-10101#150324
 * valueQuantity = 96 '%' "percent"
-* bodySite = $sct#11527006 "Structure of radial artery (body structure)"
+* bodySite = $sct#11527006 "Arterial system structure"
 
 // O2-Saettigung praeduktal (Pulsoxymetrie, rechte Hand): 97 %
 Instance: mii-exa-test-data-isik-vitalparameter-o2sat-praeduktal-1
@@ -236,7 +236,7 @@ Description: "MII-ICU Pulmonalarterieller Wedge-Druck: 12 mmHg"
 * code.coding[loinc] = $loinc#75994-4 "Pulmonary artery Wedge pressure"
 * code.coding[IEEE-11073] = $11073-10101#150052
 * valueQuantity = 12 'mm[Hg]' "millimeter Mercury column"
-* bodySite = $sct#430160002 "Structure of branch of pulmonary artery (body structure)"
+* bodySite = $sct#430160002 "Entire vein of lung"
 
 // Pulmonalvaskulaerer Widerstandsindex: 220 dyn.s/cm5/m2
 Instance: mii-exa-test-data-isik-vitalparameter-pvri-1

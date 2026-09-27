@@ -139,7 +139,7 @@ Description: "Kardio Raucherstatus: Ex-Raucher, 30 Packungsjahre"
 * component[zigarettenProTag].valueQuantity = 20 '{cigarettes-per-day}' "{cigarettes-per-day}"
 * component[rauchbeginn].code = $sct20260701#266929003 "Smoking started (life style)"
 * component[rauchbeginn].valueDateTime = "1975-01-01"
-* component[rauchdauer].code = $sct20260701#228487000 "Time since stopped smoking (observable entity)"
+* component[rauchdauer].code = $sct20260701#228487000 "Total time smoked"
 * component[rauchdauer].valueQuantity = 30 'a' "year"
 
 // Geraeteprogrammierung: Brady-Modus VVI des implantierten ICD
