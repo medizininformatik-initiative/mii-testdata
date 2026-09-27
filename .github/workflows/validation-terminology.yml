@@ -248,9 +248,46 @@ jobs:
         echo "### ${{ matrix.paket.name }} — $N Errors mit SU-TermServ" >> "$GITHUB_STEP_SUMMARY"
         python3 scripts/advisor-rules.py validation-tx.json --top 8 >> "$GITHUB_STEP_SUMMARY"
 
-    - name: Stop proxy
+    # Das Zugriffsprotokoll des Proxys landet im Container, nicht im Job-Log.
+    # Ohne diesen Schritt ist nicht feststellbar, ob die Keepalive-Einstellung in
+    # su-termserv-nginx.conf ueberhaupt wirkt — genau die Frage, die dieser Job
+    # beantworten soll. Ein erster Versuch dieser Statistik existierte in
+    # b916d78f und ist beim Umbau auf die Matrix (060429e3) verlorengegangen;
+    # daraufhin liess sich die erste Messung nicht deuten.
+    - name: Proxy-Statistik und Abbau
       if: always()
-      run: docker rm -f nginx-tx 2>/dev/null || true
+      run: |
+        if docker inspect nginx-tx >/dev/null 2>&1; then
+          docker logs nginx-tx > /tmp/nginx-tx.log 2>&1 || true
+          n=$(grep -cE '"(GET|POST|HEAD) ' /tmp/nginx-tx.log || true)
+          {
+            echo "### Terminologie-Proxy — ${{ matrix.paket.name }}"
+            echo
+            echo "$n Anfragen. Nach Status:"
+            echo '```'
+            grep -oE '" [0-9]{3} ' /tmp/nginx-tx.log | tr -d '" ' | sort | uniq -c | sort -rn | head
+            echo '```'
+            echo "Verbindungsaufbau (connect=): 0.000 heisst wiederverwendet."
+            echo '```'
+            null=$(grep -cE 'connect=0\.000' /tmp/nginx-tx.log || true)
+            neu=$(grep -oE 'connect=[0-9.]+' /tmp/nginx-tx.log | grep -vc '=0\.000' || true)
+            echo "wiederverwendet: $null    neu aufgebaut: $neu"
+            echo "Summe Verbindungsaufbau in Sekunden:"
+            grep -oE 'connect=[0-9.]+' /tmp/nginx-tx.log | cut -d= -f2 \
+              | awk '{s+=$1} END {printf "  %.1f s\n", s}'
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+          docker rm -f nginx-tx >/dev/null 2>&1 || true
+        fi
+
+    - name: Upload proxy log
+      if: always()
+      uses: actions/upload-artifact@v4
+      with:
+        name: nginx-tx-${{ strategy.job-index }}
+        path: /tmp/nginx-tx.log
+        retention-days: 7
+        if-no-files-found: ignore
 
     - name: Upload report
       if: always()
