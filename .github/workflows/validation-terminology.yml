@@ -25,9 +25,23 @@
 # ähnlicher Groesse).
 name: FHIR validation (terminology)
 
+# KEIN `push`-Auslöser, und das ist eine Korrektur aus Beobachtung.
+#
+# Dieser Lauf braucht Stunden, und die concurrency-Gruppe unten laesst nur
+# einen zu. Mit `push` stellte jeder Commit auf main einen weiteren in die
+# Schlange, und weil GitHub je Gruppe nur EINEN Wartenden haelt und aeltere
+# Wartende verwirft, verdraengten sich die Laeufe gegenseitig: Zwischen
+# 2026-09-26 20:29 und 2026-09-27 06:30 kam KEIN einziger Lauf zum Ergebnis —
+# fuenf abgebrochen, einer zehn Stunden in `queued` haengend, und der Cron um
+# 02:17 erzeugte ueberhaupt keinen Lauf. Das Tueckische daran: Ein Lauf, der
+# nicht startet, erzeugt keinen roten Status und keine Meldung. Er ist
+# unsichtbar.
+#
+# Auf einem Push nach main ist der schnelle Lauf (validation.yml) ohnehin schon
+# durch; der terminologiegestuetzte Bericht ist eine naechtliche Angelegenheit.
+# Bei PRs bleibt er, weil sie selten sind und Terminologie-Rueckmeldung dort
+# etwas wert ist — dafuer war die inkrementelle Paketauswahl gedacht.
 on:
-  push:
-    branches: [main]
   pull_request:
   workflow_dispatch:
   schedule:
@@ -47,7 +61,7 @@ env:
   VALIDATOR_VERSION: 6.9.11
 
 jobs:
-  # INKREMENTELL bei Push und PR, VOLLSTAENDIG naechtlich und auf Abruf.
+  # INKREMENTELL bei PRs, VOLLSTAENDIG naechtlich und auf Abruf.
   #
   # Das ist zulaessig, weil ein Bundle seine Ressourcen vollstaendig einbettet:
   # Wer eine Ressource aendert, aendert auch jedes Bundle, das sie enthaelt —
@@ -62,7 +76,8 @@ jobs:
   # scripts/tx-matrix.py, damit die Regel an einer Stelle gepflegt wird.
   #
   # Erst dadurch ist dieser Job auf einem PR ueberhaupt bezahlbar: ein
-  # geaendertes Bundle kostet rund eine Viertelstunde statt neun Stunden.
+  # geaendertes Bundle kostet rund eine Viertelstunde statt Stunden. Auf Push
+  # laeuft er gar nicht mehr — siehe die Begruendung am `on:`-Block.
   tx-pakete:
     name: Arbeitspakete bestimmen
     if: ${{ vars.ENABLE_VALIDATION != 'false' }}
