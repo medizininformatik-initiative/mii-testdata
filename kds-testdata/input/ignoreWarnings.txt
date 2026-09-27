@@ -1,0 +1,56 @@
+# Unterdrueckte QA-Meldungen des IG Publishers.
+#
+# WOZU: Der Publisher baut seinen QA-Bericht als EINEN Java-String und schreibt
+# ihn dann als Datei. Am 2026-09-26 ist er daran gescheitert:
+#
+#   java.lang.NegativeArraySizeException: -1699672804
+#     at java.lang.String.encodeUTF8_UTF16(String.java:1288)
+#     at FileUtilities.stringToFile(FileUtilities.java:94)
+#     at ValidationPresenter.genQAHtml(ValidationPresenter.java:910)
+#
+# -1699672804 + 2^32 = 2.595.294.492 — der String hat Integer.MAX_VALUE
+# gerissen. Bei 1369 Beispielressourcen und 22.883 Meldungen ist das erreichbar.
+#
+# WIRKUNG, gemessen am selben Bestand gegen denselben Terminologieserver:
+#
+#   ohne diese Datei   ~2.600 MB QA-HTML   NegativeArraySizeException
+#   mit dieser Datei       28,40 MB        durchgelaufen, 6:42
+#
+# Faktor 91 aus vier Message-Ids. Der Bericht endet mit
+# Errors 3711, Warnings 6712, Info 4480 — die unterdrueckten Klassen
+# erscheinen darin als je eine Zeile mit Nutzungszaehler.
+#
+# WIE ES WIRKT: `filterMessages` in ValidationPresenter prueft
+# `canSuppressErrors || !message.getLevel().isError()` und wird aus
+# `getMatchingMessages` mit canSuppressErrors=false aufgerufen. Warnungen und
+# Hinweise verschwinden damit aus dem Bericht; ERRORS NICHT — der Error-Zweig
+# tut ausdruecklich nichts ("we're just letting the message get a comment
+# here"). Unterdrueckte Meldungen erscheinen nur noch als eine Zeile je Regel
+# mit Nutzungszaehler, nicht mehr je Fundstelle. Gematcht wird unter anderem
+# gegen `getMessageId()`, deshalb stehen hier Message-Ids und keine Texte.
+#
+# AUSWAHL: Nur Klassen, die eine bewusste Entscheidung dieser Testdaten
+# betreffen und NICHT davon abhaengen, ob ein Terminologieserver zur Verfuegung
+# steht. Die terminologiebezogenen Klassen sind absichtlich nicht dabei: Sie
+# sehen mit und ohne Server voellig verschieden aus, und der Publisher laeuft
+# mit einem. Wer hier etwas ergaenzt, sollte die Zahl aus einem Lauf MIT Server
+# nehmen.
+
+# "A resource should have narrative" — Testdaten tragen bewusst keine
+# erzaehlerische Darstellung; sie sind zum Laden bestimmt, nicht zum Lesen.
+# 2463 Fundstellen.
+dom-6
+
+# Protokoll der Profil-Zuordnung, kein Befund: Der Validator berichtet, gegen
+# welche Profile er eine Ressource gehalten hat. 2251 Fundstellen.
+Details_for__matching_against_Profile_
+
+# Die GUTARTIGE Variante der Sprachpruefung — kein Display in der
+# Kontextsprache vorhanden, also ist keines falsch. Die schaerfere Variante
+# (…_ERR) bleibt sichtbar, und falsche Displays faengt ohnehin
+# scripts/check-displays.py als Gate ab. 3052 Fundstellen.
+NO_VALID_DISPLAY_FOUND_NONE_FOR_LANG_OK
+
+# Empfehlung, keine Pflicht: Nicht jede Observation der Testdaten traegt einen
+# performer, und wo sie es nicht tut, ist das Absicht. 913 Fundstellen.
+All_observations_should_have_a_performer
