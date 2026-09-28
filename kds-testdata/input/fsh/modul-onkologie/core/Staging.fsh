@@ -66,7 +66,7 @@ Description: "Onkologie Test ECOG - 1"
 * encounter = Reference(mii-exa-test-data-onko-encounter-1)
 * effectiveDateTime = "2021-06-15"
 * valueCodeableConcept.coding[obds] = $mii-cs-onko-allgemeiner-leistungszustand-ecog#1 "Einschränkung bei körperlicher Anstrengung, aber gehfähig; leichte körperliche Arbeit bzw. Arbeit im Sitzen (z. B. leichte Hausarbeit oder Büroarbeit) möglich (70 - 80 % nach Karnofsky)"
-* valueCodeableConcept.coding[loinc] = $LNC#LA9623-5 "Restricted in physically strenuous activity"
+* valueCodeableConcept.coding[loinc] = $LNC#LA9623-5 "Restricted in physically strenuous activity but ambulatory and able to carry out work of a light or sedentary nature, e.g., light house work, office work"
 * focus = Reference(mii-exa-test-data-onko-diagnose-1)
 
 // Allgemeiner Leistungszustand Karnofsky (Chapter 12)
@@ -83,7 +83,7 @@ Description: "Onkologie Test Karnofsky - 80%"
 * encounter = Reference(mii-exa-test-data-onko-encounter-1)
 * effectiveDateTime = "2021-06-15"
 * valueCodeableConcept.coding[obds] = $mii-cs-onko-allgemeiner-leistungszustand-karnofsky#80% "80%"
-* valueCodeableConcept.coding[loinc] = $LNC#LA29177-5 "Normal activity with effort"
+* valueCodeableConcept.coding[loinc] = $LNC#LA29177-5 "Normal activity with effort; some signs or symptoms of disease"
 * focus = Reference(mii-exa-test-data-onko-diagnose-1)
 
 // ASA Klassifikation (Chapter 12)

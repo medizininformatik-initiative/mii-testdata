@@ -49,7 +49,7 @@
       {
         "system": "http://loinc.org",
         "code": "98979-8",
-        "display": "Glomerular filtration rate/1.73 sq M.predicted [Volume Rate/Area] in Serum, Plasma or Blood by Creatinine-based formula (CKD-EPI 2021)"
+        "display": "Glomerular filtration rate [Volume Rate/Area] in Serum, Plasma or Blood by Creatinine-based formula (CKD-EPI 2021)/1.73 sq M"
       },
       {
         "system": "http://snomed.info/sct",

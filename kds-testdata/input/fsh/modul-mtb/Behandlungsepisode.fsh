@@ -66,7 +66,7 @@ Description: "Test instance for MTB primary tumor diagnosis with all MS elements
 * verificationStatus.coding[primaertumorDiagnosesicherung][+] = $mii-cs-onko-primaertumor-diagnosesicherung#7
 * code.coding[icd10-gm] = $ICD10GM#C34.1 "Bösartige Neubildung: Oberlappen (-Bronchus)"
 * code.coding[icd10-gm].version = "2024"
-* code.coding[icd10-gm].extension[Diagnosesicherheit].valueCoding = $diagnosesicherheit#G "Gesicherte Diagnose"
+* code.coding[icd10-gm].extension[Diagnosesicherheit].valueCoding = $diagnosesicherheit#G "gesicherte Diagnose"
 * code.coding[icd10-gm].extension[Seitenlokalisation].valueCoding = $seitenlokalisation#R "rechts"
 * code.coding[icd10-gm].extension[Mehrfachcodierungs-Kennzeichen].valueCoding = $mehrfachcodierungs-kennzeichen#"!"
 * bodySite = $ICDO3#C34.1 "Lungenoberlappen"
@@ -82,7 +82,7 @@ Description: "Test instance for MTB primary tumor diagnosis with all MS elements
 * note.text = "Erstdiagnose eines EGFR-mutierten NSCLC des rechten Oberlappens."
 * evidence.code = $SCT#49727002 "Cough (finding)"
 * evidence.detail = Reference(mii-exa-test-data-mtb-evidenz-liste-1)
-* extension[morphology-behavior-icdo3].valueCodeableConcept.coding = $ICDO3#8140/3 "Adenocarcinoma, NOS"
+* extension[morphology-behavior-icdo3].valueCodeableConcept.coding = $ICDO3#8140/3 "Adenokarzinom o.n.A."
 * extension[morphology-behavior-icdo3].valueCodeableConcept.text = "Adenokarzinom o.n.A."
 * extension[dueTo].valueCodeableConcept = $SCT#77176002 "Smoker (finding)"
 * extension[occurredFollowing].valueCodeableConcept = $SCT#65958008 "Chronic disease of respiratory system (disorder)"
@@ -149,12 +149,12 @@ Description: "Kleinzellige Transformation des EGFR-mutierten Adenokarzinoms unte
 * verificationStatus.coding[primaertumorDiagnosesicherung][+] = $mii-cs-onko-primaertumor-diagnosesicherung#7 "histologische Untersuchung eines Primärtumors"
 * code.coding[icd10-gm] = $ICD10GM#C34.1 "Bösartige Neubildung: Oberlappen (-Bronchus)"
 * code.coding[icd10-gm].version = "2024"
-* code.coding[icd10-gm].extension[Diagnosesicherheit].valueCoding = $diagnosesicherheit#G "Gesicherte Diagnose"
+* code.coding[icd10-gm].extension[Diagnosesicherheit].valueCoding = $diagnosesicherheit#G "gesicherte Diagnose"
 * code.coding[icd10-gm].extension[Seitenlokalisation].valueCoding = $seitenlokalisation#R "rechts"
 * bodySite = $ICDO3#C34.1 "Lungenoberlappen"
 * bodySite.coding[snomed-ct] = $SCT#45653009 "Structure of upper lobe of lung (body structure)"
 * bodySite.coding[snomed-ct].version = "http://snomed.info/sct/900000000000207008/version/20240201"
-* extension[morphology-behavior-icdo3].valueCodeableConcept.coding = $ICDO3#8041/3 "Small cell carcinoma, NOS"
+* extension[morphology-behavior-icdo3].valueCodeableConcept.coding = $ICDO3#8041/3 "Kleinzelliges Karzinom o.n.A."
 * extension[morphology-behavior-icdo3].valueCodeableConcept.text = "Kleinzelliges Karzinom o.n.A."
 // Hervorgegangen aus dem EGFR-mutierten Adenokarzinom der Erstdiagnose
 * extension[transformationVon].valueReference = Reference(mii-exa-test-data-mtb-diagnose-primaertumor-1)

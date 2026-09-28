@@ -31,7 +31,7 @@ Description: "ICU Specimen: Urinprobe aus dem Dauerkatheter-Sammelsystem (Bilanz
 * subject = Reference(mii-exa-test-data-icu-patient-1)
 * receivedTime = "2024-05-05T08:30:00+02:00"
 * collection.collectedDateTime = "2024-05-05T08:00:00+02:00"
-* collection.bodySite = $sct#89837001 "Structure of urinary bladder"
+* collection.bodySite = $sct#89837001 "Urinary bladder structure"
 
 Instance: mii-exa-test-data-patient-1-icu-spec-stuhl-1
 InstanceOf: Specimen
@@ -51,11 +51,11 @@ Usage: #example
 Description: "ICU Specimen: Magensaft aus der Ableitung ueber die Magensonde (Bilanz Ausfuhr Magensonde)"
 * insert IcuSpecimenBase
 * identifier.value = "icu-spec-magensaft-1"
-* type = $sct#258459007 "Gastric fluid"
+* type = $sct#258459007 "Gastric fluid specimen"
 * subject = Reference(mii-exa-test-data-icu-patient-1)
 * receivedTime = "2024-05-05T08:30:00+02:00"
 * collection.collectedDateTime = "2024-05-05T08:00:00+02:00"
-* collection.bodySite = $sct#69695003 "Structure of stomach"
+* collection.bodySite = $sct#69695003 "Stomach structure"
 
 Instance: mii-exa-test-data-patient-1-icu-spec-galle-1
 InstanceOf: Specimen
@@ -75,7 +75,7 @@ Usage: #example
 Description: "ICU Specimen: Pankreassekret aus der Pankreasdrainage (Bilanz Ausfuhr Pankreasdrainage)"
 * insert IcuSpecimenBase
 * identifier.value = "icu-spec-pankreassekret-1"
-* type = $sct#119343002 "Pancreatic fluid"
+* type = $sct#119343002 "Pancreatic fluid specimen"
 * subject = Reference(mii-exa-test-data-icu-patient-1)
 * receivedTime = "2024-05-05T08:30:00+02:00"
 * collection.collectedDateTime = "2024-05-05T08:00:00+02:00"
@@ -87,7 +87,7 @@ Usage: #example
 Description: "ICU Specimen: Drainagesekret (generische Drainage und OP-Drainage)"
 * insert IcuSpecimenBase
 * identifier.value = "icu-spec-drainagesekret-1"
-* type = $sct#258455001 "Drainage fluid"
+* type = $sct#258455001 "Drainage fluid specimen"
 * subject = Reference(mii-exa-test-data-icu-patient-1)
 * receivedTime = "2024-05-05T08:30:00+02:00"
 * collection.collectedDateTime = "2024-05-05T08:00:00+02:00"

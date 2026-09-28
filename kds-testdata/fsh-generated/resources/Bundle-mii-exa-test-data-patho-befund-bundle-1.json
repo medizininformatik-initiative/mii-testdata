@@ -206,7 +206,7 @@
                 {
                   "system": "http://loinc.org",
                   "code": "22634-0",
-                  "display": "Pathology report gross observation"
+                  "display": "Pathology report gross observation Narrative"
                 }
               ]
             },
@@ -236,7 +236,7 @@
                 {
                   "system": "http://loinc.org",
                   "code": "22635-7",
-                  "display": "Pathology report microscopic observation"
+                  "display": "Pathology report microscopic observation Narrative Other stain"
                 }
               ]
             },
@@ -296,7 +296,7 @@
                 {
                   "system": "http://loinc.org",
                   "code": "22637-3",
-                  "display": "Pathology report diagnosis"
+                  "display": "Pathology report final diagnosis Narrative"
                 }
               ]
             },
@@ -1565,7 +1565,7 @@
               {
                 "code": "399068003",
                 "system": "http://snomed.info/sct",
-                "display": "Malignant tumor of prostate (disorder)"
+                "display": "Malignant neoplasm of prostate"
               }
             ]
           }
@@ -1592,7 +1592,7 @@
             {
               "system": "http://loinc.org",
               "code": "60568-3",
-              "display": "Pathology Synoptic report"
+              "display": "Pathology synoptic report"
             }
           ]
         },
@@ -2480,7 +2480,7 @@
             {
               "code": "1663004",
               "system": "http://snomed.info/sct",
-              "display": "Moderately differentiated (qualifier value)"
+              "display": "G2 grade"
             }
           ],
           "text": "G2: mäßig differenziert"

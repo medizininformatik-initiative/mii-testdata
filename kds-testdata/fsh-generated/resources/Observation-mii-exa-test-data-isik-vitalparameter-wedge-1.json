@@ -39,7 +39,7 @@
       {
         "system": "http://loinc.org",
         "code": "75994-4",
-        "display": "Pulmonary artery Wedge pressure"
+        "display": "Pulmonary artery wedge pressure"
       },
       {
         "system": "urn:iso:std:iso:11073:10101",

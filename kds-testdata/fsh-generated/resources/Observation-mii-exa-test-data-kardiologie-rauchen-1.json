@@ -65,7 +65,7 @@
           {
             "system": "http://loinc.org",
             "code": "63640-7",
-            "display": "How many cigarettes do you smoke per day now"
+            "display": "How many cigarettes per day do, or did, you smoke"
           }
         ]
       },
@@ -83,7 +83,7 @@
             "system": "http://snomed.info/sct",
             "code": "266929003",
             "version": "http://snomed.info/sct/900000000000207008/version/20260701",
-            "display": "Smoking started (life style)"
+            "display": "Smoking started"
           }
         ]
       },

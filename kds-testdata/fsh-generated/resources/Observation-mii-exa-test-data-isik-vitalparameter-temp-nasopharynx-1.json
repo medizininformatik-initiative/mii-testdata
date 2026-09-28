@@ -34,7 +34,7 @@
       {
         "system": "http://snomed.info/sct",
         "code": "698831002",
-        "display": "Core body temperature measured at nasopharynx (observable entity)"
+        "display": "Nasopharyngeal temperature"
       },
       {
         "system": "http://loinc.org",

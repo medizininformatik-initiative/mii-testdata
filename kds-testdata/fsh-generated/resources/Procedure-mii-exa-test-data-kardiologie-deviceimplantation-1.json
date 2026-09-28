@@ -24,7 +24,7 @@
       "valueCoding": {
         "system": "http://snomed.info/sct",
         "code": "262202000",
-        "display": "Therapeutic (qualifier value)"
+        "display": "Therapeutic"
       }
     }
   ],
@@ -34,7 +34,7 @@
         "system": "http://snomed.info/sct",
         "code": "395218007",
         "version": "http://snomed.info/sct/900000000000207008/version/20260701",
-        "display": "Implantation of cardiac defibrillator (procedure)"
+        "display": "Implantation of internal cardiac defibrillator"
       },
       {
         "extension": [
@@ -77,7 +77,7 @@
             "code": "129338005",
             "system": "http://snomed.info/sct",
             "version": "http://snomed.info/sct/900000000000207008/version/20260701",
-            "display": "Implantation - action (qualifier value)"
+            "display": "Surgical implantation - action"
           }
         ]
       }

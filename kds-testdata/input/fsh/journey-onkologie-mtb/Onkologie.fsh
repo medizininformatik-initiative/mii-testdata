@@ -20,7 +20,7 @@ Description: "Onko Diagnose: Adenokarzinom des Colon sigmoideum, Erstdiagnose 20
 * verificationStatus.coding[primaertumorDiagnosesicherung] = $mii-cs-onko-primaertumor-diagnosesicherung#7 "histologische Untersuchung eines Primärtumors"
 * code.coding[icd10-gm] = $ICD10GM|2024#C18.7 "Bösartige Neubildung: Colon sigmoideum"
 * code.coding[icd10-gm].version = "2024"
-* code.coding[icd10-gm].extension[Diagnosesicherheit].valueCoding = $diagnosesicherheit#G "Gesicherte Diagnose"
+* code.coding[icd10-gm].extension[Diagnosesicherheit].valueCoding = $diagnosesicherheit#G "gesicherte Diagnose"
 * subject = Reference(mii-exa-test-data-patient-14)
 * encounter = Reference(mii-exa-test-data-patient-14-encounter-1)
 * recordedDate = "2024-03-06"
@@ -212,7 +212,7 @@ Description: "Onko ECOG: 1 (Patient 14, vor Therapiebeginn)"
 * encounter = Reference(mii-exa-test-data-patient-14-encounter-2)
 * effectiveDateTime = "2024-04-25"
 * valueCodeableConcept.coding[obds] = $mii-cs-onko-allgemeiner-leistungszustand-ecog#1 "Einschränkung bei körperlicher Anstrengung, aber gehfähig; leichte körperliche Arbeit bzw. Arbeit im Sitzen (z. B. leichte Hausarbeit oder Büroarbeit) möglich (70 - 80 % nach Karnofsky)"
-* valueCodeableConcept.coding[loinc] = $LNC#LA9623-5 "Restricted in physically strenuous activity"
+* valueCodeableConcept.coding[loinc] = $LNC#LA9623-5 "Restricted in physically strenuous activity but ambulatory and able to carry out work of a light or sedentary nature, e.g., light house work, office work"
 * focus = Reference(mii-exa-test-data-patient-14-onko-diagnose-1)
 
 // ----------------------------------------------------------------------------

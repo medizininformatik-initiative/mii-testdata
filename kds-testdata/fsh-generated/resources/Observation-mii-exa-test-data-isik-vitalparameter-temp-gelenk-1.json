@@ -34,7 +34,7 @@
       {
         "system": "http://snomed.info/sct",
         "code": "250124002",
-        "display": "Joint temperature (observable entity)"
+        "display": "Joint temperature"
       },
       {
         "system": "http://loinc.org",

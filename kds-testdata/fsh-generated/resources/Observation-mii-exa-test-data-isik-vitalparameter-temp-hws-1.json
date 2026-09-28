@@ -34,7 +34,7 @@
       {
         "system": "http://snomed.info/sct",
         "code": "364419004",
-        "display": "Cervical spine temperature (observable entity)"
+        "display": "Cervical spine temperature"
       },
       {
         "system": "http://loinc.org",
@@ -54,7 +54,7 @@
       {
         "system": "http://snomed.info/sct",
         "code": "122494005",
-        "display": "Cervical vertebral column structure (body structure)"
+        "display": "Structure of cervical vertebral column"
       }
     ]
   },

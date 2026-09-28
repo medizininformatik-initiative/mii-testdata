@@ -141,7 +141,7 @@ Description: "ISiK Koerperkerntemperatur: 37.8 Grad Celsius (rektal)"
 * category[VSCat] = $observation-category#vital-signs
 * code.coding[loinc] = $loinc#8310-5 "Body temperature"
 * code.coding[coretemp-loinc] = $loinc#8329-5 "Body temperature - Core"
-* code.coding[snomed] = $sct#307047009 "Rectal temperature (observable entity)"
+* code.coding[snomed] = $sct#307047009 "Rectal temperature"
 * subject = Reference(mii-exa-test-data-isik-vitalparameter-patient-1)
 * encounter = Reference(mii-exa-test-data-isik-vitalparameter-encounter-1)
 * effectiveDateTime = "2026-05-12T08:10:00+02:00"

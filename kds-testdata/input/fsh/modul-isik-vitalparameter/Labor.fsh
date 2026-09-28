@@ -60,7 +60,7 @@ InstanceOf: https://gematik.de/fhir/isik/StructureDefinition/ISiKLaboruntersuchu
 Usage: #example
 Description: "ISiK Laboruntersuchung GFR: 78 mL/min/1.73m2 (CKD-EPI 2021)"
 * insert IsikLaborBase(ISIK-VITAL-LAB-002)
-* code.coding[loinc] = $loinc#98979-8 "Glomerular filtration rate/1.73 sq M.predicted [Volume Rate/Area] in Serum, Plasma or Blood by Creatinine-based formula (CKD-EPI 2021)"
+* code.coding[loinc] = $loinc#98979-8 "Glomerular filtration rate [Volume Rate/Area] in Serum, Plasma or Blood by Creatinine-based formula (CKD-EPI 2021)/1.73 sq M"
 * code.coding[snomed] = $sct#80274001 "Glomerular filtration rate (observable entity)"
 * code.text = "eGFR (CKD-EPI 2021)"
 * valueQuantity = 78 'mL/min/(1.73)' "milliliter pro Minute pro Koerperoberflaeche von 1,73 m2"

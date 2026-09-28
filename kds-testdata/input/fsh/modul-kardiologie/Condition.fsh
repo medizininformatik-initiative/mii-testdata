@@ -23,7 +23,7 @@ Description: "Kardio Diagnose: Akuter transmuraler Myokardinfarkt der Vorderwand
 * code.coding[icd10-gm].extension[1].valueCoding = $mehrfachcodierungs-kennzeichen#! "!"
 * code.coding[sct] = $sct20260701#22298006 "Myocardial infarction (disorder)"
 * severity = $sct20260701#24484000 "Severe (severity modifier) (qualifier value)"
-* bodySite.coding[snomed-ct] = $sct20260701#87878005 "Left ventricular structure (body structure)"
+* bodySite.coding[snomed-ct] = $sct20260701#87878005 "Left cardiac ventricular structure"
 * subject = Reference(mii-exa-test-data-kardiologie-patient-1)
 * encounter = Reference(mii-exa-test-data-kardiologie-encounter-1)
 * recorder.display = "Facharzt fuer Kardiologie"

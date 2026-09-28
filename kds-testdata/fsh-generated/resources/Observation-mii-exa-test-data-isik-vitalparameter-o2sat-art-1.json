@@ -34,7 +34,7 @@
       {
         "system": "http://snomed.info/sct",
         "code": "442476006",
-        "display": "Oxygen saturation in arterial blood (observable entity)"
+        "display": "Arterial oxygen saturation"
       },
       {
         "system": "http://loinc.org",

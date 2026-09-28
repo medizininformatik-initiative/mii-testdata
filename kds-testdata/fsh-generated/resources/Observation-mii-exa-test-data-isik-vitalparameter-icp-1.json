@@ -39,7 +39,7 @@
       {
         "system": "http://loinc.org",
         "code": "60956-0",
-        "display": "Intracranial pressure"
+        "display": "Intracranial pressure (ICP)"
       },
       {
         "system": "urn:iso:std:iso:11073:10101",

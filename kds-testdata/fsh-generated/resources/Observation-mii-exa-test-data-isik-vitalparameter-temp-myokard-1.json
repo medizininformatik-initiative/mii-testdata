@@ -43,7 +43,7 @@
       {
         "system": "http://loinc.org",
         "code": "61009-7",
-        "display": "Myocardium temperature"
+        "display": "Myocardial temperature"
       }
     ]
   },

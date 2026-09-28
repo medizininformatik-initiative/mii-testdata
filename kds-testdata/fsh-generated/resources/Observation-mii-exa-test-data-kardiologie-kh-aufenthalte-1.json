@@ -36,7 +36,7 @@
             "system": "http://snomed.info/sct",
             "code": "406524005",
             "version": "http://snomed.info/sct/900000000000207008/version/20260701",
-            "display": "Reason for visit diagnosis (contextual qualifier) (qualifier value)"
+            "display": "Reason for visit diagnosis"
           }
         ]
       },

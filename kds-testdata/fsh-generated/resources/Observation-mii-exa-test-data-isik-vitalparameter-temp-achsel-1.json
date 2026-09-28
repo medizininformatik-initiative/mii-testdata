@@ -44,7 +44,7 @@
       {
         "system": "http://snomed.info/sct",
         "code": "415882003",
-        "display": "Axillary temperature (observable entity)"
+        "display": "Axillary temperature"
       },
       {
         "system": "http://loinc.org",
@@ -64,7 +64,7 @@
       {
         "system": "http://snomed.info/sct",
         "code": "91470000",
-        "display": "Axillary fossa structure (body structure)"
+        "display": "Axillary region structure"
       }
     ]
   },

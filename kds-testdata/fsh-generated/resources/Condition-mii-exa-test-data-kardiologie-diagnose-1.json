@@ -61,7 +61,7 @@
           "system": "http://snomed.info/sct",
           "code": "87878005",
           "version": "http://snomed.info/sct/900000000000207008/version/20260701",
-          "display": "Left ventricular structure (body structure)"
+          "display": "Left cardiac ventricular structure"
         }
       ]
     }

@@ -34,7 +34,7 @@
       {
         "system": "http://loinc.org",
         "code": "76297-1",
-        "display": "Stroke volume index"
+        "display": "Left ventricular Stroke volume index"
       },
       {
         "system": "urn:iso:std:iso:11073:10101",

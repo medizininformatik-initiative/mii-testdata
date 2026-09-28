@@ -24,7 +24,7 @@
         {
           "code": "69695003",
           "system": "http://snomed.info/sct",
-          "display": "Structure of stomach"
+          "display": "Stomach structure"
         }
       ]
     }
@@ -35,7 +35,7 @@
       {
         "code": "258459007",
         "system": "http://snomed.info/sct",
-        "display": "Gastric fluid"
+        "display": "Gastric fluid specimen"
       }
     ]
   },

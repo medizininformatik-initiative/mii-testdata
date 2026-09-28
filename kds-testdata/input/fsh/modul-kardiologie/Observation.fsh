@@ -78,7 +78,7 @@ Description: "Kardio Anzahl KH-Aufenthalte wegen Herzinsuffizienz: 2 in den letz
 * effectivePeriod.start = "2024-03-10"
 * effectivePeriod.end = "2025-03-10"
 * valueInteger = 2
-* component[Grund].code = $sct20260701#406524005 "Reason for visit diagnosis (contextual qualifier) (qualifier value)"
+* component[Grund].code = $sct20260701#406524005 "Reason for visit diagnosis"
 * component[Grund].valueCodeableConcept = $sct20260701#84114007 "Heart failure (disorder)"
 
 // Atherosklerotisches Erstereignis (KHK, Erstdiagnose 03/2020)
@@ -135,9 +135,9 @@ Description: "Kardio Raucherstatus: Ex-Raucher, 30 Packungsjahre"
 * component[packungsjahre].code = $sct20260701#401201003 "Cigarette pack-years (observable entity)"
 * component[packungsjahre].valueQuantity = 30 '{pack-years}' "{pack-years}"
 * component[packungsjahre].valueQuantity.comparator = #>=
-* component[zigarettenProTag].code = $loinc#63640-7 "How many cigarettes do you smoke per day now"
+* component[zigarettenProTag].code = $loinc#63640-7 "How many cigarettes per day do, or did, you smoke"
 * component[zigarettenProTag].valueQuantity = 20 '{cigarettes-per-day}' "{cigarettes-per-day}"
-* component[rauchbeginn].code = $sct20260701#266929003 "Smoking started (life style)"
+* component[rauchbeginn].code = $sct20260701#266929003 "Smoking started"
 * component[rauchbeginn].valueDateTime = "1975-01-01"
 * component[rauchdauer].code = $sct20260701#228487000 "Total time smoked"
 * component[rauchdauer].valueQuantity = 30 'a' "year"

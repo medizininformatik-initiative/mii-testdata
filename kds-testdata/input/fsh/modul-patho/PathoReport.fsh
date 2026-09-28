@@ -11,7 +11,7 @@ Description: "Pathologiebericht für die 2-Stanzen-Prostatabiopsie (Stanze 01 po
 * identifier[Set-ID].value = "E_24_001"
 * status = #final
 * category = http://terminology.hl7.org/CodeSystem/v2-0074#SP "Surgical Pathology"
-* code = $loinc#60568-3 "Pathology Synoptic report"
+* code = $loinc#60568-3 "Pathology synoptic report"
 * subject = Reference(mii-exa-test-data-patho-patient-1)
 * encounter = Reference(mii-exa-test-data-patho-encounter-1)
 * basedOn = Reference(mii-exa-test-data-patho-request-1)
@@ -59,7 +59,7 @@ Description: "Pathologiebericht für die 2-Stanzen-Prostatabiopsie (Stanze 01 po
 * extension[related-report].valueRelatedArtifact.url = "https://www.charite.de/fhir/sid/patho/report/E_22_318.pdf"
 
 * conclusion = "Azinäres Adenokarzinom der Prostata, Gleason-Score 7a (3+4), ISUP-Gradgruppe 2, Nachweis in 1 von 2 Stanzen (Stanze 01, rechts lateral basal), perineurale Infiltration. Stanze 03 tumorfrei."
-* conclusionCode = $sct#399068003 "Malignant tumor of prostate (disorder)"
+* conclusionCode = $sct#399068003 "Malignant neoplasm of prostate"
 * meta.lastUpdated = "2024-01-20T16:00:00+01:00"
 * text.status = #generated
 * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Pathologiebericht Prostatastanzen E_24_001: Azinäres Adenokarzinom, Gleason 3+4=7, ISUP 2</div>"

@@ -403,7 +403,7 @@
             {
               "code": "818983003",
               "system": "http://snomed.info/sct",
-              "display": "Structure of abdomen"
+              "display": "Abdomen"
             }
           ]
         },
@@ -1004,7 +1004,7 @@
             {
               "code": "51185008",
               "system": "http://snomed.info/sct",
-              "display": "Structure of thorax"
+              "display": "Thoracic structure"
             }
           ]
         },
@@ -1616,7 +1616,7 @@
             {
               "code": "89187006",
               "system": "http://snomed.info/sct",
-              "display": "Structure of airway"
+              "display": "Airway structure"
             }
           ]
         },
@@ -2399,7 +2399,7 @@
             {
               "code": "123851003",
               "system": "http://snomed.info/sct",
-              "display": "Structure of mouth region"
+              "display": "Mouth region structure"
             }
           ]
         },
@@ -2520,7 +2520,7 @@
             {
               "code": "123851003",
               "system": "http://snomed.info/sct",
-              "display": "Structure of mouth region"
+              "display": "Mouth region structure"
             }
           ]
         },
@@ -2641,7 +2641,7 @@
             {
               "code": "123851003",
               "system": "http://snomed.info/sct",
-              "display": "Structure of mouth region"
+              "display": "Mouth region structure"
             }
           ]
         },
@@ -2762,7 +2762,7 @@
             {
               "code": "123851003",
               "system": "http://snomed.info/sct",
-              "display": "Structure of mouth region"
+              "display": "Mouth region structure"
             }
           ]
         },
@@ -2888,7 +2888,7 @@
             {
               "code": "123851003",
               "system": "http://snomed.info/sct",
-              "display": "Structure of mouth region"
+              "display": "Mouth region structure"
             }
           ]
         },
@@ -3538,7 +3538,7 @@
                 {
                   "code": "85634-4",
                   "system": "http://loinc.org",
-                  "display": "Is there evidence of an acute change in mental status from the patient's baseline [CAM.CMS]"
+                  "display": "Is there evidence of an acute change in mental status from the patient's baseline during 3 day assessment period [CAM.CMS]"
                 }
               ],
               "text": "Acute change from mental status baseline or Fluctuation in mental status in past 24 hours [CAM.ICU]"
@@ -3559,7 +3559,7 @@
                 {
                   "code": "85631-0",
                   "system": "http://loinc.org",
-                  "display": "Did the patient have difficulty focusing attention [CAM.CMS]"
+                  "display": "Did the patient have difficulty focusing attention, for example, being easily distractible or having difficulty keeping track of what was being said during 3 day assessment period [CAM.CMS]"
                 }
               ],
               "text": "Feature 2: Inattention"
@@ -3601,7 +3601,7 @@
                 {
                   "code": "85651-8",
                   "system": "http://loinc.org",
-                  "display": "Was the patient's thinking disorganized or incoherent [CAM.CMS]"
+                  "display": "Was the patient's thinking disorganized or incoherent, such as rambling or irrelevant conversation, unclear or illogical flow of ideas, or unpredictable switching from subject to subject during 3 day assessment period [CAM.CMS]"
                 }
               ],
               "text": "Feature 4: Disorganized thinking"
@@ -9726,7 +9726,7 @@
               {
                 "system": "http://snomed.info/sct",
                 "code": "44567001",
-                "display": "Trachea structure (body structure)",
+                "display": "Tracheal structure",
                 "version": "http://snomed.info/sct/900000000000207008/version/20260701"
               }
             ]
@@ -10353,7 +10353,7 @@
               {
                 "code": "89837001",
                 "system": "http://snomed.info/sct",
-                "display": "Structure of urinary bladder"
+                "display": "Urinary bladder structure"
               }
             ]
           }
@@ -10459,7 +10459,7 @@
               {
                 "code": "69695003",
                 "system": "http://snomed.info/sct",
-                "display": "Structure of stomach"
+                "display": "Stomach structure"
               }
             ]
           }
@@ -10470,7 +10470,7 @@
             {
               "code": "258459007",
               "system": "http://snomed.info/sct",
-              "display": "Gastric fluid"
+              "display": "Gastric fluid specimen"
             }
           ]
         },
@@ -10576,7 +10576,7 @@
             {
               "code": "119343002",
               "system": "http://snomed.info/sct",
-              "display": "Pancreatic fluid"
+              "display": "Pancreatic fluid specimen"
             }
           ]
         },
@@ -10620,7 +10620,7 @@
             {
               "code": "258455001",
               "system": "http://snomed.info/sct",
-              "display": "Drainage fluid"
+              "display": "Drainage fluid specimen"
             }
           ]
         },

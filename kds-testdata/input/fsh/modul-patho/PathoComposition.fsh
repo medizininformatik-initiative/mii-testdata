@@ -63,7 +63,7 @@ Description: "Composition für den strukturierten Prostatabiopsie-Befundbericht 
 // Sektion: Makroskopie
 * section[makroskopie]
   * title = "Makroskopie"
-  * code = $loinc#22634-0 "Pathology report gross observation"
+  * code = $loinc#22634-0 "Pathology report gross observation Narrative"
   * text.status = #additional
   * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Makroskopische Messungen beider Prostatastanzen, je 1 Zylinder pro Specimen.</p><table><thead><tr><th>Stanze</th><th>Lokalisation</th><th>Stanzenlänge (cm)</th></tr></thead><tbody><tr><td>01</td><td>Rechts lateral basal</td><td>1.8</td></tr><tr><td>03</td><td>Rechts lateral apikal</td><td>1.5</td></tr></tbody></table></div>"
   * entry = Reference(mii-exa-test-data-patho-macro-grouper-1)
@@ -74,7 +74,7 @@ Description: "Composition für den strukturierten Prostatabiopsie-Befundbericht 
 // Sektion: Mikroskopie
 * section[mikroskopie]
   * title = "Mikroskopie"
-  * code = $loinc#22635-7 "Pathology report microscopic observation"
+  * code = $loinc#22635-7 "Pathology report microscopic observation Narrative Other stain"
   * text.status = #additional
   * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Adenokarzinom in Stanze 01 nachgewiesen: azinäres Adenokarzinom, Gleason-Score 3+4=7, ISUP-Gradgruppe 2, Tumoranteil 40%. Stanze 03 benigne (fibröse und glatte Muskulatur mit vereinzelten benignen Prostatadrüsen, keine Atypien).</p></div>"
   * entry = Reference(mii-exa-test-data-patho-micro-grouper-1)
@@ -96,7 +96,7 @@ Description: "Composition für den strukturierten Prostatabiopsie-Befundbericht 
 // Sektion: Diagnostische Schlussfolgerung
 * section[diagnostische-schlussfolgerung]
   * title = "Diagnostische Schlussfolgerung"
-  * code = $loinc#22637-3 "Pathology report diagnosis"
+  * code = $loinc#22637-3 "Pathology report final diagnosis Narrative"
   * text.status = #additional
   * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>1 von 2 Stanzen tumorbefallen (Stanze 01, rechts lateral basal). Prozentualer Tumoranteil 40%, Tumorlänge gesamt 7,2 mm. Perineurale Infiltration nachgewiesen. Infiltration des periprostatischen Fettgewebes, Samenblaseninfiltration, lymphovaskuläre Invasion, intraduktales Karzinom, ASAP, High-grade-PIN und granulomatöse Prostatitis nicht nachgewiesen.</p><p><b>Diagnose:</b> Azinäres Adenokarzinom der Prostata (ICD-O 8140/3), Gleason-Score 3+4=7, ISUP-Gradgruppe 2.</p></div>"
   * entry = Reference(mii-exa-test-data-patho-conclusion-grouper-1)

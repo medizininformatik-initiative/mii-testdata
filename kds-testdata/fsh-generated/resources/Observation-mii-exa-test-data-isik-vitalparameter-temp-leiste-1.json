@@ -44,12 +44,12 @@
       {
         "system": "http://snomed.info/sct",
         "code": "415929009",
-        "display": "Groin temperature (observable entity)"
+        "display": "Groin temperature"
       },
       {
         "system": "http://loinc.org",
         "code": "104063-3",
-        "display": "Groin temperature"
+        "display": "Body temperature - Groin"
       }
     ]
   },

@@ -24,7 +24,7 @@ Description: "ICU Observation: MII PR ICU Bilanz Einfuhr Muttermilch (technische
 * device = Reference(mii-exa-test-data-patient-1-icu-device-pdms-1)
 * interpretation = $v3-ObservationInterpretation#N "Normal"
 * method = $sct#258104002 "Measured (qualifier value)"
-* bodySite = $sct#123851003 "Structure of mouth region"
+* bodySite = $sct#123851003 "Mouth region structure"
 * specimen = Reference(mii-exa-test-data-patient-1-icu-spec-muttermilch-1)
 * referenceRange.low = 20 'mL' "mL"
 * referenceRange.high = 60 'mL' "mL"
@@ -51,7 +51,7 @@ Description: "ICU Observation: MII PR ICU Bilanz Einfuhr Abgepumpte Muttermilch 
 * device = Reference(mii-exa-test-data-patient-1-icu-device-pdms-1)
 * interpretation = $v3-ObservationInterpretation#N "Normal"
 * method = $sct#258104002 "Measured (qualifier value)"
-* bodySite = $sct#123851003 "Structure of mouth region"
+* bodySite = $sct#123851003 "Mouth region structure"
 * specimen = Reference(mii-exa-test-data-patient-1-icu-spec-muttermilch-abgep-1)
 * referenceRange.low = 20 'mL' "mL"
 * referenceRange.high = 60 'mL' "mL"
@@ -78,7 +78,7 @@ Description: "ICU Observation: MII PR ICU Bilanz Einfuhr Spendermilch (technisch
 * device = Reference(mii-exa-test-data-patient-1-icu-device-pdms-1)
 * interpretation = $v3-ObservationInterpretation#N "Normal"
 * method = $sct#258104002 "Measured (qualifier value)"
-* bodySite = $sct#123851003 "Structure of mouth region"
+* bodySite = $sct#123851003 "Mouth region structure"
 * specimen = Reference(mii-exa-test-data-patient-1-icu-spec-spendermilch-1)
 * referenceRange.low = 20 'mL' "mL"
 * referenceRange.high = 60 'mL' "mL"
@@ -105,7 +105,7 @@ Description: "ICU Observation: MII PR ICU Bilanz Einfuhr Saeuglingsnahrung (tech
 * device = Reference(mii-exa-test-data-patient-1-icu-device-pdms-1)
 * interpretation = $v3-ObservationInterpretation#N "Normal"
 * method = $sct#258104002 "Measured (qualifier value)"
-* bodySite = $sct#123851003 "Structure of mouth region"
+* bodySite = $sct#123851003 "Mouth region structure"
 * specimen = Reference(mii-exa-test-data-patient-1-icu-spec-saeuglingsnahrung-1)
 * referenceRange.low = 40 'mL' "mL"
 * referenceRange.high = 80 'mL' "mL"
@@ -132,7 +132,7 @@ Description: "ICU Observation: MII PR ICU Bilanz Einfuhr Orale Fluessigkeit"
 * device = Reference(mii-exa-test-data-patient-1-icu-device-pdms-1)
 * interpretation = $v3-ObservationInterpretation#N "Normal"
 * method = $sct#258104002 "Measured (qualifier value)"
-* bodySite = $sct#123851003 "Structure of mouth region"
+* bodySite = $sct#123851003 "Mouth region structure"
 * specimen = Reference(mii-exa-test-data-patient-1-icu-spec-trinkwasser-1)
 * referenceRange.low = 100 'mL' "mL"
 * referenceRange.high = 300 'mL' "mL"

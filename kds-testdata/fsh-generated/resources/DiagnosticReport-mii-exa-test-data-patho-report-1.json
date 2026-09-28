@@ -119,7 +119,7 @@
         {
           "code": "399068003",
           "system": "http://snomed.info/sct",
-          "display": "Malignant tumor of prostate (disorder)"
+          "display": "Malignant neoplasm of prostate"
         }
       ]
     }
@@ -146,7 +146,7 @@
       {
         "system": "http://loinc.org",
         "code": "60568-3",
-        "display": "Pathology Synoptic report"
+        "display": "Pathology synoptic report"
       }
     ]
   },

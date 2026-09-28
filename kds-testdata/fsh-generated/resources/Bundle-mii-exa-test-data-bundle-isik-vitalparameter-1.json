@@ -671,7 +671,7 @@
             {
               "system": "http://snomed.info/sct",
               "code": "307047009",
-              "display": "Rectal temperature (observable entity)"
+              "display": "Rectal temperature"
             }
           ]
         },
@@ -1619,7 +1619,7 @@
             {
               "system": "http://loinc.org",
               "code": "98979-8",
-              "display": "Glomerular filtration rate/1.73 sq M.predicted [Volume Rate/Area] in Serum, Plasma or Blood by Creatinine-based formula (CKD-EPI 2021)"
+              "display": "Glomerular filtration rate [Volume Rate/Area] in Serum, Plasma or Blood by Creatinine-based formula (CKD-EPI 2021)/1.73 sq M"
             },
             {
               "system": "http://snomed.info/sct",
@@ -2556,7 +2556,7 @@
             {
               "system": "http://loinc.org",
               "code": "8741-1",
-              "display": "Cardiac output"
+              "display": "Left ventricular Cardiac output"
             },
             {
               "system": "urn:iso:std:iso:11073:10101",
@@ -2698,7 +2698,7 @@
             {
               "system": "http://loinc.org",
               "code": "60956-0",
-              "display": "Intracranial pressure"
+              "display": "Intracranial pressure (ICP)"
             },
             {
               "system": "urn:iso:std:iso:11073:10101",
@@ -2925,7 +2925,7 @@
             {
               "system": "http://loinc.org",
               "code": "75919-1",
-              "display": "Cardiac index by Indicator dilution"
+              "display": "Left ventricular Cardiac index"
             },
             {
               "system": "urn:iso:std:iso:11073:10101",
@@ -3000,7 +3000,7 @@
             {
               "system": "http://snomed.info/sct",
               "code": "90096001",
-              "display": "Cardiac stroke volume (observable entity)"
+              "display": "Stroke volume"
             },
             {
               "system": "http://loinc.org",
@@ -3024,7 +3024,7 @@
             {
               "system": "http://snomed.info/sct",
               "code": "244385005",
-              "display": "Entire left ventricle (body structure)"
+              "display": "Entire left cardiac ventricle"
             }
           ]
         },
@@ -3080,7 +3080,7 @@
             {
               "system": "http://loinc.org",
               "code": "76297-1",
-              "display": "Stroke volume index"
+              "display": "Left ventricular Stroke volume index"
             },
             {
               "system": "urn:iso:std:iso:11073:10101",
@@ -3155,7 +3155,7 @@
             {
               "system": "http://loinc.org",
               "code": "8751-0",
-              "display": "Cardiac index by Indicator dilution"
+              "display": "Left ventricular Cardiac index by Indicator dilution"
             }
           ]
         },
@@ -3217,7 +3217,7 @@
             {
               "system": "http://loinc.org",
               "code": "8771-8",
-              "display": "Stroke volume by Indicator dilution"
+              "display": "Left ventricular Stroke volume by Indicator dilution"
             }
           ]
         },
@@ -3279,7 +3279,7 @@
             {
               "system": "http://loinc.org",
               "code": "8791-6",
-              "display": "Stroke volume index by Indicator dilution"
+              "display": "Left ventricular Stroke volume index by Indicator dilution"
             }
           ]
         },
@@ -3341,7 +3341,7 @@
             {
               "system": "http://loinc.org",
               "code": "8737-9",
-              "display": "Cardiac output by Indicator dilution"
+              "display": "Left ventricular Cardiac output by Indicator dilution"
             }
           ]
         },
@@ -3403,7 +3403,7 @@
             {
               "system": "http://snomed.info/sct",
               "code": "442476006",
-              "display": "Oxygen saturation in arterial blood (observable entity)"
+              "display": "Arterial oxygen saturation"
             },
             {
               "system": "http://loinc.org",
@@ -3624,7 +3624,7 @@
             {
               "system": "http://loinc.org",
               "code": "75994-4",
-              "display": "Pulmonary artery Wedge pressure"
+              "display": "Pulmonary artery wedge pressure"
             },
             {
               "system": "urn:iso:std:iso:11073:10101",
@@ -3704,7 +3704,7 @@
             {
               "system": "http://loinc.org",
               "code": "8834-4",
-              "display": "Pulmonary vascular resistance index"
+              "display": "Pulmonary vascular Resistance index"
             },
             {
               "system": "urn:iso:std:iso:11073:10101",
@@ -3775,7 +3775,7 @@
             {
               "system": "http://loinc.org",
               "code": "8837-7",
-              "display": "Systemic vascular resistance index"
+              "display": "Systemic vascular Resistance index"
             },
             {
               "system": "urn:iso:std:iso:11073:10101",
@@ -4968,7 +4968,7 @@
             {
               "system": "http://snomed.info/sct",
               "code": "248835004",
-              "display": "Breast temperature (observable entity)"
+              "display": "Breast temperature"
             },
             {
               "system": "http://loinc.org",
@@ -5044,7 +5044,7 @@
             {
               "system": "http://snomed.info/sct",
               "code": "364424001",
-              "display": "Thoracic spine temperature (observable entity)"
+              "display": "Thoracic spine temperature"
             },
             {
               "system": "http://loinc.org",
@@ -5064,7 +5064,7 @@
             {
               "system": "http://snomed.info/sct",
               "code": "122495006",
-              "display": "Thoracic vertebral column structure (body structure)"
+              "display": "Thoracic spine structure"
             }
           ]
         },
@@ -5120,7 +5120,7 @@
             {
               "system": "http://snomed.info/sct",
               "code": "250124002",
-              "display": "Joint temperature (observable entity)"
+              "display": "Joint temperature"
             },
             {
               "system": "http://loinc.org",
@@ -5196,7 +5196,7 @@
             {
               "system": "http://snomed.info/sct",
               "code": "364419004",
-              "display": "Cervical spine temperature (observable entity)"
+              "display": "Cervical spine temperature"
             },
             {
               "system": "http://loinc.org",
@@ -5216,7 +5216,7 @@
             {
               "system": "http://snomed.info/sct",
               "code": "122494005",
-              "display": "Cervical vertebral column structure (body structure)"
+              "display": "Structure of cervical vertebral column"
             }
           ]
         },
@@ -5292,7 +5292,7 @@
             {
               "system": "http://snomed.info/sct",
               "code": "122496007",
-              "display": "Lumbar vertebral column structure (body structure)"
+              "display": "Lumbar spine structure"
             }
           ]
         },
@@ -5357,7 +5357,7 @@
             {
               "system": "http://loinc.org",
               "code": "61009-7",
-              "display": "Myocardium temperature"
+              "display": "Myocardial temperature"
             }
           ]
         },
@@ -5508,7 +5508,7 @@
             {
               "system": "http://snomed.info/sct",
               "code": "698831002",
-              "display": "Core body temperature measured at nasopharynx (observable entity)"
+              "display": "Nasopharyngeal temperature"
             },
             {
               "system": "http://loinc.org",
@@ -5593,7 +5593,7 @@
             {
               "system": "http://snomed.info/sct",
               "code": "415922000",
-              "display": "Forehead temperature (observable entity)"
+              "display": "Forehead temperature"
             },
             {
               "system": "http://loinc.org",
@@ -5755,7 +5755,7 @@
             {
               "system": "http://snomed.info/sct",
               "code": "307047009",
-              "display": "Rectal temperature (observable entity)"
+              "display": "Rectal temperature"
             },
             {
               "system": "http://loinc.org",
@@ -5926,7 +5926,7 @@
             {
               "system": "http://snomed.info/sct",
               "code": "415882003",
-              "display": "Axillary temperature (observable entity)"
+              "display": "Axillary temperature"
             },
             {
               "system": "http://loinc.org",
@@ -5946,7 +5946,7 @@
             {
               "system": "http://snomed.info/sct",
               "code": "91470000",
-              "display": "Axillary fossa structure (body structure)"
+              "display": "Axillary region structure"
             }
           ]
         },
@@ -6012,7 +6012,7 @@
             {
               "system": "http://snomed.info/sct",
               "code": "698832009",
-              "display": "Core body temperature measured in urinary bladder (observable entity)"
+              "display": "Core body temperature measured at urinary bladder"
             },
             {
               "system": "http://loinc.org",
@@ -6098,12 +6098,12 @@
             {
               "system": "http://snomed.info/sct",
               "code": "415929009",
-              "display": "Groin temperature (observable entity)"
+              "display": "Groin temperature"
             },
             {
               "system": "http://loinc.org",
               "code": "104063-3",
-              "display": "Groin temperature"
+              "display": "Body temperature - Groin"
             }
           ]
         },
@@ -6364,7 +6364,7 @@
             {
               "system": "http://snomed.info/sct",
               "code": "415945006",
-              "display": "Oral temperature (observable entity)"
+              "display": "Oral temperature"
             },
             {
               "system": "http://loinc.org",
@@ -6388,7 +6388,7 @@
             {
               "system": "http://snomed.info/sct",
               "code": "123851003",
-              "display": "Region of oral cavity (body structure)"
+              "display": "Mouth region structure"
             }
           ]
         },
@@ -6454,7 +6454,7 @@
             {
               "system": "http://snomed.info/sct",
               "code": "364246006",
-              "display": "Vaginal temperature (observable entity)"
+              "display": "Temperature of vagina"
             }
           ]
         },
@@ -6535,7 +6535,7 @@
             {
               "system": "http://snomed.info/sct",
               "code": "1366425007",
-              "display": "Core body temperature measured at forehead (observable entity)"
+              "display": "Estimated core body temperature measured on forehead"
             }
           ]
         },

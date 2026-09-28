@@ -1341,7 +1341,7 @@
             {
               "system": "http://fhir.de/CodeSystem/ifa/pzn",
               "code": "00651306",
-              "display": "Metamizol HEXAL® 500 mg"
+              "display": "Metamizol HEXAL® 500mg 20 Filmtbl."
             },
             {
               "system": "http://fhir.de/CodeSystem/bfarm/atc",
@@ -2366,7 +2366,7 @@
             {
               "system": "http://fhir.de/CodeSystem/ifa/pzn",
               "code": "00651306",
-              "display": "Metamizol HEXAL® 500 mg"
+              "display": "Metamizol HEXAL® 500mg 20 Filmtbl."
             },
             {
               "system": "http://fhir.de/CodeSystem/bfarm/atc",
@@ -2522,7 +2522,7 @@
             {
               "code": "03705422",
               "system": "http://fhir.de/CodeSystem/ifa/pzn",
-              "display": "Glucose 5% B.braun Ecoflac Plus"
+              "display": "Glucose 5% B.Braun Ecoflac Plus 10x250ml N2"
             },
             {
               "code": "V06DC01",

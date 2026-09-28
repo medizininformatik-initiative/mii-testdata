@@ -39,7 +39,7 @@
       {
         "system": "http://loinc.org",
         "code": "8834-4",
-        "display": "Pulmonary vascular resistance index"
+        "display": "Pulmonary vascular Resistance index"
       },
       {
         "system": "urn:iso:std:iso:11073:10101",

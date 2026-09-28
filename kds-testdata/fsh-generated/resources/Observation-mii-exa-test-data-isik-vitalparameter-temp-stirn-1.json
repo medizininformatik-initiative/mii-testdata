@@ -34,7 +34,7 @@
       {
         "system": "http://snomed.info/sct",
         "code": "415922000",
-        "display": "Forehead temperature (observable entity)"
+        "display": "Forehead temperature"
       },
       {
         "system": "http://loinc.org",

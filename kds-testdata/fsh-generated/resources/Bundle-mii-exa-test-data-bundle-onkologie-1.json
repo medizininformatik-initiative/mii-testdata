@@ -170,7 +170,7 @@
                   "valueCoding": {
                     "code": "G",
                     "system": "https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_ICD_DIAGNOSESICHERHEIT",
-                    "display": "Gesicherte Diagnose"
+                    "display": "gesicherte Diagnose"
                   }
                 },
                 {
@@ -4144,7 +4144,7 @@
             {
               "system": "http://loinc.org",
               "code": "LA9623-5",
-              "display": "Restricted in physically strenuous activity"
+              "display": "Restricted in physically strenuous activity but ambulatory and able to carry out work of a light or sedentary nature, e.g., light house work, office work"
             }
           ]
         },
@@ -4209,7 +4209,7 @@
             {
               "system": "http://loinc.org",
               "code": "LA29177-5",
-              "display": "Normal activity with effort"
+              "display": "Normal activity with effort; some signs or symptoms of disease"
             }
           ]
         },
@@ -7148,7 +7148,7 @@
                 {
                   "code": "SO:0000159",
                   "system": "http://www.sequenceontology.org",
-                  "display": "deletion"
+                  "display": "Deletion"
                 }
               ]
             },

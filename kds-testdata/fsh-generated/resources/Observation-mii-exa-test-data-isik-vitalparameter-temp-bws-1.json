@@ -34,7 +34,7 @@
       {
         "system": "http://snomed.info/sct",
         "code": "364424001",
-        "display": "Thoracic spine temperature (observable entity)"
+        "display": "Thoracic spine temperature"
       },
       {
         "system": "http://loinc.org",
@@ -54,7 +54,7 @@
       {
         "system": "http://snomed.info/sct",
         "code": "122495006",
-        "display": "Thoracic vertebral column structure (body structure)"
+        "display": "Thoracic spine structure"
       }
     ]
   },

@@ -44,7 +44,7 @@
       {
         "system": "http://snomed.info/sct",
         "code": "415945006",
-        "display": "Oral temperature (observable entity)"
+        "display": "Oral temperature"
       },
       {
         "system": "http://loinc.org",
@@ -68,7 +68,7 @@
       {
         "system": "http://snomed.info/sct",
         "code": "123851003",
-        "display": "Region of oral cavity (body structure)"
+        "display": "Mouth region structure"
       }
     ]
   },

@@ -66,7 +66,7 @@ Description: "ICU Procedure: Invasive Beatmung Patient 12 (08.03.-16.03., 187 St
 * extension[Dokumentationsdatum].valueDateTime = "2025-03-16T14:00:00+01:00"
 * extension[durchfuehrungsabsicht].valueCoding = $sct#262202000 "Therapeutic"
 * recorder = Reference(mii-exa-test-data-practitioner-role-physician-1)
-* bodySite.coding[snomed-ct] = $sct#44567001 "Trachea structure (body structure)"
+* bodySite.coding[snomed-ct] = $sct#44567001 "Tracheal structure"
 * note.text = "Lungenprotektive Beatmung (6 mL/kg ideales Koerpergewicht), taegliche Spontanatmungsversuche ab 13.03., Extubation am 16.03."
 
 // ----------------------------------------------------------------------------

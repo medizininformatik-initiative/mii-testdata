@@ -99,7 +99,7 @@ Description: "Specimen: Gewebeprobe aus dem Kolon"
 * collection.extension[einstellungBlutversorgung].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/EinstellungBlutversorgung"
 * collection.extension[einstellungBlutversorgung].valueDateTime = "2022-03-24T12:30:00+01:00"
 * collection.bodySite.coding[sct] = $sct#71854001 "Colon structure (body structure)"
-* collection.bodySite.coding[icd-o-3] = $icd-o-3#C18.9 "Colon, NOS"
+* collection.bodySite.coding[icd-o-3] = $icd-o-3#C18.9 "Colon"
 * identifier.system = "https://www.charite.de/fhir/sid/Bioproben"
 * identifier.value = "BP_000002"
 * status = #available

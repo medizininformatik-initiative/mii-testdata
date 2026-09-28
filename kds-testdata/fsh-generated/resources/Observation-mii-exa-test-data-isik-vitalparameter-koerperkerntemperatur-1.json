@@ -39,7 +39,7 @@
       {
         "system": "http://snomed.info/sct",
         "code": "307047009",
-        "display": "Rectal temperature (observable entity)"
+        "display": "Rectal temperature"
       }
     ]
   },

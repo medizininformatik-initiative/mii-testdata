@@ -63,7 +63,7 @@ Usage: #example
 Description: "MII-ICU Herzzeitvolumen: 4.8 L/min"
 * insert IsikMuvBase(2026-05-12T10:05:00+02:00)
 * code.coding[sct] = $sct#82799009 "Cardiac output (observable entity)"
-* code.coding[loinc] = $loinc#8741-1 "Cardiac output"
+* code.coding[loinc] = $loinc#8741-1 "Left ventricular Cardiac output"
 * code.coding[IEEE-11073] = $11073-10101#150276
 * valueQuantity = 4.8 'L/min' "liter per minute"
 
@@ -85,7 +85,7 @@ Usage: #example
 Description: "MII-ICU Intrakranieller Druck (ICP): 12 mmHg"
 * insert IsikMuvBase(2026-05-12T10:10:00+02:00)
 * code.coding[sct] = $sct#250844005 "Intracranial pressure (observable entity)"
-* code.coding[loinc] = $loinc#60956-0 "Intracranial pressure"
+* code.coding[loinc] = $loinc#60956-0 "Intracranial pressure (ICP)"
 * code.coding[IEEE-11073] = $11073-10101#153608
 * valueQuantity = 12 'mm[Hg]' "millimeter Mercury column"
 * bodySite = $sct#731998000 "Entire intracranial subarachnoid space (body structure)"
@@ -122,7 +122,7 @@ Usage: #example
 Description: "MII-ICU Linksventrikulaerer Herzindex: 2.9 L/min/m2"
 * insert IsikMuvBase(2026-05-12T10:15:00+02:00)
 * code.coding[sct] = $sct#54993008 "Cardiac index (observable entity)"
-* code.coding[loinc] = $loinc#75919-1 "Cardiac index by Indicator dilution"
+* code.coding[loinc] = $loinc#75919-1 "Left ventricular Cardiac index"
 * code.coding[IEEE-11073] = $11073-10101#149772
 * valueQuantity = 2.9 'L/min/m2' "liter per minute and square meter"
 * bodySite = $sct#87878005 "Left cardiac ventricular structure (body structure)"
@@ -133,11 +133,11 @@ InstanceOf: https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-linksven
 Usage: #example
 Description: "MII-ICU Linksventrikulaeres Schlagvolumen: 70 mL"
 * insert IsikMuvBase(2026-05-12T10:15:00+02:00)
-* code.coding[sct] = $sct#90096001 "Cardiac stroke volume (observable entity)"
+* code.coding[sct] = $sct#90096001 "Stroke volume"
 * code.coding[loinc] = $loinc#20562-5 "Left ventricular Stroke volume"
 * code.coding[IEEE-11073] = $11073-10101#150408
 * valueQuantity = 70 'mL' "milliliter"
-* bodySite = $sct#244385005 "Entire left ventricle (body structure)"
+* bodySite = $sct#244385005 "Entire left cardiac ventricle"
 
 // Linksventrikulaerer Schlagvolumenindex: 37 mL/m2
 Instance: mii-exa-test-data-isik-vitalparameter-lv-svi-1
@@ -145,7 +145,7 @@ InstanceOf: https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-linksven
 Usage: #example
 Description: "MII-ICU Linksventrikulaerer Schlagvolumenindex: 37 mL/m2"
 * insert IsikMuvBase(2026-05-12T10:15:00+02:00)
-* code.coding[loinc] = $loinc#76297-1 "Stroke volume index"
+* code.coding[loinc] = $loinc#76297-1 "Left ventricular Stroke volume index"
 * code.coding[IEEE-11073] = $11073-10101#150636
 * valueQuantity = 37 'mL/m2' "milliliter per square meter"
 * bodySite = $sct#87878005 "Left cardiac ventricular structure (body structure)"
@@ -156,7 +156,7 @@ InstanceOf: https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-linksven
 Usage: #example
 Description: "MII-ICU Herzindex durch Indikatorverduennung: 2.8 L/min/m2"
 * insert IsikMuvBase(2026-05-12T10:20:00+02:00)
-* code.coding[loinc] = $loinc#8751-0 "Cardiac index by Indicator dilution"
+* code.coding[loinc] = $loinc#8751-0 "Left ventricular Cardiac index by Indicator dilution"
 * valueQuantity = 2.8 'L/min/m2' "liter per minute and square meter"
 
 // Schlagvolumen durch Indikatorverduennung: 68 mL
@@ -165,7 +165,7 @@ InstanceOf: https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-linksven
 Usage: #example
 Description: "MII-ICU Schlagvolumen durch Indikatorverduennung: 68 mL"
 * insert IsikMuvBase(2026-05-12T10:20:00+02:00)
-* code.coding[loinc] = $loinc#8771-8 "Stroke volume by Indicator dilution"
+* code.coding[loinc] = $loinc#8771-8 "Left ventricular Stroke volume by Indicator dilution"
 * valueQuantity = 68 'mL' "milliliter"
 
 // Schlagvolumenindex durch Indikatorverduennung: 36 mL/m2
@@ -174,7 +174,7 @@ InstanceOf: https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-linksven
 Usage: #example
 Description: "MII-ICU Schlagvolumenindex durch Indikatorverduennung: 36 mL/m2"
 * insert IsikMuvBase(2026-05-12T10:20:00+02:00)
-* code.coding[loinc] = $loinc#8791-6 "Stroke volume index by Indicator dilution"
+* code.coding[loinc] = $loinc#8791-6 "Left ventricular Stroke volume index by Indicator dilution"
 * valueQuantity = 36 'mL/m2' "milliliter per square meter"
 
 // Herzzeitvolumen durch Indikatorverduennung: 4.9 L/min
@@ -183,7 +183,7 @@ InstanceOf: https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-linksven
 Usage: #example
 Description: "MII-ICU Herzzeitvolumen durch Indikatorverduennung: 4.9 L/min"
 * insert IsikMuvBase(2026-05-12T10:20:00+02:00)
-* code.coding[loinc] = $loinc#8737-9 "Cardiac output by Indicator dilution"
+* code.coding[loinc] = $loinc#8737-9 "Left ventricular Cardiac output by Indicator dilution"
 * valueQuantity = 4.9 'L/min' "liter per minute"
 
 // ---------------------------------------------------------------------------
@@ -196,7 +196,7 @@ InstanceOf: https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-o2saetti
 Usage: #example
 Description: "MII-ICU O2-Saettigung im arteriellen Blut (Pulsoxymetrie): 96 %"
 * insert IsikMuvBase(2026-05-12T10:25:00+02:00)
-* code.coding[sct] = $sct#442476006 "Oxygen saturation in arterial blood (observable entity)"
+* code.coding[sct] = $sct#442476006 "Arterial oxygen saturation"
 * code.coding[loinc] = $loinc#59408-5 "Oxygen saturation in Arterial blood by Pulse oximetry"
 * code.coding[IEEE-11073] = $11073-10101#150324
 * valueQuantity = 96 '%' "percent"
@@ -233,7 +233,7 @@ Usage: #example
 Description: "MII-ICU Pulmonalarterieller Wedge-Druck: 12 mmHg"
 * insert IsikMuvBase(2026-05-12T10:30:00+02:00)
 * code.coding[sct] = $sct#118433006 "Pulmonary artery wedge pressure (observable entity)"
-* code.coding[loinc] = $loinc#75994-4 "Pulmonary artery Wedge pressure"
+* code.coding[loinc] = $loinc#75994-4 "Pulmonary artery wedge pressure"
 * code.coding[IEEE-11073] = $11073-10101#150052
 * valueQuantity = 12 'mm[Hg]' "millimeter Mercury column"
 * bodySite = $sct#430160002 "Entire vein of lung"
@@ -245,7 +245,7 @@ Usage: #example
 Description: "MII-ICU Pulmonalvaskulaerer Widerstandsindex: 220 dyn.s/cm5/m2"
 * insert IsikMuvBase(2026-05-12T10:30:00+02:00)
 * code.coding[sct] = $sct#276902009 "Pulmonary vascular resistance index (observable entity)"
-* code.coding[loinc] = $loinc#8834-4 "Pulmonary vascular resistance index"
+* code.coding[loinc] = $loinc#8834-4 "Pulmonary vascular Resistance index"
 * code.coding[IEEE-11073] = $11073-10101#152852
 * valueQuantity = 220 'dyn.s/cm5/m2' "dyne second per centimeter5 and square meter"
 
@@ -256,7 +256,7 @@ Usage: #example
 Description: "MII-ICU Systemischer vaskulaerer Widerstandsindex: 1900 dyn.s/cm5/m2"
 * insert IsikMuvBase(2026-05-12T10:30:00+02:00)
 * code.coding[sct] = $sct#276900001 "Systemic vascular resistance index (observable entity)"
-* code.coding[loinc] = $loinc#8837-7 "Systemic vascular resistance index"
+* code.coding[loinc] = $loinc#8837-7 "Systemic vascular Resistance index"
 * code.coding[IEEE-11073] = $11073-10101#149760
 * valueQuantity = 1900 'dyn.s/cm5/m2' "dyne second per centimeter5 and square meter"
 

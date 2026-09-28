@@ -106,7 +106,7 @@ Description: "Mikrobio Probe: Trachealsekret (Patient 12)"
 * extension[probenebene].valueCoding = https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/CodeSystem/mii-cs-biobank-probenebene#PRIMÄRPROBE "Primärprobe"
 * extension[infektiositaetsstatus].valueCodeableConcept = $sct#409603009 "Biosafety level 2 (qualifier value)"
 * collection.collectedDateTime = "2025-03-08T18:35:00+01:00"
-* collection.bodySite.coding[sct] = $sct#44567001 "Trachea structure (body structure)"
+* collection.bodySite.coding[sct] = $sct#44567001 "Tracheal structure"
 * collection.quantity = 3 'mL' "mL"
 * container.type = $sct#83059008 "Tube, device (physical object)"
 * request = Reference(mii-exa-test-data-patient-12-mibi-anforderung-1)

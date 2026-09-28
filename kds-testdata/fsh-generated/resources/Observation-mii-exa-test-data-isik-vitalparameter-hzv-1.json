@@ -39,7 +39,7 @@
       {
         "system": "http://loinc.org",
         "code": "8741-1",
-        "display": "Cardiac output"
+        "display": "Left ventricular Cardiac output"
       },
       {
         "system": "urn:iso:std:iso:11073:10101",

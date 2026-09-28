@@ -34,7 +34,7 @@
       {
         "system": "http://snomed.info/sct",
         "code": "248835004",
-        "display": "Breast temperature (observable entity)"
+        "display": "Breast temperature"
       },
       {
         "system": "http://loinc.org",

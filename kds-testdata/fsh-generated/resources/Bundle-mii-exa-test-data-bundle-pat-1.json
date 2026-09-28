@@ -1912,7 +1912,7 @@
             {
               "system": "http://fhir.de/CodeSystem/ifa/pzn",
               "code": "06312077",
-              "display": "ASS 100 - 1a Pharma TAH Tabletten"
+              "display": "ASS 100 - 1 A Pharma® TAH 100 Tbl. N3"
             },
             {
               "system": "http://fhir.de/CodeSystem/bfarm/atc",
@@ -2057,7 +2057,7 @@
             {
               "system": "http://fhir.de/CodeSystem/ifa/pzn",
               "code": "15205222",
-              "display": "XYDALBA"
+              "display": "Xydalba 500 mg Pulver für ein Konzentrat zur Herst. einer Infusionslösung 1 Durchstechfl. N1"
             },
             {
               "system": "http://fhir.de/CodeSystem/bfarm/atc",
@@ -2868,7 +2868,7 @@
             {
               "system": "http://fhir.de/CodeSystem/ifa/pzn",
               "code": "06312077",
-              "display": "ASS 100 - 1a Pharma TAH Tabletten"
+              "display": "ASS 100 - 1 A Pharma® TAH 100 Tbl. N3"
             },
             {
               "system": "http://fhir.de/CodeSystem/bfarm/atc",
@@ -4956,7 +4956,7 @@
             {
               "code": "788-0",
               "system": "http://loinc.org",
-              "display": "Erythrocyte distribution width [Entitic volume] by Automated count"
+              "display": "Erythrocyte [DistWidth] in Blood by Automated count"
             }
           ]
         },
@@ -5047,7 +5047,7 @@
             {
               "code": "788-0",
               "system": "http://loinc.org",
-              "display": "Erythrocyte [DistWidth] in Red Blood Cells by Automated count"
+              "display": "Erythrocyte [DistWidth] in Blood by Automated count"
             }
           ]
         },
@@ -5301,7 +5301,7 @@
             {
               "code": "414464004",
               "system": "http://snomed.info/sct",
-              "display": "Immunoassay method (qualifier value)"
+              "display": "Immunoassay method"
             }
           ]
         },

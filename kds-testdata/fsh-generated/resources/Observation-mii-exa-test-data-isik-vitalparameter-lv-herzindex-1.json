@@ -39,7 +39,7 @@
       {
         "system": "http://loinc.org",
         "code": "75919-1",
-        "display": "Cardiac index by Indicator dilution"
+        "display": "Left ventricular Cardiac index"
       },
       {
         "system": "urn:iso:std:iso:11073:10101",

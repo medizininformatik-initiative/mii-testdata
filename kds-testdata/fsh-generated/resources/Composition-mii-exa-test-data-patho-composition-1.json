@@ -169,7 +169,7 @@
           {
             "system": "http://loinc.org",
             "code": "22634-0",
-            "display": "Pathology report gross observation"
+            "display": "Pathology report gross observation Narrative"
           }
         ]
       },
@@ -199,7 +199,7 @@
           {
             "system": "http://loinc.org",
             "code": "22635-7",
-            "display": "Pathology report microscopic observation"
+            "display": "Pathology report microscopic observation Narrative Other stain"
           }
         ]
       },
@@ -259,7 +259,7 @@
           {
             "system": "http://loinc.org",
             "code": "22637-3",
-            "display": "Pathology report diagnosis"
+            "display": "Pathology report final diagnosis Narrative"
           }
         ]
       },

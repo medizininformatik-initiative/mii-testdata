@@ -52,7 +52,7 @@ Description: "ICU Observation: MII PR ICU Bilanz Ausfuhr Drainage Generisch"
 * device = Reference(mii-exa-test-data-patient-1-icu-device-pdms-1)
 * interpretation = $v3-ObservationInterpretation#N "Normal"
 * method = $sct#258104002 "Measured (qualifier value)"
-* bodySite = $sct#818983003 "Structure of abdomen"
+* bodySite = $sct#818983003 "Abdomen"
 * specimen = Reference(mii-exa-test-data-patient-1-icu-spec-drainagesekret-1)
 * referenceRange.low = 0 'mL' "mL"
 * referenceRange.high = 200 'mL' "mL"
@@ -178,7 +178,7 @@ Description: "ICU Observation: MII PR ICU Bilanz Ausfuhr Opdrainage"
 * device = Reference(mii-exa-test-data-patient-1-icu-device-pdms-1)
 * interpretation = $v3-ObservationInterpretation#N "Normal"
 * method = $sct#258104002 "Measured (qualifier value)"
-* bodySite = $sct#51185008 "Structure of thorax"
+* bodySite = $sct#51185008 "Thoracic structure"
 * specimen = Reference(mii-exa-test-data-patient-1-icu-spec-drainagesekret-1)
 * referenceRange.low = 0 'mL' "mL"
 * referenceRange.high = 200 'mL' "mL"
@@ -308,7 +308,7 @@ Description: "ICU Observation: MII PR ICU Bilanz Blutverlust"
 * interpretation = $v3-ObservationInterpretation#N "Normal"
 * method = $sct#258104002 "Measured (qualifier value)"
 // Blutiges Trachealsekret unter therapeutischer Antikoagulation bei VV-ECMO
-* bodySite = $sct#89187006 "Structure of airway"
+* bodySite = $sct#89187006 "Airway structure"
 * specimen = Reference(mii-exa-test-data-patient-1-icu-spec-blut-1)
 * referenceRange.low = 0 'mL' "mL"
 * referenceRange.high = 200 'mL' "mL"

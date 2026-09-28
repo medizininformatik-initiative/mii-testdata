@@ -238,7 +238,7 @@ Description: "Histological differentiation grade according to WHO"
 * effectiveDateTime = "2024-01-20"
 * performer = Reference(mii-exa-test-data-patho-practitioner-1)
 * basedOn = Reference(mii-exa-test-data-patho-request-1)
-* valueCodeableConcept.coding = $sct#1663004 "Moderately differentiated (qualifier value)"
+* valueCodeableConcept.coding = $sct#1663004 "G2 grade"
 * valueCodeableConcept.text = "G2: mäßig differenziert"
 
 // Number of Positive Cores Right

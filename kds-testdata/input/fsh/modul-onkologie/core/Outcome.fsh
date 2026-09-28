@@ -152,7 +152,7 @@ Description: "Onkologie Test Genetische Variante - BRCA1 Mutation"
 * component[outer-start-end].valueRange.high.value = 43124035
 * component[ref-allele].valueString = "TTC"
 * component[alt-allele].valueString = "T"
-* component[coding-change-type].valueCodeableConcept.coding = http://www.sequenceontology.org#SO:0000159 "deletion"
+* component[coding-change-type].valueCodeableConcept.coding = http://www.sequenceontology.org#SO:0000159 "Deletion"
 * component[genomic-source-class].valueCodeableConcept = $LNC#LA6684-0 "Somatic"
 * component[sample-allelic-frequency].valueQuantity = 34 '%'
 * component[sample-allelic-frequency].valueQuantity.unit = "%"

@@ -169,7 +169,7 @@
                 "system": "http://snomed.info/sct",
                 "code": "87878005",
                 "version": "http://snomed.info/sct/900000000000207008/version/20260701",
-                "display": "Left ventricular structure (body structure)"
+                "display": "Left cardiac ventricular structure"
               }
             ]
           }
@@ -835,7 +835,7 @@
                   "system": "http://snomed.info/sct",
                   "code": "406524005",
                   "version": "http://snomed.info/sct/900000000000207008/version/20260701",
-                  "display": "Reason for visit diagnosis (contextual qualifier) (qualifier value)"
+                  "display": "Reason for visit diagnosis"
                 }
               ]
             },
@@ -1086,7 +1086,7 @@
                 {
                   "system": "http://loinc.org",
                   "code": "63640-7",
-                  "display": "How many cigarettes do you smoke per day now"
+                  "display": "How many cigarettes per day do, or did, you smoke"
                 }
               ]
             },
@@ -1104,7 +1104,7 @@
                   "system": "http://snomed.info/sct",
                   "code": "266929003",
                   "version": "http://snomed.info/sct/900000000000207008/version/20260701",
-                  "display": "Smoking started (life style)"
+                  "display": "Smoking started"
                 }
               ]
             },
@@ -1321,7 +1321,7 @@
             "valueCoding": {
               "system": "http://snomed.info/sct",
               "code": "262202000",
-              "display": "Therapeutic (qualifier value)"
+              "display": "Therapeutic"
             }
           }
         ],
@@ -1331,7 +1331,7 @@
               "system": "http://snomed.info/sct",
               "code": "395218007",
               "version": "http://snomed.info/sct/900000000000207008/version/20260701",
-              "display": "Implantation of cardiac defibrillator (procedure)"
+              "display": "Implantation of internal cardiac defibrillator"
             },
             {
               "extension": [
@@ -1374,7 +1374,7 @@
                   "code": "129338005",
                   "system": "http://snomed.info/sct",
                   "version": "http://snomed.info/sct/900000000000207008/version/20260701",
-                  "display": "Implantation - action (qualifier value)"
+                  "display": "Surgical implantation - action"
                 }
               ]
             }

@@ -34,7 +34,7 @@
       {
         "system": "http://snomed.info/sct",
         "code": "90096001",
-        "display": "Cardiac stroke volume (observable entity)"
+        "display": "Stroke volume"
       },
       {
         "system": "http://loinc.org",
@@ -58,7 +58,7 @@
       {
         "system": "http://snomed.info/sct",
         "code": "244385005",
-        "display": "Entire left ventricle (body structure)"
+        "display": "Entire left cardiac ventricle"
       }
     ]
   },

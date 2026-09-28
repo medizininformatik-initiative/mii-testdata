@@ -135,7 +135,7 @@ Description: "Observation: Hämoglobin im Blut für Patient 1"
 * insert TestDataLabel
 * meta.source = "https://www.charite.de/fhir/kds-testdata"
 //* meta.profile[0] = "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab|1.0.7-alpha1"
-* insert AddLabObservation(LO_000006, 788-0, Erythrocyte distribution width [Entitic volume] by Automated count, mii-exa-test-data-patient-1, mii-exa-test-data-patient-1-encounter-1, 2024-02-15T12:00:00+01:00, 2024-02-15T12:00:00+01:00)
+* insert AddLabObservation(LO_000006, 788-0, Erythrocyte [DistWidth] in Blood by Automated count, mii-exa-test-data-patient-1, mii-exa-test-data-patient-1-encounter-1, 2024-02-15T12:00:00+01:00, 2024-02-15T12:00:00+01:00)
 * basedOn = Reference(mii-exa-test-data-patient-1-labrequest-1)
 * dataAbsentReason = $data-absent-reason#not-performed "Not Performed"
 
@@ -560,7 +560,7 @@ Description: "Observation: Troponin T unter Nachweisgrenze für Patient 1 (compa
 * valueQuantity = 0.014 $ucum#ug/L "microgram per liter"
 * valueQuantity.comparator = #<
 * interpretation = $v3-ObservationInterpretation#N "Normal"
-* method = $sct#414464004 "Immunoassay method (qualifier value)"
+* method = $sct#414464004 "Immunoassay method"
 * note.text = "Troponin T unterhalb der Nachweisgrenze; Probe leicht haemolytisch."
 * specimen.reference = "Specimen/mii-exa-test-data-patient-1-specimen-1"
 * specimen.identifier.system = "https://www.charite.de/fhir/sid/Bioproben"

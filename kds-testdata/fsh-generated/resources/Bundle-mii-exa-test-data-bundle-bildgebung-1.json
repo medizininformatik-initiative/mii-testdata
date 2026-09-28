@@ -1814,7 +1814,7 @@
             {
               "system": "http://fhir.de/CodeSystem/ifa/pzn",
               "code": "15205222",
-              "display": "XYDALBA"
+              "display": "Xydalba 500 mg Pulver für ein Konzentrat zur Herst. einer Infusionslösung 1 Durchstechfl. N1"
             },
             {
               "system": "http://fhir.de/CodeSystem/bfarm/atc",

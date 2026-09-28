@@ -56,6 +56,6 @@ Description: "ICU Procedure: MII PR ICU Beatmung"
 * extension[Dokumentationsdatum].valueDateTime = "2024-05-13T10:00:00+02:00"
 * extension[durchfuehrungsabsicht].valueCoding = $sct#262202000 "Therapeutic"
 * recorder = Reference(mii-exa-test-data-icu-practitioner-1)
-* bodySite.coding[snomed-ct] = $sct#44567001 "Trachea structure (body structure)"
+* bodySite.coding[snomed-ct] = $sct#44567001 "Tracheal structure"
 * bodySite.coding[snomed-ct].version = "http://snomed.info/sct/900000000000207008/version/20260701"
 * note.text = "Invasive Beatmung mit ultraprotektiver Lungen-Ruhigstellung unter VV-ECMO, strukturierte Beatmungsentwoehnung mit taeglichen Spontanatmungsversuchen, Extubation am 13.05."

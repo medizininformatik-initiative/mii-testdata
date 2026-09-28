@@ -44,7 +44,7 @@
       {
         "system": "http://snomed.info/sct",
         "code": "698832009",
-        "display": "Core body temperature measured in urinary bladder (observable entity)"
+        "display": "Core body temperature measured at urinary bladder"
       },
       {
         "system": "http://loinc.org",

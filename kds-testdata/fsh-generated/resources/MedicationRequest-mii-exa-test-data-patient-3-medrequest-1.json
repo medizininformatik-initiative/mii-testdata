@@ -25,7 +25,7 @@
       {
         "system": "http://fhir.de/CodeSystem/ifa/pzn",
         "code": "00651306",
-        "display": "Metamizol HEXAL® 500 mg"
+        "display": "Metamizol HEXAL® 500mg 20 Filmtbl."
       },
       {
         "system": "http://fhir.de/CodeSystem/bfarm/atc",

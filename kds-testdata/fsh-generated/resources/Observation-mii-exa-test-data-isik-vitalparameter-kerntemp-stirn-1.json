@@ -44,7 +44,7 @@
       {
         "system": "http://snomed.info/sct",
         "code": "1366425007",
-        "display": "Core body temperature measured at forehead (observable entity)"
+        "display": "Estimated core body temperature measured on forehead"
       }
     ]
   },

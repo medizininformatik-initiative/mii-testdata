@@ -50,7 +50,7 @@ InstanceOf: https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpert
 Usage: #example
 Description: "MII-ICU Koerpertemperatur Brust: 36.4 GradC"
 * insert IsikMuvBase(2026-05-12T11:00:00+02:00)
-* code.coding[sct] = $sct#248835004 "Breast temperature (observable entity)"
+* code.coding[sct] = $sct#248835004 "Breast temperature"
 * code.coding[loinc] = $loinc#8310-5 "Body temperature"
 * valueQuantity = 36.4 'Cel' "Grad Celsius"
 * bodySite = $sct#76752008 "Breast structure (body structure)"
@@ -61,10 +61,10 @@ InstanceOf: https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpert
 Usage: #example
 Description: "MII-ICU Koerpertemperatur Brustwirbelsaeule: 36.9 GradC"
 * insert IsikMuvBase(2026-05-12T11:00:00+02:00)
-* code.coding[sct] = $sct#364424001 "Thoracic spine temperature (observable entity)"
+* code.coding[sct] = $sct#364424001 "Thoracic spine temperature"
 * code.coding[loinc] = $loinc#8310-5 "Body temperature"
 * valueQuantity = 36.9 'Cel' "Grad Celsius"
-* bodySite = $sct#122495006 "Thoracic vertebral column structure (body structure)"
+* bodySite = $sct#122495006 "Thoracic spine structure"
 
 // Gelenk (Knie): 35.8 GradC
 Instance: mii-exa-test-data-isik-vitalparameter-temp-gelenk-1
@@ -72,7 +72,7 @@ InstanceOf: https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpert
 Usage: #example
 Description: "MII-ICU Koerpertemperatur Gelenk: 35.8 GradC"
 * insert IsikMuvBase(2026-05-12T11:05:00+02:00)
-* code.coding[sct] = $sct#250124002 "Joint temperature (observable entity)"
+* code.coding[sct] = $sct#250124002 "Joint temperature"
 * code.coding[loinc] = $loinc#8310-5 "Body temperature"
 * valueQuantity = 35.8 'Cel' "Grad Celsius"
 * bodySite = $sct#39352004 "Joint structure (body structure)"
@@ -83,10 +83,10 @@ InstanceOf: https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpert
 Usage: #example
 Description: "MII-ICU Koerpertemperatur Halswirbelsaeule: 36.8 GradC"
 * insert IsikMuvBase(2026-05-12T11:05:00+02:00)
-* code.coding[sct] = $sct#364419004 "Cervical spine temperature (observable entity)"
+* code.coding[sct] = $sct#364419004 "Cervical spine temperature"
 * code.coding[loinc] = $loinc#8310-5 "Body temperature"
 * valueQuantity = 36.8 'Cel' "Grad Celsius"
-* bodySite = $sct#122494005 "Cervical vertebral column structure (body structure)"
+* bodySite = $sct#122494005 "Structure of cervical vertebral column"
 
 // Lendenwirbelsaeule: 36.9 GradC
 Instance: mii-exa-test-data-isik-vitalparameter-temp-lws-1
@@ -97,7 +97,7 @@ Description: "MII-ICU Koerpertemperatur Lendenwirbelsaeule: 36.9 GradC"
 * code.coding[sct] = $sct#364429006 "Temperature of lumbar spine (observable entity)"
 * code.coding[loinc] = $loinc#8310-5 "Body temperature"
 * valueQuantity = 36.9 'Cel' "Grad Celsius"
-* bodySite = $sct#122496007 "Lumbar vertebral column structure (body structure)"
+* bodySite = $sct#122496007 "Lumbar spine structure"
 
 // Myokard: 37.0 GradC
 Instance: mii-exa-test-data-isik-vitalparameter-temp-myokard-1
@@ -107,7 +107,7 @@ Description: "MII-ICU Koerpertemperatur Myokard: 37.0 GradC"
 * insert IsikMuvBase(2026-05-12T11:05:00+02:00)
 * code.coding[loinc] = $loinc#8310-5 "Body temperature"
 * code.coding[IEEE-11073] = $11073-10101#188500
-* code.coding[specific-loinc] = $loinc#61009-7 "Myocardium temperature"
+* code.coding[specific-loinc] = $loinc#61009-7 "Myocardial temperature"
 * valueQuantity = 37.0 'Cel' "Grad Celsius"
 * bodySite = $sct#74281007 "Myocardium structure (body structure)"
 
@@ -129,7 +129,7 @@ InstanceOf: https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpert
 Usage: #example
 Description: "MII-ICU Koerpertemperatur Nasen-Rachen-Raum: 36.9 GradC"
 * insert IsikMuvBase(2026-05-12T11:10:00+02:00)
-* code.coding[sct] = $sct#698831002 "Core body temperature measured at nasopharynx (observable entity)"
+* code.coding[sct] = $sct#698831002 "Nasopharyngeal temperature"
 * code.coding[loinc] = $loinc#8310-5 "Body temperature"
 * code.coding[IEEE-11073] = $11073-10101#150380
 * code.coding[specific-loinc] = $loinc#60838-0 "Nasopharyngeal temperature"
@@ -142,7 +142,7 @@ InstanceOf: https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpert
 Usage: #example
 Description: "MII-ICU Koerpertemperatur Stirn: 36.3 GradC"
 * insert IsikMuvBase(2026-05-12T11:10:00+02:00)
-* code.coding[sct] = $sct#415922000 "Forehead temperature (observable entity)"
+* code.coding[sct] = $sct#415922000 "Forehead temperature"
 * code.coding[loinc] = $loinc#8310-5 "Body temperature"
 * valueQuantity = 36.3 'Cel' "Grad Celsius"
 * bodySite = $sct#52795006 "Forehead structure (body structure)"
@@ -172,7 +172,7 @@ Description: "MII-ICU Koerpertemperatur rektal: 37.6 GradC"
 * insert IsikTempKernBase(2026-05-12T11:15:00+02:00)
 * code.coding[loinc] = $loinc#8310-5 "Body temperature"
 * code.coding[coretemp-loinc] = $loinc#8329-5 "Body temperature - Core"
-* code.coding[snomed] = $sct#307047009 "Rectal temperature (observable entity)"
+* code.coding[snomed] = $sct#307047009 "Rectal temperature"
 * code.coding[specific-loinc] = $loinc#8332-9 "Rectal temperature"
 * code.coding[specific-IEEE-11073] = $11073-10101#188420
 * valueQuantity = 37.6 'Cel' "Grad Celsius"
@@ -199,10 +199,10 @@ Description: "MII-ICU Koerpertemperatur axillaer: 36.6 GradC"
 * insert IsikTempKernBase(2026-05-12T11:20:00+02:00)
 * code.coding[loinc] = $loinc#8310-5 "Body temperature"
 * code.coding[coretemp-loinc] = $loinc#8329-5 "Body temperature - Core"
-* code.coding[snomed] = $sct#415882003 "Axillary temperature (observable entity)"
+* code.coding[snomed] = $sct#415882003 "Axillary temperature"
 * code.coding[specific-loinc] = $loinc#8328-7 "Axillary temperature"
 * valueQuantity = 36.6 'Cel' "Grad Celsius"
-* bodySite = $sct#91470000 "Axillary fossa structure (body structure)"
+* bodySite = $sct#91470000 "Axillary region structure"
 
 // Harnblase (Blasenkatheter mit Temperatursonde): 37.4 GradC
 Instance: mii-exa-test-data-isik-vitalparameter-temp-harnblase-1
@@ -212,7 +212,7 @@ Description: "MII-ICU Koerpertemperatur Harnblase: 37.4 GradC"
 * insert IsikTempKernBase(2026-05-12T11:20:00+02:00)
 * code.coding[loinc] = $loinc#8310-5 "Body temperature"
 * code.coding[coretemp-loinc] = $loinc#8329-5 "Body temperature - Core"
-* code.coding[snomed] = $sct#698832009 "Core body temperature measured in urinary bladder (observable entity)"
+* code.coding[snomed] = $sct#698832009 "Core body temperature measured at urinary bladder"
 * code.coding[specific-loinc] = $loinc#8334-5 "Body temperature - Urinary bladder"
 * valueQuantity = 37.4 'Cel' "Grad Celsius"
 * bodySite = $sct#89837001 "Urinary bladder structure (body structure)"
@@ -225,8 +225,8 @@ Description: "MII-ICU Koerpertemperatur Leiste: 36.8 GradC"
 * insert IsikTempKernBase(2026-05-12T11:20:00+02:00)
 * code.coding[loinc] = $loinc#8310-5 "Body temperature"
 * code.coding[coretemp-loinc] = $loinc#8329-5 "Body temperature - Core"
-* code.coding[snomed] = $sct#415929009 "Groin temperature (observable entity)"
-* code.coding[specific-loinc] = $loinc#104063-3 "Groin temperature"
+* code.coding[snomed] = $sct#415929009 "Groin temperature"
+* code.coding[specific-loinc] = $loinc#104063-3 "Body temperature - Groin"
 * valueQuantity = 36.8 'Cel' "Grad Celsius"
 * bodySite = $sct#26893007 "Inguinal region structure (body structure)"
 
@@ -266,11 +266,11 @@ Description: "MII-ICU Koerpertemperatur sublingual: 36.9 GradC"
 * insert IsikTempKernBase(2026-05-12T11:25:00+02:00)
 * code.coding[loinc] = $loinc#8310-5 "Body temperature"
 * code.coding[coretemp-loinc] = $loinc#8329-5 "Body temperature - Core"
-* code.coding[snomed] = $sct#415945006 "Oral temperature (observable entity)"
+* code.coding[snomed] = $sct#415945006 "Oral temperature"
 * code.coding[specific-loinc] = $loinc#8331-1 "Oral temperature"
 * code.coding[specific-IEEE-11073] = $11073-10101#188424
 * valueQuantity = 36.9 'Cel' "Grad Celsius"
-* bodySite = $sct#123851003 "Region of oral cavity (body structure)"
+* bodySite = $sct#123851003 "Mouth region structure"
 
 // Vaginal: 37.2 GradC
 Instance: mii-exa-test-data-isik-vitalparameter-temp-vaginal-1
@@ -280,7 +280,7 @@ Description: "MII-ICU Koerpertemperatur vaginal: 37.2 GradC"
 * insert IsikTempKernBase(2026-05-12T11:30:00+02:00)
 * code.coding[loinc] = $loinc#8310-5 "Body temperature"
 * code.coding[coretemp-loinc] = $loinc#8329-5 "Body temperature - Core"
-* code.coding[snomed] = $sct#364246006 "Vaginal temperature (observable entity)"
+* code.coding[snomed] = $sct#364246006 "Temperature of vagina"
 * valueQuantity = 37.2 'Cel' "Grad Celsius"
 * bodySite = $sct#76784001 "Vaginal structure (body structure)"
 
@@ -292,6 +292,6 @@ Description: "MII-ICU Koerperkerntemperatur Stirn: 36.9 GradC"
 * insert IsikTempKernBase(2026-05-12T11:30:00+02:00)
 * code.coding[loinc] = $loinc#8310-5 "Body temperature"
 * code.coding[coretemp-loinc] = $loinc#8329-5 "Body temperature - Core"
-* code.coding[snomed] = $sct#1366425007 "Core body temperature measured at forehead (observable entity)"
+* code.coding[snomed] = $sct#1366425007 "Estimated core body temperature measured on forehead"
 * valueQuantity = 36.9 'Cel' "Grad Celsius"
 * bodySite = $sct#52795006 "Forehead structure (body structure)"
