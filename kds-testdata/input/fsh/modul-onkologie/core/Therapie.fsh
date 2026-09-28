@@ -192,7 +192,7 @@ Description: "Onkologie Test Medikation - Carboplatin"
 * partOf[systemischeTherapie] = Reference(mii-exa-test-data-onko-systemische-therapie-1)
 * note.text = "CarboTax Schema"
 * dosage.text = "AUC5 i.v. bei Bedarfsanpassung nach Nierenfunktion"
-* dosage.asNeededCodeableConcept = $SCT#428165003 "Renal impairment (disorder)"
+* dosage.asNeededCodeableConcept = $SCT#236423003 "Renal impairment"
 * dosage.timing.repeat.boundsDuration = 8 'wk'
 * dosage.timing.repeat.boundsDuration.unit = "Wochen"
 * dosage.timing.repeat.when[+] = #MORN

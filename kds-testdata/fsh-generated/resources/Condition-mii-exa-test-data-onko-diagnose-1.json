@@ -31,7 +31,7 @@
           {
             "system": "http://terminology.hl7.org/CodeSystem/icd-o-3",
             "code": "8461/3",
-            "display": "Seröses Oberflächenpapillom"
+            "display": "Hochgradiges seröses Karzinom"
           }
         ],
         "text": "High-grade seröses Karzinom"
@@ -43,9 +43,9 @@
       "valueCodeableConcept": {
         "coding": [
           {
-            "code": "726019003",
+            "code": "718220008",
             "system": "http://snomed.info/sct",
-            "display": "Hereditary breast and ovarian cancer syndrome (disorder)"
+            "display": "Hereditary breast and ovarian cancer syndrome"
           }
         ]
       }

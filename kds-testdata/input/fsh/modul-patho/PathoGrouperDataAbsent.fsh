@@ -79,7 +79,7 @@ Description: "Intraoperativ-Grouper mit Komponente ohne Wert: histologischer Typ
 * performer = Reference(mii-exa-test-data-patho-practitioner-1)
 * identifier.system = "https://www.charite.de/fhir/sid/patho/befund"
 * identifier.value = "E_24_001_INTRAOP_DAR"
-* method = $sct#20135006 "Frozen section procedure (procedure)"
+* method = $sct#817011007 "Tissue frozen section technique"
 * basedOn = Reference(mii-exa-test-data-patho-request-1)
 * specimen = Reference(mii-exa-test-data-patho-specimen-03-part)
 * bodySite = $sct#41216001 "Prostate"

@@ -2009,9 +2009,9 @@
             "code": {
               "coding": [
                 {
-                  "code": "44641-9",
+                  "code": "94735-8",
                   "system": "http://loinc.org",
-                  "display": "Percent of Gleason pattern 4 and 5 in Prostate tumor"
+                  "display": "Prostate tumor area with Gleason pattern 4+5/Total tumor area [Area Fraction] in Prostate tumor by Microscopy"
                 }
               ]
             },
@@ -2867,9 +2867,9 @@
         "method": {
           "coding": [
             {
-              "code": "20135006",
+              "code": "817011007",
               "system": "http://snomed.info/sct",
-              "display": "Frozen section procedure (procedure)"
+              "display": "Tissue frozen section technique"
             }
           ]
         },

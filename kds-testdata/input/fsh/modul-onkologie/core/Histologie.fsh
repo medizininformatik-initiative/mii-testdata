@@ -82,7 +82,7 @@ Description: "Onkologie Test Histologie ICD-O-3 - Seröses Adenokarzinom"
 * subject = Reference(mii-exa-test-data-onko-patient-1)
 * encounter = Reference(mii-exa-test-data-onko-encounter-1)
 * effectiveDateTime = "2021-10-05"
-* valueCodeableConcept.coding = $ICDO3#8441/3 "Seröses Karzinom o.n.A."
+* valueCodeableConcept.coding = $ICDO3#8441/3 "Seröses Zystadenokarzinom o.n.A."
 * valueCodeableConcept.text = "Seröses Adenokarzinom"
 * bodySite.coding[Seitenlokalisation] = $mii-cs-onko-seitenlokalisation#L "links"
 * bodySite.coding[icd-o-3] = $ICDO3#C56.9 "Ovar"

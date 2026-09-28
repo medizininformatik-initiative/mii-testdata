@@ -1566,7 +1566,7 @@
               {
                 "code": "78076003",
                 "system": "http://snomed.info/sct",
-                "display": "Structure of crystalline lens (body structure)"
+                "display": "Lens structure"
               }
             ]
           }
@@ -1889,9 +1889,9 @@
         "code": {
           "coding": [
             {
-              "code": "609569007",
+              "code": "609568004",
               "system": "http://snomed.info/sct",
-              "display": "Diabetes mellitus due to genetic defect in beta cell function (disorder)"
+              "display": "Diabetes mellitus due to genetic defect in beta cell function"
             },
             {
               "code": "99886",

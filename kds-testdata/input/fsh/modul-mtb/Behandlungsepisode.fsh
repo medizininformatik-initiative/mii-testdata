@@ -85,7 +85,7 @@ Description: "Test instance for MTB primary tumor diagnosis with all MS elements
 * extension[morphology-behavior-icdo3].valueCodeableConcept.coding = $ICDO3#8140/3 "Adenokarzinom o.n.A."
 * extension[morphology-behavior-icdo3].valueCodeableConcept.text = "Adenokarzinom o.n.A."
 * extension[dueTo].valueCodeableConcept = $SCT#77176002 "Smoker (finding)"
-* extension[occurredFollowing].valueCodeableConcept = $SCT#65958008 "Chronic disease of respiratory system (disorder)"
+* extension[occurredFollowing].valueCodeableConcept = $SCT#17097001 "Chronic disease of respiratory system"
 * extension[ReferenzPrimaerdiagnose].valueReference = Reference(mii-exa-test-data-mtb-diagnose-primaertumor-2)
 
 // Variante: abgeschlossene Diagnose mit abatementDateTime + onsetAge (MS-Choice-Varianten)

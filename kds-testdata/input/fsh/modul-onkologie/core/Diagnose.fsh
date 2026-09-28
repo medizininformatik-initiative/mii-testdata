@@ -30,9 +30,9 @@ Description: "Onkologie Test Diagnose - Ovarialkarzinom"
 * identifier.value = "ONKO-DIAG-2021-001"
 * evidence.code = $SCT#21522001 "Abdominal pain (finding)"
 * evidence.detail = Reference(mii-exa-test-data-onko-liste-evidenz-1)
-* extension[morphology-behavior-icdo3].valueCodeableConcept.coding = $ICDO3#8461/3 "Seröses Oberflächenpapillom"
+* extension[morphology-behavior-icdo3].valueCodeableConcept.coding = $ICDO3#8461/3 "Hochgradiges seröses Karzinom"
 * extension[morphology-behavior-icdo3].valueCodeableConcept.text = "High-grade seröses Karzinom"
-* extension[dueTo].valueCodeableConcept = $SCT#726019003 "Hereditary breast and ovarian cancer syndrome (disorder)"
+* extension[dueTo].valueCodeableConcept = $SCT#718220008 "Hereditary breast and ovarian cancer syndrome"
 * extension[ReferenzPrimaerdiagnose].valueReference = Reference(mii-exa-test-data-onko-diagnose-2)
 
 // Variante: abgeschlossene Diagnose mit onsetAge (inkl. Lebensphase) und abatementDateTime

@@ -3831,9 +3831,9 @@
             },
             {
               "system": "http://fhir.de/CodeSystem/bfarm/alpha-id",
-              "code": "I29723",
+              "code": "I29955",
               "version": "2024",
-              "display": "Bösartige Neubildung des Kolons o.n.A."
+              "display": "Bösartige Neubildung des Kolons"
             },
             {
               "system": "http://snomed.info/sct",
@@ -3907,9 +3907,9 @@
             },
             {
               "system": "http://fhir.de/CodeSystem/bfarm/alpha-id",
-              "code": "I29723",
+              "code": "I29955",
               "version": "2024",
-              "display": "Bösartige Neubildung des Kolons o.n.A."
+              "display": "Bösartige Neubildung des Kolons"
             },
             {
               "system": "http://snomed.info/sct",

@@ -5171,9 +5171,9 @@
         "method": {
           "coding": [
             {
-              "code": "702659008",
+              "code": "702660003",
               "system": "http://snomed.info/sct",
-              "display": "Test strip technique (qualifier value)"
+              "display": "Test strip"
             }
           ]
         }

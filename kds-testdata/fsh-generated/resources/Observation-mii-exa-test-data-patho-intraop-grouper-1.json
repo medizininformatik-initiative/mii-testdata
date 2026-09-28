@@ -74,9 +74,9 @@
   "method": {
     "coding": [
       {
-        "code": "20135006",
+        "code": "817011007",
         "system": "http://snomed.info/sct",
-        "display": "Frozen section procedure (procedure)"
+        "display": "Tissue frozen section technique"
       }
     ]
   },

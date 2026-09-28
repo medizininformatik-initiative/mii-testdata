@@ -88,7 +88,7 @@ Description: "MII-ICU Intrakranieller Druck (ICP): 12 mmHg"
 * code.coding[loinc] = $loinc#60956-0 "Intracranial pressure (ICP)"
 * code.coding[IEEE-11073] = $11073-10101#153608
 * valueQuantity = 12 'mm[Hg]' "millimeter Mercury column"
-* bodySite = $sct#731998000 "Entire intracranial subarachnoid space (body structure)"
+* bodySite = $sct#731998000 "Entire intracranial structure"
 
 // Koerpergewicht-Percentil (altersabhaengig): 45 %
 Instance: mii-exa-test-data-isik-vitalparameter-gewicht-percentil-1
@@ -236,6 +236,10 @@ Description: "MII-ICU Pulmonalarterieller Wedge-Druck: 12 mmHg"
 * code.coding[loinc] = $loinc#75994-4 "Pulmonary artery wedge pressure"
 * code.coding[IEEE-11073] = $11073-10101#150052
 * valueQuantity = 12 'mm[Hg]' "millimeter Mercury column"
+// 430160002 heisst "Entire vein of lung" — fuer einen pulmonalarteriellen
+// Wedge-Druck waere 314218007 "Pulmonary artery branch" richtig. Hier NICHT
+// korrigierbar: sd-mii-icu-pulmonalarterieller-wedge-druck fixiert
+// Observation.bodySite auf genau diesen Code. Befund fuer das ISiK-Profil.
 * bodySite = $sct#430160002 "Entire vein of lung"
 
 // Pulmonalvaskulaerer Widerstandsindex: 220 dyn.s/cm5/m2

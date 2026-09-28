@@ -80,7 +80,7 @@ Description: "Clinical Diagnosis: Ectopia lentis bei Marfan-Syndrom, nach Lensek
 * code.coding[=].extension[0].url = "http://fhir.de/StructureDefinition/seitenlokalisation"
 * code.coding[=].extension[0].valueCoding = $seitenlokalisation#B "beiderseits"
 * code.text = "Linsenluxation beidseits bei Marfan-Syndrom, nach Lensektomie behoben"
-* bodySite = $sct#78076003 "Structure of crystalline lens (body structure)"
+* bodySite = $sct#78076003 "Lens structure"
 * subject = Reference(mii-exa-test-data-seltene-patient-1)
 * encounter = Reference(mii-exa-test-data-seltene-encounter-1)
 * onsetAge = 25 'a' "Jahre"
@@ -158,7 +158,7 @@ Description: "Genetic Diagnosis: Transienter neonataler Diabetes mellitus (6q24)
 * extension[Feststellungsdatum].url = "http://hl7.org/fhir/StructureDefinition/condition-assertedDate"
 * extension[Feststellungsdatum].valueDateTime = "1995-03-01"
 * category = $sct#782964007 "Genetic disease"
-* code.coding[+] = $sct#609569007 "Diabetes mellitus due to genetic defect in beta cell function (disorder)"
+* code.coding[+] = $sct#609568004 "Diabetes mellitus due to genetic defect in beta cell function"
 * code.coding[+] = $orpha#99886 "Transient neonatal diabetes mellitus"
 * code.coding[+] = $icd-10-gm#P70.2 "Diabetes mellitus beim Neugeborenen"
 * code.coding[=].version = "2025"

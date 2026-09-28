@@ -580,4 +580,4 @@ Description: "Observation: Nitrit im Urin negativ für Patient 1 (valueCodeableC
 * valueCodeableConcept.coding.version = "http://snomed.info/sct/900000000000207008/version/20240201"
 * valueCodeableConcept.text = "negativ"
 * interpretation = $v3-ObservationInterpretation#N "Normal"
-* method = $sct#702659008 "Test strip technique (qualifier value)"
+* method = $sct#702660003 "Test strip"

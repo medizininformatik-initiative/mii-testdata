@@ -46,7 +46,7 @@ Description: "Gruppierung der intraoperativen Beobachtungen (Schnellschnitt)"
 * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Intraoperativer Grouper: Schnellschnitt-Befund Stanze 01</div>"
 * identifier.system = "https://www.charite.de/fhir/sid/patho/befund"
 * identifier.value = "E_24_001_INTRAOP"
-* method = $sct#20135006 "Frozen section procedure (procedure)"
+* method = $sct#817011007 "Tissue frozen section technique"
 * basedOn = Reference(mii-exa-test-data-patho-request-1)
 * specimen = Reference(mii-exa-test-data-patho-specimen-01-part)
 * bodySite = $sct#41216001 "Prostate"

@@ -58,9 +58,9 @@
       "asNeededCodeableConcept": {
         "coding": [
           {
-            "code": "428165003",
+            "code": "236423003",
             "system": "http://snomed.info/sct",
-            "display": "Renal impairment (disorder)"
+            "display": "Renal impairment"
           }
         ]
       }

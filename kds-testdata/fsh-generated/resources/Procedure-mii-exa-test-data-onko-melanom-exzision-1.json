@@ -33,7 +33,7 @@
           }
         ],
         "system": "http://fhir.de/CodeSystem/bfarm/ops",
-        "code": "5-895.34",
+        "code": "5-895.07",
         "display": "Radikale und ausgedehnte Exzision von erkranktem Gewebe an Haut und Unterhaut: Ohne primären Wundverschluss: Oberarm und Ellenbogen",
         "version": "2021"
       }

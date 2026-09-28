@@ -163,7 +163,7 @@ Description: "Onkologie Test Mamma Sozialdienst - Psychosoziale Beratung"
 * basedOn[tumorkonferenz] = Reference(mii-exa-test-data-onko-tumorkonferenz-1)
 * bodySite.coding[snomed-ct] = $SCT#76752008 "Breast structure (body structure)"
 * bodySite.coding[snomed-ct].version = "http://snomed.info/sct/900000000000207008/version/20240201"
-* code.coding[ops] = $OPS#9-401.5 "(Neuro-)psychologische und psychosoziale Interventionen: Sozialrechtliche Beratung"
+* code.coding[ops] = $OPS#9-401.0 "Psychosoziale Interventionen: Sozialrechtliche Beratung"
 * code.coding[ops].version = "2021"
 // Ohne Seitenlokalisation: Die Extension bindet REQUIRED gegen
 // KBV_VS_SFHIR_ICD_SEITENLOKALISATION, und die kennt nur R, L und B.

@@ -165,7 +165,7 @@ Description: "Onkologie Test Melanom Exzision - Oberarm"
 * status = #completed
 // category is inherited from parent profile MII_PR_Onko_Operation
 * code.coding[sct] = $SCT#177281002 "Excision of melanoma (procedure)"
-* code.coding[ops] = $OPS#5-895.34 "Radikale und ausgedehnte Exzision von erkranktem Gewebe an Haut und Unterhaut: Ohne primären Wundverschluss: Oberarm und Ellenbogen"
+* code.coding[ops] = $OPS#5-895.07 "Radikale und ausgedehnte Exzision von erkranktem Gewebe an Haut und Unterhaut: Ohne primären Wundverschluss: Oberarm und Ellenbogen"
 * code.coding[ops].version = "2021"
 * code.coding[ops].extension[Seitenlokalisation].valueCoding = $icd-seitenlokalisation#L "links"
 * subject = Reference(mii-exa-test-data-onko-patient-1)

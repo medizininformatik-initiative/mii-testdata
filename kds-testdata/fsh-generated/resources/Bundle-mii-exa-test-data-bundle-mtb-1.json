@@ -336,9 +336,9 @@
             "valueCodeableConcept": {
               "coding": [
                 {
-                  "code": "65958008",
+                  "code": "17097001",
                   "system": "http://snomed.info/sct",
-                  "display": "Chronic disease of respiratory system (disorder)"
+                  "display": "Chronic disease of respiratory system"
                 }
               ]
             }

@@ -178,7 +178,7 @@ Description: "Total Gleason score in biopsy specimens"
 // component-DAR auf Finding-Ebene: Anteil Gleason-Muster 4/5 nicht bestimmbar.
 // (Die Grouper-Profile tragen ihre eigenen component-DAR-Instanzen, siehe
 //  PathoGrouperDataAbsent.fsh.)
-* component.code = $loinc#44641-9 "Percent of Gleason pattern 4 and 5 in Prostate tumor"
+* component.code = $loinc#94735-8 "Prostate tumor area with Gleason pattern 4+5/Total tumor area [Area Fraction] in Prostate tumor by Microscopy"
 * component.dataAbsentReason = $data-absent-reason#unknown "Unknown"
 * derivedFrom[0] = Reference(mii-exa-test-data-patho-primary-gleason-pattern)
 * derivedFrom[+] = Reference(mii-exa-test-data-patho-secondary-gleason-pattern)

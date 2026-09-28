@@ -122,7 +122,7 @@
                 {
                   "system": "http://terminology.hl7.org/CodeSystem/icd-o-3",
                   "code": "8461/3",
-                  "display": "Seröses Oberflächenpapillom"
+                  "display": "Hochgradiges seröses Karzinom"
                 }
               ],
               "text": "High-grade seröses Karzinom"
@@ -134,9 +134,9 @@
             "valueCodeableConcept": {
               "coding": [
                 {
-                  "code": "726019003",
+                  "code": "718220008",
                   "system": "http://snomed.info/sct",
-                  "display": "Hereditary breast and ovarian cancer syndrome (disorder)"
+                  "display": "Hereditary breast and ovarian cancer syndrome"
                 }
               ]
             }
@@ -1010,7 +1010,7 @@
             {
               "code": "8441/3",
               "system": "http://terminology.hl7.org/CodeSystem/icd-o-3",
-              "display": "Seröses Karzinom o.n.A."
+              "display": "Seröses Zystadenokarzinom o.n.A."
             }
           ],
           "text": "Seröses Adenokarzinom"
@@ -5386,9 +5386,9 @@
             "asNeededCodeableConcept": {
               "coding": [
                 {
-                  "code": "428165003",
+                  "code": "236423003",
                   "system": "http://snomed.info/sct",
-                  "display": "Renal impairment (disorder)"
+                  "display": "Renal impairment"
                 }
               ]
             }
@@ -8323,8 +8323,8 @@
           "coding": [
             {
               "system": "http://fhir.de/CodeSystem/bfarm/ops",
-              "code": "9-401.5",
-              "display": "(Neuro-)psychologische und psychosoziale Interventionen: Sozialrechtliche Beratung",
+              "code": "9-401.0",
+              "display": "Psychosoziale Interventionen: Sozialrechtliche Beratung",
               "version": "2021"
             }
           ]
@@ -10157,7 +10157,7 @@
                 }
               ],
               "system": "http://fhir.de/CodeSystem/bfarm/ops",
-              "code": "5-895.34",
+              "code": "5-895.07",
               "display": "Radikale und ausgedehnte Exzision von erkranktem Gewebe an Haut und Unterhaut: Ohne primären Wundverschluss: Oberarm und Ellenbogen",
               "version": "2021"
             }
