@@ -201,6 +201,34 @@ jobs:
         path: validator_cli.jar
         key: validator-jar-${{ env.VALIDATOR_VERSION }}
 
+    # Der Validator fragt seriell, und diese Wartezeit IST die Laufzeit des
+    # Jobs: Im Lauf 36301663856 entfielen von den 2,0 Stunden des Pakets
+    # mikrobio-1 genau 1,9 Stunden auf 449 Anfragen an den SU-TermServ
+    # (Beleg im Proxy-Protokoll, Artefakt nginx-tx-7). Davon waren 380
+    # erfolgreich und kosteten zusammen rund 45 Minuten — und dieselben
+    # Wertemengen werden in jedem Paket und in jeder Nacht erneut gefragt.
+    # Ein Antwortcache schneidet diese 45 Minuten weg; er ist der Unterschied
+    # zwischen dem Timeout und einem Ergebnis. Die 69 Anfragen, die je 60
+    # Sekunden in den Client-Timeout liefen, bleiben davon unberuehrt —
+    # Fehlschlaege landen nicht im Cache.
+    #
+    # Je Paket ein eigener Schluessel, denn im naechtlichen Vollauf validiert
+    # ein Paketname immer dieselben Dateien; sein eigener Cache von gestern
+    # passt also besser als der irgendeines anderen Pakets. Die generische
+    # restore-key-Stufe faengt neue Pakete ab. `github.run_id` im Schluessel
+    # sorgt dafuer, dass der Cache ueberhaupt fortgeschrieben wird: Bei einem
+    # exakten Treffer speichert actions/cache nicht. Dieselbe Bauart wie bei
+    # der Advisor-Kontrolle in ci.yml.
+    - name: Cache terminology responses
+      if: steps.tx.outputs.tx != ''
+      uses: actions/cache@v4
+      with:
+        path: .txcache
+        key: tx-cache-v1-${{ matrix.paket.name }}-${{ github.run_id }}
+        restore-keys: |
+          tx-cache-v1-${{ matrix.paket.name }}-
+          tx-cache-v1-
+
     - name: Download validator
       if: steps.tx.outputs.tx != ''
       run: |
@@ -224,9 +252,14 @@ jobs:
         # aufloesen; validiert wird aber nur, was in $ziele steht.
         # -authorise-non-conformant-tx-servers, weil validator_cli den
         # SU-TermServ sonst ablehnt und mit 1 endet.
+        # -txCache braucht einen ABSOLUTEN Pfad; an einem relativen ../-Pfad
+        # stirbt der Validator mit "Computed path does not start with first
+        # element" (derselbe Fallstrick wie in ci.yml).
+        mkdir -p "$GITHUB_WORKSPACE/.txcache"
         java -Xmx14g -jar validator_cli.jar $ziele \
           -version 4.0.1 $IGS -ig "$RES" \
           -tx "$TX" -authorise-non-conformant-tx-servers \
+          -txCache "$GITHUB_WORKSPACE/.txcache" \
           -advisor-file kds-testdata/advisor.json \
           -output "$GITHUB_WORKSPACE/validation-tx.json" || true
         [ -s validation-tx.json ] || {
