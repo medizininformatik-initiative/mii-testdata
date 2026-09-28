@@ -58,7 +58,10 @@ Description: "Onkologie Test Strahlentherapie - Adjuvante Bestrahlung"
 * reasonReference = Reference(mii-exa-test-data-onko-diagnose-1)
 * basedOn = Reference(mii-exa-test-data-onko-tumorkonferenz-2)
 * partOf = Reference(mii-exa-test-data-onko-verlauf-1)
-* code.coding[ops].extension[Seitenlokalisation].valueCoding = $icd-seitenlokalisation#T "trifft nicht zu"
+// Ohne Seitenlokalisation: Die Extension bindet REQUIRED gegen
+// KBV_VS_SFHIR_ICD_SEITENLOKALISATION, und die kennt nur R, L und B.
+// 'trifft nicht zu' und 'unbekannt' gibt es dort nicht — beides sagt man
+// hier, indem man keine Seite behauptet.
 * extension[Dokumentationsdatum].valueDateTime = "2022-03-16"
 * extension[durchfuehrungsabsicht].valueCoding = $SCT#262202000 "Therapeutic"
 * extension[Intention].valueCodeableConcept.text = "kurativ"
@@ -94,7 +97,6 @@ Description: "Onkologie Test Systemische Therapie - Neoadjuvante Chemotherapie C
 * usedCode.coding.system = $mii-cs-onko-systemische-therapie-protokolle
 * usedCode.coding.code = #CarboTax
 * usedCode.coding.display = "CarboTax"
-* code.coding[ops].extension[Seitenlokalisation].valueCoding = $icd-seitenlokalisation#T "trifft nicht zu"
 * extension[Dokumentationsdatum].valueDateTime = "2021-09-06"
 * extension[durchfuehrungsabsicht].valueCoding = $SCT#262202000 "Therapeutic"
 * extension[Intention].valueCodeableConcept.text = "kurativ"
@@ -259,7 +261,6 @@ Description: "Onkologie Test Strahlentherapie Bestrahlung - mit allen Dosisangab
 * extension[Boost].valueCodeableConcept = $mii-cs-onko-strahlentherapie-boost#SIB "simultan integrierter Boost"
 * bodySite.coding[snomed-ct] = $SCT#12921003 "Pelvic structure (body structure)"
 * bodySite.coding[snomed-ct].version = "http://snomed.info/sct/900000000000207008/version/20240201"
-* code.coding[ops].extension[Seitenlokalisation].valueCoding = $icd-seitenlokalisation#T "trifft nicht zu"
 * encounter = Reference(mii-exa-test-data-onko-encounter-1)
 * extension[Dokumentationsdatum].valueDateTime = "2022-03-16"
 * extension[durchfuehrungsabsicht].valueCoding = $SCT#262202000 "Therapeutic"
@@ -306,7 +307,6 @@ Description: "Onkologie Test Nuklearmedizinische Bestrahlung - Radiojod-Therapie
 * extension[Boost].valueCodeableConcept = $mii-cs-onko-strahlentherapie-boost#N "nein, ohne Boost"
 * bodySite.coding[snomed-ct] = $SCT#69748006 "Thyroid structure (body structure)"
 * bodySite.coding[snomed-ct].version = "http://snomed.info/sct/900000000000207008/version/20240201"
-* code.coding[ops].extension[Seitenlokalisation].valueCoding = $icd-seitenlokalisation#T "trifft nicht zu"
 * encounter = Reference(mii-exa-test-data-onko-encounter-1)
 * extension[Dokumentationsdatum].valueDateTime = "2022-04-04"
 * extension[durchfuehrungsabsicht].valueCoding = $SCT#262202000 "Therapeutic"

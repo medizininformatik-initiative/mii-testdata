@@ -11,8 +11,7 @@ Description: "Familienanamnese: Mother with Marfan syndrome - all MS elements in
 * insert TestDataLabel
 * meta.source = "https://www.charite.de/fhir/kds-testdata"
 // vonSEBetroffen extension (required min=1)
-* extension[+].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-ex-seltene-von-se-betroffen"
-* extension[=].valueCodeableConcept = $sct#373066001 "Yes"
+* extension[vonSEBetroffen].valueCodeableConcept = $sct#373066001 "Yes"
 * status = #completed
 * date = "2025-03-10"
 * patient = Reference(mii-exa-test-data-seltene-patient-1)
@@ -55,8 +54,7 @@ Usage: #example
 Description: "Familienanamnese: Father not affected - tests vonSEBetroffen=No, deceasedAge"
 * insert TestDataLabel
 * meta.source = "https://www.charite.de/fhir/kds-testdata"
-* extension[+].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-ex-seltene-von-se-betroffen"
-* extension[=].valueCodeableConcept = $sct#373067005 "No"
+* extension[vonSEBetroffen].valueCodeableConcept = $sct#373067005 "No"
 * status = #completed
 * patient = Reference(mii-exa-test-data-seltene-patient-1)
 * relationship = $sct#66839005 "Father"
@@ -82,8 +80,7 @@ Usage: #example
 Description: "Familienanamnese: Bruder, bisher nicht betroffen - tests age[x], date, reasonCode, reasonReference"
 * insert TestDataLabel
 * meta.source = "https://www.charite.de/fhir/kds-testdata"
-* extension[+].url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-ex-seltene-von-se-betroffen"
-* extension[=].valueCodeableConcept = $sct#373067005 "No"
+* extension[vonSEBetroffen].valueCodeableConcept = $sct#373067005 "No"
 * status = #completed
 * date = "2025-03-10"
 * patient = Reference(mii-exa-test-data-seltene-patient-1)

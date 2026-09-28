@@ -88,6 +88,11 @@ Description: "Lungenfunktion sG_tot: 0.74 /kPa.s (erniedrigt)"
 * insert LufuObsBase
 * partOf = Reference(mii-exa-test-data-lungenfunktion-bodyplethysmographie-messung-1)
 * code.coding[sct] = $sct20260701#79412009 "Specific airway conductance (observable entity)"
+// '/kPA.s' ist kein gueltiges UCUM ('kPA' gibt es nicht; richtig waere
+// '/(kPa.s)', denn sGaw = Gaw/TGV hat die Einheit 1/(kPa*s)). Hier NICHT
+// korrigierbar: mii-pr-lungenfunktion-sg-total setzt value[x].code und
+// value[x].unit per patternCode/patternString auf genau diese Schreibweise,
+// SUSHI lehnt jede Abweichung ab. Befund fuer das Lungenfunktion-Modul.
 * valueQuantity = 0.74 '/kPA.s' "/kPA*s"
 * interpretation = $v3-ObservationInterpretation#L "Low"
 * method = $sct20260701#249862003 "Sitting upright (finding)"

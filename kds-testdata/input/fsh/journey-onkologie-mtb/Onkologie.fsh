@@ -252,7 +252,10 @@ Description: "Onko Systemische Therapie: Pembrolizumab-Immuntherapie (Patient 14
 * code.coding[systemische_therapie_art] = $mii-cs-onko-therapie-typ#IM "Immun-/Antikörpertherapie"
 * code.coding[ops] = $OPS#8-54 "Zytostatische Chemotherapie, Immuntherapie und antiretrovirale Therapie"
 * code.coding[ops].version = "2024"
-* code.coding[ops].extension[Seitenlokalisation].valueCoding = $icd-seitenlokalisation#T "trifft nicht zu"
+// Ohne Seitenlokalisation: Die Extension bindet REQUIRED gegen
+// KBV_VS_SFHIR_ICD_SEITENLOKALISATION, und die kennt nur R, L und B.
+// 'trifft nicht zu' und 'unbekannt' gibt es dort nicht — beides sagt man
+// hier, indem man keine Seite behauptet.
 * subject = Reference(mii-exa-test-data-patient-14)
 * encounter = Reference(mii-exa-test-data-patient-14-encounter-2)
 * performedPeriod.start = "2024-05-02"

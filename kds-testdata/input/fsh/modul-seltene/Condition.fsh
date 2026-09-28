@@ -28,8 +28,10 @@ Description: "Clinical Diagnosis: Marfan syndrome - maximum MS element coverage"
 * code.coding[=].extension[0].valueCoding = $diagnosesicherheit#G "gesicherte Diagnose"
 * code.coding[=].extension[1].url = "http://fhir.de/StructureDefinition/icd-10-gm-mehrfachcodierungs-kennzeichen"
 * code.coding[=].extension[1].valueCoding = $mehrfachcodierungs-kennzeichen#! "!"
-* code.coding[=].extension[2].url = "http://fhir.de/StructureDefinition/seitenlokalisation"
-* code.coding[=].extension[2].valueCoding = $seitenlokalisation#U "unbekannt"
+// Ohne Seitenlokalisation: Die Extension bindet REQUIRED gegen
+// KBV_VS_SFHIR_ICD_SEITENLOKALISATION, und die kennt nur R, L und B.
+// 'trifft nicht zu' und 'unbekannt' gibt es dort nicht — beides sagt man
+// hier, indem man keine Seite behauptet.
 * code.coding[+] = $HPO#HP:0003549 "Abnormality of connective tissue"
 * code.text = "Marfan-Syndrom, klinisch diagnostiziert nach Ghent-Kriterien"
 * bodySite = $sct#113257007 "Structure of cardiovascular system"
@@ -119,8 +121,6 @@ Description: "Genetic Diagnosis: Marfan syndrome (FBN1 variant) - maximum MS ele
 * code.coding[=].extension[0].valueCoding = $diagnosesicherheit#G "gesicherte Diagnose"
 * code.coding[=].extension[1].url = "http://fhir.de/StructureDefinition/icd-10-gm-mehrfachcodierungs-kennzeichen"
 * code.coding[=].extension[1].valueCoding = $mehrfachcodierungs-kennzeichen#! "!"
-* code.coding[=].extension[2].url = "http://fhir.de/StructureDefinition/seitenlokalisation"
-* code.coding[=].extension[2].valueCoding = $seitenlokalisation#U "unbekannt"
 * code.text = "Marfan-Syndrom, genetisch bestaetigt (FBN1-Variante)"
 * bodySite = $sct#113257007 "Structure of cardiovascular system"
 * bodySite.coding[0].version = "http://snomed.info/sct/900000000000207008/version/20240201"

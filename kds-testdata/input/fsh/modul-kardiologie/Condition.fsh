@@ -86,8 +86,10 @@ Description: "Kardio Klappenvitium: hoehergradige Aortenklappenstenose"
 * code.coding[icd10-gm].extension[0].valueCoding = $diagnosesicherheit#G "gesicherte Diagnose"
 * code.coding[icd10-gm].extension[1].url = "http://fhir.de/StructureDefinition/icd-10-gm-mehrfachcodierungs-kennzeichen"
 * code.coding[icd10-gm].extension[1].valueCoding = $mehrfachcodierungs-kennzeichen#! "!"
-* code.coding[icd10-gm].extension[2].url = "http://fhir.de/StructureDefinition/seitenlokalisation"
-* code.coding[icd10-gm].extension[2].valueCoding = $seitenlokalisation#U "unbekannt"
+// Ohne Seitenlokalisation: Die Extension bindet REQUIRED gegen
+// KBV_VS_SFHIR_ICD_SEITENLOKALISATION, und die kennt nur R, L und B.
+// 'trifft nicht zu' und 'unbekannt' gibt es dort nicht — beides sagt man
+// hier, indem man keine Seite behauptet.
 * code.coding[sct] = $sct20260701#60573004 "Aortic valve stenosis (disorder)"
 * severity = $sct20260701#423343006 "Grade 3 on a scale of 1 to 3 (qualifier value)"
 * bodySite.coding[snomed-ct] = $sct20260701#34202007 "Aortic valve structure (body structure)"

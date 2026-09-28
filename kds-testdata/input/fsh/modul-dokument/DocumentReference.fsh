@@ -103,7 +103,7 @@ Description: "DocumentReference: Befundbericht Radiologie (URL-Verweis) - alle M
 // Content - Verweis slice (URL reference)
 * content[+].attachment.contentType = #application/pdf
 * content[=].attachment.language = #de
-* content[=].attachment.url = "https://fhir.example.org/Binary/radiologie-befund-patient1-20240215"
+* content[=].attachment.url = "https://dms.charite.de/kds-testdata/radiologie/patient-1/roentgen-thorax-20240215.pdf"
 * content[=].attachment.title = "Roentgen_Thorax_Befund.pdf"
 * content[=].attachment.creation = "2024-02-15"
 * content[=].format = $ihe-formatcode#urn:ihe:iti:xds:2017:mimeTypeSufficient "mimeType Sufficient"

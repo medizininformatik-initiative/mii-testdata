@@ -82,7 +82,7 @@
       "attachment": {
         "contentType": "application/pdf",
         "language": "de",
-        "url": "https://fhir.example.org/Binary/radiologie-befund-patient1-20240215",
+        "url": "https://dms.charite.de/kds-testdata/radiologie/patient-1/roentgen-thorax-20240215.pdf",
         "title": "Roentgen_Thorax_Befund.pdf",
         "creation": "2024-02-15"
       },

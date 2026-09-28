@@ -165,7 +165,10 @@ Description: "Onkologie Test Mamma Sozialdienst - Psychosoziale Beratung"
 * bodySite.coding[snomed-ct].version = "http://snomed.info/sct/900000000000207008/version/20240201"
 * code.coding[ops] = $OPS#9-401.5 "(Neuro-)psychologische und psychosoziale Interventionen: Sozialrechtliche Beratung"
 * code.coding[ops].version = "2021"
-* code.coding[ops].extension[Seitenlokalisation].valueCoding = $icd-seitenlokalisation#T "trifft nicht zu"
+// Ohne Seitenlokalisation: Die Extension bindet REQUIRED gegen
+// KBV_VS_SFHIR_ICD_SEITENLOKALISATION, und die kennt nur R, L und B.
+// 'trifft nicht zu' und 'unbekannt' gibt es dort nicht — beides sagt man
+// hier, indem man keine Seite behauptet.
 * complication[compl_obds].coding = $mii-cs-onko-operation-komplikation#N "nein"
 * complication[compl_icd10].coding = $ICD10GM|2021#T81.0 "Blutung und Hämatom als Komplikation eines Eingriffes, anderenorts nicht klassifiziert"
 * encounter = Reference(mii-exa-test-data-onko-encounter-1)

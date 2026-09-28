@@ -509,7 +509,7 @@
     "fshType": "Instance",
     "fshFile": "modul-kardiologie/Condition.fsh",
     "startLine": 70,
-    "endLine": 107
+    "endLine": 109
   },
   {
     "outputFile": "Condition-mii-exa-test-data-mikrobio-diagnose-1.json",
@@ -773,22 +773,22 @@
     "fshType": "Instance",
     "fshFile": "modul-seltene/Condition.fsh",
     "startLine": 10,
-    "endLine": 56
+    "endLine": 58
   },
   {
     "outputFile": "Condition-mii-exa-test-data-patient-3-seltene-clinical-diagnosis-2.json",
     "fshName": "mii-exa-test-data-patient-3-seltene-clinical-diagnosis-2",
     "fshType": "Instance",
     "fshFile": "modul-seltene/Condition.fsh",
-    "startLine": 62,
-    "endLine": 89
+    "startLine": 64,
+    "endLine": 91
   },
   {
     "outputFile": "Condition-mii-exa-test-data-patient-3-seltene-genetic-diagnosis-1.json",
     "fshName": "mii-exa-test-data-patient-3-seltene-genetic-diagnosis-1",
     "fshType": "Instance",
     "fshFile": "modul-seltene/Condition.fsh",
-    "startLine": 94,
+    "startLine": 96,
     "endLine": 144
   },
   {
@@ -1941,23 +1941,23 @@
     "fshType": "Instance",
     "fshFile": "modul-seltene/FamilyMemberHistory.fsh",
     "startLine": 7,
-    "endLine": 49
+    "endLine": 48
   },
   {
     "outputFile": "FamilyMemberHistory-mii-exa-test-data-patient-3-seltene-familienanamnese-2.json",
     "fshName": "mii-exa-test-data-patient-3-seltene-familienanamnese-2",
     "fshType": "Instance",
     "fshFile": "modul-seltene/FamilyMemberHistory.fsh",
-    "startLine": 52,
-    "endLine": 75
+    "startLine": 51,
+    "endLine": 73
   },
   {
     "outputFile": "FamilyMemberHistory-mii-exa-test-data-patient-3-seltene-familienanamnese-3.json",
     "fshName": "mii-exa-test-data-patient-3-seltene-familienanamnese-3",
     "fshType": "Instance",
     "fshFile": "modul-seltene/FamilyMemberHistory.fsh",
-    "startLine": 79,
-    "endLine": 96
+    "startLine": 77,
+    "endLine": 93
   },
   {
     "outputFile": "FamilyMemberHistory-mii-exa-test-data-patient-4-molgen-family-member-history-1.json",
@@ -3188,24 +3188,24 @@
     "fshName": "mii-exa-test-data-onko-medikation-1",
     "fshType": "Instance",
     "fshFile": "modul-onkologie/core/Therapie.fsh",
-    "startLine": 107,
-    "endLine": 175
+    "startLine": 109,
+    "endLine": 177
   },
   {
     "outputFile": "MedicationStatement-mii-exa-test-data-onko-medikation-2.json",
     "fshName": "mii-exa-test-data-onko-medikation-2",
     "fshType": "Instance",
     "fshFile": "modul-onkologie/core/Therapie.fsh",
-    "startLine": 178,
-    "endLine": 197
+    "startLine": 180,
+    "endLine": 199
   },
   {
     "outputFile": "MedicationStatement-mii-exa-test-data-onko-medikation-3.json",
     "fshName": "mii-exa-test-data-onko-medikation-3",
     "fshType": "Instance",
     "fshFile": "modul-onkologie/core/Therapie.fsh",
-    "startLine": 200,
-    "endLine": 217
+    "startLine": 202,
+    "endLine": 219
   },
   {
     "outputFile": "MedicationStatement-mii-exa-test-data-patient-1-medstatement-1.json",
@@ -4404,16 +4404,16 @@
     "fshName": "mii-exa-test-data-lungenfunktion-rv-1",
     "fshType": "Instance",
     "fshFile": "modul-lungenfunktion/ObservationBodyplethysmographie.fsh",
-    "startLine": 127,
-    "endLine": 147
+    "startLine": 132,
+    "endLine": 152
   },
   {
     "outputFile": "Observation-mii-exa-test-data-lungenfunktion-rv-tlc-1.json",
     "fshName": "mii-exa-test-data-lungenfunktion-rv-tlc-1",
     "fshType": "Instance",
     "fshFile": "modul-lungenfunktion/ObservationBodyplethysmographie.fsh",
-    "startLine": 150,
-    "endLine": 168
+    "startLine": 155,
+    "endLine": 173
   },
   {
     "outputFile": "Observation-mii-exa-test-data-lungenfunktion-sg-total-1.json",
@@ -4421,7 +4421,7 @@
     "fshType": "Instance",
     "fshFile": "modul-lungenfunktion/ObservationBodyplethysmographie.fsh",
     "startLine": 84,
-    "endLine": 102
+    "endLine": 107
   },
   {
     "outputFile": "Observation-mii-exa-test-data-lungenfunktion-sr-1.json",
@@ -4452,8 +4452,8 @@
     "fshName": "mii-exa-test-data-lungenfunktion-tlc-1",
     "fshType": "Instance",
     "fshFile": "modul-lungenfunktion/ObservationBodyplethysmographie.fsh",
-    "startLine": 105,
-    "endLine": 124
+    "startLine": 110,
+    "endLine": 129
   },
   {
     "outputFile": "Observation-mii-exa-test-data-lungenfunktion-va-1.json",
@@ -5284,40 +5284,40 @@
     "fshName": "mii-exa-test-data-onko-krk-abstand-aboral-1",
     "fshType": "Instance",
     "fshFile": "modul-onkologie/organ-specific/KRK.fsh",
-    "startLine": 76,
-    "endLine": 91
+    "startLine": 79,
+    "endLine": 94
   },
   {
     "outputFile": "Observation-mii-exa-test-data-onko-krk-abstand-anokutan-1.json",
     "fshName": "mii-exa-test-data-onko-krk-abstand-anokutan-1",
     "fshType": "Instance",
     "fshFile": "modul-onkologie/organ-specific/KRK.fsh",
-    "startLine": 40,
-    "endLine": 55
+    "startLine": 43,
+    "endLine": 58
   },
   {
     "outputFile": "Observation-mii-exa-test-data-onko-krk-abstand-crm-1.json",
     "fshName": "mii-exa-test-data-onko-krk-abstand-crm-1",
     "fshType": "Instance",
     "fshFile": "modul-onkologie/organ-specific/KRK.fsh",
-    "startLine": 58,
-    "endLine": 73
+    "startLine": 61,
+    "endLine": 76
   },
   {
     "outputFile": "Observation-mii-exa-test-data-onko-krk-abstand-mesorektal-1.json",
     "fshName": "mii-exa-test-data-onko-krk-abstand-mesorektal-1",
     "fshType": "Instance",
     "fshFile": "modul-onkologie/organ-specific/KRK.fsh",
-    "startLine": 94,
-    "endLine": 109
+    "startLine": 97,
+    "endLine": 112
   },
   {
     "outputFile": "Observation-mii-exa-test-data-onko-krk-anastomoseninsuffizienz-1.json",
     "fshName": "mii-exa-test-data-onko-krk-anastomoseninsuffizienz-1",
     "fshType": "Instance",
     "fshFile": "modul-onkologie/organ-specific/KRK.fsh",
-    "startLine": 112,
-    "endLine": 124
+    "startLine": 115,
+    "endLine": 127
   },
   {
     "outputFile": "Observation-mii-exa-test-data-onko-mamma-her2neu-status-1.json",
@@ -5452,8 +5452,8 @@
     "fshName": "mii-exa-test-data-onko-prostata-gleason-gesamt-1",
     "fshType": "Instance",
     "fshFile": "modul-onkologie/organ-specific/Prostata.fsh",
-    "startLine": 169,
-    "endLine": 183
+    "startLine": 172,
+    "endLine": 186
   },
   {
     "outputFile": "Observation-mii-exa-test-data-onko-prostata-gleason-grade-group-1.json",
@@ -5484,8 +5484,8 @@
     "fshName": "mii-exa-test-data-onko-prostata-komplikation-1",
     "fshType": "Instance",
     "fshFile": "modul-onkologie/organ-specific/Prostata.fsh",
-    "startLine": 150,
-    "endLine": 165
+    "startLine": 153,
+    "endLine": 168
   },
   {
     "outputFile": "Observation-mii-exa-test-data-onko-prostata-positive-stanzen-1.json",
@@ -8268,8 +8268,8 @@
     "fshName": "mii-exa-test-data-patient-14-onko-verlauf-1",
     "fshType": "Instance",
     "fshFile": "journey-onkologie-mtb/Onkologie.fsh",
-    "startLine": 276,
-    "endLine": 296
+    "startLine": 279,
+    "endLine": 299
   },
   {
     "outputFile": "Observation-mii-exa-test-data-patient-2-labobs-1.json",
@@ -9524,7 +9524,7 @@
     "fshName": "mii-exa-test-data-onko-bestrahlung-nuklearmedizin-1",
     "fshType": "Instance",
     "fshFile": "modul-onkologie/core/Therapie.fsh",
-    "startLine": 272,
+    "startLine": 273,
     "endLine": 313
   },
   {
@@ -9533,15 +9533,15 @@
     "fshType": "Instance",
     "fshFile": "modul-onkologie/organ-specific/KRK.fsh",
     "startLine": 6,
-    "endLine": 37
+    "endLine": 40
   },
   {
     "outputFile": "Procedure-mii-exa-test-data-onko-krk-stoma-markierung-1.json",
     "fshName": "mii-exa-test-data-onko-krk-stoma-markierung-1",
     "fshType": "Instance",
     "fshFile": "modul-onkologie/organ-specific/KRK.fsh",
-    "startLine": 127,
-    "endLine": 149
+    "startLine": 130,
+    "endLine": 152
   },
   {
     "outputFile": "Procedure-mii-exa-test-data-onko-mamma-operation-1.json",
@@ -9565,7 +9565,7 @@
     "fshType": "Instance",
     "fshFile": "modul-onkologie/organ-specific/Mamma.fsh",
     "startLine": 150,
-    "endLine": 178
+    "endLine": 181
   },
   {
     "outputFile": "Procedure-mii-exa-test-data-onko-melanom-exzision-1.json",
@@ -9589,7 +9589,7 @@
     "fshType": "Instance",
     "fshFile": "modul-onkologie/organ-specific/Prostata.fsh",
     "startLine": 118,
-    "endLine": 147
+    "endLine": 150
   },
   {
     "outputFile": "Procedure-mii-exa-test-data-onko-strahlentherapie-1.json",
@@ -9597,23 +9597,23 @@
     "fshType": "Instance",
     "fshFile": "modul-onkologie/core/Therapie.fsh",
     "startLine": 38,
-    "endLine": 68
+    "endLine": 71
   },
   {
     "outputFile": "Procedure-mii-exa-test-data-onko-strahlentherapie-bestrahlung-1.json",
     "fshName": "mii-exa-test-data-onko-strahlentherapie-bestrahlung-1",
     "fshType": "Instance",
     "fshFile": "modul-onkologie/core/Therapie.fsh",
-    "startLine": 225,
-    "endLine": 266
+    "startLine": 227,
+    "endLine": 267
   },
   {
     "outputFile": "Procedure-mii-exa-test-data-onko-systemische-therapie-1.json",
     "fshName": "mii-exa-test-data-onko-systemische-therapie-1",
     "fshType": "Instance",
     "fshFile": "modul-onkologie/core/Therapie.fsh",
-    "startLine": 71,
-    "endLine": 104
+    "startLine": 74,
+    "endLine": 106
   },
   {
     "outputFile": "Procedure-mii-exa-test-data-patient-1-icu-ect-extrakorp-1.json",
@@ -9693,7 +9693,7 @@
     "fshType": "Instance",
     "fshFile": "journey-onkologie-mtb/Onkologie.fsh",
     "startLine": 244,
-    "endLine": 271
+    "endLine": 274
   },
   {
     "outputFile": "Procedure-mii-exa-test-data-patient-14-prozedur-1.json",
@@ -10508,8 +10508,8 @@
     "fshName": "mii-exa-test-data-onko-krk-specimen-1",
     "fshType": "Instance",
     "fshFile": "modul-onkologie/organ-specific/KRK.fsh",
-    "startLine": 152,
-    "endLine": 165
+    "startLine": 155,
+    "endLine": 168
   },
   {
     "outputFile": "Specimen-mii-exa-test-data-onko-specimen-1.json",
