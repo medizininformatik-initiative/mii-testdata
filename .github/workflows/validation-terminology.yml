@@ -134,10 +134,20 @@ jobs:
     # hier abfangen. Tritt ein, sobald ein Commit keine Testdaten beruehrt.
     if: ${{ needs.tx-pakete.outputs.pakete != '[]' }}
     runs-on: ubuntu-latest
-    # Je Paket. Das groesste Bundle (icu-1, 183 Eintraege) lag beim Vollauf bei
-    # rund einer halben Stunde; 120 Minuten lassen reichlich Luft, ohne einen
-    # Haenger unbegrenzt stehen zu lassen.
-    timeout-minutes: 120
+    # Je Paket. Die Annahme "120 Minuten lassen reichlich Luft" stammte aus
+    # einer Zeit, in der das groesste Bundle (icu-1, 183 Eintraege) eine halbe
+    # Stunde brauchte. Sie traegt nicht mehr: Im Lauf 36305757907 lag
+    # lungenfunktion bei 90 und pat-12 bei 106 Minuten, und mikrobio ist zum
+    # wiederholten Mal exakt am Deckel abgebrochen — nicht, weil es haengt,
+    # sondern weil die 60-Sekunden-Stockungen (siehe Tabelle weiter unten) die
+    # Laufzeit aufblaehen. Ein Abbruch kostet dabei doppelt: kein Ergebnis UND
+    # nichts Gelerntes, solange der Cache im Post-Schritt gespeichert wird.
+    #
+    # 180 Minuten geben dem Paket, das am Deckel steht, eine realistische
+    # Chance durchzukommen, ohne einen echten Haenger unbegrenzt stehen zu
+    # lassen. Die Obergrenze bleibt noetig: Ohne sie blockiert ein einzelnes
+    # Paket die serielle Matrix beliebig lange.
+    timeout-minutes: 180
     continue-on-error: true
     strategy:
       fail-fast: false
@@ -202,32 +212,81 @@ jobs:
         key: validator-jar-${{ env.VALIDATOR_VERSION }}
 
     # Der Validator fragt seriell, und diese Wartezeit IST die Laufzeit des
-    # Jobs: Im Lauf 36301663856 entfielen von den 2,0 Stunden des Pakets
-    # mikrobio-1 genau 1,9 Stunden auf 449 Anfragen an den SU-TermServ
-    # (Beleg im Proxy-Protokoll, Artefakt nginx-tx-7). Davon waren 380
-    # erfolgreich und kosteten zusammen rund 45 Minuten — und dieselben
-    # Wertemengen werden in jedem Paket und in jeder Nacht erneut gefragt.
-    # Ein Antwortcache schneidet diese 45 Minuten weg; er ist der Unterschied
-    # zwischen dem Timeout und einem Ergebnis. Die 69 Anfragen, die je 60
-    # Sekunden in den Client-Timeout liefen, bleiben davon unberuehrt —
-    # Fehlschlaege landen nicht im Cache.
+    # Jobs. Aus den Proxy-Protokollen des Laufs 36305757907, je Paket ein
+    # Artefakt nginx-tx-<job-index> (die Nummer ist der Matrix-Index, NICHT die
+    # Reihenfolge, in der die API die Jobs auflistet — eine erste Auswertung
+    # hat die Protokolle darueber falsch beschriftet):
     #
-    # Je Paket ein eigener Schluessel, denn im naechtlichen Vollauf validiert
-    # ein Paketname immer dieselben Dateien; sein eigener Cache von gestern
-    # passt also besser als der irgendeines anderen Pakets. Die generische
-    # restore-key-Stufe faengt neue Pakete ab. `github.run_id` im Schluessel
-    # sorgt dafuer, dass der Cache ueberhaupt fortgeschrieben wird: Bei einem
-    # exakten Treffer speichert actions/cache nicht. Dieselbe Bauart wie bei
-    # der Advisor-Kontrolle in ci.yml.
-    - name: Cache terminology responses
+    #   Paket            Anfragen   <1s   20-59s   genau 60s   Jobdauer
+    #   onkologie             379   363       13           2   zuegig
+    #   lungenfunktion        287   164       80          43     90 min
+    #   pat-12                434   300       82          51    106 min
+    #   mikrobio              510   365       74          71    120 min (Deckel)
+    #
+    # Die Verteilung ist zweigipflig mit leerem Mittelfeld: Median 0,17 s, dann
+    # praktisch nichts zwischen 1 und 20 Sekunden, dann ein Klumpen bei 20-59 s
+    # und einer exakt bei 60,00 s — dem Client-Timeout des Validators. Ein
+    # Server, der bei aufwendigen Wertemengen nur langsam rechnet, erzeugt eine
+    # gleitende Kurve; diese Luecke bedeutet zwei verschiedene Mechanismen.
+    # Betroffen ist ausschliesslich POST /ValueSet/$validate-code, nie
+    # CodeSystem/$validate-code und nie $expand.
+    #
+    # Die Ursache des zweiten Mechanismus ist offen. Lokal widerlegt sind:
+    # unbekannte Wertemengen (die scheitern in 0,16 s statt langsam),
+    # Parallelitaet (8 gleichzeitige Anfragen: Median 0,25 s), inline
+    # mitgeschickte Wertemengen (0,15-0,38 s, schneller als per URL), fehlende
+    # Snapshots, Versionsangaben in der URL. Die Protokollierung der
+    # Anfrageinhalte (log_format tx_body) benennt beim naechsten Lauf, WELCHE
+    # Wertemengen haengen; bis dahin ist jede weitere Vermutung Stochern.
+    #
+    # Unabhaengig von dieser Ursache wirkt der Antwortcache: Die schnellen
+    # Anfragen wiederholen sich ueber alle 33 Pakete und jede Nacht, das BOM
+    # hat insgesamt nur 455 Wertemengen. Die Anfragen, die in den Timeout
+    # laufen, bleiben unberuehrt — Fehlschlaege landen nicht im Cache.
+    #
+    # WARUM restore und save GETRENNT stehen, und warum der Schluessel geteilt
+    # ist: Eine fruehere Fassung benutzte `actions/cache@v4` mit einem Schluessel
+    # je Paket. Beides zusammen hat ausgerechnet das Paket bestraft, das die
+    # Hilfe am noetigsten hatte.
+    #
+    # `actions/cache@v4` speichert in einem Post-Schritt, und der wird bei einem
+    # Abbruch durch `timeout-minutes` NICHT ausgefuehrt. Im Lauf 36305757907 ist
+    # das belegt: Im abgebrochenen Job bundle-mikrobio-1 steht "Post Cache
+    # validator jar" auf `skipped`. Mikrobio laeuft aber seit Wochen in genau
+    # diesen Deckel — es hat seinen Terminologie-Cache also noch nie
+    # geschrieben. Mit einem Schluessel je Paket war seine einzige
+    # Rueckfallebene der Cache irgendeines anderen Pakets mit anderen
+    # Wertemengen. Jede Nacht kalt starten, in den Deckel laufen, nichts
+    # speichern: eine Falle, die sich selbst erhaelt und erklaert, warum
+    # ausgerechnet dieses eine Paket sich nie verbessert hat.
+    #
+    # Deshalb hier `cache/restore` + `cache/save` mit `if: always()`. Dass
+    # `always()`-Schritte auch nach einem Timeout-Abbruch laufen, ist aus
+    # demselben Job belegt: "Proxy-Statistik und Abbau" steht dort auf
+    # `success`. Was der Validator in 120 Minuten gelernt hat, ueberlebt damit
+    # den Abbruch und steht beim naechsten Mal bereit.
+    #
+    # Der Schluessel ist GETEILT statt je Paket, weil die Matrix mit
+    # `max-parallel: 1` seriell laeuft: Paket N erbt so, was die Pakete davor
+    # gelernt haben, und die 455 Wertemengen des BOM werden ueber den Lauf
+    # hinweg einmal statt 33-mal geholt. `strategy.job-index` im Schluessel
+    # haelt die Eintraege eindeutig, die restore-keys greifen absteigend den
+    # zuletzt geschriebenen Stand ab — erst aus diesem Lauf, dann aus dem
+    # vorigen.
+    #
+    # `hashFiles` auf package.json ist die Invalidierung: Sobald sich ein
+    # Paket-Pin aendert — und damit moeglicherweise die SNOMED- oder
+    # LOINC-Version dahinter — faellt der gesamte Cache weg, statt alte
+    # Antworten zu einer neuen Terminologie zu behaupten.
+    - name: Cache terminology responses (restore)
       if: steps.tx.outputs.tx != ''
-      uses: actions/cache@v4
+      uses: actions/cache/restore@v4
       with:
         path: .txcache
-        key: tx-cache-v1-${{ matrix.paket.name }}-${{ github.run_id }}
+        key: tx-v2-${{ hashFiles('kds-testdata/package.json') }}-${{ github.run_id }}-${{ strategy.job-index }}
         restore-keys: |
-          tx-cache-v1-${{ matrix.paket.name }}-
-          tx-cache-v1-
+          tx-v2-${{ hashFiles('kds-testdata/package.json') }}-${{ github.run_id }}-
+          tx-v2-${{ hashFiles('kds-testdata/package.json') }}-
 
     - name: Download validator
       if: steps.tx.outputs.tx != ''
@@ -266,6 +325,26 @@ jobs:
           echo "::warning::Kein Ergebnis fuer ${{ matrix.paket.name }} — Server zu langsam oder Lauf abgebrochen."
           exit 0
         }
+
+    # `always()` ist hier die ganze Pointe: Gerade der Job, der in den Deckel
+    # laeuft, hat am meisten geholt und darf sein Ergebnis nicht verlieren.
+    # Siehe die Begruendung am restore-Schritt oben.
+    - name: Cache terminology responses (save)
+      if: always() && steps.tx.outputs.tx != ''
+      uses: actions/cache/save@v4
+      with:
+        path: .txcache
+        key: tx-v2-${{ hashFiles('kds-testdata/package.json') }}-${{ github.run_id }}-${{ strategy.job-index }}
+
+    # Ohne diese Zahl bliebe offen, ob der geteilte Cache ueberhaupt waechst.
+    - name: Cache-Groesse
+      if: always() && steps.tx.outputs.tx != ''
+      run: |
+        if [ -d "$GITHUB_WORKSPACE/.txcache" ]; then
+          groesse=$(du -sh "$GITHUB_WORKSPACE/.txcache" | cut -f1)
+          dateien=$(find "$GITHUB_WORKSPACE/.txcache" -type f | wc -l)
+          echo "tx-Cache: $groesse, $dateien Dateien" >> "$GITHUB_STEP_SUMMARY"
+        fi
 
     - name: Report
       if: steps.tx.outputs.tx != '' && hashFiles('validation-tx.json') != ''
