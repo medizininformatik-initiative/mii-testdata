@@ -1554,7 +1554,7 @@
               ],
               "code": "H27.1",
               "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
-              "display": "Linsenluxation",
+              "display": "Luxation der Linse",
               "version": "2023"
             }
           ],

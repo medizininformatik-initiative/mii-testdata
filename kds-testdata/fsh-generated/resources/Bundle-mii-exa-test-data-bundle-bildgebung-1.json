@@ -216,7 +216,7 @@
               ],
               "system": "http://fhir.de/CodeSystem/bfarm/ops",
               "code": "3-100",
-              "display": "Mammographie nativ",
+              "display": "Mammographie",
               "version": "2024"
             },
             {

@@ -38,7 +38,7 @@
         ],
         "system": "http://fhir.de/CodeSystem/bfarm/ops",
         "code": "8-852.05",
-        "display": "Dauer der Behandlung 192 bis unter 240 Stunden",
+        "display": "Extrakorporaler Gasaustausch ohne und mit Herzunterstützung und Prä-ECMO-Therapie: Veno-venöse extrakorporale Membranoxygenation (ECMO) ohne Herzunterstützung: Dauer der Behandlung 192 bis unter 240 Stunden",
         "version": "2024"
       }
     ]

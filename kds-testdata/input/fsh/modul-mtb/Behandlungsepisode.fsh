@@ -25,7 +25,7 @@ Description: "Test instance for MTB treatment episode with all MS slices populat
 * supportingInfo[Vortherapie][+] = Reference(mii-exa-test-data-mtb-systemische-vortherapie-1)
 * supportingInfo[Vorbefund][+] = Reference(mii-exa-test-data-mtb-labobs-vorbefund-1)
 * supportingInfo[Therapieplan] = Reference(mii-exa-test-data-mtb-therapieplan-1)
-* extension[LeitlinienbehandlungStatus].valueCoding = $mii-cs-mtb-leitlinienbehandlung-status#exhausted "exhausted"
+* extension[LeitlinienbehandlungStatus].valueCoding = $mii-cs-mtb-leitlinienbehandlung-status#exhausted "Leitlinien ausgeschöpft"
 * supportingInfo[Vortherapie][0].extension[LeitlinieDokumentation].extension[Therapielinie].valueUnsignedInt = 1
 * supportingInfo[Vortherapie][0].extension[LeitlinieDokumentation].extension[Zulassungsstatus].valueCodeableConcept.coding = $mii-cs-mtb-zulassungsstatus#in-label
 

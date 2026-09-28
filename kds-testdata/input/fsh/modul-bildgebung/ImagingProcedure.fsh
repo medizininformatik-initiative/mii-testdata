@@ -13,7 +13,7 @@ Description: "Procedure: Bildgebungsprozedur"
 * status = #completed
 * category = $sct#363679005 "Imaging (procedure)"
 * code = $sct#384151000119104 "Screening mammography of bilateral breasts (procedure)"
-* code.coding[ops] = $ops#3-100 "Mammographie nativ"
+* code.coding[ops] = $ops#3-100 "Mammographie"
 * code.coding[ops].version = "2024"
 * code.coding[ops].extension[0].url = "http://fhir.de/StructureDefinition/seitenlokalisation"
 * code.coding[ops].extension[0].valueCoding = $seitenlokalisation#B "beiderseits"

@@ -20,7 +20,7 @@ Description: "ICU Procedure: MII PR ICU Extrakorporales Verfahren"
 // 11.05. 14:00 = 204 Stunden -> Stundenstaffel "192 bis unter 240 Stunden".
 // Die perkutane Kanuelierung ist laut OPS-Hinweis im Kode enthalten.
 // (8-852.0 = Veno-venoese ECMO ohne Herzunterstuetzung, .05 = Stundenstaffel)
-* code.coding[ops] = $ops#8-852.05 "Dauer der Behandlung 192 bis unter 240 Stunden"
+* code.coding[ops] = $ops#8-852.05 "Extrakorporaler Gasaustausch ohne und mit Herzunterstützung und Prä-ECMO-Therapie: Veno-venöse extrakorporale Membranoxygenation (ECMO) ohne Herzunterstützung: Dauer der Behandlung 192 bis unter 240 Stunden"
 * code.coding[ops].version = "2024"
 * code.coding[ops].extension[Seitenlokalisation].valueCoding = $seitenlokalisation#R "rechts"
 * extension[Dokumentationsdatum].valueDateTime = "2024-05-11T15:00:00+02:00"
@@ -50,7 +50,7 @@ Description: "ICU Procedure: MII PR ICU Beatmung"
 // Weaning-Prozess: Beatmung 01.05. 18:00 bis 13.05. 09:00 = 279 Stunden
 // (> 95 h) mit erfolgreicher Extubation, 12 Behandlungstage -> 8-718.73.
 // (8-718.7 = Beatmungsentwoehnung nicht auf Beatmungsentwoehnungs-Einheit)
-* code.coding[ops] = $ops#8-718.73 "Mindestens 11 bis höchstens 20 Behandlungstage"
+* code.coding[ops] = $ops#8-718.73 "Beatmungsentwöhnung [Weaning] bei maschineller Beatmung: Beatmungsentwöhnung nicht auf Beatmungsentwöhnungs-Einheit: Mindestens 11 bis höchstens 20 Behandlungstage"
 * code.coding[ops].version = "2024"
 * code.coding[ops].extension[Seitenlokalisation].valueCoding = $seitenlokalisation#B
 * extension[Dokumentationsdatum].valueDateTime = "2024-05-13T10:00:00+02:00"

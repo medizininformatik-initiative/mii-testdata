@@ -37,7 +37,7 @@
         ],
         "system": "http://fhir.de/CodeSystem/bfarm/ops",
         "code": "8-718.73",
-        "display": "Mindestens 11 bis höchstens 20 Behandlungstage",
+        "display": "Beatmungsentwöhnung [Weaning] bei maschineller Beatmung: Beatmungsentwöhnung nicht auf Beatmungsentwöhnungs-Einheit: Mindestens 11 bis höchstens 20 Behandlungstage",
         "version": "2024"
       }
     ]

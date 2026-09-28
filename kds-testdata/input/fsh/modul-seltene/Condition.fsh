@@ -75,7 +75,7 @@ Description: "Clinical Diagnosis: Ectopia lentis bei Marfan-Syndrom, nach Lensek
 * extension[ReferenzPrimaerdiagnose].valueReference = Reference(mii-exa-test-data-patient-3-seltene-clinical-diagnosis-1)
 * category = $cs-hl7-condition-category#encounter-diagnosis
 * code.coding[+] = $sct#77638001 "Ectopia lentis (disorder)"
-* code.coding[+] = $icd-10-gm#H27.1 "Linsenluxation"
+* code.coding[+] = $icd-10-gm#H27.1 "Luxation der Linse"
 * code.coding[=].version = "2023"
 * code.coding[=].extension[0].url = "http://fhir.de/StructureDefinition/seitenlokalisation"
 * code.coding[=].extension[0].valueCoding = $seitenlokalisation#B "beiderseits"
