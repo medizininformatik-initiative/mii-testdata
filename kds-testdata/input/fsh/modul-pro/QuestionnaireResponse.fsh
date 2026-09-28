@@ -233,7 +233,13 @@ Description: "PRO QuestionnaireResponse: WHODAS 2.0 12-Item for Patient 1 (mild 
 // PROMIS-29 QuestionnaireResponse (Patient 1, Auszug Angst + Depression)
 // Covers: identifier, author, item.text, item.item (verschachtelte Gruppen),
 // questionnaire.extension[questionnaireDisplay];
-// answer.valueCoding.display mit translation-Extension wie im Questionnaire.
+// answer.valueCoding.display traegt den LOINC-Anzeigetext, die deutsche
+// Fassung haengt als translation-Extension daran: Der Validator prueft den
+// Basiswert gegen die Terminologie, und LOINC fuehrt fuer Antwortcodes keine
+// deutschen Designations (nachgeprueft: $validate-code mit display 'Nie'
+// auf LA6270-8 ergibt false, mit 'Never' true). Umgekehrt herum — deutsch im
+// Basiswert, englisch in der Extension — war es bis 2026-09-28 und erzeugte
+// drei Fehler im terminologiegestuetzten Lauf.
 // (item.answer.item deckt die Zusatzfragen-Response weiter unten ab.)
 // -----------------------------------------------------------------------------
 Instance: mii-exa-test-data-patient-1-pro-promis29-response
@@ -259,24 +265,39 @@ Description: "PRO QuestionnaireResponse: PROMIS-29 (Auszug Angst/Depression) for
 * item[=].text = "ANGST"
 * item[=].item[+].linkId = "promis-edanx01"
 * item[=].item[=].text = "Ich fürchtete mich."
-* item[=].item[=].answer[0].valueCoding = $loinc#LA6270-8 "Nie"
+* item[=].item[=].answer[0].valueCoding = $loinc#LA6270-8 "Never"
 * item[=].item[=].answer[0].valueCoding.display.extension[0].url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].item[=].answer[0].valueCoding.display.extension[0].extension[0].url = "lang"
-* item[=].item[=].answer[0].valueCoding.display.extension[0].extension[0].valueCode = #en
+* item[=].item[=].answer[0].valueCoding.display.extension[0].extension[0].valueCode = #de
 * item[=].item[=].answer[0].valueCoding.display.extension[0].extension[1].url = "content"
-* item[=].item[=].answer[0].valueCoding.display.extension[0].extension[1].valueString = "Never"
+* item[=].item[=].answer[0].valueCoding.display.extension[0].extension[1].valueString = "Nie"
 * item[=].item[+].linkId = "promis-edanx41"
 * item[=].item[=].text = "Meine Sorgen haben mich überwältigt."
-* item[=].item[=].answer[0].valueCoding = $loinc#LA10066-1 "Selten"
+* item[=].item[=].answer[0].valueCoding = $loinc#LA10066-1 "Rarely"
+* item[=].item[=].answer[0].valueCoding.display.extension[0].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].item[=].answer[0].valueCoding.display.extension[0].extension[0].url = "lang"
+* item[=].item[=].answer[0].valueCoding.display.extension[0].extension[0].valueCode = #de
+* item[=].item[=].answer[0].valueCoding.display.extension[0].extension[1].url = "content"
+* item[=].item[=].answer[0].valueCoding.display.extension[0].extension[1].valueString = "Selten"
 // Gruppe DEPRESSION mit verschachtelten Frage-Items
 * item[+].linkId = "PROMIS-29.Depression"
 * item[=].text = "DEPRESSION"
 * item[=].item[+].linkId = "promis-eddep04"
 * item[=].item[=].text = "Ich fühlte mich wertlos."
-* item[=].item[=].answer[0].valueCoding = $loinc#LA10066-1 "Selten"
+* item[=].item[=].answer[0].valueCoding = $loinc#LA10066-1 "Rarely"
+* item[=].item[=].answer[0].valueCoding.display.extension[0].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].item[=].answer[0].valueCoding.display.extension[0].extension[0].url = "lang"
+* item[=].item[=].answer[0].valueCoding.display.extension[0].extension[0].valueCode = #de
+* item[=].item[=].answer[0].valueCoding.display.extension[0].extension[1].url = "content"
+* item[=].item[=].answer[0].valueCoding.display.extension[0].extension[1].valueString = "Selten"
 * item[=].item[+].linkId = "promis-eddep29"
 * item[=].item[=].text = "Ich fühlte mich niedergeschlagen."
-* item[=].item[=].answer[0].valueCoding = $loinc#LA10082-8 "Manchmal"
+* item[=].item[=].answer[0].valueCoding = $loinc#LA10082-8 "Sometimes"
+* item[=].item[=].answer[0].valueCoding.display.extension[0].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[=].item[=].answer[0].valueCoding.display.extension[0].extension[0].url = "lang"
+* item[=].item[=].answer[0].valueCoding.display.extension[0].extension[0].valueCode = #de
+* item[=].item[=].answer[0].valueCoding.display.extension[0].extension[1].url = "content"
+* item[=].item[=].answer[0].valueCoding.display.extension[0].extension[1].valueString = "Manchmal"
 
 
 // -----------------------------------------------------------------------------

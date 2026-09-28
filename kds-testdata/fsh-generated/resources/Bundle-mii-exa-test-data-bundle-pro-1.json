@@ -843,18 +843,18 @@
                     "valueCoding": {
                       "code": "LA6270-8",
                       "system": "http://loinc.org",
-                      "display": "Nie",
+                      "display": "Never",
                       "_display": {
                         "extension": [
                           {
                             "extension": [
                               {
                                 "url": "lang",
-                                "valueCode": "en"
+                                "valueCode": "de"
                               },
                               {
                                 "url": "content",
-                                "valueString": "Never"
+                                "valueString": "Nie"
                               }
                             ],
                             "url": "http://hl7.org/fhir/StructureDefinition/translation"
@@ -873,7 +873,24 @@
                     "valueCoding": {
                       "code": "LA10066-1",
                       "system": "http://loinc.org",
-                      "display": "Selten"
+                      "display": "Rarely",
+                      "_display": {
+                        "extension": [
+                          {
+                            "extension": [
+                              {
+                                "url": "lang",
+                                "valueCode": "de"
+                              },
+                              {
+                                "url": "content",
+                                "valueString": "Selten"
+                              }
+                            ],
+                            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                          }
+                        ]
+                      }
                     }
                   }
                 ],
@@ -892,7 +909,24 @@
                     "valueCoding": {
                       "code": "LA10066-1",
                       "system": "http://loinc.org",
-                      "display": "Selten"
+                      "display": "Rarely",
+                      "_display": {
+                        "extension": [
+                          {
+                            "extension": [
+                              {
+                                "url": "lang",
+                                "valueCode": "de"
+                              },
+                              {
+                                "url": "content",
+                                "valueString": "Selten"
+                              }
+                            ],
+                            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                          }
+                        ]
+                      }
                     }
                   }
                 ],
@@ -905,7 +939,24 @@
                     "valueCoding": {
                       "code": "LA10082-8",
                       "system": "http://loinc.org",
-                      "display": "Manchmal"
+                      "display": "Sometimes",
+                      "_display": {
+                        "extension": [
+                          {
+                            "extension": [
+                              {
+                                "url": "lang",
+                                "valueCode": "de"
+                              },
+                              {
+                                "url": "content",
+                                "valueString": "Manchmal"
+                              }
+                            ],
+                            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                          }
+                        ]
+                      }
                     }
                   }
                 ],
