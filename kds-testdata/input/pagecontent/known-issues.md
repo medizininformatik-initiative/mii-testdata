@@ -41,6 +41,11 @@ That is the price of a reproducible baseline, and it is not a claim that the dat
 terminologically clean. Compare CI runs with CI runs only; a figure from a laptop is an
 orientation, never the baseline.
 
+The terminology-free run is the baseline because it is reproducible by anyone, not because
+it is the whole picture. A nightly matrix does validate the full set against the MII
+SU-TermServ; [what it adds](#what-a-terminology-server-adds), and why it takes thirteen
+hours to do so, is set out below.
+
 ### Two views of the same data, and they are not redundant
 
 Before reading any count, know what it counts. The resource directory holds both the
@@ -155,6 +160,75 @@ noisy — `dataAbsentReason` marked Must-Support next to a required `value[x]`, 
 `max=0` despite Must-Support, placeholder codes (`TODO`) fixed as patterns. Those appear
 as *blocked* on the [test coverage](test-coverage.html) page, where they are counted rather
 than hidden.
+
+### What a terminology server adds
+
+The baseline above runs with `-tx n/a`, and that was once the only run there was. It is no
+longer: a nightly matrix validates all 33 work packages against the MII SU-TermServ
+(Ontoserver 6.25.3), and since run 36420354901 it completes — all 33 packages, no timeouts.
+That run reports **1,100 errors**, against 917 without a server.
+
+The difference is not simply "183 more". Some 520 of the 1,100 are terminological — they
+cannot arise without a server at all — and a further 55 are transport failures that only a
+server run can produce. Both are worth separating by cause, because three very different
+things end up in the same list:
+
+**Findings in the data or its profiles.** A `Coding` that is genuinely outside its binding —
+for example `http://snomed.info/sct#368208006` (*Left upper arm structure*, a perfectly real
+concept) rejected by *MII VS Biobank BodyStructures SCT*. Those are the errors this run
+exists for.
+
+**Defects in the tooling, which no change to the data would fix.** Two large groups:
+
+- 21 errors reading `Unknown code '/nL' in the CodeSystem 'http://unitsofmeasure.org'`.
+  `/nL` — per nanolitre, the customary German unit for platelet and leukocyte counts — is
+  valid UCUM. Measured against the same server: `/mL`, `/dL` and `/uL` validate, while
+  `/nL`, `/pL` and `/fL` do not, and neither do `/ng` or `/nm`, although `nL` on its own
+  does. Every prefix below *micro* fails in the per-expression form, whatever the base unit.
+  That is an implementation defect, not a unit our data got wrong.
+- 41 errors reading `There is no declared filter called LIST on code system
+  http://loinc.org`. A profile binds a value set whose `compose` uses a LOINC `LIST`
+  filter that the server does not implement. Neither side is wrong about the data; they
+  disagree about a filter.
+
+**Infrastructure noise.** 55 `java.net.SocketTimeoutException: timeout` — the client giving
+up on a request that the server was still working on. They carry no statement about the
+resource they are attached to, and they are a symptom of the runtime problem below.
+
+Read the terminology run accordingly: as a list to triage, not as a count to minimise.
+
+### Why the terminology run takes thirteen hours
+
+Because of a single resource, and not one of ours.
+
+The validator attaches every loaded supplement of a code system to *every* `$validate-code`
+request against that code system, as `tx-resource` parameters. One supplement in the BOM,
+`mii-cs-kardio-supplement-snomedct`, carries three SNOMED post-coordinated expressions as
+its `concept.code` and binds `supplements` to a pinned SNOMED version. The server
+re-classifies those expressions on every single request, and for an inline resource the
+result is not cached.
+
+Replaying one real request from the proxy log verbatim and varying it:
+
+| | **with** version pin | **without** |
+|---|---:|---:|
+| post-coordinated expressions | **59.9 s** | 0.56 s |
+| plain SNOMED codes | 0.53 s | 0.53 s |
+
+Without the `tx-resource` parameter at all: 0.25 s. One expression is enough — it is the
+classification, not the volume. Of the six supplements in the BOM, only this one carries
+both traits.
+
+Across the full run, **10.1 of 10.3 hours of terminology wait — 98 % — went to 730 such
+requests**; the other 3,293 requests cost ten minutes together. Every package holding
+SNOMED-bound resources pays it, microbiology and pulmonary function included, not just
+cardiology. The test data itself contains no post-coordinated codes: all 1,835 SNOMED
+codings are plain SCTIDs, and no resource here references that supplement. It arrives
+through package resolution and rides along regardless.
+
+Filed as finding 11 in `docs/ballot-findings-2027.md`, with two addressees: the module, to
+drop the version pin (the other five MII supplements bind unversioned, which alone accounts
+for the factor of 110), and the Service Unit, for a cache keyed on `tx-resource` content.
 
 ### Reproducing and reviewing the rules
 
