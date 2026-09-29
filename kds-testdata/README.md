@@ -38,6 +38,14 @@ Further reading on running SUSHI: https://fshschool.org/docs/sushi/running/
 
 The FHIR data is generated inside `/kds-testdata/fsh-generated` folder. There are transaction `Bundle` resources that contain the collection of resources.
 
+### Measuring Must-Support coverage
+
+After `sushi build .`, run
+
+    ./scripts/ms-coverage.py
+
+to report, per module, how many of the profiles' Must-Support elements are populated by at least one test data instance — the completeness metric of the technical layer — together with profile counts and the absolute number of MS flags per module. `--markdown FILE` and `--json FILE` write reports; the JSON lists the uncovered element ids per profile.
+
 ## CI/CD and FHIR Package Dependencies
 
 This repository includes automated CI/CD workflows defined in `.github/workflows/ci.yml` that:
