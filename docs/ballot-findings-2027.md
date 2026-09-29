@@ -515,7 +515,69 @@ wo `type`/`$this` auf Reference-Slices dasselbe Problem erzeugt.
 
 ---
 
-## 11. Bereits gemeldet (Referenz)
+## 11. Ein Supplement mit postkoordinierten Ausdrücken macht 98 % der Validierungszeit aus
+
+`mii-cs-kardio-supplement-snomedct` (Kardiologie, `2027.0.0-ballot`) ist ein
+SNOMED-Supplement mit drei Konzepten. Deren `concept.code` sind keine SNOMED-Codes,
+sondern **postkoordinierte Ausdrücke** der SNOMED Compositional Grammar:
+
+```
+368009:{116676008=49755003,363698007=17401000},{246112005=24484000}
+73544002:{260507000=260519008}
+131148009:{42752001=789750003,246112005=24484000}
+```
+
+Zugleich ist `supplements` **versionsgebunden**:
+`http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701`.
+
+Der HL7-Java-Validator schickt jedes geladene Supplement eines Codesystems als
+`tx-resource`-Parameter bei **jeder** `$validate-code`-Anfrage an dieses Codesystem
+mit. Der Terminologieserver muss die Ausdrücke daraufhin jedes Mal neu
+klassifizieren — eine beschreibungslogische Operation, deren Ergebnis für eine
+inline übergebene Ressource nicht zwischengespeichert wird.
+
+**Gemessen** gegen den MII SU-TermServ (Ontoserver 6.25.3), eine echte Anfrage aus
+dem CI-Protokoll wörtlich nachgespielt und variiert:
+
+| | **mit** Versionspin | **ohne** Versionspin |
+|---|---:|---:|
+| postkoordinierte Ausdrücke | **59,9 s** | 0,56 s |
+| einfache SNOMED-Codes | 0,53 s | 0,53 s |
+
+Ein Faktor 110. Schon **ein einziger** Ausdruck genügt (60,5 s) — es ist nicht die
+Menge, sondern die Klassifikation. Dieselbe Anfrage ohne den
+`tx-resource`-Parameter: 0,25 s. Von den sechs Supplements im BOM ist dieses das
+einzige, das beide Merkmale trägt; die anderen fünf sind unauffällig.
+
+**Auswirkung auf den Gesamtbestand:** Im nächtlichen Vollauf über alle 33
+Arbeitspakete (Lauf 36420354901) entfielen von 10,3 Stunden Terminologie-Wartezeit
+**10,1 Stunden auf 730 Anfragen — 98 %**. Die übrigen 3293 Anfragen kosteten
+zusammen 10 Minuten. Betroffen ist jedes Paket mit SNOMED-gebundenen Ressourcen,
+also auch Mikrobiologie, Lungenfunktion und die Patientenbundles — nicht nur
+Kardiologie. Bis zum Umbau des Zwischenspeichers lief Mikrobiologie deswegen
+wiederholt in den Zeitdeckel.
+
+**Vorschlag, zwei Adressaten:**
+
+1. *Kardiologie-Modul:* den Versionspin aus `supplements` entfernen (die anderen
+   fünf MII-Supplements binden ebenfalls unversioniert). Das allein bringt den
+   Faktor 110 und kostet keine Semantik. Darüber hinaus ist zu klären, ob
+   postkoordinierte Ausdrücke als `CodeSystem.concept.code` eines Supplements
+   überhaupt tragfähig sind — ein Supplement ergänzt Eigenschaften zu
+   *vorhandenen* Konzepten, und ein Ausdruck ist kein Konzept des
+   supplementierten Codesystems.
+2. *Ontoserver / Service Unit:* dieselbe inline übergebene Ressource wird bei
+   jeder Anfrage neu klassifiziert. Ein Zwischenspeicher über den Inhalt der
+   `tx-resource` würde den Effekt auch dann abfangen, wenn ein Modul erneut so
+   ein Supplement veröffentlicht.
+
+Nachrechnen lässt sich das mit einer beliebigen langsamen Anfrage aus einem
+`nginx-tx-<n>`-Artefakt der Terminologie-Matrix: `tx-resource` entfernen und die
+Zeit vergleichen.
+
+---
+
+## 12. Bereits gemeldet (Referenz)
 
 | Befund | Ticket |
 |---|---|

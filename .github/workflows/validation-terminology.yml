@@ -231,13 +231,30 @@ jobs:
     # Betroffen ist ausschliesslich POST /ValueSet/$validate-code, nie
     # CodeSystem/$validate-code und nie $expand.
     #
-    # Die Ursache des zweiten Mechanismus ist offen. Lokal widerlegt sind:
-    # unbekannte Wertemengen (die scheitern in 0,16 s statt langsam),
-    # Parallelitaet (8 gleichzeitige Anfragen: Median 0,25 s), inline
-    # mitgeschickte Wertemengen (0,15-0,38 s, schneller als per URL), fehlende
-    # Snapshots, Versionsangaben in der URL. Die Protokollierung der
-    # Anfrageinhalte (log_format tx_body) benennt beim naechsten Lauf, WELCHE
-    # Wertemengen haengen; bis dahin ist jede weitere Vermutung Stochern.
+    # Die Ursache des zweiten Mechanismus ist GEFUNDEN, und zwar genau durch
+    # die Protokollierung der Anfrageinhalte (log_format tx_body): Der
+    # Validator haengt an jede SNOMED-Anfrage alle geladenen
+    # SNOMED-Supplements als `tx-resource`-Parameter. Eines davon,
+    # mii-cs-kardio-supplement-snomedct, enthaelt postkoordinierte SNOMED-
+    # Ausdruecke und bindet `supplements` versionsgenau — der Server
+    # klassifiziert diese Ausdruecke dann bei jeder einzelnen Anfrage neu.
+    # Eine echte langsame Anfrage aus dem Protokoll, woertlich nachgespielt:
+    # mit diesem tx-resource 59,9 s, ohne es 0,25 s. Ein einziger Ausdruck
+    # genuegt. Ueber den Vollauf: 10,1 von 10,3 Stunden Wartezeit, also 98 %,
+    # entfallen auf 730 solche Anfragen; die uebrigen 3293 kosten zusammen
+    # 10 Minuten. Einzelheiten in docs/ballot-findings-2027.md, Befund 11.
+    #
+    # Solange das Supplement unveraendert im BOM steht, bleibt die Laufzeit
+    # wie sie ist — der Deckel von 180 Minuten und der Cache tragen sie.
+    #
+    # Der Weg dorthin ist es wert, festgehalten zu werden: Fuenf Hypothesen
+    # (unbekannte Wertemengen, Parallelitaet, inline uebergebene Wertemengen,
+    # fehlende Snapshots, Versionsangaben in der URL) waren lokal scheinbar
+    # widerlegt — gemessen wurde dabei aber gegen einen lokalen MCP-Proxy mit
+    # eigenem Fallback, nicht gegen den Server. Keine dieser Messungen hat je
+    # ein `tx-resource` mitgeschickt, und genau darin lag die Ursache. Erst
+    # das woertliche Nachspielen einer echten Anfrage hat sie sichtbar
+    # gemacht.
     #
     # Unabhaengig von dieser Ursache wirkt der Antwortcache: Die schnellen
     # Anfragen wiederholen sich ueber alle 33 Pakete und jede Nacht, das BOM
