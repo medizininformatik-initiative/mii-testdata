@@ -8,6 +8,35 @@ aufgefallen sind. Alle Angaben gegen die **Snapshots dieses BOM-Stands** verifiz
 Sortiert nach Tragweite. Jeder Befund nennt: Symptom, betroffene Profile, Nachweis,
 Auswirkung auf die Testdaten, Vorschlag.
 
+## Eingereicht am 2026-09-29
+
+15 Kommentare im HL7-DE-Ballotportal (Projekt HDB), je Modul getrennt. Der
+Wortlaut steht in [`ballot-kommentare-2027.csv`](ballot-kommentare-2027.csv),
+Spalte `hdb_key` haelt die Zuordnung.
+
+| Ticket | Spezifikation | Kommentar |
+|---|---|---|
+| [HDB-955](https://hl7germany.atlassian.net/browse/HDB-955) | Bildgebung | Bildgebung: Pipe-Versionsangabe in Coding.system-Mustern macht sieben Muster unerfuellbar |
+| [HDB-956](https://hl7germany.atlassian.net/browse/HDB-956) | Intensivmedizin | Geschlossenes Slicing ohne Slices macht den gebundenen Wert unablegbar (ICU Pupillensymmetrie) |
+| [HDB-957](https://hl7germany.atlassian.net/browse/HDB-957) | Intensivmedizin | ICU Beatmung: sct-Slice ohne Muster verschluckt die geforderte IEEE-11073-Codierung |
+| [HDB-958](https://hl7germany.atlassian.net/browse/HDB-958) | Intensivmedizin | ICU Beatmung: Gepinnte LOINC-Codes ziehen das resprate-Profil herbei, das die Profile dreifach verletzen |
+| [HDB-959](https://hl7germany.atlassian.net/browse/HDB-959) | Intensivmedizin | ICU Wong-Baker: patternString auf category.coding.display macht das Profil unerfuellbar |
+| [HDB-960](https://hl7germany.atlassian.net/browse/HDB-960) | Intensivmedizin | ICU-Scores: Slicing-Diskriminator ohne Muster macht SOFA und GCS unvalidierbar |
+| [HDB-961](https://hl7germany.atlassian.net/browse/HDB-961) | Intensivmedizin | ICU: Must-Support dataAbsentReason neben value[x] 1..1 ist per obs-6 unerfuellbar |
+| [HDB-962](https://hl7germany.atlassian.net/browse/HDB-962) | Intensivmedizin | ICU: Platzhalter xxx statt SNOMED-Codes in den sechs SOFA-Subscores - die Codes existieren nicht |
+| [HDB-963](https://hl7germany.atlassian.net/browse/HDB-963) | Lungenfunktion | Lungenfunktion Methacholin: type-Diskriminator kann Medication.ingredient-Slices nicht trennen |
+| [HDB-964](https://hl7germany.atlassian.net/browse/HDB-964) | Lungenfunktion | Lungenfunktion: 56 Platzhalter TODO in 20 Profilen - LOINC-Codes liegen vor, SNOMED deckt es nicht ab |
+| [HDB-965](https://hl7germany.atlassian.net/browse/HDB-965) | Lungenfunktion | Lungenfunktion: Falsche Einheiten-Pattern - Pascal-Schreibweise defekt, Gewicht und Haemoglobin gehoeren nicht ins Modul |
+| [HDB-966](https://hl7germany.atlassian.net/browse/HDB-966) | Lungenfunktion | Lungenfunktion: Pipe-Versionsangabe in Coding.system des Befund-Profils wirkt in fuenf Profilen |
+| [HDB-967](https://hl7germany.atlassian.net/browse/HDB-967) | Medikation | MedicationAdministration.dosage.dose ist Pflichtfeld ohne Wertevorrat, waehrend Request und Statement gebunden sind |
+| [HDB-968](https://hl7germany.atlassian.net/browse/HDB-968) | Mikrobiologie | Mikrobiologie: Must-Support dataAbsentReason neben value[x] 1..1 ist per obs-6 unerfuellbar |
+| [HDB-969](https://hl7germany.atlassian.net/browse/HDB-969) | Soziodemographische Daten | Soziodemographie: Must-Support dataAbsentReason neben value[x] 1..1 ist per obs-6 unerfuellbar |
+
+Nicht eingereicht: Befund 4 (zurueckgezogen, siehe Kasten dort) und Befund 11
+(geht als Meldung an die Service Unit, nicht in die Ballotierung).
+
+Rueckmeldungen holen: `ballot.py pull --mine`.
+
 ---
 
 ## 1. `dataAbsentReason` ist Must-Support, aber strukturell unerreichbar
