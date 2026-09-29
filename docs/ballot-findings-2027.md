@@ -12,6 +12,13 @@ Auswirkung auf die Testdaten, Vorschlag.
 
 ## 1. `dataAbsentReason` ist Must-Support, aber strukturell unerreichbar
 
+> **Geht nicht als Ballot-Kommentar heraus, sondern als drei Modul-Tickets** —
+> ICU (27 Profile, 45 Knoten), Soziodemographie (4/4), Mikrobiologie (1/1).
+> Wortlaut in [`tickets-2027.md`](tickets-2027.md). Der Grund für die Trennung:
+> Ein Sammelkommentar über drei Module bedeutet in jedem eine andere Korrektur,
+> und jede Redaktion liest die Teile, die sie nicht betreffen, als Rauschen.
+> Dieser Abschnitt bleibt als gemeinsame Analyse bestehen.
+
 **32 Profile in 3 Modulen** (ICU, Mikrobiologie, Soziodemographie) markieren
 `Observation.dataAbsentReason` als Must-Support, während `Observation.value[x]`
 gleichzeitig auf `1..1` steht. Die FHIR-Basisinvariante **obs-6**
