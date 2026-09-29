@@ -122,6 +122,20 @@ verbindlich — über ein separates `patternCoding`/`fixedString` auf `.version`
 
 ## 3. `MedicationAdministration.dosage.dose` ist ungebunden
 
+> **Fuer die Einreichung geschaerft.** Der eingereichte Kommentar stellt nicht
+> mehr die Harmonisierung in den Vordergrund, sondern dass `dosage.dose.system`
+> und `.code` auf `1..1` Must-Support stehen: Jede konforme Instanz *muss* einen
+> Code fuehren, und kein ValueSet sagt, aus welchem — ein Pflichtfeld ohne
+> Wertevorrat. Ausserdem geprueft und ausdruecklich ausgeschlossen: `rate[x]`
+> (DosageDE bindet es auch fuer Request und Statement nicht, also keine
+> Asymmetrie) und `TimingDE` (`dosage` hat kein `timing`; der Zeitpunkt steht in
+> `effective[x]` als `dateTime|Period`). Neu belegt: Auch
+> `de.fhir.medication 2.0.0-ballot` (30.08.2026) enthaelt **kein**
+> MedicationAdministration-Profil und bindet in DosageDE zusaetzlich
+> `doseRange.low`/`.high` — der Versionswechsel schliesst die Luecke also nicht,
+> er vergroessert sie. Wortlaut in
+> [`ballot-kommentare-2027.csv`](ballot-kommentare-2027.csv).
+
 Die MII-Medikationsprofile für **MedicationRequest** und **MedicationStatement**
 typisieren `dosageInstruction`/`dosage` auf **DosageDE** (`de.fhir.medication#1.0.7`)
 und binden die Dosis-Einheit damit an `DosageDoseQuantityDE` (UCUM).
@@ -144,6 +158,20 @@ analog zur bereits erfolgten Harmonisierung von `site`/`route`.
 ---
 
 ## 4. Must-Support-Slices, die das Profil selbst unerreichbar gemacht hat
+
+> **ZURUECKGEZOGEN — wird nicht eingereicht.** Nachgemessen am BOM-Stand:
+> **Alle 57** Slices, deren Typ das Profil ausschliesst, haben `min=0`. Keiner
+> ist unerfuellbar, keine Instanz wird dadurch ungueltig — die
+> Must-Support-Flags sind gegenstandslos, nicht widerspruechlich. Die
+> erwartbare Antwort waere "Considered, no change required", und sie waere
+> richtig. Hinzu kommt, dass die hier genannte Zahl 159 mit keiner klaren
+> Definition reproduzierbar ist; die strengere Zaehlung (Slice, dessen Typ die
+> Elternchoice ausschliesst, mit Must-Support) ergibt 57 in 20 Profilen,
+> verteilt auf Mikrobiologie (56) und Kardiologie (1) — **kein ICU**.
+>
+> Der brauchbare Teil ist die Werkzeuganregung: eine Publisher-Pruefung
+> "Must-Support-Slice, dessen Typ die Elternchoice ausschliesst". Die gehoert
+> in die Tabelle der Werkzeugmeldungen, nicht in die Ballotierung.
 
 **159 MS-Knoten in 3 Modulen** (Mikrobiologie 156, Bildgebung 2, Kardiologie 1).
 
