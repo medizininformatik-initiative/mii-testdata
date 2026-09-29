@@ -29,6 +29,12 @@ This project allows for the generation of synthetic patient data using the patie
 
 Refer to https://github.com/life-research/Synthea-MII-KDS
 
+##  SyntheaHighmed
+
+Auf Initiative des HighMED Konsortiums wurde in Zusammenarbeit mit der [Firma MedBlocks](https://medblocks.com) Synthea angepasst, sodass KDS-FHIR Daten erzeugt werden können. Es können für Deutschland typische Daten erzeugt werden. Es können auch fehlerhafte Daten erzeugt werden, z.B. um entspr. Verarbeitungs-Pipelines zu testen.
+
+Refer to https://github.com/medblocks/synthea_highmed 
+
 ## musterdatenspende-diz
 The test data provided here reflects the technical heterogeneity of data from various data integration centers for potential users, enabling realistic application testing, particularly for distributed analyses. The data is typically generated through the data centers’ ETL processes.
  
