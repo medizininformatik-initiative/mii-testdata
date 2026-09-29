@@ -565,6 +565,23 @@ wo `type`/`$this` auf Reference-Slices dasselbe Problem erzeugt.
 
 ## 11. Ein Supplement mit postkoordinierten Ausdrücken macht 98 % der Validierungszeit aus
 
+> **Geht an die Service Unit, nicht in die Ballotierung.** Die erste Fassung
+> dieses Befunds richtete sich auch an die Kardiologie-Redaktion — das war
+> falsch gewichtet. Die eigene Messung spricht dagegen: *Dieselben*
+> postkoordinierten Ausdrücke kosten **ohne** Versionspin 0,56 s und **mit**
+> Pin 60 s. Eine korrekte Umsetzung würde entweder zügig klassifizieren oder
+> sauber ablehnen; dieses Muster ist ein Fehlerpfad, kein Rechenaufwand. Dass
+> der lokale Nachbau danach `result=true` lieferte, passt dazu — das war der
+> stille Fallback des terminology-mcp, der den Fehler des Servers verdeckt hat.
+>
+> Ein Supplement mit postkoordinierten Ausdrücken und versionsgebundenem
+> `supplements` ist damit höchstens ein *Auslöser*, nicht die Ursache. Die
+> Kardiologie-Redaktion kann den Versionspin entfernen und würde das Problem
+> für diesen einen Fall umgehen — das nächste Modul, das dasselbe Muster
+> publiziert, liefe erneut hinein. Deshalb kein Ballot-Kommentar, sondern eine
+> Meldung an die Betreiber des SU-TermServ, mit der Vier-Felder-Probe unten als
+> Beleg.
+
 `mii-cs-kardio-supplement-snomedct` (Kardiologie, `2027.0.0-ballot`) ist ein
 SNOMED-Supplement mit drei Konzepten. Deren `concept.code` sind keine SNOMED-Codes,
 sondern **postkoordinierte Ausdrücke** der SNOMED Compositional Grammar:
