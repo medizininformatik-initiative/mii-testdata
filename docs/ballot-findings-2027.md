@@ -86,8 +86,20 @@ Dokumentiert als Kategorie 1 auf der [Testabdeckung-Seite](../kds-testdata/input
 
 ## 2. `patternUri` enthält eine Pipe-Versionsangabe
 
-**Profil:** `mii-pr-bildgebung-radiologische-messung`
-**Element:** `Observation.component.code.coding.system`
+> **Geht nicht als Ballot-Kommentar heraus, sondern als zwei Modul-Tickets** —
+> T4 Bildgebung (7 Deklarationen in 4 Profilen), T5 Lungenfunktion (eine
+> Deklaration, über die Ableitung in 5 Profilen). Wortlaut in
+> [`tickets-2027.md`](tickets-2027.md).
+>
+> Beim Nachzählen für die Tickets stellte sich heraus, dass dieser Abschnitt
+> **untertrieben** hat: Es ist nicht ein Element in einem Profil, sondern es sind
+> **acht Deklarationen in zwei Modulen**, die sich über die Snapshots auf 13
+> Elementpositionen auswirken. Sieben davon stehen als `patternCoding.system`,
+> nur eine als `patternUri` — der ursprünglich gefundene Fall war der seltenere.
+> Die Liste steht in den Tickets, die Nachrechen-Anleitung am Ende dieser Datei.
+
+**Zuerst gefunden an:** `mii-pr-bildgebung-radiologische-messung`,
+`Observation.component.code.coding.system`
 
 ```json
 "patternUri": "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701"

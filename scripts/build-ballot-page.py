@@ -14,8 +14,6 @@ OUT = sys.argv[1] if len(sys.argv) > 1 else "ballot-review.html"
 #   beleg: gemessen | strukturell | fachlich
 #   pruefen: Anmerkung, wenn ich vor dem Einreichen einen Blick empfehle
 META = [
-    dict(module=["Bildgebung"], beleg="strukturell",
-         kurz="Ein Profil, aus der Spezifikation heraus nachweisbar"),
     dict(module=["Medikation"], beleg="fachlich",
          kurz="Harmonisierungs-Vorschlag, kein Validierungsfehler",
          pruefen="Der einzige Kommentar, der keinen Defekt meldet, sondern eine "
@@ -147,13 +145,20 @@ def main():
 
     A('<aside class="abzweig">')
     A('<p class="a-kopf">Nicht mehr auf dieser Liste</p>')
-    A('<p>Der Befund zu <strong>Must-Support-<code>dataAbsentReason</code> neben '
-      '<code>value[x] 1..1</code></strong> stand hier als Kommentar 1 und geht '
-      'stattdessen als drei Modul-Tickets heraus: ICU (27 Profile, 45 Knoten), '
-      'Soziodemographie (4/4) und Mikrobiologie (1/1). Ein Sammelkommentar über drei '
-      'Module bedeutet in jedem eine andere Korrektur und wird darum von keiner '
-      'Redaktion ganz gelesen. Der Wortlaut steht in '
+    A('<p>Zwei Befunde gehen als Modul-Tickets heraus statt als Ballot-Kommentar, '
+      'weil sie je Modul eine andere Korrektur bedeuten und ein Sammelkommentar '
+      'darum von keiner Redaktion ganz gelesen wird. Der Wortlaut steht in '
       '<code>docs/tickets-2027.md</code>.</p>')
+    A('<ul>')
+    A('<li><strong>Must-Support-<code>dataAbsentReason</code> neben '
+      '<code>value[x] 1..1</code></strong> → T1 ICU (27 Profile, 45 Knoten), '
+      'T2 Mikrobiologie (1/1), T3 Soziodemographie (4/4)</li>')
+    A('<li><strong>Pipe-Versionsangabe in <code>Coding.system</code></strong> → '
+      'T4 Bildgebung (7 Deklarationen in 4 Profilen), T5 Lungenfunktion (eine '
+      'Deklaration, über die Ableitung in 5 Profilen). Beim Nachzählen stellte '
+      'sich heraus, dass der Kommentar untertrieben hatte: nicht ein Profil, '
+      'sondern acht Deklarationen in zwei Modulen.</li>')
+    A('</ul>')
     A('</aside>')
     A('</header>')
 
@@ -324,7 +329,10 @@ main{display:flex; flex-direction:column; gap:1.5rem}
   padding:.9rem 1.1rem; max-width:44rem;
 }
 .abzweig .a-kopf{color:var(--akzent)}
-.abzweig p:last-child{margin:0; font-size:.93rem}
+.abzweig p{margin:0 0 .6rem; font-size:.93rem}
+.abzweig ul{margin:0; padding-left:1.1rem; font-size:.93rem}
+.abzweig li{margin:0 0 .45rem}
+.abzweig li:last-child{margin-bottom:0}
 .abzweig code{background:transparent}
 .a-kopf{
   margin:0 0 .4rem; font-size:.72rem; letter-spacing:.08em;

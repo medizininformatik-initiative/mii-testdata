@@ -153,6 +153,101 @@ dort gesondert gemeldet.
 
 ---
 
+## T4 — Bildgebung: Pipe-Versionsangabe in `Coding.system`-Mustern
+
+**Repository:** `medizininformatik-initiative/kerndatensatz-bildgebung`
+**Paket:** `de.medizininformatikinitiative.kerndatensatz.bildgebung#2027.0.0-ballot`
+
+### Befund
+
+Sieben Muster in vier Profilen setzen als `Coding.system` einen Wert, der System-URL
+und Version mit einem senkrechten Strich verbindet:
+
+```json
+"system": "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701"
+```
+
+| Profil | Element | Form |
+|---|---|---|
+| `mii-pr-bildgebung-anforderung-bildgebung` | `ServiceRequest.code.coding:sct` | `patternCoding.system` |
+| `mii-pr-bildgebung-anforderung-bildgebung` | `ServiceRequest.reasonCode.coding:sct` | `patternCoding.system` |
+| `mii-pr-bildgebung-radiologische-beobachtung` | `Observation.code.coding:sct` | `patternCoding.system` |
+| `mii-pr-bildgebung-radiologische-messung` | `Observation.method.coding:sct` | `patternCoding.system` |
+| `mii-pr-bildgebung-radiologische-messung` | `Observation.component.code.coding.system` | `patternUri` |
+| `mii-pr-bildgebung-radiologischer-befund` | `DiagnosticReport.code.coding:sct` | `patternCoding.system` |
+| `mii-pr-bildgebung-radiologischer-befund` | `DiagnosticReport.conclusionCode.coding:sct` | `patternCoding.system` |
+
+Über die Vererbung in die Snapshots wirken sich diese sieben Deklarationen auf acht
+Elementpositionen aus.
+
+`Coding.system` ist vom Typ `uri` und nimmt allein die System-URL auf; die Version
+gehört nach `Coding.version`. Die `system|version`-Notation ist ausschließlich in
+Canonical-Referenzen auf ValueSets und CodeSystems zulässig, nicht in einem
+`system`-Wert.
+
+### Folge
+
+Das Muster ist nicht sinnvoll erfüllbar. Eine konforme Instanz müsste den
+Pipe-String wörtlich als System-URI führen — womit jede Terminologieprüfung
+fehlschlägt, weil es ein Codesystem dieser URL nicht gibt. In unseren Testdaten haben
+wir den String wörtlich übernommen, weil es die einzige Möglichkeit war, das Muster zu
+erfüllen; die betroffenen Instanzen sind damit strukturell konform und
+terminologisch falsch zugleich.
+
+### Vorschlag
+
+`system` auf `http://snomed.info/sct` reduzieren. Soll die Ausgabe verbindlich sein,
+gehört sie als eigener Wert nach `Coding.version` — dort ist
+`http://snomed.info/sct/900000000000207008/version/20260701` die richtige Schreibweise.
+
+Ob eine Versionsfestlegung im Profil überhaupt gewollt ist, wäre zu prüfen: Sie bindet
+jede konforme Instanz an die SNOMED-Ausgabe vom Juli 2026, auch Daten, die später
+erhoben werden.
+
+Dieselbe Schreibweise steht einmal in Lungenfunktion und ist dort gesondert gemeldet.
+
+---
+
+## T5 — Lungenfunktion: Pipe-Versionsangabe in `Coding.system` des Befund-Profils
+
+**Repository:** `medizininformatik-initiative/kerndatensatz-lungenfunktion`
+**Paket:** `de.medizininformatikinitiative.kerndatensatz.lungenfunktion#2027.0.0-ballot`
+
+### Befund
+
+`mii-pr-lungenfunktion-befund` setzt auf `DiagnosticReport.conclusionCode.coding:sct`
+ein `patternCoding`, dessen `system` System-URL und Version mit einem senkrechten
+Strich verbindet:
+
+```json
+"system": "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701"
+```
+
+`Coding.system` ist vom Typ `uri` und nimmt allein die System-URL auf; die Version
+gehört nach `Coding.version`. Die `system|version`-Notation ist ausschließlich in
+Canonical-Referenzen auf ValueSets und CodeSystems zulässig.
+
+Es ist eine einzige Deklaration, sie wirkt aber über die Ableitung auf **fünf
+Profile**: `mii-pr-lungenfunktion-befund` selbst sowie `-spirometrie`, `-diffusion`,
+`-bodyplethysmographie` und `-provokationstest`, die den Snapshot erben. Die Korrektur
+an einer Stelle räumt alle fünf ab.
+
+### Folge
+
+Das Muster ist nicht sinnvoll erfüllbar: Eine konforme Instanz müsste den Pipe-String
+wörtlich als System-URI führen, womit jede Terminologieprüfung fehlschlägt. Betroffen
+ist `conclusionCode` — also die kodierte Beurteilung, das fachlich wichtigste Feld des
+Befunds.
+
+### Vorschlag
+
+`system` auf `http://snomed.info/sct` reduzieren und die Version, falls verbindlich,
+über `Coding.version` ausdrücken.
+
+Dieselbe Schreibweise steht siebenmal in Bildgebung und ist dort gesondert gemeldet.
+
+---
+
 ## Nachrechnen
 
 Die Profilliste je Modul lässt sich gegen jeden BOM-Stand neu erzeugen:
@@ -183,3 +278,28 @@ EOF
 ```
 
 Stand `2027.0.0-ballot.19`: icu 27/45, soziodemographie 4/4, mikrobio 1/1.
+
+Und die Pipe-Versionsangaben aus T4/T5 — hier bewusst über das **Differential**, weil
+nur dort steht, wer den Wert wirklich deklariert; über den Snapshot erscheinen auch
+die erbenden Profile (13 Positionen statt 8 Deklarationen):
+
+```bash
+python3 - <<'EOF'
+import json, glob, os
+P = os.path.expanduser("~/.fhir/packages/"
+    "de.medizininformatikinitiative.kerndatensatz.complete#2027.0.0-ballot.19/package")
+n = 0
+for f in glob.glob(P + "/StructureDefinition-*.json"):
+    sd = json.load(open(f, encoding="utf-8"))
+    for e in (sd.get("differential") or {}).get("element", []):
+        pc = e.get("patternCoding")
+        treffer = (isinstance(pc, dict) and "|" in str(pc.get("system", ""))) or \
+                  (isinstance(e.get("patternUri"), str) and "|" in e["patternUri"])
+        if treffer:
+            n += 1
+            print(f"{sd['url'].rsplit('/',1)[-1]}  {e.get('id')}")
+print(f"{n} Deklarationen")
+EOF
+```
+
+Stand `2027.0.0-ballot.19`: 8 Deklarationen — 7 in Bildgebung, 1 in Lungenfunktion.
