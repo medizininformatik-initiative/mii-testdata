@@ -12,10 +12,11 @@ Auswirkung auf die Testdaten, Vorschlag.
 
 ## 1. `dataAbsentReason` ist Must-Support, aber strukturell unerreichbar
 
-> **Geht nicht als Ballot-Kommentar heraus, sondern als drei Modul-Tickets** —
-> ICU (27 Profile, 45 Knoten), Soziodemographie (4/4), Mikrobiologie (1/1).
-> Wortlaut in [`tickets-2027.md`](tickets-2027.md). Der Grund für die Trennung:
-> Ein Sammelkommentar über drei Module bedeutet in jedem eine andere Korrektur,
+> **Wird als drei getrennte HDB-Kommentare eingereicht**, nicht als einer:
+> ICU (27 Profile, 45 Knoten, RequestType 59), Mikrobiologie (1/1) und
+> Soziodemographie (4/4, beide RequestType 49). Wortlaut in
+> [`ballot-kommentare-2027.csv`](ballot-kommentare-2027.csv). Ein
+> Sammelkommentar über drei Module bedeutet in jedem eine andere Korrektur,
 > und jede Redaktion liest die Teile, die sie nicht betreffen, als Rauschen.
 > Dieser Abschnitt bleibt als gemeinsame Analyse bestehen.
 
@@ -86,10 +87,10 @@ Dokumentiert als Kategorie 1 auf der [Testabdeckung-Seite](../kds-testdata/input
 
 ## 2. `patternUri` enthält eine Pipe-Versionsangabe
 
-> **Geht nicht als Ballot-Kommentar heraus, sondern als zwei Modul-Tickets** —
-> T4 Bildgebung (7 Deklarationen in 4 Profilen), T5 Lungenfunktion (eine
-> Deklaration, über die Ableitung in 5 Profilen). Wortlaut in
-> [`tickets-2027.md`](tickets-2027.md).
+> **Wird als zwei getrennte HDB-Kommentare eingereicht**: Bildgebung
+> (7 Deklarationen in 4 Profilen, RequestType 58) und Lungenfunktion (eine
+> Deklaration, über die Ableitung in 5 Profilen, RequestType 49). Wortlaut in
+> [`ballot-kommentare-2027.csv`](ballot-kommentare-2027.csv).
 >
 > Beim Nachzählen für die Tickets stellte sich heraus, dass dieser Abschnitt
 > **untertrieben** hat: Es ist nicht ein Element in einem Profil, sondern es sind
