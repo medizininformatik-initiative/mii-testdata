@@ -1,0 +1,49 @@
+{
+  "resourceType" : "Observation",
+  "id" : "mii-exa-test-data-patient-1-icu-muv-laenge-var-1",
+  "meta" : {
+    "source" : "https://www.charite.de/fhir/kds-testdata",
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-koerperlaenge"],
+    "security" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "code" : "HTEST",
+      "display" : "test health data"
+    }]
+  },
+  "language" : "en",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-patient-1-icu-muv-laenge-var-1</b></p><a name=\"mii-exa-test-data-patient-1-icu-muv-laenge-var-1\"> </a><a name=\"hcmii-exa-test-data-patient-1-icu-muv-laenge-var-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-koerperlaenge\">MII PR ICU MUV Koerperlaenge</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 1149101003}, {http://loinc.org 8306-3}\">Body height --lying</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-icu-patient-1.html\">Kim Musterperson  Female, DoB: 1956-03-14 ( https://www.medizininformatik-initiative.de/fhir/sid/standort-b#ICU-TEST-001)</a></p><p><b>effective</b>: 2024-05-06 08:10:00+0200 --&gt; 2024-05-06 08:15:00+0200</p><p><b>value</b>: 168 centimeter<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codecm = 'cm')</span></p></div>"
+  },
+  "status" : "final",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "vital-signs"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "1149101003"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "8306-3",
+      "display" : "Body height --lying"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/mii-exa-test-data-icu-patient-1"
+  },
+  "effectivePeriod" : {
+    "start" : "2024-05-06T08:10:00+02:00",
+    "end" : "2024-05-06T08:15:00+02:00"
+  },
+  "valueQuantity" : {
+    "value" : 168,
+    "unit" : "centimeter",
+    "system" : "http://unitsofmeasure.org",
+    "code" : "cm"
+  }
+}

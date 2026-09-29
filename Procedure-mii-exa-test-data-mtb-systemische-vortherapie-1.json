@@ -1,0 +1,148 @@
+{
+  "resourceType" : "Procedure",
+  "id" : "mii-exa-test-data-mtb-systemische-vortherapie-1",
+  "meta" : {
+    "source" : "https://www.charite.de/fhir/kds-testdata",
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-systemische-vortherapie"],
+    "security" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "code" : "HTEST",
+      "display" : "test health data"
+    }]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Procedure mii-exa-test-data-mtb-systemische-vortherapie-1</b></p><a name=\"mii-exa-test-data-mtb-systemische-vortherapie-1\"> </a><a name=\"hcmii-exa-test-data-mtb-systemische-vortherapie-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-systemische-vortherapie\">MII PR MTB Systemische Vortherapie</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>MII EX Onko Systemische Therapie Intention</b>: <span title=\"Codes:{https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-intention K}\">kurativ</span></p><p><b>ExtensionProzedurDokumentationsdatum</b>: 2023-11-20</p><p><b>MII EX Prozedur Durchführungsabsicht</b>: <a href=\"http://snomed.info/id/262202000\">SNOMED CT: 262202000</a> (Therapeutic)</p><p><b>MII EX Onko Systemische Therapie Stellung zur OP</b>: <span title=\"Codes:{https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-therapie-stellungzurop O}\">ohne Bezug zur operativen Therapie</span></p><blockquote><p><b>MII EX MTB Leitlinie Dokumentation</b></p><ul><li>Therapielinie: 1</li><li>Zulassungsstatus: <span title=\"Codes:{https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/CodeSystem/mii-cs-mtb-zulassungsstatus in-label}\">In-Label</span></li></ul></blockquote><p><b>basedOn</b>: <a href=\"CarePlan-mii-exa-test-data-mtb-therapieplan-1.html\">CarePlan: status = active; intent = plan; category = prätherapeutische Tumorkonferenz (Festlegung der Therapiestrategie); description = MTB-Beschluss mit Therapieempfehlungen und Studieneinschluss; created = 2024-03-28</a></p><p><b>partOf</b>: <a href=\"Procedure-mii-exa-test-data-mtb-systemische-therapie-1.html\">Procedure Zytostatische Chemotherapie, Immuntherapie und antiretrovirale Therapie</a></p><p><b>status</b>: Completed</p><p><b>statusReason</b>: <span title=\"Codes:{https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/CodeSystem/mii-cs-mtb-systemische-therapie-status-grund regular-completion}\">regular-completion</span></p><p><b>category</b>: <span title=\"Codes:{http://snomed.info/sct 277132007}\">Therapeutic procedure (procedure)</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 367336001}, {https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-therapie-typ CH}, {http://fhir.de/CodeSystem/bfarm/ops 8-54}\">Chemotherapy (procedure)</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-mtb-patient-1.html\">Elena Tumorfall  Female, DoB: 1971-04-12 ( https://www.charite.de/fhir/sid/patientenidentifikation#MTB-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-mtb-encounter-1.html\">Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2024-01-15 --&gt; 2024-06-30</a></p><p><b>performed</b>: 2023-06-01 --&gt; 2023-11-15</p><p><b>reasonReference</b>: <a href=\"Condition-mii-exa-test-data-mtb-diagnose-primaertumor-1.html\">Condition Bösartige Neubildung: Oberlappen (-Bronchus)</a></p><p><b>bodySite</b>: <span title=\"Codes:{http://snomed.info/sct 39607008}\">Lung structure (body structure)</span></p><p><b>outcome</b>: <span title=\"Codes:{https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-therapie-ende-grund E}\">reguläres Ende</span></p><p><b>note</b>: </p><blockquote><div><p>Platinbasierte Erstlinien-Chemotherapie vor MTB-Vorstellung.</p>\n</div></blockquote><p><b>usedCode</b>: <span title=\"Codes:{https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-systemische-therapie-protokolle CarboTax}\">CarboTax</span></p></div>"
+  },
+  "extension" : [{
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-systemische-therapie-intention",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-intention",
+        "code" : "K"
+      }],
+      "text" : "kurativ"
+    }
+  },
+  {
+    "url" : "http://fhir.de/StructureDefinition/ProzedurDokumentationsdatum",
+    "valueDateTime" : "2023-11-20"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Durchfuehrungsabsicht",
+    "valueCoding" : {
+      "system" : "http://snomed.info/sct",
+      "code" : "262202000",
+      "display" : "Therapeutic"
+    }
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-systemische-therapie-stellungzurop",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-therapie-stellungzurop",
+        "code" : "O"
+      }],
+      "text" : "ohne Bezug zur operativen Therapie"
+    }
+  },
+  {
+    "extension" : [{
+      "url" : "Therapielinie",
+      "valueUnsignedInt" : 1
+    },
+    {
+      "url" : "Zulassungsstatus",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/CodeSystem/mii-cs-mtb-zulassungsstatus",
+          "code" : "in-label",
+          "display" : "In-Label"
+        }]
+      }
+    }],
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-ex-mtb-leitlinie-dokumentation"
+  }],
+  "basedOn" : [{
+    "reference" : "CarePlan/mii-exa-test-data-mtb-therapieplan-1"
+  }],
+  "partOf" : [{
+    "reference" : "Procedure/mii-exa-test-data-mtb-systemische-therapie-1"
+  }],
+  "status" : "completed",
+  "statusReason" : {
+    "coding" : [{
+      "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/CodeSystem/mii-cs-mtb-systemische-therapie-status-grund",
+      "code" : "regular-completion"
+    }]
+  },
+  "category" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "277132007",
+      "display" : "Therapeutic procedure (procedure)"
+    }]
+  },
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "367336001",
+      "display" : "Chemotherapy (procedure)"
+    },
+    {
+      "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-therapie-typ",
+      "code" : "CH"
+    },
+    {
+      "extension" : [{
+        "url" : "http://fhir.de/StructureDefinition/seitenlokalisation",
+        "valueCoding" : {
+          "system" : "https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_ICD_SEITENLOKALISATION",
+          "code" : "R",
+          "display" : "rechts"
+        }
+      }],
+      "system" : "http://fhir.de/CodeSystem/bfarm/ops",
+      "version" : "2023",
+      "code" : "8-54",
+      "display" : "Zytostatische Chemotherapie, Immuntherapie und antiretrovirale Therapie"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/mii-exa-test-data-mtb-patient-1"
+  },
+  "encounter" : {
+    "reference" : "Encounter/mii-exa-test-data-mtb-encounter-1"
+  },
+  "performedPeriod" : {
+    "start" : "2023-06-01",
+    "end" : "2023-11-15"
+  },
+  "reasonReference" : [{
+    "reference" : "Condition/mii-exa-test-data-mtb-diagnose-primaertumor-1"
+  }],
+  "bodySite" : [{
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/900000000000207008/version/20240201",
+      "code" : "39607008",
+      "display" : "Lung structure (body structure)"
+    }]
+  }],
+  "outcome" : {
+    "coding" : [{
+      "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-therapie-ende-grund",
+      "code" : "E"
+    }]
+  },
+  "note" : [{
+    "text" : "Platinbasierte Erstlinien-Chemotherapie vor MTB-Vorstellung."
+  }],
+  "usedCode" : [{
+    "coding" : [{
+      "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-systemische-therapie-protokolle",
+      "code" : "CarboTax",
+      "display" : "CarboTax"
+    }]
+  }]
+}

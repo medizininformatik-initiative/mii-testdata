@@ -1,0 +1,95 @@
+{
+  "resourceType" : "Procedure",
+  "id" : "mii-exa-test-data-patient-14-onko-systemtherapie-1",
+  "meta" : {
+    "source" : "https://www.charite.de/fhir/kds-testdata",
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-systemische-therapie"],
+    "security" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "code" : "HTEST",
+      "display" : "test health data"
+    }]
+  },
+  "language" : "en",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Procedure mii-exa-test-data-patient-14-onko-systemtherapie-1</b></p><a name=\"mii-exa-test-data-patient-14-onko-systemtherapie-1\"> </a><a name=\"hcmii-exa-test-data-patient-14-onko-systemtherapie-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-systemische-therapie\">MII PR Onkologie Systemische Therapie</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>MII EX Onko Systemische Therapie Intention</b>: <span title=\"Codes:{https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-intention P}\">palliativ</span></p><p><b>MII EX Onko Systemische Therapie Stellung zur OP</b>: <span title=\"Codes:{https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-therapie-stellungzurop A}\">adjuvant</span></p><p><b>ExtensionProzedurDokumentationsdatum</b>: 2024-05-02</p><p><b>MII EX Prozedur Durchführungsabsicht</b>: <a href=\"http://snomed.info/id/262202000\">SNOMED CT: 262202000</a> (Therapeutic)</p><p><b>basedOn</b>: <a href=\"CarePlan-mii-exa-test-data-patient-14-mtb-therapieplan-1.html\">CarePlan: status = active; intent = plan; category = prätherapeutische Tumorkonferenz (Festlegung der Therapiestrategie); description = MTB-Beschluss: Erstlinie Pembrolizumab bei MSI-high metastasiertem Kolonkarzinom anstelle der Standard-Chemotherapie.; created = 2024-04-18</a></p><p><b>status</b>: In Progress</p><p><b>category</b>: <span title=\"Codes:{http://snomed.info/sct 18629005}\">Administration of drug or medicament</span></p><p><b>code</b>: <span title=\"Codes:{https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-therapie-typ IM}, {http://fhir.de/CodeSystem/bfarm/ops 8-54}\">Immun-/Antikörpertherapie</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-patient-14.html\">Hartmut Brenneke (official) Male, DoB: 1966-02-27 ( Medical record number)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-patient-14-encounter-2.html\">Encounter: identifier = Visit number; status = finished; class = ambulatory (ActCode#AMB); type = Einrichtungskontakt,Untersuchung und Behandlung; serviceType = Hämatologie und internistische Onkologie; period = 2024-05-02 08:00:00+0200 --&gt; 2024-05-02 13:00:00+0200</a></p><p><b>performed</b>: 2024-05-02 --&gt; (ongoing)</p><p><b>reasonReference</b>: <a href=\"Condition-mii-exa-test-data-patient-14-onko-diagnose-1.html\">Condition Bösartige Neubildung: Colon sigmoideum</a></p><p><b>bodySite</b>: <span title=\"Codes:{http://snomed.info/sct 60184004}\">Sigmoid colon structure (body structure)</span></p></div>"
+  },
+  "extension" : [{
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-systemische-therapie-intention",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-intention",
+        "code" : "P",
+        "display" : "palliativ"
+      }],
+      "text" : "palliativ"
+    }
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-systemische-therapie-stellungzurop",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-therapie-stellungzurop",
+        "code" : "A",
+        "display" : "adjuvant"
+      }],
+      "text" : "adjuvant"
+    }
+  },
+  {
+    "url" : "http://fhir.de/StructureDefinition/ProzedurDokumentationsdatum",
+    "valueDateTime" : "2024-05-02"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Durchfuehrungsabsicht",
+    "valueCoding" : {
+      "system" : "http://snomed.info/sct",
+      "code" : "262202000",
+      "display" : "Therapeutic"
+    }
+  }],
+  "basedOn" : [{
+    "reference" : "CarePlan/mii-exa-test-data-patient-14-mtb-therapieplan-1"
+  }],
+  "status" : "in-progress",
+  "category" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "18629005",
+      "display" : "Administration of drug or medicament"
+    }]
+  },
+  "code" : {
+    "coding" : [{
+      "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-therapie-typ",
+      "code" : "IM",
+      "display" : "Immun-/Antikörpertherapie"
+    },
+    {
+      "system" : "http://fhir.de/CodeSystem/bfarm/ops",
+      "version" : "2024",
+      "code" : "8-54",
+      "display" : "Zytostatische Chemotherapie, Immuntherapie und antiretrovirale Therapie"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/mii-exa-test-data-patient-14"
+  },
+  "encounter" : {
+    "reference" : "Encounter/mii-exa-test-data-patient-14-encounter-2"
+  },
+  "performedPeriod" : {
+    "start" : "2024-05-02"
+  },
+  "reasonReference" : [{
+    "reference" : "Condition/mii-exa-test-data-patient-14-onko-diagnose-1"
+  }],
+  "bodySite" : [{
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "60184004",
+      "display" : "Sigmoid colon structure (body structure)"
+    }]
+  }]
+}

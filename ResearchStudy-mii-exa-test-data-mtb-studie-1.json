@@ -1,0 +1,140 @@
+{
+  "resourceType" : "ResearchStudy",
+  "id" : "mii-exa-test-data-mtb-studie-1",
+  "meta" : {
+    "source" : "https://www.charite.de/fhir/kds-testdata",
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-studie"],
+    "security" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "code" : "HTEST",
+      "display" : "test health data"
+    }]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ResearchStudy mii-exa-test-data-mtb-studie-1</b></p><a name=\"mii-exa-test-data-mtb-studie-1\"> </a><a name=\"hcmii-exa-test-data-mtb-studie-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-studie\">MII PR MTB Studie</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><blockquote><p><b>MII EX Studie Backport Label</b></p><ul><li>value: Phase-III-Studie zu Osimertinib bei EGFR-mutiertem NSCLC</li><li>type: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/title-type scientific}\">Scientific title</span></li></ul></blockquote><blockquote><p><b>MII EX Studie Backport AssociatedParty</b></p><ul><li>role: <span title=\"Codes:{http://hl7.org/fhir/research-study-party-role sponsor}\">sponsor</span></li><li>party: <a href=\"Organization-mii-exa-test-data-organization-charite.html\">Organization Charité – Universitätsmedizin Berlin</a></li></ul></blockquote><blockquote><p><b>MII EX Studie Ethikvotum</b></p><ul><li>status: Zustimmende Bewertung</li><li>kommission: Ethikkommission der Charité - Universitätsmedizin Berlin</li><li>ethiknummer: EA1/456/24</li></ul></blockquote><p><b>MII EX Studie Studienregister</b>: <a href=\"Library-mii-exa-test-data-mtb-studien-register-1.html\">ClinicalTrials.gov</a></p><p><b>MII EX Studie Eligibility</b>: <a href=\"Group-mii-exa-test-data-mtb-studie-group-1.html\">Group Erwachsene mit EGFR-mutiertem NSCLC im Stadium IV</a></p><p><b>MII EX Studie Akronym</b>: NSCLC-EGFR-III</p><blockquote><p><b>MII EX Studie Rekrutierung</b></p><ul><li>rekrutierungsstart: 2024-01-01</li><li>rekrutierungsziel: 300</li><li>rekrutierungsstand: 120</li><li>rekrutierungsstand-datum: 2024-06-01</li></ul></blockquote><p><b>MII EX Studie Finanzierung</b>: Industriefinanzierte Studie</p><p><b>identifier</b>: <code>https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/NamingSystem/mii-ns-mtb-nct</code>/05252390</p><p><b>title</b>: Phase III NSCLC EGFR Mutation Study</p><p><b>partOf</b>: <a href=\"ResearchStudy-mii-exa-test-data-mtb-studie-2.html\">ResearchStudy NSCLC Master Protocol</a></p><p><b>status</b>: Active</p><p><b>primaryPurposeType</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/research-study-prim-purp-type treatment}\">Treatment</span></p><p><b>phase</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/research-study-phase phase-3}\">Phase 3</span></p><p><b>category</b>: <span title=\"Codes:\">Interventionelle Arzneimittelstudie</span></p><p><b>focus</b>: <span title=\"Codes:\">EGFR-mutiertes NSCLC</span></p><p><b>keyword</b>: <span title=\"Codes:\">EGFR</span></p><h3>Arms</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Name</b></td></tr><tr><td style=\"display: none\">*</td><td>Arm A: Osimertinib</td></tr></table></div>"
+  },
+  "extension" : [{
+    "extension" : [{
+      "url" : "value",
+      "valueString" : "Phase-III-Studie zu Osimertinib bei EGFR-mutiertem NSCLC"
+    },
+    {
+      "url" : "type",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/title-type",
+          "code" : "scientific"
+        }]
+      }
+    }],
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-ResearchStudy.label"
+  },
+  {
+    "extension" : [{
+      "url" : "role",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/research-study-party-role",
+          "code" : "sponsor"
+        }]
+      }
+    },
+    {
+      "url" : "party",
+      "valueReference" : {
+        "reference" : "Organization/mii-exa-test-data-organization-charite"
+      }
+    }],
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-ResearchStudy.associatedParty"
+  },
+  {
+    "extension" : [{
+      "url" : "status",
+      "valueString" : "Zustimmende Bewertung"
+    },
+    {
+      "url" : "kommission",
+      "valueString" : "Ethikkommission der Charité - Universitätsmedizin Berlin"
+    },
+    {
+      "url" : "ethiknummer",
+      "valueString" : "EA1/456/24"
+    }],
+    "url" : "https://www.medizininformatik-initiative.de/fhir/modul-studie/StructureDefinition/mii-ex-studie-ethikvotum"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/modul-studie/StructureDefinition/mii-ex-studie-studienregister",
+    "valueReference" : {
+      "reference" : "Library/mii-exa-test-data-mtb-studien-register-1"
+    }
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/modul-studie/StructureDefinition/mii-ex-studie-eligibility",
+    "valueReference" : {
+      "reference" : "Group/mii-exa-test-data-mtb-studie-group-1"
+    }
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/modul-studie/StructureDefinition/mii-ex-studie-akronym",
+    "valueString" : "NSCLC-EGFR-III"
+  },
+  {
+    "extension" : [{
+      "url" : "rekrutierungsstart",
+      "valueDate" : "2024-01-01"
+    },
+    {
+      "url" : "rekrutierungsziel",
+      "valueInteger" : 300
+    },
+    {
+      "url" : "rekrutierungsstand",
+      "valueInteger" : 120
+    },
+    {
+      "url" : "rekrutierungsstand-datum",
+      "valueDate" : "2024-06-01"
+    }],
+    "url" : "https://www.medizininformatik-initiative.de/fhir/modul-studie/StructureDefinition/mii-ex-studie-rekrutierung"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/modul-studie/StructureDefinition/mii-ex-studie-finanzierung",
+    "valueString" : "Industriefinanzierte Studie"
+  }],
+  "identifier" : [{
+    "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/NamingSystem/mii-ns-mtb-nct",
+    "value" : "05252390"
+  }],
+  "title" : "Phase III NSCLC EGFR Mutation Study",
+  "partOf" : [{
+    "reference" : "ResearchStudy/mii-exa-test-data-mtb-studie-2"
+  }],
+  "status" : "active",
+  "primaryPurposeType" : {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/research-study-prim-purp-type",
+      "code" : "treatment",
+      "display" : "Treatment"
+    }]
+  },
+  "phase" : {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/research-study-phase",
+      "code" : "phase-3",
+      "display" : "Phase 3"
+    }]
+  },
+  "category" : [{
+    "text" : "Interventionelle Arzneimittelstudie"
+  }],
+  "focus" : [{
+    "text" : "EGFR-mutiertes NSCLC"
+  }],
+  "keyword" : [{
+    "text" : "EGFR"
+  }],
+  "arm" : [{
+    "name" : "Arm A: Osimertinib"
+  }]
+}

@@ -1,0 +1,95 @@
+{
+  "resourceType" : "Observation",
+  "id" : "mii-exa-test-data-soziodemographie-datenerhebung-1",
+  "meta" : {
+    "source" : "https://www.charite.de/fhir/kds-testdata",
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-soziodemographie/StructureDefinition/mii-pr-sdd-datenerhebung"],
+    "security" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "code" : "HTEST",
+      "display" : "test health data"
+    }]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-soziodemographie-datenerhebung-1</b></p><a name=\"mii-exa-test-data-soziodemographie-datenerhebung-1\"> </a><a name=\"hcmii-exa-test-data-soziodemographie-datenerhebung-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-soziodemographie/StructureDefinition/mii-pr-sdd-datenerhebung\">MII PR SDD Datenerhebung</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>identifier</b>: <code>https://www.charite.de/fhir/sid/sdd-erhebung</code>/SDD-ERH-2025-0001</p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category social-history}\">Social History</span>, <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category survey}\">Survey</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 45970-1}, {http://snomed.info/sct 302147001}\">Soziodemographische Datenerhebung</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-soziodemographie-patient-1.html\">Renate Beispielmann  Female, DoB: 1958-03-17 ( https://www.charite.de/fhir/sid/patientenidentifikation#SDD-TEST-001)</a></p><p><b>effective</b>: 2025-05-12</p><p><b>method</b>: <span title=\"Codes:{https://www.medizininformatik-initiative.de/fhir/ext/modul-soziodemographie/CodeSystem/mii-cs-sdd-erhebungsmethode selbstauskunft}\">Selbstangabe</span></p><p><b>hasMember</b>: </p><ul><li><a href=\"Observation-mii-exa-test-data-soziodemographie-geburtsland-mutter-1.html\">Observation Mother birthplace [PhenX]</a></li><li><a href=\"Observation-mii-exa-test-data-soziodemographie-geburtsland-vater-1.html\">Observation Father birthplace</a></li><li><a href=\"Observation-mii-exa-test-data-soziodemographie-partnerschaft-1.html\">Observation Marital or partnership status</a></li><li><a href=\"Observation-mii-exa-test-data-soziodemographie-vertrauensperson-1.html\">Observation Receives as much social support as wanted</a></li><li><a href=\"Observation-mii-exa-test-data-soziodemographie-haushaltsgroesse-1.html\">Observation Household size [#]</a></li><li><a href=\"Observation-mii-exa-test-data-soziodemographie-betreuungssituation-1.html\">Observation Patient care statuses</a></li><li><a href=\"Observation-mii-exa-test-data-soziodemographie-schwerbehindertenausweis-1.html\">Observation Disability status</a></li><li><a href=\"Observation-mii-exa-test-data-soziodemographie-ausbildung-1.html\">Observation Highest level of education</a></li><li><a href=\"Observation-mii-exa-test-data-soziodemographie-beschaeftigungsstatus-1.html\">Observation Employment status - current</a></li><li><a href=\"Observation-mii-exa-test-data-soziodemographie-einkommen-1.html\">Observation Monthly household net income</a></li><li><a href=\"Observation-mii-exa-test-data-soziodemographie-berufliche-stellung-1.html\">Observation Employment status - current</a></li><li><a href=\"Observation-mii-exa-test-data-soziodemographie-schulabschluss-1.html\">Observation Details of education</a></li><li><a href=\"Observation-mii-exa-test-data-soziodemographie-schuljahre-1.html\">Observation Years of education [#] - Reported</a></li></ul></div>"
+  },
+  "identifier" : [{
+    "system" : "https://www.charite.de/fhir/sid/sdd-erhebung",
+    "value" : "SDD-ERH-2025-0001"
+  }],
+  "status" : "final",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "social-history"
+    }]
+  },
+  {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "survey"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "45970-1"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "302147001"
+    }],
+    "text" : "Soziodemographische Datenerhebung"
+  },
+  "subject" : {
+    "reference" : "Patient/mii-exa-test-data-soziodemographie-patient-1"
+  },
+  "effectiveDateTime" : "2025-05-12",
+  "method" : {
+    "coding" : [{
+      "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-soziodemographie/CodeSystem/mii-cs-sdd-erhebungsmethode",
+      "code" : "selbstauskunft",
+      "display" : "Selbstangabe"
+    }]
+  },
+  "hasMember" : [{
+    "reference" : "Observation/mii-exa-test-data-soziodemographie-geburtsland-mutter-1"
+  },
+  {
+    "reference" : "Observation/mii-exa-test-data-soziodemographie-geburtsland-vater-1"
+  },
+  {
+    "reference" : "Observation/mii-exa-test-data-soziodemographie-partnerschaft-1"
+  },
+  {
+    "reference" : "Observation/mii-exa-test-data-soziodemographie-vertrauensperson-1"
+  },
+  {
+    "reference" : "Observation/mii-exa-test-data-soziodemographie-haushaltsgroesse-1"
+  },
+  {
+    "reference" : "Observation/mii-exa-test-data-soziodemographie-betreuungssituation-1"
+  },
+  {
+    "reference" : "Observation/mii-exa-test-data-soziodemographie-schwerbehindertenausweis-1"
+  },
+  {
+    "reference" : "Observation/mii-exa-test-data-soziodemographie-ausbildung-1"
+  },
+  {
+    "reference" : "Observation/mii-exa-test-data-soziodemographie-beschaeftigungsstatus-1"
+  },
+  {
+    "reference" : "Observation/mii-exa-test-data-soziodemographie-einkommen-1"
+  },
+  {
+    "reference" : "Observation/mii-exa-test-data-soziodemographie-berufliche-stellung-1"
+  },
+  {
+    "reference" : "Observation/mii-exa-test-data-soziodemographie-schulabschluss-1"
+  },
+  {
+    "reference" : "Observation/mii-exa-test-data-soziodemographie-schuljahre-1"
+  }]
+}

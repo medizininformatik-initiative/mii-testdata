@@ -1,0 +1,106 @@
+{
+  "resourceType" : "Observation",
+  "id" : "mii-exa-test-data-patient-12-mibi-kultur-1",
+  "meta" : {
+    "source" : "https://www.charite.de/fhir/kds-testdata",
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-allgemeine-kultur"],
+    "security" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "code" : "HTEST",
+      "display" : "test health data"
+    }]
+  },
+  "language" : "en",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-patient-12-mibi-kultur-1</b></p><a name=\"mii-exa-test-data-patient-12-mibi-kultur-1\"> </a><a name=\"hcmii-exa-test-data-patient-12-mibi-kultur-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-allgemeine-kultur\">MII PR Mikrobio Allgemeine Kultur</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>identifier</b>: Observation Instance Identifier/pat12-kultur-1</p><p><b>basedOn</b>: <a href=\"ServiceRequest-mii-exa-test-data-patient-12-mibi-anforderung-1.html\">ServiceRequest Microbiology procedure (procedure)</a></p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span>, <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v2-0074 MB}\">Microbiology</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 11475-1}\">Microorganism identified in Specimen by Culture</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-patient-12.html\">Gerhard Woltmann (official) Male, DoB: 1953-04-22 ( Medical record number)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-patient-12-encounter-2.html\">Encounter: identifier = Visit number; status = finished; class = inpatient encounter (ActCode#IMP); type = Abteilungskontakt,Intensivstationär; serviceType = Intensivmedizin; period = 2025-03-08 18:00:00+0100 --&gt; 2025-03-18 10:00:00+0100</a></p><p><b>effective</b>: 2025-03-08 18:30:00+0100</p><p><b>issued</b>: 2025-03-10 08:00:00+0100</p><p><b>value</b>: <span title=\"Codes:{http://snomed.info/sct 10828004}\">Positive (qualifier value)</span></p><p><b>interpretation</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation POS}\">Positive</span></p><p><b>note</b>: </p><blockquote><div><p>Wachstumssignal nach 14 h in beiden aeroben Flaschen.</p>\n</div></blockquote><p><b>method</b>: <span title=\"Codes:{http://snomed.info/sct 703750006}\">Aerobic culture technique (qualifier value)</span></p><p><b>specimen</b>: <a href=\"Specimen-mii-exa-test-data-patient-12-mibi-specimen-bk.html\">Specimen: extension = Primärprobe (MII CS Biobank Probenebene#PRIMÄRPROBE),Biosafety level 2 (qualifier value); identifier = https://www.charite.de/fhir/sid/Probennummer#BK-012-001; status = available; type = Blood specimen (specimen); receivedTime = 2025-03-08 19:05:00+0100; note = Zwei Paerchen vor Beginn der empirischen Antibiose abgenommen.</a></p><p><b>device</b>: <a href=\"Device-mii-exa-test-data-mikrobio-device-bactec-1.html\">Device: identifier = https://www.charite.de/fhir/sid/device-identifier#BACTEC-001</a></p></div>"
+  },
+  "identifier" : [{
+    "type" : {
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+        "code" : "OBI"
+      }]
+    },
+    "system" : "https://www.charite.de/fhir/sid/test-lab-results",
+    "value" : "pat12-kultur-1",
+    "assigner" : {
+      "identifier" : {
+        "system" : "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier",
+        "value" : "DIZ-CHA"
+      }
+    }
+  }],
+  "basedOn" : [{
+    "reference" : "ServiceRequest/mii-exa-test-data-patient-12-mibi-anforderung-1"
+  }],
+  "status" : "final",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "laboratory"
+    }]
+  },
+  {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v2-0074",
+      "code" : "MB",
+      "display" : "Microbiology"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "11475-1",
+      "display" : "Microorganism identified in Specimen by Culture"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/mii-exa-test-data-patient-12"
+  },
+  "encounter" : {
+    "reference" : "Encounter/mii-exa-test-data-patient-12-encounter-2"
+  },
+  "effectiveDateTime" : "2025-03-08T18:30:00+01:00",
+  "_effectiveDateTime" : {
+    "extension" : [{
+      "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum",
+      "valueCoding" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "399445004",
+        "display" : "Specimen collection date (observable entity)"
+      }
+    }]
+  },
+  "issued" : "2025-03-10T08:00:00+01:00",
+  "valueCodeableConcept" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "10828004",
+      "display" : "Positive (qualifier value)"
+    }]
+  },
+  "interpretation" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+      "code" : "POS",
+      "display" : "Positive"
+    }]
+  }],
+  "note" : [{
+    "text" : "Wachstumssignal nach 14 h in beiden aeroben Flaschen."
+  }],
+  "method" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "703750006",
+      "display" : "Aerobic culture technique (qualifier value)"
+    }]
+  },
+  "specimen" : {
+    "reference" : "Specimen/mii-exa-test-data-patient-12-mibi-specimen-bk"
+  },
+  "device" : {
+    "reference" : "Device/mii-exa-test-data-mikrobio-device-bactec-1"
+  }
+}

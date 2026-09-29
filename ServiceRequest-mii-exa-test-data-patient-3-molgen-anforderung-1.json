@@ -1,0 +1,70 @@
+{
+  "resourceType" : "ServiceRequest",
+  "id" : "mii-exa-test-data-patient-3-molgen-anforderung-1",
+  "meta" : {
+    "source" : "https://www.charite.de/fhir/kds-testdata",
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/anforderung-genetischer-test"],
+    "security" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "code" : "HTEST",
+      "display" : "test health data"
+    }]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ServiceRequest mii-exa-test-data-patient-3-molgen-anforderung-1</b></p><a name=\"mii-exa-test-data-patient-3-molgen-anforderung-1\"> </a><a name=\"hcmii-exa-test-data-patient-3-molgen-anforderung-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/anforderung-genetischer-test\">MII PR MolGen Anforderung genetischer Test</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Active</p><p><b>intent</b>: Order</p><p><b>category</b>: <span title=\"Codes:{http://snomed.info/sct 108252007}\">Laboratory procedure (procedure)</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 405825005}, {http://loinc.org 53844-7}, {http://www.genenames.org/geneId HGNC:1097}\">BRAF: Exon 15 (Codon 600)</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-molgen-patient-1.html\">Petra Genomisch  Female, DoB: 1985-08-14 ( https://www.charite.de/fhir/sid/patientenidentifikation#MOL-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-molgen-encounter-1.html\">Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2024-03-01 --&gt; 2024-03-20</a></p><p><b>authoredOn</b>: 2022-04-07</p><p><b>requester</b>: <a href=\"Practitioner-mii-exa-test-data-practitioner-physician-1.html\">Practitioner Rahel Hirsch </a></p><p><b>reasonCode</b>: <span title=\"Codes:{http://snomed.info/sct 447886005}\">Adenocarcinoma of anorectum (disorder)</span></p><p><b>supportingInfo</b>: <a href=\"FamilyMemberHistory-mii-exa-test-data-patient-3-molgen-family-member-history-1.html\">FamilyMemberHistory: status = completed; date = 2022-04-07; relationship = Mother (person); sex = Female (finding); deceased[x] = true; reasonCode = Adenocarcinoma of anorectum (disorder)</a></p><p><b>specimen</b>: <a href=\"Specimen-mii-exa-test-data-molgen-specimen-1.html\">Specimen: status = available; type = Whole blood</a></p><p><b>note</b>: </p><blockquote><div><p>Dringender Verdacht auf BRAF V600E bei bekanntem kolorektalem Karzinom. Therapieentscheidung abhaengig von Ergebnis.</p>\n</div></blockquote></div>"
+  },
+  "status" : "active",
+  "intent" : "order",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "108252007",
+      "display" : "Laboratory procedure (procedure)"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "405825005",
+      "display" : "Molecular genetic test (procedure)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "53844-7",
+      "display" : "BRAF gene targeted mutation analysis in Blood or Tissue by Molecular genetics method"
+    },
+    {
+      "system" : "http://www.genenames.org/geneId",
+      "code" : "HGNC:1097",
+      "display" : "BRAF"
+    }],
+    "text" : "BRAF: Exon 15 (Codon 600)"
+  },
+  "subject" : {
+    "reference" : "Patient/mii-exa-test-data-molgen-patient-1"
+  },
+  "encounter" : {
+    "reference" : "Encounter/mii-exa-test-data-molgen-encounter-1"
+  },
+  "authoredOn" : "2022-04-07",
+  "requester" : {
+    "reference" : "Practitioner/mii-exa-test-data-practitioner-physician-1"
+  },
+  "reasonCode" : [{
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "447886005",
+      "display" : "Adenocarcinoma of anorectum (disorder)"
+    }]
+  }],
+  "supportingInfo" : [{
+    "reference" : "FamilyMemberHistory/mii-exa-test-data-patient-3-molgen-family-member-history-1"
+  }],
+  "specimen" : [{
+    "reference" : "Specimen/mii-exa-test-data-molgen-specimen-1"
+  }],
+  "note" : [{
+    "text" : "Dringender Verdacht auf BRAF V600E bei bekanntem kolorektalem Karzinom. Therapieentscheidung abhaengig von Ergebnis."
+  }]
+}

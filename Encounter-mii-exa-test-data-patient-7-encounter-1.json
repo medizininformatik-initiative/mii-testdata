@@ -1,0 +1,95 @@
+{
+  "resourceType" : "Encounter",
+  "id" : "mii-exa-test-data-patient-7-encounter-1",
+  "meta" : {
+    "source" : "https://www.charite.de/fhir/kds-testdata",
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung"],
+    "security" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "code" : "HTEST",
+      "display" : "test health data"
+    }]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Encounter mii-exa-test-data-patient-7-encounter-1</b></p><a name=\"mii-exa-test-data-patient-7-encounter-1\"> </a><a name=\"hcmii-exa-test-data-patient-7-encounter-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung\">MII PR Fall Kontakt mit einer Gesundheitseinrichtung</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>identifier</b>: Visit number/MII_0000008</p><p><b>status</b>: Finished</p><p><b>class</b>: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActCode.html#v3-ActCode-IMP\">ActCode: IMP</a> (inpatient encounter)</p><p><b>type</b>: <span title=\"Codes:{http://fhir.de/CodeSystem/Kontaktebene einrichtungskontakt}\">Einrichtungskontakt</span>, <span title=\"Codes:{http://fhir.de/CodeSystem/kontaktart-de normalstationaer}\">Normalstationär</span></p><p><b>serviceType</b>: <span title=\"Codes:{http://fhir.de/CodeSystem/dkgev/Fachabteilungsschluessel 1000}\">Pädiatrie</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-patient-7.html\">Anna Hoffmann (official) Female, DoB: 1992-07-15 ( Medical record number\u00a0(use:\u00a0usual,\u00a0))</a></p><p><b>period</b>: 2024-01-08 --&gt; 2024-01-15</p><h3>Hospitalizations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>AdmitSource</b></td><td><b>DischargeDisposition</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://fhir.de/CodeSystem/dgkev/Aufnahmeanlass E}\">Einweisung durch einen Arzt</span></td><td><span title=\"Codes:\"></span></td></tr></table><p><b>serviceProvider</b>: <a href=\"Organization-mii-exa-test-data-organization-charite.html\">Charité - Universitätsmedizin Berlin</a></p></div>"
+  },
+  "identifier" : [{
+    "type" : {
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+        "code" : "VN"
+      }]
+    },
+    "system" : "https://www.charite.de/fhir/NamingSystem/Aufnahmenummern",
+    "value" : "MII_0000008"
+  }],
+  "status" : "finished",
+  "class" : {
+    "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+    "code" : "IMP"
+  },
+  "type" : [{
+    "coding" : [{
+      "system" : "http://fhir.de/CodeSystem/Kontaktebene",
+      "code" : "einrichtungskontakt"
+    }]
+  },
+  {
+    "coding" : [{
+      "system" : "http://fhir.de/CodeSystem/kontaktart-de",
+      "code" : "normalstationaer"
+    }]
+  }],
+  "serviceType" : {
+    "coding" : [{
+      "system" : "http://fhir.de/CodeSystem/dkgev/Fachabteilungsschluessel",
+      "code" : "1000"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/mii-exa-test-data-patient-7"
+  },
+  "period" : {
+    "start" : "2024-01-08",
+    "end" : "2024-01-15"
+  },
+  "hospitalization" : {
+    "admitSource" : {
+      "coding" : [{
+        "system" : "http://fhir.de/CodeSystem/dgkev/Aufnahmeanlass",
+        "code" : "E",
+        "display" : "Einweisung durch einen Arzt"
+      }]
+    },
+    "dischargeDisposition" : {
+      "extension" : [{
+        "extension" : [{
+          "url" : "ErsteUndZweiteStelle",
+          "valueCoding" : {
+            "system" : "http://fhir.de/CodeSystem/dkgev/EntlassungsgrundErsteUndZweiteStelle",
+            "code" : "01",
+            "display" : "Behandlung regulär beendet"
+          }
+        },
+        {
+          "url" : "DritteStelle",
+          "valueCoding" : {
+            "system" : "http://fhir.de/CodeSystem/dkgev/EntlassungsgrundDritteStelle",
+            "code" : "1",
+            "display" : "arbeitsfähig entlassen"
+          }
+        }],
+        "url" : "http://fhir.de/StructureDefinition/Entlassungsgrund"
+      }]
+    }
+  },
+  "serviceProvider" : {
+    "reference" : "Organization/mii-exa-test-data-organization-charite",
+    "identifier" : {
+      "system" : "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier",
+      "value" : "Charité"
+    },
+    "display" : "Charité - Universitätsmedizin Berlin"
+  }
+}

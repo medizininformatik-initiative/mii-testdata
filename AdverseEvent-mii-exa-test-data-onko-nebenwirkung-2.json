@@ -1,0 +1,52 @@
+{
+  "resourceType" : "AdverseEvent",
+  "id" : "mii-exa-test-data-onko-nebenwirkung-2",
+  "meta" : {
+    "source" : "https://www.charite.de/fhir/kds-testdata",
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-nebenwirkung-adverse-event"],
+    "security" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "code" : "HTEST",
+      "display" : "test health data"
+    }]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: AdverseEvent mii-exa-test-data-onko-nebenwirkung-2</b></p><a name=\"mii-exa-test-data-onko-nebenwirkung-2\"> </a><a name=\"hcmii-exa-test-data-onko-nebenwirkung-2\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-nebenwirkung-adverse-event\">MII PR Onkologie Nebenwirkung von Strahlentherapie und systemische Therapie</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>MII EX Onkologie Nebenwirkung CTCAE-Version</b>: <span title=\"Codes:{https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-nebenwirkung-ctcae-version 5.0}\">CTCAE Version 5.0</span></p><p><b>actuality</b>: Adverse Event</p><p><b>event</b>: <span title=\"Codes:{https://www.meddra.org 10032759}\">Polyneuropathy</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-onko-patient-1.html\">Kim Musterperson  Female, DoB: 1956-03-14 ( https://www.charite.de/fhir/sid/patientenidentifikation#ONKO-TEST-001)</a></p><p><b>date</b>: 2022-04-01</p><p><b>seriousness</b>: <span title=\"Codes:{https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-nebenwirkung-ctcae-grad 3}\">schwerwiegend</span></p><h3>SuspectEntities</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Instance</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Procedure-mii-exa-test-data-onko-strahlentherapie-1.html\">Procedure Hochvoltstrahlentherapie</a></td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-nebenwirkung-ctcae-version",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-nebenwirkung-ctcae-version",
+        "code" : "5.0",
+        "display" : "CTCAE Version 5.0"
+      }]
+    }
+  }],
+  "actuality" : "actual",
+  "event" : {
+    "coding" : [{
+      "system" : "https://www.meddra.org",
+      "version" : "Version 27.0",
+      "code" : "10032759",
+      "display" : "Polyneuropathy"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/mii-exa-test-data-onko-patient-1"
+  },
+  "date" : "2022-04-01",
+  "seriousness" : {
+    "coding" : [{
+      "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-nebenwirkung-ctcae-grad",
+      "code" : "3",
+      "display" : "schwerwiegend"
+    }]
+  },
+  "suspectEntity" : [{
+    "instance" : {
+      "reference" : "Procedure/mii-exa-test-data-onko-strahlentherapie-1"
+    }
+  }]
+}

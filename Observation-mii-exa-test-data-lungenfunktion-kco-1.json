@@ -1,0 +1,121 @@
+{
+  "resourceType" : "Observation",
+  "id" : "mii-exa-test-data-lungenfunktion-kco-1",
+  "meta" : {
+    "source" : "https://www.charite.de/fhir/lungenfunktion-messplatz",
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-kco"],
+    "security" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "code" : "HTEST",
+      "display" : "test health data"
+    }]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-lungenfunktion-kco-1</b></p><a name=\"mii-exa-test-data-lungenfunktion-kco-1\"> </a><a name=\"hcmii-exa-test-data-lungenfunktion-kco-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/lungenfunktion-messplatz\">https://www.charite.de/fhir/lungenfunktion-messplatz</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-kco\">MII PR Lungenfunktion KCO</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>partOf</b>: <a href=\"Procedure-mii-exa-test-data-lungenfunktion-diffusion-messung-1.html\">Procedure Carbon monoxide diffusing capacity measurement (procedure)</a></p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category procedure}\">Procedure</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 251952002}, {http://loinc.org 19916-6}\">Transfer coefficient (respiratory measure) (observable entity)</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-lungenfunktion-patient-1.html\">Luise Atemwald  Female, DoB: 1972-06-30 ( https://www.charite.de/fhir/sid/patientenidentifikation#LUFU-TEST-001)</a></p><p><b>issued</b>: 2025-02-18 12:00:00+0100</p><p><b>value</b>: 1.45 mmol/(min.kPa.L)<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemmol/(min.kPa.L) = 'mmol/(min.kPa.L)')</span></p><p><b>interpretation</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}\">Normal</span></p><p><b>method</b>: <span title=\"Codes:{http://snomed.info/sct 264284001}\">Single-breath technique (qualifier value)</span></p><h3>ReferenceRanges</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td style=\"display: none\">*</td><td>1.2 mmol/(min.kPa.L)<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemmol/(min.kPa.L) = 'mmol/(min.kPa.L)')</span></td><td>1.8 mmol/(min.kPa.L)<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemmol/(min.kPa.L) = 'mmol/(min.kPa.L)')</span></td></tr></table><p><b>hasMember</b>: </p><ul><li><a href=\"Observation-mii-exa-test-data-lungenfunktion-dlco-1.html\">Observation Single breath carbon monoxide diffusing capacity (observable entity)</a></li><li><a href=\"Observation-mii-exa-test-data-lungenfunktion-va-1.html\">Observation Alveolar volume (observable entity)</a></li></ul><p><b>derivedFrom</b>: </p><ul><li><a href=\"Observation-mii-exa-test-data-lungenfunktion-dlco-1.html\">Observation Single breath carbon monoxide diffusing capacity (observable entity)</a></li><li><a href=\"Observation-mii-exa-test-data-lungenfunktion-va-1.html\">Observation Alveolar volume (observable entity)</a></li></ul><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 19915-8}\">Diffusion capacity/Alveolar volume Predicted</span></p><p><b>value</b>: 1.52 mmol/(min.kPa.L)<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemmol/(min.kPa.L) = 'mmol/(min.kPa.L)')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 98203-3}\">(Diffusion capacity/Alveolar volume)/predicted</span></p><p><b>value</b>: 95 %<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code% = '%')</span></p></blockquote></div>"
+  },
+  "partOf" : [{
+    "reference" : "Procedure/mii-exa-test-data-lungenfunktion-diffusion-messung-1"
+  }],
+  "status" : "final",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "procedure"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+      "code" : "251952002",
+      "display" : "Transfer coefficient (respiratory measure) (observable entity)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "19916-6",
+      "display" : "Diffusion capacity/Alveolar volume"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/mii-exa-test-data-lungenfunktion-patient-1"
+  },
+  "issued" : "2025-02-18T12:00:00+01:00",
+  "valueQuantity" : {
+    "value" : 1.45,
+    "unit" : "mmol/(min.kPa.L)",
+    "system" : "http://unitsofmeasure.org",
+    "code" : "mmol/(min.kPa.L)"
+  },
+  "interpretation" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+      "code" : "N",
+      "display" : "Normal"
+    }]
+  }],
+  "method" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+      "code" : "264284001",
+      "display" : "Single-breath technique (qualifier value)"
+    }]
+  },
+  "referenceRange" : [{
+    "low" : {
+      "value" : 1.2,
+      "unit" : "mmol/(min.kPa.L)",
+      "system" : "http://unitsofmeasure.org",
+      "code" : "mmol/(min.kPa.L)"
+    },
+    "high" : {
+      "value" : 1.8,
+      "unit" : "mmol/(min.kPa.L)",
+      "system" : "http://unitsofmeasure.org",
+      "code" : "mmol/(min.kPa.L)"
+    }
+  }],
+  "hasMember" : [{
+    "reference" : "Observation/mii-exa-test-data-lungenfunktion-dlco-1"
+  },
+  {
+    "reference" : "Observation/mii-exa-test-data-lungenfunktion-va-1"
+  }],
+  "derivedFrom" : [{
+    "reference" : "Observation/mii-exa-test-data-lungenfunktion-dlco-1"
+  },
+  {
+    "reference" : "Observation/mii-exa-test-data-lungenfunktion-va-1"
+  }],
+  "component" : [{
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "19915-8",
+        "display" : "Diffusion capacity/Alveolar volume Predicted"
+      }]
+    },
+    "valueQuantity" : {
+      "value" : 1.52,
+      "unit" : "mmol/(min.kPa.L)",
+      "system" : "http://unitsofmeasure.org",
+      "code" : "mmol/(min.kPa.L)"
+    }
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "98203-3",
+        "display" : "(Diffusion capacity/Alveolar volume)/predicted"
+      }]
+    },
+    "valueQuantity" : {
+      "value" : 95,
+      "unit" : "%",
+      "system" : "http://unitsofmeasure.org",
+      "code" : "%"
+    }
+  }]
+}

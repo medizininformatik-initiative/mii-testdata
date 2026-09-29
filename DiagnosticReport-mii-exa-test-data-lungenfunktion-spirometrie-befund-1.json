@@ -1,0 +1,94 @@
+{
+  "resourceType" : "DiagnosticReport",
+  "id" : "mii-exa-test-data-lungenfunktion-spirometrie-befund-1",
+  "meta" : {
+    "source" : "https://www.charite.de/fhir/lungenfunktion-messplatz",
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-spirometrie"],
+    "security" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "code" : "HTEST",
+      "display" : "test health data"
+    }]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: DiagnosticReport mii-exa-test-data-lungenfunktion-spirometrie-befund-1</b></p><a name=\"mii-exa-test-data-lungenfunktion-spirometrie-befund-1\"> </a><a name=\"hcmii-exa-test-data-lungenfunktion-spirometrie-befund-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/lungenfunktion-messplatz\">https://www.charite.de/fhir/lungenfunktion-messplatz</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-spirometrie\">MII PR Lungenfunktion Spirometrie</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><h2><span title=\"Codes:{http://snomed.info/sct 127783003}, {http://loinc.org 18759-1}\">Spirometry (procedure)</span> (<span title=\"Codes:{http://loinc.org 58477-1}, {http://terminology.hl7.org/CodeSystem/v2-0074 PF}, {http://snomed.info/sct 720449003}\">Pulmonary function study</span>) </h2><table class=\"grid\"><tr><td>Subject</td><td>Luise Atemwald  Female, DoB: 1972-06-30 ( https://www.charite.de/fhir/sid/patientenidentifikation#LUFU-TEST-001)</td></tr><tr><td>Relevant Time</td><td>2025-02-18 09:00:00+0100</td></tr><tr><td>Reported</td><td>2025-02-18 12:15:00+0100</td></tr><tr><td>Presented Form</td><td> application/pdf @ <a href=\"https://www.charite.de/fhir/lungenfunktion/befunde/spirometrie-2025-02-18.pdf\">https://www.charite.de/fhir/lungenfunktion/befunde/spirometrie-2025-02-18.pdf <img src=\"external.png\" alt=\"icon\" style=\"vertical-align: baseline\"/></a></td></tr></table><p><b>Report Details</b></p><table class=\"grid\"><tr><td><b>Code</b></td><td><b>Value</b></td><td><b>Reference Range</b></td><td><b>Flags</b></td><td><b>Reported</b></td></tr><tr><td><a href=\"Observation-mii-exa-test-data-lungenfunktion-fev-fvc-1.html\"><span title=\"Codes:{http://snomed.info/sct 251944000}, {http://loinc.org 19926-5}\">Forced expired volume in one second/forced vital capacity ratio (observable entity)</span></a></td><td>67.7 %<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code% = '%')</span></td><td>70 %<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code% = '%')</span> - 85 %<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code% = '%')</span></td><td>Final, <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation L}\">Low</span></td><td>2025-02-18 12:00:00+0100</td></tr><tr><td><a href=\"Observation-mii-exa-test-data-lungenfunktion-fev-1.html\"><span title=\"Codes:{http://snomed.info/sct 59328004}, {http://loinc.org 20150-9}\">Forced expired volume in 1 second (observable entity)</span></a></td><td>2.1 L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL = 'L')</span></td><td>2.31 L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL = 'L')</span> - 3.39 L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL = 'L')</span></td><td>Final, <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation L}\">Low</span></td><td>2025-02-18 12:00:00+0100</td></tr><tr><td><a href=\"Observation-mii-exa-test-data-lungenfunktion-fvc-1.html\"><span title=\"Codes:{http://snomed.info/sct 50834005}, {http://loinc.org 19868-9}\">Forced vital capacity (observable entity)</span></a></td><td>3.1 L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL = 'L')</span></td><td>2.9 L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL = 'L')</span> - 4.3 L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL = 'L')</span></td><td>Final, <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}\">Normal</span></td><td>2025-02-18 12:00:00+0100</td></tr><tr><td><a href=\"Observation-mii-exa-test-data-lungenfunktion-ic-1.html\"><span title=\"Codes:{http://snomed.info/sct 29533001}, {http://loinc.org 19852-3}\">Inspiratory capacity (observable entity)</span></a></td><td>2.4 L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL = 'L')</span></td><td>2.1 L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL = 'L')</span> - 3.1 L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL = 'L')</span></td><td>Final, <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}\">Normal</span></td><td>2025-02-18 12:00:00+0100</td></tr><tr><td><a href=\"Observation-mii-exa-test-data-lungenfunktion-mef-1.html\"><span title=\"Codes:{http://snomed.info/sct 251920002}, {http://loinc.org 65822-9}\">Maximum expiratory flow rate at 50 percent of vital capacity (observable entity)</span></a></td><td>1.9 L/s<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL/s = 'L/s')</span></td><td>2.7 L/s<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL/s = 'L/s')</span> - 5.2 L/s<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL/s = 'L/s')</span></td><td>Final, <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation L}\">Low</span></td><td>2025-02-18 12:00:00+0100</td></tr><tr><td><a href=\"Observation-mii-exa-test-data-lungenfunktion-pef-1.html\"><span title=\"Codes:{http://snomed.info/sct 18491006}, {http://loinc.org 33452-4}\">Peak expiratory flow rate (observable entity)</span></a></td><td>5.2 L/s<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL/s = 'L/s')</span></td><td>5.5 L/s<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL/s = 'L/s')</span> - 8.3 L/s<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL/s = 'L/s')</span></td><td>Final, <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation L}\">Low</span></td><td>2025-02-18 12:00:00+0100</td></tr><tr><td><a href=\"Observation-mii-exa-test-data-lungenfunktion-irv-erv-1.html\"><span title=\"Codes:{http://snomed.info/sct 55532004}, {http://loinc.org 19924-0}\">Expiratory reserve volume (observable entity)</span></a></td><td>0.9 L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL = 'L')</span></td><td>0.7 L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL = 'L')</span> - 1.5 L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL = 'L')</span></td><td>Final, <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}\">Normal</span></td><td>2025-02-18 12:00:00+0100</td></tr><tr><td><a href=\"Observation-mii-exa-test-data-lungenfunktion-vc-1.html\"><span title=\"Codes:{http://snomed.info/sct 83411002}, {http://loinc.org 19866-3}\">Slow vital capacity (observable entity)</span></a></td><td>3.3 L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL = 'L')</span></td><td>2.96 L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL = 'L')</span> - 4.44 L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL = 'L')</span></td><td>Final, <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}\">Normal</span></td><td>2025-02-18 12:00:00+0100</td></tr></table><p>Leichte obstruktive Ventilationsstoerung (FEV1/FVC 67.7 %, FEV1 74 % vom Soll) bei normaler Vitalkapazitaet.</p><p><b>Coded Conclusions:</b></p><ul><li><span title=\"Codes:{http://fhir.de/CodeSystem/bfarm/icd-10-gm J45.9}\">Asthma bronchiale, nicht näher bezeichnet</span></li></ul></div>"
+  },
+  "status" : "final",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "58477-1",
+      "display" : "Pulmonary function study"
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/v2-0074",
+      "code" : "PF"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+      "code" : "720449003",
+      "display" : "Pulmonary function report (record artifact)"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+      "code" : "127783003",
+      "display" : "Spirometry (procedure)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "18759-1",
+      "display" : "Spirometry study"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/mii-exa-test-data-lungenfunktion-patient-1"
+  },
+  "encounter" : {
+    "reference" : "Encounter/mii-exa-test-data-lungenfunktion-encounter-1"
+  },
+  "effectiveDateTime" : "2025-02-18T09:00:00+01:00",
+  "issued" : "2025-02-18T12:15:00+01:00",
+  "result" : [{
+    "reference" : "Observation/mii-exa-test-data-lungenfunktion-fev-fvc-1"
+  },
+  {
+    "reference" : "Observation/mii-exa-test-data-lungenfunktion-fev-1"
+  },
+  {
+    "reference" : "Observation/mii-exa-test-data-lungenfunktion-fvc-1"
+  },
+  {
+    "reference" : "Observation/mii-exa-test-data-lungenfunktion-ic-1"
+  },
+  {
+    "reference" : "Observation/mii-exa-test-data-lungenfunktion-mef-1"
+  },
+  {
+    "reference" : "Observation/mii-exa-test-data-lungenfunktion-pef-1"
+  },
+  {
+    "reference" : "Observation/mii-exa-test-data-lungenfunktion-irv-erv-1"
+  },
+  {
+    "reference" : "Observation/mii-exa-test-data-lungenfunktion-vc-1"
+  }],
+  "conclusion" : "Leichte obstruktive Ventilationsstoerung (FEV1/FVC 67.7 %, FEV1 74 % vom Soll) bei normaler Vitalkapazitaet.",
+  "conclusionCode" : [{
+    "coding" : [{
+      "system" : "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+      "version" : "2026",
+      "code" : "J45.9",
+      "display" : "Asthma bronchiale, nicht näher bezeichnet"
+    }]
+  }],
+  "presentedForm" : [{
+    "contentType" : "application/pdf",
+    "url" : "https://www.charite.de/fhir/lungenfunktion/befunde/spirometrie-2025-02-18.pdf",
+    "title" : "Spirometrie-Befund vom 18.02.2025"
+  }]
+}

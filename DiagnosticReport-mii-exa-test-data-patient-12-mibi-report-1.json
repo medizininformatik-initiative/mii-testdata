@@ -1,0 +1,123 @@
+{
+  "resourceType" : "DiagnosticReport",
+  "id" : "mii-exa-test-data-patient-12-mibi-report-1",
+  "meta" : {
+    "source" : "https://www.charite.de/fhir/kds-testdata",
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-diagnostic-report"],
+    "security" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "code" : "HTEST",
+      "display" : "test health data"
+    }]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: DiagnosticReport mii-exa-test-data-patient-12-mibi-report-1</b></p><a name=\"mii-exa-test-data-patient-12-mibi-report-1\"> </a><a name=\"hcmii-exa-test-data-patient-12-mibi-report-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-diagnostic-report\">MII PR Mikrobio Diagnostic Report</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><h2><span title=\"Codes:{http://loinc.org 11502-2}, {http://loinc.org 11475-1}\">Microorganism identified in Specimen by Culture</span> (<span title=\"Codes:{http://loinc.org 18725-2}\">Microbiology studies (set)</span>, <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v2-0074 LAB}\">Laboratory</span>, <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v2-0074 MB}\">Microbiology</span>) </h2><table class=\"grid\"><tr><td>Subject</td><td>Gerhard Woltmann (official) Male, DoB: 1953-04-22 ( Medical record number)</td></tr><tr><td>Relevant Time</td><td>2025-03-08 18:30:00+0100</td></tr><tr><td>Reported</td><td>2025-03-11 09:45:00+0100</td></tr><tr><td>Performer</td><td> <a href=\"Organization-mii-exa-test-data-mikrobio-organization-lab-1.html\">Organization Mikrobiologisches Labor Charité</a></td></tr><tr><td>Identifier</td><td> Filler Identifier/MIKROBIO-DR-012</td></tr></table><p><b>Report Details</b></p><table class=\"grid\"><tr><td><b>Code</b></td><td><b>Value</b></td><td><b>Reference Range</b></td><td><b>Flags</b></td><td><b>Note</b></td><td><b>Relevant Time</b></td><td><b>Reported</b></td></tr><tr><td><a href=\"Observation-mii-exa-test-data-patient-12-mibi-kultur-1.html\"><span title=\"Codes:{http://loinc.org 11475-1}\">Microorganism identified in Specimen by Culture</span></a></td><td><span title=\"Codes:{http://snomed.info/sct 10828004}\">Positive (qualifier value)</span></td><td/><td>Final, <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation POS}\">Positive</span></td><td><blockquote><div><p>Wachstumssignal nach 14 h in beiden aeroben Flaschen.</p>\n</div></blockquote></td><td/><td>2025-03-10 08:00:00+0100</td></tr><tr><td><a href=\"Observation-mii-exa-test-data-patient-12-mibi-mikroskopie-1.html\"><span title=\"Codes:{http://loinc.org 664-3}\">Microscopic observation [Identifier] in Specimen by Gram stain</span></a></td><td><span title=\"Codes:{http://snomed.info/sct 87172008}\">Gram-negative bacillus (organism)</span></td><td/><td>Final</td><td><blockquote><div><p>Befund sofort telefonisch an die Intensivstation uebermittelt.</p>\n</div></blockquote></td><td>2025-03-10 08:15:00+0100</td><td>2025-03-10 08:40:00+0100</td></tr><tr><td><a href=\"Observation-mii-exa-test-data-patient-12-mibi-erreger-1.html\"><span title=\"Codes:{http://loinc.org 11475-1}\">Microorganism identified in Specimen by Culture</span></a></td><td><span title=\"Codes:{http://snomed.info/sct 56415008}\">Klebsiella pneumoniae (organism)</span></td><td/><td>Final</td><td><blockquote><div><p>Identifikation per MALDI-TOF am Kulturisolat.</p>\n</div></blockquote></td><td>2025-03-10 16:00:00+0100</td><td>2025-03-10 16:30:00+0100</td></tr><tr><td><a href=\"Observation-mii-exa-test-data-patient-12-mibi-ast-piptazo.html\"><span title=\"Codes:{http://loinc.org 18970-4}\">Piperacillin+Tazobactam [Susceptibility]</span></a></td><td>&gt;64 mg/L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg/L = 'mg/L')</span></td><td/><td>Final, <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation R}\">Resistant</span></td><td><blockquote><div><p>Die laufende empirische Therapie ist damit unwirksam.</p>\n</div></blockquote></td><td>2025-03-11 09:00:00+0100</td><td>2025-03-11 09:30:00+0100</td></tr><tr><td><a href=\"Observation-mii-exa-test-data-patient-12-mibi-ast-ceftazidim.html\"><span title=\"Codes:{http://loinc.org 18893-8}\">cefTAZidime [Susceptibility]</span></a></td><td>32 mg/L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg/L = 'mg/L')</span></td><td/><td>Final, <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation R}\">Resistant</span></td><td/><td>2025-03-11 09:00:00+0100</td><td>2025-03-11 09:30:00+0100</td></tr><tr><td><a href=\"Observation-mii-exa-test-data-patient-12-mibi-ast-cipro.html\"><span title=\"Codes:{http://loinc.org 18906-8}\">Ciprofloxacin [Susceptibility]</span></a></td><td>4 mg/L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg/L = 'mg/L')</span></td><td/><td>Final, <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation R}\">Resistant</span></td><td/><td>2025-03-11 09:00:00+0100</td><td>2025-03-11 09:30:00+0100</td></tr><tr><td><a href=\"Observation-mii-exa-test-data-patient-12-mibi-ast-meropenem.html\"><span title=\"Codes:{http://loinc.org 18943-1}\">Meropenem [Susceptibility]</span></a></td><td>&lt;=0.25 mg/L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg/L = 'mg/L')</span></td><td>&lt;2 mg/L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg/L = 'mg/L')</span></td><td>Final, <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation S}\">Susceptible</span></td><td><blockquote><div><p>Carbapenem bleibt wirksam — Grundlage der Therapieumstellung am 11.03.</p>\n</div></blockquote></td><td>2025-03-11 09:00:00+0100</td><td>2025-03-11 09:30:00+0100</td></tr><tr><td><a href=\"Observation-mii-exa-test-data-patient-12-mibi-mrgn-1.html\"><span title=\"Codes:{http://loinc.org 99780-9}\">Multidrug resistant gram-negative organism classification [Type]</span></a></td><td><span title=\"Codes:{http://loinc.org LA33215-7}\">3MRGN</span></td><td/><td>Final, <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation R}\">Resistant</span></td><td><blockquote><div><p>3MRGN nach KRINKO 2012: Resistenz gegen Acylureidopenicilline, Cephalosporine der 3./4. Generation und Fluorchinolone; Carbapeneme wirksam. Isolierungsmassnahmen eingeleitet.</p>\n</div></blockquote></td><td>2025-03-11 09:15:00+0100</td><td>2025-03-11 09:30:00+0100</td></tr><tr><td><a href=\"Observation-mii-exa-test-data-patient-12-mibi-esbl-1.html\"><span title=\"Codes:{http://loinc.org 105277-8}\">Beta lactamase [Presence] in Isolate</span></a></td><td><span title=\"Codes:{http://snomed.info/sct 260373001}\">Detected (qualifier value)</span></td><td/><td>Final, <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation POS}\">Positive</span></td><td><blockquote><div><p>ESBL-Phaenotyp im EUCAST-Bestaetigungstest (Synergie mit Clavulansaeure). Fuer den ESBL-Phaenotyp existiert in LOINC 2.83 kein eigener Observable-Code, daher der generische Beta-Laktamase-Code.</p>\n</div></blockquote></td><td>2025-03-11 09:10:00+0100</td><td>2025-03-11 09:30:00+0100</td></tr></table><p>Klebsiella pneumoniae, 3MRGN, ESBL-Phaenotyp. Piperacillin/Tazobactam resistent — laufende empirische Therapie unwirksam. Meropenem empfindlich, Umstellung dringend empfohlen. Isolierung nach KRINKO.</p></div>"
+  },
+  "identifier" : [{
+    "type" : {
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+        "code" : "FILL"
+      }]
+    },
+    "system" : "https://www.charite.de/fhir/sid/diagnostic-report",
+    "value" : "MIKROBIO-DR-012",
+    "assigner" : {
+      "reference" : "Organization/mii-exa-test-data-mikrobio-organization-lab-1",
+      "identifier" : {
+        "system" : "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier",
+        "value" : "DIZ-CHA"
+      }
+    }
+  }],
+  "basedOn" : [{
+    "reference" : "ServiceRequest/mii-exa-test-data-patient-12-mibi-anforderung-1"
+  }],
+  "status" : "final",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "18725-2",
+      "display" : "Microbiology studies (set)"
+    }]
+  },
+  {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v2-0074",
+      "code" : "LAB"
+    }]
+  },
+  {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v2-0074",
+      "code" : "MB"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "11502-2"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "11475-1",
+      "display" : "Microorganism identified in Specimen by Culture"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/mii-exa-test-data-patient-12"
+  },
+  "encounter" : {
+    "reference" : "Encounter/mii-exa-test-data-patient-12-encounter-2"
+  },
+  "effectiveDateTime" : "2025-03-08T18:30:00+01:00",
+  "_effectiveDateTime" : {
+    "extension" : [{
+      "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum",
+      "valueCoding" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "399445004",
+        "display" : "Specimen collection date (observable entity)"
+      }
+    }]
+  },
+  "issued" : "2025-03-11T09:45:00+01:00",
+  "performer" : [{
+    "reference" : "Organization/mii-exa-test-data-mikrobio-organization-lab-1"
+  }],
+  "resultsInterpreter" : [{
+    "reference" : "Organization/mii-exa-test-data-mikrobio-organization-lab-1"
+  }],
+  "specimen" : [{
+    "reference" : "Specimen/mii-exa-test-data-patient-12-mibi-specimen-bk"
+  }],
+  "result" : [{
+    "reference" : "Observation/mii-exa-test-data-patient-12-mibi-kultur-1"
+  },
+  {
+    "reference" : "Observation/mii-exa-test-data-patient-12-mibi-mikroskopie-1"
+  },
+  {
+    "reference" : "Observation/mii-exa-test-data-patient-12-mibi-erreger-1"
+  },
+  {
+    "reference" : "Observation/mii-exa-test-data-patient-12-mibi-ast-piptazo"
+  },
+  {
+    "reference" : "Observation/mii-exa-test-data-patient-12-mibi-ast-ceftazidim"
+  },
+  {
+    "reference" : "Observation/mii-exa-test-data-patient-12-mibi-ast-cipro"
+  },
+  {
+    "reference" : "Observation/mii-exa-test-data-patient-12-mibi-ast-meropenem"
+  },
+  {
+    "reference" : "Observation/mii-exa-test-data-patient-12-mibi-mrgn-1"
+  },
+  {
+    "reference" : "Observation/mii-exa-test-data-patient-12-mibi-esbl-1"
+  }],
+  "conclusion" : "Klebsiella pneumoniae, 3MRGN, ESBL-Phaenotyp. Piperacillin/Tazobactam resistent — laufende empirische Therapie unwirksam. Meropenem empfindlich, Umstellung dringend empfohlen. Isolierung nach KRINKO."
+}

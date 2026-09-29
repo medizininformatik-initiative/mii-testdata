@@ -1,0 +1,64 @@
+{
+  "resourceType" : "ServiceRequest",
+  "id" : "mii-exa-test-data-patient-12-mibi-anforderung-1",
+  "meta" : {
+    "source" : "https://www.charite.de/fhir/kds-testdata",
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ServiceRequestLab"],
+    "security" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "code" : "HTEST",
+      "display" : "test health data"
+    }]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ServiceRequest mii-exa-test-data-patient-12-mibi-anforderung-1</b></p><a name=\"mii-exa-test-data-patient-12-mibi-anforderung-1\"> </a><a name=\"hcmii-exa-test-data-patient-12-mibi-anforderung-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ServiceRequestLab\">MII PR Labor Laboranforderung</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>identifier</b>: Placer Identifier/MIKROBIO-SR-012</p><p><b>status</b>: Completed</p><p><b>intent</b>: Order</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span></p><p><b>priority</b>: Urgent</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 252418007}\">Blutkultur und Trachealsekret, Erregerdiagnostik mit Antibiogramm</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-patient-12.html\">Gerhard Woltmann (official) Male, DoB: 1953-04-22 ( Medical record number)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-patient-12-encounter-2.html\">Encounter: identifier = Visit number; status = finished; class = inpatient encounter (ActCode#IMP); type = Abteilungskontakt,Intensivstationär; serviceType = Intensivmedizin; period = 2025-03-08 18:00:00+0100 --&gt; 2025-03-18 10:00:00+0100</a></p><p><b>authoredOn</b>: 2025-03-08 18:25:00+0100</p><p><b>requester</b>: <a href=\"Practitioner-mii-exa-test-data-practitioner-physician-1.html\">Practitioner Rahel Hirsch </a></p><p><b>reasonReference</b>: <a href=\"Condition-mii-exa-test-data-patient-12-diagnose-2.html\">Condition Sepsis: Sonstige gramnegative Erreger</a></p></div>"
+  },
+  "identifier" : [{
+    "type" : {
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+        "code" : "PLAC"
+      }]
+    },
+    "system" : "https://www.charite.de/fhir/sid/service-request",
+    "value" : "MIKROBIO-SR-012",
+    "assigner" : {
+      "identifier" : {
+        "system" : "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier",
+        "value" : "Charité"
+      }
+    }
+  }],
+  "status" : "completed",
+  "intent" : "order",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "laboratory",
+      "display" : "Laboratory"
+    }]
+  }],
+  "priority" : "urgent",
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "252418007",
+      "display" : "Microbiology procedure (procedure)"
+    }],
+    "text" : "Blutkultur und Trachealsekret, Erregerdiagnostik mit Antibiogramm"
+  },
+  "subject" : {
+    "reference" : "Patient/mii-exa-test-data-patient-12"
+  },
+  "encounter" : {
+    "reference" : "Encounter/mii-exa-test-data-patient-12-encounter-2"
+  },
+  "authoredOn" : "2025-03-08T18:25:00+01:00",
+  "requester" : {
+    "reference" : "Practitioner/mii-exa-test-data-practitioner-physician-1"
+  },
+  "reasonReference" : [{
+    "reference" : "Condition/mii-exa-test-data-patient-12-diagnose-2"
+  }]
+}

@@ -1,0 +1,37 @@
+{
+  "resourceType" : "DocumentReference",
+  "id" : "mii-exa-test-data-studien-dokument-1",
+  "meta" : {
+    "source" : "https://www.charite.de/fhir/kds-testdata",
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-studie/StructureDefinition/mii-pr-studie-dokument"],
+    "security" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "code" : "HTEST",
+      "display" : "test health data"
+    }]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: DocumentReference mii-exa-test-data-studien-dokument-1</b></p><a name=\"mii-exa-test-data-studien-dokument-1\"> </a><a name=\"hcmii-exa-test-data-studien-dokument-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/modul-studie/StructureDefinition/mii-pr-studie-dokument\">MII PR Studie Dokument</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Current</p><p><b>author</b>: <a href=\"Practitioner-mii-exa-test-data-practitioner-physician-1.html\">Practitioner Rahel Hirsch </a></p><p><b>custodian</b>: <a href=\"Organization-mii-exa-test-data-organization-charite.html\">Organization Charité – Universitätsmedizin Berlin</a></p><blockquote><p><b>content</b></p><h3>Attachments</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>ContentType</b></td><td><b>Url</b></td><td><b>Size</b></td><td><b>Title</b></td></tr><tr><td style=\"display: none\">*</td><td>PDF</td><td><a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/studien/mii-biomarker-2024/Studienprotokoll_v2.pdf\">https://www.charite.de/studien/mii-biomarker-2024/Studienprotokoll_v2.pdf</a></td><td>1548576</td><td>Studienprotokoll MII-BIOMARKER-2024 v2.0</td></tr></table></blockquote><h3>Contexts</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Related</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"ResearchStudy-mii-exa-test-data-studien-studie-1.html\">ResearchStudy Biomarker-basierte Verlaufsprognose endokriner Erkrankungen</a></td></tr></table></div>"
+  },
+  "status" : "current",
+  "author" : [{
+    "reference" : "Practitioner/mii-exa-test-data-practitioner-physician-1"
+  }],
+  "custodian" : {
+    "reference" : "Organization/mii-exa-test-data-organization-charite"
+  },
+  "content" : [{
+    "attachment" : {
+      "contentType" : "application/pdf",
+      "url" : "https://www.charite.de/studien/mii-biomarker-2024/Studienprotokoll_v2.pdf",
+      "size" : 1548576,
+      "title" : "Studienprotokoll MII-BIOMARKER-2024 v2.0"
+    }
+  }],
+  "context" : {
+    "related" : [{
+      "reference" : "ResearchStudy/mii-exa-test-data-studien-studie-1"
+    }]
+  }
+}

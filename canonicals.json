@@ -1,0 +1,42 @@
+[{
+  "id" : "mii-exa-test-data-mtb-studien-register-1",
+  "type" : "Library",
+  "url" : "https://clinicaltrials.gov/study/NCT05252390",
+  "version" : "2027.0.0-ballot.rc2",
+  "name" : "ClinicalTrials_gov"
+},
+{
+  "id" : "mii-exa-test-data-pro-questionnaire-schmerz-zusatz",
+  "type" : "Questionnaire",
+  "url" : "https://www.charite.de/fhir/kds-testdata/Questionnaire/pro-zusatzfragen-schmerz",
+  "version" : "2027.0.0-ballot.rc2",
+  "name" : "PROZusatzfragenSchmerz"
+},
+{
+  "id" : "de.medizininformatikinitiative.kerndatensatz.testdata",
+  "type" : "ImplementationGuide",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/testdata/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.testdata",
+  "version" : "2027.0.0-ballot.rc2",
+  "name" : "MIIKDSTestData"
+},
+{
+  "id" : "mii-exa-test-data-patient-13-register-katalog",
+  "type" : "Library",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/testdata/Library/mii-exa-test-data-patient-13-register-katalog",
+  "version" : "2027.0.0-ballot.rc2",
+  "name" : "FabryRegistryDE"
+},
+{
+  "id" : "mii-exa-test-data-seltene-register-katalog-1",
+  "type" : "Library",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/testdata/Library/mii-exa-test-data-seltene-register-katalog-1",
+  "version" : "2027.0.0-ballot.rc2",
+  "name" : "ERNReCONNETRegistry"
+},
+{
+  "id" : "mii-exa-test-data-studien-register-1",
+  "type" : "Library",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/testdata/Library/mii-exa-test-data-studien-register-1",
+  "version" : "2027.0.0-ballot.rc2",
+  "name" : "DRKS"
+}]

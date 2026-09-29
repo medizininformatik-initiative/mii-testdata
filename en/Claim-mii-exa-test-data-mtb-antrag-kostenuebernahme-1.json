@@ -1,0 +1,71 @@
+{
+  "resourceType" : "Claim",
+  "id" : "mii-exa-test-data-mtb-antrag-kostenuebernahme-1",
+  "meta" : {
+    "source" : "https://www.charite.de/fhir/kds-testdata",
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-antrag-kostenuebernahme"],
+    "security" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "code" : "HTEST",
+      "display" : "test health data"
+    }]
+  },
+  "language" : "en",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Claim mii-exa-test-data-mtb-antrag-kostenuebernahme-1</b></p><a name=\"mii-exa-test-data-mtb-antrag-kostenuebernahme-1\"> </a><a name=\"hcmii-exa-test-data-mtb-antrag-kostenuebernahme-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-antrag-kostenuebernahme\">MII PR MTB Antrag Kostenuebernahme</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Active</p><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/claim-type institutional}\">Institutional</span></p><p><b>use</b>: Claim</p><p><b>patient</b>: <a href=\"Patient-mii-exa-test-data-mtb-patient-1.html\">Elena Tumorfall  Female, DoB: 1971-04-12 ( https://www.charite.de/fhir/sid/patientenidentifikation#MTB-TEST-001)</a></p><p><b>created</b>: 2024-04-01</p><p><b>provider</b>: <a href=\"Organization-mii-exa-test-data-organization-charite.html\">Organization Charité – Universitätsmedizin Berlin</a></p><p><b>priority</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/processpriority normal}\">Normal</span></p><h3>Relateds</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Claim</b></td><td><b>Relationship</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Claim-mii-exa-test-data-mtb-antrag-kostenuebernahme-2.html\">Claim: status = active; type = Institutional; use = claim; created = 2024-03-20; priority = Normal</a></td><td><span title=\"Codes:{https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/CodeSystem/mii-cs-mtb-antrag-kostenuebernahme-antragsstadium follow-up-claim}\">Folgeantrag</span></td></tr></table><p><b>prescription</b>: <a href=\"MedicationRequest-mii-exa-test-data-mtb-therapieempfehlung-1.html\">MedicationRequest: extension = 1,Predictive value of the biomarker or clinical effectiveness of the corresponding drug in a molecularly stratified cohort was demonstrated in a prospective study or a meta-analysis in the same tumor type.,http://www.ncbi.nlm.nih.gov/pubmed#29151359; identifier = https://www.charite.de/fhir/sid/mtb-beschluss#TE-2024-001; status = draft; intent = proposal; medication[x] = Osimertinib; authoredOn = 2024-03-28; reasonCode = Bösartige Neubildung: Oberlappen (-Bronchus); note = Empfehlung mit Evidenzgrad m1A auf Basis der EGFR-L858R-Variante.</a></p><h3>CareTeams</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Sequence</b></td><td><b>Provider</b></td><td><b>Responsible</b></td></tr><tr><td style=\"display: none\">*</td><td>1</td><td><a href=\"Organization-mii-exa-test-data-organization-charite.html\">Organization Charité – Universitätsmedizin Berlin</a></td><td>true</td></tr></table><h3>Insurances</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Sequence</b></td><td><b>Focal</b></td><td><b>Coverage</b></td><td><b>ClaimResponse</b></td></tr><tr><td style=\"display: none\">*</td><td>1</td><td>true</td><td>GKV-Versicherung</td><td><a href=\"ClaimResponse-mii-exa-test-data-mtb-antwort-kostenuebernahme-1.html\">ClaimResponse: extension = Angenommen; status = active; type = Institutional; use = claim; created = 2024-04-20; outcome = complete</a></td></tr></table></div>"
+  },
+  "status" : "active",
+  "type" : {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/claim-type",
+      "code" : "institutional",
+      "display" : "Institutional"
+    }]
+  },
+  "use" : "claim",
+  "patient" : {
+    "reference" : "Patient/mii-exa-test-data-mtb-patient-1"
+  },
+  "created" : "2024-04-01",
+  "provider" : {
+    "reference" : "Organization/mii-exa-test-data-organization-charite"
+  },
+  "priority" : {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/processpriority",
+      "code" : "normal"
+    }]
+  },
+  "related" : [{
+    "claim" : {
+      "reference" : "Claim/mii-exa-test-data-mtb-antrag-kostenuebernahme-2"
+    },
+    "relationship" : {
+      "coding" : [{
+        "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/CodeSystem/mii-cs-mtb-antrag-kostenuebernahme-antragsstadium",
+        "code" : "follow-up-claim"
+      }]
+    }
+  }],
+  "prescription" : {
+    "reference" : "MedicationRequest/mii-exa-test-data-mtb-therapieempfehlung-1"
+  },
+  "careTeam" : [{
+    "sequence" : 1,
+    "provider" : {
+      "reference" : "Organization/mii-exa-test-data-organization-charite"
+    },
+    "responsible" : true
+  }],
+  "insurance" : [{
+    "sequence" : 1,
+    "focal" : true,
+    "coverage" : {
+      "display" : "GKV-Versicherung"
+    },
+    "claimResponse" : {
+      "reference" : "ClaimResponse/mii-exa-test-data-mtb-antwort-kostenuebernahme-1"
+    }
+  }]
+}

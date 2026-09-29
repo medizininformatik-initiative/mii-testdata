@@ -1,0 +1,101 @@
+{
+  "resourceType" : "Observation",
+  "id" : "mii-exa-test-data-lungenfunktion-sr-1",
+  "meta" : {
+    "source" : "https://www.charite.de/fhir/lungenfunktion-messplatz",
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-r-spezifisch"],
+    "security" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "code" : "HTEST",
+      "display" : "test health data"
+    }]
+  },
+  "language" : "en",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-lungenfunktion-sr-1</b></p><a name=\"mii-exa-test-data-lungenfunktion-sr-1\"> </a><a name=\"hcmii-exa-test-data-lungenfunktion-sr-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/lungenfunktion-messplatz\">https://www.charite.de/fhir/lungenfunktion-messplatz</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-r-spezifisch\">MII PR Lungenfunktion R Spezifisch</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>partOf</b>: <a href=\"Procedure-mii-exa-test-data-lungenfunktion-bodyplethysmographie-messung-1.html\">Procedure Total body plethysmography (procedure)</a></p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category procedure}\">Procedure</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 1366667009}, {http://loinc.org 91980-3}\">Specific airway resistance (observable entity)</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-lungenfunktion-patient-1.html\">Luise Atemwald  Female, DoB: 1972-06-30 ( https://www.charite.de/fhir/sid/patientenidentifikation#LUFU-TEST-001)</a></p><p><b>issued</b>: 2025-02-18 12:00:00+0100</p><p><b>value</b>: 1.35 kPa.s<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codekPa.s = 'kPa.s')</span></p><p><b>interpretation</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation H}\">High</span></p><p><b>method</b>: <span title=\"Codes:{http://snomed.info/sct 249862003}\">Sitting upright (finding)</span></p><h3>ReferenceRanges</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td style=\"display: none\">*</td><td>0.2 kPa.s<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codekPa.s = 'kPa.s')</span></td><td>1.2 kPa.s<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codekPa.s = 'kPa.s')</span></td></tr></table><p><b>hasMember</b>: <a href=\"Observation-mii-exa-test-data-lungenfunktion-sr-prov-1.html\">Observation Specific airway resistance (observable entity)</a></p><p><b>derivedFrom</b>: <a href=\"DocumentReference-mii-exa-test-data-lungenfunktion-docref-rohdaten-1.html\">DocumentReference: status = current; type = Pulmonary function report (record artifact); date = 2025-02-18 11:45:00+0100</a></p><h3>Components</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://loinc.org 91982-9}\">Specific airway resistance measured/predicted by Plethysmograph body box</span></td><td>125 %<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code% = '%')</span></td></tr></table></div>"
+  },
+  "partOf" : [{
+    "reference" : "Procedure/mii-exa-test-data-lungenfunktion-bodyplethysmographie-messung-1"
+  }],
+  "status" : "final",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "procedure"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+      "code" : "1366667009",
+      "display" : "Specific airway resistance (observable entity)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "91980-3",
+      "display" : "Specific airway resistance by Plethysmograph body box"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/mii-exa-test-data-lungenfunktion-patient-1"
+  },
+  "issued" : "2025-02-18T12:00:00+01:00",
+  "valueQuantity" : {
+    "value" : 1.35,
+    "unit" : "kPa.s",
+    "system" : "http://unitsofmeasure.org",
+    "code" : "kPa.s"
+  },
+  "interpretation" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+      "code" : "H",
+      "display" : "High"
+    }]
+  }],
+  "method" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+      "code" : "249862003",
+      "display" : "Sitting upright (finding)"
+    }]
+  },
+  "referenceRange" : [{
+    "low" : {
+      "value" : 0.2,
+      "unit" : "kPa.s",
+      "system" : "http://unitsofmeasure.org",
+      "code" : "kPa.s"
+    },
+    "high" : {
+      "value" : 1.2,
+      "unit" : "kPa.s",
+      "system" : "http://unitsofmeasure.org",
+      "code" : "kPa.s"
+    }
+  }],
+  "hasMember" : [{
+    "reference" : "Observation/mii-exa-test-data-lungenfunktion-sr-prov-1"
+  }],
+  "derivedFrom" : [{
+    "reference" : "DocumentReference/mii-exa-test-data-lungenfunktion-docref-rohdaten-1"
+  }],
+  "component" : [{
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "91982-9",
+        "display" : "Specific airway resistance measured/predicted by Plethysmograph body box"
+      }]
+    },
+    "valueQuantity" : {
+      "value" : 125,
+      "unit" : "%",
+      "system" : "http://unitsofmeasure.org",
+      "code" : "%"
+    }
+  }]
+}

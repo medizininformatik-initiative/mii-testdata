@@ -1,0 +1,70 @@
+{
+  "resourceType" : "Provenance",
+  "id" : "mii-exa-test-data-patient-1-consent-provenance-1",
+  "meta" : {
+    "source" : "https://www.charite.de/fhir/kds-testdata",
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-provenance"],
+    "security" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "code" : "HTEST",
+      "display" : "test health data"
+    }]
+  },
+  "language" : "en",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Provenance mii-exa-test-data-patient-1-consent-provenance-1</b></p><a name=\"mii-exa-test-data-patient-1-consent-provenance-1\"> </a><a name=\"hcmii-exa-test-data-patient-1-consent-provenance-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-provenance\">Profile - MI-I - Consent - Provenance</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p>Provenance for <a href=\"Consent-mii-exa-test-data-patient-1-consent-1.html\">mii-exa-test-data-patient-1-consent-1</a></p><p>Summary</p><table class=\"grid\"><tr><td>Recorded</td><td>2024-02-23 12:10:00+0100</td></tr></table><p><b>Agents</b></p><table class=\"grid\"><tr><td><b>Type</b></td><td><b>who</b></td></tr><tr><td><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/provenance-participant-type assembler}\">Assembler</span></td><td>Charite Consent Management System</td></tr></table></div>"
+  },
+  "target" : [{
+    "reference" : "Consent/mii-exa-test-data-patient-1-consent-1"
+  }],
+  "recorded" : "2024-02-23T12:10:00+01:00",
+  "agent" : [{
+    "type" : {
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/provenance-participant-type",
+        "code" : "assembler"
+      }]
+    },
+    "who" : {
+      "display" : "Charite Consent Management System"
+    }
+  }],
+  "entity" : [{
+    "role" : "source",
+    "what" : {
+      "reference" : "DocumentReference/mii-exa-test-data-patient-1-consent-docref-1"
+    }
+  }],
+  "signature" : [{
+    "extension" : [{
+      "url" : "http://fhir.de/ConsentManagement/StructureDefinition/SignatureLocation",
+      "valueString" : "Berlin, Charité Campus Mitte"
+    }],
+    "type" : [{
+      "system" : "urn:iso-astm:E1762-95:2013",
+      "code" : "1.2.840.10065.1.12.1.7",
+      "display" : "Consent Signature"
+    }],
+    "when" : "2024-02-23T12:00:00+01:00",
+    "who" : {
+      "reference" : "Patient/mii-exa-test-data-patient-1"
+    },
+    "data" : "RGllcyBpc3QgZWluIFBsYXR6aGFsdGVyIGZ1ZXIgZWluZSBnZXNjYW5udGUgVW50ZXJzY2hyaWZ0Lg=="
+  },
+  {
+    "type" : [{
+      "system" : "urn:iso-astm:E1762-95:2013",
+      "code" : "1.2.840.10065.1.12.1.11",
+      "display" : "Consent Witness Signature"
+    }],
+    "when" : "2024-02-23T12:00:00+01:00",
+    "who" : {
+      "display" : "Dr. med. Julia Beispiel"
+    },
+    "onBehalfOf" : {
+      "display" : "Charite - Universitaetsmedizin Berlin"
+    },
+    "data" : "WmV1Z2VuLVVudGVyc2NocmlmdCAoUGxhdHpoYWx0ZXIp"
+  }]
+}

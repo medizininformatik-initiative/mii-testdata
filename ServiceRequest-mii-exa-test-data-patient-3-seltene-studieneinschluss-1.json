@@ -1,0 +1,67 @@
+{
+  "resourceType" : "ServiceRequest",
+  "id" : "mii-exa-test-data-patient-3-seltene-studieneinschluss-1",
+  "meta" : {
+    "source" : "https://www.charite.de/fhir/kds-testdata",
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-studieneinschluss-anfrage"],
+    "security" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "code" : "HTEST",
+      "display" : "test health data"
+    }]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ServiceRequest mii-exa-test-data-patient-3-seltene-studieneinschluss-1</b></p><a name=\"mii-exa-test-data-patient-3-seltene-studieneinschluss-1\"> </a><a name=\"hcmii-exa-test-data-patient-3-seltene-studieneinschluss-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-studieneinschluss-anfrage\">MII PR SE Studieneinschluss Anfrage</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>Request status reason</b>: <span title=\"Codes:{http://snomed.info/sct 385645004}\">Patient erfuellt Einschlusskriterien der Studie</span></p><p><b>MII EX SE Empfehlung Priorität</b>: 1</p><p><b>MII EX SE Empfehlung Publikation</b>: <code>https://doi.org</code>/10.1016/j.ahj.2020.09.005</p><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>category</b>: <span title=\"Codes:{http://snomed.info/sct 110465008}\">Clinical trial (procedure)</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 702475000}\">Referral to clinical trial (procedure)</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-seltene-patient-1.html\">Luisa Seltenfall  Female, DoB: 1995-02-10 ( https://www.charite.de/fhir/sid/patientenidentifikation#SELT-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-seltene-encounter-1.html\">Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2024-03-01 --&gt; 2024-03-25</a></p><p><b>reasonReference</b>: <a href=\"Condition-mii-exa-test-data-patient-3-seltene-clinical-diagnosis-1.html\">Condition Marfan syndrome</a></p><p><b>supportingInfo</b>: <a href=\"DiagnosticReport-mii-exa-test-data-seltene-molgen-befundbericht-1.html\">Diagnostic Report for 'Genetic analysis report' for '-&gt;Luisa Seltenfall  Female, DoB: 1995-02-10 ( https://www.charite.de/fhir/sid/patientenidentifikation#SELT-TEST-001)'</a></p></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/request-statusReason",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "385645004",
+        "display" : "Accepted"
+      }],
+      "text" : "Patient erfuellt Einschlusskriterien der Studie"
+    }
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-ex-seltene-empfehlung-prioritaet",
+    "valuePositiveInt" : 1
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-ex-seltene-empfehlung-publikation",
+    "valueIdentifier" : {
+      "system" : "https://doi.org",
+      "value" : "10.1016/j.ahj.2020.09.005"
+    }
+  }],
+  "status" : "active",
+  "intent" : "proposal",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "110465008",
+      "display" : "Clinical trial (procedure)"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "702475000",
+      "display" : "Referral to clinical trial (procedure)"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/mii-exa-test-data-seltene-patient-1"
+  },
+  "encounter" : {
+    "reference" : "Encounter/mii-exa-test-data-seltene-encounter-1"
+  },
+  "reasonReference" : [{
+    "reference" : "Condition/mii-exa-test-data-patient-3-seltene-clinical-diagnosis-1"
+  }],
+  "supportingInfo" : [{
+    "reference" : "DiagnosticReport/mii-exa-test-data-seltene-molgen-befundbericht-1"
+  }]
+}

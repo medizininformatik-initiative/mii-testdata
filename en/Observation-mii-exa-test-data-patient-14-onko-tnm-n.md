@@ -1,0 +1,102 @@
+# mii-exa-test-data-patient-14-onko-tnm-n - MII KDS Test Data v2027.0.0-ballot.rc2
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **mii-exa-test-data-patient-14-onko-tnm-n**
+
+## Example Observation: mii-exa-test-data-patient-14-onko-tnm-n
+
+Information Source: [https://www.charite.de/fhir/kds-testdata](https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&canonical=https://www.charite.de/fhir/kds-testdata)
+
+Profile: [MII PR Onkologie TNM N-Kategorie](https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-tnm-n-kategorie)
+
+Security Label: [test health data (Details: ActReason code HTEST = 'test health data')](http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html)
+
+**status**: Final
+
+**code**: pN category (observable entity)
+
+**subject**: [Hartmut Brenneke (official) Male, DoB: 1966-02-27 ( Medical record number)](Patient-mii-exa-test-data-patient-14.md)
+
+**focus**: [Condition Bösartige Neubildung: Colon sigmoideum](Condition-mii-exa-test-data-patient-14-onko-diagnose-1.md)
+
+**encounter**: [Encounter: identifier = Visit number; status = finished; class = inpatient encounter (ActCode#IMP); type = Einrichtungskontakt,Normalstationär; serviceType = Allgemeine Chirurgie; period = 2024-03-11 --> 2024-03-22](Encounter-mii-exa-test-data-patient-14-encounter-1.md)
+
+**effective**: 2024-03-20
+
+**value**: N2
+
+**method**: 8. Auflage
+
+**hasMember**: 
+
+* [Observation Regional lymph nodes positive [#] Specimen](Observation-mii-exa-test-data-patient-14-onko-lk-befallen.md)
+* [Observation Regional lymph nodes examined [#] Specimen](Observation-mii-exa-test-data-patient-14-onko-lk-untersucht.md)
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "Observation",
+  "id" : "mii-exa-test-data-patient-14-onko-tnm-n",
+  "meta" : {
+    "source" : "https://www.charite.de/fhir/kds-testdata",
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-tnm-n-kategorie"],
+    "security" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "code" : "HTEST",
+      "display" : "test health data"
+    }]
+  },
+  "status" : "final",
+  "code" : {
+    "extension" : [{
+      "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-tnm-cp-praefix",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "https://www.uicc.org/resources/tnm",
+          "code" : "p",
+          "display" : "p"
+        }]
+      }
+    }],
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "371494008",
+      "display" : "pN category (observable entity)"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/mii-exa-test-data-patient-14"
+  },
+  "focus" : [{
+    "reference" : "Condition/mii-exa-test-data-patient-14-onko-diagnose-1"
+  }],
+  "encounter" : {
+    "reference" : "Encounter/mii-exa-test-data-patient-14-encounter-1"
+  },
+  "effectiveDateTime" : "2024-03-20",
+  "valueCodeableConcept" : {
+    "coding" : [{
+      "system" : "https://www.uicc.org/resources/tnm",
+      "code" : "N2"
+    }]
+  },
+  "method" : {
+    "coding" : [{
+      "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-tnm-version",
+      "code" : "8",
+      "display" : "8. Auflage"
+    }]
+  },
+  "hasMember" : [{
+    "reference" : "Observation/mii-exa-test-data-patient-14-onko-lk-befallen"
+  },
+  {
+    "reference" : "Observation/mii-exa-test-data-patient-14-onko-lk-untersucht"
+  }]
+}
+
+```

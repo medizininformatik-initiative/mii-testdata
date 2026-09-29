@@ -1,0 +1,73 @@
+{
+  "resourceType" : "Patient",
+  "id" : "mii-exa-test-data-patient-7",
+  "meta" : {
+    "source" : "https://www.charite.de/fhir/kds-testdata",
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient",
+    "http://fhir.de/ConsentManagement/StructureDefinition/Patient"],
+    "security" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "code" : "HTEST",
+      "display" : "test health data"
+    }]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Patient mii-exa-test-data-patient-7</b></p><a name=\"mii-exa-test-data-patient-7\"> </a><a name=\"hcmii-exa-test-data-patient-7\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profiles: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient\">MII PR Person Patient</a>, <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.consent@2027.0.0-ballot&amp;canonical=http://fhir.de/ConsentManagement/StructureDefinition/Patient\">Consent Management: Patient</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Anna Hoffmann (official) Female, DoB: 1992-07-15 ( Medical record number\u00a0(use:\u00a0usual,\u00a0))</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Known status of Patient\">Deceased:</td><td colspan=\"3\">false</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Other Id (see the one above)\">Other Id:</td><td colspan=\"3\">Krankenversichertennummer/E456789012\u00a0(use:\u00a0official,\u00a0)</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Alternate names (see the one above)\">Alt. Name:</td><td colspan=\"3\">Schmidt (Name changed for Marriage)</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Detail</td><td colspan=\"3\">Gartenstraße 56 Köln 50667 DE </td></tr></table></div>"
+  },
+  "identifier" : [{
+    "use" : "usual",
+    "type" : {
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+        "code" : "MR"
+      }]
+    },
+    "system" : "https://www.medizininformatik-initiative.de/fhir/sid/patienten",
+    "value" : "789456321",
+    "assigner" : {
+      "identifier" : {
+        "system" : "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier",
+        "value" : "Charité"
+      },
+      "display" : "Charité - Universitätsmedizin Berlin"
+    }
+  },
+  {
+    "use" : "official",
+    "type" : {
+      "coding" : [{
+        "system" : "http://fhir.de/CodeSystem/identifier-type-de-basis",
+        "code" : "KVZ10"
+      }]
+    },
+    "system" : "http://fhir.de/sid/gkv/kvid-10",
+    "value" : "E456789012",
+    "assigner" : {
+      "identifier" : {
+        "use" : "official",
+        "system" : "http://fhir.de/sid/arge-ik/iknr",
+        "value" : "567890123"
+      }
+    }
+  }],
+  "name" : [{
+    "use" : "official",
+    "family" : "Hoffmann",
+    "given" : ["Anna"]
+  },
+  {
+    "use" : "maiden",
+    "family" : "Schmidt"
+  }],
+  "gender" : "female",
+  "birthDate" : "1992-07-15",
+  "deceasedBoolean" : false,
+  "address" : [{
+    "type" : "both",
+    "line" : ["Gartenstraße 56"],
+    "city" : "Köln",
+    "postalCode" : "50667",
+    "country" : "DE"
+  }]
+}

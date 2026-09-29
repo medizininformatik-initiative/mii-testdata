@@ -1,0 +1,48 @@
+{
+  "resourceType" : "MedicationAdministration",
+  "id" : "mii-exa-test-data-lungenfunktion-dosis-gabe-var-1",
+  "meta" : {
+    "source" : "https://www.charite.de/fhir/lungenfunktion-messplatz",
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-dosis-gabe"],
+    "security" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "code" : "HTEST",
+      "display" : "test health data"
+    }]
+  },
+  "language" : "en",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: MedicationAdministration mii-exa-test-data-lungenfunktion-dosis-gabe-var-1</b></p><a name=\"mii-exa-test-data-lungenfunktion-dosis-gabe-var-1\"> </a><a name=\"hcmii-exa-test-data-lungenfunktion-dosis-gabe-var-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/lungenfunktion-messplatz\">https://www.charite.de/fhir/lungenfunktion-messplatz</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-lungenfunktion/StructureDefinition/mii-pr-lungenfunktion-dosis-gabe\">MII PR Lungenfunktion Dosisgabe</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>partOf</b>: <a href=\"Procedure-mii-exa-test-data-lungenfunktion-provokationstest-messung-1.html\">Procedure Methacholine challenge (procedure)</a></p><p><b>status</b>: Completed</p><p><b>medication</b>: <span title=\"Codes:{http://fhir.de/CodeSystem/ifa/pzn 00171345}, {http://fhir.de/CodeSystem/bfarm/atc V04CX03}\">Methacholinchlorid 0,33% Loesung zur Inhalation</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-lungenfunktion-patient-1.html\">Luise Atemwald  Female, DoB: 1972-06-30 ( https://www.charite.de/fhir/sid/patientenidentifikation#LUFU-TEST-001)</a></p><p><b>effective</b>: 2025-02-18 11:15:00+0100</p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Dose</b></td></tr><tr><td style=\"display: none\">*</td><td>0.1 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span></td></tr></table></div>"
+  },
+  "partOf" : [{
+    "reference" : "Procedure/mii-exa-test-data-lungenfunktion-provokationstest-messung-1"
+  }],
+  "status" : "completed",
+  "medicationCodeableConcept" : {
+    "coding" : [{
+      "system" : "http://fhir.de/CodeSystem/ifa/pzn",
+      "code" : "00171345",
+      "display" : "Provokit® 0,33%"
+    },
+    {
+      "system" : "http://fhir.de/CodeSystem/bfarm/atc",
+      "version" : "2026",
+      "code" : "V04CX03",
+      "display" : "Methacholin"
+    }],
+    "text" : "Methacholinchlorid 0,33% Loesung zur Inhalation"
+  },
+  "subject" : {
+    "reference" : "Patient/mii-exa-test-data-lungenfunktion-patient-1"
+  },
+  "effectiveDateTime" : "2025-02-18T11:15:00+01:00",
+  "dosage" : {
+    "dose" : {
+      "value" : 0.1,
+      "unit" : "mg",
+      "system" : "http://unitsofmeasure.org",
+      "code" : "mg"
+    }
+  }
+}

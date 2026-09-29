@@ -1,0 +1,759 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+
+
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Test Coverage - MII KDS Test Data v2027.0.0-ballot.rc2</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <link href="assets/css/project.css" rel="stylesheet"/>
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Branding override for the fhir2.base.template CSS placeholder
+     (base ships includes/fragment-css.html as a single comment; it is included
+     in <head> AFTER all base stylesheets, so the linked files win the
+     cascade).
+     Load model (docs/styleguide.md §1/§10): bootstrap-accessibility.css
+     (PayPal Bootstrap Accessibility Plugin v1.0.7, vendored + pinned - §8)
+     patches Bootstrap-3 component styling for accessibility (focus outlines,
+     alert contrast) and loads FIRST so the template's own rules can override;
+     then template-base.css carries the
+     brand-INDEPENDENT rule blocks and always loads; then EXACTLY ONE palette
+     file follows - num-diz.css, the DEFAULT design, unless the consuming IG
+     ships input/data/brand.json with { "design": "mii" } (read as
+     site.data.brand.design via the base's input/data -> _data pre-process),
+     which selects mii.css instead. Only the exact value 'mii' selects the
+     MII design; anything else - including no brand.json at all and unknown
+     values - renders NUM-DIZ. Both palettes declare the same variable set
+     (scripts/brand-switch.test.mjs). -->
+<link href="assets/css/bootstrap-accessibility.css" rel="stylesheet"/>
+<link href="assets/css/template-base.css" rel="stylesheet"/>
+
+<link href="assets/css/num-diz.css" rel="stylesheet"/>
+
+
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+    <script type="text/javascript" src="assets/js/direction-management.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"4"}
+    h3,h4,h5,h6{--heading-prefix:"4"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Branding override for the fhir2.base.template header placeholder
+     (base ships includes/fragment-header.html as a single comment; it is included
+     inside "#segment-header > .container", before the #ig-status block).
+     Language handling: only the asset and its descriptive alt text switch on
+     include.lang (the pattern kerndatensatz-basis uses); no translatable UI
+     strings are hard-coded.
+     Brand handling: the project logo additionally switches on
+     site.data.brand.design (input/data/brand.json in the consuming IG, see
+     docs/styleguide.md §10). Only the exact value 'mii' selects the MII
+     logos - anything else, including no brand.json at all, falls through to
+     the NUM-DIZ default.
+     Two logos, mirroring kerndatensatz-basis: the HL7 FHIR logo (links to the
+     FHIR spec) in #family-nav, and the project logo in #project-nav.
+     fhir-logo-www.png is shipped by fhir2.base.template
+     (content/assets/images/), so it resolves from the inherited assets without
+     shipping it here. -->
+<div id="family-nav">
+  <a id="family-logo" no-external="true" href="https://hl7.org/fhir">
+    <img height="50" alt="HL7 FHIR" src="assets/images/fhir-logo-www.png"/>
+  </a>
+</div>
+<div id="project-nav">
+
+  <a id="project-logo" no-external="true" href="https://www.netzwerk-universitaetsmedizin.de/forschung/num-diz">
+
+    <img height="50" alt="NUM-DIZ (Network of University Medicine — Data Integration Center)" src="assets/images/logo-num-diz-en.svg"/>
+
+  </a>
+
+</div>
+<!-- Font-size control (A / A+ / A++): three reader-selectable levels; level A
+     is the untouched default. Logic in assets/js/font-size-control.js, the
+     zoom mapping + button styling in template-base.css ("font-size control"
+     block). All three buttons read "A" — the button's own font size shows the level; labels are language-neutral; only the aria texts switch
+     on include.lang. REMOVAL: delete this block, the js file and the CSS
+     block - one commit, styleguide §5a. -->
+
+<div class="ig-fontsize" role="group" aria-label="Font size">
+  <button type="button" data-level="0" aria-pressed="true" aria-label="Font size: default">A</button>
+  <button type="button" data-level="1" aria-pressed="false" aria-label="Font size: larger">A</button>
+  <button type="button" data-level="2" aria-pressed="false" aria-label="Font size: largest">A</button>
+</div>
+
+<script src="assets/js/font-size-control.js" defer></script>
+<!-- PayPal Bootstrap Accessibility Plugin v1.0.7 (vendored + pinned, §8):
+     patches the Bootstrap-3 components the publisher renders - navbar
+     dropdowns gain ARIA menu semantics + arrow-key navigation, tab panels
+     (structure-tabs) the full ARIA tabs pattern, alerts live-region
+     announcements. `defer` guarantees it executes AFTER the parser-inserted
+     bootstrap.min.js at the end of the body. Vendored from
+     paypal/bootstrap-accessibility-plugin @ v1.0.7 (the admin-ch fork was
+     evaluated and rejected: 151 commits behind upstream, its 6 deltas are
+     site-specific tab tweaks). REMOVAL: delete this tag, both vendored
+     assets and the fragment-css link - guard test pins the hashes. -->
+<script src="assets/js/bootstrap-accessibility.min.js" defer></script>
+<!-- Back-to-top button: appears after one viewport of scrolling (logic in
+     assets/js/back-to-top.js, styling in template-base.css "back-to-top"
+     block). Rendered here inside #segment-header, which is OUTSIDE the
+     data-fontsize zoom regions, so the fixed button never scales. REMOVAL:
+     this block, the js file and the CSS block - one commit, styleguide §8. -->
+
+<button type="button" class="ig-back-to-top" aria-label="Back to top">↑</button>
+
+<script src="assets/js/back-to-top.js" defer></script>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">MII KDS Test Data</span>
+            <br/>
+            <span style="display:inline-block;">2027.0.0-ballot.rc2 - 
+
+
+
+  <img alt="Germany flag" src="assets/images/deu.svg" height="16" title="Germany"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="usage.html">Usage</a>
+  </li>
+  <li>
+    <a href="test-coverage.html">Test coverage</a>
+  </li>
+  <li>
+    <a href="known-issues.html">Known issues</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+
+              
+
+
+
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Test Coverage</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">MII KDS Test Data - Local Development build (v2027.0.0-ballot.rc2) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://www.medizininformatik-initiative.de/fhir/testdata/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Test Coverage</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#test-coverage" id="markdown-toc-test-coverage">Test coverage</a>    <ul>
+      <li><a href="#the-coverage-contract" id="markdown-toc-the-coverage-contract">The coverage contract</a></li>
+      <li><a href="#measured-state" id="markdown-toc-measured-state">Measured state</a></li>
+      <li><a href="#where-nothing-has-been-written-yet" id="markdown-toc-where-nothing-has-been-written-yet">Where nothing has been written yet</a></li>
+      <li><a href="#reading-a-validation-result" id="markdown-toc-reading-a-validation-result">Reading a validation result</a></li>
+      <li><a href="#limits-and-next-steps" id="markdown-toc-limits-and-next-steps">Limits and next steps</a></li>
+    </ul>
+  </li>
+</ul>
+
+</div>
+<h1 id="test-coverage">Test coverage</h1>
+
+<p>This page states what the test data promises to cover and shows the measured state — always against <strong>one specific version of the MII Kerndatensatz complete</strong> (the BOM) that the data is built and measured against (see the reference version below).</p>
+
+<h3 id="the-coverage-contract">The coverage contract</h3>
+
+<p>The test data follows a three-part contract, each part measured against the profile snapshots of the pinned BOM:</p>
+
+<p><strong>1. Profile coverage</strong> — every instantiable profile in the BOM has at least one example instance declaring it via <code class="language-plaintext highlighter-rouge">meta.profile</code>. Abstract profiles count as covered through their derived profiles.</p>
+
+<p><strong>2. Must-Support coverage</strong> — every MS element of a profile in use is populated in <strong>at least one</strong> instance of that profile. This deliberately produces <strong>variant instances</strong> wherever a single example cannot carry every MS element:</p>
+<ul>
+  <li><em>Choice variants</em>: if several <code class="language-plaintext highlighter-rouge">value[x]</code> or <code class="language-plaintext highlighter-rouge">onset[x]</code> forms are MS (for example <code class="language-plaintext highlighter-rouge">abatementAge</code> <strong>and</strong> <code class="language-plaintext highlighter-rouge">abatementDateTime</code>), each form needs its own instance.</li>
+  <li><em>Slice alternatives</em>: where MS slices exclude one another (<code class="language-plaintext highlighter-rouge">medicationReference</code> versus <code class="language-plaintext highlighter-rouge">medicationCodeableConcept</code>), one instance covers each branch.</li>
+  <li><em><code class="language-plaintext highlighter-rouge">dataAbsentReason</code></em>: where DAR itself is MS, <strong>every structurally possible occurrence</strong> gets an absent variant — not just one per profile family. Where a profile requires a value and marks DAR as MS at the same time, no conformant instance exists; those cases appear as <em>blocked</em> below.</li>
+</ul>
+
+<p><strong>3. Invariant coverage</strong> — for profile invariants (FHIRPath constraints) at least one example shows the constraint <strong>satisfied</strong>; for branching invariants, one example <strong>per branch</strong>. Implemented examples:</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">DosageDE</code> (medication): <em>either</em> a fully structured dosage (<code class="language-plaintext highlighter-rouge">timing</code> plus <code class="language-plaintext highlighter-rouge">doseAndRate</code>, no free text) <em>or</em> pure free text — covered by the patient pair <strong>patient-1 (structured)</strong> / <strong>patient-2 (unstructured)</strong>.</li>
+  <li><code class="language-plaintext highlighter-rouge">mii-pr-mikrobio-resistenzkategorie-status</code>: positive <strong>and</strong> negative finding.</li>
+  <li><code class="language-plaintext highlighter-rouge">sba-1</code> (sociodemographics, disability certificate): details only where a certificate exists — a yes branch with degree and marks, a no branch without.</li>
+</ul>
+
+<p>Beyond that: <strong>referential integrity</strong> within every bundle, enforced in CI against Blaze with <code class="language-plaintext highlighter-rouge">ENFORCE_REFERENTIAL_INTEGRITY</code>, and consistent labelling (<code class="language-plaintext highlighter-rouge">meta.security = HTEST</code>, <code class="language-plaintext highlighter-rouge">meta.source</code>).</p>
+
+<p>Since a single server only catches what it happens to be strict about, CI loads every bundle into <strong>both Blaze and HAPI</strong> and reports any discrepancy. That check found a Specimen reference written as an absolute URL into the MII canonical namespace: Blaze accepted it, HAPI rejected it as an external reference.</p>
+
+<h3 id="measured-state">Measured state</h3>
+
+<p><code class="language-plaintext highlighter-rouge">scripts/ms-coverage.py</code> regenerates these figures on every IG build:</p>
+
+<p><strong>Reference version: MII Kerndatensatz complete <a href="https://github.com/medizininformatik-initiative/kerndatensatz-complete/releases/tag/v2027.0.0-ballot.19"><code class="language-plaintext highlighter-rouge">2027.0.0-ballot.19</code></a></strong> — every figure on this page refers to the profile snapshots of that BOM version.</p>
+
+<p>13658 MS elements across the profiles in use · <strong>95 top-level unpopulated nodes</strong></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Module</th>
+      <th>Profiles used/total</th>
+      <th>MS populated/total</th>
+      <th>Coverage</th>
+      <th>most frequent gaps</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>bildgebung</td>
+      <td>12/12</td>
+      <td>381/381</td>
+      <td>100 %</td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <td>biobank</td>
+      <td>11/11</td>
+      <td>302/302</td>
+      <td>100 %</td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <td>consent</td>
+      <td>3/3</td>
+      <td>77/77</td>
+      <td>100 %</td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <td>diagnose</td>
+      <td>1/1</td>
+      <td>77/77</td>
+      <td>100 %</td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <td>dokument</td>
+      <td>1/1</td>
+      <td>70/70</td>
+      <td>100 %</td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <td>fall</td>
+      <td>1/1</td>
+      <td>96/96</td>
+      <td>100 %</td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <td>icu</td>
+      <td>94/94</td>
+      <td>2939/2994</td>
+      <td>98 %</td>
+      <td><code class="language-plaintext highlighter-rouge">dataAbsentReason</code>, <code class="language-plaintext highlighter-rouge">value[x]</code>, <code class="language-plaintext highlighter-rouge">component.dataAbsentReason</code></td>
+    </tr>
+    <tr>
+      <td>kardio</td>
+      <td>13/13</td>
+      <td>360/361</td>
+      <td>100 %</td>
+      <td><code class="language-plaintext highlighter-rouge">code.coding:icd10-gm.extension:Seitenlokalisation</code></td>
+    </tr>
+    <tr>
+      <td>labor</td>
+      <td>3/3</td>
+      <td>151/151</td>
+      <td>100 %</td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <td>lungenfunktion</td>
+      <td>39/48</td>
+      <td>1535/1556</td>
+      <td>99 %</td>
+      <td><code class="language-plaintext highlighter-rouge">component</code>, <code class="language-plaintext highlighter-rouge">component:predicted</code>, <code class="language-plaintext highlighter-rouge">component:percentPredicted</code></td>
+    </tr>
+    <tr>
+      <td>medikation</td>
+      <td>5/5</td>
+      <td>437/437</td>
+      <td>100 %</td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <td>meta</td>
+      <td>0/1</td>
+      <td>0/0</td>
+      <td>–</td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <td>mikrobio</td>
+      <td>21/21</td>
+      <td>1387/1427</td>
+      <td>97 %</td>
+      <td><code class="language-plaintext highlighter-rouge">referenceRange</code>, <code class="language-plaintext highlighter-rouge">container.additive[x]</code>, <code class="language-plaintext highlighter-rouge">extension:focus</code></td>
+    </tr>
+    <tr>
+      <td>molgen</td>
+      <td>16/16</td>
+      <td>247/248</td>
+      <td>100 %</td>
+      <td><code class="language-plaintext highlighter-rouge">extension:recommended-action</code></td>
+    </tr>
+    <tr>
+      <td>mtb</td>
+      <td>50/50</td>
+      <td>1515/1517</td>
+      <td>100 %</td>
+      <td><code class="language-plaintext highlighter-rouge">action.action</code></td>
+    </tr>
+    <tr>
+      <td>onko</td>
+      <td>76/76</td>
+      <td>1982/2023</td>
+      <td>98 %</td>
+      <td><code class="language-plaintext highlighter-rouge">code.coding:ops.extension:Seitenlokalisation</code>, <code class="language-plaintext highlighter-rouge">code.coding:ops.version</code></td>
+    </tr>
+    <tr>
+      <td>patho</td>
+      <td>17/17</td>
+      <td>468/468</td>
+      <td>100 %</td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <td>person</td>
+      <td>5/5</td>
+      <td>258/258</td>
+      <td>100 %</td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <td>pro</td>
+      <td>21/23</td>
+      <td>292/292</td>
+      <td>100 %</td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <td>prozedur</td>
+      <td>1/1</td>
+      <td>46/46</td>
+      <td>100 %</td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <td>seltene</td>
+      <td>23/23</td>
+      <td>606/607</td>
+      <td>100 %</td>
+      <td><code class="language-plaintext highlighter-rouge">code.coding:icd10-gm.extension:Seitenlokalisation</code></td>
+    </tr>
+    <tr>
+      <td>soziodemographie</td>
+      <td>16/16</td>
+      <td>149/153</td>
+      <td>97 %</td>
+      <td><code class="language-plaintext highlighter-rouge">dataAbsentReason</code></td>
+    </tr>
+    <tr>
+      <td>studie</td>
+      <td>7/7</td>
+      <td>78/78</td>
+      <td>100 %</td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <td>symptom</td>
+      <td>2/2</td>
+      <td>39/39</td>
+      <td>100 %</td>
+      <td>—</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Full report (per profile, plus populated non-MS paths as ballot feedback candidates): <a href="https://github.com/medizininformatik-initiative/mii-testdata/blob/main/docs/ms-coverage-2027.md">docs/ms-coverage-2027.md</a></p>
+
+<p><strong>How to read it.</strong> Not every gap is a defect in an instance. The remaining open nodes fall into four documented categories:</p>
+
+<ol>
+  <li><strong>Upstream contradictions</strong> — profiles with <code class="language-plaintext highlighter-rouge">value[x] 1..1</code> <em>and</em> MS <code class="language-plaintext highlighter-rouge">dataAbsentReason</code> (ICU balances, sociodemographics, microbiology resistance status): a DAR instance would be invalid under obs-6. Filed as ballot feedback.</li>
+  <li><strong>Not meaningfully populatable</strong> — <code class="language-plaintext highlighter-rouge">valueQuantity</code> variants on purely qualitative microbiology profiles, where a number would not constitute a finding. Reference ranges and specimen links are expressly <strong>no longer</strong> in this group: they are populated with plausible values, even without a literature source.</li>
+  <li><strong>Unverifiable terminology</strong> — where no defensible code exists, no guessed one enters the test data. This mainly affects predicted and percent-predicted values: neither LOINC nor SNOMED has a predicted concept for respiratory rate or haemoglobin, and <em>percent of predicted</em> does not exist for the body plethysmography quantities in any of the three code systems checked.</li>
+  <li><strong>Measurement limits</strong> — extensions on primitives (<code class="language-plaintext highlighter-rouge">_effectiveDateTime</code> and similar) are only partly recognised by the heuristic; the data is largely present there.</li>
+</ol>
+
+<p>One witness is enough. The machine-readable coverage index (<code class="language-plaintext highlighter-rouge">docs/ms-coverage-index.json</code> in the repository) names the instances backing each MS element and serves as a regression radar when test data is restructured.</p>
+
+<h3 id="where-nothing-has-been-written-yet">Where nothing has been written yet</h3>
+
+<p>The view below lists every Must-Support node without a backing instance. Click a module bar to filter the table; the search box matches element, profile and module.</p>
+
+<p>The distinction in the status column is the important part. <strong>Feasible</strong> means the profile permits population and only the instance is missing. <strong>Blocked</strong> means the profile itself prevents it — because it requires a value while marking <code class="language-plaintext highlighter-rouge">dataAbsentReason</code> as Must-Support (obs-6 excludes the two), because an element sits at <code class="language-plaintext highlighter-rouge">max=0</code> despite being Must-Support, or because a placeholder code (<code class="language-plaintext highlighter-rouge">TODO</code>) is fixed as a pattern. Those cases are documented in the <a href="https://github.com/medizininformatik-initiative/mii-testdata/blob/main/docs/ballot-findings-2027.md">ballot findings</a> and addressed to the module maintainers.</p>
+
+<div class="gapv">
+<style>
+.gapv{--g-teal:#0E7C86;--g-amber:#A96C0B;--g-rust:#96473A;--g-tealsoft:#D3E7E8;
+ --g-ambersoft:#F2E3C6;--g-rustsoft:#EEDAD5;--g-line:#D8E2E3;--g-sunk:#EDF2F2;
+ --g-muted:#5E7278;--g-surface:#fff;--g-ink:#15242A;
+ --g-mono:ui-monospace,"IBM Plex Mono",Menlo,Consolas,monospace;
+ color:var(--g-ink);font-variant-numeric:tabular-nums}
+@media (prefers-color-scheme:dark){.gapv{--g-teal:#43B3BB;--g-amber:#D9A03F;--g-rust:#CE7D6C;
+ --g-tealsoft:#123437;--g-ambersoft:#332915;--g-rustsoft:#33201C;--g-line:#2A383C;
+ --g-sunk:#1C2629;--g-muted:#8FA3A9;--g-surface:#161E21;--g-ink:#E6EEEF}}
+.gapv .g-figs{display:grid;gap:1px;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));
+ background:var(--g-line);border:1px solid var(--g-line);margin:1.2rem 0 1.8rem}
+.gapv .g-fig{background:var(--g-surface);padding:.9rem 1rem}
+.gapv .g-n{font-family:var(--g-mono);font-size:1.7rem;font-weight:600;line-height:1.15;display:block}
+.gapv .g-k{font-family:var(--g-mono);font-size:.66rem;letter-spacing:.1em;text-transform:uppercase;
+ color:var(--g-muted);display:block;margin-bottom:.3rem}
+.gapv .g-d{font-size:.8rem;color:var(--g-muted);display:block;margin-top:.25rem}
+.gapv .g-bars{display:flex;flex-direction:column;gap:.4rem;margin:.8rem 0}
+.gapv .g-row{display:grid;grid-template-columns:minmax(110px,140px) 1fr minmax(74px,auto);
+ gap:.7rem;align-items:center;background:none;border:0;padding:.18rem;width:100%;font:inherit;
+ color:inherit;text-align:left;cursor:pointer}
+.gapv .g-row[aria-pressed="true"]{background:var(--g-sunk)}
+.gapv .g-row:focus-visible{outline:2px solid var(--g-teal);outline-offset:2px}
+.gapv .g-name{font-family:var(--g-mono);font-size:.78rem;color:var(--g-muted);white-space:nowrap;
+ overflow:hidden;text-overflow:ellipsis}
+.gapv .g-track{display:flex;height:16px;background:var(--g-sunk);overflow:hidden}
+.gapv .g-seg{height:100%}
+.gapv .g-c{background:var(--g-tealsoft)}.gapv .g-f{background:var(--g-amber)}
+.gapv .g-b{background:var(--g-rust)}
+.gapv .g-pct{font-family:var(--g-mono);font-size:.76rem;color:var(--g-muted);text-align:right}
+.gapv .g-legend{display:flex;flex-wrap:wrap;gap:1rem;font-size:.8rem;color:var(--g-muted);margin:.5rem 0 0}
+.gapv .g-legend span{display:inline-flex;align-items:center;gap:.35rem}
+.gapv .g-sw{width:10px;height:10px;display:inline-block}
+.gapv .g-ctl{display:flex;flex-wrap:wrap;gap:.5rem;align-items:center;margin:1.4rem 0 .8rem}
+.gapv input[type=search]{font:inherit;font-size:.85rem;padding:.4rem .6rem;border:1px solid var(--g-line);
+ background:var(--g-surface);color:var(--g-ink);min-width:210px}
+.gapv .g-chip{font-family:var(--g-mono);font-size:.72rem;padding:.32rem .55rem;border:1px solid var(--g-line);
+ background:var(--g-surface);color:var(--g-muted);cursor:pointer}
+.gapv .g-chip[aria-pressed="true"]{background:var(--g-ink);color:var(--g-surface);border-color:var(--g-ink)}
+.gapv .g-tw{overflow-x:auto;border:1px solid var(--g-line);background:var(--g-surface);max-height:32rem}
+.gapv table{border-collapse:collapse;width:100%;font-size:.83rem;margin:0}
+.gapv th{font-family:var(--g-mono);font-size:.66rem;letter-spacing:.09em;text-transform:uppercase;
+ color:var(--g-muted);text-align:left;padding:.55rem .7rem;border-bottom:1px solid var(--g-line);
+ position:sticky;top:0;background:var(--g-surface)}
+.gapv td{padding:.45rem .7rem;border-bottom:1px solid var(--g-line);vertical-align:top}
+.gapv td.g-el{font-family:var(--g-mono);font-size:.78rem;word-break:break-word}
+.gapv td.g-pr{font-family:var(--g-mono);font-size:.74rem;color:var(--g-muted);word-break:break-word}
+.gapv .g-tag{display:inline-block;font-family:var(--g-mono);font-size:.66rem;padding:.12rem .42rem;white-space:nowrap}
+.gapv .g-tagf{background:var(--g-ambersoft);color:var(--g-amber)}
+.gapv .g-tagb{background:var(--g-rustsoft);color:var(--g-rust)}
+.gapv .g-stripe{border-left:3px solid var(--g-amber)}
+.gapv .g-stripe.g-isb{border-left-color:var(--g-rust)}
+.gapv .g-cnt{font-family:var(--g-mono);font-size:.78rem;color:var(--g-muted);margin:.6rem 0 0}
+</style>
+
+<div class="g-figs">
+  <div class="g-fig"><span class="g-k">covered</span>
+    <span class="g-n" style="color:var(--g-teal)">98,8&thinsp;%</span>
+    <span class="g-d">13.492 of 13.658 MS elements</span></div>
+  <div class="g-fig"><span class="g-k">feasible</span>
+    <span class="g-n" style="color:var(--g-amber)">111</span>
+    <span class="g-d">open, but populatable</span></div>
+  <div class="g-fig"><span class="g-k">blocked</span>
+    <span class="g-n" style="color:var(--g-rust)">55</span>
+    <span class="g-d">the profile prevents population</span></div>
+</div>
+
+<div class="g-bars" id="g-bars"></div>
+<div class="g-legend">
+  <span><i class="g-sw g-c"></i>covered</span>
+  <span><i class="g-sw g-f"></i>feasible</span>
+  <span><i class="g-sw g-b"></i>blocked</span>
+</div>
+
+<div class="g-ctl">
+  <input type="search" id="g-q" placeholder="Search element, profile or module" aria-label="Search" />
+  <button class="g-chip" id="g-all" aria-pressed="true">all</button>
+  <button class="g-chip" id="g-onlyf" aria-pressed="false">feasible only</button>
+  <button class="g-chip" id="g-onlyb" aria-pressed="false">blocked only</button>
+</div>
+<div class="g-tw">
+  <table><thead><tr><th>Module</th><th>Profile</th><th>Element</th><th>Status</th></tr></thead>
+  <tbody id="g-tb"></tbody></table>
+</div>
+<p class="g-cnt" id="g-cnt"></p>
+
+<script>
+(function(){
+  var DATA = {"modules":[{"name":"icu","total":2994,"covered":2939,"feasible":6,"blocked":49},{"name":"onko","total":2023,"covered":1982,"feasible":41,"blocked":0},{"name":"mikrobio","total":1427,"covered":1387,"feasible":39,"blocked":1},{"name":"lungenfunktion","total":1556,"covered":1535,"feasible":21,"blocked":0},{"name":"soziodemographie","total":153,"covered":149,"feasible":0,"blocked":4},{"name":"mtb","total":1517,"covered":1515,"feasible":1,"blocked":1},{"name":"kardio","total":361,"covered":360,"feasible":1,"blocked":0},{"name":"molgen","total":248,"covered":247,"feasible":1,"blocked":0},{"name":"seltene","total":607,"covered":606,"feasible":1,"blocked":0},{"name":"diagnose","total":77,"covered":77,"feasible":0,"blocked":0},{"name":"fall","total":96,"covered":96,"feasible":0,"blocked":0},{"name":"labor","total":151,"covered":151,"feasible":0,"blocked":0},{"name":"medikation","total":437,"covered":437,"feasible":0,"blocked":0},{"name":"person","total":258,"covered":258,"feasible":0,"blocked":0},{"name":"prozedur","total":46,"covered":46,"feasible":0,"blocked":0},{"name":"bildgebung","total":381,"covered":381,"feasible":0,"blocked":0},{"name":"biobank","total":302,"covered":302,"feasible":0,"blocked":0},{"name":"dokument","total":70,"covered":70,"feasible":0,"blocked":0},{"name":"patho","total":468,"covered":468,"feasible":0,"blocked":0},{"name":"pro","total":292,"covered":292,"feasible":0,"blocked":0},{"name":"consent","total":77,"covered":77,"feasible":0,"blocked":0},{"name":"studie","total":78,"covered":78,"feasible":0,"blocked":0},{"name":"symptom","total":39,"covered":39,"feasible":0,"blocked":0}],"gaps":[{"m":"icu","p":"mii-pr-icu-bilanz","e":"dataAbsentReason","r":"obs-6: value[x] is required"},{"m":"icu","p":"mii-pr-icu-bilanz-ausfuhr-blutverlust","e":"dataAbsentReason","r":"obs-6: value[x] is required"},{"m":"icu","p":"mii-pr-icu-bilanz-ausfuhr-drainage-generisch","e":"dataAbsentReason","r":"obs-6: value[x] is required"},{"m":"icu","p":"mii-pr-icu-bilanz-ausfuhr-fluessigkeit-gesamt","e":"dataAbsentReason","r":"obs-6: value[x] is required"},{"m":"icu","p":"mii-pr-icu-bilanz-ausfuhr-gallenfluessigkeit","e":"dataAbsentReason","r":"obs-6: value[x] is required"},{"m":"icu","p":"mii-pr-icu-bilanz-ausfuhr-haemofiltration-einzelmesswerte","e":"dataAbsentReason","r":"obs-6: value[x] is required"},{"m":"icu","p":"mii-pr-icu-bilanz-ausfuhr-magensonde","e":"dataAbsentReason","r":"obs-6: value[x] is required"},{"m":"icu","p":"mii-pr-icu-bilanz-ausfuhr-op-drainage","e":"dataAbsentReason","r":"obs-6: value[x] is required"},{"m":"icu","p":"mii-pr-icu-bilanz-ausfuhr-pankreasdrainage","e":"dataAbsentReason","r":"obs-6: value[x] is required"},{"m":"icu","p":"mii-pr-icu-bilanz-ausfuhr-stuhlgang","e":"dataAbsentReason","r":"obs-6: value[x] is required"},{"m":"icu","p":"mii-pr-icu-bilanz-ausfuhr-urin","e":"dataAbsentReason","r":"obs-6: value[x] is required"},{"m":"icu","p":"mii-pr-icu-bilanz-ausfuhr-wunddrainage","e":"dataAbsentReason","r":"obs-6: value[x] is required"},{"m":"icu","p":"mii-pr-icu-bilanz-einfuhr-abgepumpte-muttermilch","e":"dataAbsentReason","r":"obs-6: value[x] is required"},{"m":"icu","p":"mii-pr-icu-bilanz-einfuhr-enterale-fluessigkeit","e":"dataAbsentReason","r":"obs-6: value[x] is required"},{"m":"icu","p":"mii-pr-icu-bilanz-einfuhr-fluessigkeit-gesamt","e":"dataAbsentReason","r":"obs-6: value[x] is required"},{"m":"icu","p":"mii-pr-icu-bilanz-einfuhr-muttermilch","e":"dataAbsentReason","r":"obs-6: value[x] is required"},{"m":"icu","p":"mii-pr-icu-bilanz-einfuhr-orale-fluessigkeit","e":"dataAbsentReason","r":"obs-6: value[x] is required"},{"m":"icu","p":"mii-pr-icu-bilanz-einfuhr-saeuglingsnahrung","e":"dataAbsentReason","r":"obs-6: value[x] is required"},{"m":"icu","p":"mii-pr-icu-bilanz-einfuhr-spendermilch","e":"dataAbsentReason","r":"obs-6: value[x] is required"},{"m":"icu","p":"mii-pr-icu-bilanz-tagesbilanz-fluessigkeit","e":"dataAbsentReason","r":"obs-6: value[x] is required"},{"m":"icu","p":"mii-pr-icu-muv-arterieller-blutdruck","e":"value[x]","r":"max=0 despite Must-Support"},{"m":"icu","p":"mii-pr-icu-muv-arterieller-blutdruck","e":"dataAbsentReason","r":"max=0 despite Must-Support"},{"m":"icu","p":"mii-pr-icu-muv-atemfrequenz","e":"dataAbsentReason","r":"obs-6: value[x] is required"},{"m":"icu","p":"mii-pr-icu-score-cam-icu","e":"dataAbsentReason","r":"obs-6: value[x] is required"},{"m":"icu","p":"mii-pr-icu-score-cam-icu","e":"component.dataAbsentReason","r":""},{"m":"icu","p":"mii-pr-icu-score-cam-icu","e":"component:feature1-acute-change.dataAbsentReason","r":"obs-6: value[x] is required"},{"m":"icu","p":"mii-pr-icu-score-cam-icu","e":"component:feature2-inattention.dataAbsentReason","r":"obs-6: value[x] is required"},{"m":"icu","p":"mii-pr-icu-score-cam-icu","e":"component:feature3-altered-loc.dataAbsentReason","r":"obs-6: value[x] is required"},{"m":"icu","p":"mii-pr-icu-score-cam-icu","e":"component:feature4-disorganized-thinking.dataAbsentReason","r":"obs-6: value[x] is required"},{"m":"icu","p":"mii-pr-icu-score-faces-pain-scale-revised","e":"dataAbsentReason","r":"obs-6: value[x] is required"},{"m":"icu","p":"mii-pr-icu-score-gcs","e":"dataAbsentReason","r":"obs-6: value[x] is required"},{"m":"icu","p":"mii-pr-icu-score-icdsc","e":"dataAbsentReason","r":"obs-6: value[x] is required"},{"m":"icu","p":"mii-pr-icu-score-icdsc","e":"component.dataAbsentReason","r":""},{"m":"icu","p":"mii-pr-icu-score-icdsc","e":"component:altered-consciousness.dataAbsentReason","r":"obs-6: value[x] is required"},{"m":"icu","p":"mii-pr-icu-score-icdsc","e":"component:inattention.dataAbsentReason","r":"obs-6: value[x] is required"},{"m":"icu","p":"mii-pr-icu-score-icdsc","e":"component:disorientation.dataAbsentReason","r":"obs-6: value[x] is required"},{"m":"icu","p":"mii-pr-icu-score-icdsc","e":"component:hallucination-delusion.dataAbsentReason","r":"obs-6: value[x] is required"},{"m":"icu","p":"mii-pr-icu-score-icdsc","e":"component:psychomotor-agitation-retardation.dataAbsentReason","r":"obs-6: value[x] is required"},{"m":"icu","p":"mii-pr-icu-score-icdsc","e":"component:inappropriate-speech-mood.dataAbsentReason","r":"obs-6: value[x] is required"},{"m":"icu","p":"mii-pr-icu-score-icdsc","e":"component:sleep-wake-disturbance.dataAbsentReason","r":"obs-6: value[x] is required"},{"m":"icu","p":"mii-pr-icu-score-icdsc","e":"component:symptom-fluctuation.dataAbsentReason","r":"obs-6: value[x] is required"},{"m":"icu","p":"mii-pr-icu-score-sofa","e":"dataAbsentReason","r":"obs-6: value[x] is required"},{"m":"icu","p":"mii-pr-icu-score-sofa","e":"component.dataAbsentReason","r":""},{"m":"icu","p":"mii-pr-icu-score-sofa","e":"component:respiratory.dataAbsentReason","r":"obs-6: value[x] is required"},{"m":"icu","p":"mii-pr-icu-score-sofa","e":"component:cardiovascular.dataAbsentReason","r":"obs-6: value[x] is required"},{"m":"icu","p":"mii-pr-icu-score-sofa","e":"component:hepatic.dataAbsentReason","r":"obs-6: value[x] is required"},{"m":"icu","p":"mii-pr-icu-score-sofa","e":"component:coagulation.dataAbsentReason","r":"obs-6: value[x] is required"},{"m":"icu","p":"mii-pr-icu-score-sofa","e":"component:renal.dataAbsentReason","r":"obs-6: value[x] is required"},{"m":"icu","p":"mii-pr-icu-score-sofa","e":"component:neurological.dataAbsentReason","r":"obs-6: value[x] is required"},{"m":"icu","p":"mii-pr-icu-score-zopa","e":"code.coding:sct.version","r":""},{"m":"icu","p":"mii-pr-icu-score-zopa","e":"dataAbsentReason","r":"obs-6: value[x] is required"},{"m":"icu","p":"mii-pr-icu-untersuchung-pupillenbefund","e":"value[x]","r":"max=0 despite Must-Support"},{"m":"icu","p":"mii-pr-icu-untersuchung-pupillenbefund","e":"dataAbsentReason","r":"max=0 despite Must-Support"},{"m":"icu","p":"mii-pr-icu-untersuchung-pupillensymmetrie","e":"value[x]","r":""},{"m":"icu","p":"mii-pr-icu-untersuchung-pupillensymmetrie","e":"value[x]:valueCodeableConcept","r":""},{"m":"kardio","p":"mii-pr-kardio-klappenvitium","e":"code.coding:icd10-gm.extension:Seitenlokalisation","r":""},{"m":"lungenfunktion","p":"mii-pr-lungenfunktion-bf","e":"component","r":""},{"m":"lungenfunktion","p":"mii-pr-lungenfunktion-bf","e":"component:predicted","r":""},{"m":"lungenfunktion","p":"mii-pr-lungenfunktion-bf","e":"component:predicted.code.coding:sct","r":""},{"m":"lungenfunktion","p":"mii-pr-lungenfunktion-bf","e":"component:predicted.code.coding:loinc","r":""},{"m":"lungenfunktion","p":"mii-pr-lungenfunktion-bf","e":"component:predicted.value[x]:valueQuantity.value","r":""},{"m":"lungenfunktion","p":"mii-pr-lungenfunktion-bf","e":"component:predicted.value[x]:valueQuantity.unit","r":""},{"m":"lungenfunktion","p":"mii-pr-lungenfunktion-bf","e":"component:predicted.value[x]:valueQuantity.system","r":""},{"m":"lungenfunktion","p":"mii-pr-lungenfunktion-bf","e":"component:predicted.value[x]:valueQuantity.code","r":""},{"m":"lungenfunktion","p":"mii-pr-lungenfunktion-bf","e":"component:percentPredicted","r":""},{"m":"lungenfunktion","p":"mii-pr-lungenfunktion-bf","e":"component:percentPredicted.code.coding:sct","r":""},{"m":"lungenfunktion","p":"mii-pr-lungenfunktion-bf","e":"component:percentPredicted.code.coding:loinc","r":""},{"m":"lungenfunktion","p":"mii-pr-lungenfunktion-bf","e":"component:percentPredicted.value[x]:valueQuantity.value","r":""},{"m":"lungenfunktion","p":"mii-pr-lungenfunktion-bf","e":"component:percentPredicted.value[x]:valueQuantity.unit","r":""},{"m":"lungenfunktion","p":"mii-pr-lungenfunktion-bf","e":"component:percentPredicted.value[x]:valueQuantity.system","r":""},{"m":"lungenfunktion","p":"mii-pr-lungenfunktion-bf","e":"component:percentPredicted.value[x]:valueQuantity.code","r":""},{"m":"lungenfunktion","p":"mii-pr-lungenfunktion-hb","e":"component","r":""},{"m":"lungenfunktion","p":"mii-pr-lungenfunktion-hb","e":"component:predicted","r":""},{"m":"lungenfunktion","p":"mii-pr-lungenfunktion-hb","e":"component:predicted.value[x]:valueQuantity.value","r":""},{"m":"lungenfunktion","p":"mii-pr-lungenfunktion-hb","e":"component:predicted.value[x]:valueQuantity.unit","r":""},{"m":"lungenfunktion","p":"mii-pr-lungenfunktion-hb","e":"component:predicted.value[x]:valueQuantity.system","r":""},{"m":"lungenfunktion","p":"mii-pr-lungenfunktion-hb","e":"component:predicted.value[x]:valueQuantity.code","r":""},{"m":"molgen","p":"molekulargenetischer-befundbericht","e":"extension:recommended-action","r":""},{"m":"mtb","p":"mii-pr-mtb-therapieempfehlung-kombination","e":"action.action","r":"max=0 despite Must-Support"},{"m":"mtb","p":"mii-pr-mtb-therapieempfehlung-kombination","e":"action.action.resource","r":""},{"m":"onko","p":"mii-pr-onko-krk-operation","e":"code.coding:ops.extension:Seitenlokalisation","r":""},{"m":"onko","p":"mii-pr-onko-krk-operation","e":"code.coding:ops.extension:Seitenlokalisation.url","r":""},{"m":"onko","p":"mii-pr-onko-krk-operation","e":"code.coding:ops.extension:Seitenlokalisation.value[x]","r":""},{"m":"onko","p":"mii-pr-onko-krk-operation","e":"code.coding:ops.extension:Seitenlokalisation.value[x].system","r":""},{"m":"onko","p":"mii-pr-onko-krk-operation","e":"code.coding:ops.extension:Seitenlokalisation.value[x].code","r":""},{"m":"onko","p":"mii-pr-onko-krk-stoma-markierung","e":"code.coding:ops.extension:Seitenlokalisation","r":""},{"m":"onko","p":"mii-pr-onko-krk-stoma-markierung","e":"code.coding:ops.extension:Seitenlokalisation.url","r":""},{"m":"onko","p":"mii-pr-onko-krk-stoma-markierung","e":"code.coding:ops.extension:Seitenlokalisation.value[x]","r":""},{"m":"onko","p":"mii-pr-onko-krk-stoma-markierung","e":"code.coding:ops.extension:Seitenlokalisation.value[x].system","r":""},{"m":"onko","p":"mii-pr-onko-krk-stoma-markierung","e":"code.coding:ops.extension:Seitenlokalisation.value[x].code","r":""},{"m":"onko","p":"mii-pr-onko-krk-stoma-markierung","e":"code.coding:ops.version","r":""},{"m":"onko","p":"mii-pr-onko-mamma-sozialdienst","e":"code.coding:ops.extension:Seitenlokalisation","r":""},{"m":"onko","p":"mii-pr-onko-mamma-sozialdienst","e":"code.coding:ops.extension:Seitenlokalisation.url","r":""},{"m":"onko","p":"mii-pr-onko-mamma-sozialdienst","e":"code.coding:ops.extension:Seitenlokalisation.value[x]","r":""},{"m":"onko","p":"mii-pr-onko-mamma-sozialdienst","e":"code.coding:ops.extension:Seitenlokalisation.value[x].system","r":""},{"m":"onko","p":"mii-pr-onko-mamma-sozialdienst","e":"code.coding:ops.extension:Seitenlokalisation.value[x].code","r":""},{"m":"onko","p":"mii-pr-onko-prostata-operation","e":"code.coding:ops.extension:Seitenlokalisation","r":""},{"m":"onko","p":"mii-pr-onko-prostata-operation","e":"code.coding:ops.extension:Seitenlokalisation.url","r":""},{"m":"onko","p":"mii-pr-onko-prostata-operation","e":"code.coding:ops.extension:Seitenlokalisation.value[x]","r":""},{"m":"onko","p":"mii-pr-onko-prostata-operation","e":"code.coding:ops.extension:Seitenlokalisation.value[x].system","r":""},{"m":"onko","p":"mii-pr-onko-prostata-operation","e":"code.coding:ops.extension:Seitenlokalisation.value[x].code","r":""},{"m":"onko","p":"mii-pr-onko-strahlentherapie","e":"code.coding:ops.extension:Seitenlokalisation","r":""},{"m":"onko","p":"mii-pr-onko-strahlentherapie","e":"code.coding:ops.extension:Seitenlokalisation.url","r":""},{"m":"onko","p":"mii-pr-onko-strahlentherapie","e":"code.coding:ops.extension:Seitenlokalisation.value[x]","r":""},{"m":"onko","p":"mii-pr-onko-strahlentherapie","e":"code.coding:ops.extension:Seitenlokalisation.value[x].system","r":""},{"m":"onko","p":"mii-pr-onko-strahlentherapie","e":"code.coding:ops.extension:Seitenlokalisation.value[x].code","r":""},{"m":"onko","p":"mii-pr-onko-strahlentherapie-bestrahlung-nuklearmedizin","e":"code.coding:ops.extension:Seitenlokalisation","r":""},{"m":"onko","p":"mii-pr-onko-strahlentherapie-bestrahlung-nuklearmedizin","e":"code.coding:ops.extension:Seitenlokalisation.url","r":""},{"m":"onko","p":"mii-pr-onko-strahlentherapie-bestrahlung-nuklearmedizin","e":"code.coding:ops.extension:Seitenlokalisation.value[x]","r":""},{"m":"onko","p":"mii-pr-onko-strahlentherapie-bestrahlung-nuklearmedizin","e":"code.coding:ops.extension:Seitenlokalisation.value[x].system","r":""},{"m":"onko","p":"mii-pr-onko-strahlentherapie-bestrahlung-nuklearmedizin","e":"code.coding:ops.extension:Seitenlokalisation.value[x].code","r":""},{"m":"onko","p":"mii-pr-onko-strahlentherapie-bestrahlung-strahlentherapie","e":"code.coding:ops.extension:Seitenlokalisation","r":""},{"m":"onko","p":"mii-pr-onko-strahlentherapie-bestrahlung-strahlentherapie","e":"code.coding:ops.extension:Seitenlokalisation.url","r":""},{"m":"onko","p":"mii-pr-onko-strahlentherapie-bestrahlung-strahlentherapie","e":"code.coding:ops.extension:Seitenlokalisation.value[x]","r":""},{"m":"onko","p":"mii-pr-onko-strahlentherapie-bestrahlung-strahlentherapie","e":"code.coding:ops.extension:Seitenlokalisation.value[x].system","r":""},{"m":"onko","p":"mii-pr-onko-strahlentherapie-bestrahlung-strahlentherapie","e":"code.coding:ops.extension:Seitenlokalisation.value[x].code","r":""},{"m":"onko","p":"mii-pr-onko-systemische-therapie","e":"code.coding:ops.extension:Seitenlokalisation","r":""},{"m":"onko","p":"mii-pr-onko-systemische-therapie","e":"code.coding:ops.extension:Seitenlokalisation.url","r":""},{"m":"onko","p":"mii-pr-onko-systemische-therapie","e":"code.coding:ops.extension:Seitenlokalisation.value[x]","r":""},{"m":"onko","p":"mii-pr-onko-systemische-therapie","e":"code.coding:ops.extension:Seitenlokalisation.value[x].system","r":""},{"m":"onko","p":"mii-pr-onko-systemische-therapie","e":"code.coding:ops.extension:Seitenlokalisation.value[x].code","r":""},{"m":"seltene","p":"mii-pr-seltene-genetic-diagnosis","e":"code.coding:icd10-gm.extension:Seitenlokalisation","r":""},{"m":"soziodemographie","p":"mii-pr-sdd-betreuungssituation","e":"dataAbsentReason","r":"obs-6: value[x] is required"},{"m":"soziodemographie","p":"mii-pr-sdd-haushaltsgroesse","e":"dataAbsentReason","r":"obs-6: value[x] is required"},{"m":"soziodemographie","p":"mii-pr-sdd-partnerschaft","e":"dataAbsentReason","r":"obs-6: value[x] is required"},{"m":"soziodemographie","p":"mii-pr-sdd-vertrauensperson","e":"dataAbsentReason","r":"obs-6: value[x] is required"},{"m":"mikrobio","p":"mii-pr-mikrobio-allgemeine-bestimmung","e":"referenceRange","r":""},{"m":"mikrobio","p":"mii-pr-mikrobio-allgemeine-bestimmung","e":"referenceRange.low","r":""},{"m":"mikrobio","p":"mii-pr-mikrobio-allgemeine-bestimmung","e":"referenceRange.high","r":""},{"m":"mikrobio","p":"mii-pr-mikrobio-allgemeine-kultur","e":"referenceRange","r":""},{"m":"mikrobio","p":"mii-pr-mikrobio-allgemeine-kultur","e":"referenceRange.low","r":""},{"m":"mikrobio","p":"mii-pr-mikrobio-allgemeine-kultur","e":"referenceRange.high","r":""},{"m":"mikrobio","p":"mii-pr-mikrobio-bartlett-score","e":"referenceRange","r":""},{"m":"mikrobio","p":"mii-pr-mikrobio-bartlett-score","e":"referenceRange.low","r":""},{"m":"mikrobio","p":"mii-pr-mikrobio-bartlett-score","e":"referenceRange.high","r":""},{"m":"mikrobio","p":"mii-pr-mikrobio-mikroskopie","e":"referenceRange","r":""},{"m":"mikrobio","p":"mii-pr-mikrobio-mikroskopie","e":"referenceRange.low","r":""},{"m":"mikrobio","p":"mii-pr-mikrobio-mikroskopie","e":"referenceRange.high","r":""},{"m":"mikrobio","p":"mii-pr-mikrobio-mrgn-klasse","e":"referenceRange","r":""},{"m":"mikrobio","p":"mii-pr-mikrobio-mrgn-klasse","e":"referenceRange.low","r":""},{"m":"mikrobio","p":"mii-pr-mikrobio-mrgn-klasse","e":"referenceRange.high","r":""},{"m":"mikrobio","p":"mii-pr-mikrobio-probe","e":"extension:focus","r":""},{"m":"mikrobio","p":"mii-pr-mikrobio-probe","e":"parent","r":""},{"m":"mikrobio","p":"mii-pr-mikrobio-probe","e":"processing.additive","r":""},{"m":"mikrobio","p":"mii-pr-mikrobio-probe","e":"container.additive[x]","r":""},{"m":"mikrobio","p":"mii-pr-mikrobio-resistenzkategorie-status","e":"dataAbsentReason","r":"obs-6: value[x] is required"},{"m":"mikrobio","p":"mii-pr-mikrobio-resistenzkategorie-status","e":"referenceRange","r":""},{"m":"mikrobio","p":"mii-pr-mikrobio-resistenzkategorie-status","e":"referenceRange.low","r":""},{"m":"mikrobio","p":"mii-pr-mikrobio-resistenzkategorie-status","e":"referenceRange.high","r":""},{"m":"mikrobio","p":"mii-pr-mikrobio-resistenzmechanismen-determinanten","e":"referenceRange","r":""},{"m":"mikrobio","p":"mii-pr-mikrobio-resistenzmechanismen-determinanten","e":"referenceRange.low","r":""},{"m":"mikrobio","p":"mii-pr-mikrobio-resistenzmechanismen-determinanten","e":"referenceRange.high","r":""},{"m":"mikrobio","p":"mii-pr-mikrobio-spezifische-bestimmung","e":"referenceRange","r":""},{"m":"mikrobio","p":"mii-pr-mikrobio-spezifische-bestimmung","e":"referenceRange.low","r":""},{"m":"mikrobio","p":"mii-pr-mikrobio-spezifische-bestimmung","e":"referenceRange.high","r":""},{"m":"mikrobio","p":"mii-pr-mikrobio-spezifische-mikroskopie","e":"modifierExtension","r":""},{"m":"mikrobio","p":"mii-pr-mikrobio-spezifische-mikroskopie","e":"modifierExtension:interpretationsbeeinflussendeEigenschaft","r":""},{"m":"mikrobio","p":"mii-pr-mikrobio-spezifische-mikroskopie","e":"referenceRange","r":""},{"m":"mikrobio","p":"mii-pr-mikrobio-spezifische-mikroskopie","e":"referenceRange.low","r":""},{"m":"mikrobio","p":"mii-pr-mikrobio-spezifische-mikroskopie","e":"referenceRange.high","r":""},{"m":"mikrobio","p":"mii-pr-mikrobio-virulenzfaktor","e":"referenceRange","r":""},{"m":"mikrobio","p":"mii-pr-mikrobio-virulenzfaktor","e":"referenceRange.low","r":""},{"m":"mikrobio","p":"mii-pr-mikrobio-virulenzfaktor","e":"referenceRange.high","r":""},{"m":"mikrobio","p":"mii-pr-mikrobio-voraussichtliche-empfindlichkeit","e":"referenceRange","r":""},{"m":"mikrobio","p":"mii-pr-mikrobio-voraussichtliche-empfindlichkeit","e":"referenceRange.low","r":""},{"m":"mikrobio","p":"mii-pr-mikrobio-voraussichtliche-empfindlichkeit","e":"referenceRange.high","r":""}],"totals":{"total":13658,"covered":13492,"feasible":111,"blocked":55}};
+  var mod = null, mode = "all";
+  var bars = document.getElementById("g-bars"), tb = document.getElementById("g-tb"),
+      cnt = document.getElementById("g-cnt"), q = document.getElementById("g-q");
+  function esc(s){ return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;"); }
+
+  DATA.modules.forEach(function(m){
+    var open = m.feasible + m.blocked;
+    var b = document.createElement("button");
+    b.className = "g-row"; b.setAttribute("aria-pressed","false");
+    b.title = m.name + ": " + m.covered + "/" + m.total + " covered, "
+            + m.feasible + " feasible, " + m.blocked + " blocked";
+    b.innerHTML = '<span class="g-name">' + esc(m.name) + '</span>'
+      + '<span class="g-track">'
+      + '<span class="g-seg g-c" style="width:' + (100*m.covered/m.total) + '%"></span>'
+      + '<span class="g-seg g-f" style="width:' + (100*m.feasible/m.total) + '%"></span>'
+      + '<span class="g-seg g-b" style="width:' + (100*m.blocked/m.total) + '%"></span>'
+      + '</span><span class="g-pct">' + (open ? open + " open" : "complete") + '</span>';
+    b.onclick = function(){
+      mod = (mod === m.name) ? null : m.name;
+      Array.prototype.forEach.call(bars.children, function(c){
+        c.setAttribute("aria-pressed", String(c === b && mod !== null)); });
+      render();
+    };
+    bars.appendChild(b);
+  });
+
+  function setMode(x){
+    mode = x;
+    document.getElementById("g-all").setAttribute("aria-pressed", String(x==="all"));
+    document.getElementById("g-onlyf").setAttribute("aria-pressed", String(x==="f"));
+    document.getElementById("g-onlyb").setAttribute("aria-pressed", String(x==="b"));
+    render();
+  }
+  document.getElementById("g-all").onclick = function(){ setMode("all"); };
+  document.getElementById("g-onlyf").onclick = function(){ setMode("f"); };
+  document.getElementById("g-onlyb").onclick = function(){ setMode("b"); };
+  q.oninput = render;
+
+  function render(){
+    var term = q.value.trim().toLowerCase();
+    var rows = DATA.gaps.filter(function(g){
+      return (!mod || g.m === mod)
+        && (mode === "all" || (mode === "b") === Boolean(g.r))
+        && (!term || (g.e + " " + g.p + " " + g.m).toLowerCase().indexOf(term) !== -1);
+    });
+    tb.innerHTML = rows.slice(0,400).map(function(g){
+      return '<tr><td class="g-stripe' + (g.r ? " g-isb" : "") + '">' + esc(g.m) + '</td>'
+        + '<td class="g-pr">' + esc(g.p) + '</td>'
+        + '<td class="g-el">' + esc(g.e) + '</td><td>'
+        + (g.r ? '<span class="g-tag g-tagb">' + esc(g.r) + '</span>'
+               : '<span class="g-tag g-tagf">feasible</span>') + '</td></tr>';
+    }).join("");
+    cnt.textContent = rows.length + " of " + DATA.gaps.length + " open nodes"
+      + (rows.length > 400 ? " \u00b7 first 400 shown" : "")
+      + (mod ? " \u00b7 module " + mod : "");
+  }
+  render();
+})();
+</script>
+</div>
+
+<h3 id="reading-a-validation-result">Reading a validation result</h3>
+
+<p>Two conditions decide what a validation run means, and both are easy to get wrong.</p>
+
+<p><strong>Which terminology server was used.</strong> Counter-intuitively, an <em>incomplete</em> terminology
+server is worse than none at all. Without one, unknown code systems produce warnings;
+with one, they become hard errors. Measured on four bundles: 185 errors with <code class="language-plaintext highlighter-rouge">-tx n/a</code>
+against 382 with a server carrying only LOINC and SNOMED. Of the 2,266 required bindings
+in the BOM only 73 point at BfArM systems (OPS, ICD-10-GM, ATC, Alpha-ID, ICD-O-3) — but
+those are the axes on which test data codes most densely, so every diagnosis, procedure
+and medication turns into an error at once.</p>
+
+<p><strong>How many errors belong to the data.</strong> A large share does not. The 132 slicing errors on
+the ICU score profiles are byte-identical with and without a terminology server: the
+profiles slice <code class="language-plaintext highlighter-rouge">Observation.component</code> on a discriminator that no slice defines a pattern
+for. No instance can satisfy that, and it is also what drives the validator into an
+<code class="language-plaintext highlighter-rouge">OutOfMemoryError</code> while assembling its slicing summary.</p>
+
+<p>So a bare error count says little. The number worth reporting is how many errors remain
+after separating terminology conditions from structural defects in the profiles — and
+those defects are filed as <a href="https://github.com/medizininformatik-initiative/mii-testdata/blob/main/docs/ballot-findings-2027.md">ballot findings</a>.</p>
+
+<h3 id="limits-and-next-steps">Limits and next steps</h3>
+
+<p>The MS measurement is heuristic (base path matching, extension slices via their URL; details in the script docstring). Invariant coverage is <strong>curated</strong> rather than measured — evaluating each constraint in FHIRPath against all instances, including branch detection, is the next step.</p>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+  <script type="text/javascript" src="assets/js/flags.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+
+
+
+          IG © 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik Initiative</a>.  
+          Package de.medizininformatikinitiative.kerndatensatz.testdata#2027.0.0-ballot.rc2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Generated <span title="Tue, Sep 29, 2026 10:00+0000">2026-09-29</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+            <!-- Branding override for the fhir2.base.template footer fragment.
+     Unlike header/css, the base footer fragment is NOT an empty placeholder: it
+     renders "Links: Table of Contents | QA Report [| feedback dashboards]".
+     The base uses site.data.stringsBase[include.lang][...] for the labels. The
+     reason this override supplies its own is the Imprint label: the base ships no
+     stringsBase key for it and a child template cannot add one (docs/styleguide.md
+     section 6), and the same include.lang branch then has to carry the other
+     labels too. (The blank-label problem that first motivated this is separately
+     mitigated: this repo vendors the base's own German catalogs into
+     translations/ — see translations/README.md.) The override preserves the base
+     links (TOC, QA, feedback dashboards) and appends the project information links.
+     NUM-DIZ takes over IG development and maintenance when MII funding ends
+     (end-2026), so the NUM-DIZ website link renders BEFORE the MII website link —
+     in BOTH brand designs and both languages; the MII links stay because the
+     modules remain MII content. Both anchors are the SITE ROOTS with the bare
+     domain as anchor text (TF-KDS feedback 2026-08-14: aligned anchor style;
+     domains are language-neutral, styleguide §6).
+     Imprint: points at the NUM-DIZ website's legal pages since 2026-08-14
+     (TF-KDS: NUM-DIZ takes over from MII in 2027, so legal-aspect links use
+     the NUM-DIZ counterpart where one exists) - German /impressum and English
+     /en/legal-notice (both verified HTTP 200 on 2026-08-14). -->
+
+          Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="../qa.html">QA Report</a>
+                 
+                 | <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://www.netzwerk-universitaetsmedizin.de/">netzwerk-universitaetsmedizin.de</a>
+                 | <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://www.medizininformatik-initiative.de/">medizininformatik-initiative.de</a>
+                 | <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://www.netzwerk-universitaetsmedizin.de/en/legal-notice">Legal notice</a>
+                 <br/>
+                 <!-- HL7 trademark attribution (required wherever the FHIR flame
+                      renders - the header shows it on every page; see HL7's
+                      trademark guidelines; permission request tracked in issue #109). The sentence is
+                      HL7's prescribed formula and stays in English on every
+                      language's pages (legal wording, styleguide §6). -->
+                 <span>HL7®, FHIR® and the FHIR flame design are registered trademarks of Health Level Seven International. Their use does not constitute endorsement by HL7.</span>
+
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

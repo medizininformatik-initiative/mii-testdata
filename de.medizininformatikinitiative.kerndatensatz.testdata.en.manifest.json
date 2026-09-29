@@ -1,0 +1,7 @@
+{
+  "version" : "2027.0.0-ballot.rc2",
+  "fhirVersion" : ["4.0.1"],
+  "date" : "20260929100033",
+  "name" : "de.medizininformatikinitiative.kerndatensatz.testdata",
+  "jurisdiction" : "urn:iso:std:iso:3166#DE"
+}

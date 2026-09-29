@@ -1,0 +1,100 @@
+{
+  "resourceType" : "Condition",
+  "id" : "mii-exa-test-data-patient-13-symptom-akroparaesthesie",
+  "meta" : {
+    "source" : "https://www.charite.de/fhir/kds-testdata",
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-symptom/StructureDefinition/finding-condition"],
+    "security" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "code" : "HTEST",
+      "display" : "test health data"
+    }]
+  },
+  "language" : "en",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Condition mii-exa-test-data-patient-13-symptom-akroparaesthesie</b></p><a name=\"mii-exa-test-data-patient-13-symptom-akroparaesthesie\"> </a><a name=\"hcmii-exa-test-data-patient-13-symptom-akroparaesthesie\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/modul-symptom/StructureDefinition/finding-condition\">MII_PR_Symptom_Condition</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>Condition Asserted Date</b>: 2024-01-15</p><p><b>identifier</b>: <code>https://www.charite.de/fhir/sid/symptom-condition</code>/SYMP-CON-0013-1</p><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}\">Active</span></p><p><b>verificationStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}\">Confirmed</span></p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-category problem-list-item}\">Problem List Item</span></p><p><b>severity</b>: <span title=\"Codes:{http://snomed.info/sct 6736007}\">Moderate (severity modifier)</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 91019004}, {http://fhir.de/CodeSystem/bfarm/icd-10-gm R20.2}\">Brennende Schmerzen und Missempfindungen an Händen und Füßen, belastungs- und hitzeabhängig</span></p><p><b>bodySite</b>: <span title=\"Codes:{http://snomed.info/sct 66019005}\">Limb structure</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-patient-13.html\">Miriam Kastner (official) Female, DoB: 1989-06-11 ( Medical record number)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-patient-13-encounter-3.html\">Encounter: identifier = Visit number; status = finished; class = ambulatory (ActCode#AMB); type = Einrichtungskontakt,Untersuchung und Behandlung; serviceType = Innere Medizin; period = 2024-01-15 09:00:00+0100 --&gt; 2024-01-15 13:00:00+0100</a></p><p><b>onset</b>: 2011 --&gt; (ongoing)</p><p><b>recordedDate</b>: 2024-01-15</p><p><b>note</b>: </p><blockquote><div><p>Ueber Jahre als Wachstumsschmerz bzw. funktionelle Beschwerden eingeordnet. Erst 2023 im Zusammenhang mit der Fabry-Diagnose als Akroparaesthesie erkannt.</p>\n</div></blockquote></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/condition-assertedDate",
+    "valueDateTime" : "2024-01-15"
+  }],
+  "identifier" : [{
+    "system" : "https://www.charite.de/fhir/sid/symptom-condition",
+    "value" : "SYMP-CON-0013-1"
+  }],
+  "clinicalStatus" : {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
+      "code" : "active",
+      "display" : "Active"
+    }]
+  },
+  "verificationStatus" : {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+      "code" : "confirmed",
+      "display" : "Confirmed"
+    }]
+  },
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/condition-category",
+      "code" : "problem-list-item",
+      "display" : "Problem List Item"
+    }]
+  }],
+  "severity" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "6736007",
+      "display" : "Moderate (severity modifier)"
+    }]
+  },
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "91019004",
+      "display" : "Paresthesia"
+    },
+    {
+      "system" : "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+      "version" : "2024",
+      "code" : "R20.2",
+      "display" : "Parästhesie der Haut"
+    }],
+    "text" : "Brennende Schmerzen und Missempfindungen an Händen und Füßen, belastungs- und hitzeabhängig"
+  },
+  "bodySite" : [{
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "66019005",
+      "display" : "Limb structure"
+    }]
+  }],
+  "subject" : {
+    "reference" : "Patient/mii-exa-test-data-patient-13"
+  },
+  "encounter" : {
+    "reference" : "Encounter/mii-exa-test-data-patient-13-encounter-3"
+  },
+  "onsetPeriod" : {
+    "start" : "2011",
+    "_start" : {
+      "extension" : [{
+        "url" : "http://fhir.de/StructureDefinition/lebensphase",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "263659003",
+            "display" : "Adolescence (qualifier value)"
+          }]
+        }
+      }]
+    }
+  },
+  "recordedDate" : "2024-01-15",
+  "note" : [{
+    "text" : "Ueber Jahre als Wachstumsschmerz bzw. funktionelle Beschwerden eingeordnet. Erst 2023 im Zusammenhang mit der Fabry-Diagnose als Akroparaesthesie erkannt."
+  }]
+}

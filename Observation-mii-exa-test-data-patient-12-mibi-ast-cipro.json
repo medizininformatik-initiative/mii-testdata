@@ -1,0 +1,114 @@
+{
+  "resourceType" : "Observation",
+  "id" : "mii-exa-test-data-patient-12-mibi-ast-cipro",
+  "meta" : {
+    "source" : "https://www.charite.de/fhir/kds-testdata",
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-empfindlichkeit"],
+    "security" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "code" : "HTEST",
+      "display" : "test health data"
+    }]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-patient-12-mibi-ast-cipro</b></p><a name=\"mii-exa-test-data-patient-12-mibi-ast-cipro\"> </a><a name=\"hcmii-exa-test-data-patient-12-mibi-ast-cipro\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-empfindlichkeit\">MII PR Mikrobio Empfindlichkeit</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><blockquote><p><b>R5: Triggering observation(s) (new)</b></p><ul><li>observation: <a href=\"Observation-mii-exa-test-data-patient-12-mibi-erreger-1.html\">Observation Microorganism identified in Specimen by Culture</a></li><li>type: reflex</li></ul></blockquote><p><b>identifier</b>: Observation Instance Identifier/pat12-ast-cipro</p><p><b>basedOn</b>: <a href=\"ServiceRequest-mii-exa-test-data-patient-12-mibi-anforderung-1.html\">ServiceRequest Microbiology procedure (procedure)</a></p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span>, <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v2-0074 MB}\">Microbiology</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 18906-8}\">Ciprofloxacin [Susceptibility]</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-patient-12.html\">Gerhard Woltmann (official) Male, DoB: 1953-04-22 ( Medical record number)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-patient-12-encounter-2.html\">Encounter: identifier = Visit number; status = finished; class = inpatient encounter (ActCode#IMP); type = Abteilungskontakt,Intensivstationär; serviceType = Intensivmedizin; period = 2025-03-08 18:00:00+0100 --&gt; 2025-03-18 10:00:00+0100</a></p><p><b>effective</b>: 2025-03-11 09:00:00+0100</p><p><b>issued</b>: 2025-03-11 09:30:00+0100</p><p><b>value</b>: 4 mg/L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg/L = 'mg/L')</span></p><p><b>interpretation</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation R}\">Resistant</span></p><p><b>method</b>: <span title=\"Codes:{http://snomed.info/sct 708073008}\">Minimum inhibitory concentration susceptibility test technique (qualifier value)</span></p><p><b>specimen</b>: <a href=\"Specimen-mii-exa-test-data-patient-12-mibi-specimen-bk.html\">Specimen: extension = Primärprobe (MII CS Biobank Probenebene#PRIMÄRPROBE),Biosafety level 2 (qualifier value); identifier = https://www.charite.de/fhir/sid/Probennummer#BK-012-001; status = available; type = Blood specimen (specimen); receivedTime = 2025-03-08 19:05:00+0100; note = Zwei Paerchen vor Beginn der empirischen Antibiose abgenommen.</a></p><p><b>device</b>: <a href=\"Device-mii-exa-test-data-mikrobio-device-vitek-1.html\">Device: identifier = https://www.charite.de/fhir/sid/device-identifier#VITEK-001</a></p></div>"
+  },
+  "extension" : [{
+    "extension" : [{
+      "url" : "observation",
+      "valueReference" : {
+        "reference" : "Observation/mii-exa-test-data-patient-12-mibi-erreger-1"
+      }
+    },
+    {
+      "url" : "type",
+      "valueCode" : "reflex"
+    }],
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-Observation.triggeredBy"
+  }],
+  "identifier" : [{
+    "type" : {
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+        "code" : "OBI"
+      }]
+    },
+    "system" : "https://www.charite.de/fhir/sid/test-lab-results",
+    "value" : "pat12-ast-cipro",
+    "assigner" : {
+      "identifier" : {
+        "system" : "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier",
+        "value" : "DIZ-CHA"
+      }
+    }
+  }],
+  "basedOn" : [{
+    "reference" : "ServiceRequest/mii-exa-test-data-patient-12-mibi-anforderung-1"
+  }],
+  "status" : "final",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "laboratory"
+    }]
+  },
+  {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v2-0074",
+      "code" : "MB",
+      "display" : "Microbiology"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "18906-8",
+      "display" : "Ciprofloxacin [Susceptibility]"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/mii-exa-test-data-patient-12"
+  },
+  "encounter" : {
+    "reference" : "Encounter/mii-exa-test-data-patient-12-encounter-2"
+  },
+  "effectiveDateTime" : "2025-03-11T09:00:00+01:00",
+  "issued" : "2025-03-11T09:30:00+01:00",
+  "valueQuantity" : {
+    "value" : 4,
+    "unit" : "mg/L",
+    "system" : "http://unitsofmeasure.org",
+    "code" : "mg/L"
+  },
+  "interpretation" : [{
+    "extension" : [{
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-ex-mikrobio-empfindlichkeit-norm",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/CodeSystem/mii-cs-mikrobio-susceptibility-norm",
+          "code" : "EUCAST",
+          "display" : "EUCAST"
+        }]
+      }
+    }],
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+      "code" : "R",
+      "display" : "Resistant"
+    }]
+  }],
+  "method" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "708073008",
+      "display" : "Minimum inhibitory concentration susceptibility test technique (qualifier value)"
+    }]
+  },
+  "specimen" : {
+    "reference" : "Specimen/mii-exa-test-data-patient-12-mibi-specimen-bk"
+  },
+  "device" : {
+    "reference" : "Device/mii-exa-test-data-mikrobio-device-vitek-1"
+  }
+}

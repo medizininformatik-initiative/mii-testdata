@@ -1,0 +1,55 @@
+{
+  "resourceType" : "Observation",
+  "id" : "mii-exa-test-data-patho-granulomatous-prostatitis",
+  "meta" : {
+    "source" : "https://www.charite.de/fhir/kds-testdata",
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding"],
+    "security" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "code" : "HTEST",
+      "display" : "test health data"
+    }]
+  },
+  "language" : "en",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-patho-granulomatous-prostatitis</b></p><a name=\"mii-exa-test-data-patho-granulomatous-prostatitis\"> </a><a name=\"hcmii-exa-test-data-patho-granulomatous-prostatitis\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding\">MII PR Patho Finding</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>basedOn</b>: <a href=\"ServiceRequest-mii-exa-test-data-patho-request-1.html\">ServiceRequest Prostate Pathology biopsy report</a></p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span>, <span title=\"Codes:{http://loinc.org 22637-3}\">Pathology report final diagnosis Narrative</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 94665-7}\">Granulomatous prostatitis [Presence] in Specimen by Microscopy</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-patho-patient-1.html\">Klaus Gewebeprobe  Male, DoB: 1963-06-30 ( https://www.charite.de/fhir/sid/patientenidentifikation#PATH-TEST-001)</a></p><p><b>effective</b>: 2024-01-20</p><p><b>performer</b>: <a href=\"Practitioner-mii-exa-test-data-patho-practitioner-1.html\">Practitioner Paula Schnittbild </a></p><p><b>value</b>: <span title=\"Codes:{http://snomed.info/sct 47492008}\">Not seen (qualifier value)</span></p></div>"
+  },
+  "basedOn" : [{
+    "reference" : "ServiceRequest/mii-exa-test-data-patho-request-1"
+  }],
+  "status" : "final",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "laboratory"
+    }]
+  },
+  {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "22637-3"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "94665-7",
+      "display" : "Granulomatous prostatitis [Presence] in Specimen by Microscopy"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/mii-exa-test-data-patho-patient-1"
+  },
+  "effectiveDateTime" : "2024-01-20",
+  "performer" : [{
+    "reference" : "Practitioner/mii-exa-test-data-patho-practitioner-1"
+  }],
+  "valueCodeableConcept" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "47492008",
+      "display" : "Not seen (qualifier value)"
+    }]
+  }
+}

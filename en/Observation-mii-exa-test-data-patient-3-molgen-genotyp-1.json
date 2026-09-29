@@ -1,0 +1,128 @@
+{
+  "resourceType" : "Observation",
+  "id" : "mii-exa-test-data-patient-3-molgen-genotyp-1",
+  "meta" : {
+    "source" : "https://www.charite.de/fhir/kds-testdata",
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/genotyp",
+    "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genotype"],
+    "security" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "code" : "HTEST",
+      "display" : "test health data"
+    }]
+  },
+  "language" : "en",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-patient-3-molgen-genotyp-1</b></p><a name=\"mii-exa-test-data-patient-3-molgen-genotyp-1\"> </a><a name=\"hcmii-exa-test-data-patient-3-molgen-genotyp-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profiles: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/genotyp\">MII PR MolGen Genotyp</a>, <a href=\"http://hl7.org/fhir/uv/genomics-reporting/STU3/StructureDefinition-genotype.html\">Genotype</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span>, <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v2-0074 GE}\">Genetics</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 84413-4}\">Genotype display name</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-molgen-patient-1.html\">Petra Genomisch  Female, DoB: 1985-08-14 ( https://www.charite.de/fhir/sid/patientenidentifikation#MOL-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-molgen-encounter-1.html\">Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2024-03-01 --&gt; 2024-03-20</a></p><p><b>effective</b>: 2022-04-07</p><p><b>issued</b>: 2022-04-12 10:30:00+0200</p><p><b>value</b>: <span title=\"Codes:{http://www.ncbi.nlm.nih.gov/projects/SNP rs113488022}\">BRAF rs113488022 T&gt;A</span></p><p><b>method</b>: <span title=\"Codes:{http://loinc.org LA26398-0}\">Sequencing</span></p><p><b>specimen</b>: <a href=\"Specimen-mii-exa-test-data-molgen-specimen-1.html\">Specimen: status = available; type = Whole blood</a></p><p><b>device</b>: <a href=\"Device-mii-exa-test-data-molgen-device-sequencer.html\">Device: status = active; manufacturer = Illumina</a></p><p><b>derivedFrom</b>: <a href=\"Observation-mii-exa-test-data-patient-3-molgen-variante-1.html\">Observation Genetic variant assessment</a></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 48018-6}\">Gene studied [ID]</span></p><p><b>value</b>: <span title=\"Codes:{http://www.genenames.org/geneId HGNC:1097}\">BRAF</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 48001-2}\">Cytogenetic (chromosome) location</span></p><p><b>value</b>: <span title=\"Codes:{urn:oid:2.16.840.1.113883.6.335 7q34}\">7q34</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs conclusion-string}\">Conclusion Text</span></p><p><b>value</b>: Heterozygote BRAF V600E Mutation nachgewiesen</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 62374-4}\">Human reference sequence assembly version</span></p><p><b>value</b>: <span title=\"Codes:{http://loinc.org LA26806-2}\">GRCh38</span></p></blockquote></div>"
+  },
+  "status" : "final",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "laboratory",
+      "display" : "Laboratory"
+    }]
+  },
+  {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v2-0074",
+      "code" : "GE"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "84413-4",
+      "display" : "Genotype display name"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/mii-exa-test-data-molgen-patient-1"
+  },
+  "encounter" : {
+    "reference" : "Encounter/mii-exa-test-data-molgen-encounter-1"
+  },
+  "effectiveDateTime" : "2022-04-07",
+  "issued" : "2022-04-12T10:30:00+02:00",
+  "valueCodeableConcept" : {
+    "coding" : [{
+      "system" : "http://www.ncbi.nlm.nih.gov/projects/SNP",
+      "code" : "rs113488022",
+      "display" : "BRAF V600E (c.1799T>A)"
+    }],
+    "text" : "BRAF rs113488022 T>A"
+  },
+  "method" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "LA26398-0",
+      "display" : "Sequencing"
+    }]
+  },
+  "specimen" : {
+    "reference" : "Specimen/mii-exa-test-data-molgen-specimen-1"
+  },
+  "device" : {
+    "reference" : "Device/mii-exa-test-data-molgen-device-sequencer"
+  },
+  "derivedFrom" : [{
+    "reference" : "Observation/mii-exa-test-data-patient-3-molgen-variante-1"
+  }],
+  "component" : [{
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "48018-6",
+        "display" : "Gene studied [ID]"
+      }]
+    },
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://www.genenames.org/geneId",
+        "code" : "HGNC:1097",
+        "display" : "BRAF"
+      }]
+    }
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "48001-2",
+        "display" : "Cytogenetic (chromosome) location"
+      }]
+    },
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "urn:oid:2.16.840.1.113883.6.335",
+        "code" : "7q34"
+      }]
+    }
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs",
+        "code" : "conclusion-string"
+      }]
+    },
+    "valueString" : "Heterozygote BRAF V600E Mutation nachgewiesen"
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "62374-4",
+        "display" : "Human reference sequence assembly version"
+      }]
+    },
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "LA26806-2",
+        "display" : "GRCh38"
+      }]
+    }
+  }]
+}

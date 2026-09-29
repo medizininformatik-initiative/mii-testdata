@@ -1,0 +1,95 @@
+{
+  "resourceType" : "Condition",
+  "id" : "mii-exa-test-data-symptom-condition-2",
+  "meta" : {
+    "source" : "https://www.charite.de/fhir/kds-testdata",
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-symptom/StructureDefinition/finding-condition"],
+    "security" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "code" : "HTEST",
+      "display" : "test health data"
+    }]
+  },
+  "language" : "en",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Condition mii-exa-test-data-symptom-condition-2</b></p><a name=\"mii-exa-test-data-symptom-condition-2\"> </a><a name=\"hcmii-exa-test-data-symptom-condition-2\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/modul-symptom/StructureDefinition/finding-condition\">MII_PR_Symptom_Condition</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>Condition Asserted Date</b>: 2023-11-20</p><p><b>identifier</b>: <code>https://www.charite.de/fhir/sid/symptom-condition</code>/SYMP-CON-0002</p><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}\">Active</span></p><p><b>verificationStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}\">Confirmed</span></p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-category problem-list-item}\">Problem List Item</span></p><p><b>severity</b>: <span title=\"Codes:{http://snomed.info/sct 6736007}\">Moderate (severity modifier)</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 84114007}, {http://fhir.de/CodeSystem/bfarm/icd-10-gm I50.9}\">Chronische Herzinsuffizienz</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-symptom-patient-1.html\">Helene Symptomatika  Female, DoB: 1994-08-21 ( https://www.charite.de/fhir/sid/patientenidentifikation#SYMP-TEST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-symptom-encounter-1.html\">Encounter: status = finished; class = ambulatory (ActCode#AMB); period = 2025-03-04 --&gt; 2025-03-04</a></p><p><b>onset</b>: 2023-11-20</p><p><b>recordedDate</b>: 2025-03-04</p><h3>Stages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Summary</b></td><td><b>Assessment</b></td><td><b>Type</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 421704003}\">New York Heart Association Classification - Class II</span></td><td><a href=\"Observation-mii-exa-test-data-symptom-observation-3.html\">Observation Symptom</a></td><td><span title=\"Codes:{http://snomed.info/sct 260998006}\">Clinical staging (qualifier value)</span></td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/condition-assertedDate",
+    "valueDateTime" : "2023-11-20"
+  }],
+  "identifier" : [{
+    "system" : "https://www.charite.de/fhir/sid/symptom-condition",
+    "value" : "SYMP-CON-0002"
+  }],
+  "clinicalStatus" : {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
+      "code" : "active",
+      "display" : "Active"
+    }]
+  },
+  "verificationStatus" : {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+      "code" : "confirmed",
+      "display" : "Confirmed"
+    }]
+  },
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/condition-category",
+      "code" : "problem-list-item",
+      "display" : "Problem List Item"
+    }]
+  }],
+  "severity" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "6736007",
+      "display" : "Moderate (severity modifier)"
+    }]
+  },
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "84114007",
+      "display" : "Heart failure"
+    },
+    {
+      "system" : "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+      "version" : "2026",
+      "code" : "I50.9",
+      "display" : "Herzinsuffizienz, nicht näher bezeichnet"
+    }],
+    "text" : "Chronische Herzinsuffizienz"
+  },
+  "subject" : {
+    "reference" : "Patient/mii-exa-test-data-symptom-patient-1"
+  },
+  "encounter" : {
+    "reference" : "Encounter/mii-exa-test-data-symptom-encounter-1"
+  },
+  "onsetDateTime" : "2023-11-20",
+  "recordedDate" : "2025-03-04",
+  "stage" : [{
+    "summary" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "421704003",
+        "display" : "New York Heart Association Classification - Class II"
+      }]
+    },
+    "assessment" : [{
+      "reference" : "Observation/mii-exa-test-data-symptom-observation-3"
+    }],
+    "type" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "260998006",
+        "display" : "Clinical staging (qualifier value)"
+      }]
+    }
+  }]
+}

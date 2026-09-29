@@ -1,0 +1,2473 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "mii-exa-test-data-bundle-pat-14",
+  "meta" : {
+    "source" : "https://www.charite.de/fhir/kds-testdata",
+    "security" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "code" : "HTEST",
+      "display" : "test health data"
+    }]
+  },
+  "language" : "en",
+  "type" : "transaction",
+  "timestamp" : "2024-08-14T12:00:00+02:00",
+  "entry" : [{
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Patient/mii-exa-test-data-patient-14",
+    "resource" : {
+      "resourceType" : "Patient",
+      "id" : "mii-exa-test-data-patient-14",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient",
+        "http://fhir.de/ConsentManagement/StructureDefinition/Patient"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "en",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Patient_mii-exa-test-data-patient-14\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Patient mii-exa-test-data-patient-14</b></p><a name=\"mii-exa-test-data-patient-14\"> </a><a name=\"hcmii-exa-test-data-patient-14\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profiles: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient\">MII PR Person Patient</a>, <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.consent@2027.0.0-ballot&amp;canonical=http://fhir.de/ConsentManagement/StructureDefinition/Patient\">Consent Management: Patient</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Hartmut Brenneke (official) Male, DoB: 1966-02-27 ( Medical record number)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Other Id (see the one above)\">Other Id:</td><td colspan=\"3\">Krankenversichertennummer/P567890123\u00a0(use:\u00a0official,\u00a0)</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Detail</td><td colspan=\"3\">Rigaer Straße 77 Berlin 10247 DE </td></tr></table></div>"
+      },
+      "identifier" : [{
+        "use" : "official",
+        "type" : {
+          "coding" : [{
+            "system" : "http://fhir.de/CodeSystem/identifier-type-de-basis",
+            "code" : "KVZ10"
+          }]
+        },
+        "system" : "http://fhir.de/sid/gkv/kvid-10",
+        "value" : "P567890123",
+        "assigner" : {
+          "identifier" : {
+            "use" : "official",
+            "system" : "http://fhir.de/sid/arge-ik/iknr",
+            "value" : "109519005"
+          }
+        }
+      },
+      {
+        "type" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code" : "MR"
+          }]
+        },
+        "system" : "https://www.charite.de/fhir/sid/patientenidentifikation",
+        "value" : "884612095",
+        "assigner" : {
+          "identifier" : {
+            "type" : {
+              "coding" : [{
+                "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+                "code" : "XX"
+              }]
+            },
+            "system" : "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier",
+            "value" : "Charité"
+          }
+        }
+      }],
+      "name" : [{
+        "use" : "official",
+        "family" : "Brenneke",
+        "given" : ["Hartmut"]
+      }],
+      "gender" : "male",
+      "birthDate" : "1966-02-27",
+      "address" : [{
+        "type" : "both",
+        "line" : ["Rigaer Straße 77"],
+        "_line" : [{
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName",
+            "valueString" : "Rigaer Straße"
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber",
+            "valueString" : "77"
+          }]
+        }],
+        "city" : "Berlin",
+        "_city" : {
+          "extension" : [{
+            "url" : "http://fhir.de/StructureDefinition/destatis/ags",
+            "valueCoding" : {
+              "system" : "http://fhir.de/sid/destatis/ags",
+              "code" : "11000000"
+            }
+          }]
+        },
+        "postalCode" : "10247",
+        "country" : "DE"
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Patient/mii-exa-test-data-patient-14"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Encounter/mii-exa-test-data-patient-14-encounter-1",
+    "resource" : {
+      "resourceType" : "Encounter",
+      "id" : "mii-exa-test-data-patient-14-encounter-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "en",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Encounter_mii-exa-test-data-patient-14-encounter-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Encounter mii-exa-test-data-patient-14-encounter-1</b></p><a name=\"mii-exa-test-data-patient-14-encounter-1\"> </a><a name=\"hcmii-exa-test-data-patient-14-encounter-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung\">MII PR Fall Kontakt mit einer Gesundheitseinrichtung</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>identifier</b>: Visit number/MII_0000021</p><p><b>status</b>: Finished</p><p><b>class</b>: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActCode.html#v3-ActCode-IMP\">ActCode: IMP</a> (inpatient encounter)</p><p><b>type</b>: <span title=\"Codes:{http://fhir.de/CodeSystem/Kontaktebene einrichtungskontakt}\">Einrichtungskontakt</span>, <span title=\"Codes:{http://fhir.de/CodeSystem/kontaktart-de normalstationaer}\">Normalstationär</span></p><p><b>serviceType</b>: <span title=\"Codes:{http://fhir.de/CodeSystem/dkgev/Fachabteilungsschluessel 1500}\">Allgemeine Chirurgie</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-patient-14.html\">Hartmut Brenneke (official) Male, DoB: 1966-02-27 ( Medical record number)</a></p><p><b>period</b>: 2024-03-11 --&gt; 2024-03-22</p><h3>Diagnoses</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Condition</b></td><td><b>Use</b></td><td><b>Rank</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Condition-mii-exa-test-data-patient-14-onko-diagnose-1.html\">Condition Bösartige Neubildung: Colon sigmoideum</a></td><td><span title=\"Codes:{http://fhir.de/CodeSystem/KontaktDiagnoseProzedur hospital-main-diagnosis}\">Krankenhaus Hauptdiagnose</span></td><td>1</td></tr></table><h3>Hospitalizations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>AdmitSource</b></td><td><b>DischargeDisposition</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://fhir.de/CodeSystem/dgkev/Aufnahmeanlass E}\">Einweisung durch einen Arzt</span></td><td><span title=\"Codes:\"></span></td></tr></table><p><b>serviceProvider</b>: <a href=\"Organization-mii-exa-test-data-organization-charite.html\">Charité - Universitätsmedizin Berlin</a></p></div>"
+      },
+      "identifier" : [{
+        "type" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code" : "VN"
+          }]
+        },
+        "system" : "https://www.charite.de/fhir/NamingSystem/Aufnahmenummern",
+        "value" : "MII_0000021"
+      }],
+      "status" : "finished",
+      "class" : {
+        "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "code" : "IMP"
+      },
+      "type" : [{
+        "coding" : [{
+          "system" : "http://fhir.de/CodeSystem/Kontaktebene",
+          "code" : "einrichtungskontakt"
+        }]
+      },
+      {
+        "coding" : [{
+          "system" : "http://fhir.de/CodeSystem/kontaktart-de",
+          "code" : "normalstationaer"
+        }]
+      }],
+      "serviceType" : {
+        "coding" : [{
+          "system" : "http://fhir.de/CodeSystem/dkgev/Fachabteilungsschluessel",
+          "code" : "1500"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-patient-14"
+      },
+      "period" : {
+        "start" : "2024-03-11",
+        "end" : "2024-03-22"
+      },
+      "diagnosis" : [{
+        "condition" : {
+          "reference" : "Condition/mii-exa-test-data-patient-14-onko-diagnose-1"
+        },
+        "use" : {
+          "coding" : [{
+            "system" : "http://fhir.de/CodeSystem/KontaktDiagnoseProzedur",
+            "code" : "hospital-main-diagnosis",
+            "display" : "Krankenhaus Hauptdiagnose"
+          }]
+        },
+        "rank" : 1
+      }],
+      "hospitalization" : {
+        "admitSource" : {
+          "coding" : [{
+            "system" : "http://fhir.de/CodeSystem/dgkev/Aufnahmeanlass",
+            "code" : "E",
+            "display" : "Einweisung durch einen Arzt"
+          }]
+        },
+        "dischargeDisposition" : {
+          "extension" : [{
+            "extension" : [{
+              "url" : "ErsteUndZweiteStelle",
+              "valueCoding" : {
+                "system" : "http://fhir.de/CodeSystem/dkgev/EntlassungsgrundErsteUndZweiteStelle",
+                "code" : "01",
+                "display" : "Behandlung regulär beendet"
+              }
+            },
+            {
+              "url" : "DritteStelle",
+              "valueCoding" : {
+                "system" : "http://fhir.de/CodeSystem/dkgev/EntlassungsgrundDritteStelle",
+                "code" : "2",
+                "display" : "arbeitsunfähig entlassen"
+              }
+            }],
+            "url" : "http://fhir.de/StructureDefinition/Entlassungsgrund"
+          }]
+        }
+      },
+      "serviceProvider" : {
+        "reference" : "Organization/mii-exa-test-data-organization-charite",
+        "display" : "Charité - Universitätsmedizin Berlin"
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Encounter/mii-exa-test-data-patient-14-encounter-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Encounter/mii-exa-test-data-patient-14-encounter-2",
+    "resource" : {
+      "resourceType" : "Encounter",
+      "id" : "mii-exa-test-data-patient-14-encounter-2",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "en",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Encounter_mii-exa-test-data-patient-14-encounter-2\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Encounter mii-exa-test-data-patient-14-encounter-2</b></p><a name=\"mii-exa-test-data-patient-14-encounter-2\"> </a><a name=\"hcmii-exa-test-data-patient-14-encounter-2\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung\">MII PR Fall Kontakt mit einer Gesundheitseinrichtung</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>identifier</b>: Visit number/MII_0000022</p><p><b>status</b>: Finished</p><p><b>class</b>: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActCode.html#v3-ActCode-AMB\">ActCode: AMB</a> (ambulatory)</p><p><b>type</b>: <span title=\"Codes:{http://fhir.de/CodeSystem/Kontaktebene einrichtungskontakt}\">Einrichtungskontakt</span>, <span title=\"Codes:{http://fhir.de/CodeSystem/kontaktart-de ub}\">Untersuchung und Behandlung</span></p><p><b>serviceType</b>: <span title=\"Codes:{http://fhir.de/CodeSystem/dkgev/Fachabteilungsschluessel 0500}\">Hämatologie und internistische Onkologie</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-patient-14.html\">Hartmut Brenneke (official) Male, DoB: 1966-02-27 ( Medical record number)</a></p><p><b>period</b>: 2024-05-02 08:00:00+0200 --&gt; 2024-05-02 13:00:00+0200</p><p><b>serviceProvider</b>: <a href=\"Organization-mii-exa-test-data-organization-charite.html\">Charité - Universitätsmedizin Berlin</a></p></div>"
+      },
+      "identifier" : [{
+        "type" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code" : "VN"
+          }]
+        },
+        "system" : "https://www.charite.de/fhir/NamingSystem/Aufnahmenummern",
+        "value" : "MII_0000022"
+      }],
+      "status" : "finished",
+      "class" : {
+        "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "code" : "AMB"
+      },
+      "type" : [{
+        "coding" : [{
+          "system" : "http://fhir.de/CodeSystem/Kontaktebene",
+          "code" : "einrichtungskontakt"
+        }]
+      },
+      {
+        "coding" : [{
+          "system" : "http://fhir.de/CodeSystem/kontaktart-de",
+          "code" : "ub"
+        }]
+      }],
+      "serviceType" : {
+        "coding" : [{
+          "system" : "http://fhir.de/CodeSystem/dkgev/Fachabteilungsschluessel",
+          "code" : "0500"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-patient-14"
+      },
+      "period" : {
+        "start" : "2024-05-02T08:00:00+02:00",
+        "end" : "2024-05-02T13:00:00+02:00"
+      },
+      "serviceProvider" : {
+        "reference" : "Organization/mii-exa-test-data-organization-charite",
+        "display" : "Charité - Universitätsmedizin Berlin"
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Encounter/mii-exa-test-data-patient-14-encounter-2"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Procedure/mii-exa-test-data-patient-14-prozedur-1",
+    "resource" : {
+      "resourceType" : "Procedure",
+      "id" : "mii-exa-test-data-patient-14-prozedur-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Procedure"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "en",
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Procedure_mii-exa-test-data-patient-14-prozedur-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Procedure mii-exa-test-data-patient-14-prozedur-1</b></p><a name=\"mii-exa-test-data-patient-14-prozedur-1\"> </a><a name=\"hcmii-exa-test-data-patient-14-prozedur-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Procedure\">MII PR Prozedur Procedure</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>ExtensionProzedurDokumentationsdatum</b>: 2024-03-12 13:00:00+0100</p><p><b>MII EX Prozedur Durchführungsabsicht</b>: <a href=\"http://snomed.info/id/262202000\">SNOMED CT: 262202000</a> (Therapeutic)</p><p><b>status</b>: Completed</p><p><b>category</b>: <span title=\"Codes:{http://snomed.info/sct 387713003}\">Surgical procedure</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 84604002}, {http://fhir.de/CodeSystem/bfarm/ops 5-455.71}\">Sigmoid colectomy</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-patient-14.html\">Hartmut Brenneke (official) Male, DoB: 1966-02-27 ( Medical record number)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-patient-14-encounter-1.html\">Encounter: identifier = Visit number; status = finished; class = inpatient encounter (ActCode#IMP); type = Einrichtungskontakt,Normalstationär; serviceType = Allgemeine Chirurgie; period = 2024-03-11 --&gt; 2024-03-22</a></p><p><b>performed</b>: 2024-03-12 08:15:00+0100 --&gt; 2024-03-12 11:40:00+0100</p><p><b>recorder</b>: <a href=\"PractitionerRole-mii-exa-test-data-practitioner-role-physician-1.html\">PractitionerRole Physician (occupation)</a></p><p><b>bodySite</b>: <span title=\"Codes:{http://snomed.info/sct 60184004}\">Sigmoid colon structure</span></p><p><b>note</b>: </p><blockquote><div><p>Offene Sigmaresektion mit Anastomose bei Sigmakarzinom</p>\n</div></blockquote></div>"
+      },
+      "extension" : [{
+        "url" : "http://fhir.de/StructureDefinition/ProzedurDokumentationsdatum",
+        "valueDateTime" : "2024-03-12T13:00:00+01:00"
+      },
+      {
+        "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Durchfuehrungsabsicht",
+        "valueCoding" : {
+          "system" : "http://snomed.info/sct",
+          "code" : "262202000",
+          "display" : "Therapeutic"
+        }
+      }],
+      "status" : "completed",
+      "category" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "387713003"
+        }]
+      },
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "84604002"
+        },
+        {
+          "system" : "http://fhir.de/CodeSystem/bfarm/ops",
+          "version" : "2024",
+          "code" : "5-455.71"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-patient-14"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-patient-14-encounter-1"
+      },
+      "performedPeriod" : {
+        "start" : "2024-03-12T08:15:00+01:00",
+        "end" : "2024-03-12T11:40:00+01:00"
+      },
+      "recorder" : {
+        "reference" : "PractitionerRole/mii-exa-test-data-practitioner-role-physician-1"
+      },
+      "bodySite" : [{
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "60184004"
+        }]
+      }],
+      "note" : [{
+        "text" : "Offene Sigmaresektion mit Anastomose bei Sigmakarzinom"
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Procedure/mii-exa-test-data-patient-14-prozedur-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Consent/mii-exa-test-data-patient-14-consent-1",
+    "resource" : {
+      "resourceType" : "Consent",
+      "id" : "mii-exa-test-data-patient-14-consent-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-einwilligung"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "en",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Consent_mii-exa-test-data-patient-14-consent-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Consent mii-exa-test-data-patient-14-consent-1</b></p><a name=\"mii-exa-test-data-patient-14-consent-1\"> </a><a name=\"hcmii-exa-test-data-patient-14-consent-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-einwilligung\">Profile - MI-I - Consent - Einwilligung</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><h2>Participants</h2><table class=\"grid\"><tr><td><b>Role</b></td><td><b>Details</b></td></tr><tr><td title=\"Who the consent applies to\">Patient</td><td><a href=\"Patient-mii-exa-test-data-patient-14.html\">Hartmut Brenneke (official) Male, DoB: 1966-02-27 ( Medical record number)</a></td></tr><tr><td title=\"Who manages the consent through its lifecycle.\">Manager</td><td><a href=\"Organization-mii-exa-test-data-organization-charite.html\">Organization Charité – Universitätsmedizin Berlin</a></td></tr></table><p>This consent is made under the regulation <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ActCode OPTIN}\">MII Broad Consent Opt-in</span> and the policy <code>urn:oid:2.16.840.1.113883.3.1937.777.24.2.1791</code> .</p><table border=\"1\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 2px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Applicable Rule\">Rule</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Applicable Period\">Time Period</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Applicable Data\">What</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Other Applicable Rules\">Rules</a><span style=\"float: right\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_extension.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Consent Provision\" class=\"hierarchy\"/> permit</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck01.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-qi-hidden.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Consent Provision\" class=\"hierarchy\"/> deny</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><ul><li>Period: 2024-03-11 --&gt; 2054-03-10</li></ul></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_extension.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Consent Provision\" class=\"hierarchy\"/> permit</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><ul><li>Period: 2024-03-11 --&gt; 2054-03-10</li></ul></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><ul><li>Code: <span title=\"Codes:{urn:oid:2.16.840.1.113883.3.1937.777.24.5.3 2.16.840.1.113883.3.1937.777.24.5.3.6}\">MDAT erheben</span></li></ul></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_extension.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Consent Provision\" class=\"hierarchy\"/> permit</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><ul><li>Period: 2024-03-11 --&gt; 2054-03-10</li></ul></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><ul><li>Code: <span title=\"Codes:{urn:oid:2.16.840.1.113883.3.1937.777.24.5.3 2.16.840.1.113883.3.1937.777.24.5.3.8}\">MDAT wissenschaftlich nutzen</span></li></ul></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_extension.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Consent Provision\" class=\"hierarchy\"/> permit</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><ul><li>Period: 2024-03-11 --&gt; 2054-03-10</li></ul></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><ul><li>Code: <span title=\"Codes:{urn:oid:2.16.840.1.113883.3.1937.777.24.5.3 2.16.840.1.113883.3.1937.777.24.5.3.19}\">BIOMAT erheben</span></li></ul></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck000.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_extension.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Consent Provision\" class=\"hierarchy\"/> permit</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><ul><li>Period: 2024-03-11 --&gt; 2054-03-10</li></ul></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><ul><li>Code: <span title=\"Codes:{urn:oid:2.16.840.1.113883.3.1937.777.24.5.3 2.16.840.1.113883.3.1937.777.24.5.3.22}\">BIOMAT wissenschaftlich nutzen</span></li></ul></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"></td></tr>\r\n<tr><td colspan=\"4\" class=\"hierarchy\"><br/><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"
+      },
+      "extension" : [{
+        "extension" : [{
+          "url" : "domain",
+          "valueReference" : {
+            "reference" : "Organization/mii-exa-test-data-organization-charite",
+            "display" : "MII Broad Consent Domäne Charité"
+          }
+        }],
+        "url" : "http://fhir.de/ConsentManagement/StructureDefinition/DomainReference"
+      }],
+      "status" : "active",
+      "scope" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/consentscope",
+          "code" : "research"
+        }]
+      },
+      "category" : [{
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "57016-8"
+        }]
+      },
+      {
+        "coding" : [{
+          "system" : "https://www.medizininformatik-initiative.de/fhir/modul-consent/CodeSystem/mii-cs-consent-version-modules",
+          "code" : "2.16.840.1.113883.3.1937.777.24.2.184"
+        }]
+      }],
+      "patient" : {
+        "reference" : "Patient/mii-exa-test-data-patient-14",
+        "identifier" : {
+          "system" : "http://fhir.de/sid/gkv/kvid-10",
+          "value" : "P567890123"
+        }
+      },
+      "dateTime" : "2024-03-11T14:00:00+01:00",
+      "organization" : [{
+        "reference" : "Organization/mii-exa-test-data-organization-charite"
+      }],
+      "policy" : [{
+        "uri" : "urn:oid:2.16.840.1.113883.3.1937.777.24.2.1791"
+      }],
+      "policyRule" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code" : "OPTIN",
+          "display" : "opt-in"
+        }],
+        "text" : "MII Broad Consent Opt-in"
+      },
+      "provision" : {
+        "type" : "deny",
+        "period" : {
+          "start" : "2024-03-11",
+          "end" : "2054-03-10"
+        },
+        "provision" : [{
+          "type" : "permit",
+          "period" : {
+            "start" : "2024-03-11",
+            "end" : "2054-03-10"
+          },
+          "code" : [{
+            "coding" : [{
+              "system" : "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3",
+              "code" : "2.16.840.1.113883.3.1937.777.24.5.3.6",
+              "display" : "MDAT erheben"
+            }]
+          }]
+        },
+        {
+          "type" : "permit",
+          "period" : {
+            "start" : "2024-03-11",
+            "end" : "2054-03-10"
+          },
+          "code" : [{
+            "coding" : [{
+              "system" : "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3",
+              "code" : "2.16.840.1.113883.3.1937.777.24.5.3.8",
+              "display" : "MDAT wissenschaftlich nutzen"
+            }]
+          }]
+        },
+        {
+          "type" : "permit",
+          "period" : {
+            "start" : "2024-03-11",
+            "end" : "2054-03-10"
+          },
+          "code" : [{
+            "coding" : [{
+              "system" : "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3",
+              "code" : "2.16.840.1.113883.3.1937.777.24.5.3.19",
+              "display" : "BIOMAT erheben"
+            }]
+          }]
+        },
+        {
+          "type" : "permit",
+          "period" : {
+            "start" : "2024-03-11",
+            "end" : "2054-03-10"
+          },
+          "code" : [{
+            "coding" : [{
+              "system" : "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3",
+              "code" : "2.16.840.1.113883.3.1937.777.24.5.3.22",
+              "display" : "BIOMAT wissenschaftlich nutzen"
+            }]
+          }]
+        }]
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Consent/mii-exa-test-data-patient-14-consent-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Organization/mii-exa-test-data-organization-charite",
+    "resource" : {
+      "resourceType" : "Organization",
+      "id" : "mii-exa-test-data-organization-charite",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "en",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Organization_mii-exa-test-data-organization-charite\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Organization mii-exa-test-data-organization-charite</b></p><a name=\"mii-exa-test-data-organization-charite\"> </a><a name=\"hcmii-exa-test-data-organization-charite\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/organization-type prov}\">Healthcare Provider</span></p><p><b>name</b>: Charité – Universitätsmedizin Berlin</p></div>"
+      },
+      "type" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/organization-type",
+          "code" : "prov",
+          "display" : "Healthcare Provider"
+        }]
+      }],
+      "name" : "Charité – Universitätsmedizin Berlin"
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Organization/mii-exa-test-data-organization-charite"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Practitioner/mii-exa-test-data-practitioner-physician-1",
+    "resource" : {
+      "resourceType" : "Practitioner",
+      "id" : "mii-exa-test-data-practitioner-physician-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "en",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Practitioner_mii-exa-test-data-practitioner-physician-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Practitioner mii-exa-test-data-practitioner-physician-1</b></p><a name=\"mii-exa-test-data-practitioner-physician-1\"> </a><a name=\"hcmii-exa-test-data-practitioner-physician-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>active</b>: true</p><p><b>name</b>: Rahel Hirsch </p></div>"
+      },
+      "active" : true,
+      "name" : [{
+        "family" : "Hirsch",
+        "given" : ["Rahel"]
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Practitioner/mii-exa-test-data-practitioner-physician-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/PractitionerRole/mii-exa-test-data-practitioner-role-physician-1",
+    "resource" : {
+      "resourceType" : "PractitionerRole",
+      "id" : "mii-exa-test-data-practitioner-role-physician-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-studie/StructureDefinition/mii-pr-studie-beteiligte-person"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "en",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"PractitionerRole_mii-exa-test-data-practitioner-role-physician-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: PractitionerRole mii-exa-test-data-practitioner-role-physician-1</b></p><a name=\"mii-exa-test-data-practitioner-role-physician-1\"> </a><a name=\"hcmii-exa-test-data-practitioner-role-physician-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/modul-studie/StructureDefinition/mii-pr-studie-beteiligte-person\">MII PR Studie Beteiligte Person</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>active</b>: true</p><p><b>practitioner</b>: <a href=\"Practitioner-mii-exa-test-data-practitioner-physician-1.html\">Practitioner Rahel Hirsch </a></p><p><b>organization</b>: <a href=\"Organization-mii-exa-test-data-organization-charite.html\">Organization Charité – Universitätsmedizin Berlin</a></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 309343006}\">Physician (occupation)</span></p><p><b>telecom</b>: <a href=\"mailto:studienteam@charite.de\">studienteam@charite.de</a></p></div>"
+      },
+      "active" : true,
+      "practitioner" : {
+        "reference" : "Practitioner/mii-exa-test-data-practitioner-physician-1"
+      },
+      "organization" : {
+        "reference" : "Organization/mii-exa-test-data-organization-charite"
+      },
+      "code" : [{
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "309343006",
+          "display" : "Physician (occupation)"
+        }]
+      }],
+      "telecom" : [{
+        "system" : "email",
+        "value" : "studienteam@charite.de",
+        "use" : "work"
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "PractitionerRole/mii-exa-test-data-practitioner-role-physician-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Condition/mii-exa-test-data-patient-14-onko-diagnose-1",
+    "resource" : {
+      "resourceType" : "Condition",
+      "id" : "mii-exa-test-data-patient-14-onko-diagnose-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-diagnose-primaertumor"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "en",
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Condition_mii-exa-test-data-patient-14-onko-diagnose-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Condition mii-exa-test-data-patient-14-onko-diagnose-1</b></p><a name=\"mii-exa-test-data-patient-14-onko-diagnose-1\"> </a><a name=\"hcmii-exa-test-data-patient-14-onko-diagnose-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-diagnose-primaertumor\">MII PR Onkologie Diagnose Primärtumor</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>Condition Asserted Date</b>: 2024-03-06</p><p><b>MII EX Onko Histology Morphology Behavior ICDO3</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/icd-o-3 8140/3}\">Mäßig differenziertes Adenokarzinom</span></p><p><b>identifier</b>: <code>https://www.charite.de/fhir/sid/onko-diagnose</code>/ONKO-DIAG-2024-014</p><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}\">Active</span></p><p><b>verificationStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}, {https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-primaertumor-diagnosesicherung 7}\">histologische Untersuchung eines Primärtumors</span></p><p><b>category</b>: <span title=\"Codes:{http://snomed.info/sct 55342001}\">Neoplastic disease</span></p><p><b>code</b>: <span title=\"Codes:{http://fhir.de/CodeSystem/bfarm/icd-10-gm C18.7}\">Bösartige Neubildung: Colon sigmoideum</span></p><p><b>bodySite</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/icd-o-3 C18.7}, {http://snomed.info/sct 60184004}\">Colon sigmoideum</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-patient-14.html\">Hartmut Brenneke (official) Male, DoB: 1966-02-27 ( Medical record number)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-patient-14-encounter-1.html\">Encounter: identifier = Visit number; status = finished; class = inpatient encounter (ActCode#IMP); type = Einrichtungskontakt,Normalstationär; serviceType = Allgemeine Chirurgie; period = 2024-03-11 --&gt; 2024-03-22</a></p><p><b>recordedDate</b>: 2024-03-06</p></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/condition-assertedDate",
+        "valueDateTime" : "2024-03-06"
+      },
+      {
+        "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-histology-morphology-behavior-icdo3",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
+            "code" : "8140/3",
+            "display" : "Adenokarzinom o.n.A."
+          }],
+          "text" : "Mäßig differenziertes Adenokarzinom"
+        }
+      }],
+      "identifier" : [{
+        "system" : "https://www.charite.de/fhir/sid/onko-diagnose",
+        "value" : "ONKO-DIAG-2024-014"
+      }],
+      "clinicalStatus" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code" : "active"
+        }]
+      },
+      "verificationStatus" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code" : "confirmed"
+        },
+        {
+          "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-primaertumor-diagnosesicherung",
+          "code" : "7",
+          "display" : "histologische Untersuchung eines Primärtumors"
+        }]
+      },
+      "category" : [{
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "55342001",
+          "display" : "Neoplastic disease"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "extension" : [{
+            "url" : "http://fhir.de/StructureDefinition/icd-10-gm-diagnosesicherheit",
+            "valueCoding" : {
+              "system" : "https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_ICD_DIAGNOSESICHERHEIT",
+              "code" : "G",
+              "display" : "gesicherte Diagnose"
+            }
+          }],
+          "system" : "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+          "version" : "2024",
+          "code" : "C18.7",
+          "display" : "Bösartige Neubildung: Colon sigmoideum"
+        }]
+      },
+      "bodySite" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
+          "code" : "C18.7",
+          "display" : "Colon sigmoideum"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "60184004",
+          "display" : "Sigmoid colon structure (body structure)"
+        }]
+      }],
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-patient-14"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-patient-14-encounter-1"
+      },
+      "recordedDate" : "2024-03-06"
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Condition/mii-exa-test-data-patient-14-onko-diagnose-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Specimen/mii-exa-test-data-patient-14-onko-specimen-1",
+    "resource" : {
+      "resourceType" : "Specimen",
+      "id" : "mii-exa-test-data-patient-14-onko-specimen-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-specimen"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "en",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Specimen_mii-exa-test-data-patient-14-onko-specimen-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Specimen mii-exa-test-data-patient-14-onko-specimen-1</b></p><a name=\"mii-exa-test-data-patient-14-onko-specimen-1\"> </a><a name=\"hcmii-exa-test-data-patient-14-onko-specimen-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-specimen\">MII PR Onkologie Specimen</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>identifier</b>: ONKO-SPEC-014-1</p><p><b>accessionIdentifier</b>: <code>https://www.charite.de/fhir/sid/accession</code>/PATH-2024-08417</p><p><b>status</b>: Available</p><p><b>type</b>: <span title=\"Codes:{http://snomed.info/sct 122651006}\">Specimen from colon obtained by sigmoidectomy</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-patient-14.html\">Hartmut Brenneke (official) Male, DoB: 1966-02-27 ( Medical record number)</a></p><h3>Collections</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Collected[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>2024-03-12</td></tr></table></div>"
+      },
+      "identifier" : [{
+        "value" : "ONKO-SPEC-014-1"
+      }],
+      "accessionIdentifier" : {
+        "system" : "https://www.charite.de/fhir/sid/accession",
+        "value" : "PATH-2024-08417"
+      },
+      "status" : "available",
+      "type" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "122651006",
+          "display" : "Specimen from colon obtained by sigmoidectomy"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-patient-14"
+      },
+      "collection" : {
+        "collectedDateTime" : "2024-03-12"
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Specimen/mii-exa-test-data-patient-14-onko-specimen-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/DiagnosticReport/mii-exa-test-data-patient-14-onko-befund-1",
+    "resource" : {
+      "resourceType" : "DiagnosticReport",
+      "id" : "mii-exa-test-data-patient-14-onko-befund-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-befund"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "en",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"DiagnosticReport_mii-exa-test-data-patient-14-onko-befund-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: DiagnosticReport mii-exa-test-data-patient-14-onko-befund-1</b></p><a name=\"mii-exa-test-data-patient-14-onko-befund-1\"> </a><a name=\"hcmii-exa-test-data-patient-14-onko-befund-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-befund\">MII PR Onkologie Befund</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><h2><span title=\"Codes:{http://loinc.org 22034-3}\">Pathology report Cancer Narrative</span> </h2><table class=\"grid\"><tr><td>Subject</td><td>Hartmut Brenneke (official) Male, DoB: 1966-02-27 ( Medical record number)</td></tr></table><p><b>Report Details</b></p><p>Maessig differenziertes Adenokarzinom des Colon sigmoideum (ICD-O-3 8140/3), G2, pT3 pN2 (7/21) M1 (HEP), L1 V0 Pn0, R0. Immunhistochemisch MLH1/PMS2-Verlust — Hinweis auf Mismatch-Repair-Defizienz, molekulare Abklaerung empfohlen.</p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "22034-3",
+          "display" : "Pathology report Cancer Narrative"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-patient-14"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-patient-14-encounter-1"
+      },
+      "specimen" : [{
+        "reference" : "Specimen/mii-exa-test-data-patient-14-onko-specimen-1"
+      }],
+      "conclusion" : "Maessig differenziertes Adenokarzinom des Colon sigmoideum (ICD-O-3 8140/3), G2, pT3 pN2 (7/21) M1 (HEP), L1 V0 Pn0, R0. Immunhistochemisch MLH1/PMS2-Verlust — Hinweis auf Mismatch-Repair-Defizienz, molekulare Abklaerung empfohlen."
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "DiagnosticReport/mii-exa-test-data-patient-14-onko-befund-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-14-onko-histologie-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-patient-14-onko-histologie-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-histologie-icdo3"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "en",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-patient-14-onko-histologie-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-patient-14-onko-histologie-1</b></p><a name=\"mii-exa-test-data-patient-14-onko-histologie-1\"> </a><a name=\"hcmii-exa-test-data-patient-14-onko-histologie-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-histologie-icdo3\">MII PR Onkologie Histologie ICD-O-3</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 59847-4}\">Histology and Behavior ICD-O-3 Cancer</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-patient-14.html\">Hartmut Brenneke (official) Male, DoB: 1966-02-27 ( Medical record number)</a></p><p><b>focus</b>: <a href=\"Condition-mii-exa-test-data-patient-14-onko-diagnose-1.html\">Condition Bösartige Neubildung: Colon sigmoideum</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-patient-14-encounter-1.html\">Encounter: identifier = Visit number; status = finished; class = inpatient encounter (ActCode#IMP); type = Einrichtungskontakt,Normalstationär; serviceType = Allgemeine Chirurgie; period = 2024-03-11 --&gt; 2024-03-22</a></p><p><b>effective</b>: 2024-03-20</p><p><b>value</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/icd-o-3 8140/3}\">Adenokarzinom o.n.A.</span></p><p><b>specimen</b>: <a href=\"Specimen-mii-exa-test-data-patient-14-onko-specimen-1.html\">Specimen: identifier = ONKO-SPEC-014-1; accessionIdentifier = https://www.charite.de/fhir/sid/accession#PATH-2024-08417; status = available; type = Specimen from colon obtained by sigmoidectomy</a></p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "59847-4",
+          "display" : "Histology and Behavior ICD-O-3 Cancer"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-patient-14"
+      },
+      "focus" : [{
+        "reference" : "Condition/mii-exa-test-data-patient-14-onko-diagnose-1"
+      }],
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-patient-14-encounter-1"
+      },
+      "effectiveDateTime" : "2024-03-20",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
+          "code" : "8140/3",
+          "display" : "Adenokarzinom o.n.A."
+        }]
+      },
+      "specimen" : {
+        "reference" : "Specimen/mii-exa-test-data-patient-14-onko-specimen-1"
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-patient-14-onko-histologie-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-14-onko-grading-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-patient-14-onko-grading-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-grading"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "en",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-patient-14-onko-grading-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-patient-14-onko-grading-1</b></p><a name=\"mii-exa-test-data-patient-14-onko-grading-1\"> </a><a name=\"hcmii-exa-test-data-patient-14-onko-grading-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-grading\">MII PR Onkologie Grading</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 33732-9}\">Histology grade [Identifier] in Cancer specimen</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-patient-14.html\">Hartmut Brenneke (official) Male, DoB: 1966-02-27 ( Medical record number)</a></p><p><b>focus</b>: <a href=\"Condition-mii-exa-test-data-patient-14-onko-diagnose-1.html\">Condition Bösartige Neubildung: Colon sigmoideum</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-patient-14-encounter-1.html\">Encounter: identifier = Visit number; status = finished; class = inpatient encounter (ActCode#IMP); type = Einrichtungskontakt,Normalstationär; serviceType = Allgemeine Chirurgie; period = 2024-03-11 --&gt; 2024-03-22</a></p><p><b>effective</b>: 2024-03-20</p><p><b>value</b>: <span title=\"Codes:{https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-grading 2}\">mäßig differenziert</span></p><p><b>specimen</b>: <a href=\"Specimen-mii-exa-test-data-patient-14-onko-specimen-1.html\">Specimen: identifier = ONKO-SPEC-014-1; accessionIdentifier = https://www.charite.de/fhir/sid/accession#PATH-2024-08417; status = available; type = Specimen from colon obtained by sigmoidectomy</a></p></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "laboratory"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "33732-9"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-patient-14"
+      },
+      "focus" : [{
+        "reference" : "Condition/mii-exa-test-data-patient-14-onko-diagnose-1"
+      }],
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-patient-14-encounter-1"
+      },
+      "effectiveDateTime" : "2024-03-20",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-grading",
+          "code" : "2",
+          "display" : "mäßig differenziert"
+        }]
+      },
+      "specimen" : {
+        "reference" : "Specimen/mii-exa-test-data-patient-14-onko-specimen-1"
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-patient-14-onko-grading-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-14-onko-tnm-t",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-patient-14-onko-tnm-t",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-tnm-t-kategorie"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "en",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-patient-14-onko-tnm-t\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-patient-14-onko-tnm-t</b></p><a name=\"mii-exa-test-data-patient-14-onko-tnm-t\"> </a><a name=\"hcmii-exa-test-data-patient-14-onko-tnm-t\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-tnm-t-kategorie\">MII PR Onkologie TNM T-Kategorie</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 384625004}\">pT category</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-patient-14.html\">Hartmut Brenneke (official) Male, DoB: 1966-02-27 ( Medical record number)</a></p><p><b>focus</b>: <a href=\"Condition-mii-exa-test-data-patient-14-onko-diagnose-1.html\">Condition Bösartige Neubildung: Colon sigmoideum</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-patient-14-encounter-1.html\">Encounter: identifier = Visit number; status = finished; class = inpatient encounter (ActCode#IMP); type = Einrichtungskontakt,Normalstationär; serviceType = Allgemeine Chirurgie; period = 2024-03-11 --&gt; 2024-03-22</a></p><p><b>effective</b>: 2024-03-20</p><p><b>value</b>: <span title=\"Codes:{https://www.uicc.org/resources/tnm T3}\">T3</span></p><p><b>method</b>: <span title=\"Codes:{https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-tnm-version 8}\">8. Auflage</span></p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "extension" : [{
+          "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-tnm-cp-praefix",
+          "valueCodeableConcept" : {
+            "coding" : [{
+              "system" : "https://www.uicc.org/resources/tnm",
+              "code" : "p",
+              "display" : "p"
+            }]
+          }
+        }],
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "384625004",
+          "display" : "pT category"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-patient-14"
+      },
+      "focus" : [{
+        "reference" : "Condition/mii-exa-test-data-patient-14-onko-diagnose-1"
+      }],
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-patient-14-encounter-1"
+      },
+      "effectiveDateTime" : "2024-03-20",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "https://www.uicc.org/resources/tnm",
+          "code" : "T3"
+        }]
+      },
+      "method" : {
+        "coding" : [{
+          "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-tnm-version",
+          "code" : "8",
+          "display" : "8. Auflage"
+        }]
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-patient-14-onko-tnm-t"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-14-onko-tnm-n",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-patient-14-onko-tnm-n",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-tnm-n-kategorie"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "en",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-patient-14-onko-tnm-n\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-patient-14-onko-tnm-n</b></p><a name=\"mii-exa-test-data-patient-14-onko-tnm-n\"> </a><a name=\"hcmii-exa-test-data-patient-14-onko-tnm-n\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-tnm-n-kategorie\">MII PR Onkologie TNM N-Kategorie</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 371494008}\">pN category (observable entity)</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-patient-14.html\">Hartmut Brenneke (official) Male, DoB: 1966-02-27 ( Medical record number)</a></p><p><b>focus</b>: <a href=\"Condition-mii-exa-test-data-patient-14-onko-diagnose-1.html\">Condition Bösartige Neubildung: Colon sigmoideum</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-patient-14-encounter-1.html\">Encounter: identifier = Visit number; status = finished; class = inpatient encounter (ActCode#IMP); type = Einrichtungskontakt,Normalstationär; serviceType = Allgemeine Chirurgie; period = 2024-03-11 --&gt; 2024-03-22</a></p><p><b>effective</b>: 2024-03-20</p><p><b>value</b>: <span title=\"Codes:{https://www.uicc.org/resources/tnm N2}\">N2</span></p><p><b>method</b>: <span title=\"Codes:{https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-tnm-version 8}\">8. Auflage</span></p><p><b>hasMember</b>: </p><ul><li><a href=\"Observation-mii-exa-test-data-patient-14-onko-lk-befallen.html\">Observation Regional lymph nodes positive [#] Specimen</a></li><li><a href=\"Observation-mii-exa-test-data-patient-14-onko-lk-untersucht.html\">Observation Regional lymph nodes examined [#] Specimen</a></li></ul></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "extension" : [{
+          "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-tnm-cp-praefix",
+          "valueCodeableConcept" : {
+            "coding" : [{
+              "system" : "https://www.uicc.org/resources/tnm",
+              "code" : "p",
+              "display" : "p"
+            }]
+          }
+        }],
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "371494008",
+          "display" : "pN category (observable entity)"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-patient-14"
+      },
+      "focus" : [{
+        "reference" : "Condition/mii-exa-test-data-patient-14-onko-diagnose-1"
+      }],
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-patient-14-encounter-1"
+      },
+      "effectiveDateTime" : "2024-03-20",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "https://www.uicc.org/resources/tnm",
+          "code" : "N2"
+        }]
+      },
+      "method" : {
+        "coding" : [{
+          "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-tnm-version",
+          "code" : "8",
+          "display" : "8. Auflage"
+        }]
+      },
+      "hasMember" : [{
+        "reference" : "Observation/mii-exa-test-data-patient-14-onko-lk-befallen"
+      },
+      {
+        "reference" : "Observation/mii-exa-test-data-patient-14-onko-lk-untersucht"
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-patient-14-onko-tnm-n"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-14-onko-tnm-m",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-patient-14-onko-tnm-m",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-tnm-m-kategorie"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "en",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-patient-14-onko-tnm-m\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-patient-14-onko-tnm-m</b></p><a name=\"mii-exa-test-data-patient-14-onko-tnm-m\"> </a><a name=\"hcmii-exa-test-data-patient-14-onko-tnm-m\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-tnm-m-kategorie\">MII PR Onkologie TNM M-Kategorie</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 371497001}\">pM category</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-patient-14.html\">Hartmut Brenneke (official) Male, DoB: 1966-02-27 ( Medical record number)</a></p><p><b>focus</b>: <a href=\"Condition-mii-exa-test-data-patient-14-onko-diagnose-1.html\">Condition Bösartige Neubildung: Colon sigmoideum</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-patient-14-encounter-1.html\">Encounter: identifier = Visit number; status = finished; class = inpatient encounter (ActCode#IMP); type = Einrichtungskontakt,Normalstationär; serviceType = Allgemeine Chirurgie; period = 2024-03-11 --&gt; 2024-03-22</a></p><p><b>effective</b>: 2024-03-20</p><p><b>value</b>: <span title=\"Codes:{https://www.uicc.org/resources/tnm M1}\">M1</span></p><p><b>method</b>: <span title=\"Codes:{https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-tnm-version 8}\">8. Auflage</span></p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "extension" : [{
+          "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-tnm-cp-praefix",
+          "valueCodeableConcept" : {
+            "coding" : [{
+              "system" : "https://www.uicc.org/resources/tnm",
+              "code" : "p",
+              "display" : "p"
+            }]
+          }
+        }],
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "371497001",
+          "display" : "pM category"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-patient-14"
+      },
+      "focus" : [{
+        "reference" : "Condition/mii-exa-test-data-patient-14-onko-diagnose-1"
+      }],
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-patient-14-encounter-1"
+      },
+      "effectiveDateTime" : "2024-03-20",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "https://www.uicc.org/resources/tnm",
+          "code" : "M1"
+        }]
+      },
+      "method" : {
+        "coding" : [{
+          "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-tnm-version",
+          "code" : "8",
+          "display" : "8. Auflage"
+        }]
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-patient-14-onko-tnm-m"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-14-onko-lk-untersucht",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-patient-14-onko-lk-untersucht",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-anzahl-untersuchte-lymphknoten"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "en",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-patient-14-onko-lk-untersucht\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-patient-14-onko-lk-untersucht</b></p><a name=\"mii-exa-test-data-patient-14-onko-lk-untersucht\"> </a><a name=\"hcmii-exa-test-data-patient-14-onko-lk-untersucht\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-anzahl-untersuchte-lymphknoten\">MII PR Onkologie Anzahl der untersuchten Lymphknoten</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 21894-1}, {http://snomed.info/sct 444025001}\">Regional lymph nodes examined [#] Specimen</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-patient-14.html\">Hartmut Brenneke (official) Male, DoB: 1966-02-27 ( Medical record number)</a></p><p><b>focus</b>: <a href=\"Condition-mii-exa-test-data-patient-14-onko-diagnose-1.html\">Condition Bösartige Neubildung: Colon sigmoideum</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-patient-14-encounter-1.html\">Encounter: identifier = Visit number; status = finished; class = inpatient encounter (ActCode#IMP); type = Einrichtungskontakt,Normalstationär; serviceType = Allgemeine Chirurgie; period = 2024-03-11 --&gt; 2024-03-22</a></p><p><b>effective</b>: 2024-03-20</p><p><b>value</b>: 21 1<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code1 = '1')</span></p><p><b>specimen</b>: <a href=\"Specimen-mii-exa-test-data-patient-14-onko-specimen-1.html\">Specimen: identifier = ONKO-SPEC-014-1; accessionIdentifier = https://www.charite.de/fhir/sid/accession#PATH-2024-08417; status = available; type = Specimen from colon obtained by sigmoidectomy</a></p></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "laboratory"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "21894-1",
+          "display" : "Regional lymph nodes examined [#] Specimen"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "444025001",
+          "display" : "Number of lymph nodes examined"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-patient-14"
+      },
+      "focus" : [{
+        "reference" : "Condition/mii-exa-test-data-patient-14-onko-diagnose-1"
+      }],
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-patient-14-encounter-1"
+      },
+      "effectiveDateTime" : "2024-03-20",
+      "valueQuantity" : {
+        "value" : 21,
+        "unit" : "1",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "1"
+      },
+      "specimen" : {
+        "reference" : "Specimen/mii-exa-test-data-patient-14-onko-specimen-1"
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-patient-14-onko-lk-untersucht"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-14-onko-lk-befallen",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-patient-14-onko-lk-befallen",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-anzahl-befallene-lymphknoten"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "en",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-patient-14-onko-lk-befallen\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-patient-14-onko-lk-befallen</b></p><a name=\"mii-exa-test-data-patient-14-onko-lk-befallen\"> </a><a name=\"hcmii-exa-test-data-patient-14-onko-lk-befallen\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-anzahl-befallene-lymphknoten\">MII PR Onkologie Anzahl der befallenen Lymphknoten</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 21893-3}, {http://snomed.info/sct 443527007}\">Regional lymph nodes positive [#] Specimen</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-patient-14.html\">Hartmut Brenneke (official) Male, DoB: 1966-02-27 ( Medical record number)</a></p><p><b>focus</b>: <a href=\"Condition-mii-exa-test-data-patient-14-onko-diagnose-1.html\">Condition Bösartige Neubildung: Colon sigmoideum</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-patient-14-encounter-1.html\">Encounter: identifier = Visit number; status = finished; class = inpatient encounter (ActCode#IMP); type = Einrichtungskontakt,Normalstationär; serviceType = Allgemeine Chirurgie; period = 2024-03-11 --&gt; 2024-03-22</a></p><p><b>effective</b>: 2024-03-20</p><p><b>value</b>: 7 1<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code1 = '1')</span></p><p><b>specimen</b>: <a href=\"Specimen-mii-exa-test-data-patient-14-onko-specimen-1.html\">Specimen: identifier = ONKO-SPEC-014-1; accessionIdentifier = https://www.charite.de/fhir/sid/accession#PATH-2024-08417; status = available; type = Specimen from colon obtained by sigmoidectomy</a></p></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "laboratory"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "21893-3",
+          "display" : "Regional lymph nodes positive [#] Specimen"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "443527007",
+          "display" : "Number of lymph nodes containing metastatic neoplasm"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-patient-14"
+      },
+      "focus" : [{
+        "reference" : "Condition/mii-exa-test-data-patient-14-onko-diagnose-1"
+      }],
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-patient-14-encounter-1"
+      },
+      "effectiveDateTime" : "2024-03-20",
+      "valueQuantity" : {
+        "value" : 7,
+        "unit" : "1",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "1"
+      },
+      "specimen" : {
+        "reference" : "Specimen/mii-exa-test-data-patient-14-onko-specimen-1"
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-patient-14-onko-lk-befallen"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-14-onko-fernmetastasen-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-patient-14-onko-fernmetastasen-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-fernmetastasen"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "en",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-patient-14-onko-fernmetastasen-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-patient-14-onko-fernmetastasen-1</b></p><a name=\"mii-exa-test-data-patient-14-onko-fernmetastasen-1\"> </a><a name=\"hcmii-exa-test-data-patient-14-onko-fernmetastasen-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-fernmetastasen\">MII PR Onkologie Fernmetastasen</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 385421009}\">Site of distant metastasis</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-patient-14.html\">Hartmut Brenneke (official) Male, DoB: 1966-02-27 ( Medical record number)</a></p><p><b>focus</b>: <a href=\"Condition-mii-exa-test-data-patient-14-onko-diagnose-1.html\">Condition Bösartige Neubildung: Colon sigmoideum</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-patient-14-encounter-1.html\">Encounter: identifier = Visit number; status = finished; class = inpatient encounter (ActCode#IMP); type = Einrichtungskontakt,Normalstationär; serviceType = Allgemeine Chirurgie; period = 2024-03-11 --&gt; 2024-03-22</a></p><p><b>effective</b>: 2024-03-08</p><p><b>value</b>: <span title=\"Codes:{https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-fernmetastasen HEP}\">Leber</span></p><p><b>bodySite</b>: <span title=\"Codes:{http://snomed.info/sct 10200004}\">Liver structure (body structure)</span></p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "385421009",
+          "display" : "Site of distant metastasis"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-patient-14"
+      },
+      "focus" : [{
+        "reference" : "Condition/mii-exa-test-data-patient-14-onko-diagnose-1"
+      }],
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-patient-14-encounter-1"
+      },
+      "effectiveDateTime" : "2024-03-08",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-fernmetastasen",
+          "code" : "HEP",
+          "display" : "Leber"
+        }]
+      },
+      "bodySite" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "10200004",
+          "display" : "Liver structure (body structure)"
+        }]
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-patient-14-onko-fernmetastasen-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-14-onko-ecog-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-patient-14-onko-ecog-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-allgemeiner-leistungszustand-ecog"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "en",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-patient-14-onko-ecog-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-patient-14-onko-ecog-1</b></p><a name=\"mii-exa-test-data-patient-14-onko-ecog-1\"> </a><a name=\"hcmii-exa-test-data-patient-14-onko-ecog-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-allgemeiner-leistungszustand-ecog\">MII PR Onkologie Allgemeiner Leistungszustand ECOG</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 423740007}, {http://loinc.org 89262-0}\">ECOG performance status</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-patient-14.html\">Hartmut Brenneke (official) Male, DoB: 1966-02-27 ( Medical record number)</a></p><p><b>focus</b>: <a href=\"Condition-mii-exa-test-data-patient-14-onko-diagnose-1.html\">Condition Bösartige Neubildung: Colon sigmoideum</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-patient-14-encounter-2.html\">Encounter: identifier = Visit number; status = finished; class = ambulatory (ActCode#AMB); type = Einrichtungskontakt,Untersuchung und Behandlung; serviceType = Hämatologie und internistische Onkologie; period = 2024-05-02 08:00:00+0200 --&gt; 2024-05-02 13:00:00+0200</a></p><p><b>effective</b>: 2024-04-25</p><p><b>value</b>: <span title=\"Codes:{https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-allgemeiner-leistungszustand-ecog 1}, {http://loinc.org LA9623-5}\">Einschränkung bei körperlicher Anstrengung, aber gehfähig; leichte körperliche Arbeit bzw. Arbeit im Sitzen (z. B. leichte Hausarbeit oder Büroarbeit) möglich (70 - 80 % nach Karnofsky)</span></p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "423740007",
+          "display" : "ECOG performance status"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "89262-0",
+          "display" : "Physical performance [ECOG]"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-patient-14"
+      },
+      "focus" : [{
+        "reference" : "Condition/mii-exa-test-data-patient-14-onko-diagnose-1"
+      }],
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-patient-14-encounter-2"
+      },
+      "effectiveDateTime" : "2024-04-25",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-allgemeiner-leistungszustand-ecog",
+          "code" : "1",
+          "display" : "Einschränkung bei körperlicher Anstrengung, aber gehfähig; leichte körperliche Arbeit bzw. Arbeit im Sitzen (z. B. leichte Hausarbeit oder Büroarbeit) möglich (70 - 80 % nach Karnofsky)"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "LA9623-5",
+          "display" : "Restricted in physically strenuous activity but ambulatory and able to carry out work of a light or sedentary nature, e.g., light house work, office work"
+        }]
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-patient-14-onko-ecog-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/CarePlan/mii-exa-test-data-patient-14-onko-tumorkonferenz-1",
+    "resource" : {
+      "resourceType" : "CarePlan",
+      "id" : "mii-exa-test-data-patient-14-onko-tumorkonferenz-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-tumorkonferenz"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "en",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"CarePlan_mii-exa-test-data-patient-14-onko-tumorkonferenz-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: CarePlan mii-exa-test-data-patient-14-onko-tumorkonferenz-1</b></p><a name=\"mii-exa-test-data-patient-14-onko-tumorkonferenz-1\"> </a><a name=\"hcmii-exa-test-data-patient-14-onko-tumorkonferenz-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-tumorkonferenz\">MII PR Onkologie Tumorkonferenz</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>identifier</b>: TK-2024-014</p><p><b>status</b>: Completed</p><p><b>intent</b>: Plan</p><p><b>category</b>: <span title=\"Codes:{https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-therapieplanung-typ praeth}\">prätherapeutische Tumorkonferenz (Festlegung der Therapiestrategie)</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-patient-14.html\">Hartmut Brenneke (official) Male, DoB: 1966-02-27 ( Medical record number)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-patient-14-encounter-1.html\">Encounter: identifier = Visit number; status = finished; class = inpatient encounter (ActCode#IMP); type = Einrichtungskontakt,Normalstationär; serviceType = Allgemeine Chirurgie; period = 2024-03-11 --&gt; 2024-03-22</a></p><p><b>created</b>: 2024-03-26</p><p><b>addresses</b>: <a href=\"Condition-mii-exa-test-data-patient-14-onko-diagnose-1.html\">Condition Bösartige Neubildung: Colon sigmoideum</a></p><p><b>supportingInfo</b>: <a href=\"DiagnosticReport-mii-exa-test-data-patient-14-onko-befund-1.html\">Diagnostic Report for 'Pathology report Cancer Narrative' for '-&gt;Hartmut Brenneke (official) Male, DoB: 1966-02-27 ( Medical record number)'</a></p><blockquote><p><b>activity</b></p><h3>Details</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Status</b></td><td><b>StatusReason</b></td><td><b>Description</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-therapie-typ CH}\">Chemotherapie</span></td><td>Cancelled</td><td><span title=\"Codes:{https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-therapieabweichung J}\">ja</span></td><td>Standard-Erstlinienchemotherapie zurueckgestellt; wegen MLH1/PMS2-Verlust zunaechst Molekulardiagnostik und Vorstellung im Molekularen Tumorboard.</td></tr></table></blockquote></div>"
+      },
+      "identifier" : [{
+        "value" : "TK-2024-014"
+      }],
+      "status" : "completed",
+      "intent" : "plan",
+      "category" : [{
+        "coding" : [{
+          "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-therapieplanung-typ",
+          "code" : "praeth",
+          "display" : "prätherapeutische Tumorkonferenz (Festlegung der Therapiestrategie)"
+        }]
+      }],
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-patient-14"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-patient-14-encounter-1"
+      },
+      "created" : "2024-03-26",
+      "addresses" : [{
+        "reference" : "Condition/mii-exa-test-data-patient-14-onko-diagnose-1"
+      }],
+      "supportingInfo" : [{
+        "reference" : "DiagnosticReport/mii-exa-test-data-patient-14-onko-befund-1"
+      }],
+      "activity" : [{
+        "detail" : {
+          "code" : {
+            "coding" : [{
+              "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-therapie-typ",
+              "code" : "CH",
+              "display" : "Chemotherapie"
+            }]
+          },
+          "status" : "cancelled",
+          "statusReason" : {
+            "coding" : [{
+              "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-therapieabweichung",
+              "code" : "J",
+              "display" : "ja"
+            }]
+          },
+          "description" : "Standard-Erstlinienchemotherapie zurueckgestellt; wegen MLH1/PMS2-Verlust zunaechst Molekulardiagnostik und Vorstellung im Molekularen Tumorboard."
+        }
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "CarePlan/mii-exa-test-data-patient-14-onko-tumorkonferenz-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Procedure/mii-exa-test-data-patient-14-onko-systemtherapie-1",
+    "resource" : {
+      "resourceType" : "Procedure",
+      "id" : "mii-exa-test-data-patient-14-onko-systemtherapie-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-systemische-therapie"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "en",
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Procedure_mii-exa-test-data-patient-14-onko-systemtherapie-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Procedure mii-exa-test-data-patient-14-onko-systemtherapie-1</b></p><a name=\"mii-exa-test-data-patient-14-onko-systemtherapie-1\"> </a><a name=\"hcmii-exa-test-data-patient-14-onko-systemtherapie-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-systemische-therapie\">MII PR Onkologie Systemische Therapie</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>MII EX Onko Systemische Therapie Intention</b>: <span title=\"Codes:{https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-intention P}\">palliativ</span></p><p><b>MII EX Onko Systemische Therapie Stellung zur OP</b>: <span title=\"Codes:{https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-therapie-stellungzurop A}\">adjuvant</span></p><p><b>ExtensionProzedurDokumentationsdatum</b>: 2024-05-02</p><p><b>MII EX Prozedur Durchführungsabsicht</b>: <a href=\"http://snomed.info/id/262202000\">SNOMED CT: 262202000</a> (Therapeutic)</p><p><b>basedOn</b>: <a href=\"CarePlan-mii-exa-test-data-patient-14-mtb-therapieplan-1.html\">CarePlan: status = active; intent = plan; category = prätherapeutische Tumorkonferenz (Festlegung der Therapiestrategie); description = MTB-Beschluss: Erstlinie Pembrolizumab bei MSI-high metastasiertem Kolonkarzinom anstelle der Standard-Chemotherapie.; created = 2024-04-18</a></p><p><b>status</b>: In Progress</p><p><b>category</b>: <span title=\"Codes:{http://snomed.info/sct 18629005}\">Administration of drug or medicament</span></p><p><b>code</b>: <span title=\"Codes:{https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-therapie-typ IM}, {http://fhir.de/CodeSystem/bfarm/ops 8-54}\">Immun-/Antikörpertherapie</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-patient-14.html\">Hartmut Brenneke (official) Male, DoB: 1966-02-27 ( Medical record number)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-patient-14-encounter-2.html\">Encounter: identifier = Visit number; status = finished; class = ambulatory (ActCode#AMB); type = Einrichtungskontakt,Untersuchung und Behandlung; serviceType = Hämatologie und internistische Onkologie; period = 2024-05-02 08:00:00+0200 --&gt; 2024-05-02 13:00:00+0200</a></p><p><b>performed</b>: 2024-05-02 --&gt; (ongoing)</p><p><b>reasonReference</b>: <a href=\"Condition-mii-exa-test-data-patient-14-onko-diagnose-1.html\">Condition Bösartige Neubildung: Colon sigmoideum</a></p><p><b>bodySite</b>: <span title=\"Codes:{http://snomed.info/sct 60184004}\">Sigmoid colon structure (body structure)</span></p></div>"
+      },
+      "extension" : [{
+        "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-systemische-therapie-intention",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-intention",
+            "code" : "P",
+            "display" : "palliativ"
+          }],
+          "text" : "palliativ"
+        }
+      },
+      {
+        "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-systemische-therapie-stellungzurop",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-therapie-stellungzurop",
+            "code" : "A",
+            "display" : "adjuvant"
+          }],
+          "text" : "adjuvant"
+        }
+      },
+      {
+        "url" : "http://fhir.de/StructureDefinition/ProzedurDokumentationsdatum",
+        "valueDateTime" : "2024-05-02"
+      },
+      {
+        "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Durchfuehrungsabsicht",
+        "valueCoding" : {
+          "system" : "http://snomed.info/sct",
+          "code" : "262202000",
+          "display" : "Therapeutic"
+        }
+      }],
+      "basedOn" : [{
+        "reference" : "CarePlan/mii-exa-test-data-patient-14-mtb-therapieplan-1"
+      }],
+      "status" : "in-progress",
+      "category" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "18629005",
+          "display" : "Administration of drug or medicament"
+        }]
+      },
+      "code" : {
+        "coding" : [{
+          "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-therapie-typ",
+          "code" : "IM",
+          "display" : "Immun-/Antikörpertherapie"
+        },
+        {
+          "system" : "http://fhir.de/CodeSystem/bfarm/ops",
+          "version" : "2024",
+          "code" : "8-54",
+          "display" : "Zytostatische Chemotherapie, Immuntherapie und antiretrovirale Therapie"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-patient-14"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-patient-14-encounter-2"
+      },
+      "performedPeriod" : {
+        "start" : "2024-05-02"
+      },
+      "reasonReference" : [{
+        "reference" : "Condition/mii-exa-test-data-patient-14-onko-diagnose-1"
+      }],
+      "bodySite" : [{
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "60184004",
+          "display" : "Sigmoid colon structure (body structure)"
+        }]
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Procedure/mii-exa-test-data-patient-14-onko-systemtherapie-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-14-onko-verlauf-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-patient-14-onko-verlauf-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-verlauf"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "en",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-patient-14-onko-verlauf-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-patient-14-onko-verlauf-1</b></p><a name=\"mii-exa-test-data-patient-14-onko-verlauf-1\"> </a><a name=\"hcmii-exa-test-data-patient-14-onko-verlauf-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-verlauf\">MII PR Onkologie Verlauf</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>identifier</b>: VERLAUF-014-1</p><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 396432002}\">Status of regression of tumor (observable entity)</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-patient-14.html\">Hartmut Brenneke (official) Male, DoB: 1966-02-27 ( Medical record number)</a></p><p><b>focus</b>: <a href=\"Condition-mii-exa-test-data-patient-14-onko-diagnose-1.html\">Condition Bösartige Neubildung: Colon sigmoideum</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-patient-14-encounter-2.html\">Encounter: identifier = Visit number; status = finished; class = ambulatory (ActCode#AMB); type = Einrichtungskontakt,Untersuchung und Behandlung; serviceType = Hämatologie und internistische Onkologie; period = 2024-05-02 08:00:00+0200 --&gt; 2024-05-02 13:00:00+0200</a></p><p><b>effective</b>: 2024-08-14</p><p><b>value</b>: <span title=\"Codes:{https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-verlauf-gesamtbeurteilung T}\">Teilremission (partial remission, PR)</span></p><p><b>note</b>: </p><blockquote><div><p>Lebermetastasen im Re-Staging-CT um 48 Prozent regredient (RECIST 1.1: partielle Remission). Ansprechen unter Checkpoint-Inhibition bei MSI-high wie erwartet.</p>\n</div></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 445200009}\">Status of residual neoplasm (observable entity)</span></p><p><b>value</b>: <span title=\"Codes:{https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-verlauf-primaertumor K}\">kein Tumor nachweisbar</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 399608002}\">Status of distant metastasis (observable entity)</span></p><p><b>value</b>: <span title=\"Codes:{https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-verlauf-fernmetastasen T}\">Fernmetastasen Residuen</span></p></blockquote></div>"
+      },
+      "identifier" : [{
+        "value" : "VERLAUF-014-1"
+      }],
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "396432002",
+          "display" : "Status of regression of tumor (observable entity)"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-patient-14"
+      },
+      "focus" : [{
+        "reference" : "Condition/mii-exa-test-data-patient-14-onko-diagnose-1"
+      }],
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-patient-14-encounter-2"
+      },
+      "effectiveDateTime" : "2024-08-14",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-verlauf-gesamtbeurteilung",
+          "code" : "T",
+          "display" : "Teilremission (partial remission, PR)"
+        }]
+      },
+      "note" : [{
+        "text" : "Lebermetastasen im Re-Staging-CT um 48 Prozent regredient (RECIST 1.1: partielle Remission). Ansprechen unter Checkpoint-Inhibition bei MSI-high wie erwartet."
+      }],
+      "component" : [{
+        "code" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "445200009",
+            "display" : "Status of residual neoplasm (observable entity)"
+          }]
+        },
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-verlauf-primaertumor",
+            "code" : "K",
+            "display" : "kein Tumor nachweisbar"
+          }]
+        }
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "399608002",
+            "display" : "Status of distant metastasis (observable entity)"
+          }]
+        },
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-verlauf-fernmetastasen",
+            "code" : "T",
+            "display" : "Fernmetastasen Residuen"
+          }]
+        }
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-patient-14-onko-verlauf-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/ClinicalImpression/mii-exa-test-data-patient-14-mtb-episode-1",
+    "resource" : {
+      "resourceType" : "ClinicalImpression",
+      "id" : "mii-exa-test-data-patient-14-mtb-episode-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-behandlungsepisode"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "en",
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"ClinicalImpression_mii-exa-test-data-patient-14-mtb-episode-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: ClinicalImpression mii-exa-test-data-patient-14-mtb-episode-1</b></p><a name=\"mii-exa-test-data-patient-14-mtb-episode-1\"> </a><a name=\"hcmii-exa-test-data-patient-14-mtb-episode-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-behandlungsepisode\">MII PR MTB Behandlungsepisode</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>MII EX MTB Leitlinienbehandlung Status</b>: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/CodeSystem/mii-cs-mtb-leitlinienbehandlung-status#mii-cs-mtb-leitlinienbehandlung-status-non-exhausted\">MII CS Leitlinienbehandlung Status: non-exhausted</a> (Leitlinien nicht ausgeschöpft)</p><p><b>status</b>: Completed</p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-patient-14.html\">Hartmut Brenneke (official) Male, DoB: 1966-02-27 ( Medical record number)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-patient-14-encounter-2.html\">Encounter: identifier = Visit number; status = finished; class = ambulatory (ActCode#AMB); type = Einrichtungskontakt,Untersuchung und Behandlung; serviceType = Hämatologie und internistische Onkologie; period = 2024-05-02 08:00:00+0200 --&gt; 2024-05-02 13:00:00+0200</a></p><p><b>effective</b>: 2024-03-26 --&gt; 2024-04-18</p><p><b>problem</b>: <a href=\"Condition-mii-exa-test-data-patient-14-onko-diagnose-1.html\">Condition Bösartige Neubildung: Colon sigmoideum</a></p><blockquote><p><b>investigation</b></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 106221001}\">Genetic finding</span></p><p><b>item</b>: <a href=\"DiagnosticReport-mii-exa-test-data-patient-14-mtb-ngs-bericht-1.html\">Diagnostic Report for 'Genetic analysis report' for '-&gt;Hartmut Brenneke (official) Male, DoB: 1966-02-27 ( Medical record number)'</a></p></blockquote><blockquote><p><b>investigation</b></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 424122007}\">ECOG performance status finding</span></p><p><b>item</b>: <a href=\"Observation-mii-exa-test-data-patient-14-onko-ecog-1.html\">Observation ECOG performance status</a></p></blockquote><p><b>supportingInfo</b>: <a href=\"CarePlan-mii-exa-test-data-patient-14-mtb-therapieplan-1.html\">CarePlan: status = active; intent = plan; category = prätherapeutische Tumorkonferenz (Festlegung der Therapiestrategie); description = MTB-Beschluss: Erstlinie Pembrolizumab bei MSI-high metastasiertem Kolonkarzinom anstelle der Standard-Chemotherapie.; created = 2024-04-18</a></p></div>"
+      },
+      "extension" : [{
+        "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-ex-mtb-leitlinienbehandlung-status",
+        "valueCoding" : {
+          "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/CodeSystem/mii-cs-mtb-leitlinienbehandlung-status",
+          "code" : "non-exhausted",
+          "display" : "Leitlinien nicht ausgeschöpft"
+        }
+      }],
+      "status" : "completed",
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-patient-14"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-patient-14-encounter-2"
+      },
+      "effectivePeriod" : {
+        "start" : "2024-03-26",
+        "end" : "2024-04-18"
+      },
+      "problem" : [{
+        "reference" : "Condition/mii-exa-test-data-patient-14-onko-diagnose-1"
+      }],
+      "investigation" : [{
+        "code" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "106221001",
+            "display" : "Genetic finding"
+          }]
+        },
+        "item" : [{
+          "reference" : "DiagnosticReport/mii-exa-test-data-patient-14-mtb-ngs-bericht-1"
+        }]
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "424122007",
+            "display" : "ECOG performance status finding"
+          }]
+        },
+        "item" : [{
+          "reference" : "Observation/mii-exa-test-data-patient-14-onko-ecog-1"
+        }]
+      }],
+      "supportingInfo" : [{
+        "reference" : "CarePlan/mii-exa-test-data-patient-14-mtb-therapieplan-1"
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "ClinicalImpression/mii-exa-test-data-patient-14-mtb-episode-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/DiagnosticReport/mii-exa-test-data-patient-14-mtb-ngs-bericht-1",
+    "resource" : {
+      "resourceType" : "DiagnosticReport",
+      "id" : "mii-exa-test-data-patient-14-mtb-ngs-bericht-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-ngs-bericht"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "en",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"DiagnosticReport_mii-exa-test-data-patient-14-mtb-ngs-bericht-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: DiagnosticReport mii-exa-test-data-patient-14-mtb-ngs-bericht-1</b></p><a name=\"mii-exa-test-data-patient-14-mtb-ngs-bericht-1\"> </a><a name=\"hcmii-exa-test-data-patient-14-mtb-ngs-bericht-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-ngs-bericht\">MII PR MTB NGS-Bericht</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><h2><span title=\"Codes:{http://loinc.org 51969-4}\">Genetic analysis report</span> (<span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v2-0074 GE}\">Genetics</span>) </h2><table class=\"grid\"><tr><td>Subject</td><td>Hartmut Brenneke (official) Male, DoB: 1966-02-27 ( Medical record number)</td></tr><tr><td>Relevant Time</td><td>2024-04-09</td></tr><tr><td>Reported</td><td>2024-04-09 15:00:00+0200</td></tr><tr><td>Performer</td><td> <a href=\"Organization-mii-exa-test-data-organization-charite.html\">Organization Charité – Universitätsmedizin Berlin</a></td></tr></table><p><b>Report Details</b></p><table class=\"grid\"><tr><td><b>Code</b></td><td><b>Value</b></td><td><b>Flags</b></td><td><b>Relevant Time</b></td><td><b>Reported</b></td></tr><tr><td><a href=\"Observation-mii-exa-test-data-patient-14-mtb-variante-braf.html\"><span title=\"Codes:{http://loinc.org 69548-6}\">Genetic variant assessment</span></a></td><td><span title=\"Codes:{http://loinc.org LA9633-4}\">Present</span></td><td>Final</td><td/><td/></tr><tr><td><a href=\"Observation-mii-exa-test-data-patient-14-mtb-msi-1.html\"><span title=\"Codes:{http://loinc.org 81695-9}\">Microsatellite instability [Interpretation] in Cancer specimen Qualitative</span></a></td><td>0.42 ratio<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code1 = '1')</span></td><td>Final, <span title=\"Codes:{http://loinc.org LA26203-2}\">MSI-H</span></td><td/><td/></tr><tr><td><a href=\"Observation-mii-exa-test-data-patient-14-mtb-tmb-1.html\"><span title=\"Codes:{http://loinc.org 94076-7}\">Mutations/Megabase [# Ratio] in Tumor</span></a></td><td>41.3 mutations per megabase<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code{Mutations}/1000000{Base} = '{Mutations}/1000000{Base}')</span></td><td>Final, <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation H}\">High</span></td><td/><td/></tr><tr><td><a href=\"Observation-mii-exa-test-data-patient-14-mtb-implikation-1.html\"><span title=\"Codes:{http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs therapeutic-implication}\">Therapeutic Implication</span></a></td><td/><td>Final</td><td>2024-04-18</td><td>2024-04-18 14:00:00+0200</td></tr></table><p>Panel-Sequenzierung (523 Gene): BRAF p.V600E nachgewiesen, Mikrosatelliteninstabilitaet hoch (MSI-H), Tumormutationslast 41,3 Mutationen/Megabase. KRAS und NRAS Wildtyp.</p></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code" : "GE",
+          "display" : "Genetics"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "51969-4",
+          "display" : "Genetic analysis report"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-patient-14"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-patient-14-encounter-2"
+      },
+      "effectiveDateTime" : "2024-04-09",
+      "issued" : "2024-04-09T15:00:00+02:00",
+      "performer" : [{
+        "reference" : "Organization/mii-exa-test-data-organization-charite"
+      }],
+      "specimen" : [{
+        "reference" : "Specimen/mii-exa-test-data-patient-14-onko-specimen-1"
+      }],
+      "result" : [{
+        "reference" : "Observation/mii-exa-test-data-patient-14-mtb-variante-braf"
+      },
+      {
+        "reference" : "Observation/mii-exa-test-data-patient-14-mtb-msi-1"
+      },
+      {
+        "reference" : "Observation/mii-exa-test-data-patient-14-mtb-tmb-1"
+      },
+      {
+        "reference" : "Observation/mii-exa-test-data-patient-14-mtb-implikation-1"
+      }],
+      "conclusion" : "Panel-Sequenzierung (523 Gene): BRAF p.V600E nachgewiesen, Mikrosatelliteninstabilitaet hoch (MSI-H), Tumormutationslast 41,3 Mutationen/Megabase. KRAS und NRAS Wildtyp."
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "DiagnosticReport/mii-exa-test-data-patient-14-mtb-ngs-bericht-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-14-mtb-variante-braf",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-patient-14-mtb-variante-braf",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-einfache-variante"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "en",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-patient-14-mtb-variante-braf\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-patient-14-mtb-variante-braf</b></p><a name=\"mii-exa-test-data-patient-14-mtb-variante-braf\"> </a><a name=\"hcmii-exa-test-data-patient-14-mtb-variante-braf\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-einfache-variante\">MII PR MTB Einfache Variante</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>identifier</b>: <code>https://www.charite.de/fhir/sid/mtb-variante</code>/VAR-BRAF-014</p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span>, <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v2-0074 GE}\">Genetics</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 69548-6}\">Genetic variant assessment</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-patient-14.html\">Hartmut Brenneke (official) Male, DoB: 1966-02-27 ( Medical record number)</a></p><p><b>focus</b>: <a href=\"Condition-mii-exa-test-data-patient-14-onko-diagnose-1.html\">Condition Bösartige Neubildung: Colon sigmoideum</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-patient-14-encounter-2.html\">Encounter: identifier = Visit number; status = finished; class = ambulatory (ActCode#AMB); type = Einrichtungskontakt,Untersuchung und Behandlung; serviceType = Hämatologie und internistische Onkologie; period = 2024-05-02 08:00:00+0200 --&gt; 2024-05-02 13:00:00+0200</a></p><p><b>effective</b>: 2024-04-09</p><p><b>issued</b>: 2024-04-09 15:00:00+0200</p><p><b>value</b>: <span title=\"Codes:{http://loinc.org LA9633-4}\">Present</span></p><p><b>method</b>: <span title=\"Codes:{http://loinc.org LA26398-0}\">Sequencing</span></p><p><b>specimen</b>: <a href=\"Specimen-mii-exa-test-data-patient-14-onko-specimen-1.html\">Specimen: identifier = ONKO-SPEC-014-1; accessionIdentifier = https://www.charite.de/fhir/sid/accession#PATH-2024-08417; status = available; type = Specimen from colon obtained by sigmoidectomy</a></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 48018-6}\">Gene studied [ID]</span></p><p><b>value</b>: <span title=\"Codes:{http://www.genenames.org/geneId HGNC:1097}\">BRAF</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 48005-3}\">Amino acid change (pHGVS)</span></p><p><b>value</b>: <span title=\"Codes:{http://varnomen.hgvs.org NP_004324.2:p.Val600Glu}\">NP_004324.2:p.Val600Glu</span></p></blockquote></div>"
+      },
+      "identifier" : [{
+        "system" : "https://www.charite.de/fhir/sid/mtb-variante",
+        "value" : "VAR-BRAF-014"
+      }],
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "laboratory",
+          "display" : "Laboratory"
+        }]
+      },
+      {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code" : "GE"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "69548-6",
+          "display" : "Genetic variant assessment"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-patient-14"
+      },
+      "focus" : [{
+        "reference" : "Condition/mii-exa-test-data-patient-14-onko-diagnose-1"
+      }],
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-patient-14-encounter-2"
+      },
+      "effectiveDateTime" : "2024-04-09",
+      "issued" : "2024-04-09T15:00:00+02:00",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "LA9633-4",
+          "display" : "Present"
+        }]
+      },
+      "method" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "LA26398-0",
+          "display" : "Sequencing"
+        }]
+      },
+      "specimen" : {
+        "reference" : "Specimen/mii-exa-test-data-patient-14-onko-specimen-1"
+      },
+      "component" : [{
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "48018-6",
+            "display" : "Gene studied [ID]"
+          }]
+        },
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://www.genenames.org/geneId",
+            "code" : "HGNC:1097",
+            "display" : "BRAF"
+          }]
+        }
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "48005-3",
+            "display" : "Amino acid change (pHGVS)"
+          }]
+        },
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://varnomen.hgvs.org",
+            "code" : "NP_004324.2:p.Val600Glu"
+          }]
+        }
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-patient-14-mtb-variante-braf"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-14-mtb-msi-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-patient-14-mtb-msi-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-mikrosatelliteninstabilitaet"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "en",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-patient-14-mtb-msi-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-patient-14-mtb-msi-1</b></p><a name=\"mii-exa-test-data-patient-14-mtb-msi-1\"> </a><a name=\"hcmii-exa-test-data-patient-14-mtb-msi-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-mikrosatelliteninstabilitaet\">MII PR MTB Mikrosatelliteninstabilität</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span>, <span title=\"Codes:{http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs biomarker-category}\">A characterization of a given biomarker observation.</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 81695-9}\">Microsatellite instability [Interpretation] in Cancer specimen Qualitative</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-patient-14.html\">Hartmut Brenneke (official) Male, DoB: 1966-02-27 ( Medical record number)</a></p><p><b>focus</b>: <a href=\"Condition-mii-exa-test-data-patient-14-onko-diagnose-1.html\">Condition Bösartige Neubildung: Colon sigmoideum</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-patient-14-encounter-2.html\">Encounter: identifier = Visit number; status = finished; class = ambulatory (ActCode#AMB); type = Einrichtungskontakt,Untersuchung und Behandlung; serviceType = Hämatologie und internistische Onkologie; period = 2024-05-02 08:00:00+0200 --&gt; 2024-05-02 13:00:00+0200</a></p><p><b>effective</b>: 2024-04-09</p><p><b>issued</b>: 2024-04-09 15:00:00+0200</p><p><b>value</b>: 0.42 ratio<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code1 = '1')</span></p><p><b>interpretation</b>: <span title=\"Codes:{http://loinc.org LA26203-2}\">MSI-H</span></p><p><b>method</b>: <span title=\"Codes:{http://loinc.org LA26398-0}\">Sequencing</span></p><p><b>specimen</b>: <a href=\"Specimen-mii-exa-test-data-patient-14-onko-specimen-1.html\">Specimen: identifier = ONKO-SPEC-014-1; accessionIdentifier = https://www.charite.de/fhir/sid/accession#PATH-2024-08417; status = available; type = Specimen from colon obtained by sigmoidectomy</a></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 48018-6}\">Gene studied [ID]</span></p><p><b>value</b>: <span title=\"Codes:{http://www.genenames.org/geneId HGNC:7127}\">MLH1</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs biomarker-category}\">A characterization of a given biomarker observation.</span></p><p><b>value</b>: <span title=\"Codes:{http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/molecular-biomarker-ontology-cs nucleicAcid}\">nucleic acid category</span></p></blockquote></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "laboratory",
+          "display" : "Laboratory"
+        }]
+      },
+      {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs",
+          "code" : "biomarker-category"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "81695-9",
+          "display" : "Microsatellite instability [Interpretation] in Cancer specimen Qualitative"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-patient-14"
+      },
+      "focus" : [{
+        "reference" : "Condition/mii-exa-test-data-patient-14-onko-diagnose-1"
+      }],
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-patient-14-encounter-2"
+      },
+      "effectiveDateTime" : "2024-04-09",
+      "issued" : "2024-04-09T15:00:00+02:00",
+      "valueQuantity" : {
+        "value" : 0.42,
+        "unit" : "ratio",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "1"
+      },
+      "interpretation" : [{
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "LA26203-2",
+          "display" : "MSI-H"
+        }]
+      }],
+      "method" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "LA26398-0",
+          "display" : "Sequencing"
+        }]
+      },
+      "specimen" : {
+        "reference" : "Specimen/mii-exa-test-data-patient-14-onko-specimen-1"
+      },
+      "component" : [{
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "48018-6"
+          }]
+        },
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://www.genenames.org/geneId",
+            "code" : "HGNC:7127",
+            "display" : "MLH1"
+          }]
+        }
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs",
+            "code" : "biomarker-category"
+          }]
+        },
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/molecular-biomarker-ontology-cs",
+            "code" : "nucleicAcid",
+            "display" : "nucleic acid category"
+          }]
+        }
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-patient-14-mtb-msi-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-14-mtb-tmb-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-patient-14-mtb-tmb-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-mutationslast"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "en",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-patient-14-mtb-tmb-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-patient-14-mtb-tmb-1</b></p><a name=\"mii-exa-test-data-patient-14-mtb-tmb-1\"> </a><a name=\"hcmii-exa-test-data-patient-14-mtb-tmb-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-mutationslast\">MII PR MTB Mutationslast</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span>, <span title=\"Codes:{http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs biomarker-category}\">A characterization of a given biomarker observation.</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 94076-7}\">Mutations/Megabase [# Ratio] in Tumor</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-patient-14.html\">Hartmut Brenneke (official) Male, DoB: 1966-02-27 ( Medical record number)</a></p><p><b>focus</b>: <a href=\"Condition-mii-exa-test-data-patient-14-onko-diagnose-1.html\">Condition Bösartige Neubildung: Colon sigmoideum</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-patient-14-encounter-2.html\">Encounter: identifier = Visit number; status = finished; class = ambulatory (ActCode#AMB); type = Einrichtungskontakt,Untersuchung und Behandlung; serviceType = Hämatologie und internistische Onkologie; period = 2024-05-02 08:00:00+0200 --&gt; 2024-05-02 13:00:00+0200</a></p><p><b>effective</b>: 2024-04-09</p><p><b>issued</b>: 2024-04-09 15:00:00+0200</p><p><b>value</b>: 41.3 mutations per megabase<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code{Mutations}/1000000{Base} = '{Mutations}/1000000{Base}')</span></p><p><b>interpretation</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation H}\">High</span></p><p><b>specimen</b>: <a href=\"Specimen-mii-exa-test-data-patient-14-onko-specimen-1.html\">Specimen: identifier = ONKO-SPEC-014-1; accessionIdentifier = https://www.charite.de/fhir/sid/accession#PATH-2024-08417; status = available; type = Specimen from colon obtained by sigmoidectomy</a></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 48018-6}\">Gene studied [ID]</span></p><p><b>value</b>: <span title=\"Codes:{http://www.genenames.org/geneId HGNC:7127}\">MLH1</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs biomarker-category}\">A characterization of a given biomarker observation.</span></p><p><b>value</b>: <span title=\"Codes:{http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/molecular-biomarker-ontology-cs nucleicAcid}\">nucleic acid category</span></p></blockquote></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "laboratory",
+          "display" : "Laboratory"
+        }]
+      },
+      {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs",
+          "code" : "biomarker-category"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "94076-7",
+          "display" : "Mutations/Megabase [# Ratio] in Tumor"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-patient-14"
+      },
+      "focus" : [{
+        "reference" : "Condition/mii-exa-test-data-patient-14-onko-diagnose-1"
+      }],
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-patient-14-encounter-2"
+      },
+      "effectiveDateTime" : "2024-04-09",
+      "issued" : "2024-04-09T15:00:00+02:00",
+      "valueQuantity" : {
+        "value" : 41.3,
+        "unit" : "mutations per megabase",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "{Mutations}/1000000{Base}"
+      },
+      "interpretation" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code" : "H",
+          "display" : "High"
+        }]
+      }],
+      "specimen" : {
+        "reference" : "Specimen/mii-exa-test-data-patient-14-onko-specimen-1"
+      },
+      "component" : [{
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "48018-6"
+          }]
+        },
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://www.genenames.org/geneId",
+            "code" : "HGNC:7127",
+            "display" : "MLH1"
+          }]
+        }
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs",
+            "code" : "biomarker-category"
+          }]
+        },
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/molecular-biomarker-ontology-cs",
+            "code" : "nucleicAcid",
+            "display" : "nucleic acid category"
+          }]
+        }
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-patient-14-mtb-tmb-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-14-mtb-implikation-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-patient-14-mtb-implikation-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-therapeutische-implikation"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "en",
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_mii-exa-test-data-patient-14-mtb-implikation-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-test-data-patient-14-mtb-implikation-1</b></p><a name=\"mii-exa-test-data-patient-14-mtb-implikation-1\"> </a><a name=\"hcmii-exa-test-data-patient-14-mtb-implikation-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-therapeutische-implikation\">MII PR MTB Therapeutische Implikation</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>MII EX MTB Empfehlung Evidenzgraduierung</b>: <span title=\"Codes:{https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/CodeSystem/mii-cs-mtb-empfehlung-evidenzgrad m1A}\">Predictive value of the biomarker or clinical effectiveness of the corresponding drug in a molecularly stratified cohort was demonstrated in a prospective study or a meta-analysis in the same tumor type.</span></p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span>, <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v2-0074 GE}\">Genetics</span></p><p><b>code</b>: <span title=\"Codes:{http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs therapeutic-implication}\">Therapeutic Implication</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-patient-14.html\">Hartmut Brenneke (official) Male, DoB: 1966-02-27 ( Medical record number)</a></p><p><b>focus</b>: <a href=\"Condition-mii-exa-test-data-patient-14-onko-diagnose-1.html\">Condition Bösartige Neubildung: Colon sigmoideum</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-patient-14-encounter-2.html\">Encounter: identifier = Visit number; status = finished; class = ambulatory (ActCode#AMB); type = Einrichtungskontakt,Untersuchung und Behandlung; serviceType = Hämatologie und internistische Onkologie; period = 2024-05-02 08:00:00+0200 --&gt; 2024-05-02 13:00:00+0200</a></p><p><b>effective</b>: 2024-04-18</p><p><b>issued</b>: 2024-04-18 14:00:00+0200</p><p><b>derivedFrom</b>: </p><ul><li><a href=\"Observation-mii-exa-test-data-patient-14-mtb-msi-1.html\">Observation Microsatellite instability [Interpretation] in Cancer specimen Qualitative</a></li><li><a href=\"Observation-mii-exa-test-data-patient-14-mtb-tmb-1.html\">Observation Mutations/Megabase [# Ratio] in Tumor</a></li></ul><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs conclusion-string}\">Conclusion Text</span></p><p><b>value</b>: MSI-H und TMB &gt; 10 Mut/Mb sagen ein Ansprechen auf PD-1-Checkpoint-Inhibition voraus (Evidenzgrad m1A). Vorrang vor der Standard-Erstlinienchemotherapie.</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 51963-7}\">Medication assessed [ID]</span></p><p><b>value</b>: <span title=\"Codes:{http://fhir.de/CodeSystem/bfarm/atc L01FF02}\">Pembrolizumab</span></p></blockquote></div>"
+      },
+      "extension" : [{
+        "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-ex-mtb-empfehlung-evidenzgraduierung",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/CodeSystem/mii-cs-mtb-empfehlung-evidenzgrad",
+            "code" : "m1A"
+          }]
+        }
+      }],
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "laboratory",
+          "display" : "Laboratory"
+        }]
+      },
+      {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code" : "GE"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs",
+          "code" : "therapeutic-implication",
+          "display" : "Therapeutic Implication"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-patient-14"
+      },
+      "focus" : [{
+        "reference" : "Condition/mii-exa-test-data-patient-14-onko-diagnose-1"
+      }],
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-patient-14-encounter-2"
+      },
+      "effectiveDateTime" : "2024-04-18",
+      "issued" : "2024-04-18T14:00:00+02:00",
+      "derivedFrom" : [{
+        "reference" : "Observation/mii-exa-test-data-patient-14-mtb-msi-1"
+      },
+      {
+        "reference" : "Observation/mii-exa-test-data-patient-14-mtb-tmb-1"
+      }],
+      "component" : [{
+        "code" : {
+          "coding" : [{
+            "system" : "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs",
+            "code" : "conclusion-string"
+          }]
+        },
+        "valueString" : "MSI-H und TMB > 10 Mut/Mb sagen ein Ansprechen auf PD-1-Checkpoint-Inhibition voraus (Evidenzgrad m1A). Vorrang vor der Standard-Erstlinienchemotherapie."
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "51963-7",
+            "display" : "Medication assessed [ID]"
+          }]
+        },
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://fhir.de/CodeSystem/bfarm/atc",
+            "version" : "2024",
+            "code" : "L01FF02",
+            "display" : "Pembrolizumab"
+          }]
+        }
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-patient-14-mtb-implikation-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/CarePlan/mii-exa-test-data-patient-14-mtb-therapieplan-1",
+    "resource" : {
+      "resourceType" : "CarePlan",
+      "id" : "mii-exa-test-data-patient-14-mtb-therapieplan-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-therapieplan"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "en",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"CarePlan_mii-exa-test-data-patient-14-mtb-therapieplan-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: CarePlan mii-exa-test-data-patient-14-mtb-therapieplan-1</b></p><a name=\"mii-exa-test-data-patient-14-mtb-therapieplan-1\"> </a><a name=\"hcmii-exa-test-data-patient-14-mtb-therapieplan-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-therapieplan\">MII PR MTB Therapieplan</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Active</p><p><b>intent</b>: Plan</p><p><b>category</b>: <span title=\"Codes:{https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-therapieplanung-typ praeth}\">prätherapeutische Tumorkonferenz (Festlegung der Therapiestrategie)</span></p><p><b>description</b>: MTB-Beschluss: Erstlinie Pembrolizumab bei MSI-high metastasiertem Kolonkarzinom anstelle der Standard-Chemotherapie.</p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-patient-14.html\">Hartmut Brenneke (official) Male, DoB: 1966-02-27 ( Medical record number)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-patient-14-encounter-2.html\">Encounter: identifier = Visit number; status = finished; class = ambulatory (ActCode#AMB); type = Einrichtungskontakt,Untersuchung und Behandlung; serviceType = Hämatologie und internistische Onkologie; period = 2024-05-02 08:00:00+0200 --&gt; 2024-05-02 13:00:00+0200</a></p><p><b>created</b>: 2024-04-18</p><p><b>addresses</b>: <a href=\"Condition-mii-exa-test-data-patient-14-onko-diagnose-1.html\">Condition Bösartige Neubildung: Colon sigmoideum</a></p><p><b>supportingInfo</b>: <a href=\"ClinicalImpression-mii-exa-test-data-patient-14-mtb-episode-1.html\">ClinicalImpression: extension = Leitlinien nicht ausgeschöpft (MII CS Leitlinienbehandlung Status#non-exhausted); status = completed; effective[x] = 2024-03-26 --&gt; 2024-04-18</a></p><blockquote><p><b>activity</b></p><p><b>reference</b>: <a href=\"MedicationRequest-mii-exa-test-data-patient-14-mtb-empfehlung-1.html\">MedicationRequest: extension = 1,Predictive value of the biomarker or clinical effectiveness of the corresponding drug in a molecularly stratified cohort was demonstrated in a prospective study or a meta-analysis in the same tumor type.,https://pubmed.ncbi.nlm.nih.gov#33264544; status = active; intent = proposal; medication[x] = Pembrolizumab; authoredOn = 2024-04-18; note = Erstlinientherapie. Ansprechkontrolle per CT nach drei Monaten.</a></p></blockquote><blockquote><p><b>activity</b></p><h3>Details</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Status</b></td><td><b>StatusReason</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-therapie-typ CH}\">Chemotherapie</span></td><td>Cancelled</td><td><span title=\"Codes:{https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-therapieabweichung J}\">zugunsten der Immuntherapie zurueckgestellt</span></td></tr></table></blockquote></div>"
+      },
+      "status" : "active",
+      "intent" : "plan",
+      "category" : [{
+        "coding" : [{
+          "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-therapieplanung-typ",
+          "code" : "praeth"
+        }]
+      }],
+      "description" : "MTB-Beschluss: Erstlinie Pembrolizumab bei MSI-high metastasiertem Kolonkarzinom anstelle der Standard-Chemotherapie.",
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-patient-14"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-patient-14-encounter-2"
+      },
+      "created" : "2024-04-18",
+      "addresses" : [{
+        "reference" : "Condition/mii-exa-test-data-patient-14-onko-diagnose-1"
+      }],
+      "supportingInfo" : [{
+        "reference" : "ClinicalImpression/mii-exa-test-data-patient-14-mtb-episode-1"
+      }],
+      "activity" : [{
+        "reference" : {
+          "reference" : "MedicationRequest/mii-exa-test-data-patient-14-mtb-empfehlung-1"
+        }
+      },
+      {
+        "detail" : {
+          "code" : {
+            "coding" : [{
+              "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-therapie-typ",
+              "code" : "CH",
+              "display" : "Chemotherapie"
+            }]
+          },
+          "status" : "cancelled",
+          "statusReason" : {
+            "coding" : [{
+              "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-therapieabweichung",
+              "code" : "J"
+            }],
+            "text" : "zugunsten der Immuntherapie zurueckgestellt"
+          }
+        }
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "CarePlan/mii-exa-test-data-patient-14-mtb-therapieplan-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/MedicationRequest/mii-exa-test-data-patient-14-mtb-empfehlung-1",
+    "resource" : {
+      "resourceType" : "MedicationRequest",
+      "id" : "mii-exa-test-data-patient-14-mtb-empfehlung-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-therapieempfehlung"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "en",
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"MedicationRequest_mii-exa-test-data-patient-14-mtb-empfehlung-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: MedicationRequest mii-exa-test-data-patient-14-mtb-empfehlung-1</b></p><a name=\"mii-exa-test-data-patient-14-mtb-empfehlung-1\"> </a><a name=\"hcmii-exa-test-data-patient-14-mtb-empfehlung-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-therapieempfehlung\">MII PR MTB Therapieempfehlung Systemische Therapie</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>MII EX MTB Empfehlung Priorität</b>: 1</p><p><b>MII EX MTB Empfehlung Evidenzgraduierung</b>: <span title=\"Codes:{https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/CodeSystem/mii-cs-mtb-empfehlung-evidenzgrad m1A}\">Predictive value of the biomarker or clinical effectiveness of the corresponding drug in a molecularly stratified cohort was demonstrated in a prospective study or a meta-analysis in the same tumor type.</span></p><p><b>MII EX MTB Empfehlung Publikation</b>: <code>https://pubmed.ncbi.nlm.nih.gov</code>/33264544</p><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>medication</b>: <span title=\"Codes:{http://fhir.de/CodeSystem/bfarm/atc L01FF02}\">Pembrolizumab 200 mg alle drei Wochen i.v.</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-patient-14.html\">Hartmut Brenneke (official) Male, DoB: 1966-02-27 ( Medical record number)</a></p><p><b>encounter</b>: <a href=\"Encounter-mii-exa-test-data-patient-14-encounter-2.html\">Encounter: identifier = Visit number; status = finished; class = ambulatory (ActCode#AMB); type = Einrichtungskontakt,Untersuchung und Behandlung; serviceType = Hämatologie und internistische Onkologie; period = 2024-05-02 08:00:00+0200 --&gt; 2024-05-02 13:00:00+0200</a></p><p><b>authoredOn</b>: 2024-04-18</p><p><b>reasonReference</b>: </p><ul><li><a href=\"Condition-mii-exa-test-data-patient-14-onko-diagnose-1.html\">Condition Bösartige Neubildung: Colon sigmoideum</a></li><li><a href=\"Observation-mii-exa-test-data-patient-14-mtb-implikation-1.html\">Observation Therapeutic Implication</a></li></ul><p><b>note</b>: </p><blockquote><div><p>Erstlinientherapie. Ansprechkontrolle per CT nach drei Monaten.</p>\n</div></blockquote></div>"
+      },
+      "extension" : [{
+        "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-ex-mtb-empfehlung-prioritaet",
+        "valuePositiveInt" : 1
+      },
+      {
+        "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-ex-mtb-empfehlung-evidenzgraduierung",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/CodeSystem/mii-cs-mtb-empfehlung-evidenzgrad",
+            "code" : "m1A"
+          }]
+        }
+      },
+      {
+        "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-ex-mtb-empfehlung-publikation",
+        "valueIdentifier" : {
+          "system" : "https://pubmed.ncbi.nlm.nih.gov",
+          "value" : "33264544"
+        }
+      }],
+      "status" : "active",
+      "intent" : "proposal",
+      "medicationCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
+          "version" : "2023",
+          "code" : "L01FF02",
+          "display" : "Pembrolizumab"
+        }],
+        "text" : "Pembrolizumab 200 mg alle drei Wochen i.v."
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-patient-14"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-patient-14-encounter-2"
+      },
+      "authoredOn" : "2024-04-18",
+      "reasonReference" : [{
+        "reference" : "Condition/mii-exa-test-data-patient-14-onko-diagnose-1"
+      },
+      {
+        "reference" : "Observation/mii-exa-test-data-patient-14-mtb-implikation-1"
+      }],
+      "note" : [{
+        "text" : "Erstlinientherapie. Ansprechkontrolle per CT nach drei Monaten."
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "MedicationRequest/mii-exa-test-data-patient-14-mtb-empfehlung-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Medication/mii-exa-test-data-medication-pembrolizumab",
+    "resource" : {
+      "resourceType" : "Medication",
+      "id" : "mii-exa-test-data-medication-pembrolizumab",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "en",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Medication_mii-exa-test-data-medication-pembrolizumab\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Medication mii-exa-test-data-medication-pembrolizumab</b></p><a name=\"mii-exa-test-data-medication-pembrolizumab\"> </a><a name=\"hcmii-exa-test-data-medication-pembrolizumab\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication\">MII PR Medikation Medication</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>code</b>: <span title=\"Codes:{http://fhir.de/CodeSystem/bfarm/atc L01FF02}\">Pembrolizumab 100 mg/4 mL</span></p><p><b>form</b>: <span title=\"Codes:{http://standardterms.edqm.eu 50060000}\">Concentrate for solution for infusion</span></p><h3>Ingredients</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Item[x]</b></td><td><b>Strength</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 716125002}\">Pembrolizumab</span></td><td>100 milligram<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span>/4 milliliter<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemL = 'mL')</span></td></tr></table></div>"
+      },
+      "code" : {
+        "coding" : [{
+          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
+          "version" : "2023",
+          "code" : "L01FF02",
+          "display" : "Pembrolizumab"
+        }],
+        "text" : "Pembrolizumab 100 mg/4 mL"
+      },
+      "form" : {
+        "coding" : [{
+          "system" : "http://standardterms.edqm.eu",
+          "code" : "50060000",
+          "display" : "Concentrate for solution for infusion"
+        }]
+      },
+      "ingredient" : [{
+        "itemCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "716125002",
+            "display" : "Pembrolizumab (substance)"
+          }],
+          "text" : "Pembrolizumab"
+        },
+        "strength" : {
+          "numerator" : {
+            "value" : 100,
+            "unit" : "milligram",
+            "system" : "http://unitsofmeasure.org",
+            "code" : "mg"
+          },
+          "denominator" : {
+            "value" : 4,
+            "unit" : "milliliter",
+            "system" : "http://unitsofmeasure.org",
+            "code" : "mL"
+          }
+        }
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Medication/mii-exa-test-data-medication-pembrolizumab"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/MedicationAdministration/mii-exa-test-data-patient-14-medadmin-1",
+    "resource" : {
+      "resourceType" : "MedicationAdministration",
+      "id" : "mii-exa-test-data-patient-14-medadmin-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationAdministration"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "en",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"MedicationAdministration_mii-exa-test-data-patient-14-medadmin-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: MedicationAdministration mii-exa-test-data-patient-14-medadmin-1</b></p><a name=\"mii-exa-test-data-patient-14-medadmin-1\"> </a><a name=\"hcmii-exa-test-data-patient-14-medadmin-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationAdministration\">MII PR Medikation MedicationAdministration</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>identifier</b>: <code>https://www.charite.de/fhir/sid/MedicationAdministrations</code>/MA_0000051</p><p><b>partOf</b>: <a href=\"Procedure-mii-exa-test-data-patient-14-onko-systemtherapie-1.html\">Procedure Immun-/Antikörpertherapie</a></p><p><b>status</b>: Completed</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/medication-admin-category outpatient}\">Outpatient</span></p><p><b>medication</b>: <a href=\"Medication-mii-exa-test-data-medication-pembrolizumab.html\">Medication Pembrolizumab</a></p><p><b>subject</b>: <a href=\"Patient-mii-exa-test-data-patient-14.html\">Hartmut Brenneke (official) Male, DoB: 1966-02-27 ( Medical record number)</a></p><p><b>context</b>: <a href=\"Encounter-mii-exa-test-data-patient-14-encounter-2.html\">Encounter: identifier = Visit number; status = finished; class = ambulatory (ActCode#AMB); type = Einrichtungskontakt,Untersuchung und Behandlung; serviceType = Hämatologie und internistische Onkologie; period = 2024-05-02 08:00:00+0200 --&gt; 2024-05-02 13:00:00+0200</a></p><p><b>effective</b>: 2024-05-02 09:30:00+0200 --&gt; 2024-05-02 10:00:00+0200</p><h3>Performers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Actor</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Practitioner-mii-exa-test-data-practitioner-physician-1.html\">Practitioner Rahel Hirsch </a></td></tr></table><p><b>reasonReference</b>: <a href=\"Observation-mii-exa-test-data-patient-14-mtb-implikation-1.html\">Observation Therapeutic Implication</a></p><p><b>note</b>: </p><blockquote><div><p>Infusion ueber 30 Minuten, gut vertragen. Naechster Zyklus Tag 22.</p>\n</div></blockquote><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Route</b></td><td><b>Dose</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://standardterms.edqm.eu 20045000}\">Intravenous use</span></td><td>200 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span></td></tr></table></div>"
+      },
+      "identifier" : [{
+        "system" : "https://www.charite.de/fhir/sid/MedicationAdministrations",
+        "value" : "MA_0000051"
+      }],
+      "partOf" : [{
+        "reference" : "Procedure/mii-exa-test-data-patient-14-onko-systemtherapie-1"
+      }],
+      "status" : "completed",
+      "category" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/medication-admin-category",
+          "code" : "outpatient"
+        }]
+      },
+      "medicationReference" : {
+        "reference" : "Medication/mii-exa-test-data-medication-pembrolizumab"
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-patient-14"
+      },
+      "context" : {
+        "reference" : "Encounter/mii-exa-test-data-patient-14-encounter-2"
+      },
+      "effectivePeriod" : {
+        "start" : "2024-05-02T09:30:00+02:00",
+        "end" : "2024-05-02T10:00:00+02:00"
+      },
+      "performer" : [{
+        "actor" : {
+          "reference" : "Practitioner/mii-exa-test-data-practitioner-physician-1"
+        }
+      }],
+      "reasonReference" : [{
+        "reference" : "Observation/mii-exa-test-data-patient-14-mtb-implikation-1"
+      }],
+      "note" : [{
+        "text" : "Infusion ueber 30 Minuten, gut vertragen. Naechster Zyklus Tag 22."
+      }],
+      "dosage" : {
+        "route" : {
+          "coding" : [{
+            "system" : "http://standardterms.edqm.eu",
+            "code" : "20045000",
+            "display" : "Intravenous use"
+          }]
+        },
+        "dose" : {
+          "value" : 200,
+          "unit" : "mg",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "mg"
+        }
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "MedicationAdministration/mii-exa-test-data-patient-14-medadmin-1"
+    }
+  }]
+}

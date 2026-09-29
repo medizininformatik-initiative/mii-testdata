@@ -1,0 +1,95 @@
+{
+  "resourceType" : "Patient",
+  "id" : "mii-exa-test-data-patient-3",
+  "meta" : {
+    "source" : "https://www.charite.de/fhir/kds-testdata",
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient",
+    "http://fhir.de/ConsentManagement/StructureDefinition/Patient"],
+    "security" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "code" : "HTEST",
+      "display" : "test health data"
+    }]
+  },
+  "language" : "en",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Patient mii-exa-test-data-patient-3</b></p><a name=\"mii-exa-test-data-patient-3\"> </a><a name=\"hcmii-exa-test-data-patient-3\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.charite.de/fhir/kds-testdata\">https://www.charite.de/fhir/kds-testdata</a></p><p style=\"margin-bottom: 0px\">Profiles: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.complete@2027.0.0-ballot.19&amp;canonical=https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient\">MII PR Person Patient</a>, <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.consent@2027.0.0-ballot&amp;canonical=http://fhir.de/ConsentManagement/StructureDefinition/Patient\">Consent Management: Patient</a></p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.4.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Clara Josephine Schumann (official) Female, DoB: 1968-09-13 ( Medical record number\u00a0(use:\u00a0usual,\u00a0))</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Known status of Patient\">Deceased:</td><td colspan=\"3\">false</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Other Id (see the one above)\">Other Id:</td><td colspan=\"3\">Krankenversichertennummer/Z234567890\u00a0(use:\u00a0official,\u00a0)</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Alternate names (see the one above)\">Alt. Name:</td><td colspan=\"3\">Wieck (Name changed for Marriage)</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Detail</td><td colspan=\"3\"><ul><li>Schöneberger Ufer 22 Berlin DE-BE 10785 DE </li><li>Postfach-252618 Berlin 10178 DE </li></ul></td></tr></table></div>"
+  },
+  "identifier" : [{
+    "use" : "usual",
+    "type" : {
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+        "code" : "MR"
+      }]
+    },
+    "system" : "https://www.medizininformatik-initiative.de/fhir/sid/patienten",
+    "value" : "42285243",
+    "assigner" : {
+      "identifier" : {
+        "system" : "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier",
+        "value" : "Charité"
+      },
+      "display" : "Charité - Universitätsmedizin Berlin"
+    }
+  },
+  {
+    "use" : "official",
+    "type" : {
+      "coding" : [{
+        "system" : "http://fhir.de/CodeSystem/identifier-type-de-basis",
+        "code" : "KVZ10"
+      }]
+    },
+    "system" : "http://fhir.de/sid/gkv/kvid-10",
+    "value" : "Z234567890",
+    "assigner" : {
+      "identifier" : {
+        "use" : "official",
+        "system" : "http://fhir.de/sid/arge-ik/iknr",
+        "value" : "109519005"
+      }
+    }
+  }],
+  "name" : [{
+    "use" : "official",
+    "family" : "Schumann",
+    "_family" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/humanname-own-name",
+        "valueString" : "Schumann"
+      }]
+    },
+    "given" : ["Clara",
+    "Josephine"]
+  },
+  {
+    "use" : "maiden",
+    "family" : "Wieck"
+  }],
+  "gender" : "female",
+  "birthDate" : "1968-09-13",
+  "deceasedBoolean" : false,
+  "address" : [{
+    "type" : "both",
+    "line" : ["Schöneberger Ufer 22"],
+    "city" : "Berlin",
+    "state" : "DE-BE",
+    "postalCode" : "10785",
+    "country" : "DE"
+  },
+  {
+    "type" : "postal",
+    "line" : ["Postfach-252618"],
+    "_line" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox",
+        "valueString" : "Postfach-252618"
+      }]
+    }],
+    "city" : "Berlin",
+    "postalCode" : "10178",
+    "country" : "DE"
+  }]
+}
