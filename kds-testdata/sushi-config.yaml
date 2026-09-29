@@ -11,7 +11,7 @@ name: MIIKDSTestData
 title: MII KDS Test Data
 description: This project contains example MII KDS data for testing purposes.
 status: draft # draft | active | retired | unknown
-version: 2027.0.0-ballot.rc1
+version: 2027.0.0-ballot.rc2
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2019+
 releaseLabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use

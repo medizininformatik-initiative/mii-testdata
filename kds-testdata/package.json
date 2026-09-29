@@ -1,6 +1,6 @@
 {
   "name": "de.medizininformatikinitiative.kerndatensatz.testdata",
-  "version": "2027.0.0-ballot.rc1",
+  "version": "2027.0.0-ballot.rc2",
   "description": "Medizininformatik Initiative - Test Data. Dependencies: expandierte, exakte Pins der BOM de.medizininformatikinitiative.kerndatensatz.complete 2027.0.0-ballot.19 (die BOM selbst ist in keiner Registry publiziert und kann daher vom Java-Validator nicht aufgeloest werden; sushi-config.yaml nutzt die BOM direkt).",
   "author": "juliansass",
   "fhirVersions": [

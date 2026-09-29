@@ -3,7 +3,7 @@
   "id": "de.medizininformatikinitiative.kerndatensatz.testdata",
   "language": "en",
   "url": "https://www.medizininformatik-initiative.de/fhir/testdata/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.testdata",
-  "version": "2027.0.0-ballot.rc1",
+  "version": "2027.0.0-ballot.rc2",
   "name": "MIIKDSTestData",
   "title": "MII KDS Test Data",
   "status": "draft",
