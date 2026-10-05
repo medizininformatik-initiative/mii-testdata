@@ -122,9 +122,22 @@ jobs:
       working-directory: ./kds-testdata
       run: |
         mkdir -p input/includes
-        python3 ../scripts/ms-coverage.py           --ig-include input/includes/testabdeckung-status.md           --index ../docs/ms-coverage-index.json > /dev/null
-        # Interaktive Luecken-Uebersicht aus demselben Index
+        python3 ../scripts/ms-coverage.py \
+          --ig-include input/includes/testabdeckung-status.md \
+          --ig-include-de input/includes/testabdeckung-status-de.md \
+          --index ../docs/ms-coverage-index.json > /dev/null
+        # Interaktive Luecken-Uebersicht aus demselben Index, je Sprache
         python3 ../scripts/build-gap-page.py input/includes/ms-luecken.html
+        python3 ../scripts/build-gap-page.py --lang de input/includes/ms-luecken-de.html
+
+    - name: Check artifact groups are current
+      # Der groups-Block in sushi-config.yaml wird aus den FSH-Ordnern
+      # generiert (scripts/build-ig-groups.py) und eingecheckt. Veraltet er,
+      # landen neue Instanzen gruppenlos auf der Artefaktseite.
+      working-directory: ./kds-testdata
+      run: |
+        sushi build . > /dev/null
+        python3 ../scripts/build-ig-groups.py --check
 
     - name: Start SU-TermServ proxy (falls Zertifikat vorhanden)
       id: tx

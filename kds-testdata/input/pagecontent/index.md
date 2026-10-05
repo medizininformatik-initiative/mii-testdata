@@ -4,9 +4,11 @@ This Implementation Guide provides comprehensive test data compliant with the Ge
 
 **1369 example instances · 31 transaction bundles · every instance labeled `meta.security = HTEST` and carrying `meta.source`.**
 
+On the [artifacts page](artifacts.html) the instances are grouped by the module they serve — one section per KDS module, one for the patient bundles across the core modules, and one per cross-module example patient.
+
 ## Three kinds of bundles
 
-- **16 module bundles** (`mii-exa-test-data-bundle-<modul>-1`): technically complete, self-contained per-module test sets with their own patients — one per extension module: Bildgebung, Biobank, Dokument, ICU, **Kardiologie**, **Lungenfunktion**, Mikrobiologie, MolGen, MTB, Onkologie, Patho, PRO, Seltene, **Soziodemographie**, Studien, **Symptom** (bold = new with the 2027 generation).
+- **16 module bundles** (`mii-exa-test-data-bundle-<modul>-1`): technically complete, self-contained per-module test sets with their own patients — one per extension module: Bildgebung, Biobank, Dokument, ICU, Kardiologie, Lungenfunktion, Mikrobiologie, MolGen, MTB, Onkologie, Patho, PRO, Seltene, Soziodemographie, Studien, Symptom. A seventeenth bundle covers the gematik ISiK vital signs that several KDS modules reference. New with the 2027 generation are Kardiologie, Lungenfunktion, Soziodemographie and Symptom.
 - **10 patient bundles** (`mii-exa-test-data-bundle-pat-1 … -pat-10`): clinically coherent scenarios per patient across the **core** modules (Person, Fall, Diagnose, Prozedur, Labor, Medikation, Consent).
 - **4 cross-module example patients** (`mii-exa-test-data-bundle-pat-11 … -pat-14`): one patient carrying core modules **and** extension modules, so that cross-module joins become testable. Each is modelled on a real MII research project — see [Cross-Module Example Patients](cross-module-patients.html).
 

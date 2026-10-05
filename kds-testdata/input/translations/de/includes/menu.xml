@@ -1,0 +1,10 @@
+<!-- Deutsche Uebersetzung von input/includes/menu.xml.
+     href-Ziele IDENTISCH zum Quellmenue halten; nur die Labels uebersetzen. -->
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li><a href="index.html">Startseite</a></li>
+  <li><a href="usage.html">Nutzung</a></li>
+  <li><a href="test-coverage.html">Testabdeckung</a></li>
+  <li><a href="cross-module-patients.html">Modulübergreifende Patienten</a></li>
+  <li><a href="known-issues.html">Bekannte Probleme</a></li>
+  <li><a href="artifacts.html">Artefakte</a></li>
+</ul>

@@ -11,6 +11,10 @@ JavaScript (Liquid wuerde sie auswerten), und alle Styles sind auf `.gapv`
 gescoped, damit sie nicht mit dem IG-Template kollidieren.
 
     ./scripts/build-gap-page.py kds-testdata/input/includes/ms-luecken.html
+    ./scripts/build-gap-page.py --lang de kds-testdata/input/includes/ms-luecken-de.html
+
+Alle sichtbaren Beschriftungen (Kacheln, Legende, Suche, Tabellenkopf,
+Status-Tags, Zaehlzeile) kommen aus STRINGS[lang]; die Daten sind identisch.
 """
 import json
 import os
@@ -57,16 +61,16 @@ def collect():
                 vals = [v for k, v in els.items()
                         if k == par + ".value[x]" or k.startswith(par + ".value[x]:")]
                 if vals and vals[0].get("min", 0) >= 1:
-                    reason = "obs-6: value[x] is required"
+                    reason = "obs6"
             if el.get("max") == "0":
-                reason = "max=0 despite Must-Support"
+                reason = "max0"
             if not reason:
                 anc = [eid] + [eid.rsplit(".", i)[0]
                                for i in range(1, 4) if eid.count(".") >= i]
                 for a in anc:
                     pc = els.get(a, {}).get("patternCoding") or {}
                     if isinstance(pc.get("code"), str) and PLACEHOLDER.fullmatch(pc["code"]):
-                        reason = "placeholder code in the profile"
+                        reason = "placeholder"
                         break
             mods[mod]["blocked" if reason else "feasible"] += 1
             gaps.append({"m": mod, "p": prof.split("/")[-1],
@@ -135,39 +139,39 @@ FRAGMENT = """<div class="gapv">
 </style>
 
 <div class="g-figs">
-  <div class="g-fig"><span class="g-k">covered</span>
+  <div class="g-fig"><span class="g-k">__L_COVERED__</span>
     <span class="g-n" style="color:var(--g-teal)">__COVPCT__&thinsp;%</span>
-    <span class="g-d">__COV__ of __TOTAL__ MS elements</span></div>
-  <div class="g-fig"><span class="g-k">feasible</span>
+    <span class="g-d">__L_OFTOTAL__</span></div>
+  <div class="g-fig"><span class="g-k">__L_FEASIBLE__</span>
     <span class="g-n" style="color:var(--g-amber)">__FEAS__</span>
-    <span class="g-d">open, but populatable</span></div>
-  <div class="g-fig"><span class="g-k">blocked</span>
+    <span class="g-d">__L_FEASIBLE_D__</span></div>
+  <div class="g-fig"><span class="g-k">__L_BLOCKED__</span>
     <span class="g-n" style="color:var(--g-rust)">__BLOCK__</span>
-    <span class="g-d">the profile prevents population</span></div>
+    <span class="g-d">__L_BLOCKED_D__</span></div>
 </div>
 
 <div class="g-bars" id="g-bars"></div>
 <div class="g-legend">
-  <span><i class="g-sw g-c"></i>covered</span>
-  <span><i class="g-sw g-f"></i>feasible</span>
-  <span><i class="g-sw g-b"></i>blocked</span>
+  <span><i class="g-sw g-c"></i>__L_COVERED__</span>
+  <span><i class="g-sw g-f"></i>__L_FEASIBLE__</span>
+  <span><i class="g-sw g-b"></i>__L_BLOCKED__</span>
 </div>
 
 <div class="g-ctl">
-  <input type="search" id="g-q" placeholder="Search element, profile or module" aria-label="Search">
-  <button class="g-chip" id="g-all" aria-pressed="true">all</button>
-  <button class="g-chip" id="g-onlyf" aria-pressed="false">feasible only</button>
-  <button class="g-chip" id="g-onlyb" aria-pressed="false">blocked only</button>
+  <input type="search" id="g-q" placeholder="__L_SEARCH__" aria-label="__L_SEARCH_A__">
+  <button class="g-chip" id="g-all" aria-pressed="true">__L_ALL__</button>
+  <button class="g-chip" id="g-onlyf" aria-pressed="false">__L_ONLYF__</button>
+  <button class="g-chip" id="g-onlyb" aria-pressed="false">__L_ONLYB__</button>
 </div>
 <div class="g-tw">
-  <table><thead><tr><th>Module</th><th>Profile</th><th>Element</th><th>Status</th></tr></thead>
+  <table><thead><tr><th>__L_TH_MODULE__</th><th>__L_TH_PROFILE__</th><th>__L_TH_ELEMENT__</th><th>__L_TH_STATUS__</th></tr></thead>
   <tbody id="g-tb"></tbody></table>
 </div>
 <p class="g-cnt" id="g-cnt"></p>
 
 <script>
 (function(){
-  var DATA = __DATA__;
+  var DATA = __DATA__, S = __STRINGS__;
   var mod = null, mode = "all";
   var bars = document.getElementById("g-bars"), tb = document.getElementById("g-tb"),
       cnt = document.getElementById("g-cnt"), q = document.getElementById("g-q");
@@ -177,14 +181,14 @@ FRAGMENT = """<div class="gapv">
     var open = m.feasible + m.blocked;
     var b = document.createElement("button");
     b.className = "g-row"; b.setAttribute("aria-pressed","false");
-    b.title = m.name + ": " + m.covered + "/" + m.total + " covered, "
-            + m.feasible + " feasible, " + m.blocked + " blocked";
+    b.title = m.name + ": " + m.covered + "/" + m.total + " " + S.covered + ", "
+            + m.feasible + " " + S.feasible + ", " + m.blocked + " " + S.blocked;
     b.innerHTML = '<span class="g-name">' + esc(m.name) + '</span>'
       + '<span class="g-track">'
       + '<span class="g-seg g-c" style="width:' + (100*m.covered/m.total) + '%"></span>'
       + '<span class="g-seg g-f" style="width:' + (100*m.feasible/m.total) + '%"></span>'
       + '<span class="g-seg g-b" style="width:' + (100*m.blocked/m.total) + '%"></span>'
-      + '</span><span class="g-pct">' + (open ? open + " open" : "complete") + '</span>';
+      + '</span><span class="g-pct">' + (open ? open + " " + S.open : S.complete) + '</span>';
     b.onclick = function(){
       mod = (mod === m.name) ? null : m.name;
       Array.prototype.forEach.call(bars.children, function(c){
@@ -217,12 +221,12 @@ FRAGMENT = """<div class="gapv">
       return '<tr><td class="g-stripe' + (g.r ? " g-isb" : "") + '">' + esc(g.m) + '</td>'
         + '<td class="g-pr">' + esc(g.p) + '</td>'
         + '<td class="g-el">' + esc(g.e) + '</td><td>'
-        + (g.r ? '<span class="g-tag g-tagb">' + esc(g.r) + '</span>'
-               : '<span class="g-tag g-tagf">feasible</span>') + '</td></tr>';
+        + (g.r ? '<span class="g-tag g-tagb">' + esc(S.reasons[g.r] || g.r) + '</span>'
+               : '<span class="g-tag g-tagf">' + S.feasible + '</span>') + '</td></tr>';
     }).join("");
-    cnt.textContent = rows.length + " of " + DATA.gaps.length + " open nodes"
-      + (rows.length > 400 ? " \\u00b7 first 400 shown" : "")
-      + (mod ? " \\u00b7 module " + mod : "");
+    cnt.textContent = rows.length + " " + S.of + " " + DATA.gaps.length + " " + S.openNodes
+      + (rows.length > 400 ? " \\u00b7 " + S.first400 : "")
+      + (mod ? " \\u00b7 " + S.module + " " + mod : "");
   }
   render();
 })();
@@ -231,27 +235,85 @@ FRAGMENT = """<div class="gapv">
 """
 
 
+STRINGS = {
+    "en": {
+        "covered": "covered", "feasible": "feasible", "blocked": "blocked",
+        "feasible_d": "open, but populatable", "blocked_d": "the profile prevents population",
+        "oftotal": "__COV__ of __TOTAL__ MS elements",
+        "search": "Search element, profile or module", "search_a": "Search",
+        "all": "all", "onlyf": "feasible only", "onlyb": "blocked only",
+        "th": ("Module", "Profile", "Element", "Status"),
+        "js": {"covered": "covered", "feasible": "feasible", "blocked": "blocked",
+               "open": "open", "complete": "complete", "of": "of", "openNodes": "open nodes",
+               "first400": "first 400 shown", "module": "module",
+               "reasons": {"obs6": "obs-6: value[x] is required",
+                           "max0": "max=0 despite Must-Support",
+                           "placeholder": "placeholder code in the profile"}},
+    },
+    "de": {
+        "covered": "befüllt", "feasible": "befüllbar", "blocked": "blockiert",
+        "feasible_d": "offen, aber befüllbar", "blocked_d": "das Profil verhindert die Befüllung",
+        "oftotal": "__COV__ von __TOTAL__ MS-Elementen",
+        "search": "Element, Profil oder Modul suchen", "search_a": "Suche",
+        "all": "alle", "onlyf": "nur befüllbar", "onlyb": "nur blockiert",
+        "th": ("Modul", "Profil", "Element", "Status"),
+        "js": {"covered": "befüllt", "feasible": "befüllbar", "blocked": "blockiert",
+               "open": "offen", "complete": "vollständig", "of": "von", "openNodes": "offene Knoten",
+               "first400": "erste 400 angezeigt", "module": "Modul",
+               "reasons": {"obs6": "obs-6: value[x] ist Pflicht",
+                           "max0": "max=0 trotz Must-Support",
+                           "placeholder": "Platzhaltercode im Profil"}},
+    },
+}
+
+
 def main():
-    out = sys.argv[1] if len(sys.argv) > 1 else os.path.join(
-        ROOT, "kds-testdata", "input", "includes", "ms-luecken.html")
+    args = [a for a in sys.argv[1:]]
+    lang = "en"
+    if "--lang" in args:
+        i = args.index("--lang")
+        lang = args[i + 1]
+        del args[i:i + 2]
+    if lang not in STRINGS:
+        sys.exit(f"unbekannte Sprache {lang!r}; bekannt: {', '.join(STRINGS)}")
+    T = STRINGS[lang]
+    out = args[0] if args else os.path.join(
+        ROOT, "kds-testdata", "input", "includes",
+        "ms-luecken.html" if lang == "en" else f"ms-luecken-{lang}.html")
     d = collect()
     t = d["totals"]
     frag = (FRAGMENT
             .replace("__DATA__", json.dumps(d, ensure_ascii=False, separators=(",", ":")))
+            .replace("__STRINGS__", json.dumps(T["js"], ensure_ascii=False, separators=(",", ":")))
+            .replace("__L_COVERED__", T["covered"])
+            .replace("__L_FEASIBLE_D__", T["feasible_d"])
+            .replace("__L_BLOCKED_D__", T["blocked_d"])
+            .replace("__L_FEASIBLE__", T["feasible"])
+            .replace("__L_BLOCKED__", T["blocked"])
+            .replace("__L_OFTOTAL__", T["oftotal"])
+            .replace("__L_SEARCH_A__", T["search_a"])
+            .replace("__L_SEARCH__", T["search"])
+            .replace("__L_ALL__", T["all"])
+            .replace("__L_ONLYF__", T["onlyf"])
+            .replace("__L_ONLYB__", T["onlyb"])
+            .replace("__L_TH_MODULE__", T["th"][0])
+            .replace("__L_TH_PROFILE__", T["th"][1])
+            .replace("__L_TH_ELEMENT__", T["th"][2])
+            .replace("__L_TH_STATUS__", T["th"][3])
             .replace("__COVPCT__", f"{100 * t['covered'] / t['total']:.1f}".replace(".", ","))
             .replace("__COV__", f"{t['covered']:,}".replace(",", "."))
             .replace("__TOTAL__", f"{t['total']:,}".replace(",", "."))
             .replace("__FEAS__", str(t["feasible"]))
             .replace("__BLOCK__", str(t["blocked"])))
-    for bad in ("{{", "{%"):
+    for bad in ("{{", "{%", "__L_"):
         if bad in frag:
-            print(f"FEHLER: '{bad}' im Fragment — Jekyll/Liquid wuerde das auswerten.",
-                  file=sys.stderr)
+            print(f"FEHLER: '{bad}' im Fragment — Jekyll/Liquid wuerde das auswerten "
+                  f"bzw. ein Label blieb unersetzt.", file=sys.stderr)
             sys.exit(1)
     os.makedirs(os.path.dirname(out), exist_ok=True)
     open(out, "w", encoding="utf-8").write(frag)
     print(f"{out}\n   {len(d['gaps'])} offene Knoten, {len(d['modules'])} Module, "
-          f"{len(frag) // 1024} KB")
+          f"{len(frag) // 1024} KB, Sprache {lang}")
 
 
 if __name__ == "__main__":
