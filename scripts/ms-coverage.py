@@ -15,7 +15,9 @@ Heuristik, bewusst pragmatisch:
 
 Aufruf aus kds-testdata/:  python3 ../scripts/ms-coverage.py > ../docs/ms-coverage-2027.md
 Mit --ig-include <pfad> wird zusätzlich ein kompakter Status als Markdown-
-Include für die IG-Seite testabdeckung.md geschrieben (input/includes/).
+Include für die IG-Seite test-coverage.md geschrieben (input/includes/);
+--ig-include-de <pfad> schreibt dieselbe Tabelle mit deutschen Beschriftungen
+für die deutsche Spiegelseite (input/translations/de/pagecontent/).
 Benötigt das complete-Package im FHIR-Cache (Version unten anpassen bei Bump).
 """
 import json, glob, os, re, sys, collections
@@ -306,15 +308,32 @@ def main():
         top = ", ".join(f"`{k}`×{v}" if v > 1 else f"`{k}`" for k, v in c.most_common(6))
         print(f"| {mod} | {sum(c.values())} | {top} |")
 
-    if IG_INCLUDE:
+    STRINGS = {
+        "en": dict(
+            ref="**Reference version: MII Kerndatensatz complete [`{v}`]({u})** "
+                "— every figure on this page refers to the profile snapshots of that BOM version.\n",
+            tot="{ms} MS elements across the profiles in use · **{top} top-level unpopulated nodes**\n",
+            head="| Module | Profiles used/total | MS populated/total | Coverage | most frequent gaps |",
+            full="Full report (per profile, plus populated non-MS paths as ballot feedback candidates): "
+                 "[docs/ms-coverage-2027.md]({r})"),
+        "de": dict(
+            ref="**Referenzversion: MII Kerndatensatz complete [`{v}`]({u})** "
+                "— jede Zahl auf dieser Seite bezieht sich auf die Profil-Snapshots dieser BOM-Version.\n",
+            tot="{ms} MS-Elemente über alle genutzten Profile · **{top} oberste unbefüllte Knoten**\n",
+            head="| Modul | Profile genutzt/gesamt | MS befüllt/gesamt | Abdeckung | häufigste Lücken |",
+            full="Vollständiger Bericht (je Profil, plus befüllte Nicht-MS-Pfade als Kandidaten "
+                 "für Ballot-Feedback): [docs/ms-coverage-2027.md]({r})"),
+    }
+    for path, lang in ((IG_INCLUDE, "en"), (IG_INCLUDE_DE, "de")):
+        if not path:
+            continue
+        T = STRINGS[lang]
         L = []
-        L.append(
-            f"**Reference version: MII Kerndatensatz complete "
-            f"[`{BOM_VERSION}`](https://github.com/medizininformatik-initiative/kerndatensatz-complete/releases/tag/v{BOM_VERSION})** "
-            f"— every figure on this page refers to the profile snapshots of that BOM version.\n")
-        L.append(f"{tot_ms} MS elements across the profiles in use · "
-                 f"**{tot_top} top-level unpopulated nodes**\n")
-        L.append("| Module | Profiles used/total | MS populated/total | Coverage | most frequent gaps |")
+        L.append(T["ref"].format(
+            v=BOM_VERSION,
+            u=f"https://github.com/medizininformatik-initiative/kerndatensatz-complete/releases/tag/v{BOM_VERSION}"))
+        L.append(T["tot"].format(ms=tot_ms, top=tot_top))
+        L.append(T["head"])
         L.append("|---|---|---|---|---|")
         for mod in sorted(modsum):
             m = modsum[mod]
@@ -325,10 +344,9 @@ def main():
             L.append(f"| {mod.replace('modul-','')} | {m['prof_used']}/{m['prof_total']} | "
                      f"{m['ms_cov']}/{m['ms_total']} | {pct} | {top} |")
         L.append("")
-        L.append("Full report (per profile, plus populated non-MS paths as "
-                 "ballot feedback candidates): "
-                 "[docs/ms-coverage-2027.md](https://github.com/medizininformatik-initiative/mii-testdata/blob/main/docs/ms-coverage-2027.md)")
-        with open(IG_INCLUDE, "w", encoding="utf-8") as f:
+        L.append(T["full"].format(
+            r="https://github.com/medizininformatik-initiative/mii-testdata/blob/main/docs/ms-coverage-2027.md"))
+        with open(path, "w", encoding="utf-8") as f:
             f.write("\n".join(L) + "\n")
 
     if INDEX_OUT is not None:
@@ -348,11 +366,14 @@ def main():
               + ", ".join(f"{m.replace('modul-','')} {n}" for m, n in sorted(fragile.items(), key=lambda kv: -kv[1])[:10]) + ".")
 
 IG_INCLUDE = None
+IG_INCLUDE_DE = None
 INDEX_OUT = None
 INDEX = {"profiles": {}}
 if __name__ == "__main__":
     if "--ig-include" in sys.argv:
         IG_INCLUDE = sys.argv[sys.argv.index("--ig-include") + 1]
+    if "--ig-include-de" in sys.argv:
+        IG_INCLUDE_DE = sys.argv[sys.argv.index("--ig-include-de") + 1]
     if "--index" in sys.argv:
         INDEX_OUT = sys.argv[sys.argv.index("--index") + 1]
     main()

@@ -1,0 +1,51 @@
+# en -> de
+#
+# IG-Katalog: Seitentitel (Breadcrumbs, Inhaltsverzeichnis, <title>) sowie
+# Titel und Beschreibung der ImplementationGuide-Ressource und die Namen der
+# Artefakt-Gruppen. Jede msgid ist der exakte `title:` einer Seite aus
+# sushi-config.yaml bzw. der `name` einer Gruppe dort. Eine leere msgstr
+# bedeutet UNUEBERSETZT (Rueckfall auf Englisch).
+# Datei umbenennen, wenn sich die IG-`id` aendert — sonst findet der
+# Publisher den Katalog nicht und laesst alles stillschweigend englisch.
+msgid ""
+msgstr ""
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ImplementationGuide.title
+msgid "MII KDS Test Data"
+msgstr "MII KDS Testdaten"
+
+#: ImplementationGuide.description
+msgid "This project contains example MII KDS data for testing purposes."
+msgstr "Dieses Projekt enthält Beispieldaten zum MII-Kerndatensatz (KDS) für Testzwecke."
+
+#: ImplementationGuide.definition.page.title
+msgid "Table of Contents"
+msgstr "Inhaltsverzeichnis"
+
+#: ImplementationGuide.definition.page.title
+msgid "Home"
+msgstr "Startseite"
+
+#: ImplementationGuide.definition.page.title
+msgid "Usage"
+msgstr "Nutzung"
+
+#: ImplementationGuide.definition.page.title
+msgid "Test coverage"
+msgstr "Testabdeckung"
+
+#: ImplementationGuide.definition.page.title
+msgid "Cross-Module Example Patients"
+msgstr "Modulübergreifende Beispielpatienten"
+
+#: ImplementationGuide.definition.page.title
+msgid "Known issues"
+msgstr "Bekannte Probleme"
+
+#: ImplementationGuide.definition.page.title
+msgid "Translation Information"
+msgstr "Hinweise zur Übersetzung"

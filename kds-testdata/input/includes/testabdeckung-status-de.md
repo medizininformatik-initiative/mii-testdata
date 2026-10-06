@@ -1,8 +1,8 @@
-**Reference version: MII Kerndatensatz complete [`2027.0.0-ballot.19`](https://github.com/medizininformatik-initiative/kerndatensatz-complete/releases/tag/v2027.0.0-ballot.19)** — every figure on this page refers to the profile snapshots of that BOM version.
+**Referenzversion: MII Kerndatensatz complete [`2027.0.0-ballot.19`](https://github.com/medizininformatik-initiative/kerndatensatz-complete/releases/tag/v2027.0.0-ballot.19)** — jede Zahl auf dieser Seite bezieht sich auf die Profil-Snapshots dieser BOM-Version.
 
-13658 MS elements across the profiles in use · **95 top-level unpopulated nodes**
+13658 MS-Elemente über alle genutzten Profile · **95 oberste unbefüllte Knoten**
 
-| Module | Profiles used/total | MS populated/total | Coverage | most frequent gaps |
+| Modul | Profile genutzt/gesamt | MS befüllt/gesamt | Abdeckung | häufigste Lücken |
 |---|---|---|---|---|
 | bildgebung | 12/12 | 381/381 | 100 % | — |
 | biobank | 11/11 | 302/302 | 100 % | — |
@@ -29,4 +29,4 @@
 | studie | 7/7 | 78/78 | 100 % | — |
 | symptom | 2/2 | 39/39 | 100 % | — |
 
-Full report (per profile, plus populated non-MS paths as ballot feedback candidates): [docs/ms-coverage-2027.md](https://github.com/medizininformatik-initiative/mii-testdata/blob/main/docs/ms-coverage-2027.md)
+Vollständiger Bericht (je Profil, plus befüllte Nicht-MS-Pfade als Kandidaten für Ballot-Feedback): [docs/ms-coverage-2027.md](https://github.com/medizininformatik-initiative/mii-testdata/blob/main/docs/ms-coverage-2027.md)

@@ -38,6 +38,22 @@ Further reading on running SUSHI: https://fshschool.org/docs/sushi/running/
 
 The FHIR data is generated inside `/kds-testdata/fsh-generated` folder. There are transaction `Bundle` resources that contain the collection of resources.
 
+## Implementation Guide: languages and artifact groups
+
+The IG (`.github/workflows/ig-publish.yml`, published to GitHub Pages) is bilingual: English is the default rendering, German the translation. Three things have to stay in step when a page is added, renamed or removed:
+
+- **Pages** are declared in `sushi-config.yaml` under `pages:`; the English source lives in `input/pagecontent/`, the German mirror under `input/translations/de/pagecontent/` with the *same file name*. Both have to say the same thing.
+- **Menu**: `input/includes/menu.xml` (English) and `input/translations/de/includes/menu.xml` (German) — identical `href` targets, translated labels only. Do not re-add a `menu:` property to `sushi-config.yaml`; it would generate a single, untranslatable menu.
+- **Page titles**, breadcrumbs and the table of contents come from the IG resource and are translated in `input/translations/de/ImplementationGuide-de.medizininformatikinitiative.kerndatensatz.testdata.po`. Each `msgid` is the exact page `title:` from `sushi-config.yaml`.
+
+The test-coverage page embeds two generated fragments per language (`input/includes/testabdeckung-status[-de].md`, `ms-luecken[-de].html`). They are regenerated on every IG build by `scripts/ms-coverage.py` and `scripts/build-gap-page.py --lang de`.
+
+The artifacts page groups every instance by the module it serves. The `groups:` block in `sushi-config.yaml` is **generated** from the FSH folder of each instance (`input/fsh/modul-<modul>/`, `input/fsh/journey-<name>/`) by `scripts/build-ig-groups.py`; CI fails when the block is stale. After adding or renaming instances:
+
+```bash
+cd kds-testdata && sushi build . && python3 ../scripts/build-ig-groups.py
+```
+
 ## CI/CD and FHIR Package Dependencies
 
 This repository includes automated CI/CD workflows defined in `.github/workflows/ci.yml` that:
