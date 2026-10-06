@@ -16,6 +16,8 @@ Die dritte Art schließt eine Lücke, die die ersten beiden konstruktionsbedingt
 
 ## Testpatienten
 
+Die Patienten 1 bis 10 sind bewusst generisch: Jeder modelliert einen beispielhaften, klinisch plausiblen Krankheitsverlauf allein mit den **Basismodulen** (Person, Fall, Diagnose, Prozedur, Labor, Medikation, Consent) — eine Aufnahme, ihre Diagnosen, Prozeduren, Laborwerte, Medikation und Einwilligung, wie sie in jedem Krankenhaus anfallen, unabhängig von einem Forschungsprojekt oder Erweiterungsmodul. Sie sind die richtige Anlaufstelle, wenn ein System einen realistischen Patienten ohne modulspezifische Daten braucht. Modulspezifische Inhalte liegen in den Modul-Bundles; die Verbindung von Basis- und Erweiterungsmodulen zeigen die Patienten 11 bis 14 weiter unten.
+
 - **Patient-1**: Umfassender Referenzpatient — **vollständig strukturierte Medikationsdosierung** (timing + doseAndRate, kodierte Medikamente)
 - **Patient-2**: Lungenkrebspatient (verstorben) mit Chemotherapie — **vollständig unstrukturierte Medikation** (Freitext-Dosierung und -Medikation, keine Medication-Ressourcen)
 - **Patient-3**: Kolorektalkarzinom-Patient mit umfangreichen molekulargenetischen Daten

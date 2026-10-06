@@ -16,6 +16,8 @@ The third kind closes a gap the first two leave open by construction: module bun
 
 ## Test Patients
 
+Patients 1 to 10 are deliberately generic: each models one exemplary, clinically plausible course of illness using only the **core modules** (Person, Fall, Diagnose, Prozedur, Labor, Medikation, Consent) — an admission, its diagnoses, procedures, laboratory values, medication and consent as they would appear in any hospital, independent of a research project or extension module. They are the place to look when a system needs a realistic patient without module-specific data. Module-specific content lives in the module bundles; the connection of core and extension modules in patients 11 to 14 below.
+
 - **Patient-1**: Comprehensive reference patient — **fully structured medication dosage** (timing + doseAndRate, coded medications)
 - **Patient-2**: Lung cancer patient (deceased) with chemotherapy — **fully unstructured medication** (free-text dosage and medication, no Medication resources)
 - **Patient-3**: Colorectal cancer patient with extensive molecular genetics data
