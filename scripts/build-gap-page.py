@@ -267,11 +267,21 @@ STRINGS = {
 }
 
 
+def num(x, lang, decimals=0):
+    """Zahl in der Schreibweise der Zielsprache: en 13,492 / 98.8 — de 13.492 / 98,8."""
+    s = f"{x:,.{decimals}f}"
+    if lang == "de":
+        s = s.replace(",", "\x00").replace(".", ",").replace("\x00", ".")
+    return s
+
+
 def main():
     args = [a for a in sys.argv[1:]]
     lang = "en"
     if "--lang" in args:
         i = args.index("--lang")
+        if i + 1 >= len(args):
+            sys.exit("--lang braucht einen Wert (en|de)")
         lang = args[i + 1]
         del args[i:i + 2]
     if lang not in STRINGS:
@@ -300,9 +310,9 @@ def main():
             .replace("__L_TH_PROFILE__", T["th"][1])
             .replace("__L_TH_ELEMENT__", T["th"][2])
             .replace("__L_TH_STATUS__", T["th"][3])
-            .replace("__COVPCT__", f"{100 * t['covered'] / t['total']:.1f}".replace(".", ","))
-            .replace("__COV__", f"{t['covered']:,}".replace(",", "."))
-            .replace("__TOTAL__", f"{t['total']:,}".replace(",", "."))
+            .replace("__COVPCT__", num(100 * t["covered"] / t["total"], lang, 1))
+            .replace("__COV__", num(t["covered"], lang))
+            .replace("__TOTAL__", num(t["total"], lang))
             .replace("__FEAS__", str(t["feasible"]))
             .replace("__BLOCK__", str(t["blocked"])))
     for bad in ("{{", "{%", "__L_"):

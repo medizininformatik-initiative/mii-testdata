@@ -130,14 +130,23 @@ jobs:
         python3 ../scripts/build-gap-page.py input/includes/ms-luecken.html
         python3 ../scripts/build-gap-page.py --lang de input/includes/ms-luecken-de.html
 
-    - name: Check artifact groups are current
+    - name: Check artifact groups and template override
       # Der groups-Block in sushi-config.yaml wird aus den FSH-Ordnern
       # generiert (scripts/build-ig-groups.py) und eingecheckt. Veraltet er,
-      # landen neue Instanzen gruppenlos auf der Artefaktseite.
+      # landen neue Instanzen gruppenlos auf der Artefaktseite. Der Check
+      # liest das eingecheckte fsh-generated/ — dass es frisch ist, prueft
+      # ci.yml bereits (Drift-Check nach `sushi build`); kein dritter Build.
+      #
+      # ig-template/scripts/createArtifactSummary.xslt ueberschreibt das
+      # Basis-Template, das eigene Gruppen mit LEERER Ueberschrift rendert.
+      # Ein Re-Vendoring des MII-Templates wuerde die Datei stillschweigend
+      # entfernen — deshalb hier ein harter Check, bis der Fix upstream
+      # in ig-template-mii-kds liegt.
       working-directory: ./kds-testdata
       run: |
-        sushi build . > /dev/null
         python3 ../scripts/build-ig-groups.py --check
+        test -f ig-template/scripts/createArtifactSummary.xslt \
+          || { echo "::error::ig-template/scripts/createArtifactSummary.xslt fehlt — Gruppenueberschriften waeren leer"; exit 1; }
 
     - name: Start SU-TermServ proxy (falls Zertifikat vorhanden)
       id: tx

@@ -88,9 +88,14 @@ def collect():
         sys.exit("fsh-generated/resources fehlt — erst `sushi build` ausfuehren "
                  "(bei kaputtem groups-Block: Block zwischen den Markern leeren, bauen, "
                  "dann dieses Skript)")
-    for f in os.listdir(gen):
+    for f in sorted(os.listdir(gen)):
         if f.endswith(".json") and not f.startswith("ImplementationGuide-"):
             t, i = f[:-5].split("-", 1)
+            # FHIR-Ids sind nur je Typ eindeutig; die Gruppen referenzieren
+            # <Typ>/<id>, also muss die Id hier typuebergreifend eindeutig sein.
+            if i in typ and typ[i] != t:
+                sys.exit(f"Id {i} existiert als {typ[i]} und als {t} — "
+                         f"Instanz-Ids muessen typuebergreifend eindeutig sein")
             typ[i] = t
     if not typ:
         sys.exit("fsh-generated/resources ist leer — erst `sushi build` ausfuehren")
@@ -108,8 +113,15 @@ def collect():
     for p in sorted(glob.glob(os.path.join(KDS, "input", "fsh", "**", "*.fsh"), recursive=True)):
         rel = os.path.relpath(p, os.path.join(KDS, "input", "fsh"))
         folder = rel.split(os.sep)[0] if os.sep in rel else "(root)"
-        for m in re.finditer(r"^Instance:\s*(\S+)", open(p, encoding="utf-8").read(), re.M):
-            iid = m.group(1)
+        src = open(p, encoding="utf-8").read()
+        # Jeden Instance-Block einzeln betrachten: Instanzen mit Usage #inline
+        # oder #definition schreibt SUSHI nicht nach fsh-generated/resources,
+        # sie bekommen keine Gruppe.
+        for block in re.split(r"(?m)^(?=Instance:)", src)[1:]:
+            iid = re.match(r"Instance:\s*(\S+)", block).group(1)
+            usage = re.search(r"(?m)^Usage:\s*#(\S+)", block)
+            if usage and usage.group(1) in ("inline", "definition"):
+                continue
             if iid not in typ:
                 sys.exit(f"{iid} aus {rel} fehlt in fsh-generated — `sushi build` veraltet?")
             members.setdefault(folder, []).append(iid)

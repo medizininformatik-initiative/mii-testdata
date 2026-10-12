@@ -1,10 +1,11 @@
 # en -> de
 #
 # IG-Katalog: Seitentitel (Breadcrumbs, Inhaltsverzeichnis, <title>) sowie
-# Titel und Beschreibung der ImplementationGuide-Ressource und die Namen der
-# Artefakt-Gruppen. Jede msgid ist der exakte `title:` einer Seite aus
-# sushi-config.yaml bzw. der `name` einer Gruppe dort. Eine leere msgstr
+# Titel und Beschreibung der ImplementationGuide-Ressource. Jede msgid ist
+# der exakte `title:` einer Seite aus sushi-config.yaml. Eine leere msgstr
 # bedeutet UNUEBERSETZT (Rueckfall auf Englisch).
+# NICHT uebersetzbar ueber diesen Katalog: die Namen der Artefakt-Gruppen —
+# das Template rendert sie direkt aus f:name, in beiden Sprachen englisch.
 # Datei umbenennen, wenn sich die IG-`id` aendert — sonst findet der
 # Publisher den Katalog nicht und laesst alles stillschweigend englisch.
 msgid ""
