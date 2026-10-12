@@ -4,3 +4,8 @@ Thumbs.db
 /output
 /temp
 /template
+# IG-Publisher-Ausgabe: generierte Uebersetzungsvorlagen (input/translations/ ist die Quelle)
+/translations
+# Publisher-Indexdateien, die er in Template-Ordnern anlegt
+.index.db
+.index.json

@@ -10,7 +10,7 @@ Every [GitHub release](https://github.com/medizininformatik-initiative/mii-testd
 | `kds-testdata-*.zip` | The complete `fsh-generated` output (every individual resource plus the bundles as JSON) | Individual resources, validation, development |
 | `de.medizininformatikinitiative.kerndatensatz.testdata-*.tgz` | A FHIR NPM package with all instances under `package/example/` | Tooling: `-ig` for the validator, resolution via the package cache |
 
-The NDJSON contains **28 transaction bundles** — 17 module bundles and 11 patient bundles. The patho document bundle travels inside the patho transaction bundle rather than as its own line, because only `transaction` and `batch` bundles belong at a server's base endpoint.
+The NDJSON contains **31 transaction bundles** — 17 module bundles and 14 patient bundles. The patho document bundle travels inside the patho transaction bundle rather than as its own line, because only `transaction` and `batch` bundles belong at a server's base endpoint.
 
 Example — fetch the latest release and load it into a FHIR server:
 

@@ -1,0 +1,14 @@
+<!-- Menu in the IG's DEFAULT language (English).
+     The IG Publisher renders the navigation from this file. The German copy
+     lives at input/translations/de/includes/menu.xml — keep the href targets
+     identical across both files and translate only the labels. Do NOT re-add
+     a `menu:` property to sushi-config.yaml: it would generate a competing,
+     untranslatable menu.xml. -->
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li><a href="index.html">Home</a></li>
+  <li><a href="usage.html">Usage</a></li>
+  <li><a href="test-coverage.html">Test coverage</a></li>
+  <li><a href="cross-module-patients.html">Cross-module patients</a></li>
+  <li><a href="known-issues.html">Known issues</a></li>
+  <li><a href="artifacts.html">Artifacts</a></li>
+</ul>
