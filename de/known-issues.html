@@ -1,0 +1,695 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+
+
+<html xml:lang="de" xmlns="http://www.w3.org/1999/xhtml" lang="de" dir="ltr">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Bekannte Probleme - MII KDS Test Data v2027.0.0-ballot.rc2</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <link href="assets/css/project.css" rel="stylesheet"/>
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Branding override for the fhir2.base.template CSS placeholder
+     (base ships includes/fragment-css.html as a single comment; it is included
+     in <head> AFTER all base stylesheets, so the linked files win the
+     cascade).
+     Load model (docs/styleguide.md §1/§10): bootstrap-accessibility.css
+     (PayPal Bootstrap Accessibility Plugin v1.0.7, vendored + pinned - §8)
+     patches Bootstrap-3 component styling for accessibility (focus outlines,
+     alert contrast) and loads FIRST so the template's own rules can override;
+     then template-base.css carries the
+     brand-INDEPENDENT rule blocks and always loads; then EXACTLY ONE palette
+     file follows - num-diz.css, the DEFAULT design, unless the consuming IG
+     ships input/data/brand.json with { "design": "mii" } (read as
+     site.data.brand.design via the base's input/data -> _data pre-process),
+     which selects mii.css instead. Only the exact value 'mii' selects the
+     MII design; anything else - including no brand.json at all and unknown
+     values - renders NUM-DIZ. Both palettes declare the same variable set
+     (scripts/brand-switch.test.mjs). -->
+<link href="assets/css/bootstrap-accessibility.css" rel="stylesheet"/>
+<link href="assets/css/template-base.css" rel="stylesheet"/>
+
+<link href="assets/css/num-diz.css" rel="stylesheet"/>
+
+
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+    <script type="text/javascript" src="assets/js/direction-management.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"5"}
+    h3,h4,h5,h6{--heading-prefix:"5"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Branding override for the fhir2.base.template header placeholder
+     (base ships includes/fragment-header.html as a single comment; it is included
+     inside "#segment-header > .container", before the #ig-status block).
+     Language handling: only the asset and its descriptive alt text switch on
+     include.lang (the pattern kerndatensatz-basis uses); no translatable UI
+     strings are hard-coded.
+     Brand handling: the project logo additionally switches on
+     site.data.brand.design (input/data/brand.json in the consuming IG, see
+     docs/styleguide.md §10). Only the exact value 'mii' selects the MII
+     logos - anything else, including no brand.json at all, falls through to
+     the NUM-DIZ default.
+     Two logos, mirroring kerndatensatz-basis: the HL7 FHIR logo (links to the
+     FHIR spec) in #family-nav, and the project logo in #project-nav.
+     fhir-logo-www.png is shipped by fhir2.base.template
+     (content/assets/images/), so it resolves from the inherited assets without
+     shipping it here. -->
+<div id="family-nav">
+  <a id="family-logo" no-external="true" href="https://hl7.org/fhir">
+    <img height="50" alt="HL7 FHIR" src="assets/images/fhir-logo-www.png"/>
+  </a>
+</div>
+<div id="project-nav">
+
+  <a id="project-logo" no-external="true" href="https://www.netzwerk-universitaetsmedizin.de/forschung/num-diz">
+
+    <img height="50" alt="NUM-DIZ (Netzwerk Universitätsmedizin — Datenintegrationszentrum)" src="assets/images/logo-num-diz-de.svg"/>
+
+  </a>
+
+</div>
+<!-- Font-size control (A / A+ / A++): three reader-selectable levels; level A
+     is the untouched default. Logic in assets/js/font-size-control.js, the
+     zoom mapping + button styling in template-base.css ("font-size control"
+     block). All three buttons read "A" — the button's own font size shows the level; labels are language-neutral; only the aria texts switch
+     on include.lang. REMOVAL: delete this block, the js file and the CSS
+     block - one commit, styleguide §5a. -->
+
+<div class="ig-fontsize" role="group" aria-label="Schriftgröße">
+  <button type="button" data-level="0" aria-pressed="true" aria-label="Schriftgröße: Standard">A</button>
+  <button type="button" data-level="1" aria-pressed="false" aria-label="Schriftgröße: größer">A</button>
+  <button type="button" data-level="2" aria-pressed="false" aria-label="Schriftgröße: am größten">A</button>
+</div>
+
+<script src="assets/js/font-size-control.js" defer></script>
+<!-- PayPal Bootstrap Accessibility Plugin v1.0.7 (vendored + pinned, §8):
+     patches the Bootstrap-3 components the publisher renders - navbar
+     dropdowns gain ARIA menu semantics + arrow-key navigation, tab panels
+     (structure-tabs) the full ARIA tabs pattern, alerts live-region
+     announcements. `defer` guarantees it executes AFTER the parser-inserted
+     bootstrap.min.js at the end of the body. Vendored from
+     paypal/bootstrap-accessibility-plugin @ v1.0.7 (the admin-ch fork was
+     evaluated and rejected: 151 commits behind upstream, its 6 deltas are
+     site-specific tab tweaks). REMOVAL: delete this tag, both vendored
+     assets and the fragment-css link - guard test pins the hashes. -->
+<script src="assets/js/bootstrap-accessibility.min.js" defer></script>
+<!-- Back-to-top button: appears after one viewport of scrolling (logic in
+     assets/js/back-to-top.js, styling in template-base.css "back-to-top"
+     block). Rendered here inside #segment-header, which is OUTSIDE the
+     data-fontsize zoom regions, so the fixed button never scales. REMOVAL:
+     this block, the js file and the CSS block - one commit, styleguide §8. -->
+
+<button type="button" class="ig-back-to-top" aria-label="Zurück zum Seitenanfang">↑</button>
+
+<script src="assets/js/back-to-top.js" defer></script>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">MII KDS Testdaten</span>
+            <br/>
+            <span style="display:inline-block;">2027.0.0-ballot.rc2 - 
+
+
+
+  <img alt="Germany Flagge" src="assets/images/deu.svg" height="16" title="Germany"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- Deutsche Uebersetzung von input/includes/menu.xml.
+     href-Ziele IDENTISCH zum Quellmenue halten; nur die Labels uebersetzen. -->
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li><a href="index.html">Startseite</a></li>
+  <li><a href="usage.html">Nutzung</a></li>
+  <li><a href="test-coverage.html">Testabdeckung</a></li>
+  <li><a href="cross-module-patients.html">Modulübergreifende Patienten</a></li>
+  <li><a href="known-issues.html">Bekannte Probleme</a></li>
+  <li><a href="artifacts.html">Artefakte</a></li>
+</ul>
+
+            </div>  <!-- /.nav-collapse -->
+
+              
+
+
+
+
+<div style="float: var(--ig-right);padding: 8px 0px;" id="language">
+  <div id="select_flg" class="flaglist" style="background-image: url(assets/images/icon_arrow_down.png);background-position: 133px 3px;">
+    <div><img class="flag" alt="flag en" src="assets/images/lang-de.png"/>Deutsch</div>
+  </div>
+  <div style="float: var(--ig-right); margin: 2px 0px; padding: 1px 0;color: var(--btn-text-color);font-size:12px">Sprache:</div>
+ 	<div id="flaglist" class="flaglist" style="display: none;position: absolute;right: 0;z-index: 100;background-image: url(assets/images/icon_arrow_up.png);background-position: 133px 3px;">
+    <div><img class="flag" alt="flag de" src="assets/images/lang-de.png"/>Deutsch</div>
+
+    <div><a href="../en/known-issues.html"><img class="flag" src="assets/images/lang-en.png" alt="flag en"/>English</a></div>
+
+  </div>
+</div>
+
+
+
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Inhaltsverzeichnis</b></a></li><li><b>Bekannte Probleme</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">MII KDS Test Data - Local Development build (v2027.0.0-ballot.rc2) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://www.medizininformatik-initiative.de/fhir/testdata/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Bekannte Probleme</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#bekannte-probleme" id="markdown-toc-bekannte-probleme">Bekannte Probleme</a>    <ul>
+      <li><a href="#zwei-sichten-auf-dieselben-daten-und-sie-sind-nicht-redundant" id="markdown-toc-zwei-sichten-auf-dieselben-daten-und-sie-sind-nicht-redundant">Zwei Sichten auf dieselben Daten, und sie sind nicht redundant</a></li>
+      <li><a href="#warum-eine-regel-manchmal-keinen-pfad-hat" id="markdown-toc-warum-eine-regel-manchmal-keinen-pfad-hat">Warum eine Regel manchmal keinen Pfad hat</a></li>
+      <li><a href="#was-die-regeln-abdecken" id="markdown-toc-was-die-regeln-abdecken">Was die Regeln abdecken</a></li>
+      <li><a href="#was-nicht-unterdrückt-wird" id="markdown-toc-was-nicht-unterdrückt-wird">Was <em>nicht</em> unterdrückt wird</a></li>
+      <li><a href="#was-ein-terminologieserver-beisteuert" id="markdown-toc-was-ein-terminologieserver-beisteuert">Was ein Terminologieserver beisteuert</a></li>
+      <li><a href="#warum-der-terminologielauf-dreizehn-stunden-braucht" id="markdown-toc-warum-der-terminologielauf-dreizehn-stunden-braucht">Warum der Terminologielauf dreizehn Stunden braucht</a></li>
+      <li><a href="#regeln-reproduzieren-und-prüfen" id="markdown-toc-regeln-reproduzieren-und-prüfen">Regeln reproduzieren und prüfen</a></li>
+    </ul>
+  </li>
+</ul>
+
+</div>
+<h1 id="bekannte-probleme">Bekannte Probleme</h1>
+
+<p>Die Validierung der Testdaten lässt in der CI <strong>917 Fehler</strong> übrig, herunter von <strong>1.883</strong>, bevor die
+beiden pfadfreien Regeln unten auch die Bundle-Sicht erreichten. Fast nichts vom Rest sind Defekte in den
+Daten: Sie stammen aus den Profilen, gegen die die Daten gebaut sind, und keine konforme Instanz kann sie
+vermeiden. Diese Seite benennt, was unterdrückt wird, warum der Rest nicht unterdrückt werden kann, und
+was beides beseitigen würde.</p>
+
+<p>Die Zahlen hier sind gemessen, nicht geschätzt — ein Validierungslauf mit <code class="language-plaintext highlighter-rouge">advisor.json</code> und einer ohne,
+beide mit <code class="language-plaintext highlighter-rouge">-tx n/a</code>, beide ohne Terminologiezertifikat reproduzierbar:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">IGS</span><span class="o">=</span><span class="si">$(</span>jq <span class="nt">-r</span> <span class="s1">'.dependencies|to_entries|map("-ig "+.key+"#"+.value)|join(" ")'</span> kds-testdata/package.json<span class="si">)</span>
+<span class="nv">RES</span><span class="o">=</span>kds-testdata/fsh-generated/resources
+java <span class="nt">-Xmx14g</span> <span class="nt">-jar</span> validator_cli.jar <span class="nv">$RES</span>/<span class="k">*</span>.json <span class="nt">-version</span> 4.0.1 <span class="nv">$IGS</span> <span class="nt">-ig</span> <span class="nv">$RES</span> <span class="nt">-tx</span> n/a <span class="se">\</span>
+  <span class="nt">-output</span> unfiltered.json
+java <span class="nt">-Xmx14g</span> <span class="nt">-jar</span> validator_cli.jar <span class="nv">$RES</span>/<span class="k">*</span>.json <span class="nt">-version</span> 4.0.1 <span class="nv">$IGS</span> <span class="nt">-ig</span> <span class="nv">$RES</span> <span class="nt">-tx</span> n/a <span class="se">\</span>
+  <span class="nt">-advisor-file</span> kds-testdata/advisor.json <span class="nt">-output</span> filtered.json
+./scripts/compare-advisor-runs.py unfiltered.json filtered.json
+</code></pre></div></div>
+
+<p><code class="language-plaintext highlighter-rouge">-Xmx14g</code> ist nicht optional: Mit dem JVM-Standard (ein Viertel des RAM, also 4 GB auf einem
+Standard-CI-Runner) stirbt der Validator bei der ersten Ressource mit <code class="language-plaintext highlighter-rouge">OutOfMemoryError</code>, nach etwa
+hundert Sekunden und ohne einen Report zu schreiben. Mit genug Heap braucht der gesamte Satz
+<strong>85 Sekunden</strong>.</p>
+
+<p>Ein Vorbehalt zu absoluten Zahlen: Ob ein Terminologie-Cache vorhanden ist, verändert sie. Derselbe
+Validator über dieselben Ressourcen meldet 1.887 Fehler auf einem Entwicklerrechner und 1.696 in der CI,
+und die Lücke von 191 Fehlern ist vollständig terminologisch — 131 Kommunikationsfehler gegen
+<code class="language-plaintext highlighter-rouge">tx.fhir.org</code> (Socket-Timeouts, eine veraltete <code class="language-plaintext highlighter-rouge">cache-id</code>), 38 ValueSet-Mitgliedschaftsprüfungen,
+16 Display-Prüfungen. Ein lokales <code class="language-plaintext highlighter-rouge">~/.fhir</code>, das einen Terminologie-Cache trägt, greift selbst unter
+<code class="language-plaintext highlighter-rouge">-tx n/a</code> auf <code class="language-plaintext highlighter-rouge">tx.fhir.org</code> zu; der frisch geklonte Cache in der CI nicht.</p>
+
+<p>Die strukturellen Klassen sind bis auf die Zahl identisch — <code class="language-plaintext highlighter-rouge">SLICING_CANNOT_BE_EVALUATED</code> 379/379,
+<code class="language-plaintext highlighter-rouge">Validation_VAL_Profile_MatchMultiple</code> 446/446, <code class="language-plaintext highlighter-rouge">Validation_VAL_Profile_Minimum_SLICE</code> 232/232. Das ist
+die Prämisse, auf der der terminologiefreie Lauf ruht, und sie ist gemessen, nicht angenommen.</p>
+
+<p>Was ein solcher Lauf nicht sehen kann, ist ValueSet-Mitgliedschaft: 38 Codes, die ihr Binding
+verletzen, bleiben ohne Server unsichtbar, darunter 26 gegen <em>MII VS Prozedur Durchführungsabsicht</em>.
+Das ist der Preis einer reproduzierbaren Baseline, und es ist keine Behauptung, die Daten seien
+terminologisch sauber. CI-Läufe nur mit CI-Läufen vergleichen; eine Zahl vom Laptop ist eine
+Orientierung, nie die Baseline.</p>
+
+<p>Der terminologiefreie Lauf ist die Baseline, weil ihn jeder reproduzieren kann, nicht weil er das ganze
+Bild ist. Eine nächtliche Matrix validiert den vollständigen Satz sehr wohl gegen den MII SU-TermServ;
+<a href="#was-ein-terminologieserver-beisteuert">was sie beisteuert</a> und warum sie dafür dreizehn Stunden braucht,
+steht unten.</p>
+
+<h3 id="zwei-sichten-auf-dieselben-daten-und-sie-sind-nicht-redundant">Zwei Sichten auf dieselben Daten, und sie sind nicht redundant</h3>
+
+<p>Bevor man eine Zahl liest, sollte man wissen, was sie zählt. Das Ressourcenverzeichnis enthält sowohl die
+Einzelinstanzen als auch die Bundles, die sie enthalten; der Validator sieht also jede Instanz zweimal —
+einmal als Datei, einmal als <code class="language-plaintext highlighter-rouge">Bundle.entry[n]</code>. Die naheliegende Schlussfolgerung wäre, dass die Hälfte
+der Fehler Duplikate sind und sich einfach wegfiltern ließe. Gemessen je Meldungsklasse stimmt das nur zur
+Hälfte:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Message-Id</th>
+      <th style="text-align: right">nur als Datei</th>
+      <th style="text-align: right">in beiden Sichten</th>
+      <th style="text-align: right"><strong>nur im Bundle</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">SLICING_CANNOT_BE_EVALUATED</code></td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">53</td>
+      <td style="text-align: right">1</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">Terminology_TX_NoValid_12</code></td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">18</td>
+      <td style="text-align: right">0</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">_DT_Fixed_Wrong</code></td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">12</td>
+      <td style="text-align: right">0</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">Reference_REF_CantMatchChoice</code></td>
+      <td style="text-align: right">2</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right"><strong>193</strong></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">Validation_VAL_Profile_Minimum_SLICE</code></td>
+      <td style="text-align: right">56</td>
+      <td style="text-align: right">10</td>
+      <td style="text-align: right"><strong>92</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Für Slicing-, Terminologie- und Fixwert-Befunde ist die Bundle-Sicht tatsächlich eine Wiederholung —
+53 von 54 erscheinen in beiden.</p>
+
+<p>Für <strong>Referenzen ist sie die einzige Sicht, die überhaupt etwas sieht</strong>: 193 von 195 Befunden existieren
+<em>nur</em> im Bundle. Das ist Mechanik, kein Zufall. Eine <code class="language-plaintext highlighter-rouge">Reference(Observation/xy)</code> löst nur dann zu einem
+Ziel auf, wenn das Ziel im selben Bundle sitzt; als Einzeldatei validiert kann der Validator sie nicht
+auflösen und prüft deshalb nie das Profil des Ziels. Bundle-Befunde zu filtern würde kein Duplikat
+aufräumen — es würde die gesamte Klasse der Referenzdefekte verwerfen, und genau dort zeigen sich die
+überlappenden <code class="language-plaintext highlighter-rouge">targetProfile</code>-Slices. <code class="language-plaintext highlighter-rouge">Validation_VAL_Profile_Minimum_SLICE</code> teilt sich in beide
+Richtungen: 56 Befunde nur als Datei, 92 nur im Bundle.</p>
+
+<p>Die beiden Sichten überlappen also bei strukturellen Befunden und ergänzen sich bei Referenzbefunden.
+Beide sind es wert, validiert zu werden, und keine der Zahlen sollte als Anzahl verschiedener Defekte
+gelesen werden.</p>
+
+<h3 id="warum-eine-regel-manchmal-keinen-pfad-hat">Warum eine Regel manchmal keinen Pfad hat</h3>
+
+<p><code class="language-plaintext highlighter-rouge">advisor.json</code> kennt nur <code class="language-plaintext highlighter-rouge">MessageId@FHIRPath</code>-Paare, und eine Regel mit Pfad erreicht die Datei-Sicht
+einer Ressource, aber nie ihre Kopie im Bundle. Der Bundle-Pfad sieht so aus:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Bundle.entry[82].resource/*Observation/mii-exa-test-data-patient-1-icu-vent-pip-1*/.result
+</code></pre></div></div>
+
+<p>Er trägt den Entry-Index und die Identität der Ressource, sodass kein fester String ihn trifft. Gemessen
+an einem Bundle ändert jeder pfadförmige Versuch nichts:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Regelform</th>
+      <th style="text-align: right">Fehler</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">SLICING_CANNOT_BE_EVALUATED@Bundle.entry.resource.component</code></td>
+      <td style="text-align: right">256 (unverändert)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">…@Bundle.entry.resource.ofType(Observation).component</code></td>
+      <td style="text-align: right">256 (unverändert)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">…@*.component</code>, <code class="language-plaintext highlighter-rouge">…@**.component</code>, <code class="language-plaintext highlighter-rouge">…@Bundle.entry[*]…</code></td>
+      <td style="text-align: right">256 (unverändert)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">SLICING_CANNOT_BE_EVALUATED</code> — <strong>nur Message-Id, kein Pfad</strong></td>
+      <td style="text-align: right"><strong>59</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Nur das Weglassen des Pfads wirkt, und dann gilt die Regel überall: für jeden Pfad, jede Ressource und
+jeden künftigen Befund dieser Klasse. Das ist ein grobes Werkzeug, deshalb wird es für genau zwei
+Message-Ids verwendet, gewählt, weil <strong>keine Instanz sie verursachen oder vermeiden kann</strong>:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">SLICING_CANNOT_BE_EVALUATED</code> wird ausgegeben, wenn der Validator einen Slicing-Diskriminator nicht
+auswerten kann. Das ist eine Aussage über das Profil; Daten haben darauf keinen Einfluss.</li>
+  <li><code class="language-plaintext highlighter-rouge">Validation_VAL_Profile_MatchMultiple</code> wird ausgegeben, wenn ein Element auf mehr als einen Slice
+passt. Bei disjunkten Slices kann das nicht passieren, egal was die Daten sagen.</li>
+</ul>
+
+<p>Zwei benachbarte Klassen werden bewusst <strong>nicht</strong> auf diese Weise unterdrückt, und der Grund ist konkret,
+nicht theoretisch. <code class="language-plaintext highlighter-rouge">Reference_REF_CantMatchChoice</code> würde ein tatsächlich falsches Referenzziel neben den
+überlappenden <code class="language-plaintext highlighter-rouge">targetProfile</code>-Defekten verstecken. Und <code class="language-plaintext highlighter-rouge">Validation_VAL_Profile_Minimum_SLICE</code> hat in
+genau diesem Repository einen echten Defekt gefangen — einen fehlenden <code class="language-plaintext highlighter-rouge">category:VSCat</code>-Slice auf einer
+ICU-Observation. Eine pfadfreie Regel auf dieser Id hätte ihn verschluckt.</p>
+
+<h3 id="was-die-regeln-abdecken">Was die Regeln abdecken</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Regel</th>
+      <th>Betroffene Profile</th>
+      <th>Ursache</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">SLICING_CANNOT_BE_EVALUATED</code> <em>(ohne Pfad)</em></td>
+      <td><code class="language-plaintext highlighter-rouge">mii-pr-icu-score-sofa</code>, <code class="language-plaintext highlighter-rouge">-gcs</code>, <code class="language-plaintext highlighter-rouge">-icdsc</code>, <code class="language-plaintext highlighter-rouge">mii-pr-mtb-immunohistochemistry-mmr</code>, <code class="language-plaintext highlighter-rouge">mii-pr-icu-vent-*</code> und ~30 weitere</td>
+      <td>Die Profile slicen auf einen <code class="language-plaintext highlighter-rouge">pattern</code>-Diskriminator, während der Slice am Pfad des Diskriminators kein Pattern definiert — oft weil die Patterns eine Ebene tiefer sitzen, auf <code class="language-plaintext highlighter-rouge">code.coding:loinc</code>/<code class="language-plaintext highlighter-rouge">:sct</code>.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">Validation_VAL_Profile_MatchMultiple</code> <em>(ohne Pfad)</em></td>
+      <td><code class="language-plaintext highlighter-rouge">mii-pr-lungenfunktion-bodyplethysmographie</code>, <code class="language-plaintext highlighter-rouge">-diffusion</code>, <code class="language-plaintext highlighter-rouge">-spirometrie</code>, <code class="language-plaintext highlighter-rouge">-provokationstest</code></td>
+      <td>Slices, die nicht disjunkt sind: Mehrere tragen dasselbe <code class="language-plaintext highlighter-rouge">targetProfile</code>, sodass ein Eintrag auf mehr als einen passt. Upstream: <a href="https://github.com/medizininformatik-initiative/kerndatensatz-lungenfunktion/issues/45">kerndatensatz-lungenfunktion#45</a>.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">Reference_REF_CantMatchChoice@hasMember</code>, <code class="language-plaintext highlighter-rouge">@focus</code>, <code class="language-plaintext highlighter-rouge">@result</code>, <code class="language-plaintext highlighter-rouge">@derivedFrom</code></td>
+      <td><code class="language-plaintext highlighter-rouge">mii-pr-lungenfunktion-spirometrie-messung</code> und andere</td>
+      <td>Referenz-Slices, deren erlaubte Zielprofile überlappen. Bewusst pfadgebunden belassen — siehe oben.</td>
+    </tr>
+    <tr>
+      <td>4 weitere Regeln (Terminologie, Fixwerte)</td>
+      <td>ImplementationGuide-Parameter, <code class="language-plaintext highlighter-rouge">AdverseEvent.event</code>, <code class="language-plaintext highlighter-rouge">Procedure</code>-Extensions</td>
+      <td>Aus den Testdaten vor 2027 geerbt.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="was-nicht-unterdrückt-wird">Was <em>nicht</em> unterdrückt wird</h3>
+
+<p>Befunde, die zu den Daten gehören, bleiben sichtbar — und diese wurden behoben statt versteckt:</p>
+
+<ul>
+  <li><strong>Display-Namen</strong>, die nicht zum Codesystem passten. Die Ursache war Sprache, nicht Nachlässigkeit:
+Der Validator akzeptiert ein Display in der Sprache seines <em>Kontexts</em> — <code class="language-plaintext highlighter-rouge">Resource.language</code> oder,
+wo die Ressource keine trägt, der Default dieses IG (<code class="language-plaintext highlighter-rouge">en</code>). Deshalb verlangte derselbe Lauf die
+<em>deutschen</em> Bezeichnungen für die PHQ-15-Antworten (deren QuestionnaireResponse ist
+<code class="language-plaintext highlighter-rouge">language: de</code>) und die <em>englischen</em> für den Dokumentstatus (gar kein <code class="language-plaintext highlighter-rouge">language</code>).
+<code class="language-plaintext highlighter-rouge">scripts/check-displays.py</code> modelliert genau diese Regel und läuft jetzt als Build-Gate, in Sekunden.</li>
+  <li><strong>Questionnaire-Antwortcodes</strong>, die als außerhalb des gebundenen Antwort-ValueSets abgelehnt wurden.
+Das war derselbe Defekt von der anderen Seite — der Terminologiefehler am Display kaskadierte in die
+Optionsprüfung — und verschwand mit der Display-Korrektur.</li>
+  <li><strong>Mime-Typen</strong> und LOINC-Antwortcodes, die nicht auflösbar sind.</li>
+</ul>
+
+<h4 id="ein-fehler-der-bleibt-und-ebenfalls-nicht-unterdrückt-wird">Ein Fehler, der bleibt und ebenfalls nicht unterdrückt wird</h4>
+
+<p><code class="language-plaintext highlighter-rouge">mii-exa-test-data-patient-1-icu-score-wbf-1</code> meldet ein falsches Display für
+<code class="language-plaintext highlighter-rouge">observation-category#survey</code> und wird das weiterhin melden.
+<code class="language-plaintext highlighter-rouge">mii-pr-icu-score-wong-baker-faces-schmerzskala</code> pinnt
+<code class="language-plaintext highlighter-rouge">Observation.category.coding.display</code> auf den <code class="language-plaintext highlighter-rouge">patternString</code> <code class="language-plaintext highlighter-rouge">"Assessment"</code>, während der Code, den es
+bindet, in der HL7-Terminologie <code class="language-plaintext highlighter-rouge">"Survey"</code> heißt. <code class="language-plaintext highlighter-rouge">Survey</code> zu schreiben verletzt das Pattern und SUSHI
+verweigert den Build; <code class="language-plaintext highlighter-rouge">Assessment</code> zu schreiben erzeugt den Terminologiefehler. <strong>Es existiert keine
+konforme Instanz</strong> — und so wurde der Defekt gefunden: Die korrekte Korrektur brach den Build.</p>
+
+<p>Er ließe sich leicht mit einer Regel stummschalten. Er bleibt bewusst sichtbar: Eine Unterdrückung auf
+<code class="language-plaintext highlighter-rouge">Display_Name…@Observation.category.coding.display</code> würde auch jeden künftigen, echten Display-Fehler
+auf diesem Pfad verstecken, und ein benannter Fehler ist mehr wert als eine stille Regel. Als
+Ballot-Befund 8 eingereicht.</p>
+
+<p>Ebenso wenig werden die strukturellen Widersprüche unterdrückt, die Abdeckung unmöglich statt nur laut
+machen — <code class="language-plaintext highlighter-rouge">dataAbsentReason</code> als Must-Support neben einem Pflicht-<code class="language-plaintext highlighter-rouge">value[x]</code>, Elemente auf <code class="language-plaintext highlighter-rouge">max=0</code> trotz
+Must-Support, Platzhaltercodes (<code class="language-plaintext highlighter-rouge">TODO</code>) als Patterns fixiert. Die erscheinen als <em>blockiert</em> auf der Seite
+<a href="test-coverage.html">Testabdeckung</a>, wo sie gezählt statt versteckt werden.</p>
+
+<h3 id="was-ein-terminologieserver-beisteuert">Was ein Terminologieserver beisteuert</h3>
+
+<p>Die Baseline oben läuft mit <code class="language-plaintext highlighter-rouge">-tx n/a</code>, und das war einmal der einzige Lauf. Das ist vorbei: Eine
+nächtliche Matrix validiert alle 33 Arbeitspakete gegen den MII SU-TermServ (Ontoserver 6.25.3), und
+seit Lauf 36420354901 kommt sie durch — alle 33 Pakete, keine Timeouts. Dieser Lauf meldet
+<strong>1.100 Fehler</strong>, gegenüber 917 ohne Server.</p>
+
+<p>Der Unterschied ist nicht einfach „183 mehr“. Rund 520 der 1.100 sind terminologisch — sie können ohne
+Server gar nicht entstehen —, und weitere 55 sind Transportfehler, die nur ein Serverlauf erzeugen
+kann. Beides lohnt sich nach Ursache zu trennen, denn drei sehr verschiedene Dinge landen in derselben
+Liste:</p>
+
+<p><strong>Befunde in den Daten oder ihren Profilen.</strong> Ein <code class="language-plaintext highlighter-rouge">Coding</code>, das tatsächlich außerhalb seines Bindings
+liegt — etwa <code class="language-plaintext highlighter-rouge">http://snomed.info/sct#368208006</code> (<em>Left upper arm structure</em>, ein völlig reales Konzept),
+abgelehnt von <em>MII VS Biobank BodyStructures SCT</em>. Das sind die Fehler, für die dieser Lauf existiert.</p>
+
+<p><strong>Defekte im Tooling, die keine Änderung an den Daten beheben würde.</strong> Zwei große Gruppen:</p>
+
+<ul>
+  <li>21 Fehler der Form <code class="language-plaintext highlighter-rouge">Unknown code '/nL' in the CodeSystem 'http://unitsofmeasure.org'</code>.
+<code class="language-plaintext highlighter-rouge">/nL</code> — pro Nanoliter, die in Deutschland übliche Einheit für Thrombozyten- und Leukozytenzahlen — ist
+gültiges UCUM. Gegen denselben Server gemessen: <code class="language-plaintext highlighter-rouge">/mL</code>, <code class="language-plaintext highlighter-rouge">/dL</code> und <code class="language-plaintext highlighter-rouge">/uL</code> validieren, <code class="language-plaintext highlighter-rouge">/nL</code>, <code class="language-plaintext highlighter-rouge">/pL</code> und
+<code class="language-plaintext highlighter-rouge">/fL</code> nicht, ebenso wenig <code class="language-plaintext highlighter-rouge">/ng</code> oder <code class="language-plaintext highlighter-rouge">/nm</code>, obwohl <code class="language-plaintext highlighter-rouge">nL</code> für sich genommen validiert. Jeder Präfix
+unterhalb von <em>Mikro</em> scheitert in der Pro-Form, egal welche Basiseinheit. Das ist ein
+Implementierungsdefekt, keine Einheit, die unsere Daten falsch hätten.</li>
+  <li>41 Fehler der Form <code class="language-plaintext highlighter-rouge">There is no declared filter called LIST on code system http://loinc.org</code>.
+Ein Profil bindet ein ValueSet, dessen <code class="language-plaintext highlighter-rouge">compose</code> einen LOINC-<code class="language-plaintext highlighter-rouge">LIST</code>-Filter verwendet, den der Server
+nicht implementiert. Keine Seite liegt bei den Daten falsch; sie sind sich über einen Filter uneinig.</li>
+</ul>
+
+<p><strong>Infrastrukturrauschen.</strong> 55 <code class="language-plaintext highlighter-rouge">java.net.SocketTimeoutException: timeout</code> — der Client gibt eine
+Anfrage auf, an der der Server noch arbeitete. Sie sagen nichts über die Ressource aus, an der sie
+hängen, und sie sind ein Symptom des Laufzeitproblems unten.</p>
+
+<p>Den Terminologielauf entsprechend lesen: als Liste zum Triagieren, nicht als Zahl zum Minimieren.</p>
+
+<h3 id="warum-der-terminologielauf-dreizehn-stunden-braucht">Warum der Terminologielauf dreizehn Stunden braucht</h3>
+
+<p>Wegen einer einzigen Ressource, und keiner von uns.</p>
+
+<p>Der Validator hängt jedes geladene Supplement eines Codesystems an <em>jede</em> <code class="language-plaintext highlighter-rouge">$validate-code</code>-Anfrage gegen
+dieses Codesystem, als <code class="language-plaintext highlighter-rouge">tx-resource</code>-Parameter. Ein Supplement in der BOM,
+<code class="language-plaintext highlighter-rouge">mii-cs-kardio-supplement-snomedct</code>, trägt drei SNOMED-postkoordinierte Ausdrücke als <code class="language-plaintext highlighter-rouge">concept.code</code> und
+bindet <code class="language-plaintext highlighter-rouge">supplements</code> an eine gepinnte SNOMED-Version. Der Server reklassifiziert diese Ausdrücke bei
+jeder einzelnen Anfrage, und für eine Inline-Ressource wird das Ergebnis nicht gecacht.</p>
+
+<p>Eine reale Anfrage aus dem Proxy-Log wörtlich nachgespielt und variiert:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th style="text-align: right"><strong>mit</strong> Versions-Pin</th>
+      <th style="text-align: right"><strong>ohne</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>postkoordinierte Ausdrücke</td>
+      <td style="text-align: right"><strong>59,9 s</strong></td>
+      <td style="text-align: right">0,56 s</td>
+    </tr>
+    <tr>
+      <td>einfache SNOMED-Codes</td>
+      <td style="text-align: right">0,53 s</td>
+      <td style="text-align: right">0,53 s</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Ganz ohne den <code class="language-plaintext highlighter-rouge">tx-resource</code>-Parameter: 0,25 s. Ein Ausdruck genügt — es ist die Klassifikation, nicht
+das Volumen. Von den sechs Supplements in der BOM trägt nur dieses beide Eigenschaften.</p>
+
+<p>Über den gesamten Lauf gingen <strong>10,1 von 10,3 Stunden Terminologiewartezeit — 98 % — an 730 solche
+Anfragen</strong>; die übrigen 3.293 Anfragen kosteten zusammen zehn Minuten. Jedes Paket mit
+SNOMED-gebundenen Ressourcen zahlt das, Mikrobiologie und Lungenfunktion eingeschlossen, nicht nur die
+Kardiologie. Die Testdaten selbst enthalten keine postkoordinierten Codes: Alle 1.835 SNOMED-Codings
+sind einfache SCTIDs, und keine Ressource hier referenziert dieses Supplement. Es kommt über die
+Paketauflösung herein und fährt ungeachtet dessen mit.</p>
+
+<p>Als Befund 11 in <code class="language-plaintext highlighter-rouge">docs/ballot-findings-2027.md</code> eingereicht, mit zwei Adressaten: dem Modul, um den
+Versions-Pin zu entfernen (die anderen fünf MII-Supplements binden unversioniert, was allein den
+Faktor 110 ausmacht), und der Service Unit, für einen Cache, der auf den <code class="language-plaintext highlighter-rouge">tx-resource</code>-Inhalt
+schlüsselt.</p>
+
+<h3 id="regeln-reproduzieren-und-prüfen">Regeln reproduzieren und prüfen</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Wie sehen die Cluster aus, und auf welchen Profilen?</span>
+./scripts/advisor-rules.py validation-unfiltered.json
+
+<span class="c"># Was genau würde eine Regelkandidatin verstecken?</span>
+./scripts/advisor-rules.py validation-unfiltered.json <span class="se">\</span>
+  <span class="nt">--test</span> <span class="s2">"SLICING_CANNOT_BE_EVALUATED@Observation.component"</span>
+</code></pre></div></div>
+
+<p>Ein Vorbehalt zum Tooling: <code class="language-plaintext highlighter-rouge">advisor-rules.py</code> modelliert, wie der Validator eine Regel gegen einen
+Elementpfad abgleicht — es ist ein Modell, nicht der Validator. Die maßgebliche Zahl ist die Differenz
+zweier echter Validierungsläufe, die <code class="language-plaintext highlighter-rouge">compare-advisor-runs.py</code> aus deren Reports berechnet. Wo die beiden
+auseinanderliegen: den Läufen trauen und das Modell korrigieren.</p>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+  <script type="text/javascript" src="assets/js/flags.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+
+
+
+          IG © 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de">Medizininformatik Initiative</a>.  
+          Package de.medizininformatikinitiative.kerndatensatz.testdata#2027.0.0-ballot.rc2 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Erstellt <span title="Mon, Oct 12, 2026 07:28+0000">2026-10-12</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+            <!-- Branding override for the fhir2.base.template footer fragment.
+     Unlike header/css, the base footer fragment is NOT an empty placeholder: it
+     renders "Links: Table of Contents | QA Report [| feedback dashboards]".
+     The base uses site.data.stringsBase[include.lang][...] for the labels. The
+     reason this override supplies its own is the Imprint label: the base ships no
+     stringsBase key for it and a child template cannot add one (docs/styleguide.md
+     section 6), and the same include.lang branch then has to carry the other
+     labels too. (The blank-label problem that first motivated this is separately
+     mitigated: this repo vendors the base's own German catalogs into
+     translations/ — see translations/README.md.) The override preserves the base
+     links (TOC, QA, feedback dashboards) and appends the project information links.
+     NUM-DIZ takes over IG development and maintenance when MII funding ends
+     (end-2026), so the NUM-DIZ website link renders BEFORE the MII website link —
+     in BOTH brand designs and both languages; the MII links stay because the
+     modules remain MII content. Both anchors are the SITE ROOTS with the bare
+     domain as anchor text (TF-KDS feedback 2026-08-14: aligned anchor style;
+     domains are language-neutral, styleguide §6).
+     Imprint: points at the NUM-DIZ website's legal pages since 2026-08-14
+     (TF-KDS: NUM-DIZ takes over from MII in 2027, so legal-aspect links use
+     the NUM-DIZ counterpart where one exists) - German /impressum and English
+     /en/legal-notice (both verified HTTP 200 on 2026-08-14). -->
+
+          Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Inhaltsverzeichnis</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="../qa.html">QA-Bericht</a>
+                 
+                 | <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://www.netzwerk-universitaetsmedizin.de/">netzwerk-universitaetsmedizin.de</a>
+                 | <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://www.medizininformatik-initiative.de/">medizininformatik-initiative.de</a>
+                 | <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://www.netzwerk-universitaetsmedizin.de/impressum">Impressum</a>
+                 <br/>
+                 <!-- HL7 trademark attribution (required wherever the FHIR flame
+                      renders - the header shows it on every page; see HL7's
+                      trademark guidelines; permission request tracked in issue #109). The sentence is
+                      HL7's prescribed formula and stays in English on every
+                      language's pages (legal wording, styleguide §6). -->
+                 <span>HL7®, FHIR® and the FHIR flame design are registered trademarks of Health Level Seven International. Their use does not constitute endorsement by HL7.</span>
+
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

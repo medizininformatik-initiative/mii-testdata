@@ -1,0 +1,2455 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "mii-exa-test-data-bundle-pat-8",
+  "meta" : {
+    "source" : "https://www.charite.de/fhir/kds-testdata",
+    "security" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "code" : "HTEST",
+      "display" : "test health data"
+    }]
+  },
+  "language" : "de",
+  "type" : "transaction",
+  "timestamp" : "2025-06-18T13:58:00+02:00",
+  "entry" : [{
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Patient/mii-exa-test-data-patient-8",
+    "resource" : {
+      "resourceType" : "Patient",
+      "id" : "mii-exa-test-data-patient-8",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient",
+        "http://fhir.de/ConsentManagement/StructureDefinition/Patient"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "de",
+      "text" : {
+        "status" : "generated"
+      },
+      "identifier" : [{
+        "use" : "usual",
+        "type" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code" : "MR"
+          }]
+        },
+        "system" : "https://www.medizininformatik-initiative.de/fhir/sid/patienten",
+        "value" : "159753486",
+        "assigner" : {
+          "identifier" : {
+            "system" : "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier",
+            "value" : "Charité"
+          },
+          "display" : "Charité - Universitätsmedizin Berlin"
+        }
+      },
+      {
+        "use" : "official",
+        "type" : {
+          "coding" : [{
+            "system" : "http://fhir.de/CodeSystem/identifier-type-de-basis",
+            "code" : "KVZ10"
+          }]
+        },
+        "system" : "http://fhir.de/sid/gkv/kvid-10",
+        "value" : "F567890123",
+        "assigner" : {
+          "identifier" : {
+            "use" : "official",
+            "system" : "http://fhir.de/sid/arge-ik/iknr",
+            "value" : "234567890"
+          }
+        }
+      }],
+      "name" : [{
+        "use" : "official",
+        "family" : "Bauer",
+        "given" : ["Hans",
+        "Peter"]
+      }],
+      "gender" : "male",
+      "birthDate" : "1958-02-28",
+      "deceasedBoolean" : true,
+      "address" : [{
+        "type" : "both",
+        "line" : ["Bahnhofstraße 89"],
+        "city" : "Stuttgart",
+        "postalCode" : "70173",
+        "country" : "DE"
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Patient/mii-exa-test-data-patient-8"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Consent/mii-exa-test-data-patient-8-consent-1",
+    "resource" : {
+      "resourceType" : "Consent",
+      "id" : "mii-exa-test-data-patient-8-consent-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-einwilligung"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "de",
+      "text" : {
+        "status" : "generated"
+      },
+      "status" : "active",
+      "scope" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/consentscope",
+          "code" : "research"
+        }]
+      },
+      "category" : [{
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "57016-8"
+        }]
+      },
+      {
+        "coding" : [{
+          "system" : "https://www.medizininformatik-initiative.de/fhir/modul-consent/CodeSystem/mii-cs-consent-version-modules",
+          "code" : "2.16.840.1.113883.3.1937.777.24.2.184"
+        }]
+      }],
+      "patient" : {
+        "reference" : "Patient/mii-exa-test-data-patient-8"
+      },
+      "dateTime" : "2023-11-05T08:30:00+01:00",
+      "organization" : [{
+        "reference" : "Organization/mii-exa-test-data-organization-charite"
+      }],
+      "policy" : [{
+        "uri" : "urn:oid:2.16.840.1.113883.3.1937.777.24.2.1791"
+      }],
+      "provision" : {
+        "type" : "deny",
+        "period" : {
+          "start" : "2023-11-05",
+          "end" : "2023-11-15"
+        },
+        "provision" : [{
+          "type" : "permit",
+          "period" : {
+            "start" : "2023-11-05",
+            "end" : "2023-11-15"
+          },
+          "code" : [{
+            "coding" : [{
+              "system" : "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3",
+              "code" : "2.16.840.1.113883.3.1937.777.24.5.3.6",
+              "display" : "MDAT erheben"
+            }]
+          }]
+        },
+        {
+          "type" : "permit",
+          "period" : {
+            "start" : "2023-11-05",
+            "end" : "2023-11-15"
+          },
+          "code" : [{
+            "coding" : [{
+              "system" : "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3",
+              "code" : "2.16.840.1.113883.3.1937.777.24.5.3.7",
+              "display" : "MDAT speichern, verarbeiten"
+            }]
+          }]
+        },
+        {
+          "type" : "permit",
+          "period" : {
+            "start" : "2023-11-05",
+            "end" : "2023-11-15"
+          },
+          "code" : [{
+            "coding" : [{
+              "system" : "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3",
+              "code" : "2.16.840.1.113883.3.1937.777.24.5.3.8",
+              "display" : "MDAT wissenschaftlich nutzen"
+            }]
+          }]
+        }]
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Consent/mii-exa-test-data-patient-8-consent-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Encounter/mii-exa-test-data-patient-8-encounter-1",
+    "resource" : {
+      "resourceType" : "Encounter",
+      "id" : "mii-exa-test-data-patient-8-encounter-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "de",
+      "text" : {
+        "status" : "generated"
+      },
+      "identifier" : [{
+        "type" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code" : "VN"
+          }]
+        },
+        "system" : "https://www.charite.de/fhir/NamingSystem/Aufnahmenummern",
+        "value" : "MII_0000009"
+      }],
+      "status" : "finished",
+      "class" : {
+        "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "code" : "IMP"
+      },
+      "type" : [{
+        "coding" : [{
+          "system" : "http://fhir.de/CodeSystem/Kontaktebene",
+          "code" : "einrichtungskontakt"
+        }]
+      },
+      {
+        "coding" : [{
+          "system" : "http://fhir.de/CodeSystem/kontaktart-de",
+          "code" : "normalstationaer"
+        }]
+      }],
+      "serviceType" : {
+        "coding" : [{
+          "system" : "http://fhir.de/CodeSystem/dkgev/Fachabteilungsschluessel",
+          "code" : "0300"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-patient-8"
+      },
+      "period" : {
+        "start" : "2023-11-10",
+        "end" : "2023-11-15"
+      },
+      "diagnosis" : [{
+        "condition" : {
+          "reference" : "Condition/mii-exa-test-data-patient-8-todesursache-1"
+        },
+        "use" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/diagnosis-role",
+            "code" : "DD",
+            "display" : "Discharge diagnosis"
+          }]
+        },
+        "rank" : 1
+      }],
+      "hospitalization" : {
+        "admitSource" : {
+          "coding" : [{
+            "system" : "http://fhir.de/CodeSystem/dgkev/Aufnahmeanlass",
+            "code" : "N",
+            "display" : "Notfall"
+          }]
+        },
+        "dischargeDisposition" : {
+          "extension" : [{
+            "extension" : [{
+              "url" : "ErsteUndZweiteStelle",
+              "valueCoding" : {
+                "system" : "http://fhir.de/CodeSystem/dkgev/EntlassungsgrundErsteUndZweiteStelle",
+                "code" : "07",
+                "display" : "Tod"
+              }
+            },
+            {
+              "url" : "DritteStelle",
+              "valueCoding" : {
+                "system" : "http://fhir.de/CodeSystem/dkgev/EntlassungsgrundDritteStelle",
+                "code" : "9",
+                "display" : "keine Angabe"
+              }
+            }],
+            "url" : "http://fhir.de/StructureDefinition/Entlassungsgrund"
+          }]
+        }
+      },
+      "serviceProvider" : {
+        "reference" : "Organization/mii-exa-test-data-organization-charite",
+        "identifier" : {
+          "system" : "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier",
+          "value" : "Charité"
+        },
+        "display" : "Charité - Universitätsmedizin Berlin"
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Encounter/mii-exa-test-data-patient-8-encounter-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Condition/mii-exa-test-data-patient-8-diagnose-1",
+    "resource" : {
+      "resourceType" : "Condition",
+      "id" : "mii-exa-test-data-patient-8-diagnose-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/core/modul-diagnose/StructureDefinition/Diagnose"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "de",
+      "text" : {
+        "status" : "generated"
+      },
+      "clinicalStatus" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code" : "active"
+        }]
+      },
+      "verificationStatus" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code" : "confirmed"
+        }]
+      },
+      "code" : {
+        "coding" : [{
+          "system" : "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+          "version" : "2023",
+          "code" : "I25.9"
+        },
+        {
+          "system" : "http://fhir.de/CodeSystem/bfarm/alpha-id",
+          "version" : "2023",
+          "code" : "I26852",
+          "display" : "Chronische ischämische Herzkrankheit"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "413838009",
+          "display" : "Chronic ischemic heart disease (disorder)"
+        }]
+      },
+      "bodySite" : [{
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "80891009",
+          "display" : "Heart structure (body structure)"
+        }]
+      }],
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-patient-8"
+      },
+      "recordedDate" : "2023-11-10",
+      "note" : [{
+        "text" : "Chronische ischämische Herzkrankheit, nicht näher bezeichnet"
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Condition/mii-exa-test-data-patient-8-diagnose-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-8-vitalstatus-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-patient-8-vitalstatus-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Vitalstatus"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "de",
+      "text" : {
+        "status" : "generated"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "survey"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "67162-8"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-patient-8"
+      },
+      "effectiveDateTime" : "2023-11-15",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "https://www.medizininformatik-initiative.de/fhir/core/modul-person/CodeSystem/Vitalstatus",
+          "code" : "T"
+        }]
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-patient-8-vitalstatus-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Condition/mii-exa-test-data-patient-8-todesursache-1",
+    "resource" : {
+      "resourceType" : "Condition",
+      "id" : "mii-exa-test-data-patient-8-todesursache-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Todesursache"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "de",
+      "text" : {
+        "status" : "generated"
+      },
+      "clinicalStatus" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code" : "active"
+        }]
+      },
+      "verificationStatus" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code" : "confirmed"
+        }]
+      },
+      "category" : [{
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "16100001"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "79378-6"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/sid/icd-10",
+          "version" : "2019",
+          "code" : "I21.9"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-patient-8"
+      },
+      "recordedDate" : "2023-11-15",
+      "note" : [{
+        "text" : "Akuter Herzinfarkt"
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Condition/mii-exa-test-data-patient-8-todesursache-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Procedure/mii-exa-test-data-patient-8-prozedur-1",
+    "resource" : {
+      "resourceType" : "Procedure",
+      "id" : "mii-exa-test-data-patient-8-prozedur-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Procedure"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "de",
+      "text" : {
+        "status" : "extensions"
+      },
+      "extension" : [{
+        "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Durchfuehrungsabsicht",
+        "valueCoding" : {
+          "system" : "http://snomed.info/sct",
+          "code" : "261004008",
+          "display" : "Diagnostic intent"
+        }
+      }],
+      "status" : "completed",
+      "category" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "165197003"
+        }]
+      },
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "33367005"
+        },
+        {
+          "system" : "http://fhir.de/CodeSystem/bfarm/ops",
+          "version" : "2023",
+          "code" : "1-275.2"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-patient-8"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-patient-8-encounter-1"
+      },
+      "performedDateTime" : "2023-11-12T07:30:00+01:00",
+      "recorder" : {
+        "reference" : "PractitionerRole/mii-exa-test-data-practitioner-role-physician-1"
+      },
+      "bodySite" : [{
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "41801008"
+        }]
+      }],
+      "note" : [{
+        "text" : "Notfall-Koronarangiographie bei akutem STEMI"
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Procedure/mii-exa-test-data-patient-8-prozedur-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Procedure/mii-exa-test-data-patient-8-prozedur-2",
+    "resource" : {
+      "resourceType" : "Procedure",
+      "id" : "mii-exa-test-data-patient-8-prozedur-2",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Procedure"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "de",
+      "text" : {
+        "status" : "extensions"
+      },
+      "extension" : [{
+        "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Durchfuehrungsabsicht",
+        "valueCoding" : {
+          "system" : "http://snomed.info/sct",
+          "code" : "262202000",
+          "display" : "Therapeutic"
+        }
+      }],
+      "status" : "completed",
+      "category" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "387713003"
+        }]
+      },
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "41339005"
+        },
+        {
+          "system" : "http://fhir.de/CodeSystem/bfarm/ops",
+          "version" : "2023",
+          "code" : "8-837.m0"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-patient-8"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-patient-8-encounter-1"
+      },
+      "performedPeriod" : {
+        "start" : "2023-11-12T08:00:00+01:00",
+        "end" : "2023-11-12T10:30:00+01:00"
+      },
+      "recorder" : {
+        "reference" : "PractitionerRole/mii-exa-test-data-practitioner-role-physician-1"
+      },
+      "bodySite" : [{
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "41801008"
+        }]
+      }],
+      "note" : [{
+        "text" : "Primäre PCI mit Stent-Implantation in die LAD"
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Procedure/mii-exa-test-data-patient-8-prozedur-2"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Procedure/mii-exa-test-data-patient-8-prozedur-3",
+    "resource" : {
+      "resourceType" : "Procedure",
+      "id" : "mii-exa-test-data-patient-8-prozedur-3",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Procedure"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "de",
+      "text" : {
+        "status" : "extensions"
+      },
+      "extension" : [{
+        "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Durchfuehrungsabsicht",
+        "valueCoding" : {
+          "system" : "http://snomed.info/sct",
+          "code" : "262202000",
+          "display" : "Therapeutic"
+        }
+      }],
+      "status" : "completed",
+      "category" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "277132007"
+        }]
+      },
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "89666000"
+        },
+        {
+          "system" : "http://fhir.de/CodeSystem/bfarm/ops",
+          "version" : "2023",
+          "code" : "8-771"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-patient-8"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-patient-8-encounter-1"
+      },
+      "performedPeriod" : {
+        "start" : "2023-11-15T14:20:00+01:00",
+        "end" : "2023-11-15T15:45:00+01:00"
+      },
+      "recorder" : {
+        "reference" : "PractitionerRole/mii-exa-test-data-practitioner-role-physician-1"
+      },
+      "bodySite" : [{
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "113257007"
+        }]
+      }],
+      "note" : [{
+        "text" : "Erfolglose kardiopulmonale Reanimation bei Kammerflimmern"
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Procedure/mii-exa-test-data-patient-8-prozedur-3"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/ServiceRequest/mii-exa-test-data-patient-8-labrequest-1",
+    "resource" : {
+      "resourceType" : "ServiceRequest",
+      "id" : "mii-exa-test-data-patient-8-labrequest-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ServiceRequestLab"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "de",
+      "text" : {
+        "status" : "generated"
+      },
+      "identifier" : [{
+        "type" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code" : "PLAC"
+          }]
+        },
+        "system" : "https://www.charite.de/fhir/sid/lab-requests",
+        "value" : "LAB_000008",
+        "assigner" : {
+          "identifier" : {
+            "system" : "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier",
+            "value" : "Charité"
+          }
+        }
+      }],
+      "status" : "completed",
+      "intent" : "order",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "laboratory"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "89576-3"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-patient-8"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-patient-8-encounter-1"
+      },
+      "authoredOn" : "2023-11-12T06:00:00+01:00",
+      "requester" : {
+        "reference" : "Practitioner/mii-exa-test-data-practitioner-physician-1"
+      },
+      "reasonCode" : [{
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "22298006",
+          "display" : "Myocardial infarction"
+        }]
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "ServiceRequest/mii-exa-test-data-patient-8-labrequest-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/DiagnosticReport/mii-exa-test-data-patient-8-labreport-1",
+    "resource" : {
+      "resourceType" : "DiagnosticReport",
+      "id" : "mii-exa-test-data-patient-8-labreport-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/DiagnosticReportLab"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "de",
+      "text" : {
+        "status" : "generated"
+      },
+      "identifier" : [{
+        "type" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code" : "FILL"
+          }]
+        },
+        "system" : "https://www.charite.de/fhir/sid/lab-results",
+        "value" : "LDR_000008",
+        "assigner" : {
+          "identifier" : {
+            "system" : "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier",
+            "value" : "Charité"
+          }
+        }
+      }],
+      "basedOn" : [{
+        "reference" : "ServiceRequest/mii-exa-test-data-patient-8-labrequest-1"
+      }],
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code" : "LAB"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "26436-6",
+          "display" : "Laboratory studies (set)"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "11502-2",
+          "display" : "Laboratory report"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-patient-8"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-patient-8-encounter-1"
+      },
+      "effectiveDateTime" : "2023-11-12T06:30:00+01:00",
+      "issued" : "2023-11-12T10:45:00+01:00",
+      "performer" : [{
+        "reference" : "Organization/mii-exa-test-data-organization-labor-berlin"
+      }],
+      "result" : [{
+        "reference" : "Observation/mii-exa-test-data-patient-8-labobs-1"
+      },
+      {
+        "reference" : "Observation/mii-exa-test-data-patient-8-labobs-2"
+      },
+      {
+        "reference" : "Observation/mii-exa-test-data-patient-8-labobs-3"
+      }],
+      "conclusion" : "ST-Hebungsinfarkt (STEMI): Kritisch erhöhtes Troponin T (2,8 ng/mL) und CK-MB (85 U/L) bestätigen akuten Myokardinfarkt. Sofortige Reperfusionstherapie erforderlich."
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "DiagnosticReport/mii-exa-test-data-patient-8-labreport-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-8-labobs-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-patient-8-labobs-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "de",
+      "text" : {
+        "status" : "generated"
+      },
+      "identifier" : [{
+        "type" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code" : "OBI"
+          }]
+        },
+        "system" : "https://www.charite.de/fhir/sid/lab-results",
+        "value" : "LO_000026",
+        "assigner" : {
+          "identifier" : {
+            "system" : "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier",
+            "value" : "Charité"
+          }
+        }
+      }],
+      "basedOn" : [{
+        "reference" : "ServiceRequest/mii-exa-test-data-patient-8-labrequest-1"
+      }],
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "laboratory",
+          "display" : "Laboratory"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "26436-6",
+          "display" : "Laboratory studies (set)"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "26464-8",
+          "display" : "Leukocytes [#/volume] in Blood"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-patient-8"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-patient-8-encounter-1"
+      },
+      "effectiveDateTime" : "2023-11-12T06:30:00+01:00",
+      "issued" : "2023-11-12T08:15:00+01:00",
+      "valueQuantity" : {
+        "value" : 13.8,
+        "unit" : "/nanoliter",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "/nL"
+      },
+      "interpretation" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code" : "H",
+          "display" : "High"
+        }]
+      }],
+      "method" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "703452004",
+          "display" : "Electrical impedance technique (qualifier value)"
+        }]
+      },
+      "device" : {
+        "reference" : "Device/mii-exa-test-data-device-roche-cobas-c303"
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-patient-8-labobs-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-8-labobs-2",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-patient-8-labobs-2",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "de",
+      "text" : {
+        "status" : "generated"
+      },
+      "identifier" : [{
+        "type" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code" : "OBI"
+          }]
+        },
+        "system" : "https://www.charite.de/fhir/sid/lab-results",
+        "value" : "LO_000027",
+        "assigner" : {
+          "identifier" : {
+            "system" : "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier",
+            "value" : "Charité"
+          }
+        }
+      }],
+      "basedOn" : [{
+        "reference" : "ServiceRequest/mii-exa-test-data-patient-8-labrequest-1"
+      }],
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "laboratory",
+          "display" : "Laboratory"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "26436-6",
+          "display" : "Laboratory studies (set)"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "6598-7",
+          "display" : "Troponin T.cardiac [Mass/volume] in Serum or Plasma"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-patient-8"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-patient-8-encounter-1"
+      },
+      "effectiveDateTime" : "2023-11-12T06:30:00+01:00",
+      "issued" : "2023-11-12T08:15:00+01:00",
+      "valueQuantity" : {
+        "value" : 2.8,
+        "unit" : "nanogram per milliliter",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "ng/mL"
+      },
+      "interpretation" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code" : "HH",
+          "display" : "Critical high"
+        }]
+      }],
+      "note" : [{
+        "text" : "Stark erhöhtes Troponin T bei Myokardinfarkt"
+      }],
+      "method" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "83561000052101",
+          "display" : "Photometry technique (qualifier value)"
+        }]
+      },
+      "device" : {
+        "reference" : "Device/mii-exa-test-data-device-roche-cobas-c303"
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-patient-8-labobs-2"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-patient-8-labobs-3",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-patient-8-labobs-3",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "de",
+      "text" : {
+        "status" : "generated"
+      },
+      "identifier" : [{
+        "type" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code" : "OBI"
+          }]
+        },
+        "system" : "https://www.charite.de/fhir/sid/lab-results",
+        "value" : "LO_000028",
+        "assigner" : {
+          "identifier" : {
+            "system" : "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier",
+            "value" : "Charité"
+          }
+        }
+      }],
+      "basedOn" : [{
+        "reference" : "ServiceRequest/mii-exa-test-data-patient-8-labrequest-1"
+      }],
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "laboratory",
+          "display" : "Laboratory"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "26436-6",
+          "display" : "Laboratory studies (set)"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "2157-6",
+          "display" : "Creatine kinase [Enzymatic activity/volume] in Serum or Plasma"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-patient-8"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-patient-8-encounter-1"
+      },
+      "effectiveDateTime" : "2023-11-12T06:30:00+01:00",
+      "issued" : "2023-11-12T08:15:00+01:00",
+      "valueQuantity" : {
+        "value" : 85,
+        "unit" : "unit per liter",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "U/L"
+      },
+      "interpretation" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code" : "H",
+          "display" : "High"
+        }]
+      }],
+      "method" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "83561000052101",
+          "display" : "Photometry technique (qualifier value)"
+        }]
+      },
+      "device" : {
+        "reference" : "Device/mii-exa-test-data-device-roche-cobas-c303"
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-patient-8-labobs-3"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/MedicationRequest/mii-exa-test-data-patient-8-medrequest-1",
+    "resource" : {
+      "resourceType" : "MedicationRequest",
+      "id" : "mii-exa-test-data-patient-8-medrequest-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationRequest"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "de",
+      "text" : {
+        "status" : "generated"
+      },
+      "identifier" : [{
+        "system" : "https://www.charite.de/fhir/sid/MedicationOrders",
+        "value" : "MO_0000020"
+      }],
+      "status" : "active",
+      "intent" : "order",
+      "medicationReference" : {
+        "reference" : "Medication/mii-exa-test-data-medication-heparin"
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-patient-8"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-patient-8-encounter-1"
+      },
+      "authoredOn" : "2023-11-12T08:00:00+01:00",
+      "dosageInstruction" : [{
+        "text" : "Heparin 5000 IE s.c. alle 12 Stunden",
+        "timing" : {
+          "repeat" : {
+            "frequency" : 2,
+            "period" : 1,
+            "periodUnit" : "d"
+          }
+        },
+        "route" : {
+          "coding" : [{
+            "system" : "http://standardterms.edqm.eu",
+            "code" : "20066000",
+            "display" : "Subcutaneous use"
+          }]
+        },
+        "doseAndRate" : [{
+          "doseQuantity" : {
+            "value" : 5000,
+            "unit" : "IU",
+            "system" : "http://unitsofmeasure.org",
+            "code" : "[iU]"
+          }
+        }]
+      }],
+      "substitution" : {
+        "allowedBoolean" : false
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "MedicationRequest/mii-exa-test-data-patient-8-medrequest-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/MedicationRequest/mii-exa-test-data-patient-8-medrequest-2",
+    "resource" : {
+      "resourceType" : "MedicationRequest",
+      "id" : "mii-exa-test-data-patient-8-medrequest-2",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationRequest"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "de",
+      "text" : {
+        "status" : "generated"
+      },
+      "identifier" : [{
+        "system" : "https://www.charite.de/fhir/sid/MedicationOrders",
+        "value" : "MO_0000021"
+      }],
+      "status" : "active",
+      "intent" : "order",
+      "medicationReference" : {
+        "reference" : "Medication/mii-exa-test-data-medication-metoprolol"
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-patient-8"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-patient-8-encounter-1"
+      },
+      "authoredOn" : "2023-11-12T08:30:00+01:00",
+      "dosageInstruction" : [{
+        "sequence" : 1,
+        "text" : "Metoprolol 25mg morgens",
+        "timing" : {
+          "repeat" : {
+            "frequency" : 1,
+            "period" : 1,
+            "periodUnit" : "d",
+            "when" : ["MORN"]
+          }
+        },
+        "route" : {
+          "coding" : [{
+            "system" : "http://standardterms.edqm.eu",
+            "code" : "20053000",
+            "display" : "Oral use"
+          }]
+        },
+        "doseAndRate" : [{
+          "doseQuantity" : {
+            "value" : 25,
+            "unit" : "mg",
+            "system" : "http://unitsofmeasure.org",
+            "code" : "mg"
+          }
+        }]
+      },
+      {
+        "sequence" : 2,
+        "text" : "Metoprolol 50mg abends",
+        "timing" : {
+          "repeat" : {
+            "frequency" : 1,
+            "period" : 1,
+            "periodUnit" : "d",
+            "when" : ["EVE"]
+          }
+        },
+        "route" : {
+          "coding" : [{
+            "system" : "http://standardterms.edqm.eu",
+            "code" : "20053000",
+            "display" : "Oral use"
+          }]
+        },
+        "doseAndRate" : [{
+          "doseQuantity" : {
+            "value" : 50,
+            "unit" : "mg",
+            "system" : "http://unitsofmeasure.org",
+            "code" : "mg"
+          }
+        }]
+      }],
+      "substitution" : {
+        "allowedBoolean" : true
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "MedicationRequest/mii-exa-test-data-patient-8-medrequest-2"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/MedicationRequest/mii-exa-test-data-patient-8-medrequest-3",
+    "resource" : {
+      "resourceType" : "MedicationRequest",
+      "id" : "mii-exa-test-data-patient-8-medrequest-3",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationRequest"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "de",
+      "text" : {
+        "status" : "generated"
+      },
+      "identifier" : [{
+        "system" : "https://www.charite.de/fhir/sid/MedicationOrders",
+        "value" : "MO_0000022"
+      }],
+      "status" : "active",
+      "intent" : "order",
+      "medicationReference" : {
+        "reference" : "Medication/mii-exa-test-data-medication-atorvastatin"
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-patient-8"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-patient-8-encounter-1"
+      },
+      "authoredOn" : "2023-11-12T09:00:00+01:00",
+      "dosageInstruction" : [{
+        "text" : "Atorvastatin 40mg 1x täglich abends",
+        "timing" : {
+          "repeat" : {
+            "frequency" : 1,
+            "period" : 1,
+            "periodUnit" : "d",
+            "when" : ["EVE"]
+          }
+        },
+        "route" : {
+          "coding" : [{
+            "system" : "http://standardterms.edqm.eu",
+            "code" : "20053000",
+            "display" : "Oral use"
+          }]
+        },
+        "doseAndRate" : [{
+          "doseQuantity" : {
+            "value" : 40,
+            "unit" : "mg",
+            "system" : "http://unitsofmeasure.org",
+            "code" : "mg"
+          }
+        }]
+      }],
+      "substitution" : {
+        "allowedBoolean" : true
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "MedicationRequest/mii-exa-test-data-patient-8-medrequest-3"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/MedicationStatement/mii-exa-test-data-patient-8-medstatement-1",
+    "resource" : {
+      "resourceType" : "MedicationStatement",
+      "id" : "mii-exa-test-data-patient-8-medstatement-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "de",
+      "text" : {
+        "status" : "generated"
+      },
+      "identifier" : [{
+        "system" : "https://www.charite.de/fhir/sid/MedicationStatements",
+        "value" : "MS_0000021"
+      }],
+      "basedOn" : [{
+        "reference" : "MedicationRequest/mii-exa-test-data-patient-8-medrequest-1"
+      }],
+      "status" : "completed",
+      "category" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/medication-statement-category",
+          "code" : "inpatient"
+        },
+        {
+          "system" : "http://ihe-d.de/CodeSystems/FallkontextBeiDokumentenerstellung",
+          "code" : "E200",
+          "display" : "stationärer Aufenthalt"
+        }]
+      },
+      "medicationReference" : {
+        "reference" : "Medication/mii-exa-test-data-medication-heparin"
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-patient-8"
+      },
+      "context" : {
+        "reference" : "Encounter/mii-exa-test-data-patient-8-encounter-1"
+      },
+      "effectivePeriod" : {
+        "start" : "2023-11-12T08:00:00+01:00",
+        "end" : "2023-11-15T14:00:00+01:00"
+      },
+      "dateAsserted" : "2023-11-12",
+      "dosage" : [{
+        "text" : "Heparin 5000 IE s.c. alle 12 Stunden",
+        "timing" : {
+          "repeat" : {
+            "frequency" : 2,
+            "period" : 1,
+            "periodUnit" : "d"
+          }
+        },
+        "route" : {
+          "coding" : [{
+            "system" : "http://standardterms.edqm.eu",
+            "code" : "20066000",
+            "display" : "Subcutaneous use"
+          }]
+        },
+        "doseAndRate" : [{
+          "doseQuantity" : {
+            "value" : 5000,
+            "unit" : "IU",
+            "system" : "http://unitsofmeasure.org",
+            "code" : "[iU]"
+          }
+        }]
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "MedicationStatement/mii-exa-test-data-patient-8-medstatement-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/MedicationStatement/mii-exa-test-data-patient-8-medstatement-2",
+    "resource" : {
+      "resourceType" : "MedicationStatement",
+      "id" : "mii-exa-test-data-patient-8-medstatement-2",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "de",
+      "text" : {
+        "status" : "generated"
+      },
+      "identifier" : [{
+        "system" : "https://www.charite.de/fhir/sid/MedicationStatements",
+        "value" : "MS_0000022"
+      }],
+      "basedOn" : [{
+        "reference" : "MedicationRequest/mii-exa-test-data-patient-8-medrequest-2"
+      }],
+      "status" : "completed",
+      "category" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/medication-statement-category",
+          "code" : "inpatient"
+        },
+        {
+          "system" : "http://ihe-d.de/CodeSystems/FallkontextBeiDokumentenerstellung",
+          "code" : "E200",
+          "display" : "stationärer Aufenthalt"
+        }]
+      },
+      "medicationReference" : {
+        "reference" : "Medication/mii-exa-test-data-medication-metoprolol"
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-patient-8"
+      },
+      "context" : {
+        "reference" : "Encounter/mii-exa-test-data-patient-8-encounter-1"
+      },
+      "effectivePeriod" : {
+        "start" : "2023-11-12T08:30:00+01:00",
+        "end" : "2023-11-15T14:00:00+01:00"
+      },
+      "dateAsserted" : "2023-11-12",
+      "dosage" : [{
+        "text" : "Metoprolol 50mg 2x täglich",
+        "timing" : {
+          "repeat" : {
+            "frequency" : 2,
+            "period" : 1,
+            "periodUnit" : "d"
+          }
+        },
+        "route" : {
+          "coding" : [{
+            "system" : "http://standardterms.edqm.eu",
+            "code" : "20053000",
+            "display" : "Oral use"
+          }]
+        },
+        "doseAndRate" : [{
+          "doseQuantity" : {
+            "value" : 50,
+            "unit" : "mg",
+            "system" : "http://unitsofmeasure.org",
+            "code" : "mg"
+          }
+        }]
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "MedicationStatement/mii-exa-test-data-patient-8-medstatement-2"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/MedicationStatement/mii-exa-test-data-patient-8-medstatement-3",
+    "resource" : {
+      "resourceType" : "MedicationStatement",
+      "id" : "mii-exa-test-data-patient-8-medstatement-3",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "de",
+      "text" : {
+        "status" : "generated"
+      },
+      "identifier" : [{
+        "system" : "https://www.charite.de/fhir/sid/MedicationStatements",
+        "value" : "MS_0000023"
+      }],
+      "basedOn" : [{
+        "reference" : "MedicationRequest/mii-exa-test-data-patient-8-medrequest-3"
+      }],
+      "status" : "completed",
+      "category" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/medication-statement-category",
+          "code" : "inpatient"
+        },
+        {
+          "system" : "http://ihe-d.de/CodeSystems/FallkontextBeiDokumentenerstellung",
+          "code" : "E200",
+          "display" : "stationärer Aufenthalt"
+        }]
+      },
+      "medicationReference" : {
+        "reference" : "Medication/mii-exa-test-data-medication-atorvastatin"
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-patient-8"
+      },
+      "context" : {
+        "reference" : "Encounter/mii-exa-test-data-patient-8-encounter-1"
+      },
+      "effectivePeriod" : {
+        "start" : "2023-11-12T09:00:00+01:00",
+        "end" : "2023-11-15T14:00:00+01:00"
+      },
+      "dateAsserted" : "2023-11-12",
+      "dosage" : [{
+        "text" : "Atorvastatin 40mg 1x täglich abends",
+        "timing" : {
+          "repeat" : {
+            "frequency" : 1,
+            "period" : 1,
+            "periodUnit" : "d",
+            "when" : ["EVE"]
+          }
+        },
+        "route" : {
+          "coding" : [{
+            "system" : "http://standardterms.edqm.eu",
+            "code" : "20053000",
+            "display" : "Oral use"
+          }]
+        },
+        "doseAndRate" : [{
+          "doseQuantity" : {
+            "value" : 40,
+            "unit" : "mg",
+            "system" : "http://unitsofmeasure.org",
+            "code" : "mg"
+          }
+        }]
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "MedicationStatement/mii-exa-test-data-patient-8-medstatement-3"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/MedicationAdministration/mii-exa-test-data-patient-8-medadmin-1",
+    "resource" : {
+      "resourceType" : "MedicationAdministration",
+      "id" : "mii-exa-test-data-patient-8-medadmin-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationAdministration"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "de",
+      "text" : {
+        "status" : "generated"
+      },
+      "identifier" : [{
+        "system" : "https://www.charite.de/fhir/sid/MedicationAdministrations",
+        "value" : "MA_0000017"
+      }],
+      "status" : "completed",
+      "category" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/medication-admin-category",
+          "code" : "inpatient",
+          "display" : "Inpatient"
+        }]
+      },
+      "medicationReference" : {
+        "reference" : "Medication/mii-exa-test-data-medication-heparin"
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-patient-8"
+      },
+      "context" : {
+        "reference" : "Encounter/mii-exa-test-data-patient-8-encounter-1"
+      },
+      "effectiveDateTime" : "2023-11-12T08:00:00+01:00",
+      "request" : {
+        "reference" : "MedicationRequest/mii-exa-test-data-patient-8-medrequest-1"
+      },
+      "dosage" : {
+        "text" : "Heparin 5000 IE s.c.",
+        "route" : {
+          "coding" : [{
+            "system" : "http://standardterms.edqm.eu",
+            "code" : "20066000",
+            "display" : "Subcutaneous use"
+          }]
+        },
+        "dose" : {
+          "value" : 5000,
+          "unit" : "IU",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "[iU]"
+        }
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "MedicationAdministration/mii-exa-test-data-patient-8-medadmin-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/MedicationAdministration/mii-exa-test-data-patient-8-medadmin-2",
+    "resource" : {
+      "resourceType" : "MedicationAdministration",
+      "id" : "mii-exa-test-data-patient-8-medadmin-2",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationAdministration"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "de",
+      "text" : {
+        "status" : "generated"
+      },
+      "identifier" : [{
+        "system" : "https://www.charite.de/fhir/sid/MedicationAdministrations",
+        "value" : "MA_0000018"
+      }],
+      "status" : "completed",
+      "category" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/medication-admin-category",
+          "code" : "inpatient",
+          "display" : "Inpatient"
+        }]
+      },
+      "medicationReference" : {
+        "reference" : "Medication/mii-exa-test-data-medication-metoprolol"
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-patient-8"
+      },
+      "context" : {
+        "reference" : "Encounter/mii-exa-test-data-patient-8-encounter-1"
+      },
+      "effectiveDateTime" : "2023-11-12T09:00:00+01:00",
+      "request" : {
+        "reference" : "MedicationRequest/mii-exa-test-data-patient-8-medrequest-2"
+      },
+      "dosage" : {
+        "text" : "Metoprolol 50mg oral",
+        "route" : {
+          "coding" : [{
+            "system" : "http://standardterms.edqm.eu",
+            "code" : "20053000",
+            "display" : "Oral use"
+          }]
+        },
+        "dose" : {
+          "value" : 50,
+          "unit" : "mg",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "mg"
+        }
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "MedicationAdministration/mii-exa-test-data-patient-8-medadmin-2"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/MedicationAdministration/mii-exa-test-data-patient-8-medadmin-3",
+    "resource" : {
+      "resourceType" : "MedicationAdministration",
+      "id" : "mii-exa-test-data-patient-8-medadmin-3",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationAdministration"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "de",
+      "text" : {
+        "status" : "generated"
+      },
+      "identifier" : [{
+        "system" : "https://www.charite.de/fhir/sid/MedicationAdministrations",
+        "value" : "MA_0000021"
+      }],
+      "status" : "completed",
+      "category" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/medication-admin-category",
+          "code" : "inpatient",
+          "display" : "Inpatient"
+        }]
+      },
+      "medicationReference" : {
+        "reference" : "Medication/mii-exa-test-data-medication-atorvastatin"
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-patient-8"
+      },
+      "context" : {
+        "reference" : "Encounter/mii-exa-test-data-patient-8-encounter-1"
+      },
+      "effectiveDateTime" : "2023-11-12T20:00:00+01:00",
+      "request" : {
+        "reference" : "MedicationRequest/mii-exa-test-data-patient-8-medrequest-3"
+      },
+      "dosage" : {
+        "text" : "Atorvastatin 80mg oral zur Nacht",
+        "site" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "74262004",
+            "display" : "Oral cavity structure (body structure)"
+          }]
+        },
+        "route" : {
+          "coding" : [{
+            "system" : "http://standardterms.edqm.eu",
+            "code" : "20053000",
+            "display" : "Oral use"
+          }]
+        },
+        "dose" : {
+          "value" : 80,
+          "unit" : "mg",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "mg"
+        }
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "MedicationAdministration/mii-exa-test-data-patient-8-medadmin-3"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/List/mii-exa-test-data-patient-8-list-stat-aufenthalt",
+    "resource" : {
+      "resourceType" : "List",
+      "id" : "mii-exa-test-data-patient-8-list-stat-aufenthalt",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/medikationsliste"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "de",
+      "text" : {
+        "status" : "generated"
+      },
+      "status" : "current",
+      "mode" : "working",
+      "title" : "Medikationsliste während stationärem Aufenthalt",
+      "code" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/list-example-use-codes",
+          "code" : "medications"
+        },
+        {
+          "system" : "http://ihe-d.de/CodeSystems/FallkontextBeiDokumentenerstellung",
+          "code" : "E200"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-patient-8"
+      },
+      "entry" : [{
+        "item" : {
+          "reference" : "MedicationStatement/mii-exa-test-data-patient-8-medstatement-1"
+        }
+      },
+      {
+        "item" : {
+          "reference" : "MedicationStatement/mii-exa-test-data-patient-8-medstatement-2"
+        }
+      },
+      {
+        "item" : {
+          "reference" : "MedicationStatement/mii-exa-test-data-patient-8-medstatement-3"
+        }
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "List/mii-exa-test-data-patient-8-list-stat-aufenthalt"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Medication/mii-exa-test-data-medication-heparin",
+    "resource" : {
+      "resourceType" : "Medication",
+      "id" : "mii-exa-test-data-medication-heparin",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "de",
+      "text" : {
+        "status" : "generated"
+      },
+      "code" : {
+        "coding" : [{
+          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
+          "version" : "2024",
+          "code" : "B01AB01",
+          "display" : "Heparin"
+        }]
+      },
+      "status" : "active",
+      "form" : {
+        "coding" : [{
+          "system" : "http://standardterms.edqm.eu",
+          "code" : "11201000",
+          "display" : "Solution for injection"
+        }]
+      },
+      "ingredient" : [{
+        "itemCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://fhir.de/CodeSystem/ask",
+            "version" : "20260105",
+            "code" : "12545"
+          }]
+        },
+        "strength" : {
+          "numerator" : {
+            "value" : 25000,
+            "unit" : "IU",
+            "system" : "http://unitsofmeasure.org",
+            "code" : "[iU]"
+          },
+          "denominator" : {
+            "value" : 5,
+            "unit" : "ml",
+            "system" : "http://unitsofmeasure.org",
+            "code" : "ml"
+          }
+        }
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Medication/mii-exa-test-data-medication-heparin"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Medication/mii-exa-test-data-medication-metoprolol",
+    "resource" : {
+      "resourceType" : "Medication",
+      "id" : "mii-exa-test-data-medication-metoprolol",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "de",
+      "text" : {
+        "status" : "generated"
+      },
+      "code" : {
+        "coding" : [{
+          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
+          "version" : "2024",
+          "code" : "C07AB02",
+          "display" : "Metoprolol"
+        }]
+      },
+      "status" : "active",
+      "form" : {
+        "coding" : [{
+          "system" : "http://standardterms.edqm.eu",
+          "code" : "10221000",
+          "display" : "Film-coated tablet"
+        }]
+      },
+      "ingredient" : [{
+        "itemCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://fhir.de/CodeSystem/ask",
+            "version" : "20260105",
+            "code" : "11849"
+          }]
+        },
+        "strength" : {
+          "numerator" : {
+            "value" : 50,
+            "unit" : "mg",
+            "system" : "http://unitsofmeasure.org",
+            "code" : "mg"
+          },
+          "denominator" : {
+            "value" : 1,
+            "unit" : "1",
+            "system" : "http://unitsofmeasure.org",
+            "code" : "1"
+          }
+        }
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Medication/mii-exa-test-data-medication-metoprolol"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Medication/mii-exa-test-data-medication-atorvastatin",
+    "resource" : {
+      "resourceType" : "Medication",
+      "id" : "mii-exa-test-data-medication-atorvastatin",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "de",
+      "text" : {
+        "status" : "generated"
+      },
+      "code" : {
+        "coding" : [{
+          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
+          "version" : "2024",
+          "code" : "C10AA05",
+          "display" : "Atorvastatin"
+        }]
+      },
+      "status" : "active",
+      "form" : {
+        "coding" : [{
+          "system" : "http://standardterms.edqm.eu",
+          "code" : "10221000",
+          "display" : "Film-coated tablet"
+        }]
+      },
+      "ingredient" : [{
+        "itemCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://fhir.de/CodeSystem/ask",
+            "version" : "20260105",
+            "code" : "28860"
+          }]
+        },
+        "strength" : {
+          "numerator" : {
+            "value" : 40,
+            "unit" : "mg",
+            "system" : "http://unitsofmeasure.org",
+            "code" : "mg"
+          },
+          "denominator" : {
+            "value" : 1,
+            "unit" : "1",
+            "system" : "http://unitsofmeasure.org",
+            "code" : "1"
+          }
+        }
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Medication/mii-exa-test-data-medication-atorvastatin"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Organization/mii-exa-test-data-organization-charite",
+    "resource" : {
+      "resourceType" : "Organization",
+      "id" : "mii-exa-test-data-organization-charite",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "de",
+      "text" : {
+        "status" : "generated"
+      },
+      "type" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/organization-type",
+          "code" : "prov",
+          "display" : "Healthcare Provider"
+        }]
+      }],
+      "name" : "Charité – Universitätsmedizin Berlin"
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Organization/mii-exa-test-data-organization-charite"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Organization/mii-exa-test-data-organization-labor-berlin",
+    "resource" : {
+      "resourceType" : "Organization",
+      "id" : "mii-exa-test-data-organization-labor-berlin",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "de",
+      "text" : {
+        "status" : "generated"
+      },
+      "type" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/organization-type",
+          "code" : "prov",
+          "display" : "Healthcare Provider"
+        }]
+      }],
+      "name" : "Labor Berlin – Charité Vivantes GmbH"
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Organization/mii-exa-test-data-organization-labor-berlin"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Organization/mii-exa-test-data-organization-biobank-charite",
+    "resource" : {
+      "resourceType" : "Organization",
+      "id" : "mii-exa-test-data-organization-biobank-charite",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Organization"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "de",
+      "text" : {
+        "status" : "extensions"
+      },
+      "extension" : [{
+        "url" : "https://fhir.bbmri-eric.eu/StructureDefinition/miabis-organization-description-extension",
+        "valueString" : "Zentrale Biobank der Charité"
+      },
+      {
+        "url" : "https://fhir.bbmri-eric.eu/StructureDefinition/miabis-sample-collection-setting-extension",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "https://fhir.bbmri-eric.eu/CodeSystem/miabis-sample-collection-setting-cs",
+            "code" : "RoutineHealthCare",
+            "display" : "Routine health care setting"
+          }]
+        }
+      },
+      {
+        "url" : "https://fhir.bbmri-eric.eu/StructureDefinition/miabis-collection-design-extension",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "https://fhir.bbmri-eric.eu/CodeSystem/miabis-collection-design-cs",
+            "code" : "DiseaseSpecificCohort",
+            "display" : "Disease-specific cohort"
+          }]
+        }
+      }],
+      "identifier" : [{
+        "system" : "http://www.bbmri-eric.eu/",
+        "value" : "de-12345"
+      }],
+      "name" : "Zentrale Biobank der Charité",
+      "alias" : ["ZeBanC"],
+      "partOf" : {
+        "reference" : "Organization/mii-exa-test-data-organization-charite"
+      },
+      "contact" : [{
+        "extension" : [{
+          "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/KontaktRolle",
+          "valueString" : "Direktor"
+        }],
+        "purpose" : {
+          "coding" : [{
+            "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/CodeSystem/ContactType",
+            "code" : "RESEARCH"
+          }]
+        },
+        "name" : {
+          "family" : "Robert",
+          "given" : ["Koch"],
+          "prefix" : ["Prof."]
+        },
+        "telecom" : [{
+          "system" : "email",
+          "value" : "robert.koch@charite.de"
+        }],
+        "address" : {
+          "line" : ["Südring 7"],
+          "city" : "Berlin",
+          "postalCode" : "13353"
+        }
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Organization/mii-exa-test-data-organization-biobank-charite"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Practitioner/mii-exa-test-data-practitioner-physician-1",
+    "resource" : {
+      "resourceType" : "Practitioner",
+      "id" : "mii-exa-test-data-practitioner-physician-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "de",
+      "text" : {
+        "status" : "generated"
+      },
+      "active" : true,
+      "name" : [{
+        "family" : "Hirsch",
+        "given" : ["Rahel"]
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Practitioner/mii-exa-test-data-practitioner-physician-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/PractitionerRole/mii-exa-test-data-practitioner-role-physician-1",
+    "resource" : {
+      "resourceType" : "PractitionerRole",
+      "id" : "mii-exa-test-data-practitioner-role-physician-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-studie/StructureDefinition/mii-pr-studie-beteiligte-person"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "de",
+      "text" : {
+        "status" : "generated"
+      },
+      "active" : true,
+      "practitioner" : {
+        "reference" : "Practitioner/mii-exa-test-data-practitioner-physician-1"
+      },
+      "organization" : {
+        "reference" : "Organization/mii-exa-test-data-organization-charite"
+      },
+      "code" : [{
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "309343006",
+          "display" : "Physician (occupation)"
+        }]
+      }],
+      "telecom" : [{
+        "system" : "email",
+        "value" : "studienteam@charite.de",
+        "use" : "work"
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "PractitionerRole/mii-exa-test-data-practitioner-role-physician-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Device/mii-exa-test-data-device-roche-cobas",
+    "resource" : {
+      "resourceType" : "Device",
+      "id" : "mii-exa-test-data-device-roche-cobas",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "de",
+      "text" : {
+        "status" : "generated"
+      },
+      "identifier" : [{
+        "system" : "https://www.charite.de/fhir/sid/Laboratory-device-identifier",
+        "value" : "RocheCobas"
+      }],
+      "status" : "active",
+      "manufacturer" : "Roche",
+      "deviceName" : [{
+        "name" : "cobas",
+        "type" : "manufacturer-name"
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Device/mii-exa-test-data-device-roche-cobas"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Device/mii-exa-test-data-device-roche-cobas-c303",
+    "resource" : {
+      "resourceType" : "Device",
+      "id" : "mii-exa-test-data-device-roche-cobas-c303",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "de",
+      "text" : {
+        "status" : "generated"
+      },
+      "identifier" : [{
+        "system" : "https://www.charite.de/fhir/sid/Laboratory-device-identifier",
+        "value" : "RocheCobasC303"
+      }],
+      "status" : "active",
+      "manufacturer" : "Roche",
+      "deviceName" : [{
+        "name" : "cobas",
+        "type" : "manufacturer-name"
+      }],
+      "modelNumber" : "c 303",
+      "property" : [{
+        "type" : {
+          "coding" : [{
+            "system" : "urn:iso:std:iso:11073:10101",
+            "code" : "69684"
+          }]
+        }
+      },
+      {
+        "type" : {
+          "coding" : [{
+            "system" : "urn:iso:std:iso:11073:10101",
+            "code" : "69652"
+          }]
+        }
+      },
+      {
+        "type" : {
+          "coding" : [{
+            "system" : "urn:iso:std:iso:11073:10101",
+            "code" : "69844"
+          }]
+        }
+      }],
+      "parent" : {
+        "reference" : "Device/mii-exa-test-data-device-roche-cobas"
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Device/mii-exa-test-data-device-roche-cobas-c303"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Device/mii-exa-test-data-device-roche-cobas-e402",
+    "resource" : {
+      "resourceType" : "Device",
+      "id" : "mii-exa-test-data-device-roche-cobas-e402",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "de",
+      "text" : {
+        "status" : "generated"
+      },
+      "identifier" : [{
+        "system" : "https://www.charite.de/fhir/sid/Laboratory-device-identifier",
+        "value" : "RocheCobasE402"
+      }],
+      "status" : "active",
+      "manufacturer" : "Roche",
+      "deviceName" : [{
+        "name" : "cobas",
+        "type" : "manufacturer-name"
+      }],
+      "modelNumber" : "e 402",
+      "property" : [{
+        "type" : {
+          "coding" : [{
+            "system" : "urn:iso:std:iso:11073:10101",
+            "code" : "160220"
+          }]
+        }
+      }],
+      "parent" : {
+        "reference" : "Device/mii-exa-test-data-device-roche-cobas"
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Device/mii-exa-test-data-device-roche-cobas-e402"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/DeviceMetric/mii-exa-test-data-devicemetric-roche-cobas-c303-1",
+    "resource" : {
+      "resourceType" : "DeviceMetric",
+      "id" : "mii-exa-test-data-devicemetric-roche-cobas-c303-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "de",
+      "text" : {
+        "status" : "generated"
+      },
+      "identifier" : [{
+        "system" : "https://www.charite.de/fhir/sid/Laboratory-device-identifier",
+        "value" : "RocheCobasC303-160192"
+      }],
+      "type" : {
+        "coding" : [{
+          "system" : "urn:iso:std:iso:11073:10101",
+          "code" : "160192"
+        }]
+      },
+      "source" : {
+        "reference" : "Device/mii-exa-test-data-device-roche-cobas-c303"
+      },
+      "category" : "measurement"
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "DeviceMetric/mii-exa-test-data-devicemetric-roche-cobas-c303-1"
+    }
+  }]
+}

@@ -1,0 +1,3442 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "mii-exa-test-data-bundle-biobank-1",
+  "meta" : {
+    "source" : "https://www.charite.de/fhir/kds-testdata",
+    "security" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "code" : "HTEST",
+      "display" : "test health data"
+    }]
+  },
+  "language" : "de",
+  "type" : "transaction",
+  "timestamp" : "2025-06-18T13:51:00+02:00",
+  "entry" : [{
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Patient/mii-exa-test-data-biobank-patient-1",
+    "resource" : {
+      "resourceType" : "Patient",
+      "id" : "mii-exa-test-data-biobank-patient-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "de",
+      "text" : {
+        "status" : "generated"
+      },
+      "identifier" : [{
+        "system" : "https://www.charite.de/fhir/sid/patientenidentifikation",
+        "value" : "BIO-TEST-001"
+      }],
+      "name" : [{
+        "family" : "Musterfrau",
+        "given" : ["Sabine"]
+      }],
+      "gender" : "female",
+      "birthDate" : "1975-11-03"
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Patient/mii-exa-test-data-biobank-patient-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Encounter/mii-exa-test-data-biobank-encounter-1",
+    "resource" : {
+      "resourceType" : "Encounter",
+      "id" : "mii-exa-test-data-biobank-encounter-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "de",
+      "text" : {
+        "status" : "generated"
+      },
+      "status" : "finished",
+      "class" : {
+        "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "code" : "AMB",
+        "display" : "ambulatory"
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-biobank-patient-1"
+      },
+      "period" : {
+        "start" : "2024-03-01",
+        "end" : "2024-03-01"
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Encounter/mii-exa-test-data-biobank-encounter-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Organization/mii-exa-test-data-organization-biobank-charite",
+    "resource" : {
+      "resourceType" : "Organization",
+      "id" : "mii-exa-test-data-organization-biobank-charite",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Organization"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "de",
+      "text" : {
+        "status" : "extensions"
+      },
+      "extension" : [{
+        "url" : "https://fhir.bbmri-eric.eu/StructureDefinition/miabis-organization-description-extension",
+        "valueString" : "Zentrale Biobank der Charité"
+      },
+      {
+        "url" : "https://fhir.bbmri-eric.eu/StructureDefinition/miabis-sample-collection-setting-extension",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "https://fhir.bbmri-eric.eu/CodeSystem/miabis-sample-collection-setting-cs",
+            "code" : "RoutineHealthCare",
+            "display" : "Routine health care setting"
+          }]
+        }
+      },
+      {
+        "url" : "https://fhir.bbmri-eric.eu/StructureDefinition/miabis-collection-design-extension",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "https://fhir.bbmri-eric.eu/CodeSystem/miabis-collection-design-cs",
+            "code" : "DiseaseSpecificCohort",
+            "display" : "Disease-specific cohort"
+          }]
+        }
+      }],
+      "identifier" : [{
+        "system" : "http://www.bbmri-eric.eu/",
+        "value" : "de-12345"
+      }],
+      "name" : "Zentrale Biobank der Charité",
+      "alias" : ["ZeBanC"],
+      "partOf" : {
+        "reference" : "Organization/mii-exa-test-data-organization-charite"
+      },
+      "contact" : [{
+        "extension" : [{
+          "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/KontaktRolle",
+          "valueString" : "Direktor"
+        }],
+        "purpose" : {
+          "coding" : [{
+            "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/CodeSystem/ContactType",
+            "code" : "RESEARCH"
+          }]
+        },
+        "name" : {
+          "family" : "Robert",
+          "given" : ["Koch"],
+          "prefix" : ["Prof."]
+        },
+        "telecom" : [{
+          "system" : "email",
+          "value" : "robert.koch@charite.de"
+        }],
+        "address" : {
+          "line" : ["Südring 7"],
+          "city" : "Berlin",
+          "postalCode" : "13353"
+        }
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Organization/mii-exa-test-data-organization-biobank-charite"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Substance/mii-exa-test-data-patient-1-substance-1",
+    "resource" : {
+      "resourceType" : "Substance",
+      "id" : "mii-exa-test-data-patient-1-substance-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Substance"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "de",
+      "text" : {
+        "status" : "generated"
+      },
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/substance-category",
+          "code" : "chemical",
+          "display" : "Chemical"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "69519002",
+          "display" : "Edetic acid (substance)"
+        }]
+      },
+      "ingredient" : [{
+        "quantity" : {
+          "numerator" : {
+            "value" : 1.8,
+            "unit" : "mg",
+            "system" : "http://unitsofmeasure.org",
+            "code" : "mg"
+          },
+          "denominator" : {
+            "value" : 1,
+            "unit" : "mL",
+            "system" : "http://unitsofmeasure.org",
+            "code" : "mL"
+          }
+        },
+        "substanceCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "69519002",
+            "display" : "Edetic acid (substance)"
+          }]
+        }
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Substance/mii-exa-test-data-patient-1-substance-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Substance/mii-exa-test-data-biobank-substance-kulturmedium-1",
+    "resource" : {
+      "resourceType" : "Substance",
+      "id" : "mii-exa-test-data-biobank-substance-kulturmedium-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Substance"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "de",
+      "text" : {
+        "status" : "generated"
+      },
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/substance-category",
+          "code" : "biological",
+          "display" : "Biological Substance"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "421955000",
+          "display" : "Culture medium"
+        }]
+      },
+      "description" : "Organoid-Kulturmedium mit Matrigel"
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Substance/mii-exa-test-data-biobank-substance-kulturmedium-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Device/mii-exa-test-data-biobank-device-inkubator-1",
+    "resource" : {
+      "resourceType" : "Device",
+      "id" : "mii-exa-test-data-biobank-device-inkubator-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "de",
+      "text" : {
+        "status" : "generated"
+      },
+      "identifier" : [{
+        "system" : "https://www.charite.de/fhir/sid/Geraete",
+        "value" : "ZEBANC_INK_007"
+      }],
+      "status" : "active",
+      "deviceName" : [{
+        "name" : "CO2-Inkubator Zellkulturbank 7",
+        "type" : "user-friendly-name"
+      }],
+      "type" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "467301004",
+          "display" : "Carbon dioxide laboratory incubator"
+        }]
+      },
+      "owner" : {
+        "reference" : "Organization/mii-exa-test-data-organization-biobank-charite"
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Device/mii-exa-test-data-biobank-device-inkubator-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Specimen/mii-exa-test-data-patient-1-specimen-1",
+    "resource" : {
+      "resourceType" : "Specimen",
+      "id" : "mii-exa-test-data-patient-1-specimen-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Specimen"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "de",
+      "text" : {
+        "status" : "extensions"
+      },
+      "extension" : [{
+        "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/VerwaltendeOrganisation",
+        "valueReference" : {
+          "reference" : "Organization/mii-exa-test-data-organization-biobank-charite"
+        }
+      },
+      {
+        "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Diagnose",
+        "valueReference" : {
+          "reference" : "Condition/mii-exa-test-data-biobank-diagnose-1"
+        }
+      },
+      {
+        "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/mii-ex-biobank-ebene",
+        "valueCoding" : {
+          "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/CodeSystem/mii-cs-biobank-probenebene",
+          "code" : "PRIMÄRPROBE",
+          "display" : "Primärprobe"
+        }
+      },
+      {
+        "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/mii-ex-biobank-infektiositaetsstatus",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "409603009",
+            "display" : "Biosafety level 2 (qualifier value)"
+          }]
+        }
+      }],
+      "identifier" : [{
+        "system" : "https://www.charite.de/fhir/sid/Bioproben",
+        "value" : "BP_000001"
+      }],
+      "status" : "available",
+      "type" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "122555007",
+          "display" : "Venous blood specimen (specimen)"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-biobank-patient-1"
+      },
+      "request" : [{
+        "identifier" : {
+          "system" : "https://www.charite.de/fhir/sid/Laboranforderungen",
+          "value" : "LA_000001"
+        },
+        "display" : "Laborauftrag kleines Blutbild"
+      }],
+      "collection" : {
+        "collectedDateTime" : "2024-02-15T11:05:00+01:00",
+        "quantity" : {
+          "value" : 10,
+          "unit" : "mL",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "mL"
+        },
+        "method" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "129300006"
+          }]
+        },
+        "bodySite" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "789218009",
+            "display" : "Structure of dorsum of left hand (body structure)"
+          }]
+        },
+        "fastingStatusCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/v2-0916",
+            "code" : "F",
+            "display" : "Patient was fasting prior to the procedure."
+          }]
+        }
+      },
+      "processing" : [{
+        "extension" : [{
+          "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Temperaturbedingungen",
+          "valueRange" : {
+            "low" : {
+              "value" : 15,
+              "unit" : "°C",
+              "system" : "http://unitsofmeasure.org",
+              "code" : "Cel"
+            },
+            "high" : {
+              "value" : 25,
+              "unit" : "°C",
+              "system" : "http://unitsofmeasure.org",
+              "code" : "Cel"
+            }
+          }
+        }],
+        "procedure" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "1186936003",
+            "display" : "Storage of specimen (procedure)"
+          }]
+        },
+        "additive" : [{
+          "reference" : "Substance/mii-exa-test-data-patient-1-substance-1"
+        }],
+        "timePeriod" : {
+          "start" : "2024-02-15T11:05:00+01:00",
+          "end" : "2024-02-15T11:35:00+01:00"
+        }
+      }],
+      "container" : [{
+        "type" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "83059008",
+            "display" : "Tube, device (physical object)"
+          }]
+        },
+        "capacity" : {
+          "value" : 10,
+          "unit" : "mL",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "ml"
+        },
+        "specimenQuantity" : {
+          "value" : 10,
+          "unit" : "mL",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "ml"
+        },
+        "additiveReference" : {
+          "reference" : "Substance/mii-exa-test-data-patient-1-substance-1"
+        }
+      }],
+      "note" : [{
+        "text" : "Probe innerhalb von 30 Minuten nach Entnahme eingelagert."
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Specimen/mii-exa-test-data-patient-1-specimen-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Patient/mii-exa-test-data-biobank-patient-3",
+    "resource" : {
+      "resourceType" : "Patient",
+      "id" : "mii-exa-test-data-biobank-patient-3",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "de",
+      "text" : {
+        "status" : "generated"
+      },
+      "identifier" : [{
+        "system" : "https://www.charite.de/fhir/sid/patientenidentifikation",
+        "value" : "BIO-TEST-003"
+      }],
+      "name" : [{
+        "family" : "Spender",
+        "given" : ["Claudia"]
+      }],
+      "gender" : "female",
+      "birthDate" : "1962-05-22"
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Patient/mii-exa-test-data-biobank-patient-3"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Specimen/mii-exa-test-data-patient-3-specimen-1",
+    "resource" : {
+      "resourceType" : "Specimen",
+      "id" : "mii-exa-test-data-patient-3-specimen-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Specimen"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "de",
+      "text" : {
+        "status" : "generated"
+      },
+      "identifier" : [{
+        "system" : "https://www.charite.de/fhir/sid/Bioproben",
+        "value" : "BP_000002"
+      }],
+      "status" : "available",
+      "type" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "128159001",
+          "display" : "Tissue specimen from colon (specimen)"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-biobank-patient-3"
+      },
+      "collection" : {
+        "extension" : [{
+          "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/EinstellungBlutversorgung",
+          "valueDateTime" : "2022-03-24T12:30:00+01:00"
+        }],
+        "collectedDateTime" : "2022-03-24T12:44:00+01:00",
+        "bodySite" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "71854001",
+            "display" : "Colon structure (body structure)"
+          },
+          {
+            "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
+            "code" : "C18.9",
+            "display" : "Colon"
+          }]
+        }
+      },
+      "container" : [{
+        "type" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "83059008",
+            "display" : "Tube, device (physical object)"
+          }]
+        },
+        "capacity" : {
+          "value" : 5,
+          "unit" : "mL",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "ml"
+        },
+        "specimenQuantity" : {
+          "value" : 5,
+          "unit" : "mL",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "ml"
+        }
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Specimen/mii-exa-test-data-patient-3-specimen-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Specimen/mii-exa-test-data-patient-3-specimen-2",
+    "resource" : {
+      "resourceType" : "Specimen",
+      "id" : "mii-exa-test-data-patient-3-specimen-2",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Specimen"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "de",
+      "text" : {
+        "status" : "extensions"
+      },
+      "extension" : [{
+        "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/VerwaltendeOrganisation",
+        "valueReference" : {
+          "reference" : "Organization/mii-exa-test-data-organization-biobank-charite"
+        }
+      },
+      {
+        "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Diagnose",
+        "valueReference" : {
+          "reference" : "Condition/mii-exa-test-data-biobank-diagnose-1"
+        }
+      }],
+      "identifier" : [{
+        "system" : "https://www.charite.de/fhir/sid/Bioproben",
+        "value" : "BP_000004"
+      }],
+      "status" : "available",
+      "type" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "119364003",
+          "display" : "Serum specimen (specimen)"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-biobank-patient-3"
+      },
+      "parent" : [{
+        "reference" : "Specimen/mii-exa-test-data-patient-3-specimen-3"
+      }],
+      "collection" : {
+        "collectedDateTime" : "2022-04-05T07:15:00+02:00",
+        "bodySite" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "368208006",
+            "display" : "Left upper arm structure (body structure)"
+          }]
+        }
+      },
+      "container" : [{
+        "type" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "83059008",
+            "display" : "Tube, device (physical object)"
+          }]
+        },
+        "capacity" : {
+          "value" : 7,
+          "unit" : "mL",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "ml"
+        },
+        "specimenQuantity" : {
+          "value" : 7,
+          "unit" : "mL",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "ml"
+        }
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Specimen/mii-exa-test-data-patient-3-specimen-2"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Specimen/mii-exa-test-data-patient-3-specimen-3",
+    "resource" : {
+      "resourceType" : "Specimen",
+      "id" : "mii-exa-test-data-patient-3-specimen-3",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Specimen"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "de",
+      "text" : {
+        "status" : "extensions"
+      },
+      "extension" : [{
+        "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/VerwaltendeOrganisation",
+        "valueReference" : {
+          "reference" : "Organization/mii-exa-test-data-organization-biobank-charite"
+        }
+      },
+      {
+        "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Diagnose",
+        "valueReference" : {
+          "reference" : "Condition/mii-exa-test-data-biobank-diagnose-1"
+        }
+      }],
+      "identifier" : [{
+        "system" : "https://www.charite.de/fhir/sid/Bioproben",
+        "value" : "BP_000005"
+      }],
+      "status" : "available",
+      "type" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "445295009",
+          "display" : "Blood specimen with edetic acid (specimen)"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-biobank-patient-3"
+      },
+      "collection" : {
+        "collectedDateTime" : "2022-04-05T07:15:00+02:00",
+        "bodySite" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "368209003",
+            "display" : "Right upper arm structure (body structure)"
+          }]
+        }
+      },
+      "container" : [{
+        "type" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "83059008",
+            "display" : "Tube, device (physical object)"
+          }]
+        },
+        "capacity" : {
+          "value" : 5,
+          "unit" : "mL",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "ml"
+        },
+        "specimenQuantity" : {
+          "value" : 5,
+          "unit" : "mL",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "ml"
+        }
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Specimen/mii-exa-test-data-patient-3-specimen-3"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Patient/mii-exa-test-data-biobank-patient-4",
+    "resource" : {
+      "resourceType" : "Patient",
+      "id" : "mii-exa-test-data-biobank-patient-4",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "de",
+      "text" : {
+        "status" : "generated"
+      },
+      "identifier" : [{
+        "system" : "https://www.charite.de/fhir/sid/patientenidentifikation",
+        "value" : "BIO-TEST-004"
+      }],
+      "name" : [{
+        "family" : "Probenspender",
+        "given" : ["Dirk"]
+      }],
+      "gender" : "male",
+      "birthDate" : "1978-09-11"
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Patient/mii-exa-test-data-biobank-patient-4"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Specimen/mii-exa-test-data-patient-4-specimen-1",
+    "resource" : {
+      "resourceType" : "Specimen",
+      "id" : "mii-exa-test-data-patient-4-specimen-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Specimen"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "de",
+      "text" : {
+        "status" : "generated"
+      },
+      "identifier" : [{
+        "system" : "https://www.charite.de/fhir/sid/bioproben",
+        "value" : "BP_00070024"
+      }],
+      "status" : "available",
+      "type" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "445295009",
+          "display" : "Blood specimen with edetic acid (specimen)"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-biobank-patient-4"
+      },
+      "receivedTime" : "2022-11-30",
+      "collection" : {
+        "collectedDateTime" : "2022-11-30"
+      },
+      "container" : [{
+        "type" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "83059008",
+            "display" : "Tube, device (physical object)"
+          }]
+        },
+        "capacity" : {
+          "value" : 5,
+          "unit" : "mL",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "ml"
+        },
+        "specimenQuantity" : {
+          "value" : 5,
+          "unit" : "mL",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "ml"
+        }
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Specimen/mii-exa-test-data-patient-4-specimen-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Specimen/mii-exa-test-data-patient-4-specimen-2",
+    "resource" : {
+      "resourceType" : "Specimen",
+      "id" : "mii-exa-test-data-patient-4-specimen-2",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Specimen"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "de",
+      "text" : {
+        "status" : "generated"
+      },
+      "identifier" : [{
+        "system" : "https://www.charite.de/fhir/sid/bioproben",
+        "value" : "BP_00070025"
+      }],
+      "status" : "available",
+      "type" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "445295009",
+          "display" : "Blood specimen with edetic acid (specimen)"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-biobank-patient-4"
+      },
+      "receivedTime" : "2022-11-30",
+      "collection" : {
+        "collectedDateTime" : "2022-11-30"
+      },
+      "container" : [{
+        "type" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "83059008",
+            "display" : "Tube, device (physical object)"
+          }]
+        },
+        "capacity" : {
+          "value" : 5,
+          "unit" : "mL",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "ml"
+        },
+        "specimenQuantity" : {
+          "value" : 5,
+          "unit" : "mL",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "ml"
+        }
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Specimen/mii-exa-test-data-patient-4-specimen-2"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Specimen/mii-exa-test-data-patient-4-specimen-3",
+    "resource" : {
+      "resourceType" : "Specimen",
+      "id" : "mii-exa-test-data-patient-4-specimen-3",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Specimen"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "de",
+      "text" : {
+        "status" : "extensions"
+      },
+      "extension" : [{
+        "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/VerwaltendeOrganisation",
+        "valueReference" : {
+          "reference" : "Organization/mii-exa-test-data-organization-biobank-charite"
+        }
+      },
+      {
+        "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Diagnose",
+        "valueReference" : {
+          "reference" : "Condition/mii-exa-test-data-biobank-diagnose-1"
+        }
+      }],
+      "identifier" : [{
+        "system" : "https://www.charite.de/fhir/sid/Bioproben",
+        "value" : "BP_000006"
+      }],
+      "status" : "available",
+      "type" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "119364003",
+          "display" : "Serum specimen (specimen)"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-biobank-patient-4"
+      },
+      "collection" : {
+        "collectedDateTime" : "2020-09-17T06:30:00+02:00",
+        "bodySite" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "368208006",
+            "display" : "Left upper arm structure (body structure)"
+          }]
+        }
+      },
+      "container" : [{
+        "type" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "83059008",
+            "display" : "Tube, device (physical object)"
+          }]
+        },
+        "capacity" : {
+          "value" : 7,
+          "unit" : "mL",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "ml"
+        },
+        "specimenQuantity" : {
+          "value" : 7,
+          "unit" : "mL",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "ml"
+        }
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Specimen/mii-exa-test-data-patient-4-specimen-3"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Specimen/mii-exa-test-data-patient-4-specimen-4",
+    "resource" : {
+      "resourceType" : "Specimen",
+      "id" : "mii-exa-test-data-patient-4-specimen-4",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Specimen"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "de",
+      "text" : {
+        "status" : "extensions"
+      },
+      "extension" : [{
+        "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/VerwaltendeOrganisation",
+        "valueReference" : {
+          "reference" : "Organization/mii-exa-test-data-organization-biobank-charite"
+        }
+      },
+      {
+        "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Diagnose",
+        "valueReference" : {
+          "reference" : "Condition/mii-exa-test-data-biobank-diagnose-1"
+        }
+      }],
+      "identifier" : [{
+        "system" : "https://www.charite.de/fhir/sid/Bioproben",
+        "value" : "BP_000007"
+      }],
+      "status" : "available",
+      "type" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "445295009",
+          "display" : "Blood specimen with edetic acid (specimen)"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-biobank-patient-4"
+      },
+      "collection" : {
+        "collectedDateTime" : "2020-09-17T06:30:00+02:00",
+        "bodySite" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "368209003",
+            "display" : "Right upper arm structure (body structure)"
+          }]
+        }
+      },
+      "container" : [{
+        "type" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "83059008",
+            "display" : "Tube, device (physical object)"
+          }]
+        },
+        "capacity" : {
+          "value" : 5,
+          "unit" : "mL",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "ml"
+        },
+        "specimenQuantity" : {
+          "value" : 5,
+          "unit" : "mL",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "ml"
+        }
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Specimen/mii-exa-test-data-patient-4-specimen-4"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Patient/mii-exa-test-data-biobank-patient-5",
+    "resource" : {
+      "resourceType" : "Patient",
+      "id" : "mii-exa-test-data-biobank-patient-5",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "de",
+      "text" : {
+        "status" : "generated"
+      },
+      "identifier" : [{
+        "system" : "https://www.charite.de/fhir/sid/patientenidentifikation",
+        "value" : "BIO-TEST-005"
+      }],
+      "name" : [{
+        "family" : "Gewebe",
+        "given" : ["Eva"]
+      }],
+      "gender" : "female",
+      "birthDate" : "1991-01-30"
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Patient/mii-exa-test-data-biobank-patient-5"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Specimen/mii-exa-test-data-patient-5-specimen-1",
+    "resource" : {
+      "resourceType" : "Specimen",
+      "id" : "mii-exa-test-data-patient-5-specimen-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Specimen"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "de",
+      "text" : {
+        "status" : "extensions"
+      },
+      "extension" : [{
+        "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/VerwaltendeOrganisation",
+        "valueReference" : {
+          "reference" : "Organization/mii-exa-test-data-organization-biobank-charite"
+        }
+      },
+      {
+        "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Diagnose",
+        "valueReference" : {
+          "reference" : "Condition/mii-exa-test-data-biobank-diagnose-1"
+        }
+      }],
+      "identifier" : [{
+        "system" : "https://www.charite.de/fhir/sid/Bioproben",
+        "value" : "BP_000008"
+      }],
+      "status" : "available",
+      "type" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "445295009",
+          "display" : "Blood specimen with edetic acid (specimen)"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-biobank-patient-5"
+      },
+      "collection" : {
+        "collectedDateTime" : "2023-07-12T06:00:00+02:00",
+        "bodySite" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "368208006",
+            "display" : "Left upper arm structure (body structure)"
+          }]
+        }
+      },
+      "container" : [{
+        "type" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "83059008",
+            "display" : "Tube, device (physical object)"
+          }]
+        },
+        "capacity" : {
+          "value" : 5,
+          "unit" : "mL",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "ml"
+        },
+        "specimenQuantity" : {
+          "value" : 5,
+          "unit" : "mL",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "ml"
+        }
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Specimen/mii-exa-test-data-patient-5-specimen-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Specimen/mii-exa-test-data-patient-5-specimen-2",
+    "resource" : {
+      "resourceType" : "Specimen",
+      "id" : "mii-exa-test-data-patient-5-specimen-2",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Specimen"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "de",
+      "text" : {
+        "status" : "extensions"
+      },
+      "extension" : [{
+        "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/VerwaltendeOrganisation",
+        "valueReference" : {
+          "reference" : "Organization/mii-exa-test-data-organization-biobank-charite"
+        }
+      },
+      {
+        "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Diagnose",
+        "valueReference" : {
+          "reference" : "Condition/mii-exa-test-data-biobank-diagnose-1"
+        }
+      }],
+      "identifier" : [{
+        "system" : "https://www.charite.de/fhir/sid/Bioproben",
+        "value" : "BP_000009"
+      }],
+      "status" : "available",
+      "type" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "119364003",
+          "display" : "Serum specimen (specimen)"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-biobank-patient-5"
+      },
+      "collection" : {
+        "collectedDateTime" : "2023-07-12T06:00:00+02:00",
+        "bodySite" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "368209003",
+            "display" : "Right upper arm structure (body structure)"
+          }]
+        },
+        "fastingStatusCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/v2-0916",
+            "code" : "F",
+            "display" : "Patient was fasting prior to the procedure."
+          }]
+        }
+      },
+      "container" : [{
+        "type" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "83059008",
+            "display" : "Tube, device (physical object)"
+          }]
+        },
+        "capacity" : {
+          "value" : 7,
+          "unit" : "mL",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "ml"
+        },
+        "specimenQuantity" : {
+          "value" : 7,
+          "unit" : "mL",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "ml"
+        }
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Specimen/mii-exa-test-data-patient-5-specimen-2"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Patient/mii-exa-test-data-biobank-patient-6",
+    "resource" : {
+      "resourceType" : "Patient",
+      "id" : "mii-exa-test-data-biobank-patient-6",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "de",
+      "text" : {
+        "status" : "generated"
+      },
+      "identifier" : [{
+        "system" : "https://www.charite.de/fhir/sid/patientenidentifikation",
+        "value" : "BIO-TEST-006"
+      }],
+      "name" : [{
+        "family" : "Blutprobe",
+        "given" : ["Frank"]
+      }],
+      "gender" : "male",
+      "birthDate" : "1955-12-07"
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Patient/mii-exa-test-data-biobank-patient-6"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Specimen/mii-exa-test-data-patient-6-specimen-1",
+    "resource" : {
+      "resourceType" : "Specimen",
+      "id" : "mii-exa-test-data-patient-6-specimen-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Specimen"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "de",
+      "text" : {
+        "status" : "extensions"
+      },
+      "extension" : [{
+        "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/VerwaltendeOrganisation",
+        "valueReference" : {
+          "reference" : "Organization/mii-exa-test-data-organization-biobank-charite"
+        }
+      },
+      {
+        "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Diagnose",
+        "valueReference" : {
+          "reference" : "Condition/mii-exa-test-data-biobank-diagnose-1"
+        }
+      }],
+      "identifier" : [{
+        "system" : "https://www.charite.de/fhir/sid/Bioproben",
+        "value" : "BP_000010"
+      }],
+      "status" : "available",
+      "type" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "445295009",
+          "display" : "Blood specimen with edetic acid (specimen)"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-biobank-patient-6"
+      },
+      "collection" : {
+        "collectedDateTime" : "2022-03-14T06:15:00+01:00",
+        "bodySite" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "368208006",
+            "display" : "Left upper arm structure (body structure)"
+          }]
+        }
+      },
+      "container" : [{
+        "type" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "83059008",
+            "display" : "Tube, device (physical object)"
+          }]
+        },
+        "capacity" : {
+          "value" : 5,
+          "unit" : "mL",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "ml"
+        },
+        "specimenQuantity" : {
+          "value" : 5,
+          "unit" : "mL",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "ml"
+        }
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Specimen/mii-exa-test-data-patient-6-specimen-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Specimen/mii-exa-test-data-patient-6-specimen-2",
+    "resource" : {
+      "resourceType" : "Specimen",
+      "id" : "mii-exa-test-data-patient-6-specimen-2",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Specimen"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "de",
+      "text" : {
+        "status" : "extensions"
+      },
+      "extension" : [{
+        "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/VerwaltendeOrganisation",
+        "valueReference" : {
+          "reference" : "Organization/mii-exa-test-data-organization-biobank-charite"
+        }
+      },
+      {
+        "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Diagnose",
+        "valueReference" : {
+          "reference" : "Condition/mii-exa-test-data-biobank-diagnose-1"
+        }
+      }],
+      "identifier" : [{
+        "system" : "https://www.charite.de/fhir/sid/Bioproben",
+        "value" : "BP_000011"
+      }],
+      "status" : "available",
+      "type" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "119364003",
+          "display" : "Serum specimen (specimen)"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-biobank-patient-6"
+      },
+      "collection" : {
+        "collectedDateTime" : "2022-03-14T06:15:00+01:00",
+        "bodySite" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "368209003",
+            "display" : "Right upper arm structure (body structure)"
+          }]
+        }
+      },
+      "container" : [{
+        "type" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "83059008",
+            "display" : "Tube, device (physical object)"
+          }]
+        },
+        "capacity" : {
+          "value" : 7,
+          "unit" : "mL",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "ml"
+        },
+        "specimenQuantity" : {
+          "value" : 7,
+          "unit" : "mL",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "ml"
+        }
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Specimen/mii-exa-test-data-patient-6-specimen-2"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Patient/mii-exa-test-data-biobank-patient-7",
+    "resource" : {
+      "resourceType" : "Patient",
+      "id" : "mii-exa-test-data-biobank-patient-7",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "de",
+      "text" : {
+        "status" : "generated"
+      },
+      "identifier" : [{
+        "system" : "https://www.charite.de/fhir/sid/patientenidentifikation",
+        "value" : "BIO-TEST-007"
+      }],
+      "name" : [{
+        "family" : "Serum",
+        "given" : ["Greta"]
+      }],
+      "gender" : "female",
+      "birthDate" : "1987-03-15"
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Patient/mii-exa-test-data-biobank-patient-7"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Specimen/mii-exa-test-data-patient-7-specimen-1",
+    "resource" : {
+      "resourceType" : "Specimen",
+      "id" : "mii-exa-test-data-patient-7-specimen-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Specimen"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "de",
+      "text" : {
+        "status" : "extensions"
+      },
+      "extension" : [{
+        "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/VerwaltendeOrganisation",
+        "valueReference" : {
+          "reference" : "Organization/mii-exa-test-data-organization-biobank-charite"
+        }
+      },
+      {
+        "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Diagnose",
+        "valueReference" : {
+          "reference" : "Condition/mii-exa-test-data-biobank-diagnose-1"
+        }
+      }],
+      "identifier" : [{
+        "system" : "https://www.charite.de/fhir/sid/Bioproben",
+        "value" : "BP_000012"
+      }],
+      "status" : "available",
+      "type" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "445295009",
+          "display" : "Blood specimen with edetic acid (specimen)"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-biobank-patient-7"
+      },
+      "collection" : {
+        "collectedDateTime" : "2024-01-10T07:30:00+01:00",
+        "bodySite" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "368208006",
+            "display" : "Left upper arm structure (body structure)"
+          }]
+        }
+      },
+      "container" : [{
+        "type" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "83059008",
+            "display" : "Tube, device (physical object)"
+          }]
+        },
+        "capacity" : {
+          "value" : 5,
+          "unit" : "mL",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "ml"
+        },
+        "specimenQuantity" : {
+          "value" : 5,
+          "unit" : "mL",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "ml"
+        }
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Specimen/mii-exa-test-data-patient-7-specimen-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Specimen/mii-exa-test-data-patient-7-specimen-2",
+    "resource" : {
+      "resourceType" : "Specimen",
+      "id" : "mii-exa-test-data-patient-7-specimen-2",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Specimen"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "de",
+      "text" : {
+        "status" : "extensions"
+      },
+      "extension" : [{
+        "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/VerwaltendeOrganisation",
+        "valueReference" : {
+          "reference" : "Organization/mii-exa-test-data-organization-biobank-charite"
+        }
+      },
+      {
+        "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Diagnose",
+        "valueReference" : {
+          "reference" : "Condition/mii-exa-test-data-biobank-diagnose-1"
+        }
+      }],
+      "identifier" : [{
+        "system" : "https://www.charite.de/fhir/sid/Bioproben",
+        "value" : "BP_000013"
+      }],
+      "status" : "available",
+      "type" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "119364003",
+          "display" : "Serum specimen (specimen)"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-biobank-patient-7"
+      },
+      "collection" : {
+        "collectedDateTime" : "2024-01-10T07:30:00+01:00",
+        "bodySite" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "368209003",
+            "display" : "Right upper arm structure (body structure)"
+          }]
+        }
+      },
+      "container" : [{
+        "type" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "83059008",
+            "display" : "Tube, device (physical object)"
+          }]
+        },
+        "capacity" : {
+          "value" : 7,
+          "unit" : "mL",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "ml"
+        },
+        "specimenQuantity" : {
+          "value" : 7,
+          "unit" : "mL",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "ml"
+        }
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Specimen/mii-exa-test-data-patient-7-specimen-2"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Patient/mii-exa-test-data-biobank-patient-8",
+    "resource" : {
+      "resourceType" : "Patient",
+      "id" : "mii-exa-test-data-biobank-patient-8",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "de",
+      "text" : {
+        "status" : "generated"
+      },
+      "identifier" : [{
+        "system" : "https://www.charite.de/fhir/sid/patientenidentifikation",
+        "value" : "BIO-TEST-008"
+      }],
+      "name" : [{
+        "family" : "Plasma",
+        "given" : ["Heinrich"]
+      }],
+      "gender" : "male",
+      "birthDate" : "1969-07-28"
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Patient/mii-exa-test-data-biobank-patient-8"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Specimen/mii-exa-test-data-patient-8-specimen-1",
+    "resource" : {
+      "resourceType" : "Specimen",
+      "id" : "mii-exa-test-data-patient-8-specimen-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Specimen"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "de",
+      "text" : {
+        "status" : "extensions"
+      },
+      "extension" : [{
+        "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/VerwaltendeOrganisation",
+        "valueReference" : {
+          "reference" : "Organization/mii-exa-test-data-organization-biobank-charite"
+        }
+      },
+      {
+        "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Diagnose",
+        "valueReference" : {
+          "reference" : "Condition/mii-exa-test-data-biobank-diagnose-1"
+        }
+      }],
+      "identifier" : [{
+        "system" : "https://www.charite.de/fhir/sid/Bioproben",
+        "value" : "BP_000014"
+      }],
+      "status" : "available",
+      "type" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "445295009",
+          "display" : "Blood specimen with edetic acid (specimen)"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-biobank-patient-8"
+      },
+      "collection" : {
+        "collectedDateTime" : "2023-11-12T05:45:00+01:00",
+        "bodySite" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "368208006",
+            "display" : "Left upper arm structure (body structure)"
+          }]
+        }
+      },
+      "container" : [{
+        "type" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "83059008",
+            "display" : "Tube, device (physical object)"
+          }]
+        },
+        "capacity" : {
+          "value" : 5,
+          "unit" : "mL",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "ml"
+        },
+        "specimenQuantity" : {
+          "value" : 5,
+          "unit" : "mL",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "ml"
+        }
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Specimen/mii-exa-test-data-patient-8-specimen-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Specimen/mii-exa-test-data-patient-8-specimen-2",
+    "resource" : {
+      "resourceType" : "Specimen",
+      "id" : "mii-exa-test-data-patient-8-specimen-2",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Specimen"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "de",
+      "text" : {
+        "status" : "extensions"
+      },
+      "extension" : [{
+        "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/VerwaltendeOrganisation",
+        "valueReference" : {
+          "reference" : "Organization/mii-exa-test-data-organization-biobank-charite"
+        }
+      },
+      {
+        "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Diagnose",
+        "valueReference" : {
+          "reference" : "Condition/mii-exa-test-data-biobank-diagnose-1"
+        }
+      }],
+      "identifier" : [{
+        "system" : "https://www.charite.de/fhir/sid/Bioproben",
+        "value" : "BP_000015"
+      }],
+      "status" : "available",
+      "type" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "119364003",
+          "display" : "Serum specimen (specimen)"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-biobank-patient-8"
+      },
+      "collection" : {
+        "collectedDateTime" : "2023-11-12T05:45:00+01:00",
+        "bodySite" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "368209003",
+            "display" : "Right upper arm structure (body structure)"
+          }]
+        }
+      },
+      "container" : [{
+        "type" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "83059008",
+            "display" : "Tube, device (physical object)"
+          }]
+        },
+        "capacity" : {
+          "value" : 7,
+          "unit" : "mL",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "ml"
+        },
+        "specimenQuantity" : {
+          "value" : 7,
+          "unit" : "mL",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "ml"
+        }
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Specimen/mii-exa-test-data-patient-8-specimen-2"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Patient/mii-exa-test-data-biobank-patient-9",
+    "resource" : {
+      "resourceType" : "Patient",
+      "id" : "mii-exa-test-data-biobank-patient-9",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "de",
+      "text" : {
+        "status" : "generated"
+      },
+      "identifier" : [{
+        "system" : "https://www.charite.de/fhir/sid/patientenidentifikation",
+        "value" : "BIO-TEST-009"
+      }],
+      "name" : [{
+        "family" : "Biopsie",
+        "given" : ["Ingrid"]
+      }],
+      "gender" : "female",
+      "birthDate" : "1983-10-04"
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Patient/mii-exa-test-data-biobank-patient-9"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Specimen/mii-exa-test-data-patient-9-specimen-1",
+    "resource" : {
+      "resourceType" : "Specimen",
+      "id" : "mii-exa-test-data-patient-9-specimen-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Specimen"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "de",
+      "text" : {
+        "status" : "extensions"
+      },
+      "extension" : [{
+        "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/VerwaltendeOrganisation",
+        "valueReference" : {
+          "reference" : "Organization/mii-exa-test-data-organization-biobank-charite"
+        }
+      },
+      {
+        "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Diagnose",
+        "valueReference" : {
+          "reference" : "Condition/mii-exa-test-data-biobank-diagnose-1"
+        }
+      }],
+      "identifier" : [{
+        "system" : "https://www.charite.de/fhir/sid/Bioproben",
+        "value" : "BP_000016"
+      }],
+      "status" : "available",
+      "type" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "445295009",
+          "display" : "Blood specimen with edetic acid (specimen)"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-biobank-patient-9"
+      },
+      "collection" : {
+        "collectedDateTime" : "2024-02-22T06:30:00+01:00",
+        "bodySite" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "368208006",
+            "display" : "Left upper arm structure (body structure)"
+          }]
+        }
+      },
+      "container" : [{
+        "type" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "83059008",
+            "display" : "Tube, device (physical object)"
+          }]
+        },
+        "capacity" : {
+          "value" : 5,
+          "unit" : "mL",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "ml"
+        },
+        "specimenQuantity" : {
+          "value" : 5,
+          "unit" : "mL",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "ml"
+        }
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Specimen/mii-exa-test-data-patient-9-specimen-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Specimen/mii-exa-test-data-patient-9-specimen-2",
+    "resource" : {
+      "resourceType" : "Specimen",
+      "id" : "mii-exa-test-data-patient-9-specimen-2",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Specimen"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "de",
+      "text" : {
+        "status" : "extensions"
+      },
+      "extension" : [{
+        "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/VerwaltendeOrganisation",
+        "valueReference" : {
+          "reference" : "Organization/mii-exa-test-data-organization-biobank-charite"
+        }
+      },
+      {
+        "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Diagnose",
+        "valueReference" : {
+          "reference" : "Condition/mii-exa-test-data-biobank-diagnose-1"
+        }
+      }],
+      "identifier" : [{
+        "system" : "https://www.charite.de/fhir/sid/Bioproben",
+        "value" : "BP_000017"
+      }],
+      "status" : "available",
+      "type" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "119364003",
+          "display" : "Serum specimen (specimen)"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-biobank-patient-9"
+      },
+      "collection" : {
+        "collectedDateTime" : "2024-02-22T06:30:00+01:00",
+        "bodySite" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "368209003",
+            "display" : "Right upper arm structure (body structure)"
+          }]
+        }
+      },
+      "container" : [{
+        "type" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "83059008",
+            "display" : "Tube, device (physical object)"
+          }]
+        },
+        "capacity" : {
+          "value" : 7,
+          "unit" : "mL",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "ml"
+        },
+        "specimenQuantity" : {
+          "value" : 7,
+          "unit" : "mL",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "ml"
+        }
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Specimen/mii-exa-test-data-patient-9-specimen-2"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Patient/mii-exa-test-data-biobank-patient-2",
+    "resource" : {
+      "resourceType" : "Patient",
+      "id" : "mii-exa-test-data-biobank-patient-2",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "de",
+      "text" : {
+        "status" : "generated"
+      },
+      "identifier" : [{
+        "system" : "https://www.charite.de/fhir/sid/patientenidentifikation",
+        "value" : "BIO-TEST-002"
+      }],
+      "name" : [{
+        "family" : "Testfall",
+        "given" : ["Martin"]
+      }],
+      "gender" : "male",
+      "birthDate" : "1980-04-18"
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Patient/mii-exa-test-data-biobank-patient-2"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Specimen/mii-exa-test-data-patient-10-specimen-1",
+    "resource" : {
+      "resourceType" : "Specimen",
+      "id" : "mii-exa-test-data-patient-10-specimen-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Specimen"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "de",
+      "text" : {
+        "status" : "extensions"
+      },
+      "extension" : [{
+        "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/VerwaltendeOrganisation",
+        "valueReference" : {
+          "reference" : "Organization/mii-exa-test-data-organization-biobank-charite"
+        }
+      },
+      {
+        "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Diagnose",
+        "valueReference" : {
+          "reference" : "Condition/mii-exa-test-data-biobank-diagnose-1"
+        }
+      }],
+      "identifier" : [{
+        "system" : "https://www.charite.de/fhir/sid/Bioproben",
+        "value" : "BP_000018"
+      }],
+      "status" : "available",
+      "type" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "445295009",
+          "display" : "Blood specimen with edetic acid (specimen)"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-biobank-patient-2"
+      },
+      "collection" : {
+        "collectedDateTime" : "2019-05-16T07:45:00+02:00",
+        "bodySite" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "368208006",
+            "display" : "Left upper arm structure (body structure)"
+          }]
+        }
+      },
+      "container" : [{
+        "type" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "83059008",
+            "display" : "Tube, device (physical object)"
+          }]
+        },
+        "capacity" : {
+          "value" : 5,
+          "unit" : "mL",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "ml"
+        },
+        "specimenQuantity" : {
+          "value" : 5,
+          "unit" : "mL",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "ml"
+        }
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Specimen/mii-exa-test-data-patient-10-specimen-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Specimen/mii-exa-test-data-patient-10-specimen-2",
+    "resource" : {
+      "resourceType" : "Specimen",
+      "id" : "mii-exa-test-data-patient-10-specimen-2",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Specimen"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "de",
+      "text" : {
+        "status" : "extensions"
+      },
+      "extension" : [{
+        "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/VerwaltendeOrganisation",
+        "valueReference" : {
+          "reference" : "Organization/mii-exa-test-data-organization-biobank-charite"
+        }
+      },
+      {
+        "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Diagnose",
+        "valueReference" : {
+          "reference" : "Condition/mii-exa-test-data-biobank-diagnose-1"
+        }
+      }],
+      "identifier" : [{
+        "system" : "https://www.charite.de/fhir/sid/Bioproben",
+        "value" : "BP_000019"
+      }],
+      "status" : "available",
+      "type" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "119364003",
+          "display" : "Serum specimen (specimen)"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-biobank-patient-2"
+      },
+      "collection" : {
+        "collectedDateTime" : "2019-05-16T07:45:00+02:00",
+        "bodySite" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "368209003",
+            "display" : "Right upper arm structure (body structure)"
+          }]
+        }
+      },
+      "container" : [{
+        "type" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "83059008",
+            "display" : "Tube, device (physical object)"
+          }]
+        },
+        "capacity" : {
+          "value" : 7,
+          "unit" : "mL",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "ml"
+        },
+        "specimenQuantity" : {
+          "value" : 7,
+          "unit" : "mL",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "ml"
+        }
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Specimen/mii-exa-test-data-patient-10-specimen-2"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Specimen/mii-exa-test-data-biobank-organoid-1",
+    "resource" : {
+      "resourceType" : "Specimen",
+      "id" : "mii-exa-test-data-biobank-organoid-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/mii-pr-biobank-zellinie-organoid"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "de",
+      "text" : {
+        "status" : "extensions"
+      },
+      "extension" : [{
+        "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/mii-ex-biobank-kulturprotokoll",
+        "valueReference" : {
+          "reference" : "DocumentReference/mii-exa-test-data-biobank-kulturprotokoll-1"
+        }
+      },
+      {
+        "extension" : [{
+          "url" : "artDerModifikation",
+          "valueCodeableConcept" : {
+            "coding" : [{
+              "system" : "http://purl.obolibrary.org/obo/clo.owl",
+              "code" : "CLO:0037375",
+              "display" : "derives from cell with knockout gene"
+            }]
+          }
+        },
+        {
+          "url" : "zielGen",
+          "valueCoding" : {
+            "system" : "http://www.genenames.org",
+            "code" : "TP53",
+            "display" : "tumor protein p53"
+          }
+        },
+        {
+          "url" : "protokoll",
+          "valueReference" : {
+            "reference" : "DocumentReference/mii-exa-test-data-biobank-crispr-protokoll-1"
+          }
+        }],
+        "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/mii-ex-biobank-modifikationen"
+      },
+      {
+        "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/mii-ex-biobank-anzahl-passagen",
+        "valueInteger" : 3
+      },
+      {
+        "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/mii-ex-biobank-anzahl-aliquots",
+        "valueInteger" : 6
+      },
+      {
+        "url" : "http://hl7.eu/fhir/laboratory/StructureDefinition/specimen-focus",
+        "valueReference" : {
+          "reference" : "Substance/mii-exa-test-data-biobank-substance-kulturmedium-1"
+        }
+      },
+      {
+        "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/VerwaltendeOrganisation",
+        "valueReference" : {
+          "reference" : "Organization/mii-exa-test-data-organization-biobank-charite"
+        }
+      },
+      {
+        "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Diagnose",
+        "valueReference" : {
+          "reference" : "Condition/mii-exa-test-data-biobank-diagnose-3"
+        }
+      },
+      {
+        "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/mii-ex-biobank-ebene",
+        "valueCoding" : {
+          "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/CodeSystem/mii-cs-biobank-probenebene",
+          "code" : "ALIQUOT",
+          "display" : "Aliquot"
+        }
+      },
+      {
+        "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/mii-ex-biobank-infektiositaetsstatus",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "409603009",
+            "display" : "Biosafety level 2 (qualifier value)"
+          }]
+        }
+      }],
+      "identifier" : [{
+        "system" : "https://www.charite.de/fhir/sid/Bioproben",
+        "value" : "BP_000020"
+      }],
+      "status" : "available",
+      "type" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "123038009",
+          "display" : "Specimen (specimen)"
+        },
+        {
+          "system" : "https://fhir.bbmri-eric.eu/CodeSystem/miabis-detailed-samply-type-cs",
+          "code" : "Organoid",
+          "display" : "Organoids"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-biobank-patient-3"
+      },
+      "receivedTime" : "2022-03-24T14:00:00+01:00",
+      "parent" : [{
+        "reference" : "Specimen/mii-exa-test-data-patient-3-specimen-1"
+      }],
+      "request" : [{
+        "identifier" : {
+          "system" : "https://www.charite.de/fhir/sid/Bioproben-Anforderungen",
+          "value" : "BPA_000001"
+        },
+        "display" : "Anforderung Organoid-Kultur"
+      }],
+      "collection" : {
+        "extension" : [{
+          "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/EinstellungBlutversorgung",
+          "valueDateTime" : "2022-03-24T12:30:00+01:00"
+        }],
+        "collectedDateTime" : "2022-03-24T12:44:00+01:00",
+        "quantity" : {
+          "value" : 1,
+          "unit" : "mL",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "mL"
+        },
+        "method" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "86273004",
+            "display" : "Biopsy (procedure)"
+          }]
+        },
+        "bodySite" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "71854001",
+            "display" : "Colon structure (body structure)"
+          }]
+        },
+        "fastingStatusCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/v2-0916",
+            "code" : "NF",
+            "display" : "The patient indicated they did not fast prior to the procedure."
+          }]
+        }
+      },
+      "processing" : [{
+        "extension" : [{
+          "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Temperaturbedingungen",
+          "valueRange" : {
+            "low" : {
+              "value" : 37,
+              "unit" : "°C",
+              "system" : "http://unitsofmeasure.org",
+              "code" : "Cel"
+            },
+            "high" : {
+              "value" : 37,
+              "unit" : "°C",
+              "system" : "http://unitsofmeasure.org",
+              "code" : "Cel"
+            }
+          }
+        }],
+        "procedure" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "1186936003",
+            "display" : "Storage of specimen (procedure)"
+          }]
+        },
+        "additive" : [{
+          "reference" : "Substance/mii-exa-test-data-patient-1-substance-1"
+        }],
+        "timePeriod" : {
+          "start" : "2022-04-01T10:00:00+02:00",
+          "end" : "2022-04-12T10:00:00+02:00"
+        }
+      },
+      {
+        "extension" : [{
+          "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Temperaturbedingungen",
+          "valueRange" : {
+            "low" : {
+              "value" : -196,
+              "unit" : "°C",
+              "system" : "http://unitsofmeasure.org",
+              "code" : "Cel"
+            },
+            "high" : {
+              "value" : -150,
+              "unit" : "°C",
+              "system" : "http://unitsofmeasure.org",
+              "code" : "Cel"
+            }
+          }
+        },
+        {
+          "url" : "https://fhir.bbmri-eric.eu/StructureDefinition/miabis-sample-storage-temperature-extension",
+          "valueCodeableConcept" : {
+            "coding" : [{
+              "system" : "https://fhir.bbmri-eric.eu/CodeSystem/miabis-storage-temperature-cs",
+              "code" : "LN",
+              "display" : "liquid nitrogen, -150 to -196 degrees Celsius"
+            }]
+          }
+        }],
+        "description" : "Kryokonservierung der Organoid-Aliquots",
+        "procedure" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "27872000",
+            "display" : "Specimen freezing (procedure)"
+          }]
+        },
+        "timePeriod" : {
+          "start" : "2022-04-12T11:00:00+02:00"
+        }
+      }],
+      "container" : [{
+        "type" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "83059008",
+            "display" : "Tube, device (physical object)"
+          }]
+        },
+        "capacity" : {
+          "value" : 2,
+          "unit" : "mL",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "mL"
+        },
+        "specimenQuantity" : {
+          "value" : 1,
+          "unit" : "mL",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "ml"
+        },
+        "additiveCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "105590001",
+            "display" : "Substance (substance)"
+          }],
+          "text" : "Organoid-Kulturmedium mit Matrigel"
+        }
+      }],
+      "note" : [{
+        "text" : "Kolon-Tumor-Organoid, Passage 3, aus der Gewebeprobe etabliert."
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Specimen/mii-exa-test-data-biobank-organoid-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Specimen/mii-exa-test-data-biobank-specimen-dna-1",
+    "resource" : {
+      "resourceType" : "Specimen",
+      "id" : "mii-exa-test-data-biobank-specimen-dna-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "de",
+      "text" : {
+        "status" : "extensions"
+      },
+      "extension" : [{
+        "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/mii-ex-biobank-ebene",
+        "valueCoding" : {
+          "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/CodeSystem/mii-cs-biobank-probenebene",
+          "code" : "ALIQUOT",
+          "display" : "Aliquot"
+        }
+      },
+      {
+        "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/mii-ex-biobank-infektiositaetsstatus",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "409603009",
+            "display" : "Biosafety level 2 (qualifier value)"
+          }]
+        }
+      }],
+      "identifier" : [{
+        "system" : "https://www.charite.de/fhir/sid/Bioproben",
+        "value" : "BP_000021"
+      }],
+      "status" : "available",
+      "type" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "258566005",
+          "display" : "Deoxyribonucleic acid specimen (specimen)"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-biobank-patient-1"
+      },
+      "receivedTime" : "2024-02-15T13:30:00+01:00",
+      "parent" : [{
+        "reference" : "Specimen/mii-exa-test-data-patient-1-specimen-1"
+      }],
+      "collection" : {
+        "extension" : [{
+          "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/EinstellungBlutversorgung",
+          "valueDateTime" : "2024-02-15T11:05:00+01:00"
+        }],
+        "collectedDateTime" : "2024-02-15T11:05:00+01:00",
+        "quantity" : {
+          "value" : 10,
+          "unit" : "mL",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "mL"
+        },
+        "fastingStatusCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/v2-0916",
+            "code" : "F",
+            "display" : "Patient was fasting prior to the procedure."
+          }]
+        }
+      },
+      "processing" : [{
+        "description" : "DNA-Extraktion aus EDTA-Vollblut",
+        "procedure" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "73373003",
+            "display" : "Specimen centrifugation (procedure)"
+          }]
+        },
+        "additive" : [{
+          "reference" : "Substance/mii-exa-test-data-patient-1-substance-1"
+        }],
+        "timePeriod" : {
+          "start" : "2024-02-15T13:45:00+01:00",
+          "end" : "2024-02-15T14:30:00+01:00"
+        }
+      }],
+      "container" : [{
+        "type" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "83059008",
+            "display" : "Tube, device (physical object)"
+          }]
+        },
+        "capacity" : {
+          "value" : 0.5,
+          "unit" : "mL",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "mL"
+        },
+        "specimenQuantity" : {
+          "value" : 0.2,
+          "unit" : "mL",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "ml"
+        }
+      }],
+      "note" : [{
+        "text" : "DNA-Extraktion aus dem EDTA-Vollblut, Konzentration 50 ng/uL."
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Specimen/mii-exa-test-data-biobank-specimen-dna-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Specimen/mii-exa-test-data-biobank-specimen-zellkultur-1",
+    "resource" : {
+      "resourceType" : "Specimen",
+      "id" : "mii-exa-test-data-biobank-specimen-zellkultur-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Specimen"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "de",
+      "text" : {
+        "status" : "extensions"
+      },
+      "extension" : [{
+        "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/VerwaltendeOrganisation",
+        "valueReference" : {
+          "reference" : "Organization/mii-exa-test-data-organization-biobank-charite"
+        }
+      },
+      {
+        "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Diagnose",
+        "valueReference" : {
+          "reference" : "Condition/mii-exa-test-data-biobank-diagnose-3"
+        }
+      },
+      {
+        "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/mii-ex-biobank-ebene",
+        "valueCoding" : {
+          "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/CodeSystem/mii-cs-biobank-probenebene",
+          "code" : "ALIQUOT",
+          "display" : "Aliquot"
+        }
+      },
+      {
+        "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/mii-ex-biobank-infektiositaetsstatus",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "409603009",
+            "display" : "Biosafety level 2 (qualifier value)"
+          }]
+        }
+      },
+      {
+        "url" : "http://hl7.eu/fhir/laboratory/StructureDefinition/specimen-focus",
+        "valueReference" : {
+          "reference" : "Substance/mii-exa-test-data-biobank-substance-kulturmedium-1"
+        }
+      },
+      {
+        "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/mii-ex-biobank-anzahl-aliquots",
+        "valueInteger" : 4
+      }],
+      "identifier" : [{
+        "system" : "https://www.charite.de/fhir/sid/Bioproben",
+        "value" : "BP_000022"
+      }],
+      "status" : "available",
+      "type" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "1404538009",
+          "display" : "Cell culture lysate specimen"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-biobank-patient-3"
+      },
+      "receivedTime" : "2022-04-12T12:00:00+02:00",
+      "parent" : [{
+        "reference" : "Specimen/mii-exa-test-data-biobank-organoid-1"
+      }],
+      "collection" : {
+        "collectedDateTime" : "2022-04-12T10:30:00+02:00",
+        "quantity" : {
+          "value" : 1,
+          "unit" : "mL",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "mL"
+        }
+      },
+      "processing" : [{
+        "extension" : [{
+          "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Temperaturbedingungen",
+          "valueRange" : {
+            "low" : {
+              "value" : -85,
+              "unit" : "°C",
+              "system" : "http://unitsofmeasure.org",
+              "code" : "Cel"
+            },
+            "high" : {
+              "value" : -60,
+              "unit" : "°C",
+              "system" : "http://unitsofmeasure.org",
+              "code" : "Cel"
+            }
+          }
+        },
+        {
+          "url" : "https://fhir.bbmri-eric.eu/StructureDefinition/miabis-sample-storage-temperature-extension",
+          "valueCodeableConcept" : {
+            "coding" : [{
+              "system" : "https://fhir.bbmri-eric.eu/CodeSystem/miabis-storage-temperature-cs",
+              "code" : "-60to-85",
+              "display" : "between -60 and -85 degrees Celsius"
+            }]
+          }
+        }],
+        "description" : "Einfrieren des Lysats bei -80 °C",
+        "procedure" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "27872000",
+            "display" : "Specimen freezing (procedure)"
+          }]
+        },
+        "timePeriod" : {
+          "start" : "2022-04-12T12:15:00+02:00"
+        }
+      }],
+      "container" : [{
+        "type" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "83059008",
+            "display" : "Tube, device (physical object)"
+          }]
+        },
+        "capacity" : {
+          "value" : 2,
+          "unit" : "mL",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "mL"
+        },
+        "specimenQuantity" : {
+          "value" : 1,
+          "unit" : "mL",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "ml"
+        }
+      }],
+      "note" : [{
+        "text" : "Lysat aus Passage 3 der Organoid-Kultur, fuer RNA-Extraktion vorgesehen."
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Specimen/mii-exa-test-data-biobank-specimen-zellkultur-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Specimen/mii-exa-test-data-biobank-specimen-inkubator-abstrich-1",
+    "resource" : {
+      "resourceType" : "Specimen",
+      "id" : "mii-exa-test-data-biobank-specimen-inkubator-abstrich-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "de",
+      "text" : {
+        "status" : "extensions"
+      },
+      "extension" : [{
+        "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/mii-ex-biobank-ebene",
+        "valueCoding" : {
+          "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/CodeSystem/mii-cs-biobank-probenebene",
+          "code" : "PRIMÄRPROBE",
+          "display" : "Primärprobe"
+        }
+      },
+      {
+        "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/mii-ex-biobank-infektiositaetsstatus",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "409603009",
+            "display" : "Biosafety level 2 (qualifier value)"
+          }]
+        }
+      },
+      {
+        "url" : "http://hl7.eu/fhir/laboratory/StructureDefinition/specimen-focus",
+        "valueReference" : {
+          "reference" : "Device/mii-exa-test-data-biobank-device-inkubator-1"
+        }
+      }],
+      "identifier" : [{
+        "system" : "https://www.charite.de/fhir/sid/Bioproben",
+        "value" : "BP_000023"
+      }],
+      "status" : "available",
+      "type" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "419695002",
+          "display" : "Environmental swab"
+        },
+        {
+          "system" : "https://fhir.bbmri-eric.eu/CodeSystem/miabis-detailed-samply-type-cs",
+          "code" : "SpecimenEnvironment",
+          "display" : "Specimen from environment"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-biobank-patient-3"
+      },
+      "receivedTime" : "2022-04-12T11:30:00+02:00",
+      "collection" : {
+        "collectedDateTime" : "2022-04-12T11:00:00+02:00"
+      },
+      "processing" : [{
+        "extension" : [{
+          "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Temperaturbedingungen",
+          "valueRange" : {
+            "low" : {
+              "value" : 15,
+              "unit" : "°C",
+              "system" : "http://unitsofmeasure.org",
+              "code" : "Cel"
+            },
+            "high" : {
+              "value" : 25,
+              "unit" : "°C",
+              "system" : "http://unitsofmeasure.org",
+              "code" : "Cel"
+            }
+          }
+        }],
+        "description" : "Transport zum Mikrobiologie-Labor bei Raumtemperatur",
+        "procedure" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "1186936003",
+            "display" : "Storage of specimen (procedure)"
+          }]
+        },
+        "timePeriod" : {
+          "start" : "2022-04-12T11:05:00+02:00",
+          "end" : "2022-04-12T11:30:00+02:00"
+        }
+      }],
+      "container" : [{
+        "type" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "83059008",
+            "display" : "Tube, device (physical object)"
+          }]
+        }
+      }],
+      "note" : [{
+        "text" : "Routinemaessige Sterilitaetskontrolle des Inkubators, in dem die Organoid-Kultur gehalten wird."
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Specimen/mii-exa-test-data-biobank-specimen-inkubator-abstrich-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/DocumentReference/mii-exa-test-data-biobank-kulturprotokoll-1",
+    "resource" : {
+      "resourceType" : "DocumentReference",
+      "id" : "mii-exa-test-data-biobank-kulturprotokoll-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "de",
+      "text" : {
+        "status" : "generated"
+      },
+      "status" : "current",
+      "date" : "2022-03-20T09:00:00+01:00",
+      "description" : "Standardprotokoll zur Kultivierung von Kolon-Tumor-Organoiden",
+      "content" : [{
+        "attachment" : {
+          "contentType" : "application/pdf",
+          "url" : "https://www.charite.de/biobank/protocols/KolonOrganoidKultur_v1.pdf",
+          "title" : "Kolon-Organoid Kulturprotokoll v1"
+        }
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "DocumentReference/mii-exa-test-data-biobank-kulturprotokoll-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/DocumentReference/mii-exa-test-data-biobank-crispr-protokoll-1",
+    "resource" : {
+      "resourceType" : "DocumentReference",
+      "id" : "mii-exa-test-data-biobank-crispr-protokoll-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "de",
+      "text" : {
+        "status" : "generated"
+      },
+      "status" : "current",
+      "date" : "2022-03-19T09:00:00+01:00",
+      "description" : "CRISPR Knockout-Protokoll fuer TP53 in Kolon-Tumor-Organoiden",
+      "content" : [{
+        "attachment" : {
+          "contentType" : "application/pdf",
+          "url" : "https://www.charite.de/biobank/protocols/CRISPR_TP53_KO_v1.pdf",
+          "title" : "CRISPR TP53 Knockout Protokoll v1"
+        }
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "DocumentReference/mii-exa-test-data-biobank-crispr-protokoll-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-biobank-dna-konzentration-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-biobank-dna-konzentration-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/mii-pr-biobank-observation-dna-konzentration"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "de",
+      "text" : {
+        "status" : "generated"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "72496-3",
+          "display" : "DNA double strand [Mass/volume] in Specimen"
+        }]
+      },
+      "focus" : [{
+        "reference" : "Specimen/mii-exa-test-data-biobank-specimen-dna-1"
+      }],
+      "effectiveDateTime" : "2024-02-16T09:30:00+01:00",
+      "valueQuantity" : {
+        "value" : 40,
+        "unit" : "ng/µL",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "ng/uL"
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-biobank-dna-konzentration-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-biobank-karyotyp-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-biobank-karyotyp-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/mii-pr-biobank-observation-karyotyp"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "de",
+      "text" : {
+        "status" : "generated"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "734840008",
+          "display" : "Karyotype (cell structure)"
+        }]
+      },
+      "focus" : [{
+        "reference" : "Specimen/mii-exa-test-data-biobank-organoid-1"
+      }],
+      "effectiveDateTime" : "2022-04-12T10:00:00+02:00",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "734875008",
+          "display" : "Karyotype 46, XX"
+        }]
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-biobank-karyotyp-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-biobank-morphologie-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-biobank-morphologie-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/mii-pr-biobank-observation-morphologie"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "de",
+      "text" : {
+        "status" : "generated"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://purl.obolibrary.org/obo/pato.owl",
+          "code" : "PATO:0010006",
+          "display" : "cell morphology"
+        }]
+      },
+      "focus" : [{
+        "reference" : "Specimen/mii-exa-test-data-biobank-organoid-1"
+      }],
+      "effectiveDateTime" : "2022-04-14T10:00:00+02:00",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "125393006",
+          "display" : "Cell structure alteration (morphologic abnormality)"
+        }]
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-biobank-morphologie-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-biobank-proliferation-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-biobank-proliferation-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/mii-pr-biobank-observation-proliferation"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "de",
+      "text" : {
+        "status" : "generated"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://purl.obolibrary.org/obo/go.owl",
+          "code" : "GO:0008283",
+          "display" : "cell population proliferation"
+        }]
+      },
+      "focus" : [{
+        "reference" : "Specimen/mii-exa-test-data-biobank-organoid-1"
+      }],
+      "effectiveDateTime" : "2022-04-13T10:00:00+02:00",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://purl.obolibrary.org/obo/pato.owl",
+          "code" : "PATO:0000719",
+          "display" : "viable"
+        }]
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-biobank-proliferation-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-biobank-wachstumstyp-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-biobank-wachstumstyp-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/mii-pr-biobank-observation-wachstumstyp"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "de",
+      "text" : {
+        "status" : "generated"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://purl.obolibrary.org/obo/clo.owl",
+          "code" : "CLO:0000030",
+          "display" : "cell culture growth mode"
+        }]
+      },
+      "focus" : [{
+        "reference" : "Specimen/mii-exa-test-data-biobank-organoid-1"
+      }],
+      "effectiveDateTime" : "2022-04-13T10:00:00+02:00",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://purl.obolibrary.org/obo/clo.owl",
+          "code" : "CLO:0000028",
+          "display" : "adherent cell culture growth mode"
+        }]
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-biobank-wachstumstyp-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-biobank-qualitaetspruefung-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-biobank-qualitaetspruefung-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/mii-pr-biobank-observation-qualitaetspruefung"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "de",
+      "text" : {
+        "status" : "generated"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "386404008",
+          "display" : "Quality monitoring (procedure)"
+        }]
+      },
+      "focus" : [{
+        "reference" : "Specimen/mii-exa-test-data-patient-3-specimen-2"
+      }],
+      "effectiveDateTime" : "2022-04-05T09:00:00+02:00",
+      "component" : [{
+        "code" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "246423001",
+            "display" : "Test protocol used (attribute)"
+          }]
+        },
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "401297005",
+            "display" : "Hemolysis screening test (procedure)"
+          }]
+        }
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "79409006",
+            "display" : "Resulting in (attribute)"
+          }]
+        },
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "LA10392-1",
+            "display" : "Pass"
+          }]
+        }
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-biobank-qualitaetspruefung-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Organization/mii-exa-test-data-organization-charite",
+    "resource" : {
+      "resourceType" : "Organization",
+      "id" : "mii-exa-test-data-organization-charite",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "de",
+      "text" : {
+        "status" : "generated"
+      },
+      "type" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/organization-type",
+          "code" : "prov",
+          "display" : "Healthcare Provider"
+        }]
+      }],
+      "name" : "Charité – Universitätsmedizin Berlin"
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Organization/mii-exa-test-data-organization-charite"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Condition/mii-exa-test-data-biobank-diagnose-1",
+    "resource" : {
+      "resourceType" : "Condition",
+      "id" : "mii-exa-test-data-biobank-diagnose-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/core/modul-diagnose/StructureDefinition/Diagnose"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "de",
+      "text" : {
+        "status" : "generated"
+      },
+      "clinicalStatus" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code" : "active"
+        }]
+      },
+      "verificationStatus" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code" : "confirmed"
+        }]
+      },
+      "code" : {
+        "coding" : [{
+          "system" : "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+          "version" : "2024",
+          "code" : "C18.9",
+          "display" : "Bösartige Neubildung: Kolon, nicht näher bezeichnet"
+        },
+        {
+          "system" : "http://fhir.de/CodeSystem/bfarm/alpha-id",
+          "version" : "2024",
+          "code" : "I29955",
+          "display" : "Bösartige Neubildung des Kolons"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "363406005",
+          "display" : "Malignant tumor of colon (disorder)"
+        }]
+      },
+      "bodySite" : [{
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "71854001",
+          "display" : "Colon structure (body structure)"
+        }]
+      }],
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-biobank-patient-1"
+      },
+      "recordedDate" : "2024-08-15"
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Condition/mii-exa-test-data-biobank-diagnose-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Condition/mii-exa-test-data-biobank-diagnose-3",
+    "resource" : {
+      "resourceType" : "Condition",
+      "id" : "mii-exa-test-data-biobank-diagnose-3",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/core/modul-diagnose/StructureDefinition/Diagnose"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "de",
+      "text" : {
+        "status" : "generated"
+      },
+      "clinicalStatus" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code" : "active"
+        }]
+      },
+      "verificationStatus" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code" : "confirmed"
+        }]
+      },
+      "code" : {
+        "coding" : [{
+          "system" : "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+          "version" : "2024",
+          "code" : "C18.9",
+          "display" : "Bösartige Neubildung: Kolon, nicht näher bezeichnet"
+        },
+        {
+          "system" : "http://fhir.de/CodeSystem/bfarm/alpha-id",
+          "version" : "2024",
+          "code" : "I29955",
+          "display" : "Bösartige Neubildung des Kolons"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "363406005",
+          "display" : "Malignant tumor of colon (disorder)"
+        }]
+      },
+      "bodySite" : [{
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "71854001",
+          "display" : "Colon structure (body structure)"
+        }]
+      }],
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-biobank-patient-3"
+      },
+      "recordedDate" : "2022-03-20"
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Condition/mii-exa-test-data-biobank-diagnose-3"
+    }
+  }]
+}

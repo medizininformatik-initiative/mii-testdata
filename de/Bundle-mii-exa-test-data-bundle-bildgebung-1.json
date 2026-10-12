@@ -1,0 +1,1744 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "mii-exa-test-data-bundle-bildgebung-1",
+  "meta" : {
+    "source" : "https://www.charite.de/fhir/kds-testdata",
+    "security" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "code" : "HTEST",
+      "display" : "test health data"
+    }]
+  },
+  "language" : "de",
+  "type" : "transaction",
+  "timestamp" : "2025-06-18T13:51:00+02:00",
+  "entry" : [{
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Patient/mii-exa-test-data-bildgebung-patient-1",
+    "resource" : {
+      "resourceType" : "Patient",
+      "id" : "mii-exa-test-data-bildgebung-patient-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "de",
+      "text" : {
+        "status" : "generated"
+      },
+      "identifier" : [{
+        "system" : "https://www.charite.de/fhir/sid/patientenidentifikation",
+        "value" : "BILD-TEST-001"
+      }],
+      "name" : [{
+        "family" : "Mustermann",
+        "given" : ["Andreas"]
+      }],
+      "gender" : "male",
+      "birthDate" : "1968-07-22"
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Patient/mii-exa-test-data-bildgebung-patient-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Encounter/mii-exa-test-data-bildgebung-encounter-1",
+    "resource" : {
+      "resourceType" : "Encounter",
+      "id" : "mii-exa-test-data-bildgebung-encounter-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "de",
+      "text" : {
+        "status" : "generated"
+      },
+      "status" : "finished",
+      "class" : {
+        "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "code" : "IMP",
+        "display" : "inpatient encounter"
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-bildgebung-patient-1"
+      },
+      "period" : {
+        "start" : "2024-03-01",
+        "end" : "2024-03-15"
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Encounter/mii-exa-test-data-bildgebung-encounter-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/ServiceRequest/mii-exa-test-data-anforderung",
+    "resource" : {
+      "resourceType" : "ServiceRequest",
+      "id" : "mii-exa-test-data-anforderung",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-anforderung-bildgebung"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "de",
+      "text" : {
+        "status" : "generated"
+      },
+      "status" : "completed",
+      "intent" : "order",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "363679005",
+          "display" : "Imaging (procedure)"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "71651007",
+          "display" : "Mammography (procedure)"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-bildgebung-patient-1"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-bildgebung-encounter-1"
+      },
+      "authoredOn" : "2024-07-19T12:03:30+02:00",
+      "requester" : {
+        "reference" : "Organization/mii-exa-test-data-organization-biobank-charite"
+      },
+      "reasonCode" : [{
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "116339002",
+          "display" : "Breast finding"
+        }]
+      }],
+      "reasonReference" : [{
+        "reference" : "Condition/mii-exa-test-data-bildgebung-diagnose-1"
+      }],
+      "supportingInfo" : [{
+        "reference" : "ImagingStudy/mii-exa-test-data-bildgebungsstudie"
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "ServiceRequest/mii-exa-test-data-anforderung"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Procedure/mii-exa-test-data-bildgebungsprozedur",
+    "resource" : {
+      "resourceType" : "Procedure",
+      "id" : "mii-exa-test-data-bildgebungsprozedur",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-bildgebungsprozedur"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "de",
+      "text" : {
+        "status" : "extensions"
+      },
+      "extension" : [{
+        "url" : "http://fhir.de/StructureDefinition/ProzedurDokumentationsdatum",
+        "valueDateTime" : "2024-07-19T14:00:00+02:00"
+      },
+      {
+        "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Durchfuehrungsabsicht",
+        "valueCoding" : {
+          "system" : "http://snomed.info/sct",
+          "code" : "261004008",
+          "display" : "Diagnostic intent (qualifier value)"
+        }
+      }],
+      "basedOn" : [{
+        "reference" : "ServiceRequest/mii-exa-test-data-anforderung"
+      }],
+      "status" : "completed",
+      "category" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "363679005",
+          "display" : "Imaging (procedure)"
+        }]
+      },
+      "code" : {
+        "coding" : [{
+          "extension" : [{
+            "url" : "http://fhir.de/StructureDefinition/seitenlokalisation",
+            "valueCoding" : {
+              "system" : "https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_ICD_SEITENLOKALISATION",
+              "code" : "B",
+              "display" : "beiderseits"
+            }
+          }],
+          "system" : "http://fhir.de/CodeSystem/bfarm/ops",
+          "version" : "2024",
+          "code" : "3-100",
+          "display" : "Mammographie"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "384151000119104",
+          "display" : "Screening mammography of bilateral breasts (procedure)"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-bildgebung-patient-1"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-bildgebung-encounter-1"
+      },
+      "performedDateTime" : "2024-07-19T12:03:30+02:00",
+      "bodySite" : [{
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20240201",
+          "code" : "76752008",
+          "display" : "Breast structure (body structure)"
+        }]
+      }],
+      "note" : [{
+        "text" : "Durchführung einer Mammographie"
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Procedure/mii-exa-test-data-bildgebungsprozedur"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/BodyStructure/mii-exa-test-data-koerperstruktur",
+    "resource" : {
+      "resourceType" : "BodyStructure",
+      "id" : "mii-exa-test-data-koerperstruktur",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-koerperstruktur"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "de",
+      "text" : {
+        "status" : "generated"
+      },
+      "morphology" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "12747003",
+          "display" : "Microcalcification, calcified structure (morphologic abnormality)"
+        }]
+      },
+      "location" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "76752008",
+          "display" : "Breast structure (body structure)"
+        }]
+      },
+      "locationQualifier" : [{
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "7771000",
+          "display" : "Left"
+        }]
+      }],
+      "patient" : {
+        "reference" : "Patient/mii-exa-test-data-bildgebung-patient-1"
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "BodyStructure/mii-exa-test-data-koerperstruktur"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-radiologische-beobachtung",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-radiologische-beobachtung",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologische-beobachtung"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "de",
+      "text" : {
+        "status" : "extensions"
+      },
+      "extension" : [{
+        "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-series-uid",
+        "valueId" : "1.2.34.5.6789.1.2.34.5678912.34567891234567891234"
+      },
+      {
+        "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-sop-instanz-uid",
+        "valueId" : "1.2.34.5.6789.1.2.3.45678.9123456789123456789123456789"
+      }],
+      "partOf" : [{
+        "reference" : "Procedure/mii-exa-test-data-befundungsprozedur"
+      }],
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "imaging",
+          "display" : "Imaging"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "32422-8",
+          "display" : "Physical findings of Breast"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-bildgebung-patient-1"
+      },
+      "issued" : "2024-07-19T12:03:30+02:00",
+      "valueString" : "microcalcifications in the upper outer quadrant in the left breast",
+      "bodySite" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/bodySite",
+          "valueReference" : {
+            "reference" : "BodyStructure/mii-exa-test-data-koerperstruktur"
+          }
+        }],
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "76752008",
+          "display" : "Breast structure (body structure)"
+        }]
+      },
+      "hasMember" : [{
+        "reference" : "Observation/mii-exa-test-data-bildgebung-labobs-1"
+      }],
+      "derivedFrom" : [{
+        "reference" : "ImagingStudy/mii-exa-test-data-bildgebungsstudie"
+      }],
+      "component" : [{
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "10157-6",
+            "display" : "History of family member diseases note"
+          }]
+        },
+        "valueBoolean" : true
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-radiologische-beobachtung"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-radiologische-beobachtung-2",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-radiologische-beobachtung-2",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologische-beobachtung"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "de",
+      "text" : {
+        "status" : "generated"
+      },
+      "partOf" : [{
+        "reference" : "Procedure/mii-exa-test-data-befundungsprozedur"
+      }],
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "imaging",
+          "display" : "Imaging"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "32422-8",
+          "display" : "Physical findings of Breast"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-bildgebung-patient-1"
+      },
+      "issued" : "2024-07-19T12:05:00+02:00",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "373067005",
+          "display" : "No (qualifier value)"
+        }],
+        "text" : "Architekturstoerung: nein"
+      },
+      "bodySite" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "76752008",
+          "display" : "Breast structure (body structure)"
+        }]
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-radiologische-beobachtung-2"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-radiologische-beobachtung-3",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-radiologische-beobachtung-3",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologische-beobachtung"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "de",
+      "text" : {
+        "status" : "generated"
+      },
+      "partOf" : [{
+        "reference" : "Procedure/mii-exa-test-data-befundungsprozedur"
+      }],
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "imaging",
+          "display" : "Imaging"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "439984002",
+          "display" : "Diameter of structure by imaging measurement (observable entity)"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-bildgebung-patient-1"
+      },
+      "issued" : "2024-07-19T12:06:00+02:00",
+      "valueQuantity" : {
+        "value" : 8,
+        "unit" : "millimeter",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "mm"
+      },
+      "bodySite" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "76752008",
+          "display" : "Breast structure (body structure)"
+        }]
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-radiologische-beobachtung-3"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-radiologische-messung-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-radiologische-messung-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologische-messung"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "de",
+      "text" : {
+        "status" : "extensions"
+      },
+      "extension" : [{
+        "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-series-uid",
+        "valueId" : "1.2.34.5.6789.1.2.34.5678912.34567891234567891234"
+      },
+      {
+        "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-sop-instanz-uid",
+        "valueId" : "1.2.34.5.6789.1.2.3.45678.9123456789123456789123456789"
+      }],
+      "partOf" : [{
+        "reference" : "Procedure/mii-exa-test-data-befundungsprozedur"
+      }],
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "122869004",
+          "display" : "Measurement procedure (procedure)"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "439984002",
+          "display" : "Diameter of structure by imaging measurement (observable entity)"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-bildgebung-patient-1"
+      },
+      "issued" : "2024-07-19T12:03:30+02:00",
+      "valueQuantity" : {
+        "value" : 4.2,
+        "unit" : "millimeter",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "mm"
+      },
+      "bodySite" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/bodySite",
+          "valueReference" : {
+            "reference" : "BodyStructure/mii-exa-test-data-koerperstruktur"
+          }
+        }],
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "76752008",
+          "display" : "Breast structure (body structure)"
+        }]
+      },
+      "method" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "272391002",
+          "display" : "Measurement technique (qualifier value)"
+        }]
+      },
+      "hasMember" : [{
+        "reference" : "Observation/mii-exa-test-data-radiologische-beobachtung"
+      }],
+      "derivedFrom" : [{
+        "reference" : "ImagingStudy/mii-exa-test-data-bildgebungsstudie"
+      }],
+      "component" : [{
+        "code" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701",
+            "code" : "410668003",
+            "display" : "Length property (qualifier value)"
+          }]
+        },
+        "valueQuantity" : {
+          "value" : 4.2,
+          "unit" : "millimeter",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "mm"
+        }
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-radiologische-messung-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Endpoint/mii-exa-test-data-bildgebung-endpoint-1",
+    "resource" : {
+      "resourceType" : "Endpoint",
+      "id" : "mii-exa-test-data-bildgebung-endpoint-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "de",
+      "text" : {
+        "status" : "generated"
+      },
+      "status" : "active",
+      "connectionType" : {
+        "system" : "http://terminology.hl7.org/CodeSystem/endpoint-connection-type",
+        "code" : "dicom-wado-rs",
+        "display" : "DICOM WADO-RS"
+      },
+      "name" : "Charite PACS WADO-RS",
+      "payloadType" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/endpoint-payload-type",
+          "code" : "any",
+          "display" : "Any"
+        }]
+      }],
+      "address" : "https://pacs.charite.de/wado-rs"
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Endpoint/mii-exa-test-data-bildgebung-endpoint-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/DiagnosticReport/mii-exa-test-data-befundbericht",
+    "resource" : {
+      "resourceType" : "DiagnosticReport",
+      "id" : "mii-exa-test-data-befundbericht",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologischer-befund"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "de",
+      "text" : {
+        "status" : "generated"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo",
+        "valueReference" : {
+          "reference" : "Procedure/mii-exa-test-data-befundungsprozedur"
+        }
+      }],
+      "basedOn" : [{
+        "reference" : "ServiceRequest/mii-exa-test-data-anforderung"
+      }],
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+          "code" : "4201000179104",
+          "display" : "Imaging report (record artifact)"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "4231000179109",
+          "display" : "Mammography report"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-bildgebung-patient-1"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-bildgebung-encounter-1"
+      },
+      "effectiveDateTime" : "2024-07-19T12:03:30+02:00",
+      "issued" : "2024-07-19T12:03:30+02:00",
+      "result" : [{
+        "reference" : "Observation/mii-exa-test-data-radiologische-beobachtung"
+      },
+      {
+        "reference" : "Observation/mii-exa-test-data-radiologische-messung-1"
+      }],
+      "imagingStudy" : [{
+        "reference" : "ImagingStudy/mii-exa-test-data-bildgebungsstudie"
+      }],
+      "conclusion" : "There are suspicious microcalcifications in the upper outer quadrant in the left breast",
+      "conclusionCode" : [{
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "129770009",
+          "display" : "Mammographic calcification finding (finding)"
+        }]
+      }],
+      "presentedForm" : [{
+        "contentType" : "application/pdf",
+        "language" : "de",
+        "url" : "https://dms.charite.de/kds-testdata/bildgebung/patient-1/befundbericht-1.pdf",
+        "title" : "Mammographie-Befundbericht (PDF)",
+        "creation" : "2024-07-19T12:03:30+02:00"
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "DiagnosticReport/mii-exa-test-data-befundbericht"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Device/mii-exa-test-data-geraet",
+    "resource" : {
+      "resourceType" : "Device",
+      "id" : "mii-exa-test-data-geraet",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-geraet"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "de",
+      "text" : {
+        "status" : "generated"
+      },
+      "manufacturer" : "Siemens",
+      "deviceName" : [{
+        "name" : "Magnetom Vida",
+        "type" : "model-name"
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Device/mii-exa-test-data-geraet"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Procedure/mii-exa-test-data-befundungsprozedur",
+    "resource" : {
+      "resourceType" : "Procedure",
+      "id" : "mii-exa-test-data-befundungsprozedur",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologische-befundungsprozedur"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "de",
+      "text" : {
+        "status" : "extensions"
+      },
+      "extension" : [{
+        "url" : "http://fhir.de/StructureDefinition/ProzedurDokumentationsdatum",
+        "valueDateTime" : "2024-07-19T15:30:00+02:00"
+      },
+      {
+        "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Durchfuehrungsabsicht",
+        "valueCoding" : {
+          "system" : "http://snomed.info/sct",
+          "code" : "261004008",
+          "display" : "Diagnostic intent (qualifier value)"
+        }
+      }],
+      "status" : "completed",
+      "category" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "165197003",
+          "display" : "Diagnostic assessment (procedure)"
+        }]
+      },
+      "code" : {
+        "coding" : [{
+          "extension" : [{
+            "url" : "http://fhir.de/StructureDefinition/seitenlokalisation",
+            "valueCoding" : {
+              "system" : "https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_ICD_SEITENLOKALISATION",
+              "code" : "L",
+              "display" : "links"
+            }
+          }],
+          "system" : "http://fhir.de/CodeSystem/bfarm/ops",
+          "version" : "2024",
+          "code" : "3-209",
+          "display" : "Native Computertomographie, sonstige"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "4261000179100",
+          "display" : "Computed tomography imaging report (record artifact)"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-bildgebung-patient-1"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-bildgebung-encounter-1"
+      },
+      "performedDateTime" : "2024-07-19T12:03:30+02:00",
+      "bodySite" : [{
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "version" : "http://snomed.info/sct/900000000000207008/version/20240201",
+          "code" : "76752008",
+          "display" : "Breast structure (body structure)"
+        }]
+      }],
+      "report" : [{
+        "reference" : "DiagnosticReport/mii-exa-test-data-befundbericht"
+      }],
+      "note" : [{
+        "text" : "Befundung eines Mamma-CTs"
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Procedure/mii-exa-test-data-befundungsprozedur"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/CarePlan/mii-exa-test-data-behandlungsempfehlung",
+    "resource" : {
+      "resourceType" : "CarePlan",
+      "id" : "mii-exa-test-data-behandlungsempfehlung",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-behandlungsempfehlung"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "de",
+      "text" : {
+        "status" : "generated"
+      },
+      "status" : "completed",
+      "intent" : "proposal",
+      "description" : "The patient must receive vacuum biopsy",
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-bildgebung-patient-1"
+      },
+      "supportingInfo" : [{
+        "reference" : "DiagnosticReport/mii-exa-test-data-befundbericht"
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "CarePlan/mii-exa-test-data-behandlungsempfehlung"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/ImagingStudy/mii-exa-test-data-bildgebungsstudie",
+    "resource" : {
+      "resourceType" : "ImagingStudy",
+      "id" : "mii-exa-test-data-bildgebungsstudie",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-bildgebungsstudie"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "de",
+      "text" : {
+        "status" : "extensions"
+      },
+      "extension" : [{
+        "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-bildgebungsgrund",
+        "valueString" : "Verdacht auf Mammakarzinom"
+      }],
+      "status" : "available",
+      "modality" : [{
+        "system" : "http://dicom.nema.org/resources/ontology/DCM",
+        "code" : "MR",
+        "display" : "Magnetic Resonance"
+      }],
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-bildgebung-patient-1"
+      },
+      "encounter" : {
+        "reference" : "Encounter/mii-exa-test-data-bildgebung-encounter-1"
+      },
+      "started" : "2024-07-19T12:03:30+02:00",
+      "basedOn" : [{
+        "reference" : "ServiceRequest/mii-exa-test-data-anforderung"
+      }],
+      "endpoint" : [{
+        "reference" : "Endpoint/mii-exa-test-data-bildgebung-endpoint-1"
+      }],
+      "numberOfSeries" : 11,
+      "numberOfInstances" : 294,
+      "procedureReference" : {
+        "reference" : "Procedure/mii-exa-test-data-bildgebungsprozedur"
+      },
+      "reasonReference" : [{
+        "reference" : "Condition/mii-exa-test-data-bildgebung-diagnose-1"
+      }],
+      "description" : "Mamma",
+      "series" : [{
+        "extension" : [{
+          "extension" : [{
+            "url" : "magneticFieldStrength",
+            "valueQuantity" : {
+              "value" : 3,
+              "unit" : "tesla"
+            }
+          },
+          {
+            "url" : "scanningSequence",
+            "valueCodeableConcept" : {
+              "coding" : [{
+                "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-scanning-sequence",
+                "code" : "SE"
+              }]
+            }
+          },
+          {
+            "url" : "scanningSequenceVariant",
+            "valueCodeableConcept" : {
+              "coding" : [{
+                "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-scanning-sequence-variant",
+                "code" : "SP"
+              },
+              {
+                "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-scanning-sequence-variant",
+                "code" : "SK"
+              }]
+            }
+          },
+          {
+            "url" : "echoTime",
+            "valueQuantity" : {
+              "value" : 388,
+              "unit" : "milliseconds"
+            }
+          },
+          {
+            "url" : "repetitionTime",
+            "valueQuantity" : {
+              "value" : 5000,
+              "unit" : "milliseconds"
+            }
+          },
+          {
+            "url" : "inversionTime",
+            "valueQuantity" : {
+              "value" : 900,
+              "unit" : "milliseconds"
+            }
+          },
+          {
+            "url" : "flipAngle",
+            "valueQuantity" : {
+              "value" : 130,
+              "unit" : "plane angle degree"
+            }
+          }],
+          "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mr"
+        },
+        {
+          "extension" : [{
+            "url" : "contrastBolus",
+            "valueBoolean" : true
+          },
+          {
+            "url" : "contrastBolusDetails",
+            "valueReference" : {
+              "reference" : "MedicationAdministration/mii-exa-test-data-kontrastmittelgabe"
+            }
+          }],
+          "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-kontrastmittel"
+        }],
+        "uid" : "1.2.34.5.6789.1.2.34.5678912.34567891234567891234",
+        "number" : 9,
+        "modality" : {
+          "system" : "http://dicom.nema.org/resources/ontology/DCM",
+          "code" : "MR",
+          "display" : "Magnetic Resonance"
+        },
+        "description" : "T2 STIR_tra DRB",
+        "numberOfInstances" : 28,
+        "bodySite" : {
+          "system" : "http://snomed.info/sct",
+          "code" : "76752008",
+          "display" : "Breast structure (body structure)"
+        },
+        "laterality" : {
+          "system" : "http://snomed.info/sct",
+          "code" : "419161000",
+          "display" : "Unilateral left"
+        },
+        "started" : "2024-07-19T12:03:30+02:00",
+        "performer" : [{
+          "actor" : {
+            "reference" : "Device/mii-exa-test-data-geraet"
+          }
+        }],
+        "instance" : [{
+          "extension" : [{
+            "extension" : [{
+              "url" : "pixelSpacingX",
+              "valueQuantity" : {
+                "value" : 0.260417,
+                "unit" : "millimeter"
+              }
+            },
+            {
+              "url" : "pixelSpacingY",
+              "valueQuantity" : {
+                "value" : 0.260417,
+                "unit" : "millimeter"
+              }
+            },
+            {
+              "url" : "sliceThickness",
+              "valueQuantity" : {
+                "value" : 3,
+                "unit" : "millimeter"
+              }
+            },
+            {
+              "url" : "imageType",
+              "valueCodeableConcept" : {
+                "coding" : [{
+                  "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-instance-image-type",
+                  "code" : "ORIGINAL"
+                },
+                {
+                  "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-instance-image-type",
+                  "code" : "SECONDARY"
+                },
+                {
+                  "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-instance-image-type",
+                  "code" : "OTHER"
+                }]
+              }
+            }],
+            "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-details"
+          }],
+          "uid" : "1.2.34.5.6789.1.2.3.45678.9123456789123456789123456789",
+          "sopClass" : {
+            "system" : "urn:ietf:rfc:3986",
+            "code" : "urn:oid:1.2.840.10008.5.1.4.1.1.4"
+          },
+          "number" : 28
+        }]
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "ImagingStudy/mii-exa-test-data-bildgebungsstudie"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/MedicationAdministration/mii-exa-test-data-kontrastmittelgabe",
+    "resource" : {
+      "resourceType" : "MedicationAdministration",
+      "id" : "mii-exa-test-data-kontrastmittelgabe",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-kontrastmittelgabe"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "de",
+      "text" : {
+        "status" : "generated"
+      },
+      "identifier" : [{
+        "system" : "https://www.charite.de/fhir/sid/MedicationAdministrations",
+        "value" : "MA_KM_0000001"
+      }],
+      "partOf" : [{
+        "reference" : "Procedure/mii-exa-test-data-bildgebungsprozedur"
+      }],
+      "status" : "completed",
+      "category" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/medication-admin-category",
+          "code" : "inpatient",
+          "display" : "Inpatient"
+        }]
+      },
+      "medicationCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://fhir.de/CodeSystem/ifa/pzn",
+          "code" : "01309008",
+          "display" : "Ultravist 300 Injektionsloesung"
+        },
+        {
+          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
+          "version" : "2024",
+          "code" : "V08AB05",
+          "display" : "Iopromid"
+        },
+        {
+          "system" : "http://www.whocc.no/atc",
+          "code" : "V08AB05",
+          "display" : "iopromide"
+        }],
+        "text" : "Iopromid 300 mg Iod/mL Injektionsloesung"
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-bildgebung-patient-1"
+      },
+      "context" : {
+        "reference" : "Encounter/mii-exa-test-data-bildgebung-encounter-1"
+      },
+      "effectivePeriod" : {
+        "start" : "2024-07-19T12:21:45+02:00",
+        "end" : "2024-07-19T12:22:45+02:00"
+      },
+      "performer" : [{
+        "actor" : {
+          "reference" : "Practitioner/mii-exa-test-data-practitioner-physician-1"
+        }
+      }],
+      "reasonCode" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/reason-medication-given",
+          "code" : "b",
+          "display" : "Given as Ordered"
+        }]
+      }],
+      "reasonReference" : [{
+        "reference" : "Condition/mii-exa-test-data-bildgebung-diagnose-1"
+      }],
+      "request" : {
+        "reference" : "MedicationRequest/mii-exa-test-data-bildgebung-medrequest-1"
+      },
+      "note" : [{
+        "text" : "Kontrastmittelgabe"
+      }],
+      "dosage" : {
+        "text" : "111 mL Iopromid intravenoes als Bolus ueber 1 Minute",
+        "site" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "368208006",
+            "display" : "Left upper arm structure (body structure)"
+          }]
+        },
+        "route" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "47625008",
+            "display" : "Intravenous route (qualifier value)"
+          }]
+        },
+        "dose" : {
+          "value" : 111,
+          "unit" : "milliliter",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "mL"
+        },
+        "rateQuantity" : {
+          "value" : 111,
+          "unit" : "mL/min",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "mL/min"
+        }
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "MedicationAdministration/mii-exa-test-data-kontrastmittelgabe"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/MedicationAdministration/mii-exa-test-data-kontrastmittelgabe-2",
+    "resource" : {
+      "resourceType" : "MedicationAdministration",
+      "id" : "mii-exa-test-data-kontrastmittelgabe-2",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-kontrastmittelgabe"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "de",
+      "text" : {
+        "status" : "generated"
+      },
+      "identifier" : [{
+        "system" : "https://www.charite.de/fhir/sid/MedicationAdministrations",
+        "value" : "MA_KM_0000002"
+      }],
+      "partOf" : [{
+        "reference" : "Procedure/mii-exa-test-data-bildgebungsprozedur"
+      }],
+      "status" : "completed",
+      "category" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/medication-admin-category",
+          "code" : "inpatient",
+          "display" : "Inpatient"
+        }]
+      },
+      "medicationCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
+          "version" : "2024",
+          "code" : "B05XA03",
+          "display" : "Natriumchlorid"
+        },
+        {
+          "system" : "http://www.whocc.no/atc",
+          "code" : "B05XA03",
+          "display" : "sodium chloride"
+        }],
+        "text" : "Natriumchlorid 0,9 % Injektionsloesung (Nachspuelung)"
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-bildgebung-patient-1"
+      },
+      "context" : {
+        "reference" : "Encounter/mii-exa-test-data-bildgebung-encounter-1"
+      },
+      "effectivePeriod" : {
+        "start" : "2024-07-19T12:22:45+02:00",
+        "end" : "2024-07-19T12:23:45+02:00"
+      },
+      "performer" : [{
+        "actor" : {
+          "reference" : "Practitioner/mii-exa-test-data-practitioner-physician-1"
+        }
+      }],
+      "reasonCode" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/reason-medication-given",
+          "code" : "b",
+          "display" : "Given as Ordered"
+        }]
+      }],
+      "reasonReference" : [{
+        "reference" : "Condition/mii-exa-test-data-bildgebung-diagnose-1"
+      }],
+      "request" : {
+        "reference" : "MedicationRequest/mii-exa-test-data-bildgebung-medrequest-1"
+      },
+      "note" : [{
+        "text" : "NaCl-Nachspuelung des Kontrastmittelbolus ueber denselben Zugang"
+      }],
+      "dosage" : {
+        "text" : "30 mL NaCl 0,9 % intravenoes ueber 1 Minute (Nachspuelung)",
+        "site" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "368208006",
+            "display" : "Left upper arm structure (body structure)"
+          }]
+        },
+        "route" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "47625008",
+            "display" : "Intravenous route (qualifier value)"
+          }]
+        },
+        "dose" : {
+          "value" : 30,
+          "unit" : "milliliter",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "mL"
+        },
+        "rateRatio" : {
+          "numerator" : {
+            "value" : 30,
+            "unit" : "milliliter",
+            "system" : "http://unitsofmeasure.org",
+            "code" : "mL"
+          },
+          "denominator" : {
+            "value" : 1,
+            "unit" : "minute",
+            "system" : "http://unitsofmeasure.org",
+            "code" : "min"
+          }
+        }
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "MedicationAdministration/mii-exa-test-data-kontrastmittelgabe-2"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Composition/mii-exa-test-data-semistrukt-befundbericht",
+    "resource" : {
+      "resourceType" : "Composition",
+      "id" : "mii-exa-test-data-semistrukt-befundbericht",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-semistrukt-befundbericht"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "de",
+      "text" : {
+        "status" : "generated"
+      },
+      "status" : "final",
+      "type" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "24604-1",
+          "display" : "MG Breast Diagnostic Limited Views"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-bildgebung-patient-1"
+      },
+      "date" : "2024-07-19T12:03:30+02:00",
+      "author" : [{
+        "reference" : "Practitioner/mii-exa-test-data-practitioner-physician-1"
+      }],
+      "title" : "Mammographic Report",
+      "section" : [{
+        "title" : "Diagnostic Report",
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "18782-3",
+            "display" : "Radiology Study observation (narrative)"
+          }]
+        },
+        "author" : [{
+          "reference" : "Practitioner/mii-exa-test-data-practitioner-physician-1"
+        }],
+        "text" : {
+          "status" : "generated",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Mammographie beidseits: Mikrokalk im oberen aeusseren Quadranten links, Herdbefund 4,2 mm.</div>"
+        },
+        "entry" : [{
+          "reference" : "DiagnosticReport/mii-exa-test-data-befundbericht"
+        }],
+        "section" : [{
+          "title" : "Left Breast",
+          "code" : {
+            "coding" : [{
+              "system" : "http://loinc.org",
+              "code" : "66110-8",
+              "display" : "Breast Pathology biopsy report"
+            }]
+          },
+          "author" : [{
+            "reference" : "Practitioner/mii-exa-test-data-practitioner-physician-2"
+          }],
+          "entry" : [{
+            "reference" : "Observation/mii-exa-test-data-radiologische-beobachtung"
+          }]
+        }]
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Composition/mii-exa-test-data-semistrukt-befundbericht"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Organization/mii-exa-test-data-organization-biobank-charite",
+    "resource" : {
+      "resourceType" : "Organization",
+      "id" : "mii-exa-test-data-organization-biobank-charite",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Organization"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "de",
+      "text" : {
+        "status" : "extensions"
+      },
+      "extension" : [{
+        "url" : "https://fhir.bbmri-eric.eu/StructureDefinition/miabis-organization-description-extension",
+        "valueString" : "Zentrale Biobank der Charité"
+      },
+      {
+        "url" : "https://fhir.bbmri-eric.eu/StructureDefinition/miabis-sample-collection-setting-extension",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "https://fhir.bbmri-eric.eu/CodeSystem/miabis-sample-collection-setting-cs",
+            "code" : "RoutineHealthCare",
+            "display" : "Routine health care setting"
+          }]
+        }
+      },
+      {
+        "url" : "https://fhir.bbmri-eric.eu/StructureDefinition/miabis-collection-design-extension",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "https://fhir.bbmri-eric.eu/CodeSystem/miabis-collection-design-cs",
+            "code" : "DiseaseSpecificCohort",
+            "display" : "Disease-specific cohort"
+          }]
+        }
+      }],
+      "identifier" : [{
+        "system" : "http://www.bbmri-eric.eu/",
+        "value" : "de-12345"
+      }],
+      "name" : "Zentrale Biobank der Charité",
+      "alias" : ["ZeBanC"],
+      "partOf" : {
+        "reference" : "Organization/mii-exa-test-data-organization-charite"
+      },
+      "contact" : [{
+        "extension" : [{
+          "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/KontaktRolle",
+          "valueString" : "Direktor"
+        }],
+        "purpose" : {
+          "coding" : [{
+            "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/CodeSystem/ContactType",
+            "code" : "RESEARCH"
+          }]
+        },
+        "name" : {
+          "family" : "Robert",
+          "given" : ["Koch"],
+          "prefix" : ["Prof."]
+        },
+        "telecom" : [{
+          "system" : "email",
+          "value" : "robert.koch@charite.de"
+        }],
+        "address" : {
+          "line" : ["Südring 7"],
+          "city" : "Berlin",
+          "postalCode" : "13353"
+        }
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Organization/mii-exa-test-data-organization-biobank-charite"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Practitioner/mii-exa-test-data-practitioner-physician-1",
+    "resource" : {
+      "resourceType" : "Practitioner",
+      "id" : "mii-exa-test-data-practitioner-physician-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "de",
+      "text" : {
+        "status" : "generated"
+      },
+      "active" : true,
+      "name" : [{
+        "family" : "Hirsch",
+        "given" : ["Rahel"]
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Practitioner/mii-exa-test-data-practitioner-physician-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Practitioner/mii-exa-test-data-practitioner-physician-2",
+    "resource" : {
+      "resourceType" : "Practitioner",
+      "id" : "mii-exa-test-data-practitioner-physician-2",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "de",
+      "text" : {
+        "status" : "generated"
+      },
+      "active" : true,
+      "name" : [{
+        "use" : "official",
+        "family" : "Koch",
+        "given" : ["Robert"],
+        "prefix" : ["Dr."]
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Practitioner/mii-exa-test-data-practitioner-physician-2"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Medication/mii-exa-test-data-medication-dalbavancin",
+    "resource" : {
+      "resourceType" : "Medication",
+      "id" : "mii-exa-test-data-medication-dalbavancin",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication"],
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "de",
+      "text" : {
+        "status" : "extensions"
+      },
+      "code" : {
+        "coding" : [{
+          "system" : "http://fhir.de/CodeSystem/ifa/pzn",
+          "code" : "15205222",
+          "display" : "Xydalba 500 mg Pulver für ein Konzentrat zur Herst. einer Infusionslösung 1 Durchstechfl. N1"
+        },
+        {
+          "system" : "http://fhir.de/CodeSystem/bfarm/atc",
+          "version" : "2023",
+          "code" : "J01XA04",
+          "display" : "Dalbavancin"
+        }]
+      },
+      "form" : {
+        "coding" : [{
+          "system" : "http://standardterms.edqm.eu",
+          "code" : "50043000",
+          "display" : "Powder for concentrate for solution for infusion"
+        }]
+      },
+      "ingredient" : [{
+        "extension" : [{
+          "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstofftyp",
+          "valueCoding" : {
+            "system" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/wirkstofftyp",
+            "code" : "IN",
+            "display" : "ingredient"
+          }
+        },
+        {
+          "extension" : [{
+            "url" : "ingredientUri",
+            "valueUri" : "http://fhir.de/CodeSystem/ask#33395"
+          }],
+          "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstoffrelation"
+        }],
+        "itemCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://fhir.de/CodeSystem/ask",
+            "version" : "20260105",
+            "code" : "33395",
+            "display" : "Dalbavancin"
+          },
+          {
+            "system" : "http://fdasis.nlm.nih.gov",
+            "code" : "808UI9MS5K"
+          },
+          {
+            "system" : "http://terminology.hl7.org/CodeSystem/CAS",
+            "code" : "171500-79-1"
+          },
+          {
+            "system" : "http://snomed.info/sct",
+            "code" : "703917001",
+            "display" : "Dalbavancin (substance)"
+          }],
+          "text" : "Dalbavancin"
+        }
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Medication/mii-exa-test-data-medication-dalbavancin"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Condition/mii-exa-test-data-bildgebung-diagnose-1",
+    "resource" : {
+      "resourceType" : "Condition",
+      "id" : "mii-exa-test-data-bildgebung-diagnose-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "de",
+      "text" : {
+        "status" : "generated"
+      },
+      "clinicalStatus" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code" : "active"
+        }]
+      },
+      "verificationStatus" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code" : "confirmed"
+        }]
+      },
+      "code" : {
+        "coding" : [{
+          "system" : "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+          "version" : "2026",
+          "code" : "C34.1",
+          "display" : "Bösartige Neubildung: Oberlappen (-Bronchus)"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-bildgebung-patient-1"
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Condition/mii-exa-test-data-bildgebung-diagnose-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Observation/mii-exa-test-data-bildgebung-labobs-1",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "mii-exa-test-data-bildgebung-labobs-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "de",
+      "text" : {
+        "status" : "generated"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "21889-1",
+          "display" : "Size Tumor"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-bildgebung-patient-1"
+      },
+      "valueQuantity" : {
+        "value" : 32,
+        "system" : "http://unitsofmeasure.org",
+        "code" : "mm"
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/mii-exa-test-data-bildgebung-labobs-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/MedicationRequest/mii-exa-test-data-bildgebung-medrequest-1",
+    "resource" : {
+      "resourceType" : "MedicationRequest",
+      "id" : "mii-exa-test-data-bildgebung-medrequest-1",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "de",
+      "text" : {
+        "status" : "generated"
+      },
+      "status" : "completed",
+      "intent" : "order",
+      "medicationReference" : {
+        "reference" : "Medication/mii-exa-test-data-medication-dalbavancin"
+      },
+      "subject" : {
+        "reference" : "Patient/mii-exa-test-data-bildgebung-patient-1"
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "MedicationRequest/mii-exa-test-data-bildgebung-medrequest-1"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/Organization/mii-exa-test-data-organization-charite",
+    "resource" : {
+      "resourceType" : "Organization",
+      "id" : "mii-exa-test-data-organization-charite",
+      "meta" : {
+        "source" : "https://www.charite.de/fhir/kds-testdata",
+        "security" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "HTEST",
+          "display" : "test health data"
+        }]
+      },
+      "language" : "de",
+      "text" : {
+        "status" : "generated"
+      },
+      "type" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/organization-type",
+          "code" : "prov",
+          "display" : "Healthcare Provider"
+        }]
+      }],
+      "name" : "Charité – Universitätsmedizin Berlin"
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Organization/mii-exa-test-data-organization-charite"
+    }
+  }]
+}
