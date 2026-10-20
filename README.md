@@ -9,18 +9,15 @@ Generated CDS test data is available as ndjson via [release assets](https://gith
 
 Refer to https://github.com/medizininformatik-initiative/mii-testdata/tree/main/kds-testdata
 
-## excel2fhir
-excel2fhir converts structured Excel workbooks into synthetic FHIR R4 test data bundles. It is intended for creating coherent, referenced test data in the context of the MII CDS.
+## synthiFHIR
 
-The input is an Excel workbook with predefined sheets for patients, encounters, diagnoses, procedures, observations, medication, clinical documentation and conversion options. The generator splits the workbook into intermediate CSV files and then creates FHIR resources and bundles.
+[synthiFHIR](https://github.com/medizininformatik-initiative/synthiFHIR) generates synthetic FHIR R4 test data from Excel workbooks, CSV files and Synthea patient data for MII CDS use cases. Its web workbench supports configurable clinical data, reproducible bulk generation, ZIP downloads and uploads to FHIR servers.
 
-Test data generated using excel2fhir is located in the ‘kerndatensatz-testdaten’ repository. See the following section.
-
-Refer to https://github.com/medizininformatik-initiative/excel2fhir
+See the [project documentation](https://github.com/medizininformatik-initiative/synthiFHIR/blob/main/README.md) for setup and usage, and the [local entry](synthifhir/README.md) for workbook links. Generated test datasets are available in `kerndatensatz-testdaten` below.
 
 ## kerndatensatz-testdaten
 
-This repository contains test data generated using excel2fhir (see the section above). The test data is organised into packages containing up to 1,000 patients, or individual patients with up to 1,000 transaction bundles, in the form of JSON (ZIP) and ndjson files.
+This repository contains test data generated using synthiFHIR (see the section above). The test data is organised into packages containing up to 1,000 patients, or individual patients with up to 1,000 transaction bundles, in the form of JSON (ZIP) and ndjson files.
 
 Refer to https://github.com/medizininformatik-initiative/kerndatensatz-testdaten
 
